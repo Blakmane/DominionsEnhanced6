@@ -1294,7 +1294,8 @@
 #copyweapon 562  -- Stone Fist
 #name "Coral Fist"
 #slash
-#secondaryeffect 1600 -- Area Weak Poison
+--#secondaryeffect 1600 -- Area Weak Poison
+#secondaryeffect 50 -- Weak Poison
 #end
 
 #newweapon 1602
@@ -3983,6 +3984,24 @@
 #type 9
 #protparts 5 7
 #end
+
+#newarmor 560
+#copyarmor 11
+#name "Coated Plate"
+#rcost 13
+#type 5
+#prot 14
+#def -1
+#enc 2
+#end
+
+#newarmor 561
+#copyarmor 162 -- Crested Helmet
+#name "Coated Helmet"
+#prot 18
+#end
+
+
 
 -- END OF NEW ARMORS
 
@@ -28022,6 +28041,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #pierceres
 #spiritsight
 #weapon 1601 -- Coral Fist
+#weapon 1601 -- Coral Fist
+#weapon 1808 -- repelling barbs
 #end
 
 #newmonster 7487
@@ -28035,8 +28056,11 @@ While in the form of an old man, all paths are increased and allows the use of N
 #uwheat 10
 #fireshield 10
 #coldres -5
+#clearweapons
 #weapon 1601 -- Coral Fist
-#weapon 198  -- Flame Burst
+#weapon 1601 -- Coral Fist
+--#weapon 198  -- Flame Burst
+#weapon 1808 -- repelling barbs
 #end
 
 #newmonster 7488
@@ -32025,6 +32049,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #wastesurvival
 #magicskill 5 1
 #nametype 149  -- Rephaim
+#armor 230 -- magic robes
 #end
 
 #newmonster 7626
@@ -34469,7 +34494,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #size 4
 #hp 31
 #str 15
-#def 15 -- 13
+#def 15 -- 13 from weapons
 #mr 16
 #flying
 #mapmove 20
@@ -51215,6 +51240,67 @@ Bishops are devoted wholly to their God and are forbidden from learning arcane p
 #weapon 21 -- javelin
 #mountmnr 3933 -- fay horse
 #skilledrider 3
+#end
+
+#newmonster 8885 -- Heavy Entrant
+#copystats 2860 -- Soldier of the Deep
+#spr1 "vanilla/blue_heavysoldierofthedeep1.png"
+#spr2 "vanilla/blue_heavysoldierofthedeep2.png"
+#name "Heavy Entrant of the Deep"
+#descr "Entrants of the Deep are martial initiates of a cult of the deep. They serve and protect the temples and the Witnesses of the Deep, preparing for the Atlantian conquest of the world and are given coral spears as a sign of their devotion. They do not use shields, as this would be awkward when entering the promised land beneath the waves. They coat the metal of their armor to protect it from rust, and are trained to maintain it well. They are devoted to the Atlantian cause and are often regarded as fanatics.
+Entrants of the Deep can be recruited in any land fort."
+#clearspec
+#swimming
+#gcost 10010
+#cleararmor
+#armor 560 -- Coated Plate
+#armor 561 -- Coated Helmet
+#end
+
+#newmonster 8886 -- Soldier
+#copystats 2860 -- Soldier of the Deep
+#spr1 "vanilla/blue_pikeofthedeep1.png"
+#spr2 "vanilla/blue_pikeofthedeep2.png"
+#name "Soldier of the Deep"
+#descr "Entrants of the Deep that have completed their training and learned to fight underwater may become Soldiers of the Deep. Their training once again includes the use of shields and they are given a longer spear that would prove unwieldy underwater in any other hand. They serve and protect the temples and the Witnesses of the Deep, preparing for the Atlantian conquest of the world. They coat the metal of their armor to protect it from rust, and are trained to maintain it well. They are devoted to the Atlantian cause and are often regarded as fanatics.
+Soldiers of the Deep can be recruited in any land fort."
+#clearspec
+#swimming
+#gcost 10013
+#def 12
+#att 11
+#str 12
+#hp 11
+#morale 13
+#clearweapons
+#weapon 580 -- coral long spear
+#cleararmor
+#armor 560 -- Coated Plate
+#armor 561 -- Coated Helmet
+#armor 2 -- Shield
+#end
+
+#newmonster 8887 -- Witness Guard
+#copystats 2860 -- Soldier of the Deep
+#spr1 "vanilla/blue_witnessguard1.png"
+#spr2 "vanilla/blue_witnessguard2.png"
+#name "Witness Guard"
+#descr "Witness Guards are the dedicated bodyguards of the Witnesses of the Deep. Promising and loyal Entrants are picked to join their ranks and given a heavy two handed weapon of coral with which they can protect their charge. They serve and protect the temples and the Witnesses of the Deep, preparing for the Atlantian conquest of the world. They coat the metal of their armor to protect it from rust, and are trained to maintain it well. They are devoted to the Atlantian cause and are often regarded as fanatics.
+Witness Guards can be recruited in any land fort."
+#clearspec
+#swimming
+#gcost 10014
+#def 11
+#att 11
+#str 12
+#hp 12
+#morale 14
+#bodyguard 4
+#clearweapons
+#weapon 46 -- coral glaive
+#cleararmor
+#armor 560 -- Coated Plate
+#armor 561 -- Coated Helmet
 #end
 
 
@@ -75682,6 +75768,11 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #copyspr 1337  -- Siddha
 #end
 
+#selectmonster 102  -- Initiate of the Deep
+#descr "Strange students of Water magic who are ready to give up dry land for the comfort of the waves, these humans receive their training from Witnesses and Seers trained in the fabled Coral Towers of Atlantis. Initially trained in a mystery cult, the Initiate will eventually master the art of waterbreathing and receive further training and possibly become a Witness of the Deep.
+Initiates of the Deep can be recruited in any land fort."
+#end
+
 #selectmonster 119  -- Warlord
 #neednoteat
 #end
@@ -75705,6 +75796,14 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 
 
 #selectmonster 183  -- Wraith Lord - Etimmu
+#end
+
+#selectmonster 211  -- Lobster Rider
+#spr1 "vanilla/blue_lobsterrider1.png"
+#spr2 "vanilla/blue_lobsterrider2.png"
+#unmountedspr1 "vanilla/blue_lobsterrider1.png"
+#unmountedspr2 "vanilla/blue_lobsterrider2.png"
+#armor 22
 #end
 
 #selectmonster 209  -- Mother Guard
@@ -80499,6 +80598,21 @@ Cost 28 RP."
 --#montagweight 3
 #end
 
+#selectmonster 2859  -- Witness of the Deep
+#descr "The Witnesses of the Deep are human mages of water magic who have given up dry land for the comfort of the waves. Initially a member of a coastal mystery cult, the mage will eventually master the art of waterbreathing and be brought to the Coral Towers to marvel at the might and splendor of Atlantis. After having witnessed, the former initiate is returned to his cultic center to train and initiate others in the mysteries of the deep.
+Witnesses of the Deep can be recruited in any land fort."
+#end
+
+#selectmonster 2860 -- Soldier of the Deep
+#spr1 "vanilla/blue_soldierofthedeep1.png"
+#spr2 "vanilla/blue_soldierofthedeep2.png"
+#name "Entrant of the Deep"
+#descr "Entrants of the Deep are martial initiates of a cult of the deep. They serve and protect the temples and the Witnesses of the Deep, preparing for the Atlantian conquest of the world and are given coral spears as a sign of their devotion. They do not use shields, as this would be awkward when entering the promised land beneath the waves. They coat the metal of their armor to protect it from rust, and are trained to maintain it well. They are devoted to the Atlantian cause and are often regarded as fanatics.
+Entrants of the Deep can be recruited in any land fort."
+#clearspec
+#swimming
+#gcost 10009
+#end
 
 #selectmonster 2871  -- Axiocersa, Kabeiride
 #onebattlespell "Personal Luck"  -- Luck
@@ -94097,6 +94211,37 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8137
 #end
 
+#newsite 2403
+#clear
+#name "MA Atlantis Summons"
+#rarity 5
+#level 0
+#path 2
+#look 8
+#homemon 7455 -- corla snek
+#homemon 1664 -- monster fish
+#homemon 7486 -- coral golem
+#homemon 7487 -- fire coral
+#homemon 7345 -- returned shamb
+#homemon 7346 -- returned pillar
+#homecom 7348 -- returned priest
+#homecom 7263 -- ghost king
+#homecom 7226 -- dagon
+#homecom 7276 -- cetus
+#end
+
+#newsite 2404
+#clear
+#name "MA Atlantis Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 7
+#homecom 373
+#homecom 558
+#homecom 8220
+#end
+
 
 
 
@@ -99907,6 +100052,51 @@ Dominion: Causes dreamless slumber, greatly reducing tax income. Vines reanimate
 #startunitnbrs1 20
 #startunittype2 1621  -- Atlantian Infantry
 #startunitnbrs2 20
+
+#plainfortrec 2860 -- entrant
+#forestfortrec 2860
+#mountainfortrec 2860
+#swampfortrec 2860
+#wastefortrec 2860
+#farmfortrec 2860
+
+#plainfortrec 8885 -- heavy entrant
+#forestfortrec 8885
+#mountainfortrec 8885
+#swampfortrec 8885
+#wastefortrec 8885
+#farmfortrec 8885
+
+#plainfortrec 8886 -- soldier
+#forestfortrec 8886
+#mountainfortrec 8886
+#swampfortrec 8886
+#wastefortrec 8886
+#farmfortrec 8886
+
+#plainfortrec 8887 -- witness guard
+#forestfortrec 8887
+#mountainfortrec 8887
+#swampfortrec 8887
+#wastefortrec 8887
+#farmfortrec 8887
+
+#plainfortcom 102 -- initiate of the deep
+#forestfortcom 102
+#mountainfortcom 102
+#swampfortcom 102
+#wastefortcom 102
+#farmfortcom 102
+
+#plainfortcom 2859 -- witness of the deep
+#forestfortcom 2859
+#mountainfortcom 2859
+#swampfortcom 2859
+#wastefortcom 2859
+#farmfortcom 2859
+
+#futuresite "MA Atlantis Summons"
+#futuresite "MA Atlantis Heroes"
 #end
 
 #selectnation 89 -- MA R'lyeh
@@ -102086,16 +102276,21 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #spec 41943040  -- UW Only
 #end
 
-#selectspell 2109
-#name "Coral Spines"
-#school -1
-#researchlevel 0
-#effect 23
-#nreff 1
-#damage 256  -- Poison Barbs
-#spec 8388608  -- UWOK
+#selectspell 2110
+#copyspell 819 -- Group Barkskin
+#name "Coral Warriors"
+#descr "The caster transforms the skin of a group of warriors into a tough coral hide. The coral is as hard as stone, however as a side effect the targets will take additional damage from cold. This spell can only be cast underwater."
+#details "Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Also incurs susceptibility to Cold 5."
+#path 0 2
+#pathlevel 0 2
+#path 1 3
+#pathlevel 1 1
+#fatiguecost 60
+#researchlevel 5
+#aoe 1003 -- 5+
+#damage 65536  -- Stoneskin
+#spec 41943040  -- UW Only
 #end
-
 
 #selectspell 2113
 #name "Become Sea Monster"
@@ -114207,19 +114402,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 43 -- EA Atlantis
 #end
 
-#selectspell 2994
-#copyspell 806 -- Liquid Body
-#name "Mysteries of the Deep"
-#descr "The caster gifts those that have never visited the Coral Towers with some semblance of life in Atlantis. The bodies of all friendly troops unable to live below the waves will take on the aspect of the sea, becoming fluid. Those affected become very difficult to harm by physical means and wounds will rarely become permanent afflictions. As a by-effect they will lose some strength and movement speed."
-#details "Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
-#researchlevel 6
-#pathlevel 0 5
-#fatiguecost 200
-#aoe 666
-#spec 4276224  -- Friendlies only, Ignores shields, Airbreathers only
-#restricted 88 -- MA Atlantis
-#end
-
 #selectspell 2995
 #copyspell 1163 -- Poison Ward
 #name "Coral Blessing"
@@ -114243,7 +114425,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 4
 #path 0 2
 #damage 7455 -- Coral Snake
-#nreff 3007
+#nreff 3009 -- 15+++
 #spec 41943040  -- UW Only
 #restricted 43 -- EA Atlantis
 #restricted 88 -- MA Atlantis
@@ -114251,11 +114433,12 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 2997
 #copyspell 1089 -- Crusher Construction
-#name "Construct Coral Golem"
-#descr "The caster fashions an Atlantian golem from coral. With the abundance of coral found at the Coral Towers the Atlantians were able to make ever larger creations and have now perfected the technique for creating golems. The Coral Golem is a magically animated construction covered in poisonous spines. It is amphibious and can leave the sea without penalty."
-#researchlevel 3
+#name "Construct Coral Golems"
+#descr "The caster fashions a few Atlantian golems from coral. With the abundance of coral found at the Coral Towers the Atlantians were able to make ever larger creations and have now perfected the technique for creating golems. The Coral Golem is a magically animated construction covered in poisonous spines. It is amphibious and can leave the sea without penalty."
+#researchlevel 4
 #path 0 2
-#fatiguecost 700
+#nreff 3
+#fatiguecost 1000
 #damage 7486 -- Coral Golem
 #spec 41943040  -- UW Only
 #restricted 88 -- MA Atlantis
@@ -114263,32 +114446,18 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 2998
 #copyspell 1089 -- Crusher Construction
-#name "Construct Fire Coral Golem"
-#descr "The caster fashions an Atlantian golem from fire coral. Fire coral is a very rare type of coral found only at the Coral Towers that radiates intense heat. The Fire Coral Golem is a magically animated construction covered in burning poisonous spines. It is amphibious and can leave the sea without penalty. This spell can only be cast at the Coral Towers."
-#researchlevel 5
+#name "Construct Fire Coral Golems"
+#descr "The caster fashions a few Atlantian golems from fire coral. Fire coral is a very rare type of coral found only at the Coral Towers that radiates intense heat. The Fire Coral Golem is a magically animated construction covered in burning poisonous spines. It is amphibious and can leave the sea without penalty. This spell can only be cast at the Coral Towers."
+#researchlevel 6
 #path 0 0
 #pathlevel 0 2
 #path 1 2
 #pathlevel 1 2
+#nreff 2
 #fatiguecost 1000
 #damage 7487 -- Fire Coral Golem
 #spec 41943040  -- UW Only
 #onlyatsite 2  -- The Coral Towers
-#restricted 88 -- MA Atlantis
-#end
-
-#selectspell 2999
-#name "Army of the Deep"
-#descr "The caster learns how to prepare an entire army to travel below the waves. This is a permanent effect. The caster will be able to bring a host of soldiers into the depths with them, however they will still suffer penalties whilst underwater unless they are naturally amphibious."
-#details "Caster gains Gift of Waterbreathing 100 size points."
-#school 1
-#researchlevel 5
-#path 0 2
-#pathlevel 0 2
-#effect 10599  -- +100
-#nreff 1
-#damage 111  -- Gift of Water Breathing
-#fatiguecost 1000
 #restricted 88 -- MA Atlantis
 #end
 
@@ -127653,7 +127822,7 @@ This Grand Prayer is in the path of Blood, and may be extra potent depending on 
 #details "Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Also incurs susceptibility to Cold 5."
 #researchlevel 0
 #school 7
-#path 0 8
+#path 0 9
 #pathlevel 0 3
 #range 10
 #aoe 1000
@@ -129475,6 +129644,112 @@ Applies the effects of Holy Avenger to the caster"
 #restricted 73 -- MA Mictlan
 #end
 
+
+#selectspell 4146 -- Harrespil nextspell
+#name "Coral Citadel Creation"
+#descr "The caster expands and reinforces an underwater foritfication into a sprawling bastion with coral used to build the Coral Towers. Over the next month the fortress undergoes a transformation into a Citadel of coral."
+#details "Must be cast at an underwater Fortress or Castle, transforming the fortification into a Citadel. If not cast at a Fortress or Castle the gems will be wasted."
+#school -1
+#researchlevel 0
+#path 0 2 -- W
+#effect 10082
+#damage 281 -- Ench81 -- Coral Citadel
+#fatiguecost 3000
+#nreff 1
+#end
+
+#selectspell 4147 -- Harrespil EA
+#copyspell 106  -- Record of Creation
+#name "The Coral Citadel"
+#descr "The caster expands and reinforces an underwater foritfication into a sprawling bastion with coral used to build the Coral Towers. Over the next month the fortress undergoes a transformation into a Citadel of coral."
+#details "Must be cast at an underwater Fortress or Castle, transforming the fortification into a Citadel. If not cast at a Fortress or Castle the gems will be wasted."
+#school 3
+#researchlevel 4
+#path 0 2
+#pathlevel 0 3
+#nreff 1
+#effect 10083
+#damage -1
+#fatiguecost 3000
+#nextspell 4146
+#restricted 88 -- MA Atlantis
+#end
+
+#selectspell 4148 -- Atlantis Scry
+#copyspell 1020 -- Messenger Crows for +3 dur per gem
+#name "Deep Seeing"
+#descr "The Deep Seer creates an enchanted window through which they may scry a distant province. The more gems spent on the window, the longer it will last. Information gained by scrying is much more accurate than a normal scout can provide."
+#details "Enchantment lasts 1 turn +3 per extra gem."
+#researchlevel 2
+#school 5 -- thaum
+#path 0 2 -- W
+#path 1 4 -- S
+#pathlevel 0 2
+#pathlevel 1 1
+#damage 36 -- Scry
+#fatiguecost 100
+#onlymnr 104 -- deep seer
+#onlymnr 2859 -- witness
+#provrange 6
+#spec 41943040 -- uw only
+#restricted 88 -- MA Atlantis
+#end
+
+#selectspell 2994
+#copyspell 806 -- Liquid Body
+#name "Mysteries of the Deep"
+#descr "The caster gifts those that have never visited the Coral Towers with some semblance of life in Atlantis. The bodies of a group of friendly troops unable to live below the waves will take on the aspect of the sea, becoming fluid. Those affected become very difficult to harm by physical means and wounds will rarely become permanent afflictions. As a by-effect they will lose some strength and movement speed."
+#details "Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
+#researchlevel 4
+#pathlevel 0 2
+#fatiguecost 60
+#aoe 10
+#spec 4276224  -- Friendlies only, Ignores shields, Airbreathers only
+#restricted 88 -- MA Atlantis
+#end
+
+#selectspell 4149
+#copyspell 806 -- Liquid Body
+#name "Army of the Deep"
+#descr "The caster gifts those that have never visited the Coral Towers with some semblance of life in Atlantis. The bodies of all friendly troops unable to live below the waves will take on the aspect of the sea, becoming fluid. Those affected become very difficult to harm by physical means and wounds will rarely become permanent afflictions. As a by-effect they will lose some strength and movement speed."
+#details "Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
+#researchlevel 6
+#pathlevel 0 4
+#fatiguecost 200
+#aoe 666
+#spec 4276224  -- Friendlies only, Ignores shields, Airbreathers only
+#restricted 88 -- MA Atlantis
+#end
+
+#selectspell 4150
+#copyspell 806 -- Liquid Body
+#name "Vision of the Deep"
+#descr "The eyes of a group of friendly troops unable to live below the waves will adjust to the depth's darkness. Those affected become will be able to see in the darkness of the deeps as well as any Atlantian."
+#details "Grants 50 Darkvision"
+#researchlevel 4
+#pathlevel 0 1
+#fatiguecost 40
+#aoe 20
+#effect 23
+#damage 35184372088832
+#spec 12664832  -- Friendlies only, Ignores shields, Airbreathers only, UWOK
+#restricted 88 -- MA Atlantis
+#end
+
+#selectspell 4151
+#copyspell 806 -- Liquid Body
+#name "Witness the Deep"
+#descr "The eyes of all friendly troops unable to live below the waves will adjust to the depth's darkness. Those affected become will be able to see in the darkness of the deeps as well as any Atlantian."
+#details "Grants 50 Darkvision"
+#researchlevel 6
+#pathlevel 0 3
+#fatiguecost 100
+#aoe 666
+#effect 23
+#damage 35184372088832
+#spec 12664832  -- Friendlies only, Ignores shields, Airbreathers only, UWOK
+#restricted 88 -- MA Atlantis
+#end
 
 
 
@@ -151309,6 +151584,49 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #msg "Too many Dolmen were present in the province and one has closed from the strain."
 #nation -2
 #end
+
+#newevent -- Place Fort
+#rarity 5
+#req_ench 281 -- Ench81
+#req_land 0
+#req_pop0ok
+#msg "The fortress in ##landname## is undergoing a transformation into a Citadel of coral!"
+#header 2
+#req_mindef 1 -- not under siege
+#req_fortid 6 -- 6 or 7
+#fort 0
+#delay 0
+#end
+
+#newevent -- Active Harrespil
+#rarity 5
+#req_pop0ok
+#msg "A coral Citadel has been risen in ##landname##."
+#header 2
+#fort 4 -- Citadel
+#end
+
+#newevent -- Place Fort
+#rarity 5
+#req_ench 281 -- Ench81
+#req_land 0
+#req_pop0ok
+#msg "The castle in ##landname## is undergoing a transformation into a Citadel of coral!"
+#header 2
+#req_mindef 1 -- not under siege
+#req_fortid 7 -- 6 or 7
+#fort 0
+#delay 0
+#end
+
+#newevent -- Active Harrespil
+#rarity 5
+#req_pop0ok
+#msg "A coral Citadel has been risen in ##landname##."
+#header 2
+#fort 4 -- Citadel
+#end
+
 
 
 
