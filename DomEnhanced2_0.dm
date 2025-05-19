@@ -3491,6 +3491,10 @@
 #dmg 4
 #end
 
+#selectweapon 723  -- Bronze Discus
+#ammo 8
+#end
+
 #selectweapon 730  -- Banefire Strike
 #bonus
 #end
@@ -59066,6 +59070,9 @@ Cannot be recruited until Break the Deadlock is cast."
 
 -- Start of New Pretender Changes and Additions
 
+
+
+
 -- FOLDUNITS
 
 
@@ -59662,7 +59669,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #fixedname "Ahola"
 #humanoid
 #size 6
-#growthpower 1
+#deathpower -1
 #mor 30
 #weapon 238  -- Magic Staff
 #weapon 1737 -- Thunder Bolt
@@ -59707,7 +59714,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #fixedname "Soyal"
 #humanoid
 #size 6
-#growthpower 1
+#deathpower -1
 #mor 30
 #weapon 92  -- Fist
 #armor 514 -- Enchanted Leather
@@ -59754,7 +59761,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #fixedname "Tawa"
 #humanoid
 #size 6
-#growthpower 1
+#deathpower -1
 #mor 30
 #weapon 151  -- Wand
 #armor 514 -- Enchanted Leather
@@ -59798,7 +59805,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #fixedname "Eototo"
 #humanoid
 #size 6
-#growthpower 1
+#deathpower -1
 #mor 30
 #weapon 92  -- Fist
 #armor 514 -- Enchanted Leather
@@ -59843,7 +59850,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #fixedname "Shalako-mana"
 #humanoid
 #size 4
-#growthpower 1
+#deathpower -1
 #mor 30
 #weapon 92  -- Fist
 #armor 514 -- Enchanted Leather
@@ -59889,7 +59896,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #fixedname "Pollik-mana"
 #humanoid
 #size 4
-#growthpower 1
+#deathpower -1
 #mor 30
 #weapon 92  -- Fist
 #armor 514 -- Enchanted Leather
@@ -60547,7 +60554,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #name "Ascended Master"
 #descr "After studying for centuries, the Ascended Master has not only mastered his own mortality, but has achieved such an enlightened state that he has almost reached divinity. With the Pantokrator gone, nothing will stop the Ascended Master on his road to true spiritual ascension. Though he is not as physically powerful as many other pretenders, and is less magically-skilled than archmages and other magicians, he is essentially a spiritual being, near-immortal within his Dominion and difficult to destroy. He has mastered the powers of spirit and mind, and wields the Dörje, a small, sacred mace used to smite the sinful and the ignorant with the thunderbolt of enlightenment."
 #diseaseres 100
-#gcost 160
+#gcost 170
 #startdom 2
 #pathcost 20
 #hp 12
@@ -60582,7 +60589,8 @@ Cannot be recruited until Break the Deadlock is cast."
 #clearmagic
 #magicskill 1 1
 #magicskill 3 1
-#magicskill 4 2
+#magicskill 4 1
+#magicskill 7 1
 #end
 
 #newmonster 8288 -- Bodhisattva of Keen Awareness
@@ -60592,7 +60600,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #name "Bodhisattva of Keen Awareness"
 #descr "The Bodhisattva of Keen Awareness is a being of semi-divine origin who has achieved such a state of spiritual enlightenment that he has transcended his own mortality and all mortal needs. With the old Pantokrator alive, he could not ascend to true godhood and complete his enlightenment, and he retired to a secret place to meditate. Now, with the Pantokrator gone, the Bodhisattva is ready to resume his quest for ascension and to bring hope and solace to mankind. Though he is not physically as powerful as many other divine beings, the Bodhisattva has a strong dominion and is a powerful Astral mage because of his spiritual perfection. Furthermore, his aspect is such that few would dare to strike him, and his mere presence instills serenity in the hearts of mortals. In one hand he bears the sword of truth, which cuts through falsehood and destroys ignorance, and in the other he holds the stem of a lotus flower upon which is written a book on the attainment of transcendent wisdom."
 #diseaseres 100
-#gcost 190
+#gcost 220
 #homerealm 0
 #startdom 3
 #pathcost 30
@@ -60632,7 +60640,8 @@ Cannot be recruited until Break the Deadlock is cast."
 #researchbonus 8
 #itemslots 860678
 #clearmagic
-#magicskill 4 4
+#magicskill 4 3
+#magicskill 7 2
 #end
 
 #newmonster 8289 -- Mother of Mountains
@@ -61283,10 +61292,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mr 18
 #clearweapons
 #humanoid
-#size 5
+#size 3
 #enc 4
-#mapmove 3
-#ap 22
+#mapmove 14
+#ap 13
 #mor 30
 #goodleader
 #okundeadleader
@@ -61672,10 +61681,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #def 12
 #mr 18
 #clearweapons
-#mountedhumanoid
-#mapmove 3
-#size 5
-#ap 22
+#humanoid
+#size 3
+#mapmove 14
+#ap 13
 #mor 30
 #allrange 2
 #weapon 151  -- Wand
@@ -62207,7 +62216,8 @@ Each month he will collect a magical pearl and can create more using water gems.
 #itemslots 1909254
 #clearmagic
 #magicskill 0 1
-#magicskill 1 2
+#magicskill 1 1
+#magicskill 7 1
 #end
 
 #newmonster 8338 -- Burning Bush
@@ -62972,7 +62982,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #homerealm 9  -- Deeps
 #startdom 2
 #pathcost 60
-#moreluck 1
+#moremagic 1
 #hp 200
 #prot 22
 #str 28
@@ -63016,7 +63026,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #gcost 110
 #startdom 2
 #pathcost 60
-#moreluck 1
+#moremagic 1
 #hp 200
 #prot 20
 #str 28
@@ -68716,7 +68726,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #gcost 250
 #pathcost 30
 #moremagic 1 
-#moregrowth -1
+#moreorder -1
 #hp 150
 #prot 14
 #str 26
@@ -68910,6 +68920,167 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #magicskill 0 1
 #end
 
+#selectmonster 120 -- Moloch
+#descr "The Moloch is an infernal angel called or sent from beyond. Winged and dressed in horror, he will crush this world and make its inhabitants slaughter one another and suffer the torment of the Inferno. The Moloch is a powerful and mighty warrior and demonic servants will come to his aid whenever he goes into battle. The Moloch will surely shatter the world unless he is vanquished."
+#diseaseres 100
+#gcost 230
+#pathcost 60
+#moreorder -1
+
+#moremagic -1
+#hp 66
+#prot 20
+#str 21
+#att 13
+#def 13
+#mr 18
+#spreaddom 1
+#itemslots 991750
+#clearmagic
+#magicskill 0 2
+#magicskill 8 2
+#end
+
+#selectmonster 138 -- Gorgon
+#descr "The Gorgons were three divine sisters born at the dawn of time. When the youngest of them was assaulted by a servant of the Pantokrator they were collectively punished for defending her. The sisters were transformed into beasts of horrific appearance. Their hair are masses of snakes and their eyes burn with amber fire. Great flapping bat wings grow from their shoulders. So horrible were their appearance that anyone who looked upon their faces turned to stone. But this was not enough for the servant. On his request the Pantokrator imprisoned the three gorgons for eternity and the youngest sister was bereft of her immortality, should she ever escape her prison. Now with the Pantokrator gone one of the sisters is stirring and her shackles are weakening."
+#diseaseres 100
+#gcost 220
+#pathcost 40
+#hp 30
+#prot 9
+#str 13
+#att 12
+#def 10
+#mr 18
+#spreaddom 1
+#itemslots 17768966
+#clearmagic
+#magicskill 3 2
+#magicskill 6 1
+#magicskill 5 1
+#end
+
+#selectmonster 156 -- Chthonic Cyclops
+#spr1 "extrapretenders/cyclops.tga"
+#spr2 "extrapretenders/cyclops2.tga"
+#name "Chthonic Cyclops"
+#descr "The Cyclops is a one-eyed giant sprung from the roots of a great mountain. The body of the Cyclops is huge and as hard as the rock from which it was born. The Cyclops is a master of Earth magic and will use less gems when forging magic items."
+#diseaseres 100
+#gcost 250
+#homerealm 3  -- Mediterranean
+#pathcost 40
+#moreprod 1
+#hp 91
+#prot 20
+#str 28
+#att 11
+#def 12
+#mr 18
+#twiceborn 7231 -- Wight Giant
+#fixforgebonus 2
+#clearweapons
+#weapon 562  -- Stone Fist
+#weapon 397  -- Kick
+#itemslots 991750
+#clearmagic
+#magicskill 3 4
+#end
+
+#selectmonster 157 -- Mother of Monsters
+#descr "The Mother of Monsters is a hideous being from the dawn of time, when monsters roamed the world. She gave birth to serpent-kin, monsters and giants until the previous Pantokrator rose to power. When he established the new order he banished or slew all that threatened his creation, and the Mother of Monsters and her offspring were imprisoned for eternity. Now, with the Pantokrator gone, her shackles are weakening and her offspring once more threaten to destroy the world."
+#diseaseres 100
+#gcost 250
+#pathcost 40
+#moreorder -1
+
+#moregrowth 1
+#hp 120
+#prot 10
+#str 20
+#att 14
+#def 10
+#mr 18
+
+#itemslots 860678
+#clearmagic
+#magicskill 5 1
+#magicskill 6 2
+#magicskill 8 2
+#end
+
+#selectmonster 158 -- Oracle
+#descr "The Oracle is a powerful spirit that inhabits a sacred spring. The spirit possesses a girl to serve as its instrument. The chosen child is blinded and rendered unable to do anything but speak the will of the spirit. At the age of thirteen, she is sacrificed and replaced with a new girl, born the day the previous girl was made the voice of the spirit. The Oracle is immobile and cannot leave the spring it inhabits. It can possess willing targets to perform tasks such as forging items for enchantment. The Oracle is tremendously strong in its Dominion and magically powerful. The spring can be destroyed, but not easily."
+#diseaseres 100
+#gcost 110
+#pathcost 40
+#moreluck 1
+#hp 30
+#prot 25
+#str 15
+#att 5
+#def 0
+#mr 18
+#mastersmith 0
+#nobadevents 90
+#itemslots 3932160
+#clearmagic
+#magicskill 2 2
+#magicskill 7 1
+#end
+
+#selectmonster 159 -- Monument
+#descr "The Monument is a powerful spirit that inhabits an enormous stone construction. The spirit cannot leave the monument, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the monument would probably be impossible to destroy, even though it cannot strike back without using magic. The monument is completely immobile and cannot move even by magic."
+#diseaseres 100
+#gcost 90
+#pathcost 40
+#hp 500
+#prot 30
+#str 20
+#att 5
+#def 0
+#mr 18
+#mastersmith 0
+
+#itemslots 262144
+#clearmagic
+#magicskill 3 2
+#magicskill 4 1
+#end
+
+#selectmonster 179 -- Master Lich
+#descr "A Master Lich is the dried husk of an Arch Mage adept in Death magic. Through dark rituals, the mage succeeded in mastering one of mankind's oldest and most urgent goals: to defeat death. By removing his viscera and hiding it outside his body, the Lich is virtually impossible to slay. Should the body be physically destroyed, a new one is formed from the dust of dead humans. Being immortal, there is nothing left to acquire but godhood. The Master Lich is magically stronger than the other Liches and his magically empowered body is very hard to destroy."
+#diseaseres 100
+#gcost 180
+#pathcost 30
+#hp 30
+#prot 5
+#str 15
+#att 13
+#def 10
+#mr 18
+
+#itemslots 991750
+#clearmagic
+#magicskill 5 4
+#end
+
+#selectmonster 180 -- DemiLich
+#descr "A Demilich is an Arch Mage adept in Death magic that has outgrown his need for a physical body. The only things remaining of his old body are a skull and a few bones. It is through these that the Demilich can still affect this world. Should the skull be destroyed, a new one will form shortly after and the Demilich will be able to affect the world again. Being so powerful, there is nothing left to acquire but godhood. The Demilich is very magically powerful and difficult to destroy, but lacking a body he is unable to move between provinces through means other than magic rituals."
+#diseaseres 100
+#gcost 200
+#pathcost 20
+#hp 3
+#prot 0
+#str 5
+#att 4
+#def 4
+#mr 18
+
+#itemslots 794624
+#clearmagic
+#magicskill 5 4
+#end
+
 #selectmonster 215 -- Virtue
 #descr "The Virtue is an angelic being, a divine messenger or servant stranded in the physical world since the disappearance of the previous Pantokrator. Winged and radiant with divine light, she will don the yoke of godhood for the people of the world, leading them on the path of righteousness and salvation. The Virtue is surrounded by a powerful Aura of Splendor given her by her former master."
 #diseaseres 100
@@ -68931,6 +69102,1933 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #magicskill 0 1
 #magicskill 1 2
 #magicskill 4 1
+#end
+
+#selectmonster 216 -- Fire Dragon
+#descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. Red Dragons have their skills reduced when casting spells from paths other than Fire. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
+#diseaseres 100
+#gcost 240
+#pathcost 40
+#hp 125
+#prot 20
+#str 26
+#att 15
+#def 12
+#mr 18
+#woundfend 1
+#twiceborn 7223 -- Dracowight
+#enc 1
+#itemslots 18620416
+#clearmagic
+#magicskill 0 3
+#end
+
+#selectmonster 226 -- Fire Dragon Archmage
+#descr "The Arch Mage is a mage who has attained such power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Arch Mage is a master of magic and can be adept in several of the magic paths. The Arch Mage is a master of magic rituals and he can project his Elemental magic one province farther than normally possible."
+#diseaseres 100
+#gcost 240
+#pathcost 40
+#moreprod -1 
+#moreheat 1
+#hp 10
+#prot 0
+#str 13
+#att 10
+#def 10
+#mr 18
+
+#itemslots 2040326
+#clearmagic
+#magicskill 0 3
+#end
+
+#selectmonster 244 -- Arch Mage
+#descr "The Arch Mage is a mage who has attained such power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Arch Mage is a master of magic and can be adept in several of the magic paths. The Arch Mage is a master of magic rituals and he can project his Elemental magic one province farther than normally possible."
+#diseaseres 100
+#gcost 40
+#pathcost 20
+#hp 10
+#prot 0
+#str 10
+#att 10
+#def 11
+#mr 18
+
+#itemslots 991750
+#clearmagic
+#magicskill 0 1
+#magicskill 3 1
+#end
+
+#newmonster 8512 -- Africa Archmage
+#copystats 244
+#spr1 "extrapretenders/afarchmage1.tga"
+#spr2 "extrapretenders/afarchmage2.tga"
+#name "Arch Mage"
+#descr "The Arch Mage is a mage who has attained such power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Arch Mage is a master of magic and can be adept in several of the magic paths. The Arch Mage is a master of magic rituals and he can project his Elemental magic one province farther than normally possible."
+#diseaseres 100
+#gcost 40
+#homerealm 7  -- Africa
+#startdom 1
+#pathcost 20
+#nametype 126
+#clearmagic
+#magicskill 0 1
+#magicskill 3 1
+#end
+
+#newmonster 8517 -- America Arch Mage
+#copystats 244
+#spr1 "extrapretenders/amarchmage1.tga"
+#spr2 "extrapretenders/amarchmage2.tga"
+#name "Arch Mage"
+#descr "The Arch Mage is a mage who has attained such power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Arch Mage is a master of magic and can be adept in several of the magic paths. The Arch Mage is a master of magic rituals and he can project his Elemental magic one province farther than normally possible."
+#diseaseres 100
+#gcost 40
+#homerealm 6  -- Middle America
+#startdom 1
+#pathcost 20
+#nametype 123
+#clearmagic
+#magicskill 0 1
+#magicskill 3 1
+#end
+
+#selectmonster 245 -- Master Enchanter
+#descr "The Master Enchanter is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He is a master of magic and can be adept in several of the magic paths. The Master Enchanter is a master of magic rituals and he can project his Sorcerous magic one province farther than normally possible."
+#diseaseres 100
+#gcost 40
+#pathcost 20
+#hp 10
+#prot 0
+#str 10
+#att 10
+#def 11
+#mr 18
+#masterrit 1
+#itemslots 991750
+#clearmagic
+#magicskill 6 1
+#magicskill 7 1
+#end
+
+#newmonster 8511 -- Africa Master Enchanter
+#copystats 245
+#spr1 "extrapretenders/afmasterenchanter1.tga"
+#spr2 "extrapretenders/afmasterenchanter2.tga"
+#name "Master Enchanter"
+#descr "The Master Enchanter is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He is a master of magic and can be adept in several of the magic paths. The Master Enchanter is a master of magic rituals and he can project his Sorcerous magic one province farther than normally possible."
+#diseaseres 100
+#gcost 40
+#homerealm 7  -- Africa
+#startdom 1
+#pathcost 20
+#nametype 126
+#clearmagic
+#magicskill 6 1
+#magicskill 7 1
+#end
+
+#newmonster 8516 -- America Enchanter
+#copystats 245
+#spr1 "extrapretenders/ammasterenchanter1.tga"
+#spr2 "extrapretenders/ammasterenchanter2.tga"
+#name "Master Enchanter"
+#descr "The Master Enchanter is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He is a master of magic and can be adept in several of the magic paths. The Master Enchanter is a master of magic rituals and he can project his Sorcerous magic one province farther than normally possible."
+#diseaseres 100
+#gcost 40
+#homerealm 6  -- Middle America
+#startdom 1
+#pathcost 20
+#nametype 123
+#clearmagic
+#magicskill 6 1
+#magicskill 7 1
+#end
+
+#selectmonster 246 -- Freak Lord
+#descr "The Freak Lord is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Freak Lord is a master of magic and has mastered the sinister art of crossbreeding. The Freak Lord rides a horrifying freak created with vile crossbreeding rituals."
+#diseaseres 100
+#gcost 40
+#pathcost 20
+#hp 10
+#prot 0
+#str 10
+#att 10
+#def 11
+#mr 18
+#gemprod 8 2
+#domsummon2 -12
+#itemslots 1909254
+#clearmagic
+#magicskill 6 1
+#magicskill 8 1
+#end
+
+#selectmonster 248 -- Arch Mage (UW)
+#descr "The Arch Mage is a mage who has attained such power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Arch Mage is a master of magic and can be adept in several of the magic paths. The Arch Mage is a master of magic rituals and he can project his Elemental magic one province farther than normally possible."
+#diseaseres 100
+#gcost 30
+#pathcost 20
+#hp 10
+#prot 0
+#str 10
+#att 10
+#def 11
+#mr 18
+#masterrit 1
+#itemslots 1909254
+#clearmagic
+#magicskill 2 2
+#end
+
+#selectmonster 249 -- Crone
+#descr "The Crone is an old hag of such great power that she has taken the role of a Pretender God. The Crone is a master of magic and can be adept in several of the magic paths."
+#diseaseres 100
+#gcost 40
+#pathcost 20
+#hp 10
+#prot 0
+#str 9
+#att 9
+#def 9
+#mr 18
+
+#itemslots 4071942
+#clearmagic
+#magicskill 5 1
+#magicskill 7 1
+#end
+
+#newmonster 8510 -- Africa Crone
+#copystats 249
+#spr1 "extrapretenders/affrostfather1.tga"
+#spr2 "extrapretenders/affrostfather2.tga"
+#name "Elder"
+#descr "The Elder is an old mage of such great power that he has taken the role of a Pretender God. The Elder is a master of magic and can be adept in several of the magic paths."
+#diseaseres 100
+#gcost 40
+#homerealm 7  -- Africa
+#startdom 1
+#pathcost 20
+#nametype 126
+#clearmagic
+#magicskill 5 1
+#magicskill 7 1
+#end
+
+#selectmonster 250 -- Frost Father
+#descr "The Frost Father is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Frost Father is a master of magic and can be adept in several of the magic paths."
+#diseaseres 100
+#gcost 40
+#pathcost 20
+#moreheat -1
+#hp 10
+#prot 0
+#str 10
+#att 10
+#def 10
+#mr 18
+
+#itemslots 991750
+#clearmagic
+#magicskill 1 1
+#magicskill 2 1
+#end
+
+#newmonster 8515 -- America Frost Father
+#copystats 250
+#spr1 "extrapretenders/amfrostfather1.tga"
+#spr2 "extrapretenders/amfrostfather2.tga"
+#name "Frost Father"
+#descr "The Frost Father is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Frost Father is a master of magic and can be adept in several of the magic paths."
+#diseaseres 100
+#gcost 40
+#homerealm 0  -- None
+#startdom 1
+#pathcost 20
+#moreheat -1
+#nametype 123
+#clearmagic
+#magicskill 1 1
+#magicskill 2 1
+#end
+
+#selectmonster 251 -- Great Sage
+#descr "The Great Sage is a scholar of such great power and knowledge that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Great Sage is a master of magical research and is often adept in several of the magic paths."
+#diseaseres 100
+#gcost 30
+#pathcost 20
+#hp 10
+#prot 0
+#str 10
+#att 10
+#def 10
+#mr 18
+
+#itemslots 991750
+#clearmagic
+#magicskill 4 2
+#end
+
+#newmonster 8509 -- Africa Great Sage
+#copystats 251
+#spr1 "extrapretenders/afgreatsage1.tga"
+#spr2 "extrapretenders/afgreatsage2.tga"
+#name "Great Sage"
+#descr "The Great Sage is a scholar of such great power and knowledge that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Great Sage is a master of magical research and is often adept in several of the magic paths."
+#diseaseres 100
+#gcost 30
+#homerealm 7  -- Africa
+#startdom 1
+#pathcost 20
+#nametype 126
+#clearmagic
+#magicskill 4 2
+#end
+
+#newmonster 8514 -- America Sage
+#copystats 251
+#spr1 "extrapretenders/amgreatsage1.tga"
+#spr2 "extrapretenders/amgreatsage2.tga"
+#name "Great Sage"
+#descr "The Great Sage is a scholar of such great power and knowledge that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Great Sage is a master of magical research and is often adept in several of the magic paths."
+#diseaseres 100
+#gcost 30
+#homerealm 6  -- Middle America
+#startdom 1
+#pathcost 20
+#nametype 123
+#clearmagic
+#magicskill 4 2
+#end
+
+#selectmonster 265 -- Water Dragon
+#descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. Blue Dragons have their skills reduced when casting spells from paths other than Water. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
+#diseaseres 100
+#gcost 240
+#pathcost 40
+#hp 125
+#prot 20
+#str 26
+#att 15
+#def 12
+#mr 18
+#woundfend 1
+#twiceborn 7223 -- Dracowight
+#enc 1
+#itemslots 18620416
+#clearmagic
+#magicskill 2 3
+#end
+
+#selectmonster 267 -- Dragon Frost Father
+#descr "The Frost Father is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Frost Father is a master of magic and can be adept in several of the magic paths."
+#diseaseres 100
+#gcost 240
+#pathcost 40
+#moreprod -1 
+#moreheat -1
+#hp 10
+#prot 0
+#str 13
+#att 10
+#def 10
+#mr 18
+
+#itemslots 2040326
+#clearmagic
+#magicskill 2 3
+#end
+
+#selectmonster 266 -- Nature Dragon
+#descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. Green Dragons have their skills reduced when casting spells from paths other than Nature. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
+#diseaseres 100
+#gcost 240
+#pathcost 40
+#hp 125
+#prot 20
+#str 26
+#att 15
+#def 12
+#mr 18
+#woundfend 1
+#twiceborn 7223 -- Dracowight
+#enc 1
+#itemslots 18620416
+#clearmagic
+#magicskill 6 3
+#end
+
+#selectmonster 268 -- Dragon Master Enchanter
+#descr "The Master Enchanter is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He is a master of magic and can be adept in several of the magic paths. The Master Enchanter is a master of magic rituals and he can project his Sorcerous magic one province farther than normally possible."
+#diseaseres 100
+#gcost 240
+#pathcost 40
+#moreprod -1
+#hp 10
+#prot 0
+#str 13
+#att 10
+#def 10
+#mr 18
+
+#itemslots 2040326
+#clearmagic
+#magicskill 6 3
+#end
+
+#selectmonster 269 -- Wyrm
+#descr "The Wyrm is an enormous serpent with one head at each end of its huge body. The physical might of the Wyrm is awesome and even Dragons avoid battles with the great serpent. The bite of the Wyrm is poisonous and the beast regenerates from wounds during battle."
+#diseaseres 100
+#gcost 180
+#homerealm 10
+#pathcost 60
+#hp 190
+#prot 16
+#str 29
+#att 15
+#def 10
+#mr 18
+#mastersmith -1
+#researchbonus -8
+#heal
+#woundfend 2
+#twiceborn 7245 -- Necrophidian
+#enc 1
+#itemslots 18636800
+#clearmagic
+#magicskill 2 2
+#magicskill 3 1
+#end
+
+#selectmonster 270 -- Arch Druid
+#descr "The Arch Druid is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He is a master of magic and can be adept in several of the magic paths. The Arch Druid knows how to awaken the magical inhabitants of the forests and summons two extra vine men or vine ogres when casting the appropriate ritual spell."
+#diseaseres 100
+#gcost 80
+#pathcost 20
+#hp 10
+#prot 0
+#str 10
+#att 10
+#def 10
+#mr 18
+#domsummon2 361  -- Vine Man
+#itemslots 991750
+#clearmagic
+#magicskill 3 1
+#magicskill 6 1
+#magicskill 4 1
+#end
+
+#selectmonster 294 -- Nerid
+#descr "The Nerid is an underwater being born at the dawn of time, when the sea was untamed and filled with monstrous beings. She was given power over life in the forests of the shallow seas by a previous Pantokrator. But hubris found her and she gave wisdom and mind to the beasts of the sea, making them aware of her presence. The awakened half-men gave her their devotion and prayers as though she was a god. The Pantokrator was furious and banished his rebellious servant for eternity. Now with the Pantokrator gone, the Nerid is once more free to receive the prayers of men and beasts, however she is aquatic and cannot leave her maritime realm."
+#diseaseres 100
+#gcost 240
+#pathcost 40
+#hp 82
+#prot 6
+#str 14
+#att 12
+#def 12
+#mr 18
+#twiceborn 7231 -- Wight Giant
+#itemslots 1909254
+#clearmagic
+#magicskill 2 1
+#magicskill 6 3
+#magicskill 7 1
+#end
+
+#selectmonster 320 -- Saurolich
+#descr "A Saurolich is the dried husk of a Sauromancer. Through dark rituals, the lizard succeeded in mastering one of the oldest and most urgent of goals, to defeat death. By removing his viscera and hiding it outside his body, the Lich is virtually impossible to slay. Should the body be physically destroyed, a new one is formed from the dust of dead bodies. Being immortal, there is nothing left to acquire but godhood. The Saurolich lacks the broad base of magical knowledge of the Arch Mage."
+#diseaseres 100
+#gcost 180
+#pathcost 30
+#hp 33
+#prot 7
+#str 15
+#att 13
+#def 10
+#mr 18
+
+#itemslots 991750
+#clearmagic
+#magicskill 5 4
+#end
+
+#selectmonster 383 -- Prince of Death
+#descr "An undead demon prince called or sent by the Lord of the Underworld, he is winged and shrouded in death, and will annihilate the living of this world to make it a realm of the dead. The Prince of Death is a master of Death magic. When he calls upon the lesser types of undead with rituals, the effect will be greater compared to mortal necromancers and he is protected by shadows from his Netherworld realm at all times. His only weakness is his bond with the Underworld, which makes it possible for priests to banish him from this world."
+#diseaseres 100
+#gcost 200
+#pathcost 40
+#hp 66
+#prot 5
+#str 21
+#att 13
+#def 13
+#mr 18
+#invulnerable 20
+#inspirational 1
+#raredomsummon 634  -- Handmaiden of Death
+#spreaddom 1
+#itemslots 991750
+#clearmagic
+#magicskill 5 4
+#end
+
+#selectmonster 384 -- Neter of Crafts
+#descr "The Neter is a giant of divine heritage. Given skills and powers of creation by a previous Pantokrator, he became the master crafter and chief architect of creation. With the creation of the world complete, his services were no longer needed and he was banished for eternity. Having created eternity, the Neter was not too concerned and waited for the Pantokrator to disappear. Now he has returned to claim the world he created."
+#diseaseres 100
+#gcost 250
+#pathcost 40
+#hp 95
+#prot 3
+#str 24
+#att 12
+#def 12
+#mr 18
+#fixforgebonus 4
+#resources 100
+#itemslots 991750
+#clearmagic
+#magicskill 2 1
+#magicskill 3 2
+#magicskill 4 2
+#end
+
+#selectmonster 385 -- Neteret of Joy
+#spr1 "vanilla/neterofjoy1.tga"
+#spr2 "vanilla/neterofjoy2.tga"
+#descr "The Neteret is a giant of divine heritage. A previous Pantokrator gave her powers of creation and she brought joy and fertility to the world. When the Pantokrator became aware of the rebellion of lesser gods, he imprisoned her and the world was bereft of Joy. With the Pantokrator gone, her imprisonment has ended and fertility and happiness have returned to the world."
+#diseaseres 100
+#gcost 250
+#pathcost 40
+#moregrowth 1
+
+#moreluck 1
+#hp 98
+#prot 3
+#str 23
+#att 12
+#def 12
+#mr 18
+
+#itemslots 17768966
+#clearmagic
+#magicskill 3 2
+#magicskill 6 2
+#magicskill 7 1
+#end
+
+#selectmonster 386 -- Neter of the Sun
+#descr "The Neter is a giant of divine heritage. During the rebellion of the lesser gods, the Pantokrator was killed and dismembered. But the Pantokrator was reassembled and brought back by his wife, the Mistress of Magic. The Neter of the Sun was born from the union of the dead Pantokrator and his wife. Upon him was bestowed the authority and might of the sun. He was made a vessel of vengeance and he destroyed the rebellion and slew the Great Antagonist. But the Pantokrator could not reenter the world, bound by his own Law of Death and Rebirth. Now the Neter claims the world in his father's name."
+#diseaseres 100
+#gcost 220
+#pathcost 40
+#hp 95
+#prot 3
+#str 24
+#att 12
+#def 12
+#mr 18
+
+#itemslots 17768966
+#clearmagic
+#magicskill 0 3
+#magicskill 4 2
+#end
+
+#selectmonster 387 -- Neter of Many Names
+#spr1 "vanilla/neteretofmanynames1.tga"
+#spr2 "vanilla/neteretofmanynames2.tga"
+#descr "The Neteret is a giant of divine heritage. She was once the wife of a previous Pantokrator, and was given knowledge of all names and the deeper arcana. When her husband was slain and dismembered in a rebellion of lesser gods, she gathered his body parts and returned him to life. However, his death meant that he was for eternity banished to the Underworld. The rebellious pretenders imprisoned her and a new Pantokrator came to rule. With the disappearance of the Pantokrator her prison weakens and She of Many Names is once more worshipped as Mistress of Magic and Lady of This World."
+#diseaseres 100
+#gcost 240
+#pathcost 30
+#hp 90
+#prot 3
+#str 22
+#att 14
+#def 12
+#mr 18
+
+#itemslots 991750
+#clearmagic
+#magicskill 4 2
+#magicskill 5 1
+#magicskill 7 1
+#end
+
+#selectmonster 388 -- Neter of Chaos
+#descr "The Neter is a giant of divine heritage. He was once given power over the desert, storms, darkness and destruction by a previous Pantokrator. Endowed with unequaled destructive power and jealous ambition, he led the lesser gods in rebellion against his master and slew and dismembered him. However, the Pantokrator was reassembled by one of his servants and was able to return from the dead to banish the Neter for eternity. With the disappearance of the Pantokrator, the prison weakens and the Neter of Chaos can once more claim the world as his to destroy."
+#diseaseres 100
+#gcost 280
+#pathcost 40
+#hp 95
+#prot 3
+#str 24
+#att 12
+#def 12
+#mr 18
+#darkvision 100
+#itemslots 17768966
+#clearmagic
+#magicskill 0 2
+#magicskill 1 2
+#magicskill 5 2
+#end
+
+#selectmonster 395 -- Lich Queen
+#descr "A Lich Queen is the dried husk of an ancient queen adept in Death magic. Through dark rituals, she succeeded in mastering one of mankind's oldest and most urgent goals, to defeat death. By removing her viscera and hiding it outside her body, she is virtually impossible to slay. Should the body be physically destroyed, a new one is formed from the dust of dead humans. Being immortal, there is nothing left to acquire but godhood. The Lich Queen lacks the Arch Mage's broad base of magical knowledge, but her reanimated body is more durable than a living body since it is leathery and dry and lacks all organs of importance."
+#diseaseres 100
+#gcost 180
+#pathcost 30
+#hp 18
+#prot 5
+#str 12
+#att 10
+#def 10
+#mr 18
+#domsummon20 1980  -- Dust Warrior
+#itemslots 991750
+#clearmagic
+#magicskill 5 3
+#magicskill 0 1
+#end
+
+#selectmonster 401 -- Bitch Queen
+#descr "The Bitch Queen is a werewolf enchantress of tremendous magical power. The Bitch Queen usually appears in the form of an old hag, but when angered, she transforms into a werewolf. She is attended by a pack of werewolves that do her bidding. Even though her werewolf form is more powerful than her human form, it is still quite weak when compared to the majority of the other Pretender Gods."
+#diseaseres 100
+#gcost 50
+#pathcost 20
+#hp 25
+#prot 6
+#str 16
+#att 15
+#def 14
+#mr 18
+#domsummon2 633  -- Werewolves
+#onebattlespell 3701 -- Blessing of the Bitch Queen
+#itemslots 991750
+#clearmagic
+#magicskill 4 1
+#magicskill 6 1
+#end
+
+#selectmonster 402 -- Bitch Crone
+#descr "The Bitch Queen is a werewolf enchantress of tremendous magical power. The Bitch Queen usually appears in the form of an old hag, but when angered, she transforms into a werewolf. She is attended by a pack of werewolves that do her bidding. Even though her werewolf form is more powerful than her human form, it is still quite weak when compared to the majority of the other Pretender Gods."
+#diseaseres 100
+#gcost 50
+#startdom 2
+#pathcost 20
+#hp 16
+#prot 0
+#str 10
+#att 12
+#def 12
+#mr 18
+#invulnerable 15
+#domsummon2 633  -- Werewolves
+#onebattlespell 3701 -- Blessing of the Bitch Queen
+#itemslots 991750
+#clearmagic
+#magicskill 4 1
+#magicskill 6 1
+#end
+
+#selectmonster 472 -- Statue of Order
+#descr "The Statue of Order is a primordial spirit of order that once served a previous Pantokrator to bring civilization and order to the world. When the final decree was set, its services were no longer needed and the spirit was bound in a huge stone statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshiped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion, and law and order will be reinforced wherever it is worshiped. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
+#diseaseres 100
+#gcost 130
+#pathcost 40
+#hp 100
+#prot 25
+#str 15
+#att 5
+#def 0
+#mr 18
+#mastersmith 0
+
+#itemslots 786432
+#clearmagic
+#magicskill 3 1
+#magicskill 4 2
+#end
+
+#selectmonster 485 -- Great Enchantress
+#descr "The Great Enchantress is an enchantress of such great power that she has taken the role of a Pretender God. She is a master of magic and can be adept in several of the magic paths. The Great Enchantress knows how to crystallize dreams and will produce one glamour gem each month."
+#diseaseres 100
+#gcost 40
+#pathcost 20
+#hp 9
+#prot 0
+#str 8
+#att 8
+#def 8
+#mr 18
+
+#itemslots 991750
+#clearmagic
+#magicskill 4 1
+#magicskill 7 1
+#end
+
+#newmonster 8513 -- Africa Enchantress
+#copystats 485
+#spr1 "extrapretenders/afgreatenchantress1.tga"
+#spr2 "extrapretenders/afgreatenchantress2.tga"
+#name "Great Enchantress"
+#descr "The Great Enchantress is an enchantress of such great power that she has taken the role of a Pretender God. She is a master of magic and can be adept in several of the magic paths. The Great Enchantress knows how to crystallize dreams and will produce one glamour gem each month."
+#diseaseres 100
+#gcost 40
+#homerealm 7  -- Africa
+#startdom 1
+#pathcost 20
+#nametype 125
+#clearmagic
+#magicskill 4 1
+#magicskill 7 1
+#end
+
+#newmonster 8518 -- America Enchantress
+#copystats 485
+#spr1 "extrapretenders/amgreatenchantress1.tga"
+#spr2 "extrapretenders/amgreatenchantress2.tga"
+#name "Great Enchantress"
+#descr "The Great Enchantress is an enchantress of such great power that she has taken the role of a Pretender God. She is a master of magic and can be adept in several of the magic paths. The Great Enchantress knows how to crystallize dreams and will produce one glamour gem each month."
+#diseaseres 100
+#gcost 40
+#homerealm 6  -- Middle America
+#startdom 1
+#pathcost 20
+#nametype 124
+#clearmagic
+#magicskill 4 1
+#magicskill 7 1
+#end
+
+#selectmonster 486 -- Great Warlock
+#descr "The Great Warlock is a mage of such great power that he has taken the role of a Pretender God. Great Warlocks are masters of magic and known to be adept in several of the magic paths."
+#diseaseres 100
+#gcost 80
+#pathcost 20
+#hp 19
+#prot 0
+#str 14
+#att 10
+#def 9
+#mr 18
+#neednoteat
+#itemslots 991750
+#clearmagic
+#magicskill 0 1
+#magicskill 4 1
+#magicskill 8 1
+#end
+
+#selectmonster 499 -- Nataraja
+#descr "When the Devatas and Yakshas of Kailasa were forced to leave the world, their Lord was trapped. Now the Nataraja is free once again to dance the eternal Dance of Death and Birth. The Nataraja is armed with four weapons and has the martial prowess to wield them simultaneously. The Nataraja is surrounded by an aura of celestial fire."
+#diseaseres 100
+#gcost 270
+#pathcost 40
+#hp 84
+#prot 3
+#str 22
+#att 12
+#def 14
+#mr 18
+
+#itemslots 467486
+#clearmagic
+#magicskill 0 2
+#magicskill 3 1
+#magicskill 4 2
+#end
+
+#selectmonster 500 -- Skratti
+#descr "The Skratti is an ancient giant of great power who has taken the role of a Pretender God. The Skratti is a master of magic rituals and very tough, but not as strong as dragons or demigods."
+#diseaseres 100
+#gcost 80
+#pathcost 20
+#hp 39
+#prot 5
+#str 22
+#att 12
+#def 10
+#mr 18
+#masterrit 1
+#itemslots 991750
+#clearmagic
+#magicskill 2 1
+#magicskill 8 1
+#end
+
+#selectmonster 501 -- Allfather
+#descr "The Allfather is the first and the last of the Aesir, ancient gods that died in the great war with the Rimtursar. When the war ended the Pantokrator banished the remaining aesir from the world. With the Pantokrator gone the Allfather has returned to the world to claim it as his. The Allfather was the foremost of the Aesir and is a master of magic, a great skald and an outstanding general. Like his subjects, he is a master of illusions and false appearances and is able to pass undetected through enemy lands. Like the Vanjarls of Vanheim, the Allfather is able to cross the oceans by ship. The Allfather is at all times accompanied by two great wolves and his great eight-legged horse who is able to ride the winds."
+#diseaseres 100
+#gcost 290
+#pathcost 40
+#moremagic 1
+
+#moreluck 1
+#hp 82
+#prot 3
+#str 21
+#att 14
+#def 14
+#mr 18
+#researchbonus 10
+
+#itemslots 991750
+#clearmagic
+#magicskill 4 2
+#magicskill 5 1
+#magicskill 7 2
+#end
+
+#selectmonster 3934 -- Divine Stallion
+#descr "The Divine Stallion is a huge eight-legged horse sired by a long since banished god when he transformed himself into a mare in order to lure a giant stallion away from the previous Pantokrator."
+#diseaseres 100
+#gcost 290
+#hp 96
+#prot 14
+#str 24
+#att 12
+#def 15
+#mr 18
+#mastersmith -1
+#researchbonus -8
+#fireres 5
+#coldres 5
+#clearmagic
+#end
+
+#selectmonster 509 -- Arch Seraph
+#descr "The Arch Seraph is a Caelian mage of such great power that he has taken the role of a Pretender God. Once Caelum was ruled by semi-divine beings known as Yazatas. When they disappeared from the world the Arch Seraph uncovered their magic secrets and became a god in the eyes of the Caelians."
+#diseaseres 100
+#gcost 80
+#pathcost 20
+#hp 9
+#prot 0
+#str 8
+#att 10
+#def 9
+#mr 18
+
+#itemslots 991750
+#clearmagic
+#magicskill 1 1
+#magicskill 2 1
+#magicskill 4 1
+#end
+
+#selectmonster 546 -- Void Lurker
+#descr "In the physical world, this being is just a large underwater fungus, but in the world of magic, the Void Lurker is one of the most powerful and ancient beings. The Void Lurker can control the minds of willing targets to perform physical tasks such as forging and enchanting items. The Void Lurker is immobile."
+#diseaseres 100
+#gcost 160
+#homerealm 9 -- Deeps
+#pathcost 20
+#hp 130
+#prot 2
+#str 15
+#att 5
+#def 5
+#mr 20
+#mastersmith 0
+#twiceborn 7895
+#itemslots 786432
+#clearmagic
+#magicskill 4 4
+#end
+
+#selectmonster 550 -- Master Alchemist
+#descr "The Master Alchemist is an alchemist of such great power that he has taken the role of a Pretender God. He is a master of magical alchemy and often adept in several of the magic paths."
+#diseaseres 100
+#gcost 80
+#pathcost 20
+#hp 10
+#prot 0
+#str 10
+#att 10
+#def 10
+#mr 18
+#userestricteditem 3  -- Alchemist
+#resources 50
+#itemslots 2040326
+#clearmagic
+#magicskill 3 1
+#magicskill 0 1
+#magicskill 4 1
+#end
+
+#selectmonster 600 -- Titan of War & Wisdom
+#descr "The Titan is a giant sprung from the forehead of a previous Pantokrator, when he had a thought he couldn't contain. Fully grown and armed, she burst forth and claimed divinity. She was eternally imprisoned for her impudence of giving the Pantokrator a headache. Her origin as a thought has made her wise and prudent. Her shield is painted with a Gorgoneion that strikes fear into the hearts of men. She is at all times followed by her owl companion."
+#diseaseres 100
+#gcost 350
+#pathcost 40
+#moreorder 1
+
+#moremagic 1
+#hp 85
+#prot 3
+#str 20
+#att 15
+#def 15
+#mr 18
+#researchbonus 5
+#unsurr 1
+#itemslots 991750
+#clearmagic
+#magicskill 1 2
+#magicskill 3 2
+#magicskill 4 2
+#end
+
+#selectmonster 602 -- Titan of Heaven
+#descr "The Titan is a giant sprung from thunder clouds. Once given authority and power over thunder and the heavens by a previous Pantokrator, he was tasked with meting out justice to mankind. As Lord of the Heavens he could see everything underneath and would punish sinners with thunder and storms. When he gazed upon the world below, he became aware of the beauty of women and could not help himself. He broke his master's decree, entered the world of men and begot offspring infused with his divine seed. The Pantokrator was furious and imprisoned the rebellious titan for eternity. Now, with the Pantokrator gone, lightning and thunder is wrecking the foundations of the prison and the Titan will soon claim the world as his to rule."
+#diseaseres 100
+#gcost 260
+#pathcost 40
+#hp 90
+#prot 3
+#str 26
+#att 12
+#def 12
+#mr 18
+#clearweapons
+#weapon 1737 -- Thunder Bolt
+#weapon 231  -- Thunder Fist
+#itemslots 991750
+#clearmagic
+#magicskill 1 3
+#magicskill 3 1
+#magicskill 4 1
+#end
+
+#selectmonster 603 -- Teotl of Rain
+#descr "The Teotl is a giant of divine heritage. He was once in charge of bringing rain and fertility to the world and as such, he was one of the most important servants of the previous Pantokrator. But he defied his lord and gave fertility for blood. The Pantokrator feared that his servant would grow powerful on his bloody diet and imprisoned him for eternity. With the Pantokrator gone, the Teotl of Rain is finally free to drink blood from the vessel that is the world."
+#diseaseres 100
+#gcost 260
+#pathcost 40
+#hp 90
+#prot 5
+#str 23
+#att 13
+#def 13
+#mr 18
+#twiceborn 7231 -- Wight Giant
+#supplybonus 50
+#itemslots 991750
+#clearmagic
+#magicskill 2 3
+#magicskill 6 1
+#magicskill 8 1
+#end
+
+#selectmonster 604 -- Teotl of the Night
+#descr "The Teotl is a giant of divine heritage. During the reign of a previous Pantokrator he was the Beast of the Night, released by his master to feed on the wicked and the weak. After having eaten thousands and thousands of hearts, he grew in malice and in power. His master became worried and imprisoned the Beast for eternity. Now with the Pantokrator gone, the Beast of the Night has returned and his hunger has grown during his millennial imprisonment."
+#diseaseres 100
+#gcost 300
+#pathcost 40
+#hp 90
+#prot 3
+#str 23
+#att 13
+#def 13
+#mr 18
+
+#itemslots 991750
+#clearmagic
+#magicskill 5 2
+#magicskill 8 3
+#end
+
+#selectmonster 605 -- Son of Niefel
+#spr1 "vanilla/sonofniefel1.tga"
+#spr2 "vanilla/sonofniefel2.tga"
+#descr "The Son of Niefel is a frost giant descended from the old Rimtursar. The giant is sprung from the glaciers of Niefelheim, the Land of Eternal Frost. His beard is made of icicles and his shield and sword are forged from the purest ice. "
+#diseaseres 100
+#gcost 280
+#pathcost 40
+#hp 120
+#prot 8
+#str 28
+#att 14
+#def 14
+#mr 18
+#clearweapons
+#weapon 77 -- ice sword
+#cleararmor
+#armor 176 -- Dire Wolf Pelt
+#armor 28  -- Ice Aegis
+#mountainsurvival
+#itemslots 991750
+#clearmagic
+#magicskill 2 3
+#magicskill 5 2
+#end
+
+#selectmonster 606 -- Great Mother
+#descr "The Great Mother is a huge clay being that resembles a swelling, pregnant woman. She gave birth to titans and beasts and finally a previous Pantokrator. Afraid of her progenitive powers the Pantokrator imprisoned her for eternity. With the Pantokrator gone, she and her children have returned to the world."
+#diseaseres 100
+#gcost 280
+#pathcost 40
+#hp 185
+#prot 6
+#str 20
+#att 8
+#def 8
+#mr 18
+#enc 3
+#itemslots 991750
+#clearmagic
+#magicskill 3 2
+#magicskill 6 3
+#end
+
+#selectmonster 607 -- Baphomet
+#descr "The Baphomet is a powerful spirit that manifests itself as a massive, burning head. The spirit can possess willing humans in order to perform physical tasks such as forging and enchanting items, but cannot leave its spiritual home. The Baphomet is a powerful wielder of Astral, Fire and Blood magic."
+#diseaseres 100
+#gcost 110
+#pathcost 40
+#hp 100
+#prot 0
+#str 20
+#att 5
+#def 5
+#mr 18
+#mastersmith 0
+
+#itemslots 786432
+#clearmagic
+#magicskill 0 1
+#magicskill 4 1
+#magicskill 8 1
+#end
+
+#selectmonster 608 -- Phoenix
+#descr "The Phoenix is an immortal heron sprung from the rays of the sun at the first dawn. It is skilled in Air and Fire magic but lacks the physical strength of most Pretenders. If killed in combat it will explode in flames and be immediately reborn. The Phoenix shines with a divine light that will cause weak willed foes to falter rather than strike it."
+#diseaseres 100
+#gcost 120
+#pathcost 60
+#moreheat 1
+
+#moreluck 1
+#hp 36
+#prot 5
+#str 12
+#att 10
+#def 10
+#mr 18
+#twiceborn 1388  -- Ziz
+#prot 12
+#awe 1
+#onebattlespell 873 -- Phoenix Pyre
+#itemslots 17571840
+#clearmagic
+#magicskill 0 2
+#magicskill 1 1
+#end
+
+#selectmonster 643 -- Bog Mummy
+#descr "A Bog Mummy is the corpse of an ancient, evil Skratti, or giant mage, who was powerful enough to cheat death. To prevent this evil mage from returning after his death, a long forgotten hero staked him in a bog. But this only helped preserve the body until the bog dried up and some careless farmer pulled the stake loose. Now the mage has returned as an immortal Bog Mummy. Should the Bog Mummy be killed, it will eventually reform in the bog where it was once staked. Being immortal, there is nothing left to acquire but godhood."
+#diseaseres 100
+#gcost 230
+#pathcost 40
+#hp 65
+#prot 5
+#str 24
+#att 12
+#def 9
+#mr 18
+
+#itemslots 991750
+#clearmagic
+#magicskill 2 1
+#magicskill 5 2
+#magicskill 8 1
+#end
+
+#selectmonster 644 -- Dracolich
+#descr "The Dracolich is a Dragon that was once highly skilled in Death magic. When it died, its power over Death saved it from becoming permanently dead. Ever since, it has managed to stay alive in a state of undeath. The shape of the Dracolich is not suited for spell casting. They have their skills reduced when casting spells from paths other than Death. Therefore, it tends to adopt the shape of a Bog Mummy in battle."
+#diseaseres 100
+#gcost 280
+#pathcost 40
+#hp 180
+#prot 16
+#str 27
+#att 16
+#def 10
+#mr 18
+#woundfend 2
+#immortal
+#itemslots 18620416
+#clearmagic
+#magicskill 5 3
+#end
+
+#selectmonster 645 -- Dracolich Bog Mummy
+#descr "The Dracolich is a Dragon that was once highly skilled in Death magic. When it died, its power over Death saved it from becoming permanently dead. Ever since, it has managed to stay alive in a state of undeath. The shape of the Dracolich is not suited for spell casting. They have their skills reduced when casting spells from paths other than Death. Therefore, it tends to adopt the shape of a Bog Mummy in battle."
+#diseaseres 100
+#gcost 280
+#pathcost 40
+#hp 65
+#prot 5
+#str 24
+#att 12
+#def 9
+#mr 18
+#immortal
+#itemslots 2040326
+#clearmagic
+#magicskill 5 3
+#end
+
+#selectmonster 652 -- Void Lord
+#descr "The Void Lord is an otherworldly being that spawned in the Void. It was worshiped on that strange and distant star from which the great race of R'lyeh came and now the Starspawns have summoned it to this world. As a Lord of the Void, this being has great power in the world of magic. In the physical world, however, the Void Lord is blind and orients itself with powers of mind and magic."
+#diseaseres 100
+#gcost 260
+#pathcost 40
+#moremagic 1
+
+#moreorder 1
+#hp 88
+#prot 14
+#str 22
+#att 10
+#def 12
+#mr 20
+
+#itemslots 983558
+#clearmagic
+#magicskill 2 2
+#magicskill 4 3
+#end
+
+#selectmonster 653 -- Serpent King
+#descr "The Serpent King is a mighty serpent who is able to take human form. The Serpent King is magically strong enough to claim godhood. In order to lead human soldiers, the Serpent King usually appears in the form of a human sorcerer, but when angered, he transforms into his serpent shape. Even though his serpent form is more powerful than his human form, it is still quite weak compared to the majority of the other Pretender Gods."
+#diseaseres 100
+#gcost 40
+#pathcost 20
+#hp 12
+#prot 2
+#str 11
+#att 11
+#def 11
+#mr 18
+#domsummon2 403  -- Horned Serpent
+#itemslots 991750
+#clearmagic
+#magicskill 6 1
+#magicskill 5 1
+#end
+
+#selectmonster 654 -- Serpent King
+#descr "The Serpent King is a mighty serpent who is able to take human form. The Serpent King is magically strong enough to claim godhood. In order to lead human soldiers, the Serpent King usually appears in the form of a human sorcerer, but when angered, he transforms into his serpent shape. Even though his serpent form is more powerful than his human form, it is still quite weak compared to the majority of the other Pretender Gods."
+#diseaseres 100
+#gcost 40
+#pathcost 20
+#hp 25
+#prot 8
+#str 14
+#att 14
+#def 8
+#mr 18
+#domsummon2 403  -- Horned Serpent
+#itemslots 786432
+#clearmagic
+#magicskill 6 1
+#magicskill 5 1
+#end
+
+#selectmonster 655 -- Scorpion King
+#descr "The Scorpion King is a spirit of destruction and terror given divine powers by a previous Pantokrator. The beast was placed as a monstrous guardian of the path to immortality beyond Mount Mashu. With the disappearance of the Pantokrator, the beast has claimed the secrets beyond Mashu and arrived to wreak destruction and havoc upon the world. The Scorpion King is a hideous and twisted being with the body of a huge scorpion and the upper torso of a scaly human. It is a mighty beast capable of striking simultaneously with its scorpion stinger and any forged weapons it may carry."
+#diseaseres 100
+#gcost 220
+#pathcost 40
+#hp 57
+#prot 13
+#str 16
+#att 14
+#def 12
+#mr 18
+#woundfend 2
+#enc 2
+#itemslots 860678
+#clearmagic
+#magicskill 0 1
+#magicskill 3 2
+#end
+
+#selectmonster 656 -- Fountain of Blood
+#descr "The Fountain of Blood is a horrible spirit that inhabits an unholy fountain that spews forth blood instead of water. The spirit possesses a girl to serve as its instrument. The chosen child is blinded and rendered unable to do anything but speak the will of the spirit. At the age of thirteen, she is sacrificed and replaced with a new girl, born the day the previous girl was made the voice of the spirit. The unholy spirit is immobile and cannot leave the fountain it inhabits. It can possess willing targets to perform tasks such as forging items for enchantment. The Fountain of Blood is tremendously strong in its Dominion and magically powerful. "
+#diseaseres 100
+#gcost 90
+#pathcost 40
+#hp 30
+#prot 22
+#str 15
+#att 5
+#def 0
+#mr 18
+#mastersmith 0
+
+#itemslots 3932160
+#clearmagic
+#magicskill 8 3
+#end
+
+#selectmonster 657 -- Monolith
+#descr "The Monolith is a powerful spirit that inhabits a huge standing stone. The spirit cannot leave the Monolith, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back."
+#diseaseres 100
+#gcost 170
+#pathcost 40
+#hp 200
+#prot 28
+#str 15
+#att 5
+#def 0
+#mr 18
+#mastersmith 0
+
+#itemslots 262144
+#clearmagic
+#magicskill 3 1
+#magicskill 4 1
+#magicskill 6 1
+#end
+
+#selectmonster 661 -- Shedu
+#descr "The Shedu is a guardian spirit given divine powers by a previous Pantokrator. It has realized the aspirations of the other Pretenders and will protect its subjects by donning the mantle of God itself. It has the appearance of a great winged bull with a crowned human head. The Shedu is physically powerful and attuned to the protective powers of the stars and the Earth."
+#diseaseres 100
+#gcost 200
+#pathcost 60
+#hp 300
+#prot 15
+#str 32
+#att 8
+#def 12
+#mr 18
+#mastersmith 0
+#researchbonus 0
+#woundfend 2
+#twiceborn 6644 -- Wight Beast
+#enc 1
+#itemslots 1843200
+#clearmagic
+#magicskill 3 1
+#magicskill 4 2
+#end
+
+#selectmonster 779 -- Rams Head Serpent
+#descr "The Rams-Headed Serpent is a great serpent born at the dawn of time, when monsters and giants roamed the world. As a being with great regenerative powers and a bringer of fertility it was worshiped by the first of men as a god of prosperity and healing. When the previous Pantokrator rose to power he imprisoned and banished all that threatened his power and the Rams-Headed Serpent was forever imprisoned in the forest of the Horned One where he found an ally with a temperament resembling his own. Now, with the Pantokrator gone, the Rams-Headed Serpent is breaking free to claim the world as his."
+#diseaseres 100
+#gcost 190
+#pathcost 60
+#hp 195
+#prot 15
+#str 28
+#att 13
+#def 10
+#mr 18
+#mastersmith -1
+#researchbonus -8
+#heal
+#woundfend 2
+#twiceborn 7245 -- Necrophidian
+#clearweapons
+#weapon 828 -- Magic Head Butt
+#weapon 90  -- Crush
+#weapon 203  -- Barbed Tail
+#enc 1
+#itemslots 18620416
+#clearmagic
+#magicskill 3 1
+#magicskill 6 2
+#end
+
+#selectmonster 812 -- Lord of the Wild
+#descr "This being is the lord of an ancient forest and all its inhabitants. The Lord of the Wild practices the old arts and is a master of Nature and Blood magic. Human females in his vicinity will shed their civilized ways and serve the Lord of the Wild in a life of revelry. These females are called maenads and they will come in great numbers in a Dominion with great Turmoil."
+#diseaseres 100
+#gcost 290
+#pathcost 40
+#hp 90
+#prot 8
+#str 25
+#att 12
+#def 12
+#mr 18
+#douse 2
+#itemslots 17768966
+#clearmagic
+#magicskill 6 3
+#magicskill 8 2
+#end
+
+#selectmonster 857 -- The Smoking Mirror
+#descr "The Smoking Mirror is a great Mictlan sorcerer who claims divinity. As master of magic, Lord of the Night Skies and the Sun Personified, he has become the supreme god of the Mictlan pantheon. He has the ability to disguise himself as a jaguar of exceptional size. With his smoking obsidian mirror, he can divine the fates of men. Like all gods of the Mictlan pantheon, he craves human sacrifices."
+#diseaseres 100
+#gcost 80
+#pathcost 20
+#hp 14
+#prot 0
+#str 11
+#att 12
+#def 12
+#mr 18
+
+#itemslots 991750
+#clearmagic
+#magicskill 0 1
+#magicskill 5 1
+#magicskill 8 1
+#end
+
+#selectmonster 858 -- Jaguar
+#descr "The jaguar is a great cat of the Mictlan forest. It is said that the Smoking Mirror, Lord of the Night Sky, sometimes disguises himself as a jaguar."
+#diseaseres 100
+#gcost 80
+#pathcost 20
+#hp 25
+#prot 4
+#str 16
+#att 15
+#def 13
+#mr 18
+
+#itemslots 786432
+#clearmagic
+#magicskill 0 1
+#magicskill 5 1
+#magicskill 8 1
+#end
+
+#selectmonster 862 -- Vampire Queen
+#descr "The Vampire Queen is an ancient sorceress who has changed her very essence by imbibing the sacrificial blood of virgins. This vile act has granted her the power of immortality and now she is claiming godhood, too. Once during each winter she will gain a couple of new Vampires to serve her. Vampires are totally unable to enter underwater provinces."
+#diseaseres 100
+#gcost 190
+#pathcost 30
+#hp 16
+#prot 0
+#str 13
+#att 12
+#def 12
+#mr 18
+#seduce 10
+#itemslots 991750
+#clearmagic
+#magicskill 5 2
+#magicskill 8 2
+#end
+
+#selectmonster 872 -- Ghost King
+#descr "The Ghost King is the soul of an ancient mage king that has returned from the Underworld to claim the world of the living.
+
+Ghosts will come to his aid when his Dominion is strong, and if awake will muster a host of spirits to aid the army in the capital."
+#diseaseres 100
+#gcost 120
+#pathcost 30
+#hp 35
+#prot 0
+#str 14
+#att 12
+#def 18
+#mr 18
+#invulnerable 10
+#spreaddom 1
+#itemslots 991750
+#clearmagic
+#magicskill 5 3
+#end
+
+#selectmonster 873 -- Great Seer of the Deeps
+#descr "This Seer has such great powers of magic and divination that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He can use his divinatory visions to his advantage and will prevent three out of four bad events from happening in the province in which he dwells. The Great Seer of the Deeps is a master of magic and can be adept in several of the magic paths."
+#diseaseres 100
+#gcost 40
+#pathcost 20
+#hp 10
+#prot 0
+#str 10
+#att 10
+#def 10
+#mr 18
+
+#itemslots 991750
+#clearmagic
+#magicskill 2 1
+#magicskill 4 1
+#end
+
+#selectmonster 874 -- Divine Emperor
+#descr "The Divine Emperor is the ruler of the Empire. He is the son of the previous Emperor, who was deified upon death. As the Son of God, he has great power. With power comes arrogance and now the Son of God claims godhood himself. The Divine Emperor is not a warrior and only travels by palanquin."
+#diseaseres 100
+#gcost 120
+#pathcost 20
+#hp 15
+#prot 0
+#str 11
+#att 10
+#def 10
+#mr 18
+#commaster
+#itemslots 2040326
+#clearmagic
+#magicskill 1 1
+#magicskill 2 1
+#magicskill 4 2
+#end
+
+#selectmonster 905 -- Jade Emperor
+#descr "The Jade Emperor is an ancient Celestial being who has descended from the Celestial Spheres to claim this world as his Empire. He appears as an old, bearded man of huge proportions, dressed in the robes of a bureaucrat. He has great powers of Water, Air and Astral magic and is able to change fate itself."
+#diseaseres 100
+#gcost 280
+#pathcost 40
+#hp 110
+#prot 3
+#str 20
+#att 10
+#def 10
+#mr 18
+
+#itemslots 991750
+#clearmagic
+#magicskill 1 2
+#magicskill 2 2
+#magicskill 4 2
+#end
+
+#selectmonster 957 -- Lord of the Desert Sun
+#spr1 "vanilla/lordofthedesertsun.png"
+#spr2 "vanilla/lordofthedesertsun.png"
+#descr "The Lord of the Desert Sun is a lion-headed Titan who claims dominion over the Sun and the wild lands beyond the borders of civilization."
+#diseaseres 100
+#gcost 240
+#pathcost 40
+#hp 90
+#prot 3
+#str 24
+#att 14
+#def 13
+#mr 18
+#heat 10
+#itemslots 991750
+#clearmagic
+#magicskill 0 3
+#magicskill 6 1
+#magicskill 4 1
+#end
+
+#selectmonster 958 -- Colossal Head
+#descr "The Colossal Head is a powerful spirit that inhabits a massive stone that has been chiseled into the shape of a head. The spirit cannot leave the Colossal Head, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the head would be difficult to destroy, even though it cannot strike back."
+#diseaseres 100
+#gcost 150
+#pathcost 40
+#hp 300
+#prot 25
+#str 15
+#att 5
+#def 0
+#mr 18
+#mastersmith 0
+
+#itemslots 262144
+#clearmagic
+#magicskill 3 1
+#magicskill 8 2
+#end
+
+#selectmonster 961 -- Titan of the Sea
+#descr "The Titan of the Sea is a huge demigod sprung from the depths of the ocean. He was given power over the sea and the rumbling earth by a previous Pantokrator. Afraid of his destructive powers, men began to worship him as though he was a God. The Pantokrator was furious and banished his servant for eternity. Now that the Pantokrator is gone, the Earth Shaker is once more free to shatter cities and receive the prayers of men. The Titan of the Sea can leave the ocean and grant humans the ability to breathe underwater."
+#diseaseres 100
+#gcost 240
+#pathcost 40
+#moreluck -1
+
+#moreorder -0
+#hp 88
+#prot 3
+#str 25
+#att 12
+#def 13
+#mr 18
+#clearweapons
+#armor 148  -- Crown
+#weapon 389 -- Pearl Trident
+#giftofwater 500
+#poisonres 10
+#itemslots 991750
+#clearmagic
+#magicskill 2 3
+#magicskill 3 2
+#end
+
+#selectmonster 973 -- Ancient Kraken
+#spr1 "vanilla/ancientkraken1.tga"
+#spr2 "vanilla/ancientkraken2.tga"
+#descr "Krakens never die from old age. They just grow larger, wiser and stronger. This Kraken is very old and, through the ages, he has seen many a Pretender God rise to godhood. This time, he shall be the new God. The Ancient Kraken has become adept at magic over the millennia and he is a versatile mage."
+#diseaseres 100
+#gcost 230
+#pathcost 60
+#hp 230
+#prot 12
+#str 24
+#att 14
+#def 8
+#mr 18
+
+#twiceborn 1235  -- Leviathan
+#itemslots 786462
+#clearmagic
+#magicskill 3 1
+#magicskill 4 1
+#magicskill 6 1
+#end
+
+#selectmonster 978 -- Great Black Bull
+#descr "The Great Black Bull is a divine bull that has ravaged the world since time immemorial. The Black Bull is a creature of unbridled fury and a manifestation of the blind rage of Nature, the inhuman wildness, the glory of the slayer and the slain. Unlike his brother, the Great White Bull, with whom he has fought for dominance on several legendary occasions, the fertility aspect of the Black Bull is secondary to that of his maddened rage. Now that Ascension draws close, he leads his people to once again wildly embrace the mindless abandon and bloodlust of Nature aroused."
+#diseaseres 100
+#gcost 210
+#pathcost 60
+#hp 233
+#prot 13
+#str 32
+#att 13
+#def 12
+#mr 18
+#mastersmith -1
+#researchbonus -8
+#heal
+#woundfend 3
+#twiceborn 6644 -- Wight Beast
+#enc 1
+#itemslots 18620416
+#clearmagic
+#magicskill 6 2
+#magicskill 8 1
+#end
+
+#selectmonster 979 -- Great White Bull
+#descr "The Great White Bull is a divine bull that has wandered the world since time immemorial. The bull has long been worshiped as a manifestation of the wildness and fertility of Nature and his fury and potency are unrivaled. Now that the Great One has fallen, the bull's ferocity drives him to lead his people to trample the thrones of the world beneath his cloven hooves. The potent fertility of the White Bull generates extra supplies."
+#diseaseres 100
+#gcost 220
+#pathcost 60
+#hp 231
+#prot 13
+#str 32
+#att 13
+#def 12
+#mr 18
+#mastersmith -1
+#researchbonus -8
+#heal
+#woundfend 3
+#twiceborn 6644 -- Wight Beast
+#enc 1
+#itemslots 18620416
+#clearmagic
+#magicskill 3 1
+#magicskill 6 2
+#end
+
+#selectmonster 1025 -- Divine Glyph
+#descr "The Divine Glyph is a divine spirit that manifests itself as a burning glyph. The sacred word is unutterable and unbearable to behold. Its very essence is beyond comprehension. At times, the spirit inspires a devout human to forge items and artifacts. Anyone trying to strike the blazing glyph will be punished with blindness. It has a very powerful Dominion and whilst it is present in the world it will spread Dominion very strongly."
+#diseaseres 100
+#gcost 110
+#startdom 5
+#pathcost 40
+#hp 50
+#prot 0
+#str 20
+#att 5
+#def 5
+#mr 18
+#mastersmith 0
+#spreaddom 1
+#itemslots 786432
+#clearmagic
+#magicskill 0 1
+#magicskill 4 2
+#end
+
+#selectmonster 1026 -- Carrion Dragon
+#descr "The Carrion Dragon is the living carcass of an ancient Dragon that was powerful enough not to remain dead after it was slain. Pure hatred and vengeful thoughts rejoined the soul of the dead Dragon with its moss-covered corpse. The Carrion Dragon is able to adopt the shape of a dead Pan. The body of the Carrion Dragon is less suited for spell casting than the shape of the Pan. In dragon shape most of its magic skills are reduced. The paths of Death and Nature are innate to the Carrion Dragon and his skills in those paths are less reduced. The presence of a Carrion Dragon will spread a sleeping sickness, and nearby enemies may fall into a dreamless slumber. In lands free of civilization it will grow stronger, but it will weaken where men toil."
+#diseaseres 100
+#gcost 230
+#pathcost 40
+#hp 200
+#prot 16
+#str 27
+#att 16
+#def 10
+#mr 18
+
+#itemslots 18620416
+#clearmagic
+#magicskill 5 2
+#magicskill 6 2
+#end
+
+#selectmonster 1027 -- Carrion Lord
+#descr "A Carrion Lord is a dead Pan reanimated and given unholy powers by a Panic Apostate, who forces the soul of the dead Pan to rejoin its own moss-covered carcass. The carcass is entwined with vines and roots that have a life of their own. The Carrion Lord is a powerful wielder of Nature magic, but is also given unholy powers over the dead. The Carrion Lord can create manikins by animating vines, roots and the bones of dead beasts. The presence of a Carrion Lord will spread a sleeping sickness, and nearby enemies may fall into a dreamless slumber. In lands free of civilization it will grow stronger, but it will weaken where men toil."
+#diseaseres 100
+#gcost 230
+#pathcost 40
+#hp 53
+#prot 2
+#str 19
+#att 8
+#def 8
+#mr 18
+
+#itemslots 2040326
+#clearmagic
+#magicskill 5 2
+#magicskill 6 2
+#end
+
+#selectmonster 1096 -- Destroyer of Worlds
+#descr "When the Devatas and Yakshas of Kailasa were forced to leave the world, their Lord was trapped by the Pantokrator. The Destroyer of Worlds is a huge four-armed divinity reawakened to destroy the world that wronged him in ages past. The Destroyer is armed with weapons of iron and lightning. Death and disease are his to give and bestow."
+#diseaseres 100
+#gcost 270
+#pathcost 40
+#moreorder -1
+
+#moremagic -1
+#hp 84
+#prot 3
+#str 22
+#att 11
+#def 13
+#mr 18
+#awe 2
+#itemslots 467486
+#clearmagic
+#magicskill 0 1
+#magicskill 1 2
+#magicskill 5 2
+#end
+
+#selectmonster 1097 -- Lord of the Summer Plague
+#spr1 "vanilla/lordofthesummerplague.png"
+#spr2 "vanilla/lordofthesummerplague.png"
+#descr "The Lord of the Summer Plague is a Titan who claims dominion over the summer heat. With the heat come drought and famine, plague and pestilence. The lion-headed Lord is a god of death and his bow strikes men with death or disease. He is surrounded by a cloud of heat and pestilence that will inflict plague upon those that get too close."
+#diseaseres 100
+#gcost 250
+#pathcost 40
+#hp 90
+#prot 3
+#str 24
+#att 14
+#def 13
+#mr 18
+#diseasecloud 10
+#heat 10
+#autodisgrinder 1
+#itemslots 991750
+#clearmagic
+#magicskill 0 2
+#magicskill 1 1
+#magicskill 5 2
+#end
+
+#selectmonster 1098 -- Asynja Warrior
+#descr "The Asynja is a female Aesir who has survived the death of her kin. The Aesir were ancient gods who were defeated aeons ago by the Rimtursar in a cataclysmic battle. When the war ended the last remaining Aesir were banished by the Pantokrator. Now, with the Pantokrator gone the Asynja has returned to the world to claim it as hers."
+#diseaseres 100
+#gcost 270
+#pathcost 40
+#moreprod 1
+
+#moreluck 1
+#hp 85
+#prot 3
+#str 20
+#att 15
+#def 15
+#mr 18
+#coldres 5
+#shockres 10
+#itemslots 991750
+#clearmagic
+#magicskill 1 2
+#magicskill 3 1
+#magicskill 7 2
+#end
+
+#selectmonster 1229 -- Son of Fenrer
+#descr "Born at the dawn of time the Son of Fenrer is the offspring of one of the Great Adversaries. It is a primordial wolf of huge proportions. The monster ravaged the land of men and brought destruction and strife until the previous Pantokrator rose to power and imprisoned the beast for eternity. Now with the Pantokrator gone the Son of Fenrer is once more free to roam the bountiful lands of men. The monstrous wolf has inherited the foul temper of his father and is prone to go berserk if anyone opposes him."
+#diseaseres 100
+#gcost 160
+#pathcost 60
+#moreheat -1
+
+#moreluck -1
+#hp 163
+#prot 14
+#str 31
+#att 13
+#def 12
+#mr 18
+#mastersmith -1
+#researchbonus -8
+#woundfend 2
+#twiceborn 6644 -- Wight Beast
+#weapon 823 -- claw
+#enc 1
+#itemslots 3932160
+#clearmagic
+#magicskill 2 1
+#magicskill 6 2
+#end
+
+#selectmonster 1230 -- Titan of the Forge
+#descr "The Titan of the Forge is a crippled God. Mutilated, imprisoned and given tools of smithing, he served the previous Pantokrator, but was forgotten and left for dead. During the aeons the Forge Lord learned his craft and became a true master when it comes to forging magic items and mundane tools. Now his skills will serve both the farmers and savants of his kingdom. When forging magic items, he requires fewer magic gems than an ordinary mage. The Forge Lord has had a deformed foot since his days in the service of the Pantokrator."
+#diseaseres 100
+#gcost 260
+#pathcost 30
+#hp 90
+#prot 3
+#str 26
+#att 12
+#def 12
+#mr 18
+#resources 50
+#userestricteditem 4  -- Smiths
+#itemslots 991750
+#clearmagic
+#magicskill 0 2
+#magicskill 3 3
+#end
+
+#selectmonster 1231 -- Drakaina
+#descr "The Drakaina was once a Titaness, beautiful beyond belief. When she spurned the previous Pantokrator she was cursed with a hideous form and was imprisoned on an enchanted isle. She now appears as a woman with the lower part of a huge serpent. From the serpent grow six dogs that hunger for human flesh. For millennia the baying of the dogs have frightened sailors that mistakenly have come too close to her island prison. Now, with the Pantokrator gone, her shackles are weakening and the Drakaina will avenge her millennial imprisonment."
+#diseaseres 100
+#gcost 290
+#pathcost 40
+#hp 132
+#prot 10
+#str 23
+#att 14
+#def 10
+#mr 18
+
+#itemslots 860678
+#clearmagic
+#magicskill 2 1
+#magicskill 5 2
+#magicskill 6 2
+#end
+
+#selectmonster 1232 -- Old Man of the Sea
+#descr "The Old Man of the Sea is possibly the oldest of all the underwater beings born at the dawn of time, when the sea was untamed and filled with monstrous beings. Wise beyond compare he was given power to guide the new-born races of the deeps by a previous Pantokrator. But regardless of his wishes, the tritons begun to worship him as though he was a god. When the Old Man of the Sea mentioned this to the Pantokrator, his master grew jealous and banished his servant for eternity, leaving the races of the deeps bereft of magical guidance. Now with the Pantokrator gone, the Old Man of the Sea is returning to bring wisdom and magic understanding to the races of the deeps. The Old Man of the Sea is able to leave the sea and can bring land-living beings with him into the sea."
+#diseaseres 100
+#gcost 260
+#pathcost 30
+#hp 100
+#prot 10
+#str 21
+#att 12
+#def 10
+#mr 18
+
+#itemslots 860678
+#clearmagic
+#magicskill 2 3
+#magicskill 4 2
+#end
+
+#selectmonster 1233 -- Lord of the Waves
+#descr "The Lord of the Waves is an underwater being born at the dawn of time, when the sea was untamed and filled with monstrous beings. The Lord of the Waves was given power over all shallow waters and the waves, where the sea meets the winds, by a previous Pantokrator. But hubris found him and he sired the tritons and let them worship him as though he was a god. The Pantokrator was furious and banished his rebellious servant for eternity. Now with the Pantokrator gone, the Lord of the Waves is once more free to receive the prayers of triton and men alike. The Lord of the Waves is able to leave the sea and can bring land-living beings with him into the sea."
+#diseaseres 100
+#gcost 250
+#pathcost 40
+#moreorder 1
+#hp 105
+#prot 10
+#str 24
+#att 13
+#def 10
+#mr 18
+
+#itemslots 860678
+#clearmagic
+#magicskill 1 2
+#magicskill 2 2
+#magicskill 6 1
+#end
+
+#selectmonster 1339 -- Nyorai
+#descr "The Nyorai is a giant of divine heritage. He is a lord of plenty and a bringer of good fortune to those who surround him. Because of this and other magical powers, he is worshipped by the lesser people and now he is out to become the True God. In combat he will place all friendly troops under his protection, negating the first damaging blow that would strike them."
+#diseaseres 100
+#gcost 250
+#pathcost 40
+#hp 150
+#prot 3
+#str 20
+#att 10
+#def 8
+#mr 18
+#bringeroffortune 35
+#onebattlespell 3702 -- Nyorai Protection
+#itemslots 991750
+#clearmagic
+#magicskill 3 2
+#magicskill 4 1
+#magicskill 7 2
+#end
+
+#selectmonster 1340 -- Tiwaz of War
+#descr "The Tiwaz is a giant of divine heritage who once was the General of the West in the old Pantokrator's armies. Now that the Pantokrator has fallen, the general will conquer the world and make it his domain."
+#diseaseres 100
+#gcost 280
+#pathcost 40
+#moreorder 1 
+#moreprod 1
+#hp 75
+#prot 3
+#str 22
+#att 15
+#def 15
+#mr 18
+#twiceborn 7231 -- Wight Giant
+#clearweapons
+#weapon 75  -- Enchanted Sword
+#inspirational 1
+#onebattlespell 242 -- Fanaticism
+#itemslots 991750
+#clearmagic
+#magicskill 0 2
+#magicskill 1 1
+#magicskill 3 2
+#end
+
+#selectmonster 1341 -- Devi of Darkness
+#descr "The Devi of Darkness is a huge four-armed divinity with a horrible appearance. She was once given power to battle demons by a previous Pantokrator, but her destructive fury made him banish her eternally to save the world from her rage. With the disappearance of the Pantokrator the raging devi has broken free and will subjugate and destroy all demons and likely the world as well. The Devi of Darkness is a slayer of demons and she holds a demon head in her hand and a bowl into which blood from the head constantly pours. Demon blood also pours from her open mouth. The Devi wields a sword which thirsts for demon blood and a trident that forces demons to halt."
+#diseaseres 100
+#gcost 290
+#pathcost 40
+#hp 84
+#prot 3
+#str 22
+#att 13
+#def 13
+#mr 18
+#darkvision 100
+#itemslots 467486
+#clearmagic
+#magicskill 3 2
+#magicskill 5 1
+#magicskill 8 2
+#end
+
+#selectmonster 1342 -- Titan of Rivers
+#descr "The Titan of Rivers is a giant of divine heritage. She claims dominion over the great rivers of the world. Her will and her great pitcher bring life to the land. She can draw from the power of all great rivers."
+#diseaseres 100
+#gcost 260
+#pathcost 40
+#hp 95
+#prot 3
+#str 22
+#att 12
+#def 12
+#mr 18
+#clearweapons
+#weapon 496  -- Sacred Pitcher
+#weapon 92  -- Fist
+#itemslots 991750
+#clearmagic
+#magicskill 2 3
+#magicskill 4 1
+#magicskill 6 1
+#end
+
+#selectmonster 1343 -- Titan of Love
+#descr "The Titan of Love is a giant of divine heritage. She is blessed with aphrodisiac beauty and few mortals would dream of harming her, or can resist her alluring glances. Her mere presence brings love to flower and the province in which she dwells will have unrest decreased."
+#diseaseres 100
+#gcost 250
+#pathcost 40
+#moregrowth 1 
+#moreorder 1
+#hp 95
+#prot 3
+#str 22
+#att 12
+#def 12
+#mr 18
+#clearweapons
+#weapon 1741 -- Charming Glance
+#weapon 92  -- Fist
+
+#itemslots 991750
+#clearmagic
+#magicskill 2 1
+#magicskill 6 2
+#magicskill 7 2
+#end
+
+#selectmonster 1344 -- Devi of Good Fortunes
+#descr "The Devi is a demigod of immense size. She was once the wife of a Previous pantokrator. As a good wife and mother she was given power over the Great River and the fortunes of men. However, the Pantokrator lost interest in her and banished her to another world. Now with the Pantokrator gone she has returned to her land to claim it as hers. She is able to grant her followers the ability to breathe water and good fortune affects the province in which she dwells."
+#diseaseres 100
+#gcost 240
+#pathcost 40
+#moreluck 1 
+#moreorder 1
+#hp 85
+#prot 3
+#str 20
+#att 11
+#def 12
+#mr 18
+#giftofwater 500
+#bringeroffortune 50
+#decscale 4  -- +Luck
+#itemslots 991750
+#clearmagic
+#magicskill 2 1
+#magicskill 4 2
+#magicskill 7 2
+#end
+
+#selectmonster 1345 -- Celestial General
+#descr "This wise man was once the General of the East in the old Pantokrator's armies. After the General of the West was almost slain, the Pantokrator became worried. As a precaution, he granted his general a divine body so that he would not easily be slain. Now that the Pantokrator has fallen, the general who calls himself the Celestial General is out to become the new God."
+#diseaseres 100
+#gcost 270
+#pathcost 40
+#moreprod 1
+#hp 100
+#prot 3
+#str 24
+#att 14
+#def 14
+#mr 18
+#clearweapons
+#weapon 75  -- Enchanted Sword
+#itemslots 991750
+#clearmagic
+#magicskill 1 1
+#magicskill 3 2
+#magicskill 4 2
+#end
+
+#selectmonster 1346 -- Colossal Fetish
+#descr "The Colossal Fetish is a statue that has come to life from being worshipped for many hundreds of years. It is mindless and mostly does what its worshippers believe it would do. It punishes harshly and rewards sparingly. The Colossal Fetish is made of wood and would be difficult to destroy in combat."
+#diseaseres 100
+#gcost 270
+#pathcost 40
+#moremagic -1
+#hp 120
+#prot 15
+#str 25
+#att 7
+#def 7
+#mr 18
+#swimming
+
+
+#itemslots 991750
+#clearmagic
+#magicskill 3 2
+#magicskill 6 1
 #end
 
 #selectmonster 1349 -- Devourer of Souls
@@ -69150,25 +71248,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #magicskill 4 2
 #end
 
-#selectmonster 216 -- Fire Dragon
-#descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. Red Dragons have their skills reduced when casting spells from paths other than Fire. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
-#diseaseres 100
-#gcost 240
-#pathcost 40
-#hp 125
-#prot 20
-#str 26
-#att 15
-#def 12
-#mr 18
-#woundfend 1
-#twiceborn 7223 -- Dracowight
-#enc 1
-#itemslots 18620416
-#clearmagic
-#magicskill 0 3
-#end
-
 #selectmonster 1428 -- Bakemono Kunshu
 #descr "The Bakemono Kunshu or Bakemono King is an ancient Bakemono who has mastered magic and cheated Death itself. During his search for sorcerous knowledge, he has discovered the means to hide his own mortality outside his body. Now he has little to fear from the weapons of men and leads the Bakemono of Shinuyama against the world."
 #diseaseres 100
@@ -69367,23 +71446,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #magicskill 3 1
 #magicskill 4 1
 #magicskill 8 2
-#end
-
-#selectmonster 226 -- Fire Dragon Archmage
-#descr "The Arch Mage is a mage who has attained such power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Arch Mage is a master of magic and can be adept in several of the magic paths. The Arch Mage is a master of magic rituals and he can project his Elemental magic one province farther than normally possible."
-#diseaseres 100
-#gcost 300
-#pathcost 40
-#hp 10
-#prot 0
-#str 13
-#att 10
-#def 10
-#mr 18
-
-#itemslots 2040326
-#clearmagic
-#magicskill 0 3
 #end
 
 #selectmonster 2137 -- Urmahlullu
@@ -69599,24 +71661,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #magicskill 6 3
 #end
 
-#selectmonster 244 -- Arch Mage
-#descr "The Arch Mage is a mage who has attained such power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Arch Mage is a master of magic and can be adept in several of the magic paths. The Arch Mage is a master of magic rituals and he can project his Elemental magic one province farther than normally possible."
-#diseaseres 100
-#gcost 40
-#pathcost 20
-#hp 10
-#prot 0
-#str 10
-#att 10
-#def 11
-#mr 18
-
-#itemslots 991750
-#clearmagic
-#magicskill 0 1
-#magicskill 3 1
-#end
-
 #selectmonster 2239 -- Asynja Maiden
 #descr "The Asynja is a female Aesir who has survived the death of her kin. The Aesir were ancient gods who were defeated aeons ago by the Rimtursar in a cataclysmic battle. The Asynja was once given the task of guarding the apples of immortality by a previous Pantokrator and ate one, but she was abducted by a descendant of the Rimtursar and lost the remaining apples. The Pantokrator punished her with eternal imprisonment. Now with the disappearance of the Pantokrator she has returned to bring hope and life to the world. She is a master of healing and will cure afflictions each month."
 #diseaseres 100
@@ -69642,23 +71686,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #magicskill 7 2
 #end
 
-#newmonster 8512 -- Africa Archmage
-#copystats 244
-#spr1 "extrapretenders/afarchmage1.tga"
-#spr2 "extrapretenders/afarchmage2.tga"
-#name "Arch Mage"
-#descr "The Arch Mage is a mage who has attained such power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Arch Mage is a master of magic and can be adept in several of the magic paths. The Arch Mage is a master of magic rituals and he can project his Elemental magic one province farther than normally possible."
-#diseaseres 100
-#gcost 40
-#homerealm 7  -- Africa
-#startdom 1
-#pathcost 20
-#nametype 126
-#clearmagic
-#magicskill 0 1
-#magicskill 3 1
-#end
-
 #selectmonster 2315 -- Melqart
 #descr "The Melqart is a prodigal Rephaite king who has left Hinnom to become the God of Berytos. Once the Rephaim all lived in Hinnom, but when the Berytians founded colonies near the city of Ashdod, they were influenced by the Rephaites and began to worship them as gods. The Melqart is huge of stature and deathly pale. Horns grow from his forehead and his hands have six fingers. The Melqart is a descendant of Azazel and shares his gifts and appetites. With the Pantokrator gone, he is free to claim the world as his banquet."
 #diseaseres 100
@@ -69679,23 +71706,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #magicskill 3 1
 #magicskill 4 1
 #magicskill 8 2
-#end
-
-#newmonster 8517 -- America Arch Mage
-#copystats 244
-#spr1 "extrapretenders/amarchmage1.tga"
-#spr2 "extrapretenders/amarchmage2.tga"
-#name "Arch Mage"
-#descr "The Arch Mage is a mage who has attained such power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Arch Mage is a master of magic and can be adept in several of the magic paths. The Arch Mage is a master of magic rituals and he can project his Elemental magic one province farther than normally possible."
-#diseaseres 100
-#gcost 40
-#homerealm 6  -- Middle America
-#startdom 1
-#pathcost 20
-#nametype 123
-#clearmagic
-#magicskill 0 1
-#magicskill 3 1
 #end
 
 #selectmonster 2316 -- Dragon King
@@ -69726,6 +71736,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 180
 #pathcost 40
+#moreluck -1
 #hp 23
 #prot 10
 #str 14
@@ -69858,24 +71869,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #magicskill 8 2
 #end
 
-#selectmonster 245 -- Master Enchanter
-#descr "The Master Enchanter is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He is a master of magic and can be adept in several of the magic paths. The Master Enchanter is a master of magic rituals and he can project his Sorcerous magic one province farther than normally possible."
-#diseaseres 100
-#gcost 40
-#pathcost 20
-#hp 10
-#prot 0
-#str 10
-#att 10
-#def 11
-#mr 18
-#masterrit 1
-#itemslots 991750
-#clearmagic
-#magicskill 6 1
-#magicskill 7 1
-#end
-
 #selectmonster 2435 -- Annunaki of Love and War
 #descr "The Annunaki is a giant of divine heritage. She was once the warrior and lover of the previous Pantokrator, but was imprisoned for her violent and promiscuous behavior. She has given birth to heroes, gods and monsters alike. Now with the Pantokrator gone, she is ready to claim a world inhabited by her children."
 #diseaseres 100
@@ -69897,23 +71890,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #magicskill 6 2
 #end
 
-#newmonster 8511 -- Africa Master Enchanter
-#copystats 245
-#spr1 "extrapretenders/afmasterenchanter1.tga"
-#spr2 "extrapretenders/afmasterenchanter2.tga"
-#name "Master Enchanter"
-#descr "The Master Enchanter is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He is a master of magic and can be adept in several of the magic paths. The Master Enchanter is a master of magic rituals and he can project his Sorcerous magic one province farther than normally possible."
-#diseaseres 100
-#gcost 40
-#homerealm 7  -- Africa
-#startdom 1
-#pathcost 20
-#nametype 126
-#clearmagic
-#magicskill 6 1
-#magicskill 7 1
-#end
-
 #selectmonster 2436 -- Annunaki of the Moon
 #descr "The Annunaki is a giant of divine heritage. He was once the Guide of the Moon and the principle behind astrology, and as such, one of the most important servants of the Pantokrator. With the Pantokrator gone, he has foreseen that he will become the lord of this world."
 #diseaseres 100
@@ -69932,23 +71908,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #magicskill 1 1
 #magicskill 4 3
 #magicskill 5 1
-#end
-
-#newmonster 8516 -- America Enchanter
-#copystats 245
-#spr1 "extrapretenders/ammasterenchanter1.tga"
-#spr2 "extrapretenders/ammasterenchanter2.tga"
-#name "Master Enchanter"
-#descr "The Master Enchanter is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He is a master of magic and can be adept in several of the magic paths. The Master Enchanter is a master of magic rituals and he can project his Sorcerous magic one province farther than normally possible."
-#diseaseres 100
-#gcost 40
-#homerealm 6  -- Middle America
-#startdom 1
-#pathcost 20
-#nametype 123
-#clearmagic
-#magicskill 6 1
-#magicskill 7 1
 #end
 
 #selectmonster 2437 -- Annunaki of Growth and Rebirth
@@ -70014,6 +71973,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 200
 #pathcost 40
+#moreprod -1
 #hp 10
 #prot 0
 #str 10
@@ -70113,25 +72073,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #magicskill 0 1
 #magicskill 3 1
 #magicskill 5 3
-#end
-
-#selectmonster 246 -- Freak Lord
-#descr "The Freak Lord is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Freak Lord is a master of magic and has mastered the sinister art of crossbreeding. The Freak Lord rides a horrifying freak created with vile crossbreeding rituals."
-#diseaseres 100
-#gcost 40
-#pathcost 20
-#hp 10
-#prot 0
-#str 10
-#att 10
-#def 11
-#mr 18
-#gemprod 8 2
-#domsummon2 -12
-#itemslots 1909254
-#clearmagic
-#magicskill 6 1
-#magicskill 8 1
 #end
 
 #selectmonster 2446 -- Neter of Kings
@@ -70331,23 +72272,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #magicskill 3 1
 #end
 
-#selectmonster 248 -- Arch Mage (UW)
-#descr "The Arch Mage is a mage who has attained such power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Arch Mage is a master of magic and can be adept in several of the magic paths. The Arch Mage is a master of magic rituals and he can project his Elemental magic one province farther than normally possible."
-#diseaseres 100
-#gcost 30
-#pathcost 20
-#hp 10
-#prot 0
-#str 10
-#att 10
-#def 11
-#mr 18
-#masterrit 1
-#itemslots 1909254
-#clearmagic
-#magicskill 2 2
-#end
-
 #selectmonster 2464 -- Neter of the Moon
 #descr "The Neter is a giant of divine heritage. A previous Pantokrator gave him power knowledge the moon and the stars and the wisdom how to use it. As guardian of the celestial bodies he observed what was, what had been, and what would come to pass. During the rebellion of the lesser gods, he observed but did not interfere on either side. For this the Pantokrator imprisoned him for eternity. Now with the pantokrator gone his astral prison is weakening and he will return to guide the world as he wills."
 #diseaseres 100
@@ -70491,6 +72415,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 190
 #pathcost 30
+#moreorder -1
 #hp 19
 #prot 1
 #str 13
@@ -70546,24 +72471,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #magicskill 7 1
 #end
 
-#selectmonster 249 -- Crone
-#descr "The Crone is an old hag of such great power that she has taken the role of a Pretender God. The Crone is a master of magic and can be adept in several of the magic paths."
-#diseaseres 100
-#gcost 40
-#pathcost 20
-#hp 10
-#prot 0
-#str 9
-#att 9
-#def 9
-#mr 18
-
-#itemslots 4071942
-#clearmagic
-#magicskill 5 1
-#magicskill 7 1
-#end
-
 #selectmonster 2554 -- Ahura of the Waters
 #descr "The Ahuras were three celestial beings given might and splendor by a previous Pantokrator. The Ahura of the Waters was given power over the life-bringing Water and was made a shepherd of creation. Now with the Pantokrator gone, he will make creation His to command. The Ahura of the Waters still commands the life-bringing Water and can draw forth gems of water power from its source. He is always guarded by living water."
 #diseaseres 100
@@ -70585,23 +72492,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #magicskill 2 2
 #magicskill 4 1
 #magicskill 6 1
-#end
-
-#newmonster 8510 -- Africa Crone
-#copystats 249
-#spr1 "extrapretenders/affrostfather1.tga"
-#spr2 "extrapretenders/affrostfather2.tga"
-#name "Elder"
-#descr "The Elder is an old mage of such great power that he has taken the role of a Pretender God. The Elder is a master of magic and can be adept in several of the magic paths."
-#diseaseres 100
-#gcost 40
-#homerealm 7  -- Africa
-#startdom 1
-#pathcost 20
-#nametype 126
-#clearmagic
-#magicskill 5 1
-#magicskill 7 1
 #end
 
 #selectmonster 2555 -- Spenta Mainyu
@@ -70693,6 +72583,9 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 330
 #pathcost 40
+#moreorder -1 
+#moregrowth -1 
+#moreheat 1
 #hp 19
 #prot 0
 #str 14
@@ -70783,25 +72676,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #magicskill 2 1
 #end
 
-#selectmonster 250 -- Frost Father
-#descr "The Frost Father is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Frost Father is a master of magic and can be adept in several of the magic paths."
-#diseaseres 100
-#gcost 40
-#pathcost 20
-#moreheat -1
-#hp 10
-#prot 0
-#str 10
-#att 10
-#def 10
-#mr 18
-
-#itemslots 991750
-#clearmagic
-#magicskill 1 1
-#magicskill 2 1
-#end
-
 #selectmonster 2686 -- Apu Inti
 #descr "The Apu Inti, Lord Sun, is a giant of divine heritage. When his father sinned against the Pantokrator the Apu Inti inherited the splendor of the sun in his fathers stead. He was given dominion over the Sun and everything upon which it shone. But the Inti became enamored with the beings underneath the sun and the Huacas of the land. He sired the Ayar brothers, divine heroes unchecked by the Pantokrator. The Lord of the world, found the Inti's insolence even worse than his father's, and the Lord Sun and his siblings were imprisoned in caves with unbreakable doors of Garnet and Gold. But now, with the Pantokrator gone, the doors of Garnet and Gold are weakening and they shudder with each strike of the imprisoned Sun. When they finally shatter, the Apu Inti will reclaim a world once his."
 #diseaseres 100
@@ -70820,24 +72694,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #clearmagic
 #magicskill 0 4
 #magicskill 4 1
-#end
-
-#newmonster 8515 -- America Frost Father
-#copystats 250
-#spr1 "extrapretenders/amfrostfather1.tga"
-#spr2 "extrapretenders/amfrostfather2.tga"
-#name "Frost Father"
-#descr "The Frost Father is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Frost Father is a master of magic and can be adept in several of the magic paths."
-#diseaseres 100
-#gcost 40
-#homerealm 0  -- None
-#startdom 1
-#pathcost 20
-#moreheat -1
-#nametype 123
-#clearmagic
-#magicskill 1 1
-#magicskill 2 1
 #end
 
 #selectmonster 2693 -- Heavenly Condor
@@ -71032,23 +72888,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #magicskill 8 2
 #end
 
-#selectmonster 251 -- Great Sage
-#descr "The Great Sage is a scholar of such great power and knowledge that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Great Sage is a master of magical research and is often adept in several of the magic paths."
-#diseaseres 100
-#gcost 30
-#pathcost 20
-#hp 10
-#prot 0
-#str 10
-#att 10
-#def 10
-#mr 18
-
-#itemslots 991750
-#clearmagic
-#magicskill 4 2
-#end
-
 #selectmonster 2777 -- Demon Macaw
 #descr "Born at the dawn of time, the Demon Macaw represents an earlier era, when monsters and giants roamed the world. Gifted with brilliant splendor the monstrous bird became envious of the Sun and the Moon and chased them away from the skies. With the Sun and the Moon gone he impersonated the stellar entities himself and basked in the worship of mankind. Furious with the breach of his intended order the Pantokrator imprisoned the Demon Macaw for eternity. Now with the Pantokrator gone, the monster bird is breaking free from his prison and is once more worshiped as the Sun and the Moon."
 #diseaseres 100
@@ -71076,22 +72915,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #magicskill 4 1
 #end
 
-#newmonster 8509 -- Africa Great Sage
-#copystats 251
-#spr1 "extrapretenders/afgreatsage1.tga"
-#spr2 "extrapretenders/afgreatsage2.tga"
-#name "Great Sage"
-#descr "The Great Sage is a scholar of such great power and knowledge that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Great Sage is a master of magical research and is often adept in several of the magic paths."
-#diseaseres 100
-#gcost 30
-#homerealm 7  -- Africa
-#startdom 1
-#pathcost 20
-#nametype 126
-#clearmagic
-#magicskill 4 2
-#end
-
 #selectmonster 2783 -- Drakon
 #descr "The Drakones are ancient many-headed reptiles of tremendous power. Born outside of this world, the Drakones were once summoned and used by a previous Pantokrator as punishment when he found his servants lacking in faith. The Drakones brought destruction upon nations and soon the very world was at risk. The Pantokrator decided to imprison the Drakones for millennia. Now with the Pantokrator gone, their shackles are weakening. Drakones are enormous, scaly beasts capable of breathing poisonous gas upon enemies. Some Arcoscephalean historians claim that they are progenitors or a primitive form of the great dragons. Drakones are wingless and do not have the ability to change shape."
 #diseaseres 100
@@ -71112,22 +72935,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #clearmagic
 #magicskill 3 1
 #magicskill 6 2
-#end
-
-#newmonster 8514 -- America Sage
-#copystats 251
-#spr1 "extrapretenders/amgreatsage1.tga"
-#spr2 "extrapretenders/amgreatsage2.tga"
-#name "Great Sage"
-#descr "The Great Sage is a scholar of such great power and knowledge that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Great Sage is a master of magical research and is often adept in several of the magic paths."
-#diseaseres 100
-#gcost 30
-#homerealm 6  -- Middle America
-#startdom 1
-#pathcost 20
-#nametype 123
-#clearmagic
-#magicskill 4 2
 #end
 
 #selectmonster 2784 -- Thrice Horned Boar
@@ -71297,7 +73104,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2791 -- Earth Serpent
 #descr "The Earth Serpent is a monstrous serpent born at the dawn of time, when monsters and giants roamed the world. Its movements caused earthquakes and avalanches and it was worshiped by the first men who prayed that it would sleep and spare their homes. When the previous Pantokrator rose to power he imprisoned and banished all that threatened his creation and the Earth Serpent was imprisoned for eternity. Now with the Pantokrator gone, the shackles are weakening and the tremors of the stirring serpent can once more be felt in the world. Great Serpents can shed their skin and regenerate their wounds. The Earth Serpent is slow, as is its metabolism and life cycle. It doesn't regenerate as quickly as other serpents, but given time, all of its wounds will heal."
 #diseaseres 100
-#gcost 220
+#gcost 180
 #pathcost 60
 #hp 280
 #prot 20
@@ -71315,46 +73122,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #itemslots 18620416
 #clearmagic
 #magicskill 3 3
-#end
-
-#selectmonster 120 -- Moloch
-#descr "The Moloch is an infernal angel called or sent from beyond. Winged and dressed in horror, he will crush this world and make its inhabitants slaughter one another and suffer the torment of the Inferno. The Moloch is a powerful and mighty warrior and demonic servants will come to his aid whenever he goes into battle. The Moloch will surely shatter the world unless he is vanquished."
-#diseaseres 100
-#gcost 230
-#pathcost 60
-#moreorder -1
-
-#moremagic -1
-#hp 66
-#prot 20
-#str 21
-#att 13
-#def 13
-#mr 18
-#spreaddom 1
-#itemslots 991750
-#clearmagic
-#magicskill 0 2
-#magicskill 8 2
-#end
-
-#selectmonster 265 -- Water Dragon
-#descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. Blue Dragons have their skills reduced when casting spells from paths other than Water. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
-#diseaseres 100
-#gcost 240
-#pathcost 40
-#hp 125
-#prot 20
-#str 26
-#att 15
-#def 12
-#mr 18
-#woundfend 1
-#twiceborn 7223 -- Dracowight
-#enc 1
-#itemslots 18620416
-#clearmagic
-#magicskill 2 3
 #end
 
 #selectmonster 2792 -- Solar Serpent
@@ -71381,23 +73148,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #itemslots 18620416
 #clearmagic
 #magicskill 0 3
-#end
-
-#selectmonster 267 -- Dragon Frost Father
-#descr "The Frost Father is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Frost Father is a master of magic and can be adept in several of the magic paths."
-#diseaseres 100
-#gcost 200
-#pathcost 60
-#hp 10
-#prot 0
-#str 13
-#att 10
-#def 10
-#mr 18
-
-#itemslots 2040326
-#clearmagic
-#magicskill 2 3
 #end
 
 #selectmonster 2793 -- Serpent of Chaos
@@ -71816,25 +73566,6 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 7 1
 #end
 
-#selectmonster 266 -- Nature Dragon
-#descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. Green Dragons have their skills reduced when casting spells from paths other than Nature. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
-#diseaseres 100
-#gcost 240
-#pathcost 40
-#hp 125
-#prot 20
-#str 26
-#att 15
-#def 12
-#mr 18
-#woundfend 1
-#twiceborn 7223 -- Dracowight
-#enc 1
-#itemslots 18620416
-#clearmagic
-#magicskill 6 3
-#end
-
 #selectmonster 2881 -- Telkhine God-King
 #descr "The Telkhine God-King was the ruler of the Telkhines, ancient spirits of the sea with powers to rival the titans. They were masterful sages and metal crafters. They forged artifacts for the servants of the previous Pantokrator and taught the elder cyclopes their arts. But the Telkhines succumbed to hubris and made themselves god-kings to be worshiped by their subjects. When they discovered the means to create malefic poison through the mixing of stygian water and sulfur their lands became poisonous to animals and plants alike. Their reign was put to an end by the Pantokrator and the entire kingdom was swallowed by the sea. The Telkhines themselves were imprisoned in Tartarus for eternity. Now with the Pantokrator gone the mightiest of the Telkhines is breaking free. Telkhines are able to change their shape. In their demonic form they appear with dog heads and flippers instead of hands and their powers over storms and the sea are increased. In human shape their skills in forging are increased. Telkhines are always surrounded by stygian fumes that kills men and beast alike. Even the population in the province where they dwell will slowly suffer and die. He is highly resilient and will suffer permanent injuries less often than most creatures."
 #diseaseres 100
@@ -71859,28 +73590,14 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 5 1
 #end
 
-#selectmonster 268 -- Dragon Master Enchanter
-#descr "The Master Enchanter is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He is a master of magic and can be adept in several of the magic paths. The Master Enchanter is a master of magic rituals and he can project his Sorcerous magic one province farther than normally possible."
-#diseaseres 100
-#gcost 240
-#pathcost 40
-#hp 10
-#prot 0
-#str 13
-#att 10
-#def 10
-#mr 18
-
-#itemslots 2040326
-#clearmagic
-#magicskill 6 3
-#end
-
 #selectmonster 2882 -- Telkhine God-King Demon
 #descr "The Telkhine God-King was the ruler of the Telkhines, ancient spirits of the sea with powers to rival the titans. They were masterful sages and metal crafters. They forged artifacts for the servants of the previous Pantokrator and taught the elder cyclopes their arts. But the Telkhines succumbed to hubris and made themselves god-kings to be worshiped by their subjects. When they discovered the means to create malefic poison through the mixing of stygian water and sulfur their lands became poisonous to animals and plants alike. Their reign was put to an end by the Pantokrator and the entire kingdom was swallowed by the sea. The Telkhines themselves were imprisoned in Tartarus for eternity. Now with the Pantokrator gone the mightiest of the Telkhines is breaking free. Telkhines are able to change their shape. In their demonic form they appear with dog heads and flippers instead of hands and their powers over storms and the sea are increased. In human shape their skills in forging are increased. Telkhines are always surrounded by stygian fumes that kills men and beast alike. Even the population in the province where they dwell will slowly suffer and die. He is highly resilient and will suffer permanent injuries less often than most creatures."
 #diseaseres 100
-#gcost 240
+#gcost 280
 #pathcost 40
+#moregrowth -1
+
+#moreprod 1
 #hp 58
 #prot 5
 #str 20
@@ -72233,30 +73950,6 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 3 1
 #end
 
-#selectmonster 269 -- Wyrm
-#descr "The Wyrm is an enormous serpent with one head at each end of its huge body. The physical might of the Wyrm is awesome and even Dragons avoid battles with the great serpent. The bite of the Wyrm is poisonous and the beast regenerates from wounds during battle."
-#diseaseres 100
-#gcost 180
-#homerealm 10
-#pathcost 60
-#hp 190
-#prot 16
-#str 29
-#att 15
-#def 10
-#mr 18
-#mastersmith -1
-#researchbonus -8
-#heal
-#woundfend 2
-#twiceborn 7245 -- Necrophidian
-#enc 1
-#itemslots 18636800
-#clearmagic
-#magicskill 2 2
-#magicskill 3 1
-#end
-
 #selectmonster 3060 -- Master
 #descr "The Master is the most accomplished sage in the empire. For centuries his skills have been unequaled, and he is simply known as The Master. The Master has gradually become the subject of human worship and now he has humbly taken the role of a Pretender God."
 #diseaseres 100
@@ -72459,25 +74152,6 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 8 2
 #end
 
-#selectmonster 270 -- Arch Druid
-#descr "The Arch Druid is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He is a master of magic and can be adept in several of the magic paths. The Arch Druid knows how to awaken the magical inhabitants of the forests and summons two extra vine men or vine ogres when casting the appropriate ritual spell."
-#diseaseres 100
-#gcost 80
-#pathcost 20
-#hp 10
-#prot 0
-#str 10
-#att 10
-#def 10
-#mr 18
-#domsummon2 361  -- Vine Man
-#itemslots 991750
-#clearmagic
-#magicskill 3 1
-#magicskill 6 1
-#magicskill 4 1
-#end
-
 #selectmonster 3082 -- Matrona of the Spring
 #descr "The Matrona of the Healing Spring is a giant of divine heritage placed to guard a spring by a previous Pantokrator. For some reason the spring was special to the Pantokrator and he instilled his power in the sparkling waters. He told the Matrona never to bathe in the sacred waters and to keep them ever clean. But the Matrona of the Spring couldn't resist and bathed in the blessed waters, and the powers instilled in the spring were suffused in her body. And mankind came to her and begged her to heal them from all ills, and they gave her their prayers. But one day the Pantokrator returned to take his centennial bath, and discovered that the reinvigorating powers of the spring was lost and its waters befouled by the filth of men. Furious he threw the Matrona into the spring and placed a cliff on top of it imprisoning her for eternity. But now, with the Pantokrator gone, a trickle of water is eroding the stone. Soon the Matrona of the Healing Spring will once more bring mercy and wisdom to mankind."
 #diseaseres 100
@@ -72675,25 +74349,6 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 7 1
 #end
 
-#selectmonster 294 -- Nerid
-#descr "The Nerid is an underwater being born at the dawn of time, when the sea was untamed and filled with monstrous beings. She was given power over life in the forests of the shallow seas by a previous Pantokrator. But hubris found her and she gave wisdom and mind to the beasts of the sea, making them aware of her presence. The awakened half-men gave her their devotion and prayers as though she was a god. The Pantokrator was furious and banished his rebellious servant for eternity. Now with the Pantokrator gone, the Nerid is once more free to receive the prayers of men and beasts, however she is aquatic and cannot leave her maritime realm."
-#diseaseres 100
-#gcost 240
-#pathcost 40
-#hp 82
-#prot 6
-#str 14
-#att 12
-#def 12
-#mr 18
-#twiceborn 7231 -- Wight Giant
-#itemslots 1909254
-#clearmagic
-#magicskill 2 1
-#magicskill 6 3
-#magicskill 7 1
-#end
-
 #selectmonster 3204 -- Grey One
 #descr "The Grey Ones, Graeae, are three crone sisters spawned by Phorkys, Father of Monsters, at the dawn of time. When the Pantokrator reformed the world he slew or banished all monsters that threatened the world. The Graeae, while not nearly as powerful as their father, were imprisoned and chained in a stygian cavern as a precaution. For millennia the crones have waited, getting older and angrier for every year that passed. Now with the Pantokrator gone, their shackles are weakening and their malice can be felt by those who dream. The Grey Ones are incredibly old and their bodies are frail and weak. Two of the sisters have lost their eyesight and now the three of them share a single eye. All three sisters use death, water and glamour magic, but they have all mastered different magical paths. The first of the Sisters, 'the Terrible', uses blood and nature magic. The second sister, known as 'the Warlike' uses fire and earth magic and the third sister, 'the Destroyer' uses air and astral magic."
 #diseaseres 100
@@ -72884,23 +74539,6 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #clearmagic
 #magicskill 3 2
 #magicskill 4 1
-#end
-
-#selectmonster 320 -- Saurolich
-#descr "A Saurolich is the dried husk of a Sauromancer. Through dark rituals, the lizard succeeded in mastering one of the oldest and most urgent of goals, to defeat death. By removing his viscera and hiding it outside his body, the Lich is virtually impossible to slay. Should the body be physically destroyed, a new one is formed from the dust of dead bodies. Being immortal, there is nothing left to acquire but godhood. The Saurolich lacks the broad base of magical knowledge of the Arch Mage."
-#diseaseres 100
-#gcost 180
-#pathcost 30
-#hp 33
-#prot 7
-#str 15
-#att 13
-#def 10
-#mr 18
-
-#itemslots 991750
-#clearmagic
-#magicskill 5 4
 #end
 
 #selectmonster 3344 -- Statue of Beginnings
@@ -73122,26 +74760,6 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 6 1
 #end
 
-#selectmonster 383 -- Prince of Death
-#descr "An undead demon prince called or sent by the Lord of the Underworld, he is winged and shrouded in death, and will annihilate the living of this world to make it a realm of the dead. The Prince of Death is a master of Death magic. When he calls upon the lesser types of undead with rituals, the effect will be greater compared to mortal necromancers and he is protected by shadows from his Netherworld realm at all times. His only weakness is his bond with the Underworld, which makes it possible for priests to banish him from this world."
-#diseaseres 100
-#gcost 200
-#pathcost 40
-#hp 66
-#prot 5
-#str 21
-#att 13
-#def 13
-#mr 18
-#invulnerable 20
-#inspirational 1
-#raredomsummon 634  -- Handmaiden of Death
-#spreaddom 1
-#itemslots 991750
-#clearmagic
-#magicskill 5 4
-#end
-
 #selectmonster 3395 -- Demiurge
 #descr "The Demiurge is a great serpent created at the dawn of time, when monsters and giants roamed the world. It is the progeny of the daughter of a previous Pantokrator. Her misguided attempt at creation resulted in a primordial monster wreathed in divine splendour. The monstrous serpent beheld the world and all its inferior beings. Full of unbridled pride he roared towards the sky and claimed to be the One True God and creator of everything, unaware of the Pantokrator and the true order of the world. The Pantokrator decided to rid the world of the False God and imprisoned him for eternity. Now with the Pantokrator gone the Blind God is slowly awakening, free to once more claim the world as his to rule."
 #diseaseres 100
@@ -73323,6 +74941,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #diseaseres 100
 #gcost 260
 #pathcost 40
+#moreprod -1
 #hp 10
 #prot 0
 #str 13
@@ -73351,26 +74970,6 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #clearmagic
 #magicskill 3 2
 #magicskill 5 1
-#end
-
-#selectmonster 384 -- Neter of Crafts
-#descr "The Neter is a giant of divine heritage. Given skills and powers of creation by a previous Pantokrator, he became the master crafter and chief architect of creation. With the creation of the world complete, his services were no longer needed and he was banished for eternity. Having created eternity, the Neter was not too concerned and waited for the Pantokrator to disappear. Now he has returned to claim the world he created."
-#diseaseres 100
-#gcost 250
-#pathcost 40
-#hp 95
-#prot 3
-#str 24
-#att 12
-#def 12
-#mr 18
-#fixforgebonus 4
-#resources 100
-#itemslots 991750
-#clearmagic
-#magicskill 2 1
-#magicskill 3 2
-#magicskill 4 2
 #end
 
 #selectmonster 3651 -- God Spider
@@ -73549,6 +75148,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #diseaseres 100
 #gcost 240
 #pathcost 40
+#moreorder -1 
+#moreprod -1
 #hp 10
 #prot 0
 #str 13
@@ -73581,54 +75182,11 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 7 1
 #end
 
-#selectmonster 138 -- Gorgon
-#descr "The Gorgons were three divine sisters born at the dawn of time. When the youngest of them was assaulted by a servant of the Pantokrator they were collectively punished for defending her. The sisters were transformed into beasts of horrific appearance. Their hair are masses of snakes and their eyes burn with amber fire. Great flapping bat wings grow from their shoulders. So horrible were their appearance that anyone who looked upon their faces turned to stone. But this was not enough for the servant. On his request the Pantokrator imprisoned the three gorgons for eternity and the youngest sister was bereft of her immortality, should she ever escape her prison. Now with the Pantokrator gone one of the sisters is stirring and her shackles are weakening."
-#diseaseres 100
-#gcost 220
-#pathcost 40
-#hp 30
-#prot 9
-#str 13
-#att 12
-#def 10
-#mr 18
-#spreaddom 1
-#itemslots 17768966
-#clearmagic
-#magicskill 3 2
-#magicskill 6 1
-#magicskill 5 1
-#end
-
-#selectmonster 385 -- Neteret of Joy
-#spr1 "vanilla/neterofjoy1.tga"
-#spr2 "vanilla/neterofjoy2.tga"
-#descr "The Neteret is a giant of divine heritage. A previous Pantokrator gave her powers of creation and she brought joy and fertility to the world. When the Pantokrator became aware of the rebellion of lesser gods, he imprisoned her and the world was bereft of Joy. With the Pantokrator gone, her imprisonment has ended and fertility and happiness have returned to the world."
-#diseaseres 100
-#gcost 250
-#pathcost 40
-#moregrowth 1
-
-#moreluck 1
-#hp 98
-#prot 3
-#str 23
-#att 12
-#def 12
-#mr 18
-
-#itemslots 17768966
-#clearmagic
-#magicskill 3 2
-#magicskill 6 2
-#magicskill 7 1
-#end
-
 #selectmonster 3875 -- Nagasiddha humanoid
 #descr "The Nagasiddha is a naga sage that has achieved physical and mental perfection. It is an inhabitant of the nether realms, although it originated in this world and descended into the underworld after enlightenment. Now the Nagasiddha has returned to this world in the wake of the previous Pantokrator to claim the world as his. Nagasiddhas are able to take the shape of a humanoid siddha. In human form it loses some of its skills in water magic."
 #diseaseres 100
-#gcost 250
-#pathcost 40
+#gcost 200
+#pathcost 20
 #hp 22
 #prot 0
 #str 13
@@ -73691,6 +75249,9 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #diseaseres 100
 #gcost 280
 #pathcost 40
+#moregrowth -1
+
+#moreprod -1
 #hp 30
 #prot 5
 #str 15
@@ -73826,29 +75387,12 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 6 2
 #end
 
-#selectmonster 386 -- Neter of the Sun
-#descr "The Neter is a giant of divine heritage. During the rebellion of the lesser gods, the Pantokrator was killed and dismembered. But the Pantokrator was reassembled and brought back by his wife, the Mistress of Magic. The Neter of the Sun was born from the union of the dead Pantokrator and his wife. Upon him was bestowed the authority and might of the sun. He was made a vessel of vengeance and he destroyed the rebellion and slew the Great Antagonist. But the Pantokrator could not reenter the world, bound by his own Law of Death and Rebirth. Now the Neter claims the world in his father's name."
-#diseaseres 100
-#gcost 220
-#pathcost 40
-#hp 95
-#prot 3
-#str 24
-#att 12
-#def 12
-#mr 18
-
-#itemslots 17768966
-#clearmagic
-#magicskill 0 3
-#magicskill 4 2
-#end
-
 #selectmonster 3930 -- Azure Dragon Celestial Bureaucrat
 #descr "A celestial bureaucrat or envoy of the celestial sphere. The bureaucrat is a powerful magic user and will only appear in the world on important missions. Some celestial bureaucrats are mighty dragons, others are blessed beings or immortals."
 #diseaseres 100
-#gcost 220
+#gcost 180
 #pathcost 40
+#moregrowth 1
 #hp 23
 #prot 10
 #str 14
@@ -74050,1519 +75594,6 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 5 1
 #end
 
-#selectmonster 387 -- Neter of Many Names
-#spr1 "vanilla/neteretofmanynames1.tga"
-#spr2 "vanilla/neteretofmanynames2.tga"
-#descr "The Neteret is a giant of divine heritage. She was once the wife of a previous Pantokrator, and was given knowledge of all names and the deeper arcana. When her husband was slain and dismembered in a rebellion of lesser gods, she gathered his body parts and returned him to life. However, his death meant that he was for eternity banished to the Underworld. The rebellious pretenders imprisoned her and a new Pantokrator came to rule. With the disappearance of the Pantokrator her prison weakens and She of Many Names is once more worshipped as Mistress of Magic and Lady of This World."
-#diseaseres 100
-#gcost 240
-#pathcost 30
-#hp 90
-#prot 3
-#str 22
-#att 14
-#def 12
-#mr 18
-
-#itemslots 991750
-#clearmagic
-#magicskill 4 2
-#magicskill 5 1
-#magicskill 7 1
-#end
-
-#selectmonster 388 -- Neter of Chaos
-#descr "The Neter is a giant of divine heritage. He was once given power over the desert, storms, darkness and destruction by a previous Pantokrator. Endowed with unequaled destructive power and jealous ambition, he led the lesser gods in rebellion against his master and slew and dismembered him. However, the Pantokrator was reassembled by one of his servants and was able to return from the dead to banish the Neter for eternity. With the disappearance of the Pantokrator, the prison weakens and the Neter of Chaos can once more claim the world as his to destroy."
-#diseaseres 100
-#gcost 280
-#pathcost 40
-#hp 95
-#prot 3
-#str 24
-#att 12
-#def 12
-#mr 18
-#darkvision 100
-#itemslots 17768966
-#clearmagic
-#magicskill 0 2
-#magicskill 1 2
-#magicskill 5 2
-#end
-
-#selectmonster 395 -- Lich Queen
-#descr "A Lich Queen is the dried husk of an ancient queen adept in Death magic. Through dark rituals, she succeeded in mastering one of mankind's oldest and most urgent goals, to defeat death. By removing her viscera and hiding it outside her body, she is virtually impossible to slay. Should the body be physically destroyed, a new one is formed from the dust of dead humans. Being immortal, there is nothing left to acquire but godhood. The Lich Queen lacks the Arch Mage's broad base of magical knowledge, but her reanimated body is more durable than a living body since it is leathery and dry and lacks all organs of importance."
-#diseaseres 100
-#gcost 180
-#pathcost 30
-#hp 18
-#prot 5
-#str 12
-#att 10
-#def 10
-#mr 18
-#domsummon20 1980  -- Dust Warrior
-#itemslots 991750
-#clearmagic
-#magicskill 5 3
-#magicskill 0 1
-#end
-
-#selectmonster 401 -- Bitch Queen
-#descr "The Bitch Queen is a werewolf enchantress of tremendous magical power. The Bitch Queen usually appears in the form of an old hag, but when angered, she transforms into a werewolf. She is attended by a pack of werewolves that do her bidding. Even though her werewolf form is more powerful than her human form, it is still quite weak when compared to the majority of the other Pretender Gods."
-#diseaseres 100
-#gcost 50
-#pathcost 20
-#hp 25
-#prot 6
-#str 16
-#att 15
-#def 14
-#mr 18
-#domsummon2 633  -- Werewolves
-#onebattlespell 3701 -- Blessing of the Bitch Queen
-#itemslots 991750
-#clearmagic
-#magicskill 4 1
-#magicskill 6 1
-#end
-
-#selectmonster 402 -- Bitch Crone
-#descr "The Bitch Queen is a werewolf enchantress of tremendous magical power. The Bitch Queen usually appears in the form of an old hag, but when angered, she transforms into a werewolf. She is attended by a pack of werewolves that do her bidding. Even though her werewolf form is more powerful than her human form, it is still quite weak when compared to the majority of the other Pretender Gods."
-#diseaseres 100
-#gcost 50
-#startdom 2
-#pathcost 20
-#hp 16
-#prot 0
-#str 10
-#att 12
-#def 12
-#mr 18
-#invulnerable 15
-#domsummon2 633  -- Werewolves
-#onebattlespell 3701 -- Blessing of the Bitch Queen
-#itemslots 991750
-#clearmagic
-#magicskill 4 1
-#magicskill 6 1
-#end
-
-#selectmonster 472 -- Statue of Order
-#descr "The Statue of Order is a primordial spirit of order that once served a previous Pantokrator to bring civilization and order to the world. When the final decree was set, its services were no longer needed and the spirit was bound in a huge stone statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshiped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion, and law and order will be reinforced wherever it is worshiped. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
-#diseaseres 100
-#gcost 130
-#pathcost 40
-#hp 100
-#prot 25
-#str 15
-#att 5
-#def 0
-#mr 18
-#mastersmith 0
-
-#itemslots 786432
-#clearmagic
-#magicskill 3 1
-#magicskill 4 2
-#end
-
-#selectmonster 485 -- Great Enchantress
-#descr "The Great Enchantress is an enchantress of such great power that she has taken the role of a Pretender God. She is a master of magic and can be adept in several of the magic paths. The Great Enchantress knows how to crystallize dreams and will produce one glamour gem each month."
-#diseaseres 100
-#gcost 40
-#pathcost 20
-#hp 9
-#prot 0
-#str 8
-#att 8
-#def 8
-#mr 18
-
-#itemslots 991750
-#clearmagic
-#magicskill 4 1
-#magicskill 7 1
-#end
-
-#newmonster 8513 -- Africa Enchantress
-#copystats 485
-#spr1 "extrapretenders/afgreatenchantress1.tga"
-#spr2 "extrapretenders/afgreatenchantress2.tga"
-#name "Great Enchantress"
-#descr "The Great Enchantress is an enchantress of such great power that she has taken the role of a Pretender God. She is a master of magic and can be adept in several of the magic paths. The Great Enchantress knows how to crystallize dreams and will produce one glamour gem each month."
-#diseaseres 100
-#gcost 40
-#homerealm 7  -- Africa
-#startdom 1
-#pathcost 20
-#nametype 125
-#clearmagic
-#magicskill 4 1
-#magicskill 7 1
-#end
-
-#newmonster 8518 -- America Enchantress
-#copystats 485
-#spr1 "extrapretenders/amgreatenchantress1.tga"
-#spr2 "extrapretenders/amgreatenchantress2.tga"
-#name "Great Enchantress"
-#descr "The Great Enchantress is an enchantress of such great power that she has taken the role of a Pretender God. She is a master of magic and can be adept in several of the magic paths. The Great Enchantress knows how to crystallize dreams and will produce one glamour gem each month."
-#diseaseres 100
-#gcost 40
-#homerealm 6  -- Middle America
-#startdom 1
-#pathcost 20
-#nametype 124
-#clearmagic
-#magicskill 4 1
-#magicskill 7 1
-#end
-
-#selectmonster 486 -- Great Warlock
-#descr "The Great Warlock is a mage of such great power that he has taken the role of a Pretender God. Great Warlocks are masters of magic and known to be adept in several of the magic paths."
-#diseaseres 100
-#gcost 80
-#pathcost 20
-#hp 19
-#prot 0
-#str 14
-#att 10
-#def 9
-#mr 18
-#neednoteat
-#itemslots 991750
-#clearmagic
-#magicskill 0 1
-#magicskill 4 1
-#magicskill 8 1
-#end
-
-#selectmonster 156 -- Chthonic Cyclops
-#spr1 "extrapretenders/cyclops.tga"
-#spr2 "extrapretenders/cyclops2.tga"
-#name "Chthonic Cyclops"
-#descr "The Cyclops is a one-eyed giant sprung from the roots of a great mountain. The body of the Cyclops is huge and as hard as the rock from which it was born. The Cyclops is a master of Earth magic and will use less gems when forging magic items."
-#diseaseres 100
-#gcost 250
-#homerealm 3  -- Mediterranean
-#pathcost 40
-#moreprod 1
-#hp 91
-#prot 20
-#str 28
-#att 11
-#def 12
-#mr 18
-#twiceborn 7231 -- Wight Giant
-#fixforgebonus 2
-#clearweapons
-#weapon 562  -- Stone Fist
-#weapon 397  -- Kick
-#itemslots 991750
-#clearmagic
-#magicskill 3 4
-#end
-
-#selectmonster 499 -- Nataraja
-#descr "When the Devatas and Yakshas of Kailasa were forced to leave the world, their Lord was trapped. Now the Nataraja is free once again to dance the eternal Dance of Death and Birth. The Nataraja is armed with four weapons and has the martial prowess to wield them simultaneously. The Nataraja is surrounded by an aura of celestial fire."
-#diseaseres 100
-#gcost 270
-#pathcost 40
-#hp 84
-#prot 3
-#str 22
-#att 12
-#def 14
-#mr 18
-
-#itemslots 467486
-#clearmagic
-#magicskill 0 2
-#magicskill 3 1
-#magicskill 4 2
-#end
-
-#selectmonster 500 -- Skratti
-#descr "The Skratti is an ancient giant of great power who has taken the role of a Pretender God. The Skratti is a master of magic rituals and very tough, but not as strong as dragons or demigods."
-#diseaseres 100
-#gcost 80
-#pathcost 20
-#hp 39
-#prot 5
-#str 22
-#att 12
-#def 10
-#mr 18
-#masterrit 1
-#itemslots 991750
-#clearmagic
-#magicskill 2 1
-#magicskill 8 1
-#end
-
-#selectmonster 501 -- Allfather
-#descr "The Allfather is the first and the last of the Aesir, ancient gods that died in the great war with the Rimtursar. When the war ended the Pantokrator banished the remaining aesir from the world. With the Pantokrator gone the Allfather has returned to the world to claim it as his. The Allfather was the foremost of the Aesir and is a master of magic, a great skald and an outstanding general. Like his subjects, he is a master of illusions and false appearances and is able to pass undetected through enemy lands. Like the Vanjarls of Vanheim, the Allfather is able to cross the oceans by ship. The Allfather is at all times accompanied by two great wolves and his great eight-legged horse who is able to ride the winds."
-#diseaseres 100
-#gcost 290
-#pathcost 40
-#moremagic 1
-
-#moreluck 1
-#hp 82
-#prot 3
-#str 21
-#att 14
-#def 14
-#mr 18
-#researchbonus 10
-
-#itemslots 991750
-#clearmagic
-#magicskill 4 2
-#magicskill 5 1
-#magicskill 7 2
-#end
-
-#selectmonster 3934 -- Divine Stallion
-#descr "The Divine Stallion is a huge eight-legged horse sired by a long since banished god when he transformed himself into a mare in order to lure a giant stallion away from the previous Pantokrator."
-#diseaseres 100
-#gcost 290
-#hp 96
-#prot 14
-#str 24
-#att 12
-#def 15
-#mr 18
-#mastersmith -1
-#researchbonus -8
-#fireres 5
-#coldres 5
-#clearmagic
-#end
-
-#selectmonster 509 -- Arch Seraph
-#descr "The Arch Seraph is a Caelian mage of such great power that he has taken the role of a Pretender God. Once Caelum was ruled by semi-divine beings known as Yazatas. When they disappeared from the world the Arch Seraph uncovered their magic secrets and became a god in the eyes of the Caelians."
-#diseaseres 100
-#gcost 80
-#pathcost 20
-#hp 9
-#prot 0
-#str 8
-#att 10
-#def 9
-#mr 18
-
-#itemslots 991750
-#clearmagic
-#magicskill 1 1
-#magicskill 2 1
-#magicskill 4 1
-#end
-
-#selectmonster 546 -- Void Lurker
-#descr "In the physical world, this being is just a large underwater fungus, but in the world of magic, the Void Lurker is one of the most powerful and ancient beings. The Void Lurker can control the minds of willing targets to perform physical tasks such as forging and enchanting items. The Void Lurker is immobile."
-#diseaseres 100
-#gcost 160
-#homerealm 9 -- Deeps
-#pathcost 20
-#hp 130
-#prot 2
-#str 15
-#att 5
-#def 5
-#mr 20
-#mastersmith 0
-#twiceborn 7895
-#itemslots 786432
-#clearmagic
-#magicskill 4 4
-#end
-
-#selectmonster 550 -- Master Alchemist
-#descr "The Master Alchemist is an alchemist of such great power that he has taken the role of a Pretender God. He is a master of magical alchemy and often adept in several of the magic paths."
-#diseaseres 100
-#gcost 80
-#pathcost 20
-#hp 10
-#prot 0
-#str 10
-#att 10
-#def 10
-#mr 18
-#userestricteditem 3  -- Alchemist
-#resources 50
-#itemslots 2040326
-#clearmagic
-#magicskill 3 1
-#magicskill 0 1
-#magicskill 4 1
-#end
-
-#selectmonster 600 -- Titan of War & Wisdom
-#descr "The Titan is a giant sprung from the forehead of a previous Pantokrator, when he had a thought he couldn't contain. Fully grown and armed, she burst forth and claimed divinity. She was eternally imprisoned for her impudence of giving the Pantokrator a headache. Her origin as a thought has made her wise and prudent. Her shield is painted with a Gorgoneion that strikes fear into the hearts of men. She is at all times followed by her owl companion."
-#diseaseres 100
-#gcost 350
-#pathcost 40
-#moreorder 1
-
-#moremagic 1
-#hp 85
-#prot 3
-#str 20
-#att 15
-#def 15
-#mr 18
-#researchbonus 5
-#unsurr 1
-#itemslots 991750
-#clearmagic
-#magicskill 1 2
-#magicskill 3 2
-#magicskill 4 2
-#end
-
-#selectmonster 602 -- Titan of Heaven
-#descr "The Titan is a giant sprung from thunder clouds. Once given authority and power over thunder and the heavens by a previous Pantokrator, he was tasked with meting out justice to mankind. As Lord of the Heavens he could see everything underneath and would punish sinners with thunder and storms. When he gazed upon the world below, he became aware of the beauty of women and could not help himself. He broke his master's decree, entered the world of men and begot offspring infused with his divine seed. The Pantokrator was furious and imprisoned the rebellious titan for eternity. Now, with the Pantokrator gone, lightning and thunder is wrecking the foundations of the prison and the Titan will soon claim the world as his to rule."
-#diseaseres 100
-#gcost 260
-#pathcost 40
-#hp 90
-#prot 3
-#str 26
-#att 12
-#def 12
-#mr 18
-#clearweapons
-#weapon 1737 -- Thunder Bolt
-#weapon 231  -- Thunder Fist
-#itemslots 991750
-#clearmagic
-#magicskill 1 3
-#magicskill 3 1
-#magicskill 4 1
-#end
-
-#selectmonster 603 -- Teotl of Rain
-#descr "The Teotl is a giant of divine heritage. He was once in charge of bringing rain and fertility to the world and as such, he was one of the most important servants of the previous Pantokrator. But he defied his lord and gave fertility for blood. The Pantokrator feared that his servant would grow powerful on his bloody diet and imprisoned him for eternity. With the Pantokrator gone, the Teotl of Rain is finally free to drink blood from the vessel that is the world."
-#diseaseres 100
-#gcost 260
-#pathcost 40
-#hp 90
-#prot 5
-#str 23
-#att 13
-#def 13
-#mr 18
-#twiceborn 7231 -- Wight Giant
-#supplybonus 50
-#itemslots 991750
-#clearmagic
-#magicskill 2 3
-#magicskill 6 1
-#magicskill 8 1
-#end
-
-#selectmonster 604 -- Teotl of the Night
-#descr "The Teotl is a giant of divine heritage. During the reign of a previous Pantokrator he was the Beast of the Night, released by his master to feed on the wicked and the weak. After having eaten thousands and thousands of hearts, he grew in malice and in power. His master became worried and imprisoned the Beast for eternity. Now with the Pantokrator gone, the Beast of the Night has returned and his hunger has grown during his millennial imprisonment."
-#diseaseres 100
-#gcost 300
-#pathcost 40
-#hp 90
-#prot 3
-#str 23
-#att 13
-#def 13
-#mr 18
-
-#itemslots 991750
-#clearmagic
-#magicskill 5 2
-#magicskill 8 3
-#end
-
-#selectmonster 157 -- Mother of Monsters
-#descr "The Mother of Monsters is a hideous being from the dawn of time, when monsters roamed the world. She gave birth to serpent-kin, monsters and giants until the previous Pantokrator rose to power. When he established the new order he banished or slew all that threatened his creation, and the Mother of Monsters and her offspring were imprisoned for eternity. Now, with the Pantokrator gone, her shackles are weakening and her offspring once more threaten to destroy the world."
-#diseaseres 100
-#gcost 250
-#pathcost 40
-#moreorder -1
-
-#moregrowth 1
-#hp 120
-#prot 10
-#str 20
-#att 14
-#def 10
-#mr 18
-
-#itemslots 860678
-#clearmagic
-#magicskill 5 1
-#magicskill 6 2
-#magicskill 8 2
-#end
-
-#selectmonster 605 -- Son of Niefel
-#spr1 "vanilla/sonofniefel1.tga"
-#spr2 "vanilla/sonofniefel2.tga"
-#descr "The Son of Niefel is a frost giant descended from the old Rimtursar. The giant is sprung from the glaciers of Niefelheim, the Land of Eternal Frost. His beard is made of icicles and his shield and sword are forged from the purest ice. "
-#diseaseres 100
-#gcost 280
-#pathcost 40
-#hp 120
-#prot 8
-#str 28
-#att 14
-#def 14
-#mr 18
-#clearweapons
-#weapon 77 -- ice sword
-#cleararmor
-#armor 176 -- Dire Wolf Pelt
-#armor 28  -- Ice Aegis
-#mountainsurvival
-#itemslots 991750
-#clearmagic
-#magicskill 2 3
-#magicskill 5 2
-#end
-
-#selectmonster 606 -- Great Mother
-#descr "The Great Mother is a huge clay being that resembles a swelling, pregnant woman. She gave birth to titans and beasts and finally a previous Pantokrator. Afraid of her progenitive powers the Pantokrator imprisoned her for eternity. With the Pantokrator gone, she and her children have returned to the world."
-#diseaseres 100
-#gcost 320
-#pathcost 40
-#hp 185
-#prot 6
-#str 20
-#att 8
-#def 8
-#mr 18
-#enc 3
-#itemslots 991750
-#clearmagic
-#magicskill 3 2
-#magicskill 6 3
-#end
-
-#selectmonster 607 -- Baphomet
-#descr "The Baphomet is a powerful spirit that manifests itself as a massive, burning head. The spirit can possess willing humans in order to perform physical tasks such as forging and enchanting items, but cannot leave its spiritual home. The Baphomet is a powerful wielder of Astral, Fire and Blood magic."
-#diseaseres 100
-#gcost 110
-#pathcost 40
-#hp 100
-#prot 0
-#str 20
-#att 5
-#def 5
-#mr 18
-#mastersmith 0
-
-#itemslots 786432
-#clearmagic
-#magicskill 0 1
-#magicskill 4 1
-#magicskill 8 1
-#end
-
-#selectmonster 608 -- Phoenix
-#descr "The Phoenix is an immortal heron sprung from the rays of the sun at the first dawn. It is skilled in Air and Fire magic but lacks the physical strength of most Pretenders. If killed in combat it will explode in flames and be immediately reborn. The Phoenix shines with a divine light that will cause weak willed foes to falter rather than strike it."
-#diseaseres 100
-#gcost 120
-#pathcost 60
-#moreheat 1
-
-#moreluck 1
-#hp 36
-#prot 5
-#str 12
-#att 10
-#def 10
-#mr 18
-#twiceborn 1388  -- Ziz
-#prot 12
-#awe 1
-#onebattlespell 873 -- Phoenix Pyre
-#itemslots 17571840
-#clearmagic
-#magicskill 0 2
-#magicskill 1 1
-#end
-
-#selectmonster 643 -- Bog Mummy
-#descr "A Bog Mummy is the corpse of an ancient, evil Skratti, or giant mage, who was powerful enough to cheat death. To prevent this evil mage from returning after his death, a long forgotten hero staked him in a bog. But this only helped preserve the body until the bog dried up and some careless farmer pulled the stake loose. Now the mage has returned as an immortal Bog Mummy. Should the Bog Mummy be killed, it will eventually reform in the bog where it was once staked. Being immortal, there is nothing left to acquire but godhood."
-#diseaseres 100
-#gcost 230
-#pathcost 40
-#hp 65
-#prot 5
-#str 24
-#att 12
-#def 9
-#mr 18
-
-#itemslots 991750
-#clearmagic
-#magicskill 2 1
-#magicskill 5 2
-#magicskill 8 1
-#end
-
-#selectmonster 644 -- Dracolich
-#descr "The Dracolich is a Dragon that was once highly skilled in Death magic. When it died, its power over Death saved it from becoming permanently dead. Ever since, it has managed to stay alive in a state of undeath. The shape of the Dracolich is not suited for spell casting. They have their skills reduced when casting spells from paths other than Death. Therefore, it tends to adopt the shape of a Bog Mummy in battle."
-#diseaseres 100
-#gcost 280
-#pathcost 40
-#hp 180
-#prot 16
-#str 27
-#att 16
-#def 10
-#mr 18
-#woundfend 2
-#immortal
-#itemslots 18620416
-#clearmagic
-#magicskill 5 3
-#end
-
-#selectmonster 645 -- Dracolich Bog Mummy
-#descr "The Dracolich is a Dragon that was once highly skilled in Death magic. When it died, its power over Death saved it from becoming permanently dead. Ever since, it has managed to stay alive in a state of undeath. The shape of the Dracolich is not suited for spell casting. They have their skills reduced when casting spells from paths other than Death. Therefore, it tends to adopt the shape of a Bog Mummy in battle."
-#diseaseres 100
-#gcost 280
-#pathcost 40
-#hp 65
-#prot 5
-#str 24
-#att 12
-#def 9
-#mr 18
-#immortal
-#itemslots 2040326
-#clearmagic
-#magicskill 5 3
-#end
-
-#selectmonster 652 -- Void Lord
-#descr "The Void Lord is an otherworldly being that spawned in the Void. It was worshiped on that strange and distant star from which the great race of R'lyeh came and now the Starspawns have summoned it to this world. As a Lord of the Void, this being has great power in the world of magic. In the physical world, however, the Void Lord is blind and orients itself with powers of mind and magic."
-#diseaseres 100
-#gcost 260
-#pathcost 40
-#moremagic 1
-
-#moreorder 1
-#hp 88
-#prot 14
-#str 22
-#att 10
-#def 12
-#mr 20
-
-#itemslots 983558
-#clearmagic
-#magicskill 2 2
-#magicskill 4 3
-#end
-
-#selectmonster 653 -- Serpent King
-#descr "The Serpent King is a mighty serpent who is able to take human form. The Serpent King is magically strong enough to claim godhood. In order to lead human soldiers, the Serpent King usually appears in the form of a human sorcerer, but when angered, he transforms into his serpent shape. Even though his serpent form is more powerful than his human form, it is still quite weak compared to the majority of the other Pretender Gods."
-#diseaseres 100
-#gcost 40
-#pathcost 20
-#hp 12
-#prot 2
-#str 11
-#att 11
-#def 11
-#mr 18
-#domsummon2 403  -- Horned Serpent
-#itemslots 991750
-#clearmagic
-#magicskill 6 1
-#magicskill 5 1
-#end
-
-#selectmonster 654 -- Serpent King
-#descr "The Serpent King is a mighty serpent who is able to take human form. The Serpent King is magically strong enough to claim godhood. In order to lead human soldiers, the Serpent King usually appears in the form of a human sorcerer, but when angered, he transforms into his serpent shape. Even though his serpent form is more powerful than his human form, it is still quite weak compared to the majority of the other Pretender Gods."
-#diseaseres 100
-#gcost 40
-#pathcost 20
-#hp 25
-#prot 8
-#str 14
-#att 14
-#def 8
-#mr 18
-#domsummon2 403  -- Horned Serpent
-#itemslots 786432
-#clearmagic
-#magicskill 6 1
-#magicskill 5 1
-#end
-
-#selectmonster 158 -- Oracle
-#descr "The Oracle is a powerful spirit that inhabits a sacred spring. The spirit possesses a girl to serve as its instrument. The chosen child is blinded and rendered unable to do anything but speak the will of the spirit. At the age of thirteen, she is sacrificed and replaced with a new girl, born the day the previous girl was made the voice of the spirit. The Oracle is immobile and cannot leave the spring it inhabits. It can possess willing targets to perform tasks such as forging items for enchantment. The Oracle is tremendously strong in its Dominion and magically powerful. The spring can be destroyed, but not easily."
-#diseaseres 100
-#gcost 110
-#pathcost 40
-#moreluck 1
-#hp 30
-#prot 25
-#str 15
-#att 5
-#def 0
-#mr 18
-#mastersmith 0
-#nobadevents 90
-#itemslots 3932160
-#clearmagic
-#magicskill 2 2
-#magicskill 7 1
-#end
-
-#selectmonster 655 -- Scorpion King
-#descr "The Scorpion King is a spirit of destruction and terror given divine powers by a previous Pantokrator. The beast was placed as a monstrous guardian of the path to immortality beyond Mount Mashu. With the disappearance of the Pantokrator, the beast has claimed the secrets beyond Mashu and arrived to wreak destruction and havoc upon the world. The Scorpion King is a hideous and twisted being with the body of a huge scorpion and the upper torso of a scaly human. It is a mighty beast capable of striking simultaneously with its scorpion stinger and any forged weapons it may carry."
-#diseaseres 100
-#gcost 220
-#pathcost 40
-#hp 57
-#prot 13
-#str 16
-#att 14
-#def 12
-#mr 18
-#woundfend 2
-#enc 2
-#itemslots 860678
-#clearmagic
-#magicskill 0 1
-#magicskill 3 2
-#end
-
-#selectmonster 656 -- Fountain of Blood
-#descr "The Fountain of Blood is a horrible spirit that inhabits an unholy fountain that spews forth blood instead of water. The spirit possesses a girl to serve as its instrument. The chosen child is blinded and rendered unable to do anything but speak the will of the spirit. At the age of thirteen, she is sacrificed and replaced with a new girl, born the day the previous girl was made the voice of the spirit. The unholy spirit is immobile and cannot leave the fountain it inhabits. It can possess willing targets to perform tasks such as forging items for enchantment. The Fountain of Blood is tremendously strong in its Dominion and magically powerful. "
-#diseaseres 100
-#gcost 90
-#pathcost 40
-#hp 30
-#prot 22
-#str 15
-#att 5
-#def 0
-#mr 18
-#mastersmith 0
-
-#itemslots 3932160
-#clearmagic
-#magicskill 8 3
-#end
-
-#selectmonster 657 -- Monolith
-#descr "The Monolith is a powerful spirit that inhabits a huge standing stone. The spirit cannot leave the Monolith, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back."
-#diseaseres 100
-#gcost 170
-#pathcost 40
-#hp 200
-#prot 28
-#str 15
-#att 5
-#def 0
-#mr 18
-#mastersmith 0
-
-#itemslots 262144
-#clearmagic
-#magicskill 3 1
-#magicskill 4 1
-#magicskill 6 1
-#end
-
-#selectmonster 661 -- Shedu
-#descr "The Shedu is a guardian spirit given divine powers by a previous Pantokrator. It has realized the aspirations of the other Pretenders and will protect its subjects by donning the mantle of God itself. It has the appearance of a great winged bull with a crowned human head. The Shedu is physically powerful and attuned to the protective powers of the stars and the Earth."
-#diseaseres 100
-#gcost 200
-#pathcost 60
-#hp 300
-#prot 15
-#str 32
-#att 8
-#def 12
-#mr 18
-#mastersmith 0
-#researchbonus 0
-#woundfend 2
-#twiceborn 6644 -- Wight Beast
-#enc 1
-#itemslots 1843200
-#clearmagic
-#magicskill 3 1
-#magicskill 4 2
-#end
-
-#selectmonster 779 -- Rams Head Serpent
-#descr "The Rams-Headed Serpent is a great serpent born at the dawn of time, when monsters and giants roamed the world. As a being with great regenerative powers and a bringer of fertility it was worshiped by the first of men as a god of prosperity and healing. When the previous Pantokrator rose to power he imprisoned and banished all that threatened his power and the Rams-Headed Serpent was forever imprisoned in the forest of the Horned One where he found an ally with a temperament resembling his own. Now, with the Pantokrator gone, the Rams-Headed Serpent is breaking free to claim the world as his."
-#diseaseres 100
-#gcost 190
-#pathcost 60
-#hp 195
-#prot 15
-#str 28
-#att 13
-#def 10
-#mr 18
-#mastersmith -1
-#researchbonus -8
-#heal
-#woundfend 2
-#twiceborn 7245 -- Necrophidian
-#clearweapons
-#weapon 828 -- Magic Head Butt
-#weapon 90  -- Crush
-#weapon 203  -- Barbed Tail
-#enc 1
-#itemslots 18620416
-#clearmagic
-#magicskill 3 1
-#magicskill 6 2
-#end
-
-#selectmonster 812 -- Lord of the Wild
-#descr "This being is the lord of an ancient forest and all its inhabitants. The Lord of the Wild practices the old arts and is a master of Nature and Blood magic. Human females in his vicinity will shed their civilized ways and serve the Lord of the Wild in a life of revelry. These females are called maenads and they will come in great numbers in a Dominion with great Turmoil."
-#diseaseres 100
-#gcost 290
-#pathcost 40
-#hp 90
-#prot 8
-#str 25
-#att 12
-#def 12
-#mr 18
-#douse 2
-#itemslots 17768966
-#clearmagic
-#magicskill 6 3
-#magicskill 8 2
-#end
-
-#selectmonster 857 -- The Smoking Mirror
-#descr "The Smoking Mirror is a great Mictlan sorcerer who claims divinity. As master of magic, Lord of the Night Skies and the Sun Personified, he has become the supreme god of the Mictlan pantheon. He has the ability to disguise himself as a jaguar of exceptional size. With his smoking obsidian mirror, he can divine the fates of men. Like all gods of the Mictlan pantheon, he craves human sacrifices."
-#diseaseres 100
-#gcost 80
-#pathcost 20
-#hp 14
-#prot 0
-#str 11
-#att 12
-#def 12
-#mr 18
-
-#itemslots 991750
-#clearmagic
-#magicskill 0 1
-#magicskill 5 1
-#magicskill 8 1
-#end
-
-#selectmonster 858 -- Jaguar
-#descr "The jaguar is a great cat of the Mictlan forest. It is said that the Smoking Mirror, Lord of the Night Sky, sometimes disguises himself as a jaguar."
-#diseaseres 100
-#gcost 80
-#pathcost 20
-#hp 25
-#prot 4
-#str 16
-#att 15
-#def 13
-#mr 18
-
-#itemslots 786432
-#clearmagic
-#magicskill 0 1
-#magicskill 5 1
-#magicskill 8 1
-#end
-
-#selectmonster 862 -- Vampire Queen
-#descr "The Vampire Queen is an ancient sorceress who has changed her very essence by imbibing the sacrificial blood of virgins. This vile act has granted her the power of immortality and now she is claiming godhood, too. Once during each winter she will gain a couple of new Vampires to serve her. Vampires are totally unable to enter underwater provinces."
-#diseaseres 100
-#gcost 190
-#pathcost 30
-#hp 16
-#prot 0
-#str 13
-#att 12
-#def 12
-#mr 18
-#seduce 10
-#itemslots 991750
-#clearmagic
-#magicskill 5 2
-#magicskill 8 2
-#end
-
-#selectmonster 872 -- Ghost King
-#descr "The Ghost King is the soul of an ancient mage king that has returned from the Underworld to claim the world of the living.
-
-Ghosts will come to his aid when his Dominion is strong, and if awake will muster a host of spirits to aid the army in the capital."
-#diseaseres 100
-#gcost 120
-#pathcost 30
-#hp 35
-#prot 0
-#str 14
-#att 12
-#def 18
-#mr 18
-#invulnerable 10
-#spreaddom 1
-#itemslots 991750
-#clearmagic
-#magicskill 5 3
-#end
-
-#selectmonster 159 -- Monument
-#descr "The Monument is a powerful spirit that inhabits an enormous stone construction. The spirit cannot leave the monument, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the monument would probably be impossible to destroy, even though it cannot strike back without using magic. The monument is completely immobile and cannot move even by magic."
-#diseaseres 100
-#gcost 90
-#pathcost 40
-#hp 500
-#prot 30
-#str 20
-#att 5
-#def 0
-#mr 18
-#mastersmith 0
-
-#itemslots 262144
-#clearmagic
-#magicskill 3 2
-#magicskill 4 1
-#end
-
-#selectmonster 873 -- Great Seer of the Deeps
-#descr "This Seer has such great powers of magic and divination that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He can use his divinatory visions to his advantage and will prevent three out of four bad events from happening in the province in which he dwells. The Great Seer of the Deeps is a master of magic and can be adept in several of the magic paths."
-#diseaseres 100
-#gcost 40
-#pathcost 20
-#hp 10
-#prot 0
-#str 10
-#att 10
-#def 10
-#mr 18
-
-#itemslots 991750
-#clearmagic
-#magicskill 2 1
-#magicskill 4 1
-#end
-
-#selectmonster 874 -- Divine Emperor
-#descr "The Divine Emperor is the ruler of the Empire. He is the son of the previous Emperor, who was deified upon death. As the Son of God, he has great power. With power comes arrogance and now the Son of God claims godhood himself. The Divine Emperor is not a warrior and only travels by palanquin."
-#diseaseres 100
-#gcost 120
-#pathcost 20
-#hp 15
-#prot 0
-#str 11
-#att 10
-#def 10
-#mr 18
-#commaster
-#itemslots 2040326
-#clearmagic
-#magicskill 1 1
-#magicskill 2 1
-#magicskill 4 2
-#end
-
-#selectmonster 905 -- Jade Emperor
-#descr "The Jade Emperor is an ancient Celestial being who has descended from the Celestial Spheres to claim this world as his Empire. He appears as an old, bearded man of huge proportions, dressed in the robes of a bureaucrat. He has great powers of Water, Air and Astral magic and is able to change fate itself."
-#diseaseres 100
-#gcost 280
-#pathcost 40
-#hp 110
-#prot 3
-#str 20
-#att 10
-#def 10
-#mr 18
-
-#itemslots 991750
-#clearmagic
-#magicskill 1 2
-#magicskill 2 2
-#magicskill 4 2
-#end
-
-#selectmonster 957 -- Lord of the Desert Sun
-#descr "The Lord of the Desert Sun is a lion-headed Titan who claims dominion over the Sun and the wild lands beyond the borders of civilization."
-#spr1 "vanilla/lordofthedesertsun.png"
-#spr2 "vanilla/lordofthedesertsun.png"
-#diseaseres 100
-#gcost 240
-#pathcost 40
-#hp 90
-#prot 3
-#str 24
-#att 14
-#def 13
-#mr 18
-#heat 10
-#itemslots 991750
-#clearmagic
-#magicskill 0 3
-#magicskill 6 1
-#magicskill 4 1
-#end
-
-#selectmonster 958 -- Colossal Head
-#descr "The Colossal Head is a powerful spirit that inhabits a massive stone that has been chiseled into the shape of a head. The spirit cannot leave the Colossal Head, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the head would be difficult to destroy, even though it cannot strike back."
-#diseaseres 100
-#gcost 150
-#pathcost 40
-#hp 300
-#prot 25
-#str 15
-#att 5
-#def 0
-#mr 18
-#mastersmith 0
-
-#itemslots 262144
-#clearmagic
-#magicskill 3 1
-#magicskill 8 2
-#end
-
-#selectmonster 961 -- Titan of the Sea
-#descr "The Titan of the Sea is a huge demigod sprung from the depths of the ocean. He was given power over the sea and the rumbling earth by a previous Pantokrator. Afraid of his destructive powers, men began to worship him as though he was a God. The Pantokrator was furious and banished his servant for eternity. Now that the Pantokrator is gone, the Earth Shaker is once more free to shatter cities and receive the prayers of men. The Titan of the Sea can leave the ocean and grant humans the ability to breathe underwater."
-#diseaseres 100
-#gcost 240
-#pathcost 40
-#moreluck -1
-
-#moreorder -0
-#hp 88
-#prot 3
-#str 25
-#att 12
-#def 13
-#mr 18
-#clearweapons
-#armor 148  -- Crown
-#weapon 389 -- Pearl Trident
-#giftofwater 500
-#poisonres 10
-#itemslots 991750
-#clearmagic
-#magicskill 2 3
-#magicskill 3 2
-#end
-
-#selectmonster 973 -- Ancient Kraken
-#spr1 "vanilla/ancientkraken1.tga"
-#spr2 "vanilla/ancientkraken2.tga"
-#descr "Krakens never die from old age. They just grow larger, wiser and stronger. This Kraken is very old and, through the ages, he has seen many a Pretender God rise to godhood. This time, he shall be the new God. The Ancient Kraken has become adept at magic over the millennia and he is a versatile mage."
-#diseaseres 100
-#gcost 230
-#pathcost 60
-#hp 230
-#prot 12
-#str 24
-#att 14
-#def 8
-#mr 18
-
-#twiceborn 1235  -- Leviathan
-#itemslots 786462
-#clearmagic
-#magicskill 3 1
-#magicskill 4 1
-#magicskill 6 1
-#end
-
-#selectmonster 978 -- Great Black Bull
-#descr "The Great Black Bull is a divine bull that has ravaged the world since time immemorial. The Black Bull is a creature of unbridled fury and a manifestation of the blind rage of Nature, the inhuman wildness, the glory of the slayer and the slain. Unlike his brother, the Great White Bull, with whom he has fought for dominance on several legendary occasions, the fertility aspect of the Black Bull is secondary to that of his maddened rage. Now that Ascension draws close, he leads his people to once again wildly embrace the mindless abandon and bloodlust of Nature aroused."
-#diseaseres 100
-#gcost 210
-#pathcost 60
-#hp 233
-#prot 13
-#str 32
-#att 13
-#def 12
-#mr 18
-#mastersmith -1
-#researchbonus -8
-#heal
-#woundfend 3
-#twiceborn 6644 -- Wight Beast
-#enc 1
-#itemslots 18620416
-#clearmagic
-#magicskill 6 2
-#magicskill 8 1
-#end
-
-#selectmonster 979 -- Great White Bull
-#descr "The Great White Bull is a divine bull that has wandered the world since time immemorial. The bull has long been worshiped as a manifestation of the wildness and fertility of Nature and his fury and potency are unrivaled. Now that the Great One has fallen, the bull's ferocity drives him to lead his people to trample the thrones of the world beneath his cloven hooves. The potent fertility of the White Bull generates extra supplies."
-#diseaseres 100
-#gcost 220
-#pathcost 60
-#hp 231
-#prot 13
-#str 32
-#att 13
-#def 12
-#mr 18
-#mastersmith -1
-#researchbonus -8
-#heal
-#woundfend 3
-#twiceborn 6644 -- Wight Beast
-#enc 1
-#itemslots 18620416
-#clearmagic
-#magicskill 3 1
-#magicskill 6 2
-#end
-
-#selectmonster 179 -- Master Lich
-#descr "A Master Lich is the dried husk of an Arch Mage adept in Death magic. Through dark rituals, the mage succeeded in mastering one of mankind's oldest and most urgent goals: to defeat death. By removing his viscera and hiding it outside his body, the Lich is virtually impossible to slay. Should the body be physically destroyed, a new one is formed from the dust of dead humans. Being immortal, there is nothing left to acquire but godhood. The Master Lich is magically stronger than the other Liches and his magically empowered body is very hard to destroy."
-#diseaseres 100
-#gcost 180
-#pathcost 30
-#hp 30
-#prot 5
-#str 15
-#att 13
-#def 10
-#mr 18
-
-#itemslots 991750
-#clearmagic
-#magicskill 5 4
-#end
-
-#selectmonster 1025 -- Divine Glyph
-#descr "The Divine Glyph is a divine spirit that manifests itself as a burning glyph. The sacred word is unutterable and unbearable to behold. Its very essence is beyond comprehension. At times, the spirit inspires a devout human to forge items and artifacts. Anyone trying to strike the blazing glyph will be punished with blindness. It has a very powerful Dominion and whilst it is present in the world it will spread Dominion very strongly."
-#diseaseres 100
-#gcost 110
-#startdom 5
-#pathcost 40
-#hp 50
-#prot 0
-#str 20
-#att 5
-#def 5
-#mr 18
-#mastersmith 0
-#spreaddom 1
-#itemslots 786432
-#clearmagic
-#magicskill 0 1
-#magicskill 4 2
-#end
-
-#selectmonster 1026 -- Carrion Dragon
-#descr "The Carrion Dragon is the living carcass of an ancient Dragon that was powerful enough not to remain dead after it was slain. Pure hatred and vengeful thoughts rejoined the soul of the dead Dragon with its moss-covered corpse. The Carrion Dragon is able to adopt the shape of a dead Pan. The body of the Carrion Dragon is less suited for spell casting than the shape of the Pan. In dragon shape most of its magic skills are reduced. The paths of Death and Nature are innate to the Carrion Dragon and his skills in those paths are less reduced. The presence of a Carrion Dragon will spread a sleeping sickness, and nearby enemies may fall into a dreamless slumber. In lands free of civilization it will grow stronger, but it will weaken where men toil."
-#diseaseres 100
-#gcost 230
-#pathcost 40
-#hp 200
-#prot 16
-#str 27
-#att 16
-#def 10
-#mr 18
-
-#itemslots 18620416
-#clearmagic
-#magicskill 5 2
-#magicskill 6 2
-#end
-
-#selectmonster 1027 -- Carrion Lord
-#descr "A Carrion Lord is a dead Pan reanimated and given unholy powers by a Panic Apostate, who forces the soul of the dead Pan to rejoin its own moss-covered carcass. The carcass is entwined with vines and roots that have a life of their own. The Carrion Lord is a powerful wielder of Nature magic, but is also given unholy powers over the dead. The Carrion Lord can create manikins by animating vines, roots and the bones of dead beasts. The presence of a Carrion Lord will spread a sleeping sickness, and nearby enemies may fall into a dreamless slumber. In lands free of civilization it will grow stronger, but it will weaken where men toil."
-#diseaseres 100
-#gcost 230
-#pathcost 40
-#hp 53
-#prot 2
-#str 19
-#att 8
-#def 8
-#mr 18
-
-#itemslots 2040326
-#clearmagic
-#magicskill 5 2
-#magicskill 6 2
-#end
-
-#selectmonster 1096 -- Destroyer of Worlds
-#descr "When the Devatas and Yakshas of Kailasa were forced to leave the world, their Lord was trapped by the Pantokrator. The Destroyer of Worlds is a huge four-armed divinity reawakened to destroy the world that wronged him in ages past. The Destroyer is armed with weapons of iron and lightning. Death and disease are his to give and bestow."
-#diseaseres 100
-#gcost 270
-#pathcost 40
-#moreorder -1
-
-#moremagic -1
-#hp 84
-#prot 3
-#str 22
-#att 11
-#def 13
-#mr 18
-#awe 2
-#itemslots 467486
-#clearmagic
-#magicskill 0 1
-#magicskill 1 2
-#magicskill 5 2
-#end
-
-#selectmonster 1097 -- Lord of the Summer Plague
-#descr "The Lord of the Summer Plague is a Titan who claims dominion over the summer heat. With the heat come drought and famine, plague and pestilence. The lion-headed Lord is a god of death and his bow strikes men with death or disease. He is surrounded by a cloud of heat and pestilence that will inflict plague upon those that get too close."
-#spr1 "vanilla/lordofthesummerplague.png"
-#spr2 "vanilla/lordofthesummerplague.png"
-#diseaseres 100
-#gcost 250
-#pathcost 40
-#hp 90
-#prot 3
-#str 24
-#att 14
-#def 13
-#mr 18
-#diseasecloud 10
-#heat 10
-#autodisgrinder 1
-#itemslots 991750
-#clearmagic
-#magicskill 0 2
-#magicskill 1 1
-#magicskill 5 2
-#end
-
-#selectmonster 1098 -- Asynja Warrior
-#descr "The Asynja is a female Aesir who has survived the death of her kin. The Aesir were ancient gods who were defeated aeons ago by the Rimtursar in a cataclysmic battle. When the war ended the last remaining Aesir were banished by the Pantokrator. Now, with the Pantokrator gone the Asynja has returned to the world to claim it as hers."
-#diseaseres 100
-#gcost 270
-#pathcost 40
-#moreprod 1
-
-#moreluck 1
-#hp 85
-#prot 3
-#str 20
-#att 15
-#def 15
-#mr 18
-#coldres 5
-#shockres 10
-#itemslots 991750
-#clearmagic
-#magicskill 1 2
-#magicskill 3 1
-#magicskill 7 2
-#end
-
-#selectmonster 1229 -- Son of Fenrer
-#descr "Born at the dawn of time the Son of Fenrer is the offspring of one of the Great Adversaries. It is a primordial wolf of huge proportions. The monster ravaged the land of men and brought destruction and strife until the previous Pantokrator rose to power and imprisoned the beast for eternity. Now with the Pantokrator gone the Son of Fenrer is once more free to roam the bountiful lands of men. The monstrous wolf has inherited the foul temper of his father and is prone to go berserk if anyone opposes him."
-#diseaseres 100
-#gcost 160
-#pathcost 60
-#moreheat -1
-
-#moreluck -1
-#hp 163
-#prot 14
-#str 31
-#att 13
-#def 12
-#mr 18
-#mastersmith -1
-#researchbonus -8
-#woundfend 2
-#twiceborn 6644 -- Wight Beast
-#weapon 823 -- claw
-#enc 1
-#itemslots 3932160
-#clearmagic
-#magicskill 2 1
-#magicskill 6 2
-#end
-
-#selectmonster 1230 -- Titan of the Forge
-#descr "The Titan of the Forge is a crippled God. Mutilated, imprisoned and given tools of smithing, he served the previous Pantokrator, but was forgotten and left for dead. During the aeons the Forge Lord learned his craft and became a true master when it comes to forging magic items and mundane tools. Now his skills will serve both the farmers and savants of his kingdom. When forging magic items, he requires fewer magic gems than an ordinary mage. The Forge Lord has had a deformed foot since his days in the service of the Pantokrator."
-#diseaseres 100
-#gcost 260
-#pathcost 30
-#hp 90
-#prot 3
-#str 26
-#att 12
-#def 12
-#mr 18
-#resources 50
-#userestricteditem 4  -- Smiths
-#itemslots 991750
-#clearmagic
-#magicskill 0 2
-#magicskill 3 3
-#end
-
-#selectmonster 1231 -- Drakaina
-#descr "The Drakaina was once a Titaness, beautiful beyond belief. When she spurned the previous Pantokrator she was cursed with a hideous form and was imprisoned on an enchanted isle. She now appears as a woman with the lower part of a huge serpent. From the serpent grow six dogs that hunger for human flesh. For millennia the baying of the dogs have frightened sailors that mistakenly have come too close to her island prison. Now, with the Pantokrator gone, her shackles are weakening and the Drakaina will avenge her millennial imprisonment."
-#diseaseres 100
-#gcost 290
-#pathcost 40
-#hp 132
-#prot 10
-#str 23
-#att 14
-#def 10
-#mr 18
-
-#itemslots 860678
-#clearmagic
-#magicskill 2 1
-#magicskill 5 2
-#magicskill 6 2
-#end
-
-#selectmonster 1232 -- Old Man of the Sea
-#descr "The Old Man of the Sea is possibly the oldest of all the underwater beings born at the dawn of time, when the sea was untamed and filled with monstrous beings. Wise beyond compare he was given power to guide the new-born races of the deeps by a previous Pantokrator. But regardless of his wishes, the tritons begun to worship him as though he was a god. When the Old Man of the Sea mentioned this to the Pantokrator, his master grew jealous and banished his servant for eternity, leaving the races of the deeps bereft of magical guidance. Now with the Pantokrator gone, the Old Man of the Sea is returning to bring wisdom and magic understanding to the races of the deeps. The Old Man of the Sea is able to leave the sea and can bring land-living beings with him into the sea."
-#diseaseres 100
-#gcost 260
-#pathcost 30
-#hp 100
-#prot 10
-#str 21
-#att 12
-#def 10
-#mr 18
-
-#itemslots 860678
-#clearmagic
-#magicskill 2 3
-#magicskill 4 2
-#end
-
-#selectmonster 180 -- DemiLich
-#descr "A Demilich is an Arch Mage adept in Death magic that has outgrown his need for a physical body. The only things remaining of his old body are a skull and a few bones. It is through these that the Demilich can still affect this world. Should the skull be destroyed, a new one will form shortly after and the Demilich will be able to affect the world again. Being so powerful, there is nothing left to acquire but godhood. The Demilich is very magically powerful and difficult to destroy, but lacking a body he is unable to move between provinces through means other than magic rituals."
-#diseaseres 100
-#gcost 200
-#pathcost 20
-#hp 3
-#prot 0
-#str 5
-#att 4
-#def 4
-#mr 18
-
-#itemslots 794624
-#clearmagic
-#magicskill 5 4
-#end
-
-#selectmonster 1233 -- Lord of the Waves
-#descr "The Lord of the Waves is an underwater being born at the dawn of time, when the sea was untamed and filled with monstrous beings. The Lord of the Waves was given power over all shallow waters and the waves, where the sea meets the winds, by a previous Pantokrator. But hubris found him and he sired the tritons and let them worship him as though he was a god. The Pantokrator was furious and banished his rebellious servant for eternity. Now with the Pantokrator gone, the Lord of the Waves is once more free to receive the prayers of triton and men alike. The Lord of the Waves is able to leave the sea and can bring land-living beings with him into the sea."
-#diseaseres 100
-#gcost 250
-#pathcost 40
-#moreorder 1
-#hp 105
-#prot 10
-#str 24
-#att 13
-#def 10
-#mr 18
-
-#itemslots 860678
-#clearmagic
-#magicskill 1 2
-#magicskill 2 2
-#magicskill 6 1
-#end
-
-#selectmonster 1339 -- Nyorai
-#descr "The Nyorai is a giant of divine heritage. He is a lord of plenty and a bringer of good fortune to those who surround him. Because of this and other magical powers, he is worshipped by the lesser people and now he is out to become the True God. In combat he will place all friendly troops under his protection, negating the first damaging blow that would strike them."
-#diseaseres 100
-#gcost 250
-#pathcost 40
-#hp 150
-#prot 3
-#str 20
-#att 10
-#def 8
-#mr 18
-#bringeroffortune 35
-#onebattlespell 3702 -- Nyorai Protection
-#itemslots 991750
-#clearmagic
-#magicskill 3 2
-#magicskill 4 1
-#magicskill 7 2
-#end
-
-#selectmonster 1340 -- Tiwaz of War
-#descr "The Tiwaz is a giant of divine heritage who once was the General of the West in the old Pantokrator's armies. Now that the Pantokrator has fallen, the general will conquer the world and make it his domain."
-#diseaseres 100
-#gcost 280
-#pathcost 40
-#moreorder 1 
-#moreprod 1
-#hp 75
-#prot 3
-#str 22
-#att 15
-#def 15
-#mr 18
-#twiceborn 7231 -- Wight Giant
-#clearweapons
-#weapon 75  -- Enchanted Sword
-#inspirational 1
-#onebattlespell 242 -- Fanaticism
-#itemslots 991750
-#clearmagic
-#magicskill 0 2
-#magicskill 1 1
-#magicskill 3 2
-#end
-
-#selectmonster 1341 -- Devi of Darkness
-#descr "The Devi of Darkness is a huge four-armed divinity with a horrible appearance. She was once given power to battle demons by a previous Pantokrator, but her destructive fury made him banish her eternally to save the world from her rage. With the disappearance of the Pantokrator the raging devi has broken free and will subjugate and destroy all demons and likely the world as well. The Devi of Darkness is a slayer of demons and she holds a demon head in her hand and a bowl into which blood from the head constantly pours. Demon blood also pours from her open mouth. The Devi wields a sword which thirsts for demon blood and a trident that forces demons to halt."
-#diseaseres 100
-#gcost 290
-#pathcost 40
-#hp 84
-#prot 3
-#str 22
-#att 13
-#def 13
-#mr 18
-#darkvision 100
-#itemslots 467486
-#clearmagic
-#magicskill 3 2
-#magicskill 5 1
-#magicskill 8 2
-#end
-
-#selectmonster 1342 -- Titan of Rivers
-#descr "The Titan of Rivers is a giant of divine heritage. She claims dominion over the great rivers of the world. Her will and her great pitcher bring life to the land. She can draw from the power of all great rivers."
-#diseaseres 100
-#gcost 260
-#pathcost 40
-#hp 95
-#prot 3
-#str 22
-#att 12
-#def 12
-#mr 18
-#clearweapons
-#weapon 496  -- Sacred Pitcher
-#weapon 92  -- Fist
-#itemslots 991750
-#clearmagic
-#magicskill 2 3
-#magicskill 4 1
-#magicskill 6 1
-#end
-
-#selectmonster 1343 -- Titan of Love
-#descr "The Titan of Love is a giant of divine heritage. She is blessed with aphrodisiac beauty and few mortals would dream of harming her, or can resist her alluring glances. Her mere presence brings love to flower and the province in which she dwells will have unrest decreased."
-#diseaseres 100
-#gcost 250
-#pathcost 40
-#moregrowth 1 
-#moreorder 1
-#hp 95
-#prot 3
-#str 22
-#att 12
-#def 12
-#mr 18
-#clearweapons
-#weapon 1741 -- Charming Glance
-#weapon 92  -- Fist
-
-#itemslots 991750
-#clearmagic
-#magicskill 2 1
-#magicskill 6 2
-#magicskill 7 2
-#end
-
-#selectmonster 1344 -- Devi of Good Fortunes
-#descr "The Devi is a demigod of immense size. She was once the wife of a Previous pantokrator. As a good wife and mother she was given power over the Great River and the fortunes of men. However, the Pantokrator lost interest in her and banished her to another world. Now with the Pantokrator gone she has returned to her land to claim it as hers. She is able to grant her followers the ability to breathe water and good fortune affects the province in which she dwells."
-#diseaseres 100
-#gcost 240
-#pathcost 40
-#moreluck 1 
-#moreorder 1
-#hp 85
-#prot 3
-#str 20
-#att 11
-#def 12
-#mr 18
-#giftofwater 500
-#bringeroffortune 50
-#decscale 4  -- +Luck
-#itemslots 991750
-#clearmagic
-#magicskill 2 1
-#magicskill 4 2
-#magicskill 7 2
-#end
-
-#selectmonster 1345 -- Celestial General
-#descr "This wise man was once the General of the East in the old Pantokrator's armies. After the General of the West was almost slain, the Pantokrator became worried. As a precaution, he granted his general a divine body so that he would not easily be slain. Now that the Pantokrator has fallen, the general who calls himself the Celestial General is out to become the new God."
-#diseaseres 100
-#gcost 270
-#pathcost 40
-#moreprod 1
-#hp 100
-#prot 3
-#str 24
-#att 14
-#def 14
-#mr 18
-#clearweapons
-#weapon 75  -- Enchanted Sword
-#itemslots 991750
-#clearmagic
-#magicskill 1 1
-#magicskill 3 2
-#magicskill 4 2
-#end
-
-#selectmonster 1346 -- Colossal Fetish
-#descr "The Colossal Fetish is a statue that has come to life from being worshipped for many hundreds of years. It is mindless and mostly does what its worshippers believe it would do. It punishes harshly and rewards sparingly. The Colossal Fetish is made of wood and would be difficult to destroy in combat."
-#diseaseres 100
-#gcost 270
-#pathcost 40
-#moremagic -1
-#hp 120
-#prot 15
-#str 25
-#att 7
-#def 7
-#mr 18
-#swimming
-
-
-#itemslots 991750
-#clearmagic
-#magicskill 3 2
-#magicskill 6 1
-#end
-
 #selectmonster 1348 -- Titan of Serpents & Medicine
 #descr "The Titan of Serpents and Healing is a giant of divine heritage. She is the Mother of Serpents and Mistress of the Medical Arts. Her blessings give health and her wrath gives untimely death. In combat she is always accompanied by a handful of snakes, two of which she holds in her hands as weapons to attack her enemies."
 #diseaseres 100
@@ -75585,6 +75616,10 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 
 
 -- ENDUNITS
+
+
+
+
 
 
 -- FOLDUNITS -- Extra monsters
@@ -90632,7 +90667,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 0 
 #level 0
 #rarity 5
-#res 50
+#res 100
 #homemon 7698 -- God-Slayer Hoplite
 #end
 
@@ -94240,6 +94275,41 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 373
 #homecom 558
 #homecom 8220
+#end
+
+#newsite 2405
+#clear
+#name "EA Mekone Summons"
+#rarity 5
+#level 0
+#path 0
+#look 5
+#homemon 3119 -- spartae
+#homemon 3127 -- ker
+#homemon 3168 -- twi hound
+#homemon 3171 -- khalk
+#homemon 3210 -- lampad
+#homemon 7699 -- thrak w
+#homemon 7700 -- lyca
+#homemon 7704 -- blemm
+#homemon 7705 -- cyclo
+#homemon 7751 -- gegei
+#homemon 7298 -- kerberos
+#homecom 7701 -- hecat
+#homecom 7702 -- hecat
+#homecom 7703 -- hecat
+#end
+
+#newsite 2406
+#clear
+#name "EA Mekone Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 0
+#homecom 3122
+#homecom 7930
+#homecom 7932
 #end
 
 
@@ -99257,6 +99327,11 @@ Priests: Average"
 #end
 
 #selectnation 6 -- MEKONE
+#summary "Military: Few Gigantes armed with magical weapons. Mostly human slave soldiers. No sacred troops.
+Magic: Fire, Earth, Air and some Water. Cyclops smiths.
+Priests: Weak and few, inquisitors.
+Dominion: Conflict bonus +1 (good at suppressing enemy dominion)
+Forts: Unrest 1d10 per turn, Krypteion in Fall can reduce unrest and create Kryptes assassin if Ephor present."
 #hero1 3122  -- Pallene (OK)
 #hero2 7930 -- Arges
 #hero3 7932 -- Enkelados
@@ -99269,6 +99344,12 @@ Priests: Average"
 #addgod 8453 -- Divine Egg
 #addgod 8454 -- Spirit of the Well
 #addgod 8458 -- Statue of the Silent God
+
+#fortunrest 10 -- d15 -> d10
+
+#futuresite "God-Slayer Forge"
+#futuresite "EA Mekone Summons"
+#futuresite "EA Mekone Heroes"
 #end
 
 #selectnation 18 -- Ubar
@@ -105536,7 +105617,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "The caster summons a tribe of Blemmyes, headless men that live in the wilderness. They stand taller than a man even without a head on their shoulders and are strong and hardy warriors."
 #damage 7704
 #pathlevel 0 2
-#nreff 1010 -- 12+
+#nreff 1008 -- 10+
 #fatiguecost 700
 #restricted 5  -- EA Arco
 #restricted 6 -- Mekone
@@ -113972,9 +114053,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 0 2
 #path 1 3
 #pathlevel 1 1
-#nreff 2
+#nreff 3
 #damage 7751
-#fatiguecost 400
+#fatiguecost 500
 #onlycoastsrc 1
 #restricted 6 -- Mekone
 #restricted 51 -- Phlegra
@@ -113988,7 +114069,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 0 2
 #pathlevel 0 2
 #effect 10001
-#nreff 1004
+#nreff 1006 -- 8+
 #damage 7705 -- Cyclopes
 #fatiguecost 1200
 #onlycoastsrc 1
@@ -114006,7 +114087,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 1 1
 #nreff 2008
 #damage 7700 -- Lycaons
-#fatiguecost 3000
+#fatiguecost 1500
 #restricted 6 -- Mekone
 #restricted 51 -- Phlegra
 #restricted 96 -- LA Phlegra
@@ -114018,9 +114099,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #descr "The blood of the exalted Gigantes has potent magical properties. The caster spills blood onto the ground and conjures forth Thrakian warriors in the image of the Gigantes, although smaller. These warriors appear fully formed with an inherent hatred of the Gods and possess a bloodthirsty desire for savage slaughter. They are armed and armored with gold-forged weapons, however their temperament prevents them from fighting in close ordered ranks as the Hoplites do."
 #researchlevel 5
 #pathlevel 0 2
-#nreff 1003
+#nreff 1003 -- 5+
 #damage 7699 -- Thrakian Warrior
-#fatiguecost 1200
+#fatiguecost 1000
 #restricted 6 -- Mekone
 #restricted 51 -- Phlegra
 #end
@@ -114093,22 +114174,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #spec 74766793851008  -- AN, Ignore shields, def negate, Hard to Hit Ethereal, flyingimmune, Size resist
 #end
 
-#selectspell 2975
-#copyspell 696 -- Earthquake
-#name "Volcanic Tremor"
-#descr "The caster invokes the ancient Cyclopes and summons power from the roots of the deepest Volcanoes to shake the earth. The ground heaves and erupts, throwing smaller creatures into flaming crevices that close after a few seconds. The force of the tremor will knock many off their feet, leaving them stunned. Larger creatures are less likely to be affected, and the largest will not be affected at all. If cast in a cave province the effects are devastating."
-#researchlevel 6
-#path 1 0
-#damage 10
-#pathlevel 1 1
-#fatiguecost 200
-#spec 74766793834560  -- AP, defnegate, Hard to Hit Ethereal, flyingimmune, Size resist
-#nextspell 2974
-#restricted 6 -- Mekone
-#restricted 51 -- MA Phlegra
-#restricted 96 -- LA Phlegra
-#end
-
 #selectspell 2976
 #copyspell 239 -- Confusion
 #name "Power of the God-Slayer"
@@ -114119,11 +114184,12 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 1
 #path 1 9
 #pathlevel 1 1
-#aoe 5
+#aoe 6
 #fatiguecost 20
 #effect 128
 #damage 100
-#spec 8437760  -- Sacreds only, ignore shields, UWOK
+#spec 17592194482176  -- Sacreds only, ignore shields, UWOK, MRNH
+--#spec 8437760  -- Sacreds only, ignore shields, UWOK
 #restricted 6 -- Mekone
 #end
 
@@ -114149,9 +114215,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 1204 -- Dome of Arcane Warding
 #name "God-Slayer Forge"
 #descr "The Elder Cyclopes uses magma from the Volcano of the Cyclopes to power a great forge in the province. The forge will be used to create God-Slayer spears in great numbers to equip the Gigantes Hoplites. The magic of the forge will last longer for each gem spent during the casting. This spell can only be cast at the Forge of the Cyclopes by an Elder Cyclops."
-#details "Resource bonus +50, allows recruit of God Slayer Hoplites"
+#details "Resource bonus +100, allows recruitment of God Slayer Hoplites"
 #school 3
-#researchlevel 3
+#researchlevel 4
 #path 0 0
 #path 1 3
 #pathlevel 0 3
@@ -129871,6 +129937,7 @@ Applies the effects of Holy Avenger to the caster"
 
 #selectspell 254 -- Hound of Twilight
 #name "Summon Hounds of Twilight"
+#descr "The Hounds of Twilight are stygian monsters spawned by the Mother of Monsters at the dawn of time. The greatest of them was fettered at the Gates of the Underworld to prevent the dead from returning to the land of the living. His siblings were lesser in might and were allowed to reign free. The beasts appear as black, two-headed hounds with serpent tails. They are huge and frightening to behold."
 #nreff 1001 -- 3+
 #fatiguecost 1000
 #restricted 205
@@ -131153,8 +131220,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 930 -- Ogres
-#pathlevel 0 2
-#nreff 1008
+#nreff 1006 -- 7+
 #end
 
 #selectspell 936 -- Horned Serpents
@@ -132198,9 +132264,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 255 -- Sow Dragon Teeth
-#restricted 51 -- MA Phlegra
-#restricted 96 -- LA Phlegra
-#restricted 255
+#spec 8388608 -- uwok
 #end
 
 #selectspell 264 -- Gigantomachia
@@ -133610,6 +133674,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #descr "This bag contains a number of Dragons teeth. At the start of a battle the owner can sow a few of the teeth and three spartoi, sown men, will emerge from the ground fully armed and ready for battle. The sown men are skeletal in appearance, but are not truly undead. They are armed in gleaming armaments and wield magical spears. The Spartoi will dissolve if left without magical leadership or when the battle is over."
 #constlevel 5
 #mainlevel 2
+#itemcost1 -50
 #mr 0
 #magiccommand 1
 #batstartsum3 3119  -- Spartae
