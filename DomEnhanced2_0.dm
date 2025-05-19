@@ -100053,6 +100053,14 @@ Dominion: Causes dreamless slumber, greatly reducing tax income. Vines reanimate
 #startunittype2 1621  -- Atlantian Infantry
 #startunitnbrs2 20
 
+#coastfortrec 1620 -- reef warrior
+#coastfortrec 1621 -- infantry
+#coastfortrec 111 -- shield
+#coastfortrec 110 -- militia
+#coastfortrec 107 -- light infantry
+
+#coastfortcom 432 -- scout
+
 #plainfortrec 2860 -- entrant
 #forestfortrec 2860
 #mountainfortrec 2860
@@ -129702,8 +129710,8 @@ Applies the effects of Holy Avenger to the caster"
 #details "Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
 #researchlevel 4
 #pathlevel 0 2
-#fatiguecost 60
-#aoe 10
+#fatiguecost 40
+#aoe 1008 -- 10+
 #spec 4276224  -- Friendlies only, Ignores shields, Airbreathers only
 #restricted 88 -- MA Atlantis
 #end
@@ -129729,7 +129737,7 @@ Applies the effects of Holy Avenger to the caster"
 #researchlevel 4
 #pathlevel 0 1
 #fatiguecost 40
-#aoe 20
+#aoe 3017 -- 20+++
 #effect 23
 #damage 35184372088832
 #spec 12664832  -- Friendlies only, Ignores shields, Airbreathers only, UWOK
