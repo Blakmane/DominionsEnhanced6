@@ -38302,7 +38302,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mr 12
 #mor 13
 #weapon 74  -- Sword of Sharpness
-#monpresentrec -1041  -- Iron/Blacksteel Angel
 #end
 
 #newmonster 7967
@@ -77144,18 +77143,16 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 761  -- Serpent Priest
 #ownsmonrec 7731 -- Serpent Bishop
-#ownsmonrec 7731 -- Serpent Bishop
 #end
 
 #selectmonster 763  -- Serpent Cataphract
-#ownsmonrec 7731 -- Serpent Bishop
 #ownsmonrec 7731 -- Serpent Bishop
 #end
 
 
 #selectmonster 765  -- Serpent Lord
 #ownsmonrec 7731 -- Serpent Bishop
-#ownsmonrec 7731 -- Serpent Bishop
+#magicskill 9 1 -- H1
 #end
 
 #selectmonster 768 -- Watcher
@@ -81138,7 +81135,7 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 #selectmonster 3483 -- Si'lat
-#montag -1050 -- true jinn
+#montag 1050 -- true jinn
 #twiceborn 3389
 #end
 
@@ -91526,28 +91523,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #end
 
-#newsite 2225 -- Sacred Swamp ingame
-#name "Sacred Swamp "
-#clear
-#path 6 
-#rarity 5
-#gems 6 3
-#homecom 8533 -- Serpent Priest dummy
-#homecom 7808 -- Serpent Curate
-#homemon 1859  -- Hydra hatchling
-#homemon 1850  -- Hydra
-#end
-
-#newsite 2226 -- Imperial Capital ingame
-#name "Imperial Capital "
-#clear
-#homemon 8529 -- Serpent Cataphract dummy
-#homecom 8531 -- Serpent Lord dummy
-#homemon 8534 -- Sacred Beast dummy
-#homecom 8538 -- Galli dummy
-#homecom 8525 -- Mythraic Helio dummy
-#homecom 8528 -- Arch Theurg dummy
-#end
 
 #newsite 2227
 #name "Village of the First People"
@@ -94333,16 +94308,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 8574 -- Temple Chariot
 #end
 
-#selectsite 43  -- Sacred Swamp
-#clear
-#path 6 
-#rarity 5
-#gems 6 3
-#homecom 7808 -- Serpent Curate
-#homemon 1859  -- Hydra hatchling
-#homemon 1850  -- Hydra
-#end
-
 #selectsite 63  -- City of Tombs
 #homemon 1094  -- Desert Ranger
 #end
@@ -94382,14 +94347,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #gems 6 2
 #homecom 856  -- Tuatha
 #homemon 849  -- Daoine Sidhe
-#end
-
-#selectsite 138  -- Imperial Capital
-#homemon 7515 -- Sacred Beast
-#homecom 7732 -- Galli
-#homecom 7733 -- Mythraic Helio
-#homecom 7737 -- Arch Theurg
-#clear
 #end
 
 #selectsite 148  -- Campus Sceleria
@@ -100437,119 +100394,6 @@ Priests: Weak, magical"
 #futuresite "Theurgy Recruits"
 #futuresite "Serpent Cult Recruits"
 #futuresite "Cult of Fertility Recruits"
-#clearrec
-
-#landcom 426  -- Scout
-#landcom 8530 -- Serpent Assassin dummy
-#landcom 1869  -- Centurion
-#forestcom 1869  -- Centurion foreign
-#mountaincom 1869
-#swampcom 1869
-#wastecom 1869
-#farmcom 1869
-#plaincom 1869
-#landcom 1870  -- Tribuni
-#landcom 1871  -- Magister Militum
-#landcom 2151  -- Battle Deacon
-#landcom 1877  -- Renata
-#landcom 1878  -- Renatus
-#landcom 8524 -- Helio monpresentrec dummy
-#landcom 8527 -- Theurg Acolyte monpresentrec dummy
-#landcom 8532 -- Serpent Acolyte monpresentrec dummy
-#landcom 8537 -- Mystes monpresentrec dummy
-
-#landcom 8536 -- Reveler monpresentrec dummy
-#landcom 8523 -- Leo monpresentrec dummy
-#landcom 8535 -- Epoptes monpresentrec dummy
-
-#forestcom 1873  -- Heliodromus foreign
-#mountaincom 1873
-#swampcom 1873
-#wastecom 1873
-#farmcom 1873
-#plaincom 1873
-#forestcom 1876  -- Mystes foreign
-#mountaincom 1876
-#swampcom 1876
-#wastecom 1876
-#farmcom 1876
-#plaincom 1876
-#forestcom 1880  -- Reveler foreign
-#mountaincom 1880
-#swampcom 1880
-#wastecom 1880
-#farmcom 1880
-#plaincom 1880
-#forestcom 1872  -- Leo foreign
-#mountaincom 1872
-#swampcom 1872
-#wastecom 1872
-#farmcom 1872
-#plaincom 1872
-#forestcom 1875  -- Epoptes foreign
-#mountaincom 1875
-#swampcom 1875
-#wastecom 1875
-#farmcom 1875
-#plaincom 1875
-
-#addrecunit 1862  -- Milite
-#forestrec 1862  -- Milite foreign
-#mountainrec 1862
-#swamprec 1862
-#wasterec 1862
-#farmrec 1862
-#plainrec 1862
-#addrecunit 1863  -- Limitane
-#forestrec 1863  -- Limitane foreign
-#mountainrec 1863
-#swamprec 1863
-#wasterec 1863
-#farmrec 1863
-#plainrec 1863
-#addrecunit 1864  -- Limitane Primani
-#forestrec 1864  -- Limitane Primani foreign
-#mountainrec 1864
-#swamprec 1864
-#wasterec 1864
-#farmrec 1864
-#plainrec 1864
-#addrecunit 2152  -- Limitane Standard
-#forestrec 2152  -- Limitane Standard foreign
-#mountainrec 2152
-#swamprec 2152
-#wasterec 2152
-#farmrec 2152
-#plainrec 2152
-#addrecunit 11  -- Retiarius
-#addrecunit 12  -- Gladiator
-#addrecunit 8522 -- Eusebes Solaris dummy
-#addrecunit 1867  -- Comitatense
-#addrecunit 1868  -- Palatine
-#addrecunit 2475  -- Standard
-#addrecunit 8526 -- Theurg Communicant dummy
-
-#forestrec 1865  -- Limitane Solaris foreign
-#mountainrec 1865
-#swamprec 1865
-#wasterec 1865
-#farmrec 1865
-#plainrec 1865
-#forestrec 1866  -- Primani Solaris foreign
-#mountainrec 1866
-#swamprec 1866
-#wasterec 1866
-#farmrec 1866
-#plainrec 1866
-
-
-
-
-
-
-
-
-
 
 #end
 
@@ -114800,7 +114644,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 3020
 #name "Dominate minds"
-#descr "Through great mental effort a Mind Lord can extend their mind to dominate weak-willed inhabitants of a distant province. If cast at a friendly province unrest will be decreased as dissidents are brought under the control of the Aboleths. In enemy held provinces those affected will take arms and attack their current masters, sowing discord throughout the province. Additional castings at the same province in the same month will have no further effect. This spell can only be cast by a Mind Lord."
+#descr "Through great mental effort a Mind Lord can extend their mind to dominate weak-willed inhabitants of a distant province. If cast at a friendly province unrest will be decreased as dissidents are brought under the control of the Aboleths. In enemy held provinces those affected will take arms and attack their current masters, sowing discord throughout the province. Additional castings at the same province in the same month will have no further effect."
 #researchlevel 0
 #school -1
 #effect 10082
@@ -114809,7 +114653,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #damage 250 -- Ench50  -- Remote Domination
 #restricted 44
 #hiddenench 1
-#onlymnr -1048  -- Aboleth
 #end
 
 #selectspell 3021
@@ -114886,14 +114729,13 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 1 1
 #nreff 2008
 #fatiguecost 1000
-#onlymnr -1048  -- Aboleth
 #damage 7688 -- Skum
 #end
 
 #selectspell 3025
 #copyspell 935 -- Pack of Wolves
 #name "Contact Young Chthonian"
-#descr "The caster mentally contacts an immature Chthonian. Ancient wormlike creatures that live deep below the earths surface, Chthonians were old before the lesser races walked the earth. In ages past the Aboleths struck a pact with these creatures to aid them should the need arise. Chthonians can drain life fluids with their tentacles and regenerate wounds with incredible speed. This spell can only be cast by an Aboleth in a land province."
+#descr "The caster mentally contacts an immature Chthonian. Ancient wormlike creatures that live deep below the earths surface, Chthonians were old before the lesser races walked the earth. In ages past the Aboleths struck a pact with these creatures to aid them should the need arise. Chthonians can drain life fluids with their tentacles and regenerate wounds with incredible speed."
 #researchlevel 3
 #path 0 3
 #path 1 4
@@ -114903,13 +114745,12 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #damage 7390
 #nreff 1
 #restricted 44 -- EA Rlyeh
-#onlymnr -1048  -- Aboleth
 #end
 
 #selectspell 3026
 #copyspell 935 -- Pack of Wolves
 #name "Contact Chthonian"
-#descr "The caster mentally contacts a Chthonian. Ancient wormlike creatures that live deep below the earths surface, Chthonians were old before the lesser races walked the earth. In ages past the Aboleths struck a pact with these creatures to aid them should the need arise. Chthonians can drain life fluids with their tentacles and regenerate wounds with incredible speed. This spell can only be cast by an Aboleth in a land province."
+#descr "The caster mentally contacts a Chthonian. Ancient wormlike creatures that live deep below the earths surface, Chthonians were old before the lesser races walked the earth. In ages past the Aboleths struck a pact with these creatures to aid them should the need arise. Chthonians can drain life fluids with their tentacles and regenerate wounds with incredible speed."
 #researchlevel 5
 #path 0 3
 #path 1 4
@@ -114919,13 +114760,12 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #damage 7389
 #nreff 1
 #restricted 44 -- EA Rlyeh
-#onlymnr -1048  -- Aboleth
 #end
 
 #selectspell 3027
 #copyspell 935 -- Pack of Wolves
 #name "Summon Chthonians"
-#descr "The caster mentally contacts a Chthonian. Ancient wormlike creatures that live deep below the earths surface, Chthonians were old before the lesser races walked the earth. In ages past the Aboleths struck a pact with these creatures to aid them should the need arise. Chthonians can drain life fluids with their tentacles and regenerate wounds with incredible speed. This spell can only be cast by an Aboleth in a land province."
+#descr "The caster mentally contacts a Chthonian. Ancient wormlike creatures that live deep below the earths surface, Chthonians were old before the lesser races walked the earth. In ages past the Aboleths struck a pact with these creatures to aid them should the need arise. Chthonians can drain life fluids with their tentacles and regenerate wounds with incredible speed."
 #researchlevel 0
 #school -1
 #path 0 3
@@ -114934,13 +114774,12 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #damage 7389
 #nreff 3
 #restricted 44 -- EA Rlyeh
-#onlymnr -1048  -- Aboleth
 #end
 
 #selectspell 3028
 #copyspell 935 -- Pack of Wolves
 #name "Call the Burrowers Beneath"
-#descr "The caster mentally contacts a group of Chthonians. Three full adults and eight immature Chthonians will be drawn to the surface to aid the servants of the memory-fish. This spell can only be cast by an Aboleth in a land province."
+#descr "The caster mentally contacts a group of Chthonians. Three full adults and eight immature Chthonians will be drawn to the surface to aid the servants of the memory-fish."
 #researchlevel 6
 #path 0 3
 #path 1 4
@@ -114950,7 +114789,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #damage 7390
 #nreff 8
 #nextspell 3027
-#onlymnr -1048  -- Aboleth
 #restricted 44 -- EA Rlyeh
 #end
 
@@ -114968,7 +114806,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 3030
 #name "Chthonian Earthquake"
-#descr "Adult Chthonians have the ability to cause earthquakes from below ground. The caster mentally contacts a few Chthonians and convinces them to cause an earthquake in a targeted province. Many people will be killed and any temple located in the province will be destroyed. Unrest will spread throughout the populace. This spell can only be cast by an Aboleth in a land province."
+#descr "Adult Chthonians have the ability to cause earthquakes from below ground. The caster mentally contacts a few Chthonians and convinces them to cause an earthquake in a targeted province. Many people will be killed and any temple located in the province will be destroyed. Unrest will spread throughout the populace."
 #details "Unrest +15, Population -15% and any temple destroyed."
 #school 2
 #researchlevel 6
@@ -114984,7 +114822,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #spec 0
 #nogeodst 4
 #restricted 44 -- EA Rlyeh
-#onlymnr -1048  -- Aboleth
 #nextspell 3029
 #end
 
