@@ -27687,8 +27687,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #clearweapons
 #spr1 "magicenhanced/eeaos.tga"
 #spr2 "magicenhanced/eeaos2.tga"
-#unmountedspr1 "magicenhanced/un_eeaos.tga"
-#unmountedspr2 "magicenhanced/un_eeaos2.tga"
 #name "Aes Sidhe"
 #descr "The Aes Sidhe are a supernatural race related to the Sidhe but prone to evil and mischief. During the season of Samhain the Aes Sidhe can more easily come into our world. They may pass by a townstead if offerings of food and drink are left for them, however if the whim takes them they will descend to carry off people and livestock. They are of fay descent and are far superior to humans in physical and magical strength. Like all the Sidhe they are masters of illusions and ride into battle astride magnificent fay horses of unequaled speed."
 #gcost 0
@@ -28852,39 +28850,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #landshape 7513
 #weapon 20  -- Bite
 #weapon 589  -- Tail Slap
-#end
-
-#newmonster 7515
-#copyspr 628  -- Great Lion
-#name "Sacred Beast"
-#descr "The Cult of the Great Mother allows sacred beasts to roam free in their temples, and in the Imperial city great Lions are brought from far flung corners of the Empire. These fierce creatures will occasionally eat a worshipper, however they seem to follow the commands of the priests and are revered as sacred emblems of the wild."
-#quadruped
-#gcost 20
-#rcost 1
-#rpcost 18
-#hp 23
-#size 4
-#prot 5
-#mr 11
-#mor 14
-#str 15
-#att 13
-#def 11
-#prec 5
-#enc 3
-#mapmove 20
-#ap 20
-#weapon 322  -- Bite
-#weapon 236  -- Claw
-#animal
-#forestsurvival
-#holy
-#darkvision 50
-#itemslots 786432
-#startage 10
-#maxage 30
-#nametype 144  -- Nature Beast
-#ownsmonrec 7516 -- Archigalli
 #end
 
 #newmonster 7517
@@ -33238,236 +33203,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #montagweight 1
 #end
 
-#newmonster 7730
-#copystats 1880  -- Reveler
-#copyspr 1880  -- Reveler
-#name "Anointed Reveler"
-#descr "Throughout the empire, mystery cults have spread and flourished with the influx of foreign culture. One of these, the Serpent Cult, has replaced the official state cult of the Theurgs, but many others ply their trade in secret. The Cult of Revelry is influenced by Pangaea worship and orgiastic hedonism. The Reveler is a high ranking member of the cult and an organizer of orgies in the wild. He wears a garland and carries a goblet of wine. Revelers are generally looked upon with distaste and fear and some rumors claim that they practice cannibalism and blood sacrifices in their orgies."
-#rpcost 2
-#researchbonus 0
-#heretic 0
-#holy
-#ownsmonrec 7516 -- Archigalli
-#end
-
-#newmonster 7731
-#copystats 761  -- Serpent Priest
-#copyspr 761  -- Serpent Priest
-#name "Serpent Bishop"
-#descr "Serpent Priests are the leaders of the Pythian Serpent Cult. The Serpent Cult is one of the many mystery cults that spread to Pythium during the collapse of Ermor. Sauromancers from C'tis were invited by the Emperor and his Theurgs to battle the growing threat and with them came the Serpent Cult. The Serpent Cult was heralded as the answer to the Ermorian threat and quickly received Imperial acceptance. Soon it replaced the Order of the Theurgs as the state cult and grew in influence and power. In the years that have passed since the lizards left Pythium, the Cult has changed. Serpents are venerated and the priests of the Cult wear serpent masks and carry serpent staffs as signs of their office. This Serpent Priest has taken the role of Bishop to lead the cult as the primary religion of the Empire."
-#magicboost 2 1
-#magicboost 6 2
-#magicboost 9 2
-#end
-
-#newmonster 7732
-#copystats 552  -- Animist
-#spr1 "magicenhanced/eegalli.tga"
-#spr2 "magicenhanced/eegalli2.tga"
-#name "Galli"
-#descr "Throughout the Empire, mystery cults have spread and flourished with the influx of foreign culture. One of these, the Serpent Cult, has replaced the official state cult of the Theurgs, but many others ply their trade in secret. The Cult of the Fertility is one of these, and is heavily influenced by the arcoscephalian priestesses and pangaean debauchery. All Galli have sacrificed their fertility to the new god, and have been granted additional powers over nature as a result. Due to their strange and bloody practices, they are unsettling to the general populace."
-#clearmagic
-#clearweapons
-#gcost 10010
-#magicskill 3 1
-#magicskill 6 2
-#magicskill 9 2
-#custommagic 42496 100 -- 100% WENB
-#custommagic 42496 10 -- 10% WENB
-#douse 1
-#holy
-#weapon 674  -- Bronze Dagger
-#prophetshape 7516
-#beastmaster 1
-#patience -3
-#incunrest 10
-#ownsmonrec 7516
-#end
-
-#newmonster 7516
-#copystats 552  -- Animist
-#name "Archigalli"
-#spr1 "magicenhanced/eearchigalli.tga"
-#spr2 "magicenhanced/eearchigalli2.tga"
-#descr "Throughout the Empire, mystery cults have spread and flourished with the influx of foreign culture. One of these, the Serpent Cult, has replaced the official state cult of the Theurgs, but many others ply their trade in secret. The Cult of the Fertility is one of these, and is heavily influenced by the arcoscephalian priestesses and pangaean debauchery.  The new god has chosen a member of the Cult of Fertility to be the new prophet, who was immediately raised to the high title of Archgalli.  Like all Galli, the Archgalli has sacrificed their fertility to the new god, and the members of the Cult of Fertility have gained new powers and acceptance as a result."
-#clearmagic
-#rcost 1
-#hp 10
-#mr 13
-#mor 11
-#att 10
-#def 10
-#prec 10
-#enc 3
-#mapmove 2
-#ap 12
-#magicboost 6 1
-#magicboost 9 2
-#clearweapons
-#weapon 92
-#female
-#itemslots 991750
-#patience -3
-#end
-
-#newmonster 7733
-#copystats 1873  -- Heliodromus
-#copyspr 1873  -- Heliodromus
-#clearmagic
-#name "Mithraic Heliodromus"
-#descr "Throughout the Empire, mystery cults have spread and flourished with the influx of foreign culture. One of these, the Serpent Cult, has replaced the official state cult of the Theurgs, but many others ply their trade in secret. The Cult of the Solar Bull is very popular among the soldiers of the Limes and most of its higher members are former soldiers or Centurions. The Heliodromus, Sun-Courier, is the highest ranking member of the Cult of the Solar Bull. He, for it is only males that are allowed in the Cult, performs the Taurobolium, ritual sacrifice of a bull. The Heliodromus carries a golden sacrificial knife. Like all mystics of the Empire, the Heliodromus leads worshippers astray and lowers the Dominion in which he resides. He wears an exotic hat, reputedly similar to those of the foreign founders of the Cult. Mithraic Heliodromus are those Heliodromus that have received an official position within the state cult, and as a result have gained greater skill and religious authority."
-#magicskill 0 2
-#magicskill 6 1
-#magicskill 9 2
-#holy
-#custommagic 43136 100 -- 100% FSNB
-#custommagic 43136 10 -- 10% FSNB
-#heretic 0
-#ownsmonrec 7734
-#end
-
-#newmonster 7734
-#copystats 1873  -- Heliodromus
-#name "Heliopater"
-#spr1 "magicenhanced/eeheliopater.tga"
-#spr2 "magicenhanced/eeheliopater2.tga"
-#descr "Throughout the Empire, mystery cults have spread and flourished with the influx of foreign culture. One of these, the Serpent Cult, has replaced the official state cult of the Theurgs, but many others ply their trade in secret. The Cult of the Solar Bull is very popular among the soldiers of the Limes and most of its higher members are former soldiers or Centurions. The Heliopater, Sun-Father, is the highest ranking member of the Cult of the Solar Bull. He has been selected as the prophet of the new god, and is leading the Cult of the Solar Bull to greater prominence in the empire. The Heliopater has embroidered robes and carries a crook to signify his role as a shepherd to the Cult.  He wears an exotic hat, reputedly similar to those of the foreign founders of the Cult. The Heliopater forswears his former life upon initiation and does not lead armies."
-#hp 12
-#mr 14
-#mor 14
-#str 10
-#att 10
-#def 10
-#prec 10
-#enc 3
-#mapmove 2
-#ap 10
-#heretic 0
-#fireres 10
-#firepower 1
-#magicboost 0 1
-#magicboost 9 2
-#weapon 7
-#itemslots 991750
-#holy
-#end
-
-#newmonster 7735
-#copystats 1874  -- Theurg
-#copyspr 43  -- Theurg Acolyte
-#clearmagic
-#name "Theurg Acolyte"
-#descr "Since the spread of the mystery cults and the acceptance of the Serpent Cult, the Theurgs have lost most of their former influence. Once spokesmen of the Faith and magicians of the Spheres, Theurgs are now but another cult of the Emerald Empire. The great Cathedral of the Spheres is now little more than a temple and school for arcane mystics. Out of respect for tradition, the Theurgs are still allowed some religious influence. Now, with the Church of the Theurgy once more preeminent Theurg Acolytes are once more trained in the cities of the Empire."
-#mr 13
-#rpcost 2
-#poorleader
-#inspirational 0
-#magicskill 4 1
-#custommagic 256 20  -- 20% Air Magic
-#holy
-#ownsmonrec 7736
-#end
-
-#newmonster 7737
-#copystats 42  -- Theurg
-#copyspr 41  -- Arch Theurg
-#clearmagic
-#clearweapons
-#name "Arch Theurg"
-#descr "Since the spread of the mystery cults and the acceptance of the Serpent Cult, the Theurgs have lost most of their former influence. Once spokesmen of the Faith and magicians of the Spheres, Theurgs are now but another cult of the Emerald Empire. With the return of the official religion to the Cathedral of the Spheres the Theurgs have regained some of their former power and influence."
-#magicskill 1 1
-#magicskill 4 2
-#magicskill 9 2
-#custommagic 2944 100  -- 100% FAWS
-#custommagic 2944 10  -- 10% FAWS
-#ownsmonrec 7736
-#mr 16
-#weapon 7  -- Staff
-#holy
-#end
-
-#newmonster 7736
-#copystats 1874  -- Theurg
-#copyspr 41  -- Arch Theurg
-#name "Theurg Patriarch"
-#descr "Since the spread of the mystery cults and the acceptance of the Serpent Cult, the Theurgs have lost most of their former influence. Once spokesmen of the Faith and magicians of the Spheres, Theurgs became but another cult of the Emerald Empire. However, now the Awakening God has chosen to return the Theurgs to their position of power once more a Patriarch rules the Theurgs and communicants once again flock to the Cathedral of the Spheres. With the return of the official religion to the Cathedral of the Spheres the Theurgs have regained some of their former power and influence."
-#magicboost 4 1
-#magicboost 9 2
-#mr 16
-#holy
-#end
-
-#newmonster 7738
-#copystats 538  -- Theurg Communicant
-#copyspr 538  -- Theurg Communicant
-#ownsmonrec 7736
-#holy
-#end
-
-#newmonster 7739
-#copystats 1866  -- Primani Solaris
-#cleararmor
-#name "Eusebes Solaris"
-#spr1 "magicenhanced/eesolsacred.tga"
-#spr2 "magicenhanced/eesolsacred2.tga"
-#descr "A warrior devoted to the cause of the Solar Bull, the Eusebes Solaris are drawn from the ranks of the Primani Solaris, and are devoted to his cause. They will join the armies of the new god as holy warriors whilst he is aligned with the Solar Bull."
-#armor 126
-#armor "Clipeus"
-#armor 18  -- full chain
-#gcost 10018
-#mapmove 18
-#fireres 10
-#holy
-#ownsmonrec 7734 -- Heliopater
-#end
-
-#newmonster 7740
-#copystats 1872  -- Leo
-#copyspr 1872  -- Leo
-#name "Anointed Leo"
-#descr "The Cult of the Solar Bull is one of the many mystery cults that have become common in the late days of the Empire. It is very popular among the soldiers of the Limes and most of its higher members are former soldiers or Centurions. Leo is a title given to a member of the Cult of the Solar Bull. The Lion receives training in solar magic and leads simpler ceremonies. The Leo is gifted with solar inspiration and is partially resistant to fire. Leos command great respect among the soldiers of the Limes, even those who are not members of the Cult. Since the exultation of the Solar Bull the Leo now hold some religious authority. The Leo can be distinguished by his golden plumage and an emblazoned sun on his chest. Leos are often occupied with military matters and are rather poor researchers."
-#rpcost 2
-#ownsmonrec 7734
-#heretic 0
-#holy
-#magicskill 9 1
-#end
-
-#newmonster 7741
-#copystats 1873  -- Helio
-#copyspr 1873  -- Helio
-#name "Anointed Heliodromus"
-#descr "Throughout the Empire, mystery cults have spread and flourished with the influx of foreign culture. One of these, the Serpent Cult, has replaced the official state cult of the Theurgs, but many others ply their trade in secret. The Cult of the Solar Bull is very popular among the soldiers of the Limes and most of its higher members are former soldiers or Centurions. The Heliodromus, Sun-Courier, is the highest ranking member of the Cult of the Solar Bull. He, for it is only males that are allowed in the Cult, performs the Taurobolium, ritual sacrifice of a bull. The Heliodromus carries a golden sacrificial knife. Since the exultation of the Solar Bull the Heliodromus now hold some religious authority. He wears an exotic hat, reputedly similar to those of the foreign founders of the Cult. The Heliodromus forswears his former life upon initiation and does not lead armies. The Heliodromii are secretive and do not share their wisdom with outsiders. This makes them rather poor researchers."
-#rpcost 2
-#ownsmonrec 7734
-#heretic 0
-#holy
-#magicskill 9 1
-#end
-
-#newmonster 7742
-#copystats 1875  -- Epoptes
-#copyspr 1875  -- Epoptes
-#name "Anointed Epoptes"
-#descr "Throughout the Empire, mystery cults have spread and flourished with the influx of foreign culture. One of these, the Serpent Cult, has replaced the official state cult of the Theurgs, but many others ply their trade in secret. The Cult of the Great Mother is very popular among women and most of the members in its higher ranks are female. The Epoptes is a high ranking member of the Cult of the Great Mother. The liturgy of the mystery cult is heavily influenced by the Arcoscephalean priestesses and their skill in healing. With the elevation of the Cult of the Great Mother to the official state church the Epoptes have gained some religious authority. She wears a garland and a green dress and carries an urn and a twig as signs of her office. The urn is enchanted and is always full of grain. The Epoptes and Mystes are secretive and do not share their wisdom with outsiders. This makes them rather poor researchers."
-#rpcost 2
-#ownsmonrec 7516 -- Archigallus
-#heretic 0
-#holy
-#magicskill 9 1
-#end
-
-#newmonster 7743
-#copystats 1876  -- Mystes
-#copyspr 1876  -- Mystes
-#name "Anointed Mystes"
-#descr "Throughout the Empire, mystery cults have spread and flourished with the influx of foreign culture. One of these, the Serpent Cult, has replaced the official state cult of the Theurgs, but many others ply their trade in secret. The Cult of the Great Mother is very popular among women and most of the members in its higher ranks are female. The Mystes is a low ranking member of the Cult of the Great Mother. The liturgy of the mystery cult is heavily influenced by the Arcoscephalean priestesses, but the Mystes are not initiated in the art of healing. Unlike her elder sister, the Epoptes, the Mystes doesn't initiate others into the Cult. She wears a garland and a green dress. With the elevation of the Cult of the Great Mother to the official state church the Mystes have gained some religious authority. The Epoptes and Mystes are secretive and do not share their wisdom with outsiders. This makes them rather poor researchers."
-#rpcost 2
-#ownsmonrec 7516 -- Archigallus
-#heretic 0
-#holy
-#magicskill 9 1
-#end
 
 #newmonster 7744
 #copystats 1220  -- Carnute Noble Warrior
@@ -46412,379 +46147,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #plant
 #end
 
-#newmonster 8522 -- Eusebes Solaris fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 7739 -- real recruit
-#watershape 7739 -- real recruit
-#ownsmonrec 7734 -- Heliopater
-#end
-
-#newmonster 8523 -- Anointed Leo fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 7740 -- real recruit
-#watershape 7740 -- real recruit
-#ownsmonrec 7734 -- Heliopater
-#end
-
-#newmonster 8524 -- Anointed Heliodromus fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 7741 -- real recruit
-#watershape 7741 -- real recruit
-#ownsmonrec 7734 -- Heliopater
-#end
-
-#newmonster 8525 -- Mithraic Heliodromus fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 7733 -- real recruit
-#watershape 7733 -- real recruit
-#ownsmonrec 7734 -- Heliopater
-#end
-
-#newmonster 8526 -- Theurg Communicant fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 7738 -- real recruit
-#watershape 7738 -- real recruit
-#ownsmonrec 7736 -- Theurg Patriarch
-#end
-
-#newmonster 8527 -- Theurg Acolyte fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 7735 -- real recruit
-#watershape 7735 -- real recruit
-#ownsmonrec 7736 -- Theurg Patriarch
-#end
-
-#newmonster 8528 -- Arch Theurg fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 7737 -- real recruit
-#watershape 7737 -- real recruit
-#ownsmonrec 7736 -- Theurg Patriarch
-#end
-
-#newmonster 8529 -- Serpent Cataphract fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 763  -- real recruit
-#watershape 763  -- real recruit
-#ownsmonrec 7731 -- Serpent Bishop
-#end
-
-#newmonster 8530 -- Serpent Assassin fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 1879  -- real recruit
-#watershape 1879  -- real recruit
-#ownsmonrec 7731 -- Serpent Bishop
-#end
-
-#newmonster 8531 -- Serpent Lord fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 765  -- real recruit
-#watershape 765  -- real recruit
-#ownsmonrec 7731 -- Serpent Bishop
-#end
-
-#newmonster 8532 -- Serpent Acolyte fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 830  -- real recruit
-#watershape 830  -- real recruit
-#ownsmonrec 7731 -- Serpent Bishop
-#end
-
-#newmonster 8533 -- Serpent Priest fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 761  -- real recruit
-#watershape 761  -- real recruit
-#ownsmonrec 7731 -- Serpent Bishop
-#end
-
-#newmonster 8534 -- Sacred Beast fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 7515 -- real recruit
-#watershape 7515 -- real recruit
-#ownsmonrec 7516 -- Archigalli
-#end
-
-#newmonster 8535 -- Anointed Mystes fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 7743 -- real recruit
-#watershape 7743 -- real recruit
-#ownsmonrec 7516 -- Archigalli
-#end
-
-#newmonster 8536 -- Anointed Reveler fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 7730 -- real recruit
-#watershape 7730 -- real recruit
-#ownsmonrec 7516 -- Archigalli
-#end
-
-#newmonster 8537 -- Anointed Epoptes fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 7742 -- real recruit
-#watershape 7742 -- real recruit
-#ownsmonrec 7516 -- Archigalli
-#end
-
-#newmonster 8538 -- Galli fake recruit
-#spr1 "blank/blue_blanksprite.tga"
-#name " "
-#descr " "
-#drawsize -100
-#rpcost 0
-#startage -1
-#rcost 0
-#gcost 1500
-#def 10
-#att 10
-#ap 10
-#enc 0
-#mapmove 0
-#size 2
-#immobile
-#weapon 0
-#landshape 7732 -- real recruit
-#watershape 7732 -- real recruit
-#ownsmonrec 7516 -- Archigalli
-#end
 
 #newmonster 8540 -- Reubenite Shepherd
 #copystats 1994 -- Reubenite Archer
@@ -77141,20 +76503,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #montag 1052
 #end
 
-#selectmonster 761  -- Serpent Priest
-#ownsmonrec 7731 -- Serpent Bishop
-#end
-
-#selectmonster 763  -- Serpent Cataphract
-#ownsmonrec 7731 -- Serpent Bishop
-#end
-
-
-#selectmonster 765  -- Serpent Lord
-#ownsmonrec 7731 -- Serpent Bishop
-#magicskill 9 1 -- H1
-#end
-
 #selectmonster 768 -- Watcher
 #patrolbonus 100
 #end
@@ -77301,12 +76649,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 820  -- Heliophagus
 #montag 1006  -- No Transformation spells
-#end
-
-#selectmonster 830  -- Serpent Acolyte
-#ownsmonrec 7731 -- Serpent Bishop
-#custommagic 512 50  -- +50% W
-#ownsmonrec 7731 -- Serpent Bishop
 #end
 
 #selectmonster 840 -- jotun huskarl
@@ -79306,14 +78648,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #end
 
 
-
-
-
-
-#selectmonster 1879  -- Serpent Assassin
-#ownsmonrec 7731 -- Serpent Bishop
-#ownsmonrec 7731 -- Serpent Bishop
-#end
 
 #selectmonster 1882  -- Moon Warrior
 #enchrebate50p 274 -- Ench74  -- Lunar Potency
@@ -94287,6 +93621,58 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7932
 #end
 
+#newsite 2407
+#clear
+#name "LA Pythium Summons"
+#rarity 5
+#level 0
+#path 6
+#look 4
+#homemon 435 -- maenad
+#homemon 628 -- lion
+#homemon 6670 -- sacred snek
+#homemon 1859 -- sacred hydra hatch
+#homemon 1850 -- sacred hydra
+#homemon 7712 -- varang draugr
+#homemon 7787 -- cheirosiph
+#homecom 6534 -- onager
+#homecom 1881 -- satyr
+#homecom 3087 -- lar
+#homecom 3066 -- hamadryad
+#homecom 7274 -- deif emp
+#end
+
+#newsite 2408
+#clear
+#name "LA Pythium Unique Summons"
+#rarity 5
+#level 0
+#path 6
+#look 4
+#homecom 1822 -- typhon
+#homecom 7298 -- kerberos
+#homecom 7250 -- athena
+#homecom 7251 -- pose
+#homecom 7252 -- hades
+#homecom 7256 -- sun neter
+#homecom 7257 -- chaos neter
+#homecom 7258 -- moon neter
+#end
+
+#newsite 2409
+#clear
+#name "LA Pythium Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 0
+#homecom 865
+#homecom 866
+#homecom 8224
+#homecom 8225
+#homecom 37
+#end
+
 
 
 
@@ -100377,7 +99763,12 @@ Priests: Weak, magical"
 #end
 
 #selectnation 98 -- LA Pythium
-#epithet "Mystery Cults"
+--#epithet "Mystery Cults"
+#summary "Race: Humans
+Military: Heavy legionnaires, sacred serpent cataphracts, gladiators, sacred hydras
+Magic: Access to weak mages of all paths, with stronger mages of Nature
+Priests: Weak, one available priest of average level. Heretical mystics who lower Dominion.
+Bless bonuses: Poison Resistance +10"
 #multihero1 37  -- Master of the Games
 #hero1 865  -- Gallus, Pontifex Serpentus
 #hero2 866  -- Hierogallus, hero
@@ -100390,11 +99781,14 @@ Priests: Weak, magical"
 #addgod 8414 -- Angelic Lord
 #addgod 8418 -- Peacock Angel
 #addgod 8373 -- Great Toad
-#futuresite "Cult of the Solar Bull Recruits"
-#futuresite "Theurgy Recruits"
-#futuresite "Serpent Cult Recruits"
-#futuresite "Cult of Fertility Recruits"
+--#futuresite "Cult of the Solar Bull Recruits"
+--#futuresite "Theurgy Recruits"
+--#futuresite "Serpent Cult Recruits"
+--#futuresite "Cult of Fertility Recruits"
 
+#futuresite "LA Pythium Summons"
+#futuresite "LA Pythium Unique Summons"
+#futuresite "LA Pythium Heroes"
 #end
 
 #selectnation 99 -- LA Lemuria
@@ -116476,520 +115870,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 98 -- LA Pythium
 #end
 
-#selectspell 3143
-#name "Establish Serpent Cult"
-#descr "A Serpent Acolyte located in the capital can attempt to establish the Serpent Cult as the official church of the Empire. This will only be successful if there is currently no living Cult leader to oppose them and no other Aspirants in the capital. By performing this ritual they will declare their aspirations to convert the church to the Serpent Cult and assume the position of Serpent Bishop. This spell can only be cast by a Serpent Acolyte in the Imperial Capital."
-#details "Conversion to a cult is instant in first game year, after this it will take 3 months during which the aspiring Cult leader must remain in the capital. Cult benefits remain until Cult Leader dies or changes form. Changing the national Cult may change recruitable commanders, sacred and fort recruits, plus certain spells are only castable by Cult mages"
-#researchlevel 0
-#school 5
-#path 0 6
-#pathlevel 0 1
-#effect 10130
-#nreff 1
-#damage 7747 -- Serpent Aspirant
-#fatiguecost 1000
-#onlymnr 7808 -- Serpent Acolyte
-#onlyatsite 138  -- Imperial Capital
-#restricted 98 -- LA Pythium
-#end
-
-#selectspell 3144
-#copyspell 935 -- Pack of Wolves
-#name "Sacred Hatching"
-#descr "Deep in a swamp the caster locates a few Hydra hatchlings and binds them to his will. More powerful mages will be able to obtain more hatchlings. This spell can only be cast by a Serpent Priest."
-#researchlevel 2
-#path 1 2
-#pathlevel 1 1
-#nreff 1004
-#fatiguecost 600
-#damage 1859  -- Sacred Hydra Hatchling
-#onlygeosrc 32  -- Swamp
-#restricted 98 -- LA Pythium
-#onlymnr 761  -- Serpent Priest
-#end
-
-#selectspell 3145
-#copyspell 935 -- Pack of Wolves
-#name "Summon Sacred Hydra"
-#descr "Summons a Hydra."
-#researchlevel 0
-#school -1
-#pathlevel 0 2
-#path 1 2
-#pathlevel 1 1
-#nreff 1
-#fatiguecost 100
-#damage 1850  -- Sacred Hydra
-#onlygeosrc 32  -- Swamp
-#restricted 98 -- LA Pythium
-#end
-
-#selectspell 3146
-#copyspell 935 -- Pack of Wolves
-#name "Sacred Brood"
-#descr "Deep in a swamp the caster locates a Hydra along with its brood of hatchlings and binds them to his will. More powerful mages will be able to obtain more hatchlings. This spell can only be cast by a Serpent Priest."
-#researchlevel 4
-#pathlevel 0 2
-#path 1 2
-#pathlevel 1 1
-#nreff 1004
-#fatiguecost 1000
-#damage 1859  -- Sacred Hydra Hatchling
-#onlygeosrc 32  -- Swamp
-#restricted 98 -- LA Pythium
-#nextspell 3145
-#onlymnr 761  -- Serpent Priest
-#end
-
-#selectspell 3147
-#copyspell 936 -- Summon Horned Serpents
-#name "Summon Sacred Serpents"
-#descr "In the sacred swamp of the Serpent Cult great sacred snakes are bred. The largest are enormous, venomous serpents with thick scales. In times of war the sacred serpents are taken from the swamp and sent by the priests against the enemies of the faith. This spell can only be cast by a Serpent Priest."
-#path 1 9
-#pathlevel 0 2
-#pathlevel 1 1
-#fatiguecost 300
-#damage 7449 -- Sacred Serpents
-#onlyatsite 43  -- The Sacred Swamp
-#restricted 98 -- LA Pythium
-#onlymnr 761  -- Serpent Priest
-#end
-
-#selectspell 3148
-#copyspell 939 -- Summon Lesser Fire Elemental
-#name "Sticks to Snakes"
-#descr "The caster throws a bundle of sticks to the floor and through Divine power transforms them into venomous snakes. The snakes will attack the enemies of the caster and their bites bring deadly poison."
-#researchlevel 1
-#path 0 6
-#path 1 2
-#pathlevel 1 1
-#damage 6670 -- Venomous Snake
-#nreff 1010
-#sound 29
-#restricted 98 -- LA Pythium
-#end
-
-#selectspell 3149
-#copyspell 906
-#name "Serpent Curse"
-#descr "A group of enemies are transformed into venomous snakes. The power of the magic will cause the snakes to become enraged and they will attack friend and foe alike. Strong willed creatures may be able to resist the curse."
-#researchlevel 5
-#path 1 2
-#pathlevel 1 2
-#damage 6670
-#fatiguecost 100
-#restricted 98 -- LA Pythium
-#spec 1152921505153044480  -- MR Neg, Ignore Shields, No Effect on Mindless / Undead / Lifeless, Affects Enemies Only, UW OK, Extra Effect on Damage
-#end
-
-#selectspell 3150
-#copyspell 1282 -- Enrage
-#name "Enrage Serpent"
-#researchlevel 0
-#school -1
-#aoe 1
-#spec 281474976710656  -- Animals only
-#end
-
-#selectspell 3151
-#copyspell 1270 -- Fascination
-#name "Hypnotic Gaze"
-#descr "The serpent cult of Pythium instructs its members in many strange arts. One such is the power to hold enemies in place with only a look, as snakes are reputed to do to their prey. The target will be unable to act unless they are of strong will."
-#researchlevel 0
-#school 4
-#path 0 6
-#path 1 2
-#range 10
-#aoe 1
-#pathlevel 0 1
-#pathlevel 1 1
-#fatiguecost 0
-#restricted 98 -- LA Pythium
-#end
-
-#selectspell 3152
-#copyspell 250 -- Poison Touch
-#name "Snakebite"
-#descr "The caster points to a target who feels a sharp bite. The target will be poisoned, and armor will offer reduced protection from the bite."
-#researchlevel 0
-#school 2
-#path 0 6
-#path 1 2
-#pathlevel 0 1
-#pathlevel 1 1
-#range 25
-#fatiguecost 0
-#restricted 98 -- LA Pythium
-#end
-
-#selectspell 3153
-#name "Form of the Serpent"
-#descr "The priests of the Serpent Cult can take the form of sacred serpents in times of need. Whilst in Serpent form they will be tougher and stronger than usual, and can slither unseen into the abode of enemies. They will however be unable to wield weapons. The priest can turn back at any time but must perform the ritual again to transform back into serpent form. This spell can only be cast by a Serpent Priest."
-#school 1
-#researchlevel 2
-#path 0 6
-#pathlevel 0 1
-#effect 10130
-#nreff 1
-#damage 7765 -- Sacred Serpent
-#fatiguecost 400
-#onlymnr 761  -- Serpent Priest
-#restricted 98 -- LA Pythium
-#end
-
-#selectspell 3154
-#name "Form of the Divine Serpent"
-#descr "The priests of the Serpent Cult can take the form of sacred serpents in times of need. Whilst in Serpent form they can grant resistance to poison to nearby troops. The priest can turn back at any time but must perform the ritual again to transform back into serpent form. This spell can only be cast by a Serpent Priest."
-#school 1
-#researchlevel 4
-#path 0 6
-#pathlevel 0 2
-#effect 10130
-#nreff 1
-#damage 7766 -- Great Serpent
-#fatiguecost 600
-#onlymnr 761  -- Serpent Priest
-#restricted 98 -- LA Pythium
-#end
-
-#selectspell 3155
-#name "Establish Cult of Fertility"
-#descr "An Epoptes located in the capital can attempt to establish the Fertility Cult as the official church of the Empire. This will only be successful if there is currently no living Cult leader to oppose them and no other Aspirants in the capital. By performing this ritual they will declare their aspirations to convert the church to the Fertility Cult and assume the position of Archigallus. This spell can only be cast by an Epoptes in the Imperial Capital."
-#details "Conversion to a cult is instant in first game year, after this it will take 3 months during which the aspiring Cult leader must remain in the capital. Cult benefits remain until Cult Leader dies or changes form. Changing the national Cult may change recruitable commanders, sacred and fort recruits, plus certain spells are only castable by Cult mages"
-#researchlevel 0
-#school 5
-#path 0 6
-#pathlevel 0 1
-#effect 10130
-#nreff 1
-#damage 7748
-#fatiguecost 1000
-#onlymnr 1875  -- Epoptes
-#onlyatsite 138  -- Imperial Capital
-#restricted 98 -- LA Pythium
-#end
-
-#selectspell 3156
-#name "Claw of Cybele"
-#descr "The Claw of Cybele sends a servant of the Fertility Cult to kill a foreign enemy. This ritual can only be cast by the Galli of the Cult of Fertility."
-#effect 10050
-#school 0
-#researchlevel 6
-#damage 7763 -- Sacred Tiger
-#path 0 6
-#path 1 9
-#pathlevel 0 2
-#pathlevel 1 2
-#provrange 3
-#nogeodst 4
-#fatiguecost 500
-#restricted 98 -- LA Pythium
-#onlymnr 7732 -- Galli
-#end
-
-#selectspell 3157
-#copyspell 935 -- Pack of Wolves
-#name "Servants of the Great Mother"
-#descr "A Galli calls on the Great Mother to deliver her children to his service. Several servants loyal to the fertility cult will be drawn by the spell, however the caster has no control over what creatures answer the call."
-#researchlevel 2
-#path 1 9
-#pathlevel 1 1
-#nreff 503
-#damage -1036
-#fatiguecost 400
-#restricted 98 -- LA Pythium
-#onlymnr 7732 -- Galli
-#end
-
-#selectspell 3158
-#name "Become Beast"
-#descr "A Galli can perform certain rituals to take on the form of a great Lion. The priests of the Fertility cult often use this form to hunt down enemies of the cult and to infiltrate enemy lands under the guise of beasts. The Galli will retain their mind, however magic will be more difficult in their new form. They can transform back at any time, however must undergo the ritual again to gain this form once more."
-#school 1
-#researchlevel 4
-#path 0 6
-#pathlevel 0 2
-#path 1 9
-#pathlevel 1 2
-#effect 10130
-#nreff 1
-#damage 7767
-#fatiguecost 300
-#restricted 98 -- LA Pythium
-#onlymnr 7732 -- Galli
-#end
-
-#selectspell 3159
-#copyspell 935 -- Pack of Wolves
-#name "Herd of the Great Mother"
-#descr "A Galli calls on the Great Mother to deliver a great quantity of her children to his service. A herd of servants loyal to the fertility cult will be drawn by the spell, however the caster has no control over what creatures answer the call."
-#researchlevel 7
-#pathlevel 0 3
-#path 1 9
-#pathlevel 1 2
-#nreff 3016
-#damage -1036
-#fatiguecost 2500
-#restricted 98 -- LA Pythium
-#onlymnr 7732 -- Galli
-#end
-
-#selectspell 3160
-#name "Rebirth"
-#descr "The caster performs a divine ceremony of rebirth invoking the power of the Great Mother. In return they are cleansed of all infirmity and injury and their body is reborn as if it were new."
-#school 1
-#researchlevel 5
-#path 0 6
-#pathlevel 0 2
-#path 1 3
-#pathlevel 1 1
-#effect 10132  -- Cure Afflictions
-#nreff 1
-#damage 138646654979  -- All afflictions
-#fatiguecost 500
-#nextspell 1420 -- Rejuvenation
-#restricted 98
-#end
-
-#selectspell 3161
-#copyspell 1436 -- Rush of Strength
-#name "Power of the Magna Mater"
-#descr "The mage opens the minds of all friendly animals on the battlefield to the Magna Mater and imparts to them her strength. The units will receive increased strength for the remainder of the battle. This will have no effect on animals without a mind."
-#details "Grants Str +4"
-#school 4
-#researchlevel 6
-#path 0 6
-#path 1 3
-#pathlevel 1 2
-#fatiguecost 100
-#spec 281474989441152  -- Ignore Shields, AN, Friendlies Only, Use UW, Affects Animals Only, Mindless immune
-#restricted 98
-#end
-
-#selectspell 3162
-#name "Establish Cult of the Solar Bull"
-#descr "A Heliodromus located in the capital can attempt to establish the Cult of the Solar Bull as the official church of the Empire. This will only be successful if there is currently no living Cult leader to oppose them and no other Aspirants in the capital. By performing this ritual they will declare their intentions to convert the church to the Cult of the Solar Bull and assume the position of Heliopater. This spell can only be cast by a Heliodromus in the Imperial Capital."
-#details "Conversion to a cult is instant in first game year, after this it will take 3 months during which the aspiring Cult leader must remain in the capital. Cult benefits remain until Cult Leader dies or changes form. Changing the national Cult may change recruitable commanders, sacred and fort recruits, plus certain spells are only castable by Cult mages"
-#researchlevel 0
-#school 5
-#path 0 0
-#pathlevel 0 1
-#effect 10130
-#nreff 1
-#damage 7749
-#fatiguecost 1000
-#onlymnr 1873
-#onlyatsite 138  -- Imperial Capital
-#restricted 98 -- LA Pythium
-#end
-
-#selectspell 3163
-#name "Solar Embodiment"
-#descr "The rank of Leo brings with it solar inspiration and knowledge of certain ritual practices. The most sacred ritual allows the Leo to become the living embodiment of the Arimanius, a lion-headed protector spirit that is sacred to the Cult of the Solar Bull. This ritual can only be cast at the capital city by a Leo anointed as an official priest of Pythium. The change is irreversible, however the Leo will retain their mind and magical skills and may gain magical insights from the transformation."
-#school 1
-#researchlevel 4
-#path 0 0
-#pathlevel 0 1
-#path 1 9
-#pathlevel 1 1
-#effect 10130
-#nreff 1
-#damage 7758 -- Arimanius
-#fatiguecost 1200
-#polygetmagic 1
-#onlymnr 7740 -- Anointed Leo
-#restricted 98 -- LA Pythium
-#end
-
-#selectspell 3164
-#name "Solar Ascendancy"
-#descr "With this ritual a Leo that has undergone the Ritual of Embodiment can take on further qualities of the sacred Arimanius. The transformed Leo will become winged and will shine with the reflected light of the sun. In addition their magical skills may further increase."
-#school 1
-#researchlevel 6
-#path 0 0
-#pathlevel 0 1
-#path 1 9
-#pathlevel 1 1
-#effect 10130
-#nreff 1
-#damage 7759 -- Solar Arimanius
-#fatiguecost 1500
-#polygetmagic 1
-#onlymnr 7758 -- Arimanius
-#restricted 98 -- LA Pythium
-#end
-
-#selectspell 3165
-#name "Sunburn"
-#descr "This spell burns"
-#school -1
-#path 0 0
-#pathlevel 0 3
-#path 0 9
-#pathlevel 0 3
-#aoe 1
-#nreff 1
-#effect 2
-#damage 1
-#spec 541098144  -- Friendly Sacreds only, AN, No effect on lifeless
-#end
-
-#selectspell 3166
-#name "Power of the Bull"
-#descr "This spell makes them attack better and move faster"
-#school -1
-#path 0 0
-#pathlevel 0 3
-#path 0 9
-#pathlevel 0 3
-#effect 23
-#aoe 1
-#damage 33554432
-#spec 541098112  -- Friendly Sacreds only, AN, No effect on lifeless
-#nextspell 3165
-#end
-
-#selectspell 3167
-#name "Blessing of the Solar Bull"
-#descr "This spell grants a few sacred warriors the power of the Solar Bull. Their skin will begin to glow with the heat of the sun as they fight with the fury of a bull, improving their attack and movement. While others may also benefit, those who do not follow that aspect of the new god will find themselves burnt by its glory."
-#details "Targets are blessed, gain +4Att & +4AP however incur 3 Fire damage."
-#school 5
-#researchlevel 4
-#path 0 0
-#pathlevel 0 2
-#path 1 9
-#pathlevel 1 1
-#spec 541098112  -- Friendly Sacreds only, AN, No effect on lifeless
-#aoe 3004
-#range 10
-#fatiguecost 60
-#effect 10
-#damage 16384
-#restricted 98 -- LA Pythium
-#ainocast 1
-#nextspell 3166
-#end
-
-#selectspell 3168
-#name "Sunsear"
-#descr "This spell burns"
-#school -1
-#path 0 0
-#pathlevel 0 3
-#path 0 9
-#pathlevel 0 3
-#aoe 666
-#nreff 4
-#effect 2
-#damage 3
-#spec 541098144  -- Friendly Sacreds only, AN, No effect on lifeless
-#end
-
-#selectspell 3169
-#name "Might of the Bull"
-#descr "This spell makes them attack better and move faster"
-#school -1
-#path 0 0
-#pathlevel 0 3
-#path 0 9
-#pathlevel 0 3
-#effect 23
-#aoe 666
-#damage 33554432
-#spec 541098112  -- Friendly Sacreds only, AN, No effect on lifeless
-#nextspell 3168
-#end
-
-#selectspell 3170
-#name "Sol Invictus"
-#descr "This spell grants all sacred warriors on the battlefield the power of the Solar Bull. Their skin will begin to glow with the heat of the sun as they fight with the fury of a bull, improving their attack and movement. While others may also benefit, those who do not follow that aspect of the new god will find themselves burnt by its glory."
-#details "All friendly sacred warriors are blessed, gain +4Att & +4AP however incur 3 Fire damage."
-#school 5
-#researchlevel 7
-#path 0 0
-#pathlevel 0 2
-#path 1 9
-#pathlevel 1 2
-#spec 541098112  -- Friendly Sacreds only, AN, No effect on lifeless
-#aoe 666
-#range 0
-#fatiguecost 100
-#effect 10
-#damage 16384
-#restricted 98 -- LA Pythium
-#nextspell 3169
-#end
-
-#selectspell 3171
-#name "Renew the Theurgy"
-#descr "A Theurg located in the capital can attempt to re-establish the Theurgy as the official church of the Empire. This will only be successful if there is currently no living Cult leader to oppose them and no other Aspirants in the capital. By performing this ritual they will declare their intentions to convert the church to the Theurgy and assume the position of Patriarch. This spell can only be cast by a Theurg in the Imperial Capital."
-#details "Conversion to a cult is instant in first game year, after this it will take 3 months during which the aspiring Cult leader must remain in the capital. Cult benefits remain until Cult Leader dies or changes form. Changing the national Cult may change recruitable commanders, sacred and fort recruits, plus certain spells are only castable by Cult mages"
-#researchlevel 0
-#school 5
-#path 0 4
-#pathlevel 0 1
-#effect 10130
-#nreff 1
-#damage 7750
-#fatiguecost 1000
-#onlymnr 1874  -- Theurg
-#onlyatsite 138  -- Imperial Capital
-#restricted 98 -- LA Pythium
-#end
-
-#selectspell 3172
-#name "Summon Angel of the Host"
-#descr "The Arch Theurg contacts a heavenly Angel of the Host. The Angel has some skill in magic and is a armed with a flaming sword that will destroy demonic beings and the Undead. Only an Arch Theurg can cast this spell at the Temple of the Spheres"
-#school 0
-#researchlevel 4
-#effect 10021
-#path 0 4
-#pathlevel 0 3
-#path 1 9
-#pathlevel 1 2
-#nreff 1
-#damage 3870 -- Angel of the Host
-#fatiguecost 1500
-#onlymnr 7737 -- Arch Theurg
-#onlyatsite 139  -- Temple of the Spheres
-#restricted 98 -- LA Pythium
-#end
-
-#selectspell 3173
-#name "Wrath of the Heavens"
-#descr "This spell calls down an Angel of Fury from the heavens so he can aid the Pretender God in punishing all false Pretenders. Only an Arch Theurg can cast this spell at the Temple of the Spheres."
-#school 0
-#researchlevel 5
-#path 0 4
-#pathlevel 0 3
-#path 1 9
-#pathlevel 1 2
-#effect 10021
-#nreff 1
-#damage 1369  -- Angel of Fury
-#fatiguecost 2000
-#onlymnr 7737 -- Arch Theurg
-#onlyatsite 139  -- Temple of the Spheres
-#restricted 98 -- LA Pythium
-#end
-
-#selectspell 3174
-#name "Summon Harbinger"
-#descr "The Arch Theurg contacts a heavenly Harbinger. The Harbinger is a powerful angelic being armed with a heavenly horn that will blast undead beings with divine wrath. The angel is also skilled in Air magic and has priestly powers. Only an Arch Theurg can cast this spell at the Temple of the Spheres"
-#school 0
-#researchlevel 6
-#effect 10021
-#path 0 4
-#pathlevel 0 3
-#path 1 9
-#pathlevel 1 2
-#nreff 1
-#damage 464  -- Harbinger
-#fatiguecost 2500
-#onlymnr 7737 -- Arch Theurg
-#onlyatsite 139  -- Temple of the Spheres
-#restricted 98 -- LA Pythium
-#end
-
 #selectspell 3175
 #copyspell 273 -- Gift of the Sacred Swamp
 #name "Boon of the Sacred Swamp"
@@ -117011,7 +115891,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 0 5
 #pathlevel 0 2
 #effect 10001
-#nreff 3
+#nreff 5
 #damage 7712 -- Varangian Draugr
 #fatiguecost 1000
 #onlyatsite 138  -- Imperial Capital
@@ -128078,24 +126958,6 @@ This Grand Prayer is in the path of Blood, and may be extra potent depending on 
 #restricted 106 -- LA Caelum
 #end
 
-#selectspell 4046
-#name "Summon Basiliscus"
-#descr "The Basiliscus are specially trained and blessed drakes taken from the swamps of Pythia. They are kept by the Arch theurgs and allowed to drink the blessed holy water after each service. The holy water eventually causes a transformation in the body of the creatures, purifying their natural poisons and changing the colour of their skin. Instead of toxic venom they expel a jet of pure water that will blast and stun enemies, and causes great harm to undead and demonic creatures. The drakes are only found in the swamps of Pythia and cannot be raised elsewhere."
-#school 0
-#researchlevel 4
-#path 0 2
-#path 1 4
-#pathlevel 0 1
-#pathlevel 1 1
-#effect 10001
-#fatiguecost 400
-#damage 5780
-#nreff 1
-#onlymnr 5604 -- Arch Theurg
-#onlyatsite 43 -- Sacred Swamp
-#restricted 98 -- LA Pythium
-#end
-
 #selectspell 4047
 #copyspell 935 -- Pack of Wolves
 #name "Summon Basmu"
@@ -129660,6 +128522,101 @@ Applies the effects of Holy Avenger to the caster"
 #damage 35184372088832
 #spec 12664832  -- Friendlies only, Ignores shields, Airbreathers only, UWOK
 #restricted 88 -- MA Atlantis
+#end
+
+
+#selectspell 3144
+#copyspell 935 -- Pack of Wolves
+#name "Sacred Hatching"
+#descr "Deep in a swamp the caster locates a few Hydra hatchlings and binds them to his will. More powerful mages will be able to obtain more hatchlings. This spell can only be cast by a Serpent Priest."
+#researchlevel 2
+#path 1 2
+#pathlevel 1 1
+#nreff 1004
+#fatiguecost 600
+#damage 1859  -- Sacred Hydra Hatchling
+#onlygeosrc 32  -- Swamp
+#restricted 98 -- LA Pythium
+#onlymnr 761  -- Serpent Priest
+#end
+
+#selectspell 3145
+#copyspell 935 -- Pack of Wolves
+#name "Summon Sacred Hydra"
+#descr "Summons a Hydra."
+#researchlevel 0
+#school -1
+#pathlevel 0 2
+#path 1 2
+#pathlevel 1 1
+#nreff 1
+#fatiguecost 100
+#damage 1850  -- Sacred Hydra
+#onlygeosrc 32  -- Swamp
+#restricted 98 -- LA Pythium
+#end
+
+#selectspell 3146
+#copyspell 935 -- Pack of Wolves
+#name "Sacred Brood"
+#descr "Deep in a swamp the caster locates a Hydra along with its brood of hatchlings and binds them to his will. More powerful mages will be able to obtain more hatchlings. This spell can only be cast by a Serpent Priest."
+#researchlevel 4
+#pathlevel 0 2
+#path 1 2
+#pathlevel 1 1
+#nreff 1004
+#fatiguecost 1000
+#damage 1859  -- Sacred Hydra Hatchling
+#onlygeosrc 32  -- Swamp
+#restricted 98 -- LA Pythium
+#nextspell 3145
+#onlymnr 761  -- Serpent Priest
+#end
+
+#selectspell 3148
+#copyspell 939 -- Summon Lesser Fire Elemental
+#name "Sticks to Snakes"
+#descr "The caster throws a bundle of sticks to the floor and through Divine power transforms them into venomous snakes. The snakes will attack the enemies of the caster and their bites bring deadly poison."
+#researchlevel 1
+#path 0 6
+#path 1 2
+#pathlevel 1 1
+#damage 6670 -- Venomous Snake
+#nreff 1010
+#sound 29
+#restricted 98 -- LA Pythium
+#end
+
+
+#selectspell 3151
+#copyspell 1270 -- Fascination
+#name "Hypnotic Gaze"
+#descr "The serpent cult of Pythium instructs its members in many strange arts. One such is the power to hold enemies in place with only a look, as snakes are reputed to do to their prey. The target will be unable to act unless they are of strong will."
+#researchlevel 0
+#school 4
+#path 0 6
+#path 1 2
+#range 10
+#aoe 1
+#pathlevel 0 1
+#pathlevel 1 1
+#fatiguecost 0
+#restricted 98 -- LA Pythium
+#end
+
+#selectspell 3152
+#copyspell 250 -- Poison Touch
+#name "Snakebite"
+#descr "The caster points to a target who feels a sharp bite. The target will be poisoned, and armor will offer reduced protection from the bite."
+#researchlevel 0
+#school 2
+#path 0 6
+#path 1 2
+#pathlevel 0 1
+#pathlevel 1 1
+#range 25
+#fatiguecost 0
+#restricted 98 -- LA Pythium
 #end
 
 
