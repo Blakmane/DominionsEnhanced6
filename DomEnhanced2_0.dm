@@ -29123,40 +29123,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 156  -- Spectral Shield
 #end
 
-#newmonster 7532
-#copystats 69  -- Black Knight
-#cleararmor
-#clearweapons
-#spr1 "magicenhanced/eebrider.tga"
-#spr2 "magicenhanced/eebrider2.tga"
-#name "Black Rider"
-#descr "This was once a warrior of Ulm that has succumbed to vampirism during the Malediction. It now rides a ghoulish steed that has been fed with the blood of men. The Black Riders are feared throughout Ulm and beyond, their unholy lust for blood spoken of in hushed whispers. Like all vampires they are immortal unless their homeland is controlled by the enemy, however they cannot cross running water or enter the sea."
-#gcost 0
-#mr 15
-#mor 15
-#mapmove 3
-#enc 0
-#undead
-#immortal
-#slashres
-#bluntres
-#spiritsight
-#regeneration 10
-#neednoteat
-#noriverpass
-#uwdamage 150
-#fireres -5
-#coldres 15
-#poisonres 25
-#maxage 500
-#startage 200
-#invulnerable 25
-#okundeadleader
-#weapon 4  -- Lance
-#weapon 719  -- Life Drain
-#armor 3  -- Kite Shield
-#end
-
 #newmonster 7533
 #copystats 29  -- Light Infantry
 #clearweapons
@@ -93674,6 +93640,53 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 
+#newsite 2410
+#clear
+#name "LA Ulm Summons"
+#rarity 5
+#level 0
+#path 5
+#look 3
+#homemon 1224 -- wolf
+#homemon 694 -- bear
+#homemon 198 -- ghoul
+#homemon 1020 -- ghoul guard
+--#homemon 7532 -- vamp rider
+#homecom 7668 -- infiltrator
+#end
+
+#newsite 2411
+#clear
+#name "Vampire Counts"
+#rarity 5
+#level 0
+#path 8
+#look 5
+#homecom 1019
+#homecom 1035
+#homecom 3244
+#homecom 3245
+#homecom 3251
+#homecom 3252
+#homecom 3253
+#homecom 3255
+#end
+
+#newsite 2412
+#clear
+#name "LA Ulm Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 0
+#homecom 1021
+#homecom 1024
+#homecom 3125
+#homecom 3126
+#homecom 1035
+#end
+
+
 
 
 
@@ -99843,6 +99856,10 @@ Bless bonuses: Poison Resistance +10"
 #uwbuild 1
 #addgod 8451 -- Infernal Spirit
 #addgod 8499 -- Divine Anvil
+
+#futuresite "LA Ulm Summons"
+#futuresite "Vampire Counts"
+#futuresite "LA Ulm Heroes"
 #end
 
 #selectnation 103 -- LA Marignon
@@ -106197,7 +106214,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "Through careful application of Necromantic techniques the caster calls six Ghoul Guardians from their ruined keep. The Guardians so called will serve the caster to the best of their ability. This spell can only be cast at the Ruined Keep."
 #researchlevel 3
 #pathlevel 0 2
-#fatiguecost 600
+#fatiguecost 400
 #nreff 6
 #damage 1020  -- Ghoul Guardian
 #restricted 101 -- LA Ulm
@@ -106212,7 +106229,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #school 1
 #pathlevel 0 2
 #damage 198  -- Ghoul
-#nreff 2006
+#nreff 3010 -- 16+++
 #fatiguecost 300
 #spec 0
 #restricted 101 -- LA Ulm
@@ -106224,7 +106241,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "The caster enters a deep forest and summons a pack of Dire Wolves. These are larger and more ferocious than ordinary wolves and are common in the forests around Ulm."
 #researchlevel 3
 #pathlevel 0 2
-#fatiguecost 500
+#fatiguecost 400
 #damage 1224  -- Dire Wolf
 #onlygeosrc 128  -- Forest
 #restricted 101 -- LA Ulm
@@ -106268,20 +106285,9 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 3
 #damage 198  -- Ghoul
 #nreff 5085
-#fatiguecost 2000
+#fatiguecost 1500
 #spec 0
 #nextspell 1401 -- Blood Feast
-#restricted 101 -- LA Ulm
-#end
-
-#selectspell 2484
-#copyspell 1425 -- Blood Rite
-#name "Summon the Black Riders"
-#descr "The caster uses an offering of blood to tempt the fallen knights known as the Black Riders into service. During the Malediction some of the famed Black Knights of Ulm succumbed to vampirism and fed upon those they had sworn to protect. Now they ride the land on ghoulish steeds fed with the blood of men. Like all vampires, they are immortal within their masters Dominion, however they cannot cross running water or enter the sea."
-#researchlevel 6
-#fatiguecost 4400
-#nreff 505
-#damage 7532
 #restricted 101 -- LA Ulm
 #end
 
@@ -128618,8 +128624,6 @@ Applies the effects of Holy Avenger to the caster"
 #fatiguecost 0
 #restricted 98 -- LA Pythium
 #end
-
-
 
 
 -- END OF NEW SPELLS
