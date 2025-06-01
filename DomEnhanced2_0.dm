@@ -10686,7 +10686,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "nahullo/sitecahgiant.tga"
 #spr2 "nahullo/sitecahgiant2.tga"
 #rcost 1
-#gcost 10022
+#gcost 10020
 #rpcost 18
 #hp 24
 #prot 1
@@ -10716,7 +10716,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "nahullo/starnakewarrior.tga"
 #spr2 "nahullo/starnakewarrior2.tga"
 #rcost 1
-#gcost 10030
+#gcost 10025
 #rpcost 25
 #hp 28
 #prot 1
@@ -10793,7 +10793,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #slave
 #holy
 #douse 1
-#incunrest 5
+#incunrest 10
 #magicskill 8 1
 #custommagic 15488 100  -- 100% F/E/S/D/N
 #weapon 92  -- Fist
@@ -10821,6 +10821,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mapmove 18
 #ap 12
 #poorleader
+#okundeadleader
 #reanimator 1
 #makemonsters2 6767 -- Shilombish
 #batstartsum2 6767 -- Shilombish
@@ -10856,6 +10857,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #slaver 6753 -- Slave
 #slaverbonus -2
 #goodleader
+#okundeadleader
 #holy
 #taskmaster 2
 #maxage 150
@@ -10890,6 +10892,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #ap 14
 #holy
 #poorleader
+#okundeadleader
 #taskmaster 2
 #popkill 2
 #neednoteat
@@ -10929,6 +10932,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #ap 14
 #holy
 #expertleader
+#okundeadleader
 #slaver 6753 -- Slave
 #slaverbonus 2
 #taskmaster 2
@@ -10977,7 +10981,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "nahullo/kashehotapalo.tga"
 #spr2 "nahullo/kashehotapalo2.tga"
 #nametype 144
-#descr "A Kashehotapalo is a deer-like spirit creature with the body of a man. They live in the deep forests and often emerge to confuse hunters by scaring away game or disturbing animal tracks. They are skilled in the magic of the forests and are admired for their speed, skill and agility. They can cloak their appearance and cloud the minds of those nearby to escape detection or confuse attackers. Kashehotapalo are sacred to the people of Sitecah"
+#descr "A Kashehotapalo is a deer-like spirit creature with the body of a man. They live in the deep forests and often emerge to confuse hunters by scaring away game or disturbing animal tracks. They are skilled in the magic of the forests and are admired for their speed, skill and agility. They can cloak their appearance and cloud the minds of those nearby to escape detection or confuse attackers. Kashehotapalo are sacred."
 #gcost 0
 #hp 22
 #def 14
@@ -10985,8 +10989,11 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mor 16
 #glamour
 #holy
-#magicskill 3 1
-#magicskill 6 2
+--#magicskill 3 1
+#magicskill 6 1
+#magicskill 7 1
+#custommagic 25856 100 -- AENG
+#custommagic 25856 100 -- AENG
 #end
 
 #newmonster 6773
@@ -11101,8 +11108,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #def 12
 #ap 12
 #magicskill 6 3
-#custommagic 5632 100  -- 100% W/E/D
-#custommagic 5632 100  -- 100% W/E/D
+#custommagic 22016 100  -- 100% W/E/D
+#custommagic 22016 100  -- 100% W/E/D
 #autodishealer 3
 #fireres -5
 #spiritsight
@@ -13487,7 +13494,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #female
 #magicskill 1 1
 #magicskill 5 1
-#custommagic 12544 100  -- 100% ADN
+#custommagic 28928 100  -- 100% ADNG
 #spiritsight
 #stealthy 0
 #forestsurvival
@@ -13518,7 +13525,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #female
 #magicskill 4 1
 #magicskill 5 1
-#custommagic 14336 100  -- 100% SDN
+#custommagic 30720 100  -- 100% SDNG
 #spiritsight
 #stealthy 0
 #holy
@@ -93400,15 +93407,17 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 6635 -- nirumb archer
 #homemon 6636 -- thunder warrior
 #homemon 6639 -- stone giant
---#homecom 6633 -- nirumb chief
-#homecom 6646 -- prim beaver
-#homecom 6643 -- prim deer
-#homecom 6645 -- prim wolf
-#homecom 6834 -- prim eagle
-#homecom 6833 -- prim bear
+#homecom 6633 -- nirumb chief
+--#homecom 6646 -- prim beaver
+--#homecom 6643 -- prim deer
+--#homecom 6645 -- prim wolf
+--#homecom 6834 -- prim eagle
+--#homecom 6833 -- prim bear
 #homecom 6640 -- deer woman
+#homecom 6772 -- kashehotapalo
 #homecom 6630 -- thunder bird
 #homecom 6632 -- flying head
+#homecom 6777 -- bohpoli
 #homecom 6647 -- coyote
 #homecom 6637 -- spider grandma
 #end
@@ -94045,6 +94054,69 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 586
 #homecom 1382
 #homecom 8154
+#end
+
+#newsite 2417
+#clear
+#name "Primordial Animals"
+#rarity 5
+#level 0
+#path 6
+#look 4
+#homecom 6646 -- prim beaver
+#homecom 6643 -- prim deer
+#homecom 6645 -- prim wolf
+#homecom 6834 -- prim eagle
+#homecom 6833 -- prim bear
+#end
+
+#newsite 2418
+#name "EA Sitecah Summons"
+#level 0
+#rarity 5
+#path 8
+#look 2
+#homemon 6767 -- shilom
+#homemon 6831 -- bison
+#homemon 6631 -- w panther
+#homemon 6634 -- nirum bers
+#homemon 6635 -- nirum archer
+#homemon 6639 -- stone giant
+#homemon 6776 -- hashok / heart
+#homemon 6773 -- ishk
+#homemon 6774 -- nalusa
+#end
+
+#newsite 2419
+#name "EA Sitecah Summons Continued"
+#level 0
+#rarity 5
+#path 8
+#look 2
+#homecom 6633 -- nirum chief
+#homecom 6640 -- deer woman
+#homecom 6772 -- kasheh
+#homecom 6771 -- hoklon
+#homecom 6775 -- nalusa fal
+#homecom 6777 -- bohpo
+#homecom 6871 -- crow w
+#homecom 6872 -- owl w
+#homecom 6630 -- flying head
+#homecom 6630 -- thunderbird
+#homecom 6643 -- prim deer
+#homecom 6645 -- prim woof
+#homecom 6833 -- prim bear
+#end
+
+#newsite 2420
+#name "EA Sitecah Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 3
+#homecom 6847
+#homecom 6873
+#homecom 6874
 #end
 
 
@@ -96027,7 +96099,7 @@ Priests: Strong"
 #descr "Sitecah is a nation of human tribes enslaved by pale skinned cannnibalistic giants. Many moons ago a group of Avvim fleeing the tyranny of the Rephaim arrived on the shores of a new land. After conquering the local tribes they instituted a Blood Cult in imitation of the Melqarts. Now they rule over the humans using their superior strength and skill at arms. Captives and those that displease their rulers are devoured in bloody rituals aping the foul appetites of the Rephaim. Some of the humans are given limited authority to rule over their fellows, and shamen skilled in dark magic pledge allegiance to their bloody overlords. The giants have retained much of their skill at war and weapon mastery and their armies are well equipped."
 #summary "Race: Humans and Giants. Prefers Heat Scale +1
 Military: Giants, Light infantry and archers, sacred Starnake giant warriors and powerful sacred summons.
-Magic: Strong Blood and Earth, some Nature and Death.
+Magic: Strong Blood and Earth, some Fire, Nature, Astral, and Death.
 Priests: Strong, can Blood Sacrifice"
 #brief "Sitecah is a tribal nation of humans ruled by cannibal giants. Their giant warriors are well armed and armored and their mages are skilled in Blood magic."
 #color 0.9 0.1 0.1
@@ -96039,6 +96111,11 @@ Priests: Strong, can Blood Sacrifice"
 #sacrificedom
 #startsite "Starnake Temple"
 #startsite "Nanih Waiya"
+
+#futuresite "EA Sitecah Summons"
+#futuresite "EA Sitecah Summons Continued"
+#futuresite "EA Sitecah Heroes"
+
 #templepic 28  -- Ziggurat
 #aibloodnation
 #ainaturenation
@@ -97426,6 +97503,7 @@ Priests: Average, can cure disease"
 
 #futuresite "White Shell Riders"
 #futuresite "MA Nihuala Summons"
+#futuresite "Primordial Animals"
 #futuresite "MA Nihuala Heroes"
 
 #likesterr 0  -- Plains
@@ -121037,11 +121115,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #end
 
 #selectspell 3527
-#restricted 182 -- MA Ongtupqa
-#restricted 183 -- LA Ongtupqa
-#restricted 198 -- EA Nihuala
-#restricted 199 -- MA Nihuala
-#restricted 200 -- LA Nihuala
 #name "Summon Primordial Eagle"
 #descr "Summons an ancient eagle spirit. They are massive in size and tremendously majestic creatures of the air. In combat the eagle will beat its wings to create a howling windstorm that will prevent flight and blow arrows off their course, however the eagle will be unaffected. Primordial Eagles are sacred."
 #school 0  -- Conjuration
@@ -121052,6 +121125,12 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #damage 6834
 #nreff 1
 #fatiguecost 2500  -- 25 gems
+#restricted 182 -- MA Ongtupqa
+#restricted 183 -- LA Ongtupqa
+#restricted 198 -- EA Nihuala
+#restricted 199 -- MA Nihuala
+#restricted 200 -- LA Nihuala
+#restricted 184 -- Sitecah
 #end
 
 #selectspell 3528
@@ -121413,9 +121492,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #end
 
 #selectspell 3551
-#restricted 198 -- EA Nihuala
-#restricted 199 -- MA Nihuala
-#restricted 200 -- LA Nihuala
 #name "Summon Water Panthers"
 #descr "Summons a small number of Water Panthers. Water Panthers are large, aquatic cats that dwell in lakes and prey on travelers. They have copper tails, antlers protruding from their foreheads, and sharp, razor-like spikes along their back."
 #school 0  -- Conjuration
@@ -121427,6 +121503,10 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #nreff 1006 -- 8+
 #fatiguecost 700
 #spec 8388608  -- Underwater OK
+#restricted 198 -- EA Nihuala
+#restricted 199 -- MA Nihuala
+#restricted 200 -- LA Nihuala
+#restricted 184 -- Sitecah
 #end
 
 #selectspell 3552
@@ -121464,9 +121544,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #end
 
 #selectspell 3555
-#restricted 198 -- EA Nihuala
-#restricted 199 -- MA Nihuala
-#restricted 200 -- LA Nihuala
 #name "Dance of the Mountain People"
 #descr "The mage waits until the evening of the new moon and begins a dance at the darkest point of night. This ritual attracts the attention of a diminuitive Nirumbee Chief, who will arrive to aid the caster along with a cadre of warriors. Chiefs are skilled commanders, berserkers brandish greatclubs, and archers wield poison bows. Despite their size, Nirumbee are ferocious warriors, stronger and tougher than most men."
 #school 4  -- Enchantment
@@ -121481,6 +121558,10 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #nextspell 3554
 #fatiguecost 2500  -- 25 gems
 #onlygeosrc 8388624  -- Highland or Mountain
+#restricted 198 -- EA Nihuala
+#restricted 199 -- MA Nihuala
+#restricted 200 -- LA Nihuala
+#restricted 184 -- Sitecah
 #end
 
 #selectspell 3556
@@ -121519,9 +121600,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #end
 
 #selectspell 3558
-#restricted 198 -- EA Nihuala
-#restricted 199 -- MA Nihuala
-#restricted 200 -- LA Nihuala
 #name "Summon Stone Giants"
 #descr "The caster summons a few Stone Giants. Stone giants are huge, cruel humanoids who delight in smashing smaller creatures with their clubs. Their stony hide makes them almost impervious to damage."
 #school 0  -- Conjuration
@@ -121532,11 +121610,13 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #damage 6639
 #nreff 503 -- 3+1/2
 #fatiguecost 700
+#restricted 198 -- EA Nihuala
+#restricted 199 -- MA Nihuala
+#restricted 200 -- LA Nihuala
+#restricted 184 -- Sitecah
 #end
 
 #selectspell 3559
-#restricted 198 -- EA Nihuala
-#restricted 199 -- MA Nihuala
 #name "Summon Deer Woman"
 #descr "Summons a deer woman, a nature spirit of fertility and love. They take the form of a beautiful woman or doe, and are capable of seducing enemy commanders. They have skill in nature magic, and occasionally water or earth. Deer women are sacred."
 #school 0  -- Conjuration
@@ -121547,6 +121627,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #damage 6640
 #nreff 1
 #fatiguecost 1200
+#restricted 198 -- EA Nihuala
+#restricted 199 -- MA Nihuala
+#restricted 184 -- Sitecah
 #end
 
 #selectspell 3560
@@ -121704,6 +121787,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Summon Host of Shilombish"
 #descr "The caster summons a host of Shilombish. In Sitecah the soul is composed of two parts - the Shilup, or inner soul, and the Shilombish or outer soul. When a person dies their Shilup proceeds to the afterlife, however their Shilombish remains until released by a shaman. Unscrupulous shamen can instead compel the Shilombish to serve them, and with the coming of the white giants there is no shortage of these lost souls. Their touch can paralyze living beings."
 #researchlevel 4
+#fatiguecost 300
 #damage 6767
 #restricted 184 -- Sitecah
 #end
@@ -121723,11 +121807,13 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 1024 -- Awaken Sleeper
 #name "Call Kashehotapalo"
 #descr "The caster travels to a deep forest and calls a Kashehotapalo to serve them. A Kashehotapalo is a deer-like spirit creature with the body of a man. They are skilled in the magic of the forests and are admired for their speed, skill and agility."
-#pathlevel 0 3
-#fatiguecost 1600
+#pathlevel 0 7 -- G
+#fatiguecost 2000
 #damage 6772
 #onlygeosrc 128  -- Forest
 #restricted 184 -- Sitecah
+#restricted 198 -- EA Nihuala
+#restricted 199 -- MA Nihuala
 #end
 
 #selectspell 3572
@@ -121761,38 +121847,42 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Call Bohpoli"
 #descr "The caster travels to a deep forest and calls a Bohpoli to serve them. Bohpoli are small nature spirits who dwell alone in the thick, dark woods. They are strong in the magic of nature and have a great affinity for plants that will reach out to ensnare those that try to strike the Bohpoli. They are skilled in herb lore and can cure maladies of all kinds."
 #researchlevel 6
+#path 0 6 -- N
 #fatiguecost 2800
 #damage 6777
-#restricted 184 -- Sitecah
 #onlygeosrc 128  -- Forest
+#restricted 198 -- EA Nihuala
+#restricted 199 -- MA Nihuala
+#restricted 200 -- LA Nihuala
+#restricted 184 -- Sitecah
 #end
 
 #selectspell 3575
 #copyspell 935 -- Pack of Wolves
-#name "Bind Demon Owl"
-#descr "The caster travels to a deep forest and performs a foul ritual of blood sacrifice to summon a Demon Owl. Ishkitini are demon owls that inhabit the forests of Sitecah, where they prowl about at night killing men and animals. Ishkitini are sacred to the people of Sitecah."
+#name "Bind Demon Owls"
+#descr "The caster travels to a deep forest and performs a foul ritual of blood sacrifice to summon a few Demon Owls. Ishkitini are demon owls that inhabit the forests of Sitecah, where they prowl about at night killing men and animals. Ishkitini are sacred to the people of Sitecah."
 #school 6  -- Blood
 #researchlevel 3
 #path 0 8
-#fatiguecost 500
+#fatiguecost 1500
 #damage 6773
-#nreff 1
+#nreff 504
 #restricted 184 -- Sitecah
 #onlygeosrc 128  -- Forest
 #end
 
 #selectspell 3576
 #copyspell 935 -- Pack of Wolves
-#name "Bind Demon Owls"
-#descr "The caster travels to a deep forest and performs a foul ritual of blood sacrifice to summon several Demon Owls. Ishkitini are demon owls that inhabit the forests of Sitecah, where they prowl about at night killing men and animals. Ishkitini are sacred to the people of Sitecah."
+#name "Stare of Demon Owls"
+#descr "The caster travels to a deep forest and performs a foul ritual of blood sacrifice to summon a stare of Demon Owls. Ishkitini are demon owls that inhabit the forests of Sitecah, where they prowl about at night killing men and animals. Ishkitini are sacred to the people of Sitecah."
 #school 6  -- Blood
 #researchlevel 5
 #path 0 8
 #path 1 6
 #pathlevel 1 1
-#fatiguecost 1400
+#fatiguecost 2700
 #damage 6773
-#nreff 503
+#nreff 1007 -- 8+
 #restricted 184 -- Sitecah
 #onlygeosrc 128  -- Forest
 #end
@@ -121806,7 +121896,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 0 8
 #path 1 5
 #pathlevel 1 1
-#fatiguecost 600
+#fatiguecost 400
 #damage 6774
 #nreff 1
 #restricted 184 -- Sitecah
@@ -121831,17 +121921,17 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 3579
 #copyspell 935 -- Pack of Wolves
-#name "Bind Demon Heart"
-#descr "The caster performs a blood sacrifice in a fetid swamp to bind a Hashok Okwa Hui'ga. A Hashok Okwa Hu'iga is a demonic being that lurks around the swamps of Sitecah. It appears as a floating heart, which can be seen faintly illuminated in darkness. The sight of the being will strike fear into the hearts of men, and it is said that seeing it hypnotises the viewer into inaction. The heart will be hard to hit in combat and only the strong willed will be able to strike at it."
+#name "Bind Demon Hearts"
+#descr "The caster performs a blood sacrifice in a fetid swamp to bind a few Hashok Okwa Hui'ga. A Hashok Okwa Hu'iga is a demonic being that lurks around the swamps of Sitecah. It appears as a floating heart, which can be seen faintly illuminated in darkness. The sight of the being will strike fear into the hearts of men, and it is said that seeing it hypnotises the viewer into inaction. The heart will be hard to hit in combat and only the strong willed will be able to strike at it."
 #school 6  -- Blood
 #researchlevel 4
 #path 0 8
 #pathlevel 0 2
 #path 1 5
 #pathlevel 1 1
-#fatiguecost 1500
+#fatiguecost 3300
 #damage 6776
-#nreff 1
+#nreff 506
 #restricted 184 -- Sitecah
 #onlygeosrc 32  -- Swamp
 #end
@@ -121856,7 +121946,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 5
 #path 1 5
 #pathlevel 1 1
-#fatiguecost 4500
+#fatiguecost 3800
 #damage 6774
 #nreff 1005
 #restricted 184 -- Sitecah
@@ -128537,9 +128627,6 @@ Animals only: Protective Force 20"
 
 
 #selectspell 4130 -- stone giant commander
-#restricted 198 -- EA Nihuala
-#restricted 199 -- MA Nihuala
-#restricted 200 -- LA Nihuala
 #name "Stone Giant Leader"
 #descr "Summons a stone giant to fight for the awakening god. Stone giants are huge, cruel humanoids who delight in smashing smaller creatures with their clubs. Their stony hide makes them almost impervious to damage."
 #school -1
@@ -128551,9 +128638,6 @@ Animals only: Protective Force 20"
 #end
 
 #selectspell 4131 -- stone giant tribe
-#restricted 198 -- EA Nihuala
-#restricted 199 -- MA Nihuala
-#restricted 200 -- LA Nihuala
 #name "Summon Stone Giant Tribe"
 #descr "The caster summons a tribe of Stone Giants. Stone giants are huge, cruel humanoids who delight in smashing smaller creatures with their clubs. Their stony hide makes them almost impervious to damage."
 #school 0  -- Conjuration
@@ -128565,6 +128649,10 @@ Animals only: Protective Force 20"
 #nreff 508 -- 8+1/2
 #fatiguecost 2200
 #nextspell 4130
+#restricted 198 -- EA Nihuala
+#restricted 199 -- MA Nihuala
+#restricted 200 -- LA Nihuala
+#restricted 184 -- Sitecah
 #end
 
 #selectspell 4132 -- polymorph
