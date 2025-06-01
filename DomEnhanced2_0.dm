@@ -1151,12 +1151,6 @@
 #secondaryeffectalways 1584
 #end
 
-#newweapon 1586
-#copyweapon 86  -- Mind Blast
-#name "Great Mind Blast"
-#aoe 1
-#end
-
 #newweapon 1587
 #name "Holy Flame Strike"
 #len 3
@@ -3285,6 +3279,19 @@
 #secondaryeffect 1840
 #end
 
+#newweapon 1842 -- Elite 'Troop' Mind Blast
+#copyweapon 86 -- 'Commander' Mind Blast
+#nratt -2
+#dt_aff
+#mrnegates
+#magic
+#bonus
+#dmg 68719476736 -- slow affliction
+#secondaryeffectalways 1830 -- mind blast stun
+#range0
+#ammo 1003
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -3311,7 +3318,19 @@
 --#secondaryeffectalways 1830
 #end
 
-#selectweapon 311  -- Mind Blast stun -> slow
+#selectweapon 86  -- 'Commander' Mind Blast stun -> slow
+--#nratt -2
+#dt_aff
+#mrnegates
+#magic
+#bonus
+#dmg 68719476736 -- slow affliction
+#secondaryeffectalways 1830 -- mind blast stun
+#range0
+#ammo 1003
+#end
+
+#selectweapon 311  -- 'Troop' Mind Blast stun -> slow
 #nratt -2
 #dt_aff
 #mrnegates
@@ -3320,6 +3339,20 @@
 #dmg 68719476736 -- slow affliction
 #secondaryeffectalways 1830 -- mind blast stun
 #end
+
+#selectweapon 839  -- 'Pretender' Mind Blast stun -> slow
+#name "Great Mind Blast"
+#nratt 3
+#dt_aff
+#mrnegates
+#magic
+#bonus
+#dmg 68719476736 -- slow affliction
+#secondaryeffectalways 1830 -- mind blast stun
+#range0
+#ammo 1003
+#end
+
 -- End Mind Blast Changes
 
 #selectweapon 106  -- Sword of Swiftness
@@ -25845,7 +25878,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #domsummon -1020  -- Void Beings
 #onebattlespell 739 -- Wailing Winds
 #weapon 33  -- Claws
-#weapon 1586 -- Great Mind Blast
+#weapon 839 -- Pretender Mind Blast
 #weapon 636  -- Life Draining Tentacle
 #end
 
@@ -35379,7 +35412,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #poorundeadleader
 #onebattlespell 739 -- Wailing Winds
 #weapon 33  -- Claws
-#weapon 1586 -- Great Mind Blast
+#weapon 839 -- Pretender Mind Blast
 #weapon 636  -- Life Draining Tentacle
 #end
 
@@ -56370,6 +56403,243 @@ Cannot be recruited until Break the Deadlock is cast."
 
 
 
+-- Pale One reinvigoration and strength:
+
+
+#selectmonster 1452 -- Pale One Militia
+#str 13 -- 12 -> 13
+#end
+
+#selectmonster 1453 -- Pale One Warrior
+#str 13 -- 12 -> 13
+#end
+
+#selectmonster 1460 -- Earth Reader
+#str 13 -- 12 -> 13
+#end
+
+#selectmonster 1464 -- Pale One Warrior
+#str 13 -- 12 -> 13
+#end
+
+#selectmonster 1465 -- Pale One
+#str 13 -- 12 -> 13
+#end
+
+#selectmonster 1472 -- Pale One Soldier
+#str 13 -- 12 -> 13
+#end
+
+#selectmonster 1489 -- Wet One
+#str 13 -- 12 -> 13
+#end
+
+#selectmonster 1491 -- Wet One
+#str 13 -- 12 -> 13
+#end
+
+#selectmonster 1635 -- Wet One
+#str 13 -- 12 -> 13
+#end
+
+#selectmonster 1636 -- Wet One
+#str 13 -- 12 -> 13
+#end
+
+#selectmonster 1637 -- Wet One Captain
+#str 13 -- 12 -> 13
+#end
+
+#selectmonster 1638 -- Wet One Captain
+#str 13 -- 12 -> 13
+#end
+
+#selectmonster 2491 -- Engraver
+#str 13 -- 12 -> 13
+#end
+
+#selectmonster 1462 -- Cavern Guard
+#str 14 -- 13 -> 14
+#end
+
+#selectmonster 1463 -- Pale One Commander
+#str 14 -- 13 -> 14
+#end
+
+#selectmonster 1466 -- Pale One Scout
+#str 14 -- 13 -> 14
+#end
+
+#selectmonster 1471 -- Pale One Captain
+#str 14 -- 13 -> 14
+#end
+
+
+
+#selectmonster 1452 -- Pale One Militia
+#reinvigoration 1
+#end
+
+#selectmonster 1453 -- Pale One Warrior
+#reinvigoration 1
+#end
+
+#selectmonster 1454 -- Unused Ancient One
+#reinvigoration 1
+#end
+
+#selectmonster 1455 -- Ancient Wet One
+#reinvigoration 1
+#end
+
+#selectmonster 1456 -- Seal Guard
+#reinvigoration 1
+#end
+
+#selectmonster 1457 -- Oracle of Subterranean Waters
+#reinvigoration 1
+#end
+
+#selectmonster 1458 -- Earth-Blooded
+#reinvigoration 1
+#end
+
+#selectmonster 1459 -- Oracle of the Ancients
+#reinvigoration 1
+#end
+
+#selectmonster 1460 -- Earth Reader
+#reinvigoration 1
+#end
+
+#selectmonster 1462 -- Cavern Guard
+#reinvigoration 1
+#end
+
+#selectmonster 1463 -- Pale One Commander
+#reinvigoration 1
+#end
+
+#selectmonster 1464 -- Pale One Warrior
+#reinvigoration 1
+#end
+
+#selectmonster 1465 -- Pale One
+#reinvigoration 1
+#end
+
+#selectmonster 1466 -- Pale One Scout
+#reinvigoration 1
+#end
+
+#selectmonster 1467 -- Oracle of Subterranean Fires
+#reinvigoration 1
+#end
+
+#selectmonster 1468 -- Oracle of the Dead
+#reinvigoration 1
+#end
+
+#selectmonster 1469 -- Ancient One
+#reinvigoration 1
+#end
+
+#selectmonster 1470 -- Ancient Lord
+#reinvigoration 1
+#end
+
+#selectmonster 1471 -- Pale One Captain
+#reinvigoration 1
+#end
+
+#selectmonster 1472 -- Pale One Soldier
+#reinvigoration 1
+#end
+
+#selectmonster 1488 -- Ancient Stone Hurler
+#reinvigoration 1
+#end
+
+#selectmonster 1489 -- Wet One
+#reinvigoration 1
+#end
+
+#selectmonster 1491 -- Wet One
+#reinvigoration 1
+#end
+
+#selectmonster 1495 -- Ancient Stone Hurler
+#reinvigoration 1
+#end
+
+#selectmonster 1635 -- Wet One
+#reinvigoration 1
+#end
+
+#selectmonster 1636 -- Wet One
+#reinvigoration 1
+#end
+
+#selectmonster 1637 -- Wet One Captain
+#reinvigoration 1
+#end
+
+#selectmonster 1638 -- Wet One Captain
+#reinvigoration 1
+#end
+
+#selectmonster 1847 -- Decrepit
+#reinvigoration 1
+#end
+
+#selectmonster 2188 -- Ancient One
+#reinvigoration 1
+#end
+
+#selectmonster 2189 -- Ancient Stone Hurler
+#reinvigoration 1
+#end
+
+#selectmonster 2489 -- Ancient Wet One
+#reinvigoration 1
+#end
+
+#selectmonster 2490 -- Ancient Wet One
+#reinvigoration 1
+#end
+
+#selectmonster 2491 -- Engraver
+#reinvigoration 1
+#end
+
+#selectmonster 2494 -- Member of the Closed Council
+#reinvigoration 1
+#end
+
+#selectmonster 2495 -- Member of the Closed Council
+#reinvigoration 1
+#end
+
+#selectmonster 2496 -- Member of the Closed Council
+#reinvigoration 1
+#end
+
+#selectmonster 2502 -- Earth made Flesh
+#reinvigoration 1
+#end
+
+#selectmonster 2506 -- Ancient Lord
+#reinvigoration 1
+#end
+
+#selectmonster 2955 -- Leader of the Closed Council
+#reinvigoration 1
+#end
+
+
+
+
+
 -- Mount armor additions:
 
 
@@ -75268,6 +75538,13 @@ Initiates of the Deep can be recruited in any land fort."
 #montag 1061
 #end
 
+#selectmonster 331  -- Illithid
+#clearweapons
+#weapon 1842 -- 'Elite Troop' Mind Blast
+#weapon 63 -- life drain
+#gcost 10040
+#end
+
 #selectmonster 342  -- Moon Mage
 #enchrebate50 274 -- Ench74  -- Lunar Potency
 #end
@@ -75467,6 +75744,12 @@ Initiates of the Deep can be recruited in any land fort."
 #custommagic 4096 50  -- 50%D
 #end
 
+
+#selectmonster 407  -- Illithid Soldier
+#clearweapons
+#weapon 1842 -- 'Elite Troop' Mind Blast
+#weapon 642 -- Meteorite Trident
+#end
 
 #selectmonster 414  -- Wingless
 #iceprot 1
@@ -77715,6 +77998,10 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
 #montag 1048
+#clearweapons
+#weapon 1842 -- 'Elite Troop' Mind Blast
+#weapon 85 -- Tentacle
+#weapon 85 -- Tentacle
 #end
 
 #selectmonster 1405  -- Buel
@@ -93686,6 +93973,39 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 1035
 #end
 
+#newsite 2413
+#clear
+#name "EA Agartha Summons"
+#rarity 5
+#level 0
+#path 3
+#look 8
+#homemon 640 -- magma kid
+#homemon 2497 -- penumbral
+#homemon 1490 -- umbral
+#homemon 1501 -- cavern wight
+#homemon 3741 -- earth ele s6
+#homemon 3762 -- mercury
+#homecom 7277 -- giant olm
+#homecom 7710 -- kur
+#end
+
+#newsite 2414
+#clear
+#name "EA Agartha Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 6
+#homecom 1772
+#homecom 1458
+#homecom 1678
+#homecom 2494
+#homecom 2495
+#homecom 2496
+#homecom 8145
+#end
+
 
 
 
@@ -98446,6 +98766,9 @@ Priests: Average"
 
 #caverec 2492 -- Great Olm
 #cavecom 2493 -- olm sage
+
+#futuresite "EA Agartha Summons"
+#futuresite "EA Agartha Heroes"
 
 #end
 
@@ -129431,6 +129754,20 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 598 -- Kitsune
 #fatiguecost 2500
+#end
+
+#selectspell 600 -- Bind Penumbral
+#name "Bind Penumbrals"
+#descr "An Oracle of the Dead ventures down to the deeper reaches of Agartha and the Chamber of the Seal to summon and bind a few Penumbrals. Penumbrals are shadow beings resembling Pale Ones with elongated faces and drooling mouths. Agarthan legends claim that they are the souls of those who sacrificed themselves to seal the Chamber. The disturbing fact that they have become more numerous has led some to believe that the Seal is weakening."
+#fatiguecost 300
+#nreff 3
+#end
+
+#selectspell 606 -- Bind Umbral
+#name "Bind Umbrals"
+#descr "An Oracle of the Dead ventures down to the deeper reaches of Agartha and the Chamber of the Seal to summon and bind a pair of Umbrals. Umbrals are shadow beings resembling ancient Pale Ones with elongated faces and drooling mouths. Agarthan legends claim that they are the souls of those who sacrificed themselves to seal the Chamber. The disturbing fact that the Umbrals have become more numerous has led some to believe that the Seal is weakening."
+#fatiguecost 300
+#nreff 2
 #end
 
 #selectspell 601 -- Penumbrals
