@@ -3292,6 +3292,14 @@
 #ammo 1003
 #end
 
+#newweapon 1843 -- Rime Axe
+#copyweapon 37 -- Ice Blade
+#name "Rime Axe"
+#rcost 2
+#dmg 8
+#def -1
+#att 0
+#end
 
 -- END OF NEW WEAPONS
 
@@ -76922,6 +76930,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 845  -- Niefel Giant
 #mountainsurvival
+#clearweapons
+#weapon 1843 -- Rime Axe
 #end
 
 #selectmonster 846  -- Galderman
@@ -80609,6 +80619,8 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 
 #selectmonster 3420  -- Rimvaetti summon
 #mountainsurvival
+#clearweapons
+#weapon 1843 -- Rime Axe
 #end
 
 #selectmonster 3425  -- Dwarf
@@ -94006,6 +94018,35 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8145
 #end
 
+#newsite 2415
+#name "EA Niefelheim Summons"
+#level 0
+#rarity 5
+#path 2
+#look 4
+#homemon 694 -- bear
+#homemon 1309 -- jotun wolf
+#homemon 3193 -- jotun draug
+#homemon 3420 -- rimvaetti
+#homemon 3747 -- ice ele s8
+#homecom 7297 -- son of mim
+#homecom 3425 -- dwarf
+#homecom 3426 -- dwarf
+#homecom 3427 -- dwarf
+#homecom 3428 -- dwarf
+#end
+
+#newsite 2416
+#name "EA Niefelheim Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 3
+#homecom 586
+#homecom 1382
+#homecom 8154
+#end
+
 
 
 
@@ -98833,6 +98874,8 @@ Priests: Average"
 #uwbuild 1
 #delgod 2791  -- Earth Serpent
 #cheapgod20 8459 -- Icon of Winter
+#futuresite "EA Niefelheim Summons"
+#futuresite "EA Niefelheim Heroes"
 #end
 
 #selectnation 34 -- EA Muspelheim
@@ -129561,6 +129604,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 497 -- Jotun Draugar
 #fatiguecost 900
 #nreff 503
+#end
+
+#selectspell 498 -- Summon Rimvaettir
+#researchlevel 4
 #end
 
 #selectspell 501 -- Muspelheim Glosos
