@@ -42611,7 +42611,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #popkill 1
 #fear 5
 #assassin
-#ethereal
+#invisible
 #demon
 #bringeroffortune -20
 #itemslots 991750 -- base slots
@@ -42620,6 +42620,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 3 2
 #magicskill 5 2
 #magicskill 8 2
+#magicskill 7 2
 #magicboost 1 -2
 #magicboost 3 -2
 #mountainsurvival
@@ -42660,12 +42661,13 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 3 2
 #magicskill 5 2
 #magicskill 8 2
+#magicskill 7 2
 #magicboost 5 -2
 #magicboost 8 -2
 #mountainsurvival
 #nobadevents 15
 #bringeroffortune 20
-#ethereal
+#invisible
 #darkvision 50
 #shapechange 8148
 #str 8
@@ -94171,6 +94173,33 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7929
 #end
 
+#newsite 2424
+#name "EA Vanheim Summons"
+#level 0
+#rarity 5
+#path 1
+#look 0
+#homemon 694 -- bear
+#homemon 463 -- fay boar
+#homemon 2190 -- draug
+#homemon 261 -- valk
+#homecom 324 -- dwarf elder
+#homecom 7253 -- female aesir
+#homecom 7254 -- male aesir
+#end
+
+#newsite 2425
+#name "EA Vanheim Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 3
+#homecom 590
+#homecom 1511
+#homecom 8148
+#homecom 8150
+#end
+
 
 
 
@@ -98984,6 +99013,9 @@ Priests: Average"
 #uwbuild 1
 #addgod 8348 -- First Valkyrie
 #addgod 8349 -- Great Gull
+
+#futuresite "EA Vanheim Summons"
+#futuresite "EA Vanheim Heroes"
 #end
 
 #selectnation 31 -- EA Helheim
@@ -111132,9 +111164,9 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #name "Capture Fay Boar"
 #descr "The caster leads a great hunt through the Halls of Andvare to capture a Fay boar. The Fay boar is a breed of magical swine known to exist only in Vanheim. The creatures are sometimes used in warfare, but it is their immortality, not their physical power, that makes them invaluable. The swine are slain each evening to feed the soldiers, but at dawn they are again alive and well, ready to march with the armies of Vanheim."
 #researchlevel 3
-#path 0 3
+#path 0 7
 #pathlevel 0 2
-#fatiguecost 300
+#fatiguecost 200
 #nreff 1
 #damage 463  -- Fay Boar
 #restricted 30 -- EA Vanheim
@@ -111228,6 +111260,8 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #restricted 78 -- MA Vanheim
 #pathlevel 0 1
 #pathlevel 1 1
+#aoe 8
+#fatiguecost 100
 #spec 541605888  -- Ignore shields, Friendlies only, Lifeless & undead immune
 #end
 
@@ -132760,7 +132794,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #name "Brunhilde's Horn"
 #descr "This magnificent horn was once owned by Brunhilde and can be blown to summon Valkyries from Vanhalla. The Valkyries will instantly bear the blower of the horn to a distant province and will aid them in battle should enemies await them there."
 #constlevel 9
-#mainpath 5
+#mainpath 7
 #mainlevel 3
 #secondarypath 1
 #secondarylevel 3
@@ -133911,7 +133945,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #name "Tarnhelm"
 #descr "The Tarnhelm is a magic dwarven helmet crafted by the Eldest Dwarf at the demand of his brother. The wearer can cloak their appearance in illusion during combat and even become invisible at will. The power of the Tarnhelm also allows the wearer to travel long distances instantly."
 #constlevel 9
-#mainpath 1
+#mainpath 7
 #mainlevel 3
 #secondarypath 3
 #secondarylevel 2
@@ -134782,7 +134816,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #name "Horn of Vanhalla"
 #descr "This magnificent horn can be blown to summon Valkyries from Vanhalla. The Valkyries will arrive to bear the blower of the horn to a distant province. In battle the horn can be blown once more and Valkyries will appear to aid the bearer."
 #constlevel 7
-#mainpath 5
+#mainpath 7 -- G
 #mainlevel 2
 #secondarypath 1
 #secondarylevel 2
