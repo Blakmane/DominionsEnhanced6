@@ -4046,6 +4046,15 @@
 #prot 18
 #end
 
+#newarmor 562 -- Pearl Barding
+#copyarmor 255 -- silver barding
+#name "Pearl Barding"
+#type 9
+#protparts 13 13
+#enc 1
+#magicarmor
+#end
+
 
 
 -- END OF NEW ARMORS
@@ -25355,29 +25364,81 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copystats 545  -- Shark Knight
 #spr1 "magicenhanced/eeffish.tga"
 #spr2 "magicenhanced/eeffish2.tga"
+#unmountedspr1 "magicenhanced/un_eeffish.tga"
+#unmountedspr2 "magicenhanced/un_eeffish2.tga"
 #clearweapons
 #cleararmor
 #clearspec
 #name "Knight of the Volans"
-#descr "Life underneath the waves corresponds in many ways to that on dry land. The people of the undersea kingdoms have their own deities and celestial beings. One such are the Knights of the Volans, celestial warriors riding great fish that can swim through the air as easily as the water. The Knights are sacred to the people of Pelagia. If a Knight is killed the Volans will fight on, and summon a new rider after the battle."
-#mountedhumanoid
+#descr "Life underneath the waves corresponds in many ways to that on dry land. The people of the undersea kingdoms have their own deities and celestial beings. One such are the Knights of the Volans, celestial warriors riding great fish that can swim through the air as easily as the water. The Knights are sacred to the people of Pelagia."
 #gcost 0
 #hp 18
 #mr 13
 #mor 14
 #att 13
 #def 13
-#secondshape 7360 -- Flying Fish
-#secondtmpshape 0
+#mountmnr 7360
+#skilledrider 3
 #weapon 1596 -- Pearl Lance
 #weapon 665  -- Pearl Blade
-#weapon 20 -- Bite (Str not added)
 #armor 523 -- Pearl Hauberk
 #armor 522 -- Pearl Cap
 #armor 189  -- Pearl Shield
-#mounted
 #amphibian
+#holy
+#end
+
+#newmonster 7360
+--#copystats 816 -- Shark
+#name "Piscis Volans"
+#spr1 "magicenhanced/eeffishsec.tga"
+#spr2 "magicenhanced/eeffishsec2.tga"
+#descr "The Volans is a fish from the Celestial realm that swims amongst the stars. It can swim through the air as easily as the water. It is sacred to the people of Pelagia."
+#mr 12
+#str 13
+#att 12
+#def 15
+#prot 6
+#size 7
+#enc 3
+#hp 45
+#mor 15
+#weapon 20 -- bite
+#armor 562 -- pearl barding
+#neednoteat
+#gcost 0
+#animal
 #flying
+#amphibian
+#holy
+#end
+
+#newmonster 7854
+#copystats 545  -- Shark Knight
+#spr1 "magicenhanced/eeffish.tga"
+#spr2 "magicenhanced/eeffish2.tga"
+#unmountedspr1 "magicenhanced/un_eeffish.tga"
+#unmountedspr2 "magicenhanced/un_eeffish2.tga"
+#clearweapons
+#cleararmor
+#clearspec
+#name "Volans Knight Commander"
+#descr "Life underneath the waves corresponds in many ways to that on dry land. The people of the undersea kingdoms have their own deities and celestial beings. One such are the Knights of the Volans, celestial warriors riding great fish that can swim through the air as easily as the water. The Knights are sacred to the people of Pelagia. Knight Commanders lead the Knights of the Volans in their conquest of the mortal realm."
+#gcost 0
+#hp 19
+#mr 14
+#mor 15
+#att 14
+#def 14
+#mountmnr 7360
+#skilledrider 4
+#goodleader
+#weapon 1596 -- Pearl Lance
+#weapon 665  -- Pearl Blade
+#armor 523 -- Pearl Hauberk
+#armor 522 -- Pearl Cap
+#armor 189  -- Pearl Shield
+#amphibian
 #holy
 #end
 
@@ -27616,23 +27677,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 522 -- Pearl Cap
 #armor 189  -- Pearl Shield
 #nametype 139  -- Angels
-#end
-
-#newmonster 7360
-#copystats 3656 -- Shark
-#name "Piscis Volans"
-#spr1 "magicenhanced/eeffishsec.tga"
-#spr2 "magicenhanced/eeffishsec2.tga"
-#descr "The Volans is a fish from the Celestial realm that swims amongst the stars. It can swim through the air as easily as the water. It is sacred to the people of Pelagia."
-#mr 12
-#str 13
-#att 12
-#def 12
-#firstshape 7359
-#xploss 100
-#flying
-#amphibian
-#holy
 #end
 
 #newmonster 7347
@@ -35329,53 +35373,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #stealthy 0
 #end
 
-#newmonster 7854
-#copystats 545  -- Shark Knight
-#spr1 "magicenhanced/eeffish.tga"
-#spr2 "magicenhanced/eeffish2.tga"
-#clearweapons
-#cleararmor
-#clearspec
-#name "Knight Commander"
-#descr "Life underneath the waves corresponds in many ways to that on dry land. The people of the undersea kingdoms have their own deities and celestial beings. One such are the Knights of the Volans, celestial warriors riding great fish that can swim through the air as easily as the water. The Knights are sacred to the people of Pelagia. Knight Commanders lead the Knights of the Volans in their conquest of the mortal realm. If the Knight Commander is killed the Volans will fight on, and summon a new rider after the battle."
-#mountedhumanoid
-#gcost 0
-#hp 19
-#mr 14
-#mor 15
-#att 14
-#def 14
-#secondshape 7855 -- Flying Fish
-#secondtmpshape 0
-#goodleader
-#weapon 1596 -- Pearl Lance
-#weapon 665  -- Pearl Blade
-#weapon 20 -- Bite (Str not added)
-#armor 523 -- Pearl Hauberk
-#armor 522 -- Pearl Cap
-#armor 189  -- Pearl Shield
-#mounted
-#amphibian
-#flying
-#holy
-#end
-
-#newmonster 7855
-#copystats 3656 -- Shark
-#name "Piscis Volans"
-#spr1 "magicenhanced/eeffishsec.tga"
-#spr2 "magicenhanced/eeffishsec2.tga"
-#descr "The Volans is a fish from the Celestial realm that swims amongst the stars. It can swim through the air as easily as the water. It is sacred to the people of Pelagia."
-#mr 12
-#str 13
-#att 12
-#def 12
-#firstshape 7854
-#xploss 100
-#flying
-#amphibian
-#holy
-#end
 
 #newmonster 7856
 #copystats 333  -- Illithid Priest
@@ -94120,6 +94117,61 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 
+#newsite 2421
+#name "LA Erytheia Summons"
+#level 0
+#rarity 5
+#path 2
+#look 8
+#homemon 628 -- lion
+#homemon 3168 -- twilit hound
+#homemon 3119 -- spartae
+#homemon 3171 -- khalk
+#homemon 7359 -- volans knight
+#homemon 7422 -- sphinx child
+#homemon 7423 -- mastabas child
+#homemon 7424 -- pyramid child
+#homemon 7425 -- valley child
+#homemon 7893 -- scarab
+#homemon 3164 -- keledone
+#end
+
+#newsite 2422
+#name "LA Erytheia Summons Continued"
+#level 0
+#rarity 5
+#path 2
+#look 8
+#homecom 8672 -- oyster
+#homecom 7854 -- volans commander
+#homecom 7613 -- tanagran
+#homecom 2834 -- hekat
+#homecom 2836 -- daktyl
+#homecom 3160 -- hesp
+#homecom 7374 -- nephelae
+#homecom 8599 -- oceanid
+#homecom 3167 -- drakon
+#homecom 7250 -- athene
+#homecom 7251 -- pose
+#homecom 7256 -- sun neter
+#homecom 7257 -- chaos neter
+#homecom 7258 -- moon neter
+#end
+
+#newsite 2423
+#name "LA Erytheia Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 7
+#homecom 3175
+#homecom 3176
+#homecom 7926
+#homecom 7927
+#homecom 7929
+#end
+
+
 
 
 
@@ -100760,6 +100812,10 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #cheapgod20 8406 -- Titan of the Sun
 #addgod 8349 -- Great Gull
 #addgod 8508 -- Great Navigator
+
+#futuresite "LA Erytheia Summons"
+#futuresite "LA Erytheia Summons Continued"
+#futuresite "LA Erytheia Heroes"
 #end
 
 #selectspell 2000
@@ -109517,7 +109573,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #pathlevel 0 2
 #damage -1025
 #nreff 510
-#fatiguecost 2000
+#fatiguecost 1600
 #restricted 27 -- EA C'tis
 #restricted 75 -- MA Ctis
 #restricted 113 -- LA Ctis
@@ -115342,6 +115398,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 4
 #pathlevel 1 2
 #effect 10021
+#nreff 1
 #fatiguecost 3000
 #damage 7613 -- Tanagran Triton
 #restricted 40 -- EA Pelagia
@@ -115397,20 +115454,19 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 6
 #spec 8388608  -- cast UW
 #damage 29  -- Crystal Citadel
-#restricted 40
-#restricted 86
+#restricted 40 -- EA
+--#restricted 86 -- MA
 #nextspell 3077
 #end
 
 #selectspell 3079
 #copyspell 825 -- Transmute Fire
 #name "Riches of the Sea"
-#descr "Pearls from Pelagia are highly prized for their beauty and lustre. The Pearl Mages can synthesise flawless pearls of enormous size and value using astral magic. Jewelery containing these pearls is highly prized and this trade brings great wealth to the Pearl Kings. Each additional gem used in the ritual will create more jewelry, and the higher the mages skill the more valuable it will be."
-#details "Gold gained: 30 gold per gem spent after the initial cost (increased by two for every extra mage level)."
+#descr "Pearls from Pelagia are highly prized for their beauty and lustre. The Pearl Mages can synthesise flawless pearls of enormous size and value using astral magic. Jewelery containing these pearls is highly prized and this trade brings great wealth to the Pearl Kings."
 #researchlevel 0
 #path 0 4
 #pathlevel 0 1
-#damage 2028
+#damage 300
 #restricted 40
 #restricted 86
 #end
@@ -115418,12 +115474,11 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #selectspell 3080
 #copyspell 825 -- Transmute Fire
 #name "Pearls of the Setting Sun"
-#descr "The Pelagians have always grown pearls of great size and beauty, and the Erytheians have learnt to imbue them with the splendour of the setting sun. Jewelery containing these pearls is highly prized and this trade brings great wealth to the King of Both Worlds. Each additional gem used in the ritual will create more jewelry, and the higher the mages skill the more valuable it will be."
-#details "Gold gained: 30 gold per gem spent after the initial cost (increased by two for every extra mage level)."
+#descr "The Pelagians have always grown pearls of great size and beauty, and the Erytheians have learnt to imbue them with the splendour of the setting sun. Jewelery containing these pearls is highly prized and this trade brings great wealth to the King of Both Worlds."
 #researchlevel 0
 #path 0 4
 #pathlevel 0 1
-#damage 2028
+#damage 300
 #restricted 125
 #end
 
@@ -115529,14 +115584,15 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 3089
 #copyspell 945 -- Call Kraken
-#name "Call Knight of the Volans"
-#descr "The caster calls to one of the Knights of Volans to swim down from the Celestial Realm. These legendary knights ride the divine fish that can swim through the air and water with equal ease. This spell can only be cast underwater."
+#name "Call Knights of the Volans"
+#descr "The caster calls to a few of the Knights of Volans to swim down from the Celestial Realm. These legendary knights ride the divine fish that can swim through the air and water with equal ease. This spell can only be cast underwater."
 #researchlevel 3
 #path 0 4
 #path 1 2
 #pathlevel 0 2
 #pathlevel 1 2
-#fatiguecost 400
+#fatiguecost 1000
+#nreff 503
 #damage 7359 -- Pearl Knight
 #restricted 40
 #restricted 86
@@ -115553,6 +115609,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 3
 #pathlevel 1 2
 #effect 10021
+#nreff 1
 #fatiguecost 800
 #damage 7854 -- Knight Commander
 #restricted 40
@@ -115569,8 +115626,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 2
 #pathlevel 0 4
 #pathlevel 1 2
-#fatiguecost 1500
-#nreff 505
+#fatiguecost 3000
+#nreff 1006 -- 10+
 #damage 7359 -- Pearl Knight
 #restricted 40
 #restricted 86
@@ -127181,7 +127238,7 @@ This Grand Prayer is in the path of Blood, and may be extra potent depending on 
 #pathlevel 0 2
 #damage -1025
 #nreff 510
-#fatiguecost 2000
+#fatiguecost 1600
 #restricted 125 -- Erytheia
 #end
 
