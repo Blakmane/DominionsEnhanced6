@@ -50681,6 +50681,50 @@ Witness Guards can be recruited in any land fort."
 #armor 561 -- Coated Helmet
 #end
 
+#newmonster 8889
+#name "Brazen Bull"
+#nametype 149  -- rephaim
+#spr1 "worthy_heroes/brazen_bull_1.tga"
+#spr2 "worthy_heroes/brazen_bull_2.tga"
+#descr "Brazen Bulls are altars of worship in Berytos. Berytian parents sometime grant a offering of flesh and blood in return for preventing misfortune. Priests place the sacrifice inside the bull through the hole in its back. After that, a bonfire is lit beneath the brass statue as the priests call to the gods to accept the offering. Through great sacrifice one of these altars has been imbued with power and calls for more people to make sacrifices to it. This monster is a frightening sight on the battlefield as it radiates hellish heat and its eyes and breath are aflame. However, the Brazen Bull is made of lesser metal and might not last against strong opposition. This beast has innate skill in magic, but is not of much use in research."
+#str 18
+#att 12
+#def 9
+#hp 45
+#fear 5
+#inanimate
+#magicbeing
+#nobadevents 15
+#neednoteat
+#researchbonus -10
+#popkill 2
+#trample
+#heat 6
+#fireres 15
+#coldres 15
+#poisonres 25
+#weapon "Golden Horns"
+#weapon 567 -- Fire breath
+#magicskill 0 1
+#magicskill 8 2
+#magicskill 9 2
+--#custommagic 38016 100 -- F/E/D/B
+--#custommagic 38016 100 -- F/E/D/B
+#mapmove 2
+#itemslots 1843200 -- head, 3 miscs
+#holy
+#enc 0
+#prec 8
+#ap 12
+#prot 14
+#mr 16
+#mor 30
+#gcost 0
+#size 5
+#noleader
+#maxage 100
+#startage 50
+#end
 
 --#newmonster 8684 -- LA C'tis Hierodule
 --#copystats 510
@@ -79408,8 +79452,46 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #custommagic 12800 100  -- 100% WDN
 #end
 
+#selectmonster 2256  -- Berytian Spearman
+--#gcost 10009
+#end
+
+#selectmonster 2257 -- Berytian Soldier
+--#gcost 10009
+#end
+
+#selectmonster 2258  -- Berytian Heavy Spearman
+#gcost 10011
+#end
+
+#selectmonster 2259  -- Berytian Elite Soldier
+#gcost 10012
+#end
+
 #selectmonster 2262  -- Colossi Warrior
 #bodyguard 3
+#gcost 10025
+#end
+
+#selectmonster 2263  -- Berytos Mage Pilot 110g
+#custommagic 2944 100 -- FAWS
+#end
+
+#selectmonster 2265 -- Berytian Priest
+#undcommand 10
+#gcost 160
+#end
+
+#selectmonster 2266 -- Bride in waiting
+#undcommand 20
+#end
+
+#selectmonster 2424 -- Berytian Sage 110g
+#clearmagic
+#magicskill 3 1
+#custommagic 1792 100 -- AWE
+#resources 5
+#gcost 130
 #end
 
 #selectmonster 2267  -- Melqart
@@ -94201,6 +94283,53 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 
+#newsite 2426
+#name "Cothon"
+#level 0
+#rarity 5
+#path 2
+#look 7
+#gold 30
+#res 30
+#homecom 2263 -- mage pilot
+#homecom 2264 -- storm caller
+#end
+
+#newsite 2427
+#name "EA Berytos Summons"
+#level 0
+#rarity 5
+#path 2
+#look 3
+#homemon 628 -- lion
+#homemon 2398 -- elephant
+#homemon 2072 -- mazzik
+#homemon 2074 -- seir
+#homemon 3724 -- air ele s7
+#homecom 2071 -- lilot
+#homecom 8889 -- Brazen Bull
+#homecom 2267 -- melq
+#homecom 7289 -- boread
+#homecom 2873 -- telk
+#homecom 7276 -- cetus
+#homecom 7642 -- anu
+#homecom 7667 -- lilith
+#end
+
+#newsite 2428
+#name "EA Berytos Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 0
+#homecom 8167 -- Brazen Bull
+#homecom 2429
+#homecom 2430
+#homecom 2876
+#end
+
+
+
 
 
 
@@ -99184,6 +99313,10 @@ Priests: Average"
 #delgod 8513 -- Great Enchantress
 #cheapgod20 8349 -- Great Gull
 #cheapgod20 8369 -- Brazen Bull
+
+#startsite "Cothon"
+#futuresite "EA Berytos Summons"
+#futuresite "EA Berytos Heroes"
 #end
 
 #selectnation 26 -- EA Xibalba
@@ -113582,8 +113715,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 5
 #path 0 1
 #pathlevel 0 3
-#nreff 504
-#damage 3725 -- Size 4 Air Elemental
+#nreff 505
+#damage 3724 -- Size 7 Air Elemental
 #fatiguecost 1000
 #restricted 32 -- Rus
 #restricted 29 -- Berytos
@@ -113613,7 +113746,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 3
 #path 1 2
 #pathlevel 1 2
-#damage 3725
+#damage 3724
 #nreff 1004 -- 7+
 #fatiguecost 900
 #nogeodst 4100  -- Not caves or sea
@@ -129168,6 +129301,21 @@ Applies the effects of Holy Avenger to the caster"
 #range 25
 #fatiguecost 0
 #restricted 98 -- LA Pythium
+#end
+
+#selectspell 4136 -- Brazen Bull
+#name "Awaken Brazen Bull"
+#descr "."
+#school 6 -- Blood
+#researchlevel 5
+#path 0 8 -- B
+#path 1 9 -- H
+#pathlevel 0 2
+#pathlevel 1 1
+#effect 10021
+#damage 8889 -- Brazen Bull
+#fatiguecost 3800
+#restricted 29 -- Berytos
 #end
 
 
