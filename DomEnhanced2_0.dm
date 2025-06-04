@@ -28271,7 +28271,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr2 "magicenhanced/eetanukia2.tga"
 #name "Bake-Danuki"
 #fixedname "Danzaburou"
-#descr "Danzaburou is one of the Bake-Danuki, a race of magical shapeshifting Racoon-dogs similar to the Tanuki. These supernatural animals love to use their shapeshifting powers to expose the foolishness of humans. Danzaburou is a master of illusion magic and will often trick those he meets into losing their money, or their dignity. He can even make leaves appear as gold or a hole in the ground appear as a great mansion. Bake-Danuki have a great rivalry with the Kitsune and Dazaburou loves to play pranks on the fox spirits. Bake-Danuki are stealthy and in human guise have the abilities of a spy, however their mischievous nature will cause unrest amongst the populace. Danzaburou is a powerful mage of Nature and Air magic and occasionally dabbles in other magic."
+#descr "Danzaburou is one of the Bake-Danuki, a race of magical shapeshifting Racoon-dogs similar to the Tanuki. These supernatural animals love to use their shapeshifting powers to expose the foolishness of humans. Danzaburou is a master of illusion magic and will often trick those he meets into losing their money, or their dignity. He can even make leaves appear as gold or a hole in the ground appear as a great mansion. Bake-Danuki have a great rivalry with the Kitsune and Dazaburou loves to play pranks on the fox spirits. Bake-Danuki are stealthy and in human guise have the abilities of a spy, however their mischievous nature will cause unrest amongst the populace. Danzaburou is a powerful mage of Nature and Glamour magic and occasionally dabbles in other magic."
 #gcost 0
 #prot 6
 #hp 18
@@ -28291,10 +28291,10 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 7  -- Quarterstaff
 #armor 203  -- Reinforced Cloth Armor
 #shapechange 7492 -- Tanuki form
-#magicskill 1 3
 #magicskill 2 1
 #magicskill 3 2
 #magicskill 6 3
+#magicskill 7 3
 #montag 1006
 #end
 
@@ -31868,20 +31868,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 108  -- Greatsword of Sharpness
 #armor 215  -- Full Plate
 #armor 218  -- Full Helmet
-#end
-
-#newmonster 7665
-#copystats 1396  -- Dai Bakemono
-#clearweapons
-#spr1 "magicenhanced/eedaidemon.tga"
-#spr2 "magicenhanced/eedaidemon2.tga"
-#name "Oni Mask Bakemono"
-#descr "A Dai Bakemono is to the other Bakemono what a Samurai is to the Jomon peasantry. As proud warriors and generals of remarkable martial skill, they lead the armies of Shinuyama in the conquest of lesser realms. These Dai Bakemono bear Oni-enchanted weaponry and wear masks with the faces of fierce Dai Oni. Oni spirits will guide their weapons and protect them from harm."
-#gcost 35
-#airshield 80
-#weapon 379  -- No Dachi
-#weapon 152  -- Longbow of Accuracy
-#monpresentrec 7666
 #end
 
 #newmonster 7667
@@ -39095,6 +39081,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mapmove 20
 #ap 20
 #spiritsight
+#spiritform
 #weapon 41
 #armor "Heavy Samurai Armor"
 #armor "Kabuto"
@@ -50756,6 +50743,35 @@ Witness Guards can be recruited in any land fort."
 #descr "A Cu Sidhe is a huge, dark green fay hound. They once roamed the plains and woodlands, but with the coming of man, they have retreated into the Land of the Ever Young. A few can also be found in desolate highlands where they are said to lure pregnant women into Sidhe mounds. The Cu Sidhe serve the Sidhe as companions and hunters and often fight by their side. They are sacred and can be blessed. The Aos Sidhe are known to ride them as cataphracted mounts into battle."
 #armor 508 -- golden barding
 #end
+
+
+#newmonster 7665
+#copystats 1396  -- Dai Bakemono
+#clearweapons
+#spr1 "magicenhanced/eedaidemon.tga"
+#spr2 "magicenhanced/eedaidemon2.tga"
+#name "Oni Mask Bakemono"
+#descr "A Dai Bakemono is to the other Bakemono what a Samurai is to the Jomon peasantry. As proud warriors and generals of remarkable martial skill, they lead the armies of Shinuyama in the conquest of lesser realms. These Dai Bakemono bear Oni-enchanted weaponry and wear masks with the faces of fierce Dai Oni. Oni spirits will guide their weapons and protect them from harm.
+Requires an Ippondatara present to recruit."
+#gcost 35
+#airshield 80
+#weapon 379  -- No Dachi
+#weapon 152  -- Longbow of Accuracy
+#monpresentrec 7666
+#end
+
+#newmonster 8891
+#copystats 7665
+#spr1 "magicenhanced/eedaidemon_grey.tga"
+#spr2 "magicenhanced/eedaidemon2_grey.tga"
+#name "Oni Mask (Requires Ippondatara)"
+#descr "A Dai Bakemono is to the other Bakemono what a Samurai is to the Jomon peasantry. As proud warriors and generals of remarkable martial skill, they lead the armies of Shinuyama in the conquest of lesser realms. These Dai Bakemono bear Oni-enchanted weaponry and wear masks with the faces of fierce Dai Oni. Oni spirits will guide their weapons and protect them from harm.
+Requires an Ippondatara present to recruit."
+#landshape 7665
+#watershape 7665
+#monpresentrec 7666
+#end
+
 
 --#newmonster 8684 -- LA C'tis Hierodule
 --#copystats 510
@@ -93127,20 +93143,20 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 7
 #look 5
 #homemon 1363 -- anc spirit
+#homecom 1908 -- huli jing
+#homecom 7303 -- water dragon
+#homecom 7465 -- female shishi
+#homecom 7466 -- male shishi
+#homecom 7450 -- shije xian
+#homecom 7451 -- di xian
+#homecom 7452 -- tian xian
+#homecom 7306 -- divine general
+#homecom 7227 -- carp
+#homecom 7305 -- minister of fire
 #homemon 7282 -- west tiger
 #homemon 7283 -- east dragon
 #homemon 7284 -- south bird
 #homemon 7285 -- north turtle
-#homecom 1908 -- huli jing
-#homecom 7303 -- water dragon
-#homecom 7306 -- divine general
-#homecom 7465 -- female shishi
-#homecom 7466 -- male shishi
-#homecom 7227 -- carp
-#homecom 7305 -- minister of fire
-#homecom 7450 -- shije xian
-#homecom 7451 -- di xian
-#homecom 7452 -- tian xian
 #end
 
 #newsite 2352 -- EA T'ien Ch'i Heroes
@@ -94520,6 +94536,84 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 635
 #homecom 2272
 #homecom 2394
+#end
+
+#newsite 2436
+#name "MA Shinuyama Summons"
+#level 0
+#rarity 5
+#path 7
+#look 5
+#homemon 1140 -- Tiger
+#homemon 8022 -- Dire Tiger
+#homemon 3264 -- Okami
+#homemon 8030 -- Fighting Fish
+#homemon 3269 -- Omukade
+#homemon 1260 -- Ko-Oni
+#homemon 1264 -- Ao-Oni
+#homemon 1266 -- Aka-Oni
+#homemon 1272 -- Oni
+#homemon 1274 -- Kuro-Oni
+#homemon 2090 -- Horse-face
+#homemon 2091 -- Ox-head
+#homemon 8004 -- Kosenjoubi
+#homemon 1478 -- Karasu Tengu
+#homemon 1479 -- Konoha Tengu
+#homemon 1481 -- Tengu Warrior
+#end
+
+#newsite 2437
+#name "MA Shinuyama Summons Continued"
+#level 0
+#rarity 5
+#path 7
+#look 5
+#homecom 7666 -- Ippondatara
+#homecom 1480 -- Dai Tengu
+#homecom 1276 -- Oni Shugo
+#homecom 1316 -- Dai Oni
+#homecom 7490 -- Yuki-Onna
+#homecom 1256 -- Shura
+#homecom 8006 -- Goryou
+#homecom 1431 -- Nushi
+#homecom 1433 -- Kitsune
+#homecom 3265 -- Tanuki
+#homecom 3267 -- Bakeneko
+#homecom 3272 -- Mujina
+#homecom 7227 -- Celestial Carp
+#homecom 7827 -- Bakemono Kizoku
+#end
+
+#newsite 2438
+#name "MA Shinuyama Uniques"
+#level 0
+#rarity 5
+#path 7
+#look 5
+#homecom 3262 -- Jorogumo
+#homecom 7491 -- Bake-danuki
+#homecom 7585 -- Raijin
+#homecom 7586 -- Raiju
+#homecom 7282 -- White Tiger of the West
+#homecom 7283 -- Azure Dragon of the East
+#homecom 7284 -- Vermilion Bird of the South
+#homecom 7285 -- Black Tortoise of the North
+#homecom 7262 -- Izanami
+#end
+
+#newsite 2439
+#clear
+#name "MA Shinuyama Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 3
+#homecom 8212
+#homecom 1670
+#homecom 3246
+#homecom 3247
+#homecom 3249
+#homecom 8164
 #end
 
 
@@ -100151,7 +100245,12 @@ Dominion: Causes dreamless slumber, greatly reducing tax income. Vines reanimate
 #addgod 8497 -- Spirit Gate
 #cheapgod20 8391 -- Celestial Fox
 #cheapgod20 8392 -- Celestial Fox
-#addrecunit 7665
+#addrecunit 8891
+
+#futuresite "MA Shinuyama Summons"
+#futuresite "MA Shinuyama Summons Continued"
+#futuresite "MA Shinuyama Uniques"
+#futuresite "MA Shinuyama Heroes"
 #end
 
 #selectnation 64 -- MA Ashdod
@@ -112937,74 +113036,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 70 -- Shinuyama
 #end
 
-#selectspell 2887
-#name "Village Appears"
-#descr "The caster travels to a windy mountaintop to locate a village of tengu. Once the village has been located a Nature mage can enter it to convince tengu to aid them each month. This spell can only be cast in a mountain province. Only one tengu village can be located in each province and further castings of the spell will fail."
-#school -1
-#researchlevel 0
-#path 0 6
-#pathlevel 0 2
-#effect 10082
-#nreff 1
-#damage 266 -- Ench66
-#fatiguecost 500
-#end
-
-#selectspell 2888
-#copyspell 106  -- Record of Creation
-#name "Locate Tengu Village"
-#descr "The caster travels to a windy mountaintop to locate a village of tengu. Once the village has been located a Nature mage can attempt to convince tengu to serve the awakening God each month. The chance the tengu will agree depends on the strength of the local Dominion. This spell can only be cast in a mountain province. Only one tengu village can be located in each province and further castings of the spell will fail."
-#details "Whilst a Nature mage present at village has 10% x candles chance to summon 1D6 Karasa Tengu each month."
-#school 0
-#researchlevel 3
-#path 0 6
-#pathlevel 0 2
-#damage -1
-#effect 10083
-#fatiguecost 500
-#nreff 1
-#onlygeosrc 8388624  -- Mountain or Border Mountain
-#restricted 70 -- Shinuyama
-#restricted 110 -- Jomon
-#nextspell 2887
-#end
-
-#selectspell 2889
-#name "Clanhold Appears"
-#descr "Once a tengu village has been located in a province it is likely a clanhold is nearby. The caster divines the location of the clanhold through whispers on the mountain wind. Once the clanhold has been located a powerful Air mage can enter it to convince the Dai tengu to provide them with tengu warriors each month. This spell can only be cast in a mountain province where a tengu village has already been located. Once a clanhold has been located the Dai Tengu will forbid mages from entering his villages."
-#school -1
-#researchlevel 0
-#path 0 6
-#pathlevel 0 2
-#effect 10082
-#nreff 1
-#damage 267 -- Ench67
-#fatiguecost 500
-#end
-
-#selectspell 2890
-#copyspell 106  -- Record of Creation
-#name "Tengu Clanhold"
-#descr "Once a tengu village has been located in a province it is likely a clanhold is nearby. The caster divines the location of the clanhold through whispers on the mountain wind. Once the clanhold has been located a powerful Air mage can enter it to convince the Dai tengu to provide them with tengu warriors each month. This spell can only be cast in a mountain province where a tengu village has already been located. Once a clanhold has been located the Dai Tengu will forbid mages from entering his villages."
-#details "Whilst a Lvl 2 Air mage present at clanhold has 10% x candles chance to summon 1d6 Konoha Tengu and 1d3 Tengu Warriors per month."
-#school 0
-#researchlevel 4
-#path 0 1
-#pathlevel 0 2
-#damage -1
-#effect 10083
-#fatiguecost 500
-#nreff 1
-#onlygeosrc 8388624  -- Mountain or Border Mountain
-#onlyatsite 2145 -- Tengu Village
-#restricted 70 -- Shinuyama
-#restricted 110 -- Jomon
-#nextspell 2889
-#end
-
 #selectspell 2891
 #name "Contact Danzaburou"
-#descr "The caster calls to Danzaburou the Bake-Danuki to aid them. The Bake-Danuki are a race of magical shapeshifting Racoon-dogs related to the Tanuki. These supernatural animals love to use their shapeshifting powers to expose the foolishness of humans. Bake-Danuki are stealthy and in human guise have the abilities of a spy, however their mischevious nature will cause unrest amongst the populace. Danzaburou is a powerful mage of Nature and Air magic and knows some other magical skills as well."
+#descr "The caster calls to Danzaburou the Bake-Danuki to aid them. The Bake-Danuki are a race of magical shapeshifting Racoon-dogs related to the Tanuki. These supernatural animals love to use their shapeshifting powers to expose the foolishness of humans. Bake-Danuki are stealthy and in human guise have the abilities of a spy, however their mischevious nature will cause unrest amongst the populace. Danzaburou is a powerful mage of Nature and Glamour magic and knows some other magical skills as well."
 #school 0
 #researchlevel 7
 #path 0 6
@@ -129387,6 +129421,10 @@ Applies the effects of Holy Avenger to the caster"
 #nreff 508
 #end
 
+#selectspell 303 -- Omukade
+#fatiguecost 300
+#end
+
 #selectspell 304 -- Mori No Kami
 #fatiguecost 1200
 #end
@@ -129410,6 +129448,7 @@ Applies the effects of Holy Avenger to the caster"
 #selectspell 311 -- Gozu Mezu
 #researchlevel 4
 #fatiguecost 400
+#pathlevel 0 2
 #end
 
 #selectspell 314 -- Yama no Kami
@@ -129971,26 +130010,34 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 586 -- Ko Oni
-#nreff 1004
+#nreff 1005
 #end
 
 #selectspell 588 -- Ao Oni
 #fatiguecost 500
-#nreff 1004
+#nreff 1005
 #end
 
 #selectspell 590 -- Aka Oni
-#nreff 1004
+#nreff 1005
 #fatiguecost 500
 #end
 
-#selectspell 593 -- Oni
-#nreff 1004
+#selectspell 592 -- ghost general
 #fatiguecost 600
 #end
 
+#selectspell 593 -- Oni
+#nreff 1005
+#fatiguecost 600
+#end
+
+#selectspell 594 -- Dai Tengu
+#fatiguecost 5000
+#end
+
 #selectspell 596 -- Kuro Oni
-#nreff 1002
+#nreff 1003
 #fatiguecost 600
 #end
 
