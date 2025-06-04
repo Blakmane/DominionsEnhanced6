@@ -24757,21 +24757,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #poorleader
 #end
 
-#newmonster 7319
-#copystats 2192
-#copyspr 2192
-#name "Draugherse"
-#descr "The Draugherse is an ancient Vanir returned from Hel to walk the earth once more as a corporeal undead van. They are incredibly strong and retain limited magical powers. Draugar stink of decay and rotting flesh and are surrounded by the ice cold winds of Hel. They do not like to command the living and prefer the company of their dead fellows."
-#magicskill 1 1
-#magicskill 5 1
-#custommagic 4352 100  -- 100% AD
-#shrinkhp 0
-#startitem 602 -- Bane Fire Blade
-#poorleader
-#holy
-#montag 1014
-#end
-
 #newmonster 7320
 #copystats 456  -- Foul Spawn
 #copyspr 456  -- Foul Spawn
@@ -24836,15 +24821,18 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #newmonster 7327
 #spr1 "magicenhanced/eevanbaldr.tga"
 #spr2 "magicenhanced/eevanbaldr2.tga"
+#unmountedspr1 "magicenhanced/un_eevanbaldr.tga"
+#unmountedspr2 "magicenhanced/un_eevanbaldr2.tga"
 #copystats 264  -- Vanjarl
 #clearweapons
 #name "Vanbaldr"
 #descr "A great Vanjarl returned from Vanhalla and awarded the title of Baldr or Prince of the Van. The Vanbaldr return on great dark fey horses gifted to them by the Valkyries of Vanhalla. They have spent many decades fighting and feasting in Vanhalla and tales of their great deeds have spread throughout Midgard. Their generalship is of great renown and they will inspire their troops to valorous deeds in battle."
 #gcost 0
 #magicskill 5 1
-#custommagic 37120 100 -- 100% ADB
+#custommagic 53504 100 -- 100% ADBG
 #inspirational 1
 #weapon 75  -- Enchanted Sword
+#mountmnr 3523 -- Disahestur
 #end
 
 #newmonster 7328
@@ -24861,12 +24849,13 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Draugadrott"
 #descr "The Draugadrott is an ancient Vanir king returned from Hel to walk the earth once more as a corporeal undead van. They are incredibly strong and retain all of their magical powers. Draugar stink of decay and rotting flesh and are surrounded by the ice cold winds of Hel. They do not like to lead the living and prefer the company of their dead fellows. They can command more Draug to leave their barrows each month."
 #hp 45
-#magicskill 1 2
-#magicskill 5 2
+#magicskill 1 1 -- A
+#magicskill 5 2 -- D
+#magicskill 7 2 -- G
 #magicskill 9 1
-#custommagic 38144 100 -- 100% AEDB
-#custommagic 38144 100 -- 100% AEDB
-#startitem 205 -- Chainmail of Displacement
+#custommagic 21760 100 -- 100% AEDG
+#custommagic 21760 100 -- 100% AEDG
+#startitem 256 -- Chainmail of Displacement
 #holy
 #makemonsters2 2190
 #maxage 1000
@@ -24879,7 +24868,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #descr "The Draugherse is an ancient Vanir returned from Hel to walk the earth once more as a corporeal undead van. They are incredibly strong and retain limited magical powers. Draugar stink of decay and rotting flesh and are surrounded by the ice cold winds of Hel. They do not like to command the living and prefer the company of their dead fellows."
 #magicskill 1 1
 #magicskill 5 1
-#custommagic 4352 100  -- 100% AD
+#magicskill 7 1
+#custommagic 20736 100  -- 100% ADG
 #shrinkhp 0
 #startitem 266 -- Rime Hauberk
 #poorleader
@@ -24895,13 +24885,30 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #descr "The Draugherse is an ancient Vanir returned from Hel to walk the earth once more as a corporeal undead van. They are incredibly strong and retain limited magical powers. Draugar stink of decay and rotting flesh and are surrounded by the ice cold winds of Hel. They do not like to command the living and prefer the company of their dead fellows."
 #magicskill 1 1
 #magicskill 5 1
-#custommagic 4352 100  -- 100% AD
+#magicskill 7 1
+#custommagic 20736 100  -- 100% ADG
 #shrinkhp 0
 #startitem 54 -- Frost Brand
 #poorleader
 #holy
 #montag 1014
 #maxage 1000
+#end
+
+#newmonster 7319
+#copystats 2192
+#copyspr 2192
+#name "Draugherse"
+#descr "The Draugherse is an ancient Vanir returned from Hel to walk the earth once more as a corporeal undead van. They are incredibly strong and retain limited magical powers. Draugar stink of decay and rotting flesh and are surrounded by the ice cold winds of Hel. They do not like to command the living and prefer the company of their dead fellows."
+#magicskill 1 1
+#magicskill 5 1
+#magicskill 7 1
+#custommagic 20736 100  -- 100% ADG
+#shrinkhp 0
+#startitem 602 -- Bane Fire Blade
+#poorleader
+#holy
+#montag 1014
 #end
 
 #newmonster 7332
@@ -77010,10 +77017,21 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 846  -- Galderman
 #descr "A Galderman is a human mage and shapeshifter using Galdr, a method of singing or chanting in a high pitch, to cast spells. Masters of the craft are said to be able to raise storms, make distant ships sink, make swords blunt, and decide victory or defeat in battles. Galdermen are versatile mages, though most only know a handful of Galdr, and all are practiced in Air magic. Galdermen have been granted the ability to change shape by the Vanir, but in their werewolf form they cannot perform Galdr."
---#secondshape 0
---#shapechange 854
+#secondshape 0
+#shapechange 854
 #spellsinger
+#clearmagic
+#magicskill 1 2
+#custommagic 21760 100 -- AEDG
+#custommagic 54272 100 -- EDGB
+#custommagic 54528 10 -- AEDGB
 #end
+
+#selectmonster 854  -- Galderman Werewolf
+#firstshape 0
+#shapechange 846
+#end
+
 
 #selectmonster 848 -- Eriu Sidhe Lord
 #okmagicleader
@@ -77037,11 +77055,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 --#secondshape 0
 --#shapechange 852
 #gcost 10020
-#end
-
-#selectmonster 854  -- Galderman Werewolf
---#firstshape 0
---#shapechange 846
 #end
 
 #selectmonster 861  -- Ettin Mandragora
@@ -79391,6 +79404,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #descr "The Jarl is a high chief of Midgård with influence to rival even the Vanir themselves. They have learned the skills of the Vanir and are able to sail across oceans. They have been given the ability to change shape by the Vanir, and are believed to be blessed by the Vanir and are sacred to the human population. Skinshifters regenerate in both human and wolven form."
 #shapechange 8691 -- LA Midgard Jarl Werewolf
 #regeneration 10
+#gcost 150
 #forestsurvival
 #str 12
 #ap 13
@@ -111751,8 +111765,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Call from Vanhalla"
 #descr "The mage calls a great Vanir warrior from ages past to return from Vanhalla. The hero will arrive astride a great fay horse and guarded by a sacred Vanguard. The returned hero will lead his descendants to glory in battle."
 #researchlevel 6
-#path 0 1
-#path 1 5
+#path 0 7
+#path 1 1
 #pathlevel 0 3
 #pathlevel 1 1
 #fatiguecost 3000
@@ -111768,11 +111782,14 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #details "Confusion check 50% every turn. Confused targets move randomly and might attack friend or foe."
 #researchlevel 2
 #school 4
+#path 0 7
 #pathlevel 0 2
 #fatiguecost 5
-#range 0
+#range 10
 #aoe 15
 #restricted 115 -- LA Midgard
+#spec 17592195367040 -- AN, ignore shields, MRNH, mindless/friendly/undead immune
+#reqspellsinger
 #end
 
 #selectspell 2807
@@ -111787,23 +111804,25 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #aoe 25
 #range 0
 #restricted 115 -- LA Midgard
+#reqspellsinger
 #end
 
 #selectspell 2808
 #copyspell 245 -- Air Shield
 #name "Galdr against Blades"
-#descr "The caster chants a Galdr or spell-poem sung in a high pitched voice. The entire army will be protected from the effects of bladed weapons by the enchantment."
+#descr "The caster chants a Galdr or spell-poem sung in a high pitched voice. Much of the army will be protected from the effects of bladed weapons by the enchantment."
 #details "Grants Slashing & Piercing resistance"
-#researchlevel 7
+#researchlevel 6
 #school 4
 #path 0 3
-#pathlevel 0 5
-#fatiguecost 200
-#aoe 666
+#pathlevel 0 3
+#fatiguecost 100
+#aoe 50
 #damage 343597383680  -- Slashing & Piercing resistance
 #spec 12599296  -- Ignores shields, Friendlies only, Use UW
 #range 0
 #restricted 115 -- LA Midgard
+#reqspellsinger
 #end
 
 #selectspell 2809
@@ -111875,13 +111894,13 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #descr "The caster locates the ancient barrow of a long dead Vanadrott. Through dark magic the Vanadrott and his assembled warriors are forced to rise as Draugar and serve the caster. They are incredibly strong and can change their size at will or if they are wounded. Draugar stink of decay and rotting flesh and are surrounded by ice cold winds. The Draugar will emerge dressed in rotten finery and the magical treasures they were buried with. More powerful mages can open larger barrows containing more Draugar with each casting."
 #school 4
 #researchlevel 6
-#path 0 1
+#path 0 5
 #pathlevel 0 3
-#path 1 5
-#pathlevel 1 1
+#path 1 7
+#pathlevel 1 2
 #fatiguecost 6000
 #damage 2190  -- Draug
-#nreff 2014
+#nreff 2019 -- 25++
 #restricted 31 -- EA Helheim
 #restricted 78 -- MA Vanheim
 #restricted 79 -- Vanarus
@@ -129769,7 +129788,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 493 -- Summon Draugar
-#fatiguecost 1000
+#fatiguecost 800 -- 12 -> 8 gems
 #end
 
 #selectspell 495 -- Glosos
