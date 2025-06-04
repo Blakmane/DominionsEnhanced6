@@ -3609,12 +3609,14 @@
 #end
 
 #newarmor 508 -- 54
+#copyarmor 255 -- silver barding
 #name "Golden Barding"
 #rcost 0
-#type 5
+#type 9
 #enc 1
-#prot 12
+#protparts 12 14
 #def -1
+#magicarmor
 #end
 
 #newarmor 509 -- 55
@@ -27703,7 +27705,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 100  -- Bronze Cuirass
 #armor 135  -- Bronze cap
 #armor 2  -- Shield
-#mountmnr 1770  -- Cu Sidhe
+#mountmnr 8890 -- cataphract cu sidhe
 #skilledrider 4
 #end
 
@@ -27712,8 +27714,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #copystats 1504  -- Mounted Hirdman
 #clearweapons
 #cleararmor
-#spr1 "magicenhanced/eeaoslord.tga"
-#spr2 "magicenhanced/eeaoslord2.tga"
+#spr1 "magicenhanced/eeaoslordcu.tga"
+#spr2 "magicenhanced/eeaoslordcu2.tga"
 #unmountedspr1 "magicenhanced/un_eeaoslord.tga"
 #unmountedspr2 "magicenhanced/un_eeaoslord2.tga"
 #name "Aes Sidhe Lord"
@@ -27742,7 +27744,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 142  -- Bronze Scale Cuirass
 #armor 148  -- Crown
 #armor 66  -- Weightless Kite Shield
-#mountmnr 3521 -- Fay Horse
+#mountmnr 8890 -- cataphract cu sidhe
 #skilledrider 5
 #end
 
@@ -27770,7 +27772,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 135  -- Bronze cap
 #armor 2  -- Shield
 #forestsurvival
-#mountmnr 1770  -- Cu Sidhe
+#mountmnr 8890 -- cataphract cu sidhe
 #skilledrider 4
 #end
 
@@ -28372,9 +28374,10 @@ While in the form of an old man, all paths are increased and allows the use of N
 #unique
 #hp 18
 #mr 18
-#magicskill 5 3
-#magicskill 1 2
-#magicskill 4 3
+#magicskill 5 2 -- D
+#magicskill 1 2 -- A
+#magicskill 4 3 -- S
+#magicskill 7 3 -- G
 #magicskill 9 1
 #poorleader
 #weapon 59  -- Rod of Death
@@ -28396,9 +28399,10 @@ While in the form of an old man, all paths are increased and allows the use of N
 #hp 20
 #mr 18
 #str 14
-#magicskill 5 2
-#magicskill 1 2
-#magicskill 0 3
+#magicskill 5 2 -- D
+#magicskill 1 2 -- A
+#magicskill 7 2 -- G
+#magicskill 0 2 -- F
 #magicskill 9 2
 #armor 113  -- Skull Necklace
 #armor 92  -- Enchanted Shield
@@ -28428,9 +28432,9 @@ While in the form of an old man, all paths are increased and allows the use of N
 #goodundeadleader
 #bloodvengeance 2
 #inspirational 2
-#magicskill 5 2
-#magicskill 1 3
-#magicskill 2 2
+#magicskill 5 2 -- D
+#magicskill 7 3 -- G
+#magicskill 2 2 -- W
 #magicskill 9 1
 #weapon 487  -- Spear of the Morrigan
 #weapon 58  -- Wail
@@ -31807,7 +31811,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #noleader
 #magicskill 1 1
 #magicskill 3 1
-#magicskill 6 1
+#magicskill 7 1
 #masterrit 1
 #bonusspells 1
 #patrolbonus 0
@@ -35827,6 +35831,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #newmonster 7876
 #copystats 1909  -- Huli Jing foxform
 #clearspec
+#clearmagic
 #name "Pooka"
 #descr "The Pooka is an evil spirit of the Unseelie Court, able to manifest as a black horse, goat or rabbit. While in the form of a rabbit, the Pooka will spread deadly diseases. In battle, it will call other Pooka spirits who will explode in plague-ridden clouds when killed."
 #spr1 "magicenhanced/pookar_01.tga"
@@ -35863,7 +35868,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #hp 45
 #mor 16
 #magicskill 5 1  -- D
-#custommagic 39936 200 -- ESDB
+#custommagic 56320 200 -- ESDGB
 #end
 
 #newmonster 7879
@@ -36677,7 +36682,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #humanoid
 #weapon 644  -- Bronze Long Spear
 #armor 15  -- Full Leather
-#chaosrec 2
+#chaosrec 1
 #incunrest 1
 #pillagebonus 1
 #end
@@ -36774,14 +36779,24 @@ While in the form of an old man, all paths are increased and allows the use of N
 #end
 
 #newmonster 7914
-#copystats 1810
-#clearweapons
+#copystats 536 -- longdead buccaneer
 #name "Longdead Nemedian"
 #spr1 "magicenhanced/eeldparthspear.tga"
 #spr2 "magicenhanced/eeldparthspear2.tga"
 #descr "The Nemedians were the descendants of the Sauromatian Partholonians, a highly magical race far superior to ordinary men. They lived in the old fortress of Rath Chimbaith in ages past, however now that place is ruined and desolate. Their sacred bones lie buried on misty isles around the shores of Eriu. Through dark sorcery the Nemedian dead have been forced to rise once more, wreathed in illusions and with weapons ensorcelled."
+#clearweapons
+#cleararmor
 #weapon 473  -- Golden Spear
-#spiritsight
+#armor 142 -- bronze scale cuirass
+#armor 135 -- bronze hat
+#armor 155 -- gold shield
+#att 13
+#def 12
+#str 13
+#hp 9
+#mr 13
+#stealthy 0
+#glamour
 #end
 
 #newmonster 7915
@@ -50724,6 +50739,15 @@ Witness Guards can be recruited in any land fort."
 #noleader
 #maxage 100
 #startage 50
+#end
+
+#newmonster 8890 -- armored cu sidhe
+#copystats 1770
+#spr1 "magicenhanced/blue_armoredcusidhe1.tga"
+#spr2 "magicenhanced/blue_armoredcusidhe2.tga"
+#name "Cataphracted Cu Sidhe"
+#descr "A Cu Sidhe is a huge, dark green fay hound. They once roamed the plains and woodlands, but with the coming of man, they have retreated into the Land of the Ever Young. A few can also be found in desolate highlands where they are said to lure pregnant women into Sidhe mounds. The Cu Sidhe serve the Sidhe as companions and hunters and often fight by their side. They are sacred and can be blessed. The Aos Sidhe are known to ride them as cataphracted mounts into battle."
+#armor 508 -- golden barding
 #end
 
 --#newmonster 8684 -- LA C'tis Hierodule
@@ -78679,38 +78703,53 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #descr "The Fir Bolg once inhabited the realms now known as Eriu and Man. They were subjugated by the Tuatha and served as farmers and warriors for that race. With the coming of man, their masters withdrew from the world and most of the Fir Bolg were slain. A few still remain in the kingdom of Eriu where their clans toil under the Milesians watchful eye. Ancient clan rivalries often spill over into cattle raids or worse and lands inhabited by Fir Bolg are rarely at peace for long. They use ancient armaments made from bronze and leather."
 #gcost 14
 #rpcost 12
-#chaosrec 2
-#incunrest 2
+#chaosrec 1
+#incunrest 1
 #pillagebonus 1
 #end
 
-#selectmonster 1786  -- Fir Bolg
+#selectmonster 1786  -- Fir Bolg Axe
 #descr "The Fir Bolg once inhabited the realms now known as Eriu and Man. They were subjugated by the Tuatha and served as farmers and warriors for that race. With the coming of man, their masters withdrew from the world and most of the Fir Bolg were slain. A few still remain in the kingdom of Eriu where their clans toil under the Milesians watchful eye. Ancient clan rivalries often spill over into cattle raids or worse and lands inhabited by Fir Bolg are rarely at peace for long. They use ancient armaments made from bronze and leather."
 #gcost 16
 #rpcost 14
-#chaosrec 2
-#incunrest 5
+#chaosrec 1
+#incunrest 1
 #berserk 1
 #pillagebonus 1
 #end
 
-#selectmonster 1787  -- Fir Bolg
+#selectmonster 1787  -- Fir Bolg Spear
 #descr "The Fir Bolg once inhabited the realms now known as Eriu and Man. They were subjugated by the Tuatha and served as farmers and warriors for that race. With the coming of man, their masters withdrew from the world and most of the Fir Bolg were slain. A few still remain in the kingdom of Eriu where their clans toil under the Milesians watchful eye. Ancient clan rivalries often spill over into cattle raids or worse and lands inhabited by Fir Bolg are rarely at peace for long. They use ancient armaments made from bronze and leather."
 #gcost 14
 #rpcost 13
-#chaosrec 2
-#incunrest 2
+#chaosrec 1
+#incunrest 1
 #pillagebonus 1
 #end
 
 #selectmonster 1788  -- Fir Bolg Champion
 #name "Fir Bolg Clan Chief"
 #descr "The Fir Bolg once inhabited the realms now known as Eriu and Man. They were subjugated by the Tuatha and served as farmers and warriors for that race. With the coming of man, their masters withdrew from the world and most of the Fir Bolg were slain. A few still remain in the kingdom of Eriu where their clans toil under the Milesians watchful eye. Ancient clan rivalries often spill over into cattle raids or worse and lands inhabited by Fir Bolg are rarely at peace for long. They use ancient armaments made from bronze and leather. Their chieftains are headstrong warrior-poets that lead the clan raids for cattle and other goods."
-#gcost 45
+#gcost 65
 #chaosrec 5
-#incunrest 10
+#incunrest 5
 #pillagebonus 5
 #end
+
+#selectmonster 3630 -- Cattle Raider
+#spr1 "magicenhanced/eefbgallow.tga"
+#spr2 "magicenhanced/eefbgallow2.tga"
+#descr "Marginalized in Eriu society the Fir Bolg mainly fight other clans and raid their cattle. They are a passionate race, subjugated by other races in turn, and they have harbored resentment and rage for centuries. Fir Bolg Cattle Raiders are elite warriors and champions who channel that resentment and release it in battle to enter a frenzied battle rage. This might not keep them alive, but they will not give up and will attack with increased ferocity and strength."
+#gcost 10026
+#chaosrec 2
+#incunrest 1
+#mor 13
+#pillagebonus 1
+#cleararmor
+#armor 136  -- Bronze Scale Hauberk
+#armor 135  -- Bronze Cap
+#end
+
 
 #selectmonster 1791  -- Nemedian Champion
 #okmagicleader
@@ -93624,6 +93663,15 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 7433 -- drowned one
 #homemon 7507 -- redcap
 #homemon 1821 -- morrigan
+#end
+
+#newsite 2432
+#clear
+#name "EA Fomoria Summons Continued"
+#rarity 5
+#level 0
+#path 5
+#look 4
 #homecom 7659 -- puck
 #homecom 7434 -- murduchann
 #homecom 7521 -- nuckelavee
@@ -93631,6 +93679,9 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7670 -- grindy
 #homecom 7570 -- robin
 #homecom 8869 -- fomorian god-king
+#homecom 7495 -- morrig sorc
+#homecom 7496 -- morrig queen
+#homecom 7497 -- morrig warlead
 #end
 
 #newsite 2386
@@ -94328,6 +94379,71 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 2876
 #end
 
+#newsite 2429
+#clear
+#name "MA Eriu Summons"
+#rarity 5
+#level 0
+#path 7
+#look 2
+#homemon 8021 -- dire boar
+#homemon 1768 -- black dog
+#homemon 1768 -- barg
+#homemon 1770 -- cu sidhe
+#homemon 3899 -- unicorn
+#homemon 7673 -- fianna
+#homemon 7454 -- illusory cu sidhe
+#homemon 7453 -- illusory sidhe 
+#homemon 7507 -- redcap
+#homemon 7471 -- aes sidhe
+#homemon 7470 -- aes rider
+#homemon 7347 -- aes horn
+#homemon 7655 -- bramble
+#homemon 7656 -- thistle
+#homemon 7914 -- londead nemed
+#homemon 7879 -- preserved pict
+#end
+
+#newsite 2430
+#clear
+#name "MA Eriu Summons Continued"
+#rarity 5
+#level 0
+#path 7
+#look 2
+#homecom 7872 -- pooka
+#homecom 7658 -- urisk
+#homecom 7325 -- nemed sorc
+#homecom 7469 -- aes lord
+#homecom 7657 -- gorsechief
+#homecom 7659 -- puck
+#homecom 7662 -- dolmen
+#homecom 7870 -- clurich
+#homecom 7881 -- pres pict chief
+#homecom 7878 -- peat mummy
+#homecom 7237 -- horned one
+#homecom 7570 -- robin redcap
+#homecom 7887 -- bean queen
+#homecom 7495 -- morrig sorc
+#homecom 7496 -- morrig queen
+#homecom 7497 -- morrig warlead
+#end
+
+#newsite 2431
+#clear
+#name "MA Eriu Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 3
+#homecom 1806  -- Fianna, multihero
+#homecom 1777  -- Ferdiad, Fir Bolg Hero
+#homecom 1844  -- Scathath, Trainer of Heroes
+#homecom 1778  -- Cu Chulainn,
+#homecom 1794  -- Tuan, the Last Partholonian
+#end
+
+-- 2432 used by EA Fomoria Summons Continued
 
 
 
@@ -99131,6 +99247,7 @@ Priests: Average"
 #addgod 8349 -- Great Gull
 
 #futuresite "EA Fomoria Summons"
+#futuresite "EA Fomoria Summons Continued"
 #futuresite "EA Fomoria Heroes"
 #end
 
@@ -99617,7 +99734,7 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #selectnation 58 -- MA Eriu
 #hero1 1777  -- Ferdiad, Fir Bolg Hero
 #hero2 1844  -- Scathath, Trainer of Heroes
-#hero3 1545  -- Cu Chulainn,
+#hero3 1778  -- Cu Chulainn,
 #hero4 1794  -- Tuan, the Last Partholonian
 #multihero1 1806  -- Fianna, multihero
 #uwbuild 1
@@ -99625,13 +99742,17 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #addgod 8455 -- Sacred Grove
 #cheapgod20 10007 -- Mother of Tuathas
 #addrecunit 7909 -- Fir Bolg Militia
-#addrecunit 7910 -- Fir Bolg Piper
-#addrecunit 7911 -- Fir Bolg Border Reiver
-#addrecunit 7912 -- Fir Bolg Gallowglaich
-#addrecunit 7880 -- Chariot
-#addreccom 1774  -- Bean Sidhe
-#coastcom1 7871 -- Mil Prince
-#startsite "Dun Scathiag"
+--#addrecunit 7910 -- Fir Bolg Piper
+--#addrecunit 7911 -- Fir Bolg Border Reiver
+--#addrecunit 7912 -- Fir Bolg Gallowglaich
+--#addrecunit 7880 -- Chariot
+--#addreccom 1774  -- Bean Sidhe
+--#coastcom1 7871 -- Mil Prince
+--#startsite "Dun Scathiag"
+
+#futuresite "MA Eriu Summons"
+#futuresite "MA Eriu Summons Continued"
+#futuresite "MA Eriu Heroes"
 #end
 
 #selectnation 60 -- MA Ulm
@@ -110615,8 +110736,8 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 
 #selectspell 2738
 #copyspell 935 -- Pack of Wolves
-#name "Summon Bramble Spirit"
-#descr "The caster calls on the spirits of the plants to aid them and a Bramble spirit answers the call. The bramble is amongst the lowliest of plants and its spirits are not blessed with great intelligence. They appear as semi-humanoid masses of brambles and serve as foot soldiers in the armies of the forest. Plant spirits are ethereal and difficult to harm with mortal weapons."
+#name "Summon Bramble Spirits"
+#descr "The caster calls on the spirits of the plants to aid them and a few Bramble spirits answer the call. The bramble is amongst the lowliest of plants and its spirits are not blessed with great intelligence. They appear as semi-humanoid masses of brambles and serve as foot soldiers in the armies of the forest. Plant spirits are ethereal and difficult to harm with mortal weapons."
 #researchlevel 2
 #fatiguecost 400
 #nreff 5
@@ -110630,7 +110751,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #selectspell 2739
 #copyspell 935 -- Pack of Wolves
 #name "Summon Thistle Spirit"
-#descr "The caster calls on the spirits of the plants to aid them and a Thistle spirit answers the call. The thistle is a plant of some standing and its spirits are well regarded. They appear as large masses of thistles in humanoid form and bear enchanted spears covered with poisonous thorns. Plant spirits are ethereal and difficult to harm with mortal weapons."
+#descr "The caster calls on the spirits of the plants to aid them and a few Thistle spirits answer the call. The thistle is a plant of some standing and its spirits are well regarded. They appear as large masses of thistles in humanoid form and bear enchanted spears covered with poisonous thorns. Plant spirits are ethereal and difficult to harm with mortal weapons."
 #researchlevel 4
 #pathlevel 0 2
 #fatiguecost 500
@@ -110750,10 +110871,10 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #researchlevel 4
 #path 0 5
 #pathlevel 0 2
-#path 1 2
+#path 1 7
 #pathlevel 1 1
 #fatiguecost 800
-#nreff 505
+#nreff 508
 #damage 7914 -- Longdead Nemedian
 #onlycoastsrc 1
 #restricted 58 -- Eriu
@@ -110879,7 +111000,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #copyspell 1024 -- Awaken Sleeper
 #name "Contact Nemedian"
 #descr "The caster reaches out to the fey realm to contact the remaining Nemedians. Descendants of the Partholonians and ancestors of the Tuatha and the Sidhe, they are a highly magical race far superior to ordinary men. The caster will gain the services of a Nemedian Sorceress of great power. They will be enticed to serve in the mortal realm for a time before returning to their enchanted home."
-#path 0 1
+#path 0 7
 #path 1 5
 #pathlevel 0 3
 #pathlevel 1 1
@@ -110955,22 +111076,6 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #restricted 58 -- Eriu
 #end
 
-#selectspell 2761
-#copyspell 939 -- Summon Lesser Fire Elemental
-#name "Call Morrigans"
-#descr "The caster summons a few Morrigans to the battlefield in an attempt to turn the tide. The Morrigans are heralds of death, collectors of souls and bringers of strife. They are the fates of the battleground, weaving looms of entrails with arrows for shuttles. Their chant colors the skies red before battle. In the shapes of crows they pick out the eyes of the dead. The Morrigans are horrible beings of death and destruction. They appear as grisly warrior women armed with spears enchanted to kill. They are sacred to the people of Eriu."
-#researchlevel 6
-#path 0 5
-#path 1 1
-#pathlevel 0 2
-#pathlevel 1 1
-#nreff 1001
-#explspr 10001
-#sound 42
-#damage 1821  -- Morrigan
-#restricted 58 -- Eriu
-#end
-
 #selectspell 2762
 #name "Robin Redcap"
 #descr "The caster calls on the malevolent fey known as Robin Redcap to appear. This creature delights in drinking the blood of travellers and is skilled in the magic of glamour and death. Robin Redcap is a unique being and cannot answer the call if already in the mortal realm."
@@ -111010,9 +111115,9 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #descr "It was long since that the last Fomorian left the land of Eriu, but their legacy still remains. Every now and then a baby is born with Fomorian blood in his veins. They are destined to become heroes and are trained to become great warrior poets. They join the band of the Fianna and are respected throughout Eriu. The caster calls to the Fianna and they will appear in a friendly province of the casters choosing. The Fianna are sacred."
 #school 4
 #researchlevel 5
-#path 0 1
+#path 0 7
 #pathlevel 0 3
-#path 1 6
+#path 1 1
 #pathlevel 1 2
 #fatiguecost 1500
 #effect 10037
@@ -111060,12 +111165,12 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #descr "The caster sings a song of ancient Tuatha heroes to attract good fortune. This enchanted song grants the caster and nearby friends a chance of avoiding damage that would otherwise kill them."
 #school 4
 #researchlevel 4
-#path 0 6
+#path 0 7
 #pathlevel 0 1
 #range 0
 #aoe 1004
 #fatiguecost 80
-#casttime 200
+#casttime 150
 #restricted 58
 #end
 
@@ -111080,11 +111185,11 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #end
 
 #selectspell 2769
-#name "25 Pict Warriors"
+#name "40 Pict Warriors"
 #school -1
 #researchlevel 0
 #effect 10001
-#nreff 25
+#nreff 40
 #damage 7879
 #restricted 58
 #nextspell 2768
@@ -126084,6 +126189,7 @@ This Prayer is in the path of Fire, and may be extra potent depending on the Pre
 #spec 8388608 -- UWOK
 #restricted 15 -- EA Agartha
 #nextspell 4000
+#godpathspell 0
 #end
 
 #selectspell 3941 -- Air Prayer
@@ -126107,6 +126213,7 @@ This Prayer is in the path of Air, and may be extra potent depending on the Pret
 #spec 8388608 -- UWOK
 #restricted 15 -- EA Agartha
 #nextspell 4001
+#godpathspell 1
 #end
 
 #selectspell 3942 -- Water Prayer
@@ -126130,6 +126237,7 @@ This Prayer is in the path of Water, and may be extra potent depending on the Pr
 #spec 8388608 -- UWOK
 #restricted 15 -- EA Agartha
 #nextspell 4002
+#godpathspell 2
 #end
 
 #selectspell 3943 -- Earth Prayer
@@ -126153,6 +126261,7 @@ This Prayer is in the path of Earth, and may be extra potent depending on the Pr
 #spec 8388608 -- UWOK
 #restricted 15 -- EA Agartha
 #nextspell 4003
+#godpathspell 3
 #end
 
 #selectspell 3944 -- Astral Prayer
@@ -126176,6 +126285,7 @@ This Prayer is in the path of Astral, and may be extra potent depending on the P
 #spec 8388608 -- UWOK
 #restricted 15 -- EA Agartha
 #nextspell 4004
+#godpathspell 4
 #end
 
 #selectspell 3945 -- Death Prayer
@@ -126199,6 +126309,7 @@ This Prayer is in the path of Death, and may be extra potent depending on the Pr
 #spec 8388608 -- UWOK
 #restricted 15 -- EA Agartha
 #nextspell 4005
+#godpathspell 5
 #end
 
 #selectspell 3946 -- Nature Prayer
@@ -126222,6 +126333,7 @@ This Prayer is in the path of Nature, and may be extra potent depending on the P
 #spec 8388608 -- UWOK
 #restricted 15 -- EA Agartha
 #nextspell 4006
+#godpathspell 6
 #end
 
 #selectspell 3947 -- Glamour Prayer
@@ -126245,6 +126357,7 @@ This Prayer is in the path of Glamour, and may be extra potent depending on the 
 #spec 8388608 -- UWOK
 #restricted 15 -- EA Agartha
 #nextspell 4007
+#godpathspell 7
 #end
 
 #selectspell 3948 -- Blood Prayer
@@ -126268,6 +126381,7 @@ This Prayer is in the path of Blood, and may be extra potent depending on the Pr
 #spec 8388608 -- UWOK
 #restricted 15 -- EA Agartha
 #nextspell 4008
+#godpathspell 8
 #end
 
 
@@ -126594,332 +126708,6 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #onlyatsite 2325 -- Altar of Great Prayer
 #restricted 15 -- EA Agartha
 #nextspell 4018
-#end
-
-
-#selectspell 4029 -- Generic Grand Prayer indicator nextspell
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Beseech Pretender God"
-#descr "."
-#school -1
-#path 0 9
-#pathlevel 0 1
-#damage 529 -- Generic indicator event
-#end
-
-#selectspell 4020 -- Fire Grand Prayer indicator
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Path of Fire"
-#descr "."
-#school -1
-#path 0 0
-#pathlevel 0 1
-#damage 520 -- Fire indicator event
-#nextspell 4029 -- Generic indicator
-#end
-
-#selectspell 4021 -- Air Grand Prayer indicator
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Path of Air"
-#descr "."
-#school -1
-#path 0 1
-#pathlevel 0 1
-#damage 521 -- Air indicator event
-#nextspell 4029 -- Generic indicator
-#end
-
-#selectspell 4022 -- Water Grand Prayer indicator
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Path of Water"
-#descr "."
-#school -1
-#path 0 2
-#pathlevel 0 1
-#damage 522 -- Water indicator event
-#nextspell 4029 -- Generic indicator
-#end
-
-#selectspell 4023 -- Earth Grand Prayer indicator
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Path of Earth"
-#descr "."
-#school -1
-#path 0 3
-#pathlevel 0 1
-#damage 523 -- Earth indicator event
-#nextspell 4029 -- Generic indicator
-#end
-
-#selectspell 4024 -- Astral Grand Prayer indicator
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Path of Earth"
-#descr "."
-#school -1
-#path 0 4
-#pathlevel 0 1
-#damage 524 -- Astral indicator event
-#nextspell 4029 -- Generic indicator
-#end
-
-#selectspell 4025 -- Death Grand Prayer indicator
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Path of Death"
-#descr "."
-#school -1
-#path 0 5
-#pathlevel 0 1
-#damage 525 -- Death indicator event
-#nextspell 4029 -- Generic indicator
-#end
-
-#selectspell 4026 -- Nature Grand Prayer indicator
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Path of Nature"
-#descr "."
-#school -1
-#path 0 6
-#pathlevel 0 1
-#damage 526 -- Nature indicator event
-#nextspell 4029 -- Generic indicator
-#end
-
-#selectspell 4027 -- Glamour Grand Prayer indicator
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Path of Glamour"
-#descr "."
-#school -1
-#path 0 7
-#pathlevel 0 1
-#damage 527 -- Glamour indicator event
-#nextspell 4029 -- Generic indicator
-#end
-
-#selectspell 4028 -- Blood Grand Prayer indicator
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Path of Blood"
-#descr "."
-#school -1
-#path 0 8
-#pathlevel 0 1
-#damage 528 -- Blood indicator event
-#nextspell 4029 -- Generic indicator
-#end
-
-#selectspell 3960 -- Fire Grand Prayer
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Grand Prayer of Fire"
-#descr "The caster initiates a Grand Prayer to the Pretender God with an offering of gems."
-#details "The effects of the Grand Prayer depend on the nation's chosen Pretender.
-Only one Grand Prayer can be enacted per province per turn, and the Grand Prayer will fail if the province does not have a temple or is under siege.
-This Grand Prayer is in the path of Fire, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
-#researchlevel 4
-#path 0 0
-#pathlevel 0 1
-#path 1 9
-#pathlevel 1 1
-#fatiguecost 3000
-#effect 10083
-#damage -1
-#nreff 1
-#provrange 0
-#spec 8388608 -- UWOK
-#restricted 15 -- EA Agartha
-#onlyatsite 2326 -- Altar of Grand Prayer
-#nextspell 4020
-#end
-
-#selectspell 3961 -- Air Grand Prayer
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Grand Prayer of Air"
-#descr "The caster initiates a Grand Prayer to the Pretender God with an offering of gems."
-#details "The effects of the Grand Prayer depend on the nation's chosen Pretender.
-Only one Grand Prayer can be enacted per province per turn, and the Grand Prayer will fail if the province does not have a temple or is under siege.
-This Grand Prayer is in the path of Air, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
-#researchlevel 4
-#path 0 1
-#pathlevel 0 1
-#path 1 9
-#pathlevel 1 1
-#fatiguecost 3000
-#effect 10083
-#damage -1
-#nreff 1
-#provrange 0
-#spec 8388608 -- UWOK
-#onlyatsite 2326 -- Altar of Grand Prayer
-#restricted 15 -- EA Agartha
-#nextspell 4021
-#end
-
-#selectspell 3962 -- Water Grand Prayer
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Grand Prayer of Water"
-#descr "The caster initiates a Grand Prayer to the Pretender God with an offering of gems."
-#details "The effects of the Grand Prayer depend on the nation's chosen Pretender.
-Only one Grand Prayer can be enacted per province per turn, and the Grand Prayer will fail if the province does not have a temple or is under siege.
-This Grand Prayer is in the path of Water, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
-#researchlevel 4
-#path 0 2
-#pathlevel 0 1
-#path 1 9
-#pathlevel 1 1
-#fatiguecost 3000
-#effect 10083
-#damage -1
-#nreff 1
-#provrange 0
-#spec 8388608 -- UWOK
-#onlyatsite 2326 -- Altar of Grand Prayer
-#restricted 15 -- EA Agartha
-#nextspell 4022
-#end
-
-#selectspell 3963 -- Earth Grand Prayer
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Grand Prayer of Earth"
-#descr "The caster initiates a Grand Prayer to the Pretender God with an offering of gems."
-#details "The effects of the Grand Prayer depend on the nation's chosen Pretender.
-Only one Grand Prayer can be enacted per province per turn, and the Grand Prayer will fail if the province does not have a temple or is under siege.
-This Grand Prayer is in the path of Earth, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
-#researchlevel 4
-#path 0 3
-#pathlevel 0 1
-#path 1 9
-#pathlevel 1 1
-#fatiguecost 3000
-#effect 10083
-#damage -1
-#nreff 1
-#provrange 0
-#spec 8388608 -- UWOK
-#onlyatsite 2326 -- Altar of Grand Prayer
-#restricted 15 -- EA Agartha
-#nextspell 4023
-#end
-
-#selectspell 3964 -- Astral Grand Prayer
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Grand Prayer of Astral"
-#descr "The caster initiates a Grand Prayer to the Pretender God with an offering of pearls."
-#details "The effects of the Grand Prayer depend on the nation's chosen Pretender.
-Only one Grand Prayer can be enacted per province per turn, and the Grand Prayer will fail if the province does not have a temple or is under siege.
-This Grand Prayer is in the path of Astral, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
-#researchlevel 4
-#path 0 4
-#pathlevel 0 1
-#path 1 9
-#pathlevel 1 1
-#fatiguecost 3000
-#effect 10083
-#damage -1
-#nreff 1
-#provrange 0
-#spec 8388608 -- UWOK
-#onlyatsite 2326 -- Altar of Grand Prayer
-#restricted 15 -- EA Agartha
-#nextspell 4024
-#end
-
-#selectspell 3965 -- Death Grand Prayer
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Grand Prayer of Death"
-#descr "The caster initiates a Grand Prayer to the Pretender God with an offering of gems."
-#details "The effects of the Grand Prayer depend on the nation's chosen Pretender.
-Only one Grand Prayer can be enacted per province per turn, and the Grand Prayer will fail if the province does not have a temple or is under siege.
-This Grand Prayer is in the path of Death, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
-#researchlevel 4
-#path 0 5
-#pathlevel 0 1
-#path 1 9
-#pathlevel 1 1
-#fatiguecost 3000
-#effect 10083
-#damage -1
-#nreff 1
-#provrange 0
-#spec 8388608 -- UWOK
-#onlyatsite 2326 -- Altar of Grand Prayer
-#restricted 15 -- EA Agartha
-#nextspell 4025
-#end
-
-#selectspell 3966 -- Nature Grand Prayer
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Grand Prayer of Nature"
-#descr "The caster initiates a Grand Prayer to the Pretender God with an offering of gems."
-#details "The effects of the Grand Prayer depend on the nation's chosen Pretender.
-Only one Grand Prayer can be enacted per province per turn, and the Grand Prayer will fail if the province does not have a temple or is under siege.
-This Grand Prayer is in the path of Nature, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
-#researchlevel 4
-#path 0 6
-#pathlevel 0 1
-#path 1 9
-#pathlevel 1 1
-#fatiguecost 3000
-#effect 10083
-#damage -1
-#nreff 1
-#provrange 0
-#spec 8388608 -- UWOK
-#onlyatsite 2326 -- Altar of Grand Prayer
-#restricted 15 -- EA Agartha
-#nextspell 4026
-#end
-
-#selectspell 3967 -- Glamour Grand Prayer
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Grand Prayer of Glamour"
-#descr "The caster initiates a Grand Prayer to the Pretender God with an offering of gems."
-#details "The effects of the Grand Prayer depend on the nation's chosen Pretender.
-Only one Grand Prayer can be enacted per province per turn, and the Grand Prayer will fail if the province does not have a temple or is under siege.
-This Grand Prayer is in the path of Glamour, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
-#researchlevel 4
-#path 0 7
-#pathlevel 0 1
-#path 1 9
-#pathlevel 1 1
-#fatiguecost 3000
-#effect 10083
-#damage -1
-#nreff 1
-#provrange 0
-#spec 8388608 -- UWOK
-#onlyatsite 2326 -- Altar of Grand Prayer
-#restricted 15 -- EA Agartha
-#nextspell 4027
-#end
-
-#selectspell 3968 -- Blood Grand Prayer
-#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Grand Prayer of Blood"
-#descr "The caster initiates a Grand Prayer to the Pretender God with an offering of sacrifices."
-#details "The effects of the Grand Prayer depend on the nation's chosen Pretender.
-Only one Grand Prayer can be enacted per province per turn, and the Grand Prayer will fail if the province does not have a temple or is under siege.
-This Grand Prayer is in the path of Blood, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
-#researchlevel 4
-#path 0 8
-#pathlevel 0 1
-#path 1 9
-#pathlevel 1 1
-#fatiguecost 6000
-#effect 10083
-#damage -1
-#nreff 1
-#provrange 0
-#spec 8388608 -- UWOK
-#onlyatsite 2326 -- Altar of Grand Prayer
-#restricted 15 -- EA Agartha
-#nextspell 4028
 #end
 
 #selectspell 3969 -- Summon Papinijuwari
@@ -129305,7 +129093,7 @@ Applies the effects of Holy Avenger to the caster"
 
 #selectspell 4136 -- Brazen Bull
 #name "Awaken Brazen Bull"
-#descr "."
+#descr "Brazen Bulls are altars of worship in Berytos. Berytian parents sometime grant a offering of flesh and blood in return for preventing misfortune. Priests place the sacrifice inside the bull through the hole in its back. After that, a bonfire is lit beneath the brass statue as the priests call to the gods to accept the offering. Through great sacrifice these altars may be imbued with power, awakening the construct to serve the coming God."
 #school 6 -- Blood
 #researchlevel 5
 #path 0 8 -- B
@@ -129792,10 +129580,6 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 439 -- Summon Cu Sidhe
 --#nreff 508
 --#fatiguecost 600
-#end
-
-#selectspell 439 -- Contact Cu Sidhe
-#nreff 508
 #end
 
 #selectspell 440
