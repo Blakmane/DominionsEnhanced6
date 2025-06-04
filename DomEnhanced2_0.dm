@@ -77015,6 +77015,18 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spellsinger
 #end
 
+#selectmonster 848 -- Eriu Sidhe Lord
+#okmagicleader
+#end
+
+#selectmonster 850 -- Eriu Sidhe Champion
+#okmagicleader
+#end
+
+#selectmonster 856 -- Eriu Tuatha
+#okmagicleader
+#end
+
 #selectmonster 852  -- Skinshifter Werewolf
 --#firstshape 0
 --#shapechange 853
@@ -92074,17 +92086,17 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #path 6
 #look 5
+#homecom 7429 -- mummy prince
+#homecom 7426 -- reven
+#homecom 7457 -- ba spirit
+#homecom 7427 -- spect sauro
+#homecom 7430 -- lizard lich
 #homecom 525 -- couatl
 #homecom 1649 -- scorp man
 #homecom 7256 -- sun neter
 #homecom 7257 -- chaos neter
 #homecom 7258 -- moon neter
 #homecom 7271 -- heretic tomb king
-#homecom 7426 -- reven
-#homecom 7427 -- spect sauro
-#homecom 7429 -- mummy prince
-#homecom 7430 -- lizard lich
-#homecom 7457 -- ba spirit
 #end
 
 #newsite 2280
@@ -94444,6 +94456,57 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 -- 2432 used by EA Fomoria Summons Continued
+
+#newsite 2433
+#name "MA C'tis Summons"
+#level 0
+#rarity 5
+#path 6
+#look 2
+#homemon 628 -- lion
+#homemon 1358 -- toad
+#homemon 2186 -- sacred croc
+#homemon 7422 -- sphinx child
+#homemon 7423 -- mast child
+#homemon 7424 -- pyramid child
+#homemon 7425 -- valley child
+--#homemon 7893 -- scarab
+#homemon 7894 -- war scarab
+#homemon 7994 -- serp
+#end
+
+#newsite 2434
+#name "MA C'tis Summons Continued"
+#level 0
+#rarity 5
+#path 6
+#look 2
+#homecom 7429 -- mummy prince
+#homecom 7426 -- reven
+#homecom 7457 -- ba spirit
+#homecom 7427 -- spect sauro
+#homecom 7430 -- lizard lich
+#homecom 525 -- couatl
+#homecom 1649 -- scorp man
+#homecom 7256 -- sun neter
+#homecom 7257 -- chaos neter
+#homecom 7258 -- moon neter
+#homecom 7271 -- heretic tomb king
+#end
+
+#newsite 2435
+#clear
+#name "MA C'tis Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 2
+#homecom 379
+#homecom 585
+#homecom 635
+#homecom 2272
+#homecom 2394
+#end
 
 
 
@@ -99931,6 +99994,10 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #startunitnbrs1 20
 #startunittype2 165  -- Heavy Infantry
 #startunitnbrs2 20
+
+#futuresite "MA C'tis Summons"
+#futuresite "MA C'tis Summons Continued"
+#futuresite "MA C'tis Heroes"
 #end
 
 #selectnation 52 -- MA Panganea
@@ -109890,7 +109957,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #pathlevel 0 2
 #damage 7894
 #nreff 1
-#fatiguecost 500
+#fatiguecost 600
 #restricted 27 -- EA C'tis
 #restricted 75 -- MA Ctis
 #restricted 113 -- LA Ctis
@@ -109905,7 +109972,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #path 1 6
 #pathlevel 0 2
 #pathlevel 1 1
-#fatiguecost 400
+#fatiguecost 500
 #nreff 2
 #damage 7994
 #restricted 27 -- EA C'tis
@@ -129105,6 +129172,8 @@ Applies the effects of Holy Avenger to the caster"
 #fatiguecost 3800
 #restricted 29 -- Berytos
 #end
+
+
 
 
 -- END OF NEW SPELLS
