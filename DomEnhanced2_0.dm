@@ -3872,7 +3872,7 @@
 #end
 
 #newarmor 541 -- spectral 5 prot
-#name "Spectral Leather Cuirass"
+#name "Spectral Leather"
 #type 5
 #prot 4
 #enc 0
@@ -3882,7 +3882,16 @@
 
 
 #newarmor 542 -- spectral 8 prot
-#name "Spectral Leather Hauberk"
+#name "Spectral Leather"
+#type 5
+#prot 5
+#enc 0
+#rcost 0
+#magicarmor
+#end
+
+#newarmor 543 -- spectral 10 prot
+#name "Spectral Mail"
 #type 5
 #prot 6
 #enc 0
@@ -3890,8 +3899,8 @@
 #magicarmor
 #end
 
-#newarmor 543 -- spectral 10 prot
-#name "Spectral Ring Mail"
+#newarmor 544 -- spectral 12 prot
+#name "Spectral Mail"
 #type 5
 #prot 7
 #enc 0
@@ -3899,38 +3908,29 @@
 #magicarmor
 #end
 
-#newarmor 544 -- spectral 12 prot
-#name "Spectral Scale Mail"
-#type 5
-#prot 9
-#enc 0
-#rcost 0
-#magicarmor
-#end
-
 
 #newarmor 545 -- spectral 14 prot
-#name "Spectral Plate Cuirass"
+#name "Spectral Plate"
 #type 5
-#prot 11
+#prot 8
 #enc 0
 #rcost 0
 #magicarmor
 #end
 
 #newarmor 546 -- spectral 18 prot
-#name "Spectral Plate Hauberk"
+#name "Spectral Plate"
 #type 5
-#prot 14
+#prot 10
 #enc 0
 #rcost 0
 #magicarmor
 #end
 
 #newarmor 547 -- spectral 21 prot
-#name "Spectral Full Plate"
+#name "Spectral Plate"
 #type 5
-#prot 17
+#prot 12
 #enc 0
 #rcost 0
 #magicarmor
@@ -3948,7 +3948,7 @@
 #newarmor 549 -- spectral helmet
 #name "Spectral Helmet"
 #type 6
-#prot 16
+#prot 9
 #enc 0
 #rcost 0
 #magicarmor
@@ -26084,7 +26084,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Spectral Melia"
 #spr1 "magicenhanced/eesmelia.tga"
 #spr2 "magicenhanced/eesmelia2.tga"
-#clearweapons
 #descr "With the fall of ancient Therodos many Melia perished, and like the other inhabitants their shattered souls were barred from entering the Underworld. Now they linger on amongst the ruins unaware of their undead existence. Where once their great beauty inspired awe in onlookers, now their ghostly visage chills the soul of those that gaze upon it. Being dead their Divine Dances no longer have the power they once held, and their magic has been likewise tainted."
 #magicskill 5 1
 #magicskill 9 1
@@ -26106,7 +26105,12 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #holy
 #heal
 #female
+#clearweapons
+#cleararmor
 #weapon 281  -- Spectral Sword
+#armor 545 -- Spectral Plate
+#armor 156 -- Spectral Shield
+#armor 549 -- Spectral Helm
 #nametype 108  -- Arco Female
 #end
 
@@ -80390,6 +80394,62 @@ Cost 28 RP."
 #montag 1006  -- No Transformation spells
 #end
 
+#selectmonster 2836 -- Daktyl
+#magicskill 5 1
+#end
+
+#selectmonster 2837 -- Korybant
+#swimming
+#end
+
+#selectmonster 2839 -- Korybant
+#swimming
+#end
+
+#selectmonster 2833 -- Melia
+#giftofwater 20
+#swimming
+#end
+
+#selectmonster 2840  -- Spectral Archer
+#mr 11
+#cleararmor
+#armor 541 -- Spectral Leather
+#armor 548 -- Spectral Cap
+#end
+
+#selectmonster 2841  -- Spectral Peltast
+#mr 11
+#cleararmor
+#armor 541 -- Spectral Leather
+#armor 156 -- Spectral Shield
+#armor 548 -- Spectral Cap
+#end
+
+#selectmonster 2842  -- Spectral Hoplite
+#hp 14
+#mr 11
+#cleararmor
+#armor 545 -- Spectral Plate
+#armor 156 -- Spectral Shield
+#armor 549 -- Spectral Helm
+#end
+
+#selectmonster 2843  -- Spectral Kourete
+#mr 13
+#cleararmor
+#armor 545 -- Spectral Plate
+#armor 156 -- Spectral Shield
+#armor 549 -- Spectral Helm
+#end
+
+#selectmonster 2844  -- Spectral Commander
+#mr 13
+#cleararmor
+#armor 546 -- Spectral Plate
+#armor 156 -- Spectral Shield
+#armor 549 -- Spectral Helm
+#end
 
 #selectmonster 2854  -- Flame Jelly
 --#montag 1018
@@ -94616,6 +94676,54 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8164
 #end
 
+#newsite 2440
+#name "EA Therodos Ghosts"
+#level 0
+#rarity 5
+#path 5
+#look 8
+#homemon 2840 -- archer
+#homemon 2841 -- pelt
+#homemon 2842 -- hoplite
+#homemon 2843 -- kourete
+#homecom 2844 -- commander
+#homecom 2846 -- philosopher
+#homecom 2845 -- ephor
+#homecom 7394 -- spectral melia
+#end
+
+#newsite 2441
+#name "EA Therodos Summons"
+#level 0
+#rarity 5
+#path 2
+#look 5
+#homemon 3119 -- spartae
+#homemon 3127 -- ker
+#homemon 3168 -- khalk
+#homemon 3210 -- lampad
+#homemon 7704 -- blemm
+#homecom 2846 -- philosopher
+#homecom 2845 -- ephor
+#homecom 7394 -- spectral melia
+#homecom 3724 -- air ele s7
+#homecom 7818 -- telkhine
+#homecom 7821 -- colossus
+#homecom 7276 -- cetus
+#end
+
+#newsite 2442
+#clear
+#name "EA Therodos Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 2
+#homecom 2871
+#homecom 2878
+#homecom 2880
+#end
+
 
 
 
@@ -99811,6 +99919,69 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #startunitnbrs1 20
 #startunittype2 2842  -- Hoplite
 #startunitnbrs2 20
+
+#homefort 13 -- Fortified City
+
+#plainfortrec 2827 -- Archer
+#forestfortrec 2827 -- Archer
+#mountainfortrec 2827 -- Archer
+#swampfortrec 2827 -- Archer
+#wastefortrec 2827 -- Archer
+#farmfortrec 2827 -- Archer
+
+#plainfortrec 2828 -- Peltast
+#forestfortrec 2828 -- Peltast
+#mountainfortrec 2828 -- Peltast
+#swampfortrec 2828 -- Peltast
+#wastefortrec 2828 -- Peltast
+#farmfortrec 2828 -- Peltast
+
+#plainfortrec 2829 -- Hoplite
+#forestfortrec 2829 -- Hoplite
+#mountainfortrec 2829 -- Hoplite
+#swampfortrec 2829 -- Hoplite
+#wastefortrec 2829 -- Hoplite
+#farmfortrec 2829 -- Hoplite
+
+#plainfortrec 2837 -- Korybant
+#forestfortrec 2837 -- Korybant
+#mountainfortrec 2837 -- Korybant
+#swampfortrec 2837 -- Korybant
+#wastefortrec 2837 -- Korybant
+#farmfortrec 2837 -- Korybant
+
+#plainfortcom 2833 -- Melia
+#forestfortcom 2833 -- Melia
+#mountainfortcom 2833 -- Melia
+#swampfortcom 2833 -- Melia
+#wastefortcom 2833 -- Melia
+#farmfortcom 2833 -- Melia
+
+#plainfortcom 2830 -- Scout
+#forestfortcom 2830 -- Scout
+#mountainfortcom 2830 -- Scout
+#swampfortcom 2830 -- Scout
+#wastefortcom 2830 -- Scout
+#farmfortcom 2830 -- Scout
+
+#plainfortcom 2831 -- Commander
+#forestfortcom 2831 -- Commander
+#mountainfortcom 2831 -- Commander
+#swampfortcom 2831 -- Commander
+#wastefortcom 2831 -- Commander
+#farmfortcom 2831 -- Commander
+
+#plainfortcom 2835 -- Kabeiros
+#forestfortcom 2835 -- Kabeiros
+#mountainfortcom 2835 -- Kabeiros
+#swampfortcom 2835 -- Kabeiros
+#wastefortcom 2835 -- Kabeiros
+#farmfortcom 2835 -- Kabeiros
+
+#futuresite "EA Therodos Ghosts"
+#futuresite "EA Therodos Summons"
+#futuresite "EA Therodos Heroes"
+
 #end
 
 #selectnation 50 -- MA Arco
@@ -116299,9 +116470,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 2
 #pathlevel 1 1
 #fatiguecost 30
-#effect 4007  -- Poison damage, 4 rounds
-#aoe 1004
-#damage 5
+#aoe 1004 -- 6+
 #restricted 42 -- Therodos
 #end
 
@@ -116313,9 +116482,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 5
 #restricted 42 -- EA Therodos
 #path 0 6
-#pathlevel 0 3
+#pathlevel 0 2
 #path 1 9
-#pathlevel 1 2
+#pathlevel 1 1
 #nreff 12
 #damage 2842  -- Spectral Hoplite
 #explspr 10002
@@ -116381,7 +116550,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 1
 #fatiguecost 0
 #damage 1
-#aoe 5005
+#aoe 5007 -- 12+
 #restricted 42 -- Therodos
 #nextspell 3114
 #spec 12632064  -- Use UW, Friendly Sacreds only
@@ -116398,7 +116567,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 2
 #fatiguecost 0
 #damage 1
-#aoe 5010
+#aoe 5015 -- 25+
 #restricted 42 -- Therodos
 #nextspell 3114
 #spec 12632064  -- Use UW, Friendly Sacreds only
@@ -116430,7 +116599,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #fatiguecost 0
 #effect 23
 #damage 33554432  -- Unholy Power
-#aoe 5
+#aoe 6
 #restricted 42 -- Therodos
 #nextspell 3117
 #spec 12632064  -- Use UW, Friendly Sacreds only
@@ -116452,7 +116621,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #descr "Therodos was built on a foundation of the Divine Dances of the Hekaterides. Their sacred dances brought joy and fertility to the lands before the fall. Now, with a new God awakening the dances have begun once again, and the sound of cymbals echoes through the watery deeps of Therodos. In lands of Death the Divine Dance will attract spectres to follow the dancer, however in lands of Growth it will bring prosperity and new life. More than one dancer in a province will have no additional effect, and the dance cannot be performed successfully whilst the province is under siege."
 #school -1
 #researchlevel 1
-#path 0 0
+#path 0 6
 #pathlevel 0 1
 #effect 10082
 #damage 247 -- Ench47
@@ -116465,7 +116634,10 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 106  -- Record of Creation
 #name "Divine Dance"
 #descr "Therodos was built on a foundation of the Divine Dances of the Hekaterides. Their sacred dances brought joy and fertility to the lands before the fall. Now, with a new God awakening the dances have begun once again, and the sound of cymbals echoes through the watery deeps of Therodos. In lands of Death the Divine Dance will attract spectres to follow the dancer, however in lands of Growth it will bring prosperity and new life. More than one dancer in a province will have no additional effect, and the dance cannot be performed successfully whilst the province is under siege."
-#details "Grants +10 gold, -5 unrest, Dominion may increase. If Growth scales present tax revenue increased and if temple also present may gain 1-6 Nature gems & chance a Korybant will join. If Death scales present Spectral Peltasts & Hoplites may appear, if fort also present chance a Spectral Commander may appear, if Temple present underwater chance a Spectral Kourete may appear. All effects are stronger in higher friendly Dominion."
+#details "Grants +10 gold, -5 unrest, Dominion may increase. 
+Growth: +1 Growth up to a maximum of 3, may get +20% tax, permanent gold income, up to 20% chance for 1d6 Nature Gems. Korybant may appear in temples.
+Death: More ghosts are drawn to the dance, up to a 20% chance for a Spectral Commander. Spectral Kouretes may appear in temples and up to a 10% chance for a Spectral Melia.
+All effects scale with friendly Dominion."
 #school 4
 #researchlevel 0
 #path 0 6
@@ -129607,7 +129779,11 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 364 -- Ephor
-#fatiguecost 500
+--#fatiguecost 500
+#end
+
+#selectspell 365 -- Philosopher
+#fatiguecost 900
 #end
 
 #selectspell 366 -- Summon Telkhine
@@ -138371,53 +138547,6 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #newevent
 #rarity 5
-#req_fornation 42 -- Therodos
-#req_death 2
-#req_dominion 1
-#msg "Kill 1% pop at Death 2"
-#nolog
-#notext
-#kill 1
-#end
-
-#newevent
-#rarity 5
-#req_fornation 42 -- Therodos
-#req_owncapital 1
-#req_pregame
-#req_growth 1
-#msg "Incpop Growth 1"
-#nolog
-#notext
-#incpop 500
-#end
-
-#newevent
-#rarity 5
-#req_fornation 42 -- Therodos
-#req_owncapital 1
-#req_pregame
-#req_growth 2
-#msg "Incpop Growth 2"
-#nolog
-#notext
-#incpop 500
-#end
-
-#newevent
-#rarity 5
-#req_fornation 42 -- Therodos
-#req_owncapital 1
-#req_pregame
-#req_growth 3
-#msg "Incpop Growth 3"
-#nolog
-#notext
-#incpop 500
-#end
-
-#newevent
-#rarity 5
 #req_domowner 53 -- Aspho
 #req_dominion 1
 #req_maxdominion 1
@@ -146439,157 +146568,6 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #incscale 3  -- Death
 #end
 
-#newevent
-#rarity 5
-#req_myench 247 -- Ench47
-#req_fornation 42 -- Therodos
-#req_mydominion 1
-#req_death 1
-#msg "The Divine Dance has been performed and the spectral dead dance to the clamour of cymbals!"
-#unrest -5
-#gold 10
-#end
-
-#newevent
-#rarity 5
-#req_myench 247 -- Ench47
-#req_fornation 42 -- Therodos
-#req_mydominion 1
-#req_growth 1
-#msg "The Divine Dance has brought fertility to the province!"
-#unrest -5
-#gold 10
-#end
-
-#newevent
-#rarity 5
-#req_myench 247 -- Ench47
-#req_fornation 42 -- Therodos
-#req_mydominion 1
-#req_domchance 10
-#msg "Faith has increased in the province."
-#notext
-#nolog
-#incdom 1
-#end
-
-#newevent
-#rarity 5
-#req_myench 247 -- Ench47
-#req_fornation 42 -- Therodos
-#req_death 1
-#req_domchance 15
-#msg "The Divine Dance has been performed and the spectral dead dance to the clamour of cymbals."
-#nation -2
-#notext
-#nolog
-#1d3units 2841  -- Spectral Peltasts
-#end
-
-#newevent
-#rarity 5
-#req_myench 247 -- Ench47
-#req_fornation 42 -- Therodos
-#req_death 1
-#req_domchance 10
-#req_fort 1
-#msg "The Divine Dance has drawn spectres entranced by the sound."
-#nation -2
-#notext
-#nolog
-#1unit 2842  -- Spectral Hoplite
-#end
-
-#newevent
-#rarity 5
-#req_myench 247 -- Ench47
-#req_fornation 42 -- Therodos
-#req_death 1
-#req_domchance 2
-#req_fort 1
-#msg "The Divine Dance has drawn a Spectral Commander entranced by the sound."
-#nation -2
-#nolog
-#com 2844  -- Spectral Commander
-#end
-
-#newevent
-#rarity 5
-#req_myench 247 -- Ench47
-#req_fornation 42 -- Therodos
-#req_death 1
-#req_temple 1
-#req_land 0
-#req_domchance 5
-#msg "The Divine Dance has drawn a spectral dancer that has joined the dance."
-#nation -2
-#nolog
-#1unit 2843  -- Spectral Kourete
-#end
-
-#newevent
-#rarity 5
-#req_myench 247 -- Ench47
-#req_fornation 42 -- Therodos
-#req_growth 1
-#req_domchance 15
-#msg "The Divine Dance has brought growth and prosperity to the province."
-#taxboost 10
-#notext
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_myench 247 -- Ench47
-#req_fornation 42 -- Therodos
-#req_growth 2
-#req_domchance 10
-#msg "The Divine Dance has brought fertility to the province!"
-#taxboost 10
-#notext
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_myench 247 -- Ench47
-#req_fornation 42 -- Therodos
-#req_growth 3
-#req_domchance 5
-#msg "The Divine Dance has brought fertility to the province!"
-#taxboost 10
-#landgold 2
-#landprod 2
-#notext
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_myench 247 -- Ench47
-#req_fornation 42 -- Therodos
-#req_growth 1
-#req_temple 1
-#req_domchance 2
-#msg "The Divine Dance has brought forth magical fruit strong in nature magic! They were quickly gathered by the faithful."
-#force1d6vis 6
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_myench 247 -- Ench47
-#req_fornation 42 -- Therodos
-#req_growth 1
-#req_temple 1
-#req_land 1
-#req_domchance 10
-#msg "The sound of cymbals has drawn a wardancer that has joined the dance."
-#nation -2
-#nolog
-#1unit 2837  -- Korybant
-#end
 
 #newevent
 #rarity 5
@@ -151082,11 +151060,11 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_2monsters 7662 -- Dolmen
 #req_targmnr 7662 -- Dolmen
 #req_rare 30
-#msg "Too many Dolmen were present in the province and one has closed from the strain."
+#msg "Interference from other Dolmen has caused one to close."
 #nation -2
 #end
 
-#newevent -- Place Fort
+#newevent -- Remove Fort
 #rarity 5
 #req_ench 281 -- Ench81
 #req_land 0
@@ -151099,7 +151077,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #delay 0
 #end
 
-#newevent -- Active Harrespil
+#newevent -- Place Citadel
 #rarity 5
 #req_pop0ok
 #msg "A coral Citadel has been risen in ##landname##."
@@ -151107,7 +151085,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #fort 4 -- Citadel
 #end
 
-#newevent -- Place Fort
+#newevent -- Remove Fort
 #rarity 5
 #req_ench 281 -- Ench81
 #req_land 0
@@ -151120,12 +151098,225 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #delay 0
 #end
 
-#newevent -- Active Harrespil
+#newevent -- Place Citadel
 #rarity 5
 #req_pop0ok
 #msg "A coral Citadel has been risen in ##landname##."
 #header 2
 #fort 4 -- Citadel
+#end
+
+
+
+
+
+#newevent
+#rarity 5
+#req_fornation 42 -- Therodos
+#req_death 1
+#req_domchance 15
+#req_dominion 1
+#msg "Kill 1% pop in Death scales"
+#nolog
+#notext
+#kill 1
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 42 -- Therodos
+#req_owncapital 1
+#req_pregame
+#req_growth 1
+#msg "Incpop Growth 1"
+#nolog
+#notext
+#incpop 1000
+#end
+
+
+
+
+-- Generic Divine Dance events
+#newevent
+#rarity 5
+#req_myench 247 -- Ench47
+#req_fornation 42 -- Therodos
+#req_mydominion 1
+#req_death 0
+#msg "The Divine Dance has been performed and the spectral dead dance to the clamour of cymbals!"
+#header 2
+#unrest -5
+#gold 10
+#end
+
+#newevent
+#rarity 5
+#req_myench 247 -- Ench47
+#req_fornation 42 -- Therodos
+#req_mydominion 1
+#req_growth 1
+#msg "The Divine Dance has brought fertility to the province!"
+#header 2
+#unrest -5
+#gold 10
+#end
+
+#newevent
+#rarity 5
+#req_myench 247 -- Ench47
+#req_fornation 42 -- Therodos
+#req_mydominion 1
+#req_domchance 10
+#msg "Faith has increased in the province."
+#notext
+#nolog
+#incdom 1
+#end
+
+
+-- Death Divine Dance events
+#newevent
+#rarity 5
+#req_myench 247 -- Ench47
+#req_fornation 42 -- Therodos
+#req_death 1
+#req_domchance 10
+#msg "Peltast freespawn"
+#nation -2
+#notext
+#nolog
+#1d6units 2841  -- Spectral Peltasts
+#end
+
+#newevent
+#rarity 5
+#req_myench 247 -- Ench47
+#req_fornation 42 -- Therodos
+#req_death 1
+#req_domchance 6
+#req_fort 1
+#msg "Hoplite freespawn"
+#nation -2
+#notext
+#nolog
+#1d6units 2842  -- Spectral Hoplite
+#end
+
+#newevent
+#rarity 5
+#req_myench 247 -- Ench47
+#req_fornation 42 -- Therodos
+#req_death 1
+#req_domchance 2
+#req_fort 1
+#msg "The Divine Dance has drawn a Spectral Commander entranced by the sound."
+#nation -2
+#nolog
+#header 2
+#com 2844  -- Spectral Commander
+#end
+
+#newevent
+#rarity 5
+#req_myench 247 -- Ench47
+#req_fornation 42 -- Therodos
+#req_death 1
+#req_temple 1
+--#req_land 0
+#req_domchance 10
+#msg "The Divine Dance has drawn a spectral dancer that has joined the dance."
+#nation -2
+#nolog
+#notext
+#1unit 2843  -- Spectral Kourete
+#end
+
+#newevent
+#rarity 5
+#req_myench 247 -- Ench47
+#req_fornation 42 -- Therodos
+#req_death 1
+#req_temple 1
+#req_domchance 1
+#req_fort 1
+#msg "A Spectral Melia has joined in the Divine Dance!"
+#nation -2
+#nolog
+#header 2
+#com 7394  -- Spectral Melia
+#end
+
+
+
+
+-- Growth Divine Dance events
+#newevent
+#rarity 5
+#req_myench 247 -- Ench47
+#req_fornation 42 -- Therodos
+#req_mydominion 1
+#req_death -2 -- Growth 2 or lower
+#req_growth 1 -- Growth 1 or higher
+#req_domchance 10
+#msg "inc growth to max +3"
+#notext
+#nolog
+#decscale 3 -- Growth +1
+#end
+
+#newevent
+#rarity 5
+#req_myench 247 -- Ench47
+#req_fornation 42 -- Therodos
+#req_growth 1
+#req_domchance 10
+#msg "The Divine Dance has brought growth and prosperity to the province."
+#taxboost 20
+#notext
+#nolog
+#end
+
+#newevent
+#rarity 5
+#req_myench 247 -- Ench47
+#req_fornation 42 -- Therodos
+#req_growth 2
+#req_domchance 5
+#msg "The Divine Dance has brought fertility to the province!"
+#landgold 2
+#landprod 2
+#notext
+#nolog
+#end
+
+#newevent
+#rarity 5
+#req_myench 247 -- Ench47
+#req_fornation 42 -- Therodos
+#req_growth 1
+#req_temple 1
+#req_domchance 2
+#msg "The Divine Dance has brought forth magical fruit strong in nature magic! They were quickly gathered by the faithful."
+#force1d6vis 6
+#nolog
+#header 2
+#end
+
+#newevent
+#rarity 5
+#req_myench 247 -- Ench47
+#req_fornation 42 -- Therodos
+#req_growth 1
+#req_temple 1
+#req_land 1
+#req_domchance 10
+#msg "The sound of cymbals has drawn a wardancer that has joined the dance."
+#nation -2
+#nolog
+#notext
+#1unit 2837  -- Korybant
 #end
 
 
