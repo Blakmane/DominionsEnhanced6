@@ -99907,7 +99907,7 @@ Dominion: Dominion hides province ownership."
 #addgod 8499 -- Divine Anvil
 #delgod 2791  -- Earth Serpent
 #cheapgod20 8313 -- Arch Daktyl
-#descr "Therodos was once a kingdom of sages and craftsmen ruled by the Telkhines, sea daimones of almost godlike powers. When the Telkhines made themselves god-kings and threatened the divine order, their entire kingdom was drowned and cast under the waves. The people of the old kingdom suffered the full wrath of the divine judgment and unaware became ghosts inhabiting the ruins of a sunken kingdom. Of the Telkhine kingdom only a few islands remain, inhabited by survivors of the cataclysm. On these islands the living serve the unaware dead out of fear and respect. On the islands of the shattered kingdom also live the Daktyloi, dwarven smiths and servants of the Telkhines. With the death of of the Telkhines the Daktyloi replaced them and became revered by the Therodian ghosts. Now Therodos is a drowned kingdom of ghosts and human islanders ruled by Daktyloi master smiths. With the coming of the new God it must choose between embracing the new life and vitality of the living, or remain trapped in the past as a kingdom of the dead."
+#descr "Therodos was once a kingdom of sages and craftsmen ruled by the Telkhines, sea daimones of almost godlike powers. When the Telkhines made themselves god-kings and threatened the divine order, their entire kingdom was drowned and cast under the waves. The people of the old kingdom suffered the full wrath of the divine judgment and unaware became ghosts inhabiting the ruins of a sunken kingdom. Of the Telkhine kingdom only a few islands remain, inhabited by survivors of the cataclysm. On these islands the living serve the unaware dead out of fear and respect. On the islands of the shattered kingdom also live the Daktyloi, dwarven smiths and servants of the Telkhines. With the death of the Telkhines the Daktyloi replaced them and became revered by the Therodian ghosts. Now Therodos is a drowned kingdom of ghosts and human islanders ruled by Daktyloi master smiths. With the coming of the new God it must choose between embracing the new life and vitality of the living, or remain trapped in the past as a kingdom of the dead."
 #summary "Race: Ghosts, Kouretes and Humans. Ghosts & Kouretes can enter the sea.
 Military: Spectral Hoplites and Infantry. Kourete and Human sacred war dancers.
 Magic: Nature, Water, Earth, Air plus some Fire and Death. Daktyloi are skilled Mage Smiths.
@@ -116474,25 +116474,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 42 -- Therodos
 #end
 
-#selectspell 3111
-#copyspell 991 -- Will o Wisp
-#name "Memories of Therodos"
-#descr "With this spell the caster summons up their memories of lost Therodos and brings them to life on the battlefield. Cymbals clash and music fills the air as spectral echoes of the lost kingdom return once more. Many spectres will be drawn by the spectacle to join the battle."
-#school 0
-#researchlevel 5
-#restricted 42 -- EA Therodos
-#path 0 6
-#pathlevel 0 2
-#path 1 9
-#pathlevel 1 1
-#nreff 12
-#damage 2842  -- Spectral Hoplite
-#explspr 10002
-#sound 29
-#fatiguecost 100
-#casttime 300
-#end
-
 #selectspell 3112
 #copyspell 773 -- Quicken Self
 #name "Martial Dance"
@@ -129398,6 +129379,50 @@ Applies the effects of Holy Avenger to the caster"
 #restricted 29 -- Berytos
 #end
 
+
+#selectspell 4137
+#copyspell 200
+#name "Spectral Blessing"
+#descr "."
+#school -1
+#aoe 666
+#spec 281051144 -- UWok, friendly only, undead only, sacred only
+#damage 524289 -- Bless, AP weapons
+#explspr -1
+#end
+
+
+#selectspell 4138
+#copyspell 1177 -- Weapons of Sharpness
+#name "Telkhine Weapons"
+#descr "."
+#school -1
+#aoe 662 -- 5%
+#spec 281018376 -- UWok, friendly only, undead only
+#nextspell 4137
+#end
+
+#selectspell 4139
+#copyspell 991 -- Will o Wisp
+#name "Memories of Therodos"
+#descr "With this spell the caster summons up their memories of lost Therodos and brings them to life on the battlefield. Cymbals clash and music fills the air as spectral echoes of the lost kingdom return once more. The insubstantial weapons of the dead are made real and may once again rend flesh."
+#details "25% of undead and all sacred undead on the battlefield gain AP weapons. 6 Spectral Kourete appear on the edge of the battlefield. Undead sacreds on the battlefield are blessed."
+#school 0
+#researchlevel 0
+#restricted 42 -- EA Therodos
+#path 0 6
+#pathlevel 0 3
+#path 1 9
+#pathlevel 1 1
+#nreff 6
+#damage 2843  -- Spectral Kourete
+#explspr 10002
+#sound 29
+#fatiguecost 200
+#casttime 300
+#spec 8388608
+#nextspell 4138
+#end
 
 
 
@@ -151259,7 +151284,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_mydominion 1
 #req_death -2 -- Growth 2 or lower
 #req_growth 1 -- Growth 1 or higher
-#req_domchance 10
+#req_domchance 20
 #msg "inc growth to max +3"
 #notext
 #nolog
