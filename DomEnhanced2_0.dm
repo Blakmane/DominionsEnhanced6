@@ -36906,11 +36906,13 @@ While in the form of an old man, all paths are increased and allows the use of N
 #clearmagic
 #spr1 "magicenhanced/eeoleg.tga"
 #spr2 "magicenhanced/eeoleg2.tga"
+#unmountedspr1 "magicenhanced/un_eeoleg.tga"
+#unmountedspr2 "magicenhanced/un_eeoleg2.tga"
 #name "Fair and Great Prince"
 #descr "Oleg is the ruler of Rus and was the first to unite the disparate tribes under one banner. Born to a ruling Chud family, his brother ruled a kingdom in Rus and upon his death it passed to Oleg. After defeating the other kings through subterfuge and trickery he finally established himself as ruler of all of Rus. Oleg is known as the Prophet, both due to his extreme devotion to the True God, and for his reputed oracular skills. As a Son of Heaven Oleg is blessed with magical powers."
 #fixedname "Oleg"
-#mountedhumanoid
-#mounted
+#mountmnr 3581
+#skilledrider 4
 #hp 22
 #mor 16
 #gcost 0
@@ -39383,7 +39385,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mor 14
 #str 23
 #att 12
-#mr 7
+#mr 9
 #weapon 236  -- Claw
 #weapon 236  -- Claw
 #weapon 20  -- Bite
@@ -39409,7 +39411,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #att 13
 #berserk 2
 #woundfend 1
-#mr 7
+#mr 9
 #pierceres
 #holy
 #undisciplined
@@ -39432,7 +39434,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mor 14
 #str 23
 #att 12
-#mr 7
+#mr 9
 #weapon 236  -- Claw
 #weapon 236  -- Claw
 #weapon 20  -- Bite
@@ -39456,7 +39458,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mor 14
 #str 19
 #att 13
-#mr 7
+#mr 9
 #berserk 2
 #woundfend 1
 #undisciplined
@@ -39478,7 +39480,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #hp 48
 #prot 14
 #mor 14
-#mr 8
+#mr 9
 #str 20
 #att 14
 #weapon 236  -- Claw
@@ -94725,6 +94727,58 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 
+#newsite 2443
+#name "EA Rus Summons"
+#level 0
+#rarity 5
+#path 1
+#look 8
+#homemon 3003 -- great bear
+#homemon 8018 -- dire bear
+#homemon 1940 -- Zmey
+#homemon 1946 -- firebird
+#homemon 1947 -- simargl
+#end
+
+#newsite 2444
+#name "EA Rus Summons Continued"
+#level 0
+#rarity 5
+#path 1
+#look 8
+#homecom 1941 -- cloud 
+#homecom 1942 -- mountain
+#homecom 1943 -- alk
+#homecom 1944 -- gama
+#homecom 1945 -- sirin
+#homecom 1948 -- bukav
+#homecom 1949 -- lesh
+#homecom 1952 -- likho
+#homecom 1953 -- vody
+#homecom 1954 -- rusalk
+#homecom 1955 -- bere
+#homecom 1956 -- midday
+#homecom 7832 -- bies
+#homecom 7834 -- domov
+#homecom 7835 -- kiki
+#homecom 6833 -- primordial bear
+#end
+
+#newsite 2445
+#name "EA Rus Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 1
+#homecom 1958
+#homecom 3234
+#homecom 3241
+#homecom 7920
+#homecom 7921
+#homecom 7922
+#end
+
+
 
 
 
@@ -99587,6 +99641,10 @@ Priests: Average"
 #cheapgod20 8419 -- Sun Father
 #cheapgod20 8428 -- Triglav
 #cheapgod20 8372 -- Spirit Bear
+
+#futuresite "EA Rus Summons"
+#futuresite "EA Rus Summons Continued"
+#futuresite "EA Rus Heroes"
 #end
 
 #selectnation 20 -- EA Kailaisa
@@ -104209,8 +104267,9 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 5
 #pathlevel 0 3
 #fatiguecost 1000
-#nreff 1002
+#nreff 1002 -- 5+
 #damage 8020
+#notfornation 32 -- Rus
 #end
 
 #selectspell 2246
@@ -104219,8 +104278,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "The caster summons a sloth of great Dire Bears from the wilderness. These bears are renowned for their strength, endurance and foul temperament."
 #researchlevel 5
 #pathlevel 0 3
-#fatiguecost 1200
-#nreff 1002
+#fatiguecost 1000
+#nreff 1002 -- 5+
 #damage 8018
 #restricted 32 -- Rus
 #end
@@ -129408,7 +129467,7 @@ Applies the effects of Holy Avenger to the caster"
 #descr "With this spell the caster summons up their memories of lost Therodos and brings them to life on the battlefield. Cymbals clash and music fills the air as spectral echoes of the lost kingdom return once more. The insubstantial weapons of the dead are made real and may once again rend flesh."
 #details "25% of undead and all sacred undead on the battlefield gain AP weapons. 6 Spectral Kourete appear on the edge of the battlefield. Undead sacreds on the battlefield are blessed."
 #school 0
-#researchlevel 0
+#researchlevel 5
 #restricted 42 -- EA Therodos
 #path 0 6
 #pathlevel 0 3
@@ -129671,9 +129730,8 @@ Applies the effects of Holy Avenger to the caster"
 #restricted 66  -- Uruk
 #end
 
-#selectspell 321 -- Summon Bears -- ~25% efficiency reduction
-#fatiguecost 700 -- 8 -> 7
-#nreff 510 -- 15 -> 10
+#selectspell 321 -- Summon Bears -- 20% efficiency reduction
+#nreff 512 -- 15 -> 12
 #end
 
 #selectspell 326 -- Send Vodyanoy
