@@ -36041,7 +36041,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #startage 5
 #maxage 20
 #weapon 373  -- Stone Spear
-#weapon 649  -- Crab Claw
+#weapon 600  -- Crab Claw
 #end
 
 #newmonster 7231
@@ -94850,6 +94850,33 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 
 
+#newsite 2450
+#name "LA Feminie Summons"
+#level 0
+#rarity 5
+#path 7
+#look 7
+#homemon 628 -- lion
+#homemon 1140 -- tiger
+#homemon 2398 -- elephant
+#homemon 3009 -- buffalo
+#homemon 3878 -- lost giant
+#homecom 3879 -- lost king
+#homecom 7667 -- lilith
+#homecom 3382 -- yllerion
+#end
+
+#newsite 2451
+#name "LA Feminie Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 5
+#homecom 3877
+#end
+
+
+
 
 
 -- END OF NEW SITES
@@ -100701,6 +100728,24 @@ Dominion: Causes dreamless slumber, greatly reducing tax income. Vines reanimate
 #futuresite "MA Ind Heroes"
 #end
 
+#selectnation 119 -- LA Feminie
+#uwbuild 1
+#delgod 8347 -- Drake Breeder
+#delgod 8307 -- Stone Magus
+#delgod 8509 -- Great Sage
+#delgod 8510 -- Crone
+#delgod 8511 -- Master Enchanter
+#delgod 8512 -- Arch Mage
+#delgod 8513 -- Great Enchantress
+
+#addgod 8366 -- Icon
+#addgod 8342 -- Elohim
+#addgod 8338 -- Burning Bush
+
+#futuresite "LA Feminie Summons"
+#futuresite "LA Feminie Heroes"
+#end
+
 #selectnation 120 -- LA Piconye
 #uwbuild 1
 #delgod 8347 -- Drake Breeder
@@ -106153,6 +106198,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #restricted 67 -- Ind
 #restricted 95 -- LA Arco
 #restricted 96 -- LA Phlegra
+#restricted 120 -- LA Piconye
 #end
 
 #selectspell 2387
@@ -113616,6 +113662,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 67 -- Ind
 #restricted 107 -- Gath
 #restricted 123 -- LA Pyrene
+#restricted 119 -- Feminie
 #end
 
 #selectspell 2909
@@ -113666,6 +113713,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 64 -- Ashdod
 #restricted 67 -- Ind
 #restricted 107 -- Gath
+#restricted 119 -- Feminie
 #end
 
 #selectspell 2912
@@ -113780,6 +113828,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #aoe 1000
 #restricted 17 -- Hinnom
 #restricted 184 -- Sitecah
+#restricted 119 -- Feminie
 #end
 
 #selectspell 2921
@@ -113796,6 +113845,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #precision 3
 #restricted 17 -- Hinnom
 #restricted 184 -- Sitecah
+#restricted 119 -- Feminie
 #end
 
 #selectspell 2922
@@ -113814,6 +113864,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #spec 4210688  -- Ignore shields, friendlies only
 #restricted 17 -- Hinnom
 #restricted 184 -- Sitecah
+#restricted 119 -- Feminie
 #end
 
 #selectspell 2923
@@ -113842,6 +113893,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 17 -- Hinnom
 #restricted 67 -- Ind
 #restricted 184 -- Sitecah
+#restricted 119 -- Feminie
 #nextspell 2923
 #end
 
@@ -113864,6 +113916,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #spec 70368748388480  -- AN, ignore shields, friendlies only, No effect on flyers
 #restricted 17 -- Hinnom
 #restricted 184 -- Sitecah
+#restricted 119 -- Feminie
 #end
 
 #selectspell 2926
@@ -129895,6 +129948,7 @@ Applies the effects of Holy Avenger to the caster"
 #fatiguecost 1500
 #restricted 202 -- Gondwana
 #restricted 192 -- Arrada
+#restricted 186 -- Zion
 #end
 
 #selectspell 343 -- Weavers of the Wood
@@ -131073,6 +131127,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 956 -- Pride of Lions
 --#nreff 2006
+#restricted 186 -- Zion
 #end
 
 #selectspell 957 -- Ambush of Tigers
