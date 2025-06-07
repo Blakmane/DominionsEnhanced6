@@ -94779,6 +94779,76 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 
+#newsite 2446
+#name "LA R'lyeh Void Beings"
+#level 0
+#rarity 5
+#path 4
+#look 4
+#homemon 750 -- Thing From Beyond
+#homemon 751 -- Thing That Should Not Be
+#homemon 752 -- Elder Thing
+#homemon 753 -- Thing From The Void
+#homemon 754 -- Greater Otherness
+#homemon 755 -- Otherness
+#homemon 756 -- Lesser Otherness
+#homemon 757 -- Vile Thing
+#homemon 758 -- Thing Of Many Eyes
+#homemon 759 -- Dweller-In-The-Deep
+#homemon 966 -- Formless Spawn
+#homemon 3852 -- Void Dreamer
+#homecom 3853 -- Void Herald
+#end
+
+#newsite 2447
+#name "LA R'lyeh Freespawn"
+#level 0
+#rarity 5
+#path 7
+#look 0
+#homemon 962 -- Madman
+#homemon 1566 -- Mad One
+#homemon 1007 -- Mad Deep One
+#homemon 1567 -- Mad Merman
+#homemon 1569 -- Mad Triton
+#homemon 1576 -- Mad Hybrid
+#homemon 1571 -- Deep One Dreamer
+#homemon 1572 -- Merman Dreamer
+#homemon 1574 -- Triton Dreamer
+#homemon 1570 -- Human Dreamer
+
+#homecom 963 -- Mad Priest
+#homecom 1564 -- Mad Cultist
+#homecom 1575 -- Hybrid Cultist
+#homecom 1639 -- Cultist
+#homecom 1639 -- Cultist
+#end
+
+#newsite 2448
+#name "LA R'lyeh Summons"
+#level 0
+#rarity 5
+#path 4
+#look 6
+#homemon 7890 -- lobster hybrid
+#homecom 1562 -- void spectre
+#homecom 7456 -- hound of tindalos
+#end
+
+#newsite 2449
+#name "LA R'lyeh Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 4
+#homecom 560
+#homecom 622
+#homecom 660
+#homecom 8221
+#homecom 762
+#end
+
+
 
 
 
@@ -101486,6 +101556,11 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #clearsites
 #startsite "The City of Unfullfilled Dreams"
 #startsite "Void Rift"
+
+#futuresite "LA R'lyeh Void Beings"
+#futuresite "LA R'lyeh Freespawn"
+#futuresite "LA R'lyeh Summons"
+#futuresite "LA R'lyeh Heroes"
 #end
 
 #selectnation 125 -- Erytheia
@@ -115365,6 +115440,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #spec 8404992  -- Ignores shields, UW OK
 #restricted 89 -- MA R'lyeh
 #restricted 127 -- LA R'lyeh
+#nextspell 3031
 #end
 
 #selectspell 3032
@@ -129481,6 +129557,42 @@ Applies the effects of Holy Avenger to the caster"
 #casttime 300
 #spec 8388608
 #nextspell 4138
+#end
+
+#selectspell 4140
+#copyspell 858 -- Petrify
+#name "Pillar of Salt"
+#school -1
+#researchlevel 0
+#spec 4303409284  -- Ignore shields, Spiritform and Illusions Immune, Armour Negating, Enemy Sacreds only, UW OK, MR-Neg
+#end
+
+#selectspell 4141
+#name "Liturgy of Retribution"
+#descr "The abbot sages of Piconye channel their God's power into the world through meticulous scholarship and devout prayer, so that they may prove their faith is superior to all others. The sage-priest calls upon their One True Lord to inflict retribution upon a group of enemies sacred to another faith. Heretics are struck blind and mute from the strength of divine revelation, and those of weaker willpower are transformed into pillars of hard salt."
+#details "Blinds, mutes, and petrifies targets."
+#researchlevel 6
+#school 5
+#path 0 9
+#pathlevel 0 2
+#path 1 4
+#pathlevel 1 1
+#aoe 1000
+#fatiguecost 0
+#range 35
+#precision 5
+#casttime 100
+#fatiguecost 15
+#aispellmod 40
+#sound 105
+#explspr 10002
+#flightspr -1
+#effect 11
+#damage 4198400  -- Blind and mute
+#spec 17592194744320  -- Ignore shields, Enemy Sacreds only, UW OK, MR-Hard Neg
+#nreff 1
+#nextspell 4147
+#restricted 120 -- Piconye
 #end
 
 
@@ -151197,8 +151309,10 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #rarity 5
 #req_fornation 42 -- Therodos
 #req_death 1
-#req_domchance 15
+#req_domchance 30
+#req_rare 50 -- 50% in dom 4+
 #req_dominion 1
+#req_fort 0
 #msg "Kill 1% pop in Death scales"
 #nolog
 #notext
