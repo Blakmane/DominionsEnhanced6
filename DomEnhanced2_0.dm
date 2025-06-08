@@ -4013,7 +4013,7 @@
 #copyarmor 187 -- Wooden Mask
 #name "Kátsina Mask"
 #rcost 1
-#def 0
+--#def 0
 #end
 
 #newarmor 558 -- Lifidi Barding
@@ -11431,6 +11431,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #armor 557  -- Magic Mask
 #armor 514 -- Enchanted Leather
 #armor 501 -- Magic Shield
+#airshield 50
 #formationfighter -2
 #unsurr 1
 #invulnerable 10
@@ -11461,6 +11462,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon 1531 -- Katsina War Club
 #armor 557  -- Magic Mask
 #armor 514 -- Enchanted Leather
+#airshield 50
 #formationfighter -2
 #unsurr 1
 #invulnerable 10
@@ -13171,10 +13173,11 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon 17  -- Axe
 #armor 557  -- Mask
 #armor 10  -- Leather Hauberk
+#airshield 50
 #formationfighter -2
 #fireres 5
 #unsurr 1
-#berserk 2
+#berserk 1
 #blessbers
 #ambidextrous 1
 #fireshield 8
@@ -13205,6 +13208,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #armor 557  -- Mask
 #armor 10  -- Leather Hauberk
 #armor 2  -- Shield
+#airshield 50
 #formationfighter -2
 #unsurr 1
 #invulnerable 10
@@ -77922,6 +77926,10 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 1244 -- Go-Hatamoto
 #bodyguard 4
+#end
+
+#selectmonster 1248 -- Yamabushi
+#descr "Yamabushi are ascetic warrior monks of the Sacred Mountain. Enlightenment is found through the study and contemplation of oneself. This might include heavy drinking and unsavory behavior. The practice of martial arts is a means to perfection of body and mind and the Yamabushi are among the most skilled warriors in all of Jomon, even able to deflect arrows with their blade. Yamabushi live in isolation in search for enlightenment. Therefore they rarely fight in armies and are not as disciplined as the Sohei warrior monks. Some even consider them cowardly."
 #end
 
 #selectmonster 1260  -- Ko Oni
