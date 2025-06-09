@@ -90987,7 +90987,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #newsite 2180
 #name "Walpi"
-#path 3 
+#path 3
+#look 3
 #level 0
 #rarity 5
 #gems 2 1
@@ -95029,6 +95030,42 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8160
 #end
 
+#newsite 2455
+#clear
+#name "MA Ongtupqa Summons"
+#rarity 5
+#level 0
+#path 3
+#look 1
+#homemon 6832 -- sacred eagle
+#homemon 6826 -- Atahsaia
+#homemon 6835 -- kat warrior
+#homemon 6827 -- kat ogre
+#homecom 6643 -- prim deer
+#homecom 6645 -- prim wolf
+#homecom 6834 -- prim eagle
+#homecom 6829 -- achiya
+#homecom 6870 -- corn maid
+#homecom 6828 -- yaaya
+#homecom 6836 -- mongkat
+#homecom 6837 -- wuya
+#homecom 6637 -- spider grandma
+#homecom 6647 -- coyote
+#homecom 6838 -- skeleton man
+#end
+
+#newsite 2456
+#clear
+#name "MA Ongtupqa Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 3
+#homecom 6839
+#homecom 6840
+#homecom 6841
+#homecom 6847
+#end
 
 
 
@@ -96750,6 +96787,9 @@ Priests: Strong"
 #flag "chaco/flagma.tga"
 #startsite "Cliff Palace"
 #startsite "Walpi"
+
+#futuresite "MA Ongtupqa Summons"
+#futuresite "MA Ongtupqa Heroes"
 
 #templepic 31
 #likesterr 80  -- Highland, Waste
@@ -122290,7 +122330,7 @@ All effects scale with friendly Dominion."
 #effect 10021
 #nreff 1
 #damage 6836
-#fatiguecost 2500
+#fatiguecost 1800
 #restricted 182 -- MA Ongtupqa
 #restricted 183 -- LA Ongtupqa
 #end
