@@ -29340,7 +29340,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #inspirational -1
 #magicskill 0 2
 #magicskill 6 2
-#custommagic 13440 100  -- 100% FEDN
+#custommagic 29824 100  -- 100% FEDNG
 #forestsurvival
 #weapon 17  -- Axe
 #weapon 679  -- Short Trident
@@ -56839,6 +56839,87 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 
+-- Kailasa Def / Airshield changes:
+
+#selectmonster 1326 -- Guhyaka
+#def 12 -- 11 -> 12
+#airshield 50
+#end
+
+#selectmonster 1327 -- Yavana
+#def 13 -- 12 -> 13
+#airshield 50
+#end
+
+#selectmonster 1328 -- Yavana Archer
+#def 12 -- 11 -> 12
+#airshield 50
+#end
+
+#selectmonster 1329 -- Yaksha
+#def 12 -- 11 -> 12
+#airshield 50
+#end
+
+#selectmonster 1330 -- Yakshini
+#airshield 50
+#end
+
+#selectmonster 1331 -- Kinnara
+#def 12 -- 11 -> 12
+#airshield 50
+#end
+
+#selectmonster 1332 -- Apsara
+#def 17 -- 15 -> 17
+#airshield 80
+#end
+
+#selectmonster 1335 -- Gandharva
+#airshield 50
+#end
+
+#selectmonster 1336 -- Devata
+#def 15 -- 14 -> 15
+#airshield 50
+#end
+
+#selectmonster 1337 -- Siddha
+#def 11 -- 10 -> 11
+#airshield 50
+#end
+
+#selectmonster 1713 -- Devala
+#def 17 -- 15 -> 17
+#airshield 50
+#end
+
+#selectmonster 1906 -- Rudra
+#def 14 -- 13 -> 14
+#airshield 50
+#end
+
+#selectmonster 2542 -- Guhyaka General
+#def 13 -- 12 -> 13
+#airshield 50
+#end
+
+#selectmonster 3666 -- Angiri
+#def 13 -- 12 -> 13
+#airshield 50
+#end
+
+#selectmonster 3667 -- Marut
+#def 14 -- 13 -> 14
+#airshield 50
+#end
+
+#selectmonster 3668 -- Vidyadhara
+#def 16 -- 15 -> 16
+#airshield 50
+#end
+
+
 
 -- Mount MR changes:
 
@@ -78021,17 +78102,16 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #selectmonster 1332  -- Apsara
 #clearmagic
 #magicskill 9 1 -- H1
+#magicskill 1 1  -- A1
 #magicskill 4 1  -- S1
-#custommagic 8960 100  -- 100AWN
-#custommagic 8960 100  -- 100AWN
 #end
 
 #selectmonster 1335  -- Gandharva
 #clearmagic
 #magicskill 9 1 -- H1
 #magicskill 4 1  -- S1
-#custommagic 9472 100  -- 100AEN
-#custommagic 9472 100  -- 100AEN
+#custommagic 25856 100  -- 100AENG
+#custommagic 25856 100  -- 100AENG
 #end
 
 #selectmonster 1338  -- Celestial Hound
@@ -81006,6 +81086,10 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 
 #selectmonster 3631 -- milesian man at arms
 #bodyguard 4
+#end
+
+#selectmonster 3666 -- Angiri
+#sunawe 6
 #end
 
 #selectmonster 3677 -- Nidbathed
@@ -94883,6 +94967,56 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 3877
 #end
 
+#newsite 2452
+#name "EA Kailasa Summons"
+#level 0
+#rarity 5
+#path 4
+#look 0
+#homemon 3009 -- buffalo
+#homemon 1140 -- tiger
+#homemon 2398 -- elephant
+#homemon 1332 -- apsara 3
+#homemon 3666 -- angiri 3
+#homemon 7535 -- asura 3
+#homemon 1335 -- gandharva 5
+#homemon 3665 -- kimpurusha 5
+#homemon 3664 -- garuda 6
+#homemon 3667 -- marut 6
+#homemon 7547 -- kalakanjaka (wine)
+#end
+
+#newsite 2453
+#name "EA Kailasa Summons Continued"
+#level 0
+#rarity 5
+#path 4
+#look 0
+#homecom 1329 -- yaksha 4
+#homecom 1330 -- yakshini 4
+#homecom 3668 -- vidyadhara 4
+#homecom 7536 -- asurendra (wine)
+#homecom 1331 -- kinara 6
+#homecom 1337 -- siddha 7
+#homecom 1713 -- devala 8
+#homecom 1336 -- devata 8
+#homecom 1906 -- rudra 9
+--#homecom 7362 -- gandharva ench5
+#end
+
+#newsite 2454
+#name "EA Kailasa Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 5
+#homecom 1585
+#homecom 8156
+#homecom 8157
+#homecom 8158
+#homecom 8160
+#end
+
 
 
 
@@ -99752,7 +99886,7 @@ Priests: Average"
 #futuresite "EA Rus Heroes"
 #end
 
-#selectnation 20 -- EA Kailaisa
+#selectnation 20 -- EA Kailasa
 #hero1 1585  -- Fallen
 #hero2 8156 -- Katidata, King of the Jungle
 #hero3 8157 -- Arivata
@@ -99771,6 +99905,10 @@ Priests: Average"
 #startunitnbrs1 20
 #startunittype2 1121  -- Atavi Archer
 #startunitnbrs2 40
+
+#futuresite "EA Kailasa Summons"
+#futuresite "EA Kailasa Summons Continued"
+#futuresite "EA Kailasa Heroes"
 #end
 
 #selectnation 21 -- EA Lanka
@@ -112769,7 +112907,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 200 -- Blessing
 #name "Celestial Mantra"
 #descr "The caster chants a sacred mantra of the Celestial Spheres. Celestial beings that hear the mantra (Apsaras, Gandharvas and Yakshas) will become infused with the blessing of the Lord. Blessed units receive increased morale and additional powers if their god is powerful enough to claim a divine title. For example, Fire gods bless their soldiers with battle prowess and gods of Nature bless their holy warriors with increased health. The blessing lasts the entire battle."
-#school 5
+#school -1
 #researchlevel 0
 #path 0 4
 #pathlevel 0 1
@@ -112843,6 +112981,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Summon Vimana"
 #descr "The caster summons a celestial vehicle known as a Vimana from the celestial sphere. It can fly under its own power and is surrounded by a celestial aura that strikes lowly beings with awe and protects the Vimana from harm. Crewed by Yavana from the celestial sphere carrying enchanted armaments, the vehicle brings death to the enemies of the deva."
 #researchlevel 7
+#school -1
 #path 0 4
 #pathlevel 0 5
 #fatiguecost 3000
