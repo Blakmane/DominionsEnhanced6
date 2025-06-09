@@ -78099,6 +78099,18 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #itemslots 991750 -- Full Slots
 #end
 
+#selectmonster 1326  -- Guhyaka
+#descr "A Guhyaka is a lowly Yaksha warrior. They are semi-divine beings gifted with Celestial Splendor that strikes lowly beings with awe. Their mystical powers have made them rulers over the Bandar Log and they are sacred to the monkey people. Guhyakas are armed with spears. Guhyaka are supernaturally skilled warriors and can even deflect arrows."
+#end
+
+#selectmonster 1327  -- Yavana
+#descr "A Yavana is a Yaksha warrior of the sacred Mount Kailasa. They are semi-divine beings gifted with Celestial Splendor that strikes lowly beings with awe. Their mystical powers have made them rulers over the Bandar Log and they are sacred to the monkey people. Yavanas are armed with falchion and buckler or a longbow. Yavana are supernaturally skilled warriors and can even deflect arrows."
+#end
+
+#selectmonster 1328  -- Yavana Archer
+#descr "A Yavana is a Yaksha warrior of the sacred Mount Kailasa. They are semi-divine beings gifted with Celestial Splendor that strikes lowly beings with awe. Their mystical powers have made them rulers over the Bandar Log and they are sacred to the monkey people. Yavanas are armed with falchion and buckler or a longbow. Yavana are supernaturally skilled warriors and can even deflect arrows."
+#end
+
 #selectmonster 1332  -- Apsara
 #clearmagic
 #magicskill 9 1 -- H1
