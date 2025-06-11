@@ -1194,6 +1194,7 @@
 #secondaryeffect 221  -- Fire, damage 12
 #att -2
 #def 0
+#magic
 #end
 
 #newweapon 1591
@@ -1205,6 +1206,7 @@
 #att -1
 #def 0
 #pierce
+#magic
 #end
 
 #newweapon 1592
@@ -3306,6 +3308,11 @@
 #selectweapon 27  -- 2h Boulder
 #range -2
 #secondaryeffectalways 1505 -- Stone Impact
+#end
+
+#selectweapon 48  -- Salamander Fire Flare
+#dmg 16
+#halfstr
 #end
 
 #selectweapon 58  -- Wail
@@ -50782,6 +50789,46 @@ Requires an Ippondatara present to recruit."
 #monpresentrec 7666
 #end
 
+#newmonster 8892 -- Burning One
+#copystats 1543
+#copyspr 1543
+#firstshape 1543
+#reclimit 1
+#monpresentrec -1068 -- Anathement
+#end
+
+#newmonster 8893 -- Nonsacred Daeva
+#copyspr 2630
+#name "Daeva"
+#descr "The Daevas were demonic beings of an earlier age and the ancestors of the Mairya Clan Caelians. In the aftermath of their corruption of the purifying flame, many of them fled punishment to the lands of Abysia, however their power was still broken by the previous Pantokrator and they were banished. Abysians do not consider them sacred, but may still summon them back to this world to aide in war. Daevas arm themselves with spears and bucklers and don enchanted golden armor. They are attuned to fire and are surrounded by an aura of fear. They are servants of the Destructive Spirit and their powers are greater in lands of turmoil and strife."
+#hp 16
+#size 4
+#mr 14
+#mor 14
+#str 12
+#att 13
+#def 13
+#prec 12
+#ap 14
+#enc 1
+#mapmove 18
+#maxage 300
+#weapon 635
+#armor 75
+#armor 1
+#chaospower 1
+#fear 5
+#fireres 5
+#shockres 5
+#demon
+#flying
+#magicskill 0 1
+#magicskill 5 1
+#nametype 111
+#gcost 0
+#goodleader
+#okundeadleader
+#end
 
 --#newmonster 8684 -- LA C'tis Hierodule
 --#copystats 510
@@ -75566,11 +75613,15 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #end
 
 #selectmonster 85  -- A Salamander
+#montag 1068 -- Anathement
+#enchrebate50 222 -- Ench22 -- Rivers of Lava
 #neednoteat
 #end
 
 #selectmonster 86  -- EA Abysia Anathemant Dragon
-#enchrebate50 41  -- Second Sun
+--#enchrebate50 41  -- Second Sun
+#enchrebate50 222 -- Ench22 -- Rivers of Lava
+#montag 1068 -- Anathement
 #neednoteat
 #end
 
@@ -75641,10 +75692,13 @@ Initiates of the Deep can be recruited in any land fort."
 
 #selectmonster 213  -- Salamander
 #twiceborn 7343 -- Size 2 Wight Beast
+#darkvision 50
 #end
 
 #selectmonster 214  -- Beast Trainer
 #neednoteat
+#size 3
+#beastmaster 5
 #end
 
 #selectmonster 217 -- Flagellant
@@ -78390,8 +78444,18 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #montag 1048
 #end
 
-#selectmonster 1536  -- Anointed
+#selectmonster 1536  -- Anointed of Rhuax
 #neednoteat
+--#enchrebate50 41  -- Second Sun
+#enchrebate50 222 -- Ench22 -- Rivers of Lava
+#montag 1068 -- Anathement
+#gcost 10020
+#clearmagic
+#magicskill 0 4
+#magicskill 3 1
+#magicskill 9 3
+#custommagic 7296 100 -- FESD
+#custommagic 7296 10 -- FESD
 #end
 
 #selectmonster 1537  -- Demonbred
@@ -78400,10 +78464,12 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #end
 
 #selectmonster 1538  -- Warlock
+#douse 1
 #neednoteat
 #end
 
 #selectmonster 1542  -- W Apprentice
+#douse 1
 #neednoteat
 #end
 
@@ -78635,6 +78701,11 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #darkvision 50
 #end
 
+#selectmonster 1656  -- Smoulderghost
+#armor 547 -- spectral plate
+#armor 549 -- spectral helm
+#end
+
 #selectmonster 1660  -- Udm'ukinna, Reassembled Prince
 #end
 
@@ -78725,12 +78796,16 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #twiceborn 7231 -- Wight Giant
 #end
 
-#selectmonster 1698  -- A Salamander
+#selectmonster 1698  -- EA Anathement Salamander
 #neednoteat
+#enchrebate50 222 -- Ench22 -- Rivers of Lava
+#montag 1068 -- Anathement
 #end
 
-#selectmonster 1699  -- MA Abysia Anathemant Dragon
-#enchrebate50 41  -- Second Sun
+#selectmonster 1699  -- EA Anathemant Dragon
+--#enchrebate50 41  -- Second Sun
+#enchrebate50 222 -- Ench22 -- Rivers of Lava
+#montag 1068 -- Anathement
 #neednoteat
 #end
 
@@ -79267,11 +79342,15 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #end
 
 #selectmonster 1969  -- A Salamander
+#enchrebate50 222 -- Ench22 -- Rivers of Lava
+#montag 1068 -- Anathement
 #neednoteat
 #end
 
 #selectmonster 1970  -- LA Abysia Anathemant Dragon
-#enchrebate50 41  -- Second Sun
+#montag 1068 -- Anathement
+--#enchrebate50 41  -- Second Sun
+#enchrebate50 222 -- Ench22 -- Rivers of Lava
 #neednoteat
 #end
 
@@ -93148,6 +93227,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 0
 #look 	0
+#decscale 2
 #nat 34 -- muspelheim
 #natmon 3969 -- huskarl
 #natmon 3970 -- hirdman
@@ -95067,6 +95147,72 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 6847
 #end
 
+#newsite 2457
+#clear
+#name "Infernal Breeding"
+#rarity 5
+#level 0
+#path 8
+#look 6
+#homemon 2967
+#homemon 2968
+#homemon 2969
+#homemon 2970
+#homemon 2971
+#homemon 2972
+#homemon 2973
+#homemon 2974
+#homemon 3061
+#homemon 3062
+#homemon 3063
+#end
+
+#newsite 2458
+#clear
+#name "EA Abysia Summons"
+#rarity 5
+#level 0
+#path 0
+#look 4
+
+#homemon 628 -- lion
+#homemon 640 -- magma kid
+#homemon 1656 -- smoulder
+#homemon 3719 -- fire ele s4
+#homemon 7420 -- cathar
+#homecom 7313 -- magma spirit
+#homecom 1649 -- scorp man
+#homecom 7459 -- balrog
+#homecom 7710 -- kur
+#homecom 8893 -- nonsacred daeva
+#homecom 2612 -- daeva
+#homecom 2613 -- daeva
+#homecom 2614 -- daeva
+#homecom 2615 -- daeva
+#homecom 2617 -- daeva
+#end
+
+#newsite 2459
+#clear
+#name "EA Abysia Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 2
+#homecom 8138
+#homecom 1667
+#homecom 8139
+#end
+
+#newsite 2460 -- EA
+#name "River of Lava"
+#path 0
+#look 6
+#level 0
+#rarity 5
+#decscale 2
+#mon 8892 -- Burning One reclimited
+#end
 
 
 
@@ -96779,7 +96925,7 @@ Priests: Strong"
 #descr "Ongtupqa is a dry land of high mesas and deep canyons inhabited by a hardy race of men. Towns and cities are carved from the rock walls and crops are raised in cracked earth. Once divine Kátsinam lived amongst them, however they were all slain in a great battle against bloodthirsty warriors. Since that day a terrible drought has befallen the land and the tribes have been forced to find a new home. The armies of Ongtupqa are composed of fierce tribal warriors. Sacred dancers wear masks and divine garments left by the Kátsinam and are imbued with their spirits in battle. The secret of ironworking has not yet been discovered and flint, wood and bone are used to construct tools and weapons."
 #summary "Race: Humans. Prefers Heat Scale +2. Death and Growth have half effect on income and population growth.
 Military: Light infantry and archers, sacred Kátsina Dancers and powerful sacred summons.
-Magic: Strong Nature, Water and Astral, some Fire, Earth and Air.
+Magic: Strong Nature, Water and Astral, some Glamour, Fire, Earth and Air.
 Priests: Strong"
 #brief "Ongtupqa is a tribal nation of fierce warriors lead by mage-priests. Their sacred Kátsina Dancers receive special powers from divine spirits."
 #color 0.3 0.5 1
@@ -99688,6 +99834,12 @@ Priests: Average"
 #cheapgod20 8446 -- Pillar of Flame
 #cheapgod20 8403 -- Firstborn of Rhuax
 #cheapgod20 8451 -- Infernal Spirit
+
+#futuresite "Infernal Breeding"
+#futuresite "EA Abysia Summons"
+#futuresite "EA Abysia Heroes"
+#futuresite "River of Lava"
+
 #end
 
 #selectnation 24 -- EA Caelum
@@ -100587,6 +100739,8 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #addgod 8338 -- Burning Bush
 #cheapgod20 8446 -- Pillar of Flame
 #cheapgod20 8403 -- Firstborn of Rhuax
+
+#futuresite "River of Lava"
 #end
 
 #selectnation 71 -- MA Caelum
@@ -101513,6 +101667,8 @@ Bless bonuses: Poison Resistance +10"
 #addgod 8338 -- Burning Bush
 #cheapgod20 8450 -- Emissary of Antrax
 #cheapgod20 8460 -- Foul Statue
+
+#futuresite "River of Lava"
 #end
 
 #selectnation 106 -- LA Caelum
@@ -109900,7 +110056,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #effect 10001
 #fatiguecost 200
 #damage 3719 -- Size 2 Fire Elemental
-#nreff 2
+#nreff 3
 #restricted 16 -- EA Abysia
 #restricted 63 -- MA Abysia
 #restricted 104 -- LA Abysia
@@ -109908,13 +110064,15 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 
 #selectspell 2635
 #name "Spirit of Catharsis"
-#descr "Summons Child of Cleansing Fire commander."
-#school -1
-#researchlevel 0
+#descr "The caster awakens a Child of Catharsis in a sanctified flame and empowers it with intelligence. Catharsis was once the King of the Cleansing Flame before he was corrupted and became Antrax. In memory of Catharsis his children are sacred to the Abysians. Powerful mages can create more of the creatures with each casting."
+#school 0
+#researchlevel 3
 #path 0 0
-#pathlevel 0 1
+#path 1 4
+#pathlevel 0 2
+#pathlevel 1 1
 #effect 10021
-#fatiguecost 0
+#fatiguecost 1000
 #damage 7420 -- Child of Cleansing Fire
 #nreff 1
 #restricted 16 -- EA Abysia
@@ -109927,14 +110085,14 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #researchlevel 4
 #path 0 0
 #path 1 4
-#pathlevel 0 3
+#pathlevel 0 2
 #pathlevel 1 1
 #effect 10001
-#fatiguecost 1000
+#fatiguecost 600
 #damage 7420 -- Child of Cleansing Fire
-#nreff 503
+#nreff 506
 #restricted 16 -- EA Abysia
-#nextspell 2635
+--#nextspell 2635
 #end
 
 #selectspell 2637
@@ -110065,7 +110223,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #pathlevel 1 2
 #effect 10084
 #onlyatsite 119  -- EA Smouldercone
-#damage 274 -- Ench74  -- Stoke the Smouldercone
+#damage 275 -- Ench75  -- Stoke the Smouldercone
 #nreff 1
 #fatiguecost 7500
 #restricted 16 -- EA Abysia
@@ -110074,7 +110232,10 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #selectspell 2646
 #name "Rivers of Lava"
 #descr "The caster performs a great ritual known only to the Anathemants. Calling on the power of Rhuax the mage draws lava and magma to the surface from the deep places of the world. This will cause dormant volcanoes to spring to life and rivers of magma to burst from the ground wherever the Dominion of the Lord spreads. This will further increase Heat scales and permanent sources of magical gems may be found within friendly Dominion. Whilst the Abysians rejoice and bathe in the lava pools, weaker fleshy creatures of other races will suffer horribly. This enchantment lasts until someone dispels it or the caster dies and once ended the magma pools created will begin to cool and fade."
-#details "Within your Dominion heat increases, Earthquakes and Volcano eruptions (10% chance) in enemy provinces, 5% chance per month in each friendly province a Magma pits or Volcano (Mountain only) will appear. Magma pits will cool once global ends, slowly disappearing."
+#details "River of Lava site appears in capital. River of Lava sites have a 20% chance per turn to propagate to adjacent provinces. Preaching has a 10% per Holy level to create a new River of Lava site, more preachers will increase the chance.
+River of Lava sites increase Heat in the province, in Abysian lands Growth is increased, and allows limited recruitment of Burning Ones when Anathemant are present. Anathemant are 50 gold cheaper to recruit.
+Up to 2d6 Fire Gems and 1d3 Earth Gems may be generated a turn as the Rivers expand.
+If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and those outside of Abysia's dominion will disappear quickly."
 #portent "Throughout the domain of Abysia violent lava bursts and volcanoes are erupting! The Abysians delight in the fiery spectacle, however the heat and lava cause great damage to the lands of other nations. Unless the spell is ended the world will be fit only for ##godname## and their fiery servants."
 #school 4
 #researchlevel 7
@@ -110083,9 +110244,9 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #pathlevel 0 6
 #pathlevel 1 3
 #effect 10081
-#damage 222  -- Rivers of Lava
+#damage 222 -- Ench22  -- Rivers of Lava
 #nreff 1
-#fatiguecost 7500
+#fatiguecost 8000
 #restricted 16 -- EA Abysia
 #restricted 63 -- MA Abysia
 #restricted 104 -- LA Abysia
@@ -129384,24 +129545,6 @@ Gateway to Tech Duinn will open where cast, where 1d6 Drowned Soulless, Longdead
 #restricted 10 -- Fomoria
 #end
 
-
-#selectspell 4136 -- Drowned Mage
-#name "Summon Drowned Mage"
-#descr "The caster summons a Drowned Mage, the soul of a mage lost at sea. Drowned Mages can only be summoned at a gateway to Tech Duinn opened by a Fomorian King."
-#details "W1D1 100% AWDG"
-#school 0 -- Conjuration
-#researchlevel 5
-#path 0 5 -- D
-#path 1 2 -- W
-#pathlevel 0 3
-#pathlevel 1 1
-#effect 10021
-#damage 8870 -- Drowned Mage
-#fatiguecost 1500
-#restricted 10 -- Fomoria
-#onlyatsite 2387
-#end
-
 #selectspell 4136
 #copyspell 219 -- holy avenger
 #name "Bishop General's Power"
@@ -129751,7 +129894,27 @@ Applies the effects of Holy Avenger to the caster"
 #restricted 98 -- LA Pythium
 #end
 
-#selectspell 4136 -- Brazen Bull
+
+
+#selectspell 4152 -- Drowned Mage
+#name "Summon Drowned Mage"
+#descr "The caster summons a Drowned Mage, the soul of a mage lost at sea. Drowned Mages can only be summoned at a gateway to Tech Duinn opened by a Fomorian King."
+#details "W1D1 100% AWDG"
+#school 0 -- Conjuration
+#researchlevel 5
+#path 0 5 -- D
+#path 1 2 -- W
+#pathlevel 0 3
+#pathlevel 1 1
+#effect 10021
+#damage 8870 -- Drowned Mage
+#fatiguecost 1500
+#restricted 10 -- Fomoria
+#onlyatsite 2387
+#end
+
+
+#selectspell 4153 -- Brazen Bull
 #name "Awaken Brazen Bull"
 #descr "Brazen Bulls are altars of worship in Berytos. Berytian parents sometime grant a offering of flesh and blood in return for preventing misfortune. Priests place the sacrifice inside the bull through the hole in its back. After that, a bonfire is lit beneath the brass statue as the priests call to the gods to accept the offering. Through great sacrifice these altars may be imbued with power, awakening the construct to serve the coming God."
 #school 6 -- Blood
@@ -129767,7 +129930,7 @@ Applies the effects of Holy Avenger to the caster"
 #end
 
 
-#selectspell 4137
+#selectspell 4154
 #copyspell 200
 #name "Spectral Blessing"
 #descr "."
@@ -129779,17 +129942,17 @@ Applies the effects of Holy Avenger to the caster"
 #end
 
 
-#selectspell 4138
+#selectspell 4155
 #copyspell 1177 -- Weapons of Sharpness
 #name "Telkhine Weapons"
 #descr "."
 #school -1
 #aoe 662 -- 5%
 #spec 281018376 -- UWok, friendly only, undead only
-#nextspell 4137
+#nextspell 4154
 #end
 
-#selectspell 4139
+#selectspell 4156
 #copyspell 991 -- Will o Wisp
 #name "Memories of Therodos"
 #descr "With this spell the caster summons up their memories of lost Therodos and brings them to life on the battlefield. Cymbals clash and music fills the air as spectral echoes of the lost kingdom return once more. The insubstantial weapons of the dead are made real and may once again rend flesh."
@@ -129808,10 +129971,10 @@ Applies the effects of Holy Avenger to the caster"
 #fatiguecost 200
 #casttime 300
 #spec 8388608
-#nextspell 4138
+#nextspell 4155
 #end
 
-#selectspell 4140
+#selectspell 4157
 #copyspell 858 -- Petrify
 #name "Pillar of Salt"
 #school -1
@@ -129819,7 +129982,7 @@ Applies the effects of Holy Avenger to the caster"
 #spec 4303409284  -- Ignore shields, Spiritform and Illusions Immune, Armour Negating, Enemy Sacreds only, UW OK, MR-Neg
 #end
 
-#selectspell 4141
+#selectspell 4158
 #name "Liturgy of Retribution"
 #descr "The abbot sages of Piconye channel their God's power into the world through meticulous scholarship and devout prayer, so that they may prove their faith is superior to all others. The sage-priest calls upon their One True Lord to inflict retribution upon a group of enemies sacred to another faith. Heretics are struck blind and mute from the strength of divine revelation, and those of weaker willpower are transformed into pillars of hard salt."
 #details "Blinds, mutes, and petrifies targets."
@@ -129843,9 +130006,46 @@ Applies the effects of Holy Avenger to the caster"
 #damage 4198400  -- Blind and mute
 #spec 17592194744320  -- Ignore shields, Enemy Sacreds only, UW OK, MR-Hard Neg
 #nreff 1
-#nextspell 4147
+#nextspell 4157
 #restricted 120 -- Piconye
 #end
+
+#selectspell 4159
+#name "Call Daevas"
+#descr "The caster summons a few Daevas back into the world to serve. The Daevas were demonic beings of an earlier age and the ancestors of the Mairya Clan Caelians. In the aftermath of their corruption of the purifying flame, many of them fled punishment to the lands of Abysia, however their power was still broken by the previous Pantokrator and they were banished. Daevas arm themselves with spears and bucklers and don enchanted golden armor. They are attuned to fire and are surrounded by an aura of fear. They are servants of the Destructive Spirit and their powers are greater in lands of turmoil and strife. Abysians do not consider the Daevas sacred."
+#school 0
+#researchlevel 4
+#path 0 5 -- D
+#path 1 0 -- F
+#pathlevel 0 2
+#pathlevel 1 1
+#effect 10001
+#damage 8893 -- Nonsacred Saeva
+#fatiguecost 800
+#nreff 1004 -- 6+
+#restricted 16 -- EA Abysia
+#restricted 63 -- MA Abysia
+#restricted 104 -- LA Abysia
+#end
+
+#selectspell 4160
+#name "Call Daeva Champion"
+#descr "The caster summons a champion of the Daeva to aid them. The Daevas were demonic beings of an earlier age and the ancestors of the Mairya Clan Caelians. In the aftermath of their corruption of the purifying flame, many of them fled punishment to the lands of Abysia, however their power was still broken by the previous Pantokrator and they were banished. Daevas arm themselves with spears and bucklers and don enchanted golden armor. They are attuned to fire and are surrounded by an aura of fear. They are servants of the Destructive Spirit and their powers are greater in lands of turmoil and strife. Abysians do not consider the Daevas sacred."
+#school 0
+#researchlevel 5
+#path 0 5 -- D
+#path 1 0 -- F
+#pathlevel 0 3
+#pathlevel 1 1
+#effect 10021
+#damage 8893 -- Nonsacred Saeva
+#fatiguecost 1000
+#nreff 1
+#restricted 16 -- EA Abysia
+#restricted 63 -- MA Abysia
+#restricted 104 -- LA Abysia
+#end
+
 
 
 
@@ -130084,7 +130284,7 @@ Applies the effects of Holy Avenger to the caster"
 #end
 
 #selectspell 317 -- Spectral Inf
-#nreff 505
+#nreff 1006 -- 7+
 #end
 
 #selectspell 318 -- Scorpion Man
@@ -130093,6 +130293,11 @@ Applies the effects of Holy Avenger to the caster"
 #restricted 19 -- Ur
 #restricted 66  -- Uruk
 #end
+
+#selectspell 320 -- Infernal Breeding
+#fatiguecost 2000 -- 25 -> 20
+#end
+
 
 #selectspell 321 -- Summon Bears -- 20% efficiency reduction
 #nreff 512 -- 15 -> 12
@@ -130372,16 +130577,22 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 466 -- Yazatas
-#nreff 1006 -- 8+
-#fatiguecost 1200
+--#nreff 1006 -- 8+
+#researchlevel 4
+#fatiguecost 900
 #end
 
 #selectspell 467 -- Daevas
-#nreff 1006 -- 8+
+--#nreff 1006 -- 8+
+#researchlevel 4
+#fatiguecost 900
 #end
 
 #selectspell 471 -- Summon Greater Daeva
 #fatiguecost 5000
+#restricted 16 -- EA Abysia
+#restricted 63 -- MA Abysia
+#restricted 104 -- LA Abysia
 #end
 
 #selectspell 472 -- Geoglyphs
@@ -130943,8 +131154,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 741 -- Second Sun
-#descr "The caster creates a huge ball of fire in the sky. This Second Sun will always shine, day and night, resulting in severe effects across the entire world. Provinces will become hotter and drier every turn until the Second Sun is destroyed. Abysian forts will produce extra income and Anathemant Dragons will be cheaper to recruit whilst the spell remains active. This enchantment lasts until someone dispels it or the caster dies."
-#details "Each turn increases heat scales throughout the world. Death scales are also increased, but at a slower rate. Abysian forts produce 50% more income per month and Anathament Dragons discounted 50 gold."
+#descr "The caster creates a huge ball of fire in the sky. This Second Sun will always shine, day and night, resulting in severe effects across the entire world. Provinces will become hotter and drier every turn until the Second Sun is destroyed. Abysian forts will produce extra income whilst the spell remains active. This enchantment lasts until someone dispels it or the caster dies."
+#details "Each turn increases heat scales throughout the world. Death scales are also increased, but at a slower rate. Abysian forts produce 50% more income per month."
 #end
 
 #selectspell 748 -- Flames from the Sky
@@ -131148,6 +131359,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #damage 1002 -- 4+
 #precision 5
 #nextspell 3883 -- heated water cloud
+#end
+
+#selectspell 850 -- Hellscape
+#fatiguecost 500
 #end
 
 #selectspell 852 -- Blizzard, re-evaluate later
@@ -141174,7 +141389,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #newevent
 #rarity 13
-#req_myench 274 -- Ench74  -- Stoke the Smouldercone
+#req_myench 275 -- Ench75  -- Stoke the Smouldercone
 #req_owncapital 1
 #req_unique 1
 #req_pop0ok
@@ -141344,7 +141559,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #rarity 2
 #req_land 1
 #req_nation 23 -- Yomi must be in the game
-#req_notnation 23
+#req_notfornation 23
 #req_rare 25
 #req_unluck 1
 #req_indepok 1
@@ -145216,7 +145431,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #end
 
 #newevent
-#req_ench 274 -- Ench74  -- Stoke the Smouldercone
+#req_ench 275 -- Ench75  -- Stoke the Smouldercone
 #rarity 5
 #req_capital 1
 #req_nositenbr 2161
@@ -145226,7 +145441,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #end
 
 #newevent
-#req_noench 274 -- Ench74  -- Stoke the Smouldercone
+#req_noench 275 -- Ench75  -- Stoke the Smouldercone
 #rarity 5
 #req_capital 1
 #req_site 1
@@ -145245,121 +145460,6 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #notext
 #nolog
 #removesite 2161
-#end
-
-#newevent
-#req_enchdom 222 -- Ench22  -- Rivers of Lava
-#rarity 5
-#req_land 1
-#req_pop0ok
-#msg "Rivers of Lava Heat Increase."
-#notext
-#nolog
-#decscale 2  -- cold
-#end
-
-#newevent
-#req_friendlyench 222 -- Ench22  -- Rivers of Lava
-#req_enchdom 222 -- Ench22  -- Rivers of Lava
-#rarity 5
-#req_rare 5
-#req_land 1
-#req_freesites 1
-#req_nositenbr 2147 -- Magma Pool
-#req_pop0ok
-#msg "A pool of magma has formed through the divine essence of the Lord! Magical gems can be harvested from the glowing pool."
-#addsite 2147 -- Magma Pool
-#decscale2 2  -- cold
-#end
-
-#newevent
-#req_friendlyench 222 -- Ench22  -- Rivers of Lava
-#req_enchdom 222 -- Ench22  -- Rivers of Lava
-#rarity 5
-#req_rare 5
-#req_land 1
-#req_mountain 1
-#req_freesites 1
-#req_permonth 1
-#req_nositenbr 418 -- Volcano
-#req_pop0ok
-#msg "A long dormant volcano has once again sprung to life through the divine essence of the Lord! Magical gems can be harvested from the lava streams."
-#addsite 418 -- Volcano
-#decscale3 2  -- cold
-#end
-
-#newevent
-#req_hostileench 222 -- Ench22  -- Rivers of Lava
-#req_enchdom 222 -- Ench22  -- Rivers of Lava
-#rarity 5
-#req_rare 10
-#req_land 1
-#req_mountain 1
-#req_freesites 1
-#req_permonth 1
-#req_nositenbr 418 -- Volcano
-#req_pop0ok
-#msg "A volcano has erupted in the province. Survivors have fled the devastation."
-#kill 30
-#unrest 30
-#addsite 418 -- Volcano
-#decscale3 2  -- cold
-#end
-
-#newevent
-#req_hostileench 222 -- Ench22  -- Rivers of Lava
-#req_enchdom 222 -- Ench22  -- Rivers of Lava
-#rarity 5
-#req_rare 10
-#req_land 1
-#req_temple 0
-#req_pop0ok
-#msg "An earthquake has struck! Boiling lava erupted killing many people."
-#kill 15
-#unrest 15
-#end
-
-#newevent
-#req_hostileench 222 -- Ench22  -- Rivers of Lava
-#req_enchdom 222 -- Ench22  -- Rivers of Lava
-#rarity 5
-#req_rare 10
-#req_land 1
-#req_temple 1
-#req_pop0ok
-#msg "An earthquake has struck, killing many people and destroying our temple."
-#kill 15
-#unrest 15
-#temple 0
-#end
-
-#newevent
-#req_myench 222 -- Ench22  -- Rivers of Lava
-#req_site 1
-#rarity 5
-#req_land 1
-#req_owncapital 1
-#req_permonth 1
-#nation -2
-#req_rare 50
-#req_pop0ok
-#msg "The Rivers of Lava running through the engorged Smouldercone have had unforeseen effects. Burning Ones and an Anointed emerged from the lava pools at the Smouldercone![The Smouldercone Aflame]"
-#nolog
-#com 1536  -- Anointed of Rhuax
-#1d6units 1543  -- Burning Ones
-#end
-
-#newevent
-#req_noench 222 -- Ench22  -- Rivers of Lava
-#rarity 5
-#req_rare 5
-#req_land 1
-#req_site 1  -- Magma Pool
-#req_pop0ok
-#msg "Magma Pool cools. [Magma Pool]"
-#notext
-#nolog
-#removesite 2147 -- Magma Pool
 #end
 
 #newevent
@@ -151771,6 +151871,105 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #end
 
 
+
+#newevent -- RoL capital + heat
+#req_friendlyench 222 -- Ench22  -- Rivers of Lava
+#req_capital 1
+#rarity 5
+--#req_rare 5
+--#req_freesites 1
+#req_land 1
+#req_nositenbr 2460 -- River of Lava
+#req_pop0ok
+#msg "The Rivers of Lava has begun in ##landname## and will soon engulf the world."
+#header 2
+#nolog
+#addsite 2460 -- River of Lava
+#decscale2 2  -- cold
+#end
+
+#newevent -- RoL propagation + heat
+#req_ench 222 -- Ench22  -- Rivers of Lava
+#rarity 5
+#req_rare 20
+--#req_freesites 1
+#req_land 1
+#req_nositenbr 2460 -- River of Lava
+#req_nearbysite 1
+#req_pop0ok
+#msg "The Rivers of Lava have begun flowing through ##landname##. [River of Lava]"
+#header 2
+#nolog
+#addsite 2460 -- River of Lava
+#decscale2 2  -- cold
+#end
+
+#newevent -- RoL preaching + heat
+#req_ench 222 -- Ench22  -- Rivers of Lava
+#rarity 5
+#req_preach 10
+--#req_freesites 1
+#req_land 1
+#req_nositenbr 2460 -- River of Lava
+#req_pop0ok
+#msg "Preaching in ##landname## has allowed the Rivers of Lava to flow into the province."
+#header 2
+#nolog
+#addsite 2460 -- River of Lava
+#decscale2 2  -- cold
+#end
+
+#newevent -- RoL growth
+#req_friendlyench 222 -- Ench22  -- Rivers of Lava
+#rarity 5
+#req_rare 25
+#req_land 1
+#req_site 1
+#req_pop0ok
+#msg "growth [River of Lava]"
+#nolog
+#notext
+#decscale2 3 -- death
+#end
+
+#newevent -- RoL Fire Gems 20% 2/month
+#req_friendlyench 222 -- Ench22  -- Rivers of Lava
+#rarity 5
+#req_rare 20
+#req_permonth 2
+#req_land 1
+#req_site 1
+#req_pop0ok
+#msg "Fire gems have been produced by the River of Lava. [River of Lava]"
+#header 2
+#force1d6vis 0 -- Fire
+#end
+
+#newevent -- RoL Earth Gems 15% 1/month
+#req_friendlyench 222 -- Ench22  -- Rivers of Lava
+#rarity 5
+#req_rare 15
+#req_permonth 1
+#req_land 1
+#req_site 1
+#req_pop0ok
+#msg "Earth gems have been found on the banks of the River of Lava. [River of Lava]"
+#header 2
+#force1d3vis 3 -- Earth
+#end
+
+#newevent -- RoL cooling
+#req_noench 222 -- Ench22  -- Rivers of Lava
+#rarity 5
+#req_rare 40
+#req_land 1
+#req_site 1
+#req_pop0ok
+#msg "The River of Lava flowing through ##landname## has cooled. [River of Lava]"
+#header 2
+#nolog
+#removesite 2460 -- River of Lava
+#end
 
 
 -- END OF NEW EVENTS
