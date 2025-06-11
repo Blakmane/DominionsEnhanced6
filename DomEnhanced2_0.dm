@@ -665,7 +665,7 @@
 
 #newweapon 1545
 #name "Sharktooth Spear"
-#dmg 8
+#dmg 6
 #att 1
 #def 1
 #len 3
@@ -35370,6 +35370,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #gcost 60
 #rpcost 22
 #reclimit 3
+#clearweapons
+#weapon 300
 #end
 
 #newmonster 7853
@@ -57263,6 +57265,17 @@ Cannot be recruited until Break the Deadlock is cast."
 
 
 -- Gift of Water changes
+
+#selectmonster 2894 -- Lord of the Deep Gift of Water 90
+#giftofwater 90
+#end
+
+#selectmonster 1421 -- Rain Priest Gift of Water 60
+#giftofwater 60
+#end
+
+
+
 #selectmonster 622 -- Traitor King Gift of Water 150
 #giftofwater 150
 #end
@@ -57419,8 +57432,8 @@ Cannot be recruited until Break the Deadlock is cast."
 #giftofwater 90
 #end
 
-#selectmonster 2895 -- Mother of All Waters Gift of Water 60
-#giftofwater 60
+#selectmonster 2895 -- Mother of All Waters Gift of Water 120
+#giftofwater 120
 #end
 
 #selectmonster 2926 -- Morgen Queen Gift of Water 60
@@ -57447,8 +57460,8 @@ Cannot be recruited until Break the Deadlock is cast."
 #giftofwater 90
 #end
 
-#selectmonster 2892 -- Priest of All Waters Gift of Water 30
-#giftofwater 30
+#selectmonster 2892 -- Priest of All Waters Gift of Water 60
+#giftofwater 60
 #end
 
 #selectmonster 2924 -- Queen of the North Gift of Water 30
@@ -76916,6 +76929,10 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #sunawe 1
 #end
 
+#selectmonster 727  -- Jaguar Warrior
+#rpcost 26
+#end
+
 #selectmonster 734  -- Moon Priest
 #enchrebate50 274 -- Ench74  -- Lunar Potency
 #darkpower 2
@@ -78200,6 +78217,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #bodyguard 3
 #end
 
+#selectmonster 1358 -- Monster Toad
+#clearweapons
+#weapon 300
+#end
+
 #selectmonster 1364  -- Jade Lizard
 #twiceborn 7343 -- Size 2 Wight Beast
 #end
@@ -78317,20 +78339,26 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 #selectmonster 1420
 #descr "When the Atlantians fled into the deep swamps and jungles of Mictlan, they found a people that worshipped the Rain as one aspect of their God. The Atlantian kings became Kings of Rain and reshaped the faith to their needs. They found the secrets of the old blood cult and reinstated these foul practices of the ancient times. Now they gather power to wreak vengeance upon their old enemies and realize the dream of an eventual return to their former home beneath the waves. Living in the jungles of Mictlan has enacted a change upon the Atlantians and they have become resistant to most poisons."
 #poisonres 15
+#armor 119 -- Reinforced Leather Cap
+#gcost 590
 #end
 
 #selectmonster 1421
 #descr "When the Atlantians fled into the deep swamps and jungles of Mictlan, they found a people that worshipped the Rain as one aspect of their God. They found the secrets of the old blood cult and reinstated these foul practices of the ancient times. Rain is important in the Mictlan Cult. Unless sated with human sacrifices, the God will withhold the life-giving Rain from the Land. The Rain Priest wields priestly power and is skilled in Water and Blood magic. Living in the jungles of Mictlan has enacted a change upon the Atlantians and they have become resistant to most poisons."
 #poisonres 15
+#armor 119 -- Reinforced Leather Cap
 #end
 
 #selectmonster 1423
 #descr "When the Atlantians fled into the deep swamps and jungles of Mictlan, they found a people that worshipped the Rain as one aspect of their God. Here, they found a place as sacred beings of the Rain and the swamp. The Atlantians are few in number and most are trained as sacred warriors or priests in the Rain Cult. Living in the jungles of Mictlan has enacted a change upon the Atlantians and they have become resistant to most poisons. The Atlantians dream of an eventual return to their former home beneath the sea and the amphibious Rain Warriors will lead the first wave."
 #poisonres 15
+#armor 119 -- Reinforced Leather Cap
+#rpcost 24
 #end
 
 #selectmonster 1424  -- Sun Priest
 #enchrebate50 41  -- Second Sun
+#armor 119 -- Reinforced Leather Cap
 #end
 
 #selectmonster 1426  -- Mwaka, crowned ape
@@ -79239,6 +79267,10 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #end
 
 #selectmonster 1886  -- Priest King Mixcouatl
+#end
+
+#selectmonster 1888  -- Sky Priest
+#armor 120 -- Leather Cap
 #end
 
 #selectmonster 1889  -- Jade Serpent
@@ -80717,9 +80749,15 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #montag 1048
 #end
 
+#selectmonster 2892  -- Priest of All Waters
+#armor 24 -- Coral Cap
+#end
+
 #selectmonster 2896  -- Returned
 #descr "When the first Mictlan colony was founded beneath the sea, former Atlantians immigrated to the safety of the citadel in the deep. Rain Warriors and Rain Priests from the jungles of Mictlan were the first to settle in the deeps, but soon other Atlantians previously hiding in gorges and deep kelp forests flocked to the call of the colony's founders. These Atlantians have a darker complexion than the ones from Mictlan. While some of the returned ones have become priests and rulers, there are many old Atlantians who are satisfied with their status as mighty sacred warriors revered by the humans of Mictlan. They call themselves the Returned and have gained considerable status in the underwater parts of the kingdom."
 #holy
+#clearweapons
+#weapon 1545 -- Sharktooth Spear
 #end
 
 #selectmonster 2912  -- Ysian Scout
@@ -95214,6 +95252,63 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #mon 8892 -- Burning One reclimited
 #end
 
+#newsite 2461
+#clear
+#name "LA Mictlan Summons"
+#rarity 5
+#level 0
+#path 8
+#look 2
+#homemon 7529 -- howler
+#homemon 7455 -- coral snake
+#homemon 1359 -- toad
+#homemon 1358 -- monster toad
+#homemon 1889 -- jade serp
+#homemon 859 -- jag
+#homemon 1357 -- bat
+#homemon 1356 -- ozel
+#homemon 1483 -- tzitzi
+#homemon 7579 -- huitznahua
+#homemon 7345 -- returned shamb
+#homemon 7346 -- returned pillar
+#end
+
+#newsite 2462
+#clear
+#name "LA Mictlan Summons Continued"
+#rarity 5
+#level 0
+#path 8
+#look 2
+#homecom 525 -- couatl
+#homecom 1422 -- civatet
+#homecom 1558 -- tlahua
+#homecom 1360 -- onaqui
+#homecom 7348 -- returned priest
+#homecom 7263 -- ghost king
+#homecom 7226 -- Dagon
+#homecom 1484 -- east tlaloque
+#homecom 1485 -- south tlaloque
+#homecom 1486 -- west tlaloque
+#homecom 1487 -- north tlaloque
+#homecom 7264 -- camazotz
+#homecom 7265 -- huitz
+#homecom 7266 -- itzpa
+#end
+
+#newsite 2463
+#clear
+#name "LA Mictlan Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 0
+#homecom 7918
+#homecom 933
+#homecom 935
+#homecom 936
+#end
+
 
 
 -- END OF NEW SITES
@@ -95253,8 +95348,15 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7779 -- Shinobi
 #end
 
+#selectsite 102  -- Temple of Land
+#homemon 727 -- Jaguar Warrior
+#end
+
 #selectsite 103  -- High Temple of Rain
+#clear
+#gems 2 1 -- W
 #homemon 7852 -- Monster Toad
+#homecom 1420 -- King of Rain
 #end
 
 #selectsite 133  -- Tir na n'Og
@@ -101571,8 +101673,34 @@ Bless bonuses: Poison Resistance +10"
 #delgod 485  -- Great Enchantress
 #cheapgod20 8373 -- Great Toad
 #cheapgod20 8448 -- Statue of Sun & Rain
-#addrecunit 7853 -- Mictlan Blow Gun
-#coastunit1 1423  -- Rain Warrior
+--#coastunit1 1423  -- Rain Warrior
+
+#clearrec
+
+#addreccom 729 -- Scout
+#addreccom 730 -- Tribal King
+#addreccom 731 -- Mictlan Priest
+#addreccom 1361 -- Nahualli
+#addreccom 1421 -- Rain Priest
+
+#addrecunit 721 -- Warrior
+#addrecunit 1545 -- Warrior
+#addrecunit 1546 -- Warrior
+#addrecunit 1547 -- Warrior
+#addrecunit 1548 -- Feathered Warrior
+#addrecunit 7853 -- Blow Pipe Warrior
+#addrecunit 1423 -- Rain Warrior
+
+#uwrec 2893 -- Warrior of the Deep
+#uwrec 2896 -- Returned
+#uwcom 2894 -- Lord of the Deep
+#uwcom 2892 -- Priest of All Waters
+#uwcom 2895 -- Mother of All Waters
+
+#futuresite "LA Mictlan Summons"
+#futuresite "LA Mictlan Summons Continued"
+#futuresite "LA Mictlan Heroes"
+
 #end
 
 #selectnation 109 -- T'ien C'hi
@@ -109728,16 +109856,17 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #name "Jaguar Toad Spawning"
 #descr "The caster summons a spawning of Jaguar Toads to serve them. This spell can only be cast in a swamp or forested province."
 #researchlevel 3
+#school -1
 #pathlevel 0 3
 #path 1 9
 #pathlevel 1 1
 #damage 1359  -- Jaguar Toad
 #nreff 15
-#fatiguecost 1000
+#fatiguecost 800
 #onlygeosrc 160  -- Swamp/Forest
-#restricted 74 -- MA Xibalba
-#restricted 111 -- LA Mictlan
-#restricted 112 -- LA Xibalba
+--#restricted 74 -- MA Xibalba
+--#restricted 111 -- LA Mictlan
+--#restricted 112 -- LA Xibalba
 #end
 
 #selectspell 2614
@@ -114846,7 +114975,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 3
 #damage 1359  -- Jaguar Toad
 #nreff 15
-#fatiguecost 1500
+#fatiguecost 1200
 #onlygeosrc 160  -- Swamp/Forest
 #nextspell "Summon Monster Toads"
 #restricted 74 -- MA Xibalba
@@ -115357,6 +115486,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #spec 41943040  -- UW Only
 #restricted 43 -- EA Atlantis
 #restricted 88 -- MA Atlantis
+#restricted 111 -- LA Mictlan
 #end
 
 #selectspell 2997
@@ -115434,6 +115564,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 88 -- MA Atlantis
 #restricted 126 -- LA Atlantis
 #restricted 206 -- Dirgen
+#restricted 111 -- LA Mictlan
 #nextspell 3002
 #end
 
@@ -130690,9 +130821,22 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 505 -- Summon Jaguars
 #end
 
+#selectspell 505 -- Summon Jaguar Toads
+#nreff 5
+#fatiguecost 300
+#end
+
 #selectspell 506 -- Jade Serpent
 #end
 
+
+#selectspell 511 -- Summon Beast Bats
+#fatiguecost 700
+#end
+
+#selectspell 511 -- Summon Jaguar Fiends
+#fatiguecost 1400
+#end
 
 #selectspell 518 -- Summon Sacred Scorpion
 #fatiguecost 400
