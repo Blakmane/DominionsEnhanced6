@@ -44522,9 +44522,9 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon "Quarterstaff"
 #armor "Leather Cap"
 #armor "Robe"
-#magicskill 1 3
 #magicskill 4 2
 #magicskill 5 1
+#magicskill 7 3
 #maxage 70
 #startage 30
 #poorleader
@@ -44600,7 +44600,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #end
 
 #newmonster 8208
-#clearmagic
 #copystats 364
 #spr1 "worthy_heroes/aino1.tga"
 #spr2 "worthy_heroes/aino2.tga"
@@ -44609,9 +44608,11 @@ While in the form of an old man, all paths are increased and allows the use of N
 #fixedname "Aino"
 #female
 #maxage 500
+#clearmagic
 #magicskill 3 2
-#magicskill 4 3
+#magicskill 4 2
 #magicskill 6 1
+#magicskill 7 2
 #hp 19
 #prot 2
 #str 14
@@ -79929,6 +79930,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #bodyguard 4
 #end
 
+#selectmonster 2342  -- Vanabog
+#rpcost 2
+#end
+
 #selectmonster 2379  -- Sobek Saromancer
 #end
 
@@ -94981,7 +94986,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 1954 -- rusalk
 #homecom 1955 -- bere
 #homecom 1956 -- midday
-#homecom 7832 -- bies
 #homecom 7834 -- domov
 #homecom 7835 -- kiki
 #homecom 6833 -- primordial bear
@@ -95307,6 +95311,60 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 933
 #homecom 935
 #homecom 936
+#end
+
+#newsite 2464
+#name "MA Vanarus Summons"
+#level 0
+#rarity 5
+#path 1
+#look 8
+#homemon 694 -- great bear
+#homemon 8020 -- dire bear
+#homemon 1940 -- Zmey
+#homemon 1946 -- firebird
+#homemon 1947 -- simargl
+#homemon 2190 -- Draug
+#homecom 7329 -- drott
+#homecom 7330 -- herse
+#end
+
+#newsite 2465
+#name "MA Vanarus Summons Continued"
+#level 0
+#rarity 5
+#path 1
+#look 8
+#homecom 1941 -- cloud 
+#homecom 1942 -- mountain
+#homecom 1943 -- alk
+#homecom 1944 -- gama
+#homecom 1945 -- sirin
+#homecom 1948 -- bukav
+#homecom 1949 -- lesh
+#homecom 1952 -- likho
+#homecom 1953 -- vody
+#homecom 1954 -- rusalk
+#homecom 1955 -- bere
+#homecom 1956 -- midday
+#homecom 7834 -- domov
+#homecom 7835 -- kiki
+#homecom 7253 -- aesir
+#homecom 7254 -- aesir
+#end
+
+#newsite 2466
+#name "MA Vanarus Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 1
+#homecom 1958
+#homecom 3257
+#homecom 8204
+#homecom 8205
+#homecom 8207
+#homecom 8208
 #end
 
 
@@ -100987,6 +101045,11 @@ Dominion: Causes dreamless slumber, greatly reducing tax income. Vines reanimate
 #startunitnbrs1 30
 #startunittype2 2343  -- Vanarusian Archer
 #startunitnbrs2 30
+
+#futuresite "MA Vanarus Summons"
+#futuresite "MA Vanarus Summons Continued"
+#futuresite "MA Vanarus Heroes"
+
 #end
 
 #selectnation 68 -- MA Bandar Log
