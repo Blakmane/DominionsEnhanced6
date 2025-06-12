@@ -81227,29 +81227,33 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 #selectmonster 3677 -- Nidbathed
+--#descr "The Nidbathed, Nidlögade, are ghastly warriors who are not even stopped by death. In a horrible ritual administered by the Seithberenders a clan champion is bathed in the black water of the Nidakettil. During the ritual his fellow warriors cut deep wounds in his flesh before taking their own lives. Scarred by both the loss of his friends and the cuts in his flesh, the Nidbathed undergoes a gruesome transformation. His flesh turns white while his scars and eyes turns black as the night. Each scar on his body represents the strength and the death of a friend. If the Nidbathed is killed, one of his scars turns red and he rises again, unkillable as long as his friends’ deaths hold him alive. Being unkillable, the Nidbathed don’t care much for shields. Instead they fight with heavy greatswords able to cut down even the mightiest of Jotuns.
+--Nidbathed are unnatural in this world and are affected by spells that would banish or act on undead, but do not require undead leadership.
+--The success of the Nidalögning is dependent on the might of the God and the number of Scar Souls equals one half the dominion score of the province, rounded up."
 #descr "The Nidbathed, Nidlögade, are ghastly warriors who are not even stopped by death. In a horrible ritual administered by the Seithberenders a clan champion is bathed in the black water of the Nidakettil. During the ritual his fellow warriors cut deep wounds in his flesh before taking their own lives. Scarred by both the loss of his friends and the cuts in his flesh, the Nidbathed undergoes a gruesome transformation. His flesh turns white while his scars and eyes turns black as the night. Each scar on his body represents the strength and the death of a friend. If the Nidbathed is killed, one of his scars turns red and he rises again, unkillable as long as his friends’ deaths hold him alive. Being unkillable, the Nidbathed don’t care much for shields. Instead they fight with heavy greatswords able to cut down even the mightiest of Jotuns.
-Nidbathed are unnatural in this world are affected by spells that would banish or act on undead, but do not require undead leadership.
-The success of the Nidalögning is dependent on the might of the God and the number of Scar Souls equals one half the dominion score of the province, rounded up."
---#gcost 10060
---#extralives 33
-#coldres 10
+The success of the Nidalögning is dependent on the might of the God and the number of Scar Souls equals one third the dominion score of the province, rounded up."
+#gcost 10050
+#extralives 33
+--#coldres 10
 #rpcost 46
-#enc 2
-#undead
-#almostliving
+--#enc 2
+--#undead
+--#almostliving
 --#secondshape 8607
 #end
 
 #selectmonster 3685 -- Nidhere
+--#descr "The Nidbathed, Nidlögade, are ghastly warriors who are not even stopped by death. In a horrible ritual administered by the Seithberenders a clan champion is bathed in the black water of the Nidakettil. During the ritual his fellow warriors cut deep wounds in his flesh before taking their own lives. Scarred by both the loss of his friends and the cuts in his flesh, the Nidbathed undergoes a gruesome transformation. His flesh turns white while his scars and eyes turns black as the night. Each scar on his body represents the strength and the death of a friend. If the Nidbathed is killed, one of his scars turns red and he rises again, unkillable as long as his friends’ deaths hold him alive. Being unkillable, the Nidbathed don’t care much for shields. Instead they fight with heavy greatswords able to cut down even the mightiest of Jotuns. Would-be Nidheres are prominent tribal champions and great lengths are taken by the Seithberenders to make the Nidalögning strong, and a greater number of friends will sacrifice themselves during the ritual.
+--Nidbathed are unnatural in this world are affected by spells that would banish or act on undead.
+--The number of Scar Souls equals the full dominion of the province."
 #descr "The Nidbathed, Nidlögade, are ghastly warriors who are not even stopped by death. In a horrible ritual administered by the Seithberenders a clan champion is bathed in the black water of the Nidakettil. During the ritual his fellow warriors cut deep wounds in his flesh before taking their own lives. Scarred by both the loss of his friends and the cuts in his flesh, the Nidbathed undergoes a gruesome transformation. His flesh turns white while his scars and eyes turns black as the night. Each scar on his body represents the strength and the death of a friend. If the Nidbathed is killed, one of his scars turns red and he rises again, unkillable as long as his friends’ deaths hold him alive. Being unkillable, the Nidbathed don’t care much for shields. Instead they fight with heavy greatswords able to cut down even the mightiest of Jotuns. Would-be Nidheres are prominent tribal champions and great lengths are taken by the Seithberenders to make the Nidalögning strong, and a greater number of friends will sacrifice themselves during the ritual.
-Nidbathed are unnatural in this world are affected by spells that would banish or act on undead.
-The number of Scar Souls equals the full dominion of the province, rounded up."
---#gcost 10060
---#extralives 50
-#coldres 10
-#enc 2
-#undead
-#almostliving
+The number of Scar Souls equals the one half the dominion of the province, rounded up."
+#gcost 10050
+#extralives 50
+--#coldres 10
+--#enc 2
+--#undead
+--#almostliving
 #end
 
 #selectmonster 3790 -- Crosswielder
@@ -95368,6 +95372,33 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 
+#newsite 2467
+#name "MA Nidavangr Summons"
+#level 0
+#rarity 5
+#path 1
+#look 8
+#homemon 694 -- bear
+#homemon 8020 -- dire bear
+#homemon 2190 -- draug
+#homemon 3747 -- ice ele s8
+#homecom 8673 -- fire dragon
+#homecom 8678 -- lindwurm
+#homecom 7253 -- aesir
+#homecom 7254 -- aesir
+#end
+
+#newsite 2468
+#name "MA Nidavangr Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 1
+#homecom 3881
+#homecom 3883
+#end
+
+
 
 -- END OF NEW SITES
 
@@ -101021,8 +101052,12 @@ Dominion: Causes dreamless slumber, greatly reducing tax income. Vines reanimate
 #end
 
 #selectnation 81 -- MA Nidavangr
+#uwbuild 1
 #cheapgod20 8438 -- Vargr
 #cheapgod20 8372 -- Spirit Bear
+
+#futuresite "MA Nidavangr Summons"
+#futuresite "MA Nidavangr Heroes"
 #end
 
 #selectnation 79 -- MA Vanarus
@@ -107958,6 +107993,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #restricted 31 -- EA Helheim
 #restricted 78 -- MA Vanheim
 #restricted 79 -- Vanarus
+#restricted 81 -- Nidavangr
 #end
 
 #selectspell 2471
@@ -110650,6 +110686,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #restricted 33 -- Niefelheim
 #restricted 80 -- Jotunheim
 #restricted 189 -- Fennoscandia
+#restricted 81 -- Nidavangr
 #end
 
 #selectspell 2660
@@ -113024,7 +113061,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 0 2
 #pathlevel 0 3
 #fatiguecost 1000
-#nreff 506
+#nreff 505
 #damage 3747
 #restricted 33 -- Niefelheim
 #restricted 80 -- Jotunheim
@@ -113033,6 +113070,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 187 -- Bhod
 #restricted 188 -- shambhala
 #restricted 189 -- Fennoscandia
+#restricted 81 -- Nidavangr
 #end
 
 #selectspell 2823
@@ -118204,7 +118242,12 @@ All effects scale with friendly Dominion."
 #nreff 1
 #fatiguecost 100
 #damage 1776  -- Bean Sidhe
-#restricted 100 -- LA Man
+#notfornation 33 -- niefel
+#notfornation 34 -- muspel
+#notfornation 80 -- jotun
+#notfornation 118 -- vaetti
+#notfornation 81 -- nida
+#notfornation 117 -- utgard
 #spec 0
 #nextspell 3215
 #end
@@ -118219,7 +118262,12 @@ All effects scale with friendly Dominion."
 #effect 10021
 #nreff 1
 #damage 1776  -- Bean Sidhe
-#restricted 100 -- LA Man
+#notfornation 33 -- niefel
+#notfornation 34 -- muspel
+#notfornation 80 -- jotun
+#notfornation 118 -- vaetti
+#notfornation 81 -- nida
+#notfornation 117 -- utgard
 #spec 0
 #nextspell 3216
 #end
@@ -119788,6 +119836,7 @@ All effects scale with friendly Dominion."
 #restricted 187 -- Bhod Kingdom
 #restricted 188 -- shambhala
 #restricted 189 -- Fennoscandia
+#restricted 81 -- Nidavangr
 #spec 279040  -- Enemies only, Cold, ignores shields
 #nextspell "Icy winds"
 #end
@@ -130857,6 +130906,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 493 -- Summon Draugar
 #fatiguecost 800 -- 12 -> 8 gems
+#end
+
+#selectspell 503 -- Command Draugar
+#nreff 6
 #end
 
 #selectspell 495 -- Glosos
