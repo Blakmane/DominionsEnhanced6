@@ -91362,6 +91362,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #gems 4 2
 #name "The Floating City"
 #path 2 
+#look 5
 #homecom 6728
 #homecom 6738
 #end
@@ -96305,6 +96306,35 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8203
 #end
 
+#newsite 2471
+#name "LA Venedia Summons"
+#level 0
+#rarity 5
+#path 1
+#look 1
+#homemon 6744 -- Winged Lion
+#homemon 6744 -- Winged Lion
+#homemon 6747 -- thopter
+#homecom 6749 -- flying ship
+#homecom 6745 -- glass angel
+#homecom 6746 -- gilded angel
+#homecom 6748 -- meteor
+#homecom 7250 -- athene
+#homecom 7251 -- poseidon
+#end
+
+#newsite 2472
+#name "LA Venedia Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 3
+#homecom 6740
+#homecom 6741
+#homecom 6742
+#homecom 6743
+#end
+
 
 -- END OF NEW SITES
 
@@ -99953,6 +99983,11 @@ Priests: Average"
 #secondarycolor 0.85 0.75 0.2
 #flag "venedia/venedia_flag.tga"
 #startsite "The Floating City"
+
+#futuresite "LA Venedia Summons"
+#futuresite "Celestial Angels"
+#futuresite "LA Venedia Heroes"
+
 #coastnation
 #startcom "Venedian captain"  -- captain
 #startscout "Venedian diplomat"  -- diplomat
@@ -129288,7 +129323,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #pathlevel 0 5 -- F5
 #fatiguecost 5000
 #effect 10037
-#damage 543
+#damage 3870
 #nreff 7
 #provrange 5
 #nogeodst 4100 -- Not caves or sea
@@ -129305,7 +129340,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #pathlevel 0 5 -- S5
 #fatiguecost 5000
 #effect 10037
-#damage 543
+#damage 3870
 #nreff 7
 #provrange 5
 #nogeodst 4100 -- Not caves or sea
