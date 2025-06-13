@@ -4106,32 +4106,42 @@
 #rcost 16
 #end
 
+ -- Barding changes
+
 
 #selectarmor 172 -- Mail Barding
 #protparts 16 16 -- vanilla 14 14
-#enc 3 -- vanilla 4
+#protinspector 2
+#def -1 -- vanilla -2
+#enc 2 -- vanilla 4
 #end
 
 #selectarmor 190 -- Coral Barding
 #protparts 0 12 -- vanilla  11
-#enc 3 -- vanilla 4
+#protinspector 12
+#def -1 -- vanilla -2
+#enc 2 -- vanilla 4
 #end
 
 #selectarmor 251 -- Leather Barding
 #protparts 7 9 -- vanilla  5
+#protinspector 9
 #end
 
 #selectarmor 252 -- Light Scale Barding
 #protparts 9 12 -- vanilla  10
+#protinspector 12
 #enc 0 -- vanilla 1
 #end
 
 #selectarmor 253 -- Cataphract Barding
 #protparts 21 14 -- vanilla 21 13
+#protinspector 14
 #enc 1 -- vanilla 2
 #end
 
 #selectarmor 254 -- Plate Barding
+#def -1 -- vanilla -2
 #enc 2 -- vanilla 3
 #end
 
@@ -4140,39 +4150,48 @@
 
 #selectarmor 256 -- Rusty Scale Barding
 #protparts 7 10 -- vanilla  8
+#protinspector 10
 #end
 
 #selectarmor 257 -- Rusty Cataphract Barding
 #protparts 19 12 -- vanilla 19 11
+#protinspector 12
 #end
 
 #selectarmor 263 -- Bronze Barding
+#def -1 -- vanilla -2
 #enc 2 -- vanilla 3
 #end
 
 #selectarmor 264 -- Light Bronze Barding
 #protparts 5 10 -- vanilla  9
+#protinspector 10
 #enc 0 -- vanilla 1
 #end
 
 #selectarmor 270 -- Enchanted Leather Barding
 #protparts 13 16 -- vanilla 10 16
+#protinspector 16
 #end
 
 #selectarmor 271 -- Boar Leather Barding
 #protparts 17 14 -- vanilla 15 11
+#protinspector 14
 #end
 
 #selectarmor 272 -- Enchanted Plate Barding
 #protparts 23 21 -- vanilla 23 20
+#protinspector 21
 #end
 
 #selectarmor 273 -- Blacksteel Barding
 #protparts 24 22 -- vanilla 24 21
+#protinspector 22
 #end
 
 #selectarmor 274 -- Gossamer Barding
 #protparts 16 13 -- vanilla 13 10
+#protinspector 13
 #end
 
 #selectarmor 275 -- Fay Steed Barding
@@ -4180,34 +4199,43 @@
 
 #selectarmor 276 -- Lightweight Cataphract Barding
 #protparts 22 16 -- vanilla 22 14
+#protinspector 16
 #enc 0 -- vanilla 1
 #end
 
 #selectarmor 277 -- Golden Barding
 #protparts 23 21 -- vanilla 23 20
+#protinspector 21
+#def -1 -- vanilla -2
 #enc 2 -- vanilla 3
 #end
 
 #selectarmor 280 -- Plate Barding of Ulm
+#def -1 -- vanilla -2
 #end
 
 #selectarmor 287 -- Cat Barding
 #protparts 19 13 -- vanilla 19 12
+#protinspector 13
 #end
 
 #selectarmor 289 -- Lizard Barding
 #protparts 20 14 -- vanilla 20 13
+#protinspector 14
 #enc 1 -- vanilla 2
 #end
 
 #selectarmor 290 -- King's Barding
 #protparts 29 27 -- vanilla 23 21
+#protinspector 27
 #end
 
 #selectarmor 144 -- Elephant Barding
 #protparts 10 10 -- vanilla 9 9
+#protinspector 10
 #enc 1 -- vanilla 2
 #end
+
 
 
 #newmonster 6510
@@ -44390,6 +44418,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #newmonster 8202 -- Dragon slayer
 #spr1 "worthy_heroes/sigurd_mounted_1.tga"
 #spr2 "worthy_heroes/sigurd_mounted_2.tga"
+#unmountedspr1 "worthy_heroes/un_sigurd_mounted_1.tga"
+#unmountedspr2 "worthy_heroes/un_sigurd_mounted_2.tga"
 #name "Dragon Slayer"
 #fixedname "Sigurd"
 #descr "Sigurd is a famous human hero from Vanheim. Some say that he is an exiled prince from a distant land while others say that he descends from a line of gods. He rides a great elven steed named Grani, derived from the legendary Sleipnir. He slew the mighty dragon Fafnir with his magical blade Gram, which is sharp enough to cut an anvil in half. Sigurd found many magical armaments in the dragon's hoard, including a magical cloak that makes him invisible and allows him to sneak into enemy territory. After killing Fafnir, Sigurd bathed in the dragon's blood which has made him invulnerable to normal weapons. His deeds do not end there, for he also rode through fire to rescue his love, the shieldmaiden Brynhildr. The great dragon slayer has now come to serve awakening god in search of more glory."
@@ -44397,7 +44427,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #att 14
 #def 13
 #hp 20
-#mounted
+#mountmnr 3933 -- fey horse
+#skilledrider 6
 #fireres 15
 #inspirational 1
 #stealthy 50
@@ -44425,6 +44456,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #fixedname "Laurin"
 #spr1 "worthy_heroes/laurin_1.tga"
 #spr2 "worthy_heroes/laurin_2.tga"
+#unmountedspr1 "worthy_heroes/un_laurin.tga"
+#unmountedspr2 "worthy_heroes/un_laurin.tga"
 #descr "Laurin is a strange dwarf. Instead of living in the dark halls of Andvare, he prefers the sunlight and the natural beauty of the forests. He built a magnificent rose garden, hidden deep within a dark forest. It was a place of utter peace and tranquillity, nurtured by small streams and the magic of Laurin. Many came to visit Laurin and to see his beautiful garden. But one day an oafish adventurer and his squire came to the garden and trampled all over it. Laurin tried to stop them but was wrestled to the ground. He was humiliated. Enraged, Laurin has now come to serve the awakening god hoping that the new god will lead him to his revenge. The Keeper of the Rose Garden is now prepared for battle and has adorned a magical belt that grants him giant's strength. He will break one bone for each rose trampled once he gets his hands on those adventurers. His garden is gone but he can draw upon its memory and produce some temporary nature gems in each battle."
 #str 25
 #att 11
@@ -44433,10 +44466,10 @@ While in the form of an old man, all paths are increased and allows the use of N
 #animalawe 5
 #forestsurvival
 #darkvision 25
-#mounted
+#mountmnr 8547
+#skilledrider 5
 #tmpnaturegems 2
 #weapon 299  -- Enchanted Sickle
-#weapon 354  -- Antlers
 #itemslots 860678 -- rider base
 #magicskill 6 3
 #magicskill 3 2
@@ -44449,7 +44482,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mr 17
 #mor 14
 #gcost 0
-#size 3
+#size 2
 #poorleader
 #maxage 250
 #startage 75
@@ -49292,6 +49325,7 @@ Dragon Priests can be recruited in any land fort."
 #copystats 3529
 #copyspr 3529
 #holy
+#def 12
 #end
 
 #newmonster 7305
@@ -56967,6 +57001,891 @@ Cannot be recruited until Break the Deadlock is cast."
 #selectmonster 3668 -- Vidyadhara
 #def 16 -- 15 -> 16
 #airshield 50
+#end
+
+
+-- Mount Skilled Rider Changes:
+
+
+
+#selectmonster 2924 -- Queen of the North
+#skilledrider 7 -- 5 -> 7
+#end
+
+#selectmonster 2926 -- Morgen Queen
+#skilledrider 7 -- 5 -> 7
+#end
+
+#selectmonster 2925 -- Queen of the North
+#skilledrider 7 -- 5 -> 7
+#end
+
+#selectmonster 2927 -- Morgen Queen
+#skilledrider 7 -- 5 -> 7
+#end
+
+#selectmonster 3904 -- Fay Prince
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 3909 -- Unseelie Prince
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 2917 -- Morgen Champion
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 2919 -- Morgen Princess
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 2918 -- Morgen Champion
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 2920 -- Morgen Princess
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 588 -- Heroine
+#skilledrider 7 -- 5 -> 7
+#end
+
+#selectmonster 1511 -- Vanadis
+#skilledrider 7 -- 6 -> 7
+#end
+
+#selectmonster 501 -- Allfather
+#skilledrider 7 -- 5 -> 7
+#end
+
+#selectmonster 856 -- Tuatha
+#skilledrider 7 -- 5 -> 7
+#end
+
+#selectmonster 1754 -- Ri
+#skilledrider 7 -- 5 -> 7
+#end
+
+#selectmonster 3312 -- Feminie Queen
+#skilledrider 6 --  -> 6
+#end
+
+#selectmonster 1196 -- Hog Knight
+#skilledrider 7 --  -> 7
+#end
+
+#selectmonster 182 -- Wraith Lord
+#skilledrider 6 --  -> 6
+#end
+
+#selectmonster 1507 -- Dis
+#skilledrider 7 -- 5 -> 7
+#end
+
+#selectmonster 2473 -- Hangadrottning
+#skilledrider 7 -- 5 -> 7
+#end
+
+#selectmonster 948 -- Vanadrott
+#skilledrider 7 -- 5 -> 7
+#end
+
+#selectmonster 847 -- Hangadrott
+#skilledrider 7 -- 5 -> 7
+#end
+
+#selectmonster 378 -- Hero
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 58 -- Knight of the Stone
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 507 -- Heroine
+#skilledrider 6 -- 5 -> 6
+#end
+
+#selectmonster 2128 -- Knight Commander of Avalon
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 3627 -- Phantasmal Knight
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 489 -- Demon Knight
+#skilledrider 6 --  -> 6
+#end
+
+#selectmonster 377 -- Hero
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 848 -- Sidhe Lord
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 264 -- Vanjarl
+#skilledrider 6 -- 5 -> 6
+#end
+
+#selectmonster 590 -- Vanadrott
+#skilledrider 6 -- 5 -> 6
+#end
+
+#selectmonster 1506 -- Vanjarl
+#skilledrider 6 -- 5 -> 6
+#end
+
+#selectmonster 2342 -- Vanabog
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 1505 -- Vanherse
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 1759 -- Sidhe Lord
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 1502 -- Helkarl
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 381 -- Heroine
+#skilledrider 6 -- 5 -> 6
+#end
+
+#selectmonster 3901 -- Fay Knight
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 3907 -- Unseelie Knight
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 376 -- Green Knight
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 2915 -- Morvarc'h Knight
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 2916 -- Morvarc'h Knight
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 263 -- Vanherse
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 3926 -- Devi of Strength
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 3985 -- Phantasmal Knight
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 1061 -- Triton Prince
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 506 -- Hero
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 3311 -- Lady Knight
+#skilledrider 6 -- 2 -> 6
+#end
+
+#selectmonster 3326 -- Orionde King
+#skilledrider 6 -- 2 -> 6
+#end
+
+#selectmonster 1175 -- Warrior Queen
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 3812 -- Lady Commander
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 64 -- Knight of Avalon
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 1957 -- Bogatyr
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 3255 -- Blood Graf
+#skilledrider 5 --  -> 5
+#end
+
+#selectmonster 3809 -- Lady Knight
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 3796 -- Bird Knight Commander
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 3792 -- Bird Knight
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 930 -- Khan
+#skilledrider 5 -- 4 -> 5
+#end
+
+#selectmonster 1059 -- Knight of the Deeps
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 4048 -- Cambion King
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 4060 -- Crimson King
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 647 -- Dark Knight
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 57 -- Knight of Man
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 1641 -- Tower Knight
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 3612 -- Pyrènian Knight
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 4039 -- Pyrènian Knight
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 3615 -- Pyrènian Marquess
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 4042 -- Pyrènian Marquess
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 2359 -- Holy Knight
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 440 -- Paladin
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 134 -- Royal Guard
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 135 -- Knight of the Chalice
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 69 -- Black Knight
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 70 -- Black Lord
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 738 -- Black Templar
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 1237 -- Hochmeister
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 262 -- Van
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 1503 -- Helhirding
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 1504 -- Mounted Hirdman
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 183 -- Wraith King
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 1186 -- Warrior Sorceress
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 3802 -- Piconye Scout
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 1942 -- Mountain Vila
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 1178 -- Witch King
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 1589 -- Man Eater
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 793 -- Prince General
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 589 -- Witch Hunter General
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 1185 -- Oiorpata
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 367 -- Pegasus Rider
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 1177 -- Manflayer
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 1554 -- Agema Commander
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 1174 -- Warrior Priestess
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 4049 -- Cambion Count
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 1074 -- Wind Rider
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 1075 -- Wind Lord
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 4050 -- Cambion Knight
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 3325 -- Orionde Knight
+#skilledrider 4 -- 1 -> 4
+#end
+
+#selectmonster 3413 -- Wolf Brother
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 3435 -- Vaetti Herse
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 1176 -- Androphag
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 3411 -- Vaetti Gode
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 5 -- Serpent Lord
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 765 -- Serpent Lord
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 1173 -- Sauromatian Manflayer
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 791 -- Red Guard
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 1207 -- Eponi Chieftain
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 3691 -- Praefectus Equitum
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 1577 -- Ancestor Vessel
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 1141 -- Tiger Rider
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 792 -- General
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 3979 -- General
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 1169 -- Chieftain
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 451 -- Horse Brother
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 1553 -- Agema Companion
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 1172 -- Sauromatian Cataphract
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 763 -- Serpent Cataphract
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 3016 -- Triton Knight
+#skilledrider 4 --  -> 4
+#end
+
+#selectmonster 3613 -- Emerald Knight
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 3616 -- Emerald Count
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 91 -- Heavy Cavalry
+#skilledrider 4 -- 1 -> 4
+#end
+
+#selectmonster 184 -- Knight of the Unholy Sepulchre
+#skilledrider 4 --  -> 4
+#end
+
+#selectmonster 939 -- Barbarian Heavy Horseman
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 3219 -- Phlegran Cataphract Commander
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 2931 -- Knight Commander of Ys
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 2932 -- Knight Commander of Ys
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 3215 -- Mouflon Cataphract
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 2605 -- Turan Shah
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 2588 -- Turan Spahbed
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 2585 -- Savaran Guard
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 2629 -- Zhayedan Spahbed
+#skilledrider 4 -- 1 -> 4
+#end
+
+#selectmonster 2587 -- Zhayedan
+#skilledrider 4 -- 1 -> 4
+#end
+
+#selectmonster 4066 -- Vintefolei Shaman Chief
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 1168 -- Raider
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 1171 -- Sauromatian Raider
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 3296 -- Vintefolei Horseman
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 938 -- Barbarian Horseman
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 1167 -- Lancer
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 1170 -- Sauromatian Lancer
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 450 -- Horse Brother
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 1916 -- Veliki Knyaz
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 2582 -- Turan Horse Archer
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 2583 -- Turan Cavalry
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 1771 -- Mounted Scout
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 2910 -- Knight of Ys
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 2911 -- Knight of Ys
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 1925 -- Black Hood
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 1924 -- Styag
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 3017 -- Triton Noble
+#skilledrider 4 --  -> 4
+#end
+
+#selectmonster 866 -- Hero
+#skilledrider 4 --  -> 4
+#end
+
+#selectmonster 1917 -- Knyaz
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 3333 -- Nabaean Camel Rider
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 3334 -- Sheikh
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 3454 -- Ubaran Camel Rider
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 3459 -- Ubaran Sheikh
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 2584 -- Savaran Cataphract
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 370 -- Jade Maiden
+#skilledrider 4 -- 1 -> 4
+#end
+
+#selectmonster 508 -- Wolf Lord
+#skilledrider 4 --  -> 4
+#end
+
+#selectmonster 136 -- Horse Tribe Chief
+#skilledrider 4 --  -> 4
+#end
+
+#selectmonster 391 -- Grey Lord
+#skilledrider 5 --  -> 5
+#end
+
+#selectmonster 390 -- Grey Knight
+#skilledrider 5 --  -> 5
+#end
+
+#selectmonster 19 -- Heavy Cavalry
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 2260 -- Berytian Lancer
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 1108 -- Equite of the Sacred Shroud
+#skilledrider 4 -- 1 -> 4
+#end
+
+#selectmonster 137 -- Horse Tribe Cavalry
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 1208 -- Eponi Knight
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 3 -- Serpent Cataphract
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 369 -- Nightmare Rider
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 612 -- Gryphon Rider
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 292 -- Heavy Cavalry
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 23 -- Knight Commander
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 21 -- Heavy Cavalry
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 22 -- Knight
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 875 -- Warrior Mage
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 389 -- Fire Lord
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 2899 -- Kernou Cavalry
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 2117 -- Imperial Commander
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 790 -- Imperial Horseman
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 1060 -- Triton Knight
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 2391 -- Triton Rider
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 1923 -- Malaia Druzhina
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 3418 -- Wolf Rider
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 282 -- Wolf Rider
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 283 -- Chief
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 1250 -- Mounted Gokenin
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 1253 -- Daimyo
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 1107 -- Equite
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 26 -- Light Cavalry
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 3187 -- Heavy Cavalry
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 20 -- Heavy Cavalry
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 2861 -- Haliade
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 2129 -- Logrian Cavalry
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 25 -- Light Cavalry
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 24 -- Light Cavalry
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 46 -- Mounted Commander
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 1922 -- Grid Druzhina
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 789 -- Heavy Horseman
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 1251 -- Hatamoto
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 1246 -- Samurai Cavalry
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 788 -- Horseman
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 1187 -- Cataphract
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 44 -- Mounted Commander
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 45 -- Mounted Commander
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 3415 -- Moose Rider
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 1086 -- Troll Moose Knight
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 188 -- Mound King
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 246 -- Freak Lord
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 189 -- Longdead Horseman
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 1634 -- Kivigtok
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 248 -- Arch Mage
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 887 -- Spider Lord
+#skilledrider 2 --  -> 2
+#end
+
+#selectmonster 886 -- Spider Knight
+#skilledrider 2 --  -> 2
+#end
+
+#selectmonster 889 -- Black Hunter
+#skilledrider 1 --  -> 1
+#end
+
+#selectmonster 890 -- Voice of the Hunters
+#skilledrider 1 --  -> 1
+#end
+
+#selectmonster 545 -- Shark Knight
+#skilledrider 1 --  -> 1
+#end
+
+#selectmonster 885 -- Spider Rider
+#skilledrider 1 --  -> 1
+#end
+
+#selectmonster 2308 -- Spider Rider
+#skilledrider 1 --  -> 1
+#end
+
+#selectmonster 1085 -- Moose Rider
+#skilledrider 1 --  -> 1
+#end
+
+#selectmonster 1451 -- Drake Lord
+#skilledrider 1 --  -> 1
+#end
+
+#selectmonster 1450 -- Cave Knight
+#skilledrider 1 --  -> 1
 #end
 
 
@@ -71478,8 +72397,8 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #end
 
 #selectmonster 2208 -- Great Sorcerer spider
-#spr1 "extrapretenders/godspider.tga"
-#spr2 "extrapretenders/godspider2.tga"
+--#spr1 "extrapretenders/godspider.tga"
+--#spr2 "extrapretenders/godspider2.tga"
 #descr "In the God Forest, monstrous spiders large enouth to catch elephants live. Since the unsealing of the God Mountain Machakan sorcerers have caught and trained the monstrous spiders as sacred mounts for the Black Hunters, but sometimes sorcery is used to summon and command entire groups of Hunter Spiders. Spiders bound with magic must be commanded by mages at all times, but they do not act erratically as the mounts of the Black Hunters might do if left without rider."
 #diseaseres 100
 #gcost 80
@@ -75726,6 +76645,15 @@ Initiates of the Deep can be recruited in any land fort."
 #selectmonster 258  -- Tenjiro, the Dragon Girl
 #end
 
+
+#selectmonster 263  -- Vanherse
+#gcost 180 -- 235 -> 210
+#end
+
+#selectmonster 264  -- Vanjarl
+#gcost 370 -- 440 -> 400
+#end
+
 #selectmonster 271 -- Burgmeister Guard
 #bodyguard 4
 #end
@@ -77348,63 +78276,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #unsurr 2
 #end
 
-#selectmonster 888  -- Hunter Spider
-#spr1 "magicenhanced/eehunter.tga"
-#spr2 "magicenhanced/eehunter2.tga"
-#end
-
-#selectmonster 889  -- Black Hunter
-#cleararmor
-#clearweapons
-#spr1 "magicenhanced/ee_bhunter.tga"
-#spr2 "magicenhanced/ee_bhunter2.tga"
-#descr "In the God Forest, monstrous spiders are caught and trained by Machakan sorcerers. These huge beasts carry the Black Hunters, sacred warriors in full plate armor. From atop their gigantic steeds they survey the battlefield. The hunter spider can entangle nearby enemies in webs."
-#lizard
-#unsurr 2
-#hp 55
-#prot 16
-#str 18
-#def 10
-#mr 9
-#rcost 25
-#poisonres 15
-#animal
-#secondshape 0
-#xploss 0
-#eyes 8
-#weapon 148  -- Spider Claw
-#weapon 65  -- Venomous Fangs
-#weapon 261  -- Web
-#weapon 437  -- Long Spear
-#end
-
-#selectmonster 890  -- Hunter Lord
-#cleararmor
-#clearweapons
-#spr1 "magicenhanced/ee_bhunter.tga"
-#spr2 "magicenhanced/ee_bhunter2.tga"
-#descr "In the God Forest, monstrous spiders are caught and trained by Machakan sorcerers. These huge beasts carry the Black Hunters, sacred warriors in full plate armor. From atop their gigantic steeds they survey the battlefield. The hunter spider can entangle nearby enemies in webs."
-#lizard
-#unsurr 2
-#hp 55
-#prot 16
-#str 18
-#def 10
-#mr 10
-#rcost 25
-#poisonres 15
-#animal
-#secondshape 0
-#secondtmpshape 0
-#xploss 0
-#eyes 8
-#itemslots 786432 -- 2 misc
-#weapon 148  -- Spider Claw
-#weapon 65  -- Venomous Fangs
-#weapon 261  -- Web
-#weapon 437  -- Long Spear
-#end
-
 #selectmonster 891  -- Sorceress
 #clearmagic
 #magicskill 0 1
@@ -77416,13 +78287,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 898  -- Spider Form
 #unsurr 2
-#end
-
-#selectmonster 899
-#spr1 "extrapretenders/godspider.tga"
-#spr2 "extrapretenders/godspider2.tga"
-#unsurr 2
-#str 18
 #end
 
 #selectmonster 900  -- Belial
@@ -77550,6 +78414,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #def 14  -- base 9
 #unsurr 2
 #end
+
+#selectmonster 948 -- Vanadrott
+#magicskill 1 3 -- A3
+#end
+
 
 #selectmonster 952  -- Hero Abasi
 #hp 21  -- base 15
@@ -81190,6 +82059,11 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #montag 1050 -- true jinn
 #twiceborn 3389
 #end
+
+#selectmonster 3529 -- Demon Steed
+#def 12
+#end
+
 
 #selectmonster 3539 -- Na'Ba/Ubar Camel
 #gcost 10014
@@ -95398,6 +96272,38 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 3883
 #end
 
+#newsite 2469
+#name "MA Vanheim Summons"
+#level 0
+#rarity 5
+#path 1
+#look 0
+#homemon 694 -- bear
+#homemon 463 -- fay boar
+#homemon 261 -- valk
+#homemon 2190 -- draug
+#homecom 7330 -- draugherse
+#homecom 7329 -- draugadrott
+#homecom 1010 -- Svartalf
+#homecom 324 -- dwarf elder
+#homecom 7253 -- female aesir
+#homecom 7254 -- male aesir
+#homecom 7363 -- brunhilde
+#end
+
+#newsite 2470
+#name "MA Vanheim Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 3
+#homecom 8150
+#homecom 544
+#homecom 590
+#homecom 8151
+#homecom 8202
+#homecom 8203
+#end
 
 
 -- END OF NEW SITES
@@ -101039,6 +101945,9 @@ Dominion: Causes dreamless slumber, greatly reducing tax income. Vines reanimate
 #uwbuild 1
 #addgod 8348 -- First Valkyrie
 #addgod 8349 -- Great Gull
+
+#futuresite "MA Vanheim Summons"
+#futuresite "MA Vanheim Heroes"
 #end
 
 #selectnation 80 -- MA Jotunheim
@@ -130289,6 +131198,21 @@ Applies the effects of Holy Avenger to the caster"
 #restricted 104 -- LA Abysia
 #end
 
+#selectspell 4161
+#copyspell 1024 -- Summon Sleeper
+#name "Contact Svartalf"
+#descr "The caster ventures deep into roots of the earth to meet with an Svartalf. With a great horde of gems the Svartalf will be convinced to serve in the Ascension War. Svartalfs are dwarves of a sinister nature, shunning daylight and preferring to live in deep caves to work their wonders. This spell can only be cast in a cave."
+#researchlevel 5
+#path 0 5 -- D
+#pathlevel 0 2
+#path 0 3 -- E
+#pathlevel 0 2
+#fatiguecost 2500
+#nreff 1
+#damage 1010 -- Svartalf
+#restricted 78 -- MA Vanheim
+#onlygeosrc 4096 -- Caves
+#end
 
 
 
