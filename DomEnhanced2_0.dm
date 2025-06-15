@@ -14134,7 +14134,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #unmountedspr1 "shambhala/bhodpa_sde_pa_1.tga"
 #unmountedspr2 "shambhala/bhodpa_sde_pa_2.tga"
 #descr "The Tsowo are Lords of the Bhödpa tribes and rule over an entire mountain. They have proven their ability to lead the other Dé Pa and are entrusted with military command in times of war. The Tsowo ride hardy mountain horses raised to withstand the cold of the Bhöd mountains."
-#mountedhumanoid
+#humanoid
 #rpcost 2
 #mapmove 14
 #ap 13
@@ -16113,6 +16113,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #ressize 2
 #nametype 180
 #weapon 1562 -- custom Gore attack
+#armor 251 -- leather barding
 #mountainsurvival
 #bravemount 90
 #animal
@@ -49014,7 +49015,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mor 18
 #hp 54
 #prot 10
-#def 16
+#def 14
 #str 20
 #att 12
 #ap 28
@@ -49918,7 +49919,7 @@ Dragon Priests can be recruited in any land fort."
 #mr 11 -- +1
 #mor 13 -- +1
 #holy
-#skilledrider 4
+#skilledrider 6
 #montag  1065
 #xpgain 35 -- +35%
 #mountmnr 3579
@@ -49935,7 +49936,7 @@ Dragon Priests can be recruited in any land fort."
 #mr 11 -- +1
 #mor 13 -- +1
 #holy
-#skilledrider 4
+#skilledrider 6
 #montag  1070
 #xpgain 35 -- +35%
 #mountmnr 3579
@@ -49952,7 +49953,7 @@ Dragon Priests can be recruited in any land fort."
 #mr 11 -- +1
 #mor 13 -- +1
 #holy
-#skilledrider 4
+#skilledrider 6
 #montag  1075
 #xpgain 35 -- +35%
 #mountmnr 3579
@@ -49969,7 +49970,7 @@ Dragon Priests can be recruited in any land fort."
 #mr 11 -- +1
 #mor 13 -- +1
 #holy
-#skilledrider 4
+#skilledrider 6
 #invulnerable 10
 #montag  1080
 #xpgain 35 -- +35%
@@ -50002,7 +50003,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1066
 #xpshape 100
 #montagweight 15 -- 50xp, 1/16
-#skilledrider 3
+#skilledrider 5
 #end
 
 #newmonster 8829 -- 50xp sacred
@@ -50024,7 +50025,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1067
 #xpshape 200
 #montagweight 11 -- 100xp, 1/12
-#skilledrider 4
+#skilledrider 6
 #end
 
 #newmonster 8831 -- 100xp sacred
@@ -50046,7 +50047,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1068
 #xpshape 400
 #montagweight 8 -- 200xp, 1/9
-#skilledrider 4
+#skilledrider 6
 #end
 
 #newmonster 8833 -- 200xp sacred
@@ -50066,7 +50067,7 @@ Dragon Priests can be recruited in any land fort."
 #unmountedspr1 "nihuala/un_bowturquoise2.tga"
 #montag  1069
 #montagweight 5 -- 400xp, 1/6
-#skilledrider 4
+#skilledrider 6
 #end
 
 #newmonster 8835 -- 400xp sacred
@@ -50107,7 +50108,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1071
 #xpshape 100
 #montagweight 15 -- 50xp, 1/16
-#skilledrider 3
+#skilledrider 5
 #end
 
 #newmonster 8839 -- 50xp sacred
@@ -50129,7 +50130,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1072
 #xpshape 200
 #montagweight 11 -- 100xp, 1/12
-#skilledrider 4
+#skilledrider 6
 #end
 
 #newmonster 8841 -- 100xp sacred
@@ -50151,7 +50152,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1073
 #xpshape 400
 #montagweight 8 -- 200xp, 1/9
-#skilledrider 4
+#skilledrider 6
 #end
 
 #newmonster 8843 -- 200xp sacred
@@ -50171,7 +50172,7 @@ Dragon Priests can be recruited in any land fort."
 #unmountedspr1 "nihuala/un_lanceturquoise2.tga"
 #montag  1074
 #montagweight 5 -- 400xp, 1/6
-#skilledrider 4
+#skilledrider 6
 #end
 
 #newmonster 8845 -- 400xp sacred
@@ -50213,7 +50214,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1076
 #xpshape 100
 #montagweight 15 -- 50xp, 1/16
-#skilledrider 3
+#skilledrider 5
 #end
 
 #newmonster 8849 -- 50xp sacred
@@ -50235,7 +50236,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1077
 #xpshape 200
 #montagweight 11 -- 100xp, 1/12
-#skilledrider 4
+#skilledrider 6
 #end
 
 #newmonster 8851 -- 100xp sacred
@@ -50257,7 +50258,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1078
 #xpshape 400
 #montagweight 8 -- 200xp, 1/9
-#skilledrider 4
+#skilledrider 6
 #end
 
 #newmonster 8853 -- 200xp sacred
@@ -50277,7 +50278,7 @@ Dragon Priests can be recruited in any land fort."
 #unmountedspr1 "nihuala/un_axeturquoise2.tga"
 #montag  1079
 #montagweight 5 -- 400xp, 1/6
-#skilledrider 4
+#skilledrider 6
 #end
 
 #newmonster 8855 -- 400xp sacred
@@ -50320,7 +50321,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1081
 #xpshape 100
 #montagweight 4 -- 50xp, 1/5
-#skilledrider 3
+#skilledrider 5
 #end
 
 #newmonster 8859 -- 50xp sacred
@@ -50342,7 +50343,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1082
 #xpshape 200
 #montagweight 3 -- 100xp, 1/4
-#skilledrider 4
+#skilledrider 6
 #end
 
 #newmonster 8861 -- 100xp sacred
@@ -50364,7 +50365,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1083
 #xpshape 400
 #montagweight 2 -- 200xp, 1/3
-#skilledrider 4
+#skilledrider 6
 #end
 
 #newmonster 8863 -- 200xp sacred
@@ -50384,7 +50385,7 @@ Dragon Priests can be recruited in any land fort."
 #unmountedspr1 "nihuala/un_axeturquoise2.tga"
 #montag  1084
 #montagweight 1 -- 400xp, 1/2
-#skilledrider 4
+#skilledrider 6
 #end
 
 #newmonster 8865 -- 400xp sacred
@@ -55571,7 +55572,6 @@ Cost 50 recruitment points."
 #newmonster 9608
 #name "Yan Lifida"
 #descr "The Yan Lifida are an order of elite horseman, created when the Seven Kingdoms first united under one banner. Though originally formed to defeat Phaeacia, the Colossi allowed the order to persist and set them to upholding their rule. The Yan Lifida take their names from the cloth armour worn by both rider and mount, though most riders now also wear a layer of chain mail. The Yan Lifida is mostly comprised of nobles who have the privilege of equipping themselves and they still maintain the fighting traditions of the Seven Kingdoms. The Yan Lifida are heirs to the legacy of the cavalry heroes of old and are considered sacred by the people of the Seven Kingdoms, but they do not consider themselves men of great faith and will still demand a full wage. As warriors who are not in the direct employ of the Colossi, the Yan Lifida are treated with distrust within Houssa itself and rarely visit the city."
-#mountmnr "War Horse" --War Horse (lifidi)
 #spr1 "houssa/9608_1_yan_lifida.png"
 #spr2 "houssa/9608_2_yan_lifida.png"
 #unmountedspr1 "houssa/9608_3_yan_lifida.png"
@@ -57004,9 +57004,206 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 
+-- Modded Mount Skilled Rider Changes:
+
+
+#selectmonster 6591 -- Owner of the Lodges
+#skilledrider 7 -- 5 -> 7
+#end
+
+#selectmonster 7469 -- Aes Sidhe Lord
+#skilledrider 7 -- 5 -> 7
+#end
+
+#selectmonster 8202 -- Dragon Slayer
+#skilledrider 7 -- 6 -> 7
+#end
+
+#selectmonster 7327 -- Vanbaldr
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 7347 -- Aes Sidhe Hornblower
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 7854 -- Volans Knight Commander
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 7470 -- Aes Sidhe Rider
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 7920 -- Fair and Great Prince
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 8114 -- Lord of Rotaimo
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 6585 -- War Chief
+#skilledrider 5 -- 4 -> 5
+#end
+
+#selectmonster 6605 -- Jet Warrior
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 7359 -- Knight of the Volans
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 8121 -- Adventurous Governor
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 8141 -- Storm Knight
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 8232 -- Last Conquistador
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 8551 -- Shroud Wight
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 8553 -- Eternal Wight
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 8680 -- Son of Muspel
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 7305 -- Minister of Fire
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 6891 -- Tsowo
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 8556 -- Eternal Wight Praefectus
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 9622 -- Tiny Champion
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 7196 -- Faris
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 7163 -- Mobile Guard
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 7188 -- Emir
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 7802 -- Equite of the Eternal Shroud
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 7810 -- Praefectus of the Eternal Shroud
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 7472 -- Knight of the Fallen Chalice
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 6602 -- Bare Rider
+#skilledrider 5 -- 4 -> 5
+#end
+
+#selectmonster 8884 -- Sidhe Rider
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 8679 -- Rider of Muspel
+#skilledrider 5 -- 1 -> 5
+#end
+
+#selectmonster 6599 -- Turquoise Archer
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 8079 -- Fenni Elk Rider
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 8250 -- Unconquered Warrior
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 9607 -- Jarumi
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 9608 -- Yan Lifida
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 9613 -- Madawaki
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 7168 -- Ghazi
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 6919 -- Ta Pa
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 6928 -- Ta Mak Go
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 6881 -- Tribal Horseman
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 6879 -- Yak Rider
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 6911 -- Bhödpa Yak Rider
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 7136 -- Ghul Cavalry
+#skilledrider 3 --  -> 3
+#end
+
+#selectmonster 8095 -- Noayd
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 9606 -- Hausa Cavalry
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 8323 -- High Diviner
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 7526 -- Praefectus
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 7162 -- Mamluk Horseman
+#skilledrider 3 -- 1 -> 3
+#end
+
 -- Mount Skilled Rider Changes:
-
-
 
 #selectmonster 2924 -- Queen of the North
 #skilledrider 7 -- 5 -> 7
