@@ -2703,18 +2703,17 @@
 #newweapon 1765
 #copyweapon 634  -- Antlers
 #name "Glass Fist"
+#magic
 #end
 
 #newweapon 1766
-#copyweapon 553  -- Rock
+#copyweapon 601 -- cave fire
 #name "Alchemists Fire Bombs"
-#dmg 4
-#def 0
-#ammo 3
+#dmg 14
+#ammo 5
+#range 3
+#range0
 #bonus
-#norepel
-#unrepel
-#secondaryeffectalways 171
 #skip
 #end
 
@@ -2810,8 +2809,15 @@
 #end
 
 #newweapon 1779 -- Sword of Many Colors w/ Bonus
-#copyweapon 195 -- Sword of Many Colors
+#name "Sword of Many Colors"
+#dmg 17
+#att 3
+#def 5
+#len 2
+#slash
+#magic
 #bonus
+#secondaryeffectalways 196 -- killing light
 #end
 
 #newweapon 1800 -- Golden Claw w/ Bonus
@@ -3308,6 +3314,22 @@
 #notdismounted
 #end
 
+#newweapon 1845 -- Nothing
+#copyweapon 384 -- Minor Life Drain (for Natural tag so blesses do not function on it)
+#name "Nothing"
+#aoe 1
+#len 0
+#att -5
+#bonus
+--#dt_aff
+#dt_normal
+#dmg 0
+#nostr
+#unrepel -- Can not be repelled
+#norepel -- Can not repelled
+#enemyimmune
+#friendlyimmune
+#end
 
 -- END OF NEW WEAPONS
 
@@ -4659,6 +4681,8 @@
 #nofalldmg
 #regainmount 1
 #nobarding
+#poisonres 25
+#coldres 10
 #mountmnr 6529 -- Arrow Cart
 #nametype 188 -- Vehicle
 #end
@@ -4802,6 +4826,8 @@
 #nofalldmg
 #regainmount 1
 #nobarding
+#poisonres 25
+#coldres 10
 #diseaseres 100
 #itemslots 1  -- no slots
 #maxage 500
@@ -9748,6 +9774,7 @@
 #descr "Stratiots are medium cavalry who fight with an unusual combination of lance and crossbow. They first stratiots employed by Venedia used bows as they were foreign mercenaries from lands with a tradition of horse archery, but eventually they became a regular part of the army which native Venedians could join too, bringing with them their preference for crossbows. Stratiots usually begin battle by firing a single volley to soften up their foes before charging. "
 #spr1 "venedia/stratiot1.tga"
 #spr2 "venedia/stratiot2.tga"
+#drawsize 0
 #clearweapons
 #weapon 357  -- light lance
 #weapon "Arbalest"
@@ -9770,6 +9797,7 @@
 #spr1 "venedia/knight1.tga"
 #spr2 "venedia/knight2.tga"
 #descr "As most high-born Venedians care more for trade, art and politics than warfare, few choose to become knights and those who do are not as formidable as those other lands who ride fantastic beasts, carry enchanted arms and armor or are fanatical in their devotion to the church. However they are still brave and skilled fighters."
+#drawsize 0
 #end
 
 #newmonster 6724
@@ -9778,7 +9806,7 @@
 #spr2 "venedia/bravo2.tga"
 #name "Bravo"
 #descr "Bravos are scoundrels, swashbucklers and ne'er-do-wells who prefer dueling and brawling to peaceful, honest work. Though considered an annoyance and little better than bandits by most citizens some of them become swordsmen of remarkable skill are eventually hired as mercenaries and retainers by the nobility. Bravos are good fighters and quick on their feet, but are not used to fighting in formation and must be well-paid to ensure some semblance of discipline. "
-#gcost 10015
+#gcost 10013
 #rpcost 9
 #att 12
 #def 12
@@ -9793,7 +9821,7 @@
 #cleararmor
 #armor "Leather cap"
 #armor "Leather hauberk"
-#chaosrec 3
+#chaosrec 2
 #formationfighter -2
 #skirmisher 1
 #nametype 174
@@ -9858,6 +9886,7 @@
 #name "Stratiot Captain"
 #spr1 "venedia/stratiotcaptain1.tga"
 #spr2 "venedia/stratiotcaptain2.tga"
+#drawsize 0
 #okleader
 #command 20
 #att 11
@@ -10208,7 +10237,11 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #enc 0
 #mapmove 28
 #ap 12
+#clearmagic
+--#magicskill 0 1
+--#magicskill 1 1
 #magicskill 4 2
+#magicskill 7 1
 #magicskill 9 1
 #inanimate
 #noheal
@@ -10233,11 +10266,15 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #end
 
 #newmonster 6746
+#copystats 3072 -- Kami of the Sun for eyeloss
 #name "Gilded Angel"
-#descr "A Gilded Angel is a huge representation of an angel rendered in silver and glass and miraculously brought to life by the glory of the True God. As a physical miracle and proof of divinity it will spread the Dominion of the Lord and is always blessed. In addition the sight of the Angel will bolster the morale of all friendly soldiers at the battle. The magic animating the glass also enchants it to be as hard as iron, and the angel will be difficult to destroy. The angel is a wonder of craftsmanship and artistry and most enemies will be dumbstruck with awe. The shafts of concentrated light emanating from the Angel can strike a man blind. A Gilded Angel is a magical, mindless being however it has some innate skill with the magic of the heavens and the sky and has great priestly powers. It can only be repaired in a magical laboratory."
+#descr "A Gilded Angel is a huge representation of an angel rendered in silver and glass and miraculously brought to life by the glory of the True God. As a physical miracle and proof of divinity it will spread the Dominion of the Lord and is always blessed. In addition the sight of the Angel will bolster the morale of all friendly soldiers at the battle. The magic animating the glass also enchants it to be as hard as iron, and the angel will be difficult to destroy. The angel is a wonder of craftsmanship and artistry and most enemies will be dumbstruck with awe. The shafts of concentrated light emanating from the Angel can strike a man blind. A Gilded Angel is a magical, mindless being however it has some innate skill with the magic of the heavens and has great priestly powers. It can only be repaired in a magical laboratory."
 #spr1 "venedia/gildedangel.tga"
 #spr2 "venedia/gildedangel2.tga"
 #humanoid
+#cleararmor
+#clearweapons
+#homerealm 0
 #rcost 1
 #gcost 0
 #rpcost 0
@@ -10253,8 +10290,11 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #enc 0
 #mapmove 28
 #ap 12
-#magicskill 1 3
+#clearmagic
+#magicskill 0 2
+--#magicskill 1 3
 #magicskill 4 3
+#magicskill 7 2
 #magicskill 9 3
 #inanimate
 #noheal
@@ -10263,7 +10303,6 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #slashres
 #pierceres
 #holy
-#eyeloss
 #pooramphibian
 #neednoteat
 #poisonres 25
@@ -10272,87 +10311,14 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #nomagicleader
 #spiritsight
 #darkpower -2
-#itemslots 786432 -- 2 misc
+#itemslots 1835008 -- 3 misc
 #onebattlespell 242 -- Fanaticism
 #weapon 1779  -- Sword of Many Colours
 #spreaddom 1
+#awe 0
 #sunawe 5
 #nametype 139
 #end
-
-#newmonster 6747
-#name "Ornithopter"
-#spr1 "venedia/ornith.tga"
-#spr2 "venedia/ornith2.tga"
-#descr "This impressive construction allows a person to fly with ease for an extended period of time. The wings flap in response to the pilots commands, allowing for an impressive degree of maneuverability. The Ornithopter is priceless for scouting when soaring high above the land and will rarely be caught by enemy patrols. In battle they swoop down as the pilots throw volatile mixtures concocted by the alchemists onto enemy soldiers or fortifications. Once its arsenal has been expended the pilot can only attempt to buffet enemies with the beating wings of the contraption."
-#mountedhumanoid
-#gcost 20
-#ap 12
-#mapmove 24
-#hp 15
-#prot 12
-#size 5
-#str 10
-#enc 3
-#att 8
-#def 12
-#prec 11
-#mr 10
-#mor 10
-#noleader
-#stealthy 20
-#siegebonus 5
-#itemslots 786432
-#weapon 1766 -- Alchemists Fire Bombs
-#weapon 677  -- Wing Buff
-#flying
-#float
-#mounted
-#ressize 2
-#nametype 174
-#end
-
-#newmonster 6748
-#name "Meteorologist"
-#spr1 "venedia/meto.tga"
-#spr2 "venedia/meto2.tga"
-#descr "Meteorologists have dedicated their lives to studying the heavens, weather patterns and the mechanics of climate to harness powerful magics. Floating above the battlefield in their Flying Boat they can see further than other mages and can easily pick out targets. The Flying Boat can evade detection by soaring high above the land and will rarely be caught by enemy patrols. Their proximity to the heavens greatly aids their magical workings. They are learned in the magics of the air and the stars, and less often the sun and the rain."
-#humanoid
-#gcost 300
-#ap 12
-#mapmove 22
-#hp 10
-#prot 12
-#size 6
-#str 9
-#enc 3
-#att 10
-#def 10
-#prec 13
-#mr 14
-#mor 10
-#weapon "Dagger"
-#armor "Robes"
-#eyes 2
-#flying
-#float
-#mounted
-#ressize 2
-#stealthy 20
-#researchbonus 8
-#itemslots 991750
-#magicskill 1 2
-#magicskill 4 2
-#custommagic 2944 100  -- 100% FAWS
-#allrange 2
-#patrolbonus 20
-#poorleader
-#poormagicleader
-#noundeadleader
-#nametype 174
-#end
-
-
 
 #newmonster 6753
 #copystats 720
@@ -50744,7 +50710,7 @@ Requires an Ippondatara present to recruit."
 #unmountedspr1 "venedia/repeatcrossbow1.tga"
 #unmountedspr2 "venedia/repeatcrossbow2.tga"
 #name "Flying Ship"
-#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols. Crew members will be able to fire their crossbows while the ship is moving.
+#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols.
 While the ship is docked at the Floating City, it can be repaired and receive a fresh crew at any time."
 #gcost 0
 #size 3
@@ -50752,10 +50718,14 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #bodyguard -5
 #def 12
 #prot 12
+#float
+#patrolbonus 20
+#siegebonus 25
+#stealthy 20
+#poorleader
 #mobilearcher 1
 #weapon 253 -- hatchet
 #weapon 1508 -- Airborne Repeating Crossbow
-#weapon 1844 -- Ship Ballistae
 #weapon 1844 -- Ship Ballistae
 #armor 9 -- plate cuirass
 #armor 20 -- iron cap
@@ -50769,8 +50739,6 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #foreignshape 6752 -- not home shape
 #shapechange 8894 -- recrewing
 #end
-
-
 
 #newmonster 6752 -- Flying Ship captain not home
 #copystats 685  -- Alae Legionnaire
@@ -50787,7 +50755,7 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #unmountedspr1 "venedia/repeatcrossbow1.tga"
 #unmountedspr2 "venedia/repeatcrossbow2.tga"
 #name "Flying Ship"
-#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols. Crew members will be able to fire their crossbows while the ship is moving.
+#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols.
 While the ship is docked at the Floating City, it can be repaired and receive a fresh crew at any time."
 #gcost 0
 #size 3
@@ -50795,10 +50763,14 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #bodyguard -5
 #def 12
 #prot 12
+#float
+#patrolbonus 20
+#siegebonus 25
+#stealthy 20
+#poorleader
 #mobilearcher 1
 #weapon 253 -- hatchet
 #weapon 1508 -- Airborne Repeating Crossbow
-#weapon 1844 -- Ship Ballistae
 #weapon 1844 -- Ship Ballistae
 #armor 9 -- plate cuirass
 #armor 20 -- iron cap
@@ -50827,6 +50799,9 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #bodyguard -5
 #def 12
 #prot 12
+#float
+#stealthy 20
+#poorleader
 #mobilearcher 1
 #weapon 253 -- hatchet
 #weapon 1508 -- Airborne Repeating Crossbow
@@ -50839,12 +50814,10 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #end
 
 #newmonster 6751
-#name "Flying Ship"
+#name "Flying Vessel"
 #spr1 "venedia/flyingshipd.tga"
 #spr2 "venedia/flyingshipd.tga"
-#unmountedspr1 "magicenhanced/eefirecatapultempty.tga"
-#unmountedspr2 "magicenhanced/eefirecatapultempty.tga"
-#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols. Crew members will be able to fire their crossbows while the ship is moving."
+#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols."
 #miscshape
 #gcost 0
 #size 10
@@ -50859,11 +50832,12 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #enc 0
 #mapmove 20
 #flying
-#ap 2
+#float
+#stealthy 20
+#ap 5
 #woundfend 99
-#siegebonus 25
 #clearweapons
-#weapon 547 -- buff
+#weapon 1845 -- Nothing
 #bodyguard -5
 #pierceres
 #noleader
@@ -50872,8 +50846,10 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #noheal
 --#mountiscom 1
 #nothrowoff
-#nofalldmg
+#noremount
 #nobarding
+#poisonres 25
+#coldres 10
 #diseaseres 100
 #itemslots 786432 -- 2 misc
 #maxage 500
@@ -50899,7 +50875,7 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #unmountedspr1 "venedia/repeatcrossbow1.tga"
 #unmountedspr2 "venedia/repeatcrossbow2.tga"
 #name "Flying Ship (Repairing)"
-#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols. Crew members will be able to fire their crossbows while the ship is moving.
+#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols.
 This ship is undergoing maintenance and will be fully repaired and recrewed at the end of the month. Servicing will be halted if the ship leaves the Floating City. Up to 3 Flying Ships can be serviced per month."
 #gcost 0
 #size 3
@@ -50907,10 +50883,14 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #bodyguard -5
 #def 12
 #prot 12
+#float
+#patrolbonus 20
+#siegebonus 25
+#stealthy 20
+#poorleader
 #mobilearcher 1
 #weapon 253 -- hatchet
 #weapon 1508 -- Airborne Repeating Crossbow
-#weapon 1844 -- Ship Ballistae
 #weapon 1844 -- Ship Ballistae
 #armor 9 -- plate cuirass
 #armor 20 -- iron cap
@@ -50920,11 +50900,186 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #mountmnr 6751 -- Flying Ship
 #coridermnr 6750 -- Flying Ship Crew
 #nofriders 4
+#itemslots 0 -- None (all items fall off)
 #nametype 188 -- Vehicle
 #foreignshape 6752 -- not home shape
 #shapechange 6749 -- home
 #end
 
+
+#newmonster 6747
+#name "Ornithopter"
+#spr1 "venedia/ornith.tga"
+#spr2 "venedia/ornith2.tga"
+#unmountedspr1 "venedia/un_ornith.tga"
+#unmountedspr2 "venedia/un_ornith2.tga"
+#descr "This impressive construction allows a person to fly with ease for an extended period of time. The wings flap in response to the pilots commands, allowing for an impressive degree of maneuverability. The Ornithopter is priceless for scouting when soaring high above the land and will rarely be caught by enemy patrols. In battle they swoop down as the pilots throw volatile mixtures concocted by the alchemists onto enemy soldiers or fortifications. Once its arsenal has been expended the pilot can only attempt to buffet enemies with the beating wings of the contraption."
+#humanoid
+#gcost 0
+#ap 12
+#hp 10
+#prot 6
+#size 3
+#str 10
+#enc 3
+#att 8
+#def 12
+#prec 11
+#mr 10
+#mor 10
+#noleader
+#stealthy 40
+#siegebonus 5
+#itemslots 786432
+#weapon 1766 -- Alchemists Fire Bombs
+#weapon 677  -- Wing Buff
+#armor 10 -- leather hauberk
+#armor 120 -- leather hat
+#float
+#mountmnr 8895
+#nametype 174
+#nothrowoff
+#nobarding
+#noremount
+#skilledrider 15
+#end
+
+#newmonster 8895
+#name "Flying Contraption"
+#spr1 "venedia/ornithm.tga"
+#spr2 "venedia/ornithm.tga"
+#descr "This impressive construction allows a person to fly with ease for an extended period of time. The wings flap in response to the pilots commands, allowing for an impressive degree of maneuverability. The Ornithopter is priceless for scouting when soaring high above the land and will rarely be caught by enemy patrols. In battle they swoop down as the pilots throw volatile mixtures concocted by the alchemists onto enemy soldiers or fortifications. Once its arsenal has been expended the pilot can only attempt to buffet enemies with the beating wings of the contraption."
+#miscshape
+#gcost 0
+#size 5
+#hp 18
+#prot 12
+#mr 10
+#mor 50
+#str 10
+#att 5
+#def 0
+#prec 15
+#enc 0
+#mapmove 24
+#flying
+#float
+#stealthy 40
+#ap 5
+#woundfend 99
+#clearweapons
+#weapon 1845 -- Nothing
+--#weapon 547 -- buff
+#bodyguard -5
+#pierceres
+#noleader
+#blind
+#neednoteat
+#noheal
+--#mountiscom 1
+#nothrowoff
+#nofalldmg
+#nobarding
+#poisonres 25
+#coldres 10
+#diseaseres 100
+#itemslots 786432 -- 2 misc
+#maxage 500
+#startage 10
+--#firstshape 6535 -- Onager
+#nametype 188 -- Vehicle
+#cleanshape
+#end
+
+#newmonster 6748
+#name "Meteorologist"
+#spr1 "venedia/meto.tga"
+#spr2 "venedia/meto2.tga"
+#unmountedspr1 "venedia/un_meto.tga"
+#unmountedspr2 "venedia/un_meto.tga"
+#descr "Meteorologists have dedicated their lives to studying the heavens, weather patterns and the mechanics of climate to harness powerful magics. Floating above the battlefield in their Flying Boat they can see further than other mages and can easily pick out targets. The Flying Boat can evade detection by soaring high above the land and will rarely be caught by enemy patrols. Their proximity to the heavens greatly aids their magical workings. They are learned in the magics of the air and the stars, and less often the sun and the rain."
+#humanoid
+#gcost 300
+#ap 12
+#hp 10
+#prot 12
+#size 6
+#str 9
+#enc 3
+#att 10
+#def 10
+#prec 16
+#mr 14
+#mor 10
+#weapon "Dagger"
+#armor "Robes"
+#eyes 2
+#float
+#stealthy 40
+#researchbonus 8
+#itemslots 991750
+#magicskill 1 2
+#magicskill 4 2
+#custommagic 2944 100  -- 100% FAWS
+#allrange 2
+#patrolbonus 20
+#poorleader
+#poormagicleader
+#noundeadleader
+#nametype 174
+#float
+#mountmnr 8896
+#nothrowoff
+#nobarding
+#noremount
+#skilledrider 15
+#end
+
+#newmonster 8896
+#name "Flying Boat"
+#spr1 "venedia/metoboat.tga"
+#spr2 "venedia/metoboat.tga"
+#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols."
+#miscshape
+#gcost 0
+#size 10
+#hp 60
+#prot 18
+#mr 10
+#mor 50
+#str 20
+#att 5
+#def 0
+#prec 15
+#enc 0
+#mapmove 22
+#flying
+#float
+#stealthy 40
+#ap 5
+#woundfend 99
+#clearweapons
+#weapon 1845 -- Nothing
+#bodyguard -5
+#pierceres
+#noleader
+#blind
+#neednoteat
+#noheal
+--#mountiscom 1
+#nothrowoff
+#noremount
+#nobarding
+#poisonres 25
+#coldres 10
+#diseaseres 100
+#itemslots 786432 -- 2 misc
+#maxage 500
+#startage 10
+--#firstshape 6535 -- Onager
+#nametype 188 -- Vehicle
+#cleanshape
+#end
 
 
 
@@ -91620,6 +91775,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #name "The Floating City"
 #path 2 
 #look 5
+#homemon 6725 -- penitente
 #homecom 6728
 #homecom 6738
 #end
@@ -100277,7 +100433,7 @@ Priests: Average"
 #addrecunit 6722 -- stratiot
 #addrecunit 6723
 #addrecunit 6724 -- bravo
-#addrecunit 6725 -- penitente
+--#addrecunit 6725 -- penitente
 #tradecoast 10
 #merccost -10
 #defcom1 6727
@@ -100320,7 +100476,7 @@ Priests: Average"
 #multihero1 6743 -- giustiziere
 #homefort 19  -- grand citadel
 
-#moreorder 1
+--#moreorder 1
 #moreprod 1
 #end
 
@@ -123514,7 +123670,7 @@ All effects scale with friendly Dominion."
 #pathlevel 1 1
 #damage 6745 -- Glass Angel
 #effect 10021
-#fatiguecost 2500
+#fatiguecost 1600
 #nreff 1
 #restricted 201 -- Venedia
 #onlyatsite 2114 -- Floating City
@@ -123531,7 +123687,7 @@ All effects scale with friendly Dominion."
 #pathlevel 1 2
 #damage 6746 -- Gilded Angel
 #effect 10021
-#fatiguecost 6000
+#fatiguecost 5000
 #nreff 1
 #restricted 201 -- Venedia
 #onlyatsite 2114 -- Floating City
@@ -123541,12 +123697,12 @@ All effects scale with friendly Dominion."
 #name "Create Ornithopter Scout"
 #descr "The caster constructs a flying machine according to the designs of the savants. The Ornithopter so created will allow a person to fly with ease for an extended period of time. They are priceless for scouting when soaring high above the land and will rarely be caught by enemy patrols. In battle they swoop down as the pilots throw volatile mixtures concocted by the alchemists onto enemy soldiers or fortifications."
 #school 3
-#researchlevel 3
+#researchlevel 2
 #path 0 1
 #pathlevel 0 2
 #damage 6747 -- Ornithopter
 #effect 10021
-#fatiguecost 300
+#fatiguecost 200
 #nreff 1
 #restricted 201 -- Venedia
 #onlyatsite 2114 -- Floating City
@@ -123556,15 +123712,15 @@ All effects scale with friendly Dominion."
 #name "Create Ornithopters"
 #descr "The caster constructs several flying machines according to the designs of the savants. The Ornithopters so created will allow a person to fly with ease for an extended period of time. They can avoid detection by soaring high above the land and will rarely be caught by enemy patrols. In battle they swoop down as the pilots throw volatile mixtures concocted by the alchemists onto enemy soldiers or fortifications. More skilled casters can create more of the machines with each casting."
 #school 3
-#researchlevel 5
+#researchlevel 4
 #path 0 1
 #pathlevel 0 2
 #path 1 3
 #pathlevel 1 2
 #damage 6747 -- Ornithopter
 #effect 10001
-#fatiguecost 1500
-#nreff 505
+#fatiguecost 1000
+#nreff 1008 -- 10+
 #restricted 201 -- Venedia
 #onlyatsite 2114 -- Floating City
 #end
@@ -123573,7 +123729,7 @@ All effects scale with friendly Dominion."
 #name "Create Flying Boat"
 #descr "The savants have designed many wondrous and experimental contraptions. The caster constructs one such design, a Flying Boat to allow a trained Meteorologist to take to the skies. These mages have dedicated their lives to studying the heavens, weather patterns and the mechanics of climate to harness powerful magics. The Flying Boat will allow them to conduct experimental techniques for casting more powerful rituals. Floating above the battlefield they can see further than other mages and can easily pick out targets."
 #school 3
-#researchlevel 7
+#researchlevel 6
 #path 0 1
 #pathlevel 0 2
 #path 1 4
@@ -123590,12 +123746,12 @@ All effects scale with friendly Dominion."
 #name "Create Flying Ship"
 #descr "The savants have designed many wondrous and experimental contraptions. The caster constructs one such design, a Flying Ship that can carry a squad of repeating crossbowmen. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols. If any of the crew are killed in battle the ship can return to the Floating City to collect more soldiers."
 #school 3
-#researchlevel 5
+#researchlevel 4
 #path 0 1
 #pathlevel 0 3
 #damage 6749 -- Flying Ship
 #effect 10021
-#fatiguecost 1000
+#fatiguecost 600
 #nreff 1
 #restricted 201 -- Venedia
 #onlyatsite 2114 -- Floating City
