@@ -277,23 +277,6 @@
 #flyspr 403
 #end
 
-#newweapon 1508
-#copyweapon 25  -- Crossbow
-#name "Airborne crossbow"
-#dmg 6
-#nratt 2
-#att 0
-#range 45
-#rcost 5
-#twohanded
-#sound 13
-#bowstr
-#pierce
-#ammo 18
-#ironweapon
-#flyspr 403
-#end
-
 #newweapon 1509
 #copyweapon 370  -- Theft of Reason
 #name "Cutting Gaze"
@@ -3302,6 +3285,29 @@
 #def -1
 #att 0
 #end
+
+#newweapon 1508
+#copyweapon 25  -- Crossbow
+#name "Airborne Crossbow"
+#dmg 9
+#nratt 2
+#att 2
+#range 70
+#pierce
+#ammo 30
+#flyspr 403
+#end
+
+
+#newweapon 1844 -- Flying Ship Ballistae
+#copyweapon 206 -- Ballista
+#name "Ship-Mounted Ballista"
+#ammo 30
+#att 6
+#nratt -2
+#notdismounted
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -10346,155 +10352,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #nametype 174
 #end
 
-#newmonster 6749
-#name "Flying Ship"
-#spr1 "venedia/flyingship.tga"
-#spr2 "venedia/flyingship2.tga"
-#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. Squads of repeating crossbowmen are placed in such a vessel and used as a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols. If any of the crew are killed in battle the ship can return to the Floating City to collect more soldiers."
-#mountedhumanoid
-#itemslots 786432 -- 2 misc
-#gcost 300
-#ap 12
-#mapmove 22
-#hp 12
-#prot 12
-#size 10
-#str 10
-#enc 3
-#att 10
-#def 10
-#prec 13
-#mr 10
-#mor 13
-#weapon 1508 -- Airborne Repeating Crossbow
-#weapon 1508 -- Airborne Repeating Crossbow
-#weapon 1508 -- Airborne Repeating Crossbow
-#weapon 1508 -- Airborne Repeating Crossbow
-#weapon "Dagger"
-#weapon "Dagger"
-#armor 6
-#armor 120
-#eyes 8
-#flying
-#float
-#mounted
-#stealthy 20
-#nametype 174
-#patrolbonus 20
-#poorleader
-#secondshape 6750
-#end
 
-#newmonster 6750
-#name "Flying Ship"
-#spr1 "venedia/flyingshipa.tga"
-#spr2 "venedia/flyingshipa2.tga"
-#descr "Since the invention of flying machines they have been pressed into service as a weapon of war. Squads of repeating crossbowmen are placed in such a vessel and used as a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols. If any of the crew are killed in battle the ship can return to the Floating City to collect more soldiers."
-#mountedhumanoid
-#itemslots 786432 -- 2 misc
-#gcost 300
-#ap 12
-#mapmove 22
-#hp 12
-#prot 12
-#size 10
-#str 10
-#enc 3
-#att 10
-#def 10
-#prec 13
-#mr 10
-#mor 12
-#weapon 1508 -- Airborne Repeating Crossbow
-#weapon 1508 -- Airborne Repeating Crossbow
-#weapon 1508 -- Airborne Repeating Crossbow
-#weapon "Dagger"
-#weapon "Dagger"
-#armor 6
-#armor 120
-#eyes 6
-#flying
-#float
-#mounted
-#stealthy 20
-#nametype 174
-#patrolbonus 20
-#poorleader
-#secondshape 6751
-#homeshape 6749
-#end
-
-#newmonster 6751
-#name "Flying Ship"
-#spr1 "venedia/flyingshipb.tga"
-#spr2 "venedia/flyingshipb2.tga"
-#descr "Since the invention of flying machines they have been pressed into service as a weapon of war. Squads of repeating crossbowmen are placed in such a vessel and used as a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols. If any of the crew are killed in battle the ship can return to the Floating City to collect more soldiers."
-#mountedhumanoid
-#itemslots 786432 -- 2 misc
-#gcost 300
-#ap 12
-#mapmove 22
-#hp 12
-#prot 12
-#size 10
-#str 10
-#enc 3
-#att 10
-#def 10
-#prec 13
-#mr 10
-#mor 11
-#weapon 1508 -- Airborne Repeating Crossbow
-#weapon 1508 -- Airborne Repeating Crossbow
-#weapon "Dagger"
-#armor 6
-#armor 120
-#eyes 4
-#flying
-#float
-#mounted
-#stealthy 20
-#nametype 174
-#patrolbonus 20
-#poorleader
-#secondshape 6752
-#homeshape 6749
-#end
-
-#newmonster 6752
-#name "Flying Ship"
-#spr1 "venedia/flyingshipc.tga"
-#spr2 "venedia/flyingshipc2.tga"
-#descr "Since the invention of flying machines they have been pressed into service as a weapon of war. Squads of repeating crossbowmen are placed in such a vessel and used as a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols. If any of the crew are killed in battle the ship can return to the Floating City to collect more soldiers."
-#mountedhumanoid
-#itemslots 786432 -- 2 misc
-#gcost 300
-#ap 12
-#mapmove 22
-#hp 12
-#prot 18
-#size 10
-#str 10
-#enc 3
-#att 11
-#def 11
-#prec 13
-#mr 10
-#mor 10
-#weapon 1508 -- Airborne Repeating Crossbow
-#weapon "Dagger"
-#armor 6
-#armor 120
-#eyes 2
-#flying
-#float
-#mounted
-#stealthy 20
-#nametype 174
-#patrolbonus 20
-#poorleader
-#homeshape 6749
-#end
 
 #newmonster 6753
 #copystats 720
@@ -50867,6 +50725,208 @@ Requires an Ippondatara present to recruit."
 #goodleader
 #okundeadleader
 #end
+
+
+
+
+#newmonster 6749 -- Flying Ship captain home
+#copystats 685  -- Alae Legionnaire
+#clearweapons
+#cleararmor
+#spr1 "venedia/flyingship.tga"
+#spr2 "venedia/flyingship2.tga"
+#xspr1 "venedia/flyingshipa.tga"
+#xspr2 "venedia/flyingshipa2.tga"
+#xspr1 "venedia/flyingshipb.tga"
+#xspr2 "venedia/flyingshipb2.tga"
+#xspr1 "venedia/flyingshipc.tga"
+#xspr2 "venedia/flyingshipc2.tga"
+#unmountedspr1 "venedia/repeatcrossbow1.tga"
+#unmountedspr2 "venedia/repeatcrossbow2.tga"
+#name "Flying Ship"
+#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols. Crew members will be able to fire their crossbows while the ship is moving.
+While the ship is docked at the Floating City, it can be repaired and receive a fresh crew at any time."
+#gcost 0
+#size 3
+#ap 4
+#bodyguard -5
+#def 12
+#prot 12
+#mobilearcher 1
+#weapon 253 -- hatchet
+#weapon 1508 -- Airborne Repeating Crossbow
+#weapon 1844 -- Ship Ballistae
+#weapon 1844 -- Ship Ballistae
+#armor 9 -- plate cuirass
+#armor 20 -- iron cap
+#nobarding
+#nothrowoff
+#nofalldmg
+#mountmnr 6751 -- Flying Ship
+#coridermnr 6750 -- Flying Ship Crew
+#nofriders 4
+#nametype 188 -- Vehicle
+#foreignshape 6752 -- not home shape
+#shapechange 8894 -- recrewing
+#end
+
+
+
+#newmonster 6752 -- Flying Ship captain not home
+#copystats 685  -- Alae Legionnaire
+#clearweapons
+#cleararmor
+#spr1 "venedia/flyingship.tga"
+#spr2 "venedia/flyingship2.tga"
+#xspr1 "venedia/flyingshipa.tga"
+#xspr2 "venedia/flyingshipa2.tga"
+#xspr1 "venedia/flyingshipb.tga"
+#xspr2 "venedia/flyingshipb2.tga"
+#xspr1 "venedia/flyingshipc.tga"
+#xspr2 "venedia/flyingshipc2.tga"
+#unmountedspr1 "venedia/repeatcrossbow1.tga"
+#unmountedspr2 "venedia/repeatcrossbow2.tga"
+#name "Flying Ship"
+#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols. Crew members will be able to fire their crossbows while the ship is moving.
+While the ship is docked at the Floating City, it can be repaired and receive a fresh crew at any time."
+#gcost 0
+#size 3
+#ap 4
+#bodyguard -5
+#def 12
+#prot 12
+#mobilearcher 1
+#weapon 253 -- hatchet
+#weapon 1508 -- Airborne Repeating Crossbow
+#weapon 1844 -- Ship Ballistae
+#weapon 1844 -- Ship Ballistae
+#armor 9 -- plate cuirass
+#armor 20 -- iron cap
+#nobarding
+#nothrowoff
+#nofalldmg
+#mountmnr 6751 -- Flying Ship
+#coridermnr 6750 -- Flying Ship Crew
+#nofriders 4
+#nametype 188 -- Vehicle
+#homeshape 6749 -- home shape
+#end
+
+
+#newmonster 6750 -- Flying Ship crossbowman
+#copystats 685  -- Alae Legionnaire
+#clearweapons
+#cleararmor
+#spr1 "venedia/repeatcrossbow1.tga"
+#spr2 "venedia/repeatcrossbow2.tga"
+#name "Flying Shipmate"
+#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. This is a crewman of one such ship, tasked with piloting the ship and firing a repeating crossbow in battle. The crossbowmen of the ship carry much larger and heavier repeating crossbows that can be rested on the ship's railing, capable of being fired further with greater accuracy due to the height of the ship."
+#gcost 0
+#size 3
+#ap 4
+#bodyguard -5
+#def 12
+#prot 12
+#mobilearcher 1
+#weapon 253 -- hatchet
+#weapon 1508 -- Airborne Repeating Crossbow
+#armor 6 -- ring mail cuirass
+#armor 120 -- leather cap
+#nobarding
+#nothrowoff
+#nofalldmg
+#cleanshape
+#end
+
+#newmonster 6751
+#name "Flying Ship"
+#spr1 "venedia/flyingshipd.tga"
+#spr2 "venedia/flyingshipd.tga"
+#unmountedspr1 "magicenhanced/eefirecatapultempty.tga"
+#unmountedspr2 "magicenhanced/eefirecatapultempty.tga"
+#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols. Crew members will be able to fire their crossbows while the ship is moving."
+#miscshape
+#gcost 0
+#size 10
+#hp 130
+#prot 18
+#mr 10
+#mor 50
+#str 20
+#att 5
+#def 0
+#prec 15
+#enc 0
+#mapmove 20
+#flying
+#ap 2
+#woundfend 99
+#siegebonus 25
+#clearweapons
+#weapon 547 -- buff
+#bodyguard -5
+#pierceres
+#noleader
+#blind
+#neednoteat
+#noheal
+--#mountiscom 1
+#nothrowoff
+#nofalldmg
+#nobarding
+#diseaseres 100
+#itemslots 786432 -- 2 misc
+#maxage 500
+#startage 10
+--#firstshape 6535 -- Onager
+#nametype 188 -- Vehicle
+#cleanshape
+#end
+
+
+#newmonster 8894 -- Flying Ship captain recrewing
+#copystats 685  -- Alae Legionnaire
+#clearweapons
+#cleararmor
+#spr1 "venedia/flyingship.tga"
+#spr2 "venedia/flyingship2.tga"
+#xspr1 "venedia/flyingshipa.tga"
+#xspr2 "venedia/flyingshipa2.tga"
+#xspr1 "venedia/flyingshipb.tga"
+#xspr2 "venedia/flyingshipb2.tga"
+#xspr1 "venedia/flyingshipc.tga"
+#xspr2 "venedia/flyingshipc2.tga"
+#unmountedspr1 "venedia/repeatcrossbow1.tga"
+#unmountedspr2 "venedia/repeatcrossbow2.tga"
+#name "Flying Ship (Repairing)"
+#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols. Crew members will be able to fire their crossbows while the ship is moving.
+This ship is undergoing maintenance and will be fully repaired and recrewed at the end of the month. Servicing will be halted if the ship leaves the Floating City. Up to 3 Flying Ships can be serviced per month."
+#gcost 0
+#size 3
+#ap 4
+#bodyguard -5
+#def 12
+#prot 12
+#mobilearcher 1
+#weapon 253 -- hatchet
+#weapon 1508 -- Airborne Repeating Crossbow
+#weapon 1844 -- Ship Ballistae
+#weapon 1844 -- Ship Ballistae
+#armor 9 -- plate cuirass
+#armor 20 -- iron cap
+#nobarding
+#nothrowoff
+#nofalldmg
+#mountmnr 6751 -- Flying Ship
+#coridermnr 6750 -- Flying Ship Crew
+#nofriders 4
+#nametype 188 -- Vehicle
+#foreignshape 6752 -- not home shape
+#shapechange 6749 -- home
+#end
+
+
+
 
 --#newmonster 8684 -- LA C'tis Hierodule
 --#copystats 510
@@ -123534,7 +123594,7 @@ All effects scale with friendly Dominion."
 #path 0 1
 #pathlevel 0 3
 #damage 6749 -- Flying Ship
-#effect 10001
+#effect 10021
 #fatiguecost 1000
 #nreff 1
 #restricted 201 -- Venedia
@@ -153385,6 +153445,48 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #header 2
 #nolog
 #removesite 2460 -- River of Lava
+#end
+
+#newevent -- Repair Flying Ship event 1
+#rarity 5
+#req_land 1
+#req_targrealmnr 8894
+#killtarg
+#req_pop0ok
+#msg "A Flying Ship has been serviced.
+It is now fully repaired and a new crew has been assigned to it."
+#header 2
+#nolog
+#nation -2
+#com 6749
+#end
+
+#newevent -- Repair Flying Ship event 2
+#rarity 5
+#req_land 1
+#req_targrealmnr 8894
+#killtarg
+#req_pop0ok
+#msg "A Flying Ship has been serviced.
+It is now fully repaired and a new crew has been assigned to it."
+#header 2
+#nolog
+#nation -2
+#com 6749
+#end
+
+#newevent -- Repair Flying Ship event 3
+#rarity 5
+#req_land 1
+#req_targrealmnr 8894
+#killtarg
+#req_pop0ok
+#msg "A Flying Ship has been serviced.
+It is now fully repaired and a new crew has been assigned to it."
+#header 2
+#nolog
+#nation -2
+#com 6749
 #end
 
 
