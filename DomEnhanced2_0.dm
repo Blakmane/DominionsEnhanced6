@@ -3297,7 +3297,7 @@
 #name "Airborne Crossbow"
 #dmg 9
 #nratt 2
-#att 2
+#att 3
 #range 70
 #pierce
 #ammo 30
@@ -3306,13 +3306,28 @@
 
 
 #newweapon 1844 -- Flying Ship Ballistae
-#copyweapon 206 -- Ballista
-#name "Ship-Mounted Ballista"
+#copyweapon 424 -- Boulder
+#name "Ship-mounted Boulder Crossbow"
 #ammo 30
-#att 6
+#att 0
+#dmg 25
+#nostr
+#range 70
 #nratt -2
 #notdismounted
+#bonus
+#secondaryeffectalways 171
 #end
+
+--#newweapon 1844 -- Flying Ship Ballistae
+--#copyweapon 206 -- Ballista
+--#name "Ship-Mounted Ballista"
+--#ammo 30
+--#att 6
+--#nratt -2
+--#bonus
+--#notdismounted
+--#end
 
 #newweapon 1845 -- Nothing
 #copyweapon 384 -- Minor Life Drain (for Natural tag so blesses do not function on it)
@@ -9770,10 +9785,12 @@
 
 #newmonster 6722
 #copystats 20  -- heavy cavalry
-#name "Stratiot"
-#descr "Stratiots are medium cavalry who fight with an unusual combination of lance and crossbow. They first stratiots employed by Venedia used bows as they were foreign mercenaries from lands with a tradition of horse archery, but eventually they became a regular part of the army which native Venedians could join too, bringing with them their preference for crossbows. Stratiots usually begin battle by firing a single volley to soften up their foes before charging. "
 #spr1 "venedia/stratiot1.tga"
 #spr2 "venedia/stratiot2.tga"
+#unmountedspr1 "venedia/un_stratiot1.tga"
+#unmountedspr2 "venedia/un_stratiot2.tga"
+#name "Stratiot"
+#descr "Stratiots are medium cavalry who fight with an unusual combination of lance and crossbow. They first stratiots employed by Venedia used bows as they were foreign mercenaries from lands with a tradition of horse archery, but eventually they became a regular part of the army which native Venedians could join too, bringing with them their preference for crossbows. Stratiots usually begin battle by firing a single volley to soften up their foes before charging. "
 #drawsize 0
 #clearweapons
 #weapon 357  -- light lance
@@ -9796,6 +9813,8 @@
 #name "Venedian Knight"
 #spr1 "venedia/knight1.tga"
 #spr2 "venedia/knight2.tga"
+#unmountedspr1 "venedia/un_knight1.tga"
+#unmountedspr2 "venedia/un_knight2.tga"
 #descr "As most high-born Venedians care more for trade, art and politics than warfare, few choose to become knights and those who do are not as formidable as those other lands who ride fantastic beasts, carry enchanted arms and armor or are fanatical in their devotion to the church. However they are still brave and skilled fighters."
 #drawsize 0
 #end
@@ -9883,9 +9902,13 @@
 
 #newmonster 6729
 #copystats 6722 -- stratiot
-#name "Stratiot Captain"
 #spr1 "venedia/stratiotcaptain1.tga"
 #spr2 "venedia/stratiotcaptain2.tga"
+#unmountedspr1 "venedia/un_stratiotcaptain1.tga"
+#unmountedspr2 "venedia/un_stratiotcaptain2.tga"
+#name "Stratiot Captain"
+#descr "Stratiots are medium cavalry who fight with an unusual combination of lance and crossbow. They first stratiots employed by Venedia used bows as they were foreign mercenaries from lands with a tradition of horse archery, but eventually they became a regular part of the army which native Venedians could join too, bringing with them their preference for crossbows. Stratiots usually begin battle by firing a single volley to soften up their foes before charging.
+Stratiot captains do not come from the mercantile classes and lack the ability to collect taxes."
 #drawsize 0
 #okleader
 #command 20
@@ -9894,8 +9917,6 @@
 #prec 11
 #hp 11
 #mor 12
-#descr "Stratiots are medium cavalry who fight with an unusual combination of lance and crossbow. They first stratiots employed by Venedia used bows as they were foreign mercenaries from lands with a tradition of horse archery, but eventually they became a regular part of the army which native Venedians could join too, bringing with them their preference for crossbows. Stratiots usually begin battle by firing a single volley to soften up their foes before charging.
-Stratiot captains do not come from the mercantile classes and lack the ability to collect taxes."
 #sailing 999 6
 #end
 
@@ -10189,15 +10210,13 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #end
 
 #newmonster 6744
-#copystats 628  -- great lion
-#clearspec  -- to remove undisciplined
-#size 6
-#quadruped
+#copystats 3366  -- blue lion
 #spr1 "venedia/wingedlion1.tga"
 #spr2 "venedia/wingedlion2.tga"
 #name "Winged Lion"
 #descr "Winged lions are legendary beasts occasionally summoned by Venedian Astrologers as messengers and guardians. Though not truly celestial beings despite being associated with the sun and having some fire resistance they are sacred as one of the symbols of the nation and will inspire soldiers in battle.  They are also stronger and smarter than regular lions and will allow themselves to be led by nonmagical commanders."
 #size 6
+#quadruped
 #hp 28
 #str 18
 #prot 8
@@ -10208,6 +10227,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #def 12
 #enc 2
 #transformation 0
+#montag 0
 #holy
 #animal
 #flying
@@ -50710,7 +50730,7 @@ Requires an Ippondatara present to recruit."
 #unmountedspr1 "venedia/repeatcrossbow1.tga"
 #unmountedspr2 "venedia/repeatcrossbow2.tga"
 #name "Flying Ship"
-#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols.
+#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is equipped with a giant crossbow loaded with flaming boulders instead of bolts as well as squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols.
 While the ship is docked at the Floating City, it can be repaired and receive a fresh crew at any time."
 #gcost 0
 #size 3
@@ -50755,7 +50775,7 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #unmountedspr1 "venedia/repeatcrossbow1.tga"
 #unmountedspr2 "venedia/repeatcrossbow2.tga"
 #name "Flying Ship"
-#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols.
+#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is equipped with a giant crossbow loaded with flaming boulders instead of bolts as well as squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols.
 While the ship is docked at the Floating City, it can be repaired and receive a fresh crew at any time."
 #gcost 0
 #size 3
@@ -50817,7 +50837,7 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #name "Flying Vessel"
 #spr1 "venedia/flyingshipd.tga"
 #spr2 "venedia/flyingshipd.tga"
-#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols."
+#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is equipped with a giant crossbow loaded with flaming boulders instead of bolts as well as squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols."
 #miscshape
 #gcost 0
 #size 10
@@ -50827,7 +50847,7 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #mor 50
 #str 20
 #att 5
-#def 0
+#def 12
 #prec 15
 #enc 0
 #mapmove 20
@@ -50875,7 +50895,7 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #unmountedspr1 "venedia/repeatcrossbow1.tga"
 #unmountedspr2 "venedia/repeatcrossbow2.tga"
 #name "Flying Ship (Repairing)"
-#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is loaded with two giant ballistae and squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols.
+#descr "Since the invention of flying machines by the savants they have been pressed into service as a weapon of war. The vessel is equipped with a giant crossbow loaded with flaming boulders instead of bolts as well as squads of repeating crossbowmen to provide immense firepower in a highly mobile strike force. Floating above the battlefield in their Flying Ship they can see further than other crossbowmen and can easily pick out targets. The Flying Ship can evade detection by soaring high above the land and will rarely be caught by enemy patrols.
 This ship is undergoing maintenance and will be fully repaired and recrewed at the end of the month. Servicing will be halted if the ship leaves the Floating City. Up to 3 Flying Ships can be serviced per month."
 #gcost 0
 #size 3
@@ -57417,6 +57437,22 @@ Cannot be recruited until Break the Deadlock is cast."
 #selectmonster 7162 -- Mamluk Horseman
 #skilledrider 3 -- 1 -> 3
 #end
+
+#selectmonster 6722 -- Stratiot
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 6729 -- Stratiot Captain
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 6723 -- Venetian Knight
+#skilledrider 4 -- 2 -> 4
+#end
+
+
+
+
 
 -- Mount Skilled Rider Changes:
 
@@ -96726,7 +96762,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 1
 #look 1
 #homemon 6744 -- Winged Lion
-#homemon 6744 -- Winged Lion
 #homemon 6747 -- thopter
 #homecom 6749 -- flying ship
 #homecom 6745 -- glass angel
@@ -123645,7 +123680,7 @@ All effects scale with friendly Dominion."
 
 #selectspell 3513
 #name "Summon Winged Lions"
-#descr "The caster summons a pair of pair of Winged Lions. They lions are legendary beasts occasionall summoned as messengers and guardians. Though not truly celestial beings despite being associated with the sun and having some fire resistance they are sacred as one of the symbols of the nation and will inspire soldiers in battle.  They are also stronger and smarter than regular lions and will allow themselves to be led by nonmagical commanders."
+#descr "The caster summons a group of Winged Lions. They lions are legendary beasts occasionall summoned as messengers and guardians. Though not truly celestial beings despite being associated with the sun and having some fire resistance they are sacred as one of the symbols of the nation and will inspire soldiers in battle.  They are also stronger and smarter than regular lions and will allow themselves to be led by nonmagical commanders."
 #school 0
 #researchlevel 4
 #path 0 4
@@ -123655,7 +123690,7 @@ All effects scale with friendly Dominion."
 #damage 6744
 #effect 10001
 #fatiguecost 500
-#nreff 2
+#nreff 505
 #restricted 201 -- Venedia
 #end
 
@@ -123751,7 +123786,7 @@ All effects scale with friendly Dominion."
 #pathlevel 0 3
 #damage 6749 -- Flying Ship
 #effect 10021
-#fatiguecost 600
+#fatiguecost 800
 #nreff 1
 #restricted 201 -- Venedia
 #onlyatsite 2114 -- Floating City
