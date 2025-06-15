@@ -4197,8 +4197,8 @@
 #end
 
 #selectarmor 257 -- Rusty Cataphract Barding
-#protparts 19 12 -- vanilla 19 11
-#protinspector 12
+#protparts 20 17 -- vanilla 19 11
+#protinspector 17
 #end
 
 #selectarmor 263 -- Bronze Barding
@@ -57941,7 +57941,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 184 -- Knight of the Unholy Sepulchre
-#skilledrider 4 --  -> 4
+#skilledrider 5 --  -> 5
 #end
 
 #selectmonster 939 -- Barbarian Heavy Horseman
@@ -96784,6 +96784,68 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 
+
+#newsite 2473
+#clear
+#name "MA Ermor Freespawn & Troop Summons"
+#rarity 5
+#level 0
+#path 5
+#look 1
+#homemon 198 -- ghoul
+#homemon 317 -- soulless
+#homemon 914 -- soulless warrior
+#homemon 191 -- longdead
+#homemon 187 -- legionnaire
+#homemon 1658 -- princip
+#homemon 1657 -- triari
+#homemon 189 -- horseman
+#homemon 184 -- sepulchre knight
+#homemon 255 -- wailing lady
+#homemon 259 -- lictor
+#end
+
+#newsite 2474
+#clear
+#name "MA Ermor Commander Summons"
+#rarity 5
+#level 0
+#path 5
+#look 3 
+#homecom 260 -- censor
+#homecom 254 -- spectator
+#homecom 253 -- elder
+#homecom 256 -- acolyte
+#homecom 257 -- bishop
+#homecom 258 -- archbishop
+#end
+
+#newsite 2475
+#clear
+#name "MA Ermor Summons"
+#rarity 5
+#level 0
+#path 5
+#look 6
+#homemon 628 -- lion
+#homemon 7298 -- kerberos
+#homecom 7252 -- hades
+#end
+
+#newsite 2476
+#clear
+#name "MA Ermor Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 0
+#homecom 183
+#homecom 537
+#homecom 555
+#homecom 2068
+#end
+
+
 -- END OF NEW SITES
 
 #selectsite 1
@@ -102100,6 +102162,13 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #fortcost 25
 #templecost 750
 #nationinc -20
+
+#startsite "MA Ermor Freespawn & Troop Summons"
+#startsite "MA Ermor Commander Summons"
+#futuresite "MA Ermor Freespawn & Troop Summons"
+#futuresite "MA Ermor Commander Summons"
+#futuresite "MA Ermor Summons"
+#futuresite "MA Ermor Heroes"
 #end
 
 #selectnation 55 -- MA sceleria
@@ -152738,6 +152807,32 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #notext
 #removesite 2354
 #nation 99
+#end
+
+#newevent -- remove Ermor start sites
+#rarity 5
+#req_pregame 1
+#req_fornation 54 -- MA Ermor
+#req_owncapital 1
+#req_pop0ok
+#msg "."
+#nolog
+#notext
+#removesite 2473
+#nation 54
+#end
+
+#newevent -- remove Ermor start sites
+#rarity 5
+#req_pregame 1
+#req_fornation 54 -- MA Ermor
+#req_owncapital 1
+#req_pop0ok
+#msg "."
+#nolog
+#notext
+#removesite 2474
+#nation 54
 #end
 
 
