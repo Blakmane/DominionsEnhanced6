@@ -33833,11 +33833,10 @@ While in the form of an old man, all paths are increased and allows the use of N
 #sailing 5 8
 #darkvision 50
 #itemslots 860678 -- No feet
-#mounted
 #flying
 #holy
 #glamour
-#secondtmpshape 7781 -- Sacred Swan
+#mountmnr 7781 -- Sacred Swan
 #weapon "Golden Lance"
 #weapon 1661
 #weapon 1660
@@ -33868,16 +33867,15 @@ While in the form of an old man, all paths are increased and allows the use of N
 #enc 5
 #mapmove 26
 #magicskill 1 1
-#magicskill 2 1
+#magicskill 7 1
 #magicskill 9 1
 #sailing 5 8
 #darkvision 50
-#mounted
 #flying
 #holy
 #glamour
 #itemslots 860678 -- No feet
-#secondtmpshape 7781 -- Sacred Swan
+#mountmnr 7781 -- Sacred Swan
 #startage 150
 #maxage 300
 #weapon "Golden Lance"
@@ -82088,6 +82086,39 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 
+#selectmonster 2899 -- Kernou Cavalry
+#mountmnr 3515 -- light scale horse
+#end
+
+#selectmonster 2910 -- Ys Knight
+#spr1 "vanilla/knightofys1.tga"
+#spr2 "vanilla/knightofys2.tga"
+#mountmnr 3994 -- armored kelpie
+#end
+
+#selectmonster 2911 -- Ys Knight land
+#spr1 "vanilla/knightofysl1.tga"
+#spr2 "vanilla/knightofysl2.tga"
+#mountmnr 3995 -- armored kelpie land
+#end
+
+#selectmonster 2931 -- Ys Knight Commander
+#spr1 "vanilla/knightofyscom1.tga"
+#spr2 "vanilla/knightofyscom2.tga"
+#mountmnr 3994 -- armored kelpie
+#end
+
+#selectmonster 2932 -- Ys Knight Commander land
+#spr1 "vanilla/knightofyslcom1.tga"
+#spr2 "vanilla/knightofyslcom2.tga"
+#mountmnr 3995 -- armored kelpie land
+#end
+
+#selectmonster 3994 -- Armored Kelpie uw
+#armor 263
+#end
+
+
 #selectmonster 2941 -- Enkidu Royal Guard
 #bodyguard 4
 #end
@@ -92202,18 +92233,20 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #newsite 2156
 #name "Par-Ys"
-#path 1 
+#path 1
+#look 3
 #level 0
 #rarity 5
 #gems 1 1
 #gems 3 1
 #gems 6 1
-#mon 2897  -- Kernou Warrior
-#mon 2898  -- Kernou Noble
-#mon 2899  -- Kernou Cavalry
+#gems 7 1
+--#mon 2897  -- Kernou Warrior
+--#mon 2898  -- Kernou Noble
+--#mon 2899  -- Kernou Cavalry
 #mon 7780 -- Swan Knight
-#com 2900  -- Kernou Chief
-#com 2901  -- Kernou Druid
+--#com 2900  -- Kernou Chief
+--#com 2901  -- Kernou Druid
 #com 7782 -- Swan Champion
 #end
 
@@ -103082,6 +103115,54 @@ Priests: Weak, magical"
 #startscout 2912  -- Ysian Scout
 #startunittype1 2923  -- Ysian Infantry
 #startunitnbrs1 30
+
+#futuresite "Par-Ys"
+
+-- Coastal recs made land anyfort
+#plainfortrec 2897
+#forestfortrec 2897
+#mountainfortrec 2897
+#swampfortrec 2897
+#wastefortrec 2897
+#farmfortrec 2897
+
+#plainfortrec 2898
+#forestfortrec 2898
+#mountainfortrec 2898
+#swampfortrec 2898
+#wastefortrec 2898
+#farmfortrec 2898
+
+#plainfortrec 2899
+#forestfortrec 2899
+#mountainfortrec 2899
+#swampfortrec 2899
+#wastefortrec 2899
+#farmfortrec 2899
+
+
+#plainfortcom 2900
+#forestfortcom 2900
+#mountainfortcom 2900
+#swampfortcom 2900
+#wastefortcom 2900
+#farmfortcom 2900
+
+#plainfortcom 2901
+#forestfortcom 2901
+#mountainfortcom 2901
+#swampfortcom 2901
+#wastefortcom 2901
+#farmfortcom 2901
+
+#plainfortcom 2928
+#forestfortcom 2928
+#mountainfortcom 2928
+#swampfortcom 2928
+#wastefortcom 2928
+#farmfortcom 2928
+
+
 #end
 
 #selectnation 95 -- LA Arco
