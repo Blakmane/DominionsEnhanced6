@@ -121227,6 +121227,7 @@ All effects scale with friendly Dominion."
 #spec 0
 #nogeosrc 64  -- Waste
 #restricted 85 -- Ys
+#fatiguecost 3000
 #end
 
 #selectspell 3305
