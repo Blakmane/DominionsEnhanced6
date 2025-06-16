@@ -4699,6 +4699,7 @@
 #poisonres 25
 #coldres 10
 #mountmnr 6529 -- Arrow Cart
+#mountedinspector
 #nametype 188 -- Vehicle
 #end
 
@@ -4849,6 +4850,7 @@
 #startage 10
 --#firstshape 6535 -- Onager
 #mountmnr 6535 -- Onager Crew
+#mountedinspector
 #nametype 188 -- Vehicle
 #cleanshape
 #end
@@ -4869,6 +4871,7 @@
 #armor 7  -- Scale Cuirass
 #armor 123  -- Hoplite Helm
 --#mountmnr 6534 -- Empty Onager
+#mountedinspector
 #nobarding
 #nothrowoff
 #nofalldmg
@@ -6061,6 +6064,7 @@
 #armor 149  -- Bone Cuirass
 #armor 119  -- Reinforced Leather Cap
 #mountmnr 3580 -- cata steppe horse
+#mountedinspector
 #skilledrider 4
 #ressize 2
 #pillagebonus 5
@@ -6270,6 +6274,7 @@
 #maxage 75
 #incunrest -100
 #mountmnr 3580 -- sacred cata steppe horse
+#mountedinspector
 #skilledrider 5
 #holy
 #regainmount 1
@@ -6436,6 +6441,7 @@
 #holy
 #spiritsight
 #mountmnr 3580 -- sacred cata steppe horse
+#mountedinspector
 #skilledrider 2
 #pillagebonus 2
 #xpgain 35 -- +35%
@@ -13681,6 +13687,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #snow
 #mobilearcher 1
 #mountmnr 3514 -- war horse
+#mountedinspector
 #end
 
 #newmonster 6882
@@ -14006,6 +14013,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #snow
 #coldres 5
 #mountmnr 3514 -- war horse
+#mountedinspector
 #end
 
 #newmonster 6892
@@ -14956,7 +14964,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mapmove 3
 #hp 12
 #prot 0
-#size 5
+#size 3
 #str 11
 #enc 5
 #att 12
@@ -14977,6 +14985,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #armor "Half Helmet"
 #coldres 3
 #mountmnr 8871 -- cataphract steppe horse
+#mountedinspector
 #skilledrider 1
 #humanoid
 #end
@@ -15272,7 +15281,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mapmove 3
 #hp 13
 #prot 0
-#size 5
+#size 3
 #str 11
 #enc 5
 #att 12
@@ -15296,6 +15305,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #snow
 #inspirational 1
 #mountmnr 8871 -- cataphract steppe horse
+#mountedinspector
 #skilledrider 1
 #humanoid
 #end
@@ -15892,6 +15902,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #coldres 5
 #mobilearcher 1
 #mountmnr 6880 -- Yak
+#mountedinspector
 #end
 
 #newmonster 6911 -- MA Shambhala Yak Rider
@@ -15930,6 +15941,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #coldres 5
 #mobilearcher 1
 #mountmnr 6880 -- Yak
+#mountedinspector
 #end
 
 
@@ -20339,6 +20351,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #nofriders 2
 #coridermnr 8543
 #mountmnr 8542
+#mountedinspector
 #regainmount 1
 #nofalldmg
 #forestsurvival
@@ -20377,6 +20390,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #nofriders 2
 #coridermnr 7096
 #mountmnr 8542
+#mountedinspector
 #nofalldmg
 #forestsurvival
 #weapon 645  -- Bronze Sword
@@ -21246,6 +21260,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spiritsight
 --#itemslots 860678
 #mountmnr 7137
+#mountedinspector
 #secondshape 7136
 #clearweapons
 #weapon 1503
@@ -21294,6 +21309,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon 29  -- claw
 #weapon 20  -- Bite
 #mountmnr 7137
+#mountedinspector
 #firstshape 7135
 #end
 
@@ -21592,6 +21608,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #unmountedspr2 "juhera/mamluk_spearman2.tga"
 #descr "The mamluks are the military caste of the Irami Caliphate. They are seized as children from conquered lands and trained for war as soon as they are able to hold a spear. When they reach adulthood they are sold as property to the emirs, serving in their personal armies until they earn their freedom. Though slaves, they are treated well, for their masters are totally reliant upon them for their military power. They are disciplined and loyal fighters owing to their many years of rigorous training. After a mamluk has served for ten years, he is allowed to become a free citizen of Iram. Most retire to civilian lives but some choose to remain in the army, where they are promoted to officers and learn to command their own regiments. The Irami people take great pride in their warhorse breeds, and mamluks trained in horsemanship make good use of these strong desert steeds, surrounding enemy formations and striking vulnerable positions away from the main battle lines."
 #mountmnr 3515 -- war horse
+#mountedinspector
 #skilledrider 1
 #rcost 5
 #ressize 2
@@ -21618,6 +21635,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #unmountedspr1 "juhera/un_mobileguard1.tga"
 #unmountedspr2 "juhera/un_mobileguard2.tga"
 #mountmnr 3516 -- cataphract horse
+#mountedinspector
 #skilledrider 2
 #mobilearcher 1
 #rcost 8
@@ -21689,6 +21707,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #armor 15 -- full leather
 #armor 249  -- Cloth Headpiece
 #mountmnr 7169
+#mountedinspector
 #pillagebonus 1
 #end
 
@@ -22104,6 +22123,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #armor "scale mail hauberk"
 #armor "half helmet"
 #mountmnr 7197
+#mountedinspector
 #skilledrider 2
 #mountainsurvival
 #end
@@ -22302,6 +22322,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #poormagicleader
 #inspirational 1
 #mountmnr 7197 -- leogryph
+#mountedinspector
 #skilledrider 2
 #rcost 1
 #wastesurvival
@@ -24717,6 +24738,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #inspirational 1
 #weapon 75  -- Enchanted Sword
 #mountmnr 3523 -- Disahestur
+#mountedinspector
 #end
 
 #newmonster 7328
@@ -25271,6 +25293,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #att 13
 #def 13
 #mountmnr 7360
+#mountedinspector
 #skilledrider 3
 #weapon 1596 -- Pearl Lance
 #weapon 665  -- Pearl Blade
@@ -25324,6 +25347,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #att 14
 #def 14
 #mountmnr 7360
+#mountedinspector
 #skilledrider 4
 #goodleader
 #weapon 1596 -- Pearl Lance
@@ -26050,6 +26074,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 446  -- Sceptre
 #montag 1006  -- No Transformation
 #mountmnr 3585
+#mountedinspector
 #nofmounts 2
 #regainmounts 1
 #end
@@ -27601,6 +27626,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 135  -- Bronze cap
 #armor 2  -- Shield
 #mountmnr 8890 -- cataphract cu sidhe
+#mountedinspector
 #skilledrider 4
 #end
 
@@ -27640,6 +27666,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 148  -- Crown
 #armor 66  -- Weightless Kite Shield
 #mountmnr 8890 -- cataphract cu sidhe
+#mountedinspector
 #skilledrider 5
 #end
 
@@ -27668,6 +27695,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 2  -- Shield
 #forestsurvival
 #mountmnr 8890 -- cataphract cu sidhe
+#mountedinspector
 #skilledrider 4
 #end
 
@@ -29440,10 +29468,11 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr1 "magicenhanced/eemelusine.tga"
 #spr2 "magicenhanced/eemelusine2.tga"
 #name "Melusine"
-#descr "A Melusine is a type of fresh-water spirit closely related to the Morgen. The Melusine can take the form of winged amphibious serpents and must spend part of each month in serpentine shape. Taking the form of beautiful maidens they often fall in love with mortal men, however these unions are doomed to end in tragedy. Once the mortal sees a Melusine in her serpent form they can never again be together. Melusine are strong in the magics of water and nature."
+#descr "A Melusine is a type of fresh-water spirit closely related to the Morgen. The Melusine can take the form of winged amphibious serpents and must spend part of each month in serpentine shape. Taking the form of beautiful maidens they often fall in love with mortal men, however these unions are doomed to end in tragedy. Once the mortal sees a Melusine in her serpent form they can never again be together."
 #gcost 0
 #magicskill 2 3
-#magicskill 6 3
+#magicskill 6 2
+#magicskill 7 2
 #heal
 #amphibian
 #stealthy 0
@@ -29458,7 +29487,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #copystats 1412  -- Amphiptere
 #copyspr 1412  -- Amphiptere
 #name "Melusine"
-#descr "A Melusine is a type of fresh-water spirit closely related to the Morgen. The Melusine can take the form of winged amphibious serpents and must spend part of each month in serpentine shape. Taking the form of beautiful maidens they often fall in love with mortal men, however these unions are doomed to end in tragedy. Once the mortal sees a Melusine in her serpent form they can never again be together. Melusine are strong in the magics of water and nature."
+#descr "A Melusine is a type of fresh-water spirit closely related to the Morgen. The Melusine can take the form of winged amphibious serpents and must spend part of each month in serpentine shape. Taking the form of beautiful maidens they often fall in love with mortal men, however these unions are doomed to end in tragedy. Once the mortal sees a Melusine in her serpent form they can never again be together."
 #snake
 #heal
 #amphibian
@@ -29747,9 +29776,10 @@ While in the form of an old man, all paths are increased and allows the use of N
 #name "Swanmay"
 #descr "Since ancient times Swans are revered in Kernou and the land of the ever young. Occasionally a blessed swan will reveal itself as a Swanmay. Swanmays are nature spirits that appear as human females who can assume swan form through the magic of a special feathered robe. In their swan shape they are able to wander the lands of humans unnoticed. Swanmays are also skilled Air and Water mages. In swan shape their skill in Air magic is enhanced but their other magic skills are reduced. Occasionally a human male will confiscate a Swanmays robe to force her into marriage, however should she ever find it she will leave forever. Swanmays are sacred to the people of Ys and anyone harming one may be cursed for the rest of their lives."
 #mor 13
-#magicskill 1 2
-#magicskill 2 2
-#magicskill 4 1
+#magicskill 1 1 -- A
+#magicskill 2 1 -- W
+#magicskill 4 1 -- S
+#magicskill 7 2 -- G
 #magicskill 9 1
 #flying
 #gcost 0
@@ -29774,8 +29804,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #forestsurvival
 #poorleader
 #stealthy 10
-#magicboost 1 2
-#magicboost 53 -1
+#magicboost 1 2 -- A +1
+#magicboost 53 -1 -- Else -1
 #startage 200
 #maxage 500
 #shapechange 7575 -- Swan Maiden
@@ -33811,6 +33841,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #name "Swan Knight"
 #spr1 "magicenhanced/eeysswanknight.tga"
 #spr2 "magicenhanced/eeysswanknight2.tga"
+#unmountedspr1 "magicenhanced/un_eeysswanknight.tga"
+#unmountedspr2 "magicenhanced/un_eeysswanknight2.tga"
 #descr "Now returned to the lands above the waves the Morgen have taken to riding gigantic Fey swans summoned from the Land of the Ever Young. These noble steeds will fight on if their rider is killed before returning to the Land of the Ever Young after the battle. They can fly incredible distances and can even cross the oceans to carry the Morgen to other lands. Morgen are descendants of the Tuatha and can use glamour to confuse enemies. The Swan Knights are revered and sacred to the people of Ys."
 #str 12
 #prot 0
@@ -33821,25 +33853,23 @@ While in the form of an old man, all paths are increased and allows the use of N
 #def 14
 #ap 14
 #prec 12
-#enc 5
+#enc 3
 #gcost 75
 #rpcost 78
 #rcost 6
-#ressize 2
-#mapmove 23
-#size 7
+#mapmove 14
+#size 3
 #startage 60
 #maxage 300
 #sailing 5 8
 #darkvision 50
 #itemslots 860678 -- No feet
-#flying
+#amphibian
 #holy
 #glamour
 #mountmnr 7781 -- Sacred Swan
+#mountedinspector
 #weapon "Golden Lance"
-#weapon 1661
-#weapon 1660
 #armor "Bronze Cap"
 #armor "Golden Shield"
 #armor "Bronze Cuirass"
@@ -33849,14 +33879,15 @@ While in the form of an old man, all paths are increased and allows the use of N
 #name "Swan Knight Champion"
 #spr1 "magicenhanced/eeysswanchamp.tga"
 #spr2 "magicenhanced/eeysswanchamp2.tga"
+#unmountedspr1 "magicenhanced/un_eeysswanknight.tga"
+#unmountedspr2 "magicenhanced/un_eeysswanknight2.tga"
 #descr "The Swan Knight Champion is a Swan Knight with strong blood and exceptional skills. Innately skilled in the magic of the Tuatha she has become a leader among her peers and an example to all. Mounted on a Fey Swan the Morgen Champion will descend from the skies upon the unsuspecting enemy. These noble steeds will fight on if their rider is killed before returning to the Land of the Ever Young after the battle. With the arrival of the new God, all lands will come under the rule of Ys."
 #gcost 380
 #rpcost 2
 #rcost 6
-#ressize 2
 #str 13
 #prot 0
-#size 7
+#size 3
 #hp 16
 #mor 14
 #mr 16
@@ -33864,23 +33895,22 @@ While in the form of an old man, all paths are increased and allows the use of N
 #def 14
 #ap 16
 #prec 13
-#enc 5
-#mapmove 26
+#enc 3
+#mapmove 14
 #magicskill 1 1
 #magicskill 7 1
 #magicskill 9 1
 #sailing 5 8
 #darkvision 50
-#flying
+#amphibian
 #holy
 #glamour
 #itemslots 860678 -- No feet
 #mountmnr 7781 -- Sacred Swan
+#mountedinspector
 #startage 150
 #maxage 300
 #weapon "Golden Lance"
-#weapon 1661
-#weapon 1660
 #armor "Bronze Cap"
 #armor "Golden Shield"
 #armor "Bronze Cuirass"
@@ -33892,14 +33922,15 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr2 "magicenhanced/eeysswan2.tga"
 #descr "Now returned to the lands above the waves the Morgen have taken to riding gigantic Fey swans summoned from the Land of the Ever Young. These noble steeds will fight on if their rider is killed before returning to the Land of the Ever Young after the battle. They can fly incredible distances and can even cross the oceans to carry the Morgen to other lands. Morgen are descendants of the Tuatha and can use glamour to confuse enemies. The Swan Knights are revered and sacred to the people of Ys."
 #bird
+#gcost 10030
 #str 16
-#prot 6
+#prot 10
 #size 7
-#hp 35
+#hp 45
 #mor 14
 #mr 14
 #att 12
-#def 11
+#def 13
 #ap 14
 #prec 12
 #enc 3
@@ -33907,12 +33938,13 @@ While in the form of an old man, all paths are increased and allows the use of N
 #rpcost 78
 #rcost 6
 #ressize 2
-#mapmove 23
+#mapmove 24
 #startage 60
 #maxage 300
 #sailing 5 8
 #darkvision 50
 #itemslots 786432 -- 2 misc
+#glamour
 #flying
 #holy
 #weapon "Wing Buff"
@@ -34253,6 +34285,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #clearspec
 #clearmagic
 #mountmnr 3515 -- war horse
+#mountedinspector
 --#warning 5 -- no longer allows more bodyguards
 #str 11
 #def 11
@@ -34276,6 +34309,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #fireres 15
 #skilledrider 2
 #mountmnr 8555
+#mountedinspector
 #maxage 1000
 #weapon 1666 -- Flaming Sword
 #end
@@ -34297,6 +34331,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #fireres 15
 #skilledrider 2
 #mountmnr 8555
+#mountedinspector
 --#warning 5 -- no longer allows more bodyguards
 #maxage 1000
 #magicskill 0 2 -- Fire
@@ -36214,6 +36249,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 135 -- bronze cap
 #weapon 10 -- falchion
 #mountmnr 8578
+#mountedinspector
 #nofriders 2
 #coridermnr 8577
 #end
@@ -36796,6 +36832,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #descr "Oleg is the ruler of Rus and was the first to unite the disparate tribes under one banner. Born to a ruling Chud family, his brother ruled a kingdom in Rus and upon his death it passed to Oleg. After defeating the other kings through subterfuge and trickery he finally established himself as ruler of all of Rus. Oleg is known as the Prophet, both due to his extreme devotion to the True God, and for his reputed oracular skills. As a Son of Heaven Oleg is blessed with magical powers."
 #fixedname "Oleg"
 #mountmnr 3581
+#mountedinspector
 #skilledrider 4
 #hp 22
 #mor 16
@@ -37130,28 +37167,30 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 9 2
 #end
 
-#newmonster 7934
+#newmonster 7935
 #name "Swan Herald"  -- Landshape
 #fixedname "Ahessa"
 #spr1 "worthy_heroes/ysahessa.tga"
 #spr2 "worthy_heroes/ysahessa2.tga"
+#unmountedspr1 "worthy_heroes/ysahessawater.tga"
+#unmountedspr2 "worthy_heroes/ysahessawater2.tga"
 #descr "Ahessa is royal, the blood of the Morgen queens running in her veins and magic dancing upon her fingertips. But when the call of the Awakening god went out she fled the Hidden city, unable to stand the thought of war for any cause. After experiencing the world in all its horror and beauty she decided to put aside her feelings and rejoin her sisters to fight for the city of Ys. Befriending an ancient spirit taking the form of a gigantic swan, she finally found the courage to return. Even as her former sisters spat upon her cowardice, Ahessa swore to prove herself anew. Astride her swan steed she can fly incredible distances and can even cross the oceans. Inspired by her example some Morgen have begun to seek out Fey Swans of their own to become Swan Knights in her image."
-#mountedhumanoid
+#humanoid
 #str 14
 #prot 0
 #weapon "Golden Lance"
-#weapon "Wing Swat"
-#weapon 1660
 #armor "Bronze Cap"
 #armor "Golden Shield"
 #armor "Bronze Cuirass"
 #sailing 5 8
 #darkvision 50
-#mounted
 #flying
 #holy
 #glamour
+#mountmnr 8897 -- amphib swan
 #amphibian
+#giftofwater 20
+#skilledrider 7
 #spellsinger
 #female
 #size 7
@@ -37173,12 +37212,13 @@ While in the form of an old man, all paths are increased and allows the use of N
 #maxage 300
 #magicskill 1 2
 #magicskill 2 2
+#magicskill 7 3
 #magicskill 9 1
-#watershape 7935 -- Watershape
+--#watershape 7934 -- Watershape
 #domsummon20 7780
 #end
 
-#newmonster 7935
+#newmonster 7934 -- UNUSED
 #copystats 2921  -- Morgen Sorceress
 #clearweapons
 #cleararmor
@@ -37209,7 +37249,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 1 2
 #magicskill 2 2
 #magicskill 9 1
-#landshape 7934 -- Swanshape
+#landshape 7935 -- Swanshape
 #end
 
 #newmonster 7936
@@ -40705,6 +40745,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mountainsurvival
 #forestsurvival
 #mountmnr 8547 -- Elk
+#mountedinspector
 #skilledrider 2
 #skirmisher 1
 #ressize 2
@@ -41111,6 +41152,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mapmove 14
 #ap 13
 #mountmnr 8546 -- reindeer
+#mountedinspector
 #ressize 2
 #forestsurvival
 #female
@@ -41561,6 +41603,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #fear 10
 #nospiritform
 #mountmnr 8548
+#mountedinspector
 #unique
 #cleararmor
 #armor 14
@@ -41752,6 +41795,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #awe 3
 #holy
 #mountmnr 3581
+#mountedinspector
 #skilledrider 2
 #inspirational 2
 #gcost 0
@@ -42284,6 +42328,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mr 16
 #mor 16
 #mountmnr 8142 -- Eagle King
+#mountedinspector
 #skilledrider 3
 #gcost 1
 #size 3
@@ -44271,6 +44316,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #def 13
 #hp 20
 #mountmnr 3933 -- fey horse
+#mountedinspector
 #skilledrider 6
 #fireres 15
 #inspirational 1
@@ -44288,7 +44334,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mr 14
 #mor 16
 #gcost 1
-#size 5
+#size 3
 #goodleader
 #maxage 60
 #startage 35
@@ -44310,6 +44356,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #forestsurvival
 #darkvision 25
 #mountmnr 8547
+#mountedinspector
 #skilledrider 5
 #tmpnaturegems 2
 #weapon 299  -- Enchanted Sickle
@@ -45215,6 +45262,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #heretic 1
 #sailing 999 10
 #mountmnr 3517 -- destrier
+#mountedinspector
 #skilledrider 2
 #forestsurvival
 #mountainsurvival
@@ -45805,6 +45853,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 2
 #neednoteat
 #mountmnr 8251
+#mountedinspector
 #skilledrider 2
 #end
 
@@ -46181,6 +46230,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #coldres 5
 #mountainsurvival
 #mountmnr 8545
+#mountedinspector
 #coridermnr 8544
 #nofriders 2
 #end
@@ -46365,6 +46415,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #heal
 #skilledrider 2
 #mountmnr 8552
+#mountedinspector
 #clearweapons
 #weapon 596 -- lance
 #weapon 42 -- bane blade
@@ -46395,6 +46446,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #fireres 15
 #skilledrider 3
 #mountmnr 8554
+#mountedinspector
 #clearweapons
 #weapon 1638 -- Bane Fire Blade
 #cleararmor
@@ -46428,6 +46480,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #fireres 15
 #skilledrider 3
 #mountmnr 8554
+#mountedinspector
 #clearweapons
 #weapon 1638 -- Bane Fire Blade
 #cleararmor
@@ -46817,6 +46870,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #clearweapons
 #weapon 513 -- kopesh
 #mountmnr 8576
+#mountedinspector
 #end
 
 #newmonster 8575 -- Chief lector priest
@@ -48808,6 +48862,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mor 14
 #skilledrider 1
 #mountmnr 8681 -- Hrossar
+#mountedinspector
 #clearweapons
 #weapon 1 -- spear
 #cleararmor
@@ -48833,6 +48888,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #expertleader
 #skilledrider 2
 #mountmnr 8682 -- Hrossar sacred
+#mountedinspector
 #clearweapons
 #weapon 840 -- flame blade
 #cleararmor
@@ -49161,6 +49217,7 @@ Dragon Priests can be recruited in any land fort."
 #holy
 #skilledrider 2
 #mountmnr 8689
+#mountedinspector
 #nametype 114  -- Marignon Male
 #end
 
@@ -49183,6 +49240,7 @@ Dragon Priests can be recruited in any land fort."
 #magicskill 0 5
 #skilledrider 3
 #mountmnr 8690
+#mountedinspector
 #hp 25
 #size 3
 #prot 8
@@ -49650,6 +49708,7 @@ Dragon Priests can be recruited in any land fort."
 #armor 149  -- Bone Cuirass
 #armor 119  -- Reinforced Leather Cap
 #mountmnr 3575 -- armored steppe horse
+#mountedinspector
 #skilledrider 2
 #pillagebonus 2
 #mobilearcher 1
@@ -49703,6 +49762,7 @@ Dragon Priests can be recruited in any land fort."
 #standard 1
 #aisinglerec
 #mountmnr 8867 -- slower steppe horse
+#mountedinspector
 #end
 
 #newmonster 6603
@@ -49765,6 +49825,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1065
 #xpgain 35 -- +35%
 #mountmnr 3579
+#mountedinspector
 #end
 
 #newmonster 8837 -- 15xp sacred
@@ -49782,6 +49843,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1070
 #xpgain 35 -- +35%
 #mountmnr 3579
+#mountedinspector
 #end
 
 #newmonster 8847 -- 15xp sacred
@@ -49799,6 +49861,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1075
 #xpgain 35 -- +35%
 #mountmnr 3579
+#mountedinspector
 #end
 
 #newmonster 8857 -- 15xp sacred
@@ -49817,6 +49880,7 @@ Dragon Priests can be recruited in any land fort."
 #montag  1080
 #xpgain 35 -- +35%
 #mountmnr 3579
+#mountedinspector
 #end
 
 
@@ -50251,6 +50315,7 @@ Dragon Priests can be recruited in any land fort."
 #copystats 939 -- barb heavy horseman
 #copyspr 789 -- tc heavy horseman
 #mountmnr 0
+#mountedinspector
 #mobilearcher 0
 #skilledrider 0
 #mounted
@@ -50523,6 +50588,7 @@ Bishops are devoted wholly to their God and are forbidden from learning arcane p
 #weapon 651 -- bronze lance
 #weapon 21 -- javelin
 #mountmnr 3933 -- fay horse
+#mountedinspector
 #skilledrider 3
 #end
 
@@ -50751,6 +50817,7 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #nothrowoff
 #nofalldmg
 #mountmnr 6751 -- Flying Ship
+#mountedinspector
 #coridermnr 6750 -- Flying Ship Crew
 #nofriders 4
 #nametype 188 -- Vehicle
@@ -50796,6 +50863,7 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #nothrowoff
 #nofalldmg
 #mountmnr 6751 -- Flying Ship
+#mountedinspector
 #coridermnr 6750 -- Flying Ship Crew
 #nofriders 4
 #nametype 188 -- Vehicle
@@ -50916,6 +50984,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #nothrowoff
 #nofalldmg
 #mountmnr 6751 -- Flying Ship
+#mountedinspector
 #coridermnr 6750 -- Flying Ship Crew
 #nofriders 4
 #itemslots 0 -- None (all items fall off)
@@ -50955,6 +51024,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #armor 120 -- leather hat
 #float
 #mountmnr 8895
+#mountedinspector
 #nametype 174
 #nothrowoff
 #nobarding
@@ -51047,6 +51117,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #nametype 174
 #float
 #mountmnr 8896
+#mountedinspector
 #nothrowoff
 #nobarding
 #noremount
@@ -51097,6 +51168,41 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 --#firstshape 6535 -- Onager
 #nametype 188 -- Vehicle
 #cleanshape
+#end
+
+#newmonster 8897
+#name "Sacred Swan"
+#spr1 "magicenhanced/eeysswan.tga"
+#spr2 "magicenhanced/eeysswan2.tga"
+#descr "Now returned to the lands above the waves the Morgen have taken to riding gigantic Fey swans summoned from the Land of the Ever Young. These noble steeds will fight on if their rider is killed before returning to the Land of the Ever Young after the battle. They can fly incredible distances and can even cross the oceans to carry the Morgen to other lands. Morgen are descendants of the Tuatha and can use glamour to confuse enemies."
+#bird
+#gcost 10030
+#str 16
+#prot 12
+#size 7
+#hp 48
+#mor 16
+#mr 14
+#att 13
+#def 14
+#ap 14
+#prec 12
+#enc 3
+#gcost 0
+#rpcost 78
+#rcost 6
+#mapmove 24
+#startage 60
+#maxage 300
+#sailing 5 8
+#darkvision 50
+#itemslots 786432 -- 2 misc
+#amphibian
+#glamour
+#flying
+#holy
+#weapon "Wing Buff"
+#weapon 404  -- Beak
 #end
 
 
@@ -54506,6 +54612,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #skilledrider 2
 #landshape 8911
 #mountmnr 8908
+#mountedinspector
 #end
 
 #newmonster 8911 -- Siyokoy Maygintawo land shape
@@ -54519,6 +54626,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #landshape -1
 #watershape 8910
 #mountmnr 8909
+#mountedinspector
 #end
 
 #newmonster 8912 -- Magindara Maharlika water shape
@@ -55198,6 +55306,7 @@ Cost 50 recruitment points."
 #expertleader
 #landshape 8935
 #mountmnr 8932
+#mountedinspector
 --#shapechange 8929 -- Unmounted water shape
 #end
 
@@ -55212,6 +55321,7 @@ Cost 50 recruitment points."
 #landshape -1
 #watershape 8934
 #mountmnr 8933
+#mountedinspector
 --#shapechange 8936 -- Unmounted land shape
 #end
 
@@ -55760,6 +55870,7 @@ Cost 50 recruitment points."
 #swimming
 #skilledrider 1
 #mountmnr 9645 -- Riding Horse w/ MR + stealth
+#mountedinspector
 #end
 
 --Jarumi
@@ -55798,6 +55909,7 @@ Cost 50 recruitment points."
 #skilledrider 2
 #swimming
 #mountmnr 9646 -- Cataphracted Horse w/ MR
+#mountedinspector
 #regainmount 1
 #end
 
@@ -55841,6 +55953,7 @@ Cost 50 recruitment points."
 #mobilearcher 1
 #noundeadleader
 #mountmnr 9647 -- Exalted War Horse
+#mountedinspector
 #end
 
 --Colossi Soldier
@@ -56005,6 +56118,7 @@ Costs 29 Recruitment points."
 #ap 13
 #eyes 2
 #mountmnr 9648 -- Cataphracted Horse w/ MR
+#mountedinspector
 #weapon 4 -- Lance
 #weapon 8 -- Broad Sword
 #armor "Shield"
@@ -56357,6 +56471,7 @@ Costs 29 Recruitment points."
 #animalawe 3
 #beastmaster 3
 #mountmnr 9649 -- Jerboa
+#mountedinspector
 #holy
 #magicskill 6 2 -- Nature 2
 #magicskill 7 3 -- Glamour 3
@@ -57448,6 +57563,13 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 4 -- 2 -> 4
 #end
 
+#selectmonster 7780 -- Swan Knight
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 7782 -- Swan Champion
+#skilledrider 7 -- 4 -> 7
+#end
 
 
 
@@ -62524,6 +62646,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mounted
 --#itemslots 860678 -- No feet
 #mountmnr 3521
+#mountedinspector
 #skilledrider 1
 #regainmount 1
 #itemslots 860678
@@ -62915,6 +63038,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #spiritsight
 #noslowrec
 #mountmnr 3521
+#mountedinspector
 #skilledrider 1
 #regainmount 1
 #itemslots 860678
@@ -63724,6 +63848,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startage 250
 #maxage 500
 #mountmnr 8344 -- Giant Markata
+#mountedinspector
 #regainmount 1
 #douse 3
 #beastmaster 1
@@ -79560,6 +79685,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #clearweapons
 #weapon 513 -- kopesh
 #mountmnr 8576
+#mountedinspector
 #end
 
 #selectmonster 1367  -- Angel of the Choir
@@ -82085,33 +82211,73 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #descr "Scouts are trained to pass unseen through enemy territory. Their reports on enemy army movements and the resources in enemy lands are invaluable to the prudent warlord. Merrow scouts are a bit uncomfortable on dry land and are not very skilled at wilderness survival."
 #end
 
+#selectmonster 2917  -- Morgen Champion
+#okmagicleader
+#end
+
+#selectmonster 2918  -- Morgen Champion
+#okmagicleader
+#end
+
+#selectmonster 2919  -- Morgen Princess
+#okmagicleader
+#end
+
+#selectmonster 2920  -- Morgen Princess
+#okmagicleader
+#end
+
+#selectmonster 2924  -- Malgven
+#okmagicleader
+#end
+
+#selectmonster 2925  -- Malgven
+#okmagicleader
+#end
+
+#selectmonster 2926  -- Dahut
+#okmagicleader
+#end
+
+#selectmonster 2927  -- Dahut
+#okmagicleader
+#end
+
+#selectmonster 2921  -- Morgen Sorceress
+#okmagicleader
+#end
 
 #selectmonster 2899 -- Kernou Cavalry
 #mountmnr 3515 -- light scale horse
+#mountedinspector
 #end
 
 #selectmonster 2910 -- Ys Knight
 #spr1 "vanilla/knightofys1.tga"
 #spr2 "vanilla/knightofys2.tga"
 #mountmnr 3994 -- armored kelpie
+#mountedinspector
 #end
 
 #selectmonster 2911 -- Ys Knight land
 #spr1 "vanilla/knightofysl1.tga"
 #spr2 "vanilla/knightofysl2.tga"
 #mountmnr 3995 -- armored kelpie land
+#mountedinspector
 #end
 
 #selectmonster 2931 -- Ys Knight Commander
 #spr1 "vanilla/knightofyscom1.tga"
 #spr2 "vanilla/knightofyscom2.tga"
 #mountmnr 3994 -- armored kelpie
+#mountedinspector
 #end
 
 #selectmonster 2932 -- Ys Knight Commander land
 #spr1 "vanilla/knightofyslcom1.tga"
 #spr2 "vanilla/knightofyslcom2.tga"
 #mountmnr 3995 -- armored kelpie land
+#mountedinspector
 #end
 
 #selectmonster 3994 -- Armored Kelpie uw
@@ -92228,7 +92394,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #gems 1 1
 #gems 3 1
-#gems 6 1
+#gems 7 1
 #end
 
 #newsite 2156
@@ -92239,7 +92405,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #gems 1 1
 #gems 3 1
-#gems 6 1
 #gems 7 1
 --#mon 2897  -- Kernou Warrior
 --#mon 2898  -- Kernou Noble
@@ -96876,6 +97041,42 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 537
 #homecom 555
 #homecom 2068
+#end
+
+#newsite 2477
+#clear
+#name "MA Ys Summons"
+#rarity 5
+#level 0
+#path 7
+#look 4
+#homemon 1807 -- s boar
+#homemon 7561 -- s swan
+#homemon 3980 -- morvarc'h
+#homemon 7471 -- aes sidhe
+#homemon 7470 -- aes rider
+#homemon 7347 -- aes horn
+#homemon 8021 -- dire boar
+#homemon 7780 -- swan knight
+#homecom 7575 -- swanmay
+#homecom 7562 -- melusine
+#homecom 7469 -- aes lord
+#homecom 7237 -- horned one
+#homecom 7659 -- puck
+#homecom 7662 -- dolmen
+#homecom 7660 -- korrig
+#end
+
+#newsite 2478
+#clear
+#name "MA Ys Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 3
+#homecom 2924
+#homecom 2926
+#homecom 7935
 #end
 
 
@@ -103117,6 +103318,8 @@ Priests: Weak, magical"
 #startunitnbrs1 30
 
 #futuresite "Par-Ys"
+#futuresite "MA Ys Summons"
+#futuresite "MA Ys Heroes"
 
 -- Coastal recs made land anyfort
 #plainfortrec 2897
@@ -113610,7 +113813,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #copyspell 942 -- Call of the Winds
 #name "The Fairy Rade"
 #descr "The caster calls a host of the Fair Folk from the Land of the Ever Young to descend upon a distant province. The Aes Sidhe are a supernatural race related to the Sidhe but prone to evil and mischief. They may pass by a townstead if offerings of food and drink are left for them, however if the whim takes them they will descend to carry off people and livestock. They are of fay descent and are far superior to humans in physical and magical strength. The spell will call a procession of mounted Aes Sidhe headed by a powerful Lord that will remain in this realm to serve the Awakening God."
-#researchlevel 8
+#researchlevel 7
 #path 0 7
 #pathlevel 0 4
 #path 1 1
@@ -120962,9 +121165,9 @@ All effects scale with friendly Dominion."
 #path 0 6
 #pathlevel 0 2
 #effect 10001
-#fatiguecost 2000
+#fatiguecost 1500
 #damage 1807  -- Great Boar
-#nreff 1018
+#nreff 20
 #restricted 85 -- Ys
 #end
 
@@ -120980,7 +121183,7 @@ All effects scale with friendly Dominion."
 #effect 10001
 #fatiguecost 500
 #damage 7561
-#nreff 1009
+#nreff 1011 -- 12+
 #restricted 85 -- Ys
 #end
 
@@ -120990,11 +121193,11 @@ All effects scale with friendly Dominion."
 #school 0
 #researchlevel 4
 #path 0 1
-#pathlevel 0 2
-#path 1 2
+#pathlevel 0 1
+#path 1 7
 #pathlevel 1 1
 #effect 10001
-#fatiguecost 400
+#fatiguecost 300
 #damage 7780
 #nreff 1
 #restricted 85 -- Ys
@@ -121006,13 +121209,13 @@ All effects scale with friendly Dominion."
 #school 0
 #researchlevel 6
 #path 0 1
-#pathlevel 0 3
-#path 1 2
-#pathlevel 1 2
+#pathlevel 0 2
+#path 1 7
+#pathlevel 1 1
 #effect 10001
 #fatiguecost 1500
+#nreff 506
 #damage 7780
-#nreff 505
 #restricted 85 -- Ys
 #end
 
@@ -121032,9 +121235,9 @@ All effects scale with friendly Dominion."
 #descr "The caster calls to a Swanmay to reveal herself. After waiting to gauge the caster's intentions the Swanmay will reveal herself from amongst the blessed swans. Swanmays are skilled Air and Water mages. In swan shape their skill in Air magic is enhanced but their other magic skills are reduced. Swanmays are sacred to the people of Ys."
 #researchlevel 4
 #damage 7575
-#path 0 1
+#path 0 4 -- S
 #pathlevel 0 2
-#path 1 2
+#path 1 9 -- H
 #pathlevel 1 1
 #fatiguecost 2200
 #spec 0
@@ -121047,7 +121250,7 @@ All effects scale with friendly Dominion."
 #details "Images created: 2, Air Mages gain 2 images per Air skill level."
 #school 4
 #researchlevel 6
-#path 0 1
+#path 0 7
 #pathlevel 0 5
 #fatiguecost 200
 #range 0
@@ -121081,14 +121284,12 @@ All effects scale with friendly Dominion."
 #details "Province gains Population 10,000. Creates Crystal Citadel, gains recruitables including Swan Knights in the province. Repeat casts or casting where province already has a fort will cause spell to fail"
 #school 4
 #researchlevel 7
-#path 0 1
-#path 1 3
+#path 0 7
 #pathlevel 0 5
-#pathlevel 1 3
 #effect 10083
 #damage -1
 #nreff 1
-#fatiguecost 5000
+#fatiguecost 6000
 #nextspell 3307
 #restricted 85 -- Ys
 #end
