@@ -3408,7 +3408,7 @@
 #dmg 68719476736 -- slow affliction
 #secondaryeffectalways 1830 -- mind blast stun
 #range0
-#ammo 1003
+#ammo 1001
 #end
 
 -- End Mind Blast Changes
@@ -25828,10 +25828,10 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #clearweapons
 #name "Great Old One"
 #fixedname "K'llulu"
-#descr "The colossal being known as K'llulu, Tulu or Ktulu has existed for millenia as the High Priest of the Starspawn. In the catastrophe that caused the star to fall it fell into a deep death-slumber until the stars were right for it to live again. Few amongst the Starspawn know that K'llulu actually engineered the event that caused the star to fall in order to open up new worlds to conquer. Now awoken it will once more lead the Starspawn to absolute domination. K'llulu is a terrifying sight and many will falter at the mere sight of it. As a creature partially of the void it is a master of Astral magic and adept in the paths of Death and Water, and as High Priest its religious authority is absolute amongst the starspawn. The mind of K'llulu is strongly intertwined with the Void and its very presence will spread the Dominion of the Awakening God. As long as the stars remain right the creature cannot be truly destroyed and will reform in R'lyeh if killed, however if the stars are no longer right it will return to a restless torpor. Like all Illithids it is amphibious and can blast the minds of weaker beings."
+#descr "The colossal being known as K'llulu, Tulu or Ktulu has existed for millenia as the High Priest of the Starspawn. In the catastrophe that caused the star to fall it fell into a deep death-slumber until the stars were right for it to live again. Few amongst the Starspawn know that K'llulu actually engineered the event that caused the star to fall in order to open up new worlds to conquer. Now awoken it will once more lead the Starspawn to absolute domination. K'llulu is a terrifying sight and many will falter at the mere sight of it. As a creature partially of the void it is a master of Astral magic and adept in the paths of Death, Glamour, and Water, and as High Priest its religious authority is absolute amongst the starspawn. The mind of K'llulu is strongly intertwined with the Void and its very presence will spread the Dominion of the Awakening God. As long as the stars remain right the creature cannot be truly destroyed and will reform in R'lyeh if killed, however if the stars are no longer right it will return to a restless torpor. Like all Illithids it is amphibious and can blast the minds of weaker beings."
 #ap 14
 #hp 145
-#mapmove 2
+#mapmove 20
 #size 10
 #prot 18
 #enc 2
@@ -25843,7 +25843,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #mor 30
 #gcost 0
 #fear 10
-#itemslots 1843206 -- head, 2 hands, 3 misc
+#itemslots 2040326 -- head, 2 hands, feet, body, 3 misc
 #voidsanity 20
 #flying
 #amphibian
@@ -25860,19 +25860,86 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #poisonres 25
 #coldres 25
 #darkvision 100
-#magicskill 4 4  -- Astral
+#magicskill 4 5  -- Astral
 #magicskill 2 3  -- Water
-#magicskill 5 3  -- Death
+#magicskill 5 2  -- Death
+#magicskill 7 3  -- Glamour
 #magicskill 9 4 -- Holy
 #immortal
+#reformtime -2
+#nowish
+#polyimmune
 #okleader
 #expertmagicleader
 #poorundeadleader
 #domsummon -1020  -- Void Beings
+#summon5 -1020  -- Void Beings
 #onebattlespell 739 -- Wailing Winds
 #weapon 33  -- Claws
 #weapon 839 -- Pretender Mind Blast
 #weapon 636  -- Life Draining Tentacle
+#end
+
+
+#newmonster 7856 -- Deserter
+#copystats 333  -- Illithid Priest
+#spr1 "magicenhanced/eecthulhu.tga"
+#spr2 "magicenhanced/eecthulhu2.tga"
+#clearmagic
+#clearweapons
+#name "Great Old One"
+#fixedname "K'llulu"
+#descr "The colossal being known as K'llulu, Tulu or Ktulu has existed for millenia as the High Priest of the Starspawn. In the catastrophe that caused the star to fall it fell into a deep death-slumber until the stars were right for it to live again. Few amongst the Starspawn know that K'llulu actually engineered the event that caused the star to fall in order to open up new worlds to conquer. Now awoken it will once more lead the Starspawn to absolute domination. K'llulu is a terrifying sight and many will falter at the mere sight of it. As a creature partially of the void it is a master of Astral magic and adept in the paths of Death and Water, and as High Priest its religious authority is absolute amongst the starspawn. The mind of K'llulu is strongly intertwined with the Void and its very presence will spread the Dominion of the Awakening God. As long as the stars remain right the creature cannot be truly destroyed and will reform in R'lyeh if killed, however if the stars are no longer right it will return to a restless torpor. Like all Illithids it is amphibious and can blast the minds of weaker beings."
+#ap 14
+#hp 145
+#mapmove 20
+#size 10
+#prot 18
+#enc 2
+#str 24
+#att 14
+#def 10
+#prec 12
+#mr 20
+#mor 30
+#gcost 0
+#fear 10
+#itemslots 2040326 -- head, 2 hands, feet, body, 3 misc
+#voidsanity 20
+#flying
+#amphibian
+#bluntres
+#holy
+#heal
+#neednoteat
+#magicbeing
+#voidret 100
+#spreaddom 1
+#nohof
+#startage 5000
+#maxage 10000
+#poisonres 25
+#coldres 25
+#darkvision 100
+#magicskill 4 5  -- Astral
+#magicskill 2 3  -- Water
+#magicskill 5 2  -- Death
+#magicskill 7 3  -- Glamour
+#magicskill 9 4 -- Holy
+#immortal
+#reformtime -2
+#nowish
+#polyimmune
+#okleader
+#expertmagicleader
+#poorundeadleader
+#domsummon -1020  -- Void Beings
+#summon5 -1020  -- Void Beings
+#onebattlespell 739 -- Wailing Winds
+#weapon 33  -- Claws
+#weapon 839 -- Pretender Mind Blast
+#weapon 636  -- Life Draining Tentacle
+#deserter 100
 #end
 
 #newmonster 7388
@@ -35291,61 +35358,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 1674 -- Mictlan Blow Pipe
 #weapon 671  -- Stone Dagger
 #stealthy 0
-#end
-
-
-#newmonster 7856
-#copystats 333  -- Illithid Priest
-#spr1 "magicenhanced/eecthulhu.tga"
-#spr2 "magicenhanced/eecthulhu2.tga"
-#clearmagic
-#clearweapons
-#name "Great Old One"
-#fixedname "K'llulu"
-#descr "The colossal being known as K'llulu, Tulu or Ktulu has existed for millenia as the High Priest of the Starspawn. In the catastrophe that caused the star to fall it fell into a deep death-slumber until the stars were right for it to live again. Few amongst the Starspawn know that K'llulu actually engineered the event that caused the star to fall in order to open up new worlds to conquer. Now awoken it will once more lead the Starspawn to absolute domination. K'llulu is a terrifying sight and many will falter at the mere sight of it. As a creature partially of the void it is a master of Astral magic and adept in the paths of Death and Water, and as High Priest its religious authority is absolute amongst the starspawn. The mind of K'llulu is strongly intertwined with the Void and its very presence will spread the Dominion of the Awakening God. As long as the stars remain right the creature cannot be truly destroyed and will reform in R'lyeh if killed, however if the stars are no longer right it will return to a restless torpor. Like all Illithids it is amphibious and can blast the minds of weaker beings."
-#ap 14
-#hp 145
-#mapmove 2
-#size 10
-#prot 18
-#enc 2
-#str 24
-#att 14
-#def 10
-#prec 12
-#mr 20
-#mor 30
-#gcost 0
-#fear 10
-#itemslots 1843206 -- head, 2 hands, 3 misc
-#voidsanity 25
-#flying
-#amphibian
-#bluntres
-#holy
-#heal
-#neednoteat
-#magicbeing
-#voidret 100
-#spreaddom 1
-#nohof
-#deserter 100
-#startage 5000
-#maxage 10000
-#poisonres 25
-#coldres 25
-#darkvision 100
-#magicskill 4 4  -- Astral
-#magicskill 2 3  -- Water
-#magicskill 5 3  -- Death
-#magicskill 9 4 -- Holy
-#okleader
-#expertmagicleader
-#poorundeadleader
-#onebattlespell 739 -- Wailing Winds
-#weapon 33  -- Claws
-#weapon 839 -- Pretender Mind Blast
-#weapon 636  -- Life Draining Tentacle
 #end
 
 #newmonster 7857
@@ -78464,6 +78476,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 750  -- Thing from Beyond
+#montag 1020
 #end
 
 #selectmonster 751  -- Thing that Should not Be
@@ -96551,6 +96564,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 966 -- Formless Spawn
 #homemon 3852 -- Void Dreamer
 #homecom 3853 -- Void Herald
+#homecom 7387 -- K'llulu
 #end
 
 #newsite 2447
@@ -97078,6 +97092,51 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 2926
 #homecom 7935
 #end
+
+
+#newsite 2479
+#name "MA R'lyeh Void Beings"
+#level 0
+#rarity 5
+#path 4
+#look 4
+#homemon 750 -- Thing From Beyond
+#homemon 751 -- Thing That Should Not Be
+#homemon 752 -- Elder Thing
+#homemon 753 -- Thing From The Void
+#homemon 754 -- Greater Otherness
+#homemon 755 -- Otherness
+#homemon 756 -- Lesser Otherness
+#homemon 757 -- Vile Thing
+#homemon 758 -- Thing Of Many Eyes
+#homemon 759 -- Dweller-In-The-Deep
+#homemon 966 -- Formless Spawn
+#homecom 7387 -- K'llulu
+#end
+
+#newsite 2480
+#name "MA R'lyeh Summons"
+#level 0
+#rarity 5
+#path 4
+#look 6
+#homemon 7890 -- lobster hybrid
+#homecom 1562 -- void spectre
+#homecom 7456 -- hound of tindalos
+#end
+
+#newsite 2481
+#name "MA R'lyeh Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 4
+#homecom 560
+#homecom 622
+#homecom 660
+#homecom 8221
+#end
+
 
 
 -- END OF NEW SITES
@@ -103123,6 +103182,10 @@ Dominion: Causes dreamless slumber, greatly reducing tax income. Vines reanimate
 #startunitnbrs1 20
 #startunittype2 1524  -- Slave Guardian
 #startunitnbrs2 20
+
+#futuresite "MA R'lyeh Void Beings"
+#futuresite "MA R'lyeh Summons"
+#futuresite "MA R'lyeh Heroes"
 
 #moreprod 1
 #end
@@ -117886,7 +117949,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #descr "Visions of the void affect the enemy, filling their minds with strange vistas and impossible sights. Affected troops will flee in terror and their minds may be permanently damaged by the experience."
 #details "Fear attack: 5, targets may gain +10 Insanity."
 #researchlevel 5
-#path 0 5
+#path 0 7
 #pathlevel 0 2
 #path 1 4
 #pathlevel 1 2
@@ -117913,7 +117976,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 8
 #path 0 4
 #pathlevel 0 5
-#path 1 5
+#path 1 7
 #pathlevel 1 2
 #nreff 1
 #effect 11
@@ -117952,8 +118015,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 5
 #path 0 4
 #pathlevel 0 4
-#path 1 5
-#pathlevel 1 1
+#path 1 7
+#pathlevel 1 2
 #effect 10042
 #nreff 1
 #provrange 4
@@ -118125,7 +118188,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 1 1
 #nreff 1
 #damage 7489
-#fatiguecost 300
+#fatiguecost 200
 #spec 8388608
 #restricted 89 -- MA R'lyeh
 #end
@@ -118144,6 +118207,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #damage 7890 -- Lobster Hybrid
 #fatiguecost 300
 #spec 8388608
+#restricted 89 -- MA R'lyeh
 #restricted 127 -- LA R'lyeh
 #end
 
@@ -118156,7 +118220,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 3
 #path 1 4
 #pathlevel 1 2
-#nreff 1001
+#nreff 1002 -- 6+
 #damage 7489
 #fatiguecost 1000
 #spec 8388608
@@ -132049,6 +132113,26 @@ Applies the effects of Holy Avenger to the caster"
 #onlygeosrc 4096 -- Caves
 #end
 
+#selectspell 4162
+#name "The Stars are Right"
+#descr "Deep in the city of R'lyeh lies the High Priest of the Starspawn, an eldritch monstrosity that has lain Dead yet Dreaming for millenia. When the stars are right once more it will awaken and the world shall tremble. The caster uses Astral magic to cause a great conjunction which will rouse the slumbering behemoth. This is a terrible omen and great unrest will sweep the world. The awakening will cause dreams of the void to afflict the sensitive in every corner of the world and human-illithid hybrids will be born across the land. Reality itself will falter and creatures from Outside will appear to serve the High Priest of the Dreaming God. If the enchantment is ended, however, the creature will return to a long death-slumber in R'lyeh. This enchantment lasts until someone dispels it or the caster dies."
+#details "Unrest +30 worldwide when cast. 10% chance of Baleful Star in every hostile province each month. Summons K'lullu Unique Commander in capital who is immortal as long as spell remains. If dispelled K'lullu immediately returns to his slumber."
+#school 4
+#researchlevel 8
+#path 0 4
+#path 1 2
+#pathlevel 0 6
+#pathlevel 1 2
+#effect 10081
+#damage 228 -- Ench28
+#nreff 1
+#spec 41943040  -- UW Only
+#fatiguecost 5500
+#onlyatsite 164 -- City of Unfulfilled Dreams
+#restricted 127 -- LA R'lyeh
+#nextspell 3056
+#end
+
 
 
 -- END OF NEW SPELLS
@@ -141636,7 +141720,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_owncapital 0
 #req_targmnr 8483 -- Nuclear Chaos
 #msg "The Nuclear Chaos has grown more powerful, but also more unpredictable."
-#transform 8484
+#forcetransform 8484
 #nolog
 #end
 
@@ -141650,7 +141734,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_owncapital 0
 #req_targmnr 8482 -- Nuclear Chaos
 #msg "The Nuclear Chaos has grown more powerful, but also more unpredictable."
-#transform 8483
+#forcetransform 8483
 #nolog
 #end
 
@@ -141664,7 +141748,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_owncapital 0
 #req_targmnr 8481 -- Nuclear Chaos
 #msg "The Nuclear Chaos has grown more powerful, but also more unpredictable."
-#transform 8482
+#forcetransform 8482
 #nolog
 #end
 
@@ -141744,7 +141828,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 925  -- Tarrasque
 #msg "Tarrasque Awoken."
-#transform 7517 -- Awoken Tarrasque
+#forcetransform 7517 -- Awoken Tarrasque
 #nolog
 #notext
 #end
@@ -141755,7 +141839,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 521  -- Abomination
 #msg "Abomination Awoken."
-#transform 7518 -- Awoken Abomination
+#forcetransform 7518 -- Awoken Abomination
 #nolog
 #notext
 #end
@@ -141766,7 +141850,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 2251  -- Ancient Presence
 #msg "Ancient Presence Awoken."
-#transform 7519 -- Awoken Ancient Presence
+#forcetransform 7519 -- Awoken Ancient Presence
 #nolog
 #notext
 #end
@@ -141777,7 +141861,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 531  -- Iron Dragon
 #msg "Iron Dragon Awoken."
-#transform 7544 -- Awoken Iron Dragon
+#forcetransform 7544 -- Awoken Iron Dragon
 #nolog
 #notext
 #end
@@ -142062,7 +142146,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #nation -2
 #msg "The inauguration ritual was completed successfully! The Substitute King sits upon the throne and calamity has been averted. Good fortune spreads throughout the kingdom."
 #nolog
-#transform 7593 -- Substitute King
+#forcetransform 7593 -- Substitute King
 #end
 
 #newevent
@@ -142178,7 +142262,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 511  -- Winter Wolf
 #msg "Gain mind"
-#transform 7616 -- Winter Wolf with mind
+#forcetransform 7616 -- Winter Wolf with mind
 #notext
 #nolog
 #end
@@ -142189,7 +142273,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 511  -- Winter Wolf
 #msg "Gain mind"
-#transform 7616 -- Winter Wolf with mind
+#forcetransform 7616 -- Winter Wolf with mind
 #notext
 #nolog
 #end
@@ -142200,7 +142284,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 511  -- Winter Wolf
 #msg "Gain mind"
-#transform 7616 -- Winter Wolf with mind
+#forcetransform 7616 -- Winter Wolf with mind
 #notext
 #nolog
 #end
@@ -142211,7 +142295,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 512  -- Fall Bear
 #msg "Gain mind"
-#transform 7617 -- Fall Bear with mind
+#forcetransform 7617 -- Fall Bear with mind
 #notext
 #nolog
 #end
@@ -142222,7 +142306,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 512  -- Fall Bear
 #msg "Gain mind"
-#transform 7617 -- Fall Bear with mind
+#forcetransform 7617 -- Fall Bear with mind
 #notext
 #nolog
 #end
@@ -142233,7 +142317,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 512  -- Fall Bear
 #msg "Gain mind"
-#transform 7617 -- Fall Bear with mind
+#forcetransform 7617 -- Fall Bear with mind
 #notext
 #nolog
 #end
@@ -142244,7 +142328,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 513  -- Spring Hawk
 #msg "Gain mind"
-#transform 7618 -- Spring Hawk with mind
+#forcetransform 7618 -- Spring Hawk with mind
 #notext
 #nolog
 #end
@@ -142255,7 +142339,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 513  -- Spring Hawk
 #msg "Gain mind"
-#transform 7618 -- Spring Hawk with mind
+#forcetransform 7618 -- Spring Hawk with mind
 #notext
 #nolog
 #end
@@ -142266,7 +142350,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 513  -- Spring Hawk
 #msg "Gain mind"
-#transform 7618 -- Spring Hawk with mind
+#forcetransform 7618 -- Spring Hawk with mind
 #notext
 #nolog
 #end
@@ -142277,7 +142361,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 515  -- Summer Lion
 #msg "Gain mind"
-#transform 7619 -- Summer Lion with Mind
+#forcetransform 7619 -- Summer Lion with Mind
 #notext
 #nolog
 #end
@@ -142288,7 +142372,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 515  -- Summer Lion
 #msg "Gain mind"
-#transform 7619 -- Summer Lion with Mind
+#forcetransform 7619 -- Summer Lion with Mind
 #notext
 #nolog
 #end
@@ -142299,7 +142383,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 515  -- Summer Lion
 #msg "Gain mind"
-#transform 7619 -- Summer Lion with Mind
+#forcetransform 7619 -- Summer Lion with Mind
 #notext
 #nolog
 #end
@@ -142310,7 +142394,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 1983  -- Green Lion
 #msg "Gain mind"
-#transform 7620 -- Green Lion with mind
+#forcetransform 7620 -- Green Lion with mind
 #notext
 #nolog
 #end
@@ -142321,7 +142405,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 1983  -- Green Lion
 #msg "Gain mind"
-#transform 7620 -- Green Lion with mind
+#forcetransform 7620 -- Green Lion with mind
 #notext
 #nolog
 #end
@@ -142332,7 +142416,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 1983  -- Green Lion
 #msg "Gain mind"
-#transform 7620 -- Green Lion with mind
+#forcetransform 7620 -- Green Lion with mind
 #notext
 #nolog
 #end
@@ -142343,7 +142427,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 2225  -- Fire Ant
 #msg "Gain mind"
-#transform 7621 -- Fire Ant with mind
+#forcetransform 7621 -- Fire Ant with mind
 #notext
 #nolog
 #end
@@ -142354,7 +142438,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 2225  -- Fire Ant
 #msg "Gain mind"
-#transform 7621 -- Fire Ant with mind
+#forcetransform 7621 -- Fire Ant with mind
 #notext
 #nolog
 #end
@@ -142365,7 +142449,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 2225  -- Fire Ant
 #msg "Gain mind"
-#transform 7621 -- Fire Ant with mind
+#forcetransform 7621 -- Fire Ant with mind
 #notext
 #nolog
 #end
@@ -142376,7 +142460,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 2226  -- Killer Mantis
 #msg "Gain mind"
-#transform 7622 -- Killer Mantis with mind
+#forcetransform 7622 -- Killer Mantis with mind
 #notext
 #nolog
 #end
@@ -142387,7 +142471,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 2226  -- Killer Mantis
 #msg "Gain mind"
-#transform 7622 -- Killer Mantis with mind
+#forcetransform 7622 -- Killer Mantis with mind
 #notext
 #nolog
 #end
@@ -142398,7 +142482,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 2226  -- Killer Mantis
 #msg "Gain mind"
-#transform 7622 -- Killer Mantis with mind
+#forcetransform 7622 -- Killer Mantis with mind
 #notext
 #nolog
 #end
@@ -142409,7 +142493,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 7546 -- Winged Ant
 #msg "Gain mind"
-#transform 7623 -- Winged Ant with mind
+#forcetransform 7623 -- Winged Ant with mind
 #notext
 #nolog
 #end
@@ -142420,7 +142504,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 7546 -- Winged Ant
 #msg "Gain mind"
-#transform 7623 -- Winged Ant with mind
+#forcetransform 7623 -- Winged Ant with mind
 #notext
 #nolog
 #end
@@ -142431,7 +142515,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #req_pop0ok
 #req_targmnr 7546 -- Winged Ant
 #msg "Gain mind"
-#transform 7623 -- Winged Ant with mind
+#forcetransform 7623 -- Winged Ant with mind
 #notext
 #nolog
 #end
@@ -142481,7 +142565,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #nation -2
 #msg "Anu has declared that he will no longer serve under the yoke of another master! He has declared all servants of the Pretender Gods as his enemies and claimed the province of ##landname## as his own."
 #nolog
-#transform 7643 -- Anu Deserter
+#forcetransform 7643 -- Anu Deserter
 #end
 
 #newevent
@@ -142667,7 +142751,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #msg "Transformation"
 #notext
 #nolog
-#transform 7336 -- Kinnara
+#forcetransform 7336 -- Kinnara
 #end
 
 #newevent
@@ -142679,7 +142763,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #msg "Transformation"
 #notext
 #nolog
-#transform 7362 -- Divine Firstshape
+#forcetransform 7362 -- Divine Firstshape
 #end
 
 #newevent
@@ -142691,7 +142775,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #msg "Transformation"
 #notext
 #nolog
-#transform 7336 -- Kinnara
+#forcetransform 7336 -- Kinnara
 #end
 
 #newevent
@@ -142703,7 +142787,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #msg "Transformation"
 #notext
 #nolog
-#transform 7362 -- Divine Firstshape
+#forcetransform 7362 -- Divine Firstshape
 #end
 
 #newevent
@@ -142715,7 +142799,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #msg "Transformation"
 #notext
 #nolog
-#transform 7336 -- Kinnara
+#forcetransform 7336 -- Kinnara
 #end
 
 #newevent
@@ -142727,7 +142811,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #msg "Transformation"
 #notext
 #nolog
-#transform 7362 -- Divine Firstshape
+#forcetransform 7362 -- Divine Firstshape
 #end
 
 
@@ -149078,7 +149162,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_pop0ok
 #msg "The stars are no longer right! K'llulu has sunk beneath the waves, to wait and dream until the time is right once more."
 #nolog
-#transform 7856 -- K'llulu Deserter
+#forcetransform 7856 -- K'llulu Deserter
 #killmon 7387 -- K'llulu
 #end
 
@@ -149089,7 +149173,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_pop0ok
 #msg "K'llulu has joined with those who pretend to the name R'lyeh."
 #nolog
-#transform 7856 -- K'llulu Deserter
+#forcetransform 7856 -- K'llulu Deserter
 #killmon 7387 -- K'llulu
 #end
 
