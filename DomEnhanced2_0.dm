@@ -44753,6 +44753,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #fixedname "Zipacna"
 #spr1 "worthy_heroes/zipacna.tga"
 #spr2 "worthy_heroes/zipacna_attacking.tga"
+#drawsize -25
 #gcost 0
 #descr "Zipacna was born from a Muuch priestess and an unknown father. He grew quickly to an immense size and strength and resembles a human-like crocodile. Zipacna often boasts about his own achievements, always ready to show off his prodigious strength and mock those of lesser stature. He particularly enjoys building and destroying dwellings and fortifications. While he looks dim-witted, Zipacna is clever, vengeful, and murderous. He will hold a grudge forever, and has killed a great number of people who thought to fool him due to his appearance as a dumb beast. Over the ages, Zipacna has become as feared as he is venerated for his ruthless pursuit of revenge against all those who mock or try to fool him"
 #hp 80
@@ -81834,6 +81835,19 @@ Cost 28 RP."
 #magicskill 9 4
 #end
 
+#selectmonster 2714
+#hp 35
+#end
+
+
+#selectmonster 2729
+#rpcost 31
+#end
+
+#selectmonster 2731
+#rpcost 24
+#end
+
 
 #selectmonster 2757 -- EA Xib hero Demon of the Bone Staff
 #clearspec  -- Remove the bats
@@ -97192,6 +97206,42 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8166
 #end
 
+#newsite 2485
+#clear
+#name "MA Xibalba Summons"
+#rarity 5
+#level 0
+#path 2
+#look 6
+#homemon 7455 -- coral snake
+#homemon 1359 -- toad
+#homemon 1358 -- monster toad
+#homemon 1889 -- jade serp
+#homemon 7557 -- wood warrior
+#homemon 7611 -- mud warrior
+#homemon 7574 -- golden warrior
+#homemon 7345 -- returned shamb
+#homemon 7346 -- returned pillar
+#homecom 7348 -- returned priest
+#homecom 7263 -- ghost king
+#homecom 7226 -- Dagon
+#homecom 7265 -- huitz
+#end
+
+#newsite 2486
+#clear
+#name "MA Xibalba Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 6
+#homecom 3260
+#homecom 3261
+#homecom 8215
+#homecom 8216
+#homecom 8217
+#end
+
 
 
 -- END OF NEW SITES
@@ -103033,6 +103083,10 @@ Dominion: Causes dreamless slumber, greatly reducing tax income. Vines reanimate
 #startunitnbrs1 30
 #startunittype2 2722  -- Muuch Dart Thrower
 #startunitnbrs2 30
+
+#futuresite "MA Xibalba Summons"
+#futuresite "Xibalba Chaac & Balam"
+#futuresite "MA Xibalba Heroes"
 #end
 
 #selectnation 51
@@ -113031,28 +113085,6 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #restricted 190 -- Rotterland
 #end
 
-#selectspell 2691
-#copyspell 991 -- Will O Wisp
-#name "Summon Marsh Beasts"
-#descr "The mage creates a magical link to the swampy marshes of their homeland. Bog Beasts will emerge from the vegetation and attack the enemies of the caster."
-#details "Summons 8 Bog Beasts from the edge of the battlefield."
-#researchlevel 6
-#school 5
-#path 0 2  -- Nature
-#path 1 6  -- Water
-#pathlevel 0 3  -- W3
-#pathlevel 1 2  -- N1
-#nreff 8
-#damage 578  -- Bog Beast
-#fatiguecost 100
-#casttime 200
-#sound 83  -- Bog Beast
-#nextspell 1175 -- Quagmire
-#restricted 75 -- MA C'tis
-#restricted 74 -- MA Xibalba
-#restricted 190 -- Rotterland
-#end
-
 #selectspell 2692
 #copyspell 16  -- Hidden spell Court of Undines
 #name "Tomb Sauromancer"
@@ -116836,7 +116868,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 2957
 #copyspell 658 -- Phantasmal Warrior
-#name "Create Mud Man"
+#name "Create Mudman"
 #descr "The caster creates a humanoid figure from mud to fight his enemy. In ancient times the Gods made beings to worship them, first of mud and then of wood. These being were destroyed in a great flood when they failed to worship those that gave them life. The Mud warrior so created will be mindless but will follow the orders of its creator. Those fighting the mud man may become covered in muck and slime."
 #school 4
 #researchlevel 2
@@ -116844,7 +116876,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 3
 #pathlevel 1 1
 #fatiguecost 30
-#damage 7558 -- Mud Man
+#damage 7611 -- Mud Man
+#nreff 501
 #spec 0
 #restricted 74 -- MA Xibalba
 #restricted 112 -- LA Xibalba
@@ -116863,7 +116896,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 3
 #pathlevel 1 1
 #nreff 3000
-#damage 7558 -- Mud Man
+#damage 7611 -- Mud Man
 #range 3
 #fatiguecost 100
 #restricted 74 -- MA Xibalba
@@ -116877,11 +116910,11 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 1200 -- Enliven Statues
 #name "Carve Wooden Men"
 #descr "The caster carves a series of lifesize wooden figures and imbues them with a spark of life. In ancient times the Gods made beings to worship them, first of mud and then of wood. These being were destroyed in a great flood when they failed to worship their creators. The wooden warriors will be mindless however they are tough and hardy warriors."
-#researchlevel 2
+#researchlevel 1
 #path 0 6
 #pathlevel 0 2
 #fatiguecost 600
-#nreff 2011 -- 15++
+#nreff 2016 -- 20++
 #damage 7557 -- Wooden Man
 #restricted 26 -- EA Xibalba
 #restricted 74 -- MA Xibalba
@@ -116893,8 +116926,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Enliven Gold Men"
 #descr "When the great upheaval flooded the lower caverns strange golden statues were unearthed. Legends known only by the oldest Camazotz tell of a race of Golden men created by the Gods in ancient times. These men were hard and cold to the touch and were eventually discarded by their masters. These statues can be brought back to a semblance of life through ritual magic and are sacred to the Zotz population. The Golden men created will be difficult to destroy but will revert to an inanimate state if there are no mages left on the battlefield."
 #researchlevel 4
-#fatiguecost 1000
-#nreff 1002
+#fatiguecost 800
+#nreff 1002 -- 5+
 #damage 7574 -- Gold Warrior
 #restricted 74 -- MA Xibalba
 #onlyatsite 178  -- The Flooded City
@@ -116955,24 +116988,26 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 2964
 #name "Oozing Marshlands"
-#descr "This spell draws a great quantity of water from below the earth, turning the whole battlefield into a muddy sludge. Enemy units may be trapped  waistdeep in oozing mire and everyone on the battlefield will be penalized for fighting there unless they are skilled in swamp survival. Escaping the mire requires strength and enemy soldiers will be helpless against attacks while struggling to be free. Once the targets manage to escape they will be covered in muck that will greatly hamper them in combat. The enchantment lasts for the entire battle or until the caster dies."
-#details "Str +DRN vs 23 to get free, slimed targets have their att/def/combat speed halved. All units without Swamp Survival suffer -1 Att, -1 Def, +2 Enc and -20% combat speed."
+#descr "This spell draws a great quantity of water from below the earth, turning the whole battlefield into a muddy sludge. Enemy units may be trapped waist deep in oozing mire and everyone on the battlefield will be penalized for fighting there unless they are skilled in swamp survival. They will be covered in muck that will greatly hamper them in combat. The enchantment lasts for the entire battle or until the caster dies."
+--#details "Str +DRN vs 23 to get free, slimed targets have their att/def/combat speed halved. All units without Swamp Survival suffer -1 Att, -1 Def, +2 Enc and -20% combat speed."
+#details "Slimed targets have their att/def/combat speed halved. All units without Swamp Survival suffer -1 Att, -1 Def, +2 Enc and -20% combat speed."
 #school 1
-#researchlevel 7
+#researchlevel 6
 #path 0 2
 #path 1 3
-#pathlevel 0 4
-#pathlevel 1 3
+#pathlevel 0 3
+#pathlevel 1 2
 #effect 11
 #precision 4
-#fatiguecost 300
+#fatiguecost 100
 #aoe 666
 #nreff 1
 #range 0
 #spec 70368745504896  -- AN, ignores shields, Enemies only, Defence negates, flyers immune
 #explspr 10196
 #flightspr -1
-#damage 134234112  -- Slime & Earth grip
+#damage 134217728  -- Slime & Earth grip
+--#damage 134234112  -- Slime & Earth grip
 #nextspell "Quagmire"
 #restricted 74 -- MA Xibalba
 #restricted 190 -- Rotterland
@@ -117457,6 +117492,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 43 -- EA Atlantis
 #restricted 88 -- MA Atlantis
 #restricted 111 -- LA Mictlan
+#restricted 74 -- MA Xibalba
 #end
 
 #selectspell 2997
@@ -117527,7 +117563,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 5
 #pathlevel 0 3
 #pathlevel 1 1
-#fatiguecost 5500
+#fatiguecost 6000
 #damage 7345
 #nreff 2004 -- 10++
 #onlygeosrc 2048
@@ -117535,6 +117571,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 126 -- LA Atlantis
 #restricted 206 -- Dirgen
 #restricted 111 -- LA Mictlan
+#restricted 74 -- MA Xibalba
 #nextspell 3002
 #end
 
@@ -123501,10 +123538,11 @@ All effects scale with friendly Dominion."
 #pathlevel 0 1
 #pathlevel 1 1
 #effect 1
-#damage 7558
+#damage 7611
 #range 3
 #fatiguecost 30
-#restricted 190
+#nreff 501
+#restricted 190 -- LA Rotterland
 #flightspr 10080
 #sound 15
 #end
@@ -123520,10 +123558,10 @@ All effects scale with friendly Dominion."
 #pathlevel 1 1
 #effect 1
 #nreff 3000
-#damage 7558
+#damage 7611
 #range 3
 #fatiguecost 100
-#restricted 190
+#restricted 190 -- LA Rotterland
 #flightspr 10080
 #sound 15
 #end
@@ -123542,7 +123580,7 @@ All effects scale with friendly Dominion."
 #damage 7965
 #precision 10050
 #fatiguecost 300
-#restricted 190
+#restricted 190 -- LA Rotterland
 #provrange 5
 #nowatertrace 1
 #end
@@ -123563,7 +123601,7 @@ All effects scale with friendly Dominion."
 #damage 7975 -- Mosquito cloud
 #fatiguecost 60
 #nogeosrc 64  -- Wastes
-#restricted 190
+#restricted 190 -- LA Rotterland
 #end
 
 #selectspell 3472
@@ -123578,7 +123616,7 @@ All effects scale with friendly Dominion."
 #damage 7967
 #fatiguecost 2000
 #onlygeosrc 128  -- Forest Only
-#restricted 190
+#restricted 190 -- LA Rotterland
 #end
 
 #selectspell 3473
@@ -123592,7 +123630,7 @@ All effects scale with friendly Dominion."
 #nreff 1
 #damage 7968
 #fatiguecost 2000
-#restricted 190
+#restricted 190 -- LA Rotterland
 #end
 
 #selectspell 3474
@@ -134802,7 +134840,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectitem 633
 #name "Chilan Balam"
 #descr "This book is an esoteric summa made by the Chilan Balam. It contains prayers and descriptions of the gods, the complete history of Xibalba, medical knowledge compiled from both Alantean and Zotz lore, and prophecies of the coming of the flood. In addition to the prophecies and the application of the medical lore, the arcane lore contained in the book assists the reader with magical research and it can be used directly to summon Jaguar Demons."
-#copyspr 411
+#copyspr 455
 #constlevel 12
 #mainpath 0
 #mainlevel 1
@@ -140633,7 +140671,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #newevent
 #rarity 5
-#req_rare 25
+#req_rare 50
 #req_pop0ok
 #req_monster 8215
 #req_targorder 20
