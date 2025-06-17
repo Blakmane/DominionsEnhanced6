@@ -82311,6 +82311,15 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 
+#selectmonster 3571 -- Uruk Mushussu Chariot
+#gcost 120
+#end
+
+#selectmonster 2963 -- Uruk Mushussu Chariot Rider
+#armor 101 -- bronze hauberk
+#armor 135 -- bronze cap
+#end
+
 #selectmonster 2962  -- Mushussu
 #reclimit 3
 #drake
@@ -82344,7 +82353,6 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 #selectmonster 3064  -- Anzu
-#holy
 #twiceborn 1388  -- Ziz
 #end
 
@@ -97137,6 +97145,53 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8221
 #end
 
+#newsite 2482
+#name "MA Uruk Summons"
+#level 0
+#rarity 5
+#path 4
+#look 6
+#homemon 3009 -- buffalo
+#homemon 7436 -- lioness
+#homemon 3068 -- kusari
+#homemon 7694 -- urma
+#homemon 7695 -- armor urma
+#homemon 7707 -- girta
+#homemon 7994 -- serpo
+#homemon 7815 -- mush
+#homemon 7816 -- basmu
+#homemon 3064 -- anzu
+#end
+
+#newsite 2483
+#name "MA Uruk Summons Continued"
+#level 0
+#rarity 5
+#path 4
+#look 6
+#homecom 2071 -- lilot
+#homecom 7697 -- urma sham
+#homecom 1649 -- scorp man
+#homecom 3095 -- ugallo
+#homecom 7340 -- humb
+#homecom 2966 -- umu
+#homecom 7437 -- god statue
+#homecom 7344 -- anim god statue
+#homecom 7295 -- lion-snake
+#homecom 7710 -- kur
+#end
+
+#newsite 2484
+#name "MA Uruk Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 4
+#homecom 2433
+#homecom 2965
+#homecom 8166
+#end
+
 
 
 -- END OF NEW SITES
@@ -102919,6 +102974,10 @@ Dominion: Causes dreamless slumber, greatly reducing tax income. Vines reanimate
 #delgod 8451 -- Infernal Spirit
 #cheapgod20 8367 -- First Sirrush
 #cheapgod20 8447 -- Watery Wisdom
+
+#futuresite "MA Uruk Summons"
+#futuresite "MA Uruk Summons Continued"
+#futuresite "MA Uruk Heroes"
 #end
 
 #selectnation 72 -- MA Nazca
@@ -116383,12 +116442,12 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #selectspell 2930
 #copyspell 935 -- Pack of Wolves
 #name "Servants of the Annunaki"
-#descr "The caster summons a pair of Lionesses to serve them. In Ur the Lioness is the symbol of the Annunaki and it is said they are sometimes accompanied into battle by these proud hunters. As a result these creatures are sacred to the people of Ur and sometimes accompany them on their march to war."
+#descr "The caster summons a group of Lionesses to serve them. In Ur the Lioness is the symbol of the Annunaki and it is said they are sometimes accompanied into battle by these proud hunters. As a result these creatures are sacred to the people of Ur and sometimes accompany them on their march to war."
 #researchlevel 0
 #path 1 9
 #pathlevel 1 1
-#fatiguecost 200
-#nreff 2
+#fatiguecost 300
+#nreff 504
 #damage 7436 -- Sacred Lioness
 #restricted 19 -- Ur
 #restricted 66  -- Uruk
@@ -116417,7 +116476,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 9
 #pathlevel 1 1
 #fatiguecost 800
-#nreff 1008
+#nreff 1010 -- 12+
 #damage 7436 -- Sacred Lioness
 #restricted 19 -- Ur
 #restricted 66  -- Uruk
@@ -116481,6 +116540,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Guardian of the Cedar Forest"
 #descr "The caster convinces one of the Humbaba, ancient defenders of the Cedar forests, to serve them. Humbaba are large and magically powerful, with the claws and face of a lion and the horns of a wild bull. Whilst in a forest they are surrounded by a protective aura that keeps them from harm."
 #researchlevel 6
+#path 0 6
 #pathlevel 0 3
 #fatiguecost 1500
 #onlygeosrc 128
@@ -116497,7 +116557,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 2
 #nreff 504
 #damage 7694 -- Urmalu
-#fatiguecost 1000
+#fatiguecost 800
 #restricted 19 -- Ur
 #restricted 66  -- Uruk
 #end
@@ -116547,7 +116607,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 1 2
 #nreff 2006
 #damage 7695 -- Armored Urmalu
-#fatiguecost 4000
+#fatiguecost 3000
 #nextspell 2941
 #restricted 66  -- Uruk
 #end
@@ -116618,7 +116678,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 1097 -- Golem Construction
 #name "Awaken God-Statue"
 #descr "In Ur the presence of the Gods is symbolized by statues erected around the great city. Once constructed, these idols are consecrated through special nocturnal rituals where they are given life so can see and eat. With this spell a sacrificial meal is set out and many animals are sacrificed. If the deity approves it will accept the image and agree to inhabit it, causing it to come to life. These God-Statues will march with the people of Ur to war in times of great need.  The statue will be very difficult to destroy."
-#researchlevel 9
+#researchlevel 8
 #path 0 3
 #path 1 6
 #pathlevel 0 4
@@ -116653,7 +116713,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 1
 #path 1 4
 #pathlevel 1 1
-#nreff 1004
+#fatiguecost 700
+#nreff 1004 -- 5+
 #damage 7707 -- Girtablulu
 #restricted 66  -- Uruk
 #end
@@ -116667,7 +116728,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 4
 #effect 10093
 #nreff 1
-#fatiguecost 3000
+#fatiguecost 2000
 #damage 7295 -- Musmahhu
 #onlygeosrc 8388624  -- Mountain & Highland
 #restricted 19 -- Ur
@@ -118242,6 +118303,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #fatiguecost 1500
 #spec 8388608
 #restricted 127 -- LA R'lyeh
+#restricted 89 -- MA R'lyeh
 #end
 
 #selectspell 3055
@@ -133652,7 +133714,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 958 -- Herd of Buffaloes
-#nreff 1005
+#nreff 1008 -- 10+
 #end
 
 #selectspell 960 -- Summon Sea Lions
