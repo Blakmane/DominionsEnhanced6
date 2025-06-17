@@ -97243,6 +97243,30 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 
+#newsite 2487
+#clear
+#name "LA Andramania Summons"
+#rarity 5
+#level 0
+#path 4
+#look 3
+#homemon 628
+#homemon 1140
+#homemon 2398
+#homemon 3009
+#end
+
+#newsite 2488
+#clear
+#name "LA Andramania Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 0
+#homecom 
+#end
+
+
 
 -- END OF NEW SITES
 
@@ -103180,7 +103204,25 @@ Dominion: Causes dreamless slumber, greatly reducing tax income. Vines reanimate
 #addgod 8338 -- Burning Bush
 
 #futuresite "LA Piconye Summons"
---#futuresite "LA Piconye Heroes"
+#futuresite "LA Piconye Heroes"
+#end
+
+#selectnation 121 -- LA Andramania
+#uwbuild 1
+#delgod 8347 -- Drake Breeder
+#delgod 8307 -- Stone Magus
+#delgod 8509 -- Great Sage
+#delgod 8510 -- Crone
+#delgod 8511 -- Master Enchanter
+#delgod 8512 -- Arch Mage
+#delgod 8513 -- Great Enchantress
+
+#addgod 8366 -- Icon
+#addgod 8342 -- Elohim
+#addgod 8338 -- Burning Bush
+
+#futuresite "LA Andramania Summons"
+#futuresite "LA Andramania Heroes"
 #end
 
 #selectnation 65 -- MA Na'Ba
