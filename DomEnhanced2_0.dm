@@ -7874,26 +7874,20 @@
 #end
 
 #newmonster 6656
-#copystats 939  -- Barbarian Hvy Horseman
+#copystats 930  -- Khan
 #cleararmor
 #name "Kheshig"
 #spr1 "goldenhorde/kheshig.tga"
 #spr2 "goldenhorde/kheshig2.tga"
+#unmountedspr1 "goldenhorde/un_kheshig.tga"
+#unmountedspr2 "goldenhorde/un_kheshig2.tga"
 #descr "The Kheshig are the elite of Tartary. Armed with bows and lances, they are sworn to protect the Khans at all costs. Members of the Kheshig outrank almost any other officers in the Empire. They are renowned for their hardiness and can travel for a full month living only on the fermented milk and blood of their sturdy steeds. Kheshig can only be recruited in a province containing a Khan."
-#gcost 30
-#rcost 5
-#rpcost 30
-#hp 14
-#str 12
-#att 13
-#def 13
-#mor 13
-#mapmove 24
-#ap 20
-#prec 10
-#enc 5
-#bodyguard 4
+--#rpcost 30
+#gcost 25
+#rcost 1
+#enc 4
 #neednoteat
+#bodyguard 4
 #monpresentrec -1007  -- Khans
 #prophetshape 6657 -- Khan
 #armor 12  -- Scale Mail
@@ -32203,6 +32197,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #copystats 930  -- Khan
 #spr1 "magicenhanced/eekheshig.tga"
 #spr2 "magicenhanced/eekheshig2.tga"
+#unmountedspr1 "magicenhanced/un_eekheshig.tga"
+#unmountedspr2 "magicenhanced/un_eekheshig2.tga"
 #name "Kheshig"
 #descr "The Kheshig are the elite barbarian cavalry of T'ien Ch'i. Armed with bows and lances, they are sworn to protect the Great Khan at all costs. Members of the Kheshig outrank almost any other officers in the Tien Chi Empire. They are renowned for their hardiness and can travel for a full month living only on the fermented milk and blood of their sturdy steeds."
 #gcost 25
