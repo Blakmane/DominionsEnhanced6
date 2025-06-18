@@ -45372,9 +45372,9 @@ While in the form of an old man, all paths are increased and allows the use of N
 #startage 40
 #maxage 60
 #incunrest -50
-#magicskill 0 2
 #magicskill 3 2
 #magicskill 4 2
+#magicskill 7 2
 #magicskill 9 3
 #end
 
@@ -97262,6 +97262,66 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 
 #end
 
+#newsite 2489
+#clear
+#name "LA T'ien Ch'i Summons"
+#rarity 5
+#level 0
+#path 5
+#look 4
+#homemon 3009 -- buffalo
+#homemon 1140 -- tiger
+#homemon 8022 -- dire tiger
+#homemon 1338 -- cel hound
+#homemon 903 -- cel servant
+#homemon 902 -- cel Soldier
+#homemon 926 -- heavenly fires
+#homemon 904 -- heavenly rivers
+#homemon 2134 -- terra sold
+#homemon 7728 -- terra horse
+#homemon 7729 -- terra chariot
+#homecom 7772 -- terra general
+#homemon 1363 -- anc spirit
+#homecom 7531 -- anc rider
+#homecom 6528 -- cart
+#end
+
+#newsite 2490
+#clear
+#name "LA T'ien Ch'i Summons Continued"
+#rarity 5
+#level 0
+#path 5
+#look 4
+#homecom 7465 -- female shishi
+#homecom 7466 -- male shishi
+#homecom 7450 -- shije xian
+#homecom 7452 -- tian xian
+#homecom 7306 -- divine general
+#homecom 7227 -- carp
+#homecom 7350 -- heaven shard
+#homemon 7304 -- king of ghosts
+#homemon 7282 -- west tiger
+#homemon 7283 -- east dragon
+#homemon 7284 -- south bird
+#homemon 7285 -- north turtle
+#end
+
+#newsite 2491
+#clear
+#name "LA T'ien Ch'i Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 5
+#homecom 942
+#homecom 943
+#homecom 944
+#homecom 8234
+#homecom 8235
+#homecom 8236
+#end
+
 
 
 -- END OF NEW SITES
@@ -103761,10 +103821,12 @@ Bless bonuses: Poison Resistance +10"
 #end
 
 #selectnation 109 -- T'ien C'hi
-#hero1 943  -- Immortal
-#hero2 8234 -- Kubadei
-#hero3 8235 -- Phagpa
-#hero4 8236 -- Panlong
+#hero1 942  -- Immortal
+#hero2 943  -- Immortal
+#hero3 944  -- Master
+#hero4 8234 -- Kubadei
+#hero5 8235 -- Phagpa
+#hero6 8236 -- Panlong
 #uwbuild 1
 #addgod 8474 -- Ancestral Barrow
 #addgod 8321 -- Divine Sage Empress
@@ -103784,8 +103846,16 @@ Bless bonuses: Poison Resistance +10"
 #addgod 8334 -- Terracotta Emperor
 #cheapgod20 8474 -- Ancestral Barrow
 #cheapgod20 8332 -- Kirin
+
 #addrecunit 7678 -- Kheshig
-#addforeignunit 7678 -- Kheshig
+--#addforeignunit 7678 -- Kheshig
+#farmrec 7678 -- Kheshig
+#wasterec 7678 -- Kheshig
+#plainrec 7678 -- Kheshig
+
+#futuresite "LA T'ien Ch'i Summons"
+#futuresite "LA T'ien Ch'i Summons Continued"
+#futuresite "LA T'ien Ch'i Heroes"
 #end
 
 #selectnation 88
