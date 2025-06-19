@@ -4107,6 +4107,15 @@
 #magicarmor
 #end
 
+#newarmor 563 -- Spectral Barding
+#copyarmor 251 -- leather barding
+#name "Spectral Barding"
+#type 9
+#protparts 9 9
+#enc 0
+#magicarmor
+#end
+
 
 
 -- END OF NEW ARMORS
@@ -4172,7 +4181,7 @@
 #end
 
 #selectarmor 252 -- Light Scale Barding
-#protparts 9 12 -- vanilla  10
+#protparts 12 12 -- vanilla  10
 #protinspector 12
 #enc 0 -- vanilla 1
 #end
@@ -8347,6 +8356,8 @@
 #ap 20
 #prec 10
 #horsetattoo 3
+#mr 13
+#mor 15
 #superiorleader
 #inspirational 1
 #magicskill 9 3
@@ -29183,16 +29194,21 @@ While in the form of an old man, all paths are increased and allows the use of N
 #clearweapons
 #spr1 "magicenhanced/eearider.tga"
 #spr2 "magicenhanced/eearider2.tga"
+#unmountedspr1 "magicenhanced/un_eearider.tga"
+#unmountedspr2 "magicenhanced/un_eearider2.tga"
 #name "Ancestral Rider"
 #descr "This is the spirit of an Ancestor Warrior returned to serve the living once more. The spectral warriors fight with superhuman ability and their bows fire howling arrows guided by spirits. They are ethereal and difficult to harm with mundane weapons. As spirits they are unaffected by cold or poison and can enter the sea without hindrance."
 #gcost 0
+#mountmnr 7532
+#skilledrider 5
 #undead
 #ethereal
+#spiritform
 #neednoteat
 #amphibian
 #att 12
-#def 12
-#str 10
+#def 13
+#str 11
 #enc 0
 #coldres 15
 #poisonres 25
@@ -29200,7 +29216,34 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 4  -- Lance
 #weapon 10  -- Falchion
 #weapon 439  -- Howling Bow
+#armor 544  -- Spectral Scale
+#armor 549  -- Spectral Helm
 #armor 156  -- Spectral Shield
+#end
+
+#newmonster 7532
+#copystats 3580  -- sacred cata steppe horse
+#cleararmor
+#clearweapons
+#spr1 "magicenhanced/eearidermount.tga"
+#spr2 "magicenhanced/eearidermount2.tga"
+#name "Spirit Horse"
+#descr "This is the spirit of a horse returned to serve the living once more. They are ethereal and difficult to harm with mundane weapons. As spirits they are unaffected by cold or poison and can enter the sea without hindrance."
+#drawsize 0
+#gcost 0
+#undead
+#ethereal
+#spiritform
+#neednoteat
+#amphibian
+#att 12
+#def 13
+#str 10
+#enc 0
+#coldres 15
+#poisonres 25
+#armor 563 -- spectral barding
+#weapon 55
 #end
 
 #newmonster 7533
@@ -45344,14 +45387,18 @@ While in the form of an old man, all paths are increased and allows the use of N
 #clearmagic
 #spr1 "worthy_heroes/kublai.tga"
 #spr2 "worthy_heroes/kublai2.tga"
+#unmountedspr1 "worthy_heroes/un_kublai.tga"
+#unmountedspr2 "worthy_heroes/un_kublai2.tga"
 #name "Khagan"
 #descr "Kubadei is the current Khagan, the Khan of Khans, and is the Grandson of the original Barbarian King that lead the campaign that conquered T'ien Ch'i. He is the ruler of T'ien Ch'i and the surrounding lands and commands the armies of the empire. Kubadei is a cunning tactician and has masterminded many successful campaigns. He employs siege engineers to build war machines that can devastate any defence. He is currently planning a great invasion of the lands of Jomon and has had his shipwrights constructing a great fleet in preparation. Kubadei is always protected by an honour guard of Kheshig warriors. He is a devout follower of the Awakening God and leads ceremonies in the capital."
 #fixedname "Kubadei"
+#mountmnr 3580
+#skilledrider 6
 #gcost 0
 #superiorleader
 #inspirational 1
 #siegebonus 50
-#sailing 999 5
+#sailing 999 6
 #magicskill 9 3
 #startage 40
 #maxage 60
@@ -57420,6 +57467,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 5 -- 3 -> 5
 #end
 
+
 #selectmonster 8232 -- Last Conquistador
 #skilledrider 5 -- 2 -> 5
 #end
@@ -57537,7 +57585,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 7136 -- Ghul Cavalry
-#skilledrider 3 --  -> 3
+#skilledrider 3 -- 0 -> 3
 #end
 
 #selectmonster 8095 -- Noayd
@@ -57560,6 +57608,14 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 3 -- 1 -> 3
 #end
 
+
+
+
+
+#selectmonster 8345 -- Markata Master
+#skilledrider 1 -- 0 -> 1
+#end
+
 #selectmonster 6722 -- Stratiot
 #skilledrider 3 -- 1 -> 3
 #end
@@ -57580,10 +57636,30 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 7 -- 4 -> 7
 #end
 
+#selectmonster 7678 -- Kheshig
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 7677 -- Great Khan
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 6656 -- Kheshig
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 7531 -- Ancestral Rider
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 8234 -- Khagan
+#skilledrider 6 -- 4 -> 6
+#end
 
 
 
 -- Mount Skilled Rider Changes:
+
 
 #selectmonster 2924 -- Queen of the North
 #skilledrider 7 -- 5 -> 7
@@ -57645,16 +57721,8 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 7 -- 5 -> 7
 #end
 
-#selectmonster 3312 -- Feminie Queen
-#skilledrider 6 --  -> 6
-#end
-
 #selectmonster 1196 -- Hog Knight
 #skilledrider 7 --  -> 7
-#end
-
-#selectmonster 182 -- Wraith Lord
-#skilledrider 6 --  -> 6
 #end
 
 #selectmonster 1507 -- Dis
@@ -57671,6 +57739,14 @@ Cannot be recruited until Break the Deadlock is cast."
 
 #selectmonster 847 -- Hangadrott
 #skilledrider 7 -- 5 -> 7
+#end
+
+#selectmonster 3312 -- Feminie Queen
+#skilledrider 6 --  -> 6
+#end
+
+#selectmonster 182 -- Wraith Lord
+#skilledrider 6 --  -> 6
 #end
 
 #selectmonster 378 -- Hero
@@ -57789,6 +57865,22 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 6 -- 4 -> 6
 #end
 
+#selectmonster 262 -- Van
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 1503 -- Helhirding
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 1504 -- Mounted Hirdman
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 930 -- Khan
+#skilledrider 6 -- 4 -> 6
+#end
+
 #selectmonster 3812 -- Lady Commander
 #skilledrider 5 -- 3 -> 5
 #end
@@ -57815,10 +57907,6 @@ Cannot be recruited until Break the Deadlock is cast."
 
 #selectmonster 3792 -- Bird Knight
 #skilledrider 5 -- 2 -> 5
-#end
-
-#selectmonster 930 -- Khan
-#skilledrider 5 -- 4 -> 5
 #end
 
 #selectmonster 1059 -- Knight of the Deeps
@@ -57893,18 +57981,6 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 5 -- 2 -> 5
 #end
 
-#selectmonster 262 -- Van
-#skilledrider 6 -- 3 -> 6
-#end
-
-#selectmonster 1503 -- Helhirding
-#skilledrider 6 -- 3 -> 6
-#end
-
-#selectmonster 1504 -- Mounted Hirdman
-#skilledrider 6 -- 3 -> 6
-#end
-
 #selectmonster 183 -- Wraith King
 #skilledrider 5 -- 3 -> 5
 #end
@@ -57955,6 +58031,22 @@ Cannot be recruited until Break the Deadlock is cast."
 
 #selectmonster 1174 -- Warrior Priestess
 #skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 391 -- Grey Lord
+#skilledrider 5 --  -> 5
+#end
+
+#selectmonster 390 -- Grey Knight
+#skilledrider 5 --  -> 5
+#end
+
+#selectmonster 1577 -- Ancestor Vessel
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 184 -- Knight of the Unholy Sepulchre
+#skilledrider 5 --  -> 5
 #end
 
 #selectmonster 4049 -- Cambion Count
@@ -58017,10 +58109,6 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 4 -- 2 -> 4
 #end
 
-#selectmonster 1577 -- Ancestor Vessel
-#skilledrider 4 -- 3 -> 4
-#end
-
 #selectmonster 1141 -- Tiger Rider
 #skilledrider 4 -- 2 -> 4
 #end
@@ -58067,10 +58155,6 @@ Cannot be recruited until Break the Deadlock is cast."
 
 #selectmonster 91 -- Heavy Cavalry
 #skilledrider 4 -- 1 -> 4
-#end
-
-#selectmonster 184 -- Knight of the Unholy Sepulchre
-#skilledrider 5 --  -> 5
 #end
 
 #selectmonster 939 -- Barbarian Heavy Horseman
@@ -58221,12 +58305,8 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 4 --  -> 4
 #end
 
-#selectmonster 391 -- Grey Lord
-#skilledrider 5 --  -> 5
-#end
-
-#selectmonster 390 -- Grey Knight
-#skilledrider 5 --  -> 5
+#selectmonster 1108 -- Equite of the Sacred Shroud
+#skilledrider 4 -- 1 -> 4
 #end
 
 #selectmonster 19 -- Heavy Cavalry
@@ -58235,10 +58315,6 @@ Cannot be recruited until Break the Deadlock is cast."
 
 #selectmonster 2260 -- Berytian Lancer
 #skilledrider 3 --  -> 3
-#end
-
-#selectmonster 1108 -- Equite of the Sacred Shroud
-#skilledrider 4 -- 1 -> 4
 #end
 
 #selectmonster 137 -- Horse Tribe Cavalry
@@ -58464,7 +58540,6 @@ Cannot be recruited until Break the Deadlock is cast."
 #selectmonster 1450 -- Cave Knight
 #skilledrider 1 --  -> 1
 #end
-
 
 
 -- Mount MR changes:
@@ -78588,9 +78663,58 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #descr "The awakening of the Vengeful Woods has altered the very essence of Asphodel's inhabitants. No longer are white calves born in the Sacred Groves. Instead, black centaurs are born, mirroring the dark mood of the forests. These black calves are trained as sacred warriors and emissaries of the wild. The presence of a Black Centaur will spread the sleeping sickness of Asphodel, and nearby enemies may fall into a dreamless slumber. In lands free of civilization they will grow stronger, but they will weaken where men toil."
 #end
 
+#selectmonster 788 -- tc horseman
+#spr1 "vanilla/tchorse1.tga"
+#spr2 "vanilla/tchorse2.tga"
+#drawsize 0
+#end
+
+#selectmonster 789 -- tc heavy horseman
+#spr1 "vanilla/tcheavyhorse1.tga"
+#spr2 "vanilla/tcheavyhorse2.tga"
+#drawsize 0
+#end
+
+#selectmonster 790 -- tc imperial horseman
+#spr1 "vanilla/tcimphorse1.tga"
+#spr2 "vanilla/tcimphorse2.tga"
+#drawsize 0
+#end
+
+#selectmonster 791 -- tc red guard
+#end
+
+#selectmonster 792 -- tc general
+#spr1 "vanilla/tcgeneral1.tga"
+#spr2 "vanilla/tcgeneral2.tga"
+#drawsize 0
+#end
+
 #selectmonster 793  -- Prince General
 #gcost 350
 #magicskill 9 1
+#end
+
+#selectmonster 938 -- la tc barb horse
+#spr1 "vanilla/barbhorse1.tga"
+#spr2 "vanilla/barbhorse2.tga"
+#drawsize 0
+#end
+
+#selectmonster 939 -- la tc barb heavy horse
+#spr1 "vanilla/barbheavy1.tga"
+#spr2 "vanilla/barbheavy2.tga"
+#end
+
+#selectmonster 1577 -- la tc ancestor vessel
+#spr1 "vanilla/ancestorvessel1.tga"
+#spr2 "vanilla/ancestorvessel2.tga"
+#end
+
+#selectmonster 3979 -- la tc general
+#spr1 "vanilla/tcgeneral1.tga"
+#spr2 "vanilla/tcgeneral2.tga"
+#drawsize 0
 #end
 
 #selectmonster 803  -- Celestial Master MA
@@ -78883,6 +79007,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #magicskill 4 1  -- 1S
 #custommagic 1024 50  -- 50E
 #magicskill 9 1
+#incunrest -5
 #end
 
 #selectmonster 906  -- King of Earth
@@ -97275,8 +97400,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 1338 -- cel hound
 #homemon 903 -- cel servant
 #homemon 902 -- cel Soldier
-#homemon 926 -- heavenly fires
-#homemon 904 -- heavenly rivers
 #homemon 2134 -- terra sold
 #homemon 7728 -- terra horse
 #homemon 7729 -- terra chariot
@@ -97299,7 +97422,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7452 -- tian xian
 #homecom 7306 -- divine general
 #homecom 7227 -- carp
-#homecom 7350 -- heaven shard
+#homecom 7530 -- heaven shard
 #homemon 7304 -- king of ghosts
 #homemon 7282 -- west tiger
 #homemon 7283 -- east dragon
@@ -111146,8 +111269,8 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #pathlevel 0 2
 #effect 10001
 #damage 7531
-#nreff 1
-#fatiguecost 200
+#nreff 3
+#fatiguecost 500
 #restricted 109 -- LA Tien Chi
 #end
 
@@ -111160,8 +111283,8 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #pathlevel 0 3
 #effect 10001
 #damage 7531
-#nreff 1002
-#fatiguecost 900
+#nreff 1005 -- 8+
+#fatiguecost 1100
 #restricted 109 -- LA Tien Chi
 #end
 
@@ -111172,7 +111295,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #researchlevel 8
 #pathlevel 0 4
 #fatiguecost 1000
-#nreff 13
+#nreff 16
 #damage 7531 -- Ancestral Rider
 #farsumcom 7531 -- Ancestral Rider
 #restricted 109 -- LA Tien Chi
@@ -111183,10 +111306,12 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #name "Ancestral Host"
 #descr "The caster calls a host of Ancestral Barbarian Riders to turn the tide of battle. The horsemen will fight to defeat the enemies of the caster before returning to the spirit realm. The spectral warriors fight with superhuman ability and fire howling bows guided by spirits. They are ethereal and difficult to harm with mundane weapons."
 #path 0 5
+#pathlevel 0 3
 #damage 7531 -- Ancestral Rider
-#nreff 2002
+#nreff 2003 -- 10++
 #restricted 109 -- LA Tien Chi
 #sound 43  -- Raise Dead
+#nextspell 4154 -- Spirit Blessing
 #end
 
 #selectspell 2556
@@ -130544,15 +130669,15 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #copyspell 1149 -- Terracotta Army
 #name "Terracotta Legion"
 #descr "The caster opens the Tomb of the First Emperor in the capital city. Within are ranks of terracotta warriors, horsemen and even chariots that the caster will animate to serve in the battle for Ascension."
-#researchlevel 5
+#researchlevel 6
 #pathlevel 0 2
 #pathlevel 1 2
-#fatiguecost 2500
-#damage 7726 -- Terracotta Footman
-#nreff 20
+#fatiguecost 5000
+#damage 2134 -- soldier
+#nreff 4042 -- 50++++
 #spec 0
+#nextspell 4063
 #onlyatsite 51 -- MA Celestial City
-#nextspell 2538
 #restricted 69 -- MA TC
 #end
 
@@ -130560,15 +130685,15 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #copyspell 1149 -- Terracotta Army
 #name "Terracotta Legion"
 #descr "The caster opens the Tomb of the First Emperor in the capital city. Within are ranks of terracotta warriors, horsemen and even chariots that the caster will animate to serve in the battle for Ascension."
-#researchlevel 5
+#researchlevel 6
 #pathlevel 0 2
 #pathlevel 1 2
-#fatiguecost 2500
-#damage 7726 -- Terracotta Footman
-#nreff 20
+#fatiguecost 5000
+#damage 2134 -- soldier
+#nreff 4042 -- 50++++
 #spec 0
+#nextspell 4063
 #onlyatsite 52 -- LA Celestial City
-#nextspell 2538
 #restricted 109 -- LA TC
 #end
 
@@ -132341,6 +132466,17 @@ Applies the effects of Holy Avenger to the caster"
 #nextspell 3056
 #end
 
+#selectspell 4154
+#copyspell 200
+#name "Spirit Blessing"
+#descr "."
+#school -1
+#aoe 666
+#spec 281051144 -- UWok, friendly only, undead only, sacred only
+#damage 1 -- Bless
+#explspr -1
+#end
+
 
 
 -- END OF NEW SPELLS
@@ -133054,6 +133190,9 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 531 -- Celestial Hounds
 #path 0 4
 #path 1 1
+#nreff 3
+#fatiguecost 200
+#descr "This spell summons few hounds from the Celestial Sphere. They have the appearance of lion-maned dogs with huge staring eyes and flaming tails. They can run on the wind and are immune to lightning."
 #end
 
 #selectspell 533 -- Celestial Soldiers
@@ -133071,6 +133210,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 535 -- Wrath of the Ancestors
 #restricted 189
 #restricted 191 -- Tartary
+#nextspell 4154 -- Spirit Blessing
 #end
 
 #selectspell 536 -- cyclops tribe rename
@@ -134344,7 +134484,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1314 -- Gift of the Furies
-#aoe 1022 -- 25+
+#pathlevel 0 2
+#aoe 1023 -- 25+
 #end
 
 #selectspell 1281 -- Sleep
