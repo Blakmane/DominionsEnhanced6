@@ -27005,7 +27005,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #descr "The Edimmu are the ghosts of those Enkidu who were not buried properly. They are vengeful toward the living and might possess people if they do not respect the sacred laws. They are said to cause disease and inspire criminal behavior. Edimmu are completely incorporeal and can suck the life out of the living."
 #size 5
 #hp 30
-#incunrest 10
+#incunrest 2
+#armor 230 -- magic robes
 #nametype 151  -- Ur Male
 #end
 
@@ -51260,7 +51261,6 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #weapon "Wing Buff"
 #weapon 404  -- Beak
 #end
-
 
 
 --#newmonster 8684 -- LA C'tis Hierodule
@@ -78024,6 +78024,7 @@ Initiates of the Deep can be recruited in any land fort."
 
 #selectmonster 566  -- Ghost
 #assassin
+#armor 230 -- magic robes
 #end
 
 #selectmonster 578  -- Bog Beast
@@ -81265,11 +81266,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectmonster 2176  -- Enkki's Chosen
+#def 11
 #bodyguard 4
-#end
-
-#selectmonster 2185  -- Croc
-#twiceborn 7343 -- Size 2 Wight Beast
 #end
 
 #selectmonster 2186  -- Sacred Crocodile
@@ -92510,7 +92508,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #newsite 2152
 #name "Blessing of Fortune"  -- Substitute King
-#path 6 
+#path 6
+#look 6
 #level 0
 #rarity 5
 #decscale 4  -- +Luck in cap
@@ -97445,6 +97444,55 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8236
 #end
 
+#newsite 2492
+#name "EA Ur Summons"
+#level 0
+#rarity 5
+#path 6
+#look 4
+#homemon 3009 -- buffalo
+#homemon 7436 -- lioness
+#homemon 3068 -- kusari
+#homemon 7694 -- urma
+#homemon 7994 -- serpo
+#homemon 2962 -- s mush
+#homemon 7625 -- s basmu
+#homemon 3064 -- anzu
+#end
+
+#newsite 2493
+#name "EA Ur Summons Continued"
+#level 0
+#rarity 5
+#path 6
+#look 4
+#homecom 2071 -- lilot
+#homecom 7439 -- rabisu
+#homecom 7696 -- urma lord
+#homecom 1649 -- scorp man
+#homecom 3095 -- ugallu
+#homecom 7340 -- humb
+#homecom 2966 -- umu
+#homecom 7437 -- god statue
+#homecom 7344 -- anim god statue
+#homecom 7295 -- lion-snake
+#homecom 7710 -- kur
+#homecom 7642 -- anu
+#homecom 7593 -- sub king
+#end
+
+#newsite 2494
+#name "EA Ur Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 2
+#homecom 2432
+#homecom 2433
+#homecom 2965
+#homecom 8166
+#end
+
 
 
 -- END OF NEW SITES
@@ -97518,8 +97566,10 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #selectsite 151  -- The Swamps of Ur
 #homemon 2183  -- Reaver
+#homemon 2168 -- Hunter
 #homecom 2170  -- Head Hunter
 #homecom 2171  -- Bone Reader
+#homecom 2169 -- Hunter Chief
 #end
 
 #selectsite 164
@@ -102417,6 +102467,7 @@ Priests: Average"
 #futuresite "EA Hinnom Heroes"
 #end
 
+
 #selectnation 19 -- EA Ur
 #hero1 2432  -- Entu of the Moon
 #hero2 2433  -- Favored of Enki
@@ -102435,6 +102486,23 @@ Priests: Average"
 #startunitnbrs1 30
 #startunittype2 2163  -- Enkidu Archer
 #startunitnbrs2 10
+
+#swampfortrec 2183  -- Reaver
+#swampfortrec 2168 -- Hunter
+#swampfortcom 2170  -- Head Hunter
+#swampfortcom 2171  -- Bone Reader
+#swampfortcom 2169 -- Hunter Chief
+
+#swamprec 2183  -- Reaver
+#swamprec 2168 -- Hunter
+#swampcom 2170  -- Head Hunter
+#swampcom 2171  -- Bone Reader
+#swampcom 2169 -- Hunter Chief
+
+#futuresite "Blessing of Fortune"
+#futuresite "EA Ur Summons"
+#futuresite "EA Ur Summons Continued"
+#futuresite "EA Ur Heroes"
 #end
 
 #selectnation 29 -- EA Berytos
@@ -116793,9 +116861,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #selectspell 2936
 #copyspell 1037 -- Summon Ghosts
 #name "Summon Edimmu"
-#descr "The caster summons three of the spirits known as Edimmu. The Edimmu are the ghosts of those Enkidu who were not buried properly. They are vengeful toward the living and might possess people if they do not respect the sacred laws. They are said to cause disease and inspire criminal behavior. Edimmu are completely incorporeal and can suck the life out of the living."
-#fatiguecost 600
-#nreff 1001
+#descr "The caster summons a few of the spirits known as Edimmu. The Edimmu are the ghosts of those Enkidu who were not buried properly. They are vengeful toward the living and might possess people if they do not respect the sacred laws. They are said to cause disease and inspire criminal behavior. Edimmu are completely incorporeal and can suck the life out of the living."
+#fatiguecost 1000
+#nreff 505
 #damage 7438
 #restricted 19 -- Ur
 #end
@@ -116845,9 +116913,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 3
 #path 1 3
 #pathlevel 1 2
-#nreff 2006
+#nreff 2014 -- 20++
 #damage 7694 -- Urmalu
-#fatiguecost 2500
+#fatiguecost 3300
 #nextspell 2939
 #restricted 19 -- Ur
 #end
@@ -116881,7 +116949,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 1024 -- Awaken Sleeper
 #name "Guardian of the Underworld"
 #descr "The caster sacrifices lambs and bulls to gain the attention of a Gallu. Gallu are extremely powerful spirit beings who enforce the laws of the underworld. They are powerful in the magic of Air and Death and are have great priestly authority. Although not malign, Gallu are utterly ruthless and implacable in their duties."
-#researchlevel 9
+#researchlevel 8
 #path 0 5
 #pathlevel 0 4
 #fatiguecost 4500
@@ -154498,7 +154566,9 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_rare 15 -- 4 -> 15
 #end
 
-
+#selectevent 1438
+#req_monster 8900 -- hunter chief copy
+#end
 
 
 
