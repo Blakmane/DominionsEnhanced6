@@ -51262,6 +51262,55 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #weapon 404  -- Beak
 #end
 
+#newmonster 8898 -- Firestarter
+#copystats 3912 -- Fay folk
+#spr1 "magicenhanced/blue_firestarter1.tga"
+#spr2 "magicenhanced/blue_firestarter2.tga"
+#name "Firestarter"
+#descr "."
+#end
+
+#newmonster 9001 -- Eidolon
+#copystats 40 -- heavy infantry
+#spr1 "magicenhanced/blue_eidolon1.tga"
+#spr2 "magicenhanced/blue_eidolon2.tga"
+#name "Eidolon"
+#descr "The Eidolon is a being of the feywild cloaked in mist and glamour. Their glamour makes them take the appearance of someone passingly familiar to the onlooker, often mistaken for ancient heroes, the long lost, or dearly departed, but can always be identified by the wooden mask covering their face. Eidolons fight with illusions and attackers may have difficulty discerning friend from foe in their presence."
+#end
+
+#newmonster 9002 -- Eidolon Lord
+#copystats 40 -- heavy infantry
+#spr1 "magicenhanced/blue_eidolonlord1.tga"
+#spr2 "magicenhanced/blue_eidolonlord2.tga"
+#name "Eidolon Lord"
+#descr "The Eidolon is a being of the feywild cloaked in mist and glamour. Their glamour makes them take the appearance of someone passingly familiar to the onlooker, often mistaken for ancient heroes, the long lost, or dearly departed, but can always be identified by the wooden mask covering their face. Eidolons fight with illusions and attackers may have difficulty discerning friend from foe in their presence."
+#end
+
+#newmonster 9003 -- Eidolon Mount
+#copystats 40 -- heavy infantry
+#spr1 "magicenhanced/blue_eidolonmount1.tga"
+#spr2 "magicenhanced/blue_eidolonmount2.tga"
+#name "Eidolon Horse"
+#descr "The Eidolon is a being of the feywild cloaked in mist and glamour. Their glamour makes them take the appearance of someone passingly familiar to the onlooker, often mistaken for ancient heroes, the long lost, or dearly departed, but can always be identified by the wooden mask covering their face. Eidolons fight with illusions and attackers may have difficulty discerning friend from foe in their presence."
+#end
+
+#newmonster 9004 -- Lantern Bearer
+#copystats 40 -- heavy infantry
+#spr1 "magicenhanced/blue_lanternbearer1.tga"
+#spr2 "magicenhanced/blue_lanternbearer2.tga"
+#name "Lanternbearer"
+#fixedname "Irrwisch"
+#descr "The Eidolon is a being of the feywild cloaked in mist and glamour. Their glamour makes them take the appearance of someone passingly familiar to the onlooker, often mistaken for ancient heroes, the long lost, or dearly departed, but can always be identified by the wooden mask covering their face. Eidolons fight with illusions and attackers may have difficulty discerning friend from foe in their presence."
+#end
+
+#newmonster 9005 -- Lantern Bearer Mount
+#copystats 40 -- heavy infantry
+#spr1 "magicenhanced/blue_lanternbearermount1.tga"
+#spr2 "magicenhanced/blue_lanternbearermount2.tga"
+#name "Eidolon Horse"
+#descr "The Eidolon is a being of the feywild cloaked in mist and glamour. Their glamour makes them take the appearance of someone passingly familiar to the onlooker, often mistaken for ancient heroes, the long lost, or dearly departed, but can always be identified by the wooden mask covering their face. Eidolons fight with illusions and attackers may have difficulty discerning friend from foe in their presence."
+#end
+
 
 --#newmonster 8684 -- LA C'tis Hierodule
 --#copystats 510
@@ -97493,6 +97542,20 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8166
 #end
 
+#newsite 2495
+#name "testestest"
+#level 0
+#rarity 5
+#path 9
+#look 2
+#homecom 8898
+#homecom 9001
+#homecom 9002
+#homecom 9003
+#homecom 9004
+#homecom 9005
+#end
+
 
 
 -- END OF NEW SITES
@@ -102499,6 +102562,7 @@ Priests: Average"
 #swampcom 2171  -- Bone Reader
 #swampcom 2169 -- Hunter Chief
 
+#futuresite "testestest"
 #futuresite "Blessing of Fortune"
 #futuresite "EA Ur Summons"
 #futuresite "EA Ur Summons Continued"
@@ -134970,6 +135034,13 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1371 -- Astral Disruption -- Neat spell but I *DO NOT* want to deal with the repercussions of some local enchantments, especially national ones, being dispellable
 #school -1
+#end
+
+#selectspell 1377 -- Legion's Demise
+#effect 133 -- one turn enchantment
+#casttime 200
+#fatiguecost 100
+#pathlevel 0 6
 #end
 
 #selectspell 1386 -- Bind Fiery Imps
