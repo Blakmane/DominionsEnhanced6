@@ -134002,8 +134002,8 @@ Applies the effects of Holy Avenger to the caster"
 #researchlevel 4
 #path 0 7 -- Glamour
 #pathlevel 0 2
-#path 0 5 -- Death
-#pathlevel 0 1
+#path 1 5 -- Death
+#pathlevel 1 1
 #nreff 1
 #range 10005 -- 25+10
 --#aoe 1004
