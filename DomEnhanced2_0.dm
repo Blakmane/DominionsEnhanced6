@@ -3346,6 +3346,222 @@
 #friendlyimmune
 #end
 
+
+#newweapon 1853 -- Shadow Bite
+#copyweapon 281 -- Spectral Sword
+#name "Shadowed Bite"
+#dmg 2
+#att 0
+#def -1
+#len -1
+#sound 18 -- Life Drain
+#magic
+#bonus
+#secondaryeffect 285 -- Additional Weakness
+#end
+
+#newweapon 1854 -- Shadow Gore
+#copyweapon 281 -- Spectral Sword
+#name "Shadowed Gore"
+#dmg 0
+#att -1
+#def 0
+#len 1
+#sound 18 -- Life Drain
+#magic
+#bonus
+#secondaryeffect 285 -- Additional Weakness
+#end
+
+#newweapon 1855 -- Shadow Claw
+#copyweapon 281 -- Spectral Sword
+#name "Shadowed Claw"
+#dmg 0
+#att 0
+#def 0
+#len -1
+#sound 18 -- Life Drain
+#magic
+#bonus
+#secondaryeffect 285 -- Additional Weakness
+#end
+
+#newweapon 1856 -- Shadow Poison
+#copyweapon 52 -- Death Poison
+#name "Shadowed Poison"
+#dmg 25
+#secondaryeffect 285 -- Additional Weakness
+#end
+
+#newweapon 1857 -- Shadow Fangs
+#copyweapon 280 -- Spectral Spear
+#name "Shadowed Fangs"
+#dmg -2
+#att 0
+#def -1
+#len -1
+#sound 18 -- Life Drain
+#magic
+#bonus
+#secondaryeffect 1856 -- Shadow Poison
+#end
+
+#newweapon 1858 -- Shadow Bow
+#copyweapon 647 -- Spectral Bow
+#name "Shadowed Bow"
+#bonus
+#secondaryeffect 285 -- Additional Weakness
+#end
+
+#newweapon 1859 -- Shadow Sword
+#copyweapon 281 -- Spectral Sword
+#name "Shadowed Broadsword"
+#dmg 5
+#att 1
+#def 1
+#len 1
+#sound 18 -- Life Drain
+#magic
+#bonus
+#secondaryeffect 285 -- Additional Weakness
+#end
+
+#newweapon 1860 -- Shadow Spear
+#copyweapon 280 -- Spectral Spear
+#name "Shadowed Spear"
+#dmg 3
+#att 0
+#def 0
+#len 3
+#sound 18 -- Life Drain
+#magic
+#bonus
+#secondaryeffect 285 -- Additional Weakness
+#end
+
+#newweapon 1861 -- Shadow Great Sword
+#copyweapon 281 -- Spectral Sword
+#name "Shadowed Greatsword"
+#dmg 8
+#att 1
+#def 2
+#len 2
+--#twohanded
+#sound 18 -- Life Drain
+#magic
+#bonus
+#secondaryeffect 285 -- Additional Weakness
+#end
+
+#newweapon 1862 -- Shadow Axe
+#copyweapon 281 -- Spectral Sword
+#name "Shadowed Axe"
+#dmg 5
+#att 1
+#def 0
+#len 1
+#sound 18 -- Life Drain
+#magic
+#bonus
+#secondaryeffect 285 -- Additional Weakness
+#end
+
+#newweapon 1863 -- Shadow Crush (Shadow Elemental weapon)
+#copyweapon 90 -- Crush
+#name "Shadow Crush"
+#dmg 0
+#att 0
+#def 0
+#len 0
+#sound 18 -- Life Drain
+#magic
+#bonus
+#secondaryeffectalways 396 -- Leeching Darkness
+#end
+
+#newweapon 1864 -- Shadow Greataxe, craftable item
+#copyweapon 728 -- Double Axe
+#name "Shadow Greataxe"
+#dmg 13
+#att 3
+#def 1
+#len 2
+#magic
+#secondaryeffectalways 396 -- Leeching Darkness
+#end
+
+#newweapon 1865 -- Shadow Club
+#copyweapon 482 -- Spectral Club
+#name "Shadowed Club"
+#dmg 7
+#att 0
+#def 1
+#len 2
+--#twohanded
+#magic
+#bonus
+#secondaryeffect 285 -- Additional Weakness
+#end
+
+#newweapon 1866 -- Shadow Maul
+#copyweapon 482 -- Spectral Club
+#name "Shadowed Maul"
+#dmg 9
+#att 0
+#def -1
+#len 2
+--#twohanded
+#magic
+#bonus
+#secondaryeffect 285 -- Additional Weakness
+#end
+
+#newweapon 1867 -- Shadow Great Axe
+#copyweapon 482 -- Spectral Club
+#name "Shadowed Battleaxe"
+#dmg 9
+#att 1
+#def 0
+#len 2
+--#twohanded
+#magic
+#bonus
+#secondaryeffect 285 -- Additional Weakness
+#end
+
+#newweapon 1868 -- Phantom weapon
+#copyweapon 280 -- Spectral Spear
+#name "Dark Touch"
+#dmg 0
+#att 0
+#def 0
+#len 0
+#sound 18 -- Life Drain
+#armornegating
+#magic
+#secondaryeffect 285 -- Additional Weakness
+#end
+
+#newweapon 1869 -- Ice Blade bonus
+#copyweapon 37
+#bonus
+#end
+
+#newweapon 1870 -- Plague Scythe bonus
+#name "Plague Scythe"
+#dmg 10
+#att 1
+#def -2
+#len 3
+#slash
+#magic
+#secondaryeffect 143 -- disease
+#bonus
+#end
+
+
+
+
 -- END OF NEW WEAPONS
 
 #selectweapon 27  -- 2h Boulder
@@ -34480,11 +34696,10 @@ While in the form of an old man, all paths are increased and allows the use of N
 #sleepaura 8
 #transformation 0
 #darkvision 100
-#magicskill 4 2 -- S
 #magicskill 6 1 -- N
 #magicskill 7 2 -- G
 #magicskill 5 1 -- D
---#custommagic 30720 100 -- 100% SDNG
+#custommagic 29696 100 -- 100% EDNG
 #mountainsurvival
 #magicbeing
 #goodmagicleader
@@ -34504,7 +34719,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr1 "magicenhanced/eelengspider.tga"
 #spr2 "magicenhanced/eelengspider2.tga"
 #name "Spinner in Darkness"
-#descr "Atlach-Nacha, the Spinner in Darkness is a gigantic spider that resides in the realm of dreams. There it spins a great web, forming a bridge between the realm of dreams and the waking world. It is said that when the web is complete, the end of the world will come. The creature kills its victims by puncturing them with its great fangs and sucking out their juices. It is highly magical and is innately skilled in the magic of dreams and death. Creatures in the presence of Atlach-Nacha will find themselves moving as if in a dream and may fall into a restless sleep. It is worshiped by the Leng Spiders and certain strange cults that bring sacrifices to it in the dream realm. Atlach-Nacha can weave fate aswell as webs and can predict future events."
+#descr "Atlach-Nacha, the Spinner in Darkness is a gigantic spider that resides in the realm of dreams. There it spins a great web, forming a bridge between the realm of dreams and the waking world. It is said that when the web is complete, the end of the world will come. The creature kills its victims by puncturing them with its great fangs and sucking out their juices. It is highly magical and is innately skilled in the magic of dreams and nightmares. Creatures in the presence of Atlach-Nacha will find themselves moving as if in a dream and may fall into a restless sleep. It is worshiped by the Leng Spiders and certain strange cults that bring sacrifices to it in the dream realm. Atlach-Nacha can weave fate aswell as webs and can predict future events."
 #quadruped
 #firstshape 0
 #fixedname "Atlach-Nacha"
@@ -34522,7 +34737,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #transformation 0
 #darkvision 100
 #magicskill 3 2 -- E
-#magicskill 4 3 -- S
 #magicskill 5 3 -- D
 #magicskill 7 4 -- G
 #mountainsurvival
@@ -49736,6 +49950,8 @@ Dragon Priests can be recruited in any land fort."
 #maxage 20
 #end
 
+
+
 #newmonster 6599
 #name "Turquoise Archer"
 #nametype 182
@@ -49879,7 +50095,7 @@ Dragon Priests can be recruited in any land fort."
 #mor 13 -- +1
 #holy
 #skilledrider 6
-#montag  1065
+#montag 1085
 #xpgain 35 -- +35%
 #mountmnr 3579
 #mountedinspector
@@ -49897,7 +50113,7 @@ Dragon Priests can be recruited in any land fort."
 #mor 13 -- +1
 #holy
 #skilledrider 6
-#montag  1070
+#montag 1090
 #xpgain 35 -- +35%
 #mountmnr 3579
 #mountedinspector
@@ -49915,7 +50131,7 @@ Dragon Priests can be recruited in any land fort."
 #mor 13 -- +1
 #holy
 #skilledrider 6
-#montag  1075
+#montag 1095
 #xpgain 35 -- +35%
 #mountmnr 3579
 #mountedinspector
@@ -49934,7 +50150,7 @@ Dragon Priests can be recruited in any land fort."
 #holy
 #skilledrider 6
 #invulnerable 10
-#montag  1080
+#montag 1100
 #xpgain 35 -- +35%
 #mountmnr 3579
 #mountedinspector
@@ -49950,8 +50166,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/bowturquoise_2x1.tga"
 #unmountedspr1 "nihuala/un_bowturquoise.tga"
 #unmountedspr1 "nihuala/un_bowturquoise2.tga"
-#xpshapemon -1066
-#montag  1065
+#xpshapemon -1086
+#montag 1085
 #xpshape 50
 #montagweight 24 -- 15xp, 1/25
 #end
@@ -49962,8 +50178,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/bowturquoise_2x2.tga"
 #unmountedspr1 "nihuala/un_bowturquoise.tga"
 #unmountedspr1 "nihuala/un_bowturquoise2.tga"
-#xpshapemon -1067
-#montag  1066
+#xpshapemon -1087
+#montag 1086
 #xpshape 100
 #montagweight 15 -- 50xp, 1/16
 #skilledrider 5
@@ -49974,7 +50190,7 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8827
 #unmountedspr1 "nihuala/un_bowturquoisew.tga"
 #unmountedspr1 "nihuala/un_bowturquoise2w.tga"
-#montag  1066
+#montag 1086
 #firstshape 8827
 #end
 
@@ -49984,8 +50200,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/bowturquoise_2x3.tga"
 #unmountedspr1 "nihuala/un_bowturquoise.tga"
 #unmountedspr1 "nihuala/un_bowturquoise2.tga"
-#xpshapemon -1068
-#montag  1067
+#xpshapemon -1088
+#montag 1087
 #xpshape 200
 #montagweight 11 -- 100xp, 1/12
 #skilledrider 6
@@ -49996,7 +50212,7 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8827
 #unmountedspr1 "nihuala/un_bowturquoisew.tga"
 #unmountedspr1 "nihuala/un_bowturquoise2w.tga"
-#montag  1067
+#montag 1087
 #firstshape 8827
 #end
 
@@ -50006,8 +50222,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/bowturquoise_2x4.tga"
 #unmountedspr1 "nihuala/un_bowturquoise.tga"
 #unmountedspr1 "nihuala/un_bowturquoise2.tga"
-#xpshapemon -1069
-#montag  1068
+#xpshapemon -1089
+#montag 1088
 #xpshape 400
 #montagweight 8 -- 200xp, 1/9
 #skilledrider 6
@@ -50018,7 +50234,7 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8827
 #unmountedspr1 "nihuala/un_bowturquoisew.tga"
 #unmountedspr1 "nihuala/un_bowturquoise2w.tga"
-#montag  1068
+#montag 1088
 #firstshape 8827
 #end
 
@@ -50028,7 +50244,7 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/bowturquoise_2x4.tga"
 #unmountedspr1 "nihuala/un_bowturquoise.tga"
 #unmountedspr1 "nihuala/un_bowturquoise2.tga"
-#montag  1069
+#montag 1089
 #montagweight 5 -- 400xp, 1/6
 #skilledrider 6
 #end
@@ -50038,14 +50254,14 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8827
 #unmountedspr1 "nihuala/un_bowturquoisew.tga"
 #unmountedspr1 "nihuala/un_bowturquoise2w.tga"
-#montag  1069
+#montag 1089
 #firstshape 8827
 #end
 
 #selectmonster 6599
 #xpshape 15
 #xpgain 35 -- +35%
-#xpshapemon -1065
+#xpshapemon -1085
 #end
 
 -- Turquoise Lancer upgrades
@@ -50055,8 +50271,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/lanceturquoise_2x1.tga"
 #unmountedspr1 "nihuala/un_lanceturquoise.tga"
 #unmountedspr1 "nihuala/un_lanceturquoise2.tga"
-#xpshapemon -1071
-#montag  1070
+#xpshapemon -1091
+#montag 1090
 #xpshape 50
 #montagweight 24 -- 15xp, 1/25
 #end
@@ -50067,8 +50283,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/lanceturquoise_2x2.tga"
 #unmountedspr1 "nihuala/un_lanceturquoise.tga"
 #unmountedspr1 "nihuala/un_lanceturquoise2.tga"
-#xpshapemon -1072
-#montag  1071
+#xpshapemon -1092
+#montag 1091
 #xpshape 100
 #montagweight 15 -- 50xp, 1/16
 #skilledrider 5
@@ -50079,7 +50295,7 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8837
 #unmountedspr1 "nihuala/un_lanceturquoisew.tga"
 #unmountedspr1 "nihuala/un_lanceturquoise2w.tga"
-#montag  1071
+#montag 1091
 #firstshape 8837
 #end
 
@@ -50089,8 +50305,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/lanceturquoise_2x3.tga"
 #unmountedspr1 "nihuala/un_lanceturquoise.tga"
 #unmountedspr1 "nihuala/un_lanceturquoise2.tga"
-#xpshapemon -1073
-#montag  1072
+#xpshapemon -1093
+#montag 1092
 #xpshape 200
 #montagweight 11 -- 100xp, 1/12
 #skilledrider 6
@@ -50101,7 +50317,7 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8837
 #unmountedspr1 "nihuala/un_lanceturquoisew.tga"
 #unmountedspr1 "nihuala/un_lanceturquoise2w.tga"
-#montag  1072
+#montag 1092
 #firstshape 8837
 #end
 
@@ -50111,8 +50327,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/lanceturquoise_2x4.tga"
 #unmountedspr1 "nihuala/un_lanceturquoise.tga"
 #unmountedspr1 "nihuala/un_lanceturquoise2.tga"
-#xpshapemon -1074
-#montag  1073
+#xpshapemon -1094
+#montag 1093
 #xpshape 400
 #montagweight 8 -- 200xp, 1/9
 #skilledrider 6
@@ -50123,7 +50339,7 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8837
 #unmountedspr1 "nihuala/un_lanceturquoisew.tga"
 #unmountedspr1 "nihuala/un_lanceturquoise2w.tga"
-#montag  1073
+#montag 1093
 #firstshape 8837
 #end
 
@@ -50133,7 +50349,7 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/lanceturquoise_2x4.tga"
 #unmountedspr1 "nihuala/un_lanceturquoise.tga"
 #unmountedspr1 "nihuala/un_lanceturquoise2.tga"
-#montag  1074
+#montag 1094
 #montagweight 5 -- 400xp, 1/6
 #skilledrider 6
 #end
@@ -50143,14 +50359,14 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8837
 #unmountedspr1 "nihuala/un_lanceturquoisew.tga"
 #unmountedspr1 "nihuala/un_lanceturquoise2w.tga"
-#montag  1074
+#montag 1094
 #firstshape 8837
 #end
 
 #selectmonster 6600
 #xpshape 15
 #xpgain 35 -- +35%
-#xpshapemon -1070
+#xpshapemon -1090
 #end
 
 
@@ -50161,8 +50377,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/axeturquoise_2x1.tga"
 #unmountedspr1 "nihuala/un_axeturquoise.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2.tga"
-#xpshapemon -1076
-#montag  1075
+#xpshapemon -1096
+#montag 1095
 #xpshape 50
 #montagweight 24 -- 15xp, 1/25
 #end
@@ -50173,8 +50389,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/axeturquoise_2x2.tga"
 #unmountedspr1 "nihuala/un_axeturquoise.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2.tga"
-#xpshapemon -1077
-#montag  1076
+#xpshapemon -1097
+#montag 1096
 #xpshape 100
 #montagweight 15 -- 50xp, 1/16
 #skilledrider 5
@@ -50185,7 +50401,7 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8847
 #unmountedspr1 "nihuala/un_axeturquoisew.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2w.tga"
-#montag  1076
+#montag 1096
 #firstshape 8847
 #end
 
@@ -50195,8 +50411,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/axeturquoise_2x3.tga"
 #unmountedspr1 "nihuala/un_axeturquoise.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2.tga"
-#xpshapemon -1078
-#montag  1077
+#xpshapemon -1098
+#montag 1097
 #xpshape 200
 #montagweight 11 -- 100xp, 1/12
 #skilledrider 6
@@ -50207,7 +50423,7 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8847
 #unmountedspr1 "nihuala/un_axeturquoisew.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2w.tga"
-#montag  1077
+#montag 1097
 #firstshape 8847
 #end
 
@@ -50217,8 +50433,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/axeturquoise_2x4.tga"
 #unmountedspr1 "nihuala/un_axeturquoise.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2.tga"
-#xpshapemon -1079
-#montag  1078
+#xpshapemon -1099
+#montag 1098
 #xpshape 400
 #montagweight 8 -- 200xp, 1/9
 #skilledrider 6
@@ -50229,7 +50445,7 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8847
 #unmountedspr1 "nihuala/un_axeturquoisew.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2w.tga"
-#montag  1078
+#montag 1098
 #firstshape 8847
 #end
 
@@ -50239,7 +50455,7 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/axeturquoise_2x4.tga"
 #unmountedspr1 "nihuala/un_axeturquoise.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2.tga"
-#montag  1079
+#montag 1099
 #montagweight 5 -- 400xp, 1/6
 #skilledrider 6
 #end
@@ -50249,14 +50465,14 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8847
 #unmountedspr1 "nihuala/un_axeturquoisew.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2w.tga"
-#montag  1079
+#montag 1099
 #firstshape 8847
 #end
 
 #selectmonster 6601
 #xpshape 15
 #xpgain 35 -- +35%
-#xpshapemon -1075
+#xpshapemon -1095
 #end
 
 
@@ -50268,8 +50484,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/barerider_2x1.tga"
 #unmountedspr1 "nihuala/un_axeturquoise.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2.tga"
-#xpshapemon -1081
-#montag  1080
+#xpshapemon -1101
+#montag 1100
 #xpshape 50
 #montagweight 5 -- 15xp, 1/6
 #end
@@ -50280,8 +50496,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/barerider_2x2.tga"
 #unmountedspr1 "nihuala/un_axeturquoise.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2.tga"
-#xpshapemon -1082
-#montag  1081
+#xpshapemon -1102
+#montag 1101
 #xpshape 100
 #montagweight 4 -- 50xp, 1/5
 #skilledrider 5
@@ -50292,7 +50508,7 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8857
 #unmountedspr1 "nihuala/un_bareriderw.tga"
 #unmountedspr1 "nihuala/un_barerider2w.tga"
-#montag  1081
+#montag 1101
 #firstshape 8857
 #end
 
@@ -50302,8 +50518,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/barerider_2x3.tga"
 #unmountedspr1 "nihuala/un_axeturquoise.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2.tga"
-#xpshapemon -1083
-#montag  1082
+#xpshapemon -1103
+#montag 1102
 #xpshape 200
 #montagweight 3 -- 100xp, 1/4
 #skilledrider 6
@@ -50314,7 +50530,7 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8857
 #unmountedspr1 "nihuala/un_bareriderw.tga"
 #unmountedspr1 "nihuala/un_barerider2w.tga"
-#montag  1082
+#montag 1102
 #firstshape 8857
 #end
 
@@ -50324,8 +50540,8 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/barerider_2x4.tga"
 #unmountedspr1 "nihuala/un_axeturquoise.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2.tga"
-#xpshapemon -1084
-#montag  1083
+#xpshapemon -1104
+#montag 1103
 #xpshape 400
 #montagweight 2 -- 200xp, 1/3
 #skilledrider 6
@@ -50336,7 +50552,7 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8857
 #unmountedspr1 "nihuala/un_bareriderw.tga"
 #unmountedspr1 "nihuala/un_barerider2w.tga"
-#montag  1083
+#montag 1103
 #firstshape 8857
 #end
 
@@ -50346,7 +50562,7 @@ Dragon Priests can be recruited in any land fort."
 #spr2 "nihuala/barerider_2x4.tga"
 #unmountedspr1 "nihuala/un_axeturquoise.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2.tga"
-#montag  1084
+#montag 1104
 #montagweight 1 -- 400xp, 1/2
 #skilledrider 6
 #end
@@ -50356,15 +50572,19 @@ Dragon Priests can be recruited in any land fort."
 #copyspr 8857
 #unmountedspr1 "nihuala/un_bareriderw.tga"
 #unmountedspr1 "nihuala/un_barerider2w.tga"
-#montag  1084
+#montag 1104
 #firstshape 8857
 #end
 
 #selectmonster 6602
 #xpshape 15
 #xpgain 35 -- +35%
-#xpshapemon -1080
+#xpshapemon -1100
 #end
+
+
+
+
 
 -- ENDUNITS
 
@@ -51262,6 +51482,981 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #weapon 404  -- Beak
 #end
 
+
+
+
+-- Shadow montags:
+-- 1070 - animal
+-- 1071 -- humanoid
+-- 1072 -- familiar
+-- 1073 -- giant, 3x troll / 4x giant
+-- 1074 -- great shadow
+
+-- 9036 -- incarnate
+
+#newmonster 9000 -- Shadow Base
+#name "Shadow"
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowanimala1.tga"
+#spr2 "shadows/blue_shadowanimala2.tga"
+#darkpower 3 -- Darkpower affected stats
+#str 6 -- 9 w/ DP, Original stat -3
+#att 6 -- 9 w/ DP, Original stat -3
+#def 8 -- 11 w/ DP, Original stat
+#ap 22 -- 25 w/ DP, Original stat
+#invulnerable 5 -- Original prot + 3
+#mr 8 -- Original MR +3, can be arbitrary
+#hp 6 -- Original HP / 2
+#prec 5
+#size 2
+--#mor 10 -- Original morale +3
+#mor 50
+#humanoid -- Equipment
+#itemslots 786432 -- 2 misc.
+--#weapon 1854 -- Shadow Gore
+--#regeneration 20 -- Stuff below here can generally stay the same.
+--#reform 33
+#reform 50
+#unsurr 1
+#blind
+#maxage 1250
+#startage -1
+#stealthy 0
+#gcost 0
+#prot 0
+--#heal
+#woundfend 99
+#mapmove 20
+#fireres -5
+#coldres 10
+#poisonres 25
+#spiritsight
+#neednoteat
+#amphibian
+#magicbeing
+#inanimate
+#float
+#enc 0
+#nametype 109
+#scalewalls -- Todo: See if this actually allows shadows to pass through fort walls as if ethereal
+#end
+
+-- montag 1070 -- Shadow Animals 7801-6807
+
+#newmonster 9001 -- Shadow Deer
+#copystats 9000 -- Shadow Base
+#name "Shadow Animal"
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowanimala1.tga"
+#spr2 "shadows/blue_shadowanimala2.tga"
+#str 6 -- 9 w/ DP, orig 9 -- Darkpower affected stats
+#att 6 -- 9 w/ DP, orig 9
+#def 8 -- 11 w/ DP, orig 8
+#ap 22 -- 25 w/ DP, orig 22
+#invulnerable 5 -- orig natprot 2
+#mr 8 -- orig 5
+#hp 6 -- orig 12
+#prec 5 -- orig 5
+#size 2 -- orig 2
+--#mor 10 -- orig 7
+#quadruped -- Equipment
+#itemslots 786432 -- 2 misc.
+#weapon 1854 -- Shadow Gore
+#montagweight 2 -- Other tags
+#montag 1070 -- Shadow Animal
+#animal
+#end
+
+#newmonster 9002 -- Shadow Lion
+#copystats 9000 -- Shadow Base
+#name "Shadow Animal"
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowanimalb1.tga"
+#spr2 "shadows/blue_shadowanimalb2.tga"
+#str 12 -- 15 w/ DP, orig 15, -4 -- Darkpower affected stats
+#att 10 -- 13 w/ DP, orig 13, -4
+#def 10 -- 13 w/ DP, orig 10, -1
+#ap 20 -- 23 w/ DP, orig 20, -0
+#invulnerable 7 -- orig natprot 4
+#mr 8 -- orig 5
+#hp 10 -- orig 20
+#prec 5 -- orig 5
+#size 4 -- orig 4
+--#mor 16 -- orig 13
+#quadruped -- Equipment
+#itemslots 786432 -- 2 misc.
+#weapon 1853 -- Shadow Bite
+#weapon 1855 -- Shadow Claw
+#montag 1070 -- Shadow Animal -- Other tags
+#animal
+#end
+
+#newmonster 9003 -- Shadow Wolf (Stats averaged between black dog and wolf)
+#copystats 9000 -- Shadow Base
+#name "Shadow Animal"
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowanimalc1.tga"
+#spr2 "shadows/blue_shadowanimalc2.tga"
+#str 8 -- 11 w/ DP, orig 11, -4 -- Darkpower affected stats
+#att 9 -- 12 w/ DP, orig 12, -4
+#def 10 -- 13 w/ DP, orig 10, -1
+#ap 24 -- 27 w/ DP, orig 24, -0
+#invulnerable 6 -- orig natprot 3
+#mr 8 -- orig 5
+#hp 5 -- orig 11
+#prec 5 -- orig 5
+#size 2 -- orig 2
+--#mor 15 -- orig 12
+#quadruped -- Equipment
+#itemslots 786432 -- 2 misc.
+#weapon 1853 -- Shadow Bite
+#montagweight 3 -- Other tags
+#montag 1070 -- Shadow Animal
+#animal
+#end
+
+#newmonster 9004 -- Shadow Spider
+#copystats 9000 -- Shadow Base
+#name "Shadow Animal"
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowanimald1.tga"
+#spr2 "shadows/blue_shadowanimald2.tga"
+#str 6 -- 9 w/ DP, orig 9 -- Darkpower affected stats
+#att 9 -- 12 w/ DP, orig 12
+#def 9 -- 12 w/ DP, orig 9
+#ap 14 -- 17 w/ DP, orig 14
+#invulnerable 11 -- orig natprot 8
+#mr 8 -- orig 5
+#hp 8 -- orig 16
+#prec 5 -- orig 5
+#size 6 -- orig 4
+--#mor 13 -- orig 10
+#quadruped -- Equipment
+#itemslots 786432 -- 2 misc.
+#weapon 1857 -- Shadow Fangs
+#montag 1070 -- Shadow Animal -- Other tags
+#animal
+#end
+
+#newmonster 9005 -- Shadow Bear
+#copystats 9000 -- Shadow Base
+#name "Shadow Animal"
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowanimale1.tga"
+#spr2 "shadows/blue_shadowanimale2.tga"
+#str 16 -- 19 w/ DP, orig 19 -- Darkpower affected stats
+#att 6 -- 9 w/ DP, orig 9
+#def 7 -- 10 w/ DP, orig 7
+#ap 14 -- 17 w/ DP, orig 14
+#invulnerable 11 -- orig natprot 8
+#mr 8 -- orig 5
+#hp 20 -- orig 40
+#prec 5 -- orig 5
+#size 6 -- orig 4
+--#mor 16 -- orig 13
+#quadruped -- Equipment
+#itemslots 786432 -- 2 misc.
+#weapon 1855 -- Shadow Claw
+#montag 1070 -- Shadow Animal -- Other tags
+#animal
+#end
+
+#newmonster 9006 -- Shadow Moose
+#copystats 9000 -- Shadow Base
+#name "Shadow Animal"
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowanimalf1.tga"
+#spr2 "shadows/blue_shadowanimalf2.tga"
+#str 13 -- 16 w/ DP, orig 16 -- Darkpower affected stats
+#att 6 -- 9 w/ DP, orig 9
+#def 9 -- 12 w/ DP, orig 9
+#ap 24 -- 27 w/ DP, orig 24
+#invulnerable 7 -- orig natprot 4
+#mr 8 -- orig 5
+#hp 19 -- orig 38
+#prec 5 -- orig 5
+#size 6 -- orig 4
+--#mor 12 -- orig 9
+#quadruped -- Equipment
+#itemslots 786432 -- 2 misc.
+#weapon 1854 -- Shadow Gore
+#weapon 1855 -- Shadow Claw
+#montag 1070 -- Shadow Animal -- Other tags
+#animal
+#end
+
+#newmonster 9007 -- Shadow Boar (Stats averaged between boar and great boar, rounded up)
+#copystats 9000 -- Shadow Base
+#name "Shadow Animal"
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowanimalg1.tga"
+#spr2 "shadows/blue_shadowanimalg2.tga"
+#str 10 -- 13 w/ DP, orig 13, -4 -- Darkpower affected stats
+#att 7 -- 10 w/ DP, orig 10, -4
+#def 8 -- 11 w/ DP, orig 8, -1
+#ap 15 -- 18 w/ DP, orig 15, -0
+#invulnerable 8 -- orig natprot 5
+#mr 8 -- orig 5
+#hp 9 -- orig 17
+#prec 5 -- orig 5
+#size 4 -- orig 4
+--#mor 11 -- orig 8
+#quadruped -- Equipment
+#itemslots 786432 -- 2 misc.
+#weapon 1854 -- Shadow Gore
+#montagweight 3 -- Other tags
+#montag 1070 -- Shadow Animal
+#animal
+#end
+
+
+-- montag 1071 -- Shadow People 7808-6833
+
+#newmonster 9009 -- Shadow Militia
+#copystats 9000 -- Shadow Base
+#name "Shadow"
+#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowpersonh1.tga"
+#spr2 "shadows/blue_shadowpersonh2.tga"
+#str 6 -- 9 w/ DP, orig 9 -- Darkpower affected stats
+#att 5 -- 8 w/ DP, orig 8
+#def 8 -- 11 w/ DP, orig 8
+#ap 13 -- 16 w/ DP, orig 12
+#invulnerable 5 -- orig prot 5
+#mr 13 -- orig 10
+#hp 5 -- orig 10
+#prec 10 -- orig 10
+#size 2 -- orig 2
+#humanoid -- Equipment
+#itemslots 786432
+#weapon 1860 -- Shadow Spear
+--#armor 5 -- Leather Cuirass
+--#armor 120 -- Leather Cap
+#montagweight 15 -- Other tags
+#montag 1071 -- Shadow Person
+#end
+
+#newmonster 9010 -- Shadow Light Infantry
+#copystats 9000 -- Shadow Base
+#name "Shadow"
+#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowpersonb1.tga"
+#spr2 "shadows/blue_shadowpersonb2.tga"
+#str 7 -- 10 w/ DP, orig 10, -4 -- Darkpower affected stats
+#att 7 -- 10 w/ DP, orig 10, -4
+#def 10 -- 13 w/ DP, orig 10, -1
+#ap 13 -- 16 w/ DP, orig 12, -0
+#invulnerable 8 -- orig prot 8
+#mr 13 -- orig 10
+#hp 5 -- orig 10
+#prec 10 -- orig 10
+#size 2 -- orig 2
+#humanoid -- Equipment
+#itemslots 786432
+#weapon 1860 -- Shadow Spear
+--#armor 6 -- Ring Mail Cuirass
+--#armor 120 -- Leather Cap
+#armor 2 -- Shield
+#montagweight 15 -- Other tags
+#montag 1071 -- Shadow Person
+#end
+
+#newmonster 9011 -- Shadow Heavy Infantry
+#copystats 9000 -- Shadow Base
+#name "Shadow"
+#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowpersonc1.tga"
+#spr2 "shadows/blue_shadowpersonc2.tga"
+#str 7 -- 10 w/ DP, orig 10, -4 -- Darkpower affected stats
+#att 7 -- 10 w/ DP, orig 10, -4
+#def 10 -- 13 w/ DP, orig 10, -1 (-1 from equipment)
+#ap 13 -- 16 w/ DP, orig 12, -0
+#invulnerable 12 -- orig prot 12
+#mr 13 -- orig 10
+#hp 5 -- orig 10
+#prec 10 -- orig 10
+#size 2 -- orig 2
+#humanoid -- Equipment
+#itemslots 786432
+#weapon 1859 -- Shadow Sword
+--#armor 136 -- Bronze Scale Hauberk
+--#armor 135 -- Bronze Cap
+#armor 2 -- Shield
+#montagweight 5 -- Other tags
+#montag 1071 -- Shadow Person
+#end
+
+#newmonster 9012 -- Shadow Barbarian
+#copystats 9000 -- Shadow Base
+#name "Shadow"
+#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowpersond1.tga"
+#spr2 "shadows/blue_shadowpersond2.tga"
+#str 9 -- 12 w/ DP, orig 12, -4 -- Darkpower affected stats
+#att 7 -- 10 w/ DP, orig 10, -4
+#def 10 -- 13 w/ DP, orig 10, -1 (-1 from equipment)
+#ap 14 -- 17 w/ DP, orig 13, -0
+#invulnerable 7 -- orig prot 7
+#mr 12 -- orig 9
+#hp 7 -- orig 13
+#prec 10 -- orig 10
+#size 2 -- orig 2
+#humanoid -- Equipment
+#itemslots 786432
+#weapon 1861 -- Shadow Greatsword
+--#armor 15 -- Full Leather Armor
+#montagweight 3 -- Other tags
+#montag 1071 -- Shadow Person
+#end
+
+#newmonster 9013 -- Shadow Bear Tribe
+#copystats 9000 -- Shadow Base
+#name "Shadow"
+#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowpersone1.tga"
+#spr2 "shadows/blue_shadowpersone2.tga"
+#str 8 -- 11 w/ DP, orig 11, -4 -- Darkpower affected stats
+#att 7 -- 10 w/ DP, orig 10, -4
+#def 10 -- 13 w/ DP, orig 10, -1 (-1 from equipment)
+#ap 13 -- 16 w/ DP, orig 12, -0
+#invulnerable 7 -- orig prot 7
+#mr 13 -- orig 10
+#hp 6 -- orig 12
+#prec 10 -- orig 10
+#size 2 -- orig 2
+#humanoid -- Equipment
+#itemslots 786432
+#weapon 1862 -- Shadow Axe
+--#armor 15 -- Full Leather Armor
+#montagweight 4 -- Other tags
+#montag 1071 -- Shadow Person
+#end
+
+#newmonster 9014 -- Shadow Satyr
+#copystats 9000 -- Shadow Base
+#name "Shadow"
+#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowpersonf1.tga"
+#spr2 "shadows/blue_shadowpersonf2.tga"
+#str 8 -- 11 w/ DP, orig 11, -4 -- Darkpower affected stats
+#att 8 -- 11 w/ DP, orig 11, -4
+#def 13 -- 16 w/ DP, orig 13, -1 (-1 from equipment)
+#ap 15 -- 18 w/ DP, orig 14, -0
+#invulnerable 6 -- orig prot 6
+#mr 16 -- orig 13
+#hp 7 -- orig 14
+#prec 10 -- orig 10
+#size 2 -- orig 2
+#humanoid -- Equipment
+#itemslots 786432
+#weapon 1860 -- Shadow Spear
+--#armor 44 -- Furs
+#armor 2 -- Shield
+#montagweight 1 -- Other tags
+#montag 1071 -- Shadow Person
+#end
+
+#newmonster 9015 -- Shadow City Guard (C'tis)
+#copystats 9000 -- Shadow Base
+#name "Shadow"
+#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowpersong1.tga"
+#spr2 "shadows/blue_shadowpersong2.tga"
+#str 7 -- 10 w/ DP, orig 10, -4 -- Darkpower affected stats
+#att 7 -- 10 w/ DP, orig 10, -4
+#def 10 -- 13 w/ DP, orig 10, -1 (-1 from equipment)
+#ap 11 -- 14 w/ DP, orig 10, -0
+#invulnerable 13 -- orig prot 13
+#mr 15 -- orig 12
+#hp 6 -- orig 11
+#prec 10 -- orig 10
+#size 2 -- orig 2
+#humanoid -- Equipment
+#itemslots 786432
+#weapon 1860 -- Shadow Spear
+--#armor 7 -- Scale Mail Cuirass
+#armor 2 -- Shield
+#montagweight 1 -- Other tags
+#castledef 1
+#swampsurvival
+#montag 1071 -- Shadow Person
+#end
+
+
+#newmonster 9016 -- Shadow Rat
+#copystats 9000 -- Shadow Base
+#name "Shadow Familiar"
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowscouta1.tga"
+#spr2 "shadows/blue_shadowscouta2.tga"
+#str 1 -- 4 w/ DP -- Darkpower affected stats
+#att 6 -- 9 w/ DP
+#def 12 -- 15 w/ DP
+#ap 24 -- 27 w/ DP, orig 22, -0
+#invulnerable 5 -- orig natprot 2
+#mr 8 -- orig 5
+#hp 1 -- orig 2
+#prec 5 -- orig 5
+#size 1 -- orig 1
+--#mor 10 -- orig 7
+#quadruped -- Equipment
+#itemslots 786432 -- 2 misc.
+#weapon 1853 -- Shadow Bite
+#montag 1072 -- Shadow Familiar -- Other tags
+#animal
+#end
+
+#newmonster 9017 -- Shadow Frog
+#copystats 9000 -- Shadow Base
+#name "Shadow Familiar"
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowscoutb1.tga"
+#spr2 "shadows/blue_shadowscoutb2.tga"
+#str 2 -- 5 w/ DP -- Darkpower affected stats
+#att 3 -- 9 w/ DP
+#def 9 -- 12 w/ DP
+#ap 22 -- 25 w/ DP
+#invulnerable 5 -- orig natprot 2
+#mr 8 -- orig 5
+#hp 1 -- orig 2
+#prec 5 -- orig 5
+#size 1 -- orig 1
+--#mor 10 -- orig 7
+#quadruped -- Equipment
+#itemslots 786432 -- 2 misc.
+#weapon 1853 -- Shadow Bite
+#montag 1072 -- Shadow Familiar -- Other tags
+#animal
+#end
+
+#newmonster 9018 -- Shadow Cat
+#copystats 9000 -- Shadow Base
+#name "Shadow Familiar"
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowscoutc1.tga"
+#spr2 "shadows/blue_shadowscoutc2.tga"
+#str 2 -- 5 w/ DP -- Darkpower affected stats
+#att 6 -- 9 w/ DP
+#def 10 -- 13 w/ DP
+#ap 23 -- 26 w/ DP, orig 22, -0
+#invulnerable 5 -- orig natprot 2
+#mr 8 -- orig 5
+#hp 1 -- orig 2
+#prec 5 -- orig 5
+#size 1 -- orig 1
+--#mor 10 -- orig 7
+#quadruped -- Equipment
+#itemslots 786432 -- 2 misc.
+#weapon 1853 -- Shadow Bite
+#montag 1072 -- Shadow Familiar -- Other tags
+#animal
+#end
+
+#newmonster 9019 -- Shadow Forest Troll
+#copystats 9000 -- Shadow Base
+#name "Shadow Troll"
+#descr "The shadows of trolls retain some of their skill and equipment, and in the case of trolls, their rapid regeneration. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowtrolla1.tga"
+#spr2 "shadows/blue_shadowtrolla2.tga"
+#str 16 -- 19 w/ DP, orig 19 -- Darkpower affected stats
+#att 7 -- 10 w/ DP, orig 10
+#def 9 -- 12 w/ DP, orig 9 (-1 from equipment)
+#ap 14 -- 17 w/ DP, orig 13
+#regeneration 20
+#invulnerable 13 -- orig prot 12
+#mr 15 -- orig 14
+#hp 13 -- orig 26
+#prec 8 -- orig 8
+#size 5 -- orig 5
+#fireres -10 -- orig -5
+#humanoid -- Equipment
+#itemslots 786432
+#weapon 1865 -- Shadow Club
+--#armor 44 -- Furs
+#montagweight 5 -- Other tags
+#montag 1073 -- Shadow Troll
+#end
+
+#newmonster 9020 -- Shadow Mountain Troll
+#copystats 9000 -- Shadow Base
+#name "Shadow Troll"
+#descr "The shadows of trolls retain some of their skill and equipment, and in the case of trolls, their rapid regeneration. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowtrollb1.tga"
+#spr2 "shadows/blue_shadowtrollb2.tga"
+#str 19 -- 22 w/ DP, orig 22 -- Darkpower affected stats
+#att 7 -- 10 w/ DP, orig 10
+#def 9 -- 12 w/ DP, orig 9 (-1 from equipment)
+#ap 14 -- 17 w/ DP, orig 13
+#regeneration 20
+#invulnerable 16 -- orig prot 15
+#mr 15 -- orig 14
+#hp 18 -- orig 35
+#prec 8 -- orig 8
+#size 5 -- orig 5
+#fireres -15 -- orig -10
+#humanoid -- Equipment
+#itemslots 786432
+#weapon 1865 -- Shadow Club
+--#armor 44 -- Furs
+#montagweight 4 -- Other tags
+#montag 1073 -- Shadow Troll
+#end
+
+#newmonster 9021 -- Shadow War Troll
+#copystats 9000 -- Shadow Base
+#name "Shadow Troll"
+#descr "The shadows of trolls retain some of their skill and equipment, and in the case of trolls, their rapid regeneration. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowtrollc1.tga"
+#spr2 "shadows/blue_shadowtrollc2.tga"
+#str 19 -- 22 w/ DP, orig 22 -- Darkpower affected stats
+#att 7 -- 10 w/ DP, orig 10
+#def 9 -- 12 w/ DP, orig 9 (-3 from equipment)
+#ap 14 -- 17 w/ DP, orig 13
+#regeneration 20
+#invulnerable 22 -- orig prot 21
+#mr 15 -- orig 14
+#hp 19 -- orig 38
+#prec 8 -- orig 8
+#size 5 -- orig 5
+#fireres -15 -- orig -10
+#humanoid -- Equipment
+#itemslots 786432
+#weapon 1866 -- Shadow Maul
+--#armor 18 -- Full Chain Mail
+#montagweight 1 -- Other tags
+#montag 1073 -- Shadow Troll
+#end
+
+#newmonster 9024 -- Shadow Jotun Spearman Warrior
+#copystats 9000 -- Shadow Base
+#name "Shadow Giant"
+#descr "The shadows of giants retain some of their skill and equipment, and for some beings they can retain special attributes. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowgianta1.tga"
+#spr2 "shadows/blue_shadowgianta2.tga"
+#str 18 -- 21 w/ DP, orig 21 -- Darkpower affected stats
+#att 7 -- 10 w/ DP, orig 10
+#def 10 -- 13 w/ DP, orig 10 (-1 from equipment)
+#ap 16 -- 19 w/ DP, orig 15
+#invulnerable 13 -- orig prot 12
+#mr 14  -- orig 12
+#hp 17 -- orig 34
+#prec 10 -- orig 10
+#size 6 -- orig 4
+#shockres -5 -- orig -5
+#coldres 25 -- orig 15
+#humanoid -- Equipment
+#itemslots 786432
+#weapon 1860 -- Shadow Spear
+#armor 2 -- Shield
+#montagweight 4 -- Other tags
+#montag 1073 -- Shadow Troll
+#end
+
+#newmonster 9025 -- Shadow Jotun Axe Warrior
+#copystats 9000 -- Shadow Base
+#name "Shadow Giant"
+#descr "The shadows of giants retain some of their skill and equipment, and for some beings they can retain special attributes. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowgiantb1.tga"
+#spr2 "shadows/blue_shadowgiantb2.tga"
+#str 18 -- 21 w/ DP, orig 21 -- Darkpower affected stats
+#att 7 -- 10 w/ DP, orig 10
+#def 10 -- 13 w/ DP, orig 10 (-1 from equipment)
+#ap 16 -- 19 w/ DP, orig 15
+#invulnerable 13 -- orig prot 12
+#mr 14  -- orig 12
+#hp 17 -- orig 34
+#prec 10 -- orig 10
+#size 6 -- orig 4
+#shockres -5 -- orig -5
+#coldres 25 -- orig 15
+#humanoid -- Equipment
+#itemslots 786432
+#weapon 1862 -- Shadow Axe
+#armor 2 -- Shield
+#montagweight 4 -- Other tags
+#montag 1073 -- Shadow Troll
+#end
+
+#newmonster 9026 -- Shadow Giant
+#copystats 9000 -- Shadow Base
+#name "Shadow Giant"
+#descr "The shadows of giants retain some of their skill and equipment, and for some beings they can retain special attributes. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowgiantc1.tga"
+#spr2 "shadows/blue_shadowgiantc2.tga"
+#str 25 -- 28 w/ DP, orig 28 -- Darkpower affected stats
+#att 10 -- 13 w/ DP, orig 13
+#def 8 -- 11 w/ DP, orig 8 (-1 from equipment)
+#ap 19 -- 22 w/ DP, orig 18
+#invulnerable 13 -- orig prot 12
+#mr 11  -- orig 9
+#hp 53 -- orig 106
+#prec 8 -- orig 8
+#size 8 -- orig 8
+#digest 3 -- orig 3
+#humanoid -- Equipment
+#itemslots 786432
+#weapon 1865 -- Shadow Club
+#weapon 609 -- Grab and Swallow
+#montagweight 1 -- Other tags
+#montag 1073 -- Shadow Troll
+#end
+
+#newmonster 9027 -- Shadow Werewolf
+#copystats 9000 -- Shadow Base
+#name "Shadow Werewolf"
+#descr "The shadows of giants retain some of their skill and equipment, and for some beings they can retain special attributes. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowgiantd1.tga"
+#spr2 "shadows/blue_shadowgiantd2.tga"
+#str 11 -- 14 w/ DP, orig 14 -- Darkpower affected stats
+#att 9 -- 12 w/ DP, orig 12
+#def 12 -- 15 w/ DP, orig 12
+#ap 15 -- 18 w/ DP, orig 14
+#regeneration 10
+#invulnerable 15 -- orig invuln 15
+#mr 14  -- orig 12
+#hp 10 -- orig 20
+#prec 5 -- orig 5
+#size 4 -- orig 4
+#humanoid -- Equipment
+#itemslots 786432
+#weapon 1853 -- Shadow Bite
+#weapon 1855 -- Shadow Claw
+#weapon 1855 -- Shadow Claw
+#montagweight 2 -- Other tags
+#montag 1073 -- Shadow Troll
+#end
+
+#newmonster 9028 -- Great Shadow Dragon
+#copystats 9000 -- Shadow Base
+#name "Great Shadow"
+#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power and sentience. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowgreatdragon1.tga"
+#spr2 "shadows/blue_shadowgreatdragon2.tga"
+#darkpower 4 -- Darkpower affected stats
+#str 20 -- 24 w/ DP, orig 25
+#att 8 -- 12 w/ DP, orig 12
+#def 11 -- 15 w/ DP, orig 12
+#ap 10 -- 14 w/ DP, orig 10
+#invulnerable 24 -- orig prot 20
+#prot 15
+#mr 18  -- orig 18
+#hp 60 -- orig 120
+#prec 12 -- orig 12
+#size 10 -- orig 10
+#fireres 10 -- orig 15
+#dragonlord 1 -- orig 1
+#fear 15 -- orig 10
+#magicskill 0 3
+--#onebattlespell 864 -- Darkness
+#flying
+#lizard -- Equipment
+#itemslots 786432
+#heal
+#weapon 533 -- Dragon Fire
+#weapon 1853 -- Shadow Bite
+#weapon 1855 -- Shadow Claw
+#weapon 532 -- Tail Sweep
+#mor 30 -- Other tags
+#reform 50
+#montagweight 1
+#montag 1074 -- Great Shadow
+#end
+
+#newmonster 9029 -- Great Shadow Bird
+#copystats 9000 -- Shadow Base
+#name "Great Shadow"
+#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power and sentience. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowgreatbird1.tga"
+#spr2 "shadows/blue_shadowgreatbird2.tga"
+#darkpower 4 -- Darkpower affected stats
+#str 19 -- 23 w/ DP, orig 23, -4
+#att 8 -- 12 w/ DP, orig 12, -4
+#def 14 -- 18 w/ DP, orig 15, -1
+#ap 10 -- 14 w/ DP, orig 10, -0
+#invulnerable 20
+#prot 10
+#mr 18 -- orig 18
+#hp 43 -- orig 86
+#prec 12 -- orig 12
+#size 8 -- orig 8
+#shockres 5 -- orig 5
+#fear 10 -- orig 5
+#magicskill 1 3
+--#onebattlespell 864 -- Darkness
+#flying
+#stormimmune
+#siegebonus 10
+#patrolbonus 10
+#bird -- Equipment
+#heal
+#weapon 243 -- Lightning
+#weapon 1853 -- Shadow Bite
+#weapon 1855 -- Shadow Claw
+#reform 50
+#mor 30
+#montagweight 1
+#montag 1074 -- Great Shadow
+#end
+
+#newmonster 9030 -- Great Shadow Nosoi? not really but it looks cool
+#copystats 9000 -- Shadow Base
+#name "Great Shadow"
+#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power and sentience. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowgreatnosoi1.tga"
+#spr2 "shadows/blue_shadowgreatnosoi2.tga"
+#darkpower 4 -- Darkpower affected stats
+#str 14 -- 18 w/ DP, orig 18, -4
+#att 8 -- 12 w/ DP, orig 12, -4
+#def 14 -- 18 w/ DP, orig 15, -1
+#ap 10 -- 14 w/ DP, orig 10, -0
+#invulnerable 20
+#prot 10
+#mr 18 -- orig 18
+#hp 34 -- orig 66
+#prec 10 -- orig 10
+#size 8 -- orig 8
+#coldres 25 -- orig 15
+#fear 20 -- orig 15
+#magicskill 5 3
+--#onebattlespell 864 -- Darkness
+#flying
+#deathdisease 10
+#humanoid -- Equipment
+#itemslots 786432
+#heal
+#weapon 1870 -- Plague Scythe bonus
+#weapon 63 -- Life Drain
+#reform 50
+#mor 30
+#montagweight 1
+#montag 1074 -- Great Shadow
+#end
+
+#newmonster 9031 -- Great Shadow Leng Spider
+#copystats 9000 -- Shadow Base
+#name "Great Shadow"
+#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power and sentience. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowgreatleng1.tga"
+#spr2 "shadows/blue_shadowgreatleng2.tga"
+#darkpower 4 -- Darkpower affected stats
+#str 16 -- 20 w/ DP, orig 20, -4
+#att 8 -- 12 w/ DP, orig 12, -4
+#def 7 -- 11 w/ DP, orig 8, -1
+#ap 20 -- 24 w/ DP, orig 20, -0
+#invulnerable 20
+#prot 10
+#mr 18 -- orig 14
+#hp 34 -- orig 66
+#prec 10 -- orig 10
+#size 6 -- orig 6
+#eyes 8
+#fear 10 -- orig 0
+#magicskill 6 1 -- N
+#magicskill 7 2 -- G
+#magicskill 5 1 -- D
+--#onebattlespell 864 -- Darkness
+#sleepaura 8
+#quadruped -- Equipment
+#heal
+#mountainsurvival
+#forestsurvival
+#magicbeing
+#weapon 1857 -- Shadow Fangs
+#weapon 1855 -- Shadow Claw
+#weapon 1855 -- Shadow Claw
+#weapon 261 -- Web
+#weapon 262 -- Web Spit
+#reform 50
+#mor 30
+#montagweight 1
+#montag 1074 -- Great Shadow
+#end
+
+#newmonster 9032 -- Great Shadow Lord of the Wild
+#copystats 9000 -- Shadow Base
+#name "Great Shadow"
+#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power and sentience. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowgreatlord1.tga"
+#spr2 "shadows/blue_shadowgreatlord2.tga"
+#darkpower 4 -- Darkpower affected stats
+#str 21 -- 25 w/ DP, orig 25
+#att 8 -- 12 w/ DP, orig 12
+#def 11 -- 15 w/ DP, orig 12
+#ap 18 -- 22 w/ DP, orig 18
+#invulnerable 20
+#prot 10
+#mr 18 -- orig 18
+#hp 45 -- orig 90
+#prec 10 -- orig 10
+#size 8 -- orig 8
+#fear 10 -- orig 0
+#magicskill 6 2
+#magicskill 8 2
+--#onebattlespell 864 -- Darkness
+#incscale 0
+#berserk 5
+#animalawe 3
+#beastmaster 3
+#expertleader
+#humanoid -- Equipment
+#itemslots 786432
+#heal
+#forestsurvival
+#weapon 1855 -- Shadow Claw
+#weapon 1854 -- Shadow Gore
+#weapon 55 -- Hoof
+#reform 50
+#mor 30
+#montagweight 1
+#montag 1074 -- Great Shadow
+#end
+
+#newmonster 9033 -- Great Shadow Niefel Jarl
+#copystats 9000 -- Shadow Base
+#name "Great Shadow"
+#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power and sentience. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowgreatniefel1.tga"
+#spr2 "shadows/blue_shadowgreatniefel2.tga"
+#darkpower 4 -- Darkpower affected stats
+#str 22 -- 26 w/ DP, orig 26
+#att 9 -- 13 w/ DP, orig 13
+#def 12 -- 16 w/ DP, orig 13
+#ap 16 -- 20 w/ DP, orig 16
+#invulnerable 20
+#prot 10
+#mr 18 -- orig 18
+#hp 38 -- orig 75
+#prec 12 -- orig 12
+#size 9 -- orig 9
+#fear 10 -- orig 0
+#magicskill 2 2
+#magicskill 5 2
+--#onebattlespell 864 -- Darkness
+#shockres -5
+#coldres 25
+#cold 10
+#iceprot 3
+#coldpower 1
+#humanoid -- Equipment
+#itemslots 786432
+#mountainsurvival
+#weapon 1869 -- Ice Blade bonus
+#armor 28 -- Ice Aegis
+#reform 50
+#mor 30
+#montagweight 1
+#montag 1074 -- Great Shadow
+#end
+
+#newmonster 9034 -- Great Shadow Cyclops
+#copystats 9000 -- Shadow Base
+#name "Great Shadow"
+#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power and sentience. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowgreatcyclops1.tga"
+#spr2 "shadows/blue_shadowgreatcyclops2.tga"
+#darkpower 4 -- Darkpower affected stats
+#str 24 -- 28 w/ DP, orig 28
+#att 7 -- 11 w/ DP, orig 11, -4
+#def 11 -- 15 w/ DP, orig 12, -1
+#ap 14 -- 18 w/ DP, orig 14, -0
+#invulnerable 27 -- orig prot 24
+#prot 15
+#mr 18 -- orig 18
+#hp 46 -- orig 91
+#prec 7 -- orig 7
+#size 7 -- orig 7
+#fear 15 -- orig 5
+#magicskill 3 3
+--#onebattlespell 864 -- Darkness
+#fireres 10
+#eyes 1
+#stonebeing
+#humanoid -- Equipment
+#itemslots 786432
+#mountainsurvival
+#weapon 1863 -- Shadow Crush
+#reform 50
+#mor 30
+#montagweight 1
+#montag 1074 -- Great Shadow
+#end
+
+#newmonster 9035 -- Shadow Bird
+#copystats 9000 -- Shadow Base
+#name "Shadow Bird"
+#descr "The shadows of birds difficult to bind and not very powerful, but serve as useful scouts. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
+#spr1 "shadows/blue_shadowscoute1.tga"
+#spr2 "shadows/blue_shadowscoute2.tga"
+#str 2 -- 5 w/ DP -- Darkpower affected stats
+#att 5 -- 8 w/ DP
+#def 13 -- 16 w/ DP
+#ap 23 -- 26 w/ DP, orig 22, -0
+#invulnerable 3 -- orig natprot 0
+#mr 8 -- orig 5
+#hp 2 -- orig 5
+#prec 5 -- orig 5
+#size 2 -- orig 2
+#flying
+#mapmove 34
+#stealthy 30
+--#mor 10 -- orig 7
+#bird -- Equipment
+#itemslots 786432 -- 2 misc.
+#weapon 1853 -- Shadow Bite
+#montag 1072 -- Shadow Familiar -- Other tags
+#animal
+#end
+
+#newmonster 9036 -- Shadow Elemental
+#name "Shadow Incarnate"
+#descr "Similar to an Elemental, Shadow Incarnates are projections of raw power formed from surrounding darkness. They can prove very difficult to hit while in darkness and, unlike Elementals, they do not shrink, instead reforming into a new shadow in place of death. In combat, they will sap the strength of everyone nearby while crushing enemies. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#spr1 "shadows/blue_shadowelemental1.tga"
+#spr2 "shadows/blue_shadowelemental2.tga"
+#darkpower 4 -- Darkpower affected stats
+#str 12 -- 16 w/ DP
+#att 9 -- 13 w/ DP
+#def 13 -- 17 w/ DP
+#ap 14 -- 18 w/ DP
+#invulnerable 10
+#mr 18
+#hp 20
+#prec 5
+#size 7
+#mor 50
+#miscshape
+#itemslots 786432 -- 2 misc.
+#weapon 1863 -- Shadow Drain
+#reform 75
+#unsurr 4
+#blind
+#fear 5
+#maxage 1250
+#startage -1
+#stealthy 0
+#gcost 0
+#prot 0
+#woundfend 99
+#mapmove 20
+#fireres -5
+#coldres 10
+#poisonres 25
+#spiritsight
+#neednoteat
+#amphibian
+#magicbeing
+#inanimate
+#float
+#enc 0
+#nametype 109
+#scalewalls -- Todo: See if this actually allows shadows to pass through fort walls as if ethereal
+#end
+
+
+
+
+
+
+
 #newmonster 8898 -- Firestarter
 #copystats 3912 -- Fay folk
 #spr1 "magicenhanced/blue_firestarter1.tga"
@@ -51270,7 +52465,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #descr "."
 #end
 
-#newmonster 9001 -- Eidolon
+#newmonster 9040 -- Eidolon
 #copystats 40 -- heavy infantry
 #spr1 "magicenhanced/blue_eidolon1.tga"
 #spr2 "magicenhanced/blue_eidolon2.tga"
@@ -51278,7 +52473,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #descr "The Eidolon is a being of the feywild cloaked in mist and glamour. Their glamour makes them take the appearance of someone passingly familiar to the onlooker, often mistaken for ancient heroes, the long lost, or dearly departed, but can always be identified by the wooden mask covering their face. Eidolons fight with illusions and attackers may have difficulty discerning friend from foe in their presence."
 #end
 
-#newmonster 9002 -- Eidolon Lord
+#newmonster 9041 -- Eidolon Lord
 #copystats 40 -- heavy infantry
 #spr1 "magicenhanced/blue_eidolonlord1.tga"
 #spr2 "magicenhanced/blue_eidolonlord2.tga"
@@ -51286,7 +52481,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #descr "The Eidolon is a being of the feywild cloaked in mist and glamour. Their glamour makes them take the appearance of someone passingly familiar to the onlooker, often mistaken for ancient heroes, the long lost, or dearly departed, but can always be identified by the wooden mask covering their face. Eidolons fight with illusions and attackers may have difficulty discerning friend from foe in their presence."
 #end
 
-#newmonster 9003 -- Eidolon Mount
+#newmonster 9042 -- Eidolon Mount
 #copystats 40 -- heavy infantry
 #spr1 "magicenhanced/blue_eidolonmount1.tga"
 #spr2 "magicenhanced/blue_eidolonmount2.tga"
@@ -51294,7 +52489,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #descr "The Eidolon is a being of the feywild cloaked in mist and glamour. Their glamour makes them take the appearance of someone passingly familiar to the onlooker, often mistaken for ancient heroes, the long lost, or dearly departed, but can always be identified by the wooden mask covering their face. Eidolons fight with illusions and attackers may have difficulty discerning friend from foe in their presence."
 #end
 
-#newmonster 9004 -- Lantern Bearer
+#newmonster 9043 -- Lantern Bearer
 #copystats 40 -- heavy infantry
 #spr1 "magicenhanced/blue_lanternbearer1.tga"
 #spr2 "magicenhanced/blue_lanternbearer2.tga"
@@ -51303,7 +52498,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #descr "The Eidolon is a being of the feywild cloaked in mist and glamour. Their glamour makes them take the appearance of someone passingly familiar to the onlooker, often mistaken for ancient heroes, the long lost, or dearly departed, but can always be identified by the wooden mask covering their face. Eidolons fight with illusions and attackers may have difficulty discerning friend from foe in their presence."
 #end
 
-#newmonster 9005 -- Lantern Bearer Mount
+#newmonster 9044 -- Lantern Bearer Mount
 #copystats 40 -- heavy infantry
 #spr1 "magicenhanced/blue_lanternbearermount1.tga"
 #spr2 "magicenhanced/blue_lanternbearermount2.tga"
@@ -77234,6 +78429,12 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #end
 
 #selectmonster 81  -- Aby Infantry
+--#spr1 "vanilla/abysian81_1.tga"
+--#icenatprot -1
+--#cleararmor
+--#armor 9 -- plate cuirass
+--#armor 20 -- cap
+--#prot 3
 #neednoteat
 #end
 
@@ -97549,11 +98750,69 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 9
 #look 2
 #homecom 8898
-#homecom 9001
-#homecom 9002
-#homecom 9003
-#homecom 9004
-#homecom 9005
+#homecom 9040
+#homecom 9041
+#homecom 9042
+#homecom 9043
+#homecom 9044
+#end
+
+#newsite 2496
+#name "testestest2"
+#level 0
+#rarity 5
+#path 9
+#look 2
+#homecom 9001 -- Shadow Deer
+#homecom 9002 -- Shadow Lion
+#homecom 9003 -- Shadow Wolf (Stats averaged between black dog and wolf)
+#homecom 9004 -- Shadow Spider
+#homecom 9005 -- Shadow Bear
+#homecom 9006 -- Shadow Moose
+#homecom 9007 -- Shadow Boar (Stats averaged between boar and great boar, rounded up)
+#homecom 9009 -- Shadow Militia
+#homecom 9010 -- Shadow Light Infantry
+#homecom 9011 -- Shadow Heavy Infantry
+#homecom 9012 -- Shadow Barbarian
+#homecom 9013 -- Shadow Bear Tribe
+#homecom 9014 -- Shadow Satyr
+#homecom 9015 -- Shadow City Guard (C'tis)
+#end
+
+#newsite 2497
+#name "testestest3"
+#level 0
+#rarity 5
+#path 9
+#look 2
+#homecom 9016 -- Shadow Rat
+#homecom 9017 -- Shadow Frog
+#homecom 9035 -- Shadow Bird
+#homecom 9018 -- Shadow Cat
+#homecom 9019 -- Shadow Forest Troll
+#homecom 9020 -- Shadow Mountain Troll
+#homecom 9021 -- Shadow War Troll
+#homecom 9024 -- Shadow Jotun Spearman Warrior
+#homecom 9025 -- Shadow Jotun Axe Warrior
+#homecom 9026 -- Shadow Giant
+#homecom 9027 -- Shadow Werewolf
+#end
+
+
+#newsite 2498
+#name "testestest4"
+#level 0
+#rarity 5
+#path 9
+#look 2
+#homecom 9028 -- Great Shadow Dragon
+#homecom 9029 -- Great Shadow Bird
+#homecom 9030 -- Great Shadow Nosoi? not really but it looks cool
+#homecom 9031 -- Great Shadow Leng Spider
+#homecom 9032 -- Great Shadow Lord of the Wild
+#homecom 9033 -- Great Shadow Niefel Jarl
+#homecom 9034 -- Great Shadow Cyclops
+#homecom 9036 -- Shadow Elemental
 #end
 
 
@@ -102563,6 +103822,9 @@ Priests: Average"
 #swampcom 2169 -- Hunter Chief
 
 #futuresite "testestest"
+#futuresite "testestest2"
+#futuresite "testestest3"
+#futuresite "testestest4"
 #futuresite "Blessing of Fortune"
 #futuresite "EA Ur Summons"
 #futuresite "EA Ur Summons Continued"
@@ -106672,18 +107934,17 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 
 #selectspell 2190
 #name "Contact Leng Spider"
-#descr "The caster travels to a highland plateau to contact one of the Spiders of Leng. These gigantic magical spiders are strong in the magic of dreams and will serve the caster if persuaded with magical gems."
+#descr "The caster travels to a highland plateau to contact one of the Spiders of Leng. These gigantic magical spiders are strong in the magic of dreams and nightmares and will serve the caster if persuaded with magical gems."
 #school 0
 #researchlevel 6
-#path 0 4 -- S
+#path 0 7 -- G
 #pathlevel 0 3
-#path 1 7 -- G
+#path 1 5 -- D
 #pathlevel 1 1
 #effect 10021
 #nreff 1
 #damage 7805 -- Leng Spider
-#fatiguecost 3500gnome
-
+#fatiguecost 3500
 #onlygeosrc 16  -- Highlands
 #end
 
@@ -106692,9 +107953,9 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #descr "The caster locates and travels down the Seven Hundred Steps of Deeper Slumber to enter the realm of dreams. There they will journey to the abode of Atlach-Nacha and create a bridge to the waking world. Atlach-Nacha appears as a gigantic spider larger than an elephant and is worshipped by the Leng Spiders. He is steeped in the magic of dreams and death, and it is said he can weave the fate of men."
 #school 0
 #researchlevel 8
-#path 0 4
-#pathlevel 0 3
-#path 1 5
+#path 0 7 -- G
+#pathlevel 0 5
+#path 1 5 -- D
 #pathlevel 1 3
 #effect 10089
 #nreff 1
@@ -111443,7 +112704,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #nreff 2003 -- 10++
 #restricted 109 -- LA Tien Chi
 #sound 43  -- Raise Dead
-#nextspell 4154 -- Spirit Blessing
+#nextspell 4163 -- Spirit Blessing
 #end
 
 #selectspell 2556
@@ -132598,7 +133859,7 @@ Applies the effects of Holy Avenger to the caster"
 #nextspell 3056
 #end
 
-#selectspell 4154
+#selectspell 4163
 #copyspell 200
 #name "Spirit Blessing"
 #descr "."
@@ -132608,6 +133869,156 @@ Applies the effects of Holy Avenger to the caster"
 #damage 1 -- Bless
 #explspr -1
 #end
+
+
+-- Shadow Animals
+#selectspell 4164
+#name "Capture Shadow Animals"
+#descr "The Shadow Weaver steals the shadows of many animals, then binds them to the weaver's will. Animal shadows are among the easiest to bind, but consequently their shadows are not very powerful. The shadows of animals often retain some attributes of their origin, and can prove difficult to hit in the darkness. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#school 4 -- Enchantment
+#researchlevel 2
+#path 0 7 -- Glamour
+#pathlevel 0 1
+#path 1 5 -- Death
+#pathlevel 1 1
+#effect 10001
+#nreff 1019 -- 20+1
+#damage -1070 -- Shadow Animals
+#fatiguecost 500
+--#spec 8388608
+#end
+
+-- Shadow People
+#selectspell 4165
+#name "Capture Shadows"
+#descr "The caster steals the shadows of many people, then binds them to the weaver's will. The shadows of people often retain some of their skills and equipment, and can prove very difficult to hit in the darkness. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#school 4 -- Enchantment
+#researchlevel 4
+#path 0 7 -- Glamour
+#pathlevel 0 2
+#path 1 5 -- Death
+#pathlevel 1 1
+#effect 10001
+#nreff 1008 -- 10+1
+#damage -1071 -- Shadow People
+#fatiguecost 300
+--#spec 8388608
+#end
+
+-- Capture Giant Shadows
+#selectspell 4166
+#name "Capture Giant Shadows"
+#descr "The caster borrows the shadows of particularly mighty beings such as trolls or giants, then binds them to the weaver's will. The shadows of giants often retain some of their skills and equipment. Like all shadows, giant shadows are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#school 4 -- Enchantment
+#researchlevel 6
+#path 0 7 -- Glamour
+#pathlevel 0 3
+#path 1 5 -- Death
+#pathlevel 1 2
+#effect 10001
+#nreff 1002 -- 5+1
+#damage -1073 -- Shadow Trolls
+#fatiguecost 500
+--#spec 8388608
+#end
+
+-- Capture Great Shadow
+#selectspell 4167
+#name "Capture Great Shadow"
+#descr "The caster steals the shadow of a magically powerful being, then binds it to the weaver's will. The shadows of the most magically powerful beings often retain some of their magical power and sentience. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#school 4 -- Enchantment
+#researchlevel 8
+#path 0 7 -- Glamour
+#pathlevel 0 5
+#path 1 5 -- Death
+#pathlevel 1 3
+#effect 10021
+#nreff 1
+#damage -1074 -- Great Shadow
+#fatiguecost 3500
+#end
+
+#selectspell 4168 -- Capture Bird Shadow
+#name "Capture Bird Shadow"
+#descr "The shadows of birds are difficult to bind, as they retain the free spirited nature of their origin. Once successfully bound, while not very powerful, they make very useful scouts as they are hard to spot and can travel far in short time."
+#school 4 -- Enchantment
+#researchlevel 1
+#path 0 7 -- Glamour
+#pathlevel 0 1
+#path 1 5 -- Death
+#pathlevel 1 1
+#effect 10021
+#nreff 1
+#damage 9035 -- Shadow Bird
+#fatiguecost 300
+#end
+
+#selectspell 4169 -- Summon Shadow Incarnate
+#copyspell 1000 -- Summon Water Elemental
+#name "Summon Shadow Incarnate"
+#descr "The caster forms and binds a massive Shadow Incarnate to aid them in battle. Shadow Incarnates are difficult to kill and sap the strength of everyone nearby while crushing enemies. Like all shadows, they grow weaker when removed from the darkness."
+#school 0
+#researchlevel 5
+#path 0 7 -- Glamour
+#pathlevel 0 3
+#path 1 5 -- Death
+#pathlevel 1 2
+#damage 7799 -- Shadow Incarnate
+#fatiguecost 100
+#spec 8388608
+#end
+
+
+-- Bind Strength
+#selectspell 4170
+#copyspell 44 -- Extra Cripple
+#name "Bind Strength"
+#effect 67
+#damage 3
+--#spec 562036864 -- MR Easy
+#spec 545280128 -- MR Normal
+#end
+
+-- Bind Movement
+#selectspell 4171
+#copyspell 44 -- Extra Cripple
+#name "Bind Movement"
+#effect 11
+#damage 68719476736
+--#spec 562036864 -- MR Easy
+#spec 545280128 -- MR Normal
+#nextspell 4170
+#end
+
+-- Bind Shadow
+#selectspell 4172
+#copyspell 808 -- Slow
+--#copyspell 659 -- Drain Life
+#name "Bind Shadows"
+#descr "The caster takes hold of the shadows of their enemies and attempts to restrain them. The shock may cause harm and enemies successfully affected by this spell may find their movements sluggish or their strength permanently drained. More powerful mages can attempt this on a larger area of shadow from far greater distances."
+#explspr 10057 -- Rising Black Smoke
+#sound 23 -- Doom
+#school 1
+#researchlevel 4
+#path 0 7 -- Glamour
+#pathlevel 0 2
+#path 0 5 -- Death
+#pathlevel 0 1
+#nreff 1
+#range 10005 -- 25+10
+--#aoe 1004
+#aoe 2001 -- 5++
+--#aoe 2002
+#effect 2
+#damage 1
+#fatiguecost 20
+#spec 545263744 -- MR normal
+--#spec 17592731320448 -- MR hard
+--#spec 1152921505152127104 -- MR Normal, extra effect only on damage
+--#spec 1152939097338167424 -- MR Hard, extra effect only on damage
+#nextspell 4171
+#end
+
 
 
 
@@ -133342,7 +134753,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 535 -- Wrath of the Ancestors
 #restricted 189
 #restricted 191 -- Tartary
-#nextspell 4154 -- Spirit Blessing
+#nextspell 4163 -- Spirit Blessing
 #end
 
 #selectspell 536 -- cyclops tribe rename
@@ -133891,6 +135302,38 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 828 -- Solar Eclipse
 #nogeosrc 4096  -- Cannot cast in Caves
+#end
+
+#selectspell 668 -- Shadow Bolt
+#path 0 5
+#pathlevel 0 1
+#path 1 7
+#pathlevel 1 1
+#aoe 1001
+#spec 2305843009759494272
+#end
+
+#selectspell 701 -- Shadow Blast
+#path 0 5
+#pathlevel 0 2
+#path 1 7
+#pathlevel 1 1
+#aoe 1010 -- 12+
+#spec 2305843009759494272
+#end
+
+#selectspell 714 -- Blast of Unlife
+#pathlevel 0 2
+#aoe 106 -- 8+
+#fatiguecost 100
+#end
+
+#selectspell 1322 -- Leeching Darkness
+--#path 0 7
+--#pathlevel 0 3
+--#path 1 5
+--#pathlevel 1 1
+--#aoe 1002 -- 5+
 #end
 
 #selectspell 704 -- Phantasmal Army
