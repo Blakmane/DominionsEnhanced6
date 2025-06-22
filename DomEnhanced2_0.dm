@@ -34707,13 +34707,17 @@ While in the form of an old man, all paths are increased and allows the use of N
 #end
 
 #newmonster 7805
-#copystats 884  -- Great Spider
 #clearweapons
 #spr1 "magicenhanced/eelengspidersmallpurp.tga"
 #spr2 "magicenhanced/eelengspidersmallpurp2.tga"
 #name "Leng Spider"
 #descr "Leng Spiders are gigantic magical spiders that came to the world of men from the realm of dreams. They grow to enormous size and the largest are the size of an elephant. They can spin webs and have a deadly venomous bite. Long ago, the Spiders controlled the area known as the Plateau of Leng. They were defeated in times past by a strange race of men who forced them to abandon their homeland and retreat to the land of dreams. Leng Spiders are innately magical creatures that weave dreams like webs and their poisons cause unnatural tiredness. The presence of a Leng Spider will cause nearby beings to slumber and dream of strange caverns below the earth. They worship an even greater being known as Atlach-Nacha that still resides in the dream realm."
 #quadruped
+#eyes 8
+#poisonres 15
+#spiritsight
+#att 12
+#enc 2
 #firstshape 0
 #hp 66
 #size 8
@@ -34746,7 +34750,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #end
 
 #newmonster 7806
-#copystats 884  -- Great Spider
+--#copystats 884  -- Great Spider
 #clearweapons
 #spr1 "magicenhanced/eelengspider.tga"
 #spr2 "magicenhanced/eelengspider2.tga"
@@ -34755,6 +34759,11 @@ While in the form of an old man, all paths are increased and allows the use of N
 #quadruped
 #firstshape 0
 #fixedname "Atlach-Nacha"
+#eyes 8
+#poisonres 15
+#spiritsight
+#att 12
+#enc 2
 #hp 120
 #str 22
 #size 10
@@ -47279,7 +47288,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr1 "blue_oceania/potamoi1.png"
 #spr2 "blue_oceania/potamoi2.png"
 #name "Potamoi"
-#descr "Potamoi are gods of the rivers and streams of the earth, and sons of Oceanus. As the half-men lost their lands to Atlantian invasions, many of them were forced to retreat into the rivers and streams of the world, where they were taken in by the Potamoi that preside over them. They have the appearance of a bull-headed man with a serpent-like fish's tail, and are held sacred by the half-men of the river. As manifestations of the river, they control great power over water and the land their rivers lie on."
+#descr "Potamoi are gods of the rivers and streams of the earth, and sons of Okeanus. As the half-men lost their lands to Atlantian invasions, many of them were forced to retreat into the rivers and streams of the world, where they were taken in by the Potamoi that preside over them. They have the appearance of a bull-headed man with a serpent-like fish's tail, and are held sacred by the half-men of the river. As manifestations of the river, they control great power over water and the land their rivers lie on."
 #gcost 0
 #rpcost 4
 #hp 45
@@ -47871,7 +47880,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr1 "blue_oceania/maoceanid1.png"
 #spr2 "blue_oceania/maoceanid2.png"
 #name "Oceanid"
-#descr "The Oceanides are freshwater spirits, presiding over many sources of freshwater from rain clouds to subterranean springs and fountains, and many reside in the underworld. They are daughters of Oceanus and the sisters of the Potamoi, and appear as incredibly beautiful women few mortals would dream of harming. As manifestations of fresh water, they control great power over water as well as the environment of their source."
+#descr "The Oceanides are freshwater spirits, presiding over many sources of freshwater from rain clouds to subterranean springs and fountains, and many reside in the underworld. They are daughters of Okeanus and the sisters of the Potamoi, and appear as incredibly beautiful women few mortals would dream of harming. As manifestations of fresh water, they control great power over water as well as the environment of their source."
 #gcost 0
 #homesick 0
 #hp 15
@@ -47880,7 +47889,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #humanoid
 #clearmagic
 #magicskill 2 3 -- Water
-#custommagic 41972992 300 -- AEDNG
+--#custommagic 29952 300 -- AEDNG
+#custommagic 29696 300 -- EDNG
 #nametype 160 -- Oceania Female
 #end
 
@@ -71288,7 +71298,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #spr1 "blue_oceania/styx1b.png"
 #spr2 "blue_oceania/styx2b.png"
 #name "Titan of the Underworld Rivers"
-#descr "The Titan of the Underworld Rivers is among the first and eldest of the Oceanides, daughters of Oceanus, and manifestation of the underworld river that separates the land of the living from the dead. In a previous war among the heavens she sided with the Pantokrator on the advice of Oceanus, and it was thusly decreed that all solemn oaths by the gods must be sworn by her water. However, the Pantokrator also feared her waters, and so kept her confined to the Underworld, in a cave propped up by silver pillars. Now with the Pantokrator gone, she is free to leave as she pleases."
+#descr "The Titan of the Underworld Rivers is among the first and eldest of the Oceanides, daughters of Okeanus, and manifestation of the underworld river that separates the land of the living from the dead. In a previous war among the heavens she sided with the Pantokrator on the advice of Okeanus, and it was thusly decreed that all solemn oaths by the gods must be sworn by her water. However, the Pantokrator also feared her waters, and so kept her confined to the Underworld, in a cave propped up by silver pillars. Now with the Pantokrator gone, she is free to leave as she pleases."
 #diseaseres 100
 #gcost 290
 #homerealm 3 -- Mediterranean
@@ -83831,6 +83841,23 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #twiceborn 7231 -- Wight Giant
 #end
 
+#selectmonster 3155 -- Colossi Weaver
+#clearmagic
+#magicskill 1 1
+#magicskill 4 1
+#custommagic 20352 100 -- FAWESG
+#end
+
+#selectmonster 3158 -- Prince Consort
+#clearmagic
+#magicskill 0 1
+#magicskill 1 3
+#magicskill 2 2
+#magicskill 9 1
+#custommagic 18304 100 -- FAWEG
+#custommagic 18304 10 -- FAWEG
+#end
+
 #selectmonster 3159 -- Orichalcum Guard
 #bodyguard 4
 #end
@@ -83838,6 +83865,11 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 
 #selectmonster 3164  -- Keledone
 #reinvigoration 100 -- untiring automatons
+#end
+
+#selectmonster 3166 -- Phaecian Priest
+#descr "The priests of Phaeacia are trained sailors and travel to newly founded colonies to spread the faith and prepare for the arrival of the Dark Vessels. The trade connections of Phaecia allow their priests to travel the world with relative safety."
+#stealthy 0
 #end
 
 #selectmonster 3167  -- Drakon Hesperidos
@@ -95417,6 +95449,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8593 -- Aphroi Lord
 #homecom 8582 -- Potamoi
 #homecom 8599 -- Oceanid
+#homecom 7374 -- nephelae
 #homecom 7276 -- Cetus
 #end
 
@@ -98776,75 +98809,61 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #newsite 2495
-#name "testestest"
+#name "MA Phaecia Summons"
 #level 0
 #rarity 5
-#path 9
-#look 2
-#homecom 8898
-#homecom 9040
-#homecom 9041
-#homecom 9042
-#homecom 9043
-#homecom 9044
+#path 3
+#look 7
+#homemon 628 -- lion
+#homemon 3119 -- spartae
+#homemon 3127 -- ker
+#homemon 3164 -- keledone
+#homemon 3168 -- twi dog
+#homemon 3169 -- kurn a
+#homemon 3170 -- kuon k
+#homemon 3171 -- khalk
+#homecom 3160 -- hesp
+#homecom 3724 -- air ele s7
+#homecom 7289 -- boread
+#homecom 7373 -- elein
+#homecom 7374 -- nephel
+#homecom 8599 -- oceanid
 #end
 
 #newsite 2496
-#name "testestest2"
+#name "MA Phaecia Unique Summons"
 #level 0
 #rarity 5
-#path 9
-#look 2
-#homecom 9001 -- Shadow Deer
-#homecom 9002 -- Shadow Lion
-#homecom 9003 -- Shadow Wolf (Stats averaged between black dog and wolf)
-#homecom 9004 -- Shadow Spider
-#homecom 9005 -- Shadow Bear
-#homecom 9006 -- Shadow Moose
-#homecom 9007 -- Shadow Boar (Stats averaged between boar and great boar, rounded up)
-#homecom 9009 -- Shadow Militia
-#homecom 9010 -- Shadow Light Infantry
-#homecom 9011 -- Shadow Heavy Infantry
-#homecom 9012 -- Shadow Barbarian
-#homecom 9013 -- Shadow Bear Tribe
-#homecom 9014 -- Shadow Satyr
-#homecom 9015 -- Shadow City Guard (C'tis)
+#path 3
+#look 7
+#homecom 3167 -- drakon
+#homecom 7298 -- kerberos
+#homecom 7290 -- river lord
+#homecom 7250 -- athene
+#homecom 7251 -- pose
+#homecom 7256 -- sun neter
+#homecom 7257 -- chaos neter
+#homecom 7258 -- moon neter
 #end
 
 #newsite 2497
-#name "testestest3"
+#name "MA Phaecia Heroes"
 #level 0
 #rarity 5
 #path 9
-#look 2
-#homecom 9016 -- Shadow Rat
-#homecom 9017 -- Shadow Frog
-#homecom 9035 -- Shadow Bird
-#homecom 9018 -- Shadow Cat
-#homecom 9019 -- Shadow Forest Troll
-#homecom 9020 -- Shadow Mountain Troll
-#homecom 9021 -- Shadow War Troll
-#homecom 9024 -- Shadow Jotun Spearman Warrior
-#homecom 9025 -- Shadow Jotun Axe Warrior
-#homecom 9026 -- Shadow Giant
-#homecom 9027 -- Shadow Werewolf
+#look 0
+#homecom 3173
+#homecom 3174
 #end
 
-
 #newsite 2498
-#name "testestest4"
+#name "Gigantes of Black Korkyra"
 #level 0
 #rarity 5
 #path 9
 #look 2
-#homecom 9028 -- Great Shadow Dragon
-#homecom 9029 -- Great Shadow Bird
-#homecom 9030 -- Great Shadow Nosoi? not really but it looks cool
-#homecom 9031 -- Great Shadow Leng Spider
-#homecom 9032 -- Great Shadow Lord of the Wild
-#homecom 9033 -- Great Shadow Niefel Jarl
-#homecom 9034 -- Great Shadow Cyclops
-#homecom 9036 -- Shadow Elemental
+#homemon 3150
+#homecom 3149
 #end
 
 
@@ -103857,10 +103876,6 @@ Priests: Average"
 #swampcom 2171  -- Bone Reader
 #swampcom 2169 -- Hunter Chief
 
-#futuresite "testestest"
-#futuresite "testestest2"
-#futuresite "testestest3"
-#futuresite "testestest4"
 #futuresite "Blessing of Fortune"
 #futuresite "EA Ur Summons"
 #futuresite "EA Ur Summons Continued"
@@ -104751,6 +104766,11 @@ Dominion: Causes dreamless slumber, greatly reducing tax income. Vines reanimate
 #startunitnbrs1 30
 #startunittype2 3144  -- Phaeacian Archer
 #startunitnbrs2 30
+
+#futuresite "MA Phaecia Summons"
+#futuresite "MA Phaecia Unique Summons"
+#futuresite "MA Phaecia Heroes"
+#futuresite "Gigantes of Black Korkyra"
 #end
 
 #selectnation 67 -- MA Ind
@@ -104981,7 +105001,7 @@ Military: Amphibious half-men. Heavily armored infantry, sacred Ichtycentaur Kni
 Magic: Nature, Water, some Air, Earth, Astral, Death, and Glamour.
 Priests: Weak, magical"
 #brief "Oceania is a realm of the underwater wild and the clashing tides of the shores. The half-men inhabitants can remove their tails to raid and settle on dry land. The Capricorn is a powerful mage of the underwater wild and transition, whose powers changes when he leaves the sea."
-#descr "Oceania is an underwater realm of half-men. Since the Atlantians emerged from the deeps, the half-men have lost more and more of their former domains. The kelp groves have been desecrated and murky water has spread in the kelp, forcing the half-men to find new lands. The Grove of Aphros is destroyed, and the remaining pure-blooded Aphroi are few and old. The Haliades that once tended the kelp groves have been driven away entirely. Only with the Fall of the Star was the Atlantian onslaught halted. The Starspawns of the Sunken City enslaved the Atlantians and consumed their will. However, Oceania is a land of change, and the half-men adapt. Their forces are becoming more organized and better equipped. Ichtycentaur are taking up the mantle the Aphroi once held as Hierophants, and some are becoming sages practiced in the magic of constellations. Many half-men now reside in the rivers of the world and have brought the Potamoi, the children of Oceanus that rule them, to their side. During the war between Atlantis and R'lyeh, a new God emerged from the depths, and the Capricorns have mustered their forces in the last remaining kelp grove of Bythos, on the boundary between Oceania and the Underworld. Now it is time to reclaim the deeps and conquer the world. The Capricorns, wild mages of the sea and the shores lead the nation in conquest of a sea once theirs."
+#descr "Oceania is an underwater realm of half-men. Since the Atlantians emerged from the deeps, the half-men have lost more and more of their former domains. The kelp groves have been desecrated and murky water has spread in the kelp, forcing the half-men to find new lands. The Grove of Aphros is destroyed, and the remaining pure-blooded Aphroi are few and old. The Haliades that once tended the kelp groves have been driven away entirely. Only with the Fall of the Star was the Atlantian onslaught halted. The Starspawns of the Sunken City enslaved the Atlantians and consumed their will. However, Oceania is a land of change, and the half-men adapt. Their forces are becoming more organized and better equipped. Ichtycentaur are taking up the mantle the Aphroi once held as Hierophants, and some are becoming sages practiced in the magic of constellations. Many half-men now reside in the rivers of the world and have brought the Potamoi, the children of Okeanus that rule them, to their side. During the war between Atlantis and R'lyeh, a new God emerged from the depths, and the Capricorns have mustered their forces in the last remaining kelp grove of Bythos, on the boundary between Oceania and the Underworld. Now it is time to reclaim the deeps and conquer the world. The Capricorns, wild mages of the sea and the shores lead the nation in conquest of a sea once theirs."
 
 -- old details:
 --#epithet "Mermidons"
@@ -110533,7 +110553,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1024 -- Awaken Sleeper
 #name "Contact Oceanid"
 --#descr "The caster travels underwater and makes a deal with an Oceanid. Oceanides are sea spirits that manifest themselves as incredibly beautiful women. Few mortals would dream of harming an Oceanid. They are connected to the Sea and and will produce water gems each month. Whilst they can leave the water for short periods they will slowly die if kept away from their home for too long. Oceanides are powerful mages of Water."
-#descr "The caster travels to the home of an Oceanid and requests their aide. The Oceanides are freshwater spirits, presiding over many sources of freshwater from rain clouds to subterranean springs and fountains, and many reside in the underworld. They are daughters of Oceanus and the sisters of the Potamoi, and appear as incredibly beautiful women few mortals would dream of harming. As manifestations of fresh water, they control great power over water as well as the environment of their source."
+#descr "The caster travels to the home of an Oceanid and requests their aide. The Oceanides are freshwater spirits, presiding over many sources of freshwater from rain clouds to subterranean springs and fountains, and many reside in the underworld. They are daughters of Okeanus and the sisters of the Potamoi, and appear as incredibly beautiful women few mortals would dream of harming. As manifestations of fresh water, they control great power over water as well as the environment of their source."
 #details "Summons an Oceanid with 3W 100% 3AEDNG."
 #researchlevel 5
 #path 0 2
@@ -110613,6 +110633,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #restricted 77
 #restricted 95
 #restricted 125
+#restricted 87 -- Oceania
 #spec 0
 #nogeosrc 4096  -- Cannot cast in Caves
 #end
@@ -128716,7 +128737,7 @@ All effects scale with friendly Dominion."
 #selectspell 3807 -- Oceanid
 #copyspell 1003 -- Contact Naiad
 #name "Contact Oceanid"
-#descr "The caster travels to the home of an Oceanid and requests their aide. The Oceanides are freshwater spirits, presiding over many sources of freshwater from rain clouds to subterranean springs and fountains, and many reside in the underworld. They are daughters of Oceanus and the sisters of the Potamoi, and appear as incredibly beautiful women few mortals would dream of harming. As manifestations of fresh water, they control great power over water as well as the environment of their source."
+#descr "The caster travels to the home of an Oceanid and requests their aide. The Oceanides are freshwater spirits, presiding over many sources of freshwater from rain clouds to subterranean springs and fountains, and many reside in the underworld. They are daughters of Okeanus and the sisters of the Potamoi, and appear as incredibly beautiful women few mortals would dream of harming. As manifestations of fresh water, they control great power over water as well as the environment of their source."
 #details "Summons an Oceanid with 3W 100% 3AEDNG."
 #damage 8599 -- Oceanid
 #fatiguecost 2200
@@ -128728,7 +128749,7 @@ All effects scale with friendly Dominion."
 #selectspell 3808 -- Potamoi
 #copyspell 1003 -- Contact Naiad
 #name "Contact Potamoi"
-#descr "The caster requests the aide of a Potamoi at their river. Potamoi are gods of the rivers and streams of the earth, and sons of Oceanus. As the half-men lost their lands to Atlantian invasions, many of them were forced to retreat into the rivers and streams of the world, where they were taken in by the Potamoi that preside over them. They have the appearance of a bull-headed man with a serpent-like fish's tail, and are held sacred by the half-men of the river. As manifestations of the river, they control great power over water and the land their rivers lie on."
+#descr "The caster requests the aide of a Potamoi at their river. Potamoi are gods of the rivers and streams of the earth, and sons of Okeanus. As the half-men lost their lands to Atlantian invasions, many of them were forced to retreat into the rivers and streams of the world, where they were taken in by the Potamoi that preside over them. They have the appearance of a bull-headed man with a serpent-like fish's tail, and are held sacred by the half-men of the river. As manifestations of the river, they control great power over water and the land their rivers lie on."
 #details "Summons a sacred Potamoi with 3W2N1A 100% AWN."
 #damage 8582 -- Potamoi
 #fatiguecost 3000
@@ -134289,7 +134310,7 @@ Applies the effects of Holy Avenger to the caster"
 #name "Summon Hounds of Twilight"
 #descr "The Hounds of Twilight are stygian monsters spawned by the Mother of Monsters at the dawn of time. The greatest of them was fettered at the Gates of the Underworld to prevent the dead from returning to the land of the living. His siblings were lesser in might and were allowed to reign free. The beasts appear as black, two-headed hounds with serpent tails. They are huge and frightening to behold."
 #nreff 1001 -- 3+
-#fatiguecost 1000
+#fatiguecost 900
 #restricted 205
 #end
 
@@ -134300,6 +134321,10 @@ Applies the effects of Holy Avenger to the caster"
 
 #selectspell 265 -- Contact Hesperides
 #restricted 205
+#end
+
+#selectspell 267 -- Dogs of Gold and Silver
+#fatiguecost 500
 #end
 
 #selectspell 269 -- Craft Keledone
