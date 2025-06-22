@@ -52696,6 +52696,12 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #holy
 #end
 
+#newmonster 9046 -- War Horse w/ Tattoos
+#copystats 3515
+#copyspr 3515
+#horsetattoo 1
+#end
+
 --#newmonster 8684 -- LA C'tis Hierodule
 --#copystats 510
 --#spr1 "vanilla/lactishierodule1.tga"
@@ -81063,6 +81069,16 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 1203  -- Unfrozen
 #mountainsurvival
+#end
+
+#selectmonster 1207  -- Eponi Chieftain
+#mountmnr 9046
+#horsetattoo 3
+#end
+
+#selectmonster 1208  -- Eponi Knight
+#mountmnr 9046
+#horsetattoo 3
 #end
 
 #selectmonster 1224  -- Dire Wolf
