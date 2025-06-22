@@ -52690,6 +52690,11 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #descr "The Eidolon is a being of the feywild cloaked in mist and glamour. Their glamour makes them take the appearance of someone passingly familiar to the onlooker, often mistaken for ancient heroes, the long lost, or dearly departed, but can always be identified by the wooden mask covering their face. Eidolons fight with illusions and attackers may have difficulty discerning friend from foe in their presence."
 #end
 
+#newmonster 9045 -- Sacred Calydonian Boar
+#copystats 3684
+#copyspr 3684
+#holy
+#end
 
 --#newmonster 8684 -- LA C'tis Hierodule
 --#copystats 510
@@ -82069,6 +82074,14 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #itemslots 2040326
 #end
 
+#selectmonster 1807 -- Marverni Great Boar
+#mr 7
+#end
+
+#selectmonster 1808 -- Marverni Iron Boar
+#mr 7
+#end
+
 #selectmonster 1810  -- Longdead Partholonian
 #spiritsight
 #end
@@ -99008,6 +99021,43 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 3149
 #end
 
+#newsite 2499
+#name "EA Marverni Summons"
+#level 0
+#rarity 5
+#path 6
+#look 4
+--#homemon 694 -- bear
+#homemon 1807 -- s boar
+#homemon 1808 -- s iron boar
+#homemon 8020 -- dire bear
+#homemon 8019 -- s dire boar
+#homemon 9045 -- s calyd boar
+#homemon 7976 -- merrow
+#homemon 7410 -- wicker man
+#homemon 7478 -- tree
+#homemon 7744 -- pict
+#homemon 7745 -- woad
+#homecom 7746 -- pict chief
+#homecom 1809 -- carnute boar
+#homecom 7275 -- boar spirit
+#homecom 7659 -- puck
+#homecom 7660 -- korrig
+#homecom 7237 -- horned one
+#end
+
+#newsite 2500
+#name "EA Marverni Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 3
+#homecom 1588
+#homecom 1843
+#homecom 1849
+#homecom 8124
+#end
+
 
 
 -- END OF NEW SITES
@@ -103533,6 +103583,9 @@ Priests: Average"
 #startunittype2 1212  -- Marverni Javelineer
 #startunitnbrs2 30
 #startscout 426  -- Scout
+
+#futuresite "EA Marverni Summons"
+#futuresite "EA Marverni Heroes"
 #end
 
 #selectnation 9  -- Sauromatia
@@ -108751,7 +108804,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "The caster summons a sounder of great Dire Boars from the deep forest. These boars are fames for their tough hides and spiteful temperament. Like all boars they are sacred to the people of Marverni."
 #researchlevel 5
 #pathlevel 0 3
-#fatiguecost 1300
+#fatiguecost 1000
 #nreff 1005
 #damage 8019
 #restricted 12 -- Marverni
@@ -112061,7 +112114,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #details "All friendly sacred animals gain Size +1, HP +30%, Str +3, Def -1 and Berserk"
 #researchlevel 6
 #path 0 6
-#pathlevel 0 5
+#pathlevel 0 4
 #path 1 3
 #pathlevel 1 2
 #fatiguecost 300
@@ -112103,15 +112156,17 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2496
 #copyspell 935 -- Pack of Wolves
 #name "Summon Picts"
-#descr "The caster enters a deep forest and calls a group of Picts to emerge and serve the Awakening God. The Picts are an isolated tribe that lives in the frigid corner of an ancient island. Long ago they retreated to their isle and became creatures of myth and legend. The Picts adorn themselves with tattoos daubed in blue woad, a special paint made from sacred herbs that grow only on their island, and which they believe will grant them fortune in battle. Pictish warriors are revered for the sacred Woad they wear."
+#descr "The caster travels to a tribe of Picts to request they serve the Awakening God. The Picts are an isolated tribe that lives in the frigid corner of an ancient island. Long ago they retreated to their isle and became creatures of myth and legend. The Picts adorn themselves with tattoos daubed in blue woad, a special paint made from sacred herbs that grow only on their island, and which they believe will grant them fortune in battle. Pictish warriors are revered for the sacred Woad they wear."
 #researchlevel 3
 #path 1 9
 #pathlevel 1 1
-#nreff 508
+#nreff 510
 #damage 7744 -- Pictish Warrior
 #fatiguecost 800
 #onlygeosrc 128
 #restricted 12 -- Marverni
+#restricted 57 -- MA Man
+#restricted 185 -- Albion
 #end
 
 #selectspell 2497
@@ -112124,11 +112179,11 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #end
 
 #selectspell 2498
-#name "Ten Woad Warriors"
+#name "Fifteen Woad Warriors"
 #researchlevel 0
 #school -1
 #effect 10001
-#nreff 10
+#nreff 15
 #damage 7745 -- Woad Warrior
 #nextspell 2497
 #end
@@ -112141,30 +112196,13 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 3
 #path 1 9
 #pathlevel 1 1
-#nreff 24
+#nreff 25
 #damage 7744 -- Pictish Warrior
 #fatiguecost 3500
 #onlygeosrc 128
 #nextspell 2498
 #restricted 12 -- Marverni
 #restricted 185 -- Albion
-#end
-
-#selectspell 2500
-#name "Read the Stars"
-#descr "To the druids the movement of the sun and the stars reveals the shape of things to come. Great rituals are planned around the changing of the seasons and the stars are used to predict the future. This enchantment allows the druids to increase the chance of good events within friendly Dominion. In addition druids will be able to erect Standing Stones that can channel magical energy. This enchantment lasts until someone dispels it or the caster dies."
-#details "Luck scales increase in friendly Dominion. Provinces containing an Elder Druid or Druid have a 5-10% chance to gain a Druid Circle or Standing Stones site each month."
-#portent "The Druids of ##disnat## have decreed that the very heavens support the cause of ##godname## and are aligning to bring them good fortune! Worshippers of other Pretender Gods wonder in fear why the Heavens are aligned against them. Unless action is taken against the arrogant Druids their claims may prove true, to the detriment of all other nations!"
-#school 4
-#researchlevel 6
-#path 0 4
-#pathlevel 0 5
-#restricted 12 -- Marverni
-#restricted 185 -- Albion
-#effect 10081
-#damage 220  -- Read the Stars
-#nreff 1
-#fatiguecost 5000
 #end
 
 #selectspell 2501
@@ -115555,21 +115593,6 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #nreff 10060 -- 100+10
 #restricted 11 -- Tir na Nog
 #nextspell 0
-#end
-
-#selectspell 2736
-#copyspell 935 -- Pack of Wolves
-#name "Summon Highlanders"
-#descr "The caster travels to a deserted highland and calls a group of Picts to emerge and serve the Awakening God. The Picts are an isolated tribe that lives in the frigid heights. Long ago they retreated to the glens and lochs of their home and became creatures of myth and legend. The Picts adorn themselves with tattoos daubed in blue woad, a special paint made from sacred herbs that grow only on their island, and which they believe will grant them fortune in battle. Pictish warriors are revered for the sacred Woad they wear."
-#researchlevel 3
-#path 1 9
-#pathlevel 1 1
-#nreff 1011
-#damage 7744 -- Pictish Warrior
-#fatiguecost 800
-#onlygeosrc 8388624  -- Mountain
-#restricted 185 -- Albion
-#restricted 57 -- MA Man
 #end
 
 #selectspell 2737
@@ -123656,23 +123679,6 @@ All effects scale with friendly Dominion."
 #explspr 10013
 #sound 31
 #spec 12599296  -- Ignore shields, Friendly only, UWOK
-#restricted 185 -- Albion
-#end
-
-#selectspell 3335
-#copyspell 935 -- Pack of Wolves
-#name "Summon Pictish Tribe"
-#descr "The caster travels to a deserted highland and calls a tribe of Picts to emerge and serve the Awakening God. The tribe will include twenty four Pictish warriors in addition to ten Woad Warriors, daubed from head to toe in sacred Woad. The tribe will be lead by a chieftain skilled in stealth. The Picts are an isolated tribe that lives in the frigid heights. Long ago they retreated to the glens and lochs of their home and became creatures of myth and legend. Pictish warriors are revered for the sacred Woad they wear."
-#researchlevel 5
-#pathlevel 0 3
-#path 1 9
-#pathlevel 1 1
-#nreff 24
-#damage 7744 -- Pictish Warrior
-#fatiguecost 3500
-#onlygeosrc 128
-#nextspell 2498
-#onlygeosrc 8388624  -- Mountain
 #restricted 185 -- Albion
 #end
 
@@ -134338,6 +134344,32 @@ Applies the effects of Holy Avenger to the caster"
 #fatiguecost 300
 #end
 
+#selectspell 4169 -- Awaken Tattoos
+#copyspell 798 -- Barkskin
+#name "Awaken Tattoos"
+#descr "The caster activates the dormant powers of enchanted tattoos. The unit gains limited invulnerability and increased stats depending on tattoo type. Horse tattoos grant riding skill, bear tattoos grant increased strength, boar tattoos grant increased invulnerability, wolf tattoos grant increased attack skill and snake tattoos grant magic resistance."
+#researchlevel 0
+#school 4
+#effect 23
+#path 0 6
+#pathlevel 0 1
+#path 1 9
+#pathlevel 1 1
+#damage 549755813888
+#aoe 5000 -- 5+5
+#range 2018 -- 20+2
+#precision 100
+#restricted 12 -- Marverni
+#end
+
+#selectspell 4170 -- Sacred Calydonian Boar
+#copyspell 1057 -- calyd boar
+#name "Call Calydonian Boar"
+#descr "The caster summons a Calydonian Boar and binds it to his service. The Calydonian Boar is a horrible monster boar with burning eyes, spear-like bristles of iron and tusks like that of an elephant. Anyone unfortunate enough to come close to the dreadful beast is set ablaze by the scorching heat of its eyes. The boar breathes flames and its tusks crackles with lightning. Like all boars, Calydonian Boars are sacred to the people of Marverni."
+#damage 9045 -- S Calyd Boar
+#fatiguecost 500
+#researchlevel 6
+#end
 
 
 
@@ -134496,8 +134528,14 @@ Applies the effects of Holy Avenger to the caster"
 #end
 
 #selectspell 280 -- Awaken Tattoos
+#descr "The caster activates the dormant powers of enchanted tattoos. The unit gains limited invulnerability and increased stats depending on tattoo type. Horse tattoos grant riding skill, bear tattoos grant increased strength, boar tattoos grant increased invulnerability, wolf tattoos grant increased attack skill and snake tattoos grant magic resistance."
 #researchlevel 2
 #aoe 5000 -- 5+5
+#notfornation 12 -- Marverni
+#end
+
+#selectspell 281 -- Marverni Sounder of Boars
+#researchlevel 2
 #end
 
 #selectspell 287 -- Huli Jing
@@ -136036,7 +136074,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 1057 -- Calydonian Boar
-#fatiguecost 700
+#fatiguecost 500
 #end
 
 #selectspell 1050 -- Catoblepas
