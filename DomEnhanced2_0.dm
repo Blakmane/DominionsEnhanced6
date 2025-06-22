@@ -1414,12 +1414,14 @@
 #newweapon 1620
 #copyweapon 380  -- Naginata
 #name "Heavenly Jewelled Spear"
-#dmg 15
-#att 2
-#def 4
+#dmg 18
+#att 4
+#def 5
+#nratt 2
 #magic
 #armorpiercing
 #dt_holy
+#secondaryeffectalways 1871 -- Earth Churn
 #end
 
 #newweapon 1621
@@ -1907,7 +1909,6 @@
 #dmg 25
 #len 4
 #def -2
-#melee50
 #secondaryeffectalways 714  -- Tremor
 #end
 
@@ -3565,7 +3566,14 @@
 #bonus
 #end
 
-
+#newweapon 1871 -- Earth Churn
+#name "Earth Churn"
+#dt_aff
+#dmg 16384
+#flyingimmune
+#aoe 4
+#magic
+#end
 
 
 -- END OF NEW WEAPONS
@@ -3634,6 +3642,123 @@
 #end
 
 -- End Mind Blast Changes
+
+#selectweapon 191 -- Ember
+#armorpiercing
+#end
+
+#selectweapon 84 -- Unquenched Sword
+#nratt 2
+#att 5
+#end
+
+#selectweapon 113 -- Tempest
+#nratt 2
+#end
+
+#selectweapon 193 -- Trident from Beyond
+#nratt 3
+#att 3
+#def 4
+#end
+
+#selectweapon 555 -- Dawn Fang
+#nratt 2
+#armorpiercing
+#end
+
+#selectweapon 103 -- Stone Sword
+#dmg 18
+#end
+
+#selectweapon 104 -- Area Petrification
+#aoe 8
+#end
+
+#selectweapon 87 -- Mage Bane
+#armorpiercing
+#end
+
+#selectweapon 188 -- Tartarian Chains
+#dmg 15
+#end
+
+#selectweapon 189 -- Enslavement
+#hardmrneg
+#end
+
+#selectweapon 295 -- Twin spear
+#nratt 2
+#att 4
+#def 4
+#end
+
+#selectweapon 296 -- Twin spear
+#nratt 2
+#att 4
+#def 4
+#end
+
+#selectweapon 179 -- Sword of Aurgelmer
+#nratt 2
+#att 4
+#def 4
+#end
+
+#selectweapon 158 -- Flailing Hands
+#nratt 3
+#att 5
+#end
+
+#selectweapon 187 -- Sickle Whos Crop is pain
+#nratt 2
+#secondaryeffect 349
+#end
+
+#selectweapon 386 -- Sceptre of Dark Regency
+#nratt 2
+#att 3
+#def 3
+#end
+
+#selectweapon 205 -- Sword of Injustice
+#dmg 10
+#armorpiercing
+#def 3
+#end
+
+#selectweapon 97 -- Woundflame
+#dmg 9
+#armorpiercing
+#nratt 2
+#end
+
+#selectweapon 72 -- Sun Slayer
+#dmg 15
+#armorpiercing
+#end
+
+#selectweapon 336 -- The Sharpest Tooth
+#armornegating
+#end
+
+#selectweapon 678 -- Bow of the Titans
+#nratt -1
+#ammo 30
+#secondaryeffect 1679 -- Shockwave
+#end
+
+#selectweapon 874 -- Pillar of Truths
+#len 3
+#aoe 1
+#end
+
+#selectweapon 875 -- Truths
+#aoe 6
+#friendlyimmune
+#end
+
+--- End unique weapon changes
 
 #selectweapon 106  -- Sword of Swiftness
 #def 2
@@ -4341,6 +4466,23 @@
 
 
 -- END OF NEW ARMORS
+
+#selectarmor 64  -- Aegis
+#enc 0
+#def 3
+#end
+
+#selectarmor 179  -- Armour of the Dawn
+#protbody 21
+#end
+
+#selectarmor 290
+#protbody 25
+#protbody 27
+#end 
+
+-- END UNIQUE ARMOR CHANGES
+
 
 #selectarmor 92  -- Enchanted Shield
 #rcost 9
@@ -36622,8 +36764,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #batstartsum4d6 0
 #mounted
 #magicskill 1 3
-#magicskill 2 3
 #magicskill 5 5
+#magicskill 7 3
 #makemonsters3 533  -- Wights
 #weapon 110  -- Wraith Sword
 #weapon 223 -- Venomous Bite
@@ -36691,9 +36833,9 @@ While in the form of an old man, all paths are increased and allows the use of N
 #enc 2
 #stealthy 15
 #homerealm 0
-#magicskill 3 3
 #magicskill 5 3
 #magicskill 6 5
+#magicskill 7 3
 #twiceborn 7231 -- Wight Giant
 #weapon 29  -- Claw
 #weapon 65  -- Venomous Fangs
@@ -136939,7 +137081,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #copyspr 511 -- Pearl of Light
 #name "Dragon Pearl of Light"
 #descr "The Pearl of Light is a most prized possession of the Dragon Kings. It greatly reinforces the users skills in elemental magic, along with granting the power of flight."
-#constlevel 9
+#constlevel 7
 #mainpath 2
 #mainlevel 4
 #secondarypath 1
@@ -137089,11 +137231,11 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #copyitem 26 -- Hammer of the Mountains
 #spr "magicenhanced/eeicalad.tga"
 #name "Caladbolg"
-#descr "This sword was forged for an ancient Fomorian Giant of legendary might and is of incredible size. It can only be lifted by the largest giants and Titans, and even then it is unwieldy and difficult to swing. When Caladbolg strikes a great tremor shakes the earth and everyone nearby will be hurt and knocked off their feet. Only exceptionally large or strong individuals will be able to keep their footing. The great size of the sword makes it hard for the bearer to avoid enemy blows. The sword is of great use against fortifications as it can knock down walls with one blow, and the bearer will be worth fifty men in a siege. The weight of the sword is immense however, and the bearer will be slower than usual."
+#descr "This sword was forged for an ancient Fomorian Giant of legendary might and is of incredible size. It can only be lifted by the largest giants and Titans, and even then it is unwieldy and difficult to swing. When Caladbolg strikes a great tremor shakes the earth and everyone nearby will be hurt and knocked off their feet. Only exceptionally large or strong individuals will be able to keep their footing. The great size of the sword makes it hard for the bearer to avoid enemy blows. The sword is of great use against fortifications as it can knock down walls with one blow, and the bearer will be worth two hundred men in a siege. The weight of the sword is immense however, and the bearer will be slower than usual."
 #mainlevel 4
 #constlevel 9
 #unique
-#siegebonus 50
+#siegebonus 200
 #mapspeed -4
 #swift -50
 #weapon 1681 -- Caladbolg
@@ -137124,46 +137266,46 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 --#itemcost1 -50
 #end
 
-#selectitem 648
-#spr "magicenhanced/eeifroststaff.tga"
-#name "Staff of the Frost King"
-#descr "This staff has an ancient, powerful frost being trapped in its diamonds. Anyone picking up the staff will soon become influenced by the frost being and claim the staff as his forever. Furthermore, they will claim the surrounding province as their kingdom and upon leaving it will slowly sicken and die. However, the power of the staff is great. It will protect the bearer from cold and the diamonds can be used to power water spells in battle. It can even summon a great blizzard in the province and project it a huge distance to devastate an enemy army."
-#constlevel 9
-#mainpath 2
-#mainlevel 6
-#homesick 25
-#coldres 15
-#fireres -10
-#tmpwatergems 2
-#waterrange -1
-#incscale 2  -- +Cold
-#cursed
-#tainted 10
-#itemcost1 50
-#weapon 238  -- Magic Staff
-#type 2  -- 2 handed weapon
-#spell "Murdering Winter"
-#end
+--#selectitem 648
+--#spr "magicenhanced/eeifroststaff.tga"
+--#name "Staff of the Frost King"
+--#descr "This staff has an ancient, powerful frost being trapped in its diamonds. Anyone picking up the staff will soon become influenced by the frost being and claim the staff as his forever. Furthermore, they will claim the surrounding province as their kingdom and upon leaving it will slowly sicken and die. However, the power of the staff is great. It will protect the bearer from cold and the diamonds can be used to power water spells in battle. It can even summon a great blizzard in the province and project it a huge distance to devastate an enemy army."
+--#constlevel 9
+--#mainpath 2
+--#mainlevel 6
+--#homesick 25
+--#coldres 15
+--#fireres -10
+--#tmpwatergems 2
+--#waterrange -1
+--#incscale 2  -- +Cold
+--#cursed
+--#tainted 10
+--#itemcost1 50
+--#weapon 238  -- Magic Staff
+--#type 2  -- 2 handed weapon
+--#spell "Murdering Winter"
+--#end
 
-#selectitem 649
-#spr "magicenhanced/eeifirestaff.tga"
-#name "Staff of the Fire King"
-#descr "This staff has an ancient, powerful fire being trapped in its rubies. Anyone picking up the staff will soon become influenced by the fire being and claim the staff as his forever. Furthermore, they will claim the surrounding province as their kingdom and upon leaving it will slowly sicken and die. However, the power of the staff is great. It will protect the bearer from heat and the rubies can be used to power fire spells in battle. It can even project a great quantity of flames a huge distance to attack an enemy army."
-#constlevel 9
-#mainpath 0
-#mainlevel 6
-#homesick 25
-#fireres 15
-#coldres -10
-#tmpfiregems 2
-#cursed
-#tainted 10
-#itemcost1 50
-#decscale 2  -- +Heat
-#weapon 238  -- Magic Staff
-#type 2  -- 2 handed weapon
-#spell "Rain of Fire"
-#end
+--#selectitem 649
+--#spr "magicenhanced/eeifirestaff.tga"
+--#name "Staff of the Fire King"
+--#descr "This staff has an ancient, powerful fire being trapped in its rubies. Anyone picking up the staff will soon become influenced by the fire being and claim the staff as his forever. Furthermore, they will claim the surrounding province as their kingdom and upon leaving it will slowly sicken and die. However, the power of the staff is great. It will protect the bearer from heat and the rubies can be used to power fire spells in battle. It can even project a great quantity of flames a huge distance to attack an enemy army."
+--#constlevel 9
+--#mainpath 0
+--#mainlevel 6
+--#homesick 25
+--#fireres 15
+--#coldres -10
+--#tmpfiregems 2
+--#cursed
+--#tainted 10
+--#itemcost1 50
+--#decscale 2  -- +Heat
+--#weapon 238  -- Magic Staff
+--#type 2  -- 2 handed weapon
+--#spell "Rain of Fire"
+--#end
 
 #selectitem 650
 #spr "magicenhanced/eeiarachamulet.tga"
@@ -137173,7 +137315,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #mainpath 6
 #mainlevel 4
 #secondarypath 5
-#secondarylevel 1
+#secondarylevel 2
 #poisonres 15
 #darkvision 100
 #scalewalls
@@ -137210,8 +137352,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #constlevel 9
 #mainpath 5
 #mainlevel 5
-#secondarypath 4
-#secondarylevel 1
+#secondarypath 7
+#secondarylevel 2
 #fear 10
 #spiritsight
 #voidret 50
@@ -137260,7 +137402,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #copyitem 309 -- Ring of Fire
 #spr "magicenhanced/eeiringpower.tga"
 #name "Ring of Power"
-#descr "This ring containing magical gems was worn by the Pantokrator during his ascension to the Throne of Heaven and contains incredible power. The wearer will be protected from the elements and immune to most common poisons. Furthermore they will feel a strong connection to their God and will always be blessed, even if not sacred. Finally they will spread the Dominion of the True God as if they were a Prophet."
+#descr "This ring containing magical gems was worn by the Pantokrator during his ascension to the Throne of Heaven and contains incredible power. The wearer will be protected from the elements and immune to most poisons. Furthermore they will feel a strong connection to their God and will always be blessed, even if not sacred. Finally they will spread the Dominion of the True God as if they were a Prophet."
 #bless
 #spreaddom 1
 #mainpath 6
@@ -137268,9 +137410,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #mainlevel 3
 #secondarylevel 3
 #constlevel 9
-#shockres 15
-#poisonres 15
-#coldres 15
+#shockres 20
+#poisonres 20
+#coldres 20
+#fireres 20
 #unique
 #end
 
@@ -137278,17 +137421,17 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #copyitem 309 -- Ring of Fire
 #spr "magicenhanced/eeinecklacepower.tga"
 #name "Necklace of Power"
-#descr "This necklace of magical earth gems and astral pearls was worn by the Pantokrator during his ascension to the Throne of Heaven and contains incredible power. The wearer will appear more regal and followers will flock to their banner. Dissent will be quelled and the people will be strangely obedient and defer to their wishes. Finally the power is such that any sacred troops that fight with the wearer of the necklace will feel the blessing of the Lord upon them, and any unclaimed Throne in the province will be immediately claimed in the name of the True God. During a battle the bearer can use the power inherent in the gems and pearls to cast more powerful spells."
+#descr "This necklace of magical glamour gems and astral pearls was worn by the Pantokrator during his ascension to the Throne of Heaven and contains incredible power. The wearer will appear more regal and followers will flock to their banner. Dissent will be quelled and the people will be strangely obedient and defer to their wishes. Finally the power is such that any sacred troops that fight with the wearer of the necklace will feel the blessing of the Lord upon them, and any unclaimed Throne in the province will be immediately claimed in the name of the True God. During a battle the bearer can use the power inherent in the gems and pearls to cast more powerful spells."
 #command 100
-#inspirational 1
+#inspirational 2
 #incunrest -250
-#mainpath 3
+#mainpath 7
 #secondarypath 4
 #mainlevel 3
 #secondarylevel 3
 #constlevel 9
 #fireres 0
-#tmpearthgems 2
+#tmpglamourgems 2
 #tmpastralgems 2
 #unique
 #autospell "Divine Blessing"
@@ -137305,7 +137448,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #secondarypath 1
 #mainlevel 4
 #secondarylevel 1
-#constlevel 9
+#constlevel 7
 #farsail 10
 #batstartsum1d6 360  -- Undines
 #unique
@@ -137321,7 +137464,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #mainlevel 3
 #itemcost1 -33
 #secondarylevel 1
-#constlevel 7
+#constlevel 3
 #unique
 #weapon 151  -- Wand
 #spell "Gifts from Heaven"
@@ -137339,6 +137482,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #sneakunit 0
 #stealthboost -200
 #undcommand 100
+#ethereal
 #batstartsum5 1541  -- Ghost Champion
 #batstartsum1d6 442  -- Shade Beast
 #batstartsum3d6 674  -- Dispossessed Spirits
@@ -137374,24 +137518,24 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #mainlevel 2
 #secondarylevel 2
 #constlevel 7
-#siegebonus 100
+#siegebonus 200
 #weapon 678  -- Bow of Titans
 #fireres 0
 #unique
 #end
 
-#selectitem 662
-#copyitem 309 -- Ring of Fire
-#spr "magicenhanced/eeirock.tga"
-#name "The Corner Stone"
-#descr "The Corner Stone is an ancient and worn stone imbued with earth magic. It is reputed to have been the cornerstone of the first building erected by men, however the truth is lost to time. What is clear however is that the stone is imbued with powerful magic. If carefully placed and a secret command known only to ancient masons is whispered then overnight a great fortress will arise in the province."
-#mainpath 3
-#mainlevel 5
-#constlevel 9
-#fireres 0
-#spell "Stone Construction"
-#unique
-#end
+--#selectitem 662
+--#copyitem 309 -- Ring of Fire
+--#spr "magicenhanced/eeirock.tga"
+--#name "The Corner Stone"
+--#descr "The Corner Stone is an ancient and worn stone imbued with earth magic. It is reputed to have been the cornerstone of the first building erected by men, however the truth is lost to time. What is clear however is that the stone is imbued with powerful magic. If carefully placed and a secret command known only to ancient masons is whispered then overnight a great fortress will arise in the province."
+--#mainpath 3
+--#mainlevel 5
+--#constlevel 9
+--#fireres 0
+--#spell "Stone Construction"
+--#unique
+--#end
 
 #selectitem 663
 #copyitem 309 -- Ring of Fire
@@ -137402,7 +137546,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #mainlevel 4
 #constlevel 7
 #awe 1
-#fireres 5
+#fireres 10
 #magiccommand 1
 #autospell "Will o' the Wisp"
 #autospellrepeat 1
@@ -137442,11 +137586,11 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #spr "magicenhanced/eeiairring.tga"
 #name "Obscuro's Ring"
 #descr "This ring was forged by Obscuro, the Hidden Master and was used by the illusionist for many years. It holds the power to misdirect and confuse others about the bearers true position, aswell as protecting the bearer from lightning. Perhaps its greatest power however manifests when taken to the highest mountain peaks. There it will capture and direct lightning directly from the clouds to form magical air gems. Eventually Obscuro was captured by a rival mage, and whilst the wily wizard escaped with his life the ring was seized and its whereabouts are currently unknown."
-#mainpath 1
+#mainpath 7
 #mainlevel 3
 #constlevel 5
 #unique
-#autospell "Mirror Image"
+#autospell "Displace Body"
 #end
 
 #selectitem 667
@@ -137480,7 +137624,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #descr "This huge diamond fell from the sky one day in a remote province and was found by a simple farmer. He soon discovered that the power of the gem could surround him with protective winds and call magical birds from the clouds to do his bidding. Visions of wealth and avarice filled his head, however he could not resist bragging about his good fortune to others. Word spread and eventually a powerful demon appeared and slew the farmer and his family in search of the jewel. Since then it has remained in the hands of the powerful, and its story has been told as a warning to those that yearn for power without the means to hold onto it."
 #mainpath 1
 #mainlevel 6
-#constlevel 9
+#constlevel 7
+#cursed
+#tainted 5
+#itemcost1 -50
 #makemonsters5 513  -- Spring Hawk
 #end
 
@@ -137724,6 +137871,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #secondarypath 4
 #secondarylevel 2
 #regeneration 10
+#hp 20
 #cursed
 #nofind
 #onlyinanim
@@ -137916,7 +138064,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #spr "magicenhanced/eeivalkhorn.tga"
 #name "Brunhilde's Horn"
 #descr "This magnificent horn was once owned by Brunhilde and can be blown to summon Valkyries from Vanhalla. The Valkyries will instantly bear the blower of the horn to a distant province and will aid them in battle should enemies await them there."
-#constlevel 9
+#constlevel 7
 #mainpath 7
 #mainlevel 3
 #secondarypath 1
@@ -138127,7 +138275,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #mainpath 0
 #mainlevel 4
 #cursed
-#incunrest 500
+#incunrest 1000
 #restricted 5
 #restricted 8
 #restricted 50
@@ -138143,7 +138291,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #copyspr 452  -- Carcator
 #name "The Head of Mimir"
 #descr "This is the head of the eternally wise and knowing Mimir, guardian of the Well of Knowledge. It was severed in ages past, however it has been preserved with herbs and charms and will whisper cosmic secrets of magic to its bearer."
-#constlevel 9
+#constlevel 7
 #mainlevel 5
 #researchbonus 20
 #mr 4
@@ -138299,14 +138447,15 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #type 8  -- Misc
 #mainpath 4
 #mainlevel 3
-#secondarypath 5
+#secondarypath 7
 #secondarylevel 3
 #invisible
 #ethereal
 #cursed
 #spiritsight
 #tainted 10
-#spell "Enslave Mind"
+#autospell "Enslave Mind"
+#autospellrepeat 1
 #end
 
 #selectitem 720
@@ -138870,7 +139019,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #name "Charm of Corix"
 #spr "magicenhanced/eeicorix.tga"
 #descr "This charm was once owned by the Druid Corix and is imbued with great mystical power. It has been used by many generals of Marverni to ensure a favourable campaign. The bearer and all his allies will have great fortune in battle."
-#constlevel 9
+#constlevel 7
 #mainpath 4
 #secondarypath 6
 #mainlevel 4
@@ -138979,7 +139128,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #spr "magicenhanced/eeibookdead.tga"
 #name "Book of the Dead"
 #descr "The Book of the Dead is a collections ancient spells dealing with death and the dead. Through the secrets contained within many secrets can be learned and the users ability with Death magic will be increased. In addition, through application of the spells within dead heroes can be mummified and brought back to the mortal realm."
-#constlevel 9
+#constlevel 7
 #mainpath 5
 #mainlevel 4
 #type 8
@@ -139089,7 +139238,11 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #descr "Andvari was a dwarven sorcerer that lived beneath a waterfall. He once crafted a ring to make him the wealthiest in all the land, and it brought him great riches. Eventually he lost the ring and laid a curse upon it that any who held it would soon be consumed by greed and take the form of a Dragon. The ring will bring wealth to the bearer, however they will never part with it and the curse will eventually manifest and consume the bearer."
 #constlevel 9
 #mainpath 3
-#mainlevel 5
+#mainlevel 3
+#secondarypath7
+#secondarylevel 3
+#itemcost1 -50
+#itemcost2 -50
 #type 8
 #gold 100
 #cursed
@@ -139120,7 +139273,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #name "Caledfwlch"
 #descr "Caledfwlch is an ancient weapon once borne by a legendary King of Man. Its blade blinds enemies and the scabbard prevents any loss of blood from injuries. The bearer of the blade will command great respect amongst the common folk and will inspire men under their command to great deeds. Upon the death of the wearer the blade will return the wearer to life, however the blade will return to the Fey world from whence it came."
 #constlevel 9
-#mainpath 1
+#mainpath 7
 #mainlevel 3
 #secondarypath 6
 #secondarylevel 2
@@ -139130,6 +139283,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #inspirational 2
 #extralife
 #woundfend 2
+#regeneration 10
 #restricted 57
 #restricted 100
 #end
@@ -139396,7 +139550,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectitem 786
 #spr "magicenhanced/eeiameno.tga"
 #name "Amenonuhoko"
-#descr "Amenonuhoko the 'Heavenly Jewelled Spear' is the ancient Naginata used by Izanagi and Izanami when creating the first land. It still retains the power to alter the earth, as drops of salty water fall from the tip and wherever they land the earth churns. The bearer will be able to cause destruction in distant province by flinging the droplets great distances. They will also be granted the powers of the heavens, flight and immunity to mortal weapons."
+#descr "Amenonuhoko the 'Heavenly Jewelled Spear' is the ancient Naginata used by Izanagi and Izanami when creating the first land. It still retains the power to alter the earth, as drops of salty water fall from the tip and wherever they land the earth churns. The bearer will be able to cause destruction in a distant province by flinging the droplets great distances. They will also be granted the powers of the heavens, flight and immunity to mortal weapons."
 #constlevel 9
 #mainpath 0
 #mainlevel 4
@@ -140228,7 +140382,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #name "Oniate"
 #descr "Oniate is a mummified hand kept carefully wrapped in leathers. When released from its bonds, it flies towards an enemy and attempts to touch them. Anyone touched by the disembodied hand will be instantly killed."
 #spr "nihuala/oniateicon.tga"
-#constlevel 9
+#constlevel 7
 #mainpath 5 -- -\ Death 1
 #mainlevel 1  -- /
 #secondarypath 6 -- -\ Nature 1
@@ -140986,24 +141140,26 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectitem 97
 #constlevel 7
+#autospell "Flare"
+#autospellrepeat 1
 #unique
 #end
 
 #selectitem 98 -- Unquenched Sword
-#itemcost1 -40
+#itemcost1 -33
 #end
 
 #selectitem 99 -- Ember
-#itemcost1 -50
-#itemcost2 -50
 #constlevel 7
 #unique
 #end
 
 #selectitem 100 -- Sword of Justice
 #itemcost1 -33
-#itemcost2 -66
+#itemcost2 -33
 #constlevel 7
+#autospell "Prison of Fire"
+#autospellrepeat 1
 #unique
 #end
 
@@ -141011,8 +141167,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #itemcost1 -25
 #end
 
-#selectitem 102
+#selectitem 102 -- Winter Bringer
 #constlevel 7
+#autospell "Falling Frost"
+#autospellrepeat 1
 #unique
 #end
 
@@ -141020,13 +141178,12 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #itemcost1 -33
 #end
 
-#selectitem 104
-#constlevel 7
+#selectitem 104 -- Dawn Fang
+#constlevel 5
 #unique
 #end
 
 #selectitem 105 -- The Summit
-#itemcost1 -60
 #constlevel 7
 #unique
 #end
@@ -141037,6 +141194,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectitem 107 -- Mage Bane
 #itemcost1 -50
+#tainted 2
 #end
 
 #selectitem 108 -- Hammer of the Forge Lord
@@ -141052,18 +141210,35 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #itemcost1 -40
 #end
 
-#selectitem 112
+#selectitem 111 -- Twin Spear
 #constlevel 7
 #unique
 #end
 
-#selectitem 113
+#selectitem 112 -- Twin Spear
 #constlevel 7
 #unique
+#end
+
+#selectitem 113 -- Oath Rod
+#autospell "Horror Mark"
+#autospellrepeat 1
+#end
+
+#selectitem 114 -- Sword of Aurgelmer
+#itemcost1 -50
+#inspirational 4
+#end
+
+#selectitem 115 -- Rod of Death
+#autospell "Control the Dead"
+#autospellrepeat 1
 #end
 
 #selectitem 116 -- Flailing Hands
-#itemcost1 -50
+#secondarypath 7
+#secondarylevel 2
+#magicboost 7 1
 #end
 
 #selectitem 117 -- Sickle Whos Crop is Pain
@@ -141086,26 +141261,33 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectitem 121 -- Sun Slayer
 #itemcost1 -50
+#autospell "Vampiric Drain"
+#autospellrepeat 1
 #end
 
 #selectitem 122 -- Picus Axe
 #itemcost1 -50
+#stoneskin
 #constlevel 7
 #unique
 #end
 
 #selectitem 123 -- Sharpest Tooth
-#itemcost1 -50
 #constlevel 7
 #unique
 #end
 
 #selectitem 124 -- Sceptre of Corruption
 #itemcost1 -60
+#autospell "Bane Fire"
+#autospellrepeat 1
+#taint 5 
 #end
 
 #selectitem 125 -- Procas Axe
 #itemcost1 -50
+#incunrest -50
+#fear 5
 #constlevel 7
 #unique
 #end
@@ -141117,13 +141299,14 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #itemcost1 -66
 #end
 
-#selectitem 128
+#selectitem 128 -- Infernal Sword
 #constlevel 5
 #unique
 #end
 
 #selectitem 129 -- Staff From the Sun
 #itemcost1 -50
+#tmpfiregems 5
 #end
 
 #selectitem 160 -- Blacksteel Tower Shield
@@ -141227,9 +141410,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectitem 184 -- Shield of the Dawn
-#itemcost1 -66
-#itemcost2 -50
-#constlevel 7
+#constlevel 5
 #unique
 #end
 
@@ -141306,12 +141487,12 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #itemcost1 -50
 #end
 
-#selectitem 217
-#constlevel 7
+#selectitem 217 -- Crown of the Ivy King
+#constlevel 5
 #unique
 #end
 
-#selectitem 218
+#selectitem 218 -- Crown of Despair
 #constlevel 7
 #unique
 #end
@@ -141482,7 +141663,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectitem 276 -- Robe of Calius
 #itemcost1 -33
-#constlevel 7
+#constlevel 5
 #unique
 #end
 
@@ -141890,6 +142071,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #unique
 #end
 
+#selectitem 432 -- Tome of High Power
+#taint 0
+#end
+
 #selectitem 433 -- Magic Lamp
 #itemcost1 -40
 #end
@@ -141908,9 +142093,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectitem 436 -- First Anvil
 #itemcost1 -50
+#mastersmith 2
 #end
 
-#selectitem 437
+#selectitem 437 -- Holger the Head
 #constlevel 5
 #unique
 #end
@@ -141921,7 +142107,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #itemcost1 -50
 #end
 
-#selectitem 439
+#selectitem 439 -- Alchemist's Stone
 #constlevel 7
 #unique
 #end
@@ -141929,11 +142115,11 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectitem 441 -- Atlas of Creation
 #itemcost1 -50
 #itemcost2 -50
+#taint 2
 #end
 
-#selectitem 442
-#constlevel 7
-#unique
+#selectitem 442 -- Bell of Cleansing
+#onebattlespell "Demon Cleansing"
 #end
 
 #selectitem 443 -- Orb of Atlantis
@@ -141942,6 +142128,9 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #nationrebate 88 -- MA Atlantis
 #nationrebate 126 -- LA Atlantis
 #giftofwater 999
+#autospell "Summon Lesser Water Elemental"
+#autospellrepeat 1
+#tmpwatergems 3
 #end
 
 #selectitem 445 -- Astral Harpoon
@@ -141951,6 +142140,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectitem 446 -- Forbidden Light
 #itemcost1 -25
 #itemcost2 -25
+#magicboost 0 3
+#magicboost 4 3
 #end
 
 #selectitem 447 -- Nethgul
@@ -141963,10 +142154,6 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #itemcost1 -60
 #end
 
-#selectitem 449 -- Horror Harmonica
-#itemcost1 -40
-#end
-
 #selectitem 452 -- Carcator
 #itemcost1 -40
 #constlevel 7
@@ -141974,23 +142161,29 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectitem 453 -- Ankh
-#itemcost1 -50
+#itemcost1 -25
 #end
 
-#selectitem 454
+#selectitem 450 -- Tome of the Lower Planes
+#itemcost1 -33
+#infernoret 100
+#kokytosret 100
+#magicboost 8 2
+#end
+
+#selectitem 454 -- Disease Grinder
 #constlevel 7
 #unique
 #autodisgrinder 5
 #end
 
-#selectitem 456
+#selectitem 456 - The Green Eye
 #constlevel 7
 #unique
 #end
 
 #selectitem 457 -- Wondrous Box of Monsters
-#itemcost1 -60
-#constlevel 7
+#constlevel 5
 #unique
 #end
 
@@ -142001,7 +142194,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #unique
 #end
 
-#selectitem 459
+#selectitem 459 -- Midget's Revenge
 #constlevel 5
 #unique
 #end
@@ -142011,6 +142204,9 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectitem 461 -- Chalice
+#recuperation
+#autospell "Banishment"
+#autospellrepeat 1
 #itemcost1 -50
 #end
 
@@ -142021,8 +142217,9 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectitem 464 -- Manual of Crossbreeding
-#itemcost1 -60
-#itemcost2 -60
+#itemcost1 -33
+#itemcost2 -33
+#taint 0
 #constlevel 5
 #unique
 #end
@@ -142032,6 +142229,79 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #constlevel 7
 #unique
 #end
+
+#selectitem 469 -- Tome of Legends
+#itemcost1 -50
+#tmpglamourgems 3
+#spell "Conjure Phantasmal Beast"
+#end
+
+#selectitem 470 -- Missing Tune
+#itemcost1 -50
+#end
+
+#selectitem 471 -- Trapped Dreams
+#itemcost1 -20
+#itemcost2 -20
+#battlesum1 1911 -- Defiler of Dreams 
+#end
+
+#selectitem 471 -- Orb of Elemental Fire
+#constlevel 7
+#end
+
+#selectitem 472 -- Orb of Elemental Air
+#constlevel 7
+#itemcost1 60
+#end
+
+#selectitem 473 -- Orb of Elemental Water
+#constlevel 7
+#itemcost1 60
+#end
+
+#selectitem 473 -- Orb of Elemental Earth
+#constlevel 7
+#itemcost1 60
+#end
+
+#selectitem 471 -- Orb of Elemental Earth
+#constlevel 7
+#itemcost1 60
+#end
+
+#selectitem 471 -- Orb of Elemental Earth
+#constlevel 7
+#end
+
+#selectitem 494 -- Sunrise Barding
+#awe 1
+#end
+
+#selectitem 476 -- Void Sphere
+#itemcost1 -50
+#researchbonus 100
+#end
+
+#selectitem 527 -- The Quintessence Chest
+#itemcost1 -33
+#tmpfiregems 5
+#tmpairgems 5
+#tmpwatergems 5
+#tmpearthgems 5
+#tmpastralgems 5
+#tmpdeathgems 5
+#tmpnaturegems 5
+#tmpglamourgems 5
+#end
+
+#selectitem 529 -- Pillar of Truths
+#itemcost1 -40
+#itemcost1 -40
+#end
+
+
+
 
 #selectitem 484 -- Mercury Barrel
 #constlevel 5 -- 7 -> 5
@@ -142152,6 +142422,14 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectitem 221 -- First Crown
 #itemcost1 -40
 #itemcost2 -40
+#masterrit 3
+#end
+
+#selectitem 222 -- Crown of Pure Blood
+#itemcost1 -60
+#itemcost2 -50
+#magicboost 8 1
+#magicboost 5 1
 #end
 
 #selectitem 200 -- Crown of Bones
@@ -142160,6 +142438,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectitem 467 -- Tome of Masons
 #itemcost1 -50
+#constlevel 7
+#unique
 #end
 
 #selectitem 133 -- God Slayer Spear
