@@ -1827,6 +1827,12 @@
 #dmg 100
 #end
 
+#newweapon 1670 -- EVALUATE
+#copyweapon 142  -- Touch of Leprosy
+#name "Night-gaunt Touch"
+#secondaryeffectalways 1669 -- Stun
+#end
+
 #newweapon 1671
 #copyweapon 76  -- Fire Blade
 #att 3
@@ -3349,7 +3355,7 @@
 
 #newweapon 1853 -- Shadow Bite
 #copyweapon 281 -- Spectral Sword
-#name "Shadowed Bite"
+#name "Shadow Bite"
 #dmg 2
 #att 0
 #def -1
@@ -3362,7 +3368,7 @@
 
 #newweapon 1854 -- Shadow Gore
 #copyweapon 281 -- Spectral Sword
-#name "Shadowed Gore"
+#name "Shadow Gore"
 #dmg 0
 #att -1
 #def 0
@@ -3375,7 +3381,7 @@
 
 #newweapon 1855 -- Shadow Claw
 #copyweapon 281 -- Spectral Sword
-#name "Shadowed Claw"
+#name "Shadow Claw"
 #dmg 0
 #att 0
 #def 0
@@ -3388,14 +3394,14 @@
 
 #newweapon 1856 -- Shadow Poison
 #copyweapon 52 -- Death Poison
-#name "Shadowed Poison"
+#name "Shadow Poison"
 #dmg 25
 #secondaryeffect 285 -- Additional Weakness
 #end
 
 #newweapon 1857 -- Shadow Fangs
 #copyweapon 280 -- Spectral Spear
-#name "Shadowed Fangs"
+#name "Shadow Fangs"
 #dmg -2
 #att 0
 #def -1
@@ -3408,14 +3414,14 @@
 
 #newweapon 1858 -- Shadow Bow
 #copyweapon 647 -- Spectral Bow
-#name "Shadowed Bow"
+#name "Shadow Bow"
 #bonus
 #secondaryeffect 285 -- Additional Weakness
 #end
 
 #newweapon 1859 -- Shadow Sword
 #copyweapon 281 -- Spectral Sword
-#name "Shadowed Broadsword"
+#name "Shadow Broadsword"
 #dmg 5
 #att 1
 #def 1
@@ -3428,7 +3434,7 @@
 
 #newweapon 1860 -- Shadow Spear
 #copyweapon 280 -- Spectral Spear
-#name "Shadowed Spear"
+#name "Shadow Spear"
 #dmg 3
 #att 0
 #def 0
@@ -3441,7 +3447,7 @@
 
 #newweapon 1861 -- Shadow Great Sword
 #copyweapon 281 -- Spectral Sword
-#name "Shadowed Greatsword"
+#name "Shadow Greatsword"
 #dmg 8
 #att 1
 #def 2
@@ -3455,7 +3461,7 @@
 
 #newweapon 1862 -- Shadow Axe
 #copyweapon 281 -- Spectral Sword
-#name "Shadowed Axe"
+#name "Shadow Axe"
 #dmg 5
 #att 1
 #def 0
@@ -3492,7 +3498,7 @@
 
 #newweapon 1865 -- Shadow Club
 #copyweapon 482 -- Spectral Club
-#name "Shadowed Club"
+#name "Shadow Club"
 #dmg 7
 #att 0
 #def 1
@@ -3505,7 +3511,7 @@
 
 #newweapon 1866 -- Shadow Maul
 #copyweapon 482 -- Spectral Club
-#name "Shadowed Maul"
+#name "Shadow Maul"
 #dmg 9
 #att 0
 #def -1
@@ -3518,7 +3524,7 @@
 
 #newweapon 1867 -- Shadow Great Axe
 #copyweapon 482 -- Spectral Club
-#name "Shadowed Battleaxe"
+#name "Shadow Battleaxe"
 #dmg 9
 #att 1
 #def 0
@@ -34672,6 +34678,32 @@ While in the form of an old man, all paths are increased and allows the use of N
 #gcost 12
 #weapon 1668 -- Anemone Pike
 #reclimit 5
+#end
+
+#newmonster 7804
+#copystats 1279  -- Iron Crow
+#spr1 "magicenhanced/eenightgaunt.tga"
+#spr2 "magicenhanced/eenightgaunt2.tga"
+#clearweapons
+#cleararmor
+#name "Night-gaunt"
+#descr "Night-gaunts are strange humanoid creatures that inhabit the realm of dreams. They have smooth whale-like skin, long slender humanoid bodies, curving horns, leather bat-like wings, and a blank expanse of flesh where one would expect a face to be. Their touch renders men insensible and they are armed with claws and a wicked barbed tail."
+#troglodyte
+#gcost 0
+#prot 12
+#hp 25
+#mor 16
+#mr 15
+#enc 2
+#str 15
+#att 13
+#def 13
+#neednoteat
+#blind
+#magicbeing
+#weapon 29  -- Claw
+#weapon 1670 -- Night-gaunt Touch
+#weapon 203  -- Barbed Tail
 #end
 
 #newmonster 7805
@@ -99516,6 +99548,10 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #gems 4 1
 #end
 
+#selectsite 998 -- The Gate of Deeper Slumber
+#summon 7804 -- Night-Gaunt
+#end
+
 #selectsite 999 -- Cave of the Sleepers
 #decscale 5  -- +Magic
 #summonlvl2 559  -- Sleeper
@@ -106858,7 +106894,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #name "Torpor"
 #descr "This spell will slow down a group of enemies. The slowed units will require twice as long time to move, attack or cast spells. The effect will last for the entire battle, however the spell can be resisted."
 #details "Slow 50%, Att -2, Def -2."
-#researchlevel 6
+#researchlevel 5
 #pathlevel 0 2
 #path 1 7
 #pathlevel 1 1
@@ -107026,6 +107062,9 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #details "Base fortress strength 175, +25 per cold scale, -25 per heat scale."
 #researchlevel 7
 #path 0 2
+#pathlevel 0 4
+#path 1 7
+#pathlevel 1 2
 #fatiguecost 4000
 #nogeodst 2052  -- Sea or Deep Sea
 #damage 21
@@ -107378,9 +107417,9 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #details "Commanders only. Grants Astral Fetters, preventing any present in battle from teleporting, blinking or returning unless they have Void Sanity."
 #school 5
 #researchlevel 7
-#path 0 3
+#path 0 7 -- G
 #pathlevel 0 4
-#path 1 4
+#path 1 4 -- S
 #pathlevel 1 2
 #effect 10131
 #nreff 1
@@ -123035,9 +123074,10 @@ All effects scale with friendly Dominion."
 #end
 
 #selectspell 3306
+#copyspell 784 -- Mirror Image
 #name "Cloak in Glamour"
 #descr "The caster uses the power of the Morgen to cloak the entire army in glamour. All friendly units are surrounded by illusory images. The images will surround the targets and make it harder for enemies to figure out which one to strike. The images will vanish as soon as the creature is wounded."
-#details "Images created: 2, Air Mages gain 2 images per Air skill level."
+#details "Images created: 2"
 #school 4
 #researchlevel 6
 #path 0 7
@@ -123045,7 +123085,7 @@ All effects scale with friendly Dominion."
 #fatiguecost 200
 #range 0
 #aoe 666
-#effect 23
+#damage 2
 #nreff 1
 #sound 44  -- Swarm
 #damage 16777216
@@ -131762,6 +131802,37 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #nextspell "Call Divine Spirit"
 #end
 
+
+#selectspell 4028
+#copyspell 935 -- Pack of Wolves
+#name "Summon the Night-gaunts"
+#descr "The caster locates one of the entrances to the realm of dreams and then descend the Seven Hundred Steps of Deeper Slumber to summon a group of Night-gaunt. These horrible creatures are winged and faceless, with a touch that renders men insensible and a wicked barbed tail."
+#researchlevel 4
+#path 0 7
+#pathlevel 0 2
+#path 1 5
+#pathlevel 1 1
+#damage 7804 -- Night-gaunt
+#nreff 503
+#fatiguecost 500
+--#onlygeosrc 4096  -- Cave Only
+#end
+
+#selectspell 4029
+#copyspell 935 -- Pack of Wolves
+#name "Flight of Night-gaunts"
+#descr "The caster locates one of the entrances to the realm of dreams and descend the Seven Hundred Steps of Deeper Slumber to summon a flight of Night-gaunts. These horrible creatures are winged and faceless, with a touch that renders men insensible and a wicked barbed tail. More powerful casters can summon more Night-gaunts with each casting."
+#researchlevel 8
+#path 0 7
+#pathlevel 0 4
+#path 1 5
+#pathlevel 1 2
+#damage 7804 -- Night-gaunt
+#nreff 2007 -- 15++
+#fatiguecost 2000
+--#onlygeosrc 4096  -- Cave Only
+#end
+
 #selectspell 4031
 #name "Celestial Garden"
 #descr "The caster opens a gate to the celestial realm within the great Lotus Gardens. Through this gate divine beings will be able to enter the world and many will come to sit and think amongst the perfumed greenery. The magic of the gate will infuse the province and all astral mages present will feel their powers increase. Spells of summoning will be easier in the presence of the gate, and many celestial beings will pledge to aid the monkeyfolk. The great concentration of magic will manifest as astral pearls which can be gathered from amongst the lotus blooms. The gate will close immediately if the caster of the spell is killed."
@@ -133939,7 +134010,7 @@ Applies the effects of Holy Avenger to the caster"
 #end
 
 #selectspell 4168 -- Capture Bird Shadow
-#name "Capture Bird Shadow"
+#name "Capture Shadow Bird"
 #descr "The shadows of birds are difficult to bind, as they retain the free spirited nature of their origin. Once successfully bound, while not very powerful, they make very useful scouts as they are hard to spot and can travel far in short time."
 #school 4 -- Enchantment
 #researchlevel 1
@@ -133996,10 +134067,11 @@ Applies the effects of Holy Avenger to the caster"
 --#copyspell 659 -- Drain Life
 #name "Bind Shadows"
 #descr "The caster takes hold of the shadows of their enemies and attempts to restrain them. The shock may cause harm and enemies successfully affected by this spell may find their movements sluggish or their strength permanently drained. More powerful mages can attempt this on a larger area of shadow from far greater distances."
+#details "May deal 1 AN damage, Slow - 50%, or Weaken"
 #explspr 10057 -- Rising Black Smoke
 #sound 23 -- Doom
 #school 1
-#researchlevel 4
+#researchlevel 5
 #path 0 7 -- Glamour
 #pathlevel 0 2
 #path 1 5 -- Death
@@ -134007,16 +134079,100 @@ Applies the effects of Holy Avenger to the caster"
 #nreff 1
 #range 10005 -- 25+10
 --#aoe 1004
-#aoe 2001 -- 5++
+#aoe 1001 -- 3+
 --#aoe 2002
 #effect 2
 #damage 1
-#fatiguecost 20
+#fatiguecost 40
 #spec 545263744 -- MR normal
 --#spec 17592731320448 -- MR hard
 --#spec 1152921505152127104 -- MR Normal, extra effect only on damage
 --#spec 1152939097338167424 -- MR Hard, extra effect only on damage
 #nextspell 4171
+#end
+
+
+#selectspell 4173 -- Blink
+#copyspell 1262 -- Blink
+#name "A New Place"
+#aoe 0
+#spec 34368147456 -- UWOK, MRN, Ignore Shields, Bypass mirror image
+#end
+
+#selectspell 4174 -- Confusion
+#copyspell 44 -- Extra Cripple
+#name "Directionless"
+#effect 11
+#damage 17179869184 -- Confusion
+#aoe 0
+#spec 34368147456 -- UWOK, MRN, Ignore Shields, Bypass mirror image
+#nextspell 4173
+#end
+
+#selectspell 4175 -- Into Thin Air
+#copyspell 637 -- Gust of Winds
+#name "Into Thin Air"
+#descr "Getting lost and losing things alike is commonplace in the land of dreams, where terrain shifts and spatial reasoning fails. The caster attempts to shift the target's spatial reference in a similar manner, and if successful may move their entire being to a new location either on the battlefield or even as far as a neighboring province. Getting lost is a universal phenomenon and even the mindless or inanimate are not immune."
+#details "MRN to force the target to retreat, otherwise MRN Hard for battlefield teleport and confusion"
+#school 5 -- thaum
+#researchlevel 0
+#path 0 7
+#pathlevel 0 3
+#path 1 1
+#pathlevel 1 1
+#precision 100
+#aoe 0
+#effect 108
+#damage -9
+#fatiguecost 20
+#spec 34368147456 -- MRN, Ignore Shield, Bypass Mirror Image, UWOK
+#nextspell 4174 -- Lack of Direction
+#end
+
+
+#newspell 4176 -- Shimmering Cloak
+#copyspell 784
+#name "Shimmering Cloak"
+#descr "The caster cloaks a small group of soldiers in glamour. The images will surround the targets and make it harder for enemies to figure out which one to strike. The images will surround them and make it harder for enemies to figure out which one to strike. A strike will have an equal chance of hitting each image and the original. If an image is hit it will disappear. Unlike some other glamour effects, mirror images are not negated by true sight."
+#details "Images created: 2"
+#aoe 3
+#fatiguecost 40
+#researchlevel 0
+#path 0 7
+#pathlevel 0 3
+#path 1 1
+#pathlevel 1 1
+#damage 2
+#end
+
+#newspell 4177 -- Cloak of Mirrors
+#copyspell 784
+#name "Cloak of Mirrors"
+#descr "The caster cloaks a large group of soldiers in glamour. The images will surround the targets and make it harder for enemies to figure out which one to strike. The images will surround them and make it harder for enemies to figure out which one to strike. A strike will have an equal chance of hitting each image and the original. If an image is hit it will disappear. Unlike some other glamour effects, mirror images are not negated by true sight."
+#details "Images created: 2"
+#aoe 1006 -- 10+
+#fatiguecost 100
+#researchlevel 8
+#path 0 7
+#pathlevel 0 4
+#path 1 1
+#pathlevel 1 1
+#damage 2
+#end
+
+#selectspell 4168 -- Summon Sprite
+#name "Summon Sprite Scout"
+#descr "The caster summons a sprite from the Dreamwild to serve as a scout. Sprites are small faeries with insect wings capable of moving quickly through provinces."
+#school 0 -- Conj
+#researchlevel 1
+#path 0 7 -- Glamour
+#pathlevel 0 1
+#path 1 6 -- Nature
+#pathlevel 1 1
+#effect 10021
+#nreff 1
+#damage 592 -- Sprite
+#fatiguecost 300
 #end
 
 
@@ -135289,6 +135445,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 808 -- Slow
+#researchlevel 3
 #pathlevel 0 1
 #end
 
@@ -141849,6 +142006,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #itemcost1 -66
 #constlevel 7
 #unique
+#end
+
+#selectitem 484 -- Mercury Barrel
+#constlevel 5 -- 7 -> 5
 #end
 
 #selectitem 485 -- Enchanted Saddle
