@@ -99074,6 +99074,34 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8124
 #end
 
+#newsite 2501
+#name "EA Pangaea Summons"
+#level 0
+#rarity 5
+#path 6
+#look 1
+#homemon 435 -- maenad
+#homemon 1224 -- dire woof
+#homemon 8020 -- dire bear
+#homemon 8021 -- dire boar
+#homemon 8022 -- dire tiger
+#homemon 7478 -- tree
+#homecom 3066 -- hamadry
+#homecom 7272 -- lord of the wild
+#end
+
+#newsite 2502
+#name "EA Pangaea Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 3
+#homecom 540
+#homecom 614
+#homecom 2246
+#homecom 8144
+#end
+
 
 
 -- END OF NEW SITES
@@ -103805,6 +103833,9 @@ Priests: Average"
 #addgod 7480 -- Tree of Hate
 #cheapgod20 8455 -- Sacred Grove
 #cheapgod20 8461 -- Idol of the Seasons
+
+#futuresite "EA Pangaea Summons"
+#futuresite "EA Pangaea Heroes"
 #end
 
 #selectnation 15 -- EA Agartha
