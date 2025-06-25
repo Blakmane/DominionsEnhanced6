@@ -134770,7 +134770,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 1 1
 #fatiguecost 4000
 #nreff 1
-#damage 9037
+#damage 9047
 #restricted 73 -- MA Mictlan
 #end
 
