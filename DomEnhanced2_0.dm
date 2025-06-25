@@ -23634,7 +23634,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #fixedname "Huitzilopochtli"
 #descr "Huitzilopochtli is a giant of divine heritage. Once a messenger and representative of the Pantokrator, the Teotl of the Sky was given the authority of the Western Sun and the power of thunder. During the rebellion against the Pantokrator he was bereft of command in favor of a blood-thirsty warrior deity who devoured gods and men. Protesting against the order of things and the carnage released upon the population of the land, he was punished with eternal banishment. With the disappearance of the Pantokrator his prison has been weakened. Now he has been freed and will aid the awakening God in gratitude for this service. Huitzilopochtli is always surrounded by a thunderous storm."
 #homerealm 0
-#magicskill 1 3
+#magicskill 1 4
 #magicskill 0 3
 #magicskill 6 2
 #onebattlespell 830 -- Storm
@@ -34678,6 +34678,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #hp 31
 #str 15
 #def 15 -- 13 from weapons
+#unsurr 1
 #mr 16
 #flying
 #mapmove 20
@@ -52701,6 +52702,46 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #copyspr 3515
 #horsetattoo 1
 #end
+
+#newmonster 9047
+#name "Xiuhcoatl"
+#spr1 "magicenhanced/eexiuhcoatl1.tga"
+#spr2 "magicenhanced/eexiuhcoatl2.tga"
+#descr "The Xiuhcoatl is an enormous serpent of fire that dwell in the forests of Mictlan. Once weapons of the sun and sky used to scatter the stars, they have now been brought into service by the Lawgiver. They take the appearance of a turquoise serpent with a flaming plume and upturned nose and are considered the embodiment of the dry season."
+#str 18
+#att 14
+#def 9
+#hp 60
+#weapon 462  -- Venomous Bite with mortal poison
+#weapon 350 -- fire flare
+#itemslots 17571840
+#magicskill 0 3
+#magicskill 1 3
+#magicskill 6 1
+#mapmove 2
+#summerpower 25
+#enc 3
+#prec 8
+#ap 10
+#prot 14
+#mr 16
+#mor 16
+#gcost 0
+#size 9
+#noleader
+#forestsurvival
+#animal
+#poisonres 10
+#fireres 10
+#swampsurvival
+#holy
+#coldblood
+#twiceborn 7245 -- Necrophidian
+#maxage 500
+#startage 250
+#nametype 129
+#end
+
 
 --#newmonster 8684 -- LA C'tis Hierodule
 --#copystats 510
@@ -79306,6 +79347,10 @@ Initiates of the Deep can be recruited in any land fort."
 #montag 1057
 #end
 
+#selectmonster 525 -- Couatl
+#userestricteditem 15 -- Mictlan Priest
+#end
+
 #selectmonster 526  -- Serpent Fiend
 #spr1 "vanilla/serpentfiend1.tga"
 #spr2 "vanilla/serpentfiend2.tga"
@@ -81049,8 +81094,29 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #weapon 9  -- Dagger
 #end
 
+#selectmonster 1189 -- MA Mictlan Priest
+#userestricteditem 15 -- Mictlan Priest
+#end
+
+#selectmonster 1190 -- MA Priest King
+#userestricteditem 15 -- Mictlan Priest
+#end
+
+#selectmonster 1191 -- MA Rain Priest
+#userestricteditem 15 -- Mictlan Priest
+#end
+
+#selectmonster 1193 -- MA Sun Priest
+#userestricteditem 15 -- Mictlan Priest
+#end
+
+#selectmonster 1194 -- MA Couatl
+#userestricteditem 15 -- Mictlan Priest
+#end
+
 #selectmonster 1192  -- Moon Priest
 #enchrebate50 274 -- Ench74  -- Lunar Potency
+#userestricteditem 15 -- Mictlan Priest
 #darkpower 2
 #darkvision 100
 #end
@@ -81252,6 +81318,13 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #selectmonster 1358 -- Monster Toad
 #clearweapons
 #weapon 300
+#end
+
+#selectmonster 1361  -- Nahualli
+#clearmagic
+#magicskill 4 1
+#magicskill 6 2
+#custommagic 47104 20
 #end
 
 #selectmonster 1364  -- Jade Lizard
@@ -82312,6 +82385,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 
 #selectmonster 1888  -- Sky Priest
 #armor 120 -- Leather Cap
+#userestricteditem 15 -- Mictlan Priest
+#clearmagic
+#magicskill 1 1
+#magicskill 9 1
+#custommagic 11136 50 -- FAWSN
 #end
 
 #selectmonster 1889  -- Jade Serpent
@@ -82324,6 +82402,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 
 #selectmonster 1892  -- Imperial Alchemist
 #userestricteditem 3  -- Alchemist
+#end
+
+
+#selectmonster 1907 -- MA High Priest of the Sky
+#userestricteditem 15 -- Mictlan Priest
 #end
 
 
@@ -97453,7 +97536,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #level 0
 #path 9
-#look 0
+#look 1
 #homecom 7918
 #homecom 933
 #homecom 936
@@ -98474,7 +98557,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #level 0
 #path 9
-#look 0
+#look 1
 #homecom 7918
 #homecom 933
 #homecom 935
@@ -99100,6 +99183,127 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 614
 #homecom 2246
 #homecom 8144
+#end
+
+#newsite 2503
+#clear
+#name "MA Mictlan Summons"
+#rarity 5
+#level 0
+#path 6
+#look 8
+#homemon 7529 -- howler
+#homemon 1359 -- toad
+#homemon 1358 -- monster toad
+#homemon 1889 -- jade serp
+#homemon 859 -- jag
+#homemon 1357 -- bat
+#homemon 1356 -- ozel
+#homemon 1483 -- tzitzi
+#homemon 7579 -- huitznahua
+#homemon 7799 -- mimix
+#homecom 525 -- couatl
+#homecom 9047 -- xiuhcoatl
+#homecom 1422 -- civatet
+#homecom 1558 -- tlahua
+#homecom 1360 -- onaqui
+#end
+
+#newsite 2504
+#clear
+#name "MA Mictlan Unique Summons"
+#rarity 5
+#level 0
+#path 6
+#look 8
+#homecom 1484 -- east tlaloque
+#homecom 1485 -- south tlaloque
+#homecom 1486 -- west tlaloque
+#homecom 1487 -- north tlaloque
+#homecom 7264 -- camazotz
+#homecom 7265 -- huitz
+#homecom 7266 -- itzpa
+#end
+
+#newsite 2505
+#clear
+#name "MA Mictlan Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 1
+#homecom 7918
+#homecom 8195
+#homecom 933
+#homecom 1884
+#homecom 1886
+#end
+
+#newsite 2506
+#clear
+#name "First Law"
+#rarity 5
+#level 0
+#path 0
+#look 2
+#goddomchaos -1
+#end
+
+#newsite 2507
+#clear
+#name "Second Law"
+#rarity 5
+#level 0
+#path 6
+#look 1
+#goddomlazy -1
+#goddomchaos -1
+#end
+
+#newsite 2508
+#clear
+#name "Third Law"
+#rarity 5
+#level 0
+#path 2
+#look 2
+#goddomdeath -1
+#goddomlazy -1
+#goddomchaos -1
+#dominion 1
+#end
+
+#newsite 2509
+#clear
+#name "Fourth Law"
+#rarity 5
+#level 0
+#path 4
+#look 0
+#goddomdrain -1
+#goddomdeath -1
+#goddomlazy -1
+#goddomchaos -1
+#dominion 2
+#end
+
+#newsite 2510
+#clear
+#name "Fifth Law"
+#rarity 5
+#level 0
+#path 1
+#look 1
+#goddomdrain -1
+#goddomdeath -1
+#goddomlazy -1
+#goddomchaos -2
+#dominion 3
+#end
+
+#newsite 2511 -- Temple of the Sun Copy
+#copysite 90 -- Temple of the Sun
+#name "Temple of the Sun "
 #end
 
 
@@ -104570,6 +104774,12 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #end
 
 #selectnation 73 -- MA Mictlan
+#summary "Race: Humans, prefers Heat scale +1
+Military: Light infantry with slings and javelins, tribal kings can levy slaves, sacred Eagle and Jaguar Warriors
+Magic: Air, Fire, Astral, Nature, Water
+Priests: Powerful
+Dominion: Laws may be enacted that ban blood and increase scales"
+
 #hero1 933  -- King of Legends
 #hero2 1884  -- Priest King Topiltzin
 #hero3 1886  -- Priest King Mixcouatl
@@ -104585,6 +104795,16 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #cheapgod20 8445 -- Idol of Sustenance
 #cheapgod20 8448 -- Statue of Sun & Rain
 #cheapgod20 8351 -- Feathered Serpent
+
+#futuresite "MA Mictlan Summons"
+#futuresite "MA Mictlan Unique Summons"
+#futuresite "MA Mictlan Heroes"
+#futuresite "First Law"
+#futuresite "Second Law"
+#futuresite "Third Law"
+#futuresite "Fourth Law"
+#futuresite "Fifth Law"
+
 #end
 
 #selectnation 69 -- MA T'ien Chi
@@ -133703,7 +133923,7 @@ Applies the effects of Holy Avenger to the caster"
 #pathlevel 0 2
 #damage 7799 -- Cloud Serpent
 #nreff 505
-#fatiguecost 800
+#fatiguecost 600
 #spellreqfly 1
 #restricted 73 -- MA Mictlan
 #end
@@ -133711,14 +133931,14 @@ Applies the effects of Holy Avenger to the caster"
 #selectspell 4144
 #copyspell 935 -- Pack of Wolves
 #name "Summon Centzonmimixcoa Cluster"
-#descr "The caster flies up to the clouds and returns with many Centzonmimixcoa, or Cloud Serpents. These magical two-headed snakes dwell in the clouds and are sacred to the Lawgiver. The sight of a Cloud Serpent raises the spirits of soldiers and gives them faith in the power of the Lawgiver. This spell can only be cast by a flying mage, and more powerful mages can summon more creatures with each casting."
+#descr "The caster flies up to the clouds and returns with many Centzonmimixcoa, or Cloud Serpents. These magical two-headed snakes dwell in the clouds and are sacred to the Lawgiver. The sight of a Cloud Serpent raises the spirits of soldiers and gives them faith in the power of the Lawgiver. More powerful mages can summon more creatures with each casting."
 #researchlevel 6
 #path 0 1
 #pathlevel 0 3
 #damage 7799 -- Cloud Serpent
-#nreff 1012 -- 15+
-#fatiguecost 1800
-#spellreqfly 1
+#nreff 1009 -- 12+
+#fatiguecost 1200
+--#spellreqfly 1
 #restricted 73 -- MA Mictlan
 #end
 
@@ -133734,7 +133954,7 @@ Applies the effects of Holy Avenger to the caster"
 #effect 10001
 #nreff 505
 #damage 7579
-#fatiguecost 800
+#fatiguecost 600
 #restricted 25 -- EA Mictlan
 #restricted 73 -- MA Mictlan
 #restricted 111 -- LA Mictlan
@@ -133752,12 +133972,12 @@ Applies the effects of Holy Avenger to the caster"
 #effect 10001
 #nreff 1012 -- 15+
 #damage 7579
-#fatiguecost 1800
+#fatiguecost 1500
 #restricted 73 -- MA Mictlan
 #end
 
 
-#selectspell 4146 -- Harrespil nextspell
+#selectspell 4146 -- Coral Citadel nextspell
 #name "Coral Citadel Creation"
 #descr "The caster expands and reinforces an underwater foritfication into a sprawling bastion with coral used to build the Coral Towers. Over the next month the fortress undergoes a transformation into a Citadel of coral."
 #details "Must be cast at an underwater Fortress or Castle, transforming the fortification into a Citadel. If not cast at a Fortress or Castle the gems will be wasted."
@@ -133770,7 +133990,7 @@ Applies the effects of Holy Avenger to the caster"
 #nreff 1
 #end
 
-#selectspell 4147 -- Harrespil EA
+#selectspell 4147 -- Coral Citadel
 #copyspell 106  -- Record of Creation
 #name "The Coral Citadel"
 #descr "The caster expands and reinforces an underwater foritfication into a sprawling bastion with coral used to build the Coral Towers. Over the next month the fortress undergoes a transformation into a Citadel of coral."
@@ -134250,7 +134470,7 @@ Applies the effects of Holy Avenger to the caster"
 #pathlevel 0 3
 #path 1 5 -- Death
 #pathlevel 1 2
-#damage 7799 -- Shadow Incarnate
+#damage 9036 -- Shadow Incarnate
 #fatiguecost 100
 #spec 8388608
 #end
@@ -134331,7 +134551,7 @@ Applies the effects of Holy Avenger to the caster"
 #descr "Getting lost and losing things alike is commonplace in the land of dreams, where terrain shifts and spatial reasoning fails. The caster attempts to shift the target's spatial reference in a similar manner, and if successful may move their entire being to a new location either on the battlefield or even as far as a neighboring province. Getting lost is a universal phenomenon and even the mindless or inanimate are not immune."
 #details "MRN to force the target to retreat, otherwise MRN Hard for battlefield teleport and confusion"
 #school 5 -- thaum
-#researchlevel 0
+#researchlevel 5
 #path 0 7
 #pathlevel 0 3
 #path 1 1
@@ -134353,7 +134573,7 @@ Applies the effects of Holy Avenger to the caster"
 #details "Images created: 2"
 #aoe 3
 #fatiguecost 40
-#researchlevel 0
+#researchlevel 4
 #path 0 7
 #pathlevel 0 3
 #path 1 1
@@ -134376,7 +134596,7 @@ Applies the effects of Holy Avenger to the caster"
 #damage 2
 #end
 
-#selectspell 4168 -- Summon Sprite
+#selectspell 4178 -- Summon Sprite
 #name "Summon Sprite Scout"
 #descr "The caster summons a sprite from the Dreamwild to serve as a scout. Sprites are small faeries with insect wings capable of moving quickly through provinces."
 #school 0 -- Conj
@@ -134391,7 +134611,7 @@ Applies the effects of Holy Avenger to the caster"
 #fatiguecost 300
 #end
 
-#selectspell 4169 -- Awaken Tattoos
+#selectspell 4179 -- Awaken Tattoos
 #copyspell 798 -- Barkskin
 #name "Awaken Tattoos"
 #descr "The caster activates the dormant powers of enchanted tattoos. The unit gains limited invulnerability and increased stats depending on tattoo type. Horse tattoos grant riding skill, bear tattoos grant increased strength, boar tattoos grant increased invulnerability, wolf tattoos grant increased attack skill and snake tattoos grant magic resistance."
@@ -134409,7 +134629,7 @@ Applies the effects of Holy Avenger to the caster"
 #restricted 12 -- Marverni
 #end
 
-#selectspell 4170 -- Sacred Calydonian Boar
+#selectspell 4180 -- Sacred Calydonian Boar
 #copyspell 1057 -- calyd boar
 #name "Call Calydonian Boar"
 #descr "The caster summons a Calydonian Boar and binds it to his service. The Calydonian Boar is a horrible monster boar with burning eyes, spear-like bristles of iron and tusks like that of an elephant. Anyone unfortunate enough to come close to the dreadful beast is set ablaze by the scorching heat of its eyes. The boar breathes flames and its tusks crackles with lightning. Like all boars, Calydonian Boars are sacred to the people of Marverni."
@@ -134418,7 +134638,141 @@ Applies the effects of Holy Avenger to the caster"
 #researchlevel 6
 #end
 
+#selectspell 4181 -- MA Mictlan Enact Law
+#name "Enact Law"
+#descr "A Law of the Lawgiver has been enacted through a great ceremony hosted in the capital."
+#school -1
+#researchlevel 0
+#path 0 9 -- H
+#effect 10082
+#damage 282 -- Ench82 -- Enact Law
+#fatiguecost 2000
+#nreff 1
+#end
 
+#selectspell 4182 -- First Law
+#copyspell 106  -- Record of Creation
+#name "First Law of the Watchful Face"
+#descr "The priests of Mictlan enact the First of the Lawgiver's Laws through a great ceremony hosted in the capital. All blood hunting will be banned within temples of the Awakening God and Order will increase throughout the land. Sun Warriors will be released into service of the Awakening God on the ceremony's conclusion."
+#details "Dominion will permanently gain +1 Order. Blood Hunters in provinces containing temples will be assassinated by Centzonmimixcoa.
+This spell can only be cast in the capital once. 6d6 Sun Warriors will arrive in the capital."
+#school 4 -- ench
+#researchlevel 3
+#path 0 0
+#pathlevel 0 2
+#nreff 1
+#effect 10083
+#damage -1
+#fatiguecost 2000
+#nextspell 4181
+#restricted 73 -- MA Mictlan
+#onlyatsite 90 -- Temple of the Sun
+#end
+
+#selectspell 4183 -- Second Law
+#copyspell 106  -- Record of Creation
+#name "Second Law of the Life-giving Land"
+#descr "The priests of Mictlan enact the Second of the Lawgiver's Laws through a great ceremony hosted in the capital. Handling of slaves will be banned within temples of the Awakening God and Production will increase throughout the land. Jaguar Warriors will be released into service of the Awakening God on the ceremony's conclusion."
+#details "Dominion will permanently gain +1 Production. Commanders carrying slaves in provinces containing temples will be assassinated by Centzonmimixcoa.
+This spell can only be cast in the capital after the First Law of the Watchful Face has been cast. 6d6 Jaguar Warriors will arrive in the capital."
+#school 4 -- ench
+#researchlevel 4
+#path 0 6
+#pathlevel 0 2
+#nreff 1
+#effect 10083
+#damage -1
+#fatiguecost 2000
+#nextspell 4181
+#restricted 73 -- MA Mictlan
+#onlyatsite 2506 -- first law
+#end
+
+#selectspell 4184 -- Third Law
+#copyspell 106  -- Record of Creation
+#name "Third Law of the Life-giving Rain"
+#descr "The priests of Mictlan enact the Third of the Lawgiver's Laws through a great ceremony hosted in the capital. All blood hunting will be banned within laboratories and Growth will increase throughout the land. Giant toads will be granted to the Awakening God on the ceremony's conclusion."
+#details "Dominion will permanently gain +1 Growth. Blood Hunters in provinces containing labs will be assassinated by Centzonmimixcoa.
+This spell can only be cast in the capital after the Second Law of the Life-giving Land has been cast. 3d6 Monster Toads will arrive in the capital."
+#school 4 -- ench
+#researchlevel 5
+#path 0 2
+#pathlevel 0 2
+#nreff 1
+#effect 10083
+#damage -1
+#fatiguecost 2000
+#nextspell 4181
+#restricted 73 -- MA Mictlan
+#onlyatsite 2507 -- second law
+#end
+
+#selectspell 4185 -- Fourth Law
+#copyspell 106  -- Record of Creation
+#name "Fourth Law of the Dreaming Face"
+#descr "The priests of Mictlan enact the Fourth of the Lawgiver's Laws through a great ceremony hosted in the capital. Handling of slaves will be banned within laboratories and Magic will increase throughout the land. Centzonhuitznahua will be called into service for the Awakening God on the ceremony's conclusion."
+#details "Dominion will permanently gain +1 Magic. Commanders carrying slaves in provinces containing labs will be assassinated by Centzonmimixcoa.
+This spell can only be cast in the capital after the Third Law of the Life-giving Rain has been cast. 6d6 Centzonhuitznahua will arrive in the capital."
+#school 4 -- ench
+#researchlevel 6
+#path 0 4
+#pathlevel 0 2
+#nreff 1
+#effect 10083
+#damage -1
+#fatiguecost 2000
+#nextspell 4181
+#restricted 73 -- MA Mictlan
+#onlyatsite 2508 -- third law
+#end
+
+#selectspell 4186 -- Fifth Law
+#copyspell 106  -- Record of Creation
+#name "Fifth Law of the Lawgiver"
+#descr "The priests of Mictlan enact the Fifth of the Lawgiver's Laws through a great ceremony hosted in the capital. All blood hunting and handling of slaves will be banned within the dominion of the Awakening God and Order will increase throughout the land. Centzonmimixcoa will be called into service for the Awakening God on the ceremony's conclusion."
+#details "Dominion will permanently gain +1 Order. Blood hunters and commanders carrying slaves in provinces within your dominion will be assassinated by Centzonmimixcoa.
+This spell can only be cast in the capital after the Fourth Law of the Dreaming Face has been cast. 8d6 Centzonmimixcoa will arrive in the capital."
+#school 4 -- ench
+#researchlevel 7
+#path 0 1
+#pathlevel 0 2
+#nreff 1
+#effect 10083
+#damage -1
+#fatiguecost 2000
+#nextspell 4181
+#restricted 73 -- MA Mictlan
+#onlyatsite 2509 -- fourth law
+#end
+
+#selectspell 4187
+#copyspell 935 -- Pack of Wolves
+#name "Serpents of the Lawgiver"
+#descr "The caster flies up to the clouds and returns with many Centzonmimixcoa, or Cloud Serpents. These magical two-headed snakes dwell in the clouds and are sacred to the Lawgiver. The sight of a Cloud Serpent raises the spirits of soldiers and gives them faith in the power of the Lawgiver. More powerful mages can summon more creatures with each casting."
+#researchlevel 8
+#path 0 1
+#pathlevel 0 4
+#damage 7799 -- Cloud Serpent
+#nreff 3023 -- 35+++
+#fatiguecost 3000
+--#spellreqfly 1
+#restricted 73 -- MA Mictlan
+#end
+
+#selectspell 4188 -- Xiuhcoatl
+#copyspell 1024 -- Summon Sleeper
+#name "Contact Xiuhcoatl"
+#descr "The mage contacts a Xiuhcoatl and persuades it to aid him. The Xiuhcoatl is an enormous serpent of fire that dwell in the forests of Mictlan. Once weapons of the sun and sky used to scatter the stars, they have now been brought into service by the Lawgiver. They take the appearance of a turquoise serpent with a flaming plume and upturned nose and are considered the embodiment of the dry season."
+#researchlevel 6
+#path 0 0 -- F
+#pathlevel 0 1
+#path 1 1 -- A
+#pathlevel 1 1
+#fatiguecost 4000
+#nreff 1
+#damage 9037
+#restricted 73 -- MA Mictlan
+#end
 
 -- END OF NEW SPELLS
 
@@ -140845,6 +141199,21 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #restricted 123 -- LA Pyrene
 #end
 
+#selectitem 870 -- Aizkora
+#spr "magicenhanced/eeifeatheredcrown.tga"
+#name "Feathered Crown"
+#descr "The reign of the Lawgiver has brought with it the worship of the Sky in which He dwells. This crown, made of the feathers of Couatl fallen from above, is a symbol of authority among the priests of Mictlan and is imbued with power over the skies. This item can only be used by priests of Mictlan."
+#constlevel 3
+#mainpath 1
+#mainlevel 1
+#airshield 80
+#magicboost 1 1 -- Air
+#restricteditem 15 -- Mictlan Priest
+#type 9 -- crown
+#armor 212 -- magic crown
+#restricted 73 -- MA Mictlan
+#end
+
 
 -- END OF NEW ITEMS
 
@@ -141760,10 +142129,16 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectitem 281 -- Purple Silk garments
+#def 3
+#itemcost1 -60
+#itemcost1 -80
 #restricted 205 -- Houssa
 #end
 
 #selectitem 283 -- Silver Silk garments
+#constlevel 5
+#itemcost1 -60
+#itemcost1 -80
 #restricted 205 -- Houssa
 #end
 
@@ -156622,6 +156997,471 @@ It is now fully repaired and a new crew has been assigned to it."
 #nolog
 #nation -2
 #com 6749
+#end
+
+#newevent -- centzy / jag fight
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_2monsters 7799 -- centzy
+#req_monster 1356 -- jag
+#req_maxtroops 20
+#req_pop0ok
+#msg "Your Centzonmimixcoa and Ozelotls have gotten into a fight and some have died."
+#header 2
+#nolog
+#nation -2
+#killmon 7799 -- centzy
+#killmon 1356 -- jag
+#end
+
+#newevent -- centzy / jag fight
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_2monsters 7799 -- centzy
+#req_monster 1356 -- jag
+#req_mintroops 21
+#req_maxtroops 50
+#req_pop0ok
+#msg "Your Centzonmimixcoa and Ozelotls have gotten into a fight and some have died."
+#header 2
+#nolog
+#nation -2
+#killmon 7799 -- centzy
+#killmon 7799 -- centzy
+#killmon 1356 -- jag
+#killmon 1356 -- jag
+#end
+
+#newevent -- centzy / jag fight
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_2monsters 7799 -- centzy
+#req_monster 1356 -- jag
+#req_mintroops 51
+#req_maxtroops 100
+#req_pop0ok
+#msg "Your Centzonmimixcoa and Ozelotls have gotten into a fight and many have died."
+#header 2
+#nolog
+#nation -2
+#kill2d6mon 7799 -- centzy
+#kill2d6mon 1356 -- jag
+#end
+
+#newevent -- centzy / jag fight
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_2monsters 7799 -- centzy
+#req_monster 1356 -- jag
+#req_mintroops 101
+#req_maxtroops 150
+#req_pop0ok
+#msg "Your Centzonmimixcoa and Ozelotls have gotten into a fight and many have died."
+#header 2
+#nolog
+#nation -2
+#killmon 7799 -- centzy
+#kill2d6mon 7799 -- centzy
+#killmon 1356 -- jag
+#kill2d6mon 1356 -- jag
+#end
+
+#newevent -- centzy / jag fight
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_2monsters 7799 -- centzy
+#req_monster 1356 -- jag
+#req_mintroops 151
+#req_maxtroops 250
+#req_pop0ok
+#msg "Your Centzonmimixcoa and Ozelotls have gotten into a fight and many have died."
+#header 2
+#nolog
+#nation -2
+#killmon 7799 -- centzy
+#killmon 7799 -- centzy
+#kill2d6mon 7799 -- centzy
+#killmon 1356 -- jag
+#killmon 1356 -- jag
+#kill2d6mon 1356 -- jag
+#end
+
+#newevent -- centzy / jag fight
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_2monsters 7799 -- centzy
+#req_monster 1356 -- jag
+#req_mintroops 251
+#req_maxtroops 500
+#req_pop0ok
+#msg "Your Centzonmimixcoa and Ozelotls have gotten into a fight and many have died."
+#header 2
+#nolog
+#nation -2
+#kill2d6mon 7799 -- centzy
+#kill2d6mon 7799 -- centzy
+#kill2d6mon 1356 -- jag
+#kill2d6mon 1356 -- jag
+#end
+
+#newevent -- centzy / jag fight
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_2monsters 7799 -- centzy
+#req_monster 1356 -- jag
+#req_mintroops 501
+#req_pop0ok
+#msg "Your Centzonmimixcoa and Ozelotls have gotten into a fight and many have died."
+#header 2
+#nolog
+#nation -2
+#kill2d6mon 7799 -- centzy
+#kill2d6mon 7799 -- centzy
+#kill2d6mon 7799 -- centzy
+#kill2d6mon 1356 -- jag
+#kill2d6mon 1356 -- jag
+#kill2d6mon 1356 -- jag
+#end
+
+#newevent -- centzy assassinates bhunter
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_rare 50
+#req_monster 7799 -- centzy
+#req_pop0ok
+#msg "Your Centzonmimixcoa has found a someone attempting to hunt for blood and attacked."
+#header 2
+#nolog
+#nation -2
+#req_targorder 8 -- blood hunting
+#assowner 1
+#killmon 7799
+#assassin 7799
+#end
+
+#newevent -- centzy assassinates bhunter temples 1
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_varpos 6001 -- 1st law
+#req_pop0ok
+#msg "A blood hunter breaking the First Law has been attacked by Centzonmimixcoas."
+#nolog
+#header 2
+#nation -2
+#req_temple 1
+#req_targorder 8 -- blood hunting
+#assowner 1
+#assfollower1d3 7799
+#assassin 7799
+#end
+
+#newevent -- centzy assassinates bhunter temples 2
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_varpos 6002 -- 2nd law
+#req_pop0ok
+#msg "A blood courier breaking the Second Law has been attacked by Centzonmimixcoas."
+#nolog
+#header 2
+#nation -2
+#req_temple 1
+#req_targmanygems 8 -- blood slaves
+#assowner 1
+#assfollower1d3 7799
+#assassin 7799
+#end
+
+#newevent -- centzy assassinates bhunter labs 3
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_varpos 6003 -- 3rd law
+#req_pop0ok
+#msg "A blood hunter breaking the Third Law has been attacked by Centzonmimixcoas."
+#nolog
+#header 2
+#nation -2
+#req_lab 1
+#req_targorder 8 -- blood hunting
+#assowner 1
+#assfollower1d3 7799
+#assassin 7799
+#end
+
+#newevent -- centzy assassinates bhunter labs 4
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_varpos 6004 -- 4th law
+#req_pop0ok
+#msg "A blood courier breaking the Fourth Law has been attacked by Centzonmimixcoas."
+#nolog
+#header 2
+#nation -2
+#req_lab 1
+#req_targmanygems 8 -- blood slaves
+#assowner 1
+#assfollower1d3 7799
+#assassin 7799
+#end
+
+#newevent -- centzy assassinates bhunter dom 5
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_varpos 6005 -- 5th law
+#req_pop0ok
+#msg "A blood courier breaking the Fifth Law has been attacked by Centzonmimixcoas."
+#nolog
+#header 2
+#nation -2
+#req_domchance 35
+#req_domowner 73 -- MA Mictlan
+#req_targmanygems 8 -- blood slaves
+#assowner 1
+#assfollower1d3 7799
+#assassin 7799
+#end
+
+#newevent -- centzy assassinates bhunter dom 5
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_varpos 6005 -- 5th law
+#req_pop0ok
+#msg "A blood hunter breaking the Fifth Law has been attacked by Centzonmimixcoas."
+#nolog
+#nation -2
+#req_domchance 35
+#req_domowner 73 -- MA Mictlan
+#req_targorder 8 -- blood hunting
+#assowner 1
+#assfollower1d3 7799
+#assassin 7799
+#end
+
+
+#newevent -- Upgrade 5 replace site
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_site 1
+#req_ench 282 -- Ench82 -- Enact Law
+#req_pop0ok
+#msg "The Fifth and final Law of the Lawgiver has been enacted, banning blood hunting and slaves within the dominion of the Awakening God and increasing Order throughout the nation. [Fourth Law]"
+#header 2
+#removesite 2509 -- fourth law
+#addsite 2510 -- fifth law
+#incvar 6005
+#nation -2
+#8d6units 7799 -- centzy
+#end
+
+#newevent -- Upgrade 4 replace site
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_site 1
+#req_ench 282 -- Ench82 -- Enact Law
+#req_pop0ok
+#msg "The Fourth Law of the Lawgiver has been enacted, banning blood slaves in laboratories and increasing Magic throughout the nation. [Third Law]"
+#header 2
+#removesite 2508 -- third law
+#addsite 2509 -- fourth law
+#incvar 6004
+#nation -2
+#6d6units 7579 -- huitznahua
+#end
+
+#newevent -- Upgrade 3 replace site
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_site 1
+#req_ench 282 -- Ench82 -- Enact Law
+#req_pop0ok
+#msg "The Third Law of the Lawgiver has been enacted, banning blood hunting in laboratories and increasing Growth throughout the nation. [Second Law]"
+#header 2
+#removesite 2507 -- second law
+#addsite 2508 -- third law
+#incvar 6003
+#nation -2
+#3d6units 1358 -- monster toad
+#end
+
+#newevent -- Upgrade 2 replace site
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_site 1
+#req_ench 282 -- Ench82 -- Enact Law
+#req_pop0ok
+#msg "The Second Law of the Lawgiver has been enacted, banning blood slaves in temples and increasing Production throughout the nation. [First Law]"
+#header 2
+#removesite 2506 -- first law
+#addsite 2507 -- second law
+#incvar 6002
+#nation -2
+#6d6units 727 -- jag warrior
+#end
+
+#newevent -- Upgrade 1 placement
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_nositenbr 2511 -- sun temple copy
+#req_ench 282 -- Ench82 -- Enact Law
+#req_pop0ok
+#msg "The First Law of the Lawgiver has been enacted, banning blood hunting in temples and increasing Order throughout the nation."
+#notext
+#nolog
+#addsite 2506 -- First Law
+#end
+
+#newevent -- Upgrade 1 replace capsite
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_nositenbr 2511 -- sun temple copy
+#req_ench 282 -- Ench82 -- Enact Law
+#req_pop0ok
+#msg "The First Law of the Lawgiver has been enacted, banning blood hunting in temples and increasing Order throughout the nation."
+#header 2
+#removesite 90 -- sun temple
+#addsite 2511 -- sun temple copy
+#incvar 6001
+#nation -2
+#6d6units 725 -- sun warrior
+#end
+
+#newevent -- other player takes cap site 1
+#rarity 5
+#req_notfornation 73 -- MA Mictlan
+#req_site 1
+#req_pop0ok
+#msg "The Lawgiver's Law has been disrupted. [First Law]"
+#nolog
+#header 2
+#removesite 2506 -- First Law
+#incvar 6006
+#nation -2
+#end
+
+#newevent -- other player takes cap site 2
+#rarity 5
+#req_notfornation 73 -- MA Mictlan
+#req_site 1
+#req_pop0ok
+#msg "The Lawgiver's Law has been disrupted. [Second Law]"
+#nolog
+#header 2
+#removesite 2507 -- First Law
+#incvar 6006
+#nation -2
+#end
+
+#newevent -- other player takes cap site 3
+#rarity 5
+#req_notfornation 73 -- MA Mictlan
+#req_site 1
+#req_pop0ok
+#msg "The Lawgiver's Law has been disrupted. [Third Law]"
+#nolog
+#header 2
+#removesite 2508 -- First Law
+#incvar 6006
+#nation -2
+#end
+
+#newevent -- other player takes cap site 4
+#rarity 5
+#req_notfornation 73 -- MA Mictlan
+#req_site 1
+#req_pop0ok
+#msg "The Lawgiver's Law has been disrupted. [Fourth Law]"
+#nolog
+#header 2
+#removesite 2509 -- First Law
+#incvar 6006
+#nation -2
+#end
+
+#newevent -- other player takes cap site 5
+#rarity 5
+#req_notfornation 73 -- MA Mictlan
+#req_site 1
+#req_pop0ok
+#msg "The Lawgiver's Law has been disrupted. [Fifth Law]"
+#nolog
+#header 2
+#removesite 2510 -- First Law
+#incvar 6006
+#nation -2
+#end
+
+#newevent -- retake capital 5
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_owncapital 1
+#req_varpos 6006
+#req_varone 6005
+#req_pop0ok
+#msg "The Lawgiver's Law has been reinstated."
+#nolog
+#header 2
+#addsite 2510
+#clearvar 6006
+#nation -2
+#end
+
+#newevent -- retake capital 4
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_owncapital 1
+#req_varpos 6006
+#req_varone 6004
+#req_pop0ok
+#msg "."
+#nolog
+#header 2
+#addsite 2509
+#clearvar 6006
+#nation -2
+#end
+
+#newevent -- retake capital 3
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_owncapital 1
+#req_varpos 6006
+#req_varone 6003
+#req_pop0ok
+#msg "The Lawgiver's Law has been reinstated."
+#nolog
+#header 2
+#addsite 2508
+#clearvar 6006
+#nation -2
+#end
+
+#newevent -- retake capital 2
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_owncapital 1
+#req_varpos 6006
+#req_varone 6002
+#req_pop0ok
+#msg "The Lawgiver's Law has been reinstated."
+#nolog
+#header 2
+#addsite 2507
+#clearvar 6006
+#nation -2
+#end
+
+#newevent -- retake capital 1
+#rarity 5
+#req_fornation 73 -- MA Mictlan
+#req_owncapital 1
+#req_varpos 6006
+#req_varone 6001
+#req_pop0ok
+#msg "The Lawgiver's Law has been reinstated."
+#nolog
+#header 2
+#addsite 2506
+#clearvar 6006
+#nation -2
 #end
 
 
