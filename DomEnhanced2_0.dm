@@ -78903,6 +78903,11 @@ Initiates of the Deep can be recruited in any land fort."
 #armor 22
 #end
 
+#selectmonster 212 -- Lord Warden
+#gcost 10020
+#magicskill 9 1
+#end
+
 #selectmonster 209  -- Mother Guard
 #rpcost 32
 #bodyguard 4
@@ -99504,6 +99509,59 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8228
 #end
 
+#newsite 2515
+#clear
+#name "MA Man Summons"
+#rarity 5
+#level 0
+#path 7
+#look 7
+#homemon 1769 -- black dog
+#homemon 1768 -- barg
+#homemon 1770 -- cu sidhe
+#homemon 3899 -- unicorn
+#homemon 7655 -- bramb
+#homemon 7656 -- thistle
+#homemon 7744 -- pict
+#homemon 7879 -- pict mummy
+#homecom 7881 -- pict chief mummy
+#homecom 7878 -- peat mummy
+#end
+
+#newsite 2516
+#clear
+#name "MA Man Summons Continued"
+#rarity 5
+#level 0
+#path 7
+#look 7
+#homecom 7658 -- urisk
+#homecom 7861 -- pixie
+#homecom 7657 -- gorsechief
+#homecom 7660 -- korrig
+#homecom 7521 -- nuckel
+#homecom 7325 -- nemed sorc
+#homecom 7632 -- white dragon
+#homecom 7633 -- red dragon
+#end
+
+
+#newsite 2517
+#clear
+#name "MA Man Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 6
+#homecom 58
+#homecom 376
+#homecom 381
+#homecom 582
+#homecom 2481
+#homecom 3236
+#homecom 3239
+#end
+
 
 
 -- END OF NEW SITES
@@ -104915,6 +104973,11 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #startunitnbrs1 20
 #startunittype2 59  -- Longbowman
 #startunitnbrs2 30
+
+#futuresite "MA Man Summons"
+#futuresite "MA Man Summons Continued"
+#futuresite "Wandering Knights"
+#futuresite "MA Man Heroes"
 #end
 
 #selectnation 58 -- MA Eriu
@@ -116351,25 +116414,6 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #damage 7325 -- Nemedian Sorceress
 #end
 
-#selectspell 2757
-#copyspell 965 -- Summon Fire Drake
-#name "Host of the Tuatha"
-#descr "The Tuatha are the ancient masters of Tir na n'Og and Avalon. When men came to their lands, they retreated to the Land of the Ever Young and were lost to the world. A few of them lingered on and aided the retreat of their Sidhe descendants into strange and magical twilight lands hidden under ancient mounds. With this spell the caster enters the Land of the Ever Young to convince a war party of Tuatha to emerge from their mound. Time passes strangely in the fey lands and the caster will find themselves oddly aged upon their return."
-#details "Caster ages 10 years"
-#path 0 1
-#path 1 6
-#pathlevel 0 3
-#pathlevel 1 3
-#researchlevel 6
-#fatiguecost 2500
-#effect 10001
-#nreff 1017
-#damage 1753  -- Tuatha Warriors
-#nextspell 3712 -- Age 10 Years
-#onlyatsite 5  -- Forest of Avalon
-#restricted 57 -- MA Man
-#end
-
 #selectspell 2758
 #copyspell 239 -- Confusion
 #name "Fey Confusion"
@@ -122079,21 +122123,6 @@ All effects scale with friendly Dominion."
 #spec 274877923328  -- Piercing damage, Ignores Shields
 #end
 
-#selectspell 3189
-#copyspell 1162 -- Haste
-#name "Glamour"
-#descr "The caster uses Tuatha magic to shroud the appearance of a squad of troops in illusion. The affected units will be surrounded by illusory images that will confuse attackers, however the images will disappear once the unit is wounded."
-#details "Images created: 2, Air mages gain 2 images per Air skill level."
-#path 0 1
-#pathlevel 0 2
-#path 1 6
-#pathlevel 1 1
-#aoe 2006
-#fatiguecost 60
-#damage 16777216  -- Mirrored Image
-#restricted 57 -- MA Man
-#end
-
 #selectspell 3190
 #name "Become Heretic"
 #school -1
@@ -122121,92 +122150,6 @@ All effects scale with friendly Dominion."
 #nextspell 3190
 #end
 
-#selectspell 3192
-#copyspell 965 -- Summon Fire Drake
-#name "Host of the Unseelie"
-#descr "In the lands of the Fair Ones dwell two courts, the Seelie and Unseelie. In the dark of winter the Unseelie prey on the common folk. Faery gates located in the deepest forests lead to their realm where the brave can bargain for their service. Unseelie appear as fey knights astride dark mounts, cloaked in glamour. They are cruel and capricious, often appearing at night to travellers and spiriting them away. Whilst in fey lands time will pass strangely and the caster will be oddly aged upon their return."
-#details "Caster ages 10 years"
-#path 0 2
-#path 1 1
-#pathlevel 0 3
-#pathlevel 1 1
-#researchlevel 5
-#fatiguecost 3000
-#effect 10001
-#nreff 1007
-#damage 8011
-#nextspell 3712 -- Age 10 Years
-#onlygeosrc 128  -- Forest
-#restricted 57 -- MA Man
-#end
-
-#selectspell 3193
-#copyspell 965 -- Summon Fire Drake
-#name "Host of the Seelie"
-#descr "In the lands of the Fair Ones dwell two courts, the Seelie and Unseelie. In summer the Seelie reign and bring light and kindness. Faery gates located in the deepest forests lead to their realm where the brave can bargain for their service. Seelie appear as winged fey creatures, cloaked in glamour. They are kind and forgiving, often helping lost children and leaving food for wayward travellers. Whilst in fey lands time will pass strangely and the caster will be oddly aged upon their return."
-#details "Caster ages 10 years"
-#path 0 1
-#path 1 6
-#pathlevel 0 3
-#pathlevel 1 1
-#researchlevel 5
-#fatiguecost 3000
-#effect 10001
-#nreff 1012
-#damage 8012
-#nextspell 3712 -- Age 10 Years
-#onlygeosrc 128  -- Forest
-#restricted 57 -- MA Man
-#end
-
-#selectspell 3194
-#name "Queen of the Unseelie"
-#descr "The caster enters an Unseelie Door to gain the services of a Queen of the Winter Court. The Unseelie Court of Fey are associated with winter and are considered the more wicked of the two courts, raiding villages and bringing general misfortune to mortals in their path. The Queens of the Winter Court are skilled in the magical arts of trickery, winter and death. She will appear surrounded by her servants and can summon more to the mortal realm each month. Whilst in fey lands time will pass strangely and the caster will be oddly aged upon their return."
-#details "Caster ages 10 years"
-#school 0
-#researchlevel 8
-#path 0 2
-#path 1 1
-#pathlevel 0 5
-#pathlevel 1 1
-#effect 10021
-#damage 8013
-#nreff 1
-#fatiguecost 6500
-#nextspell 3192 -- Age 10 Years
-#onlygeosrc 128  -- Forest
-#restricted 57 -- MA Man
-#end
-
-#selectspell 3195
-#name "Queen of the Seelie"
-#descr "The caster enters a Seelie Door to gain the services of a Queen of the Summer Court. The Seelie Court of Fey are associated with sumer and are considered the more kindly of the two courts, rewarding kindness and occasionally helping an errant human. The Queens of the Summer Court are skilled in the magical arts of the air, light, warmth and growth. She will appear surrounded by her servants and can summon more to the mortal realm each month. Whilst in fey lands time will pass strangely and the caster will be oddly aged upon their return."
-#details "Caster ages 10 years"
-#school 0
-#researchlevel 8
-#path 0 1
-#path 1 6
-#pathlevel 0 5
-#pathlevel 1 1
-#effect 10021
-#damage 8014
-#nreff 1
-#fatiguecost 6500
-#nextspell 3193 -- Age 10 Years
-#onlygeosrc 128  -- Forest
-#restricted 57 -- MA Man
-#end
-
-#selectspell 3196
-#copyspell 1024 -- Awaken Sleeper
-#name "Summon Unicorn"
-#descr "The caster ventures into a deep forest and calls to a Unicorn to aid them. Unicorns are mystical defenders of the forest and their horns can cure grievous injuries. They are extremely rare and appear only to those pure of heart."
-#fatiguecost 2200
-#damage 7397 -- Unicorn
-#onlygeosrc 128  -- Forest
-#restricted 57 -- MA Man
-#end
-
 #selectspell 3197
 #name "Summon Pixie"
 #descr "The caster ventures onto a high moorland to summon a Pixie. These fey creatures are fierce rivals to the faeries and this emnity has spilled over into battle more than once. Pixies can cloak themselves from the sight of mortals and delight in playing pranks and misleading travellers. They are skilled in the magic of the wild."
@@ -122228,29 +122171,11 @@ All effects scale with friendly Dominion."
 #name "Call Wandering Knight"
 #descr "In the nation of Man there are many knights that wander the land, protecting the common folk and aiding those in need. The caster summons one such knight to aid them against their enemies. The caster does not know who will answer the call, only that they will serve the Awakening God to the best of their abilities. These knights are often armed with magical weaponry found during their perilous quests."
 #researchlevel 4
-#fatiguecost 500
+#fatiguecost 400
+#pathlevel 0 2
 #damage -1022  -- Knights of Man
 #restricted 57 -- MA Man
 #restricted 100 -- LA Man
-#end
-
-#selectspell 3199
-#copyspell 991 -- Will o' Wisp
-#name "The Knights of Avalon"
-#descr "The Knights of Avalon are revered throughout Man as defenders of the innocent and protectors of the faithful. It is said that they will appear in the hour of greatest need when all hope is lost. With this spell the caster summons several Knights of Avalon clad in shining armor to the battle. The Knights will ride from the edge of the battlefield and may appear behind the enemy line. After the battle the Knights will ride away in search of further adventures."
-#school 0
-#researchlevel 6
-#path 0 6
-#pathlevel 0 3
-#path 1 1
-#pathlevel 1 2
-#fatiguecost 100
-#effect 43  -- Single border summoning
-#damage 64  -- Knight of Avalon
-#nreff 4
-#explspr -1
-#spec 0
-#restricted 57 -- MA Man
 #end
 
 #selectspell 3200
@@ -122265,7 +122190,7 @@ All effects scale with friendly Dominion."
 #effect 10093
 #nreff 1
 #damage 7632
-#fatiguecost 2500
+#fatiguecost 1500
 #onlyatsite 6  -- Tower of Avalon
 #restricted 57 -- MA Man
 #end
@@ -122282,7 +122207,7 @@ All effects scale with friendly Dominion."
 #effect 10093
 #nreff 1
 #damage 7633
-#fatiguecost 2500
+#fatiguecost 1500
 #onlyatsite 6  -- Tower of Avalon
 #restricted 57 -- MA Man
 #end
@@ -122304,7 +122229,8 @@ All effects scale with friendly Dominion."
 #school -1
 #researchlevel 0
 #effect 10021
-#damage 1759  -- Sidhe Lord
+--#damage 1759  -- Sidhe Lord
+#damage 856  -- Tuatha Lord
 #nreff 1
 #fatiguecost 0
 #nextspell 3203
@@ -122317,7 +122243,7 @@ All effects scale with friendly Dominion."
 #researchlevel 0
 #effect 10001
 #damage 1770  -- Cu Sidhe
-#nreff 20
+#nreff 40
 #fatiguecost 0
 #nextspell 3204
 #end
@@ -122341,7 +122267,7 @@ All effects scale with friendly Dominion."
 #researchlevel 0
 #effect 10001
 #damage 1753  -- Tuatha Warrior
-#nreff 100
+#nreff 200
 #fatiguecost 0
 #nextspell 3206
 #end
@@ -122364,17 +122290,17 @@ All effects scale with friendly Dominion."
 #copyspell 106  -- Record of Creation
 #name "Secrets of Avalon"
 #descr "The Witches of Man have learned many secrets of the Tuatha since the Fey retreated to their twilight realm, however there is still more to discover. With this spell the caster ventures into the Forest of Avalon to learn the greatest secrets of the Tuatha. The Crones of Avalon believe this will allow men to dominate the Fey and bind them to their service. Brangwen the Seer has foretold this will spell disaster for the kingdom, however others believe it will bring great wealth and power to the nation of Man."
-#details "Summons 50 Tuatha Warriors, 20 Cu Sidhe, 1 Tuatha Sorceress Commander, 1 Sidhe Lord Commander & 1 Tuatha Lord Commander. Tower of Avalon falls spreading Drain and curses in capital, your Dominion gains Drain +1."
+#details "Summons 150 Tuatha Warriors, 40 Cu Sidhe, 1 Tuatha Sorceress Commander, & 2 Tuatha Lord Commanders. Tower of Avalon falls spreading Drain and curses in capital, your Dominion gains Drain +1."
 #school 0
 #researchlevel 8
-#path 0 1
-#path 1 6
+#path 0 7 -- G
+#path 1 6 -- N
 #pathlevel 0 5
 #pathlevel 1 3
 #effect 10083
 #damage -1
 #nreff 1
-#fatiguecost 8000
+#fatiguecost 10000
 #nextspell 3208
 #onlyatsite 6  -- Tower of Avalon
 #restricted 57 -- MA Man
@@ -122438,7 +122364,7 @@ All effects scale with friendly Dominion."
 #school 4
 #researchlevel 5
 #path 0 5
-#pathlevel 0 1
+#pathlevel 0 2
 #path 1 0
 #pathlevel 1 1
 #fatiguecost 500
