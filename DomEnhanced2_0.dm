@@ -17145,72 +17145,6 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #armor 2  -- Shield
 #end
 
-#newmonster 6969
-#copystats 2300  -- Machaka Warrior
-#clearweapons
-#cleararmor
-#name "Ekaiwe"
-#spr1 "gondwana/terrorbirdrider.tga"
-#spr2 "gondwana/terrorbirdrider2.tga"
-#descr "In the capital exists a special regiment of Isienmwenro known as the Ekaiwe. These are the cream of the warriors specially trained to ride gigantic predatory birds known as Terror Birds. Terror Birds roam the plains of Gondwana preying on anything they can kill with their powerful beaks and sharp claws. They are strong in N'um and are sacred to the people of Gondwana. Should the rider be slain the bird will continue to peck and claw at enemies. After battle the bird can be brought back to the capital where a new rider will replace the old one."
-#mountedhumanoid
-#gcost 75
-#rpcost 46
-#rcost 10
-#ressize 2
-#hp 12
-#str 11
-#size 6
-#att 12
-#def 13
-#mor 13
-#mr 11
-#ap 24
-#enc 4
-#prec 8
-#mapmove 22
-#weapon 357  -- Light Lance
-#weapon 1687 -- Beak
-#weapon 1757 -- Bird kick
-#armor 14  -- Plate Hauberk
-#armor 20  -- Iron Cap
-#armor 2  -- Shield
-#holy
-#mounted
-#xploss 100
-#cleanshape
-#secondshape 6970
-#end
-
-#newmonster 6970
-#copystats 2000  -- Gibbor
-#clearweapons
-#cleararmor
-#name "Terror Bird"
-#spr1 "gondwana/terrorbirdsaddle.tga"
-#spr2 "gondwana/terrorbirdsaddle2.tga"
-#descr "Terror Birds are gigantic predatory birds that roam the plains of Gondwana preying on anything they can kill with their powerful beaks and sharp claws. They are strong in N'um and are sacred to the people of Gondwana. Should the rider be slain the bird will continue to peck and claw at enemies. After battle the bird can be brought back to the capital where a new rider will replace the old one."
-#lizard
-#gcost 0
-#ap 24
-#prot 10
-#prec 8
-#def 13
-#str 20
-#mr 9
-#mapmove 22
-#animal
-#supplybonus 0
-#fireres 0
-#neednoteat
-#weapon 404  -- Beak
-#weapon 236  -- Claw
-#maxage 100
-#xploss 100
-#homeshape 6969
-#nametype 144
-#end
-
 #newmonster 6971
 #copystats 2307  -- Machaka Elephant
 #clearweapons
@@ -17305,13 +17239,11 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #name "Spirit Dancer"
 #spr1 "gondwana/dancer.tga"
 #spr2 "gondwana/dancer2.tga"
-#descr "The Shamans of Gondwana perform elaborate dances that allow them to enter a powerful trance state. These dances can last for many hours and are accompanied by specially trained Spirit Dancers. These women perform special rhythmic songs and dances to aid the Shaman in reaching the spirit world. Spirit Dancers will automatically cast the Chorus Slave spell before combat, ready to lend their strength to the shamans and are otherwise inactive during the battle. They will dance until they collapse, exhausted and will then leave the communion. Dancers have some rudimentary knowledge of magic, however they cannot perform magical research or cast magical rituals."
+#descr "The Shamans of Gondwana perform elaborate dances that allow them to enter a powerful trance state. These dances can last for many hours and are accompanied by specially trained Spirit Dancers. These women perform special rhythmic songs and dances to aid the Shaman in reaching the spirit world. Spirit Dancers will automatically enter chorus communions in combat, ready to lend their strength to the shamans and are otherwise inactive during the battle. They will dance until they collapse, exhausted and will then leave the communion."
 #gcost 50
-#rpcost 1
-#researchbonus -10
-#masterrit -1
+#reclimit 1
 #mr 12
-#onebattlespell 285 -- Chorus Slave
+#chorusslave
 #magicskill 6 1
 #spellsinger
 #female
@@ -17347,9 +17279,9 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mr 14
 #weapon 9  -- Dagger
 #armor 44  -- Furs
-#magicskill 5 1
 #magicskill 6 1
-#custommagic 12672 100  -- 100% FADN
+#magicskill 7 1
+#custommagic 29056 100  -- 100% FADNG
 #researchbonus 0
 #masterrit 1
 #spellsinger
@@ -17383,9 +17315,9 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon 20  -- Bite
 #armor 44  -- Furs
 #researchbonus 0
-#magicskill 5 1
 #magicskill 6 1
-#custommagic 12672 100  -- 100% FADN
+#magicskill 7 1
+#custommagic 29056 100  -- 100% FADNG
 #shapechange 6980
 #end
 
@@ -17403,9 +17335,9 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mor 13
 #mr 14
 #stealthy 0
-#magicskill 5 1
 #magicskill 6 1
-#custommagic 12672 100  -- 100% FADN
+#magicskill 7 1
+#custommagic 29056 100  -- 100% FADNG
 #shapechange 6978
 #end
 
@@ -17426,9 +17358,104 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon 7  -- Quarterstaff
 #armor 187  -- Mask
 #masterrit 1
-#magicskill 6 1
+#magicskill 7 1
+#custommagic 29056 100  -- 100% FADNG
 #custommagic 12672 100  -- 100% FADN
-#custommagic 4480 100  -- 100% FAD
+#end
+
+#newmonster 6987 -- summon
+#copystats 2000  -- Gibbor
+#clearweapons
+#cleararmor
+#name "Terror Bird"
+#spr1 "gondwana/terrorbird.tga"
+#spr2 "gondwana/terrorbird2.tga"
+#descr "Terror Birds are gigantic predatory birds that roam the plains of Gondwana preying on anything they can kill with their powerful beaks and sharp claws. They are strong in N'um and are sacred to the people of Gondwana. Some are trained as mounts for the Ekaiwe, however even untrained the creatures are formidable due to their size and ferocity."
+#lizard
+#gcost 0
+#ap 24
+#prot 10
+#prec 8
+#def 13
+#str 20
+#mr 9
+#mapmove 22
+#animal
+#supplybonus 0
+#fireres 0
+#neednoteat
+#undisciplined
+#weapon 404  -- Beak
+#weapon 236  -- Claw
+#maxage 100
+#nametype 144
+#end
+
+#newmonster 6970 -- mount
+#copystats 2000  -- Gibbor
+#clearweapons
+#cleararmor
+#name "Terror Bird"
+#spr1 "gondwana/terrorbirdsaddle.tga"
+#spr2 "gondwana/terrorbirdsaddle2.tga"
+#descr "Terror Birds are gigantic predatory birds that roam the plains of Gondwana preying on anything they can kill with their powerful beaks and sharp claws. They are strong in N'um and are sacred to the people of Gondwana. Should the rider be slain the bird will continue to peck and claw at enemies."
+#lizard
+#gcost 0
+#ap 24
+#prot 10
+#prec 8
+#def 13
+#str 20
+#mr 9
+#mapmove 22
+#animal
+#supplybonus 0
+#fireres 0
+#neednoteat
+#weapon 404  -- Beak
+#weapon 236  -- Claw
+#maxage 100
+#xploss 100
+#homeshape 6969
+#nametype 144
+#end
+
+
+#newmonster 6969
+#copystats 2300  -- Machaka Warrior
+#clearweapons
+#cleararmor
+#name "Ekaiwe"
+#spr1 "gondwana/terrorbirdrider.tga"
+#spr2 "gondwana/terrorbirdrider2.tga"
+#descr "In the capital exists a special regiment of Isienmwenro known as the Ekaiwe. These are the cream of the warriors specially trained to ride gigantic predatory birds known as Terror Birds. Terror Birds roam the plains of Gondwana preying on anything they can kill with their powerful beaks and sharp claws. They are strong in N'um and are sacred to the people of Gondwana. Should the rider be slain the bird will continue to peck and claw at enemies."
+#mountedhumanoid
+#gcost 75
+#rpcost 46
+#rcost 10
+#ressize 2
+#hp 12
+#str 11
+#size 3
+#att 12
+#def 13
+#mor 13
+#mr 11
+#ap 24
+#enc 4
+#prec 8
+#mapmove 22
+#weapon 357  -- Light Lance
+#armor 14  -- Plate Hauberk
+#armor 20  -- Iron Cap
+#armor 2  -- Shield
+#holy
+#mounted
+#xploss 100
+#cleanshape
+#mountmnr 6970
+#skilledrider 2
+#nothrowoff
 #end
 
 #newmonster 6982
@@ -17436,14 +17463,14 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #clearweapons
 #cleararmor
 #name "Ekaiwe Commander"
-#spr1 "gondwana/terrorbirdrider.tga"
-#spr2 "gondwana/terrorbirdrider2.tga"
+#spr1 "gondwana/terrorbirdcaptain.tga"
+#spr2 "gondwana/terrorbirdcaptain2.tga"
 #descr "In the capital exists a special regiment of Isienmwenro known as the Ekaiwe. These are the cream of the warriors specially trained to ride gigantic predatory birds known as Terror Birds. Terror Birds roam the plains of Gondwana preying on anything they can kill with their powerful beaks and sharp claws. They are strong in N'um and are sacred to the people of Gondwana. The commanders of the Ekaiwe are hand picked for their loyalty to the Oba and have some priestly powers. Should the rider be slain the bird will continue to peck and claw at enemies."
 #mountedhumanoid
 #gcost 10040
 #rcost 10
 #rpcost 1
-#size 6
+#size 3
 #hp 13
 #str 12
 #att 13
@@ -17453,17 +17480,16 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #ap 24
 #prec 8
 #mapmove 22
-#weapon 357  -- Light Lance
-#weapon 1687 -- Beak
-#weapon 1757 -- Bird kick
+#weapon 8 -- sword
 #armor 14  -- Plate Hauberk
 #armor 120  -- Leather Cap
 #armor 2  -- Shield
 #magicskill 9 1
 #holy
-#mounted
 #goodleader
-#secondtmpshape 6970
+#mountmnr 6970
+#skilledrider 2
+#nothrowoff
 #end
 
 #newmonster 6983
@@ -17488,11 +17514,13 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #armor 187  -- Mask
 #masterrit 1
 #magicskill 1 1
-#magicskill 5 1
 #magicskill 6 1
+#magicskill 7 1
 #magicskill 9 1
-#custommagic 12672 100  -- 100% FADN
-#custommagic 12672 10  -- 10% FADN
+#custommagic 29056 100  -- 100% FADNG
+#custommagic 29056 10  -- 100% FADNG
+--#custommagic 12672 100  -- 100% FADN
+--#custommagic 12672 10  -- 10% FADN
 #end
 
 #newmonster 6984
@@ -17515,7 +17543,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon 151  -- Wand
 #startage 40
 #masterrit 1
-#magicskill 6 2
+#magicskill 7 2
+#magicskill 6 1
 #magicskill 9 2
 #custommagic 12672 100  -- 100% FADN
 #custommagic 12672 10  -- 10% FADN
@@ -17564,6 +17593,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #magicskill 1 1
 #magicskill 5 1
 #magicskill 6 1
+#magicskill 7 1
 #magicskill 9 3
 #bonusspells 1
 #combatcaster
@@ -17574,34 +17604,6 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #slowrec
 #weapon 397  -- Kick
 #twiceborn 6644 -- Wight Beast
-#end
-
-#newmonster 6987
-#copystats 2000  -- Gibbor
-#clearweapons
-#cleararmor
-#name "Terror Bird"
-#spr1 "gondwana/terrorbird.tga"
-#spr2 "gondwana/terrorbird2.tga"
-#descr "Terror Birds are gigantic predatory birds that roam the plains of Gondwana preying on anything they can kill with their powerful beaks and sharp claws. They are strong in N'um and are sacred to the people of Gondwana. Some are trained as mounts for the Ekaiwe, however even untrained the creatures are formidable due to their size and ferocity."
-#lizard
-#gcost 0
-#ap 24
-#prot 10
-#prec 8
-#def 13
-#str 20
-#mr 9
-#mapmove 22
-#animal
-#supplybonus 0
-#fireres 0
-#neednoteat
-#undisciplined
-#weapon 404  -- Beak
-#weapon 236  -- Claw
-#maxage 100
-#nametype 144
 #end
 
 #newmonster 6988
@@ -103409,10 +103411,10 @@ Priests: Average"
 #addreccom 6973 -- Okakuo
 #addreccom 6974 -- Ezomo
 #addreccom 6975 -- Priest
-#addreccom 6976 -- Spirit Dancer
 #addreccom 6977 -- Witch Doctor
 #addreccom 6978 -- Lion Shaman
 #addreccom 6981 -- Shaman
+
 #addrecunit 6957 -- Militia
 #addrecunit 6958 -- Drummer
 #addrecunit 6959 -- Archer
@@ -103423,6 +103425,7 @@ Priests: Average"
 #addrecunit 6964 -- Iyo Vet Long
 #addrecunit 6965 -- Isien
 #addrecunit 6966 -- Razorhorn
+#addrecunit 6976 -- Spirit Dancer
 #defcom1 6973 -- Okakuo
 #defcom2 6974
 #defunit1 6960
