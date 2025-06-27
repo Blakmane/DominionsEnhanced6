@@ -83649,12 +83649,24 @@ Cost 28 RP."
 #magicskill 9 4
 #end
 
-#selectmonster 2714
+#selectmonster 2714 -- bacab
 #hp 35
 #end
 
+#selectmonster 2749 -- bacab
+#hp 31
+#end
 
-#selectmonster 2729
+
+#selectmonster 2729 -- wo muuch
+#rpcost 31
+#end
+
+#selectmonster 2743 -- Obsidian warrior
+#rpcost 18
+#end
+
+#selectmonster 2747 -- wo muuch
 #rpcost 31
 #end
 
@@ -99598,6 +99610,41 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 3231
 #end
 
+#newsite 2520
+#clear
+#name "LA Xibalba Summons"
+#rarity 5
+#level 0
+#path 8
+#look 6
+#homemon 1359 -- toad
+#homemon 1358 -- monster toad
+#homemon 1889 -- jade serp
+#homemon 7557 -- wood warrior
+#homemon 7611 -- mud warrior
+#homemon 859 -- jag
+#homemon 1356 -- oze
+#homemon 1357 -- bat
+#homemon 2690 -- s scorp
+#homecom 1360 -- onaq
+#homecom 7226 -- Dagon
+#homecom 7264 -- camaz
+#homecom 7266 -- itza
+#homecom 7265 -- huitz
+#end
+
+#newsite 2521
+#clear
+#name "LA Xibalba Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 6
+#homecom 2763
+#homecom 8216
+#homecom 8252
+#end
+
 
 
 -- END OF NEW SITES
@@ -106430,6 +106477,10 @@ Bless bonuses: Poison Resistance +10"
 #cheapgod20 8353 -- Night Hunter
 #cheapgod20 8373 -- Great Toad
 #cheapgod20 8346 -- Skull Idol
+
+#futuresite "LA Xibalba Summons"
+#futuresite "Xibalba Chaac & Balam"
+#futuresite "LA Xibalba Heroes"
 #end
 
 #selectnation 96
