@@ -84292,8 +84292,15 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #bodyguard 4
 #end
 
+#selectmonster 3220  -- Shackled Mage
+#rpcost 1
+#gcost 10015
+#researchbonus -3
+#end
+
 #selectmonster 3225  -- Cyclope
 #twiceborn 7231 -- Wight Giant
+#gcost 10115
 #end
 
 #selectmonster 3226  -- Laestrygonian
@@ -99545,7 +99552,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7633 -- red dragon
 #end
 
-
 #newsite 2517
 #clear
 #name "MA Man Heroes"
@@ -99560,6 +99566,36 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 2481
 #homecom 3236
 #homecom 3239
+#end
+
+#newsite 2518
+#clear
+#name "LA Phlegra Summons"
+#rarity 5
+#level 0
+#path 0
+#look 5
+#homemon 3119 -- spartae
+#homemon 7842 -- slave
+#homemon 7843 -- more slave
+#homemon 3210 -- lampad
+#homemon 7700 -- lycaon
+#homemon 7704 -- blemm
+#homemon 3127 -- ker
+#homemon 3168 -- twi hound
+#homemon 3171 -- khalk
+#homecom 7298 -- kerberos
+#end
+
+
+#newsite 2519
+#clear
+#name "LA Phlegra Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 2
+#homecom 3231
 #end
 
 
@@ -106410,6 +106446,8 @@ Bless bonuses: Poison Resistance +10"
 #cheapgod20 8500 -- Stone Tyrant
 
 #futuresite "Shattered Volcano"
+#futuresite "LA Phlegra Summons"
+#futuresite "LA Phlegra Heroes"
 #end
 
 #selectnation 118 -- LA Vaettiheim
@@ -119437,9 +119475,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 1
 #path 1 3
 #pathlevel 1 1
-#nreff 2008
+#nreff 1009 -- 10+
 #damage 7700 -- Lycaons
-#fatiguecost 1500
+#fatiguecost 900
 #restricted 6 -- Mekone
 #restricted 51 -- Phlegra
 #restricted 96 -- LA Phlegra
@@ -119654,7 +119692,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 1 1
 #nreff 1009
 #damage 7842
-#fatiguecost 200
+#fatiguecost 100
 #restricted 96 -- LA Phlegra
 #end
 
@@ -119670,7 +119708,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 1 1
 #nreff 2011
 #damage 7843
-#fatiguecost 300
+#fatiguecost 200
 #restricted 96 -- LA Phlegra
 #end
 
@@ -119684,7 +119722,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 3
 #pathlevel 1 2
 #damage 3227  -- Laestrygonian
-#fatiguecost 2000
+#fatiguecost 1500
 #nreff 1
 #restricted 96 -- LA Phlegra
 #onlyatsite 202  -- Shattered Volcano
@@ -141989,6 +142027,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectitem 192 -- Flame Helmet
 #itemcost1 -20
+#end
+
+#selectitem 224 -- Oppressors Headband
+#itemcost1 -66
 #end
 
 #selectitem 228 -- Huaca Headdress
