@@ -4463,6 +4463,48 @@
 #magicarmor
 #end
 
+#newarmor 564 -- Fire Plate Barding
+#copyarmor 251 -- leather barding
+#name "Fire Plate Barding"
+#type 9
+#protparts 18 18
+#enc 1
+#def -1
+#magicarmor
+#end
+
+#newarmor 565 -- Hexplate Barding
+#copyarmor 251 -- leather barding
+#name "Hexplate Barding"
+#type 9
+#protparts 17 21
+#protinspector 17
+#enc 1
+#def -1
+#magicarmor
+#end
+
+#newarmor 566 -- Deathknight Barding
+#copyarmor 251 -- leather barding
+#name "Deathknight Barding"
+#type 9
+#protparts 18 21
+#protinspector 18
+#enc 1
+#def -1
+#magicarmor
+#end
+
+#newarmor 567 -- Icicle Barding
+#copyarmor 251 -- leather barding
+#name "Icicle Barding"
+#type 9
+#protparts 16 16
+#enc 0
+#def 0
+#magicarmor
+#end
+
 
 
 -- END OF NEW ARMORS
@@ -4532,6 +4574,7 @@
 #enc 2 -- vanilla 4
 #end
 
+
 #selectarmor 190 -- Coral Barding
 #protparts 0 12 -- vanilla  11
 #protinspector 12
@@ -4591,37 +4634,41 @@
 #end
 
 #selectarmor 271 -- Boar Leather Barding
-#protparts 17 14 -- vanilla 15 11
-#protinspector 14
+#protparts 18 15 -- vanilla 15 11
+#protinspector 15
 #end
 
 #selectarmor 272 -- Enchanted Plate Barding
-#protparts 23 21 -- vanilla 23 20
-#protinspector 21
+#protparts 23 22 -- vanilla 23 20
+#protinspector 22
+#def 0 -- vanilla -1
+#enc 1 -- vanilla 2
 #end
 
 #selectarmor 273 -- Blacksteel Barding
-#protparts 24 22 -- vanilla 24 21
-#protinspector 22
+#protparts 24 23 -- vanilla 24 21
+#protinspector 23
+#enc 2 -- vanilla 3
 #end
 
 #selectarmor 274 -- Gossamer Barding
-#protparts 16 13 -- vanilla 13 10
-#protinspector 13
+#protparts 16 16 -- vanilla 13 10
+#protinspector 16
 #end
 
 #selectarmor 275 -- Fay Steed Barding
+#enc 1 -- vanilla 2
 #end
 
 #selectarmor 276 -- Lightweight Cataphract Barding
-#protparts 22 16 -- vanilla 22 14
-#protinspector 16
+#protparts 22 17 -- vanilla 22 14
+#protinspector 17
 #enc 0 -- vanilla 1
 #end
 
 #selectarmor 277 -- Golden Barding
-#protparts 23 21 -- vanilla 23 20
-#protinspector 21
+#protparts 23 22 -- vanilla 23 20
+#protinspector 22
 #def -1 -- vanilla -2
 #enc 2 -- vanilla 3
 #end
@@ -4651,6 +4698,11 @@
 #protinspector 10
 #enc 1 -- vanilla 2
 #end
+
+
+
+
+
 
 
 
@@ -26570,16 +26622,20 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #cleararmor
 #spr1 "magicenhanced/eeblackknight.tga"
 #spr2 "magicenhanced/eeblackknight2.tga"
+#unmountedspr1 "magicenhanced/un_eeblackknight.tga"
+#unmountedspr2 "magicenhanced/un_eeblackknight2.tga"
 #name "Black Knight"
 #descr "In the nation of Man there are many wandering knights. This knight has broken his code of chivalry and now rides as a Black Knight. Wielding a terrible Bane Blade and wearing a suit of black armor he will bring terror to his enemies. The common folk fear and distrust the Black Knights."
+#drawsize 0
 #hp 22
+#mountmnr 9049 -- black destrier
+#skilledrider 7
 #str 14
 #fear 5
 #incunrest 50
 #patrolbonus 10
 #okleader
 #okundeadleader
-#mapmove 22
 #swampsurvival
 #weapon 4  -- Lance
 #weapon 42  -- Bane Blade
@@ -26594,14 +26650,18 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #clearweapons
 #spr1 "magicenhanced/eeredknight.tga"
 #spr2 "magicenhanced/eeredknight2.tga"
+#unmountedspr1 "magicenhanced/un_eeredknight.tga"
+#unmountedspr2 "magicenhanced/un_eeredknight2.tga"
 #name "Red Knight"
 #descr "In the nation of Man there are many wandering knights. This knight wears shining red armor and wields the power of fire. His sword and armor are ablaze and he has learnt some skill in the arts of fire magic."
+#drawsize 0
 #hp 18
+#mountmnr 9050 -- fire plate destrier
+#skilledrider 6
 #fireres 10
 #fireshield 8
 #magicskill 0 1
 #goodleader
-#mapmove 22
 #wastesurvival
 #weapon 472  -- Flame Sword
 #montag 1022
@@ -26613,14 +26673,19 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #cleararmor
 #spr1 "magicenhanced/eefeyknight.tga"
 #spr2 "magicenhanced/eefeyknight2.tga"
+#unmountedspr1 "magicenhanced/un_eefeyknight.tga"
+#unmountedspr2 "magicenhanced/un_eefeyknight2.tga"
 #name "Fey Knight"
-#descr "In the nation of Man there are many wandering knights. This knight has some Tuatha blood in his veins and can cloak his appearance in illusion. He rides a mystical Unicorn and its horn will help to protect him from injury. He has some natural skill in Air magic due to his fey ancestry."
+#descr "In the nation of Man there are many wandering knights. This knight has some Tuatha blood in his veins and can cloak his appearance in illusion. He rides a mystical Unicorn and its horn will help to protect him from injury. He has some natural skill in Glamour magic due to his fey ancestry."
+#drawsize 0
 #hp 18
 #mr 14
+#mountmnr 3525 -- armored unicorn
+#skilledrider 6
 #glamour
 #stealthy 25
 #darkvision 50
-#magicskill 1 1
+#magicskill 7 1
 #forestsurvival
 #heal
 #okleader
@@ -26638,14 +26703,19 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #newmonster 7401
 #copystats 58  -- Knight of the Stone
 #copyspr 2359  -- Holy Knight
+#unmountedspr1 "magicenhanced/un_errantknight.tga"
+#unmountedspr2 "magicenhanced/un_errantknight2.tga"
 #clearweapons
 #cleararmor
 #name "Knight Errant"
 #descr "In the nation of Man there are many wandering knights. This knight is a paragon of knightly virtue and wears a gleaming suit of armor. Enemies will hesitate to strike such a noble and heroic figure whilst troops under his command will fight with great zeal. This knight has sworn the sacred vows and can receive the blessings of the awakening God. His courage is legendary and he will never flee from battle unless the situation is hopeless."
+--#drawsize 0
 #hp 18
 #awe 1
 #mor 30
 #inspirational 1
+#mountmnr 3583 -- sacred destrier
+#skilledrider 6
 #holy
 #goodleader
 #mapmove 22
@@ -29968,31 +30038,45 @@ While in the form of an old man, all paths are increased and allows the use of N
 #end
 
 #newmonster 7564
-#copystats 182  -- Mounted Wraith Lord
+--#copystats 182  -- Mounted Wraith Lord
 #cleararmor
 #clearweapons
 #spr1 "magicenhanced/unit_movarch_wraith.tga"
 #spr2 "magicenhanced/unit_movarch_wraith2.tga"
+#unmountedspr1 "magicenhanced/un_unit_movarch_wraith.tga"
+#unmountedspr2 "magicenhanced/un_unit_movarch_wraith2.tga"
 #name "Morvarc'h Wraith Knight"
-#descr "The returned spectre of a fallen Movarc'h Knight from ages past. Through long years in the Underworld they have lost their affinity with the sea and wind, and now burn with a cold fire. They are still shrouded in glamour, and can ride below the waves as easily as on land. Once tied to the sunlit lands they will return from the Land of the Dead if slain in battle."
+#descr "The returned spectre of a fallen Movarc'h Knight from ages past. Through long years in the Underworld they have lost their affinity with the sea, and now burn with a cold fire. They are still shrouded in glamour, and can ride below the waves as easily as on land."
+--#descr "The returned spectre of a fallen Movarc'h Knight from ages past. Through long years in the Underworld they have lost their affinity with the sea and wind, and now burn with a cold fire. They are still shrouded in glamour, and can ride below the waves as easily as on land. Once tied to the sunlit lands they will return from the Land of the Dead if slain in battle."
 #hp 21
-#mapmove 26
+#mountmnr 9048 -- morv wraith horse
+#skilledrider 6
 #str 12
 #att 13
 #def 14
 #prec 12
 #mr 14
 #cold 3
-#ap 30
 #fireres 5
 #undead
-#reformtime 0
-#weapon 730  -- Bane Fire
+#coldres 25
+#poisonres 25
+#fear 5
+#ethereal
+#amphibian
+#neednoteat
+#deathcurse
+#spiritsight
+#enc 0
+#size 3
+#goodleader
+#goodundeadleader
+#mapmove 18
+--#reformtime 0
 #weapon 475  -- Golden Lance
 #armor 101  -- Bronze Hauberk
 #armor 155  -- Golden Shield
 #armor 135  -- Bronze Cap
-#makemonsters1 0
 #holy
 #glamour
 #female
@@ -30000,15 +30084,19 @@ While in the form of an old man, all paths are increased and allows the use of N
 #end
 
 #newmonster 7565
-#copystats 182  -- Mounted Wraith Lord
+--#copystats 182  -- Mounted Wraith Lord
 #cleararmor
 #clearweapons
-#spr1 "magicenhanced/unit_movarch_champwraith2.tga"
 #spr1 "magicenhanced/unit_movarch_champwraith.tga"
+#spr2 "magicenhanced/unit_movarch_champwraith2.tga"
+#unmountedspr1 "magicenhanced/un_unit_movarch_champwraith.tga"
+#unmountedspr2 "magicenhanced/un_unit_movarch_champwraith2.tga"
 #name "Wraith Princess"
-#descr "The returned spectre of a fallen Morgen Princess from ancient Ys. The sea and wind that she once commanded are now distant memories, and she burns with a cold fire from the Underworld. She rides a skeletal Morvarc'h shrouded in glamour, and can ride below the waves as easily as on land. Once tied to the sunlit lands she will return from the Land of the Dead if slain in battle."
+#descr "The returned spectre of a fallen Morgen Princess from ancient Ys. The sea that she once commanded is now a distant memory, and she burns with a cold fire from the Underworld. She rides a skeletal Morvarc'h shrouded in glamour, and can ride below the waves as easily as on land."
+--#descr "The returned spectre of a fallen Morgen Princess from ancient Ys. The sea and wind that she once commanded are now distant memories, and she burns with a cold fire from the Underworld. She rides a skeletal Morvarc'h shrouded in glamour, and can ride below the waves as easily as on land. Once tied to the sunlit lands she will return from the Land of the Dead if slain in battle."
 #hp 33
-#mapmove 26
+#mountmnr 9048 -- morv wraith horse
+#skilledrider 6
 #str 13
 #att 14
 #def 15
@@ -30018,8 +30106,20 @@ While in the form of an old man, all paths are increased and allows the use of N
 #ap 30
 #fireres 5
 #undead
-#reformtime 0
-#weapon 730  -- Bane Fire
+#coldres 25
+#poisonres 25
+#fear 5
+#ethereal
+#amphibian
+#neednoteat
+#deathcurse
+#spiritsight
+#enc 0
+#size 3
+#goodleader
+#goodundeadleader
+#mapmove 18
+--#reformtime 0
 #weapon 475  -- Golden Lance
 #armor 101  -- Bronze Hauberk
 #armor 155  -- Golden Shield
@@ -30030,11 +30130,11 @@ While in the form of an old man, all paths are increased and allows the use of N
 #holy
 #glamour
 #amphibian
-#makemonsters1 0
 #magicskill 0 1
 #magicskill 5 1
+#magicskill 7 1
 #magicskill 9 1
-#custommagic 4992 100  -- 100% FAWD
+#custommagic 21376 100  -- 100% FAWDG
 #female
 #end
 
@@ -45580,7 +45680,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #maxage 200
 #gcost 0
 #magicskill 6 2
-#magicskill 1 1
+#magicskill 7 1
 #summon1 1770
 #batstartsum1d6 1770
 #descr "Though the monasteries of Man have all but disappeared, the legend of The Cursed Monk remains in villages near the Forest of Avalon. He is often seen from a distance in the ancient robes of a monk, wandering the cursed areas where even wardens avoid. Once Hedar was an ordinary monk unaware of the Sidhe blood in his veins, but as all his brothers in the monastery slowly grew old and died, he eventually guessed the cause of his longevity. With the coming of the Curse, he became obsessed with curing it and began trying to unlock his Sidhe powers to find a way to reverse it. Now even he has grown old, but he still works tirelessly toward his goal. He has always had an affinity for the Cu Sidhe, and now the remaining great hounds rally to him in great numbers."
@@ -52707,7 +52807,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #name "Xiuhcoatl"
 #spr1 "magicenhanced/eexiuhcoatl1.tga"
 #spr2 "magicenhanced/eexiuhcoatl2.tga"
-#descr "The Xiuhcoatl is an enormous serpent of fire that dwell in the forests of Mictlan. Once weapons of the sun and sky used to scatter the stars, they have now been brought into service by the Lawgiver. They take the appearance of a turquoise serpent with a flaming plume and upturned nose and are considered the embodiment of the dry season."
+#descr "The Xiuhcoatl are enormous serpents of fire that dwell in the forests of Mictlan. Once weapons of the sun and sky used to scatter the stars, they have now been brought into service by the Lawgiver. They take the appearance of a turquoise serpent with a flaming plume and upturned nose and are considered the embodiment of the dry season."
 #str 18
 #att 14
 #def 9
@@ -52731,6 +52831,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #noleader
 #forestsurvival
 #animal
+#magicbeing
 #poisonres 10
 #fireres 10
 #swampsurvival
@@ -52742,6 +52843,49 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #nametype 129
 #end
 
+#newmonster 9048 -- Morvarc'h Wraith Horse
+#copystats 3559 -- Skeletal War Horse
+#spr1 "magicenhanced/unit_movarch_horse1.tga"
+#spr2 "magicenhanced/unit_movarch_horse2.tga"
+#name "Morvarc'h Wraith"
+#descr "The skeleton of a Morvarc'h, reanimated to serve as steed to a Morgen Knight. They have lost their affinity with the sea and wind, and now burn with a cold fire. They are still shrouded in glamour, and can ride below the waves as easily as on land."
+#drawsize 0
+#glamour
+#ethereal
+#def 13
+#att 13
+#hp 16
+#mr 14
+#holy
+#amphibian
+#fireres 15
+#coldres 25
+#cleararmor
+#armor 263
+#clearweapons
+#weapon 55
+#weapon 730 -- banefire
+#end
+
+#newmonster 9049 -- Black Destrier generic
+#copystats 3519 -- Black Destrier
+#copyspr 3519
+#name "Black Destrier"
+#descr "Destriers are heavy war horses of exceptional breeding and training. They are almost exclusively used by knights. Destriers are very expensive and they are always equipped with the best available armor. Destriers are trained to fight with their hooves while their rider swings his weapon. They are bred to be strong and heavy and are not as fast as regular war horses or riding horses."
+#cleararmor
+#armor 273 -- blacksteel barding
+#end
+
+#newmonster 9050 -- Destrier fire plate
+#copystats 3897 -- Destrier w/ orange armor
+#copyspr 3897
+#name "Destrier"
+#descr "Destriers are heavy war horses of exceptional breeding and training. They are almost exclusively used by knights. Destriers are very expensive and they are always equipped with the best available armor. Destriers are trained to fight with their hooves while their rider swings his weapon. They are bred to be strong and heavy and are not as fast as regular war horses or riding horses."
+#cleararmor
+#fireres 10
+#fireshield 8
+#armor 564 -- fire plate
+#end
 
 --#newmonster 8684 -- LA C'tis Hierodule
 --#copystats 510
@@ -84608,6 +84752,12 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #bodyguard 3
 #end
 
+#selectmonster 4020 -- Bernlad Unicorn
+--#cleararmor
+--#armor 275 -- fay steed
+#glamour
+#end
+
 #selectmonster 4037 -- pyrenian man at arms
 #bodyguard 3
 #end
@@ -99306,6 +99456,54 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #name "Temple of the Sun "
 #end
 
+#newsite 2512
+#clear
+#name "LA Man Summons"
+#rarity 5
+#level 0
+#path 7
+#look 7
+#homemon 1769 -- black dog
+#homemon 1768 -- barg
+#homemon 1770 -- cu sidhe
+#homemon 3899 -- unicorn
+--#homemon 7977 -- longdead giant
+--#homemon 7402 -- longdead tuatha
+#homemon 7564 -- morv knight
+#homecom 7658 -- urisk
+#homecom 7861 -- pixie
+#homecom 7325 -- nemed sorc
+#homecom 1776 -- bean sidhe
+--#homecom 7403 -- tuatha wraithlord
+#homecom 7565 -- morv princess
+#end
+
+#newsite 2513
+#clear
+#name "Wandering Knights"
+#rarity 5
+#level 0
+#path 7
+#look 4
+#homecom 7398 -- black knight
+#homecom 7399 -- red knight
+#homecom 7400 -- fey knight
+#homecom 7401 -- knight errant
+#end
+
+#newsite 2514
+#clear
+#name "LA Man Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 6
+#homecom 376
+#homecom 381
+#homecom 3254
+#homecom 8228
+#end
+
 
 
 -- END OF NEW SITES
@@ -105757,6 +105955,10 @@ Bless bonuses: Poison Resistance +10"
 #startunitnbrs1 30
 #startunittype2 59  -- Longbowman
 #startunitnbrs2 30
+
+#futuresite "LA Man Summons"
+#futuresite "Wandering Knights"
+#futuresite "LA Man Heroes"
 #end
 
 #selectnation 101 -- LA Ulm
@@ -122085,15 +122287,6 @@ All effects scale with friendly Dominion."
 #restricted 57 -- MA Man
 #end
 
-#selectspell 3202
-#copyspell 1113 -- Reanimation
-#name "Reanimate Giant Bones"
-#descr "Ancient legends tell of a time when the land of Man was home to races of giants, now long dead and gone. Their bones still lie undisturbed below fields and cobbled streets and can be awoken by those skilled in necromancy. With this spell the caster animates the bones of dead giants to serve them."
-#damage 7977
-#restricted 57 -- MA Man
-#restricted 100 -- LA Man
-#end
-
 #selectspell 3203
 #name "Tuatha Lord2"
 #descr "Summon Tuatha for Secrets of Avalon"
@@ -122237,96 +122430,18 @@ All effects scale with friendly Dominion."
 #restricted 100 -- LA Man
 #end
 
-#selectspell 3214
-#copyspell 1113 -- Reanimation
-#name "Old Bones"
-#descr "The caster works in secret to reanimate the bones of a few ancient Tuatha. By carefully weaving protective charms into the magic they hope to avoid the effects of the curse. Although dead the Tuatha are still wreathed in illusions, their bones sacred and their weapons ensorcelled, crafted using techniques long lost from ages past."
-#damage 7402 -- Longdead Tuatha
-#nreff 2
-#fatiguecost 300
-#restricted 100 -- LA Man
-#end
-
-#selectspell 3215
-#copyspell 1024 -- Awaken Sleeper
-#name "Tuatha Wraithlord"
-#descr "Summons Tuatha Wraithlord"
-#researchlevel 0
-#school -1
-#fatiguecost 0
-#damage 7403 -- Tuatha Wraithlord
-#restricted 100 -- LA Man
-#end
-
-#selectspell 3216
-#copyspell 494 -- Seith Curse
-#name "Awaken Bean Sidhe2"
-#descr "Summons Bean Sidhe"
-#researchlevel 0
-#school -1
-#effect 10021
-#nreff 1
-#fatiguecost 100
-#damage 1776  -- Bean Sidhe
-#notfornation 33 -- niefel
-#notfornation 34 -- muspel
-#notfornation 80 -- jotun
-#notfornation 118 -- vaetti
-#notfornation 81 -- nida
-#notfornation 117 -- utgard
-#spec 0
-#nextspell 3215
-#end
-
-#selectspell 3217
-#copyspell 494 -- Seith Curse
-#name "Awaken Bean Sidhe"
-#descr "Summons Bean Sidhe"
-#researchlevel 0
-#school -1
-#fatiguecost 100
-#effect 10021
-#nreff 1
-#damage 1776  -- Bean Sidhe
-#notfornation 33 -- niefel
-#notfornation 34 -- muspel
-#notfornation 80 -- jotun
-#notfornation 118 -- vaetti
-#notfornation 81 -- nida
-#notfornation 117 -- utgard
-#spec 0
-#nextspell 3216
-#end
-
-#selectspell 3218
-#name "Hidden under Mounds"
-#descr "In defiance of the Curse it is possible to raise the Sidhe slain long ago from beneath the mounds where they lie buried. They will return as longdead warriors cloaked in illusion, lead by the risen spirit of a great Tuatha king and accompanied by wailing Bean Sidhe. Defying the Curse in this manner may have dire consequences."
-#details "Two commanders in province are Cursed."
-#school 4
-#researchlevel 6
-#path 0 1
-#pathlevel 0 3
-#path 1 5
-#pathlevel 1 1
-#fatiguecost 6000
-#effect 10001
-#nreff 3021
-#damage 7402 -- Longdead Tuatha
-#restricted 100 -- LA Man
-#nextspell 3217
-#end
-
 #selectspell 3219
 #copyspell 935 -- Pack of Wolves
 #name "Enchant Morgen Wraith"
-#descr "The caster travels to the shore where once the fabled city of Ys sank below the waves. There they enchant the bones of a Morgen, ancient sacred cousins of the Tuatha that perished long ago. The Morgen will rise burning with cold fire astride her faithful Morvarc'h steed. Even in death they are shrouded in glamour, and can ride below the waves as easily as on land. Once tied to the sunlit lands she will return from the Land of the Dead if slain in battle."
+--#descr "The caster travels to the shore where once the fabled city of Ys sank below the waves. There they enchant the bones of a Morgen, ancient sacred cousins of the Tuatha that perished long ago. The Morgen will rise burning with cold fire astride her faithful Morvarc'h steed. Even in death they are shrouded in glamour, and can ride below the waves as easily as on land. Once tied to the sunlit lands she will return from the Land of the Dead if slain in battle."
+#descr "The caster travels to the shore where once the fabled city of Ys sank below the waves. There they enchant the bones of a Morgen, ancient sacred cousins of the Tuatha that perished long ago. The Morgen will rise burning with cold fire astride her faithful Morvarc'h steed. Even in death they are shrouded in glamour, and can ride below the waves as easily as on land."
 #school 4
 #researchlevel 5
 #path 0 5
-#pathlevel 0 2
+#pathlevel 0 1
 #path 1 0
 #pathlevel 1 1
-#fatiguecost 1000
+#fatiguecost 500
 #damage 7564 -- Wraith Morvarc'h
 #nreff 1
 #onlycoastsrc 1
@@ -122351,9 +122466,9 @@ All effects scale with friendly Dominion."
 #pathlevel 0 3  -- should be 3
 #path 1 0
 #pathlevel 1 1
-#fatiguecost 6000
+#fatiguecost 3500
 #damage 7564 -- Wraith Morvarc'h
-#nreff 504
+#nreff 506
 #onlycoastsrc 1
 #restricted 100 -- LA Man
 #nextspell 3220
@@ -141199,7 +141314,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #restricted 123 -- LA Pyrene
 #end
 
-#selectitem 870 -- Aizkora
+#selectitem 870 -- Feathered Crown
 #spr "magicenhanced/eeifeatheredcrown.tga"
 #name "Feathered Crown"
 #descr "The reign of the Lawgiver has brought with it the worship of the Sky in which He dwells. This crown, made of the feathers of Couatl fallen from above, is a symbol of authority among the priests of Mictlan and is imbued with power over the skies. This item can only be used by priests of Mictlan."
@@ -141212,6 +141327,67 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #type 9 -- crown
 #armor 212 -- magic crown
 #restricted 73 -- MA Mictlan
+#end
+
+#selectitem 871 -- Fire Plate Barding
+#copyitem 489 -- Blacksteel Barding
+#spr "magicenhanced/blue_fireplatebarding.tga"
+#name "Fire Plate Barding"
+#descr "A barding made from fire plate, providing resistance to fire and raising morale."
+#constlevel 3
+#mainpath 0
+#mainlevel 1
+#itemcost1 -60
+#fireres 5
+#morale 2
+#hp 4
+#armor 564
+#end
+
+#selectitem 872 -- Hexplate Barding
+#copyitem 489 -- Blacksteel Barding
+#spr "magicenhanced/blue_hexplatebarding.tga"
+#name "Hexplate Barding"
+#descr "A heavy platemail barding specially enchanted to repel magic and protect the mount from malign energy."
+#constlevel 3
+#mainpath 4
+#mainlevel 1
+#itemcost1 -60
+#mr 2
+#hp 4
+#armor 565
+#end
+
+#selectitem 873 -- Death Knight Barding
+#copyitem 489 -- Blacksteel Barding
+#spr "magicenhanced/blue_deathknightbarding.tga"
+#name "Death Knight Barding"
+#descr "A heavy barding enchanted with magic of the underworld to provide the mount invulnerability against mortal weapons."
+#constlevel 5
+#mainpath 5
+#mainlevel 1
+#secondarypath 3
+#secondarylevel 1
+#itemcost1 -80
+#itemcost2 -80
+#invulnerable 15
+#hp 6
+#armor 566
+#end
+
+#selectitem 874 -- Icicle Barding
+#copyitem 489 -- Blacksteel Barding
+#spr "magicenhanced/blue_iciclebarding.tga"
+#name "Icicle Barding"
+#descr "A barding made of interlocking enchanted ice, providing increased protection in cold provinces."
+#constlevel 5
+#mainpath 2
+#mainlevel 1
+#itemcost1 -80
+#coldres 5
+#iceprot 1
+#hp 4
+#armor 567
 #end
 
 
@@ -142772,7 +142948,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #constlevel 1
 #def 3
 #itemcost1 -40
-#mapspeed 4
+#mapspeed 6
 #end
 
 #selectitem 486 -- Enchanted Barding
@@ -142781,21 +142957,25 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectitem 489 -- Blacksteel Barding
+#constlevel 1
 #itemcost1 -80
 #end
 
 #selectitem 487 -- Boar Leather Barding
+#descr "This iron-studded leather barding is made from boar leather enchanted to draw forth the ferocious rage of the wild boars from which it was made."
 #constlevel 3
 #itemcost1 -60
 #hp 10
+#slashres
 #end
 
 #selectitem 492 -- Lightweight Cataphract Barding
-#constlevel 3
+#constlevel 1
 #itemcost1 -80
 #end
 
 #selectitem 490 -- Gossamer Barding
+#constlevel 3
 #itemcost1 -80
 #end
 
@@ -142807,7 +142987,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectitem 491 -- fay steed barding
-#itemcost1 -60
+#itemcost1 -80
 #itemcost2 -80
 #end
 
