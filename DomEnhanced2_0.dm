@@ -97214,7 +97214,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 0
 #homecom 9622 -- Zankallala
 #homecom 9621 -- Rogue Matriarch
-#rarity 5
 #end 
 
 #newsite 2374
@@ -97223,17 +97222,20 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0 -- requires no searching
 #rarity 5 -- will not appear in games unless directly specified
 #look 2
-#homemon 3168 -- Hound of Twilight
 #homemon 3119 -- Spartae
+
+#homemon 628 -- lion
+#homemon 2398 -- elephant
+#homemon 7511 -- biloko
+#homemon 9623 -- Ninki Nanka
+
+#homemon 3168 -- Hound of Twilight
 #homemon 3127 -- Ker
-#homecom 3160 -- Hesperide
 #homemon 3164 -- Keledone
 #homemon 3171 -- Khalkotauros
 #homemon 9625 -- Kuon Argyreos
 #homemon 9626 -- Kuon Khryseos
-#homecom 7252 -- hades
-#homecom 7250 -- athena
-#homecom 7251 -- pose
+
 #end 
 
 #newsite 2375
@@ -97242,18 +97244,20 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0 -- requires no searching
 #rarity 5 -- will not appear in games unless directly specified
 #look 3
-#homemon 628 -- lion
-#homemon 2398 -- elephant
-#homemon 7511 -- biloko
+#homecom 9627 -- Bori Posessor
 #homecom 7270 -- aziza
+#homecom 7509 -- adze
+#homecom 9624 -- Dodo
+#homecom 9628 -- Mami Wata
+#homecom 3160 -- Hesperide
+#homecom 7289 -- boread
+
+#homecom 7252 -- hades
+#homecom 7250 -- athena
+#homecom 7251 -- pose
 #homecom 7256 -- sun neter
 #homecom 7257 -- chaos neter
 #homecom 7258 -- moon neter
-#homecom 7509 -- adze
-#homemon 9623 -- Ninki Nanka
-#homecom 9624 -- Dodo
-#homecom 9627 -- Bori Posessor
-#homecom 9628 -- Mami Wata
 #end 
 
 #newsite 2376 -- White Shell Riders
@@ -103715,9 +103719,9 @@ Priests: Weak. Can unlock strong priests in capital."
 #startsite "The Gleaming Academy"
 #startsite "The Closed Chamber"
 #futuresite "The Open Chamber"
-#futuresite "LA Houssa Heroes"
 #futuresite "LA Houssa Summons"
 #futuresite "LA Houssa Summons Continued"
+#futuresite "LA Houssa Heroes"
 
 --unit list
 
@@ -107256,6 +107260,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #restricted 50 -- MA Arco
 #restricted 77 -- MA Phaecia
 #restricted 95 -- LA Arco
+#restricted 205 -- LA Houssa
 #end
 
 #selectspell 2050
