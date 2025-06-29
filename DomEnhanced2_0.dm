@@ -79823,7 +79823,8 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 636  -- Basilisk
-
+#custommagic 45056 100 -- 150%DNB
+#custommagic 45056 50 -- 150%DNB
 #end
 
 #selectmonster 637  -- Draco Lion
@@ -137484,7 +137485,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #path 0 8
 #pathlevel 0 1
 #path 1 1
-#pathlevel 1 1
+#pathlevel 1 2
 #fatiguecost 1000
 #end
 
@@ -137493,7 +137494,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #path 0 8
 #pathlevel 0 1
 #path 1 3
-#pathlevel 1 1
+#pathlevel 1 2
 #fatiguecost 1100
 #end
 
