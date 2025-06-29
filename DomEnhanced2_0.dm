@@ -1895,6 +1895,7 @@
 #copyweapon 699  -- Area Stun
 #name "Shockwave"
 #aoe 6
+#bonus
 #end
 
 #newweapon 1680
@@ -17086,30 +17087,25 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #name "Razorhorn Rider"
 #spr1 "gondwana/elkrider.tga"
 #spr2 "gondwana/elkrider2.tga"
+#unmountedspr1 "gondwana/un_elkrider.tga"
+#unmountedspr2 "gondwana/un_elkrider2.tga"
 #descr "The people of Gondwana do not use horses. Instead, giant beasts that roam the plains are tamed and taught to carry riders. The Razorhorns are larger than a horse and with wickedly sharp antlers. In battle they are hard to control and their size and temperament prevent them from fighting in close formations. If the rider is slain the beast will continue to gore and stamp enemies, however after the battle it will escape."
 #gcost 25
 #rpcost 15
 #rcost 5
-#ressize 2
-#size 6
 #hp 12
 #att 10
-#def 12
+#def 11
 #mor 11
-#ap 26
-#enc 4
-#prec 8
-#mapmove 28
 #weapon 357  -- Light Lance
-#weapon 354  -- Antlers
-#weapon 615  -- Hoof
 #armor 10  -- Leather Hauberk
 #armor 20  -- Iron Cap
 #armor 2  -- Shield
 #undisciplined
 #mounted
 #xploss 100
-#secondtmpshape 6967
+#mountmnr 6967
+#skilledrider 3
 #end
 
 #newmonster 6967
@@ -17121,6 +17117,12 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #descr "The people of Gondwana do not use horses. Instead, giant beasts that roam the plains are tamed and taught to carry riders. Razorhorns are antelopes larger than a horse and with wickedly curved and sharp antlers. In battle they are hard to control and their size and temperament prevent them from fighting in close formations. If the rider is slain the beast will continue to gore and stamp enemies, however after the battle it will escape."
 #ap 26
 #mapmove 28
+#prot 8
+#def 10
+#att 11
+#str 17
+#hp 35
+#armor 251 -- leather barding
 #end
 
 #newmonster 6968
@@ -17143,31 +17145,6 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #armor 14  -- Plate Hauberk
 #armor 20  -- Iron Cap
 #armor 2  -- Shield
-#end
-
-#newmonster 6971
-#copystats 2307  -- Machaka Elephant
-#clearweapons
-#name "Thunder Beast"
-#spr1 "gondwana/thunderbeastunit.tga"
-#spr2 "gondwana/thunderbeastunit2.tga"
-#descr "The Thunder Beasts are the largest creatures that stride the plains of Gondwana, named for the terrifying sound caused as their feet impact the earth. These creatures have little to fear from any predator, however a few are captured as newborns and raised in captivity by the Obas for use in times of war. These huge creatures are strong in N'um, the sacred force that manifests only in the largest and most holy of beings.  The sight of a Thunder Beast will fill enemies with fear. Their sheer size allows them to trample through enemy lines with ease, however if panicked they may end up trampling friends and enemies alike."
-#quadruped
-#gcost 380
-#rpcost 56
-#hp 130
-#prot 14
-#mr 7
-#mor 11
-#ap 14
-#str 26
-#def 6
-#fear 5
-#holy
-#slowrec
-#reclimit 1
-#twiceborn 6644 -- Wight Beast
-#weapon 397  -- Kick
 #end
 
 #newmonster 6972
@@ -17284,6 +17261,9 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #custommagic 29056 100  -- 100% FADNG
 #researchbonus 0
 #masterrit 1
+#beastmaster 3
+#command 30
+#undisleader 1
 #spellsinger
 #shapechange 6979
 #end
@@ -17374,7 +17354,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #lizard
 #gcost 0
 #ap 24
-#prot 10
+#prot 12
 #prec 8
 #def 13
 #str 20
@@ -17402,7 +17382,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #lizard
 #gcost 0
 #ap 24
-#prot 10
+#prot 12
 #prec 8
 #def 13
 #str 20
@@ -17564,46 +17544,16 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mr 14
 #mor 16
 #startage 40
+#str 11
+#def 12
+#att 12
+#hp 14
 #holy
 #expertleader
 #weapon 451  -- Club Sword
+#armor 120 -- leather hauberk
+#armor 10 -- leather cap
 #magicskill 9 3
-#end
-
-#newmonster 6986
-#copystats 2307  -- Machaka Elephant
-#clearweapons
-#name "Ogiso"
-#spr1 "gondwana/thunderbeastcom.tga"
-#spr2 "gondwana/thunderbeastcom2.tga"
-#descr "The most powerful Obas are known as Ogiso. These mighty lords take to the battlefield atop a great Thunder Beast, accompanied by their most powerful shamans and advisors. From this vantage point they can assess the battle and command their forces with ease, whilst their Shamans cast unhindered by distractions on the ground. The sight of a Thunder Beast will fill enemies with fear. Their sheer size allows them to trample through enemy lines with ease, however if panicked they may end up trampling friends and enemies alike."
-#quadruped
-#gcost 680
-#rpcost 6
-#hp 130
-#prot 14
-#mr 16
-#mor 12
-#ap 14
-#str 26
-#def 6
-#fear 5
-#enc 1
-#magicskill 0 1
-#magicskill 1 1
-#magicskill 5 1
-#magicskill 6 1
-#magicskill 7 1
-#magicskill 9 3
-#bonusspells 1
-#combatcaster
-#expertleader
-#inspirational 1
-#spellsinger
-#holy
-#slowrec
-#weapon 397  -- Kick
-#twiceborn 6644 -- Wight Beast
 #end
 
 #newmonster 6988
@@ -17619,10 +17569,11 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #gcost 0
 #size 5
 #hp 35
-#str 16
-#prot 20
-#mr 8
+#str 18
+#prot 24
+#mr 10
 #mor 12
+#att 11
 #def 6
 #prec 5
 #enc 2
@@ -17650,10 +17601,10 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #size 5
 #hp 24
 #str 16
-#prot 5
-#mr 5
-#mor 13
-#att 13
+#prot 7
+#mr 7
+#mor 14
+#att 14
 #def 11
 #prec 5
 #enc 3
@@ -17682,9 +17633,9 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #size 8
 #hp 44
 #str 18
-#prot 8
-#mr 8
-#mor 13
+#prot 9
+#mr 10
+#mor 14
 #att 11
 #def 11
 #prec 15
@@ -17715,7 +17666,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #hp 70
 #str 22
 #prot 15
-#mr 9
+#mr 12
 #mor 14
 #att 13
 #def 10
@@ -17726,8 +17677,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #startage 20
 #maxage 40
 #magicskill 6 1
-#custommagic 9216 100  -- 100% E/N
-#custommagic 9216 50  -- 50% E/N
+#custommagic 25600 100  -- 100% ENG
+#custommagic 25600 50  -- 50% ENG
 #weapon 29  -- Claw
 #weapon 29  -- Claw
 #weapon 1759 -- Stomp
@@ -17739,7 +17690,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #end
 
 #newmonster 6992
-#copystats 2307  -- Machaka Elephant
+#copystats 2398  -- Machaka Elephant
 #clearweapons
 #name "Earthshaker"
 #spr1 "gondwana/armorbeast.tga"
@@ -17748,16 +17699,18 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #quadruped
 #gcost 0
 #hp 115
+#size 10
 #prot 18
-#mr 9
+#mr 13
 #mor 12
 #ap 14
-#str 24
+#str 28
 #def 6
 #fear 5
 #twiceborn 6644 -- Wight Beast
 #holy
 #weapon 397  -- Kick
+#weapon 1679 -- shockwave
 #end
 
 #newmonster 6993
@@ -17771,6 +17724,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #descr "Dark Spirits are evil spirits of the dead that plague the people of Gondwana. They appear when certain taboos are broken, or when magic is performed without the proper offerings being made to placate them. Their arrows are believed to be the cause of misfortune, sickness and death. They are especially attracted to trance dances and will cluster in the shadows, waiting for any weakness in the shaman that will allow them to manifest. Some shamans can bind and force these spirits to serve, however this is a dangerous endeavour. Dark Spirits carry bows made of shadow that inflict a terrible wasting disease on their targets, and they can drain the life force of the living."
 #hp 12
 #prec 10
+#prot 5
 #weapon 1805  -- Plague Bow
 #weapon 63  -- Life Drain
 #end
@@ -17801,9 +17755,10 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #poorleader
 #diseaseres 50
 #shapechange 6995
-#magicskill 0 3
+#magicskill 0 2
 #magicskill 3 2
 #magicskill 5 3
+#magicskill 7 3
 #end
 
 #newmonster 6995
@@ -17885,8 +17840,9 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #female
 #inspirational 1
 #weapon 9  -- Dagger
-#magicskill 1 3
+#magicskill 1 2
 #magicskill 6 3
+#magicskill 7 2
 #magicskill 9 3
 #end
 
@@ -52889,6 +52845,194 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #armor 564 -- fire plate
 #end
 
+
+#newmonster 6971
+#copystats 2307  -- Machaka Elephant Rider
+#clearweapons
+#name "Thunder Beast Captain"
+#spr1 "gondwana/thunderbeastunit.tga"
+#spr2 "gondwana/thunderbeastunit2.tga"
+#xspr1 "gondwana/thunderbeastunit_1.tga"
+#xspr2 "gondwana/thunderbeastunit2_1.tga"
+#xspr1 "gondwana/thunderbeastunit_2.tga"
+#xspr2 "gondwana/thunderbeastunit2_2.tga"
+#xspr1 "gondwana/thunderbeastunit_3.tga"
+#xspr2 "gondwana/thunderbeastunit2_3.tga"
+#unmountedspr1 "gondwana/ezomo.tga"
+#unmountedspr2 "gondwana/ezomo2.tga"
+#descr "The Thunder Beasts are the largest creatures that stride the plains of Gondwana, named for the terrifying sound caused as their feet impact the earth. These creatures have little to fear from any predator, however a few are captured as newborns and raised in captivity by the Obas for use in times of war. These huge creatures are strong in N'um, the sacred force that manifests only in the largest and most holy of beings.  The sight of a Thunder Beast will fill enemies with fear. Their sheer size allows them to trample through enemy lines with ease, however if panicked they may end up trampling friends and enemies alike.
+Cost 56 RP."
+#mountmnr 9051
+#coridermnr 9053
+#nofriders 4
+#gcost 10015
+#rpcost 50 -- 56
+#prot 6 -- 'saddle'
+#hp 10
+#mr 12
+#def 12
+#att 12
+#mor 15
+#holy
+#slowrec
+#reclimit 1
+#twiceborn 6644 -- Wight Beast
+#weapon 8 -- sword
+#armor 20 -- iron cap
+#armor 14 -- plate hauberk
+#end
+
+#newmonster 6986
+#copystats 2307  -- Machaka Elephant Rider
+#clearweapons
+#name "Ogiso"
+#spr1 "gondwana/thunderbeastcom.tga"
+#spr2 "gondwana/thunderbeastcom2.tga"
+#xspr1 "gondwana/thunderbeastcom_1.tga"
+#xspr2 "gondwana/thunderbeastcom2_1.tga"
+#xspr1 "gondwana/thunderbeastcom_2.tga"
+#xspr2 "gondwana/thunderbeastcom2_2.tga"
+#xspr1 "gondwana/thunderbeastcom_3.tga"
+#xspr2 "gondwana/thunderbeastcom2_3.tga"
+#unmountedspr1 "gondwana/oba.tga"
+#unmountedspr2 "gondwana/oba2.tga"
+#descr "The most powerful Obas are known as Ogiso. These mighty lords take to the battlefield atop a great Thunder Beast, accompanied by their most trusted advisors. From this vantage point they can assess the battle and command their forces with ease. The sight of a Thunder Beast will fill enemies with fear. Their sheer size allows them to trample through enemy lines with ease, however if panicked they may end up trampling friends and enemies alike."
+#mountmnr 9052
+#nofriders 4
+#coridermnr 9054
+#gcost 10060
+#rpcost 6
+#prot 6 -- 'saddle'
+#hp 14
+#mr 16
+#mor 16
+#str 11
+#att 12
+#def 12
+#enc 2
+#magicskill 0 1
+#magicskill 1 1
+#magicskill 5 1
+#magicskill 6 1
+#magicskill 7 1
+#magicskill 9 3
+#bonusspells 1
+#combatcaster
+#expertleader
+#inspirational 1
+#beastmaster 1
+#undisleader 1
+#spellsinger
+#holy
+#slowrec
+#weapon 451 -- obsidian club sword
+#armor 120 -- leather hauberk
+#armor 10 -- leather cap
+#twiceborn 6644 -- Wight Beast
+#end
+
+#newmonster 9051 -- unit
+#copystats 3939 -- Machaka Elephant
+#clearweapons
+#name "Thunder Beast"
+#spr1 "gondwana/thunderbeast.tga"
+#spr2 "gondwana/thunderbeast2.tga"
+#descr "The Thunder Beasts are the largest creatures that stride the plains of Gondwana, named for the terrifying sound caused as their feet impact the earth. These creatures have little to fear from any predator, however a few are captured as newborns and raised in captivity by the Obas for use in times of war. These huge creatures are strong in N'um, the sacred force that manifests only in the largest and most holy of beings.  The sight of a Thunder Beast will fill enemies with fear. Their sheer size allows them to trample through enemy lines with ease, however if panicked they may end up trampling friends and enemies alike."
+#quadruped
+#gcost 10150
+#smartmount 100
+#size 10
+#rpcost 6
+#hp 130
+#prot 14
+#mr 11
+#mor 12
+#ap 14
+#str 28
+#def 6
+#fear 5
+#enc 1
+#holy
+#weapon 397  -- Kick
+#twiceborn 6644 -- Wight Beast
+#end
+
+
+#newmonster 9052 -- com
+#copystats 3939 -- Machaka Elephant
+#clearweapons
+#name "Thunder Beast"
+#spr1 "gondwana/thunderbeast.tga"
+#spr2 "gondwana/thunderbeast2.tga"
+#descr "The Thunder Beasts are the largest creatures that stride the plains of Gondwana, named for the terrifying sound caused as their feet impact the earth. These creatures have little to fear from any predator, however a few are captured as newborns and raised in captivity by the Obas for use in times of war. These huge creatures are strong in N'um, the sacred force that manifests only in the largest and most holy of beings.  The sight of a Thunder Beast will fill enemies with fear. Their sheer size allows them to trample through enemy lines with ease, however if panicked they may end up trampling friends and enemies alike."
+#quadruped
+#gcost 10150
+#smartmount 100
+#size 10
+#rpcost 6
+#hp 130
+#prot 14
+#mr 15
+#mor 12
+#ap 14
+#str 28
+#def 6
+#fear 5
+#enc 1
+#holy
+#weapon 397  -- Kick
+#twiceborn 6644 -- Wight Beast
+#end
+
+#newmonster 9053 -- unit corider
+#copystats 3643  -- Elephant Spearman
+#clearweapons
+#cleararmor
+#name "Thunder Beast Rider"
+#spr1 "gondwana/militia.tga"
+#spr2 "gondwana/militia2.tga"
+#descr "The Thunder Beasts are the largest creatures that stride the plains of Gondwana, named for the terrifying sound caused as their feet impact the earth. These creatures have little to fear from any predator, however a few are captured as newborns and raised in captivity by the Obas for use in times of war. These huge creatures are strong in N'um, the sacred force that manifests only in the largest and most holy of beings.  The sight of a Thunder Beast will fill enemies with fear. Their sheer size allows them to trample through enemy lines with ease, however if panicked they may end up trampling friends and enemies alike."
+#gcost 10012
+#rpcost 10
+#prot 6 -- 'saddle'
+#hp 10
+#mr 12
+#def 11
+#att 11
+#mor 15
+#holy
+#twiceborn 6644 -- Wight Beast
+#weapon 1 -- spear
+#armor 120 -- leather hauberk
+#armor 10 -- leather cap
+#end
+
+#newmonster 9054 -- commander corider
+#copystats 3643  -- Elephant Spearman
+#clearweapons
+#cleararmor
+#name "Thunder Beast Rider"
+#spr1 "gondwana/ezomo.tga"
+#spr2 "gondwana/ezomo2.tga"
+#descr "The most powerful Obas are known as Ogiso. These mighty lords take to the battlefield atop a great Thunder Beast, accompanied by their most trusted advisors. From this vantage point they can assess the battle and command their forces with ease. The sight of a Thunder Beast will fill enemies with fear. Their sheer size allows them to trample through enemy lines with ease, however if panicked they may end up trampling friends and enemies alike."
+#gcost 10012
+#rpcost 10
+#prot 6 -- 'saddle'
+#hp 10
+#mr 12
+#def 12
+#att 12
+#mor 15
+#holy
+#twiceborn 6644 -- Wight Beast
+#weapon 8 -- sword
+#armor 20 -- iron cap
+#armor 14 -- plate hauberk
+#end
+
+
+
+
 --#newmonster 8684 -- LA C'tis Hierodule
 --#copystats 510
 --#spr1 "vanilla/lactishierodule1.tga"
@@ -57525,6 +57669,7 @@ Cost 50 recruitment points."
 #spr2 "houssa/9606_2_hausa_cavalry.png"
 #unmountedspr1 "houssa/9606_3_hausa_cavalry.png"
 #unmountedspr2 "houssa/9606_4_hausa_cavalry.png"
+#drawsize -10
 #gcost 10005 
 #rcost 1
 #rpcost 12000
@@ -57569,7 +57714,7 @@ Cost 50 recruitment points."
 #hp 13
 #str 12
 #att 12
-#def 13
+#def 12
 #prec 10
 #prot 0
 #size 3
@@ -57789,7 +57934,7 @@ Costs 29 Recruitment points."
 #hp 14
 #str 12
 #att 13
-#def 14
+#def 13
 #prec 10
 #prot 0
 #size 3
@@ -59037,6 +59182,10 @@ Cannot be recruited until Break the Deadlock is cast."
 -- Modded Mount Skilled Rider Changes:
 
 
+#selectmonster 7398 -- Black Knight
+#skilledrider 8 -- 4 -> 8
+#end
+
 #selectmonster 6591 -- Owner of the Lodges
 #skilledrider 7 -- 5 -> 7
 #end
@@ -59053,11 +59202,19 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 7 -- 4 -> 7
 #end
 
-#selectmonster 7347 -- Aes Sidhe Hornblower
-#skilledrider 6 -- 4 -> 6
+#selectmonster 7854 -- Volans Knight Commander
+#skilledrider 7 -- 4 -> 7
 #end
 
-#selectmonster 7854 -- Volans Knight Commander
+#selectmonster 7782 -- Swan Champion
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 7783 -- Red Knight
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 7347 -- Aes Sidhe Hornblower
 #skilledrider 6 -- 4 -> 6
 #end
 
@@ -59073,16 +59230,88 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 6 -- 4 -> 6
 #end
 
+#selectmonster 7359 -- Knight of the Volans
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 8551 -- Shroud Wight
+#skilledrider 6 -- 2 -> 6
+#end
+
+#selectmonster 8553 -- Eternal Wight
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 7305 -- Minister of Fire
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 8556 -- Eternal Wight Praefectus
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 7196 -- Faris
+#skilledrider 6 -- 2 -> 6
+#end
+
+#selectmonster 7188 -- Emir
+#skilledrider 6 -- 2 -> 6
+#end
+
+#selectmonster 7802 -- Equite of the Eternal Shroud
+#skilledrider 6 -- 2 -> 6
+#end
+
+#selectmonster 7810 -- Praefectus of the Eternal Shroud
+#skilledrider 6 -- 2 -> 6
+#end
+
+#selectmonster 7780 -- Swan Knight
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 7678 -- Kheshig
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 7677 -- Great Khan
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 6656 -- Kheshig
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 7531 -- Ancestral Rider
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 8234 -- Khagan
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 7564 -- Wraith Knight
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 7565 -- Wraith Princess
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 7566 -- Fey Knight
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 7567 -- Errant Knight
+#skilledrider 6 -- 4 -> 6
+#end
+
 #selectmonster 6585 -- War Chief
 #skilledrider 5 -- 4 -> 5
 #end
 
 #selectmonster 6605 -- Jet Warrior
 #skilledrider 5 -- 2 -> 5
-#end
-
-#selectmonster 7359 -- Knight of the Volans
-#skilledrider 5 -- 3 -> 5
 #end
 
 #selectmonster 8121 -- Adventurous Governor
@@ -59098,51 +59327,19 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 5 -- 2 -> 5
 #end
 
-#selectmonster 8551 -- Shroud Wight
-#skilledrider 5 -- 2 -> 5
-#end
-
-#selectmonster 8553 -- Eternal Wight
-#skilledrider 5 -- 3 -> 5
-#end
-
 #selectmonster 8680 -- Son of Muspel
 #skilledrider 5 -- 2 -> 5
-#end
-
-#selectmonster 7305 -- Minister of Fire
-#skilledrider 5 -- 3 -> 5
 #end
 
 #selectmonster 6891 -- Tsowo
 #skilledrider 5 -- 2 -> 5
 #end
 
-#selectmonster 8556 -- Eternal Wight Praefectus
-#skilledrider 5 -- 3 -> 5
-#end
-
 #selectmonster 9622 -- Tiny Champion
 #skilledrider 5 -- 2 -> 5
 #end
 
-#selectmonster 7196 -- Faris
-#skilledrider 5 -- 2 -> 5
-#end
-
 #selectmonster 7163 -- Mobile Guard
-#skilledrider 5 -- 2 -> 5
-#end
-
-#selectmonster 7188 -- Emir
-#skilledrider 5 -- 2 -> 5
-#end
-
-#selectmonster 7802 -- Equite of the Eternal Shroud
-#skilledrider 5 -- 2 -> 5
-#end
-
-#selectmonster 7810 -- Praefectus of the Eternal Shroud
 #skilledrider 5 -- 2 -> 5
 #end
 
@@ -59162,6 +59359,26 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 5 -- 1 -> 5
 #end
 
+#selectmonster 9607 -- Jarumi
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 9613 -- Madawaki
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 9608 -- Yan Lifida
+#skilledrider 5 -- 4 -> 5
+#end
+
+#selectmonster 9607 -- Jarumi
+#skilledrider 5 -- 4 -> 5
+#end
+
+#selectmonster 9613 -- Madawaki
+#skilledrider 5 -- 4 -> 5
+#end
+
 #selectmonster 6599 -- Turquoise Archer
 #skilledrider 4 -- 2 -> 4
 #end
@@ -59174,16 +59391,8 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 4 -- 2 -> 4
 #end
 
-#selectmonster 9607 -- Jarumi
-#skilledrider 4 -- 2 -> 4
-#end
-
 #selectmonster 9608 -- Yan Lifida
 #skilledrider 4 -- 2 -> 4
-#end
-
-#selectmonster 9613 -- Madawaki
-#skilledrider 4 -- 3 -> 4
 #end
 
 #selectmonster 7168 -- Ghazi
@@ -59191,11 +59400,27 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 6919 -- Ta Pa
-#skilledrider 3 -- 1 -> 3
+#skilledrider 4 -- 1 -> 4
 #end
 
 #selectmonster 6928 -- Ta Mak Go
-#skilledrider 3 -- 1 -> 3
+#skilledrider 4 -- 1 -> 4
+#end
+
+#selectmonster 6723 -- Venetian Knight
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 9606 -- Hausa Cavalry
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 6969 -- Ekaiwe
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 6982 -- Ekaiwe Commander
+#skilledrider 4 -- 2 -> 4
 #end
 
 #selectmonster 6881 -- Tribal Horseman
@@ -59236,12 +59461,6 @@ Cannot be recruited until Break the Deadlock is cast."
 
 
 
-
-
-#selectmonster 8345 -- Markata Master
-#skilledrider 1 -- 0 -> 1
-#end
-
 #selectmonster 6722 -- Stratiot
 #skilledrider 3 -- 1 -> 3
 #end
@@ -59250,57 +59469,39 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 3 -- 1 -> 3
 #end
 
-#selectmonster 6723 -- Venetian Knight
-#skilledrider 4 -- 2 -> 4
+#selectmonster 6966 -- Razorhorn Rider
+#skilledrider 3 -- 1 -> 3
 #end
 
-#selectmonster 7780 -- Swan Knight
-#skilledrider 6 -- 4 -> 6
+
+
+#selectmonster 8345 -- Markata Master
+#skilledrider 1 -- 0 -> 1
 #end
 
-#selectmonster 7782 -- Swan Champion
-#skilledrider 7 -- 4 -> 7
-#end
 
-#selectmonster 7678 -- Kheshig
-#skilledrider 6 -- 4 -> 6
-#end
-
-#selectmonster 7677 -- Great Khan
-#skilledrider 6 -- 4 -> 6
-#end
-
-#selectmonster 6656 -- Kheshig
-#skilledrider 6 -- 4 -> 6
-#end
-
-#selectmonster 7531 -- Ancestral Rider
-#skilledrider 6 -- 3 -> 6
-#end
-
-#selectmonster 8234 -- Khagan
-#skilledrider 6 -- 4 -> 6
-#end
 
 
 
 -- Mount Skilled Rider Changes:
 
 
+
+
 #selectmonster 2924 -- Queen of the North
-#skilledrider 7 -- 5 -> 7
+#skilledrider 8 -- 5 -> 8
 #end
 
 #selectmonster 2926 -- Morgen Queen
-#skilledrider 7 -- 5 -> 7
+#skilledrider 8 -- 5 -> 8
 #end
 
 #selectmonster 2925 -- Queen of the North
-#skilledrider 7 -- 5 -> 7
+#skilledrider 8 -- 5 -> 8
 #end
 
 #selectmonster 2927 -- Morgen Queen
-#skilledrider 7 -- 5 -> 7
+#skilledrider 8 -- 5 -> 8
 #end
 
 #selectmonster 3904 -- Fay Prince
@@ -59312,23 +59513,23 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 2917 -- Morgen Champion
-#skilledrider 7 -- 4 -> 7
+#skilledrider 8 -- 4 -> 8
 #end
 
 #selectmonster 2919 -- Morgen Princess
-#skilledrider 7 -- 4 -> 7
+#skilledrider 8 -- 4 -> 8
 #end
 
 #selectmonster 2918 -- Morgen Champion
-#skilledrider 7 -- 4 -> 7
+#skilledrider 8 -- 4 -> 8
 #end
 
 #selectmonster 2920 -- Morgen Princess
-#skilledrider 7 -- 4 -> 7
+#skilledrider 8 -- 4 -> 8
 #end
 
 #selectmonster 588 -- Heroine
-#skilledrider 7 -- 5 -> 7
+#skilledrider 8 -- 5 -> 8
 #end
 
 #selectmonster 1511 -- Vanadis
@@ -59376,11 +59577,11 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 378 -- Hero
-#skilledrider 6 -- 4 -> 6
+#skilledrider 7 -- 4 -> 7
 #end
 
 #selectmonster 58 -- Knight of the Stone
-#skilledrider 6 -- 4 -> 6
+#skilledrider 7 -- 4 -> 7
 #end
 
 #selectmonster 507 -- Heroine
@@ -59388,11 +59589,11 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 2128 -- Knight Commander of Avalon
-#skilledrider 6 -- 4 -> 6
+#skilledrider 7 -- 4 -> 7
 #end
 
 #selectmonster 3627 -- Phantasmal Knight
-#skilledrider 6 -- 3 -> 6
+#skilledrider 7 -- 3 -> 7
 #end
 
 #selectmonster 489 -- Demon Knight
@@ -59400,7 +59601,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 377 -- Hero
-#skilledrider 6 -- 3 -> 6
+#skilledrider 7 -- 3 -> 7
 #end
 
 #selectmonster 848 -- Sidhe Lord
@@ -59452,11 +59653,11 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 2915 -- Morvarc'h Knight
-#skilledrider 6 -- 3 -> 6
+#skilledrider 7 -- 3 -> 7
 #end
 
 #selectmonster 2916 -- Morvarc'h Knight
-#skilledrider 6 -- 3 -> 6
+#skilledrider 7 -- 3 -> 7
 #end
 
 #selectmonster 263 -- Vanherse
@@ -59468,15 +59669,15 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 3985 -- Phantasmal Knight
-#skilledrider 6 -- 3 -> 6
+#skilledrider 7 -- 3 -> 7
 #end
 
 #selectmonster 1061 -- Triton Prince
-#skilledrider 6 -- 3 -> 6
+#skilledrider 7 -- 3 -> 7
 #end
 
 #selectmonster 506 -- Hero
-#skilledrider 6 -- 3 -> 6
+#skilledrider 7 -- 3 -> 7
 #end
 
 #selectmonster 3311 -- Lady Knight
@@ -59488,7 +59689,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 1175 -- Warrior Queen
-#skilledrider 6 -- 4 -> 6
+#skilledrider 7 -- 4 -> 7
 #end
 
 #selectmonster 262 -- Van
@@ -59504,19 +59705,19 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 930 -- Khan
-#skilledrider 6 -- 4 -> 6
+#skilledrider 7 -- 4 -> 7
 #end
 
 #selectmonster 3812 -- Lady Commander
-#skilledrider 5 -- 3 -> 5
+#skilledrider 6 -- 3 -> 6
 #end
 
 #selectmonster 64 -- Knight of Avalon
-#skilledrider 5 -- 3 -> 5
+#skilledrider 6 -- 3 -> 6
 #end
 
 #selectmonster 1957 -- Bogatyr
-#skilledrider 5 -- 3 -> 5
+#skilledrider 6 -- 3 -> 6
 #end
 
 #selectmonster 3255 -- Blood Graf
@@ -59540,11 +59741,11 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 4048 -- Cambion King
-#skilledrider 5 -- 3 -> 5
+#skilledrider 6 -- 3 -> 6
 #end
 
 #selectmonster 4060 -- Crimson King
-#skilledrider 5 -- 3 -> 5
+#skilledrider 6 -- 3 -> 6
 #end
 
 #selectmonster 647 -- Dark Knight
@@ -59568,11 +59769,11 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 3615 -- Pyrènian Marquess
-#skilledrider 5 -- 3 -> 5
+#skilledrider 6 -- 3 -> 6
 #end
 
 #selectmonster 4042 -- Pyrènian Marquess
-#skilledrider 5 -- 3 -> 5
+#skilledrider 6 -- 3 -> 6
 #end
 
 #selectmonster 2359 -- Holy Knight
@@ -59580,7 +59781,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 440 -- Paladin
-#skilledrider 5 -- 3 -> 5
+#skilledrider 6 -- 3 -> 6
 #end
 
 #selectmonster 134 -- Royal Guard
@@ -59632,11 +59833,11 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 793 -- Prince General
-#skilledrider 5 -- 2 -> 5
+#skilledrider 6 -- 2 -> 6
 #end
 
 #selectmonster 589 -- Witch Hunter General
-#skilledrider 5 -- 3 -> 5
+#skilledrider 6 -- 3 -> 6
 #end
 
 #selectmonster 1185 -- Oiorpata
@@ -59652,11 +59853,11 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 1554 -- Agema Commander
-#skilledrider 5 -- 3 -> 5
+#skilledrider 6 -- 3 -> 6
 #end
 
 #selectmonster 1174 -- Warrior Priestess
-#skilledrider 5 -- 3 -> 5
+#skilledrider 6 -- 3 -> 6
 #end
 
 #selectmonster 391 -- Grey Lord
@@ -59668,7 +59869,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 1577 -- Ancestor Vessel
-#skilledrider 5 -- 3 -> 5
+#skilledrider 6 -- 3 -> 6
 #end
 
 #selectmonster 184 -- Knight of the Unholy Sepulchre
@@ -59676,7 +59877,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 4049 -- Cambion Count
-#skilledrider 4 -- 3 -> 4
+#skilledrider 5 -- 3 -> 5
 #end
 
 #selectmonster 1074 -- Wind Rider
@@ -59688,7 +59889,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 4050 -- Cambion Knight
-#skilledrider 4 -- 3 -> 4
+#skilledrider 5 -- 3 -> 5
 #end
 
 #selectmonster 3325 -- Orionde Knight
@@ -59712,19 +59913,19 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 5 -- Serpent Lord
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 765 -- Serpent Lord
-#skilledrider 4 -- 3 -> 4
+#skilledrider 5 -- 3 -> 5
 #end
 
 #selectmonster 1173 -- Sauromatian Manflayer
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 791 -- Red Guard
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 1207 -- Eponi Chieftain
@@ -59736,7 +59937,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 1141 -- Tiger Rider
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 792 -- General
@@ -59756,15 +59957,15 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 1553 -- Agema Companion
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 1172 -- Sauromatian Cataphract
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 763 -- Serpent Cataphract
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 3016 -- Triton Knight
@@ -59772,11 +59973,11 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 3613 -- Emerald Knight
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 3616 -- Emerald Count
-#skilledrider 4 -- 3 -> 4
+#skilledrider 5 -- 3 -> 5
 #end
 
 #selectmonster 91 -- Heavy Cavalry
@@ -59788,7 +59989,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 3219 -- Phlegran Cataphract Commander
-#skilledrider 4 -- 3 -> 4
+#skilledrider 5 -- 3 -> 5
 #end
 
 #selectmonster 2931 -- Knight Commander of Ys
@@ -59800,19 +60001,19 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 3215 -- Mouflon Cataphract
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 2605 -- Turan Shah
-#skilledrider 4 -- 3 -> 4
+#skilledrider 5 -- 3 -> 5
 #end
 
 #selectmonster 2588 -- Turan Spahbed
-#skilledrider 4 -- 3 -> 4
+#skilledrider 5 -- 3 -> 5
 #end
 
 #selectmonster 2585 -- Savaran Guard
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 2629 -- Zhayedan Spahbed
@@ -59856,7 +60057,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 1916 -- Veliki Knyaz
-#skilledrider 4 -- 3 -> 4
+#skilledrider 5 -- 3 -> 5
 #end
 
 #selectmonster 2582 -- Turan Horse Archer
@@ -59896,7 +60097,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 1917 -- Knyaz
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 3333 -- Nabaean Camel Rider
@@ -59916,7 +60117,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 2584 -- Savaran Cataphract
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 370 -- Jade Maiden
@@ -59952,7 +60153,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 3 -- Serpent Cataphract
-#skilledrider 3 -- 1 -> 3
+#skilledrider 4 -- 1 -> 4
 #end
 
 #selectmonster 369 -- Nightmare Rider
@@ -59964,7 +60165,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 292 -- Heavy Cavalry
-#skilledrider 3 -- 1 -> 3
+#skilledrider 4 -- 1 -> 4
 #end
 
 #selectmonster 23 -- Knight Commander
@@ -60008,7 +60209,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 1923 -- Malaia Druzhina
-#skilledrider 3 -- 1 -> 3
+#skilledrider 4 -- 1 -> 4
 #end
 
 #selectmonster 3418 -- Wolf Rider
@@ -94639,7 +94840,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #gems 0 1
 #gems 1 1
-#gems 5 1
+#gems 7 1
 #homecom 6983 -- Babalawo
 #end
 
@@ -99651,6 +99852,42 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8252
 #end
 
+#newsite 2522
+#clear
+#name "LA Gondwana Summons"
+#rarity 5
+#level 0
+#path 7
+#look 1
+#homemon 628 -- lion
+#homecom 8022 -- dire tiger
+#homemon 2398 -- ele
+#homemon 6987 -- terror bird
+#homemon 6988 -- rockshell
+#homemon 6989 -- sabre
+#homemon 6990 -- quagg
+#homemon 6991 -- tree
+#homemon 6992 -- earth
+#homemon 6993 -- dark spirit
+#homemon 7511 -- biloko
+#homecom 7270 -- aziza
+#homecom 7509 -- adze
+#homecom 7312 -- impund
+#homecom 7584 -- lion spirit
+#end
+
+#newsite 2523
+#clear
+#name "LA Gondwana Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 3
+#homecom 6994
+#homecom 6996
+#homecom 6997
+#end
+
 
 
 -- END OF NEW SITES
@@ -103397,7 +103634,7 @@ Priests: Average"
 #era 3
 #descr "Gondwana is a land of dry savannah and dense jungle home to gigantic beasts from the distant past. Long ago the Pantokrator hid this land from the world using a great enchantment, however now the spell is fading. Refugees fleeing the ruins of Machaka found their way to the Shrouded Land and have brought the secret of ironworking to the Obas, rulers of Gondwana. Now a new God is awakening, one that will lead the nation back to a world that has forgotten them. The armies of Gondwana use bronze and iron weapons, with the creatures of the plains used as mounts and beasts of war."
 #brief "A nation of bronze and iron armed humans that ride gigantic beasts. Shamans use ritual chants to perform powerful magic."
-#summary "Race: Humans, Gigantic beasts.
+#summary "Race: Humans, Gigantic beasts. Prefers Heat scale +2.
 Military: Light and Medium infantry, Sacred Cavalry and Thunder Beasts.
 Magic: Fire, Air, Nature, Death. Spellsingers and Spirit Dancers, Shamans can perform more powerful rituals.
 Priests: Average"
@@ -103407,6 +103644,10 @@ Priests: Average"
 #startsite "Gondwana Plains"
 #startsite "Benin Palace"
 #startsite "Great Temple"
+
+#futuresite "LA Gondwana Summons"
+#futuresite "LA Gondwana Heroes"
+
 #addreccom 6972 -- Scout
 #addreccom 6973 -- Okakuo
 #addreccom 6974 -- Ezomo
@@ -103504,6 +103745,8 @@ Priests: Average"
 #hero3 6997 -- Idia
 
 #moremagic 1
+#moreheat 1
+#blessbonus 2
 #end
 
 #selectnation 203
@@ -114173,9 +114416,9 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #descr "Rockshells are large creatures covered in a bony shell said to be as hard as stone. A Rockshell will count as twenty normal men when attempting to break the walls of a fortress."
 #researchlevel 2
 #pathlevel 0 2
-#fatiguecost 400
+#fatiguecost 800
 #damage 6988 -- Rockshell
-#nreff 1
+#nreff 503
 #restricted 202 -- Gondwana
 #end
 
@@ -114194,12 +114437,12 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #selectspell 2597
 #copyspell 935 -- Pack of Wolves
 #name "Summon Terror Bird"
-#descr "The caster summons a Terror Bird from the plains of Gondwana. These gigantic predatory birds prey on anything they can kill with their powerful beaks and sharp claws. They are strong in N'um and are sacred to the people of Gondwana."
+#descr "The caster summons a few Terror Birds from the plains of Gondwana. These gigantic predatory birds prey on anything they can kill with their powerful beaks and sharp claws. They are strong in N'um and are sacred to the people of Gondwana."
 #researchlevel 3
 #pathlevel 0 3
-#fatiguecost 300
+#fatiguecost 500
 #damage 6987 -- Terror Bird
-#nreff 1
+#nreff 503
 #onlyatsite 2187 -- Gondwana Plains
 #restricted 202 -- Gondwana
 #end
@@ -114213,9 +114456,9 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #pathlevel 0 2
 #path 1 6
 #pathlevel 1 1
-#fatiguecost 400
+#fatiguecost 600
 #damage 6990 -- Quaggaraffe
-#nreff 1
+#nreff 2
 #onlyatsite 2187 -- Gondwana Plains
 #restricted 202 -- Gondwana
 #end
@@ -114228,7 +114471,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #pathlevel 0 4
 #fatiguecost 1500
 #damage 6987 -- Terror Bird
-#nreff 1002
+#nreff 1006 -- 10+
 #onlyatsite 2187 -- Gondwana Plains
 #restricted 202 -- Gondwana
 #end
@@ -114239,7 +114482,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #descr "The caster summons a Tree Breaker from the plains of Gondwana. These titanic beasts are tremendously strong, and their massive claws can tear through plate armor with ease. When threatened they can enter a blind rage, smashing and crushing everything in their path. They are strong in N'um and are sacred to the people of Gondwana."
 #researchlevel 5
 #pathlevel 0 3
-#fatiguecost 600
+#fatiguecost 400
 #damage 6991 -- Tree Breaker
 #nreff 1
 #onlyatsite 2187 -- Gondwana Plains
@@ -114251,8 +114494,8 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #name "Summon Earthshaker"
 #descr "The caster summons an Earthshaker from the plains of Gondwana. Earthshakers are huge creatures related to the Thunder Beasts, however they are covered in a thick leathery hide that protects them from harm. The sight of an Earthshaker will fill enemies with fear. Their sheer size allows them to trample through enemy lines with ease, however if panicked they may end up trampling friends and enemies alike. They are strong in N'um and are sacred to the people of Gondwana."
 #researchlevel 6
-#pathlevel 0 4
-#fatiguecost 1000
+#pathlevel 0 3
+#fatiguecost 600
 #damage 6992 -- Tree Breaker
 #nreff 1
 #onlyatsite 2187 -- Gondwana Plains
@@ -114261,12 +114504,12 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 
 #selectspell 2602
 #copyspell 1113 -- Reanimation
-#name "Bind Dark Spirit"
-#descr "The caster summons a Dark Spirit from the netherworld and binds it to their service. These evil spirits of the dead plague the people of Gondwana. Dark Spirits carry bows made of shadow that inflict a terrible wasting disease on their targets, and they can drain the life force of the living."
+#name "Bind Dark Spirits"
+#descr "The caster summons a few Dark Spirits from the netherworld and binds it to their service. These evil spirits of the dead plague the people of Gondwana. Dark Spirits carry bows made of shadow that inflict a terrible wasting disease on their targets, and they can drain the life force of the living."
 #researchlevel 3
-#fatiguecost 200
+#fatiguecost 500
 #damage 6993 -- Dark Spirit
-#nreff 1
+#nreff 3
 #restricted 202 -- Gondwana
 #end
 
@@ -114278,7 +114521,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #pathlevel 0 3
 #fatiguecost 2000
 #damage 6993 -- Dark Spirit
-#nreff 1007
+#nreff 1012 -- 15+
 #restricted 202 -- Gondwana
 #end
 
@@ -114293,7 +114536,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #path 1 9
 #pathlevel 1 1
 #fatiguecost 30
-#aoe 1000
+#aoe 1001 -- 4+
 #range 5
 #damage 2147483649  -- Enlarge & Bless
 #precision 100
@@ -114311,7 +114554,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #path 1 9
 #pathlevel 1 2
 #fatiguecost 100
-#aoe 10
+#aoe 15
 #range 10
 #damage 2147483649  -- Enlarge & Bless
 #precision 100
