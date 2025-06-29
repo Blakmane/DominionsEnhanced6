@@ -110467,9 +110467,9 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "The caster summons and binds several Serpent Fiends. Serpent Fiends are bat-winged, serpent-like demons summoned from the Abyss. Their bite is highly venomous."
 #researchlevel 7
 #pathlevel 0 5
-#nreff 1010
+#nreff 1015
 #damage 526  -- Serpent Fiend
-#fatiguecost 3000
+#fatiguecost 2200
 #end
 
 #selectspell 2331
