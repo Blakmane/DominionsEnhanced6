@@ -3797,6 +3797,10 @@
 #rcost 8
 #end
 
+#selectweapon 207 -- Venomous Claw
+#secondaryeffect 51  -- Strong Poison
+#end
+
 #selectweapon 221  -- Fire
 #len 3
 #unrepel
@@ -78852,6 +78856,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 
 #selectmonster 88  -- Fiend of Darkness
 #montag 1054
+#custommagic 36864 100 -- 100% DB
 #end
 
 #selectmonster 89  -- Warlock
@@ -79818,14 +79823,17 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 636  -- Basilisk
-#custommagic 45056 100 -- 150%DNB
-#custommagic 45056 50 -- 150%DNB
+
 #end
 
 #selectmonster 637  -- Draco Lion
 #custommagic 45056 100 -- 100%DNB
 #custommagic 45056 50 -- 100%DNB
 #twiceborn 6644 -- Wight Beast
+#end
+
+#selectmonster 638  -- Spine devil
+#weapon 68
 #end
 
 #selectmonster 639  -- Kraken King
@@ -79844,7 +79852,6 @@ Initiates of the Deep can be recruited in any land fort."
 #mr 5
 #att 9
 #end
-
 
 #selectmonster 659  -- Grotesque
 #custommagic 45056 200 -- 100%DNB
@@ -80335,6 +80342,16 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #selectmonster 793  -- Prince General
 #gcost 350
 #magicskill 9 1
+#end
+
+#selectmonster "Succubus"
+#shapechange "Incubus"
+#magicskill 8 1
+#end
+
+#selectmonster "Incubus"
+#shapechange "Succubus"
+#magicskill 8 1
 #end
 
 #selectmonster 938 -- la tc barb horse
@@ -110394,7 +110411,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 6
 #pathlevel 0 3
 #damage 7892
-#fatiguecost 1200
+#fatiguecost 900
 #end
 
 #selectspell 2327
@@ -110438,9 +110455,9 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1391 -- Spine Devil
 #name "Infernal Horde"
 #descr "The caster summons and binds several Spine Devils. Spine Devils are spine-covered, wingless demons that fight with two venomous claws. The spines covering their bodies are poisonous and anyone attacking them with short weapons may get poisoned."
-#researchlevel 6
+#researchlevel 5
 #pathlevel 0 4
-#nreff 1006
+#nreff 1011
 #fatiguecost 3000
 #end
 
@@ -110450,7 +110467,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "The caster summons and binds several Serpent Fiends. Serpent Fiends are bat-winged, serpent-like demons summoned from the Abyss. Their bite is highly venomous."
 #researchlevel 7
 #pathlevel 0 5
-#nreff 1005
+#nreff 1010
 #damage 526  -- Serpent Fiend
 #fatiguecost 3000
 #end
@@ -110465,7 +110482,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 1 3
 #nreff 1
 #damage 7826
-#fatiguecost 8800
+#fatiguecost 7700
 #end
 
 #selectspell 2333
@@ -110475,7 +110492,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 5
 #pathlevel 0 2
 #pathlevel 1 1
-#nreff 3034
+#nreff 3044
 #fatiguecost 1500
 #end
 
@@ -110489,7 +110506,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 6
 #pathlevel 0 3
 #pathlevel 1 1
-#fatiguecost 3500
+#fatiguecost 2500
 #damage -10  -- Good Crossbreed
 #end
 
@@ -114484,10 +114501,13 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 
 #selectspell 2620
 #copyspell 1398 -- Bind Devil
-#name "Pact of Blood and Fire"
-#descr "With the creation of the Demonbred the Abysians have grown ever closer to the Inferno. The ancient practice of blood sacrifice has been renewed and pacts of blood and fire are made with infernal forces. The caster sacrifices several blood slaves to contact and bind a Devil. Devils are infernal beings of great strength. They are born in the fires of the Inferno and are impervious to heat and flame. Their glowing bodies radiate heat and bat-like wings grow from their shoulders. Devils are armed with a trident and their barbed tails can sting opponents in close combat."
-#researchlevel 0
-#pathlevel 1 1
+#name "Pact of Infernal Blood"
+#descr "With the creation of the Demonbred the Abysians have grown ever closer to the Inferno. The ancient practice of blood sacrifice has been renewed and pacts of blood are frequently made with infernal forces. The caster sacrifices several blood slaves to contact and bind several Devils. Devils are infernal beings of great strength. They are born in the fires of the Inferno and are impervious to heat and flame. Their glowing bodies radiate heat and bat-like wings grow from their shoulders. Devils are armed with a trident and their barbed tails can sting opponents in close combat."
+#researchlevel 2
+#pathlevel 0 2
+#pathlevel 1 0
+#fatiguecost 800
+#nreff 2
 #restricted 63 -- MA Abysia
 #end
 
@@ -122553,6 +122573,7 @@ All effects scale with friendly Dominion."
 #name "Bind House Imps"
 #descr "When the Grand Masters of the House of Fiery Justice struck a bargain with infernal forces Marignon became dependent on devils to survive. The Infernal Lords demanded continued sacrifice and devil-worship became part of the faith. Now Imps are bound as jesters and servants and most noble families have their own imp familiar. With this spell the caster barters a few blood slaves for the use of fiery house imps from a local noble. Imps are small and weak devils, but this kind is surrounded by hot flames and can throw darts of fire."
 #researchlevel 0
+#nreff 1008
 #restricted 103 -- LA Marignon
 #end
 
@@ -127959,12 +127980,12 @@ All effects scale with friendly Dominion."
 #end
 
 #selectspell 3612
-#name "10 Good Crossbreeds"
+#name "20 Good Crossbreeds"
 #school -1
 #researchlevel 0
 #effect 10001
 #damage -10  -- Good Crossbreeds
-#nreff 10
+#nreff 20
 #end
 
 #selectspell 3613
@@ -137387,25 +137408,93 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #pathlevel 0 6
 #end
 
+--- Light's generic blood buffs
+
+#selectspell 252 -- Bleed
+#aoe 1
+#end
+
+#selectspell 1379 -- Blood Burst
+#damage 1015
+#end
+
+#selectspell 1380 -- Blood Heal
+#casttime 75
+#end
+
+#selectspell 1384 -- Bind Shadow Imp
+#fatiguecost 300
+#end
+
 #selectspell 1386 -- Bind Fiery Imps
 #notfornation 103
---#nreff 1002
+#nreff 1007
+#end
+
+#selectspell 1387 -- Blood boil
+#fatiguecost 30
+#range 5025
 #end
 
 #selectspell 1389 -- Agony
 #notfornation 116
 #end
 
+#selectspell 1390 -- Banish Demon
+#range 40
+#end
+
+#selectspell 1391 -- Bind Spine Devils
+#name "Bind Spine Devils"
+#fatiguecost 500
+#nreff 2
+#descr "The caster sacrifices several blood slaves to contact and bind several Spine Devils. Spine Devils are spine-covered, wingless demons that fight with two venomous claws and a barbed tail. The spines covering their bodies are poisonous and anyone attacking them with short weapons may get poisoned."
+#end
+
 #selectspell 1392 -- Bind Fiend
+#path 0 8
+#pathlevel 0 1
+#path 1 5
+#pathlevel 1 1
 #notfornation 185 -- Albion
 #end
 
 #selectspell 1393 -- Bind Bone Fiends
---#nreff 1002
+#nreff 1008
+#researchlevel 1
 #end
 
 #selectspell 1398 -- Bind Devil
-#notfornation 63 -- MA Abysia
+#fatiguecost 400
+#path 0 8
+#pathlevel 0 1
+#path 1 0
+#pathlevel 1 1
+#end
+
+#selectspell 1399 -- Bind Frost Fiend
+#fatiguecost 500
+#path 0 8
+#pathlevel 0 1
+#path 1 2
+#pathlevel 1 1
+#end
+
+#selectspell 1406 -- Bind Storm Demon
+#path 0 8
+#pathlevel 0 1
+#path 1 1
+#pathlevel 1 1
+#fatiguecost 1000
+#end
+
+#selectspell 1414 -- Bind Demon Knight
+#researchlevel 4
+#path 0 8
+#pathlevel 0 1
+#path 1 3
+#pathlevel 1 1
+#fatiguecost 1100
 #end
 
 #selectspell 1400 -- Cross breeding
@@ -137421,11 +137510,12 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1402 -- Serpent Fiend
-#researchlevel 3
 #end
 
-#selectspell 1404 -- Hell Ride
-#fatiguecost 1500
+#selectspell 1405 -- Hellfire
+#range 5035
+#damage 1010
+#spec 160
 #end
 
 #selectspell 1418 -- Rain of Toads
@@ -137437,26 +137527,34 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1412 -- Bind Succubus
+#descr "The caster sacrifices several blood slaves to contact and bind a Succubus, a demonic lover with the ability to shapeshift. They can transform from a beautiful naked woman to a hansome nude man, both with leathery bat wings. They are able to enter the dreams of men and women to corrupt their souls.They can seduce an enemy commander and fly them back to their master where the seduced will serve until they die. Seducing mortals may result in a Cambion Progeny."
 #end
 
+#selectspell 1459-- Bind Incubus
+#school -1
+#end
+
+#selectspell 1415 -- Dark Vines
+#nreff 3
+#end
+
+#selectspell 1416 -- Send lesser horror
+#pathlevel 1 2
+#end
 
 #selectspell 1422 -- Infernal Disease
-#fatiguecost 1000
+#fatiguecost 1500
 #end
 
-#selectspell 1444 -- Vampire Lord
-#fatiguecost 9900
-#end
-
-#selectspell 1425 -- Blood Rite
-#researchlevel 6
-#fatiguecost 2200
-#nreff 2
+#selectspell 1423 -- Ritual of Five Gates
+#fatiguecost 2500
+#pathlevel 0 4
 #end
 
 #selectspell 1445 -- Improved Cross Breeding
 #descr "Hundreds of different creatures from mice to humans are magically cross-bred and grown in an effort to produce a powerful monster. Most offspring die early, but some survive and are bound to serve their creator. With this improved technique the caster is guaranteed to breed some powerful creatures."
-#fatiguecost 2500
+#fatiguecost 2000
+#nreff 3044
 #nextspell 3612
 #end
 
@@ -137465,6 +137563,35 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #details "Up to 5 random enemy units inside the dominion will be offered to sell their souls. Morale save vs 10 + dominion to refuse (4 easier to refuse if commander has fear). Chance for enemy province to be attacked is 2% per Dominion candle. Pretender receives 3-10 demonic troops per month plus demonic leader."
 #researchlevel 8
 #end
+
+#selectspell 1448 -- Forces of Darkness
+#fatiguecost 3500
+#end
+
+#selectspell 1451 -- Infernal Forces
+#descr "The caster summons and binds many Devils and Imps. Devils are infernal beings of great strength. They are born in the fires of the Inferno and are impervious to heat and flame. Their glowing bodies radiate heat and bat-like wings grow from their shoulders. They are armed with a trident and their barbed tail can sting opponents in close combat."
+#fatiguecost 3500
+#end
+
+#selectspell 1452 -- Infernal Tempest
+#fatiguecost 2500
+#end
+
+#selectspell 1453 -- Forces of Ice
+#fatiguecost 3500
+#end
+
+#selectspell 1454 -- Infernal Crusade
+#fatiguecost 3500
+#end
+
+#selectspell 1455 -- Send horror
+#range 7
+#pathlevel 0 2
+#pathlevel 1 2
+#end
+
+
 
 #selectspell 255 -- Sow Dragon Teeth
 #spec 8388608 -- uwok
@@ -142553,7 +142680,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectitem 348 -- Soul Contract
-#itemcost1 300
+#itemcost1 266
+#descr "The Blood mage sacrifices a great number of slaves to get the attention of Infernal powers. When contact is made, an Infernal Lord offers a contract, to be signed in blood. Whoever signs the contract promises his soul, to be collected at the time of his death, to the Infernal Lord. In exchange for this fair and valuable consideration, the signatory will, for as long as he lives, receive one bound devil each month from the Infernal Lord."
 #noinanim
 #nodemon
 #noundead
