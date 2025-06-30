@@ -4510,7 +4510,11 @@
 #magicarmor
 #end
 
-
+#newarmor 568 -- Jeweled Hauberk
+#copyarmor 101 -- bronze hauberk
+#name "Jeweled Hauberk"
+#enc 4
+#end
 
 -- END OF NEW ARMORS
 
@@ -8665,6 +8669,7 @@
 #descr "An Erbuke is a magical being found in the lands of Tartary. They have the appearance of a wise and benign old man with the body of a snake instead of legs. Erbuke are learned and wise and are skilled at magical research. They are also known as the Snake Kings due to their powers over snakes and their kin. An Erbuke can summon 2 additional Lamias with summoning spells and is accompanied by poisonous serpents in battle. They are skilled in the magics of nature and water and are sacred to the tribes of Tartary."
 #gcost 0
 #rcost 0
+#enc 3
 #magicskill 6 2
 #magicskill 2 1
 #researchbonus 8
@@ -16807,7 +16812,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #prot 5
 #size 4
 #str 12
-#enc 4
+#enc 3
 #att 11
 #def 13
 #prec 12
@@ -17127,6 +17132,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #str 17
 #hp 35
 #armor 251 -- leather barding
+#nothrowoff
+#bravemount 100
 #end
 
 #newmonster 6968
@@ -17402,6 +17409,9 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #xploss 100
 #homeshape 6969
 #nametype 144
+#nothrowoff
+#bravemount 100
+#smartmount 100
 #end
 
 
@@ -17426,7 +17436,6 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mor 13
 #mr 11
 #ap 24
-#enc 4
 #prec 8
 #mapmove 22
 #weapon 357  -- Light Lance
@@ -25270,10 +25279,11 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #magicskill 3 3
 #magicskill 4 3
 #magicskill 6 3
+#magicskill 7 3
 #magicskill 9 3
 #holy
 #nowish
-#researchbonus 25
+#researchbonus 15
 #spreaddom 1
 #fireres 0
 #maxage 4000
@@ -25283,6 +25293,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 491  -- Lesser Heads
 #weapon 491  -- Lesser Heads
 #weapon 489  -- Immortal Head
+#domsummon 1319 -- Naga Warrior, ~5 a turn at dom10
 #end
 
 #newmonster 7338
@@ -31869,6 +31880,10 @@ While in the form of an old man, all paths are increased and allows the use of N
 #name "Naga Warrior"
 #descr "Nagas are semi-divine serpent beings from the Netherworld of Patala. They are sacred, can see in the dark and breathe underwater. They are sprung from the Underworld and are skilled in metalworking and gemcrafting. Naga warriors don gilded armor set with gleaming jewels that shine in the dark. This Naga Warrior has been drawn from the Underworld by the presence of Shesanaga."
 #naga
+#enc 3
+#cleararmor
+#armor 568 -- Jeweled Hauberk
+#armor 1 -- Buckler
 #ownsmonrec 7337
 #end
 
@@ -31879,6 +31894,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #name "Nagayathi"
 #descr "Nagayathis are sages of considerable power who live in the Underworld. They often take the shape of a Yaksha when traveling in the sunlit world. If killed in Yaksha shape, they revert to their serpent form and fight on. Nagayathis in Naga shape have their skill in Water magic increased. This Nagayathi has been drawn from the Underworld by the presence of Shesanaga."
 #naga
+#enc 3
 #magicskill 2 1
 #magicskill 3 2
 #magicskill 4 1
@@ -52959,6 +52975,9 @@ Cost 56 RP."
 #holy
 #weapon 397  -- Kick
 #twiceborn 6644 -- Wight Beast
+#nothrowoff
+#bravemount 100
+#smartmount 100
 #end
 
 
@@ -52986,6 +53005,9 @@ Cost 56 RP."
 #holy
 #weapon 397  -- Kick
 #twiceborn 6644 -- Wight Beast
+#nothrowoff
+#bravemount 100
+#smartmount 100
 #end
 
 #newmonster 9053 -- unit corider
@@ -57386,6 +57408,10 @@ Cost 50 recruitment points."
 #descr "Maginagas are semi-divine serpent beings of the underground realm of Idalmunon, known for their protective nature. Unlike the Nagas of Patala, they are highly resistant to fire, but cannot entrance with their gaze. They are sacred, can see in the dark and breathe underwater. They are sprung from the Underworld and are skilled in metalworking and gemcrafting. Maginagas are only malevolent to humans when they have been mistreated. Maginaga warriors don gilded armor set with gleaming jewels that shine in the dark."
 #fireres 15
 #gcost 0
+#enc 3
+#cleararmor
+#armor 568 -- jeweled hauberk
+#armor 1 -- buckler
 #clearweapons
 #weapon 141 -- Poison
 #weapon 10 -- Falchion
@@ -57399,11 +57425,12 @@ Cost 50 recruitment points."
 #descr "Lakandanum are the rulers of the Maginaga, semi-divine serpent beings of the underground realm of Idalmunon known for their protective nature. Unlike the Nagas of Patala, they are highly resistant to fire, but cannot entrance with their gaze. They are capable leaders and powerful mages. They are sprung from the Underworld and are skilled in metalworking and gemcrafting. Maginagas are only malevolent to humans when they have been mistreated. They can change their form into that of a strikingly beautiful human few would think of harming."
 #fireres 15
 #gcost 0
+#enc 3
 #expertleader
 #female
 #clearweapons
 #weapon 141 -- Poison
-#weapon 10 -- Falchion
+#weapon 92 -- Fist
 #weapon 239 -- Fangs
 #shapechange 8945
 #end
@@ -57416,6 +57443,7 @@ Cost 50 recruitment points."
 #fireres 15
 #gcost 0
 #awe 1
+#enc 3
 #expertleader
 #female
 #shapechange 8944
@@ -81638,6 +81666,76 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #itemslots 991750 -- Full Slots
 #end
 
+#selectmonster 1319 -- Naga Warrior
+#enc 3
+#cleararmor
+#armor 568 -- jeweled hauberk
+#armor 1 -- buckler
+#end
+
+#selectmonster 1320 -- Nagaraja
+#okmagicleader
+#enc 3
+#cleararmor
+#armor 568 -- jeweled hauberk
+#armor 1 -- buckler
+#end
+
+#selectmonster 1323 -- Nagaraja human
+#okmagicleader
+#enc 3
+#cleararmor
+#armor 568 -- jeweled hauberk
+#armor 1 -- buckler
+#end
+
+#selectmonster 1318 -- naga
+#enc 3
+#end
+
+#selectmonster 1321 -- nagarishi
+#enc 3
+#end
+
+#selectmonster 1322 -- nagini
+#okmagicleader
+#enc 3
+#end
+
+#selectmonster 1324 -- nagarishi
+#enc 3
+#end
+
+#selectmonster 1325 -- nagini
+#okmagicleader
+#enc 3
+#end
+
+#selectmonster 2476 -- naga chief
+#okmagicleader
+#enc 3
+#end
+
+#selectmonster 3874 -- nagasiddha
+#okmagicleader
+#enc 3
+#end
+
+#selectmonster 3875 -- nagasiddha
+#okmagicleader
+#enc 3
+#end
+
+#selectmonster 4010 -- nagasiddha hero
+#okmagicleader
+#enc 3
+#end
+
+#selectmonster 4011 -- nagasiddha hero
+#okmagicleader
+#enc 3
+#end
+
 #selectmonster 1326  -- Guhyaka
 #descr "A Guhyaka is a lowly Yaksha warrior. They are semi-divine beings gifted with Celestial Splendor that strikes lowly beings with awe. Their mystical powers have made them rulers over the Bandar Log and they are sacred to the monkey people. Guhyakas are armed with spears. Guhyaka are supernaturally skilled warriors and can even deflect arrows."
 #end
@@ -99907,6 +100005,81 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 
+#newsite 2524
+#name "LA Patala Summons"
+#level 0
+#rarity 5
+#path 4
+#look 0
+#homemon 3009 -- buffalo
+#homemon 1140 -- tiger
+#homemon 2398 -- elephant
+#homemon 1332 -- apsara 3
+#homemon 3666 -- angiri 3
+#homemon 7535 -- asura 3
+#homemon 1335 -- gandharva 5
+#homemon 3665 -- kimpurusha 5
+#homemon 3667 -- marut 6
+#homemon 7547 -- kalakanjaka (wine)
+#end
+
+#newsite 2525
+#name "LA Patala Summons Continued"
+#level 0
+#rarity 5
+#path 4
+#look 0
+#homecom 1330 -- yakshini 4
+#homecom 3668 -- vidyadhara 4
+#homecom 1329 -- yaksha 4
+#homecom 7536 -- asurendra (wine)
+#homecom 1331 -- kinara 6
+#homecom 1337 -- siddha 7
+#homecom 1713 -- devala 8
+#homecom 1336 -- devata 8
+#homecom 7337 -- primordial naga 9
+#homecom 1906 -- rudra 9
+--#homecom 7362 -- gandharva ench5
+#end
+
+#newsite 2526
+#name "LA Patala Blood & Death Summons"
+#level 0
+#rarity 5
+#path 8
+#look 1
+#homemon 1764 -- gana 2
+#homemon 7538 -- preta 3
+#homemon 1765 -- vetala 5
+#homemon 1736 -- rakshasa b1
+#homemon 1742 -- praghasa b2
+#homemon 1741 -- asrapa b3
+#homemon 1737 -- rakshasa warrior b4
+#homemon 1743 -- sandhya b5
+#homecom 1714 -- dakini b6
+#homecom 1744 -- samani b7
+#homemon 1767 -- danava b8
+#homemon 3663 -- daitya b8
+#homecom 3636 -- mandeha b8
+#homecom 3635 -- mandeha
+#homecom 1748 -- mandeha
+#end
+
+#newsite 2527
+#name "LA Patala Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 3
+#homecom 8245 -- Balabita, Golden Naga
+#homecom 8211 -- Black Terror
+#homecom 8246 -- Katidata, Ancient Ape
+#homecom 1585  -- Fallen
+#homecom 8160 -- Meditating sage
+#homecom 4010 -- naggasidha
+#homecom 4057 -- markata mystic
+#end
+
 
 -- END OF NEW SITES
 
@@ -106676,6 +106849,8 @@ Bless bonuses: Poison Resistance +10"
 #hero3 8246 -- Katidata, Ancient Ape
 #hero4 1585  -- Fallen
 #hero5 8160 -- Meditating sage
+#hero6 4057 -- markata mystic
+#hero7 4010 -- naggasidha
 #uwbuild 1
 #delgod 246  -- Freak Lord
 #addgod 8345 -- Markata Master
@@ -106694,8 +106869,13 @@ Bless bonuses: Poison Resistance +10"
 #startunitnbrs1 40
 #startunittype2 1121  -- Atavi Archer
 #startunitnbrs2 40
-#addreccom 7645 -- Nagayathi
-#addrecunit 7644 -- Naga Warrior
+--#addreccom 7645 -- Nagayathi
+--#addrecunit 7644 -- Naga Warrior
+
+#futuresite "LA Patala Summons"
+#futuresite "LA Patala Summons Continued"
+#futuresite "LA Patala Blood & Death Summons"
+#futuresite "LA Patala Heroes"
 #end
 
 #selectnation 107 -- LA Gath
@@ -118203,7 +118383,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Shesanaga"
 #descr "The caster ventures deep into the caverns below Patala to entreat Shesanaga for aid. One of the primal beings of creation, Shesanaga is said to the be the progenitor of all Naga. Appearing as a great multi-headed serpent it is wise beyond imagining and its many heads all sing the praises of the Awakening God. Shesanaga is immortal and can regenerate even deadly wounds. This spell will have no effect if Shesanaga is already on the surface world."
 #school 0
-#researchlevel 9
+#researchlevel 8
 #path 0 2
 #path 1 3
 #pathlevel 0 4
@@ -132903,9 +133083,9 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 
 #selectspell 4044
 #name "Shesanaga"
-#descr "The caster ventures deep into the caverns below Patala to entreat Shesanaga for aid. One of the primal beings of creation, Shesanaga is said to the be the progenitor of all Naga. Appearing as a great multi-headed serpent it is wise beyond imagining and its many heads all sing the praises of the Awakening God. Shesanaga is immortal and can regenerate even deadly wounds. When Shesanaga enters the mortal realm Naga will emerge from the Underworld and can be recruited to the service of the Awakening God. This spell will have no effect if Shesanaga is already on the surface world."
+#descr "The caster ventures deep into the caverns below Patala to entreat Shesanaga for aid. One of the primal beings of creation, Shesanaga is said to the be the progenitor of all Naga. Appearing as a great multi-headed serpent it is wise beyond imagining and its many heads all sing the praises of the Awakening God. Shesanaga is immortal and can regenerate even deadly wounds. This spell will have no effect if Shesanaga is already on the surface world."
 #school 0
-#researchlevel 9
+#researchlevel 7
 #path 0 2
 #path 1 3
 #pathlevel 0 4
@@ -132914,7 +133094,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #fatiguecost 6000
 #damage 7337 -- Shesanaga
 #onlygeosrc 4096  -- Cave
-#restricted 108 -- MA Bandar
+#restricted 108 -- LA Patala
 #end
 
 #selectspell 4045
