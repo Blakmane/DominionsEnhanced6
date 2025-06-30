@@ -82462,6 +82462,20 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #montag 1058
 #end
 
+#selectmonster 1745 -- Asara
+#spr1 "vanilla/asara1.png"
+#spr2 "vanilla/asara2.png"
+#descr "The Asara is a Rakshasa, a demon-ogre of Lanka. It has a monstrous appearance: One eye, elephantine ears, short legs and long ape-like arms. It is incredibly strong and fights with great club and javelin. Asaras are sacred to the monkey people."
+#clearweapons
+#weapon 165 -- great club
+#weapon 21 -- javelins
+#end
+
+#selectmonster 1746 -- Anusara
+#ap 25
+#mapmove 24
+#end
+
 #selectmonster 1751  -- EA Sidhe Warrior
 #rpcost 18
 #gcost 10022
@@ -100081,6 +100095,56 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 
+#newsite 2528
+#name "EA Lanka Summons"
+#level 0
+#rarity 5
+#path 8
+#look 2
+#homemon 3009 -- buffalo
+#homemon 1140 -- tiger
+#homemon 2398 -- elephant
+#homemon 7535 -- asura 3
+#homemon 7547 -- kalakanjaka (wine)
+#homemon 1764 -- gana 2
+#homemon 7538 -- preta 3
+#homemon 1765 -- vetala 5
+#homemon 1736 -- rakshasa b1
+#homemon 1742 -- praghasa b2
+#homemon 1741 -- asrapa b3
+#homemon 1737 -- rakshasa warrior b4
+#homemon 1743 -- sandhya b5
+#homemon 1767 -- danava b8
+#homemon 3663 -- daitya b8
+#end
+
+#newsite 2529
+#name "EA Lanka Summons Continued"
+#level 0
+#rarity 5
+#path 8
+#look 2
+#homecom 7536 -- asurendra (wine)
+#homecom 1714 -- dakini b6
+#homecom 1744 -- samani b7
+#homecom 3636 -- mandeha b8
+#homecom 3635 -- mandeha
+#homecom 1748 -- mandeha
+#end
+
+#newsite 2530
+#name "EA Lanka Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 3
+#homecom 1914
+#homecom 8161
+#homecom 8162
+#homecom 8163
+#end
+
+
 -- END OF NEW SITES
 
 #selectsite 1
@@ -105028,6 +105092,10 @@ Priests: Average"
 #startunitnbrs1 20
 #startunittype2 1121  -- Atavi Archer
 #startunitnbrs2 40
+
+#futuresite "EA Lanka Summons"
+#futuresite "EA Lanka Summons Continued"
+#futuresite "EA Lanka Heroes"
 #end
 
 #selectnation 23 -- EA Yomi
@@ -136167,7 +136235,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 578 -- Sandybhalas
-#nreff 5
+#nreff 4
 #end
 
 #selectspell 579 -- Summon Dakini
