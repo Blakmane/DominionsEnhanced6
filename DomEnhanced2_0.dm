@@ -25379,9 +25379,12 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copystats 1507  -- Dis
 #spr1 "magicenhanced/eehelhird.tga"
 #spr2 "magicenhanced/eehelhird2.tga"
+#unmountedspr1 "magicenhanced/un_eehelhird.tga"
+#unmountedspr2 "magicenhanced/un_eehelhird2.tga"
 #name "Dishirding"
 #descr "The Dishird are a sacred band of elite Valkyries that reside in Hel and rarely leave their shadowy realm. Disir were blessed by a dead god in ages past and fly on magical steeds from Hel. Disir wear magical scale mail armor."
 #mountedhumanoid
+#skilledrider 7
 #end
 
 #newmonster 7342
@@ -25818,8 +25821,9 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #expertundeadleader
 #unique
 #magicskill 0 2
-#magicskill 1 2
+#magicskill 1 1
 #magicskill 5 2
+#magicskill 7 2
 #end
 
 #newmonster 7365
@@ -100144,6 +100148,36 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8163
 #end
 
+#newsite 2531
+#name "EA Helheim Summons"
+#level 0
+#rarity 5
+#path 5
+#look 6
+#homemon 694 -- bear
+#homemon 1309 -- jotun woof
+#homemon 2190 -- draug
+#homemon 261 -- valk
+#homemon 7341 -- dishirding
+#homecom 7319 -- draugherse
+#homecom 7329 -- draugadrott
+#homecom 7363 -- brunhilde
+#homecom 7253 -- female aesir
+#homecom 7254 -- male aesir
+#homecom 7273 -- nidhogg
+#end
+
+#newsite 2532
+#name "EA Helheim Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 3
+#homecom 2473
+#homecom 8151
+#homecom 8152
+#end
+
 
 -- END OF NEW SITES
 
@@ -105009,6 +105043,9 @@ Priests: Average"
 #addgod 8348 -- First Valkyrie
 #addgod 8349 -- Great Gull
 #cheapgod20 8348 -- First Valkyrie
+
+#futuresite "EA Helheim Summons"
+#futuresite "EA Helheim Heroes"
 #end
 
 #selectnation 33 -- EA Niefelheim
@@ -117750,14 +117787,16 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #selectspell 2810
 #copyspell 1408 -- Blood Fecundity
 #name "Disablot"
-#descr "In Helheim the Disablot is a ritual of sacrifice to the Disir and the spirits of the land to enhance the coming harvest. It is an ancient rite involving many priestesses and is surrounded by secrecy. A sacred meal is eaten along with blessed mead and at the climax several thralls are sacrificed. Their blood is considered to contain special powers and is sprinkled on the statues of the gods, on the walls and on the participants. For as long as the Disablot lasts fertility and prosperity in the province will be increased. This enchantment will last until the turning of the year."
+#descr "In Helheim the Disablot is a sacred ritual to the Disir and the spirits of the land to enhance the coming harvest. A sacred meal is eaten along with blessed mead and altars are adorned with symbols of fertility and abundance in honor of the Disir. It is a time for laughter and merriment, as well as reflection and gratitude for the blessings bestowed. For as long as the Disablot lasts fertility and prosperity in the province will be increased. This enchantment will last until the turning of the year."
 #details "Growth +2."
 #researchlevel 3
+#school 5 -- thaum
+#path 0 7
 #pathlevel 0 1
 #path 1 9
-#pathlevel 1 2
+#pathlevel 1 1
 #effect 10140
-#fatiguecost 600
+#fatiguecost 200
 #restricted 31 -- EA Helheim
 #end
 
@@ -117822,14 +117861,14 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 935 -- Pack of Wolves
 #name "Call the Dishird"
 #descr "The caster invokes long dead Gods and calls the Dishird to serve him. The Dishird are a sacred band of elite Valkyries that reside in Hel and rarely leave their shadowy realm. Disir were blessed by a dead god in ages past and fly on magical steeds from Hel."
-#researchlevel 7
+#researchlevel 6
 #path 0 5
 #pathlevel 0 4
 #path 1 1
 #pathlevel 1 2
 #damage 7341 -- Dishird
 #nreff 505
-#fatiguecost 1500
+#fatiguecost 1200
 #restricted 31 -- EA Helheim
 #end
 
@@ -117856,7 +117895,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #school 0
 #researchlevel 8
 #path 0 5
-#path 1 8
+#path 1 7
 #pathlevel 0 5
 #pathlevel 1 1
 #effect 10093
