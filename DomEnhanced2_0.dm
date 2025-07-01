@@ -3576,6 +3576,14 @@
 #magic
 #end
 
+#newweapon 1872 -- Scarab Fire
+#copyweapon 48 -- slamander fire flare
+#name "Scarab Fire"
+#ammo 1003
+#dmg 8
+#halfstr
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -3747,6 +3755,14 @@
 #nratt -1
 #ammo 30
 #secondaryeffect 1679 -- Shockwave
+#end
+
+#selectweapon 802
+#clear
+#copyweapon 434 -- Banefire Crossbow item
+#name "Banefire Crossbow"
+--#ammo 24
+#secondaryeffectalways 432 -- Area Decay
 #end
 
 #selectweapon 874 -- Pillar of Truths
@@ -53062,16 +53078,83 @@ Cost 56 RP."
 
 
 
+#newmonster 9055 -- la ctis cityguard
+#copystats 166
+#spr1 "vanilla/lactiscityguard1.tga"
+#spr2 "vanilla/lactiscityguard2.tga"
+#wastesurvival
+#end
 
---#newmonster 8684 -- LA C'tis Hierodule
---#copystats 510
---#spr1 "vanilla/lactishierodule1.tga"
---#spr2 "vanilla/lactishierodule2.tga"
---#end
+#newmonster 9056 -- la ctis commander
+#copystats 163
+#spr1 "vanilla/lactiscommander1.tga"
+#spr2 "vanilla/lactiscommander2.tga"
+#wastesurvival
+#end
 
---#selectnation 113
---#addreccom 8684
---#end
+#newmonster 9057 -- la ctis empoisoner
+#copystats 502
+#spr1 "vanilla/lactisempoisoner1.tga"
+#spr2 "vanilla/lactisempoisoner2.tga"
+#wastesurvival
+#end
+
+#newmonster 9058 -- la ctis hierodule
+#copystats 510
+#spr1 "vanilla/lactishierodule1.tga"
+#spr2 "vanilla/lactishierodule2.tga"
+#wastesurvival
+#end
+
+#newmonster 9059 -- la ctis highpriest
+#copystats 9
+#spr1 "vanilla/lactishighpriest1.tga"
+#spr2 "vanilla/lactishighpriest2.tga"
+#wastesurvival
+#end
+
+#newmonster 9060 -- la ctis king
+#copystats 177
+#spr1 "vanilla/lactisking1.tga"
+#spr2 "vanilla/lactisking2.tga"
+#wastesurvival
+#end
+
+#newmonster 9061 -- la ctis light
+#copystats 167
+#spr1 "vanilla/lactislight1.tga"
+#spr2 "vanilla/lactislight2.tga"
+#wastesurvival
+#end
+
+#newmonster 9062 -- la ctis lord
+#copystats 162
+#spr1 "vanilla/lactislord1.tga"
+#spr2 "vanilla/lactislord2.tga"
+#wastesurvival
+#end
+
+#newmonster 9063 -- la ctis medium
+#copystats 4062
+#spr1 "vanilla/lactismedium1.tga"
+#spr2 "vanilla/lactismedium2.tga"
+#wastesurvival
+#end
+
+#newmonster 9064 -- la ctis militia
+#copystats 168
+#spr1 "vanilla/lactismilitia1.tga"
+#spr2 "vanilla/lactismilitia2.tga"
+#wastesurvival
+#end
+
+#newmonster 9065 -- la ctis pslinger
+#copystats 503
+#spr1 "vanilla/lactispslinger1.tga"
+#spr2 "vanilla/lactispslinger2.tga"
+#wastesurvival
+#end
+
 
 
 -- END OF NEW MONSTERS (Skip 8700~8818, 8900~9000 and 9600~9650)
@@ -80170,6 +80253,10 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #custommagic 6912 10 -- AWSD
 #end
 
+#selectmonster 691 -- Tomb Priest
+#descr "Tomb Priests are the mummies of ancient High Priests brought from their tombs and given false life by the Sauromancers. Their priestly powers give them command over the living as well as the dead. Tomb Priests can reanimate the dead." -- typo fix
+#end
+
 #selectmonster 694  -- Great Bear
 #clearweapons
 #weapon 236  -- Claw
@@ -81331,9 +81418,54 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #plant
 #end
 
+#selectmonster 3918 -- la ctis crossbow
+#spr1 "vanilla/lactiscrossbow1.tga"
+#spr2 "vanilla/lactiscrossbow2.tga"
+#wastesurvival
+#end
+
+#selectmonster 3854 -- la ctis falch
+#spr1 "vanilla/lactisfalch1.tga"
+#spr2 "vanilla/lactisfalch2.tga"
+#wastesurvival
+#end
+
+#selectmonster 3855 -- la ctis halb
+#spr1 "vanilla/lactishalb1.tga"
+#spr2 "vanilla/lactishalb2.tga"
+#wastesurvival
+#end
+
+#selectmonster 3856 -- la ctis heavy
+#spr1 "vanilla/lactisheavy1.tga"
+#spr2 "vanilla/lactisheavy2.tga"
+#wastesurvival
+#end
+
+#selectmonster 3856 -- la ctis heavyb
+#spr1 "vanilla/lactisheavyb1.tga"
+#spr2 "vanilla/lactisheavyb2.tga"
+#wastesurvival
+#end
+#selectmonster 2314 -- la ctis reborn
+#spr1 "vanilla/lactisreborn1.tga"
+#spr2 "vanilla/lactisreborn2.tga"
+#wastesurvival
+#end
+
+#selectmonster 1036 -- la ctis sauromancer
+#spr1 "vanilla/lactissauromancer1.tga"
+#spr2 "vanilla/lactissauromancer2.tga"
+#wastesurvival
+#end
+
+
 #selectmonster 1095  -- Keeper of the Tombs
-#descr "The Keeper of the Tombs is a mage-priest of the Sacred Tombs. They serve the Tomb Kings and the Sauromancers and keep the green flames of the Bane Fires blazing in the dark halls of the Sacred Tombs. They are served by flickering wisps of Bane Fire that will afflict their enemies with a withering light."
+#spr1 "vanilla/lactiskeeperofthetombs1.tga"
+#spr2 "vanilla/lactiskeeperofthetombs2.tga"
+#descr "The Keeper of the Tombs is a mage-priest of the Sacred Tombs. They serve the Tomb Kings and the Sauromancers and keep the green flames of the Bane Fires blazing in the dark halls of the Sacred Tombs. The Keepers have mastered the rituals necessary to awaken the entombed servants of their mummified kings. They are served by flickering wisps of Bane Fire that will afflict their enemies with a withering light."
 #batstartsum1 528  -- Corpse Candle
+#wastesurvival
 #end
 
 
@@ -81484,6 +81616,18 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #mr 9
 #stealthy 20
 #def 12
+#end
+
+#selectmonster 1094 -- Desert Ranger
+#fireres 3
+#end
+
+#selectmonster 1166 -- Tomb Guard
+#fireres 3
+#end
+
+#selectmonster 3850 -- Tomb Flame Wielder
+#fireres 3
 #end
 
 #selectmonster 1179  -- Serpent
@@ -94379,18 +94523,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #natmon 7803 -- Anemone Trooper
 #end
 
-#newsite 2128
-#name "Bane Fire Braziers"
-#path 5 
-#level 0
-#rarity 5
-#gems 5 1
-#gems 0 1
-#decscale 2  -- +HEAT
-#incscale 3  -- +DEATH
-#com 1095  -- Keeper of the Tombs
-#end
-
 #newsite 2129
 #name "Imperial Palace"
 #path 9 
@@ -98577,6 +98709,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7257 -- chaos neter
 #homecom 7258 -- moon neter
 #homecom 7271 -- heretic tomb king
+#homecom 7524 -- sarcophagus
 #end
 
 #newsite 2435
@@ -100177,6 +100310,89 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8151
 #homecom 8152
 #end
+
+#newsite 2533
+#name "Empoisoner's Guild"
+#level 0
+#rarity 5
+#path 6
+#look 5
+#homemon 9065 -- pslinger
+#homecom 9057 -- empoisoner
+#end
+
+#newsite 2534
+#name "LA C'tis Summons"
+#level 0
+#rarity 5
+#path 0
+#look 1
+#homemon 628 -- lion
+#homemon 1358 -- toad
+#homemon 2186 -- sacred croc
+#homemon 7422 -- sphinx child
+#homemon 7423 -- mast child
+#homemon 7424 -- pyramid child
+#homemon 7425 -- valley child
+--#homemon 7893 -- scarab
+#homemon 7894 -- war scarab
+#homemon 7994 -- serp
+#homemon 7317 -- mumm sold
+#homemon 7316 -- mumm cere guard
+#end
+
+#newsite 2535
+#name "LA C'tis Summons Continued"
+#level 0
+#rarity 5
+#path 0
+#look 1
+#homecom 690 -- grave
+#homecom 691 -- t priest
+#homecom 692 -- t king
+#homecom 7318 -- t sauro
+#homecom 7429 -- mummy prince
+#homecom 7426 -- reven
+#homecom 7457 -- ba spirit
+#homecom 7427 -- spect sauro
+#homecom 7430 -- lizard lich
+#homecom 525 -- couatl
+#homecom 1649 -- scorp man
+#homecom 7256 -- sun neter
+#homecom 7257 -- chaos neter
+#homecom 7258 -- moon neter
+#homecom 7271 -- heretic tomb king
+#homecom 7524 -- sarcophagus
+#end
+
+#newsite 2536
+#name "LA C'tis Freespawn & Reanimation"
+#level 0
+#rarity 5
+#path 5
+#look 1
+#homemon 319 -- soulless
+#homemon 615 -- longdead
+#homemon 617 -- longdead
+#homemon 616 -- longdead
+#homemon 1659 -- tomb chariot
+#homemon 693 -- tomb wyrm
+#end
+
+#newsite 2537
+#clear
+#name "LA C'tis Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 2
+#homecom 380
+#homecom 864
+#homecom 1660
+#end
+
+
+
 
 
 -- END OF NEW SITES
@@ -106886,6 +107102,39 @@ Bless bonuses: Poison Resistance +10"
 #startunitnbrs1 20
 #startunittype2 165  -- Heavy Infantry
 #startunitnbrs2 20
+
+#clearrec
+#clearsites
+
+#addrecunit 9064 -- militia
+#addrecunit 9061 -- light
+#addrecunit 9063 -- medium
+#addrecunit 3856 -- heavy
+#addrecunit 3856 -- heavyb
+#addrecunit 9055 -- cityguard
+#addrecunit 3918 -- crossbow
+#addrecunit 3854 -- falch
+#addrecunit 3855 -- halb
+
+#addreccom 9056 -- commander
+#addreccom 9062 -- lord
+#addreccom 9058 -- hierodule
+#addreccom 9059 -- highpriest
+#addreccom 9060 -- king
+#addreccom 2314 -- reborn
+#addreccom 1036 -- sauromancer
+
+#wasterec 1094
+#wastefortrec 1094
+
+#startsite "The City of Tombs"
+#startsite "Empoisoner's Guild"
+
+#futuresite "LA C'tis Freespawn & Reanimation"
+#futuresite "LA C'tis Summons"
+#futuresite "LA C'tis Summons Continued"
+#futuresite "LA C'tis Heroes"
+
 #end
 
 #selectnation 97 -- LA Panganea
@@ -116159,7 +116408,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #copyspell 16  -- Hidden spell Court of Undines
 #name "Ceremonial Guard"
 #damage 7316
-#nreff 10
+#nreff 15
 #nextspell 2694
 #end
 
@@ -116167,7 +116416,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #copyspell 16  -- Hidden spell Court of Undines
 #name "Mummified Servants"
 #damage 7317
-#nreff 15
+#nreff 30
 #nextspell 2695
 #end
 
@@ -116182,25 +116431,6 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #fatiguecost 6000
 #onlyatsite 63  -- The City of Tombs
 #nextspell 2696
-#end
-
-#selectspell 2698
-#name "Light the Banefire Braziers"
-#descr "The Sauromancers of C'tis perform their rites illuminated by the flickering green light of Bane Fire. With this enchantment the caster lights Bane Fire Braziers in a Temple Tomb that will burn for as long as the enchantment remains. The braziers will bring forth gems each month, however the sickly flames will slowly kill the living and the province will feel as hot as a dry desert. If the enchantment ends, or if the caster dies the braziers will immediately extinguish. This spell will have no effect if cast in a province without a temple, or if the temple is destroyed."
-#details "Creates 1 Fire gem & 1 Death gem/month, increases Heat & Death, may recruit Keeper of the Tombs"
-#school 4
-#researchlevel 4
-#path 0 0
-#pathlevel 0 1
-#path 1 5
-#pathlevel 1 1
-#effect 10082
-#nreff 1
-#damage 239 -- Ench39
-#fatiguecost 300
-#friendlyench 1
-#hiddenench 1
-#restricted 113 -- LA C'tis
 #end
 
 #selectspell 2699
@@ -117788,7 +118018,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 1408 -- Blood Fecundity
 #name "Disablot"
 #descr "In Helheim the Disablot is a sacred ritual to the Disir and the spirits of the land to enhance the coming harvest. A sacred meal is eaten along with blessed mead and altars are adorned with symbols of fertility and abundance in honor of the Disir. It is a time for laughter and merriment, as well as reflection and gratitude for the blessings bestowed. For as long as the Disablot lasts fertility and prosperity in the province will be increased. This enchantment will last until the turning of the year."
-#details "Growth +2."
+#details "Growth +2. Duration: Until Spring."
 #researchlevel 3
 #school 5 -- thaum
 #path 0 7
@@ -129819,8 +130049,12 @@ All effects scale with friendly Dominion."
 #path 0 0
 #pathlevel 0 2
 #fatiguecost 40
-#aoe 1004 -- 6+
+#aoe 1003 -- 5+
 #restricted 28
+#restricted 193 -- EA Alchera
+#restricted 28 -- EA Machaka
+#restricted 76 -- MA Machaka
+#restricted 113 -- LA C'tis
 #end
 
 #selectspell 3806
@@ -137355,17 +137589,17 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1130 -- lesser flame ward
-#path 0 1
+#pathlevel 0 1
 #aoe 1000 -- 1+
 #end
 
 #selectspell 1135 -- lesser thunder ward
-#path 0 1
+#pathlevel 0 1
 #aoe 1000 -- 1+
 #end
 
 #selectspell 1137 -- lesser winter ward
-#path 0 1
+#pathlevel 0 1
 #aoe 1000 -- 1+
 #end
 
@@ -151377,42 +151611,6 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #notext
 #nolog
 #removesite 2207 -- Celestial Garden
-#end
-
-#newevent
-#rarity 5
-#req_land 1
-#req_ench 239 -- Ench39  -- Light Bane Fire Braziers
-#req_freesites 1
-#req_nositenbr 2128 -- Bane Fire Braziers
-#req_temple 1
-#req_pop0ok
-#msg "Banefire Braziers appear"
-#notext
-#nolog
-#addsite 2128 -- Bane Fire Braziers
-#end
-
-#newevent
-#rarity 5
-#req_noench 239 -- Ench39  -- Light Bane Fire Braziers
-#req_site 1  -- 1748 -- Bane Fire Braziers
-#req_pop0ok
-#msg "Braziers removal. [Bane Fire Braziers]"
-#notext
-#nolog
-#removesite 2128 -- Bane Fire Braziers
-#end
-
-#newevent
-#rarity 5
-#req_temple 0
-#req_site 1  -- 1748 -- Bane Fire Braziers
-#req_pop0ok
-#msg "Braziers removal. [Bane Fire Braziers]"
-#notext
-#nolog
-#removesite 2128 -- Bane Fire Braziers
 #end
 
 #newevent
