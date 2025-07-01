@@ -45474,6 +45474,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #landshape 8223
 #magicskill 1 3
 #magicskill 2 3
+#magicskill 7 3
 #magicboost 1 -1
 #stealthy 5
 #heal
@@ -45514,6 +45515,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #watershape 8222
 #magicskill 1 3
 #magicskill 2 3
+#magicskill 7 3
 #magicboost 2 -1
 #heal
 #stealthy 5
@@ -95674,8 +95676,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #name "EA Arcoscephale Summons"
 #level 0
 #rarity 5
-#path 0
-#look 4
+#path 1
+#look 3
 #homemon 7704 -- Blemmyes
 #homemon 3210 -- Lampad
 #homemon 3168 -- hound
@@ -95688,6 +95690,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 3164 -- Keledone
 #homemon 3119 -- Spartae
 #homemon 3171 -- khalk
+#homemon 7298 -- kerberos
 #end
 
 #newsite 2242
@@ -95702,12 +95705,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7373 -- eleinomae
 #homecom 7374 -- nephelae
 #homecom 7814 -- evening
-#homemon 7298 -- kerberos
-#homecom 7752 -- divine hero
-#homecom 7754 -- divine hero
-#homecom 7755 -- divine hero
-#homecom 7756 -- divine hero
-#homecom 7753 -- divine hero
+#homecom 7289 -- Boread
+#homecom 3066 -- hamadryad
 #homecom 7252 -- hades
 #homecom 7250 -- athena
 #homecom 7251 -- pose
@@ -95718,7 +95717,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #name "EA Arcoscephale Heroes"
 #level 0
 #rarity 5
-#path 3
+#path 9
 #look 2
 #homecom 371
 #homecom 954
@@ -100391,6 +100390,94 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 1660
 #end
 
+#newsite 2538
+#name "LA Arcoscephale Summons"
+#level 0
+#rarity 5
+#path 4
+#look 3
+#homemon 3119 -- Spartae
+#homemon 7704 -- Blemmyes
+#homemon 3210 -- Lampad
+#homemon 3168 -- hound
+#homemon 7679 -- cerulean
+#homemon 3127 -- Ker
+#homemon 3164 -- Keledone
+#homemon 3171 -- khalk
+#homemon 7300 -- daimones
+#end
+
+#newsite 2539
+#name "LA Arcoscephale Summons Continued"
+#level 0
+#rarity 5
+#path 4
+#look 3
+#homecom 7814 -- evening
+#homecom 8599 -- oceanid
+#homecom 7374 -- nephelae
+#homecom 7371 -- Karyatid
+#homecom 7373 -- eleinomae
+#homecom 7369 -- oreid
+#homecom 3066 -- hamadryad
+#homecom 7289 -- Boread
+#homemon 7298 -- kerberos
+#homecom 7680 -- cerulean rishi
+#homecom 7642 -- anu
+#homecom 7252 -- hades
+#homecom 7250 -- athena
+#homecom 7251 -- pose
+#end
+
+#newsite 2540
+#name "LA Arcoscephale Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 2
+#homecom 8119 -- Muse
+#homecom 371  -- Anthromacus
+#homecom 587  -- Orokestes
+#homecom 954  -- Son of Titans
+#homecom 8223 -- Grieving siren
+#end
+
+#newsite 2541
+#name "Arcoscephale Adventurers"
+#level 0
+#rarity 5
+#path 4
+#look 4
+#homecom 7384
+#homecom 7383
+#homecom 7382
+#homecom 7381
+#homecom 7380
+#homecom 7379
+#homecom 7378
+#homecom 7377
+#homecom 7376
+#homecom 7375
+#homecom 7752 -- divine hero
+#homecom 7754 -- divine hero
+#homecom 7755 -- divine hero
+#homecom 7756 -- divine hero
+#homecom 7753 -- divine hero
+#end
+
+
+#newsite 2542
+#name "Arcoscephale Divine Heroes"
+#level 0
+#rarity 5
+#path 4
+#look 4
+#homecom 7752 -- divine hero
+#homecom 7754 -- divine hero
+#homecom 7755 -- divine hero
+#homecom 7756 -- divine hero
+#homecom 7753 -- divine hero
+#end
 
 
 
@@ -104832,6 +104919,7 @@ Priests: Average"
 #multihero1 8119
 #futuresite "EA Arcoscephale Summons"
 #futuresite "EA Arcoscephale Summons Continued"
+#futuresite "Arcoscephale Adventurers"
 #futuresite "EA Arcoscephale Heroes"
 #uwbuild 1
 
@@ -105732,6 +105820,10 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #multihero1 8119 -- Muse
 #uwbuild 1
 #cheapgod20 8475 -- Statue of Wisdom
+
+
+#futuresite "Arcoscephale Adventurers"
+
 #end
 
 #selectnation 54 -- MA Ermor
@@ -106791,6 +106883,12 @@ Priests: Weak, magical"
 #multihero1 8119 -- Muse
 #uwbuild 1
 #cheapgod20 8475 -- Statue of Wisdom
+
+#futuresite "LA Arcoscephale Summons"
+#futuresite "LA Arcoscephale Summons Continued"
+#futuresite "Arcoscephale Divine Heroes"
+#futuresite "LA Arcoscephale Heroes"
+
 #end
 
 #selectnation 98 -- LA Pythium
@@ -112423,7 +112521,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 2
 #nreff 6
 #damage 7679 -- Cerulean Gandharva
-#fatiguecost 1800
+#fatiguecost 1400
 #onlyatsite 123  -- Cerulean Tower
 #restricted 95 -- LA Arco
 #end
@@ -112468,17 +112566,6 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #spec 70368744194048  -- Flyers immune, enemies only, ignores shields
 #restricted 95 -- LA Arco
 #nextspell 2418
-#end
-
-#selectspell 2420
-#copyspell 712 -- Astral Fires
-#name "Celestial Fires"
-#descr "During the reign of the Conqueror Arcoscephale was exposed to many new ideas and cultures. From their contact with the Gittites the Mystics learned much of the Celestial Spheres. They have since learnt how to call Astral flames imbued with the power of the heavenly realm. Astral fires consume the essence of materials as ordinary fire consumes wood and will even burn underwater. The celestial flames will smite demons and other beings abominable to the world."
-#researchlevel 5
-#pathlevel 0 2
-#effect 24
-#damage 8
-#restricted 95 -- LA Arco
 #end
 
 #selectspell 2421
@@ -136021,6 +136108,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 
 #selectspell 345 -- Strange Fire
 #restricted 186 -- Zion
+#restricted 95 -- LA Arco
 #end
 
 #selectspell 346 -- Memories of Stone
@@ -137885,16 +137973,6 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 --#nreff 1002
 #end
 
-#selectspell 1180 -- Dispel
-#fatiguecost 1500
-#notfornation 100 -- LA Man
-#end
-
-#selectspell 1226 -- Disenchantment
-#fatiguecost 2500
-#notfornation 100 -- LA Man
-#end
-
 #selectspell 1184 -- Horde of Skeletons
 #notfornation 22 -- EA Tien Chi
 #notfornation 69 -- MA Tien Chi
@@ -138162,7 +138240,46 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #fatiguecost 4000
 #end
 
+#selectspell 1180 -- Dispel
+#fatiguecost 2500
+#notfornation 100 -- LA Man
+#end
+
+#selectspell 1226 -- Disenchantment
+#fatiguecost 4000
+#notfornation 100 -- LA Man
+#end
+
+#selectspell 1370 -- Arcane Analysis
+#fatiguecost 1000
+#researchlevel 7
+#end
+
+#selectspell 719 -- Elemental Opposition of Water
+#fatiguecost 4000
+#researchlevel 6
+#end
+
+#selectspell 722 -- Elemental Opposition of Earth
+#fatiguecost 4000
+#researchlevel 6
+#end
+
+#selectspell 725 -- Elemental Opposition of Fire
+#fatiguecost 4000
+#researchlevel 6
+#end
+
+#selectspell 727 -- Elemental Opposition of Air
+#fatiguecost 4000
+#researchlevel 6
+#end
+
 #selectspell 1371 -- Astral Disruption -- Neat spell but I *DO NOT* want to deal with the repercussions of some local enchantments, especially national ones, being dispellable
+#school -1
+#end
+
+#selectspell 913 -- Arcane Decree -- This is just bad design
 #school -1
 #end
 
