@@ -4505,9 +4505,9 @@
 #magicarmor
 #end
 
-#newarmor 566 -- Deathknight Barding
+#newarmor 566 -- Death Knight Barding
 #copyarmor 251 -- leather barding
-#name "Deathknight Barding"
+#name "Death Knight Barding"
 #type 9
 #protparts 18 21
 #protinspector 18
@@ -29659,6 +29659,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #descr "This is the spirit of a horse returned to serve the living once more. They are ethereal and difficult to harm with mundane weapons. As spirits they are unaffected by cold or poison and can enter the sea without hindrance."
 #drawsize 0
 #gcost 0
+#spiritsight
 #undead
 #ethereal
 #spiritform
@@ -34805,6 +34806,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #popkill 3
 #incunrest 50
 #weapon 29  -- Claw
+#gcost 0
 #end
 
 #newmonster 7801
@@ -34831,6 +34833,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 0 3
 #magicskill 5 1
 #magicskill 6 1
+#gcost 0
 #end
 
 
@@ -39483,6 +39486,9 @@ While in the form of an old man, all paths are increased and allows the use of N
 #older 20
 #startaff 20
 #ethereal
+#spiritform
+#armor 545 -- spectral plate
+#armor 548 -- spectral cap
 #coldres 10
 #fireres 10
 #poisonres 25
@@ -39536,58 +39542,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #okleader
 #poormagicleader
 #goodundeadleader
-#end
-
-#newmonster 8006
-#name "Goryou"
-#descr "Goryou are the angry ghosts of ancient warriors and nobles who died horrible, agonizing deaths which have prevented them from moving on to the afterlife. Once summoned they are bound to their home province and if slain will reform there, unless it is specially consecrated or has been captured by the enemy. They are consumed by vengeance against the living and will cause ill fortune to all those around them. A province inhabited by a Goryou will suffer the failure of crops, bandit attacks, political strife and other disasters that will cause unrest amongst the populace. The Goryou are always surrounded by an aura of numbing cold. Spectres of the men who once served them take shape in their vicinity to aid their former master once more in battle."
-#spr1 "magicenhanced/goryou_idle.tga"
-#spr2 "magicenhanced/goryou_attack.tga"
-#rcost 0
-#gcost 0
-#rpcost 0
-#hp 32
-#str 18
-#att 14
-#def 14
-#prec 15
-#prot 0
-#size 5
-#mr 18
-#mor 18
-#enc 0
-#mapmove 20
-#ap 20
-#spiritsight
-#spiritform
-#weapon 41
-#armor "Heavy Samurai Armor"
-#armor "Kabuto"
-#magicskill 5 3
-#custommagic 896 200  -- +2FAW
-#custommagic 896 100  -- +1FAW
-#mountedhumanoid
-#mounted
-#undead
-#float
-#immortal
-#startage 200
-#maxage 600
-#ethereal
-#coldres 25
-#fireres 15
-#poisonres 15
-#cold 12
-#fear 5
-#batstartsum1d3 8004
-#batstartsum1d6 8005
-#nametype 134
-#goodleader
-#goodundeadleader
-#okmagicleader
-#inspirational 2
-#incscale 4  -- +Misfortune
-#incunrest 100
 #end
 
 #newmonster 8007
@@ -53158,6 +53112,88 @@ Cost 56 RP."
 #end
 
 
+#newmonster 8006
+#name "Goryou"
+#descr "Goryou are the angry ghosts of ancient warriors and nobles who died horrible, agonizing deaths which have prevented them from moving on to the afterlife. Once summoned they are bound to their home province and if slain will reform there, unless it is specially consecrated or has been captured by the enemy. They are consumed by vengeance against the living and will cause ill fortune to all those around them. A province inhabited by a Goryou will suffer the failure of crops, bandit attacks, political strife and other disasters that will cause unrest amongst the populace. The Goryou are always surrounded by an aura of numbing cold. Spectres of the men who once served them take shape in their vicinity to aid their former master once more in battle."
+#spr1 "magicenhanced/goryou_idle.tga"
+#spr2 "magicenhanced/goryou_attack.tga"
+#unmountedspr1 "magicenhanced/un_goryou_idle.tga"
+#unmountedspr2 "magicenhanced/un_goryou_attack.tga"
+#rcost 0
+#gcost 0
+#rpcost 0
+#hp 32
+#str 18
+#att 14
+#def 14
+#prec 15
+#prot 0
+#size 5
+#mr 18
+#mor 18
+#enc 0
+#mapmove 20
+#ap 20
+#spiritsight
+#spiritform
+#weapon 41
+#armor "Heavy Samurai Armor"
+#armor "Kabuto"
+#magicskill 5 3
+#custommagic 896 200  -- +2FAW
+#custommagic 896 100  -- +1FAW
+#mountmnr 9066
+#skilledrider 7
+#undead
+#float
+#immortal
+#startage 200
+#maxage 600
+#ethereal
+#coldres 25
+#fireres 15
+#poisonres 15
+#cold 12
+#fear 5
+#batstartsum1d3 8004
+#batstartsum1d6 8005
+#nametype 134
+#goodleader
+#goodundeadleader
+#okmagicleader
+#inspirational 2
+#incscale 4  -- +Misfortune
+#incunrest 100
+#end
+
+#newmonster 9066 -- Goryou horse
+#copystats 3580  -- sacred cata steppe horse
+#cleararmor
+#clearweapons
+#spr1 "magicenhanced/goryouh_idle.tga"
+#spr2 "magicenhanced/goryouh_attack.tga"
+#name "Ghostly Horse"
+#descr "This is the ghost of a horse returned to serve once more. They are ethereal and difficult to harm with mundane weapons. As spirits they are unaffected by cold or poison and can enter the sea without hindrance."
+#drawsize 0
+#gcost 0
+#hp 35
+#spiritsight
+#undead
+#ethereal
+#spiritform
+#float
+#neednoteat
+#amphibian
+#att 12
+#def 13
+#str 10
+#enc 0
+#coldres 25
+#fireres 15
+#poisonres 15
+#armor 257 -- rusty cata barding
+#weapon 831 -- magic hoof
+#end
 
 -- END OF NEW MONSTERS (Skip 8700~8818, 8900~9000 and 9600~9650)
 
@@ -82096,6 +82132,10 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 #end
 
 
+#selectmonster 1432  -- Hannya upkeep
+#gcost 0
+#end
+
 #selectmonster 1439  -- Iron Corpse
 #fireres 5
 #mr 7 -- +2
@@ -84669,6 +84709,10 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 
 #selectmonster 3061  -- Hellspawn
 #poorundeadleader
+#end
+
+#selectmonster 3070  -- Chunari upkeep
+#gcost 0
 #end
 
 #selectmonster 3062  -- Hellbred Giant
@@ -100480,6 +100524,71 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 
+#newsite 2543
+#name "EA Yomi Summons"
+#level 0
+#rarity 5
+#path 5
+#look 6
+#homemon 1140 -- tiger
+#homemon 8022 -- dire tiger
+#homemon 8030 -- fish
+#homemon 1482 -- kappa
+#homemon 2090 -- horse
+#homemon 2091 -- ox
+#homemon 1478 -- karasu
+#homemon 1479 -- konoha
+#homemon 2100 -- shik
+#homemon 8007 -- shik
+#homemon 8008 -- yomot shik
+#homemon 3270 -- arabu
+#homemon 8004 -- kosenj
+#end
+
+#newsite 2544
+#name "EA Yomi Summons Continued"
+#level 0
+#rarity 5
+#path 5
+#look 6
+#homecom 1256 -- shura
+#homecom 7490 -- yuki
+#homecom 1431 -- nushi
+#homecom 8006 -- goryu
+#homecom 1480 -- dai tengu
+#homecom 7227 -- carp
+#homecom 7585 -- Raijin
+#homecom 7586 -- Raiju
+#homecom 7282 -- White Tiger of the West
+#homecom 7283 -- Azure Dragon of the East
+#homecom 7284 -- Vermilion Bird of the South
+#homecom 7285 -- Black Tortoise of the North
+#homecom 7262 -- izanami
+#end
+
+#newsite 2545
+#name "EA Yomi Namanari Pacts"
+#level 0
+#rarity 5
+#path 5
+#look 6
+#homecom 3070 -- chunari
+#homecom 1432 -- hannya
+#homecom 7800 -- yama-uba
+#homecom 7801 -- ubagabi
+#end
+
+#newsite 2546
+#name "EA Yomi Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 3
+#homecom 1671
+#homecom 1672
+#homecom 1673
+#homecom 8164
+#end
 
 
 -- END OF NEW SITES
@@ -105440,6 +105549,11 @@ Priests: Average"
 #end
 
 #selectnation 23 -- EA Yomi
+#summary "Race: Demons. Reduced Income. Halved income effects of heat and cold scales.
+Military: Semi-immortal Oni, Bakemono, and human servants. Light infantry, medium infantry. No sacred troops.
+Magic: Death, Fire, Earth, some Air and Nature. Powerful mages, bad at research. Some national summons
+Priests: Weak, Provinces with temples spawn Oni
+Oni will collect due tax from populations with unrest, partially recuperating lost income."
 #hero1 1673  -- Tsunekagge
 #hero2 1671  -- Masatora
 #hero3 1672  -- Kurofomi
@@ -105453,6 +105567,10 @@ Priests: Average"
 #cheapgod20 8417 -- Bull Demon King
 #swampcom 3069  -- Namanari
 #mountaincom 1315  -- Sorcerer
+
+#futuresite "EA Yomi Summons"
+#futuresite "EA Yomi Summons Continued"
+#futuresite "EA Yomi Heroes"
 #end
 
 #selectnation 17 -- EA Hinnom
@@ -119035,7 +119153,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 2876
 #copyspell 668 -- Shadow Bolt
-#name "Dark bolt"
+#name "Dark Bolt"
 #descr "Amongst the Oni dark magic is commonplace. The necromancer hurls a bolt of dark energies against his enemies. The bolt ignores all armor and can paralyze those close to the target. The undead are immune to this spell."
 #researchlevel 1
 #pathlevel 0 1
@@ -119091,7 +119209,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #descr "The caster opens the gate to the Netherworld in Yomi and calls forth a great horde of Shikome. The shikome are hags of the underworld. They are sent to hunt down those who tries to escape the land of the dead. They appear as mad, starving hags with claws and pointy teeth. Shikome are the personal servants of the lords of the underworld and are revered by the oni."
 #researchlevel 7
 #pathlevel 0 5
-#nreff 3035
+#nreff 3025 -- 40+++
 #fatiguecost 2500
 #damage -1043
 #onlyatsite 95  -- Mountain of the Oni Kings
@@ -135983,8 +136101,8 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #aoe 3000
 #end
 
-#selectspell 301 -- Summon Shikome -- ~20% efficiency reduction
-#nreff 508
+#selectspell 301 -- Summon Shikome -- ~30% efficiency reduction
+#nreff 7
 #end
 
 #selectspell 303 -- Omukade
@@ -142392,7 +142510,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectitem 873 -- Death Knight Barding
 #copyitem 489 -- Blacksteel Barding
-#spr "magicenhanced/blue_deathknightbarding.tga"
+#spr "magicenhanced/blue_Death Knightbarding.tga"
 #name "Death Knight Barding"
 #descr "A heavy barding enchanted with magic of the underworld to provide the mount invulnerability against mortal weapons."
 #constlevel 5
@@ -158644,6 +158762,671 @@ It is now fully repaired and a new crew has been assigned to it."
 #clearvar 6006
 #nation -2
 #end
+
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 8
+#req_maxunrest 20
+#req_maxpop 500
+#req_chaos 1
+#req_rare 10
+#gold 27
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 20
+#req_maxunrest 33
+#req_maxpop 500
+#req_chaos 1
+#req_rare 10
+#gold 45
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 33
+#req_maxunrest 50
+#req_maxpop 500
+#req_chaos 1
+#req_rare 10
+#gold 65
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 50
+#req_maxunrest 75
+#req_maxpop 500
+#req_chaos 1
+#req_rare 10
+#gold 86
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 75
+#req_maxunrest 100
+#req_maxpop 500
+#req_chaos 1
+#req_rare 10
+#gold 105
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 100
+#req_maxunrest 150
+#req_maxpop 500
+#req_chaos 1
+#req_rare 10
+#gold 127
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 150
+#req_maxunrest 200
+#req_maxpop 500
+#req_chaos 1
+#req_rare 10
+#gold 148
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 200
+#req_maxpop 500
+#req_chaos 1
+#req_rare 10
+#gold 189
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 10
+#req_maxunrest 20
+#req_minpop 500
+#req_maxpop 1000
+#req_chaos 1
+#req_rare 10
+#gold 59
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 20
+#req_maxunrest 33
+#req_minpop 500
+#req_maxpop 1000
+#req_chaos 1
+#req_rare 10
+#gold 90
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 33
+#req_maxunrest 50
+#req_minpop 500
+#req_maxpop 1000
+#req_chaos 1
+#req_rare 10
+#gold 130
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 50
+#req_maxunrest 75
+#req_minpop 500
+#req_maxpop 1000
+#req_chaos 1
+#req_rare 10
+#gold 172
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 75
+#req_maxunrest 100
+#req_minpop 500
+#req_maxpop 1000
+#req_chaos 1
+#req_rare 10
+#gold 211
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 100
+#req_maxunrest 150
+#req_minpop 500
+#req_maxpop 1000
+#req_chaos 1
+#req_rare 10
+#gold 255
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 150
+#req_maxunrest 200
+#req_minpop 500
+#req_maxpop 1000
+#req_chaos 1
+#req_rare 10
+#gold 296
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 200
+#req_minpop 500
+#req_maxpop 1000
+#req_chaos 1
+#req_rare 10
+#gold 377
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 10
+#req_maxunrest 20
+#req_minpop 14500
+#req_maxpop 15000
+#req_chaos 1
+#req_rare 10
+#gold 88
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 20
+#req_maxunrest 33
+#req_minpop 14500
+#req_maxpop 15000
+#req_chaos 1
+#req_rare 10
+#gold 135
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 33
+#req_maxunrest 50
+#req_minpop 14500
+#req_maxpop 15000
+#req_chaos 1
+#req_rare 10
+#gold 195
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 50
+#req_maxunrest 75
+#req_minpop 14500
+#req_maxpop 15000
+#req_chaos 1
+#req_rare 10
+#gold 258
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 75
+#req_maxunrest 100
+#req_minpop 14500
+#req_maxpop 15000
+#req_chaos 1
+#req_rare 10
+#gold 316
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 100
+#req_maxunrest 150
+#req_minpop 14500
+#req_maxpop 15000
+#req_chaos 1
+#req_rare 10
+#gold 382
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 150
+#req_maxunrest 200
+#req_minpop 14500
+#req_maxpop 15000
+#req_chaos 1
+#req_rare 10
+#gold 444
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 200
+#req_minpop 14500
+#req_maxpop 15000
+#req_chaos 1
+#req_rare 10
+#gold 566
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 10
+#req_maxunrest 20
+#req_minpop 19500
+#req_maxpop 20000
+#req_chaos 1
+#req_rare 10
+#gold 118
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 20
+#req_maxunrest 33
+#req_minpop 19500
+#req_maxpop 20000
+#req_chaos 1
+#req_rare 10
+#gold 179
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 33
+#req_maxunrest 50
+#req_minpop 19500
+#req_maxpop 20000
+#req_chaos 1
+#req_rare 10
+#gold 260
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 50
+#req_maxunrest 75
+#req_minpop 19500
+#req_maxpop 20000
+#req_chaos 1
+#req_rare 10
+#gold 344
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 75
+#req_maxunrest 100
+#req_minpop 19500
+#req_maxpop 20000
+#req_chaos 1
+#req_rare 10
+#gold 421
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 100
+#req_maxunrest 150
+#req_minpop 19500
+#req_maxpop 20000
+#req_chaos 1
+#req_rare 10
+#gold 510
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 150
+#req_maxunrest 200
+#req_minpop 19500
+#req_maxpop 20000
+#req_chaos 1
+#req_rare 10
+#gold 591
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 200
+#req_minpop 19500
+#req_maxpop 20000
+#req_chaos 1
+#req_rare 10
+#gold 754
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 10
+#req_maxunrest 20
+#req_minpop 2000
+#req_chaos 1
+#req_rare 10
+#gold 147
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 20
+#req_maxunrest 33
+#req_minpop 2000
+#req_chaos 1
+#req_rare 10
+#gold 224
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 33
+#req_maxunrest 50
+#req_minpop 2000
+#req_chaos 1
+#req_rare 10
+#gold 326
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 50
+#req_maxunrest 75
+#req_minpop 2000
+#req_chaos 1
+#req_rare 10
+#gold 430
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 75
+#req_maxunrest 100
+#req_minpop 2000
+#req_chaos 1
+#req_rare 10
+#gold 526
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 100
+#req_maxunrest 150
+#req_minpop 2000
+#req_chaos 1
+#req_rare 10
+#gold 637
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 150
+#req_maxunrest 200
+#req_minpop 2000
+#req_chaos 1
+#req_rare 10
+#gold 739
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 5
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 200
+#req_minpop 2000
+#req_chaos 1
+#req_rare 10
+#gold 943
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
 
 
 -- END OF NEW EVENTS
