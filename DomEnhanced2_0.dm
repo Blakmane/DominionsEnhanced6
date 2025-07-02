@@ -1819,7 +1819,7 @@
 #name "Anemone Pike"
 #twohanded
 #len 3
-#rcost 6
+#rcost 3
 #end
 
 #newweapon 1669
@@ -25532,7 +25532,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #descr "This is a mage that has been mentally enslaved by the Aboleths of R'lyeh. Unfortunately the process was not successful and the subject has been left a mindless shell."
 #noleader
 #mor 50
-#gcost 150
+#gcost 50
 #montag 1017
 #slave
 #slowrec
@@ -25546,14 +25546,13 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #clearmagic
 #name "Enslaved Mage"
 #descr "This is a mage that has been mentally enslaved by the Aboleths of R'lyeh. The process has proved very successful and the mage has retained almost all of his magical knowledge. He will serve the Aboleths with his magical skills, however the strain of enslavement may cause strange behaviour."
-#gcost 380
+#gcost 210
 #mor 10
 #mr 14
-#magicskill 50 2
-#magicskill 50 1
+#custommagic 65408 200
+#custommagic 65408 100
 #montag 1017
 #nametype 100  -- Misc Male
-#insane 10
 #weapon 7  -- Staff
 #armor 15  -- Leather Armor
 #slave
@@ -25568,12 +25567,11 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #cleararmor
 #name "Enslaved Mage"
 #descr "This is a mage that has been mentally enslaved by the Aboleths of R'lyeh. The process has been somewhat successful and the mage will serve the Aboleths with his magical skills, however the strain of enslavement may cause strange behaviour."
-#gcost 380
-#magicskill 50 1
-#magicskill 50 1
+#gcost 210
+#custommagic 65408 100
+#custommagic 65408 100
 #montag 1017
 #montagweight 2
-#insane 10
 #weapon 92  -- Fist
 #nametype 107  -- Arco Male
 #slave
@@ -25588,12 +25586,11 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #cleararmor
 #name "Enslaved Mage"
 #descr "This is a mage that has been mentally enslaved by the Aboleths of R'lyeh. The process has been successful and the mage will serve the Aboleths with her magical skills, however the strain of enslavement may cause strange behaviour."
-#gcost 380
-#magicskill 50 1
-#magicskill 50 1
-#magicskill 50 1
+#gcost 210
+#custommagic 65408 100
+#custommagic 65408 100
+#custommagic 65408 100
 #montag 1017
-#insane 10
 #weapon 7  -- Staff
 #female
 #nametype 103  -- Man Female
@@ -25609,11 +25606,10 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #cleararmor
 #name "Enslaved Mage"
 #descr "This is a mage that has been mentally enslaved by the Aboleths of R'lyeh. The process has been successful and the mage will serve the Aboleths with his magical skills, however the strain of enslavement may cause strange behaviour."
-#gcost 380
-#magicskill 50 2
+#gcost 210
+#custommagic 65408 200
 #montag 1017
 #montagweight 2
-#insane 10
 #weapon 7  -- Staff
 #nametype 114  -- Marignon Male
 #slave
@@ -25628,14 +25624,13 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #cleararmor
 #name "Enslaved Mage"
 #descr "This is a mage that has been mentally enslaved by the Aboleths of R'lyeh. The process has proved very successful and the mage has retained almost all of his magical knowledge. He will serve the Aboleths with his magical skills, however the strain of enslavement may cause strange behaviour."
-#gcost 380
+#gcost 210
 #mor 10
 #mr 14
-#magicskill 50 2
-#magicskill 50 1
-#magicskill 50 1
+#custommagic 65408 200
+#custommagic 65408 100
+#custommagic 65408 100
 #montag 1017
-#insane 10
 #weapon 7  -- Staff
 #nametype 100  -- Misc Male
 #slave
@@ -27922,7 +27917,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #custommagic 49024 100
 #custommagic 49024 100
 #gcost 210
-#insane 10
 #monpresentrec 1521  -- Mind Lord
 #slave
 #slowrec
@@ -27932,11 +27926,11 @@ While in the form of an old man, all paths are increased and allows the use of N
 #copystats 40  -- Heavy Infantry
 #copyspr 40  -- Heavy Infantry
 #name "Slave Soldier"
-#descr "The success of R'lyeh is largely due to their powers of mind control. By enslaving other peoples, they have built a slave-based society with few dissidents. The slaves are used even in war and comprise most of the armies of R'lyeh. A Mind Lord is required to dominate the minds of the populace, and therefore one must be present before this unit can be recruited."
+#descr "The success of R'lyeh is largely due to their powers of mind control. By enslaving other peoples, they have built a slave-based society with few dissidents. The slaves are used even in war and comprise most of the armies of R'lyeh."
 #mor 7
-#gcost 8
+#gcost 10007
+#rcost -8
 #slave
-#monpresentrec 1521  -- Mind Lord
 #montag 1026
 #end
 
@@ -27944,11 +27938,11 @@ While in the form of an old man, all paths are increased and allows the use of N
 #copystats 29  -- Light Infantry
 #copyspr 29  -- Light Infantry
 #name "Slave Soldier"
-#descr "The success of R'lyeh is largely due to their powers of mind control. By enslaving other peoples, they have built a slave-based society with few dissidents. The slaves are used even in war and comprise most of the armies of R'lyeh. A Mind Lord is required to dominate the minds of the populace, and therefore one must be present before this unit can be recruited."
+#descr "The success of R'lyeh is largely due to their powers of mind control. By enslaving other peoples, they have built a slave-based society with few dissidents. The slaves are used even in war and comprise most of the armies of R'lyeh."
 #mor 7
-#gcost 8
+#gcost 10007
+#rcost -4
 #slave
-#monpresentrec 1521  -- Mind Lord
 #montag 1026
 #end
 
@@ -27956,27 +27950,25 @@ While in the form of an old man, all paths are increased and allows the use of N
 #copystats 17  -- Archer
 #copyspr 17  -- Archer
 #name "Slave Archer"
-#descr "The success of R'lyeh is largely due to their powers of mind control. By enslaving other peoples, they have built a slave-based society with few dissidents. The slaves are used even in war and comprise most of the armies of R'lyeh. A Mind Lord is required to dominate the minds of the populace, and therefore one must be present before this unit can be recruited."
+#descr "The success of R'lyeh is largely due to their powers of mind control. By enslaving other peoples, they have built a slave-based society with few dissidents. The slaves are used even in war and comprise most of the armies of R'lyeh."
 #mor 7
-#gcost 8
+#gcost 10007
+#rcost -1
 #slave
-#monpresentrec 1521  -- Mind Lord
 #montag 1026
 #end
 
 #newmonster 7464
-#copystats 720  -- Slave
-#copyspr 720  -- Slave
-#name "Lobo Guard"
-#descr "The success of R'lyeh is largely due to their powers of mind control. By enslaving other peoples, they have built a slave-based society with few dissidents. The lowest and most trusted of the slaves are the Lobo Guards. These beasts are mindless slaves who have served until mental abuse has broken them. Now they serve as perfectly loyal guards and arrow fodder. A Mind Lord is required to dominate the minds of the populace, and therefore one must be present before this unit can be recruited."
-#mor 50
-#hp 12
-#att 9
-#str 11
-#magicbeing
-#gcost 4
-#monpresentrec 1521  -- Mind Lord
+#copystats 2004  -- Slave
+#copyspr 30  -- Militia
+#name "Slave Human"
+#descr "The success of R'lyeh is largely due to their powers of mind control. By enslaving other peoples, they have built a slave-based society with few dissidents. The slaves are used even in war and comprise most of the armies of R'lyeh."
+#gcost 10006
 #montag 1026
+#rcost -1
+#cleararmor
+#armor 5
+#armor 120
 #end
 
 #newmonster 7465
@@ -34919,7 +34911,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #clearweapons
 #name "Anemone Trooper"
 #descr "The success of R'lyeh is largely due to their powers of mind control. By enslaving other peoples, they have built a slave-based society with few dissidents. The slaves are used even in war and comprise most of the armies of R'lyeh. Some bear living weapons grown in the lightless chasms of the deep seas. Any victim struck by the weapon will be stung, stunned, seared, and disgusted as the tendrils lash out, seeking the warmth of exposed flesh."
-#gcost 12
+#gcost 10009
 #weapon 1668 -- Anemone Pike
 #reclimit 5
 #end
@@ -44005,7 +43997,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #fixedname "Tuzhas"
 #spr1 "worthy_heroes/doomed_apprentice_1.tga"
 #spr2 "worthy_heroes/doomed_apprentice_2.tga"
-#descr "Mind lords have recently taken interest in the stellar sphere and have noticed a great star that is growing larger day by day. The mind lords organized a great expedition to shallow waters to better study the phenomenon. Countless slaves and a great number of aboleths led by several Mind Lords built a great laboratory in a suitable observation reef. Something inexplicable happened and the whole expedition vanished. Scouts could find nothing but ruins. Now a survivor has emerged, as one greatly transformed Aboleth has come to serve the awakening god. Though he will say nothing of what happened to the expedition, the survivor knows strange magic and sometimes utters strange words. His magical knowledge now surpasses any known regular Aboleths and even many Mind Lords. He is also hunted by strange otherworldly beings."
+#descr "Mind lords have recently taken interest in the stellar sphere and have noticed a great star that is growing larger day by day. The mind lords organized a great expedition to shallow waters to better study the phenomenon. Countless slaves and a great number of aboleths led by several Mind Lords built a great laboratory in a suitable observation reef. Something inexplicable happened and the whole expedition vanished. Scouts could find nothing but ruins. Now a survivor has emerged, as one greatly transformed Aboleth has come to serve the awakening god. Though he will say nothing of what happened to the expedition, the survivor knows strange magic and sometimes utters strange words. His magical knowledge now surpasses any known regular Aboleths and even many Mind Lords. He is also hunted by strange otherworldly beings.
+Like all Aboleths, he can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
 #str 14
 #att 12
 #def 11
@@ -44013,9 +44006,10 @@ While in the form of an old man, all paths are increased and allows the use of N
 #hp 60
 #landshape 12002
 #amphibian -- Aboleth Land Damage
+#taskmaster 3
+#command 40
 #magicbeing
 #voidsanity 10
-#taskmaster 2
 #darkvision 100
 #tainted 15
 #eyes 1
@@ -44028,9 +44022,9 @@ While in the form of an old man, all paths are increased and allows the use of N
 #clearmagic
 #itemslots 1835008
 #magicskill 2 2
-#magicskill 3 2
 #magicskill 4 3
 #magicskill 5 1
+#magicskill 7 2
 #magicskill 8 2
 #mapmove 2
 #userestricteditem 8
@@ -53194,6 +53188,7 @@ Cost 56 RP."
 #armor 257 -- rusty cata barding
 #weapon 831 -- magic hoof
 #end
+
 
 -- END OF NEW MONSTERS (Skip 8700~8818, 8900~9000 and 9600~9650)
 
@@ -79388,6 +79383,44 @@ Initiates of the Deep can be recruited in any land fort."
 #gcost 10040
 #end
 
+
+#selectmonster 337 -- Lobo Guard
+#gcost 10004 -- 5 -> 4
+#end
+
+#selectmonster 1515 -- Slave Trooper
+#gcost 10007 -- 9 -> 7
+#end
+
+#selectmonster 1517 -- Slave Trooper
+#gcost 10007 -- 9 -> 7
+#end
+
+#selectmonster 335 -- Slave Trooper
+#gcost 10007 -- 9 -> 7
+#end
+
+#selectmonster 1524 -- Slave Guardian
+#gcost 10008 -- 9 -> 8
+#end
+
+#selectmonster 1526 -- Slave Guardian
+#gcost 10008 -- 9 -> 8
+#end
+
+#selectmonster 1619 -- Slave Guardian
+#gcost 10008 -- 9 -> 8
+#end
+
+#selectmonster 336 -- Slave Guardian
+#gcost 10008 -- 9 -> 8
+#end
+
+#selectmonster 1523 -- Slave Prince
+#poormagicleader
+#end
+
+
 #selectmonster 342  -- Moon Mage
 #enchrebate50 274 -- Ench74  -- Lunar Potency
 #end
@@ -80216,7 +80249,7 @@ Initiates of the Deep can be recruited in any land fort."
 
 #selectmonster 660  -- Aboleth Auluudh
 #descr "Auluudh is a member of an ancient race sprung from the depths of the ocean. Aboleths once ruled the deep, but the falling star crushed their empire and allowed their slaves to free themselves and build kingdoms of their own. Now the Aboleths are returning to power and Auluudh will lead the way. He has decided that the minds of the Illithids are to his taste and has deemed them useful as food for the small Aboleth population and as slavemasters over the weaker races. Auluudh is very powerful and he can enslave weaker beings by the force of mind alone. He is also a powerful mage.
-Like all Aboleths, he can travel on land, but doing so will dry out their skin, and eventually become petrified. Items that grant air breathing can prolong this."
+Like all Aboleths, he can travel on land, but doing so will dry out their skin, and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
 #landshape 12004
 #amphibian -- Aboleth Land Damage
 #prot 5  -- base 2 (mage heroes normally not boosted, but auluudh's magic is nothing special for MA R'lyeh, instead of upping his magic, I made him a bit more interesting with thug stat boost and custom attacks)
@@ -80238,6 +80271,9 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #twiceborn 3452
 #summon1 1520  -- Aboleth
 #itemslots 1835008 -- 3 misc slots
+#incunrest -5
+#taskmaster 4
+#command 40
 #end
 
 #selectmonster 667 -- Praetorian Guard
@@ -82055,12 +82091,13 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #userestricteditem 8
 #montag 1048
 #twiceborn 7895
+#custommagic 2048 90
 #end
 
 
 #selectmonster 1403  -- Gibboleth
 #descr "Aboleths are ancient beings sprung from the depths of the ocean. They resemble huge, mud-crawling fish with tentacles and large, dark eyes covering their foreheads. The Giboleth is a young Aboleth that has survived its spawn age and grown independent of its Polypal Mother. It has begun to shed its scales, but its hide is still thick and dark. The Giboleth is beginning to develop the strength of mind characteristic of the race and it can project its will on lesser beings. Should it survive for some centuries, it will shed the last of its scales and become a full grown Aboleth, able to dominate other beings. A Giboleth fights with the strength of its mind and its tentacles.
-Giboleths can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing can prolong this."
+Giboleths can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
 #landshape 12010
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
@@ -82211,25 +82248,33 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 
 #selectmonster 1520  -- Aboleth
 #descr "Aboleths are ancient beings sprung from the depths of the ocean. They resemble huge mud-crawling fish with tentacles and large, dark eyes covering their foreheads. As they grow in size, they shed the scales of their Giboleth form and become paler and softer. Aboleths have the ability to project their will on others and can dominate lesser beings with sheer strength of mind. Through their superior minds, the Aboleths have enslaved other water-dwelling races and built an underwater slave-based empire. The larger and older an Aboleth is, the more powerful his powers of domination.
-Aboleths can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing can prolong this."
+Aboleths can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
 #landshape 12008
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
 #montag 1048
+#incunrest -5
+#taskmaster 3
+#command 40
+#addupkeep -150
 #end
 
 #selectmonster 1521  -- Mind Lord
 #descr "The oldest and most powerful Aboleths are called Mind Lords. They have tremendous magical and mental powers and are able to dominate lesser beings with a mere glance. They have shed the last of their dark scales and are pale and soft, but large enough not to fear anything less than an asp turtle. The Mind Lords are formidable mages of Water and the stars and have recently taken a greater interest in the Stellar Sphere. Merman stargazers who are able to leave the sea are trained in Astral magic to study a newly discovered star of auspicious importance. Mind Lords have many strange mental abilities and can cast several unique spells. In addition whilst present in an overland fort they will enable the recruitment of mentally dominated troops.
-Mind Lords can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing can prolong this."
+Mind Lords can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
 #landshape 12006
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
 #montag 1048
+#incunrest -10
+#taskmaster 4
+#command 40
+#addupkeep -265
 #end
 
 #selectmonster 1522  -- Gibodai
 #descr "When nurtured by the Polypal Mothers, some spawn get a different kind of nutrition. Whether this is caused by an act of will or randomness is not known, because the Mothers do not speak, they only scream. The spawn are given special care and soon develop a bond with their Mother. Small tentacles sprout around their mouths and they use them to search the ocean floor for life force needed by the Mothers. The Gibodai consume life force and accumulate it for their Mothers. Some suspect that the Gibodai and their ability to steal and carry life force is the key to the power of the Aboleths. Gibodai and their task are sacred to the Aboleths.
-Gibodai can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing can prolong this."
+Gibodai can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
 #landshape 12014
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
@@ -82559,7 +82604,7 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 
 #selectmonster 1691  -- Aboleth Auluudh
 #descr "Auluudh is the eldest surviving member of an ancient race sprung from the depths of the ocean. The Aboleths have no formal leaders, but everyone serves the ancient Mind Lords and Auluudh is the oldest and most powerful of them. Auluudh is the closest thing to a regent there is in the depths. The recent emergence of leadership among the ever more numerous Deep Ones is a cause of concern to the Mind Lord. To strengthen his grip over the Deep Ones and the Tritons, Auluudh has quested to further his knowledge of distant stars. This search has led him to shallow waters where he has discovered other beings to enslave. The mermen and their mages will serve a purpose as stargazers and communicants should the power of the distant stars be needed.
-Like all Aboleths, he can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prolong this."
+Like all Aboleths, he can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
 #landshape 12000
 #amphibian -- Aboleth Land Damage
 #prot 5  -- base 2 (mage heroes normally not boosted, but auluudh's magic is nothing special for MA R'lyeh, instead of upping his magic, I made him a bit more interesting with thug stat boost and custom attacks)
@@ -82582,6 +82627,9 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #twiceborn 3451  -- Mind Lord Wight
 #userestricteditem 8
 #montag 1048
+#incunrest -10
+#taskmaster 3
+#command 40
 #end
 
 #selectmonster 1695  -- Basalt Queen
@@ -84551,24 +84599,32 @@ Entrants of the Deep can be recruited in any land fort."
 
 #selectmonster 2883  -- Abodai
 #descr "The Abodai is a Gibodai grown large and powerful. Gibodai are rare and Abodai even more so. Gibodai have the ability to gather life force from living beings. With age and maturity the Abodai can drain life from living creatures at a distance. Abodai develop magic skills that sets them apart from the Aboleths. They have sacred status and they alone know the will of the polypal mothers.
-Abodai can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing can prolong this."
+Abodai can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
 #landshape 12012
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
 #montag 1048
+#incunrest -5
+#taskmaster 3
+#command 40
 #end
 
 #selectmonster 2884  -- Androdai
 #montag 1048
+#gcost 10040
 #end
 
 #selectmonster 2885  -- Androdai
 #montag 1048
+#insane 5
+#voidsanity 5
+#gcost 10010
 #end
 
 #selectmonster 2886  -- Grandmother
 #userestricteditem 8
 #montag 1048
+#magicskill 4 2 -- S
 #end
 
 #selectmonster 2892  -- Priest of All Waters
@@ -85560,6 +85616,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 -- FOLDUNITS START OF ABOLETH LAND DAMAGE -- 12000~12015
 
+
+
 #newmonster 12000 -- Mind Lord Hero landshape
 #copystats 1691
 #copyspr 1691
@@ -85567,6 +85625,15 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 50
 #landshape 0
 #watershape 1691
+#battleshape 12016
+#end
+
+#newmonster 12016 -- Mind Lord Hero land combatshape
+#copystats 1691
+#copyspr 1691
+#landshape 0
+#watershape 1691
+#worldshape 12000
 #end
 
 #newmonster 12001 -- Mind Lord Hero petrified
@@ -85576,14 +85643,14 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #def 0
 #att 0
 #prot 15
-#landdamage 1
+--#landdamage 1
 #clearweapons
 #weapon 0
 #mapmove 0
 #immobile
 #ap 0
 #landshape 0
-#watershape 1691
+--#watershape 1691
 #end
 
 #newmonster 12002 -- Doomed Aboleth landshape
@@ -85593,6 +85660,15 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 31
 #landshape 0
 #watershape 8175
+#battleshape 12017
+#end
+
+#newmonster 12017 -- Doomed Aboleth land combatshape
+#copystats 8175
+#copyspr 8175
+#landshape 0
+#watershape 8175
+#worldshape 12002
 #end
 
 #newmonster 12003 -- Doomed Aboleth petrified
@@ -85602,14 +85678,14 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #def 0
 #att 0
 #prot 15
-#landdamage 1
+--#landdamage 1
 #clearweapons
 #weapon 0
 #mapmove 0
 #immobile
 #ap 0
 #landshape 0
-#watershape 8175
+--#watershape 8175
 #end
 
 #newmonster 12004 -- MA R'lyeh Aboleth Hero landshape
@@ -85619,6 +85695,15 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 56
 #landshape 0
 #watershape 660
+#battleshape 12018
+#end
+
+#newmonster 12018 -- MA R'lyeh Aboleth Hero land combatshape
+#copystats 660
+#copyspr 660
+#landshape 0
+#watershape 660
+#worldshape 12004
 #end
 
 #newmonster 12005 -- MA R'lyeh Aboleth Hero petrified
@@ -85628,14 +85713,14 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #def 0
 #att 0
 #prot 15
-#landdamage 1
+--#landdamage 1
 #clearweapons
 #weapon 0
 #mapmove 0
 #immobile
 #ap 0
 #landshape 0
-#watershape 660
+--#watershape 660
 #end
 
 #newmonster 12006 -- Mind Lord landshape
@@ -85645,6 +85730,15 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 43
 #landshape 0
 #watershape 1521
+#battleshape 12019
+#end
+
+#newmonster 12019 -- Mind Lord land combatshape
+#copystats 1521
+#copyspr 1521
+#landshape 0
+#watershape 1521
+#worldshape 12006
 #end
 
 #newmonster 12007 -- Mind Lord petrified
@@ -85654,14 +85748,14 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #def 0
 #att 0
 #prot 15
-#landdamage 1
+--#landdamage 1
 #clearweapons
 #weapon 0
 #mapmove 0
 #immobile
 #ap 0
 #landshape 0
-#watershape 1521
+--#watershape 1521
 #end
 
 #newmonster 12008 -- Aboleth landshape
@@ -85671,6 +85765,15 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 28
 #landshape 0
 #watershape 1520
+#battleshape 12020
+#end
+
+#newmonster 12020 -- Aboleth land combatshape
+#copystats 1520
+#copyspr 1520
+#landshape 0
+#watershape 1520
+#worldshape 12008
 #end
 
 #newmonster 12009 -- Aboleth petrified
@@ -85680,14 +85783,14 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #def 0
 #att 0
 #prot 15
-#landdamage 1
+--#landdamage 1
 #clearweapons
 #weapon 0
 #mapmove 0
 #immobile
 #ap 0
 #landshape 0
-#watershape 1520
+--#watershape 1520
 #end
 
 #newmonster 12010 -- Giboleth landshape
@@ -85697,6 +85800,15 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 12
 #landshape 0
 #watershape 1403
+#battleshape 12021
+#end
+
+#newmonster 12021 -- Giboleth land combatshape
+#copystats 1403
+#copyspr 1403
+#landshape 0
+#watershape 1403
+#worldshape 12010
 #end
 
 #newmonster 12011 -- Giboleth petrified
@@ -85706,14 +85818,14 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #def 0
 #att 0
 #prot 15
-#landdamage 1
+----#landdamage 1
 #clearweapons
 #weapon 0
 #mapmove 0
 #immobile
 #ap 0
 #landshape 0
-#watershape 1403
+--#watershape 1403
 #end
 
 #newmonster 12012 -- Abodai landshape
@@ -85723,6 +85835,15 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 26
 #landshape 0
 #watershape 2883
+#battleshape 12022
+#end
+
+#newmonster 12022 -- Abodai land combatshape
+#copystats 2883
+#copyspr 2883
+#landshape 0
+#watershape 2883
+#worldshape 12012
 #end
 
 #newmonster 12013 -- Abodai petrified
@@ -85732,14 +85853,14 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #def 0
 #att 0
 #prot 15
-#landdamage 1
+--#landdamage 1
 #clearweapons
 #weapon 0
 #mapmove 0
 #immobile
 #ap 0
 #landshape 0
-#watershape 2883
+--#watershape 2883
 #end
 
 #newmonster 12014 -- Gibodai landshape
@@ -85749,6 +85870,15 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 11
 #landshape 0
 #watershape 1522
+#battleshape 12023
+#end
+
+#newmonster 12023 -- Gibodai land combatshape
+#copystats 1522
+#copyspr 1522
+#landshape 0
+#watershape 1522
+#worldshape 12014
 #end
 
 #newmonster 12015 -- Gibodai petrified
@@ -85758,15 +85888,17 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #def 0
 #att 0
 #prot 15
-#landdamage 1
+--#landdamage 1
 #clearweapons
 #weapon 0
 #mapmove 0
 #immobile
 #ap 0
 #landshape 0
-#watershape 1522
+--#watershape 1522
 #end
+
+
 
 
 -- ENDUNITS END OF ABOLETH LAND DAMAGE
@@ -94565,6 +94697,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 6 
 #level 0
 #rarity 5
+#look 9
 #nat 44 -- EA Rlyeh
 #natmon 7803 -- Anemone Trooper
 #end
@@ -100590,6 +100723,47 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8164
 #end
 
+#newsite 2547
+#name "Enslaved Mages"
+#level 0
+#rarity 5
+#path 4
+#look 2
+#homecom 7349
+#homecom 7350
+#homecom 7351
+#homecom 7352
+#homecom 7353
+#homecom 7354
+#end
+
+#newsite 2548
+#name "EA R'lyeh Summons"
+#level 0
+#rarity 5
+#path 4
+#look 6
+#homemon 1404 -- polypal
+#homemon 7688 -- skum
+#homemon 1529 -- slave troll
+#homemon 7390 -- young chth
+#homemon 7389 -- chth
+#homecom 7355 -- spy
+#end
+
+#newsite 2549
+#name "EA R'lyeh Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 6
+#homecom 1691
+#homecom 8173
+#homecom 8174
+#homecom 8175
+#end
+
+
 
 -- END OF NEW SITES
 
@@ -105781,11 +105955,62 @@ Dominion: Dominion hides province ownership."
 #startunitnbrs1 20
 #startunittype2 1524  -- Slave Guardian
 #startunitnbrs2 20
-#landrec 7461 -- Enslaved Soldier
-#landrec 7462 -- Enslaved Soldier
-#landrec 7463 -- Enslaved Soldier
-#landrec 7464 -- Lobo Guard
-#landcom 7460 -- Enslaved Mage
+
+#plainfortrec 2884 -- Androleth
+#forestfortrec 2884
+#mountainfortrec 2884
+#swampfortrec 2884
+#wastefortrec 2884
+#farmfortrec 2884
+
+#plainfortrec 7462 -- Enslaved Soldier
+#forestfortrec 7462
+#mountainfortrec 7462
+#swampfortrec 7462
+#wastefortrec 7462
+#farmfortrec 7462
+
+#plainfortrec 7461 -- Enslaved Soldier
+#forestfortrec 7461
+#mountainfortrec 7461
+#swampfortrec 7461
+#wastefortrec 7461
+#farmfortrec 7461
+
+#plainfortrec 7463 -- Enslaved Soldier
+#forestfortrec 7463
+#mountainfortrec 7463
+#swampfortrec 7463
+#wastefortrec 7463
+#farmfortrec 7463
+
+#plainfortrec 7464 -- Enslaved Human
+#forestfortrec 7464
+#mountainfortrec 7464
+#swampfortrec 7464
+#wastefortrec 7464
+#farmfortrec 7464
+
+#plainfortcom 2885 -- Androdai
+#forestfortcom 2885
+#mountainfortcom 2885
+#swampfortcom 2885
+#wastefortcom 2885
+#farmfortcom 2885
+
+#plainfortcom 7460 -- Enslaved Mage
+#forestfortcom 7460
+#mountainfortcom 7460
+#swampfortcom 7460
+#wastefortcom 7460
+#farmfortcom 7460
+
+#moreorder 1
+
+#futuresite "Growth Chamber"
+#futuresite "Enslaved Mages"
+#futuresite "EA R'lyeh Summons"
+#futuresite "EA R'lyeh Heroes"
 #end
 
 #selectnation 40 -- EA Pelagia
@@ -121123,7 +121348,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 3012
 #copyspell 1279
-#name "Mental attack"
+#name "Mental Attack"
 #descr "The Aboleths of R'lyeh can naturally sense and affect the mind of other creatures. This spell overloads the mind of one target. If successful, the target experiences overwhelming pain as his mind is damaged. The spell is very accurate and always finds its intended target."
 #researchlevel 0
 #restricted 44
@@ -121168,7 +121393,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 2
 #pathlevel 0 3
 #pathlevel 1 2
-#fatiguecost 300
+#fatiguecost 200
 #damage 7355 -- Enslaved Spy
 #onlymnr 1521  -- Mind Lord
 #onlymnr 8174 -- He who Breathes
@@ -121238,7 +121463,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #end
 
 #selectspell 3020
-#name "Dominate minds"
+#name "Dominate Minds"
 #descr "Through great mental effort a Mind Lord can extend their mind to dominate weak-willed inhabitants of a distant province. If cast at a friendly province unrest will be decreased as dissidents are brought under the control of the Aboleths. In enemy held provinces those affected will take arms and attack their current masters, sowing discord throughout the province. Additional castings at the same province in the same month will have no further effect."
 #researchlevel 0
 #school -1
@@ -136825,6 +137050,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 629 -- Enslave Sea Troll
+#fatiguecost 800
 #nreff 1002
 #end
 
@@ -140608,7 +140834,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectitem 746
 #name "Kelp Webbing"
 #spr "magicenhanced/eeikelp.tga"
-#descr "Special kelp grown in the depths and infused with Nature magic is used by the Aboleths as a protective covering for their slimy bodies. Once the kelp has grown into and around the Aboleth it will protect the wearer and the magic will cause wounds to heal with extraordinary speed. Once the kelp has grown into a host it cannot be removed."
+#descr "Special kelp grown in the depths and infused with Nature magic is used by the Aboleths as a protective covering for their slimy bodies. Once the kelp has grown into and around the Aboleth it will protect the wearer and the magic will cause wounds to heal with extraordinary speed. Once the kelp has grown into a host it cannot be removed.
+This will also prevent their skin from drying out."
 #constlevel 5
 #mainpath 6
 #mainlevel 1
@@ -140617,6 +140844,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #barkskin
 #nofind
 #regeneration 10
+#landdamage -10
 #restricted 44 -- EA Rlyeh
 #restricteditem 8  -- Aboleths
 #end
@@ -159428,6 +159656,692 @@ It is now fully repaired and a new crew has been assigned to it."
 #end
 
 
+-- START OF ABOLETH EVENTS
+
+#newevent -- Depetrify Giboleth
+#rarity 5
+#req_pop0ok
+#req_fornation 44
+#req_5monsters 12011 -- Giboleth Petrified
+#req_lab 1
+#msg "."
+#nolog
+#notext
+#nation -2
+#killmon 12011 -- Giboleth Petrified
+#killmon 12011 -- Giboleth Petrified
+#killmon 12011 -- Giboleth Petrified
+#killmon 12011 -- Giboleth Petrified
+#killmon 12011 -- Giboleth Petrified
+#1unit 12010 -- Giboleth Landshape
+#1unit 12010 -- Giboleth Landshape
+#1unit 12010 -- Giboleth Landshape
+#1unit 12010 -- Giboleth Landshape
+#1unit 12010 -- Giboleth Landshape
+#end
+
+#newevent -- Depetrify Giboleth
+#rarity 5
+#req_pop0ok
+#req_fornation 44
+#req_5monsters 12011 -- Giboleth Petrified
+#req_lab 1
+#msg "."
+#nolog
+#notext
+#nation -2
+#killmon 12011 -- Giboleth Petrified
+#killmon 12011 -- Giboleth Petrified
+#killmon 12011 -- Giboleth Petrified
+#killmon 12011 -- Giboleth Petrified
+#killmon 12011 -- Giboleth Petrified
+#1unit 12010 -- Giboleth Landshape
+#1unit 12010 -- Giboleth Landshape
+#1unit 12010 -- Giboleth Landshape
+#1unit 12010 -- Giboleth Landshape
+#1unit 12010 -- Giboleth Landshape
+#end
+
+#newevent -- Depetrify Giboleth
+#rarity 5
+#req_pop0ok
+#req_fornation 44
+#req_5monsters 12011 -- Giboleth Petrified
+#req_lab 1
+#msg "."
+#nolog
+#notext
+#nation -2
+#killmon 12011 -- Giboleth Petrified
+#killmon 12011 -- Giboleth Petrified
+#killmon 12011 -- Giboleth Petrified
+#killmon 12011 -- Giboleth Petrified
+#killmon 12011 -- Giboleth Petrified
+#1unit 12010 -- Giboleth Landshape
+#1unit 12010 -- Giboleth Landshape
+#1unit 12010 -- Giboleth Landshape
+#1unit 12010 -- Giboleth Landshape
+#1unit 12010 -- Giboleth Landshape
+#end
+
+#newevent -- Depetrify Giboleth
+#rarity 5
+#req_pop0ok
+#req_fornation 44
+#req_monster 12011 -- Giboleth Petrified
+#req_lab 1
+#msg "."
+#nolog
+#notext
+#nation -2
+#killmon 12011 -- Giboleth Petrified
+#1unit 12010 -- Giboleth Landshape
+#end
+
+#newevent -- Depetrify Giboleth
+#rarity 5
+#req_pop0ok
+#req_fornation 44
+#req_monster 12011 -- Giboleth Petrified
+#req_lab 1
+#msg "."
+#nolog
+#notext
+#nation -2
+#killmon 12011 -- Giboleth Petrified
+#1unit 12010 -- Giboleth Landshape
+#end
+
+#newevent -- Depetrify Giboleth
+#rarity 5
+#req_pop0ok
+#req_fornation 44
+#req_monster 12011 -- Giboleth Petrified
+#req_lab 1
+#msg "."
+#nolog
+#notext
+#nation -2
+#killmon 12011 -- Giboleth Petrified
+#1unit 12010 -- Giboleth Landshape
+#end
+
+#newevent -- Depetrify Giboleth
+#rarity 5
+#req_pop0ok
+#req_fornation 44
+#req_monster 12011 -- Giboleth Petrified
+#req_lab 1
+#msg "."
+#nolog
+#notext
+#nation -2
+#killmon 12011 -- Giboleth Petrified
+#1unit 12010 -- Giboleth Landshape
+#end
+
+#newevent -- Depetrify Gibodai
+#rarity 5
+#req_pop0ok
+#req_fornation 44
+#req_5monsters 12015 -- Gibodai Petrified
+#req_lab 1
+#msg "."
+#nolog
+#notext
+#nation -2
+#killmon 12015 -- Gibodai Petrified
+#killmon 12015 -- Gibodai Petrified
+#killmon 12015 -- Gibodai Petrified
+#killmon 12015 -- Gibodai Petrified
+#killmon 12015 -- Gibodai Petrified
+#1unit 12014 -- Gibodai Landshape
+#1unit 12014 -- Gibodai Landshape
+#1unit 12014 -- Gibodai Landshape
+#1unit 12014 -- Gibodai Landshape
+#1unit 12014 -- Gibodai Landshape
+#end
+
+#newevent -- Depetrify Gibodai
+#rarity 5
+#req_pop0ok
+#req_fornation 44
+#req_5monsters 12015 -- Gibodai Petrified
+#req_lab 1
+#msg "."
+#nolog
+#notext
+#nation -2
+#killmon 12015 -- Gibodai Petrified
+#killmon 12015 -- Gibodai Petrified
+#killmon 12015 -- Gibodai Petrified
+#killmon 12015 -- Gibodai Petrified
+#killmon 12015 -- Gibodai Petrified
+#1unit 12014 -- Gibodai Landshape
+#1unit 12014 -- Gibodai Landshape
+#1unit 12014 -- Gibodai Landshape
+#1unit 12014 -- Gibodai Landshape
+#1unit 12014 -- Gibodai Landshape
+#end
+
+#newevent -- Depetrify Gibodai
+#rarity 5
+#req_pop0ok
+#req_fornation 44
+#req_5monsters 12015 -- Gibodai Petrified
+#req_lab 1
+#msg "."
+#nolog
+#notext
+#nation -2
+#killmon 12015 -- Gibodai Petrified
+#killmon 12015 -- Gibodai Petrified
+#killmon 12015 -- Gibodai Petrified
+#killmon 12015 -- Gibodai Petrified
+#killmon 12015 -- Gibodai Petrified
+#1unit 12014 -- Gibodai Landshape
+#1unit 12014 -- Gibodai Landshape
+#1unit 12014 -- Gibodai Landshape
+#1unit 12014 -- Gibodai Landshape
+#1unit 12014 -- Gibodai Landshape
+#end
+
+#newevent -- Depetrify Gibodai
+#rarity 5
+#req_pop0ok
+#req_fornation 44
+#req_monster 12015 -- Gibodai Petrified
+#req_lab 1
+#msg "."
+#nolog
+#notext
+#nation -2
+#killmon 12015 -- Gibodai Petrified
+#1unit 12014 -- Gibodai Landshape
+#end
+
+#newevent -- Depetrify Gibodai
+#rarity 5
+#req_pop0ok
+#req_fornation 44
+#req_monster 12015 -- Gibodai Petrified
+#req_lab 1
+#msg "."
+#nolog
+#notext
+#nation -2
+#killmon 12015 -- Gibodai Petrified
+#1unit 12014 -- Gibodai Landshape
+#end
+
+#newevent -- Depetrify Gibodai
+#rarity 5
+#req_pop0ok
+#req_fornation 44
+#req_monster 12015 -- Gibodai Petrified
+#req_lab 1
+#msg "."
+#nolog
+#notext
+#nation -2
+#killmon 12015 -- Gibodai Petrified
+#1unit 12014 -- Gibodai Landshape
+#end
+
+#newevent -- Depetrify Gibodai
+#rarity 5
+#req_pop0ok
+#req_fornation 44
+#req_monster 12015 -- Gibodai Petrified
+#req_lab 1
+#msg "."
+#nolog
+#notext
+#nation -2
+#killmon 12015 -- Gibodai Petrified
+#1unit 12014 -- Gibodai Landshape
+#end
+
+
+
+#newevent -- Depetrify Aboleth
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12009 -- Aboleth Petrified
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1520 -- Aboleth
+#end
+
+#newevent -- Depetrify Aboleth
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12009 -- Aboleth Petrified
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1520 -- Aboleth
+#end
+
+#newevent -- Depetrify Aboleth
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12009 -- Aboleth Petrified
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1520 -- Aboleth
+#end
+
+#newevent -- Depetrify Aboleth
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12009 -- Aboleth Petrified
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1520 -- Aboleth
+#end
+
+#newevent -- Depetrify Aboleth
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12009 -- Aboleth Petrified
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1520 -- Aboleth
+#end
+
+#newevent -- Heal Aboleth
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12008 -- Aboleth Landshape
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1520 -- Aboleth
+#end
+
+#newevent -- Heal Aboleth
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12008 -- Aboleth Landshape
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1520 -- Aboleth
+#end
+
+#newevent -- Heal Aboleth
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12008 -- Aboleth Landshape
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1520 -- Aboleth
+#end
+
+#newevent -- Heal Aboleth
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12008 -- Aboleth Landshape
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1520 -- Aboleth
+#end
+
+#newevent -- Heal Aboleth
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12008 -- Aboleth Landshape
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1520 -- Aboleth
+#end
+
+
+#newevent -- Depetrify Mind Lord
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12007 -- Mind Lord Petrified
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1521 -- Mind Lord
+#end
+
+#newevent -- Depetrify Mind Lord
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12007 -- Mind Lord Petrified
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1521 -- Mind Lord
+#end
+
+#newevent -- Depetrify Mind Lord
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12007 -- Mind Lord Petrified
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1521 -- Mind Lord
+#end
+
+#newevent -- Depetrify Mind Lord
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12007 -- Mind Lord Petrified
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1521 -- Mind Lord
+#end
+
+#newevent -- Depetrify Mind Lord
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12007 -- Mind Lord Petrified
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1521 -- Mind Lord
+#end
+
+#newevent -- Heal Mind Lord
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12006 -- Mind Lord Landshape
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1521 -- Mind Lord
+#end
+
+#newevent -- Heal Mind Lord
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12006 -- Mind Lord Landshape
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1521 -- Mind Lord
+#end
+
+#newevent -- Heal Mind Lord
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12006 -- Mind Lord Landshape
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1521 -- Mind Lord
+#end
+
+#newevent -- Heal Mind Lord
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12006 -- Mind Lord Landshape
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1521 -- Mind Lord
+#end
+
+#newevent -- Heal Mind Lord
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12006 -- Mind Lord Landshape
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1521 -- Mind Lord
+#end
+
+
+#newevent -- Depetrify Abodai
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12013 -- Abodai Petrified
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 2883 -- Abodai
+#end
+
+#newevent -- Depetrify Abodai
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12013 -- Abodai Petrified
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 2883 -- Abodai
+#end
+
+#newevent -- Depetrify Abodai
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12013 -- Abodai Petrified
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 2883 -- Abodai
+#end
+
+#newevent -- Depetrify Abodai
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12013 -- Abodai Petrified
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 2883 -- Abodai
+#end
+
+#newevent -- Depetrify Abodai
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12013 -- Abodai Petrified
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 2883 -- Abodai
+#end
+
+#newevent -- Heal Abodai
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12012 -- Abodai Landshape
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 2883 -- Abodai
+#end
+
+#newevent -- Heal Abodai
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12012 -- Abodai Landshape
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 2883 -- Abodai
+#end
+
+#newevent -- Heal Abodai
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12012 -- Abodai Landshape
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 2883 -- Abodai
+#end
+
+#newevent -- Heal Abodai
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12012 -- Abodai Landshape
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 2883 -- Abodai
+#end
+
+#newevent -- Heal Abodai
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12012 -- Abodai Landshape
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 2883 -- Abodai
+#end
+
+#newevent -- Depetrify MA R'lyeh Mind Lord Hero
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12005
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 660
+#end
+
+#newevent -- Heal MA R'lyeh Mind Lord Hero
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12004
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 660
+#end
+
+#newevent -- Depetrify Mind Lord Hero
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12001
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1691
+#end
+
+#newevent -- Heal Mind Lord Hero
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12000
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 1691
+#end
+
+
+#newevent -- Depetrify Doomed Mind Lord
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12003
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 8175
+#end
+
+#newevent -- Heal Doomed Mind Lord
+#rarity 5
+#req_pop0ok
+#req_lab 1
+#req_targrealmnr 12002
+#msg "."
+#nolog
+#notext
+#nation -2
+#forcetransform 8175
+#end
+
+
+
+-- END OF ABOLETH EVENTS
 
 -- END OF NEW EVENTS
 
