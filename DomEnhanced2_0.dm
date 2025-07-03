@@ -1232,7 +1232,7 @@
 
 #newweapon 1596
 #copyweapon 475  -- Golden Lance
-#name "Pearl lance"
+#name "Pearl Lance"
 #bonus
 #ammo 1
 #end
@@ -25663,26 +25663,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #descr "This triton has been affected by strange magic and has attacked your garrison."
 #end
 
-#newmonster 7358
-#copystats 38  -- Heavy Infantry
-#spr1 "magicenhanced/eepside.tga"
-#spr2 "magicenhanced/eepside2.tga"
-#clearweapons
-#cleararmor
-#name "Pearl Sideraspist"
-#descr "To aid in the conquest of the Closed Realm the Pearl Mages have learned to raise great castles of gleaming pearl. From these mighty citadels march sacred warriors armed with pearl weapons and armor. Although human, these Pearl Sideraspists have seen the might of Pelagia and now fight to expand the holdings of the Pearl Kings. They hope to one day be granted the Gift of Waterbreathing and to see the Pearl Palaces for themselves."
-#gcost 13
-#att 11
-#def 11
-#mr 12
-#mor 11
-#holy
-#weapon 388  -- Pearl Spear
-#armor 12  -- Scale Mail Hauberk
-#armor 123  -- Hoplite Helm
-#armor 189  -- Pearl Shield
-#end
-
 #newmonster 7359
 #copystats 545  -- Shark Knight
 #spr1 "magicenhanced/eeffish.tga"
@@ -44079,81 +44059,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #startage 400
 #end
 
-#newmonster 8177
-#name "Druid of the Seas"
-#fixedname "Shubaot"
-#spr1 "worthy_heroes/kelpdruid.tga"
-#spr2 "worthy_heroes/kelpdruid2.tga"
-#descr "The kelp forests of the seas are beautiful beyond measure and important to the people of Pelagia. Sometime ago, one Amber Clan Priest heard the forest calling him in his sleep. He answered the call and was changed forever. He is the sacred caretaker of the Kelp Forests, possessing awesome might in divine and nature magic. Sea animals follow his command and no creature of the wild would dare to harm him. He has now decided to serve the awakening god, for he knows that if Pelagia should fall in Ascension Wars, the future of the kelp forests will be grim."
-#str 11
-#att 10
-#def 10
-#hp 18
-#mounted
-#animalawe 3
-#aquatic
-#itemslots 860678
-#weapon 7  -- Quarterstaff
-#weapon 354  -- Antlers
-#domsummon20 1062  -- Sea lion
-#summon1 1064  -- Sea dog
-#mapmove 20
-#enc 5
-#prec 11
-#ap 27
-#prot 4
-#mr 16
-#mor 15
-#gcost 0
-#magicskill 6 4
-#magicskill 2 2
-#magicskill 9 2
-#magicskill 3 1
-#size 5
-#holy
-#goodleader
-#maxage 60
-#startage 50
-#end
-
-#newmonster 8178
-#name "Black Prince"
-#fixedname "Sirashu"
-#spr1 "worthy_heroes/superprince.tga"
-#spr2 "worthy_heroes/superprince2.tga"
-#descr "Life underneath the waves corresponds in many ways to that on dry land. Just as there is a single black unicorn, there is a single black hippocampus. This hippocampus was found and befriended by an ambitious Triton Prince, who has now risen in the ranks of Triton nobility like a shooting star. While patrolling the border, he saved the legendary Lord of Pearls from a horde of sea trolls and was gifted with magical pearl armaments. The black hippocampus is the fastest steed in Pelagia and its unsurpassed healing powers can close the prince's wounds nearly instantaneously. On his never-ending quest for glory and fame, he has now decided to serve the awakening god."
-#str 14
-#att 14
-#def 14
-#hp 22
-#mounted
-#aquatic
-#itemslots 2040326
-#inspirational 1
-#weapon 389  -- Pearl Trident
-#weapon 4  -- Lance
-#weapon 330  -- Alicorn
-#armor 506 -- Enchanted Armor
-#armor 148  -- crown
-#armor 92  -- Enchanted Shield
-#onebattlespell "Personal Luck"  -- Luck
-#heal
-#regeneration 20
-#mapmove 26
-#enc 5
-#prec 11
-#ap 35
-#prot 2
-#mr 16
-#mor 15
-#gcost 1
-#size 5
-#holy
-#expertleader
-#maxage 70
-#startage 40
-#end
-
 #newmonster 8179
 #spr1 "worthy_heroes/oldest_turtle_11.tga"
 #spr2 "worthy_heroes/oldest_turtle_2.tga"
@@ -53189,6 +53094,151 @@ Cost 56 RP."
 #weapon 831 -- magic hoof
 #end
 
+#newmonster 9067
+#copystats 2809 -- Merman Sideraspist land
+#spr1 "magicenhanced/eepside.tga"
+#spr2 "magicenhanced/eepside2.tga"
+#clearweapons
+#cleararmor
+#name "Pearl Sideraspist"
+#descr "To aid in the conquest of the Closed Realm the Pearl Mages have learned to raise great castles of gleaming pearl, and from these mighty citadels march sacred warriors armed with pearl weapons and armor. Tritons are unable to leave the sea, but mermen can shed their tails and walk on dry land, and so they are chosen to take up the pearl armaments."
+#gcost 13
+#att 11
+#def 11
+#mr 12
+#mor 11
+#holy
+#weapon 388  -- Pearl Spear
+#armor 12  -- Scale Mail Hauberk
+#armor 123  -- Hoplite Helm
+#armor 189  -- Pearl Shield
+#watershape 9068
+#amphibian
+#end
+
+#newmonster 9068
+#copystats 2810 -- Merman Sideraspist UW
+#spr1 "magicenhanced/eepsidew.tga"
+#spr2 "magicenhanced/eepsidew2.tga"
+#clearweapons
+#cleararmor
+#name "Pearl Sideraspist"
+#descr "To aid in the conquest of the Closed Realm the Pearl Mages have learned to raise great castles of gleaming pearl, and from these mighty citadels march sacred warriors armed with pearl weapons and armor. Tritons are unable to leave the sea, but mermen can shed their tails and walk on dry land, and so they are chosen to take up the pearl armaments."
+#gcost 13
+#att 11
+#def 11
+#mr 12
+#mor 11
+#holy
+#weapon 388  -- Pearl Spear
+#armor 12  -- Scale Mail Hauberk
+#armor 123  -- Hoplite Helm
+#armor 189  -- Pearl Shield
+#landshape 9067
+#float
+#end
+
+#newmonster 8177
+#name "Druid of the Seas"
+#fixedname "Shubaot"
+#spr1 "worthy_heroes/kelpdruid.tga"
+#spr2 "worthy_heroes/kelpdruid2.tga"
+#unmountedspr1 "worthy_heroes/un_kelpdruid.tga"
+#unmountedspr2 "worthy_heroes/un_kelpdruid2.tga"
+#descr "The kelp forests of the seas are beautiful beyond measure and important to the people of Pelagia. Sometime ago, one Amber Clan Priest heard the forest calling him in his sleep. He answered the call and was changed forever. He is the sacred caretaker of the Kelp Forests, possessing awesome might in divine and nature magic. Sea animals follow his command and no creature of the wild would dare to harm him. He has now decided to serve the awakening god, for he knows that if Pelagia should fall in Ascension Wars, the future of the kelp forests will be grim."
+#str 11
+#att 10
+#def 10
+#hp 18
+#mountmnr 9069 -- Sea Stag
+#skilledrider 4
+#animalawe 3
+#aquatic
+#itemslots 860678
+#weapon 7  -- Quarterstaff
+#domsummon20 1062  -- Sea lion
+#summon1 1064  -- Sea dog
+#mapmove 20
+#enc 5
+#prec 11
+#ap 27
+#prot 4
+#mr 16
+#mor 15
+#gcost 0
+#magicskill 6 4
+#magicskill 2 2
+#magicskill 9 2
+#magicskill 3 1
+#size 5
+#holy
+#goodleader
+#maxage 60
+#startage 50
+#end
+
+#newmonster 9069
+#copystats 1062
+#copyspr 1062
+#mr 14
+#end
+
+#newmonster 8178
+#name "Black Prince"
+#fixedname "Sirashu"
+#spr1 "worthy_heroes/superprince.tga"
+#spr2 "worthy_heroes/superprince2.tga"
+#unmountedspr1 "worthy_heroes/un_superprince.tga"
+#unmountedspr2 "worthy_heroes/un_superprince2.tga"
+#descr "Life underneath the waves corresponds in many ways to that on dry land. Just as there is a single black unicorn, there is a single black hippocampus. This hippocampus was found and befriended by an ambitious Triton Prince, who has now risen in the ranks of Triton nobility like a shooting star. While patrolling the border, he saved the legendary Lord of Pearls from a horde of sea trolls and was gifted with magical pearl armaments. The black hippocampus is the fastest steed in Pelagia and its unsurpassed healing powers can close the prince's wounds nearly instantaneously. On his never-ending quest for glory and fame, he has now decided to serve the awakening god."
+#str 14
+#att 14
+#def 14
+#hp 22
+#mountmnr 9070 -- Black Hippocampus
+#skilledrider 7
+#aquatic
+#itemslots 2040326
+#inspirational 1
+#weapon 389  -- Pearl Trident
+#weapon 4  -- Lance
+#armor 506 -- Enchanted Armor
+#armor 148  -- crown
+#armor 92  -- Enchanted Shield
+#onebattlespell "Personal Luck"  -- Luck
+#heal
+#regeneration 20
+#mapmove 26
+#enc 5
+#prec 11
+#ap 35
+#prot 2
+#mr 16
+#mor 15
+#gcost 1
+#size 5
+#holy
+#expertleader
+#maxage 70
+#startage 40
+#end
+
+#newmonster 9070
+#copystats 3645 -- Sacred Hippocampus
+#name "Black Hippocampus"
+#descr "Life underneath the waves corresponds in many ways to that on dry land. Just as there is a single black unicorn, there is a single black hippocampus. The black hippocampus is the fastest steed in Pelagia and its unsurpassed healing powers can close the prince's wounds nearly instantaneously."
+#spr1 "worthy_heroes/superprincehippoc.tga"
+#spr2 "worthy_heroes/superprincehippoc2.tga"
+#bravemount 100
+#smartmount 100
+#prot 5
+#att 13
+#def 13
+#mr 15
+#regeneration 20
+#mor 19
+#end
+
 
 -- END OF NEW MONSTERS (Skip 8700~8818, 8900~9000 and 9600~9650)
 
@@ -59225,9 +59275,9 @@ Cannot be recruited until Break the Deadlock is cast."
 #armor 251
 #end
 
-#selectmonster 3644 -- Hippocampus
-#armor 264
-#end
+--#selectmonster 3644 -- Hippocampus
+--#armor 264
+--#end
 
 #selectmonster 3646 -- Kelpie
 #armor 264
@@ -83803,6 +83853,19 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #bodyguard 4
 #end
 
+#selectmonster 2391 -- Triton Rider
+#spr1 "vanilla/tritonrider1.tga"
+#spr2 "vanilla/tritonrider2.tga"
+#armor 134
+#end
+
+#selectmonster 3644
+#spr1 "vanilla/hippocampusmt1.tga"
+#spr2 "vanilla/hippocampusmt2.tga"
+#armor 137
+#gcost 10020
+#end
+
 #selectmonster 2404 -- MA Ichtysatyr 1 water - turtle armor, spear, net
 #copystats 1043 -- soldier water
 #spr1 "blue_oceania/maichtysatyrg1w1.png"
@@ -95069,24 +95132,15 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #newsite 2169
-#name "Pearl Foundry"  -- LAND
-#path 2 
+#name "Pearl Armory"  -- LAND
+#path 4 
 #level 0
 #rarity 5
+#look 5
 #res 50
 #nat 40 -- EA Pelagia
-#natmon 7358 -- Pearl Sideraspist
+#natmon 9067 -- Pearl Sideraspist
 #natcom 2814  -- Pelagian Explorer
-#end
-
-#newsite 2170
-#name "Pearl Armory"  -- WATER
-#path 2 
-#level 0
-#rarity 5
-#res 50
-#nat 40 -- EA Pelagia
-#natmon 2387  -- Pearl Guard
 #end
 
 #newsite 2171
@@ -95596,27 +95650,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 1
 #temple
 #com 7985 -- Imam
-#end
-
-#newsite 2219
-#name "Pearl Foundry "  -- LAND
-#path 2 
-#level 0
-#rarity 5
-#res 50
-#nat 86 -- MA Pelagia
-#natmon 7358 -- Pearl Sideraspist
-#natcom 2814  -- Pelagian Explorer
-#end
-
-#newsite 2220
-#name "Pearl Armory "  -- WATER
-#path 2 
-#level 0
-#rarity 5
-#res 50
-#nat 86 -- MA Pelagia
-#natmon 2387  -- Pearl Guard
 #end
 
 #newsite 2221
@@ -100761,6 +100794,42 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8173
 #homecom 8174
 #homecom 8175
+#end
+
+
+#newsite 2550
+#name "EA Pelagia Summons"
+#level 0
+#rarity 5
+#path 2
+#look 8
+#homemon 1058 -- hipp
+#homemon 974 -- icht
+#homemon 975 -- icht w
+#homemon 7614 -- laist hurl
+#homemon 7615 -- laist spear
+#homemon 7468 -- pearl w
+#homemon 7359 -- volans
+#homecom 7854 -- volans comm
+#homecom 976 -- icht lord
+#homecom 2804 -- icht sham
+#homecom 2805 -- icht pearl
+#homecom 7613 -- tanag triton
+#homecom 7251 -- pose
+#homecom 7276 -- cetus
+#homecom 8672 -- oyster
+#end
+
+#newsite 2551
+#name "EA Pelagia Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 2
+#homecom 2806
+#homecom 8176
+#homecom 8177
+#homecom 8178
 #end
 
 
@@ -106036,6 +106105,10 @@ Dominion: Dominion hides province ownership."
 #startunitnbrs1 20
 #startunittype2 2386  -- Coral Clan Soldier
 #startunitnbrs2 20
+
+#futuresite "Pearl Armory"
+#futuresite "EA Pelagia Summons"
+#futuresite "EA Pelagia Heroes"
 #end
 
 #selectnation 41 -- EA Oceania
@@ -122348,7 +122421,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #effect 10001
 #damage 7615 -- Laistrygones Spearman
 #nreff 1003
-#fatiguecost 500
+#fatiguecost 400
 #onlycoastsrc 1
 #nextspell 3075
 #restricted 40 -- EA Pelagia
@@ -122372,9 +122445,10 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 901 -- Wizards Tower
 #name "Pearl Citadel"
 #descr "The Pearl Mages of Pelagia are able to raise great gleaming citadels using the power of astral pearls. Such a fortress can be raised either below the waves or in the Closed Realm but only in a friendly province. The magic of the pearls will also create weapons and armor for the local commander to equip their troops."
-#details "Allows recruiting of Pearl Guard underwater or Pearl Sideraspists on land"
+#details "Allows recruiting of Pearl Sideraspists"
 #path 0 4
-#researchlevel 6
+#researchlevel 5
+#fatiguecost 4000
 #spec 8388608  -- cast UW
 #damage 29  -- Crystal Citadel
 #restricted 40 -- EA
@@ -122443,7 +122517,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 0
 #effect 10001
 #damage 974  -- Ichtyid
-#nreff 12
+#nreff 15
 #spec 8388608
 #nextspell 3083
 #end
@@ -122453,7 +122527,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Call Ichtyid Tribe"
 #descr "The caster calls a tribe of Ichtyids to serve them. Most Ichtyids aid Pelagia in service to Thaumas, foremost of the Pearl Kings and will honour this ancient debt. The tribe will include a Shaman and a Pearl Mage aswell as many Ichtyids and warriors. More powerful mages will be able to call larger and more warlike tribes."
 #damage 975  -- Ichtyid Warrior
-#nreff 3006
+#nreff 3016 -- 25+++
 #fatiguecost 2000
 #restricted 40
 #nextspell 3084
@@ -122498,7 +122572,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 2
 #pathlevel 0 2
 #pathlevel 1 1
-#fatiguecost 1000
+#fatiguecost 1500
 #nreff 5
 #damage 7468 -- Pearl Warrior
 #restricted 40
@@ -135988,7 +136062,7 @@ Applies the effects of Holy Avenger to the caster"
 #name "Call Calydonian Boar"
 #descr "The caster summons a Calydonian Boar and binds it to his service. The Calydonian Boar is a horrible monster boar with burning eyes, spear-like bristles of iron and tusks like that of an elephant. Anyone unfortunate enough to come close to the dreadful beast is set ablaze by the scorching heat of its eyes. The boar breathes flames and its tusks crackles with lightning. Like all boars, Calydonian Boars are sacred to the people of Marverni."
 #damage 9045 -- S Calyd Boar
-#fatiguecost 500
+#fatiguecost 800
 #researchlevel 6
 #end
 
@@ -137831,7 +137905,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 1057 -- Calydonian Boar
-#fatiguecost 500
+#fatiguecost 800
 #end
 
 #selectspell 1050 -- Catoblepas
@@ -153112,12 +153186,14 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_land 1
 #req_fornation 40
 #req_ench 273 -- Ench73
-#req_nositenbr 2169
+--#req_nositenbr 2169 -- EA Foundry
+#req_nositenbr 2170 -- EA Armory
 #req_pop0ok
 #msg "Add Pearl Foundry site - Land"
 #notext
 #nolog
-#addsite 2169
+--#addsite 2169 -- EA Foundry
+#addsite 2170 -- EA Armory
 #end
 
 #newevent
@@ -153125,38 +153201,12 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_land 0
 #req_fornation 40
 #req_ench 273 -- Ench73
-#req_nositenbr 2235
+#req_nositenbr 2170 -- EA Armory
 #req_pop0ok
 #msg "Add Pearl Armory site - Water"
 #notext
 #nolog
-#addsite 2235
-#end
-
-#newevent
-#rarity 5
-#req_land 1
-#req_fornation 86
-#req_ench 273 -- Ench73
-#req_nositenbr 2219
-#req_pop0ok
-#msg "Add Pearl Foundry site - Land"
-#notext
-#nolog
-#addsite 2219
-#end
-
-#newevent
-#rarity 5
-#req_land 0
-#req_fornation 86
-#req_ench 273 -- Ench73
-#req_nositenbr 2220
-#req_pop0ok
-#msg "Add Pearl Armory site - Water"
-#notext
-#nolog
-#addsite 2220
+#addsite 2170 -- EA Armory
 #end
 
 #newevent
