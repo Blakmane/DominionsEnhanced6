@@ -54607,7 +54607,7 @@ This Guul has recently returned from the Underworld and cannot become a Lich yet
 #spr2 "blue_dirgen/blue_abyssalonewark2.tga"
 #name "Abyssal Wark"
 #descr "Abyssal Wark are deep ones wearing armor designed and enchanted by the Thram'zu, wielding a dreadful weapon of bone and teeth designed to grapple targets and make them bleed.
-Abyssal Wark can only be recruited while a Thram'zu is present."
+Abyssal Wark can only be recruited while Thram'zu are present."
 #rpcost 17
 #rcost 1
 #hp 12
@@ -54752,7 +54752,7 @@ Abyssal Spearmen can only be recruited at Basalt Cities."
 #spr2 "blue_dirgen/blue_shamblerwark2.tga"
 #name "Shambler Wark"
 #descr "Shambler Wark are shamblers wearing armor designed and enchanted by the Thram'zu, wielding a dreadful weapon of bone and teeth designed to grapple targets and make them bleed.
-Abyssal Wark can only be recruited while a Thram'zu is present. Cost 41 RP."
+Shambler Wark can only be recruited while Thram'zu are present. Cost 41 RP."
 #rpcost 41
 #rcost 1
 #hp 26 -- +1
@@ -54782,7 +54782,7 @@ Abyssal Wark can only be recruited while a Thram'zu is present. Cost 41 RP."
 #startage 155
 #nametype 117
 #darkvision 100
---#reclimit 5
+#reclimit 3
 #twiceborn 8737 -- Wight Mage
 #end
 
@@ -97292,13 +97292,13 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #name "Dirgen Heroes"
 #level 0
 #rarity 5
-#path 4 -- Astral
+#path 9 -- Astral
+#look 8
 #homecom 8777 -- Coral Kurvant
 #homecom 8778 -- Pearl Kurvant
 #homecom 8779 -- Gold Kurvant
 #homecom 8776 -- Kurvant Lich
 #homecom 8775 -- Abyssal Queen
-#look 1
 #end
 
 #newsite 2324
@@ -115608,7 +115608,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #effect 10089
 #damage 7418 -- God Spirit
 #nreff 1
-#fatiguecost 3500
+#fatiguecost 5500
 #onlyatsite 61  -- God Mountain
 #restricted 76 -- MA Machaka
 #end
