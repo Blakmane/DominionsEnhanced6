@@ -3584,6 +3584,18 @@
 #halfstr
 #end
 
+#newweapon 1873 -- Big Web
+#name "Enweb"
+#dt_aff
+#dmg 536870912 -- web
+#norepel
+#unrepel
+#nostr
+#bonus
+#ammo 1001
+#len -1
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -27003,15 +27015,56 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #descr "Even death is not the end for a being as powerful as a God. The Spirit of God Mountain has been brought back to aid the people of Machaka. Returning from the dead has affected the mind of the God and the Spirit may act erratically on occasion. It has emerged from the lightless cavern and has brought the darkness with it, however it still draws strength from the God Mountain. The God Spirit can cast powerful ritual spells and extend its spells over a great range, however in direct conflict it will be weaker. Hunter Spiders will come to aid the Spirit each month."
 #djinn
 #hp 94
+#str 20
+#mor 30
+#def 12
+#att 12
+#ap 24
+#prot 20
+#spiritform
 #size 10
 #homerealm 0
+#str 10
+#magicskill 0 2 -- F
+#magicskill 5 3 -- D
+#magicskill 6 2 -- N
+#magicskill 7 3 -- G
+#masterrit 2
+#allrange 2
+#gcost 0
+#mor 18
+#itemslots 860678
+#magicbeing
+#unique
+#noleader
+#mountainsurvival
+#ethereal
+#onebattlespell 864 -- Darkness
+#shatteredsoul 5
+--#randomspell 10
+#darkpower 3
+#gemprod 3 1
+#domsummon2 888 -- Hunter Spider
+#summon1 9072 -- Elephant Spider
+#clearweapons
+#weapon 719  -- Life Drain
+#weapon 52  -- Death Poison
+#end
+
+#newmonster 7587
+#copystats 178  -- Lich
+#name "God Spirit"
+#fixedname "Kivuli"
+#spr1 "magicenhanced/eegodspirit.tga"
+#spr2 "magicenhanced/eegodspirit2.tga"
+#descr "Even death is not the end for a being as powerful as a God. The Spirit of God Mountain has been brought back to aid the people of Machaka. Returning from the dead has affected the mind of the God and the Spirit may act erratically on occasion. It has emerged from the lightless cavern and has brought the darkness with it, however it still draws strength from the God Mountain. The God Spirit can cast powerful ritual spells and extend its spells over a great range when at God Mountain, however in direct conflict it will be weaker. Hunter Spiders will come to aid the Spirit each month."
+#hp 94
+#size 10
 #str 10
 #magicskill 5 2
 #magicskill 0 2
 #magicskill 6 1
 #magicskill 6 1
-#masterrit 2
-#allrange 2
 #gcost 0
 #mor 18
 #itemslots 860678
@@ -27024,7 +27077,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #shatteredsoul 10
 #randomspell 10
 #darkpower 3
-#gemprod 3 1
 #domsummon2 888  -- Hunter Spider
 #weapon 719  -- Life Drain
 #weapon 52  -- Death Poison
@@ -30525,37 +30577,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 20  -- Bite
 #weapon 236  -- Claw
 #weapon 185  -- Lightning Swarm
-#end
-
-#newmonster 7587
-#copystats 178  -- Lich
-#name "God Spirit"
-#fixedname "Kivuli"
-#spr1 "magicenhanced/eegodspirit.tga"
-#spr2 "magicenhanced/eegodspirit2.tga"
-#descr "Even death is not the end for a being as powerful as a God. The Spirit of God Mountain has been brought back to aid the people of Machaka. Returning from the dead has affected the mind of the God and the Spirit may act erratically on occasion. It has emerged from the lightless cavern and has brought the darkness with it, however it still draws strength from the God Mountain. The God Spirit can cast powerful ritual spells and extend its spells over a great range when at God Mountain, however in direct conflict it will be weaker. Hunter Spiders will come to aid the Spirit each month."
-#hp 94
-#size 10
-#str 10
-#magicskill 5 2
-#magicskill 0 2
-#magicskill 6 1
-#magicskill 6 1
-#gcost 0
-#mor 18
-#itemslots 860678
-#magicbeing
-#unique
-#noleader
-#mountainsurvival
-#ethereal
-#onebattlespell 864 -- Darkness
-#shatteredsoul 10
-#randomspell 10
-#darkpower 3
-#domsummon2 888  -- Hunter Spider
-#weapon 719  -- Life Drain
-#weapon 52  -- Death Poison
 #end
 
 #newmonster 7588
@@ -53238,6 +53259,90 @@ Cost 56 RP."
 #regeneration 20
 #mor 19
 #end
+
+
+
+#newmonster 9071
+#copystats 889  -- Black Hunter
+#clearweapons
+#name "Elephant Spider Captain"
+#spr1 "magicenhanced/eeelephantspider1.tga"
+#spr2 "magicenhanced/eeelephantspider2.tga"
+#xspr1 "magicenhanced/eeelephantspider1_2.tga"
+#xspr2 "magicenhanced/eeelephantspider2_2.tga"
+#unmountedspr1 "magicenhanced/eeelephantspiderrider1.tga"
+#unmountedspr2 "magicenhanced/eeelephantspiderrider1.tga"
+#descr "In the God Forest, monstrous spiders large enough to catch elephants live. Hunter Spiders are caught and trained by sorcerers as mounts for the Black Hunters. But even larger than that are the Elephant Spiders, titanic arachnids usually found spinning their webs in the giant caves of God Mountain. Elephant Spiders are rare and can only be tamed by magic. They are rumored to be servants to a dead god and their presence fills most beings with dread."
+#mountmnr 9072
+#coridermnr 9073
+#nofriders 2
+#drawsize 0
+#gcost 0
+#prot 6 -- 'saddle'
+#hp 10
+#mr 12
+#def 12
+#att 12
+#mor 15
+#holy
+#twiceborn 6644 -- Wight Beast
+#weapon 8 -- sword
+#armor 14 -- plate hauberk
+#armor 20 -- iron cap
+#end
+
+#newmonster 9072 -- unit
+#copystats 888 -- Hunter Spider
+#name "Elephant Spider"
+#spr1 "magicenhanced/eeelephantspider1_u.tga"
+#spr2 "magicenhanced/eeelephantspider2_u.tga"
+#descr "In the God Forest, monstrous spiders large enough to catch elephants live. Hunter Spiders are caught and trained by sorcerers as mounts for the Black Hunters. But even larger than that are the Elephant Spiders, titanic arachnids usually found spinning their webs in the giant caves of God Mountain. Elephant Spiders are rare and can only be tamed by magic. They are rumored to be servants to a dead god and their presence fills most beings with dread."
+#gcost 0
+#fear 10
+#size 10
+#hp 105
+#prot 18
+#mor 20
+#ap 14
+#str 20
+#att 15
+#def 13
+#mr 14
+#enc 1
+#holy
+#twiceborn 6644 -- Wight Beast
+#nothrowoff
+#bravemount 100
+#clearweapons
+#weapon 65 -- fangs
+#weapon 1873 -- big web
+#weapon 262 -- web spit
+#end
+
+#newmonster 9073 -- unit corider
+#copystats 3643  -- Elephant Spearman
+#clearweapons
+#cleararmor
+#name "Elephant Spider Rider"
+#spr1 "magicenhanced/eeelephantspiderrider1_2.tga"
+#spr2 "magicenhanced/eeelephantspiderrider2_2.tga"
+#descr "In the God Forest, monstrous spiders large enough to catch elephants live. Hunter Spiders are caught and trained by sorcerers as mounts for the Black Hunters. But even larger than that are the Elephant Spiders, titanic arachnids usually found spinning their webs in the giant caves of God Mountain. Elephant Spiders are rare and can only be tamed by magic. They are rumored to be servants to a dead god and their presence fills most beings with dread."
+#gcost 0
+#rpcost 10
+#prot 6 -- 'saddle'
+#hp 10
+#mr 12
+#def 11
+#att 11
+#mor 15
+#holy
+#twiceborn 6644 -- Wight Beast
+#weapon 1 -- spear
+#armor 14 -- plate hauberk
+#armor 20 -- iron cap
+#end
+
+
 
 
 -- END OF NEW MONSTERS (Skip 8700~8818, 8900~9000 and 9600~9650)
@@ -81068,6 +81173,10 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 
+#selectmonster 882  -- Machaka Hoplite
+#gcost 10012
+#end
+
 #selectmonster 884  -- Great Spider
 #unsurr 2
 #twiceborn 7443 -- Size 4 Wight Beast
@@ -95168,7 +95277,9 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #rarity 5
 #gems 3 1
+#gems 7 1
 #homecom 894  -- Black Sorceror
+#homecom 3652 -- Anansi
 #homecom 891  -- Sorceress
 #homecom 877  -- Bane Spider
 #homemon 876  -- Spider Warrior
@@ -100833,6 +100944,46 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 
+#newsite 2552
+#name "MA Machaka Summons"
+#level 0
+#rarity 5
+#path 6
+#look 6
+#homemon 628 -- lion
+#homemon 2398 -- ele
+#homemon 1721 -- und bandar
+--#homemon 1722 -- und bandar w
+#homemon 7511 -- biloko
+#homemon 7342 -- lesser hunter
+#homemon 888 -- hunter
+--#homemon 9071 -- ele spider rider
+#homemon 9072 -- ele spider
+#homemon 7416 -- mokele
+#homecom 2223 -- spider
+#homecom 7270 -- aziza
+#homecom 7312 -- impund
+#homecom 7509 -- adze
+#homecom 7902 -- alusi
+#homecom 7908 -- fossil colossi
+#homecom 7418 -- kivuli
+#homecom 7584 -- spirit of the hunter
+#end
+
+#newsite 2553
+#name "MA Machaka Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 3
+#homecom 946
+#homecom 952
+#homecom 953
+#homecom 1426
+#homecom 1706
+#end
+
+
 
 -- END OF NEW SITES
 
@@ -106466,6 +106617,9 @@ Dominion: Laws may be enacted that ban blood and increase scales"
 #startunittype2 879  -- Machaka Archer
 #startunitnbrs2 30
 #startscout 2288  -- Machaka Scout
+
+#futuresite "MA Machaka Summons"
+#futuresite "MA Machaka Heroes"
 #end
 
 #selectnation 59 -- MA Agartha
@@ -115175,6 +115329,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #copyspell 820 -- Swarm
 #name "Spider Swarm"
 #descr "The caster summons and transforms several spiders. The enlarged spiders aren't very dangerous, however their poisonous bites can overwhelm those they attack."
+#school -1
 #researchlevel 1
 #path 1 5
 #pathlevel 1 1
@@ -115182,7 +115337,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #nreff 2002
 #spec 0
 #fatiguecost 40
-#restricted 76 -- MA Machaka
+--#restricted 76 -- MA Machaka
 #end
 
 #selectspell 2577
@@ -115233,6 +115388,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #copyspell 939 -- Summon Lesser Fire Elemental
 #name "Enlarge Spider"
 #descr "The caster flings a poisonous spider at his enemies and enlarges it to titanic size with magic. The spider will be under the control of the caster for the duration of the battle, however they are quite stupid and may attack any nearby units."
+#school -1
 #researchlevel 4
 #range 10
 #path 0 6
@@ -115241,7 +115397,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #pathlevel 1 1
 #damage 888  -- Hunter Spider
 #fatiguecost 80
-#restricted 76 -- MA Machaka
+--#restricted 76 -- MA Machaka
 #end
 
 #selectspell 2581
@@ -115305,14 +115461,15 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #copyspell 250 -- Poison Touch
 #name "Spider Bites"
 #descr "The caster points at a target who immediately feels tiny bites all over their body. The target will be poisoned by the phantasmal spiders. Armour provides no defence from the bites."
-#school 2
+-#school 2
+#school -1
 #researchlevel 5
 #precision 100
 #aoe 0
 #range 15
 #fatiguecost 20
 #sound 85  -- Snake attack
-#restricted 76 -- MA Machaka
+--#restricted 76 -- MA Machaka
 #end
 
 #selectspell 2585
@@ -136201,6 +136358,26 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #damage 9047
 #restricted 73 -- MA Mictlan
 #end
+
+
+#selectspell 4189
+#copyspell 935 -- Pack of Wolves
+#name "Summon Elephant Spider"
+#descr "The caster summons an Elephant Spider. In the God Forest, monstrous spiders large enough to catch elephants live. Hunter Spiders are caught and trained by sorcerers as mounts for the Black Hunters. But even larger than that are the Elephant Spiders, titanic arachnids usually found spinning their webs in the giant caves of God Mountain. Elephant Spiders are rare and can only be tamed by magic. They are rumored to be servants to a dead god and their presence fills most beings with dread."
+#researchlevel 5
+#path 0 5
+#path 1 7
+#pathlevel 0 2
+#pathlevel 1 1
+#damage 9072 -- elephant spider
+#nreff 1
+#fatiguecost 300
+#restricted 76 -- MA Machaka
+#onlyatsite 60
+#end
+
+
+
 
 -- END OF NEW SPELLS
 
