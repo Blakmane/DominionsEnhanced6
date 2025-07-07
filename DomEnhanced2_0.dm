@@ -2409,7 +2409,7 @@
 #end
 
 #newweapon 1726
-#name "Hateful vines"
+#name "Hateful Vines"
 #dmg -5
 #att -1
 #len 4
@@ -23726,9 +23726,10 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 
 #newmonster 7267
 #copystats 1026  -- Carrion Dragon
+#copyspr 1026  -- Carrion Dragon
 #clearspec
-#spr1 "magicenhanced/eecarriondragon.tga"
-#spr2 "magicenhanced/eecarriondragon2.tga"
+--#spr1 "magicenhanced/eecarriondragon.tga"
+--#spr2 "magicenhanced/eecarriondragon2.tga"
 #clearmagic
 #descr "This Carrion Dragon is an ancient Dragon brought to life through the unholy rites of the Carrion Lords. These rites force the soul of a dead Dragon to rejoin its own moss-covered carcass. The carcass is entwined with vines and roots that have a life of their own. The Carrion Dragon is a powerful wielder of Nature magic, but is also given unholy powers over the dead. The Carrion Dragon is able to adopt the shape of a dead Pan. The body of the Carrion Dragon is less suited for spell casting than the shape of the Pan and in dragon shape most of its magic skills are reduced. The paths of Death and Nature are innate to the Carrion Dragon and his skills in those paths are less reduced. The Carrion Dragon will spread the sleeping sickness of Asphodel and nearby enemy units may fall into a dreamless slumber. In lands free of civilization it will grow stronger, but it will weaken where men toil."
 #lizard
@@ -23738,7 +23739,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #str 17
 #ap 8
 #slothpower 1
-#sleepaura 9
+#sleepaura 5
 #pooramphibian
 #pierceres
 #magicbeing
@@ -23781,7 +23782,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #ap 8
 #enc 2
 #slothpower 1
-#sleepaura 9
+#sleepaura 5
 #pooramphibian
 #pierceres
 #magicbeing
@@ -32654,19 +32655,19 @@ While in the form of an old man, all paths are increased and allows the use of N
 #end
 
 #newmonster 7675
-#copystats 718  -- Carrion Beast
+#copystats 719  -- Carrion Beast
 #clearweapons
 #clearspec
 #name "Carrion Beast"
 #spr1 "magicenhanced/eecarrionbeast.tga"
 #spr2 "magicenhanced/eecarrionbeast2.tga"
-#descr "An animal skeleton reanimated by living vines and roots. Its vines strike like whips and their touch can make men fall asleep. In lands free of civilization it will grow stronger, but it will weaken where men toil."
+#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of a dead animal, creating a carrion beast. Its vines strike like whips and their touch can make men fall asleep. "
 #quadruped
-#att 5
-#def 5
-#str 19
-#slothpower 1
-#enc 2
+--#att 5
+--#def 5
+--#slothpower 1
+--#str 19
+--#enc 2
 #pooramphibian
 #pierceres
 #magicbeing
@@ -37050,13 +37051,13 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr1 "magicenhanced/eevinestatue.tga"
 #spr2 "magicenhanced/eevinestatue2.tga"
 #name "Overgrown Statue"
-#descr "This statue of a soldier wreathed in vines has been given false life by the enchanting Dominion of Asphodel. In lands free of civilization it will grow stronger, but it will weaken where men toil. It bears a stone spear covered in poisonous thorns. The statue is difficult to destroy but will revert to an inanimate state if left on the battlefield without magical leadership."
+#descr "This statue of a soldier wreathed in vines has been given false life by the enchanting Dominion of Asphodel. It bears a stone spear covered in poisonous thorns. The statue is difficult to destroy but will revert to an inanimate state if left on the battlefield without magical leadership."
 #weapon 1772
-#att 9
-#def 9
-#str 13
+#att 10
+#def 10
+#str 14
 #ap 8
-#slothpower 1
+--#slothpower 1
 #end
 
 #newmonster 7904
@@ -46526,17 +46527,17 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #copystats 313  -- Manikin
 #copyspr 313  -- Manikin
 #clearspec
-#descr "A human skeleton reanimated by living vines and roots. Its vines strike like whips and their touch can make men fall asleep. In lands free of civilization it will grow stronger, but it will weaken where men toil."
-#att 6
-#def 6
-#str 10
-#slothpower 1
+#descr "A human skeleton reanimated by living vines and roots. Its vines strike like whips and their touch can make men fall asleep."
+--#att 6
+--#def 6
+--#str 10
+--#slothpower 1
 #pooramphibian
 #pierceres
 #magicbeing
 #neednoteat
 #mor 50
-#enc 3
+--#enc 3
 #forestsurvival
 #spiritsight
 #poisonres 25
@@ -62709,8 +62710,9 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #newmonster 7480 -- Tree of Hate
-#copystats 2234
+#copystats 981
 #copyspr 981
+#name "Tree of Hate"
 #descr "The Tree of Hate is a vengeful spirit of nature inhabiting a great dead tree. In ages past it lived in the center of a great woodland and brought life and growth to the forest, however with the coming of Man the forest was burned and the tree withered and died. For long years the spirit was trapped within the dead trunk as insects burrowed into its rotting form. Now, with disappearance of the Pantokrator it has emerged to take on the mantle of a Pretender God and exact vengeance upon the world of men. The spirit can animate the tree to defend against attackers or perform tasks such as forging items, but it cannot uproot and move around. It is powerful in its Dominion, however in a physical battle it would be possible to chop down the tree."
 #diseaseres 100
 #gcost 110
@@ -62722,10 +62724,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #hp 220
 #prot 16
 #mastersmith 0
-#copyspr 981  -- Dying Treelord
 #ivylord 0
-#batstartsum3 0  -- Remove Bears
-#batstartsum5d6 -9  -- Bugs
 #undead
 #inanimate
 #pooramphibian
@@ -64891,7 +64890,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #clearspec
 #humanoid
 #ap 8
-#enc 3
+#enc 0
 #slothpower 1
 #sleepaura 6
 #pooramphibian
@@ -74224,7 +74223,20 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #att 16
 #def 10
 #mr 18
-
+#clearspec
+#slothpower 1
+#sleepaura 6
+#pooramphibian
+#pierceres
+#magicbeing
+#neednoteat
+#forestsurvival
+#spiritsight
+#poisonres 25
+#plant
+#mor 30
+#goodleader
+#shapechange 1027
 #itemslots 18620416
 #clearmagic
 #magicskill 5 2
@@ -74242,7 +74254,21 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #att 8
 #def 8
 #mr 18
-
+#clearspec
+#slothpower 1
+#sleepaura 6
+#pooramphibian
+#pierceres
+#magicbeing
+#neednoteat
+#forestsurvival
+#spiritsight
+#poisonres 25
+#plant
+#mor 30
+#goodleader
+#shapechange 1026
+#diseaseres 100
 #itemslots 2040326
 #clearmagic
 #magicskill 5 2
@@ -79092,7 +79118,20 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #att 14
 #def 9
 #mr 18
-
+#clearspec
+#slothpower 1
+#powerofdeath 3
+#sleepaura 6
+#pooramphibian
+#pierceres
+#magicbeing
+#neednoteat
+#forestsurvival
+#spiritsight
+#poisonres 25
+#plant
+#goodleader
+#diseaseres 100
 #itemslots 991750
 #clearmagic
 #magicskill 5 2
@@ -79111,7 +79150,19 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #att 14
 #def 9
 #mr 18
-
+#clearspec
+#growthpower 1
+#powerofdeath 3
+#pooramphibian
+#pierceres
+#magicbeing
+#neednoteat
+#forestsurvival
+#spiritsight
+#poisonres 25
+#plant
+#goodleader
+#diseaseres 100
 #itemslots 991750
 #clearmagic
 #magicskill 5 2
@@ -79498,17 +79549,17 @@ Initiates of the Deep can be recruited in any land fort."
 
 #selectmonster 314  -- Mandragora
 #clearspec
-#descr "A human skeleton reanimated by living vines and roots. Its vines strike like whips and their touch can make men fall asleep. In lands free of civilization it will grow stronger, but it will weaken where men toil."
-#att 8
-#def 8
-#str 14
-#slothpower 1
+#descr "A human skeleton reanimated by living vines and roots. Its vines strike like whips and their touch can make men fall asleep."
+--#att 8
+--#def 8
+--#str 14
+--#slothpower 1
 #pooramphibian
 #pierceres
 #magicbeing
 #neednoteat
 #mor 50
-#enc 3
+--#enc 3
 #forestsurvival
 #spiritsight
 #poisonres 25
@@ -80501,9 +80552,9 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #def 8
 #str 19
 #ap 8
-#enc 3
+--#enc 3
 #slothpower 1
-#sleepaura 9
+#sleepaura 4
 #pooramphibian
 #pierceres
 #magicbeing
@@ -80522,18 +80573,19 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 711  -- Carrion Lady
 #clearmagic
-#magicskill 5 2
-#magicskill 6 2
-#magicskill 9 2
+#magicskill 5 2 -- N
+#magicskill 6 1 -- D
+#magicskill 9 2 -- H
+#custommagic 20480 100 -- DG
 #clearspec
 #descr "A Carrion Lady is a dead dryad reanimated and given unholy powers by a Panic Apostate, who forces the soul of the dead dryad to rejoin its own moss-covered carcass. The carcass is entwined with vines and roots that have a life of their own. The Carrion Lady has retained some of her former skills in the use of Nature magic, but her priestly powers are corrupted. She has unholy powers over the dead and is able to create manikins by animating vines, roots and the bones of dead beasts. Their minds are clouded by the will of the Apostates and they perform poorly at other tasks. The presence of a Carrion Lady will spread the sleeping sickness of Asphodel, and nearby enemies may fall into a dreamless slumber. In lands free of civilization she will grow stronger, but she will weaken where men toil."
 #att 9
 #def 11
 #str 11
 #ap 8
-#enc 3
+--#enc 3
 #slothpower 1
-#sleepaura 6
+#sleepaura 3
 #pooramphibian
 #pierceres
 #magicbeing
@@ -80554,18 +80606,18 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 712  -- Satyr Manikin
 #clearspec
-#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of dead satyrs, creating the satyr manikins. In lands free of civilization they will grow stronger, but they will weaken where men toil."
-#att 6
-#def 8
-#str 11
-#ap 6
-#slothpower 1
+#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of dead satyrs, creating the satyr manikins."
+--#att 6
+--#def 8
+--#str 11
+--#ap 6
+--#slothpower 1
 #pooramphibian
 #pierceres
 #magicbeing
 #neednoteat
 #mor 50
-#enc 3
+--#enc 3
 #forestsurvival
 #spiritsight
 #poisonres 25
@@ -80575,18 +80627,18 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #selectmonster 713  -- Harpy Manikin
 #mapmove 22
 #clearspec
-#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of a dead harpy. The strange apparition lacks the ability to fly and can only hop. In lands free of civilization it will grow stronger, but it will weaken where men toil."
-#att 4
-#def 4
-#str 8
+#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of a dead harpy. The strange apparition lacks the ability to fly and can only hop."
+--#att 4
+--#def 4
+--#str 8
 #mapmove 22
-#slothpower 1
+--#slothpower 1
 #pooramphibian
 #pierceres
 #magicbeing
 #neednoteat
 #mor 50
-#enc 3
+--#enc 3
 #forestsurvival
 #spiritsight
 #poisonres 25
@@ -80604,7 +80656,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #def 11
 #str 15
 #ap 18
-#enc 3
+--#enc 3
 #slothpower 1
 #sleepaura 6
 #pooramphibian
@@ -80627,13 +80679,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 715
 #clearspec
-#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of dead animals, creating the carrion beasts. In lands free of civilization they will grow stronger, but they will weaken where men toil."
-#att 7
-#def 7
-#str 9
-#ap 16
-#enc 3
-#slothpower 1
 #pooramphibian
 #pierceres
 #magicbeing
@@ -80648,16 +80693,14 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 716
 #clearspec
-#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of dead animals, creating the carrion beasts. In lands free of civilization they will grow stronger, but they will weaken where men toil."
-#str 10
-#ap 12
-#slothpower 1
+#def 6
+#att 6
 #pooramphibian
 #pierceres
 #magicbeing
 #neednoteat
 #mor 50
-#enc 3
+--#enc 3
 #forestsurvival
 #spiritsight
 #poisonres 25
@@ -80667,16 +80710,12 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 717
 #clearspec
-#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of dead animals, creating the carrion beasts. In lands free of civilization they will grow stronger, but they will weaken where men toil."
-#str 14
-#ap 18
-#slothpower 1
 #pooramphibian
 #pierceres
 #magicbeing
 #neednoteat
 #mor 50
-#enc 3
+--#enc 3
 #forestsurvival
 #spiritsight
 #poisonres 25
@@ -80687,17 +80726,12 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 718
 #clearspec
-#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of dead animals, creating the carrion beasts. In lands free of civilization they will grow stronger, but they will weaken where men toil."
-#att 5
-#str 20
-#ap 8
-#slothpower 1
 #pooramphibian
 #pierceres
 #magicbeing
 #neednoteat
 #mor 50
-#enc 3
+--#enc 3
 #forestsurvival
 #spiritsight
 #poisonres 25
@@ -80705,6 +80739,93 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #itemslots 786432
 #montag 1061
 #montagweight 2
+#end
+
+#selectmonster 4028 -- Carrion Enkidu
+#clearspec
+#pooramphibian
+#pierceres
+#magicbeing
+#neednoteat
+#mor 50
+#forestsurvival
+#spiritsight
+#poisonres 25
+#plant
+#humanoid
+#end
+
+#selectmonster 4029 -- Carrion Ogre
+#clearspec
+#pooramphibian
+#pierceres
+#magicbeing
+#neednoteat
+#mor 50
+#forestsurvival
+#spiritsight
+#poisonres 25
+#plant
+#humanoid
+#end
+
+#selectmonster 4030 -- Carrion Giant
+#clearspec
+#pooramphibian
+#pierceres
+#magicbeing
+#neednoteat
+#mor 50
+#forestsurvival
+#spiritsight
+#poisonres 25
+#plant
+#humanoid
+#end
+
+#selectmonster 4031 -- Carrion Titan
+#clearspec
+#pooramphibian
+#pierceres
+#magicbeing
+#neednoteat
+#mor 50
+#forestsurvival
+#spiritsight
+#poisonres 25
+#plant
+#humanoid
+#end
+
+#selectmonster 3851 -- Carrion Commander
+#clearspec
+#pooramphibian
+#pierceres
+#magicbeing
+#neednoteat
+#mor 50
+#forestsurvival
+#spiritsight
+#poisonres 25
+#plant
+#humanoid
+#end
+
+#selectmonster 4027 -- Carrion Fury
+#clearspec
+#pooramphibian
+#pierceres
+#magicbeing
+#neednoteat
+#mor 50
+#forestsurvival
+#spiritsight
+#poisonres 25
+#plant
+#holy
+#berserk 5
+#heal
+#humanoid
 #end
 
 #selectmonster 725  -- Sun Warrior
@@ -80854,12 +80975,12 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #ap 28
 #slothpower 1
 #berserk 0
-#sleepaura 3
-#gcost 10040
+#sleepaura 1
+#gcost 10045
 #weapon 651  -- Bronze lance
 #weapon 55  -- Hoof
 #weapon 21  -- Javelin
-#descr "The awakening of the Vengeful Woods has altered the very essence of Asphodel's inhabitants. No longer are white calves born in the Sacred Groves. Instead, black centaurs are born, mirroring the dark mood of the forests. These black calves are trained as sacred warriors and emissaries of the wild. The presence of a Black Centaur will spread the sleeping sickness of Asphodel, and nearby enemies may fall into a dreamless slumber. In lands free of civilization they will grow stronger, but they will weaken where men toil."
+#descr "The awakening of the Vengeful Woods has altered the very essence of Asphodel's inhabitants. No longer are white foals born in the Sacred Groves. Instead, black centaurs are born, mirroring the dark mood of the forests. These black calves are trained as sacred warriors and emissaries of the wild. The presence of a Black Centaur will spread the sleeping sickness of Asphodel, and nearby enemies may fall into a dreamless slumber. In lands free of civilization they will grow stronger, but they will weaken where men toil."
 #end
 
 #selectmonster 788 -- tc horseman
@@ -81080,7 +81201,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 861  -- Ettin Mandragora
 #clearspec
-#clearweapons
 #fixedname "Ambicephalos"
 #descr "Ettins are the horrible result of cross-breeding experiments. While alive, Ambicephalos attacked the dark woods; after his death, the Vengeful God forced his soul back in his body and made him realize the atrocities that his creators had committed to create him. His hatred against the living has suffused the vines animating him, and some will detach to reanimate anyone they strike down. The presence of the Ettin Mandragora will spread the sleeping sickness of Asphodel, and nearby enemies may fall into a dreamless slumber. In lands free of civilization it will grow stronger, but it will weaken where men toil."
 #att 11
@@ -81088,7 +81208,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #str 26
 #ap 14
 #slothpower 1
-#sleepaura 8
+#sleepaura 3
 #mor 30
 #pooramphibian
 #pierceres
@@ -81107,10 +81227,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #unsurr 1
 #raiseshape 314
 #itemslots 483342 -- 2 heads, 3 arms, 1 misc
-#weapon 1726
-#weapon 1726
-#weapon 1726
-#weapon 92
+--#clearweapons
+--#weapon 1726
+--#weapon 1726
+--#weapon 1726
+--#weapon 92
 #end
 
 
@@ -81434,18 +81555,18 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 1005  -- Minotaur Manikin
 #clearspec
-#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of dead minotaurs, creating the minotaur manikins. In lands free of civilization they will grow stronger, but they will weaken where men toil."
-#att 5
-#def 5
-#str 15
-#ap 6
-#slothpower 1
+#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of dead minotaurs, creating the minotaur manikins."
+--#att 5
+--#def 5
+--#str 15
+--#ap 6
+--#slothpower 1
 #pooramphibian
 #pierceres
 #magicbeing
 #neednoteat
 #mor 50
-#enc 3
+--#enc 3
 #forestsurvival
 #spiritsight
 #poisonres 25
@@ -81470,18 +81591,18 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 1006
 #clearspec
-#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of dead animals, creating the carrion beasts. In lands free of civilization they will grow stronger, but they will weaken where men toil."
-#att 5
-#str 21
-#ap 10
-#slothpower 1
+#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of dead animals, creating the carrion beasts."
+--#att 5
+--#str 21
+--#ap 10
+--#slothpower 1
 #pooramphibian
 #pierceres
 #magicbeing
 #neednoteat
 #trample
 #mor 50
-#enc 2
+--#enc 2
 #forestsurvival
 #spiritsight
 #poisonres 25
@@ -81634,7 +81755,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 1093
 #clearspec
-#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of dead Hierophants. The unholy power of the Vengeful God has granted the sagittarian carcass magical weapons made of wood and vines. Sagittarian carcasses are holy to the followers of the Vengeful God. In lands free of civilization they will grow stronger, but they will weaken where men toil."
+#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of dead Hierophants. The unholy power of the Vengeful God has granted the sagittarian carcass magical weapons made of wood and vines. Anyone hit by their arrows will get entangled and possibly infected by a carrion seed. Sagittarian carcasses are holy to the followers of the Vengeful God. In lands free of civilization they will grow stronger, but they will weaken where men toil."
 #att 7
 #def 9
 #str 14
@@ -81646,7 +81767,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #forestsurvival
 #spiritsight
 #holy
-#enc 3
+--#enc 3
 #poisonres 25
 #plant
 #end
@@ -83884,7 +84005,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #def 12
 #str 13
 #slothpower 1
-#sleepaura 3
+#sleepaura 1
 #end
 
 #selectmonster 2312  -- Heirophantide
@@ -83893,7 +84014,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #def 14
 #str 11
 #slothpower 1
-#sleepaura 3
+#sleepaura 1
 #end
 
 
@@ -100983,6 +101104,77 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 1706
 #end
 
+#newsite 2554
+#name "MA Asphodel Freespawn"
+#level 0
+#rarity 5
+#path 6
+#look 6
+#homemon 8521 -- manikin
+#homemon 314 -- mandra
+#homemon 712 -- satyr
+#homemon 713 -- harpy
+#homemon 715 -- woof
+#homemon 717 -- horse
+#homemon 716 -- boar
+#homemon 718 -- bear
+#homemon 1006 -- elephant
+#homemon 4027 -- fury
+#homemon 1093 -- sagitarrian
+#homemon 7903 -- statue
+#homecom 3851 -- carrion commander
+#end
+
+#newsite 2555
+#name "MA Asphodel Carrion Reanimation"
+#level 0
+#rarity 5
+#path 6
+#look 6
+#homemon 719 -- beast
+#homemon 715 -- woof
+#homemon 717 -- horse
+#homemon 716 -- boar
+#homemon 718 -- bear
+#homemon 1006 -- elephant
+#homemon 4028 -- enkidu
+#homemon 4029 -- ogre
+#homemon 4030 -- giant
+#homemon 4031 -- titan
+#end
+
+#newsite 2556
+#name "MA Asphodel Summons"
+#level 0
+#rarity 5
+#path 6
+#look 6
+#homemon 8020 -- dire bear
+#homemon 8021 -- dire boar
+#homemon 8022 -- dire tiger
+#homemon 1224 -- dire woof
+#homemon 7675 -- beast
+#homemon 7440 -- corrupt tree
+#homemon 1093 -- sagit
+#homecom 711 -- cent
+#homecom 714 -- lady
+#homecom 710 -- lord
+#homecom 7267 -- carrion dragon
+#homecom 7458 -- wild mandra
+#end
+
+#newsite 2557
+#name "MA Asphodel Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 3
+#homecom 8200
+#homecom 8199
+#homecom 863
+#homecom 861
+#end
+
 
 
 -- END OF NEW SITES
@@ -106751,7 +106943,7 @@ Military: Satyr and minotaur infantry, centaur warriors and archers, harpies, ho
 Magic: Nature, Death, some Earth and Water
 Priests: Average, Carrion priests can reanimate, Temples generate Nature gems
 Dominion: Causes dreamless slumber, greatly reducing tax income. Vines reanimate corpses as manikins and carrion beasts, more in forests. Temples and Growth scales increase reanimation rates. Magic scales give better reanimations."
-#domkill 0
+#domkill 2
 #templegems 6
 #spreadlazy 3
 #defdeath -3
@@ -106761,6 +106953,12 @@ Dominion: Causes dreamless slumber, greatly reducing tax income. Vines reanimate
 #templecost 900
 #forestlabcost 450
 #foresttemplecost 450
+
+#futuresite "MA Asphodel Freespawn"
+#futuresite "MA Asphodel Carrion Reanimation"
+#futuresite "MA Asphodel Summons"
+#futuresite "MA Asphodel Heroes"
+
 #end
 
 #selectnation 78 -- MA Vanheim
@@ -145985,218 +146183,6 @@ This will also prevent their skin from drying out."
 
 #newevent
 #rarity 5
-#req_domowner 53 -- Aspho
-#req_dominion 1
-#req_maxdominion 1
-#msg "Dominion taxloss."
-#notext
-#nolog
-#taxboost -20
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_dominion 2
-#req_maxdominion 2
-#msg "Dominion taxloss."
-#notext
-#nolog
-#taxboost -40
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_dominion 3
-#req_maxdominion 3
-#msg "Dominion taxloss."
-#notext
-#nolog
-#taxboost -50
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_dominion 4
-#req_maxdominion 4
-#msg "Dominion taxloss."
-#notext
-#nolog
-#taxboost -60
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_dominion 5
-#req_maxdominion 5
-#msg "Dominion taxloss."
-#notext
-#nolog
-#taxboost -65
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_dominion 6
-#req_maxdominion 6
-#msg "Dominion taxloss."
-#notext
-#nolog
-#taxboost -70
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_dominion 7
-#req_maxdominion 7
-#msg "Dominion taxloss."
-#notext
-#nolog
-#taxboost -75
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_dominion 8
-#req_maxdominion 8
-#msg "Dominion taxloss."
-#notext
-#nolog
-#taxboost -80
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_dominion 9
-#req_maxdominion 9
-#msg "Dominion taxloss."
-#notext
-#nolog
-#taxboost -85
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_dominion 10
-#req_maxdominion 10
-#msg "Dominion taxloss."
-#notext
-#nolog
-#taxboost -90
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53
-#req_mydominion 0
-#req_maxdominion -1
-#msg "Dominion taxloss."
-#notext
-#nolog
-#taxboost -10
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53
-#req_mydominion 0
-#req_domchance 5
-#msg "Dominion taxloss."
-#notext
-#nolog
-#taxboost -40
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53
-#req_mydominion 0
-#req_domchance 5
-#msg "Dominion taxloss."
-#notext
-#nolog
-#taxboost -40
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_mydominion 1
-#req_owncapital 1
-#req_fort 1
-#req_domchance 10
-#nation -2
-#msg "Fort spawn statues."
-#notext
-#nolog
-#1unit 4883  -- Overgrown Statue
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_owncapital 0
-#req_fort 1
-#req_mydominion 1
-#req_dominion 5
-#req_domchance 5
-#nation -2
-#msg "Fort spawn statues."
-#notext
-#nolog
-#1unit 4883  -- Overgrown Statue
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_mydominion 1
-#req_fort 1
-#req_dominion 7
-#req_domchance 8
-#nation -2
-#msg "Fort spawn extra statue."
-#notext
-#nolog
-#1unit 4883  -- Overgrown Statue
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_mydominion 1
-#req_dominion 5
-#req_domchance 5
-#nation -2
-#msg "Spawn Mandragora."
-#notext
-#nolog
-#1unit 314  -- Mandragora
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_mydominion 1
-#req_dominion 7
-#req_domchance 8
-#nation -2
-#msg "Spawn extra Mandragora."
-#notext
-#nolog
-#1unit 314  -- Mandragora
-#end
-
-#newevent
-#rarity 5
 #req_fornation 192 -- Great Arrada
 #req_owncapital 1
 #req_site 1
@@ -146643,7 +146629,7 @@ This will also prevent their skin from drying out."
 #msg "Create Shoggoth."
 #notext
 #nolog
-#1unit 4455  -- Small Shoggoth
+#1unit 7489  -- Small Shoggoth
 #end
 
 #newevent
@@ -146656,7 +146642,7 @@ This will also prevent their skin from drying out."
 #msg "Create Shoggoth."
 #notext
 #nolog
-#1unit 4455  -- Small Shoggoth
+#1unit 7489  -- Small Shoggoth
 #end
 
 #newevent
@@ -152016,7 +152002,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #notext
 #nolog
 #1d3units 672
-#1unit 4526  -- Spectral Vestal
+#1unit 7559  -- Spectral Vestal
 #end
 
 #newevent
@@ -154714,7 +154700,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #nation 41 -- EA Oceania
 #tempunits 1
 #2com 1064  -- Sea Dog
-#1unit 4331  -- Giant Crab
+#1unit 7365  -- Giant Crab
 #4d6units 1064  -- Sea Dogs
 #end
 
@@ -160569,6 +160555,200 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 -- END OF ABOLETH EVENTS
+
+
+
+#newevent
+#rarity 5
+#req_fornation 53 -- Aspho
+#req_mydominion 1
+#req_dominion 1
+#req_maxdominion 1
+#msg "Dominion taxloss."
+#notext
+#nolog
+#taxboost -4
+#end
+
+#newevent
+#rarity 5
+#req_fornation 53 -- Aspho
+#req_mydominion 1
+#req_dominion 2
+#req_maxdominion 2
+#msg "Dominion taxloss."
+#notext
+#nolog
+#taxboost -8
+#end
+
+#newevent
+#rarity 5
+#req_fornation 53 -- Aspho
+#req_mydominion 1
+#req_dominion 3
+#req_maxdominion 3
+#msg "Dominion taxloss."
+#notext
+#nolog
+#taxboost -12
+#end
+
+#newevent
+#rarity 5
+#req_fornation 53 -- Aspho
+#req_mydominion 1
+#req_dominion 4
+#req_maxdominion 4
+#msg "Dominion taxloss."
+#notext
+#nolog
+#taxboost -16
+#end
+
+#newevent
+#rarity 5
+#req_fornation 53 -- Aspho
+#req_mydominion 1
+#req_dominion 5
+#req_maxdominion 5
+#msg "Dominion taxloss."
+#notext
+#nolog
+#taxboost -20
+#end
+
+#newevent
+#rarity 5
+#req_fornation 53 -- Aspho
+#req_mydominion 1
+#req_dominion 6
+#req_maxdominion 6
+#msg "Dominion taxloss."
+#notext
+#nolog
+#taxboost -24
+#end
+
+#newevent
+#rarity 5
+#req_fornation 53 -- Aspho
+#req_mydominion 1
+#req_dominion 7
+#req_maxdominion 7
+#msg "Dominion taxloss."
+#notext
+#nolog
+#taxboost -28
+#end
+
+#newevent
+#rarity 5
+#req_fornation 53 -- Aspho
+#req_mydominion 1
+#req_dominion 8
+#req_maxdominion 8
+#msg "Dominion taxloss."
+#notext
+#nolog
+#taxboost -32
+#end
+
+#newevent
+#rarity 5
+#req_fornation 53 -- Aspho
+#req_mydominion 1
+#req_dominion 9
+#req_maxdominion 9
+#msg "Dominion taxloss."
+#notext
+#nolog
+#taxboost -36
+#end
+
+#newevent
+#rarity 5
+#req_fornation 53 -- Aspho
+#req_mydominion 1
+#req_dominion 10
+#req_maxdominion 10
+#msg "Dominion taxloss."
+#notext
+#nolog
+#taxboost -40
+#end
+
+
+#newevent
+#rarity 5
+#req_domowner 53 -- Aspho
+#req_mydominion 1
+#req_owncapital 1
+#req_fort 1
+#req_domchance 10
+#nation -2
+#msg "Fort spawn statues."
+#notext
+#nolog
+#1unit 7903  -- Overgrown Statue
+#end
+
+#newevent
+#rarity 5
+#req_domowner 53 -- Aspho
+#req_owncapital 0
+#req_fort 1
+#req_mydominion 1
+#req_dominion 5
+#req_domchance 5
+#nation -2
+#msg "Fort spawn statues."
+#notext
+#nolog
+#1unit 7903  -- Overgrown Statue
+#end
+
+#newevent
+#rarity 5
+#req_domowner 53 -- Aspho
+#req_mydominion 1
+#req_fort 1
+#req_dominion 7
+#req_domchance 8
+#nation -2
+#msg "Fort spawn extra statue."
+#notext
+#nolog
+#1unit 7903  -- Overgrown Statue
+#end
+
+#newevent
+#rarity 5
+#req_domowner 53 -- Aspho
+#req_mydominion 1
+#req_dominion 5
+#req_domchance 5
+#nation -2
+#msg "Spawn Mandragora."
+#notext
+#nolog
+#1unit 314  -- Mandragora
+#end
+
+#newevent
+#rarity 5
+#req_domowner 53 -- Aspho
+#req_mydominion 1
+#req_dominion 7
+#req_domchance 8
+#nation -2
+#msg "Spawn extra Mandragora."
+#notext
+#nolog
+#1unit 314  -- Mandragora
+#end
+
+
 
 -- END OF NEW EVENTS
 
