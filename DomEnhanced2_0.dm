@@ -27517,7 +27517,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #miscshape
 #hp 80
 #size 6
-#prot 9
+#prot 10
 #mr 12
 #mor 50
 #str 18
@@ -44670,11 +44670,12 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #end
 
 #newmonster 8200
-#clearspec
 #copystats 314  -- Mandragora
 #copyspr 712  -- Satyr Manikin
+#clearspec
 #name "Satyr Mandragora"
 #descr "Ampelos was once an unusually thoughtful satyr that studied the stars. Eventually he had learned so much that he began to boast he knew more about the heavens than the moon herself. Unfortunately for Ampelos the Goddess of the Moon heard his boasts and looked down upon him with a jealous eye. One day she sent a gadfly to sting a great bull grazing nearby. The creature trampled poor Ampelos and he was gored to death for his hubris. Over time vines grew around and through his bones until he was granted new life by the awakening of the True God. Ampelos has great knowledge of the magic of the stars, however he has learned not to boast of such things and is reluctant to share his knowledge."
+#clearspec
 #fixedname "Ampelos"
 #mor 16
 #mr 16
@@ -62632,8 +62633,8 @@ Cannot be recruited until Break the Deadlock is cast."
 
 
 
-
 -- FOLDUNITS
+
 
 
 
@@ -64325,7 +64326,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #forestsurvival
 #itemslots 18751494
 #clearmagic
-#magicskill 2 1
+#magicskill 7 1
 #magicskill 3 1
 #magicskill 6 1
 #end
@@ -64370,7 +64371,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #itemslots 3932160
 #clearmagic
 #magicskill 0 1
-#magicskill 1 1
+#magicskill 7 1
 #magicskill 6 1
 #end
 
@@ -64417,7 +64418,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #clearmagic
 #magicskill 2 1
 #magicskill 3 1
-#magicskill 5 1
+#magicskill 7 1
 #end
 
 #newmonster 8294 -- God-Beast of the Hunt
@@ -64459,7 +64460,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #twiceborn 6644 -- Wight Beast
 #itemslots 3932160
 #clearmagic
-#magicskill 5 1
+#magicskill 7 1
 #magicskill 6 1
 #magicskill 8 1
 #end
@@ -64863,7 +64864,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mounted
 --#itemslots 860678 -- No feet
 #mountmnr 3521
-#mountedinspector
 #skilledrider 1
 #regainmount 1
 #itemslots 860678
@@ -64883,14 +64883,13 @@ Each month he will collect a magical pearl and can create more using water gems.
 #gcost 40
 #startdom 1
 #pathcost 20
-#str 13
-#att 7
-#def 7
+#str 15
+#att 9
+#def 9
 #mr 18
 #clearspec
 #humanoid
 #ap 8
-#enc 0
 #slothpower 1
 #sleepaura 6
 #pooramphibian
@@ -64904,6 +64903,9 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mor 30
 #goodleader
 #domsummon2 313  -- Manikin
+#startdom 1
+#pathcost 20
+#diseaseres 100
 #itemslots 991750
 #clearmagic
 #magicskill 5 1
@@ -65255,7 +65257,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #spiritsight
 #noslowrec
 #mountmnr 3521
-#mountedinspector
 #skilledrider 1
 #regainmount 1
 #itemslots 860678
@@ -65529,7 +65530,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moreluck 1
 #hp 180
-#prot 20
+#prot 18
 #str 26
 #att 13
 #def 12
@@ -66065,7 +66066,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startage 250
 #maxage 500
 #mountmnr 8344 -- Giant Markata
-#mountedinspector
 #regainmount 1
 #douse 3
 #beastmaster 1
@@ -66571,7 +66571,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #twiceborn 1235  -- Leviathan
 #maxage 1000
 #startage 500
-#montag 1000 -- Great Sea Monster
 #itemslots 3932160
 #clearmagic
 #magicskill 1 1
@@ -66707,7 +66706,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #twiceborn 1235  -- Leviathan
 #maxage 10000
 #startage 5000
-#montag 1000 -- Great Sea Monster
 #itemslots 1835008 -- 3 misc
 #clearmagic
 #magicskill 1 1
@@ -66931,7 +66929,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #twiceborn 1235  -- Leviathan
 #maxage 1000
 #startage 500
-#montag 1000 -- Great Sea Monster
 #itemslots 3932160
 #clearmagic
 #magicskill 2 1
@@ -67422,7 +67419,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #spreaddom 1
 #resources 50
 #expertleader
-#montag 1041  -- Recruit Black Iron Infantry
 #itemslots 991750
 #clearmagic
 #end
@@ -68135,7 +68131,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #mapmove 3
 #woundfend 1
 #weapon 201  -- Magic Spear
-#armor 200  -- Champions Cuirass
+#armor 12 -- Scale Mail Hauberk
 #armor "Hoplite helmet"
 #armor "Shield"
 #incprovdef 2
@@ -72145,7 +72141,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #spr1 "blue_oceania/styx1b.png"
 #spr2 "blue_oceania/styx2b.png"
 #name "Titan of the Underworld Rivers"
-#descr "The Titan of the Underworld Rivers is among the first and eldest of the Oceanides, daughters of Okeanus, and manifestation of the underworld river that separates the land of the living from the dead. In a previous war among the heavens she sided with the Pantokrator on the advice of Okeanus, and it was thusly decreed that all solemn oaths by the gods must be sworn by her water. However, the Pantokrator also feared her waters, and so kept her confined to the Underworld, in a cave propped up by silver pillars. Now with the Pantokrator gone, she is free to leave as she pleases."
+#descr "The Titan of the Underworld Rivers is among the first and eldest of the Oceanides, daughters of Oceanus, and manifestation of the underworld river that separates the land of the living from the dead. In a previous war among the heavens she sided with the Pantokrator on the advice of Oceanus, and it was thusly decreed that all solemn oaths by the gods must be sworn by her water. However, the Pantokrator also feared her waters, and so kept her confined to the Underworld, in a cave propped up by silver pillars. Now with the Pantokrator gone, she is free to leave as she pleases."
 #diseaseres 100
 #gcost 290
 #homerealm 3 -- Mediterranean
@@ -74237,6 +74233,12 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #mor 30
 #goodleader
 #shapechange 1027
+#diseaseres 100
+#moregrowth 1
+#moremagic 1
+#startdom 2
+#pathcost 40
+#diseaseres 100
 #itemslots 18620416
 #clearmagic
 #magicskill 5 2
@@ -74268,6 +74270,11 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #mor 30
 #goodleader
 #shapechange 1026
+#diseaseres 100
+#moregrowth 1
+#moremagic 1
+#startdom 2
+#pathcost 40
 #diseaseres 100
 #itemslots 2040326
 #clearmagic
@@ -74828,7 +74835,6 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #mr 20
 #mastersmith 0
 #userestricteditem 8
-#montag 1048
 #domsummon 8506 -- Enlarged Spawn
 #itemslots 786432
 #clearmagic
@@ -75212,8 +75218,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #end
 
 #selectmonster 2208 -- Great Sorcerer spider
---#spr1 "extrapretenders/godspider.tga"
---#spr2 "extrapretenders/godspider2.tga"
 #descr "In the God Forest, monstrous spiders large enouth to catch elephants live. Since the unsealing of the God Mountain Machakan sorcerers have caught and trained the monstrous spiders as sacred mounts for the Black Hunters, but sometimes sorcery is used to summon and command entire groups of Hunter Spiders. Spiders bound with magic must be commanded by mages at all times, but they do not act erratically as the mounts of the Black Hunters might do if left without rider."
 #diseaseres 100
 #gcost 80
@@ -77816,7 +77820,6 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #def 10
 #mr 20
 #userestricteditem 8
-#montag 1048
 #itemslots 786432
 #clearmagic
 #magicskill 2 1
@@ -78262,8 +78265,6 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #att 11
 #def 11
 #mr 18
-#montag 1050  -- True Jinn
-#twiceborn 3328  -- God Block
 #spreaddom 1
 #itemslots 991750
 #clearmagic
@@ -78311,15 +78312,15 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #def 12
 #mr 18
 #clearspec
-#moreprod 1
-#startdom 3
-#pathcost 40
-#homerealm 5
 #batstartsum1 10001 -- Great Green Serpent
 #godsite 302
 #fireres 15
 #mountainsurvival
 #wastesurvival
+#homerealm 5
+#moreprod 1
+#startdom 3
+#pathcost 40
 #diseaseres 100
 #itemslots 991750
 #clearmagic
@@ -78948,6 +78949,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #researchbonus -8
 #woundfend 2
 #enc 1
+#bringeroffortune 10
 #itemslots 18620416
 #clearmagic
 #magicskill 3 2
@@ -78969,6 +78971,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #twiceborn 7223 -- Dracowight
 #awe 2
 #enc 1
+#bringeroffortune 10
 #itemslots 18620416
 #clearmagic
 #magicskill 4 1
@@ -78987,7 +78990,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #att 12
 #def 12
 #mr 18
-
+#bringeroffortune 10
 #itemslots 2040326
 #clearmagic
 #magicskill 4 1
@@ -79019,6 +79022,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #weapon 755 -- Burning Beak
 #weapon 1816 -- Solar Flare
 #enc 1
+#bringeroffortune 10
 #itemslots 18620416
 #clearmagic
 #magicskill 0 2
@@ -79044,6 +79048,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #woundfend 4
 #trample
 #enc 1
+#bringeroffortune 10
 #itemslots 3932160
 #clearmagic
 #magicskill 2 2
@@ -79121,7 +79126,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #clearspec
 #slothpower 1
 #powerofdeath 3
-#sleepaura 6
+#sleepaura 8
 #pooramphibian
 #pierceres
 #magicbeing
@@ -79132,6 +79137,10 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #plant
 #goodleader
 #diseaseres 100
+#moregrowth 1
+#moremagic 1
+#startdom 3
+#pathcost 40
 #itemslots 991750
 #clearmagic
 #magicskill 5 2
@@ -79151,7 +79160,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #def 9
 #mr 18
 #clearspec
-#growthpower 1
+#slothpower 1
+#sleepaura 4
 #powerofdeath 3
 #pooramphibian
 #pierceres
@@ -79163,6 +79173,10 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #plant
 #goodleader
 #diseaseres 100
+#moregrowth 1
+#moremagic 1
+#startdom 3
+#pathcost 40
 #itemslots 991750
 #clearmagic
 #magicskill 5 2
@@ -79228,8 +79242,10 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #end
 
 
--- ENDUNITS
 
+
+
+-- ENDUNITS
 
 
 
@@ -80658,7 +80674,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #ap 18
 --#enc 3
 #slothpower 1
-#sleepaura 6
+#sleepaura 3
 #pooramphibian
 #pierceres
 #magicbeing
@@ -80811,7 +80827,16 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #humanoid
 #end
 
+#selectmonster 4026 -- Black Minotaur
+#descr "In Asphodel every aspect of life, and death, is permeated by the dark rage of the Vengeful God. In Pangaea, white centaurs are rare and white minotaurs even more so, but in Asphodel the influence of the Vengeful God has brought about an increasing number of minotaurs blessed with black hides and a matching temper. Trained as sacred warriors they mete out the vengeance of the Awakening God. In lands free of civilization they will grow stronger, but they will weaken where men toil."
+#slothpower 1
+#str 17
+#att 10
+#def 9
+#end
+
 #selectmonster 4027 -- Carrion Fury
+#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the sacred bones of black minotaurs. Although being reanimated by vengeful vines their minds are not completely subsumed by their dark god and they still fight with the dark fury of their living counterparts. The unholy power of the Vengeful God has granted the Carrion Furies magical clubs made of wood, vines and beastly remains. Somehow, as if the vengeful woods had a conscious mind, their chests are covered with boards of bark, reminiscent of the cuirasses worn by those who cut down trees. In lands free of civilization it will grow stronger, but it will weaken where men toil."
 #clearspec
 #pooramphibian
 #pierceres
@@ -80826,6 +80851,10 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #berserk 5
 #heal
 #humanoid
+#slothpower 1
+#str 18
+#att 10
+#def 7
 #end
 
 #selectmonster 725  -- Sun Warrior
@@ -81567,22 +81596,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #neednoteat
 #mor 50
 --#enc 3
-#forestsurvival
-#spiritsight
-#poisonres 25
-#plant
-#clearspec
-#descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of dead minotaurs, creating the minotaur manikins. In lands free of civilization they will grow stronger, but they will weaken where men toil."
-#att 5
-#def 5
-#str 14
-#slothpower 1
-#pooramphibian
-#pierceres
-#magicbeing
-#neednoteat
-#mor 50
-#enc 3
 #forestsurvival
 #spiritsight
 #poisonres 25
@@ -101105,7 +101118,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #newsite 2554
-#name "MA Asphodel Freespawn"
+#name "MA Asphodel Freespawn and Reanimation"
 #level 0
 #rarity 5
 #path 6
@@ -101114,6 +101127,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 314 -- mandra
 #homemon 712 -- satyr
 #homemon 713 -- harpy
+#homemon 1005 -- minotaur
 #homemon 715 -- woof
 #homemon 717 -- horse
 #homemon 716 -- boar
@@ -101126,7 +101140,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #newsite 2555
-#name "MA Asphodel Carrion Reanimation"
+#name "Carrion Seed Reanimation"
 #level 0
 #rarity 5
 #path 6
@@ -101147,8 +101161,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #name "MA Asphodel Summons"
 #level 0
 #rarity 5
-#path 6
-#look 6
+#path 5
+#look 1
 #homemon 8020 -- dire bear
 #homemon 8021 -- dire boar
 #homemon 8022 -- dire tiger
@@ -106938,24 +106952,21 @@ Dominion: Laws may be enacted that ban blood and increase scales"
 #cheapgod20 8457 -- Spirit of Bones
 --#cheapgod20 8502 -- Worm Lord
 #descr "Asphodel was once part of Pangaea, a woodland nation inhabited by wild beings connected with nature. In ancient times the woods covered much of the world, but that has changed. Man is no longer beast and the world of the wild is disappearing. In response to the destruction of the wild forests a dark and hateful God has arisen. The Panic Apostates of the Carrion Grove have revolted and struck back upon the civilized world. They and their followers have been touched by the Dark God and their hides are colored as black as the mood of the vengeful forest. An enchanted sleeping sickness now spreads from the Carrion Grove, causing civilized men to succumb to eternal dreamless slumber. Vines spread across quiet cities as the forest reclaims the land."
-#summary "Race: Forest beings and vine carrion beings
-Military: Satyr and minotaur infantry, centaur warriors and archers, harpies, hordes of carrion beasts
-Magic: Nature, Death, some Earth and Water
-Priests: Average, Carrion priests can reanimate, Temples generate Nature gems
-Dominion: Causes dreamless slumber, greatly reducing tax income. Vines reanimate corpses as manikins and carrion beasts, more in forests. Temples and Growth scales increase reanimation rates. Magic scales give better reanimations."
-#domkill 2
-#templegems 6
-#spreadlazy 3
-#defdeath -3
-#defsloth 3
-#natureblessbonus 0
-#deathblessbonus 0
-#templecost 900
-#forestlabcost 450
-#foresttemplecost 450
 
-#futuresite "MA Asphodel Freespawn"
-#futuresite "MA Asphodel Carrion Reanimation"
+#nationinc -25
+#domkill 2
+#halfdeathpop
+--#templegems 6
+#spreadlazy 3
+--#defdeath -3
+#defsloth 3
+#moreprod -1
+--#templecost 900
+--#forestlabcost 450
+--#foresttemplecost 450
+
+#futuresite "MA Asphodel Freespawn and Reanimation"
+#futuresite "Carrion Seed Reanimation"
 #futuresite "MA Asphodel Summons"
 #futuresite "MA Asphodel Heroes"
 
@@ -124461,7 +124472,7 @@ All effects scale with friendly Dominion."
 #effect 10001
 #nreff 3
 #damage 1093
-#fatiguecost 400
+#fatiguecost 300
 #onlygeosrc 128  -- Forest
 #restricted 53 -- MA Asphodel
 #end
@@ -124472,6 +124483,7 @@ All effects scale with friendly Dominion."
 #descr "Vines and roots will animate to ensnare anything living in the targeted area and strangle the life from them. The ensnared victims cannot move or attack anyone until they have destroyed the vines holding them. The stronger a victim is, the faster the vines will be destroyed and the more fertile the province is, the stronger the vines will be. Anyone slain by the vines will be raised as an undead creature serving the caster."
 #details "Str +DRN vs 19 to get free. The difficulty is increased or decreased by the Growth/Death scale of the province and is also increased by +1 in Forests and reduced by -1 in Wastelands."
 #researchlevel 2
+#school -1
 #path 1 5
 #pathlevel 1 1
 #range 30
@@ -124492,21 +124504,21 @@ All effects scale with friendly Dominion."
 #end
 
 #selectspell 3249
-#copyspell 920 -- Tangle Vines
+#copyspell 437 -- Vengeful Vines
 #name "Strangling Growth"
-#descr "Vines and roots will animate to ensnare anything living in the targeted area and strangle the life from them. The ensnared victims cannot move or attack anyone until they have destroyed the vines holding them. The stronger a victim is, the faster the vines will be destroyed and the more fertile the province is, the stronger the vines will be. Anyone slain by the vines will be raised as an undead creature serving the caster."
+#descr "Poisonous vines with dark flowers will emerge from the ground. Anyone in the targeted area is ensnared, poisoned and infected with a carrion seed. If a seed carrier dies during the battle the seed sprouts and reanimates the victim as a manikin serving the Vengeful God."
 #details "Str +DRN vs 19 to get free. The difficulty is increased or decreased by the Growth/Death scale of the province and is also increased by +1 in Forests and reduced by -1 in Wastelands."
 #researchlevel 6
 #path 0 6
 #pathlevel 0 3
 #path 1 5
 #pathlevel 1 1
-#range 30
-#aoe 1003
+#range 25
+#aoe 1001
 #precision 3
 #fatiguecost 30
 #restricted 53 -- MA Asphodel
-#spec 1152921505152647168  -- Ignore Shields, UW OK, Undead & Lifeless immune, Secondaryeffect
+--#spec 1152921505152647168  -- Ignore Shields, UW OK, Undead & Lifeless immune, Secondaryeffect
 #end
 
 #selectspell 3250
@@ -124529,7 +124541,7 @@ All effects scale with friendly Dominion."
 #path 0 5
 #path 1 6
 #nreff 2006
-#fatiguecost 1000
+#fatiguecost 600
 #damage 7675
 #restricted 53 -- MA Asphodel
 #end
@@ -124540,14 +124552,14 @@ All effects scale with friendly Dominion."
 #descr "The Panic Apostate gives unholy life to a grove of trees that have died. The rotting timber will move in a dreadful parody of life, animated by an intense hatred of those that would despoil the wild. These animated trees will serve their awakener until they are destroyed. More powerful mages can animate more trees with each casting."
 #school 4
 #researchlevel 4
-#path 0 6
-#path 1 5
-#pathlevel 0 3
+#path 0 5
+#path 1 6
+#pathlevel 0 2
 #pathlevel 1 2
 #effect 10001
 #fatiguecost 1000
 #damage 7440 -- Corrupted Tree
-#nreff 505
+#nreff 508
 #onlygeosrc 128  -- Forest
 #restricted 53 -- MA Asphodel
 #end
@@ -124598,7 +124610,7 @@ All effects scale with friendly Dominion."
 #effect 10021
 #damage 7458 -- Wild Mandragora
 #researchlevel 8
-#fatiguecost 4500
+#fatiguecost 5500
 #onlygeosrc 128  -- Forest
 #restricted 53 -- Asphodel
 #end
@@ -124609,10 +124621,10 @@ All effects scale with friendly Dominion."
 #descr "The caster lays a curse upon a distant kingdom that afflicts it with the sleeping sickness of Asphodel. The populace will begin to fall into a deep and dreamless sleep. Crops will go unharvested, vines will be free to grow and livestock will wander. Soldiers fall asleep at their posts and even the temples are left untended as the priests succumb to the curse. The Dominion of the local god will be weakened by the power of Asphodel."
 #details "Scale of Sloth is set to 3. Dominion is reduced by 1-2. All units in the province must make a MR check vs 10 and a morale check vs 10. If they fail both they fall asleep forever."
 #researchlevel 4
-#school 4
+#school -1
 #path 0 6
 #pathlevel 0 3
-#path 1 5
+#path 1 7
 #pathlevel 1 2
 #provrange 3
 #fatiguecost 1000
@@ -124624,7 +124636,7 @@ All effects scale with friendly Dominion."
 #name "Dreamless Sleep"
 #descr "The caster reaches out and causes an enemy to fall into a deep and dreamless sleep."
 #researchlevel 0
-#school 4
+#school -1
 #restricted 53 -- Ashodel
 #end
 
@@ -124633,7 +124645,7 @@ All effects scale with friendly Dominion."
 #name "Deep Slumber"
 #descr "The caster calls on the power of Asphodel to bring a deep and dreamless sleep. The spell is indiscriminate and targets a whole squad of soldiers."
 #researchlevel 3
-#school 4
+#school -1
 #pathlevel 0 3
 #aoe 10
 #restricted 53 -- Ashodel
@@ -124643,7 +124655,7 @@ All effects scale with friendly Dominion."
 #name "Enchant Army"
 #descr "The caster enchants the entire enemy army to put them into a deep and dreamless sleep. The spell can be resisted by those of strong will."
 #school 5
-#school 4
+#school -1
 #researchlevel 8
 #path 0 6
 #pathlevel 0 6
@@ -160567,7 +160579,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -4
+#taxboost -5
 #end
 
 #newevent
@@ -160579,7 +160591,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -8
+#taxboost -10
 #end
 
 #newevent
@@ -160591,7 +160603,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -12
+#taxboost -14
 #end
 
 #newevent
@@ -160603,7 +160615,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -16
+#taxboost -18
 #end
 
 #newevent
@@ -160615,7 +160627,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -20
+#taxboost -22
 #end
 
 #newevent
@@ -160627,7 +160639,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -24
+#taxboost -26
 #end
 
 #newevent
@@ -160639,7 +160651,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -28
+#taxboost -29
 #end
 
 #newevent
@@ -160663,7 +160675,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -36
+#taxboost -35
 #end
 
 #newevent
@@ -160675,7 +160687,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -40
+#taxboost -38
 #end
 
 
@@ -160706,46 +160718,6 @@ It is now fully repaired and a new crew has been assigned to it."
 #notext
 #nolog
 #1unit 7903  -- Overgrown Statue
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_mydominion 1
-#req_fort 1
-#req_dominion 7
-#req_domchance 8
-#nation -2
-#msg "Fort spawn extra statue."
-#notext
-#nolog
-#1unit 7903  -- Overgrown Statue
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_mydominion 1
-#req_dominion 5
-#req_domchance 5
-#nation -2
-#msg "Spawn Mandragora."
-#notext
-#nolog
-#1unit 314  -- Mandragora
-#end
-
-#newevent
-#rarity 5
-#req_domowner 53 -- Aspho
-#req_mydominion 1
-#req_dominion 7
-#req_domchance 8
-#nation -2
-#msg "Spawn extra Mandragora."
-#notext
-#nolog
-#1unit 314  -- Mandragora
 #end
 
 
