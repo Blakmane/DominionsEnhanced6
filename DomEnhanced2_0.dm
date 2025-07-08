@@ -27889,6 +27889,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 55  -- Hoof
 #weapon 71  -- Sleep Vines
 #weapon 71  -- Sleep Vines
+#weapon 873  -- Carrion Vine
+#weapon 873  -- Carrion Vine
 #nametype 145
 #end
 
@@ -80589,8 +80591,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 711  -- Carrion Lady
 #clearmagic
-#magicskill 5 2 -- N
-#magicskill 6 1 -- D
+#magicskill 5 1 -- D
+#magicskill 6 2 -- N
 #magicskill 9 2 -- H
 #custommagic 20480 100 -- DG
 #clearspec
@@ -80828,11 +80830,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 4026 -- Black Minotaur
-#descr "In Asphodel every aspect of life, and death, is permeated by the dark rage of the Vengeful God. In Pangaea, white centaurs are rare and white minotaurs even more so, but in Asphodel the influence of the Vengeful God has brought about an increasing number of minotaurs blessed with black hides and a matching temper. Trained as sacred warriors they mete out the vengeance of the Awakening God. In lands free of civilization they will grow stronger, but they will weaken where men toil."
-#slothpower 1
-#str 17
-#att 10
-#def 9
+--#descr "In Asphodel every aspect of life, and death, is permeated by the dark rage of the Vengeful God. In Pangaea, white centaurs are rare and white minotaurs even more so, but in Asphodel the influence of the Vengeful God has brought about an increasing number of minotaurs blessed with black hides and a matching temper. Trained as sacred warriors they mete out the vengeance of the Awakening God. In lands free of civilization they will grow stronger, but they will weaken where men toil."
+--#slothpower 1
+--#str 17
+--#att 10
+--#def 9
 #end
 
 #selectmonster 4027 -- Carrion Fury
@@ -106951,14 +106953,20 @@ Dominion: Laws may be enacted that ban blood and increase scales"
 #cheapgod20 8309 -- First Mandragora
 #cheapgod20 8457 -- Spirit of Bones
 --#cheapgod20 8502 -- Worm Lord
-#descr "Asphodel was once part of Pangaea, a woodland nation inhabited by wild beings connected with nature. In ancient times the woods covered much of the world, but that has changed. Man is no longer beast and the world of the wild is disappearing. In response to the destruction of the wild forests a dark and hateful God has arisen. The Panic Apostates of the Carrion Grove have revolted and struck back upon the civilized world. They and their followers have been touched by the Dark God and their hides are colored as black as the mood of the vengeful forest. An enchanted sleeping sickness now spreads from the Carrion Grove, causing civilized men to succumb to eternal dreamless slumber. Vines spread across quiet cities as the forest reclaims the land."
+#descr "Asphodel was once part of Pangaea, a woodland nation inhabited by wild beings connected with nature. Halfmen such as satyrs, centaurs and minotaurs serve the lords of the Sacred Groves deep in the forests. In ancient times the woods covered much of the world, but that has changed. Man is no longer beast and animals are no longer wild. The world of the wild is disappearing. In response to the destruction of the wild forests a dark and hateful God has arisen. The Panii of the sacred groves could not prevent the destruction of the wilderness and a few of them have revolted and struck back with dark fury upon the civilized world. The Panic Apostates of the Carrion Grove have revolted and struck back upon the civilized world. They and their followers have been touched by the Dark God and their hides are colored as black as the mood of the vengeful forest. An enchanted sleeping sickness now spreads from the Carrion Grove, causing civilized men to succumb to eternal dreamless slumber. Vines spread across quiet cities as the forest reclaims the land."
+#summary "Race: Forest beings and reanimated carrion beings, stealthy troops, troops will heal battle afflictions, undead carrion beasts
+Military: Satyr and minotaur infantry, centaur warriors and archers, harpies, hordes of manikins and carrion beasts.
+Magic: Nature, Death, some Glamour, Earth and Water.
+Priests: Average. Carrion priests can reanimate.
+Dominion: Reanimates the unburied dead as manikins. More carrion beasts in forests. Temples and Growth scales increase reanimation rates. Magic scales gives better reanimations. Dominion places population into a deep slumber and slowly kills it. Spread Sloth scales.
+Nation: Reduced income. Halved population increased from Growth scales."
 
 #nationinc -25
 #domkill 2
 #halfdeathpop
 --#templegems 6
 #spreadlazy 3
---#defdeath -3
+#defdeath -4
 #defsloth 3
 #moreprod -1
 --#templecost 900
@@ -111129,7 +111137,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "This ritual lets vines and roots animate animal corpses. The beings thus created are known as Carrion Beasts. Powerful mages can make more of the beasts with each casting of the spell. Carrion Beasts are undead and will fall apart if left on the battlefield without undead leadership."
 #researchlevel 4
 #nreff 2006
-#fatiguecost 7000
+#fatiguecost 800
 #damage 7675
 #notfornation 53 -- Asphodel
 #end
@@ -124537,11 +124545,11 @@ All effects scale with friendly Dominion."
 #name "Revive Carrion Beasts"
 #descr "The caster causes vines and roots to animate animal corpses creating Carrion Beasts. Powerful mages can make more of the beasts with each casting of the spell. Carrion Beasts are undead and will fall apart if left on the battlefield without undead leadership."
 #school 4
-#researchlevel 4
-#path 0 5
-#path 1 6
+#researchlevel 0
+#path 0 6
+#path 1 5
 #nreff 2006
-#fatiguecost 600
+#fatiguecost 700
 #damage 7675
 #restricted 53 -- MA Asphodel
 #end
@@ -124551,7 +124559,7 @@ All effects scale with friendly Dominion."
 #name "Animate Deadwood"
 #descr "The Panic Apostate gives unholy life to a grove of trees that have died. The rotting timber will move in a dreadful parody of life, animated by an intense hatred of those that would despoil the wild. These animated trees will serve their awakener until they are destroyed. More powerful mages can animate more trees with each casting."
 #school 4
-#researchlevel 4
+#researchlevel 5
 #path 0 5
 #path 1 6
 #pathlevel 0 2
@@ -124610,7 +124618,7 @@ All effects scale with friendly Dominion."
 #effect 10021
 #damage 7458 -- Wild Mandragora
 #researchlevel 8
-#fatiguecost 5500
+#fatiguecost 6000
 #onlygeosrc 128  -- Forest
 #restricted 53 -- Asphodel
 #end
@@ -137050,11 +137058,14 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 427 -- Carrion Centaur
-#fatiguecost 700
+#fatiguecost 900
+#end
+
+#selectspell 428 -- Carrion Lady
+#fatiguecost 1800
 #end
 
 #selectspell 429 -- Carrion Lord
-#fatiguecost 3500
 #end
 
 #selectspell 430 -- Quick Roots
