@@ -25132,7 +25132,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copystats 1792  -- Nemedian Sorceress
 #copyspr 1792  -- Nemedian Sorceress
 #descr "Nemedians are the descendants of the Sauromatian Partholonians. They are a highly magical race far superior to ordinary men, but they were few in number. The Nemedians once warred with the Fomorians and were defeated and subjugated. Most have now retreated to the fey realm and eschew the realm of men. The Nemedians have merged the old magical traditions of their Partholonian ancestors and the magic of their Fomorian masters. Sorceresses skilled in Death and Air magic summon whispering shades of mist and darkness."
-#magicskill 1 3
+#magicskill 1 2
 #gcost 0
 #end
 
@@ -26872,6 +26872,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #magicskill 9 1
 #custommagic 14848 100  -- 100% WDSN
 #custommagic 14848 100  -- 100% WDSN
+#armor 544 -- spectral mail
+#armor 549 -- spectral helm
 #armor 156  -- Spectral Shield
 #female
 #holy
@@ -26887,6 +26889,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Spirit Sorceress"
 #spr1 "magicenhanced/eesaurospirith.tga"
 #spr2 "magicenhanced/eesaurospirith2.tga"
+#unmountedspr1 "magicenhanced/eesaurospirit.tga"
+#unmountedspr2 "magicenhanced/eesaurospirit2.tga"
 #descr "This is the soul of a Sauromatian Sorceress rescued from the Underworld. Now returned to the sunlit lands of the living, she will aid her descendants. The Sorceress has gained knowledge of Death magic during her time in the Underworld and still retains her other magical skills. As a spirit the Sorceress is Ethereal and able to enter the sea."
 #size 5
 #att 13
@@ -26897,9 +26901,12 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #armor 156  -- Spectral Shield
 #female
 #holy
-#mounted
+#mountmnr 9079
+#skilledrider 6
 #goodleader
 #goodundeadleader
+#armor 544 -- spectral mail
+#armor 549 -- spectral helm
 #weapon 63  -- Life Drain
 #ap 24
 #prec 10
@@ -26914,6 +26921,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Spirit Sorceress"
 #spr1 "magicenhanced/eesaurospiritl.tga"
 #spr2 "magicenhanced/eesaurospiritl2.tga"
+#unmountedspr1 "magicenhanced/eesaurospirit.tga"
+#unmountedspr2 "magicenhanced/eesaurospirit2.tga"
 #descr "This is the soul of a Sauromatian Sorceress rescued from the Underworld. Now returned to the sunlit lands of the living, she will aid her descendants. The Sorceress has gained knowledge of Death magic during her time in the Underworld and still retains her other magical skills. As a spirit the Sorceress is Ethereal and able to enter the sea."
 #size 5
 #att 13
@@ -26924,10 +26933,12 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #armor 156  -- Spectral Shield
 #female
 #holy
-#mounted
+#mountmnr 9080
+#skilledrider 6
 #okleader
+#armor 544 -- spectral mail
+#armor 549 -- spectral helm
 #weapon 63  -- Life Drain
-#weapon 20 -- Bite
 #ap 18
 #itemslots 860678
 #montag 1024
@@ -26940,6 +26951,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Spirit Sorceress"
 #spr1 "magicenhanced/eesaurospirits.tga"
 #spr2 "magicenhanced/eesaurospirits2.tga"
+#unmountedspr1 "magicenhanced/eesaurospirit.tga"
+#unmountedspr2 "magicenhanced/eesaurospirit2.tga"
 #descr "This is the soul of a Sauromatian Sorceress rescued from the Underworld. Now returned to the sunlit lands of the living, she will aid her descendants. The Sorceress has gained knowledge of Death magic during her time in the Underworld and still retains her other magical skills. As a spirit the Sorceress is Ethereal and able to enter the sea."
 #size 5
 #att 13
@@ -26950,10 +26963,12 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #armor 156  -- Spectral Shield
 #female
 #holy
-#mounted
+#mountmnr 9081
+#skilledrider 6
 #okleader
+#armor 544 -- spectral mail
+#armor 549 -- spectral helm
 #weapon 63  -- Life Drain
-#weapon 495 -- Poisonous Bite
 #ap 16
 #swampsurvival
 #itemslots 860678
@@ -31509,17 +31524,20 @@ While in the form of an old man, all paths are increased and allows the use of N
 #name "Longdead Partholonian Lord"
 #spr1 "magicenhanced/eeldparthlord.tga"
 #spr2 "magicenhanced/eeldparthlord2.tga"
-#descr "The Partholonians were once the rulers of the Sauromatian lands, but have long since vanished. Their sacred bones lie buried in tombs in the Sauromatian swamps. In the mists of the marshland lies the castle of Delgnat. Here the longdead kin of the last Partholonian walk the halls and feast on pomegranates of the dead, reanimated by the dark sorcery of Delgnat in her vain attempts to escape solitude. Ancient bones in ancient armor are forced to masquerade as the living to appease their lady. The lords of ancient Partholon were buried with their fey steeds, given antler headpieces in imitation of the deer that escort souls to the Underworld. The Lords retain their minds and so their skill with illusions and Air magic. Once great warrior poets, now they only recite ancient verse and relive long lost glories in Delgnat's empty halls."
+#unmountedspr1 "magicenhanced/eeldparthspear.tga"
+#unmountedspr2 "magicenhanced/eeldparthspear.tga"
+#descr "The Partholonians were once the rulers of the Sauromatian lands, but have long since vanished. Their sacred bones lie buried in tombs in the Sauromatian swamps. In the mists of the marshland lies the castle of Delgnat. Here the longdead kin of the last Partholonian walk the halls and feast on pomegranates of the dead, reanimated by the dark sorcery of Delgnat in her vain attempts to escape solitude. Ancient bones in ancient armor are forced to masquerade as the living to appease their lady. The lords of ancient Partholon were buried with their fey steeds, given antler headpieces in imitation of the deer that escort souls to the Underworld. The Lords retain their minds and so their retain their skill with magic. Once great warrior poets, now they only recite ancient verse and relive long lost glories in Delgnat's empty halls."
 #hp 15
-#size 5
 #mr 16
 #mor 30
 #ap 26
-#mounted
+#mountmnr 9083
+#skilledrider 5
 #goodundeadleader
-#magicskill 1 2
 #magicskill 5 1
-#magicskill 9 2
+#magicskill 7 1
+#magicskill 9 1
+#custommagic 21248 100
 #itemslots 860678 -- No feet
 #weapon 475  -- Golden Lance
 #spiritsight
@@ -31531,10 +31549,11 @@ While in the form of an old man, all paths are increased and allows the use of N
 #name "Longdead Partholonian Chariot"
 #spr1 "magicenhanced/eeldparthchariot.tga"
 #spr2 "magicenhanced/eeldparthchariot2.tga"
+#unmountedspr1 "magicenhanced/un_eeldparthchariot.tga"
+#unmountedspr2 "magicenhanced/un_eeldparthchariot2.tga"
 #descr "The Partholonians were once the rulers of the Sauromatian lands, but have long since vanished. Their sacred bones lie buried in tombs in the Sauromatian swamps. In the mists of the marshland lies the castle of Delgnat. Here the longdead kin of the last Partholonian walk the halls and feast on pomegranates of the dead, reanimated by the dark sorcery of Delgnat in her vain attempts to escape solitude. Ancient bones in ancient armor are forced to masquerade as the living to appease their lady. The Partholonian dead are still wreathed in illusions, their bones sacred and their weapons ensorcelled, crafted as they were when the Partholonians still walked the land ages ago."
-#size 6
 #ap 18
-#mounted
+#mountmnr 9082
 #trample
 #spiritsight
 #stealthy 0
@@ -37247,7 +37266,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #name "Longdead Nemedian"
 #spr1 "magicenhanced/eeldparthspear.tga"
 #spr2 "magicenhanced/eeldparthspear2.tga"
-#descr "The Nemedians were the descendants of the Sauromatian Partholonians, a highly magical race far superior to ordinary men. They lived in the old fortress of Rath Chimbaith in ages past, however now that place is ruined and desolate. Their sacred bones lie buried on misty isles around the shores of Eriu. Through dark sorcery the Nemedian dead have been forced to rise once more, wreathed in illusions and with weapons ensorcelled."
+#descr "The Nemedians were the descendants of the Sauromatian Partholonians, a highly magical race far superior to ordinary men. They lived in the old fortress of Rath Chimbaith in ages past, however now that place is ruined and desolate. Their bones lie buried on misty isles around the shores of Eriu. Through dark sorcery the Nemedian dead have been forced to rise once more, wreathed in illusions and with weapons ensorcelled."
 #clearweapons
 #cleararmor
 #weapon 473  -- Golden Spear
@@ -53346,6 +53365,111 @@ Cost 56 RP."
 #armor 20 -- iron cap
 #end
 
+#newmonster 9074 -- Steppe Horse 1 Tattooed
+#copystats 3573
+#copyspr 3573
+#armor 251
+#horsetattoo 1
+#mr 7
+#end
+
+#newmonster 9075 -- Steppe Horse 2 Tattooed
+#copystats 3574
+#copyspr 3574
+#horsetattoo 1
+#mr 7
+#end
+
+#newmonster 9076 -- Steppe Horse 3 Tattooed
+#copystats 3575
+#copyspr 3575
+#horsetattoo 1
+#mr 7
+#end
+
+#newmonster 9077 -- Steppe Horse 4 Tattooed
+#copystats 3576
+#copyspr 3576
+#horsetattoo 1
+#mr 7
+#end
+
+#newmonster 9078 -- Steppe Horse 4 Sacred Tattooed
+#copystats 3580
+#copyspr 3580
+#horsetattoo 1
+#mr 8
+#end
+
+#newmonster 9079 -- Spirit Sorceress Horse Mount
+#copystats 3977 -- serpent carcass
+#copyspr 3558 -- skeletal horse
+#name "Skeletal Horse"
+#descr "The skeletal remains of a horse reanimated by foul magics or the will of a dark God."
+#horsetattoo 1
+#pooramphibian
+#str 15
+#att 12
+#def 12
+#hp 18
+#ap 27
+#end
+
+#newmonster 9080 -- Spirit Sorceress Lizard Mount
+#copystats 3977 -- serpent carcass
+#spr1 "magicenhanced/eesaurospiritlm.tga"
+#spr2 "magicenhanced/eesaurospiritlm2.tga"
+#name "Skeletal Lizard"
+#descr "The skeletal remains of a jade lizard reanimated by foul magics or the will of a dark God."
+#snaketattoo 1
+#pooramphibian
+#str 15
+#att 13
+#def 11
+#hp 18
+#prot 8
+#ap 27
+#end
+
+#newmonster 9081 -- Spirit Sorceress Serpent Mount
+#copystats 3977 -- serpent carcass
+#copyspr 3977 -- serpent carcass
+#name "Skeletal Serpent"
+#descr "The skeletal remains of a serpent reanimated by foul magics or the will of a dark God."
+#snaketattoo 1
+#pooramphibian
+#hp 40
+#prot 10
+#end
+
+
+
+#newmonster 9082 -- parth chariot
+#copystats 766 -- royal tomb chariot
+#spr1 "magicenhanced/eeldparthchariotm.tga"
+#spr2 "magicenhanced/eeldparthchariotm2.tga"
+#name "Partholonian Chariot"
+#descr "A chariot with scythed wheels drawn by a skeletal horse."
+#clearweapons
+#weapon 55
+#glamour
+#end
+
+
+#newmonster 9083 -- Parth Lord mount
+#copystats 3977 -- serpent carcass
+#copyspr 3558 -- skeletal horse
+#name "Skeletal Horse"
+#descr "The skeletal remains of a horse reanimated by foul magics or the will of a dark God."
+#pooramphibian
+#str 15
+#att 12
+#def 12
+#hp 18
+#ap 27
+#glamour
+#stealthy 0
+#end
 
 
 
@@ -81987,6 +82111,97 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #def 12
 #end
 
+#selectmonster 1167 -- Sauro Lancer
+#mountmnr 9076
+#horsetattoo 2
+#end
+
+#selectmonster 1168 -- Sauro Raider
+#mountmnr 9074
+#horsetattoo 2
+#end
+
+#selectmonster 1169 -- Sauro Chieftain
+#mountmnr 9076
+#horsetattoo 2
+#end
+
+#selectmonster 1170 -- Sauromatian Lancer
+#mountmnr 9076
+#horsetattoo 2
+#end
+
+#selectmonster 1171 -- Sauromatian Raider
+#mountmnr 9074
+#horsetattoo 2
+#end
+
+#selectmonster 1172 -- Sauromatian Cataphract
+#mountmnr 9077
+#horsetattoo 2
+#end
+
+#selectmonster 1173 -- Sauromatian Manflayer
+#mountmnr 9077
+#horsetattoo 2
+#end
+
+#selectmonster 1174 -- Sauro Warrior Priestess
+#mountmnr 9078
+#horsetattoo 2
+#end
+
+#selectmonster 1175 -- Sauro Warrior Queen
+#mountmnr 9078
+#horsetattoo 2
+#end
+
+#selectmonster 1176 -- Sauro Androphag
+#corpseeater 1
+#deadhp 1
+#maxdeadhp 10
+#end
+
+#selectmonster 1177 -- Sauro Manflayer
+#corpseeater 2
+#deadhp 1
+#maxdeadhp 12
+#end
+
+#selectmonster 1178 -- Sauro Witch King
+#corpseeater 3
+#deadhp 1
+#maxdeadhp 15
+#end
+
+#selectmonster 1589 -- Skogu Man Eater
+#corpseeater 5
+#deadhp 1
+#maxdeadhp 25
+#end
+
+#selectmonster 3977 -- Skogu  Serpent
+#snaketattoo 1
+#str 18
+#prot 10
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 20
+#end
+
+#selectmonster 3535 -- Androphag Serpent
+#snaketattoo 1
+#armor 251 -- leather
+#str 16
+#corpseeater 1
+#deadhp 1
+#maxdeadhp 10
+#end
+
+#selectmonster 3534 -- Armored Jade Lizard
+#snaketattoo 1
+#end
+
 #selectmonster 1094 -- Desert Ranger
 #fireres 3
 #end
@@ -101191,6 +101406,39 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 861
 #end
 
+#newsite 2558
+#name "EA Sauromatia Summons"
+#level 0
+#rarity 5
+#path 5
+#look 7
+#homemon 1363 -- anc spirit
+#homemon 1840 -- hatchling
+#homemon 1831 -- hydra
+#homemon 1810 -- parth
+#homemon 7628 -- parth spear
+#homemon 7629 -- parth bow
+#homemon 7631 -- parth chariot
+#homecom 7630 -- parth lord
+#homecom 7325 -- nemed
+#homecom 7412 -- spirit sorc unmounted
+#homecom 7413 -- spirit sorc horse
+#homecom 7414 -- spirit sorc lizard
+#homecom 7415 -- spirit sorc serpent
+#homecom 1822 -- typhon
+#end
+
+#newsite 2559
+#name "EA Sauromatia Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 3
+#homecom 1228
+#homecom 1589
+#homecom 1795
+#end
+
 
 
 -- END OF NEW SITES
@@ -105739,6 +105987,9 @@ Priests: Average"
 #addgod 8373 -- Great Toad
 #addgod 8326 -- Triple Goddess
 #cheapgod20 8474 -- Ancestral Barrow
+
+#futuresite "EA Sauromatia Summons"
+#futuresite "EA Sauromatia Heroes"
 #end
 
 #selectnation 22 -- T'ien Ch'i
@@ -114635,12 +114886,12 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #copyspell 1113 -- Reanimation
 #name "Sacred Bones"
 #descr "The Partholonians were once the rulers of the Sauromatian lands, but have long since vanished. Their sacred bones lie buried in tombs in the Sauromatian swamps. With this spell ancient bones in ancient armor are forced to rise to fight once more. The Partholonian dead are still wreathed in illusions, their bones sacred and their weapons ensorcelled, crafted as they were when the Partholonians still walked the land ages ago. This spell can only be cast at the Enchanted Isle in Sauromatia."
-#researchlevel 3
+#researchlevel 5
 #pathlevel 0 3
 #path 1 2
 #pathlevel 1 1
 #nreff 5
-#fatiguecost 500
+#fatiguecost 400
 #damage 1810
 #onlyatsite 125  -- The Enchanted Isle
 #restricted 9  -- EA Sauro
@@ -114650,13 +114901,13 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #copyspell 1113 -- Reanimation
 #name "Delgnat's Bargain"
 #descr "The caster travels deep into the swamps of Pythia to the Enchanted Isle. There they bargain with Delgnat to release a longdead Partholonian Lord to serve the awakening God. The Partholonian dead are still wreathed in illusions, their bones sacred and their weapons ensorcelled, crafted as they were when the Partholonians still walked the land ages ago. This spell can only be cast at the Enchanted Isle in Sauromatia."
-#researchlevel 5
+#researchlevel 6
 #pathlevel 0 4
 #path 1 2
 #pathlevel 1 1
 #effect 10021
 #nreff 1
-#fatiguecost 2000
+#fatiguecost 1800
 #damage 7630 -- Longdead Partholonian Lord
 #onlyatsite 125  -- The Enchanted Isle
 #restricted 9  -- EA Sauro
@@ -114701,7 +114952,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #path 1 2
 #pathlevel 1 2
 #nreff 1010
-#fatiguecost 6000
+#fatiguecost 5000
 #damage 1810
 #onlyatsite 125  -- The Enchanted Isle
 #nextspell 2513
