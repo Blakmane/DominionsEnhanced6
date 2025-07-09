@@ -31637,7 +31637,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #name "Boitata"
 #spr1 "magicenhanced/eeboitata.tga"
 #spr2 "magicenhanced/eeboitata2.tga"
-#descr "Long ago, the pantokrator charged a Serpent with the duty of protecting the sacred heart of a deep jungle. This Serpent had a craving for eyeballs which it found delectable. Eventually after decades of feasting on the eyes of powerful beings it burst into flames, becoming the first Boitata. The Boitata still craves eyeballs and will strike directly at its foes eyes. Any creature who comes too close to the Boitata may also have its eyes seared out of its head by the licking flames. Despite its strange appetite, the Boitata is a friendly creature and is devoted to its duties as protector of the land."
+#descr "Long ago, the pantokrator charged a Serpent with the duty of protecting the sacred heart of a deep jungle. This Serpent had a craving for eyeballs which it found delectable. Eventually after decades of feasting on the eyes of powerful beings it burst into flames, becoming the first Boitata. The Boitata still craves eyeballs and will strike directly at its foes eyes. Despite its strange appetite, the Boitata is a friendly creature and is devoted to its duties as protector of the land."
 #snake
 #gcost 0
 #hp 62
@@ -31666,7 +31666,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #maxage 1000
 #fireres 25
 #poisonres 15
-#eyeloss
+--#eyeloss -- does not work
+#fireshield 8
 #firepower 1
 #okleader
 #magicskill 0 2  -- 2F
@@ -32036,6 +32037,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #clearmagic
 #spr1 "magicenhanced/eechachamallqui.tga"
 #spr2 "magicenhanced/eechachamallqui2.tga"
+#unmountedspr1 "magicenhanced/un_eechachamallqui.tga"
+#unmountedspr2 "magicenhanced/un_eechachamallqui2.tga"
 #name "Chachapoya Mallqui"
 #descr "The Chachapoya or Cloud Warriors are a tribe of ape-men that live in the cloud forests high in the mountains of Nazca. Fiercely independent warriors, they were one of the last tribes to be brought under the rule of the Sun Kings. Their warriors are highly skilled and can traverse mountain and forest terrain with ease. The Chachapoya have adopted the rituals of mummification and their Mallqui are feared throughout Nazca. This adoption of mummification was opposed by the Nazcan mage-priests, however they allowed it for fear of rebellion by the fractious Chachapoya. As members of the empire their Mallqui are given sacred status, however they are not given full priestly powers. They can call more of the sacred Mallqui warriors to their aid each month."
 #animal
@@ -32046,6 +32049,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 3 2
 #magicskill 5 2
 #magicskill 6 2
+#mountmnr 9085
 #makemonsters2 7650
 #end
 
@@ -53487,6 +53491,27 @@ Cost 56 RP."
 #mr 8
 #bravemount 100
 #weapon 1713 -- hooves of bucephalus
+#end
+
+#newmonster 9085
+#copystats 1122  -- Atavi Infantry
+#clearweapons
+#cleararmor
+#spr1 "magicenhanced/eechachabearer.tga"
+#spr2 "magicenhanced/eechachabearer2.tga"
+#name "Chachapoya Bearer"
+#descr "The Chachapoya or Cloud Warriors are a tribe of ape-men that live in the cloud forests high in the mountains of Nazca. Fiercely independent warriors, they were one of the last tribes to be brought under the rule of the Sun Kings."
+#gcost 0
+#mr 11
+#mor 12
+#str 10
+#att 10
+#def 10
+#coldres 5
+#mountainsurvival
+#weapon 92 -- fist
+#armor 203  -- Reinforced Cloth Armor
+#nobarding
 #end
 
 
@@ -84759,6 +84784,10 @@ Cost 28 RP."
 #end
 
 
+#selectmonster 2700
+#armor 545 -- spectral plate
+#end
+
 #selectmonster 2712
 #startage 50
 #end
@@ -101550,6 +101579,44 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 1848
 #end
 
+#newsite 2565
+#clear
+#name "MA Nazca Summons"
+#rarity 5
+#level 0
+#path 5
+#look 1
+#homemon 2700 -- supaya
+#homemon 2697 -- huaca
+#homemon 7634 -- boitata
+#homemon 7635 -- amaru
+#homemon 7636 -- lowland
+#homemon 7648 -- chacha archer
+#homemon 7649 -- cha warrior
+#homemon 7650 -- cha mallq warrior
+#homecom 2694 -- condor
+#homecom 7441 -- chacha kuraka
+#homecom 7651 -- chacha paqu
+#homecom 7652 -- chacha mallqui
+#homecom 7638 -- madre
+#homecom 7269 -- huaca stone
+#homecom 7508 -- effigy
+#homecom 7637 -- black amaru
+#end
+
+#newsite 2566
+#clear
+#name "MA Nazca Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 3
+#homecom 2712
+#homecom 2713
+#homecom 8213
+#homecom 8214
+#end
+
 
 -- END OF NEW SITES
 
@@ -107522,6 +107589,9 @@ Nation: Reduced income. Halved population increased from Growth scales."
 #addgod 2777 -- demon macaw
 #addgod 8445 -- idol of sustenance
 #addgod 8346 -- skull idol
+
+#futuresite "MA Nazca Summons"
+#futuresite "MA Nazca Heroes"
 #end
 
 #selectnation 74 -- MA Xibalba
@@ -125376,7 +125446,7 @@ All effects scale with friendly Dominion."
 #copyspell 12  -- Court of Flame Childs
 #name "20 Chachapoya Warriors"
 #damage 7649 -- Chachapoya Warriors
-#nreff 20
+#nreff 30
 #nextspell 3283
 #end
 
@@ -125384,7 +125454,7 @@ All effects scale with friendly Dominion."
 #copyspell 12  -- Court of Flame Childs
 #name "Call the Chachapoya"
 #damage 7648 -- Chachapoya Archer
-#nreff 20
+#nreff 30
 #nextspell 3284
 #end
 
@@ -125400,7 +125470,7 @@ All effects scale with friendly Dominion."
 #pathlevel 1 1
 #fatiguecost 6000
 #damage 7650 -- Mallqui Warriors
-#nreff 2004
+#nreff 2006 -- 12++
 #onlygeosrc 8388624  -- Mountain / Border Mountain
 #restricted 72 -- Nazca
 #nextspell 3285
@@ -125473,15 +125543,15 @@ All effects scale with friendly Dominion."
 
 #selectspell 3291
 #name "Summon Boitata"
-#descr "The caster summons a Boitata to serve them. The Boitata is a flaming serpent that has a craving for eyeballs which it finds delectable.  Despite its strange appetite, the Boitata is a friendly creature and is devoted to its duties as protector of the land."
+#descr "The caster summons a pair of Boitatas to serve them. The Boitata is a flaming serpent that has a craving for eyeballs which it finds delectable.  Despite its strange appetite, the Boitata is a friendly creature and is devoted to its duties as protector of the land."
 #school 0
 #researchlevel 4
 #path 0 0
 #pathlevel 0 3
 #effect 10001
-#fatiguecost 300
+#fatiguecost 500
 #damage 7634 -- Boitata
-#nreff 1
+#nreff 2
 #restricted 72 -- Nazca
 #end
 
@@ -125495,7 +125565,7 @@ All effects scale with friendly Dominion."
 #path 1 3
 #pathlevel 1 2
 #effect 10001
-#fatiguecost 900
+#fatiguecost 700
 #damage 7635 -- Amaru
 #nreff 503
 #spellreqfly 1
@@ -125511,7 +125581,7 @@ All effects scale with friendly Dominion."
 #path 0 3
 #pathlevel 0 4
 #effect 10001
-#fatiguecost 1300
+#fatiguecost 600
 #damage 7636 -- Lowland Amaru
 #nreff 1
 #nogeosrc 4194448  -- Mountains/Border/Forest
@@ -137540,16 +137610,16 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 474 -- Condors
-#nreff 1006
+--#nreff 1006
 #end
 
 #selectspell 475 -- Huacas
-#fatiguecost 1200
-#nreff 505
+#fatiguecost 900
+#nreff 5
 #end
 
 #selectspell 476 -- Supaya
-#nreff 505
+#nreff 506
 #end
 
 #selectspell 477 -- contact angel of the host
@@ -142092,7 +142162,9 @@ This will also prevent their skin from drying out."
 #spr "magicenhanced/eeitumi.tga"
 #name "Tumi"
 #descr "The Tumi is a sacrificial ceremonial axe used in many Nazcan rituals. The bearer may sacrifice a completely black or white llama, and using the Tumi to observe the organs can foretell the future. In addition it is very sharp and can cut through armor with ease. A Tumi is a symbol of good luck and the bearer will have good fortune in battle."
-#constlevel 5
+#constlevel 3
+#itemcost1 -40
+#itemcost2 -40
 #mainpath 5
 #mainlevel 1
 #secondarypath 4
@@ -144302,7 +144374,6 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 228 -- Huaca Headdress
-#constlevel 7
 #end
 
 #selectitem 197 -- Spirit Mask
