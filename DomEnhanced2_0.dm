@@ -2281,10 +2281,10 @@
 #end
 
 #newweapon 1713
+#copyweapon 532 -- Tail Sweep
 #name "Hooves of Bucephalus"
-#dmg 15
+#dmg 0
 #bonus
-#nostr
 #att 0
 #def 0
 #len 0
@@ -26910,7 +26910,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 63  -- Life Drain
 #ap 24
 #prec 10
-#itemslots 860678
 #montag 1024
 #nametype 108  -- Arco Female
 #end
@@ -26940,7 +26939,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #armor 549 -- spectral helm
 #weapon 63  -- Life Drain
 #ap 18
-#itemslots 860678
 #montag 1024
 #nametype 108  -- Arco Female
 #end
@@ -26971,7 +26969,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 63  -- Life Drain
 #ap 16
 #swampsurvival
-#itemslots 860678
 #montag 1024
 #nametype 108  -- Arco Female
 #end
@@ -31538,7 +31535,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 7 1
 #magicskill 9 1
 #custommagic 21248 100
-#itemslots 860678 -- No feet
 #weapon 475  -- Golden Lance
 #spiritsight
 #end
@@ -31557,7 +31553,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #trample
 #spiritsight
 #stealthy 0
-#itemslots 860678 -- No feet
 #armor 135  -- Bronze Cap
 #armor 142  -- Bronze Scale Cuirass
 #end
@@ -44288,6 +44283,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #newmonster 8184
 #spr1 "worthy_heroes/conqueror_1.tga"
 #spr2 "worthy_heroes/conqueror_2.tga"
+#unmountedspr1 "worthy_heroes/un_conqueror_1.tga"
+#unmountedspr2 "worthy_heroes/un_conqueror_2.tga"
 #name "Conqueror"
 #fixedname "Aleksandros"
 #descr "Aleksandros the Conqueror is the most famous general in Arcoscephale. He has never lost a battle despite being greatly outnumbered in many of them. His soldiers are known for their fierce loyalty and admire him with a passion that borders on worship. Aleksandros tamed the great steed Bucephalus, said to descend from the Pegasii of old. The stallion is a massive, frightening beast whose hooves can mangle several soldiers at once. It has been prophesized that he will conquer many kingdoms and bring a new era of prosperity for Arcoscephale. There are many legends of his ancestry, and many say that he is of divine heritage - a son of a god. The fame of the Conqueror travels before him and lesser foes would rather surrender or flee than fight him in his gleaming armor."
@@ -44303,7 +44300,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #prec 12
 #mr 15
 #mor 16
-#mounted
+#mountmnr 9084
+#skilledrider 5
 #gcost 1
 #rcost 1
 #awe 1
@@ -44311,7 +44309,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #inspirational 2
 #holy
 #weapon 75  -- Enchanted sword
-#weapon 1713 -- hooves of bucephalus
+--#weapon 1713 -- hooves of bucephalus
 #armor 123  -- Hoplite Helmet
 #armor 14  -- Plate Hauberk
 #armor 92  -- Enchanted Shield
@@ -53469,6 +53467,22 @@ Cost 56 RP."
 #ap 27
 #glamour
 #stealthy 0
+#end
+
+#newmonster 9084
+#copystats 3517 -- Destrier
+#clearweapons
+#name "Bucephalus"
+#descr "Aleksandros tamed the great steed Bucephalus, said to descend from the Pegasii of old. The stallion is a massive, frightening beast whose hooves can mangle several soldiers at once."
+#spr1 "worthy_heroes/conqbucephalos_1.tga"
+#spr2 "worthy_heroes/conqbucephalos_2.tga"
+#fear 5
+#size 6
+#str 18
+#hp 28
+#mr 8
+#bravemount 100
+#weapon 1713 -- hooves of bucephalus
 #end
 
 
@@ -79451,6 +79465,10 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #bodyguard 4
 #end
 
+#selectmonster 16 -- Hypaspist
+#gcost 10014
+#end
+
 #selectmonster 37  -- Master of the Games
 #gcost 1  -- base 25. This so little upkeep that it probably more prudent just to make him stick to the norm
 #clearweapons
@@ -101440,6 +101458,57 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 
+#newsite 2560
+#name "MA Arcoscephale Summons"
+#level 0
+#rarity 5
+#path 4
+#look 0
+#homemon 3119 -- Spartae
+#homemon 7704 -- Blemmyes
+#homemon 3210 -- Lampad
+#homemon 3168 -- hound
+#homemon 3127 -- Ker
+#homemon 3164 -- Keledone
+#homemon 3171 -- khalk
+#homemon 7300 -- daimones
+#end
+
+#newsite 2561
+#name "MA Arcoscephale Summons Continued"
+#level 0
+#rarity 5
+#path 4
+#look 0
+#homecom 7814 -- evening
+#homecom 8599 -- oceanid
+#homecom 7374 -- nephelae
+#homecom 7371 -- Karyatid
+#homecom 7373 -- eleinomae
+#homecom 7369 -- oreid
+#homecom 3066 -- hamadryad
+#homecom 7289 -- Boread
+#homemon 7298 -- kerberos
+#homecom 7642 -- anu
+#homecom 7252 -- hades
+#homecom 7250 -- athena
+#homecom 7251 -- pose
+#end
+
+#newsite 2562
+#name "MA Arcoscephale Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 2
+#homecom 371
+#homecom 587
+#homecom 954
+#homecom 2872
+#homecom 8184
+#homecom 8119
+#end
+
 
 -- END OF NEW SITES
 
@@ -106849,6 +106918,10 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 
 
 #futuresite "Arcoscephale Adventurers"
+#futuresite "Arcoscephale Divine Heroes"
+#futuresite "MA Arcoscephale Summons"
+#futuresite "MA Arcoscephale Summons Continued"
+#futuresite "MA Arcoscephale Heroes"
 
 #end
 
