@@ -233,9 +233,11 @@
 
 #newweapon 1504
 #name "Stone Shards"
-#dmg 4
+#dmg 8
+#aoe 1
 #halfstr
 #slash
+#defroll
 #end
 
 #newweapon 1505
@@ -3880,6 +3882,8 @@
 
 #selectweapon 424  -- 1h Boulder
 #range -2
+#nratt -2
+#ammo 6
 #secondaryeffectalways 1504 -- Stone Shards
 #end
 
@@ -68397,7 +68401,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #humanoid
 #size 9
 #prot 6
-
+#darkpower 2
 #mor 30
 #prec 12
 #mapmove 20
@@ -82751,6 +82755,7 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 #custommagic 4096 50  -- 50% D
 #prot 5 -- matching sepulchral
 #woundfend 3
+#darkpower 2
 #end
 
 #selectmonster 1492  -- Amesha Spenta
@@ -84577,6 +84582,7 @@ Cost 28 RP."
 #selectmonster 2497  -- Penumbral
 #prot 5 -- matching shard wight
 #woundfend 3
+#darkpower 2
 #end
 
 #selectmonster 2510  -- Lavaborn
@@ -101509,6 +101515,41 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8119
 #end
 
+#newsite 2563
+#clear
+#name "MA Agartha Summons"
+#rarity 5
+#level 0
+#path 3
+#look 8
+#homemon 640 -- magma kid
+#homemon 2497 -- penumbral
+#homemon 1490 -- umbral
+#homemon 2509 -- shard wight
+#homemon 3741 -- earth ele s6
+#homemon 3762 -- mercury
+#homemon 1497 -- att statue
+#homemon 1496 -- sentinel
+#homemon 1498 -- granite guard
+#homemon 2528 -- olm
+#homecom 2527 -- olm sage
+#homecom 7277 -- giant olm
+#homecom 1499 -- marble oracle
+#homecom 7710 -- kur
+#end
+
+#newsite 2564
+#clear
+#name "MA Agartha Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 6
+#homecom 1846
+#homecom 1847
+#homecom 1848
+#end
+
 
 -- END OF NEW SITES
 
@@ -107168,6 +107209,9 @@ Dominion: Laws may be enacted that ban blood and increase scales"
 #delgod 8449 -- Idol of the Sun
 #delgod 8448 -- Statue of the Sun and Rain
 #cheapgod20 8410 -- Onyx Statue
+
+#futuresite "MA Agartha Summons"
+#futuresite "MA Agartha Heroes"
 #end
 
 #selectnation 63 -- MA Abysia
@@ -117970,7 +118014,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #name "Journey Through the Earth"
 #descr "The Agarthans know many secret ways through the depths. The caster leads his army into a deep cave system and navigates until a distant cave is reached. This spell can only be cast in a Cave province and must target a distant Cave province. This province can be held by enemies, in which case the army will attack the defenders when they arrive."
 #path 0 3
-#researchlevel 6
+#researchlevel 7
 #fatiguecost 1600
 #provrange 5
 #onlygeosrc 4096  -- Cave
@@ -136918,6 +136962,16 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #onlyatsite 60
 #end
 
+#selectspell 4189
+#copyspell 611
+#name "Host of Attentive Statues"
+#descr "The ancient statues of old Agartha are sacred and rare. Human ones are not treated with the same respect as statues of the Ancients, but are quite common. Enlivened by the Golem Crafters, these statues are placed near gates to stand watch and wait for trespassers."
+#researchlevel 5
+#pathlevel 0 3
+#nreff 1007 -- 10+
+#fatiguecost 1300
+#end
+
 
 
 
@@ -137807,6 +137861,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 601 -- Penumbrals
 #fatiguecost 500 -- 1 gem redux
+#end
+
+#selectspell 613 -- Granite Guard
+#fatiguecost 600
 #end
 
 #selectspell 617 -- Nightmare Construction
