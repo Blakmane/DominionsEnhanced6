@@ -272,7 +272,7 @@
 
 #newweapon 1507
 #copyweapon 619  -- obsidian dart
-#name "Throwing knife"
+#name "Throwing Knife"
 #ammo 2
 #att 0
 #ironweapon
@@ -2433,8 +2433,12 @@
 
 #newweapon 1728
 #copyweapon 404  -- Beak
-#name "Golden Beak"
-#magic
+#name "Torrent of Beaks"
+--#magic
+#dmg 0
+#def 0
+#aoe 1
+#defroll
 #end
 
 #newweapon 1729
@@ -3066,7 +3070,7 @@
 
 #newweapon 1821 -- Sibat, +2 damage, +1 def, -1 len over Spear
 #copyweapon 373 -- Stone Spear
-#name "Sibat"
+#name "Short Spear"
 #rcost 2
 #def 1
 #dmg 4
@@ -4463,7 +4467,7 @@
 #name "Light Leather Barding"
 #rcost 1
 #type 9
-#protparts 5 7
+#protparts 5 5
 #end
 
 #newarmor 560
@@ -10126,7 +10130,7 @@
 #name "Irukandji"
 #spr1 "alchera/irukandji.tga"
 #spr2 "alchera/irukandji.tga"
-#descr "The Irukandji is a tiny venomous jellyfish native to the waters around Alchera. The sting of its poison is more potent than a hundred snake bites and will quickly paralyze a target. Anyone attacking the Irukandji risks being stung unless they are using a long weapon."
+#descr "The Irukandji is a tiny venomous jellyfish native to the waters around Alchera and Bantay Tubig. The sting of its poison is more potent than a hundred snake bites and will quickly paralyze a target. Anyone attacking the Irukandji risks being stung unless they are using a long weapon."
 #miscshape
 #size 1
 #hp 3
@@ -10137,7 +10141,7 @@
 #def 12
 #ap 8
 #transformation 0
-#poisonarmor 5
+#poisonarmor 2
 #unsurr 10
 #poisonres 10
 #blind
@@ -17438,8 +17442,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon 404  -- Beak
 #weapon 236  -- Claw
 #maxage 100
-#xploss 100
-#homeshape 6969
+--#xploss 100
+--#homeshape 6969
 #nametype 144
 #nothrowoff
 #bravemount 100
@@ -25090,7 +25094,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #newmonster 7320
 #copystats 456  -- Foul Spawn
 #copyspr 456  -- Foul Spawn
-#name "Inbred villager"
+#name "Inbred Villager"
 #descr "This is a misshapen villager born under the influence of the Blood Harvest. Whilst the unnatural growth granted by strange rituals has made them strong they are untrained and savage. They are brave in battle however they have no military training."
 #gcost 0
 #transformation 0
@@ -25101,7 +25105,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #newmonster 7321
 #copystats 461  -- Foul Spawn
 #copyspr 461  -- Foul Spawn
-#name "Inbred villager"
+#name "Inbred Villager"
 #descr "This is a misshapen villager born under the influence of the Blood Harvest. Whilst the unnatural growth granted by strange rituals has made them strong they are untrained and savage. They are brave in battle however they have no military training."
 #gcost 0
 #transformation 0
@@ -25112,7 +25116,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #newmonster 7322
 #copystats 458  -- Foul Spawn
 #copyspr 458  -- Foul Spawn
-#name "Inbred villager"
+#name "Inbred Villager"
 #descr "This is a misshapen villager born under the influence of the Blood Harvest. Whilst the unnatural growth granted by strange rituals has made them strong they are untrained and savage. They are brave in battle however they have no military training."
 #gcost 0
 #transformation 0
@@ -25123,7 +25127,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #newmonster 7323
 #copystats 457  -- Foul Spawn
 #copyspr 457  -- Foul Spawn
-#name "Inbred villager"
+#name "Inbred Villager"
 #descr "This is a misshapen villager born under the influence of the Blood Harvest. Whilst the unnatural growth granted by strange rituals has made them strong they are untrained and savage. They are brave in battle however they have no military training."
 #gcost 0
 #transformation 0
@@ -36500,7 +36504,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #clearweapons
 #cleararmor
 #name "Tikbalang"
-#descr "The Tikbalang is a demonic creature of the wild that thrives on turmoil and carnage. They have the body of a large muscular man, however their head and hind quarters resemble a monstrous horse. They inhabit dark, sparsely populated and foliage-overgrown areas and are known for their hot temper and vengeful nature. When angered they will attack with their sharp claws and use their hooves to trample or stamp their prey to death. Since they are of this world, they can be summoned without a sacrifice of blood, even if demonic by nature."
+#descr "The Tikbalang is a demonic creature of the wild native to the islands of Bantay Tubig. They have the body of a large muscular man, however their head and hind quarters resemble a monstrous horse. They inhabit dark, sparsely populated and foliage-overgrown areas and are known for their hot temper and vengeful nature. When angered they will attack with their sharp claws and use their hooves to trample or stamp their prey to death. Since they are of this world, they can be summoned without a sacrifice of blood, even if demonic by nature."
 #prot 10
 #berserk 3
 #str 20
@@ -36509,7 +36513,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #prec 10
 #enc 2
 #darkvision 100
-#chaospower 1
+--#chaospower 1
 #weapon 29  -- Claw
 #weapon 55  -- Hoof
 #armor 44  -- Furs
@@ -57185,7 +57189,7 @@ Cost 50 recruitment points."
 #spr1 "blue_bantaytubig/mambubunowitch1.png"
 #spr2 "blue_bantaytubig/mambubunowitch2.png"
 #name "Mambubuno Manyisalat"
-#descr "Mambubuno are aquatic beings with the appearance of a human with scaled legs ending in fins. Males have black scales, while females have bright many-colored scales. Mambubuno live in underwater caves full of riches, and are known to take humans hostage as their lover and use strange magic to turn days into years."
+#descr "Mambubuno are aquatic beings with the appearance of a human with scaled legs ending in fins. Males have black scales, while females have bright many-colored scales. Mambubuno live in underwater caves full of riches, and are sometimes known to take humans that drift too close to the sea hostage as their lover and use strange magic to turn days into years. As all beings of the sea, the Mambubuno serve the Kataw and will employ their magic when asked."
 #rpcost 2 
 #hp 15
 #str 11
@@ -57203,9 +57207,9 @@ Cost 50 recruitment points."
 #weapon 92 -- Fist
 #aquatic
 #float
---#magicskill 2 1 -- Water
-#magicskill 7 1 -- Glamour
---#fixforgebonus 1 -- Discount on glamour items only, may remove
+#magicskill 7 2 -- Glamour
+#seduce 10
+#giftofwater 10
 #darkvision 50
 #maxage 100
 #startage 25
@@ -57674,9 +57678,9 @@ Cost 50 recruitment points."
 
 #newmonster 8900 -- Kurita
 #spr1 "blue_bantaytubig/kurita1.png"
-#spr2 "blue_bantaytubig/kurita1.png"
+#spr2 "blue_bantaytubig/kurita2.png"
 #name "Kurita"
-#descr "The Kurita is a terrible monster with many limbs that live in both mountains and sea, and few creatures are as dreaded. It eats humans and any other animal life it can find as it travels, leaving a trail of destruction in their wake with entire villages and forests reduced to ruin as it passes."
+#descr "The Kurita is a terrible monster with many limbs that live in both mountains and sea, and few creatures are as dreaded. It eats humans and any other animal life it can find as it travels, leaving a trail of destruction in their wake with entire villages and forests reduced to ruin as it passes. Kurita are difficult to control and will enter a rage at the slightest provocation."
 #rpcost 9
 #rcost 1
 #hp 110
@@ -57686,13 +57690,14 @@ Cost 50 recruitment points."
 #mor 30
 #prec 5
 #prot 13
-#unsurr 8
+#unsurr 4
 #berserk 4
 #size 9
 #mr 18
 #enc 3
 #mapmove 18
 #mountainsurvival
+#undisciplined
 #fear 5
 #ap 10
 #gcost 10010
@@ -57800,7 +57805,7 @@ Cost 50 recruitment points."
 #spr2 "blue_bantaytubig/burulakaw1.png"
 #copystats 592 -- sprite
 #name "Burulakaw"
-#descr "The burulakaw are supernatural messengers that can be called upon by mages. They usually take the form of a small maidens with long hair of fire, but viewed from a distance they can appear to be a ball of fire with a tail. They travel day and night, but they can only be seen by mortal eyes in the evening when there is no more glare from the sun."
+#descr "The Burulakaw are supernatural messengers that can be called upon by mages. They usually take the form of a small maidens with long hair of fire, but viewed from a distance they can appear to be a ball of fire with a tail. They travel day and night, but they can only be seen by mortal eyes in the evening when there is no more glare from the sun."
 #gcost 0
 #hp 3
 #mapmove 28
@@ -57809,6 +57814,7 @@ Cost 50 recruitment points."
 #invisible
 #darkvision 50
 #nametype 130 -- indian female
+#custommagic 16512 10
 #end
 
 #newmonster 8942 -- Bentohangin
@@ -57900,7 +57906,7 @@ Cost 50 recruitment points."
 #spr1 "blue_bantaytubig/buwaya1.png"
 #spr2 "blue_bantaytubig/buwaya2.png"
 #name "Buwaya"
-#descr "Buwaya are monstrous beings that that look like a giant crocodile with a shell on their back, used to hold the souls of those it devours to carry with it into the land of the dead. They have scaled as hard as a dragon's and can devour people whole. The souls of those they eat may become trapped."
+#descr "Buwaya are monstrous beings with the appearance of a giant crocodile with a shell on their back, used to hold the souls of those it devours. They have scales as hard as a dragon's and can devour people whole. Buwaya will only attack those who have broken taboos or oaths, and will carry the souls of those devoured safely into the land of the dead. The souls of immortals will also become trapped in the shell, where the Buwaya will never allow them to return to the world."
 #prot 22
 #size 8
 #hp 63
@@ -57951,7 +57957,7 @@ Cost 50 recruitment points."
 #spr2 "blue_bantaytubig/berberoka2.png"
 #name "Berberoka"
 #descr "Berberoka are massive beasts of the swamp, capable of swallowing an entire pond so the fish in it fall. When an unlucky fisherman descends into the pond to pick up the fish, the Berberoka will release the water to drown them to be eaten. They are also quite capable of spraying the water they swallow like a weapon."
-#prot 14
+#prot 10
 #size 10
 #hp 108
 #mr 16
@@ -57973,8 +57979,124 @@ Cost 50 recruitment points."
 #weapon 461 -- Swallow
 #digest 2
 #gcost 0
+#magicskill 2 1
+#magicskill 6 1
 #end
 
+
+#newmonster 8949 -- Alan
+#spr1 "blue_bantaytubig/alan1.png"
+#spr2 "blue_bantaytubig/alan2.png"
+#name "Alan"
+#descr "The Alan is a birdlike humanoid with a tough, wrinkly hide, claws on their hands and feet that point backwards, and leathery wings, born from abandoned fetuses. They live in houses atop trees where they sleep hanging from branches like a bat. While horrible to look at, they are relatively harmless beings known to help hunters or adopt children lost in the forest, though they are usually mistaken for monsters and killed. Their houses are usually stocked with beads, gold, and other things they may collect, which they may give to the dead or in need, or have stolen from them just as often."
+#hp 11
+#str 10
+#att 11
+#def 11
+#mor 13
+#prec 5
+#prot 6
+#size 4
+#mr 18
+#enc 3
+#mapmove 20
+#forestsurvival
+#ap 10
+#gcost 0
+#flying
+#stealthy 0
+#weapon 33 -- Claws
+#maxage 60
+#startage 70
+#nametype 140 -- demons
+#humanoid
+#magicskill 5 1
+#magicskill 6 1
+#magicskill 8 1
+#custommagic 45184 100
+#end
+
+
+#newmonster 8950 -- Tarabusaw
+#spr1 "blue_bantaytubig/tarabusaw.png"
+#spr2 "blue_bantaytubig/tarabusaw2.png"
+#name "Tarabusaw"
+#descr "The Tarabusaw is a hill giant of the islands, an ugly creature in the form of a man, and one of great fury and devastation. While intelligent compared to most giants, their rage and hunger leads them to wanton destruction. Tarabusaw are massive and powerful four-armed beings that few can face up against."
+#hp 121
+#str 30
+#att 13
+#def 10
+#mor 20
+#prec 5
+#prot 10
+#berserk 5
+#size 10
+#mr 13
+#enc 2
+#mapmove 20
+#mountainsurvival
+#fear 5
+#ap 10
+#gcost 0
+#weapon 165 -- Great Club
+#weapon 92 -- Fist
+#weapon 609 -- Grab and Swallow
+#amphibian
+#maxage 1000
+#startage 120
+#nametype 140 -- demons
+#humanoid
+#itemslots 468510 -- 4 arms, head, body, feet, misc
+#popkill 5
+#incunrest 20
+#appetite 10
+#digest 3
+#magicskill 6 1
+#magicskill 7 1
+#end
+
+
+#newmonster 8951 -- gurayn bird
+#spr1 "blue_bantaytubig/guraynbird1.png"
+#spr2 "blue_bantaytubig/guraynbird2.png"
+#name "Gurayn Bird"
+#descr "The Gurayn Bird is a massive, 7-headed bird residing at the top of mountain peaks. Believed to be all-seeing, they are nearly impossible to surprise or surround as their many heads view all around them. Their skin is tough and difficult to cut, their talons and beaks as sharp as any blade. Gurayn Birds have strong destructive urges and each season they must travel further and further to sate them."
+#hp 84
+#str 22
+#att 13
+#def 16
+#mor 20
+#prec 5
+#prot 14
+#unsurr 14
+#size 10
+#mr 15
+#enc 2
+#mapmove 18
+#mountainsurvival
+#flying
+#stormimmune
+#fear 5
+#ap 10
+#gcost 0
+#coldres 5
+#patrolbonus 50
+#siegebonus 20
+#slashres
+#weapon 1728 -- Beak Barrage
+#weapon 1728 -- Beak Barrage
+#weapon 408 -- Talons
+--#weapon 826 -- Talons
+#amphibian
+#maxage 1000
+#startage 100
+#nametype 140 -- demons
+#bird
+#popkill 2
+#incunrest 20
+#appetite 7
+#magicskill 1 2
+#end
 
 
 -- ENDSUMMONS
@@ -97746,7 +97868,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #gems 1 2 -- air
 #gems 2 2 -- water
 #gems 6 1 -- nature
-#gems 7 1 -- glamour
 --#homecom 8929 -- Datu
 #homecom 8934 -- Datu w/ Eel
 #homecom 8930 -- Kataw
@@ -97754,33 +97875,17 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 8916 -- Ibingan
 #end
 
-#newsite 2328 -- Bantay Tubig Summons
+#newsite 2328 -- Caves of the Mambubuno
 #clear
-#name "Bantay Tubig Summons"
+#name "Caves of the Mambubuno"
 #rarity 5
 #level 0
-#path 2 -- water
+#path 7 -- G
 #look 6
-#homemon 8938 -- Pating na Pakpakan
-#homemon 8946 -- Buwaya
-#homemon 8939 -- Nanreben
-#homemon 8948 -- Berberoka
-#homemon 8900 -- Kurita
-#homemon 8943 -- Maginaga
-#homecom 8944 -- Lakandanum
-#homecom 8947 -- Nuno
-#homecom 8942 -- Bentohangin
-#homecom 8941 -- Burulakaw
+#gems 7 1 -- glamour
 #end
 
-#newsite 2329 -- Bantay Tubig Heroes
-#clear
-#name "Bantay Tubig Heroes"
-#rarity 5
-#level 0
-#path 9
-#look 6
-#end
+
 
 -- Sites 2331~2335 used by Faster Forts
 
@@ -101617,6 +101722,38 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8214
 #end
 
+#newsite 2567 -- Bantay Tubig Summons
+#clear
+#name "Bantay Tubig Summons"
+#rarity 5
+#level 0
+#path 2 -- water
+#look 6
+#homemon 6713 -- irukandji
+#homemon 7889 -- Tikbalang
+#homemon 8938 -- Pating na Pakpakan
+#homemon 8946 -- Buwaya
+#homemon 8939 -- Nanreben
+#homemon 8948 -- Berberoka
+#homemon 8900 -- Kurita
+#homemon 8950 -- Tarabusaw
+#homemon 8951 -- Gurayn Bird
+#homemon 8943 -- Maginaga
+#homecom 8944 -- Lakandanum
+#homecom 8941 -- Burulakaw
+#homecom 8947 -- Nuno
+#homecom 8949 -- Alan
+#homecom 8942 -- Bentohangin
+#end
+
+#newsite 2568 -- Bantay Tubig Heroes
+#clear
+#name "Bantay Tubig Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 6
+#end
 
 -- END OF NEW SITES
 
@@ -105925,6 +106062,8 @@ Priests: Average"
 
 #clearsites
 #startsite "Cave of Kataw"
+#startsite "Caves of the Mambubuno"
+
 #futuresite "Bantay Tubig Summons"
 
 #clearrec
@@ -107640,6 +107779,11 @@ Nation: Reduced income. Halved population increased from Growth scales."
 #end
 
 #selectnation 77
+#summary "Race: Humans and Colossi. Starts on an extra rich island if possible. Ocean sailing, trace income across oceans, income bonus in coastal castles. Prefers Heat scale +1 Military: Human and Colossi infantry. Can recruit special mages in coastal castles. A few Gigantes arrive yearly.
+Magic: Air, Water, Astral, Glamour, some Earth and Fire.
+Priests: Few of medium power
+Dominion: All commanders can use the dark vessels to cross oceans between two provinces with the Pretender's dominion."
+
 #uwbuild 1
 #delgod 8485 -- Sacred Grove
 #addgod 8349 -- Great Gull
@@ -111488,22 +111632,6 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #effect 10001
 #fatiguecost 200
 #damage 7485 -- Eudaimon
-#end
-
-#selectspell 2244
-#copyspell 1024 -- Awaken Sleeper
-#name "Summon Tikbalang"
-#descr "The caster travels to a dark, sparsely populated forest to summon a Tikbalang. This demonic creature of the wild has the body of a large muscular man, however the head and hind quarters of a monstrous horse. When angered they will attack with their sharp claws and use their hooves to trample or stamp their prey to death. Since they are of this world, they can be summoned without a sacrifice of blood, even if demonic by nature."
-#school 0
-#researchlevel 5
-#effect 10001
-#path 0 6 -- N
-#pathlevel 0 2
-#path 1 7 -- G
-#pathlevel 1 1
-#fatiguecost 200
-#onlygeosrc 128  -- Forest
-#damage 7889 -- Tikbalang
 #end
 
 #selectspell 2245
@@ -128207,7 +128335,8 @@ All effects scale with friendly Dominion."
 #damage 6713 -- Irukandji
 #spec 41943040  -- UW Onlu
 #fatiguecost 100
-#restricted 193
+#restricted 193 -- Alchera
+#restricted 207 -- Bantay Tubig
 #end
 
 #selectspell 3489
@@ -137032,7 +137161,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #onlyatsite 60
 #end
 
-#selectspell 4189
+#selectspell 4190
 #copyspell 611
 #name "Host of Attentive Statues"
 #descr "The ancient statues of old Agartha are sacred and rare. Human ones are not treated with the same respect as statues of the Ancients, but are quite common. Enlivened by the Golem Crafters, these statues are placed near gates to stand watch and wait for trespassers."
@@ -137040,6 +137169,269 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 0 3
 #nreff 1007 -- 10+
 #fatiguecost 1300
+#end
+
+#selectspell 4191
+#copyspell 808 -- Slow
+#name "Slow Time"
+#descr "The caster uses the magic of the Mambubuno to slow the passage of time down for a group of soldiers. The slowed units will require twice as long time to move, attack or cast spells. The effect will last for the entire battle, however the spell can be resisted."
+#details "Slow 50%, Att -2, Def -2."
+#researchlevel 4
+#path 0 7
+#pathlevel 0 2
+#fatiguecost 30
+#aoe 2004 -- 8+2
+#restricted 207 -- Bantay Tubig
+#end
+
+#selectspell 4192
+#copyspell 856 -- Earth Gem Alchemy
+#name "Riches of the Mambubuno"
+#descr "The caster travels to the home of the Mambubuno and offers gems of Glamour for some of the treasure kept inside."
+#researchlevel 2
+#path 0 7
+#pathlevel 0 2
+#restricted 207 -- Bantay Tubig
+#end
+
+
+
+
+#selectspell 4193
+#copyspell 935 -- Pack of Wolves
+#name "Summon Flying Sharks"
+#descr "The caster summons a few Pating na Pakpakan, demonic flying sharks that live around the islands. They can be drawn with smell of fresh blood spilled into the sea and bound by blood mages."
+#researchlevel 3
+#school 6
+#path 0 8
+#path 1 2
+#pathlevel 0 1
+#pathlevel 1 1
+#damage 8938 -- Pating
+#nreff 503
+#fatiguecost 1300
+#restricted 207 -- Bantay Tubig
+#spec 41943040 -- UWonly
+#end
+
+#selectspell 4194
+#copyspell 935 -- Pack of Wolves
+#name "Frenzy of Flying Sharks"
+#descr "The caster summons a frenzy of Pating na Pakpakan, demonic flying sharks that live around the islands, with a great sacrifice of blood. The great quantities of blood will draw dozens of sharks and in the flurry of sharks flying overhead swimming under the sea many may be bound by a blood mage. More powerful blood mages will be able to bind many of them."
+#researchlevel 7
+#school 6
+#path 0 8
+#path 1 2
+#pathlevel 0 2
+#pathlevel 1 1
+#damage 8938 -- Pating
+#nreff 2008 -- 12+
+#fatiguecost 4000
+#restricted 207 -- Bantay Tubig
+#spec 41943040 -- UWonly
+#end
+
+#selectspell 4195
+#copyspell 935 -- Pack of Wolves
+#name "Summon Buwaya"
+#descr "The caster summons Buwaya from a river stream or lake. Buwaya are monstrous beings with the appearance of a giant crocodile with a shell on their back, used to hold the souls of those it devours."
+#researchlevel 5
+#path 0 6
+#path 1 2
+#pathlevel 0 2
+#pathlevel 1 1
+#damage 8946 -- Buwaya
+#nreff 1
+#fatiguecost 200
+#restricted 207 -- Bantay Tubig
+#spec 8388608 -- UWOK
+#end
+
+#selectspell 4196
+#copyspell 935 -- Pack of Wolves
+#name "Summon Nanreben"
+#descr "The caster summons Nanreben from a river stream. The Nanreben is a giant serpent living in the seas of Bantay Tubig. Its eyes are like two torches, and on their head is a pair of white horns. Their scales are as hard as a dragon's and their fangs can deliver a fiery venom. They are related to the Ibingan that guard the Kataw and are sometimes summoned for war, but they are not held sacred."
+#researchlevel 3
+#path 0 0
+#pathlevel 0 2
+#damage 8939 -- Nanreben
+#nreff 1
+#fatiguecost 300
+#restricted 207 -- Bantay Tubig
+#spec 41943040 -- UWonly
+#end
+
+#selectspell 4197
+#copyspell 935 -- Pack of Wolves
+#name "Summon Berberoka"
+#descr "The caster summons Berberoka from a marshy lake. Berberoka are massive beasts of the swamp, capable of swallowing an entire pond so the fish in it fall. When an unlucky fisherman descends into the pond to pick up the fish, the Berberoka will release the water to drown them to be eaten. They are also quite capable of spraying the water they swallow like a weapon."
+#researchlevel 6
+#path 0 2
+#path 1 6
+#pathlevel 0 2
+#pathlevel 1 1
+#damage 8948 -- Berberoka
+#nreff 1
+#fatiguecost 500
+#restricted 207 -- Bantay Tubig
+#end
+
+#selectspell 4198
+#copyspell 935 -- Pack of Wolves
+#name "Call Many-Limbed Creature"
+#descr "The caster summons a Kurita with a sacrifice of blood, a terrible monster with many limbs that lives in the sea or mountains. It eats humans and any other animal life it can find as it travels, leaving a trail of destruction in their wake with entire villages and forests reduced to ruin as it passes. Kurita are difficult to control and will enter a rage at the slightest provocation."
+#researchlevel 4
+#school 6 -- Blood
+#path 0 8
+#path 1 2
+#pathlevel 0 1
+#pathlevel 1 1
+#damage 8900 -- Kurita
+#nreff 1
+#fatiguecost 1500
+#restricted 207 -- Bantay Tubig
+#spec 8388608 -- UWOK
+#end
+
+#selectspell 4199
+#copyspell 935 -- Pack of Wolves
+#name "Summon Tarabusaw"
+#descr "The caster summons a Tarabusaw, a hill giant of the islands. An ugly creature in the form of a man, and one of great fury and devastation. While intelligent compared to most giants, their rage and hunger leads them to wanton destruction. Tarabusaw are massive and powerful four-armed beings that few can face up against."
+#researchlevel 4
+#path 0 6
+#pathlevel 0 2
+#damage 8950 -- Tarabusaw
+#nreff 1
+#fatiguecost 400
+#restricted 207 -- Bantay Tubig
+#spec 8388608 -- UWOK
+#end
+
+#selectspell 4200
+#copyspell 935 -- Pack of Wolves
+#name "Summon Dread Bird"
+#descr "The caster summons a Gurayn Bird, a massive, 7-headed bird residing at the top of mountain peaks. Believed to be all-seeing, they are nearly impossible to surprise or surround as their many heads view all around them. Their skin is tough and difficult to cut, their talons and beaks as sharp as any blade. Gurayn Birds have strong destructive urges and each season they must travel further and further to sate them."
+#researchlevel 5
+#path 0 1
+#pathlevel 0 2
+#damage 8951 -- Gurayn Bird
+#nreff 1
+#fatiguecost 400
+#restricted 207 -- Bantay Tubig
+#spec 8388608 -- UWOK
+#end
+
+
+#selectspell 4201
+#copyspell 1024 -- Summon Sleeper
+#name "Contact Lakandanum"
+#descr "."
+#school -1
+#damage 8944 -- Lakandanum
+#end
+
+#selectspell 4202
+#copyspell 935 -- Pack of Wolves
+#name "Contact Maginagas of Idalmunon"
+#descr "The caster enters a deep cave and contacts the Maginagas of Idalmunon. A Lakandanum along with her retinue of warriors will emerge to aid the caster and offer protection. Unlike the Nagas of Patala, they are highly resistant to fire, but cannot entrance with their gaze."
+#researchlevel 5
+#path 0 2
+#pathlevel 0 2
+#path 1 7
+#pathlevel 1 2
+#nreff 1013 -- 15+
+#damage 8943  -- Maginaga Warrior
+#fatiguecost 2500
+#onlygeosrc 4096  -- Cave
+#nextspell 4201
+#restricted 207 -- Bantay Tubig
+#end
+
+#selectspell 4203
+#copyspell 1024 -- Summon Sleeper
+#name "Summon Burulakaw"
+#descr "The caster summons a Burulakaw, supernatural messengers that can be called upon by mages. They usually take the form of a small maidens with long hair of fire, but viewed from a distance they can appear to be a ball of fire with a tail. They travel day and night, but they can only be seen by mortal eyes in the evening when there is no more glare from the sun."
+#researchlevel 1
+#path 0 7
+#pathlevel 0 1
+#damage 8941 -- Burulakaw
+#fatiguecost 200
+#restricted 207 -- Bantay Tubig
+#end
+
+#selectspell 4204
+#copyspell 1024 -- Summon Sleeper
+#name "Summon Old Man of the Mound"
+#descr "The caster summons a Nuno sa Punso, or Old Men of the Mound, spirits that reside in anthills. Any person attempting to fell a tree or build on the grounds of a Nuno sa Punso should always ask their permission first, lest they suffer their misfortune or curses."
+#researchlevel 4
+#path 0 6
+#pathlevel 0 2
+#path 0 7
+#pathlevel 0 2
+#damage 8947 -- Nuno sa Punso
+#fatiguecost 1200
+#restricted 207 -- Bantay Tubig
+#end
+
+#selectspell 4204
+#copyspell 1024 -- Summon Sleeper
+#name "Summon Alan"
+#descr "The caster summons an Alan, a birdlike humanoid with a tough, wrinkly hide, claws on their hands and feet that point backwards, and leathery wings, born from abandoned fetuses. They live in houses atop trees where they sleep hanging from branches like a bat. While horrible to look at, they are relatively harmless beings known to help hunters or adopt children lost in the forest."
+#researchlevel 5
+#path 0 6
+#pathlevel 0 2
+#path 0 5
+#pathlevel 0 1
+#damage 8949 -- Alan
+#fatiguecost 1400
+#restricted 207 -- Bantay Tubig
+#end
+
+#selectspell 4204
+#copyspell 1024 -- Summon Sleeper
+#name "Summon Bentohangin"
+#descr "The caster summons a Bentohangin, a being resembling that of a flying horse, but half of their body is that of a man, and are known to roam across islands at night. They are physically mighty magical beings of the wild, coming from the sky realm of Kahanginan. Normally they leave the other beings of the world alone, but may be summoned as powerful mages of wind and the heavens."
+#researchlevel 7
+#path 0 1
+#pathlevel 0 3
+#path 1 6
+#pathlevel 1 1
+#damage 8942 -- Bentohangin
+#fatiguecost 3000
+#restricted 207 -- Bantay Tubig
+#end
+
+#selectspell 2244
+#copyspell 1024 -- Awaken Sleeper
+#name "Summon Tikbalang"
+#descr "The caster travels to a dark, sparsely populated forest to summon a Tikbalang. This demonic creature of the wild has the body of a large muscular man, however the head and hind quarters of a monstrous horse. When angered they will attack with their sharp claws and use their hooves to trample or stamp their prey to death. Since they are of this world, they can be summoned without a sacrifice of blood, even if demonic by nature."
+#school 0
+#researchlevel 3
+#effect 10001
+#path 0 6 -- N
+#pathlevel 0 1
+#fatiguecost 200
+--#onlygeosrc 128  -- Forest
+#damage 7889 -- Tikbalang
+#restricted 207 -- Bantay Tubig
+#end
+
+#selectspell 4205
+#copyspell 1024 -- Awaken Sleeper
+#name "Summon Band of Tikbalang"
+#descr "The caster travels to a dark, sparsely populated forest to summon a group of Tikbalang. This demonic creature of the wild has the body of a large muscular man, however the head and hind quarters of a monstrous horse. When angered they will attack with their sharp claws and use their hooves to trample or stamp their prey to death. Since they are of this world, they can be summoned without a sacrifice of blood, even if demonic by nature."
+#school 0
+#researchlevel 6
+#effect 10001
+#path 0 6 -- N
+#pathlevel 0 2
+#path 1 7 -- G
+#pathlevel 1 1
+#nreff 1004 -- 6+
+#fatiguecost 1000
+--#onlygeosrc 128  -- Forest
+#damage 7889 -- Tikbalang
+#restricted 207 -- Bantay Tubig
 #end
 
 
