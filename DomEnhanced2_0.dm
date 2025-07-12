@@ -53924,7 +53924,7 @@ Mothers of the Abyss can be recruited in the capital and all Basalt Cities."
 #darkvision 100
 #okleader
 #holy
-#holycost 2
+#holycost 1
 #magicskill 9 2 -- Priest
 #twiceborn 8737 -- Wight Mage
 #end
@@ -55003,7 +55003,7 @@ Warriors of the Abyss can only be recruited at Basalt Cities."
 #spr1 "blue_dirgen/blue_abyssalpillar1.tga"
 #spr2 "blue_dirgen/blue_abyssalpillar2.tga"
 #name "Abyssal Pillar"
-#descr "The Basalt City of Atlantis has long been destroyed, however relics of old Atlantis can still be found, are now being put readily to new use by the Kurvant. Abyssal Pillars are highly trained shamblers chosen for their strength and discipline to wear the incredibly heavy Basalt Armor once worn by Living Pillars, and carry a Basalt Spear and Asp Shield. The Abyssal Pillars are held sacred by the Atlantians of Dirgen as the bearers of their lost legacy.
+#descr "The Basalt City of Atlantis has long been destroyed, however relics of old Atlantis can still be found, and are now being put readily to new use by the Kurvant. Abyssal Pillars are highly trained shamblers chosen for their strength and discipline to wear the incredibly heavy Basalt Armor once worn by Living Pillars, and carry a Basalt Spear and Asp Shield. The Abyssal Pillars are held sacred by the Atlantians of Dirgen as the bearers of their lost legacy.
 Abyssal Pillars can only be recruited at Basalt Cities."
 #rpcost 35
 #rcost 1
@@ -55021,7 +55021,7 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #ap 12
 #gcost 10030
 #holy
-#holycost 2
+#holycost 3
 #castledef 1
 #coldres 5
 #fireres 5
@@ -57816,6 +57816,9 @@ Cost 50 recruitment points."
 #darkvision 50
 #nametype 130 -- indian female
 #custommagic 16512 10
+#noleader
+#nomagicleader
+#noundeadleader
 #end
 
 #newmonster 8942 -- Bentohangin
@@ -57943,6 +57946,7 @@ Cost 50 recruitment points."
 #neednoteat
 #magicbeing
 #humanoid
+#goodmagicleader
 #clearweapons
 #weapon 7 -- quarterstaff
 #weapon 557 -- AP death poison sting
