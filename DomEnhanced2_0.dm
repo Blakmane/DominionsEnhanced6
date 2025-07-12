@@ -53518,6 +53518,51 @@ Cost 56 RP."
 #nobarding
 #end
 
+#newmonster 9086 -- Abyssal Pillar Cap Only
+#spr1 "blue_dirgen/blue_abyssalpillar1.tga"
+#spr2 "blue_dirgen/blue_abyssalpillar2.tga"
+#name "Abyssal Pillar"
+#descr "The Basalt City of Atlantis has long been destroyed, however relics of old Atlantis can still be found, and are now being put readily to new use by the Kurvant. Abyssal Pillars are highly trained shamblers chosen for their strength and discipline to wear the incredibly heavy Basalt Armor once worn by Living Pillars, and carry a Basalt Spear and Asp Shield. The Abyssal Pillars are held sacred by the Atlantians of Dirgen as the bearers of their lost legacy.
+Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in non-capital Basalt Cities."
+#rpcost 35
+#rcost 1
+#hp 28 -- +3
+#str 17 -- +2
+#att 11 -- +1
+#def 10 -- +2
+#mor 14 -- +2
+#prec 8
+#prot 9
+#size 4
+#mr 10 -- +1
+#enc 4
+#mapmove 14
+#ap 12
+#gcost 10030
+#holy
+#holycost 2
+#castledef 1
+#coldres 5
+#fireres 5
+#clearweapons
+#cleararmor
+#weapon 464 -- Basalt Spear
+#weapon 20 -- Bite
+#armor 555 -- Asp Shield
+#armor 153 -- Basalt Armor
+#armor 556 -- Basalt Cap
+#humanoid
+#amphibian
+#maxage 500
+#startage 210
+#nametype 117
+#darkvision 100
+--#reclimit 2
+#twiceborn 8737 -- Wight Mage
+#firstshape 8710 -- Abyssal Pillar
+#end
+
+
 
 
 -- END OF NEW MONSTERS (Skip 8700~8818, 8900~9000 and 9600~9650)
@@ -54999,7 +55044,7 @@ Warriors of the Abyss can only be recruited at Basalt Cities."
 #twiceborn 8737 -- Wight Mage
 #end
 
-#newmonster 8710 -- Abyssal Pillar
+#newmonster 8710 -- Abyssal Pillar Out of Cap
 #spr1 "blue_dirgen/blue_abyssalpillar1.tga"
 #spr2 "blue_dirgen/blue_abyssalpillar2.tga"
 #name "Abyssal Pillar"
@@ -97750,10 +97795,10 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 2 -- water
 #gems 2 2 -- water
 #gems 3 2 -- earth
-#homemon 8705 -- Spearman
-#homemon 8709 -- Abyssal Warrior
-#homemon 8710 -- Abyssal Pillar
-#homecom 8714 -- Mother
+--#homemon 8705 -- Spearman
+--#homemon 8709 -- Abyssal Warrior
+--#homemon 8710 -- Abyssal Pillar
+--#homecom 8714 -- Mother
 #homecom 8739 -- Kurvant
 #look 5
 #end
@@ -101759,6 +101804,25 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 9
 #look 6
 #end
+
+#newsite 2568 -- Capital City
+#name "Basalt City "
+#level 0
+#rarity 5
+#path 3 -- earth
+#res 25
+#mon 8705 -- Spearman
+#mon 8709 -- Abyssal Warrior
+#mon 9086 -- Abyssal Pillar Capital
+#com 8714 -- Mother
+--#homemon 8705 -- Spearman
+--#homemon 8709 -- Abyssal Warrior
+--#homemon 8710 -- Abyssal Pillar
+--#homecom 8714 -- Mother
+#look 8
+#end
+
+
 
 -- END OF NEW SITES
 
@@ -105949,7 +106013,7 @@ Mechanics: Can create new Basalt Cities in forts, enabling some capital recruits
 #clearsites
 #startsite "Kingdom of Dirgen"
 #startsite "Plain of Dead Leviathans"
-#startsite "Basalt City"
+#startsite "Basalt City "
 #futuresite "Guul Cave"
 #futuresite "Thram'zu Fishbones"
 #futuresite "Thram'zu Leviathan and Guul Lich"
@@ -107545,7 +107609,7 @@ Nation: Reduced income. Halved population increased from Growth scales."
 #halfdeathpop
 --#templegems 6
 #spreadlazy 3
-#defdeath -4
+#defdeath -3
 #defsloth 3
 #moreprod -1
 --#templecost 900
@@ -156941,6 +157005,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #rarity 5
 #nation -2
 #req_pop0ok
+#req_owncapital 0
 #req_indepok
 #req_ench 303 -- Ench103 -- Reclaim Basalt City
 #msg "A Basalt City has been successfully found and reclaimed!"
@@ -156957,6 +157022,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #rarity 5
 #nation -2
 #req_pop0ok
+#req_owncapital 0
 #req_indepok
 #req_ench 303 -- Ench103 -- Reclaim Basalt City
 #msg "A Basalt City has been successfully found and will be reclaimed when a fort is built and has adequate province defense."
@@ -156972,6 +157038,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #rarity 5
 #nation -2
 #req_pop0ok
+#req_owncapital 0
 #req_indepok
 #req_ench 303 -- Ench103 -- Reclaim Basalt City
 #msg "A Basalt City has been successfully found and will be reclaimed when a fort is built and has adequate province defense."
@@ -156989,6 +157056,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_fornation 206 -- Dirgen
 #nation -2
 #req_pop0ok
+#req_owncapital 0
 #req_rare 30
 #msg "Extensive Basalt Ruins have been discovered throughout the province! A Basalt City can be established if a fort is built and there is adequate province defense. A small sum of Earth and Death gems have been collected. [Basalt Ruins]"
 #revealsite
@@ -157007,6 +157075,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_fornation 206 -- Dirgen
 #nation -2
 #req_pop0ok
+#req_owncapital 0
 #msg "replace site with copy [Basalt Ruins]"
 #req_foundsite 1
 #notext
@@ -157019,6 +157088,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #rarity 5
 #nation -2
 #req_pop0ok
+#req_owncapital 0
 #req_indepok
 #req_land 0
 #req_notfornation 206 -- Dirgen
@@ -157035,6 +157105,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #rarity 5
 #nation -2
 #req_pop0ok
+#req_owncapital 0
 #req_land 0
 #req_fornation 206 -- Dirgen
 #req_fort 1
@@ -157056,7 +157127,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_rare 4 -- 4% per turn after turn 32
 #req_turn 32
 #req_pop0ok
-#req_capital 1
+#req_owncapital 1
 #msg "After long negotiation with the Kurvant, the Guul have finally agreed to fully back the coming God and align themselves with the Kurvant. Thram'zu Guul may now be recruited in the capital."
 #req_freesites 1
 #req_nositenbr 2319
@@ -157072,7 +157143,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_rare 8 -- 8% per turn while a Guul exists
 #req_mnr 8733 -- Thram'zu Guul
 #req_pop0ok
-#req_capital 1
+#req_owncapital 1
 #msg "After long negotiation with the Kurvant, the Guul have finally agreed to fully back the coming God and align themselves with the Kurvant. Thram'zu Guul may now be recruited in the capital."
 #req_freesites 1
 #req_nositenbr 2319
