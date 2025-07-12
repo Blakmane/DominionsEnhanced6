@@ -57536,7 +57536,7 @@ Cost 50 recruitment points."
 #def 10
 #mor 14
 #prec 8
-#prot 9
+#prot 11
 #size 7
 #mr 9
 #enc 3
@@ -57727,6 +57727,7 @@ Cost 50 recruitment points."
 #spr2 "blue_bantaytubig/patingnapakpakan2.png"
 #name "Pating na Pakpakan"
 #descr "The Pating na Pakpakan, also known as Tiburone, are giant flying demonic sharks with tough skin and saw-like teeth that can crush rocks. They live in the sea and hunt birds flying overhead as well as fish. They can be called by the smell of blood and can enter a berserk rage when wounded."
+#gcost 0
 #hp 60
 #prot 14
 #mr 12
@@ -58072,12 +58073,12 @@ Cost 50 recruitment points."
 #size 10
 #mr 15
 #enc 2
-#mapmove 18
+#mapmove 24
 #mountainsurvival
 #flying
 #stormimmune
 #fear 5
-#ap 10
+#ap 8
 #gcost 0
 #coldres 5
 #patrolbonus 50
@@ -58087,7 +58088,6 @@ Cost 50 recruitment points."
 #weapon 1728 -- Beak Barrage
 #weapon 408 -- Talons
 --#weapon 826 -- Talons
-#amphibian
 #maxage 1000
 #startage 100
 #nametype 140 -- demons
@@ -101733,6 +101733,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 7889 -- Tikbalang
 #homemon 8938 -- Pating na Pakpakan
 #homemon 8946 -- Buwaya
+#homemon 8916 -- Ibingan
 #homemon 8939 -- Nanreben
 #homemon 8948 -- Berberoka
 #homemon 8900 -- Kurita
@@ -137188,7 +137189,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #copyspell 856 -- Earth Gem Alchemy
 #name "Riches of the Mambubuno"
 #descr "The caster travels to the home of the Mambubuno and offers gems of Glamour for some of the treasure kept inside."
-#researchlevel 2
+#researchlevel 3
 #path 0 7
 #pathlevel 0 2
 #restricted 207 -- Bantay Tubig
@@ -137209,7 +137210,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 1 1
 #damage 8938 -- Pating
 #nreff 503
-#fatiguecost 1300
+#fatiguecost 1600
 #restricted 207 -- Bantay Tubig
 #spec 41943040 -- UWonly
 #end
@@ -137225,8 +137226,8 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 0 2
 #pathlevel 1 1
 #damage 8938 -- Pating
-#nreff 2008 -- 12+
-#fatiguecost 4000
+#nreff 2004 -- 8++
+#fatiguecost 4400
 #restricted 207 -- Bantay Tubig
 #spec 41943040 -- UWonly
 #end
@@ -137373,7 +137374,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #restricted 207 -- Bantay Tubig
 #end
 
-#selectspell 4204
+#selectspell 4205
 #copyspell 1024 -- Summon Sleeper
 #name "Summon Alan"
 #descr "The caster summons an Alan, a birdlike humanoid with a tough, wrinkly hide, claws on their hands and feet that point backwards, and leathery wings, born from abandoned fetuses. They live in houses atop trees where they sleep hanging from branches like a bat. While horrible to look at, they are relatively harmless beings known to help hunters or adopt children lost in the forest."
@@ -137387,7 +137388,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #restricted 207 -- Bantay Tubig
 #end
 
-#selectspell 4204
+#selectspell 4206
 #copyspell 1024 -- Summon Sleeper
 #name "Summon Bentohangin"
 #descr "The caster summons a Bentohangin, a being resembling that of a flying horse, but half of their body is that of a man, and are known to roam across islands at night. They are physically mighty magical beings of the wild, coming from the sky realm of Kahanginan. Normally they leave the other beings of the world alone, but may be summoned as powerful mages of wind and the heavens."
@@ -137406,7 +137407,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #name "Summon Tikbalang"
 #descr "The caster travels to a dark, sparsely populated forest to summon a Tikbalang. This demonic creature of the wild has the body of a large muscular man, however the head and hind quarters of a monstrous horse. When angered they will attack with their sharp claws and use their hooves to trample or stamp their prey to death. Since they are of this world, they can be summoned without a sacrifice of blood, even if demonic by nature."
 #school 0
-#researchlevel 3
+#researchlevel 2
 #effect 10001
 #path 0 6 -- N
 #pathlevel 0 1
@@ -137416,7 +137417,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #restricted 207 -- Bantay Tubig
 #end
 
-#selectspell 4205
+#selectspell 4207
 #copyspell 1024 -- Awaken Sleeper
 #name "Summon Band of Tikbalang"
 #descr "The caster travels to a dark, sparsely populated forest to summon a group of Tikbalang. This demonic creature of the wild has the body of a large muscular man, however the head and hind quarters of a monstrous horse. When angered they will attack with their sharp claws and use their hooves to trample or stamp their prey to death. Since they are of this world, they can be summoned without a sacrifice of blood, even if demonic by nature."
@@ -137432,6 +137433,21 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 --#onlygeosrc 128  -- Forest
 #damage 7889 -- Tikbalang
 #restricted 207 -- Bantay Tubig
+#end
+
+#selectspell 4208
+#copyspell 935 -- Pack of Wolves
+#name "Call Ibingan"
+#descr "The caster calls one of the Ibingan guarding the caverns of the Kataw to leave the cave. Ibingan are huge, venomous, many-horned red serpents with a prominent crest on their head and a dorsal fin on their back. Ibingan guard the cave of the Kataw, stationed at the mouth of the cave and crushing intruders with their powerful tail. Ibingan are sacred in Bantay Tubig and are sometimes used in times of war."
+#researchlevel 3
+#path 0 2
+#pathlevel 0 2
+#damage 8916 -- Ibingan
+#nreff 1
+#fatiguecost 300
+#restricted 207 -- Bantay Tubig
+#spec 41943040 -- UWonly
+#onlyatsite 2327 -- Cave of Kataw
 #end
 
 
