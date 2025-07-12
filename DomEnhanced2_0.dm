@@ -3602,6 +3602,13 @@
 #len -1
 #end
 
+#newweapon 1874 -- Warden Crossbow
+#copyweapon 25
+#name "Warden Crossbow"
+#dmg 10
+#ammo 5
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -42743,6 +42750,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 18  -- Battleaxe
 #armor 14  -- Plate Hauberk
 #armor 20  -- Iron Cap
+#spiritform
 #mapmove 3
 #enc 0
 #prec 8
@@ -57689,7 +57697,7 @@ Cost 50 recruitment points."
 #spr1 "blue_bantaytubig/ugkoyscout1.png"
 #spr2 "blue_bantaytubig/ugkoyscout2.png"
 #name "Ugkoy Scout"
-#descr "Scouts are trained to pass unseen through enemy territory and to travel efficiently even in mountainous and forested terrain. Their reports on enemy army movements and the resources in enemy lands are invaluable to the prudent warlord.."
+#descr "Scouts are trained to pass unseen through enemy territory and to travel efficiently even in mountainous and forested terrain. Their reports on enemy army movements and the resources in enemy lands are invaluable to the prudent warlord."
 #rpcost 3
 #rcost 1
 #hp 12
@@ -57968,6 +57976,7 @@ Cost 50 recruitment points."
 #clearweapons
 #weapon 1826 -- Buwaya Bite
 #weapon 821 -- Magic Bite
+#weapon 532 -- Tail Sweep
 #gcost 0
 #end
 
@@ -79767,6 +79776,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 87  -- Demonbred
 #montag 1055
 #neednoteat
+#rpcost 2
 #end
 
 #selectmonster 88  -- Fiend of Darkness
@@ -83240,6 +83250,12 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 
 #selectmonster 1640  -- Mad Cultist
 #userestricteditem 14
+#end
+
+#selectmonster 1648 -- LA Man Warden
+#clearweapons
+#weapon 11
+#weapon 1874
 #end
 
 #selectmonster 1649  -- Scorpion Man
@@ -99993,7 +100009,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 0
 #look 4
-
 #homemon 628 -- lion
 #homemon 640 -- magma kid
 #homemon 1656 -- smoulder
@@ -101820,6 +101835,43 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 --#homemon 8710 -- Abyssal Pillar
 --#homecom 8714 -- Mother
 #look 8
+#end
+
+#newsite 2569
+#clear
+#name "MA Abysia Summons"
+#rarity 5
+#level 0
+#path 0
+#look 4
+#homemon 628 -- lion
+#homemon 640 -- magma kid
+#homemon 1656 -- smoulder
+#homemon 3719 -- fire ele s4
+#homecom 7313 -- magma spirit
+#homecom 1649 -- scorp man
+#homecom 7459 -- balrog
+#homecom 7710 -- kur
+#homecom 8893 -- nonsacred daeva
+#homecom 2612 -- daeva
+#homecom 2613 -- daeva
+#homecom 2614 -- daeva
+#homecom 2615 -- daeva
+#homecom 2617 -- daeva
+#end
+
+#newsite 2570
+#clear
+#name "MA Abysia Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 2
+#homecom 539
+#homecom 581
+#homecom 867
+#homecom 8138
+#homecom 8139
 #end
 
 
@@ -106117,7 +106169,7 @@ Mechanics: Can create new Basalt Cities in forts, enabling some capital recruits
 #era 1
 #name "Bantay Tubig"
 #epithet "Guardians of the Water"
-#descr "Bantay Tubig is a kingdom of merfolk living around a network of volcanic islands situated near the lands of T'ien Ch'i and the mountains of Kailasa. Kataw rule the land from their cave at the bottom of the sea protected by giant sea serpents, controlling the weather of the islands. The islands and seas of Bantay Tubig are permeated with magic and host to a variety of strange creatures and beings from a time when monsters roamed the world. Tribes of Kabalan centaurs and Dagatnong pygmies populate the coasts, and the merfolk often trade with them.
+#descr "Bantay Tubig is a kingdom of merfolk living around a network of volcanic islands situated near the lands of T'ien Ch'i and the mountains of Kailasa. Kataw rule the land from their cave at the bottom of the sea protected by giant sea serpents, controlling the weather of the islands. The islands and seas of Bantay Tubig are permeated with magic and host a variety of strange creatures and beings from a time when monsters roamed the world. Tribes of Kabalan centaurs and Dagatnong pygmies populate the coasts, and the merfolk often trade with them.
 The merfolk consider themselves the guardians of the sea, and with the disappearance of the Pantokrator, they have determined it is time for them to guide the world."
 
 #summary "Race: Merfolk of various types, centaurs on coastal provinces
@@ -107516,6 +107568,9 @@ Dominion: Laws may be enacted that ban blood and increase scales"
 #cheapgod20 8446 -- Pillar of Flame
 #cheapgod20 8403 -- Firstborn of Rhuax
 
+#futuresite "Infernal Breeding"
+#futuresite "MA Abysia Summons"
+#futuresite "MA Abysia Heroes"
 #futuresite "River of Lava"
 #end
 
@@ -116792,7 +116847,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #selectspell 2620
 #copyspell 1398 -- Bind Devil
 #name "Pact of Infernal Blood"
-#descr "With the creation of the Demonbred the Abysians have grown ever closer to the Inferno. The ancient practice of blood sacrifice has been renewed and pacts of blood are frequently made with infernal forces. The caster sacrifices several blood slaves to contact and bind several Devils. Devils are infernal beings of great strength. They are born in the fires of the Inferno and are impervious to heat and flame. Their glowing bodies radiate heat and bat-like wings grow from their shoulders. Devils are armed with a trident and their barbed tails can sting opponents in close combat."
+#descr "With the creation of the Demonbred the Abysians have grown ever closer to the Inferno. The ancient practice of blood sacrifice has been renewed and pacts of blood are frequently made with infernal forces. The caster sacrifices several blood slaves to contact and a pair of Devils. Devils are infernal beings of great strength. They are born in the fires of the Inferno and are impervious to heat and flame. Their glowing bodies radiate heat and bat-like wings grow from their shoulders. Devils are armed with a trident and their barbed tails can sting opponents in close combat."
 #researchlevel 2
 #pathlevel 0 2
 #pathlevel 1 0
@@ -116943,28 +116998,23 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #end
 
 #selectspell 2631
+#copyspell 783 -- Enlarge
 #name "Outer Furnace"
-#descr "The caster calls on the power of Rhuax to unleash the fire within their spirit and burns away their outer body. The caster begins a new life as a spirit of living flame, ethereal and eternally burning. Will o'wisps will be attracted to the caster and several will accompany them in battles."
-#details "Caster permanently becomes a Flame Spirit."
-#school 1
-#researchlevel 5
+#descr "The caster calls on the power of Rhuax in troops around them to unleash the fire within their spirit. The affected units will grow in size and will radiate hellish heat that will severely burn attackers."
+#details "Size +1, HP +30%, Str +3, Def -1, Heat Aura: 3, Fire Shield: 9 AP fire dmg, reduced by weapon length"
+#researchlevel 7
 #path 0 0
 #pathlevel 0 3
-#effect 10130
-#fatiguecost 1400
-#damage 2626  -- Flame Spirit
-#nreff 1
+#fatiguecost 50
+#precision 100
+#aoe 15
+#range 5
+#fatiguecost 100
+#spec 4210688  -- Friendlies only, ignore shields
+#damage 2147500032  -- Enlarge + Heat Aura
+#nextspell 2627
 #restricted 16 -- EA Abysia
 #restricted 63 -- MA Abysia
-#restricted 104 -- LA Abysia
-#nextspell 3756
-#spec 536870912  -- No effect on Lifeless
-#notmnr -1006
-#notmnr 8060 -- Dragon King
-#notmnr 8061 -- Dragon King
-#notmnr 7477 -- Raphael
-#notmnr 7501 -- Apkallu
-#notmnr 7504 -- Apkallu
 #end
 
 #selectspell 2632
@@ -116979,7 +117029,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #effect 10001
 #fatiguecost 500
 #damage 640  -- Magma Child
-#nreff 1002
+#nreff 1003
 #restricted 16 -- EA Abysia
 #restricted 63 -- MA Abysia
 #end
@@ -117008,8 +117058,8 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #path 0 0
 #pathlevel 0 2
 #effect 10001
-#fatiguecost 200
-#damage 3719 -- Size 2 Fire Elemental
+#fatiguecost 300
+#damage 3719 -- Size 4 Fire Elemental
 #nreff 3
 #restricted 16 -- EA Abysia
 #restricted 63 -- MA Abysia
@@ -137311,7 +137361,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 1 1
 #damage 8946 -- Buwaya
 #nreff 1
-#fatiguecost 200
+#fatiguecost 300
 #restricted 207 -- Bantay Tubig
 #spec 8388608 -- UWOK
 #end
