@@ -28301,6 +28301,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #inquisitor
 #unique
 #nowish
+#praise 5
 #montag 1027
 #twiceborn 7231 -- Wight Giant
 #end
@@ -28336,6 +28337,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #expertmagicleader
 #unique
 #nowish
+#praise 5
 #domsummon2 3870 -- Angel of the Host
 #onebattlespell 1376 -- Will of the Fates
 #armor 268  -- Heavenly Armor
@@ -28375,6 +28377,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #nobadevents 35
 #unique
 #nowish
+#praise 5
 #chorusmaster
 #weapon 145  -- Heavenly Horn
 #weapon 92  -- Fist
@@ -28410,6 +28413,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #stealthy 10
 #unique
 #nowish
+#praise 5
 #heal
 #domsummon 2359  -- Holy Knight
 #weapon 238  -- Magic Staff
@@ -35428,7 +35432,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #maxage 1000
 #startage 100
 #magicskill 0 2
-#magicboost 0 -3
+#magicboost 0 -1
 #magicskill 9 2
 #goodleader
 #holy
@@ -35442,16 +35446,18 @@ While in the form of an old man, all paths are increased and allows the use of N
 #domimmortal
 #rcost 1
 #nametype 114
-#xpshape 100
+#xpshape 50
+#praise 3
 #end
+
 
 #newmonster 7825
 #name "Sanctus Venerabilis"
 #spr1 "magicenhanced/eebattlesaint.tga"
 #spr2 "magicenhanced/eebattlesaint2.tga"
-#descr "In Marignon there are a great many saints venerated by the common people. Prayers and dedications are made in their name to safeguard against evil and rosters of their names appear in the churches and cathedrals. Often these come from the ranks of the Paladins or Knights of the Chalice that have died in the service of the Lord. These Battle Saints can be called upon for aid in times of great peril. Appearing as great armoured figures bearing sacred relics, their divine wrath is terrible to behold. They will fight against the enemies of the faith until such time as their services are no longer needed. If killed within friendly Dominion they will simply return from the celestial realm to take arms once more."
+#descr "In Marignon there are a great many saints venerated by the common people. Prayers and dedications are made in their name to safeguard against evil and rosters of their names appear in the churches and cathedrals. Often these come from the ranks of the Paladins or Knights of the Chalice that have died in the service of the Lord. These Battle Saints can be called upon for aid in times of great peril. Appearing as great armoured figures bearing sacred relics, their divine wrath is terrible to behold. They will fight against the enemies of the faith until such time as their services are no longer needed. If killed within friendly Dominion they will simply return from the celestial realm to take arms once more. Sanctus Venerabilis will automatically bless themselves at the start of combat."
 #gcost 0
-#hp 32
+#hp 26
 #prot 3
 #size 4
 #str 16
@@ -35480,10 +35486,13 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 75  -- Fire Plate
 #armor 162  -- Crested Helmet
 #domimmortal
-#spreaddom 1
+#praise 6
+#onebattlespell 2338 -- Meditation
 #rcost 1
 #nametype 114
 #end
+
+
 
 #newmonster 7826
 #copystats 343  -- Sorceress
@@ -101874,6 +101883,32 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8139
 #end
 
+#newsite 2571
+#clear
+#name "MA Marignon Summons"
+#rarity 5
+#level 0
+#path 0
+#look 4
+#homecom 440 -- pali
+#homecom 7824 -- saint
+#homecom 7825 -- sanctus
+#end
+
+#newsite 2572
+#clear
+#name "MA Marignon Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 2
+#homecom 583
+#homecom 588
+#homecom 589
+#homecom 2235
+#homecom 8194
+#end
+
 
 
 -- END OF NEW SITES
@@ -107436,6 +107471,10 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #addgod 8418 -- Peacock Angel
 #cheapgod20 8366 -- Icon
 #cheapgod20 8414 -- Angelic Lord
+
+#futuresite "Celestial Angels"
+#futuresite "MA Marignon Summons"
+#futuresite "MA Marignon Heroes"
 #end
 
 #selectnation 73 -- MA Mictlan
@@ -109620,7 +109659,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #name "Release Throne Power"
 #descr "The caster performs a ritual to gather some of the remnants of the Pantokrators power and bestow it upon the Pretender God. The spell must be cast at the site of a Throne of Ascension and the Pretender God must be present in the province. The power gained will vary depending on the Throne used for the ritual. The ritual requires long and careful preparations and will not be successful if cast whilst the province is under siege. If cast at a province other than the site of a Throne, or if the Pretender God is not present the spell will fail and the gems will be wasted. The power can only be gathered once at each possible site."
 #details "Pretender gain benefits dependent on Throne used for Ritual."
-#school 5
+#school -1
 #researchlevel 6
 #path 0 1
 #pathlevel 0 4
@@ -110101,7 +110140,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectspell 2089
 #name "Weapons of Ice and Flame"
 #descr "The caster covers the weapons of the army with ice honed to a razor edge. The ice burns with blue flame that cuts through armor with ease. In rare cases the ice burns so intensely it will completely ignore the enemies armor, but not magical defenses such as Mistform or Ethereality."
-#details "Melee attacks deal AP damage, 5% of targets gain AN weapons instead"
+#details "Slash or piercing melee attacks deal AP damage, 5% of targets gain AN weapons instead"
 #school 3
 #researchlevel 8
 #path 0 2
@@ -111073,7 +111112,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #copyspell 1327 -- Gift of Reason
 #name "Awaken Magical Being"
 #descr "This gift grants commander status and a sharp intellect to any one magical being, unlocking any latent magical talents it may have. The target unit must be in the same province as the caster. Mindless units cannot be affected by the spell."
-#researchlevel 7
+#researchlevel 6
 #path 0 4
 #pathlevel 0 3
 #path 1 6
@@ -124997,7 +125036,7 @@ All effects scale with friendly Dominion."
 #copyspell 773 -- Quicken Self
 #name "Weapons of Justice"
 #descr "The priest calls out a prayer to the Lord to watch over them in battle against those that would oppose the faith. In return the priests weapons will be tempered by Divine power."
-#details "Casters melee attacks deal AP damage."
+#details "Casters slash or piercing melee attacks deal AP damage."
 #researchlevel 0
 #school 7
 #path 0 9
@@ -125089,7 +125128,7 @@ All effects scale with friendly Dominion."
 #path 1 9
 #pathlevel 1 1
 #damage 440
-#fatiguecost 1200
+#fatiguecost 1500
 #nextspell 3240
 #restricted 61 -- MA Marignon
 #end
@@ -130368,7 +130407,7 @@ All effects scale with friendly Dominion."
 #selectspell 3618
 #name "Oil Sharpness"
 #descr "The weapons of the army are honed to a razor edge that cuts through armor with ease."
-#details "Melee attacks deal AP damage"
+#details "Slash or piercing melee attacks deal AP damage."
 #school -1
 #researchlevel 0
 #effect 10
@@ -134700,7 +134739,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #name "Release Throne Power"
 #descr "The caster performs a ritual to gather some of the remnants of the Pantokrators power and bestow it upon the Pretender God. The spell must be cast at the site of a Throne of Ascension and the Pretender God must be present in the province. The power gained will vary depending on the Throne used for the ritual. The ritual requires long and careful preparations and will not be successful if cast whilst the province is under siege. If cast at a province other than the site of a Throne, or if the Pretender God is not present the spell will fail and the gems will be wasted. The power can only be gathered once at each possible site."
 #details "Pretender gain benefits dependent on Throne used for Ritual."
-#school 5
+#school -1
 #researchlevel 6
 #path 0 3
 #pathlevel 0 4
@@ -134716,7 +134755,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #name "Release Throne Power"
 #descr "The caster performs a ritual to gather some of the remnants of the Pantokrators power and bestow it upon the Pretender God. The spell must be cast at the site of a Throne of Ascension and the Pretender God must be present in the province. The power gained will vary depending on the Throne used for the ritual. The ritual requires long and careful preparations and will not be successful if cast whilst the province is under siege. If cast at a province other than the site of a Throne, or if the Pretender God is not present the spell will fail and the gems will be wasted. The power can only be gathered once at each possible site."
 #details "Pretender gain benefits dependent on Throne used for Ritual."
-#school 5
+#school -1
 #researchlevel 6
 #path 0 4
 #pathlevel 0 4
