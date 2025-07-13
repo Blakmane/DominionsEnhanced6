@@ -3609,6 +3609,14 @@
 #ammo 5
 #end
 
+#newweapon 1875 -- Wolf Bite
+#copyweapon 20 -- Bite
+#name "Wolf Bite"
+#def 0
+#att -1
+#dmg -1
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -6117,6 +6125,7 @@
 #magicskill 1 4  -- A4
 #magicskill 2 4  -- W4
 #magicskill 3 4  -- E4
+#magicskill 7 3
 #magicboost 0 -5 -- \
 #magicboost 2 -5 -- - Only knows Air magic in Spring
 #magicboost 3 -5 -- /
@@ -6158,6 +6167,7 @@
 #magicskill 1 4  -- A4
 #magicskill 2 4  -- W4
 #magicskill 3 4  -- E4
+#magicskill 7 3
 #magicboost 1 -5 -- \
 #magicboost 2 -5 -- - Only knows Fire magic in Summer
 #magicboost 3 -5 -- /
@@ -6199,6 +6209,7 @@
 #magicskill 1 4  -- A4
 #magicskill 2 4  -- W4
 #magicskill 3 4  -- E4
+#magicskill 7 3
 #magicboost 0 -5 -- \
 #magicboost 1 -5 -- - Only knows Earth magic in Autumn
 #magicboost 2 -5 -- /
@@ -6241,6 +6252,7 @@
 #magicskill 1 4  -- A4
 #magicskill 2 4  -- W4
 #magicskill 3 4  -- E4
+#magicskill 7 3
 #magicboost 0 -5 -- \
 #magicboost 1 -5 -- - Only knows Water magic in Winter
 #magicboost 3 -5 -- /
@@ -6264,8 +6276,8 @@
 #spr1 "nihuala/foxwarrior.tga"
 #spr2 "nihuala/foxwarrior_2.tga"
 #rcost 1
-#gcost 10012
-#rpcost 10000
+#gcost 10010
+#rpcost 9
 #hp 11
 #str 11
 #att 11
@@ -6293,8 +6305,8 @@
 #spr1 "nihuala/beaverwarrior.tga"
 #spr2 "nihuala/beaverwarrior_2.tga"
 #rcost 1
-#gcost 10012
-#rpcost 10000
+#gcost 10010
+#rpcost 12
 #hp 13
 #str 11
 #att 12
@@ -6304,7 +6316,7 @@
 #mr 11
 #mor 11
 #enc 3
-#mapmove 16
+#mapmove 12
 #ap 12
 #eyes 2
 #forestsurvival
@@ -6324,8 +6336,8 @@
 #spr1 "nihuala/armadillowarrior.tga"
 #spr2 "nihuala/armadillowarrior_2.tga"
 #rcost 1
-#gcost 10014
-#rpcost 10000
+#gcost 10012
+#rpcost 14
 #hp 15
 #str 11
 #att 12
@@ -6343,7 +6355,7 @@
 #weapon 1569 -- War Club
 #armor 12  -- Scale Mail Hauberk
 #armor 20  -- Iron Cap
-#armor 105  -- Hide Shield
+#armor 112  -- Hide Shield
 #end
 
 #newmonster 6579
@@ -6354,7 +6366,7 @@
 #spr2 "nihuala/deerwarrior_2.tga"
 #rcost 2
 #gcost 10015
-#rpcost 10000
+#rpcost 21
 #hp 13
 #str 12
 #att 12
@@ -6384,7 +6396,7 @@
 #spr2 "nihuala/wolfwarrior_2.tga"
 #rcost 2
 #gcost 10015
-#rpcost 10000
+#rpcost 21
 #hp 13
 #str 12
 #att 12
@@ -6392,7 +6404,7 @@
 #prec 11
 #size 3
 #mr 11
-#mor 12
+#mor 13
 #enc 3
 #mapmove 16
 #ap 12
@@ -6404,6 +6416,7 @@
 #ambidextrous 1
 #weapon 671  -- Stone Dagger
 #weapon 671  -- Stone Dagger
+#weapon 1875 -- Wolf Bite
 #armor 10  -- Leather Hauberk
 #armor 120  -- Leather Cap
 #end
@@ -6411,12 +6424,12 @@
 #newmonster 6581
 #name "Bear Totem Warrior"
 #nametype 182
-#descr "Warriors of Nihuala devote themselves to a totemic spirit. Bear is strong, corageous, and commands the ground on which she stands with absolute certainty. Her warriors are burly, enormously muscled fighters who don full leather armor and fight with massive clubs. They are renowned for their bravery in battle, always standing their ground no matter the odds."
+#descr "Warriors of Nihuala devote themselves to a totemic spirit. Bear is strong, courageous, and commands the ground on which she stands with absolute certainty. Her warriors are burly, enormously muscled fighters who don full leather armor and fight with massive clubs. They are renowned for their bravery in battle, always standing their ground no matter the odds."
 #spr1 "nihuala/bearwarrior.tga"
 #spr2 "nihuala/bearwarrior_2.tga"
 #rcost 1
 #gcost 10015
-#rpcost 10000
+#rpcost 21
 #hp 14
 #str 14
 #att 12
@@ -6431,6 +6444,7 @@
 #eyes 2
 #forestsurvival
 #spiritsight
+#berserk 1
 #weapon 165  -- Great Club
 #armor 15  -- Full Leather Armor
 #armor 119  -- Reinforced Leather Cap
@@ -7647,9 +7661,11 @@
 
 #newmonster 6630
 #name "Thunderbird"
-#descr "Thunderbirds are massive, ancient eagles who can control winds and storm with their powerful wings. The tribes believe them to be the source of all wind, and great peril befalls anyone who would do them harm. Many a village has seen their air and their lakes sour with pestilence when the wind refuses to blow, and so these great creatures are considered sacred."
-#spr1 "nihuala/thunderbird.tga"
-#spr2 "nihuala/thunderbird_2.tga"
+--#spr1 "nihuala/thunderbird.tga"
+--#spr2 "nihuala/thunderbird_2.tga"
+#spr1 "chaco/baldeagle.tga"
+#spr2 "chaco/baldeagle2.tga" 
+#descr "Thunderbirds are massive, ancient eagles who can control winds and storm with their powerful wings. The tribes believe them to be the source of all wind, and great peril befalls anyone who would do them harm. Many a village has seen their air and their lakes sour with pestilence when the wind refuses to blow, and so these great creatures are considered sacred. In combat the Thunderbird will beat its wings to create a howling storm that will prevent flight and knock arrows off their course."
 #nametype 144
 #gcost 0
 #hp 52
@@ -7665,6 +7681,7 @@
 #mapmove 20
 #enc 3
 #maxage 500
+#fear 5
 #bird
 #eyes 2
 #magicskill 1 3  -- Air
@@ -7679,6 +7696,8 @@
 #weapon 408  -- Talons
 #weapon 404  -- Beak
 #weapon 494  -- Lighting
+#onebattlespell 830 -- Storm
+#shockres 10
 #end
 
 #newmonster 6631
@@ -53579,6 +53598,42 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #firstshape 8710 -- Abyssal Pillar
 #end
 
+#newmonster 9087
+#name "Totem Speaker"
+#nametype 182
+#descr "Tribesmen of Nihuala devote themselves to a totemic spirit. Some tribe members can hear the call of their totem more than others. As they continue to speak to the spirit of their totem, they may learn the secrets of the totem's magic, after which they will receive training to become a Totem Speaker. While their magic is not as powerful as the Spirit Speakers, the Totem Speakers serve as guides for the tribe and their council is often heeded by tribal chieftains."
+#spr1 "nihuala/totemspeaker.tga"
+#spr2 "nihuala/totemspeaker2.tga"
+#rcost 1
+#gcost 10005
+#rpcost 2
+#reqtemple
+#hp 10
+#str 10
+#att 10
+#def 10
+#prec 10
+#size 3
+#mr 15
+#mor 10
+#enc 3
+#mapmove 16
+#ap 12
+#okleader
+#poormagicleader
+#eyes 2
+#older 23
+#maxage 40
+#magicskill 6 1
+#magicskill 9 1
+#custommagic 9472 100 -- EAN
+#holy
+#spiritsight
+#weapon 470  -- Spirit Club
+#armor 10  -- Leather Hauberk
+#armor 540 -- Medicine Shield
+#end
+
 
 
 
@@ -98140,8 +98195,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 6827 -- kat ogre
 #homecom 6643 -- prim deer
 #homecom 6645 -- prim wolf
-#homecom 6834 -- prim eagle
 #homecom 6829 -- achiya
+#homecom 6630 -- thunderbird
 #homecom 6870 -- corn maid
 #homecom 6828 -- yaaya
 #homecom 6836 -- mongkat
@@ -98667,7 +98722,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 --#homecom 6833 -- prim bear
 #homecom 6640 -- deer woman
 #homecom 6772 -- kashehotapalo
-#homecom 6630 -- thunder bird
+--#homecom 6630 -- thunder bird
 #homecom 6632 -- flying head
 #homecom 6777 -- bohpoli
 #homecom 6647 -- coyote
@@ -99330,8 +99385,9 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 6646 -- prim beaver
 #homecom 6643 -- prim deer
 #homecom 6645 -- prim wolf
-#homecom 6834 -- prim eagle
 #homecom 6833 -- prim bear
+--#homecom 6834 -- prim eagle
+#homecom 6630 -- thunderbird
 #end
 
 #newsite 2418
@@ -99365,7 +99421,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 6777 -- bohpo
 #homecom 6871 -- crow w
 #homecom 6872 -- owl w
-#homecom 6630 -- flying head
+#homecom 6632 -- flying head
 #homecom 6630 -- thunderbird
 #homecom 6643 -- prim deer
 #homecom 6645 -- prim woof
@@ -99967,8 +100023,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 6827 -- kat ogre
 #homecom 6643 -- prim deer
 #homecom 6645 -- prim wolf
-#homecom 6834 -- prim eagle
 #homecom 6829 -- achiya
+#homecom 6630 -- thunderbird
 #homecom 6870 -- corn maid
 #homecom 6828 -- yaaya
 #homecom 6836 -- mongkat
@@ -101907,6 +101963,41 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 589
 #homecom 2235
 #homecom 8194
+#end
+
+#newsite 2573
+#clear
+#name "EA Nihuala Summons"
+#rarity 5
+#level 0
+#path 6
+#look 4
+#homemon 6831 -- bison
+#homemon 6631 -- w panther
+#homemon 6634 -- nirumb bers
+#homemon 6635 -- nirumb archer
+#homemon 6636 -- thunder warrior
+#homemon 6639 -- stone giant
+#homecom 6633 -- nirumb chief
+#homecom 6640 -- deer woman
+#homecom 6772 -- kashehotapalo
+#homecom 6630 -- thunder bird
+#homecom 6632 -- flying head
+#homecom 6777 -- bohpoli
+#homecom 6647 -- coyote
+#homecom 6637 -- spider grandma
+#end
+
+#newsite 2574
+#clear
+#name "EA Nihuala Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 2
+#homecom 6572
+#homecom 8117
+#homecom 8118
 #end
 
 
@@ -105187,6 +105278,11 @@ Priests: Average"
 #secondarycolor 1 1 1
 #flag "nihuala/early_nihuala_flag.tga"
 #startsite "Village of the First People"
+
+#futuresite "EA Nihuala Summons"
+#futuresite "Primordial Animals"
+#futuresite "EA Nihuala Heroes"
+
 #likesterr 128  -- Forest
 #idealcold -1
 #aiearthnation
@@ -105197,6 +105293,7 @@ Priests: Average"
 #startunitnbrs1 30
 #startunittype2 6576
 #startunitnbrs2 30
+#addreccom 9087
 #addreccom 6565
 #addreccom 6566
 #addreccom 6567
@@ -129044,7 +129141,8 @@ All effects scale with friendly Dominion."
 #selectspell 3527
 #name "Summon Primordial Eagle"
 #descr "Summons an ancient eagle spirit. They are massive in size and tremendously majestic creatures of the air. In combat the eagle will beat its wings to create a howling windstorm that will prevent flight and blow arrows off their course, however the eagle will be unaffected. Primordial Eagles are sacred."
-#school 0  -- Conjuration
+--#school 0  -- Conjuration
+#school -1
 #researchlevel 7
 #path 0 1  -- -----\ Air 4
 #pathlevel 0 4  -- /
@@ -129052,12 +129150,12 @@ All effects scale with friendly Dominion."
 #damage 6834
 #nreff 1
 #fatiguecost 2500  -- 25 gems
-#restricted 182 -- MA Ongtupqa
-#restricted 183 -- LA Ongtupqa
-#restricted 198 -- EA Nihuala
-#restricted 199 -- MA Nihuala
-#restricted 200 -- LA Nihuala
-#restricted 184 -- Sitecah
+--#restricted 182 -- MA Ongtupqa
+--#restricted 183 -- LA Ongtupqa
+--#restricted 198 -- EA Nihuala
+--#restricted 199 -- MA Nihuala
+--#restricted 200 -- LA Nihuala
+--#restricted 184 -- Sitecah
 #end
 
 #selectspell 3528
@@ -129402,20 +129500,22 @@ All effects scale with friendly Dominion."
 #end
 
 #selectspell 3550
-#restricted 184 -- EA Sitecah
-#restricted 198 -- EA Nihuala
-#restricted 199 -- MA Nihuala
-#restricted 200 -- LA Nihuala
 #name "Summon Thunderbird"
-#descr "The caster a Thunderbird, a massive and ancient bird that can control winds and storm with their powerful wings. The tribes believe them to be the source of all wind, and great peril befalls anyone who would do them harm. Many a village has seen their air and their lakes sour with pestilence when the wind refuses to blow, and so these great creatures are considered sacred."
+#descr "The caster a Thunderbird, a massive and ancient bird that can control winds and storm with their powerful wings. The tribes believe them to be the source of all wind, and great peril befalls anyone who would do them harm. Many a village has seen their air and their lakes sour with pestilence when the wind refuses to blow, and so these great creatures are considered sacred. In combat the Thunderbird will beat its wings to create a howling storm that will prevent flight and knock arrows off their course."
 #school 0  -- Conjuration
-#researchlevel 6
+#researchlevel 7
 #path 0 1  -- -----\ Air 3
 #pathlevel 0 3  -- /
 #effect 10021
 #damage 6630
 #nreff 1
-#fatiguecost 3000  -- 30 gems
+#fatiguecost 3500
+#restricted 184 -- EA Sitecah
+#restricted 198 -- EA Nihuala
+#restricted 199 -- MA Nihuala
+#restricted 200 -- LA Nihuala
+#restricted 182 -- MA Ongtupqa
+#restricted 183 -- LA Ongtupqa
 #end
 
 #selectspell 3551
@@ -129734,7 +129834,7 @@ All effects scale with friendly Dominion."
 #copyspell 1024 -- Awaken Sleeper
 #name "Call Kashehotapalo"
 #descr "The caster travels to a deep forest and calls a Kashehotapalo to serve them. A Kashehotapalo is a deer-like spirit creature with the body of a man. They are skilled in the magic of the forests and are admired for their speed, skill and agility."
-#pathlevel 0 7 -- G
+#path 0 7 -- G
 #fatiguecost 2000
 #damage 6772
 #onlygeosrc 128  -- Forest
@@ -143793,7 +143893,7 @@ This will also prevent their skin from drying out."
 #secondarypath 1 -- -\ Air 1
 #secondarylevel 1  -- /
 #type 2  -- 2H Weapon
-#itemcost1 -20  -- 4 Gems
+#itemcost1 -40  -- 4 Gems
 #itemcost2 -40  -- 3 Gems
 #weapon 1573
 #restricted 198 -- EA Nihuala
