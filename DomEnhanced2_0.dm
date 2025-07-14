@@ -5940,6 +5940,7 @@
 #ap 12
 #goodleader
 #command 20
+#inspirational 1
 #eyes 2
 #forestsurvival
 #spiritsight
@@ -6045,6 +6046,7 @@
 #mapmove 18
 #ap 14
 #expertleader
+#inspirational 1
 #maxage 200
 #eyes 2
 #holy
@@ -6404,7 +6406,7 @@
 #prec 11
 #size 3
 #mr 11
-#mor 13
+#mor 14
 #enc 3
 #mapmove 16
 #ap 12
@@ -45932,11 +45934,13 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #weapon 101  -- athame
 #armor 8  -- chain mail cuirass
 #armor 120  -- leather cap
-#startage 500
-#maxage 800
+#startage 1000
+#maxage 1200
 #magicskill 0 2
 #magicskill 8 2
 #magicskill 9 2
+#tmpbloodslaves 1
+#enchantedblood 1
 #heat 3
 #stealthy 25
 #wastesurvival
@@ -53632,6 +53636,23 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #weapon 470  -- Spirit Club
 #armor 10  -- Leather Hauberk
 #armor 540 -- Medicine Shield
+#end
+
+#newmonster 9088 -- Warlock Apprentice LA
+#copystats 923
+#copyspr 923
+#neednoteat
+#descr "In the Smouldercone, young and promising Abysians are trained in Blood magic. The apprentices are much feared, as they often carry out the task of collecting young virgins for their masters' sacrifices. Even with the rise of humanbred and scarcity of pureblood Abysians, only the pureblood are allowed to be inducted into apprenticeship and so new members are becoming increasingly rare. Warlock apprentices are Abysians and radiate the hellish heat characteristic of their race as well as being held sacred among the humanbred."
+#holy
+#end
+
+#newmonster 9089 -- Warlock LA
+#copystats 89
+#copyspr 89
+#neednoteat
+#descr "The Warlocks of Smouldercone are Blood mages of great renown. They experiment with the summoning and binding of otherworldly beings and the creation of new species. Their most successful experimental achievements to date are the Demonbreds. The Warlocks are the true masters of Abysia, but rarely dabble in politics. Even with the rise of humanbred and scarcity of pureblood Abysians, only the pureblood are allowed to become Warlocks and so are becoming increasingly rare. Warlocks are Abysians and radiate the hellish heat characteristic of their race as well as being held sacred among the humanbred."
+#holy
+#rpcost 4
 #end
 
 
@@ -82180,8 +82201,13 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #itemslots 2040326
 #end
 
+#selectmonster 1091  -- Sang Acolyte
+#gcost 10010
+#end
+
 #selectmonster 1092  -- Sang Anathemant
 #neednoteat
+#gcost 10010
 #end
 
 #selectmonster 1093
@@ -83352,6 +83378,11 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #armor 549 -- spectral helm
 #end
 
+#selectmonster 1971  -- Smoulderghost LA
+#armor 547 -- spectral plate
+#armor 549 -- spectral helm
+#end
+
 #selectmonster 1660  -- Udm'ukinna, Reassembled Prince
 #end
 
@@ -84026,10 +84057,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #neednoteat
 #end
 
-#selectmonster 1969  -- A Salamander
+#selectmonster 1969  -- A Salamander LA
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #montag 1068 -- Anathement
 #neednoteat
+#gcost 10010
 #end
 
 #selectmonster 1970  -- LA Abysia Anathemant Dragon
@@ -84037,10 +84069,17 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 --#enchrebate50 41  -- Second Sun
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #neednoteat
+#clearmagic
+#magicskill 0 2
+#magicskill 5 1
+#magicskill 9 3
+#custommagic 5248 100
+#gcost 10010
 #end
 
 #selectmonster 1972  -- Warbred
 #montag 1055
+#slave
 #end
 
 #selectmonster 1975  -- Iron Angel
@@ -102000,6 +102039,56 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8118
 #end
 
+#newsite 2575
+#clear
+#name "LA Abysia Summons"
+#rarity 5
+#level 0
+#path 0
+#look 4
+#homemon 628 -- lion
+#homemon 7406 -- magma kid sacred
+#homemon 1971 -- smoulder sacred
+#homemon 3719 -- fire ele s4
+#homemon 1977 -- fossil giant
+#homemon 7421 -- banefire kid
+#end
+
+#newsite 2576
+#clear
+#name "LA Abysia Summons Continued"
+#rarity 5
+#level 0
+#path 0
+#look 4
+#homecom 121 -- demonbred
+#homecom 7313 -- magma spirit
+#homecom 7569 -- bane spirit
+#homecom 1649 -- scorp man
+#homecom 7459 -- balrog
+#homecom 7710 -- kur
+#homecom 8893 -- nonsacred daeva
+#homecom 2612 -- daeva
+#homecom 2613 -- daeva
+#homecom 2614 -- daeva
+#homecom 2615 -- daeva
+#homecom 2617 -- daeva
+#homecom 7314 -- malphas
+#end
+
+#newsite 2577
+#clear
+#name "LA Abysia Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 2
+#homecom 8138
+#homecom 581
+#homecom 8139
+#homecom 8238
+#end
+
 
 
 -- END OF NEW SITES
@@ -102017,6 +102106,14 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #selectsite 9 -- The Temple City
 #gems 5 3
 #homemon 8574 -- Temple Chariot
+#end
+
+#selectsite 39 -- The Smouldercone LA
+#clear
+#homecom 9088
+#homecom 9089
+#gems 0 3 -- F
+#decscale 2 -- Heat
 #end
 
 #selectsite 63  -- City of Tombs
@@ -108795,7 +108892,16 @@ Bless bonuses: Poison Resistance +10"
 #cheapgod20 8450 -- Emissary of Antrax
 #cheapgod20 8460 -- Foul Statue
 
+#futuresite "Infernal Breeding"
+#futuresite "LA Abysia Summons"
+#futuresite "LA Abysia Summons Continued"
+#futuresite "LA Abysia Heroes"
 #futuresite "River of Lava"
+
+#caveinc 10
+#caveres 10
+
+#homeheatscaleres 2
 #end
 
 #selectnation 106 -- LA Caelum
@@ -117182,7 +117288,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #effect 10001
 #fatiguecost 500
 #damage 7406 -- Sacred Magma Child
-#nreff 1002
+#nreff 1003
 #restricted 104 -- LA Abysia
 #end
 
@@ -137947,11 +138053,12 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #end
 
 #selectspell 315 -- Abysian Ancestors
-#nreff 505
+#nreff 1006
 #end
 
 #selectspell 316 -- Reawaken Fossil
-#nreff 1003
+#nreff 1005 -- 6+
+#pathlevel 0 1
 #end
 
 #selectspell 317 -- Spectral Inf
