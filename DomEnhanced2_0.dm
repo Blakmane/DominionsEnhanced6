@@ -3617,6 +3617,22 @@
 #dmg -1
 #end
 
+#newweapon 1876 -- cannon
+#name "Cannon Ball"
+#range 80
+#ammo 30
+#aoe 1
+#dmg 30
+#nostr
+#att 8
+#nratt -2
+#notdismounted
+#speedmult 3
+#flyspr 100 1
+#sound 89
+#blunt
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -4565,6 +4581,12 @@
 #copyarmor 101 -- bronze hauberk
 #name "Jeweled Hauberk"
 #enc 4
+#end
+
+#newarmor 569 -- Pavise
+#copyarmor 3 -- Kite Shield
+#name "Pavise"
+#enc 3
 #end
 
 -- END OF NEW ARMORS
@@ -38000,6 +38022,56 @@ While in the form of an old man, all paths are increased and allows the use of N
 #sailing 999 5
 #end
 
+#newmonster 7954
+#copystats 29
+#clearweapons
+#cleararmor
+#name "Arbalestier"
+#spr1 "rotterland/rarbal.tga"
+#spr2 "rotterland/rarbal2.tga"
+#descr "Arbalestiers are troops armed with great crossbows so heavy that a forked rest is required to help stablize them. As they do not carry melee weaponry they must be protected by other troops during battle. The inhabitants of Rotterland are disease-resistant and accustomed to living in wetlands."
+#gcost 10012
+#armor 118
+#armor 9
+#armor 569 -- Pavise
+#weapon 26  -- Arbalest
+#weapon 9
+#rpcost 14
+#swampsurvival
+#nametype 173
+#diseaseres 50
+#end
+
+#newmonster 7958
+#copystats 29
+#clearweapons
+#cleararmor
+#name "Ostlem Marksman"
+#gcost 15
+#rpcost 18
+#spr1 "rotterland/rostelmmark.tga"
+#spr2 "rotterland/rostelmmark2.tga"
+#hp 12
+#mr 11
+#str 12
+#def 12
+#att 12
+#prec 14
+#mor 12
+#enc 3
+#older 5
+#swampsurvival
+#armor 9
+#armor 118
+#armor 569 -- Pavise
+#weapon 26
+#weapon 9
+#nametype 173
+#descr "In the final battle for Rotterlands freedom Ostlem was besieged for three long years. The city was bombarded with fire and lightning until only the walls still stood. Ostlem's defenders endured, supplied only by sea. Only the skilled and lucky survived the siege, and through necessity the defenders of Ostlem became talented marksmen. Now they use powerful arbalests that can kill an armoured knight at a hundred paces. A Marksman will count as 3 regular soldiers when defending a fortress during a siege. Like all inhabitants of Rotterland they are used to living in the flooded lands and are resistant to diseases."
+#castledef 2
+#diseaseres 50
+#end
+
 #newmonster 7943
 #copystats 29
 #cleararmor
@@ -38014,16 +38086,17 @@ While in the form of an old man, all paths are increased and allows the use of N
 #gcost 10010
 #armor 9
 #armor 118
+#armor 569 -- Pavise
 #weapon 26  -- Arbalest
 #weapon 9  -- Dagger
 #nametype 173  -- Dutch
 #castledef 10
 #hp 14
 #mr 11
-#str 11
+#str 12
 #def 13
 #att 13
-#prec 14
+#prec 15
 #ressize 2
 #mor 13
 #older 5
@@ -38068,35 +38141,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #diseaseres 50
 #mr 13
 #enc 3
-#end
-
-#newmonster 7946
-#copystats 29
-#clearweapons
-#cleararmor
-#name "Mounted Commander"
-#spr1 "rotterland/rmountedcom.tga"
-#spr2 "rotterland/rmountedcom2.tga"
-#descr "Whilst the Captains of Rotterland command units of troops on the battlefield, nobles comprise the majority of the higher ranking positions in the army. Representatives of each region will be present in most armies of the Republic. Riding a horse gives the commander increased flexibility, which is useful when giving orders."
-#rpcost 2
-#weapon 8
-#armor 21
-#armor 14
-#mounted
-#ressize 2
-#rcost 10
-#hp 15
-#str 12
-#att 13
-#def 13
-#mor 13
-#prec 8
-#swampsurvival
-#expertleader
-#gcost 10025
-#nametype 173
-#diseaseres 50
-#enc 4
 #end
 
 #newmonster 7947
@@ -38257,24 +38301,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #descr "The standard armor of the infantry of Rotterland is the plate cuirass. Targeteers are named for the targe, or shield, that they carry. Targeteers are useful for closing with enemies using primitive missile weapons. The inhabitants of Rotterland are disease-resistant and accustomed to living in wetlands."
 #end
 
-#newmonster 7954
-#copystats 29
-#clearweapons
-#cleararmor
-#name "Arbalestier"
-#spr1 "rotterland/rarbal.tga"
-#spr2 "rotterland/rarbal2.tga"
-#descr "Arbalestiers are troops armed with great crossbows so heavy that a forked rest is required to help stablize them. As they do not carry melee weaponry they must be protected by other troops during battle. The inhabitants of Rotterland are disease-resistant and accustomed to living in wetlands."
-#armor 118
-#armor 9
-#weapon 26  -- Arbalest
-#weapon 9
-#rpcost 9
-#swampsurvival
-#nametype 173
-#diseaseres 50
-#end
-
 #newmonster 7955
 #copystats 29
 #clearweapons
@@ -38299,28 +38325,61 @@ While in the form of an old man, all paths are increased and allows the use of N
 #diseaseres 50
 #end
 
+#newmonster 7946
+#copystats 29
+#clearweapons
+#cleararmor
+#name "Mounted Commander"
+#spr1 "rotterland/rmountedcom.tga"
+#spr2 "rotterland/rmountedcom2.tga"
+#unmountedspr1 "rotterland/un_rmountedcom.tga"
+#unmountedspr2 "rotterland/un_rmountedcom2.tga"
+#drawsize 0
+#descr "Whilst the Captains of Rotterland command units of troops on the battlefield, nobles comprise the majority of the higher ranking positions in the army. Representatives of each region will be present in most armies of the Republic. Riding a horse gives the commander increased flexibility, which is useful when giving orders."
+#rpcost 2
+#weapon 8
+#armor 21
+#armor 14
+#mountmnr 3517
+#skilledrider 4
+#rcost 1
+#hp 15
+#str 12
+#att 13
+#def 13
+#mor 13
+#prec 8
+#swampsurvival
+#expertleader
+#gcost 10015
+#nametype 173
+#diseaseres 50
+#enc 4
+#end
+
 #newmonster 7956
 #copystats 1922
 #clearweapons
 #cleararmor
 #clearspec
-#gcost 20
+#gcost 10005
 #name "Cuirassier"
 #spr1 "rotterland/rcuirassier.tga"
 #spr2 "rotterland/rcuirassier2.tga"
+#unmountedspr1 "rotterland/un_rcuirassier.tga"
+#unmountedspr2 "rotterland/un_rcuirassier2.tga"
+#drawsize 0
 #weapon 10
 #armor 9
 #armor 118
-#ressize 2
-#rcost 4
+#rcost 1
 #hp 10
 #att 10
 #def 10
 #prec 10
-#mounted
-#ressize 2
-#rcost 5
-#rpcost 29
+#mountmnr 3515
+#skilledrider 3
+#rcost 1
 #descr "Cuirassiers are cavalrymen armed with cavalry sabers. Their role is to follow the lancers and dispatch enemies in melee once the lance charge has  lost its effectiveness. They ride lightly armored steeds and are the most mobile element of the army, often held in reserve to commit at a vital point in the battle. The inhabitants of Rotterland are disease-resistant and accustomed to living in wetlands."
 #nametype 173
 #swampsurvival
@@ -38332,10 +38391,12 @@ While in the form of an old man, all paths are increased and allows the use of N
 #clearweapons
 #cleararmor
 #clearspec
-#gcost 35
 #name "Lancer"
 #spr1 "rotterland/rlancer.tga"
 #spr2 "rotterland/rlancer2.tga"
+#unmountedspr1 "rotterland/un_rlancer.tga"
+#unmountedspr2 "rotterland/un_rlancer2.tga"
+#drawsize 0
 #weapon 4  -- Lance
 #weapon 8
 #armor 14
@@ -38350,40 +38411,10 @@ While in the form of an old man, all paths are increased and allows the use of N
 #ap 20
 #swampsurvival
 #nametype 173
-#mounted
-#ressize 2
-#rcost 10
-#rpcost 49
+#mountmnr 3517
+#skilledrider 4
+#rcost 1
 #descr "Lancers are the heavy cavalry of Rotterland. They use their powerful steeds and heavy armor to break enemy lines with a devastating lance charge. Only the most wealthy nobles can afford the armor and weaponry necessary to join the Lancers. Like all inhabitants of Rotterland they are disease-resistant and accustomed to living in wetlands."
-#diseaseres 50
-#end
-
-#newmonster 7958
-#copystats 29
-#clearweapons
-#cleararmor
-#name "Ostlem Marksman"
-#gcost 16
-#rpcost 18
-#spr1 "rotterland/rostelmmark.tga"
-#spr2 "rotterland/rostelmmark2.tga"
-#hp 12
-#mr 11
-#str 11
-#def 12
-#att 12
-#prec 13
-#mor 12
-#enc 3
-#older 5
-#swampsurvival
-#armor 9
-#armor 118
-#weapon 26
-#weapon 9
-#nametype 173
-#descr "In the final battle for Rotterlands freedom Ostlem was besieged for three long years. The city was bombarded with fire and lightning until only the walls still stood. Ostlem's defenders endured, supplied only by sea. Only the skilled and lucky survived the siege, and through necessity the defenders of Ostlem became talented marksmen. Now they use powerful arbalests that can kill an armoured knight at a hundred paces. A Marksman will count as 3 regular soldiers when defending a fortress during a siege. Like all inhabitants of Rotterland they are used to living in the flooded lands and are resistant to diseases."
-#castledef 2
 #diseaseres 50
 #end
 
@@ -38489,8 +38520,10 @@ While in the form of an old man, all paths are increased and allows the use of N
 #fixedname "William the Silent"
 #spr1 "rotterland/rwilliam.tga"
 #spr2 "rotterland/rwilliam2.tga"
+#unmountedspr1 "rotterland/un_william.tga"
+#unmountedspr2 "rotterland/un_william2.tga"
+#drawsize 0
 #descr "William is the Stadtholder of Rotterland. After Marignon's tercios conquered Rotterland he rose to power as a loyal servant of the Marignon Court. However, as Marignon's administrators bungled the levee and reclamation projects he was forced to watch as his people sickened and starved. Meanwhile, the Blood Court and the Inquisition were a fork and knife that carved Rotterland to the bone. Finally William could stand it no more. United under his charismatic rulership and a new faith, Rotterland's heart bloomed with revolt. As an able tactician and politician William became a figurehead of the struggle against Marignon and was instrumental in their defeat. He is irrationally paranoid of assassination attempts and wishes to be kept guarded at all times."
-#mounted
 #onebattlespell 1271
 #expertleader
 #weapon 4
@@ -38513,6 +38546,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #gcost 0
 #diseaseres 50
 #swampsurvival
+#mountmnr 3582
+#skilledrider 4
 #end
 
 #newmonster 7964
@@ -38625,10 +38660,10 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr2 "rotterland/rwittewieven2.tga"
 #descr "A Witte Wieven is a Wise Woman or White Woman that appears in spirit form. Rumoured to be the spirits of ancient elves, they are knowledgeable in the arts of fey magic and it is said they can see into the future. They can be bound with ancient rites to aid the living, however care must be taken not to anger them. Witte Wieven are ethereal, undead creatures surrounded by the chill of the grave. They appearance is frightening and their touch can drain the life from living beings."
 #swampsurvival
-#magicskill 1 1
+#magicskill 7 1
 #magicskill 5 1
-#custommagic 5376 100  -- 100% AED
-#custommagic 5376 100  -- 100% AED
+#custommagic 21760 100  -- 100% AEDG
+#custommagic 21760 100  -- 100% AEDG
 #nobadevents 20
 #female
 #nametype 143  -- TNN Female
@@ -53655,7 +53690,305 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #rpcost 4
 #end
 
+#newmonster 9090 -- "Rider" x5
+#name "Mosquito Cloud"
+#spr1 "rotterland/mosquitoswarmu1.tga"
+#spr2 "rotterland/mosquitoswarmu1.tga"
+#xspr1 "rotterland/mosquitoswarmu2.tga"
+#xspr2 "rotterland/mosquitoswarmu2.tga"
+#xspr1 "rotterland/mosquitoswarmu3.tga"
+#xspr2 "rotterland/mosquitoswarmu3.tga"
+#xspr1 "rotterland/mosquitoswarmu4.tga"
+#xspr2 "rotterland/mosquitoswarmu4.tga"
+#unmountedspr1 "rotterland/mosquito.tga"
+#unmountedspr2 "rotterland/mosquito.tga"
+#descr "This is a cloud of mosquitos summoned and directed by a mage of Rotterland. The cloud may disperse as mosquitos are killed off. Their many bites will poison enemies and they may disease enemies."
+#gcost 0
+#poisonres 5
+#miscshape
+#hp 2
+#size 1
+#prot 0
+#mr 5
+#mor 50
+#str 1
+#att 15
+#def 13
+#prec 10
+#airshield 75
+#diseaseres 100
+#enc 1
+#ap 1
+#mapmove 26
+#weapon 739
+#magicbeing
+#animal
+#flying
+#undisciplined
+#neednoteat
+#poorleader
+#stealthy 0
+#startage 1
+#maxage 4
+#deathdisease 3
+#coridermnr 9091
+#mountmnr 9092
+#nofriders 4
+#mounted
+#montag 1075
+#montagweight 3
+#end
 
+#newmonster 9091 -- "Corider" / Normal
+#name "Mosquito"
+#spr1 "rotterland/mosquito.tga"
+#spr2 "rotterland/mosquito.tga"
+#descr "This is a large and poisonous mosquito summoned and directed by a mage of Rotterland."
+#gcost 0
+#poisonres 5
+#miscshape
+#hp 2
+#size 1
+#prot 0
+#mr 5
+#mor 50
+#str 1
+#att 15
+#def 13
+#prec 10
+#airshield 75
+#diseaseres 100
+#enc 1
+#ap 1
+#mapmove 26
+#weapon 739
+#magicbeing
+#animal
+#flying
+#undisciplined
+#neednoteat
+#poorleader
+#stealthy 0
+#startage 1
+#maxage 4
+#deathdisease 3
+#mounted
+#montag 1075
+#montagweight 5
+#end
+
+#newmonster 9092 -- "Mount"
+#name "Mosquito"
+#spr1 "rotterland/mosquito.tga"
+#spr2 "rotterland/mosquito.tga"
+#descr "This is a large and poisonous mosquito summoned and directed by a mage of Rotterland."
+#gcost 0
+#poisonres 5
+#miscshape
+#hp 2
+#size 3
+#prot 0
+#mr 5
+#mor 50
+#str 1
+#att 15
+#def 13
+#prec 10
+#airshield 75
+#diseaseres 100
+#enc 1
+#ap 1
+#mapmove 26
+#weapon 739
+#magicbeing
+#animal
+#flying
+#undisciplined
+#neednoteat
+#poorleader
+#stealthy 0
+#startage 1
+#maxage 4
+#deathdisease 3
+#mounted
+#end
+
+#newmonster 9093 -- "Rider" x4
+#name "Mosquito Cloud"
+#spr1 "rotterland/mosquitoswarmu2.tga"
+#spr2 "rotterland/mosquitoswarmu2.tga"
+#xspr1 "rotterland/mosquitoswarmu3.tga"
+#xspr2 "rotterland/mosquitoswarmu3.tga"
+#xspr1 "rotterland/mosquitoswarmu4.tga"
+#xspr2 "rotterland/mosquitoswarmu4.tga"
+#unmountedspr1 "rotterland/mosquito.tga"
+#unmountedspr2 "rotterland/mosquito.tga"
+#descr "This is a cloud of mosquitos summoned and directed by a mage of Rotterland. The cloud may disperse as mosquitos are killed off. Their many bites will weaken and fatigue enemies, as well as spread disease."
+#gcost 0
+#poisonres 5
+#miscshape
+#hp 2
+#size 1
+#prot 0
+#mr 5
+#mor 50
+#str 1
+#att 15
+#def 13
+#prec 10
+#airshield 75
+#diseaseres 100
+#enc 1
+#ap 1
+#mapmove 26
+#weapon 739
+#magicbeing
+#animal
+#flying
+#undisciplined
+#neednoteat
+#poorleader
+#stealthy 0
+#startage 1
+#maxage 4
+#deathdisease 3
+#coridermnr 9091
+#mountmnr 9092
+#nofriders 3
+#mounted
+#montag 1075
+#montagweight 2
+#end
+
+#newmonster 9094 -- "Rider" x3
+#name "Mosquito Cloud"
+#spr1 "rotterland/mosquitoswarmu3.tga"
+#spr2 "rotterland/mosquitoswarmu3.tga"
+#xspr1 "rotterland/mosquitoswarmu4.tga"
+#xspr2 "rotterland/mosquitoswarmu4.tga"
+#unmountedspr1 "rotterland/mosquito.tga"
+#unmountedspr2 "rotterland/mosquito.tga"
+#descr "This is a cloud of mosquitos summoned and directed by a mage of Rotterland. The cloud may disperse as mosquitos are killed off. Their many bites will weaken and fatigue enemies, as well as spread disease."
+#gcost 0
+#poisonres 5
+#miscshape
+#hp 2
+#size 1
+#prot 0
+#mr 5
+#mor 50
+#str 1
+#att 15
+#def 13
+#prec 10
+#airshield 75
+#diseaseres 100
+#enc 1
+#ap 1
+#mapmove 26
+#weapon 739
+#magicbeing
+#animal
+#flying
+#undisciplined
+#neednoteat
+#poorleader
+#stealthy 0
+#startage 1
+#maxage 4
+#deathdisease 3
+#coridermnr 9091
+#mountmnr 9092
+#nofriders 2
+#mounted
+#montag 1075
+#montagweight 1
+#end
+
+
+#newmonster 9095
+#name "Cannon"
+#spr1 "rotterland/cannon1.tga"
+#spr2 "rotterland/cannon2.tga"
+#unmountedspr1 "rotterland/cannon.tga"
+#unmountedspr2 "rotterland/cannon.tga"
+#descr "During the Marignon occupation, merchant traders were instrumental in supplying the Ostlem with food and weapons from distant lands. In one of those lands, an alchemical formula for an explosive substance was acquired. Its usefulness was limited by its volatility, but large cannons were created to use it to the fullest extent. To protect themselves during transit from the navy of Marignon, cannons were rapidly adopted and now cannons are relatively commonplace.
+The weapon is used by a trained cannoneer that will defend it. If the cannoneer is killed but the cannon is not destroyed a new cannoneer will be appointed after the battle."
+#miscshape
+#rpcost 1
+#rcost 30
+#reclimit 1
+#gcost 105 -- 120
+#size 5
+#hp 35
+#prot 20
+#mr 10
+#mor 50
+#str 5
+#att 5
+#def 0
+#prec 15
+#enc 0
+#mapmove 0
+#ap 2
+#woundfend 99
+#siegebonus 15
+#castledef 15
+#sailing 10 10
+#weapon 0
+#weapon 1876 -- Cannon
+--#fireres -5
+#bodyguard -5
+#pierceres
+#noleader
+#immobile
+#blind
+#neednoteat
+#mountiscom 1
+#nothrowoff
+#nofalldmg
+#regainmount 1
+#nobarding
+#poisonres 25
+#coldres 10
+#shockres 5
+#diseaseres 100
+#itemslots 1  -- no slots
+#maxage 500
+#startage 10
+#mountmnr 9096 -- Cannoneer
+#mountedinspector
+#nametype 188 -- Vehicle
+#cleanshape
+#end
+
+#newmonster 9096
+#copystats 685  -- Alae Legionnaire
+#clearweapons
+#cleararmor
+#spr1 "rotterland/cannonr1.tga"
+#spr2 "rotterland/cannonr2.tga"
+#name "Cannoneer"
+#descr "During the Marignon occupation, merchant traders were instrumental in supplying the Ostlem with food and weapons from distant lands. In one of those lands, an alchemical formula for an explosive substance was acquired. Its usefulness was limited by its volatility, but large cannons were created to use it to the fullest extent. To protect themselves during transit from the navy of Marignon, cannons were rapidly adopted and now cannons are relatively commonplace.
+The weapon is used by a trained cannoneer that will defend it. If the cannoneer is killed but the cannon is not destroyed a new cannoneer will be appointed after the battle."
+#size 3
+#gcost 10015
+#ap 4
+#bodyguard -5
+#diseaseres 50
+#swampsurvival
+#nametype 173
+#def 12
+#sailing 10 10
+#weapon 666 -- torch
+#armor 9
+#armor 118
+#mountedinspector
+#nobarding
+#nothrowoff
+#nofalldmg
+#cleanshape
+#end
 
 
 -- END OF NEW MONSTERS (Skip 8700~8818, 8900~9000 and 9600~9650)
@@ -95395,6 +95728,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #newsite 2111
 #name "Ancient Windmill"
 #path 1 
+#look 1
 #level 0
 #rarity 5
 #gems 6 1
@@ -102089,6 +102423,34 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8238
 #end
 
+#newsite 2578
+#clear
+#name "LA Rotterland Summons"
+#rarity 5
+#level 0
+#path 6
+#look 2
+#homemon 694 -- bear
+#homemon 7611 -- mud w
+#homemon 9090 -- mosq
+#homecom 7967 -- moss
+#homecom 7968 -- witte
+#homecom 7613 -- tana triton
+#end
+
+#newsite 2579
+#clear
+#name "LA Rotterland Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 2
+#homecom 7962
+#homecom 7960
+#homecom 7963
+#homecom 7964
+#end
+
 
 
 -- END OF NEW SITES
@@ -104783,6 +105145,11 @@ Priests: Stealthy"
 #startsite "Ancient Windmill"
 #startsite "Ostlem Dike"
 #startsite "Nieuwe Kerk"
+
+#futuresite "Celestial Angels"
+#futuresite "LA Rotterland Summons"
+#futuresite "LA Rotterland Heroes"
+
 #likesterr 32
 #hatesterr 12
 #fortera 3
@@ -104796,8 +105163,8 @@ Priests: Stealthy"
 #addreccom 7945
 #addreccom 7946
 #addreccom 7947
-#addreccom 7948
-#coastcom1 7942 -- Schipper
+#coastfortcom 7942 -- Schipper
+#coastfortcom 9095 -- cannon
 #addrecunit 7951
 #addrecunit 7952
 #addrecunit 7953
@@ -108900,6 +109267,7 @@ Bless bonuses: Poison Resistance +10"
 
 #caveinc 10
 #caveres 10
+#caverecpt 10
 
 #homeheatscaleres 2
 #end
@@ -118688,9 +119056,9 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #path 1 5
 #pathlevel 0 2
 #pathlevel 1 1
-#fatiguecost 700
+#fatiguecost 500
 #effect 10001
-#nreff 505
+#nreff 503
 #damage 7571
 #restricted 102 -- LA Agartha
 #end
@@ -123701,6 +124069,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 40 -- EA Pelagia
 #restricted 86 -- MA Pelagia
 #restricted 125 -- LA Erytheia
+#restricted 190 -- Rotterland
 #end
 
 #selectspell 3075
@@ -128395,8 +128764,8 @@ All effects scale with friendly Dominion."
 #end
 
 #selectspell 3470
-#name "Send Mosquito Queen"
-#descr "The mage sends a Mosquito Queen to attack an enemy commander. The Mosquito Queen is a carrier of disease and is surrounded by a swarm of her children. Each round the mosquitos will drain the blood of living creatures nearby and the Queen will use this to reinvigorate and refresh herself."
+#name "Send Mosquito Swarm"
+#descr "The mage sends a swarm of disease-ridden mosquitos to attack an enemy commander. Their many bites will poison enemies and impart deadly diseases upon them."
 #school 0
 #researchlevel 3
 #path 0 6
@@ -128405,7 +128774,7 @@ All effects scale with friendly Dominion."
 #pathlevel 1 1
 #effect 10050
 #nreff 1
-#damage 7965
+#damage 9090
 #precision 10050
 #fatiguecost 300
 #restricted 190 -- LA Rotterland
@@ -128414,8 +128783,8 @@ All effects scale with friendly Dominion."
 #end
 
 #selectspell 3471
-#name "Summon Mosquito Cloud"
-#descr "The mage summons a cloud of disease-ridden mosquitos and directs them against the enemy. The cloud will be difficult to destroy with regular weapons, however burning them will quickly disperse the insects. Their many bites will weaken and fatigue enemies, aswell as spreading disease. In arid environments the caster will be unable to summon enough mosquitos to form a swarm."
+#name "Summon Mosquito Swarm"
+#descr "The mage summons a cloud of disease-ridden mosquitos and directs them against the enemy. The cloud will disperse if too many mosquitos die. Their many bites will poison enemies and they may disease enemies."
 #school 0
 #researchlevel 4
 #path 0 6
@@ -128423,12 +128792,14 @@ All effects scale with friendly Dominion."
 #pathlevel 0 1
 #pathlevel 1 1
 #effect 1
-#nreff 1
+#nreff 1001 -- 2+, avg 2.8 mosquitos per nreff via mount mechanics
 #range 5
 #flightspr -1
-#damage 7975 -- Mosquito cloud
-#fatiguecost 60
-#nogeosrc 64  -- Wastes
+#damage -1075 -- Mosquitos
+--#damage 9090 -- Mosquito cloud
+--#damage 7975 -- Mosquito cloud
+#fatiguecost 50
+--#nogeosrc 64  -- Wastes
 #restricted 190 -- LA Rotterland
 #end
 
