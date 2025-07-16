@@ -3633,6 +3633,28 @@
 #blunt
 #end
 
+#newweapon 1877 -- Sleep Touch
+#copyweapon 91 -- fatigue
+#name "Fear Shock"
+#morroll
+#armornegating
+#dmg 50
+#nostr
+#end
+
+#newweapon 1878 -- Sleep Touch
+#copyweapon 824
+#name "Touch of Sleep"
+#secondaryeffect 1877
+#end
+
+#newweapon 1879 -- Jabberwocky claw
+#copyweapon 767
+#name "Catching Claw"
+#dmg 10
+#secondaryeffect 622
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -10256,7 +10278,7 @@
 #newmonster 6718
 #copystats 6715
 #name "Venedian Standard"
-#descr "Venedians are not usually known for they bravery in battle, but they are still a proud people and will fight harder to defend the symbols of their nation. Luxurious red-and-gold banners are carried by standard bearers to increase the morale of the troops ."
+#descr "Venedians are not usually known for they bravery in battle, but they are still a proud people and will fight harder to defend the symbols of their nation. Luxurious red-and-gold banners are carried by standard bearers to increase the morale of the troops."
 #spr1 "venedia/standard1.tga"
 #spr2 "venedia/standard2.tga"
 #ap 9
@@ -53989,6 +54011,253 @@ The weapon is used by a trained cannoneer that will defend it. If the cannoneer 
 #nofalldmg
 #cleanshape
 #end
+
+#newmonster 9097
+#spr1 "magicenhanced/selg_bugbear1.tga"
+#spr2 "magicenhanced/selg_bugbear2.tga"
+#clearweapons
+#cleararmor
+#name "Bugbear"
+#descr "The Bugbear is a monstrous being of the dreamwild sometimes seen on the edge of civilization. To most onlookers they will take the appearance of what monster may frighten them most, though those who can see through illusions will not be fooled. It is believed they are formed from the nightmares of children and parents will often try to keep their children indoors when one is sighted. Their touch is known to frighten the cowardly into unconsciousness or even death."
+#gcost 0
+#prot 10
+#str 18
+#att 14
+#def 10
+#prec 10
+#enc 2
+#size 6
+#mr 15
+#mor 15
+#hp 36
+#mapmove 14
+#ap 14
+#humanoid
+#neednoteat
+#spiritsight
+#magicbeing
+#dread 5
+#weapon 1878 -- Sleep Touch
+#end
+
+#newmonster 9098
+#spr1 "magicenhanced/selg_twilitbeast1.tga"
+#spr2 "magicenhanced/selg_twilitbeast2.tga"
+#clearweapons
+#cleararmor
+#name "Twilit Beast"
+#descr "Twilit Beasts are monstrous beings from the dreamwild sometimes seen skulking in the wilderness. They will often abduct cattle and children alike in the night before returning to the dreamwild to devour them, never to be found afterward. Twilit Beasts come cloaked in glamour and illusions, and draw power from the dark of night."
+#gcost 0
+#prot 8
+#str 18
+#att 13
+#def 13
+#prec 10
+#enc 2
+#size 6
+#mr 15
+#mor 20
+#hp 34
+#mapmove 16
+#ap 24
+#coldres 5
+#quadruped
+#neednoteat
+#diseaseres 100
+#darkpower 2
+#spiritsight
+#magicbeing
+#animal
+#ironvul 2
+#heal
+#forestsurvival
+#stealthy 25
+#glamour
+#weapon 823 -- Magic claw
+#weapon 821 -- Magic Bite
+#end
+
+
+#newmonster 9099
+#spr1 "magicenhanced/selg_jabberwocky1.tga"
+#spr2 "magicenhanced/selg_jabberwocky2.tga"
+#clearweapons
+#cleararmor
+#name "Jabberwocky"
+#descr "The Jabberwocky is a dragon of the dreamwilds seldom seen in the world. Dragons are enormous, scaly, winged creatures of tremendous physical and magical power born before the history of time. The Jabberwocky's origins are completely unknown and their existence is unnatural, so much so that their presence will cause confusion and outbursts in those around them as they try to make sense of the monster, and even residents of the land of dreams know to stay away from them. Jabberwocky can reputedly only be killed with weapons of iron or the legendary vorpal blade."
+#gcost 0
+#prot 20
+#invulnerable 25
+#ironvul 5
+#str 25
+#att 15
+#def 11
+#prec 10
+#enc 1
+#size 10
+#mr 18
+#mor 30
+#hp 125
+#mapmove 26
+#fireres 5
+#insane 10
+--#acidres 10
+#curseluckshield 2
+#voidsanity 10
+#maxage 4000
+#startage 2000
+#quadruped
+#neednoteat
+#diseaseres 100
+#magicpower 2
+#spiritsight
+#magicbeing
+#heal
+#fear 10
+#mountainsurvival
+#glamour
+#flying
+#magicskill 0 2
+#magicskill 1 1
+#magicskill 7 3
+#weapon 821 -- Magic Bite
+#weapon 1879 -- Magic claw
+#weapon 1879 -- Magic claw
+#itemslots 18620416 -- 3 misc, crown
+#startitem 875
+#end
+
+#newmonster 9100
+#spr1 "magicenhanced/blue_firestarter1.tga"
+#spr2 "magicenhanced/blue_firestarter2.tga"
+#clearweapons
+#cleararmor
+#name "Firestarter"
+#descr "Firestarters are malign fay goblins of the dreamwild sometimes seen in bands roaming the edge of civilization. They carry torches with which they can start fires in the wilderness and sometimes even catch people's homes and villages in the blaze. They mainly appear in the summer when the land is at its warmest. Like all fay, they are vulnerable to iron and cloaked in glamour."
+#gcost 0
+#prot 2
+#str 11
+#att 14
+#def 14
+#prec 10
+#enc 2
+#size 2
+#mr 14
+#mor 9
+#hp 9
+#mapmove 20
+#fireres 10
+#summerpower 20
+#forestsurvival
+#ap 16
+#pillagebonus 5
+#glamour
+#ironvul 2
+#heal
+#weapon 666 -- Torch
+#armor 10 -- Leather Hauberk
+#humanoid
+#neednoteat
+#spiritsight
+#magicbeing
+#end
+
+#newmonster 9101
+#spr1 "magicenhanced/selg_waterhorse1.tga"
+#spr2 "magicenhanced/selg_waterhorse2.tga"
+#clearweapons
+#cleararmor
+#name "Water Horse"
+#descr "The Water Horse is a being formed of pure water into the shape of a horse. They usually reside in the seas of the dreamwild but can occasionally be found galloping along rivers. Mages may pull them from the dreamwild where they may be used to crush enemies under their hooves."
+#drawsize -20
+#gcost 0
+#prot 0
+#str 16
+#att 12
+#def 14
+#prec 10
+#enc 0
+#size 5
+#mr 15
+#mor 50
+#hp 35
+#mapmove 14
+#fireres 5
+#poisonres 25
+#uwregen 20
+#woundfend 99
+#unsurr 2
+#ap 10
+#quadruped
+#neednoteat
+#spiritsight
+#magicbeing
+#amphibian
+#inanimate
+#pierceres
+#slashres
+#bluntres
+#weapon 90 -- Crush
+#weapon 90 -- Crush
+#end
+
+#newmonster 7812
+#clear
+#copystats 564  -- Water Troll
+#spr1 "magicenhanced/eewater.tga"
+#spr2 "magicenhanced/eewater2.tga"
+#clearweapons
+#name "Water Weird"
+#descr "A Water Weird is a lesser water elemental often tasked with guarding a specific person. The Water Weird resides inside a small container until such time as the owner is threatened, when it will animate to defend them. Water Weirds can attack by crushing and drowning enemies. They are somewhat resistant to heat and flames."
+#miscshape
+#gcost 0
+#hp 15
+#size 5
+#mor 50
+#att 11
+#def 13
+#ap 8
+#enc 0
+#bodyguard 3
+#fireres 5
+#reform 50
+#slashres
+#pierceres
+#bluntres
+#magicbeing
+#heal
+#spiritsight
+#weapon 90  -- Crush
+#end
+
+#newmonster 9102
+#spr1 "magicenhanced/selg_bugbear1.tga"
+#spr2 "magicenhanced/selg_bugbear2.tga"
+#clearweapons
+#cleararmor
+#name "Sea Witch"
+#descr "The Bugbear is a monstrous being of the dreamwild sometimes seen on the edge of civilization. To most onlookers they will take the appearance of what monster may frighten them most, though those who can see through illusions will not be fooled. It is believed they are formed from the nightmares of children and parents will often try to keep their children indoors when one is sighted. Their touch is known to frighten the cowardly into unconsciousness or even death."
+#gcost 0
+#prot 10
+#str 18
+#att 14
+#def 10
+#prec 10
+#enc 2
+#size 6
+#mr 15
+#mor 15
+#hp 36
+#mapmove 14
+#ap 14
+#humanoid
+#neednoteat
+#spiritsight
+#magicbeing
+#dread 5
+#weapon 1878 -- Sleep Touch
+#end
+
 
 
 -- END OF NEW MONSTERS (Skip 8700~8818, 8900~9000 and 9600~9650)
@@ -102452,6 +102721,22 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 
+#newsite 2580
+#clear
+#name "Testestest"
+#rarity 5
+#level 0
+#path 9
+#look 2
+#homecom 9097
+#homecom 9098
+#homecom 9099
+#homecom 9100
+#homecom 9101
+#homecom 7812
+#end
+
+
 
 -- END OF NEW SITES
 
@@ -105149,6 +105434,7 @@ Priests: Stealthy"
 #futuresite "Celestial Angels"
 #futuresite "LA Rotterland Summons"
 #futuresite "LA Rotterland Heroes"
+#futuresite "Testestest"
 
 #likesterr 32
 #hatesterr 12
@@ -108486,6 +108772,11 @@ Nation: Reduced income. Halved population increased from Growth scales."
 #end
 
 #selectnation 51
+#summary "Race: Humans, Cyclopes and Gigantes.
+Military: Few Gigante Warriors. Mostly human slave soldiers. No sacred troops
+Magic: Fire, Earth, Air, and some Water, Death and Nature. Arcane Slave Communions. Cyclops smiths
+Priests: Weak and few
+Dominion: Increases unrest"
 #hero1 3163  -- Phlegyas
 #hero2 7931 -- Pyramon
 #hero3 7936 -- Polybotes
@@ -128792,7 +129083,7 @@ All effects scale with friendly Dominion."
 #pathlevel 0 1
 #pathlevel 1 1
 #effect 1
-#nreff 1001 -- 2+, avg 2.8 mosquitos per nreff via mount mechanics
+#nreff 502 -- 2+1/2, avg 2.8 mosquitos per nreff via mount mechanics
 #range 5
 #flightspr -1
 #damage -1075 -- Mosquitos
@@ -138185,6 +138476,30 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #end
 
 
+#selectspell 4209
+#copyspell "Drowning"
+#name "Nonsense Aura"
+#damage 17179869184
+#effect 11
+#spec 4512395728932992 -- AN, Morale Negates, Ignore Shields, Mindless Immune, UWOK, Void Sanity Immune, MRN
+#sound 0
+#aoe 15
+#strikesound 0
+#explspr 10001
+#end
+
+#selectspell 4210
+#copyspell "Drowning"
+#name "Aura of Confusion"
+#descr " "
+#effect 17 -- Temporary Morale
+#damage 1
+#spec 8405120 -- UWOK, AN, Ignore shields
+#sound 0
+#strikesound 0
+#nextspell 4209
+#end
+
 
 
 -- END OF NEW SPELLS
@@ -140807,7 +141122,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1405 -- Hellfire
 #range 5035
-#damage 1010
+#damage 11
 #spec 160
 #end
 
@@ -144837,8 +145152,23 @@ This will also prevent their skin from drying out."
 #armor 567
 #end
 
+#selectitem 875 -- Leviathan Aura
+#clear
+#spr "blue_dirgen/blanksprite.tga"
+#name "Aura of Confusion"
+#descr "Aura of Confusion does not affect mindless or those with void sanity."
+#constlevel 6 -- Const level 10/12 seems to make the item unique
+#restricted 128 -- Unused nation so the item can never actually be crafted, FIXME
+#type 8
+#mainpath 7
+#autospell "Aura of Confusion"
+#autospellrepeat 1
+#cursed
+#nofind
+#end
 
--- END OF NEW ITEMS
+
+-- END OF NEW ITEMS (Skip items 881~882)
 
 
 #selectitem 1  -- Fire Sword
