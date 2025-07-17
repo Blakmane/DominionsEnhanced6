@@ -3655,6 +3655,19 @@
 #secondaryeffect 622
 #end
 
+#newweapon 1880 -- Starvation
+#copyweapon 64
+#name "Starvation"
+#dmg 4
+#end
+
+
+#newweapon 1881 -- Shambling Walker claw
+#copyweapon 29 -- Claw
+#name "Famine Claw"
+#secondaryeffect 1880
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -52505,7 +52518,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #prec 10 -- orig 10
 #size 8 -- orig 8
 #coldres 25 -- orig 15
-#fear 20 -- orig 15
+#fear 10
 #magicskill 5 3
 --#onebattlespell 864 -- Darkness
 #flying
@@ -54046,7 +54059,7 @@ The weapon is used by a trained cannoneer that will defend it. If the cannoneer 
 #clearweapons
 #cleararmor
 #name "Twilit Beast"
-#descr "Twilit Beasts are monstrous beings from the dreamwild sometimes seen skulking in the wilderness. They will often abduct cattle and children alike in the night before returning to the dreamwild to devour them, never to be found afterward. Twilit Beasts come cloaked in glamour and illusions, and draw power from the dark of night."
+#descr "Twilit Beasts are monstrous beings from the dreamwild sometimes seen skulking in the wilderness. They will often abduct cattle and people alike in the night before returning to the dreamwild to devour them, never to be found afterward. Twilit Beasts come cloaked in glamour and illusions, and draw power from the dark of night."
 #gcost 0
 #prot 8
 #str 18
@@ -54187,7 +54200,7 @@ The weapon is used by a trained cannoneer that will defend it. If the cannoneer 
 #uwregen 20
 #woundfend 99
 #unsurr 2
-#ap 10
+#ap 20 -- faster than a wele
 #quadruped
 #neednoteat
 #spiritsight
@@ -54231,31 +54244,394 @@ The weapon is used by a trained cannoneer that will defend it. If the cannoneer 
 #end
 
 #newmonster 9102
-#spr1 "magicenhanced/selg_bugbear1.tga"
-#spr2 "magicenhanced/selg_bugbear2.tga"
+#spr1 "magicenhanced/laod_shamblingwalker1.tga"
+#spr2 "magicenhanced/laod_shamblingwalker2.tga"
 #clearweapons
 #cleararmor
-#name "Sea Witch"
-#descr "The Bugbear is a monstrous being of the dreamwild sometimes seen on the edge of civilization. To most onlookers they will take the appearance of what monster may frighten them most, though those who can see through illusions will not be fooled. It is believed they are formed from the nightmares of children and parents will often try to keep their children indoors when one is sighted. Their touch is known to frighten the cowardly into unconsciousness or even death."
+#name "Shambling Walker"
+#descr "The Shambling Walker is an undead construct made from the bones of many animals and imbued with false life. They are surrounded by the chill of death and their touch will bring starvation to the living."
 #gcost 0
-#prot 10
-#str 18
-#att 14
+#prot 9
+#str 15
+#att 12
 #def 10
 #prec 10
-#enc 2
-#size 6
-#mr 15
-#mor 15
-#hp 36
+#enc 0
+#size 5
+#mr 11
+#mor 50
+#hp 18
 #mapmove 14
 #ap 14
+#cold 3
 #humanoid
 #neednoteat
 #spiritsight
 #magicbeing
-#dread 5
-#weapon 1878 -- Sleep Touch
+#stealthy 25
+#forestsurvival
+#animal
+#undead
+#poisonres 25
+#coldres 25
+#neednoteat
+#inanimate
+#pierceres
+#pooramphibian
+#noheal
+#weapon 1881 -- Claw
+#weapon 1881 -- Claw
+#weapon 634 -- antlers
+#end
+
+#newmonster 9103
+#spr1 "magicenhanced/laod_bogeyman1.tga"
+#spr2 "magicenhanced/laod_bogeyman2.tga"
+#clearweapons
+#cleararmor
+#name "Bogeyman"
+#descr "The Bogeyman, known by many names throughout the world, is a malicious being of the dreamwild that roams the edges of civilization in search of children to abduct. They appear as a dark mass with sharp teeth and are capable of hiding their appearance entirely and will sometimes find their way into homes and under beds. It is believed they only hunt children that have misbehaved, and will often linger for days to terrify their victims before abduction. They are a personification of terror and anyone near them will feel a nauseating fear build up throughout their body. They can put the others to sleep around them when they wish and abduct by entering people whole into the black mass through their teeth where they will be trapped for the Bogeyman to do as it pleases with them. The presence of the Bogeyman will greatly increase unrest and bring great misfortune upon the province in which they dwell."
+#gcost 0
+#prot 0
+#str 15
+#att 12
+#def 10
+#prec 10
+#enc 0
+#size 5
+#mr 17
+#mor 30
+#hp 24
+#mapmove 18
+#ap 14
+#sleepaura 3
+#fear 20
+#ethereal
+#assassin
+#patience 2
+#invisible
+#scalewalls
+#humanoid
+#neednoteat
+#spiritsight
+#magicbeing
+#stealthy 25
+#poisonres 25
+#coldres 15
+#maxage 5000
+#startage 1000
+#neednoteat
+#amphibian
+#incunrest 100
+#bringeroffortune -100
+#magicskill 5 2
+#magicskill 7 3
+#magicskill 8 2
+#weapon 400 -- Devour Soul
+#end
+
+#newmonster 9104
+#spr1 "magicenhanced/laod_hag1.tga"
+#spr2 "magicenhanced/laod_hag2.tga"
+#clearweapons
+#cleararmor
+#name "Hag"
+#descr "Hags are witches of the dreamwild proficient in the magic of the fay. How they got there is a mystery - Some believe they are humans that travelled there personally, some believe they made a pact with a powerful fay, some believe they were brought there as a child, and others believe they were created from the dreams and fears of the common people. Whatever the case, each is different in their own right, and they will just as often be found stirring a cauldron of human flesh as they will cure anyone of their ailments."
+#gcost 0
+#prot 0
+#str 10
+#att 10
+#def 10
+#prec 10
+#enc 3
+#size 3
+#mr 18
+#mor 12
+#hp 10
+#mapmove 16
+#ap 14
+#humanoid
+#truesight
+#stealthy 0
+#glamour
+#maxage 300
+#startage 200
+#magicskill 6 1
+#magicskill 7 2
+#custommagic 61696 100 -- ADNGB
+#weapon 92
+#end
+
+#newmonster 9105 -- Not fall
+#spr1 "magicenhanced/selg_hollowlord1.tga"
+#spr2 "magicenhanced/selg_hollowlord2.tga"
+#clearweapons
+#cleararmor
+#name "Hollow Lord"
+#descr "Hollow Lords are manifestations of the harvest season and harbingers of the coming winter. They are normally benign beings, however unscrupulous mages may bind them to scarecrows and corrupt them with blood sacrifice into a terrifying being that will reap human souls instead of crops. They are often surrounded by black birds and carry a scythe with which they may harvest people and turn them into scarecrow servants. They draw power from the Fall and will be more efficient at blood hunting during those months."
+#gcost 0
+#prot 4
+#str 13
+#att 12
+#def 12
+#prec 10
+#enc 0
+#size 3
+#mr 18
+#mor 30
+#hp 18
+#mapmove 20
+#ap 10
+#humanoid
+#spiritsight
+#inanimate
+#neednoteat
+#pierceres
+#magicbeing
+#fireres -5
+#poisonres 25
+#maxage 2000
+#startage 1000
+--#magicskill 5 1 -- D
+#magicskill 6 1 -- N
+#magicskill 7 1 -- G
+#magicskill 8 1 -- B
+#custommagic 62464 100 -- EDNGB
+#custommagic 62464 100 -- EDNGB
+#weapon 1637 -- Scythe of unlife
+#raiseshape 7674 -- Scarecrow
+#raiseonkill 50
+#fallpower 20
+#autumnshape 9106
+#goodmagicleader
+#poorleader
+#okundeadleader
+#batstartsum1d6 517 -- Black Hawk
+#end
+
+#newmonster 9106 -- Fall
+#spr1 "magicenhanced/selg_hollowlord1.tga"
+#spr2 "magicenhanced/selg_hollowlord2.tga"
+#clearweapons
+#cleararmor
+#name "Hollow Lord"
+#descr "Hollow Lords are manifestations of the harvest season and harbingers of the coming winter. They are normally benign beings, however unscrupulous mages may bind them to scarecrows and corrupt them with blood sacrifice into a terrifying being that will reap human souls instead of crops. They are often surrounded by black birds and carry a scythe with which they may harvest people and turn them into scarecrow servants. They draw power from the Fall and will be more efficient at blood hunting during those months."
+#gcost 0
+#prot 4
+#str 13
+#att 12
+#def 12
+#prec 10
+#enc 0
+#size 3
+#mr 18
+#mor 30
+#hp 18
+#mapmove 20
+#ap 10
+#humanoid
+#spiritsight
+#inanimate
+#neednoteat
+#pierceres
+#magicbeing
+#fireres -5
+#poisonres 25
+#maxage 2000
+#startage 1000
+--#magicskill 5 1 -- D
+#magicskill 6 1 -- N
+#magicskill 7 1 -- G
+#magicskill 8 1 -- B
+#custommagic 62464 100 -- EDNGB
+#custommagic 62464 100 -- EDNGB
+--#custommagic 58368 100 -- ENGB
+#weapon 1637 -- Scythe of unlife
+#raiseshape 7674 -- Scarecrow
+#raiseonkill 50
+#fallpower 20
+#wintershape 9105
+#douse 2
+#goodmagicleader
+#poorleader
+#okundeadleader
+#batstartsum1d6 517 -- Black Hawk
+#end
+
+#newmonster 9107 -- Harvester Mount
+#copystats 3519
+#spr1 "magicenhanced/selg_harvesterm1.tga"
+#spr2 "magicenhanced/selg_harvesterm2.tga"
+#drawsize 0
+#clearweapons
+#cleararmor
+#name "Harvester's Horse"
+#descr "The Harvester's dark steed."
+#gcost 0
+#prot 5
+#str 16
+#att 12
+#def 14
+#enc 2
+#mr 18
+#mor 30
+#hp 30
+#mapmove 28
+#ap 30
+#spiritsight
+#magicbeing
+#demon
+#poisonres 10
+#maxage 500
+#startage 200
+#weapon 831 -- Hoof
+#raiseshape 7674 -- Scarecrow
+#raiseonkill 50
+#fallpower 20
+#end
+
+#newmonster 9108 -- Harvester Not fall
+#spr1 "magicenhanced/selg_harvester1.tga"
+#spr2 "magicenhanced/selg_harvester2.tga"
+#unmountedspr1 "magicenhanced/un_selg_harvester1.tga"
+#unmountedspr2 "magicenhanced/un_selg_harvester2.tga"
+#clearweapons
+#cleararmor
+#name "Harvester"
+#descr "The Harvester is an ancient demonic being of the dreamwild that takes the appearance of a scarecrow riding atop a dark steed wielding a great scythe with which he may harvest the souls of those he cuts down with it. He is the original and most powerful of the Hollow Lords, and has been returned from the dreamwild by a large sacrifice to reap a new crop of human souls. He draws power from the Fall and will be more efficient at blood hunting during those months."
+#gcost 0
+#prot 5
+#str 16
+#att 13
+#def 13
+#prec 10
+#enc 0
+#size 3
+#mr 18
+#mor 30
+#hp 18
+#mapmove 20
+#ap 10
+#humanoid
+#spiritsight
+#inanimate
+#neednoteat
+#pierceres
+#magicbeing
+#demon
+#fireres -5
+#poisonres 25
+#maxage 2000
+#startage 1000
+#magicskill 3 1 -- E
+#magicskill 5 2 -- D
+--#magicskill 6 2 -- N
+#magicskill 7 2 -- G
+#magicskill 8 3 -- B
+#weapon 1637 -- Scythe of unlife
+#raiseshape 7674 -- Scarecrow
+#raiseonkill 50
+#fallpower 20
+#autumnshape 9109
+#goodmagicleader
+#poorleader
+#okundeadleader
+#batstartsum1d6 517 -- Black Hawk
+#domsummon2 7674 -- Scarecrow
+#mountmnr 9107
+#skilledrider 7
+#end
+
+#newmonster 9109 -- Harvester fall
+#spr1 "magicenhanced/selg_harvester1.tga"
+#spr2 "magicenhanced/selg_harvester2.tga"
+#unmountedspr1 "magicenhanced/un_selg_harvester1.tga"
+#unmountedspr2 "magicenhanced/un_selg_harvester2.tga"
+#clearweapons
+#cleararmor
+#name "Harvester"
+#descr "The Harvester is an ancient demonic being of the dreamwild that takes the appearance of a scarecrow riding atop a dark steed wielding a great scythe with which he may harvest the souls of those he cuts down with it. He is the original and most powerful of the Hollow Lords, and has been returned from the dreamwild by a large sacrifice to reap a new crop of human souls. He draws power from the Fall and will be more efficient at blood hunting during those months."
+#gcost 0
+#prot 5
+#str 15
+#att 13
+#def 13
+#prec 10
+#enc 0
+#size 3
+#mr 18
+#mor 30
+#hp 18
+#mapmove 20
+#ap 10
+#humanoid
+#spiritsight
+#inanimate
+#neednoteat
+#pierceres
+#magicbeing
+#demon
+#fireres -5
+#poisonres 25
+#maxage 2000
+#startage 1000
+#magicskill 3 1 -- E
+#magicskill 5 2 -- D
+#magicskill 6 2 -- N
+#magicskill 7 2 -- G
+#magicskill 8 3 -- B
+#weapon 1637 -- Scythe of unlife
+#raiseshape 7674 -- Scarecrow
+#raiseonkill 50
+#fallpower 20
+#wintershape 9108
+#douse 2
+#goodmagicleader
+#poorleader
+#okundeadleader
+#batstartsum1d6 517 -- Black Hawk
+#domsummon 7674 -- Scarecrow
+#mountmnr 9107
+#skilledrider 7
+#end
+
+#newmonster 9110 -- Poppet
+#spr1 "magicenhanced/selg_poppet1.tga"
+#spr2 "magicenhanced/selg_poppet2.tga"
+#clearweapons
+#cleararmor
+#name "Poppet"
+#descr "Poppets are dolls made from leather, sticks, cloth, or rope to represent person, wrought extensively with curses, and brought to life through blood sacrifice. Poppets are not particularly strong, but any damage visited upon them will be returned to the attacker and simply handling one is dangerous. Destroying one will result in being cursed for life and locking them away forever is the only known safe way to dispose of them."
+#gcost 0
+#prot 4
+#str 8
+#att 9
+#def 11
+#prec 10
+#enc 0
+#size 2
+#mr 15
+#mor 50
+#hp 8
+#mapmove 12
+#ap 8
+#humanoid
+#spiritsight
+#inanimate
+#neednoteat
+#pierceres
+#magicbeing
+#fireres -5
+#poisonres 25
+#maxage 100
+#startage 1
+#custommagic 49152 50
+#custommagic 49152 50
+#weapon 33 -- Claws
+#damagerev 2
+#bloodvengeance 2
+#curseluckshield 2
+#deathcurse
 #end
 
 
@@ -82085,13 +82461,13 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #magicskill 9 1
 #end
 
-#selectmonster "Succubus"
-#shapechange "Incubus"
+#selectmonster 811
+#shapechange 4053
 #magicskill 8 1
 #end
 
-#selectmonster "Incubus"
-#shapechange "Succubus"
+#selectmonster 4053
+#shapechange 7100
 #magicskill 8 1
 #end
 
@@ -102733,6 +103109,14 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 9099
 #homecom 9100
 #homecom 9101
+#homecom 9102
+#homecom 9103
+#homecom 9104
+#homecom 9105
+--#homecom 9106
+#homecom 9108
+--#homecom 9109
+#homecom 9110
 #homecom 7812
 #end
 
