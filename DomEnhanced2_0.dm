@@ -38289,7 +38289,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #custommagic 8960 100  -- 100% AWN
 #custommagic 8960 10  -- 10% AWN
 #giftofwater 30
-#poorleader
+#okleader
 #swampsurvival
 #amphibian
 #landshape 7949
