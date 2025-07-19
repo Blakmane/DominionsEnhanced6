@@ -3668,6 +3668,14 @@
 #secondaryeffect 1880
 #end
 
+#newweapon 1882 -- Hand Crossbow
+#copyweapon 25
+#name "Hand Crossbow"
+#dmg 10
+#ammo 2
+#range 30
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -38006,9 +38014,10 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 5
 #armor 120
 #spy
+#sailing 15 4
 #descr "Spies are trained to pass unseen through enemy territory. They are far superior to the scout in collecting information and in remaining unseen by patrolling enemies. The spy can also instigate uprisings in enemy provinces."
 #diseaseres 50
-#gcost 10010
+#gcost 80
 #end
 
 #newmonster 7941
@@ -38028,11 +38037,11 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 9
 #armor 120
 #swampsurvival
-#gcost 10010
+#gcost 55
 #nametype 173
 #diseaseres 50
 #command 20
-#sailing 12 4
+#sailing 15 4
 #end
 
 #newmonster 7942
@@ -38119,7 +38128,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #rpcost 1
 #goodleader
 #swampsurvival
-#gcost 10010
+#gcost 95
 #armor 9
 #armor 118
 #armor 569 -- Pavise
@@ -38137,6 +38146,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mor 13
 #older 5
 #diseaseres 50
+#sailing 15 4
 #end
 
 #newmonster 7944
@@ -38151,11 +38161,12 @@ While in the form of an old man, all paths are increased and allows the use of N
 #holy
 #weapon 92
 #armor 158
-#gcost 10010
+#gcost 65
 #nametype 173
 #diseaseres 50
 #mr 11
 #enc 3
+#sailing 15 4
 #end
 
 #newmonster 7945
@@ -38172,11 +38183,12 @@ While in the form of an old man, all paths are increased and allows the use of N
 #holy
 #weapon 9
 #armor 158
-#gcost 10010
+#gcost 125
 #nametype 173
 #diseaseres 50
 #mr 13
 #enc 3
+#sailing 15 4
 #end
 
 #newmonster 7947
@@ -38204,6 +38216,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #diseaseres 75
 #nametype 173
 #mr 14
+#sailing 15 4
 #end
 
 #newmonster 7948
@@ -38218,7 +38231,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 14
 #armor 5
 #armor 120
-#gcost 10010
+#gcost 255
 #str 12
 #magicskill 3 1
 #magicskill 2 2
@@ -38230,6 +38243,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #diseaseres 50
 #startage 30
 #mr 14
+#sailing 15 4
 #end
 
 #newmonster 7949
@@ -38241,15 +38255,15 @@ While in the form of an old man, all paths are increased and allows the use of N
 #rpcost 2
 #weapon 9
 #armor 5
-#gcost 10010
+#gcost 135
 #att 9
 #def 9
 #prec 9
 #magicskill 2 1
 #custommagic 8960 100  -- 100% AWN
 #custommagic 8960 10  -- 10% AWN
-#giftofwater 30
-#poorleader
+#giftofwater 90
+#okleader
 #swampsurvival
 #pooramphibian
 #watershape 7950
@@ -38257,6 +38271,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr2 "rotterland/rmermagel2.tga"
 #nametype 107
 #mr 15
+#sailing 15 4
 #end
 
 #newmonster 7950
@@ -38269,7 +38284,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #rpcost 2
 #weapon 9
 #armor 5
-#gcost 10010
+#gcost 135
 #magicskill 2 1
 #custommagic 8960 100  -- 100% AWN
 #custommagic 8960 10  -- 10% AWN
@@ -38282,6 +38297,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr2 "rotterland/rmermagew2.tga"
 #nametype 107
 #mr 15
+#sailing 15 4
 #end
 
 #newmonster 7951
@@ -38387,10 +38403,11 @@ While in the form of an old man, all paths are increased and allows the use of N
 #prec 8
 #swampsurvival
 #expertleader
-#gcost 10015
+#gcost 160
 #nametype 173
 #diseaseres 50
 #enc 4
+#sailing 15 5
 #end
 
 #newmonster 7956
@@ -38406,8 +38423,10 @@ While in the form of an old man, all paths are increased and allows the use of N
 #unmountedspr2 "rotterland/un_rcuirassier2.tga"
 #drawsize 0
 #weapon 10
+#weapon 1882
 #armor 9
 #armor 118
+#mobilearcher 1
 #rcost 1
 #hp 10
 #att 10
@@ -38416,7 +38435,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mountmnr 3515
 #skilledrider 3
 #rcost 1
-#descr "Cuirassiers are cavalrymen armed with cavalry sabers. Their role is to follow the lancers and dispatch enemies in melee once the lance charge has  lost its effectiveness. They ride lightly armored steeds and are the most mobile element of the army, often held in reserve to commit at a vital point in the battle. The inhabitants of Rotterland are disease-resistant and accustomed to living in wetlands."
+#descr "Cuirassiers are cavalrymen armed with cavalry sabers and a hand crossbow. Their role is to follow the lancers and dispatch enemies once the lance charge has lost its effectiveness. They ride lightly armored steeds and are the most mobile element of the army, often held in reserve to commit at a vital point in the battle. The inhabitants of Rotterland are disease-resistant and accustomed to living in wetlands."
 #nametype 173
 #swampsurvival
 #diseaseres 50
@@ -38710,13 +38729,16 @@ While in the form of an old man, all paths are increased and allows the use of N
 #copyspr 1415  -- Pelagian Mermage
 #clearmagic
 #name "Pelagian Mermage"
-#descr "After the collape of the Empire of R'lyeh the remaining Pelagians emerged from hiding. Those Mermen still loyal to Melusine have pledged to aid the Rotterlanders for their service to the former Queen. While the Triton mages of the Pearl Clan were once the most skilled mages in Pelagia, now they are gone it falls to the mermen to study the secrets of Thaumas. From their time under the yoke of R'lyeh some Mermages have learned the secrets of the stars."
+#descr "After the collape of the Empire of R'lyeh the remaining Pelagians emerged from hiding. Those Mermen still loyal to Melusine have pledged to aid the Rotterlanders for their service to the former Queen. While the Triton mages of the Pearl Clan were once the most skilled mages in Pelagia, now they are gone it falls to the mermen to study the secrets of Thaumas. From their time under the yoke of R'lyeh the Mermages have learned the secrets of the stars."
 #magicskill 2 1
+#magicskill 4 1
+--#custommagic 11008 100  -- WSN
 #custommagic 11008 100  -- WSN
-#custommagic 11008 100  -- WSN
-#custommagic 11008 10  -- WSN
+#custommagic 11008 20  -- WSN
 #landshape 7970 -- Mermage watershape
 #stealthy 0
+#gcost 170
+#sailing 15 4
 #end
 
 #newmonster 7970
@@ -38724,13 +38746,15 @@ While in the form of an old man, all paths are increased and allows the use of N
 #copyspr 1416  -- Pelagian Mermage
 #clearmagic
 #name "Pelagian Mermage"
-#descr "After the collape of the Empire of R'lyeh the remaining Pelagians emerged from hiding. Those Mermen still loyal to Melusine have pledged to aid the Rotterlanders for their service to the former Queen. While the Triton mages of the Pearl Clan were once the most skilled mages in Pelagia, now they are gone it falls to the mermen to study the secrets of Thaumas. From their time under the yoke of R'lyeh some Mermages have learned the secrets of the stars."
+#descr "After the collape of the Empire of R'lyeh the remaining Pelagians emerged from hiding. Those Mermen still loyal to Melusine have pledged to aid the Rotterlanders for their service to the former Queen. While the Triton mages of the Pearl Clan were once the most skilled mages in Pelagia, now they are gone it falls to the mermen to study the secrets of Thaumas. From their time under the yoke of R'lyeh the Mermages have learned the secrets of the stars."
 #watershape 7969 -- Mermage landshape
 #magicskill 2 1
 #custommagic 11008 100  -- WASN
 #custommagic 11008 100  -- WASN
 #custommagic 11008 10  -- WASN
 #stealthy 0
+#gcost 170
+#sailing 15 4
 #end
 
 #newmonster 7971
@@ -38755,6 +38779,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #name "Merman Hoplite"
 #descr "After the collape of the Empire of R'lyeh the remaining Pelagians emerged from hiding. Those Mermen still loyal to Melusine have pledged to aid the Rotterlanders for their service to the former Queen. Some still wear the heavy bronze hauberks modeled on Arcoscephalian armors. Bronze is in some ways inferior to iron, but it doesn't corrode when exposed to sea water. The mermen hoplites use Arcoscephalian formation tactics, but they are not as well drilled."
 #landshape 7974
+#gcost 10010
 #end
 
 #newmonster 7974
@@ -38763,6 +38788,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #name "Merman Hoplite"
 #descr "After the collape of the Empire of R'lyeh the remaining Pelagians emerged from hiding. Those Mermen still loyal to Melusine have pledged to aid the Rotterlanders for their service to the former Queen. Some still wear the heavy bronze hauberks modeled on Arcoscephalian armors. Bronze is in some ways inferior to iron, but it doesn't corrode when exposed to sea water. The mermen hoplites use Arcoscephalian formation tactics, but they are not as well drilled."
 #watershape 7973
+#gcost 10010
 #end
 
 #newmonster 7975
@@ -73984,7 +74010,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #moregrowth 1
 #hp 112
 #prot 8
-#str 25
+#str 30
 #att 14
 #def 12
 #mr 18
@@ -86899,6 +86925,43 @@ Cost 28 RP."
 
 #selectmonster 2781  -- Chaac
 #montag 1006  -- No Transformation spells
+#end
+
+
+#selectmonster 1048 -- Wave Warrior
+#gcost 10012
+#end
+
+#selectmonster 1049 -- Wave Warrior
+#gcost 10012
+#end
+
+#selectmonster 2416 -- Pel Coral Clan Hoplite
+#gcost 10012
+#end
+
+#selectmonster 2809 -- Pel Sideraspist
+#gcost 10010
+#end
+
+#selectmonster 2810 -- Pel Sideraspist
+#gcost 10010
+#end
+
+#selectmonster 2807 -- Pelagian Shore Fighter
+#gcost 10010
+#end
+
+#selectmonster 2808 -- Pelagian Shore Fighter
+#gcost 10010
+#end
+
+#selectmonster 2821 -- Merman Hoplite
+#gcost 10010
+#end
+
+#selectmonster 2822 -- Merman Hoplite
+#gcost 10010
 #end
 
 #selectmonster 2836 -- Daktyl
@@ -106371,7 +106434,8 @@ Priests: Average, Spirit animals may appear to defend them in battles"
 #summary "Race: Human, disease-resistant and accustomed to living in swamps. Some Mermen allies.
 Military: Arbalestiers & crossbows, average melee troops.
 Magic: Water, earth, nature and death. Some air.
-Priests: Stealthy"
+Priests: Stealthy
+Sailing: All commanders can sail. Only Schippers can transport troops."
 #brief "Rotterland is a nation of fens and swamplands allied with merfolk. Their military is quite advanced and uses plate armor and crossbows extensively. The Levee Masters are skilled in water, earth and nature whilst skilled Doctors practice death magic."
 #homerealm 1
 #homerealm 2
