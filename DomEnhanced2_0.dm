@@ -146183,15 +146183,13 @@ This will also prevent their skin from drying out."
 #itemcost1 -50
 #end
 
-#selectitem 181 -- Immacualte Shield
-#itemcost1 -66
-#itemcost2 -50
+#selectitem 181 -- Immaculate Shield
+#itemcost1 -33
 #constlevel 7
 #unique
 #end
 
 #selectitem 182 -- Barrier
-#itemcost1 -40
 #constlevel 7
 #unique
 #end
@@ -146438,7 +146436,7 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 273 -- Aseftiks Armor
-#itemcost1 -40
+#itemcost1 -20
 #nofind
 #constlevel 7
 #unique
@@ -146449,8 +146447,6 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 275 -- Armor of the Dawn
-#itemcost1 -66
-#itemcost2 -50
 #constlevel 7
 #unique
 #end
@@ -146529,7 +146525,7 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 307 -- Boots of Calius
-#itemcost1 -40
+#itemcost1 -20
 #constlevel 7
 #unique
 #end
@@ -147044,35 +147040,27 @@ This will also prevent their skin from drying out."
 #selectitem 471 -- Trapped Dreams
 #itemcost1 -20
 #itemcost2 -20
-#battlesum1 1911 -- Defiler of Dreams 
+#batstartsum1 1911 -- Defiler of Dreams 
 #end
 
-#selectitem 471 -- Orb of Elemental Fire
-#constlevel 7
-#end
-
-#selectitem 472 -- Orb of Elemental Air
+#selectitem 472 -- Orb of Elemental Fire
 #constlevel 7
 #itemcost1 60
 #end
 
-#selectitem 473 -- Orb of Elemental Water
+#selectitem 473 -- Orb of Elemental Air
 #constlevel 7
 #itemcost1 60
 #end
 
-#selectitem 473 -- Orb of Elemental Earth
+#selectitem 474 -- Orb of Elemental Water
 #constlevel 7
 #itemcost1 60
 #end
 
-#selectitem 471 -- Orb of Elemental Earth
+#selectitem 475 -- Orb of Elemental Earth
 #constlevel 7
 #itemcost1 60
-#end
-
-#selectitem 471 -- Orb of Elemental Earth
-#constlevel 7
 #end
 
 #selectitem 494 -- Sunrise Barding
