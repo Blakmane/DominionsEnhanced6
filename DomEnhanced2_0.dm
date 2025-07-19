@@ -64068,11 +64068,7 @@ Cannot be recruited until Break the Deadlock is cast."
 
 -- Start of New Pretender Changes and Additions
 
-
-
 -- FOLDUNITS
-
-
 
 
 
@@ -64394,7 +64390,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #name "Great Burrower"
 #descr "Once there was a great warrior that was entrusted with the guardianship of Alchera by the Pantokrator. The warrior defended the land well, however over time he grew proud and arrogant. He was soon approached by a cloaked stranger who asked to share his tent and food on a cold and stormy night. The guardian refused, reasoning that one as mighty as he should not have to share. However, the stranger revealed itself as the Pantokrator and punished the warrior for his pride. He was given the form of a great beast and made to burrow in the earth for shelter and food forevermore. Now, with the Pantokrator gone, reason is returning to the Great Burrower and he has returned to guard the land once more. Worshipped by the tribes he seeks the Throne of Heaven to restore his form and to rule over all."
 #diseaseres 100
-#gcost 180
+#gcost 200
 #homerealm 0
 #startdom 2
 #pathcost 60
@@ -64427,7 +64423,8 @@ Cannot be recruited until Break the Deadlock is cast."
 #twiceborn 6644 -- Wight Beast
 #itemslots 3932160
 #clearmagic
-#magicskill 3 3
+#magicskill 3 2
+#magicskill 7 1
 #end
 
 #newmonster 8259 -- Lighthouse
@@ -74341,8 +74338,8 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #copystats 2777
 #spr1 "vanilla/demonmacawaus1.png"
 #spr2 "vanilla/demonmacawaus2.png"
-#name "Demon Macaw"
-#descr "testest"
+#name "Dreamtime Parrot"
+#descr "Born at the dawn of time, the Dreamtime Parrot represents an earlier era, when monsters and giants roamed the world and all life was connected to the Dreamtime. Gifted with brilliant white feathers and a powerful shriek, the monstrous bird became envious of the growing works of man and sought to destroy them. Furious, the Pantokrator imprisoned the Dreamtime Parrot for eternity. Now with the Pantokrator gone, the Dreamtime Parrot is breaking free from its prison and will soon release its destructive shriek and endless curiousity upon the world."
 #diseaseres 100
 #gcost 180
 #startdom 2
@@ -74361,20 +74358,19 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #clearweapons
 #weapon 826  -- talons
 #weapon 825 -- beak
-#weapon 196  -- Killing light
+#weapon 58  -- Wail
 #enc 1
 #itemslots 3932160
 #clearmagic
-#magicskill 0 2
-#magicskill 7 1
+#magicskill 7 2
+#magicskill 1 1
 #end
 
 #newmonster 10021 -- Aussie Lord of the Sun
-#copystats 957
 #spr1 "vanilla/lordofthedesertsunaus.png"
 #spr2 "vanilla/lordofthedesertsunaus.png"
-#name "Lord of the Desert Sun"
-#descr "testest"
+#name "Lord of the Red Desert"
+#descr "The Lord of the Red Desert is a dingo-headed Titan who claims dominion over the harsh Sun and unforgiving desert beyond the borders of civilization. Originally tasked by the Pantokrator with guardianship over the cycles of summer fires, in his hubris he began to accept the worship of men. Furious, the Pantokrator imprisoned him under the red sands for all eternity. Now with the Pantokrator gone, the Lord of the Red Desert is free to assert his will upon the world once again."
 #diseaseres 100
 #gcost 280
 #startdom 3
@@ -74387,6 +74383,12 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #def 11
 #mr 18
 #heat 10
+#summerpower 25
+#wastesurvival
+#fireres 25
+#darkvision 50
+#weapon 373 -- Stone Spear
+#weapon 821 -- Magic Bite
 #itemslots 991750
 #clearmagic
 #magicskill 0 3
@@ -78508,6 +78510,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #weapon 825 -- beak
 #weapon 196  -- Killing light
 #enc 1
+#glamourmanip 1
 #itemslots 18620416
 #clearmagic
 #magicskill 0 2
@@ -81248,16 +81251,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 6 3
 #end
 
-
-
-
-
-
 -- ENDUNITS
-
-
-
-
 
 
 
@@ -107587,7 +107581,10 @@ Priests: Average"
 #startunitnbrs1 30
 #startunittype2 6959 -- Archer
 #startunitnbrs2 20
+
 #homerealm 7  -- Africa
+#homerealm 10  -- Default
+
 #templepic 5
 #fortera 2
 #idealcold -2
@@ -107631,16 +107628,17 @@ Priests: Average"
 #addgod 8511 -- Master Enchanter
 #addgod 8512 -- Arch Mage
 #addgod 8513 -- Great Enchantress
-#delgod 384
-#delgod 385
-#delgod 386
-#delgod 387
-#delgod 388
-#delgod 2445
-#delgod 2446
-#delgod 2464
-#delgod 8405
-#delgod 8429
+-- Neters:
+--#delgod 384
+--#delgod 385
+--#delgod 386
+--#delgod 387
+--#delgod 388
+--#delgod 2445
+--#delgod 2446
+--#delgod 2464
+--#delgod 8405
+--#delgod 8429
 
 #hero1 6994 -- Oriburu
 #hero2 6996 -- Ohen
