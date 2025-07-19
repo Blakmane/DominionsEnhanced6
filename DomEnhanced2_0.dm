@@ -3618,7 +3618,7 @@
 #end
 
 #newweapon 1876 -- cannon
-#name "Cannon Ball"
+#name "Bombardment"
 #range 80
 #ammo 30
 #aoe 1
@@ -38032,6 +38032,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #nametype 173
 #diseaseres 50
 #command 20
+#sailing 12 4
 #end
 
 #newmonster 7942
@@ -53942,13 +53943,12 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 
 
 #newmonster 9095
-#name "Cannon"
+#name "Bombard"
 #spr1 "rotterland/cannon1.tga"
 #spr2 "rotterland/cannon2.tga"
 #unmountedspr1 "rotterland/cannon.tga"
 #unmountedspr2 "rotterland/cannon.tga"
-#descr "During the Marignon occupation, merchant traders were instrumental in supplying the Ostlem with food and weapons from distant lands. In one of those lands, an alchemical formula for an explosive substance was acquired. Its usefulness was limited by its volatility, but large cannons were created to use it to the fullest extent. To protect themselves during transit from the navy of Marignon, cannons were rapidly adopted and now cannons are relatively commonplace.
-The weapon is used by a trained cannoneer that will defend it. If the cannoneer is killed but the cannon is not destroyed a new cannoneer will be appointed after the battle."
+#descr "During the Marignon occupation, merchant traders were instrumental in supplying the Ostlem with food and weapons from distant lands. In one of those lands, alchemists once developed the alchemical formula for a burning-powder that releases great cloud of flame and smoke when ignited, and a formula for it was found and brought back to the nation of Rotterland. Bombards, great metal barrels reinforced with earth magic, were constructed to contain the destructive powder and use it to fire a large projectile at enemies. While hugely expensive to forge, these devices are getting adopted at city walls and in the fleet both to serve as weapons and to demonstrate the power and advancement of the Rotterland navy. The weapon requires a trained bombardier to reload and operate. If the bombardier is killed but the cannon is not destroyed a new bombardier will be appointed after the battle."
 #miscshape
 #rpcost 1
 #rcost 30
@@ -54003,9 +54003,8 @@ The weapon is used by a trained cannoneer that will defend it. If the cannoneer 
 #cleararmor
 #spr1 "rotterland/cannonr1.tga"
 #spr2 "rotterland/cannonr2.tga"
-#name "Cannoneer"
-#descr "During the Marignon occupation, merchant traders were instrumental in supplying the Ostlem with food and weapons from distant lands. In one of those lands, an alchemical formula for an explosive substance was acquired. Its usefulness was limited by its volatility, but large cannons were created to use it to the fullest extent. To protect themselves during transit from the navy of Marignon, cannons were rapidly adopted and now cannons are relatively commonplace.
-The weapon is used by a trained cannoneer that will defend it. If the cannoneer is killed but the cannon is not destroyed a new cannoneer will be appointed after the battle."
+#name "Bombardier"
+#descr "During the Marignon occupation, merchant traders were instrumental in supplying the Ostlem with food and weapons from distant lands. In one of those lands, alchemists once developed the alchemical formula for a burning-powder that releases great cloud of flame and smoke when ignited, and a formula for it was found and brought back to the nation of Rotterland. Bombards, great metal barrels reinforced with earth magic, were constructed to contain the destructive powder and use it to fire a large projectile at enemies. While hugely expensive to forge, these devices are getting adopted at city walls and in the fleet both to serve as weapons and to demonstrate the power and advancement of the Rotterland navy. The weapon requires a trained bombardier to reload and operate. If the bombardier is killed but the cannon is not destroyed a new bombardier will be appointed after the battle."
 #size 3
 #gcost 10015
 #ap 4
@@ -64050,6 +64049,7 @@ Cannot be recruited until Break the Deadlock is cast."
 
 
 
+
 #newmonster 6523 -- Marid Sultan
 #copystats 3376
 #spr1 "juhera/maridsultan.tga"
@@ -73858,6 +73858,575 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #magicskill 7 3
 #end
 
+#newmonster 10008 -- Karkinos
+#spr1 "extrapretenders/karkinos.tga"
+#spr2 "extrapretenders/karkinos.tga"
+#name "Zodiac Crab"
+#descr "The Zodiac Crab is a monstrous crab born at the dawn of time, when monsters and giants roamed the world. In the great battle between Gods the crab nipped the Pantokrator on the toe to distract him. Enraged, the Pantokrator tossed the crab into the sky, where it was imprisoned for all eternity as a consellation. Now with the Pantokrator gone, the shackles are weakening and the Zodiac Crab can once more roam the oceans of the world. The Zodiac Crab has immense strength and is well protected by its thick shell. Its time amongst the stars has bestowed it with the ability to predict future events."
+#diseaseres 100
+#gcost 180
+#homerealm --9 -- Deeps
+#startdom 2
+#pathcost 60
+#moreluck 1
+#hp 290
+#prot 3
+#str 32
+#att 13
+#def 13
+#mr 18
+#mastersmith -1
+#researchbonus -8
+#woundfend 2
+#troglodyte
+#fixedname "Karkinos"
+#size 10
+#prec 8
+#enc 1
+#mapmove 2
+#ap 12
+#weapon 823  -- Golden Claw
+#weapon 823  -- Golden Claw
+#fear 5
+#amphibian
+#darkvision 50
+#goodleader
+#maxage 1000
+#startage 500
+#twiceborn 6644 -- Wight Beast
+#nobadevents 75
+#itemslots 3932160
+#clearmagic
+#magicskill 3 1
+#magicskill 4 2
+#end
+
+#newmonster 10009 -- Sea Nymph
+#copystats 1344
+#spr1 "extrapretenders/selg_thetisw.tga"
+#spr2 "extrapretenders/selg_thetisw.tga"
+#name "Sea Nymph"
+#descr "The Sea Nymph is an ancient shapeshifting spirit of the ocean. Below the waves she appears as a beautiful woman, but when above the waves she will take the form of a roaring flame. She was once forced to marry a mortal at the behest of the Pantokrator, however she escaped back to the sea after birthing a son. Furious, the Pantokrator banished her for all eternity. Now with the Pantokrator gone, the Sea Nymph is once again free to guide those who dwell in the ocean. She has realized the aspirations of the other Pretenders and will protect her subjects by donning the mantle of God itself."
+#diseaseres 100
+#gcost 230
+#homerealm 9 -- Deeps
+#startdom 3
+#pathcost 40
+#moremagic 1 
+#moreluck 0
+#hp 85
+#prot 3
+#str 20
+#att 11
+#def 12
+#mr 18
+#fixedname "Thetis"
+#giftofwater 500
+#bringeroffortune 0
+#coldres 5
+#fireres 5
+#expertleader
+#expertmagicleader
+#amphibian
+#landshape 10010
+#itemslots 991750
+#clearmagic
+#magicskill 0 1
+#magicskill 2 2
+#magicskill 7 2
+#end
+
+#newmonster 10010 -- Sea Nymph Landshape
+#copystats 3714
+#spr1 "extrapretenders/selg_thetisl.tga"
+#spr2 "extrapretenders/selg_thetisl.tga"
+#name "Sea Nymph"
+#descr "The Sea Nymph is an ancient shapeshifting spirit of the ocean. Below the waves she appears as a beautiful woman, but when above the waves she will take the form of a roaring flame. She was once forced to marry a mortal at the behest of the Pantokrator, however she escaped back to the sea after birthing a son. Furious, the Pantokrator banished her for all eternity. Now with the Pantokrator gone, the Sea Nymph is once again free to guide those who dwell in the ocean. She has realized the aspirations of the other Pretenders and will protect her subjects by donning the mantle of God itself."
+#diseaseres 100
+#gcost 230
+#startdom 3
+#moremagic 1 
+#moreluck 0
+#hp 85
+#prot 3
+#str 20
+#att 11
+#def 12
+#mr 18
+#fixedname "Thetis"
+#miscshape
+#uwdamage 0
+#secondshape 0
+#watershape 10009
+#giftofwater 500
+#female
+#spiritsight
+#expertleader
+#expertmagicleader
+#amphibian
+#itemslots 991750
+#clearmagic
+#magicskill 0 1
+#magicskill 2 2
+#magicskill 7 2
+#end
+
+#newmonster 10011 -- Shark King
+#spr1 "extrapretenders/selg_daquwaqa.tga"
+#spr2 "extrapretenders/selg_daquwaqa.tga"
+#name "Lord of Ferocity"
+#descr "The Lord of Ferocity is a divine being that takes the form of a muscled giant with the upper torso of a shark. Originally tasked by the Pantokrator with protecting the remote islands of the oceans, he became proud and greedy. In his hubris he began to accept the worship of men. The Pantokrator appeared in the form of a colossal octopus and humbled the Lord of Ferocity, trapping him underneath his island realm for all eternity as punishment. Now with the Pantokrator gone, the Lord of Ferocity is free to assert his will upon the world's oceans once again."
+#diseaseres 100
+#gcost 270
+#homerealm 9 -- Deeps
+#startdom 3
+#pathcost 40
+#moregrowth 1
+#hp 112
+#prot 8
+#str 25
+#att 14
+#def 12
+#mr 18
+#humanoid
+#fixedname "Dakuwaqa"
+#size 9
+#enc 3
+#prec 10
+#mapmove 22
+#ap 16
+#berserk 3
+#weapon 20  -- Bite
+#weapon 1545 -- Sharktooth Spear
+#weapon 530 -- Magic Net
+#maxage 2000
+#startage 1000
+#amphibian
+#darkvision 50
+#goodleader
+#itemslots 991750
+#clearmagic
+#magicskill 2 1
+#magicskill 6 2
+#magicskill 8 2
+#end
+
+#newmonster 10012 -- Charybdis
+#copystats 1342
+#spr1 "extrapretenders/selg_charybdis.tga"
+#spr2 "extrapretenders/selg_charybdis.tga"
+#name "Titan of Maelstroms"
+#descr "The Titan of Maelstroms is a giant of divine heritage. She has tremendous power over the great storms and whirlpools of the shallow oceans and straits. Renowned for her voracious appetite, the Titan of Maelstroms once stole and feasted upon a herd of oxen sacred to the Pantokrator. Furious, the Pantokrator imprisoned her on the ocean floor for eternity, forcing her to drink sea water as her only sustenance. Now that the Pantokrator is gone, the Titan of Maelstroms is finally free to satiate her hunger and claim the world as her tempestuous dominion."
+#diseaseres 100
+#gcost 280
+#homerealm 9 -- Deeps
+#startdom 3
+#pathcost 40
+#moreorder -1
+#hp 98
+#prot 3
+#str 22
+#att 12
+#def 11
+#mr 18
+#fixedname "Charybdis"
+#size 9
+#enc 2
+#prec 12
+#mapmove 22
+#ap 16
+#maxage 2000
+#startage 1000
+#appetite 40
+#goodleader
+#goodmagicleader
+#female
+#amphibian
+#darkvision 50
+#batstartsum1 8627 -- Whirlpool
+#itemslots 991750
+#clearmagic
+#magicskill 2 4
+#magicskill 7 1
+#end
+
+#newmonster 10013 -- Ceiran
+#copystats 2440
+#copyspr 6510 -- Dandan
+#name "Great Thalassid"
+#descr "The Great Thalassid is an ancient and cunning sea creature born at the dawn of time, when monsters and giants roamed the world. Over the millennia its kin were hunted to extinction, forcing it to hide in a cold corner of the world's oceans. With the Pantokrator gone, the creature has finally emerged to seek vengeance upon its ancient foes. The Great Thallasid has power over misdirection and can turn into a silver fish to pass undetected through hostile waters. It is surrounded by a shroud of glamour that will confuse attackers."
+#diseaseres 100
+#gcost 160
+#homerealm --9 -- Deeps
+#startdom 2
+#pathcost 60
+#moreluck 1
+#hp 230
+#prot 20
+#str 28
+#att 13
+#def 15
+#mr 18
+#mastersmith -1
+#researchbonus -8
+#woundfend 2
+#quadruped
+#fixedname "Cirein-cròin"
+#size 9
+#prec 12
+#enc 1
+#mapmove 22
+#ap 22
+#weapon 821  -- Golden Bite
+#weapon 532  -- Tail Sweep
+#fear 5
+#coldres 10
+#darkvision 50
+#goodleader
+#female
+#aquatic
+#maxage 1000
+#startage 500
+#twiceborn 6644 -- Wight Beast
+#onebattlespell "Shroud of Bewilderment"
+#shapechange 10014 -- Silver Fish
+#itemslots 3932160
+#clearmagic
+#magicskill 7 3
+#end
+
+#newmonster 10014 -- Ceiran Silverfish
+#copystats 2858
+#copyspr 2858 -- Large Fish
+#name "Silver Fish"
+#descr "The Great Thalassid is an ancient and cunning sea creature born at the dawn of time, when monsters and giants roamed the world. Over the millennia its kin were hunted to extinction, forcing it to hide in a cold corner of the world's oceans. With the Pantokrator gone, the creature has finally emerged to seek vengeance upon its ancient foes. The Great Thallasid has power over misdirection and can turn into a silver fish to pass undetected through hostile waters. It is surrounded by a shroud of glamour that will confuse attackers."
+#diseaseres 100
+#gcost 160
+#startdom 2
+#pathcost 60
+#moreluck 1
+#hp 8
+#prot 3
+#str 6
+#att 13
+#def 13
+#mr 18
+#mastersmith -1
+#researchbonus -8
+#woundfend 2
+#shapechange 10013 -- Ceiran
+#fixedname "Cirein-cròin"
+#maxage 1000
+#startage 500
+#onebattlespell "Shroud of Bewilderment"
+#darkvision 50
+#goodleader
+#female
+#itemslots 3932160
+#clearmagic
+#magicskill 7 3
+#end
+
+#newmonster 10015 -- Deep Sea Fissure
+#copystats 3876
+#spr1 "extrapretenders/fissure.tga"
+#spr2 "extrapretenders/fissure.tga"
+#name "Deep Sea Fissure"
+#descr "The Deep Sea Fissure is a powerful spirit that inhabits a volcanic fissure on the ocean floor. The spirit cannot leave the fissure, but it occasionally lets its will be known by spewing forth boiling water. It can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the fissure would be almost impossible to destroy, even though it cannot strike back. The Deep Sea Fissure is completely immobile and cannot move even by magic."
+#diseaseres 100
+#gcost 110
+#homerealm 9 -- Deeps
+#startdom 4
+#pathcost 40
+#moreprod 1
+#hp 200
+#prot 3
+#str 15
+#att 5
+#def 0
+#mr 18
+#mastersmith 0
+#aquatic
+#heat 0
+#uwheat 14
+#fireres 60
+#itemslots 1835008
+#clearmagic
+#magicskill 0 1
+#magicskill 3 2
+#end
+
+#newmonster 10016 -- Ulupoka
+#spr1 "extrapretenders/laod_ulupoka.tga"
+#spr2 "extrapretenders/laod_ulupoka.tga"
+#name "Lord of Stagnant Waters"
+#descr "The Lord of Stagnant Waters is a a powerful and malevolent being who brings disease, death, mischief, and misfortune. During the great battle of the gods, he was beheaded by the Pantokrator and imprisoned at the bottom of the ocean for all eternity. Now that the Pantokrator is gone, the Lord of Stagnant Waters has emerged once again in search of his head, spreading disease and death in his wake."
+#diseaseres 100
+#gcost 250
+#homerealm 9 -- Deeps
+#startdom 3
+#pathcost 40
+#moregrowth -1 
+#moreluck -1
+#hp 115
+#prot 5
+#str 26
+#att 15
+#def 10
+#mr 18
+#size 10
+#enc 2
+#prec 8
+#troglodyte
+#mapmove 2
+#fear 5
+#ap 16
+#diseasecloud 4
+#autodisgrinder 2
+#leper 5
+#maxage 2000
+#startage 1000
+#neednoteat
+#goodleader
+#expertundeadleader
+#amphibian
+#spiritsight
+#blind
+#weapon 563 -- Spirit Club
+#fixedname "Ulupoka"
+#itemslots 2032134
+#clearmagic
+#magicskill 2 1
+#magicskill 5 2
+#magicskill 8 2
+#end
+
+#newmonster 10017 -- Bacobaco
+#copystats 3932
+#spr1 "blue_bantaytubig/bacobaco1.png"
+#spr2 "blue_bantaytubig/bacobaco2.png"
+#name "Bacobaco"
+#descr "The Bacobaco is a monstrous, fire breathing turtle born at the dawn of time, when monsters and giants roamded the world. He was once chased to the ends of the earth by spirit hunters, and in his pursuit he fled to a mountain where he dug a great hole in its summit, showering the land with rock, mud, dust, and fire for three days, howling so loudly the earth shook. There he has remained, though with the Pantokrator's disappearance he has begun to stir again."
+#diseaseres 100
+#gcost 220
+#startdom 2
+#pathcost 60
+#moreprod -1 
+#moregrowth 1 
+#moreorder 0
+#hp 290
+#prot 22
+#str 32
+#att 12
+#def 7
+#mr 18
+#mastersmith -1
+#researchbonus -8
+#woundfend 4
+#trample
+#uwheat 10
+#enc 1
+#itemslots 3932160
+#clearmagic
+#magicskill 0 2
+#magicskill 3 1
+#end
+
+#newmonster 10018 -- Asuang
+#spr1 "blue_bantaytubig/asuang.png"
+#spr2 "blue_bantaytubig/asuang.png"
+#name "Diwata of Darkness"
+#descr "The Diwata of Darkness is a giant of divine heritage and patron to many of the world's vampires, werewolves, witches, and ghouls alike. His brother, the Diwata of the Volcano, holds power over others through the flames he wields. The Diwata of Darkness, having no control over others, begged his brother for some of this flame, but his brother believed he only wanted the fire to gain the favor of the people and so the two argued for centuries. One day, the Diwata of Darkness stole the flame by turning invisible and hiding it within a coconut, but he could not control the flame and set fire to entire islands until his brother took his flame back and begged the Pantokrator to put out the fire out with rain. The Pantokrator was angered by his misdeeds and so the Diwata of Darkness was imprisoned for eternity. Now the shackles are weakening and he may once more seek the flames of control denied to him. He still holds onto a portion of the flame but it has become corrupt in his possession."
+#diseaseres 100
+#gcost 270
+#startdom 3
+#pathcost 40
+#moregrowth -1 
+#moremagic 1
+#hp 90
+#prot 3
+#str 24
+#att 13
+#def 13
+#mr 18
+#humanoid
+#fixedname "Asuang"
+#size 9
+#enc 2
+#demon
+#prec 10
+#mapmove 22
+#ap 16
+#weapon 200 -- Bane Burst
+#weapon 92 -- Fist
+#maxage 2000
+#startage 1000
+#amphibian
+#goodleader
+#expertundeadleader
+#invisible
+#itemslots 991750
+#clearmagic
+#magicskill 0 1
+#magicskill 5 2
+#magicskill 8 2
+#end
+
+#newmonster 10019 -- Gugurang
+#spr1 "blue_bantaytubig/gugurang1.png"
+#spr2 "blue_bantaytubig/gugurang2.png"
+#name "Diwata of the Volcano"
+#descr "The Diwata of the Volcano is a giant of divine heritage and wielder of volcanic fires. He is a protector of his people and provides great boons, however if displeased he can make volcanoes erupt in his anger. His brother, the Diwata of Darkness, once begged him for this power, but rejected the request believing he only wanted the fire to gain the favor of the people, and so the two argued for centuries. One day his brother stole the flame and hid it in a coconut, but could not control it and set fire to entire islands. The Diwata of the Volcano followed the destruction to his brother and stole back his flame, and asked the Pantokrator to put the fires out with rain. The Pantokrator did so, but also imprisoned the Diwata of the Volcano for eternity for failing to keep the flame safe. Now the prison is crumbling and now he may protect his people once more."
+#diseaseres 100
+#gcost 280
+#startdom 3
+#pathcost 40
+#moreprod 1 
+#moreorder 1
+#hp 98
+#prot 3
+#str 26
+#att 14
+#def 12
+#mr 18
+#humanoid
+#fixedname "Gugurang"
+#size 9
+#enc 2
+#prec 10
+#mapmove 22
+#ap 16
+#fireres 15
+#weapon 92 -- Fist
+#weapon 198 -- Flame Burst
+#maxage 2000
+#startage 1000
+#amphibian
+#goodleader
+#goodmagicleader
+#itemslots 991750
+#clearmagic
+#magicskill 0 3
+#magicskill 3 1
+#magicskill 6 1
+#end
+
+#newmonster 10020 -- Aussie parrot
+#copystats 2777
+#spr1 "vanilla/demonmacawaus1.png"
+#spr2 "vanilla/demonmacawaus2.png"
+#name "Demon Macaw"
+#descr "testest"
+#diseaseres 100
+#gcost 180
+#startdom 2
+#pathcost 60
+#hp 102
+#prot 16
+#str 24
+#att 14
+#def 17
+#mr 18
+#mastersmith -1
+#researchbonus -8
+#woundfend 2
+#twiceborn 1388  -- Ziz
+#unsurr 5
+#clearweapons
+#weapon 826  -- talons
+#weapon 825 -- beak
+#weapon 196  -- Killing light
+#enc 1
+#itemslots 3932160
+#clearmagic
+#magicskill 0 2
+#magicskill 7 1
+#end
+
+#newmonster 10021 -- Aussie Lord of the Sun
+#copystats 957
+#spr1 "vanilla/lordofthedesertsunaus.png"
+#spr2 "vanilla/lordofthedesertsunaus.png"
+#name "Lord of the Desert Sun"
+#descr "testest"
+#diseaseres 100
+#gcost 280
+#startdom 3
+#pathcost 40
+#moreheat 1
+#hp 90
+#prot 3
+#str 24
+#att 14
+#def 11
+#mr 18
+#heat 10
+#itemslots 991750
+#clearmagic
+#magicskill 0 3
+#magicskill 6 1
+#magicskill 7 1
+#end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -80573,8 +81142,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #mr 18
 #clearspec
 #slothpower 1
-#sleepaura 4
 #powerofdeath 3
+#sleepaura 4
 #pooramphibian
 #pierceres
 #magicbeing
@@ -80657,7 +81226,18 @@ He is accompanied by the souls of his subjects that have followed him into the w
 
 
 
+
 -- ENDUNITS
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -105827,14 +106407,16 @@ Priests: Stealthy"
 #templepic 9
 #coastnation
 #tradecoast 10
+#seatrace
 #addreccom 7940
 #addreccom 7944
 #addreccom 7941
 #addreccom 7945
 #addreccom 7946
 #addreccom 7947
+#addreccom 7948
 #coastfortcom 7942 -- Schipper
-#coastfortcom 9095 -- cannon
+--#coastfortcom 9095 -- cannon
 #addrecunit 7951
 #addrecunit 7952
 #addrecunit 7953
@@ -106154,7 +106736,7 @@ Priests: Weak. Most mages are priests and some are Heretics."
 #addgod 3651 -- God Spider
 #addgod 8405 -- Neter of the Rivers
 
-#addgod 957 -- Lord of the Desert Sun
+#addgod 10021 -- Lord of the Desert Sun
 #addgod 657 -- Monolith
 #addgod 2234 -- Irminsul
 #addgod 2447 -- Idol of Men
@@ -106163,7 +106745,7 @@ Priests: Weak. Most mages are priests and some are Heretics."
 #addgod 606 -- Great Mother
 --#addgod 180 -- Demilich
 #addgod 1384 -- Solar Disc
-#addgod 2777 -- Demon Macaw
+#addgod 10020 -- Demon Macaw
 #addgod 655 -- Scorpion King
 #addgod 8257 -- Uluru
 #addgod 8256 -- Great Ancestor
@@ -106183,6 +106765,10 @@ Priests: Weak. Most mages are priests and some are Heretics."
 #addgod 10003 -- mystic deep
 #addgod 10005 -- bountiful white
 #addgod 10006 -- maggot moon
+
+#addgod 10017 -- Bacobaco
+#addgod 10018 -- Asuang
+#addgod 10019 -- Gugurang
 
 #blessbonus 3
 #multihero1 6700 -- Dreamhunter
@@ -107553,6 +108139,9 @@ Priests: Average"
 #addgod 10003 -- mystic deep
 #addgod 10005 -- bountiful white
 #addgod 10006 -- maggot moon
+#addgod 10017 -- Bacobaco
+#addgod 10018 -- Asuang
+#addgod 10019 -- Gugurang
 
 #templepic 1
 
