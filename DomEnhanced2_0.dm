@@ -8337,11 +8337,13 @@
 #name "Horseman Defender"
 #spr1 "goldenhorde/horseman.tga"
 #spr2 "goldenhorde/horseman2.tga"
+#unmountedspr1 "goldenhorde/un_horseman.tga"
+#unmountedspr2 "goldenhorde/un_horseman2.tga"
 #descr "The warriors of the steppes are excellent horsemen, trained from birth in the saddle. Warriors from local tribes will often ride to the defence of the province should it come under attack. A Horseman Defender will not cost upkeep, however they cannot leave their home province."
-#gcost 5
-#rpcost 5
+#gcost 10
+#rpcost 3
 #rcost -12
-#addupkeep -5
+#addupkeep -10
 #mapmove 0
 #ap 20
 #prec 10
@@ -8349,6 +8351,8 @@
 #armor 119  -- Reinforced Leather Cap
 #armor 2  -- Shield
 #nametype 177  -- Mongolian Male
+#drawsize 0
+#mountmnr 9114
 #end
 
 #newmonster 6651
@@ -8358,15 +8362,15 @@
 #name "Novice Warrior"
 #spr1 "goldenhorde/novice.tga"
 #spr2 "goldenhorde/novice2.tga"
+#unmountedspr1 "goldenhorde/un_novice.tga"
+#unmountedspr2 "goldenhorde/un_novice2.tga"
 #descr "The warriors of the steppes are excellent horsemen, trained from birth in the saddle. Each warrior maintains three or four horses, providing fresh mounts during a march. The horses of Tartary excel in endurance and can run for long distances, although they are somewhat slower than those of other nations in a sprint. Novice warriors have not seen many battles and are excitable and difficult to control. After a few battles they will join the ranks of the horseman warriors."
-#gcost 16
-#rpcost 17
+#gcost 10006
+#rpcost 6
 #hp 10
 #att 10
 #def 10
 #mor 10
-#mapmove 24
-#ap 20
 #undisciplined
 #xpshape 25
 #weapon 10  -- Falchion
@@ -8374,6 +8378,8 @@
 #armor 119  -- Reinforced Leather Cap
 #armor 2  -- Shield
 #nametype 177  -- Mongolian Male
+#drawsize 0
+#mountmnr 9115
 #end
 
 #newmonster 6652
@@ -8382,15 +8388,17 @@
 #name "Horse Warrior"
 #spr1 "goldenhorde/horseman.tga"
 #spr2 "goldenhorde/horseman2.tga"
+#unmountedspr1 "goldenhorde/un_horseman.tga"
+#unmountedspr2 "goldenhorde/un_horseman2.tga"
 #descr "The warriors of the steppes are excellent horsemen, trained from birth in the saddle. Each warrior maintains three or four horses, providing fresh mounts during a march. The horses of Tartary excel in endurance and can run for long distances, although they are somewhat slower than those of other nations in a sprint. The warriors of Tartary primarily use powerful curved bows, swords and lances, softening the enemy with hails of bowfire before finishing in a devastating charge."
-#mapmove 24
-#rpcost 20
-#ap 20
+--#rpcost 20
 #prec 10
 #armor 518 -- Lamellar Armor
 #armor 119  -- Reinforced Leather Cap
 #armor 2  -- Shield
 #nametype 177  -- Mongolian Male
+#drawsize 0
+#mountmnr 3574
 #end
 
 #newmonster 6653
@@ -8399,16 +8407,17 @@
 #name "Heavy Horse Warrior"
 #spr1 "goldenhorde/hvyhorseman.tga"
 #spr2 "goldenhorde/hvyhorseman2.tga"
+#unmountedspr1 "goldenhorde/un_hvyhorseman.tga"
+#unmountedspr2 "goldenhorde/un_hvyhorseman2.tga"
 #descr "The warriors of the steppes are excellent horsemen, trained from birth in the saddle. Each warrior maintains three or four horses, providing fresh mounts during a march. The horses of Tartary excel in endurance and can run for long distances, although they are somewhat slower than those of other nations in a sprint. The warriors of Tartary primarily use powerful curved bows, swords and lances, softening the enemy with hails of bowfire before finishing in a devastating charge."
-#mapmove 24
-#rpcost 25
-#ap 20
+--#rpcost 25
 #prec 10
-#enc 5
 #armor 136  -- Bronze Scale
 #armor 135  -- Bronze Cap
 #armor 2  -- Shield
 #nametype 177  -- Mongolian Male
+#drawsize 0
+#mountmnr 3575
 #end
 
 #newmonster 6654
@@ -8418,15 +8427,16 @@
 #name "Pazyryk Horse Warrior"
 #spr1 "goldenhorde/tatthorse.tga"
 #spr2 "goldenhorde/tatthorse2.tga"
+#unmountedspr1 "goldenhorde/un_tatthorse.tga"
+#unmountedspr2 "goldenhorde/un_tatthorse2.tga"
 #descr "In Tartary the secrets of ritual tattooing have been passed down from the Sauromatian tribes. In most tribes only the most noble members are tattooed, however in the Pazyryk tribe all warriors receive ritual tattoos upon coming of age. The number of tattoos represent standing in society and more prominent warriors are covered in dark etchings. These tattoos can be awoken by a Shaman to provide protection and speed. These warriors are skilled in night riding and often scout ahead of the main armies of Tartary. Pazyryk can only be recruited in a province containing a Böö."
-#gcost 25
-#rcost 1
-#rpcost 27
+--#gcost 25
+--#rcost 1
+--#rpcost 27
 #str 11
-#mapmove 24
-#ap 20
 #prec 10
 #horsetattoo 4
+#def 12
 #stealthy 0
 #monpresentrec 6655
 #weapon 357  -- Light Lance
@@ -8434,6 +8444,8 @@
 #armor 119  -- Reinforced Leather Cap
 #armor 2  -- Shield
 #nametype 177  -- Mongolian Male
+#drawsize 0
+#mountmnr 9075
 #end
 
 #newmonster 6656
@@ -8446,9 +8458,7 @@
 #unmountedspr2 "goldenhorde/un_kheshig2.tga"
 #descr "The Kheshig are the elite of Tartary. Armed with bows and lances, they are sworn to protect the Khans at all costs. Members of the Kheshig outrank almost any other officers in the Empire. They are renowned for their hardiness and can travel for a full month living only on the fermented milk and blood of their sturdy steeds. Kheshig can only be recruited in a province containing a Khan."
 --#rpcost 30
-#gcost 25
-#rcost 1
-#enc 4
+#gcost 10025
 #neednoteat
 #bodyguard 4
 #monpresentrec -1007  -- Khans
@@ -8457,6 +8467,8 @@
 #armor 119  -- Reinforced Leather Cap
 #armor 2  -- Shield
 #nametype 177  -- Mongolian Male
+#drawsize 0
+#mountmnr 3576
 #end
 
 #newmonster 6658
@@ -8494,20 +8506,21 @@
 #name "Cataphract"
 #spr1 "goldenhorde/cataphract.tga"
 #spr2 "goldenhorde/cataphract2.tga"
+#unmountedspr1 "goldenhorde/un_cataphract.tga"
+#unmountedspr2 "goldenhorde/un_cataphract2.tga"
 #descr "The warriors of the steppes are excellent horsemen, however they are lightly armed and armored by necessity. When heavier forces are required cataphracts are equipped using the resources of nearby settlements. These armored warriors are unsuited for the horse archer tactics favoured by the steppes tribes, however they bring a devastating charge that can shatter an enemy line."
-#mapmove 24
-#ap 20
 #prec 10
-#enc 5
-#rcost 15
+--#rcost 15
 #str 11
-#gcost 25
+#gcost 10015
 #weapon 4  -- Lance
 #weapon 10  -- Falchion
 #armor 17  -- Full Scale
 #armor 118  -- Half Helmet
 #armor 2  -- Shield
 #nametype 177  -- Mongolian Male
+#drawsize 0
+#mountmnr 3576
 #end
 
 #newmonster 6661
@@ -8517,11 +8530,11 @@
 #name "Noyan"
 #spr1 "goldenhorde/noyan.tga"
 #spr2 "goldenhorde/noyan2.tga"
+#unmountedspr1 "goldenhorde/un_noyan.tga"
+#unmountedspr2 "goldenhorde/un_noyan2.tga"
 #descr "A Noyan is a tribal ruler and military commander. Noyan rule over several tribes and carry out the orders of the Khans in times of war. Several tribes practice head binding or scarification to mark out the noble families, and in most tribes these families are ritually tattooed. The number and prominence of tattoos represent standing in society and often relate to the deeds of their owner. These tattoos can be awoken by a Shaman to provide protection and speed."
-#gcost 10020
+#gcost 10010
 #mor 12
-#mapmove 24
-#ap 20
 #prec 10
 #horsetattoo 2
 #goodleader
@@ -8532,6 +8545,8 @@
 #armor 2  -- Shield
 #prophetshape 6657 -- Khan
 #nametype 177  -- Mongolian Male
+#drawsize 0
+#mountmnr 9076
 #end
 
 #newmonster 6657
@@ -8540,10 +8555,10 @@
 #name "Khan"
 #spr1 "goldenhorde/tkhan.tga"
 #spr2 "goldenhorde/tkhan2.tga"
+#unmountedspr1 "goldenhorde/un_tkhan.tga"
+#unmountedspr2 "goldenhorde/un_tkhan2.tga"
 #descr "The Khans are the leaders of the steppes tribes and are skilled horsemen and warriors. Several tribes practice head binding or scarification to mark out the noble families, and in most tribes these families are ritually tattooed. These tattoos can be awoken by a Shaman to provide protection and speed. The Khans often fight side by side with the warriors, their bravery and skill inspiring the troops to heroic deeds. Barbarian horsemen will appear each month to serve their Khan."
 #gcost 10030
-#mapmove 24
-#ap 20
 #prec 10
 #horsetattoo 3
 #userestricteditem 1
@@ -8554,6 +8569,8 @@
 #summon1 6652 -- Horseman
 #montag 1007  -- Khans
 #nametype 177  -- Mongolian Male
+#drawsize 0
+#mountmnr 9077
 #end
 
 #newmonster 6655
@@ -8563,15 +8580,14 @@
 #name "Böö"
 #spr1 "goldenhorde/boo.tga"
 #spr2 "goldenhorde/boo2.tga"
+#unmountedspr1 "goldenhorde/un_boo.tga"
+#unmountedspr2 "goldenhorde/un_boo2.tga"
 #descr "A Böö is a tribal shaman of the steppes that reveres the mountains and the Eternal Sky. Böö are chosen by the spirits who will strike the potential shaman with a bolt of lightning. A warrior that survives such a lightning strike has been marked and will seek out an existing shaman for training. Through their rituals they keep the steppes people in good standing with the spirits of the land, which is of utmost importance to the fortune of the tribes. Böö are skilled in dealing with spirits of the air and the mountains using their spirit drum. Böö perform ritual tattooing and are often covered in dark etchings."
-#gcost 10020
+#gcost 10010
 #rpcost 2
 #mor 14
 #mr 13
-#mapmove 24
-#ap 20
 #prec 10
-#enc 3
 #horsetattoo 2
 #pillagebonus 0
 #poorleader
@@ -8583,6 +8599,8 @@
 #armor 518 -- Lamellar Armor
 #armor 119  -- Reinforced Leather Cap
 #nametype 177  -- Mongolian Male
+#drawsize 0
+#mountmnr 9075
 #end
 
 #newmonster 6662
@@ -8592,15 +8610,14 @@
 #name "Udgan"
 #spr1 "goldenhorde/udgan.tga"
 #spr2 "goldenhorde/udgan2.tga"
+#unmountedspr1 "goldenhorde/un_udgan.tga"
+#unmountedspr2 "goldenhorde/un_udgan2.tga"
 #descr "An Udgan is a tribal priestess of the steppes that speaks with the spirits of the ancestors. They ride specially selected white horses and wear brightly coloured robes to attract the attention of the spirits. Udgan are chosen by the ancestors at birth and an extra soul called an Udha enters them. This soul helps them gather other spirit helpers that are imbued in their spirit drum. Without these spirits the rituals and other spells used by the Udgan are dangerous and foolish to attempt. As priestesses they perform the rituals of death and ensure the ancestors are properly revered. Without the rites of the Udgan the spirits may become restless and visit misfortune and plagues upon those that have neglected them. For this reason the Udgan are highly respected even by the Khans."
-#gcost 10020
+#gcost 10010
 #rpcost 2
 #mor 13
 #mr 14
-#mapmove 24
-#ap 20
 #prec 10
-#enc 3
 #poorleader
 #female
 #holy
@@ -8612,6 +8629,8 @@
 #weapon 7  -- Quarterstaff
 #armor 10  -- Leather Hauberk
 #nametype 181  -- Mongolian Female
+#drawsize 0
+#mountmnr 3573
 #end
 
 #newmonster 6663
@@ -8621,15 +8640,14 @@
 #name "Jigari"
 #spr1 "goldenhorde/jigari.tga"
 #spr2 "goldenhorde/jigari2.tga"
+#unmountedspr1 "goldenhorde/un_jigari.tga"
+#unmountedspr2 "goldenhorde/un_jigari2.tga"
 #descr "The most powerful Böö eventually gain great insights into the world of the spirits. This takes many years of training and finally a near-death experience to awaken the power of the shaman. These Böö are known as the Jigari and have great skill in calling the spirits of the skies and the earth. They wear the skin of a great steppe wolf and its presence aids them in their work and grants them great cunning. Like all shamans of the steppes they carry a spirit drum imbued with the souls of their ancestors."
-#gcost 10020
-#rpcost 4
+#gcost 10010
+#rpcost 3
 #mor 15
 #mr 15
-#mapmove 24
-#ap 20
 #prec 10
-#enc 3
 #horsetattoo 4
 #goodleader
 #spiritsight
@@ -8646,6 +8664,8 @@
 #armor 119  -- Reinforced Leather Cap
 #nametype 177  -- Mongolian Male
 #slowrec
+#drawsize 0
+#mountmnr 9075
 #end
 
 #newmonster 6664
@@ -8655,15 +8675,14 @@
 #name "Abjiya"
 #spr1 "goldenhorde/abjiya.tga"
 #spr2 "goldenhorde/abjiya2.tga"
+#unmountedspr1 "goldenhorde/un_abjiya.tga"
+#unmountedspr2 "goldenhorde/un_abjiya2.tga"
 #descr "An Abjiya is a high priestess of the steppes tribes. Each rides a great stag, the creature of the underworld that takes spirits to their rest. They are mediators between the worlds of the living and of the dead, and have great skill in dealing with spirits of all kinds. Abjiyas have great standing in the Empire of Tartary and serve as advisors to the Khans. All treaties of war, peace and alliance must be ratified by the ceremonies of the Abjiyas."
-#gcost 10020
-#rpcost 4
+#gcost 10010
+#rpcost 3
 #mor 14
 #mr 16
-#mapmove 24
-#ap 20
 #prec 10
-#enc 3
 #poorleader
 #female
 #holy
@@ -8678,6 +8697,8 @@
 #armor 119  -- Reinforced Leather Cap
 #nametype 181  -- Mongolian Female
 #slowrec
+#drawsize 0
+#mountmnr 9111
 #end
 
 #newmonster 6665
@@ -8686,15 +8707,17 @@
 #name "Scout"
 #spr1 "goldenhorde/horseman.tga"
 #spr2 "goldenhorde/horseman2.tga"
+#unmountedspr1 "goldenhorde/un_horseman.tga"
+#unmountedspr2 "goldenhorde/un_horseman2.tga"
 #descr "The Khans use mounted outriders to scout enemy locations. These eagle-eyed warriors can travel with terrific speed on their hardy steeds."
-#mapmove 24
-#ap 20
 #prec 10
 #mountainsurvival
 #armor 518 -- Lamellar Armor
 #armor 119  -- Reinforced Leather Cap
 #armor 2  -- Shield
 #nametype 177  -- Mongolian Male
+#drawsize 0
+#mountmnr 3574
 #end
 
 #newmonster 6666
@@ -8703,14 +8726,13 @@
 #name "Darkhad"
 #spr1 "goldenhorde/darkhad.tga"
 #spr2 "goldenhorde/darkhad2.tga"
+#unmountedspr1 "goldenhorde/un_darkhad.tga"
+#unmountedspr2 "goldenhorde/un_darkhad2.tga"
 #descr "The Darkhad are a group of elite sacred warriors tasked with guarding the souls of the Khans after death. Tradition dictates that the body of a Khan must be buried in the Ikh Khorig, a secluded area sacred to the Tatars. The Darkhad live here, guarding this area fiercely against intrusion by all others and thus protecting the resting place of the Khans. In battle they ride specially bred horses wearing headgear fashioned to mimic the stag, the creature of the underworld that takes spirits to their rest. Several tribes practice head binding or scarification to mark out the noble families, and in most tribes these families are ritually tattooed. The number and prominence of tattoos represent standing in society and often relate to the deeds of their owner. These tattoos can be awoken by a Shaman to provide protection and speed. The Darkhad and their task are sacred to the Tatars."
 #gcost 65
-#rcost 10
-#rpcost 40
-#mapmove 24
-#ap 20
+--#rcost 10
+#rpcost 36
 #prec 10
-#enc 4
 #mr 14
 #mor 15
 #str 12
@@ -8724,6 +8746,8 @@
 #armor 118  -- Half Helmet
 #armor 2  -- Shield
 #nametype 177  -- Mongolian Male
+#drawsize 0
+#mountmnr 9112
 #end
 
 #newmonster 6667
@@ -8758,12 +8782,14 @@
 #name "Wind Warrior"
 #spr1 "goldenhorde/windhorserider.tga"
 #spr2 "goldenhorde/windhorserider2.tga"
-#descr "A Wind Warrior is the burning soul of a great ancestor warrior that rides a Wind Horse, a magical winged horse symbolising the freedom of the human spirit. They are rarely seen riding across the skies or on high mountaintops unless summoned by the shamans. Wind Warriors are sacred to the people of Tartary and they are only called upon in times of great need. If the Ancestor rider is banished back to the nether realms the Wind Horse will remain. Wind Horses are symbols of good fortune and lucky events are more likely in a province where they dwell."
+#unmountedspr1 "goldenhorde/un_windhorserider.tga"
+#unmountedspr2 "goldenhorde/un_windhorserider2.tga"
+#descr "A Wind Warrior is the burning soul of a great ancestor warrior that rides a Wind Horse, a magical winged horse symbolising the freedom of the human spirit. They are rarely seen riding across the skies or on high mountaintops unless summoned by the shamans. Wind Warriors are sacred to the people of Tartary and they are only called upon in times of great need. Wind Horses are symbols of good fortune and lucky events are more likely in a province where they dwell."
 #gcost 0
 #rcost 0
-#mapmove 28
-#ap 20
-#size 5
+#mapmove 18
+#ap 15
+#size 3
 #hp 14
 #mr 14
 #mor 15
@@ -8783,10 +8809,15 @@
 #fireres 15
 #poisonres 25
 #fireshield 8
+#spiritform
 #weapon 475  -- Golden Lance
+#armor 544 -- Spectral Mail
+#armor 549 -- Spectral Helmet
 #armor 156  -- Spectral Shield
-#secondshape 6667 -- Wind Horse
 #nametype 177  -- Mongolian Male
+#mountmnr 6667 -- Wind Horse
+#drawsize 0
+#mountmnr 6667
 #end
 
 #newmonster 6669
@@ -8886,7 +8917,7 @@
 #name "Barometz"
 #spr1 "goldenhorde/veglamb.tga"
 #spr2 "goldenhorde/veglamb2.tga"
-#descr "The Barometz or Vegetable Lamb is a strange plant that grows full sized sheep as its fruit. These plantlike sheep are connected to the ground by a stalk and graze the area around the plant. The plant can be harvested and the sheep-fruit is delicious when cooked and eaten. Each Barometz plant will provide a fruit each month, feeding up to 10 soldiers, however they cannot leave the province."
+#descr "The Barometz or Vegetable Lamb is a strange plant that grows full sized sheep as its fruit. These plantlike sheep are connected to the ground by a stalk and graze the area around the plant. The plant can be harvested and the sheep-fruit is delicious when cooked and eaten, and their wool can be used in clothing. Each Barometz plant will provide a fruit each month, feeding up to 10 soldiers, however they cannot leave the province."
 #immobile
 #size 6
 #prot 12
@@ -8895,6 +8926,7 @@
 #mapmove 0
 #plant
 #supplybonus 10
+#resources 2
 #end
 
 #newmonster 6675
@@ -8904,11 +8936,11 @@
 #name "Khagan"
 #spr1 "goldenhorde/temujin.tga"
 #spr2 "goldenhorde/temujin2.tga"
+#unmountedspr1 "goldenhorde/un_temujin.tga"
+#unmountedspr2 "goldenhorde/un_temujin2.tga"
 #descr "Temujin is the Khagan or Great Khan of the Empire of Tartary. He has recently unified the tribes by defeating several clan leaders in open battle and is now the undisputed ruler of the great rolling plains of his homeland. Temujin is a renowned tactician and can inspire his troops to great acts of heroism. He is a devout follower of the Awakening God and is revered by his troops as the living embodiment of God. He is always accompanied by an honour guard of Kheshig. In addition to his battlefield prowess he will organise local troops, and has learned much of siege warfare in his campaigns. Now the local tribes are subdued his sights are set on the nearby lands of T'ien Ch'i and he plans to expand the Empire further."
 #fixedname "Temujin"
 #gcost 0
-#mapmove 24
-#ap 20
 #prec 10
 #horsetattoo 3
 #mr 13
@@ -8927,6 +8959,9 @@
 #armor 17  -- Full Scale
 #armor 119  -- Reinforced Leather Cap
 #armor 2  -- Shield
+#weapon 10 -- Falchion
+#drawsize 0
+#mountmnr 9078
 #end
 
 #newmonster 6676
@@ -8936,10 +8971,11 @@
 #name "Baghatur"
 #spr1 "goldenhorde/baghatur.tga"
 #spr2 "goldenhorde/baghatur2.tga"
+#unmountedspr1 "goldenhorde/un_baghatur.tga"
+#unmountedspr2 "goldenhorde/un_baghatur2.tga"
 #descr "A Baghatur is a hero of Tartary, known for their amazing feats of strength and bravery. Riding their hardy steeds they exemplify the warrior spirit of the open steppe. Occasionally they will have some latent magical talent that aids them in their endeavours. Tales are told across Tartary of the deeds of the Baghaturs and the monsters they have slain. Now one has joined in the battle for ascension and has come to serve the Awakening God."
 #mountedhumanoid
 #gcost 0
-#mapmove 24
 #goodleader
 #inspirational 1
 #hp 20
@@ -8948,7 +8984,6 @@
 #mr 14
 #mor 16
 #enc 3
-#ap 20
 #prec 14
 #stealthy 0
 #horsetattoo 3
@@ -8963,6 +8998,8 @@
 #armor 518 -- Lamellar Armor
 #armor 2  -- Shield
 #nametype 177  -- Mongolian Male
+#drawsize 0
+#mountmnr 9113
 #end
 
 #newmonster 6677
@@ -8972,11 +9009,12 @@
 #name "Hero King"
 #spr1 "goldenhorde/jangar.tga"
 #spr2 "goldenhorde/jangar2.tga"
+#unmountedspr1 "goldenhorde/un_jangar.tga"
+#unmountedspr2 "goldenhorde/un_jangar2.tga"
 #descr "Jangar was born the son of a Khan, however soon after his birth the tribe was attacked by demons. Carried away by a trusted servant Jangar was hidden in a mountain cave. After the servant died the young Khan was raised by wild beasts until the age of three, learning to hunt like a wolf and roar like a tiger. He then returned to his fathers kingdom astride his loyal steed Aranjagaan and slew the demons that had usurped his lands. Since then he has ruled over the tribe and defeated all that have tried to harm his people. Jangar wields the sacred spear Aram passed down to him at birth that has slain many Demons. His strength and magical prowess are legendary throughout the lands of Tartary and now he has emerged to fight for the Awakening God."
 #fixedname "Jangar"
 #mountedhumanoid
 #gcost 0
-#mapmove 24
 #expertleader
 #taxcollector
 #inspirational 1
@@ -8988,7 +9026,6 @@
 #mr 16
 #mor 18
 #enc 1
-#ap 20
 #prec 14
 #stealthy 0
 #userestricteditem 1
@@ -9001,6 +9038,7 @@
 #coldres 5
 #animalawe 3
 #beastmaster 3
+#horsetattoo 3
 #holy
 #ressize 2
 #onebattlespell 1271 -- Personal Luck
@@ -9008,6 +9046,8 @@
 #weapon 712  -- Apotropaic Spear
 #armor 518 -- Lamellar Armor
 #armor 2  -- Shield
+#drawsize 0
+#mountmnr 9113
 #end
 
 #newmonster 6678
@@ -9037,10 +9077,10 @@
 #weapon 1666 -- Flaming Sword
 #armor "Mirror Lamellar Armor"
 #armor "Crown"
-#armor "Enchanted Shield"  -- Changed from normal shield as of v2.05
-#magicskill 1 2  -- Air 2
-#magicskill 6 2  -- Nature 2
+#armor "Enchanted Shield"
 #magicskill 3 3  -- Earth 3
+#magicskill 6 2  -- Nature 2
+#magicskill 7 2  -- Glamour 2
 #startage 490
 #maxage 500
 #magicbeing
@@ -29770,6 +29810,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #unmountedspr2 "magicenhanced/un_eearider2.tga"
 #name "Ancestral Rider"
 #descr "This is the spirit of an Ancestor Warrior returned to serve the living once more. The spectral warriors fight with superhuman ability and their bows fire howling arrows guided by spirits. They are ethereal and difficult to harm with mundane weapons. As spirits they are unaffected by cold or poison and can enter the sea without hindrance."
+#drawsize 0
 #gcost 0
 #mountmnr 7532
 #skilledrider 5
@@ -41410,7 +41451,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #rcost 1
 #itemslots 860165 -- No Feet
 #weapon 357  -- Light Lance
-#weapon 354  -- Antlers
 #armor 120  -- Leather Cap
 #armor 2  -- Shield
 #armor 15  -- Full Leather Armor
@@ -46918,11 +46958,12 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #name "Elk"
 #descr "A fierce, forest-dwelling animal. It can defend itself with its antlers."
 #mr 8
+#size 4
 #morale 9
 #hp 18
 #prot 4
 #def 9
-#str 13
+#str 14
 #armor 251 -- Leather Barding
 #end
 
@@ -53372,6 +53413,9 @@ Cost 56 RP."
 #copystats 1062
 #copyspr 1062
 #mr 14
+#clearweapons
+#weapon 778
+#weapon 634
 #end
 
 #newmonster 8178
@@ -54658,6 +54702,65 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #curseluckshield 2
 #deathcurse
 #end
+
+#newmonster 9111 -- Great Stag
+#copystats 2228 -- deer
+#spr1 "goldenhorde/abjiyam.tga"
+#spr2 "goldenhorde/abjiyam2.tga"
+#name "Great Stag"
+#descr "A fierce, forest-dwelling animal. It can defend itself with its antlers."
+#mr 8
+#size 5
+#morale 11
+#hp 20
+#prot 4
+#def 9
+#str 15
+#armor 251 -- Leather Barding
+#end
+
+#newmonster 9112 -- Darkhad Horse
+#copystats 3575 -- scale steppe horse
+#spr1 "goldenhorde/darkhadm.tga"
+#spr2 "goldenhorde/darkhadm.tga"
+#name "Darkhad Horse"
+#descr "This is a specially bred horse wearing headgear fashioned to mimic the stag, the creature of the underworld that takes spirits to their rest."
+#mr 10
+#morale 11
+#hp 24
+#def 11
+#str 15
+#holy
+#drawsize 0
+#horsetattoo 1
+#clearweapons
+#cleararmor
+--#weapon 634 -- antlers
+#weapon 55
+#armor 252 -- scale
+#end
+
+#newmonster 9113 -- Baghatur Horse
+#copystats 3574
+#copyspr 3574
+#horsetattoo 1
+#mr 10
+#holy
+#end
+
+#newmonster 9114 -- Defender Horse
+#copystats 3574
+#copyspr 3574
+#gcost 0
+#mapmove 0
+#end
+
+#newmonster 9115 -- Novice Horse
+#copystats 3574
+#copyspr 3574
+#gcost 10010
+#end
+
 
 
 
@@ -60933,7 +61036,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 6591 -- Owner of the Lodges
-#skilledrider 7 -- 5 -> 7
+#skilledrider 8 -- 5 -> 8
 #end
 
 #selectmonster 7469 -- Aes Sidhe Lord
@@ -60969,7 +61072,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 7920 -- Fair and Great Prince
-#skilledrider 6 -- 4 -> 6
+#skilledrider 7 -- 4 -> 7
 #end
 
 #selectmonster 8114 -- Lord of Rotaimo
@@ -61017,15 +61120,15 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 7678 -- Kheshig
-#skilledrider 6 -- 4 -> 6
+#skilledrider 7 -- 4 -> 7
 #end
 
 #selectmonster 7677 -- Great Khan
-#skilledrider 6 -- 4 -> 6
+#skilledrider 7 -- 4 -> 7
 #end
 
 #selectmonster 6656 -- Kheshig
-#skilledrider 6 -- 4 -> 6
+#skilledrider 7 -- 4 -> 7
 #end
 
 #selectmonster 7531 -- Ancestral Rider
@@ -61033,7 +61136,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 8234 -- Khagan
-#skilledrider 6 -- 4 -> 6
+#skilledrider 7 -- 4 -> 7
 #end
 
 #selectmonster 7564 -- Wraith Knight
@@ -61045,23 +61148,23 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 7566 -- Fey Knight
-#skilledrider 6 -- 4 -> 6
+#skilledrider 8 -- 4 -> 8
 #end
 
 #selectmonster 7567 -- Errant Knight
-#skilledrider 6 -- 4 -> 6
+#skilledrider 8 -- 4 -> 8
 #end
 
 #selectmonster 6585 -- War Chief
-#skilledrider 5 -- 4 -> 5
+#skilledrider 6 -- 4 -> 6
 #end
 
 #selectmonster 6605 -- Jet Warrior
-#skilledrider 5 -- 2 -> 5
+#skilledrider 6 -- 2 -> 6
 #end
 
 #selectmonster 8121 -- Adventurous Governor
-#skilledrider 5 -- 2 -> 5
+#skilledrider 6 -- 2 -> 6
 #end
 
 #selectmonster 8141 -- Storm Knight
@@ -61070,7 +61173,7 @@ Cannot be recruited until Break the Deadlock is cast."
 
 
 #selectmonster 8232 -- Last Conquistador
-#skilledrider 5 -- 2 -> 5
+#skilledrider 6 -- 2 -> 6
 #end
 
 #selectmonster 8680 -- Son of Muspel
@@ -61086,7 +61189,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 7163 -- Mobile Guard
-#skilledrider 5 -- 2 -> 5
+#skilledrider 6 -- 2 -> 6
 #end
 
 #selectmonster 7472 -- Knight of the Fallen Chalice
@@ -61118,7 +61221,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 9607 -- Jarumi
-#skilledrider 5 -- 4 -> 5
+#skilledrider 6 -- 4 -> 6
 #end
 
 #selectmonster 9613 -- Madawaki
@@ -61154,7 +61257,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 6723 -- Venetian Knight
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 9606 -- Hausa Cavalry
@@ -61224,6 +61327,129 @@ Cannot be recruited until Break the Deadlock is cast."
 #selectmonster 8345 -- Markata Master
 #skilledrider 1 -- 0 -> 1
 #end
+
+#selectmonster 7341 -- Dishirding
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 9066 -- Goryou
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 7413 -- Spirit Sorceress
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 7414 -- Spirit Sorceress
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 7415 -- Spirit Sorceress
+#skilledrider 6 -- 3 -> 6
+#end
+
+#selectmonster 7630 -- Partholonian Lord
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 7957 -- Lancer
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 7956 -- Cuirassier
+#skilledrider 3 -- 1 -> 3
+#end
+
+#selectmonster 7946 -- Mounted Commander
+#skilledrider 5 -- 2 -> 5
+#end
+
+#selectmonster 9108 -- Harvester
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 9109 -- Harvester
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 6650 -- Horseman Defender
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 6651 -- Novice Warrior
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 6652 -- Horse Warrior
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 6653 -- Heavy Horse Warrior
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 6654 -- Pazyryk Horse Warrior
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 6655 -- Boo
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 6656 -- Kheshig
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 6657 -- Khan
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 6660 -- Cataphract
+#skilledrider 5 -- 3 -> 5
+#end
+
+#selectmonster 6661 -- Noyan
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 6662 -- Ugdan
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 6663 -- Jigari
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 6664 -- Abjiya
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 6665 -- Scout
+#skilledrider 4 -- 3 -> 4
+#end
+
+#selectmonster 6666 -- Darkhad
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 6668 -- Wind Rider
+#skilledrider 6 -- 4 -> 6
+#end
+
+#selectmonster 6675 -- Khagan
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 6677 -- Hero King
+#skilledrider 7 -- 4 -> 7
+#end
+
+#selectmonster 6676 -- Baghatur
+#skilledrider 7 -- 4 -> 7
+#end
+
+
+
 
 
 
@@ -83730,6 +83956,9 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #twiceborn 7343 -- Size 2 Wight Beast
 #montag 1018
 #montagweight 6
+#clearweapons
+#weapon 778
+#weapon 634
 #end
 
 #selectmonster 1063  -- Sea Stag
@@ -97800,6 +98029,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #newsite 2193
 #name "Ikh Khorig"
 #path 9 
+#look 5
 #level 0
 #rarity 5
 #gems 5 2
@@ -103733,9 +103963,39 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7964
 #end
 
-
 #newsite 2580
 #clear
+#name "MA Tartary Summons"
+#rarity 5
+#level 0
+#path 1
+#look 1
+#homemon 1363 -- anc spirit
+#homemon 6667 -- wind horse
+#homemon 6668 -- wind w
+#homemon 6672 -- yarb
+#homemon 6673 -- ubir
+#homemon 6674 -- baro
+#homemon 7531 -- anc rider
+#homecom 6669 -- erbuke
+#homecom 7530 -- shard
+#end
+
+#newsite 2581
+#clear
+#name "MA Tartary Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 1
+#homecom 6675
+#homecom 6677
+#homecom 6678
+#homecom 6676
+#end
+
+
+#newsite 2582
 #name "Testestest"
 #rarity 5
 #level 0
@@ -106564,6 +106824,10 @@ Priests: Average"
 
 #startsite "Burkhan Khaldun"
 #startsite "Ikh Khorig"
+
+#futuresite "MA Tartary Summons"
+#futuresite "MA Tartary Heroes"
+
 #fortera 0
 #homefort 2  -- Fortress
 #templepic 11
@@ -131841,15 +132105,16 @@ All effects scale with friendly Dominion."
 
 #selectspell 3584
 #name "Vegetable Lambs"
-#descr "The caster causes several magical Barometz plants to grow in a nearby friendly province. The Barometz or Vegetable Lamb is a strange plant that grows full sized sheep as its fruit. These plantlike sheep are connected to the ground by a stalk and graze the area around the plant. The plant can be harvested and the sheep-fruit is delicious when cooked and eaten. Each Barometz plant will provide a fruit each month, feeding up to 10 soldiers, however they cannot leave the province."
+#descr "The caster causes several magical Barometz plants to grow in a nearby friendly province. The Barometz or Vegetable Lamb is a strange plant that grows full sized sheep as its fruit. These plantlike sheep are connected to the ground by a stalk and graze the area around the plant. The plant can be harvested and the sheep-fruit is delicious when cooked and eaten, and their wool can be used in clothing. Each Barometz plant will provide a fruit each month, feeding up to 10 soldiers, however they cannot leave the province."
+#details "Each Barometz produces 10 supply and 2 resources."
 #school 4
 #researchlevel 3
 #path 0 6
-#pathlevel 0 2
+#pathlevel 0 1
 #fatiguecost 200
 #effect 10037
 #damage 6674 -- Vegetable Lambs
-#nreff 2000
+#nreff 1004 -- 5+
 #provrange 4
 #onlyowndst 1
 #nogeodst 4
