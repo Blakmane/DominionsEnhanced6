@@ -8555,8 +8555,8 @@
 #name "Khan"
 #spr1 "goldenhorde/tkhan.tga"
 #spr2 "goldenhorde/tkhan2.tga"
-#unmountedspr1 "goldenhorde/un_tkhan.tga"
-#unmountedspr2 "goldenhorde/un_tkhan2.tga"
+#unmountedspr1 "goldenhorde/un_kheshig.tga"
+#unmountedspr2 "goldenhorde/un_kheshig2.tga"
 #descr "The Khans are the leaders of the steppes tribes and are skilled horsemen and warriors. Several tribes practice head binding or scarification to mark out the noble families, and in most tribes these families are ritually tattooed. These tattoos can be awoken by a Shaman to provide protection and speed. The Khans often fight side by side with the warriors, their bravery and skill inspiring the troops to heroic deeds. Barbarian horsemen will appear each month to serve their Khan."
 #gcost 10030
 #prec 10
@@ -26825,8 +26825,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #newmonster 7401
 #copystats 58  -- Knight of the Stone
 #copyspr 2359  -- Holy Knight
-#unmountedspr1 "magicenhanced/un_errantknight.tga"
-#unmountedspr2 "magicenhanced/un_errantknight2.tga"
+#unmountedspr1 "magicenhanced/un_eeerrantknight.tga"
+#unmountedspr2 "magicenhanced/un_eeerrantknight2.tga"
 #clearweapons
 #cleararmor
 #name "Knight Errant"
@@ -44471,7 +44471,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr1 "worthy_heroes/conqueror_1.tga"
 #spr2 "worthy_heroes/conqueror_2.tga"
 #unmountedspr1 "worthy_heroes/un_conqueror_1.tga"
-#unmountedspr2 "worthy_heroes/un_conqueror_2.tga"
+#unmountedspr2 "worthy_heroes/un_conqueror_1.tga"
 #name "Conqueror"
 #fixedname "Aleksandros"
 #descr "Aleksandros the Conqueror is the most famous general in Arcoscephale. He has never lost a battle despite being greatly outnumbered in many of them. His soldiers are known for their fierce loyalty and admire him with a passion that borders on worship. Aleksandros tamed the great steed Bucephalus, said to descend from the Pegasii of old. The stallion is a massive, frightening beast whose hooves can mangle several soldiers at once. It has been prophesized that he will conquer many kingdoms and bring a new era of prosperity for Arcoscephale. There are many legends of his ancestry, and many say that he is of divine heritage - a son of a god. The fame of the Conqueror travels before him and lesser foes would rather surrender or flee than fight him in his gleaming armor."
@@ -146422,7 +146422,7 @@ This will also prevent their skin from drying out."
 
 #selectitem 873 -- Death Knight Barding
 #copyitem 489 -- Blacksteel Barding
-#spr "magicenhanced/blue_Death Knightbarding.tga"
+#spr "magicenhanced/blue_deathknightbarding.tga"
 #name "Death Knight Barding"
 #descr "A heavy barding enchanted with magic of the underworld to provide the mount invulnerability against mortal weapons."
 #constlevel 5
