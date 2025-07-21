@@ -3676,6 +3676,14 @@
 #range 30
 #end
 
+#newweapon 1883 -- Tachi
+#copyweapon 857 -- Katana
+#name "Tachi"
+#dmg 7
+#att 3
+#def 2
+#len 2
+#end
 
 -- END OF NEW WEAPONS
 
@@ -29686,6 +29694,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 1 1
 #magicskill 2 1
 #magicskill 3 1
+#magicskill 9 1
 #magicboost 53 1
 #magicboost 9 1
 #nametype 133  -- Japanese Female
@@ -62215,11 +62224,11 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 1250 -- Mounted Gokenin
-#skilledrider 3 --  -> 3
+#skilledrider 5 --  -> 5
 #end
 
 #selectmonster 1253 -- Daimyo
-#skilledrider 3 -- 1 -> 3
+#skilledrider 5 -- 1 -> 5
 #end
 
 #selectmonster 1107 -- Equite
@@ -62267,11 +62276,11 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 1251 -- Hatamoto
-#skilledrider 3 -- 1 -> 3
+#skilledrider 5 -- 1 -> 5
 #end
 
 #selectmonster 1246 -- Samurai Cavalry
-#skilledrider 3 --  -> 3
+#skilledrider 5 --  -> 5
 #end
 
 #selectmonster 788 -- Horseman
@@ -84394,6 +84403,44 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #darkvision 100
 #end
 
+#selectmonster 1251 -- Hatamoto
+#spr1 "vanilla/hatamoto1.tga"
+#spr2 "vanilla/hatamoto2.tga"
+#clearweapons
+#weapon 596 -- light lance
+#weapon 1883 -- tachi
+#mountmnr 3516
+#end
+
+#selectmonster 1246 -- Samurai Cavalry
+#descr "Horses are not very common in the mountainous regions of Jomon and only wealthy samurai can afford them. Horses are used more as a means of transport and status. The samurai cavalry of Jomon are still a force to be reckoned with."
+#spr1 "vanilla/samuraicavalry1.tga"
+#spr2 "vanilla/samuraicavalry2.tga"
+#gcost 10025
+#rpcost 30
+#clearweapons
+#weapon 596 -- light lance
+#weapon 1883 -- tachi
+#mountmnr 3516
+#end
+
+#selectmonster 1250 -- Mounted Gokenin
+#spr1 "vanilla/mountedgokenin1.tga"
+#spr2 "vanilla/mountedgokenin2.tga"
+#clearweapons
+#weapon 596 -- light lance
+#weapon 1883 -- tachi
+#mountmnr 3516
+#end
+
+#selectmonster 1253 -- Daimyo
+#spr1 "vanilla/daimyo1.tga"
+#spr2 "vanilla/daimyo2.tga"
+#clearweapons
+#weapon 1883 -- tachi
+#mountmnr 3516
+#end
+
 #selectmonster 1200  -- Unfrozen
 #mountainsurvival
 #end
@@ -84453,6 +84500,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 1248 -- Yamabushi
 #descr "Yamabushi are ascetic warrior monks of the Sacred Mountain. Enlightenment is found through the study and contemplation of oneself. This might include heavy drinking and unsavory behavior. The practice of martial arts is a means to perfection of body and mind and the Yamabushi are among the most skilled warriors in all of Jomon, even able to deflect arrows with their blade. Yamabushi live in isolation in search for enlightenment. Therefore they rarely fight in armies and are not as disciplined as the Sohei warrior monks. Some even consider them cowardly."
+#airshield 50
 #end
 
 #selectmonster 1260  -- Ko Oni
@@ -104093,8 +104141,97 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8172
 #end
 
-
 #newsite 2587
+#name "LA Jomon Summons"
+#level 0
+#rarity 5
+#path 7
+#look 5
+#homemon 1140 -- Tiger
+#homemon 8022 -- Dire Tiger
+#homemon 3264 -- Okami
+#homemon 8030 -- Fighting Fish
+#homemon 1260 -- Ko-Oni
+#homemon 1264 -- Ao-Oni
+#homemon 1266 -- Aka-Oni
+#homemon 1272 -- Oni
+#homemon 1274 -- Kuro-Oni
+#homemon 2090 -- Horse-face
+#homemon 2091 -- Ox-head
+#homemon 8004 -- Kosenjoubi
+#homemon 1482 -- kappa
+#homemon 8383 -- eelfolk
+#end
+
+#newsite 2588
+#name "LA Jomon Summons Continued"
+#level 0
+#rarity 5
+#path 7
+#look 5
+#homemon 1478 -- Karasu Tengu
+#homemon 1479 -- Konoha Tengu
+#homemon 1481 -- Tengu Warrior
+#homecom 1480 -- Dai Tengu
+#homecom 1276 -- Oni Shugo
+#homecom 1316 -- Dai Oni
+#homecom 7490 -- Yuki-Onna
+#homecom 1256 -- Shura
+#homecom 8006 -- Goryou
+#homecom 1431 -- Nushi
+#homecom 1433 -- Kitsune
+#homecom 3265 -- Tanuki
+#homecom 3267 -- Bakeneko
+#homecom 3272 -- Mujina
+#homecom 2099 -- tatsu
+#homecom 7227 -- Celestial Carp
+#end
+
+#newsite 2589
+#name "LA Jomon Kami"
+#level 0
+#rarity 5
+#path 7
+#look 5
+#homecom 2089 -- jigami
+#homecom 2094 -- mori
+#homecom 2095 -- ujigami
+#homecom 2096 -- kenzoku
+#homecom 2097 -- yama
+#homecom 2106 -- kaijin
+#homecom 7523 -- divine miko
+#end
+
+#newsite 2590
+#name "LA Jomon Uniques"
+#level 0
+#rarity 5
+#path 7
+#look 5
+#homecom 7491 -- Bake-danuki
+#homecom 7585 -- Raijin
+#homecom 7586 -- Raiju
+#homecom 7282 -- White Tiger of the West
+#homecom 7283 -- Azure Dragon of the East
+#homecom 7284 -- Vermilion Bird of the South
+#homecom 7285 -- Black Tortoise of the North
+#homecom 7262 -- Izanami
+#end
+
+#newsite 2591
+#clear
+#name "LA Jomon Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 3
+#homecom 1579
+#homecom 1580
+#homecom 1915
+#end
+
+
+#newsite 2592
 #name "Testestest"
 #rarity 5
 #level 0
@@ -110917,6 +111054,13 @@ Bless bonuses: Poison Resistance +10"
 #addforeigncom 7777 -- Monk
 #addreccom 7778 -- Grandmaster of Flowers
 #startsite "Pearl Palace"  -- Pearl Palace
+
+#futuresite "LA Jomon Summons"
+#futuresite "LA Jomon Summons Continued"
+#futuresite "LA Jomon Kami"
+#futuresite "LA Jomon Uniques"
+#futuresite "LA Jomon Heroes"
+
 #end
 
 #selectnation 102 -- LA Agartha
