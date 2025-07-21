@@ -8341,7 +8341,7 @@
 #unmountedspr2 "goldenhorde/un_horseman2.tga"
 #descr "The warriors of the steppes are excellent horsemen, trained from birth in the saddle. Warriors from local tribes will often ride to the defence of the province should it come under attack. A Horseman Defender will not cost upkeep, however they cannot leave their home province."
 #gcost 10
-#rpcost 3
+#rpcost 9
 #rcost -12
 #addupkeep -10
 #mapmove 0
@@ -8366,13 +8366,14 @@
 #unmountedspr2 "goldenhorde/un_novice2.tga"
 #descr "The warriors of the steppes are excellent horsemen, trained from birth in the saddle. Each warrior maintains three or four horses, providing fresh mounts during a march. The horses of Tartary excel in endurance and can run for long distances, although they are somewhat slower than those of other nations in a sprint. Novice warriors have not seen many battles and are excitable and difficult to control. After a few battles they will join the ranks of the horseman warriors."
 #gcost 10006
-#rpcost 6
+#rcost -5 -- national modifier
+#rpcost 3
 #hp 10
 #att 10
 #def 10
 #mor 10
 #undisciplined
-#xpshape 25
+#xpshape 20
 #weapon 10  -- Falchion
 #armor 518 -- Lamellar Armor
 #armor 119  -- Reinforced Leather Cap
@@ -8391,7 +8392,8 @@
 #unmountedspr1 "goldenhorde/un_horseman.tga"
 #unmountedspr2 "goldenhorde/un_horseman2.tga"
 #descr "The warriors of the steppes are excellent horsemen, trained from birth in the saddle. Each warrior maintains three or four horses, providing fresh mounts during a march. The horses of Tartary excel in endurance and can run for long distances, although they are somewhat slower than those of other nations in a sprint. The warriors of Tartary primarily use powerful curved bows, swords and lances, softening the enemy with hails of bowfire before finishing in a devastating charge."
---#rpcost 20
+--#rpcost 9
+#rcost -5 -- national modifier
 #prec 10
 #armor 518 -- Lamellar Armor
 #armor 119  -- Reinforced Leather Cap
@@ -8410,7 +8412,8 @@
 #unmountedspr1 "goldenhorde/un_hvyhorseman.tga"
 #unmountedspr2 "goldenhorde/un_hvyhorseman2.tga"
 #descr "The warriors of the steppes are excellent horsemen, trained from birth in the saddle. Each warrior maintains three or four horses, providing fresh mounts during a march. The horses of Tartary excel in endurance and can run for long distances, although they are somewhat slower than those of other nations in a sprint. The warriors of Tartary primarily use powerful curved bows, swords and lances, softening the enemy with hails of bowfire before finishing in a devastating charge."
---#rpcost 25
+--#rpcost 9
+#rcost -7 -- national modifier
 #prec 10
 #armor 136  -- Bronze Scale
 #armor 135  -- Bronze Cap
@@ -8432,7 +8435,8 @@
 #descr "In Tartary the secrets of ritual tattooing have been passed down from the Sauromatian tribes. In most tribes only the most noble members are tattooed, however in the Pazyryk tribe all warriors receive ritual tattoos upon coming of age. The number of tattoos represent standing in society and more prominent warriors are covered in dark etchings. These tattoos can be awoken by a Shaman to provide protection and speed. These warriors are skilled in night riding and often scout ahead of the main armies of Tartary. Pazyryk can only be recruited in a province containing a Böö."
 --#gcost 25
 --#rcost 1
---#rpcost 27
+#rpcost 12
+#rcost -5 -- national modifier
 #str 11
 #prec 10
 #horsetattoo 4
@@ -8445,7 +8449,7 @@
 #armor 2  -- Shield
 #nametype 177  -- Mongolian Male
 #drawsize 0
-#mountmnr 9075
+#mountmnr 9116
 #end
 
 #newmonster 6656
@@ -8458,6 +8462,7 @@
 #unmountedspr2 "goldenhorde/un_kheshig2.tga"
 #descr "The Kheshig are the elite of Tartary. Armed with bows and lances, they are sworn to protect the Khans at all costs. Members of the Kheshig outrank almost any other officers in the Empire. They are renowned for their hardiness and can travel for a full month living only on the fermented milk and blood of their sturdy steeds. Kheshig can only be recruited in a province containing a Khan."
 --#rpcost 30
+#rcost -7 -- national modifier
 #gcost 10025
 #neednoteat
 #bodyguard 4
@@ -8497,6 +8502,7 @@
 #descr "Warriors in the Empire of Tartary usually fight from horseback, however occasionally foot troops will be deployed to defend settlements. The archers of Tartary use composite bows and wear leather armor."
 #armor 15  -- Full Leather
 #armor 119  -- Reinforced Leather Cap
+#gcost 10008
 #end
 
 #newmonster 6660
@@ -8665,7 +8671,7 @@
 #nametype 177  -- Mongolian Male
 #slowrec
 #drawsize 0
-#mountmnr 9075
+#mountmnr 9116
 #end
 
 #newmonster 6664
@@ -8717,7 +8723,7 @@
 #armor 2  -- Shield
 #nametype 177  -- Mongolian Male
 #drawsize 0
-#mountmnr 3574
+#mountmnr 9116
 #end
 
 #newmonster 6666
@@ -8729,7 +8735,7 @@
 #unmountedspr1 "goldenhorde/un_darkhad.tga"
 #unmountedspr2 "goldenhorde/un_darkhad2.tga"
 #descr "The Darkhad are a group of elite sacred warriors tasked with guarding the souls of the Khans after death. Tradition dictates that the body of a Khan must be buried in the Ikh Khorig, a secluded area sacred to the Tatars. The Darkhad live here, guarding this area fiercely against intrusion by all others and thus protecting the resting place of the Khans. In battle they ride specially bred horses wearing headgear fashioned to mimic the stag, the creature of the underworld that takes spirits to their rest. Several tribes practice head binding or scarification to mark out the noble families, and in most tribes these families are ritually tattooed. The number and prominence of tattoos represent standing in society and often relate to the deeds of their owner. These tattoos can be awoken by a Shaman to provide protection and speed. The Darkhad and their task are sacred to the Tatars."
-#gcost 65
+#gcost 50
 --#rcost 10
 #rpcost 36
 #prec 10
@@ -8898,9 +8904,10 @@
 #gcost 0
 #rcost 0
 #size 6
-#hp 38
+#hp 42
 #prot 8
-#str 15
+#str 18
+#coldres 10
 #mr 11
 #att 13
 #ap 24
@@ -8917,7 +8924,7 @@
 #name "Barometz"
 #spr1 "goldenhorde/veglamb.tga"
 #spr2 "goldenhorde/veglamb2.tga"
-#descr "The Barometz or Vegetable Lamb is a strange plant that grows full sized sheep as its fruit. These plantlike sheep are connected to the ground by a stalk and graze the area around the plant. The plant can be harvested and the sheep-fruit is delicious when cooked and eaten, and their wool can be used in clothing. Each Barometz plant will provide a fruit each month, feeding up to 10 soldiers, however they cannot leave the province."
+#descr "The Barometz or Vegetable Lamb is a strange plant that grows full sized sheep as its fruit. These plantlike sheep are connected to the ground by a stalk and graze the area around the plant. The plant can be harvested and the sheep-fruit is delicious when cooked and eaten. Each Barometz plant will provide a fruit each month, feeding up to 10 soldiers, however they cannot leave the province."
 #immobile
 #size 6
 #prot 12
@@ -8926,7 +8933,6 @@
 #mapmove 0
 #plant
 #supplybonus 10
-#resources 2
 #end
 
 #newmonster 6675
@@ -31678,9 +31684,9 @@ While in the form of an old man, all paths are increased and allows the use of N
 #skilledrider 5
 #goodundeadleader
 #magicskill 5 1
-#magicskill 7 1
+#magicskill 7 2
 #magicskill 9 1
-#custommagic 21248 100
+#custommagic 21248 100 -- AWDG
 #weapon 475  -- Golden Lance
 #spiritsight
 #end
@@ -54744,21 +54750,33 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #copystats 3574
 #copyspr 3574
 #horsetattoo 1
-#mr 10
+#mr 12
 #holy
+#stealthy 25
 #end
 
 #newmonster 9114 -- Defender Horse
 #copystats 3574
 #copyspr 3574
+#rpcost 0
 #gcost 0
 #mapmove 0
+#mr 7
 #end
 
 #newmonster 9115 -- Novice Horse
 #copystats 3574
 #copyspr 3574
 #gcost 10010
+#mr 7
+#end
+
+#newmonster 9116 -- Tattoo Stealthy Horse
+#copystats 3574
+#copyspr 3574
+#stealthy 25
+#horsetattoo 1
+#mr 10
 #end
 
 
@@ -106836,7 +106854,7 @@ Priests: Average"
 #templepic 11
 #syncretism 1
 #likespop 26  -- Horse Tribe
-#fortcost 25  -- 500 gold palisades
+--#fortcost 25  -- 500 gold palisades
 #templecost 300 -- 200 gold temples
 #hatesterr 224  -- Waste/Swamp/Forest
 #cavenation 0
@@ -106845,6 +106863,7 @@ Priests: Average"
 #addrecunit 6658
 #addrecunit 6659
 #addrecunit 6660
+
 #addforeigncom 6665
 #addforeigncom 6661
 #addforeigncom 6657
@@ -106852,12 +106871,14 @@ Priests: Average"
 #addforeigncom 6662
 #addforeigncom 6663
 #addforeigncom 6664
+
 #addforeignunit 6650
 #addforeignunit 6651
 #addforeignunit 6652
 #addforeignunit 6653
 #addforeignunit 6654
 #addforeignunit 6656
+
 #startcom 6661
 #startunittype1 6651
 #startunitnbrs1 20
@@ -117544,12 +117565,12 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #name "Delgnat's Bargain"
 #descr "The caster travels deep into the swamps of Pythia to the Enchanted Isle. There they bargain with Delgnat to release a longdead Partholonian Lord to serve the awakening God. The Partholonian dead are still wreathed in illusions, their bones sacred and their weapons ensorcelled, crafted as they were when the Partholonians still walked the land ages ago. This spell can only be cast at the Enchanted Isle in Sauromatia."
 #researchlevel 6
-#pathlevel 0 4
+#pathlevel 0 3
 #path 1 2
 #pathlevel 1 1
 #effect 10021
 #nreff 1
-#fatiguecost 1800
+#fatiguecost 1600
 #damage 7630 -- Longdead Partholonian Lord
 #onlyatsite 125  -- The Enchanted Isle
 #restricted 9  -- EA Sauro
@@ -118085,7 +118106,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #end
 
 #selectspell 2552
-#name "Summon Ancestral Rider"
+#name "Summon Ancestral Riders"
 #descr "The Barbarian Kings brought the worship of ancestral spirits with them. Spirits of long-dead warriors and chieftains aid the living in war and peace. This ritual summons the spirit of a Barbarian Ancestor Warrior to serve the living once more. The spectral warriors fight with superhuman ability and their bows fire howling arrows guided by spirits."
 #school 0
 #researchlevel 3
@@ -118107,8 +118128,8 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #pathlevel 0 3
 #effect 10001
 #damage 7531
-#nreff 1005 -- 8+
-#fatiguecost 1100
+#nreff 1007 -- 10+
+#fatiguecost 1400
 #restricted 109 -- LA Tien Chi
 #end
 
@@ -132108,8 +132129,8 @@ All effects scale with friendly Dominion."
 
 #selectspell 3584
 #name "Vegetable Lambs"
-#descr "The caster causes several magical Barometz plants to grow in a nearby friendly province. The Barometz or Vegetable Lamb is a strange plant that grows full sized sheep as its fruit. These plantlike sheep are connected to the ground by a stalk and graze the area around the plant. The plant can be harvested and the sheep-fruit is delicious when cooked and eaten, and their wool can be used in clothing. Each Barometz plant will provide a fruit each month, feeding up to 10 soldiers, however they cannot leave the province."
-#details "Each Barometz produces 10 supply and 2 resources."
+#descr "The caster causes several magical Barometz plants to grow in a nearby friendly province. The Barometz or Vegetable Lamb is a strange plant that grows full sized sheep as its fruit. These plantlike sheep are connected to the ground by a stalk and graze the area around the plant. The plant can be harvested and the sheep-fruit is delicious when cooked and eaten. Each Barometz plant will provide a fruit each month, feeding up to 10 soldiers, however they cannot leave the province."
+--#details "Each Barometz produces 10 supply and 2 resources."
 #school 4
 #researchlevel 3
 #path 0 6
@@ -132141,16 +132162,16 @@ All effects scale with friendly Dominion."
 #end
 
 #selectspell 3586
-#name "Summon Wind Horse"
+#name "Summon Wind Horses"
 #descr "The caster summons a few Wind Horses from the skies. These magical sacred winged horses symbolise the freedom of the human spirit. They fly across the skies and sometimes land on high mountaintops. Wind Horses are symbols of good fortune and lucky events will occur more often in a province where they dwell."
 #school 0
-#researchlevel 2
+#researchlevel 4
 #path 0 1
 #pathlevel 0 2
 #effect 10001
 #nreff 505 -- 5+1/2
 #damage 6667 -- Wind Horse
-#fatiguecost 900
+#fatiguecost 800
 #restricted 187 -- Bhod
 #restricted 188 -- shambhala
 #restricted 191 -- Tartary
@@ -132158,15 +132179,15 @@ All effects scale with friendly Dominion."
 
 #selectspell 3587
 #name "Summon Yarbogha"
-#descr "The caster summons one of the Yarbogha from a nearby tribe. These bull-centaurs are known for their wild, savage and lustful nature."
+#descr "The caster summons a few of the Yarbogha from a nearby tribe. These bull-centaurs are known for their wild, savage and lustful nature."
 #school 0
 #researchlevel 3
 #path 0 6
-#pathlevel 0 2
+#pathlevel 0 1
 #effect 10001
-#nreff 1
+#nreff 503
 #damage 6672 -- Yarbogha
-#fatiguecost 200
+#fatiguecost 500
 #restricted 191 -- Tartary
 #end
 
@@ -132190,11 +132211,11 @@ All effects scale with friendly Dominion."
 #school 0
 #researchlevel 5
 #path 0 6
-#pathlevel 0 3
+#pathlevel 0 2
 #effect 10001
-#nreff 1007
+#nreff 1010 -- 12+
 #damage 6672 -- Yarbogha
-#fatiguecost 2000
+#fatiguecost 1600
 #restricted 191 -- Tartary
 #end
 
@@ -132208,9 +132229,9 @@ All effects scale with friendly Dominion."
 #path 1 1
 #pathlevel 1 1
 #effect 10001
-#nreff 1002
+#nreff 1002 -- 5+
 #damage 6668 -- Wind Warrior
-#fatiguecost 1800
+#fatiguecost 1200
 #restricted 191 -- Tartary
 #end
 
@@ -132218,28 +132239,28 @@ All effects scale with friendly Dominion."
 #name "Summon Ubir"
 #descr "The caster summons a few monstrous Ubir and binds it to his service. The Ubir are horrible, bloated undead creatures that crave the blood of the living. They are spawned from improper burials or humans that partake in cannibalism. Even when bound they will roam the land at night searching for victims."
 #school 0
-#researchlevel 6
+#researchlevel 5
 #path 0 5
 #pathlevel 0 3
 #effect 10001
-#nreff 505
+#nreff 503
 #damage 6673 -- Ubir
-#fatiguecost 900
+#fatiguecost 700
 #restricted 116 -- Bogarus
 #restricted 191 -- Tartary
 #end
 
 #selectspell 3592
-#name "Summon Ancestor Warrior"
-#descr "The Ugdan speak to the spirits of the ancestors to placate them and entreat their aid. Spirits of long-dead warriors and chieftains aid the living in war and peace. This ritual summons the spirit of an Ancestor Warrior to serve the living once more. The spectral warriors fight with superhuman ability and their bows fire howling arrows guided by spirits."
+#name "Summon Ancestor Warriors"
+#descr "The Ugdan speak to the spirits of the ancestors to placate them and entreat their aid. Spirits of long-dead warriors and chieftains aid the living in war and peace. This ritual summons the spirit of a few Ancestor Warriors to serve the living once more. The spectral warriors fight with superhuman ability and their bows fire howling arrows guided by spirits."
 #school 0
 #researchlevel 3
 #path 0 5
 #pathlevel 0 2
 #effect 10001
 #damage 7531
-#nreff 1
-#fatiguecost 200
+#nreff 3
+#fatiguecost 500
 #restricted 191 -- Tartary
 #end
 
@@ -132252,8 +132273,8 @@ All effects scale with friendly Dominion."
 #pathlevel 0 3
 #effect 10001
 #damage 7531
-#nreff 1002
-#fatiguecost 900
+#nreff 1007 -- 10+
+#fatiguecost 1500
 #restricted 191 -- Tartary
 #end
 
