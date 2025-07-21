@@ -26714,7 +26714,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #mapmove 3
 #ap 19
 #eyes 2
-#weapon 319  -- Bite
+#weapon 20  -- Bite
 #weapon 609  -- Grab and Swallow
 #weapon 408  -- Talons
 #animal
@@ -87561,10 +87561,12 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 
 #selectmonster 3139  -- Phlegran Tyrant
 #twiceborn 7231 -- Wight Giant
+#incunrest 20 -- 30 -> 20
 #end
 
 #selectmonster 3140  -- Gigante
 #twiceborn 7231 -- Wight Giant
+#incunrest 5 -- 10 -> 5
 #end
 
 #selectmonster 3155 -- Colossi Weaver
@@ -87615,7 +87617,13 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #bodyguard 4
 #end
 
-#selectmonster 3220  -- Shackled Mage
+#selectmonster 3161  -- MA Shackled Mage
+#rpcost 1
+#gcost 10015
+#researchbonus -4
+#end
+
+#selectmonster 3220  -- LA Shackled Mage
 #rpcost 1
 #gcost 10015
 #researchbonus -3
@@ -104012,8 +104020,56 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 6676
 #end
 
-
 #newsite 2582
+#clear
+#name "MA Phlegra Summons"
+#rarity 5
+#level 0
+#path 0
+#look 5
+#homemon 3119 -- spartae
+#homemon 3210 -- lampad
+#homemon 7700 -- lycaon
+#homemon 7704 -- blemm
+#homemon 3127 -- ker
+#homemon 3168 -- twi hound
+#homemon 7396 -- tyrant lizard
+#homemon 3171 -- khalk
+#homemon 7699 -- thrak
+#homemon 7751 -- gegeines
+#homecom 7298 -- kerberos
+#homecom 7701 -- hecat
+#homecom 7702 -- hecat
+#homecom 7703 -- hecat
+#end
+
+#newsite 2583
+#clear
+#name "MA Phlegra Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 2
+#homecom 3163
+#homecom 7931
+#homecom 7936
+#end
+
+#newsite 2584
+#clear
+#name "Cursed Tyrants"
+#rarity 5
+#level 0
+#path 0
+#look 1
+#homecom 7794
+#homecom 7795
+#homecom 7796
+#homecom 7797
+#end
+
+
+#newsite 2585
 #name "Testestest"
 #rarity 5
 #level 0
@@ -110097,7 +110153,7 @@ Nation: Reduced income. Halved population increased from Growth scales."
 #futuresite "MA Xibalba Heroes"
 #end
 
-#selectnation 51
+#selectnation 51 -- MA Phlegra
 #summary "Race: Humans, Cyclopes and Gigantes.
 Military: Few Gigante Warriors. Mostly human slave soldiers. No sacred troops
 Magic: Fire, Earth, Air, and some Water, Death and Nature. Arcane Slave Communions. Cyclops smiths
@@ -110117,6 +110173,10 @@ Dominion: Increases unrest"
 #addgod 8458 -- Statue of the Silent God
 #addgod 8500 -- Stone Tyrant
 #cheapgod20 8500 -- Stone Tyrant
+
+#futuresite "MA Phlegra Summons"
+#futuresite "MA Phlegra Heroes"
+#futuresite "Cursed Tyrants"
 #end
 
 #selectnation 77
@@ -124162,7 +124222,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 1 2
 #damage 7396
 #fatiguecost 1200
-#nreff 503
+#nreff 505
 #restricted 51 -- Phlegra
 #end
 
