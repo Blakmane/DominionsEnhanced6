@@ -97248,6 +97248,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #newsite 2112
 #name "Ostlem Dike"
+#wallunit 7958
+#wallmult 5
 #path 2 
 #level 0
 #rarity 5
@@ -105730,15 +105732,18 @@ Priests: Strong"
 #defcom2 6799 -- Village Elder
 #defunit1 6781 -- Chacoan Spear Warrior
 #defunit1b 6779 -- Chacoan Archer
-#defunit2 6778 -- Atlatl Warrior
+#defunit2 6784 -- Chacoan Elite Warrior
 #defunit2b 6783 -- Chacoan Armored Warrior
 #defmult1 20
-#defmult1b 24
-#defmult2 16
-#defmult2b 20
+#defmult1b 10
+#defmult2 10
+#defmult2b 10
 #wallcom 6798 -- Kikmongwi
 #wallunit 6779 -- Chacoan Archer
 #wallmult 20
+#guardcom 6798 -- Kikmongwi
+#guardunit 6783 -- Armored Warrior
+#guardmult 18
 #moregrowth 1
 #moremagic 1
 #moreheat 1
@@ -105864,18 +105869,21 @@ Priests: Strong"
 #startunitnbrs2 30
 #startscout 6797 -- Scout
 #defcom1 6805 -- Kikmongwi
-#defcom2 6806 -- Village Elder
-#defunit1 6788 -- Chacoan Spear Warrior
-#defunit1b 6786 -- Chacoan Archer
-#defunit2 6785 -- Atlatl Warrior
-#defunit2b 6790 -- Chacoan Armored Warrior
+#defcom2 6808 -- Sun Priest
+#defunit1 6788 -- Spear Warrior
+#defunit1b 6786 -- Archer
+#defunit2 6791 -- Elite Warrior
+#defunit2b 6790 -- Armored Warrior
 #defmult1 20
-#defmult1b 24
-#defmult2 16
-#defmult2b 20
+#defmult1b 10
+#defmult2 10
+#defmult2b 10
 #wallcom 6805 -- Kikmongwi
 #wallunit 6786 -- Chacoan Archer
 #wallmult 20
+#guardcom 6805 -- Kikmongwi
+#guardunit 6790 -- Armored Warrior
+#guardmult 18
 #moregrowth -1
 #moreheat 1
 #end
@@ -105995,19 +106003,21 @@ Priests: Strong"
 #startunitnbrs2 30
 #startscout 6797 -- Scout
 #defcom1 6861 -- Kikmongwi
-#defcom2 6862 -- Village Elder
+#defcom2 6864 -- Sun Priest
 #defunit1 6855 -- Chacoan Spear Warrior
 #defunit1b 6853 -- Chacoan Archer
-#defunit2 6852 -- Atlatl Warrior
-#defunit2b 6858 -- Chacoan Elite Warrior
+#defunit2 6858 -- Chacoan Elite Warrior
+#defunit2b 6857 -- Chacoan Armoured Warrior
 #defmult1 20
-#defmult1b 24
-#defmult2 16
-#defmult2b 20
+#defmult1b 10
+#defmult2 10
+#defmult2b 10
 #wallcom 6861 -- Kikmongwi
 #wallunit 6853 -- Chacoan Archer
 #wallmult 20
-
+#guardcom 6861 --  Kikmongwi
+#guardunit 6790 -- Armored Warrior
+#guardmult 18
 #moreheat 1
 #moreprod -1
 #blessbonus 2
@@ -106134,12 +106144,15 @@ Priests: Strong, can Blood Sacrifice"
 #defunit2 6762 -- Sitecah Warrior
 #defunit2b 6759 -- Enslaved Warrior
 #defmult1 20
-#defmult1b 20
+#defmult1b 10
 #defmult2 10
-#defmult2b 20
+#defmult2b 10
 #wallcom 6764 -- Enslaved Leader
 #wallunit 6755 -- Enslaved Archer
 #wallmult 20
+#guardcom 6768 -- Sitecah Chieftain
+#guardunit 6762 -- Sitecah Warrior
+#guardmult 8
 #moreorder -1
 #moreheat 1
 #end
@@ -106224,13 +106237,16 @@ Priests: Average, can Blood Sacrifice"
 #defunit1b 7079 -- Clan Skirmisher
 #defunit2 7085 -- Stone Hurler
 #defunit2b 7083 -- Giant Warrior
-#defmult1 20
-#defmult1b 20
-#defmult2 10
-#defmult2b 10
+#defmult1 10
+#defmult1b 10
+#defmult2 5
+#defmult2b 5
 #wallcom 7087 -- Chieftain
 #wallunit 7079 -- Skirmisher
 #wallmult 20
+#guardcom 7087
+#guardunit 7083
+#guardmult 6
 #moreorder -1
 #end
 
@@ -106302,16 +106318,19 @@ Priests: Average"
 #defcom1 7113 -- Sar
 #defcom2 7116 -- Mufla
 #defunit1 7101 -- Spearman
-#defunit1b 7104 -- Swordsman
+#defunit1b 7106 -- Archer
 #defunit2 7110 -- Chariot
-#defunit2b 7106 -- Archer
+#defunit2b 7104 -- Swordsman
 #defmult1 20
 #defmult1b 10
 #defmult2 10
-#defmult2b 20
+#defmult2b 10
 #wallcom 7113 -- Sar
 #wallunit 7106 -- Archer
 #wallmult 20
+#guardcom 7713 -- Sar
+#guardunit 7103 -- Spearman
+#guardmult 12
 #moreheat 1
 #moreorder 1
 #end
@@ -106368,16 +106387,21 @@ Priests: Moderately strong; most priests are also mages."
 #defcom1 6890 -- Bhödpa Sde Pa (Clan Chief)
 #defcom2 6892 -- Mi Go Sde Pa (Clan Chief)
 #defunit1 6876 -- Bhödpa Spearman
-#defmult1 40
-#defunit1b 6877 -- Bhödpa Archer
-#defmult1b 30
+#defmult1 10
+#defunit1b 6878 -- Bhödpa Swordsman
+#defmult1b 10
+#defunit1c 6877 -- Bhödpa Archer
+#defmult1c 10
 #defunit2 6879 -- Bhödpa Yak Rider
-#defmult2 20
+#defmult2 5
 #defunit2b 6885 -- Mi Gö
-#defmult2b 20
+#defmult2b 10
 #wallcom 6890 -- Bhödpa Sde Pa (Clan Chief)
 #wallunit 6877 -- Bhödpa Archer
 #wallmult 20
+#guardcom 6890 -- Clan Chief
+#guardunit 6882 -- Spear Soldier
+#guardmult 12
 #startcom 6890 -- Bhödpa Sde Pa (Clan Chief)
 #startscout 6889 -- Mi Gö Guide (Scout/Raid Commander)
 #startunittype1 6877 -- Bhödpa Archer
@@ -106472,16 +106496,19 @@ Priests: Moderately strong; all priests are also mages."
 #defcom1 6925 -- Bhödpa Sde Pa (Clan Chief)
 #defcom2 6930 -- Shambhalan Monk
 #defunit1 6908 -- Bhödpa Spearman
-#defmult1 40
+#defmult1 20
 #defunit1b 6909 -- Bhödpa Archer
-#defmult1b 30
+#defmult1b 10
 #defunit2 6911 -- Bhödpa Yak Rider
-#defmult2 20
+#defmult2 5
 #defunit2b 6921 -- Mi Gö
-#defmult2b 20
+#defmult2b 10
 #wallcom 6925 -- Bhödpa Sde Pa (Clan Chief)
 #wallunit 6909 -- Bhödpa Archer
 #wallmult 20
+#guardcom 6925 -- Clan Chief
+#guardunit 6916 -- Heavy Infantry
+#guardmult 10
 #startcom 6927 -- Shambhalan Dmag Dpon
 #startscout 6924 -- Bhödpa Scout
 #startunittype1 6913 -- Shambhalan Archer
@@ -106670,13 +106697,16 @@ Priests: Average, Spirit animals may appear to defend them in battles"
 #defunit1b 8076 -- Finnaithae Archer
 #defunit2 8074 -- Finnaithae Javelineer
 #defunit2b 8072 -- Finnaithae Griomenn
-#defmult1 20
-#defmult1b 24
-#defmult2 16
-#defmult2b 20
+#defmult1 10
+#defmult1b 15
+#defmult2 10
+#defmult2b 10
 #wallcom 8088 -- Finnaithae Chieftain
 #wallunit 8076 -- Finnaithae Archer
 #wallmult 20
+#guardcom 8088 -- Chieftain
+#guardunit 8072
+#guardmult 12
 #moreheat -1
 #end
 
@@ -106763,27 +106793,35 @@ Sailing: All commanders can sail. Only Schippers can transport troops."
 #defcom1 7941
 #defcom2 7946
 #defunit1 7951
+#defmult1 15
 #defunit1b 7954
-#defmult1b 20
+#defmult1b 10
 #defunit2 7957
-#defmult2 10
+#defmult2 5
 #defunit2b 7956
-#defmult2b 10
+#defmult2b 5
 #uwdefcom1 1067  -- Merman Captain
 #uwdefcom2 7969 -- Mermage
 #uwdefunit1 7971 -- Merman
+#uwdefmult1 10
 #uwdefunit1b 7971 -- Merman
-#defmult1b 20
+#uwdefmult1b 10
 #uwdefunit2 7973 -- Merman Hoplite
-#defmult2 10
+#uwdefmult2 10
 #uwdefunit2b 7973 -- Merman Hoplite
-#defmult2b 10
+#uwdefmult2b 10
 #wallcom 7941 -- Captain
 #wallunit 7939 -- Crossbowman
 #wallmult 20
+#guardcom 1067 -- Merman Captain
+#guardunit 7952 -- Halberdier 
+#guardmult 15
 #uwwallcom 1067  -- Merman Captain
 #uwwallunit 7971
 #uwwallmult 20
+#uwguardcom 1067  -- Merman Captain
+#uwguardunit 7973 -- Merman Hoplite
+#uwguardmult 15
 #moreprod 1
 #end
 
@@ -106870,17 +106908,22 @@ Priests: Average"
 #multihero1 6676 -- Baghatur
 #defcom1 6661
 #defcom2 6657
-#defunit1 6660
-#defmult1 20
-#defunit1b 6659
-#defmult1b 20
-#defunit2 6652
+#defunit1 6652
+#defmult1 5
+#defunit1b 6658
+#defmult1b 10
+#defunit1c 6659
+#defmult1c 10
+#defunit2 6660
 #defmult2 10
-#defunit2b 6653
-#defmult2b 10
+#defunit2b 6652
+#defmult2b 5
 #wallcom 6661
 #wallunit 6659
 #wallmult 20
+#guardcom 6661
+#guardunit 6658
+#guardmult 15
 #end
 
 #selectnation 192
@@ -106968,17 +107011,19 @@ Priests: Average, cannot preach however can perform blood sacrifice. Blood sacri
 #defcom1 7011
 #defcom2 7012
 #defunit1 7004
-#defmult1 20
+#defmult1 10
 #defunit1b 7003
-#defmult1b 20
+#defmult1b 10
 #defunit2 7007
-#defmult2 20
+#defmult2 10
 #defunit2b 7005
-#defmult2b 20
+#defmult2b 10
 #wallcom 7011
 #wallunit 7003
 #wallmult 20
-
+#guardcom 7011
+#guardunit 7006
+#guardmult 12
 #blessbonus 1
 #moreheat 1
 #moreorder 1
@@ -107023,18 +107068,23 @@ Priests: Weak. Most mages are priests and some are Heretics."
 #coastcom1 6698
 #coastcom2 6699
 #defcom1 6690
-#defunit1 6679
-#defmult1 40
-#defunit1b 6680
-#defmult1b 20
-#defcom2 6693
-#defunit2 6681
-#defmult2 20
-#defunit2 6682
-#defmult2 20
+#defunit1 6679 -- Tribesman
+#defmult1 10
+#defunit1b 6680 -- Hunter
+#defmult1b 10
+#defunit1c 6683 -- Spearman
+#defmult1c 10
+#defcom2 6693 -- Dreamer
+#defunit2 6684 -- Club Warrior
+#defmult2 10
+#defunit2b 6682 -- Longspear Warrior
+#defmult2b 10
 #wallcom 6690
 #wallunit 6681
 #wallmult 20
+#guardcom 6690
+#guardunit 6682 -- Longspear Warrior
+#guardmult 15
 
 #homerealm 10
 --#addgod 2789 -- Raven of the Underworld
@@ -107148,12 +107198,22 @@ Priests: Powerful, easily recruitable, can perform blood sacrifices. Priests of 
 #startunittype1 7041
 #startunitnbrs1 45
 #startscout 7055
-#defcom1 7046
-#defcom2 7054
-#defunit1 7039
-#defunit2 7041
-#defmult1 40
-#defmult2 40
+#defcom1 7046 -- Commander
+#defcom2 7053 -- Priest of the Four
+#defunit1 7039 -- Archer
+#defmult1 15 
+#defunit1b 7038  -- Milita
+#defmult1b 15 
+#defunit2 7041 -- Spearman
+#defmult2 15
+#defunit2b 7039 -- Archer
+#defmult2b 15
+#wallcom 7046
+#wallunit 7039
+#wallmult 20
+#guardcom 7046
+#guardunit 7041 -- Longspear Warrior
+#guardmult 15
 #hero1 7076
 #hero2 7074
 #multihero1 7058
@@ -107278,14 +107338,14 @@ Priests: Average"
 
 #defcom1 7180 -- Irami Commander
 #defunit1 7159 -- Irami Spearman
-#defmult1 20
+#defmult1 10
 #defunit1b 7160 -- Irami Archer
-#defmult1b 20
-#defcom2 7188 -- Emir
-#defunit2 7194 -- Irami Horseman
+#defmult1b 10
+#defcom2 7214 -- Imam
+#defunit2 7161 -- Mubarizun
 #defmult2 10
 #defunit2b 7199 -- Fida'yin
-#defmult2b 20
+#defmult2b 10
 #startcom 7180
 #startscout 7206
 #startunittype1 7159
@@ -107295,7 +107355,9 @@ Priests: Average"
 #wallcom 7180 -- Irami Commander
 #wallunit 7160 -- Irami Archer
 #wallmult 20
-
+#guardcom 7180
+#guardunit 7161
+#guardmult 12
 #hero1 7215 -- Philosopher
 #hero2 7216 -- Old Man of the Mountain
 --#hero3 7217 -- Prisoner
@@ -107356,19 +107418,22 @@ Priests: Average"
 #hero3 8118 -- Tóbájíshchíní (Child of Water)
 #fortera 1
 #templepic 5
-#defcom1 6566
-#defcom2 6568
-#defunit1 6577
-#defmult1 30
-#defunit1b 6576
-#defmult1b 20
-#defunit2 6578
-#defmult2 20
-#defunit2b 6581
-#defmult2b 20
+#defcom1 6566 -- Herd Leader
+#defcom2 6568 -- Spirit Speaker
+#defunit1 6577 -- Beaver Totem
+#defmult1 15
+#defunit1b 6576 -- Fox Totem
+#defmult1b 10
+#defunit2 6578 -- Armadillo Totem
+#defmult2 10
+#defunit2b 6581 -- Bear Totem
+#defmult2b 10
 #wallcom 6566
 #wallunit 6576
-#wallmult 30
+#wallmult 20
+#guardcom 6566
+#guardunit 6577
+#guardmult 15
 #homerealm 10
 #addgod 401 -- Bitch Queen
 #addgod 655 -- Scorpion King
@@ -107490,18 +107555,21 @@ Priests: Average, can cure disease"
 #defcom1 6584 -- Chief
 #defcom2 6586
 #defunit1 6594 -- Spear Warrior
-#defmult1 20
-#defunit1b 6592 -- Bow Hunter
-#defmult1b 20
-#defunit1c 6600 -- Lance Turquoise
+#defmult1 10
+#defunit1c 6596 -- Club Warrior
+#defmult1c 10
+#defunit1c 6592 -- Bow Hunter
 #defmult1c 10
 #defunit2 6598 -- Lodge Guard
-#defmult2 20
-#defunit2b 6601 -- Axe Turquoise
-#defmult2b 20
+#defmult2 10
+#defunit2b 6597 -- Tomahawk Warrior
+#defmult2b 15
 #wallcom 6584 -- Chief
 #wallunit 6592 -- Bow Hunter
-#wallmult 30
+#wallmult 20
+#guardcom 6584
+#guardunit 6598
+#guardmult 15
 #homerealm 10
 #addgod 401 -- Bitch Queen
 #addgod 655 -- Scorpion King
@@ -107615,16 +107683,19 @@ Priests: Average"
 #defcom1 6607
 #defcom2 6608
 #defunit1 6622 -- Spear Raider
-#defmult1 30
+#defmult1 15
 #defunit1b 6619 -- Club Trapper
-#defmult1b 30
+#defmult1b 15
 #defunit2 6624 -- Man Hunter (Crossbow)
-#defmult2 20
+#defmult2 10
 #defunit2b 6627
-#defmult2b 20
+#defmult2b 10
 #wallcom 6607
 #wallunit 6624 -- Man Hunter (Crossbow)
-#wallmult 30
+#wallmult 20
+
+-- needs guardmults
+
 #homerealm 10
 #addgod 401 -- Bitch Queen
 #addgod 655 -- Scorpion King
@@ -107747,18 +107818,22 @@ Priests: Average"
 --#addrecunit 6725 -- penitente
 #tradecoast 10
 #merccost -10
-#defcom1 6727
-#defcom2 6730
-#defunit1 6714
-#defunit1b 6719
-#defmult1 30
-#defmult1b 20
-#defunit2 6715
-#defunit2b 6716
-#defmult2 20
-#defmult2b 20
+#defcom1 6727 -- Venedian Captain
+#defcom2 6730 -- Venedian Doctor
+#defunit1 6714 -- Venedian City Guard
+#defunit1b 6719 -- Venedian Crossbow
+#defmult1 20
+#defmult1b 10
+#defunit2 6717 -- Venedian Halberdier
+#defunit2b 6716 -- Venedian Arbelestier
+#defmult2 10
+#defmult2b 10
 #wallcom 6727
 #wallunit 6719
+#wallmult 20
+#guardcom 6727
+#guardunit 6717
+#guardmult 15
 #homerealm 2  -- celtic
 #homerealm 3  -- mediterranean
 #homerealm 10  -- default
@@ -107832,17 +107907,19 @@ Priests: Average"
 #addrecunit 6966 -- Razorhorn
 #addrecunit 6976 -- Spirit Dancer
 #defcom1 6973 -- Okakuo
-#defcom2 6974
-#defunit1 6960
-#defunit1b 6959 -- Archer
-#defmult1 20
-#defmult1b 20
-#defunit2 6963
-#defunit2b 6959 -- Archer
-#defmult2 20
-#defmult2b 20
+#defcom2 6974 -- Ezomo
+#defunit1 6960 -- Iyokuo Skirmisher
+#defunit1b 6961 -- Iyokuo
+#defmult1 10
+#defmult1b 10
+#defunit2 6963 -- Veteran
+#defunit2b 6964 -- Veteran Longspear
+#defmult2 10
+#defmult2b 10
 #wallcom 6973 -- Okakuo
 #wallunit 6959 -- Archer
+#wallmult 15
+
 #startcom 6973 -- Okakuo
 #startscout 6972 -- Scout
 #startunittype1 6964 -- Vet Long
@@ -108012,29 +108089,35 @@ Priests: Average, temples more expensive."
 #defcom1 8052 -- Pirate Lord
 #defcom2 8040 -- Nu Kua Priest
 #defunit1 8031 -- Pirate with Falchion
-#defmult1 20
+#defmult1 15
 #defunit1b 8032 -- Pirate with crossbow
 #defmult1b 10
 #defunit2 8025 -- Shark Warrior
-#defmult2 10
+#defmult2 5
 #defunit2b 8028 -- Crab Soldier
-#defmult2b 10
+#defmult2b 5
 #uwdefcom1 8036 -- Crab General
 #uwdefcom2 8040 -- Nu Kua Priest
 #uwdefunit1 8023 -- Shrimp Soldier
-#uwdefmult1 20
+#uwdefmult1 10
 #uwdefunit1b 8025 -- Shark Warrior
-#uwdefmult1b 10
+#uwdefmult1b 5
 #uwdefunit2 8025 -- Shark Warrior
-#uwdefmult2 10
+#uwdefmult2 5
 #uwdefunit2b 8028 -- Crab Soldier
-#uwdefmult2b 10
+#uwdefmult2b 5
 #wallcom 8042 -- Nu Kua
 #wallunit 8032 -- Pirate with crossbow
 #wallmult 20
+#guardcom 8052
+#guardunit 8686 -- Pirate with Glaive
+#guardmult 12
 #uwwallcom 8036 -- Crab General
 #uwwallunit 8023 -- Shrimp Soldier
 #uwwallmult 20
+#uwguardcom 8036
+#uwguardunit 8028 -- Crab Soldier
+#uwguardmult 6
 #defmult1 20
 #defmult1b 10
 #defmult2 20
@@ -108102,6 +108185,7 @@ Priests: Weak"
 #wallcom 4
 #wallunit 4
 #wallmult 20
+-- needs guardmults
 -- this list is gonna need TRIMMED
 #homerealm 5  -- Middle East
 #homerealm 3 -- Mediterranean
@@ -108172,11 +108256,15 @@ Priests: Weak. Can unlock strong priests in capital."
 
 --defense
 #defcom1 9612 --"Magayaki"
-#defcom2 9612 --"Magayaki"
+#defcom2 9613 --"Madawaki"
 #defunit1 9604 --"Hausa Infantry"
-#defunit2 9603 --"Hausa Crossbowman"
-#defmult1 15
-#defmult2 10
+#defunit1b 9603 --"Hausa Crossbowman"
+#defmult1 10
+#defmult1b 10
+#defunit2 9606 --"Hausa Cavalry"
+#defunit2b 9607 --"Jarumi"
+#defmult2 5
+#defmult2b 5
 #wallcom 9612 -- "Magayaki"
 #wallunit 9603 -- "Hausa Crossbowman"
 #wallmult 15
@@ -108297,9 +108385,31 @@ Mechanics: Can create new Basalt Cities in forts, enabling some capital recruits
 #defunit2b 8707 -- Shambler Bastra
 #defmult2b 5
 
+#uwdefcom1 8712 -- Sothul
+#uwdefunit1 8702 -- Abyssal One Guard
+#uwdefmult1 10
+#uwdefunit1b 8703 -- Abyssal One Bast
+#uwdefmult1b 10
+
+#uwdefcom2 8715 -- Kurval
+#uwdefunit2 8702 -- Abyssal One Guard
+#uwdefmult2 10
+#uwdefunit2b 8707 -- Shambler Bastra
+#uwdefmult2b 5
+
 #wallcom 8712 -- Sothul
 #wallunit 8702 -- Abyssal One Guard
 #wallmult 20
+#guardcom 8712
+#guardunit 8702
+#guardmult 15
+
+#uwwallcom 8712 -- Sothul
+#uwwallunit 8702 -- Abyssal One Guard
+#uwwallmult 20
+#uwguardcom 8712
+#uwguardunit 8707
+#uwguardmult 6
 
 #startcom 8712 -- Sothul
 #startscout 8711 -- Sothul Dun
@@ -108425,28 +108535,52 @@ Priests: Average"
 
 
 
---#defcom1 7212 -- Sothul
---#defunit1 7202 -- Abyssal One Guard
---#defmult1 10
---#defunit1b 7203 -- Abyssal One Bast
---#defmult1b 10
+#defcom1 8927 -- Siyokoy Pamagat
+#defunit1 8902 -- Ugkoy Maharlika
+#defmult1 10
+#defunit1b 8904 -- Ugkoy Maharlika
+#defmult1b 10 
 
---#defcom2 7215 -- Kurval
---#defunit2 7202 -- Abyssal One Guard
---#defmult2 10
---#defunit2b 7207 -- Shambler Bastra
---#defmult2b 5
+#defcom2  8928 -- Siyokoy Panginoon
+#defunit2 8902 -- Ugkoy Maharlika
+#defmult2 10
+#defunit2b 8905 -- Siyokoy Maharlika
+#defmult2b 5
 
---#wallcom 7212 -- Sothul
---#wallunit 7202 -- Abyssal One Guard
---#wallmult 20
+#wallcom 8926
+#wallunit 8918
+#wallmult 20
 
---#startcom 7212 -- Sothul
---#startscout 7211 -- Sothul Dun
---#startunittype1 7203 -- Bast
---#startunittype2 7207 -- Bastra
---#startunitnbrs1 15
---#startunitnbrs2 5
+#guardcom 8928
+#guardunit 8905
+#guardmult 8
+
+#uwdefcom1 8927 -- Siyokoy Pamagat
+#uwdefunit1 8902 -- Ugkoy Maharlika
+#uwdefmult1 10
+#uwdefunit1b 8904 -- Ugkoy Maharlika
+#uwdefmult1b 10
+
+#uwdefcom2 8928 -- Siyokoy Panginoon
+#uwdefunit2 8902 -- Ugkoy Maharlika
+#uwdefmult2 10
+#uwdefunit2b 8905 -- Siyokoy Maharlika
+#uwdefmult2b 5
+
+#uwwallcom 8927
+#uwwallunit 8902
+#uwwallmult 20
+
+#uwguardcom 8928
+#uwguardunit 8905
+#uwguardmult 8
+
+#startcom 8927 -- Siyokoy Pamagat
+#startscout 8937 -- Ugkoy Scout
+#startunittype1 8902 -- Ugkoy Maharlika
+#startunittype2 8903 -- Ugkoy Maharlika
+#startunitnbrs1 30
+#startunitnbrs2 15
 
 --#hero1 7277 -- Coral Kurvant
 --#hero2 7278 -- Pearl Kurvant
@@ -108939,6 +109073,7 @@ Priests: Average"
 #end
 
 #selectnation 33 -- EA Niefelheim
+#wallmult 4
 #hero1 1382  -- Abductor
 #hero2 586  -- Great hag
 #hero3 8154 -- Skadi
@@ -109885,6 +110020,7 @@ Nation: Reduced income. Halved population increased from Growth scales."
 #end
 
 #selectnation 80 -- MA Jotunheim
+#wallmult 4
 #hero1 1382  -- Abductor
 #hero2 586  -- Great hag
 #hero3 8153 -- Trickster
@@ -110076,7 +110212,7 @@ Nation: Reduced income. Halved population increased from Growth scales."
 #futuresite "MA Xibalba Heroes"
 #end
 
-#selectnation 51
+#selectnation 51 -- MA Phlegra
 #summary "Race: Humans, Cyclopes and Gigantes.
 Military: Few Gigante Warriors. Mostly human slave soldiers. No sacred troops
 Magic: Fire, Earth, Air, and some Water, Death and Nature. Arcane Slave Communions. Cyclops smiths
@@ -110085,6 +110221,7 @@ Dominion: Increases unrest"
 #hero1 3163  -- Phlegyas
 #hero2 7931 -- Pyramon
 #hero3 7936 -- Polybotes
+#wallmult 4
 #uwbuild 1
 #delgod 8406 -- Titan of the Sun
 #delgod 8407 -- Titan of War and Farming
@@ -110457,22 +110594,26 @@ Priests: Weak, magical"
 
 #wallcom 2410
 #wallunit 2408 -- cb
-#wallmult 
+#wallmult 10
 
 #uwwallcom 2410
 #uwwallunit 2408 -- cb
 #uwwallmult 10
 
 #guardcom 2410 -- ichtycentaur
-#guardunit 1043 -- soldier
+#guardunit 1045 -- Mermidon
 #guardmult 10
+
+#uwguardcom 2410
+#uwguardunit 1045
+#uwguardmult 10
 
 #defcom1 2372 -- ichtysatyr
 #defcom2 2410 -- ichtycentaur
 #defunit1 1043 -- soldier
-#defmult1 20
-#defunit1b 1043 -- soldier
-#defmult1b 20
+#defmult1 10
+#defunit1b 2404 -- ichtysatyr
+#defmult1b 10
 #defunit2 1410 -- cataphract
 #defmult2 5
 #defunit2b 2412 -- ichtytaur
@@ -110481,9 +110622,9 @@ Priests: Weak, magical"
 #uwdefcom1 2372 -- ichtysatyr
 #uwdefcom2 2410 -- ichtycentaur
 #uwdefunit1 1043 -- soldier
-#uwdefmult1 20
-#uwdefunit1b 1043 -- soldier
-#uwdefmult1b 20
+#uwdefmult1 10
+#uwdefunit1b 2404 -- ichtysatyr
+#uwdefmult1b 10
 #uwdefunit2 1410 -- cataphract
 #uwdefmult2 5
 #uwdefunit2b 2412 -- ichtytaur
@@ -110958,6 +111099,7 @@ Bless bonuses: Poison Resistance +10"
 #end
 
 #selectnation 117 -- LA Utgård
+#wallmult 4
 #hero1 1382  -- Abductor
 #hero2 3439  -- Urd
 #hero3 3440  -- Verdandi
