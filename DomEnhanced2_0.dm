@@ -104068,8 +104068,33 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7797
 #end
 
-
 #newsite 2585
+#clear
+#name "EA Atlantis Summons"
+#rarity 5
+#level 0
+#path 2
+#look 9
+#homemon 7455 -- coral snek
+#homemon 1664 -- monster fish
+#homecom 7226 -- dagon
+#homecom 7276 -- cetus
+#end
+
+#newsite 2586
+#clear
+#name "EA Atlantis Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 6
+#homecom 8170
+#homecom 8171
+#homecom 8172
+#end
+
+
+#newsite 2587
 #name "Testestest"
 #rarity 5
 #level 0
@@ -109313,6 +109338,11 @@ Dominion: Dominion hides province ownership."
 #cheapgod20 8322 -- Basalt Architect
 #cheapgod20 8400 -- Terror of the Deep
 
+--#landrec 1682
+--#landcom 1694
+
+#futuresite "EA Atlantis Summons"
+#futuresite "EA Atlantis Heroes"
 #moreprod 1
 #end
 
