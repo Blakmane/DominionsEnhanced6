@@ -3685,6 +3685,24 @@
 #len 2
 #end
 
+#newweapon 1884 -- Troop SS
+#copyweapon 74 -- Sword of Sharpness
+#def 1
+#att 1
+#dmg 8
+#magic
+#end
+
+#newweapon 1885 -- Troop GSS
+#copyweapon 108 -- Great Sword of Sharpness
+#def 2
+#att 2
+#dmg 12
+#magic
+#end
+
+
+
 -- END OF NEW WEAPONS
 
 #selectweapon 27  -- 2h Boulder
@@ -26965,7 +26983,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #stealthy 0
 #incprovdef 1
 #okundeadleader
-#weapon 108  -- Sword of Sharpness
+#weapon 1885  -- Troop GSS
 #armor 544 -- spectral scale
 #armor 549 -- spectral helmet
 #nametype 131  -- EA Ulm Male
@@ -32514,21 +32532,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 2  -- Shield
 #reclimit 3
 #twiceborn 7231 -- Wight Giant
-#end
-
-#newmonster 7664
-#copystats 74  -- Black Plate Infantry
-#clearweapons
-#cleararmor
-#spr1 "magicenhanced/eeblackzwei.tga"
-#spr2 "magicenhanced/eeblackzwei2.tga"
-#name "Blacksteel Zweihander"
-#descr "The Blacksteel Zweihander is a warrior clad in full plate armor made from Blacksteel and armed with an incredibly sharp Great Sword. Forged from Blacksteel, their weapons can cut through the sharpest armor and these Zweihanders are feared by even the great cold giants of the North. The swords are each made by a Master Craftsmen of Ulm and only a few can be created each month. The inhabitants of Ulm are large and can endure much physical punishment before collapsing. They are trained to move and fight in heavy armor without tiring."
-#gcost 18
-#mor 13
-#weapon 108  -- Greatsword of Sharpness
-#armor 215  -- Full Plate
-#armor 218  -- Full Helmet
 #end
 
 #newmonster 7667
@@ -38731,19 +38734,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #deathdisease 6
 #end
 
-#newmonster 7966
-#copystats 74  -- Black Plate Infantry
-#clearweapons
-#spr1 "magicenhanced/eeblackiron.tga"
-#spr2 "magicenhanced/eeblackiron2.tga"
-#name "Black Iron Infantry"
-#descr "The black iron infantry of Ulm are warriors inspired by an Iron Angel. Clad in full plate armor made from the Blacksteel of Ulm they are armed with incredibly sharp weapons and tower shields. They are trained to move and fight in heavy armor without tiring. The Blacksteel armor of Ulm is made by the master smiths and their superior craftsmanship is obvious to anyone wearing an Ulmish armor. Both stronger and lighter than ordinary plate armor, they make the soldiers of Ulm superior to any other human infantry. Inspired by the presence of an Iron Angel to create almost supernaturally sharp weaponry, the black iron infantry have higher morale than even the black plate infantry of Ulm. The inhabitants of Ulm are large and can endure much physical punishment before collapsing. The influence of the Iron Angel has imbued their armor with some resistance to magic."
-#gcost 12
-#mr 12
-#mor 13
-#weapon 74  -- Sword of Sharpness
-#end
-
 #newmonster 7967
 #copystats 361  -- Vine Man
 #clearweapons
@@ -39328,16 +39318,67 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 7 2 -- G
 #end
 
+#newmonster 7966
+#copystats 74  -- Black Plate Infantry
+#spr1 "magicenhanced/eeblackiron.tga"
+#spr2 "magicenhanced/eeblackiron2.tga"
+#name "Black Iron Infantry"
+#descr "The black iron infantry of Ulm are warriors inspired by an Iron Angel. Clad in full plate armor made from the Blacksteel of Ulm they are armed with incredibly sharp weapons and tower shields. They are trained to move and fight in heavy armor without tiring. The Blacksteel armor of Ulm is made by the master smiths and their superior craftsmanship is obvious to anyone wearing an Ulmish armor. Both stronger and lighter than ordinary plate armor, they make the soldiers of Ulm superior to any other human infantry. Inspired by the presence of an Iron Angel to create almost supernaturally sharp weaponry, the black iron infantry have higher morale than even the black plate infantry of Ulm. The inhabitants of Ulm are large and can endure much physical punishment before collapsing. The influence of the Iron Angel has imbued their armor with some resistance to magic."
+#gcost 10030
+#rcost 120
+#rpcost 46
+#mr 11
+#mor 15
+--#reclimit 3
+#haltheretic 6
+--#reinvigoration 1
+#hp 15 -- stats match Black Knights
+#str 13
+#att 12
+#def 12
+#clearweapons
+#weapon 74  -- Full SS
+#cleararmor
+#armor 38 -- Blacksteel Full Plate
+#armor 40 -- Blacksteel Helm
+#armor 41 -- Blacksteel Tower Shield
+#end
 
 #newmonster 7996
 #copystats 74  -- Black Plate Infantry
 #clearweapons
-#spr1 "magicenhanced/eeblackiron.tga"
-#spr2 "magicenhanced/eeblackiron2.tga"
+#spr1 "magicenhanced/eeblacksword1.tga"
+#spr2 "magicenhanced/eeblacksword2.tga"
 #name "Blacksteel Swordsman"
 #descr "The Blacksteel Swordsmen of Ulm are warriors clad in full plate armor and bearing incredibly sharp swords made from the Blacksteel of Ulm. They are trained to move and fight in heavy armor without tiring. The Blacksteel armor of Ulm is made by the master smiths and their superior craftsmanship is obvious to anyone wearing an Ulmish armor. Both stronger and lighter than ordinary plate armor, they make the soldiers of Ulm superior to any other human infantry. The inhabitants of Ulm are large and can endure much physical punishment before collapsing."
-#gcost 15
-#weapon 74  -- Sword of Sharpness
+#gcost 10018
+#rcost 35
+#rpcost 26
+#mor 13
+#str 12
+#att 11
+#def 11
+#weapon 1884  -- Troop SS
+#end
+
+#newmonster 7664
+#copystats 74  -- Black Plate Infantry
+#clearweapons
+#cleararmor
+#spr1 "magicenhanced/eeblackzwei.tga"
+#spr2 "magicenhanced/eeblackzwei2.tga"
+#name "Blacksteel Zweihander"
+#descr "The Blacksteel Zweihander is a warrior clad in full plate armor made from Blacksteel and armed with an incredibly sharp Great Sword. Forged from Blacksteel, their weapons can cut through the toughest armor and these Zweihanders are feared by even the great cold giants of the North. The swords are each made by a Master Craftsmen of Ulm and only a few can be created each month. The inhabitants of Ulm are large and can endure much physical punishment before collapsing. They are trained to move and fight in heavy armor without tiring."
+#gcost 10022
+#rcost 45
+#rpcost 31
+#mor 13
+#str 12
+#att 11
+#def 11
+#weapon 1885  -- Troop GSS
+#armor 215  -- Full Plate
+#armor 218  -- Full Helmet
 #end
 
 
@@ -54787,6 +54828,8 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #horsetattoo 1
 #mr 10
 #end
+
+
 
 
 
@@ -82279,7 +82322,7 @@ Initiates of the Deep can be recruited in any land fort."
 #mor 14  -- base 12
 #mr 16  -- base 13
 #str 13  -- base 12
-#magicskill 1 1
+#magicskill 7 1
 #magicskill 6 1
 #okmagicleader
 #stealthy 10
@@ -98379,14 +98422,29 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #com 7985 -- Imam
 #end
 
-#newsite 2221
-#name "Blacksteel Forge"
-#path 0 
+#newsite 2220
+#name "Angel Forge"
 #level 0
 #rarity 5
 #res 50
-#homemon 7664 -- Blacksteel Zweihander
-#homemon 7996 -- Black Iron Infantry
+#path 9 
+#look 4
+#nat 60
+#natmon 7966 -- Black Iron
+#natmon 7664 -- Blacksteel Zweihander
+#natmon 7996 -- Black Iron Infantry
+#end
+
+#newsite 2221
+#name "Blacksteel Forge"
+#level 0
+#rarity 5
+#res 50
+#path 0 
+#look 5
+#nat 60
+#natmon 7664 -- Blacksteel Zweihander
+#natmon 7996 -- Black Iron Infantry
 #end
 
 #newsite 2222
@@ -104232,8 +104290,33 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 1915
 #end
 
-
 #newsite 2592
+#name "MA Ulm Summons"
+#level 0
+#rarity 5
+#path 3
+#look 0
+#homemon 694 -- bear
+#homecom 7301 -- rhine
+#homecom 1975  -- angel
+#end
+
+#newsite 2593
+#clear
+#name "MA Ulm Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 8
+#homecom 377
+#homecom 378
+#homecom 507
+#homecom 8192
+#homecom 8193
+#end
+
+
+#newsite 2594
 #name "Testestest"
 #rarity 5
 #level 0
@@ -109987,7 +110070,13 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #cheapgod20 8404 -- Blacksteel Colossus
 #cheapgod20 8388 -- Blacksteel Angel
 #cheapgod20 8499 -- Divine Anvil
-#addrecunit 7966 -- Black Iron Infantry
+--#addrecunit 7966 -- Black Iron Infantry
+
+#futuresite "Blacksteel Forge"
+#futuresite "Angel Forge"
+#futuresite "MA Ulm Summons"
+#futuresite "MA Ulm Heroes"
+
 #end
 
 #selectnation 61 -- MA Marignon
@@ -117102,24 +117191,6 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 0
 #pathlevel 1 1
 #restricted 13 -- EA Ulm
-#restricted 60 -- MA Ulm
-#end
-
-#selectspell 2452
-#name "Empower Blacksteel Forge"
-#descr "The caster empowers the great forges in the capital to allow the creation of magical blacksteel in large quantities. The forges will end production immediately if the capital falls or if the caster of this spell dies."
-#details "Generates 50 resources and allows recruitment of Blacksteel Swordsmen and Blacksteel Zweihanders."
-#school 3
-#researchlevel 5
-#path 0 0
-#pathlevel 0 5
-#effect 10084
-#damage 251 -- Ench51  -- Empower Forge
-#nreff 1
-#friendlyench 1
-#hiddenench 1
-#fatiguecost 4000
-#onlyatsite 8  -- Forges of Ulm
 #restricted 60 -- MA Ulm
 #end
 
@@ -138638,31 +138709,12 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #pathlevel 4
 #path 1 0
 #pathlevel 3 
+#spec 12599424 -- AN, ignore shields, UWOK, enemy immune
 #damage 549755813888
 #aoe 666
 #descr "The caster entreats the local battle spirits, known as Tan Garki, to protect the entirety of a local army. The spirits will deflect and parry roughly half of all incoming attacks."
 #details "Protective Force 20"
 #restricted 205 -- Houssa
-#end
-
-#selectspell 4117 -- Earthquake clone
-#copyspell 696
-#effect 133
-#damage 350 -- Ench150
-#spec 8388608
-#ainocast 1
-
-#researchlevel 1
-#fatiguecost 20
-#casttime 200
-#pathlevel 0 1
-#nextingeo -1
-
-#nextspell 696 -- Earthquake
-#end
-
-#selectspell 696 -- Earthquake
-#school -1
 #end
 
 -- Aura of Decay
@@ -140200,6 +140252,41 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #nextspell 4209
 #end
 
+-- Skip 4211~4239 (4240+) - Battlefield-wide spell changes
+
+
+#selectspell 4240 -- Harrespil nextspell
+#name "Blacksteel Forge"
+#descr "The caster creates great forges in the fortress to allow the creation of magical blacksteel armaments in large quantities. The forge is specially designed to allow the creation of incredibly sharp blades that can cut through even the most protective armor. Each sword is made by a master craftsman and requires an immense amount of resources to forge."
+#details "Generates 50 resources and allows recruitment of Blacksteel Swordsmen and Blacksteel Zweihanders."
+#school -1
+#researchlevel 0
+#path 0 3 -- E
+#effect 10082
+#damage 251 -- Ench51  -- Empower Forge
+#fatiguecost 2500
+#nreff 1
+#end
+
+#selectspell 4241 -- Harrespil EA
+#copyspell 106  -- Record of Creation
+#name "Create Blacksteel Forge"
+#descr "The caster creates great forges in the fortress to allow the creation of magical blacksteel armaments in large quantities. The forge is specially designed to allow the creation of incredibly sharp blades that can cut through even the most protective armor. Each sword is made by a master craftsman and requires an immense amount of resources to forge."
+#details "Generates 50 resources and allows recruitment of Blacksteel Swordsmen and Blacksteel Zweihanders. Upgrades to an Angel Forge while an Iron Angel is present."
+#school 3
+#researchlevel 4
+#path 0 0
+#pathlevel 0 3
+#path 1 3
+#pathlevel 1 3
+#nreff 1
+#effect 10083
+#damage -1
+#fatiguecost 2500
+#nextspell 4240
+#restricted 60 -- MA Ulm
+#end
+
 
 
 -- END OF NEW SPELLS
@@ -140725,6 +140812,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 455 -- Contact Iron Angel
 #descr "The caster contacts an Iron Angel to teach the weak to be strong. The Angel is a divine being professing the might of skill and craftsmanship. It teaches men not to trust in sorcery or religion. Only faith in yourself and the weapon you wield will grant you true strength. The Iron Angel is not sacred and will readily hunt down and slay fanatical adherents of other faiths. Whilst at a fort the Angel will inspire great craftsmanship from the inhabitants."
+#details "While the Angel is at a Blacksteel Forge, it will be empowered into an Angel Forge, allowing recruitment of Black Iron Infantry."
 #researchlevel 7
 #pathlevel 0 4
 #end
@@ -141327,6 +141415,13 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #precision 4
 #end
 
+#selectspell 731 -- Wind of Death
+#aoe 665 -- 100% -> 25%
+#spec 4096 -- MRNE -> MRN
+#pathlevel 0 5
+#fatiguecost 200
+#end
+
 #selectspell 739 -- Wailing Winds
 #researchlevel 7
 #fatiguecost 400
@@ -141542,7 +141637,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 709 -- Cleansing Water
-#notfornation 8388744 -- DemonUndead, AN, UWOK
+--#spec 8388744 -- DemonUndead, AN, UWOK
 #end
 
 #selectspell 809 -- old Encase in Ice disable
@@ -142483,7 +142578,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1221 -- Lion Sentinels
-#effect 82 -- permanent
+#effect 10082 -- permanent
 #fatiguecost 1500
 #end
 
@@ -142936,6 +143031,467 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #restricted 197 -- Iram
 #end
 
+-- START OF BATTLEFIELD WIDE CHANGES
+
+
+
+
+#selectspell 4211 -- Earthquake clone
+#copyspell 696
+#effect 133
+#damage 350 -- Ench150 -- Earthquake
+#spec 8388608
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 696 -- Earthquake
+#end
+
+#selectspell 696 -- Earthquake
+#school -1
+#end
+
+#selectspell 4212 -- Wind of Death clone
+#copyspell 731
+#effect 133
+#damage 351 -- Ench151 -- Wind of Death
+#spec 8388608
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 731 -- Wind of Death
+#end
+
+#selectspell 731 -- Wind of Death
+#school -1
+#end
+
+#selectspell 4213 -- Bone Grinding clone
+#copyspell 886
+#effect 133
+#damage 352 -- Ench152 -- Bone Grinding
+#spec 8388608
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 886 -- Bone Grinding
+#end
+
+#selectspell 886 -- Bone Grinding
+#school -1
+#end
+
+#selectspell 4214 -- Unraveling clone
+#copyspell 1248
+#effect 133
+#damage 353 -- Ench153 -- Unraveling
+#spec 8388608
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 1248 -- Unraveling
+#end
+
+#selectspell 1248 -- Unraveling
+#school -1
+#end
+
+#selectspell 4215 -- Bloodletting clone
+#copyspell 1411
+#effect 133
+#damage 354 -- Ench154 -- Bloodletting
+#spec 0
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 1411 -- Bloodletting
+#end
+
+#selectspell 1411 -- Bloodletting
+#school -1
+#end
+
+#selectspell 4216 -- Arcane Domination clone
+#copyspell 904
+#effect 133
+#damage 355 -- Ench155 -- Arcane Domination
+#spec 8388608
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 904 -- Arcane Domination
+#end
+
+#selectspell 904 -- Arcane Domination
+#school -1
+#end
+
+#selectspell 4217 -- Undead Mastery clone
+#copyspell 1365
+#effect 133
+#damage 356 -- Ench156 -- Undead Mastery
+#spec 8388608
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 1365 -- Undead Mastery
+#end
+
+#selectspell 1365 -- Undead Mastery
+#school -1
+#end
+
+#selectspell 4218 -- Beast Mastery clone
+#copyspell 1375
+#effect 133
+#damage 357 -- Ench157 -- Beast Mastery
+#spec 8388608
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 1375 -- Beast Mastery
+#end
+
+#selectspell 1375 -- Beast Mastery
+#school -1
+#end
+
+#selectspell 4219 -- Master Enslave clone
+#copyspell 1372
+#effect 133
+#damage 358 -- Ench158 -- Master Enslave
+#spec 8388608
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 1372 -- Master Enslave
+#end
+
+#selectspell 1372 -- Master Enslave
+#school -1
+#end
+
+#selectspell 4220 -- Army of Rats clone
+#copyspell 917
+#effect 133
+#damage 359 -- Ench159 -- Army of Rats
+#spec 8388608
+#details "Size -1, HP -30%, Str -3, Def +1, Morale -5, Map move -2.
+Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 917 -- Army of Rats
+#end
+
+#selectspell 917 -- Army of Rats
+#school -1
+#end
+
+#selectspell 4221 -- Curse of Stones clone
+#copyspell 815
+#effect 133
+#damage 360 -- Ench160 -- Curse of Stones
+#spec 8388608
+#details "Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3.
+Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 815 -- Curse of Stones
+#end
+
+#selectspell 815 -- Curse of Stones
+#school -1
+#end
+
+#selectspell 4222 -- Iron Bane clone
+#copyspell 857
+#effect 133
+#damage 361 -- Ench161 -- Iron Bane
+#spec 0
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 857 -- Iron Bane
+#end
+
+#selectspell 857 -- Iron Bane
+#school -1
+#end
+
+#selectspell 4223 -- Doom clone
+#copyspell 883
+#effect 133
+#damage 362 -- Ench162 -- Doom
+#spec 8388608
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 883 -- Doom
+#end
+
+#selectspell 883 -- Doom
+#school -1
+#end
+
+#selectspell 4224 -- Hephaestus' Bane clone
+#copyspell 2087
+#effect 133
+#damage 363 -- Ench163 -- Hephaestus' Bane
+#spec 8388608
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 2087 -- Hephaestus' Bane
+#end
+
+#selectspell 2087 -- Hephaestus' Bane
+#school -1
+#end
+
+#selectspell 4225 -- Astral Barrier clone
+#copyspell 2174
+#effect 133
+#damage 364 -- Ench164 -- Astral Barrier
+#spec 8388608
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 2174 -- Astral Barrier
+#end
+
+#selectspell 2174 -- Astral Barrier
+#school -1
+#end
+
+#selectspell 4226 -- Drain Arcana clone
+#copyspell 2163
+#effect 133
+#damage 365 -- Ench165 -- Drain Arcana
+#spec 8388608
+#details "Magic Beings slowed 50%, Att -2, Def -2. Disruption to mage spellcasting: 10
+Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 2163 -- Drain Arcana
+#end
+
+#selectspell 2163 -- Drain Arcana
+#school -1
+#end
+
+#selectspell 4227 -- Slow Motion clone
+#copyspell 2085
+#effect 133
+#damage 366 -- Ench166 -- Slow Motion
+#spec 8388608
+#details "Slow 50%, Att -2, Def -2.
+Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 2085 -- Slow Motion
+#end
+
+#selectspell 2085 -- Slow Motion
+#school -1
+#end
+
+#selectspell 4228 -- Stir the Deep clone
+#copyspell 3860
+#effect 133
+#damage 367 -- Ench167 -- Stir the Deep
+#spec 41943040
+#details "The effect of Mist covers the battlefield and 50% of the battlefield is covered with Slime. Slime doubles attack or trample intervals. Decreases attack skill by 2, and halves combat speed. Decreases defence skill by 2, unless the victim is quickened and also not suffering from slow. Every round, slimed creatures roll MR + DRN. A result of 22 or higher ends the effect.
+Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 3860 -- Stir the Deep
+#end
+
+#selectspell 3860 -- Stir the Deep
+#school -1
+#end
+
+#selectspell 4229 -- Chant of the Iron Cult clone
+#copyspell 2467
+#effect 133
+#damage 368 -- Ench168 -- Chant of the Iron Cult
+#spec 8388608
+#details "Spell disruption: 5
+Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 2467 -- Chant of the Iron Cult
+#end
+
+#selectspell 2467 -- Chant of the Iron Cult
+#school -1
+#end
+
+#selectspell 4230 -- Gotterdammerung clone
+#copyspell 2467
+#effect 133
+#damage 369 -- Ench169 -- Gotterdammerung
+#spec 8388608
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 2467 -- Gotterdammerung
+#end
+
+#selectspell 2467 -- Gotterdammerung
+#school -1
+#end
+
+#selectspell 4231 -- Swamp Rot clone
+#copyspell 2689
+#effect 133
+#damage 370 -- Ench170 -- Swamp Rot
+#spec 8388608
+#details "Plague effect per round: 1d2 dmg + 1d4 fatigue
+Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 2689 -- Swamp Rot
+#end
+
+#selectspell 2689 -- Swamp Rot
+#school -1
+#end
+
+#selectspell 4232 -- Bacchanalia clone
+#copyspell 2709
+#effect 133
+#damage 371 -- Ench171 -- Bacchanalia
+#spec 8388608
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 2709 -- Bacchanalia
+#end
+
+#selectspell 2709 -- Bacchanalia
+#school -1
+#end
+
+#selectspell 4233 -- Oozing Marshlands clone
+#copyspell 2964
+#effect 133
+#damage 372 -- Ench172 -- Oozing Marshlands
+#spec 0
+#details "Slimed targets have their att/def/combat speed halved. All units without Swamp Survival suffer -1 Att, -1 Def, +2 Enc and -20% combat speed.
+Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 2964 -- Oozing Marshlands
+#end
+
+#selectspell 2964 -- Oozing Marshlands
+#school -1
+#end
+
+#selectspell 4234 -- Terrors of the Void clone
+#copyspell 3037
+#effect 133
+#damage 373 -- Ench173 -- Terrors of the Void
+#spec 8388608
+#details "Enemies failing to resist with MR are afflicted with Confusion, and may gain +10 Insanity.
+Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 3037 -- Terrors of the Void
+#end
+
+#selectspell 3037 -- Terrors of the Void
+#school -1
+#end
+
+#selectspell 4235 -- Chains of Fire clone
+#copyspell 3229
+#effect 133
+#damage 374 -- Ench174 -- Chains of Fire
+#spec 0
+#details "Morale check vs 21, 3 AN fire dmg.
+Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 3229 -- Chains of Fire
+#end
+
+#selectspell 3229 -- Chains of Fire
+#school -1
+#end
+
+#selectspell 4236 -- Inferior Armaments clone
+#copyspell 2471
+#effect 133
+#damage 375 -- Ench175 -- Inferior Armaments
+#spec 8388608
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 2471 -- Inferior Armaments
+#end
+
+#selectspell 2471 -- Inferior Armaments
+#school -1
+#end
+
+#selectspell 4237 -- Hammer the Arcane clone
+#copyspell 2472
+#effect 133
+#damage 376 -- Ench176 -- Hammer the Arcane
+#spec 8388608
+#details "Magic beings suffer Decay, Illusions must save vs MR or be destroyed.
+Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 2472 -- Hammer the Arcane
+#end
+
+#selectspell 2472 -- Hammer the Arcane
+#school -1
+#end
+
+#selectspell 4238 -- Fetid Stench clone
+#copyspell 2690
+#effect 133
+#damage 377 -- Ench177 -- Fetid Stench
+#spec 0
+#details "Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 2690 -- Fetid Stench
+#end
+
+#selectspell 2690 -- Fetid Stench
+#school -1
+#end
+
+#selectspell 4239 -- Endurance of Giants clone
+#copyspell 2829
+#effect 133
+#damage 378 -- Ench178 -- Endurance of Giants
+#spec 8388608
+#details "Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3.
+Can only be cast once per combat round."
+#ainocast 1
+#nextingeo -1
+#nextspell 2829 -- Endurance of Giants
+#end
+
+#selectspell 2829 -- Endurance of Giants
+#school -1
+#end
+
+
+
+
+
+
+
+
+-- END OF BATTLEFIELD WIDE CHANGES
+
 #selectitem 628
 #name "Orna, Sword of Tethra"
 #descr "Orna was the sword of the great fomorian King Tethra, who now rules the Plain of Joy. Ogma found it during his battles against Fomorians. It is a deadly blade that, when unsheathed, recounts the deeds of its owner."
@@ -142970,7 +143526,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectitem 630
 #name "Eckesacks"
 #descr "This is a blade made in hardened dragonblood by Ecke the Giant. Dietrich looted it from the warm corpse of its owner. It is a gruesome sword that makes a mess out of its opponent."
-#copyspr 23
+#copyspr 22
 #constlevel 12
 #mainpath 0
 #mainlevel 4
@@ -155953,31 +156509,6 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #newevent
 #rarity 5
 #req_owncapital 1
-#req_ench 251 -- Ench51  -- Empower Forge
-#req_freesites 1
-#req_nositenbr 2221 -- Blacksteel Forge
-#req_pop0ok
-#msg "Forge Created."
-#notext
-#nolog
-#addsite 2221 -- Forge
-#end
-
-#newevent
-#rarity 5
-#req_noench 251 -- Ench51  -- Empower Forge
-#req_capital 1
-#req_site 1  -- Blacksteel Forge
-#req_pop0ok
-#msg "Forge removal. [Blacksteel Forge]"
-#notext
-#nolog
-#removesite 2221 -- Blacksteel Forge
-#end
-
-#newevent
-#rarity 5
-#req_owncapital 1
 #req_ench 254 -- Ench54  -- Gate to the Netherworld
 #req_freesites 1
 #req_nositenbr 2141 -- Netherworld Gate
@@ -164351,6 +164882,89 @@ It is now fully repaired and a new crew has been assigned to it."
 #nolog
 #1unit 7903  -- Overgrown Statue
 #end
+
+
+#newevent -- check for an iron angel
+#rarity 5
+#req_monster 1975 -- iron angel
+#req_site 1
+#req_pop0ok
+#msg "Forge test. [Angel Forge]"
+#notext
+#nolog
+#incvar 6007
+#end
+
+#newevent -- check for a blacksteel angel
+#rarity 5
+#req_monster 8388 -- blacksteel angel
+#req_site 1
+#req_pop0ok
+#msg "Forge test. [Angel Forge]"
+#notext
+#nolog
+#incvar 6007
+#end
+
+#newevent -- replace site if there is neither
+#rarity 5
+#req_varzero 6007
+#req_site 1
+#req_pop0ok
+#msg "Forge removal. [Angel Forge]"
+#notext
+#nolog
+#removesite 2220 -- Angel Forge
+#addsite 2221 -- Blacksteel Forge
+#end
+
+#newevent
+#rarity 5
+#req_varzero 6007 -- Do not create site if there are angels at an angel forge
+#req_ench 251 -- Ench51  -- Empower Forge
+#req_nositenbr 2221 -- Blacksteel Forge
+#req_pop0ok
+#msg "Forge Created."
+#notext
+#nolog
+#addsite 2221 -- Forge
+#end
+
+#newevent -- Reset angel count back to 0
+#rarity 5
+#req_site 1
+#req_pop0ok
+#msg "Forge reset. [Angel Forge]"
+#notext
+#nolog
+#clearvar 6007
+#end
+
+#newevent
+#rarity 5
+#req_monster 8388 -- blacksteel
+#req_site 1  -- Blacksteel Forge
+#req_pop0ok
+#msg "The Blacksteel Angel here has empowered the Blacksteel Forge. [Blacksteel Forge]"
+--#notext
+#nolog
+#removesite 2221 -- Blacksteel Forge
+#addsite 2220 -- Angel Forge
+#end
+
+#newevent
+#rarity 5
+#req_monster 1975 -- iron
+#req_site 1  -- Blacksteel Forge
+#req_pop0ok
+#msg "The Iron Angel here has empowered the Blacksteel Forge. [Blacksteel Forge]"
+--#notext
+#nolog
+#removesite 2221 -- Blacksteel Forge
+#addsite 2220 -- Angel Forge
+#end
+
+
 
 
 
