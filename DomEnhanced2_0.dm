@@ -87875,6 +87875,15 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #weapon 532  -- Tail Sweep
 #end
 
+#selectmonster 3399 -- Thyrmsgode
+#rpcost 2
+#gcost 10070
+#end
+
+#selectmonster 3400 -- Thyrmshirding
+#rpcost 2
+#gcost 10070
+#end
 
 #selectmonster 3405  -- Hirdvaetti
 #bodyguard 3
@@ -104315,8 +104324,43 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8193
 #end
 
-
 #newsite 2594
+#name "MA Jotunheim Summons"
+#level 0
+#rarity 5
+#path 2
+#look 4
+#homemon 694 -- bear
+#homemon 1224 -- dire woof
+#homemon 1309 -- jotun wolf
+#homemon 2363 -- gloso
+#homemon 3193 -- jotun draug
+#homemon 3420 -- rimvaetti
+#homemon 3747 -- ice ele s8
+#homecom 844 -- niefel jarl
+#homecom 7297 -- son of mim
+#homecom 3425 -- dwarf
+#homecom 3426 -- dwarf
+#homecom 3427 -- dwarf
+#homecom 3428 -- dwarf
+#end
+
+#newsite 2595
+#name "MA Jotunheim Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 3
+#homecom 1382  -- Abductor
+#homecom 586  -- Great hag
+#homecom 8153 -- Trickster
+#homecom 8154 -- Skadi
+#homecom 508  -- Spornsjall, Wolf Lord
+#homecom 3424  -- Undying
+#end
+
+
+#newsite 2596
 #name "Testestest"
 #rarity 5
 #level 0
@@ -110361,6 +110405,10 @@ Nation: Reduced income. Halved population increased from Growth scales."
 #hero5 508  -- Spornsjall, Wolf Lord
 #hero6 3424  -- Undying
 #uwbuild 1
+
+#futuresite "MA Jotunheim Summons"
+#futuresite "MA Jotunheim Heroes"
+
 #end
 
 #selectnation 81 -- MA Nidavangr
@@ -146055,6 +146103,7 @@ This will also prevent their skin from drying out."
 #armor 0  -- Remove Armor
 #constlevel 5
 #type 8  -- Misc
+#mainpath 2
 #mainlevel 1
 #secondarypath 8
 #secondarylevel 1
