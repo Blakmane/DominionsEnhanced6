@@ -1754,17 +1754,33 @@
 #end
 
 #newweapon 1658
-#copyweapon 567  -- Drake Fire
+#copyweapon 383 -- Throw Flames
 #name "Breath of Divine Fire"
-#ammo 8
-#range 8
+#range 15
+#ammo 30
+#notdismounted
+#dmg 12
+#aoe 1
+#nratt 1
+#aftercloud 3 4096
+#aftercloudarea 4
+#nostr
 #end
 
 #newweapon 1659
-#copyweapon 567 -- Fire Breath
+#copyweapon 21 -- Javelin
 #name "Divine Rocket-Arrows"
-#range 25
-#ammo 8
+#range 40
+#ammo 30
+#att -5
+#flyspr 354 4 -- Fire Javelin
+#sound 13
+#armorpiercing
+#nostr
+#dmg 12
+#nratt 3
+#notdismounted
+#secondaryeffectalways 841 -- Small Area Fire 10AP
 #end
 
 #newweapon 1660
@@ -3701,6 +3717,12 @@
 #magic
 #end
 
+#newweapon 1886 -- Fire Breath
+#copyweapon 601 -- Cave Fire Bottle
+#dmg 15
+#ammo 1012 -- 12 fatigue
+#end
+
 
 
 -- END OF NEW WEAPONS
@@ -5295,27 +5317,31 @@
 #nofalldmg
 #end
 
-#newmonster 6530
-#spr1 "magicenhanced/eedivinedragonempty.tga"
+#newmonster 6531
+#spr1 "magicenhanced/eedivinedragon.tga"
+#spr2 "magicenhanced/eedivinedragon2.tga"
+#unmountedspr1 "magicenhanced/eedivinedragonempty.tga"
+#unmountedspr2 "magicenhanced/eedivinedragonempty.tga"
 #name "Divine Fire-Dragon"
-#descr "The Divine Fire-Dragon is a weapon consisting of a long barrel shaped like a dragon's head with an open mouth. In combat it is packed with burning-powder that releases great clouds of flame and smoke when ignited. The powder will burn and set alight enemies in front of the weapon when it is released. The weapon is manned by an Imperial Footman trained in its use by the Alchemists. War machines are very unsuited to bodyguard duty. If the crewman is killed but the war machine survives a new crew will be appointed after the battle."
+#descr "The Divine Fire-Dragon is a weapon consisting of a long barrel shaped like a dragon's head with an open mouth. In combat it is packed with burning-powder that releases great clouds of flame and smoke when ignited. The powder will burn and release a gout of flame that will create a cloud of sulphur wherever it lands. The weapon is manned by an Imperial Footman trained in its use by the Alchemists. If the crewman is killed but the war machine survives a new crew will be appointed after the battle."
 #miscshape
 #gcost 0
 #size 6
-#hp 15
-#prot 13
-#mr 5
+#hp 24
+#prot 14
+#mr 10
 #mor 50
 #str 5
 #att 5
 #def 0
-#prec 5
+#prec 15
 #enc 0
 #mapmove 0
 #ap 2
 #weapon 0
+#weapon 1658 -- Divine Fire Breath
 #deathfire 6
-#fireres -5
+#fireres 5
 #pierceres
 #noleader
 #immobile
@@ -5325,59 +5351,96 @@
 #itemslots 1  -- no slots
 #maxage 500
 #startage 10
-#firstshape 6531 -- Divine Fire-Dragon
-#cleanshape
+#mountiscom 1
+#nothrowoff
+#nofalldmg
+#regainmount 1
+#nobarding
+#poisonres 25
+#coldres 10
+#mountmnr 6530 -- Handler
+#mountedinspector
+#nametype 188 -- Vehicle
 #end
 
-#newmonster 6531
+#newmonster 6530
 #copystats 1902  -- Ministry Guardsman
 #clearweapons
-#spr1 "magicenhanced/eedivinedragon.tga"
-#spr2 "magicenhanced/eedivinedragon2.tga"
-#name "Divine Fire-Dragon"
-#descr "The Divine Fire-Dragon is a weapon consisting of a long barrel shaped like a dragon's head with an open mouth. In combat it is packed with burning-powder that releases great clouds of flame and smoke when ignited. The powder will burn and set alight enemies in front of the weapon when it is released. The weapon is manned by an Imperial Footman trained in its use by the Alchemists. War machines are very unsuited to bodyguard duty. If the crewman is killed but the war machine survives a new crew will be appointed after the battle."
-#fireres 15
+#spr1 "magicenhanced/eefirecarthandler1.tga"
+#spr2 "magicenhanced/eefirecarthandler2.tga"
+#name "Fire-Dragon Handler"
+#descr "The Divine Fire-Dragon is a weapon consisting of a long barrel shaped like a dragon's head with an open mouth. In combat it is packed with burning-powder that releases great clouds of flame and smoke when ignited. The powder will burn and set alight enemies in front of the weapon when it is released. The weapon is manned by an Imperial Footman trained in its use by the Alchemists. If the crewman is killed but the war machine survives a new crew will be appointed after the battle."
 #patrolbonus 0
-#weapon 1658 -- Divine Fire Breath
-#weapon 1  -- Spear
+#fireres 5
+#ap 7
+#noleader
+#weapon 92  -- Fist
+#nobarding
+#nothrowoff
+#nofalldmg
+#end
+
+#newmonster 6533
+#spr1 "magicenhanced/eefirelanceshield.tga"
+#spr2 "magicenhanced/eefirelanceshield2.tga"
+#unmountedspr1 "magicenhanced/eefirelanceshieldempty.tga"
+#unmountedspr2 "magicenhanced/eefirelanceshieldempty.tga"
+#name "Divine Rocket-Arrow Shield"
+#descr "This is a framework mounted with many rockets filled with burning-powder. In combat the rockets are lit to create a fearsome barrage that rains down upon the enemies of T'ien Ch'i. The rockets are of great help during sieges to weaken the enemy walls. The weapon is manned by an Imperial Footman trained in its use by the Alchemists. Should the contraption be damaged the rocket-arrows may explode violently. If the crewman is killed but the machine survives a new crew will be appointed after the battle."
+#miscshape
+#gcost 0
 #size 6
-#bodyguard -5
-#secondshape 6530 -- Empty Fire Dragon
-#cleanshape
+#hp 24
+#prot 14
+#mr 10
+#mor 50
+#str 5
+#att 5
+#def 0
+#prec 15
+#enc 0
+#mapmove 0
+#ap 2
+#weapon 0
+#weapon 1659 -- Divine Rocket-Arrows
+#deathfire 6
+#fireres 5
+#pierceres
+#noleader
+#immobile
+#blind
+#neednoteat
+#diseaseres 100
+#itemslots 1  -- no slots
+#maxage 500
+#startage 10
+#mountiscom 1
+#nothrowoff
+#nofalldmg
+#regainmount 1
+#nobarding
+#poisonres 25
+#coldres 10
+#mountmnr 6532 -- Handler
+#mountedinspector
+#nametype 188 -- Vehicle
 #end
 
 #newmonster 6532
-#name "Divine Rocket-Arrow Shield"
-#spr1 "magicenhanced/eefirelanceshieldempty.tga"
-#descr "This is a framework mounted with many rockets filled with burning-powder. In combat the rockets are lit to create a fearsome barrage that rains down upon the enemies of T'ien Ch'i. The rockets are of great help during sieges to weaken the enemy walls. The weapon is manned by an Imperial Footman trained in its use by the Alchemists. Should the contraption be damaged the rocket-arrows may explode violently. War machines are very unsuited to bodyguard duty. If the crewman is killed but the machine survives a new crew will be appointed after the battle."
-#miscshape
-#gcost 0
-#size 9
-#hp 25
-#prot 13
-#mr 5
-#mor 50
-#str 5
-#att 5
-#def 0
-#prec 5
-#enc 0
-#mapmove 0
-#ap 2
-#weapon 0
-#deathfire 12
-#fireres -5
-#pierceres
+#copystats 1902  -- Ministry Guardsman
+#clearweapons
+#spr1 "magicenhanced/eefirecarthandler1.tga"
+#spr2 "magicenhanced/eefirecarthandler2.tga"
+#name "Rocket-Arrow Shield Handler"
+#descr "This is a framework mounted with many rockets filled with burning-powder. In combat the rockets are lit to create a fearsome barrage that rains down upon the enemies of T'ien Ch'i. The rockets are of great help during sieges to weaken the enemy walls. The weapon is manned by an Imperial Footman trained in its use by the Alchemists. Should the contraption be damaged the rocket-arrows may explode violently. If the crewman is killed but the machine survives a new crew will be appointed after the battle."
+#patrolbonus 0
+#fireres 5
+#ap 7
 #noleader
-#immobile
-#blind
-#neednoteat
-#diseaseres 100
-#itemslots 1  -- no slots
-#maxage 500
-#startage 10
-#firstshape 6533 -- Rocket Arrow Shield
-#cleanshape
+#weapon 92  -- Fist
+#nobarding
+#nothrowoff
+#nofalldmg
 #end
 
 #newmonster 6534
@@ -33164,7 +33227,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #prec 10
 #shockres 0
 #deathfire 5
-#weapon 567 -- Fire Breath
+#weapon 1886 -- Fire Breath
 #weapon 20  -- Bite
 #end
 
@@ -34440,24 +34503,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #patrolbonus 0
 #weapon 1657 -- Fire Lance
 #weapon 1  -- Spear
-#end
-
-#newmonster 6533
-#copystats 1902  -- Ministry Guardsman
-#clearweapons
-#spr1 "magicenhanced/eefirelanceshield.tga"
-#spr2 "magicenhanced/eefirelanceshield2.tga"
-#name "Divine Rocket-Arrow Shield"
-#descr "This is a framework mounted with many rockets filled with burning-powder. In combat the rockets are lit to create a fearsome barrage that rains down upon the enemies of T'ien Ch'i. The rockets are of great help during sieges to weaken the enemy walls. The weapon is manned by an Imperial Footman trained in its use by the Alchemists. Should the contraption be damaged the rocket-arrows may explode violently. War machines are very unsuited to bodyguard duty. If the crewman is killed but the machine survives a new crew will be appointed after the battle."
-#siegebonus 10
-#patrolbonus 0
-#bodyguard -5
-#weapon 1659 -- Divine Rocket-Arrows
-#weapon 1  -- Spear
-#armor 2  -- Shield
-#size 9
-#secondshape 6532 -- Empty Rocket-Arrow Shield
-#cleanshape
 #end
 
 #newmonster 7772
@@ -83441,6 +83486,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 791 -- tc red guard
+#springpower 25
 #end
 
 #selectmonster 792 -- tc general
@@ -83452,6 +83498,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #selectmonster 793  -- Prince General
 #gcost 350
 #magicskill 9 1
+#springpower 25
 #end
 
 #selectmonster 811
@@ -97709,10 +97756,11 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #newsite 2134
 #name "Alchemists Barracks"
-#path 0 
+#path 0
+#look 3 
 #level 0
 #rarity 5
-#res 50
+#res 25
 #nat 69 -- MA TC
 #natmon 7771 -- Lance Trooper
 #end
@@ -99688,7 +99736,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 1490 -- umbr
 #homemon 2509 -- shard
 #homemon 1500 -- sepl
-#homemon 1983 -- green lion
 #homecom 1440 -- iron anc
 #homecom 1476 -- tomb oracle
 #homecom 7710 -- kur
@@ -100467,6 +100514,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 9
 #look 3
+#homecom 942  -- Immortal
 #homecom 943  -- Immortal
 #homecom 944  -- Master with the Iron Crutch
 #homecom 8125 -- Master of Earth and Water
@@ -102757,7 +102805,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7306 -- divine general
 #homecom 7227 -- carp
 #homecom 7530 -- heaven shard
-#homemon 7304 -- king of ghosts
+#homecom 7304 -- king of ghosts
 #homemon 7282 -- west tiger
 #homemon 7283 -- east dragon
 #homemon 7284 -- south bird
@@ -104524,8 +104572,67 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8178
 #end
 
-
 #newsite 2598
+#clear
+#name "MA T'ien Ch'i Summons"
+#rarity 5
+#level 0
+#path 4
+#look 0
+#homemon 3009 -- buffalo
+#homemon 1140 -- tiger
+#homemon 8022 -- dire tiger
+#homemon 1338 -- cel hound
+#homemon 903 -- cel servant
+#homemon 902 -- cel Soldier
+#homemon 3764 -- s5 mercury
+#homemon 3762 -- s7 mercury
+#homemon 2134 -- terra sold
+#homemon 7728 -- terra horse
+#homemon 7729 -- terra chariot
+#homecom 7772 -- terra general
+#homecom 1908 -- huli
+#homecom 6528 -- cart
+#homecom 6531 -- fire-dragon
+#homecom 6533 -- rocket-arrow
+#end
+
+#newsite 2599
+#clear
+#name "MA T'ien Ch'i Summons Continued"
+#rarity 5
+#level 0
+#path 4
+#look 0
+#homecom 7465 -- female shishi
+#homecom 7466 -- male shishi
+#homecom 7450 -- shije xian
+#homecom 7452 -- tian xian
+#homecom 7306 -- divine general
+#homecom 7227 -- carp
+#homecom 7304 -- king of ghosts
+#homemon 7282 -- west tiger
+#homemon 7283 -- east dragon
+#homemon 7284 -- south bird
+#homemon 7285 -- north turtle
+#end
+
+#newsite 2600
+#clear
+#name "MA T'ien Ch'i Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 5
+#homecom 942  -- Immortal
+#homecom 943  -- Immortal
+#homecom 944  -- Immortal
+#homecom 2458  -- Tenjiro, the dragon girl
+#homecom 8196 -- Sun Wu
+#homecom 8197 -- Li Er
+#end
+
+#newsite 2601
 #name "Testestest"
 #rarity 5
 #level 0
@@ -109279,11 +109386,12 @@ Priests: Average"
 #end
 
 #selectnation 22 -- T'ien Ch'i
-#hero1 943  -- Immortal
-#hero2 944  -- Master with the Iron Crutch
-#hero3 8125 -- Master of Earth and Water
-#hero4 8126 -- Immortal Archer
-#hero5 8127 -- Bird Maiden
+#hero1 942  -- Immortal
+#hero2 943  -- Immortal
+#hero3 944  -- Master with the Iron Crutch
+#hero4 8125 -- Master of Earth and Water
+#hero5 8126 -- Immortal Archer
+#hero6 8127 -- Bird Maiden
 #uwbuild 1
 #addgod 8474 -- Ancestral Barrow
 #addgod 8321 -- Divine Sage Empress
@@ -110010,6 +110118,57 @@ Dominion: Dominion hides province ownership."
 #startunittype2 2386  -- Coral Clan Soldier
 #startunitnbrs2 20
 
+
+#plainfortrec 1291 -- Turtle Warrior
+#forestfortrec 1291
+#mountainfortrec 1291
+#swampfortrec 1291
+#wastefortrec 1291
+#farmfortrec 1291
+
+#plainfortrec 2807 -- Shore fighter
+#forestfortrec 2807
+#mountainfortrec 2807
+#swampfortrec 2807
+#wastefortrec 2807
+#farmfortrec 2807
+
+#plainfortrec 2809 -- Sideraspist
+#forestfortrec 2809
+#mountainfortrec 2809
+#swampfortrec 2809
+#wastefortrec 2809
+#farmfortrec 2809
+
+#plainfortcom 1293 -- Turtle chief
+#forestfortcom 1293
+#mountainfortcom 1293
+#swampfortcom 1293
+#wastefortcom 1293
+#farmfortcom 1293
+
+#plainfortcom 1696 -- Priest
+#forestfortcom 1696
+#mountainfortcom 1696
+#swampfortcom 1696
+#wastefortcom 1696
+#farmfortcom 1696
+
+#plainfortcom 2811 -- Shore commander
+#forestfortcom 2811
+#mountainfortcom 2811
+#swampfortcom 2811
+#wastefortcom 2811
+#farmfortcom 2811
+
+#plainfortcom 2813 -- Explorer
+#forestfortcom 2813
+#mountainfortcom 2813
+#swampfortcom 2813
+#wastefortcom 2813
+#farmfortcom 2813
+
+
 #futuresite "Pearl Armory"
 #futuresite "EA Pelagia Summons"
 #futuresite "EA Pelagia Heroes"
@@ -110039,6 +110198,42 @@ Dominion: Dominion hides province ownership."
 #startunitnbrs1 20
 #startunittype2 2376  -- Ichtysatyr Shield
 #startunitnbrs2 30
+
+#plainfortrec 2376 -- Ichtysatyr
+#forestfortrec 2376
+#mountainfortrec 2376
+#swampfortrec 2376
+#wastefortrec 2376
+#farmfortrec 2376
+
+#plainfortrec 2378 -- Ichtysatyr Warrior
+#forestfortrec 2378
+#mountainfortrec 2378
+#swampfortrec 2378
+#wastefortrec 2378
+#farmfortrec 2378
+
+#plainfortcom 1038 -- Capricorn
+#forestfortcom 1038
+#mountainfortcom 1038
+#swampfortcom 1038
+#wastefortcom 1038
+#farmfortcom 1038
+
+#plainfortcom 1054 -- Siren
+#forestfortcom 1054
+#mountainfortcom 1054
+#swampfortcom 1054
+#wastefortcom 1054
+#farmfortcom 1054
+
+#plainfortcom 2372 -- Ichtysatyr Commander
+#forestfortcom 2372
+#mountainfortcom 2372
+#swampfortcom 2372
+#wastefortcom 2372
+#farmfortcom 2372
+
 #futuresite "EA Oceania Summons"
 #futuresite "EA Oceania Sea Creatures"
 #futuresite "EA Oceania Heroes"
@@ -110342,9 +110537,10 @@ Dominion: Laws may be enacted that ban blood and increase scales"
 #selectnation 69 -- MA T'ien Chi
 #hero1 942  -- Immortal
 #hero2 943  -- Immortal
-#hero3 2458  -- Tenjiro, the dragon girl
-#hero4 8196 -- Sun Wu
-#hero5 8197 -- Li Er
+#hero3 944  -- Immortal
+#hero4 2458  -- Tenjiro, the dragon girl
+#hero5 8196 -- Sun Wu
+#hero6 8197 -- Li Er
 #uwbuild 1
 #addgod 550 -- Master Alchemist
 #addgod 8321 -- Divine Sage Empress
@@ -110363,6 +110559,12 @@ Dominion: Laws may be enacted that ban blood and increase scales"
 #addgod 8334 -- Terracotta Emperor
 #cheapgod20 8321 -- Divine Sage Empress
 #cheapgod20 8332 -- Kirin
+
+#futuresite "Alchemists Barracks"
+#futuresite "MA T'ien Ch'i Summons"
+#futuresite "MA T'ien Ch'i Summons Continued"
+#futuresite "MA T'ien Ch'i Heroes"
+
 #end
 
 #selectnation 76 -- MA Machaka
@@ -111002,6 +111204,35 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 #startunittype2 1524  -- Slave Guardian
 #startunitnbrs2 20
 
+
+#plainfortrec 970 -- Hybrid
+#forestfortrec 970
+#mountainfortrec 970
+#swampfortrec 970
+#wastefortrec 970
+#farmfortrec 970
+
+#plainfortrec 971 -- Hybrid Trooper
+#forestfortrec 971
+#mountainfortrec 971
+#swampfortrec 971
+#wastefortrec 971
+#farmfortrec 971
+
+#plainfortcom 443 -- Star Child
+#forestfortcom 443
+#mountainfortcom 443
+#swampfortcom 443
+#wastefortcom 443
+#farmfortcom 443
+
+#plainfortcom 2470 -- Hybrid Commander
+#forestfortcom 2470
+#mountainfortcom 2470
+#swampfortcom 2470
+#wastefortcom 2470
+#farmfortcom 2470
+
 #futuresite "MA R'lyeh Void Beings"
 #futuresite "MA R'lyeh Summons"
 #futuresite "MA R'lyeh Heroes"
@@ -111025,6 +111256,48 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 #cheapgod20 8314 -- Triton Queen
 #cheapgod20 8381 -- Sea Nymph
 #cheapgod20 8477 -- Mother of Pearls
+
+#plainfortrec 2821 -- hoplite
+#forestfortrec 2821
+#mountainfortrec 2821
+#swampfortrec 2821
+#wastefortrec 2821
+#farmfortrec 2821
+
+#plainfortrec 2869 -- Apostate
+#forestfortrec 2869
+#mountainfortrec 2869
+#swampfortrec 2869
+#wastefortrec 2869
+#farmfortrec 2869
+
+#plainfortcom 1696 -- Priest
+#forestfortcom 1696
+#mountainfortcom 1696
+#swampfortcom 1696
+#wastefortcom 1696
+#farmfortcom 1696
+
+#plainfortcom 2825 -- Commander
+#forestfortcom 2825
+#mountainfortcom 2825
+#swampfortcom 2825
+#wastefortcom 2825
+#farmfortcom 2825
+
+#plainfortcom 2867 -- Daduchos
+#forestfortcom 2867
+#mountainfortcom 2867
+#swampfortcom 2867
+#wastefortcom 2867
+#farmfortcom 2867
+
+#plainfortcom 1415 -- Pelagian Mermage
+#forestfortcom 1415
+#mountainfortcom 1415
+#swampfortcom 1415
+#wastefortcom 1415
+#farmfortcom 1415
 
 #futuresite "MA Pelagia Summons"
 #futuresite "MA Pelagia Heroes"
@@ -111077,7 +111350,7 @@ Priests: Weak, magical"
 #addreccom 8580 -- Capricorn
 #addreccom 8585 -- Ichtycentaur Hierophant
 #addreccom 8587 -- Ichtycentaur Sage
-#coastfortcom 8580 -- Capricorn
+#landcom 8580 -- Capricorn
 
 --#coastfortcom 8583 -- Ichtytaur
 #landcom 8584 -- Ichtytaur Hierophant land
@@ -111088,22 +111361,17 @@ Priests: Weak, magical"
 --#landcom 8599 -- Oceanid
 
 #addrecunit 2404 --Ichtysatyr stealthy w/ net
---#landrec 2404
-#coastfortrec 2404
+#landrec 2404
 #addrecunit 2406 --Ichtysatyr stealthy w/ shield
---#landrec 2406
-#coastfortrec 2406
+#landrec 2406
 #addrecunit 2408 --Ichtysatyr stealthy w/ Gastraphetes
---#landrec 1043
-#coastfortrec 2408
+#landrec 2408
 #addrecunit 1043 --Ichtysatyr w/ bronze
 #landrec 1043
 #addrecunit 1045 --Mermidon
 #addrecunit 1408 --Ichtycentaur
 #addrecunit 1410 --Ichtycentaur Cataphract
 #addrecunit 2412 --Ichtytaur
---#addrecunit 2414 --Ichtytaur Warrior
---#landrec 2414
 #landrec 2415
 #landrec 8596 -- ichtytaur river warrior land
 
@@ -118843,7 +119111,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #name "Create Fire Lances"
 #descr "The sages of T'ien Ch'i know the secret to creating a burning powder that can be used in war. Over centuries the Alchemists have refined the formula and learnt to enhance it with fire magic to create a powerful destructive force. The caster creates an alchemical preparation area for Fire Lances and training grounds are prepared in the province for their use. These weapons can then be used by specially trained soldiers of the Imperial army. Once the spell is cast the effect will remain until the caster dies or the province falls to enemy hands."
 #school 3
-#researchlevel 3
+#researchlevel 2
 #path 0 0
 #path 1 3
 #effect 10084
@@ -118860,33 +119128,33 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #name "Divine-Fire-Dragons"
 #descr "The sages of T'ien Ch'i know the secret to creating a burning powder that can be used in war. Over centuries the Alchemists have refined the formula and learnt to enhance it with fire magic to create a powerful destructive force. The caster creates several tubes with ornate dragon-heads and packs them with the enhanced burning-powder. These contraptions are carried to war by specially trained imperial soldiers. When the powder is ignited a great blast of flames will erupt from the weapon, burning anything in front of them."
 #school 3
-#researchlevel 5
+#researchlevel 4
 #path 0 0
 #pathlevel 0 1
 #path 1 3
 #pathlevel 1 1
-#effect 10001
-#nreff 4
+#effect 10021
+#nreff 1
 #damage 6531 -- Divine Fire Dragons
-#fatiguecost 1000
+#fatiguecost 400
 #restricted 69 -- MA Tien Chi
 #end
 
 #selectspell 2559
 #name "Divine-Rocket-Arrow Shields"
-#descr "The sages of T'ien Ch'i know the secret to creating a burning powder that can be used in war. Over centuries the Alchemists have refined the formula and learnt to enhance it with fire magic to create a powerful destructive force. The caster creates several frameworks upon which are mounted rocket-arrows packed with the enhanced burning-powder. These contraptions are wheeled to war crewed by specially trained imperial soldiers. When the powder is ignited the rockets will fly across the battlefield, before exploding with great force. These weapons are very useful in sieges. Only the Celestial City has the resources required in the manufacture of the Divine-Rocket-Arrow Shields."
+#descr "The sages of T'ien Ch'i know the secret to creating a burning powder that can be used in war. Over centuries the Alchemists have refined the formula and learnt to enhance it with fire magic to create a powerful destructive force. The caster creates several frameworks upon which are mounted rocket-arrows packed with the enhanced burning-powder. These contraptions are wheeled to war crewed by specially trained imperial soldiers. When the powder is ignited the rockets will fly across the battlefield, before exploding with great force. These weapons are very useful in sieges."
 #school 3
-#researchlevel 7
+#researchlevel 6
 #path 0 0
 #pathlevel 0 2
 #path 1 3
-#pathlevel 1 2
-#effect 10001
-#nreff 1001
+#pathlevel 1 1
+#effect 10021
+#nreff 1
 #damage 6533 -- Rocket-Arrow Shields
-#fatiguecost 1200
+#fatiguecost 600
 #restricted 69 -- MA Tien Chi
-#onlyatsite 51  -- Celestial City
+--#onlyatsite 51  -- Celestial City
 #end
 
 #selectspell 2561
@@ -121320,8 +121588,9 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #fatiguecost 800
 #nreff 1001
 #damage -1039  -- Vitriol Creatures
-#restricted 102 -- LA Agartha
-#restricted 69 -- MA T'ien Ch'i
+--#restricted 102 -- LA Agartha
+--#restricted 69 -- MA T'ien Ch'i
+#school -1
 #end
 
 #selectspell 2726
@@ -126519,7 +126788,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 2
 #pathlevel 0 2
 #pathlevel 1 1
-#fatiguecost 1500
+#fatiguecost 1800
 #nreff 5
 #damage 7468 -- Pearl Warrior
 #restricted 40
@@ -127280,7 +127549,7 @@ All effects scale with friendly Dominion."
 #researchlevel 4
 #path 0 0
 #pathlevel 0 2
-#fatiguecost 400
+#fatiguecost 500
 #effect 10021 -- commander
 #damage 6534 -- Pythian Fire Onager
 #nreff 1
