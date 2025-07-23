@@ -110560,6 +110560,8 @@ Dominion: Laws may be enacted that ban blood and increase scales"
 #cheapgod20 8321 -- Divine Sage Empress
 #cheapgod20 8332 -- Kirin
 
+#addforeigncom 1890 -- Apothecary
+
 #futuresite "Alchemists Barracks"
 #futuresite "MA T'ien Ch'i Summons"
 #futuresite "MA T'ien Ch'i Summons Continued"
