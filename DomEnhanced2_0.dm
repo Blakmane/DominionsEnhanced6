@@ -17312,7 +17312,6 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #armor 20  -- Iron Cap
 #armor 2  -- Shield
 #undisciplined
-#mounted
 #xploss 100
 #mountmnr 6967
 #skilledrider 3
@@ -17644,7 +17643,6 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #armor 20  -- Iron Cap
 #armor 2  -- Shield
 #holy
-#mounted
 #xploss 100
 #cleanshape
 #mountmnr 6970
@@ -43067,7 +43065,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #att 14
 #def 14
 #hp 16
-#mounted
 #clearweapons
 #weapon 36  -- Ice lance
 #itemslots 2040326
@@ -54829,6 +54826,101 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #mr 10
 #end
 
+#newmonster 9117 -- MA Pel Hierophant Water
+#copystats 2867 -- Daduchos
+#spr1 "magicenhanced/blue_hierophantw1.tga"
+#spr2 "magicenhanced/blue_hierophantw2.tga"
+#name "Hierophant of the Closed Realm"
+#descr "."
+#float
+#heretic 3
+#clearmagic
+#magicskill 0 1
+#magicskill 4 1
+#custommagic 1920 100 -- FAWE
+#gcost 10005
+#end
+
+#newmonster 9118 -- MA Pel Hierophant Land
+#copystats 2868 -- Daduchos Land
+#spr1 "magicenhanced/blue_hierophantl1.tga"
+#spr2 "magicenhanced/blue_hierophantl2.tga"
+#name "Hierophant of the Closed Realm"
+#descr "."
+#heretic 3
+#magicboost 0 1
+#clearweapons
+#weapon 1818 -- Torch of Stars
+#clearmagic
+#magicskill 0 1
+#magicskill 4 1
+#custommagic 1920 100 -- FAWE
+#gcost 10005
+#end
+
+#newmonster 9119 -- MA Pel Hierarch Water
+#copystats 2865 -- Conqueror
+#spr1 "magicenhanced/blue_hierarchw1.tga"
+#spr2 "magicenhanced/blue_hierarchw2.tga"
+#name "Hierarch of the Closed Realm"
+#descr "."
+#float
+#inspirational 1
+#cleararmor
+#armor 123
+#armor 14
+#armor 189 -- pearl shield
+#startage 36
+#clearmagic
+#magicskill 1 1 -- A
+#magicskill 9 1 -- H
+#custommagic 3840 100 -- AWES
+#gcost 10010
+#end
+
+#newmonster 9120 -- MA Pel Hierarch Land
+#copystats 2866 -- Conqueror Land
+#spr1 "magicenhanced/blue_hierarchl1.tga"
+#spr2 "magicenhanced/blue_hierarchl2.tga"
+#name "Hierarch of the Closed Realm"
+#descr "."
+#inspirational 1
+#cleararmor
+#armor 123
+#armor 14
+#armor 189 -- pearl shield
+#startage 36
+#clearmagic
+#magicskill 1 1 -- A
+#magicskill 9 1 -- H
+#custommagic 3840 100 -- AWES
+#gcost 10010
+#end
+
+#newmonster 9121 -- MA Pel Mystic Guide Water
+#copystats 2823 -- Pelagian Mystic
+#spr1 "magicenhanced/blue_mysticguidew1.tga"
+#spr2 "magicenhanced/blue_mysticguidew2.tga"
+#name "Mystic Guide"
+#descr "."
+#float
+#okleader
+#clearweapons
+#weapon 389
+#holy
+#end
+
+#newmonster 9122 -- MA Pel Mystic Guide Land
+#copystats 2824 -- Pelagian Mystic Land
+#spr1 "magicenhanced/blue_mysticguidel1.tga"
+#spr2 "magicenhanced/blue_mysticguidel2.tga"
+#name "Mystic Guide"
+#descr "."
+#okleader
+#clearweapons
+#weapon 389
+#holy
+#end
 
 
 
@@ -67477,9 +67569,11 @@ Each month he will collect a magical pearl and can create more using water gems.
 #magicskill 7 1
 #end
 
+
 #newmonster 8337 -- Zmey Gorynch human
-#copystats 1917
-#copyspr 1917
+#copystats 1918
+#spr1 "extrapretenders/zmeyhuman1.tga"
+#spr2 "extrapretenders/zmeyhuman2.tga"
 #name "Zmey Gorynych"
 #descr "The Zmey Gorynych is an ancient weather spirit of great power. Born as a simple snake, the creature began to grow and by 100 years of age was as large as a man. It then underwent a marvelous change, sprouting wings and gaining a roar like thunder. It can take the form of a handsome young man astride a magnificent white horse which it uses to seduce and beguile the weak willed. Over the years many would-be heroes have come to slay the beast, however it has bested them all. The physical body of the creature is not well suited for spell casting and its skills will be reduced when casting spells from paths other than Air. Therefore, the Zmey will tend to adopt human form for spellcasting, but when wounded will revert to its true form."
 #diseaseres 100
@@ -67488,6 +67582,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 40
 #moreprod -1
 #hp 20
+#prot 0
+#str 13
+#att 12
+#def 12
 #mr 18
 #copyspr 1917  -- Knyaz
 #clearweapons
@@ -82037,9 +82135,8 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 378  -- Hero - Raterik
-#copystats 113  -- Lord Guardian for haltheretic
+--#copystats 113  -- Lord Guardian for haltheretic
 #name "Hero"
-#mounted
 #gcost 1
 #rcost 1
 #size 5
@@ -82052,6 +82149,7 @@ Initiates of the Deep can be recruited in any land fort."
 #def 16  -- base 14
 #prec 10
 #castledef 5
+#haltheretic 5
 #heal
 #enc 3  -- base 4
 #mapmove 3
@@ -82118,7 +82216,6 @@ Initiates of the Deep can be recruited in any land fort."
 #str 13  -- base 12
 #enc 3  -- base 4
 #holy
-#mounted
 #clearweapons
 #weapon 1695 -- Hero's Blade
 #weapon 330  -- Alicorn
@@ -87372,6 +87469,40 @@ Entrants of the Deep can be recruited in any land fort."
 #clearspec
 #swimming
 #gcost 10009
+#end
+
+#selectmonster 2865 -- Conqueror of the Closed Realm
+#startage 36
+#clearmagic
+#magicskill 1 1 -- A
+#magicskill 9 1 -- H
+#custommagic 3840 100 -- AWES
+#gcost 10010
+#end
+
+#selectmonster 2866 -- Conqueror of the Closed Realm Land
+#startage 36
+#clearmagic
+#magicskill 1 1 -- A
+#magicskill 9 1 -- H
+#custommagic 3840 100 -- AWES
+#gcost 10010
+#end
+
+#selectmonster 2867 -- Daduchos
+#clearmagic
+#magicskill 0 1
+#magicskill 4 1
+#custommagic 1920 100 -- FAWE
+#gcost 10005
+#end
+
+#selectmonster 2868 -- Daduchos Land
+#clearmagic
+#magicskill 0 1
+#magicskill 4 1
+#custommagic 1920 100 -- FAWE
+#gcost 10005
 #end
 
 #selectmonster 2871  -- Axiocersa, Kabeiride
@@ -99345,6 +99476,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 9
 #homemon 7653 -- indus worm
 #homemon 7654 -- odonoto
+#homemon 3210 -- lampad
 #homemon 8600 -- Aphroi
 #homecom 8593 -- Aphroi Lord
 #homecom 8582 -- Potamoi
@@ -104359,8 +104491,41 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 3424  -- Undying
 #end
 
-
 #newsite 2596
+#name "MA Pelagia Summons"
+#level 0
+#rarity 5
+#path 2
+#look 8
+#homemon 7614 -- laist hurl
+#homemon 7615 -- laist spear
+#homemon 7468 -- pearl w
+#homemon 7359 -- volans
+#homecom 7854 -- volans comm
+#homecom 2834 -- hekat
+#homecom 2836 -- daktyl
+#homecom 7613 -- tanag triton
+#homecom 7251 -- pose
+#homecom 7276 -- cetus
+#homecom 8672 -- oyster
+#homecom 9119 -- hierarch w
+#homecom 9121 -- mystic guide w
+#homecom 9118 -- hierophant l
+#end
+
+#newsite 2597
+#name "MA Pelagia Heroes"
+#level 0
+#rarity 5
+#path 9
+#look 2
+#homecom 8176
+#homecom 8177
+#homecom 8178
+#end
+
+
+#newsite 2598
 #name "Testestest"
 #rarity 5
 #level 0
@@ -104381,7 +104546,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 9110
 #homecom 7812
 #end
-
 
 
 -- END OF NEW SITES
@@ -110861,6 +111025,10 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 #cheapgod20 8314 -- Triton Queen
 #cheapgod20 8381 -- Sea Nymph
 #cheapgod20 8477 -- Mother of Pearls
+
+#futuresite "MA Pelagia Summons"
+#futuresite "MA Pelagia Heroes"
+
 #end
 
 #selectnation 87 -- MA Oceania
@@ -140335,6 +140503,92 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #restricted 60 -- MA Ulm
 #end
 
+#selectspell 4242
+#name "Become Hierarch"
+#descr "..."
+#school -1
+#path 0 6
+#pathlevel 0 4
+#effect 10130
+#damage 9119 -- Hierarch
+#nreff 1
+#spec 8388608  -- UWOK
+#end
+
+#selectspell 4243
+#name "Exalt Conqueror"
+#descr "."
+#details "The caster will gain Gift of Air Breathing 100 and +1 Inspirational."
+#school 1
+#researchlevel 2
+#path 0 1
+#pathlevel 0 1
+#fatiguecost 300
+#effect 10599  -- set to 100
+#damage 130  -- Gift of Air Breathing
+#nreff 1
+#spec 578813952  -- No effect on Lifeless, UW Only
+#nextspell 4242
+#onlymnr 2865 -- Conqueror
+#onlyatsite 160
+#restricted 86 -- MA Pelagia
+#end
+
+#selectspell 4244
+#name "Become Mystic Guide"
+#descr "..."
+#school -1
+#path 0 6
+#pathlevel 0 4
+#effect 10130
+#damage 9121 -- Mystic Guide
+#nreff 1
+#spec 8388608  -- UWOK
+#end
+
+#selectspell 4245
+#name "Secrets of the Closed Realm"
+#descr "."
+#details "The caster will gain Gift of Air Breathing 60 and normal leadership."
+#school 1
+#researchlevel 5
+#path 0 1
+#pathlevel 0 1
+#fatiguecost 300
+#effect 10559  -- set to 60
+#damage 130  -- Gift of Air Breathing
+#nreff 1
+#spec 578813952  -- No effect on Lifeless, UW Only
+#nextspell 4244
+#onlymnr 2823 -- Pelagian Mystic
+#onlyatsite 160
+#restricted 86 -- MA Pelagia
+#end
+
+#selectspell 4246
+#name "Light Telesterion Flame"
+#descr "."
+#details "Caster gains +1 Fire magic while on land and also gains Heretic 3."
+#school 4
+#researchlevel 4
+#path 0 0
+#pathlevel 0 1
+#fatiguecost 500
+#effect 10130
+#damage 9118 -- Hierophant land
+#nreff 1
+#spec 536870912  -- No effect on Lifeless
+#onlymnr 2868 -- Daduchos land
+#restricted 86 -- MA Pelagia
+#end
+
+
+
+
+
+
+
+
 
 
 -- END OF NEW SPELLS
@@ -140749,6 +141003,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 368 -- Daktyl
 #fatiguecost 2000
+#end
+
+#selectspell 369 -- Procession of the Underworld
+#restricted 87 -- MA Oceania
 #end
 
 #selectspell 370
@@ -141520,7 +141778,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 751 -- Volcanic Eruption
-#details "Population -30%, Unrest +120, destroys any lab or temple present in the province."
+#details "Population -30%, Unrest +120, 50% chance to destroy any lab or temple present in the province checked separately."
 #end
 
 #selectspell 756 -- Strand of Arcane Power
