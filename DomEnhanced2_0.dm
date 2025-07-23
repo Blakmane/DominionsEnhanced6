@@ -98316,7 +98316,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 6
 #level 0
 #rarity 5
-#gems 2 1
+#gems 7 1
 #gems 6 1
 #homemon 6888 -- Dgra Lha
 #homecom 6899 -- Srungmha Lha
@@ -98329,7 +98329,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #rarity 5
 #gems 1 1
-#gems 5 1
+#gems 2 1
 #homemon 6884 -- War Mammoth
 #end
 
@@ -103693,7 +103693,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #name "EA Yomi Namanari Pacts"
 #level 0
 #rarity 5
-#path 5
+#path 6
 #look 6
 #homecom 3070 -- chunari
 #homecom 1432 -- hannya
@@ -104633,6 +104633,20 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #newsite 2601
+#name "EA Yomi Freespawn"
+#level 0
+#rarity 5
+#path 5
+#look 1
+#homemon 1260 -- ko
+#homemon 1266 -- aka (hot)
+#homemon 1264 -- ao (cold)
+#homemon 1272 -- oni (m)
+#homemon 1274 -- kuro (m)
+#homemon 3084 -- amano
+#end
+
+#newsite 2602
 #name "Testestest"
 #rarity 5
 #level 0
@@ -109818,6 +109832,8 @@ Oni will collect due tax from populations with unrest, partially recuperating lo
 #swampcom 3069  -- Namanari
 #mountaincom 1315  -- Sorcerer
 
+#futuresite "EA Yomi Freespawn"
+#futuresite "EA Yomi Namanari Pacts"
 #futuresite "EA Yomi Summons"
 #futuresite "EA Yomi Summons Continued"
 #futuresite "EA Yomi Heroes"
