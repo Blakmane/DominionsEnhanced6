@@ -116273,28 +116273,31 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #end
 
 #selectspell 2338
-#copyspell 200 -- Bless
-#name "Meditation"
-#descr "By meditating on their relationship with their deity the priest is filled with holy power. This prayer can be use to bless the priest. Blessed units receive increased morale and additional powers if their god is powerful enough to claim a divine title. For example, Fire gods bless their soldiers with battle prowess and gods of Nature bless their holy warriors with increased health. The blessing lasts the entire battle."
-#aoe 0
-#range 0
+#name "Immolate Apostate"
+#school -1
+#researchlevel 0
+#effect 11
+#nreff 1
+#damage 512  -- Immolate
+#spec 17592194744352  -- UWOK, Heat, Ignore shields, Enemy Sacreds only, MR Hard Negates
 #end
 
 #selectspell 2339
 #copyspell 1295 -- Prison of Fire
 #name "Bonds of Apostasy"
-#descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. Shackles of fire will trap the victims of this spell. If the victims try to escape, the shackles become exceedingly hot. Otherwise, the heat stays bearable. A high morale is required to fight the heat and trying to escape may very well kill a weaker man."
-#details "Morale check vs 21, 3 AN fire dmg."
+#descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. Shackles of fire will trap the victims of this spell and badly burn them. If the victims try to escape, the shackles become exceedingly hot. A high morale is required to fight the heat and trying to escape may very well kill a weaker man."
+#details "Targets are immolated and shackled. Morale check vs 21, 3 AN fire dmg."
 #researchlevel 0
 #school 7
 #path 0 9
 #pathlevel 0 2
 #fatiguecost 0
-#range 25
-#aoe 1000
-#precision 5
+#range 35
+#aoe 1001
+#precision 8
 #casttime 100
 #fatiguecost 25
+#nextspell 2338
 #spec 17592194744352  -- UWOK, Heat, Ignore shields, Enemy Sacreds only, MR Hard Negates
 #godpathspell 0
 #end
@@ -116302,15 +116305,16 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2340
 #copyspell 1117 -- False Fetters
 #name "Fetter the Faithless"
-#descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. Illusionary fetters form around the ankles of a limited number of units. The victims will not be able to move or fight until they have overcome the fetters' magic."
+#descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. Fetters of solid air form around the ankles of a limited number of units. The victims will not be able to move or fight until they have overcome the fetters' magic."
+#details "MR +DRN vs 20 to get free" 
 #researchlevel 0
 #school 7
 #path 0 9
-#aoe 1000
+#aoe 1001
 #pathlevel 0 2
 #fatiguecost 0
-#range 25
-#precision 5
+#range 35
+#precision 8
 #casttime 100
 #fatiguecost 25
 #spec 17592194744320  -- Ignore shields, Enemy Sacreds only, UW OK, MR-Hard Neg
@@ -116318,21 +116322,21 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #end
 
 #selectspell 2341
-#copyspell 1298 -- Curse of the Desert
-#name "Thirst of the Heathens"
-#descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. The targets are affected with severe dehydration. The dehydrated targets will become more and more exhausted and may eventually lose consciousness. The duration of the dehydration depends on the magic resistance of the targets. Undead beings and constructs are not affected by this spell."
-#details "Targets gain 2d8 fatigue each turn. MR +DRN vs 22 ends the effect."
+#copyspell 638 -- Slime
+#name "Drown the Heathens"
+#descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. Water magically congeals around the targets and impedes their movement. This effect will wear off more quickly on targets with high magic resistance."
+#details "Slimed units are slowed and suffer an additional -2 att/def penalty."
 #researchlevel 0
 #school 7
 #path 0 9
-#aoe 1000
+#aoe 1001
 #pathlevel 0 2
 #fatiguecost 0
-#range 25
-#precision 5
+#range 35
+#precision 8
 #casttime 100
 #fatiguecost 25
-#spec 17592723488896  -- Ignore shields, Enemy Sacreds only, AN, Undead & lifeless immune, MR-Hard Neg
+#spec 17592194744320  -- Ignore shields, Enemy Sacreds only, AN, Undead & lifeless immune, MR-Hard Neg
 #godpathspell 2
 #end
 
@@ -116344,11 +116348,11 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 0
 #school 7
 #path 0 9
-#aoe 1000
+#aoe 1001
 #pathlevel 0 2
 #fatiguecost 0
-#range 25
-#precision 5
+#range 35
+#precision 8
 #casttime 100
 #fatiguecost 25
 #spec 87960938921984  -- Ignore shields, Enemy Sacreds only, No effect on fliers, UWOK, MR-Hard Neg
@@ -116362,11 +116366,11 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 0
 #school 7
 #path 0 9
-#aoe 1000
+#aoe 1001
 #damage 2
-#range 25
+#range 35
 #pathlevel 0 2
-#precision 5
+#precision 8
 #fatiguecost 0
 #casttime 100
 #fatiguecost 25
@@ -116375,17 +116379,17 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #end
 
 #selectspell 2344
-#copyspell 1305 -- Terror
-#name "Fear of God"
-#descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. The targets are overwhelmed by fear and despair."
+#copyspell 1267 -- Decay
+#name "Memento Mori"
+#descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. The targets rapidly age as the burden of aeons weighs down upon them."
 #researchlevel 0
 #school 7
 #path 0 9
-#aoe 1000
+#aoe 10001
 #pathlevel 0 2
 #fatiguecost 0
-#range 25
-#precision 5
+#range 35
+#precision 8
 #casttime 100
 #fatiguecost 25
 #spec 17592194744448  -- Ignore shields, AN, Enemy Sacreds only, UWOK, MR-Hard Neg
@@ -116400,11 +116404,11 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 0
 #school 7
 #path 0 9
-#aoe 1000
+#aoe 1001
 #pathlevel 0 2
 #fatiguecost 0
-#range 25
-#precision 5
+#range 35
+#precision 8
 #casttime 100
 #fatiguecost 25
 #spec 17592194744320  -- Ignore shields, Enemy Sacreds only, UWOK, MR-Hard Neg
@@ -116412,21 +116416,21 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #end
 
 #selectspell 2346
-#copyspell 252 -- Bleed
-#name "Blood of the Infidels"
-#descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. Blood begins to pour out of the victim's noses, ears and mouths. The effect is a prolonged and painful death, however a strong will can negate the effect."
+#copyspell 1389 -- Agony
+#name "Fear of God"
+#descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. The targets are overwhelmed by visions of pain and despair."
 #researchlevel 0
 #school 7
 #path 0 9
-#aoe 1000
+#aoe 1001
 #pathlevel 0 2
 #fatiguecost 0
-#range 25
-#precision 5
+#range 35
+#precision 8
 #casttime 100
 #fatiguecost 25
-#spec 17592732139648  -- AN, Ignore shields, Enemy Sacreds only, UWOK, Undead and lifeless immune, MR-Hard Neg
-#godpathspell 7
+#spec 17592194875520  -- AN, Ignore shields, Enemy Sacreds only, Mindless immune, UWOK, MR-Hard Neg
+#godpathspell 8
 #end
 
 #selectspell 2347
@@ -116552,7 +116556,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 1
 #fatiguecost 0
 #casttime 100
-#godpathspell 7
+#godpathspell 8
 #spec 8404992 -- UWOK
 #nextspell 2354
 #end
@@ -116590,7 +116594,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2358
 #copyspell 723 -- Ice Strike
 #name "Channel Divine Ice"
-#descr "The priest calls upon the power of the true God to empower their own skills in Water magic. The Gods power flows through them and erupts as a ball of sharpened ice. Channelling the power of a God in this way is somewhat tiring to the priest."
+#descr "The priest calls upon the power of the true God to empower their own skills in Water magic. The Gods power flows through them and erupts as a ball of preternaturally sharp ice. Channelling the power of a God in this way is somewhat tiring to the priest."
 #researchlevel 0
 #school 7
 #path 0 9
@@ -116598,6 +116602,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 2
 #pathlevel 1 1
 #aoe 1
+#damage 1010
+#spec 1099511627840 -- Armour Piercing, Slashing Damage
 #fatiguecost 10
 #casttime 100
 #godpathspell 2
@@ -116613,7 +116619,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 1
 #path 1 3
 #pathlevel 1 1
-#nreff 10
+#nreff 12
 #fatiguecost 10
 #casttime 100
 #godpathspell 3
@@ -116631,6 +116637,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 1 1
 #nreff 2
 #damage 8
+#precision 4
 #fatiguecost 10
 #casttime 100
 #godpathspell 4
@@ -116638,19 +116645,20 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #end
 
 #selectspell 2361
-#copyspell 668 -- Shadow Bolt
-#name "Channel Divine Shadow"
-#descr "The priest calls upon the power of the true God to empower their own skills in Death magic. The Gods power flows through them and erupts as a dark blast of shadowy energy. Channelling the power of a God in this way is somewhat tiring to the priest."
+#copyspell 682 -- Bolt of Unlife
+#name "Channel Divine Death"
+#descr "The priest calls upon the power of the true God to empower their own skills in Death magic. The Gods power flows through them and erupts as a dark blast of necromantic energy. Channelling the power of a God in this way is somewhat tiring to the priest."
 #researchlevel 0
 #school 7
 #path 0 9
 #pathlevel 0 1
 #path 1 5
 #pathlevel 1 1
+#aoe 1
+#damage 1008
 #fatiguecost 10
 #casttime 100
 #godpathspell 5
-#nextspell 42  -- Minor Paralysis aoe 1
 #end
 
 #selectspell 2362
@@ -116664,7 +116672,9 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 6
 #pathlevel 1 1
 #fatiguecost 10
-#precision 2
+#range 5025
+#aoe 1001
+#precision 4
 #casttime 100
 #godpathspell 6
 #end
@@ -116672,7 +116682,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2363
 #copyspell 1389 -- Agony
 #name "Channel Divine Agony"
-#descr "The priest calls upon the power of the true God to empower their own skills in Blood magic. The Gods power flows through them and erupts as a torrent of agony. Channelling the power of a God in this way is somewhat tiring to the priest."
+#descr "The priest calls upon the power of the true God to empower their own skills in Blood magic. The Gods power flows through them and erupts as a torrent of pure agony. Channelling the power of a God in this way is somewhat tiring to the priest."
 #researchlevel 0
 #school 7
 #path 0 9
@@ -116683,15 +116693,15 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #aoe 1
 #fatiguecost 10
 #casttime 100
-#godpathspell 7
+#godpathspell 8
 #end
 
 #selectspell 2364
 #copyspell 200 -- Blessing
 #name "Anoint with Oils"
 #descr "The most revered Priests of the Faith can anoint a few soldiers with sacred oils and give them the blessing of the Lord. The affected units will be blessed for the duration of the battle, even if not sacred."
-#range 5
-#aoe 1
+#range 10
+#aoe 2
 #pathlevel 0 4
 #precision 100
 #casttime 100
@@ -116746,13 +116756,14 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #effect 11
 #nreff 1
 #damage 512  -- Immolate
+#aoe 1
 #spec 17592194973832  -- Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
 #end
 
 #selectspell 2369
 #copyspell 217 -- Smite Demon
 #name "Flaming Scourge"
-#descr "This prayer will make a burning bolt strike down and deliver massive damage to a demonic being. The creature will be burned by the force if they do not resist."
+#descr "This prayer will make a burning bolt strike down and deliver massive damage to a demonic being. The creature will be harmed and all demons near it will be immolated by the force if they do not resist."
 #godpathspell 0
 #nextspell 2368
 #spec 17592194973832  -- Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
@@ -116803,6 +116814,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 0
 #effect 11
 #nreff 1
+#aoe 1
 #damage 32  -- Weight of Stones
 #spec 17592194973832  -- Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
 #end
@@ -116810,7 +116822,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2375
 #copyspell 217 -- Smite Demon
 #name "Crushing Scourge"
-#descr "This prayer will make a bolt strike down and deliver massive damage to a demonic being. The creature will be harmed and fatigued by the force if they do not resist."
+#descr "This prayer will make a bolt strike down and deliver massive damage to a demonic being. The creature will be harmed and all nearby demons fatigued by the force if they do not resist."
 #details "Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3."
 #godpathspell 3
 #nextspell 2374
@@ -116830,7 +116842,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2377
 #copyspell 217 -- Smite Demon
 #name "Paralyzing Scourge"
-#descr "This prayer will make a bolt strike down and deliver massive damage to a demonic being. The creature will be harmed and fatigued by the force if they do not resist."
+#descr "This prayer will make a bolt strike down and deliver massive damage to a demonic being. The creature will be harmed and paralyzed by the force if they do not resist."
 #godpathspell 4
 #nextspell 2376
 #spec 17592194973832  -- Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
@@ -116857,19 +116869,19 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #end
 
 #selectspell 2380
-#name "Sleep Demon"
+#name "Poison Demon"
 #school -1
 #researchlevel 0
-#effect 11
+#effect 2
 #nreff 1
-#damage 1024  -- Sleep
-#spec 17592194973832  -- Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
+#damage 10
+#spec 17592194965640  -- Poison Damage, Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
 #end
 
 #selectspell 2381
 #copyspell 217 -- Smite Demon
 #name "Nature's Scourge"
-#descr "This prayer will make a bolt strike down and deliver massive damage to a demonic being. The creature will be harmed and forced into a magical slumber by the force if they do not resist."
+#descr "This prayer will make a bolt strike down and deliver massive damage to a demonic being. The creature will be harmed and their blood turned to holy poison by the force if they do not resist."
 #godpathspell 6
 #nextspell 2380
 #spec 17592194973832  -- Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
@@ -116879,7 +116891,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 217 -- Smite Demon
 #name "Scourge Demon"
 #descr "This prayer will make a bolt strike down and deliver massive damage to a demonic being. The creature will be harmed and may be banished back to hell by the force if they do not resist."
-#godpathspell 7
+#godpathspell 8
 #nextspell "Banish Demon"
 #spec 17592194973832  -- Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
 #end
@@ -141043,14 +141055,85 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #restricted 86 -- MA Pelagia
 #end
 
+--- NEW HOLY SPELLS FOR GLAMOUR
 
+#selectspell 4247
+#copyspell 769 -- Blurred Body
+#name "Prayer of Illusion"
+#descr "The priest utters a prayer that cloaks their form in illusion, making them difficult to strike in melee."
+#details "Attacking units have their attack skill reduced by 2. Attackers with true sight or spirit sight ignore the Blurred condition as do blind ones."
+#researchlevel 0
+#school 7
+#path 0 9
+#pathlevel 0 1
+#fatiguecost 0
+#casttime 100
+#godpathspell 7
+#spec 8404992 -- UWOK
+#end
 
+#selectspell 4247
+#copyspell 1311 -- Slumber
+#name "Dream of Heresy"
+#descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. They will fall into a deep slumber, plagued with nightmares that attack and ridicule their most deeply held beliefs."
+#details "Sleeping units will not take actions nor defend themselves against melee attacks. Sleeping units wake up if wounded."
+#researchlevel 0
+#school 7
+#path 0 9
+#aoe 1001
+#pathlevel 0 2
+#fatiguecost 0
+#range 35
+#precision 8
+#casttime 100
+#fatiguecost 25
+#spec 17592731746432  -- AN, Ignore shields, Enemy Sacreds only, Mindless immune, Inanimate immune, UWOK, MR-Hard Neg
+#godpathspell 6
+#end
 
+#selectspell 4248
+#name "Sleep Demon"
+#school -1
+#researchlevel 0
+#effect 11
+#nreff 1
+#damage 1024  -- Sleep
+#spec 17592194973832  -- Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
+#end
 
+#selectspell 4249
+#copyspell 217 -- Smite Demon
+#name "Slumbering Scourge"
+#descr "This prayer will make a bolt strike down and deliver massive damage to a demonic being. The creature will be harmed and forced into a magical slumber by the force if they do not resist."
+#godpathspell 7
+#nextspell 4248
+#spec 17592194973832  -- Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
+#end
 
+#selectspell 4250
+#copyspell 657 -- Ephemeral Bolt
+#name "Channel Divine Glamour"
+#descr "The priest calls upon the power of the true God to empower their own skills in Glamour magic. The Gods power flows through them and erupts as a bolt of ephemeral power. Channelling the power of a God in this way is somewhat tiring to the priest."
+#researchlevel 0
+#school 7
+#path 0 9
+#pathlevel 0 1
+#path 1 8
+#pathlevel 1 1
+#range 30
+#aoe 1
+#fatiguecost 10
+#casttime 100
+#godpathspell 7
+#end
 
-
-
+#selectspell 4251
+#copyspell 200 -- Bless
+#name "Meditation"
+#descr "By meditating on their relationship with their deity the priest is filled with holy power. This prayer can be use to bless the priest. Blessed units receive increased morale and additional powers if their god is powerful enough to claim a divine title. For example, Fire gods bless their soldiers with battle prowess and gods of Nature bless their holy warriors with increased health. The blessing lasts the entire battle."
+#aoe 0
+#range 0
+#end
 
 -- END OF NEW SPELLS
 
