@@ -25193,6 +25193,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #holy
 #clearweapons
 #prot 8
+#hp 33
+#def 13
 #weapon 1729 -- Golden Fangs
 #weapon 823  -- Golden Claw
 #end
@@ -26248,9 +26250,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #itemslots 786432 -- 2 misc
 #montag 1018
 #montagweight 4
-#nreff 1
-#fatiguecost 300
-#mr 6
+#mr 7
 #end
 
 
@@ -28976,9 +28976,9 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spiritsight
 #neednoteat
 #bodyguard 5
-#magicskill 6 1
-#custommagic 10496 100  -- 100% ASN
-#custommagic 10496 100  -- 100% ASN
+#magicskill 7 1
+#custommagic 26880 100 -- ASNG
+--#custommagic 10496 100  -- 100% ASN
 #weapon 474  -- Golden Sword
 #end
 
@@ -35510,7 +35510,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #eyes 1
 #prec 15
 #mor 50
-#patrolbonus 30
+#patrolbonus 50
 #float
 #noleader
 #nomagicleader
@@ -35535,6 +35535,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #prot 16
 #str 20
 #ap 12
+#maxage 1000
 #heal
 #slashres
 #pierceres
@@ -36506,8 +36507,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #startage 200
 #magicskill 2 2
 #magicskill 5 2
-#custommagic 37376 100
-#custommagic 37376 10
+#custommagic 53760 100 -- WDGB
 #regeneration 10
 #researchbonus -6
 #poorleader
@@ -82739,6 +82739,7 @@ Initiates of the Deep can be recruited in any land fort."
 
 #selectmonster 524  -- Scorpion Beast
 #montag 1057
+#mr 7 -- +2
 #end
 
 #selectmonster 525 -- Couatl
@@ -83746,9 +83747,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spr2 "vanilla/smallshark2.tga"
 #mr 5
 #size 2
-#hp 5
-#att 15
-#str 8
+#hp 4
+#str 7
 #prot 3
 #montag 1018
 #montagweight 16
@@ -85190,7 +85190,7 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 
 #selectmonster 1412  -- Amphiptere
 #name "Feathered Serpent"
-#descr "The Feathered Serpent is a serpent with great wings, capable of living in land, sea, or sky, and a poisonous breath."
+#descr "The Feathered Serpent is a serpent with great wings, capable of living in land, sea, or sky, and has a poisonous breath."
 #twiceborn 6830 -- Size 3 Necrophidian
 #amphibian
 #end
@@ -87150,7 +87150,7 @@ Cost 28 RP."
 #end
 
 #selectmonster 2514  -- Cave Crab
-#mr 6
+#mr 7
 #end
 
 
@@ -113099,10 +113099,11 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 2056
 #copyspell 945 -- Call Kraken
-#name "Giant Crab"
+#name "Summon Giant Crab"
 #descr "The caster summons a Giant Crab and binds it to his will. Giant Crabs can scuttle about with surprising speed and grace for their size. Their enormous claw is both sharp and large enough to behead a horse with one slice."
 #researchlevel 3
 #pathlevel 0 2
+#nreff 1
 #fatiguecost 300
 #damage 7365
 #end
@@ -113840,14 +113841,14 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 
 #selectspell 2129
 #copyspell 935 -- Pack of Wolves
-#name "Summon Stone Guardian"
-#descr "The caster reaches into the earth and summons a guardian spirit formed of stone. These elemental creatures are often assigned to guard important individuals and will travel under the earth until their charge is threatened. They can crush enemies with their great bulk and strike with stony fists."
+#name "Summon Stone Guardians"
+#descr "The caster reaches into the earth and summons a few guardian spirits formed of stone. These elemental creatures are often assigned to guard important individuals and will travel under the earth until their charge is threatened. They can crush enemies with their great bulk and strike with stony fists."
 #researchlevel 4
 #path 0 3
 #pathlevel 0 3
-#nreff 1
+#nreff 503
 #damage 7811 -- Stone Guardian
-#fatiguecost 300
+#fatiguecost 500
 #end
 
 #selectspell 2131
@@ -114557,8 +114558,10 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #descr "The caster forms a Floating Eye using magic. The Eye will constantly rove the province seeking out those that attempt to remain hidden. The Eye is bound to a large mirror and everything it sees is reflected in the mirror. In this manner the province governor can keep a close eye on the populace to spot signs of dissent or sneaking enemies."
 #school 0
 #researchlevel 4
-#path 0 4
-#pathlevel 0 3
+#path 0 7
+#pathlevel 0 2
+#path 1 4
+#pathlevel 1 1
 #effect 10021
 #nreff 1
 #damage 7809 -- Floating Eye
@@ -115113,13 +115116,17 @@ Restore order to the world, return the dead to their rest, and end this terrible
 
 #selectspell 2243
 #copyspell 1024 -- Awaken Sleeper
-#name "Call Eudaimon"
-#descr "The caster calls a Eudaimon to act as a guardian spirit. These benevolent beings inhabit vineyards and grainfields and ensure a good harvest for those that pay them mind. When called upon to act as guardian spirits they manifest as ethereally beautiful warrior women bearing golden blades."
+#name "Call Eudaimones"
+#descr "The caster calls a few Eudaimones to act as a guardian spirit. These benevolent beings inhabit vineyards and grainfields and ensure a good harvest for those that pay them mind. When called upon to act as guardian spirits they manifest as ethereally beautiful warrior women bearing golden blades."
 #school 0
 #researchlevel 4
-#pathlevel 0 3
+#path 0 7
+#pathlevel 0 2
+#path 1 5
+#pathlevel 1 1
 #effect 10001
-#fatiguecost 200
+#fatiguecost 400
+#nreff 503
 #damage 7485 -- Eudaimon
 #end
 
@@ -115439,7 +115446,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 6
 #pathlevel 0 5
 #nreff 8
-#fatiguecost 1800
+#fatiguecost 1500
 #notfornation 28 -- EA Machaka
 #end
 
@@ -115592,7 +115599,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 1 1
 #fatiguecost 500
 #damage 7900 -- Wolf Spiders
-#nreff 1006
+#nreff 1009 -- 10+
 #end
 
 #selectspell 2277
@@ -119422,10 +119429,10 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #pathlevel 0 3
 #path 1 9
 #pathlevel 1 2
-#fatiguecost 1500
+#fatiguecost 1000
 #damage 7307
 #restricted 28
-#nreff 1006 -- 9+
+#nreff 1002 -- 5+
 #onlyatsite 154  -- Great Mababwe
 #end
 
@@ -134998,10 +135005,10 @@ All effects scale with friendly Dominion."
 #pathlevel 0 4
 #path 1 9
 #pathlevel 1 2
-#fatiguecost 3000
+#fatiguecost 1500
 #damage 7307
 #restricted 28
-#nreff 2016 -- 24++
+#nreff 2002 -- 10++
 #onlyatsite 154  -- Great Mababwe
 #end
 
@@ -142734,6 +142741,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #onlygeosrc 32  -- Swamp
 #end
 
+
+#selectspell 975 -- School of Sharks
+#nreff 2002 -- 6++
+#end
 
 #selectspell 975 -- Light of the Northern Star
 #nogeosrc 4096  -- Cannot be cast in caves
