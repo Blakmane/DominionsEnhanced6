@@ -205,14 +205,15 @@
 
 #newweapon 1502
 #name "Flame Bow"
-#dmg 8
+#dmg 12
+#att 5
 #twohanded
 #range 35
 #rcost 7
 #nratt 1
-#ammo 12
+#ammo 24
 #fire
-#bowstr
+#halfstr
 #armorpiercing
 #sound 14
 #flyspr 350 1
@@ -715,12 +716,11 @@
 
 #newweapon 1550
 #name "Obsidian Sling"
-#dmg 10
+#dmg 4
 #rcost 3
 #att 1
 #range 20
-#bowstr
-#ammo 12
+#ammo 30
 #flyspr 111 1
 #sound 14
 #magic
@@ -1015,9 +1015,9 @@
 #flyspr 419  -- Vine Arrow
 #sound 14
 #range 40
-#ammo 12
+#ammo 24
 #dt_normal
-#bowstr
+#halfstr
 #blunt
 #magic
 #aoe 1
@@ -1290,6 +1290,9 @@
 #copyweapon 613  -- Enchanted Bow
 #name "Bow of Venom"
 #secondaryeffectalways 52  -- Death Poison
+#att 5
+#dmg 15
+#ammo 24
 #end
 
 #newweapon 1604
@@ -1602,10 +1605,14 @@
 #newweapon 1642
 #copyweapon 264  -- Composite bow
 #name "Mist Bow"
-#att 3
+#dmg 9
+#att 5
+#ammo 24
 #armorpiercing
 #magic
-#secondaryeffectalways 219  -- False Fetters
+--#secondaryeffectalways 219  -- False Fetters
+#aftercloud 2 1
+#aftercloudarea 3
 #end
 
 #newweapon 1643
@@ -1614,14 +1621,16 @@
 #dmg 25
 #range 25
 #att 3
-#ammo 10
+#ammo 1001
 #aoe 1
 #range0
 #dt_stun
 #fire
 #mrnegates
 #explspr 10060  -- Rising Black Smoke
-#secondaryeffect 50  -- Weak Poison
+--#secondaryeffect 50  -- Weak Poison
+#aftercloud 2 4096
+#aftercloudarea 1
 #end
 
 #newweapon 1644
@@ -1879,6 +1888,8 @@
 #name "Mictlan Blow Pipe"
 #armorpiercing
 #range -1
+#dmg 1 -- +1
+#ammo 30
 #end
 
 #newweapon 1675
@@ -2276,10 +2287,10 @@
 #newweapon 1711
 #name "Brahmastra"
 #dmg 9
-#bowstr
-#att 2
+#halfstr
+#att 5
 #range 40
-#ammo 12
+#ammo 24
 #aoe 1
 #flyspr 109 1  -- arrow
 #explspr 10103  -- red explosion
@@ -2385,7 +2396,7 @@
 #copyweapon 266
 #name "Great Bow"
 #dmg 18
-#bowstr
+#halfstr
 #att 5
 #range 100
 #pierce
@@ -2573,6 +2584,8 @@
 #copyweapon 152  -- Trueshot Longbow
 #name "Golden Bow"
 #att 10
+#dmg 15
+#ammo 24
 #secondaryeffect 112  -- Heart Finding
 #end
 
@@ -3282,7 +3295,7 @@
 #nratt 3
 #dmg 9
 #ammo 24
-#att 2
+#att 3
 #end
 
 #newweapon 1840
@@ -3440,6 +3453,9 @@
 #copyweapon 647 -- Spectral Bow
 #name "Shadow Bow"
 #bonus
+#dmg 7
+#att 2
+#ammo 24
 #secondaryeffect 285 -- Additional Weakness
 #end
 
@@ -3792,6 +3808,139 @@
 
 -- End Mind Blast Changes
 
+
+-- Missile Weapon changes
+
+#selectweapon 22 -- Sling
+#dmg 1 -- +-4
+#ammo 30
+#fullstr
+#end
+
+#selectweapon 697 -- Sling of Accuracy
+#dmg 8 -- +-4
+#ammo 30
+#fullstr
+#end
+
+#selectweapon 210 -- Fire Sling
+#dmg 1 -- +-4
+#ammo 30
+#fullstr
+#end
+
+#selectweapon 34 -- Blow Pipe
+#dmg 1 -- +1
+#ammo 20
+#end
+
+#selectweapon 23 -- Short Bow
+#dmg 7 -- +1
+#att 2 -- +2
+#ammo 24
+#end
+
+#selectweapon 24 -- Long Bow
+#dmg 10 -- +1
+#att 3 -- +3
+#ammo 1001
+#end
+
+#selectweapon 152 -- Trueshot Longbow
+#dmg 15 -- +3
+#att 40 -- +10
+#ammo 24
+#end
+
+#selectweapon 154 -- Bow of War
+#dmg 9 -- +1
+#att 2 -- +2
+#ammo 24
+#end
+
+#selectweapon 155 -- Black Bow
+#dmg 13 -- +1
+#att 10 -- +5
+#ammo 24
+#end
+
+#selectweapon 199 -- Banefire Bow
+#dmg 7 -- +1
+#att 5 -- +5
+#ammo 24
+#end
+
+#selectweapon 211 -- Fire Short Bow
+#dmg 7 -- +1
+#att 2 -- +2
+#ammo 24
+#end
+
+#selectweapon 212 -- Fire Long Bow
+#dmg 10 -- +1
+#att 3 -- +3
+#ammo 24
+#end
+
+#selectweapon 217 -- Fire Bow of War
+#dmg 9 -- +1
+#att 2 -- +2
+#ammo 24
+#end
+
+#selectweapon 264 -- Composite Bow
+#dmg 9 -- +1
+#att 4 -- +3
+#ammo 24
+#end
+
+#selectweapon 266 -- Great Bow
+#dmg 11 -- +0
+#att 3 -- +3
+#ammo 24
+#end
+
+#selectweapon 287 -- Phantasmal Bow
+#dmg 2 -- +1
+#att 3 -- +3
+#ammo 24
+#end
+
+#selectweapon 303 -- Vine Bow
+#dmg 6 -- +1
+#att 3 -- +3
+#ammo 24
+#end
+
+#selectweapon 356 -- Fire Composite Bow
+#dmg 9 -- +1
+#att 4 -- +3
+#ammo 24
+#end
+
+#selectweapon 439 -- Howling Bow
+#dmg 10 -- +1
+#att 5 -- +3
+#ammo 24
+#end
+
+#selectweapon 566 -- Ivory Bow
+#dmg 13 -- +1
+#att 5 -- +3
+#ammo 24
+#end
+
+#selectweapon 647 -- Spectral Bow
+#dmg 7 -- +1
+#att 2 -- +2
+#ammo 24
+#end
+
+-- End missile changes
+
+
+
+
 #selectweapon 191 -- Ember
 #armorpiercing
 #end
@@ -3864,6 +4013,10 @@
 #secondaryeffect 349
 #end
 
+#selectweapon 301
+#dmg 5
+#end
+
 #selectweapon 386 -- Sceptre of Dark Regency
 #nratt 2
 #att 3
@@ -3894,10 +4047,12 @@
 #selectweapon 678 -- Bow of the Titans
 #nratt -1
 #ammo 30
+#dmg 24
 #secondaryeffect 1679 -- Shockwave
 #end
 
 #selectweapon 802
+#rcost 8
 #clear
 #copyweapon 434 -- Banefire Crossbow item
 #name "Banefire Crossbow"
@@ -3990,6 +4145,9 @@
 
 #selectweapon 372  -- poison bow
 #secondaryeffect 51  -- Strong Poison
+#dmg 9 -- +1
+#att 4 -- +3
+#ammo 24
 #end
 
 #selectweapon 375  -- Dogs
@@ -4016,6 +4174,7 @@
 #selectweapon 438 -- plague bow
 #name "Bow of Pestilence"
 #nratt 9
+#ammo 24
 #armorpiercing
 #end
 
@@ -4060,6 +4219,9 @@
 
 #selectweapon 594  -- poison bow
 #secondaryeffect 51  -- Strong Poison
+#dmg 7 -- +1
+#att 3 -- +2
+#ammo 24
 #end
 
 #selectweapon 601 -- cave fire Bottle
@@ -4068,10 +4230,11 @@
 #end
 
 #selectweapon 606 -- Frost Bow
-#dmg 8
 #range 40
+#dmg 9
+#att 3
+#ammo 24
 #end
-
 
 #selectweapon 608  -- Sword of Oaths
 #secondaryeffect 282  -- Paralyze
@@ -4080,7 +4243,8 @@
 #selectweapon 613  -- Enchanted Bow
 #rcost 9
 #dmg 15
-#precision 5
+#att 6
+#ammo 24
 #end
 
 #selectweapon 677  -- Wing Buff
@@ -6012,9 +6176,10 @@
 #newmonster 6565
 #name "Fox Scout"
 #nametype 182
-#descr "Warriors of Nihuala devote themselves to a totemic spirit. Fox is sly, cunning, and uses her intelligence to outwit her enemies. Her warriors are dextrous, keen-eyed, and adept at taking enemies by surprise. Fox Scouts are the elite among their kin, and are trusted to scout enemy lands to gather information, as well as lead their brethren on sneak attacks deep into enemy territory. They wield daggers and short bows."
+#descr "Warriors of Nihuala devote themselves to a totemic spirit, taking on its traits and embodying a piece of its soul as their own. Fox is sly, cunning, and uses her intelligence to outwit her enemies. Her warriors are dextrous, keen-eyed, and adept at taking enemies by surprise. Fox Scouts are the elite among their kin, and are trusted to scout enemy lands to gather information, as well as lead their brethren on sneak attacks deep into enemy territory. They wield daggers and short bows."
 #spr1 "nihuala/foxscout.tga"
 #spr2 "nihuala/foxscout_2.tga"
+#animal
 #rcost 1
 #gcost 10000
 #rpcost 10000
@@ -6042,9 +6207,10 @@
 #newmonster 6566
 #name "Herd Leader"
 #nametype 182
-#descr "Warriors of Nihuala devote themselves to a totemic spirit. Deer is swift, graceful, and generously gives his children to the tribe to feed, clothe, and provide for them. His warriors honor his sacrifice by crafting their equipment from his children's remains. They fight with spear and antler with equal potency, and easily outpace warriors of the other totems. Devotees of Deer are natural leaders, and many take the opportunity to lead their fellow tribesmen into battle."
+#descr "Warriors of Nihuala devote themselves to a totemic spirit, taking on its traits and embodying a piece of its soul as their own. Deer is swift, graceful, and generously gives his children to the tribe to feed, clothe, and provide for them. His warriors honor his sacrifice by crafting their equipment from his children's remains. They fight with spear and antler with equal potency, and easily outpace warriors of the other totems. Devotees of Deer are natural leaders, and many take the opportunity to lead their fellow tribesmen into battle."
 #spr1 "nihuala/herdleader.tga"
 #spr2 "nihuala/herdleader_2.tga"
+#animal
 #rcost 1
 #gcost 10010
 #rpcost 10000
@@ -6075,9 +6241,10 @@
 #newmonster 6567
 #name "Pack Leader"
 #nametype 182
-#descr "Warriors of Nihuala devote themselves to a totemic spirit. Wolf is noble, keen, and fights alongside his pack in perfect harmony. His warriors fight by overwhelming their enemies with numbers, attacking with a flurry of blows from stone daggers. Just as one warrior strikes and draws back, another steps in to launch an attack of their own. Warriors of Wolf are expert leaders, able to command large numbers their fellow tribesmen with great skill."
+#descr "Warriors of Nihuala devote themselves to a totemic spirit, taking on its traits and embodying a piece of its soul as their own. Wolf is noble, keen, and fights alongside his pack in perfect harmony. His warriors fight by overwhelming their enemies with numbers, attacking with a flurry of blows from stone daggers. Just as one warrior strikes and draws back, another steps in to launch an attack of their own. Warriors of Wolf are expert leaders, able to command large numbers their fellow tribesmen with great skill."
 #spr1 "nihuala/packleader.tga"
 #spr2 "nihuala/packleader_2.tga"
+#animal
 #rcost 1
 #gcost 10005
 #rpcost 10000
@@ -6428,9 +6595,10 @@
 #newmonster 6576
 #name "Fox Totem Warrior"
 #nametype 182
-#descr "Warriors of Nihuala devote themselves to a totemic spirit. Fox is sly, cunning, and uses her intelligence to outwit her enemies. Her warriors are dextrous, keen-eyed, and adept at taking enemies by surprise. They wield daggers and short bows."
+#descr "Warriors of Nihuala devote themselves to a totemic spirit, taking on its traits and embodying a piece of its soul as their own. Fox is sly, cunning, and uses her intelligence to outwit her enemies. Her warriors are dextrous, keen-eyed, and adept at taking enemies by surprise. They wield daggers and short bows."
 #spr1 "nihuala/foxwarrior.tga"
 #spr2 "nihuala/foxwarrior_2.tga"
+#animal
 #rcost 1
 #gcost 10010
 #rpcost 9
@@ -6457,9 +6625,10 @@
 #newmonster 6577
 #name "Beaver Totem Warrior"
 #nametype 182
-#descr "Warriors of Nihuala devote themselves to a totemic spirit. Beaver is resilient, resourceful, and reshapes his environment to protect his home and his family. Warriors of the Beaver totem are reliable fighters who are experts at defending home and hearth. Beaver is strong in healing, and his followers are known to shrug off crippling injuries in short order."
+#descr "Warriors of Nihuala devote themselves to a totemic spirit, taking on its traits and embodying a piece of its soul as their own. Beaver is resilient, resourceful, and reshapes his environment to protect his home and his family. Warriors of the Beaver totem are reliable fighters who are experts at defending home and hearth. Beaver is strong in healing, and his followers are known to shrug off crippling injuries in short order."
 #spr1 "nihuala/beaverwarrior.tga"
 #spr2 "nihuala/beaverwarrior_2.tga"
+#animal
 #rcost 1
 #gcost 10010
 #rpcost 12
@@ -6488,9 +6657,10 @@
 #newmonster 6578
 #name "Armadillo Totem Warrior"
 #nametype 182
-#descr "Warriors of Nihuala devote themselves to a totemic spirit. Armadillo is tough, tenacous, and trusts in his armored skin to keep him safe from harm. The warriors of Armadillo are the only ones to use armor forged from metal, seeking to emulate the protective hide of their patron spirit. Those strong enough to pierce their thick plates will find them more resilient than their fellow tribesmen."
+#descr "Warriors of Nihuala devote themselves to a totemic spirit, taking on its traits and embodying a piece of its soul as their own. Armadillo is tough, tenacous, and trusts in his armored skin to keep him safe from harm. The warriors of Armadillo are the only ones to use armor forged from metal, seeking to emulate the protective hide of their patron spirit. Those strong enough to pierce their thick plates will find them more resilient than their fellow tribesmen."
 #spr1 "nihuala/armadillowarrior.tga"
 #spr2 "nihuala/armadillowarrior_2.tga"
+#animal
 #rcost 1
 #gcost 10012
 #rpcost 14
@@ -6517,9 +6687,10 @@
 #newmonster 6579
 #name "Deer Totem Warrior"
 #nametype 182
-#descr "Warriors of Nihuala devote themselves to a totemic spirit. Deer is swift, graceful, and generously gives his children to the tribe to feed, clothe, and provide for them. His warriors honor his sacrifice by crafting their equipment from his children's remains. They fight with spear and antler with equal potency, and easily outpace warriors of the other totems."
+#descr "Warriors of Nihuala devote themselves to a totemic spirit, taking on its traits and embodying a piece of its soul as their own. Deer is swift, graceful, and generously gives his children to the tribe to feed, clothe, and provide for them. His warriors honor his sacrifice by crafting their equipment from his children's remains. They fight with spear and antler with equal potency, and easily outpace warriors of the other totems."
 #spr1 "nihuala/deerwarrior.tga"
 #spr2 "nihuala/deerwarrior_2.tga"
+#animal
 #rcost 2
 #gcost 10015
 #rpcost 21
@@ -6547,9 +6718,10 @@
 #newmonster 6580
 #name "Wolf Totem Warrior"
 #nametype 182
-#descr "Warriors of Nihuala devote themselves to a totemic spirit. Wolf is noble, keen, and hunts alongside his pack in perfect harmony. His warriors fight by overwhelming their enemies, attacking with a flurry of blows from their stone daggers. Just as one warrior strikes and draws back, another steps in to launch an attack of his own. Few foes can withstand this onslaught for long."
+#descr "Warriors of Nihuala devote themselves to a totemic spirit, taking on its traits and embodying a piece of its soul as their own. Wolf is noble, keen, and hunts alongside his pack in perfect harmony. His warriors fight by overwhelming their enemies, attacking with a flurry of blows from their stone daggers. Just as one warrior strikes and draws back, another steps in to launch an attack of his own. Few foes can withstand this onslaught for long."
 #spr1 "nihuala/wolfwarrior.tga"
 #spr2 "nihuala/wolfwarrior_2.tga"
+#animal
 #rcost 2
 #gcost 10015
 #rpcost 21
@@ -6580,9 +6752,10 @@
 #newmonster 6581
 #name "Bear Totem Warrior"
 #nametype 182
-#descr "Warriors of Nihuala devote themselves to a totemic spirit. Bear is strong, courageous, and commands the ground on which she stands with absolute certainty. Her warriors are burly, enormously muscled fighters who don full leather armor and fight with massive clubs. They are renowned for their bravery in battle, always standing their ground no matter the odds."
+#descr "Warriors of Nihuala devote themselves to a totemic spirit, taking on its traits and embodying a piece of its soul as their own. Bear is strong, courageous, and commands the ground on which she stands with absolute certainty. Her warriors are burly, enormously muscled fighters who don full leather armor and fight with massive clubs. They are renowned for their bravery in battle, always standing their ground no matter the odds."
 #spr1 "nihuala/bearwarrior.tga"
 #spr2 "nihuala/bearwarrior_2.tga"
+#animal
 #rcost 1
 #gcost 10015
 #rpcost 21
@@ -31404,7 +31577,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr1 "magicenhanced/eeparamist.tga"
 #spr2 "magicenhanced/eeparamist2.tga"
 #name "Mist Warrior"
-#descr "This is a warrior summoned from the Para-elemental planes. Where the realms of Air and Water meet are the Plains of Eternal Mist. Mist Warriors have bodies composed of water vapour and are almost impossible to hurt with mundane weaponry. They fire arrows of mist that ensorcel their targets and can bypass any armor. Para-elemental warriors are mindless magical beings and must be led by a mage."
+#descr "This is a warrior summoned from the Para-elemental planes. Where the realms of Air and Water meet are the Plains of Eternal Mist. Mist Warriors have bodies composed of water vapour and are almost impossible to hurt with mundane weaponry. They fire magic arrows that create clouds of freezing mist where they land. Para-elemental warriors are mindless magical beings and must be led by a mage."
 #gcost 0
 #mr 14
 #mor 14
@@ -53844,9 +54017,10 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #newmonster 9087
 #name "Totem Speaker"
 #nametype 182
-#descr "Tribesmen of Nihuala devote themselves to a totemic spirit. Some tribe members can hear the call of their totem more than others. As they continue to speak to the spirit of their totem, they may learn the secrets of the totem's magic, after which they will receive training to become a Totem Speaker. While their magic is not as powerful as the Spirit Speakers, the Totem Speakers serve as guides for the tribe and their council is often heeded by tribal chieftains."
+#descr "Tribesmen of Nihuala devote themselves to a totemic spirit. Some tribe members can hear the call of their totem more than others. As they continue to speak to the spirit of their totem, they may learn the secrets of the totem's magic and take on a piece of its soul as their own, after which they will receive training to become a Totem Speaker. While their magic is not as powerful as the Spirit Speakers, the Totem Speakers serve as guides for the tribe and their council is often heeded by tribal chieftains."
 #spr1 "nihuala/totemspeaker.tga"
 #spr2 "nihuala/totemspeaker2.tga"
+#animal
 #rcost 1
 #gcost 10005
 #rpcost 2
@@ -55421,7 +55595,7 @@ Mothers of the Abyss can be recruited in the capital and all Basalt Cities."
 #spr1 "blue_dirgen/blue_thramzubachtf1.tga"
 #spr2 "blue_dirgen/blue_thramzubachtf1.tga"
 #name "Thram'zu Bacht"
-#descr "The Thram'zu are a cult of Deep Ones practicing . The Thram'zu Bacht is a middle member of the Thram'zu cult, well practiced in the cult's magic of death and decay. It is common for Kurvant or Sothul to hire them for their power when needed. Their cult is highly secretive, their goals known only to them, however their power comes in quite useful and as such the Kurvant are willing to overlook this.
+#descr "The Thram'zu are a cult of Deep Ones practicing necromancy on the abyssal plain. The Thram'zu Bacht is a middle member of the Thram'zu cult, well practiced in the cult's magic of death and decay. It is common for Kurvant or Sothul to hire them for their power when needed. Their cult is highly secretive, their goals known only to them, however their power is quite useful and as such the Kurvant are willing to overlook this.
 Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishbones every month while underwater."
 #rpcost 2
 #rcost 1
@@ -55467,7 +55641,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #spr1 "blue_dirgen/blue_thramzubachtf1.tga"
 #spr2 "blue_dirgen/blue_thramzubachtf1.tga"
 #name "Thram'zu Bacht"
-#descr "The Thram'zu Bacht is a middle member of the Thram'zu cult, well practiced in the cult's magic of death and decay. It is common for Kurvant or Sothul to hire them for their power when needed. Their cult is highly secretive, their goals known only to them, however their power comes in quite useful and as such the Kurvant are willing to overlook this.
+#descr "The Thram'zu are a cult of Deep Ones practicing necromancy on the abyssal plain. The Thram'zu Bacht is a middle member of the Thram'zu cult, well practiced in the cult's magic of death and decay. It is common for Kurvant or Sothul to hire them for their power when needed. Their cult is highly secretive, their goals known only to them, however their power is quite useful and as such the Kurvant are willing to overlook this.
 Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishbones every month while underwater."
 #rpcost 2
 #rcost 1
@@ -55512,7 +55686,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #spr1 "blue_dirgen/blue_thramzubachtf1.tga"
 #spr2 "blue_dirgen/blue_thramzubachtf1.tga"
 #name "Thram'zu Bacht"
-#descr "The Thram'zu Bacht is a middle member of the Thram'zu cult, well practiced in the cult's magic of death and decay. It is common for Kurvant or Sothul to hire them for their power when needed. Their cult is highly secretive, their goals known only to them, however their power comes in quite useful and as such the Kurvant are willing to overlook this.
+#descr "The Thram'zu are a cult of Deep Ones practicing necromancy on the abyssal plain. The Thram'zu Bacht is a middle member of the Thram'zu cult, well practiced in the cult's magic of death and decay. It is common for Kurvant or Sothul to hire them for their power when needed. Their cult is highly secretive, their goals known only to them, however their power is quite useful and as such the Kurvant are willing to overlook this.
 Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishbones every month while underwater."
 #rpcost 2
 #rcost 1
@@ -55553,7 +55727,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #spr1 "blue_dirgen/blue_thramzubachtf1.tga"
 #spr2 "blue_dirgen/blue_thramzubachtf1.tga"
 #name "Thram'zu Bacht"
-#descr "The Thram'zu Bacht is a middle member of the Thram'zu cult, well practiced in the cult's magic of death and decay. It is common for Kurvant or Sothul to hire them for their power when needed. Their cult is highly secretive, their goals known only to them, however their power comes in quite useful and as such the Kurvant are willing to overlook this.
+#descr "The Thram'zu are a cult of Deep Ones practicing necromancy on the abyssal plain. The Thram'zu Bacht is a middle member of the Thram'zu cult, well practiced in the cult's magic of death and decay. It is common for Kurvant or Sothul to hire them for their power when needed. Their cult is highly secretive, their goals known only to them, however their power is quite useful and as such the Kurvant are willing to overlook this.
 Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishbones every month while underwater."
 #rpcost 2
 #rcost 1
@@ -139314,7 +139488,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #details "+10 Fire Resistance
 Animals only: Blunt and slash melee attacks will stun on hit (size or str can negate)."
 #fatiguecost 40
-#aoe 1003 -- 5+
+#aoe 1002 -- 4+
 #school 4 -- ench
 #path 0 0
 #pathlevel 0 2
@@ -139343,7 +139517,7 @@ Animals only: Blunt and slash melee attacks will stun on hit (size or str can ne
 #details "+10 Shock Resistance
 Animals only: Protective Force 20"
 #fatiguecost 40
-#aoe 1003 -- 5+
+#aoe 1002 -- 4+
 #school 4 -- ench
 #path 0 1
 #pathlevel 0 2
@@ -139362,7 +139536,7 @@ Animals only: Protective Force 20"
 #details "+10 Fire Resistance
 Animals only: +4 Strength, blunt and slash melee attacks will stun on hit (size or str can negate)."
 #fatiguecost 100
-#aoe 5005 -- 25+5
+#aoe 4004 -- 20+4
 #school 4 -- ench
 #path 0 0
 #pathlevel 0 4
@@ -139381,7 +139555,7 @@ Animals only: +4 Strength, blunt and slash melee attacks will stun on hit (size 
 #details "+10 Shock Resistance
 Animals only: Protective Force 20"
 #fatiguecost 100
-#aoe 5005 -- 25+5
+#aoe 4004 -- 20+4
 #school 4 -- ench
 #path 0 1
 #pathlevel 0 4
