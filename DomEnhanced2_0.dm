@@ -17535,7 +17535,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr2 "gondwana/elkrider2.tga"
 #unmountedspr1 "gondwana/un_elkrider.tga"
 #unmountedspr2 "gondwana/un_elkrider2.tga"
-#descr "The people of Gondwana do not use horses. Instead, giant beasts that roam the plains are tamed and taught to carry riders. The Razorhorns are larger than a horse and with wickedly sharp antlers. In battle they are hard to control and their size and temperament prevent them from fighting in close formations. If the rider is slain the beast will continue to gore and stamp enemies, however after the battle it will escape."
+#descr "The people of Gondwana do not use horses. Instead, giant beasts that roam the plains are tamed and taught to carry riders. The Razorhorns are larger than a horse and with wickedly sharp antlers. In battle they are hard to control and their size and temperament prevent them from fighting in close formations. If the rider is slain the beast will continue to gore and stamp enemies."
 #gcost 25
 #rpcost 15
 #rcost 5
@@ -17548,7 +17548,6 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #armor 20  -- Iron Cap
 #armor 2  -- Shield
 #undisciplined
-#xploss 100
 #mountmnr 6967
 #skilledrider 3
 #end
@@ -17559,7 +17558,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #name "Razorhorn"
 #spr1 "gondwana/elk.tga"
 #spr2 "gondwana/elk2.tga"
-#descr "The people of Gondwana do not use horses. Instead, giant beasts that roam the plains are tamed and taught to carry riders. Razorhorns are antelopes larger than a horse and with wickedly curved and sharp antlers. In battle they are hard to control and their size and temperament prevent them from fighting in close formations. If the rider is slain the beast will continue to gore and stamp enemies, however after the battle it will escape."
+#descr "The people of Gondwana do not use horses. Instead, giant beasts that roam the plains are tamed and taught to carry riders. Razorhorns are antelopes larger than a horse and with wickedly curved and sharp antlers. In battle they are hard to control and their size and temperament prevent them from fighting in close formations. If the rider is slain the beast will continue to gore and stamp enemies."
 #ap 26
 #mapmove 28
 #prot 8
@@ -30128,6 +30127,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #enc 0
 #coldres 15
 #poisonres 25
+#mr 11
 #armor 563 -- spectral barding
 #weapon 55
 #end
@@ -51663,7 +51663,7 @@ Requires an Ippondatara present to recruit."
 #copyspr 1543
 #firstshape 1543
 #reclimit 1
-#monpresentrec -1068 -- Anathement
+--#monpresentrec -1068 -- Anathement
 #end
 
 #newmonster 8893 -- Nonsacred Daeva
@@ -82004,6 +82004,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #weapon 1695 -- Hero's Blade
 #weapon 4  -- Lance
 #itemslots 2040326
+#mountmnr 3583 -- Sacred Destrier
 #end
 
 #selectmonster 60  -- Monk
@@ -98224,7 +98225,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #newsite 2164
-#name "Magma pits of Rhuax"
+#name "Magma Pits of Rhuax"
 #path 0 
 #level 0
 #rarity 5
@@ -102499,6 +102500,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #rarity 5
 #decscale 2
+#res 15
 #mon 8892 -- Burning One reclimited
 #end
 
@@ -103299,6 +103301,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #newsite 2511 -- Temple of the Sun Copy
 #copysite 90 -- Temple of the Sun
 #name "Temple of the Sun "
+#rarity 5
 #end
 
 #newsite 2512
@@ -104856,6 +104859,32 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 -- Site rarity changes
 
 
+#selectsite 473 -- Howling Gorge
+#rarity 0
+#end
+
+#selectsite 1130 -- Underwater Cave
+#rarity 0
+#end
+
+#selectsite 475 -- Elusive Lights
+#level 3
+#rarity 0
+#end
+
+#selectsite 765 -- Gallows
+#rarity 0
+#end
+
+#selectsite 842 -- Cave of Dark rites
+#level 3
+#rarity 0
+#end
+
+#selectsite 763 -- Well of Pestilence
+#rarity 1
+#end
+
 
 #selectsite 418 -- Volcano
 #rarity 1
@@ -105858,6 +105887,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #selectsite 1
 #clear
+#rarity 5
 #path 0 
 #gems 0 4
 #decscale 2  -- +Heat
@@ -105872,6 +105902,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #selectsite 39 -- The Smouldercone LA
 #clear
+#rarity 5
 #homecom 9088
 #homecom 9089
 #gems 0 3 -- F
@@ -105884,6 +105915,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #selectsite 77 -- Temple of the Shroud
 #clear
+#rarity 5
 #path 9 
 #look 0
 #homemon 1108 -- equite
@@ -105903,6 +105935,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #selectsite 103  -- High Temple of Rain
 #clear
+#rarity 5
 #gems 2 1 -- W
 #homemon 7852 -- Monster Toad
 #homecom 1420 -- King of Rain
@@ -105916,6 +105949,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #selectsite 135  -- Mound of Ancient Kings
 #clear
+#rarity 5
 #path 6 
 #level 0
 #gems 7 3
@@ -105955,6 +105989,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #selectsite 215 -- Iram of a Thousand Pillars
 #clear -- moving Ghuls to the Three Deserts
+#rarity 5
 #gems 0 1
 #gems 7 1
 #homecom 3468
@@ -105967,6 +106002,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #selectsite 217 -- City of Brass
 #clear -- removing Shaytan from recruitment
+#rarity 5
 #gems 0 1
 #homecom 3465
 #homemon 3464
@@ -106582,10 +106618,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #summon 198  -- Ghoul
 #summon 198  -- Ghoul
 #summon 198  -- Ghoul
-#end
-
-#selectsite 763 -- Well of Pestilence
-#rarity 1
 #end
 
 #selectsite 765 -- Gallows
@@ -121626,9 +121658,8 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #selectspell 2646
 #name "Rivers of Lava"
 #descr "The caster performs a great ritual known only to the Anathemants. Calling on the power of Rhuax the mage draws lava and magma to the surface from the deep places of the world. This will cause dormant volcanoes to spring to life and rivers of magma to burst from the ground wherever the Dominion of the Lord spreads. This will further increase Heat scales and permanent sources of magical gems may be found within friendly Dominion. Whilst the Abysians rejoice and bathe in the lava pools, weaker fleshy creatures of other races will suffer horribly. This enchantment lasts until someone dispels it or the caster dies and once ended the magma pools created will begin to cool and fade."
-#details "River of Lava site appears in capital. River of Lava sites have a 20% chance per turn to propagate to adjacent provinces. Preaching has a 10% per Holy level to create a new River of Lava site, more preachers will increase the chance.
-River of Lava sites increase Heat in the province, in Abysian lands Growth is increased, and allows limited recruitment of Burning Ones when Anathemant are present. Anathemant are 50 gold cheaper to recruit.
-Up to 2d6 Fire Gems and 1d3 Earth Gems may be generated a turn as the Rivers expand.
+#details "River of Lava site appears in capital. River of Lava sites have a 20% chance per turn to propagate to adjacent provinces. Preaching has a 10% per Holy level to create a new River of Lava site, more preachers will increase the chance. River of Lava sites increase Heat in the province and allows limited recruitment of Burning Ones. Rivers in Abysian lands may increase growth and pops. Anathemant are 50 gold cheaper to recruit. Abysian mages at a River of Lava will get up to +1 Fire magic.
+Rivers will generate up to 2d6 Fire Gems and 1d3 Earth Gems a turn.
 If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and those outside of Abysia's dominion will disappear quickly."
 #portent "Throughout the domain of Abysia violent lava bursts and volcanoes are erupting! The Abysians delight in the fiery spectacle, however the heat and lava cause great damage to the lands of other nations. Unless the spell is ended the world will be fit only for ##godname## and their fiery servants."
 #school 4
@@ -121721,7 +121752,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #selectspell 2652
 #copyspell 1024 -- Summon Sleeper
 #name "Summon Ember Lord"
-#descr "In Abysia the Anathemants tell of creatures known as Ember Lords that live deep in the hearts of active volcanoes. Most believe these to be legends, however a few such creatures do still exist in the deep places of the earth. With this spell, which can only be cast at the site of an active volcano, an Ember Lord is drawn to the surface world once more. Ancient spirits with bodies of flame and molten rock, they are masters of fire magic and have some skill in earth and death magic."
+#descr "In Abysia the Anathemants tell of creatures known as Ember Lords that live deep in the hearts of active volcanoes. Most believe these to be legends, however a few such creatures do still exist in the deep places of the earth. With this spell, an Ember Lord is drawn to the surface world once more. Ancient spirits with bodies of flame and molten rock, they are masters of fire magic and have some skill in earth and death magic."
 #school 0
 #researchlevel 8
 #path 0 0
@@ -121732,7 +121763,6 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #damage 7459 -- Ember Lord
 #restricted 16 -- EA Abysia
 #restricted 63 -- MA Abysia
-#onlyatsite 418 -- Volcano
 #end
 
 #selectspell 2653
@@ -143354,6 +143384,16 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 751 -- Volcanic Eruption
 #details "Population -30%, Unrest +120, 50% chance to destroy any lab or temple present in the province checked separately."
+#end
+
+#selectspell 755 -- Lost Land
+#descr "The caster sinks the province into the nearby sea. The first month will only be severe flooding, but after that the province is sunk underwater and anyone who cannot breath underwater will drown."
+#details "The province becomes flooded, lowering income. 75% of the population emmigrates immediately.  The next turn it sinks into the depths, killing 90% of the remaining population, and any units that are not anphibious."
+#effect 10042
+#fatiguecost 8000
+#damage 25
+#researchlevel 9
+#provrange 3
 #end
 
 #selectspell 756 -- Strand of Arcane Power
@@ -169531,7 +169571,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #rarity 5
 --#req_rare 5
 --#req_freesites 1
-#req_land 1
+--#req_land 1
 #req_nositenbr 2460 -- River of Lava
 #req_pop0ok
 #msg "The Rivers of Lava has begun in ##landname## and will soon engulf the world."
@@ -169546,9 +169586,10 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #rarity 5
 #req_rare 20
 --#req_freesites 1
-#req_land 1
+--#req_land 1
 #req_nositenbr 2460 -- River of Lava
 #req_nearbysite 1
+#req_indepok 1
 #req_pop0ok
 #msg "The Rivers of Lava have begun flowing through ##landname##. [River of Lava]"
 #header 2
@@ -169562,7 +169603,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #rarity 5
 #req_preach 10
 --#req_freesites 1
-#req_land 1
+--#req_land 1
 #req_nositenbr 2460 -- River of Lava
 #req_pop0ok
 #msg "Preaching in ##landname## has allowed the Rivers of Lava to flow into the province."
@@ -169572,17 +169613,18 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #decscale2 2  -- cold
 #end
 
-#newevent -- RoL growth
+#newevent -- RoL growth + pop
 #req_friendlyench 222 -- Ench22  -- Rivers of Lava
 #rarity 5
 #req_rare 25
-#req_land 1
+--#req_land 1
 #req_site 1
 #req_pop0ok
-#msg "growth [River of Lava]"
+#msg "growth+pop [River of Lava]"
 #nolog
 #notext
 #decscale2 3 -- death
+#incpop 15
 #end
 
 #newevent -- RoL Fire Gems 20% 2/month
@@ -169590,7 +169632,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #rarity 5
 #req_rare 20
 #req_permonth 2
-#req_land 1
+--#req_land 1
 #req_site 1
 #req_pop0ok
 #msg "Fire gems have been produced by the River of Lava. [River of Lava]"
@@ -169603,7 +169645,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #rarity 5
 #req_rare 15
 #req_permonth 1
-#req_land 1
+--#req_land 1
 #req_site 1
 #req_pop0ok
 #msg "Earth gems have been found on the banks of the River of Lava. [River of Lava]"
@@ -169615,13 +169657,76 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_noench 222 -- Ench22  -- Rivers of Lava
 #rarity 5
 #req_rare 40
-#req_land 1
+--#req_land 1
 #req_site 1
+#req_indepok 1
 #req_pop0ok
 #msg "The River of Lava flowing through ##landname## has cooled. [River of Lava]"
 #header 2
 #nolog
 #removesite 2460 -- River of Lava
+#end
+
+
+#newevent -- F2 increase
+#req_friendlyench 222 -- Ench22  -- Rivers of Lava
+#rarity 5
+#req_site 1
+#req_pop0ok
+#msg "F increase [River of Lava]"
+#nolog
+#notext
+#req_targmnr 1092 -- Sanguine Anathemant
+#req_targmnr 1966 -- Slayer Anathemant
+#req_targnopath2 0
+#pathboost 0
+#end
+
+
+#newevent -- F3 increase
+#req_friendlyench 222 -- Ench22  -- Rivers of Lava
+#rarity 5
+#req_site 1
+#req_pop0ok
+#msg "F increase [River of Lava]"
+#nolog
+#notext
+#req_targmnr 85 -- Anathemant Salamanander
+#req_targmnr 87 -- Demonbred
+#req_targmnr 121 -- Demonbred
+#req_targmnr 1698 -- Anathemant Salamanander
+#req_targmnr 1969 -- Anathemant Salamanander
+#req_targmnr 1970 -- Anathemant Dragon
+#req_targnopath3 0
+#pathboost 0
+#end
+
+#newevent -- F3 increase
+#req_friendlyench 222 -- Ench22  -- Rivers of Lava
+#rarity 5
+#req_site 1
+#req_pop0ok
+#msg "F increase [River of Lava]"
+#nolog
+#notext
+#req_targmnr 86 -- Anathemant Dragon
+#req_targmnr 327 -- Anathement
+#req_targmnr 1699 -- Anathemant Dragon
+#req_targnopath4 0
+#pathboost 0
+#end
+
+#newevent -- Anointed of Rhuax F increase
+#req_friendlyench 222 -- Ench22  -- Rivers of Lava
+#rarity 5
+#req_site 1
+#req_pop0ok
+#msg "F increase [River of Lava]"
+#nolog
+#notext
+#req_targmnr 1536 -- Anointed of Rhuax
+--#req_targnopath5 0
+#pathboost 0
 #end
 
 #newevent -- Repair Flying Ship event 1
@@ -171716,6 +171821,34 @@ It is now fully repaired and a new crew has been assigned to it."
 #addsite 2220 -- Angel Forge
 #end
 
+
+#newevent
+#rarity 2
+#msg "The province is beginning to sink into the ocean!"
+#id 25
+#req_coast 1
+#req_unluck 5
+#emigration 75
+#unrest 50
+#addgeo 274877906944
+#code -540
+#req_pop0ok
+#req_indepok
+#setpoptype 72
+#delay 1
+#end
+
+#newevent
+#msg "The province has sunk completely into the ocean.  The population is drowned."
+#rarity 5
+#req_code -540
+#addgeo 1152921504606846980
+#remgeo 8389104
+#req_pop0ok
+#req_indepok
+#code 0
+#kill 90
+#end
 
 
 
