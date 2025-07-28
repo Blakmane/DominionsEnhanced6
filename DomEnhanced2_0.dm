@@ -1612,24 +1612,24 @@
 #magic
 --#secondaryeffectalways 219  -- False Fetters
 #aftercloud 2 1
-#aftercloudarea 3
+#aftercloudarea 2
 #end
 
 #newweapon 1643
 #copyweapon 62  -- Bile
 #name "Choking Smoke Cloud"
-#dmg 25
-#range 25
+#dmg 20
+#range 10
 #att 3
 #ammo 1001
 #aoe 1
+#hardmrneg
 #range0
 #dt_stun
 #fire
-#mrnegates
 #explspr 10060  -- Rising Black Smoke
 --#secondaryeffect 50  -- Weak Poison
-#aftercloud 2 4096
+#aftercloud 4 4096
 #aftercloudarea 1
 #end
 
@@ -3735,11 +3735,56 @@
 
 #newweapon 1886 -- Fire Breath
 #copyweapon 601 -- Cave Fire Bottle
+#name "Fire Breath"
 #dmg 15
 #ammo 1012 -- 12 fatigue
 #end
 
+#newweapon 1887 -- Weak Lightning Swarm
+#copyweapon 185 -- Lightning Swarm
+#dmg 4
+#end
 
+#newweapon 1888 -- Crimson Fist
+#copyweapon 686 -- Master's Athame
+#name "Crimson Fist"
+#bonus
+#dmg 2
+#len -1
+#end
+
+#newweapon 1889 -- Suffocation
+#name "Suffocation"
+#dt_cap
+#dmg 5
+#att -2
+#def -1
+#len -1
+#magic
+#armornegating
+#nostr
+#norepel
+#inanimateimmune
+#undeadimmune
+#secondaryeffect 150 -- chest wound
+#end
+
+#newweapon 1890 -- Ice Mist Blade
+#copyweapon 37 -- Ice Blade
+#name "Ice Mist Blade"
+#aftercloud 2 1
+#aftercloudarea 1
+#end
+
+#newweapon 1892 -- Blinding Spit
+#copyweapon 141 -- Poison Spit
+#name "Blinding Spit"
+#halfstr
+#range -2
+#sound 46
+#range0
+#secondaryeffect 333 -- Eyeloss
+#end
 
 -- END OF NEW WEAPONS
 
@@ -3779,7 +3824,7 @@
 #bonus
 #dmg 68719476736 -- slow affliction
 #secondaryeffectalways 1830 -- mind blast stun
-#range0
+#range050
 #ammo 1003
 #end
 
@@ -24473,11 +24518,12 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #spr1 "magicenhanced/eesolarram.tga"
 #spr2 "magicenhanced/eesolarram2.tga"
 #name "Solar Ram"
-#descr "Aries is a winged ram with a fleece of burnished gold. He is a symbol of the sun and is said to have been sired by an ancient Sun God in ram form. Each month the golden fleece can be shorn to produce gold and fire gems. Aries radiates the heat and glory of the sun and enemies will hesitate to strike him. The sun continually shines wherever he is located and heat will increase across the province. He is skilled in the magic of the sun."
+#descr "Aries is a winged ram with a fleece of burnished gold. He is a symbol of the sun and is said to have been sired by an ancient Sun God in ram form. Each month the golden fleece can be shorn to produce gold. Aries radiates the heat and glory of the sun and enemies will hesitate to strike him. He can distill fire gems from the sun's rays, and his presence protects soldiers from scorching flame. The sun continually shines wherever he is located and heat will increase across the province. He is skilled in the magic of the sun."
 #fixedname "Aries"
 #quadruped
 #homerealm 0
 #size 7
+#hp 102
 #gcost 0
 #att 12
 #def 12
@@ -24486,28 +24532,35 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #flying
 #awe 3
 #heat 5
-#fireres 10
+#fireres 15
+#localsun
 #gold 100
 #decscale 2  -- Increase Heat
 #magicskill 0 2
 #magicskill 4 2
 #gemprod 0 1
+-- #tmpfiregems 1
+#onebattlespell 1168 -- Flame Ward
+-- #onebattlespell 1240 -- Fire Fend
 #goodleader
 #supplybonus 0
 #beastmaster 2
+#startage 1000
+#maxage 2000
 #twiceborn 6644 -- Wight Beast
 #weapon 55  -- Hoof
 #weapon 300  -- Headbutt
 #montag 1006  -- No Transformation spells
-#end
+#end 
 
 #newmonster 7280
 #copystats 2784  -- Thrice Horned Boar
 #clearmagic
+#clearweapons
 #spr1 "magicenhanced/eebigboar.tga"
 #spr2 "magicenhanced/eebigboar2.tga"
 #name "Enchanted Boar"
-#descr "Twrch Trwyth is a giant enchanted boar that roams the deepest forests and has been the subject of many hunts. It has poisonous bristles and is said to be an ancient king cursed with the form of a boar for deeds of great wickedness. Each month he will dig up magical gems hidden in the earth. He is skilled in the magics of Earth and Nature. Each month boars will flock to aid Twrch Trwyth and in battle he will be joined by a host of the creatures."
+#descr "Twrch Trwyth is a giant enchanted boar that roams the deepest forests and has been the subject of many hunts. It has poisonous bristles and is said to be an ancient king cursed with the form of a boar for deeds of great wickedness. Its bristles can be collected as magical earth gems, and in battle it imparts a swelling anger upon its allies. It is skilled in the magics of earth and nature. Each month boars will flock to aid Twrch Trwyth and in battle it will be joined by a host of the creatures."
 #fixedname "Twrch Trwyth"
 #quadruped
 #homerealm 0
@@ -24523,10 +24576,16 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #magicskill 3 2
 #magicskill 6 2
 #supplybonus 0
+-- #tmpearthgems 1
 #gemprod 3 1
+#onebattlespell 1340 -- Growing Fury
 #poisonres 15
+#weapon 55  -- Hoof
+#weapon 331  -- Gore
 #goodleader
 #beastmaster 2
+#startage 1000
+#maxage 2000
 #batstartsum3d6 549  -- Boar
 #montag 1006  -- No Transformation spells
 #end
@@ -24534,30 +24593,38 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #newmonster 7281
 #copystats 979  -- Great White Bull
 #clearmagic
+#clearweapons
 #spr1 "magicenhanced/eeblackbull.tga"
 #spr2 "magicenhanced/eeblackbull2.tga"
 #name "Bull of Heaven"
-#descr "Apis is a divine bull conceived in a ray of light from the Heavens. His breath can cure disease and his presence brings new life and prosperity. Each month he will produce an astral pearl from a moonbeam. He is skilled in the magics of the Heavens and Nature whilst his movements can be interpreted to predict future events."
+#descr "Apis is a divine bull conceived in a ray of light from the Heavens. His breath can cure disease and his presence brings new life and prosperity. In battle he will distill astral pearls from the light of the heavens, and protect soldiers from an untimely fate. He is skilled in the magics of the heavens and nature, and his movements can be interpreted to predict future events."
 #fixedname "Apis"
 #quadruped
 #homerealm 0
 #gcost 0
-#hp 85
+#hp 82
 #size 7
 #str 22
-#supplybonus 10
+#supplybonus 50
+#onebattlespell 860 -- Rewrite Fate
+-- #onebattlespell 884 -- Will of the Fates
 #berserk 0
 #unique
 #animal
 #firstshape 0
 #goodleader
 #beastmaster 2
+#weapon 55  -- Hoof
+#weapon 331  -- Gore
 #decscale 3  -- Increase Growth
 #nobadevents 20
 #autodishealer 1
 #magicskill 4 2
 #magicskill 6 2
+-- #tmpastralgems 1
 #gemprod 4 1
+#startage 1000
+#maxage 2000
 #twiceborn 6644 -- Wight Beast
 #montag 1006  -- No Transformation spells
 #end
@@ -27550,7 +27617,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #hp 17
 #str 12
 #prot 3
-#mor 50
+#mor 30
 #mr 14
 #att 10
 #def 10
@@ -31198,25 +31265,28 @@ While in the form of an old man, all paths are increased and allows the use of N
 #end
 
 #newmonster 7595
-#spr1 "extrapretenders/godspider.tga"
-#spr2 "extrapretenders/godspider2.tga"
+-- #spr1 "extrapretenders/godspider.tga"
+-- #spr2 "extrapretenders/godspider2.tga"
+#copyspr 3651 -- god spider
 #name "Ancient Spider"
-#descr "Anansi is an ancient spider, some say the oldest of all spiders. Over the millenia he has gained in magical power and in knowledge and it is said he knows every story in the world. Anansi is a crafty and cunning trickster who has fooled Gods and mortals alike. Each month he will produce poison that will crystallize into magical death gems. He is skilled in the magics of Death and Nature. Each month giant spiders will crawl from their hiding places to aid Anansi and in battle he will be joined by a host of the creatures."
-#fixedname "Anansi"
+#descr "Arachne is an ancient spider, some say the oldest and mother of all spiders. Once a mortal weaver cursed for her hubris against the gods, over the millenia she has gained in magical power and knowledge. She is now a crafty and cunning trickster skilled in the magics of death and glamour, who has fooled Gods and mortals alike. She can distill death gems from her poison, and will weave a protective web over her allies that protects them from piercing attacks but impedes their movements. Each month giant spiders will crawl from their hiding places to aid Anansi and in battle he will be joined by a host of the creatures."
+#fixedname "Arachne"
+#drawsize -15
 #quadruped
 #gcost 0
-#size 9
-#hp 55
+#size 7
+#hp 65
 #prot 16
 #mr 18
 #mor 30
 #str 16
 #att 14
 #def 12
-#prec 5
+#prec 15
 #enc 2
 #ap 22
 #mapmove 2
+#stealthy 40
 #startage 3000
 #maxage 5000
 #poisonres 15
@@ -31229,8 +31299,10 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 261  -- Web
 #domsummon 782  -- Giant Spider
 #magicskill 5 2
-#magicskill 6 2
+#magicskill 7 2
+-- #tmpdeathgems 1
 #gemprod 5 1
+#onebattlespell 862 -- Skeletal Legion
 #magicboost 53 0
 #animal
 #forestsurvival
@@ -31238,6 +31310,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #glamour
 #twiceborn 6644 -- Wight Beast
 #batstartsum3d6 782  -- Giant Spider
+#montag 1006  -- No Transformation spells
 #end
 
 #newmonster 7596
@@ -31247,11 +31320,11 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr1 "magicenhanced/eeapep.tga"
 #spr2 "magicenhanced/eeapep2.tga"
 #name "Water Serpent"
-#descr "Apep is a great water serpent that has swum the rivers of the world for generations. It is said he has even swum the dark waters of the Underworld and yet returned to the sunlit realm. Each month he will distill magical water gems and in battle he will protect all friendly troops from poisons. He is skilled in the magics of Water and Nature. Each month serpents will slither from their hiding places to aid Apep."
+#descr "Apep is a great water serpent that has swum the rivers of the world for generations. It is said he has even swum the dark waters of the Underworld and yet returned to the sunlit realm. He can distill water gems from his scales, and protect all friendly troops from poisons. He is skilled in the magics of water and wature. Each month serpents will slither from their hiding places to aid Apep."
 #fixedname "Apep"
 #snake
-#hp 65
-#size 9
+#hp 86
+#size 8
 #mr 18
 #mor 30
 #str 18
@@ -31259,9 +31332,12 @@ While in the form of an old man, all paths are increased and allows the use of N
 #animal
 #regeneration 10
 #domsummon 403  -- Horned Serpent
+#startage 1000
+#maxage 2000
 #amphibian
 #magicskill 2 2
 #magicskill 5 2
+-- #tmpwatergems 1
 #gemprod 2 1
 #goodleader
 #beastmaster 2
@@ -31270,6 +31346,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 239  -- Venomous Fangs
 #weapon 147  -- Spray Poison
 #watershape 7597
+#montag 1006  -- No Transformation spells
 #end
 
 #newmonster 7597
@@ -31279,11 +31356,11 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr1 "magicenhanced/eeapep.tga"
 #spr2 "magicenhanced/eeapep2.tga"
 #name "Water Serpent"
-#descr "Apep is a great water serpent that has swum the rivers of the world for generations. It is said he has even swum the dark waters of the Underworld and yet returned to the sunlit realm. Each month he will distill magical water gems and in battle he will protect all friendly troops from poisons. He is skilled in the magics of Water and Nature. Each month serpents will slither from their hiding places to aid Apep."
+#descr "Apep is a great water serpent that has swum the rivers of the world for generations. It is said he has even swum the dark waters of the Underworld and yet returned to the sunlit realm. He can distill water gems from his scales, and protect all friendly troops from poisons. He is skilled in the magics of water and wature. Each month serpents will slither from their hiding places to aid Apep."
 #fixedname "Apep"
 #snake
-#hp 65
-#size 9
+#hp 86
+#size 8
 #mr 18
 #mor 30
 #str 18
@@ -31292,8 +31369,11 @@ While in the form of an old man, all paths are increased and allows the use of N
 #regeneration 10
 #summon1 565  -- Sea Serpent
 #amphibian
+#startage 1000
+#maxage 2000
 #magicskill 2 2
 #magicskill 5 2
+-- #tmpwatergems 1
 #gemprod 2 1
 #goodleader
 #beastmaster 2
@@ -31302,36 +31382,43 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 239  -- Venomous Fangs
 #weapon 147  -- Spray Poison
 #landshape 7596
+#montag 1006  -- No Transformation spells
 #end
 
 #newmonster 7598
-#copystats 1085  -- Moose Riders
-#clearweapons
+#copystats 2228 -- Deer
 #spr1 "magicenhanced/eewhitehart.tga"
 #spr2 "magicenhanced/eewhitehart2.tga"
 #name "White Hart"
-#descr "Cernunnos is a legendary stag sometimes glimpsed in the deepest forests. It is a symbol of the thrill of the hunt and the joy of discovery. Each month an air gem will be found near where the stag has been sighted. Wherever the White Hart dwells lucky events will happen more frequently and in battle several friendly soldiers will experience great luck. He is skilled in the magics of Air and Nature whilst each month deer will flock to his aid."
+#descr "Cernunnos is a legendary stag sometimes glimpsed in the deepest forests. He is a symbol of the thrill of the hunt and the joy of discovery. Wherever the White Hart dwells lucky events will happen more frequently. He is skilled in the magics of glamour and nature. The great stag's antlers shed into glamour gems, and friendly soldiers around the stag will experience great luck. Each month deer will flock to his aid."
 #fixedname "Cernunnos"
-#quadruped
-#size 6
-#gcost 0
+#hp 92
+#size 8
+#prot 12
 #mr 18
 #mor 30
+#str 20
 #att 12
 #def 12
+#prec 10
+#enc 2
+#ap 22
 #unique
+#goodleader
+#beastmaster 2
+#animalawe 3
+#startage 1000
+#maxage 2000
+#weapon 55  -- Hoof
 #onebattlespell 1367 -- Battle Fortune
 #domsummon 2228  -- Deer
 #decscale 4  -- Increase Luck
-#magicskill 1 2
+#magicskill 7 2
 #magicskill 6 2
-#gemprod 1 1
-#goodleader
-#beastmaster 2
-#secondshape 0
+-- #tmpglamourgems 1
+#gemprod 7 1
 #twiceborn 6644 -- Wight Beast
-#weapon 354  -- Antlers
-#weapon 55  -- Hoof
+#montag 1006  -- No Transformation spells
 #end
 
 #newmonster 7599
@@ -31582,19 +31669,25 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr1 "magicenhanced/eeparamist.tga"
 #spr2 "magicenhanced/eeparamist2.tga"
 #name "Mist Warrior"
-#descr "This is a warrior summoned from the Para-elemental planes. Where the realms of Air and Water meet are the Plains of Eternal Mist. Mist Warriors have bodies composed of water vapour and are almost impossible to hurt with mundane weaponry. They fire magic arrows that create clouds of freezing mist where they land. Para-elemental warriors are mindless magical beings and must be led by a mage."
+#descr "This is a warrior summoned from the Para-elemental planes. Where the realms of Air and Water meet are the Plains of Eternal Mist. Mist Warriors have bodies composed of water vapour and are almost impossible to hurt with mundane weaponry. They fire magic arrows that create clouds of freezing mist where they land, and wield blades made of frozen air. Para-elemental warriors are mindless magical beings and must be led by a mage."
 #gcost 0
+#hp 9
+#str 8
+#att 10
+#def 12
 #mr 14
 #mor 14
 #prec 12
 #mor 50
+#spiritform
 #ethereal
 #magicbeing
-#shockres 15
-#enc 2
+#shockres 10
+#coldres 15
+#enc 0
 #snaketattoo 0
 #float
-#weapon 92  -- Fist
+#weapon 37  -- Ice Mist Blade
 #weapon 1642 -- Mist Bow
 #end
 
@@ -31635,17 +31728,24 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr1 "magicenhanced/eeparasmoke.tga"
 #spr2 "magicenhanced/eeparasmoke2.tga"
 #name "Smoke Warrior"
-#descr "This is a warrior summoned from the Para-elemental planes. Where the realms of Air and Fire meet are the Lightless Halls of Smoke. Smoke Warriors have bodies composed of choking smoke and are almost impossible to hurt with mundane weaponry. They can hurl clouds of smoke that fill the lungs of living creatures. Para-elemental warriors are mindless magical beings and must be led by a mage."
+#descr "This is a warrior summoned from the Para-elemental planes. Where the realms of Air and Fire meet are the Lightless Halls of Smoke. Smoke Warriors have bodies composed of choking smoke and are almost impossible to hurt with mundane weaponry. They can hurl clouds of sulphurous smoke that fill the lungs of living creatures. Para-elemental warriors are mindless magical beings and must be led by a mage."
 #gcost 0
+#hp 12
+#str 5
+#att 11
+#def 12
 #mr 14
 #mor 14
-#enc 2
+#ap 12
+#enc 0
+#voidsanity 0
 #mor 50
+#spiritform
 #fireres 25
 #poisonres 25
 #darkvision 100
 #magicbeing
-#weapon 92  -- Fist
+#weapon 1889  -- Suffocation
 #weapon 1643 -- Choking Smoke
 #end
 
@@ -64672,11 +64772,343 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 
+-- Elemental buffs
+
+-- Fire Elemental
+
+#selectmonster 3754
+#def 10
+#unsurr 2
+#end
+
+#selectmonster 3755
+#def 10
+#unsurr 2
+#end
+
+#selectmonster 3756
+#def 10
+#unsurr 2
+#end
+
+#selectmonster 3757
+#def 10
+#unsurr 2
+#end
+
+#selectmonster 3758
+#def 10
+#unsurr 2
+#end
+
+#selectmonster 3759
+#def 10
+#unsurr 2
+#end
+
+#selectmonster 3760
+#def 10
+#unsurr 2
+#end
+
+#selectmonster 3761
+#def 10
+#unsurr 2
+#end
 
 
+-- Air Elemental
+
+#selectmonster 3722
+#airshield 80
+#weapon 185
+#weapon 185
+#end
+
+#selectmonster 3723
+#airshield 80
+#weapon 185
+#end
+
+#selectmonster 3724
+#airshield 80
+#weapon 185
+#end
+
+#selectmonster 3725
+#airshield 80
+#weapon 1887
+#end
+
+#selectmonster 3726
+#airshield 80
+#weapon 1887
+#end
+
+#selectmonster 3727
+#airshield 80
+#end
+
+#selectmonster 3728
+#airshield 80
+#end
+
+#selectmonster 3729
+#clearweapons
+#weapon1887
+#airshield 80
+#end
 
 
+-- Water Elemental
 
+#selectmonster 3730
+#uwregen 4
+#reconst 4
+#end
+
+#selectmonster 3731
+#uwregen 5
+#reconst 4
+#end
+
+#selectmonster 3732
+#uwregen 5
+#reconst 5
+#end
+
+#selectmonster 3733
+#uwregen 6
+#reconst 5
+#end
+
+#selectmonster 3734
+#uwregen 6
+#reconst 6
+#end
+
+#selectmonster 3735
+#uwregen 7
+#reconst 6
+#end
+
+#selectmonster 3736
+#uwregen 7
+#reconst 7
+#end
+
+#selectmonster 3737
+#uwregen 9
+#reconst 9
+#end
+
+-- Earth Elemental
+
+#selectmonster 3738
+#pierceres
+#end
+
+#selectmonster 3739
+#pierceres
+#end
+
+#selectmonster 3740
+#pierceres
+#end
+
+#selectmonster 3741
+#pierceres
+#end
+
+#selectmonster 3742
+#pierceres
+#end
+
+#selectmonster 3743
+#pierceres
+#end
+
+#selectmonster 3744
+#pierceres
+#end
+
+#selectmonster 3745
+#pierceres
+#end
+
+-- Ice Elemental
+
+#selectmonster 3746
+#coldpower 1
+#icenatprot 1
+#slashres
+#end
+
+#selectmonster 3747
+#coldpower 1
+#icenatprot 1
+#slashres
+#end
+
+#selectmonster 3748
+#coldpower 1
+#icenatprot 1
+#slashres
+#end
+
+#selectmonster 3749
+#coldpower 1
+#icenatprot 1
+#slashres
+#end
+
+#selectmonster 3750
+#coldpower 1
+#icenatprot 1
+#slashres
+#end
+
+#selectmonster 3751
+#coldpower 1
+#icenatprot 1
+#slashres
+#end
+
+#selectmonster 3752
+#coldpower 1
+#icenatprot 1
+#slashres
+#end
+
+#selectmonster 3753
+#coldpower 1
+#icenatprot 1
+#slashres
+#end
+
+-- Illearth
+
+#selectmonster 3754
+#clearweapons
+#weapon 1888
+#weapon 1888
+#att 11
+#end
+
+#selectmonster 3755
+#clearweapons
+#weapon 1888
+#weapon 1888
+#att 11
+#end
+
+#selectmonster 3756
+#clearweapons
+#weapon 1888
+#weapon 1888
+#att 11
+#end
+
+#selectmonster 3757
+#clearweapons
+#weapon 1888
+#weapon 1888
+#att 11
+#end
+
+#selectmonster 3758
+#clearweapons
+#weapon 1888
+#att 11
+#end
+
+#selectmonster 3759
+#clearweapons
+#weapon 1888
+#att 11
+#end
+
+#selectmonster 3760
+#clearweapons
+#weapon 1888
+#att 11
+#end
+
+#selectmonster 3761
+#clearweapons
+#weapon 1888
+#att 11
+#end
+
+-- ELEMENTAL ROYALTY
+
+-- AIR QUEENS
+
+#selectmonster 563
+#clearmagic
+#magicskill 1 6
+#end
+
+#selectmonster 911
+#clearmagic
+#magicskill 1 6
+#end
+
+#selectmonster 912
+#clearmagic
+#magicskill 1 5
+#magicskill 7 2
+#end
+
+-- EARTH KINGS
+
+#selectmonster 469
+#clearmagic
+#magicskill 3 6
+#end
+
+#selectmonster 906
+#clearmagic
+#magicskill 3 6
+#end
+
+-- FIRE KINGS
+
+#selectmonster 631
+#clearmagic
+#magicskill 0 6
+#end
+
+#selectmonster 910
+#clearmagic
+#magicskill 0 5
+#magicskill 3 2
+#end
+
+-- WATER QUEENS
+
+#selectmonster 359
+#clearmagic
+#magicskill 2 6
+#end
+
+#selectmonster 907
+#clearmagic
+#magicskill 2 6
+#end
+
+#selectmonster 908
+#clearmagic
+#magicskill 2 5
+#magicskill 1 2
+#end
+
+# ILLEARTH
+
+#selectmonster 470
+#clearweapons
+#weapon 63 -- lifedrain
+#end
 
 -- Start of New Pretender Changes and Additions
 
@@ -75015,10 +75447,88 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #magicskill 7 1
 #end
 
+#newmonster 10021 -- Aetos
+#copystats 1381  -- Great Eagle
+#clearmagic
+#spr1 "magicenhanced/eetempesteagle.tga"
+#spr2 "magicenhanced/eetempesteagle2.tga"
+#name "Tempest Eagle"
+#descr "Aetos is a giant tawny eagle with resplendent feathers. He was raised as a companion by an ancient deity of the heavens and used to punish those who dared steal the secret of fire from the gods. Aetos is skilled in the magics of air and fire. In battle he will beat his wings to create a howling windstorm that will prevent flight and blow arrows off their course. He can distill thunder and lightning into air gems, and his screech strikes fear into the heart of enemy soldiers."
+#fixedname "Aetos"
+#bird
+#animal
+#unique
+#gcost 0
+#hp 78
+#size 9
+#prot 16
+#mr 16
+#mor 16
+#str 20
+#att 14
+#def 13
+#prec 15
+#enc 2
+#mapmove 32
+#ap 8
+#magicskill 1 2
+#magicskill 0 2
+#gemprod 1 1
+-- #tmpairgems 1
+#onebattlespell 830 -- Storm
+#startage 1000
+#maxage 2000
+#shockres 15
+#fireres 5
+#fear 5
+#mountainsurvival
+#stormimmune
+#transformation 0
+#montag 1006  -- No Transformation spells
+#spiritsight
+#goodleader
+#beastmaster 2
+#twiceborn 1388  -- Ziz
+#end
 
-
-
-
+#newmonster 6834
+#copystats 1381  -- Great Eagle
+#copyspr 2785  -- Solar Eagle
+#clearmagic
+#clearweapons
+#name "Primordial Eagle"
+#descr "A Primordial Eagle is an animal spirit from an age long ago, when monsters and giants roamed the land. They are massive in size and tremendously majestic creatures of the air. In combat the eagle will beat its wings to create a howling windstorm that will prevent flight and blow arrows off their course, however the eagle will be unaffected. The screech of the creature will strike fear into the heart of enemy soldiers. Primordial spirits are revered among the tribes and are considered sacred."
+#bird
+#gcost 0
+#hp 78
+#size 9
+#prot 16
+#mr 16
+#mor 16
+#str 22
+#att 14
+#def 12
+#prec 15
+#enc 2
+#mapmove 32
+#ap 8
+#weapon 404  -- Beak
+#weapon 408  -- Talons
+#startage 1000
+#maxage 2000
+#woundfend 2
+#shockres 15
+#fear 5
+#holy
+#mountainsurvival
+#stormimmune
+#transformation 0
+#onebattlespell 830 -- Storm
+#spiritsight
+#okleader
+#twiceborn 1388  -- Ziz
+#shockres 15
+#end
 
 
 
@@ -88441,6 +88951,15 @@ The number of Scar Souls equals the one half the dominion of the province, round
 --#enc 2
 --#undead
 --#almostliving
+#end
+
+#selectmonster 3712 -- Spine Frog
+#descr "The Spine frog is a large amphibian beast found in warm swamps and marshlands famous for its deadly toxins. Their skin is so poisonous even a single touch can leave a victim paralyzed, and they can spit a blinding poison when they feel threatened. When hunting they grab their prey with their tongue and often swallow it whole."
+#amphibious
+#poisonskin 60
+#clearweapons
+#weapon 1892 -- blinding spit
+#weapon 796 -- gobble
 #end
 
 #selectmonster 3790 -- Crosswielder
@@ -113519,7 +114038,7 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #pathlevel 1 1
 #effect 1
 #damage 7612 -- Smoke Warriors
-#nreff 5
+#nreff 4
 #range 2
 #flightspr -1
 #fatiguecost 100
@@ -113536,7 +114055,7 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #pathlevel 1 1
 #effect 1
 #damage 7612 -- Smoke Warriors
-#nreff 3006
+#nreff 3003
 #range 2
 #flightspr -1
 #fatiguecost 200
@@ -113575,7 +114094,7 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #descr "The caster lights a flaming beacon and calls for a brave soul to appear. The caster does not know who will answer the call, only that they will be of stout heart. Those that answer may have magical skills or knowledge of the Healing Arts learnt during a life of adventure. Once the wanderer arrives they will aid the caster in the battle for ascension."
 #details "Random Adventurer appears."
 #researchlevel 5
-#school 0
+#school -1
 #path 0 0
 #pathlevel 0 3
 #effect 10021
@@ -113931,7 +114450,7 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #pathlevel 1 1
 #effect 1
 #damage 7610 -- Mist Warriors
-#nreff 5
+#nreff 4
 #range 2
 #flightspr -1
 #fatiguecost 100
@@ -113948,7 +114467,7 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #pathlevel 1 1
 #effect 1
 #damage 7610 -- Mist Warriors
-#nreff 3006
+#nreff 3003
 #range 2
 #flightspr -1
 #fatiguecost 200
@@ -114090,54 +114609,56 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 2051
-#name "6 Sahuagin Warriors"
+#name "8 Sahuagin Warriors"
 #school -1
 #researchlevel 0
 #effect 10001
 #damage 7864 -- Sahuaghin Warrior
-#nreff 6
+#nreff 8
 #spec 41943040  -- UW Only
 #end
 
 #selectspell 2052
-#name "Summon Sahuagin"
-#descr "The caster summons a pack of Sahuagin warriors and binds them to his service. Sahuagin are a vicious, highly intelligent race of fish-men. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they dislike the harsh sunlight and dry air."
+#name "Call Sea-Devils"
+#descr "The caster summons a pack of Sahuagin and binds them to his service. Sahuagin are a vicious, highly intelligent race of fish-men called Sea-Devils by fearful fishermen. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they are weakened by the harsh sunlight and dry air."
 #school 0
 #researchlevel 2
 #path 0 2
 #pathlevel 0 2
 #effect 10001
 #damage 7862 -- Sahuaghin Warrior
-#nreff 6
+#nreff 1006
 #fatiguecost 1000
-#spec 41943040  -- UW Only
+#spec 8388608  -- UW OK
 #nextspell 2051
 #end
 
-#selectspell 2053
-#name "Sahuagin Chief"
-#school -1
-#researchlevel 0
-#effect 10021
-#damage 7863 -- Sahuagin Warrior
-#nreff 1
-#end
+-- commented out as no longer necessary, basic spell now works both on land and sea.
 
-#selectspell 2054
-#name "Call Sea-Devils"
-#descr "The caster summons a war-party of Sahuagin warriors from the sea and binds them to his service. Sahuagin are a vicious, highly intelligent race of fish-men called Sea-Devils by fearful fishermen. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. The war-party will be lead by a fierce chieftain and more powerful mages can summon larger war-parties. Sahuagin can leave the sea, however they dislike the harsh sunlight and dry air. This spell can only be cast at a coastal province."
-#school 0
-#researchlevel 3
-#path 0 2
-#pathlevel 0 2
-#effect 10001
-#damage 7863 -- Sahuagin Warrior
-#nreff 1008
-#fatiguecost 1200
-#spec 0
-#onlycoastsrc 1
-#nextspell 2053
-#end
+--#selectspell 2053
+--#name "Sahuagin Chief"
+--#school -1
+--#researchlevel 0
+--#effect 10021
+--#damage 7863 -- Sahuagin Warrior
+--#nreff 1
+--#end
+
+--#selectspell 2054
+--#name "Call Sea-Devils"
+--#descr "The caster summons a war-party of Sahuagin warriors from the sea and binds them to his service. Sahuagin are a vicious, highly intelligent race of fish-men called Sea-Devils by fearful fishermen. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. The war-party will be lead by a fierce chieftain and more powerful mages can summon larger war-parties. Sahuagin can leave the sea, however they dislike the harsh sunlight and dry air. This spell can only be cast at a coastal province."
+--#school 0
+--#researchlevel 3
+--#path 0 2
+--#pathlevel 0 2
+--#effect 10001
+--#damage 7863 -- Sahuagin Warrior
+--#nreff 2012
+--#fatiguecost 1200
+--#spec 0
+--#onlycoastsrc 1
+--#nextspell 2053
+--#end
 
 #selectspell 2055
 #name "Direct the Waves"
@@ -114155,12 +114676,12 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 2056
 #copyspell 945 -- Call Kraken
-#name "Summon Giant Crab"
-#descr "The caster summons a Giant Crab and binds it to his will. Giant Crabs can scuttle about with surprising speed and grace for their size. Their enormous claw is both sharp and large enough to behead a horse with one slice."
+#name "Summon Giant Crabs"
+#descr "The caster summons a cast of Giant Crabs and binds them to his will. Giant Crabs can scuttle about with surprising speed and grace for their size. Their enormous claw is both sharp and large enough to behead a horse with one slice."
 #researchlevel 3
 #pathlevel 0 2
-#nreff 1
 #fatiguecost 300
+#nreff 501
 #damage 7365
 #end
 
@@ -114672,7 +115193,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #pathlevel 1 1
 #effect 1
 #damage 7611 -- Mud Warriors
-#nreff 5
+#nreff 4
 #range 2
 #flightspr -1
 #fatiguecost 100
@@ -114690,7 +115211,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #pathlevel 1 1
 #effect 1
 #damage 7611 -- Mud Warriors
-#nreff 3006
+#nreff 3003
 #range 2
 #flightspr -1
 #fatiguecost 200
@@ -115114,7 +115635,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #pathlevel 0 3
 #pathlevel 1 2
 #effect 10021
-#fatiguecost 3500
+#fatiguecost 2500
 #damage 7228
 #onlygeosrc 64  -- Waste only
 #nreff 1
@@ -115226,7 +115747,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #pathlevel 1 1
 #effect 1
 #damage 7609 -- Magma Warriors
-#nreff 5
+#nreff 4
 #range 2
 #flightspr -1
 #fatiguecost 100
@@ -115244,7 +115765,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #pathlevel 1 1
 #effect 1
 #damage 7609 -- Magma Warriors
-#nreff 3006
+#nreff 3003
 #range 2
 #flightspr -1
 #fatiguecost 200
@@ -115467,13 +115988,13 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #name "Guardian Spirit"
 #descr "The mage calls up a Divine Guardian Spirit in the form of an Urmahlullu. The Urmahlullu has the appearance of a great winged lion with the head of an elderly man. This spirit is physically powerful and attuned to the magic of the stars and the skies, in addition to having great priestly powers. "
 #school 0
-#researchlevel 9
+#researchlevel 8
 #path 0 4
 #path 1 1
 #pathlevel 0 5
 #pathlevel 1 2
 #effect 10021
-#fatiguecost 4000
+#fatiguecost 4500
 #damage 7233 -- Urmahlullu
 #nreff 1
 #end
@@ -115531,7 +116052,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #descr "The caster contacts the Shadow Seers to bargain for the services of the Grey Knights. Soon a host of ethereal knights will materialise and attack a target province. The knights will attack the defenders of the province and any army stationed there but are not otherwise under the control of their summoner."
 #researchlevel 8
 #path 0 4
-#pathlevel 0 4
+#pathlevel 0 3
 #path 1 1
 #pathlevel 1 2
 #damage 390  -- Grey Knight
@@ -116529,17 +117050,17 @@ Restore order to the world, return the dead to their rest, and end this terrible
 
 #selectspell 2269
 #name "The Ancient Spider"
-#descr "Anansi is an ancient spider, some say the oldest of all spiders. Over the millenia he has gained in magical power and in knowledge and it is said he knows every story in the world. Anansi is a crafty and cunning trickster who has fooled Gods and mortals alike."
+#descr "Arachne is an ancient spider, some say the oldest mother of all spiders. Once a mortal weaver who was cursed for her hubris against the gods, over the millenia she has gained in magical power and knowledge. She is now a crafty and cunning trickster who has fooled Gods and mortals alike."
 #details "This is a unique creature that cannot be summoned if already present in the world."
 #school 0
 #researchlevel 5
-#path 0 6
-#path 1 5
+#path 0 5
+#path 1 7
 #pathlevel 0 3
 #pathlevel 1 2
 #effect 10089
 #fatiguecost 2500
-#damage 7595 -- Anansi the Spider
+#damage 7595 -- Arachne the Spider
 #nreff 1
 #end
 
@@ -116549,8 +117070,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #details "This is a unique creature that cannot be summoned if already present in the world."
 #school 0
 #researchlevel 5
-#path 0 5
-#path 1 2
+#path 0 2
+#path 1 5
 #pathlevel 0 3
 #pathlevel 1 2
 #effect 10089
@@ -116598,7 +117119,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #details "This is a unique creature that cannot be summoned if already present in the world."
 #school 0
 #researchlevel 5
-#path 0 1
+#path 0 7
 #path 1 6
 #pathlevel 0 3
 #pathlevel 1 2
@@ -116610,7 +117131,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 
 #selectspell 2274
 #name "The Solar Ram"
-#descr "The Solar Ram is a winged ram with a golden fleece. It is a symbol of the sun and its fleece will provide gold and fire gems when shorn."
+#descr "The Solar Ram is a winged ram with a golden fleece. It is a symbol of the sun and its fleece will provide gold when shorn."
 #details "This is a unique creature that cannot be summoned if already present in the world."
 #school 0
 #researchlevel 5
@@ -117003,7 +117524,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #details "Plant beings only, Friendly forest provinces with no death scales may produce vine creatures each month. Higher growth scales increase the chance and quantity of creatures. Up to 1 Ivy King may join in a Growth 3 forest."
 #portent "In the forests of ##disnat## ancient forces are awakening. The Ivy Kings lived long before the coming of man, but fell into a deep slumber in ages past. Now they march once more under the banner of ##fullgodname##! Surely they will sweep away all other nations unless the spell is broken and the Vine Men allowed to rest once more."
 --#cure ""
-#school 0
+#school -1
 #researchlevel 7
 #path 0 6
 #pathlevel 0 5
@@ -117386,7 +117907,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 
 #selectspell 2341
 #copyspell 638 -- Slime
-#name "Drown the Heathens"
+#name "Mire the Heathens"
 #descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. Water magically congeals around the targets and impedes their movement. This effect will wear off more quickly on targets with high magic resistance."
 #details "Slimed units are slowed and suffer an additional -2 att/def penalty."
 #researchlevel 0
@@ -121253,7 +121774,8 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #copyspell 318 -- Scorpion Man
 #name "Contact Scorpion Lord"
 #descr "The Scorpion Lord is a powerful leader of the Scorpion men. It is said that when a scorpion man looks at a mountain, the mountain shivers in fear."
-#researchlevel 8
+#researchlevel 7
+#pathlevel 0 2
 #effect 10021
 #fatiguecost 1500
 #end
@@ -135827,7 +136349,7 @@ All effects scale with friendly Dominion."
 #name "Elemental Barrage"
 #descr "The caster summons several Fire Elementals and launches them towards an enemy army camp located in a province far away. The elementals will cause damage as they land in the camp and will then animate to attack whatever they find. The more units present in the camp, the greater the chance of hitting a target. The spell can also be used to harass a besieging force of enemies."
 #details "Deals 15AP damage to up to 15 targets, creates 1 size 6, 2 size 4 and 1D6 size 3 Fire Elementals to attack province defenders."
-#school 2
+#school -1
 #researchlevel 7
 #path 0 0
 #pathlevel 0 4
@@ -142196,6 +142718,36 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #range 0
 #end
 
+#selectspell 4251 -- Living Illearth
+#copyspell "Living Fire"
+#name "Living Illearth"
+#descr "Blood is spilled onto the earth, summoning a group of Illearth elementals.  Illearth elementals can absorb the blood of their fallen enemies to become larger.  More powerful mages can summon more elementals."
+#path 0 8
+#path 1 3 
+#pathlevel 0 3
+#pathlevel 1 2
+#fatiguecost 300
+#nreff 1000
+#school 6
+#damage 3757
+#end
+
+#selectspell 4252
+#name "The Tempest Eagle"
+#descr "The Tempest Eagle is a legendary eagle, raised as a companion by an ancient deity of the heavens. In battle he will beat his wings to create a howling windstorm that will prevent flight and blow arrows off their course. "
+#details "This is a unique creature that cannot be summoned if already present in the world."
+#school 0
+#researchlevel 5
+#path 0 1
+#path 1 0
+#pathlevel 0 3
+#pathlevel 1 2
+#effect 10089
+#fatiguecost 2500
+#damage 10021 -- The Tempest Eagle
+#nreff 1
+#end
+
 -- END OF NEW SPELLS
 
 
@@ -142584,10 +143136,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 362 -- Anzu
-#researchlevel 5
-#pathlevel 0 2
-#path 1 6
-#pathlevel 1 2
+#researchlevel 6
 #end
 
 #selectspell 364 -- Ephor
@@ -143805,6 +144354,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #onlygeosrc 32  -- Swamp
 #end
 
+#selectspell 962 -- Summon Fay Folk
+#researchlevel 2
+#nreff 2008
+#end
 
 #selectspell 975 -- School of Sharks
 #nreff 2002 -- 6++
@@ -143814,6 +144367,11 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #nogeosrc 4096  -- Cannot be cast in caves
 #end
 
+#selectspell 979 -- Summon Spine Frogs
+#name "Summon Spine Frogs"
+#descr "The caster summons a group of Spine Frogs and binds them to his service. The Spine frog is a large amphibian beast found in warm swamps and marshlands famous for its deadly toxins. Their skin is so poisonous even a single touch can leave a victim paralyzed, and they can spit a blinding poison when they feel threatened. When hunting they grab their prey with their tongue and often swallow it whole."
+#nreff 3
+#end
 
 #selectspell 983
 #notfornation 28 -- EA Machaka
@@ -143981,6 +144539,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 1079 -- Legion of Wights
 #spec 8388608 -- UWOK
+#nreff 3015
 #end
 
 #selectspell 1080 -- Tartarian Gate
@@ -144870,6 +145429,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #pathlevel 1 2
 #end
 
+#selectspell 1417 -- Summon Illearth
+#fatiguecost 100
+#end
+
 #selectspell 1422 -- Infernal Disease
 #fatiguecost 1500
 #end
@@ -145407,7 +145970,6 @@ Can only be cast once per combat round."
 #selectspell 2829 -- Endurance of Giants
 #school -1
 #end
-
 
 
 
