@@ -47354,7 +47354,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #att 10
 #def 5
 #prec 11
-#mr 5
+#mr 7
 #mor 10
 #gcost 150
 #rcost 13
@@ -50780,7 +50780,7 @@ Dragon Priests can be recruited in any land fort."
 #armor 119  -- Reinforced Leather Cap
 #mountmnr 3575 -- armored steppe horse
 #mountedinspector
-#skilledrider 2
+#skilledrider 4
 #pillagebonus 2
 #mobilearcher 1
 #end
@@ -112114,6 +112114,7 @@ Oni will collect due tax from populations with unrest, partially recuperating lo
 #cheapgod20 8341 -- Demiurge
 #templegems 8 -- Blood Slaves
 
+#futuresite "Azazel's Forge"
 #futuresite "EA Hinnom Summons"
 #futuresite "Grigori"
 #futuresite "EA Hinnom Heroes"
