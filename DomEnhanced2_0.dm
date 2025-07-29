@@ -3774,6 +3774,12 @@
 #aftercloudarea 1
 #end
 
+#newweapon 1891
+#copyweapon 92 -- Fist
+#name "Fist of Bronze"
+#secondaryeffectalways 699
+#end
+
 #newweapon 1892 -- Blinding Spit
 #copyweapon 141 -- Poison Spit
 #name "Blinding Spit"
@@ -3783,6 +3789,7 @@
 #range0
 #secondaryeffect 333 -- Eyeloss
 #end
+
 
 -- END OF NEW WEAPONS
 
@@ -5094,7 +5101,6 @@
 #descr "Dandans are said to be the largest fish in the ocean. Protected by great bony plates, they are almost impervious to damage and can swallow a ship whole. They also have sharp teeth to use against the few really large opponents that can be found in the oceans."
 #prot 18
 #poisonres 5
-#montag 1000
 #end
 
 #newmonster 6511
@@ -24012,6 +24018,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #unique
 #holy
 #swampsurvival
+#polyimmune
 #end
 
 #newmonster 7259
@@ -24030,6 +24037,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #regeneration 10
 #reinvigoration 3
 #poisonres 10
+#polyimmune
 #end
 
 #newmonster 7260
@@ -24048,6 +24056,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #regeneration 10
 #reinvigoration 3
 #poisonres 10
+#polyimmune
 #end
 
 #newmonster 7261
@@ -24647,6 +24656,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #twiceborn 6644 -- Wight Beast
 #unique
 #bringeroffortune 15
+#polyimmune
 #end
 
 #newmonster 7283
@@ -24679,6 +24689,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #standard 2
 #unique
 #bringeroffortune 15
+#polyimmune
 #end
 
 #newmonster 7284
@@ -24701,6 +24712,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #twiceborn 1388  -- Ziz
 #unique
 #bringeroffortune 15
+#polyimmune
 #end
 
 #newmonster 7285
@@ -24721,6 +24733,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #twiceborn 6644 -- Wight Beast
 #unique
 #bringeroffortune 15
+#polyimmune
 #end
 
 #newmonster 7286
@@ -25057,6 +25070,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 491  -- Lesser Heads
 #weapon 491  -- Lesser Heads
 #weapon 236  -- Claw
+#polyimmune
 #end
 
 #newmonster 7296
@@ -25118,6 +25132,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #itemslots 17620992 -- 3 crowns, 2 misc
 #twiceborn 6644 -- Wight Beast
 #unique
+#polyimmune
 #end
 
 #newmonster 7299
@@ -25136,6 +25151,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #deathdisease 10
 #weapon 506  -- Plague Scythe
 #weapon 63  -- Life Drain
+#polyimmune
 #end
 
 #newmonster 7300
@@ -26930,12 +26946,15 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #hp 125
 #str 25
 #prot 24
+#def 12
+#att 13
 #siegebonus 25
 #castledef 25
 #noheal
 #spiritsight
 #humanoid
 #weapon 645  -- Bronze Sword
+#weapon 1891 -- Fist of Bronze
 #nametype 107  -- Arco Male
 #end
 
@@ -28785,6 +28804,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #praise 5
 #montag 1027
 #twiceborn 7231 -- Wight Giant
+#polyimmune
 #end
 
 #newmonster 7474
@@ -28828,6 +28848,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 1587 -- Holy Flamestrike
 #montag 1027
 #twiceborn 7231 -- Wight Giant
+#polyimmune
 #end
 
 #newmonster 7475
@@ -28865,6 +28886,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 183  -- Linen Cuirass
 #montag 1027
 #twiceborn 7231 -- Wight Giant
+#polyimmune
 #end
 
 #newmonster 7477
@@ -28900,6 +28922,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 238  -- Magic Staff
 #montag 1027
 #twiceborn 7231 -- Wight Giant
+#polyimmune
 #end
 
 #newmonster 7478
@@ -29473,6 +29496,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #itemslots 1007622 -- 2 heads, 2 hands, feet, body, 2 misc
 #weapon 92  -- Fist
 #montag 1030
+#polyimmune
 #end
 
 #newmonster 7501
@@ -29510,6 +29534,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 238  -- Magic Staff
 #weapon 404  -- Beak
 #montag 1030
+#polyimmune
 #end
 
 #newmonster 7502
@@ -29544,6 +29569,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #maxage 1000
 #weapon 92  -- Fist
 #montag 1030
+#polyimmune
 #end
 
 #newmonster 7503
@@ -29579,6 +29605,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 238  -- Magic Staff
 #weapon 404  -- Beak
 #montag 1030
+#polyimmune
 #end
 
 #newmonster 7504
@@ -29613,6 +29640,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 238  -- Magic Staff
 #weapon 404  -- Beak
 #montag 1030
+#polyimmune
 #end
 
 #newmonster 7505
@@ -29649,6 +29677,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #maxage 1000
 #weapon 238  -- Magic Staff
 #montag 1030
+#polyimmune
 #end
 
 #newmonster 7506
@@ -29693,6 +29722,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 8 1
 #ap 15
 #nametype 105  -- Undead
+#polyimmune
 #end
 
 #newmonster 7508
@@ -31100,6 +31130,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #weapon 13  -- Hammer
 #weapon 185  -- Lightning Swarm
 #weapon 243  -- Lightning
+#polyimmune
 #end
 
 #newmonster 7586
@@ -31126,6 +31157,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #weapon 20  -- Bite
 #weapon 236  -- Claw
 #weapon 185  -- Lightning Swarm
+#polyimmune
 #end
 
 #newmonster 7588
@@ -31637,35 +31669,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #mapmove 2
 #end
 
-#newmonster 7607
-#copystats 694  -- Great Bear
-#clearmagic
-#clearweapons
-#spr1 "magicenhanced/eeruamokobear.tga"
-#spr2 "magicenhanced/eeruamokobear2.tga"
-#name "Ursa Major"
-#descr "This mage has taken the form of a gigantic bear to destroy the enemies of the true God. The gigantic body is strong and healthy. The mage will retain any magic skills learned before the transformation took place."
-#quadruped
-#size 10
-#hp 100
-#str 25
-#prec 10
-#mr 18
-#prot 16
-#mor 14
-#att 13
-#heal
-#fear 5
-#coldres 5
-#transformation 0
-#maxage 8000
-#weapon 20  -- Bite
-#weapon 236  -- Claw
-#weapon 236  -- Claw
-#montag 1011
-#twiceborn 6644 -- Wight Beast
-#end
-
 #newmonster 7608
 #copystats 1368  -- Seraph
 #clearmagic
@@ -32158,6 +32161,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #goodleader
 #twiceborn 7223 -- Dracowight
 #unique
+#polyimmune
 #end
 
 #newmonster 7633
@@ -32194,6 +32198,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #goodleader
 #twiceborn 7223 -- Dracowight
 #unique
+#polyimmune
 #end
 
 #newmonster 7634
@@ -32651,7 +32656,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #startage 250
 #maxage 450
 #poorleader
-#montag 1011
 #end
 
 #newmonster 7654
@@ -32691,7 +32695,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #maxage 450
 #twiceborn 7245 -- Necrophidian
 #noleader
-#montag 1000
 #end
 
 #newmonster 7655
@@ -33046,6 +33049,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #incunrest 50
 #unique
 #female
+#polyimmune
 #end
 
 #newmonster 7671
@@ -33367,27 +33371,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #transformation 0
 #twiceborn 1388  -- Ziz
 #itemslots 794624 -- 2 misc & head
-#end
-
-#newmonster 7684
-#copystats 639  -- Kraken King
-#spr1 "vanilla/kraken1.tga"
-#spr2 "vanilla/kraken2.tga"
-#drawsize 5
-#name "Transformed Kraken"
-#descr "This is a mage transformed into the form of a Kraken by magic. The Kraken is aquatic and can recover from even serious injuries. The mage will retain any magic skills learned before the transformation took place."
-#naga
-#mor 16
-#mr 11
-#ambidextrous 6
-#transformation 0
-#twiceborn 1235  -- Leviathan
-#itemslots 786462 -- 2 misc & 4 hands
-#clearweapons
-#weapon 628  -- Tentacle
-#weapon 628  -- Tentacle
-#weapon 628  -- Tentacle
-#weapon 628  -- Tentacle
 #end
 
 #newmonster 7685
@@ -33739,6 +33722,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #onebattlespell 773 -- Quicken Self
 #holy
 #montag 1033
+#polyimmune
 #end
 
 #newmonster 7702
@@ -33789,6 +33773,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #polyimmune
 #holy
 #montag 1033
+#polyimmune
 #end
 
 #newmonster 7703
@@ -33839,6 +33824,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #polyimmune
 #holy
 #montag 1033
+#polyimmune
 #end
 
 #newmonster 7704
@@ -39972,6 +39958,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #maxage 5000
 #startage 500
 #montag 1042  -- Void Lords
+#polyimmune
 #end
 
 #newmonster 8001
@@ -39992,6 +39979,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #onebattlespell 745 -- Astral Tempest
 #homerealm 0
 #montag 1042  -- Void Lords
+#polyimmune
 #end
 
 #newmonster 8002
@@ -40048,6 +40036,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #maxage 5000
 #startage 1000
 #montag 1042  -- Void Lords
+#polyimmune
 #end
 
 #newmonster 8003 -- Unspeakable One
@@ -40076,6 +40065,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #armor 231  -- Magic Robes
 #homerealm 0
 #montag 1042  -- Void Lords
+#polyimmune
 #end
 
 
@@ -41231,6 +41221,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #armor 521 -- Metal Kabuto
 #shapechange 8057
 #twiceborn 7223 -- Dracowight
+#polyimmune
 #end
 
 #newmonster 8057
@@ -41270,6 +41261,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #weapon 236  -- Claw
 #weapon 532  -- Tail Sweep
 #twiceborn 7223 -- Dracowight
+#polyimmune
 #end
 
 #newmonster 8058
@@ -41302,6 +41294,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #armor 155  -- Golden Shield
 #shapechange 8059
 #twiceborn 7223 -- Dracowight
+#polyimmune
 #end
 
 #newmonster 8059
@@ -41340,6 +41333,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #weapon 236  -- Claw
 #weapon 532  -- Tail Sweep
 #twiceborn 7223 -- Dracowight
+#polyimmune
 #end
 
 #newmonster 8060
@@ -41372,6 +41366,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #armor 521 -- Metal Kabuto
 #shapechange 8061
 #twiceborn 7223 -- Dracowight
+#polyimmune
 #end
 
 #newmonster 8061
@@ -41411,6 +41406,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #weapon 236  -- Claw
 #weapon 532  -- Tail Sweep
 #twiceborn 7223 -- Dracowight
+#polyimmune
 #end
 
 #newmonster 8062
@@ -41440,6 +41436,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #armor 159  -- Imperial Robes
 #shapechange 8063
 #twiceborn 7223 -- Dracowight
+#polyimmune
 #end
 
 #newmonster 8063
@@ -41478,6 +41475,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #weapon 236  -- Claw
 #weapon 532  -- Tail Sweep
 #twiceborn 7223 -- Dracowight
+#polyimmune
 #end
 
 #newmonster 8064
@@ -42712,6 +42710,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #secondshape 0
 #weapon 1576 -- Golden Antlers
 #weapon 55  -- Hoof
+#polyimmune
 #end
 
 #newmonster 8114
@@ -45956,6 +45955,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #newmonster 8221 -- -Visitor
 #copystats 1406
 #copyspr 1406
+#polyimmune
 #end
 
 #newmonster 8222
@@ -47372,7 +47372,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #name "Reindeer"
 #descr "A herbivore. It can defend itself with its antlers, but prefers flight to fight.  Chosen by a Noayd from the herd for its strong soul to be ridden."
 #mr 10
-#morale 9
+#mor 9
 #hp 15
 #holy
 #armor 559 -- Light Leather Barding
@@ -47386,7 +47386,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #descr "A fierce, forest-dwelling animal. It can defend itself with its antlers."
 #mr 8
 #size 4
-#morale 9
+#mor 9
 #hp 18
 #prot 4
 #def 9
@@ -47401,7 +47401,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #name "Fey Horse of Rotaimo"
 #descr "Ruohtta's terrible fey horse, a feared and detested animal in Fennoscandia."
 #mr 15
-#morale 30
+#mor 30
 #hp 30
 #prot 4
 #def 14
@@ -47563,7 +47563,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #name "Horse Wight"
 #descr "A horse reawakened to serve as a mount. Wights are corporeal undead with leathery bodies that can withstand much damage."
 #mr 13
-#morale 17
+#mor 17
 #hp 30
 #prot 9
 #def 13
@@ -47589,7 +47589,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #name "Horse Wight"
 #descr "A horse reawakened to serve as a mount. Wights are corporeal undead with leathery bodies that can withstand much damage."
 #mr 14
-#morale 18
+#mor 18
 #hp 33
 #prot 9
 #def 14
@@ -47618,7 +47618,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #descr "War horses are trained not to spook in battle. They are equipped with barding of leather or metal. Cavalry reliant on a lance charge often ride war horses with heavier armor. Some war horses are also trained to fight with their hooves while their rider swings his weapon. War Horses are bred to be stronger than riding horses, but are somewhat slower."
 #mr 9
 #hp 22
-#morale 14
+#mor 14
 #def 11
 #str 15
 #att 11
@@ -49802,7 +49802,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #popkill 3
 #incunrest 30
 #supplybonus -10
-#morale 20
+#mor 20
 #clearmagic
 #magicskill 0 4
 #twiceborn 7223 -- Dracowight
@@ -49820,7 +49820,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #popkill 3
 #incunrest 30
 #supplybonus -10
-#morale 20
+#mor 20
 #clearmagic
 #magicskill 2 4
 #twiceborn 7223 -- Dracowight
@@ -49838,7 +49838,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #popkill 3
 #incunrest 30
 #supplybonus -10
-#morale 20
+#mor 20
 #clearmagic
 #magicskill 6 4
 #twiceborn 7223 -- Dracowight
@@ -49856,7 +49856,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #popkill 3
 #incunrest 30
 #supplybonus -10
-#morale 20
+#mor 20
 #clearmagic
 #magicskill 3 4
 #twiceborn 7223 -- Dracowight
@@ -49874,7 +49874,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #popkill 3
 #incunrest 30
 #supplybonus -10
-#morale 20
+#mor 20
 #clearmagic
 #magicskill 1 4
 #twiceborn 7223 -- Dracowight
@@ -49893,7 +49893,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #popkill 3
 #incunrest 30
 #supplybonus -10
-#morale 20
+#mor 20
 #regeneration 5
 #hp 165
 #str 25
@@ -50036,7 +50036,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #hp 105
 #gcost 0
 #size 10
-#morale 20
+#mor 20
 #prot 12
 #startage 1200
 #maxage 2000
@@ -50066,7 +50066,7 @@ With Ragnarok active, Surtr's sword is empowered and he will be able to destroy 
 #hp 105
 #gcost 0
 #size 10
-#morale 30
+#mor 30
 #prot 12
 #startage 1200
 #maxage 2000
@@ -50340,6 +50340,7 @@ Dragon Priests can be recruited in any land fort."
 #fireres 25
 #unique
 #spiritsight
+#polyimmune
 #end
 
 #newmonster 8690 -- Zhurong Tiger
@@ -50354,7 +50355,7 @@ Dragon Priests can be recruited in any land fort."
 #hp 34
 #prot 8
 #str 16
-#morale 18
+#mor 18
 #heat 5
 #fireshield 10
 #awe 1
@@ -51695,7 +51696,7 @@ Soldiers of the Deep can be recruited in any land fort."
 #att 11
 #str 12
 #hp 11
-#morale 13
+#mor 13
 #clearweapons
 #weapon 580 -- coral long spear
 #cleararmor
@@ -51718,7 +51719,7 @@ Witness Guards can be recruited in any land fort."
 #att 11
 #str 12
 #hp 12
-#morale 14
+#mor 14
 #bodyguard 4
 #clearweapons
 #weapon 46 -- coral glaive
@@ -55139,7 +55140,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #descr "A fierce, forest-dwelling animal. It can defend itself with its antlers."
 #mr 8
 #size 5
-#morale 11
+#mor 11
 #hp 20
 #prot 4
 #def 9
@@ -55154,7 +55155,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #name "Darkhad Horse"
 #descr "This is a specially bred horse wearing headgear fashioned to mimic the stag, the creature of the underworld that takes spirits to their rest."
 #mr 10
-#morale 11
+#mor 11
 #hp 24
 #def 11
 #str 15
@@ -55298,6 +55299,330 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #clearweapons
 #weapon 389
 #holy
+#end
+
+#newmonster 9123
+#copystats 7653
+#copyspr 7653
+#name "Odontotyrannos"
+#descr "The Odontotyrannos is a gigantic horned beast that lives in the rivers and estuaries around Oceania. It is an amphibious carnivore that can devour an elephant, with a horse-like head and three horns protruding from its forehead. Undeterred by the sight of fire, it often attacks those camped around the river mouth. The Odontotyrannos is renowned as a fearsome creature and its roar will strike fear into the hearts of even seasoned warriors. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#montag 1011 -- Become Great Beast
+#twiceborn 7443 -- Wight Beast
+#mr 15
+#mor 18
+#gcost 0
+#montagweight 2
+#end
+
+#newmonster 9124
+#copystats 8020
+#copyspr 8020
+#name "Dire Bear"
+#descr "Dire Bears are gigantic ancient bears that roam the wildest lands, far away from the settlements of man. These monstrous creatures are feared and revered for their strength, endurance and foul temper. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#montag 1011 -- Become Great Beast
+#twiceborn 7443 -- Wight Beast
+#mr 15
+#mor 18
+#gcost 0
+#montagweight 3
+#end
+
+#newmonster 9125
+#copystats 8021
+#copyspr 8021
+#name "Dire Boar"
+#descr "Dire Boars are legendarily large and spiteful boars that live in the densest forest. Their great size and ferocity have made them the target of several great hunts, but these as often end in tragedy as glory for the hunters. Their thick hides are famously hard to pierce with weapons. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#montag 1011 -- Become Great Beast
+#twiceborn 7443 -- Wight Beast
+#mr 15
+#mor 18
+#gcost 0
+#montagweight 2
+#end
+
+#newmonster 9126
+#copystats 3684
+#copyspr 3684
+#name "Calydonian Boar"
+#descr "The Calydonian Boar is a horrible monster boar with burning eyes, spear-like bristles of iron and tusks like that of an elephant. Anyone unfortunate enough to come close to the dreadful beast is set ablaze by the scorching heat of its eyes. The boar breathes flames and its tusks crackles with lightning. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#montag 1011 -- Become Great Beast
+#twiceborn 7443 -- Wight Beast
+#mr 15
+#mor 18
+#gcost 0
+#montagweight 1
+#end
+
+#newmonster 9127
+#copystats 514
+#copyspr 514
+#name "Kithaironic Lion"
+#descr "A Kithaironic Lion is a mythical lion with an extraordinarily thick hide, along with magical golden claws and fangs. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#montag 1011 -- Become Great Beast
+#twiceborn 7443 -- Wight Beast
+#mr 15
+#mor 18
+#gcost 0
+#montagweight 2
+#end
+
+#newmonster 9128
+#copystats 8022
+#copyspr 8022
+#name "Dire Tiger"
+#descr "Dire Tigers are huge and ferocious tigers that hunt the largest prey. Mammoths and Elephants are common targets, although sometimes one will try to hunt a small dragon. Their great teeth can carve through any material with ease, whilst their thick pelts render them almost immune from cutting and tearing. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#montag 1011 -- Become Great Beast
+#twiceborn 7443 -- Wight Beast
+#mr 15
+#mor 18
+#gcost 0
+#montagweight 2
+#end
+
+#newmonster 9129
+#copystats 403 -- Horned Serpent
+#copyspr 2799 -- Wadjet
+#name "Great Serpent"
+#descr "This is an enormous green serpent from the dawn of time, when monsters and giants roamed the world. Great Green Serpents can shed their skin and regenerate their wounds. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#montag 1011 -- Become Great Beast
+#twiceborn 7245 -- Necrophidian
+#mr 15
+#mor 18
+#gcost 0
+#montagweight 2
+#hp 68
+#swampsurvival
+#amphibian
+#heal
+#twiceborn 7245 -- Necrophidian
+#drawsize -15
+#size 7
+#end
+
+#newmonster 9130
+#copystats 884
+#copyspr 884
+#name "Great Spider"
+#descr "Dire Tigers are huge and ferocious tigers that hunt the largest prey. Mammoths and Elephants are common targets, although sometimes one will try to hunt a small dragon. Their great teeth can carve through any material with ease, whilst their thick pelts render them almost immune from cutting and tearing. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#montag 1011 -- Become Great Beast
+#twiceborn 7443 -- Wight Beast
+#mr 15
+#mor 18
+#gcost 0
+#montagweight 2
+#hp 35
+#prot 18
+#att 13
+#def 14
+#str 13
+#end
+
+#newmonster 9131
+#copystats 639
+#spr1 "vanilla/kraken1.tga"
+#spr2 "vanilla/kraken2.tga"
+#drawsize 5
+#name "Kraken King"
+#descr "This is a mage transformed into the form of a Kraken by magic. The Kraken is aquatic and can recover from even serious injuries. The mage will retain any magic skills learned before the transformation took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#montag 1069 -- Become Sea Monster
+#twiceborn 1235  -- Leviathan
+#mr 15
+#mor 18
+#gcost 0
+#montagweight 2
+#ambidextrous 6
+#clumsy 1
+#itemslots 786462 -- 2 misc & 4 hands
+#clearweapons
+#weapon 628  -- Tentacle
+#weapon 628  -- Tentacle
+#weapon 628  -- Tentacle
+#weapon 628  -- Tentacle
+#end
+
+#newmonster 9132
+#copystats 8630
+#copyspr 8630
+#drawsize -20
+#clearmagic
+#name "Great Crab"
+#descr "The Island Crab is a monstrous crab from the time of myth, when monsters and giants roamed the world. The Island Crab is immensely well protected by the great shell it bears. The Crab is slow, however any lesser beings that stand against it will be crushed underfoot. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#montag 1069 -- Become Sea Monster
+#twiceborn 1235  -- Leviathan
+#mr 15
+#mor 18
+#gcost 0
+#montagweight 2
+#size 7
+#end
+
+#newmonster 9133
+#copystats 816
+#spr1 "extrapretenders/megalodon.tga"
+#spr2 "extrapretenders/megalodon2.tga" 
+#drawsize -20
+#clearmagic
+#name "Great Shark"
+#descr "Sharks are ferocious animals that delight in the taste of blood. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#montag 1069 -- Become Sea Monster
+#twiceborn 1235  -- Leviathan
+#mr 15
+#mor 18
+#gcost 0
+#montagweight 2
+#size 8
+#hp 68
+#str 25
+#end
+
+#newmonster 9134
+#copystats 565
+#copyspr 565
+#name "Sea Serpent"
+#descr "There are many myths about huge monsters emerging from the depths to attack ships and devour those on board. The sea serpent is perhaps the most feared of these monsters. It is a huge, underwater serpent with coral spines sprouting from its back. Its fangs are highly poisonous, but it is its coral horn that has made it famous. Just like the alicorn sprouting from the forehead of the unicorn, the coral horn of the Sea Serpent is inherently magical. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#montag 1069 -- Become Sea Monster
+#twiceborn 7245 -- Necrophidian
+#mr 15
+#mor 18
+#gcost 0
+#montagweight 2
+#end
+
+#newmonster 9135
+#copystats 1234
+#copyspr 1234
+#name "Asp Turtle"
+#descr "The asp turtle is a giant dragon turtle that roams the sea. There are plenty of stories of fishermen landing on a small island that later turned out to be a sleeping asp turtle. When the fisherman lights a fire, the beast is roused and plunges into the depths. The asp turtle is probably the most powerful beast you can encounter if you stay out of the deep gorges in the ocean. The turtle is normally peaceful and lives in relatively shallow waters. Its huge size and heavy armor makes it easy for the turtle to kill smaller beings by trampling them. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#montag 1069 -- Become Sea Monster
+#twiceborn 1235  -- Leviathan
+#mr 15
+#mor 18
+#gcost 0
+#montagweight 2
+#end
+
+#newmonster 9136
+#name "Great Whale"
+#spr1 "extrapretenders/wisewhale.tga"
+#spr2 "extrapretenders/wisewhale.tga"
+#descr "The Great Whale is a monster from the dawn of time and among the wisest and largest of the sea monsters of the world. Normally they prefer to remain uninvolved in the wars of other races. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#snake
+#drawsize -10
+#nametype 159 -- oceania male
+#gcost 0
+#size 10
+#hp 190
+#prot 10
+#mr 15
+#mor 18
+#str 28
+#att 10
+#def 6
+#prec 5
+#enc 1
+#mapmove 8
+#ap 6
+#weapon 547  -- Buff
+#expertleader
+#goodmagicleader
+#aquatic
+#trample
+#blind
+#itemslots 786432 -- 2 misc
+#twiceborn 1235  -- Leviathan
+#maxage 5000
+#startage 1000
+#montag 1069 -- Become Sea Monster
+#montagweight 1
+#end
+
+#newmonster 9137
+#copystats 7654
+#copyspr 7654
+#name "Indus Worm"
+#descr "The Indus Worm is a type of giant, white carnivorous worm creature with large teeth that lurks in rivers and estuaries. They resemble the worms which infest figs, however these titanic creatures are larger than the largest elephant. They have teeth measuring over a foot in length and burrow in the muddy river bottom by day, emerging nocturnally to devour people and livestock. Indus Worms can regenerate wounds and will eventually regrow lost body parts. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#montag 1069 -- Become Sea Monster
+#twiceborn 7245 -- Necrophidian
+#mr 15
+#mor 18
+#gcost 0
+#montagweight 2
+#end
+
+#newmonster 9138
+#copystats 6510
+#copyspr 6510
+#name "Dandan"
+#descr "Dandans are said to be the largest fish in the ocean. Protected by great bony plates, they are almost impervious to damage and can swallow a ship whole. They also have sharp teeth to use against the few really large opponents that can be found in the oceans. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#montag 1069 -- Become Sea Monster
+#twiceborn 1235  -- Leviathan
+#mr 15
+#mor 18
+#gcost 0
+#montagweight 1
+#end
+
+
+#newmonster 9139
+#copystats 474 -- Living Statue
+#copyspr 474
+#name "Stone Statue"
+#descr "A statue given false life by a powerful enchantment, the living statue is difficult to destroy but will revert to an inanimate state if left on the battlefield without magical leadership. A mage has transferred their mind into the statue and will retain any magic skills learned before the transference took place."
+#berserk 0
+#transformation 0
+#maxage 2000
+#mr 15
+#mor 18
+#gcost 0
+#itemslots 926214 -- No chest
+#hp 20
+#def 9
+#att 10
 #end
 
 
@@ -82782,6 +83107,93 @@ Initiates of the Deep can be recruited in any land fort."
 #montagweight 2
 #end
 
+
+#selectmonster 305 -- Arch Devil
+#polyimmune
+#end
+
+#selectmonster 306 -- Ice Devil
+#polyimmune
+#end
+
+#selectmonster 492 -- Heliophagus
+#polyimmune
+#end
+
+#selectmonster 646 -- Troll Raider
+#polyimmune
+#end
+
+#selectmonster 647 -- Dark Knight
+#polyimmune
+#end
+
+#selectmonster 648 -- Troll Archer
+#polyimmune
+#end
+
+#selectmonster 649 -- Troll Mage
+#polyimmune
+#end
+
+#selectmonster 650 -- Warrior Mage
+#polyimmune
+#end
+
+#selectmonster 780 -- Lord of the Hunt
+#polyimmune
+#end
+
+#selectmonster 821 -- Ice Devil
+#polyimmune
+#end
+
+#selectmonster 822 -- Ice Devil
+#polyimmune
+#end
+
+#selectmonster 823 -- Ice Devil
+#polyimmune
+#end
+
+#selectmonster 824 -- Ice Devil
+#polyimmune
+#end
+
+#selectmonster 825 -- Ice Devil
+#polyimmune
+#end
+
+#selectmonster 826 -- Arch Devil
+#polyimmune
+#end
+
+#selectmonster 827 -- Arch Devil
+#polyimmune
+#end
+
+#selectmonster 828 -- Arch Devil
+#polyimmune
+#end
+
+#selectmonster 829 -- Arch Devil
+#polyimmune
+#end
+
+#selectmonster 1406 -- Visitor
+#polyimmune
+#end
+
+#selectmonster 3382 -- Yllerion
+#polyimmune
+#end
+
+#selectmonster 3383 -- Yllerion
+#polyimmune
+#end
+
+
+
 #selectmonster 311  -- Mystic
 #poormagicleader
 #end
@@ -83174,7 +83586,6 @@ Initiates of the Deep can be recruited in any land fort."
 #custommagic 45056 100 -- 150%DNB
 #custommagic 45056 50 -- 150%DNB
 #twiceborn 7443 -- Size 4 Wight Beast
-#montag 1011
 #end
 
 #selectmonster 489  -- Demon Knight
@@ -85519,14 +85930,17 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 1296
 #montag 1056
+#polyimmune
 #end
 
 #selectmonster 1297
 #montag 1056
+#polyimmune
 #end
 
 #selectmonster 1298
 #montag 1056
+#polyimmune
 #end
 
 #selectmonster 1306 -- jotun huskarl
@@ -86574,54 +86988,63 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #prot 18 -- +5
 #str 22 -- +3
 #twiceborn 7245 -- necrophidian
+#polyimmune
 #end
 
 #selectmonster 1823 -- Typhon
 #prot 18 -- +5
 #str 22 -- +3
 #twiceborn 7245 -- necrophidian
+#polyimmune
 #end
 
 #selectmonster 1824 -- Typhon
 #prot 18 -- +5
 #str 22 -- +3
 #twiceborn 7245 -- necrophidian
+#polyimmune
 #end
 
 #selectmonster 1825 -- Typhon
 #prot 18 -- +5
 #str 22 -- +3
 #twiceborn 7245 -- necrophidian
+#polyimmune
 #end
 
 #selectmonster 1826 -- Typhon
 #prot 18 -- +5
 #str 22 -- +3
 #twiceborn 7245 -- necrophidian
+#polyimmune
 #end
 
 #selectmonster 1827 -- Typhon
 #prot 18 -- +5
 #str 22 -- +3
 #twiceborn 7245 -- necrophidian
+#polyimmune
 #end
 
 #selectmonster 1828 -- Typhon
 #prot 18 -- +5
 #str 22 -- +3
 #twiceborn 7245 -- necrophidian
+#polyimmune
 #end
 
 #selectmonster 1829 -- Typhon
 #prot 18 -- +5
 #str 22 -- +3
 #twiceborn 7245 -- necrophidian
+#polyimmune
 #end
 
 #selectmonster 1830 -- Typhon
 #prot 21 -- +4
 #str 22 -- +3
 #twiceborn 7245 -- necrophidian
+#polyimmune
 #end
 
 #selectmonster 1831 -- Hydra
@@ -88644,6 +89067,7 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 
 #selectmonster 3167  -- Drakon Hesperidos
 #twiceborn 7245 -- Necrophidian
+#polyimmune
 #end
 
 #selectmonster 3169  -- Kuon Argyreos
@@ -132360,7 +132784,7 @@ All effects scale with friendly Dominion."
 #effect 10001
 #nreff 1
 #damage 7176
-#fatiguecost 600
+#fatiguecost 1000
 #end
 
 #selectspell 3403
@@ -142682,24 +143106,15 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #descr "The caster permanently transforms themselves into the form of a Great Eagle. The new body will be young and healthy and will retain the mind of the mage, along with any magical skills.  Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
 #details "The caster transforms into a young monster, but lost limbs are still lost after the transformation."
 #school 1
-#researchlevel 5
+#researchlevel 6
 #path 0 1
 #pathlevel 0 3
 #effect 10130
-#fatiguecost 1000
+#fatiguecost 1200
 #damage 7683 -- Transformed Eagle
 #nreff 1
 #nextspell 3756
-#spec 536870912  -- No effect on Lifeless
-#notmnr -1006
-#notmnr 8056 -- Dragon King
-#notmnr 8057 -- Dragon King
-#notmnr 8060 -- Dragon King
-#notmnr 8061 -- Dragon King
-#notmnr 7473 -- Uriel
-#notmnr 7266 -- Gabriel
-#notmnr 7500 -- Apkallu
-#notmnr 7502 -- Apkallu
+#spec 537395200  -- No effect on Lifeless
 #end
 
 #selectspell 2060
@@ -142715,9 +143130,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #nreff 1
 #spec 41943040  -- UW Only
 #nextspell 3756
-#spec 578813952  -- No effect on Lifeless, UW Only
-#notmnr -1006
-#notmnr 7998 -- Void Lord
+#spec 579338240  -- No effect on Lifeless, UW Only
 #end
 
 #selectspell 2113
@@ -142729,40 +143142,26 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #path 0 2
 #pathlevel 0 4
 #effect 10130
-#fatiguecost 1400
-#damage -1000
+#fatiguecost 2000
+#damage -1069
 #nreff 1
 #nextspell 3756
-#spec 578813952  -- No effect on Lifeless + UW Only
-#notmnr -1006
-#notmnr 8060 -- Dragon King
-#notmnr 8061 -- Dragon King
-#notmnr 7477 -- Raphael
-#notmnr 7501 -- Apkallu
-#notmnr 7504 -- Apkallu
+#spec 579338240  -- No effect on Lifeless + UW Only
 #end
 
 #selectspell 2132
 #name "Become Golem"
-#descr "The caster crafts a great stone golem and attempts to permanently transfer their mind into the receptacle. Their original body will wither and soon die, however if the transfer is successful the new body will be strong and hardy and the mind of the mage will retain any magical skills. Magic Resistance can help the mental transfer, however if the process fails the mage may permanently be killed. Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
+#descr "The caster crafts a great stone golem and attempts to permanently transfer their mind into the receptacle. Their original body will wither and soon die, however the new body will be strong and hardy and the mind of the mage will retain any magical skills. Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
 #school 4
 #researchlevel 9
 #path 0 3
-#pathlevel 0 4
+#pathlevel 0 5
 #effect 10130
-#fatiguecost 2000
+#fatiguecost 3000
 #damage 7685 -- Stone Golem
 #nreff 1
 #spec 545259520  -- No effect on Lifeless, UWOK
 #nextspell 2131
-#notmnr -1006
-#notmnr 8000 -- Void Lord
-#notmnr 8062 -- Dragon King
-#notmnr 8063 -- Dragon King
-#notmnr 8058 -- Dragon King
-#notmnr 8059 -- Dragon King
-#notmnr 7500 -- Apkallu
-#notmnr 7503 -- Apkallu
 #end
 
 #selectspell 2257
@@ -142774,12 +143173,11 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #path 0 6
 #pathlevel 0 4
 #effect 10130
-#fatiguecost 1800
+#fatiguecost 2000
 #damage -1011
 #nreff 1
 #nextspell 3756
-#spec 536870912  -- No effect on Lifeless
-#notmnr -1006
+#spec 545783808  -- No effect on Lifeless
 #end
 
 #selectspell 2258
@@ -142797,13 +143195,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #damage 7686 -- Transformed Giant
 #nreff 1
 #nextspell 3756
-#spec 536870912  -- No effect on Lifeless
-#notmnr -1006
-#notmnr 8060 -- Dragon King
-#notmnr 8061 -- Dragon King
-#notmnr 7477 -- Raphael
-#notmnr 7501 -- Apkallu
-#notmnr 7504 -- Apkallu
+#spec 537395200  -- No effect on Lifeless
 #end
 
 #selectspell 2310
@@ -142818,12 +143210,6 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #fatiguecost 2500
 #spec 545914880  -- (no undead, lifeless, mindless, UW OK)
 #nextspell 3756
-#notmnr -1006
-#notmnr 8060 -- Dragon King
-#notmnr 8061 -- Dragon King
-#notmnr 7477 -- Raphael
-#notmnr 7501 -- Apkallu
-#notmnr 7504 -- Apkallu
 #end
 
 #selectspell 4253
@@ -142837,6 +143223,21 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #damage 7582 -- Child of Tiamat
 #end
 
+
+#selectspell 4254
+#name "Become Living Statue"
+#descr "The caster crafts a stone statue and attempts to permanently transfer their mind into the receptacle. Their original body will wither and soon die, however the new body will be strong and hardy and the mind of the mage will retain any magical skills. Inanimate beings cannot change their form in this manner, and unique beings will resist attempts to change their form and cannot be affected."
+#school 4
+#researchlevel 6
+#path 0 3
+#pathlevel 0 4
+#effect 10130
+#fatiguecost 2000
+#damage 9139 -- Stone Statue
+#nreff 1
+#spec 545783808  -- No effect on Lifeless, UWOK, No undead
+#nextspell 2131
+#end
 
 
 -- END OF NEW SPELLS
@@ -142968,10 +143369,6 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #end
 
 #selectspell 269 -- Craft Keledone
-#restricted 205
-#end
-
-#selectspell 270 -- Forge Brass Bull
 #restricted 205
 #end
 
@@ -144286,12 +144683,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 866 -- Transformation
 #descr "The caster is transformed into a random monster or animal. Some monsters, such as fire drakes, are closely attuned to an element or other magical path. If the caster successfully transforms into such a being he might gain magic power. Also the casters new body is young and healthy. The transformation is not without risk, however, as the caster's mind and body may be damaged in the process. Sometimes a failed transformation can result in the form of a mindless being and usually mind and magic abilities are lost as a result. But sometimes a being with powerful magic can retain his magic ability as the magic is too strong to let the absence of a mind stop it. Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
 #fatiguecost 600
-#notmnr -1006
-#notmnr 8060 -- Dragon King
-#notmnr 8061 -- Dragon King
-#notmnr 7477 -- Raphael
-#notmnr 7501 -- Apkallu
-#notmnr 7504 -- Apkallu
+#researchlevel 5
 #end
 
 #selectspell 879 -- Ice Walls
@@ -145590,7 +145982,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 270 -- Brass Bull
-#fatiguecost 1500
+#restricted 205
+#fatiguecost 1200
 #end
 
 #selectspell 541 -- Contact Houri
