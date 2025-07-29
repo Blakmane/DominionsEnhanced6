@@ -6504,7 +6504,7 @@
 #summershape 6573 -- Summer Changing Woman
 #autumnshape 6574 -- Autumn Changing Woman
 #wintershape 6575 -- Winter Changing Woman
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 6573 -- Summer
@@ -6546,7 +6546,7 @@
 #springshape 6572 -- Spring Changing Woman
 #autumnshape 6574 -- Autumn Changing Woman
 #wintershape 6575 -- Winter Changing Woman
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 6574 -- Autumn
@@ -6589,7 +6589,7 @@
 #springshape 6572 -- Spring Changing Woman
 #summershape 6573 -- Summer Changing Woman
 #wintershape 6575 -- Winter Changing Woman
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 6575 -- Winter
@@ -6632,7 +6632,7 @@
 #springshape 6572 -- Spring Changing Woman
 #summershape 6573 -- Summer Changing Woman
 #autumnshape 6574 -- Autumn Changing Woman
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 6576
@@ -8289,7 +8289,7 @@
 #forestsurvival
 #weapon 9  -- Dagger
 #weapon 262  -- Web Spit
-#montag 1006
+#polyimmune
 #end
 
 #newmonster 6638
@@ -8328,7 +8328,7 @@
 #weapon 261  -- Web
 #weapon 65  -- Venomous Fangs
 #weapon 262  -- Web Spit
-#montag 1006
+#polyimmune
 #end
 
 #newmonster 6639
@@ -8566,7 +8566,7 @@
 #glamour
 #weapon 563  -- Spirit Club, the 2H version
 #armor 44  -- Furs
-#montag 1006
+#polyimmune
 #end
 
 #newmonster 6648
@@ -8600,7 +8600,7 @@
 #animal
 #glamour
 #weapon 20  -- Bite
-#montag 1006
+#polyimmune
 #end
 
 #newmonster 6649
@@ -20064,7 +20064,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon "Plague Breath"
 #ambidextrous 3
 #twiceborn 7063 -- Wight Giant (Jotun)
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7064
@@ -20110,7 +20110,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #superiorleader
 #weapon "Quarterstaff"
 #armor 187 -- Mask
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7065
@@ -20165,7 +20165,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon 835
 #weapon 835
 #weapon 835
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7066
@@ -20219,7 +20219,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon 835
 #weapon 835
 #weapon 835
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7067
@@ -20261,7 +20261,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #snaketattoo 3
 #holy
 #immortal
-#montag 1006  -- No Transformation spells
+#polyimmune
 #weapon "Quarterstaff"
 #end
 
@@ -22372,7 +22372,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #heretic 3
 #stealthy 40
 #nowish
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7158
@@ -23815,7 +23815,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #maxage 1500
 #unique
 #holy
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7251
@@ -23832,7 +23832,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #onebattlespell 1174 -- Friendly Currents
 #unique
 #holy
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7252
@@ -23848,7 +23848,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #mor 18
 #unique
 #holy
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7253
@@ -23976,7 +23976,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #unique
 #holy
 #swampsurvival
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7257
@@ -23996,7 +23996,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #swampsurvival
 #wastesurvival
 #incscale 0  -- Turmoil
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7258
@@ -24129,7 +24129,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #spiritsight
 #unique
 #holy
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7265
@@ -24147,7 +24147,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #mor 18
 #unique
 #holy
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7266
@@ -24175,7 +24175,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #magicskill 0 2
 #magicskill 4 3
 #magicskill 8 3
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7267
@@ -24471,7 +24471,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 322  -- Bite
 #weapon 532  -- Tail Sweep
 #weapon 456  -- Gaze of Fear
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7277
@@ -24548,7 +24548,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #twiceborn 6644 -- Wight Beast
 #weapon 55  -- Hoof
 #weapon 300  -- Headbutt
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end 
 
 #newmonster 7280
@@ -24585,7 +24585,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #startage 1000
 #maxage 2000
 #batstartsum3d6 549  -- Boar
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7281
@@ -24624,7 +24624,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #startage 1000
 #maxage 2000
 #twiceborn 6644 -- Wight Beast
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7282
@@ -24807,7 +24807,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #gemprod 2 2
 #weapon 92  -- Fist
 #weapon 496  -- Sacred Pitcher
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7291
@@ -24857,7 +24857,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #startage 1000
 #maxage 2000
 #makemonsters3 515  -- Summer Lion
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7293
@@ -24909,7 +24909,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #startage 1000
 #maxage 2000
 #makemonsters3 512  -- Fall Bear
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7294
@@ -24962,7 +24962,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #startage 1000
 #maxage 2000
 #makemonsters5 511  -- Winter Wolf
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7292
@@ -25018,7 +25018,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #startage 1000
 #maxage 2000
 #makemonsters5 513  -- Spring Hawks
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7295
@@ -25088,7 +25088,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 29  -- Claw
 #weapon 29  -- Claw
 #weapon 29  -- Claw
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7297
@@ -25216,7 +25216,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #itemslots 794624 -- Head, 2 misc
 #twiceborn 7223 -- Dracowight
 #unique
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7304
@@ -25500,7 +25500,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #fireres 15
 #startage 1862
 #shapechange 7315 -- Lord of Abysia
-#montag 1006  -- No Transformation
+#polyimmune
 #end
 
 #newmonster 7316
@@ -26357,7 +26357,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #popkill 3
 #incunrest -100
 #shapechange 7314
-#montag 1006  -- No Transformation
+#polyimmune
 #end
 
 #newmonster 7369
@@ -26503,6 +26503,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #newmonster 7377
 #copystats 1076  -- Myrmidon Commander
 #copyspr 1175  -- Warrior Queen
+#unmountedspr1 "magicenhanced/un_arcoheroine1.tga"
+#unmountedspr2 "magicenhanced/un_arcoheroine2.tga"
 #name "Heroine"
 #descr "In Arcoscephale there are many Heroes who quest for fame and glory. Some are descendants of the Titans, others are marked by destiny for great things. They have traveled the world and many have trained under great teachers or suffered strange curses. Tales of their adventures are recounted and debated in the Akademia and throughout Arcoscephale. The great Pathos is the mightiest of all Heroes, however there are many that aspire to similar greatness."
 #clearweapons
@@ -26515,6 +26517,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #mr 12
 #size 5
 #ressize 2
+#skilledrider 5
+#mountmnr 3581
 #mounted
 #female
 #pillagebonus 20
@@ -26595,6 +26599,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #newmonster 7381
 #copystats 1075  -- Wind Lord
 #copyspr 1075  -- Wind Lord
+#unmountedspr1 "magicenhanced/un_arcohero1.tga"
+#unmountedspr2 "magicenhanced/un_arcohero2.tga"
 #name "Hero"
 #descr "In Arcoscephale there are many Heroes who quest for fame and glory. Some are descendants of the Titans, others are marked by destiny for great things. They have travelled the world and many have trained under great teachers or suffered strange curses. Tales of their adventures are recounted and debated in the Akademia and throughout Arcoscephale. The great Pathos is the mightiest of all Heroes, however there are many that aspire to similar greatness."
 #gcost 0
@@ -26602,6 +26608,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #mor 17
 #inspirational 1
 #ambidextrous 3
+#skilledrider 5
 #okmagicleader
 #okmagicleader
 #magicskill 9 1
@@ -27017,7 +27024,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #bonusspells 1
 #batstartsum3d6 665  -- Principe
 #weapon 446  -- Sceptre
-#montag 1006  -- No Transformation
+#polyimmune
 #mountmnr 3585
 #mountedinspector
 #nofmounts 2
@@ -27268,7 +27275,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #nobadevents 20
 #seduce 11
 #stealthy 0
-#montag 1006
+#polyimmune
 #end
 
 #newmonster 7408
@@ -29243,7 +29250,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 3 2
 #magicskill 6 3
 #magicskill 7 3
-#montag 1006
+#polyimmune
 #end
 
 #newmonster 7492
@@ -29274,7 +29281,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 2 1
 #magicskill 3 2
 #magicskill 6 3
-#montag 1006
+#polyimmune
 #end
 
 #newmonster 7493
@@ -30993,6 +31000,37 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 92  -- Fist
 #end
 
+#newmonster 7582
+#copystats 322
+#clearweapons
+#cleararmor
+#clearmagic
+#spr1 "magicenhanced/eetiamatc.tga"
+#spr2 "magicenhanced/eetiamatc2.tga"
+#name "Child of Tiamat"
+#descr "There was a time in which there existed nothing but darkness and an abyss of waters, wherein resided a most hideous being. This was Tiamat, and in the darkness she gave birth to a multitude of children. There appeared men, some with two wings, others with four, and with two faces. Other figures were to be seen with the legs and horns of goats, while yet others united the hind quarters of a horse with the body of a man. Finally came hulking creatures with the bodies of men but with the heads and tails of great sharks.
+Eventually Tiamat was cut asunder and her children scattered to the four corners of the earth. Now they reside in dark places from whence they can only be drawn with powerful magic. The Children of Tiamat can regenerate wounds and wield magical tridents forged in ages past. Their skin is as hard as iron and they are infused with deadly poison."
+#gcost 0
+#hp 36
+#size 6
+#mor 18
+#mr 15
+#prot 15
+#str 18
+#att 11
+#def 11
+#enc 2
+#fireres 5
+#poisonres 20
+#poisoncloud 3
+#regeneration 10
+#heal
+#magicbeing
+#berserk 3
+#weapon 389  -- Pearl Trident
+#weapon 462  -- Venomous Bite
+#end
+
 #newmonster 7583
 #copystats 392  -- Ashen Angel
 #clearweapons
@@ -31321,7 +31359,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #glamour
 #twiceborn 6644 -- Wight Beast
 #batstartsum3d6 782  -- Giant Spider
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7596
@@ -31357,7 +31395,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 239  -- Venomous Fangs
 #weapon 147  -- Spray Poison
 #watershape 7597
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7597
@@ -31393,7 +31431,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 239  -- Venomous Fangs
 #weapon 147  -- Spray Poison
 #landshape 7596
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7598
@@ -31429,7 +31467,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 -- #tmpglamourgems 1
 #gemprod 7 1
 #twiceborn 6644 -- Wight Beast
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7599
@@ -31563,7 +31601,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mapmove 22
 #startage 1000
 #maxage 3000
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7604
@@ -32318,7 +32356,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 9 3 -- H
 #tmpwatergems 1
 #unique
-#montag 1006
+#polyimmune
 #end
 
 #newmonster 7638
@@ -32422,7 +32460,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #awe 1
 #tmpairgems 1
 #tmpastralgems 1
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7643
@@ -32432,7 +32470,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #name "Annunaki of the Heavens"
 #defector 100
 #indepmove 50
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7644
@@ -32915,7 +32953,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 391  -- Serpent
 #weapon 63  -- Life Drain
 #unique
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7666
@@ -33269,7 +33307,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 6 2
 #researchbonus 2
 #makemonsters1 7679
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7681
@@ -33877,7 +33915,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 8 2
 #unique
 #digest 2
-#montag 1006  -- No Transformation spells
+#polyimmune
 #weapon 43  -- Poisoned Claw
 #weapon 43  -- Poisoned Claw
 #weapon 609  -- Grab and Swallow
@@ -35547,7 +35585,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 719  -- Life Drain
 #weapon 261  -- Web
 #weapon 262  -- Web Spit
-#montag 1006
+#polyimmune
 #end
 
 #newmonster 7807
@@ -36003,7 +36041,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 6 3
 #magicskill 8 3
 #makemonsters2 526  -- 2 Serpent Fiends
-#montag 1006
+#polyimmune
 #end
 
 #newmonster 7827
@@ -36155,7 +36193,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #poisonres 15
 #darkpower 4
 #fear 5
-#montag 1006  -- No Transformations
+#polyimmune
 #end
 
 #newmonster 7833
@@ -36971,7 +37009,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #autodishealer 3
 #unique
 #weapon 92  -- Fist
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7888
@@ -37393,7 +37431,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 40  -- Blacksteel Helmet
 #startage 1000
 #maxage 2000
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7898
@@ -37432,7 +37470,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #maxage 2000
 #weapon 70  -- Astral Claw
 #weapon 1644 -- Soul Rending Bite
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7899
@@ -37463,7 +37501,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #fireres 0
 #startage 1000
 #maxage 2000
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #newmonster 7900
@@ -55168,7 +55206,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #spr1 "magicenhanced/blue_hierophantw1.tga"
 #spr2 "magicenhanced/blue_hierophantw2.tga"
 #name "Hierophant of the Closed Realm"
-#descr "."
+#descr "Before its prohibition, the Cult of the Closed Realm was led by the Hierophants. When the Order of the Closed Realm was confined to the Palace of Pearls, the Hierophants were purged and it fell to the Daduchos to lead the cult’s remnants. Rarely, a particularly bold Daduchos will enact a forbidden ritual, granting them insight into the secrets of the closed realm and improving their prowess with Fire magic. The pearl clan have proscribed the existence of the Hierophants and their very presence is considered an affront to the church."
 #float
 #heretic 3
 #clearmagic
@@ -55183,7 +55221,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #spr1 "magicenhanced/blue_hierophantl1.tga"
 #spr2 "magicenhanced/blue_hierophantl2.tga"
 #name "Hierophant of the Closed Realm"
-#descr "."
+#descr "Before its prohibition, the Cult of the Closed Realm was led by the Hierophants. When the Order of the Closed Realm was confined to the Palace of Pearls, the Hierophants were purged and it fell to the Daduchos to lead the cult’s remnants. Rarely, a particularly bold Daduchos will enact a forbidden ritual, granting them insight into the secrets of the closed realm and improving their prowess with Fire magic. The pearl clan have proscribed the existence of the Hierophants and their very presence is considered an affront to the church."
 #heretic 3
 #magicboost 0 1
 #clearweapons
@@ -55199,8 +55237,8 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #copystats 2865 -- Conqueror
 #spr1 "magicenhanced/blue_hierarchw1.tga"
 #spr2 "magicenhanced/blue_hierarchw2.tga"
-#name "Hierarch of the Closed Realm"
-#descr "."
+#name "Lord of the Closed Realm"
+#descr "To allow mermen some ways to prove themselves and give them opportunities to advance in status and recognition the Triton rulers of the kingdom have allowed the Order of the Closed Realm to form. The Order is a reformed and reinstituted remnant of a heretic order once located in the hidden lands of the Closed Realm. The leaders of the new order are able warrior-mages skilled in the secrets of the closed realm. Those that are able to master the enchantment that allows them to also Triton soldiers beyond the shore are elevated in status and are equal in military rank to the Triton Princes, and in priestly authority to the Pearl Clan."
 #float
 #inspirational 1
 #cleararmor
@@ -55212,6 +55250,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #magicskill 1 1 -- A
 #magicskill 9 1 -- H
 #custommagic 3840 100 -- AWES
+#magicboost 9 1
 #gcost 10010
 #end
 
@@ -55219,8 +55258,8 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #copystats 2866 -- Conqueror Land
 #spr1 "magicenhanced/blue_hierarchl1.tga"
 #spr2 "magicenhanced/blue_hierarchl2.tga"
-#name "Hierarch of the Closed Realm"
-#descr "."
+#name "Lord of the Closed Realm"
+#descr "To allow mermen some ways to prove themselves and give them opportunities to advance in status and recognition the Triton rulers of the kingdom have allowed the Order of the Closed Realm to form. The Order is a reformed and reinstituted remnant of a heretic order once located in the hidden lands of the Closed Realm. The leaders of the new order are able warrior-mages skilled in the secrets of the closed realm. Those that are able to master the enchantment that allows them to also Triton soldiers beyond the shore are elevated in status and are equal in military rank to the Triton Princes, and in priestly authority to the Pearl Clan."
 #inspirational 1
 #cleararmor
 #armor 123
@@ -55239,9 +55278,10 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #spr1 "magicenhanced/blue_mysticguidew1.tga"
 #spr2 "magicenhanced/blue_mysticguidew2.tga"
 #name "Mystic Guide"
-#descr "."
+#descr "While the Triton mages of the Pearl Clan are the most skilled mages in Pelagia, there are numerous other mages of lesser power in the kingdom. It is not uncommon for mermen to study magic and their ability to enter dry land has made them carriers of the secrets of the Closed Realm. When Berytos fell Pelagian Explorers tried to salvage Berytian lore on the Telkhines. With the final rest of Therodos they could find secrets the Berytian never were able to uncover. Berytian lore combined with new discoveries in the ruins of ancient Therodos has given the mystics newfound powers. The Mystic Guide is a Pelagian Mystic that has dedicated himself to the cause of conquering the Closed Realm and, in service of that goal, has devised an enchantment to lead Tritons and other aquatic troops onto land."
 #float
 #okleader
+#holy
 #clearweapons
 #weapon 389
 #holy
@@ -55252,8 +55292,9 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #spr1 "magicenhanced/blue_mysticguidel1.tga"
 #spr2 "magicenhanced/blue_mysticguidel2.tga"
 #name "Mystic Guide"
-#descr "."
+#descr "While the Triton mages of the Pearl Clan are the most skilled mages in Pelagia, there are numerous other mages of lesser power in the kingdom. It is not uncommon for mermen to study magic and their ability to enter dry land has made them carriers of the secrets of the Closed Realm. When Berytos fell Pelagian Explorers tried to salvage Berytian lore on the Telkhines. With the final rest of Therodos they could find secrets the Berytian never were able to uncover. Berytian lore combined with new discoveries in the ruins of ancient Therodos has given the mystics newfound powers. The Mystic Guide is a Pelagian Mystic that has dedicated himself to the cause of conquering the Closed Realm and, in service of that goal, has devised an enchantment to lead Tritons and other aquatic troops onto land."
 #okleader
+#holy
 #clearweapons
 #weapon 389
 #holy
@@ -75444,6 +75485,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #woundfend 2
 #twiceborn 1388  -- Ziz
 #unsurr 5
+#homerealm 0
 #clearweapons
 #weapon 826  -- talons
 #weapon 825 -- beak
@@ -75522,7 +75564,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #mountainsurvival
 #stormimmune
 #transformation 0
-#montag 1006  -- No Transformation spells
+#polyimmune
 #spiritsight
 #goodleader
 #beastmaster 2
@@ -82837,7 +82879,7 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 359  -- Queen of Water
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 360  -- Undine
@@ -83066,7 +83108,7 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 446  -- Pazuzu
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 449  -- Frost Fiend
@@ -83109,11 +83151,11 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 469  -- King of Earth
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 470  -- Pedoseion
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 471  -- Golem
@@ -83142,7 +83184,7 @@ Initiates of the Deep can be recruited in any land fort."
 #selectmonster 490  -- Al-Khazim
 #name "Great Marid"
 #descr "Al-Khazim is a powerful Jinn from an ancient time. He was the right hand of Iblis, the father of Jinn, and was among the first of his children. When the Pantokrator banished Iblis he sought to punish Al-Khazim as well, trapping him in a magic lamp and binding him to the will of whosoever holds it. If the lamp is destroyed, Al-Khazim is freed, but if it is recreated, he will instantly be trapped inside the lamp once again."
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 
@@ -83452,7 +83494,7 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 563  -- Queen of Air
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 565  -- Sea Serpent
@@ -83585,7 +83627,7 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 621  -- Treelord
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 622  -- Traitor King Shadul Ummush
@@ -83600,7 +83642,7 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 631  -- King of Fire
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 632  -- Storm Demon
@@ -84291,7 +84333,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 810  -- Belphegor
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 814  -- Fire Snake
@@ -84337,15 +84379,15 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 818  -- Heliophagus
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 819  -- Heliophagus
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 820  -- Heliophagus
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 840 -- jotun huskarl
@@ -84546,7 +84588,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 900  -- Belial
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 901  -- Black Dryad
@@ -84562,31 +84604,31 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 906  -- King of Earth
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 907  -- Queen of Water
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 908  -- Queen of Water
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 909  -- King of BaneFire
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 910  -- King of Lava
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 911  -- Queen of Air
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 912  -- Queen of Air
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 923  -- Warlock Apprentice
@@ -84746,11 +84788,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 980  -- Treelord
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 981  -- Treelord
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 982  -- Clockwork Horror
@@ -85677,15 +85719,15 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 
 #selectmonster 1375  -- Amesha Spenta
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 1376  -- Amesha Spenta
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 1377  -- Amesha Spenta
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 
@@ -85728,7 +85770,7 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 #end
 
 #selectmonster 1405  -- Buel
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 
@@ -85821,19 +85863,19 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 #end
 
 #selectmonster 1484  -- Tlaloque
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 1485  -- Tlaloque
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 1486  -- Tlaloque
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 1487  -- Tlaloque
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 1490  -- Umbral
@@ -85846,15 +85888,15 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 #end
 
 #selectmonster 1492  -- Amesha Spenta
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 1493  -- Amesha Spenta
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 1494  -- Amesha Spenta
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 1500  -- Sepulchral
@@ -87027,27 +87069,27 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectmonster 2062  -- Grigori
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2063  -- Grigori
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2064  -- Grigori
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2065  -- Grigori
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2066  -- Grigori
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2067  -- Grigori
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2068  -- Putrescator
@@ -87286,11 +87328,11 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectmonster 2277  -- Geryon
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2278  -- Ashmedai
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2279  -- Warrior Scout
@@ -87776,27 +87818,27 @@ Cost 28 RP."
 
 
 #selectmonster 2612  -- Daeva
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2613  -- Daeva
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2614  -- Daeva
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2615  -- Daeva
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2616  -- Daeva
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2617  -- Daeva
-#montag 1006  -- No Transformation spells
+#polyimmune
 #magicskill 1 1
 #end
 
@@ -88070,68 +88112,68 @@ Cost 28 RP."
 
 
 #selectmonster 2765  -- Balam
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2766  -- Balam
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2767  -- Balam
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2768  -- Balam
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2769  -- Balam
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2770  -- Balam
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2771  -- Balam
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2772  -- Balam
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2773  -- Balam
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2774  -- Balam
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2775  -- Balam
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2776  -- Balam
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 
 #selectmonster 2778  -- Chaac
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2779  -- Chaac
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2780  -- Chaac
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 2781  -- Chaac
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 
@@ -88809,19 +88851,19 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 #selectmonster 3425  -- Dwarf
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 3426  -- Dwarf
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 3427  -- Dwarf
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 3428  -- Dwarf
-#montag 1006  -- No Transformation spells
+#polyimmune
 #end
 
 #selectmonster 3430  -- MA Skratti Werewolf
@@ -104373,11 +104415,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7377
 #homecom 7376
 #homecom 7375
-#homecom 7752 -- divine hero
-#homecom 7754 -- divine hero
-#homecom 7755 -- divine hero
-#homecom 7756 -- divine hero
-#homecom 7753 -- divine hero
 #end
 
 
@@ -111080,6 +111117,7 @@ Priests: Average"
 #futuresite "EA Arcoscephale Summons"
 #futuresite "EA Arcoscephale Summons Continued"
 #futuresite "Arcoscephale Adventurers"
+#futuresite "Arcoscephale Divine Heroes"
 #futuresite "EA Arcoscephale Heroes"
 #uwbuild 1
 
@@ -112147,10 +112185,10 @@ Dominion: Summons spectral troops in forts - more in Death scales. Dominion kill
 #cheapgod20 8475 -- Statue of Wisdom
 
 
-#futuresite "Arcoscephale Adventurers"
-#futuresite "Arcoscephale Divine Heroes"
 #futuresite "MA Arcoscephale Summons"
 #futuresite "MA Arcoscephale Summons Continued"
+#futuresite "Arcoscephale Adventurers"
+#futuresite "Arcoscephale Divine Heroes"
 #futuresite "MA Arcoscephale Heroes"
 
 #end
@@ -114325,31 +114363,6 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #spec 537481344  -- AN, MR Neg, Ignore Shields, Lifeless/Undead/Amphibians Immune
 #end
 
-#selectspell 2026
-#name "Become Eagle"
-#descr "The caster permanently transforms themselves into the form of a Great Eagle. The new body will be young and healthy and will retain the mind of the mage, along with any magical skills.  Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
-#details "The caster transforms into a young monster, but lost limbs are still lost after the transformation."
-#school 1
-#researchlevel 5
-#path 0 1
-#pathlevel 0 3
-#effect 10130
-#fatiguecost 1000
-#damage 7683 -- Transformed Eagle
-#nreff 1
-#nextspell 3756
-#spec 536870912  -- No effect on Lifeless
-#notmnr -1006
-#notmnr 8056 -- Dragon King
-#notmnr 8057 -- Dragon King
-#notmnr 8060 -- Dragon King
-#notmnr 8061 -- Dragon King
-#notmnr 7473 -- Uriel
-#notmnr 7266 -- Gabriel
-#notmnr 7500 -- Apkallu
-#notmnr 7502 -- Apkallu
-#end
-
 #selectspell 2027
 #copyspell 1024 -- Awaken Sleeper
 #name "Summon Air Spirit"
@@ -114660,7 +114673,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #effect 10001
 #damage 7864 -- Sahuaghin Warrior
 #nreff 8
-#spec 41943040  -- UW Only
+#spec 8388608  -- UW OK
 #end
 
 #selectspell 2052
@@ -114726,7 +114739,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #researchlevel 3
 #pathlevel 0 2
 #fatiguecost 300
-#nreff 501
+#nreff 502
 #damage 7365
 #end
 
@@ -114759,24 +114772,6 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #provrange 3
 #nolandtrace 1
 #spec 41943040  -- UW Only
-#end
-
-#selectspell 2060
-#name "Become Octopus"
-#descr "The caster permanently transforms themselves into the form of a Giant Octopus. The new body will be healthy and will retain the mind of the mage, along with any magical skills.  Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
-#school 1
-#researchlevel 5
-#path 0 2
-#pathlevel 0 3
-#effect 10130
-#fatiguecost 1200
-#damage 7684 -- Transformed Octopus
-#nreff 1
-#spec 41943040  -- UW Only
-#nextspell 3756
-#spec 578813952  -- No effect on Lifeless, UW Only
-#notmnr -1006
-#notmnr 7998 -- Void Lord
 #end
 
 #selectspell 2061
@@ -115334,28 +115329,6 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #spec 41943040  -- UW Only
 #end
 
-#selectspell 2113
-#name "Become Sea Monster"
-#descr "The caster permanently transforms themselves into the form of a gigantic and powerful beast of the sea, however the exact form varies and may differ from mage to mage. The new body will be healthy and will retain the mind of the mage, along with any magical skills. Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
-#details "Lost limbs are still lost after the transformation."
-#school 1
-#researchlevel 6
-#path 0 2
-#pathlevel 0 4
-#effect 10130
-#fatiguecost 1400
-#damage -1000
-#nreff 1
-#nextspell 3756
-#spec 578813952  -- No effect on Lifeless + UW Only
-#notmnr -1006
-#notmnr 8060 -- Dragon King
-#notmnr 8061 -- Dragon King
-#notmnr 7477 -- Raphael
-#notmnr 7501 -- Apkallu
-#notmnr 7504 -- Apkallu
-#end
-
 
 #selectspell 2115
 #copyspell 773 -- Quicken Self
@@ -115482,29 +115455,6 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #damage 138646654979  -- All Afflictions
 #spec 545259520  -- No effect on Lifeless, UWOK
 #nextspell 3756
-#end
-
-#selectspell 2132
-#name "Become Golem"
-#descr "The caster crafts a great stone golem and attempts to permanently transfer their mind into the receptacle. Their original body will wither and soon die, however if the transfer is successful the new body will be strong and hardy and the mind of the mage will retain any magical skills. Magic Resistance can help the mental transfer, however if the process fails the mage may permanently be killed. Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
-#school 3
-#researchlevel 8
-#path 0 3
-#pathlevel 0 4
-#effect 10130
-#fatiguecost 2000
-#damage 7685 -- Stone Golem
-#nreff 1
-#spec 545259520  -- No effect on Lifeless, UWOK
-#nextspell 2131
-#notmnr -1006
-#notmnr 8000 -- Void Lord
-#notmnr 8062 -- Dragon King
-#notmnr 8063 -- Dragon King
-#notmnr 8058 -- Dragon King
-#notmnr 8059 -- Dragon King
-#notmnr 7500 -- Apkallu
-#notmnr 7503 -- Apkallu
 #end
 
 #selectspell 2133
@@ -116926,52 +116876,6 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #notmnr 7504 -- Apkallu
 #end
 
-#selectspell 2257
-#name "Become Great Beast"
-#descr "The caster permanently transforms themselves into the form of a gigantic and powerful beast, however the exact form varies and may differ from mage to mage. The new body will be healthy and will retain the mind of the mage, along with any magical skills. Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
-#details "Lost limbs are still lost after the transformation."
-#school 1
-#researchlevel 6
-#path 0 6
-#pathlevel 0 4
-#effect 10130
-#fatiguecost 1800
-#damage -1011
-#nreff 1
-#nextspell 3756
-#spec 536870912  -- No effect on Lifeless
-#notmnr -1006
-#notmnr 8060 -- Dragon King
-#notmnr 8061 -- Dragon King
-#notmnr 7477 -- Raphael
-#notmnr 7501 -- Apkallu
-#notmnr 7504 -- Apkallu
-#end
-
-#selectspell 2258
-#name "Become Giant"
-#descr "The caster permanently transforms themselves into the form of a Giant. The new body will be healthy and will retain the mind of the mage, along with any magical skills. Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
-#details "Lost limbs are still lost after the transformation."
-#school 1
-#researchlevel 7
-#path 0 6
-#pathlevel 0 4
-#path 1 4
-#pathlevel 1 1
-#effect 10130
-#fatiguecost 2500
-#damage 7686 -- Transformed Giant
-#nreff 1
-#nextspell 3756
-#spec 536870912  -- No effect on Lifeless
-#notmnr -1006
-#notmnr 8060 -- Dragon King
-#notmnr 8061 -- Dragon King
-#notmnr 7477 -- Raphael
-#notmnr 7501 -- Apkallu
-#notmnr 7504 -- Apkallu
-#end
-
 #selectspell 2260
 #copyspell "Rage of the Cornered Rat"
 #name "Transfer Mind"
@@ -117230,9 +117134,9 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "The caster summons a flock of Ostriches and binds them to his service."
 #researchlevel 2
 #pathlevel 0 1
-#fatiguecost 500
+#fatiguecost 400
 #damage 8015 -- Ostriches
-#nreff 1006
+#nreff 1009 -- 10+
 #end
 
 #selectspell 2278
@@ -117612,26 +117516,6 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #nextspell 2307
 #end
 
-
-#selectspell 2310
-#name "Become the Worm that Walks"
-#descr "Potent nature mages do not die easily, and for the most potent even death might not stop them. After a ritual culminating in the suicide of the mage, they can attempt to transfer a portion of their mind and power into the crawling mass of worms and bugs that feeds on their remnants. This ritual is dangerous and may result in the death of the mage, however Magic Resistance can help with the process. If successful the casting mage will become immortal and very difficult to destroy during battle. Inanimate beings or those that are already dead cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
-#researchlevel 8
-#school 5
-#path 0 6
-#pathlevel 0 5  -- N5
-#effect 10130  -- ritual self-transformation
-#damage 2217
-#fatiguecost 2500
-#spec 545914880  -- (no undead, lifeless, mindless, UW OK)
-#nextspell 3756
-#notmnr -1006
-#notmnr 8060 -- Dragon King
-#notmnr 8061 -- Dragon King
-#notmnr 7477 -- Raphael
-#notmnr 7501 -- Apkallu
-#notmnr 7504 -- Apkallu
-#end
 
 #selectspell 2311
 #copyspell 1310 -- Cure Disease
@@ -142617,8 +142501,8 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #end
 
 #selectspell 4243
-#name "Exalt Conqueror"
-#descr "."
+#name "Crusade against the Closed Realm"
+#descr "Though the Tritons of Pelagia covet the lands above the waves, they cannot leave the water without the use of magic artifice that isn’t appropriate for mass production. It is a task those of the Order of the Closed Realm have long studied and, with sufficient time and investment, a Conqueror of the Closed Realm may learn how to bring aquatic troops onto land. The completion of this feat is considered a miracle by the Tritons and a conqueror who succeeds in mastering this technique is elevated both as a general and priest."
 #details "The caster will gain Gift of Air Breathing 100 and +1 Inspirational."
 #school 1
 #researchlevel 2
@@ -142649,7 +142533,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 
 #selectspell 4245
 #name "Secrets of the Closed Realm"
-#descr "."
+#descr "Though the Tritons of Pelagia have long coveted the lands above the waves, they cannot leave the water without the use of magic artifice that isn’t appropriate for mass production. One answer to this ancient problem has been found within the works of the Telkhine. Using Air Magic, the Mystic crafts an enchantment that allows those near him to breath air as though it were water, allowing him to lead up to 20 aquatic troops onto land. The completion of this feat is considered a miracle by the Tritons and a Mystic who succeeds in this task is granted priestly status."
 #details "The caster will gain Gift of Air Breathing 60 and normal leadership."
 #school 1
 #researchlevel 5
@@ -142668,7 +142552,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 
 #selectspell 4246
 #name "Light Telesterion Flame"
-#descr "."
+#descr "The Daduchos ventures into the ruins of a Telesterion and performs an ancient ritual. By imbibing various draughts and contemplating the great and terrible power of a roaring flame, the Daduchos gains insight into the secrets of Fire and anoints himself as Hierophant. This ritual is forbidden by the Triton rulers of Pelagia and anyone who calls himself a Hierophant is a heretic."
 #details "Caster gains +1 Fire magic while on land and also gains Heretic 3."
 #school 4
 #researchlevel 4
@@ -142792,6 +142676,168 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #damage 10021 -- The Tempest Eagle
 #nreff 1
 #end
+
+#selectspell 2026
+#name "Become Eagle"
+#descr "The caster permanently transforms themselves into the form of a Great Eagle. The new body will be young and healthy and will retain the mind of the mage, along with any magical skills.  Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
+#details "The caster transforms into a young monster, but lost limbs are still lost after the transformation."
+#school 1
+#researchlevel 5
+#path 0 1
+#pathlevel 0 3
+#effect 10130
+#fatiguecost 1000
+#damage 7683 -- Transformed Eagle
+#nreff 1
+#nextspell 3756
+#spec 536870912  -- No effect on Lifeless
+#notmnr -1006
+#notmnr 8056 -- Dragon King
+#notmnr 8057 -- Dragon King
+#notmnr 8060 -- Dragon King
+#notmnr 8061 -- Dragon King
+#notmnr 7473 -- Uriel
+#notmnr 7266 -- Gabriel
+#notmnr 7500 -- Apkallu
+#notmnr 7502 -- Apkallu
+#end
+
+#selectspell 2060
+#name "Become Octopus"
+#descr "The caster permanently transforms themselves into the form of a Giant Octopus. The new body will be healthy and will retain the mind of the mage, along with any magical skills.  Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
+#school -1
+#researchlevel 5
+#path 0 2
+#pathlevel 0 3
+#effect 10130
+#fatiguecost 1200
+#damage 7684 -- Transformed Octopus
+#nreff 1
+#spec 41943040  -- UW Only
+#nextspell 3756
+#spec 578813952  -- No effect on Lifeless, UW Only
+#notmnr -1006
+#notmnr 7998 -- Void Lord
+#end
+
+#selectspell 2113
+#name "Become Sea Monster"
+#descr "The caster permanently transforms themselves into the form of a gigantic and powerful beast of the sea, however the exact form varies and may differ from mage to mage. The new body will be healthy and will retain the mind of the mage, along with any magical skills. Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
+#details "Lost limbs are still lost after the transformation."
+#school 1
+#researchlevel 6
+#path 0 2
+#pathlevel 0 4
+#effect 10130
+#fatiguecost 1400
+#damage -1000
+#nreff 1
+#nextspell 3756
+#spec 578813952  -- No effect on Lifeless + UW Only
+#notmnr -1006
+#notmnr 8060 -- Dragon King
+#notmnr 8061 -- Dragon King
+#notmnr 7477 -- Raphael
+#notmnr 7501 -- Apkallu
+#notmnr 7504 -- Apkallu
+#end
+
+#selectspell 2132
+#name "Become Golem"
+#descr "The caster crafts a great stone golem and attempts to permanently transfer their mind into the receptacle. Their original body will wither and soon die, however if the transfer is successful the new body will be strong and hardy and the mind of the mage will retain any magical skills. Magic Resistance can help the mental transfer, however if the process fails the mage may permanently be killed. Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
+#school 4
+#researchlevel 9
+#path 0 3
+#pathlevel 0 4
+#effect 10130
+#fatiguecost 2000
+#damage 7685 -- Stone Golem
+#nreff 1
+#spec 545259520  -- No effect on Lifeless, UWOK
+#nextspell 2131
+#notmnr -1006
+#notmnr 8000 -- Void Lord
+#notmnr 8062 -- Dragon King
+#notmnr 8063 -- Dragon King
+#notmnr 8058 -- Dragon King
+#notmnr 8059 -- Dragon King
+#notmnr 7500 -- Apkallu
+#notmnr 7503 -- Apkallu
+#end
+
+#selectspell 2257
+#name "Become Great Beast"
+#descr "The caster permanently transforms themselves into the form of a gigantic and powerful beast, however the exact form varies and may differ from mage to mage. The new body will be healthy and will retain the mind of the mage, along with any magical skills. Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
+#details "Lost limbs are still lost after the transformation."
+#school 1
+#researchlevel 6
+#path 0 6
+#pathlevel 0 4
+#effect 10130
+#fatiguecost 1800
+#damage -1011
+#nreff 1
+#nextspell 3756
+#spec 536870912  -- No effect on Lifeless
+#notmnr -1006
+#end
+
+#selectspell 2258
+#name "Become Giant"
+#descr "The caster permanently transforms themselves into the form of a Giant. The new body will be healthy and will retain the mind of the mage, along with any magical skills. Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
+#details "Lost limbs are still lost after the transformation."
+#school -1
+#researchlevel 7
+#path 0 6
+#pathlevel 0 4
+#path 1 4
+#pathlevel 1 1
+#effect 10130
+#fatiguecost 2500
+#damage 7686 -- Transformed Giant
+#nreff 1
+#nextspell 3756
+#spec 536870912  -- No effect on Lifeless
+#notmnr -1006
+#notmnr 8060 -- Dragon King
+#notmnr 8061 -- Dragon King
+#notmnr 7477 -- Raphael
+#notmnr 7501 -- Apkallu
+#notmnr 7504 -- Apkallu
+#end
+
+#selectspell 2310
+#name "Become the Worm that Walks"
+#descr "Potent nature mages do not die easily, and for the most potent even death might not stop them. After a ritual culminating in the suicide of the mage, they can attempt to transfer a portion of their mind and power into the crawling mass of worms and bugs that feeds on their remnants. This ritual is dangerous and may result in the death of the mage, however Magic Resistance can help with the process. If successful the casting mage will become immortal and very difficult to destroy during battle. Inanimate beings or those that are already dead cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
+#researchlevel 8
+#school 5
+#path 0 6
+#pathlevel 0 5  -- N5
+#effect 10130  -- ritual self-transformation
+#damage 2217
+#fatiguecost 2500
+#spec 545914880  -- (no undead, lifeless, mindless, UW OK)
+#nextspell 3756
+#notmnr -1006
+#notmnr 8060 -- Dragon King
+#notmnr 8061 -- Dragon King
+#notmnr 7477 -- Raphael
+#notmnr 7501 -- Apkallu
+#notmnr 7504 -- Apkallu
+#end
+
+#selectspell 4253
+#copyspell 945 -- Summon Kraken
+#name "Summon Horde of Tiamat"
+#descr "There was a time in which there existed nothing but darkness and an abyss of waters, wherein resided a most hideous being. This was Tiamat, and in the darkness she gave birth to a multitude of children. The Children of Tiamat can regenerate wounds and wield magical tridents forged in ages past. Their skin is as hard as iron and they constantly exude a potent poison. The caster summons several of such Children to serve. This spell can only be cast underwater."
+#researchlevel 7
+#pathlevel 0 4
+#nreff 510
+#fatiguecost 3000
+#damage 7582 -- Child of Tiamat
+#end
+
+
 
 -- END OF NEW SPELLS
 
@@ -144348,6 +144394,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 950 -- Cave Crab
 #fatiguecost 300
+#nreff 502
 #end
 
 
