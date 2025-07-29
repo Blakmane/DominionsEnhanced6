@@ -63,8 +63,6 @@
 #path1 8
 #end
 
-
-
 #selectbless "Death Explosion" -- 5 -> 6
 #cost0 4 -- 5 -> 4
 #cost1 2 --  -> 2
@@ -27575,6 +27573,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 
 #newmonster 7419
 #copystats 640  -- Magma Child
+#clearmagic
 #spr1 "magicenhanced/eeflamechild.tga"
 #spr2 "magicenhanced/eeflamechild2.tga"
 #name "Flame Child"
@@ -27583,6 +27582,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #prot 3
 #fireshield 12
 #firepower 2
+#magicskill 0 1
+#custommagic 128 50
 #end
 
 #newmonster 7420
@@ -27632,6 +27633,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #banefireshield 8
 #fireres 15
 #poisonres 25
+#magicskill 5 1
+#custommagic 128 50
 #neednoteat
 #itemslots 860678 -- Head, 2 hands, body, 2 misc
 #weapon 730  -- Banefire
@@ -27668,6 +27671,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 422  -- Stellar Bolt
 #weapon 404  -- Beak
 #nametype 113  -- C'tis Male
+#magicskill 4 1
+#magicskill 7 1
 #end
 
 #newmonster 7423
@@ -27698,6 +27703,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 120  -- Enchanted Spear
 #armor 2  -- Shield
 #nametype 113  -- C'tis Male
+#magicskill 1 1
+#magicskill 6 1
 #end
 
 #newmonster 7424
@@ -27729,6 +27736,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 513  -- Kopesh
 #weapon 404  -- Beak
 #nametype 113  -- C'tis Male
+#magicskill 0 1
+#magicskill 4 1
 #end
 
 #newmonster 7425
@@ -27759,6 +27768,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 675  -- Bronze Axe
 #armor 2  -- Shield
 #nametype 113  -- C'tis Male
+#magicskill 0 1
+#magicskill 2 1
 #end
 
 #newmonster 7426
@@ -37349,6 +37360,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #poisonarmor 0
 #weapon 1730 -- Drake Holy Water
 #weapon 20  -- Bite
+#magicskill 4 1
+#custommagic 512 50
 #holy
 #end
 
@@ -61498,14 +61511,37 @@ Cannot be recruited until Break the Deadlock is cast."
 #airshield 50
 #end
 
+#selectmonster 3664 -- garuda
+#airshield 50
+#magicskill 1 1
+#magicskill 4 1
+#magicskill 9 1
+#custommagic 10624 100
+#end
+
+#selectmonster 3665 -- kimpurusha
+#airshield 50
+#magicskill 6 1
+#magicskill 9 1
+#custommagic 27648 100
+#custommagic 27648 100
+#end
+
 #selectmonster 3666 -- Angiri
 #def 13 -- 12 -> 13
 #airshield 50
+#magicskill 0 1
+#magicskill 4 1
+#magicskill 9 1
 #end
 
 #selectmonster 3667 -- Marut
 #def 14 -- 13 -> 14
 #airshield 50
+#magicskill 1 2
+#magicskill 4 1
+#magicskill 9 1
+#custommagic 2048 50
 #end
 
 #selectmonster 3668 -- Vidyadhara
@@ -62100,10 +62136,12 @@ Cannot be recruited until Break the Deadlock is cast."
 
 #selectmonster 3901 -- Fay Knight
 #skilledrider 6 -- 3 -> 6
+#custommagic 24576 100
 #end
 
 #selectmonster 3907 -- Unseelie Knight
 #skilledrider 6 -- 3 -> 6
+#custommagic 20480 100
 #end
 
 #selectmonster 376 -- Green Knight
@@ -83600,6 +83638,8 @@ Initiates of the Deep can be recruited in any land fort."
 
 #selectmonster 640  -- Magma Child
 #montag 1053
+#magicskill 0 1
+#custommagic 1024 50
 #end
 
 #selectmonster 642  -- Great Lobster
@@ -89071,6 +89111,11 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #selectmonster 3968 -- jotun hirdman
 #bodyguard 3
+#end
+
+#selectmonster 3991
+#magicskill 1 1
+#custommagic 256 50
 #end
 
 #selectmonster 4020 -- Bernlad Unicorn
