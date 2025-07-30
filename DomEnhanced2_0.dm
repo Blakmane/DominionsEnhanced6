@@ -37389,37 +37389,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #holy
 #end
 
-#newmonster 7897
-#copystats 383  -- Prince of Death
-#clearweapons
-#cleararmor
-#clearmagic
-#name "Witchlord"
-#spr1 "magicenhanced/eenazgul.tga"
-#spr2 "magicenhanced/eenazgul2.tga"
-#descr "Khamul the Witchlord was once a great hero of men in a long forgotten age. He sought a gemstone of legendary power to protect his people, however this gem was cut using strange angles and not meant for mortal men. Upon claiming his prize the power proved too great, and he slowly became corrupted. Over time his soul became tainted and his life became bound to the essence of the gem. Now he exists as a wraith, bound to the will of whomever claims the gem until they too succumb to its power. Astride his great fell beast he roams the land according to the wishes of his master. Should he be slain his body can be reformed as long as the gem still exists."
-#fixedname "Khamul"
-#mountedhumanoid
-#unique
-#gcost 0
-#homerealm 0
-#invulnerable 0
-#batstartsum4d6 0
-#mounted
-#magicskill 1 3
-#magicskill 5 5
-#magicskill 7 3
-#makemonsters3 533  -- Wights
-#weapon 110  -- Wraith Sword
-#weapon 223 -- Venomous Bite
-#weapon 408  -- Talons
-#armor 38  -- Blacksteel Full Plate
-#armor 40  -- Blacksteel Helmet
-#startage 1000
-#maxage 2000
-#polyimmune
-#end
-
 #newmonster 7898
 #copystats 513  -- Spring Hawk
 #clearweapons
@@ -54537,7 +54506,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #def 10
 #prec 10
 #enc 2
-#size 6
+#size 5
 #mr 15
 #mor 15
 #hp 36
@@ -54557,9 +54526,9 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #clearweapons
 #cleararmor
 #name "Twilit Beast"
-#descr "Twilit Beasts are monstrous beings from the dreamwild sometimes seen skulking in the wilderness. They will often abduct cattle and people alike in the night before returning to the dreamwild to devour them, never to be found afterward. Twilit Beasts come cloaked in glamour and illusions, and draw power from the dark of night."
+#descr "Twilit Beasts are monstrous animals of the dreamwild sometimes seen skulking in the wilderness during the twilight hours. They will often abduct cattle and people alike in the night before returning to the dreamwild to devour them, never to be found afterward. Twilit Beasts come cloaked in glamour and illusions, and draw power from the dark of night."
 #gcost 0
-#prot 8
+#prot 11
 #str 18
 #att 13
 #def 13
@@ -54568,7 +54537,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #size 6
 #mr 15
 #mor 20
-#hp 34
+#hp 38
 #mapmove 16
 #ap 24
 #coldres 5
@@ -54695,7 +54664,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #mapmove 14
 #fireres 5
 #poisonres 25
-#uwregen 20
+#regeneration 20
 #woundfend 99
 #unsurr 2
 #ap 20 -- faster than a wele
@@ -54834,7 +54803,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #clearweapons
 #cleararmor
 #name "Hag"
-#descr "Hags are witches of the dreamwild proficient in the magic of the fay. How they got there is a mystery - Some believe they are humans that travelled there personally, some believe they made a pact with a powerful fay, some believe they were brought there as a child, and others believe they were created from the dreams and fears of the common people. Whatever the case, each is different in their own right, and they will just as often be found stirring a cauldron of human flesh as they will cure anyone of their ailments."
+#descr "Hags are witches of the dreamwild proficient in the magic of the fay. Some believe they are humans that travelled there personally, some believe they made a pact with a powerful fay, some believe they were brought there as a child, and others believe they were created from the dreams and fears of the common people. Whatever the case, each is different in their own right, and they will just as often be found stirring a cauldron of human flesh as they will cure anyone of their ailments."
 #gcost 0
 #prot 0
 #str 10
@@ -54855,8 +54824,9 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #maxage 300
 #startage 200
 #magicskill 6 1
-#magicskill 7 2
+#magicskill 7 1
 #custommagic 61696 100 -- ADNGB
+#custommagic 28672 100 -- DNG
 #weapon 92
 #end
 
@@ -55204,8 +55174,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 
 #newmonster 9117 -- MA Pel Hierophant Water
 #copystats 2867 -- Daduchos
-#spr1 "magicenhanced/blue_hierophantw1.tga"
-#spr2 "magicenhanced/blue_hierophantw2.tga"
+#copyspr 2867 -- Daduchos
 #name "Hierophant of the Closed Realm"
 #descr "Before its prohibition, the Cult of the Closed Realm was led by the Hierophants. When the Order of the Closed Realm was confined to the Palace of Pearls, the Hierophants were purged and it fell to the Daduchos to lead the cult’s remnants. Rarely, a particularly bold Daduchos will enact a forbidden ritual, granting them insight into the secrets of the closed realm and improving their prowess with Fire magic. The pearl clan have proscribed the existence of the Hierophants and their very presence is considered an affront to the church."
 #float
@@ -55626,6 +55595,85 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #end
 
 
+#newmonster 7897
+#clearweapons
+#cleararmor
+#clearmagic
+#name "Witchlord"
+#spr1 "magicenhanced/khamul1.png"
+#spr2 "magicenhanced/khamul2.png"
+#unmountedspr1 "magicenhanced/un_khamul1.png"
+#unmountedspr2 "magicenhanced/un_khamul2.png"
+#descr "Khamul the Witchlord was once a great hero of men in a long forgotten age. He sought a gemstone of legendary power to protect his people, however this gem was cut using strange angles and not meant for mortal men. Upon claiming his prize the power proved too great, and he slowly became corrupted. Over time his soul became tainted and his life became bound to the essence of the gem. Now he exists as a wraith, bound to the will of whomever claims the gem until they too succumb to its power. Astride his great fel beast he roams the land according to the wishes of his master. Should he be slain his body can be reformed as long as the gem still exists."
+#fixedname "Khamul"
+#humanoid
+#unique
+#magicskill 1 3
+#magicskill 5 5
+#magicskill 7 3
+#makemonsters3 533  -- Wights
+#weapon 110  -- Wraith Sword
+#armor 38  -- Blacksteel Full Plate
+#armor 40  -- Blacksteel Helmet
+#startage 1000
+#maxage 2000
+#polyimmune
+#mountmnr 9140 -- fel beast
+#skilledrider 5
+#poisonres 25
+#colres 15
+#fear 10
+#inspirational 1
+#pooramphibian
+#undead
+#neednoteat
+#spiritsight
+#hp 42
+#str 19
+#def 14
+#att 14
+#prot 5
+#mr 18
+#mor 30
+#goodleader
+#mapmove 20
+#enc 0
+#ap 14
+#end
+
+#newmonster 9140 -- Fel Beast
+#spr1 "magicenhanced/felbeast1.png"
+#spr2 "magicenhanced/felbeast2.png"
+#name "Fel Beast"
+#descr "This is the fel beast of Khamul the Witchlord, a legendary beast of unknown origin bound by the power of the gemstone of strange angles."
+#lizard
+#gcost 0
+#hp 95
+#size 10
+#prot 16
+#mr 18
+#mor 30
+#str 22
+#att 15
+#def 10
+#prec 12
+#enc 2
+#mapmove 3
+#ap 10
+#weapon 20  -- Bite
+#weapon 236  -- claw
+#weapon 532  -- Tail Sweep
+#fear 5
+#coldres 25
+#poisonres 15
+#flying
+#mountainsurvival
+#startage 500
+#maxage 2500
+#twiceborn 7223 -- Dracowight
+#unique
+#polyimmune
+#end
 
 
 
@@ -90131,6 +90179,919 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 -- FOLDUNITS START OF NO INNATE SPEED
 
 
+
+#newmonster 12100 -- Oracle battle no innate
+#copystats 158
+#copyspr 158
+#worldshape 158
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12101 -- Oracle battle innate
+#copystats 158
+#copyspr 158
+#worldshape 158
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 158 -- Oracle no innate speed
+#battleshape 12100
+#end
+
+#newmonster 12102 -- Monument battle no innate
+#copystats 159
+#copyspr 159
+#worldshape 159
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12103 -- Monument battle innate
+#copystats 159
+#copyspr 159
+#worldshape 159
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 159 -- Monument no innate speed
+#battleshape 12102
+#end
+
+#newmonster 12104 -- Demilich battle no innate
+#copystats 180
+#copyspr 180
+#worldshape 180
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12105 -- Demilich battle innate
+#copystats 180
+#copyspr 180
+#worldshape 180
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 180 -- Demilich no innate speed
+#battleshape 12104
+#end
+
+#newmonster 12106 -- Statue of Order battle no innate
+#copystats 472
+#copyspr 472
+#worldshape 472
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12107 -- Statue of Order battle innate
+#copystats 472
+#copyspr 472
+#worldshape 472
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 472 -- Statue of Order no innate speed
+#battleshape 12106
+#end
+
+#newmonster 12108 -- Telestic Animate battle no innate
+#copystats 473
+#copyspr 473
+#worldshape 473
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12109 -- Telestic Animate battle innate
+#copystats 473
+#copyspr 473
+#worldshape 473
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 473 -- Telestic Animate no innate speed
+#battleshape 12108
+#end
+
+#newmonster 12110 -- Void Lurker battle no innate
+#copystats 546
+#copyspr 546
+#worldshape 546
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12111 -- Void Lurker battle innate
+#copystats 546
+#copyspr 546
+#worldshape 546
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 546 -- Void Lurker no innate speed
+#battleshape 12110
+#end
+
+#newmonster 12112 -- Baphomet battle no innate
+#copystats 607
+#copyspr 607
+#worldshape 607
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12113 -- Baphomet battle innate
+#copystats 607
+#copyspr 607
+#worldshape 607
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 607 -- Baphomet no innate speed
+#battleshape 12112
+#end
+
+#newmonster 12114 -- Treelord battle no innate
+#copystats 621
+#copyspr 621
+#worldshape 621
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12115 -- Treelord battle innate
+#copystats 621
+#copyspr 621
+#worldshape 621
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 621 -- Treelord no innate speed
+#battleshape 12114
+#end
+
+#newmonster 12116 -- Fountain of Blood battle no innate
+#copystats 656
+#copyspr 656
+#worldshape 656
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12117 -- Fountain of Blood battle innate
+#copystats 656
+#copyspr 656
+#worldshape 656
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 656 -- Fountain of Blood no innate speed
+#battleshape 12116
+#end
+
+#newmonster 12118 -- Monolith battle no innate
+#copystats 657
+#copyspr 657
+#worldshape 657
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12119 -- Monolith battle innate
+#copystats 657
+#copyspr 657
+#worldshape 657
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 657 -- Monolith no innate speed
+#battleshape 12118
+#end
+
+#newmonster 12120 -- Vastness battle no innate
+#copystats 762
+#copyspr 762
+#worldshape 762
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12121 -- Vastness battle innate
+#copystats 762
+#copyspr 762
+#worldshape 762
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 762 -- Vastness no innate speed
+#battleshape 12120
+#end
+
+#newmonster 12122 -- Juggernaut battle no innate
+#copystats 781
+#copyspr 781
+#worldshape 781
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12123 -- Juggernaut battle innate
+#copystats 781
+#copyspr 781
+#worldshape 781
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 781 -- Juggernaut no innate speed
+#battleshape 12122
+#end
+
+#newmonster 12124 -- Colossal Head battle no innate
+#copystats 958
+#copyspr 958
+#worldshape 958
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12125 -- Colossal Head battle innate
+#copystats 958
+#copyspr 958
+#worldshape 958
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 958 -- Colossal Head no innate speed
+#battleshape 12124
+#end
+
+#newmonster 12126 -- Treelord battle no innate
+#copystats 980
+#copyspr 980
+#worldshape 980
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12127 -- Treelord battle innate
+#copystats 980
+#copyspr 980
+#worldshape 980
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 980 -- Treelord no innate speed
+#battleshape 12126
+#end
+
+#newmonster 12128 -- Dying Treelord battle no innate
+#copystats 981
+#copyspr 981
+#worldshape 981
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12129 -- Dying Treelord battle innate
+#copystats 981
+#copyspr 981
+#worldshape 981
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 981 -- Dying Treelord no innate speed
+#battleshape 12128
+#end
+
+#newmonster 12130 -- Divine Glyph battle no innate
+#copystats 1025
+#copyspr 1025
+#worldshape 1025
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12131 -- Divine Glyph battle innate
+#copystats 1025
+#copyspr 1025
+#worldshape 1025
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 1025 -- Divine Glyph no innate speed
+#battleshape 12130
+#end
+
+#newmonster 12132 -- Slave to Unreason battle no innate
+#copystats 1151
+#copyspr 1151
+#worldshape 1151
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12133 -- Slave to Unreason battle innate
+#copystats 1151
+#copyspr 1151
+#worldshape 1151
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 1151 -- Slave to Unreason no innate speed
+#battleshape 12132
+#end
+
+#newmonster 12134 -- Colossal Fetish battle no innate
+#copystats 1346
+#copyspr 1346
+#worldshape 1346
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12135 -- Colossal Fetish battle innate
+#copystats 1346
+#copyspr 1346
+#worldshape 1346
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 1346 -- Colossal Fetish no innate speed
+#battleshape 12134
+#end
+
+#newmonster 12136 -- Polypal Queen battle no innate
+#copystats 1402
+#copyspr 1402
+#worldshape 1402
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12137 -- Polypal Queen battle innate
+#copystats 1402
+#copyspr 1402
+#worldshape 1402
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 1402 -- Polypal Queen no innate speed
+#battleshape 12136
+#end
+
+#newmonster 12138 -- Mind Slime Horror battle no innate
+#copystats 2211
+#copyspr 2211
+#worldshape 2211
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12139 -- Mind Slime Horror battle innate
+#copystats 2211
+#copyspr 2211
+#worldshape 2211
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2211 -- Mind Slime Horror no innate speed
+#battleshape 12138
+#end
+
+#newmonster 12140 -- Irminsul battle no innate
+#copystats 2234
+#copyspr 2234
+#worldshape 2234
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12141 -- Irminsul battle innate
+#copystats 2234
+#copyspr 2234
+#worldshape 2234
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2234 -- Irminsul no innate speed
+#battleshape 12140
+#end
+
+#newmonster 12142 -- Blessed Couple battle no innate
+#copystats 2246
+#copyspr 2246
+#worldshape 2246
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12143 -- Blessed Couple battle innate
+#copystats 2246
+#copyspr 2246
+#worldshape 2246
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2246 -- Blessed Couple no innate speed
+#battleshape 12142
+#end
+
+#newmonster 12144 -- Idol of Men battle no innate
+#copystats 2447
+#copyspr 2447
+#worldshape 2447
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12145 -- Idol of Men battle innate
+#copystats 2447
+#copyspr 2447
+#worldshape 2447
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2447 -- Idol of Men no innate speed
+#battleshape 12144
+#end
+
+#newmonster 12146 -- Idol of Beasts battle no innate
+#copystats 2448
+#copyspr 2448
+#worldshape 2448
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12147 -- Idol of Beasts battle innate
+#copystats 2448
+#copyspr 2448
+#worldshape 2448
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2448 -- Idol of Beasts no innate speed
+#battleshape 12146
+#end
+
+#newmonster 12148 -- Idol of Sorcery battle no innate
+#copystats 2449
+#copyspr 2449
+#worldshape 2449
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12149 -- Idol of Sorcery battle innate
+#copystats 2449
+#copyspr 2449
+#worldshape 2449
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2449 -- Idol of Sorcery no innate speed
+#battleshape 12148
+#end
+
+#newmonster 12150 -- Statue of Fertility battle no innate
+#copystats 2460
+#copyspr 2460
+#worldshape 2460
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12151 -- Statue of Fertility battle innate
+#copystats 2460
+#copyspr 2460
+#worldshape 2460
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2460 -- Statue of Fertility no innate speed
+#battleshape 12150
+#end
+
+#newmonster 12152 -- Statue of the Bloody Mother battle no innate
+#copystats 2461
+#copyspr 2461
+#worldshape 2461
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12153 -- Statue of the Bloody Mother battle innate
+#copystats 2461
+#copyspr 2461
+#worldshape 2461
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2461 -- Statue of the Bloody Mother no innate speed
+#battleshape 12152
+#end
+
+#newmonster 12154 -- Golden Idol battle no innate
+#copystats 2462
+#copyspr 2462
+#worldshape 2462
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12155 -- Golden Idol battle innate
+#copystats 2462
+#copyspr 2462
+#worldshape 2462
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2462 -- Golden Idol no innate speed
+#battleshape 12154
+#end
+
+#newmonster 12156 -- Statue of War battle no innate
+#copystats 2463
+#copyspr 2463
+#worldshape 2463
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12157 -- Statue of War battle innate
+#copystats 2463
+#copyspr 2463
+#worldshape 2463
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2463 -- Statue of War no innate speed
+#battleshape 12156
+#end
+
+#newmonster 12158 -- Statue of War battle no innate
+#copystats 2465
+#copyspr 2465
+#worldshape 2465
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12159 -- Statue of War battle innate
+#copystats 2465
+#copyspr 2465
+#worldshape 2465
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2465 -- Statue of War no innate speed
+#battleshape 12158
+#end
+
+#newmonster 12160 -- Golden Pillar battle no innate
+#copystats 2503
+#copyspr 2503
+#worldshape 2503
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12161 -- Golden Pillar battle innate
+#copystats 2503
+#copyspr 2503
+#worldshape 2503
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2503 -- Golden Pillar no innate speed
+#battleshape 12160
+#end
+
+#newmonster 12162 -- Mallqui Priestess battle no innate
+#copystats 2661
+#copyspr 2661
+#worldshape 2661
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12163 -- Mallqui Priestess battle innate
+#copystats 2661
+#copyspr 2661
+#worldshape 2661
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2661 -- Mallqui Priestess no innate speed
+#battleshape 12162
+#end
+
+#newmonster 12164 -- Mallqui Priest battle no innate
+#copystats 2662
+#copyspr 2662
+#worldshape 2662
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12165 -- Mallqui Priest battle innate
+#copystats 2662
+#copyspr 2662
+#worldshape 2662
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2662 -- Mallqui Priest no innate speed
+#battleshape 12164
+#end
+
+#newmonster 12166 -- Stone Huaca battle no innate
+#copystats 2696
+#copyspr 2696
+#worldshape 2696
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12167 -- Stone Huaca battle innate
+#copystats 2696
+#copyspr 2696
+#worldshape 2696
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2696 -- Stone Huaca no innate speed
+#battleshape 12166
+#end
+
+#newmonster 12168 -- Protogenos of the Sea battle no innate
+#copystats 2847
+#copyspr 2847
+#worldshape 2847
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12169 -- Protogenos of the Sea battle innate
+#copystats 2847
+#copyspr 2847
+#worldshape 2847
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2847 -- Protogenos of the Sea no innate speed
+#battleshape 12168
+#end
+
+#newmonster 12170 -- Father of the Sea battle no innate
+#copystats 2848
+#copyspr 2848
+#worldshape 2848
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12171 -- Father of the Sea battle innate
+#copystats 2848
+#copyspr 2848
+#worldshape 2848
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2848 -- Father of the Sea no innate speed
+#battleshape 12170
+#end
+
+#newmonster 12172 -- Statue of the Underworld battle no innate
+#copystats 2850
+#copyspr 2850
+#worldshape 2850
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12173 -- Statue of the Underworld battle innate
+#copystats 2850
+#copyspr 2850
+#worldshape 2850
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2850 -- Statue of the Underworld no innate speed
+#battleshape 12172
+#end
+
+#newmonster 12174 -- Floating Mind battle no innate
+#copystats 2855
+#copyspr 2855
+#worldshape 2855
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12175 -- Floating Mind battle innate
+#copystats 2855
+#copyspr 2855
+#worldshape 2855
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2855 -- Floating Mind no innate speed
+#battleshape 12174
+#end
+
 #newmonster 12176 -- Uttervast battle no innate
 #copystats 2980
 #copyspr 2980
@@ -90155,6 +91116,2261 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #battleshape 12176
 #end
 
+#newmonster 12178 -- Hamadryad battle no innate
+#copystats 3066
+#copyspr 3066
+#worldshape 3066
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12179 -- Hamadryad battle innate
+#copystats 3066
+#copyspr 3066
+#worldshape 3066
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3066 -- Hamadryad no innate speed
+#battleshape 12178
+#end
+
+#newmonster 12180 -- Daughter of the Oak battle no innate
+#copystats 3242
+#copyspr 3242
+#worldshape 3242
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12181 -- Daughter of the Oak battle innate
+#copystats 3242
+#copyspr 3242
+#worldshape 3242
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3242 -- Daughter of the Oak no innate speed
+#battleshape 12180
+#end
+
+#newmonster 12182 -- God Block battle no innate
+#copystats 3328
+#copyspr 3328
+#worldshape 3328
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12183 -- God Block battle innate
+#copystats 3328
+#copyspr 3328
+#worldshape 3328
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3328 -- God Block no innate speed
+#battleshape 12182
+#end
+
+#newmonster 12184 -- Betyl of the Sun battle no innate
+#copystats 3329
+#copyspr 3329
+#worldshape 3329
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12185 -- Betyl of the Sun battle innate
+#copystats 3329
+#copyspr 3329
+#worldshape 3329
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3329 -- Betyl of the Sun no innate speed
+#battleshape 12184
+#end
+
+#newmonster 12186 -- Betyl of Writing battle no innate
+#copystats 3330
+#copyspr 3330
+#worldshape 3330
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12187 -- Betyl of Writing battle innate
+#copystats 3330
+#copyspr 3330
+#worldshape 3330
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3330 -- Betyl of Writing no innate speed
+#battleshape 12186
+#end
+
+#newmonster 12188 -- Betyl of the Stars battle no innate
+#copystats 3331
+#copyspr 3331
+#worldshape 3331
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12189 -- Betyl of the Stars battle innate
+#copystats 3331
+#copyspr 3331
+#worldshape 3331
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3331 -- Betyl of the Stars no innate speed
+#battleshape 12188
+#end
+
+#newmonster 12190 -- Statue of Beginnings battle no innate
+#copystats 3344
+#copyspr 3344
+#worldshape 3344
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12191 -- Statue of Beginnings battle innate
+#copystats 3344
+#copyspr 3344
+#worldshape 3344
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3344 -- Statue of Beginnings no innate speed
+#battleshape 12190
+#end
+
+#newmonster 12192 -- Wooden Colossus battle no innate
+#copystats 3345
+#copyspr 3345
+#worldshape 3345
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12193 -- Wooden Colossus battle innate
+#copystats 3345
+#copyspr 3345
+#worldshape 3345
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3345 -- Wooden Colossus no innate speed
+#battleshape 12192
+#end
+
+#newmonster 12194 -- Bronze Colossus battle no innate
+#copystats 3346
+#copyspr 3346
+#worldshape 3346
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12195 -- Bronze Colossus battle innate
+#copystats 3346
+#copyspr 3346
+#worldshape 3346
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3346 -- Bronze Colossus no innate speed
+#battleshape 12194
+#end
+
+#newmonster 12196 -- Bronze Colossus battle no innate
+#copystats 3368
+#copyspr 3368
+#worldshape 3368
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12197 -- Bronze Colossus battle innate
+#copystats 3368
+#copyspr 3368
+#worldshape 3368
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3368 -- Bronze Colossus no innate speed
+#battleshape 12196
+#end
+
+#newmonster 12198 -- Jinn Block battle no innate
+#copystats 3389
+#copyspr 3389
+#worldshape 3389
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12199 -- Jinn Block battle innate
+#copystats 3389
+#copyspr 3389
+#worldshape 3389
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3389 -- Jinn Block no innate speed
+#battleshape 12198
+#end
+
+#newmonster 12200 -- Tree of Tainted Fruits battle no innate
+#copystats 3511
+#copyspr 3511
+#worldshape 3511
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12201 -- Tree of Tainted Fruits battle innate
+#copystats 3511
+#copyspr 3511
+#worldshape 3511
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3511 -- Tree of Tainted Fruits no innate speed
+#battleshape 12200
+#end
+
+#newmonster 12202 -- Crystal Soul battle no innate
+#copystats 3639
+#copyspr 3639
+#worldshape 3639
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12203 -- Crystal Soul battle innate
+#copystats 3639
+#copyspr 3639
+#worldshape 3639
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3639 -- Crystal Soul no innate speed
+#battleshape 12202
+#end
+
+#newmonster 12204 -- Dark Crystal battle no innate
+#copystats 3640
+#copyspr 3640
+#worldshape 3640
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12205 -- Dark Crystal battle innate
+#copystats 3640
+#copyspr 3640
+#worldshape 3640
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3640 -- Dark Crystal no innate speed
+#battleshape 12204
+#end
+
+#newmonster 12206 -- Elephant Idol battle no innate
+#copystats 3661
+#copyspr 3661
+#worldshape 3661
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12207 -- Elephant Idol battle innate
+#copystats 3661
+#copyspr 3661
+#worldshape 3661
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3661 -- Elephant Idol no innate speed
+#battleshape 12206
+#end
+
+#newmonster 12208 -- Sacred Geyser battle no innate
+#copystats 3876
+#copyspr 3876
+#worldshape 3876
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12209 -- Sacred Geyser battle innate
+#copystats 3876
+#copyspr 3876
+#worldshape 3876
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 3876 -- Sacred Geyser no innate speed
+#battleshape 12208
+#end
+
+#newmonster 12210 -- Abomination of Desolation battle no innate
+#copystats 1913
+#copyspr 1913
+#worldshape 1913
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12211 -- Abomination of Desolation battle innate
+#copystats 1913
+#copyspr 1913
+#worldshape 1913
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 1913 -- Abomination of Desolation no innate speed
+#battleshape 12210
+#end
+
+#newmonster 12212 -- Legion of Gods battle no innate
+#copystats 2501
+#copyspr 2501
+#worldshape 2501
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12213 -- Legion of Gods battle innate
+#copystats 2501
+#copyspr 2501
+#worldshape 2501
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2501 -- Legion of Gods no innate speed
+#battleshape 12212
+#end
+
+#newmonster 12214 -- Royal Mallqui battle no innate
+#copystats 2663
+#copyspr 2663
+#worldshape 2663
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12215 -- Royal Mallqui battle innate
+#copystats 2663
+#copyspr 2663
+#worldshape 2663
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2663 -- Royal Mallqui no innate speed
+#battleshape 12214
+#end
+
+#newmonster 12216 -- First Couple battle no innate
+#copystats 2713
+#copyspr 2713
+#worldshape 2713
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12217 -- First Couple battle innate
+#copystats 2713
+#copyspr 2713
+#worldshape 2713
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 2713 -- First Couple no innate speed
+#battleshape 12216
+#end
+
+#newmonster 12218 -- Sokushinbutsu battle no innate
+#copystats 6936
+#copyspr 6936
+#worldshape 6936
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12219 -- Sokushinbutsu battle innate
+#copystats 6936
+#copyspr 6936
+#worldshape 6936
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 6936 -- Sokushinbutsu no innate speed
+#battleshape 12218
+#end
+
+#newmonster 12220 -- Graven Idol battle no innate
+#copystats 7224
+#copyspr 7224
+#worldshape 7224
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12221 -- Graven Idol battle innate
+#copystats 7224
+#copyspr 7224
+#worldshape 7224
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 7224 -- Graven Idol no innate speed
+#battleshape 12220
+#end
+
+#newmonster 12222 -- Monolith battle no innate
+#copystats 7232
+#copyspr 7232
+#worldshape 7232
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12223 -- Monolith battle innate
+#copystats 7232
+#copyspr 7232
+#worldshape 7232
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 7232 -- Monolith no innate speed
+#battleshape 12222
+#end
+
+#newmonster 12224 -- Accursed Idol battle no innate
+#copystats 7234
+#copyspr 7234
+#worldshape 7234
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12225 -- Accursed Idol battle innate
+#copystats 7234
+#copyspr 7234
+#worldshape 7234
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 7234 -- Accursed Idol no innate speed
+#battleshape 12224
+#end
+
+#newmonster 12226 -- Bloody Altar battle no innate
+#copystats 7238
+#copyspr 7238
+#worldshape 7238
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12227 -- Bloody Altar battle innate
+#copystats 7238
+#copyspr 7238
+#worldshape 7238
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 7238 -- Bloody Altar no innate speed
+#battleshape 12226
+#end
+
+#newmonster 12228 -- Huaca Stone battle no innate
+#copystats 7269
+#copyspr 7269
+#worldshape 7269
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12229 -- Huaca Stone battle innate
+#copystats 7269
+#copyspr 7269
+#worldshape 7269
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 7269 -- Huaca Stone no innate speed
+#battleshape 12228
+#end
+
+#newmonster 12230 -- Returned Emperor battle no innate
+#copystats 7395
+#copyspr 7395
+#worldshape 7395
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12231 -- Returned Emperor battle innate
+#copystats 7395
+#copyspr 7395
+#worldshape 7395
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 7395 -- Returned Emperor no innate speed
+#battleshape 12230
+#end
+
+#newmonster 12232 -- God-Statue battle no innate
+#copystats 7437
+#copyspr 7437
+#worldshape 7437
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12233 -- God-Statue battle innate
+#copystats 7437
+#copyspr 7437
+#worldshape 7437
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 7437 -- God-Statue no innate speed
+#battleshape 12232
+#end
+
+#newmonster 12234 -- Ancient Tree battle no innate
+#copystats 7479
+#copyspr 7479
+#worldshape 7479
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12235 -- Ancient Tree battle innate
+#copystats 7479
+#copyspr 7479
+#worldshape 7479
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 7479 -- Ancient Tree no innate speed
+#battleshape 12234
+#end
+
+#newmonster 12236 -- Shard of Heaven battle no innate
+#copystats 7530
+#copyspr 7530
+#worldshape 7530
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12237 -- Shard of Heaven battle innate
+#copystats 7530
+#copyspr 7530
+#worldshape 7530
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 7530 -- Shard of Heaven no innate speed
+#battleshape 12236
+#end
+
+#newmonster 12238 -- Idol of the Ancient W... battle no innate
+#copystats 7604
+#copyspr 7604
+#worldshape 7604
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12239 -- Idol of the Ancient W... battle innate
+#copystats 7604
+#copyspr 7604
+#worldshape 7604
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 7604 -- Idol of the Ancient W... no innate speed
+#battleshape 12238
+#end
+
+#newmonster 12240 -- Chachapoya Mallqui battle no innate
+#copystats 7652
+#copyspr 7652
+#worldshape 7652
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12241 -- Chachapoya Mallqui battle innate
+#copystats 7652
+#copyspr 7652
+#worldshape 7652
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 7652 -- Chachapoya Mallqui no innate speed
+#battleshape 12240
+#end
+
+#newmonster 12242 -- Dolmen battle no innate
+#copystats 7662
+#copyspr 7662
+#worldshape 7662
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12243 -- Dolmen battle innate
+#copystats 7662
+#copyspr 7662
+#worldshape 7662
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 7662 -- Dolmen no innate speed
+#battleshape 12242
+#end
+
+#newmonster 12244 -- Colossus of Therodos battle no innate
+#copystats 7821
+#copyspr 7821
+#worldshape 7821
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12245 -- Colossus of Therodos battle innate
+#copystats 7821
+#copyspr 7821
+#worldshape 7821
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 7821 -- Colossus of Therodos no innate speed
+#battleshape 12244
+#end
+
+#newmonster 12246 -- All-In-One battle no innate
+#copystats 8001
+#copyspr 8001
+#worldshape 8001
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12247 -- All-In-One battle innate
+#copystats 8001
+#copyspr 8001
+#worldshape 8001
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8001 -- All-In-One no innate speed
+#battleshape 12246
+#end
+
+#newmonster 12248 -- Sea Star battle no innate
+#copystats 8628
+#copyspr 8628
+#worldshape 8628
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12249 -- Sea Star battle innate
+#copystats 8628
+#copyspr 8628
+#worldshape 8628
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8628 -- Sea Star no innate speed
+#battleshape 12248
+#end
+
+#newmonster 12250 -- Ogiso battle no innate
+#copystats 6986
+#copyspr 6986
+#worldshape 6986
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12251 -- Ogiso battle innate
+#copystats 6986
+#copyspr 6986
+#worldshape 6986
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 6986 -- Ogiso no innate speed
+#battleshape 12250
+#end
+
+#newmonster 12252 -- Tree of Hate battle no innate
+#copystats 7480
+#copyspr 7480
+#worldshape 7480
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12253 -- Tree of Hate battle innate
+#copystats 7480
+#copyspr 7480
+#worldshape 7480
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 7480 -- Tree of Hate no innate speed
+#battleshape 12252
+#end
+
+#newmonster 12254 -- Lighthouse battle no innate
+#copystats 8259
+#copyspr 8259
+#worldshape 8259
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12255 -- Lighthouse battle innate
+#copystats 8259
+#copyspr 8259
+#worldshape 8259
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8259 -- Lighthouse no innate speed
+#battleshape 12254
+#end
+
+#newmonster 12256 -- Heiau of the Uncreated battle no innate
+#copystats 8298
+#copyspr 8298
+#worldshape 8298
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12257 -- Heiau of the Uncreated battle innate
+#copystats 8298
+#copyspr 8298
+#worldshape 8298
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8298 -- Heiau of the Uncreated no innate speed
+#battleshape 12256
+#end
+
+#newmonster 12258 -- World Pillar battle no innate
+#copystats 8303
+#copyspr 8303
+#worldshape 8303
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12259 -- World Pillar battle innate
+#copystats 8303
+#copyspr 8303
+#worldshape 8303
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8303 -- World Pillar no innate speed
+#battleshape 12258
+#end
+
+#newmonster 12260 -- Cromlech battle no innate
+#copystats 8333
+#copyspr 8333
+#worldshape 8333
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12261 -- Cromlech battle innate
+#copystats 8333
+#copyspr 8333
+#worldshape 8333
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8333 -- Cromlech no innate speed
+#battleshape 12260
+#end
+
+#newmonster 12262 -- Sea Star battle no innate
+#copystats 8335
+#copyspr 8335
+#worldshape 8335
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12263 -- Sea Star battle innate
+#copystats 8335
+#copyspr 8335
+#worldshape 8335
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8335 -- Sea Star no innate speed
+#battleshape 12262
+#end
+
+#newmonster 12264 -- Burning Bush battle no innate
+#copystats 8338
+#copyspr 8338
+#worldshape 8338
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12265 -- Burning Bush battle innate
+#copystats 8338
+#copyspr 8338
+#worldshape 8338
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8338 -- Burning Bush no innate speed
+#battleshape 12264
+#end
+
+#newmonster 12266 -- Nehushtan battle no innate
+#copystats 8340
+#copyspr 8340
+#worldshape 8340
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12267 -- Nehushtan battle innate
+#copystats 8340
+#copyspr 8340
+#worldshape 8340
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8340 -- Nehushtan no innate speed
+#battleshape 12266
+#end
+
+#newmonster 12268 -- Skull Idol battle no innate
+#copystats 8346
+#copyspr 8346
+#worldshape 8346
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12269 -- Skull Idol battle innate
+#copystats 8346
+#copyspr 8346
+#worldshape 8346
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8346 -- Skull Idol no innate speed
+#battleshape 12268
+#end
+
+#newmonster 12270 -- Blacksteel Colossus battle no innate
+#copystats 8404
+#copyspr 8404
+#worldshape 8404
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12271 -- Blacksteel Colossus battle innate
+#copystats 8404
+#copyspr 8404
+#worldshape 8404
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8404 -- Blacksteel Colossus no innate speed
+#battleshape 12270
+#end
+
+#newmonster 12272 -- Statue of the Sun battle no innate
+#copystats 8444
+#copyspr 8444
+#worldshape 8444
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12273 -- Statue of the Sun battle innate
+#copystats 8444
+#copyspr 8444
+#worldshape 8444
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8444 -- Statue of the Sun no innate speed
+#battleshape 12272
+#end
+
+#newmonster 12274 -- Idol of Sustenance battle no innate
+#copystats 8445
+#copyspr 8445
+#worldshape 8445
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12275 -- Idol of Sustenance battle innate
+#copystats 8445
+#copyspr 8445
+#worldshape 8445
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8445 -- Idol of Sustenance no innate speed
+#battleshape 12274
+#end
+
+#newmonster 12276 -- Pillar of Eternal Flame battle no innate
+#copystats 8446
+#copyspr 8446
+#worldshape 8446
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12277 -- Pillar of Eternal Flame battle innate
+#copystats 8446
+#copyspr 8446
+#worldshape 8446
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8446 -- Pillar of Eternal Flame no innate speed
+#battleshape 12276
+#end
+
+#newmonster 12278 -- Idol of Watery Wisdom battle no innate
+#copystats 8447
+#copyspr 8447
+#worldshape 8447
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12279 -- Idol of Watery Wisdom battle innate
+#copystats 8447
+#copyspr 8447
+#worldshape 8447
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8447 -- Idol of Watery Wisdom no innate speed
+#battleshape 12278
+#end
+
+#newmonster 12280 -- Statue of the Sun an... battle no innate
+#copystats 8448
+#copyspr 8448
+#worldshape 8448
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12281 -- Statue of the Sun an... battle innate
+#copystats 8448
+#copyspr 8448
+#worldshape 8448
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8448 -- Statue of the Sun an... no innate speed
+#battleshape 12280
+#end
+
+#newmonster 12282 -- Idol of the Sun battle no innate
+#copystats 8449
+#copyspr 8449
+#worldshape 8449
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12283 -- Idol of the Sun battle innate
+#copystats 8449
+#copyspr 8449
+#worldshape 8449
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8449 -- Idol of the Sun no innate speed
+#battleshape 12282
+#end
+
+#newmonster 12284 -- Plague Idol battle no innate
+#copystats 8452
+#copyspr 8452
+#worldshape 8452
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12285 -- Plague Idol battle innate
+#copystats 8452
+#copyspr 8452
+#worldshape 8452
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8452 -- Plague Idol no innate speed
+#battleshape 12284
+#end
+
+#newmonster 12286 -- Divine Egg battle no innate
+#copystats 8453
+#copyspr 8453
+#worldshape 8453
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12287 -- Divine Egg battle innate
+#copystats 8453
+#copyspr 8453
+#worldshape 8453
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8453 -- Divine Egg no innate speed
+#battleshape 12286
+#end
+
+#newmonster 12288 -- Sacred Grove battle no innate
+#copystats 8455
+#copyspr 8455
+#worldshape 8455
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12289 -- Sacred Grove battle innate
+#copystats 8455
+#copyspr 8455
+#worldshape 8455
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8455 -- Sacred Grove no innate speed
+#battleshape 12288
+#end
+
+#newmonster 12290 -- Blood Soaked Edifice battle no innate
+#copystats 8456
+#copyspr 8456
+#worldshape 8456
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12291 -- Blood Soaked Edifice battle innate
+#copystats 8456
+#copyspr 8456
+#worldshape 8456
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8456 -- Blood Soaked Edifice no innate speed
+#battleshape 12290
+#end
+
+#newmonster 12292 -- Spirit of Bones battle no innate
+#copystats 8457
+#copyspr 8457
+#worldshape 8457
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12293 -- Spirit of Bones battle innate
+#copystats 8457
+#copyspr 8457
+#worldshape 8457
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8457 -- Spirit of Bones no innate speed
+#battleshape 12292
+#end
+
+#newmonster 12294 -- Statue of the Silent... battle no innate
+#copystats 8458
+#copyspr 8458
+#worldshape 8458
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12295 -- Statue of the Silent... battle innate
+#copystats 8458
+#copyspr 8458
+#worldshape 8458
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8458 -- Statue of the Silent... no innate speed
+#battleshape 12294
+#end
+
+#newmonster 12296 -- Idol of Winter battle no innate
+#copystats 8459
+#copyspr 8459
+#worldshape 8459
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12297 -- Idol of Winter battle innate
+#copystats 8459
+#copyspr 8459
+#worldshape 8459
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8459 -- Idol of Winter no innate speed
+#battleshape 12296
+#end
+
+#newmonster 12298 -- Foul Statue battle no innate
+#copystats 8460
+#copyspr 8460
+#worldshape 8460
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12299 -- Foul Statue battle innate
+#copystats 8460
+#copyspr 8460
+#worldshape 8460
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8460 -- Foul Statue no innate speed
+#battleshape 12298
+#end
+
+#newmonster 12300 -- Idol of the Seasons battle no innate
+#copystats 8461
+#copyspr 8461
+#worldshape 8461
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12301 -- Idol of the Seasons battle innate
+#copystats 8461
+#copyspr 8461
+#worldshape 8461
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8461 -- Idol of the Seasons no innate speed
+#battleshape 12300
+#end
+
+#newmonster 12302 -- Idol of the Seasons battle no innate
+#copystats 8462
+#copyspr 8462
+#worldshape 8462
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12303 -- Idol of the Seasons battle innate
+#copystats 8462
+#copyspr 8462
+#worldshape 8462
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8462 -- Idol of the Seasons no innate speed
+#battleshape 12302
+#end
+
+#newmonster 12304 -- Idol of the Seasons battle no innate
+#copystats 8463
+#copyspr 8463
+#worldshape 8463
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12305 -- Idol of the Seasons battle innate
+#copystats 8463
+#copyspr 8463
+#worldshape 8463
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8463 -- Idol of the Seasons no innate speed
+#battleshape 12304
+#end
+
+#newmonster 12306 -- Idol of the Seasons battle no innate
+#copystats 8464
+#copyspr 8464
+#worldshape 8464
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12307 -- Idol of the Seasons battle innate
+#copystats 8464
+#copyspr 8464
+#worldshape 8464
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8464 -- Idol of the Seasons no innate speed
+#battleshape 12306
+#end
+
+#newmonster 12308 -- Protean Abomination battle no innate
+#copystats 8465
+#copyspr 8465
+#worldshape 8465
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12309 -- Protean Abomination battle innate
+#copystats 8465
+#copyspr 8465
+#worldshape 8465
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8465 -- Protean Abomination no innate speed
+#battleshape 12308
+#end
+
+#newmonster 12310 -- Idol of the Harvest battle no innate
+#copystats 8466
+#copyspr 8466
+#worldshape 8466
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12311 -- Idol of the Harvest battle innate
+#copystats 8466
+#copyspr 8466
+#worldshape 8466
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8466 -- Idol of the Harvest no innate speed
+#battleshape 12310
+#end
+
+#newmonster 12312 -- Spirit of the Henge battle no innate
+#copystats 8467
+#copyspr 8467
+#worldshape 8467
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12313 -- Spirit of the Henge battle innate
+#copystats 8467
+#copyspr 8467
+#worldshape 8467
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8467 -- Spirit of the Henge no innate speed
+#battleshape 12312
+#end
+
+#newmonster 12314 -- Statue of the Outer ... battle no innate
+#copystats 8468
+#copyspr 8468
+#worldshape 8468
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12315 -- Statue of the Outer ... battle innate
+#copystats 8468
+#copyspr 8468
+#worldshape 8468
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8468 -- Statue of the Outer ... no innate speed
+#battleshape 12314
+#end
+
+#newmonster 12316 -- Ancient Anemone battle no innate
+#copystats 8469
+#copyspr 8469
+#worldshape 8469
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12317 -- Ancient Anemone battle innate
+#copystats 8469
+#copyspr 8469
+#worldshape 8469
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8469 -- Ancient Anemone no innate speed
+#battleshape 12316
+#end
+
+#newmonster 12318 -- Living Reef battle no innate
+#copystats 8470
+#copyspr 8470
+#worldshape 8470
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12319 -- Living Reef battle innate
+#copystats 8470
+#copyspr 8470
+#worldshape 8470
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8470 -- Living Reef no innate speed
+#battleshape 12318
+#end
+
+#newmonster 12320 -- Reliquary battle no innate
+#copystats 8472
+#copyspr 8472
+#worldshape 8472
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12321 -- Reliquary battle innate
+#copystats 8472
+#copyspr 8472
+#worldshape 8472
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8472 -- Reliquary no innate speed
+#battleshape 12320
+#end
+
+#newmonster 12322 -- Unholy Reliquary battle no innate
+#copystats 8473
+#copyspr 8473
+#worldshape 8473
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12323 -- Unholy Reliquary battle innate
+#copystats 8473
+#copyspr 8473
+#worldshape 8473
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8473 -- Unholy Reliquary no innate speed
+#battleshape 12322
+#end
+
+#newmonster 12324 -- Ancestral Barrow battle no innate
+#copystats 8474
+#copyspr 8474
+#worldshape 8474
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12325 -- Ancestral Barrow battle innate
+#copystats 8474
+#copyspr 8474
+#worldshape 8474
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8474 -- Ancestral Barrow no innate speed
+#battleshape 12324
+#end
+
+#newmonster 12326 -- Statue of Wisdom battle no innate
+#copystats 8475
+#copyspr 8475
+#worldshape 8475
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12327 -- Statue of Wisdom battle innate
+#copystats 8475
+#copyspr 8475
+#worldshape 8475
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8475 -- Statue of Wisdom no innate speed
+#battleshape 12326
+#end
+
+#newmonster 12328 -- Void Crystal battle no innate
+#copystats 8476
+#copyspr 8476
+#worldshape 8476
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12329 -- Void Crystal battle innate
+#copystats 8476
+#copyspr 8476
+#worldshape 8476
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8476 -- Void Crystal no innate speed
+#battleshape 12328
+#end
+
+#newmonster 12330 -- Mother of Pearls battle no innate
+#copystats 8477
+#copyspr 8477
+#worldshape 8477
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12331 -- Mother of Pearls battle innate
+#copystats 8477
+#copyspr 8477
+#worldshape 8477
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8477 -- Mother of Pearls no innate speed
+#battleshape 12330
+#end
+
+#newmonster 12332 -- Sacred Grove battle no innate
+#copystats 8485
+#copyspr 8485
+#worldshape 8485
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12333 -- Sacred Grove battle innate
+#copystats 8485
+#copyspr 8485
+#worldshape 8485
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8485 -- Sacred Grove no innate speed
+#battleshape 12332
+#end
+
+#newmonster 12334 -- Statue of War battle no innate
+#copystats 8486
+#copyspr 8486
+#worldshape 8486
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12335 -- Statue of War battle innate
+#copystats 8486
+#copyspr 8486
+#worldshape 8486
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8486 -- Statue of War no innate speed
+#battleshape 12334
+#end
+
+#newmonster 12336 -- Statue of Wisdom battle no innate
+#copystats 8487
+#copyspr 8487
+#worldshape 8487
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12337 -- Statue of Wisdom battle innate
+#copystats 8487
+#copyspr 8487
+#worldshape 8487
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8487 -- Statue of Wisdom no innate speed
+#battleshape 12336
+#end
+
+#newmonster 12338 -- Smiling Head battle no innate
+#copystats 8488
+#copyspr 8488
+#worldshape 8488
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12339 -- Smiling Head battle innate
+#copystats 8488
+#copyspr 8488
+#worldshape 8488
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8488 -- Smiling Head no innate speed
+#battleshape 12338
+#end
+
+#newmonster 12340 -- Statue of Creation battle no innate
+#copystats 8489
+#copyspr 8489
+#worldshape 8489
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12341 -- Statue of Creation battle innate
+#copystats 8489
+#copyspr 8489
+#worldshape 8489
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8489 -- Statue of Creation no innate speed
+#battleshape 12340
+#end
+
+#newmonster 12342 -- Shanta Murti battle no innate
+#copystats 8490
+#copyspr 8490
+#worldshape 8490
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12343 -- Shanta Murti battle innate
+#copystats 8490
+#copyspr 8490
+#worldshape 8490
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8490 -- Shanta Murti no innate speed
+#battleshape 12342
+#end
+
+#newmonster 12344 -- Hanging Tree battle no innate
+#copystats 8491
+#copyspr 8491
+#worldshape 8491
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12345 -- Hanging Tree battle innate
+#copystats 8491
+#copyspr 8491
+#worldshape 8491
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8491 -- Hanging Tree no innate speed
+#battleshape 12344
+#end
+
+#newmonster 12346 -- Idol of Thunder battle no innate
+#copystats 8492
+#copyspr 8492
+#worldshape 8492
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12347 -- Idol of Thunder battle innate
+#copystats 8492
+#copyspr 8492
+#worldshape 8492
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8492 -- Idol of Thunder no innate speed
+#battleshape 12346
+#end
+
+#newmonster 12348 -- Idol of War battle no innate
+#copystats 8493
+#copyspr 8493
+#worldshape 8493
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12349 -- Idol of War battle innate
+#copystats 8493
+#copyspr 8493
+#worldshape 8493
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8493 -- Idol of War no innate speed
+#battleshape 12348
+#end
+
+#newmonster 12350 -- Icon of Fertility battle no innate
+#copystats 8494
+#copyspr 8494
+#worldshape 8494
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12351 -- Icon of Fertility battle innate
+#copystats 8494
+#copyspr 8494
+#worldshape 8494
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8494 -- Icon of Fertility no innate speed
+#battleshape 12350
+#end
+
+#newmonster 12352 -- Daibutsu battle no innate
+#copystats 8495
+#copyspr 8495
+#worldshape 8495
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12353 -- Daibutsu battle innate
+#copystats 8495
+#copyspr 8495
+#worldshape 8495
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8495 -- Daibutsu no innate speed
+#battleshape 12352
+#end
+
+#newmonster 12354 -- Statue of Mercy battle no innate
+#copystats 8496
+#copyspr 8496
+#worldshape 8496
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12355 -- Statue of Mercy battle innate
+#copystats 8496
+#copyspr 8496
+#worldshape 8496
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8496 -- Statue of Mercy no innate speed
+#battleshape 12354
+#end
+
+#newmonster 12356 -- Spirit Gate battle no innate
+#copystats 8497
+#copyspr 8497
+#worldshape 8497
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12357 -- Spirit Gate battle innate
+#copystats 8497
+#copyspr 8497
+#worldshape 8497
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8497 -- Spirit Gate no innate speed
+#battleshape 12356
+#end
+
+#newmonster 12358 -- Spirit of Sargassum battle no innate
+#copystats 8498
+#copyspr 8498
+#worldshape 8498
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12359 -- Spirit of Sargassum battle innate
+#copystats 8498
+#copyspr 8498
+#worldshape 8498
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8498 -- Spirit of Sargassum no innate speed
+#battleshape 12358
+#end
+
+#newmonster 12360 -- Divine Anvil battle no innate
+#copystats 8499
+#copyspr 8499
+#worldshape 8499
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12361 -- Divine Anvil battle innate
+#copystats 8499
+#copyspr 8499
+#worldshape 8499
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8499 -- Divine Anvil no innate speed
+#battleshape 12360
+#end
+
+#newmonster 12362 -- Stone Tyrant battle no innate
+#copystats 8500
+#copyspr 8500
+#worldshape 8500
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12363 -- Stone Tyrant battle innate
+#copystats 8500
+#copyspr 8500
+#worldshape 8500
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 8500 -- Stone Tyrant no innate speed
+#battleshape 12362
+#end
+
+#newmonster 12364 -- Deep Sea Fissure battle no innate
+#copystats 10015
+#copyspr 10015
+#worldshape 10015
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#newmonster 12365 -- Deep Sea Fissure battle innate
+#copystats 10015
+#copyspr 10015
+#worldshape 10015
+#homerealm 0
+#startdom 0
+#clearmagic
+#end
+
+#selectmonster 10015 -- Deep Sea Fissure no innate speed
+#battleshape 12364
+#end
 
 
 -- ENDUNITS END OF NO INNATE SPEED
@@ -105855,28 +109071,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 3084 -- amano
 #end
 
-#newsite 2602
-#name "Testestest"
-#rarity 5
-#level 0
-#path 9
-#look 2
-#homecom 9097
-#homecom 9098
-#homecom 9099
-#homecom 9100
-#homecom 9101
-#homecom 9102
-#homecom 9103
-#homecom 9104
-#homecom 9105
---#homecom 9106
-#homecom 9108
---#homecom 9109
-#homecom 9110
-#homecom 7812
-#end
-
 
 -- END OF NEW SITES
 
@@ -109652,7 +112846,6 @@ Sailing: All commanders can sail. Only Schippers can transport troops."
 #futuresite "Celestial Angels"
 #futuresite "LA Rotterland Summons"
 #futuresite "LA Rotterland Heroes"
-#futuresite "Testestest"
 
 #likesterr 32
 #hatesterr 12
@@ -139042,7 +142235,7 @@ Basalt City will be in a ruined state while there is no fortification or if the 
 #details "The effects of the Prayer depend on the nation's chosen Pretender.
 Only one Prayer can be enacted per province per turn, and the Prayer will fail if the province does not have a temple or is under siege.
 This Prayer is in the path of Fire, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 2
 #path 0 0
 #pathlevel 0 1
@@ -139054,7 +142247,6 @@ This Prayer is in the path of Fire, and may be extra potent depending on the Pre
 #nreff 1
 #provrange 0
 #spec 8388608 -- UWOK
-#restricted 15 -- EA Agartha
 #nextspell 4000
 #godpathspell 0
 #end
@@ -139066,7 +142258,7 @@ This Prayer is in the path of Fire, and may be extra potent depending on the Pre
 #details "The effects of the Prayer depend on the nation's chosen Pretender.
 Only one Prayer can be enacted per province per turn, and the Prayer will fail if the province does not have a temple or is under siege.
 This Prayer is in the path of Air, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 2
 #path 0 1
 #pathlevel 0 1
@@ -139078,7 +142270,6 @@ This Prayer is in the path of Air, and may be extra potent depending on the Pret
 #nreff 1
 #provrange 0
 #spec 8388608 -- UWOK
-#restricted 15 -- EA Agartha
 #nextspell 4001
 #godpathspell 1
 #end
@@ -139090,7 +142281,7 @@ This Prayer is in the path of Air, and may be extra potent depending on the Pret
 #details "The effects of the Prayer depend on the nation's chosen Pretender.
 Only one Prayer can be enacted per province per turn, and the Prayer will fail if the province does not have a temple or is under siege.
 This Prayer is in the path of Water, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 2
 #path 0 2
 #pathlevel 0 1
@@ -139102,7 +142293,6 @@ This Prayer is in the path of Water, and may be extra potent depending on the Pr
 #nreff 1
 #provrange 0
 #spec 8388608 -- UWOK
-#restricted 15 -- EA Agartha
 #nextspell 4002
 #godpathspell 2
 #end
@@ -139114,7 +142304,7 @@ This Prayer is in the path of Water, and may be extra potent depending on the Pr
 #details "The effects of the Prayer depend on the nation's chosen Pretender.
 Only one Prayer can be enacted per province per turn, and the Prayer will fail if the province does not have a temple or is under siege.
 This Prayer is in the path of Earth, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 2
 #path 0 3
 #pathlevel 0 1
@@ -139126,7 +142316,6 @@ This Prayer is in the path of Earth, and may be extra potent depending on the Pr
 #nreff 1
 #provrange 0
 #spec 8388608 -- UWOK
-#restricted 15 -- EA Agartha
 #nextspell 4003
 #godpathspell 3
 #end
@@ -139138,7 +142327,7 @@ This Prayer is in the path of Earth, and may be extra potent depending on the Pr
 #details "The effects of the Prayer depend on the nation's chosen Pretender.
 Only one Prayer can be enacted per province per turn, and the Prayer will fail if the province does not have a temple or is under siege.
 This Prayer is in the path of Astral, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 2
 #path 0 4
 #pathlevel 0 1
@@ -139150,7 +142339,6 @@ This Prayer is in the path of Astral, and may be extra potent depending on the P
 #nreff 1
 #provrange 0
 #spec 8388608 -- UWOK
-#restricted 15 -- EA Agartha
 #nextspell 4004
 #godpathspell 4
 #end
@@ -139162,7 +142350,7 @@ This Prayer is in the path of Astral, and may be extra potent depending on the P
 #details "The effects of the Prayer depend on the nation's chosen Pretender.
 Only one Prayer can be enacted per province per turn, and the Prayer will fail if the province does not have a temple or is under siege.
 This Prayer is in the path of Death, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 2
 #path 0 5
 #pathlevel 0 1
@@ -139174,7 +142362,6 @@ This Prayer is in the path of Death, and may be extra potent depending on the Pr
 #nreff 1
 #provrange 0
 #spec 8388608 -- UWOK
-#restricted 15 -- EA Agartha
 #nextspell 4005
 #godpathspell 5
 #end
@@ -139186,7 +142373,7 @@ This Prayer is in the path of Death, and may be extra potent depending on the Pr
 #details "The effects of the Prayer depend on the nation's chosen Pretender.
 Only one Prayer can be enacted per province per turn, and the Prayer will fail if the province does not have a temple or is under siege.
 This Prayer is in the path of Nature, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 2
 #path 0 6
 #pathlevel 0 1
@@ -139198,7 +142385,6 @@ This Prayer is in the path of Nature, and may be extra potent depending on the P
 #nreff 1
 #provrange 0
 #spec 8388608 -- UWOK
-#restricted 15 -- EA Agartha
 #nextspell 4006
 #godpathspell 6
 #end
@@ -139210,7 +142396,7 @@ This Prayer is in the path of Nature, and may be extra potent depending on the P
 #details "The effects of the Prayer depend on the nation's chosen Pretender.
 Only one Prayer can be enacted per province per turn, and the Prayer will fail if the province does not have a temple or is under siege.
 This Prayer is in the path of Glamour, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 2
 #path 0 7
 #pathlevel 0 1
@@ -139222,7 +142408,6 @@ This Prayer is in the path of Glamour, and may be extra potent depending on the 
 #nreff 1
 #provrange 0
 #spec 8388608 -- UWOK
-#restricted 15 -- EA Agartha
 #nextspell 4007
 #godpathspell 7
 #end
@@ -139234,7 +142419,7 @@ This Prayer is in the path of Glamour, and may be extra potent depending on the 
 #details "The effects of the Prayer depend on the nation's chosen Pretender.
 Only one Prayer can be enacted per province per turn, and the Prayer will fail if the province does not have a temple or is under siege.
 This Prayer is in the path of Blood, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 2
 #path 0 8
 #pathlevel 0 1
@@ -139246,7 +142431,6 @@ This Prayer is in the path of Blood, and may be extra potent depending on the Pr
 #nreff 1
 #provrange 0
 #spec 8388608 -- UWOK
-#restricted 15 -- EA Agartha
 #nextspell 4008
 #godpathspell 8
 #end
@@ -139368,7 +142552,7 @@ This Prayer is in the path of Blood, and may be extra potent depending on the Pr
 #details "The effects of the Great Prayer depend on the nation's chosen Pretender.
 Only one Great Prayer can be enacted per province per turn, and the Great Prayer will fail if the province does not have a temple or is under siege.
 This Great Prayer is in the path of Fire, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 3
 #path 0 0
 #pathlevel 0 1
@@ -139380,7 +142564,6 @@ This Great Prayer is in the path of Fire, and may be extra potent depending on t
 #nreff 1
 #provrange 0
 #spec 8388608 -- UWOK
-#restricted 15 -- EA Agartha
 #onlyatsite 2325 -- Altar of Great Prayer
 #nextspell 4010
 #end
@@ -139392,7 +142575,7 @@ This Great Prayer is in the path of Fire, and may be extra potent depending on t
 #details "The effects of the Great Prayer depend on the nation's chosen Pretender.
 Only one Great Prayer can be enacted per province per turn, and the Great Prayer will fail if the province does not have a temple or is under siege.
 This Great Prayer is in the path of Air, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 3
 #path 0 1
 #pathlevel 0 1
@@ -139405,7 +142588,6 @@ This Great Prayer is in the path of Air, and may be extra potent depending on th
 #provrange 0
 #spec 8388608 -- UWOK
 #onlyatsite 2325 -- Altar of Great Prayer
-#restricted 15 -- EA Agartha
 #nextspell 4011
 #end
 
@@ -139416,7 +142598,7 @@ This Great Prayer is in the path of Air, and may be extra potent depending on th
 #details "The effects of the Great Prayer depend on the nation's chosen Pretender.
 Only one Great Prayer can be enacted per province per turn, and the Great Prayer will fail if the province does not have a temple or is under siege.
 This Great Prayer is in the path of Water, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 3
 #path 0 2
 #pathlevel 0 1
@@ -139429,7 +142611,6 @@ This Great Prayer is in the path of Water, and may be extra potent depending on 
 #provrange 0
 #spec 8388608 -- UWOK
 #onlyatsite 2325 -- Altar of Great Prayer
-#restricted 15 -- EA Agartha
 #nextspell 4012
 #end
 
@@ -139440,7 +142621,7 @@ This Great Prayer is in the path of Water, and may be extra potent depending on 
 #details "The effects of the Great Prayer depend on the nation's chosen Pretender.
 Only one Great Prayer can be enacted per province per turn, and the Great Prayer will fail if the province does not have a temple or is under siege.
 This Great Prayer is in the path of Earth, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 3
 #path 0 3
 #pathlevel 0 1
@@ -139453,7 +142634,6 @@ This Great Prayer is in the path of Earth, and may be extra potent depending on 
 #provrange 0
 #spec 8388608 -- UWOK
 #onlyatsite 2325 -- Altar of Great Prayer
-#restricted 15 -- EA Agartha
 #nextspell 4013
 #end
 
@@ -139464,7 +142644,7 @@ This Great Prayer is in the path of Earth, and may be extra potent depending on 
 #details "The effects of the Great Prayer depend on the nation's chosen Pretender.
 Only one Great Prayer can be enacted per province per turn, and the Great Prayer will fail if the province does not have a temple or is under siege.
 This Great Prayer is in the path of Astral, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 3
 #path 0 4
 #pathlevel 0 1
@@ -139477,7 +142657,6 @@ This Great Prayer is in the path of Astral, and may be extra potent depending on
 #provrange 0
 #spec 8388608 -- UWOK
 #onlyatsite 2325 -- Altar of Great Prayer
-#restricted 15 -- EA Agartha
 #nextspell 4014
 #end
 
@@ -139488,7 +142667,7 @@ This Great Prayer is in the path of Astral, and may be extra potent depending on
 #details "The effects of the Great Prayer depend on the nation's chosen Pretender.
 Only one Great Prayer can be enacted per province per turn, and the Great Prayer will fail if the province does not have a temple or is under siege.
 This Great Prayer is in the path of Death, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 3
 #path 0 5
 #pathlevel 0 1
@@ -139501,7 +142680,6 @@ This Great Prayer is in the path of Death, and may be extra potent depending on 
 #provrange 0
 #spec 8388608 -- UWOK
 #onlyatsite 2325 -- Altar of Great Prayer
-#restricted 15 -- EA Agartha
 #nextspell 4015
 #end
 
@@ -139512,7 +142690,7 @@ This Great Prayer is in the path of Death, and may be extra potent depending on 
 #details "The effects of the Great Prayer depend on the nation's chosen Pretender.
 Only one Great Prayer can be enacted per province per turn, and the Great Prayer will fail if the province does not have a temple or is under siege.
 This Great Prayer is in the path of Nature, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 3
 #path 0 6
 #pathlevel 0 1
@@ -139525,7 +142703,6 @@ This Great Prayer is in the path of Nature, and may be extra potent depending on
 #provrange 0
 #spec 8388608 -- UWOK
 #onlyatsite 2325 -- Altar of Great Prayer
-#restricted 15 -- EA Agartha
 #nextspell 4016
 #end
 
@@ -139536,7 +142713,7 @@ This Great Prayer is in the path of Nature, and may be extra potent depending on
 #details "The effects of the Great Prayer depend on the nation's chosen Pretender.
 Only one Great Prayer can be enacted per province per turn, and the Great Prayer will fail if the province does not have a temple or is under siege.
 This Great Prayer is in the path of Glamour, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 3
 #path 0 7
 #pathlevel 0 1
@@ -139549,7 +142726,6 @@ This Great Prayer is in the path of Glamour, and may be extra potent depending o
 #provrange 0
 #spec 8388608 -- UWOK
 #onlyatsite 2325 -- Altar of Great Prayer
-#restricted 15 -- EA Agartha
 #nextspell 4017
 #end
 
@@ -139560,7 +142736,7 @@ This Great Prayer is in the path of Glamour, and may be extra potent depending o
 #details "The effects of the Great Prayer depend on the nation's chosen Pretender.
 Only one Great Prayer can be enacted per province per turn, and the Great Prayer will fail if the province does not have a temple or is under siege.
 This Great Prayer is in the path of Blood, and may be extra potent depending on the Pretender."
-#school 5 -- thaum
+#school -1
 #researchlevel 3
 #path 0 8
 #pathlevel 0 1
@@ -139573,7 +142749,6 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #provrange 0
 #spec 8388608 -- UWOK
 #onlyatsite 2325 -- Altar of Great Prayer
-#restricted 15 -- EA Agartha
 #nextspell 4018
 #end
 
@@ -143239,6 +146414,183 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #spec 545783808  -- No effect on Lifeless, UWOK, No undead
 #nextspell 2131
 #end
+
+#selectspell 4255
+#copyspell 935 -- Pack of Wolves
+#name "Summon Bugbears"
+#descr "The caster travels to the edge of civilization to locate and bind a group of bugbears. The Bugbear is a monstrous being of the dreamwild that can take the appearance of what monster may frighten them most, though those who can see through illusions will not be fooled. It is believed they are formed from the nightmares of children and parents will often try to keep their children indoors when one is sighted. Their touch is known to frighten the cowardly into unconsciousness or even death."
+#researchlevel 4
+#path 0 7
+#pathlevel 0 2
+#nreff 504
+#fatiguecost 600
+#damage 9097 -- Bugbear
+#end
+
+#selectspell 4256
+#copyspell 935 -- Pack of Wolves
+#name "Summon Twilit Beasts"
+#descr "The caster travels to the edge of civilization to locate and bind a group of Twilit Beasts, monstrous animals of the dreamwild sometimes seen skulking in the wilderness during the twilight hours. They will often abduct cattle and people alike in the night before returning to the dreamwild to devour them, never to be found afterward. Twilit Beasts come cloaked in glamour and illusions, and draw power from the dark of night."
+#researchlevel 6
+#path 0 7
+#pathlevel 0 3
+#nreff 1007 -- 10+
+#fatiguecost 1600
+#damage 9098 -- Twilit Beast
+#end
+
+#selectspell 4257
+#copyspell 935 -- Pack of Wolves
+#name "Summon Jabberwocky"
+#descr "The caster travels to the dreamwild and draws out the Jabberwocky, a dragon of the dreamwilds seldom seen in the world. The Jabberwocky's origins are completely unknown and their existence unnatural, so much so that their presence will cause confusion and outbursts in those around them as they try to make sense of the monster. Jabberwocky can reputedly only be killed with weapons of iron or the legendary vorpal blade."
+#researchlevel 8
+#path 0 7
+#pathlevel 0 5
+#path 1 0
+#pathlevel 1 3
+#nreff 1
+#effect 10021
+#fatiguecost 5000
+#damage 9099 -- Jabberwocky
+#end
+
+#selectspell 4258
+#copyspell 935 -- Pack of Wolves
+#name "Summon Firestarters"
+#descr "The caster travels to the edge of civilization to locate and bind a group of Firestarters, malign fay goblins of the dreamwild sometimes seen in bands roaming the edge of civilization. They carry torches with which they can start fires in the wilderness and sometimes even catch people's homes and villages in the blaze. They usually appear in the summer when the land is at its warmest. Like all fay, they are vulnerable to iron and cloaked in glamour."
+#researchlevel 5
+#path 0 7
+#pathlevel 0 2
+#path 1 0
+#pathlevel 1 2
+#nreff 1013 -- 15+
+#fatiguecost 900
+#damage 9100 -- Firestarter
+#end
+
+#selectspell 4259
+#copyspell 935 -- Pack of Wolves
+#name "Summon Water Horse"
+#descr "The caster travels to a river and conjures a Water Horse, a being formed of pure water into the shape of a horse. They usually reside in the seas of the dreamwild but can occasionally be found galloping along rivers. Mages may pull them from the dreamwild where they may be used to crush enemies under their hooves."
+#researchlevel 4
+#path 0 2
+#pathlevel 0 3
+#path 1 7
+#pathlevel 1 1
+#nreff 1003 -- 6+
+#fatiguecost 800
+#damage 9101 -- Water Horse
+#spec 8388608  -- UW OK
+#end
+
+#selectspell 4260
+#copyspell 935 -- Pack of Wolves
+#name "Summon Shambling Walker"
+#descr "The caster gathers a collection of bones and assembles them into a Shambling Walker, an undead construct imbued with false life. They are surrounded by the chill of death and their touch will bring starvation to the living."
+#school 4 -- ench
+#researchlevel 5
+#path 0 5
+#pathlevel 0 2
+#path 1 7
+#pathlevel 1 1
+#nreff 1003 -- 5+
+#fatiguecost 500
+#damage 9102 -- Shambling Walker
+#end
+
+#selectspell 4261
+#copyspell 935 -- Pack of Wolves
+#name "Summon Bogeyman"
+#descr "The caster summons and binds the Bogeyman, a monster of the dreamwild known by many names throughout the world that roams the edges of civilization in search of children to abduct. They appear as a dark mass with sharp teeth and are capable of hiding their appearance entirely and will sometimes find their way into homes and under beds. It is believed they only hunt children that have misbehaved, and will often linger for days to terrify their victims before abduction. They are a personification of terror and anyone near them will feel a nauseating fear build up throughout their body. They can put the others to sleep around them when they wish and abduct by entering people whole into the black mass through their teeth where they will be trapped for the Bogeyman to do as it pleases with them. The presence of the Bogeyman will greatly increase unrest and bring great misfortune upon the province in which they dwell."
+#researchlevel 6
+#path 0 7
+#pathlevel 0 4
+#path 1 5
+#pathlevel 1 3
+#nreff 1
+#effect 10021
+#fatiguecost 3500
+#damage 9103 -- Bogeyman
+#end
+
+#selectspell 4262
+#copyspell 935 -- Pack of Wolves
+#name "Summon Hag"
+#descr "The caster travels into the dreamwild in search of a Hag to make a bargain with. Hags are witches of the dreamwild proficient in the magic of the fay. Some believe they are humans that travelled there personally, some believe they made a pact with a powerful fay, some believe they were brought there as a child, and others believe they were created from the dreams and fears of the common people. Whatever the case, each is different in their own right, and they will just as often be found stirring a cauldron of human flesh as they will cure anyone of their ailments."
+#researchlevel 6
+#path 0 7
+#pathlevel 0 3
+#path 1 6
+#pathlevel 1 1
+#nreff 1
+#effect 10021
+#fatiguecost 2500
+#damage 9104 -- Hag
+#end
+
+#selectspell 4263
+#copyspell 935 -- Pack of Wolves
+#name "Hollow Lord"
+#descr "Hollow Lords are manifestations of the harvest season and harbingers of the coming winter. They are normally benign beings, however unscrupulous mages may bind them to scarecrows and corrupt them with blood sacrifice into a terrifying being that will reap human souls instead of crops. They are often surrounded by black birds and carry a scythe with which they may harvest people and turn them into scarecrow servants. They draw power from the Fall and will be more efficient at blood hunting during those months."
+#researchlevel 6
+#school 6
+#path 0 8
+#pathlevel 0 3
+#path 1 7
+#pathlevel 1 2
+#nreff 1
+#effect 10021
+#fatiguecost 6600
+#damage 9105 -- Hollow Lord
+#end
+
+#selectspell 4264
+#copyspell 935 -- Pack of Wolves
+#name "Hollow Lord"
+#descr "The caster spills a great quantity of blood in the middle of a farming field to draw the Harvester, the original and most power of the Hollow Lords, and make a pact with him. The Harvester is an ancient demonic being of the dreamwild that takes the appearance of a scarecrow riding atop a dark steed wielding a great scythe with which he may harvest the souls of those he cuts down with it. He draws power from the Fall and will be more efficient at blood hunting during those months."
+#researchlevel 7
+#school 6
+#path 0 8
+#pathlevel 0 4
+#path 1 7
+#pathlevel 1 2
+#nreff 1
+#effect 10021
+#fatiguecost 9900
+#damage 9108 -- Harvester
+#end
+
+#selectspell 4265
+#copyspell 935 -- Pack of Wolves
+#name "Craft Poppets"
+#descr "The caster crafts a few Poppets from leather, sticks, cloth, and rope, places a curse on every stitch and strand, and finally uses the hair of blood sacrifices to complete the final stitch. Poppets are not particularly strong, but any damage visited upon them will be returned to the attacker and simply handling one is dangerous. Destroying one will result in being cursed for life and locking them away forever is the only known safe way to dispose of them. More powerful mages can craft quicker, however the process is labor intensive and only a handful can be created at a time."
+#researchlevel 5
+#school 6
+#path 0 8
+#pathlevel 0 2
+#path 1 7
+#pathlevel 1 1
+#nreff 502
+#fatiguecost 800
+#damage 9110 -- Poppet
+#end
+
+#selectspell 4266
+#copyspell 935 -- Pack of Wolves
+#name "Water Weirds"
+#descr "The caster summons a few Water Weirds. These elemental guardians are formed of water and are often assigned to protect important individuals. They are difficult to harm and will quickly reform if damaged."
+#researchlevel 3
+#path 0 2
+#pathlevel 0 1
+#path 1 7
+#pathlevel 1 1
+#damage 7812 -- Weird
+#nreff 504
+#fatiguecost 300
+#spec 8388608  -- UW OK
+#end
+
+
 
 
 -- END OF NEW SPELLS
