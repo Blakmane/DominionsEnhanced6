@@ -55675,6 +55675,28 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #polyimmune
 #end
 
+#newmonster 7288
+#copystats 2534  -- Dragon (Red)
+#copyspr 2534  -- Dragon (Red)
+--#spr1 "magicenhanced/eereddragon.tga"
+--#spr2 "magicenhanced/eereddragon2.tga"
+#clearmagic
+#name "Transformed Dragon"
+#descr "This is a mage transformed into the form of a powerful Dragon by magic. The body of the Dragon will be strong and protected by iron hard scales, and the creature can breathe fire. Dragons have voracious appetites and will eat as much as twenty men. The Dragon will retain any magic skills learned before the transformation took place, and Fire magic will be easier whilst in Dragon form whilst that of other paths will be more difficult. Drakes and lesser draconic beings will be summoned in greater numbers when summoned by a mage in dragon form."
+#lizard
+#supplybonus -20
+#gcost 0
+#prot 20
+#noleader
+#mor 16
+#hp 125
+#dragonlord 2
+#magicboost 0 2
+#magicboost 53 -1
+#twiceborn 7223 -- Dracowight
+#end
+
+
 
 
 -- END OF NEW MONSTERS (Skip 8700~8818, 8900~9000 and 9600~9650)
@@ -142773,7 +142795,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #selectspell 3970 -- Summon Red Dragon
 #copyspell 1036 -- Summon Spectre
 #name "Awaken Fire Dragon"
-#descr "Dragons of fire are common in some northern lands. Few dragons remain after the reign of the last Pantokrator, and of those that do most have lain dormant in sleep for millenia. With this spell the caster may travel to the den of such a creature and awaken it from its long slumber, promising it wealth and power in exchange for service."
+#descr "Dragons of fire are common in some lands of the North. Few dragons remain after the reign of the last Pantokrator, and of those that do most have lain dormant in sleep for millenia. With this spell the caster may travel to the den of such a creature and awaken it from its long slumber, promising it wealth and power in exchange for service."
 #school 0
 #researchlevel 6
 #path 0 0
@@ -146353,7 +146375,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #damage -1011
 #nreff 1
 #nextspell 3756
-#spec 545783808  -- No effect on Lifeless
+#spec 537395200  -- No effect on Lifeless
 #end
 
 #selectspell 2258
@@ -146386,6 +146408,22 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #fatiguecost 2500
 #spec 545914880  -- (no undead, lifeless, mindless, UW OK)
 #nextspell 3756
+#end
+
+#selectspell 3790
+#name "Become Dragon"
+#descr "The caster attempts to permanently transform themselves into the form of a great Red Dragon. If successful the new body will be healthy and will retain the mind of the mage. The Dragon will retain any magic skills learned before the transformation took place, and Fire magic will be easier whilst in Dragon form. Inanimate beings cannot change their form in this manner, and some especially powerful unique beings will resist attempts to change their form and cannot be affected."
+#details "Afflictions are not healed, Dragon gains +1F boost but -1 to non F paths."
+#school 1
+#researchlevel 7
+#path 0 0
+#pathlevel 0 4
+#effect 10130
+#fatiguecost 3500
+#damage 7288 -- Transformed Dragon
+#nreff 1
+#nextspell 3756
+#spec 537395200  -- No effect on Lifeless, undead
 #end
 
 #selectspell 4253
@@ -151868,7 +151906,11 @@ This will also prevent their skin from drying out."
 #name "Mechanical Owl"
 #spr "magicenhanced/eeiowl.tga"
 #descr "The Titan Athena is always accompanied by a faithful owl. The mage engineers of Arcoscephale have learnt to build golden replicas of this creature to aid them. The owl will use its metal body to block incoming attacks and will strike at the foes of its owner."
-#weapon 230  -- Owl
+#danceweapon 230  -- Owl
+#dancenratt 1
+#dancespr 141 -- Swirl of some kind
+#dancenof 1
+#dancesize 100
 #restricted 5  -- EA Arco
 #end
 
