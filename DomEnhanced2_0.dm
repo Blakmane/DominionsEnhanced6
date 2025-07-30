@@ -185,6 +185,7 @@
 #cost0 6 -- 8 -> 6
 #end
 
+#gemlongevity 2
 
 
 #newweapon 1501
@@ -155654,6 +155655,20 @@ This will also prevent their skin from drying out."
 #notext
 #end
 
+
+-- Small cave pop increase
+
+#newevent
+#rarity 5
+#req_pregame 1
+#req_capital 0
+#req_cave 1
+#req_indepok 1
+#incpop 50
+#msg "50 pops"
+#nolog
+#notext
+#end
 
 
 -- START OF INFORMATIVE SEARCH EVENTS
