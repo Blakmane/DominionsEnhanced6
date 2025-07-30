@@ -150551,7 +150551,7 @@ Can only be cast once per combat round."
 #descr "These magical pipes will instill great fear in enemies that hear its terrible wail in battle. Any spells cast whilst piping will take longer to cast but will be less fatiguing to the caster."
 #constlevel 5
 #type 2
-#mainpath 6
+#mainpath 7
 #mainlevel 1
 #secondarypath 5
 #secondarylevel 1
@@ -150560,6 +150560,8 @@ Can only be cast once per combat round."
 #spell "Panic"
 #weapon 92
 #restricted 58 -- Eriu
+#itemcost1 -40
+#itemcost2 -40
 #end
 
 #selectitem 673
@@ -150568,7 +150570,7 @@ Can only be cast once per combat round."
 #descr "These magical pipes will instill great fervour in those under the pipers control in battle. They can perform battle songs of old to further boost the morale of nearby troops. Any spells cast whilst piping will take longer to cast but will be less fatiguing to the caster."
 #constlevel 5
 #type 2
-#mainpath 6
+#mainpath 7
 #mainlevel 1
 #secondarypath 1
 #secondarylevel 1
@@ -150577,6 +150579,8 @@ Can only be cast once per combat round."
 #weapon 92
 #spell "Sermon of Courage"
 #restricted 58 -- Eriu
+#itemcost1 -40
+#itemcost2 -40
 #end
 
 #selectitem 674
@@ -150602,7 +150606,7 @@ Can only be cast once per combat round."
 #constlevel 7
 #mainpath 2
 #mainlevel 3
-#secondarypath 6
+#secondarypath 7
 #secondarylevel 1
 #autospell "Divine Blessing"
 #type 8  -- Misc
@@ -151722,10 +151726,10 @@ Can only be cast once per combat round."
 #constlevel 7
 #mainpath 4
 #mainlevel 4
-#secondarypath 5
-#secondarylevel 1
+#secondarypath 7
+#secondarylevel 4
 #type 8
-#tainted 15
+#tainted 30
 #restricted 89 -- MA R'lyeh
 #restricted 127 -- LA R'lyeh
 #spell "Haunter of the Dark"
@@ -151770,7 +151774,7 @@ Can only be cast once per combat round."
 #cursed
 #nofind
 #command 100
-#taskmaster 1
+#taskmaster 4
 #restricted 44 -- EA Rlyeh
 #restricteditem 8  -- Aboleths
 #end
@@ -151905,7 +151909,8 @@ This will also prevent their skin from drying out."
 #mainpath 4
 #mainlevel 2
 #type 8
-#nobadevents 15
+#nobadevents 50
+#twistfate
 #restricteditem 10
 #restricted 50 -- MA Arco
 #end
@@ -152009,10 +152014,10 @@ This will also prevent their skin from drying out."
 #constlevel 5
 #mainpath 6
 #mainlevel 1
-#itemcost1 -20
+#itemcost1 -40
 #secondarypath 5
 #secondarylevel 1
-#itemcost2 -20
+#itemcost2 -40
 #type 8
 #magiccommand 1
 #battlesum1 2223  -- Large Spider
@@ -152134,7 +152139,7 @@ This will also prevent their skin from drying out."
 #constlevel 9
 #mainpath 3
 #mainlevel 3
-#secondarypath7
+#secondarypath 7
 #secondarylevel 3
 #itemcost1 -50
 #itemcost2 -50
@@ -152153,7 +152158,7 @@ This will also prevent their skin from drying out."
 #descr "This longbow is so accurate that it can fire many leagues and will still find its target. The bearer can even fire into a neighbouring province and the arrow will strike an enemy commander located there."
 #constlevel 7
 #mainpath 1
-#secondarypath 6
+#secondarypath 7
 #mainlevel 2
 #secondarylevel 1
 #type 2
@@ -154801,6 +154806,14 @@ This will also prevent their skin from drying out."
 #itemcost1 -90
 #waterbreathing
 #landdamage -10
+#end
+
+#selectitem 326 -- Flying Ointment
+#itemcost1 -50
+#end
+
+#selectitem 477 -- Windcatcher Sail
+#itemcost1 -50
 #end
 
 #selectitem 345 -- Gossamer Cloth
