@@ -83586,10 +83586,23 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 331  -- Illithid
+#descr "Illithids are members of a once great race from a distant star. The body of an Illithid resembles a pink mass of writhing tentacles. They cover their bodies in robes made of strange flowing materials. Their heads are squidlike, with tentacles where their mouths should be. The mere touch of an Illithid sucks the life force out of living beings. Illithids are mentally powerful beings, able to paralyze enemies by sheer strength of mind. The soldiers and lords of the race are equipped with plate cuirass and tridents. All Illithids are amphibious. Cost 36 RP."
 #clearweapons
 #weapon 1842 -- 'Elite Troop' Mind Blast
 #weapon 63 -- life drain
 #gcost 10040
+#reclimit 3
+#rpcost 36
+#end
+
+
+#selectmonster 407  -- Illithid Soldier
+#descr "Illithids are members of a once great race from a distant star. The body of an Illithid resembles a pink mass of writhing tentacles. They cover their bodies in robes made of strange flowing materials. Their heads are squidlike, with tentacles where their mouths should be. The mere touch of an Illithid sucks the life force out of living beings. Illithids are mentally powerful beings, able to paralyze enemies by sheer strength of mind. The soldiers and lords of the race are equipped with plate cuirass and tridents. All Illithids are amphibious. Cost 41 RP."
+#clearweapons
+#weapon 1842 -- 'Elite Troop' Mind Blast
+#weapon 642 -- Meteorite Trident
+#reclimit 3
+#rpcost 41
 #end
 
 
@@ -83826,13 +83839,6 @@ Initiates of the Deep can be recruited in any land fort."
 #selectmonster 405  -- Vampire
 #magicskill 8 1 -- 1B
 #custommagic 4096 50  -- 50%D
-#end
-
-
-#selectmonster 407  -- Illithid Soldier
-#clearweapons
-#weapon 1842 -- 'Elite Troop' Mind Blast
-#weapon 642 -- Meteorite Trident
 #end
 
 #selectmonster 414  -- Wingless
@@ -86520,11 +86526,12 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 1403  -- Gibboleth
 #descr "Aboleths are ancient beings sprung from the depths of the ocean. They resemble huge, mud-crawling fish with tentacles and large, dark eyes covering their foreheads. The Giboleth is a young Aboleth that has survived its spawn age and grown independent of its Polypal Mother. It has begun to shed its scales, but its hide is still thick and dark. The Giboleth is beginning to develop the strength of mind characteristic of the race and it can project its will on lesser beings. Should it survive for some centuries, it will shed the last of its scales and become a full grown Aboleth, able to dominate other beings. A Giboleth fights with the strength of its mind and its tentacles.
-Giboleths can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
+Giboleths can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification. Cost 41 RP."
 #landshape 12010
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
 #montag 1048
+#reclimit 3
 #clearweapons
 #weapon 1842 -- 'Elite Troop' Mind Blast
 #weapon 85 -- Tentacle
@@ -86698,11 +86705,12 @@ Mind Lords can travel on land, but doing so will dry out their skin and eventual
 
 #selectmonster 1522  -- Gibodai
 #descr "When nurtured by the Polypal Mothers, some spawn get a different kind of nutrition. Whether this is caused by an act of will or randomness is not known, because the Mothers do not speak, they only scream. The spawn are given special care and soon develop a bond with their Mother. Small tentacles sprout around their mouths and they use them to search the ocean floor for life force needed by the Mothers. The Gibodai consume life force and accumulate it for their Mothers. Some suspect that the Gibodai and their ability to steal and carry life force is the key to the power of the Aboleths. Gibodai and their task are sacred to the Aboleths.
-Gibodai can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
+Gibodai can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification. Cost 41 RP."
 #landshape 12014
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
 #montag 1048
+#reclimit 3
 #end
 
 #selectmonster 1536  -- Anointed of Rhuax
@@ -115393,7 +115401,7 @@ Priests: Strong"
 #descr "Ongtupqa is a land of high mesas and deep canyons inhabited by a hardy race of men. Recently warriors from across the seas appeared and for a time the nation languished under their yoke. However, with the awakening of a new God and the return of the prophesied White Brother the people have expelled the pale invaders. Now the nation mobilises for a cleansing war to bring fire to the lands of their oppressors. The armies of Ongtupqa are composed of fierce tribal warriors. Sacred dancers wear the masks and garments of the Kátsina and are imbued with their divine spirits in battle."
 #summary "Race: Humans. Prefers Heat Scale +2
 Military: Light infantry and archers, sacred Kátsina Dancers and powerful sacred summons.
-Magic: Fire, Air, Water, Earth, Death, Nature, and Glamour, very little Astral.
+Magic: Fire, Air, Water, Earth, Death, Nature, and Glamour.
 Priests: Strong"
 #brief "Ongtupqa is a tribal nation of fierce warriors lead by mage-priests. Their sacred Kátsina Dancers receive special powers from divine spirits."
 #color 0.3 0.5 1
@@ -118506,6 +118514,9 @@ Priests: Average"
 
 #caverec 2492 -- Great Olm
 #cavecom 2493 -- olm sage
+
+#uwcom 1460 -- earth reader
+#uwcom 2491 -- engraver
 
 #futuresite "EA Agartha Summons"
 #futuresite "EA Agartha Heroes"
