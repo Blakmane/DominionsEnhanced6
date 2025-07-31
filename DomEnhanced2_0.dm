@@ -4359,6 +4359,10 @@
 #att 2
 #end
 
+#selectweapon 45 -- Coral Club
+#pierce
+#end
+
 #newarmor 501
 #name "Magic Shield"
 #type 4
@@ -4990,6 +4994,11 @@
 
 #selectarmor 206  -- Obsidian Cuirass
 #rcost 16
+#end
+
+#selectarmor 114 -- Turtle Shell Hauberk
+#prot 10
+#def -1
 #end
 
  -- Barding changes
@@ -36565,7 +36574,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "magicenhanced/swarriort.tga"
 #spr2 "magicenhanced/swarriort2.tga"
 #name "Sahuagin Warrior"
-#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they dislike the harsh sunlight and dry air."
+#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they are weakened by the harsh sunlight and dry air."
 #humanoid
 #hp 15
 #size 3
@@ -36597,7 +36606,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "magicenhanced/swarriort.tga"
 #spr2 "magicenhanced/swarriort2.tga"
 #name "Sahuagin Warrior"
-#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they dislike the harsh sunlight and dry air."
+#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they are weakened by the harsh sunlight and dry air."
 #humanoid
 #hp 15
 #size 3
@@ -36630,7 +36639,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "magicenhanced/swarriorssn.tga"
 #spr2 "magicenhanced/swarriorssn2.tga"
 #name "Sahuagin Warrior"
-#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they dislike the harsh sunlight and dry air."
+#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they are weakened by the harsh sunlight and dry air."
 #humanoid
 #hp 15
 #size 3
@@ -36950,7 +36959,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "magicenhanced/swarriorssn.tga"
 #spr2 "magicenhanced/swarriorssn2.tga"
 #name "Sahuagin Warrior"
-#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they dislike the harsh sunlight and dry air."
+#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they are weakened by the harsh sunlight and dry air."
 #humanoid
 #hp 15
 #size 3
@@ -39427,9 +39436,9 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "magicenhanced/swarriort.tga"
 #spr2 "magicenhanced/swarriort2.tga"
 #name "Sahuagin"
-#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they dislike the harsh sunlight and dry air."
+#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they are weakened by the harsh sunlight and dry air."
 #humanoid
-#gcost 20
+#gcost 16
 #rpcost 18
 #hp 15
 #size 3
@@ -39460,9 +39469,9 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "magicenhanced/swarriort.tga"
 #spr2 "magicenhanced/swarriort2.tga"
 #name "Sahuagin"
-#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they dislike the harsh sunlight and dry air."
+#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they are weakened by the harsh sunlight and dry air."
 #humanoid
-#gcost 20
+#gcost 16
 #rpcost 18
 #hp 15
 #size 3
@@ -39494,9 +39503,9 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "magicenhanced/swarriorssn.tga"
 #spr2 "magicenhanced/swarriorssn2.tga"
 #name "Sahuagin Hunter"
-#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they dislike the harsh sunlight and dry air."
+#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they are weakened by the harsh sunlight and dry air."
 #humanoid
-#gcost 18
+#gcost 14
 #rpcost 16
 #hp 15
 #size 3
@@ -39528,9 +39537,9 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "magicenhanced/swarriorssn.tga"
 #spr2 "magicenhanced/swarriorssn2.tga"
 #name "Sahuagin Hunter"
-#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they dislike the harsh sunlight and dry air."
+#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they are weakened by the harsh sunlight and dry air."
 #humanoid
-#gcost 18
+#gcost 14
 #rpcost 16
 #hp 15
 #size 3
@@ -39565,7 +39574,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Sahuagin Baron"
 #descr "Sahuagin follow the orders of their superiors according to a rigid societal hierarchy. A male called a Baron rules each village and punishes any that break the sacred laws. The Sahuagin are cruel and brutal, and their leaders are always the largest and strongest. Although they have little need for clothing, golden armbands or torcs are worn as a sign of wealth and power."
 #humanoid
-#gcost 10020
+#gcost 10016
 #rpcost 1
 #hp 18
 #size 3
@@ -39599,7 +39608,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Sahuagin Baron"
 #descr "Sahuagin follow the orders of their superiors according to a rigid societal hierarchy. A male called a Baron rules each village and punishes any that break the sacred laws. The Sahuagin are cruel and brutal, and their leaders are always the largest and strongest. Although they have little need for clothing, golden armbands or torcs are worn as a sign of wealth and power."
 #humanoid
-#gcost 10020
+#gcost 10016
 #rpcost 1
 #hp 18
 #size 3
@@ -61598,6 +61607,235 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 --ENDSUMMONS
+
+-- NEW INDIE UW SHAMANS AND RECRUITABLES (ID 9660-9680)
+
+#newmonster 9660 -- Kulullu Shaman
+#copystats 3089 -- Kulullu
+#spr1 "wateroverhaul/eekulullushaman.png"
+#spr2 "wateroverhaul/eekulullushaman2.png"
+#name "Kulullu Shaman"
+#descr "The Kulullus are an ancient race of strange beings whose bodies resemble a combination of Enkidu and fish. The Kulullus have lived in the seas near Ur since before the First City was founded and they claim to have founded the first kingdom underneath the waves. Sages believe that when U'an the Apkallu emerged from the sea to bring civilization to Ur he had already brought his gifts to the Kulullus. But war and strife brought by less peaceful beings almost destroyed the Kulullu kingdom. Kulullu myths claim that an apostle of U'an will one day arrive from dry land to rebuild the old Kulullu kingdom. Kulullu shamans maintain these oral traditions. They have skill in water magic, and occasionally in astral magic as well."
+#gcost 85
+#clearweapons
+#hp 25
+#att 9
+#def 8
+#mr 14
+#str 14
+#holy
+#float
+#morale 9
+#researchbonus -2
+#poormagicleader
+#armor 522 -- pearl cap
+#magicskill 2 1
+#custommagic 2048 20
+#end
+
+#newmonster 9661 -- Triton Shaman
+#copystats 3050 -- Triton Priest
+#spr1 "wateroverhaul/eetritonshaman.png"
+#spr2 "wateroverhaul/eetritonshaman2.png"
+#name "Turtle Tribe Shaman"
+#descr "Life underneath the waves corresponds in many ways to that on dry land. Both humans and animals have underwater counterparts. Tritons are the most common of the aquatic humanoids. They appear as humans with legs ending in fins. Triton tribes, like humans, often follow a totemic spirit. The Turtle Tribe Tritons mimic their totem and don armor made from turtle shells. Most tribal Tritons live separate from the Triton kingdom of Pelagia, but some have joined forces with the Triton Kings. Turtle Tribe Shamans have skill in water magic, and occasionally in nature magic as well."
+#gcost 70
+#clearmagic
+#clearweapons
+#poorleader
+#poormagicleader
+#float
+#weapon 7 -- quarterstaff
+#researchbonus -4
+#magicskill 2 1
+#custommagic 8192 20
+#end
+
+#newmonster 9662 -- Merman Shaman
+#copystats 1696 -- Merman Priest
+#spr1 "wateroverhaul/eemermanshaman.png"
+#spr2 "wateroverhaul/eemermanshaman2.png"
+#name "Merman Shaman"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Merman Shamans have skill in water magic, and occasionally in air magic as well."
+#gcost 75
+#clearmagic
+#clearweapons
+#poorleader
+#poormagicleader
+#float
+#weapon 7 -- quarterstaff
+#researchbonus -4
+#magicskill 2 1
+#custommagic 256 20
+#landshape 9663
+#end
+
+#newmonster 9663 -- Merman Shaman (Land)
+#copystats 1697 -- Merman Priest
+#spr1 "wateroverhaul/eemermanshamanland.png"
+#spr2 "wateroverhaul/eemermanshamanland2.png"
+#name "Merman Shaman"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Merman Shamans have skill in water magic, and occasionally in air magic as well."
+#gcost 75
+#clearmagic
+#clearweapons
+#poorleader
+#poormagicleader
+#weapon 7 -- quarterstaff
+#researchbonus -4
+#magicskill 2 1
+#custommagic 256 20
+#watershape 9662
+#end
+
+#newmonster 9664 -- Sahuagin Shaman
+#copystats 7988 -- Sahuagin
+#spr1 "wateroverhaul/eesahuaginshaman.png"
+#spr2 "wateroverhaul/eesahuaginshaman2.png"
+#name "Sahuagin Shaman"
+#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they are weakened by the harsh sunlight and dry air. Sahuagin Shamans have skill in water magic, and occasionally in the blood magic of sharks as well."
+#gcost 80
+#hp 13
+#att 10
+#def 10
+#mr 13
+#str 11
+#morale 9
+#clearmagic
+#clearweapons
+#poorleader
+#poormagicleader
+#holy
+#weapon 1579 -- Bite
+#weapon 1577 -- Shark-Tooth Dagger
+#researchbonus -4
+#magicskill 2 1
+#custommagic 36864 20
+#landshape 9665
+#end
+
+#newmonster 9665 -- Sahuagin Shaman (land)
+#copystats 7989 -- Sahuagin
+#spr1 "wateroverhaul/eesahuaginshaman.png"
+#spr2 "wateroverhaul/eesahuaginshaman2.png"
+#name "Sahuagin Shaman"
+#descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they are weakened by the harsh sunlight and dry air. Sahuagin Shamans have skill in water magic, and occasionally in blood or death magic as well."
+#gcost 80
+#hp 13
+#att 8
+#def 8
+#mr 13
+#str 9
+#morale 9
+#clearmagic
+#clearweapons
+#poorleader
+#poormagicleader
+#holy
+#weapon 1579 -- Bite
+#weapon 1577 -- Shark-Tooth Dagger
+#researchbonus -4
+#magicskill 2 1
+#custommagic 36864 20
+#watershape 9664
+#end
+
+#newmonster 9666 -- Shambler Shaman
+#copystats 206 -- Shambler
+#spr1 "wateroverhaul/eeshamblershaman.png"
+#spr2 "wateroverhaul/eeshamblershaman2.png"
+#name "Shambler Shaman"
+#descr "Shamblers are Atlantians grown to huge proportions. They use claws or clubs made from Atlantian coral in combat and do not normally don armor since it tends to be cumbersome. Shambler Shamans are the religious leaders of isolated Atlantian tribes. They have skill in water magic, and occasionally in earth magic as well."
+#gcost 85
+#mr 13
+#clearmagic
+#clearweapons
+#poormagicleader
+#holy
+#weapon 12 -- Mace
+#researchbonus -4
+#magicskill 2 1
+#custommagic 1024 20
+#end
+
+#selectmonster 1700 -- Shambler Chief
+#weapon 29 -- Claw
+#end
+
+#newmonster 9667 -- Merman Warrior
+#copystats 1065 -- Merman
+#spr1 "wateroverhaul/eemermanwarrior.png"
+#spr2 "wateroverhaul/eemermanwarrior2.png"
+#name "Merman Warrior"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Merman Warriors fight with coral spears and shields."
+#armor 25 -- Turtle Shell Shield
+#armor 188 -- Sharkskin Cuirass
+#landshape 9668
+#float
+#end
+
+#newmonster 9668 -- Merman Warrior
+#copystats 1065 -- Merman
+#spr1 "wateroverhaul/eemermanwarriorland.png"
+#spr2 "wateroverhaul/eemermanwarriorland2.png"
+#name "Merman Warrior"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Merman Warriors fight with coral spears and shields."
+#armor 25 -- Turtle Shell Shield
+#armor 188 -- Sharkskin Cuirass
+#landshape 9667
+#end
+
+#newmonster 9669 -- Shambler Warrior
+#copystats 206 -- Shambler
+#spr1 "wateroverhaul/eeshamblerwarrior.png"
+#spr2 "wateroverhaul/eeshamblerwarrior2.png"
+#name "Shambler Warrior"
+#descr "Shamblers are Atlantians grown to huge proportions. They use claws or clubs made from Atlantian coral in combat and do not normally don armor since it tends to be cumbersome. The shamblers have lived long enough to grow accustomed to the comforts of life and do not join armies unless generously paid. Shamblers are very strong and do not fear shorter beings."
+#clearweapons
+#gcost 10022
+#weapon 45 -- Coral Club
+#armor 25 -- Turtle Shell Shield
+#end 
+
+-- Water Poptype changes
+
+#selectpoptype 57  -- Atlanteans
+#addreccom 432  -- Atlantean Scout
+#addrecunit 9669 -- Shambler Warrior
+#end
+
+#selectpoptype 72  -- Mermen
+#addreccom 1050  -- Merman Scout
+#addreccom 9662 -- Merman Shaman
+#addrecunit 9667 -- Merman Warrior
+#end
+
+#selectpoptype 97  -- Merrow
+#addreccom 2912  -- Merrow Scout
+#end
+
+#selectpoptype 90 -- Turtle Tribe
+#addreccom 9661 -- Turtle Shaman
+#end
+
+#selectpoptype 98 -- Kulullu
+#addreccom 9660 -- Kulullu Shaman
+#end
+
+#selectpoptype 107
+#clearrec
+#cleardef
+#addrecunit 110 -- Atlantian Militia
+#addrecunit 206 -- Shambler
+#addrecunit 9669 -- Shambler Warrior
+#addreccom 207 -- Shambler chief
+#addreccom 9666 -- Shambler Shaman
+#defcom1 207 -- Shambler chief
+#defunit1 110 -- Atlantian Militia
+#defmult1 10
+#defunit1b 206 -- Shambler
+#defmult1b 3
+#end
 
 
 
@@ -106150,6 +106388,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #mon 7988 -- Sahuagin
 #mon 7990 -- Sahuagin Hunter
 #com 7992 -- Sahuagin Baron
+#com 9664 -- Sahuagin Shaman
 #end
 
 #newsite 2216
@@ -113687,6 +113926,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #selectsite 573 -- Merman Village
 #com 1051  -- Merman Scout
+#com 9663 -- Merman Shaman
+#mon 9668 -- Merman Warrior
 #end
 
 #selectsite 582 -- Subterranean Lake
@@ -114855,6 +115096,13 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #summon 362  -- Vine Ogre
 #end
 
+#selectsite 1258 -- Shambler Reef
+#com 9666 -- Shambler Shaman
+#end
+
+#selectsite 574 -- Turtle Village
+#com 9663 -- Merman Shaman
+#end
 
 
 
@@ -158649,13 +158897,7 @@ This will also prevent their skin from drying out."
 #constlevel 3
 #end
 
-#selectpoptype 57  -- Atlanteans
-#addreccom 432  -- Atlantean Scout
-#end
-
-#selectpoptype 72  -- Mermen
-#addreccom 1050  -- Merman Scout
-#end
+-- Land poptype changes
 
 #selectpoptype 84  -- Cavemen
 #defmult1 10
@@ -158665,9 +158907,6 @@ This will also prevent their skin from drying out."
 #defmult1 10
 #end
 
-#selectpoptype 97  -- Merrow
-#addreccom 2912  -- Merrow Scout
-#end
 
 -- increase resource events
 
@@ -179459,7 +179698,17 @@ It is now fully repaired and a new crew has been assigned to it."
 #kill 90
 #end
 
-
+#newevent --replaces 20% of shambler poptypes with shambler shaman poptypes--
+#nation -2
+#req_pregame 1
+#req_thronesite 0
+#req_poptype 57
+#req_capital 0
+#req_indepok 1
+#rarity 5 --always
+#req_rare 25
+#setpoptype 107 --shamblers with shaman--
+#end
 
 
 -- END OF NEW EVENTS
@@ -179594,6 +179843,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #gems 8 10
 #xp 10
 #end
+
 
 
 
