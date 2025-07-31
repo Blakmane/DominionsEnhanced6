@@ -359,6 +359,7 @@
 #rcost 1
 #sound 19
 #flyspr 110 1
+#uwok
 #end
 
 #newweapon 1516
@@ -484,6 +485,7 @@
 #rcost 1
 #sound 19
 #flyspr 110 1
+#uwok
 #end
 
 #newweapon 1528
@@ -502,10 +504,11 @@
 #att 0
 #pierce
 #range -1
-#ammo 1
+#ammo 2
 #rcost 1
 #sound 19
 #flyspr 110 1
+#uwok
 #end
 
 #newweapon 1530
@@ -1047,6 +1050,7 @@
 #dt_normal
 #pierce
 #flyspr 110
+#uwok
 #end
 
 #newweapon 1576
@@ -1346,7 +1350,7 @@
 #copyweapon 514  -- Vitriol Breath
 #name "Vial of Acid"
 #range -1
-#ammo 10
+#ammo 30
 #end
 
 #newweapon 1611
@@ -1879,7 +1883,7 @@
 #copyweapon 601  -- Cave Fire
 #name "Vials of chemicals"
 #range 13
-#ammo 10
+#ammo 30
 #end
 
 #newweapon 1674
@@ -3791,6 +3795,14 @@
 #secondaryeffect 333 -- Eyeloss
 #end
 
+#newweapon 1893 -- Underwater Javelin, half range and -2 damage
+#copyweapon 21 -- Javelin
+#name "Javelin (UW)"
+#range -2 -- Half str
+#dmg 0 -- -2 damage
+#uwok
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -3991,6 +4003,26 @@
 
 
 
+#selectweapon 21 -- Javelin
+#uwok
+#end
+
+#selectweapon 640 -- Coral Tipped Javelin, no penalties
+#uwok
+#end
+
+#selectweapon 452 -- Harpoon, no penalties
+#uwok
+#end
+
+#selectweapon 123 -- Javelin of Flight, no penalties
+#uwok
+#end
+
+#selectweapon 409 -- One Ammo Javelin, no penalties because I CBA as its only used by one thing
+#uwok
+#end
+
 
 #selectweapon 191 -- Ember
 #armorpiercing
@@ -4093,6 +4125,14 @@
 
 #selectweapon 336 -- The Sharpest Tooth
 #armornegating
+#end
+
+#selectweapon 653 -- Anemone Mace
+#dmg 1
+#end
+
+#selectweapon 654 -- Anemone Poison
+#dmg 20
 #end
 
 #selectweapon 678 -- Bow of the Titans
@@ -28676,7 +28716,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #ironvul 1
 #darkvision 50
 #weapon 474  -- Golden Sword
-#weapon 20 -- Bite
 #armor 100  -- Bronze Cuirass
 #armor 135  -- Bronze cap
 #armor 2  -- Shield
@@ -28744,7 +28783,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #ironvul 1
 #weapon 651  -- Bronze Lance
 #weapon 21  -- Javelin
-#weapon 20 -- Bite
 #armor 100  -- Bronze Cuirass
 #armor 135  -- Bronze cap
 #armor 2  -- Shield
@@ -50766,7 +50804,7 @@ Dragon Priests can be recruited in any land fort."
 #clearweapons
 #cleararmor
 #weapon 357  -- Light Lance
-#weapon 21  -- Javelin
+#weapon 1529  -- Atlatl 2 ammo
 #armor 149  -- Bone Cuirass
 #armor 119  -- Reinforced Leather Cap
 #armor 105  -- Hide Shield
@@ -55684,6 +55722,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #clearmagic
 #name "Transformed Dragon"
 #descr "This is a mage transformed into the form of a powerful Dragon by magic. The body of the Dragon will be strong and protected by iron hard scales, and the creature can breathe fire. Dragons have voracious appetites and will eat as much as twenty men. The Dragon will retain any magic skills learned before the transformation took place, and Fire magic will be easier whilst in Dragon form whilst that of other paths will be more difficult. Drakes and lesser draconic beings will be summoned in greater numbers when summoned by a mage in dragon form."
+#gcost 1000
 #lizard
 #supplybonus -20
 #gcost 0
@@ -90199,7 +90238,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 -- ENDUNITS END OF ABOLETH LAND DAMAGE
 
--- FOLDUNITS START OF NO INNATE SPEED
+-- FOLDUNITS START OF NO INNATE SPEED -- 12100~12499
 
 
 
@@ -93398,8 +93437,3098 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 -- ENDUNITS END OF NO INNATE SPEED
 
+-- FOLDUNITS START OF UW JAVELINS -- 12500~12999
 
--- FOLDUNITS START OF SHAPE CHANGE MONSTERS
+
+
+#newmonster 12501 -- Standard water shape
+#copystats 2
+#copyspr 2
+#landshape 2
+#clearweapons
+#weapon 6
+#weapon 1893
+#end
+
+#selectmonster 2 -- Standard
+#watershape 12501
+#end
+
+#newmonster 12502 -- Light Cavalry water shape
+#copystats 24
+#copyspr 24
+#landshape 24
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 24 -- Light Cavalry
+#watershape 12502
+#end
+
+#newmonster 12503 -- Light Infantry water shape
+#copystats 29
+#copyspr 29
+#landshape 29
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 29 -- Light Infantry
+#watershape 12503
+#end
+
+#newmonster 12504 -- Logrian Warrior water shape
+#copystats 53
+#copyspr 53
+#landshape 53
+#clearweapons
+#weapon 17
+#weapon 1893
+#end
+
+#selectmonster 53 -- Logrian Warrior
+#watershape 12504
+#end
+
+#newmonster 12505 -- Huskarl water shape
+#copystats 142
+#copyspr 142
+#landshape 142
+#clearweapons
+#weapon 17
+#weapon 1893
+#end
+
+#selectmonster 142 -- Huskarl
+#watershape 12505
+#end
+
+#newmonster 12506 -- Huskarl water shape
+#copystats 143
+#copyspr 143
+#landshape 143
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 143 -- Huskarl
+#watershape 12506
+#end
+
+#newmonster 12507 -- Velite water shape
+#copystats 155
+#copyspr 155
+#landshape 155
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 155 -- Velite
+#watershape 12507
+#end
+
+#newmonster 12508 -- C'tissian Light Infantry water shape
+#copystats 167
+#copyspr 167
+#landshape 167
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 167 -- C'tissian Light Infantry
+#watershape 12508
+#end
+
+#newmonster 12509 -- Longdead Velite water shape
+#copystats 186
+#copyspr 186
+#landshape 186
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 186 -- Longdead Velite
+#watershape 12509
+#end
+
+#newmonster 12510 -- Longdead Legionnaire water shape
+#copystats 187
+#copyspr 187
+#landshape 187
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 187 -- Longdead Legionnaire
+#watershape 12510
+#end
+
+#newmonster 12511 -- Peltast water shape
+#copystats 201
+#copyspr 201
+#landshape 201
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 201 -- Peltast
+#watershape 12511
+#end
+
+#newmonster 12512 -- Satyr water shape
+#copystats 228
+#copyspr 228
+#landshape 228
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 228 -- Satyr
+#watershape 12512
+#end
+
+#newmonster 12513 -- Van water shape
+#copystats 262
+#copyspr 262
+#landshape 262
+#clearweapons
+#weapon 357
+#weapon 1893
+#end
+
+#selectmonster 262 -- Van
+#watershape 12513
+#end
+
+#newmonster 12514 -- Vanherse water shape
+#copystats 263
+#copyspr 263
+#landshape 263
+#clearweapons
+#weapon 357
+#weapon 1893
+#end
+
+#selectmonster 263 -- Vanherse
+#watershape 12514
+#end
+
+#newmonster 12515 -- Vanjarl water shape
+#copystats 264
+#copyspr 264
+#landshape 264
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 264 -- Vanjarl
+#watershape 12515
+#end
+
+#newmonster 12516 -- Jotun Javelinist water shape
+#copystats 276
+#copyspr 276
+#landshape 276
+#clearweapons
+#weapon 17
+#weapon 1893
+#end
+
+#selectmonster 276 -- Jotun Javelinist
+#watershape 12516
+#end
+
+#newmonster 12517 -- Herse water shape
+#copystats 422
+#copyspr 422
+#landshape 422
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 422 -- Herse
+#watershape 12517
+#end
+
+#newmonster 12518 -- Velite water shape
+#copystats 662
+#copyspr 662
+#landshape 662
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 662 -- Velite
+#watershape 12518
+#end
+
+#newmonster 12519 -- Alae Legionnaire water shape
+#copystats 663
+#copyspr 663
+#landshape 663
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 663 -- Alae Legionnaire
+#watershape 12519
+#end
+
+#newmonster 12520 -- Hastatus water shape
+#copystats 664
+#copyspr 664
+#landshape 664
+#clearweapons
+#weapon 6
+#weapon 1893
+#end
+
+#selectmonster 664 -- Hastatus
+#watershape 12520
+#end
+
+#newmonster 12521 -- Principe water shape
+#copystats 665
+#copyspr 665
+#landshape 665
+#clearweapons
+#weapon 6
+#weapon 1893
+#end
+
+#selectmonster 665 -- Principe
+#watershape 12521
+#end
+
+#newmonster 12522 -- Standard water shape
+#copystats 668
+#copyspr 668
+#landshape 668
+#clearweapons
+#weapon 6
+#weapon 1893
+#end
+
+#selectmonster 668 -- Standard
+#watershape 12522
+#end
+
+#newmonster 12523 -- Velite water shape
+#copystats 684
+#copyspr 684
+#landshape 684
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 684 -- Velite
+#watershape 12523
+#end
+
+#newmonster 12524 -- Alae Legionnaire water shape
+#copystats 685
+#copyspr 685
+#landshape 685
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 685 -- Alae Legionnaire
+#watershape 12524
+#end
+
+#newmonster 12525 -- Hastatus water shape
+#copystats 686
+#copyspr 686
+#landshape 686
+#clearweapons
+#weapon 6
+#weapon 1893
+#end
+
+#selectmonster 686 -- Hastatus
+#watershape 12525
+#end
+
+#newmonster 12526 -- Principe water shape
+#copystats 687
+#copyspr 687
+#landshape 687
+#clearweapons
+#weapon 6
+#weapon 1893
+#end
+
+#selectmonster 687 -- Principe
+#watershape 12526
+#end
+
+#newmonster 12527 -- Standard water shape
+#copystats 689
+#copyspr 689
+#landshape 689
+#clearweapons
+#weapon 6
+#weapon 1893
+#end
+
+#selectmonster 689 -- Standard
+#watershape 12527
+#end
+
+#newmonster 12528 -- Warrior water shape
+#copystats 723
+#copyspr 723
+#landshape 723
+#clearweapons
+#weapon 373
+#weapon 1893
+#end
+
+#selectmonster 723 -- Warrior
+#watershape 12528
+#end
+
+#newmonster 12529 -- Warrior water shape
+#copystats 724
+#copyspr 724
+#landshape 724
+#clearweapons
+#weapon 12
+#weapon 1893
+#end
+
+#selectmonster 724 -- Warrior
+#watershape 12529
+#end
+
+#newmonster 12530 -- Sun Warrior water shape
+#copystats 725
+#copyspr 725
+#landshape 725
+#clearweapons
+#weapon 646
+#weapon 1893
+#end
+
+#selectmonster 725 -- Sun Warrior
+#watershape 12530
+#end
+
+#newmonster 12531 -- Tribal King water shape
+#copystats 730
+#copyspr 730
+#landshape 730
+#clearweapons
+#weapon 288
+#weapon 1893
+#end
+
+#selectmonster 730 -- Tribal King
+#watershape 12531
+#end
+
+#newmonster 12532 -- White Centaur water shape
+#copystats 769
+#copyspr 769
+#landshape 769
+#clearweapons
+#weapon 651
+#weapon 55
+#weapon 1893
+#end
+
+#selectmonster 769 -- White Centaur
+#watershape 12532
+#end
+
+#newmonster 12533 -- Jotun Scout water shape
+#copystats 786
+#copyspr 786
+#landshape 786
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 786 -- Jotun Scout
+#watershape 12533
+#end
+
+#newmonster 12534 -- Black Centaur water shape
+#copystats 787
+#copyspr 787
+#landshape 787
+#clearweapons
+#weapon 357
+#weapon 55
+#weapon 1893
+#end
+
+#selectmonster 787 -- Black Centaur
+#watershape 12534
+#end
+
+#newmonster 12535 -- Huskarl water shape
+#copystats 837
+#copyspr 837
+#landshape 837
+#clearweapons
+#weapon 17
+#weapon 1893
+#end
+
+#selectmonster 837 -- Huskarl
+#watershape 12535
+#end
+
+#newmonster 12536 -- Huskarl water shape
+#copystats 838
+#copyspr 838
+#landshape 838
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 838 -- Huskarl
+#watershape 12536
+#end
+
+#newmonster 12537 -- Godihuskarl water shape
+#copystats 841
+#copyspr 841
+#landshape 841
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 841 -- Godihuskarl
+#watershape 12537
+#end
+
+#newmonster 12538 -- Hangadrott water shape
+#copystats 847
+#copyspr 847
+#landshape 847
+#clearweapons
+#weapon 357
+#weapon 1893
+#end
+
+#selectmonster 847 -- Hangadrott
+#watershape 12538
+#end
+
+#newmonster 12539 -- Sidhe Lord water shape
+#copystats 848
+#copyspr 848
+#landshape 848
+#clearweapons
+#weapon 475
+#weapon 1893
+#end
+
+#selectmonster 848 -- Sidhe Lord
+#watershape 12539
+#end
+
+#newmonster 12540 -- Daoine Sidhe water shape
+#copystats 849
+#copyspr 849
+#landshape 849
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 849 -- Daoine Sidhe
+#watershape 12540
+#end
+
+#newmonster 12541 -- Sidhe Champion water shape
+#copystats 850
+#copyspr 850
+#landshape 850
+#clearweapons
+#weapon 474
+#weapon 1893
+#end
+
+#selectmonster 850 -- Sidhe Champion
+#watershape 12541
+#end
+
+#newmonster 12542 -- Tuatha water shape
+#copystats 856
+#copyspr 856
+#landshape 856
+#clearweapons
+#weapon 475
+#weapon 1893
+#end
+
+#selectmonster 856 -- Tuatha
+#watershape 12542
+#end
+
+#newmonster 12543 -- Feathered Warrior water shape
+#copystats 860
+#copyspr 860
+#landshape 860
+#clearweapons
+#weapon 12
+#weapon 1893
+#end
+
+#selectmonster 860 -- Feathered Warrior
+#watershape 12543
+#end
+
+#newmonster 12544 -- Machaka Warrior water shape
+#copystats 880
+#copyspr 880
+#landshape 880
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 880 -- Machaka Warrior
+#watershape 12544
+#end
+
+#newmonster 12545 -- Vanadrott water shape
+#copystats 948
+#copyspr 948
+#landshape 948
+#clearweapons
+#weapon 357
+#weapon 1893
+#end
+
+#selectmonster 948 -- Vanadrott
+#watershape 12545
+#end
+
+#newmonster 12546 -- Desert Ranger water shape
+#copystats 1094
+#copyspr 1094
+#landshape 1094
+#clearweapons
+#weapon 10
+#weapon 1893
+#end
+
+#selectmonster 1094 -- Desert Ranger
+#watershape 12546
+#end
+
+#newmonster 12547 -- Leve water shape
+#copystats 1100
+#copyspr 1100
+#landshape 1100
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 1100 -- Leve
+#watershape 12547
+#end
+
+#newmonster 12548 -- Accensus water shape
+#copystats 1101
+#copyspr 1101
+#landshape 1101
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 1101 -- Accensus
+#watershape 12548
+#end
+
+#newmonster 12549 -- Rorarus water shape
+#copystats 1102
+#copyspr 1102
+#landshape 1102
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 1102 -- Rorarus
+#watershape 12549
+#end
+
+#newmonster 12550 -- Hastatus water shape
+#copystats 1103
+#copyspr 1103
+#landshape 1103
+#clearweapons
+#weapon 6
+#weapon 1893
+#end
+
+#selectmonster 1103 -- Hastatus
+#watershape 12550
+#end
+
+#newmonster 12551 -- Principe water shape
+#copystats 1104
+#copyspr 1104
+#landshape 1104
+#clearweapons
+#weapon 6
+#weapon 1893
+#end
+
+#selectmonster 1104 -- Principe
+#watershape 12551
+#end
+
+#newmonster 12552 -- Lizard Auxiliare water shape
+#copystats 1106
+#copyspr 1106
+#landshape 1106
+#clearweapons
+#weapon 6
+#weapon 1893
+#end
+
+#selectmonster 1106 -- Lizard Auxiliare
+#watershape 12552
+#end
+
+#newmonster 12553 -- Eponi Chieftain water shape
+#copystats 1207
+#copyspr 1207
+#landshape 1207
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 1207 -- Eponi Chieftain
+#watershape 12553
+#end
+
+#newmonster 12554 -- Eponi Knight water shape
+#copystats 1208
+#copyspr 1208
+#landshape 1208
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 1208 -- Eponi Knight
+#watershape 12554
+#end
+
+#newmonster 12555 -- Marverni Javelineer water shape
+#copystats 1212
+#copyspr 1212
+#landshape 1212
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 1212 -- Marverni Javelineer
+#watershape 12555
+#end
+
+#newmonster 12556 -- Marverni Bare Chested Warrior water shape
+#copystats 1213
+#copyspr 1213
+#landshape 1213
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 1213 -- Marverni Bare Chested Warrior
+#watershape 12556
+#end
+
+#newmonster 12557 -- Oni water shape
+#copystats 1272
+#copyspr 1272
+#landshape 1272
+#clearweapons
+#weapon 379
+#weapon 1893
+#end
+
+#selectmonster 1272 -- Oni
+#watershape 12557
+#end
+
+#newmonster 12558 -- Oni Shugo water shape
+#copystats 1276
+#copyspr 1276
+#landshape 1276
+#clearweapons
+#weapon 379
+#weapon 383
+#weapon 1893
+#end
+
+#selectmonster 1276 -- Oni Shugo
+#watershape 12558
+#end
+
+#newmonster 12559 -- Jotun Warrior water shape
+#copystats 1304
+#copyspr 1304
+#landshape 1304
+#clearweapons
+#weapon 17
+#weapon 1893
+#end
+
+#selectmonster 1304 -- Jotun Warrior
+#watershape 12559
+#end
+
+#newmonster 12560 -- Godihuskarl water shape
+#copystats 1307
+#copyspr 1307
+#landshape 1307
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 1307 -- Godihuskarl
+#watershape 12560
+#end
+
+#newmonster 12561 -- Dai Oni water shape
+#copystats 1316
+#copyspr 1316
+#landshape 1316
+#clearweapons
+#weapon 744
+#weapon 383
+#weapon 1893
+#end
+
+#selectmonster 1316 -- Dai Oni
+#watershape 12561
+#end
+
+#newmonster 12562 -- Helkarl water shape
+#copystats 1502
+#copyspr 1502
+#landshape 1502
+#clearweapons
+#weapon 357
+#weapon 1893
+#end
+
+#selectmonster 1502 -- Helkarl
+#watershape 12562
+#end
+
+#newmonster 12563 -- Helhirding water shape
+#copystats 1503
+#copyspr 1503
+#landshape 1503
+#clearweapons
+#weapon 357
+#weapon 1893
+#end
+
+#selectmonster 1503 -- Helhirding
+#watershape 12563
+#end
+
+#newmonster 12564 -- Mounted Hirdman water shape
+#copystats 1504
+#copyspr 1504
+#landshape 1504
+#clearweapons
+#weapon 357
+#weapon 1893
+#end
+
+#selectmonster 1504 -- Mounted Hirdman
+#watershape 12564
+#end
+
+#newmonster 12565 -- Vanherse water shape
+#copystats 1505
+#copyspr 1505
+#landshape 1505
+#clearweapons
+#weapon 357
+#weapon 1893
+#end
+
+#selectmonster 1505 -- Vanherse
+#watershape 12565
+#end
+
+#newmonster 12566 -- Vanjarl water shape
+#copystats 1506
+#copyspr 1506
+#landshape 1506
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 1506 -- Vanjarl
+#watershape 12566
+#end
+
+#newmonster 12567 -- Dis water shape
+#copystats 1507
+#copyspr 1507
+#landshape 1507
+#clearweapons
+#weapon 357
+#weapon 1893
+#end
+
+#selectmonster 1507 -- Dis
+#watershape 12567
+#end
+
+#newmonster 12568 -- Huskarl water shape
+#copystats 1508
+#copyspr 1508
+#landshape 1508
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 1508 -- Huskarl
+#watershape 12568
+#end
+
+#newmonster 12569 -- Huskarl water shape
+#copystats 1509
+#copyspr 1509
+#landshape 1509
+#clearweapons
+#weapon 17
+#weapon 1893
+#end
+
+#selectmonster 1509 -- Huskarl
+#watershape 12569
+#end
+
+#newmonster 12570 -- Warrior water shape
+#copystats 1546
+#copyspr 1546
+#landshape 1546
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 1546 -- Warrior
+#watershape 12570
+#end
+
+#newmonster 12571 -- Warrior water shape
+#copystats 1547
+#copyspr 1547
+#landshape 1547
+#clearweapons
+#weapon 12
+#weapon 1893
+#end
+
+#selectmonster 1547 -- Warrior
+#watershape 12571
+#end
+
+#newmonster 12572 -- Feathered Warrior water shape
+#copystats 1548
+#copyspr 1548
+#landshape 1548
+#clearweapons
+#weapon 12
+#weapon 1893
+#end
+
+#selectmonster 1548 -- Feathered Warrior
+#watershape 12572
+#end
+
+#newmonster 12573 -- Bear Tribe Warrior water shape
+#copystats 1592
+#copyspr 1592
+#landshape 1592
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 1592 -- Bear Tribe Warrior
+#watershape 12573
+#end
+
+#newmonster 12574 -- Deer Tribe Warrior water shape
+#copystats 1594
+#copyspr 1594
+#landshape 1594
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 1594 -- Deer Tribe Warrior
+#watershape 12574
+#end
+
+#newmonster 12575 -- Lion Tribe Warrior water shape
+#copystats 1600
+#copyspr 1600
+#landshape 1600
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 1600 -- Lion Tribe Warrior
+#watershape 12575
+#end
+
+#newmonster 12576 -- Human Huskarl water shape
+#copystats 1603
+#copyspr 1603
+#landshape 1603
+#clearweapons
+#weapon 17
+#weapon 1893
+#end
+
+#selectmonster 1603 -- Human Huskarl
+#watershape 12576
+#end
+
+#newmonster 12577 -- Human Huskarl water shape
+#copystats 1604
+#copyspr 1604
+#landshape 1604
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 1604 -- Human Huskarl
+#watershape 12577
+#end
+
+#newmonster 12578 -- Longdead Principe water shape
+#copystats 1658
+#copyspr 1658
+#landshape 1658
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 1658 -- Longdead Principe
+#watershape 12578
+#end
+
+#newmonster 12579 -- Asara water shape
+#copystats 1745
+#copyspr 1745
+#landshape 1745
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 1745 -- Asara
+#watershape 12579
+#end
+
+#newmonster 12580 -- Fir Bolg Champion water shape
+#copystats 1750
+#copyspr 1750
+#landshape 1750
+#clearweapons
+#weapon 645
+#weapon 1893
+#end
+
+#selectmonster 1750 -- Fir Bolg Champion
+#watershape 12580
+#end
+
+#newmonster 12581 -- Sidhe Warrior water shape
+#copystats 1751
+#copyspr 1751
+#landshape 1751
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 1751 -- Sidhe Warrior
+#watershape 12581
+#end
+
+#newmonster 12582 -- Sidhe Champion water shape
+#copystats 1752
+#copyspr 1752
+#landshape 1752
+#clearweapons
+#weapon 474
+#weapon 1893
+#end
+
+#selectmonster 1752 -- Sidhe Champion
+#watershape 12582
+#end
+
+#newmonster 12583 -- Tuatha Warrior water shape
+#copystats 1753
+#copyspr 1753
+#landshape 1753
+#clearweapons
+#weapon 473
+#weapon 1893
+#end
+
+#selectmonster 1753 -- Tuatha Warrior
+#watershape 12583
+#end
+
+#newmonster 12584 -- Ri water shape
+#copystats 1754
+#copyspr 1754
+#landshape 1754
+#clearweapons
+#weapon 475
+#weapon 1893
+#end
+
+#selectmonster 1754 -- Ri
+#watershape 12584
+#end
+
+#newmonster 12585 -- Fir Bolg Scout water shape
+#copystats 1755
+#copyspr 1755
+#landshape 1755
+#clearweapons
+#weapon 645
+#weapon 1893
+#end
+
+#selectmonster 1755 -- Fir Bolg Scout
+#watershape 12585
+#end
+
+#newmonster 12586 -- Fir Bolg Warrior water shape
+#copystats 1757
+#copyspr 1757
+#landshape 1757
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 1757 -- Fir Bolg Warrior
+#watershape 12586
+#end
+
+#newmonster 12587 -- Sidhe Lord water shape
+#copystats 1759
+#copyspr 1759
+#landshape 1759
+#clearweapons
+#weapon 473
+#weapon 1893
+#end
+
+#selectmonster 1759 -- Sidhe Lord
+#watershape 12587
+#end
+
+#newmonster 12588 -- Fir Bolg Clan Warrior water shape
+#copystats 1787
+#copyspr 1787
+#landshape 1787
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 1787 -- Fir Bolg Clan Warrior
+#watershape 12588
+#end
+
+#newmonster 12589 -- Fir Bolg Champion water shape
+#copystats 1788
+#copyspr 1788
+#landshape 1788
+#clearweapons
+#weapon 645
+#weapon 1893
+#end
+
+#selectmonster 1788 -- Fir Bolg Champion
+#watershape 12589
+#end
+
+#newmonster 12590 -- Nemedian Warrior water shape
+#copystats 1790
+#copyspr 1790
+#landshape 1790
+#clearweapons
+#weapon 473
+#weapon 1893
+#end
+
+#selectmonster 1790 -- Nemedian Warrior
+#watershape 12590
+#end
+
+#newmonster 12591 -- Nemedian Champion water shape
+#copystats 1791
+#copyspr 1791
+#landshape 1791
+#clearweapons
+#weapon 474
+#weapon 1893
+#end
+
+#selectmonster 1791 -- Nemedian Champion
+#watershape 12591
+#end
+
+#newmonster 12592 -- Fomorian Javelinist water shape
+#copystats 1797
+#copyspr 1797
+#landshape 1797
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 1797 -- Fomorian Javelinist
+#watershape 12592
+#end
+
+#newmonster 12593 -- Fomorian Champion water shape
+#copystats 1800
+#copyspr 1800
+#landshape 1800
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 1800 -- Fomorian Champion
+#watershape 12593
+#end
+
+#newmonster 12594 -- Fomorian Giant water shape
+#copystats 1801
+#copyspr 1801
+#landshape 1801
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 1801 -- Fomorian Giant
+#watershape 12594
+#end
+
+#newmonster 12595 -- Fomorian King water shape
+#copystats 1802
+#copyspr 1802
+#landshape 1802
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 1802 -- Fomorian King
+#watershape 12595
+#end
+
+#newmonster 12596 -- Fir Bolg Scout water shape
+#copystats 1811
+#copyspr 1811
+#landshape 1811
+#clearweapons
+#weapon 645
+#weapon 1893
+#end
+
+#selectmonster 1811 -- Fir Bolg Scout
+#watershape 12596
+#end
+
+#newmonster 12597 -- Fir Bolg Warrior water shape
+#copystats 1813
+#copyspr 1813
+#landshape 1813
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 1813 -- Fir Bolg Warrior
+#watershape 12597
+#end
+
+#newmonster 12598 -- Fir Bolg Champion water shape
+#copystats 1815
+#copyspr 1815
+#landshape 1815
+#clearweapons
+#weapon 645
+#weapon 1893
+#end
+
+#selectmonster 1815 -- Fir Bolg Champion
+#watershape 12598
+#end
+
+#newmonster 12599 -- Fomorian Scout water shape
+#copystats 1816
+#copyspr 1816
+#landshape 1816
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 1816 -- Fomorian Scout
+#watershape 12599
+#end
+
+#newmonster 12600 -- Unmarked Champion water shape
+#copystats 1818
+#copyspr 1818
+#landshape 1818
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 1818 -- Unmarked Champion
+#watershape 12600
+#end
+
+#newmonster 12601 -- Milite water shape
+#copystats 1862
+#copyspr 1862
+#landshape 1862
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 1862 -- Milite
+#watershape 12601
+#end
+
+#newmonster 12602 -- Limitane water shape
+#copystats 1863
+#copyspr 1863
+#landshape 1863
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 1863 -- Limitane
+#watershape 12602
+#end
+
+#newmonster 12603 -- Limitane Solaris water shape
+#copystats 1865
+#copyspr 1865
+#landshape 1865
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 1865 -- Limitane Solaris
+#watershape 12603
+#end
+
+#newmonster 12604 -- Comitatense water shape
+#copystats 1867
+#copyspr 1867
+#landshape 1867
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 1867 -- Comitatense
+#watershape 12604
+#end
+
+#newmonster 12605 -- Voi Spearman water shape
+#copystats 1929
+#copyspr 1929
+#landshape 1929
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 1929 -- Voi Spearman
+#watershape 12605
+#end
+
+#newmonster 12606 -- Gadite Swordsman water shape
+#copystats 1991
+#copyspr 1991
+#landshape 1991
+#clearweapons
+#weapon 645
+#weapon 1893
+#end
+
+#selectmonster 1991 -- Gadite Swordsman
+#watershape 12606
+#end
+
+#newmonster 12607 -- Naphtali Spearman water shape
+#copystats 1993
+#copyspr 1993
+#landshape 1993
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 1993 -- Naphtali Spearman
+#watershape 12607
+#end
+
+#newmonster 12608 -- Gittite Soldier water shape
+#copystats 1999
+#copyspr 1999
+#landshape 1999
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 1999 -- Gittite Soldier
+#watershape 12608
+#end
+
+#newmonster 12609 -- Gittite Commander water shape
+#copystats 2002
+#copyspr 2002
+#landshape 2002
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 2002 -- Gittite Commander
+#watershape 12609
+#end
+
+#newmonster 12610 -- Edomite water shape
+#copystats 2005
+#copyspr 2005
+#landshape 2005
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 2005 -- Edomite
+#watershape 12610
+#end
+
+#newmonster 12611 -- Edomite Scout water shape
+#copystats 2010
+#copyspr 2010
+#landshape 2010
+#clearweapons
+#weapon 6
+#weapon 1893
+#end
+
+#selectmonster 2010 -- Edomite Scout
+#watershape 12611
+#end
+
+#newmonster 12612 -- Avvite Spearman water shape
+#copystats 2015
+#copyspr 2015
+#landshape 2015
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 2015 -- Avvite Spearman
+#watershape 12612
+#end
+
+#newmonster 12613 -- Avvite Light Infantry water shape
+#copystats 2021
+#copyspr 2021
+#landshape 2021
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 2021 -- Avvite Light Infantry
+#watershape 12613
+#end
+
+#newmonster 12614 -- Avvite Scout water shape
+#copystats 2024
+#copyspr 2024
+#landshape 2024
+#clearweapons
+#weapon 6
+#weapon 1893
+#end
+
+#selectmonster 2024 -- Avvite Scout
+#watershape 12614
+#end
+
+#newmonster 12615 -- Avvite Charioteer water shape
+#copystats 2035
+#copyspr 2035
+#landshape 2035
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 2035 -- Avvite Charioteer
+#watershape 12615
+#end
+
+#newmonster 12616 -- Herse water shape
+#copystats 2150
+#copyspr 2150
+#landshape 2150
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 2150 -- Herse
+#watershape 12616
+#end
+
+#newmonster 12617 -- Limitane Standard water shape
+#copystats 2152
+#copyspr 2152
+#landshape 2152
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 2152 -- Limitane Standard
+#watershape 12617
+#end
+
+#newmonster 12618 -- Centauride Warrior water shape
+#copystats 2157
+#copyspr 2157
+#landshape 2157
+#clearweapons
+#weapon 643
+#weapon 55
+#weapon 1893
+#end
+
+#selectmonster 2157 -- Centauride Warrior
+#watershape 12618
+#end
+
+#newmonster 12619 -- Enkidu Hunter water shape
+#copystats 2168
+#copyspr 2168
+#landshape 2168
+#clearweapons
+#weapon 373
+#weapon 1893
+#end
+
+#selectmonster 2168 -- Enkidu Hunter
+#watershape 12619
+#end
+
+#newmonster 12620 -- Enkidu Hunter Chief water shape
+#copystats 2169
+#copyspr 2169
+#landshape 2169
+#clearweapons
+#weapon 373
+#weapon 1893
+#end
+
+#selectmonster 2169 -- Enkidu Hunter Chief
+#watershape 12620
+#end
+
+#newmonster 12621 -- Berytian Spearman water shape
+#copystats 2256
+#copyspr 2256
+#landshape 2256
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 2256 -- Berytian Spearman
+#watershape 12621
+#end
+
+#newmonster 12622 -- Hyena Clan Warrior water shape
+#copystats 2303
+#copyspr 2303
+#landshape 2303
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 2303 -- Hyena Clan Warrior
+#watershape 12622
+#end
+
+#newmonster 12623 -- Vanabog water shape
+#copystats 2342
+#copyspr 2342
+#landshape 2342
+#clearweapons
+#weapon 357
+#weapon 1893
+#end
+
+#selectmonster 2342 -- Vanabog
+#watershape 12623
+#end
+
+#newmonster 12624 -- Vanarusian Huskarl water shape
+#copystats 2344
+#copyspr 2344
+#landshape 2344
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 2344 -- Vanarusian Huskarl
+#watershape 12624
+#end
+
+#newmonster 12625 -- Vanarusian Huskarl water shape
+#copystats 2345
+#copyspr 2345
+#landshape 2345
+#clearweapons
+#weapon 17
+#weapon 1893
+#end
+
+#selectmonster 2345 -- Vanarusian Huskarl
+#watershape 12625
+#end
+
+#newmonster 12626 -- Vanarusian Hirdman water shape
+#copystats 2346
+#copyspr 2346
+#landshape 2346
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 2346 -- Vanarusian Hirdman
+#watershape 12626
+#end
+
+#newmonster 12627 -- Vanarusian Hirdman water shape
+#copystats 2347
+#copyspr 2347
+#landshape 2347
+#clearweapons
+#weapon 17
+#weapon 1893
+#end
+
+#selectmonster 2347 -- Vanarusian Hirdman
+#watershape 12627
+#end
+
+#newmonster 12628 -- Vanarusian Hirdman water shape
+#copystats 2348
+#copyspr 2348
+#landshape 2348
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 2348 -- Vanarusian Hirdman
+#watershape 12628
+#end
+
+#newmonster 12629 -- Vanarusian Herse water shape
+#copystats 2354
+#copyspr 2354
+#landshape 2354
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 2354 -- Vanarusian Herse
+#watershape 12629
+#end
+
+#newmonster 12630 -- Standard water shape
+#copystats 2475
+#copyspr 2475
+#landshape 2475
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 2475 -- Standard
+#watershape 12630
+#end
+
+#newmonster 12631 -- Huskarl water shape
+#copystats 2531
+#copyspr 2531
+#landshape 2531
+#clearweapons
+#weapon 17
+#weapon 1893
+#end
+
+#selectmonster 2531 -- Huskarl
+#watershape 12631
+#end
+
+#newmonster 12632 -- Herse water shape
+#copystats 2532
+#copyspr 2532
+#landshape 2532
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 2532 -- Herse
+#watershape 12632
+#end
+
+#newmonster 12633 -- Turan Infantry water shape
+#copystats 2580
+#copyspr 2580
+#landshape 2580
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 2580 -- Turan Infantry
+#watershape 12633
+#end
+
+#newmonster 12634 -- Human Warrior water shape
+#copystats 2646
+#copyspr 2646
+#landshape 2646
+#clearweapons
+#weapon 12
+#weapon 1893
+#end
+
+#selectmonster 2646 -- Human Warrior
+#watershape 12634
+#end
+
+#newmonster 12635 -- Kuraka water shape
+#copystats 2647
+#copyspr 2647
+#landshape 2647
+#clearweapons
+#weapon 12
+#weapon 1893
+#end
+
+#selectmonster 2647 -- Kuraka
+#watershape 12635
+#end
+
+#newmonster 12636 -- Bone Tribe Beast Hunter water shape
+#copystats 2818
+#copyspr 2818
+#landshape 2818
+#clearweapons
+#weapon 639
+#weapon 1893
+#end
+
+#selectmonster 2818 -- Bone Tribe Beast Hunter
+#watershape 12636
+#end
+
+#newmonster 12637 -- Therodian Peltast water shape
+#copystats 2828
+#copyspr 2828
+#landshape 2828
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 2828 -- Therodian Peltast
+#watershape 12637
+#end
+
+#newmonster 12638 -- Kernou Warrior water shape
+#copystats 2897
+#copyspr 2897
+#landshape 2897
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 2897 -- Kernou Warrior
+#watershape 12638
+#end
+
+#newmonster 12639 -- Centauride Cataphract water shape
+#copystats 2956
+#copyspr 2956
+#landshape 2956
+#clearweapons
+#weapon 651
+#weapon 55
+#weapon 1893
+#end
+
+#selectmonster 2956 -- Centauride Cataphract
+#watershape 12639
+#end
+
+#newmonster 12640 -- Chud Hunter water shape
+#copystats 2992
+#copyspr 2992
+#landshape 2992
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 2992 -- Chud Hunter
+#watershape 12640
+#end
+
+#newmonster 12641 -- Chud Chieftain water shape
+#copystats 3002
+#copyspr 3002
+#landshape 3002
+#clearweapons
+#weapon 45886
+#weapon 1893
+#end
+
+#selectmonster 3002 -- Chud Chieftain
+#watershape 12641
+#end
+
+#newmonster 12642 -- Humanbred water shape
+#copystats 3006
+#copyspr 3006
+#landshape 3006
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 3006 -- Humanbred
+#watershape 12642
+#end
+
+#newmonster 12643 -- Machimos water shape
+#copystats 3024
+#copyspr 3024
+#landshape 3024
+#clearweapons
+#weapon 6
+#weapon 1893
+#end
+
+#selectmonster 3024 -- Machimos
+#watershape 12643
+#end
+
+#newmonster 12644 -- Amanojaku water shape
+#copystats 3084
+#copyspr 3084
+#landshape 3084
+#clearweapons
+#weapon 379
+#weapon 383
+#weapon 1893
+#end
+
+#selectmonster 3084 -- Amanojaku
+#watershape 12644
+#end
+
+#newmonster 12645 -- Perioeci Peltast water shape
+#copystats 3100
+#copyspr 3100
+#landshape 3100
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 3100 -- Perioeci Peltast
+#watershape 12645
+#end
+
+#newmonster 12646 -- Helote Peltast water shape
+#copystats 3101
+#copyspr 3101
+#landshape 3101
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 3101 -- Helote Peltast
+#watershape 12646
+#end
+
+#newmonster 12647 -- Neodamode Peltast water shape
+#copystats 3102
+#copyspr 3102
+#landshape 3102
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 3102 -- Neodamode Peltast
+#watershape 12647
+#end
+
+#newmonster 12648 -- Helote Warrior water shape
+#copystats 3133
+#copyspr 3133
+#landshape 3133
+#clearweapons
+#weapon 17
+#weapon 1893
+#end
+
+#selectmonster 3133 -- Helote Warrior
+#watershape 12648
+#end
+
+#newmonster 12649 -- Phaeacian Light Infantry water shape
+#copystats 3145
+#copyspr 3145
+#landshape 3145
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 3145 -- Phaeacian Light Infantry
+#watershape 12649
+#end
+
+#newmonster 12650 -- Colossi Light Infantry water shape
+#copystats 3165
+#copyspr 3165
+#landshape 3165
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 3165 -- Colossi Light Infantry
+#watershape 12650
+#end
+
+#newmonster 12651 -- Cyclope Commander water shape
+#copystats 3223
+#copyspr 3223
+#landshape 3223
+#clearweapons
+#weapon 734
+#weapon 1893
+#end
+
+#selectmonster 3223 -- Cyclope Commander
+#watershape 12651
+#end
+
+#newmonster 12652 -- Cyclope Soldier water shape
+#copystats 3224
+#copyspr 3224
+#landshape 3224
+#clearweapons
+#weapon 733
+#weapon 1893
+#end
+
+#selectmonster 3224 -- Cyclope Soldier
+#watershape 12652
+#end
+
+#newmonster 12653 -- Cynocephalian Warrior water shape
+#copystats 3277
+#copyspr 3277
+#landshape 3277
+#clearweapons
+#weapon 373
+#weapon 20
+#weapon 1893
+#end
+
+#selectmonster 3277 -- Cynocephalian Warrior
+#watershape 12653
+#end
+
+#newmonster 12654 -- Cannibal Warrior water shape
+#copystats 3293
+#copyspr 3293
+#landshape 3293
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 3293 -- Cannibal Warrior
+#watershape 12654
+#end
+
+#newmonster 12655 -- Agrimandri Warrior water shape
+#copystats 3294
+#copyspr 3294
+#landshape 3294
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 3294 -- Agrimandri Warrior
+#watershape 12655
+#end
+
+#newmonster 12656 -- Fommepori Warrior water shape
+#copystats 3295
+#copyspr 3295
+#landshape 3295
+#clearweapons
+#weapon 6
+#weapon 253
+#weapon 1893
+#end
+
+#selectmonster 3295 -- Fommepori Warrior
+#watershape 12656
+#end
+
+#newmonster 12657 -- Cynocephalian Flesh-Eater water shape
+#copystats 3299
+#copyspr 3299
+#landshape 3299
+#clearweapons
+#weapon 45677
+#weapon 1893
+#end
+
+#selectmonster 3299 -- Cynocephalian Flesh-Eater
+#watershape 12657
+#end
+
+#newmonster 12658 -- Cannibal Warlord water shape
+#copystats 3313
+#copyspr 3313
+#landshape 3313
+#clearweapons
+#weapon 18
+#weapon 1893
+#end
+
+#selectmonster 3313 -- Cannibal Warlord
+#watershape 12658
+#end
+
+#newmonster 12659 -- Adite Light Infantry water shape
+#copystats 3355
+#copyspr 3355
+#landshape 3355
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 3355 -- Adite Light Infantry
+#watershape 12659
+#end
+
+#newmonster 12660 -- Nabaean Light Infantry water shape
+#copystats 3356
+#copyspr 3356
+#landshape 3356
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 3356 -- Nabaean Light Infantry
+#watershape 12660
+#end
+
+#newmonster 12661 -- Great Huntress water shape
+#copystats 3379
+#copyspr 3379
+#landshape 3379
+#clearweapons
+#weapon 263
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 3379 -- Great Huntress
+#watershape 12661
+#end
+
+#newmonster 12662 -- Ubaran Soldier water shape
+#copystats 3455
+#copyspr 3455
+#landshape 3455
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 3455 -- Ubaran Soldier
+#watershape 12662
+#end
+
+#newmonster 12663 -- Mairu Champion water shape
+#copystats 3599
+#copyspr 3599
+#landshape 3599
+#clearweapons
+#weapon 14
+#weapon 1893
+#end
+
+#selectmonster 3599 -- Mairu Champion
+#watershape 12663
+#end
+
+#newmonster 12664 -- Nidherse water shape
+#copystats 3671
+#copyspr 3671
+#landshape 3671
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 3671 -- Nidherse
+#watershape 12664
+#end
+
+#newmonster 12665 -- Wolf Clan Reaver water shape
+#copystats 3674
+#copyspr 3674
+#landshape 3674
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 3674 -- Wolf Clan Reaver
+#watershape 12665
+#end
+
+#newmonster 12666 -- Jotun Scout water shape
+#copystats 3953
+#copyspr 3953
+#landshape 3953
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 3953 -- Jotun Scout
+#watershape 12666
+#end
+
+#newmonster 12667 -- Jotun Warrior water shape
+#copystats 3964
+#copyspr 3964
+#landshape 3964
+#clearweapons
+#weapon 17
+#weapon 1893
+#end
+
+#selectmonster 3964 -- Jotun Warrior
+#watershape 12667
+#end
+
+#newmonster 12668 -- Godihuskarl water shape
+#copystats 3967
+#copyspr 3967
+#landshape 3967
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 3967 -- Godihuskarl
+#watershape 12668
+#end
+
+#newmonster 12669 -- Muspel Huskarl water shape
+#copystats 3969
+#copyspr 3969
+#landshape 3969
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 3969 -- Muspel Huskarl
+#watershape 12669
+#end
+
+#newmonster 12670 -- Longdead water shape
+#copystats 6559
+#copyspr 6559
+#landshape 6559
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 6559 -- Longdead
+#watershape 12670
+#end
+
+#newmonster 12671 -- Turquoise Lancer water shape
+#copystats 6600
+#copyspr 6600
+#landshape 6600
+#clearweapons
+#weapon 357
+#weapon 1893
+#end
+
+#selectmonster 6600 -- Turquoise Lancer
+#watershape 12671
+#end
+
+#newmonster 12672 -- Lance Outrider water shape
+#copystats 6627
+#copyspr 6627
+#landshape 6627
+#clearweapons
+#weapon 357
+#weapon 1893
+#end
+
+#selectmonster 6627 -- Lance Outrider
+#watershape 12672
+#end
+
+#newmonster 12673 -- Maohi Spear Warrior water shape
+#copystats 6688
+#copyspr 6688
+#landshape 6688
+#clearweapons
+#weapon 373
+#weapon 671
+#weapon 1893
+#end
+
+#selectmonster 6688 -- Maohi Spear Warrior
+#watershape 12673
+#end
+
+#newmonster 12674 -- Enslaved Javelin W... water shape
+#copystats 6759
+#copyspr 6759
+#landshape 6759
+#clearweapons
+#weapon 12
+#weapon 1893
+#end
+
+#selectmonster 6759 -- Enslaved Javelin W...
+#watershape 12674
+#end
+
+#newmonster 12675 -- Tribal Spearman water shape
+#copystats 6876
+#copyspr 6876
+#landshape 6876
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 6876 -- Tribal Spearman
+#watershape 12675
+#end
+
+#newmonster 12676 -- Tribal Swordsman water shape
+#copystats 6878
+#copyspr 6878
+#landshape 6878
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 6878 -- Tribal Swordsman
+#watershape 12676
+#end
+
+#newmonster 12677 -- Swordsman water shape
+#copystats 6883
+#copyspr 6883
+#landshape 6883
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 6883 -- Swordsman
+#watershape 12677
+#end
+
+#newmonster 12678 -- Mi Gō Ngön Pa water shape
+#copystats 6886
+#copyspr 6886
+#landshape 6886
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 6886 -- Mi Gō Ngön Pa
+#watershape 12678
+#end
+
+#newmonster 12679 -- Mi Gò Ngôn Pa water shape
+#copystats 6886
+#copyspr 6886
+#landshape 6886
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 6886 -- Mi Gò Ngôn Pa
+#watershape 12679
+#end
+
+#newmonster 12680 -- Mi Dred water shape
+#copystats 6887
+#copyspr 6887
+#landshape 6887
+#clearweapons
+#weapon 1558
+#weapon 1893
+#end
+
+#selectmonster 6887 -- Mi Dred
+#watershape 12680
+#end
+
+#newmonster 12681 -- Mi Go Guide water shape
+#copystats 6889
+#copyspr 6889
+#landshape 6889
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 6889 -- Mi Go Guide
+#watershape 12681
+#end
+
+#newmonster 12682 -- Mi Gō Guide water shape
+#copystats 6889
+#copyspr 6889
+#landshape 6889
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 6889 -- Mi Gō Guide
+#watershape 12682
+#end
+
+#newmonster 12683 -- Bhödpa Dé Pa water shape
+#copystats 6890
+#copyspr 6890
+#landshape 6890
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 6890 -- Bhödpa Dé Pa
+#watershape 12683
+#end
+
+#newmonster 12684 -- Bhödpa Spearman water shape
+#copystats 6908
+#copyspr 6908
+#landshape 6908
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 6908 -- Bhödpa Spearman
+#watershape 12684
+#end
+
+#newmonster 12685 -- Bhödpa Warrior water shape
+#copystats 6910
+#copyspr 6910
+#landshape 6910
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 6910 -- Bhödpa Warrior
+#watershape 12685
+#end
+
+#newmonster 12686 -- Mi Gō Rngon Pa water shape
+#copystats 6922
+#copyspr 6922
+#landshape 6922
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 6922 -- Mi Gō Rngon Pa
+#watershape 12686
+#end
+
+#newmonster 12687 -- Mi Dred water shape
+#copystats 6923
+#copyspr 6923
+#landshape 6923
+#clearweapons
+#weapon 1558
+#weapon 1893
+#end
+
+#selectmonster 6923 -- Mi Dred
+#watershape 12687
+#end
+
+#newmonster 12688 -- Bhödpa Scout water shape
+#copystats 6924
+#copyspr 6924
+#landshape 6924
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 6924 -- Bhödpa Scout
+#watershape 12688
+#end
+
+#newmonster 12689 -- Bhödpa Dé Pa water shape
+#copystats 6925
+#copyspr 6925
+#landshape 6925
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 6925 -- Bhödpa Dé Pa
+#watershape 12689
+#end
+
+#newmonster 12690 -- Mi Gō Guide water shape
+#copystats 6926
+#copyspr 6926
+#landshape 6926
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 6926 -- Mi Gō Guide
+#watershape 12690
+#end
+
+#newmonster 12691 -- Iyokuo Skirmisher water shape
+#copystats 6960
+#copyspr 6960
+#landshape 6960
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 6960 -- Iyokuo Skirmisher
+#watershape 12691
+#end
+
+#newmonster 12692 -- Iyokuo water shape
+#copystats 6961
+#copyspr 6961
+#landshape 6961
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 6961 -- Iyokuo
+#watershape 12692
+#end
+
+#newmonster 12693 -- Iyokuo Veteran water shape
+#copystats 6963
+#copyspr 6963
+#landshape 6963
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 6963 -- Iyokuo Veteran
+#watershape 12693
+#end
+
+#newmonster 12694 -- Hunter water shape
+#copystats 6998
+#copyspr 6998
+#landshape 6998
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 6998 -- Hunter
+#watershape 12694
+#end
+
+#newmonster 12695 -- Warrior water shape
+#copystats 7001
+#copyspr 7001
+#landshape 7001
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 7001 -- Warrior
+#watershape 12695
+#end
+
+#newmonster 12696 -- Warrior water shape
+#copystats 7002
+#copyspr 7002
+#landshape 7002
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 7002 -- Warrior
+#watershape 12696
+#end
+
+#newmonster 12697 -- Mino water shape
+#copystats 7008
+#copyspr 7008
+#landshape 7008
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 7008 -- Mino
+#watershape 12697
+#end
+
+#newmonster 12698 -- Ali'i water shape
+#copystats 7040
+#copyspr 7040
+#landshape 7040
+#clearweapons
+#weapon 1546
+#weapon 252
+#weapon 1893
+#end
+
+#selectmonster 7040 -- Ali'i
+#watershape 12698
+#end
+
+#newmonster 12699 -- Naphtali Spearman water shape
+#copystats 7101
+#copyspr 7101
+#landshape 7101
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 7101 -- Naphtali Spearman
+#watershape 12699
+#end
+
+#newmonster 12700 -- Heavy Infantry water shape
+#copystats 7127
+#copyspr 7127
+#landshape 7127
+#clearweapons
+#weapon 7127
+#weapon 1893
+#end
+
+#selectmonster 7127 -- Heavy Infantry
+#watershape 12700
+#end
+
+#newmonster 12701 -- Mamluk Spearman water shape
+#copystats 7159
+#copyspr 7159
+#landshape 7159
+#clearweapons
+#weapon 7159
+#weapon 1893
+#end
+
+#selectmonster 7159 -- Mamluk Spearman
+#watershape 12701
+#end
+
+#newmonster 12702 -- Mubarizun water shape
+#copystats 7161
+#copyspr 7161
+#landshape 7161
+#clearweapons
+#weapon 7161
+#weapon 1893
+#end
+
+#selectmonster 7161 -- Mubarizun
+#watershape 12702
+#end
+
+#newmonster 12703 -- Mamluk Commander water shape
+#copystats 7180
+#copyspr 7180
+#landshape 7180
+#clearweapons
+#weapon 7180
+#weapon 1893
+#end
+
+#selectmonster 7180 -- Mamluk Commander
+#watershape 12703
+#end
+
+#newmonster 12704 -- Irami Spearman water shape
+#copystats 7191
+#copyspr 7191
+#landshape 7191
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 7191 -- Irami Spearman
+#watershape 12704
+#end
+
+#newmonster 12705 -- Mujahid water shape
+#copystats 7193
+#copyspr 7193
+#landshape 7193
+#clearweapons
+#weapon 746
+#weapon 1893
+#end
+
+#selectmonster 7193 -- Mujahid
+#watershape 12705
+#end
+
+#newmonster 12706 -- Irami Commander water shape
+#copystats 7205
+#copyspr 7205
+#landshape 7205
+#clearweapons
+#weapon 746
+#weapon 1893
+#end
+
+#selectmonster 7205 -- Irami Commander
+#watershape 12706
+#end
+
+#newmonster 12707 -- Dishirding water shape
+#copystats 7341
+#copyspr 7341
+#landshape 7341
+#clearweapons
+#weapon 7341
+#weapon 1893
+#end
+
+#selectmonster 7341 -- Dishirding
+#watershape 12707
+#end
+
+#newmonster 12708 -- Tuatha Wraithlord water shape
+#copystats 7403
+#copyspr 7403
+#landshape 7403
+#clearweapons
+#weapon 475
+#weapon 1893
+#end
+
+#selectmonster 7403 -- Tuatha Wraithlord
+#watershape 12708
+#end
+
+#newmonster 12709 -- Chachapoya Kuraka water shape
+#copystats 7441
+#copyspr 7441
+#landshape 7441
+#clearweapons
+#weapon 12
+#weapon 1893
+#end
+
+#selectmonster 7441 -- Chachapoya Kuraka
+#watershape 12709
+#end
+
+#newmonster 12710 -- Slave Soldier water shape
+#copystats 7462
+#copyspr 7462
+#landshape 7462
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 7462 -- Slave Soldier
+#watershape 12710
+#end
+
+#newmonster 12711 -- Aes Sidhe Lord water shape
+#copystats 7469
+#copyspr 7469
+#landshape 7469
+#clearweapons
+#weapon 475
+#weapon 1893
+#end
+
+#selectmonster 7469 -- Aes Sidhe Lord
+#watershape 12711
+#end
+
+#newmonster 12712 -- Aes Sidhe Rider water shape
+#copystats 7470
+#copyspr 7470
+#landshape 7470
+#clearweapons
+#weapon 651
+#weapon 1893
+#end
+
+#selectmonster 7470 -- Aes Sidhe Rider
+#watershape 12712
+#end
+
+#newmonster 12713 -- Chachapoya Warrior water shape
+#copystats 7649
+#copyspr 7649
+#landshape 7649
+#clearweapons
+#weapon 7649
+#weapon 1893
+#end
+
+#selectmonster 7649 -- Chachapoya Warrior
+#watershape 12713
+#end
+
+#newmonster 12714 -- Fianna water shape
+#copystats 7673
+#copyspr 7673
+#landshape 7673
+#clearweapons
+#weapon 7673
+#weapon 1893
+#end
+
+#selectmonster 7673 -- Fianna
+#watershape 12714
+#end
+
+#newmonster 12715 -- Varangian Guard water shape
+#copystats 7711
+#copyspr 7711
+#landshape 7711
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 7711 -- Varangian Guard
+#watershape 12715
+#end
+
+#newmonster 12716 -- Shark Guardian water shape
+#copystats 7790
+#copyspr 7790
+#landshape 7790
+#clearweapons
+#weapon 669
+#weapon 20
+#weapon 1893
+#end
+
+#selectmonster 7790 -- Shark Guardian
+#watershape 12716
+#end
+
+#newmonster 12717 -- Light Infantry water shape
+#copystats 7983
+#copyspr 7983
+#landshape 7983
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 7983 -- Light Infantry
+#watershape 12717
+#end
+
+#newmonster 12718 -- Commander water shape
+#copystats 7984
+#copyspr 7984
+#landshape 7984
+#clearweapons
+#weapon 746
+#weapon 1893
+#end
+
+#selectmonster 7984 -- Commander
+#watershape 12718
+#end
+
+#newmonster 12719 -- Finnaithae Javelineer water shape
+#copystats 8074
+#copyspr 8074
+#landshape 8074
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 8074 -- Finnaithae Javelineer
+#watershape 12719
+#end
+
+#newmonster 12720 -- Fenni Warrior water shape
+#copystats 8077
+#copyspr 8077
+#landshape 8077
+#clearweapons
+#weapon 17
+#weapon 1893
+#end
+
+#selectmonster 8077 -- Fenni Warrior
+#watershape 12720
+#end
+
+#newmonster 12721 -- Alaudae Horseman water shape
+#copystats 8122
+#copyspr 8122
+#landshape 8122
+#clearweapons
+#weapon 8
+#weapon 1893
+#end
+
+#selectmonster 8122 -- Alaudae Horseman
+#watershape 12721
+#end
+
+#newmonster 12722 -- Huntress water shape
+#copystats 8154
+#copyspr 8154
+#landshape 8154
+#clearweapons
+#weapon 611
+#weapon 1893
+#end
+
+#selectmonster 8154 -- Huntress
+#watershape 12722
+#end
+
+#newmonster 12723 -- Kharahasara water shape
+#copystats 8161
+#copyspr 8161
+#landshape 8161
+#clearweapons
+#weapon 75
+#weapon 1893
+#end
+
+#selectmonster 8161 -- Kharahasara
+#watershape 12723
+#end
+
+#newmonster 12724 -- Friend of Farbaute water shape
+#copystats 8201
+#copyspr 8201
+#landshape 8201
+#clearweapons
+#weapon 234
+#weapon 1893
+#end
+
+#selectmonster 8201 -- Friend of Farbaute
+#watershape 12724
+#end
+
+#newmonster 12725 -- Sobek Palatine water shape
+#copystats 8561
+#copyspr 8561
+#landshape 8561
+#clearweapons
+#weapon 45889
+#weapon 1893
+#end
+
+#selectmonster 8561 -- Sobek Palatine
+#watershape 12725
+#end
+
+#newmonster 12726 -- C'tissian Light Infantry water shape
+#copystats 8565
+#copyspr 8565
+#landshape 8565
+#clearweapons
+#weapon 643
+#weapon 1893
+#end
+
+#selectmonster 8565 -- C'tissian Light Infantry
+#watershape 12726
+#end
+
+#newmonster 12727 -- Mairu Champion water shape
+#copystats 8821
+#copyspr 8821
+#landshape 8821
+#clearweapons
+#weapon 14
+#weapon 1893
+#end
+
+#selectmonster 8821 -- Mairu Champion
+#watershape 12727
+#end
+
+#newmonster 12728 -- Sidhe Warrior water shape
+#copystats 8882
+#copyspr 8882
+#landshape 8882
+#clearweapons
+#weapon 645
+#weapon 1893
+#end
+
+#selectmonster 8882 -- Sidhe Warrior
+#watershape 12728
+#end
+
+#newmonster 12729 -- Sidhe Rider water shape
+#copystats 8884
+#copyspr 8884
+#landshape 8884
+#clearweapons
+#weapon 651
+#weapon 1893
+#end
+
+#selectmonster 8884 -- Sidhe Rider
+#watershape 12729
+#end
+
+#newmonster 12730 -- C'tissian Light Infantry water shape
+#copystats 9061
+#copyspr 9061
+#landshape 9061
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 9061 -- C'tissian Light Infantry
+#watershape 12730
+#end
+
+#newmonster 12731 -- Hausa Militia water shape
+#copystats 9601
+#copyspr 9601
+#landshape 9601
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 9601 -- Hausa Militia
+#watershape 12731
+#end
+
+#newmonster 12732 -- Hausa Infantry water shape
+#copystats 9604
+#copyspr 9604
+#landshape 9604
+#clearweapons
+#weapon 1
+#weapon 1893
+#end
+
+#selectmonster 9604 -- Hausa Infantry
+#watershape 12732
+#end
+
+#newmonster 12733 -- Hausa Cavalry water shape
+#copystats 9606
+#copyspr 9606
+#landshape 9606
+#clearweapons
+#weapon 1836
+#weapon 1837
+#weapon 1893
+#end
+
+#selectmonster 9606 -- Hausa Cavalry
+#watershape 12733
+#end
+
+#newmonster 12734 -- Yan Lifida water shape
+#copystats 9608
+#copyspr 9608
+#landshape 9608
+#clearweapons
+#weapon 357
+#weapon 1893
+#end
+
+#selectmonster 9608 -- Yan Lifida
+#watershape 12734
+#end
+
+
+
+#selectmonster 3018 -- Thyreophorite (Water)
+#clearweapons
+#weapon 643
+#weapon 1893 -- UW Javelin
+#end
+
+#selectmonster 2808 -- Pelagian Shore Fighter (Water)
+#clearweapons
+#weapon 1
+#weapon 1893 -- UW Javelin
+#end
+
+#selectmonster 3028 -- Erytheian Scout (Water)
+#clearweapons
+#weapon 643
+#weapon 1893 -- UW Javelin
+#end
+
+#selectmonster 2869 -- Apostate of the Closed Realm (Water)
+#clearweapons
+#weapon 6
+#weapon 1893 -- UW Javelin
+#end
+
+
+
+
+-- ENDUNITS END OF UW JAVELINS
+
+-- FOLDUNITS START OF SHAPE CHANGE MONSTERS 13000~13999
 
 
 -- EA Skratti combat shape changes
@@ -123518,7 +126647,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1091 -- Wooden Construction
 #name "Build Wicker Man"
 #descr "To the druids the building of wooden statues is seen as an act of worship. The greatest act is the burning of a human sacrifice in such a statue. The caster constructs a great wicker frame and a single human is bound within the structure. The construct is then animated and sent to destroy the enemies of the faith. The structure is sacred, and once in battle it will ignite to bring flaming death to the enemies of the Awakening God. After the battle the sacrifice will be complete and the construct will collapse into a pile of ash."
-#researchlevel 3
+#researchlevel 4
 #fatiguecost 200
 #pathlevel 0 2
 #path 1 9
@@ -124381,7 +127510,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #selectspell 2551
 #name "Shard of Heaven"
 #descr "Before settling in T'ien Ch'i the Barbarian Kings worshipped the sky, the earth and the ancestors. Many still venerate the sky and in particular the mountains where earth and sky meet. With this spell an altar is carved from stones brought from a high mountain peak and a sky-spirit is called to inhabit the structure. The altar so created will attract storms and lightning each month. The spirit is strong in the magic of earth and sky, and the altar will allow it to cast rituals of air magic further away. The local populace may take to worshipping the sky to the exclusion of the true God."
-#researchlevel 5
+#researchlevel 4
 #school 3
 #path 0 1
 #path 1 3
@@ -124452,7 +127581,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #name "Construct Fire Arrows"
 #descr "The sages of T'ien Ch'i know the secret to creating a burning powder that can be used in war. Arrows enhanced with the powder can be ignited to bring flaming death to enemies. The caster creates a great quantity of these arrows, enough to supply an army on campaign. The arrows will be transported in a cart alongside the army and the general must take care to ensure no harm comes to it."
 #school 3
-#researchlevel 5
+#researchlevel 4
 #path 0 0
 #pathlevel 0 2
 #effect 10021
@@ -127257,7 +130386,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #descr "The caster constructs a great Dolmen to act a gateway to the spirit realm. A Dolmen is a rock construction consisting of two or more vertical pillars supporting a horizontal slab. They are imbued with the power of the fey, and at auspicious times of the month act as a gateway between the mortal world and the Land of the Ever Young. If the Dolmen is attacked several Aes Sidhe warriors will emerge to defend it. Multiple Dolmen in a province may interfere with each other."
 #details "Dolmen have a 30% chance per turn to close if multiple are present."
 #school 3
-#researchlevel 5
+#researchlevel 4
 #path 0 3
 #pathlevel 0 2
 #path 1 7
@@ -129731,7 +132860,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #descr "The caster uses the teachings of Azazel, master of war and weaponsmithing, to recreate the forge used to forge weapons and armor at the dawn of time. The forge will allow the creation of weapons and armor in great quantities and will allow the creation of magical items using fewer gems. In addition, each month up to three Rephaite warriors can be recruited with magical flaming weapons and armor. The magic of the forge will last longer for each gem spent during the casting. This spell can only be cast at the city of Gomorrah."
 #details "Resources +100, Construction bonus 10%, allows recruitment of Dawn Warriors."
 #school 3
-#researchlevel 5
+#researchlevel 6
 #path 0 0
 #path 1 3
 #pathlevel 0 3
@@ -129977,7 +133106,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 1097 -- Golem Construction
 #name "Consecrate God-Statue"
 #descr "In Ur the presence of the Gods is symbolized by statues erected around the great city. Once constructed, these idols are consecrated through special nocturnal rituals where they are given life and so can see and eat. With this spell incense is burned before a great statue to entice a Divine Spirit. If the deity approves it will accept the image and agree to manifest its will through the statue. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items. The statue is immobile, however in a physical battle it would be difficult to destroy though it cannot strike back."
-#researchlevel 5
+#researchlevel 6
 #path 0 3
 #path 1 6
 #pathlevel 0 4
@@ -131630,7 +134759,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell "Create Shoggoth Servitor"
 #name "Create Shoggoth Horde"
 #descr "The caster mixes voidstuff with a great amount of living matter to create several Shoggoths. Shoggoths are amoeba-like living constructs made out of iridescent slime, able to form limbs and organs at will. They are protoplasmic and can drain the fluids from living creatures. Shoggoths have no real consciousness and are controlled through the mental powers of the Illithid. This spell creates several buds no larger than a human, however over time or through absorption of living matter they can grow to enormous size. More powerful mages can create more Shoggoths with each casting."
-#researchlevel 5
+#researchlevel 4
 #path 0 2
 #pathlevel 0 3
 #path 1 4
@@ -131664,7 +134793,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell "Create Shoggoth Servitor"
 #name "Create Shoggoth Monstrosity"
 #descr "The caster mixes voidstuff with a huge amount of living matter to create a gigantic Shoggoth. Shoggoths are amoeba-like living constructs made out of iridescent slime, able to form limbs and organs at will. They are protoplasmic and can drain the fluids from living creatures. Shoggoths have no real consciousness and are controlled through the mental powers of the Illithid. This spell creates a single huge Shoggoth that can devour humans whole. These gigantic monstrosities will birth smaller Shoggoth buds, releasing a stream of short lived protoplasmic creatures."
-#researchlevel 7
+#researchlevel 8
 #path 0 2
 #pathlevel 0 4
 #path 1 4
@@ -132422,7 +135551,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Rebuild Colossus"
 #descr "The caster rebuilds the fallen Colossus of Therodos that stands broken at the entrance to Telkhinis. The Colossus was a gigantic statue fashioned in the image of Demonax, King of the Telkhines. Before the fall it stood at the entrance to the Great Harbour in Therodos guarding the capital against enemy assault. Once rebuilt the statue will be inhabited by a powerful spirit of the earth first bound into it long ago by Demonax himself. As a symbol of the power of Therodos it was known across the world, and once rebuilt spectral former inhabitants of the great city will arrive in great numbers. Whilst it is present the capital will be very hard to besiege, as the colossus counts as 100 men when defending a castle."
 #school 3
-#researchlevel 5
+#researchlevel 6
 #path 0 3
 #pathlevel 0 4
 #effect 10089
@@ -132918,7 +136047,7 @@ All effects scale with friendly Dominion."
 #name "Create Cheirosiphones"
 #descr "The caster creates several Cheirosiphones to be used against the enemies of Pythium. The Cheirosiphon is a hand held projector for the sticky oil known as Pythian Fire. Pythian Fire is a closely guarded secret of the empire and great care is taken never to reveal the formula to outsiders. Through a complex pipe system the oil is ignited as it is squirted out of the projector at the enemy."
 #school 3
-#researchlevel 5
+#researchlevel 4
 #path 0 0
 #pathlevel 0 2
 #fatiguecost 2000
@@ -134115,7 +137244,7 @@ All effects scale with friendly Dominion."
 #selectspell 3277
 #name "Sanctify Huaca Stone"
 #descr "When the Huaca left for the Celestial Sphere a few of them remained in this world but were gradually turned to stone. These petrified Huacas have become shrines and places of worship for the Nazcan people. Through ritual magic the Huaca Stone can be awakened and its spirit can aid the Nazcan people once more. Petrified Huaca can only be awoken on high mountains, where they are closer to the Celestial Sphere. The presence of a Huaca Stone will bring good fortune and prosperity to the region, and as long as it remains the province will always include a temple."
-#researchlevel 5
+#researchlevel 6
 #school 3
 #path 0 3
 #path 1 9
@@ -134386,7 +137515,7 @@ All effects scale with friendly Dominion."
 #name "Animate Effigy of the Sun"
 #descr "In Nazca when an Inca is mummified the heart and viscera are ceremonially burnt to return their essence to the sun. The remaining ashes are mixed with gold dust and placed within effigies made of gold, the sacred metal. Over time the concentration of magical energy causes the statues to begin to speak and shine like the sun. The oldest statues can be brought to life through sacred rituals performed only by the Inca and made to serve the Sun Kings. They have absorbed much arcane power over the centuries and are magically and physically powerful. This spell can only be cast be a living Inca."
 #school 3
-#researchlevel 7
+#researchlevel 6
 #path 0 0
 #pathlevel 0 4
 #effect 10021
@@ -143476,7 +146605,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #selectspell 4043
 #name "Shard of Heaven"
 #descr "The tribes of Tartary worship the sky, the earth and the ancestors. The most sacred areas are the mountains where earth and sky meet. With this spell an altar is carved from stones brought from a high mountain peak and a sky-spirit is called to inhabit the structure. The altar so created will attract storms and lightning each month. The spirit is strong in the magic of earth and sky, and the altar will allow it to cast rituals of air magic further away. The local populace may take to worshipping the sky to the exclusion of the true God."
-#researchlevel 5
+#researchlevel 4
 #school 3
 #path 0 1
 #path 1 3
@@ -150663,9 +153792,10 @@ Can only be cast once per combat round."
 #mainlevel 2
 #secondarypath 6
 #secondarylevel 2
-#mr 2
+#mr 3
+#autobless
 #spiritsight
-#diseaseres 75
+#diseaseres 100
 #itemcost1 -50
 #itemcost2 -50
 #type 8  -- Misc
@@ -150974,7 +154104,7 @@ Can only be cast once per combat round."
 #constlevel 3
 #mainpath 0
 #mainlevel 1
-#itemcost1 -20
+#itemcost1 -40
 #type 8
 #chestwound
 #weapon 1673 -- Vial of Chemicals
@@ -152058,9 +155188,9 @@ This will also prevent their skin from drying out."
 #mainpath 6
 #mainlevel 1
 #itemcost1 -40
+#itemcost2 -40
 #secondarypath 5
 #secondarylevel 1
-#itemcost2 -40
 #type 8
 #magiccommand 1
 #battlesum1 2223  -- Large Spider
@@ -152486,7 +155616,7 @@ This will also prevent their skin from drying out."
 #type 2
 #reinvigoration -2
 #spell "Magma Bolts"
-#makemonsters1 "Magma Child"
+#templetrainer "Magma Child"
 #weapon 238  -- Magic Staff
 #restricted 16 -- EA Abysia
 #restricted 15 -- EA Agartha
@@ -153328,7 +156458,7 @@ This will also prevent their skin from drying out."
 #name "Oniate"
 #descr "Oniate is a mummified hand kept carefully wrapped in leathers. When released from its bonds, it flies towards an enemy and attempts to touch them. Anyone touched by the disembodied hand will be instantly killed."
 #spr "nihuala/oniateicon.tga"
-#constlevel 7
+#constlevel 9
 #mainpath 5 -- -\ Death 1
 #mainlevel 1  -- /
 #secondarypath 6 -- -\ Nature 1
@@ -153866,6 +156996,10 @@ This will also prevent their skin from drying out."
 #descr "This standard drains life energy from enemies and adds it to the owner of the standard. The standard also causes fear in all nearby enemies. The holder and those under their command will be able to travel under the sea, as if undead."
 #end
 
+#selectitem 140 -- Vajra
+#itemcost1 -40
+#end
+
 #selectitem 142 -- Sling of Accuracy
 #itemcost1 -80
 #end
@@ -154037,6 +157171,7 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 134 -- Anemone Mace
+#poisonres 5
 #itemcost1 -40
 #end
 
@@ -154472,6 +157607,10 @@ This will also prevent their skin from drying out."
 
 #selectitem 224 -- Oppressors Headband
 #itemcost1 -66
+#end
+
+#selectitem 227 -- Headdress of the Bull
+#itemcost1 -40
 #end
 
 #selectitem 228 -- Huaca Headdress
@@ -176462,10 +179601,6 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 -- END DEBUG SECTION
-
-
-
-
 
 
 
