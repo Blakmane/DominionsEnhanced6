@@ -125013,11 +125013,11 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2347
 #copyspell 1103 -- Protection from Fire
 #name "Prayer of Fire"
-#descr "The priest utters a prayer that renders them immune to the effects of fire and flames."
+#descr "The priest utters a prayer that protects them from the effects of fire and flames."
+#details "Grants 10 Fire Resistance."
 #researchlevel 0
 #school 7
 #path 0 9
-#effect 524
 #pathlevel 0 1
 #fatiguecost 0
 #casttime 100
@@ -125027,11 +125027,11 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2348
 #copyspell 1107 -- Protection from Lightning
 #name "Prayer of Air"
-#descr "The priest utters a prayer that renders them immune to the effects of shock and lightning."
+#descr "The priest utters a prayer that protects them from the effects of shock and lightning."
+#details "Grants 10 Shock Resistance."
 #researchlevel 0
 #school 7
 #path 0 9
-#effect 524
 #pathlevel 0 1
 #fatiguecost 0
 #casttime 100
@@ -125039,13 +125039,13 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #end
 
 #selectspell 2349
-#copyspell 1107 -- Protection from Cold
+#copyspell 1108 -- Protection from Cold
 #name "Prayer of Water"
-#descr "The priest utters a prayer that renders them immune to the effects of cold and frost."
+#descr "The priest utters a prayer that protects them from the effects of cold and frost."
+#details "Grants 10 Cold Resistance."
 #researchlevel 0
 #school 7
 #path 0 9
-#effect 524
 #pathlevel 0 1
 #fatiguecost 0
 #casttime 100
@@ -125100,10 +125100,10 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1114 -- Poison Resistance
 #name "Prayer of Nature"
 #descr "The priest utters a prayer that renders them immune to the effects of poisons of all kinds."
+#details "Grants 15 Poison Resistance."
 #researchlevel 0
 #school 7
 #path 0 9
-#effect 524
 #pathlevel 0 1
 #fatiguecost 0
 #casttime 100
