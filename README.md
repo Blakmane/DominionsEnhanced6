@@ -2,14 +2,10 @@
  Dominions Enhanced port to Dominions 6.
 
 Dominions Enhanced is back. Red edition is over, now is the time of the Blue edition.  
-This mod has been a pretty massive undertaking and I want to extend a massive thanks to @Blakmane and @Flintlock for keeping me on track, as well as @Selgeron as a relatively recent addition to the team. It's difficult to overstate their help in this project. :)  
-Also want to give thanks to the rest of the beta testers - @Dan, @TheGrandWombat, @kurtcop, @torshin, @Aneadorn. And thanks to @laodie as well for spritework.  
-And lastly, thanks to all the prior developers and contributors to DE before it ended up in my hands;  
-@RedRob most of all, as well as Boing, Kate_Micucci, Amuys, Zonk, Nounours, Pyg, Llamabeast, Turin, Quantum_Mechani, Heartless, Sombre, Globu, Ohlmann, Sy and others.  
-There's still a lot of work to be done, but happy to get this out there so games can be played.  
-I'm sure there's going to be broken things, both in balance and bugs, and unpopular changes, but that's what the development process is for. If you find something busted, please let us know so we can take a look at it and decide if there's an issue to be fixed.  
+For new players, Dominions Enhanced is a massive DLC-sized mod that adds thousands of new spells, items, and monsters, as well as new nations, and overhauls, reworks, or tweaks nearly every aspect of the entire vanilla game. All nations gain a plethora of national spells along with balance tweaks.  
+The best way to experience DE is typically by jumping in and playing.
 
-These are the highlights for DE6 changes:
+These are the highlights for Dominions Enhanced 6 changes since Dominions Enhanced for 5:
 
 Pretenders & Building:
 - Everything has been repriced from the ground up. Everything is generally cheaper, expect to have more points to work with.
@@ -217,3 +213,11 @@ Nations:
   - Rotterland - Unfinished; Pending content. Mosquito Swarm completely reworked.
   - Nihuala - Not included in initial release. Will be overhauled later.
   - Houssa - New nation. Phaecia successor with Machaka elements. Sacred available only out of the capital.
+
+
+This mod has been a pretty massive undertaking and I want to extend a massive thanks to @Blakmane and @Flintlock for keeping me on track, as well as @Selgeron as a relatively recent addition to the team. It's difficult to overstate their help in this project. :)  
+Also want to give thanks to the rest of the beta testers - @Dan, @TheGrandWombat, @kurtcop, @torshin, @Aneadorn. And thanks to @laodie as well for spritework.  
+And lastly, thanks to all the prior developers and contributors to DE before it ended up in my hands;  
+@RedRob most of all, as well as Boing, Kate_Micucci, Amuys, Zonk, Nounours, Pyg, Llamabeast, Turin, Quantum_Mechani, Heartless, Sombre, Globu, Ohlmann, Sy and others.  
+There's still a lot of work to be done, but happy to get this out there so games can be played.  
+I'm sure there's going to be broken things, both in balance and bugs, and unpopular changes, but that's what the development process is for. If you find something busted, please let us know so we can take a look at it and decide if there's an issue to be fixed. 
