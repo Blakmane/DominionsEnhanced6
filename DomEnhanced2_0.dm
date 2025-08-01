@@ -24399,6 +24399,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #magicskill 6 2 -- N
 #magicskill 7 2 -- G
 #incunrest -50
+#moreluck 0
 #okleader
 #magicbeing
 #flying
@@ -80240,6 +80241,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #def 0
 #mr 18
 #mastersmith 0
+#moreluck 1
 
 #itemslots 262144
 #clearmagic
@@ -143566,23 +143568,6 @@ All effects scale with friendly Dominion."
 #nextspell 3804
 #end
 
-#selectspell 3805 -- Protection of the Desert Sun
-#copyspell 833 -- Fire Resistant Warriors
-#name "Protection of the Desert Sun"
-#descr "This spell provides protection to a few soldiers from scorching heat."
-#school 4
-#researchlevel 4
-#path 0 0
-#pathlevel 0 2
-#fatiguecost 40
-#aoe 1003 -- 5+
-#restricted 28
-#restricted 193 -- EA Alchera
-#restricted 28 -- EA Machaka
-#restricted 76 -- MA Machaka
-#restricted 113 -- LA C'tis
-#end
-
 #selectspell 3806
 #copyspell 983 -- Summon Kithaironic Lion
 #name "Pride of Sacred Lions"
@@ -146331,24 +146316,6 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #spec 549601280 -- ignore shields, no inanimate, no mindless, uwok, friendly only
 #restricted 34 -- Muspelheim
 #nextspell 3981
-#end
-
-#selectspell 3982 -- call the bergrisar
-#copyspell 1078 -- ghost riders
-#name "Call the Bergrisar"
-#descr "The caster incites the bergrisar, mountain giants of the land, to attack armies in the province. After the attack they will return to their mountain homes."
-#details "30 Jotun Bondi led by a Herse will attack the province. This spell can only target mountainous provinces."
-#researchlevel 5
-#school 5
-#path 0 0
-#pathlevel 0 3
-#fatiguecost 800
-#damage 3962 -- bondi
-#nreff 31
-#farsumcom 3954 -- herse
-#onlygeodst 8388624  -- Mountain/Border only
-#spec 0
-#restricted 34 -- Muspelheim
 #end
 
 
@@ -149616,20 +149583,6 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #range 0
 #end
 
-#selectspell 4251 -- Living Illearth
-#copyspell "Living Fire"
-#name "Living Illearth"
-#descr "Blood is spilled onto the earth, summoning a group of Illearth elementals.  Illearth elementals can absorb the blood of their fallen enemies to become larger.  More powerful mages can summon more elementals."
-#path 0 8
-#path 1 3 
-#pathlevel 0 3
-#pathlevel 1 2
-#fatiguecost 300
-#nreff 1000
-#school 6
-#damage 3757
-#end
-
 #selectspell 4252
 #name "The Tempest Eagle"
 #descr "The Tempest Eagle is a legendary eagle, raised as a companion by an ancient deity of the heavens. In battle he will beat his wings to create a howling windstorm that will prevent flight and blow arrows off their course. "
@@ -150094,6 +150047,57 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #range 0
 #nextspell 3722
 #end
+
+#selectspell 4277 -- Protection of the Desert Sun
+#copyspell 833 -- Fire Resistant Warriors
+#name "Protection of the Desert Sun"
+#descr "This spell provides protection to a few soldiers from scorching heat."
+#school 4
+#researchlevel 4
+#path 0 0
+#pathlevel 0 2
+#fatiguecost 40
+#aoe 1003 -- 5+
+#restricted 28
+#restricted 193 -- EA Alchera
+#restricted 28 -- EA Machaka
+#restricted 76 -- MA Machaka
+#restricted 113 -- LA C'tis
+#end
+
+#selectspell 4278 -- call the bergrisar
+#copyspell 1078 -- ghost riders
+#name "Call the Bergrisar"
+#descr "The caster incites the bergrisar, mountain giants of the land, to attack armies in the province. After the attack they will return to their mountain homes."
+#details "30 Jotun Bondi led by a Herse will attack the province. This spell can only target mountainous provinces."
+#researchlevel 5
+#school 5
+#path 0 0
+#pathlevel 0 3
+#fatiguecost 800
+#damage 3962 -- bondi
+#nreff 31
+#farsumcom 3954 -- herse
+#onlygeodst 8388624  -- Mountain/Border only
+#spec 0
+#restricted 34 -- Muspelheim
+#end
+
+#selectspell 4279 -- Living Illearth
+#copyspell "Living Fire"
+#name "Living Illearth"
+#descr "Blood is spilled onto the earth, summoning a group of Illearth elementals.  Illearth elementals can absorb the blood of their fallen enemies to become larger.  More powerful mages can summon more elementals."
+#path 0 8
+#path 1 3 
+#pathlevel 0 3
+#pathlevel 1 2
+#fatiguecost 300
+#nreff 1000
+#school 6
+#damage 3757
+#end
+
+
 
 
 
