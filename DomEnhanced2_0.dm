@@ -151395,7 +151395,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 714 -- Blast of Unlife
 #pathlevel 0 2
-#aoe 106 -- 8+
+#aoe 1006 -- 8+
 #fatiguecost 100
 #end
 
