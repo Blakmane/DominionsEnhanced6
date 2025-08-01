@@ -1,4 +1,4 @@
-#modname "Dominions Enhanced 2.1"
+#modname "Dominions Enhanced 2 (GitHub)"
 #description "Adds or revises many spells, sites, Pretenders, mercenaries, items and nations. Includes work by Red_Rob, Boing, Kate_Micucci, Amuys, Zonk, Nounours, Pyg, Llamabeast, Turin, Quantum_Mechani, Heartless, Sombre, Globu, Ohlmann, Sy and others."
 #icon "domenhanced/banner.png"
 #version 2.1
