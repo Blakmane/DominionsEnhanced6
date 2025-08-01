@@ -36859,7 +36859,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #end
 
 #newmonster 7872
-#copystats 24  -- indy Light Cavalry
+#copystats 28  -- indy Light Infantry
 #cleararmor
 #clearweapons
 #name "Pooka"
@@ -55105,6 +55105,8 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #domsummon2 7674 -- Scarecrow
 #mountmnr 9107
 #skilledrider 7
+#polyimmune
+#unique
 #end
 
 #newmonster 9109 -- Harvester fall
@@ -115172,7 +115174,7 @@ Priests: Strong"
 #aiearthnation
 #ainaturenation
 #aigoodbless 50
-#blessbonus 1
+#blessbonus 2
 #hero1 6839 -- Warrior Twin
 #hero2 6840 -- Warrior Twin
 #hero3 6841 -- Masawau Priest
@@ -123754,7 +123756,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 4
 #path 0 7
 #pathlevel 0 2
-#path 1 5
+#path 1 6
 #pathlevel 1 1
 #effect 10001
 #fatiguecost 400
@@ -123889,7 +123891,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1308 -- Rage of the Cornered Rat
 #name "Savage Strength"
 #descr "The caster awakens the primal strength in a few nearby animals. This will have no effect on animals without a mind."
-#details "Grants Str +4"
+#details "Grants Str +4. Affects animals only."
 #school 4
 #researchlevel 2
 #pathlevel 0 1
@@ -123903,6 +123905,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1308 -- Rage of the Cornered Rat
 #name "Cat's Ninth Life" -- Renamed from Cat's Fortune as it implies luck
 #descr "It is well known that cats have nine lives. The caster borrows one of these and grants it to a few friendly animals. The first blow that would strike them instead miraculously misses the target. This will have no effect on animals without a mind."
+#details "Grants Twist Fate. Affects animals only."
 #school 1
 #researchlevel 2
 #pathlevel 0 1
@@ -123982,7 +123985,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1223 -- Antimagic
 #name "Primal Resilience"
 #descr "The mage strengthens the minds of all friendly animals on the battlefield against malign spells. The units will receive increased magic resistance for the remainder of the battle. This will have no effect on animals without a mind."
-#details "Magic Resistance +4"
+#details "Magic Resistance +4. The spell only affects animals."
 #researchlevel 5
 #fatiguecost 100
 #path 0 6
@@ -123993,7 +123996,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1436 -- Rush of Strength
 #name "Primal Power"
 #descr "The mage connects the minds of all friendly animals on the battlefield with gaia and imparts to them great strength. The units will receive increased strength for the remainder of the battle. This will have no effect on animals without a mind."
-#details "Grants Str +4"
+#details "Grants Str +4. This spell can only affect animals."
 #school 4
 #researchlevel 6
 #path 0 6
@@ -124014,7 +124017,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1436 -- Rush of Strength
 #name "Primal Rage"
 #descr "The mage connects the minds of all friendly animals on the battlefield with gaia and imparts to them great rage. The units will fight wildly with no thought for their own safety and will never flee. This will have no effect on animals without a mind."
-#details "Grants Berserk"
+#details "Grants Berserk. Animal only."
 #researchlevel 6
 #school 5
 #path 0 6
@@ -124040,7 +124043,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 819 -- Wooden Warriors
 #name "Protection of Gaia"
 #descr "The caster calls out to Gaia to bless her children with the protection of the forest. A group of animals nearby is wreathed in tough bark that shields them from harm. The bark will protect from blows, however it will quickly catch alight if exposed to open flames. This spell will have no effect on animals without a mind."
-#details "Grants natural protection +7 (max up to 10), or +1 if already 9 or higher. Also incurs susceptibility to Fire 5."
+#details "Grants natural protection +7 (max up to 10), or +1 if already 9 or higher. Also incurs susceptibility to Fire 5. This spell can only affect animals."
 #researchlevel 4
 #pathlevel 0 2
 #aoe 20
@@ -124215,7 +124218,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 216 -- Sermon of Courage
 #name "Gaia's Fury"
 #descr "The caster infuses the minds of a group of animals with the power of Gaia. This infusion of lifeforce may overload the hearts of some animals, however the remainder will be fully healed and gain increased strength and berserk fury. Around one in ten animals will succumb to the power. This spell will have no effect on animals without a mind."
-#details "Grants Str +4, Berserk and fully healed, Death chance: 10%"
+#details "Grants Str +4, Berserk and fully healed, Death chance: 10%. This spell can only affect animals."
 #school 1
 #researchlevel 5
 #path 0 6
@@ -124424,7 +124427,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2296
 #name "Gaia's Warding"
 #descr "The caster reaches out and connects the minds of all friendly animals on the battlefield to Gaia. Their hides will become thick and barklike and their wounds will close and heal quickly. As a side effect they will become more vulnerable to fire. This spell will have no effect on mindless animals."
-#details "Grants regeneration 10%, natural protection 10, or +1 if already 10 or higher. Also incurs susceptibility to Fire 5."
+#details "Grants regeneration 10%, natural protection 10, or +1 if already 10 or higher. Also incurs susceptibility to Fire 5. Affects animals only."
 #school 1
 #researchlevel 7
 #path 0 6
@@ -127938,6 +127941,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #copyspell 1324 -- Charm Animal
 #name "King of Beasts"
 #descr "The Lion Clan of Machaka have taken the mantle of King of the Beasts from their Totem and animals of all kinds will bow to their will. With this spell an animal is charmed by the mage."
+#details "Charm. This spell can only affect animals."
 #researchlevel 1
 #restricted 28
 #end
@@ -128580,7 +128584,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #copyspell 783 -- Enlarge
 #name "Imbue with N'um"
 #descr "The caster performs a ritual to imbue an animal with N'um, sacred energy. The creature will increase in size as it is infused with energy and will manifest the blessing of the Lord, even if not sacred. This spell will only affect animals."
-#details "Target is blessed, gains Size +1, HP +30%, Str +3, Def -1, Map move +2."
+#details "Target is blessed, gains Size +1, HP +30%, Str +3, Def -1. This spell can only affect animals."
 #researchlevel 0
 #school 7
 #pathlevel 0 3
@@ -128599,7 +128603,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #copyspell 783 -- Enlarge
 #name "Flood of N'um"
 #descr "The caster performs a ritual to imbue a group of animals with N'um, sacred energy. The creatures will increase in size as they are infused with energy and will manifest the blessing of the Lord, even if not sacred. This spell only works on animals."
-#details "Targets are blessed, gain Size +1, HP +30%, Str +3, Def -1, Map move +2."
+#details "Targets are blessed, gain Size +1, HP +30%, Str +3, Def -1. This spell can only affect animals."
 #researchlevel 6
 #pathlevel 0 4
 #path 1 9
@@ -150004,7 +150008,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 
 #selectspell 4264
 #copyspell 935 -- Pack of Wolves
-#name "Hollow Lord"
+#name "Summon the Harvester"
 #descr "The caster spills a great quantity of blood in the middle of a farming field to draw the Harvester, the original and most power of the Hollow Lords, and make a pact with him. The Harvester is an ancient demonic being of the dreamwild that takes the appearance of a scarecrow riding atop a dark steed wielding a great scythe with which he may harvest the souls of those he cuts down with it. He draws power from the Fall and will be more efficient at blood hunting during those months."
 #researchlevel 7
 #school 6
@@ -152490,6 +152494,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1308 -- Rage of the Cornered Rat
+#details "Grants Berserk. The spell only affects animals."
 #aoe 3002 -- 5+3
 #pathlevel 0 1
 #ainocast 1
@@ -153937,11 +153942,12 @@ Can only be cast once per combat round."
 #copyitem 310 -- Ring of Tamed Lightning
 #spr "magicenhanced/eeiairring.tga"
 #name "Obscuro's Ring"
-#descr "This ring was forged by Obscuro, the Hidden Master and was used by the illusionist for many years. It holds the power to misdirect and confuse others about the bearers true position, aswell as protecting the bearer from lightning. Perhaps its greatest power however manifests when taken to the highest mountain peaks. There it will capture and direct lightning directly from the clouds to form magical air gems. Eventually Obscuro was captured by a rival mage, and whilst the wily wizard escaped with his life the ring was seized and its whereabouts are currently unknown."
+#descr "This ring was forged by Obscuro, the Hidden Master and was used by the illusionist for many years. It holds the power to misdirect and confuse others about the bearers true position. But its greatest power however manifests when taken to mountain peaks under clear skies during the twilight hours. There it will capture and direct the moon's rays into pure gems of Glamour. Eventually Obscuro was captured by a rival mage, and whilst the wily wizard escaped with his life the ring was seized and its whereabouts are currently unknown."
 #mainpath 7
 #mainlevel 3
 #constlevel 5
 #unique
+#shockres 0
 #autospell "Displace Body"
 #end
 
@@ -156264,8 +156270,8 @@ This will also prevent their skin from drying out."
 #descr "Enchanted rubies are studded into the surface of this obsidian cuirass. In battle the rubies glow with intense heat, burning nearby enemies and creating distortions that hide the wearer. The wearer will be somewhat protected from heat and flames."
 #constlevel 5
 #mainpath 0
-#mainlevel 7
-#secondarypath 1
+#mainlevel 1
+#secondarypath 7
 #secondarylevel 1
 #type 5
 #armor "Obsidian Cuirass"
@@ -165220,9 +165226,9 @@ This will also prevent their skin from drying out."
 #req_land 1
 #req_mountain 1
 #req_targitem 666 -- Obscuro's Ring
-#msg "Lightning has been captured using Obscuro's Ring and the resulting gems transported to the treasury."
+#msg "Moonbeams have been captured using Obscuro's Ring and the resulting gems transported to the treasury."
 #nolog
-#force1d3vis 1  -- 1D3 Air Gems
+#force1d3vis 7  -- 1D3 Glamour Gems
 #end
 
 #newevent
