@@ -1,7 +1,7 @@
-#modname "Dominions Enhanced 2.0"
+#modname "Dominions Enhanced 2.1"
 #description "Adds or revises many spells, sites, Pretenders, mercenaries, items and nations. Includes work by Red_Rob, Boing, Kate_Micucci, Amuys, Zonk, Nounours, Pyg, Llamabeast, Turin, Quantum_Mechani, Heartless, Sombre, Globu, Ohlmann, Sy and others."
 #icon "domenhanced/banner.png"
-#version 2.0
+#version 2.1
 
 
 
@@ -3939,7 +3939,7 @@
 #selectweapon 24 -- Long Bow
 #dmg 10 -- +1
 #att 3 -- +3
-#ammo 1001
+#ammo 24
 #end
 
 #selectweapon 152 -- Trueshot Longbow
@@ -10806,7 +10806,7 @@
 #armor "Iron cap"
 #armor "Shield"
 #rcost 10
-#gcost 10020
+#gcost 10012
 #mor 11
 #mapmove 3
 #ap 25
@@ -10823,6 +10823,7 @@
 #unmountedspr2 "venedia/un_knight2.tga"
 #descr "As most high-born Venedians care more for trade, art and politics than warfare, few choose to become knights and those who do are not as formidable as those other lands who ride fantastic beasts, carry enchanted arms and armor or are fanatical in their devotion to the church. However they are still brave and skilled fighters."
 #drawsize 0
+#gcost 10012
 #end
 
 #newmonster 6724
@@ -11596,7 +11597,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #enc 3
 #mapmove 20
 #ap 14
-#minsizeleader 5
+#minsizeleader 4
 #maxage 150
 #weapon 17  -- Axe
 #weapon 260  -- Throwing Axe
@@ -11629,7 +11630,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #holy
 #popkill 1
 #neednoteat
-#minsizeleader 5
+#minsizeleader 4
 #maxage 150
 #weapon 851  -- Magic Axe
 #armor 533 -- Starnake Scale
@@ -24046,7 +24047,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #spiritsight
 #montag 1013
 #nametype 126  -- Machaka Male
-#itemslots 794624 -- Head, 2 misc
+#itemslots 17571840 -- Crown, 2 misc
 #end
 
 #newmonster 7256
@@ -24398,6 +24399,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #magicskill 6 2 -- N
 #magicskill 7 2 -- G
 #incunrest -50
+#moreluck 0
 #okleader
 #magicbeing
 #flying
@@ -25412,7 +25414,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #spiritform
 #nametype 126  -- Machaka Male
 #montag 1013
-#itemslots 794624 -- Head, 2 misc
+#itemslots 17571840 -- Crown, 2 misc
 #end
 
 #newmonster 7309
@@ -27261,7 +27263,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #mapmove 26
 #weapon 4  -- Lance
 #weapon 202  -- Magic Sword
-#weapon 330  -- Alicorn
 #armor 19  -- Full Plate Mail
 #armor 21  -- Full Helmet
 #armor 92  -- Enchanted Shield
@@ -27874,7 +27875,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #darkvision 50
 #enc 2
 #montag 1025
-#formationfighter 3
+#formationfighter 5
 #bodyguard 4
 #weapon 675  -- Bronze Axe
 #armor 2  -- Shield
@@ -28110,6 +28111,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #noundeadleader
 #assassin
 #spiritsight
+#spiritform 
+#flying
 #patience 2
 #scalewalls
 #saltvul 3
@@ -29172,6 +29175,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #neednoteat
 #bodyguard 5
 #magicskill 7 1
+#custommagic 26880 100 -- ASNG
 #custommagic 26880 100 -- ASNG
 --#custommagic 10496 100  -- 100% ASN
 #weapon 474  -- Golden Sword
@@ -36859,7 +36863,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #end
 
 #newmonster 7872
-#copystats 24  -- indy Light Cavalry
+#copystats 28  -- indy Light Infantry
 #cleararmor
 #clearweapons
 #name "Pooka"
@@ -38942,6 +38946,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #rcost 1
 #descr "Lancers are the heavy cavalry of Rotterland. They use their powerful steeds and heavy armor to break enemy lines with a devastating lance charge. Only the most wealthy nobles can afford the armor and weaponry necessary to join the Lancers. Like all inhabitants of Rotterland they are disease-resistant and accustomed to living in wetlands."
 #diseaseres 50
+#gcost 10015
 #end
 
 #newmonster 7959
@@ -50105,13 +50110,12 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #maxage 2000
 #nowish
 #polyimmune
-#cleararmor
+#clearweapons
 #clearmagic
 #startitem 867
-#armor 288 -- shield
-#weapon 1828 -- flame sword
-#magicskill 0 4
-#magicskill 1 2
+#weapon 1828 -- Bright Sword
+#magicskill 0 5
+#magicskill 1 3
 #magicskill 5 2
 #end
 
@@ -50135,15 +50139,15 @@ With Ragnarok active, Surtr's sword is empowered and he will be able to destroy 
 #maxage 2000
 #nowish
 #polyimmune
-#cleararmor
+#clearweapons
 #clearmagic
 #startitem 867
-#armor 288 -- shield
-#weapon 1829 -- flame sword
+#weapon 1829 -- Ragnarok Bright Sword
 #magicskill 0 4
 #magicskill 1 2
 #magicskill 5 2
-#farthronekill 100
+#magicboost 0 1
+#farthronekill 50
 #onebattlespell 718 -- Firestorm
 #decscale 2 -- cold/heat
 #spreaddom 1
@@ -53452,6 +53456,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #descr "Destriers are heavy war horses of exceptional breeding and training. They are almost exclusively used by knights. Destriers are very expensive and they are always equipped with the best available armor. Destriers are trained to fight with their hooves while their rider swings his weapon. They are bred to be strong and heavy and are not as fast as regular war horses or riding horses."
 #cleararmor
 #armor 273 -- blacksteel barding
+#mr 8
 #end
 
 #newmonster 9050 -- Destrier fire plate
@@ -53463,6 +53468,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #fireres 10
 #fireshield 8
 #armor 564 -- fire plate
+#mr 8
 #end
 
 
@@ -55105,6 +55111,8 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #domsummon2 7674 -- Scarecrow
 #mountmnr 9107
 #skilledrider 7
+#polyimmune
+#unique
 #end
 
 #newmonster 9109 -- Harvester fall
@@ -55212,6 +55220,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #prot 4
 #def 9
 #str 15
+#holy
 #armor 251 -- Leather Barding
 #end
 
@@ -59931,7 +59940,7 @@ Cost 50 recruitment points."
 #spr2 "blue_bantaytubig/ugkoyscout2.png"
 #name "Ugkoy Scout"
 #descr "Scouts are trained to pass unseen through enemy territory and to travel efficiently even in mountainous and forested terrain. Their reports on enemy army movements and the resources in enemy lands are invaluable to the prudent warlord."
-#rpcost 3
+#rpcost 1
 #rcost 1
 #hp 12
 #str 11
@@ -60599,7 +60608,7 @@ Cost 50 recruitment points."
 #spr2 "houssa/9607_2_jarumi.png"
 #unmountedspr1 "houssa/9607_3_jarumi.png"
 #unmountedspr2 "houssa/9607_4_jarumi.png"
-#gcost 10025 
+#gcost 10025
 #rcost 1
 #rpcost 12000
 #hp 13
@@ -61526,6 +61535,7 @@ Boost all paths except blood by +1. Becomes a Yar Bori upon death or after two s
 #swimming
 #mr 8
 #morale 10
+#gcost 10025
 #end
 
 --Exalted War Horse (Yan Lifida)
@@ -68153,10 +68163,9 @@ Each month he will collect a magical pearl and can create more using water gems.
 #okundeadleader
 #douse 3
 #weapon 523  -- Golden Sickle
-#weapon 330  -- Alicorn
 #mounted
 --#itemslots 860678 -- No feet
-#mountmnr 3521
+#mountmnr 3524
 #skilledrider 1
 #regainmount 1
 #itemslots 860678
@@ -77026,7 +77035,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 384 -- Neter of Crafts
 #descr "The Neter is a giant of divine heritage. Given skills and powers of creation by a previous Pantokrator, he became the master crafter and chief architect of creation. With the creation of the world complete, his services were no longer needed and he was banished for eternity. Having created eternity, the Neter was not too concerned and waited for the Pantokrator to disappear. Now he has returned to claim the world he created."
 #diseaseres 100
-#gcost 250
+#gcost 270
 #pathcost 40
 #hp 95
 #prot 3
@@ -80232,6 +80241,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #def 0
 #mr 18
 #mastersmith 0
+#moreluck 1
 
 #itemslots 262144
 #clearmagic
@@ -83751,7 +83761,6 @@ Initiates of the Deep can be recruited in any land fort."
 #clearweapons
 #weapon 1688 -- Raterik's Morningstar
 #weapon 4  -- Lance
-#weapon 330  -- Alicorn
 #cleararmor
 #armor 40  -- black steel helmet
 #armor 38  -- black steel full plate
@@ -83809,7 +83818,6 @@ Initiates of the Deep can be recruited in any land fort."
 #holy
 #clearweapons
 #weapon 1695 -- Hero's Blade
-#weapon 330  -- Alicorn
 #onebattlespell "Personal Luck"  -- Luck
 #itemslots 2040326
 #incunrest -100
@@ -84880,16 +84888,16 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #custommagic 6144 100  -- 100% SD
 #custommagic 6144 50  -- 50% SD
 #cleararmor
-#armor 700 -- Starmetal Full Mail
-#armor 702 -- Starmetal Helmet
+#armor 550 -- Starmetal Full Mail
+#armor 552 -- Starmetal Helmet
 #end
 
 #selectmonster 737  -- Ether Lord
 #descr "An Ether Lord is an ancient mage and clan leader of the Ether Warriors. It was the Ether Lords who had drained the world of Arcana and led their clans into their otherworldly realm to continue their clan wars. Ether Lords are ethereal and very difficult to harm with non-magical weapons. Ether Lords use Moon Lances, magical spears that cause additional damage to magical beings. Ether Lords are powerful wielders of Astral magic as well as Death magic and can summon more of their kin to this world."
 #makemonsters1 736  -- Ether Warrior
 #cleararmor
-#armor 701 -- Starmetal Cuirass
-#armor 702 -- Starmetal Helmet
+#armor 551 -- Starmetal Cuirass
+#armor 552 -- Starmetal Helmet
 #end
 
 #selectmonster 740  -- Black Priest
@@ -87480,7 +87488,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #selectmonster 1840 -- Hydra Hatchling
 #prot 7 -- +3
 #str 13 -- +1
-#twiceborn 3830 -- s3 necrophidian
+#twiceborn 6830 -- s3 necrophidian
 #end
 
 #selectmonster 1841 -- Hydra Hatchling
@@ -89622,6 +89630,9 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #montag 1050  -- True Jinn
 #end
 
+#selectmonster 3398
+#maxage 525
+#end
 
 #selectmonster 3394  -- Serpent of the Underworld
 #clearmagic
@@ -96322,7 +96333,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #copyspr 7127
 #landshape 7127
 #clearweapons
-#weapon 7127
+#weapon 746
 #weapon 1893
 #end
 
@@ -96335,7 +96346,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #copyspr 7159
 #landshape 7159
 #clearweapons
-#weapon 7159
+#weapon 1
 #weapon 1893
 #end
 
@@ -96348,7 +96359,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #copyspr 7161
 #landshape 7161
 #clearweapons
-#weapon 7161
+#weapon 746
 #weapon 1893
 #end
 
@@ -96361,7 +96372,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #copyspr 7180
 #landshape 7180
 #clearweapons
-#weapon 7180
+#weapon 746
 #weapon 1893
 #end
 
@@ -96413,7 +96424,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #copyspr 7341
 #landshape 7341
 #clearweapons
-#weapon 7341
+#weapon 357
 #weapon 1893
 #end
 
@@ -96504,7 +96515,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #copyspr 7673
 #landshape 7673
 #clearweapons
-#weapon 7673
+#weapon 8
 #weapon 1893
 #end
 
@@ -115172,7 +115183,7 @@ Priests: Strong"
 #aiearthnation
 #ainaturenation
 #aigoodbless 50
-#blessbonus 1
+#blessbonus 2
 #hero1 6839 -- Warrior Twin
 #hero2 6840 -- Warrior Twin
 #hero3 6841 -- Masawau Priest
@@ -123754,7 +123765,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 4
 #path 0 7
 #pathlevel 0 2
-#path 1 5
+#path 1 6
 #pathlevel 1 1
 #effect 10001
 #fatiguecost 400
@@ -123889,7 +123900,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1308 -- Rage of the Cornered Rat
 #name "Savage Strength"
 #descr "The caster awakens the primal strength in a few nearby animals. This will have no effect on animals without a mind."
-#details "Grants Str +4"
+#details "Grants Str +4. Affects animals only."
 #school 4
 #researchlevel 2
 #pathlevel 0 1
@@ -123903,6 +123914,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1308 -- Rage of the Cornered Rat
 #name "Cat's Ninth Life" -- Renamed from Cat's Fortune as it implies luck
 #descr "It is well known that cats have nine lives. The caster borrows one of these and grants it to a few friendly animals. The first blow that would strike them instead miraculously misses the target. This will have no effect on animals without a mind."
+#details "Grants Twist Fate. Affects animals only."
 #school 1
 #researchlevel 2
 #pathlevel 0 1
@@ -123982,7 +123994,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1223 -- Antimagic
 #name "Primal Resilience"
 #descr "The mage strengthens the minds of all friendly animals on the battlefield against malign spells. The units will receive increased magic resistance for the remainder of the battle. This will have no effect on animals without a mind."
-#details "Magic Resistance +4"
+#details "Magic Resistance +4. The spell only affects animals."
 #researchlevel 5
 #fatiguecost 100
 #path 0 6
@@ -123993,7 +124005,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1436 -- Rush of Strength
 #name "Primal Power"
 #descr "The mage connects the minds of all friendly animals on the battlefield with gaia and imparts to them great strength. The units will receive increased strength for the remainder of the battle. This will have no effect on animals without a mind."
-#details "Grants Str +4"
+#details "Grants Str +4. This spell can only affect animals."
 #school 4
 #researchlevel 6
 #path 0 6
@@ -124014,7 +124026,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1436 -- Rush of Strength
 #name "Primal Rage"
 #descr "The mage connects the minds of all friendly animals on the battlefield with gaia and imparts to them great rage. The units will fight wildly with no thought for their own safety and will never flee. This will have no effect on animals without a mind."
-#details "Grants Berserk"
+#details "Grants Berserk. Animal only."
 #researchlevel 6
 #school 5
 #path 0 6
@@ -124040,7 +124052,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 819 -- Wooden Warriors
 #name "Protection of Gaia"
 #descr "The caster calls out to Gaia to bless her children with the protection of the forest. A group of animals nearby is wreathed in tough bark that shields them from harm. The bark will protect from blows, however it will quickly catch alight if exposed to open flames. This spell will have no effect on animals without a mind."
-#details "Grants natural protection +7 (max up to 10), or +1 if already 9 or higher. Also incurs susceptibility to Fire 5."
+#details "Grants natural protection +7 (max up to 10), or +1 if already 9 or higher. Also incurs susceptibility to Fire 5. This spell can only affect animals."
 #researchlevel 4
 #pathlevel 0 2
 #aoe 20
@@ -124215,7 +124227,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 216 -- Sermon of Courage
 #name "Gaia's Fury"
 #descr "The caster infuses the minds of a group of animals with the power of Gaia. This infusion of lifeforce may overload the hearts of some animals, however the remainder will be fully healed and gain increased strength and berserk fury. Around one in ten animals will succumb to the power. This spell will have no effect on animals without a mind."
-#details "Grants Str +4, Berserk and fully healed, Death chance: 10%"
+#details "Grants Str +4, Berserk and fully healed, Death chance: 10%. This spell can only affect animals."
 #school 1
 #researchlevel 5
 #path 0 6
@@ -124424,7 +124436,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2296
 #name "Gaia's Warding"
 #descr "The caster reaches out and connects the minds of all friendly animals on the battlefield to Gaia. Their hides will become thick and barklike and their wounds will close and heal quickly. As a side effect they will become more vulnerable to fire. This spell will have no effect on mindless animals."
-#details "Grants regeneration 10%, natural protection 10, or +1 if already 10 or higher. Also incurs susceptibility to Fire 5."
+#details "Grants regeneration 10%, natural protection 10, or +1 if already 10 or higher. Also incurs susceptibility to Fire 5. Affects animals only."
 #school 1
 #researchlevel 7
 #path 0 6
@@ -125009,11 +125021,11 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2347
 #copyspell 1103 -- Protection from Fire
 #name "Prayer of Fire"
-#descr "The priest utters a prayer that renders them immune to the effects of fire and flames."
+#descr "The priest utters a prayer that protects them from the effects of fire and flames."
+#details "Grants 10 Fire Resistance."
 #researchlevel 0
 #school 7
 #path 0 9
-#effect 524
 #pathlevel 0 1
 #fatiguecost 0
 #casttime 100
@@ -125023,11 +125035,11 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2348
 #copyspell 1107 -- Protection from Lightning
 #name "Prayer of Air"
-#descr "The priest utters a prayer that renders them immune to the effects of shock and lightning."
+#descr "The priest utters a prayer that protects them from the effects of shock and lightning."
+#details "Grants 10 Shock Resistance."
 #researchlevel 0
 #school 7
 #path 0 9
-#effect 524
 #pathlevel 0 1
 #fatiguecost 0
 #casttime 100
@@ -125035,13 +125047,13 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #end
 
 #selectspell 2349
-#copyspell 1107 -- Protection from Cold
+#copyspell 1108 -- Protection from Cold
 #name "Prayer of Water"
-#descr "The priest utters a prayer that renders them immune to the effects of cold and frost."
+#descr "The priest utters a prayer that protects them from the effects of cold and frost."
+#details "Grants 10 Cold Resistance."
 #researchlevel 0
 #school 7
 #path 0 9
-#effect 524
 #pathlevel 0 1
 #fatiguecost 0
 #casttime 100
@@ -125096,10 +125108,10 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1114 -- Poison Resistance
 #name "Prayer of Nature"
 #descr "The priest utters a prayer that renders them immune to the effects of poisons of all kinds."
+#details "Grants 15 Poison Resistance."
 #researchlevel 0
 #school 7
 #path 0 9
-#effect 524
 #pathlevel 0 1
 #fatiguecost 0
 #casttime 100
@@ -126422,7 +126434,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 9
 #pathlevel 0 5
 #nreff 400
-#fatiguecost 8000
+#fatiguecost 4000
 #damage 187  -- Longdead legionnaire
 #restricted 8 -- EA Ermor
 #nextspell "Reanimate the thousand dead"
@@ -127938,6 +127950,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #copyspell 1324 -- Charm Animal
 #name "King of Beasts"
 #descr "The Lion Clan of Machaka have taken the mantle of King of the Beasts from their Totem and animals of all kinds will bow to their will. With this spell an animal is charmed by the mage."
+#details "Charm. This spell can only affect animals."
 #researchlevel 1
 #restricted 28
 #end
@@ -128144,7 +128157,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #researchlevel 0
 #effect 10084
 #nreff 1
-#damage 272 -- Ench72
+#damage 283 -- Ench83 -- Grootslang Hunting
 #fatiguecost 100
 #end
 
@@ -128152,11 +128165,12 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #copyspell 759 -- Distill Gold
 #name "Cave of the Grootslang"
 #descr "The caster locates the lair of a Grootslang. These primordial, gigantic snakelike creatures live in deep caves and fill their lairs with diamonds. The caster sneaks into such a cave and hurriedly grabs handfuls of diamonds before escaping. The more gems spent in the casting the larger lair will be located and the higher the skill of the casting mage the more gems they can grab before escaping. The Grootslang covets its diamonds and might come looking for them in coming months."
-#details "Gold gained: 15 gold per gem spent after the initial cost (increased by one for every extra mage level), 20% chance of Grootslang attack in coming months"
+#details "Gold gained: 350, 30% chance of Grootslang attack in coming months"
 #school 4
 #researchlevel 3
 #path 0 6
-#damage 2023
+#damage 1350
+#fatiguecost 3000
 #spec 0
 #restricted 28 -- EA Machaka
 #restricted 76 -- MA Machaka
@@ -128453,12 +128467,21 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #end
 
 #selectspell 2594
-#copyspell 284 -- Chorus Master
 #name "Trance Master"
 #descr "The caster begins a rythmic chant that will allow them to lead Spirit Dancers. The fatigue that comes from casting spells will be distributed among all Dancers and the trance master will also be able to cast more powerful spells than they could alone. While the effect remains all spells that only affect the caster will also affect all the dancers. A trance dance with two dancers will grant all masters one extra level in all their paths, four dancers will grant two levels, eight dancers will grant three levels, and so on. Only spell singers can cast this spell. Trance masters can also use regular communion slaves."
 #researchlevel 1
 #restricted 202 -- Gondwana
-#notfornation 57 -- MA Man
+#reqspellsinger
+#fatiguecost 20
+#effect 23
+#damage 2305843009213693952
+#spec 8404992
+#school 5
+#researchlevel 1
+#path 0 7
+#pathlevel 0 1
+#aoe 0
+#range 0
 #end
 
 #selectspell 2595
@@ -128580,7 +128603,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #copyspell 783 -- Enlarge
 #name "Imbue with N'um"
 #descr "The caster performs a ritual to imbue an animal with N'um, sacred energy. The creature will increase in size as it is infused with energy and will manifest the blessing of the Lord, even if not sacred. This spell will only affect animals."
-#details "Target is blessed, gains Size +1, HP +30%, Str +3, Def -1, Map move +2."
+#details "Target is blessed, gains Size +1, HP +30%, Str +3, Def -1. This spell can only affect animals."
 #researchlevel 0
 #school 7
 #pathlevel 0 3
@@ -128599,7 +128622,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #copyspell 783 -- Enlarge
 #name "Flood of N'um"
 #descr "The caster performs a ritual to imbue a group of animals with N'um, sacred energy. The creatures will increase in size as they are infused with energy and will manifest the blessing of the Lord, even if not sacred. This spell only works on animals."
-#details "Targets are blessed, gain Size +1, HP +30%, Str +3, Def -1, Map move +2."
+#details "Targets are blessed, gain Size +1, HP +30%, Str +3, Def -1. This spell can only affect animals."
 #researchlevel 6
 #pathlevel 0 4
 #path 1 9
@@ -129594,6 +129617,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #researchlevel 4
 #fatiguecost 30
 #precision 100
+#range 30
 #flightspr -1
 #spec 9326720  -- Enemies only, AN, MR Negates, Ignores Shields, No Effect on Mindless or Undead, OK UW
 #restricted 27 -- EA Ctis
@@ -134727,7 +134751,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #spec 8404992  -- Ignores shields, UW OK
 #restricted 89 -- MA R'lyeh
 #restricted 127 -- LA R'lyeh
-#nextspell 3031
+#nextspell 1140 -- Astral shield
 #end
 
 #selectspell 3032
@@ -136193,8 +136217,8 @@ All effects scale with friendly Dominion."
 #descr "The caster calls back a host of ghostly legionnaires to serve them. Ghosts are frightening Ethereal beings that can drain the life force of the living. More powerful mages can summon more with each casting."
 #researchlevel 7
 #pathlevel 0 3
-#fatiguecost 2500
-#nreff 1009
+#fatiguecost 3000
+#nreff 2014 -- 20++
 #damage 7541 -- Ghostly Legionnaire
 #restricted 55 -- Sceleria
 #end
@@ -143544,23 +143568,6 @@ All effects scale with friendly Dominion."
 #nextspell 3804
 #end
 
-#selectspell 3805 -- Protection of the Desert Sun
-#copyspell 833 -- Fire Resistant Warriors
-#name "Protection of the Desert Sun"
-#descr "This spell provides protection to a few soldiers from scorching heat."
-#school 4
-#researchlevel 4
-#path 0 0
-#pathlevel 0 2
-#fatiguecost 40
-#aoe 1003 -- 5+
-#restricted 28
-#restricted 193 -- EA Alchera
-#restricted 28 -- EA Machaka
-#restricted 76 -- MA Machaka
-#restricted 113 -- LA C'tis
-#end
-
 #selectspell 3806
 #copyspell 983 -- Summon Kithaironic Lion
 #name "Pride of Sacred Lions"
@@ -144910,125 +144917,6 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #sound 23  -- Doom
 #spec 8388608 -- uwok
 #nextspell 3898
-#end
-
-#selectspell 3890 -- Gift of Formlessness replacement
-#copyspell 831
-#details "Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed.
-Underwater: AoE 10+2"
-#aoe 1003 -- 5+
-#range 5
-#aispellmod -50
-#precision 100
-#nextingeo 4 -- Sea
-#end
-
-#selectspell 3891 -- Gift of Formlessness UW effect
-#copyspell 831
-#school -1
-#aoe 3
-#end
-
-#selectspell 3892 -- A1 levitate
-#copyspell 1150 -- Levitate Soldiers
-#name "Levitation"
-#descr "A few soldiers are granted the ability to float a few inches above the ground."
-#details "Floating units cannot be targeted by some spells like earth grip or earthquakes."
-#aoe 1
-#pathlevel 0 1
-#researchlevel 3
-#end
-
-#selectspell 3893 -- True Sight mid-tier
-#copyspell 1146 -- Gift of True Sight
-#name "Fay Eyes"
-#descr "A group of soldiers are granted the ability to discern illusions and see the unseen."
-#details "True Sight enables a unit to attack invisible or glamoured targets without penalties."
-#aoe 1001 -- 3+
-#pathlevel 0 2
-#researchlevel 5
-#end
-
-#selectspell 3894 -- Spirit Sight high-tier
-#copyspell 1182 -- Gift of Spirit Sight
-#name "Third Sight"
-#descr "The caster opens the third eye of many troops, enabling them to observe the spirit world temporarily. The soldiers gain Spirit Sight for the remainder of the battle."
-#details "Units with Spirit Sight can see invisible and glamoured units for what they are. Spirit Sight also grants 100% darkvision."
-#aoe 1007 -- 10+
-#pathlevel 0 4
-#fatiguecost 100
-#researchlevel 7
-#end
-
-#selectspell 3895
-#copyspell 849 -- Blindness
-#name "Theft of Vision"
-#descr "The caster attempts to steal the sight of a group of soldiers. Anyone in the area will be permanently blinded unless the spell is resisted."
-#researchlevel 7
-#school 4
-#range 25
-#path 0 7 -- G
-#pathlevel 0 3
-#path 1 0 -- F
-#pathlevel 1 1
-#fatiguecost 20
-#aoe 1003 -- 6+
-#end
-
-#selectspell 3896 -- Erode, 3E decay and damage armor
-#copyspell "Decay"
-#name "Time and Tide"
-#descr "The caster imposes the erosion of time on a large group of soldiers, damaging their armor and may make the victim age and die at an incredibly fast rate. Magical armor does not wear and magical resistance can protect from the effects. This spell is significantly more potent if cast underwater."
-#details "Failing to resist this spell can damage armor and age the victim rapidly.
-Underwater: Targets must resist both effects of the spell a second time with an easier MR check."
-#researchlevel 6
-#school 1
-#path 0 3 -- Earth
-#pathlevel 0 3
-#path 1 7 -- Glamour
-#pathlevel 1 1
-#aoe 3003 -- 12+3
-#fatiguecost 30
-#range 30
-#damage 256
-#spec 8409216 -- UWOK, MRN, Ignores Shields, AN
-#explspr 10018
-#flightspr -1
-#nextspell 3856
-#end
-
-#selectspell 3897
-#copyspell 1282 -- rage
-#name "Hate"
-#descr "The spell fills the heart of a few men with furious anger. The raging units will attack anything nearby, even friends."
-#researchlevel 6
-#path 0 0 -- F
-#pathlevel 0 2
-#path 1 7 -- G
-#pathlevel 1 1
-#aoe 1002 -- 4+
-#end
-
-#selectspell 3898
-#copyspell 642
-#name "Acid Splash"
-#descr "Acid spews from the helm."
-#school -1
-#aoe 2
-#end
-
-#selectspell 3899
-#copyspell 216 -- Sermon of Courage
-#name "Banner Skill"
-#descr "The power of the banner strengthens fighting ability and morale in nearby troops."
-#details "Attack skill +2, morale +2. Temporary morale +5 every round."
-#school -1
-#researchlevel 0
-#effect 17
-#damage 5
-#aoe 50
-#range 0
-#nextspell 3722
 #end
 
 #selectspell 3900 -- A1 air shield
@@ -146430,24 +146318,6 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #nextspell 3981
 #end
 
-#selectspell 3982 -- call the bergrisar
-#copyspell 1078 -- ghost riders
-#name "Call the Bergrisar"
-#descr "The caster incites the bergrisar, mountain giants of the land, to attack armies in the province. After the attack they will return to their mountain homes."
-#details "30 Jotun Bondi led by a Herse will attack the province. This spell can only target mountainous provinces."
-#researchlevel 5
-#school 5
-#path 0 0
-#pathlevel 0 3
-#fatiguecost 800
-#damage 3962 -- bondi
-#nreff 31
-#farsumcom 3954 -- herse
-#onlygeodst 8388624  -- Mountain/Border only
-#spec 0
-#restricted 34 -- Muspelheim
-#end
-
 
 
 #selectspell 3985
@@ -147577,7 +147447,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #fatiguecost 1600
 #nreff 505 -- 5+1/2
 #path 1 -1
-#damage 8692 -- Gaueko
+#damage 8698 -- Gizotso
 #restricted 14 -- EA Pyrene
 #restricted 62 -- MA Pyrene
 #restricted 123 -- LA Pyrene
@@ -147786,15 +147656,39 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #end
 
 #selectspell 4104 -- Houssa Chorus Master
-#copyspell "Chorus Master"
+--#copyspell "Chorus Master"
+#name "Chorus Master"
 #descr "The magic of the Seven Kingdoms revolves around a long tradition of spell singing. Through communal chanting, they are able to strengthen the arcane harmonies of their spell songs. Chorus masters decide what spellsongs the chorus will chant. The fatigue that comes from casting spells will be distributed among all chorus members and the chorus master will also be able to cast more powerful spells than they could alone. While in a communal chorus, all spells that only affect the caster will affect all the chorus slaves as well. A chorus with two slaves will grant all masters one extra level in all their paths, four slaves will grant two levels, eight slaves will grant three levels, and so on. Only spell singers can cast this spell."
 #restricted 205 -- Houssa
+#reqspellsinger
+#fatiguecost 20
+#effect 23
+#damage 2305843009213693952
+#spec 8404992
+#school 5
+#researchlevel 1
+#path 0 7
+#pathlevel 0 1
+#aoe 0
+#range 0
 #end
 
 #selectspell 4105 -- Houssa Chorus Slave
-#copyspell "Chorus Slave"
+--#copyspell "Chorus Slave"
+#name "Chorus Slave"
 #descr "The magic of the Seven Kingdoms revolves around a long tradition of spell singing. Through communal chanting, they are able to strengthen the arcane harmonies of their spell songs. Chorus slaves only follow the chant of the Chorus Masters and are inactive during the battle. If a chorus slave loses consciousness they leave the communal chant. Only spell singers can cast this spell."
 #restricted 205 -- Houssa
+#reqspellsinger
+#fatiguecost 20
+#effect 23
+#damage 4611686018427387904
+#spec 8404992
+#school 5
+#researchlevel 1
+#path 0 7
+#pathlevel 0 1
+#aoe 0
+#range 0
 #end
 
 #selectspell 4106 -- Houssa Healing
@@ -149672,7 +149566,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #school 7
 #path 0 9
 #pathlevel 0 1
-#path 1 8
+#path 1 7
 #pathlevel 1 1
 #range 30
 #aoe 1
@@ -149687,20 +149581,6 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #descr "By meditating on their relationship with their deity the priest is filled with holy power. This prayer can be use to bless the priest. Blessed units receive increased morale and additional powers if their god is powerful enough to claim a divine title. For example, Fire gods bless their soldiers with battle prowess and gods of Nature bless their holy warriors with increased health. The blessing lasts the entire battle."
 #aoe 0
 #range 0
-#end
-
-#selectspell 4251 -- Living Illearth
-#copyspell "Living Fire"
-#name "Living Illearth"
-#descr "Blood is spilled onto the earth, summoning a group of Illearth elementals.  Illearth elementals can absorb the blood of their fallen enemies to become larger.  More powerful mages can summon more elementals."
-#path 0 8
-#path 1 3 
-#pathlevel 0 3
-#pathlevel 1 2
-#fatiguecost 300
-#nreff 1000
-#school 6
-#damage 3757
 #end
 
 #selectspell 4252
@@ -150004,7 +149884,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 
 #selectspell 4264
 #copyspell 935 -- Pack of Wolves
-#name "Hollow Lord"
+#name "Summon the Harvester"
 #descr "The caster spills a great quantity of blood in the middle of a farming field to draw the Harvester, the original and most power of the Hollow Lords, and make a pact with him. The Harvester is an ancient demonic being of the dreamwild that takes the appearance of a scarecrow riding atop a dark steed wielding a great scythe with which he may harvest the souls of those he cuts down with it. He draws power from the Fall and will be more efficient at blood hunting during those months."
 #researchlevel 7
 #school 6
@@ -150047,6 +149927,177 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #fatiguecost 300
 #spec 8388608  -- UW OK
 #end
+
+
+#selectspell 4267 -- Gift of Formlessness replacement
+#copyspell 831
+#details "Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed.
+Underwater: AoE 10+2"
+#aoe 1003 -- 5+
+#range 5
+#aispellmod -50
+#precision 100
+#nextingeo 4 -- Sea
+#end
+
+#selectspell 4268 -- Gift of Formlessness UW effect
+#copyspell 831
+#school -1
+#aoe 3
+#end
+
+#selectspell 4269 -- A1 levitate
+#copyspell 1150 -- Levitate Soldiers
+#name "Levitation"
+#descr "A few soldiers are granted the ability to float a few inches above the ground."
+#details "Floating units cannot be targeted by some spells like earth grip or earthquakes."
+#aoe 1
+#pathlevel 0 1
+#researchlevel 3
+#end
+
+#selectspell 4270 -- True Sight mid-tier
+#copyspell 1146 -- Gift of True Sight
+#name "Fay Eyes"
+#descr "A group of soldiers are granted the ability to discern illusions and see the unseen."
+#details "True Sight enables a unit to attack invisible or glamoured targets without penalties."
+#aoe 1001 -- 3+
+#pathlevel 0 2
+#researchlevel 5
+#end
+
+#selectspell 4271 -- Spirit Sight high-tier
+#copyspell 1182 -- Gift of Spirit Sight
+#name "Third Sight"
+#descr "The caster opens the third eye of many troops, enabling them to observe the spirit world temporarily. The soldiers gain Spirit Sight for the remainder of the battle."
+#details "Units with Spirit Sight can see invisible and glamoured units for what they are. Spirit Sight also grants 100% darkvision."
+#aoe 1007 -- 10+
+#pathlevel 0 4
+#fatiguecost 100
+#researchlevel 7
+#end
+
+#selectspell 4272
+#copyspell 849 -- Blindness
+#name "Theft of Vision"
+#descr "The caster attempts to steal the sight of a group of soldiers. Anyone in the area will be permanently blinded unless the spell is resisted."
+#researchlevel 7
+#school 4
+#range 25
+#path 0 7 -- G
+#pathlevel 0 3
+#path 1 0 -- F
+#pathlevel 1 1
+#fatiguecost 20
+#aoe 1003 -- 6+
+#end
+
+#selectspell 4273 -- Erode, 3E decay and damage armor
+#copyspell "Decay"
+#name "Time and Tide"
+#descr "The caster imposes the erosion of time on a large group of soldiers, damaging their armor and may make the victim age and die at an incredibly fast rate. Magical armor does not wear and magical resistance can protect from the effects. This spell is significantly more potent if cast underwater."
+#details "Failing to resist this spell can damage armor and age the victim rapidly.
+Underwater: Targets must resist both effects of the spell a second time with an easier MR check."
+#researchlevel 6
+#school 1
+#path 0 3 -- Earth
+#pathlevel 0 3
+#path 1 7 -- Glamour
+#pathlevel 1 1
+#aoe 3003 -- 12+3
+#fatiguecost 30
+#range 30
+#damage 256
+#spec 8409216 -- UWOK, MRN, Ignores Shields, AN
+#explspr 10018
+#flightspr -1
+#nextspell 3856
+#end
+
+#selectspell 4274
+#copyspell 1282 -- rage
+#name "Hate"
+#descr "The spell fills the heart of a few men with furious anger. The raging units will attack anything nearby, even friends."
+#researchlevel 6
+#path 0 0 -- F
+#pathlevel 0 2
+#path 1 7 -- G
+#pathlevel 1 1
+#aoe 1002 -- 4+
+#end
+
+#selectspell 4275
+#copyspell 642
+#name "Acid Splash"
+#descr "Acid spews from the helm."
+#school -1
+#aoe 2
+#end
+
+#selectspell 4276
+#copyspell 216 -- Sermon of Courage
+#name "Banner Skill"
+#descr "The power of the banner strengthens fighting ability and morale in nearby troops."
+#details "Attack skill +2, morale +2. Temporary morale +5 every round."
+#school -1
+#researchlevel 0
+#effect 17
+#damage 5
+#aoe 50
+#range 0
+#nextspell 3722
+#end
+
+#selectspell 4277 -- Protection of the Desert Sun
+#copyspell 833 -- Fire Resistant Warriors
+#name "Protection of the Desert Sun"
+#descr "This spell provides protection to a few soldiers from scorching heat."
+#school 4
+#researchlevel 4
+#path 0 0
+#pathlevel 0 2
+#fatiguecost 40
+#aoe 1003 -- 5+
+#restricted 28
+#restricted 193 -- EA Alchera
+#restricted 28 -- EA Machaka
+#restricted 76 -- MA Machaka
+#restricted 113 -- LA C'tis
+#end
+
+#selectspell 4278 -- call the bergrisar
+#copyspell 1078 -- ghost riders
+#name "Call the Bergrisar"
+#descr "The caster incites the bergrisar, mountain giants of the land, to attack armies in the province. After the attack they will return to their mountain homes."
+#details "30 Jotun Bondi led by a Herse will attack the province. This spell can only target mountainous provinces."
+#researchlevel 5
+#school 5
+#path 0 0
+#pathlevel 0 3
+#fatiguecost 800
+#damage 3962 -- bondi
+#nreff 31
+#farsumcom 3954 -- herse
+#onlygeodst 8388624  -- Mountain/Border only
+#spec 0
+#restricted 34 -- Muspelheim
+#end
+
+#selectspell 4279 -- Living Illearth
+#copyspell "Living Fire"
+#name "Living Illearth"
+#descr "Blood is spilled onto the earth, summoning a group of Illearth elementals.  Illearth elementals can absorb the blood of their fallen enemies to become larger.  More powerful mages can summon more elementals."
+#path 0 8
+#path 1 3 
+#pathlevel 0 3
+#pathlevel 1 2
+#fatiguecost 300
+#nreff 1000
+#school 6
+#damage 3757
+#end
+
+
 
 
 
@@ -151389,7 +151440,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 714 -- Blast of Unlife
 #pathlevel 0 2
-#aoe 106 -- 8+
+#aoe 1006 -- 8+
 #fatiguecost 100
 #end
 
@@ -152299,7 +152350,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1190 -- Vafur Flames
-#effect 84 -- permanent
+#effect 10084 -- permanent
 #details "Enemies walking through: 10 AP fire dmg. Enemies flying through: 5 AP fire dmg. Enchantment is permanent until captured."
 #end
 
@@ -152490,6 +152541,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1308 -- Rage of the Cornered Rat
+#details "Grants Berserk. The spell only affects animals."
 #aoe 3002 -- 5+3
 #pathlevel 0 1
 #ainocast 1
@@ -152761,7 +152813,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1452 -- Infernal Tempest
-#fatiguecost 2500
+#fatiguecost 3500
 #end
 
 #selectspell 1453 -- Forces of Ice
@@ -153937,11 +153989,12 @@ Can only be cast once per combat round."
 #copyitem 310 -- Ring of Tamed Lightning
 #spr "magicenhanced/eeiairring.tga"
 #name "Obscuro's Ring"
-#descr "This ring was forged by Obscuro, the Hidden Master and was used by the illusionist for many years. It holds the power to misdirect and confuse others about the bearers true position, aswell as protecting the bearer from lightning. Perhaps its greatest power however manifests when taken to the highest mountain peaks. There it will capture and direct lightning directly from the clouds to form magical air gems. Eventually Obscuro was captured by a rival mage, and whilst the wily wizard escaped with his life the ring was seized and its whereabouts are currently unknown."
+#descr "This ring was forged by Obscuro, the Hidden Master and was used by the illusionist for many years. It holds the power to misdirect and confuse others about the bearers true position. But its greatest power however manifests when taken to mountain peaks under clear skies during the twilight hours. There it will capture and direct the moon's rays into pure gems of Glamour. Eventually Obscuro was captured by a rival mage, and whilst the wily wizard escaped with his life the ring was seized and its whereabouts are currently unknown."
 #mainpath 7
 #mainlevel 3
 #constlevel 5
 #unique
+#shockres 0
 #autospell "Displace Body"
 #end
 
@@ -156264,8 +156317,8 @@ This will also prevent their skin from drying out."
 #descr "Enchanted rubies are studded into the surface of this obsidian cuirass. In battle the rubies glow with intense heat, burning nearby enemies and creating distortions that hide the wearer. The wearer will be somewhat protected from heat and flames."
 #constlevel 5
 #mainpath 0
-#mainlevel 7
-#secondarypath 1
+#mainlevel 1
+#secondarypath 7
 #secondarylevel 1
 #type 5
 #armor "Obsidian Cuirass"
@@ -156311,7 +156364,7 @@ This will also prevent their skin from drying out."
 #mainpath 6
 #mainlevel 1
 #type 1
-#weapon 1629  -- Axe of the Berserker
+#weapon 1626  -- Axe of the Berserker
 #quickness
 #bers
 #end
@@ -157089,12 +157142,12 @@ This will also prevent their skin from drying out."
 #selectitem 867 -- Bright Sword of Surtr
 #copyspr 100 -- sword of justice
 #name "Bright Sword"
-#descr "This is the sword of Surtr, a blade he used in a prior war amongst the Gods and is said to use it when Ragnarok begins. Surtr will refuse to use any other the blade, and its brightness will prevent him from sneaking by any means."
+#descr "This is the sword of Surtr, a blade he used in a prior war amongst the Gods. It is said he will be wielding this sword when Ragnarok begins. Surtr will refuse to use any other the blade, and its brightness will prevent him from sneaking by any means."
 #constlevel 11
 #mainpath 0
 #mainlevel 9
 #stealthboost -500
-#type 2
+#type 1
 #cursed
 #nofind
 #end
@@ -165220,9 +165273,9 @@ This will also prevent their skin from drying out."
 #req_land 1
 #req_mountain 1
 #req_targitem 666 -- Obscuro's Ring
-#msg "Lightning has been captured using Obscuro's Ring and the resulting gems transported to the treasury."
+#msg "Moonbeams have been captured using Obscuro's Ring and the resulting gems transported to the treasury."
 #nolog
-#force1d3vis 1  -- 1D3 Air Gems
+#force1d3vis 7  -- 1D3 Glamour Gems
 #end
 
 #newevent
@@ -167342,8 +167395,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 
 #newevent
 #rarity 5
-#req_ench 272 -- Ench72
-#req_rare 20
+#req_ench 283 -- Ench83 -- Grootslang Hunting
+#req_rare 30
 #nation 2
 #req_pop0ok
 #msg "A Grootslang attacked, enraged by the theft of its diamonds!"
