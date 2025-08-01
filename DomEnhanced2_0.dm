@@ -27261,7 +27261,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #mapmove 26
 #weapon 4  -- Lance
 #weapon 202  -- Magic Sword
-#weapon 330  -- Alicorn
 #armor 19  -- Full Plate Mail
 #armor 21  -- Full Helmet
 #armor 92  -- Enchanted Shield
@@ -50112,8 +50111,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #clearmagic
 #startitem 867
 #weapon 1828 -- Bright Sword
-#magicskill 0 4
-#magicskill 1 2
+#magicskill 0 5
+#magicskill 1 3
 #magicskill 5 2
 #end
 
@@ -50141,10 +50140,11 @@ With Ragnarok active, Surtr's sword is empowered and he will be able to destroy 
 #clearmagic
 #startitem 867
 #weapon 1829 -- Ragnarok Bright Sword
-#magicskill 0 5
+#magicskill 0 4
 #magicskill 1 2
 #magicskill 5 2
-#farthronekill 100
+#magicboost 0 1
+#farthronekill 50
 #onebattlespell 718 -- Firestorm
 #decscale 2 -- cold/heat
 #spreaddom 1
@@ -68157,7 +68157,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #okundeadleader
 #douse 3
 #weapon 523  -- Golden Sickle
-#weapon 330  -- Alicorn
 #mounted
 --#itemslots 860678 -- No feet
 #mountmnr 3521
@@ -77030,7 +77029,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 384 -- Neter of Crafts
 #descr "The Neter is a giant of divine heritage. Given skills and powers of creation by a previous Pantokrator, he became the master crafter and chief architect of creation. With the creation of the world complete, his services were no longer needed and he was banished for eternity. Having created eternity, the Neter was not too concerned and waited for the Pantokrator to disappear. Now he has returned to claim the world he created."
 #diseaseres 100
-#gcost 250
+#gcost 270
 #pathcost 40
 #hp 95
 #prot 3
@@ -83755,7 +83754,6 @@ Initiates of the Deep can be recruited in any land fort."
 #clearweapons
 #weapon 1688 -- Raterik's Morningstar
 #weapon 4  -- Lance
-#weapon 330  -- Alicorn
 #cleararmor
 #armor 40  -- black steel helmet
 #armor 38  -- black steel full plate
@@ -83813,7 +83811,6 @@ Initiates of the Deep can be recruited in any land fort."
 #holy
 #clearweapons
 #weapon 1695 -- Hero's Blade
-#weapon 330  -- Alicorn
 #onebattlespell "Personal Luck"  -- Luck
 #itemslots 2040326
 #incunrest -100
@@ -96326,7 +96323,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #copyspr 7127
 #landshape 7127
 #clearweapons
-#weapon 7127
+#weapon 746
 #weapon 1893
 #end
 
@@ -96339,7 +96336,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #copyspr 7159
 #landshape 7159
 #clearweapons
-#weapon 7159
+#weapon 1
 #weapon 1893
 #end
 
@@ -96352,7 +96349,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #copyspr 7161
 #landshape 7161
 #clearweapons
-#weapon 7161
+#weapon 746
 #weapon 1893
 #end
 
@@ -96365,7 +96362,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #copyspr 7180
 #landshape 7180
 #clearweapons
-#weapon 7180
+#weapon 746
 #weapon 1893
 #end
 
@@ -96417,7 +96414,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #copyspr 7341
 #landshape 7341
 #clearweapons
-#weapon 7341
+#weapon 357
 #weapon 1893
 #end
 
@@ -126427,7 +126424,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 9
 #pathlevel 0 5
 #nreff 400
-#fatiguecost 8000
+#fatiguecost 4000
 #damage 187  -- Longdead legionnaire
 #restricted 8 -- EA Ermor
 #nextspell "Reanimate the thousand dead"
@@ -128460,12 +128457,21 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #end
 
 #selectspell 2594
-#copyspell 284 -- Chorus Master
 #name "Trance Master"
 #descr "The caster begins a rythmic chant that will allow them to lead Spirit Dancers. The fatigue that comes from casting spells will be distributed among all Dancers and the trance master will also be able to cast more powerful spells than they could alone. While the effect remains all spells that only affect the caster will also affect all the dancers. A trance dance with two dancers will grant all masters one extra level in all their paths, four dancers will grant two levels, eight dancers will grant three levels, and so on. Only spell singers can cast this spell. Trance masters can also use regular communion slaves."
 #researchlevel 1
 #restricted 202 -- Gondwana
-#notfornation 57 -- MA Man
+#reqspellsinger
+#fatiguecost 20
+#effect 23
+#damage 2305843009213693952
+#spec 8404992
+#school 5
+#researchlevel 1
+#path 0 7
+#pathlevel 0 1
+#aoe 0
+#range 0
 #end
 
 #selectspell 2595
@@ -147794,15 +147800,39 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #end
 
 #selectspell 4104 -- Houssa Chorus Master
-#copyspell "Chorus Master"
+--#copyspell "Chorus Master"
+#name "Chorus Master"
 #descr "The magic of the Seven Kingdoms revolves around a long tradition of spell singing. Through communal chanting, they are able to strengthen the arcane harmonies of their spell songs. Chorus masters decide what spellsongs the chorus will chant. The fatigue that comes from casting spells will be distributed among all chorus members and the chorus master will also be able to cast more powerful spells than they could alone. While in a communal chorus, all spells that only affect the caster will affect all the chorus slaves as well. A chorus with two slaves will grant all masters one extra level in all their paths, four slaves will grant two levels, eight slaves will grant three levels, and so on. Only spell singers can cast this spell."
 #restricted 205 -- Houssa
+#reqspellsinger
+#fatiguecost 20
+#effect 23
+#damage 2305843009213693952
+#spec 8404992
+#school 5
+#researchlevel 1
+#path 0 7
+#pathlevel 0 1
+#aoe 0
+#range 0
 #end
 
 #selectspell 4105 -- Houssa Chorus Slave
-#copyspell "Chorus Slave"
+--#copyspell "Chorus Slave"
+#name "Chorus Slave"
 #descr "The magic of the Seven Kingdoms revolves around a long tradition of spell singing. Through communal chanting, they are able to strengthen the arcane harmonies of their spell songs. Chorus slaves only follow the chant of the Chorus Masters and are inactive during the battle. If a chorus slave loses consciousness they leave the communal chant. Only spell singers can cast this spell."
 #restricted 205 -- Houssa
+#reqspellsinger
+#fatiguecost 20
+#effect 23
+#damage 4611686018427387904
+#spec 8404992
+#school 5
+#researchlevel 1
+#path 0 7
+#pathlevel 0 1
+#aoe 0
+#range 0
 #end
 
 #selectspell 4106 -- Houssa Healing
