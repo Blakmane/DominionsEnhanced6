@@ -3939,7 +3939,7 @@
 #selectweapon 24 -- Long Bow
 #dmg 10 -- +1
 #att 3 -- +3
-#ammo 1001
+#ammo 24
 #end
 
 #selectweapon 152 -- Trueshot Longbow
@@ -11596,7 +11596,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #enc 3
 #mapmove 20
 #ap 14
-#minsizeleader 5
+#minsizeleader 4
 #maxage 150
 #weapon 17  -- Axe
 #weapon 260  -- Throwing Axe
@@ -11629,7 +11629,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #holy
 #popkill 1
 #neednoteat
-#minsizeleader 5
+#minsizeleader 4
 #maxage 150
 #weapon 851  -- Magic Axe
 #armor 533 -- Starnake Scale
@@ -24046,7 +24046,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #spiritsight
 #montag 1013
 #nametype 126  -- Machaka Male
-#itemslots 794624 -- Head, 2 misc
+#itemslots 17571840 -- Crown, 2 misc
 #end
 
 #newmonster 7256
@@ -25412,7 +25412,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #spiritform
 #nametype 126  -- Machaka Male
 #montag 1013
-#itemslots 794624 -- Head, 2 misc
+#itemslots 17571840 -- Crown, 2 misc
 #end
 
 #newmonster 7309
@@ -27874,7 +27874,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #darkvision 50
 #enc 2
 #montag 1025
-#formationfighter 3
+#formationfighter 5
 #bodyguard 4
 #weapon 675  -- Bronze Axe
 #armor 2  -- Shield
@@ -28110,6 +28110,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #noundeadleader
 #assassin
 #spiritsight
+#spiritform 
+#flying
 #patience 2
 #scalewalls
 #saltvul 3
@@ -50106,11 +50108,10 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #maxage 2000
 #nowish
 #polyimmune
-#cleararmor
+#clearweapons
 #clearmagic
 #startitem 867
-#armor 288 -- shield
-#weapon 1828 -- flame sword
+#weapon 1828 -- Bright Sword
 #magicskill 0 4
 #magicskill 1 2
 #magicskill 5 2
@@ -50136,12 +50137,11 @@ With Ragnarok active, Surtr's sword is empowered and he will be able to destroy 
 #maxage 2000
 #nowish
 #polyimmune
-#cleararmor
+#clearweapons
 #clearmagic
 #startitem 867
-#armor 288 -- shield
-#weapon 1829 -- flame sword
-#magicskill 0 4
+#weapon 1829 -- Ragnarok Bright Sword
+#magicskill 0 5
 #magicskill 1 2
 #magicskill 5 2
 #farthronekill 100
@@ -55215,6 +55215,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #prot 4
 #def 9
 #str 15
+#holy
 #armor 251 -- Leather Barding
 #end
 
@@ -59934,7 +59935,7 @@ Cost 50 recruitment points."
 #spr2 "blue_bantaytubig/ugkoyscout2.png"
 #name "Ugkoy Scout"
 #descr "Scouts are trained to pass unseen through enemy territory and to travel efficiently even in mountainous and forested terrain. Their reports on enemy army movements and the resources in enemy lands are invaluable to the prudent warlord."
-#rpcost 3
+#rpcost 1
 #rcost 1
 #hp 12
 #str 11
@@ -84883,16 +84884,16 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #custommagic 6144 100  -- 100% SD
 #custommagic 6144 50  -- 50% SD
 #cleararmor
-#armor 700 -- Starmetal Full Mail
-#armor 702 -- Starmetal Helmet
+#armor 550 -- Starmetal Full Mail
+#armor 552 -- Starmetal Helmet
 #end
 
 #selectmonster 737  -- Ether Lord
 #descr "An Ether Lord is an ancient mage and clan leader of the Ether Warriors. It was the Ether Lords who had drained the world of Arcana and led their clans into their otherworldly realm to continue their clan wars. Ether Lords are ethereal and very difficult to harm with non-magical weapons. Ether Lords use Moon Lances, magical spears that cause additional damage to magical beings. Ether Lords are powerful wielders of Astral magic as well as Death magic and can summon more of their kin to this world."
 #makemonsters1 736  -- Ether Warrior
 #cleararmor
-#armor 701 -- Starmetal Cuirass
-#armor 702 -- Starmetal Helmet
+#armor 551 -- Starmetal Cuirass
+#armor 552 -- Starmetal Helmet
 #end
 
 #selectmonster 740  -- Black Priest
@@ -87483,7 +87484,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #selectmonster 1840 -- Hydra Hatchling
 #prot 7 -- +3
 #str 13 -- +1
-#twiceborn 3830 -- s3 necrophidian
+#twiceborn 6830 -- s3 necrophidian
 #end
 
 #selectmonster 1841 -- Hydra Hatchling
@@ -96507,7 +96508,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #copyspr 7673
 #landshape 7673
 #clearweapons
-#weapon 7673
+#weapon 8
 #weapon 1893
 #end
 
@@ -129600,6 +129601,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #researchlevel 4
 #fatiguecost 30
 #precision 100
+#range 30
 #flightspr -1
 #spec 9326720  -- Enemies only, AN, MR Negates, Ignores Shields, No Effect on Mindless or Undead, OK UW
 #restricted 27 -- EA Ctis
@@ -147583,7 +147585,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #fatiguecost 1600
 #nreff 505 -- 5+1/2
 #path 1 -1
-#damage 8692 -- Gaueko
+#damage 8698 -- Gizotso
 #restricted 14 -- EA Pyrene
 #restricted 62 -- MA Pyrene
 #restricted 123 -- LA Pyrene
@@ -149678,7 +149680,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #school 7
 #path 0 9
 #pathlevel 0 1
-#path 1 8
+#path 1 7
 #pathlevel 1 1
 #range 30
 #aoe 1
@@ -152305,7 +152307,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1190 -- Vafur Flames
-#effect 84 -- permanent
+#effect 10084 -- permanent
 #details "Enemies walking through: 10 AP fire dmg. Enemies flying through: 5 AP fire dmg. Enchantment is permanent until captured."
 #end
 
@@ -152768,7 +152770,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1452 -- Infernal Tempest
-#fatiguecost 2500
+#fatiguecost 3500
 #end
 
 #selectspell 1453 -- Forces of Ice
@@ -156319,7 +156321,7 @@ This will also prevent their skin from drying out."
 #mainpath 6
 #mainlevel 1
 #type 1
-#weapon 1629  -- Axe of the Berserker
+#weapon 1626  -- Axe of the Berserker
 #quickness
 #bers
 #end
@@ -157097,12 +157099,12 @@ This will also prevent their skin from drying out."
 #selectitem 867 -- Bright Sword of Surtr
 #copyspr 100 -- sword of justice
 #name "Bright Sword"
-#descr "This is the sword of Surtr, a blade he used in a prior war amongst the Gods and is said to use it when Ragnarok begins. Surtr will refuse to use any other the blade, and its brightness will prevent him from sneaking by any means."
+#descr "This is the sword of Surtr, a blade he used in a prior war amongst the Gods. It is said he will be wielding this sword when Ragnarok begins. Surtr will refuse to use any other the blade, and its brightness will prevent him from sneaking by any means."
 #constlevel 11
 #mainpath 0
 #mainlevel 9
 #stealthboost -500
-#type 2
+#type 1
 #cursed
 #nofind
 #end
