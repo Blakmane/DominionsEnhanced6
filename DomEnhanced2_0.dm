@@ -10806,7 +10806,7 @@
 #armor "Iron cap"
 #armor "Shield"
 #rcost 10
-#gcost 10020
+#gcost 10012
 #mor 11
 #mapmove 3
 #ap 25
@@ -10823,6 +10823,7 @@
 #unmountedspr2 "venedia/un_knight2.tga"
 #descr "As most high-born Venedians care more for trade, art and politics than warfare, few choose to become knights and those who do are not as formidable as those other lands who ride fantastic beasts, carry enchanted arms and armor or are fanatical in their devotion to the church. However they are still brave and skilled fighters."
 #drawsize 0
+#gcost 10012
 #end
 
 #newmonster 6724
@@ -38944,6 +38945,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #rcost 1
 #descr "Lancers are the heavy cavalry of Rotterland. They use their powerful steeds and heavy armor to break enemy lines with a devastating lance charge. Only the most wealthy nobles can afford the armor and weaponry necessary to join the Lancers. Like all inhabitants of Rotterland they are disease-resistant and accustomed to living in wetlands."
 #diseaseres 50
+#gcost 10015
 #end
 
 #newmonster 7959
@@ -53453,6 +53455,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #descr "Destriers are heavy war horses of exceptional breeding and training. They are almost exclusively used by knights. Destriers are very expensive and they are always equipped with the best available armor. Destriers are trained to fight with their hooves while their rider swings his weapon. They are bred to be strong and heavy and are not as fast as regular war horses or riding horses."
 #cleararmor
 #armor 273 -- blacksteel barding
+#mr 8
 #end
 
 #newmonster 9050 -- Destrier fire plate
@@ -53464,6 +53467,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #fireres 10
 #fireshield 8
 #armor 564 -- fire plate
+#mr 8
 #end
 
 
@@ -60603,7 +60607,7 @@ Cost 50 recruitment points."
 #spr2 "houssa/9607_2_jarumi.png"
 #unmountedspr1 "houssa/9607_3_jarumi.png"
 #unmountedspr2 "houssa/9607_4_jarumi.png"
-#gcost 10025 
+#gcost 10025
 #rcost 1
 #rpcost 12000
 #hp 13
@@ -61530,6 +61534,7 @@ Boost all paths except blood by +1. Becomes a Yar Bori upon death or after two s
 #swimming
 #mr 8
 #morale 10
+#gcost 10025
 #end
 
 --Exalted War Horse (Yan Lifida)
@@ -68159,7 +68164,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #weapon 523  -- Golden Sickle
 #mounted
 --#itemslots 860678 -- No feet
-#mountmnr 3521
+#mountmnr 3524
 #skilledrider 1
 #regainmount 1
 #itemslots 860678
