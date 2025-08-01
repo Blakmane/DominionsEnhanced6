@@ -1,23 +1,24 @@
 #modname "Dominions Enhanced 2.0"
 #description "Adds or revises many spells, sites, Pretenders, mercenaries, items and nations. Includes work by Red_Rob, Boing, Kate_Micucci, Amuys, Zonk, Nounours, Pyg, Llamabeast, Turin, Quantum_Mechani, Heartless, Sombre, Globu, Ohlmann, Sy and others."
-#icon "domenhanced/banner.tga"
+#icon "domenhanced/banner.png"
 #version 2.0
 
 
 
 
 -- Bless changes:
+-- Wasteland Survival cost from 5 -> 1
 -- Death Explosion cost from 5 -> 6, no longer Incarnate
 -- Fire Shield cost from 6 -> 5
 -- Flaming Weapons cost from 7 -> 6
--- Unbearable Splendour cost from 12 -> 10
 -- Awareness cost from 3 -> 2
 -- Swiftness cost from 4 -> 3
 -- Storm Flight cost from 4 -> 3
--- Weightlessness cost from 6 -> 5, no longer Incarnate
+-- Weightlessness cost from 6 -> 4, no longer Incarnate
 -- Air Shield cost from 6 -> 5
 -- Charged Bodies cost from 8 -> 7
 -- Flight cost from 9 -> 8
+-- Swamp Survival cost from 2 -> 1
 -- Swimming cost from 2 -> 1
 -- Slowing Weapons cost from 5 -> 6, no longer Incarnate
 -- Vitriol Weapons cost from 8 -> 7
@@ -25,16 +26,20 @@
 -- Frost Mist Weapons cost from 7 -> 5, no longer Incarnate
 -- Unbreakable cost from 4 -> 3
 -- Resilience of the Earth cost from 6 -> 5
+-- Solar Weapons cost from 4 -> 3
 -- Twist Fate cost from 6 -> 5
 -- Fateweaving cost from 7 -> 6
 -- Reanimators cost from 7 -> 6, no longer Incarnate
 -- Death Weapons cost from 8 -> 6
+-- Fear cost from 9 -> 8
+-- Forest Survival cost from 2 -> 1
 -- Poison Weapons cost from 4 -> 3
 -- Berserker cost from 5 -> 5, no longer Incarnate
 -- Barkskin cost from 6 -> 5
 -- Obfuscate cost from 6 -> 5
 -- Awe cost from 8 -> 7
 -- Displacement cost from 7 -> 6
+-- Dread cost from 8 -> 7
 -- Vampiric Weapons cost from 12 -> 10
 
 -- Death Explosion - F/D
@@ -63,6 +68,11 @@
 #path1 8
 #end
 
+
+#selectbless "Wasteland Survival" -- 5 -> 1
+#cost1 0 -- 4 -> 0
+#end
+
 #selectbless "Death Explosion" -- 5 -> 6
 #cost0 4 -- 5 -> 4
 #cost1 2 --  -> 2
@@ -74,11 +84,6 @@
 
 #selectbless "Flaming Weapons" -- 7 -> 6
 #cost0 6 -- 7 -> 6
-#end
-
-#selectbless "Unbearable Splendour" -- 12 -> 10
-#cost0 7 -- 8 -> 7
-#cost1 3 -- 4 -> 3
 #end
 
 #selectbless "Awareness" -- 3 -> 2
@@ -93,8 +98,8 @@
 #cost0 3 -- 4 -> 3
 #end
 
-#selectbless "Weightlessness" -- 6 -> 5
-#cost0 4 -- 5 -> 4
+#selectbless "Weightlessness" -- 6 -> 4
+#cost0 3 -- 5 -> 3
 #end
 
 #selectbless "Air Shield" -- 6 -> 5
@@ -107,6 +112,10 @@
 
 #selectbless "Flight" -- 9 -> 8
 #cost0 8 -- 9 -> 8
+#end
+
+#selectbless "Swamp Survival" -- 2 -> 1
+#cost1 0 -- 1 -> 0
 #end
 
 #selectbless "Swimming" -- 2 -> 1
@@ -139,6 +148,10 @@
 #cost0 5 -- 6 -> 5
 #end
 
+#selectbless "Solar Weapons" -- 4 -> 3
+#cost0 2 -- 3 -> 2
+#end
+
 #selectbless "Twist Fate" -- 6 -> 5
 #cost0 5 -- 6 -> 5
 #end
@@ -154,6 +167,14 @@
 
 #selectbless "Death Weapons" -- 8 -> 6
 #cost0 6 -- 8 -> 6
+#end
+
+#selectbless "Fear" -- 9 -> 8
+#cost0 8 -- 9 -> 8
+#end
+
+#selectbless "Forest Survival" -- 2 -> 1
+#cost0 1 -- 2 -> 1
 #end
 
 #selectbless "Poison Weapons" -- 4 -> 3
@@ -181,9 +202,14 @@
 #cost0 6 -- 7 -> 6
 #end
 
+#selectbless "Dread" -- 8 -> 7
+#cost0 7 -- 8 -> 7
+#end
+
 #selectbless "Vampiric Weapons" -- 12 -> 10
 #cost0 6 -- 8 -> 6
 #end
+
 
 #gemlongevity 2
 
@@ -3801,6 +3827,13 @@
 #range -2 -- Half str
 #dmg 0 -- -2 damage
 #uwok
+#end
+
+#newweapon 1894 -- Anointed Sword
+#copyweapon 645 -- Bronze sword
+#name "Anointed Sword"
+#dmg 5
+#secondaryeffect 1840
 #end
 
 
@@ -21592,6 +21625,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #descr "The Temple Guard are warrior-priests chosen from the most devout Levites to guard the Great Temple in Zion. They operate in family groups, each guarding for a set period and assigned to protect specific gates of the temple. Although they guard the temple, even they are forbidden from entering the inner sanctum accessible only to the Kohen Gadol and the Prophet King. In times of need Temple Guard not assigned guard duty may be sent away from the Great Temple on missions of great importance. They are revered by the tribes of Zion and their presence will bolster the morale of other warriors. When faced with heretics and heathens the force of their faith may cow the unbelievers."
 #gcost 20
 #rpcost 24
+#str 11
 #att 12
 #def 12
 #mor 15
@@ -21599,8 +21633,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #standard 1
 #bodyguard 4
 #holy
-#haltheretic 3
-#weapon 645  -- Bronze Sword
+#haltheretic 5
+#weapon 1894  -- Bronze Sword
 #armor 142  -- Bronze Scale Cuirass
 #armor 249  -- Cloth Headpiece
 #armor 2  -- Shield
@@ -24810,6 +24844,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #shatteredsoul 10
 #wastesurvival
 #holy
+#prot 5
 #end
 
 
@@ -35457,6 +35492,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #unmountedspr2 "magicenhanced/un_eeequite2.tga"
 #name "Equite of the Eternal Shroud"
 #descr "Recently a new order of Equites of the Sacred Shroud has arisen swearing their eternal devotion to the God of Eldregate. These warriors bear flaming swords that shred the flesh of undead and demonic beings and have remarkable regenerative abilities. Their unshakeable devotion also grants them a long life, to better honour their pledge of eternal servitude."
+#gcost 0
 #mor 30
 #hp 14
 #mr 14
@@ -35478,6 +35514,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #unmountedspr2 "magicenhanced/un_eeequitedecurion2.tga"
 #name "Praefectus of the Eternal Shroud"
 #descr "Recently a new order of Equites of the Sacred Shroud has arisen swearing their eternal devotion to the God of Eldregate. These warriors bear flaming swords that shred the flesh of undead and demonic beings and have remarkable regenerative abilities. Their unshakeable devotion also grants them a long life, to better honour their pledge of eternal servitude."
+#gcost 0
 #mor 30
 #hp 17
 #mr 15
@@ -35503,7 +35540,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #descr "The success of R'lyeh is largely due to their powers of mind control. By enslaving other peoples, they have built a slave-based society with few dissidents. The slaves are used even in war and comprise most of the armies of R'lyeh. Some bear living weapons grown in the lightless chasms of the deep seas. Any victim struck by the weapon will be stung, stunned, seared, and disgusted as the tendrils lash out, seeking the warmth of exposed flesh."
 #gcost 10009
 #weapon 1668 -- Anemone Pike
-#reclimit 5
+#reclimit 8
 #end
 
 #newmonster 7804
@@ -40671,7 +40708,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Nu Kua"
 #descr "Occasionally the Dragon Kings and their descendants take human form and dally with mortals. The children of these unions are known as the Nu Kua, Dragonblooded, and are at home both above and below the waves. Stronger and faster than most mortals, they often journey to the Dragon Courts upon learning of their divine heritage. There they are trained as elite warriors in the service of the Dragon Kings. When in mortal danger they can temporarily take draconic form. The descendants of the Dragon Kings are sacred to the halfmen of the Dragon Courts."
 #rpcost 36
-#gcost 10050
+#gcost 10060
 #holycost 2
 #hp 12
 #mr 13
@@ -47417,6 +47454,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr2 "fennoscandia/feyhorse2.tga"
 #name "Fey Horse of Rotaimo"
 #descr "Ruohtta's terrible fey horse, a feared and detested animal in Fennoscandia."
+#gcost 0
 #mr 15
 #mor 30
 #hp 30
@@ -47444,6 +47482,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr2 "magicenhanced/longdeadpraetorian2.tga"
 #name "Longdead Praetorian"
 #descr "When alive the Praetorian Guard served as the bodyguards of the Thaumaturgs. The Guard consists of old veterans given the honor when they left their old careers. The members of the Praetorian Guard are all very skilled and brave, but their age made them weak. Praetorian can still serve past death, and as longdead though they retain neither mind nor much of their fighting skills, they are hardier and more skilled than other longdead."
+#gcost 0
 #mr 10
 #hp 9
 #def 11
@@ -47467,6 +47506,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #unmountedspr2 "magicenhanced/scel_un_longdeadequite2.tga"
 #name "Longdead Equite"
 #descr "The longdead are skeletal warriors of ancient times, reanimated to do battle with the living. They emerge from their tombs and crypts with rusty weapons and armor. The longdead are skilled fighters, but their bones are brittle. They do not rout unless their master is killed. The longdead are mindless and will quickly dissolve if they are broken on the battlefield."
+#gcost 0
 #mr 10
 #hp 7
 #def 10
@@ -47489,6 +47529,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #unmountedspr2 "magicenhanced/scel_un_shroudwight2.tga"
 #name "Shroud Wight"
 #descr "The Equites of the Sacred Shroud were once sacred champions of Eldregate. With the Fall of Ermor, they fought against their corrupted masters but were overwhelmed and slaughtered. Now the Thaumaturgs have reawakened them as wights, corporeal undead beings with leathery bodies and are surrounded by a wind of numbing cold. Unlike the unholy knights of Ermor, the Shroud Wights have retained their mind and will continue the fight they lost in life. The Shroud Wights still serve the Prophet Shrouded in White with unshakeable devotion and are thus not held sacred by the death cult."
+#gcost 0
 #mr 15
 #hp 25
 #def 13
@@ -47517,6 +47558,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #unmountedspr2 "magicenhanced/scel_un_eternalwight2.tga"
 #name "Eternal Wight"
 #descr "The Eternal Knights swore to serve the Holy Father of Eldregate and were granted immortality. With the Fall of Ermor, they fought against their corrupted masters but were overwhelmed and imprisoned. Now the Thaumaturgs have released them and awakened them as wights, corporeal undead beings with leathery bodies and are surrounded by a wind of numbing cold. The Eternal Wights still serve the Prophet Shrouded in White with unshakeable devotion and are thus not held sacred by the death cult."
+#gcost 0
 #mr 16
 #hp 28
 #def 13
@@ -47547,6 +47589,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #unmountedspr2 "magicenhanced/scel_un_eternalwightp2.tga"
 #name "Eternal Wight Praefectus"
 #descr "The Eternal Knights swore to serve the Holy Father of Eldregate and were granted immortality. With the Fall of Ermor, they fought against their corrupted masters but were overwhelmed and imprisoned. Now the Thaumaturgs have released them and awakened them as wights, corporeal undead beings with leathery bodies and are surrounded by a wind of numbing cold. The Eternal Wights still serve the Prophet Shrouded in White with unshakeable devotion and are thus not held sacred by the death cult."
+#gcost 0
 #mr 16
 #hp 31
 #str 17
@@ -47579,6 +47622,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr2 "magicenhanced/wighthorse2.tga"
 #name "Horse Wight"
 #descr "A horse reawakened to serve as a mount. Wights are corporeal undead with leathery bodies that can withstand much damage."
+#gcost 0
 #mr 13
 #mor 17
 #hp 30
@@ -47605,6 +47649,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr2 "magicenhanced/wighthorse2.tga"
 #name "Horse Wight"
 #descr "A horse reawakened to serve as a mount. Wights are corporeal undead with leathery bodies that can withstand much damage."
+#gcost 0
 #mr 14
 #mor 18
 #hp 33
@@ -47633,6 +47678,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #copyspr 3690 -- War horse
 #name "War Horse"
 #descr "War horses are trained not to spook in battle. They are equipped with barding of leather or metal. Cavalry reliant on a lance charge often ride war horses with heavier armor. Some war horses are also trained to fight with their hooves while their rider swings his weapon. War Horses are bred to be stronger than riding horses, but are somewhat slower."
+#gcost 0
 #mr 9
 #hp 22
 #mor 14
@@ -51832,7 +51878,9 @@ Requires an Ippondatara present to recruit."
 #copyspr 1543
 #firstshape 1543
 #reclimit 1
---#monpresentrec -1068 -- Anathement
+#gcost 10040
+#monpresentrec -1068 -- Anathement
+#enchrebate25p 106 -- Stoke the Smouldercone
 #end
 
 #newmonster 8893 -- Nonsacred Daeva
@@ -54653,6 +54701,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #weapon 1879 -- Magic claw
 #itemslots 18620416 -- 3 misc, crown
 #startitem 875
+#userestricteditem 22
 #end
 
 #newmonster 9100
@@ -57897,6 +57946,7 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #autospellrepeat 1
 #cursed
 #nofind
+#restricteditem 22
 #end
 
 #selectitem 882 -- Shark Aura
@@ -57912,6 +57962,7 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #autospellrepeat 1
 #cursed
 #nofind
+#restricteditem 22
 #end
 
 
@@ -57953,6 +58004,7 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 --#weapon 849 -- Leviathan Aura of Decay
 #itemslots 1835008
 #startitem 882
+#userestricteditem 22
 #weapon 630 -- Ghost Rending Bite
 --#weapon 461 -- Swallow
 --#digest 1
@@ -58023,6 +58075,7 @@ The whale is only recently dead and teeming with many smaller sea creatures as t
 --#weapon 1812 -- Leviathan Aura of Decay
 #itemslots 1835008
 #startitem 881
+#userestricteditem 22
 #weapon 547 -- buff
 #weapon 532 -- Tail Sweep
 #maxage 500
@@ -58237,6 +58290,7 @@ The whale's flesh is being consumed and the carcass been colonized by a host of 
 --#weapon 1812 -- Leviathan Aura of Decay
 #itemslots 1835008
 #startitem 881
+#userestricteditem 22
 #weapon 547 -- buff
 #weapon 532 -- Tail Sweep
 #maxage 500
@@ -58386,6 +58440,7 @@ The whale's bones have been covered in a green coat as the last of the whale is 
 --#weapon 1812 -- Leviathan Aura of Decay
 #itemslots 1835008
 #startitem 881
+#userestricteditem 22
 #weapon 547 -- buff
 #weapon 532 -- Tail Sweep
 #maxage 500
@@ -58531,6 +58586,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 --#weapon 1812 -- Leviathan Aura of Decay
 #itemslots 1835008
 #startitem 881
+#userestricteditem 22
 #weapon 547 -- buff
 #weapon 532 -- Tail Sweep
 #maxage 500
@@ -58583,6 +58639,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 --#weapon 1812 -- Leviathan Aura of Decay
 #itemslots 1835008
 #startitem 881
+#userestricteditem 22
 #nametype 105
 #montag 5778 -- omega summon
 #montagweight 7
@@ -58639,6 +58696,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 --#weapon 1812 -- Leviathan Aura of Decay
 #itemslots 1835008
 #startitem 881
+#userestricteditem 22
 #weapon 461 -- Swallow
 #digest 2
 #maxage 500
@@ -65864,6 +65922,10 @@ Cannot be recruited until Break the Deadlock is cast."
 
 -- Start of New Pretender Changes and Additions
 
+
+
+
+
 -- FOLDUNITS
 
 
@@ -68977,7 +69039,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #magicskill 7 1
 #end
 
-
 #newmonster 8337 -- Zmey Gorynch human
 #copystats 1918
 #spr1 "extrapretenders/zmeyhuman1.tga"
@@ -70577,6 +70638,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 
 #moremagic 1
 #hp 60
+#prot 5
 #str 20
 #def 15
 #humanoid
@@ -72558,8 +72620,8 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #maxage 3000
 #female
 #superiorleader
-#springshape 8433
 #summershape 8433
+#springshape 8433
 #itemslots 991750
 #clearmagic
 #magicskill 2 2
@@ -75763,26 +75825,24 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #end
 
 #newmonster 10010 -- Sea Nymph Landshape
-#copystats 3714
 #spr1 "extrapretenders/selg_thetisl.tga"
 #spr2 "extrapretenders/selg_thetisl.tga"
 #name "Sea Nymph"
 #descr "The Sea Nymph is an ancient shapeshifting spirit of the ocean. Below the waves she appears as a beautiful woman, but when above the waves she will take the form of a roaring flame. She was once forced to marry a mortal at the behest of the Pantokrator, however she escaped back to the sea after birthing a son. Furious, the Pantokrator banished her for all eternity. Now with the Pantokrator gone, the Sea Nymph is once again free to guide those who dwell in the ocean. She has realized the aspirations of the other Pretenders and will protect her subjects by donning the mantle of God itself."
 #diseaseres 100
 #gcost 230
+#homerealm 0 -- none
 #startdom 3
 #moremagic 1 
 #moreluck 0
-#hp 85
-#prot 3
-#str 20
+#hp 110
+#prot 5
+#str 22
 #att 11
 #def 12
 #mr 18
 #fixedname "Thetis"
 #miscshape
-#uwdamage 0
-#secondshape 0
 #watershape 10009
 #giftofwater 500
 #female
@@ -75790,7 +75850,18 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #expertleader
 #expertmagicleader
 #amphibian
-#itemslots 991750
+#mor 30
+#fireres 60
+#coldres -5
+#heat 9
+#fireshield 15
+#firepower 1
+#woundfend 99
+#magicbeing
+#ethereal
+#neednoteat
+#spiritsight
+#itemslots 786432
 #clearmagic
 #magicskill 0 1
 #magicskill 2 2
@@ -75870,9 +75941,10 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #amphibian
 #darkvision 50
 #batstartsum1 8627 -- Whirlpool
-#itemslots 991750
+#itemslots 860678
 #clearmagic
-#magicskill 2 4
+#magicskill 1 1
+#magicskill 2 3
 #magicskill 7 1
 #end
 
@@ -75928,6 +76000,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #descr "The Great Thalassid is an ancient and cunning sea creature born at the dawn of time, when monsters and giants roamed the world. Over the millennia its kin were hunted to extinction, forcing it to hide in a cold corner of the world's oceans. With the Pantokrator gone, the creature has finally emerged to seek vengeance upon its ancient foes. The Great Thallasid has power over misdirection and can turn into a silver fish to pass undetected through hostile waters. It is surrounded by a shroud of glamour that will confuse attackers."
 #diseaseres 100
 #gcost 160
+#homerealm 0 -- none
 #startdom 2
 #pathcost 60
 #moreluck 1
@@ -76004,7 +76077,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #enc 2
 #prec 8
 #troglodyte
-#mapmove 2
+#mapmove 22
 #fear 5
 #ap 16
 #diseasecloud 4
@@ -76035,6 +76108,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #descr "The Bacobaco is a monstrous, fire breathing turtle born at the dawn of time, when monsters and giants roamded the world. He was once chased to the ends of the earth by spirit hunters, and in his pursuit he fled to a mountain where he dug a great hole in its summit, showering the land with rock, mud, dust, and fire for three days, howling so loudly the earth shook. There he has remained, though with the Pantokrator's disappearance he has begun to stir again."
 #diseaseres 100
 #gcost 220
+#homerealm 0 -- none
 #startdom 2
 #pathcost 60
 #moreprod -1 
@@ -76052,6 +76126,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #trample
 #uwheat 10
 #enc 1
+#winterpower 0
 #itemslots 3932160
 #clearmagic
 #magicskill 0 2
@@ -76145,6 +76220,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #descr "Born at the dawn of time, the Dreamtime Parrot represents an earlier era, when monsters and giants roamed the world and all life was connected to the Dreamtime. Gifted with brilliant white feathers and a powerful shriek, the monstrous bird became envious of the growing works of man and sought to destroy them. Furious, the Pantokrator imprisoned the Dreamtime Parrot for eternity. Now with the Pantokrator gone, the Dreamtime Parrot is breaking free from its prison and will soon release its destructive shriek and endless curiousity upon the world."
 #diseaseres 100
 #gcost 180
+#homerealm 0 -- none
 #startdom 2
 #pathcost 60
 #hp 102
@@ -76158,7 +76234,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #woundfend 2
 #twiceborn 1388  -- Ziz
 #unsurr 5
-#homerealm 0
 #clearweapons
 #weapon 826  -- talons
 #weapon 825 -- beak
@@ -76177,6 +76252,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #descr "The Lord of the Red Desert is a dingo-headed Titan who claims dominion over the harsh Sun and unforgiving desert beyond the borders of civilization. Originally tasked by the Pantokrator with guardianship over the cycles of summer fires, in his hubris he began to accept the worship of men. Furious, the Pantokrator imprisoned him under the red sands for all eternity. Now with the Pantokrator gone, the Lord of the Red Desert is free to assert his will upon the world once again."
 #diseaseres 100
 #gcost 280
+#homerealm 0 -- none
 #startdom 3
 #pathcost 40
 #moreheat 1
@@ -76200,88 +76276,10 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #magicskill 7 1
 #end
 
-#newmonster 10021 -- Aetos
-#copystats 1381  -- Great Eagle
-#clearmagic
-#spr1 "magicenhanced/eetempesteagle.tga"
-#spr2 "magicenhanced/eetempesteagle2.tga"
-#name "Tempest Eagle"
-#descr "Aetos is a giant tawny eagle with resplendent feathers. He was raised as a companion by an ancient deity of the heavens and used to punish those who dared steal the secret of fire from the gods. Aetos is skilled in the magics of air and fire. In battle he will beat his wings to create a howling windstorm that will prevent flight and blow arrows off their course. He can distill thunder and lightning into air gems, and his screech strikes fear into the heart of enemy soldiers."
-#fixedname "Aetos"
-#bird
-#animal
-#unique
-#gcost 0
-#hp 78
-#size 9
-#prot 16
-#mr 16
-#mor 16
-#str 20
-#att 14
-#def 13
-#prec 15
-#enc 2
-#mapmove 32
-#ap 8
-#magicskill 1 2
-#magicskill 0 2
-#gemprod 1 1
--- #tmpairgems 1
-#onebattlespell 830 -- Storm
-#startage 1000
-#maxage 2000
-#shockres 15
-#fireres 5
-#fear 5
-#mountainsurvival
-#stormimmune
-#transformation 0
-#polyimmune
-#spiritsight
-#goodleader
-#beastmaster 2
-#twiceborn 1388  -- Ziz
-#end
 
-#newmonster 6834
-#copystats 1381  -- Great Eagle
-#copyspr 2785  -- Solar Eagle
-#clearmagic
-#clearweapons
-#name "Primordial Eagle"
-#descr "A Primordial Eagle is an animal spirit from an age long ago, when monsters and giants roamed the land. They are massive in size and tremendously majestic creatures of the air. In combat the eagle will beat its wings to create a howling windstorm that will prevent flight and blow arrows off their course, however the eagle will be unaffected. The screech of the creature will strike fear into the heart of enemy soldiers. Primordial spirits are revered among the tribes and are considered sacred."
-#bird
-#gcost 0
-#hp 78
-#size 9
-#prot 16
-#mr 16
-#mor 16
-#str 22
-#att 14
-#def 12
-#prec 15
-#enc 2
-#mapmove 32
-#ap 8
-#weapon 404  -- Beak
-#weapon 408  -- Talons
-#startage 1000
-#maxage 2000
-#woundfend 2
-#shockres 15
-#fear 5
-#holy
-#mountainsurvival
-#stormimmune
-#transformation 0
-#onebattlespell 830 -- Storm
-#spiritsight
-#okleader
-#twiceborn 1388  -- Ziz
-#shockres 15
-#end
+
+
+
 
 
 
@@ -77547,7 +77545,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #def 5
 #mr 18
 #mastersmith 0
-
+#nospiritform
 #itemslots 786432
 #clearmagic
 #magicskill 0 1
@@ -80992,12 +80990,11 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #gcost 250
 #pathcost 40
 #hp 65
-#prot 0
+#prot 13
 #str 23
 #att 13
 #def 15
 #mr 18
-#invulnerable 10
 #batstartsum5d6 2340  -- Atlantian Shadow Soldier
 #spreaddom 1
 #itemslots 991750
@@ -81137,7 +81134,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 2955 -- Leader of the Closed Council
 #descr "The Leader of the Closed Council is an ancient Oracle of the Deep, hailed as the greatest mage of the ages. Donning a godly mantle, the Oracle has taken the role of a Pretender God to lead Agartha to a promised future. The Oracle is able to foresee things that have not yet come to pass and can prevent disasters."
 #diseaseres 100
-#gcost 90
+#gcost 70
 #pathcost 20
 #hp 45
 #prot 3
@@ -83133,10 +83130,11 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 6 3
 #end
 
+
+
+
+
 -- ENDUNITS
-
-
-
 
 
 
@@ -83420,6 +83418,10 @@ Initiates of the Deep can be recruited in any land fort."
 
 #selectmonster 264  -- Vanjarl
 #gcost 370 -- 440 -> 400
+#end
+
+#selectmonster 1506  -- Helheim Vanjarl
+#gcost 370
 #end
 
 #selectmonster 271 -- Burgmeister Guard
@@ -84051,6 +84053,7 @@ Initiates of the Deep can be recruited in any land fort."
 #magicskill 2 1  -- 1W
 #custommagic 512 50  -- 50% W
 #montag 1051
+#prot 6
 #end
 
 #selectmonster 512  -- Fall Bear
@@ -84059,12 +84062,14 @@ Initiates of the Deep can be recruited in any land fort."
 #magicskill 3 1  -- 1E
 #custommagic 1024 50  -- 50% E
 #montag 1051
+#prot 8
 #end
 
 #selectmonster 513  -- Spring Hawk
 #magicskill 1 1  -- 1A
 #custommagic 256 50  -- 50% A
 #montag 1051
+#prot 3
 #end
 
 #selectmonster 514  -- Kithaironic Lion
@@ -84081,6 +84086,7 @@ Initiates of the Deep can be recruited in any land fort."
 #magicskill 0 1  -- 1F
 #custommagic 128 50  -- 50% F
 #montag 1051
+#prot 7
 #end
 
 #selectmonster 521  -- Abomination
@@ -87143,6 +87149,14 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #montag 1058
 #end
 
+#selectmonster 1714 -- Dakini
+#airshield 50
+#end
+
+#selectmonster 1741 -- Asrapa
+#airshield 50
+#end
+
 #selectmonster 1745 -- Asara
 #spr1 "vanilla/asara1.png"
 #spr2 "vanilla/asara2.png"
@@ -88223,6 +88237,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectmonster 2338  -- Praetorian Spectre
+#cleararmor
+#armor 546
+#armor 549
+#armor 156
 #bodyguard 4
 #end
 
@@ -89192,6 +89210,18 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #descr "Scouts are trained to pass unseen through enemy territory. Their reports on enemy army movements and the resources in enemy lands are invaluable to the prudent warlord. Merrow scouts are a bit uncomfortable on dry land and are not very skilled at wilderness survival."
 #end
 
+#selectmonster 2908  -- Ysian Spearman
+#gcost 10011
+#end
+
+#selectmonster 2923  -- Ysian Infantry
+#gcost 10011
+#end
+
+#selectmonster 2909  -- Ysian Man at Arms
+#gcost 10013
+#end
+
 #selectmonster 2917  -- Morgen Champion
 #okmagicleader
 #end
@@ -89685,7 +89715,8 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 #selectmonster 3463  -- Jinn Warrior
-#reclimit 3
+#reclimit 5
+#gcost 10060
 #end
 
 #selectmonster 3465  -- Ifrit Sultan
@@ -107684,7 +107715,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 --#homecom 7447 -- nanook man
 #homecom 7514 -- akhlut
 #homecom 1624 -- tupilak
-#homecom 7769 -- kiga
+--#homecom 7769 -- kiga
 --#homecom 7770 -- kiga spirit
 #end
 
@@ -112013,7 +112044,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 6633 -- nirumb chief
 #homecom 6640 -- deer woman
 #homecom 6772 -- kashehotapalo
-#homecom 6630 -- thunder bird
 #homecom 6632 -- flying head
 #homecom 6777 -- bohpoli
 #homecom 6647 -- coyote
@@ -118552,6 +118582,7 @@ Priests: Average"
 #addgod 8455 -- Sacred Grove
 #addgod 8349 -- Great Gull
 
+#futuresite "Gateway to Tech Duinn"
 #futuresite "EA Fomoria Summons"
 #futuresite "EA Fomoria Summons Continued"
 #futuresite "EA Fomoria Heroes"
@@ -129138,7 +129169,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #selectspell 2646
 #name "Rivers of Lava"
 #descr "The caster performs a great ritual known only to the Anathemants. Calling on the power of Rhuax the mage draws lava and magma to the surface from the deep places of the world. This will cause dormant volcanoes to spring to life and rivers of magma to burst from the ground wherever the Dominion of the Lord spreads. This will further increase Heat scales and permanent sources of magical gems may be found within friendly Dominion. Whilst the Abysians rejoice and bathe in the lava pools, weaker fleshy creatures of other races will suffer horribly. This enchantment lasts until someone dispels it or the caster dies and once ended the magma pools created will begin to cool and fade."
-#details "River of Lava site appears in capital. River of Lava sites have a 20% chance per turn to propagate to adjacent provinces. Preaching has a 10% per Holy level to create a new River of Lava site, more preachers will increase the chance. River of Lava sites increase Heat in the province and allows limited recruitment of Burning Ones. Rivers in Abysian lands may increase growth and pops. Anathemant are 50 gold cheaper to recruit. Abysian mages at a River of Lava will get up to +1 Fire magic.
+#details "River of Lava site appears in capital. River of Lava sites have a 20% chance per turn to propagate to adjacent provinces. Preaching has a 10% per Holy level to create a new River of Lava site, more preachers will increase the chance. River of Lava sites increase Heat in the province and allows limited recruitment of Burning Ones when an Anathement is present. Rivers in Abysian lands may increase growth and pops. Anathemant are 50 gold cheaper to recruit. Abysian mages at a River of Lava will get up to +1 Fire magic.
 Rivers will generate up to 2d6 Fire Gems and 1d3 Earth Gems a turn.
 If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and those outside of Abysia's dominion will disappear quickly."
 #portent "Throughout the domain of Abysia violent lava bursts and volcanoes are erupting! The Abysians delight in the fiery spectacle, however the heat and lava cause great damage to the lands of other nations. Unless the spell is ended the world will be fit only for ##godname## and their fiery servants."
@@ -148314,7 +148345,7 @@ Applies the effects of Holy Avenger to the caster"
 #effect 10001
 #nreff 505
 #damage 7579
-#fatiguecost 600
+#fatiguecost 800
 #restricted 25 -- EA Mictlan
 #restricted 73 -- MA Mictlan
 #restricted 111 -- LA Mictlan
@@ -148332,7 +148363,7 @@ Applies the effects of Holy Avenger to the caster"
 #effect 10001
 #nreff 1012 -- 15+
 #damage 7579
-#fatiguecost 1500
+#fatiguecost 1800
 #restricted 73 -- MA Mictlan
 #end
 
@@ -151857,6 +151888,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 1098 -- Siege Golem
+#school -1 -- TEMPORARY
 #researchlevel 8
 #fatiguecost 2500
 #effect 10021  -- Summon Commander
@@ -157171,7 +157203,7 @@ This will also prevent their skin from drying out."
 #armor 567
 #end
 
-#selectitem 875 -- Leviathan Aura
+#selectitem 875 -- Jabberwocky Aura
 #clear
 #spr "blue_dirgen/blanksprite.tga"
 #name "Aura of Confusion"
@@ -157184,6 +157216,7 @@ This will also prevent their skin from drying out."
 #autospellrepeat 1
 #cursed
 #nofind
+#restricteditem 22
 #end
 
 
@@ -175627,161 +175660,6 @@ Tax collectors report that the population was extraordinarily unruly this month 
 
 
 
-#newevent
-#rarity 5
-#req_pretismnr 8411
-#nation -2
-#nolog
-#notext
-#req_pop0ok
-#req_temple 1
-#req_mnr 8411
-#req_domchance 5
-#1unit 2497 -- Penumbral -- ~0.5 per turn at 10 dom
-#end
-
-
-#newevent
-#rarity 5
-#req_godismnr 8411
-#nation -2
-#nolog
-#notext
-#req_pop0ok
-#req_temple 1
-#req_monster 1490 -- Umbral
-#killmon 1490
-#1unit 10000 -- Sacred Umbral
-#end
-
-
-#newevent
-#rarity 5
-#req_godismnr 8411
-#nation -2
-#nolog
-#notext
-#req_pop0ok
-#req_temple 1
-#req_monster 1490 -- Umbral
-#killmon 1490
-#1unit 10000 -- Sacred Umbral
-#end
-
-
-#newevent
-#rarity 5
-#req_godismnr 8411
-#nation -2
-#nolog
-#notext
-#req_pop0ok
-#req_temple 1
-#req_monster 1490 -- Umbral
-#killmon 1490
-#1unit 10000 -- Sacred Umbral
-#end
-
-
-#newevent
-#rarity 5
-#req_godismnr 8411
-#nation -2
-#nolog
-#notext
-#req_pop0ok
-#req_temple 1
-#req_monster 1490 -- Umbral
-#killmon 1490
-#1unit 10000 -- Sacred Umbral
-#end
-
-
-#newevent
-#rarity 5
-#req_godismnr 8411
-#nation -2
-#nolog
-#notext
-#req_pop0ok
-#req_temple 1
-#req_monster 1490 -- Umbral
-#killmon 1490
-#1unit 10000 -- Sacred Umbral
-#end
-
-
-#newevent
-#rarity 5
-#req_godismnr 8411
-#nation -2
-#nolog
-#notext
-#req_pop0ok
-#req_temple 1
-#req_monster 1490 -- Umbral
-#killmon 1490
-#1unit 10000 -- Sacred Umbral
-#end
-#newevent
-#rarity 5
-#req_temple 1
-#req_mindef 1
-#req_pop0ok
-#req_targmnr 8649
-#req_godismnr 8411
-#nation -2
-#msg "Your Prayer has reached your God, and has been reciprocated."
-#header 2
-#nolog
-#2d6units 2497 -- Penumbral ~6.7gems
-#end
-
-
-#newevent
-#rarity 5
-#req_temple 1
-#req_mindef 1
-#req_pop0ok
-#req_targmnr 8649
-#req_godismnr 8411
-#nation -2
-#notext
-#nolog
-#req_monster 8645
-#1d6units 10000 -- Sacred Umbral ~4.6gems
-#end
-#newevent
-#rarity 5
-#req_temple 1
-#req_mindef 1
-#req_pop0ok
-#req_targmnr 8659
-#req_godismnr 8411
-#nation -2
-#msg "Your Great Prayer has reached your God, and has been reciprocated."
-#header 2
-#nolog
-#com 10000 -- Sacred Umbral
-#end
-
-
-#newevent
-#rarity 5
-#req_temple 1
-#req_mindef 1
-#req_pop0ok
-#req_targmnr 8659
-#req_godismnr 8411
-#nation -2
-#notext
-#nolog
-#req_monster 8655
-#2d6units 2497 -- Penumbral
-#1d6units 10000 -- Sacred Umbral
-#end
-
-
 
 -- END OF PRETENDER EVENTS
 
@@ -179739,129 +179617,6 @@ It is now fully repaired and a new crew has been assigned to it."
 #end
 
 
-
-
--- START DEBUG SECTION
-
-
--- Unit Spawner Scout
-#selectmonster 426 -- Scout
-#makemonsters5 2510
-#makemonsters4 2510
-#makemonsters3 3065
-#makemonsters2 527
-#noleader
-#nomagicleader
-#noundeadleader
-#ainorec
-#end
-
-
-#newmonster 8825
-#copyspr 2222 -- frog
-#name "smart frog"
-#descr "smart frog"
-#magicskill 0 9
-#magicskill 1 9
-#magicskill 2 9
-#magicskill 3 9
-#magicskill 4 9
-#magicskill 5 9
-#magicskill 6 9
-#magicskill 7 9
-#magicskill 8 9
-#magicskill 9 5
-#researchbonus 100
-#neednoteat
-#amphibian
-#heal
-#diseaseres 100
-#hp 50
-#prot 25
-#mr 22
-#str 28
-#att 18
-#enc 0
-#clearweapons
-#weapon 400 -- devour soul
-#startage 1
-#maxage 10000
-#itemslots 2040326 -- normal but 3 misc
-#end
-
-
-#newevent
-#rarity 5
-#req_ai 0
-#msg "Mooar fort"
-#req_monster 8825
-#req_targorder 20 -- build fort
-#temple 1
-#fort 4
-#lab 1
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_ai 0
-#nation -2
-#req_owncapital 1
-#req_pregame
-#msg "get frog"
-#nolog
-#notext
-#com 8825 -- frog
-#end
-
-#newevent
-#rarity 5
-#req_ai 0
-#nation -2
-#req_owncapital 1
-#req_nomonster 8825
-#msg "respawn frog"
-#nolog
-#notext
-#com 8825 -- frog
-#end
-
-#newevent
-#rarity 5
-#req_ai 0
-#nation -2
-#req_owncapital 1
-#req_pregame
-#msg "get cool"
-#nolog
-#notext
-#addsite 2100 -- cool
-#end
-
-#newsite 2100 -- cool
-#name "cool"
-#rarity 5
-#path 2
-#level 0
-#gems 0 10
-#gems 1 10
-#gems 2 10
-#gems 3 10
-#gems 4 10
-#gems 5 10
-#gems 6 10
-#gems 7 10
-#gems 8 10
-#xp 10
-#end
-
-
-
-
-
-
-
--- END DEBUG SECTION
 
 
 
