@@ -128149,7 +128149,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #researchlevel 0
 #effect 10084
 #nreff 1
-#damage 272 -- Ench72
+#damage 283 -- Ench83 -- Grootslang Hunting
 #fatiguecost 100
 #end
 
@@ -128157,11 +128157,12 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #copyspell 759 -- Distill Gold
 #name "Cave of the Grootslang"
 #descr "The caster locates the lair of a Grootslang. These primordial, gigantic snakelike creatures live in deep caves and fill their lairs with diamonds. The caster sneaks into such a cave and hurriedly grabs handfuls of diamonds before escaping. The more gems spent in the casting the larger lair will be located and the higher the skill of the casting mage the more gems they can grab before escaping. The Grootslang covets its diamonds and might come looking for them in coming months."
-#details "Gold gained: 15 gold per gem spent after the initial cost (increased by one for every extra mage level), 20% chance of Grootslang attack in coming months"
+#details "Gold gained: 350, 30% chance of Grootslang attack in coming months"
 #school 4
 #researchlevel 3
 #path 0 6
-#damage 2023
+#damage 1350
+#fatiguecost 3000
 #spec 0
 #restricted 28 -- EA Machaka
 #restricted 76 -- MA Machaka
@@ -167349,8 +167350,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 
 #newevent
 #rarity 5
-#req_ench 272 -- Ench72
-#req_rare 20
+#req_ench 283 -- Ench83 -- Grootslang Hunting
+#req_rare 30
 #nation 2
 #req_pop0ok
 #msg "A Grootslang attacked, enraged by the theft of its diamonds!"
