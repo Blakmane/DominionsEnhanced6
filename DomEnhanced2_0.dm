@@ -29173,6 +29173,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #bodyguard 5
 #magicskill 7 1
 #custommagic 26880 100 -- ASNG
+#custommagic 26880 100 -- ASNG
 --#custommagic 10496 100  -- 100% ASN
 #weapon 474  -- Golden Sword
 #end
@@ -134731,7 +134732,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #spec 8404992  -- Ignores shields, UW OK
 #restricted 89 -- MA R'lyeh
 #restricted 127 -- LA R'lyeh
-#nextspell 3031
+#nextspell 1140 -- Astral shield
 #end
 
 #selectspell 3032
