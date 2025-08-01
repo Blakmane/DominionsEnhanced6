@@ -23889,6 +23889,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #noleader
 #heretic 3
 #popkill 5
+#moregrowth 0
 #end
 
 #newmonster 7250
@@ -24042,6 +24043,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #incunrest 150
 #ethereal
 #prot 7
+#moregrowth 0
 #spiritform
 #wastesurvival
 #spiritsight
@@ -24270,6 +24272,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #magicskill 4 3
 #magicskill 8 3
 #polyimmune
+#moregrowth 0
+#moremagic 0
 #end
 
 #newmonster 7267
@@ -24644,6 +24648,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 55  -- Hoof
 #weapon 300  -- Headbutt
 #polyimmune
+#moregrowth 0
 #end 
 
 #newmonster 7280
@@ -24681,6 +24686,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #maxage 2000
 #batstartsum3d6 549  -- Boar
 #polyimmune
+#moregrowth 0
+#moreorder 0
 #end
 
 #newmonster 7281
@@ -24720,6 +24727,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #maxage 2000
 #twiceborn 6644 -- Wight Beast
 #polyimmune
+#moregrowth 0
 #end
 
 #newmonster 7282
@@ -24743,6 +24751,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #unique
 #bringeroffortune 15
 #polyimmune
+#moreprod 0
 #end
 
 #newmonster 7283
@@ -24776,6 +24785,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #unique
 #bringeroffortune 15
 #polyimmune
+#moregrowth 0
 #end
 
 #newmonster 7284
@@ -24799,6 +24809,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #unique
 #bringeroffortune 15
 #polyimmune
+#moreluck 0
 #end
 
 #newmonster 7285
@@ -24820,6 +24831,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #unique
 #bringeroffortune 15
 #polyimmune
+#moreorder 0
 #end
 
 #newmonster 7286
@@ -153917,7 +153929,7 @@ Can only be cast once per combat round."
 #name "Pashupatastra"
 #descr "The Pashupatastra is a divine weapon created by the Pantokrator to destroy a powerful foe long ago. Since then the Pantrokrator has decreed it should never be used again and it was sealed away forever. In the intervening aeons the weapon has lost a great deal of its power, but even in a weakened state it still holds incredible power. The weapon can be fired from a bow and will cause great damage to fortifications and defences."
 #mainpath 4
-#type 2
+#type 3
 #secondarypath 0
 #mainlevel 2
 #secondarylevel 2
@@ -155518,7 +155530,7 @@ This will also prevent their skin from drying out."
 #constlevel 5
 #mainpath 6
 #mainlevel 1
-#type 2
+#type 3
 #poisonres 15
 #weapon 1603 -- Bow of Venom
 #restricted 9  -- Sauromatia
@@ -155678,7 +155690,7 @@ This will also prevent their skin from drying out."
 #secondarypath 7
 #mainlevel 2
 #secondarylevel 1
-#type 2
+#type 3
 #weapon 152  -- Longbow of accuracy
 #spell "Arrow of Many Leagues"
 #restricted 57
@@ -156789,7 +156801,7 @@ This will also prevent their skin from drying out."
 #mainlevel 1  -- /
 #secondarypath 1 -- -\ Air 1
 #secondarylevel 1  -- /
-#type 2  -- 2H Weapon
+#type 3
 #itemcost1 -40  -- 4 Gems
 #itemcost2 -40  -- 3 Gems
 #weapon 1573
