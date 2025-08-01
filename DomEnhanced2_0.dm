@@ -89628,6 +89628,9 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #montag 1050  -- True Jinn
 #end
 
+#selectmonster 3398
+#maxage 525
+#end
 
 #selectmonster 3394  -- Serpent of the Underworld
 #clearmagic
@@ -144931,125 +144934,6 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #nextspell 3898
 #end
 
-#selectspell 3890 -- Gift of Formlessness replacement
-#copyspell 831
-#details "Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed.
-Underwater: AoE 10+2"
-#aoe 1003 -- 5+
-#range 5
-#aispellmod -50
-#precision 100
-#nextingeo 4 -- Sea
-#end
-
-#selectspell 3891 -- Gift of Formlessness UW effect
-#copyspell 831
-#school -1
-#aoe 3
-#end
-
-#selectspell 3892 -- A1 levitate
-#copyspell 1150 -- Levitate Soldiers
-#name "Levitation"
-#descr "A few soldiers are granted the ability to float a few inches above the ground."
-#details "Floating units cannot be targeted by some spells like earth grip or earthquakes."
-#aoe 1
-#pathlevel 0 1
-#researchlevel 3
-#end
-
-#selectspell 3893 -- True Sight mid-tier
-#copyspell 1146 -- Gift of True Sight
-#name "Fay Eyes"
-#descr "A group of soldiers are granted the ability to discern illusions and see the unseen."
-#details "True Sight enables a unit to attack invisible or glamoured targets without penalties."
-#aoe 1001 -- 3+
-#pathlevel 0 2
-#researchlevel 5
-#end
-
-#selectspell 3894 -- Spirit Sight high-tier
-#copyspell 1182 -- Gift of Spirit Sight
-#name "Third Sight"
-#descr "The caster opens the third eye of many troops, enabling them to observe the spirit world temporarily. The soldiers gain Spirit Sight for the remainder of the battle."
-#details "Units with Spirit Sight can see invisible and glamoured units for what they are. Spirit Sight also grants 100% darkvision."
-#aoe 1007 -- 10+
-#pathlevel 0 4
-#fatiguecost 100
-#researchlevel 7
-#end
-
-#selectspell 3895
-#copyspell 849 -- Blindness
-#name "Theft of Vision"
-#descr "The caster attempts to steal the sight of a group of soldiers. Anyone in the area will be permanently blinded unless the spell is resisted."
-#researchlevel 7
-#school 4
-#range 25
-#path 0 7 -- G
-#pathlevel 0 3
-#path 1 0 -- F
-#pathlevel 1 1
-#fatiguecost 20
-#aoe 1003 -- 6+
-#end
-
-#selectspell 3896 -- Erode, 3E decay and damage armor
-#copyspell "Decay"
-#name "Time and Tide"
-#descr "The caster imposes the erosion of time on a large group of soldiers, damaging their armor and may make the victim age and die at an incredibly fast rate. Magical armor does not wear and magical resistance can protect from the effects. This spell is significantly more potent if cast underwater."
-#details "Failing to resist this spell can damage armor and age the victim rapidly.
-Underwater: Targets must resist both effects of the spell a second time with an easier MR check."
-#researchlevel 6
-#school 1
-#path 0 3 -- Earth
-#pathlevel 0 3
-#path 1 7 -- Glamour
-#pathlevel 1 1
-#aoe 3003 -- 12+3
-#fatiguecost 30
-#range 30
-#damage 256
-#spec 8409216 -- UWOK, MRN, Ignores Shields, AN
-#explspr 10018
-#flightspr -1
-#nextspell 3856
-#end
-
-#selectspell 3897
-#copyspell 1282 -- rage
-#name "Hate"
-#descr "The spell fills the heart of a few men with furious anger. The raging units will attack anything nearby, even friends."
-#researchlevel 6
-#path 0 0 -- F
-#pathlevel 0 2
-#path 1 7 -- G
-#pathlevel 1 1
-#aoe 1002 -- 4+
-#end
-
-#selectspell 3898
-#copyspell 642
-#name "Acid Splash"
-#descr "Acid spews from the helm."
-#school -1
-#aoe 2
-#end
-
-#selectspell 3899
-#copyspell 216 -- Sermon of Courage
-#name "Banner Skill"
-#descr "The power of the banner strengthens fighting ability and morale in nearby troops."
-#details "Attack skill +2, morale +2. Temporary morale +5 every round."
-#school -1
-#researchlevel 0
-#effect 17
-#damage 5
-#aoe 50
-#range 0
-#nextspell 3722
-#end
-
 #selectspell 3900 -- A1 air shield
 #copyspell 789 -- Protective Winds
 #name "Deflect Arrows"
@@ -150089,6 +149973,126 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #nreff 504
 #fatiguecost 300
 #spec 8388608  -- UW OK
+#end
+
+
+#selectspell 4267 -- Gift of Formlessness replacement
+#copyspell 831
+#details "Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed.
+Underwater: AoE 10+2"
+#aoe 1003 -- 5+
+#range 5
+#aispellmod -50
+#precision 100
+#nextingeo 4 -- Sea
+#end
+
+#selectspell 4268 -- Gift of Formlessness UW effect
+#copyspell 831
+#school -1
+#aoe 3
+#end
+
+#selectspell 4269 -- A1 levitate
+#copyspell 1150 -- Levitate Soldiers
+#name "Levitation"
+#descr "A few soldiers are granted the ability to float a few inches above the ground."
+#details "Floating units cannot be targeted by some spells like earth grip or earthquakes."
+#aoe 1
+#pathlevel 0 1
+#researchlevel 3
+#end
+
+#selectspell 4270 -- True Sight mid-tier
+#copyspell 1146 -- Gift of True Sight
+#name "Fay Eyes"
+#descr "A group of soldiers are granted the ability to discern illusions and see the unseen."
+#details "True Sight enables a unit to attack invisible or glamoured targets without penalties."
+#aoe 1001 -- 3+
+#pathlevel 0 2
+#researchlevel 5
+#end
+
+#selectspell 4271 -- Spirit Sight high-tier
+#copyspell 1182 -- Gift of Spirit Sight
+#name "Third Sight"
+#descr "The caster opens the third eye of many troops, enabling them to observe the spirit world temporarily. The soldiers gain Spirit Sight for the remainder of the battle."
+#details "Units with Spirit Sight can see invisible and glamoured units for what they are. Spirit Sight also grants 100% darkvision."
+#aoe 1007 -- 10+
+#pathlevel 0 4
+#fatiguecost 100
+#researchlevel 7
+#end
+
+#selectspell 4272
+#copyspell 849 -- Blindness
+#name "Theft of Vision"
+#descr "The caster attempts to steal the sight of a group of soldiers. Anyone in the area will be permanently blinded unless the spell is resisted."
+#researchlevel 7
+#school 4
+#range 25
+#path 0 7 -- G
+#pathlevel 0 3
+#path 1 0 -- F
+#pathlevel 1 1
+#fatiguecost 20
+#aoe 1003 -- 6+
+#end
+
+#selectspell 4273 -- Erode, 3E decay and damage armor
+#copyspell "Decay"
+#name "Time and Tide"
+#descr "The caster imposes the erosion of time on a large group of soldiers, damaging their armor and may make the victim age and die at an incredibly fast rate. Magical armor does not wear and magical resistance can protect from the effects. This spell is significantly more potent if cast underwater."
+#details "Failing to resist this spell can damage armor and age the victim rapidly.
+Underwater: Targets must resist both effects of the spell a second time with an easier MR check."
+#researchlevel 6
+#school 1
+#path 0 3 -- Earth
+#pathlevel 0 3
+#path 1 7 -- Glamour
+#pathlevel 1 1
+#aoe 3003 -- 12+3
+#fatiguecost 30
+#range 30
+#damage 256
+#spec 8409216 -- UWOK, MRN, Ignores Shields, AN
+#explspr 10018
+#flightspr -1
+#nextspell 3856
+#end
+
+#selectspell 4274
+#copyspell 1282 -- rage
+#name "Hate"
+#descr "The spell fills the heart of a few men with furious anger. The raging units will attack anything nearby, even friends."
+#researchlevel 6
+#path 0 0 -- F
+#pathlevel 0 2
+#path 1 7 -- G
+#pathlevel 1 1
+#aoe 1002 -- 4+
+#end
+
+#selectspell 4275
+#copyspell 642
+#name "Acid Splash"
+#descr "Acid spews from the helm."
+#school -1
+#aoe 2
+#end
+
+#selectspell 4276
+#copyspell 216 -- Sermon of Courage
+#name "Banner Skill"
+#descr "The power of the banner strengthens fighting ability and morale in nearby troops."
+#details "Attack skill +2, morale +2. Temporary morale +5 every round."
+#school -1
+#researchlevel 0
+#effect 17
+#damage 5
+#aoe 50
+#range 0
+#nextspell 3722
 #end
 
 
