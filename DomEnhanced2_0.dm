@@ -136212,8 +136212,8 @@ All effects scale with friendly Dominion."
 #descr "The caster calls back a host of ghostly legionnaires to serve them. Ghosts are frightening Ethereal beings that can drain the life force of the living. More powerful mages can summon more with each casting."
 #researchlevel 7
 #pathlevel 0 3
-#fatiguecost 2500
-#nreff 1009
+#fatiguecost 3000
+#nreff 2014 -- 20++
 #damage 7541 -- Ghostly Legionnaire
 #restricted 55 -- Sceleria
 #end
