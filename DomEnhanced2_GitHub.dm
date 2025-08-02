@@ -25271,6 +25271,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 202
 #armor 92
 #armor 545 -- Spectral Plate Cuirass
+#armor 543 -- Spectral Helmet
 #ethereal
 #enc 0
 #coldres 15
@@ -65611,42 +65612,42 @@ Cannot be recruited until Break the Deadlock is cast."
 
 -- Fire Elemental
 
-#selectmonster 3754
+#selectmonster 3714
 #def 10
 #unsurr 2
 #end
 
-#selectmonster 3755
+#selectmonster 3715
 #def 10
 #unsurr 2
 #end
 
-#selectmonster 3756
+#selectmonster 3716
 #def 10
 #unsurr 2
 #end
 
-#selectmonster 3757
+#selectmonster 3717
 #def 10
 #unsurr 2
 #end
 
-#selectmonster 3758
+#selectmonster 3718
 #def 10
 #unsurr 2
 #end
 
-#selectmonster 3759
+#selectmonster 3719
 #def 10
 #unsurr 2
 #end
 
-#selectmonster 3760
+#selectmonster 3720
 #def 10
 #unsurr 2
 #end
 
-#selectmonster 3761
+#selectmonster 3721
 #def 10
 #unsurr 2
 #end
@@ -65882,17 +65883,32 @@ Cannot be recruited until Break the Deadlock is cast."
 #selectmonster 563
 #clearmagic
 #magicskill 1 6
+#airshield 80
+#makemonsters1 3723 "Air Elemental"
 #end
 
 #selectmonster 911
+#descr "The Queen of Elemental Air is a physical manifestation of the wild magic of Air. Thuella has a body composed of billowing clouds and appears as a huge, crowned female being. 
+She is innately skilled in Air magic, and protects nearby allies from lightning and thunder. Thuella is the Queen of Thunder and her powers are increased during storms. Her body is composed of clouds and mist and is difficult to harm. 
+Only three Queens of Elemental Air are known to exist."
+#onebattlespell 1170 "Thunder Ward"
 #clearmagic
 #magicskill 1 6
+#airshield 80
 #end
 
 #selectmonster 912
+#descr "The Queen of Elemental Air is a physical manifestation of the wild magic of Air. Nephele has a body composed of billowing clouds and appears as a huge, crowned female being. 
+She is innately skilled in Air and Glamour magic and can summon sylphs from her abode in the sky. Her powers are increased during storms, and a thick mist surrounds and obscures her at all times. Her body is composed of clouds and mist and is difficult to harm.
+Only three Queens of Elemental Air are known to exist."
+#makemonsters4 562 "Sylph"
+#onebattlespell 790 "Mist"
 #clearmagic
+#stealthy 15
+#glamour
 #magicskill 1 5
 #magicskill 7 2
+#airshield 80
 #end
 
 -- EARTH KINGS
@@ -65900,11 +65916,15 @@ Cannot be recruited until Break the Deadlock is cast."
 #selectmonster 469
 #clearmagic
 #magicskill 3 6
+#makemonsters5 561 "Earth Gnome"
+#pierceres
 #end
 
 #selectmonster 906
 #clearmagic
 #magicskill 3 6
+#makemonsters1 3739 "Earth Elemental"
+#pierceres
 #end
 
 -- FIRE KINGS
@@ -65912,30 +65932,94 @@ Cannot be recruited until Break the Deadlock is cast."
 #selectmonster 631
 #clearmagic
 #magicskill 0 6
+#makemonsters5 7421 "Banefire Child"
+#def 10
+#unsurr 2
 #end
 
 #selectmonster 910
 #clearmagic
 #magicskill 0 5
 #magicskill 3 2
+#makemonsters5 640 "Magma Child"
+#def 10
+#unsurr 2
+#end
+
+#selectmonster909
+#def 10
+#unsurr 2
+#makemonsters1 3715 "Fire Elemental"
 #end
 
 -- WATER QUEENS
 
 #selectmonster 359
+#descr "The Queen of Elemental Water is a physical manifestation of the wild magic of Water. 
+Thalassa resembles a huge, crowned female being composed of water. She is innately skilled in Water magic and can summon water elementals to serve her. The Queen's body is composed of water and is very difficult to harm, particularly when she is underwater. Unless she is completely killed during one combat round, she will heal all her wounds.
+Only three Queens of Elemental Water are known to exist."
+#uwregen 50
+#regen 20
+#giftofwater 500
+#makemonsters1 3731 "Water Elemental"
+#amphibian
 #clearmagic
 #magicskill 2 6
 #end
 
 #selectmonster 907
+#descr "The Queen of Elemental Water is a physical manifestation of the wild magic of Water. 
+Bathusma resembles a body of dark water with the general appearance of a huge, crowned female being. She is innately skilled in Water magic and can summon undines from the depths of the ocean to serve her.  The deep ocean currents flow around her and aid her allies. The Queen's body is composed of water and is very difficult to harm when she is underwater. Unless she is completely killed during one combat round, she will heal all her wounds. Bathusma cannot leave the sea. 
+Only three Queens of Elemental Water are known to exist."
+#onebattlespell 1174 "Friendly Currents"
+#makemonsters4 360 "Undine"
 #clearmagic
 #magicskill 2 6
 #end
 
-#selectmonster 908
+#selectmonster 908 --Limne Queen of the Lake--
+#descr "The Queen of Elemental Water is a physical manifestation of the wild magic of Water. Limne resembles a huge, crowned female being composed of ice. 
+She is innately skilled in Water and Air magic and and will slowly freeze any province she is in. The Queen's body is composed of ice, no matter what the temperature of the province she is in. She can summon ice elementals on command and her power grows considerably when she is in cold provinces. 
+Only three Queens of Elemental Water are known to exist."
+#clear
 #clearmagic
+#clearweapons
+#name "Queen of Glaciers"
+#fixedname "Limne"
+#spr1 "./magicenhanced/icequeen1.tga"
+#spr2 "./magicenhanced/icequeen2.tga"
+#hp 65
+#weapon "Icicle Fist"
+#trample
+#amphibian
+#snow
+#slashres
+#cold 3
+#incscale 2
+#mor 30
+#goodmagicleader
+#goodleader
+#icenatprot 3
+#coldpower 2
+#str 18
+#att 14
+#def 12
+#prec 12
+#waterelementals 1
+#makemonsters1 3747 "Ice Elemental"
+#coldres 40
+#poisonres 15
+#fireres -10
+#size 8
+#startage 600
+#maxage 1000
+#mapmove 18
+#female
+#unique
+#magicbeing
 #magicskill 2 5
 #magicskill 1 2
+#itemslots 860678
 #end
 
 # ILLEARTH
@@ -65943,6 +66027,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #selectmonster 470
 #clearweapons
 #weapon 63 -- lifedrain
+#makemonsters1 3755 "Illearth"
 #end
 
 -- Start of New Pretender Changes and Additions
@@ -127469,31 +127554,28 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #selectspell 2525
 #copyspell 778 -- Alchemical Transmutation
 #name "Alchemical Secrets"
-#descr "In T'ien Ch'i the Imperial alchemists are learned in many forms of alchemical transmutation. With this spell the alchemist transmutes base metals into precious ones. The process is time consuming and requires the alchemist to use earth gems. Every extra gem spent gives the alchemist several pounds of gold. Skilled mages produce even more gold."
-#details "Gold gained: 15 gold per gem spent after the initial cost (increased by one for every extra mage level)."
+#descr "In T'ien Ch'i the Imperial alchemists are learned in many forms of alchemical transmutation. With this spell the alchemist transmutes base metals into precious ones. The process is time consuming and requires the alchemist to use earth gems."
 #researchlevel 0
-#damage 1014
+#damage 250
 #restricted 69 -- MA Tien Chi
 #end
 
 #selectspell 2526
 #copyspell 856 -- Alchemical Transmutation
 #name "Alchemical Workings"
-#descr "In T'ien Ch'i the Imperial alchemists are learned in many forms of alchemical transmutation. With this spell the alchemist transmutes base elements into prized alchemical wonders. Every extra gem spent gives the alchemist several pounds of gold. Skilled mages produce even more gold."
-#details "Gold gained: 20 gold per gem spent after the initial cost (increased by one for every extra mage level)."
+#descr "In T'ien Ch'i the Imperial alchemists are learned in many forms of alchemical transmutation. With this spell the alchemist transmutes base elements into prized alchemical wonders. The process is time consuming and requires the alchemist to use earth gems."
 #researchlevel 3
-#damage 2016
+#damage 350
 #restricted 69 -- MA Tien Chi
 #end
 
 #selectspell 2527
 #copyspell 856 -- Alchemical Transmutation
 #name "Alchemical Mastery"
-#descr "In T'ien Ch'i the Imperial alchemists are learned in many forms of alchemical transmutation. With this spell the alchemist learns to transmute earth gems into jade, an incredibly valuable substance. Every extra gem spent gives the alchemist several pounds of gold. Skilled mages produce even more gold."
-#details "Gold gained: 30 gold per gem spent after the initial cost (increased by one for every extra mage level)."
+#descr "In T'ien Ch'i the Imperial alchemists are learned in many forms of alchemical transmutation. With this spell the alchemist learns to transmute earth gems directly into jade, an incredibly valuable substance."
 #pathlevel 0 3
 #researchlevel 6
-#damage 3021
+#damage 450
 #restricted 69 -- MA Tien Chi
 #end
 
