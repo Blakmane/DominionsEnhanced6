@@ -2545,12 +2545,6 @@
 #unrepel
 #end
 
-#newweapon 1736
-#copyweapon 86  -- Mind Blast
-#name "Mental Mastery"
-#aoe 5
-#end
-
 #newweapon 1737
 #copyweapon 584  -- Lightning
 #name "Thunder Bolt"
@@ -3834,6 +3828,7 @@
 #name "Anointed Sword"
 #dmg 5
 #secondaryeffect 1840
+#magic
 #end
 
 
@@ -3900,6 +3895,13 @@
 #secondaryeffectalways 1830 -- mind blast stun
 #range0
 #ammo 1001
+#end
+
+
+#newweapon 1736
+#copyweapon 839  -- Tendie Mind Blast
+#name "Mental Mastery"
+#nreff 5
 #end
 
 -- End Mind Blast Changes
@@ -10857,7 +10859,7 @@
 #copystats 6724
 #chaosrec 0
 #name "Penitente"
-#descr "Some bravos eventually come to regret their sinful lives and decide to atone by swearing an oath of servitude to the church. They wear somber, dark colors and masks to show their regret and fight for the glory of the Awakening God rather than their own."
+#descr "Some bravos eventually come to regret their sinful lives and decide to atone by swearing an oath of servitude to the church. They wear somber, dark colors and masks to show their regret and fight for the glory of the Awakening God rather than their own. As Venedian temples are built more penitentes will make their way to the capital."
 #spr1 "venedia/penitente1.tga"
 #spr2 "venedia/penitente2.tga"
 #gcost 10015
@@ -27828,7 +27830,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #armor 2  -- Shield
 #nametype 113  -- C'tis Male
 #magicskill 1 1
-#magicskill 6 1
+#magicskill 5 1
 #end
 
 #newmonster 7424
@@ -50635,6 +50637,7 @@ Dragon Priests can be recruited in any land fort."
 #name "Maide"
 #descr "Maideak are inhabitants of the pyrenian mountains, and male counterpart to the Laminak. They appear as short dwarf-like men with duck feet, and few mortals would dare to harm them. Benevolent spirits of sleep and dreams, they will watch over farmhouses while families rest, though they may get angry if the house is not kept tidy. Sometimes they build bridges in the night, finishing their work before the first rooster crows. Maideak are supernaturally strong, able to lift great stones."
 #hp 10
+#awe 1
 #gcost 0
 #str 18
 #att 10
@@ -77187,7 +77190,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #descr "The Bitch Queen is a werewolf enchantress of tremendous magical power. The Bitch Queen usually appears in the form of an old hag, but when angered, she transforms into a werewolf. She is attended by a pack of werewolves that do her bidding. Even though her werewolf form is more powerful than her human form, it is still quite weak when compared to the majority of the other Pretender Gods."
 #diseaseres 100
 #gcost 50
-#startdom 2
+#startdom 1
 #pathcost 20
 #hp 16
 #prot 0
@@ -89665,7 +89668,6 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 #selectmonster 3400 -- Thyrmshirding
-#rpcost 2
 #gcost 10070
 #end
 
@@ -107783,6 +107785,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 1367 -- angel of the choir
 #homemon 3869 -- harbinger of the choir
 #homecom 1369 -- angel of fury
+#homecom 465 -- Arch angel
 #homecom 464 -- harbinger of motion
 #homecom 8608 -- harbinger of light
 #homecom 8607 -- harbinger of bodies
@@ -117333,11 +117336,13 @@ The mages of Venedia are skilled and versatile. Every coastal city of the republ
 #summary "Race: Humans, ocean sailing, income bonus in coastal castles and can recruit navigators
 Military: Crossbowmen, medium infantry, cavalry, skill. Mercenaries are cheaper
 Magic: Air, Water, Astral, some Earth, Nature, Death and Fire
-Priests: Average"
+Priests: Average. Every temple adds one to the sacred recruit limit."
 #color 0.4 0.05 0.1
 #secondarycolor 0.85 0.75 0.2
 #flag "venedia/venedia_flag.tga"
 #startsite "The Floating City"
+
+#templeholypoints 1
 
 #futuresite "LA Venedia Summons"
 #futuresite "Celestial Angels"
@@ -145288,7 +145293,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #path 0 5
 #pathlevel 0 2
 #effect 10167 -- lich
-#fatiguecost 100
+#fatiguecost 2500
 #damage 178 -- ???
 --#damage 8735 -- Guul Lich water
 #nreff 1
@@ -156312,7 +156317,7 @@ This will also prevent their skin from drying out."
 #name "Banner of the Phantasmal Host"
 #descr "The bearer of this banner is surrounded by a host of phantasmal warriors. These illusory figures march with them, confusing enemy scouting reports. In battle they will manifest to attack the enemies of the bearer, however they can only harm those who believe them to be real. The illusory army will make it impossible for the bearer to remain hidden."
 #constlevel 7
-#mainpath 1
+#mainpath 7
 #mainlevel 3
 #secondarypath 4
 #type 2
@@ -158796,21 +158801,25 @@ This will also prevent their skin from drying out."
 #selectitem 472 -- Orb of Elemental Fire
 #constlevel 7
 #itemcost1 60
+#unique
 #end
 
 #selectitem 473 -- Orb of Elemental Air
 #constlevel 7
 #itemcost1 60
+#unique
 #end
 
 #selectitem 474 -- Orb of Elemental Water
 #constlevel 7
 #itemcost1 60
+#unique
 #end
 
 #selectitem 475 -- Orb of Elemental Earth
 #constlevel 7
 #itemcost1 60
+#unique
 #end
 
 #selectitem 494 -- Sunrise Barding
