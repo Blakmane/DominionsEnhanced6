@@ -40727,7 +40727,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Nu Kua"
 #descr "Occasionally the Dragon Kings and their descendants take human form and dally with mortals. The children of these unions are known as the Nu Kua, Dragonblooded, and are at home both above and below the waves. Stronger and faster than most mortals, they often journey to the Dragon Courts upon learning of their divine heritage. There they are trained as elite warriors in the service of the Dragon Kings. When in mortal danger they can temporarily take draconic form. The descendants of the Dragon Kings are sacred to the halfmen of the Dragon Courts."
 #rpcost 36
-#gcost 10060
+#gcost 10050
 #holycost 2
 #hp 12
 #mr 13
@@ -125895,7 +125895,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1089 -- Crusher Construction
 #name "Construct Talos"
 #descr "The mage-engineers of Arcoscephale have learned to create and animate giant bronze statues to defend their cities. These constructions are almost invulnerable and strike with a great bronze sword. The Talos is a magical construct and will fall apart if left on the battlefield without magical leadership. This spell can only be cast by a Mage-Engineer trained at the Lykeion."
-#researchlevel 4
+#researchlevel 6
 #fatiguecost 600
 #damage 7391
 #restricted 5
@@ -148833,6 +148833,7 @@ Applies the effects of Holy Avenger to the caster"
 #selectspell 4173 -- Blink
 #copyspell 1262 -- Blink
 #name "A New Place"
+#school -1
 #aoe 0
 #spec 34368147456 -- UWOK, MRN, Ignore Shields, Bypass mirror image
 #end
