@@ -8923,6 +8923,7 @@
 #nametype 177  -- Mongolian Male
 #drawsize 0
 #mountmnr 3576
+#mobilearcher 0
 #end
 
 #newmonster 6661
@@ -11857,7 +11858,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #descr "In Sitecah the soul is composed of two parts - the Shilup, or inner soul, and the Shilombish or outer soul. When a person dies their Shilup proceeds to the afterlife, however their Shilombish remains until released by a shaman. Unscrupulous shamen can instead compel the Shilombish to serve them, and with the coming of the white giants there is no shortage of these lost souls. Their touch can paralyze living beings."
 #noleader
 #noundeadleader
-#itemslots 786432 -- 2 misc
+#itemslots 786438 -- 2 misc and hands
 #end
 
 #newmonster 6771
@@ -39083,7 +39084,10 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 --#warning 5 -- no longer allows more bodyguards
 #makemonsters1 7957 -- Lancer
 #makemonsters2 7956 -- Cuirassier
-#startitem 278
+--#startitem 278
+#spreaddom 1
+#awe 3
+#holy
 #inspirational 1
 #hp 19
 #ap 12
@@ -42328,7 +42332,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #custommagic 9728 100  -- 100% WEN
 #weapon 92  -- Fist
 #armor 158  -- Robes
-#batstartsum1 -1046  -- Spirit Animals
 #nametype 185
 #end
 
@@ -50409,8 +50412,6 @@ Dragon Priests can be recruited in any land fort."
 #ap 13
 #gcost 0
 #rcost 1
-#weapon 236  -- Tiger Bite
-#weapon 20 -- Tiger Claw
 #weapon 472  -- Flame Sword
 #armor 75  -- Fire Plate
 #maxage 1000
@@ -54339,7 +54340,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #mor 50
 #str 1
 #att 15
-#def 13
+#def 12
 #prec 10
 #airshield 75
 #diseaseres 100
@@ -54356,13 +54357,14 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #stealthy 0
 #startage 1
 #maxage 4
-#deathdisease 3
+#deathdisease 2
 #coridermnr 9091
 #mountmnr 9092
 #nofriders 4
 #mounted
 #montag 1075
 #montagweight 3
+#swampsurvival
 #end
 
 #newmonster 9091 -- "Corider" / Normal
@@ -54380,7 +54382,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #mor 50
 #str 1
 #att 15
-#def 13
+#def 12
 #prec 10
 #airshield 75
 #diseaseres 100
@@ -54397,10 +54399,11 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #stealthy 0
 #startage 1
 #maxage 4
-#deathdisease 3
+#deathdisease 2
 #mounted
 #montag 1075
 #montagweight 5
+#swampsurvival
 #end
 
 #newmonster 9092 -- "Mount"
@@ -54418,7 +54421,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #mor 50
 #str 1
 #att 15
-#def 13
+#def 12
 #prec 10
 #airshield 75
 #diseaseres 100
@@ -54435,8 +54438,9 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #stealthy 0
 #startage 1
 #maxage 4
-#deathdisease 3
+#deathdisease 2
 #mounted
+#swampsurvival
 #end
 
 #newmonster 9093 -- "Rider" x4
@@ -54460,7 +54464,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #mor 50
 #str 1
 #att 15
-#def 13
+#def 12
 #prec 10
 #airshield 75
 #diseaseres 100
@@ -54477,13 +54481,14 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #stealthy 0
 #startage 1
 #maxage 4
-#deathdisease 3
+#deathdisease 2
 #coridermnr 9091
 #mountmnr 9092
 #nofriders 3
 #mounted
 #montag 1075
 #montagweight 2
+#swampsurvival
 #end
 
 #newmonster 9094 -- "Rider" x3
@@ -54505,7 +54510,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #mor 50
 #str 1
 #att 15
-#def 13
+#def 12
 #prec 10
 #airshield 75
 #diseaseres 100
@@ -54522,13 +54527,14 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #stealthy 0
 #startage 1
 #maxage 4
-#deathdisease 3
+#deathdisease 2
 #coridermnr 9091
 #mountmnr 9092
 #nofriders 2
 #mounted
 #montag 1075
 #montagweight 1
+#swampsurvival
 #end
 
 
@@ -83398,7 +83404,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #end
 
 #selectmonster 81  -- Aby Infantry
---#spr1 "vanilla/abysian81_1.tga"
+--#spr1 "vanilla/abysian81_1.png"
+--#spr2 "vanilla/abysian81_2.png"
 --#icenatprot -1
 --#cleararmor
 --#armor 9 -- plate cuirass
@@ -83408,14 +83415,20 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #end
 
 #selectmonster 82  -- Aby Infantry
+--#spr1 "vanilla/abysian82_1.png"
+--#spr2 "vanilla/abysian82_2.png"
 #neednoteat
 #end
 
 #selectmonster 83  -- Aby Infantry
+--#spr1 "vanilla/abysian83_1.png"
+--#spr2 "vanilla/abysian83_2.png"
 #neednoteat
 #end
 
 #selectmonster 84  -- Aby Infantry
+--#spr1 "vanilla/abysian84_1.png"
+--#spr2 "vanilla/abysian84_2.png"
 #neednoteat
 #end
 
@@ -86686,7 +86699,7 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 #selectmonster 1420
 #descr "When the Atlantians fled into the deep swamps and jungles of Mictlan, they found a people that worshipped the Rain as one aspect of their God. The Atlantian kings became Kings of Rain and reshaped the faith to their needs. They found the secrets of the old blood cult and reinstated these foul practices of the ancient times. Now they gather power to wreak vengeance upon their old enemies and realize the dream of an eventual return to their former home beneath the waves. Living in the jungles of Mictlan has enacted a change upon the Atlantians and they have become resistant to most poisons."
 #poisonres 15
-#armor 119 -- Reinforced Leather Cap
+#armor 266 -- war crown
 #gcost 590
 #end
 
@@ -131537,7 +131550,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #end
 
 #selectspell 2803
-#name "Battle Fury"
+#name "Battle Rage"
 #descr "The caster sacrifices three thralls and by the power of their blood incites all friendly troops on the battle field to enter a state of blind rage. The strength of the fury is such that some troops will find themselves overcome and their hearts will burst in their chests. Human troops are more likely to be affected than the Vanir. Those affected will find their wounds fully healed and the rage will bring increased strength. One in twenty men affected will die from the spell."
 #details "Grants Berserk, +4 Str and fully heals hp. Death chance: 5%."
 #school 6
@@ -140231,7 +140244,7 @@ All effects scale with friendly Dominion."
 #nreff 1
 #damage 9090
 #precision 10050
-#fatiguecost 300
+#fatiguecost 500
 #restricted 190 -- LA Rotterland
 #provrange 5
 #nowatertrace 1
@@ -156198,7 +156211,7 @@ This will also prevent their skin from drying out."
 #darkvision 100
 #darkpower 3
 #undcommand 1
---#batstartsum1 2125
+#batstartsum1 -1072
 #end
 
 #selectitem 794
