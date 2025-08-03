@@ -54895,7 +54895,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #prec 10
 #enc 0
 #size 5
-#mr 17
+#mr 16
 #mor 30
 #hp 24
 #mapmove 18
@@ -54905,6 +54905,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #ethereal
 #assassin
 #patience 2
+#unique
 #invisible
 #scalewalls
 #humanoid
@@ -54918,12 +54919,13 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #startage 1000
 #neednoteat
 #amphibian
-#incunrest 100
-#bringeroffortune -100
+#incunrest 50
+#bringeroffortune -50
+#leper 1 -- Sends a message to the province he's in
 #magicskill 5 2
 #magicskill 7 3
 #magicskill 8 2
-#weapon 400 -- Devour Soul
+#weapon 1644 -- Soul Rending Bite
 #end
 
 #newmonster 9104
@@ -149963,14 +149965,14 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #copyspell 935 -- Pack of Wolves
 #name "Summon Bogeyman"
 #descr "The caster summons and binds the Bogeyman, a monster of the dreamwild known by many names throughout the world that roams the edges of civilization in search of children to abduct. They appear as a dark mass with sharp teeth and are capable of hiding their appearance entirely and will sometimes find their way into homes and under beds. It is believed they only hunt children that have misbehaved, and will often linger for days to terrify their victims before abduction. They are a personification of terror and anyone near them will feel a nauseating fear build up throughout their body. They can put the others to sleep around them when they wish and abduct by entering people whole into the black mass through their teeth where they will be trapped for the Bogeyman to do as it pleases with them. The presence of the Bogeyman will greatly increase unrest and bring great misfortune upon the province in which they dwell."
-#researchlevel 6
+#researchlevel 8
 #path 0 7
 #pathlevel 0 4
 #path 1 5
 #pathlevel 1 3
 #nreff 1
 #effect 10021
-#fatiguecost 3500
+#fatiguecost 4500
 #damage 9103 -- Bogeyman
 #end
 
