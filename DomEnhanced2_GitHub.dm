@@ -19062,8 +19062,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #domimmortal
 #springimmortal
 #magicskill 5 2
-#custommagic 46336 100 -- 100% AEDNB
-#custommagic 46336 100 -- 100% AEDNB
+#custommagic 54528 100 -- 100% AEDGB
+#custommagic 54528 100 -- 100% AEDGB
 #magicskill 9 2
 #stealthy 0
 #weapon 63  -- Life Drain
@@ -25321,7 +25321,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 20  -- Bite
 #weapon 236  -- Claw
 #weapon 532  -- Tail Sweep
-#weapon 514  -- Vitriol Breath
+#weapon 776  -- Dragon Bile
 #maxage 1000
 #startage 330
 #poorleader
@@ -48215,7 +48215,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #mor 14
 #prec 9
 #prot 4
-#size 5
+#size 4
 #mr 16
 #enc 3
 #mapmove 16
@@ -48418,7 +48418,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #enc 3
 #mapmove 20
 #ap 28
-#ambidextrous 3
 --#armor 710 -- Bronze Scale Barding
 #armor 142 -- Bronze Scale Cuirass
 #armor 135 -- Bronze cap
@@ -48503,6 +48502,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #enc 3
 #mapmove 20
 #ap 28
+#ambidextrous 3
 --#armor 710 -- Bronze Scale Barding
 #armor 142 -- Bronze Scale Cuirass
 #armor 135 -- Bronze cap
@@ -48599,7 +48599,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 15 -- +1
 #mor 15 -- +1
 #mr 14 -- +0
-#older 30
+#older 49
 #watershape 8600
 #nametype 159 -- Oceania Male
 #end
@@ -48610,7 +48610,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr2 "blue_oceania/maichtytaurmermidonw2.png"
 #name "Ichtytaur River Warrior"
 #descr "Life underneath the waves corresponds in many ways to that on dry land. Halfmen, like humans, have underwater counterparts. Ichtytaurs appear as minotaurs with fish tails instead of hind legs. They used to roam the kelp forests of shallow waters, but now most have moved into the rivers of the world. Among the half-men of the rivers, the Ichtytaur hold much power and make up a great deal of their fighting force. The exceptionally skilled are equipped as Mermidons are below the sea, and have pledged their fighting force to the Capricorns in retaking the kelp groves. Ichtytaurs have strange abilities of transformation and can remove their tails to walk on dry land. On land they fight by charging through the enemy trampling anything that is smaller than themselves."
-#gcost 10050
+#gcost 50
 #rpcost 26
 #def 10
 #att 10
@@ -48638,8 +48638,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr2 "blue_oceania/maichtytaurmermidonl2.png"
 #name "Ichtytaur River Warrior"
 #descr "Life underneath the waves corresponds in many ways to that on dry land. Halfmen, like humans, have underwater counterparts. Ichtytaurs appear as minotaurs with fish tails instead of hind legs. They used to roam the kelp forests of shallow waters, but now most have moved into the rivers of the world. Among the half-men of the rivers, the Ichtytaur hold much power and make up a great deal of their fighting force. The exceptionally skilled are equipped as Mermidons are below the sea, and have pledged their fighting force to the Capricorns in retaking the kelp groves. Ichtytaurs have strange abilities of transformation and can remove their tails to walk on dry land. On land they fight by charging through the enemy trampling anything that is smaller than themselves."
-#gcost 10050
-#rpcost 31
+#gcost 50
+#rpcost 26
 #def 10
 #att 10
 #str 17
@@ -65915,7 +65915,7 @@ Only three Queens of Elemental Air are known to exist."
 #makemonsters4 562 "Sylph"
 #onebattlespell 790 "Mist"
 #clearmagic
-#stealthy 15
+#stealthy 0
 #glamour
 #magicskill 1 5
 #magicskill 7 2
@@ -75851,6 +75851,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #att 13
 #def 13
 #mr 18
+#mor 30
 #clearweapons
 #weapon "Golden spear"
 #cleararmor
@@ -75893,6 +75894,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #enc 1
 #mapmove 2
 #ap 12
+#mor 30
 #weapon 823  -- Golden Claw
 #weapon 823  -- Golden Claw
 #fear 5
@@ -75928,6 +75930,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #att 11
 #def 12
 #mr 18
+#mor 30
 #fixedname "Thetis"
 #giftofwater 500
 #bringeroffortune 0
@@ -75977,6 +75980,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #fireshield 15
 #firepower 1
 #woundfend 99
+#mor 30
 #magicbeing
 #ethereal
 #neednoteat
@@ -76005,6 +76009,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #att 14
 #def 12
 #mr 18
+#mor 30
 #humanoid
 #fixedname "Dakuwaqa"
 #size 9
@@ -76046,6 +76051,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #att 12
 #def 11
 #mr 18
+#mor 30
 #fixedname "Charybdis"
 #size 9
 #enc 2
@@ -76085,6 +76091,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #att 13
 #def 15
 #mr 18
+#mor 30
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -76130,6 +76137,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #att 13
 #def 13
 #mr 18
+#mor 30
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -76164,6 +76172,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #att 5
 #def 0
 #mr 18
+#mor 30
 #mastersmith 0
 #aquatic
 #heat 0
@@ -76193,6 +76202,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #att 15
 #def 10
 #mr 18
+#mor 30
 #size 10
 #enc 2
 #prec 8
@@ -76240,6 +76250,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #att 12
 #def 7
 #mr 18
+#mor 30
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -76270,6 +76281,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #att 13
 #def 13
 #mr 18
+#mor 30
 #humanoid
 #fixedname "Asuang"
 #size 9
@@ -76310,6 +76322,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #att 14
 #def 12
 #mr 18
+#mor 30
 #humanoid
 #fixedname "Gugurang"
 #size 9
@@ -76349,6 +76362,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #att 14
 #def 17
 #mr 18
+#mor 30
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -76383,6 +76397,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #def 11
 #mr 18
 #heat 10
+#mor 30
 #summerpower 25
 #wastesurvival
 #fireres 25
@@ -88548,7 +88563,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spr1 "blue_oceania/maichtytaurw1.png"
 #spr2 "blue_oceania/maichtytaurw2.png"
 #descr "Life underneath the waves corresponds in many ways to that on dry land. Halfmen, like humans, have underwater counterparts. Ichtytaurs appear as minotaurs with fish tails instead of hind legs. They used to roam the kelp forests of shallow waters, but now most have moved into the rivers of the world. Those Ichtytaur that remain below the sea fight with unbridled rage comparable to their pangaean counterparts. Ichtytaurs have strange abilities of transformation and can remove their tails to walk on dry land. On land they fight by charging through the enemy trampling anything that is smaller than themselves."
-#gcost 10035
+#gcost 35
 #rpcost 17
 #berserk 4
 #clearweapons
@@ -88562,7 +88577,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spr1 "blue_oceania/maichtytaurl1.png"
 #spr2 "blue_oceania/maichtytaurl2.png"
 #descr "Life underneath the waves corresponds in many ways to that on dry land. Halfmen, like humans, have underwater counterparts. Ichtytaurs appear as minotaurs with fish tails instead of hind legs. They used to roam the kelp forests of shallow waters, but now most have moved into the rivers of the world. Those Ichtytaur that remain below the sea fight with unbridled rage comparable to their pangaean counterparts. Ichtytaurs have strange abilities of transformation and can remove their tails to walk on dry land. On land they fight by charging through the enemy trampling anything that is smaller than themselves."
-#gcost 10035
+#gcost 35
 #rpcost 17
 #berserk 4
 #mr 13
@@ -88579,7 +88594,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spr1 "blue_oceania/maichtytaurwarriorw1b.png"
 #spr2 "blue_oceania/maichtytaurwarriorw2b.png"
 #descr "Life underneath the waves corresponds in many ways to that on dry land. Halfmen, like humans, have underwater counterparts. Ichtytaurs appear as minotaurs with fish tails instead of hind legs. They used to roam the kelp forests of shallow waters, but now most have moved into the rivers of the world. Among the half-men of the rivers, the Ichtytaur hold much power and make up a great deal of their fighting force. Ichtytaurs have strange abilities of transformation and can remove their tails to walk on dry land. On land they fight by charging through the enemy trampling anything that is smaller than themselves."
-#gcost 10035
+#gcost 35
+#rpcost 17
 #clearweapons
 --#weapon 643 -- bronze spear
 #weapon 641 -- bronze trident
@@ -88591,7 +88607,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spr1 "blue_oceania/maichtytaurwarriorl1b.png"
 #spr2 "blue_oceania/maichtytaurwarriorl2b.png"
 #descr "Life underneath the waves corresponds in many ways to that on dry land. Halfmen, like humans, have underwater counterparts. Ichtytaurs appear as minotaurs with fish tails instead of hind legs. They used to roam the kelp forests of shallow waters, but now most have moved into the rivers of the world. Among the half-men of the rivers, the Ichtytaur hold much power and make up a great deal of their fighting force. Ichtytaurs have strange abilities of transformation and can remove their tails to walk on dry land. On land they fight by charging through the enemy trampling anything that is smaller than themselves."
-#gcost 10035
+#gcost 35
+#rpcost 17
 #mr 13
 #clearweapons
 --#weapon 643 -- bronze spear
