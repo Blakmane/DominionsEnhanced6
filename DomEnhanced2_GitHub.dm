@@ -62364,6 +62364,7 @@ Cannot be recruited until Break the Deadlock is cast."
 -- Modded Mount Skilled Rider Changes:
 
 
+
 #selectmonster 7398 -- Black Knight
 #skilledrider 8 -- 4 -> 8
 #end
@@ -62392,7 +62393,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 7 -- 4 -> 7
 #end
 
-#selectmonster 7783 -- Red Knight
+#selectmonster 7399 -- Red Knight
 #skilledrider 7 -- 4 -> 7
 #end
 
@@ -62480,11 +62481,11 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 6 -- 4 -> 6
 #end
 
-#selectmonster 7566 -- Fey Knight
+#selectmonster 7400 -- Fey Knight
 #skilledrider 8 -- 4 -> 8
 #end
 
-#selectmonster 7567 -- Errant Knight
+#selectmonster 7401 -- Errant Knight
 #skilledrider 8 -- 4 -> 8
 #end
 
@@ -62762,7 +62763,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 6666 -- Darkhad
-#skilledrider 7 -- 4 -> 7
+#skilledrider 6 -- 4 -> 6
 #end
 
 #selectmonster 6668 -- Wind Rider
@@ -62780,8 +62781,6 @@ Cannot be recruited until Break the Deadlock is cast."
 #selectmonster 6676 -- Baghatur
 #skilledrider 7 -- 4 -> 7
 #end
-
-
 
 
 
@@ -123261,7 +123260,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #researchlevel 8
 #path 0 4
 #pathlevel 0 3
-#path 1 1
+#path 1 7
 #pathlevel 1 2
 #damage 390  -- Grey Knight
 #nreff 15
@@ -154454,7 +154453,7 @@ Can only be cast once per combat round."
 #constlevel 3
 #mainpath 4
 #mainlevel 1
-#secondarypath 1
+#secondarypath 7
 #secondarylevel 1
 #unsurr 5
 #spiritsight
