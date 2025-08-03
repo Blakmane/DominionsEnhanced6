@@ -28906,6 +28906,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #montag 1027
 #twiceborn 7231 -- Wight Giant
 #polyimmune
+#chorusmaster
 #end
 
 #newmonster 7474
@@ -28950,6 +28951,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #montag 1027
 #twiceborn 7231 -- Wight Giant
 #polyimmune
+#chorusmaster
 #end
 
 #newmonster 7475
@@ -28988,6 +28990,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #montag 1027
 #twiceborn 7231 -- Wight Giant
 #polyimmune
+#chorusmaster
 #end
 
 #newmonster 7477
@@ -29024,6 +29027,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #montag 1027
 #twiceborn 7231 -- Wight Giant
 #polyimmune
+#chorusmaster
 #end
 
 #newmonster 7478
@@ -43292,7 +43296,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #weapon 1717
 #weapon 1720
 #weapon 261
-#homeshape 8132
+#scalewalls
 #end
 
 #newmonster 8133
@@ -59979,6 +59983,7 @@ Cost 50 recruitment points."
 #darkvision 50
 #nametype 129 -- indian male
 #humanoid
+#noleader
 #end
 
 
@@ -83929,14 +83934,14 @@ Initiates of the Deep can be recruited in any land fort."
 --#gcost 10020
 --#firstshape 0
 --#shapechange 400
-#hp 100
+--#hp 100
 #end
 
 #selectmonster 400  -- MA Skinshifter
 --#gcost 10020
 --#secondshape 0
 --#shapechange 399
-#hp 100
+--#hp 100
 #end
 
 
@@ -85152,6 +85157,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #gcost 350
 #magicskill 9 1
 #springpower 25
+#startage 35
 #end
 
 #selectmonster 811
@@ -89422,6 +89428,7 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 #selectmonster 2963 -- Uruk Mushussu Chariot Rider
+#cleararmor
 #armor 101 -- bronze hauberk
 #armor 135 -- bronze cap
 #end
@@ -115510,9 +115517,9 @@ Priests: Strong"
 #halfdeathpop
 #startcom 6805 -- Kikmongwi
 #startunittype1 6788 -- Spear Warrior
-#startunitnbrs1 30
+#startunitnbrs1 25
 #startunittype2 6786 -- Archer
-#startunitnbrs2 30
+#startunitnbrs2 25
 #startscout 6797 -- Scout
 #defcom1 6805 -- Kikmongwi
 #defcom2 6808 -- Sun Priest
@@ -115644,9 +115651,9 @@ Priests: Strong"
 #fortera 2
 #startcom 6861 -- Kikmongwi
 #startunittype1 6855 -- Spear Warrior
-#startunitnbrs1 30
+#startunitnbrs1 25
 #startunittype2 6853 -- Archer
-#startunitnbrs2 30
+#startunitnbrs2 25
 #startscout 6797 -- Scout
 #defcom1 6861 -- Kikmongwi
 #defcom2 6864 -- Sun Priest
@@ -118307,6 +118314,7 @@ Priests: Average"
 #addgod 8472 -- Reliquary
 #cheapgod20 8406 -- Titan of the Sun
 #cheapgod20 8472 -- Reliquary
+#delgod 644 -- Jotun Dracolich
 
 #addreccom 7526 -- Praefectus
 #futuresite "EA Ermor Summons"
@@ -119744,12 +119752,12 @@ Dominion: Laws may be enacted that ban blood and increase scales"
 #cheapgod20 8457 -- Spirit of Bones
 --#cheapgod20 8502 -- Worm Lord
 #descr "Asphodel was once part of Pangaea, a woodland nation inhabited by wild beings connected with nature. Halfmen such as satyrs, centaurs and minotaurs serve the lords of the Sacred Groves deep in the forests. In ancient times the woods covered much of the world, but that has changed. Man is no longer beast and animals are no longer wild. The world of the wild is disappearing. In response to the destruction of the wild forests a dark and hateful God has arisen. The Panii of the sacred groves could not prevent the destruction of the wilderness and a few of them have revolted and struck back with dark fury upon the civilized world. The Panic Apostates of the Carrion Grove have revolted and struck back upon the civilized world. They and their followers have been touched by the Dark God and their hides are colored as black as the mood of the vengeful forest. An enchanted sleeping sickness now spreads from the Carrion Grove, causing civilized men to succumb to eternal dreamless slumber. Vines spread across quiet cities as the forest reclaims the land."
-#summary "Race: Forest beings and reanimated carrion beings, stealthy troops, troops will heal battle afflictions, undead carrion beasts
-Military: Satyr and minotaur infantry, centaur warriors and archers, harpies, hordes of manikins and carrion beasts.
+#summary "Race: Halfmen and reanimated carrions.
+Military: Halfman infantry, hordes of manikins and carrion beasts.
 Magic: Nature, Death, some Glamour, Earth and Water.
 Priests: Average. Carrion priests can reanimate.
-Dominion: Reanimates the unburied dead as manikins. More carrion beasts in forests. Temples and Growth scales increase reanimation rates. Magic scales gives better reanimations. Dominion places population into a deep slumber and slowly kills it. Spread Sloth scales.
-Nation: Reduced income. Halved population increased from Growth scales."
+Dominion: Reanimates dead as manikins, more in Growth scales, Forests, and Temples. Better reanimation in Magic scales. Dominion places population into a deep slumber and slowly kills it. Spreads Sloth scales.
+Nation: Reduced income. Halved population growth from Growth scales."
 
 #nationinc -25
 #domkill 2
@@ -133379,7 +133387,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #descr "The caster enters the swamps of Ur and calls a Mushussu to aid them. The Mushussu is a wingless dragon native to the swamps of Ur. It is guardian being of the kingdom and is sacred to the Enkidus. It has a scaled body, paws of a lion, hindlegs of an eagle and a serpent tail. Some claim it is the most ancient of all dragon-kin. This spell can only be cast at the Swamps of Ur."
 #researchlevel 3
 #pathlevel 0 3
-#fatiguecost 500
+#fatiguecost 400
 #damage 2962  -- Mushussu
 #nreff 1
 #onlyatsite 151  -- The Swamps of Ur
@@ -135793,7 +135801,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 3095
 #name "Call Odontotyrannos"
-#descr "The caster enters a river estuary and summons a group of Odontotyrannos. Gigantic horned beasts that live in the rivers and estuaries around Oceania, these amphibious carnivores can devour an elephant. The Odontotyrannos is renowned as a fearsome creature and its roar will strike fear into the hearts of even seasoned warriors. This spell can only be cast at a coastal province."
+#descr "The caster enters a river estuary and summons a pair of Odontotyrannos. Gigantic horned beasts that live in the rivers and estuaries around Oceania, these amphibious carnivores can devour an elephant. The Odontotyrannos is renowned as a fearsome creature and its roar will strike fear into the hearts of even seasoned warriors. This spell can only be cast at a coastal province."
 #school 0
 #researchlevel 4
 #path 0 6
@@ -135802,7 +135810,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 1 1
 #effect 10001
 #fatiguecost 600
-#nreff 3
+#nreff 2
 #damage 7653 -- Odontotyrannus
 #onlycoastsrc 1
 #restricted 41 -- EA Oceania
@@ -136405,6 +136413,8 @@ All effects scale with friendly Dominion."
 #restricted 56 -- MA Pythium
 #restricted 61 -- MA Marignon
 #restricted 103 -- LA Marignon
+#restricted 201 -- LA Venedia
+#restricted 190 -- LA Rotterland
 #end
 
 #selectspell 3139
@@ -146937,7 +146947,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #descr "The caster enters the swamps of Ur and calls a Mushussu to aid them. The Mushussu is a wingless dragon native to the swamps of Ur. It is guardian being of the kingdom and is sacred to the Enkidus. It has a scaled body, paws of a lion, hindlegs of an eagle and a serpent tail. Some claim it is the most ancient of all dragon-kin. This spell can only be cast at the Swamps of Ur."
 #researchlevel 3
 #pathlevel 0 3
-#fatiguecost 500
+#fatiguecost 400
 #damage 7815  -- Mushussu nonsacred
 #nreff 1
 #onlyatsite 187  -- The Swamps of Ur
@@ -148822,7 +148832,7 @@ Applies the effects of Holy Avenger to the caster"
 #path 0 7 -- Glamour
 #pathlevel 0 5
 #path 1 5 -- Death
-#pathlevel 1 3
+#pathlevel 1 2
 #effect 10021
 #nreff 1
 #damage -1074 -- Great Shadow
@@ -178396,16 +178406,16 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 
+
 #newevent
 #rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 10
 #req_maxunrest 20
-#req_minpop 14500
-#req_maxpop 15000
+#req_minpop 1000
+#req_maxpop 1500
 #req_chaos 1
 #req_rare 10
 #gold 88
@@ -178418,11 +178428,10 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 20
 #req_maxunrest 33
-#req_minpop 14500
-#req_maxpop 15000
+#req_minpop 1000
+#req_maxpop 1500
 #req_chaos 1
 #req_rare 10
 #gold 135
@@ -178435,11 +178444,10 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 33
 #req_maxunrest 50
-#req_minpop 14500
-#req_maxpop 15000
+#req_minpop 1000
+#req_maxpop 1500
 #req_chaos 1
 #req_rare 10
 #gold 195
@@ -178452,11 +178460,10 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 50
 #req_maxunrest 75
-#req_minpop 14500
-#req_maxpop 15000
+#req_minpop 1000
+#req_maxpop 1500
 #req_chaos 1
 #req_rare 10
 #gold 258
@@ -178469,11 +178476,10 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 75
 #req_maxunrest 100
-#req_minpop 14500
-#req_maxpop 15000
+#req_minpop 1000
+#req_maxpop 1500
 #req_chaos 1
 #req_rare 10
 #gold 316
@@ -178486,11 +178492,10 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 100
 #req_maxunrest 150
-#req_minpop 14500
-#req_maxpop 15000
+#req_minpop 1000
+#req_maxpop 1500
 #req_chaos 1
 #req_rare 10
 #gold 382
@@ -178503,11 +178508,10 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 150
 #req_maxunrest 200
-#req_minpop 14500
-#req_maxpop 15000
+#req_minpop 1000
+#req_maxpop 1500
 #req_chaos 1
 #req_rare 10
 #gold 444
@@ -178520,10 +178524,9 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 200
-#req_minpop 14500
-#req_maxpop 15000
+#req_minpop 1000
+#req_maxpop 1500
 #req_chaos 1
 #req_rare 10
 #gold 566
@@ -178537,11 +178540,10 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 10
 #req_maxunrest 20
-#req_minpop 19500
-#req_maxpop 20000
+#req_minpop 1500
+#req_maxpop 2000
 #req_chaos 1
 #req_rare 10
 #gold 118
@@ -178554,11 +178556,10 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 20
 #req_maxunrest 33
-#req_minpop 19500
-#req_maxpop 20000
+#req_minpop 1500
+#req_maxpop 2000
 #req_chaos 1
 #req_rare 10
 #gold 179
@@ -178571,11 +178572,10 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 33
 #req_maxunrest 50
-#req_minpop 19500
-#req_maxpop 20000
+#req_minpop 1500
+#req_maxpop 2000
 #req_chaos 1
 #req_rare 10
 #gold 260
@@ -178588,11 +178588,10 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 50
 #req_maxunrest 75
-#req_minpop 19500
-#req_maxpop 20000
+#req_minpop 1500
+#req_maxpop 2000
 #req_chaos 1
 #req_rare 10
 #gold 344
@@ -178605,11 +178604,10 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 75
 #req_maxunrest 100
-#req_minpop 19500
-#req_maxpop 20000
+#req_minpop 1500
+#req_maxpop 2000
 #req_chaos 1
 #req_rare 10
 #gold 421
@@ -178622,11 +178620,10 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 100
 #req_maxunrest 150
-#req_minpop 19500
-#req_maxpop 20000
+#req_minpop 1500
+#req_maxpop 2000
 #req_chaos 1
 #req_rare 10
 #gold 510
@@ -178639,11 +178636,10 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 150
 #req_maxunrest 200
-#req_minpop 19500
-#req_maxpop 20000
+#req_minpop 1500
+#req_maxpop 2000
 #req_chaos 1
 #req_rare 10
 #gold 591
@@ -178656,16 +178652,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 23
 #unrest 5
 #nolog
-#header 2
 #req_minunrest 200
-#req_minpop 19500
-#req_maxpop 20000
+#req_minpop 1500
+#req_maxpop 2000
 #req_chaos 1
 #req_rare 10
 #gold 754
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
-
 
 
 #newevent
