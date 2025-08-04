@@ -61705,6 +61705,53 @@ Cannot be recruited until Break the Deadlock is cast."
 
 --ENDSUMMONS
 
+-- NEW UNIQUE ANIMAL SUMMON (ID 9659)
+
+#newmonster 9659 -- Aetos
+#copystats 1381  -- Great Eagle
+#clearmagic
+#spr1 "magicenhanced/eetempesteagle.tga"
+#spr2 "magicenhanced/eetempesteagle2.tga"
+#name "Tempest Eagle"
+#descr "Aetos is a giant tawny eagle with resplendent feathers. He was raised as a companion by an ancient deity of the heavens and used to punish those who dared steal the secret of fire from the gods. Aetos is skilled in the magics of air and fire. In battle he will beat his wings to create a howling windstorm that will prevent flight and blow arrows off their course. He can distill thunder and lightning into air gems, and his screech strikes fear into the heart of enemy soldiers."
+#fixedname "Aetos"
+#bird
+#animal
+#unique
+#gcost 0
+#hp 78
+#size 9
+#prot 16
+#mr 16
+#mor 16
+#str 20
+#att 14
+#def 13
+#prec 15
+#enc 2
+#mapmove 32
+#ap 8
+#magicskill 1 2
+#magicskill 0 2
+#gemprod 1 1
+-- #tmpairgems 1
+#onebattlespell 830 -- Storm
+#startage 1000
+#maxage 2000
+#shockres 15
+#fireres 5
+#fear 5
+#mountainsurvival
+#stormimmune
+#transformation 0
+#montag 1006  -- No Transformation spells
+#spiritsight
+#goodleader
+#beastmaster 2
+#twiceborn 1388  -- Ziz
+#end
+
+
 -- NEW INDIE UW SHAMANS AND RECRUITABLES (ID 9660-9680)
 
 #newmonster 9660 -- Kulullu Shaman
@@ -149779,7 +149826,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 1 2
 #effect 10089
 #fatiguecost 2500
-#damage 10021 -- The Tempest Eagle
+#damage 9659 -- The Tempest Eagle
 #nreff 1
 #end
 
