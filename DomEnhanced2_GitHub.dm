@@ -66047,8 +66047,8 @@ Only three Queens of Elemental Water are known to exist."
 
 
 
-
 -- FOLDUNITS
+
 
 
 
@@ -66064,9 +66064,9 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 40
 #moreheat 1 
 #moreorder -1
+#mor 30
 #nametype 170
 #djinn  -- bodytype for hit locations
-#mor 30
 #heat 0
 #uwheat 6
 #fireshield 0
@@ -66091,6 +66091,7 @@ Only three Queens of Elemental Water are known to exist."
 #gcost 80
 #startdom 1
 #pathcost 20
+#mor 30
 #hp 11
 #str 10
 #att 10
@@ -66136,6 +66137,7 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 40
 #moregrowth 1 
 #moreprod -1
+#mor 30
 #hp 220
 #prot 16
 #mastersmith 0
@@ -66161,6 +66163,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 3
 #pathcost 40
 #moreorder 1
+#mor 30
 #hp 105
 #prot 3
 #def 12
@@ -66202,6 +66205,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 2
 #pathcost 60
 #moremagic 2
+#mor 30
 #hp 111
 #prot 16
 #str 18
@@ -66210,7 +66214,6 @@ Only three Queens of Elemental Water are known to exist."
 #mr 20
 #miscshape
 #size 8
-#mor 30
 #prec 10
 #enc 2
 #mapmove 3
@@ -66248,6 +66251,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 1
 #pathcost 20
 #moremagic 1
+#mor 30
 #hp 10
 #str 10
 #att 10
@@ -66259,7 +66263,6 @@ Only three Queens of Elemental Water are known to exist."
 #size 3
 #enc 3
 #prec 12
-#mor 30
 #rcost 1
 #weapon "Magic Staff"
 #armor "Magic Furs"
@@ -66292,6 +66295,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 2
 #pathcost 30
 #moremagic 1
+#mor 30
 #hp 15
 #str 10
 #att 12
@@ -66303,7 +66307,6 @@ Only three Queens of Elemental Water are known to exist."
 #size 3
 #enc 3
 #prec 12
-#mor 30
 #rcost 1
 #weapon 1516 -- Spirit Punch
 #startage 1000
@@ -66330,6 +66333,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 4
 #pathcost 40
 #moremagic 1
+#mor 30
 #hp 500
 #prot 25
 #str 20
@@ -66343,7 +66347,6 @@ Only three Queens of Elemental Water are known to exist."
 #size 10
 #enc 0
 #prec 10
-#mor 30
 #rcost 1
 #weapon 0
 #startage 1000
@@ -66374,6 +66377,7 @@ Only three Queens of Elemental Water are known to exist."
 #homerealm 0
 #startdom 2
 #pathcost 60
+#mor 30
 #hp 260
 #prot 16
 #str 32
@@ -66385,7 +66389,6 @@ Only three Queens of Elemental Water are known to exist."
 #woundfend 4
 #quadruped
 #size 10
-#mor 30
 #prec 8
 #enc 1
 #mapmove 3
@@ -66419,6 +66422,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 4
 #pathcost 40
 #moreluck 1
+#mor 30
 #hp 250
 #prot 25
 #mastersmith 0
@@ -66444,6 +66448,7 @@ Only three Queens of Elemental Water are known to exist."
 #gcost 130
 #startdom 4
 #pathcost 40
+#mor 30
 #hp 120
 #prot 20
 #str 20
@@ -66457,7 +66462,6 @@ Only three Queens of Elemental Water are known to exist."
 #size 9
 #enc 0
 #prec 10
-#mor 30
 #rcost 1
 #weapon 0
 #startage 1000
@@ -66490,6 +66494,7 @@ Only three Queens of Elemental Water are known to exist."
 #homerealm 0
 #startdom 2
 #pathcost 60
+#mor 30
 #hp 248
 #prot 15
 #str 30
@@ -66501,7 +66506,6 @@ Only three Queens of Elemental Water are known to exist."
 #woundfend 4
 #quadruped
 #size 10
-#mor 30
 #prec 8
 #enc 1
 #mapmove 3
@@ -66539,6 +66543,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 2
 #pathcost 60
 #moreorder -1
+#mor 30
 #hp 177
 #prot 16
 #str 26
@@ -66552,7 +66557,6 @@ Only three Queens of Elemental Water are known to exist."
 #unsurr 5
 #bird
 #size 9
-#mor 30
 #prec 15
 #enc 1
 #mapmove 32
@@ -66586,6 +66590,7 @@ Only three Queens of Elemental Water are known to exist."
 #homerealm 0
 #startdom 2
 #pathcost 60
+#mor 30
 #hp 228
 #prot 16
 #str 30
@@ -66597,7 +66602,6 @@ Only three Queens of Elemental Water are known to exist."
 #woundfend 2
 #quadruped
 #size 10
-#mor 30
 #prec 8
 #enc 1
 #mapmove 24
@@ -66632,6 +66636,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 3
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 65
 #prot 5
 #str 23
@@ -66644,7 +66649,6 @@ Only three Queens of Elemental Water are known to exist."
 #humanoid
 #size 6
 #deathpower -1
-#mor 30
 #weapon 238  -- Magic Staff
 #weapon 1737 -- Thunder Bolt
 #armor 514 -- Enchanted Leather
@@ -66677,6 +66681,7 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 40
 #moreheat -1 
 #moregrowth 1
+#mor 30
 #hp 65
 #prot 5
 #str 23
@@ -66689,7 +66694,6 @@ Only three Queens of Elemental Water are known to exist."
 #humanoid
 #size 6
 #deathpower -1
-#mor 30
 #weapon 92  -- Fist
 #armor 514 -- Enchanted Leather
 #armor 119  -- Leather Cap
@@ -66724,6 +66728,7 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 40
 #moreheat 1 
 #moregrowth 1
+#mor 30
 #hp 65
 #prot 5
 #str 23
@@ -66736,7 +66741,6 @@ Only three Queens of Elemental Water are known to exist."
 #humanoid
 #size 6
 #deathpower -1
-#mor 30
 #weapon 151  -- Wand
 #armor 514 -- Enchanted Leather
 #awe 1
@@ -66768,6 +66772,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 3
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 65
 #prot 5
 #str 23
@@ -66780,7 +66785,6 @@ Only three Queens of Elemental Water are known to exist."
 #humanoid
 #size 6
 #deathpower -1
-#mor 30
 #weapon 92  -- Fist
 #armor 514 -- Enchanted Leather
 #armor 119  -- Leather Cap
@@ -66813,6 +66817,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 2
 #pathcost 30
 #moregrowth 1
+#mor 30
 #hp 45
 #prot 5
 #str 21
@@ -66825,7 +66830,6 @@ Only three Queens of Elemental Water are known to exist."
 #humanoid
 #size 4
 #deathpower -1
-#mor 30
 #weapon 92  -- Fist
 #armor 514 -- Enchanted Leather
 #armor 119  -- Leather Cap
@@ -66859,6 +66863,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 2
 #pathcost 30
 #moregrowth 1
+#mor 30
 #hp 45
 #prot 5
 #str 21
@@ -66871,7 +66876,6 @@ Only three Queens of Elemental Water are known to exist."
 #humanoid
 #size 4
 #deathpower -1
-#mor 30
 #weapon 92  -- Fist
 #armor 514 -- Enchanted Leather
 #armor 119  -- Leather Cap
@@ -66903,6 +66907,7 @@ Only three Queens of Elemental Water are known to exist."
 #homerealm 0
 #startdom 1
 #pathcost 20
+#mor 30
 #att 10
 #def 10
 #mr 18
@@ -66910,7 +66915,6 @@ Only three Queens of Elemental Water are known to exist."
 #cleararmor
 #masterrit 1
 #rpcost 2
-#mor 30
 #prec 14
 #goodleader
 #spiritsight
@@ -66937,12 +66941,12 @@ Only three Queens of Elemental Water are known to exist."
 #homerealm 0
 #startdom 1
 #pathcost 20
+#mor 30
 #att 10
 #def 10
 #mr 18
 #clearweapons
 #cleararmor
-#mor 30
 #prec 14
 #goodleader
 #spiritsight
@@ -66968,13 +66972,13 @@ Only three Queens of Elemental Water are known to exist."
 #homerealm 0
 #startdom 1
 #pathcost 20
+#mor 30
 #hp 15
 #att 10
 #def 12
 #mr 18
 #clearweapons
 #cleararmor
-#mor 30
 #prec 14
 #goodleader
 #spiritsight
@@ -66999,11 +67003,11 @@ Only three Queens of Elemental Water are known to exist."
 #homerealm 0
 #startdom 1
 #pathcost 20
+#mor 30
 #hp 10
 #mr 18
 #copyspr 284  -- Wolf
 #quadruped
-#mor 30
 #beastmaster 1
 #goodleader
 #spiritsight
@@ -67030,13 +67034,13 @@ Only three Queens of Elemental Water are known to exist."
 #homerealm 0
 #startdom 1
 #pathcost 20
+#mor 30
 #hp 15
 #att 10
 #def 12
 #mr 18
 #clearweapons
 #cleararmor
-#mor 30
 #prec 14
 #goodleader
 #spiritsight
@@ -67062,11 +67066,11 @@ Only three Queens of Elemental Water are known to exist."
 #homerealm 0
 #startdom 1
 #pathcost 20
+#mor 30
 #att 12
 #mr 18
 #bird
 #rpcost 2
-#mor 30
 #goodleader
 #beastmaster 1
 #spiritsight
@@ -67096,6 +67100,7 @@ Only three Queens of Elemental Water are known to exist."
 #moreluck 1
 
 #moregrowth 0
+#mor 30
 #hp 195
 #prot 18
 #str 4
@@ -67129,6 +67134,7 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 40
 #moregrowth 1 
 #moreorder -1
+#mor 30
 #hp 85
 #prot 3
 #str 22
@@ -67138,7 +67144,6 @@ Only three Queens of Elemental Water are known to exist."
 #fixedname "Tó Neinilii"
 #humanoid
 #size 9
-#mor 30
 #prec 13
 #enc 2
 #mapmove 22
@@ -67170,6 +67175,7 @@ Only three Queens of Elemental Water are known to exist."
 #homerealm 0
 #startdom 3
 #pathcost 40
+#mor 30
 #hp 90
 #prot 3
 #str 22
@@ -67179,7 +67185,6 @@ Only three Queens of Elemental Water are known to exist."
 #fixedname "Hunin"
 #humanoid
 #size 9
-#mor 30
 #prec 13
 #enc 2
 #mapmove 22
@@ -67215,6 +67220,7 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 40
 #moremagic 1 
 #moreorder 1
+#mor 30
 #hp 85
 #prot 3
 #str 22
@@ -67223,7 +67229,6 @@ Only three Queens of Elemental Water are known to exist."
 #mr 20
 #humanoid
 #size 9
-#mor 30
 #prec 13
 #enc 2
 #mapmove 22
@@ -67254,6 +67259,7 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 40
 #moreheat 1 
 #moregrowth 1
+#mor 30
 #hp 80
 #prot 3
 #str 22
@@ -67263,7 +67269,6 @@ Only three Queens of Elemental Water are known to exist."
 #fixedname "Anpetu Wi"
 #humanoid
 #size 9
-#mor 30
 #prec 13
 #enc 2
 #mapmove 22
@@ -67295,6 +67300,7 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 20
 #moreluck 1 
 #moremagic 1
+#mor 30
 #hp 75
 #prot 3
 #str 22
@@ -67303,7 +67309,6 @@ Only three Queens of Elemental Water are known to exist."
 #mr 20
 #humanoid
 #size 9
-#mor 30
 #prec 13
 #enc 2
 #mapmove 22
@@ -67335,6 +67340,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 3
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 75
 #prot 3
 #str 20
@@ -67345,7 +67351,6 @@ Only three Queens of Elemental Water are known to exist."
 #gemprod 6 2
 #humanoid
 #size 9
-#mor 30
 #prec 13
 #enc 2
 #mapmove 22
@@ -67379,6 +67384,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 2
 #pathcost 60
 #moreheat 1
+#mor 30
 #hp 280
 #prot 16
 #str 32
@@ -67391,7 +67397,6 @@ Only three Queens of Elemental Water are known to exist."
 #fixedname "Tatanka"
 #quadruped
 #size 10
-#mor 30
 #prec 8
 #enc 1
 #mapmove 22
@@ -67422,6 +67427,7 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 40
 #moreluck -1 
 #moreprod 1
+#mor 30
 #hp 95
 #prot 3
 #str 28
@@ -67429,7 +67435,6 @@ Only three Queens of Elemental Water are known to exist."
 #def 13
 #mr 20
 #size 9
-#mor 30
 #prec 14
 #ap 16
 #mapmove 22
@@ -67465,13 +67470,13 @@ Only three Queens of Elemental Water are known to exist."
 #gcost 70
 #startdom 2
 #pathcost 30
+#mor 30
 #hp 24
 #str 14
 #att 11
 #def 11
 #mr 18
 #size 4
-#mor 30
 #goodleader
 #prec 12
 #ap 14
@@ -67498,13 +67503,13 @@ Only three Queens of Elemental Water are known to exist."
 #gcost 70
 #startdom 2
 #pathcost 30
+#mor 30
 #hp 22
 #str 13
 #att 11
 #def 12
 #mr 18
 #size 4
-#mor 30
 #goodleader
 #prec 12
 #ap 14
@@ -67531,6 +67536,7 @@ Only three Queens of Elemental Water are known to exist."
 #gcost 170
 #startdom 2
 #pathcost 20
+#mor 30
 #hp 12
 #prot 0
 #str 10
@@ -67542,7 +67548,6 @@ Only three Queens of Elemental Water are known to exist."
 #size 3
 #enc 3
 #prec 12
-#mor 30
 #rcost 1
 #nametype 180
 --#itemslots 860678
@@ -67579,6 +67584,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 3
 #pathcost 30
 #moremagic 1
+#mor 30
 #hp 36
 #prot 3
 #str 14
@@ -67594,7 +67600,6 @@ Only three Queens of Elemental Water are known to exist."
 #size 4
 #enc 1
 #prec 14
-#mor 30
 #rcost 1
 #nametype 180
 --#itemslots 860678
@@ -67627,6 +67632,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 3
 #pathcost 40
 #moreheat -1
+#mor 30
 #hp 85
 #prot 6
 #str 22
@@ -67638,7 +67644,6 @@ Only three Queens of Elemental Water are known to exist."
 #size 9
 #enc 2
 #prec 12
-#mor 30
 #rcost 1
 #nametype 180
 --#itemslots 991750
@@ -67668,6 +67673,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 1
 #pathcost 20
 #moreheat -1
+#mor 30
 #hp 12
 #prot 0
 #str 11
@@ -67679,7 +67685,6 @@ Only three Queens of Elemental Water are known to exist."
 #size 4
 #enc 3
 #prec 12
-#mor 30
 #rcost 1
 #nametype 180
 --#itemslots 860678
@@ -67714,6 +67719,7 @@ Only three Queens of Elemental Water are known to exist."
 #homerealm 0
 #startdom 3
 #pathcost 60
+#mor 30
 #hp 180
 #prot 15
 #str 28
@@ -67727,7 +67733,6 @@ Only three Queens of Elemental Water are known to exist."
 #cleararmor
 #humanoid
 #size 10
-#mor 30
 #prec 10
 #enc 1
 #ap 16
@@ -67758,6 +67763,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 3
 #pathcost 60
 #moreheat 1
+#mor 30
 #hp 215
 #prot 18
 #str 32
@@ -67771,7 +67777,6 @@ Only three Queens of Elemental Water are known to exist."
 #cleararmor
 #quadruped
 #size 10
-#mor 30
 #prec 10
 #enc 1
 #ap 18
@@ -67802,6 +67807,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 3
 #pathcost 60
 #moreheat -1
+#mor 30
 #hp 200
 #prot 16
 #str 28
@@ -67815,7 +67821,6 @@ Only three Queens of Elemental Water are known to exist."
 #cleararmor
 #quadruped
 #size 10
-#mor 30
 #prec 10
 #enc 1
 #ap 16
@@ -67847,6 +67852,7 @@ Only three Queens of Elemental Water are known to exist."
 #homerealm 0
 #startdom 3
 #pathcost 60
+#mor 30
 #hp 200
 #prot 18
 #str 29
@@ -67860,7 +67866,6 @@ Only three Queens of Elemental Water are known to exist."
 #cleararmor
 #quadruped
 #size 10
-#mor 30
 #prec 10
 #enc 1
 #ap 18
@@ -67891,6 +67896,7 @@ Only three Queens of Elemental Water are known to exist."
 #homerealm 0
 #startdom 1
 #pathcost 20
+#mor 30
 #att 11
 #def 11
 #mr 18
@@ -67898,7 +67904,6 @@ Only three Queens of Elemental Water are known to exist."
 #cleararmor
 #humanoid
 #size 3
-#mor 30
 #startage 700
 #maxage 500
 #masterrit 1
@@ -67922,6 +67927,7 @@ Only three Queens of Elemental Water are known to exist."
 #homerealm 0
 #startdom 1
 #pathcost 20
+#mor 30
 #hp 13
 #att 12
 #def 12
@@ -67930,7 +67936,6 @@ Only three Queens of Elemental Water are known to exist."
 #cleararmor
 #humanoid
 #size 3
-#mor 30
 #prec 12
 #startage 200
 #maxage 500
@@ -67958,6 +67963,7 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 60
 #moreorder -1 
 #moreheat 1
+#mor 30
 #hp 105
 #prot 6
 #str 24
@@ -67977,7 +67983,6 @@ Only three Queens of Elemental Water are known to exist."
 #heat 10
 --#itemslots 860678
 #enc 3
-#mor 30
 #weapon 1554
 #weapon "Flame Strike"
 #goodleader
@@ -68000,6 +68005,7 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 60
 #moremagic 1 
 #moreorder 1
+#mor 30
 #hp 250
 #prot 15
 #str 20
@@ -68039,11 +68045,11 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 40
 #moreheat 1 
 #moreorder -1
+#mor 30
 #hp 80
 #prot 0
 #nametype 170
 #djinn  -- bodytype for hit locations
-#mor 30
 #firepower 0
 #expertmagicleader
 #goodleader
@@ -68064,6 +68070,7 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 2
 #pathcost 30
 #moregrowth -1
+#mor 30
 #hp 35
 #prot 16
 #str 16
@@ -68085,7 +68092,6 @@ Only three Queens of Elemental Water are known to exist."
 #goodundeadleader
 #maxage 800
 #startage 300
-#mor 30
 #prec 12
 #enc 0
 #ap 12
@@ -68108,6 +68114,7 @@ Only three Queens of Elemental Water are known to exist."
 #gcost 70
 #startdom 1
 #pathcost 20
+#mor 30
 #hp 11
 #str 10
 #att 10
@@ -68117,7 +68124,6 @@ Only three Queens of Elemental Water are known to exist."
 #goodleader
 #maxage 500
 #startage 240
-#mor 30
 #prec 13
 #enc 2
 #ap 12
@@ -68143,6 +68149,7 @@ Only three Queens of Elemental Water are known to exist."
 #gcost 80
 #startdom 1
 #pathcost 20
+#mor 30
 #hp 11
 #nametype 171
 #clearweapons
@@ -68169,6 +68176,7 @@ Only three Queens of Elemental Water are known to exist."
 #homerealm 0
 #startdom 4
 #pathcost 40
+#mor 30
 #hp 75
 #mastersmith 0
 
@@ -68189,6 +68197,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #gcost 120
 #startdom 1
 #pathcost 20
+#mor 30
 #hp 55
 #prot 4
 #str 15
@@ -68197,7 +68206,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mr 18
 #djinn
 #size 6
-#mor 30
 #prec 13
 #enc 3
 #mapmove 2
@@ -68226,6 +68234,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #homerealm 10
 #startdom 1
 #pathcost 20
+#mor 30
 #hp 10
 #str 13
 #att 10
@@ -68235,7 +68244,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #humanoid
 #mapmove 2
 #ap 12
-#mor 30
 #weapon 648  -- Enchanted Hammer
 #startage 250
 #maxage 500
@@ -68259,6 +68267,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #homerealm 2  -- Celtic
 #startdom 1
 #pathcost 20
+#mor 30
 #hp 12
 #str 10
 #att 10
@@ -68270,7 +68279,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #enc 4
 #mapmove 14
 #ap 13
-#mor 30
 #goodleader
 #okundeadleader
 #douse 3
@@ -68297,6 +68305,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #gcost 40
 #startdom 1
 #pathcost 20
+#mor 30
 #str 15
 #att 9
 #def 9
@@ -68314,7 +68323,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #spiritsight
 #poisonres 25
 #plant
-#mor 30
 #goodleader
 #domsummon2 313  -- Manikin
 #startdom 1
@@ -68337,10 +68345,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #homerealm 9  -- Deeps
 #startdom 1
 #pathcost 20
+#mor 30
 #mr 18
 #clearweapons
 #humanoid
-#mor 30
 #goodleader
 #landshape 8311
 #weapon 238
@@ -68361,10 +68369,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #homerealm 0
 #startdom 1
 #pathcost 20
+#mor 30
 #mr 18
 #clearweapons
 #humanoid
-#mor 30
 #goodleader
 #watershape 8310
 #weapon 238
@@ -68378,11 +68386,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 #spr1 "extrapretenders/tengukunshu.tga"
 #spr2 "extrapretenders/tengukunshu2.tga"
 #name "Tengu Kunshu"
-#descr "The Tengu Kunshu is a Tengu King who has grown powerful enough to master his mortality and claim divinity. He is a skilled mage and Kohoha Tengu serve him and can be called each month. He is attended by Tengu Warriors and one will occasionally appear to serve him.  The Tengu Kunshu is a master of magic and can be adept in several magic paths."
+#descr "The Tengu Kunshu is a Tengu King who has grown powerful enough to master his mortality and claim divinity. He is a skilled mage and Konoha Tengu will arrive each month to serve him. He is attended by Tengu Warriors and one will occasionally appear to serve him.  The Tengu Kunshu is a master of magic and can be adept in several magic paths."
 #diseaseres 100
 #gcost 130
 #startdom 1
 #pathcost 20
+#mor 30
 #hp 15
 #str 12
 #att 14
@@ -68390,7 +68399,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mr 18
 #humanoid
 #size 4
-#mor 30
 #prec 14
 #enc 2
 #mapmove 3
@@ -68404,6 +68412,9 @@ Each month he will collect a magical pearl and can create more using water gems.
 #weapon 243  -- lightning
 #armor 5  -- leather cuirass
 #armor 148
+#domsummon2 1479 -- Konoha Tengu
+#domsummon20 1481 -- Tengu Warrior
+#battlesum2 1481 -- Tengu Warrior
 #itemslots 991750
 #clearmagic
 #magicskill 1 2
@@ -68420,6 +68431,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #gcost 110
 #startdom 1
 #pathcost 20
+#mor 30
 #hp 11
 #prot 4
 #str 13
@@ -68428,7 +68440,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mr 18
 #humanoid
 #size 2
-#mor 30
 #enc 2
 #mapmove 2
 #ap 6
@@ -68457,10 +68468,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #gcost 40
 #startdom 1
 #pathcost 20
+#mor 30
 #mr 18
 #clearweapons
 #djinn
-#mor 30
 #weapon 92  -- Fist
 #armor 148  -- Crown
 #goodleader
@@ -68482,10 +68493,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #gcost 80
 #startdom 1
 #pathcost 20
+#mor 30
 #mr 18
 #clearweapons
 #djinn
-#mor 30
 #goodleader
 #landshape 8316
 #beckon 16
@@ -68509,10 +68520,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #homerealm 0
 #startdom 1
 #pathcost 20
+#mor 30
 #mr 18
 #clearweapons
 #bird
-#mor 30
 #goodleader
 #watershape 8315
 #beckon 16
@@ -68536,10 +68547,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #homerealm 9
 #startdom 1
 #pathcost 20
+#mor 30
 #mr 18
 #clearweapons
 #djinn
-#mor 30
 #weapon 92  -- Fist
 #armor 148  -- Crown
 #goodleader
@@ -68563,10 +68574,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #homerealm 0
 #startdom 1
 #pathcost 20
+#mor 30
 #mr 18
 #clearweapons
 #humanoid
-#mor 30
 #weapon 92  -- Fist
 #armor 148  -- Crown
 #goodleader
@@ -68589,9 +68600,9 @@ Each month he will collect a magical pearl and can create more using water gems.
 #gcost 40
 #startdom 1
 #pathcost 20
+#mor 30
 #mr 18
 #humanoid
-#mor 30
 #superiorleader
 #nobadevents 50
 #stealthy 10
@@ -68613,6 +68624,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #gcost 90
 #startdom 1
 #pathcost 20
+#mor 30
 #hp 55
 #prot 13
 #str 21
@@ -68620,7 +68632,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #clearweapons
 #humanoid
 #size 7
-#mor 30
 #fear 5
 #fireres 5
 #weapon 151  -- Wand
@@ -68650,6 +68661,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #homerealm 2
 #startdom 1
 #pathcost 20
+#mor 30
 #hp 10
 #str 13
 #att 10
@@ -68660,7 +68672,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #size 3
 #mapmove 14
 #ap 13
-#mor 30
 #allrange 2
 #weapon 151  -- Wand
 #startage 250
@@ -68691,6 +68702,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 20
 #moremagic 1
+#mor 30
 #hp 27
 #str 15
 #def 13
@@ -68698,7 +68710,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #fixedname "Nereus"
 #djinn
 #size 4
-#mor 30
 #enc 3
 #ap 14
 #okleader
@@ -68723,10 +68734,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 1
 #pathcost 30
 #moreluck 1
+#mor 30
 #mr 18
 #clearweapons
 #humanoid
-#mor 30
 #goodleader
 #spiritsight
 #weapon 92  -- Fist
@@ -68752,10 +68763,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #homerealm 2  -- Celtic
 #startdom 1
 #pathcost 20
+#mor 30
 #mr 18
 #clearweapons
 #humanoid
-#mor 30
 #goodleader
 #spiritsight
 #weapon 7  -- Quarterstaff
@@ -68787,10 +68798,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #diseaseres 100
 #gcost 140
 #startdom 1
+#mor 30
 #mr 18
 #clearweapons
 #humanoid
-#mor 30
 #goodleader
 #spiritsight
 #weapon 7  -- Quarterstaff
@@ -68821,13 +68832,13 @@ Each month he will collect a magical pearl and can create more using water gems.
 #diseaseres 100
 #gcost 140
 #startdom 1
+#mor 30
 #str 7
 #att 7
 #def 7
 #mr 18
 #clearweapons
 #humanoid
-#mor 30
 #mapmove 10
 #goodleader
 #spiritsight
@@ -68861,11 +68872,11 @@ Each month he will collect a magical pearl and can create more using water gems.
 #homerealm 4
 #startdom 1
 #pathcost 30
+#mor 30
 #mr 18
 #clearweapons
 #humanoid
 #fixedname "Daode Tianzun"
-#mor 30
 #goodleader
 #twiceborn 8329
 #triplegod 2
@@ -68889,11 +68900,11 @@ Each month he will collect a magical pearl and can create more using water gems.
 #diseaseres 100
 #gcost 190
 #startdom 1
+#mor 30
 #mr 18
 #clearweapons
 #humanoid
 #fixedname "Yuanshi Tianzun"
-#mor 30
 #goodleader
 #triplegodmag 0
 #twiceborn 8330
@@ -68915,11 +68926,11 @@ Each month he will collect a magical pearl and can create more using water gems.
 #diseaseres 100
 #gcost 190
 #startdom 1
+#mor 30
 #mr 18
 #clearweapons
 #humanoid
 #fixedname "Lingbao Tianzun"
-#mor 30
 #goodleader
 #triplegodmag 0
 #twiceborn 8331
@@ -68943,6 +68954,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moreluck 1
+#mor 30
 #hp 180
 #prot 18
 #str 26
@@ -68957,7 +68969,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #size 10
 #prec 11
 #ap 24
-#mor 30
 #enc 1
 #mapmove 26
 #startage 1000
@@ -68988,6 +68999,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #moreluck 1
 
 #moremagic 0
+#mor 30
 #hp 120
 #prot 25
 #str 15
@@ -68998,7 +69010,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #size 8
 #prec 5
 #ap 2
-#mor 30
 #enc 0
 #mapmove 0
 #triplegod 5
@@ -69040,6 +69051,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 30
 #moreprod 1
+#mor 30
 #hp 21
 #mr 18
 #clearweapons
@@ -69047,7 +69059,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mounted
 #size 5
 #ap 22
-#mor 30
 #mapmove 22
 #startage 1000
 #maxage 3000
@@ -69076,6 +69087,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #moreprod -1
 
 #moreluck 1
+#mor 30
 #hp 150
 #prot 16
 #str 22
@@ -69084,7 +69096,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mr 18
 #miscshape
 #size 10
-#mor 30
 #prec 10
 #ap 2
 #mapmove 6
@@ -69121,6 +69132,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 40
 #moreprod -1
+#mor 30
 #hp 125
 #prot 20
 #str 25
@@ -69130,7 +69142,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #woundfend 1
 #lizard
 #size 10
-#mor 30
 #prec 12
 #ap 10
 #mapmove 26
@@ -69171,6 +69182,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 40
 #moreprod -1
+#mor 30
 #hp 20
 #prot 0
 #str 13
@@ -69181,7 +69193,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #clearweapons
 #mountedhumanoid
 #ap 24
-#mor 30
 #mapmove 22
 #mounted
 #coldres 5
@@ -69213,6 +69224,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #moreheat 1
 
 #moreorder 1
+#mor 30
 #hp 170
 #prot 12
 #str 14
@@ -69224,7 +69236,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #immobile
 #poisonres 5
 #plant
-#mor 30
 #goodleader
 #bonusspells 1
 #mapmove 0
@@ -69257,6 +69268,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 40
 #moreheat 1 
 #moregrowth -1
+#mor 30
 #mr 20
 #clearweapons
 #corpseeater 5
@@ -69283,6 +69295,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 4
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 180
 #prot 22
 #str 15
@@ -69292,7 +69305,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 10
 #enc 0
 #mapmove 0
@@ -69331,6 +69343,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 3
 #pathcost 60
 #moreorder 1
+#mor 30
 #hp 125
 #prot 0
 #str 22
@@ -69341,7 +69354,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mountedhumanoid
 #size 10
 #prec 13
-#mor 30
 #enc 1
 #ap 16
 #mapmove 26
@@ -69374,6 +69386,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 3
 #pathcost 60
 #moreorder 1
+#mor 30
 #hp 75
 #prot 0
 #str 18
@@ -69413,6 +69426,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #homerealm 3  -- Mediterranean
 #startdom 2
 #pathcost 40
+#mor 30
 #hp 45
 #prot 0
 #str 16
@@ -69422,7 +69436,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #fixedname "Hermes"
 #humanoid
 #size 6
-#mor 30
 #prec 12
 #enc 1
 #mapmove 36
@@ -69459,6 +69472,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #descr "This is a horribly deformed markata of immense size created by vile magic. The Markata Freak is stupid and will lumber uncontrollably across the battlefield, its hoots and hollers striking fear into the enemy."
 #diseaseres 100
 #gcost 220
+#mor 30
 #prot 8
 #magicboost 53 -10
 #undisciplined
@@ -69479,6 +69493,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #homerealm 0
 #startdom 1
 #pathcost 20
+#mor 30
 #clearweapons
 #mountedhumanoid
 #weapon 151  -- Wand
@@ -69508,6 +69523,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 4
 #pathcost 40
 #moregrowth -1
+#mor 30
 #hp 180
 #prot 24
 #str 15
@@ -69517,7 +69533,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 10
 #enc 0
 #mapmove 0
@@ -69563,6 +69578,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #homerealm 0
 #startdom 2
 #pathcost 60
+#mor 30
 #hp 25
 #prot 0
 #str 16
@@ -69572,7 +69588,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #fixedname "Sváfa"
 #humanoid
 #size 4
-#mor 30
 #prec 14
 #enc 1
 #mapmove 32
@@ -69612,6 +69627,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moreorder -1
+#mor 30
 #hp 165
 #prot 20
 #str 26
@@ -69623,7 +69639,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #woundfend 2
 #bird
 #size 9
-#mor 30
 #prec 14
 #enc 1
 #mapmove 22
@@ -69660,6 +69675,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moregrowth -1 
 #moreluck -1
+#mor 30
 #hp 168
 #prot 16
 #str 30
@@ -69692,6 +69708,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moreorder -1
+#mor 30
 #hp 135
 #prot 18
 #str 29
@@ -69725,6 +69742,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moremagic -1
+#mor 30
 #hp 290
 #prot 20
 #str 30
@@ -69737,7 +69755,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #troglodyte
 #fixedname "Cancer"
 #size 10
-#mor 30
 #prec 10
 #enc 1
 #mapmove 2
@@ -69769,6 +69786,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #moreluck -1
 
 #moregrowth -0
+#mor 30
 #hp 128
 #prot 18
 #str 27
@@ -69780,7 +69798,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #woundfend 2
 #bird
 #size 9
-#mor 30
 #prec 10
 #enc 1
 #mapmove 22
@@ -69821,6 +69838,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #moreorder -1
 
 #moregrowth 1
+#mor 30
 #hp 190
 #prot 18
 #str 27
@@ -69834,7 +69852,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #fixedname "Tiamat"
 #snake
 #size 10
-#mor 30
 #prec 10
 #enc 1
 #mapmove 2
@@ -69872,6 +69889,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moreluck -1
+#mor 30
 #hp 205
 #prot 20
 #str 29
@@ -69884,7 +69902,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #woundfend 2
 #lizard
 #size 10
-#mor 30
 #prec 10
 #enc 1
 #mapmove 3
@@ -69919,6 +69936,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moregrowth 1
+#mor 30
 #hp 218
 #prot 21
 #str 29
@@ -69930,7 +69948,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #woundfend 2
 #snake
 #size 10
-#mor 30
 #prec 5
 #enc 1
 #mapmove 2
@@ -69963,6 +69980,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moremagic 1
+#mor 30
 #hp 200
 #prot 22
 #str 28
@@ -69974,7 +69992,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #woundfend 4
 #quadruped
 #size 10
-#mor 30
 #prec 10
 #enc 1
 #mapmove 2
@@ -70006,6 +70023,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moremagic 1
+#mor 30
 #hp 200
 #prot 20
 #str 28
@@ -70017,7 +70035,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #woundfend 2
 #quadruped
 #size 10
-#mor 30
 #prec 10
 #enc 1
 #mapmove 8
@@ -70049,6 +70066,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moremagic 1
+#mor 30
 #hp 173
 #prot 16
 #str 26
@@ -70061,7 +70079,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #woundfend 2
 #miscshape
 #size 10
-#mor 30
 #prec 10
 #enc 1
 #mapmove 2
@@ -70102,6 +70119,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moremagic 1 
 #moreorder 1
+#mor 30
 #hp 330
 #prot 14
 #str 30
@@ -70110,7 +70128,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mr 18
 #snake
 #size 10
-#mor 30
 #prec 5
 #enc 1
 #mapmove 8
@@ -70143,6 +70160,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 4
 #pathcost 60
 #moregrowth -1
+#mor 30
 #hp 180
 #prot 13
 #str 26
@@ -70151,7 +70169,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mr 18
 #snake
 #size 10
-#mor 30
 #prec 5
 #enc 0
 #mapmove 2
@@ -70187,6 +70204,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #gcost 190
 #startdom 5
 #pathcost 60
+#mor 30
 #hp 200
 #prot 20
 #str 20
@@ -70195,7 +70213,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mr 18
 #miscshape
 #size 10
-#mor 30
 #prec 5
 #enc 0
 #mapmove 3
@@ -70224,6 +70241,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #gcost 160
 #startdom 2
 #pathcost 60
+#mor 30
 #hp 180
 #prot 18
 #str 29
@@ -70235,7 +70253,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #woundfend 2
 #quadruped
 #size 10
-#mor 30
 #prec 10
 #enc 1
 #mapmove 3
@@ -70269,6 +70286,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moremagic -1
+#mor 30
 #hp 250
 #prot 20
 #str 31
@@ -70280,7 +70298,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #woundfend 4
 #quadruped
 #size 10
-#mor 30
 #prec 8
 #enc 0
 #mapmove 3
@@ -70318,6 +70335,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moreorder -1
+#mor 30
 #hp 220
 #prot 18
 #str 32
@@ -70329,7 +70347,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #woundfend 2
 #snake
 #size 10
-#mor 30
 #prec 5
 #enc 1
 #mapmove 2
@@ -70365,6 +70382,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moremagic -1
+#mor 30
 #hp 160
 #prot 18
 #str 31
@@ -70376,7 +70394,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #woundfend 2
 #bird
 #size 10
-#mor 30
 #prec 8
 #enc 1
 #mapmove 22
@@ -70408,6 +70425,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #homerealm 1
 #startdom 2
 #pathcost 60
+#mor 30
 #hp 258
 #prot 16
 #str 31
@@ -70420,7 +70438,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #fixedname "Nanook"
 #quadruped
 #size 10
-#mor 30
 #prec 8
 #enc 1
 #mapmove 3
@@ -70456,6 +70473,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moreprod -1
+#mor 30
 #hp 260
 #prot 16
 #str 28
@@ -70469,7 +70487,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #fixedname "Tsathoggua"
 #quadruped
 #size 10
-#mor 30
 #prec 8
 #enc 1
 #mapmove 14
@@ -70507,6 +70524,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moreorder 1
+#mor 30
 #hp 45
 #prot 3
 #str 18
@@ -70516,7 +70534,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #humanoid
 #fixedname "Amoghasiddhi"
 #size 6
-#mor 30
 #prec 12
 #enc 2
 #mapmove 2
@@ -70545,6 +70562,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moreorder 1
+#mor 30
 #hp 45
 #prot 3
 #str 18
@@ -70554,7 +70572,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #humanoid
 #fixedname "Amitabha"
 #size 6
-#mor 30
 #prec 12
 #enc 2
 #mapmove 2
@@ -70583,6 +70600,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moreorder 1
+#mor 30
 #hp 45
 #prot 5
 #str 18
@@ -70592,7 +70610,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #fixedname "Ratnasambhava"
 #humanoid
 #size 6
-#mor 30
 #prec 12
 #enc 2
 #mapmove 2
@@ -70621,6 +70638,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moreorder 1
+#mor 30
 #hp 45
 #prot 3
 #str 18
@@ -70630,7 +70648,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #fixedname "Akshobhya"
 #humanoid
 #size 6
-#mor 30
 #prec 12
 #enc 2
 #mapmove 2
@@ -70659,6 +70676,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #moreorder 1
+#mor 30
 #hp 45
 #prot 3
 #str 18
@@ -70667,7 +70685,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mr 18
 #humanoid
 #size 6
-#mor 30
 #prec 12
 #enc 2
 #mapmove 2
@@ -70696,6 +70713,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 3
 #pathcost 40
 #moreorder 1
+#mor 30
 #hp 95
 #prot 5
 #mr 20
@@ -70731,9 +70749,9 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #startdom 2
 #pathcost 60
 #moremagic 1
+#mor 30
 #hp 35
 #djinn
-#mor 30
 #invulnerable 10
 #fear 10
 #spreaddom 1
@@ -70758,6 +70776,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #moregrowth -1
 
 #moremagic 1
+#mor 30
 #hp 60
 #prot 5
 #str 20
@@ -70789,13 +70808,13 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #pathcost 40
 #moreorder 1 
 #moreprod 1
+#mor 30
 #hp 25
 #str 15
 #att 15
 #def 16
 #mr 18
 #humanoid
-#mor 30
 #enc 2
 #mapmove 3
 #ap 12
@@ -70833,7 +70852,9 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #moreprod 1
 
 #moremagic -1
+#mor 30
 #hp 95
+#woundfend 4
 #humanoid
 #size 8
 #spreaddom 1
@@ -70853,6 +70874,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #startdom 2
 #pathcost 60
 #moreorder 2
+#mor 30
 #hp 65
 #prot 0
 #str 24
@@ -70862,7 +70884,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #fixedname "Asag"
 #humanoid
 #size 8
-#mor 30
 #prec 11
 #enc 2
 #mapmove 3
@@ -70900,6 +70921,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #startdom 2
 #pathcost 20
 #moremagic 1
+#mor 30
 #hp 20
 #prot 0
 #str 10
@@ -70909,7 +70931,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #fixedname "Nine Tails"
 #quadruped
 #size 3
-#mor 30
 #prec 13
 #enc 2
 #mapmove 20
@@ -70944,10 +70965,10 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #startdom 2
 #pathcost 20
 #moremagic 1
+#mor 30
 #mr 18
 #copyspr 1433  -- Kitsune
 #fixedname "Nine Tails"
-#mor 30
 #magicbeing
 #animal
 #goodleader
@@ -70981,6 +71002,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #moreorder -1
 
 #moreluck 1
+#mor 30
 #hp 25
 #prot 0
 #str 22
@@ -70990,7 +71012,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #fixedname "Sun Wukong"
 #humanoid
 #size 4
-#mor 30
 #prec 14
 #stealthy 25
 #enc 2
@@ -71022,6 +71043,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #homerealm 8
 #startdom 2
 #pathcost 40
+#mor 30
 #hp 25
 #prot 0
 #str 22
@@ -71031,7 +71053,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #fixedname "Hanuman"
 #humanoid
 #size 3
-#mor 30
 #prec 14
 #enc 2
 #mapmove 20
@@ -71066,6 +71087,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #startdom 2
 #pathcost 20
 #moregrowth -1
+#mor 30
 #hp 25
 #prot 0
 #str 15
@@ -71074,7 +71096,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #mr 18
 #humanoid
 #size 6
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -71111,6 +71132,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #startdom 3
 #pathcost 40
 #moreprod 1
+#mor 30
 #hp 122
 #prot 3
 #str 22
@@ -71120,7 +71142,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #fixedname "Sarutahiko"
 #humanoid
 #size 9
-#mor 30
 #prec 14
 #enc 3
 #mapmove 3
@@ -71148,6 +71169,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #startdom 3
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 92
 #prot 3
 #str 22
@@ -71157,7 +71179,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #fixedname "Inari"
 #humanoid
 #size 9
-#mor 30
 #prec 14
 #enc 2
 #mapmove 3
@@ -71190,6 +71211,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #moreorder -1
 
 #moreluck -1
+#mor 30
 #hp 130
 #prot 10
 #str 24
@@ -71199,7 +71221,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #fixedname "Guan-Yong"
 #djinn
 #size 10
-#mor 30
 #prec 12
 #enc 2
 #mapmove 2
@@ -71231,6 +71252,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #startdom 3
 #pathcost 40
 #moremagic 1
+#mor 30
 #hp 150
 #prot 8
 #str 22
@@ -71240,7 +71262,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #fixedname "Ganesha"
 #humanoid
 #size 10
-#mor 30
 #prec 12
 #enc 3
 #mapmove 3
@@ -71274,6 +71295,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #pathcost 60
 #moregrowth -1 
 #moreorder -1
+#mor 30
 #hp 166
 #prot 13
 #str 30
@@ -71282,12 +71304,11 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #mr 20
 #humanoid
 #size 10
-#mor 30
 #prec 8
 #enc 2
 #mapmove 3
 #ap 12
-#weapon 461  -- Swallow
+#weapon 609 -- Grab and Swallow
 #weapon 29  -- Claw
 #fear 10
 #amphibian
@@ -71298,7 +71319,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #digest 2
 #maxage 3000
 #startage 1000
-#itemslots 926214
+#itemslots 991750
 #clearmagic
 #magicskill 2 2
 #magicskill 5 2
@@ -71314,6 +71335,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #homerealm 9  -- Deeps
 #startdom 3
 #pathcost 40
+#mor 30
 #hp 85
 #prot 0
 #str 22
@@ -71322,7 +71344,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #mr 20
 #djinn
 #size 9
-#mor 30
 #prec 12
 #enc 0
 #mapmove 2
@@ -71360,6 +71381,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #startdom 3
 #pathcost 60
 #moreheat 1
+#mor 30
 #hp 80
 #prot 9
 #str 22
@@ -71368,7 +71390,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #mr 20
 #djinn
 #size 8
-#mor 30
 #prec 12
 #enc 0
 #expertleader
@@ -71405,6 +71426,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #moreprod 1
 
 #moremagic -1
+#mor 30
 #hp 125
 #prot 25
 #str 28
@@ -71451,6 +71473,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #startdom 3
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 110
 #prot 8
 #str 25
@@ -71459,7 +71482,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #mr 20
 #humanoid
 #size 9
-#mor 30
 #prec 12
 #enc 2
 #mapmove 3
@@ -71493,6 +71515,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #pathcost 40
 #moreheat 1 
 #moreorder 1
+#mor 30
 #hp 90
 #prot 3
 #str 24
@@ -71503,7 +71526,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #size 9
 #awe 3
 #eyeloss
-#mor 30
 #enc 2
 #expertleader
 #prec 12
@@ -71535,6 +71557,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #pathcost 40
 #moregrowth 1 
 #moreprod 1
+#mor 30
 #hp 100
 #prot 3
 #str 26
@@ -71543,7 +71566,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #mr 20
 #humanoid
 #size 9
-#mor 30
 #prec 12
 #enc 2
 #superiorleader
@@ -71573,6 +71595,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #pathcost 30
 #moregrowth -1 
 #moreluck -1
+#mor 30
 #hp 150
 #prot 8
 #str 22
@@ -71582,7 +71605,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #copyspr 775  -- Tartarian Titan
 #humanoid
 #size 9
-#mor 30
 #prec 12
 #enc 0
 #mapmove 3
@@ -71619,6 +71641,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #startdom 3
 #pathcost 40
 #moreluck 1
+#mor 30
 #hp 130
 #prot 24
 #str 24
@@ -71668,6 +71691,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #startdom 3
 #pathcost 40
 #moregrowth -1
+#mor 30
 #hp 110
 #prot 5
 #str 24
@@ -71678,7 +71702,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #size 9
 #prot 6
 #darkpower 2
-#mor 30
 #prec 12
 #mapmove 20
 #ap 16
@@ -71706,6 +71729,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #pathcost 40
 #moreorder 1 
 #moreprod 1
+#mor 30
 #hp 95
 #prot 4
 #str 23
@@ -71715,7 +71739,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #fixedname "Claudius"
 #humanoid
 #size 8
-#mor 30
 #prec 12
 #enc 2
 #mapmove 3
@@ -71751,12 +71774,12 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 3
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 105
 #str 25
 #mr 20
 #fixedname "Viridios"
 #size 9
-#mor 30
 #mapmove 3
 #ap 16
 #expertleader
@@ -71780,6 +71803,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 3
 #pathcost 40
 #moreorder 1
+#mor 30
 #hp 85
 #prot 0
 #str 21
@@ -71789,7 +71813,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #fixedname "Metatron"
 #humanoid
 #size 10
-#mor 30
 #prec 13
 #enc 2
 #mapmove 24
@@ -71833,6 +71856,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #moreorder 1
 
 #moreluck -1
+#mor 30
 #hp 66
 #prot 0
 #str 21
@@ -71843,7 +71867,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #fixedname "Amazarak"
 #humanoid
 #size 10
-#mor 30
 #prec 13
 #enc 2
 #mapmove 24
@@ -71886,6 +71909,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 3
 #pathcost 60
 #moremagic -1
+#mor 30
 #hp 76
 #prot 4
 #str 21
@@ -71895,7 +71919,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #fixedname "Gyūmaō"
 #humanoid
 #size 9
-#mor 30
 #prec 14
 #enc 2
 #mapmove 14
@@ -71930,6 +71953,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 3
 #pathcost 60
 #moremagic -1
+#mor 30
 #hp 180
 #prot 12
 #str 30
@@ -71939,7 +71963,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #fixedname "Gyūmaō"
 #quadruped
 #size 10
-#mor 30
 #prec 8
 #enc 1
 #mapmove 16
@@ -71978,6 +72001,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 3
 #pathcost 40
 #moremagic 1
+#mor 30
 #hp 67
 #prot 0
 #str 20
@@ -71988,7 +72012,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #fixedname "Melek Taus"
 #humanoid
 #size 9
-#mor 30
 #prec 13
 #enc 2
 #mapmove 24
@@ -72029,6 +72052,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #pathcost 40
 #moreheat 1 
 #moreorder 1
+#mor 30
 #hp 95
 #prot 4
 #str 20
@@ -72038,7 +72062,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Dazbog"
 #size 9
-#mor 30
 #prec 13
 #enc 2
 #mapmove 18
@@ -72072,6 +72095,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #gcost 370
 #homerealm 0
 #startdom 3
+#mor 30
 #hp 25
 #prot 0
 #str 12
@@ -72081,7 +72105,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Zorya Utrennyaya"
 #size 4
-#mor 30
 #prec 12
 #enc 2
 #mapmove 34
@@ -72127,6 +72150,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #gcost 370
 #homerealm 0
 #startdom 3
+#mor 30
 #hp 25
 #prot 0
 #str 12
@@ -72136,7 +72160,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Zorya Vechernyaya"
 #size 4
-#mor 30
 #prec 12
 #enc 2
 #mapmove 34
@@ -72184,6 +72207,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 3
 #pathcost 40
 #moreluck 1
+#mor 30
 #hp 78
 #prot 0
 #str 20
@@ -72193,7 +72217,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Lakshmi"
 #size 9
-#mor 30
 #prec 14
 #enc 2
 #mapmove 18
@@ -72229,6 +72252,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #diseaseres 100
 #gcost 480
 #startdom 3
+#mor 30
 #hp 95
 #prot 0
 #str 24
@@ -72238,7 +72262,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Parvati"
 #size 9
-#mor 30
 #prec 12
 #enc 2
 #mapmove 18
@@ -72277,6 +72300,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #diseaseres 100
 #gcost 480
 #startdom 3
+#mor 30
 #hp 68
 #prot 0
 #str 18
@@ -72286,7 +72310,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Saraswati"
 #size 9
-#mor 30
 #prec 14
 #enc 2
 #mapmove 18
@@ -72326,6 +72349,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 3
 #pathcost 40
 #moremagic 1
+#mor 30
 #hp 95
 #prot 4
 #str 24
@@ -72335,7 +72359,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Shiva"
 #size 9
-#mor 30
 #prec 12
 #enc 2
 #mapmove 18
@@ -72372,6 +72395,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #diseaseres 100
 #gcost 440
 #startdom 3
+#mor 30
 #hp 95
 #prot 0
 #str 22
@@ -72381,7 +72405,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Vishnu"
 #size 9
-#mor 30
 #prec 12
 #enc 2
 #mapmove 18
@@ -72414,6 +72437,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #diseaseres 100
 #gcost 440
 #startdom 3
+#mor 30
 #hp 95
 #prot 0
 #str 20
@@ -72423,7 +72447,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Brahma"
 #size 9
-#mor 30
 #prec 12
 #enc 2
 #mapmove 0
@@ -72462,6 +72485,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #pathcost 40
 #moremagic 1 
 #moreprod 1
+#mor 30
 #hp 95
 #prot 0
 #str 18
@@ -72471,7 +72495,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Triglav"
 #size 9
-#mor 30
 #prec 10
 #enc 2
 #mapmove 8
@@ -72505,6 +72528,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #homerealm 7
 #startdom 3
 #pathcost 40
+#mor 30
 #hp 125
 #prot 8
 #str 26
@@ -72514,7 +72538,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Khonsu"
 #size 9
-#mor 30
 #prec 10
 #enc 2
 #mapmove 22
@@ -72548,6 +72571,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #diseaseres 100
 #gcost 380
 #startdom 3
+#mor 30
 #hp 105
 #prot 3
 #str 22
@@ -72557,7 +72581,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Amun"
 #size 9
-#mor 30
 #prec 12
 #enc 2
 #mapmove 22
@@ -72589,6 +72612,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #diseaseres 100
 #gcost 380
 #startdom 3
+#mor 30
 #hp 95
 #prot 3
 #str 20
@@ -72598,7 +72622,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Mut"
 #size 9
-#mor 30
 #prec 12
 #enc 2
 #mapmove 22
@@ -72634,6 +72657,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 3
 #pathcost 40
 #moregrowth -1
+#mor 30
 #hp 85
 #prot 3
 #str 20
@@ -72643,7 +72667,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Nyx"
 #size 9
-#mor 30
 #prec 12
 #enc 2
 #mapmove 30
@@ -72677,6 +72700,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #homerealm 1  -- North
 #startdom 3
 #pathcost 40
+#mor 30
 #hp 95
 #prot 3
 #str 20
@@ -72686,7 +72710,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Vesna"
 #size 9
-#mor 30
 #prec 12
 #enc 2
 #mapmove 22
@@ -72717,6 +72740,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #diseaseres 100
 #gcost 280
 #startdom 3
+#mor 30
 #hp 95
 #prot 3
 #str 20
@@ -72726,7 +72750,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Morana"
 #size 9
-#mor 30
 #prec 12
 #enc 2
 #mapmove 22
@@ -72761,6 +72784,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 2
 #pathcost 40
 #moreorder 1
+#mor 30
 #hp 25
 #prot 0
 #str 12
@@ -72770,7 +72794,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Praxidike"
 #size 4
-#mor 30
 #prec 12
 #enc 2
 #mapmove 34
@@ -72811,6 +72834,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #diseaseres 100
 #gcost 280
 #startdom 2
+#mor 30
 #hp 25
 #prot 0
 #str 12
@@ -72820,7 +72844,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Arete"
 #size 3
-#mor 30
 #prec 12
 #enc 2
 #mapmove 34
@@ -72861,6 +72884,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #diseaseres 100
 #gcost 280
 #startdom 2
+#mor 30
 #hp 25
 #prot 0
 #str 12
@@ -72870,7 +72894,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Homonia"
 #size 3
-#mor 30
 #prec 12
 #enc 2
 #mapmove 34
@@ -72915,6 +72938,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #moreorder -1
 
 #moremagic -1
+#mor 30
 #hp 85
 #prot 10
 #str 28
@@ -72924,7 +72948,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #humanoid
 #fixedname "Skoll"
 #size 8
-#mor 30
 #prec 10
 #enc 2
 #mapmove 22
@@ -72963,6 +72986,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 3
 #pathcost 60
 #moreorder -1
+#mor 30
 #hp 95
 #prot 5
 #str 22
@@ -72972,7 +72996,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #fixedname "Hi'lina"
 #humanoid
 #size 9
-#mor 30
 #prec 14
 #enc 2
 #mapmove 22
@@ -73005,6 +73028,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 3
 #pathcost 40
 #moreprod 1
+#mor 30
 #hp 95
 #prot 5
 #str 25
@@ -73014,7 +73038,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #fixedname "Kumugwe"
 #mountedhumanoid
 #size 10
-#mor 30
 #prec 12
 #enc 2
 #mapmove 22
@@ -73045,6 +73068,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #homerealm 9 -- Deeps
 #startdom 3
 #pathcost 40
+#mor 30
 #hp 95
 #prot 5
 #str 24
@@ -73054,7 +73078,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #fixedname "Sgana"
 #humanoid
 #size 10
-#mor 30
 #prec 11
 #enc 2
 #mapmove 22
@@ -73090,6 +73113,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #moremagic 1
 
 #moreorder -1
+#mor 30
 #hp 113
 #prot 0
 #str 22
@@ -73098,7 +73122,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mr 20
 #miscshape
 #size 10
-#mor 30
 #prec 11
 #enc 2
 #mapmove 22
@@ -73140,6 +73163,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 3
 #pathcost 40
 #moreluck -1
+#mor 30
 #hp 105
 #prot 5
 #str 24
@@ -73149,7 +73173,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #fixedname "Ta'xet"
 #humanoid
 #size 9
-#mor 30
 #prec 11
 #enc 2
 #mapmove 22
@@ -73185,6 +73208,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #pathcost 40
 #moreheat 1 
 #moregrowth 1
+#mor 30
 #hp 190
 #prot 24
 #str 15
@@ -73195,7 +73219,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #miscshape
 #fixedname "Tonatiuh"
 #size 10
-#mor 30
 #prec 10
 #enc 0
 #mapmove 0
@@ -73236,6 +73259,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 160
 #prot 22
 #str 15
@@ -73246,7 +73270,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #miscshape
 #fixedname "Chicomecoatl"
 #size 10
-#mor 30
 #prec 10
 #enc 0
 #mapmove 0
@@ -73287,6 +73310,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moreheat 1
+#mor 30
 #hp 75
 #prot 0
 #str 20
@@ -73296,7 +73320,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 10
 #enc 0
 #mapmove 0
@@ -73337,6 +73360,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moremagic 1
+#mor 30
 #hp 150
 #prot 24
 #str 15
@@ -73346,7 +73370,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 10
 #enc 0
 #mapmove 0
@@ -73385,6 +73408,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #pathcost 40
 #moreheat 1 
 #moregrowth 1
+#mor 30
 #hp 150
 #prot 24
 #str 15
@@ -73394,7 +73418,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 10
 #enc 0
 #mapmove 0
@@ -73434,6 +73457,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moreheat 1
+#mor 30
 #hp 180
 #prot 22
 #str 15
@@ -73443,7 +73467,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 10
 #enc 0
 #mapmove 0
@@ -73483,6 +73506,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #pathcost 40
 #moreheat 1 
 #moregrowth -1
+#mor 30
 #hp 55
 #prot 0
 #str 16
@@ -73492,7 +73516,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #djinn
 #size 9
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -73532,6 +73555,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #pathcost 40
 #moreheat 1 
 #moreorder -1
+#mor 30
 #hp 65
 #prot 12
 #str 19
@@ -73541,7 +73565,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #djinn
 #size 9
-#mor 30
 #prec 12
 #enc 1
 #mapmove 0
@@ -73579,6 +73602,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #moregrowth -1
 
 #moremagic -1
+#mor 30
 #hp 150
 #prot 24
 #str 15
@@ -73588,7 +73612,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -73630,6 +73653,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 120
 #prot 25
 #str 15
@@ -73639,7 +73663,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 9
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -73674,6 +73697,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moremagic 1
+#mor 30
 #hp 65
 #prot 0
 #str 18
@@ -73683,7 +73707,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #djinn
 #size 9
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -73719,6 +73742,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 180
 #prot 12
 #str 15
@@ -73728,7 +73752,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #djinn
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -73769,6 +73792,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moreprod -1
+#mor 30
 #hp 200
 #prot 28
 #str 15
@@ -73778,7 +73802,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -73819,6 +73842,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moregrowth -1
+#mor 30
 #hp 120
 #prot 12
 #str 14
@@ -73828,7 +73852,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -73870,6 +73893,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #pathcost 40
 #moreluck -1 
 #moremagic 1
+#mor 30
 #hp 150
 #prot 24
 #str 15
@@ -73879,7 +73903,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -73919,6 +73942,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moreheat -1
+#mor 30
 #hp 120
 #prot 20
 #str 15
@@ -73928,7 +73952,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -73972,6 +73995,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #pathcost 40
 #moreluck -1 
 #moremagic 1
+#mor 30
 #hp 150
 #prot 24
 #str 15
@@ -73981,7 +74005,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -74022,6 +74045,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 120
 #prot 20
 #str 15
@@ -74031,7 +74055,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -74072,6 +74095,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #diseaseres 100
 #gcost 130
 #startdom 4
+#mor 30
 #hp 120
 #prot 20
 #str 15
@@ -74081,7 +74105,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -74122,6 +74145,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #diseaseres 100
 #gcost 130
 #startdom 4
+#mor 30
 #hp 120
 #prot 20
 #str 15
@@ -74131,7 +74155,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -74172,6 +74195,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #diseaseres 100
 #gcost 130
 #startdom 4
+#mor 30
 #hp 120
 #prot 20
 #str 15
@@ -74181,7 +74205,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -74226,6 +74249,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #moreluck 1
 
 #moreorder -1
+#mor 30
 #hp 200
 #prot 12
 #str 18
@@ -74235,7 +74259,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -74275,6 +74298,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 150
 #prot 24
 #str 15
@@ -74284,7 +74308,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -74324,6 +74347,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moremagic 1
+#mor 30
 #hp 170
 #prot 22
 #str 15
@@ -74333,7 +74357,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -74371,6 +74394,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moremagic 2
+#mor 30
 #hp 160
 #prot 22
 #str 15
@@ -74380,7 +74404,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -74421,6 +74444,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moremagic 1
+#mor 30
 #hp 250
 #prot 16
 #str 14
@@ -74430,7 +74454,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -74471,6 +74494,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 200
 #prot 18
 #str 15
@@ -74480,7 +74504,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 0
 #enc 0
 #mapmove 0
@@ -74518,6 +74541,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #pathcost 40
 #moreorder 1 
 #moremagic 1
+#mor 30
 #hp 30
 #prot 15
 #att 5
@@ -74527,7 +74551,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #miscshape
 #size 6
 #enc 0
-#mor 30
 #autohealer 5
 #immobile
 #mapmove 0
@@ -74568,6 +74591,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #moregrowth -1
 
 #moremagic -1
+#mor 30
 #hp 30
 #prot 15
 #att 5
@@ -74577,7 +74601,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #miscshape
 #size 6
 #enc 0
-#mor 30
 --#itemslots 786432
 #goodleader
 #goodmagicleader
@@ -74618,6 +74641,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moregrowth -1
+#mor 30
 #hp 120
 #prot 10
 #str 15
@@ -74627,7 +74651,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 10
 #enc 0
 #mapmove 0
@@ -74672,6 +74695,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #startdom 4
 #pathcost 40
 #moremagic 1
+#mor 30
 #hp 160
 #prot 22
 #str 15
@@ -74682,7 +74706,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #fixedname "Sophia"
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -74723,6 +74746,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #moremagic 1
 
 #moreorder 1
+#mor 30
 #hp 90
 #prot 18
 #str 15
@@ -74733,7 +74757,6 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #miscshape
 #size 10
 #enc 0
-#mor 30
 #immobile
 #ap 2
 #mapmove 0
@@ -74782,6 +74805,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #moregrowth 0
 
 #moreluck 1
+#mor 30
 #hp 100
 #prot 10
 #str 15
@@ -74791,7 +74815,6 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 5
 #enc 1
 #immobile
@@ -74833,6 +74856,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #startdom 4
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 180
 #prot 12
 #str 15
@@ -74842,7 +74866,6 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #mastersmith 0
 #djinn
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -74884,6 +74907,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #startdom 4
 #pathcost 40
 #moreorder -1
+#mor 30
 #mastersmith 0
 #miscshape
 #itemslots 786432
@@ -74904,6 +74928,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #startdom 4
 #pathcost 40
 #moreorder 1
+#mor 30
 #mastersmith 0
 #miscshape
 #itemslots 786432
@@ -74924,6 +74949,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #pathcost 40
 #moreorder 1 
 #moremagic 1
+#mor 30
 #mastersmith 0
 #miscshape
 #douse 0
@@ -74946,6 +74972,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #startdom 4
 #pathcost 40
 #moregrowth 1
+#mor 30
 #mastersmith 0
 
 #clearmagic
@@ -74965,6 +74992,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #startdom 4
 #pathcost 40
 #moreluck 1
+#mor 30
 #mastersmith 0
 #eyes 2
 #miscshape
@@ -74988,6 +75016,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #moregrowth -1
 
 #moreluck -1
+#mor 30
 #hp 150
 #prot 15
 #str 14
@@ -74997,7 +75026,6 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 10
 #enc 0
 #mapmove 0
@@ -75039,6 +75067,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #startdom 4
 #pathcost 40
 #moreluck -1
+#mor 30
 #hp 120
 #prot 20
 #str 15
@@ -75049,7 +75078,6 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #fixedname "Horagalles"
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -75090,6 +75118,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #startdom 4
 #pathcost 40
 #moreorder -1
+#mor 30
 #hp 120
 #prot 20
 #str 15
@@ -75100,7 +75129,6 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #fixedname "Tyr"
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -75138,6 +75166,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #startdom 4
 #pathcost 40
 #moregrowth 1
+#mor 30
 #mastersmith 0
 #miscshape
 #size 10
@@ -75159,6 +75188,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #startdom 4
 #pathcost 40
 #moreorder 1
+#mor 30
 #hp 150
 #mastersmith 0
 #miscshape
@@ -75180,6 +75210,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #startdom 4
 #pathcost 40
 #moreorder 1
+#mor 30
 #hp 120
 #prot 26
 #str 15
@@ -75189,7 +75220,6 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -75227,6 +75257,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #startdom 4
 #pathcost 40
 #moregrowth -1
+#mor 30
 #prot 18
 #mastersmith 0
 #miscshape
@@ -75247,6 +75278,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #startdom 4
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 250
 #prot 16
 #str 14
@@ -75256,7 +75288,6 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 12
 #enc 0
 #mapmove 0
@@ -75294,6 +75325,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #startdom 4
 #pathcost 40
 #moreprod 1
+#mor 30
 #hp 200
 #prot 25
 #str 15
@@ -75303,7 +75335,6 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 5
 #enc 0
 #mapmove 0
@@ -75342,6 +75373,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #startdom 4
 #pathcost 40
 #moreorder -1
+#mor 30
 #hp 300
 #prot 25
 #str 15
@@ -75351,7 +75383,6 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #mastersmith 0
 #miscshape
 #size 10
-#mor 30
 #prec 5
 #enc 0
 #mapmove 0
@@ -75388,13 +75419,13 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #startdom 2
 #pathcost 40
 #moregrowth -1
+#mor 30
 #hp 65
 #prot 8
 #mr 18
 #clearweapons
 #cleararmor
 #humanoid
-#mor 30
 #enc 0
 #mapmove 3
 #ap 10
@@ -75431,6 +75462,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 2
 #pathcost 30
 #moregrowth 1
+#mor 30
 #hp 15
 #str 14
 #mr 18
@@ -75456,6 +75488,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 2
 #pathcost 30
 #moregrowth 1
+#mor 30
 #hp 15
 #str 14
 #mr 18
@@ -75481,6 +75514,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 2
 #pathcost 20
 #moreorder 1
+#mor 30
 #hp 10
 #str 10
 #att 10
@@ -75490,7 +75524,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #maxage 1000
 #size 3
 #ap 12
-#mor 30
 #prec 12
 #mapmove 3
 #immortal
@@ -75522,6 +75555,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #moremagic 1
 
 #moreluck 1
+#mor 30
 #clearweapons
 #fixedname "Itzpapalotl"
 #batstartsum5d6 0
@@ -75544,9 +75578,9 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #gcost 80
 #startdom 1
 #pathcost 20
+#mor 30
 #mr 18
 #copyspr 1032  -- Royal Navigator
-#mor 30
 #goodleader
 #farsail 9
 #maxage 1000
@@ -75570,6 +75604,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #pathcost 40
 #moreorder 1 
 #moregrowth -1
+#mor 30
 #hp 78
 #prot 3
 #str 20
@@ -75580,7 +75615,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #prec 12
 #ap 16
 #size 8
-#mor 30
 #invulnerable 15
 #humanoid
 #amphibian
@@ -75610,6 +75644,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 2
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 85
 #prot 3
 #str 21
@@ -75620,7 +75655,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #mapmove 2
 #size 7
 #enc 2
-#mor 30
 #neednoteat
 #maxage 5000
 #startage 150
@@ -75652,6 +75686,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #pathcost 30
 #moremagic 1 
 #moreorder -1
+#mor 30
 #hp 120
 #prot 12
 #str 24
@@ -75670,7 +75705,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #def 14
 #prec 10
 #mr 20
-#mor 30
 #maxage 10000
 #startage 5500
 #fixedname "Kanaloa"
@@ -75705,6 +75739,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #pathcost 30
 #moremagic 1 
 #moreorder -1
+#mor 30
 #hp 150
 #prot 14
 #str 26
@@ -75719,7 +75754,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #clumsy 1
 #size 9
 #enc 0
-#mor 30
 #stealthy 50
 #spy
 #float
@@ -75759,6 +75793,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #moreorder 1
 
 #moregrowth 1
+#mor 30
 #hp 75
 #prot 3
 #str 22
@@ -75774,7 +75809,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #supplybonus 60
 #gemprod 6 1
 #gemprod 2 1
-#mor 30
 #patrolbonus 80
 #maxage 10000
 #incunrest -200
@@ -75803,6 +75837,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #pathcost 40
 #moregrowth -1 
 #moreluck 1
+#mor 30
 #hp 135
 #prot 5
 #str 28
@@ -75814,7 +75849,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #neednoteat
 #size 7
 #enc 2
-#mor 30
 #fear 8
 #nobadevents 60
 #diseasecloud 2
@@ -75846,13 +75880,13 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #diseaseres 100
 #gcost 260
 #pathcost 40
+#mor 30
 #hp 85
 #prot 3
 #str 20
 #att 13
 #def 13
 #mr 18
-#mor 30
 #clearweapons
 #weapon "Golden spear"
 #cleararmor
@@ -75879,6 +75913,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 2
 #pathcost 60
 #moreluck 1
+#mor 30
 #hp 290
 #prot 3
 #str 32
@@ -75895,7 +75930,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #enc 1
 #mapmove 2
 #ap 12
-#mor 30
 #weapon 823  -- Golden Claw
 #weapon 823  -- Golden Claw
 #fear 5
@@ -75925,13 +75959,13 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #pathcost 40
 #moremagic 1 
 #moreluck 0
+#mor 30
 #hp 85
 #prot 3
 #str 20
 #att 11
 #def 12
 #mr 18
-#mor 30
 #fixedname "Thetis"
 #giftofwater 500
 #bringeroffortune 0
@@ -75959,6 +75993,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 3
 #moremagic 1 
 #moreluck 0
+#mor 30
 #hp 110
 #prot 5
 #str 22
@@ -75974,14 +76009,12 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #expertleader
 #expertmagicleader
 #amphibian
-#mor 30
 #fireres 60
 #coldres -5
 #heat 9
 #fireshield 15
 #firepower 1
 #woundfend 99
-#mor 30
 #magicbeing
 #ethereal
 #neednoteat
@@ -76004,13 +76037,13 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 3
 #pathcost 40
 #moregrowth 1
+#mor 30
 #hp 112
 #prot 8
 #str 30
 #att 14
 #def 12
 #mr 18
-#mor 30
 #humanoid
 #fixedname "Dakuwaqa"
 #size 9
@@ -76046,13 +76079,13 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 3
 #pathcost 40
 #moreorder -1
+#mor 30
 #hp 98
 #prot 3
 #str 22
 #att 12
 #def 11
 #mr 18
-#mor 30
 #fixedname "Charybdis"
 #size 9
 #enc 2
@@ -76086,13 +76119,13 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 2
 #pathcost 60
 #moreluck 1
+#mor 30
 #hp 230
 #prot 20
 #str 28
 #att 13
 #def 15
 #mr 18
-#mor 30
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -76132,13 +76165,13 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 2
 #pathcost 60
 #moreluck 1
+#mor 30
 #hp 8
 #prot 3
 #str 6
 #att 13
 #def 13
 #mr 18
-#mor 30
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -76167,13 +76200,13 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 4
 #pathcost 40
 #moreprod 1
+#mor 30
 #hp 200
 #prot 3
 #str 15
 #att 5
 #def 0
 #mr 18
-#mor 30
 #mastersmith 0
 #aquatic
 #heat 0
@@ -76197,13 +76230,13 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #pathcost 40
 #moregrowth -1 
 #moreluck -1
+#mor 30
 #hp 115
 #prot 5
 #str 26
 #att 15
 #def 10
 #mr 18
-#mor 30
 #size 10
 #enc 2
 #prec 8
@@ -76245,13 +76278,13 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #moreprod -1 
 #moregrowth 1 
 #moreorder 0
+#mor 30
 #hp 290
 #prot 22
 #str 32
 #att 12
 #def 7
 #mr 18
-#mor 30
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -76276,13 +76309,13 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #pathcost 40
 #moregrowth -1 
 #moremagic 1
+#mor 30
 #hp 90
 #prot 3
 #str 24
 #att 13
 #def 13
 #mr 18
-#mor 30
 #humanoid
 #fixedname "Asuang"
 #size 9
@@ -76317,13 +76350,13 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #pathcost 40
 #moreprod 1 
 #moreorder 1
+#mor 30
 #hp 98
 #prot 3
 #str 26
 #att 14
 #def 12
 #mr 18
-#mor 30
 #humanoid
 #fixedname "Gugurang"
 #size 9
@@ -76357,13 +76390,13 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #homerealm 0 -- none
 #startdom 2
 #pathcost 60
+#mor 30
 #hp 102
 #prot 16
 #str 24
 #att 14
 #def 17
 #mr 18
-#mor 30
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -76391,6 +76424,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 3
 #pathcost 40
 #moreheat 1
+#mor 30
 #hp 90
 #prot 3
 #str 24
@@ -76398,7 +76432,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #def 11
 #mr 18
 #heat 10
-#mor 30
 #summerpower 25
 #wastesurvival
 #fireres 25
@@ -76753,6 +76786,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #homerealm 7  -- Africa
 #startdom 1
 #pathcost 20
+#mor 30
 #nametype 126
 #clearmagic
 #magicskill 0 1
@@ -76770,6 +76804,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #homerealm 6  -- Middle America
 #startdom 1
 #pathcost 20
+#mor 30
 #nametype 123
 #clearmagic
 #magicskill 0 1
@@ -76805,6 +76840,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #homerealm 7  -- Africa
 #startdom 1
 #pathcost 20
+#mor 30
 #nametype 126
 #clearmagic
 #magicskill 6 1
@@ -76822,6 +76858,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #homerealm 6  -- Middle America
 #startdom 1
 #pathcost 20
+#mor 30
 #nametype 123
 #clearmagic
 #magicskill 6 1
@@ -76893,6 +76930,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #homerealm 7  -- Africa
 #startdom 1
 #pathcost 20
+#mor 30
 #nametype 126
 #clearmagic
 #magicskill 5 1
@@ -76930,6 +76968,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 1
 #pathcost 20
 #moreheat -1
+#mor 30
 #nametype 123
 #clearmagic
 #magicskill 1 1
@@ -76964,6 +77003,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #homerealm 7  -- Africa
 #startdom 1
 #pathcost 20
+#mor 30
 #nametype 126
 #clearmagic
 #magicskill 4 2
@@ -76980,6 +77020,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #homerealm 6  -- Middle America
 #startdom 1
 #pathcost 20
+#mor 30
 #nametype 123
 #clearmagic
 #magicskill 4 2
@@ -77302,7 +77343,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #descr "The Bitch Queen is a werewolf enchantress of tremendous magical power. The Bitch Queen usually appears in the form of an old hag, but when angered, she transforms into a werewolf. She is attended by a pack of werewolves that do her bidding. Even though her werewolf form is more powerful than her human form, it is still quite weak when compared to the majority of the other Pretender Gods."
 #diseaseres 100
 #gcost 50
-#startdom 1
 #pathcost 20
 #hp 16
 #prot 0
@@ -77367,6 +77407,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #homerealm 7  -- Africa
 #startdom 1
 #pathcost 20
+#mor 30
 #nametype 125
 #clearmagic
 #magicskill 4 1
@@ -77384,6 +77425,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #homerealm 6  -- Middle America
 #startdom 1
 #pathcost 20
+#mor 30
 #nametype 124
 #clearmagic
 #magicskill 4 1
@@ -78264,6 +78306,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #startdom 2
 #pathcost 40
 #diseaseres 100
+#fear 10
 #itemslots 18620416
 #clearmagic
 #magicskill 5 2
@@ -80361,6 +80404,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 90
 #pathcost 40
+#moreluck 1
 #hp 200
 #prot 26
 #str 15
@@ -80368,7 +80412,6 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #def 0
 #mr 18
 #mastersmith 0
-#moreluck 1
 
 #itemslots 262144
 #clearmagic
@@ -83271,8 +83314,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 
 
 
--- ENDUNITS
 
+-- ENDUNITS
 
 
 
