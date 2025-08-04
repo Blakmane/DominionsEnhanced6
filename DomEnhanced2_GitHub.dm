@@ -28844,7 +28844,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicbeing
 #spiritsight
 #ironvul 1
-#weapon 651  -- Bronze Lance
+#weapon 475  -- Golden Lance
 #weapon 21  -- Javelin
 #armor 100  -- Bronze Cuirass
 #armor 135  -- Bronze cap
@@ -48747,7 +48747,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #descr "A siren is a magical being of the changing shores. After the invasion of Oceania, the Sirens were among the first to retreat into the rivers of their fathers, the Potamoi. Soon after their departure from the sea, they lost their ability to change shape into a mermaid form, now stuck in the form of a gull with the head and torso of a woman. Sirens were gifted in ancient times with an enchanting voice, though without their mermaid form attempting to lure men into the sea with their song would be fatal to the Siren as well. With the loss of their transformation powers, their magic in Glamour is somewhat diminished, but their other magic is also no longer subject to the change of the shore."
 #clearspec
 #clearmagic
-#gcost 210
+#gcost 10020
 #magicskill 1 1 -- Air
 #magicskill 2 1 -- Water
 #magicskill 7 1 -- Glamour
@@ -54224,7 +54224,7 @@ Cost 56 RP."
 #spr2 "blue_dirgen/blue_abyssalpillar2.tga"
 #name "Abyssal Pillar"
 #descr "The Basalt City of Atlantis has long been destroyed, however relics of old Atlantis can still be found, and are now being put readily to new use by the Kurvant. Abyssal Pillars are highly trained shamblers chosen for their strength and discipline to wear the incredibly heavy Basalt Armor once worn by Living Pillars, and carry a Basalt Spear and Asp Shield. The Abyssal Pillars are held sacred by the Atlantians of Dirgen as the bearers of their lost legacy.
-Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in non-capital Basalt Cities."
+Abyssal Pillars can be recruited at all Basalt Cities."
 #rpcost 35
 #rcost 1
 #hp 28 -- +3
@@ -55527,7 +55527,7 @@ Abyssal Pillars can only be recruited at Basalt Cities. Cost 3 Holy Points in no
 #copystats 884
 #copyspr 884
 #name "Great Spider"
-#descr "Dire Tigers are huge and ferocious tigers that hunt the largest prey. Mammoths and Elephants are common targets, although sometimes one will try to hunt a small dragon. Their great teeth can carve through any material with ease, whilst their thick pelts render them almost immune from cutting and tearing. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
+#descr "Great spiders are able to entangle their prey in sticky webs, even at a distance. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
 #berserk 0
 #transformation 0
 #maxage 2000
@@ -57335,7 +57335,7 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #ap 12
 #gcost 10030
 #holy
-#holycost 3
+#holycost 2
 #castledef 1
 #coldres 5
 #fireres 5
@@ -85710,7 +85710,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 982  -- Clockwork Horror
-#reinvigoration -10
+#reinvigoration 2
 #montag 1032  -- Clockwork Being
 #end
 
@@ -143673,7 +143673,7 @@ All effects scale with friendly Dominion."
 #descr "The Equites of the Sacred Shroud were once sacred champions of Eldregate. With the Fall of Ermor, they fought against their corrupted masters but were overwhelmed and slaughtered. Now the Thaumaturgs can reawaken them as undead wights with leathery bodies to continue their fight. While their purpose is holy, the Shroud Wights still serve Eldregate with unshakeable devotion and are thus not held sacred by the death cult."
 #researchlevel 4
 #school 0 -- conj
-#fatiguecost 1000
+#fatiguecost 1500
 #nreff 505
 #pathlevel 0 2
 #damage 8551 -- Longdead Equite
@@ -143700,12 +143700,12 @@ All effects scale with friendly Dominion."
 #descr "The Eternal Knights swore to serve the Holy Father of Eldregate and were granted immortality. With the Fall of Ermor, they fought against their corrupted masters but were overwhelmed and imprisoned. Now the Thaumaturgs can release and awaken them as undead wights with leathery bodies to continue their fight. While their purpose is holy, the Eternal Wights still serve Eldregate with unshakeable devotion and are thus not held sacred by the death cult."
 #researchlevel 6
 #school 0 -- conj
-#fatiguecost 3500
+#fatiguecost 4500
 #nreff 505
 #pathlevel 0 3
 #damage 8553 -- Longdead Equite
 #restricted 55 -- Sceleria
-#nextspell 3804
+#nextspell 3805
 #end
 
 #selectspell 3806
