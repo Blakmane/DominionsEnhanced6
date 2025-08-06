@@ -3831,6 +3831,12 @@
 #magic
 #end
 
+#newweapon 1895 -- Swordbill
+#copyweapon 645 -- Bronze sword
+#name "Fossilized Bill"
+#bonus
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -35486,6 +35492,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #unmountedspr2 "magicenhanced/un_decurion2.tga"
 #descr "The Equites of the Sacred Shroud are led by ordained priests of the Sacred Shroud trained as cavalry commanders. They command the sacred equites and bless their shrouds in battle, but they rarely perform other religious services. Their role is to bring ruin to the enemies of the faith, and not to comfort the masses."
 --#warning 5 -- no longer allows more bodyguards
+#skilledrider 4
 #end
 
 #newmonster 7526 -- Praefectus
@@ -44710,7 +44717,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "worthy_heroes/doomed_apprentice_1.tga"
 #spr2 "worthy_heroes/doomed_apprentice_2.tga"
 #descr "Mind lords have recently taken interest in the stellar sphere and have noticed a great star that is growing larger day by day. The mind lords organized a great expedition to shallow waters to better study the phenomenon. Countless slaves and a great number of aboleths led by several Mind Lords built a great laboratory in a suitable observation reef. Something inexplicable happened and the whole expedition vanished. Scouts could find nothing but ruins. Now a survivor has emerged, as one greatly transformed Aboleth has come to serve the awakening god. Though he will say nothing of what happened to the expedition, the survivor knows strange magic and sometimes utters strange words. His magical knowledge now surpasses any known regular Aboleths and even many Mind Lords. He is also hunted by strange otherworldly beings.
-Like all Aboleths, he can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
+Like all Aboleths, he can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prolong this, and labs can undo the petrification."
 #str 14
 #att 12
 #def 11
@@ -53342,17 +53349,6 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 
 
 
-
-
-
-#newmonster 8898 -- Firestarter
-#copystats 3912 -- Fay folk
-#spr1 "magicenhanced/blue_firestarter1.tga"
-#spr2 "magicenhanced/blue_firestarter2.tga"
-#name "Firestarter"
-#descr "."
-#end
-
 #newmonster 9040 -- Eidolon
 #copystats 40 -- heavy infantry
 #spr1 "magicenhanced/blue_eidolon1.tga"
@@ -57796,7 +57792,7 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #ap 20
 #clearweapons
 #weapon 1811 -- Aura of Decay
-#weapon 512 -- Fossilized Sword
+#weapon 1895 -- Fossilized Sword
 #landshape 8754
 #montag 5773 -- Large fish
 #montagweight 4
@@ -84710,7 +84706,7 @@ Initiates of the Deep can be recruited in any land fort."
 
 #selectmonster 660  -- Aboleth Auluudh
 #descr "Auluudh is a member of an ancient race sprung from the depths of the ocean. Aboleths once ruled the deep, but the falling star crushed their empire and allowed their slaves to free themselves and build kingdoms of their own. Now the Aboleths are returning to power and Auluudh will lead the way. He has decided that the minds of the Illithids are to his taste and has deemed them useful as food for the small Aboleth population and as slavemasters over the weaker races. Auluudh is very powerful and he can enslave weaker beings by the force of mind alone. He is also a powerful mage.
-Like all Aboleths, he can travel on land, but doing so will dry out their skin, and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
+Like all Aboleths, he can travel on land, but doing so will dry out their skin, and eventually become petrified. Items that grant air breathing will prolong this, and labs can undo the petrification."
 #landshape 12004
 #amphibian -- Aboleth Land Damage
 #prot 5  -- base 2 (mage heroes normally not boosted, but auluudh's magic is nothing special for MA R'lyeh, instead of upping his magic, I made him a bit more interesting with thug stat boost and custom attacks)
@@ -86772,7 +86768,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 1403  -- Gibboleth
 #descr "Aboleths are ancient beings sprung from the depths of the ocean. They resemble huge, mud-crawling fish with tentacles and large, dark eyes covering their foreheads. The Giboleth is a young Aboleth that has survived its spawn age and grown independent of its Polypal Mother. It has begun to shed its scales, but its hide is still thick and dark. The Giboleth is beginning to develop the strength of mind characteristic of the race and it can project its will on lesser beings. Should it survive for some centuries, it will shed the last of its scales and become a full grown Aboleth, able to dominate other beings. A Giboleth fights with the strength of its mind and its tentacles.
-Giboleths can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification. Cost 41 RP."
+Giboleths can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prolong this, and labs can undo the petrification. Cost 41 RP."
 #landshape 12010
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
@@ -86925,7 +86921,7 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 
 #selectmonster 1520  -- Aboleth
 #descr "Aboleths are ancient beings sprung from the depths of the ocean. They resemble huge mud-crawling fish with tentacles and large, dark eyes covering their foreheads. As they grow in size, they shed the scales of their Giboleth form and become paler and softer. Aboleths have the ability to project their will on others and can dominate lesser beings with sheer strength of mind. Through their superior minds, the Aboleths have enslaved other water-dwelling races and built an underwater slave-based empire. The larger and older an Aboleth is, the more powerful his powers of domination.
-Aboleths can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
+Aboleths can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prolong this, and labs can undo the petrification."
 #landshape 12008
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
@@ -86938,7 +86934,7 @@ Aboleths can travel on land, but doing so will dry out their skin and eventually
 
 #selectmonster 1521  -- Mind Lord
 #descr "The oldest and most powerful Aboleths are called Mind Lords. They have tremendous magical and mental powers and are able to dominate lesser beings with a mere glance. They have shed the last of their dark scales and are pale and soft, but large enough not to fear anything less than an asp turtle. The Mind Lords are formidable mages of Water and the stars and have recently taken a greater interest in the Stellar Sphere. Merman stargazers who are able to leave the sea are trained in Astral magic to study a newly discovered star of auspicious importance. Mind Lords have many strange mental abilities and can cast several unique spells. In addition whilst present in an overland fort they will enable the recruitment of mentally dominated troops.
-Mind Lords can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
+Mind Lords can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prolong this, and labs can undo the petrification."
 #landshape 12006
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
@@ -86951,7 +86947,7 @@ Mind Lords can travel on land, but doing so will dry out their skin and eventual
 
 #selectmonster 1522  -- Gibodai
 #descr "When nurtured by the Polypal Mothers, some spawn get a different kind of nutrition. Whether this is caused by an act of will or randomness is not known, because the Mothers do not speak, they only scream. The spawn are given special care and soon develop a bond with their Mother. Small tentacles sprout around their mouths and they use them to search the ocean floor for life force needed by the Mothers. The Gibodai consume life force and accumulate it for their Mothers. Some suspect that the Gibodai and their ability to steal and carry life force is the key to the power of the Aboleths. Gibodai and their task are sacred to the Aboleths.
-Gibodai can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification. Cost 41 RP."
+Gibodai can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prolong this, and labs can undo the petrification. Cost 41 RP."
 #landshape 12014
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
@@ -87293,7 +87289,7 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 
 #selectmonster 1691  -- Aboleth Auluudh
 #descr "Auluudh is the eldest surviving member of an ancient race sprung from the depths of the ocean. The Aboleths have no formal leaders, but everyone serves the ancient Mind Lords and Auluudh is the oldest and most powerful of them. Auluudh is the closest thing to a regent there is in the depths. The recent emergence of leadership among the ever more numerous Deep Ones is a cause of concern to the Mind Lord. To strengthen his grip over the Deep Ones and the Tritons, Auluudh has quested to further his knowledge of distant stars. This search has led him to shallow waters where he has discovered other beings to enslave. The mermen and their mages will serve a purpose as stargazers and communicants should the power of the distant stars be needed.
-Like all Aboleths, he can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
+Like all Aboleths, he can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prolong this, and labs can undo the petrification."
 #landshape 12000
 #amphibian -- Aboleth Land Damage
 #prot 5  -- base 2 (mage heroes normally not boosted, but auluudh's magic is nothing special for MA R'lyeh, instead of upping his magic, I made him a bit more interesting with thug stat boost and custom attacks)
@@ -89408,7 +89404,7 @@ Entrants of the Deep can be recruited in any land fort."
 
 #selectmonster 2883  -- Abodai
 #descr "The Abodai is a Gibodai grown large and powerful. Gibodai are rare and Abodai even more so. Gibodai have the ability to gather life force from living beings. With age and maturity the Abodai can drain life from living creatures at a distance. Abodai develop magic skills that sets them apart from the Aboleths. They have sacred status and they alone know the will of the polypal mothers.
-Abodai can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prevent this, and labs can undo the petrification."
+Abodai can travel on land, but doing so will dry out their skin and eventually become petrified. Items that grant air breathing will prolong this, and labs can undo the petrification."
 #landshape 12012
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
@@ -118663,7 +118659,7 @@ Priests: Average"
 #hero1 1708  -- Zilammu, Consort of the Dead
 #hero2 379  -- Niklatu, Hero Lizard
 #hero3 1660  -- Udm'ukinna, Reassembled Prince
-#hero4 635  -- Kabti'ili, Ancient Shaman
+--#hero4 635  -- Kabti'ili, Ancient Shaman
 #hero4 -1
 #uwbuild 1
 #cheapgod20 8405 -- Neter of the River
@@ -152253,8 +152249,13 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1086 -- Temper Armors
-#aoe 2001 -- 5+2
-#fatiguecost 20
+#aoe 2001 -- 3+2
+#fatiguecost 30
+#pathlevel 0 1
+#end
+
+#selectspell 1287 -- Iron Will
+#aoe 1001 -- 2+
 #end
 
 #selectspell 1090 -- Soldiers of Steel
@@ -152282,7 +152283,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1128 -- gift of the serpent
-#aoe 1000 -- 1+
+#aoe 1001 -- 2+
 #end
 
 #selectspell 791 -- cold resistance
@@ -154882,7 +154883,7 @@ Can only be cast once per combat round."
 #itemcost1 200
 #spiritsight
 --#templetrainer -1023  -- Ulm Spirits
-#templetrainer 7504 -- Warrior Spirit
+#templetrainer 7408 -- Warrior Spirit
 #restricted 13 -- Ulm
 #restricteditem 9  -- Ulm Shamen
 #end
@@ -178270,8 +178271,11 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 
+
+
+
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178280,14 +178284,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_maxunrest 20
 #req_maxpop 500
 #req_chaos 1
-#req_rare 10
-#gold 27
+#req_rare 8
+#gold 37
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178296,14 +178300,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_maxunrest 33
 #req_maxpop 500
 #req_chaos 1
-#req_rare 10
-#gold 45
+#req_rare 12
+#gold 40
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178312,14 +178316,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_maxunrest 50
 #req_maxpop 500
 #req_chaos 1
-#req_rare 10
-#gold 65
+#req_rare 16
+#gold 44
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178328,14 +178332,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_maxunrest 75
 #req_maxpop 500
 #req_chaos 1
-#req_rare 10
-#gold 86
+#req_rare 20
+#gold 46
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178344,14 +178348,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_maxunrest 100
 #req_maxpop 500
 #req_chaos 1
-#req_rare 10
-#gold 105
+#req_rare 24
+#gold 47
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178360,14 +178364,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_maxunrest 150
 #req_maxpop 500
 #req_chaos 1
-#req_rare 10
-#gold 127
+#req_rare 28
+#gold 49
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178376,14 +178380,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_maxunrest 200
 #req_maxpop 500
 #req_chaos 1
-#req_rare 10
-#gold 148
+#req_rare 32
+#gold 50
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178391,15 +178395,15 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_minunrest 200
 #req_maxpop 500
 #req_chaos 1
-#req_rare 10
-#gold 189
+#req_rare 36
+#gold 56
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178409,14 +178413,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_minpop 500
 #req_maxpop 1000
 #req_chaos 1
-#req_rare 10
-#gold 59
+#req_rare 8
+#gold 80
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178426,14 +178430,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_minpop 500
 #req_maxpop 1000
 #req_chaos 1
-#req_rare 10
-#gold 90
+#req_rare 12
+#gold 81
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178443,371 +178447,387 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_minpop 500
 #req_maxpop 1000
 #req_chaos 1
-#req_rare 10
-#gold 130
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-#newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
-#header 2
-#req_minunrest 50
-#req_maxunrest 75
-#req_minpop 500
-#req_maxpop 1000
-#req_chaos 1
-#req_rare 10
-#gold 172
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-#newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
-#header 2
-#req_minunrest 75
-#req_maxunrest 100
-#req_minpop 500
-#req_maxpop 1000
-#req_chaos 1
-#req_rare 10
-#gold 211
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-#newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
-#header 2
-#req_minunrest 100
-#req_maxunrest 150
-#req_minpop 500
-#req_maxpop 1000
-#req_chaos 1
-#req_rare 10
-#gold 255
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-#newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
-#header 2
-#req_minunrest 150
-#req_maxunrest 200
-#req_minpop 500
-#req_maxpop 1000
-#req_chaos 1
-#req_rare 10
-#gold 296
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-#newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
-#header 2
-#req_minunrest 200
-#req_minpop 500
-#req_maxpop 1000
-#req_chaos 1
-#req_rare 10
-#gold 377
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-
-
-#newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
-#req_minunrest 10
-#req_maxunrest 20
-#req_minpop 1000
-#req_maxpop 1500
-#req_chaos 1
-#req_rare 10
+#req_rare 16
 #gold 88
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
-#req_minunrest 20
-#req_maxunrest 33
-#req_minpop 1000
-#req_maxpop 1500
-#req_chaos 1
-#req_rare 10
-#gold 135
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-#newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
-#req_minunrest 33
-#req_maxunrest 50
-#req_minpop 1000
-#req_maxpop 1500
-#req_chaos 1
-#req_rare 10
-#gold 195
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-#newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
+#header 2
 #req_minunrest 50
 #req_maxunrest 75
-#req_minpop 1000
-#req_maxpop 1500
+#req_minpop 500
+#req_maxpop 1000
 #req_chaos 1
-#req_rare 10
-#gold 258
+#req_rare 20
+#gold 93
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
+#header 2
 #req_minunrest 75
 #req_maxunrest 100
-#req_minpop 1000
-#req_maxpop 1500
+#req_minpop 500
+#req_maxpop 1000
 #req_chaos 1
-#req_rare 10
-#gold 316
+#req_rare 24
+#gold 95
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
+#header 2
 #req_minunrest 100
 #req_maxunrest 150
-#req_minpop 1000
-#req_maxpop 1500
+#req_minpop 500
+#req_maxpop 1000
 #req_chaos 1
-#req_rare 10
-#gold 382
+#req_rare 28
+#gold 98
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
+#header 2
 #req_minunrest 150
 #req_maxunrest 200
-#req_minpop 1000
-#req_maxpop 1500
+#req_minpop 500
+#req_maxpop 1000
 #req_chaos 1
-#req_rare 10
-#gold 444
+#req_rare 32
+#gold 99
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
+#header 2
 #req_minunrest 200
-#req_minpop 1000
-#req_maxpop 1500
+#req_minpop 500
+#req_maxpop 1000
 #req_chaos 1
-#req_rare 10
-#gold 566
+#req_rare 36
+#gold 113
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 
 #newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
-#req_minunrest 10
-#req_maxunrest 20
-#req_minpop 1500
-#req_maxpop 2000
-#req_chaos 1
-#req_rare 10
-#gold 118
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-#newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
-#req_minunrest 20
-#req_maxunrest 33
-#req_minpop 1500
-#req_maxpop 2000
-#req_chaos 1
-#req_rare 10
-#gold 179
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-#newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
-#req_minunrest 33
-#req_maxunrest 50
-#req_minpop 1500
-#req_maxpop 2000
-#req_chaos 1
-#req_rare 10
-#gold 260
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-#newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
-#req_minunrest 50
-#req_maxunrest 75
-#req_minpop 1500
-#req_maxpop 2000
-#req_chaos 1
-#req_rare 10
-#gold 344
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-#newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
-#req_minunrest 75
-#req_maxunrest 100
-#req_minpop 1500
-#req_maxpop 2000
-#req_chaos 1
-#req_rare 10
-#gold 421
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-#newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
-#req_minunrest 100
-#req_maxunrest 150
-#req_minpop 1500
-#req_maxpop 2000
-#req_chaos 1
-#req_rare 10
-#gold 510
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-#newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
-#req_minunrest 150
-#req_maxunrest 200
-#req_minpop 1500
-#req_maxpop 2000
-#req_chaos 1
-#req_rare 10
-#gold 591
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-#newevent
-#rarity 5
-#req_fornation 23
-#unrest 5
-#nolog
-#req_minunrest 200
-#req_minpop 1500
-#req_maxpop 2000
-#req_chaos 1
-#req_rare 10
-#gold 754
-#msg "Gold has been collected from the unruly population for the Oni lords!"
-#end
-
-
-#newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
 #header 2
 #req_minunrest 10
 #req_maxunrest 20
-#req_minpop 2000
+#req_minpop 1000
+#req_maxpop 1500
 #req_chaos 1
-#req_rare 10
+#req_rare 8
+#gold 119
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 20
+#req_maxunrest 33
+#req_minpop 1000
+#req_maxpop 1500
+#req_chaos 1
+#req_rare 12
+#gold 121
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 33
+#req_maxunrest 50
+#req_minpop 1000
+#req_maxpop 1500
+#req_chaos 1
+#req_rare 16
+#gold 132
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 50
+#req_maxunrest 75
+#req_minpop 1000
+#req_maxpop 1500
+#req_chaos 1
+#req_rare 20
+#gold 139
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 75
+#req_maxunrest 100
+#req_minpop 1000
+#req_maxpop 1500
+#req_chaos 1
+#req_rare 24
+#gold 142
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 100
+#req_maxunrest 150
+#req_minpop 1000
+#req_maxpop 1500
+#req_chaos 1
+#req_rare 28
 #gold 147
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 150
+#req_maxunrest 200
+#req_minpop 1000
+#req_maxpop 1500
+#req_chaos 1
+#req_rare 32
+#gold 149
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 200
+#req_minpop 1000
+#req_maxpop 1500
+#req_chaos 1
+#req_rare 36
+#gold 169
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+
+#newevent
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 10
+#req_maxunrest 20
+#req_minpop 1500
+#req_maxpop 2000
+#req_chaos 1
+#req_rare 8
+#gold 159
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 20
+#req_maxunrest 33
+#req_minpop 1500
+#req_maxpop 2000
+#req_chaos 1
+#req_rare 12
+#gold 162
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 33
+#req_maxunrest 50
+#req_minpop 1500
+#req_maxpop 2000
+#req_chaos 1
+#req_rare 16
+#gold 176
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 50
+#req_maxunrest 75
+#req_minpop 1500
+#req_maxpop 2000
+#req_chaos 1
+#req_rare 20
+#gold 186
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 75
+#req_maxunrest 100
+#req_minpop 1500
+#req_maxpop 2000
+#req_chaos 1
+#req_rare 24
+#gold 189
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 100
+#req_maxunrest 150
+#req_minpop 1500
+#req_maxpop 2000
+#req_chaos 1
+#req_rare 28
+#gold 196
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 150
+#req_maxunrest 200
+#req_minpop 1500
+#req_maxpop 2000
+#req_chaos 1
+#req_rare 32
+#gold 199
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 200
+#req_minpop 1500
+#req_maxpop 2000
+#req_chaos 1
+#req_rare 36
+#gold 225
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+
+#newevent
+#rarity 1
+#req_fornation 23
+#unrest 5
+#nolog
+#header 2
+#req_minunrest 10
+#req_maxunrest 20
+#req_minpop 2000
+#req_chaos 1
+#req_rare 8
+#gold 199
+#msg "Gold has been collected from the unruly population for the Oni lords!"
+#end
+
+
+#newevent
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178816,14 +178836,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_maxunrest 33
 #req_minpop 2000
 #req_chaos 1
-#req_rare 10
-#gold 224
+#req_rare 12
+#gold 202
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178832,14 +178852,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_maxunrest 50
 #req_minpop 2000
 #req_chaos 1
-#req_rare 10
-#gold 326
+#req_rare 16
+#gold 220
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178848,14 +178868,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_maxunrest 75
 #req_minpop 2000
 #req_chaos 1
-#req_rare 10
-#gold 430
+#req_rare 20
+#gold 232
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178864,14 +178884,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_maxunrest 100
 #req_minpop 2000
 #req_chaos 1
-#req_rare 10
-#gold 526
+#req_rare 24
+#gold 236
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178880,14 +178900,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_maxunrest 150
 #req_minpop 2000
 #req_chaos 1
-#req_rare 10
-#gold 637
+#req_rare 28
+#gold 245
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178896,14 +178916,14 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_maxunrest 200
 #req_minpop 2000
 #req_chaos 1
-#req_rare 10
-#gold 739
+#req_rare 32
+#gold 249
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
 
 
 #newevent
-#rarity 5
+#rarity 1
 #req_fornation 23
 #unrest 5
 #nolog
@@ -178911,10 +178931,13 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_minunrest 200
 #req_minpop 2000
 #req_chaos 1
-#req_rare 10
-#gold 943
+#req_rare 36
+#gold 281
 #msg "Gold has been collected from the unruly population for the Oni lords!"
 #end
+
+
+
 
 
 -- START OF ABOLETH EVENTS
