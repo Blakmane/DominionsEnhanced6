@@ -3734,6 +3734,7 @@
 #newweapon 1883 -- Tachi
 #copyweapon 857 -- Katana
 #name "Tachi"
+#rcost 7
 #dmg 7
 #att 3
 #def 2
@@ -27436,6 +27437,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 20  -- Bite
 #fallpower 0
 #mor 30
+#prot 8
 #holy
 #nametype 131  -- EA Ulm Male
 #end
@@ -53918,7 +53920,7 @@ Cost 56 RP."
 #magicskill 2 2
 #magicskill 9 2
 #magicskill 3 1
-#size 5
+#size 3
 #holy
 #goodleader
 #maxage 60
@@ -53967,7 +53969,7 @@ Cost 56 RP."
 #mr 16
 #mor 15
 #gcost 1
-#size 5
+#size 3
 #holy
 #expertleader
 #maxage 70
@@ -123087,19 +123089,19 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #onlygeosrc 4096  -- Cave only
 #end
 
-#selectspell 2161
-#name "Contact Bluecap"
-#descr "The caster contacts a spirit known as a Bluecap to reveal the mineral resources hidden in the surrounding earth and stone. The Bluecap will increase the resources available to the province as long as it is present. Bluecaps are connected to the mines they inhabit and will sicken and die if forced to leave them for long periods. This spell can only be cast in a cave province."
-#school 0
-#researchlevel 3
-#path 0 3
-#pathlevel 0 3
-#nreff 1
-#effect 10021
-#damage 7838
-#fatiguecost 1000
-#onlygeosrc 4096  -- Cave Only
-#end
+--#selectspell 2161
+--#name "Contact Bluecap"
+--#descr "The caster contacts a spirit known as a Bluecap to reveal the mineral resources hidden in the surrounding earth and stone. The Bluecap will increase the resources available to the province as long as it is present. Bluecaps are connected to the mines they inhabit and will sicken and die if forced to leave them for long periods. This spell can only be cast in a cave province."
+--#school 0
+--#researchlevel 3
+--#path 0 3
+--#pathlevel 0 3
+--#nreff 1
+--#effect 10021
+--#damage 7838
+--#fatiguecost 1000
+--#onlygeosrc 4096  -- Cave Only
+--#end
 
 #selectspell 2162
 #name "Interrupt Spellcasting"
@@ -130726,8 +130728,8 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 
 #selectspell 2733
 #copyspell 658 -- Warrior Illusion
-#name "Phantasmal Sidhe"
-#descr "Amongst the Tuatha illusion magic is commonplace and used to misdirect foes and troublemakers. The caster creates a Phantasmal  Sidhe warrior who attacks the enemy. These warriors are cloaked in glamour and move spasmodically, sometimes moving far and sometimes not moving at all."
+#name "Illusory Sidhe"
+#descr "Amongst the Tuatha illusion magic is commonplace and used to misdirect foes and troublemakers. The caster creates an Illusory Sidhe warrior who attacks the enemy. These warriors are cloaked in glamour and move spasmodically, sometimes moving far and sometimes not moving at all."
 #pathlevel 0 1
 #researchlevel 0
 #damage 7453
@@ -130736,8 +130738,8 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 
 #selectspell 2734
 #copyspell 704 -- Phantasmal Army
-#name "Phantasmal Sidhe Army"
-#descr "The illusionist creates a whole army of phantasmal Sidhe warriors. The phantasms attack the enemy, but will sometimes move in unpredictable ways."
+#name "Illusory Sidhe Army"
+#descr "The illusionist creates a whole army of Illusory warriors. The illusions attack the enemy, but will sometimes move in unpredictable ways."
 #damage 7453
 #restricted 11 -- Tir na Nog
 #end
@@ -130755,7 +130757,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #selectspell 2737
 #copyspell 686 -- Ghost Wolves
 #name "Ghost Cu Sidhe"
-#descr "The illusionist creates two phantasmal Cu Sidhe that attack the enemy. These phantasms are cloaked in glamour."
+#descr "The illusionist creates two illusory Cu Sidhe that attack the enemy. These illusions are cloaked in glamour."
 #damage 7454
 #restricted 11 -- Tir na Nog
 #end
@@ -149770,7 +149772,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #casttime 100
 #fatiguecost 25
 #spec 17592731746432  -- AN, Ignore shields, Enemy Sacreds only, Mindless immune, Inanimate immune, UWOK, MR-Hard Neg
-#godpathspell 6
+#godpathspell 7
 #end
 
 #selectspell 4248
@@ -154107,7 +154109,7 @@ Can only be cast once per combat round."
 #mainlevel 3
 #itemcost1 -33
 #secondarylevel 1
-#constlevel 3
+#constlevel 5
 #unique
 #weapon 151  -- Wand
 #spell "Gifts from Heaven"
@@ -158957,7 +158959,7 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 457 -- Wondrous Box of Monsters
-#constlevel 5
+#constlevel 7
 #unique
 #end
 
