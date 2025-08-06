@@ -61752,7 +61752,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 
--- NEW INDIE UW SHAMANS AND RECRUITABLES (ID 9660-9680)
+-- NEW INDIE UW SHAMANS AND RECRUITABLES (ID 9660-9672)
 
 #newmonster 9660 -- Kulullu Shaman
 #copystats 3089 -- Kulullu
@@ -61981,7 +61981,14 @@ Cannot be recruited until Break the Deadlock is cast."
 #defmult1b 3
 #end
 
+-- END NEW UW UNITS
 
+-- NEW ATLANTIS MAGE AND SUMMONS (IDs 9673-9680)
+
+
+
+
+-- END NEW ATLANTIS UNITS
 
 -- Pale One reinvigoration and strength:
 
