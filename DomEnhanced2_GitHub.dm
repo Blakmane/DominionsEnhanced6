@@ -35794,6 +35794,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #str 20
 #ap 12
 #maxage 1000
+#reconst 10
 #heal
 #slashres
 #pierceres
@@ -47152,7 +47153,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 12
 #weapon 1773 -- Coral Sword
 #weapon 20  -- Bite
-#armor 129  -- Samurai Armor
+#armor 229  -- Metal Scale Armor
 #amphibian
 #end
 
@@ -64492,6 +64493,12 @@ Cannot be recruited until Break the Deadlock is cast."
 #descr "The Longdead Captain was a pirate captain when he lived. He did not let death stop him from killing and plundering."
 #amphibian
 #end
+
+#selectmonster 2241 -- Longdead Boatswain fully amphibian and description
+#descr "The Longdead Boatswain was a pirate ship's officer when he lived. He did not let death stop him from killing and plundering."
+#amphibian
+#end
+
 
 #selectmonster 537 -- Forgotten King fully amphibian
 #amphibian
@@ -149157,6 +149164,7 @@ Applies the effects of Holy Avenger to the caster"
 #damage 9045 -- S Calyd Boar
 #fatiguecost 800
 #researchlevel 6
+#restricted 12 -- Marverni
 #end
 
 #selectspell 4181 -- MA Mictlan Enact Law
