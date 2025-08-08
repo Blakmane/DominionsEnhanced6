@@ -61984,7 +61984,80 @@ Cannot be recruited until Break the Deadlock is cast."
 
 -- NEW ATLANTIS MAGE AND SUMMONS (IDs 9673-9680)
 
+#selectmonster 1682 -- Reef Dweller
+#descr "Reef dwellers are pale green Atlantians of shallow waters. They live on coral reefs and have developed coral crafting to make weapons and armor. The reef dwellers have found a new purpose as conquerors of the land. Reef dwellers can be recruited in land castles."
+#end
 
+#selectmonster 1694 -- Coral  Priest
+#descr "The Coral Priest is a priest of the reef dwellers. As the reef dwellers are regarded with some suspicion, they are not allowed any greater religious authority. They have the soft, pale green skin of the reef dwellers. Coral Priests can be recruited in land castles."
+#end
+
+#newmonster 9673 -- EA Atlantis Land Mage
+#copystats 1692 -- Mage of the Deep
+#name "Adept of the Deep"
+#descr "With the expansion of the Atlantians into shallow waters, the Basalt City has become increasingly aware of the lands above the waves. Adepts of the Deep are Atlantian mages who specialise in communication and trade with land dwellers, for the purposes of extracting the treasures of dry land and transporting them to the Basalt City. While not as magically or politically powerful as their underwater colleagues, they have a keener affinity for Earth magic and have become masters of the gift of water breathing. The Basalt Queens have recently ordered the Adepts to form mystery cults amongst land dweller populations, with the intention of creating local support for invasion."
+#spr1 "wateroverhaul/Landatlantis1.png"
+#spr2 "wateroverhaul/Landatlantis2.png"
+#gcost 260
+#armor 158 -- Robes
+#clearmagic
+#magicskill 2 1
+#magicskill 3 1
+#custommagic 3712 100
+#taxcollector
+#okleader 
+#giftofwater 75
+#end
+
+#newmonster 9674 -- Yeti Crab
+#copystats 2514 -- Cave Crab
+#name "Yeti Crab"
+#descr "The Yeti Crab is a gigantic abyssal crab found living amongst the volcanic rifts and vents in the deepest parts of the ocean floor. Its namesake is due to the long white bristles covering the crab's body which look superficially similar to a yeti's hair, but in reality serve a very different purpose. The Yeti Crab's bristles are host to tiny creatures that purify and consume volcanic toxins and other poisons from the crab's environment. Atlanteans use these crabs as mobile farms, tending to the living mucus and harvesting it for consumption. In a crisis, the normally docile crabs can be prodded into battle, where their gigantic claws make them a formidable threat."
+#spr1 "wateroverhaul/yeticrab1.png"
+#spr2 "wateroverhaul/yeticrab2.png"
+#clearweapons
+#size 7
+#prot 20
+#hp 68
+#ap 9
+#fireres 5
+#coldres 5
+#mr 7
+#weapon 600 "Crab Claw"
+#weapon 600 "Crab Claw"
+#poisonres 25
+#diseaseres 80
+#supplybonus 25
+#end
+
+#newmonster 9675 -- Vampire Squid
+#copystats 438 -- Juvenile Kraken
+#name "Vampire Squid"
+#descr "The Vampire Squid is a gargantuan abyssal monster that dwells in the darkest parts of the ocean depths. Neither strong nor particularly durable for its size, the Vampire Squid instead hunts by stealth, camoflaguing itself as smaller and more vulnerable prey. Once a predator attacks, the squid it reveals its hideous secret: it possesses powerful life-draining spikes along its tentacles that can spell doom for even the largest sea monsters. Although their motivations are utterly alien to shorter-lived creatures, Vampire Squids are remarkably intelligent and can be coaxed into serving powerful Atlantian mages when suitably incentivised." 
+#spr1 "wateroverhaul/vampsquid1.png"
+#spr2 "wateroverhaul/vampsquid2.png"
+#clearweapons
+#size 9
+#hp 96
+#prot 12
+#mr 16
+#str 16
+#att 12
+#def 8
+#fear 5
+#coldres 5
+#fireres 5
+#ambidextrous 6
+#magicskill 5 1
+#magicskill 8 1
+#custommagic 36864 100
+#custommagic 4096 50
+#float
+#weapon 636 -- Life Drain Tentacle
+#weapon 636 -- Life Drain Tentacle
+#weapon 636 -- Life Drain Tentacle
+#weapon 636 -- Life Drain Tentacle
+#end
 
 
 -- END NEW ATLANTIS UNITS
@@ -112478,7 +112551,9 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 2
 #look 9
 #homemon 7455 -- coral snek
+#homecom 9674 -- yeti crab
 #homemon 1664 -- monster fish
+#homecom 9675 -- vampire squid
 #homecom 7226 -- dagon
 #homecom 7276 -- cetus
 #end
@@ -119171,8 +119246,17 @@ Dominion: Dominion hides province ownership."
 #cheapgod20 8322 -- Basalt Architect
 #cheapgod20 8400 -- Terror of the Deep
 
---#landrec 1682
---#landcom 1694
+#coastfortrec 1681 -- Atlantian Spearman
+#coastfortrec 1683 -- Shambler
+#coastfortrec 1684 -- War Shambler
+#coastfortcom 1680 -- Scout
+#coastfortcom 1700 -- Shambler Chief
+
+
+#landrec 1682 -- Reef Dweller
+#landcom 1694 -- Coral Priest
+#landcom 9673 -- Adept of the Deep
+
 
 #futuresite "EA Atlantis Summons"
 #futuresite "EA Atlantis Heroes"
@@ -150341,10 +150425,53 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #damage 3757
 #end
 
+#selectspell 4280 -- Yeti Crab
+#copyspell 945 -- Call Kraken
+#name "Bind Abyssal Crabs"
+#descr "With this ritual the mage travels to a deep volcanic vent and binds several Yeti Crabs, ready to be released upon an enemy army. Yeti Crabs are gigantic white-bristled crabs from the deep abyss who use the living mucus coating their hair to purify the dangerous volcanic toxins and other poisons in their environment. Atlanteans consider this mucus a nutritious delicacy, and each crab can feed as many as 25 soldiers per month. In a crisis, the normally docile crabs can be prodded into battle, where their gigantic claws make them a formidable threat.
+This spell can only be cast in a deep water province."
+#researchlevel 3
+#path 0 2
+#path 1 3 
+#pathlevel 0 2
+#pathlevel 1 1
+#fatiguecost 500
+#nreff 502
+#damage 9674 -- Yeti Crab
+#onlygeosrc 2048  -- Deep Sea
+#restricted 43 -- Atlantis
+#end
 
+#selectspell 4281 -- Vampire Squid
+#copyspell 945 -- Call Kraken
+#name "Call Vampire Squid"
+#descr "The Vampire Squid is a gargantuan abyssal monster that dwells in the darkest parts of the ocean depths. Neither strong nor particularly durable for its size, the Vampire Squid instead hunts by stealth, camoflaguing itself as smaller and more vulnerable prey. Once a predator attacks, the squid it reveals its hideous secret: it possesses powerful life-draining spikes along its tentacles that can spell doom for even the largest sea monsters within seconds. Although their motivations are utterly alien to shorter-lived creatures, Vampire Squids are remarkably intelligent and can be coaxed into serving powerful Atlantian mages when suitably incentivised.
+This spell can only be cast in a deep water province."
+#researchlevel 7
+#path 0 5
+#path 1 2 
+#pathlevel 0 3
+#pathlevel 1 1
+#fatiguecost 1500
+#nreff 1
+#damage 9675 -- Vampire Squid
+#onlygeosrc 2048  -- Deep Sea
+#restricted 43 -- Atlantis
+#end
 
-
-
+#selectspell 4282 -- Atlantis trade winds
+#copyspell "Trade Wind"
+#name "Tithe of the Deep"
+#descr "By shaping the sands and currents and invoking the weight of ancient bargains, the mages of Atlantis can summon forth a harvest from the deep so vast it staggers land-born fisheries. In gratitude, or fear, the coastal denizens offer tributes of gold and other treasures to Atlantis. The spell lasts longer for every gem spent on the ritual. The enchantment will dissipate if the province is lost."
+#details "Coastal province income +25%."
+#path 0 2
+#path 1 3
+#pathlevel 0 3
+#pathlevel 1 2
+#fatiguecost 800
+#researchlevel 4
+#restricted 43 -- Atlantis
+#end
 
 -- END OF NEW SPELLS
 
