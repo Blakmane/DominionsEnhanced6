@@ -131,8 +131,8 @@
 #cost0 5 -- 6 -> 5
 #end
 
-#selectbless "Water Breathing" -- 6 -> 3
-#cost0 3 -- 6 -> 3
+#selectbless "Water Breathing" -- 6 -> 2
+#cost0 3 -- 6 -> 2
 #end
 
 #selectbless "Frost Mist Weapons" -- 7 -> 5
@@ -142792,6 +142792,7 @@ All effects scale with friendly Dominion."
 #descr "This spell grants those visiting the underwater realm the ability to move underwater with ease, negating some of the penalties suffered by units venturing underwater."
 #details "Grants 2 reinvigoration and movement speed is doubled."
 #school -1
+#path 0 2
 #researchlevel 0
 #range 0
 #fatiguecost 0
@@ -150473,6 +150474,21 @@ This spell can only be cast in a deep water province."
 #restricted 43 -- Atlantis
 #end
 
+#selectspell 4283 -- Permanent Water Breathing
+#name "Permanent Water Breathing"
+#descr "This spell grants permanent water breathing to all friendly airbreathers upon the battlefield. This persists even after the battle ends."
+#school -1
+#researchlevel 0
+#path 0 2
+#range 0
+#fatiguecost 0
+#effect 500
+#damage 110
+#nreff 1
+#aoe 666
+#spec 36028797065183360 -- UW OK, UW Only, AN, Ignore shields, Internal, Friendly only, Airbreathers Only
+#end
+
 -- END OF NEW SPELLS
 
 
@@ -157425,7 +157441,7 @@ This will also prevent their skin from drying out."
 #selectitem 861 -- Swamp Talisman, 1 -> 60 gow
 #spr "wateroverhaul/swamptalisman.tga"
 #name "Swamp Talisman"
-#descr "The bearer of this Talisman and all those under their command will find their skin to turn a bit green and swamp grass to grow in place of hair, but more importantly their lungs will adapt to aquatic environments, allowing them to traverse the sea."
+#descr "The bearer of this Talisman and all those under their command will find their skin to turn a bit green and swamp grass to grow in place of hair, but more importantly their lungs will adapt to aquatic environments, allowing them to traverse the sea and move underwater with greater ease."
 #constlevel 5
 #mainpath 6
 #mainlevel 2
@@ -157434,6 +157450,7 @@ This will also prevent their skin from drying out."
 #itemcost1 -70
 #itemcost2 -60
 #giftofwater 300
+#autospell "Tritons Grace"
 #type 8
 #diseaseres 10
 #poisonres 5
@@ -157441,7 +157458,7 @@ This will also prevent their skin from drying out."
 
 #selectitem 862 -- Crown of the Watery Dead, 1 -> 70 gow
 #name "Crown of the Watery Dead"
-#descr "A crown once belonging to the exiled rulers of the realm of the watery dead. Though much of its authority has long been stripped, the waves and dead alike will still recognize the wearer as lord."
+#descr "A crown once belonging to the exiled rulers of the realm of the watery dead. Though much of its authority has long been stripped, the waves and dead alike will still recognize the wearer as lord. Water will part around soldiers who follow the wearer, allowing them to breathe and fight underwater with greater ease"
 #spr "wateroverhaul/fomoriancrown.tga"
 #itemdrawsize -33
 #constlevel 5
@@ -157452,6 +157469,7 @@ This will also prevent their skin from drying out."
 #itemcost1 -60
 #itemcost2 -70
 #giftofwater 500
+#autospell "Tritons Grace"
 #undcommand 50
 #type 9
 #nationrebate 10 -- Fomoria
@@ -158838,12 +158856,15 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 364 -- Manual of Water Breathing
-#descr "The owner of this magic book can grant up to 100 human-sized soldiers the ability to breathe water."
+#descr "The owner of this magic book can grant up to 100 human-sized soldiers the ability to breathe water. At the start of battle, the book's owner will cast a spell that makes fighting underwater more bearable for airbreathing soldiers."
 #itemcost1 -60 -- 4 gems
 #itemcost2 -40 -- 3 gems
+#mainpath 0 2
+#mainpath 1 6
 #mainlevel 2
 #constlevel 3
 #giftofwater 300
+#autospell "Tritons Grace"
 #end
 
 #selectitem 367 -- Crystal Matrix
@@ -158910,11 +158931,11 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 401 -- Barrel of Air
-#descr "This magic item will enable a commander to travel underwater with an army consisting of up to 250 human-sized troops or 100 giants. The magic of the barrel will also help to mitigate the penalties air breathing creatures suffer whilst underwater."
+#descr "This magic item will enable a commander to travel underwater with an army consisting of up to 250 human-sized troops or 100 giants.  On the eve of battle, each soldier within the army breathes deeply from the barrel and is infused by magical air so potent they can hold their breath underwater for the rest of their natural lives."
 #itemcost1 -33
 #mainlevel 3
 #giftofwater 750
-#autospell "Tritons Grace"
+#autospell "Permanent Water Breathing"
 #tmpairgems 1
 #end
 
@@ -158923,10 +158944,10 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 405 -- Sea Kings Goblet
-#descr "This magic item will enable a commander to travel underwater with an army consisting of up to 250 human-sized troops or 100 giants. The magic of the goblet will also help to mitigate the penalties air breathing creatures suffer whilst underwater."
+#descr "This magic item will enable a commander to travel underwater with an army consisting of up to 250 human-sized troops or 100 giants. On the eve of battle, each soldier within the army sips enchanted seawater from the goblet and is blessed by Thetis, granting them the ability to breathe water in perpetuity."
 #itemcost1 -33
 #giftofwater 750
-#autospell "Tritons Grace"
+#autospell "Permanent Water Breathing"
 #tmpwatergems 1
 #end
 
