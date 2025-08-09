@@ -3838,6 +3838,10 @@
 #bonus
 #end
 
+#newweapon 1896 -- Magic Innate Tentacle
+#copyweapon 835 -- Tentacle
+#bonus
+#end
 
 -- END OF NEW WEAPONS
 
@@ -53837,6 +53841,7 @@ Cost 56 RP."
 #att 12
 #def 13
 #str 10
+#mr 10
 #enc 0
 #coldres 25
 #fireres 15
@@ -53860,7 +53865,7 @@ Cost 56 RP."
 #mor 11
 #holy
 #weapon 388  -- Pearl Spear
-#armor 12  -- Scale Mail Hauberk
+#armor 523  -- Pearl Hauberk
 #armor 123  -- Hoplite Helm
 #armor 189  -- Pearl Shield
 #watershape 9068
@@ -53882,7 +53887,7 @@ Cost 56 RP."
 #mor 11
 #holy
 #weapon 388  -- Pearl Spear
-#armor 12  -- Scale Mail Hauberk
+#armor 523  -- Pearl Hauberk
 #armor 123  -- Hoplite Helm
 #armor 189  -- Pearl Shield
 #landshape 9067
@@ -62792,7 +62797,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 7 -- 4 -> 7
 #end
 
-#selectmonster 9066 -- Goryou
+#selectmonster 8006 -- Goryou
 #skilledrider 7 -- 4 -> 7
 #end
 
@@ -67235,7 +67240,7 @@ Only three Queens of Elemental Water are known to exist."
 #mor 30
 #hp 195
 #prot 18
-#str 4
+#str 25
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -69242,10 +69247,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #goodmagicleader
 #unsurr 5
 #poisonres 15
-#weapon 835  -- Tentacle
-#weapon 835  -- Tentacle
-#weapon 835  -- Tentacle
-#weapon 835  -- Tentacle
+#weapon 1896  -- Tentacle
+#weapon 1896  -- Tentacle
+#weapon 1896  -- Tentacle
+#weapon 1896  -- Tentacle
 #itemslots 786432
 #clearmagic
 #magicskill 3 1
@@ -136262,7 +136267,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #fatiguecost 0
 #effect 23
 #damage 33554432  -- Unholy Power
-#nextspell 2338
+#nextspell 4251 -- Meditation
 #restricted 42 -- Therodos
 #sound 31
 #end
@@ -136279,7 +136284,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 6
 #pathlevel 1 1
 #fatiguecost 0
-#nextspell 2338
+#nextspell 4251 -- Meditation
 #restricted 42 -- Therodos
 #end
 
@@ -155094,6 +155099,7 @@ Can only be cast once per combat round."
 #name "The Head of Mimir"
 #descr "This is the head of the eternally wise and knowing Mimir, guardian of the Well of Knowledge. It was severed in ages past, however it has been preserved with herbs and charms and will whisper cosmic secrets of magic to its bearer."
 #constlevel 7
+#unique
 #mainlevel 5
 #researchbonus 20
 #mr 4
@@ -155832,6 +155838,7 @@ This will also prevent their skin from drying out."
 #mainpath 4
 #secondarypath 6
 #mainlevel 4
+#unique
 #secondarylevel 3
 #restricted 12 -- Marverni
 #type 8
@@ -155942,6 +155949,7 @@ This will also prevent their skin from drying out."
 #mainlevel 4
 #type 8
 #magicboost 5 1
+#unique
 #spell "Ritual of Rebirth"
 #restricted 27
 #restricted 75
