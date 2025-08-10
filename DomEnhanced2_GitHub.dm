@@ -24213,11 +24213,11 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #end
 
 #newmonster 7263
-#copystats 2853  -- Atlantean Ghost King
-#copyspr 2853  -- Atlantean Ghost King
+#copystats 2853  -- Atlantian Ghost King
+#copyspr 2853  -- Atlantian Ghost King
 #clearmagic
 #name "Ghost King"
-#descr "The Ghost King is the soul of a Basalt King killed during the fall of Atlantis that has been called from the Deeps to serve once more. These ancient Atlanteans are revered by their descendants as a sacred reminder of a bygone era. The magic of the falling star combined with the energy released when the crystal was shattered has made them very resistant to magical effects. The Ghost King can also protect its allies against evil magic in battle. It has retained its magical power and gained some knowledge of Death magic during its time in the Underworld."
+#descr "The Ghost King is the soul of a Basalt King killed during the fall of Atlantis that has been called from the Deeps to serve once more. These ancient Atlantians are revered by their descendants as a sacred reminder of a bygone era. The magic of the falling star combined with the energy released when the crystal was shattered has made them very resistant to magical effects. The Ghost King can also protect its allies against evil magic in battle. It has retained its magical power and gained some knowledge of Death magic during its time in the Underworld."
 #homerealm 0
 #gcost 0
 #mor 18
@@ -26064,7 +26064,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #clearweapons
 #cleararmor
 #name "Returned Shambler"
-#descr "This is a shambler that was killed during the fall of Atlantis. It has now been awoken to serve its descendants once more. These ancient Atlanteans are revered by their descendants as a sacred reminder of a bygone era. The magic of the falling star combined with the energy released when the crystal was shattered has made them very resistant to magical effects."
+#descr "This is a shambler that was killed during the fall of Atlantis. It has now been awoken to serve its descendants once more. These ancient Atlantians are revered by their descendants as a sacred reminder of a bygone era. The magic of the falling star combined with the energy released when the crystal was shattered has made them very resistant to magical effects."
 #prot 10
 #hp 33
 #size 4
@@ -26091,7 +26091,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #clearweapons
 #cleararmor
 #name "Returned Pillar"
-#descr "This is a Living Pillar that was killed during the fall of Atlantis. It has now been awoken to serve its descendants once more. These ancient Atlanteans are revered by their descendants as a sacred reminder of a bygone era. The magic of the falling star combined with the energy released when the crystal was shattered has made them very resistant to magical effects."
+#descr "This is a Living Pillar that was killed during the fall of Atlantis. It has now been awoken to serve its descendants once more. These ancient Atlantians are revered by their descendants as a sacred reminder of a bygone era. The magic of the falling star combined with the energy released when the crystal was shattered has made them very resistant to magical effects."
 #prot 10
 #hp 38
 #size 4
@@ -26119,7 +26119,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #clearweapons
 #cleararmor
 #name "Returned Priest"
-#descr "This is an Atlantean Priest that was killed during the fall of Atlantis. It has now been awoken to serve its descendants once more. These ancient Atlanteans are revered by their descendants as a sacred reminder of a bygone era. The magic of the falling star combined with the energy released when the crystal was shattered has made them very resistant to magical effects."
+#descr "This is an Atlantian Priest that was killed during the fall of Atlantis. It has now been awoken to serve its descendants once more. These ancient Atlantians are revered by their descendants as a sacred reminder of a bygone era. The magic of the falling star combined with the energy released when the crystal was shattered has made them very resistant to magical effects."
 #prot 10
 #mr 16
 #voidsanity 10
@@ -44547,7 +44547,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #fixedname "Mother Hydra"
 #spr1 "worthy_heroes/high_queen_1.tga"
 #spr2 "worthy_heroes/high_queen_2.tga"
-#descr "Mother Hydra is a prominent Basalt Queen. She is a strong-willed leader of the Atlantean race, and she works closely with the Basalt Kings on some mysterious purpose. She often goes on solitary errands out of the Basalt City, but anyone who probes too deeply into these journeys has been devoured by the Queen."
+#descr "Mother Hydra is a prominent Basalt Queen. She is a strong-willed leader of the Atlantian race, and she works closely with the Basalt Kings on some mysterious purpose. She often goes on solitary errands out of the Basalt City, but anyone who probes too deeply into these journeys has been devoured by the Queen."
 #darkvision 100
 #str 22
 #att 13
@@ -45168,7 +45168,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #nametype 117  -- Deep one
 #spr1 "worthy_heroes/ma_rain_priest_1.tga"
 #spr2 "worthy_heroes/ma_rain_priest_1.tga"
-#descr "In the deep swamps of Mictlan live a tribe of Atlanteans called the toad tribe. Many of them are refugees from the wars raging under the waves that have chosen to make a living on the land, far away from the horrors of the sea. The toad tribe are led by shamans, Atlanteans who studied magic under the sea. The toad tribe has recently began trading with the Mictlan people who are impressed by their skill in water magic. Some of the more skilled shamans have been ordained as low-ranking priests of Rain. Now one of the priests has come to serve the awakening god to further improve ties between the refugee Atlanteans and the people of Mictlan. Each Toad Priest can lead a handful of men underwater and is protected by a small host of Toad Tribe warriors."
+#descr "In the deep swamps of Mictlan live a tribe of Atlantians called the toad tribe. Many of them are refugees from the wars raging under the waves that have chosen to make a living on the land, far away from the horrors of the sea. The toad tribe are led by shamans, Atlantians who studied magic under the sea. The toad tribe has recently began trading with the Mictlan people who are impressed by their skill in water magic. Some of the more skilled shamans have been ordained as low-ranking priests of Rain. Now one of the priests has come to serve the awakening god to further improve ties between the refugee Atlantians and the people of Mictlan. Each Toad Priest can lead a handful of men underwater and is protected by a small host of Toad Tribe warriors."
 #str 12
 #att 11
 #def 10
@@ -47000,7 +47000,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #fixedname "Odubur"
 #spr1 "worthy_heroes/thawed.tga"
 #spr2 "worthy_heroes/thawed2.tga"
-#descr "Recently Angakoks made an odd discovery. They found an oddly dressed Shambler of the Deep frozen solid in a wall of ice. Angakoks thawed the corpse to give it a proper burial, but were soon gasping as the Shambler spoke, still alive after hundreds of years. He presented himself as an explorer from the Basalt City, who had been leading an expedition to the coast of Ice and Bones. Odubur was shocked to see the state into which his people had fallen and is now determined to lead his kin back beneath the waves. He has once again donned his pearl staff and coral cap, symbols of practice from the long gone organization of the Mages of the Deep. Although he has been weakened by the suspended animation for hundreds of years, he is the last Atlantean of the Deep, and thus sacred to the remaining Atlanteans, who have given him great religious authority."
+#descr "Recently Angakoks made an odd discovery. They found an oddly dressed Shambler of the Deep frozen solid in a wall of ice. Angakoks thawed the corpse to give it a proper burial, but were soon gasping as the Shambler spoke, still alive after hundreds of years. He presented himself as an explorer from the Basalt City, who had been leading an expedition to the coast of Ice and Bones. Odubur was shocked to see the state into which his people had fallen and is now determined to lead his kin back beneath the waves. He has once again donned his pearl staff and coral cap, symbols of practice from the long gone organization of the Mages of the Deep. Although he has been weakened by the suspended animation for hundreds of years, he is the last Atlantian of the Deep, and thus sacred to the remaining Atlantians, who have given him great religious authority."
 #clearmagic
 #str 11
 #att 9
@@ -61877,8 +61877,8 @@ Cannot be recruited until Break the Deadlock is cast."
 
 -- Water Poptype changes
 
-#selectpoptype 57  -- Atlanteans
-#addreccom 432  -- Atlantean Scout
+#selectpoptype 57  -- Atlantians
+#addreccom 432  -- Atlantian Scout
 #addrecunit 9669 -- Shambler Warrior
 #end
 
@@ -61947,7 +61947,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #newmonster 9674 -- Yeti Crab
 #copystats 2514 -- Cave Crab
 #name "Yeti Crab"
-#descr "The Yeti Crab is a gigantic abyssal crab found living amongst the volcanic rifts and vents in the deepest parts of the ocean floor. Its namesake is due to the long white bristles covering the crab's body which look superficially similar to a yeti's hair, but in reality serve a very different purpose. The Yeti Crab's bristles are host to tiny creatures that purify and consume volcanic toxins and other poisons from the crab's environment. Atlanteans use these crabs as mobile farms, tending to the living mucus and harvesting it for consumption. In a crisis, the normally docile crabs can be prodded into battle, where their gigantic claws make them a formidable threat."
+#descr "The Yeti Crab is a gigantic abyssal crab found living amongst the volcanic rifts and vents in the deepest parts of the ocean floor. Its namesake is due to the long white bristles covering the crab's body which look superficially similar to a yeti's hair, but in reality serve a very different purpose. The Yeti Crab's bristles are host to tiny creatures that purify and consume volcanic toxins and other poisons from the crab's environment. Atlantians use these crabs as mobile farms, tending to the living mucus and harvesting it for consumption. In a crisis, the normally docile crabs can be prodded into battle, where their gigantic claws make them a formidable threat."
 #spr1 "wateroverhaul/yeticrab1.png"
 #spr2 "wateroverhaul/yeticrab2.png"
 #clearweapons
@@ -121990,6 +121990,7 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #aoe 1002
 #damage 35
 #fatiguecost 30
+#spec 537415808
 #nextingeo 16  -- Highlands
 #end
 
@@ -122001,7 +122002,7 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #nreff 1
 #damage 17179869184  -- Confusion
 #aoe 1
-#spec 537481344  -- AN, MR Neg, Ignore Shields, Lifeless/Undead/Amphibians Immune
+#spec 537415808  -- AN, MR Neg, Ignore Shields, Lifeless/Undead Immune
 #end
 
 #selectspell 2027
@@ -134731,7 +134732,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #selectspell 2990
 #copyspell 1277 -- Scrying Pool
 #name "Basalt Vein"
-#descr "The caster casts an enchantment over a nearby province that reveals the location of veins of basalt. These can be used by Atlanteans for forging and construction in the province. More basalt will be found in underwater and mountain provinces. The more magic gems spent the longer the enchantment will last."
+#descr "The caster casts an enchantment over a nearby province that reveals the location of veins of basalt. These can be used by Atlantians for forging and construction in the province. More basalt will be found in underwater and mountain provinces. The more magic gems spent the longer the enchantment will last."
 #school 4  -- Enchantment
 #path 0 3
 #path 1 0
@@ -134883,7 +134884,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #selectspell 3003
 #copyspell 960 -- Summon Sea Lions
 #name "Hidden in Depths"
-#descr "Down in the deep gorges of the ocean lay the bodies of the Atlanteans slain during the fall of the Basalt City. The caster ventures into the deepest part of the ocean to revive a host of fallen warriors along with their priests and rulers. These ancient Atlanteans are revered by their descendants as a sacred reminder of a bygone era. The magic of the falling star combined with the energy released when the crystal was shattered has made them very resistant to magical effects. More powerful mages can reanimate more of the fallen warriors with each casting."
+#descr "Down in the deep gorges of the ocean lay the bodies of the Atlantians slain during the fall of the Basalt City. The caster ventures into the deepest part of the ocean to revive a host of fallen warriors along with their priests and rulers. These ancient Atlantians are revered by their descendants as a sacred reminder of a bygone era. The magic of the falling star combined with the energy released when the crystal was shattered has made them very resistant to magical effects. More powerful mages can reanimate more of the fallen warriors with each casting."
 #school 4
 #researchlevel 6
 #path 0 2
@@ -144958,14 +144959,13 @@ Underwater: Targets must resist the effects of the spell a second time with an e
 #damage 5
 #aoe 1
 #nreff 1
-#spec 8650880 -- UWOK, AN, enemies only
+#spec 8388736 -- UWOK, AN
 #end
 
 #selectspell 3867 -- Sailor's Lament
 #copyspell "Decay"
 #name "Sailor's Lament"
-#descr "The caster calls upon the drowned to instill a fear of death in their enemies, and against those who would normally breathe air, a feeling of drowning will overtake their senses."
-#details "Damage will only affect air breathing non-commanders."
+#descr "The caster calls upon the drowned to instill a fear of death in their enemies. Even those who would normally breathe water will find a terrible feeling of drowning will overtake their senses. The weak willed will truly believe themselves to be suffocating and can even die from this illusion."
 #path 0 7 -- Glamour
 #pathlevel 0 2
 #path 1 5 -- Death
@@ -144978,7 +144978,7 @@ Underwater: Targets must resist the effects of the spell a second time with an e
 #effect 2 -- Damage
 #damage 5
 #flightspr -1
-#spec 17222144128 -- UWOK, UWonly, AN, enemies only, MRN, false damage
+#spec 17221816448 -- UWOK, UWonly, AN, MRN, false damage
 #nextspell 3866
 #end
 
@@ -145256,8 +145256,8 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #selectspell 3885 -- Rebreathing Bubble, reinvigoration, may make it also give attack/morale maybe
 #copyspell "Healing Light"
 #name "Rebreathing Bubble"
-#descr "The caster fills the lungs of a group of soldiers with fresh air. Those affected will feel reinvigorated for the rest of the fight. This spell only has any effect underwater."
-#details "Can only affect air breathing non-commanders. Grants Reinvigoration +2."
+#descr "The caster fills the lungs and gills of a group of soldiers with sweet air. Those affected will feel reinvigorated for the rest of the fight. This spell only has any effect underwater."
+#details "Grants Reinvigoration +2."
 #school 5 -- Thaum
 #researchlevel 4
 #path 0 1 -- Air 2
@@ -145267,9 +145267,9 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #effect 23
 #damage 68719476736 -- Reinvigoration
 #explspr 10218
-#aoe 5015 -- 25+5
---#spec 46137344 -- UWOK, UWonly, friendlies only
-#spec 583090176 -- Air breathers only, UWOK, UWonly, friendlies only, inanimate immune, ignores shields
+#aoe 5000 -- 10+5
+#prec 1
+#spec 583548928 --UWOK, UWonly, friendlies only, inanimate/undead immune, ignores shields
 --#nextspell "Reinvigorating Air"
 #end
 
@@ -148882,59 +148882,56 @@ Applies the effects of Holy Avenger to the caster"
 #restricted 88 -- MA Atlantis
 #end
 
-#selectspell 2994
-#copyspell 806 -- Liquid Body
-#name "Mysteries of the Deep"
-#descr "The caster gifts those that have never visited the Coral Towers with some semblance of life in Atlantis. The bodies of a group of friendly troops unable to live below the waves will take on the aspect of the sea, becoming fluid. Those affected become very difficult to harm by physical means and wounds will rarely become permanent afflictions. As a by-effect they will lose some strength and movement speed."
-#details "Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
-#researchlevel 4
-#pathlevel 0 2
-#fatiguecost 40
-#aoe 1008 -- 10+
-#spec 4276224  -- Friendlies only, Ignores shields, Airbreathers only
-#restricted 88 -- MA Atlantis
+#selectspell 2994 -- Deep Warriors nextspell
+#copyspell 1109 -- Strength of Giants
+#name "Strength of the Deep"
+#descr "Strengthens those enhanced by liquid body"
+#aoe 1
+#school -1
 #end
 
-#selectspell 4149
+#selectspell 4149 -- Atlantis Better Liquid Body
 #copyspell 806 -- Liquid Body
-#name "Army of the Deep"
-#descr "The caster gifts those that have never visited the Coral Towers with some semblance of life in Atlantis. The bodies of all friendly troops unable to live below the waves will take on the aspect of the sea, becoming fluid. Those affected become very difficult to harm by physical means and wounds will rarely become permanent afflictions. As a by-effect they will lose some strength and movement speed."
-#details "Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
+#name "Deep Warriors"
+#descr "The Coral Towers of Altantis are a place of great magical learning. Within its halls the Atlantians have mastered the ability to shape the body into a vessel for the sea without diminishing its force. This spell draws upon great mastery of water magic to reform the bodies of friendly troops into an aspect of the unyielding depths of the ocean. Those affected become very difficult to harm by physical means and wounds will rarely become permanent afflictions. As a by-effect they will lose some movement speed."
+#details "Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -25% combat speed."
 #researchlevel 6
 #pathlevel 0 4
-#fatiguecost 200
-#aoe 666
-#spec 4276224  -- Friendlies only, Ignores shields, Airbreathers only
+#range 15
+#fatiguecost 100
+#aoe 4000 -- 16++++
+#spec 12599300  -- Friendlies only, Ignores shields, UW OK, No effect on Spiritform
 #restricted 88 -- MA Atlantis
+#nextspell 2994
 #end
 
 #selectspell 4150
 #copyspell 806 -- Liquid Body
 #name "Vision of the Deep"
-#descr "The eyes of a group of friendly troops unable to live below the waves will adjust to the depth's darkness. Those affected become will be able to see in the darkness of the deeps as well as any Atlantian."
+#descr "The eyes of a group of friendly troops will adjust to the depth's darkness. Those affected become will be able to see in darkness as well as any Atlantian. "
 #details "Grants 50 Darkvision"
 #researchlevel 4
-#pathlevel 0 1
-#fatiguecost 40
-#aoe 3017 -- 20+++
+#pathlevel 0 3
+#fatiguecost 100
+#aoe 4000 -- 12++++
 #effect 23
 #damage 35184372088832
-#spec 12664832  -- Friendlies only, Ignores shields, Airbreathers only, UWOK
+#spec 12599296  -- Friendlies only, Ignores shields, UWOK
 #restricted 88 -- MA Atlantis
 #end
 
 #selectspell 4151
 #copyspell 806 -- Liquid Body
 #name "Witness the Deep"
-#descr "The eyes of all friendly troops unable to live below the waves will adjust to the depth's darkness. Those affected become will be able to see in the darkness of the deeps as well as any Atlantian."
+#descr "The eyes of all friendly troops on the battlefield will adjust to the depth's darkness. Those affected become will be able to see in darkness as well as any Atlantian."
 #details "Grants 50 Darkvision"
-#researchlevel 6
-#pathlevel 0 3
+#researchlevel 7
+#pathlevel 0 4
 #fatiguecost 100
 #aoe 666
 #effect 23
 #damage 35184372088832
-#spec 12664832  -- Friendlies only, Ignores shields, Airbreathers only, UWOK
+#spec 12599296  -- Friendlies only, Ignores shields, UWOK
 #restricted 88 -- MA Atlantis
 #end
 
@@ -150672,7 +150669,7 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #selectspell 4280 -- Yeti Crab
 #copyspell 945 -- Call Kraken
 #name "Bind Abyssal Crabs"
-#descr "With this ritual the mage travels to a deep volcanic vent and binds several Yeti Crabs, ready to be released upon an enemy army. Yeti Crabs are gigantic white-bristled crabs from the deep abyss who use the living mucus coating their hair to purify the dangerous volcanic toxins and other poisons in their environment. Atlanteans consider this mucus a nutritious delicacy, and each crab can feed as many as 25 soldiers per month. In a crisis, the normally docile crabs can be prodded into battle, where their gigantic claws make them a formidable threat.
+#descr "With this ritual the mage travels to a deep volcanic vent and binds several Yeti Crabs, ready to be released upon an enemy army. Yeti Crabs are gigantic white-bristled crabs from the deep abyss who use the living mucus coating their hair to purify the dangerous volcanic toxins and other poisons in their environment. Atlantians consider this mucus a nutritious delicacy, and each crab can feed as many as 25 soldiers per month. In a crisis, the normally docile crabs can be prodded into battle, where their gigantic claws make them a formidable threat.
 This spell can only be cast in a deep water province."
 #researchlevel 3
 #path 0 2
@@ -151419,6 +151416,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 521 -- Break the Third Soul -- fatigue
+#spec 545800320
 #end
 
 #selectspell 522 -- Break the Fourth Soul -- Curse
@@ -151433,6 +151431,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 525 -- Gift of the Third Soul -- Reinvig2 buff
+#spec 549994496
 #aoe 5
 #end
 
@@ -152816,6 +152815,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #aoe 1001 -- 2+
 #end
 
+#selectspell 1275 -- Steal Breath
+#spec 537415808
+#end
+
 #selectspell 1296 -- Furious Warriors
 #aoe 1006 -- 8+
 #end
@@ -154170,7 +154173,7 @@ Can only be cast once per combat round."
 #itemdrawsize -20
 #name "Dragon Pearl"
 #descr "This huge pearl is the most prized possession of a huge dragon. The dragon would never give its pearl away, in fact it will not even put it aside for a moment, much preferring to constantly hold it and be reassured of its presence. It is often said that if a mortal gets hold of the pearl he can control the dragon. However this is most likely false and it is easy to see how a rumor like this could start considering how possessive the dragon is of its shiny pearl."
-#constlevel 12
+#constlevel 11
 #mainpath 2
 #mainlevel 5
 #type 8
@@ -154186,7 +154189,7 @@ Can only be cast once per combat round."
 #itemdrawsize -20
 #name "Dragon Pearl"
 #descr "This huge pearl is the most prized possession of a huge dragon. The dragon would never give its pearl away, in fact it will not even put it aside for a moment, much preferring to constantly hold it and be reassured of its presence. It is often said that if a mortal gets hold of the pearl he can control the dragon. However this is most likely false and it is easy to see how a rumor like this could start considering how possessive the dragon is of its shiny pearl."
-#constlevel 12
+#constlevel 11
 #mainpath 2
 #mainlevel 5
 #type 8
@@ -154202,7 +154205,7 @@ Can only be cast once per combat round."
 #itemdrawsize -20
 #name "Dragon Pearl"
 #descr "This huge pearl is the most prized possession of a huge dragon. The dragon would never give its pearl away, in fact it will not even put it aside for a moment, much preferring to constantly hold it and be reassured of its presence. It is often said that if a mortal gets hold of the pearl he can control the dragon. However this is most likely false and it is easy to see how a rumor like this could start considering how possessive the dragon is of its shiny pearl."
-#constlevel 12
+#constlevel 11
 #mainpath 2
 #mainlevel 5
 #type 8
@@ -154218,7 +154221,7 @@ Can only be cast once per combat round."
 #itemdrawsize -20
 #name "Dragon Pearl"
 #descr "This huge pearl is the most prized possession of a huge dragon. The dragon would never give its pearl away, in fact it will not even put it aside for a moment, much preferring to constantly hold it and be reassured of its presence. It is often said that if a mortal gets hold of the pearl he can control the dragon. However this is most likely false and it is easy to see how a rumor like this could start considering how possessive the dragon is of its shiny pearl."
-#constlevel 12
+#constlevel 11
 #mainpath 2
 #mainlevel 5
 #type 8
