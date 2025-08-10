@@ -148644,31 +148644,28 @@ Applies the effects of Holy Avenger to the caster"
 #restricted 88 -- MA Atlantis
 #end
 
---#selectspell 2994 RESERVED FOR REPLACEMENT SPELL
---#copyspell 806 -- Liquid Body
---#name "Mysteries of the Deep"
---#descr "The caster gifts those that have never visited the Coral Towers with some semblance of life in Atlantis. The bodies of a group of friendly troops unable to live below the waves will take on the aspect of the sea, becoming fluid. Those affected become very difficult to harm by physical means and wounds will rarely become permanent afflictions. As a by-effect they will lose some strength and movement speed."
---#details "Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
---#researchlevel 4
---#pathlevel 0 2
---#fatiguecost 40
---#aoe 1008 -- 10+
---#spec 4276224  -- Friendlies only, Ignores shields, Airbreathers only
---#restricted 88 -- MA Atlantis
---#end
+#selectspell 2994 -- Deep Warriors nextspell
+#copyspell 1109 -- Strength of Giants
+#name "Strength of the Deep"
+#descr "Strengthens those enhanced by liquid body"
+#aoe 1
+#school -1
+#end
 
---#selectspell 4149 RESERVED FOR REPLACEMENT SPELL
---#copyspell 806 -- Liquid Body
---#name "Army of the Deep"
---#descr "The caster gifts those that have never visited the Coral Towers with some semblance of life in Atlantis. The bodies of all friendly troops unable to live below the waves will take on the aspect of the sea, becoming fluid. Those affected become very difficult to harm by physical means and wounds will rarely become permanent afflictions. As a by-effect they will lose some strength and movement speed."
---#details "Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
---#researchlevel 6
---#pathlevel 0 4
---#fatiguecost 200
---#aoe 666
---#spec 4276224  -- Friendlies only, Ignores shields, Airbreathers only
---#restricted 88 -- MA Atlantis
---#end
+#selectspell 4149 -- Atlantis Better Liquid Body
+#copyspell 806 -- Liquid Body
+#name "Deep Warriors"
+#descr "The Coral Towers of Altantis are a place of great magical learning. Within its halls the Atlantians have mastered the ability to shape the body into a vessel for the sea without diminishing its force. This spell draws upon great mastery of water magic to reform the bodies of friendly troops into an aspect of the unyielding depths of the ocean. Those affected become very difficult to harm by physical means and wounds will rarely become permanent afflictions. As a by-effect they will lose some movement speed."
+#details "Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -25% combat speed."
+#researchlevel 6
+#pathlevel 0 4
+#range 15
+#fatiguecost 100
+#aoe 4000 -- 16++++
+#spec 12599300  -- Friendlies only, Ignores shields, UW OK, No effect on Spiritform
+#restricted 88 -- MA Atlantis
+#nextspell 2994
+#end
 
 #selectspell 4150
 #copyspell 806 -- Liquid Body
@@ -153938,7 +153935,7 @@ Can only be cast once per combat round."
 #itemdrawsize -20
 #name "Dragon Pearl"
 #descr "This huge pearl is the most prized possession of a huge dragon. The dragon would never give its pearl away, in fact it will not even put it aside for a moment, much preferring to constantly hold it and be reassured of its presence. It is often said that if a mortal gets hold of the pearl he can control the dragon. However this is most likely false and it is easy to see how a rumor like this could start considering how possessive the dragon is of its shiny pearl."
-#constlevel 12
+#constlevel 11
 #mainpath 2
 #mainlevel 5
 #type 8
@@ -153954,7 +153951,7 @@ Can only be cast once per combat round."
 #itemdrawsize -20
 #name "Dragon Pearl"
 #descr "This huge pearl is the most prized possession of a huge dragon. The dragon would never give its pearl away, in fact it will not even put it aside for a moment, much preferring to constantly hold it and be reassured of its presence. It is often said that if a mortal gets hold of the pearl he can control the dragon. However this is most likely false and it is easy to see how a rumor like this could start considering how possessive the dragon is of its shiny pearl."
-#constlevel 12
+#constlevel 11
 #mainpath 2
 #mainlevel 5
 #type 8
@@ -153970,7 +153967,7 @@ Can only be cast once per combat round."
 #itemdrawsize -20
 #name "Dragon Pearl"
 #descr "This huge pearl is the most prized possession of a huge dragon. The dragon would never give its pearl away, in fact it will not even put it aside for a moment, much preferring to constantly hold it and be reassured of its presence. It is often said that if a mortal gets hold of the pearl he can control the dragon. However this is most likely false and it is easy to see how a rumor like this could start considering how possessive the dragon is of its shiny pearl."
-#constlevel 12
+#constlevel 11
 #mainpath 2
 #mainlevel 5
 #type 8
@@ -153986,7 +153983,7 @@ Can only be cast once per combat round."
 #itemdrawsize -20
 #name "Dragon Pearl"
 #descr "This huge pearl is the most prized possession of a huge dragon. The dragon would never give its pearl away, in fact it will not even put it aside for a moment, much preferring to constantly hold it and be reassured of its presence. It is often said that if a mortal gets hold of the pearl he can control the dragon. However this is most likely false and it is easy to see how a rumor like this could start considering how possessive the dragon is of its shiny pearl."
-#constlevel 12
+#constlevel 11
 #mainpath 2
 #mainlevel 5
 #type 8
