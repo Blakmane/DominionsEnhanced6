@@ -1,7 +1,7 @@
 #modname "Dominions Enhanced 2 (GitHub)"
 #description "Adds or revises many spells, sites, Pretenders, mercenaries, items and nations. Includes work by Red_Rob, Boing, Kate_Micucci, Amuys, Zonk, Nounours, Pyg, Llamabeast, Turin, Quantum_Mechani, Heartless, Sombre, Globu, Ohlmann, Sy and others."
 #icon "domenhanced/banner.png"
-#version 2.1
+#version 2.x
 
 
 
@@ -22,7 +22,7 @@
 -- Swimming cost from 2 -> 1
 -- Slowing Weapons cost from 5 -> 6, no longer Incarnate
 -- Vitriol Weapons cost from 8 -> 7
--- Water Breathing cost from 6 -> 3, no longer Incarnate
+-- Water Breathing cost from 6 -> 2, no longer Incarnate
 -- Frost Mist Weapons cost from 7 -> 5, no longer Incarnate
 -- Unbreakable cost from 4 -> 3
 -- Resilience of the Earth cost from 6 -> 5
@@ -132,7 +132,7 @@
 #end
 
 #selectbless "Water Breathing" -- 6 -> 2
-#cost0 3 -- 6 -> 2
+#cost0 2 -- 6 -> 2
 #end
 
 #selectbless "Frost Mist Weapons" -- 7 -> 5
@@ -4985,6 +4985,14 @@
 #enc 3
 #end
 
+#newarmor 570 -- Half plate
+#copyarmor 9
+#name "Half Plate"
+#prot 15
+#enc 3
+#end
+
+
 -- END OF NEW ARMORS
 
 #selectarmor 64  -- Aegis
@@ -6347,6 +6355,7 @@
 #weapon 671  -- Stone Dagger
 #weapon 23  -- Short Bow
 #armor 5  -- Leather Cuirass
+#maxage 50
 #end
 
 #newmonster 6566
@@ -6381,6 +6390,7 @@
 #armor 10  -- Leather Hauberk
 #armor 120  -- Leather Cap
 #armor 105  -- Hide Shield
+#maxage 50
 #end
 
 #newmonster 6567
@@ -6416,6 +6426,7 @@
 #weapon 671  -- Stone Dagger
 #armor 10  -- Leather Hauberk
 #armor 120  -- Leather Cap
+#maxage 50
 #end
 
 #newmonster 6568
@@ -6765,6 +6776,7 @@
 #weapon 671  -- Stone Dagger
 #weapon 23  -- Short Bow
 #armor 5  -- Leather Cuirass
+#maxage 50
 #end
 
 #newmonster 6577
@@ -6797,6 +6809,7 @@
 #weapon 1569 -- War Club
 #armor 10  -- Leather Hauberk
 #armor 105  -- Hide Shield
+#maxage 50
 #end
 
 #newmonster 6578
@@ -6827,6 +6840,7 @@
 #armor 12  -- Scale Mail Hauberk
 #armor 20  -- Iron Cap
 #armor 112  -- Hide Shield
+#maxage 50
 #end
 
 #newmonster 6579
@@ -6858,6 +6872,7 @@
 #armor 10  -- Leather Hauberk
 #armor 120  -- Leather Cap
 #armor 105  -- Hide Shield
+#maxage 50
 #end
 
 #newmonster 6580
@@ -6892,6 +6907,7 @@
 #weapon 1875 -- Wolf Bite
 #armor 10  -- Leather Hauberk
 #armor 120  -- Leather Cap
+#maxage 50
 #end
 
 #newmonster 6581
@@ -6922,6 +6938,7 @@
 #weapon 165  -- Great Club
 #armor 15  -- Full Leather Armor
 #armor 119  -- Reinforced Leather Cap
+#maxage 50
 #end
 
 #newmonster 6582
@@ -8193,7 +8210,7 @@
 #enc 3
 #mapmove 20
 #ap 20
-#quadruped
+#lizard -- Quadruped bugged
 #eyes 2
 #amphibian
 #undisciplined
@@ -8480,7 +8497,7 @@
 #ap 22
 #mapmove 22
 #enc 2
-#quadruped
+#lizard -- Quadruped bugged
 #female
 #holy
 #stealthy 25
@@ -8546,7 +8563,7 @@
 #mapmove 24
 #enc 2
 #maxage 2000
-#quadruped
+#lizard -- Quadruped bugged
 #batstartsum9d6 "Deer"
 #domsummon "Deer"
 #holy
@@ -8582,7 +8599,7 @@
 #mapmove 22
 #enc 2
 #maxage 2000
-#quadruped
+#lizard -- Quadruped bugged
 #onebattlespell 1014 -- Because what's a giant wolf without auto-Howl?
 #holy
 #animal
@@ -8618,7 +8635,7 @@
 #mapmove 18
 #enc 2
 #maxage 2000
-#quadruped
+#lizard -- Quadruped bugged
 #holy
 #swimming
 #animalawe 3
@@ -8727,7 +8744,7 @@
 #enc 3
 #startage 14
 #maxage 50
-#quadruped
+#lizard -- Quadruped bugged
 #darkvision 100
 #demon
 #animal
@@ -11237,7 +11254,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #name "Winged Lion"
 #descr "Winged lions are legendary beasts occasionally summoned by Venedian Astrologers as messengers and guardians. Though not truly celestial beings despite being associated with the sun and having some fire resistance they are sacred as one of the symbols of the nation and will inspire soldiers in battle.  They are also stronger and smarter than regular lions and will allow themselves to be led by nonmagical commanders."
 #size 6
-#quadruped
+#lizard -- Quadruped bugged
 #hp 28
 #str 18
 #prot 8
@@ -13302,7 +13319,6 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr2 "chaco/bison2.tga"
 #name "Bison"
 #descr "Bison are strong and fierce and can be quite aggressive when they perceive a threat. They roam the plains in great herds and a stampede can crush a man to death."
-#quadruped
 #transformation 0
 #end
 
@@ -13327,7 +13343,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr2 "chaco/brownbear2.tga"
 #name "Primordial Bear"
 #descr "A Primordial Bear is an animal spirit from an age long ago, when monsters and giants roamed the land. Massive in size and tremendously strong the beast can withstand severe injury and will be almost impossible to stop. In combat the bear will become enraged and will tear and devour lesser beings. The sight of the beast will cause fear amongst enemy soldiers. Primordial spirits are revered among the tribes and are considered sacred."
-#quadruped
+#lizard -- Quadruped bugged
 #gcost 0
 #homerealm 0
 #hp 138
@@ -13803,7 +13819,6 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #copyspr 284  -- Wolf
 #name "Coyote Shaman"
 #descr "A Coyote Shaman is a shaman that has communed with the Coyote spirit and gained the power to take on the form of a Coyote. In this form he travels far and wide, unseen and unheard as he speaks with the spirits. Coyote Shamen are revered for their mystical knowledge and are considered sacred. In battle they will let out a great howl and call coyotes from miles around to their aid."
-#quadruped
 #rpcost 2
 #gcost 0
 #hp 10
@@ -13866,7 +13881,6 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr2 "magicenhanced/eeantq2.tga"
 #name "Ant Queen"
 #descr "A huge and highly poisonous ant queen. Before emerging from the underworld the Chacoans lived for a time with the Ant people under the earth. These are a hardy and industrious folk who shared with the Chacoans their food stores and dwellings. Ant people wield weapons and armor formed from discarded chitin, and they have painful stingers that they are not afraid to use. These magical beings communicate using a complicated system of scents and slight movements of their antennae. The Queen is the center of the hive and births the many workers and soldiers that serve it."
-#quadruped
 #hp 65
 #size 8
 #prot 20
@@ -15461,7 +15475,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "shambhala/mammoth.tga"
 #spr2 "shambhala/mammoth2.tga"
 #descr "A mammoth is a stronger, woolly breed of elephant living in the icy valleys of the Bhöd Kingdom. Due to their great bulk and thick, woolly fur, mammoths are resistant to cold. The sheer size of mammoths is enough to let them trample soldiers and horses. When hurt, they become enraged and terrified and will leave the battlefield by the shortest route "
-#quadruped
+#lizard -- Quadruped bugged
 #rpcost 0
 #gcost 0
 #rcost 1
@@ -16965,7 +16979,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "shambhala/gl_yak_1.tga"
 #spr2 "shambhala/gl_yak_2.tga"
 #descr "Though they are typically peaceful, the war-trained yaks of the Bhödpa are highly aggressive in combat, and when their riders are killed they may continue fighting. Strong, sturdy animals, the yaks continue to be very dangerous until driven away. Yaks have thick fur and are highly resistant to cold."
-#quadruped
+#lizard
 #gcost 10025
 #ap 20
 #mapmove 3
@@ -17347,7 +17361,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "shambhala/snow_lion_1.tga"
 #spr2 "shambhala/snow_lion_2.tga"
 #descr "Snow Lions, or Gangs Senge, are magnificent and ferocious celestial creatures who look like white lions with turquoise manes. These fearsome beings are symbols of bravery in Shambhala, and their roar is so powerful that it is said to kill dragons. The feet of Snow Lions never touch the ground, and they spend their existence leaping from mountain peak to mountain peak."
-#quadruped
+#lizard -- Quadruped bugged
 #ap 20
 #mapmove 3
 #hp 30
@@ -17901,7 +17915,6 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #clearmagic
 #name "Lion Shaman"
 #descr "Lion Shamans wear the hide of great beasts and use these to take animal form. Through meditation and ingesting highly magical plants they can transform their body into that of a beast. Lion Shamans can assume the form of a great lion, or a fearsome creature with the qualities of man and beast. The Shamans of Gondwana perform rhythmic songs and dances that allow them to enter a powerful trance state for ritual casting."
-#quadruped
 #gcost 210
 #rpcost 4
 #transformation 0
@@ -18159,7 +18172,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/glypto.tga"
 #spr2 "gondwana/glypto2.tga"
 #descr "Rockshells are large creatures covered in a bony shell said to be as hard as stone. They roam the plains of Gondwana relying on their thick armor plates and wicked tail spikes to protect them from predators. The people of Gondwana occasionally make use of them as beasts of burden, or in times of war they are ensorcelled by the Shamans to act as living battering rams. A Rockshell will count as twenty normal men when attempting to break the walls of a fortress."
-#quadruped
+#lizard -- Quadruped bugged
 #gcost 0
 #size 5
 #hp 35
@@ -18190,7 +18203,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/stooth.tga"
 #spr2 "gondwana/stooth2.tga"
 #descr "Sabre-Tooths appear similar to lions and tigers that inhabit other lands, with the exception of their huge slashing teeth. These allow Sabre-Tooths to prey upon the gigantic creatures that call Gondwana home. Prowling the savannah, these creatures hunt in packs and bring down their prey with deadly efficiency. In times of war they are summoned and compelled to serve the shamans of Gondwana."
-#quadruped
+#lizard -- Quadruped bugged
 #gcost 0
 #size 5
 #hp 24
@@ -18222,7 +18235,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/quaggaraffe.tga"
 #spr2 "gondwana/quaggaraffe2.tga"
 #descr "Quaggaraffes feed from the tops of tall trees, using their long legs and neck to reach the highest branches. When threatened they lash out with a kick that can split a mans skull, and a headbutt backed by their powerful neck. These huge creatures are strong in N'um, the sacred force that manifests only in the largest and most holy of beings."
-#quadruped
+#mountedhumanoid -- Quadruped bugged
 #gcost 0
 #size 8
 #hp 44
@@ -18290,7 +18303,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/armorbeast.tga"
 #spr2 "gondwana/armorbeast2.tga"
 #descr "Earthshakers are huge creatures related to the Thunder Beasts, however they are covered in a thick leathery hide that protects them from harm. These creatures have little to fear from any predator and are the most fearsome creatures on the plains of Gondwana. These huge creatures are strong in N'um, the sacred force that manifests only in the largest and most holy of beings. The sight of an Earthshaker will fill enemies with fear. Their sheer size allows them to trample through enemy lines with ease, however if panicked they may end up trampling friends and enemies alike."
-#quadruped
+#lizard -- Quadruped bugged
 #gcost 0
 #hp 115
 #size 10
@@ -18363,7 +18376,6 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #name "Descendant of a Dead God"
 #descr "Orobiru is the last surviving Black Sorcerer of Machaka. Born in the God Mountain he carries the bloodline of a dead God and divine power runs through his veins. Long ago Irami zealots arrived at Machaka and heard the tales of God Mountain. They declared this blasphemous against their God and began a crusade of cleansing. Soon the ancient empire was no more, God Mountain was desecrated and the lightless chamber lit with the flames of the Imams. Orobiru escaped the destruction and with other refugees found his way to the hidden land of Gondwana. Here Orobiru has risen to a position of power through aiding the Obas with his considerable skills. Now he has pledged his service to a new God as he returns once more to the outside world."
 #fixedname "Orobiru"
-#quadruped
 #gcost 0
 #transformation 0
 #size 9
@@ -19458,7 +19470,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "sawaikii/shark1.tga"
 #spr2 "sawaikii/shark2.tga"
 #descr "The Children of Naunaue are the semi-human descendants of the King Shark. They are able to turn into great sharks when they enter water, and are elusive on land. They live away from the rest of society in a small village near Soul's Leap, the cliff from which the spirits of the honored dead enter the underworld. They are not considered sacred due to the fact they are not wholly human and thus are ostracised as monsters."
-#quadruped
+#snake
 #ap 26
 #mapmove 3
 #hp 55
@@ -23127,7 +23139,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #mapmove 3
 #eyes 2
 #ap 22
-#quadruped  -- bodytype for hit locations
+#lizard -- Quadruped bugged  -- bodytype for hit locations
 #startage 20
 #maxage 45
 #undisciplined
@@ -23806,7 +23818,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copyspr 2137
 #name "Urmahlullu"
 #descr "The Urmahlullu is a guardian spirit of great power and influence. It has the appearance of a great winged lion with the head of an elderly man. The Urmahlullu is physically powerful and attuned to the protective powers of the stars and the skies. As a divine manifestation of the protective power of the Gods it has Priestly powers and will spread the true faith."
-#quadruped
 #researchbonus 0
 #homerealm 0
 #gcost 0
@@ -24020,7 +24031,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #spr2 "magicenhanced/eethyena2.tga"
 #name "Hyena Spirit"
 #descr "Hyena is one of the most powerful of the totemic spirits. Hyena taught metalcrafting to men and all smiths follow Hyena. Hyena is also the end of all life and can consume the dead to gain power. His spirit servants take the form of a great ethereal hyena that can mesmerize men with glowing eyes and mocking voice. They skulk in the darkness and bring death to the unwary. The presence of a Hyena spirit will cause unrest amongst the populace. The servants of Hyena are feared and respected, but are not venerated as the other totem spirits."
-#quadruped
 #homerealm 0
 #magicskill 3 2
 #magicskill 5 2
@@ -24128,7 +24138,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #clearmagic
 #fixedname "Tauros"
 #descr "Tauros the Great Black Bull is a divine bull that has ravaged the world since time immemorial. He is a creature of unbridled fury and a manifestation of the blind rage of Nature, the inhuman wildness, the glory of the slayer and the slain. Unlike his brother the Great White Bull the fertility aspect of the Black Bull is secondary to that of his maddened rage. He is accompanied by the hosts of the wild driven into a frenzy by his presence."
-#quadruped
 #homerealm 0
 #gcost 0
 #mor 18
@@ -24147,7 +24156,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #clearmagic
 #fixedname "Apis"
 #descr "Apis the Great White Bull is a divine bull that has wandered the world since time immemorial. The bull has long been worshipped as a manifestation of the wildness and fertility of Nature and his fury and potency are unrivaled. His ferocity drives him to trample the thrones of the world beneath his cloven hooves. He is accompanied by a multitude of beasts attracted by his aura of fertility."
-#quadruped
 #homerealm 0
 #gcost 0
 #mor 18
@@ -24164,7 +24172,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copystats 1229  -- Son of Fenrer
 #copyspr 1229  -- Son of Fenrer
 #descr "The Sons of Fenrer are the offspring of one of the Great Adversaries. They are huge and very powerful wolves. They are also most cunning and skilled in the paths of Water and Nature. They have inherited the foul temper of their father and are prone to go berserk if anyone opposes them. The Son of Fenrer is terrifying and most mortals will run in fear when they see him. Their howls draw lesser wolves to their aid and they are always accompanied by a pack of fell beasts."
-#quadruped
 #homerealm 0
 #magicskill 2 2
 #magicskill 6 3
@@ -24535,7 +24542,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #clearmagic
 #name "Spirit of the Boar"
 #descr "This great spectral swine is the embodiment of the primal spirit of the boar. It appears as a huge ethereal creature filled with rage. The mere presence of a Boar Spirit will inflame the wild ferocity of the animals and drive them into a frenzy. The Boar Spirit is sacred to the people of Marverni and its appearance is seen as a great omen of good fortune."
-#quadruped
 #prot 0
 #ethereal
 #holy
@@ -24631,7 +24637,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Solar Ram"
 #descr "Aries is a winged ram with a fleece of burnished gold. He is a symbol of the sun and is said to have been sired by an ancient Sun God in ram form. Each month the golden fleece can be shorn to produce gold. Aries radiates the heat and glory of the sun and enemies will hesitate to strike him. He can distill fire gems from the sun's rays, and his presence protects soldiers from scorching flame. The sun continually shines wherever he is located and heat will increase across the province. He is skilled in the magic of the sun."
 #fixedname "Aries"
-#quadruped
 #homerealm 0
 #size 7
 #hp 102
@@ -24674,7 +24679,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Enchanted Boar"
 #descr "Twrch Trwyth is a giant enchanted boar that roams the deepest forests and has been the subject of many hunts. It has poisonous bristles and is said to be an ancient king cursed with the form of a boar for deeds of great wickedness. Its bristles can be collected as magical earth gems, and in battle it imparts a swelling anger upon its allies. It is skilled in the magics of earth and nature. Each month boars will flock to aid Twrch Trwyth and in battle it will be joined by a host of the creatures."
 #fixedname "Twrch Trwyth"
-#quadruped
 #homerealm 0
 #gcost 0
 #hp 65
@@ -24713,7 +24717,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Bull of Heaven"
 #descr "Apis is a divine bull conceived in a ray of light from the Heavens. His breath can cure disease and his presence brings new life and prosperity. In battle he will distill astral pearls from the light of the heavens, and protect soldiers from an untimely fate. He is skilled in the magics of the heavens and nature, and his movements can be interpreted to predict future events."
 #fixedname "Apis"
-#quadruped
 #homerealm 0
 #gcost 0
 #hp 82
@@ -24784,7 +24787,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #springpower 25
 #amphibian
 #spiritsight
-#quadruped
 #homerealm 0
 #gcost 0
 #shapechange -1
@@ -24944,7 +24946,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Lord of the Seasons"
 #descr "Ruamoko is the physical manifestation of the changing seasons. He appears as a great ethereal spirit animal and his form changes with the seasons. Each year he takes the form of the Lion of Summer, the Hawk of Spring, the Bear of Autumn and the Wolf of Winter in accordance with the season. His magical skills change with the seasons, however he always maintains a connection to the spirits of the land. Ruamoko can summon seasonal spirits each month to his aid. He is at his most powerful at the height of the season."
 #fixedname "Ruamoko"
-#quadruped
 #homerealm 0
 #gcost 0
 #str 26
@@ -24994,7 +24995,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Lord of the Seasons"
 #descr "Ruamoko is the physical manifestation of the changing seasons. He appears as a great ethereal spirit animal and his form changes with the seasons. Each year he takes the form of the Lion of Summer, the Hawk of Spring, the Bear of Autumn and the Wolf of Winter in accordance with the season. His magical skills change with the seasons, however he always maintains a connection to the spirits of the land. Ruamoko can summon seasonal spirits each month to his aid. He is at his most powerful at the height of the season."
 #fixedname "Ruamoko"
-#quadruped
+#lizard -- Quadruped bugged
 #homerealm 0
 #gcost 0
 #str 25
@@ -25045,7 +25046,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Lord of the Seasons"
 #descr "Ruamoko is the physical manifestation of the changing seasons. He appears as a great ethereal spirit animal and his form changes with the seasons. Each year he takes the form of the Lion of Summer, the Hawk of Spring, the Bear of Autumn and the Wolf of Winter in accordance with the season. His magical skills change with the seasons, however he always maintains a connection to the spirits of the land. Ruamoko can summon seasonal spirits each month to his aid. He is at his most powerful at the height of the season."
 #fixedname "Ruamoko"
-#quadruped
 #homerealm 0
 #gcost 0
 #str 25
@@ -25156,7 +25156,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Seven Headed Lion-Snake"
 #descr "Musmahhu, the Seven Headed Lion Snake is a Divine manifestation of fiery chaos. After losing the primal battle to assert Chaos over Order he retreated to the mountains to rage and fester. Musmahhu is surrounded by an aura of Melammu, Divine protective radiance, and those that face him will be struck by fear, awe and burning fire. He is almost invulnerable to mortal weapons, and can recover from any wound. Wherever Masmahhu dwells will be a land of chaos and turmoil."
 #fixedname "Musmahhu"
-#quadruped
 #homerealm 0
 #gcost 0
 #mor 18
@@ -25237,7 +25236,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #clearmagic
 #name "Guardian of Hades"
 #descr "Kerberos is a gigantic three headed creature, part hound and part snake, born at the dawn of time. This horrible hound was bound for eternity at the Gates of the Underworld to prevent dead titans from returning to the land of the living. Now, with the Pantokrator gone, the shackles are weakening and the Guardian of Hades can return to the world of the living. He has a mane of writhing serpents and a serpentine tail, and his hearing is so keen he can even hear the spirits of men as they try to sneak out of the Underworld. He is one of the three Underworld Guardians along with Kur and Hamartabal. Should all three be summoned from their post it is said the gates to the Underworld will be unguarded and the dead shall walk the earth."
-#quadruped
 #fixedname "Kerberos"
 #homerealm 0
 #gcost 0
@@ -25388,7 +25386,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copyspr 514  -- Kithaironic Lion
 #name "Sacred Lion"
 #descr "These great lions roam the savannah around Great Mababwe. Their extraordinarily thick hides are highly prized by the Lion warriors and the lions are sacred to the Colossi."
-#quadruped
 #holy
 #clearweapons
 #prot 8
@@ -25403,7 +25400,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #spr2 "magicenhanced/eetlion2.tga"
 #name "Lion Spirit"
 #descr "Lion is the strongest and most influential of the totemic spirits. As king among animals his voice can call upon animals and beasts to serve him. Those hearing his great roar feel fear in their hearts. Lion spirits are great warriors and are venerated by the people of Machaka. Their royal nature lends them a noble aura that awes both men and beasts."
-#quadruped
 #magicskill 0 2
 #magicskill 6 2
 #hp 55
@@ -25448,7 +25444,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copyspr 884  -- Great Spider
 #name "Spider Spirit"
 #descr "Spider is a master of webs and poisons, and his servants are masters of lies and intrigue. Taking the form of great ethereal spiders that stalk the darkness they spy on the enemies of the Spider clan in secret. Spider is venerated less than Lion but is still sacred to most Machakans."
-#quadruped
 #hp 45
 #size 7
 #prot 0
@@ -25496,7 +25491,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #spr2 "magicenhanced/eetrhino2.tga"
 #name "Rhino Spirit"
 #descr "Before he was defeated by Lion using the metal spears of Hyena, Rhino was once the most feared warrior of all the totem spirits. Even now his servants use their thick hides and powerful horns to bring devastation to their enemies. Rhino spirits still burn with anger at being usurped and their rage is terrible to behold. Machakans no longer revere Rhino as they once did and his servants are no longer considered sacred."
-#quadruped
 #magicskill 3 2
 #magicskill 6 2
 #hp 65
@@ -25536,7 +25530,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copystats 888  -- Hunter Spider
 #spr1 "extrapretenders/godspider.tga"
 #spr2 "extrapretenders/godspider2.tga"
-#quadruped
 #okmagicleader
 #unsurr 2
 #batstartsum2d6 884  -- Great Spider
@@ -26031,7 +26024,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #spr2 "magicenhanced/eeminihunter2.tga"
 #name "Lesser Hunter Spider"
 #descr "Though smaller than their gigantic kin, the Lesser Hunter Spider still sports highly poisonous fangs."
-#quadruped
 #size 4
 #hp 22
 #prot 10
@@ -27204,7 +27196,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #spr1 "magicenhanced/eeuni.tga"
 #spr2 "magicenhanced/eeuni2.tga"
 #descr "Unicorns are magical horse like creatures found in the forests of Avalon. They are wise and powerful, however they will only appear to those pure of heart. The horn of a Unicorn is known as an Alicorn and can cure wounds and illnesses. Unicorns are rare and mystical creatures that will fiercely defend their forests if threatened."
-#quadruped
 #gcost 0
 #stealthy 0
 #autohealer 1
@@ -27437,7 +27428,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copyspr 512  -- Fall Bear
 #name "Fylgja"
 #descr "The Fylgja is the animal spirit of a Shaman of Ulm. The spirit takes the form of a great ethereal bear that can regenerate wounds. After the battle or if the spirit is dissipated the Fylgja will return to the Shaman."
-#quadruped
 #weapon 20  -- Bite
 #fallpower 0
 #mor 30
@@ -27596,7 +27586,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #spr1 "magicenhanced/eemokele.tga"
 #spr2 "magicenhanced/eemokele2.tga"
 #descr "The Mokele-mbembe, or 'the ones who stop the flow of rivers', are great beasts that live in the swamps of Machaka. Thought to be a relative of the dreaded Tarrasque, although not as large, their flesh is poisonous and any hunter that eats the meat will die shortly after. They are difficult to control and can regenerate from even serious wounds."
-#quadruped
 #size 7
 #hp 88
 #prot 16
@@ -28063,7 +28052,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copystats 2133  -- Lioness
 #copyspr 2133  -- Lioness
 #descr "A female lion. These creatures are the symbol of the Annunaki and are sacred to the people of Ur."
-#quadruped
 #holy
 #darkvision 100
 #transformation 0
@@ -28207,7 +28195,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #spr2 "magicenhanced/eepolar2.tga"
 #name "Polar Bear"
 #descr "Polar bears are larger than regular bears and are adapted to a cold climate. They live on the frozen tundra around the Coast of Ice and Bones."
-#quadruped
 #hp 50
 #prot 10
 #str 22
@@ -28254,7 +28241,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #clearweapons
 #name "Amarok"
 #descr "An Amarok is a gigantic gray wolf that roams the Coast of Ice and Bones, said to stalk and devour any person foolish enough to hunt alone at night. Amaroks are able to devour the soul of mortals. Unlike most wolves they prefer to hunt alone."
-#quadruped
 #weapon 1644 -- Amarok Bite
 #weapon 236  -- Claw
 #berserk 0
@@ -28271,7 +28257,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Nanook"
 #descr "On the Coast of Ice and Bones roam great bear spirits known as the Nanook. Nanooks appear clothed in the guise of giant polar bears, however they can also take the form of an old man cloaked in a bearskin for easier spellcasting. When a hunter kills a bear they must make offerings to the Nanooks to ensure the bear spirits are satisfied. They are fiery tempered and often hold final sway over the lives of mortals in the North. Nanooks are spirits of the frozen waste and prefer cold climates. They are constantly surrounded by an icy wind that numbs and freezes those nearby. Nanook are powerful swimmers and can even cross the icy seas around the frozen coast.
 While in the form of an old man, all paths are increased and allows the use of Nature magic."
-#quadruped
 #coldres 25
 #winterpower 20
 #coldpower 1
@@ -28428,7 +28413,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr2 "magicenhanced/eephancusidhe2.tga"
 #name "Illusory Cu Sidhe"
 #descr "The phantasmal Cu Sidhe is an illusion of a Cu Sidhe. The phantasm is cloaked in glamour and difficult to hit, but once hit, it will be destroyed. The weapons of a phantasm are unreal and will only harm those who believe them to be real."
-#quadruped
 #glamour
 #end
 
@@ -28456,7 +28440,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr2 "magicenhanced/eetind2.tga"
 #name "Hound of Tindalos"
 #descr "The Hounds of Tindalos are otherworldly predators from beyond the bounds of known reality, usually appearing only when summoned by reckless spellcasters. They are said to have been created by some nameless deed at the beginning of time and although possessed of great cunning they show no evidence of understanding or communicating with mortals. The Hounds appear as horrible ethereal creatures that manifest to snatch their prey back to the void with them, to be devoured at the Hound's leisure."
-#quadruped
 #hp 18
 #prot 5
 #mor 30
@@ -28654,7 +28637,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr1 "magicenhanced/eeshishif.tga"
 #spr2 "magicenhanced/eeshishif2.tga"
 #descr "The Shishi is a spirit of the air, taking the form of a stone lion. While they may look ponderous to the uninitiated, once a Shishi is roused its every motion channels the nature of its element. It may run like the wind, crossing nations in days, leaping mountains and passing through forests like a gale. In battle the Shishi is like a whirlwind, moving and striking faster than the eye can see. The Pantokrator used the shishis as guardians of his palaces, deadly to encroaching demons, with one male and one female Shishi guarding each entrance. The female Shishi's responsibility was to the occupants of the structure it guarded, and as such it is specialised at dealing with the most dangerous of intruders. The bite of the female Shishi is particularly deadly to undead and demons."
-#quadruped
 #gcost 0
 #hp 55
 #size 7
@@ -28695,7 +28677,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr1 "magicenhanced/eeshishim.tga"
 #spr2 "magicenhanced/eeshishim2.tga"
 #descr "The Shishi is a spirit of the air, taking the form of a stone lion. While they may look ponderous to the uninitiated, once a Shishi is roused its every motion channels the nature of its element. It may run like the wind, crossing nations in days, leaping mountains and passing through forests like a gale. In battle the Shishi is like a whirlwind, moving and striking faster than the eye can see. The Pantokrator used the Shishis as guardians of his palaces, deadly to encroaching demons, with one male and one female Shishi guarding each entrance. The male Shishi's responsibility was the structure it guarded, as such a fortress guarded by a male Shishi will be much harder to tear down, while any who seek to enter undetected will be quickly hunted down."
-#quadruped
 #castledef 20
 #patrolbonus 20
 #weapon 1594 -- Male shishi bite
@@ -29583,41 +29564,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #batstartsum1 7409 -- Fylgja
 #end
 
-#newmonster 7500
-#copystats 1327  -- Yavana
-#clearweapons
-#clearmagic
-#spr1 "magicenhanced/eeur1sage.tga"
-#spr2 "magicenhanced/eeur1sage2.tga"
-#name "First Apkallu"
-#fixedname "Uanna"
-#descr "When Ur was still just a small settlement ages ago, seven celestial spirits were tasked with guiding the fledging nation. They took mortal shapes to teach the Enkidu the basics of civilization. Uanna was the first of these Apkallu or Sages and he taught the Enkidu how to write and do mathematics and how to build temples. He also provided the knowledge of 'Me', the guiding principles of morality for the Enkidu, and his presence will calm dissent. He has taken the form of a two headed and winged Enkidu that emanates celestial power. One head knows all the secrets of the skies and one knows all the secrets of the earth. The Apkallu have priestly powers aswell as an extensive knowledge of magic and can cure diseases."
-#hp 40
-#size 6
-#mr 18
-#fireres 5
-#coldres 5
-#shockres 10
-#magicskill 1 4
-#magicskill 4 1
-#magicskill 3 4
-#magicskill 9 4
-#unique
-#awe 3
-#enc 1
-#mapmove 22
-#flying
-#spiritsight
-#autodishealer 1
-#researchbonus 10
-#incunrest -100
-#maxage 1000
-#itemslots 1007622 -- 2 heads, 2 hands, feet, body, 2 misc
-#weapon 92  -- Fist
-#montag 1030
-#polyimmune
-#end
-
 #newmonster 7501
 #copystats 1327  -- Yavana
 #clearweapons
@@ -29996,7 +29942,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #copyspr 2474  -- White Wolf
 #name "Akhlut"
 #descr "An Akhlut is a type of orca spirit that takes the form of a large white wolf when on land. Akhlut are vicious, dangerous beasts that venture onto the coast only in order to hunt humans and other animals. The tent owners of the Coast of Ice and Bones know that wolf tracks that lead to and from the ocean indicate that the creature is waiting for prey under the water nearby. Akhlut are stealthy and cunning hunters. As creatures of the air and the sea they have some innate magical ability. In water their skills with water magic are stronger and on land their air magic is increased."
-#quadruped
 #hp 28
 #mr 15
 #mor 16
@@ -30064,7 +30009,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #copyspr 925  -- Tarrasque
 #name "Awoken Tarrasque"
 #descr "The tarrasque is an ancient, poison-breathing dragon of tremendous size. It has been reawakened by some mad mage who hopes that it will aid him in battle. The tarrasque regenerates wounds, has an incredibly thick hide and is constantly surrounded by noxious vapors. Now the full power of the creature has been unleashed it will release clouds of poison that will pollute the entire battlefield and regenerate wounds at tremendous speed."
-#quadruped
 #onebattlespell 1211 -- Foul Vapours
 #regeneration 20  -- %
 #twiceborn 7223 -- Dracowight
@@ -30235,7 +30179,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr2 "magicenhanced/eewtiger2.tga"
 #name "White Tiger"
 #descr "Occasionally a tiger will be found with fur as pale as the White Ones. This is taken as a great omen and a sign that this is a White One reincarnated in animal form. These tigers are treated with great reverence and given special status as temple guardians. They are not as wild as other tigers and have a special affinity for the ape people."
-#quadruped
 #gcost 0
 #hp 23
 #size 4
@@ -30405,7 +30348,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr2 "magicenhanced/eeantq2.tga"
 #name "Queen Ant"
 #descr "A huge and highly poisonous ant queen. It is the center of the hive and births the many workers and soldiers that serve it. Killing the queen will disperse the hive."
-#quadruped
 #hp 52
 #size 8
 #prot 16
@@ -30554,7 +30496,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr2 "magicenhanced/eeantw2.tga"
 #name "Winged Ant"
 #descr "A huge and highly poisonous ant. It has wings and can fly short distances."
-#quadruped
 #flying
 #end
 
@@ -30847,7 +30788,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr1 "magicenhanced/eemechmonster.tga"
 #spr2 "magicenhanced/eemechmonster2.tga"
 #descr "Constructed in the form of a gigantic scorpion, the Mechanical Monster is a powerful war machine. In battle the Monster attacks its enemies with powerful metal claws and a stinger fitted to inject a deadly venom. The Mechanical Monster is very effective at tearing down castle walls. The mechanical monster is not affected by heat, cold, shock or poison. It is a mindless, magical being that will cease to function if left without magical leadership."
-#quadruped
+#lizard -- Quadruped bugged
 #size 7
 #hp 60
 #prot 20
@@ -31202,7 +31143,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copyspr 514  -- Kithaironic Lion
 #name "Spirit of the Hunter"
 #descr "This is the spirit of a Machakan Witch Doctor taken the form of a great beast. It has a thick hide and a terrible roar that strikes fear into the hearts of men."
-#quadruped
 #mr 14
 #ethereal
 #fear 5
@@ -31260,7 +31200,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Thunder Beast"
 #descr "Raiju, the Thunder Beast, is a spirit composed of lightning in the shape of a great wolf. It is constantly surrounded by crackling lightning and its cry sounds like thunder. It can fly about as a ball of lightning and usually accompanies the Thunder Spirit Raijin as his companion and guardian. While the beast is generally calm and harmless, during thunderstorms it becomes agitated and leaps about in trees, fields, and even buildings. Trees that have been struck by lightning are often said to have been scratched by Raiju's claws."
 #fixedname "Raiju"
-#quadruped
 #gcost 0
 #hp 36
 #size 4
@@ -31472,7 +31411,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #descr "Arachne is an ancient spider, some say the oldest and mother of all spiders. Once a mortal weaver cursed for her hubris against the gods, over the millenia she has gained in magical power and knowledge. She is now a crafty and cunning trickster skilled in the magics of death and glamour, who has fooled Gods and mortals alike. She can distill death gems from her poison, and will weave a protective web over her allies that protects them from piercing attacks but impedes their movements. Each month giant spiders will crawl from their hiding places to aid Anansi and in battle he will be joined by a host of the creatures."
 #fixedname "Arachne"
 #drawsize -15
-#quadruped
 #gcost 0
 #size 7
 #hp 65
@@ -32026,7 +31964,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copystats 511  -- Winter Wolf
 #copyspr 511  -- Winter Wolf
 #descr "The Winter Wolf is one of the four seasonal spirits. This large, ethereal wolf is most powerful during winter and weakest during summer. It is a magical being and has some innate skill in Water magic."
-#quadruped
 #mor 15
 #end
 
@@ -32034,7 +31971,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copystats 512  -- Fall Bear
 #copyspr 512  -- Fall Bear
 #descr "The Fall Bear is one of the four seasonal spirits. This large, ethereal bear is most powerful during fall and weakest during spring. It is a magical being and has some innate skill in Earth magic."
-#quadruped
 #mor 15
 #end
 
@@ -32050,7 +31986,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copystats 515  -- Summer Lion
 #copyspr 515  -- Summer Lion
 #descr "The Summer Lion is one of the four seasonal spirits. It is a large, ethereal lion that radiates heat like the summer sun. The Summer Lion is most powerful during summer and least powerful during the winter. It is a magical being and has some innate skill in Fire magic."
-#quadruped
 #mor 15
 #end
 
@@ -32058,14 +31993,12 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copystats 1983  -- Green Lion
 #copyspr 1983  -- Green Lion
 #descr "The Green Lion is a manifestation of the alchemical principle of vitriol. It is a large, ethereal lion whose breath will destroy all metals but gold. It is a magical being and has some innate skill in Fire and Water magic."
-#quadruped
 #mor 15
 #end
 
 #newmonster 7621
 #copystats 2225  -- Fire Ant
 #copyspr 2225  -- Fire Ant
-#quadruped
 #mor 15
 #end
 
@@ -32078,7 +32011,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #newmonster 7623
 #copystats 7546 -- Winged Ant
 #copyspr 7546 -- Winged Ant
-#quadruped
 #mor 15
 #end
 
@@ -32745,7 +32677,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eeodonto2.tga"
 #name "Odontotyrannos"
 #descr "The Odontotyrannos is a gigantic horned beast that lives in the rivers and estuaries around Oceania. It is an amphibious carnivore that can devour an elephant, with a horse-like head and three horns protruding from its forehead. Undeterred by the sight of fire, it often attacks those camped around the river mouth. The Odontotyrannos is renowned as a fearsome creature and its roar will strike fear into the hearts of even seasoned warriors. Their ferocity is legendary and they will often fight to the death once they taste blood."
-#quadruped
+#lizard -- Quadruped bugged
 #gcost 0
 #hp 70
 #size 9
@@ -33256,7 +33188,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "magicenhanced/eebasmu.tga"
 #spr2 "magicenhanced/eebasmu2.tga"
 #descr "Said to be among the first eleven creatures birthed by the Mother of Monsters, Basmu are ancient dragons who inhabit the lands near Ur. Much like the Mushussu, the Basmu is a guardian of the kingdom. These winged dragon-kin were born of the sea and bring fertility wherever they go. Their strange bodies are a hybrid of serpent, lion and bird. Although now protectors, in ancient times they were known to devour fish, bird, horse and man alike. They are covered in incredibly potent venoms that will poison any that try to strike them."
-#quadruped
+#lizard -- Quadruped bugged
 #gcost 0
 #hp 70
 #size 9
@@ -33357,7 +33289,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "magicenhanced/eecarrionbeast.tga"
 #spr2 "magicenhanced/eecarrionbeast2.tga"
 #descr "Unholy rites performed by the Carrion Lords have caused vines and roots to reanimate the bones of a dead animal, creating a carrion beast. Its vines strike like whips and their touch can make men fall asleep. "
-#quadruped
 --#att 5
 --#def 5
 --#slothpower 1
@@ -33592,7 +33523,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #cleararmor
 #name "Clockwork Spider"
 #descr "A clockwork spider is a spring-driven, automated weapon of war. The spring of the clockwork spider is wound up before battle and the spider is released close to the front of the battle and pointed at the enemy. The clockwork spider then quickly walks forward driven by its magical springs. If everything goes as expected, the clockwork spider will use its sharpened fangs and legs to tear into the enemy ranks whilst its frantic skittering will make it difficult for enemies to retaliate."
-#quadruped
+#lizard -- Quadruped bugged
 #size 4
 #hp 13
 #str 13
@@ -33648,7 +33579,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #cleararmor
 #name "Mechanical Fire Ant"
 #descr "A mechanical ant filled with magical fire, its inner structure is rather fragile, but its tough iron plating make it very difficult to destroy. It can shoot flames from an opening placed near the mouth. The ant is not affected by heat, cold, or poison, however if ruptured the flaming tanks may explode. These are mindless, magical beings that will cease to function if left without magical leadership."
-#quadruped
 #size 6
 #hp 16
 #str 14
@@ -34811,7 +34741,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #holy
 #name "Sacred Lion"
 #descr "This Lion is a sacred beast of the Great Mother. It is ferocious, however it will not attack the servants of the Fertility Cult."
-#quadruped
 #transformation 0
 #montag 1036
 #end
@@ -34822,7 +34751,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #holy
 #name "Sacred Boar"
 #descr "This Boar is a sacred beast of the Great Mother. It is bad tempered, however it will not attack the servants of the Fertility Cult."
-#quadruped
 #transformation 0
 #montag 1036
 #end
@@ -34833,7 +34761,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #holy
 #name "Sacred Wolf"
 #descr "This Wolf is a sacred beast of the Great Mother. It is ferocious, however it will not attack the servants of the Fertility Cult."
-#quadruped
 #transformation 0
 #montag 1036
 #end
@@ -34844,7 +34771,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #holy
 #name "Sacred Tiger"
 #descr "This Tiger is a sacred beast of the Great Mother. It is ferocious, however it will not attack the servants of the Fertility Cult."
-#quadruped
 #transformation 0
 #montag 1036
 #end
@@ -34899,7 +34825,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Sea Killer"
 #descr "These colossal shrimps are larger than a Shambler and heavily armored. Their carapace makes them difficult to harm with normal weapons, however their most feared attribute is their punch. These creatures forelimbs are modified into dense clubs, and can be thrown with incredible force that will stun or kill their prey."
 #weapon 1656 -- Shrimp Punch
-#quadruped
+#lizard -- Quadruped bugged
 #size 6
 #hp 64
 #prot 22
@@ -34916,7 +34842,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copyspr 514  -- Kithaironic Lion
 #name "Transformed Beast"
 #descr "This is a Galli transformed into the form of a ferocious beast. It retains the mind and magical skills of the Galli, however its magical skills are reduced in this form. The Galli can return to human form at will, however he must undergo the ritual to assume this form again."
-#quadruped
 #magicboost 6 -1
 #shapechange 7732 -- Galli
 #patrolbonus 15
@@ -35612,7 +35537,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eelengspidersmallpurp2.tga"
 #name "Leng Spider"
 #descr "Leng Spiders are gigantic magical spiders that came to the world of men from the realm of dreams. They grow to enormous size and the largest are the size of an elephant. They can spin webs and have a deadly venomous bite. Long ago, the Spiders controlled the area known as the Plateau of Leng. They were defeated in times past by a strange race of men who forced them to abandon their homeland and retreat to the land of dreams. Leng Spiders are innately magical creatures that weave dreams like webs and their poisons cause unnatural tiredness. The presence of a Leng Spider will cause nearby beings to slumber and dream of strange caverns below the earth. They worship an even greater being known as Atlach-Nacha that still resides in the dream realm."
-#quadruped
+#lizard -- Quadruped bugged
 #eyes 8
 #poisonres 15
 #spiritsight
@@ -35656,7 +35581,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eelengspider2.tga"
 #name "Spinner in Darkness"
 #descr "Atlach-Nacha, the Spinner in Darkness is a gigantic spider that resides in the realm of dreams. There it spins a great web, forming a bridge between the realm of dreams and the waking world. It is said that when the web is complete, the end of the world will come. The creature kills its victims by puncturing them with its great fangs and sucking out their juices. It is highly magical and is innately skilled in the magic of dreams and nightmares. Creatures in the presence of Atlach-Nacha will find themselves moving as if in a dream and may fall into a restless sleep. It is worshiped by the Leng Spiders and certain strange cults that bring sacrifices to it in the dream realm. Atlach-Nacha can weave fate aswell as webs and can predict future events."
-#quadruped
+#lizard -- Quadruped bugged
 #firstshape 0
 #fixedname "Atlach-Nacha"
 #eyes 8
@@ -35819,7 +35744,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #clearweapons
 #name "Displacer Beast"
 #descr "A Displacer Beast is a semi-intelligent magical animal. These voracious hunters are reminiscent of a sleek, black puma but with thorn-covered tentacles growing from the shoulders. These tentacles can drain strength from those they strike, leaving them permanently weakened. They are highly magical creatures with the ability to teleport short distances and obscure their true location. Displacer Beasts are often trained as guard animals due to their intelligence, using their enhanced senses to detect skulking threats."
-#quadruped
+#lizard -- Quadruped bugged
 #gcost 0
 #hp 21
 #prot 11
@@ -35939,7 +35864,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "magicenhanced/eebasmu.tga"
 #spr2 "magicenhanced/eebasmu2.tga"
 #descr "Said to be among the first eleven creatures birthed by the Mother of Monsters, Basmu are ancient dragons who inhabit the lands near Ur. Much like the Mushussu, the Basmu is a guardian of the kingdom. These winged dragon-kin were born of the sea and bring fertility wherever they go. Their strange bodies are a hybrid of serpent, lion and bird. Although now protectors, in ancient times they were known to devour fish, bird, horse and man alike. They are covered in incredibly potent venoms that will poison any that try to strike them."
-#quadruped
+#lizard -- Quadruped bugged
 #hp 70
 #size 9
 #prot 12
@@ -36178,6 +36103,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #holy
 #immortal
 #darkvision 50
+#clearmagic
 #magicskill 0 2
 #magicskill 2 1
 #magicskill 3 2
@@ -36193,7 +36119,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eecat2.tga"
 #name "Cat"
 #descr "Small animals are sometimes used by mages as familiars. This creature is under the command of a mage and will relay all it sees and hears to its master."
-#quadruped
 #hp 3
 #str 6
 #att 9
@@ -36212,7 +36137,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eerabbit2.tga"
 #name "Rabbit"
 #descr "Small animals are sometimes used by mages as familiars. This creature is under the command of a mage and will relay all it sees and hears to its master."
-#quadruped
 #hp 2
 #str 5
 #att 9
@@ -36230,7 +36154,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eerat2.tga"
 #name "Rat"
 #descr "Small animals are sometimes used by mages as familiars. This creature is under the command of a mage and will relay all it sees and hears to its master."
-#quadruped
 #hp 1
 #str 3
 #att 9
@@ -36375,7 +36298,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eeruamokobear2.tga"
 #name "Perkunu"
 #descr "The Perkunu is a Chud Thunder Priest Skinshifter trained at the sacred Pine of Skulls. For a decade the young apprentice will follow his master and only eat bear meat, wild berries and mead. When fully trained the would be Perkunu climbs a mountaintop and calls thunder to strike him down. If he survives he is blessed with the gift of shapeshifting and vast powers over storms and weather. The Perkunu are revered by all, but their skills as commanders and generals are lesser than the Chudes of the settled moiety. This Perkunu has taken the form of a gigantic bear to destroy the enemies of Rus."
-#quadruped
 #size 10
 #hp 110
 #str 25
@@ -36435,7 +36357,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copyspr 3240  -- Raven
 #name "Raven"
 #descr "Small animals are sometimes used by mages as familiars. This creature is under the command of a mage and will relay all it sees and hears to its master."
-#quadruped
 #stealthy 0
 #hp 2
 #str 2
@@ -36449,7 +36370,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copyspr 2222  -- Frog
 #name "Frog"
 #descr "Small animals are sometimes used by mages as familiars. This creature is under the command of a mage and will relay all it sees and hears to its master."
-#quadruped
 #hp 1
 #prot 1
 #str 1
@@ -36904,7 +36824,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #descr "The Pooka is an evil spirit of the Unseelie Court, able to manifest as a black horse, goat or rabbit. While in the form of a spectral horse, the Pooka will spread fear and unrest amongst the villagers. In battle, it will call other pooka spirits to terrify enemies and crush them beneath its hooves."
 #spr1 "magicenhanced/pookah_01.tga"
 #spr2 "magicenhanced/pookah_02.tga"
-#quadruped
+#lizard -- Quadruped bugged
 #gcost 0
 #startage 100
 #maxage 500
@@ -36935,7 +36855,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #descr "The Pooka is an evil spirit of the Unseelie Court, able to manifest as a black horse, goat or rabbit. While in the form of a black goat, the Pooka will wantonly spoil and steal villagers' crops and valuables. In battle, it will call other Pooka spirits to drink their enemies' blood."
 #spr1 "magicenhanced/pookag_01.tga"
 #spr2 "magicenhanced/pookag_02.tga"
-#quadruped
+#lizard -- Quadruped bugged
 #startage 100
 #maxage 500
 #size 3
@@ -36965,7 +36885,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #descr "The Pooka is an evil spirit of the Unseelie Court, able to manifest as a black horse, goat or rabbit. While in the form of a rabbit, the Pooka will spread deadly diseases. In battle, it will call other Pooka spirits who will explode in plague-ridden clouds when killed."
 #spr1 "magicenhanced/pookar_01.tga"
 #spr2 "magicenhanced/pookar_02.tga"
-#quadruped
+#lizard -- Quadruped bugged
 #startage 100
 #maxage 500
 #size 2
@@ -37231,7 +37151,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #cleararmor
 #name "Wight Beast"
 #descr "A Wight Beast is the corpse of a gigantic beast strong enough to avoid death itself. Its dried and leathery body is stronger than it was in life. The Wight Beast is constantly surrounded by an icy wind."
-#quadruped
+#lizard -- Quadruped bugged
 #size 9
 #hp 185
 #str 29
@@ -37305,7 +37225,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #cleararmor
 #name "Wight Beast"
 #descr "A Wight Beast is the corpse of a beast strong enough to avoid death itself. The dried and leathery body of the beast is stronger than it was in life. The Wight Beast is constantly surrounded by an icy wind."
-#quadruped
+#lizard -- Quadruped bugged
 #size 6
 #hp 65
 #str 21
@@ -37326,7 +37246,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #cleararmor
 #name "Wight Beast"
 #descr "A Wight Beast is the corpse of a beast strong enough to avoid death itself. The dried and leathery body of the beast is stronger than it was in life. The Wight Beast is constantly surrounded by an icy wind."
-#quadruped
+#lizard -- Quadruped bugged
 #size 3
 #hp 18
 #str 16
@@ -37411,7 +37331,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #clearmagic
 #name "Scarab"
 #descr "The Scarab is a gigantic beetle that lives in the desert wastes. As a sacred symbol of the sun and the cycle of death and rebirth they are treated with great reverence. The Scarabs can emit the burning heat of the sun and are protected from fire and flames of all kinds. They are sometimes summoned to accompany the army as gigantic shock troops, living weapons that will burn and terrify enemy troops."
-#quadruped
 #mor 18
 #gcost 0
 #hp 80
@@ -37523,7 +37442,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #descr "Solomoriah is an ancient spirit that resides on the astral plane. Once a primordial spirit of nature, Solomoriah once served a previous Pantokrator and helped bring life to the world. However, when its services were no longer needed the spirit was bound in a huge stone statue for eternity. Eventually its powers began to manifest themselves and through a great effort of will it shattered the statue and escaped to the astral plane. Now freed from the material world, it appears as an ethereal winged beast with unearthly claws and a bit that can tear away the soul. Solomoriah has amassed great knowledge of the astral plane aswell as the earth and the sky during its long imprisonment. It is rumoured that a shard of the statue still exists, and can be used to summon and bind Solomoriah to this realm once more."
 #fixedname "Solomoriah"
 #unique
-#quadruped
+#lizard -- Quadruped bugged
 #mor 30
 #size 9
 #mr 18
@@ -38093,7 +38012,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Shaman of Many Forms"
 #descr "Veles is an ancient shaman from a far off land that dwells deep in the forests of Rus. Occasionally a glimpse of him is seen by hunters tracking game, however it is difficult to be sure as he can take many forms. He usually takes the form of a gigantic bearded man twice the size of a Chud, however he also appears as a great bear or snake. Veles sometimes emerges from the forest in times of great crisis for the people of Rus, however whether he will help or harm is rarely clear. Some of the hunters of the wild worship Veles as a spirit of the forest and leave offerings of meat and fruits in clearings he frequents."
 #fixedname "Veles"
-#quadruped
 #mor 12
 #mr 17
 #hp 95
@@ -39161,7 +39079,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Queen Mosquito"
 #descr "The Mosquito Queen is gigantic mosquito. She constantly surrounded by a swarm of her children. Anyone she comes near is likely to be bitten and infected with a deadly disease. The Mosquito Queen draws strength from the blood her brood drains."
 #copyspr 591
-#quadruped
+#bird
 #onebattlespell 863 -- Soul Vortex
 #hp 1
 #prot 0
@@ -39723,7 +39641,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eeserpopard2.tga"
 #name "Serpopard"
 #descr "A Serpopard is a mythical being that resembles a great lion with a snakelike neck. They have incredibly thick hides and deadly poison fangs. Serpopards tend to fight in pairs, using their long necks to defend each other from attack. They are magical symbols of chaos, and will grow stronger in lands filled with strife and turmoil. Serpopards are sacred magical beings that must be commanded by a mage."
-#quadruped
 #size 6
 #hp 42
 #att 13
@@ -39871,14 +39788,14 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #end
 
 #newmonster 7873
-#copystats 24  -- indy Light Cavalry
+#copystats 28  -- indy light infantry
 #cleararmor
 #clearweapons
 #name "Pooka"
 #descr "The Pooka is an evil spirit of the Unseelie Court, able to manifest as a black horse, goat or rabbit. While in the form of a spectral horse, the Pooka will spread fear and unrest amongst the villagers. In battle, it will call other pooka spirits to terrify enemies and crush them beneath its hooves."
 #spr1 "magicenhanced/pookah_01.tga"
 #spr2 "magicenhanced/pookah_02.tga"
-#quadruped
+#lizard -- Quadruped bugged
 #gcost 0
 #startage 100
 #maxage 500
@@ -39906,7 +39823,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #descr "The Pooka is an evil spirit of the Unseelie Court, able to manifest as a black horse, goat or rabbit. While in the form of a black goat, the Pooka will wantonly spoil and steal villagers' crops and valuables. In battle, it will call other Pooka spirits to drink their enemies' blood."
 #spr1 "magicenhanced/pookag_01.tga"
 #spr2 "magicenhanced/pookag_02.tga"
-#quadruped
+#lizard -- Quadruped bugged
 #startage 100
 #maxage 500
 #size 3
@@ -39933,7 +39850,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #descr "The Pooka is an evil spirit of the Unseelie Court, able to manifest as a black horse, goat or rabbit. While in the form of a rabbit, the Pooka will spread deadly diseases. In battle, it will call other Pooka spirits who will explode in plague-ridden clouds when killed."
 #spr1 "magicenhanced/pookar_01.tga"
 #spr2 "magicenhanced/pookar_02.tga"
-#quadruped
+#lizard -- Quadruped bugged
 #startage 100
 #maxage 500
 #size 2
@@ -39948,6 +39865,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #poorleader
 #poorundeadleader
 #deathdisease 3
+#clearmagic
+#shapechange 0
 #end
 
 
@@ -46607,6 +46526,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #noleader
 #ap 14
 #neednoteat
+#icenatprot -1
+#prot 3
 #end
 
 #newmonster 8239
@@ -47013,9 +46934,12 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #armor 21
 #armor 2
 #neednoteat
+#icenatprot -1
+#prot 3
 #mountmnr 8251
 #mountedinspector
 #skilledrider 2
+#heal
 #end
 
 #newmonster 8251 -- Gryphon mount
@@ -47033,6 +46957,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #enc 2
 #fireres 5
 #bravemount 100
+#heal
 #end
 
 #newmonster 8252
@@ -47437,7 +47362,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr1 "shambhala/mammothrider_un.tga"
 #spr2 "shambhala/mammothrider_un.tga"
 #descr "A mammoth is a stronger, woolly breed of elephant living in the icy valleys of the Bhöd Kingdom. Due to their great bulk and thick, woolly fur, mammoths are resistant to cold. They are trained for use in battle by special handlers. The sheer size of mammoths is enough to let them trample soldiers and horses. Mammoths are intelligent beings with minds of their own. When hurt, they become enraged and terrified and will leave the battlefield by the shortest route "
-#quadruped
+#lizard -- Quadruped bugged
 #rpcost 30
 #ap 16
 #mapmove 20
@@ -47451,7 +47376,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #prec 11
 #mr 7
 #mor 10
-#gcost 150
+#gcost 120
 #rcost 13
 #nametype 180
 #weapon 614  -- Tusk
@@ -52461,7 +52386,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #prec 5 -- orig 5
 #size 2 -- orig 2
 --#mor 10 -- orig 7
-#quadruped -- Equipment
+#lizard -- Quadruped bugged -- Equipment
 #itemslots 786432 -- 2 misc.
 #weapon 1854 -- Shadow Gore
 #montagweight 2 -- Other tags
@@ -52485,7 +52410,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #prec 5 -- orig 5
 #size 4 -- orig 4
 --#mor 16 -- orig 13
-#quadruped -- Equipment
+#lizard -- Quadruped bugged -- Equipment
 #itemslots 786432 -- 2 misc.
 #weapon 1853 -- Shadow Bite
 #weapon 1855 -- Shadow Claw
@@ -52509,7 +52434,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #prec 5 -- orig 5
 #size 2 -- orig 2
 --#mor 15 -- orig 12
-#quadruped -- Equipment
+#lizard -- Quadruped bugged -- Equipment
 #itemslots 786432 -- 2 misc.
 #weapon 1853 -- Shadow Bite
 #montagweight 3 -- Other tags
@@ -52533,7 +52458,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #prec 5 -- orig 5
 #size 6 -- orig 4
 --#mor 13 -- orig 10
-#quadruped -- Equipment
+#lizard -- Quadruped bugged -- Equipment
 #itemslots 786432 -- 2 misc.
 #weapon 1857 -- Shadow Fangs
 #montag 1070 -- Shadow Animal -- Other tags
@@ -52556,7 +52481,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #prec 5 -- orig 5
 #size 6 -- orig 4
 --#mor 16 -- orig 13
-#quadruped -- Equipment
+#lizard -- Quadruped bugged -- Equipment
 #itemslots 786432 -- 2 misc.
 #weapon 1855 -- Shadow Claw
 #montag 1070 -- Shadow Animal -- Other tags
@@ -52579,7 +52504,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #prec 5 -- orig 5
 #size 6 -- orig 4
 --#mor 12 -- orig 9
-#quadruped -- Equipment
+#lizard -- Quadruped bugged -- Equipment
 #itemslots 786432 -- 2 misc.
 #weapon 1854 -- Shadow Gore
 #weapon 1855 -- Shadow Claw
@@ -52603,7 +52528,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #prec 5 -- orig 5
 #size 4 -- orig 4
 --#mor 11 -- orig 8
-#quadruped -- Equipment
+#lizard -- Quadruped bugged -- Equipment
 #itemslots 786432 -- 2 misc.
 #weapon 1854 -- Shadow Gore
 #montagweight 3 -- Other tags
@@ -52801,7 +52726,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #prec 5 -- orig 5
 #size 1 -- orig 1
 --#mor 10 -- orig 7
-#quadruped -- Equipment
+#lizard -- Quadruped bugged -- Equipment
 #itemslots 786432 -- 2 misc.
 #weapon 1853 -- Shadow Bite
 #montag 1072 -- Shadow Familiar -- Other tags
@@ -52824,7 +52749,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #prec 5 -- orig 5
 #size 1 -- orig 1
 --#mor 10 -- orig 7
-#quadruped -- Equipment
+#lizard -- Quadruped bugged -- Equipment
 #itemslots 786432 -- 2 misc.
 #weapon 1853 -- Shadow Bite
 #montag 1072 -- Shadow Familiar -- Other tags
@@ -52847,7 +52772,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #prec 5 -- orig 5
 #size 1 -- orig 1
 --#mor 10 -- orig 7
-#quadruped -- Equipment
+#lizard -- Quadruped bugged -- Equipment
 #itemslots 786432 -- 2 misc.
 #weapon 1853 -- Shadow Bite
 #montag 1072 -- Shadow Familiar -- Other tags
@@ -53158,7 +53083,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #magicskill 5 1 -- D
 --#onebattlespell 864 -- Darkness
 #sleepaura 8
-#quadruped -- Equipment
+#lizard -- Quadruped bugged -- Equipment
 #heal
 #mountainsurvival
 #forestsurvival
@@ -53588,7 +53513,7 @@ Cost 56 RP."
 #spr1 "gondwana/thunderbeast.tga"
 #spr2 "gondwana/thunderbeast2.tga"
 #descr "The Thunder Beasts are the largest creatures that stride the plains of Gondwana, named for the terrifying sound caused as their feet impact the earth. These creatures have little to fear from any predator, however a few are captured as newborns and raised in captivity by the Obas for use in times of war. These huge creatures are strong in N'um, the sacred force that manifests only in the largest and most holy of beings.  The sight of a Thunder Beast will fill enemies with fear. Their sheer size allows them to trample through enemy lines with ease, however if panicked they may end up trampling friends and enemies alike."
-#quadruped
+#lizard -- Quadruped bugged
 #gcost 10150
 #smartmount 100
 #size 10
@@ -53618,7 +53543,7 @@ Cost 56 RP."
 #spr1 "gondwana/thunderbeast.tga"
 #spr2 "gondwana/thunderbeast2.tga"
 #descr "The Thunder Beasts are the largest creatures that stride the plains of Gondwana, named for the terrifying sound caused as their feet impact the earth. These creatures have little to fear from any predator, however a few are captured as newborns and raised in captivity by the Obas for use in times of war. These huge creatures are strong in N'um, the sacred force that manifests only in the largest and most holy of beings.  The sight of a Thunder Beast will fill enemies with fear. Their sheer size allows them to trample through enemy lines with ease, however if panicked they may end up trampling friends and enemies alike."
-#quadruped
+#lizard -- Quadruped bugged
 #gcost 10150
 #smartmount 100
 #size 10
@@ -54308,17 +54233,23 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #copystats 923
 #copyspr 923
 #neednoteat
-#descr "In the Smouldercone, young and promising Abysians are trained in Blood magic. The apprentices are much feared, as they often carry out the task of collecting young virgins for their masters' sacrifices. Even with the rise of humanbred and scarcity of pureblood Abysians, only the pureblood are allowed to be inducted into apprenticeship and so new members are becoming increasingly rare. Warlock apprentices are Abysians and radiate the hellish heat characteristic of their race as well as being held sacred among the humanbred."
+#descr "In the Smouldercone, young and promising Abysians are trained in Blood magic. The apprentices are much feared, as they often carry out the task of collecting young virgins for their masters' sacrifices. Even with the rise of humanbred and scarcity of pureblood Abysians, only the pureblood are allowed to be inducted into apprenticeship and so new members are becoming increasingly rare. Warlock apprentices are Abysians and radiate the hellish heat characteristic of their race as well as being held sacred among the humanbred. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #holy
+#neednoteat
+#icenatprot -1
+#prot 3
 #end
 
 #newmonster 9089 -- Warlock LA
 #copystats 89
 #copyspr 89
 #neednoteat
-#descr "The Warlocks of Smouldercone are Blood mages of great renown. They experiment with the summoning and binding of otherworldly beings and the creation of new species. Their most successful experimental achievements to date are the Demonbreds. The Warlocks are the true masters of Abysia, but rarely dabble in politics. Even with the rise of humanbred and scarcity of pureblood Abysians, only the pureblood are allowed to become Warlocks and so are becoming increasingly rare. Warlocks are Abysians and radiate the hellish heat characteristic of their race as well as being held sacred among the humanbred."
+#descr "The Warlocks of Smouldercone are Blood mages of great renown. They experiment with the summoning and binding of otherworldly beings and the creation of new species. Their most successful experimental achievements to date are the Demonbreds. The Warlocks are the true masters of Abysia, but rarely dabble in politics. Even with the rise of humanbred and scarcity of pureblood Abysians, only the pureblood are allowed to become Warlocks and so are becoming increasingly rare. Warlocks are Abysians and radiate the hellish heat characteristic of their race as well as being held sacred among the humanbred. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #holy
 #rpcost 4
+#neednoteat
+#icenatprot -1
+#prot 3
 #end
 
 #newmonster 9090 -- "Rider" x5
@@ -54673,7 +54604,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #mapmove 16
 #ap 24
 #coldres 5
-#quadruped
+#lizard -- Quadruped bugged
 #neednoteat
 #diseaseres 100
 #darkpower 2
@@ -54718,7 +54649,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #voidsanity 10
 #maxage 4000
 #startage 2000
-#quadruped
+#lizard -- Quadruped bugged
 #neednoteat
 #diseaseres 100
 #magicpower 2
@@ -54801,7 +54732,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #woundfend 99
 #unsurr 2
 #ap 20 -- faster than a wele
-#quadruped
+#lizard -- Quadruped bugged
 #neednoteat
 #spiritsight
 #magicbeing
@@ -61600,7 +61531,6 @@ Boost all paths except blood by +1. Becomes a Yar Bori upon death or after two s
 #armor "Lifidi Barding" 
 #animal
 #holy
---#quadruped
 #itemslots 17309696
 #nametype 144
 #noleader
@@ -61645,7 +61575,7 @@ Boost all paths except blood by +1. Becomes a Yar Bori upon death or after two s
 #weapon 397 -- Kick
 #animal
 #holy
---#quadruped
+#lizard -- Quadruped bugged
 #itemslots 17309696
 #nametype 144
 #noleader
@@ -62710,6 +62640,10 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 7168 -- Ghazi
+#skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 7170 -- Ghazi Lancer
 #skilledrider 4 -- 2 -> 4
 #end
 
@@ -67240,7 +67174,7 @@ Only three Queens of Elemental Water are known to exist."
 #mor 30
 #hp 195
 #prot 18
-#str 25
+#str 32
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -77570,6 +77504,8 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #end
 
 #selectmonster 486 -- Great Warlock
+#spr1 "vanilla/greatwarlock486_1.png"
+#spr2 "vanilla/greatwarlock486_2.png"
 #descr "The Great Warlock is a mage of such great power that he has taken the role of a Pretender God. Great Warlocks are masters of magic and known to be adept in several of the magic paths."
 #diseaseres 100
 #gcost 80
@@ -77581,6 +77517,8 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #def 9
 #mr 18
 #neednoteat
+#icenatprot -1
+#prot 3
 #itemslots 991750
 #clearmagic
 #magicskill 0 1
@@ -80376,6 +80314,8 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #end
 
 #selectmonster 2609 -- Azi Great Warlock
+#spr1 "vanilla/greatwarlock486_1.png"
+#spr2 "vanilla/greatwarlock486_2.png"
 #descr "The Great Warlock is a mage of such great power that he has taken the role of a Pretender God. Great Warlocks are masters of magic and known to be adept in several of the magic paths."
 #diseaseres 100
 #gcost 330
@@ -82536,7 +82476,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #end
 
 #selectmonster 3388 -- Ilah of the Moon
-#descr "The Ilah is a giant of divine heritage. A previous Pantokrator placed the crescent moon on his brow and gave him mandate over all lands beneath the night skies and all life that begins during the long nights of the desert. When men realized his powers of fertility they began to worship him as a God. The Pantokrator was furious, imprisoned him for eternity and mankind was bereft of the fertility of the crescent moon. Now with the Pantokrator gone, the Ilah is free to once more bring the gifts of the moon to the world."
+#descr "The Ilah is a giant of divine heritage. A previous Pantokrator placed the crescent moon on his brow and gave him mandate over all lands beneath the night skies and all life that begins during the long nights of the desert. When men realized his powers of fertility they began to worship him as a God. The Pantokrator was furious, imprisoned him for eternity and mankind was bereft of the fertility of the crescent moon. Now with the Pantokrator gone, the Ilah is free to once more bring the gifts of the moon to the world. In battle he will shroud the sun so only moonlight remains."
 #diseaseres 100
 #gcost 300
 #pathcost 40
@@ -83427,6 +83367,29 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 5 1
 #end
 
+#selectmonster 3394 -- Serpent of the Underworld
+#descr "Born at the dawn of time, the Serpent of the Underworld represents an earlier era, when monsters and giants roamed the world. It has the appearance of a huge serpent with the head of a deer and a tail of interwoven chains of gold. When the previous Pantokrator rose to power he imprisoned and banished all that threatened his creation and the Great Serpent was bound in a twisting cave beneath a great mountain to guard the riches of the underworld. With the Pantokrator gone the Great Serpent from the dawn of time will return to claim the world as his."
+#diseaseres 100
+#gcost 180
+#pathcost 60
+#moreprod 1
+#hp 210
+#prot 18
+#str 28
+#att 13
+#def 10
+#mr 18
+#mastersmith -1
+#researchbonus -8
+#heal
+#woundfend 2
+#gold 40
+#itemslots 18620416
+#clearmagic
+#magicskill 3 1
+#magicskill 5 2
+#end
+
 #selectmonster 1348 -- Titan of Serpents & Medicine
 #descr "The Titan of Serpents and Healing is a giant of divine heritage. She is the Mother of Serpents and Mistress of the Medical Arts. Her blessings give health and her wrath gives untimely death. In combat she is always accompanied by a handful of snakes, two of which she holds in her hands as weapons to attack her enemies."
 #diseaseres 100
@@ -83599,42 +83562,80 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #rpcost 29
 #end
 
+
+
+
+
+
+
+
 #selectmonster 81  -- Aby Infantry
---#spr1 "vanilla/abysian81_1.png"
---#spr2 "vanilla/abysian81_2.png"
---#icenatprot -1
---#cleararmor
---#armor 9 -- plate cuirass
---#armor 20 -- cap
---#prot 3
+#spr1 "vanilla/abysian81_1.png"
+#spr2 "vanilla/abysian81_2.png"
+#descr "The Abysians are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to the cold. Abysian infantry uses heavy iron armor and heavy weapons that will not burn away in their smoldering hands. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
+#cleararmor
+#icenatprot -1
+#prot 2
+#armor 570 -- Half Plate
+#armor 20 -- Cap
 #end
 
 #selectmonster 82  -- Aby Infantry
---#spr1 "vanilla/abysian82_1.png"
---#spr2 "vanilla/abysian82_2.png"
+#spr1 "vanilla/abysian82_1.png"
+#spr2 "vanilla/abysian82_2.png"
+#descr "The Abysians are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to the cold. Abysian infantry uses heavy iron armor and heavy weapons that will not burn away in their smoldering hands. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
+#cleararmor
+#icenatprot -1
+#prot 2
+#armor 570 -- Half Plate
+#armor 20 -- cap
 #end
 
 #selectmonster 83  -- Aby Infantry
---#spr1 "vanilla/abysian83_1.png"
---#spr2 "vanilla/abysian83_2.png"
+#spr1 "vanilla/abysian83_1.png"
+#spr2 "vanilla/abysian83_2.png"
+#descr "The Abysians are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to the cold. Abysian infantry uses heavy iron armor and heavy weapons that will not burn away in their smoldering hands. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
+#cleararmor
+#icenatprot -1
+#armor 570 -- Half Plate
+#armor 20 -- cap
+#armor 4 -- Tower Shield
+#prot 2
 #end
 
 #selectmonster 84  -- Aby Infantry
---#spr1 "vanilla/abysian84_1.png"
---#spr2 "vanilla/abysian84_2.png"
+#spr1 "vanilla/abysian84_1.png"
+#spr2 "vanilla/abysian84_2.png"
+#descr "The Abysians are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to the cold. Abysian infantry uses heavy iron armor and heavy weapons that will not burn away in their smoldering hands. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
+#icenatprot -1
+#prot 2
+#cleararmor
+#armor 570 -- Half Plate
+#armor 20 -- cap
+#armor 4 -- Tower Shield
 #end
 
 #selectmonster 85  -- A Salamander
+#spr1 "vanilla/salamander85_1.png"
+#spr2 "vanilla/salamander85_2.png"
+#descr "The authority of the Abysian Warlords is limited to acts of war. In all other matters, Abysia is ruled by the Anathemants. Anathemant Salamanders are the holy priests of the Abysian faith. They take part in the public ceremonies where flames are lit on the grand ziggurats and processions of anathemant mage-priests circumambulate the temple grounds. Anathemants excel in Fire magic and use fire not only to incinerate infidels, but also to feed the anger inherent in the hearts of all Abysian warriors. The Anathemants practice human sacrifice to empower their Master's Dominion by the magic inherent in human blood. Anathemant Salamanders are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#icenatprot -1
+#prot 2
 #montag 1068 -- Anathement
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #neednoteat
 #end
 
 #selectmonster 86  -- EA Abysia Anathemant Dragon
+#spr1 "vanilla/dragon86_1.png"
+#spr2 "vanilla/dragon86_2.png"
+#descr "The caste of Anathemants are led by exalted Fire mages known as Dragons. These sacral mages administer the ceremonies and sacrifices in the Temple of the All-Consuming Flame. They lead processions of anathemant mage-priests circumambulating the temple grounds and oversee the Grand Sabbaths. They are revered and feared by all Abysians except the Warlocks of Smouldercone. Anathemant Dragons are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#icenatprot -1
+#prot 3
 --#enchrebate50 41  -- Second Sun
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #montag 1068 -- Anathement
@@ -83642,23 +83643,346 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #end
 
 #selectmonster 87  -- Demonbred
+#spr1 "vanilla/demonbred87_1.png"
+#spr2 "vanilla/demonbred87_1.png"
+#descr "Deep in the Smouldercone, the Warlocks of Abysia experiment with their brethren to create superior beings. The Demonbreds are the most successful of these creatures. Part demon, part Abysian, they share the strengths and weaknesses of both. The Demonbreds are bound by their nature to serve their masters as slaves. Trained as Anathemants and mages, they can achieve great status and influence. They are fanatically loyal to their masters and are the most trusted and able of the Abysian mages. Demonbreds radiate the hellish heat characteristic of Abysians. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #montag 1055
 #neednoteat
+#icenatprot -1
+#prot 5
 #rpcost 2
 #end
+
+
+#selectmonster 89  -- Warlock
+#descr "The Warlocks of Smouldercone are Blood mages of great renown. They experiment with the summoning and binding of otherworldly beings and the creation of new species. Their most successful experimental achievements to date are the Demonbreds. The Warlocks are the true masters of Abysia, but rarely dabble in politics. Warlocks are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#neednoteat
+#icenatprot -1
+#prot 2
+#end
+
+#selectmonster 90  -- Lava Warrior
+#spr1 "vanilla/lavawarrior90_1.png"
+#spr2 "vanilla/lavawarrior90_2.png"
+#descr "With the weakening of the Flame, there are no more Burning Ones born and Lava Warriors have replaced them as sacred warriors. Lava Warriors are the elite of the Abysian war machine. They are driven by an anger that turns into blind, berserk rage when they are wounded. These elite warriors train in the lava pits of the Smouldercone and are able to draw strength from the heat. They are very powerful in warm provinces, but cold will break down their great strength. Lava Warriors are armed with twin morning stars and serve the Anathemants without fear. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#cleararmor
+#icenatprot -1
+#prot 2
+#armor 570 -- Half Plate
+#armor 20 -- cap
+#neednoteat
+#end
+
+#selectmonster 119  -- Warlord
+#spr1 "vanilla/warlord119_1.png"
+#spr2 "vanilla/warlord119_2.png"
+#descr "Warlords are the warrior chiefs of Abysian society and radiate the hellish heat characteristic of their race. They lead the Abysians in war and plunder. Warlords are chosen on the basis of superior strength and fighting prowess. They are large in size and strong enough to use twin axes in battle. Since the Warlords fight their way to prominence, they are respected and feared by their troops. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#neednoteat
+#icenatprot -1
+#prot 3
+#end
+
+#selectmonster 214  -- Beast Trainer
+#spr1 "vanilla/trainer214_1.png"
+#spr2 "vanilla/trainer214_2.png"
+#descr "Beast trainers are entrusted with the task of taming and training salamanders for battle. They are armed with iron prods, which they use to drive the salamanders. The beast trainers also have a mystical power that keeps animals from attacking them, making them very useful for dealing with wild beasts such as salamanders or scorpion beasts. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#drawsize 0
+#neednoteat
+#size 3
+#beastmaster 5
+#icenatprot -1
+#prot 3
+#end
+
+
+#selectmonster 327  -- Anathemant
+#spr1 "vanilla/anathemant327_1.png"
+#spr2 "vanilla/anathemant327_2.png"
+#descr "The caste of Anathemants are led by exalted Fire mages known as Dragons. These sacral mages administer the ceremonies and sacrifices in the Temple of the All-Consuming Flame. They lead processions of anathemant mage-priests circumambulating the temple grounds and oversee the Grand Sabbaths. They are revered and feared by all Abysians except the Warlocks of Smouldercone. Anathemant Dragons are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#neednoteat
+#icenatprot -1
+#prot 3
+#end
+
+#selectmonster 429  -- Slayer
+#spr1 "vanilla/slayer429_1.png"
+#spr2 "vanilla/slayer429_2.png"
+#descr "The Slayer is an Abysian assassin. He can pass unseen through enemy territories and try to assassinate enemy leaders. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#neednoteat
+#icenatprot -1
+#prot 2
+#end
+
+
+#selectmonster 539  -- Rago, Rage Lord
+#spr1 "vanilla/rago.png"
+#spr2 "vanilla/rago2.png"
+#hp 30  -- base 21
+#mr 14  -- base 13
+#str 18  -- - base 16
+#att 14  -- base 13
+#def 12  -- base 11
+#heat 6
+#clearweapons
+#weapon 304  -- evening star
+#weapon 304  -- evening star
+#itemslots 2040326
+#batstartsum3 90  -- Lava Warrior
+#onebattlespell "Personal Luck"
+#neednoteat
+#icenatprot -1
+#prot 3
+#end
+
+
+#selectmonster 581  -- Anathemant Warlock
+#spr1 "vanilla/anathemant327_1.png"
+#spr2 "vanilla/anathemant327_2.png"
+#magicskill 4 3
+#maxage 50
+#startage 40
+#neednoteat
+#icenatprot -1
+#prot 3
+#end
+
+#selectmonster 867  -- Slayer Chuzrael
+#spr1 "vanilla/demonbred1537_1.png"
+#spr2 "vanilla/demonbred1537_2.png"
+#hp 25  -- base 20
+#ap 14  -- base 10
+#def 14  -- base 13
+#patience 4
+#enc 2  -- - base 3
+#itemslots 2040326
+#neednoteat
+#icenatprot -1
+#prot 5
+#end
+
+#selectmonster 923  -- Warlock Apprentice
+#descr "In the Smouldercone, young and promising Abysians are trained in Blood magic. The apprentices are much feared, as they often carry out the task of collecting young virgins for their masters' sacrifices. Warlock apprentices are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#monpresentrec 89  -- Warlock
+#neednoteat
+#icenatprot -1
+#prot 2
+#end
+
+
+
+#selectmonster 990  -- GofPyre
+#descr "With the dilution of the blood, pureblooded Abysians have become exceedingly rare. The remaining Abysians are highly respected and considered holy to the Humanbred Abysians. They are trained in the Temple of the Ever-burning Pyre as priests or sacred warriors. Guardians of the Pyre are pureblooded Abysians and radiate heat. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#spr1 "vanilla/pyre990_1.png"
+#spr2 "vanilla/pyre990_2.png"
+#neednoteat
+#icenatprot -1
+#prot 2
+#end
+
+#selectmonster 1092  -- Sang Anathemant
+#descr "With the magic heat of the Smouldercone seeping from the land, the Anathemants are looking for other sources of power. The ancient practice of blood sacrifice has been renewed and a new order of Anathemants formed. Only pureblood Abysians are allowed to gain full priestly status in the order. The Sanguine Anathemants have the priestly powers of the regular Anathemants and are in charge of the growing Blood Cult. They have limited skills in Fire magic. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#spr1 "vanilla/sanguine1092_1.png"
+#spr2 "vanilla/sanguine1092_2.png"
+#gcost 10010
+#neednoteat
+#icenatprot -1
+#prot 2
+#end
+
+#selectmonster 1536  -- Anointed of Rhuax
+#spr1 "vanilla/anointed1536_1.png"
+#spr2 "vanilla/anointed1536_2.png"
+#descr "The first Abysians sprung from the Fires of Rhuax were large magmatic beings, barely resembling humans at all. Slowly these monstrosities developed into humanoids. With every generation, the Fires of Rhuax grew cooler in their bodies and the flaming Children of Rhuax became smoldering Abysians. Abysians of prominent heritage are larger and surrounded by flames. They are called Burning Ones and are sacred to the degenerates. Only Burning Ones can become high priests of the Flame Cult, the Anointed of Rhuax, and they are the undisputed rulers of the Abysians. The Anointed Ones have formed the Order of the Anathemants to administer ceremonies and burn offerings in the many temples of the kingdom. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#neednoteat
+--#enchrebate50 41  -- Second Sun
+#enchrebate50 222 -- Ench22 -- Rivers of Lava
+#montag 1068 -- Anathement
+#gcost 10020
+#clearmagic
+#magicskill 0 4
+#magicskill 3 2
+#magicskill 9 3
+#custommagic 7296 100 -- FESD
+#custommagic 7296 10 -- FESD
+#icenatprot -1
+#prot 4
+#end
+
+#selectmonster 1537  -- Demonbred
+#spr1 "vanilla/demonbred1537_1.png"
+#spr2 "vanilla/demonbred1537_2.png"
+#descr "Deep in the Smouldercone, the Warlocks of Abysia experiment with their brethren to create superior beings. The Demonbreds are the most successful of these creatures. Part demon, part Abysian, they share the strengths and weaknesses of both. The Demonbreds are bound by their nature to serve their masters as slaves. Trained as assassins, they deliver death to the enemies of their Warlock masters. Demonbreds radiate the hellish heat characteristic of Abysians. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#montag 1055
+#neednoteat
+#icenatprot -1
+#prot 5
+#end
+
+#selectmonster 1538  -- Warlock
+#spr1 "vanilla/warlock89_1.png"
+#spr2 "vanilla/warlock89_2.png"
+#descr "The Warlocks of Smouldercone are mages of a newly formed order. They experiment with Blood magic, the summoning and binding of otherworldly beings and the creation of new species. Their most recent experiments are the Demonbreds. Warlocks are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#douse 1
+#neednoteat
+#icenatprot -1
+#prot 2
+#end
+
+#selectmonster 1542  -- W Apprentice
+#spr1 "vanilla/apprentice1542_1.png"
+#spr2 "vanilla/apprentice1542_2.png"
+#descr "In the Smouldercone, young and promising Abysians are trained in Blood magic. In recent times the apprentices have become feared, as they carry out the task of collecting young virgins for their masters' sacrifices. Warlock apprentices are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#douse 1
+#neednoteat
+#icenatprot -1
+#prot 2
+#end
+
+#selectmonster 1543  -- Burning One
+#spr1 "vanilla/burningone1543_1.png"
+#spr2 "vanilla/burningone1543_2.png"
+#descr "The first Abysians sprung from the Fires of Rhuax were large magmatic beings, barely resembling humans at all. Slowly these monstrosities developed into humanoids. With every generation, the Fires of Rhuax grew cooler in their bodies and the flaming Children of Rhuax became smoldering Abysians. The Burning One is an Abysian of prominent heritage, claiming succession from the Children of Rhuax. The Burning Ones are surrounded by flames and most of them are trained as priests or sacred warriors. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#enchrebate25p 106  -- Stoke the Smouldercone
+#neednoteat
+#icenatprot -1
+#prot 3
+#cleararmor
+#armor 570 -- Half Plate
+#armor 20 -- cap
+#end
+
+#selectmonster 1661  -- Misbred
+#spr1 "vanilla/misbred1661_1.png"
+#spr2 "vanilla/misbred1661_2.png"
+#descr "Deep in the Smouldercone, the Warlocks of Abysia experiment with their brethren to create superior beings. The Misbreds are defective, malformed and sometimes prematurely aged Demonbreds. The Misbreds are bound by their nature to serve their masters as slaves. While the Demonbreds are trained as assassins, the Misbreds are given purpose in life by the axe they wield. Misbreds must be led by a mage or commander with undead leadership. Misbreds radiate the hellish heat characteristic of Abysians. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#montag 1055
+#neednoteat
+#icenatprot -1
+#prot 5
+#end
+
+
+#selectmonster 1698  -- EA Anathement Salamander
+#descr "The authority of the Abysian Warlords is limited to acts of war. In all other matters, Abysia is ruled by the Anathemants and the Anointed of Rhuax. Anathemant Salamanders are lowly priests of the Abysian Flame Cult. Anathemants excel in Fire magic and use fire not only to incinerate infidels, but also to feed the anger inherent in the hearts of all Abysian warriors. The Anathemants practice human sacrifice to empower their Master's Dominion by the magic inherent in human blood. Anathemant Salamanders are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#neednoteat
+#enchrebate50 222 -- Ench22 -- Rivers of Lava
+#montag 1068 -- Anathement
+#icenatprot -1
+#prot 2
+#end
+
+#selectmonster 1699  -- EA Anathemant Dragon
+#descr "The Anathemant caste was formed by the Anointed of Rhuax to perform the many ceremonies of the Flame Cult. These sacral mages administer the procession, ceremonies and sacrifices in the lesser temples of the kingdom. In the Temple of the All-Consuming Flame they serve the Anointed Ones at the High Sacrifices of the Inner Fire where Anathemant Salamanders are not allowed. Anathemant Dragons are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+--#enchrebate50 41  -- Second Sun
+#enchrebate50 222 -- Ench22 -- Rivers of Lava
+#montag 1068 -- Anathement
+#icenatprot -1
+#prot 3
+#neednoteat
+#end
+
+
+#selectmonster 1965  -- Slayer Worm
+#spr1 "vanilla/slayerworm1965_1.png"
+#spr2 "vanilla/slayerworm1965_2.png"
+#descr "With the dilution of the True Blood, the pureblood Abysians feared that the old traditions might be lost to the Humanbred population. To preserve the old ways the slayers were incorporated in the sacred caste of the Anathemants and a Slayer Cult was formed. The Slayers were trained as priests and murder was declared a sacred act. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#neednoteat
+#icenatprot -1
+#prot 2
+#end
+
+#selectmonster 1966  -- Slayer Anathemant
+#spr1 "vanilla/slayeranathemant1966_1.png"
+#spr2 "vanilla/slayeranathemant1966_2.png"
+#descr "With the dilution of the True Blood, the pureblood Abysians feared that the old traditions might be lost to the Humanbred population. To preserve the old ways the slayers were incorporated in the sacred caste of the Anathemants and a Slayer Cult was formed. The Slayers were trained as priests and murder was declared a sacred act. The Slayer Anathemant is a prominent priest-assassin trained in the Temple of the Everburning Pyre. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#neednoteat
+#icenatprot -1
+#prot 2
+#end
+
+#selectmonster 1967  -- S Sanguine
+#spr1 "vanilla/slayersanguine1967_1.png"
+#spr2 "vanilla/slayersanguine1967_2.png"
+#descr "With the dilution of the True Blood, the pureblood Abysians feared that the old traditions might be lost to the Humanbred population. To preserve the old ways the slayers were incorporated in the sacred caste of the Anathemants and a Slayer Cult was formed. The Slayers were trained as priests and murder was declared a sacred act. The Slayer Sanguine is a prominent priest-assassin trained in the Temple Sanguine. They are taught the secret art of performing blood rituals without the help of blood slaves to sacrifice. Instead they cut themselves and offer their own sacred blood at the risk of their own lives. To increase their chance of staying alive, they are given sacred athames that drain the life force from living beings. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#neednoteat
+#icenatprot -1
+#prot 2
+#end
+
+#selectmonster 1968  -- Slayer Dragon
+#spr1 "vanilla/slayerrachis1968_1.png"
+#spr2 "vanilla/slayerrachis1968_2.png"
+#neednoteat
+#icenatprot -1
+#prot 2
+#end
+
+#selectmonster 1969  -- A Salamander LA
+#descr "With the magic heat of the Smouldercone seeping from the land, and pureblood Abysians becoming rarer, the Anathemant caste is clinging to memories of its glorious past. Reverence for the dead and memorial services are encouraged and the Anathemants have found themselves in charge of an emerging ancestor cult. Spirits of the ancient dead are summoned to once again fight for the All-Consuming Flame. Grand public ceremonies led by pure-blooded Abysians are still held at the temple pyramids. Processions of Anathemants led by their Dragons circumambulate the temple grounds in serene parades at auspicious and holy days. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#enchrebate50 222 -- Ench22 -- Rivers of Lava
+#montag 1068 -- Anathement
+#gcost 10010
+#neednoteat
+#icenatprot -1
+#prot 2
+#end
+
+#selectmonster 1970  -- LA Abysia Anathemant Dragon
+#descr "The caste of Anathemants are led by exalted Fire mages known as Dragons. These sacral mages administer the processions, ceremonies and sacrifices in the Temple of the Everburning Pyre. Since the Ancestor Cult formed, they also lead the memorial services and summonings of the ancestral spirits. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#montag 1068 -- Anathement
+--#enchrebate50 41  -- Second Sun
+#enchrebate50 222 -- Ench22 -- Rivers of Lava
+#clearmagic
+#magicskill 0 2
+#magicskill 5 1
+#magicskill 9 3
+#custommagic 5248 100
+#gcost 10010
+#neednoteat
+#icenatprot -1
+#prot 3
+#end
+
+
+#selectmonster 2510  -- Lavaborn
+#spr1 "vanilla/lavaborn2510_1.png"
+#spr2 "vanilla/lavaborn2510_2.png"
+#descr "The Lava-borns are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to cold. Most Lava-born live in Abysia, but there are rumors of Lava-born kingdoms deep in the under-earth. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#neednoteat
+#icenatprot -1
+#prot 2
+#end
+
+#selectmonster 2511  -- Lavaborn Comm
+#spr1 "vanilla/lavaborn2511_1.png"
+#spr2 "vanilla/lavaborn2511_2.png"
+#descr "The Lava-borns are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to cold. Most Lava-born live in Abysia, but there are rumors of Lava-born kingdoms deep in the under-earth. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#magicskill 0 1
+#custommagic 1024 20  -- 20% E
+#neednoteat
+#icenatprot -1
+#prot 2
+#end
+
+
+#selectmonster 2601  -- Turan Sorcerer
+#descr "While most Turans are of Humanbred stock, there are a few remaining pure-blooded Abysians in the kingdom. These families have preserved the old Abysian magic and jealously guard their secrets. They form a sorcerer-caste of powerful mages, influential in the courts of the Turan Shahs. With the arrival of the Airyas, some of them have turned their attentions towards magic not previously used by the Turans. The Sorcerers can only be recruited in hot provinces. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#spr1 "vanilla/sorcerer2601_1.png"
+#spr2 "vanilla/sorcerer2601_2.png"
+#neednoteat
+#icenatprot -1
+#prot 2
+#end
+
+
+
+
 
 #selectmonster 88  -- Fiend of Darkness
 #montag 1054
 #custommagic 36864 100 -- 100% DB
 #end
 
-#selectmonster 89  -- Warlock
-#neednoteat
-#end
-
-#selectmonster 90  -- Lava Warrior
-#neednoteat
-#end
 
 #selectmonster 8539
 #copystats 1337  -- Siddha
@@ -83668,10 +83992,6 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 102  -- Initiate of the Deep
 #descr "Strange students of Water magic who are ready to give up dry land for the comfort of the waves, these humans receive their training from Witnesses and Seers trained in the fabled Coral Towers of Atlantis. Initially trained in a mystery cult, the Initiate will eventually master the art of waterbreathing and receive further training and possibly become a Witness of the Deep.
 Initiates of the Deep can be recruited in any land fort."
-#end
-
-#selectmonster 119  -- Warlord
-#neednoteat
 #end
 
 
@@ -83716,12 +84036,6 @@ Initiates of the Deep can be recruited in any land fort."
 #selectmonster 213  -- Salamander
 #twiceborn 7343 -- Size 2 Wight Beast
 #darkvision 50
-#end
-
-#selectmonster 214  -- Beast Trainer
-#neednoteat
-#size 3
-#beastmaster 5
 #end
 
 #selectmonster 217 -- Flagellant
@@ -83897,10 +84211,6 @@ Initiates of the Deep can be recruited in any land fort."
 
 #selectmonster 325  -- Master Smith
 #userestricteditem 4
-#end
-
-#selectmonster 327  -- Anathemant
-#neednoteat
 #end
 
 #selectmonster 330  -- Dark Vine
@@ -84167,10 +84477,6 @@ Initiates of the Deep can be recruited in any land fort."
 
 #selectmonster 414  -- Wingless
 #iceprot 1
-#end
-
-#selectmonster 429  -- Slayer
-#neednoteat
 #end
 
 #selectmonster 438  -- Kraken
@@ -84463,22 +84769,6 @@ Initiates of the Deep can be recruited in any land fort."
 #montag 1052
 #end
 
-#selectmonster 539  -- Rago, Rage Lord
-#hp 30  -- base 21
-#mr 14  -- base 13
-#str 18  -- - base 16
-#att 14  -- base 13
-#def 12  -- base 11
-#heat 6
-#clearweapons
-#weapon 304  -- evening star
-#weapon 304  -- evening star
-#itemslots 2040326
-#batstartsum3 90  -- Lava Warrior
-#onebattlespell "Personal Luck"
-#neednoteat
-#end
-
 #selectmonster 540  -- Menopathos, White Minotaur
 #hp 40  -- base 30
 #prot 7  -- base 5
@@ -84613,13 +84903,6 @@ Initiates of the Deep can be recruited in any land fort."
 #magicskill 2 1  -- 1W
 #custommagic 512 50  -- 50% W
 #twiceborn 7443 -- Size 4 Wight Beast
-#end
-
-#selectmonster 581  -- Anathemant Warlock
-#magicskill 4 3  -- Yep normally magic heroes not boosted but B3D3 is nothing exciting for Abysia.
-#maxage 50
-#startage 40
-#neednoteat
 #end
 
 #selectmonster 582  -- Blind One - Brangwen
@@ -84860,6 +85143,13 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #armor 546 -- spectral plate
 #armor 549 -- spectral helmet
 #mr 11
+#end
+
+#selectmonster 3063  -- Hellbred Horite
+#spr1 "vanilla/hellbredhorite_1.png"
+#spr2 "vanilla/hellbredhorite_2.png"
+#clearweapons
+#weapon 17 -- axe
 #end
 
 #selectmonster 3067  -- Spectral Lictor
@@ -85363,7 +85653,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 793  -- Prince General
-#gcost 350
+#gcost 210
 #magicskill 9 1
 #springpower 25
 #startage 35
@@ -85625,16 +85915,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #armor "Enchanted Shield"
 #end
 
-#selectmonster 867  -- Slayer Chuzrael
-#hp 25  -- base 20
-#ap 14  -- base 10
-#def 14  -- base 13
-#patience 4
-#enc 2  -- - base 3
-#itemslots 2040326
-#neednoteat
-#end
-
 #selectmonster 868  -- Mortius, Scythe Wielder
 #hp 11  -- base 8, executioner should be somewhat strong
 #str 11  -- base 9, executioner should be somewhat strong
@@ -85723,11 +86003,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 912  -- Queen of Air
 #polyimmune
-#end
-
-#selectmonster 923  -- Warlock Apprentice
-#monpresentrec 89  -- Warlock
-#neednoteat
 #end
 
 #selectmonster 925  -- Tarrasque
@@ -85896,10 +86171,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 983  -- Humanbred
 #montag 1055
-#end
-
-#selectmonster 990  -- GofPyre
-#neednoteat
 #end
 
 #selectmonster 999  -- Wizard of the Crescent Moon
@@ -86090,11 +86361,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 1091  -- Sang Acolyte
-#gcost 10010
-#end
-
-#selectmonster 1092  -- Sang Anathemant
-#neednoteat
 #gcost 10010
 #end
 
@@ -87042,40 +87308,6 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #reclimit 3
 #end
 
-#selectmonster 1536  -- Anointed of Rhuax
-#neednoteat
---#enchrebate50 41  -- Second Sun
-#enchrebate50 222 -- Ench22 -- Rivers of Lava
-#montag 1068 -- Anathement
-#gcost 10020
-#clearmagic
-#magicskill 0 4
-#magicskill 3 1
-#magicskill 9 3
-#custommagic 7296 100 -- FESD
-#custommagic 7296 10 -- FESD
-#end
-
-#selectmonster 1537  -- Demonbred
-#montag 1055
-#neednoteat
-#end
-
-#selectmonster 1538  -- Warlock
-#douse 1
-#neednoteat
-#end
-
-#selectmonster 1542  -- W Apprentice
-#douse 1
-#neednoteat
-#end
-
-#selectmonster 1543  -- Burning One
-#enchrebate25p 106  -- Stoke the Smouldercone
-#neednoteat
-#end
-
 #selectmonster 1560  -- Dog
 #twiceborn 7343 -- Size 2 Wight Beast
 #montag 1038
@@ -87318,11 +87550,6 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #selectmonster 1660  -- Udm'ukinna, Reassembled Prince
 #end
 
-#selectmonster 1661  -- Misbred
-#montag 1055
-#neednoteat
-#end
-
 #selectmonster 1662  -- Disease Demon
 #stealthy 0
 #assassin
@@ -87408,18 +87635,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #twiceborn 7231 -- Wight Giant
 #end
 
-#selectmonster 1698  -- EA Anathement Salamander
-#neednoteat
-#enchrebate50 222 -- Ench22 -- Rivers of Lava
-#montag 1068 -- Anathement
-#end
-
-#selectmonster 1699  -- EA Anathemant Dragon
---#enchrebate50 41  -- Second Sun
-#enchrebate50 222 -- Ench22 -- Rivers of Lava
-#montag 1068 -- Anathement
-#neednoteat
-#end
 
 #selectmonster 1702  -- Basalt King
 #clearweapons
@@ -87990,41 +88205,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #older -10  -- to make him less old
 #end
 
-#selectmonster 1965  -- Slayer Worm
-#neednoteat
-#end
-
-#selectmonster 1966  -- Slayer Anathemant
-#neednoteat
-#end
-
-#selectmonster 1967  -- S Sanguine
-#neednoteat
-#end
-
-#selectmonster 1968  -- Slayer Dragon
-#neednoteat
-#end
-
-#selectmonster 1969  -- A Salamander LA
-#enchrebate50 222 -- Ench22 -- Rivers of Lava
-#montag 1068 -- Anathement
-#neednoteat
-#gcost 10010
-#end
-
-#selectmonster 1970  -- LA Abysia Anathemant Dragon
-#montag 1068 -- Anathement
---#enchrebate50 41  -- Second Sun
-#enchrebate50 222 -- Ench22 -- Rivers of Lava
-#neednoteat
-#clearmagic
-#magicskill 0 2
-#magicskill 5 1
-#magicskill 9 3
-#custommagic 5248 100
-#gcost 10010
-#end
 
 #selectmonster 1972  -- Warbred
 #montag 1055
@@ -88855,16 +89035,6 @@ Cost 28 RP."
 #darkpower 2
 #end
 
-#selectmonster 2510  -- Lavaborn
-#neednoteat
-#end
-
-#selectmonster 2511  -- Lavaborn Comm
-#magicskill 0 1
-#custommagic 1024 20  -- 20% E
-#neednoteat
-#end
-
 #selectmonster 2513  -- Cave Spider
 #unsurr 2
 #size 4
@@ -88932,10 +89102,6 @@ Cost 28 RP."
 #mor 13 -- +1
 #mr 13 -- +1
 #bodyguard 3
-#end
-
-#selectmonster 2601  -- Turan Sorcerer
-#neednoteat
 #end
 
 
@@ -89685,7 +89851,7 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 #selectmonster 3065  -- Marble Lion
-#quadruped
+#lizard -- Quadruped bugged
 #end
 
 #selectmonster 3068  -- Kusarikku
@@ -89833,7 +89999,7 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 #selectmonster 3232  -- Iron Fly
-#quadruped
+#lizard -- Quadruped bugged
 #end
 
 #selectmonster 3256  -- Great Bear
@@ -89950,19 +90116,6 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 
 #selectmonster 3398
 #maxage 525
-#end
-
-#selectmonster 3394  -- Serpent of the Underworld
-#clearmagic
-#clearweapons
-#gcost 230
-#magicskill 5 2
-#prot 20
-#woundfend 2
-#gold 20
-#diseaseres 100
-#weapon 1576 -- Golden Antlers
-#weapon 532  -- Tail Sweep
 #end
 
 #selectmonster 3399 -- Thyrmsgode
@@ -112437,6 +112590,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 2
 #homecom 8138
 #homecom 581
+#homecom 1968
 #homecom 8139
 #homecom 8238
 #end
@@ -112829,6 +112983,20 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 1272 -- oni (m)
 #homemon 1274 -- kuro (m)
 #homemon 3084 -- amano
+#end
+
+#newsite 2602
+#name "Seven Sages"
+#level 0
+#rarity 5
+#path 5
+#look 1
+--#homecom 7500
+#homecom 7501
+#homecom 7502
+#homecom 7503
+#homecom 7504
+#homecom 7505
 #end
 
 
@@ -115493,9 +115661,11 @@ Priests: Strong"
 #labcost 600
 #templecost 600
 #startsite "Sipapu"
+
 #futuresite "EA Chaco Summons"
 #futuresite "EA Chaco Summons Continued"
 #futuresite "EA Chaco Heroes"
+
 #templepic 31
 #likespop 62  -- deer tribe
 #likespop 78  -- wolf tribe
@@ -115529,6 +115699,22 @@ Priests: Strong"
 #addrecunit 6783 -- Chacoan Armored Warrior
 #addrecunit 6784 -- Chacoan Noble Warrior
 #addforeignunit 6778 -- Atlatl Warrior
+
+--#homerealm 10
+#addgod 158 -- Oracle
+#addgod 8466 -- Idol of Harvest
+#addgod 8454 -- Spirit of the Well
+#addgod 8447 -- Idol of Watery Wisdom
+#addgod 656 -- Fountain of Blood
+
+#addgod 216 -- F Dragon
+#addgod 265 -- W Dragon
+#addgod 266 -- N Dragon
+#addgod 3641 -- E Dragon
+#addgod 3710 -- A Dragon
+#addgod 3888 -- Dracolich
+#addgod 269 -- Wyrm
+
 #addgod 657  -- Monolith
 #addgod 606  -- Great Mother
 #addgod 180  -- Demilich
@@ -115590,9 +115776,9 @@ Priests: Strong"
 #buildfort 27  -- Fortified Villages
 #startcom 6798 -- Kikmongwi
 #startunittype1 6781 -- Spear Warrior
-#startunitnbrs1 30
+#startunitnbrs1 25
 #startunittype2 6779 -- Archer
-#startunitnbrs2 30
+#startunitnbrs2 25
 #startscout 6797 -- Scout
 #defcom1 6798 -- Kikmongwi
 #defcom2 6799 -- Village Elder
@@ -115613,6 +115799,8 @@ Priests: Strong"
 #moregrowth 1
 #moremagic 1
 #moreheat 1
+
+
 #end
 
 #selectnation 182
@@ -115667,6 +115855,21 @@ Priests: Strong"
 #addrecunit 6791 -- Chacoan Elite  Warrior
 #addrecunit 6792 -- Katsina Dancer
 #addrecunit 6793 -- Katsina Dancer
+
+#addgod 158 -- Oracle
+#addgod 8466 -- Idol of Harvest
+#addgod 8454 -- Spirit of the Well
+#addgod 8447 -- Idol of Watery Wisdom
+#addgod 656 -- Fountain of Blood
+
+#addgod 216 -- F Dragon
+#addgod 265 -- W Dragon
+#addgod 266 -- N Dragon
+#addgod 3641 -- E Dragon
+#addgod 3710 -- A Dragon
+#addgod 3888 -- Dracolich
+#addgod 269 -- Wyrm
+
 #addgod 657 -- Monolith
 #addgod 2449 -- Idol of Sorcery
 #addgod 606 -- Great Mother
@@ -115805,6 +116008,21 @@ Priests: Strong"
 #addrecunit 6857 -- Chacoan Armored Warrior
 #addrecunit 6858 -- Chacoan Elite  Warrior
 #addrecunit 6859 -- Yaayapontsa Dancer
+
+#addgod 158 -- Oracle
+#addgod 8466 -- Idol of Harvest
+#addgod 8454 -- Spirit of the Well
+#addgod 8447 -- Idol of Watery Wisdom
+#addgod 656 -- Fountain of Blood
+
+#addgod 216 -- F Dragon
+#addgod 265 -- W Dragon
+#addgod 266 -- N Dragon
+#addgod 3641 -- E Dragon
+#addgod 3710 -- A Dragon
+#addgod 3888 -- Dracolich
+#addgod 269 -- Wyrm
+
 #addgod 657 -- Monolith
 #addgod 2449 -- Idol of Sorcery
 #addgod 606 -- Great Mother
@@ -115939,6 +116157,21 @@ Priests: Strong, can Blood Sacrifice"
 #addrecunit 6761 -- Enslaved Warrior
 #addrecunit 6762 -- Sitecah Warrior
 #homerealm 5
+
+#addgod 158 -- Oracle
+#addgod 8466 -- Idol of Harvest
+#addgod 8454 -- Spirit of the Well
+#addgod 8447 -- Idol of Watery Wisdom
+#addgod 656 -- Fountain of Blood
+
+#addgod 216 -- F Dragon
+#addgod 265 -- W Dragon
+#addgod 266 -- N Dragon
+#addgod 3641 -- E Dragon
+#addgod 3710 -- A Dragon
+#addgod 3888 -- Dracolich
+#addgod 269 -- Wyrm
+
 #addgod 657 -- Monolith
 #addgod 606 -- Great Mother
 #addgod 180 -- Demilich
@@ -116498,7 +116731,7 @@ Priests: Average, Spirit animals may appear to defend them in battles"
 #coastfortcom 8091 -- Sea Sami Chieftain
 #coastfortcom 8096 -- Naejtti
 
-
+#homerealm 10
 #addgod 210
 #addgod 244
 #addgod 245
@@ -117339,10 +117572,6 @@ Priests: Average"
 #addgod 8474 -- Ancestral Barrow
 #addgod 8457 -- Spirit of Bones
 #addgod 8354 -- Great White Stag
-#delgod 216  -- Red Dragon
-#delgod 265  -- Blue Dragon
-#delgod 266  -- Green Dragon
-#delgod 269  -- Wyrm
 #delgod 251  -- Great Sage
 #delgod 245  -- Master Enchanter
 #delgod 244  -- Arch Mage
@@ -117475,10 +117704,6 @@ Priests: Average, can cure disease"
 #addgod 8474 -- Ancestral Barrow
 #addgod 8457 -- Spirit of Bones
 #addgod 8354 -- Great White Stag
-#delgod 216  -- Red Dragon
-#delgod 265  -- Blue Dragon
-#delgod 266  -- Green Dragon
-#delgod 269  -- Wyrm
 #delgod 251  -- Great Sage
 #delgod 245  -- Master Enchanter
 #delgod 244  -- Arch Mage
@@ -117605,10 +117830,6 @@ Priests: Average"
 #addgod 8474 -- Ancestral Barrow
 #addgod 8457 -- Spirit of Bones
 #addgod 8354 -- Great White Stag
-#delgod 216  -- Red Dragon
-#delgod 265  -- Blue Dragon
-#delgod 266  -- Green Dragon
-#delgod 269  -- Wyrm
 #delgod 251  -- Great Sage
 #delgod 245  -- Master Enchanter
 #delgod 244  -- Arch Mage
@@ -118697,6 +118918,11 @@ Priests: Average"
 #end
 
 #selectnation 16 -- EA Abysia
+#summary "Race: Radiates heat, fire resistance, prefers Heat scale +3, wasteland survival. Death and Growth scales have half the standard effect on income and population growth and no effect on supplies.
+Military: Very heavy infantry, no missile weapons, salamanders. Abysian natprot increases with Heat scales.
+Magic: Fire, Blood, Astral, some Earth and very little Death
+Priests: Powerful, can perform blood sacrifices"
+
 #hero1 1667  -- Malphas, Warlock
 #hero2 8139 -- Malikastis, Experiment
 #multihero1 8138 -- Child of Anthrax
@@ -119124,6 +119350,7 @@ Oni will collect due tax from populations with unrest, partially recuperating lo
 #futuresite "Blessing of Fortune"
 #futuresite "EA Ur Summons"
 #futuresite "EA Ur Summons Continued"
+#futuresite "Seven Sages"
 #futuresite "EA Ur Heroes"
 #end
 
@@ -119864,6 +120091,11 @@ Dominion: Laws may be enacted that ban blood and increase scales"
 #end
 
 #selectnation 63 -- MA Abysia
+#summary "Race: Radiates heat, fire resistance, prefers Heat scale +3, wasteland survival. Death and Growth scales have half the standard effect on income and population growth and no effect on supplies.
+Military: Heavy infantry, no missile weapons, salamanders. Abysian natprot increases with Heat scales.
+Magic: Fire, Blood, Astral, some Earth
+Priests: Powerful, can perform blood sacrifices"
+
 #hero1 581  -- Anathemat Warlock
 #hero2 867  -- Slayer
 #hero3 539  -- Rage Lord
@@ -121047,9 +121279,15 @@ Bless bonuses: Poison Resistance +10"
 #end
 
 #selectnation 104 -- LA Abysia
+#summary "Race: Humanbred Abysians. Fire resistance, prefers Heat scale +2, wasteland survival. Death and Growth scales have half the standard effect on income and population growth and no effect on supplies.
+Military: Light and heavy infantry, axe throwers. Pureblood Abysian natprot increases with Heat scales.
+Magic: Fire, Blood, Astral, Death, some Earth
+Priests: Powerful, can perform blood sacrifices"
+
 #hero1 581  -- Anathemant Warlock
-#hero2 8238 -- Anathemant Hierophant
-#hero3 8139 -- Experiment
+#hero2 1968 -- Rachis
+#hero3 8238 -- Anathemant Hierophant
+#hero4 8139 -- Experiment
 #multihero1 8138 -- Child of Anthrax
 #uwbuild 1
 #addgod 156 -- Cyclops
@@ -127902,7 +128140,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #name "King of Ghosts"
 #descr "The caster petitions the Hell King for the services of Zhong Kui, the King of Ghosts. Fearsome and powerful in Death magic, undead who face the King will be bound to serve him forever. Whilst Zhong Kui is in the world this spell will have no further effect if cast again."
 #school 0
-#researchlevel 9
+#researchlevel 8
 #path 0 5
 #pathlevel 0 5
 #effect 10089
@@ -131152,7 +131390,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #name "Mists of the Blessed Isle"
 #descr "The caster calls on the mists of the Blessed Isle to descend upon the battlefield. The strange rolling fog contains images and sounds that will confuse the enemy army, causing friend to attack friend. Only those of strong will can ignore the illusions and pierce the glamour."
 #details "Confusion check 50% every turn. Confused targets move randomly and might attack friend or foe."
-#researchlevel 9
+#researchlevel 8
 #school 4
 #path 0 7
 #path 1 1
@@ -133812,7 +134050,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 2948
 #name "Contact the Seven Sages"
-#descr "The caster calls to one of the first seven Apkallu or Sages to aid them in the battle for Ascension. When Ur was still just a small settlement ages ago, seven celestial spirits were tasked with guiding the fledging nation. They took mortal shapes to teach the Enkidu the basics of civilization. Most of these sages took grand shapes, beautiful and mighty and have now passed into the Celestial realm. The caster does not know which Apkallu will answer the call, however Adapa the seventh sage was gifted with good health and longevity for his humility and remains in the realm of men."
+#descr "The caster calls to one of the first seven Apkallu or Sages to aid them in the battle for Ascension. When Ur was still just a small settlement ages ago, seven celestial spirits were tasked with guiding the fledging nation. They took mortal shapes to teach the Enkidu the basics of civilization. Most of these sages took grand shapes, beautiful and mighty and have now passed into the Celestial realm. The caster does not know which Apkallu will answer the call, however the first and seventh remain in the realm of men and cannot answer the call."
 #school 0
 #researchlevel 8
 #path 0 2
