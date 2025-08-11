@@ -48478,6 +48478,9 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 16 -- +1
 #mor 16 -- +1
 #mr 15 -- +1
+#weapon 778 -- tail flipper
+#weapon 1808 -- Repelling Barbs
+#poisonarmor 3
 #float
 #older 49
 #expertleader
@@ -48500,6 +48503,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 16 -- +1
 #mor 16 -- +1
 #mr 15 -- +1
+#weapon 1808 -- Repelling Barbs
+#poisonarmor 3
 #older 49
 #expertleader
 #clearmagic
@@ -48521,6 +48526,9 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 16 -- +1
 #mor 15 -- +1
 #mr 14 -- +0
+#weapon 778 -- tail flipper
+#weapon 1808 -- Repelling Barbs
+#poisonarmor 3
 #float
 #older 49
 #landshape 8601
@@ -48538,6 +48546,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 15 -- +1
 #mor 15 -- +1
 #mr 14 -- +0
+#weapon 1808 -- Repelling Barbs
+#poisonarmor 3
 #older 49
 #watershape 8600
 #nametype 159 -- Oceania Male
@@ -88788,6 +88798,18 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spr1 "vanilla/tritonrider1.tga"
 #spr2 "vanilla/tritonrider2.tga"
 #armor 134
+#end
+
+#selectmonster 2392 -- Aphroi Heirophant Water
+#weapon 778 -- tail flipper
+#end
+
+#selectmonster 2399 -- Aphroi Lord Water
+#weapon 778 -- tail flipper
+#end
+
+#selectmonster 2401 -- Aphroi Water
+#weapon 778 -- tail flipper
 #end
 
 #selectmonster 3644
