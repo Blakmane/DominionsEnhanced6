@@ -151196,12 +151196,12 @@ This spell can only be cast in a deep water province."
 #copyspell 945 -- Call Kraken
 #name "Call Dragonfish"
 #descr "The caster creates a light in the deep to call a Dragonfish and bargain for its services. The Dragonfish is an intelligent deep sea fish that lives only in the deepest gorges of the ocean. Dragonfish are potent wielders of magic that sometimes align themselves with the Deep Ones. Adapted for the depths, they can turn their teeth invisible and use the lantern hanging from their chin to communicate with other dragonfish or attract food into their jaws."
-#researchlevel 5
+#researchlevel 6
 #path 0 0 -- F2
 #pathlevel 0 2
 #path 1 2 -- W2
 #pathlevel 1 2
-#fatiguecost 1500
+#fatiguecost 1800
 #effect 10021
 #nreff 1
 #damage 9149
