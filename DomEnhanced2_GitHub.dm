@@ -3848,6 +3848,14 @@
 #dmg 0
 #end
 
+#newweapon 1898 -- Invisible bite
+#copyweapon 764 -- Unseen Sword
+#name "Invisible Maw"
+#dmg 4
+#att 0
+#def 0
+#bonus
+#end
 
 
 -- END OF NEW WEAPONS
@@ -5051,6 +5059,12 @@
 
 #selectarmor 192  -- Magic Furs
 #rcost 5
+#end
+
+#selectarmor 201 -- Armor of Knights
+#prot 21
+#def -1
+#enc 2
 #end
 
 #selectarmor 206  -- Obsidian Cuirass
@@ -36002,6 +36016,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #armor 75  -- Fire Plate
 #armor 162  -- Crested Helmet
 #domimmortal
+#reformtime 3
 #rcost 1
 #nametype 114
 #xpshape 50
@@ -48486,6 +48501,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 16 -- +1
 #mor 16 -- +1
 #mr 15 -- +1
+#clearweapons
+#weapon 651 -- bronze lance
+#weapon 778 -- tail flipper
+#weapon 1808 -- Repelling Barbs
+#poisonarmor 3
 #float
 #older 49
 #expertleader
@@ -48508,6 +48528,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 16 -- +1
 #mor 16 -- +1
 #mr 15 -- +1
+#clearweapons
+#weapon 651 -- bronze lance
+#weapon 55 -- hoof
+#weapon 1808 -- Repelling Barbs
+#poisonarmor 3
 #older 49
 #expertleader
 #clearmagic
@@ -48529,6 +48554,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 16 -- +1
 #mor 15 -- +1
 #mr 14 -- +0
+#clearweapons
+#weapon 651 -- bronze lance
+#weapon 778 -- tail flipper
+#weapon 1808 -- Repelling Barbs
+#poisonarmor 3
 #float
 #older 49
 #landshape 8601
@@ -48546,6 +48576,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 15 -- +1
 #mor 15 -- +1
 #mr 14 -- +0
+#clearweapons
+#weapon 651 -- bronze lance
+#weapon 55 -- hoof
+#weapon 1808 -- Repelling Barbs
+#poisonarmor 3
 #older 49
 #watershape 8600
 #nametype 159 -- Oceania Male
@@ -56019,6 +56054,41 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #end
 
 
+#newmonster 9149 -- eel mage
+#spr1 "wateroverhaul/eelmage1.png"
+#spr2 "wateroverhaul/eelmage2.png"
+#name "Dragonfish"
+#descr "The Dragonfish is an intelligent deep sea fish that lives only in the deepest gorges of the ocean. Dragonfish are potent wielders of fire magic that sometimes align themselves with the Deep Ones. Adapted for the depths, they can turn their teeth invisible and use the lantern hanging from their chin to communicate with other dragonfish or attract food into their jaws."
+#hp 24
+#str 15
+#att 10
+#def 9
+#prec 9
+#prot 8
+#size 5
+#mr 16
+#mor 16
+#enc 2
+#mapmove 14
+#ap 11
+#gcost 0
+#eyes 2
+#weapon 1898 -- Invisible maw
+#miscshape
+#aquatic
+#maxage 1000
+#nametype 153 -- Agarthan
+#poisonres 5
+#fireres 10
+#spiritsight
+#poorleader
+#okmagicleader
+#clearmagic
+#magicskill 0 2
+#magicskill 2 1
+#custommagic 19072 100 -- FWSG
+#custommagic 19072 100
+#end
 
 
 
@@ -61938,6 +62008,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #float
 #morale 9
 #researchbonus -2
+#poorleader
 #poormagicleader
 #armor 522 -- pearl cap
 #magicskill 2 1
@@ -62061,6 +62132,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #mr 13
 #clearmagic
 #clearweapons
+#poorleader
 #poormagicleader
 #holy
 #weapon 12 -- Mace
@@ -63477,7 +63549,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 451 -- Horse Brother
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 1553 -- Agema Companion
@@ -63577,7 +63649,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 450 -- Horse Brother
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 1916 -- Veliki Knyaz
@@ -64166,22 +64238,6 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 2390 -- Pelagian Captain poison barbs weapon
-#weapon 1808
-#end
-
-#selectmonster 2399 -- Aphroi Lord poison barbs weapon
-#weapon 1808
-#end
-
-#selectmonster 2400 -- Aphroi Lord poison barbs weapon
-#weapon 1808
-#end
-
-#selectmonster 2401 -- Aphroi poison barbs weapon
-#weapon 1808
-#end
-
-#selectmonster 2402 -- Aphroi poison barbs weapon
 #weapon 1808
 #end
 
@@ -66270,7 +66326,6 @@ Only three Queens of Elemental Water are known to exist."
 
 
 
-
 -- FOLDUNITS
 
 
@@ -66611,7 +66666,7 @@ Only three Queens of Elemental Water are known to exist."
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 1
@@ -66728,7 +66783,7 @@ Only three Queens of Elemental Water are known to exist."
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 1
@@ -66824,7 +66879,7 @@ Only three Queens of Elemental Water are known to exist."
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 1
@@ -67231,7 +67286,7 @@ Only three Queens of Elemental Water are known to exist."
 #hp 10
 #mr 18
 #copyspr 284  -- Wolf
-#quadruped
+#lizard -- Quadruped bugged
 #beastmaster 1
 #goodleader
 #spiritsight
@@ -67619,7 +67674,7 @@ Only three Queens of Elemental Water are known to exist."
 #researchbonus -8
 #woundfend 2
 #fixedname "Tatanka"
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 1
@@ -67999,7 +68054,7 @@ Only three Queens of Elemental Water are known to exist."
 #woundfend 4
 #clearweapons
 #cleararmor
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 10
 #enc 1
@@ -68043,7 +68098,7 @@ Only three Queens of Elemental Water are known to exist."
 #woundfend 3
 #clearweapons
 #cleararmor
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 10
 #enc 1
@@ -68088,7 +68143,7 @@ Only three Queens of Elemental Water are known to exist."
 #woundfend 3
 #clearweapons
 #cleararmor
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 10
 #enc 1
@@ -69189,7 +69244,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #researchbonus -8
 #heal
 #woundfend 2
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 11
 #ap 24
@@ -69334,10 +69389,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #goodmagicleader
 #unsurr 5
 #poisonres 15
+#weapon 1896 -- Tentacle
 #weapon 1896  -- Tentacle
-#weapon 1896  -- Tentacle
-#weapon 1896  -- Tentacle
-#weapon 1896  -- Tentacle
+#weapon 1896 -- Tentacle
+#weapon 1896 -- Tentacle
 #itemslots 786432
 #clearmagic
 #magicskill 3 1
@@ -70214,7 +70269,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 10
 #enc 1
@@ -70257,7 +70312,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 10
 #enc 1
@@ -70475,7 +70530,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 10
 #enc 1
@@ -70520,7 +70575,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 0
@@ -70660,7 +70715,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #researchbonus -8
 #woundfend 4
 #fixedname "Nanook"
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 1
@@ -70709,7 +70764,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #heal
 #woundfend 3
 #fixedname "Tsathoggua"
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 1
@@ -71153,7 +71208,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #def 14
 #mr 18
 #fixedname "Nine Tails"
-#quadruped
+#lizard -- Quadruped bugged
 #size 3
 #prec 13
 #enc 2
@@ -71513,7 +71568,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #name "Terror of the Deep"
 #descr "This huge creature was born at the dawn of time, when monsters and giants roamed the world. Since ancient times is has slumbered dreamlessly in the deepest gorges of the ocean where even the faintest sunlight does not reach. Now awoken, it is worshipped by the lesser beings of the ocean. The Terror of the Deep is amphibian and can leave its watery home when required. It rarely communicates with its followers, however if displeased it opens its enormous mouth and swallows the unfortunate whole. Now it is out to become the true God to extend its rule above the waves."
 #diseaseres 100
-#gcost 300
+#gcost 260
 #homerealm 9  -- Deeps
 #startdom 3
 #pathcost 60
@@ -71555,7 +71610,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #name "Prince of the Deeps"
 #descr "The Prince of the Deeps is an Elemental Prince of water that has taken the role of a Pretender God. Dissatisfied with ruling over the deepest waters he has decided to claim the Throne of Heaven and rule over all the waters of the world. The Prince of the Deeps is composed entirely of water and is very difficult to harm. He can regenerate wounds and will eventually heal any injury over time. The Prince of the Deeps is skilled in water magic and can bring warriors under the water."
 #diseaseres 100
-#gcost 210
+#gcost 260
 #homerealm 9  -- Deeps
 #startdom 3
 #pathcost 40
@@ -71576,9 +71631,9 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #darkvision 100
 #spiritsight
 #weapon 90  -- Crush
-#weapon 90  -- Crush
 #expertleader
-#regeneration 20
+#regeneration 10
+#uwregen 10
 #poisonres 15
 #giftofwater 500
 #slashres
@@ -71586,7 +71641,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #pierceres
 #aquatic
 #neednoteat
-#uwregen 10
 #maxage 3000
 #startage 1000
 --#itemslots 860678 -- No feet
@@ -72185,7 +72239,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #def 11
 #mr 20
 #fixedname "Gyūmaō"
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 1
@@ -75126,7 +75180,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Statue of War"
 #descr "The Statue of War is a primordial spirit of strife and turmoil once bound in a huge statue by a previous Pantokrator to save the world from its destructive influences. With the Pantokrator gone, its powers are unleashed and strife and war have once more come to the world. Barbarian warriors gather in the land of the statue to wreak havoc and plunder. More barbarians arrive if the turmoil of the province is high. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 8  -- India
 #startdom 4
 #pathcost 40
@@ -75134,6 +75188,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #mor 30
 #mastersmith 0
 #miscshape
+#spiritsight
 #itemslots 786432
 #clearmagic
 #magicskill 0 2
@@ -75770,7 +75825,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #spr1 "magicenhanced/eeitzpapalotl.tga"
 #spr2 "magicenhanced/eeitzpapalotl2.tga"
 #name "Obsidian Butterfly"
-#descr "The Obsidian Butterfly is a giant of divine heritage. In ages past she lived amongst the stars as Queen of the Tzitzimitl. She appears as a terrifying skeletal warrior with great black butterfly wings. These wings are tipped with obsidian as sharp as a knife blade. The Butterfly can call Tzitzimitl to her aid each month. When the Star Demons were cast down into the Terrestrial sphere she also fell and was imprisoned below the earth. Now, with the Pantokrator gone, she has emerged to seize this world for her children."
+#descr "The Obsidian Butterfly is a giant of divine heritage. In ages past she lived amongst the stars as Queen of the Tzitzimitl. She appears as a terrifying skeletal warrior with great black butterfly wings. These wings are tipped with obsidian as sharp as a knife blade. When the Star Demons were cast down into the Terrestrial sphere she also fell and was imprisoned below the earth. Now, with the Pantokrator gone, she has emerged to seize this world for her children."
 #diseaseres 100
 #gcost 250
 #homerealm 6
@@ -76353,7 +76408,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
-#quadruped
+#snake
 #fixedname "Cirein-cròin"
 #size 9
 #prec 12
@@ -76379,7 +76434,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #end
 
 #newmonster 10014 -- Ceiran Silverfish
-#copystats 2858
 #copyspr 2858 -- Large Fish
 #name "Silver Fish"
 #descr "The Great Thalassid is an ancient and cunning sea creature born at the dawn of time, when monsters and giants roamed the world. Over the millennia its kin were hunted to extinction, forcing it to hide in a cold corner of the world's oceans. With the Pantokrator gone, the creature has finally emerged to seek vengeance upon its ancient foes. The Great Thallasid has power over misdirection and can turn into a silver fish to pass undetected through hostile waters. It is surrounded by a shroud of glamour that will confuse attackers."
@@ -76399,6 +76453,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
+#snake
 #shapechange 10013 -- Ceiran
 #fixedname "Cirein-cròin"
 #maxage 1000
@@ -76407,6 +76462,13 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #darkvision 50
 #goodleader
 #female
+#size 1
+#clearweapons
+#weapon 740
+#aquatic
+#float
+#mapmove 20
+#enc 1
 #itemslots 3932160
 #clearmagic
 #magicskill 7 3
@@ -76668,7 +76730,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #magicskill 6 1
 #magicskill 7 1
 #end
-
 
 
 
@@ -80483,6 +80544,8 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #def 9
 #mr 18
 #neednoteat
+#icenatprot -1
+#prot 4
 #itemslots 2040326
 #clearmagic
 #magicskill 0 1
@@ -81779,6 +81842,9 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #mr 18
 #inspiringres 1
 #researchbonus 10
+#clearweapons
+#weapon 7 -- quarterstaff
+#weapon 778 -- tail flipper
 #itemslots 860678
 #clearmagic
 #magicskill 2 1
@@ -82242,7 +82308,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3204 -- Grey One
 #descr "The Grey Ones, Graeae, are three crone sisters spawned by Phorkys, Father of Monsters, at the dawn of time. When the Pantokrator reformed the world he slew or banished all monsters that threatened the world. The Graeae, while not nearly as powerful as their father, were imprisoned and chained in a stygian cavern as a precaution. For millennia the crones have waited, getting older and angrier for every year that passed. Now with the Pantokrator gone, their shackles are weakening and their malice can be felt by those who dream. The Grey Ones are incredibly old and their bodies are frail and weak. Two of the sisters have lost their eyesight and now the three of them share a single eye. All three sisters use death, water and glamour magic, but they have all mastered different magical paths. The first of the Sisters, 'the Terrible', uses blood and nature magic. The second sister, known as 'the Warlike' uses fire and earth magic and the third sister, 'the Destroyer' uses air and astral magic."
 #diseaseres 100
-#gcost 200
+#gcost 180
+#startdom 1
 #pathcost 20
 #hp 10
 #prot 0
@@ -83568,7 +83635,9 @@ He is accompanied by the souls of his subjects that have followed him into the w
 
 
 
+
 -- ENDUNITS
+
 
 
 
@@ -89148,6 +89217,35 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 
 
+#selectmonster 2399 -- Aphroi Lord
+#clearweapons
+#weapon 651 -- bronze lance
+#weapon 778 -- tail flipper
+#weapon 1808 -- Repelling Barbs
+#end
+
+#selectmonster 2400 -- Aphroi Lord
+#clearweapons
+#weapon 651 -- bronze lance
+#weapon 55 -- hoof
+#weapon 1808 -- Repelling Barbs
+#end
+
+#selectmonster 2401 -- Aphroi
+#clearweapons
+#weapon 651 -- bronze lance
+#weapon 778 -- tail flipper
+#weapon 1808 -- Repelling Barbs
+#end
+
+#selectmonster 2402 -- Aphroi
+#clearweapons
+#weapon 651 -- bronze lance
+#weapon 55 -- hoof
+#weapon 1808 -- Repelling Barbs
+#end
+
+
 
 #selectmonster 2425  -- Bard
 #incunrest -50
@@ -90083,6 +90181,7 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #magicskill 1 1
 #magicskill 4 1
 #custommagic 20352 100 -- FAWESG
+#startage 90
 #end
 
 #selectmonster 3158 -- Prince Consort
@@ -108809,13 +108908,17 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #rarity 5
 #path 2 -- Water
+#homecom 9143 -- yeti crab
 #homemon 1664 -- Monster Fish
 #homemon 7345 -- returned shambler
 #homemon 7346 -- returned pillar
 #homecom 7348 -- returned priest
 #homecom 7263 -- ghost king
+#homecom 9144 -- vampire squid
+#homecom 9149 -- dragonfish
 #homecom 7226 -- dagon
 #homecom 7276 -- cetus
+
 #look 6
 #end
 
@@ -113043,6 +113146,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 9143 -- yeti crab
 #homemon 1664 -- monster fish
 #homecom 9144 -- vampire squid
+#homecom 9149 -- dragonfish
 #homecom 7226 -- dagon
 #homecom 9146 -- Silent One
 #homecom 9147 -- Silent One
@@ -116259,8 +116363,7 @@ Priests: Strong"
 #addgod 8281 -- Titan of the Dawn
 #addgod 8282 -- Diyin of Earth
 
-#natureblessbonus 0
-#waterblessbonus 0
+#blessbonus 1
 #fortera 2
 #halfdeathinc
 #halfdeathpop
@@ -116288,6 +116391,7 @@ Priests: Strong"
 #guardmult 18
 #moregrowth -1
 #moreheat 1
+#fortheatscaleres 1
 #end
 
 #selectnation 183
@@ -120471,6 +120575,9 @@ Priests: Powerful, can perform blood sacrifices"
 #cheapgod20 8446 -- Pillar of Flame
 #delgod 2791  -- Earth Serpent
 #addgod 8418 -- Peacock Angel
+
+#fortcoldscaleres 2
+
 #futuresite "MA Caelum Summons"
 #futuresite "Yazatas"
 #futuresite "Daevas"
@@ -126223,7 +126330,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2367
 #name "Divine Wrath"
 #descr "The priest unleashes divine wrath upon the battlefield. A number of warriors at the battle will be blasted with blindness, disease and perhaps death. Any troops that are not sacred in the eyes of the coming God may be affected, even friendly troops, however those sacred to a false Pretender are more likely to be affected more seriously. This spell affects the battlefield for a short while and cannot be prepared or cast again whilst it is in effect."
-#details "Around 10% of units and all enemy sacreds must check MR or become blinded, diseased or suffer damage. Friendly sacred units are immune to the effects."
+#details "Around 10% of units and all enemy sacreds must check MR or become blinded, diseased or suffer damage. Friendly sacred units are immune to the effects.
+Can only be cast once per combat round."
 #researchlevel 0
 #school 7
 #path 0 9
@@ -143320,6 +143428,7 @@ All effects scale with friendly Dominion."
 #fatiguecost 0
 #casttime 150
 #restricted 181 -- EA Chaco
+#ainocast 1
 #end
 
 #selectspell 3627
@@ -143333,6 +143442,7 @@ All effects scale with friendly Dominion."
 #pathlevel 0 1
 #fatiguecost 0
 #restricted 181 -- EA Chaco
+#ainocast 1
 #end
 
 
@@ -150408,21 +150518,6 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 --- NEW HOLY SPELLS FOR GLAMOUR
 
 #selectspell 4247
-#copyspell 769 -- Blurred Body
-#name "Prayer of Illusion"
-#descr "The priest utters a prayer that cloaks their form in illusion, making them difficult to strike in melee."
-#details "Attacking units have their attack skill reduced by 2. Attackers with true sight or spirit sight ignore the Blurred condition as do blind ones."
-#researchlevel 0
-#school 7
-#path 0 9
-#pathlevel 0 1
-#fatiguecost 0
-#casttime 100
-#godpathspell 7
-#spec 8404992 -- UWOK
-#end
-
-#selectspell 4247
 #copyspell 1311 -- Slumber
 #name "Dream of Heresy"
 #descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. They will fall into a deep slumber, plagued with nightmares that attack and ridicule their most deeply held beliefs."
@@ -151014,6 +151109,7 @@ This spell can only be cast in a deep water province."
 #damage 9143 -- Yeti Crab
 #onlygeosrc 2048  -- Deep Sea
 #restricted 43 -- Atlantis
+#restricted 206 -- Dirgen
 #end
 
 #selectspell 4281 -- Vampire Squid
@@ -151026,12 +151122,13 @@ This spell can only be cast in a deep water province."
 #path 1 2 
 #pathlevel 0 3
 #pathlevel 1 1
-#fatiguecost 1500
+#fatiguecost 1600
 #effect 10021
 #nreff 1
 #damage 9144 -- Vampire Squid
 #onlygeosrc 2048  -- Deep Sea
 #restricted 43 -- Atlantis
+#restricted 206 -- Dirgen
 #end
 
 #selectspell 4282 -- Atlantis trade winds
@@ -151078,6 +151175,38 @@ This spell can only be cast in a deep water province."
 #damage -1076 -- Silent One
 #onlyatsite 128 -- The Basalt City
 #restricted 43 -- Atlantis
+#end
+
+#selectspell 4285
+#copyspell 769 -- Blurred Body
+#name "Prayer of Illusion"
+#descr "The priest utters a prayer that cloaks their form in illusion, making them difficult to strike in melee."
+#details "Attacking units have their attack skill reduced by 2. Attackers with true sight or spirit sight ignore the Blurred condition as do blind ones."
+#researchlevel 0
+#school 7
+#path 0 9
+#pathlevel 0 1
+#fatiguecost 0
+#casttime 100
+#godpathspell 7
+#spec 8404992 -- UWOK
+#end
+
+#selectspell 4285 -- Dragonfish
+#copyspell 945 -- Call Kraken
+#name "Call Dragonfish"
+#descr "The caster creates a light in the deep to call a Dragonfish and bargain for its services. The Dragonfish is an intelligent deep sea fish that lives only in the deepest gorges of the ocean. Dragonfish are potent wielders of magic that sometimes align themselves with the Deep Ones. Adapted for the depths, they can turn their teeth invisible and use the lantern hanging from their chin to communicate with other dragonfish or attract food into their jaws."
+#researchlevel 5
+#path 0 0 -- F2
+#pathlevel 0 2
+#path 1 2 -- W2
+#pathlevel 1 2
+#fatiguecost 1500
+#effect 10021
+#nreff 1
+#damage 9149
+#restricted 43 -- Atlantis
+#restricted 206 -- Dirgen
 #end
 
 
@@ -151162,7 +151291,6 @@ This spell can only be cast in a deep water province."
 #descr "With this spell, a mage can fire many burning missiles towards his enemies. A powerful Fire mage can fire the darts in rapid succession over long range. The spell is quite useless against heavily armored men and is best used to eliminate or scare away more poorly armored troops."
 #damage 10
 #nreff 1005 -- 6+
-#researchlevel 1
 #end
 
 #selectspell 246 -- Freezing touch
@@ -156703,14 +156831,14 @@ This will also prevent their skin from drying out."
 #selectitem 771
 #spr "magicenhanced/eeipaladin.tga"
 #name "Armor of the Lionheart"
-#descr "This armor was made for a Paladin and shines with the glory of the Lord. It is extremely well made and is lighter than a normal suit of plate armor, but is strong enough to defend against most blows. The armor is designed to be worn whilst mounted."
+#descr "This armor was made for a Paladin and shines with the glory of the Lord. It is extremely well made and is lighter than a normal suit of plate armor, but is strong enough to defend against most blows. The armor is designed to be worn whilst mounted and will increase the wearer's skill at riding."
 #constlevel 5
 #mainpath 0
 #mainlevel 1
 #type 5
 #armor "Armor of Knights"
 #awe 1
-#onlymounted
+#skilledrider 3
 #restricted 61
 #end
 
@@ -159035,6 +159163,7 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 235 -- Robe of Missile Protection
+#constlevel 1
 #itemcost1 -60
 #end
 
