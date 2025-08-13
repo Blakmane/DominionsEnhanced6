@@ -1773,7 +1773,10 @@
 #name "Shrimp Punch"
 #len 1
 #dmg 7
+#att 2
 #nratt 2
+#ammo 1020
+#skip
 #bonus
 #sound 42  -- Earth Trample
 #secondaryeffectalways 699  -- Small Area Stun
@@ -34845,12 +34848,14 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "magicenhanced/eemantisshrimp.tga"
 #spr2 "magicenhanced/eemantisshrimp2.tga"
 #name "Sea Killer"
-#descr "These colossal shrimps are larger than a Shambler and heavily armored. Their carapace makes them difficult to harm with normal weapons, however their most feared attribute is their punch. These creatures forelimbs are modified into dense clubs, and can be thrown with incredible force that will stun or kill their prey."
+#descr "These colossal shrimps are larger than a Shambler and heavily armored. Their carapace makes them difficult to harm with normal weapons, however their most feared attribute is their punch. These creatures forelimbs are modified into dense clubs, and can be thrown with incredible force that will stun or kill their prey. They can only use this punch a few times in combat before becoming exhausted by it."
 #weapon 1656 -- Shrimp Punch
+#weapon 300 -- Head Butt
 #lizard -- Quadruped bugged
 #size 6
-#hp 64
+#hp 46
 #prot 22
+#att 10
 #mr 8
 #mor 15
 #ap 12
@@ -51887,7 +51892,14 @@ Requires an Ippondatara present to recruit."
 #reclimit 1
 #gcost 10040
 #monpresentrec -1068 -- Anathement
-#enchrebate25p 106 -- Stoke the Smouldercone
+--#enchrebate25p 275 -- Ench75 -- Stoke the Smouldercone
+#descr "The first Abysians sprung from the Fires of Rhuax were large magmatic beings, barely resembling humans at all. Slowly these monstrosities developed into humanoids. With every generation, the Fires of Rhuax grew cooler in their bodies and the flaming Children of Rhuax became smoldering Abysians. The Burning One is an Abysian of prominent heritage, claiming succession from the Children of Rhuax. The Burning Ones are surrounded by flames and most of them are trained as priests or sacred warriors. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#neednoteat
+#icenatprot -1
+#prot 3
+#cleararmor
+#armor 570 -- Half Plate
+#armor 20 -- cap
 #end
 
 #newmonster 8893 -- Nonsacred Daeva
@@ -83798,7 +83810,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #neednoteat
 #cleararmor
 #icenatprot -1
-#prot 2
+#prot 3
 #armor 570 -- Half Plate
 #armor 20 -- Cap
 #end
@@ -83810,7 +83822,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #neednoteat
 #cleararmor
 #icenatprot -1
-#prot 2
+#prot 3
 #armor 570 -- Half Plate
 #armor 20 -- cap
 #end
@@ -83825,7 +83837,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #armor 570 -- Half Plate
 #armor 20 -- cap
 #armor 4 -- Tower Shield
-#prot 2
+#prot 3
 #end
 
 #selectmonster 84  -- Aby Infantry
@@ -83834,7 +83846,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Abysians are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to the cold. Abysian infantry uses heavy iron armor and heavy weapons that will not burn away in their smoldering hands. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #cleararmor
 #armor 570 -- Half Plate
 #armor 20 -- cap
@@ -83846,7 +83858,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/salamander85_2.png"
 #descr "The authority of the Abysian Warlords is limited to acts of war. In all other matters, Abysia is ruled by the Anathemants. Anathemant Salamanders are the holy priests of the Abysian faith. They take part in the public ceremonies where flames are lit on the grand ziggurats and processions of anathemant mage-priests circumambulate the temple grounds. Anathemants excel in Fire magic and use fire not only to incinerate infidels, but also to feed the anger inherent in the hearts of all Abysian warriors. The Anathemants practice human sacrifice to empower their Master's Dominion by the magic inherent in human blood. Anathemant Salamanders are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #icenatprot -1
-#prot 2
+#prot 3
 #montag 1068 -- Anathement
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #neednoteat
@@ -83880,7 +83892,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Warlocks of Smouldercone are Blood mages of great renown. They experiment with the summoning and binding of otherworldly beings and the creation of new species. Their most successful experimental achievements to date are the Demonbreds. The Warlocks are the true masters of Abysia, but rarely dabble in politics. Warlocks are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 90  -- Lava Warrior
@@ -83889,10 +83901,18 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "With the weakening of the Flame, there are no more Burning Ones born and Lava Warriors have replaced them as sacred warriors. Lava Warriors are the elite of the Abysian war machine. They are driven by an anger that turns into blind, berserk rage when they are wounded. These elite warriors train in the lava pits of the Smouldercone and are able to draw strength from the heat. They are very powerful in warm provinces, but cold will break down their great strength. Lava Warriors are armed with twin morning stars and serve the Anathemants without fear. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #cleararmor
 #icenatprot -1
-#prot 2
+#prot 3
 #armor 570 -- Half Plate
 #armor 20 -- cap
 #neednoteat
+#end
+
+#selectmonster 118  -- War Master
+#spr1 "vanilla/rago.png"
+#spr2 "vanilla/rago2.png"
+#neednoteat
+#icenatprot -1
+#prot 3
 #end
 
 #selectmonster 119  -- Warlord
@@ -83932,7 +83952,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Slayer is an Abysian assassin. He can pass unseen through enemy territories and try to assassinate enemy leaders. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 
@@ -83987,7 +84007,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #monpresentrec 89  -- Warlock
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 
@@ -83998,7 +84018,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/pyre990_2.png"
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1092  -- Sang Anathemant
@@ -84008,7 +84028,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #gcost 10010
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1536  -- Anointed of Rhuax
@@ -84019,7 +84039,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 --#enchrebate50 41  -- Second Sun
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #montag 1068 -- Anathement
-#gcost 10020
+#gcost 675
 #clearmagic
 #magicskill 0 4
 #magicskill 3 2
@@ -84047,7 +84067,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #douse 1
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1542  -- W Apprentice
@@ -84057,14 +84077,14 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #douse 1
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1543  -- Burning One
 #spr1 "vanilla/burningone1543_1.png"
 #spr2 "vanilla/burningone1543_2.png"
 #descr "The first Abysians sprung from the Fires of Rhuax were large magmatic beings, barely resembling humans at all. Slowly these monstrosities developed into humanoids. With every generation, the Fires of Rhuax grew cooler in their bodies and the flaming Children of Rhuax became smoldering Abysians. The Burning One is an Abysian of prominent heritage, claiming succession from the Children of Rhuax. The Burning Ones are surrounded by flames and most of them are trained as priests or sacred warriors. In warm lands they will be more difficult to harm, however the cold will make them brittle."
-#enchrebate25p 106  -- Stoke the Smouldercone
+--#enchrebate25p 275 -- Ench75 -- Stoke the Smouldercone
 #neednoteat
 #icenatprot -1
 #prot 3
@@ -84098,7 +84118,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #montag 1068 -- Anathement
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1699  -- EA Anathemant Dragon
@@ -84118,7 +84138,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "With the dilution of the True Blood, the pureblood Abysians feared that the old traditions might be lost to the Humanbred population. To preserve the old ways the slayers were incorporated in the sacred caste of the Anathemants and a Slayer Cult was formed. The Slayers were trained as priests and murder was declared a sacred act. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1966  -- Slayer Anathemant
@@ -84127,7 +84147,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "With the dilution of the True Blood, the pureblood Abysians feared that the old traditions might be lost to the Humanbred population. To preserve the old ways the slayers were incorporated in the sacred caste of the Anathemants and a Slayer Cult was formed. The Slayers were trained as priests and murder was declared a sacred act. The Slayer Anathemant is a prominent priest-assassin trained in the Temple of the Everburning Pyre. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1967  -- S Sanguine
@@ -84136,7 +84156,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "With the dilution of the True Blood, the pureblood Abysians feared that the old traditions might be lost to the Humanbred population. To preserve the old ways the slayers were incorporated in the sacred caste of the Anathemants and a Slayer Cult was formed. The Slayers were trained as priests and murder was declared a sacred act. The Slayer Sanguine is a prominent priest-assassin trained in the Temple Sanguine. They are taught the secret art of performing blood rituals without the help of blood slaves to sacrifice. Instead they cut themselves and offer their own sacred blood at the risk of their own lives. To increase their chance of staying alive, they are given sacred athames that drain the life force from living beings. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1968  -- Slayer Dragon
@@ -84144,7 +84164,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/slayerrachis1968_2.png"
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1969  -- A Salamander LA
@@ -84154,7 +84174,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #gcost 10010
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1970  -- LA Abysia Anathemant Dragon
@@ -84180,7 +84200,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Lava-borns are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to cold. Most Lava-born live in Abysia, but there are rumors of Lava-born kingdoms deep in the under-earth. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 2511  -- Lavaborn Comm
@@ -84191,7 +84211,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #custommagic 1024 20  -- 20% E
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 
@@ -84201,7 +84221,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/sorcerer2601_2.png"
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 
@@ -106788,6 +106808,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #blessreinvig 4
 #res 50
 #gold 100
+#gems 0 3
+#gems 3 3
 #end
 
 #newsite 2162
@@ -108787,6 +108809,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 --#homemon 2854 -- flame jelly
 #homemon 565 -- sea serpent
 #homemon 1234 -- asp turtle
+#homemon 642 -- giant lobster
+#homemon 7768 -- sea killer
 #end
 
 #newsite 2313
@@ -130183,7 +130207,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #selectspell 2645
 #name "Stoke the Smouldercone"
 #descr "The Smouldercone is the heart of the Abysian empire and from its magma pools the first Children of Rhuax were formed. With a great investment of magical energy the Smouldercone is invigorated and burns with intense splendour. The sight of the Smouldercone will increase faith amongst the Abysians and the Blessing of the true God will bring great strength and stamina to the faithful. Once cast the spell will only end if the casting mage dies. Abysians believe that if this occurs whilst the world runs with Rivers of Lava the Golden Age of Abysia will begin."
-#details "Capital produces 3 each of Fire and Earth gems per month, generates 3 extra Temple checks and your blessing grants +4 Str and +4 Reinvigoration. Burning Ones 25% cheaper to recruit."
+#details "Capital produces 3 each of Fire and Earth gems per month, generates 3 extra Temple checks and your blessing grants +4 Str and +4 Reinvigoration."
 #school 1
 #researchlevel 6
 #path 0 0
@@ -155400,7 +155424,7 @@ Can only be cast once per combat round."
 #mainlevel 2
 #secondarypath 4
 #secondarylevel 2
-#regeneration 10
+#reconst 10
 #hp 20
 #cursed
 #nofind
@@ -180790,6 +180814,1175 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_rare 25
 #setpoptype 107 --shamblers with shaman--
 #end
+
+
+
+-- START OF THEMATIC CAP TERRAIN
+
+
+
+
+--Clear capital terrain to 'plains'
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_owncapital 1 --only in capitals
+#remgeo 8395260 --Removes everything leaving only plain Terrain
+#end
+
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Roots of the Earth]"
+#addgeo 4096 --cave
+#end
+
+
+
+
+--Caves 
+
+#selectsite 110 --  EA and MA Agartha Roots of the Earth
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Roots of the Earth]"
+#addgeo 4096 --cave
+#end
+
+
+#selectsite 119 --EA Abysia Smouldercone--
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 16 --ea aby--
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 4096 --cave--
+#end
+
+
+
+#selectsite 1 --MA Abysia Smouldercone--
+#popgrowth 40
+#end
+
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 63 --ma aby--
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 4096 --cave--
+#end
+
+
+#selectsite 39 --LA Abysia--
+#popgrowth 40
+
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Temple Sanguine]"
+#addgeo 4096 --cave
+#end
+
+#end
+
+#selectsite 108 --LA Agartha--
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Mines of the Pale Ones]"
+#addgeo 4096 --cave
+#end
+
+
+--Cave Forests
+
+#selectsite 219 --EA Pyrene Cathedral Cavern
+#popgrowth -20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Cathedral Cavern]"
+#addgeo 4224 --cave forest
+#end
+
+#selectsite 174 --EA Xibalba Cavern of the Sun--
+#popgrowth -20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Cavern of the Sun]"
+#addgeo 4224 --cave forest
+#end
+
+
+#selectsite 179 --MA Xibalba Cave of Perpetual Darkness
+#popgrowth -20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Cave of Perpetual Darkness]"
+#addgeo 4224 --cave forest
+#end
+
+#selectsite 181 --la xibalba
+#popgrowth -20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Obsidian Cavern]"
+#addgeo 4224 --cave forest
+#end
+
+--Deep Sea Gorge
+
+#selectsite 116 --EA R'lyeh Gorge of Ancient Cities
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Gorge of Ancient Cities]"
+#addgeo 2068 --Deep Sea Gorge
+#end
+
+--Deep Sea
+
+#selectsite 128 --EA Atlantis The Basalt City
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Basalt City]"
+#addgeo 2052 --Deep Sea
+#end
+
+
+#selectsite 2318 --MA Dirgen
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Kingdom of Dirgen]"
+#addgeo 2052 --Deep Sea
+#end
+
+#selectsite 17 --MA R'lyeh
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Sunken City]"
+#addgeo 2052 --Deep Sea
+#end
+
+#selectsite 164 --LA R'lyeh
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The City of Unfullfilled Dreams]"
+#addgeo 2052 --Deep Sea
+#end
+
+--Forests --
+
+#selectsite 118 --EA Pangaea Grove of Gaia 
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 7 --EA Pan
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 128 --forest--
+#end
+
+#selectsite 98 --EA Kailasa mount kailasa
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Mount Kailasa]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 132 --EA Lanka Lanka
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Lanka]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 30 --EA Mictlan Temple of the Land
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[High Temple of the Sun]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 154 --EA Machaka Great Mababwe
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Great Mababwe]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 190 --EA Rus Oak of Storms
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Oak of Storms]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 2153 --EA Chaco Sipapu 
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Sipapu]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 2227 --EA Nihuala Village of the First People
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Village of the First People]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 133 --EA Tir Na n'og
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Tir na n'Og]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 16 --MA Jotunheim Iron Woods
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Iron Woods]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 80 --MA Asphodel carrion grove--
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 53 --MA Asphodel
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 128 --forest--
+#end
+
+#selectsite 78 --MA Bandar Log The Lotus Gardens
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Lotus Gardens]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 60 --MA Machaka God Forest
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[God Forest]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 5 --MA Man Forest of Avalon
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Forest of Avalon]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 87 --MA Mictlan Temple of the Land
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[High Temple of the Land]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 14 --MA Pangaea
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 52 --MA Pan
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 128 --forest--
+#end
+
+#selectsite 49 -- LA Pangaea
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 97 --MA Pan
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 128 --forest--
+#end
+
+#selectsite 127 --LA Man--
+#popgrowth 20
+#end
+
+
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Forest of Avalon]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 42 --LA Ulm
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Black Forest]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 97 --LA Patala
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Jeweled City]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 102 --LA Mictlan
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[High Temple of the Rain]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 213 --LA Vaettiheim
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Iron Wood]"
+#addgeo 128 --Forest
+#end
+
+--Highlands
+
+#selectsite 95 --EA Yomi Mountain of the Oni Kings
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Mountain of the Oni Kings]"
+#addgeo 16 --Highland
+#end
+
+#selectsite 169 --EA Caelum Ravens Vale
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Palace of the Eagle Kings]"
+#addgeo 16 --Highland
+#end
+
+
+#selectsite 2191 --EA Bhod Yarlung Valley
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Yarlung Valley]"
+#addgeo 16 --Highland
+#end
+
+#selectsite 18 --MA Caelum Ravens Vale
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 71 --MA Caelum
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 16 Highland
+#end
+
+#selectsite 172 --MA Nazca Palace of the Sun Kings
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Palace of the Sun Kings]"
+#addgeo 16 --Highland
+#end
+
+#selectsite 224 --MA Pyrene
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Pleasure Orchard]"
+#addgeo 16 --Highland
+#end
+
+#selectsite 106 --MA Shinuyama 
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Mount Shinuyama]"
+#addgeo 16 --Highland
+#end
+
+#selectsite 2184 --MA Shambhala hidden valley 
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Hidden Valley]"
+#addgeo 16 --Highland
+#end
+
+#selectsite 2181 --LA Ongtupqua
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Orayvi]"
+#addgeo 16 --Highland
+#end
+
+#selectsite 41 --LA Caelum
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 106 --LA Caelum
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 16 Highland
+#end
+
+
+#selectsite 93 --LA Jomon
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Mountain of the Mystics"
+#addgeo 16 --Highland
+#end
+
+
+--Highland Forests--
+
+#selectsite 83 --EA Ulm Irminsul
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Irminsul]"
+#addgeo 144 --highland forest 
+#end
+
+#selectsite 2115 --EA Fennoscandia Meandash River
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Meandash River]"
+#addgeo 144 --highland forest 
+#end
+
+#selectsite 226 -- MA Nidavangr
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Nidakettil]"
+#addgeo 144 --highland forest 
+#end
+
+--Shallow Seas--
+
+#selectsite 72 --EA Pelagia Palace of Pearls
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 40 --EA Palagia
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 4 Shallow Sea
+#end
+
+#selectsite 101 --EA Oceania The Grove of Aphros
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Grove of Aphros]"
+#addgeo 4 --Shallow Sea--
+#end
+
+#selectsite 182 --EA Therados Telkhinis
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Telkhinis]"
+#addgeo 4 --Shallow Sea--
+#end
+
+#selectsite 2327 --EA Bantay Tubig Cave of Kataw
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Cave of Kataw]"
+#addgeo 4 --Shallow Sea--
+#end
+
+#selectsite 2 --MA Atlantis The Coral Towers
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Coral Towers]"
+#addgeo 4 --Shallow Sea--
+#end
+
+#selectsite 2281 --MA Oceania
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Grove of Bythos]"
+#addgeo 4 --Shallow Sea--
+#end
+
+#selectsite 160 --MA Pelagia
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 86 --MA Palagia
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 4 Shallow Sea
+#end
+
+#selectsite 2206 --MA Ryugo-Jotunheim
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Palace of the Four Seasons]"
+#addgeo 4 --Shallow Sea--
+#end
+
+#selectsite 185 --MA Ys
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Ker-Ys]"
+#addgeo 4 --Shallow Sea--
+#end
+
+--Swamps--
+
+#selectsite 9 --EA C'tis The Temple City
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Temple City]"
+#addgeo 32 --swamp--
+#end
+
+#selectsite 125 --EA Sauromatia 
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Enchanted Isle]"
+#addgeo 32 --swamp--
+#end
+
+#selectsite 62 --MA C'tis
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Temple Marsh]"
+#addgeo 32 --swamp--
+#end
+
+#selectsite 4 -- ma Pythium 
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Imperial Palace]"
+#addgeo 32 --swamp--
+#end
+
+#selectsite 43 --la pythium
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Imperial Capital]"
+#addgeo 32 --swamp--
+#end
+
+#selectsite 2112 --LA rotterland
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Ostlem Dike]"
+#addgeo 32 --swamp--
+#end
+
+
+
+--Waste--
+
+#selectsite 147 --EA Hinnom Mount Hermon
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Mount Hermon]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 215 --EA Ubar Iram of a Thousand Pillars
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Iram of a Thousand Pillars]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 2118 --EA Zion the Great Temple--
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Great Temple]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 2102 --EA Alchera Forest of Tanematahuta
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Forest of Tanematahuta]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 144 --MA Ashdod
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Twin Cities]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 24 --MA Ermor
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 54 --MA Ermor
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 64 --Waste--
+#end
+
+#selectsite 210 --MA Na'ba
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Great Dam]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 2180 --MA Ongtupqa
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Walpi]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 143 --LA gath
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Temple of the Sage King]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 2106 --LA Iram
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Great Madrassa]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 63 --LA C'tis City of Tombs
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The City of Tombs]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 158 --LA Lemuria
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 99 --Lemuria--
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 64 --waste--
+#end
+
+
+
+-- END OF THEMATIC CAP TERRAIN
+
+
+
+
+
+
 
 
 -- END OF NEW EVENTS
