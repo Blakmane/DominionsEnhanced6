@@ -2991,7 +2991,7 @@
 
 -- decay small
 #newweapon 1809
-#name "Aura of Decay"
+#name "Touch of Decay"
 #dt_aff
 #dmg 256
 #att 5
@@ -3030,7 +3030,7 @@
 
 -- decay aoe large
 #newweapon 1811
-#name "Aura of Decay"
+#name "Large Aura of Decay"
 #dt_aff
 #dmg 256
 #att 5
@@ -3842,6 +3842,13 @@
 #copyweapon 835 -- Tentacle
 #bonus
 #end
+
+#newweapon 1897 -- Life Drain Tentacle
+#copyweapon 636 -- Tentacle
+#dmg 0
+#end
+
+
 
 -- END OF NEW WEAPONS
 
@@ -26073,12 +26080,13 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #coldres 15
 #coldpower 0
 #cold 0
-#poisonarmor 5
+#poisonarmor 3
 #amphibian
 #standard 1
 #holy
 #spiritsight
 #weapon 46  -- Coral Glaive
+#weapon 1808 -- repelling barbs
 #armor 23  -- Coral Armor
 #armor 25  -- Turtle Shell Shield
 #nametype 117  -- Deep One
@@ -54226,6 +54234,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #ap 12
 #okleader
 #poormagicleader
+#forestsurvival
 #eyes 2
 #older 23
 #maxage 40
@@ -55777,9 +55786,253 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #end
 
 
+#newmonster 9141 -- Aetos
+#copystats 1381  -- Great Eagle
+#clearmagic
+#spr1 "magicenhanced/eetempesteagle.tga"
+#spr2 "magicenhanced/eetempesteagle2.tga"
+#name "Tempest Eagle"
+#descr "Aetos is a giant tawny eagle with resplendent feathers. He was raised as a companion by an ancient deity of the heavens and used to punish those who dared steal the secret of fire from the gods. Aetos is skilled in the magics of air and fire. In battle he will beat his wings to create a howling windstorm that will prevent flight and blow arrows off their course. He can distill thunder and lightning into air gems, and his screech strikes fear into the heart of enemy soldiers."
+#fixedname "Aetos"
+#bird
+#animal
+#unique
+#gcost 0
+#hp 78
+#size 9
+#prot 16
+#mr 16
+#mor 16
+#str 20
+#att 14
+#def 13
+#prec 15
+#enc 2
+#mapmove 32
+#ap 8
+#magicskill 1 2
+#magicskill 0 2
+#gemprod 1 1
+-- #tmpairgems 1
+#onebattlespell 830 -- Storm
+#startage 1000
+#maxage 2000
+#shockres 15
+#fireres 5
+#fear 5
+#mountainsurvival
+#stormimmune
+#transformation 0
+#montag 1006  -- No Transformation spells
+#spiritsight
+#goodleader
+#beastmaster 2
+#twiceborn 1388  -- Ziz
+#end
 
 
--- END OF NEW MONSTERS (Skip 8700~8818, 8900~9000 and 9600~9650)
+#newmonster 9142 -- EA Atlantis Land Mage
+#copystats 1692 -- Mage of the Deep
+#name "Adept of the Deep"
+#descr "With the expansion of the Atlantians into shallow waters, the Basalt City has become increasingly aware of the lands above the waves, and especially their riches. Adepts of the Deep are Atlantian mages that reside on the surface in isolated villages, donning cloaks to hide their fishlike appearance so they may trade with the land dwellers for the treasures of dry land that they can return to the Basalt City. While not as magically powerful as their underwater counterparts, they are more practiced in Earth magic and masters of granting water breathing to others. The Basalt Queens have recently ordered the Adepts to form cults amongst land dweller populations."
+#spr1 "wateroverhaul/selg_atlantianadept1.png"
+#spr2 "wateroverhaul/selg_atlantianadept2.png"
+#gcost 260
+#armor 158 -- Robes
+#clearmagic
+#magicskill 2 1
+#magicskill 3 1
+#custommagic 3712 100
+#taxcollector
+#okleader 
+#giftofwater 75
+#end
+
+#newmonster 9143 -- Yeti Crab
+#copystats 2514 -- Cave Crab
+#name "Yeti Crab"
+#descr "The Yeti Crab is a gigantic abyssal crab found living amongst the volcanic rifts and vents in the deepest parts of the ocean floor. Its namesake is due to the long white bristles covering the crab's body which look superficially similar to a yeti's hair, but in reality serve a very different purpose. The Yeti Crab's bristles are host to tiny creatures that purify and consume volcanic toxins and other poisons from the crab's environment. Atlantians use these crabs as mobile farms, tending to the living mucus and harvesting it for consumption. In a crisis, the normally docile crabs can be prodded into battle, where their gigantic claws make them a formidable threat."
+#spr1 "wateroverhaul/yeticrab1.png"
+#spr2 "wateroverhaul/yeticrab2.png"
+#clearweapons
+#size 7
+#prot 20
+#hp 68
+#ap 9
+#fireres 5
+#coldres 5
+#mr 7
+#weapon 600 -- Crab Claw
+#weapon 600 -- Crab Claw
+#poisonres 25
+#diseaseres 80
+#supplybonus 25
+#end
+
+#newmonster 9144 -- Vampire Squid
+#copystats 438 -- Juvenile Kraken
+#name "Vampire Squid"
+#descr "The Vampire Squid is a large abyssal monster that dwells in the darkest parts of the ocean depths. Neither strong nor particularly durable for its size, the Vampire Squid instead hunts by stealth, camoflaguing itself as smaller and more vulnerable prey. Once a predator attacks, the squid it reveals its hideous secret: it possesses powerful life-draining spikes along its tentacles that can spell doom for even the largest sea monsters. Although their motivations are utterly alien to shorter-lived creatures, Vampire Squids are remarkably intelligent and can be coaxed into serving powerful Atlantian mages when suitably incentivised." 
+#spr1 "wateroverhaul/vampsquid1.png"
+#spr2 "wateroverhaul/vampsquid2.png"
+#clearweapons
+#size 9
+#hp 68
+#prot 12
+#mr 14
+#str 16
+#att 12
+#def 8
+#fear 5
+#coldres 5
+#fireres 5
+#ambidextrous 2
+#magicskill 5 1
+#magicskill 7 1
+#custommagic 20992 100 -- WDG
+#custommagic 20992 50 -- WDG
+#float
+#weapon 1897 -- Life Drain Tentacle
+#weapon 1897 -- Life Drain Tentacle
+#weapon 1897 -- Life Drain Tentacle
+#weapon 1897 -- Life Drain Tentacle
+#end
+
+#newmonster 9145 -- Giant Squid
+#copystats 438 -- Juvenile Kraken
+#name "Giant Squid"
+#descr "."
+#spr1 "wateroverhaul/giantsquid1.png"
+#spr2 "wateroverhaul/giantsquid1.png"
+#clearweapons
+#size 10
+#hp 98
+#prot 12
+#mr 16
+#str 20
+#att 12
+#def 8
+#fear 5
+#coldres 5
+#ambidextrous 2
+#magicskill 2 1
+#magicskill 4 3
+#custommagic 18944 100 -- WSG
+#itemslots 786462
+#float
+#clumsy 1
+#weapon 85 -- Tentacle
+#weapon 85 -- Tentacle
+#weapon 85 -- Tentacle
+#weapon 85 -- Tentacle
+#weapon 404 -- Beak
+#end
+
+
+#newmonster 9146 -- Silent One 1
+#copystats 1702 -- Basalt King
+#name "Silent One"
+#descr "The three Silent Ones sleep in a coliseum temple within the Basalt City. The origins of the Silent Ones, how long they have lain dormant in their temple, or indeed how they even came to rest there, remains a mystery, however to the Deep Ones they are holy beings of great power. Each of the three Silent Ones are massive in size, with heads similar to that of a fish-like snake, tentacles in place of arms, and massively thick legs."
+#spr1 "wateroverhaul/silentone1.png"
+#spr2 "wateroverhaul/silentone1.png"
+#fixedname "G'hlaballa"
+#size 9
+#hp 88
+#prot 16
+#mr 18
+#str 24
+#att 13
+#def 8
+#clearweapons
+#clearmagic
+#magicskill 2 3
+#magicskill 4 3
+#magicskill 5 1
+#itemslots 991750
+#bluntres
+#clumsy 1
+#resources 0
+#gcost 0
+#mor 22
+#unique
+#montag 1076 -- Silent One
+#weapon 85 -- Tentacle
+#weapon 85 -- Tentacle
+#weapon 20 -- Bite
+#end
+
+
+#newmonster 9147 -- Silent One 2
+#copystats 1702 -- Basalt King
+#name "Silent One"
+#descr "The three Silent Ones sleep in a coliseum temple within the Basalt City. The origins of the Silent Ones, how long they have lain dormant in their temple, or indeed how they even came to rest there, remains a mystery, however to the Deep Ones they are holy beings of great power. Each of the three Silent Ones are massive in size, with heads similar to that of a fish-like snake, tentacles in place of arms, and massively thick legs."
+#spr1 "wateroverhaul/silentone2.png"
+#spr2 "wateroverhaul/silentone2.png"
+#fixedname "Ez'itlulbh"
+#size 9
+#hp 88
+#prot 16
+#mr 18
+#str 24
+#att 13
+#def 8
+#clearweapons
+#clearmagic
+#magicskill 2 3
+#magicskill 5 3
+#magicskill 3 1
+#itemslots 991750
+#bluntres
+#clumsy 1
+#resources 0
+#gcost 0
+#mor 22
+#unique
+#montag 1076 -- Silent One
+#weapon 85 -- Tentacle
+#weapon 85 -- Tentacle
+#weapon 20 -- Bite
+#end
+
+
+#newmonster 9148 -- Silent One 3
+#copystats 1702 -- Basalt King
+#name "Silent One"
+#descr "The three Silent Ones sleep in a coliseum temple within the Basalt City. The origins of the Silent Ones, how long they have lain dormant in their temple, or indeed how they even came to rest there, remains a mystery, however to the Deep Ones they are holy beings of great power. Each of the three Silent Ones are massive in size, with heads similar to that of a fish-like snake, tentacles in place of arms, and massively thick legs."
+#spr1 "wateroverhaul/silentone3.png"
+#spr2 "wateroverhaul/silentone3.png"
+#fixedname "Ic'thuvhir"
+#size 9
+#hp 88
+#prot 16
+#mr 18
+#str 24
+#att 13
+#def 8
+#clearweapons
+#clearmagic
+#magicskill 0 3
+#magicskill 2 2
+#magicskill 3 1
+#magicskill 5 1
+#itemslots 991750
+#bluntres
+#clumsy 1
+#resources 0
+#gcost 0
+#mor 22
+#unique
+#montag 1076 -- Silent One
+#weapon 85 -- Tentacle
+#weapon 85 -- Tentacle
+#weapon 20 -- Bite
+#end
+
+
+
+
+
+-- END OF NEW MONSTERS (Skip 9600~9672)
 
 
 -- Start of Dirgen monsters (8700~8818)
@@ -55814,6 +56067,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #ap 12
 #eyes 2
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #undead
@@ -55835,6 +56089,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #descr "A wight mage is the corpse of a necromancer strong enough to avoid death itself. Its dried and leathery body is stronger than it was in life. The wight mage is constantly surrounded by an icy wind."
 #clearweapons
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #weapon 1811 -- Large decay
 #magicboost 3 -1 -- Earth
 #magicboost 5 1 -- Death
@@ -55860,6 +56115,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #descr "A wight mage is the corpse of a necromancer strong enough to avoid death itself. Its dried and leathery body is stronger than it was in life. The wight mage is constantly surrounded by an icy wind."
 #clearweapons
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #weapon 1811 -- Large decay
 #magicboost 5 1 -- Death
 #magicboost 2 1 -- Water
@@ -55893,6 +56149,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #ap 12
 #eyes 2
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #undead
@@ -55914,6 +56171,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #descr "A wight mage is the corpse of a necromancer strong enough to avoid death itself. Its dried and leathery body is stronger than it was in life. The wight mage is constantly surrounded by an icy wind."
 #clearweapons
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #weapon 1811 -- Large decay
 #magicboost 3 -1 -- Earth
 #poorleader
@@ -55946,6 +56204,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #ap 12
 #eyes 2
 #weapon 465 -- Basalt Club
+#weapon 20 -- Bite
 #armor 148 -- Crown
 #humanoid
 #amphibian
@@ -55988,6 +56247,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #ap 11
 #eyes 2
 #weapon 172 -- Magic Sceptre
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -56026,6 +56286,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #coldres 5
 #fireres 5
 #weapon 172 -- Magic Sceptre
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -56062,6 +56323,7 @@ Thram'zu Val practice the magic of the Thram'zu and can reanimate 5 deep fishbon
 #coldres 5
 #fireres 5
 #weapon 446 -- Sceptre
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -56071,7 +56333,6 @@ Thram'zu Val practice the magic of the Thram'zu and can reanimate 5 deep fishbon
 #poorleader
 #magicskill 5 1 -- Death
 #custommagic 1664 100 -- FEW
-#makemonsters5 -5774 -- 5 total
 #watershape 8716
 #twiceborn 8737 -- Wight Mage
 #end
@@ -56100,6 +56361,7 @@ Thram'zu Val practice the magic of the Thram'zu and can reanimate 5 lesser deep 
 #coldres 5
 #fireres 5
 #weapon 446 -- Sceptre
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -56175,6 +56437,7 @@ Mothers of the Abyss can be recruited in the capital and all Basalt Cities."
 #ap 11
 #eyes 2
 #weapon 465 -- Basalt Club
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -56213,7 +56476,7 @@ Mothers of the Abyss can be recruited in the capital and all Basalt Cities."
 #ap 11
 #eyes 2
 #weapon 29 -- Claw
---#weapon 20 -- Bite
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -56250,6 +56513,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #ap 11
 #eyes 2
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -56296,6 +56560,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #ap 11
 #eyes 2
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -56341,6 +56606,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #ap 11
 #eyes 2
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -56382,6 +56648,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #ap 11
 #eyes 2
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -56426,6 +56693,7 @@ Guul Lich practice the magic of the Thram'zu and can reanimate 15 powerful deep 
 #ap 12
 #eyes 2
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #weapon 1811 -- Large Aura of Decay
 #humanoid
 #amphibian
@@ -56482,6 +56750,7 @@ Guul Lich practice the magic of the Thram'zu and can reanimate 15 powerful deep 
 #ap 12
 #eyes 2
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #weapon 1811 -- Large Aura of Decay
 #humanoid
 #amphibian
@@ -56543,6 +56812,7 @@ Thram'zu Guul practice the magic of the Thram'zu and can reanimate 12 powerful d
 #ap 12
 #eyes 2
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -56591,6 +56861,7 @@ Thram'zu Guul practice the magic of the Thram'zu and can reanimate 12 powerful d
 #ap 12
 #eyes 2
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -56645,6 +56916,7 @@ Thram'zu Guul practice the magic of the Thram'zu and can reanimate 12 powerful d
 #ap 12
 #eyes 2
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -56692,6 +56964,7 @@ This Guul has recently returned from the Underworld and cannot become a Lich yet
 #ap 12
 #eyes 2
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -56796,6 +57069,7 @@ Thram'zu Guul practice the magic of the Thram'zu and can reanimate 12 powerful d
 #ap 12
 #eyes 2
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -56845,6 +57119,7 @@ This Guul has recently returned from the Underworld and cannot become a Lich yet
 #ap 12
 #eyes 2
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #maxage 500
@@ -58770,6 +59045,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #eyes 2
 #giftofwater 40
 #weapon 465 -- Basalt Club
+#weapon 20 -- Bite
 #armor 24 -- Coral Cap
 #humanoid
 #amphibian
@@ -58816,6 +59092,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #coldres 5
 #fireres 5
 #weapon 465 -- Basalt Club
+#weapon 20 -- Bite
 #armor 212 -- Crown
 #humanoid
 #amphibian
@@ -58861,6 +59138,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #gold 50
 #decscale 0
 #weapon 465 -- Basalt Club
+#weapon 20 -- Bite
 #armor 212 -- Crown
 #humanoid
 #amphibian
@@ -58906,6 +59184,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #ap 12
 #eyes 2
 #weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
 #humanoid
 #amphibian
 #undead
@@ -61649,52 +61928,6 @@ Cannot be recruited until Break the Deadlock is cast."
 
 --ENDSUMMONS
 
--- NEW UNIQUE ANIMAL SUMMON (ID 9659)
-
-#newmonster 9659 -- Aetos
-#copystats 1381  -- Great Eagle
-#clearmagic
-#spr1 "magicenhanced/eetempesteagle.tga"
-#spr2 "magicenhanced/eetempesteagle2.tga"
-#name "Tempest Eagle"
-#descr "Aetos is a giant tawny eagle with resplendent feathers. He was raised as a companion by an ancient deity of the heavens and used to punish those who dared steal the secret of fire from the gods. Aetos is skilled in the magics of air and fire. In battle he will beat his wings to create a howling windstorm that will prevent flight and blow arrows off their course. He can distill thunder and lightning into air gems, and his screech strikes fear into the heart of enemy soldiers."
-#fixedname "Aetos"
-#bird
-#animal
-#unique
-#gcost 0
-#hp 78
-#size 9
-#prot 16
-#mr 16
-#mor 16
-#str 20
-#att 14
-#def 13
-#prec 15
-#enc 2
-#mapmove 32
-#ap 8
-#magicskill 1 2
-#magicskill 0 2
-#gemprod 1 1
--- #tmpairgems 1
-#onebattlespell 830 -- Storm
-#startage 1000
-#maxage 2000
-#shockres 15
-#fireres 5
-#fear 5
-#mountainsurvival
-#stormimmune
-#transformation 0
-#montag 1006  -- No Transformation spells
-#spiritsight
-#goodleader
-#beastmaster 2
-#twiceborn 1388  -- Ziz
-#end
-
 
 -- NEW INDIE UW SHAMANS AND RECRUITABLES (ID 9660-9672)
 
@@ -61926,86 +62159,6 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 -- END NEW UW UNITS
-
--- NEW ATLANTIS MAGE AND SUMMONS (IDs 9673-9680)
-
-#selectmonster 1682 -- Reef Dweller
-#descr "Reef dwellers are pale green Atlantians of shallow waters. They live on coral reefs and have developed coral crafting to make weapons and armor. The reef dwellers have found a new purpose as conquerors of the land. Reef dwellers can be recruited in land castles."
-#end
-
-#selectmonster 1694 -- Coral  Priest
-#descr "The Coral Priest is a priest of the reef dwellers. As the reef dwellers are regarded with some suspicion, they are not allowed any greater religious authority. They have the soft, pale green skin of the reef dwellers. Coral Priests can be recruited in land castles."
-#end
-
-#newmonster 9673 -- EA Atlantis Land Mage
-#copystats 1692 -- Mage of the Deep
-#name "Adept of the Deep"
-#descr "With the expansion of the Atlantians into shallow waters, the Basalt City has become increasingly aware of the lands above the waves. Adepts of the Deep are Atlantian mages who specialise in communication and trade with land dwellers, for the purposes of extracting the treasures of dry land and transporting them to the Basalt City. While not as magically or politically powerful as their underwater colleagues, they have a keener affinity for Earth magic and have become masters of the gift of water breathing. The Basalt Queens have recently ordered the Adepts to form mystery cults amongst land dweller populations, with the intention of creating local support for invasion."
-#spr1 "wateroverhaul/Landatlantis1.png"
-#spr2 "wateroverhaul/Landatlantis2.png"
-#gcost 260
-#armor 158 -- Robes
-#clearmagic
-#magicskill 2 1
-#magicskill 3 1
-#custommagic 3712 100
-#taxcollector
-#okleader 
-#giftofwater 75
-#end
-
-#newmonster 9674 -- Yeti Crab
-#copystats 2514 -- Cave Crab
-#name "Yeti Crab"
-#descr "The Yeti Crab is a gigantic abyssal crab found living amongst the volcanic rifts and vents in the deepest parts of the ocean floor. Its namesake is due to the long white bristles covering the crab's body which look superficially similar to a yeti's hair, but in reality serve a very different purpose. The Yeti Crab's bristles are host to tiny creatures that purify and consume volcanic toxins and other poisons from the crab's environment. Atlantians use these crabs as mobile farms, tending to the living mucus and harvesting it for consumption. In a crisis, the normally docile crabs can be prodded into battle, where their gigantic claws make them a formidable threat."
-#spr1 "wateroverhaul/yeticrab1.png"
-#spr2 "wateroverhaul/yeticrab2.png"
-#clearweapons
-#size 7
-#prot 20
-#hp 68
-#ap 9
-#fireres 5
-#coldres 5
-#mr 7
-#weapon 600 "Crab Claw"
-#weapon 600 "Crab Claw"
-#poisonres 25
-#diseaseres 80
-#supplybonus 25
-#end
-
-#newmonster 9675 -- Vampire Squid
-#copystats 438 -- Juvenile Kraken
-#name "Vampire Squid"
-#descr "The Vampire Squid is a gargantuan abyssal monster that dwells in the darkest parts of the ocean depths. Neither strong nor particularly durable for its size, the Vampire Squid instead hunts by stealth, camoflaguing itself as smaller and more vulnerable prey. Once a predator attacks, the squid it reveals its hideous secret: it possesses powerful life-draining spikes along its tentacles that can spell doom for even the largest sea monsters. Although their motivations are utterly alien to shorter-lived creatures, Vampire Squids are remarkably intelligent and can be coaxed into serving powerful Atlantian mages when suitably incentivised." 
-#spr1 "wateroverhaul/vampsquid1.png"
-#spr2 "wateroverhaul/vampsquid2.png"
-#clearweapons
-#size 9
-#hp 96
-#prot 12
-#mr 16
-#str 16
-#att 12
-#def 8
-#fear 5
-#coldres 5
-#fireres 5
-#ambidextrous 6
-#magicskill 5 1
-#magicskill 8 1
-#custommagic 36864 100
-#custommagic 4096 50
-#float
-#weapon 636 -- Life Drain Tentacle
-#weapon 636 -- Life Drain Tentacle
-#weapon 636 -- Life Drain Tentacle
-#weapon 636 -- Life Drain Tentacle
-#end
-
-
--- END NEW ATLANTIS UNITS
 
 -- Pale One reinvigoration and strength:
 
@@ -83871,6 +84024,14 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #prot 5
 #end
 
+#selectmonster 1667  -- Malphas the Warlock
+#spr1 "vanilla/anathemant327_1.png"
+#spr2 "vanilla/anathemant327_2.png"
+#neednoteat
+#icenatprot -1
+#prot 3
+#end
+
 
 #selectmonster 1698  -- EA Anathement Salamander
 #descr "The authority of the Abysian Warlords is limited to acts of war. In all other matters, Abysia is ruled by the Anathemants and the Anointed of Rhuax. Anathemant Salamanders are lowly priests of the Abysian Flame Cult. Anathemants excel in Fire magic and use fire not only to incinerate infidels, but also to feed the anger inherent in the hearts of all Abysian warriors. The Anathemants practice human sacrifice to empower their Master's Dominion by the magic inherent in human blood. Anathemant Salamanders are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
@@ -84288,6 +84449,14 @@ Initiates of the Deep can be recruited in any land fort."
 #poormagicleader
 #end
 
+
+#selectmonster 1682 -- Reef Dweller
+#descr "Reef dwellers are pale green Atlantians of shallow waters. They live on coral reefs and have developed coral crafting to make weapons and armor. The reef dwellers have found a new purpose as conquerors of the land. Reef dwellers can be recruited in land castles."
+#end
+
+#selectmonster 1694 -- Coral  Priest
+#descr "The Coral Priest is a priest of the reef dwellers. As the reef dwellers are regarded with some suspicion, they are not allowed any greater religious authority. They have the soft, pale green skin of the reef dwellers. Coral Priests can be recruited in land castles."
+#end
 
 #selectmonster 342  -- Moon Mage
 #enchrebate50 274 -- Ench74  -- Lunar Potency
@@ -87565,9 +87734,6 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #assassin
 #scalewalls
 #patience 2
-#end
-
-#selectmonster 1667  -- Malphas the Warlock
 #end
 
 #selectmonster 1670  -- yukinaga Heart hider
@@ -91018,7 +91184,13 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 -- ENDUNITS END OF ABOLETH LAND DAMAGE
 
--- FOLDUNITS START OF NO INNATE SPEED -- 12100~12499
+
+-- START OF NO INNATE SPEED -- 12100~12499
+
+
+
+
+-- FOLDUNITS
 
 
 
@@ -92446,6 +92618,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92455,6 +92628,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 6936
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92470,6 +92644,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92479,6 +92654,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 7224
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92494,6 +92670,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92503,6 +92680,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 7232
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92518,6 +92696,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92527,6 +92706,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 7234
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92542,6 +92722,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92551,6 +92732,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 7238
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92566,6 +92748,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92575,6 +92758,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 7269
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92590,6 +92774,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92599,6 +92784,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 7395
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92614,6 +92800,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92623,6 +92810,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 7437
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92638,6 +92826,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92647,6 +92836,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 7479
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92662,6 +92852,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92671,6 +92862,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 7530
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92686,6 +92878,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92695,6 +92888,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 7604
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92710,6 +92904,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92719,6 +92914,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 7652
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92734,6 +92930,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92743,6 +92940,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 7662
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92758,6 +92956,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92767,6 +92966,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 7821
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92782,6 +92982,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92791,6 +92992,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8001
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92806,6 +93008,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92815,6 +93018,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8628
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92830,6 +93034,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92839,6 +93044,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 6986
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92854,6 +93060,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92863,6 +93070,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 7480
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92878,6 +93086,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92887,6 +93096,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8259
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92902,6 +93112,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92911,6 +93122,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8298
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92926,6 +93138,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92935,6 +93148,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8303
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92950,6 +93164,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92959,6 +93174,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8333
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92974,6 +93190,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92983,6 +93200,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8335
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -92998,6 +93216,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93007,6 +93226,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8338
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93022,6 +93242,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93031,6 +93252,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8340
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93046,6 +93268,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93055,6 +93278,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8346
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93070,6 +93294,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93079,6 +93304,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8404
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93094,6 +93320,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93103,6 +93330,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8444
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93118,6 +93346,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93127,6 +93356,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8445
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93142,6 +93372,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93151,6 +93382,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8446
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93166,6 +93398,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93175,6 +93408,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8447
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93190,6 +93424,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93199,6 +93434,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8448
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93214,6 +93450,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93223,6 +93460,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8449
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93238,6 +93476,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93247,6 +93486,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8452
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93262,6 +93502,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93271,6 +93512,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8453
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93286,6 +93528,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93295,6 +93538,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8455
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93310,6 +93554,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93319,6 +93564,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8456
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93334,6 +93580,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93343,6 +93590,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8457
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93358,6 +93606,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93367,6 +93616,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8458
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93382,6 +93632,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93391,6 +93642,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8459
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93406,6 +93658,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93415,6 +93668,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8460
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93430,6 +93684,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93439,6 +93694,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8461
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93454,6 +93710,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93463,6 +93720,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8462
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93478,6 +93736,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93487,6 +93746,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8463
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93502,6 +93762,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93511,6 +93772,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8464
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93526,6 +93788,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93535,6 +93798,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8465
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93550,6 +93814,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93559,6 +93824,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8466
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93574,6 +93840,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93583,6 +93850,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8467
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93598,6 +93866,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93607,6 +93876,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8468
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93622,6 +93892,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93631,6 +93902,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8469
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93646,6 +93918,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93655,6 +93928,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8470
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93670,6 +93944,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93679,6 +93954,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8472
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93694,6 +93970,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93703,6 +93980,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8473
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93718,6 +93996,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93727,6 +94006,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8474
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93742,6 +94022,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93751,6 +94032,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8475
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93766,6 +94048,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93775,6 +94058,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8476
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93790,6 +94074,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93799,6 +94084,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8477
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93814,6 +94100,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93823,6 +94110,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8485
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93838,6 +94126,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93847,6 +94136,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8486
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93862,6 +94152,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93871,6 +94162,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8487
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93886,6 +94178,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93895,6 +94188,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8488
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93910,6 +94204,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93919,6 +94214,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8489
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93934,6 +94230,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93943,6 +94240,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8490
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93958,6 +94256,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93967,6 +94266,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8491
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93982,6 +94282,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -93991,6 +94292,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8492
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94006,6 +94308,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94015,6 +94318,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8493
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94030,6 +94334,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94039,6 +94344,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8494
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94054,6 +94360,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94063,6 +94370,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8495
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94078,6 +94386,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94087,6 +94396,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8496
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94102,6 +94412,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94111,6 +94422,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8497
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94126,6 +94438,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94135,6 +94448,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8498
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94150,6 +94464,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94159,6 +94474,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8499
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94174,6 +94490,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94183,6 +94500,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 8500
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94198,6 +94516,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #shrinkhp 999
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94207,6 +94526,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #worldshape 10015
 #homerealm 0
 #startdom 0
+#montag 0
 #clearmagic
 #end
 
@@ -94215,7 +94535,17 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 
--- ENDUNITS END OF NO INNATE SPEED
+
+-- ENDUNITS
+
+
+
+
+
+
+
+
+-- END OF NO INNATE SPEED
 
 -- FOLDUNITS START OF UW JAVELINS -- 12500~12999
 
@@ -112732,10 +113062,13 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 2
 #look 9
 #homemon 7455 -- coral snek
-#homecom 9674 -- yeti crab
+#homecom 9143 -- yeti crab
 #homemon 1664 -- monster fish
-#homecom 9675 -- vampire squid
+#homecom 9144 -- vampire squid
 #homecom 7226 -- dagon
+#homecom 9146 -- Silent One
+#homecom 9147 -- Silent One
+#homecom 9148 -- Silent One
 #homecom 7276 -- cetus
 #end
 
@@ -119509,7 +119842,7 @@ Dominion: Dominion hides province ownership."
 
 #landrec 1682 -- Reef Dweller
 #landcom 1694 -- Coral Priest
-#landcom 9673 -- Adept of the Deep
+#landcom 9142 -- Adept of the Deep
 
 
 #futuresite "EA Atlantis Summons"
@@ -122431,7 +122764,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #school 5
 #researchlevel 6
 #pathlevel 0 4
-#effect 10080
+#effect 10077
 #fatiguecost 800
 #provrange 3
 #nolandtrace 1
@@ -146746,8 +147079,8 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #researchlevel 5
 #path 0 0
 #pathlevel 0 4 -- F4
-#path 0 1
-#pathlevel 0 1 -- A1
+#path 1 1
+#pathlevel 1 1 -- A1
 #fatiguecost 4000
 #damage 8679 -- Rider
 #effect 10001
@@ -150186,7 +150519,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 1 2
 #effect 10089
 #fatiguecost 2500
-#damage 9659 -- The Tempest Eagle
+#damage 9141 -- The Tempest Eagle
 #nreff 1
 #end
 
@@ -150700,7 +151033,7 @@ This spell can only be cast in a deep water province."
 #pathlevel 1 1
 #fatiguecost 500
 #nreff 502
-#damage 9674 -- Yeti Crab
+#damage 9143 -- Yeti Crab
 #onlygeosrc 2048  -- Deep Sea
 #restricted 43 -- Atlantis
 #end
@@ -150716,8 +151049,9 @@ This spell can only be cast in a deep water province."
 #pathlevel 0 3
 #pathlevel 1 1
 #fatiguecost 1500
+#effect 10021
 #nreff 1
-#damage 9675 -- Vampire Squid
+#damage 9144 -- Vampire Squid
 #onlygeosrc 2048  -- Deep Sea
 #restricted 43 -- Atlantis
 #end
@@ -150750,6 +151084,26 @@ This spell can only be cast in a deep water province."
 #aoe 666
 #spec 36028797065183360 -- UW OK, UW Only, AN, Ignore shields, Internal, Friendly only, Airbreathers Only
 #end
+
+#selectspell 4284 -- Silent Ones
+#copyspell 945 -- Call Kraken
+#name "Awaken Silent One"
+#descr "The three Silent Ones sleep in a coliseum temple within the Basalt City. The origins of the Silent Ones, how long they have lain dormant in their temple, or indeed how they even came to rest there, remains a mystery, however to the Deep Ones they are holy beings of great power. Each of the three Silent Ones are massive in size, with heads similar to that of a fish-like snake, tentacles in place of arms, and massively thick legs. The Basalt Kings know a ritual to awaken them by using the power of the Dark Crystal to stir their mind and bring them into service in time of dire need."
+#researchlevel 8
+#path 0 3 -- E4
+#pathlevel 0 4
+#path 1 4 -- S1
+#pathlevel 1 1
+#fatiguecost 5000
+#effect 10089 -- Ritual Unique Summon
+#nreff 1
+#damage -1076 -- Silent One
+#onlyatsite 128 -- The Basalt City
+#restricted 43 -- Atlantis
+#end
+
+
+
 
 -- END OF NEW SPELLS
 
