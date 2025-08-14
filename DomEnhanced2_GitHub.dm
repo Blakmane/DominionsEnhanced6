@@ -17752,6 +17752,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #str 17
 #hp 35
 #armor 251 -- leather barding
+#mr 8
 #nothrowoff
 #bravemount 100
 #end
@@ -25400,7 +25401,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Divine General"
 #descr "The armies of Heaven are guided by Divine Generals, chosen from the best mortal generals and gifted with Divine bodies upon death. Wielding enchanted weapons and divine authority, their true power is the confidence and training they instill in their troops."
 #weapon 75  -- Enchanted sword
-#expertleader
+#superiorleader
 #expertmagicleader
 #magicskill 9 2
 #end
@@ -86795,7 +86796,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 1158  -- Warrior Chief
-#descr "The warrior chiefs are the martial rulers of the tribes of Ulm. Every tribe is led by a chieftain, a shaman and a smith. The chieftain rules in matters of war, the shaman in spiritual matters and the smith in judicial matters. Warrior chiefs are skilled warriors and able commanders. They wield heavy two-handed swords and wear scale mail armor. Each month they can call warriors to their aid."
+#descr "The warrior chiefs are the martial rulers of the tribes of Ulm. Every tribe is led by a chieftain, a shaman and a smith. The chieftain rules in matters of war, the shaman in spiritual matters and the smith in judicial matters. Warrior chiefs are skilled warriors and able commanders. They wield heavy two-handed swords and wear scale mail armor."
 --#makemonsters2 -1059
 #mr 9
 #stealthy 20
@@ -123654,8 +123655,10 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #school -1
 #researchlevel 0
 #aoe 1
-#effect 123
-#damage 100  -- Broken Armor
+#effect 11
+#damage 17592186044416  -- Broken Armor
+--#effect 138
+--#damage 999
 #spec 545259520  -- UW OK, no effect on lifeless
 #end
 
@@ -123663,7 +123666,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #copyspell 867 -- Army of Giants
 #name "Elemental Form"
 #descr "A large number of living soldiers are transformed into rocklike beings of primal elemental power. Those affected will swell in size and gain strength and hit points. Their stony form will also become highly resistant to physical attacks and the elements. As a side effect the sudden change will cause them to burst and break any armor they are wearing, leaving only pieces providing minimal protection. Even magical armor forged using gems will be destroyed by this effect."
-#details "Grants Fire/Cold/Shock resist 5, Blunt/Pierce/Slash resist 50%, Size +1, HP +30%, Str +3, natural protection 15, or +2 if already 14 or higher. Also incurs Def -1, susceptibility to Cold 5 and any armor worn is broken, including magic item armor."
+#details "Grants Fire/Cold/Shock resist 5, Blunt/Pierce/Slash resist 50%, Size +1, HP +30%, Str +3, natural protection +10 (max up to 15), or +3 if already 12 or higher. Also incurs Def -1, susceptibility to Cold 5 and any armor worn is broken."
 #researchlevel 6
 #path 0 3
 #pathlevel 0 3
@@ -124310,6 +124313,16 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #effect 10001
 #damage 7858
 #nreff 1
+#end
+
+#selectspell 2193
+#name "Void-Touched Insanity"
+#school -1
+#researchlevel 0
+#effect 10519  -- +20
+#nreff 1
+#damage 309  -- Insanity
+#spec 4503599635759104  -- UW OK, Void Sanity immune
 #end
 
 #selectspell 2197
@@ -173413,14 +173426,14 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_land 1
 #req_fornation 40
 #req_ench 273 -- Ench73
---#req_nositenbr 2169 -- EA Foundry
-#req_nositenbr 2170 -- EA Armory
+#req_nositenbr 2169 -- EA Foundry
+--#req_nositenbr 2170 -- EA Armory
 #req_pop0ok
 #msg "Add Pearl Foundry site - Land"
 #notext
 #nolog
---#addsite 2169 -- EA Foundry
-#addsite 2170 -- EA Armory
+#addsite 2169 -- EA Foundry
+--#addsite 2170 -- EA Armory
 #end
 
 #newevent
@@ -173428,12 +173441,14 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_land 0
 #req_fornation 40
 #req_ench 273 -- Ench73
-#req_nositenbr 2170 -- EA Armory
+#req_nositenbr 2169 -- EA Foundry
+--#req_nositenbr 2170 -- EA Armory
 #req_pop0ok
 #msg "Add Pearl Armory site - Water"
 #notext
 #nolog
-#addsite 2170 -- EA Armory
+#addsite 2169 -- EA Foundry
+--#addsite 2170 -- EA Armory
 #end
 
 #newevent
