@@ -1266,6 +1266,7 @@
 #name "Pearl Lance"
 #bonus
 #ammo 1
+#norepel
 #end
 
 #newweapon 1597
@@ -1792,6 +1793,7 @@
 #bonus
 #secondaryeffectalways 171  -- Small Area Fire
 #skip
+#norepel
 #end
 
 #newweapon 1658
@@ -126238,7 +126240,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 1 1
 #aoe 1
 #damage 1010
-#spec 1099511627840 -- Armour Piercing, Slashing Damage
+#spec 1099520016448 -- Armour Piercing, Slashing Damage, UWOK
 #fatiguecost 10
 #casttime 100
 #godpathspell 2
