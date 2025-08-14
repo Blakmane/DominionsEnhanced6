@@ -41970,7 +41970,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #def 11
 #stealthy 0
 #forestsurvival
-#sailing 2 3
+#sailing 4 4
 #weapon 308  -- Glaive
 #armor 15  -- Full Leather Armor
 #armor 121  -- Leather Hood
@@ -41996,7 +41996,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #stealthy 0
 #pillagebonus 1
 #forestsurvival
-#sailing 2 3
+#sailing 4 4
 #weapon 1  -- Spear
 #weapon 452  -- Harpoon
 #armor 15  -- Full Leather Armor
@@ -42206,7 +42206,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #att 11
 #def 11
 #inspirational 1
-#sailing 2 3
+#sailing 4 4
 #pillagebonus 5
 #stealthy 0
 #forestsurvival
@@ -42358,7 +42358,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #def 11
 #coldres 5
 #stealthy 0
-#sailing 999 3
+#sailing 999 4
 #spellsinger
 #forestsurvival
 #poorleader
@@ -42498,7 +42498,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #enc 2
 #spellsinger
 #latehero 10
-#sailing 999 3
+#sailing 999 4
 #autohealer 3
 #magicskill 2 3
 #magicskill 3 4
@@ -86747,6 +86747,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #descr "The inhabitants of the wilderness of Ulm are strong and proud. They are as resilient as the mountains and as strong as oaks. They live off the land and are skilled woodsmen and mountaineers. Upon coming of age, every man makes his choice of weapon. Those who choose the sword are trained in two-handed fighting, stealth and wilderness survival. They are used to fight in loose formations."
 #mr 9
 #stealthy 20
+#ambidextrous 0
 #clearweapons
 #weapon 11 -- greatsword
 #montag 1059  -- Ulm Warriors
@@ -86765,6 +86766,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spr2 "vanilla/ulmmountainwarrior2.tga"
 #mr 9
 #stealthy 20
+#ambidextrous 0
 #clearweapons
 #weapon 11 -- greatsword
 #montag 1059  -- Ulm Warriors
@@ -126005,7 +126007,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 0
 #school 7
 #path 0 9
-#aoe 10001
+#aoe 1001
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
@@ -151216,7 +151218,7 @@ This spell can only be cast in a deep water province."
 #spec 8404992 -- UWOK
 #end
 
-#selectspell 4285 -- Dragonfish
+#selectspell 4286 -- Dragonfish
 #copyspell 945 -- Call Kraken
 #name "Call Dragonfish"
 #descr "The caster creates a light in the deep to call a Dragonfish and bargain for its services. The Dragonfish is an intelligent deep sea fish that lives only in the deepest gorges of the ocean. Dragonfish are potent wielders of magic that sometimes align themselves with the Deep Ones. Adapted for the depths, they can turn their teeth invisible and use the lantern hanging from their chin to communicate with other dragonfish or attract food into their jaws."
@@ -181031,7 +181033,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #rarity 5
 #req_pregame 1
 #req_site 1
-#msg "[The Kingdom of Dirgen]"
+#msg "[Kingdom of Dirgen]"
 #addgeo 2052 --Deep Sea
 #end
 
@@ -181481,7 +181483,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #addgeo 16 --Highland
 #end
 
-#selectsite 2184 --MA Shambhala hidden valley 
+#selectsite 2184 --MA Shambhala hidden city 
 #popgrowth 20
 #end
 
@@ -181491,7 +181493,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #rarity 5
 #req_pregame 1
 #req_site 1
-#msg "[The Hidden Valley]"
+#msg "[The Hidden City]"
 #addgeo 16 --Highland
 #end
 
