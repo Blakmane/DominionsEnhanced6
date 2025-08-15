@@ -28296,7 +28296,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 6 1
 #magicboost 53 -1
 #darkvision 50
-#sailing 6 10
+#sailing 10 10
 #heal
 #holy
 #spiritsight
@@ -28333,7 +28333,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #holy
 #spiritsight
 #darkvision 50
-#sailing 2 3
+#sailing 5 5
 #gcost 0
 #regeneration 10
 #berserk 4
@@ -35039,7 +35039,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #size 3
 #startage 60
 #maxage 300
-#sailing 5 8
+#sailing 8 8
 #darkvision 50
 #itemslots 860678 -- No feet
 #amphibian
@@ -35078,7 +35078,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #magicskill 1 1
 #magicskill 7 1
 #magicskill 9 1
-#sailing 5 8
+#sailing 8 8
 #darkvision 50
 #amphibian
 #holy
@@ -35119,7 +35119,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #mapmove 24
 #startage 60
 #maxage 300
-#sailing 5 8
+#sailing 8 8
 #darkvision 50
 #itemslots 786432 -- 2 misc
 #glamour
@@ -38315,7 +38315,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #armor "Bronze Cap"
 #armor "Golden Shield"
 #armor "Bronze Cuirass"
-#sailing 5 8
+#sailing 8 8
 #darkvision 50
 #flying
 #holy
@@ -52356,7 +52356,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #mapmove 24
 #startage 60
 #maxage 300
-#sailing 5 8
+#sailing 8 8
 #darkvision 50
 #itemslots 786432 -- 2 misc
 #amphibian
@@ -110554,6 +110554,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 2398 -- elephant
 #homemon 2072 -- mazzik
 #homemon 2074 -- seir
+#homemon 2073 -- shed
 #homemon 3724 -- air ele s7
 #homecom 2071 -- lilot
 #homecom 8889 -- Brazen Bull
@@ -118359,8 +118360,8 @@ Priests: Average. Every temple adds one to the sacred recruit limit."
 #addreccom 6730
 #addreccom 6739
 #addreccom 6731
-#coastcom1 6728
-#coastcom2 6738
+#coastfortcom 6728
+#coastfortcom 6738
 #addrecunit 6714
 #addrecunit 6715
 #addrecunit 6716
@@ -153897,6 +153898,12 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #fatiguecost 1000
 #end
 
+#selectspell 1404 -- Hell Ride
+#effect 10019 -- Teleport
+#walkable 1
+--#nowatertrace 1
+#end
+
 #selectspell 1401 -- Blood Feast
 #notfornation 9
 #notfornation 21
@@ -158091,7 +158098,7 @@ This will also prevent their skin from drying out."
 #secondarylevel 1
 #type 1
 #name "Mask of Seduction"
-#descr "Masks are an important part of Venetian culture and are often worn at balls, carnivals and all sorts of important social events. Those worn by nobles can be extremely elaborate and sometimes even enchanted. This mask is designed to be worn by Casanovas and Columbines to enhance their charms and dazzle would-be attackers. The latter power often proves useful when the objects of their affections violently reject their advances - or when they are caught in the act by a jealous husband or wife."
+#descr "Masks are an important part of Venedian culture and are often worn at balls, carnivals and all sorts of important social events. Those worn by nobles can be extremely elaborate and sometimes even enchanted. This mask is designed to be worn by Casanovas and Columbines to enhance their charms and dazzle would-be attackers. The latter power often proves useful when the objects of their affections violently reject their advances - or when they are caught in the act by a jealous husband or wife."
 #seduce 10  -- replaces, does not stack
 #restricted 201
 #restricteditem 2  -- columbine & casanova
