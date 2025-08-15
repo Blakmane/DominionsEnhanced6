@@ -17884,7 +17884,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/lionmage.tga"
 #spr2 "gondwana/lionmage2.tga"
 #descr "Lion Shamans wear the hide of great beasts and use these to take animal form. Through meditation and ingesting highly magical plants they can transform their body into that of a beast. Lion Shamans can assume the form of a great lion, or a fearsome creature with the qualities of man and beast. The Shamans of Gondwana perform rhythmic songs and dances that allow them to enter a powerful trance state for ritual casting."
-#gcost 210
+#gcost 10020
 #rpcost 4
 #mor 13
 #mr 14
@@ -17911,7 +17911,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/lionman.tga"
 #spr2 "gondwana/lionman2.tga"
 #descr "Lion Shamans wear the hide of great beasts and use these to take animal form. Through meditation and ingesting highly magical plants they can transform their body into that of a beast. Lion Shamans can assume the form of a great lion, or a fearsome creature with the qualities of man and beast. The Shamans of Gondwana perform rhythmic songs and dances that allow them to enter a powerful trance state for ritual casting."
-#gcost 210
+#gcost 10020
 #rpcost 4
 #size 4
 #hp 24
@@ -17942,7 +17942,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #clearmagic
 #name "Lion Shaman"
 #descr "Lion Shamans wear the hide of great beasts and use these to take animal form. Through meditation and ingesting highly magical plants they can transform their body into that of a beast. Lion Shamans can assume the form of a great lion, or a fearsome creature with the qualities of man and beast. The Shamans of Gondwana perform rhythmic songs and dances that allow them to enter a powerful trance state for ritual casting."
-#gcost 210
+#gcost 10020
 #rpcost 4
 #transformation 0
 #mor 13
@@ -17963,7 +17963,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/shaman.tga"
 #spr2 "gondwana/shaman2.tga"
 #descr "A shaman is a mage that contacts the spirit world to perform magic. The shamans of Gondwana perform rhythmic songs and dances that allow them to enter a powerful trance state for ritual casting. These dances can last for many hours and are accompanied by specially trained Spirit Dancers. Each shaman crafts a mask that grants them a closer affinity with the spirit world when worn, and crafting a mask is an important step in the training of a young shaman. Shamans are able to communicate with spirits of the air, the dead and the wild and guide the nation in spiritual matters."
-#gcost 200
+#gcost 10020
 #rpcost 2
 #mr 14
 #researchbonus 0
@@ -18081,7 +18081,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr2 "gondwana/terrorbirdcaptain2.tga"
 #descr "In the capital exists a special regiment of Isienmwenro known as the Ekaiwe. These are the cream of the warriors specially trained to ride gigantic predatory birds known as Terror Birds. Terror Birds roam the plains of Gondwana preying on anything they can kill with their powerful beaks and sharp claws. They are strong in N'um and are sacred to the people of Gondwana. The commanders of the Ekaiwe are hand picked for their loyalty to the Oba and have some priestly powers. Should the rider be slain the bird will continue to peck and claw at enemies."
 #mountedhumanoid
-#gcost 10040
+#gcost 10020
 #rcost 10
 #rpcost 1
 #size 3
@@ -18115,7 +18115,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/eldershaman.tga"
 #spr2 "gondwana/eldershaman2.tga"
 #descr "The Babalawo are a sect of shamanic priests that reside in the capital and serve the Obas. Through divination they are able to advise the Obas on future events and are highly valued for their gifts. Like all shamans of Gondwana they perform rhythmic songs and dances that allow them to enter a powerful trance state for ritual casting. The masks they wear are strong in N'um and grant special priestly powers to the Babalawo."
-#gcost 270
+#gcost 10010
 #rpcost 4
 #mr 16
 #mor 14
@@ -18146,7 +18146,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/queen.tga"
 #spr2 "gondwana/queen2.tga"
 #descr "The Queens of Gondwana rule alongside the Obas. As the figureheads of the nation they are strong in N'um. Whilst the Obas spend their time mediating and planning campaigns in times of war, the Queens often spend their time learning magical skills. These skills allow them to guide their nation and mediate in magical matters. Like all shamans of Gondwana they perform rhythmic songs and dances that allow them to enter a powerful trance state for ritual casting."
-#gcost 230
+#gcost 10010
 #rpcost 2
 #mr 15
 #mor 15
@@ -109419,9 +109419,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 9
 #look 0
---#homecom 183
---#homecom 945
---#homecom 8227
+#homecom 
 #end
 
 #newsite 2359 -- Harrespil
@@ -112891,6 +112889,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 9
 #look 6
+#homecom 
 #end
 
 #newsite 2568 -- Capital City
@@ -159639,8 +159638,8 @@ This will also prevent their skin from drying out."
 #descr "The owner of this magic book can grant up to 100 human-sized soldiers the ability to breathe water. At the start of battle, the book's owner will cast a spell that makes fighting underwater more bearable for airbreathing soldiers."
 #itemcost1 -60 -- 4 gems
 #itemcost2 -40 -- 3 gems
-#mainpath 0 2
-#mainpath 1 6
+#mainpath 2
+#secondarypath 6
 #mainlevel 2
 #constlevel 3
 #giftofwater 300
