@@ -56105,6 +56105,28 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #custommagic 19072 100
 #end
 
+#newmonster 9150 -- Ragha catharsis
+#copystats 631 -- King of Flames
+#spr1 "magicenhanced/blue_catharsis1.png"
+#spr2 "magicenhanced/blue_catharsis2.png"
+#name "King of Purifying Fire"
+#descr "The King of Elemental Fire is a physical manifestation of the wild magic of Fire. Only three such spirits were known to exist, and with the fall of Catharsis into Antrax, only two remained pure. Now, a fourth has been mantled as the new King of Purifying Flames, a title left vacant by Antrax, the previous holder. Catharsis has a body of white flame and appears as a huge, crowned king. He is innately skilled in Fire and Astral magic and is constantly surrounded by purifying fire. Once more his flames will heal and purify, though not all of them have returned to his control. Catharsis is totally unable to enter underwater provinces, but he can create children in his image."
+#fixedname "Catharsis"
+#makemonsters1 7420
+#makemonsters2 7420
+#healer 50 -- Army heal
+#autohealer 3
+#autodishealer 10
+#hp 48
+#fireshield 10
+#holy
+#str 17
+#clearweapons
+#weapon 1587 -- Holy Flame Strike
+#clearmagic
+#magicskill 0 5
+#magicskill 4 3
+#end
 
 
 -- END OF NEW MONSTERS (Skip 9600~9672)
@@ -66191,14 +66213,14 @@ Cannot be recruited until Break the Deadlock is cast."
 #clearmagic
 #magicskill 1 6
 #airshield 80
-#makemonsters1 3723 "Air Elemental"
+#makemonsters1 3723 -- "Air Elemental"
 #end
 
 #selectmonster 911
 #descr "The Queen of Elemental Air is a physical manifestation of the wild magic of Air. Thuella has a body composed of billowing clouds and appears as a huge, crowned female being. 
 She is innately skilled in Air magic, and protects nearby allies from lightning and thunder. Thuella is the Queen of Thunder and her powers are increased during storms. Her body is composed of clouds and mist and is difficult to harm. 
 Only three Queens of Elemental Air are known to exist."
-#onebattlespell 1170 "Thunder Ward"
+#onebattlespell 1170 -- "Thunder Ward"
 #clearmagic
 #magicskill 1 6
 #airshield 80
@@ -66208,8 +66230,8 @@ Only three Queens of Elemental Air are known to exist."
 #descr "The Queen of Elemental Air is a physical manifestation of the wild magic of Air. Nephele has a body composed of billowing clouds and appears as a huge, crowned female being. 
 She is innately skilled in Air and Glamour magic and can summon sylphs from her abode in the sky. Her powers are increased during storms, and a thick mist surrounds and obscures her at all times. Her body is composed of clouds and mist and is difficult to harm.
 Only three Queens of Elemental Air are known to exist."
-#makemonsters4 562 "Sylph"
-#onebattlespell 790 "Mist"
+#makemonsters4 562 -- "Sylph"
+#onebattlespell 790 -- "Mist"
 #clearmagic
 #stealthy 0
 #glamour
@@ -66223,40 +66245,40 @@ Only three Queens of Elemental Air are known to exist."
 #selectmonster 469
 #clearmagic
 #magicskill 3 6
-#makemonsters5 561 "Earth Gnome"
+#makemonsters5 561 -- "Earth Gnome"
 #pierceres
 #end
 
 #selectmonster 906
 #clearmagic
 #magicskill 3 6
-#makemonsters1 3739 "Earth Elemental"
+#makemonsters1 3739 -- "Earth Elemental"
 #pierceres
 #end
 
 -- FIRE KINGS
 
-#selectmonster 631
+#selectmonster 631 -- Pyriphlogos
 #clearmagic
 #magicskill 0 6
-#makemonsters5 7421 "Banefire Child"
+#makemonsters1 3715 -- "Fire Elemental"
 #def 10
 #unsurr 2
 #end
 
-#selectmonster 910
+#selectmonster 910 -- Rhuax
 #clearmagic
 #magicskill 0 5
 #magicskill 3 2
-#makemonsters5 640 "Magma Child"
+#makemonsters5 640 -- "Magma Child"
 #def 10
 #unsurr 2
 #end
 
-#selectmonster909
+#selectmonster 909 -- Banefires
 #def 10
 #unsurr 2
-#makemonsters1 3715 "Fire Elemental"
+#makemonsters5 7421 -- "Banefire Child"
 #end
 
 -- WATER QUEENS
@@ -66268,7 +66290,7 @@ Only three Queens of Elemental Water are known to exist."
 #uwregen 50
 #regen 20
 #giftofwater 500
-#makemonsters1 3731 "Water Elemental"
+#makemonsters1 3731 -- "Water Elemental"
 #amphibian
 #clearmagic
 #magicskill 2 6
@@ -66278,8 +66300,8 @@ Only three Queens of Elemental Water are known to exist."
 #descr "The Queen of Elemental Water is a physical manifestation of the wild magic of Water. 
 Bathusma resembles a body of dark water with the general appearance of a huge, crowned female being. She is innately skilled in Water magic and can summon undines from the depths of the ocean to serve her.  The deep ocean currents flow around her and aid her allies. The Queen's body is composed of water and is very difficult to harm when she is underwater. Unless she is completely killed during one combat round, she will heal all her wounds. Bathusma cannot leave the sea. 
 Only three Queens of Elemental Water are known to exist."
-#onebattlespell 1174 "Friendly Currents"
-#makemonsters4 360 "Undine"
+#onebattlespell 1174 -- "Friendly Currents"
+#makemonsters4 360 -- "Undine"
 #clearmagic
 #magicskill 2 6
 #end
@@ -66313,7 +66335,7 @@ Only three Queens of Elemental Water are known to exist."
 #def 12
 #prec 12
 #waterelementals 1
-#makemonsters1 3747 "Ice Elemental"
+#makemonsters1 3747 -- "Ice Elemental"
 #coldres 40
 #poisonres 15
 #fireres -10
@@ -66329,12 +66351,12 @@ Only three Queens of Elemental Water are known to exist."
 #itemslots 860678
 #end
 
-# ILLEARTH
+-- # ILLEARTH
 
 #selectmonster 470
 #clearweapons
 #weapon 63 -- lifedrain
-#makemonsters1 3755 "Illearth"
+#makemonsters1 3755 -- "Illearth"
 #end
 
 -- Start of New Pretender Changes and Additions
@@ -84219,7 +84241,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 
 
 #selectmonster 2601  -- Turan Sorcerer
-#descr "While most Turans are of Humanbred stock, there are a few remaining pure-blooded Abysians in the kingdom. These families have preserved the old Abysian magic and jealously guard their secrets. They form a sorcerer-caste of powerful mages, influential in the courts of the Turan Shahs. With the arrival of the Airyas, some of them have turned their attentions towards magic not previously used by the Turans. The Sorcerers can only be recruited in hot provinces. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#descr "While most Turans are of Humanbred stock, there are a few remaining pure-blooded Abysians in the kingdom. These families have preserved the old Abysian magic and jealously guard their secrets. They form a sorcerer-caste of powerful mages, influential in the courts of the Turan Shahs. With the arrival of the Airyas, some of them have turned their attentions towards magic not previously used by the Turans. In warm lands they will be more difficult to harm, however the cold will make them brittle. The Sorcerers can only be recruited in hot provinces."
 #spr1 "vanilla/sorcerer2601_1.png"
 #spr2 "vanilla/sorcerer2601_2.png"
 #neednoteat
@@ -87389,7 +87411,7 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
 #montag 1048
-#reclimit 3
+#reclimit 5
 #clearweapons
 #weapon 1842 -- 'Elite Troop' Mind Blast
 #weapon 85 -- Tentacle
@@ -87568,7 +87590,7 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
 #montag 1048
-#reclimit 3
+#reclimit 5
 #end
 
 #selectmonster 1560  -- Dog
@@ -89382,7 +89404,55 @@ Cost 28 RP."
 #end
 
 
+#selectmonster 2599 -- Karapan
+#descr "Turan society has been stratified since the arrival of the Abysians. A few families of pure blood have made themselves priest-mages and jealously guard their privileges. The priest-mages of these families are known as Magi. The Karapan is a Turan Magus of the old Daevic cult. They worship the Daevas and have used tainted magic since before the forming of Ragha. They still use Blood and Death magic in conjunction with Fire magic. To the Karapan, the flames must be fed the flesh and blood of the living in order to gain power. Karapan can still be recruited in slightly cold provinces."
+#heatrec -1
+#end
+
+#selectmonster 2600 -- Dastur
+#descr "Turan society has been stratified since the arrival of the Abysians. A few families of pure blood have made themselves priest-mages and jealously guard their privileges. The priest-mages of these families are known as Magi. The Dastur is a Turan High Magus of the old Daevic cult. They worship the Daevas and have used tainted magic since before the forming of Ragha. They still use Blood and Death magic in conjunction with Fire magic. To the Dastur, the flames must be fed the flesh and blood of the living in order to gain power. The Zaotar and the Dastur share power and influence in the courts of the Shahs. The two priestly orders despise each other and bickering and plotting for power is common in the courts. For a Shah to be inaugurated, a High Magus must be present and the two orders compete for the right to perform the rituals of inaugurating a Shah to office. Dastur cannot be recruited in cold provinces. Temples with a Dastur preaching at them will spread the heat of summer to the province."
+#heatrec 0
+#end
+
+#selectmonster 2605 -- Turan Shah
+#descr "The Shahs are petty kings of Ragha. There are Turan as well as Airya Shahs, but they are likewise limited in power. The power of the Shah stems from the kingdom and not from the Shah himself. Unless inaugurated by a High Magus, his powers are insignificant in the eyes of the Raghans. One among the Shahs can be appointed Shahanshah, King of Kings. The power of the Shahanshah is linked to the land and the land is linked to the Crown forged by the orders of the High Magi. Only the Shah given the Crown of the Shah can wield the full sacred powers of the kingdom. At times the Shahanshah has been Airya, at times Turan. The Shahs are given priestly authority upon inauguration and are considered sacred, regardless of heritage. Turan Shah cannot be recruited in cold provinces."
+#heatrec 0
+#end
+
+#selectmonster 2629 -- Zhayedan Spahbed
+#descr "The Zhayedan Spahbed is a commander of the Zhayedan. They are skilled generals and mighty warriors blessed by the magi priests of the kingdom. Zhayedan Spahbed cannot be recruited if the province is cold."
+#heatrec 0
+#gcost 10020
+#magicskill 9 1 -- Priest
+#end
+
+#selectmonster 2587 -- Zhayedan
+#descr "The Zhayedan, Immortals, is a Turan sacred elite force of limited numbers, replaced only when one of their numbers is slain. Once they were an infantry unit, but with the increasing interest in mounted warfare and the acquisition of gryphons from a tribe of Amazons, the Immortals became an airborne cavalry unit of unequaled power. If the Zhayedan is killed, his gryphon will fight on, and if the gryphon is returned to Ragha another Zhayedan will mount the riderless Gryphon. Zhayedan cannot be recruited if the province is cold."
+#heatrec 0
+#end
+
+#selectmonster 3546 -- Zhayedan Gryphon
+#gcost 85
+#def 9
+#end
+
+#selectmonster 2602 -- Athraven
+#descr "When the Airyas arrived Tur was a stratified society. Families of hereditary priest-mages known as Magi had much influence in the kingdom. The Airya Seraphs adopted the Turan traditions and made themselves Magi of the Airyas. Now there are Magi families of both peoples and the stratification permeates the kingdom. The Athravan, Flame Keeper, is an Airya magus tending the sacred flames of the temples. Since fire is sacred to both peoples of Ragha, they both have Magi tending the sacred fires. The Athravan of Airya follow a tradition where flames must be kept pure from pollution and death. They despise and avoid the Turan Karapans, but recognize their status as priests of the Reawakening God. Athraven can still be recruited in slightly cold provinces."
+#coldrec -1
+#end
+
+#selectmonster 2606 -- Airya Shah
+#descr "The Shahs are petty kings of Ragha. There are Turan as well as Airya Shahs, but they are likewise limited in power. The power of the Shah stems from the kingdom and not from the Shah himself. Unless inaugurated by a High Magus, his powers are insignificant in the eyes of the Raghans. One among the Shahs can be appointed Shahanshah, King of Kings. The power of the Shahanshah is linked to the land and the land is linked to the Crown forged by the orders of the High Magi. Only the Shah given the Crown of the Shah can wield the full sacred powers of the kingdom. At times the Shahanshah has been Airya, at times Turan. The Shahs are given priestly authority upon inauguration and are considered sacred, regardless of heritage. Airya Shah cannot be recruited in hot provinces."
+#coldrec 0
+#end
+
+#selectmonster 2603 -- Zaotar
+#descr "When the Airyas arrived Tur was a stratified society. Families of hereditary priest-mages known as Magi had much influence in the kingdom. The Airya Seraphs adopted the Turan traditions and made themselves Magi of the Airyas. Now there are Magi families of both peoples and the stratification permeates the kingdom. The Zaotar is an Airya High Magus skilled in the traditional magic of the Airya. The Zaotar and the Dastur share power and influence in the courts of the Shahs. The two priestly orders despise each other and bickering and plotting for power is common in the courts. For a Shah to be inaugurated, a High Magus must be present and the two orders compete for the right to perform the rituals of inaugurating a Shah to office. Zaotar cannot be recruited in hot provinces. Temples with a Zaotar preaching at them will spread the cold of winter to the province."
+#coldrec 0
+#end
+
 #selectmonster 2592  -- Iceclad Zhayeden
+#descr "When the Airyas fled from Caelum, they found refuge in the desolate plain of Ragha, where they had once fought the Turan people. The last of the Airya Iceclads protected the last of the Seraphs during the negotiations with the Turan Shah and they became guardians of the emerging priestly caste. The Iceclads soon adopted the Turan concept of the sacred Immortals. The Immortals, Zhayedan, is a sacred elite force of limited numbers, replaced only when one of their numbers is slain. While the Turan Immortals bring righteous wrath to the enemies, the Airya Iceclads became serene guardians of the sacred flames and upholders of the faith. Iceclad Zhayedan cannot be recruited if the province is hot."
 #def 12 -- +2
 #att 12 -- +2
 #str 11 -- +2
@@ -89391,6 +89461,7 @@ Cost 28 RP."
 #mor 13 -- +1
 #mr 13 -- +1
 #bodyguard 3
+#coldrec 0
 #end
 
 
@@ -107993,6 +108064,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 2563 -- fravashi
 #homecom 2631 -- jahi
 #homecom 7642 -- annunaki
+#homecom 9150 -- catharsis reborn
 #end
 
 #newsite 2262
@@ -113463,6 +113535,24 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7503
 #homecom 7504
 #homecom 7505
+#end
+
+#newsite 2603
+#name "Turan Reign"
+#level 9
+#rarity 5
+#path 0
+#look 4
+#decscale 2 -- Heat
+#end
+
+#newsite 2604
+#name "Airya Reign"
+#level 9
+#rarity 5
+#path 2
+#look 4
+#incscale 2 -- Cold
 #end
 
 
@@ -121974,6 +122064,13 @@ Priests: Powerful, can perform blood sacrifices"
 #end
 
 #selectnation 105 -- LA Ragha
+#summary "Race: Flying, cold resistant, heat resistant, do not suffer as much from heat or cold
+Military: Flying units, gryphon riders
+Magic: Air, Water, Astral, Fire, Death and Blood
+Priests: Average, Guardian spirits, Temples expensive but generate fire gems.
+Temples slowly spread Heat scales if a Dastur is preaching at it, or Cold scales for a Zaotar.
+Temperature shifts more in forts during summer and winter."
+
 #hero1 2639  -- Fatherslayer
 #hero2 8249 -- Bowman
 #hero3 8250 -- Unconquered Warrior
@@ -121983,6 +122080,8 @@ Priests: Powerful, can perform blood sacrifices"
 #futuresite "Yazatas"
 #futuresite "Daevas"
 #futuresite "LA Ragha Heroes"
+#fortheatscaleres 1
+#fortcoldscaleres 1
 #end
 
 #selectnation 112 -- LA Xibalba
@@ -135685,8 +135784,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 4
 #pathlevel 0 1
 #pathlevel 1 1
-#nreff 2008
-#fatiguecost 1000
+#nreff 2008 -- 10+
+#fatiguecost 500
 #damage 7688 -- Skum
 #end
 
@@ -151248,6 +151347,56 @@ This spell can only be cast in a deep water province."
 #damage 9149
 #restricted 43 -- Atlantis
 #restricted 206 -- Dirgen
+#end
+
+#selectspell 4287 -- Catharsis
+#copyspell 945 -- Call Kraken
+#name "Purification of Flame"
+#descr "Long ago, the Daevas and wicked Mainyus corrupted the Purifying Flames of Catharsis with the magic of Death and were banished from the mortal realm for the deed. Fire magic was all but banned and Harab practitioners were hunted down for fear of causing more harm and pollution. Now, in the kingdom of Ragha, the Airya Seraphs and Turan Sorcerers have created a means of mantling a new King of Purifying Flames by working together using knowledge and secrets only known them. After the ritual, a new King of Purifying Flames will emerge, reborn, and once more his flames will heal and purify."
+#researchlevel 8
+#path 0 0 -- F5
+#pathlevel 0 5
+#path 1 4 -- S3
+#pathlevel 1 3
+#fatiguecost 5000
+#effect 10021
+#nreff 1
+#spec 0
+#damage 9150
+#restricted 105 -- Ragha
+#end
+
+#selectspell 4288 -- Winter chill
+#copyspell 810 -- Wolven Winter
+#name "Chill of Winter"
+#descr "In the kingdom of Ragha, the Airyas are accustomed to the cold and rule during the winter months. They are knowledgeable in the magic of the cold and ice and can use it to cool an entire province for a month."
+#details "Cold scale +2"
+#researchlevel 3
+#provrange 1
+#path 0 2 -- W3
+#pathlevel 0 3
+#fatiguecost 300
+#nreff 1
+#spec 0
+#damage 52
+#restricted 105 -- Ragha
+#end
+
+#selectspell 4289 -- Summer heat
+#copyspell 810 -- Wolven Winter
+#name "Heat of Summer"
+#descr "In the kingdom of Ragha, the Turan are accustomed to hot lands and rule during the summer months. They are knowledgeable in the magic of scorching heat and can use it to warm an entire province for a month."
+#details "Heat scale +2"
+#researchlevel 3
+#school 2 -- evo
+#provrange 1
+#path 0 0 -- F3
+#pathlevel 0 3
+#fatiguecost 300
+#nreff 1
+#spec 0
+#damage 51
+#restricted 105 -- Ragha
 #end
 
 
@@ -182004,6 +182153,162 @@ It is now fully repaired and a new crew has been assigned to it."
 -- END OF THEMATIC CAP TERRAIN
 
 
+
+#newevent -- Summer heat
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_cold -2 -- 2 heat or colder
+#req_fort 1 -- only in forts
+#msg "Heat in summer."
+--#header 2
+#notext
+#nolog
+#req_month 2 -- Early summer
+#decscale 2 -- Heat
+#end
+
+#newevent -- Winter cold
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_heat -2 -- 2 cold or hotter
+#req_fort 1 -- only in forts
+#msg "Cold in winter."
+--#header 2
+#notext
+#nolog
+#req_month 8 -- Early winter
+#incscale 2 -- Cold
+#end
+
+#newevent -- Remove heat site
+#rarity 5
+#req_site 1
+#msg "Remove Ragha heat site. [Turan Reign]"
+--#header 2
+#notext
+#nolog
+#removesite 2603
+#end
+
+#newevent -- Remove heat site
+#rarity 5
+#req_site 1
+#msg "Remove Ragha cold site. [Airya Reign]"
+--#header 2
+#notext
+#nolog
+#removesite 2604
+#end
+
+#newevent -- Place heat site if Dastur preaching
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_targmnr 2600 -- Dastur
+#req_targorder 6 -- Preach
+#req_temple 1
+#msg "Place Ragha heat site."
+--#header 2
+#notext
+#nolog
+#hiddensite 2603 -- Heat
+#end
+
+#newevent -- Place cold site if Zaotar preaching and no heat site
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_targmnr 2603 -- Zaotar
+#req_targorder 6 -- Preach
+#req_nositenbr 2603 -- Heat
+#req_temple 1
+#msg "Place Ragha cold site."
+--#header 2
+#notext
+#nolog
+#hiddensite 2604 -- Cold
+#end
+
+#newevent -- Remove heat site if Zaotar preaching and yes heat site
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_targmnr 2603 -- Zaotar
+#req_targorder 6 -- Preach
+#req_site 1
+#msg "Remove Ragha heat site. [Turan Reign]"
+--#header 2
+#notext
+#nolog
+#removesite 2603 -- Heat
+#end
+
+#newevent -- Ragha heat spell
+#rarity 5
+#req_unluck 5
+#req_luck 5
+#msg "A summer heat has swept over the province."
+#id 51
+#decscale2 2 -- Heat
+#end
+
+#newevent -- Ragha cold spell
+#rarity 5
+#req_unluck 5
+#req_luck 5
+#msg "A winter chill has swept over the province."
+#id 52
+#incscale2 2 -- Cold
+#end
+
+#newevent -- Mid summer heat
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_cold -2 -- 2 heat or colder
+#req_fort 1 -- only in forts
+#msg "Heat in summer."
+--#header 2
+#notext
+#nolog
+#req_month 3 -- Mid summer
+#decscale 2 -- Heat
+#end
+
+#newevent -- Mid winter cold
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_heat -2 -- 2 cold or hotter
+#req_fort 1 -- only in forts
+#msg "Cold in winter."
+--#header 2
+#notext
+#nolog
+#req_month 9 -- Mid winter
+#incscale 2 -- Cold
+#end
+
+--#newevent -- Late summer heat
+--#rarity 5
+--#req_fornation 105 -- Ragha
+--#req_cold -1 -- 1 heat or colder
+--#req_fort 1 -- only in forts
+--#msg "Heat in summer."
+----#header 2
+--#notext
+--#nolog
+--#req_month 4 -- Late summer
+--#decscale 2 -- Heat
+--#end
+
+--#newevent -- Late winter cold
+--#rarity 5
+--#req_fornation 105 -- Ragha
+--#req_heat -1 -- 1 cold or hotter
+--#req_fort 1 -- only in forts
+--#msg "Cold in winter."
+----#header 2
+--#notext
+--#nolog
+--#req_month 10 -- Late winter
+--#incscale 2 -- Cold
+--#end
 
 
 
