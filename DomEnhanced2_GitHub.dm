@@ -151588,6 +151588,12 @@ This spell can only be cast in a deep water province."
 #restricted 205
 #end
 
+#selectspell 266 -- Call Ladon
+#descr "The caster summons Ladon, the Hesperian Dragon, and ends its eternal vigil. With the golden apples of immortality no longer guarded by the monster, expeditions to the blessed gardens can be undertaken. Ladon is a many-headed serpent of tremendous size spawned by the Mother of Monsters."
+#fatiguecost 2000
+#effect 10089 -- Ritual Unique Commander
+#end
+
 #selectspell 267 -- Dogs of Gold and Silver
 #fatiguecost 500
 #end
