@@ -151436,8 +151436,8 @@ This spell can only be cast in a deep water province."
 #details "Cold scale +2"
 #researchlevel 3
 #provrange 2
-#path 0 2 -- W3
-#pathlevel 0 3
+#path 0 2 -- W2
+#pathlevel 0 2
 #fatiguecost 300
 #nreff 1
 #spec 0
@@ -151453,8 +151453,8 @@ This spell can only be cast in a deep water province."
 #researchlevel 3
 #school 2 -- evo
 #provrange 2
-#path 0 0 -- F3
-#pathlevel 0 3
+#path 0 0 -- F2
+#pathlevel 0 2
 #fatiguecost 300
 #nreff 1
 #spec 0
