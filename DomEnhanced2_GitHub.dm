@@ -143842,19 +143842,6 @@ All effects scale with friendly Dominion."
 #spec 549585024  -- AN, No Effect on Mindless or Lifeless, Affects Friendlies Only, May Use UW
 #end
 
-#selectspell 3722
-#copyspell 216 -- Sermon of Courage
-#name "Banner Morale"
-#descr "The power of the banner strengthens fighting ability in nearby troops."
-#details "Attack skill +2, morale +2."
-#school -1
-#researchlevel 0
-#effect 23
-#damage 281474976710656  -- fury
-#aoe 1
-#range 0
-#end
-
 #selectspell 3723
 #copyspell 216 -- Sermon of Courage
 #name "Banner Courage"
@@ -151213,6 +151200,17 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #aoe 2
 #end
 
+#selectspell 3722
+#copyspell 1274 -- Battle Fury
+#name "Banner Morale"
+#descr "The power of the banner strengthens fighting ability in nearby troops."
+#details "Attack skill +2, morale +2."
+#school -1
+#researchlevel 0
+#aoe 1
+#range 0
+#end
+
 #selectspell 4276
 #copyspell 216 -- Sermon of Courage
 #name "Banner Skill"
@@ -151220,10 +151218,11 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #details "Attack skill +2, morale +2. Temporary morale +5 every round."
 #school -1
 #researchlevel 0
-#effect 17
 #damage 5
 #aoe 50
 #range 0
+#explspr -1
+#flightspr -1
 #nextspell 3722
 #end
 
