@@ -17890,7 +17890,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mr 14
 #weapon 9  -- Dagger
 #armor 44  -- Furs
-#magicskill 6 1
+#magicskill 6 2
 #magicskill 7 1
 #custommagic 29056 100  -- 100% FADNG
 #researchbonus 0
@@ -18235,14 +18235,15 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #size 5
 #hp 24
 #str 16
-#prot 7
+#prot 8
 #mr 7
-#mor 14
+#mor 16
 #att 14
 #def 11
 #prec 5
 #enc 3
 #ap 20
+#formationfighter 2
 #mapmove 22
 #startage 20
 #maxage 40
@@ -40563,6 +40564,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eediretiger2.tga"
 #name "Dire Tiger"
 #descr "Dire Tigers are huge and ferocious tigers that hunt the largest prey. Mammoths and Elephants are common targets, although sometimes one will try to hunt a small dragon. Their great teeth can carve through any material with ease, whilst their thick pelts render them almost immune from cutting and tearing."
+#gcost 0
 #size 6
 #hp 48
 #prot 14
@@ -85948,7 +85950,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 4053
-#shapechange 7100
+#shapechange 811
 #magicskill 8 1
 #end
 
@@ -86749,6 +86751,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 1140  -- Tiger
 #twiceborn 7343 -- Size 2 Wight Beast
+#gcost 0
 #end
 
 #selectmonster 1143  -- Guru
@@ -113555,6 +113558,41 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #incscale 2 -- Cold
 #end
 
+#newsite 2605 -- LA Pyrene Summons
+#clear
+#name "LA Pyrène Summons"
+#rarity 5
+#level 0
+#path 8
+#look 4
+#homecom 811 -- succ
+#homecom 4053 -- incu
+#homemon 8692 -- Gaueko
+#homemon 8698 -- Gizotso
+#homemon 8819 -- Intxisua
+#homemon 8822 -- Warrior
+#homemon 8823 -- Hurler
+#homecom 8821 -- Champion
+#homecom 8820 -- Intxisua Warlock
+#homecom 8696 -- Laminak
+#homecom 8697 -- Maideak
+#homecom 8699 -- Herensuge
+#homecom 8694 -- Aideko
+#homecom 8695 -- Aidegaizto
+#homecom 7667 -- lillith
+#end
+
+#newsite 2606 -- LA Pyrene Heroes
+#clear
+#name "LA Pyrène Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 0
+#homecom 4059
+#homecom 4060
+#end
+
 
 -- END OF NEW SITES
 
@@ -119358,6 +119396,10 @@ Priests: Average"
 #addgod 3086 -- Deives of the Sun
 #addgod 8456 -- Bloodstained Edifice
 #addgod 8502 -- Worm Lord
+
+#futuresite "LA Pyrène Summons"
+#futuresite "LA Pyrène Heroes"
+
 #end
 
 #selectnation 12 -- Marverni
@@ -124981,7 +125023,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "The caster summons an ambush of great Dire Tigers from the forest. These tigers are renowned for their great size, strength, and savage temperament."
 #researchlevel 5
 #pathlevel 0 3
-#fatiguecost 1000
+#fatiguecost 1200
 #nreff 1005
 #damage 8022
 #restricted 202 -- Gondwana
@@ -129651,9 +129693,9 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #descr "The caster summons a pack of Sabre-Tooths. Sabre-Tooths appear similar to lions and tigers that inhabit other lands, with the exception of their huge slashing teeth."
 #researchlevel 3
 #pathlevel 0 2
-#fatiguecost 1000
+#fatiguecost 800
 #damage 6989 -- Sabre-Tooth
-#nreff 1008
+#nreff 1010 -- 12+
 #restricted 202 -- Gondwana
 #end
 
@@ -133202,9 +133244,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #descr "Tigers are common around the forest temples of Bandar Log and are used as mounts for the White Ones. The caster summons an ambush of Tigers and binds them to service."
 #researchlevel 0
 #pathlevel 0 2
-#nreff 2006
+#nreff 2014 -- 18++
 #damage 1140  -- Tiger
-#fatiguecost 1000
+#fatiguecost 900
 #restricted 68 -- MA Bandar Log
 #end
 
@@ -151372,7 +151414,7 @@ This spell can only be cast in a deep water province."
 #descr "In the kingdom of Ragha, the Airyas are accustomed to the cold and rule during the winter months. They are knowledgeable in the magic of the cold and ice and can use it to cool an entire province for a month."
 #details "Cold scale +2"
 #researchlevel 3
-#provrange 1
+#provrange 2
 #path 0 2 -- W3
 #pathlevel 0 3
 #fatiguecost 300
@@ -151389,7 +151431,7 @@ This spell can only be cast in a deep water province."
 #details "Heat scale +2"
 #researchlevel 3
 #school 2 -- evo
-#provrange 1
+#provrange 2
 #path 0 0 -- F3
 #pathlevel 0 3
 #fatiguecost 300
