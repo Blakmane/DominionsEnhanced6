@@ -127273,10 +127273,10 @@ Can only be cast once per combat round."
 #researchlevel 6
 #path 0 5
 #pathlevel 0 4
-#effect 10093
+#effect 10089 -- Ritual Unique Commander
 #nreff 1
 #damage 7298
-#fatiguecost 1500
+#fatiguecost 2000
 #restricted 5 -- ea Arco
 #restricted 8 -- EA Ermor
 #restricted 6 -- EA Mekone
@@ -128950,7 +128950,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #descr "Summons Black Tortoise"
 #school -1
 #researchlevel 0
-#effect 10093
+#effect 10089 -- Ritual Unique Commander
 #damage 7285 -- Black Tortoise
 #nreff 1
 #end
@@ -128960,7 +128960,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #descr "Summons Vermillion Bird"
 #school -1
 #researchlevel 0
-#effect 10093
+#effect 10089 -- Ritual Unique Commander
 #damage 7284 -- Vermillion Bird
 #nreff 1
 #nextspell 2545
@@ -128971,7 +128971,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #descr "Summons Azure Dragon."
 #school -1
 #researchlevel 0
-#effect 10093
+#effect 10089 -- Ritual Unique Commander
 #damage 7283 -- Azure Dragon
 #nreff 1
 #nextspell 2546
@@ -128985,8 +128985,8 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #researchlevel 9
 #path 0 6
 #pathlevel 0 5
-#effect 10093
-#fatiguecost 5000
+#effect 10089 -- Ritual Unique Commander
+#fatiguecost 8000
 #damage 7282 -- White Tiger
 #nreff 1
 #restricted 22 -- EA Tien Chi
@@ -132859,8 +132859,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 7
 #pathlevel 0 5
 #pathlevel 1 1
-#effect 10093
-#fatiguecost 3000
+#effect 10089 -- Ritual Unique Commander
+#fatiguecost 3500
 #damage 7273 -- Nidhogg
 #nreff 1
 #onlyatsite 59  -- Helhalla
@@ -133918,7 +133918,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #descr "Summons Raiju"
 #school -1
 #researchlevel 0
-#effect 10093  -- Summon unique unit
+#effect 10089 -- Ritual Unique Commander  -- Summon unique unit
 #damage 7586 -- Raiju
 #nreff 1
 #end
@@ -134731,9 +134731,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 7
 #path 0 0
 #pathlevel 0 4
-#effect 10093
+#effect 10089 -- Ritual Unique Commander
 #nreff 1
-#fatiguecost 2000
+#fatiguecost 3000
 #damage 7295 -- Musmahhu
 #onlygeosrc 8388624  -- Mountain & Highland
 #restricted 19 -- Ur
@@ -137800,10 +137800,10 @@ All effects scale with friendly Dominion."
 #pathlevel 0 4
 #path 1 2
 #pathlevel 1 1
-#effect 10093
+#effect 10089 -- Ritual Unique Commander
 #nreff 1
 #damage 7632
-#fatiguecost 1500
+#fatiguecost 2000
 #onlyatsite 6  -- Tower of Avalon
 #restricted 57 -- MA Man
 #end
@@ -137817,10 +137817,10 @@ All effects scale with friendly Dominion."
 #pathlevel 0 4
 #path 1 3
 #pathlevel 1 1
-#effect 10093
+#effect 10089 -- Ritual Unique Commander
 #nreff 1
 #damage 7633
-#fatiguecost 1500
+#fatiguecost 2000
 #onlyatsite 6  -- Tower of Avalon
 #restricted 57 -- MA Man
 #end
@@ -148090,8 +148090,8 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #researchlevel 9
 #path 0 6
 #pathlevel 0 5
-#effect 10093
-#fatiguecost 5000
+#effect 10089 -- Ritual Unique Commander
+#fatiguecost 8000
 #damage 7282 -- White Tiger
 #nreff 1
 #restricted 23 -- Yomi
@@ -148107,8 +148107,8 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #researchlevel 9
 #path 0 6
 #pathlevel 0 5
-#effect 10093
-#fatiguecost 5000
+#effect 10089 -- Ritual Unique Commander
+#fatiguecost 8000
 #damage 7282 -- White Tiger
 #nreff 1
 #restricted 69 -- MA Tien Chi
@@ -148124,8 +148124,8 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #researchlevel 9
 #path 0 6
 #pathlevel 0 5
-#effect 10093
-#fatiguecost 5000
+#effect 10089 -- Ritual Unique Commander
+#fatiguecost 8000
 #damage 7282 -- White Tiger
 #nreff 1
 #restricted 70 -- Shinu
@@ -148141,8 +148141,8 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #researchlevel 9
 #path 0 6
 #pathlevel 0 5
-#effect 10093
-#fatiguecost 5000
+#effect 10089 -- Ritual Unique Commander
+#fatiguecost 8000
 #damage 7282 -- White Tiger
 #nreff 1
 #restricted 109 -- LA Tien Chi
@@ -148158,8 +148158,8 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #researchlevel 9
 #path 0 6
 #pathlevel 0 5
-#effect 10093
-#fatiguecost 5000
+#effect 10089 -- Ritual Unique Commander
+#fatiguecost 8000
 #damage 7282 -- White Tiger
 #nreff 1
 #restricted 110 -- Jomon
@@ -151602,7 +151602,8 @@ This spell can only be cast in a deep water province."
 #end
 
 #selectspell 272 -- Daughter of Typhon
-#researchlevel 8
+#fatiguecost 3500
+#effect 10089 -- Ritual Unique Commander
 #end
 
 #selectspell 274 -- Awaken Hamadryad
