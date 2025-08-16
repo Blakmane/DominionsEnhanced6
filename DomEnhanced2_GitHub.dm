@@ -24296,7 +24296,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #end
 
 #newmonster 7266
-#copystats 2444  -- Teotl of the Underworld
 #clearmagic
 #clearweapons
 #spr1 "magicenhanced/eeitzpapalotl.tga"
@@ -24304,10 +24303,15 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Obsidian Butterfly"
 #descr "Itzpapalotl is a giant of divine heritage. In ages past she lived amongst the stars as Queen of the Tzitzimitl. When the Star Demons were cast down into the Terrestrial sphere she also fell and was imprisoned below the earth. Now released, she appears as a terrifying skeletal warrior with great black butterfly wings. These wings are tipped with obsidian as sharp as a knife blade. Itzpapalotl can call Tzitzimitl to her aid each month. Before a battle she will instruct her servants to attack the sun, causing a solar eclipse for the duration of the battle. Itzpapalotl can predict future events using the position of the stars."
 #fixedname "Itzpapalotl"
-#batstartsum5d6 0
-#homerealm 0
 #gcost 0
 #mor 18
+#hp 82
+#prot 3
+#str 22
+#att 12
+#def 12
+#mr 20
+#enc 0
 #unique
 #holy
 #female
@@ -24323,6 +24327,14 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #polyimmune
 #moregrowth 0
 #moremagic 0
+#undead
+#pooramphibian
+#pierceres
+#coldres 15
+#poisonres 25
+#spiritsight
+#nobadevents 25
+#maxage 5000
 #end
 
 #newmonster 7267
@@ -66364,7 +66376,6 @@ Only three Queens of Elemental Water are known to exist."
 -- Start of New Pretender Changes and Additions
 
 
-
 -- FOLDUNITS
 
 
@@ -69966,7 +69977,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #stormimmune
 #fear 5
 #patrolbonus 50
-#sailing 6 10
+#sailing 10 10
 #weapon 826 -- Talons
 #weapon 826 -- Talons
 #weapon 825 -- Golden Beak
@@ -75860,7 +75871,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #end
 
 #newmonster 8507 -- Obsidian Butterfly
-#copystats 2444
 #spr1 "magicenhanced/eeitzpapalotl.tga"
 #spr2 "magicenhanced/eeitzpapalotl2.tga"
 #name "Obsidian Butterfly"
@@ -75874,13 +75884,27 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 
 #moreluck 1
 #mor 30
+#hp 82
+#prot 3
+#str 22
+#att 12
+#def 12
+#mr 20
 #clearweapons
 #fixedname "Itzpapalotl"
-#batstartsum5d6 0
 #female
 #flying
 #weapon 1648 -- Obsidian Wing
 #weapon 29  -- Claw
+#undead
+#pooramphibian
+#pierceres
+#coldres 15
+#poisonres 25
+#spiritsight
+#nobadevents 25
+#enc 0
+#itemslots 991750
 #clearmagic
 #magicskill 0 1
 #magicskill 4 2
@@ -83674,9 +83698,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 
 
 
-
 -- ENDUNITS
-
 
 
 
@@ -133610,7 +133632,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 821 -- Stygian Skin
 #name "End of Courage"
 #descr "Amongst the Oni dark magic is commonplace. This spell causes the caster to become demonic in appearance and terrible to behold. This will cause nearby enemies to falter or flee in terror."
-#details "Grants Fear 5"
+#details "Grants Dread 5"
 #school 5
 #researchlevel 2
 #path 1 6 -- Death
@@ -134067,7 +134089,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #selectspell 2907
 #name "Celestial Abominations"
 #descr "The descendants of the Nephilim carry the taint of Sin and are abominable to the world. With a profane prayer the priest recites the sins of the Grigori and some of their power flows up from the infernal realm. This taint will cause a terrible spiritual fear to grip those faced with the Children of the Nephilim. This spell will only affect sacred living creatures, and those that have no mind or that are not touching the earth will be unaffected."
-#details "Grants Fear 5"
+#details "Grants Dread 5"
 #researchlevel 4
 #school 6
 #path 0 8
@@ -134644,7 +134666,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 781 -- Cheat Fate
 #name "Shroud of Fear"
 #descr "The Bone Readers of the hunter tribes practice foul magic in their fetid swamps apart from civilization. With this enchantment a few nearby warriors are shrouded in evil wards that strike fear into the hearts of men. Most enemies will flee rather than face them in battle."
-#details "Fear 5"
+#details "Dread 5"
 #researchlevel 4
 #path 0 5
 #path 1 3
@@ -135189,7 +135211,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 821 -- Stygian Skin
 #name "Aura of Tyranny"
 #descr "The caster creates an aura of Tyranny and oppression around themselves and becomes terrible to behold. This will cause nearby enemies to falter or flee in terror."
-#details "Grants Fear 5"
+#details "Grants Dread 5"
 #researchlevel 3
 #school 4
 #path 1 3
