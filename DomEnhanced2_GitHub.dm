@@ -113449,7 +113449,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 8
 #homemon 7614 -- laist hurl
 #homemon 7615 -- laist spear
-#homemon 7468 -- pearl w
 #homemon 7359 -- volans
 #homecom 7854 -- volans comm
 #homecom 2834 -- hekat
@@ -136805,7 +136804,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #nreff 5
 #damage 7468 -- Pearl Warrior
 #restricted 40
-#restricted 86
 #end
 
 #selectspell 3089
