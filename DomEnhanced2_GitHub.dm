@@ -13400,6 +13400,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spiritsight
 #okleader
 #okmagicleader
+#animal
 #twiceborn 6644 -- Wight Beast
 #homerealm 0
 #end
@@ -26399,6 +26400,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #armor 189  -- Pearl Shield
 #amphibian
 #holy
+#magicskill 9 1 -- H1
 #end
 
 #newmonster 7361
@@ -113509,6 +113511,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7466 -- male shishi
 #homecom 7450 -- shije xian
 #homecom 7452 -- tian xian
+#homecom 7451 -- di xian
 #homecom 7306 -- divine general
 #homecom 7227 -- carp
 #homecom 7304 -- king of ghosts
@@ -136816,7 +136819,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 2
 #pathlevel 1 2
 #fatiguecost 1000
-#nreff 503
+#nreff 3
 #damage 7359 -- Pearl Knight
 #restricted 40
 #restricted 86
