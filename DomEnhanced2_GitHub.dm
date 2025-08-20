@@ -1266,6 +1266,7 @@
 #name "Pearl Lance"
 #bonus
 #ammo 1
+#norepel
 #end
 
 #newweapon 1597
@@ -1773,7 +1774,10 @@
 #name "Shrimp Punch"
 #len 1
 #dmg 7
+#att 2
 #nratt 2
+#ammo 1020
+#skip
 #bonus
 #sound 42  -- Earth Trample
 #secondaryeffectalways 699  -- Small Area Stun
@@ -1789,6 +1793,7 @@
 #bonus
 #secondaryeffectalways 171  -- Small Area Fire
 #skip
+#norepel
 #end
 
 #newweapon 1658
@@ -3848,6 +3853,14 @@
 #dmg 0
 #end
 
+#newweapon 1898 -- Invisible bite
+#copyweapon 764 -- Unseen Sword
+#name "Invisible Maw"
+#dmg 4
+#att 0
+#def 0
+#bonus
+#end
 
 
 -- END OF NEW WEAPONS
@@ -5051,6 +5064,12 @@
 
 #selectarmor 192  -- Magic Furs
 #rcost 5
+#end
+
+#selectarmor 201 -- Armor of Knights
+#prot 21
+#def -1
+#enc 2
 #end
 
 #selectarmor 206  -- Obsidian Cuirass
@@ -13381,6 +13400,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spiritsight
 #okleader
 #okmagicleader
+#animal
 #twiceborn 6644 -- Wight Beast
 #homerealm 0
 #end
@@ -17735,6 +17755,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #str 17
 #hp 35
 #armor 251 -- leather barding
+#mr 8
 #nothrowoff
 #bravemount 100
 #end
@@ -17864,13 +17885,13 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/lionmage.tga"
 #spr2 "gondwana/lionmage2.tga"
 #descr "Lion Shamans wear the hide of great beasts and use these to take animal form. Through meditation and ingesting highly magical plants they can transform their body into that of a beast. Lion Shamans can assume the form of a great lion, or a fearsome creature with the qualities of man and beast. The Shamans of Gondwana perform rhythmic songs and dances that allow them to enter a powerful trance state for ritual casting."
-#gcost 210
+#gcost 10020
 #rpcost 4
 #mor 13
 #mr 14
 #weapon 9  -- Dagger
 #armor 44  -- Furs
-#magicskill 6 1
+#magicskill 6 2
 #magicskill 7 1
 #custommagic 29056 100  -- 100% FADNG
 #researchbonus 0
@@ -17891,7 +17912,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/lionman.tga"
 #spr2 "gondwana/lionman2.tga"
 #descr "Lion Shamans wear the hide of great beasts and use these to take animal form. Through meditation and ingesting highly magical plants they can transform their body into that of a beast. Lion Shamans can assume the form of a great lion, or a fearsome creature with the qualities of man and beast. The Shamans of Gondwana perform rhythmic songs and dances that allow them to enter a powerful trance state for ritual casting."
-#gcost 210
+#gcost 10020
 #rpcost 4
 #size 4
 #hp 24
@@ -17922,7 +17943,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #clearmagic
 #name "Lion Shaman"
 #descr "Lion Shamans wear the hide of great beasts and use these to take animal form. Through meditation and ingesting highly magical plants they can transform their body into that of a beast. Lion Shamans can assume the form of a great lion, or a fearsome creature with the qualities of man and beast. The Shamans of Gondwana perform rhythmic songs and dances that allow them to enter a powerful trance state for ritual casting."
-#gcost 210
+#gcost 10020
 #rpcost 4
 #transformation 0
 #mor 13
@@ -17943,7 +17964,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/shaman.tga"
 #spr2 "gondwana/shaman2.tga"
 #descr "A shaman is a mage that contacts the spirit world to perform magic. The shamans of Gondwana perform rhythmic songs and dances that allow them to enter a powerful trance state for ritual casting. These dances can last for many hours and are accompanied by specially trained Spirit Dancers. Each shaman crafts a mask that grants them a closer affinity with the spirit world when worn, and crafting a mask is an important step in the training of a young shaman. Shamans are able to communicate with spirits of the air, the dead and the wild and guide the nation in spiritual matters."
-#gcost 200
+#gcost 10020
 #rpcost 2
 #mr 14
 #researchbonus 0
@@ -18061,7 +18082,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr2 "gondwana/terrorbirdcaptain2.tga"
 #descr "In the capital exists a special regiment of Isienmwenro known as the Ekaiwe. These are the cream of the warriors specially trained to ride gigantic predatory birds known as Terror Birds. Terror Birds roam the plains of Gondwana preying on anything they can kill with their powerful beaks and sharp claws. They are strong in N'um and are sacred to the people of Gondwana. The commanders of the Ekaiwe are hand picked for their loyalty to the Oba and have some priestly powers. Should the rider be slain the bird will continue to peck and claw at enemies."
 #mountedhumanoid
-#gcost 10040
+#gcost 10020
 #rcost 10
 #rpcost 1
 #size 3
@@ -18095,7 +18116,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/eldershaman.tga"
 #spr2 "gondwana/eldershaman2.tga"
 #descr "The Babalawo are a sect of shamanic priests that reside in the capital and serve the Obas. Through divination they are able to advise the Obas on future events and are highly valued for their gifts. Like all shamans of Gondwana they perform rhythmic songs and dances that allow them to enter a powerful trance state for ritual casting. The masks they wear are strong in N'um and grant special priestly powers to the Babalawo."
-#gcost 270
+#gcost 10010
 #rpcost 4
 #mr 16
 #mor 14
@@ -18126,7 +18147,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "gondwana/queen.tga"
 #spr2 "gondwana/queen2.tga"
 #descr "The Queens of Gondwana rule alongside the Obas. As the figureheads of the nation they are strong in N'um. Whilst the Obas spend their time mediating and planning campaigns in times of war, the Queens often spend their time learning magical skills. These skills allow them to guide their nation and mediate in magical matters. Like all shamans of Gondwana they perform rhythmic songs and dances that allow them to enter a powerful trance state for ritual casting."
-#gcost 230
+#gcost 10010
 #rpcost 2
 #mr 15
 #mor 15
@@ -18215,14 +18236,15 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #size 5
 #hp 24
 #str 16
-#prot 7
+#prot 8
 #mr 7
-#mor 14
+#mor 16
 #att 14
 #def 11
 #prec 5
 #enc 3
 #ap 20
+#formationfighter 2
 #mapmove 22
 #startage 20
 #maxage 40
@@ -24275,7 +24297,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #end
 
 #newmonster 7266
-#copystats 2444  -- Teotl of the Underworld
 #clearmagic
 #clearweapons
 #spr1 "magicenhanced/eeitzpapalotl.tga"
@@ -24283,10 +24304,15 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Obsidian Butterfly"
 #descr "Itzpapalotl is a giant of divine heritage. In ages past she lived amongst the stars as Queen of the Tzitzimitl. When the Star Demons were cast down into the Terrestrial sphere she also fell and was imprisoned below the earth. Now released, she appears as a terrifying skeletal warrior with great black butterfly wings. These wings are tipped with obsidian as sharp as a knife blade. Itzpapalotl can call Tzitzimitl to her aid each month. Before a battle she will instruct her servants to attack the sun, causing a solar eclipse for the duration of the battle. Itzpapalotl can predict future events using the position of the stars."
 #fixedname "Itzpapalotl"
-#batstartsum5d6 0
-#homerealm 0
 #gcost 0
 #mor 18
+#hp 82
+#prot 3
+#str 22
+#att 12
+#def 12
+#mr 20
+#enc 0
 #unique
 #holy
 #female
@@ -24302,6 +24328,14 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #polyimmune
 #moregrowth 0
 #moremagic 0
+#undead
+#pooramphibian
+#pierceres
+#coldres 15
+#poisonres 25
+#spiritsight
+#nobadevents 25
+#maxage 5000
 #end
 
 #newmonster 7267
@@ -25383,7 +25417,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Divine General"
 #descr "The armies of Heaven are guided by Divine Generals, chosen from the best mortal generals and gifted with Divine bodies upon death. Wielding enchanted weapons and divine authority, their true power is the confidence and training they instill in their troops."
 #weapon 75  -- Enchanted sword
-#expertleader
+#superiorleader
 #expertmagicleader
 #magicskill 9 2
 #end
@@ -26366,6 +26400,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #armor 189  -- Pearl Shield
 #amphibian
 #holy
+#magicskill 9 1 -- H1
 #end
 
 #newmonster 7361
@@ -28276,7 +28311,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #magicskill 6 1
 #magicboost 53 -1
 #darkvision 50
-#sailing 6 10
+#sailing 10 10
 #heal
 #holy
 #spiritsight
@@ -28313,7 +28348,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #holy
 #spiritsight
 #darkvision 50
-#sailing 2 3
+#sailing 5 5
 #gcost 0
 #regeneration 10
 #berserk 4
@@ -34831,12 +34866,14 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "magicenhanced/eemantisshrimp.tga"
 #spr2 "magicenhanced/eemantisshrimp2.tga"
 #name "Sea Killer"
-#descr "These colossal shrimps are larger than a Shambler and heavily armored. Their carapace makes them difficult to harm with normal weapons, however their most feared attribute is their punch. These creatures forelimbs are modified into dense clubs, and can be thrown with incredible force that will stun or kill their prey."
+#descr "These colossal shrimps are larger than a Shambler and heavily armored. Their carapace makes them difficult to harm with normal weapons, however their most feared attribute is their punch. These creatures forelimbs are modified into dense clubs, and can be thrown with incredible force that will stun or kill their prey. They can only use this punch a few times in combat before becoming exhausted by it."
 #weapon 1656 -- Shrimp Punch
+#weapon 300 -- Head Butt
 #lizard -- Quadruped bugged
 #size 6
-#hp 64
+#hp 46
 #prot 22
+#att 10
 #mr 8
 #mor 15
 #ap 12
@@ -35017,7 +35054,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #size 3
 #startage 60
 #maxage 300
-#sailing 5 8
+#sailing 8 8
 #darkvision 50
 #itemslots 860678 -- No feet
 #amphibian
@@ -35056,7 +35093,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #magicskill 1 1
 #magicskill 7 1
 #magicskill 9 1
-#sailing 5 8
+#sailing 8 8
 #darkvision 50
 #amphibian
 #holy
@@ -35097,7 +35134,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #mapmove 24
 #startage 60
 #maxage 300
-#sailing 5 8
+#sailing 8 8
 #darkvision 50
 #itemslots 786432 -- 2 misc
 #glamour
@@ -36002,6 +36039,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #armor 75  -- Fire Plate
 #armor 162  -- Crested Helmet
 #domimmortal
+#reformtime 3
 #rcost 1
 #nametype 114
 #xpshape 50
@@ -38292,7 +38330,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #armor "Bronze Cap"
 #armor "Golden Shield"
 #armor "Bronze Cuirass"
-#sailing 5 8
+#sailing 8 8
 #darkvision 50
 #flying
 #holy
@@ -40540,6 +40578,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eediretiger2.tga"
 #name "Dire Tiger"
 #descr "Dire Tigers are huge and ferocious tigers that hunt the largest prey. Mammoths and Elephants are common targets, although sometimes one will try to hunt a small dragon. Their great teeth can carve through any material with ease, whilst their thick pelts render them almost immune from cutting and tearing."
+#gcost 0
 #size 6
 #hp 48
 #prot 14
@@ -41950,7 +41989,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #def 11
 #stealthy 0
 #forestsurvival
-#sailing 2 3
+#sailing 4 4
 #weapon 308  -- Glaive
 #armor 15  -- Full Leather Armor
 #armor 121  -- Leather Hood
@@ -41976,7 +42015,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #stealthy 0
 #pillagebonus 1
 #forestsurvival
-#sailing 2 3
+#sailing 4 4
 #weapon 1  -- Spear
 #weapon 452  -- Harpoon
 #armor 15  -- Full Leather Armor
@@ -42186,7 +42225,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #att 11
 #def 11
 #inspirational 1
-#sailing 2 3
+#sailing 4 4
 #pillagebonus 5
 #stealthy 0
 #forestsurvival
@@ -42338,7 +42377,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #def 11
 #coldres 5
 #stealthy 0
-#sailing 999 3
+#sailing 999 4
 #spellsinger
 #forestsurvival
 #poorleader
@@ -42478,7 +42517,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #enc 2
 #spellsinger
 #latehero 10
-#sailing 999 3
+#sailing 999 4
 #autohealer 3
 #magicskill 2 3
 #magicskill 3 4
@@ -48486,6 +48525,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 16 -- +1
 #mor 16 -- +1
 #mr 15 -- +1
+#clearweapons
+#weapon 651 -- bronze lance
 #weapon 778 -- tail flipper
 #weapon 1808 -- Repelling Barbs
 #poisonarmor 3
@@ -48511,6 +48552,9 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 16 -- +1
 #mor 16 -- +1
 #mr 15 -- +1
+#clearweapons
+#weapon 651 -- bronze lance
+#weapon 55 -- hoof
 #weapon 1808 -- Repelling Barbs
 #poisonarmor 3
 #older 49
@@ -48534,6 +48578,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 16 -- +1
 #mor 15 -- +1
 #mr 14 -- +0
+#clearweapons
+#weapon 651 -- bronze lance
 #weapon 778 -- tail flipper
 #weapon 1808 -- Repelling Barbs
 #poisonarmor 3
@@ -48554,6 +48600,9 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 15 -- +1
 #mor 15 -- +1
 #mr 14 -- +0
+#clearweapons
+#weapon 651 -- bronze lance
+#weapon 55 -- hoof
 #weapon 1808 -- Repelling Barbs
 #poisonarmor 3
 #older 49
@@ -51862,7 +51911,14 @@ Requires an Ippondatara present to recruit."
 #reclimit 1
 #gcost 10040
 #monpresentrec -1068 -- Anathement
-#enchrebate25p 106 -- Stoke the Smouldercone
+--#enchrebate25p 275 -- Ench75 -- Stoke the Smouldercone
+#descr "The first Abysians sprung from the Fires of Rhuax were large magmatic beings, barely resembling humans at all. Slowly these monstrosities developed into humanoids. With every generation, the Fires of Rhuax grew cooler in their bodies and the flaming Children of Rhuax became smoldering Abysians. The Burning One is an Abysian of prominent heritage, claiming succession from the Children of Rhuax. The Burning Ones are surrounded by flames and most of them are trained as priests or sacred warriors. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#neednoteat
+#icenatprot -1
+#prot 3
+#cleararmor
+#armor 570 -- Half Plate
+#armor 20 -- cap
 #end
 
 #newmonster 8893 -- Nonsacred Daeva
@@ -52316,7 +52372,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #mapmove 24
 #startage 60
 #maxage 300
-#sailing 5 8
+#sailing 8 8
 #darkvision 50
 #itemslots 786432 -- 2 misc
 #amphibian
@@ -56029,7 +56085,64 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #end
 
 
+#newmonster 9149 -- eel mage
+#spr1 "wateroverhaul/eelmage1.png"
+#spr2 "wateroverhaul/eelmage2.png"
+#name "Dragonfish"
+#descr "The Dragonfish is an intelligent deep sea fish that lives only in the deepest gorges of the ocean. Dragonfish are potent wielders of fire magic that sometimes align themselves with the Deep Ones. Adapted for the depths, they can turn their teeth invisible and use the lantern hanging from their chin to communicate with other dragonfish or attract food into their jaws."
+#hp 24
+#str 15
+#att 10
+#def 9
+#prec 9
+#prot 8
+#size 5
+#mr 16
+#mor 16
+#enc 2
+#mapmove 14
+#ap 11
+#gcost 0
+#eyes 2
+#weapon 1898 -- Invisible maw
+#miscshape
+#aquatic
+#maxage 1000
+#nametype 153 -- Agarthan
+#poisonres 5
+#fireres 10
+#spiritsight
+#poorleader
+#okmagicleader
+#clearmagic
+#magicskill 0 2
+#magicskill 2 1
+#custommagic 19072 100 -- FWSG
+#custommagic 19072 100
+#end
 
+#newmonster 9150 -- Ragha catharsis
+#copystats 631 -- King of Flames
+#spr1 "magicenhanced/blue_catharsis1.png"
+#spr2 "magicenhanced/blue_catharsis2.png"
+#name "King of Purifying Fire"
+#descr "The King of Elemental Fire is a physical manifestation of the wild magic of Fire. Only three such spirits were known to exist, and with the fall of Catharsis into Antrax, only two remained pure. Now, a fourth has been mantled as the new King of Purifying Flames, a title left vacant by Antrax, the previous holder. Catharsis has a body of white flame and appears as a huge, crowned king. He is innately skilled in Fire and Astral magic and is constantly surrounded by purifying fire. Once more his flames will heal and purify, though not all of them have returned to his control. Catharsis is totally unable to enter underwater provinces, but he can create children in his image."
+#fixedname "Catharsis"
+#makemonsters1 7420
+#makemonsters2 7420
+#healer 50 -- Army heal
+#autohealer 3
+#autodishealer 10
+#hp 48
+#fireshield 10
+#holy
+#str 17
+#clearweapons
+#weapon 1587 -- Holy Flame Strike
+#clearmagic
+#magicskill 0 5
+#magicskill 4 3
+#end
 
 
 -- END OF NEW MONSTERS (Skip 9600~9672)
@@ -61948,6 +62061,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #float
 #morale 9
 #researchbonus -2
+#poorleader
 #poormagicleader
 #armor 522 -- pearl cap
 #magicskill 2 1
@@ -62071,6 +62185,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #mr 13
 #clearmagic
 #clearweapons
+#poorleader
 #poormagicleader
 #holy
 #weapon 12 -- Mace
@@ -63487,7 +63602,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 451 -- Horse Brother
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 1553 -- Agema Companion
@@ -63587,7 +63702,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 450 -- Horse Brother
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 1916 -- Veliki Knyaz
@@ -64176,22 +64291,6 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 2390 -- Pelagian Captain poison barbs weapon
-#weapon 1808
-#end
-
-#selectmonster 2399 -- Aphroi Lord poison barbs weapon
-#weapon 1808
-#end
-
-#selectmonster 2400 -- Aphroi Lord poison barbs weapon
-#weapon 1808
-#end
-
-#selectmonster 2401 -- Aphroi poison barbs weapon
-#weapon 1808
-#end
-
-#selectmonster 2402 -- Aphroi poison barbs weapon
 #weapon 1808
 #end
 
@@ -66130,14 +66229,14 @@ Cannot be recruited until Break the Deadlock is cast."
 #clearmagic
 #magicskill 1 6
 #airshield 80
-#makemonsters1 3723 "Air Elemental"
+#makemonsters1 3723 -- "Air Elemental"
 #end
 
 #selectmonster 911
 #descr "The Queen of Elemental Air is a physical manifestation of the wild magic of Air. Thuella has a body composed of billowing clouds and appears as a huge, crowned female being. 
 She is innately skilled in Air magic, and protects nearby allies from lightning and thunder. Thuella is the Queen of Thunder and her powers are increased during storms. Her body is composed of clouds and mist and is difficult to harm. 
 Only three Queens of Elemental Air are known to exist."
-#onebattlespell 1170 "Thunder Ward"
+#onebattlespell 1170 -- "Thunder Ward"
 #clearmagic
 #magicskill 1 6
 #airshield 80
@@ -66147,8 +66246,8 @@ Only three Queens of Elemental Air are known to exist."
 #descr "The Queen of Elemental Air is a physical manifestation of the wild magic of Air. Nephele has a body composed of billowing clouds and appears as a huge, crowned female being. 
 She is innately skilled in Air and Glamour magic and can summon sylphs from her abode in the sky. Her powers are increased during storms, and a thick mist surrounds and obscures her at all times. Her body is composed of clouds and mist and is difficult to harm.
 Only three Queens of Elemental Air are known to exist."
-#makemonsters4 562 "Sylph"
-#onebattlespell 790 "Mist"
+#makemonsters4 562 -- "Sylph"
+#onebattlespell 790 -- "Mist"
 #clearmagic
 #stealthy 0
 #glamour
@@ -66162,40 +66261,40 @@ Only three Queens of Elemental Air are known to exist."
 #selectmonster 469
 #clearmagic
 #magicskill 3 6
-#makemonsters5 561 "Earth Gnome"
+#makemonsters5 561 -- "Earth Gnome"
 #pierceres
 #end
 
 #selectmonster 906
 #clearmagic
 #magicskill 3 6
-#makemonsters1 3739 "Earth Elemental"
+#makemonsters1 3739 -- "Earth Elemental"
 #pierceres
 #end
 
 -- FIRE KINGS
 
-#selectmonster 631
+#selectmonster 631 -- Pyriphlogos
 #clearmagic
 #magicskill 0 6
-#makemonsters5 7421 "Banefire Child"
+#makemonsters1 3715 -- "Fire Elemental"
 #def 10
 #unsurr 2
 #end
 
-#selectmonster 910
+#selectmonster 910 -- Rhuax
 #clearmagic
 #magicskill 0 5
 #magicskill 3 2
-#makemonsters5 640 "Magma Child"
+#makemonsters5 640 -- "Magma Child"
 #def 10
 #unsurr 2
 #end
 
-#selectmonster909
+#selectmonster 909 -- Banefires
 #def 10
 #unsurr 2
-#makemonsters1 3715 "Fire Elemental"
+#makemonsters5 7421 -- "Banefire Child"
 #end
 
 -- WATER QUEENS
@@ -66207,7 +66306,7 @@ Only three Queens of Elemental Water are known to exist."
 #uwregen 50
 #regen 20
 #giftofwater 500
-#makemonsters1 3731 "Water Elemental"
+#makemonsters1 3731 -- "Water Elemental"
 #amphibian
 #clearmagic
 #magicskill 2 6
@@ -66217,8 +66316,8 @@ Only three Queens of Elemental Water are known to exist."
 #descr "The Queen of Elemental Water is a physical manifestation of the wild magic of Water. 
 Bathusma resembles a body of dark water with the general appearance of a huge, crowned female being. She is innately skilled in Water magic and can summon undines from the depths of the ocean to serve her.  The deep ocean currents flow around her and aid her allies. The Queen's body is composed of water and is very difficult to harm when she is underwater. Unless she is completely killed during one combat round, she will heal all her wounds. Bathusma cannot leave the sea. 
 Only three Queens of Elemental Water are known to exist."
-#onebattlespell 1174 "Friendly Currents"
-#makemonsters4 360 "Undine"
+#onebattlespell 1174 -- "Friendly Currents"
+#makemonsters4 360 -- "Undine"
 #clearmagic
 #magicskill 2 6
 #end
@@ -66252,7 +66351,7 @@ Only three Queens of Elemental Water are known to exist."
 #def 12
 #prec 12
 #waterelementals 1
-#makemonsters1 3747 "Ice Elemental"
+#makemonsters1 3747 -- "Ice Elemental"
 #coldres 40
 #poisonres 15
 #fireres -10
@@ -66268,17 +66367,15 @@ Only three Queens of Elemental Water are known to exist."
 #itemslots 860678
 #end
 
-# ILLEARTH
+-- # ILLEARTH
 
 #selectmonster 470
 #clearweapons
 #weapon 63 -- lifedrain
-#makemonsters1 3755 "Illearth"
+#makemonsters1 3755 -- "Illearth"
 #end
 
 -- Start of New Pretender Changes and Additions
-
-
 
 
 -- FOLDUNITS
@@ -66621,7 +66718,7 @@ Only three Queens of Elemental Water are known to exist."
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 1
@@ -66738,7 +66835,7 @@ Only three Queens of Elemental Water are known to exist."
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 1
@@ -66834,7 +66931,7 @@ Only three Queens of Elemental Water are known to exist."
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 1
@@ -67241,7 +67338,7 @@ Only three Queens of Elemental Water are known to exist."
 #hp 10
 #mr 18
 #copyspr 284  -- Wolf
-#quadruped
+#lizard -- Quadruped bugged
 #beastmaster 1
 #goodleader
 #spiritsight
@@ -67629,7 +67726,7 @@ Only three Queens of Elemental Water are known to exist."
 #researchbonus -8
 #woundfend 2
 #fixedname "Tatanka"
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 1
@@ -68009,7 +68106,7 @@ Only three Queens of Elemental Water are known to exist."
 #woundfend 4
 #clearweapons
 #cleararmor
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 10
 #enc 1
@@ -68053,7 +68150,7 @@ Only three Queens of Elemental Water are known to exist."
 #woundfend 3
 #clearweapons
 #cleararmor
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 10
 #enc 1
@@ -68098,7 +68195,7 @@ Only three Queens of Elemental Water are known to exist."
 #woundfend 3
 #clearweapons
 #cleararmor
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 10
 #enc 1
@@ -69199,7 +69296,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #researchbonus -8
 #heal
 #woundfend 2
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 11
 #ap 24
@@ -69344,10 +69441,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #goodmagicleader
 #unsurr 5
 #poisonres 15
+#weapon 1896 -- Tentacle
 #weapon 1896  -- Tentacle
-#weapon 1896  -- Tentacle
-#weapon 1896  -- Tentacle
-#weapon 1896  -- Tentacle
+#weapon 1896 -- Tentacle
+#weapon 1896 -- Tentacle
 #itemslots 786432
 #clearmagic
 #magicskill 3 1
@@ -69882,7 +69979,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #stormimmune
 #fear 5
 #patrolbonus 50
-#sailing 6 10
+#sailing 10 10
 #weapon 826 -- Talons
 #weapon 826 -- Talons
 #weapon 825 -- Golden Beak
@@ -70224,7 +70321,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 10
 #enc 1
@@ -70267,7 +70364,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 10
 #enc 1
@@ -70485,7 +70582,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 10
 #enc 1
@@ -70530,7 +70627,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 0
@@ -70670,7 +70767,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #researchbonus -8
 #woundfend 4
 #fixedname "Nanook"
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 1
@@ -70719,7 +70816,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #heal
 #woundfend 3
 #fixedname "Tsathoggua"
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 1
@@ -71163,7 +71260,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #def 14
 #mr 18
 #fixedname "Nine Tails"
-#quadruped
+#lizard -- Quadruped bugged
 #size 3
 #prec 13
 #enc 2
@@ -71523,7 +71620,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #name "Terror of the Deep"
 #descr "This huge creature was born at the dawn of time, when monsters and giants roamed the world. Since ancient times is has slumbered dreamlessly in the deepest gorges of the ocean where even the faintest sunlight does not reach. Now awoken, it is worshipped by the lesser beings of the ocean. The Terror of the Deep is amphibian and can leave its watery home when required. It rarely communicates with its followers, however if displeased it opens its enormous mouth and swallows the unfortunate whole. Now it is out to become the true God to extend its rule above the waves."
 #diseaseres 100
-#gcost 300
+#gcost 260
 #homerealm 9  -- Deeps
 #startdom 3
 #pathcost 60
@@ -71565,7 +71662,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #name "Prince of the Deeps"
 #descr "The Prince of the Deeps is an Elemental Prince of water that has taken the role of a Pretender God. Dissatisfied with ruling over the deepest waters he has decided to claim the Throne of Heaven and rule over all the waters of the world. The Prince of the Deeps is composed entirely of water and is very difficult to harm. He can regenerate wounds and will eventually heal any injury over time. The Prince of the Deeps is skilled in water magic and can bring warriors under the water."
 #diseaseres 100
-#gcost 210
+#gcost 260
 #homerealm 9  -- Deeps
 #startdom 3
 #pathcost 40
@@ -71586,9 +71683,9 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #darkvision 100
 #spiritsight
 #weapon 90  -- Crush
-#weapon 90  -- Crush
 #expertleader
-#regeneration 20
+#regeneration 10
+#uwregen 10
 #poisonres 15
 #giftofwater 500
 #slashres
@@ -71596,7 +71693,6 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #pierceres
 #aquatic
 #neednoteat
-#uwregen 10
 #maxage 3000
 #startage 1000
 --#itemslots 860678 -- No feet
@@ -72195,7 +72291,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #def 11
 #mr 20
 #fixedname "Gyūmaō"
-#quadruped
+#lizard -- Quadruped bugged
 #size 10
 #prec 8
 #enc 1
@@ -75136,7 +75232,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Statue of War"
 #descr "The Statue of War is a primordial spirit of strife and turmoil once bound in a huge statue by a previous Pantokrator to save the world from its destructive influences. With the Pantokrator gone, its powers are unleashed and strife and war have once more come to the world. Barbarian warriors gather in the land of the statue to wreak havoc and plunder. More barbarians arrive if the turmoil of the province is high. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 8  -- India
 #startdom 4
 #pathcost 40
@@ -75144,6 +75240,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #mor 30
 #mastersmith 0
 #miscshape
+#spiritsight
 #itemslots 786432
 #clearmagic
 #magicskill 0 2
@@ -75776,11 +75873,10 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #end
 
 #newmonster 8507 -- Obsidian Butterfly
-#copystats 2444
 #spr1 "magicenhanced/eeitzpapalotl.tga"
 #spr2 "magicenhanced/eeitzpapalotl2.tga"
 #name "Obsidian Butterfly"
-#descr "The Obsidian Butterfly is a giant of divine heritage. In ages past she lived amongst the stars as Queen of the Tzitzimitl. She appears as a terrifying skeletal warrior with great black butterfly wings. These wings are tipped with obsidian as sharp as a knife blade. The Butterfly can call Tzitzimitl to her aid each month. When the Star Demons were cast down into the Terrestrial sphere she also fell and was imprisoned below the earth. Now, with the Pantokrator gone, she has emerged to seize this world for her children."
+#descr "The Obsidian Butterfly is a giant of divine heritage. In ages past she lived amongst the stars as Queen of the Tzitzimitl. She appears as a terrifying skeletal warrior with great black butterfly wings. These wings are tipped with obsidian as sharp as a knife blade. When the Star Demons were cast down into the Terrestrial sphere she also fell and was imprisoned below the earth. Now, with the Pantokrator gone, she has emerged to seize this world for her children."
 #diseaseres 100
 #gcost 250
 #homerealm 6
@@ -75790,13 +75886,27 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 
 #moreluck 1
 #mor 30
+#hp 82
+#prot 3
+#str 22
+#att 12
+#def 12
+#mr 20
 #clearweapons
 #fixedname "Itzpapalotl"
-#batstartsum5d6 0
 #female
 #flying
 #weapon 1648 -- Obsidian Wing
 #weapon 29  -- Claw
+#undead
+#pooramphibian
+#pierceres
+#coldres 15
+#poisonres 25
+#spiritsight
+#nobadevents 25
+#enc 0
+#itemslots 991750
 #clearmagic
 #magicskill 0 1
 #magicskill 4 2
@@ -76363,7 +76473,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
-#quadruped
+#snake
 #fixedname "Cirein-cròin"
 #size 9
 #prec 12
@@ -76389,7 +76499,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #end
 
 #newmonster 10014 -- Ceiran Silverfish
-#copystats 2858
 #copyspr 2858 -- Large Fish
 #name "Silver Fish"
 #descr "The Great Thalassid is an ancient and cunning sea creature born at the dawn of time, when monsters and giants roamed the world. Over the millennia its kin were hunted to extinction, forcing it to hide in a cold corner of the world's oceans. With the Pantokrator gone, the creature has finally emerged to seek vengeance upon its ancient foes. The Great Thallasid has power over misdirection and can turn into a silver fish to pass undetected through hostile waters. It is surrounded by a shroud of glamour that will confuse attackers."
@@ -76409,6 +76518,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
+#snake
 #shapechange 10013 -- Ceiran
 #fixedname "Cirein-cròin"
 #maxage 1000
@@ -76417,6 +76527,13 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #darkvision 50
 #goodleader
 #female
+#size 1
+#clearweapons
+#weapon 740
+#aquatic
+#float
+#mapmove 20
+#enc 1
 #itemslots 3932160
 #clearmagic
 #magicskill 7 3
@@ -76678,7 +76795,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #magicskill 6 1
 #magicskill 7 1
 #end
-
 
 
 
@@ -80493,6 +80609,8 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #def 9
 #mr 18
 #neednoteat
+#icenatprot -1
+#prot 4
 #itemslots 2040326
 #clearmagic
 #magicskill 0 1
@@ -81789,6 +81907,9 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #mr 18
 #inspiringres 1
 #researchbonus 10
+#clearweapons
+#weapon 7 -- quarterstaff
+#weapon 778 -- tail flipper
 #itemslots 860678
 #clearmagic
 #magicskill 2 1
@@ -82252,7 +82373,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3204 -- Grey One
 #descr "The Grey Ones, Graeae, are three crone sisters spawned by Phorkys, Father of Monsters, at the dawn of time. When the Pantokrator reformed the world he slew or banished all monsters that threatened the world. The Graeae, while not nearly as powerful as their father, were imprisoned and chained in a stygian cavern as a precaution. For millennia the crones have waited, getting older and angrier for every year that passed. Now with the Pantokrator gone, their shackles are weakening and their malice can be felt by those who dream. The Grey Ones are incredibly old and their bodies are frail and weak. Two of the sisters have lost their eyesight and now the three of them share a single eye. All three sisters use death, water and glamour magic, but they have all mastered different magical paths. The first of the Sisters, 'the Terrible', uses blood and nature magic. The second sister, known as 'the Warlike' uses fire and earth magic and the third sister, 'the Destroyer' uses air and astral magic."
 #diseaseres 100
-#gcost 200
+#gcost 180
+#startdom 1
 #pathcost 20
 #hp 10
 #prot 0
@@ -83739,7 +83861,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #neednoteat
 #cleararmor
 #icenatprot -1
-#prot 2
+#prot 3
 #armor 570 -- Half Plate
 #armor 20 -- Cap
 #end
@@ -83751,7 +83873,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #neednoteat
 #cleararmor
 #icenatprot -1
-#prot 2
+#prot 3
 #armor 570 -- Half Plate
 #armor 20 -- cap
 #end
@@ -83766,7 +83888,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #armor 570 -- Half Plate
 #armor 20 -- cap
 #armor 4 -- Tower Shield
-#prot 2
+#prot 3
 #end
 
 #selectmonster 84  -- Aby Infantry
@@ -83775,7 +83897,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Abysians are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to the cold. Abysian infantry uses heavy iron armor and heavy weapons that will not burn away in their smoldering hands. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #cleararmor
 #armor 570 -- Half Plate
 #armor 20 -- cap
@@ -83787,7 +83909,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/salamander85_2.png"
 #descr "The authority of the Abysian Warlords is limited to acts of war. In all other matters, Abysia is ruled by the Anathemants. Anathemant Salamanders are the holy priests of the Abysian faith. They take part in the public ceremonies where flames are lit on the grand ziggurats and processions of anathemant mage-priests circumambulate the temple grounds. Anathemants excel in Fire magic and use fire not only to incinerate infidels, but also to feed the anger inherent in the hearts of all Abysian warriors. The Anathemants practice human sacrifice to empower their Master's Dominion by the magic inherent in human blood. Anathemant Salamanders are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #icenatprot -1
-#prot 2
+#prot 3
 #montag 1068 -- Anathement
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #neednoteat
@@ -83821,7 +83943,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Warlocks of Smouldercone are Blood mages of great renown. They experiment with the summoning and binding of otherworldly beings and the creation of new species. Their most successful experimental achievements to date are the Demonbreds. The Warlocks are the true masters of Abysia, but rarely dabble in politics. Warlocks are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 90  -- Lava Warrior
@@ -83830,10 +83952,18 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "With the weakening of the Flame, there are no more Burning Ones born and Lava Warriors have replaced them as sacred warriors. Lava Warriors are the elite of the Abysian war machine. They are driven by an anger that turns into blind, berserk rage when they are wounded. These elite warriors train in the lava pits of the Smouldercone and are able to draw strength from the heat. They are very powerful in warm provinces, but cold will break down their great strength. Lava Warriors are armed with twin morning stars and serve the Anathemants without fear. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #cleararmor
 #icenatprot -1
-#prot 2
+#prot 3
 #armor 570 -- Half Plate
 #armor 20 -- cap
 #neednoteat
+#end
+
+#selectmonster 118  -- War Master
+#spr1 "vanilla/rago.png"
+#spr2 "vanilla/rago2.png"
+#neednoteat
+#icenatprot -1
+#prot 3
 #end
 
 #selectmonster 119  -- Warlord
@@ -83873,7 +84003,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Slayer is an Abysian assassin. He can pass unseen through enemy territories and try to assassinate enemy leaders. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 
@@ -83928,7 +84058,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #monpresentrec 89  -- Warlock
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 
@@ -83939,7 +84069,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/pyre990_2.png"
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1092  -- Sang Anathemant
@@ -83949,7 +84079,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #gcost 10010
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1536  -- Anointed of Rhuax
@@ -83960,7 +84090,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 --#enchrebate50 41  -- Second Sun
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #montag 1068 -- Anathement
-#gcost 10020
+#gcost 675
 #clearmagic
 #magicskill 0 4
 #magicskill 3 2
@@ -83988,7 +84118,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #douse 1
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1542  -- W Apprentice
@@ -83998,14 +84128,14 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #douse 1
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1543  -- Burning One
 #spr1 "vanilla/burningone1543_1.png"
 #spr2 "vanilla/burningone1543_2.png"
 #descr "The first Abysians sprung from the Fires of Rhuax were large magmatic beings, barely resembling humans at all. Slowly these monstrosities developed into humanoids. With every generation, the Fires of Rhuax grew cooler in their bodies and the flaming Children of Rhuax became smoldering Abysians. The Burning One is an Abysian of prominent heritage, claiming succession from the Children of Rhuax. The Burning Ones are surrounded by flames and most of them are trained as priests or sacred warriors. In warm lands they will be more difficult to harm, however the cold will make them brittle."
-#enchrebate25p 106  -- Stoke the Smouldercone
+--#enchrebate25p 275 -- Ench75 -- Stoke the Smouldercone
 #neednoteat
 #icenatprot -1
 #prot 3
@@ -84039,7 +84169,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #montag 1068 -- Anathement
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1699  -- EA Anathemant Dragon
@@ -84059,7 +84189,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "With the dilution of the True Blood, the pureblood Abysians feared that the old traditions might be lost to the Humanbred population. To preserve the old ways the slayers were incorporated in the sacred caste of the Anathemants and a Slayer Cult was formed. The Slayers were trained as priests and murder was declared a sacred act. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1966  -- Slayer Anathemant
@@ -84068,7 +84198,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "With the dilution of the True Blood, the pureblood Abysians feared that the old traditions might be lost to the Humanbred population. To preserve the old ways the slayers were incorporated in the sacred caste of the Anathemants and a Slayer Cult was formed. The Slayers were trained as priests and murder was declared a sacred act. The Slayer Anathemant is a prominent priest-assassin trained in the Temple of the Everburning Pyre. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1967  -- S Sanguine
@@ -84077,7 +84207,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "With the dilution of the True Blood, the pureblood Abysians feared that the old traditions might be lost to the Humanbred population. To preserve the old ways the slayers were incorporated in the sacred caste of the Anathemants and a Slayer Cult was formed. The Slayers were trained as priests and murder was declared a sacred act. The Slayer Sanguine is a prominent priest-assassin trained in the Temple Sanguine. They are taught the secret art of performing blood rituals without the help of blood slaves to sacrifice. Instead they cut themselves and offer their own sacred blood at the risk of their own lives. To increase their chance of staying alive, they are given sacred athames that drain the life force from living beings. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1968  -- Slayer Dragon
@@ -84085,7 +84215,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/slayerrachis1968_2.png"
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1969  -- A Salamander LA
@@ -84095,7 +84225,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #gcost 10010
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 1970  -- LA Abysia Anathemant Dragon
@@ -84121,7 +84251,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Lava-borns are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to cold. Most Lava-born live in Abysia, but there are rumors of Lava-born kingdoms deep in the under-earth. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 #selectmonster 2511  -- Lavaborn Comm
@@ -84132,17 +84262,17 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #custommagic 1024 20  -- 20% E
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 
 #selectmonster 2601  -- Turan Sorcerer
-#descr "While most Turans are of Humanbred stock, there are a few remaining pure-blooded Abysians in the kingdom. These families have preserved the old Abysian magic and jealously guard their secrets. They form a sorcerer-caste of powerful mages, influential in the courts of the Turan Shahs. With the arrival of the Airyas, some of them have turned their attentions towards magic not previously used by the Turans. The Sorcerers can only be recruited in hot provinces. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#descr "While most Turans are of Humanbred stock, there are a few remaining pure-blooded Abysians in the kingdom. These families have preserved the old Abysian magic and jealously guard their secrets. They form a sorcerer-caste of powerful mages, influential in the courts of the Turan Shahs. With the arrival of the Airyas, some of them have turned their attentions towards magic not previously used by the Turans. In warm lands they will be more difficult to harm, however the cold will make them brittle. The Sorcerers can only be recruited in hot provinces."
 #spr1 "vanilla/sorcerer2601_1.png"
 #spr2 "vanilla/sorcerer2601_2.png"
 #neednoteat
 #icenatprot -1
-#prot 2
+#prot 3
 #end
 
 
@@ -85844,7 +85974,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 4053
-#shapechange 7100
+#shapechange 811
 #magicskill 8 1
 #end
 
@@ -86645,6 +86775,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 1140  -- Tiger
 #twiceborn 7343 -- Size 2 Wight Beast
+#gcost 0
 #end
 
 #selectmonster 1143  -- Guru
@@ -86668,6 +86799,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #descr "The inhabitants of the wilderness of Ulm are strong and proud. They are as resilient as the mountains and as strong as oaks. They live off the land and are skilled woodsmen and mountaineers. Upon coming of age, every man makes his choice of weapon. Those who choose the sword are trained in two-handed fighting, stealth and wilderness survival. They are used to fight in loose formations."
 #mr 9
 #stealthy 20
+#ambidextrous 0
 #clearweapons
 #weapon 11 -- greatsword
 #montag 1059  -- Ulm Warriors
@@ -86686,6 +86818,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spr2 "vanilla/ulmmountainwarrior2.tga"
 #mr 9
 #stealthy 20
+#ambidextrous 0
 #clearweapons
 #weapon 11 -- greatsword
 #montag 1059  -- Ulm Warriors
@@ -86714,7 +86847,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 1158  -- Warrior Chief
-#descr "The warrior chiefs are the martial rulers of the tribes of Ulm. Every tribe is led by a chieftain, a shaman and a smith. The chieftain rules in matters of war, the shaman in spiritual matters and the smith in judicial matters. Warrior chiefs are skilled warriors and able commanders. They wield heavy two-handed swords and wear scale mail armor. Each month they can call warriors to their aid."
+#descr "The warrior chiefs are the martial rulers of the tribes of Ulm. Every tribe is led by a chieftain, a shaman and a smith. The chieftain rules in matters of war, the shaman in spiritual matters and the smith in judicial matters. Warrior chiefs are skilled warriors and able commanders. They wield heavy two-handed swords and wear scale mail armor."
 --#makemonsters2 -1059
 #mr 9
 #stealthy 20
@@ -87305,7 +87438,7 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
 #montag 1048
-#reclimit 3
+#reclimit 5
 #clearweapons
 #weapon 1842 -- 'Elite Troop' Mind Blast
 #weapon 85 -- Tentacle
@@ -87484,7 +87617,7 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #amphibian -- Aboleth Land Damage
 #userestricteditem 8
 #montag 1048
-#reclimit 3
+#reclimit 5
 #end
 
 #selectmonster 1560  -- Dog
@@ -88966,18 +89099,6 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #armor 134
 #end
 
-#selectmonster 2392 -- Aphroi Heirophant Water
-#weapon 778 -- tail flipper
-#end
-
-#selectmonster 2399 -- Aphroi Lord Water
-#weapon 778 -- tail flipper
-#end
-
-#selectmonster 2401 -- Aphroi Water
-#weapon 778 -- tail flipper
-#end
-
 #selectmonster 3644
 #spr1 "vanilla/hippocampusmt1.tga"
 #spr2 "vanilla/hippocampusmt2.tga"
@@ -89170,6 +89291,35 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 
 
+#selectmonster 2399 -- Aphroi Lord
+#clearweapons
+#weapon 651 -- bronze lance
+#weapon 778 -- tail flipper
+#weapon 1808 -- Repelling Barbs
+#end
+
+#selectmonster 2400 -- Aphroi Lord
+#clearweapons
+#weapon 651 -- bronze lance
+#weapon 55 -- hoof
+#weapon 1808 -- Repelling Barbs
+#end
+
+#selectmonster 2401 -- Aphroi
+#clearweapons
+#weapon 651 -- bronze lance
+#weapon 778 -- tail flipper
+#weapon 1808 -- Repelling Barbs
+#end
+
+#selectmonster 2402 -- Aphroi
+#clearweapons
+#weapon 651 -- bronze lance
+#weapon 55 -- hoof
+#weapon 1808 -- Repelling Barbs
+#end
+
+
 
 #selectmonster 2425  -- Bard
 #incunrest -50
@@ -89281,7 +89431,55 @@ Cost 28 RP."
 #end
 
 
+#selectmonster 2599 -- Karapan
+#descr "Turan society has been stratified since the arrival of the Abysians. A few families of pure blood have made themselves priest-mages and jealously guard their privileges. The priest-mages of these families are known as Magi. The Karapan is a Turan Magus of the old Daevic cult. They worship the Daevas and have used tainted magic since before the forming of Ragha. They still use Blood and Death magic in conjunction with Fire magic. To the Karapan, the flames must be fed the flesh and blood of the living in order to gain power. Karapan can still be recruited in slightly cold provinces."
+#heatrec -1
+#end
+
+#selectmonster 2600 -- Dastur
+#descr "Turan society has been stratified since the arrival of the Abysians. A few families of pure blood have made themselves priest-mages and jealously guard their privileges. The priest-mages of these families are known as Magi. The Dastur is a Turan High Magus of the old Daevic cult. They worship the Daevas and have used tainted magic since before the forming of Ragha. They still use Blood and Death magic in conjunction with Fire magic. To the Dastur, the flames must be fed the flesh and blood of the living in order to gain power. The Zaotar and the Dastur share power and influence in the courts of the Shahs. The two priestly orders despise each other and bickering and plotting for power is common in the courts. For a Shah to be inaugurated, a High Magus must be present and the two orders compete for the right to perform the rituals of inaugurating a Shah to office. Dastur cannot be recruited in cold provinces. Temples with a Dastur preaching at them will spread the heat of summer to the province."
+#heatrec 0
+#end
+
+#selectmonster 2605 -- Turan Shah
+#descr "The Shahs are petty kings of Ragha. There are Turan as well as Airya Shahs, but they are likewise limited in power. The power of the Shah stems from the kingdom and not from the Shah himself. Unless inaugurated by a High Magus, his powers are insignificant in the eyes of the Raghans. One among the Shahs can be appointed Shahanshah, King of Kings. The power of the Shahanshah is linked to the land and the land is linked to the Crown forged by the orders of the High Magi. Only the Shah given the Crown of the Shah can wield the full sacred powers of the kingdom. At times the Shahanshah has been Airya, at times Turan. The Shahs are given priestly authority upon inauguration and are considered sacred, regardless of heritage. Turan Shah cannot be recruited in cold provinces."
+#heatrec 0
+#end
+
+#selectmonster 2629 -- Zhayedan Spahbed
+#descr "The Zhayedan Spahbed is a commander of the Zhayedan. They are skilled generals and mighty warriors blessed by the magi priests of the kingdom. Zhayedan Spahbed cannot be recruited if the province is cold."
+#heatrec 0
+#gcost 10020
+#magicskill 9 1 -- Priest
+#end
+
+#selectmonster 2587 -- Zhayedan
+#descr "The Zhayedan, Immortals, is a Turan sacred elite force of limited numbers, replaced only when one of their numbers is slain. Once they were an infantry unit, but with the increasing interest in mounted warfare and the acquisition of gryphons from a tribe of Amazons, the Immortals became an airborne cavalry unit of unequaled power. If the Zhayedan is killed, his gryphon will fight on, and if the gryphon is returned to Ragha another Zhayedan will mount the riderless Gryphon. Zhayedan cannot be recruited if the province is cold."
+#heatrec 0
+#end
+
+#selectmonster 3546 -- Zhayedan Gryphon
+#gcost 85
+#def 9
+#end
+
+#selectmonster 2602 -- Athraven
+#descr "When the Airyas arrived Tur was a stratified society. Families of hereditary priest-mages known as Magi had much influence in the kingdom. The Airya Seraphs adopted the Turan traditions and made themselves Magi of the Airyas. Now there are Magi families of both peoples and the stratification permeates the kingdom. The Athravan, Flame Keeper, is an Airya magus tending the sacred flames of the temples. Since fire is sacred to both peoples of Ragha, they both have Magi tending the sacred fires. The Athravan of Airya follow a tradition where flames must be kept pure from pollution and death. They despise and avoid the Turan Karapans, but recognize their status as priests of the Reawakening God. Athraven can still be recruited in slightly cold provinces."
+#coldrec -1
+#end
+
+#selectmonster 2606 -- Airya Shah
+#descr "The Shahs are petty kings of Ragha. There are Turan as well as Airya Shahs, but they are likewise limited in power. The power of the Shah stems from the kingdom and not from the Shah himself. Unless inaugurated by a High Magus, his powers are insignificant in the eyes of the Raghans. One among the Shahs can be appointed Shahanshah, King of Kings. The power of the Shahanshah is linked to the land and the land is linked to the Crown forged by the orders of the High Magi. Only the Shah given the Crown of the Shah can wield the full sacred powers of the kingdom. At times the Shahanshah has been Airya, at times Turan. The Shahs are given priestly authority upon inauguration and are considered sacred, regardless of heritage. Airya Shah cannot be recruited in hot provinces."
+#coldrec 0
+#end
+
+#selectmonster 2603 -- Zaotar
+#descr "When the Airyas arrived Tur was a stratified society. Families of hereditary priest-mages known as Magi had much influence in the kingdom. The Airya Seraphs adopted the Turan traditions and made themselves Magi of the Airyas. Now there are Magi families of both peoples and the stratification permeates the kingdom. The Zaotar is an Airya High Magus skilled in the traditional magic of the Airya. The Zaotar and the Dastur share power and influence in the courts of the Shahs. The two priestly orders despise each other and bickering and plotting for power is common in the courts. For a Shah to be inaugurated, a High Magus must be present and the two orders compete for the right to perform the rituals of inaugurating a Shah to office. Zaotar cannot be recruited in hot provinces. Temples with a Zaotar preaching at them will spread the cold of winter to the province."
+#coldrec 0
+#end
+
 #selectmonster 2592  -- Iceclad Zhayeden
+#descr "When the Airyas fled from Caelum, they found refuge in the desolate plain of Ragha, where they had once fought the Turan people. The last of the Airya Iceclads protected the last of the Seraphs during the negotiations with the Turan Shah and they became guardians of the emerging priestly caste. The Iceclads soon adopted the Turan concept of the sacred Immortals. The Immortals, Zhayedan, is a sacred elite force of limited numbers, replaced only when one of their numbers is slain. While the Turan Immortals bring righteous wrath to the enemies, the Airya Iceclads became serene guardians of the sacred flames and upholders of the faith. Iceclad Zhayedan cannot be recruited if the province is hot."
 #def 12 -- +2
 #att 12 -- +2
 #str 11 -- +2
@@ -89290,6 +89488,7 @@ Cost 28 RP."
 #mor 13 -- +1
 #mr 13 -- +1
 #bodyguard 3
+#coldrec 0
 #end
 
 
@@ -90105,6 +90304,7 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #magicskill 1 1
 #magicskill 4 1
 #custommagic 20352 100 -- FAWESG
+#startage 90
 #end
 
 #selectmonster 3158 -- Prince Consort
@@ -106711,6 +106911,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #blessreinvig 4
 #res 50
 #gold 100
+#gems 0 3
+#gems 3 3
 #end
 
 #newsite 2162
@@ -107889,6 +108091,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 2563 -- fravashi
 #homecom 2631 -- jahi
 #homecom 7642 -- annunaki
+#homecom 9150 -- catharsis reborn
 #end
 
 #newsite 2262
@@ -108710,6 +108913,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 --#homemon 2854 -- flame jelly
 #homemon 565 -- sea serpent
 #homemon 1234 -- asp turtle
+#homemon 642 -- giant lobster
+#homemon 7768 -- sea killer
 #end
 
 #newsite 2313
@@ -108831,13 +109036,17 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #rarity 5
 #path 2 -- Water
+#homecom 9143 -- yeti crab
 #homemon 1664 -- Monster Fish
 #homemon 7345 -- returned shambler
 #homemon 7346 -- returned pillar
 #homecom 7348 -- returned priest
 #homecom 7263 -- ghost king
+#homecom 9144 -- vampire squid
+#homecom 9149 -- dragonfish
 #homecom 7226 -- dagon
 #homecom 7276 -- cetus
+
 #look 6
 #end
 
@@ -109309,9 +109518,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 9
 #look 0
---#homecom 183
---#homecom 945
---#homecom 8227
+#homecom 
 #end
 
 #newsite 2359 -- Harrespil
@@ -110444,6 +110651,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 2398 -- elephant
 #homemon 2072 -- mazzik
 #homemon 2074 -- seir
+#homemon 2073 -- shed
 #homemon 3724 -- air ele s7
 #homecom 2071 -- lilot
 #homecom 8889 -- Brazen Bull
@@ -112780,6 +112988,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 9
 #look 6
+#homecom 
 #end
 
 #newsite 2568 -- Capital City
@@ -113065,6 +113274,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 9143 -- yeti crab
 #homemon 1664 -- monster fish
 #homecom 9144 -- vampire squid
+#homecom 9149 -- dragonfish
 #homecom 7226 -- dagon
 #homecom 9146 -- Silent One
 #homecom 9147 -- Silent One
@@ -113241,7 +113451,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 8
 #homemon 7614 -- laist hurl
 #homemon 7615 -- laist spear
-#homemon 7468 -- pearl w
 #homemon 7359 -- volans
 #homecom 7854 -- volans comm
 #homecom 2834 -- hekat
@@ -113302,6 +113511,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7466 -- male shishi
 #homecom 7450 -- shije xian
 #homecom 7452 -- tian xian
+#homecom 7451 -- di xian
 #homecom 7306 -- divine general
 #homecom 7227 -- carp
 #homecom 7304 -- king of ghosts
@@ -113352,6 +113562,59 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7503
 #homecom 7504
 #homecom 7505
+#end
+
+#newsite 2603
+#name "Turan Reign"
+#level 9
+#rarity 5
+#path 0
+#look 4
+#decscale 2 -- Heat
+#end
+
+#newsite 2604
+#name "Airya Reign"
+#level 9
+#rarity 5
+#path 2
+#look 4
+#incscale 2 -- Cold
+#end
+
+#newsite 2605 -- LA Pyrene Summons
+#clear
+#name "LA Pyrène Summons"
+#rarity 5
+#level 0
+#path 8
+#look 4
+#homecom 811 -- succ
+#homecom 4053 -- incu
+#homemon 8692 -- Gaueko
+#homemon 8698 -- Gizotso
+#homemon 8819 -- Intxisua
+#homemon 8822 -- Warrior
+#homemon 8823 -- Hurler
+#homecom 8821 -- Champion
+#homecom 8820 -- Intxisua Warlock
+#homecom 8696 -- Laminak
+#homecom 8697 -- Maideak
+#homecom 8699 -- Herensuge
+#homecom 8694 -- Aideko
+#homecom 8695 -- Aidegaizto
+#homecom 7667 -- lillith
+#end
+
+#newsite 2606 -- LA Pyrene Heroes
+#clear
+#name "LA Pyrène Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 0
+#homecom 4059
+#homecom 4060
 #end
 
 
@@ -116281,8 +116544,7 @@ Priests: Strong"
 #addgod 8281 -- Titan of the Dawn
 #addgod 8282 -- Diyin of Earth
 
-#natureblessbonus 0
-#waterblessbonus 0
+#blessbonus 1
 #fortera 2
 #halfdeathinc
 #halfdeathpop
@@ -116310,6 +116572,7 @@ Priests: Strong"
 #guardmult 18
 #moregrowth -1
 #moreheat 1
+#fortheatscaleres 1
 #end
 
 #selectnation 183
@@ -118248,8 +118511,8 @@ Priests: Average. Every temple adds one to the sacred recruit limit."
 #addreccom 6730
 #addreccom 6739
 #addreccom 6731
-#coastcom1 6728
-#coastcom2 6738
+#coastfortcom 6728
+#coastfortcom 6738
 #addrecunit 6714
 #addrecunit 6715
 #addrecunit 6716
@@ -119157,6 +119420,10 @@ Priests: Average"
 #addgod 3086 -- Deives of the Sun
 #addgod 8456 -- Bloodstained Edifice
 #addgod 8502 -- Worm Lord
+
+#futuresite "LA Pyrène Summons"
+#futuresite "LA Pyrène Heroes"
+
 #end
 
 #selectnation 12 -- Marverni
@@ -120493,6 +120760,9 @@ Priests: Powerful, can perform blood sacrifices"
 #cheapgod20 8446 -- Pillar of Flame
 #delgod 2791  -- Earth Serpent
 #addgod 8418 -- Peacock Angel
+
+#fortcoldscaleres 2
+
 #futuresite "MA Caelum Summons"
 #futuresite "Yazatas"
 #futuresite "Daevas"
@@ -121860,6 +122130,13 @@ Priests: Powerful, can perform blood sacrifices"
 #end
 
 #selectnation 105 -- LA Ragha
+#summary "Race: Flying, cold resistant, heat resistant, do not suffer as much from heat or cold
+Military: Flying units, gryphon riders
+Magic: Air, Water, Astral, Fire, Death and Blood
+Priests: Average, Guardian spirits, Temples expensive but generate fire gems.
+Temples slowly spread Heat scales if a Dastur is preaching at it, or Cold scales for a Zaotar.
+Temperature shifts more in forts during summer and winter."
+
 #hero1 2639  -- Fatherslayer
 #hero2 8249 -- Bowman
 #hero3 8250 -- Unconquered Warrior
@@ -121869,6 +122146,8 @@ Priests: Powerful, can perform blood sacrifices"
 #futuresite "Yazatas"
 #futuresite "Daevas"
 #futuresite "LA Ragha Heroes"
+#fortheatscaleres 1
+#fortcoldscaleres 1
 #end
 
 #selectnation 112 -- LA Xibalba
@@ -123543,8 +123822,10 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #school -1
 #researchlevel 0
 #aoe 1
-#effect 123
-#damage 100  -- Broken Armor
+#effect 11
+#damage 17592186044416  -- Broken Armor
+--#effect 138
+--#damage 999
 #spec 545259520  -- UW OK, no effect on lifeless
 #end
 
@@ -123552,7 +123833,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #copyspell 867 -- Army of Giants
 #name "Elemental Form"
 #descr "A large number of living soldiers are transformed into rocklike beings of primal elemental power. Those affected will swell in size and gain strength and hit points. Their stony form will also become highly resistant to physical attacks and the elements. As a side effect the sudden change will cause them to burst and break any armor they are wearing, leaving only pieces providing minimal protection. Even magical armor forged using gems will be destroyed by this effect."
-#details "Grants Fire/Cold/Shock resist 5, Blunt/Pierce/Slash resist 50%, Size +1, HP +30%, Str +3, natural protection 15, or +2 if already 14 or higher. Also incurs Def -1, susceptibility to Cold 5 and any armor worn is broken, including magic item armor."
+#details "Grants Fire/Cold/Shock resist 5, Blunt/Pierce/Slash resist 50%, Size +1, HP +30%, Str +3, natural protection +10 (max up to 15), or +3 if already 12 or higher. Also incurs Def -1, susceptibility to Cold 5 and any armor worn is broken."
 #researchlevel 6
 #path 0 3
 #pathlevel 0 3
@@ -124201,6 +124482,16 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #nreff 1
 #end
 
+#selectspell 2193
+#name "Void-Touched Insanity"
+#school -1
+#researchlevel 0
+#effect 10519  -- +20
+#nreff 1
+#damage 309  -- Insanity
+#spec 4503599635759104  -- UW OK, Void Sanity immune
+#end
+
 #selectspell 2197
 #name "Wisdom of the Void"
 #descr "The caster opens their mind to the Void, an otherworldy realm of magic filled with strange sights and sounds. The caster gains strange insights that will greatly aid their magical research, however they will also be touched by the Void. This will damage the mind of most creatures unless they are used to such contact."
@@ -124756,7 +125047,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "The caster summons an ambush of great Dire Tigers from the forest. These tigers are renowned for their great size, strength, and savage temperament."
 #researchlevel 5
 #pathlevel 0 3
-#fatiguecost 1000
+#fatiguecost 1200
 #nreff 1005
 #damage 8022
 #restricted 202 -- Gondwana
@@ -125896,7 +126187,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 0
 #school 7
 #path 0 9
-#aoe 10001
+#aoe 1001
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
@@ -126114,7 +126405,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 1 1
 #aoe 1
 #damage 1010
-#spec 1099511627840 -- Armour Piercing, Slashing Damage
+#spec 1099520016448 -- Armour Piercing, Slashing Damage, UWOK
 #fatiguecost 10
 #casttime 100
 #godpathspell 2
@@ -126245,7 +126536,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2367
 #name "Divine Wrath"
 #descr "The priest unleashes divine wrath upon the battlefield. A number of warriors at the battle will be blasted with blindness, disease and perhaps death. Any troops that are not sacred in the eyes of the coming God may be affected, even friendly troops, however those sacred to a false Pretender are more likely to be affected more seriously. This spell affects the battlefield for a short while and cannot be prepared or cast again whilst it is in effect."
-#details "Around 10% of units and all enemy sacreds must check MR or become blinded, diseased or suffer damage. Friendly sacred units are immune to the effects."
+#details "Around 10% of units and all enemy sacreds must check MR or become blinded, diseased or suffer damage. Friendly sacred units are immune to the effects.
+Can only be cast once per combat round."
 #researchlevel 0
 #school 7
 #path 0 9
@@ -126983,10 +127275,10 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 6
 #path 0 5
 #pathlevel 0 4
-#effect 10093
+#effect 10089 -- Ritual Unique Commander
 #nreff 1
 #damage 7298
-#fatiguecost 1500
+#fatiguecost 2000
 #restricted 5 -- ea Arco
 #restricted 8 -- EA Ermor
 #restricted 6 -- EA Mekone
@@ -128660,7 +128952,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #descr "Summons Black Tortoise"
 #school -1
 #researchlevel 0
-#effect 10093
+#effect 10089 -- Ritual Unique Commander
 #damage 7285 -- Black Tortoise
 #nreff 1
 #end
@@ -128670,7 +128962,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #descr "Summons Vermillion Bird"
 #school -1
 #researchlevel 0
-#effect 10093
+#effect 10089 -- Ritual Unique Commander
 #damage 7284 -- Vermillion Bird
 #nreff 1
 #nextspell 2545
@@ -128681,7 +128973,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #descr "Summons Azure Dragon."
 #school -1
 #researchlevel 0
-#effect 10093
+#effect 10089 -- Ritual Unique Commander
 #damage 7283 -- Azure Dragon
 #nreff 1
 #nextspell 2546
@@ -128695,8 +128987,8 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #researchlevel 9
 #path 0 6
 #pathlevel 0 5
-#effect 10093
-#fatiguecost 5000
+#effect 10089 -- Ritual Unique Commander
+#fatiguecost 8000
 #damage 7282 -- White Tiger
 #nreff 1
 #restricted 22 -- EA Tien Chi
@@ -129425,9 +129717,9 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #descr "The caster summons a pack of Sabre-Tooths. Sabre-Tooths appear similar to lions and tigers that inhabit other lands, with the exception of their huge slashing teeth."
 #researchlevel 3
 #pathlevel 0 2
-#fatiguecost 1000
+#fatiguecost 800
 #damage 6989 -- Sabre-Tooth
-#nreff 1008
+#nreff 1010 -- 12+
 #restricted 202 -- Gondwana
 #end
 
@@ -130097,7 +130389,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #selectspell 2645
 #name "Stoke the Smouldercone"
 #descr "The Smouldercone is the heart of the Abysian empire and from its magma pools the first Children of Rhuax were formed. With a great investment of magical energy the Smouldercone is invigorated and burns with intense splendour. The sight of the Smouldercone will increase faith amongst the Abysians and the Blessing of the true God will bring great strength and stamina to the faithful. Once cast the spell will only end if the casting mage dies. Abysians believe that if this occurs whilst the world runs with Rivers of Lava the Golden Age of Abysia will begin."
-#details "Capital produces 3 each of Fire and Earth gems per month, generates 3 extra Temple checks and your blessing grants +4 Str and +4 Reinvigoration. Burning Ones 25% cheaper to recruit."
+#details "Capital produces 3 each of Fire and Earth gems per month, generates 3 extra Temple checks and your blessing grants +4 Str and +4 Reinvigoration."
 #school 1
 #researchlevel 6
 #path 0 0
@@ -132569,8 +132861,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 7
 #pathlevel 0 5
 #pathlevel 1 1
-#effect 10093
-#fatiguecost 3000
+#effect 10089 -- Ritual Unique Commander
+#fatiguecost 3500
 #damage 7273 -- Nidhogg
 #nreff 1
 #onlyatsite 59  -- Helhalla
@@ -132976,9 +133268,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #descr "Tigers are common around the forest temples of Bandar Log and are used as mounts for the White Ones. The caster summons an ambush of Tigers and binds them to service."
 #researchlevel 0
 #pathlevel 0 2
-#nreff 2006
+#nreff 2014 -- 18++
 #damage 1140  -- Tiger
-#fatiguecost 1000
+#fatiguecost 900
 #restricted 68 -- MA Bandar Log
 #end
 
@@ -133342,7 +133634,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 821 -- Stygian Skin
 #name "End of Courage"
 #descr "Amongst the Oni dark magic is commonplace. This spell causes the caster to become demonic in appearance and terrible to behold. This will cause nearby enemies to falter or flee in terror."
-#details "Grants Fear 5"
+#details "Grants Dread 5"
 #school 5
 #researchlevel 2
 #path 1 6 -- Death
@@ -133628,7 +133920,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #descr "Summons Raiju"
 #school -1
 #researchlevel 0
-#effect 10093  -- Summon unique unit
+#effect 10089 -- Ritual Unique Commander  -- Summon unique unit
 #damage 7586 -- Raiju
 #nreff 1
 #end
@@ -133799,7 +134091,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #selectspell 2907
 #name "Celestial Abominations"
 #descr "The descendants of the Nephilim carry the taint of Sin and are abominable to the world. With a profane prayer the priest recites the sins of the Grigori and some of their power flows up from the infernal realm. This taint will cause a terrible spiritual fear to grip those faced with the Children of the Nephilim. This spell will only affect sacred living creatures, and those that have no mind or that are not touching the earth will be unaffected."
-#details "Grants Fear 5"
+#details "Grants Dread 5"
 #researchlevel 4
 #school 6
 #path 0 8
@@ -134376,7 +134668,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 781 -- Cheat Fate
 #name "Shroud of Fear"
 #descr "The Bone Readers of the hunter tribes practice foul magic in their fetid swamps apart from civilization. With this enchantment a few nearby warriors are shrouded in evil wards that strike fear into the hearts of men. Most enemies will flee rather than face them in battle."
-#details "Fear 5"
+#details "Dread 5"
 #researchlevel 4
 #path 0 5
 #path 1 3
@@ -134441,9 +134733,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 7
 #path 0 0
 #pathlevel 0 4
-#effect 10093
+#effect 10089 -- Ritual Unique Commander
 #nreff 1
-#fatiguecost 2000
+#fatiguecost 3000
 #damage 7295 -- Musmahhu
 #onlygeosrc 8388624  -- Mountain & Highland
 #restricted 19 -- Ur
@@ -134921,7 +135213,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 821 -- Stygian Skin
 #name "Aura of Tyranny"
 #descr "The caster creates an aura of Tyranny and oppression around themselves and becomes terrible to behold. This will cause nearby enemies to falter or flee in terror."
-#details "Grants Fear 5"
+#details "Grants Dread 5"
 #researchlevel 3
 #school 4
 #path 1 3
@@ -135558,8 +135850,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 4
 #pathlevel 0 1
 #pathlevel 1 1
-#nreff 2008
-#fatiguecost 1000
+#nreff 2008 -- 10+
+#fatiguecost 500
 #damage 7688 -- Skum
 #end
 
@@ -136515,7 +136807,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #nreff 5
 #damage 7468 -- Pearl Warrior
 #restricted 40
-#restricted 86
 #end
 
 #selectspell 3089
@@ -136528,7 +136819,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 2
 #pathlevel 1 2
 #fatiguecost 1000
-#nreff 503
+#nreff 3
 #damage 7359 -- Pearl Knight
 #restricted 40
 #restricted 86
@@ -137510,10 +137801,10 @@ All effects scale with friendly Dominion."
 #pathlevel 0 4
 #path 1 2
 #pathlevel 1 1
-#effect 10093
+#effect 10089 -- Ritual Unique Commander
 #nreff 1
 #damage 7632
-#fatiguecost 1500
+#fatiguecost 2000
 #onlyatsite 6  -- Tower of Avalon
 #restricted 57 -- MA Man
 #end
@@ -137527,10 +137818,10 @@ All effects scale with friendly Dominion."
 #pathlevel 0 4
 #path 1 3
 #pathlevel 1 1
-#effect 10093
+#effect 10089 -- Ritual Unique Commander
 #nreff 1
 #damage 7633
-#fatiguecost 1500
+#fatiguecost 2000
 #onlyatsite 6  -- Tower of Avalon
 #restricted 57 -- MA Man
 #end
@@ -143342,6 +143633,7 @@ All effects scale with friendly Dominion."
 #fatiguecost 0
 #casttime 150
 #restricted 181 -- EA Chaco
+#ainocast 1
 #end
 
 #selectspell 3627
@@ -143355,6 +143647,7 @@ All effects scale with friendly Dominion."
 #pathlevel 0 1
 #fatiguecost 0
 #restricted 181 -- EA Chaco
+#ainocast 1
 #end
 
 
@@ -143570,19 +143863,6 @@ All effects scale with friendly Dominion."
 #fatiguecost 0
 #aoe 663  -- 50% of battlefield
 #spec 549585024  -- AN, No Effect on Mindless or Lifeless, Affects Friendlies Only, May Use UW
-#end
-
-#selectspell 3722
-#copyspell 216 -- Sermon of Courage
-#name "Banner Morale"
-#descr "The power of the banner strengthens fighting ability in nearby troops."
-#details "Attack skill +2, morale +2."
-#school -1
-#researchlevel 0
-#effect 23
-#damage 281474976710656  -- fury
-#aoe 1
-#range 0
 #end
 
 #selectspell 3723
@@ -147811,8 +148091,8 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #researchlevel 9
 #path 0 6
 #pathlevel 0 5
-#effect 10093
-#fatiguecost 5000
+#effect 10089 -- Ritual Unique Commander
+#fatiguecost 8000
 #damage 7282 -- White Tiger
 #nreff 1
 #restricted 23 -- Yomi
@@ -147828,8 +148108,8 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #researchlevel 9
 #path 0 6
 #pathlevel 0 5
-#effect 10093
-#fatiguecost 5000
+#effect 10089 -- Ritual Unique Commander
+#fatiguecost 8000
 #damage 7282 -- White Tiger
 #nreff 1
 #restricted 69 -- MA Tien Chi
@@ -147845,8 +148125,8 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #researchlevel 9
 #path 0 6
 #pathlevel 0 5
-#effect 10093
-#fatiguecost 5000
+#effect 10089 -- Ritual Unique Commander
+#fatiguecost 8000
 #damage 7282 -- White Tiger
 #nreff 1
 #restricted 70 -- Shinu
@@ -147862,8 +148142,8 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #researchlevel 9
 #path 0 6
 #pathlevel 0 5
-#effect 10093
-#fatiguecost 5000
+#effect 10089 -- Ritual Unique Commander
+#fatiguecost 8000
 #damage 7282 -- White Tiger
 #nreff 1
 #restricted 109 -- LA Tien Chi
@@ -147879,8 +148159,8 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #researchlevel 9
 #path 0 6
 #pathlevel 0 5
-#effect 10093
-#fatiguecost 5000
+#effect 10089 -- Ritual Unique Commander
+#fatiguecost 8000
 #damage 7282 -- White Tiger
 #nreff 1
 #restricted 110 -- Jomon
@@ -150430,21 +150710,6 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 --- NEW HOLY SPELLS FOR GLAMOUR
 
 #selectspell 4247
-#copyspell 769 -- Blurred Body
-#name "Prayer of Illusion"
-#descr "The priest utters a prayer that cloaks their form in illusion, making them difficult to strike in melee."
-#details "Attacking units have their attack skill reduced by 2. Attackers with true sight or spirit sight ignore the Blurred condition as do blind ones."
-#researchlevel 0
-#school 7
-#path 0 9
-#pathlevel 0 1
-#fatiguecost 0
-#casttime 100
-#godpathspell 7
-#spec 8404992 -- UWOK
-#end
-
-#selectspell 4247
 #copyspell 1311 -- Slumber
 #name "Dream of Heresy"
 #descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. They will fall into a deep slumber, plagued with nightmares that attack and ridicule their most deeply held beliefs."
@@ -150958,6 +151223,17 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #aoe 2
 #end
 
+#selectspell 3722
+#copyspell 1274 -- Battle Fury
+#name "Banner Morale"
+#descr "The power of the banner strengthens fighting ability in nearby troops."
+#details "Attack skill +2, morale +2."
+#school -1
+#researchlevel 0
+#aoe 1
+#range 0
+#end
+
 #selectspell 4276
 #copyspell 216 -- Sermon of Courage
 #name "Banner Skill"
@@ -150965,10 +151241,11 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #details "Attack skill +2, morale +2. Temporary morale +5 every round."
 #school -1
 #researchlevel 0
-#effect 17
 #damage 5
 #aoe 50
 #range 0
+#explspr -1
+#flightspr -1
 #nextspell 3722
 #end
 
@@ -151036,6 +151313,7 @@ This spell can only be cast in a deep water province."
 #damage 9143 -- Yeti Crab
 #onlygeosrc 2048  -- Deep Sea
 #restricted 43 -- Atlantis
+#restricted 206 -- Dirgen
 #end
 
 #selectspell 4281 -- Vampire Squid
@@ -151048,12 +151326,13 @@ This spell can only be cast in a deep water province."
 #path 1 2 
 #pathlevel 0 3
 #pathlevel 1 1
-#fatiguecost 1500
+#fatiguecost 1600
 #effect 10021
 #nreff 1
 #damage 9144 -- Vampire Squid
 #onlygeosrc 2048  -- Deep Sea
 #restricted 43 -- Atlantis
+#restricted 206 -- Dirgen
 #end
 
 #selectspell 4282 -- Atlantis trade winds
@@ -151100,6 +151379,88 @@ This spell can only be cast in a deep water province."
 #damage -1076 -- Silent One
 #onlyatsite 128 -- The Basalt City
 #restricted 43 -- Atlantis
+#end
+
+#selectspell 4285
+#copyspell 769 -- Blurred Body
+#name "Prayer of Illusion"
+#descr "The priest utters a prayer that cloaks their form in illusion, making them difficult to strike in melee."
+#details "Attacking units have their attack skill reduced by 2. Attackers with true sight or spirit sight ignore the Blurred condition as do blind ones."
+#researchlevel 0
+#school 7
+#path 0 9
+#pathlevel 0 1
+#fatiguecost 0
+#casttime 100
+#godpathspell 7
+#spec 8404992 -- UWOK
+#end
+
+#selectspell 4286 -- Dragonfish
+#copyspell 945 -- Call Kraken
+#name "Call Dragonfish"
+#descr "The caster creates a light in the deep to call a Dragonfish and bargain for its services. The Dragonfish is an intelligent deep sea fish that lives only in the deepest gorges of the ocean. Dragonfish are potent wielders of magic that sometimes align themselves with the Deep Ones. Adapted for the depths, they can turn their teeth invisible and use the lantern hanging from their chin to communicate with other dragonfish or attract food into their jaws."
+#researchlevel 6
+#path 0 0 -- F2
+#pathlevel 0 2
+#path 1 2 -- W2
+#pathlevel 1 2
+#fatiguecost 1800
+#effect 10021
+#nreff 1
+#damage 9149
+#restricted 43 -- Atlantis
+#restricted 206 -- Dirgen
+#end
+
+#selectspell 4287 -- Catharsis
+#copyspell 945 -- Call Kraken
+#name "Purification of Flame"
+#descr "Long ago, the Daevas and wicked Mainyus corrupted the Purifying Flames of Catharsis with the magic of Death and were banished from the mortal realm for the deed. Fire magic was all but banned and Harab practitioners were hunted down for fear of causing more harm and pollution. Now, in the kingdom of Ragha, the Airya Seraphs and Turan Sorcerers have created a means of mantling a new King of Purifying Flames by working together using knowledge and secrets only known them. After the ritual, a new King of Purifying Flames will emerge, reborn, and once more his flames will heal and purify."
+#researchlevel 8
+#path 0 0 -- F5
+#pathlevel 0 5
+#path 1 4 -- S3
+#pathlevel 1 3
+#fatiguecost 5000
+#effect 10021
+#nreff 1
+#spec 0
+#damage 9150
+#restricted 105 -- Ragha
+#end
+
+#selectspell 4288 -- Winter chill
+#copyspell 810 -- Wolven Winter
+#name "Chill of Winter"
+#descr "In the kingdom of Ragha, the Airyas are accustomed to the cold and rule during the winter months. They are knowledgeable in the magic of the cold and ice and can use it to cool an entire province for a month."
+#details "Cold scale +2"
+#researchlevel 3
+#provrange 2
+#path 0 2 -- W2
+#pathlevel 0 2
+#fatiguecost 300
+#nreff 1
+#spec 0
+#damage 52
+#restricted 105 -- Ragha
+#end
+
+#selectspell 4289 -- Summer heat
+#copyspell 810 -- Wolven Winter
+#name "Heat of Summer"
+#descr "In the kingdom of Ragha, the Turan are accustomed to hot lands and rule during the summer months. They are knowledgeable in the magic of scorching heat and can use it to warm an entire province for a month."
+#details "Heat scale +2"
+#researchlevel 3
+#school 2 -- evo
+#provrange 2
+#path 0 0 -- F2
+#pathlevel 0 2
+#fatiguecost 300
+#nreff 1
+#spec 0
+#damage 51
+#restricted 105 -- Ragha
 #end
 
 
@@ -151184,7 +151545,6 @@ This spell can only be cast in a deep water province."
 #descr "With this spell, a mage can fire many burning missiles towards his enemies. A powerful Fire mage can fire the darts in rapid succession over long range. The spell is quite useless against heavily armored men and is best used to eliminate or scare away more poorly armored troops."
 #damage 10
 #nreff 1005 -- 6+
-#researchlevel 1
 #end
 
 #selectspell 246 -- Freezing touch
@@ -151229,6 +151589,12 @@ This spell can only be cast in a deep water province."
 #restricted 205
 #end
 
+#selectspell 266 -- Call Ladon
+#descr "The caster summons Ladon, the Hesperian Dragon, and ends its eternal vigil. With the golden apples of immortality no longer guarded by the monster, expeditions to the blessed gardens can be undertaken. Ladon is a many-headed serpent of tremendous size spawned by the Mother of Monsters."
+#fatiguecost 2000
+#effect 10089 -- Ritual Unique Commander
+#end
+
 #selectspell 267 -- Dogs of Gold and Silver
 #fatiguecost 500
 #end
@@ -151243,7 +151609,8 @@ This spell can only be cast in a deep water province."
 #end
 
 #selectspell 272 -- Daughter of Typhon
-#researchlevel 8
+#fatiguecost 3500
+#effect 10089 -- Ritual Unique Commander
 #end
 
 #selectspell 274 -- Awaken Hamadryad
@@ -153750,6 +154117,12 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #fatiguecost 1000
 #end
 
+#selectspell 1404 -- Hell Ride
+#effect 10019 -- Teleport
+#walkable 1
+--#nowatertrace 1
+#end
+
 #selectspell 1401 -- Blood Feast
 #notfornation 9
 #notfornation 21
@@ -155294,7 +155667,7 @@ Can only be cast once per combat round."
 #mainlevel 2
 #secondarypath 4
 #secondarylevel 2
-#regeneration 10
+#reconst 10
 #hp 20
 #cursed
 #nofind
@@ -156725,14 +157098,14 @@ This will also prevent their skin from drying out."
 #selectitem 771
 #spr "magicenhanced/eeipaladin.tga"
 #name "Armor of the Lionheart"
-#descr "This armor was made for a Paladin and shines with the glory of the Lord. It is extremely well made and is lighter than a normal suit of plate armor, but is strong enough to defend against most blows. The armor is designed to be worn whilst mounted."
+#descr "This armor was made for a Paladin and shines with the glory of the Lord. It is extremely well made and is lighter than a normal suit of plate armor, but is strong enough to defend against most blows. The armor is designed to be worn whilst mounted and will increase the wearer's skill at riding."
 #constlevel 5
 #mainpath 0
 #mainlevel 1
 #type 5
 #armor "Armor of Knights"
 #awe 1
-#onlymounted
+#skilledrider 3
 #restricted 61
 #end
 
@@ -157944,7 +158317,7 @@ This will also prevent their skin from drying out."
 #secondarylevel 1
 #type 1
 #name "Mask of Seduction"
-#descr "Masks are an important part of Venetian culture and are often worn at balls, carnivals and all sorts of important social events. Those worn by nobles can be extremely elaborate and sometimes even enchanted. This mask is designed to be worn by Casanovas and Columbines to enhance their charms and dazzle would-be attackers. The latter power often proves useful when the objects of their affections violently reject their advances - or when they are caught in the act by a jealous husband or wife."
+#descr "Masks are an important part of Venedian culture and are often worn at balls, carnivals and all sorts of important social events. Those worn by nobles can be extremely elaborate and sometimes even enchanted. This mask is designed to be worn by Casanovas and Columbines to enhance their charms and dazzle would-be attackers. The latter power often proves useful when the objects of their affections violently reject their advances - or when they are caught in the act by a jealous husband or wife."
 #seduce 10  -- replaces, does not stack
 #restricted 201
 #restricteditem 2  -- columbine & casanova
@@ -159057,6 +159430,7 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 235 -- Robe of Missile Protection
+#constlevel 1
 #itemcost1 -60
 #end
 
@@ -159484,8 +159858,8 @@ This will also prevent their skin from drying out."
 #descr "The owner of this magic book can grant up to 100 human-sized soldiers the ability to breathe water. At the start of battle, the book's owner will cast a spell that makes fighting underwater more bearable for airbreathing soldiers."
 #itemcost1 -60 -- 4 gems
 #itemcost2 -40 -- 3 gems
-#mainpath 0 2
-#mainpath 1 6
+#mainpath 2
+#secondarypath 6
 #mainlevel 2
 #constlevel 3
 #giftofwater 300
@@ -173280,14 +173654,14 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_land 1
 #req_fornation 40
 #req_ench 273 -- Ench73
---#req_nositenbr 2169 -- EA Foundry
-#req_nositenbr 2170 -- EA Armory
+#req_nositenbr 2169 -- EA Foundry
+--#req_nositenbr 2170 -- EA Armory
 #req_pop0ok
 #msg "Add Pearl Foundry site - Land"
 #notext
 #nolog
---#addsite 2169 -- EA Foundry
-#addsite 2170 -- EA Armory
+#addsite 2169 -- EA Foundry
+--#addsite 2170 -- EA Armory
 #end
 
 #newevent
@@ -173295,12 +173669,14 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_land 0
 #req_fornation 40
 #req_ench 273 -- Ench73
-#req_nositenbr 2170 -- EA Armory
+#req_nositenbr 2169 -- EA Foundry
+--#req_nositenbr 2170 -- EA Armory
 #req_pop0ok
 #msg "Add Pearl Armory site - Water"
 #notext
 #nolog
-#addsite 2170 -- EA Armory
+#addsite 2169 -- EA Foundry
+--#addsite 2170 -- EA Armory
 #end
 
 #newevent
@@ -180683,6 +181059,1331 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_rare 25
 #setpoptype 107 --shamblers with shaman--
 #end
+
+
+
+-- START OF THEMATIC CAP TERRAIN
+
+
+
+
+--Clear capital terrain to 'plains'
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_owncapital 1 --only in capitals
+#remgeo 8395260 --Removes everything leaving only plain Terrain
+#end
+
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Roots of the Earth]"
+#addgeo 4096 --cave
+#end
+
+
+
+
+--Caves 
+
+#selectsite 110 --  EA and MA Agartha Roots of the Earth
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Roots of the Earth]"
+#addgeo 4096 --cave
+#end
+
+
+#selectsite 119 --EA Abysia Smouldercone--
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 16 --ea aby--
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 4096 --cave--
+#end
+
+
+
+#selectsite 1 --MA Abysia Smouldercone--
+#popgrowth 40
+#end
+
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 63 --ma aby--
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 4096 --cave--
+#end
+
+
+#selectsite 39 --LA Abysia--
+#popgrowth 40
+
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Temple Sanguine]"
+#addgeo 4096 --cave
+#end
+
+#end
+
+#selectsite 108 --LA Agartha--
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Mines of the Pale Ones]"
+#addgeo 4096 --cave
+#end
+
+
+--Cave Forests
+
+#selectsite 219 --EA Pyrene Cathedral Cavern
+#popgrowth -20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Cathedral Cavern]"
+#addgeo 4224 --cave forest
+#end
+
+#selectsite 174 --EA Xibalba Cavern of the Sun--
+#popgrowth -20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Cavern of the Sun]"
+#addgeo 4224 --cave forest
+#end
+
+
+#selectsite 179 --MA Xibalba Cave of Perpetual Darkness
+#popgrowth -20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Cave of Perpetual Darkness]"
+#addgeo 4224 --cave forest
+#end
+
+#selectsite 181 --la xibalba
+#popgrowth -20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Obsidian Cavern]"
+#addgeo 4224 --cave forest
+#end
+
+--Deep Sea Gorge
+
+#selectsite 116 --EA R'lyeh Gorge of Ancient Cities
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Gorge of Ancient Cities]"
+#addgeo 2068 --Deep Sea Gorge
+#end
+
+--Deep Sea
+
+#selectsite 128 --EA Atlantis The Basalt City
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Basalt City]"
+#addgeo 2052 --Deep Sea
+#end
+
+
+#selectsite 2318 --MA Dirgen
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Kingdom of Dirgen]"
+#addgeo 2052 --Deep Sea
+#end
+
+#selectsite 17 --MA R'lyeh
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Sunken City]"
+#addgeo 2052 --Deep Sea
+#end
+
+#selectsite 164 --LA R'lyeh
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The City of Unfullfilled Dreams]"
+#addgeo 2052 --Deep Sea
+#end
+
+--Forests --
+
+#selectsite 118 --EA Pangaea Grove of Gaia 
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 7 --EA Pan
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 128 --forest--
+#end
+
+#selectsite 98 --EA Kailasa mount kailasa
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Mount Kailasa]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 132 --EA Lanka Lanka
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Lanka]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 30 --EA Mictlan Temple of the Land
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[High Temple of the Sun]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 154 --EA Machaka Great Mababwe
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Great Mababwe]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 190 --EA Rus Oak of Storms
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Oak of Storms]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 2153 --EA Chaco Sipapu 
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Sipapu]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 2227 --EA Nihuala Village of the First People
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Village of the First People]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 133 --EA Tir Na n'og
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Tir na n'Og]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 16 --MA Jotunheim Iron Woods
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Iron Woods]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 80 --MA Asphodel carrion grove--
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 53 --MA Asphodel
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 128 --forest--
+#end
+
+#selectsite 78 --MA Bandar Log The Lotus Gardens
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Lotus Gardens]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 60 --MA Machaka God Forest
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[God Forest]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 5 --MA Man Forest of Avalon
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Forest of Avalon]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 87 --MA Mictlan Temple of the Land
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[High Temple of the Land]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 14 --MA Pangaea
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 52 --MA Pan
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 128 --forest--
+#end
+
+#selectsite 49 -- LA Pangaea
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 97 --MA Pan
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 128 --forest--
+#end
+
+#selectsite 127 --LA Man--
+#popgrowth 20
+#end
+
+
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Forest of Avalon]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 42 --LA Ulm
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Black Forest]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 97 --LA Patala
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Jeweled City]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 102 --LA Mictlan
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[High Temple of the Rain]"
+#addgeo 128 --Forest
+#end
+
+#selectsite 213 --LA Vaettiheim
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Iron Wood]"
+#addgeo 128 --Forest
+#end
+
+--Highlands
+
+#selectsite 95 --EA Yomi Mountain of the Oni Kings
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Mountain of the Oni Kings]"
+#addgeo 16 --Highland
+#end
+
+#selectsite 169 --EA Caelum Ravens Vale
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Palace of the Eagle Kings]"
+#addgeo 16 --Highland
+#end
+
+
+#selectsite 2191 --EA Bhod Yarlung Valley
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Yarlung Valley]"
+#addgeo 16 --Highland
+#end
+
+#selectsite 18 --MA Caelum Ravens Vale
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 71 --MA Caelum
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 16 Highland
+#end
+
+#selectsite 172 --MA Nazca Palace of the Sun Kings
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Palace of the Sun Kings]"
+#addgeo 16 --Highland
+#end
+
+#selectsite 224 --MA Pyrene
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Pleasure Orchard]"
+#addgeo 16 --Highland
+#end
+
+#selectsite 106 --MA Shinuyama 
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Mount Shinuyama]"
+#addgeo 16 --Highland
+#end
+
+#selectsite 2184 --MA Shambhala hidden city 
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Hidden City]"
+#addgeo 16 --Highland
+#end
+
+#selectsite 2181 --LA Ongtupqua
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Orayvi]"
+#addgeo 16 --Highland
+#end
+
+#selectsite 41 --LA Caelum
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 106 --LA Caelum
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 16 Highland
+#end
+
+
+#selectsite 93 --LA Jomon
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Mountain of the Mystics"
+#addgeo 16 --Highland
+#end
+
+
+--Highland Forests--
+
+#selectsite 83 --EA Ulm Irminsul
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Irminsul]"
+#addgeo 144 --highland forest 
+#end
+
+#selectsite 2115 --EA Fennoscandia Meandash River
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Meandash River]"
+#addgeo 144 --highland forest 
+#end
+
+#selectsite 226 -- MA Nidavangr
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Nidakettil]"
+#addgeo 144 --highland forest 
+#end
+
+--Shallow Seas--
+
+#selectsite 72 --EA Pelagia Palace of Pearls
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 40 --EA Palagia
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 4 Shallow Sea
+#end
+
+#selectsite 101 --EA Oceania The Grove of Aphros
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Grove of Aphros]"
+#addgeo 4 --Shallow Sea--
+#end
+
+#selectsite 182 --EA Therados Telkhinis
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Telkhinis]"
+#addgeo 4 --Shallow Sea--
+#end
+
+#selectsite 2327 --EA Bantay Tubig Cave of Kataw
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Cave of Kataw]"
+#addgeo 4 --Shallow Sea--
+#end
+
+#selectsite 2 --MA Atlantis The Coral Towers
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Coral Towers]"
+#addgeo 4 --Shallow Sea--
+#end
+
+#selectsite 2281 --MA Oceania
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Grove of Bythos]"
+#addgeo 4 --Shallow Sea--
+#end
+
+#selectsite 160 --MA Pelagia
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 86 --MA Palagia
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 4 Shallow Sea
+#end
+
+#selectsite 2206 --MA Ryugo-Jotunheim
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Palace of the Four Seasons]"
+#addgeo 4 --Shallow Sea--
+#end
+
+#selectsite 185 --MA Ys
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Ker-Ys]"
+#addgeo 4 --Shallow Sea--
+#end
+
+--Swamps--
+
+#selectsite 9 --EA C'tis The Temple City
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Temple City]"
+#addgeo 32 --swamp--
+#end
+
+#selectsite 125 --EA Sauromatia 
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Enchanted Isle]"
+#addgeo 32 --swamp--
+#end
+
+#selectsite 62 --MA C'tis
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Temple Marsh]"
+#addgeo 32 --swamp--
+#end
+
+#selectsite 4 -- ma Pythium 
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Imperial Palace]"
+#addgeo 32 --swamp--
+#end
+
+#selectsite 43 --la pythium
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Imperial Capital]"
+#addgeo 32 --swamp--
+#end
+
+#selectsite 2112 --LA rotterland
+#popgrowth 40
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Ostlem Dike]"
+#addgeo 32 --swamp--
+#end
+
+
+
+--Waste--
+
+#selectsite 147 --EA Hinnom Mount Hermon
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Mount Hermon]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 215 --EA Ubar Iram of a Thousand Pillars
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Iram of a Thousand Pillars]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 2118 --EA Zion the Great Temple--
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Great Temple]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 2102 --EA Alchera Forest of Tanematahuta
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Forest of Tanematahuta]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 144 --MA Ashdod
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The Twin Cities]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 24 --MA Ermor
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 54 --MA Ermor
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 64 --Waste--
+#end
+
+#selectsite 210 --MA Na'ba
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Great Dam]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 2180 --MA Ongtupqa
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Walpi]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 143 --LA gath
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Temple of the Sage King]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 2106 --LA Iram
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Great Madrassa]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 63 --LA C'tis City of Tombs
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[The City of Tombs]"
+#addgeo 64 --waste--
+#end
+
+#selectsite 158 --LA Lemuria
+#popgrowth 60
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_fornation 99 --Lemuria--
+#req_owncapital 1 --only in capitals
+#req_unique 1
+#addgeo 64 --waste--
+#end
+
+
+
+-- END OF THEMATIC CAP TERRAIN
+
+
+
+#newevent -- Summer heat
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_cold -2 -- 2 heat or colder
+#req_fort 1 -- only in forts
+#msg "Heat in summer."
+--#header 2
+#notext
+#nolog
+#req_month 2 -- Early summer
+#decscale 2 -- Heat
+#end
+
+#newevent -- Winter cold
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_heat -2 -- 2 cold or hotter
+#req_fort 1 -- only in forts
+#msg "Cold in winter."
+--#header 2
+#notext
+#nolog
+#req_month 8 -- Early winter
+#incscale 2 -- Cold
+#end
+
+#newevent -- Remove heat site
+#rarity 5
+#req_site 1
+#msg "Remove Ragha heat site. [Turan Reign]"
+--#header 2
+#notext
+#nolog
+#removesite 2603
+#end
+
+#newevent -- Remove heat site
+#rarity 5
+#req_site 1
+#msg "Remove Ragha cold site. [Airya Reign]"
+--#header 2
+#notext
+#nolog
+#removesite 2604
+#end
+
+#newevent -- Place heat site if Dastur preaching
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_targmnr 2600 -- Dastur
+#req_targorder 6 -- Preach
+#req_temple 1
+#msg "Place Ragha heat site."
+--#header 2
+#notext
+#nolog
+#hiddensite 2603 -- Heat
+#end
+
+#newevent -- Place cold site if Zaotar preaching and no heat site
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_targmnr 2603 -- Zaotar
+#req_targorder 6 -- Preach
+#req_nositenbr 2603 -- Heat
+#req_temple 1
+#msg "Place Ragha cold site."
+--#header 2
+#notext
+#nolog
+#hiddensite 2604 -- Cold
+#end
+
+#newevent -- Remove heat site if Zaotar preaching and yes heat site
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_targmnr 2603 -- Zaotar
+#req_targorder 6 -- Preach
+#req_site 1
+#msg "Remove Ragha heat site. [Turan Reign]"
+--#header 2
+#notext
+#nolog
+#removesite 2603 -- Heat
+#end
+
+#newevent -- Ragha heat spell
+#rarity 5
+#req_unluck 5
+#req_luck 5
+#msg "A summer heat has swept over the province."
+#id 51
+#decscale2 2 -- Heat
+#end
+
+#newevent -- Ragha cold spell
+#rarity 5
+#req_unluck 5
+#req_luck 5
+#msg "A winter chill has swept over the province."
+#id 52
+#incscale2 2 -- Cold
+#end
+
+#newevent -- Mid summer heat
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_cold -2 -- 2 heat or colder
+#req_fort 1 -- only in forts
+#msg "Heat in summer."
+--#header 2
+#notext
+#nolog
+#req_month 3 -- Mid summer
+#decscale 2 -- Heat
+#end
+
+#newevent -- Mid winter cold
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_heat -2 -- 2 cold or hotter
+#req_fort 1 -- only in forts
+#msg "Cold in winter."
+--#header 2
+#notext
+#nolog
+#req_month 9 -- Mid winter
+#incscale 2 -- Cold
+#end
+
+--#newevent -- Late summer heat
+--#rarity 5
+--#req_fornation 105 -- Ragha
+--#req_cold -1 -- 1 heat or colder
+--#req_fort 1 -- only in forts
+--#msg "Heat in summer."
+----#header 2
+--#notext
+--#nolog
+--#req_month 4 -- Late summer
+--#decscale 2 -- Heat
+--#end
+
+--#newevent -- Late winter cold
+--#rarity 5
+--#req_fornation 105 -- Ragha
+--#req_heat -1 -- 1 cold or hotter
+--#req_fort 1 -- only in forts
+--#msg "Cold in winter."
+----#header 2
+--#notext
+--#nolog
+--#req_month 10 -- Late winter
+--#incscale 2 -- Cold
+--#end
+
+
+
+
 
 
 -- END OF NEW EVENTS
