@@ -27471,7 +27471,6 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copyspr 512  -- Fall Bear
 #name "Fylgja"
 #descr "The Fylgja is the animal spirit of a Shaman of Ulm. The spirit takes the form of a great ethereal bear that can regenerate wounds. After the battle or if the spirit is dissipated the Fylgja will return to the Shaman."
-#weapon 20  -- Bite
 #fallpower 0
 #mor 30
 #prot 8
@@ -43952,7 +43951,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Huntress"
 #fixedname "Skadi"
 #descr "Skadi, the huntress is a frost giantess descended from the old Rimtursar, giants sprung from the glaciers of Niefelheim, Land of Eternal Frost. Niefel Giants are constantly surrounded by an icy wind and their bodies temper and strengthen in cold lands. She is the daughter of the legendary Tjatse, the Abductor. She is a skilled hunter and some barbarian tribes worship her as a goddess of hunt and winter. The Pantokrator himself asked her to hunt down and imprison the Trickster in the depths of the earth. The Pantokrator promised to reward the huntress with immortality if she did the deed. She imprisoned the trickster, but the Pantokrator failed to keep his promise. Now with the coming of the awakening god, the Huntress has seen another chance to get the reward she deserves. The Huntress is a skilled user of ice magic and also knows the secrets of nature."
-#size 10
+#size 9
 #mapmove 22
 #gcost 1
 #ap 18
@@ -43972,11 +43971,11 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #cold 10
 #holy
 #coldpower 1
-#hp 65
+#hp 78
 #att 13
-#def 13
+#def 14
 #mr 18
-#str 23
+#str 25
 #mor 16
 #prec 13
 #armor "Reinforced Leather Cap"
@@ -85014,6 +85013,7 @@ Initiates of the Deep can be recruited in any land fort."
 #selectmonster 512  -- Fall Bear
 #clearweapons
 #weapon 823  -- Golden Claw
+#weapon 821  -- Golden Bite
 #magicskill 3 1  -- 1E
 #custommagic 1024 50  -- 50% E
 #montag 1051
@@ -117086,7 +117086,7 @@ Priests: Average"
 #wallcom 7113 -- Sar
 #wallunit 7106 -- Archer
 #wallmult 20
-#guardcom 7713 -- Sar
+#guardcom 7113 -- Sar
 #guardunit 7103 -- Spearman
 #guardmult 12
 #moreheat 1
@@ -124795,7 +124795,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 0 5
 #pathlevel 0 3
 #path 1 2
-#pathlevel 0 1
+#pathlevel 1 1
 #effect 10519  -- +20
 #nreff 1
 #damage 382  -- Invulnerability
@@ -128472,7 +128472,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #fatiguecost 600
 #damage 2199023255552  -- Selfborn
 #restricted 9  -- EA Sauro
-#onlyatsite 4  -- Swamp of Pythia
+#onlyatsite 57  -- Swamp of Pythia
 #end
 
 #selectspell 2506
@@ -128615,7 +128615,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #pathlevel 0 2
 #fatiguecost 1200
 #damage -1024
-#onlyatsite 4  -- Swamps of Pythia
+#onlyatsite 57  -- Swamps of Pythia
 #restricted 9  -- EA Sauro
 #nextspell 2515
 #end
@@ -135740,8 +135740,10 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #fatiguecost 200
 #damage 7355 -- Enslaved Spy
 #onlymnr 1521  -- Mind Lord
+#onlymnr 12006  -- Mind Lord
 #onlymnr 8174 -- He who Breathes
 #onlymnr 1691  -- Auluudh
+#onlymnr 12000  -- Auluudh
 #onlymnr 3098  -- First Spawn
 #restricted 44
 #end
@@ -135759,7 +135761,10 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #fatiguecost 1000
 #damage -1017  -- Enslaved Mage
 #onlymnr 1521  -- Mind Lord
+#onlymnr 12006  -- Mind Lord
+#onlymnr 8174 -- He who Breathes
 #onlymnr 1691  -- Auluudh
+#onlymnr 12000  -- Auluudh
 #onlymnr 3098  -- First Spawn
 #restricted 44
 #end
@@ -155213,6 +155218,7 @@ Can only be cast once per combat round."
 #armor 43  -- Hydra Skin Armor
 #weapon 1808 -- repelling barbs
 #poisonarmor 5
+#hp 4
 #end
 
 #selectitem 654
@@ -155867,6 +155873,7 @@ Can only be cast once per combat round."
 #slashres
 #pierceres
 #bluntres
+#hp 10
 #end
 
 #selectitem 699
@@ -156631,6 +156638,7 @@ Can only be cast once per combat round."
 #autospell "Phoenix Power"
 #nodemon
 #noundead
+#hp 2
 #end
 
 #selectitem 739
@@ -157470,6 +157478,7 @@ This will also prevent their skin from drying out."
 #waterbreathing
 #armor "Fish Scale"
 #autospell "Liquid Body"
+#hp 4
 #end
 
 #selectitem 791
@@ -157484,6 +157493,7 @@ This will also prevent their skin from drying out."
 #armor "Cloud Cuirass"
 #stormpower 3
 #autospell "Personal Mistform"
+#hp 6
 #end
 
 #selectitem 792
@@ -157501,6 +157511,7 @@ This will also prevent their skin from drying out."
 #armor "Linen Cuirass"
 #poisoncloud 8
 #poisonres 15
+#hp 6
 #end
 
 #selectitem 793
@@ -157756,6 +157767,7 @@ This will also prevent their skin from drying out."
 #fireshield 8
 #fireres 5
 #autospell "Mirror Image"
+#hp 6
 #end
 
 #selectitem 810
@@ -157817,6 +157829,7 @@ This will also prevent their skin from drying out."
 #fireres -5
 #coldres -5
 #shockres -5
+#hp 8
 #end
 
 #selectitem 815
@@ -157880,6 +157893,7 @@ This will also prevent their skin from drying out."
 #type 5
 #armor "Armor of Souls"
 #fear 5
+#hp 6
 #end
 
 #selectitem 819
