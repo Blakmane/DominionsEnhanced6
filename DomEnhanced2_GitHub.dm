@@ -3312,7 +3312,7 @@
 --#friendlyimmune
 #explspr 10009
 --#flyspr 10009
-#melee50
+--#melee50
 #natural
 #sound 29
 #end
@@ -40714,9 +40714,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "dragonkings/dkdragson2.tga"
 #name "Nu Kua"
 #descr "Occasionally the Dragon Kings and their descendants take human form and dally with mortals. The children of these unions are known as the Nu Kua, Dragonblooded, and are at home both above and below the waves. Stronger and faster than most mortals, they often journey to the Dragon Courts upon learning of their divine heritage. There they are trained as elite warriors in the service of the Dragon Kings. When in mortal danger they can temporarily take draconic form. The descendants of the Dragon Kings are sacred to the halfmen of the Dragon Courts."
-#rpcost 36
+#rpcost 46
 #gcost 10050
-#holycost 2
 #hp 12
 #mr 13
 #str 12
@@ -40739,7 +40738,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "dragonkings/dkdragsond2.tga"
 #name "Nu Kua"
 #descr "Occasionally the Dragon Kings and their descendants take human form and dally with mortals. The children of these unions are known as the Nu Kua, Dragonblooded, and are at home both above and below the waves. Stronger and faster than most mortals, they often journey to the Dragon Courts upon learning of their divine heritage. There they are trained as elite warriors in the service of the Dragon Kings. When in mortal danger they can temporarily take draconic form. The descendants of the Dragon Kings are sacred to the halfmen of the Dragon Courts."
-#rpcost 36
+#rpcost 48
 #gcost 50
 #holycost 2
 #prot 6
@@ -51524,8 +51523,9 @@ Dragon Priests can be recruited in any land fort."
 #hp 78
 #str 26
 #att 13
-#def 12
+#def 13
 #mor 16
+#prot 8
 #weapon 643
 #weapon 21
 #weapon 1838
@@ -56141,6 +56141,24 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #clearmagic
 #magicskill 0 5
 #magicskill 4 3
+#end
+
+#newmonster 9151 -- Atlantian Moon Warrior
+#copystats 2896 -- Returned
+#spr1 "magicenhanced/atlmoonwarrior1.png"
+#spr2 "magicenhanced/atlmoonwarrior2.png"
+#name "Moon Warrior"
+#descr "With the rise of the Kings of Rain as the rulers of Mictlan, shamblers from beneath the waves have migrated there and are treated as mighty sacred warriors revered by the humans of Mictlan. These Atlantians have a darker complexion than the ones from Mictlan, and only a few shamblers have made the journey. The Kings of Rain grant warriors obsidian weapons, a material of the dark, and declare them blessed by Moon and Rain. Unlike the Rain Warriors, they do not dream of returning to the depths they left and wear armor of iron."
+#clearweapons
+#cleararmor
+#holy
+#rpcost 36
+#gcost 10030
+#darkpower 1
+#armor 12 -- scale mail
+#armor 20 -- iron hat
+#armor 25 -- turtle
+#weapon 451 -- 1h obs club sword 
 #end
 
 
@@ -88150,19 +88168,27 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #end
 
 #selectmonster 1801  -- Fomorian Giant
+#gcost 10080
+#def 11
 #weapon 1838 -- Eye Curse
+#prot 8
 #end
 
 #selectmonster 1802  -- Fomorian King
 #weapon 1838 -- Eye Curse
+#def 12
+#prot 8
 #end
 
 #selectmonster 1803  -- Uncursed
 #weapon 1838 -- Eye Curse
+#prot 8
 #end
 
 #selectmonster 1804  -- High King Balor
+#def 13
 #magicskill 7 3 -- Glamour (so he can actually cast his eponymous spell)
+#prot 9
 #end
 
 #selectmonster 1805
@@ -88565,12 +88591,12 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 
 #selectmonster 2025  -- Shesai Anakite
 #twiceborn 7231 -- Wight Giant
-#rpcost 52
+#rpcost 96
 #end
 
 #selectmonster 2026  -- Ahiman Anakite
 #twiceborn 7231 -- Wight Giant
-#rpcost 42
+#rpcost 86
 #end
 
 #selectmonster 2027  -- Adon
@@ -88585,7 +88611,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #twiceborn 7231 -- Wight Giant
 #popkill 1
 #incunrest 5
-#holycost 2
+#rpcost 62
 #end
 
 #selectmonster 2031  -- Melqart
@@ -89449,6 +89475,7 @@ Cost 28 RP."
 #selectmonster 2629 -- Zhayedan Spahbed
 #descr "The Zhayedan Spahbed is a commander of the Zhayedan. They are skilled generals and mighty warriors blessed by the magi priests of the kingdom. Zhayedan Spahbed cannot be recruited if the province is cold."
 #heatrec 0
+#holycost 1
 #gcost 10020
 #magicskill 9 1 -- Priest
 #end
@@ -89456,6 +89483,8 @@ Cost 28 RP."
 #selectmonster 2587 -- Zhayedan
 #descr "The Zhayedan, Immortals, is a Turan sacred elite force of limited numbers, replaced only when one of their numbers is slain. Once they were an infantry unit, but with the increasing interest in mounted warfare and the acquisition of gryphons from a tribe of Amazons, the Immortals became an airborne cavalry unit of unequaled power. If the Zhayedan is killed, his gryphon will fight on, and if the gryphon is returned to Ragha another Zhayedan will mount the riderless Gryphon. Zhayedan cannot be recruited if the province is cold."
 #heatrec 0
+#holycost 1
+#rpcost 45 -- 76
 #end
 
 #selectmonster 3546 -- Zhayedan Gryphon
@@ -114695,7 +114724,11 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #selectsite 102  -- Temple of Land
+#clear
+#rarity 5
+#gems 6 1
 #homemon 727 -- Jaguar Warrior
+#homecom 732 -- Priest King
 #end
 
 #selectsite 103  -- High Temple of Rain
@@ -114704,6 +114737,14 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #gems 2 1 -- W
 #homemon 7852 -- Monster Toad
 #homecom 1420 -- King of Rain
+#end
+
+#selectsite 104  -- Temple of the Moon
+#clear
+#rarity 5
+#gems 4 1
+#homemon 9151 -- Moon Warrior
+#homecom 734 -- Moon Priest
 #end
 
 #selectsite 133  -- Tir na n'Og
@@ -178805,7 +178846,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #end
 
 #newevent -- RoL preaching + heat
-#req_ench 222 -- Ench22  -- Rivers of Lava
+#req_myench 222 -- Ench22  -- Rivers of Lava
 #rarity 5
 #req_preach 10
 --#req_freesites 1
