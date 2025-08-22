@@ -135769,25 +135769,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 44
 #end
 
-#selectspell 3018
-#copyspell 1190 -- Vafur Flames
-#name "Grow Weaponry"
-#descr "This spell creates a special chamber in a fort deep in the lightless depths in which are grown horrid living weapons. These weapons consist of a living anemonelike creature with swaying tendrils that can paralyze and poison those they strike. The weapons can only be used by specially trained slave troopers. The chamber will be destroyed if the province falls into enemy hands, or if the caster dies."
-#details "Allows recruitment of Anemone Trooper."
-#researchlevel 4
-#path 0 2
-#pathlevel 0 3
-#path 1 6
-#pathlevel 1 1
-#effect 10084  -- Permanent Duration
-#damage 255 -- Ench55  -- Grow Weaponry
-#onlygeosrc 2048  -- Deep Sea
-#friendlyench 1
-#hiddenench 1
-#spec 41943040  -- UW Only
-#restricted 44 -- EA Rlyeh
-#end
-
 #selectspell 3019
 #copyspell 1289 -- Haruspex
 #name "Memory of the Mind Lords"
@@ -145821,7 +145802,7 @@ Underwater: AoE 3"
 #selectspell 3878 -- Amberskin Warriors
 #name "Amberskin Warriors"
 #descr "The caster turns the skin of a group of soldiers into a magical Amber, improving their protection and making them more tolerant to blunt attacks as well as heat, but makes them more vulnerable to cold. This spell is more effective when cast underwater."
-#details "Grants natural protection +10 (max up to 15), or +3 if already 12 or higher, Blunt Resistance, and 5 Fire Resistance. Also incurs susceptibility to Cold 5.
+#details "Grants natural protection +7 (max up to 10), or +1 if already 9 or higher, Blunt Resistance, and 5 Fire Resistance.
 Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #school 1
 #researchlevel 6
@@ -145830,7 +145811,8 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #path 1 0 -- Fire
 #pathlevel 1 1
 #effect 10
-#damage 137439020032 -- Stoneskin + 5 FR + Blunt Resistance
+#damage 36028934457917456 -- Barkskin + 10 FR + Blunt Resistance
+--#damage 137439020032 -- Stoneskin + 5 FR + Blunt Resistance
 #spec 12599300 -- Friendlies only, ignores Shields, UWOK, no spirits, friendly only
 --#spec 46153728 -- Friendlies only, ignores Shields, UWOK, UWonly
 #sound 31
@@ -151509,6 +151491,40 @@ This spell can only be cast in a deep water province."
 #restricted 105 -- Ragha
 #end
 
+#selectspell 4290 -- Grow Weaponry nextspell
+#name "Growth Chamber"
+#descr "This spell creates a special chamber in a fort deep in the lightless depths in which are grown horrid living weapons. These weapons consist of a living anemonelike creature with swaying tendrils that can paralyze and poison those they strike. The weapons can only be used by specially trained slave troopers. The chamber will be destroyed if the province falls into enemy hands."
+#details "Allows recruitment of Anemone Trooper."
+#school -1
+#researchlevel 0
+#path 0 2 -- W
+#effect 10082
+#damage 255 -- Ench55  -- Grow Weaponry
+#fatiguecost 1000
+#nreff 1
+#end
+
+#selectspell 4291 -- Grow Weaponry
+#copyspell 106  -- Record of Creation
+#name "Grow Weaponry"
+#descr "This spell creates a special chamber in a fort deep in the lightless depths in which are grown horrid living weapons. These weapons consist of a living anemonelike creature with swaying tendrils that can paralyze and poison those they strike. The weapons can only be used by specially trained slave troopers. The chamber will be destroyed if the province falls into enemy hands."
+#details "Allows recruitment of Anemone Trooper."
+#school 4
+#researchlevel 4
+#path 0 2
+#pathlevel 0 3
+#path 1 6
+#pathlevel 1 1
+#nreff 1
+#effect 10083
+#damage -1
+#fatiguecost 1000
+#nextspell 4290
+#friendlyench 1
+#hiddenench 1
+#spec 41943040  -- UW Only
+#restricted 44 -- EA Rlyeh
+#end
 
 
 
@@ -174051,7 +174067,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #rarity 5
 #req_land 0
 #req_ench 255 -- Ench55  -- Growth Chamber
-#req_freesites 1
+--#req_freesites 1
 #req_nositenbr 2127 -- Growth Chamber
 #req_fornation 44 -- EA Rlyeh
 #req_pop0ok
@@ -174063,7 +174079,9 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 
 #newevent
 #rarity 5
-#req_noench 255 -- Ench55  -- Growth Chamber
+--#req_noench 255 -- Ench55  -- Growth Chamber
+#req_notfornation 44 -- not EA R'lyeh
+#req_mindef 1 -- not under siege
 #req_site 1  -- 1747 -- Growth Chamber
 #req_pop0ok
 #msg "Growth Chamber removal. [Growth Chamber]"
