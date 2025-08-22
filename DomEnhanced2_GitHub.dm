@@ -85883,13 +85883,14 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 760  -- Siege Golem
 #name "Siege Golem"
-#descr "A siege golem is a metal giant with fists enchanted to shatter steel and stone. It is tremendously strong and can crush stone walls to powder. The main purpose of the siege golem is to besiege castles and it is rather poor at melee combat, although it is very durable and will not easily be destroyed. The siege golem is instilled with instructions from its creator and can act independently, although it has no mind. A single siege golem counts as one hundred normal soldiers when besieging a castle, and if given a full month can deploy pulverising shockwaves that will utterly destroy any fort in the province, however once this process begins the golem will slowly tear itself apart. The Siege Golem is a huge construction and cannot be teleported via magic."
+#descr "A siege golem is a metal giant with fists enchanted to shatter steel and stone. It is tremendously strong and can crush stone walls to powder. The main purpose of the siege golem is to besiege castles and it is rather poor at melee combat, although it is very durable and will not easily be destroyed. The siege golem is instilled with instructions from its creator and can act independently, although it has no mind. A single siege golem counts as one hundred normal soldiers when besieging a castle, and if given a full month can deploy pulverising shockwaves that will utterly destroy any fort in the province. The Siege Golem is a huge construction and cannot be teleported via magic."
 #noleader
 #nomagicleader
 #unteleportable
-#shapechange 7937 -- Fortkill mode
-#itemslots 1  -- No slots
+#itemslots 262144 -- 1misc
 #montag 1052
+#userestricteditem 760
+#startitem 876
 #end
 
 #selectmonster 768 -- Watcher
@@ -151526,6 +151527,20 @@ This spell can only be cast in a deep water province."
 #restricted 44 -- EA Rlyeh
 #end
 
+#selectspell 4292
+#copyspell 1302
+#name "Shatter Fort"
+#descr "The Siege Golem activates and destroys any fort in the province where it stands."
+#details "Destroys a fort in the province that the Siege Golem stands in. However, if the Siege Golem is destroyed first, the spell will not be completed."
+#fatiguecost 0
+#school -1
+#path 0 3
+#pathlevel 0 8
+#effect 10082
+#damage 284 -- Ench84 -- Shatter Fort
+#fatiguecost 100
+#provrange 0
+#end
 
 
 -- END OF NEW SPELLS
@@ -153373,8 +153388,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 1098 -- Siege Golem
-#school -1 -- TEMPORARY
-#researchlevel 8
+--#school -1 -- TEMPORARY
+#researchlevel 9
 #fatiguecost 2500
 #effect 10021  -- Summon Commander
 #spec 8388608
@@ -158733,6 +158748,22 @@ This will also prevent their skin from drying out."
 #cursed
 #nofind
 #restricteditem 22
+#end
+
+#selectitem 876
+#name "Stone Heart"
+#descr "The power source of the Siege Golem, its power can be used to level a fort to its foundations."
+#copyspr 367
+#constlevel 11
+#mainpath 3
+#mainlevel 5
+#type 8
+#stealthboost -500
+#cursed
+#nofind
+#heavyitem 1
+#restricteditem 760
+#spell "Shatter Fort"
 #end
 
 
@@ -182455,6 +182486,28 @@ It is now fully repaired and a new crew has been assigned to it."
 --#end
 
 
+#newevent -- Fort Destroy --
+#rarity 13
+#revealprov
+#req_ench 284 -- Ench84 -- Shatter Fort
+#req_monster 760 --siege golem-- 
+#req_fort 1
+#msg "A great explosion from ##landname## echoes across the world! A Siege Golem has shattered the entire fortification there into dust!"
+#req_pop0ok
+#req_indepok
+#fort 0 --destroy fort--
+#end
+
+--Gives the Siege Golem his heart if he somehow loses it, or is wished for--
+#newevent
+#rarity 0
+#req_targmnr 760
+#req_targnoitem 876
+#addequip 9
+#msg "[Stone Heart]"
+#notext
+#nolog
+#end
 
 
 
