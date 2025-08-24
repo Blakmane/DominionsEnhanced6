@@ -9168,6 +9168,8 @@
 #unmountedspr2 "goldenhorde/un_horseman2.tga"
 #descr "The Khans use mounted outriders to scout enemy locations. These eagle-eyed warriors can travel with terrific speed on their hardy steeds."
 #prec 10
+#gcost 15
+#rcost -5
 #mountainsurvival
 #armor 518 -- Lamellar Armor
 #armor 119  -- Reinforced Leather Cap
@@ -9400,10 +9402,11 @@
 #gcost 0
 #prec 10
 #horsetattoo 3
+#fear 5
 #mr 13
 #mor 15
 #superiorleader
-#inspirational 1
+#inspirational 2
 #magicskill 9 3
 #holy
 #incprovdef 2
@@ -9412,7 +9415,8 @@
 #pillagebonus 20
 #userestricteditem 1
 #montag 1007  -- Khans
-#batstartsum1d6 6656 -- Kheshig
+#summon2 6656 -- Kheshig
+#batstartsum2d6 6656 -- Kheshig
 #armor 17  -- Full Scale
 #armor 119  -- Reinforced Leather Cap
 #armor 2  -- Shield
@@ -9445,7 +9449,7 @@
 #stealthy 0
 #horsetattoo 3
 #magicskill 9 1
-#custommagic 11520 50  -- 50% AESN
+#custommagic 11520 100  -- 50% AESN
 #coldres 5
 #holy
 #ressize 2
@@ -18060,7 +18064,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mr 11
 #ap 24
 #prec 8
-#mapmove 22
+#mapmove 14
 #weapon 357  -- Light Lance
 #armor 14  -- Plate Hauberk
 #armor 20  -- Iron Cap
@@ -18094,7 +18098,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mr 12
 #ap 24
 #prec 8
-#mapmove 22
+#mapmove 14
 #weapon 8 -- sword
 #armor 14  -- Plate Hauberk
 #armor 120  -- Leather Cap
@@ -31735,22 +31739,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #polyimmune
 #end
 
-#newmonster 7604
-#copystats 3344  -- Statue of Beginnings
-#clearmagic
-#spr1 "extrapretenders/hubal.tga"
-#spr2 "extrapretenders/hubal.tga"
-#name "Idol of the Ancient Warrior"
-#descr "Long ago a great warrior was charged by the Pantokrator with protecting the people of the world. He fought well and was rewarded with Dominion over the rain and knowledge of the future. When he eventually fell his spirit was allowed to remain in this world, bound to a great idol. Each month gifts are offered in remembrance of the deeds of the past and seven mystical arrows are cast before it to divine the future. Countless offerings later and now with the Pantokrator gone, the Idol of the Ancient Warrior has the chance of putting the world under its strong dominion and becoming the True God."
-#fixedname "Hubal"
-#gcost 270
-#magicskill 0 1
-#magicskill 2 1
-#magicskill 4 1
-#nobadevents 25
-#homerealm 5  -- Middle East
-#end
-
 #newmonster 7606
 #copystats 1926  -- Peshtsi City Guard
 #cleararmor
@@ -40449,7 +40437,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #enc 3
 #mapmove 24
 #ap 28
-#weapon 583  -- Taloned kick
+#weapon 408 -- Talons
 #animal
 #undisciplined
 #startage 5
@@ -46469,7 +46457,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #magicskill 9 3
 #startage 40
 #maxage 60
-#makemonsters3 7678 -- Kheshig
+#summon2 7678 -- Kheshig
 #batstartsum2d6 7678 -- Kheshig
 #end
 
@@ -55286,7 +55274,12 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #copystats 3574
 #copyspr 3574
 #horsetattoo 1
-#mr 12
+#mr 13
+#hp 26
+#str 16
+#att 12
+#def 11
+#mor 12
 #holy
 #stealthy 25
 #end
@@ -56155,11 +56148,178 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #rpcost 36
 #gcost 10030
 #darkpower 1
+#darkvision 100
+#mr 11
 #armor 12 -- scale mail
 #armor 20 -- iron hat
 #armor 25 -- turtle
 #weapon 451 -- 1h obs club sword 
 #end
+
+#newmonster 9152 -- LA Phlegra Polyphemus
+#copystats 3141 -- Cyclops Shepherd
+#spr1 "worthy_heroes/polyphemus1.png"
+#spr2 "worthy_heroes/polyphemus2.png"
+#name "Blind Cyclopes"
+#descr "Polyphemus is one of the few remaining pastoral cyclopes on the phlegran hills and son of a god of the seas. He is widely known amongst the cyclopes for his singing voice with which he tried to seduce a sea nymph, though he proved unsuccessful. Long ago, his home was trespassed by a band of men, and so he ate two of the men for their transgression. One of the men offered him potent wine which Polyphemus accepted, promising a gift in return, and fell into a drunken sleep. He was then awoken by a massive stake stabbed into his eye by the band of men, and chased them off with great boulders. Now he has come to serve the other cyclopes in their new war on men."
+#fixedname "Polyphemus"
+#gcost 0
+#mr 15
+#mor 16
+#clearweapons
+#clearmagic
+#weapon 7 -- staff
+#weapon 27 -- boulder
+#magicskill 2 3
+#magicskill 6 1
+#startingaff 524288 -- lost eye
+#end
+
+#newmonster 9153 -- LA Phlegra Aristeus
+#copystats 3117 -- Basileus
+#copyspr 3117 -- Basileus
+#name "Uncursed Gigante"
+#descr "Aristaeus is the last remaining Gigante of their first war upon the gods that resulted in the tyrant's curse. He fled the battle after it became obvious the Gigantes would fail, and he alone escaped the curse that afflicted all who took part in the war. He has been hiding ever since, fearful of the tyrant's punishment for his cowardice as well as the wrath of the gods for his part in the war, but now with all who would remember either dead or imprisoned he has returned to Phlegra to serve as an advisor in his old age, and keep mistakes of old from repeating."
+#fixedname "Aristeus"
+#gcost 0
+#mor 16
+#clearmagic
+#magicskill 0 1
+#magicskill 1 1
+#magicskill 3 1
+#magicskill 6 3
+#magicskill 9 1
+#startage 1200
+#maxage 600
+#end
+
+#newmonster 9154 -- ghoul pc
+#copystats 198 -- ghoul
+#spr1 "magicenhanced/blue_ghoulpc1.png"
+#spr2 "magicenhanced/blue_ghoulpc2.png"
+#name "Ghoul Infantry"
+#descr "Ghouls are humans under the curse of Hunger. By eating the flesh of dead humans, their bodies and minds decay and transform. Pale and putrescent, they follow armies to feed on the dead and the dying. Since the Malediction, ghoulish once-soldiers can be found throughout Ulm still bearing arms and armor."
+#hp 12
+#str 12
+#mr 9
+#armor 30 -- rusty plate
+#armor 20 -- iron cap
+#montag 1077
+#end
+
+#newmonster 9155 -- ghoul pm
+#copystats 198 -- ghoul
+#spr1 "magicenhanced/blue_ghoulpm1.png"
+#spr2 "magicenhanced/blue_ghoulpm2.png"
+#name "Ghoul Infantry"
+#descr "Ghouls are humans under the curse of Hunger. By eating the flesh of dead humans, their bodies and minds decay and transform. Pale and putrescent, they follow armies to feed on the dead and the dying. Since the Malediction, ghoulish once-soldiers can be found throughout Ulm still bearing arms and armor."
+#hp 12
+#str 12
+#mr 9
+#armor 30 -- rusty plate
+#armor 20 -- iron cap
+#clearweapons
+#weapon 15 -- morningstar
+#montag 1077
+#end
+
+#newmonster 9156 -- ghoul ph
+#copystats 198 -- ghoul
+#spr1 "magicenhanced/blue_ghoulph1.png"
+#spr2 "magicenhanced/blue_ghoulph2.png"
+#name "Ghoul Infantry"
+#descr "Ghouls are humans under the curse of Hunger. By eating the flesh of dead humans, their bodies and minds decay and transform. Pale and putrescent, they follow armies to feed on the dead and the dying. Since the Malediction, ghoulish once-soldiers can be found throughout Ulm still bearing arms and armor."
+#hp 12
+#str 12
+#mr 9
+#armor 30 -- rusty plate
+#armor 20 -- iron cap
+#clearweapons
+#weapon 5 -- halberd
+#montag 1077
+#end
+
+#newmonster 9157 -- ghoul pcb
+#copystats 198 -- ghoul
+#spr1 "magicenhanced/blue_ghoulpcb1.png"
+#spr2 "magicenhanced/blue_ghoulpcb2.png"
+#name "Ghoul Crossbow"
+#descr "Ghouls are humans under the curse of Hunger. By eating the flesh of dead humans, their bodies and minds decay and transform. Pale and putrescent, they follow armies to feed on the dead and the dying. Since the Malediction, ghoulish once-soldiers can be found throughout Ulm still bearing arms and armor."
+#hp 12
+#str 12
+#mr 9
+#armor 30 -- rusty plate
+#armor 20 -- iron cap
+#clearweapons
+#weapon 43 -- claw
+#weapon 25 -- crossbow
+#montag 1077
+#end
+
+#newmonster 9158 -- ghoul lc
+#copystats 198 -- ghoul
+#spr1 "magicenhanced/blue_ghoullc1.png"
+#spr2 "magicenhanced/blue_ghoullc2.png"
+#name "Ghoul Infantry"
+#descr "Ghouls are humans under the curse of Hunger. By eating the flesh of dead humans, their bodies and minds decay and transform. Pale and putrescent, they follow armies to feed on the dead and the dying. Since the Malediction, ghoulish once-soldiers can be found throughout Ulm still bearing arms and armor."
+#hp 12
+#str 12
+#mr 9
+#armor 32 -- rusty ring
+#armor 120 -- leather cap
+#montag 1077
+#end
+
+#newmonster 9159 -- ghoul lm
+#copystats 198 -- ghoul
+#spr1 "magicenhanced/blue_ghoullm1.png"
+#spr2 "magicenhanced/blue_ghoullm2.png"
+#name "Ghoul Infantry"
+#descr "Ghouls are humans under the curse of Hunger. By eating the flesh of dead humans, their bodies and minds decay and transform. Pale and putrescent, they follow armies to feed on the dead and the dying. Since the Malediction, ghoulish once-soldiers can be found throughout Ulm still bearing arms and armor."
+#hp 12
+#str 12
+#mr 9
+#armor 32 -- rusty ring
+#armor 120 -- leather cap
+#clearweapons
+#weapon 15 -- morningstar
+#montag 1077
+#end
+
+#newmonster 9160 -- ghoul lh
+#copystats 198 -- ghoul
+#spr1 "magicenhanced/blue_ghoullh1.png"
+#spr2 "magicenhanced/blue_ghoullh2.png"
+#name "Ghoul Infantry"
+#descr "Ghouls are humans under the curse of Hunger. By eating the flesh of dead humans, their bodies and minds decay and transform. Pale and putrescent, they follow armies to feed on the dead and the dying. Since the Malediction, ghoulish once-soldiers can be found throughout Ulm still bearing arms and armor."
+#hp 12
+#str 12
+#mr 9
+#armor 32 -- rusty ring
+#armor 120 -- leather cap
+#clearweapons
+#weapon 5 -- halberd
+#montag 1077
+#end
+
+#newmonster 9161 -- ghoul lcb
+#copystats 198 -- ghoul
+#spr1 "magicenhanced/blue_ghoullcb1.png"
+#spr2 "magicenhanced/blue_ghoullcb2.png"
+#name "Ghoul Crossbow"
+#descr "Ghouls are humans under the curse of Hunger. By eating the flesh of dead humans, their bodies and minds decay and transform. Pale and putrescent, they follow armies to feed on the dead and the dying. Since the Malediction, ghoulish once-soldiers can be found throughout Ulm still bearing arms and armor."
+#hp 12
+#str 12
+#mr 9
+#armor 32 -- rusty ring
+#armor 120 -- leather cap
+#clearweapons
+#weapon 43 -- claw
+#weapon 25 -- crossbow
+#montag 1077
+#end
+
+
 
 
 -- END OF NEW MONSTERS (Skip 9600~9672)
@@ -66395,9 +66555,14 @@ Only three Queens of Elemental Water are known to exist."
 -- Start of New Pretender Changes and Additions
 
 
+
+
+
+
+
+
+
 -- FOLDUNITS
-
-
 
 
 #newmonster 6523 -- Marid Sultan
@@ -75351,6 +75516,35 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #magicskill 6 1
 #end
 
+#newmonster 7604 -- Idol of the Ancient Warrior
+#copystats 3344
+#spr1 "extrapretenders/hubal.tga"
+#spr2 "extrapretenders/hubal.tga"
+#name "Idol of the Ancient Warrior"
+#descr "Long ago a great warrior was charged by the Pantokrator with protecting the people of the world. He fought well and was rewarded with Dominion over the rain and knowledge of the future. When he eventually fell his spirit was allowed to remain in this world, bound to a great idol. Each month gifts are offered in remembrance of the deeds of the past and seven mystical arrows are cast before it to divine the future. Countless offerings later and now with the Pantokrator gone, the Idol of the Ancient Warrior has the chance of putting the world under its strong dominion and becoming the True God."
+#diseaseres 100
+#gcost 130
+#homerealm 5  -- Middle East
+#startdom 4
+#pathcost 40
+#moreorder 1
+#mor 30
+#hp 150
+#prot 25
+#str 16
+#att 5
+#def 0
+#mr 18
+#mastersmith 0
+#fixedname "Hubal"
+#nobadevents 25
+#itemslots 786432
+#clearmagic
+#magicskill 0 1
+#magicskill 2 1
+#magicskill 4 1
+#end
+
 #newmonster 8491 -- Hanging Tree
 #spr1 "extrapretenders/hangingtree.tga"
 #spr2 "extrapretenders/hangingtree.tga"
@@ -76879,7 +77073,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 
 
 
-
 #selectmonster 109 -- Dagon
 #descr "The Dagon is a monster of the deeps born at the dawn of time. It is the progenitor of the Atlantian race and has been worshiped by Atlantians and humans of coastal settlements for millennia. The monster could sleep for centuries, but when it awoke earthquakes and tidal waves threatened the creation of the previous Pantokrator. The Pantokrator sent his generals into the depths to slay the monster but the Dagon devoured them all. The Pantokrator commissioned his foremost craftsman to forge a net from the intestines of seven primordial monsters. The marshal of the Celestial Host was given authority to use the net and the Word of the Pantokrator and The Dagon was finally defeated and imprisoned for millennia. Now with the Pantokrator gone, the prison is failing and the Dagon is stirring, earthquakes and tidal waves herald his awakening."
 #diseaseres 100
@@ -78024,7 +78217,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 604 -- Teotl of the Night
 #descr "The Teotl is a giant of divine heritage. During the reign of a previous Pantokrator he was the Beast of the Night, released by his master to feed on the wicked and the weak. After having eaten thousands and thousands of hearts, he grew in malice and in power. His master became worried and imprisoned the Beast for eternity. Now with the Pantokrator gone, the Beast of the Night has returned and his hunger has grown during his millennial imprisonment."
 #diseaseres 100
-#gcost 300
+#gcost 280
 #pathcost 40
 #hp 90
 #prot 3
@@ -79433,6 +79626,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #weapon 123  -- Javelin of Flight
 #weapon 1838 -- Eye Curse
 #giftofwater 500
+#prot 8
 #itemslots 991750
 #clearmagic
 #magicskill 1 1
@@ -83718,7 +83912,6 @@ He is accompanied by the souls of his subjects that have followed him into the w
 
 
 -- ENDUNITS
-
 
 
 
@@ -88059,6 +88252,10 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr2 "extrapretenders/danava2.tga"
 #end
 
+#selectmonster 1771 -- LA TC Scout
+#gcost 20
+#end
+
 #selectmonster 1773 -- Tuatha Sorceress
 #okmagicleader
 #end
@@ -88593,11 +88790,13 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #selectmonster 2025  -- Shesai Anakite
 #twiceborn 7231 -- Wight Giant
 #rpcost 96
+#holycost 1
 #end
 
 #selectmonster 2026  -- Ahiman Anakite
 #twiceborn 7231 -- Wight Giant
 #rpcost 86
+#holycost 1
 #end
 
 #selectmonster 2027  -- Adon
@@ -90618,7 +90817,16 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #gcost 10060
 #end
 
+#selectmonster 3464  -- Ifrit Warrior
+#holycost 2
+#rpcost 102
+#gcost 10110
+#armor 223
+#minsizeleader 4
+#end
+
 #selectmonster 3465  -- Ifrit Sultan
+#holycost 2
 #clearmagic -- Removing Astral random from Ifrit
 #magicskill 0 4 -- f
 #magicskill 1 2 -- a
@@ -110413,7 +110621,15 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 3
 #homemon 1224 -- wolf
 #homemon 694 -- bear
-#homemon 198 -- ghoul
+--#homemon 198 -- ghoul
+--#homemon 9154 -- pc
+--#homemon 9157 -- pcb
+--#homemon 9159 -- lm
+--#homemon 9160 -- lh
+#homemon 9158 -- lc
+#homemon 9161 -- lcb
+#homemon 9155 -- pm
+#homemon 9156 -- ph
 #homemon 1020 -- ghoul guard
 --#homemon 7532 -- vamp rider
 #homecom 7668 -- infiltrator
@@ -112180,6 +112396,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 9
 #look 2
 #homecom 3231
+#homecom 9152
+#homecom 9153
 #end
 
 #newsite 2520
@@ -117621,6 +117839,8 @@ Priests: Average"
 #addgod 8428 -- Triglav
 #cheapgod20 8492 -- Idol of Thunder
 
+#moreluck 1
+
 #startsite "Burkhan Khaldun"
 #startsite "Ikh Khorig"
 
@@ -121858,6 +122078,8 @@ Bless bonuses: Poison Resistance +10"
 #futuresite "LA Mictlan Summons Continued"
 #futuresite "LA Mictlan Heroes"
 
+#coastnation
+
 #end
 
 #selectnation 109 -- T'ien C'hi
@@ -122214,6 +122436,9 @@ Temperature shifts more in forts during summer and winter."
 #end
 
 #selectnation 96
+#hero1 3231 -- Steropes
+#hero2 9152 -- Polyphemus
+#hero3 9153 -- Aristaeus
 #uwbuild 1
 #delgod 8406 -- Titan of the Sun
 #delgod 8407 -- Titan of War and Farming
@@ -128111,20 +128336,6 @@ Can only be cast once per combat round."
 #onlyatsite 29  -- The Ruined Keep
 #end
 
-#selectspell 2479
-#copyspell 1113 -- Reanimation
-#name "Dark Hunger"
-#descr "In Ulm the curse that drives men to become ghouls is well known due to the Malediction. The caster curses a group of humanoids with unholy hunger, transforming them into ghouls that will serve his will. More powerful Necromancers can curse more beings with each casting."
-#researchlevel 2
-#school 1
-#pathlevel 0 2
-#damage 198  -- Ghoul
-#nreff 3010 -- 16+++
-#fatiguecost 300
-#spec 0
-#restricted 101 -- LA Ulm
-#end
-
 #selectspell 2480
 #copyspell 935 -- Pack of Wolves
 #name "Summon Wolfpack"
@@ -128165,6 +128376,20 @@ Can only be cast once per combat round."
 #restricted 101 -- LA Ulm
 #end
 
+#selectspell 2479
+#copyspell 1113 -- Reanimation
+#name "Dark Hunger"
+#descr "In Ulm the curse that drives men to become ghouls is well known due to the Malediction. The caster curses a group of soldiers with unholy hunger, transforming them into ghouls that will serve his will. More powerful Necromancers can curse more beings with each casting."
+#researchlevel 2
+#school 1
+#pathlevel 0 2
+#damage -1077  -- Armored Ghoul
+#nreff 3009 -- 15+++
+#fatiguecost 500
+#spec 0
+#restricted 101 -- LA Ulm
+#end
+
 #selectspell 2483
 #copyspell 1113 -- Reanimation
 #name "Curse Township"
@@ -128173,9 +128398,9 @@ Can only be cast once per combat round."
 #researchlevel 6
 #school 1
 #pathlevel 0 3
-#damage 198  -- Ghoul
-#nreff 5085
-#fatiguecost 1500
+#damage -1077  -- Ghoul
+#nreff 5085 -- 100+5
+#fatiguecost 2000
 #spec 0
 #nextspell 1401 -- Blood Feast
 #restricted 101 -- LA Ulm
@@ -130776,7 +131001,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #researchlevel 0
 #effect 10001
 #nreff 25
-#damage -1049  -- Soulless
+#damage -1  -- Soulless
 #end
 
 #selectspell 2667
@@ -143276,6 +143501,7 @@ All effects scale with friendly Dominion."
 #nreff 2002
 #restricted 191 -- Tartary
 #sound 43  -- Raise Dead
+#nextspell 4163 -- Spirit Blessing
 #end
 
 #selectspell 3596
@@ -155569,6 +155795,7 @@ Can only be cast once per combat round."
 #type 8
 #mainpath 6
 #mainlevel 2
+#itemcost1 -50
 #secondarypath -1
 #secondarylevel 0
 #inspirational 1
@@ -165891,8 +166118,8 @@ This will also prevent their skin from drying out."
 #decscale2 1
 #landprod 10
 #kill 2
-#fireboost -1049
-#deathboost -1049
+#fireboost -1
+#deathboost -1
 #end
 
 #newevent
@@ -165902,8 +166129,8 @@ This will also prevent their skin from drying out."
 #req_unique 1
 #notext
 #nolog
-#earthboost -1049
-#bloodboost -1049
+#earthboost -1
+#bloodboost -1
 #end
 
 #newevent
@@ -172179,7 +172406,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #msg "Through the power of the Gates of Death your Augur Elder has died and become a spectral creature!"
 #nolog
 #transform 253  -- Dusk Elder
-#deathboost -1049
+#deathboost -1
 #end
 
 #newevent
@@ -174663,8 +174890,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targorder 33  -- Blood Sacrifice
 #req_targnopath4 9
 #msg "The Holy Spirit has manifest and entered your Priest! They are filled with the power of the Lord. [Foundation Stone]"
-#bloodboost -1049
-#holyboost -1049
+#bloodboost -1
+#holyboost -1
 #notext
 #end
 
