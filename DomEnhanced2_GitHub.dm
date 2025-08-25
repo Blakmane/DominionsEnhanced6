@@ -11501,7 +11501,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #end
 
 #newmonster 6757
-#name "Enslaved Club Warrior"
+#name "Enslaved Slinger"
 #nametype 182
 #descr "When the white giants arrived they quickly conquered and enslaved the surrounding tribes. Now each tribe must provide warriors for the armies of Sitecah or else face the wrath of their masters. Entire tribes have been slain and devoured for failing to meet the quota of warriors and so there is no shortage of volunteers. Each warrior crafts their own armor, which is usually made from bone or hide, and wield spears, clubs, and axes. Although capable fighters they have little loyalty to the giants and they will rarely fight to the death."
 #spr1 "nahullo/nazcaslaveclubs.tga"
@@ -39490,7 +39490,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #amphibian
 #fireres -5
 #pillagebonus 1
-#darkvision 50
+#darkvision 100
 #nametype 117
 #landshape 7989
 #end
@@ -39521,7 +39521,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #maxage 1000
 #startage 30
 #amphibian
-#darkvision 50
+#darkvision 100
 #darkpower 2
 #fireres -5
 #pillagebonus 1
@@ -39556,7 +39556,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #maxage 1000
 #startage 30
 #amphibian
-#darkvision 50
+#darkvision 100
 #fireres -5
 #pillagebonus 1
 #nametype 117
@@ -39590,7 +39590,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #maxage 1000
 #startage 30
 #amphibian
-#darkvision 50
+#darkvision 100
 #darkpower 2
 #fireres -5
 #pillagebonus 1
@@ -39627,7 +39627,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #amphibian
 #fireres -5
 #pillagebonus 1
-#darkvision 50
+#darkvision 100
 #nametype 117
 #landshape 7993
 #end
@@ -39659,7 +39659,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #maxage 1000
 #startage 30
 #amphibian
-#darkvision 50
+#darkvision 100
 #darkpower 2
 #fireres -5
 #pillagebonus 1
@@ -40702,7 +40702,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "dragonkings/dkdragson2.tga"
 #name "Nu Kua"
 #descr "Occasionally the Dragon Kings and their descendants take human form and dally with mortals. The children of these unions are known as the Nu Kua, Dragonblooded, and are at home both above and below the waves. Stronger and faster than most mortals, they often journey to the Dragon Courts upon learning of their divine heritage. There they are trained as elite warriors in the service of the Dragon Kings. When in mortal danger they can temporarily take draconic form. The descendants of the Dragon Kings are sacred to the halfmen of the Dragon Courts."
-#rpcost 46
+#rpcost 52
 #gcost 10050
 #hp 12
 #mr 13
@@ -40728,7 +40728,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #descr "Occasionally the Dragon Kings and their descendants take human form and dally with mortals. The children of these unions are known as the Nu Kua, Dragonblooded, and are at home both above and below the waves. Stronger and faster than most mortals, they often journey to the Dragon Courts upon learning of their divine heritage. There they are trained as elite warriors in the service of the Dragon Kings. When in mortal danger they can temporarily take draconic form. The descendants of the Dragon Kings are sacred to the halfmen of the Dragon Courts."
 #rpcost 48
 #gcost 50
-#holycost 2
 #prot 6
 #hp 18
 #mr 13
@@ -40898,7 +40897,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #descr "Occasionally the Dragon Kings and their descendants take human form and dally with mortals. The children of these unions are known as the Nu Kua and are at home both above and below the waves. Stronger and faster than most mortals, they often journey below the waves upon learning of their divine heritage. The most skilled become great leaders of the halfmen armies against the tritons of Pelagia. When in mortal danger they can temporarily take draconic form. The descendants of the Dragon Kings are sacred to the halfmen of the Dragon Courts."
 #rpcost 1
 #gcost 100
-#holycost 2
 #hp 16
 #mr 14
 #str 12
@@ -40925,7 +40923,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #descr "Occasionally the Dragon Kings and their descendants take human form and dally with mortals. The children of these unions are known as the Nu Kua and are at home both above and below the waves. Stronger and faster than most mortals, they often journey below the waves upon learning of their divine heritage. The most skilled become great leaders of the halfmen armies against the tritons of Pelagia. When in mortal danger they can temporarily take draconic form. The descendants of the Dragon Kings are sacred to the halfmen of the Dragon Courts."
 #rpcost 1
 #gcost 100
-#holycost 2
 #prot 6
 #hp 18
 #mr 14
@@ -56166,6 +56163,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #gcost 0
 #mr 15
 #mor 16
+#pooramphibian
 #clearweapons
 #clearmagic
 #weapon 7 -- staff
@@ -56317,6 +56315,47 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #weapon 43 -- claw
 #weapon 25 -- crossbow
 #montag 1077
+#end
+
+#newmonster 9162 -- vampire knight
+#spr1 "magicenhanced/selg_vampireknight1.png"
+#spr2 "magicenhanced/selg_vampireknight2.png"
+#name "Vampire Knight"
+#descr "Vampires are immortal thralls created by a vampire lord. They lack the magical powers of their master, but are very difficult to slay without magical weapons. If killed they will reform in their home province. Vampires are totally unable to enter underwater provinces. The Vampire Lords of Ulm acquire their servants from the ranks of Knights and other infantry and equip them in heavy armor. Their heavy armor hides their face from civilians but they are not expected to infiltrate other lands."
+#hp 16
+#str 15
+#att 12
+#def 12
+#mr 14
+#size 3
+#mor 18
+#prec 11
+#ap 14
+#gcost 0
+#mapmove 20
+#flying
+#undead
+#enc 0
+#maxage 500
+#startage 187
+#fireres -5
+#coldres 15
+#poisonres 25
+#darkvision 100
+#invulnerable 25
+#immortal
+#uwdamage 100
+#undregen 10
+#slashres
+#bluntres
+#noriverpass
+#neednoteat
+#magicskill 8 1
+#custommagic 4096 50 -- 50%D 
+#armor 19 -- full plate
+#armor 21 -- full helmet
+#weapon 63 -- Life Drain
+#weapon 8 -- Broad Sword
 #end
 
 
@@ -89683,8 +89722,8 @@ Cost 28 RP."
 #selectmonster 2587 -- Zhayedan
 #descr "The Zhayedan, Immortals, is a Turan sacred elite force of limited numbers, replaced only when one of their numbers is slain. Once they were an infantry unit, but with the increasing interest in mounted warfare and the acquisition of gryphons from a tribe of Amazons, the Immortals became an airborne cavalry unit of unequaled power. If the Zhayedan is killed, his gryphon will fight on, and if the gryphon is returned to Ragha another Zhayedan will mount the riderless Gryphon. Zhayedan cannot be recruited if the province is cold."
 #heatrec 0
-#holycost 1
-#rpcost 45 -- 76
+--#holycost 1
+#rpcost 37 -- 68
 #end
 
 #selectmonster 3546 -- Zhayedan Gryphon
@@ -89718,6 +89757,8 @@ Cost 28 RP."
 #mr 13 -- +1
 #bodyguard 3
 #coldrec 0
+#gcost 10020
+#rpcost 30
 #end
 
 
@@ -110632,6 +110673,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 9156 -- ph
 #homemon 1020 -- ghoul guard
 --#homemon 7532 -- vamp rider
+#homemon 9162 -- vampire knight
 #homecom 7668 -- infiltrator
 #end
 
@@ -113865,6 +113907,42 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 4060
 #end
 
+
+#newsite 2603
+#name "Turan Reign"
+#level 9
+#rarity 5
+#path 0
+#look 4
+#decscale 2 -- Heat
+#end
+
+#newsite 2604
+#name "Airya Reign"
+#level 9
+#rarity 5
+#path 2
+#look 4
+#incscale 2 -- Cold
+#end
+
+#newsite 2607 -- 
+#name "Airyas Rule"
+#level 0
+#rarity 5
+#path 2
+#look 4
+#goddomcold 1
+#end
+
+#newsite 2608 -- 
+#name "Turans Rule"
+#level 0
+#rarity 5
+#path 0
+#look 4
+#goddomcold -1
+#end
 
 -- END OF NEW SITES
 
@@ -122397,9 +122475,9 @@ Priests: Powerful, can perform blood sacrifices"
 #summary "Race: Flying, cold resistant, heat resistant, do not suffer as much from heat or cold
 Military: Flying units, gryphon riders
 Magic: Air, Water, Astral, Fire, Death and Blood
-Priests: Average, Guardian spirits, Temples expensive but generate fire gems.
+Priests: Average, Guardian spirits, Temples expensive but generate fire gems and add to sacred recruitment limit.
 Temples slowly spread Heat scales if a Dastur is preaching at it, or Cold scales for a Zaotar.
-Temperature shifts more in forts during summer and winter."
+Cold dominions are affected more by Summer and Warm dominions are affected more by Winter."
 
 #hero1 2639  -- Fatherslayer
 #hero2 8249 -- Bowman
@@ -122410,6 +122488,7 @@ Temperature shifts more in forts during summer and winter."
 #futuresite "Yazatas"
 #futuresite "Daevas"
 #futuresite "LA Ragha Heroes"
+#templeholypoints 1
 #fortheatscaleres 1
 #fortcoldscaleres 1
 #end
@@ -125151,7 +125230,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #details "Plant beings only, Growth +2. Duration: Until end of this year."
 #school 4
 #researchlevel 5
-#effect 10140
+#effect 10085
 #path 0 6
 #path 1 0
 #pathlevel 0 3
@@ -126138,7 +126217,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #school -1
 #researchlevel 0
 #effect 10042
-#damage 46
+#damage 285 -- Ench85 -- Cleanse Well of Pestilence
 #fatiguecost 0
 #nreff 1
 #nextspell 3709
@@ -127756,7 +127835,7 @@ Can only be cast once per combat round."
 #path 0 0
 #pathlevel 0 1
 #path 1 9
-#effect 10140
+#effect 10085
 #pathlevel 1 2
 #fatiguecost 1000
 #restricted 8 -- EA Ermor
@@ -128093,12 +128172,14 @@ Can only be cast once per combat round."
 #selectspell 2463
 #copyspell 1204 -- Dome of Arcane Warding
 #name "Summon the Ancestor Spirits"
-#descr "The caster summons the spirits of ancient Ulmish swordsmen and shamen to train and prepare the living. The spirits will walk amongst the living, providing great insight and knowledge to commanders in the province. The spirits of the dead will defend the capital against attack, and will impart wisdom in combat and magic. The spell will last until the turning of the year, however if the caster dies or the province falls to the enemy it will immediately be dispelled. This spell can only be cast at the Wheel of Pain in Ulm."
+#descr "The caster summons the spirits of ancient Ulmish swordsmen and shamen to train and prepare the living. The spirits will walk amongst the living, providing great insight and knowledge to commanders in the province. The spirits of the dead will defend the capital against attack, and will impart wisdom in combat and magic. The spell will last until the turning of the year. This spell can only be cast at the Wheel of Pain in Ulm."
+#school 4
 #researchlevel 5
 #path 0 5
-#effect 10140
+#pathlevel 0 4
+#effect 10085
 #fatiguecost 1500
-#damage 172  -- Summon Ancestor Spirits
+#damage 286 -- Ench86 -- Summon Ancestor Spirits
 #onlyatsite 82  -- Wheel of Pain.
 #restricted 13 -- EA Ulm
 #end
@@ -132723,7 +132804,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #pathlevel 0 2
 #pathlevel 1 2
 #spec 0
-#effect 10140
+#effect 10085
 #fatiguecost 1200
 #damage 189  -- Alfablot
 #restricted 30 -- EA Vanheim
@@ -133025,7 +133106,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 1
 #path 1 9
 #pathlevel 1 1
-#effect 10140
+#effect 10085
 #fatiguecost 200
 #restricted 31 -- EA Helheim
 #end
@@ -134735,7 +134816,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #school 4
 #path 0 2
 #path 1 9
-#effect 10140
+#effect 10085
 #fatiguecost 600
 #restricted 19 -- Ur
 #restricted 66  -- Uruk
@@ -142704,7 +142785,7 @@ All effects scale with friendly Dominion."
 #details "Growth +2. Duration: Until end of this year."
 #school 4
 #researchlevel 3
-#effect 10140
+#effect 10085
 #path 0 2
 #path 1 6
 #fatiguecost 600
@@ -151768,6 +151849,16 @@ This spell can only be cast in a deep water province."
 #provrange 0
 #end
 
+#selectspell 4293 -- Ulm blood rite
+#copyspell 1425 -- Blood Rite
+#name "Summon Vampire Knight"
+#descr "The caster summons a Vampire Knight from the ranks of the Vampire Lords of Ulm. Their servants are acquired from the ranks of Knights and other infantry and come equipped in heavy armor. The heavy armor hides their face from civilians but they are not expected to infiltrate other lands."
+#fatiguecost 1000
+#damage 9162
+#restricted 101 -- LA Ulm
+#end
+
+
 
 -- END OF NEW SPELLS
 
@@ -158067,7 +158158,7 @@ This will also prevent their skin from drying out."
 #type 1
 #weapon 1626  -- Axe of the Berserker
 #quickness
-#bers
+#autoberserk 1
 #end
 
 #selectitem 813
@@ -168943,7 +169034,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #addequip 1
 #1d6units 405  -- Vampire
 #2d6units 1022  -- Thrall
-#3d6units 198  -- Ghoul
+#1d6units -1077  -- Ghoul
+#2d6units 198  -- Ghoul
 #end
 
 #newevent
@@ -172241,7 +172333,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #end
 
 #newevent
-#req_ench 162  -- Cleanse Well of Pestilence
+#req_ench 285 -- Ench85 -- Cleanse Well of Pestilence
 #rarity 5
 #req_site 1
 #req_pop0ok
@@ -174011,8 +174103,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #newevent
 #rarity 5
 #req_fornation 13 -- EA_Ulm
-#req_ench 172
-#req_freesites 1
+#req_ench 286 -- Ench86 -- Summon Ancestor Spirits
 #req_nositenbr 2138 -- Ancestor Spirits
 #msg "Ancestor Spirits appear."
 #notext
@@ -174023,7 +174114,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #newevent
 #rarity 5
 #req_fornation 13 -- EA_Ulm
-#req_noench 172
+#req_noench 286 -- Ench86 -- Summon Ancestor Spirits
 #req_site 1  -- Ancestor Spirits
 #msg "Ancestor Spirits disappear. [Ancestor Spirits]"
 #notext
@@ -174036,7 +174127,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_rare 25
 #req_fornation 13 -- EA_Ulm
 #nation 13 -- EA Ulm
-#req_ench 172
+#req_ench 286 -- Ench86 -- Summon Ancestor Spirits
 #msg "A few ancestor spirits have appeared to aid their descendants in the battle for ascension."
 #1d3units 7408  -- Spirit Warriors
 #nolog
@@ -174047,7 +174138,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_rare 20
 #req_fornation 13 -- EA_Ulm
 #nation 13 -- EA Ulm
-#req_ench 172
+#req_ench 286 -- Ench86 -- Summon Ancestor Spirits
 #msg "The spirit of an ancient warrior has appeared to aid in the battle for ascension"
 #com 7408 -- Spirit Warrior
 #nolog
@@ -174058,7 +174149,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_rare 10
 #req_fornation 13 -- EA_Ulm
 #nation 13 -- EA Ulm
-#req_ench 172
+#req_ench 286 -- Ench86 -- Summon Ancestor Spirits
 #msg "The spirit of an ancient shaman has appeared to aid in the battle for ascension"
 #com 7499 -- Spirit Shaman
 #nolog
@@ -174070,7 +174161,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targgod 0
 #req_fornation 13 -- EA_Ulm
 #nation 13 -- EA Ulm
-#req_ench 172
+#req_ench 286 -- Ench86 -- Summon Ancestor Spirits
 #msg "The spirit of an ancient warrior has appeared to your commander and instructed them in combat."
 #xp 100
 #nolog
@@ -174082,7 +174173,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_unique 2
 #req_targpath1 5
 #req_fornation 13 -- EA_Ulm
-#req_ench 172
+#req_ench 286 -- Ench86 -- Summon Ancestor Spirits
 #msg "The spirit of an ancient shaman has appeared to your mage and instructed them in the ways of the spirits."
 #pathboost 5
 #nolog
@@ -174094,7 +174185,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_unique 2
 #req_targmnr 1159  -- Master Smith
 #req_fornation 13 -- EA_Ulm
-#req_ench 172
+#req_ench 286 -- Ench86 -- Summon Ancestor Spirits
 #msg "The spirit of an ancient warrior has appeared to your smith and instructed them in ancient forging techniques."
 #assassin 7498 -- Smith Ancestor
 #nolog
@@ -174106,7 +174197,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_unique 2
 #req_targmnr 1160  -- Shaman
 #req_fornation 13 -- EA_Ulm
-#req_ench 172
+#req_ench 286 -- Ench86 -- Summon Ancestor Spirits
 #msg "The spirit of an ancient hero has appeared to your shaman and instructed them in ancient magical techniques."
 #assassin 7506 -- Shaman Ancestor
 #nolog
@@ -174118,7 +174209,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_unique 1
 #req_targmnr 1161  -- Antlered Shaman
 #req_fornation 13 -- EA_Ulm
-#req_ench 172
+#req_ench 286 -- Ench86 -- Summon Ancestor Spirits
 #msg "The spirit of an ancient hero has appeared to your shaman and instructed them in ancient magical techniques."
 #assassin 7506 -- Shaman Ancestor
 #nolog
@@ -182556,32 +182647,6 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 
-#newevent -- Summer heat
-#rarity 5
-#req_fornation 105 -- Ragha
-#req_cold -2 -- 2 heat or colder
-#req_fort 1 -- only in forts
-#msg "Heat in summer."
---#header 2
-#notext
-#nolog
-#req_month 2 -- Early summer
-#decscale 2 -- Heat
-#end
-
-#newevent -- Winter cold
-#rarity 5
-#req_fornation 105 -- Ragha
-#req_heat -2 -- 2 cold or hotter
-#req_fort 1 -- only in forts
-#msg "Cold in winter."
---#header 2
-#notext
-#nolog
-#req_month 8 -- Early winter
-#incscale 2 -- Cold
-#end
-
 #newevent -- Remove heat site
 #rarity 5
 #req_site 1
@@ -182660,57 +182725,79 @@ It is now fully repaired and a new crew has been assigned to it."
 #incscale2 2 -- Cold
 #end
 
-#newevent -- Mid summer heat
+#newevent -- Summer heat announcement
 #rarity 5
 #req_fornation 105 -- Ragha
-#req_cold -2 -- 2 heat or colder
-#req_fort 1 -- only in forts
-#msg "Heat in summer."
---#header 2
-#notext
+#req_owncapital 1
+#req_cold -1 -- 1 heat or colder
+#msg "Summer has arrived in Ragha, and with it the rule of the Turan."
+#header 2
 #nolog
-#req_month 3 -- Mid summer
+#req_month 2 -- Early summer
 #decscale 2 -- Heat
+#addsite 2608
 #end
 
-#newevent -- Mid winter cold
+#newevent -- Winter cold announcement
 #rarity 5
 #req_fornation 105 -- Ragha
-#req_heat -2 -- 2 cold or hotter
-#req_fort 1 -- only in forts
-#msg "Cold in winter."
---#header 2
-#notext
+#req_owncapital 1
+#req_heat -1 -- 1 cold or hotter
+#msg "Winter has arrived in Ragha, and with it the rule of the Airya."
+#header 2
 #nolog
-#req_month 9 -- Mid winter
-#incscale 2 -- Cold
+#req_month 8 -- Early winter
+#incscale 1 -- Cold
+#addsite 2607
 #end
 
---#newevent -- Late summer heat
---#rarity 5
---#req_fornation 105 -- Ragha
---#req_cold -1 -- 1 heat or colder
---#req_fort 1 -- only in forts
---#msg "Heat in summer."
-----#header 2
---#notext
---#nolog
---#req_month 4 -- Late summer
---#decscale 2 -- Heat
---#end
+#newevent -- Summer ended announcement
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_owncapital 1
+#req_site 1
+#msg "Summer has ended in Ragha. [Turans Rule]"
+--#header 2
+#nolog
+#notext
+#req_month 5 -- After summer
+#removesite 2608
+#end
 
---#newevent -- Late winter cold
---#rarity 5
---#req_fornation 105 -- Ragha
---#req_heat -1 -- 1 cold or hotter
---#req_fort 1 -- only in forts
---#msg "Cold in winter."
-----#header 2
---#notext
---#nolog
---#req_month 10 -- Late winter
---#incscale 2 -- Cold
---#end
+#newevent -- Winter ended announcement
+#rarity 5
+#req_fornation 105 -- Ragha
+#req_owncapital 1
+#req_site 1
+#msg "Winter has ended in Ragha. [Airyas Rule]"
+--#header 2
+#nolog
+#notext
+#req_month 11 -- After winter
+#removesite 2607
+#end
+
+#newevent -- Summer ends if not ragha
+#rarity 5
+#req_notfornation 105 -- Ragha
+#req_site 1
+#msg "Summer has ended in Ragha. [Turans Rule]"
+#nolog
+#notext
+#removesite 2608
+#end
+
+#newevent -- Winter ends if not ragha
+#rarity 5
+#req_notfornation 105 -- Ragha
+#req_site 1
+#msg "Winter has ended in Ragha. [Airyas Rule]"
+#nolog
+#notext
+#removesite 2607
+#end
+
+
 
 
 #newevent -- Fort Destroy --
