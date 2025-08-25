@@ -89159,8 +89159,15 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectmonster 2262  -- Colossi Warrior
+#spr1 "vanilla/colossiwarrior1.png"
+#spr2 "vanilla/colossiwarrior2.png"
+#name "Sacred Band Colossi"
+#descr "More than a generation ago a new power emerged in the Phoenix Empire. Refugees from a distant kingdom arrived with claims of divine heritage. Called 'Colossi' by the historians of Arcoscephale, they are truly superior to ordinary men. Where most of the infantry of Berytos is made up of humans, the Sacred Band Colossi are elite soldiers that report directly to and guard the Queens of Berytos. They are trained from an early age to be tough phalanx spearmen, and in organized conflict they fight in a dense formation with long spears. The Colossi serve as bodyguards of the Brides and are most often seen guarding the Temple of Storms and Flames or in the numerous sacred processions, otherwise training for the day their unit is called to war."
 #bodyguard 3
 #gcost 10025
+#formationfighter 2
+#clearweapons
+#weapon 28 -- longspear
 #end
 
 #selectmonster 2263  -- Berytos Mage Pilot 110g
@@ -110675,6 +110682,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 --#homemon 7532 -- vamp rider
 #homemon 9162 -- vampire knight
 #homecom 7668 -- infiltrator
+#homecom 7822 -- Vampire Count
 #end
 
 #newsite 2411
@@ -151853,9 +151861,22 @@ This spell can only be cast in a deep water province."
 #copyspell 1425 -- Blood Rite
 #name "Summon Vampire Knight"
 #descr "The caster summons a Vampire Knight from the ranks of the Vampire Lords of Ulm. Their servants are acquired from the ranks of Knights and other infantry and come equipped in heavy armor. The heavy armor hides their face from civilians but they are not expected to infiltrate other lands."
-#fatiguecost 1000
+#fatiguecost 1100
+#researchlevel 5
 #damage 9162
 #restricted 101 -- LA Ulm
+#end
+
+#slectspell 4294
+#copyspell 1444 -- Curse of Blood
+#name "Summon Vampire Count"
+#descr "During the Malediction, evil was let loose in the kingdom. The Hunger that was aroused resulted in cannibalism and practices even worse. Some of the warring nobles succumbed and became Vampires thirsting for human blood. Most of them have disappeared or fallen into perpetual sleep since then, but if enough blood is sacrificed, they might well awaken and serve the Dark God of Ulm. While some of the Vampire Lords are easier to awaken or persuade into service, most are in a deep slumber and require a greater sacrifice to awaken."
+#researchlevel 6
+#restricted 101 -- LA Ulm
+#pathlevel 0 2
+#pathlevel 1 3
+#damage 7822 -- Vampire Count
+#fatiguecost 7800
 #end
 
 
@@ -154566,9 +154587,18 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #fatiguecost 1500
 #end
 
+#selectspell 1425 -- Blood Rite
+#fatiguecost 2200
+#nreff 2
+#end
+
 #selectspell 1423 -- Ritual of Five Gates
 #fatiguecost 2500
 #pathlevel 0 4
+#end
+
+#selectspell 1444 -- Curse of Blood
+#notfornation 101 -- LA Ulm
 #end
 
 #selectspell 1445 -- Improved Cross Breeding
@@ -173175,7 +173205,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #msg "Ghoul creation"
 #nation -2
 #kill 1
-#1d6units 198  -- Ghoul
+#1d3units 198  -- Ghoul
+#1d3units -1077  -- Ghoul
 #notext
 #nolog
 #end
@@ -173191,7 +173222,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_pop0ok
 #msg "Ghoul creation"
 #nation -2
-#1d3units 198  -- Ghoul
+#1d3units -1077  -- Ghoul
 #notext
 #nolog
 #end
