@@ -151867,16 +151867,16 @@ This spell can only be cast in a deep water province."
 #restricted 101 -- LA Ulm
 #end
 
-#slectspell 4294
+#selectspell 4294
 #copyspell 1444 -- Curse of Blood
 #name "Summon Vampire Count"
 #descr "During the Malediction, evil was let loose in the kingdom. The Hunger that was aroused resulted in cannibalism and practices even worse. Some of the warring nobles succumbed and became Vampires thirsting for human blood. Most of them have disappeared or fallen into perpetual sleep since then, but if enough blood is sacrificed, they might well awaken and serve the Dark God of Ulm. While some of the Vampire Lords are easier to awaken or persuade into service, most are in a deep slumber and require a greater sacrifice to awaken."
 #researchlevel 6
-#restricted 101 -- LA Ulm
 #pathlevel 0 2
 #pathlevel 1 3
 #damage 7822 -- Vampire Count
 #fatiguecost 7800
+#restricted 101 -- LA Ulm
 #end
 
 
