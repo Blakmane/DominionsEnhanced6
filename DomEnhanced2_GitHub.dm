@@ -33348,6 +33348,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #siegebonus 50
 #batstartsum1d6 7678 -- Kheshig
 #userestricteditem 1
+#montag 1078 -- TC Khans
 #end
 
 #newmonster 7678
@@ -33357,13 +33358,13 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #unmountedspr1 "magicenhanced/un_eekheshig.tga"
 #unmountedspr2 "magicenhanced/un_eekheshig2.tga"
 #name "Kheshig"
-#descr "The Kheshig are the elite barbarian cavalry of T'ien Ch'i. Armed with bows and lances, they are sworn to protect the Great Khan at all costs. Members of the Kheshig outrank almost any other officers in the Tien Chi Empire. They are renowned for their hardiness and can travel for a full month living only on the fermented milk and blood of their sturdy steeds."
+#descr "The Kheshig are the elite barbarian cavalry of T'ien Ch'i. Armed with bows and lances, they are sworn to protect the Great Khan at all costs. Members of the Kheshig outrank almost any other officers in the Tien Chi Empire. They are renowned for their hardiness and can travel for a full month living only on the fermented milk and blood of their sturdy steeds. Kheshig can only be recruited when a Great Khan or Khagan is present."
 #gcost 25
 #rcost 1
 #enc 4
 #neednoteat
 #bodyguard 4
-#monpresentrec 7677 -- Great Khan
+#monpresentrec -1078 -- TC Great Khans
 #end
 
 #newmonster 7679
@@ -46456,6 +46457,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #maxage 60
 #summon2 7678 -- Kheshig
 #batstartsum2d6 7678 -- Kheshig
+#montag 1078 -- TC Khans
 #end
 
 #newmonster 8235
@@ -86573,6 +86575,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 930  -- Khan
+#descr "With the barbarian invasion came new leadership and the Imperial Family was replaced by Barbarian Kings. The Khans come from the steppes and are skilled horsemen and warriors. They often fight side by side with their soldiers and their bravery and skill can inspire the most cowardly barbarian into deeds of heroic bravery. The first Khan to take up the Tug banner will become the Great Khan of the entire empire, able to raise the Kheshig elite Imperial Guard."
 #userestricteditem 1
 #end
 
@@ -126836,8 +126839,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #end
 
 #selectspell 2363
-#copyspell 1389 -- Agony
-#name "Channel Divine Agony"
+#copyspell 1419 -- Harm
+#name "Channel Divine Harm"
 #descr "The priest calls upon the power of the true God to empower their own skills in Blood magic. The Gods power flows through them and erupts as a torrent of pure agony. Channelling the power of a God in this way is somewhat tiring to the priest."
 #researchlevel 0
 #school 7
@@ -148513,28 +148516,6 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #end
 
 
-
-#selectspell 4056
-#name "The Stars are Right"
-#descr "Deep in the city of R'lyeh lies the High Priest of the Starspawn, an eldritch monstrosity that has lain Dead yet Dreaming for millenia. When the stars are right once more it will awaken and the world shall tremble. The caster uses Astral magic to cause a great conjunction which will rouse the slumbering behemoth. This is a terrible omen and great unrest will sweep the world. The awakening will cause dreams of the void to afflict the sensitive in every corner of the world and human-illithid hybrids will be born across the land. Reality itself will falter and creatures from Outside will appear to serve the High Priest of the Dreaming God. If the enchantment is ended, however, the creature will return to a long death-slumber in R'lyeh. This enchantment lasts until someone dispels it or the caster dies."
-#details "Unrest +30 worldwide when cast. 10% chance of Baleful Star in every hostile province each month. Summons K'lullu Unique Commander in capital who is immortal as long as spell remains. If dispelled K'lullu immediately returns to his slumber."
-#school 4
-#researchlevel 8
-#path 0 4
-#path 1 2
-#pathlevel 0 6
-#pathlevel 1 2
-#effect 10081
-#damage 228 -- Ench28
-#nreff 1
-#spec 41943040  -- UW Only
-#fatiguecost 5500
-#onlyatsite 2222  -- Void Rift
-#restricted 231 -- LA R'lyeh
-#nextspell 3056
-#end
-
-
 #selectspell 4057
 #copyspell 781 -- Cheat Fate
 #name "Weave Fate"
@@ -150178,7 +150159,7 @@ Applies the effects of Holy Avenger to the caster"
 #end
 
 #selectspell 4162
-#name "The Stars are Right"
+#name "The Stars are Right "
 #descr "Deep in the city of R'lyeh lies the High Priest of the Starspawn, an eldritch monstrosity that has lain Dead yet Dreaming for millenia. When the stars are right once more it will awaken and the world shall tremble. The caster uses Astral magic to cause a great conjunction which will rouse the slumbering behemoth. This is a terrible omen and great unrest will sweep the world. The awakening will cause dreams of the void to afflict the sensitive in every corner of the world and human-illithid hybrids will be born across the land. Reality itself will falter and creatures from Outside will appear to serve the High Priest of the Dreaming God. If the enchantment is ended, however, the creature will return to a long death-slumber in R'lyeh. This enchantment lasts until someone dispels it or the caster dies."
 #details "Unrest +30 worldwide when cast. 10% chance of Baleful Star in every hostile province each month. Summons K'lullu Unique Commander in capital who is immortal as long as spell remains. If dispelled K'lullu immediately returns to his slumber."
 #school 4
