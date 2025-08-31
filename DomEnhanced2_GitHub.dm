@@ -123928,22 +123928,20 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #onlygeosrc 4096  -- Cave
 #end
 
---Commented out as spelleffect 221 is no longer functional
-
---#selectspell 2108
---#name "Power of the Healing Water"
---#descr "The caster weaves a permanent enchantment around themselves to draw on the healing power of water, the source of all life. --Whilst underwater the caster will heal at an incredible rate. This spell can only be cast underwater."
---#details "Grants Regeneration 10% whilst underwater"
---#school 4
---#researchlevel 4
---#path 0 2
---#pathlevel 0 3
---#effect 10509  -- +10
---#nreff 1
---#damage 221  -- UW Regen
---#fatiguecost 800
---#spec 41943040  -- UW Only
---#end
+#selectspell 2108
+#name "Power of the Healing Water"
+#descr "The caster weaves a permanent enchantment around themselves to draw on the healing power of water, the source of all life. Whilst underwater the caster will heal at an incredible rate. This spell can only be cast underwater."
+#details "Grants Regeneration 10% whilst underwater"
+#school 4
+#researchlevel 4
+#path 0 2
+#pathlevel 0 3
+#effect 10509  -- +10
+#nreff 1
+#damage 1067  -- UW Regen
+#fatiguecost 800
+#spec 41943040  -- UW Only
+#end
 
 #selectspell 2110
 #copyspell 819 -- Group Barkskin
