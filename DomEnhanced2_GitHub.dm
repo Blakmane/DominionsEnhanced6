@@ -84922,7 +84922,7 @@ Initiates of the Deep can be recruited in any land fort."
 #name "Hero"
 #gcost 1
 #rcost 1
-#size 5
+#size 3
 #hp 23  -- base 17
 #prot 0
 #mor 16
@@ -123928,20 +123928,22 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #onlygeosrc 4096  -- Cave
 #end
 
-#selectspell 2108
-#name "Power of the Healing Water"
-#descr "The caster weaves a permanent enchantment around themselves to draw on the healing power of water, the source of all life. Whilst underwater the caster will heal at an incredible rate. This spell can only be cast underwater."
-#details "Grants Regeneration 10% whilst underwater"
-#school 4
-#researchlevel 4
-#path 0 2
-#pathlevel 0 3
-#effect 10509  -- +10
-#nreff 1
-#damage 221  -- UW Regen
-#fatiguecost 800
-#spec 41943040  -- UW Only
-#end
+--Commented out as spelleffect 221 is no longer functional
+
+--#selectspell 2108
+--#name "Power of the Healing Water"
+--#descr "The caster weaves a permanent enchantment around themselves to draw on the healing power of water, the source of all life. --Whilst underwater the caster will heal at an incredible rate. This spell can only be cast underwater."
+--#details "Grants Regeneration 10% whilst underwater"
+--#school 4
+--#researchlevel 4
+--#path 0 2
+--#pathlevel 0 3
+--#effect 10509  -- +10
+--#nreff 1
+--#damage 221  -- UW Regen
+--#fatiguecost 800
+--#spec 41943040  -- UW Only
+--#end
 
 #selectspell 2110
 #copyspell 819 -- Group Barkskin
@@ -130175,8 +130177,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #name "Imbue with N'um"
 #descr "The caster performs a ritual to imbue an animal with N'um, sacred energy. The creature will increase in size as it is infused with energy and will manifest the blessing of the Lord, even if not sacred. This spell will only affect animals."
 #details "Target is blessed, gains Size +1, HP +30%, Str +3, Def -1. This spell can only affect animals."
-#researchlevel 0
-#school 7
+#researchlevel 4
 #pathlevel 0 3
 #path 1 9
 #pathlevel 1 1
@@ -136931,6 +136932,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 85 -- Ys
 #restricted 203 -- Ryu
 #restricted 190 -- Rotterland
+#restricted 207 -- Bantay Tubig
 #end
 
 #selectspell 3072
@@ -136954,6 +136956,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 85 -- Ys
 #restricted 203 -- Ryu
 #restricted 190 -- Rotterland
+#restricted 207 -- Bantay Tubig
 #end
 
 #selectspell 3074
