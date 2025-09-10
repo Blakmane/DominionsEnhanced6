@@ -40523,7 +40523,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #descr "Dire Bears are gigantic ancient bears that roam the wildest lands, far away from the settlements of man. These monstrous creatures are feared and revered for their strength, endurance and foul temper. Once angered, anything that stands in their way will be torn to shreds by their massive claws. Like all bears, they are sacred to the people of Rus."
 #size 7
 #hp 75
-#prot 15
+#prot 12
 #mor 14
 #str 23
 #att 12
@@ -40531,7 +40531,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #weapon 236  -- Claw
 #weapon 236  -- Claw
 #weapon 20  -- Bite
-#berserk 3
+#berserk 5
 #woundfend 1
 #coldres 5
 #bluntres
@@ -40572,7 +40572,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #descr "Dire Bears are gigantic ancient bears that roam the wildest lands, far away from the settlements of man. These monstrous creatures are feared and revered for their strength, endurance and foul temper. Once angered, anything that stands in their way will be torn to shreds by their massive claws."
 #size 7
 #hp 75
-#prot 15
+#prot 12
 #mor 14
 #str 23
 #att 12
@@ -40580,7 +40580,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #weapon 236  -- Claw
 #weapon 236  -- Claw
 #weapon 20  -- Bite
-#berserk 3
+#berserk 5
 #woundfend 1
 #coldres 5
 #bluntres
@@ -66712,12 +66712,7 @@ Only three Queens of Elemental Water are known to exist."
 
 
 
-
-
 -- FOLDUNITS
-
-
-
 
 
 
@@ -66734,6 +66729,7 @@ Only three Queens of Elemental Water are known to exist."
 #moreheat 1 
 #moreorder -1
 #mor 30
+#mr 18
 #nametype 170
 #djinn  -- bodytype for hit locations
 #heat 0
@@ -66809,6 +66805,7 @@ Only three Queens of Elemental Water are known to exist."
 #mor 30
 #hp 220
 #prot 16
+#mr 18
 #mastersmith 0
 #ivylord 0
 #undead
@@ -66836,7 +66833,7 @@ Only three Queens of Elemental Water are known to exist."
 #hp 105
 #prot 3
 #def 12
-#mr 20
+#mr 18
 #clearweapons
 #cleararmor
 #humanoid
@@ -66880,7 +66877,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 18
 #att 14
 #def 12
-#mr 20
+#mr 18
 #miscshape
 #size 8
 #prec 10
@@ -67047,12 +67044,12 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 2
 #pathcost 60
 #mor 30
-#hp 260
+#hp 209
 #prot 16
 #str 32
 #att 13
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -67094,6 +67091,7 @@ Only three Queens of Elemental Water are known to exist."
 #mor 30
 #hp 250
 #prot 25
+#mr 18
 #mastersmith 0
 #miscshape
 #stormimmune
@@ -67164,12 +67162,12 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 2
 #pathcost 60
 #mor 30
-#hp 248
-#prot 15
+#hp 194
+#prot 12
 #str 30
 #att 13
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -67213,12 +67211,12 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 60
 #moreorder -1
 #mor 30
-#hp 177
+#hp 151
 #prot 16
 #str 26
 #att 14
 #def 18
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -67260,12 +67258,12 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 2
 #pathcost 60
 #mor 30
-#hp 228
+#hp 180
 #prot 16
 #str 30
 #att 13
 #def 11
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -67311,7 +67309,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 23
 #att 13
 #def 10
-#mr 20
+#mr 18
 #clearweapons
 #cleararmor
 #fixedname "Ahola"
@@ -67356,7 +67354,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 23
 #att 13
 #def 10
-#mr 20
+#mr 18
 #clearweapons
 #cleararmor
 #fixedname "Soyal"
@@ -67403,7 +67401,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 23
 #att 13
 #def 10
-#mr 20
+#mr 18
 #clearweapons
 #cleararmor
 #fixedname "Tawa"
@@ -67447,7 +67445,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 23
 #att 13
 #def 10
-#mr 20
+#mr 18
 #clearweapons
 #cleararmor
 #fixedname "Eototo"
@@ -67492,7 +67490,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 21
 #att 10
 #def 10
-#mr 20
+#mr 18
 #clearweapons
 #cleararmor
 #fixedname "Shalako-mana"
@@ -67538,7 +67536,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 21
 #att 10
 #def 10
-#mr 20
+#mr 18
 #clearweapons
 #cleararmor
 #fixedname "Pollik-mana"
@@ -67770,9 +67768,10 @@ Only three Queens of Elemental Water are known to exist."
 
 #moregrowth 0
 #mor 30
-#hp 195
+#hp 164
 #prot 18
 #str 32
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -67809,7 +67808,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 22
 #att 13
 #def 11
-#mr 20
+#mr 18
 #fixedname "Tó Neinilii"
 #humanoid
 #size 9
@@ -67850,7 +67849,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 22
 #att 13
 #def 11
-#mr 20
+#mr 18
 #fixedname "Hunin"
 #humanoid
 #size 9
@@ -67895,7 +67894,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 22
 #att 13
 #def 11
-#mr 20
+#mr 18
 #humanoid
 #size 9
 #prec 13
@@ -67934,7 +67933,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 22
 #att 13
 #def 11
-#mr 20
+#mr 18
 #fixedname "Anpetu Wi"
 #humanoid
 #size 9
@@ -67975,7 +67974,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 22
 #att 13
 #def 11
-#mr 20
+#mr 18
 #humanoid
 #size 9
 #prec 13
@@ -68015,7 +68014,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 20
 #att 12
 #def 11
-#mr 20
+#mr 18
 #fixedname "Ahsonnutli"
 #gemprod 6 2
 #humanoid
@@ -68054,12 +68053,12 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 60
 #moreheat 1
 #mor 30
-#hp 280
+#hp 216
 #prot 16
 #str 32
 #att 13
 #def 11
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -68102,7 +68101,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 28
 #att 15
 #def 13
-#mr 20
+#mr 18
 #size 9
 #prec 14
 #ap 16
@@ -68307,7 +68306,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 22
 #att 12
 #def 12
-#mr 20
+#mr 18
 #ap 16
 #mapmove 3
 #size 9
@@ -68389,12 +68388,12 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 3
 #pathcost 60
 #mor 30
-#hp 180
+#hp 153
 #prot 15
 #str 28
 #att 13
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -68433,12 +68432,12 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 60
 #moreheat 1
 #mor 30
-#hp 215
+#hp 178
 #prot 18
 #str 32
 #att 13
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -68477,12 +68476,12 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 60
 #moreheat -1
 #mor 30
-#hp 200
+#hp 167
 #prot 16
 #str 28
 #att 13
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 3
@@ -68522,12 +68521,12 @@ Only three Queens of Elemental Water are known to exist."
 #startdom 3
 #pathcost 60
 #mor 30
-#hp 200
+#hp 167
 #prot 18
 #str 29
 #att 13
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 3
@@ -68680,7 +68679,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 20
 #att 5
 #def 0
-#mr 20
+#mr 18
 #mastersmith 0
 #size 10
 #prec 10
@@ -68717,6 +68716,7 @@ Only three Queens of Elemental Water are known to exist."
 #mor 30
 #hp 80
 #prot 0
+#mr 18
 #nametype 170
 #djinn  -- bodytype for hit locations
 #firepower 0
@@ -68820,6 +68820,7 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 20
 #mor 30
 #hp 11
+#mr 18
 #nametype 171
 #clearweapons
 #cleararmor
@@ -68847,6 +68848,7 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 40
 #mor 30
 #hp 75
+#mr 18
 #mastersmith 0
 
 #clearmagic
@@ -69626,12 +69628,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moreluck 1
 #mor 30
-#hp 180
+#hp 153
 #prot 18
 #str 26
 #att 13
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -69945,7 +69947,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #moreheat 1 
 #moregrowth -1
 #mor 30
-#mr 20
+#mr 18
 #clearweapons
 #corpseeater 5
 #deadhp 1
@@ -70026,7 +70028,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 22
 #att 11
 #def 10
-#mr 20
+#mr 18
 #fixedname "Yahweh"
 #mountedhumanoid
 #size 10
@@ -70069,7 +70071,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 18
 #att 13
 #def 13
-#mr 20
+#mr 18
 #fixedname "El"
 #humanoid
 #size 8
@@ -70151,6 +70153,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #gcost 200
 #mor 30
 #prot 8
+#mr 18
 #magicboost 53 -10
 #undisciplined
 #transformation 0
@@ -70171,6 +70174,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 1
 #pathcost 20
 #mor 30
+#mr 18
 #clearweapons
 #mountedhumanoid
 #weapon 151  -- Wand
@@ -70305,12 +70309,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moreorder -1
 #mor 30
-#hp 165
+#hp 143
 #prot 20
 #str 26
 #att 13
 #def 14
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -70353,9 +70357,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #moregrowth -1 
 #moreluck -1
 #mor 30
-#hp 168
+#hp 145
 #prot 16
 #str 30
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -70386,10 +70391,11 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moreorder -1
 #mor 30
-#hp 135
+#hp 122
 #prot 18
 #str 29
 #def 16
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -70420,12 +70426,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moremagic -1
 #mor 30
-#hp 290
+#hp 223
 #prot 20
 #str 30
 #att 14
 #def 8
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -70464,12 +70470,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 
 #moregrowth -0
 #mor 30
-#hp 128
+#hp 117
 #prot 18
 #str 27
 #att 13
 #def 18
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -70516,12 +70522,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 
 #moregrowth 1
 #mor 30
-#hp 190
+#hp 160
 #prot 18
 #str 27
 #att 13
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -70567,12 +70573,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moreluck -1
 #mor 30
-#hp 205
+#hp 171
 #prot 20
 #str 29
 #att 15
 #def 11
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -70613,12 +70619,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moregrowth 1
 #mor 30
-#hp 218
+#hp 173
 #prot 21
 #str 29
 #att 14
 #def 14
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -70657,12 +70663,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moremagic 1
 #mor 30
-#hp 200
+#hp 167
 #prot 22
 #str 28
 #att 12
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -70700,12 +70706,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moremagic 1
 #mor 30
-#hp 200
+#hp 167
 #prot 20
 #str 28
 #att 12
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -70743,12 +70749,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moremagic 1
 #mor 30
-#hp 173
+#hp 149
 #prot 16
 #str 26
 #att 10
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -70796,8 +70802,8 @@ Each month he will collect a magical pearl and can create more using water gems.
 #moremagic 1 
 #moreorder 1
 #mor 30
-#hp 330
-#prot 14
+#hp 290
+#prot 13
 #str 30
 #att 10
 #def 6
@@ -70918,12 +70924,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #mor 30
-#hp 180
+#hp 153
 #prot 18
 #str 29
 #att 15
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -70963,12 +70969,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moremagic -1
 #mor 30
-#hp 250
+#hp 195
 #prot 20
 #str 31
 #att 13
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -71012,12 +71018,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moreorder -1
 #mor 30
-#hp 220
+#hp 174
 #prot 18
 #str 32
 #att 12
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -71059,12 +71065,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moremagic -1
 #mor 30
-#hp 160
+#hp 139
 #prot 18
 #str 31
 #att 13
 #def 16
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -71102,12 +71108,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startdom 2
 #pathcost 60
 #mor 30
-#hp 258
-#prot 16
+#hp 201
+#prot 15
 #str 31
 #att 13
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -71150,12 +71156,12 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #moreprod -1
 #mor 30
-#hp 260
+#hp 202
 #prot 16
 #str 28
 #att 13
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -71391,7 +71397,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mor 30
 #hp 95
 #prot 5
-#mr 20
+#mr 18
 #clearweapons
 #humanoid
 #awe 1
@@ -71426,6 +71432,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #moremagic 1
 #mor 30
 #hp 35
+#mr 18
 #djinn
 #invulnerable 10
 #fear 10
@@ -71456,6 +71463,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #prot 5
 #str 20
 #def 15
+#mr 18
 #humanoid
 #size 8
 #fireres 5
@@ -71529,6 +71537,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #moremagic -1
 #mor 30
 #hp 95
+#mr 18
 #woundfend 4
 #humanoid
 #size 8
@@ -71555,7 +71564,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #str 24
 #att 14
 #def 14
-#mr 18
+#mr 20
 #fixedname "Asag"
 #humanoid
 #size 8
@@ -71813,7 +71822,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #str 22
 #att 14
 #def 12
-#mr 20
+#mr 18
 #fixedname "Sarutahiko"
 #humanoid
 #size 9
@@ -71850,7 +71859,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #str 22
 #att 14
 #def 13
-#mr 20
+#mr 18
 #fixedname "Inari"
 #humanoid
 #size 9
@@ -71892,7 +71901,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #str 24
 #att 14
 #def 14
-#mr 20
+#mr 18
 #fixedname "Guan-Yong"
 #djinn
 #size 10
@@ -71933,7 +71942,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #str 22
 #att 12
 #def 12
-#mr 20
+#mr 18
 #fixedname "Ganesha"
 #humanoid
 #size 10
@@ -71976,7 +71985,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #str 30
 #att 14
 #def 12
-#mr 20
+#mr 18
 #humanoid
 #size 10
 #prec 8
@@ -72016,7 +72025,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #str 22
 #att 14
 #def 14
-#mr 20
+#mr 18
 #djinn
 #size 9
 #prec 12
@@ -72061,7 +72070,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #str 22
 #att 13
 #def 11
-#mr 20
+#mr 18
 #djinn
 #size 8
 #prec 12
@@ -72106,7 +72115,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #str 28
 #att 7
 #def 7
-#mr 20
+#mr 18
 #humanoid
 #minprison 1
 #size 10
@@ -72153,7 +72162,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #str 25
 #att 13
 #def 11
-#mr 20
+#mr 18
 #humanoid
 #size 9
 #prec 12
@@ -72195,7 +72204,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #str 24
 #att 12
 #def 12
-#mr 20
+#mr 18
 #humanoid
 #size 9
 #awe 3
@@ -72237,7 +72246,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #str 26
 #att 15
 #def 15
-#mr 20
+#mr 18
 #humanoid
 #size 9
 #prec 12
@@ -72275,7 +72284,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #str 22
 #att 12
 #def 12
-#mr 20
+#mr 18
 #copyspr 775  -- Tartarian Titan
 #humanoid
 #size 9
@@ -72321,7 +72330,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #str 24
 #att 12
 #def 10
-#mr 20
+#mr 18
 #humanoid
 #size 8
 #mor 50
@@ -72371,7 +72380,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #str 24
 #att 13
 #def 13
-#mr 20
+#mr 18
 #humanoid
 #size 9
 #prot 6
@@ -72409,7 +72418,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 23
 #att 12
 #def 12
-#mr 20
+#mr 18
 #fixedname "Claudius"
 #humanoid
 #size 8
@@ -72451,7 +72460,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #mor 30
 #hp 105
 #str 25
-#mr 20
+#mr 18
 #fixedname "Viridios"
 #size 9
 #mapmove 3
@@ -72483,7 +72492,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 21
 #att 13
 #def 13
-#mr 20
+#mr 18
 #fixedname "Metatron"
 #humanoid
 #size 10
@@ -72578,7 +72587,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Bull Demon King"
 #descr "The Bull Demon King is a Lord of the Underworld that can take the form of a gigantic white Bull. In ages past he terrorised the people of the world until the Pantokrator bid the Celestial General lead his armies to subdue him and trap him in the Underworld. The Bull Demon King is powerful but arrogant, and is the most senior of the Demon Kings. He likes to think of himself as equal to the great sages of heaven and will become furious if his wisdom is questioned. Now, with the Pantrokrator gone the Bull Demon King will once more rule the realm of men. In Bull form he is physically powerful but it is not well suited for spellcasting."
 #diseaseres 100
-#gcost 250
+#gcost 260
 #homerealm 4
 #startdom 3
 #pathcost 60
@@ -72622,7 +72631,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Bull Demon King"
 #descr "The Bull Demon King is a Lord of the Underworld that can take the form of a gigantic white Bull. In ages past he terrorised the people of the world until the Pantokrator bid the Celestial General lead his armies to subdue him and trap him in the Underworld. The Bull Demon King is powerful but arrogant, and is the most senior of the Demon Kings. He likes to think of himself as equal to the great sages of heaven and will become furious if his wisdom is questioned. Now, with the Pantrokrator gone the Bull Demon King will once more rule the realm of men. In Bull form he is physically powerful but it is not well suited for spellcasting."
 #diseaseres 100
-#gcost 250
+#gcost 260
 #homerealm 0
 #startdom 3
 #pathcost 60
@@ -72681,7 +72690,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 20
 #att 14
 #def 13
-#mr 20
+#mr 18
 #clearweapons
 #fixedname "Melek Taus"
 #humanoid
@@ -72732,7 +72741,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 20
 #att 14
 #def 13
-#mr 20
+#mr 18
 #humanoid
 #fixedname "Dazbog"
 #size 9
@@ -72887,7 +72896,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 20
 #att 13
 #def 12
-#mr 20
+#mr 18
 #humanoid
 #fixedname "Lakshmi"
 #size 9
@@ -72932,7 +72941,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 24
 #att 14
 #def 14
-#mr 20
+#mr 18
 #humanoid
 #fixedname "Parvati"
 #size 9
@@ -72980,7 +72989,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 18
 #att 11
 #def 11
-#mr 20
+#mr 18
 #humanoid
 #fixedname "Saraswati"
 #size 9
@@ -73029,7 +73038,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 24
 #att 14
 #def 14
-#mr 20
+#mr 18
 #humanoid
 #fixedname "Shiva"
 #size 9
@@ -73075,7 +73084,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 22
 #att 11
 #def 11
-#mr 20
+#mr 18
 #humanoid
 #fixedname "Vishnu"
 #size 9
@@ -73117,7 +73126,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 20
 #att 13
 #def 0
-#mr 20
+#mr 18
 #humanoid
 #fixedname "Brahma"
 #size 9
@@ -73165,7 +73174,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 18
 #att 13
 #def 12
-#mr 20
+#mr 18
 #humanoid
 #fixedname "Triglav"
 #size 9
@@ -73208,7 +73217,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 26
 #att 13
 #def 10
-#mr 20
+#mr 18
 #humanoid
 #fixedname "Khonsu"
 #size 9
@@ -73251,7 +73260,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 22
 #att 13
 #def 13
-#mr 20
+#mr 18
 #humanoid
 #fixedname "Amun"
 #size 9
@@ -73292,7 +73301,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 20
 #att 13
 #def 13
-#mr 20
+#mr 18
 #humanoid
 #fixedname "Mut"
 #size 9
@@ -73337,7 +73346,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 20
 #att 14
 #def 14
-#mr 20
+#mr 18
 #humanoid
 #fixedname "Nyx"
 #size 9
@@ -73380,7 +73389,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 20
 #att 13
 #def 13
-#mr 20
+#mr 18
 #humanoid
 #fixedname "Vesna"
 #size 9
@@ -73420,7 +73429,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 20
 #att 13
 #def 13
-#mr 20
+#mr 18
 #humanoid
 #fixedname "Morana"
 #size 9
@@ -73618,7 +73627,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 28
 #att 14
 #def 12
-#mr 20
+#mr 18
 #humanoid
 #fixedname "Skoll"
 #size 8
@@ -73666,7 +73675,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 22
 #att 13
 #def 13
-#mr 20
+#mr 18
 #fixedname "Hi'lina"
 #humanoid
 #size 9
@@ -73708,7 +73717,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 25
 #att 14
 #def 12
-#mr 20
+#mr 18
 #fixedname "Kumugwe"
 #mountedhumanoid
 #size 10
@@ -73748,7 +73757,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 24
 #att 13
 #def 13
-#mr 20
+#mr 18
 #fixedname "Sgana"
 #humanoid
 #size 10
@@ -73793,7 +73802,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 22
 #att 13
 #def 10
-#mr 20
+#mr 18
 #miscshape
 #size 10
 #prec 11
@@ -73843,7 +73852,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 24
 #att 13
 #def 13
-#mr 20
+#mr 18
 #fixedname "Ta'xet"
 #humanoid
 #size 9
@@ -74235,7 +74244,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #str 19
 #att 14
 #def 12
-#mr 18
+#mr 20
 #mastersmith 0
 #djinn
 #size 9
@@ -75582,6 +75591,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #pathcost 40
 #moreorder -1
 #mor 30
+#mr 18
 #mastersmith 0
 #miscshape
 #spiritsight
@@ -75604,6 +75614,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #pathcost 40
 #moreorder 1
 #mor 30
+#mr 18
 #mastersmith 0
 #miscshape
 #itemslots 786432
@@ -75625,6 +75636,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #moreorder 1 
 #moremagic 1
 #mor 30
+#mr 18
 #mastersmith 0
 #miscshape
 #douse 0
@@ -75648,6 +75660,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #pathcost 40
 #moregrowth 1
 #mor 30
+#mr 18
 #mastersmith 0
 
 #clearmagic
@@ -75668,6 +75681,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #pathcost 40
 #moreluck 1
 #mor 30
+#mr 18
 #mastersmith 0
 #eyes 2
 #miscshape
@@ -75871,6 +75885,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #pathcost 40
 #moregrowth 1
 #mor 30
+#mr 18
 #mastersmith 0
 #miscshape
 #size 10
@@ -75894,6 +75909,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #moreorder 1
 #mor 30
 #hp 150
+#mr 18
 #mastersmith 0
 #miscshape
 #size 10
@@ -75963,6 +75979,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #moregrowth -1
 #mor 30
 #prot 18
+#mr 18
 #mastersmith 0
 #miscshape
 #itemslots 786432
@@ -76268,7 +76285,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 22
 #att 12
 #def 12
-#mr 20
+#mr 18
 #clearweapons
 #fixedname "Itzpapalotl"
 #female
@@ -76332,7 +76349,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 20
 #att 12
 #def 12
-#mr 20
+#mr 18
 #fixedname "Styx"
 #prec 12
 #ap 16
@@ -76414,7 +76431,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 24
 #att 11
 #def 12
-#mr 18
+#mr 20
 #heal
 #woundfend 1
 #ap 15
@@ -76423,10 +76440,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #neednoteat
 #clumsy 1
 #enc 2
-#att 16
-#def 14
-#prec 10
-#mr 20
 #maxage 10000
 #startage 5500
 #fixedname "Kanaloa"
@@ -76640,12 +76653,12 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #pathcost 60
 #moreluck 1
 #mor 30
-#hp 290
+#hp 223
 #prot 3
 #str 32
 #att 13
 #def 13
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -76846,12 +76859,12 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #pathcost 60
 #moreluck 1
 #mor 30
-#hp 230
-#prot 20
+#hp 160
+#prot 18
 #str 28
 #att 13
 #def 15
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -76876,6 +76889,8 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #twiceborn 6644 -- Wight Beast
 #onebattlespell "Shroud of Bewilderment"
 #shapechange 10014 -- Silver Fish
+#magicboost 53 0
+#magicboost 2 0
 #itemslots 3932160
 #clearmagic
 #magicskill 7 3
@@ -76892,12 +76907,12 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #pathcost 60
 #moreluck 1
 #mor 30
-#hp 8
+#hp 33
 #prot 3
 #str 6
 #att 13
 #def 13
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -77013,12 +77028,12 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #moregrowth 1 
 #moreorder 0
 #mor 30
-#hp 290
+#hp 223
 #prot 22
 #str 32
 #att 12
 #def 7
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -77125,12 +77140,12 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 2
 #pathcost 60
 #mor 30
-#hp 102
+#hp 99
 #prot 16
 #str 24
 #att 14
 #def 17
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -77519,6 +77534,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 1
 #pathcost 20
 #mor 30
+#mr 18
 #nametype 126
 #clearmagic
 #magicskill 0 1
@@ -77537,6 +77553,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 1
 #pathcost 20
 #mor 30
+#mr 18
 #nametype 123
 #clearmagic
 #magicskill 0 1
@@ -77573,6 +77590,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 1
 #pathcost 20
 #mor 30
+#mr 18
 #nametype 126
 #clearmagic
 #magicskill 6 1
@@ -77591,6 +77609,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 1
 #pathcost 20
 #mor 30
+#mr 18
 #nametype 123
 #clearmagic
 #magicskill 6 1
@@ -77663,6 +77682,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 1
 #pathcost 20
 #mor 30
+#mr 18
 #nametype 126
 #clearmagic
 #magicskill 5 1
@@ -77701,6 +77721,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #pathcost 20
 #moreheat -1
 #mor 30
+#mr 18
 #nametype 123
 #clearmagic
 #magicskill 1 1
@@ -77736,6 +77757,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 1
 #pathcost 20
 #mor 30
+#mr 18
 #nametype 126
 #clearmagic
 #magicskill 4 2
@@ -77753,6 +77775,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 1
 #pathcost 20
 #mor 30
+#mr 18
 #nametype 123
 #clearmagic
 #magicskill 4 2
@@ -77839,12 +77862,12 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #gcost 180
 #homerealm 10
 #pathcost 60
-#hp 190
+#hp 160
 #prot 16
 #str 29
 #att 15
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -78140,6 +78163,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 1
 #pathcost 20
 #mor 30
+#mr 18
 #nametype 125
 #clearmagic
 #magicskill 4 1
@@ -78158,6 +78182,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #startdom 1
 #pathcost 20
 #mor 30
+#mr 18
 #nametype 124
 #clearmagic
 #magicskill 4 1
@@ -78256,7 +78281,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 24
 #att 12
 #def 15
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #fireres 5
@@ -78664,7 +78689,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #diseaseres 100
 #gcost 190
 #pathcost 60
-#hp 300
+#hp 230
 #prot 15
 #str 32
 #att 8
@@ -78686,12 +78711,12 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #diseaseres 100
 #gcost 180
 #pathcost 60
-#hp 195
+#hp 164
 #prot 15
 #str 28
 #att 13
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -78948,12 +78973,12 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #diseaseres 100
 #gcost 200
 #pathcost 60
-#hp 233
+#hp 191
 #prot 13
 #str 32
 #att 13
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -78971,12 +78996,12 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #diseaseres 100
 #gcost 210
 #pathcost 60
-#hp 231
+#hp 189
 #prot 13
 #str 32
 #att 13
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -79168,12 +79193,12 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #moreheat -1
 
 #moreluck -1
-#hp 163
+#hp 142
 #prot 14
 #str 31
 #att 13
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -79441,12 +79466,12 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #diseaseres 100
 #gcost 180
 #pathcost 60
-#hp 231
+#hp 182
 #prot 18
 #str 32
 #att 16
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -79858,7 +79883,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #diseaseres 100
 #gcost 180
 #pathcost 40
-#hp 180
+#hp 153
 #prot 15
 #str 29
 #att 13
@@ -79882,7 +79907,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 180
 #pathcost 40
-#hp 160
+#hp 139
 #prot 15
 #str 28
 #att 13
@@ -80718,7 +80743,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 180
 #pathcost 60
-#hp 230
+#hp 188
 #prot 15
 #str 31
 #att 8
@@ -81108,12 +81133,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 160
 #pathcost 60
-#hp 153
+#hp 135
 #prot 18
 #str 27
 #att 15
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81279,12 +81304,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 180
 #pathcost 60
-#hp 214
+#hp 170
 #prot 18
 #str 31
 #att 14
 #def 13
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81301,12 +81326,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 160
 #pathcost 60
-#hp 102
+#hp 99
 #prot 16
 #str 24
 #att 14
 #def 18
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81329,12 +81354,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 260
 #pathcost 60
-#hp 150
+#hp 132
 #prot 20
 #str 26
 #att 15
 #def 15
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 3
@@ -81351,12 +81376,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 200
 #pathcost 60
-#hp 136
-#prot 16
+#hp 123
+#prot 14
 #str 30
 #att 13
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -81374,12 +81399,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 180
 #pathcost 60
-#hp 162
+#hp 141
 #prot 18
 #str 27
 #att 15
 #def 18
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81402,12 +81427,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 160
 #pathcost 60
-#hp 203
+#hp 164
 #prot 18
 #str 29
 #att 15
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81424,12 +81449,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 200
 #pathcost 60
-#hp 215
+#hp 171
 #prot 18
 #str 30
 #att 15
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81447,12 +81472,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 220
 #pathcost 60
-#hp 225
+#hp 178
 #prot 16
 #str 31
 #att 14
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81469,12 +81494,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 160
 #pathcost 60
-#hp 116
+#hp 109
 #prot 18
 #str 27
 #att 13
 #def 18
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81493,12 +81518,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 200
 #pathcost 60
-#hp 177
-#prot 18
+#hp 151
+#prot 15
 #str 26
 #att 14
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81515,12 +81540,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 180
 #pathcost 60
-#hp 280
+#hp 216
 #prot 20
 #str 31
 #att 15
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -81538,12 +81563,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 180
 #pathcost 60
-#hp 185
+#hp 157
 #prot 16
 #str 29
 #att 15
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -81567,12 +81592,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #moreorder -1
 
 #moreluck -1
-#hp 205
+#hp 171
 #prot 16
 #str 30
 #att 15
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -81590,12 +81615,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 140
 #pathcost 60
-#hp 168
+#hp 145
 #prot 18
 #str 30
 #att 13
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81615,12 +81640,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 220
 #pathcost 60
-#hp 177
+#hp 151
 #prot 18
 #str 31
 #att 13
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81637,12 +81662,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 200
 #pathcost 60
-#hp 194
+#hp 160
 #prot 15
 #str 29
 #att 15
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81662,12 +81687,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 160
 #pathcost 60
-#hp 207
+#hp 166
 #prot 15
 #str 30
 #att 13
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81688,12 +81713,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #moreluck 1
 
 #moregrowth 0
-#hp 182
+#hp 155
 #prot 16
 #str 29
 #att 15
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -81715,12 +81740,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 200
 #pathcost 60
-#hp 195
+#hp 164
 #prot 16
 #str 29
 #att 15
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -81738,12 +81763,12 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #diseaseres 100
 #gcost 200
 #pathcost 60
-#hp 185
+#hp 157
 #prot 20
 #str 30
 #att 15
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -82080,12 +82105,12 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #diseaseres 100
 #gcost 190
 #pathcost 60
-#hp 222
+#hp 176
 #prot 16
 #str 31
 #att 15
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -83174,12 +83199,12 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #diseaseres 100
 #gcost 200
 #pathcost 60
-#hp 185
+#hp 157
 #prot 16
 #str 28
 #att 14
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -83386,12 +83411,12 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #diseaseres 100
 #gcost 180
 #pathcost 60
-#hp 158
+#hp 138
 #prot 19
 #str 24
 #att 15
 #def 12
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -83486,12 +83511,12 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #diseaseres 100
 #gcost 140
 #pathcost 60
-#hp 139
+#hp 125
 #prot 16
 #str 26
 #att 12
 #def 14
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -83514,12 +83539,12 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #gcost 120
 #pathcost 60
 #moreluck 1
-#hp 139
+#hp 125
 #prot 16
 #str 26
 #att 12
 #def 14
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -83643,7 +83668,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #str 27
 #att 16
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -83678,12 +83703,12 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #diseaseres 100
 #gcost 160
 #pathcost 60
-#hp 143
+#hp 128
 #prot 13
 #str 28
 #att 15
 #def 18
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -83759,12 +83784,12 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #diseaseres 100
 #gcost 180
 #pathcost 60
-#hp 214
+#hp 170
 #prot 16
 #str 31
 #att 14
 #def 13
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -83824,12 +83849,12 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #diseaseres 100
 #gcost 200
 #pathcost 60
-#hp 102
+#hp 99
 #prot 18
 #str 24
 #att 14
 #def 18
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -83857,12 +83882,12 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #moreorder 1
 
 #moreheat -1
-#hp 290
+#hp 223
 #prot 22
 #str 32
 #att 12
 #def 7
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -84055,12 +84080,12 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #gcost 180
 #pathcost 60
 #moreprod 1
-#hp 210
+#hp 167
 #prot 18
 #str 28
 #att 13
 #def 10
-#mr 18
+#mr 16
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -84095,12 +84120,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 
 
 
-
-
-
-
-
 -- ENDUNITS
+
 
 
 
