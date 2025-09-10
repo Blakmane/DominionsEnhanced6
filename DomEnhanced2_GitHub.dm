@@ -2919,14 +2919,15 @@
 #name "Short Bident"
 #end
 
-#newweapon 1804 -- Banefire Torch 50%
-#copyweapon 729 -- Banefire Torch
-#melee50
-#end
+--#newweapon 1804 -- Banefire Torch 50%
+--#copyweapon 729 -- Banefire Torch
+--#melee50
+--#end
 
 #newweapon 1805 -- plague bow
 #copyweapon 438 -- plague bow
 #name "Plague Bow"
+#dmg 9
 #armorpiercing
 #nratt 3
 #end
@@ -3211,7 +3212,7 @@
 #newweapon 1831 -- Bo Staff
 #copyweapon 7 -- Quarterstaff
 #name "Bo Staff"
-#def 2
+#def 3
 #dmg 2
 #att 1
 #len 2
@@ -3833,7 +3834,7 @@
 #copyweapon 645 -- Bronze sword
 #name "Anointed Sword"
 #dmg 5
-#secondaryeffect 1840
+#secondaryeffect 509
 #magic
 #end
 
@@ -3860,6 +3861,17 @@
 #att 0
 #def 0
 #bonus
+#end
+
+#newweapon 1899 -- Shatterfist no bonus
+#name "Shatterfist"
+#dmg 0
+#len -1
+#att 0
+#def 0
+#blunt
+#magic
+#secondaryeffectalways 328 -- Shatter
 #end
 
 
@@ -4342,6 +4354,10 @@
 #selectweapon 451  -- 1h Obsidian Club Sword
 #att 1
 #dmg 5
+#end
+
+#selectweapon 461 -- Swallow
+#defroll
 #end
 
 #selectweapon 488  -- Hydra Main Head
@@ -5010,6 +5026,13 @@
 #name "Half Plate"
 #prot 15
 #enc 3
+#end
+
+#newarmor 571 -- Bythos barding
+#copyarmor 136 -- bronze scale hauberk
+#name "Bronze Barding"
+--#prot 11
+--#rcost 7
 #end
 
 
@@ -5744,6 +5767,7 @@
 #enc 0
 #mapmove 0
 #ap 2
+#siegebonus 20
 #weapon 0
 #weapon 1659 -- Divine Rocket-Arrows
 #deathfire 6
@@ -7103,7 +7127,7 @@
 #okleader
 #poormagicleader
 #eyes 2
-#older 15
+#startage 49
 #magicskill 9 1
 #custommagic 8448 10
 #holy
@@ -7243,7 +7267,7 @@
 #poorleader
 #okmagicleader
 #eyes 2
-#older -10
+#startage 49
 #magicskill 0 1
 #magicskill 1 3
 #magicskill 2 1
@@ -8792,7 +8816,7 @@
 #descr "The warriors of the steppes are excellent horsemen, trained from birth in the saddle. Warriors from local tribes will often ride to the defence of the province should it come under attack. A Horseman Defender will not cost upkeep, however they cannot leave their home province."
 #gcost 10
 #rpcost 9
-#rcost -12
+#rcost -14
 #addupkeep -10
 #mapmove 0
 #ap 20
@@ -8923,7 +8947,7 @@
 #armor 2  -- Shield
 #nametype 177  -- Mongolian Male
 #drawsize 0
-#mountmnr 3576
+#mountmnr 9164
 #end
 
 #newmonster 6658
@@ -8990,15 +9014,16 @@
 #unmountedspr1 "goldenhorde/un_noyan.tga"
 #unmountedspr2 "goldenhorde/un_noyan2.tga"
 #descr "A Noyan is a tribal ruler and military commander. Noyan rule over several tribes and carry out the orders of the Khans in times of war. Several tribes practice head binding or scarification to mark out the noble families, and in most tribes these families are ritually tattooed. The number and prominence of tattoos represent standing in society and often relate to the deeds of their owner. These tattoos can be awoken by a Shaman to provide protection and speed."
-#gcost 10010
+#gcost 85
 #mor 12
 #prec 10
+#mor 13
 #horsetattoo 2
 #goodleader
 #weapon 8  -- Broad Sword
 #weapon 264  -- Composite Bow
-#armor 518 -- Lamellar Armor
-#armor 119  -- Reinforced Leather Cap
+#armor 12 -- Scale Mail Hauberk
+#armor 20 -- Iron Cap
 #armor 2  -- Shield
 #prophetshape 6657 -- Khan
 #nametype 177  -- Mongolian Male
@@ -9017,6 +9042,7 @@
 #descr "The Khans are the leaders of the steppes tribes and are skilled horsemen and warriors. Several tribes practice head binding or scarification to mark out the noble families, and in most tribes these families are ritually tattooed. These tattoos can be awoken by a Shaman to provide protection and speed. The Khans often fight side by side with the warriors, their bravery and skill inspiring the troops to heroic deeds. Barbarian horsemen will appear each month to serve their Khan."
 #gcost 10030
 #prec 10
+#mor 14
 #horsetattoo 3
 #userestricteditem 1
 #taxcollector
@@ -9085,6 +9111,7 @@
 #weapon 761  -- Throw Salt
 #weapon 7  -- Quarterstaff
 #armor 10  -- Leather Hauberk
+#armor 105 -- Hide Shield
 #nametype 181  -- Mongolian Female
 #drawsize 0
 #mountmnr 3573
@@ -9364,6 +9391,9 @@
 #mr 11
 #att 13
 #ap 24
+#corpseeater 2
+#deadhp 2
+#maxdeadhp 42
 #bluntres
 #popkill 1
 #regeneration 10
@@ -9377,7 +9407,7 @@
 #name "Barometz"
 #spr1 "goldenhorde/veglamb.tga"
 #spr2 "goldenhorde/veglamb2.tga"
-#descr "The Barometz or Vegetable Lamb is a strange plant that grows full sized sheep as its fruit. These plantlike sheep are connected to the ground by a stalk and graze the area around the plant. The plant can be harvested and the sheep-fruit is delicious when cooked and eaten. Each Barometz plant will provide a fruit each month, feeding up to 10 soldiers, however they cannot leave the province."
+#descr "The Barometz or Vegetable Lamb is a strange plant that grows full sized sheep as its fruit. These plantlike sheep are connected to the ground by a stalk and graze the area around the plant. The plant can be harvested and the sheep-fruit is delicious when cooked and eaten, and their wool can be spun into clothing and armor. As long as there are Barometz in a province, it experience growth and available resources will increase. Each Barometz plant will provide a fruit each month, feeding up to 10 soldiers, however they cannot leave the province."
 #immobile
 #size 6
 #prot 12
@@ -11166,7 +11196,7 @@ Andrea is the current head of the family and the most respected admiral in Vened
 #amphibian
 #giftofwater 40
 #maxage 60
-#older -55
+#startage 56
 #clearweapons
 #weapon "Pearl Trident"
 #cleararmor
@@ -11194,7 +11224,7 @@ Many years have passed since then and now Marco has returned to his homeland. Hi
 #magicskill 6 1
 #inspiringres 1
 #mr 16
-#older -10
+#startage 49
 #wastesurvival
 #mountainsurvival
 #forestsurvival
@@ -11236,7 +11266,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mr 18
 #siegebonus 30
 #castledef 30
-#older -27
+#startage 78
 #latehero 10
 #gcost 10060
 #researchbonus 9
@@ -13231,6 +13261,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mr 13
 #magicbeing
 #corpseeater 5
+#deadhp 1
+#maxdeadhp 45
 #deadhp 1
 #stealthy 0
 #weapon 29  -- Claw
@@ -17070,7 +17102,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #coldres 25
 #coldpower 1
 #cold 4
-#icenatprot 1
+#icenatprot  1
+#iceprotinspector  1
 #fear 5
 #holy
 #end
@@ -17079,7 +17112,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #name "Tsen"
 #spr1 "shambhala/btsan_1.tga"
 #spr2 "shambhala/btsan_2.tga"
-#descr "Tsen are Mu spirits of the sky from the high mountains of Shambhala. They were once noble allies of the Bhödpa, but are now degraded abd malevolent beings, angry at being harassed and driven off by the demon hunters of Shambhala. They appear as black-skinned demons with hideous bone necklaces. They are master archers, and when in one of their vengeful rages they range through the forests, killing anything that moves with their plague-ridden arrows. Sometimes, a Mu Bön Ngagspa sorcerer summons a vengeful Tsen and sends them against an enemy. Tsen bring death, and one struck by an arrow from their foul bow will almost surely die of disease."
+#descr "Tsen are Mu spirits of the sky from the high mountains of Shambhala. They were once noble allies of the Bhödpa, but are now degraded abd malevolent beings, angry at being harassed and driven off by the demon hunters of Shambhala. They appear as black-skinned demons with hideous bone necklaces. They are master archers, and when in one of their vengeful rages they range through the forests, killing anything that moves with their plague-ridden arrows. Sometimes, a sorcerer may summon a vengeful Tsen and send them against an enemy. Tsen bring death, and one struck by an arrow from their foul bow will almost surely die of disease."
 #ap 13
 #mapmove 2
 #hp 25
@@ -17864,6 +17897,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spellsinger
 #female
 #poorleader
+#reqlab
 #weapon 397  -- Kick
 #end
 
@@ -17995,7 +18029,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #prot 12
 #prec 8
 #def 13
-#str 20
+#str 18
 #mr 9
 #mapmove 22
 #animal
@@ -18023,7 +18057,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #prot 12
 #prec 8
 #def 13
-#str 20
+#str 18
 #mr 9
 #mapmove 22
 #animal
@@ -18051,8 +18085,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr2 "gondwana/terrorbirdrider2.tga"
 #descr "In the capital exists a special regiment of Isienmwenro known as the Ekaiwe. These are the cream of the warriors specially trained to ride gigantic predatory birds known as Terror Birds. Terror Birds roam the plains of Gondwana preying on anything they can kill with their powerful beaks and sharp claws. They are strong in N'um and are sacred to the people of Gondwana. Should the rider be slain the bird will continue to peck and claw at enemies."
 #mountedhumanoid
-#gcost 75
-#rpcost 46
+#gcost 85
+#rpcost 62
 #rcost 10
 #ressize 2
 #hp 12
@@ -18137,7 +18171,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #magicskill 7 1
 #magicskill 9 1
 #custommagic 29056 100  -- 100% FADNG
-#custommagic 29056 10  -- 100% FADNG
+#custommagic 29056 100  -- 100% FADNG
 --#custommagic 12672 100  -- 100% FADN
 --#custommagic 12672 10  -- 10% FADN
 #end
@@ -18220,6 +18254,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #maxage 40
 #weapon 547  -- Buff
 #weapon 1758 -- Tail Spikes
+#magicskill 6 1 -- N
 #animal
 #undisciplined
 #slashres
@@ -18285,6 +18320,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mapmove 28
 #startage 20
 #maxage 40
+#custommagic 24832 100 -- ANG
 #weapon 300  -- Head Butt
 #weapon 397  -- Kick
 #animal
@@ -18348,6 +18384,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #def 6
 #fear 5
 #twiceborn 6644 -- Wight Beast
+#custommagic 24576 50 -- NG
 #holy
 #weapon 397  -- Kick
 #weapon 1679 -- shockwave
@@ -23721,7 +23758,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #magicskill 2 3
 #custommagic 4864 200  -- AWD 200%
 #winterpower 25
-#icenatprot 2
+#icenatprot  2
+#iceprotinspector  2
 #incscale 2
 #goodleader
 #gcost 0
@@ -24398,6 +24436,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #def 7
 #str 15
 #ap 8
+#size 4
+#heal
 #enc 2
 #slothpower 1
 #sleepaura 5
@@ -28306,7 +28346,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #coldres 25
 #winterpower 20
 #coldpower 1
-#icenatprot 1
+#icenatprot  1
+#iceprotinspector  1
 #cold 5
 #magicskill 1 3
 #magicskill 2 3
@@ -28338,7 +28379,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #coldres 25
 #winterpower 20
 #coldpower 1
-#icenatprot 1
+#icenatprot  1
+#iceprotinspector  1
 #cold 5
 #startage 187
 #reclimit 0
@@ -29214,7 +29256,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #cleararmor
 #clearmagic
 #name "Eudaimon"
-#descr "The Eudaimones are a type of Daimon or spirit of the land. They inhabit vineyards and grainfields and ensure a good harvest for those that pay them mind. They can be called upon to act as guardian spirits, whereupon they manifest as ethereally beautiful warrior women bearing golden blades. They will defend their charges as long as a cup of unmixed wine is poured out for them before every meal. Eudaimones are spirits of fortune and lucky events will be more likely wherever they are."
+#descr "The Eudaimones are a type of Daimon or spirit of the land. They inhabit vineyards and grainfields and ensure a good harvest for those that pay them mind. They can be called upon to act as guardian spirits, whereupon they manifest as ethereally beautiful warrior women bearing golden blades. They will defend their charges as long as a cup of unmixed wine is poured out for them before every meal. Eudaimones are spirits of fortune will ward off misfortune wherever they are."
 #gcost 0
 #str 11
 #hp 14
@@ -29229,7 +29271,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #ethereal
 #okmagicleader
 #awe 3
-#bringeroffortune 1
+#nobadevents 3
 #spiritsight
 #neednoteat
 #bodyguard 5
@@ -29320,6 +29362,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spiritsight
 #corpseeater 1
 #deadhp 1
+#maxdeadhp 5000
 #itemslots 1835008 -- 3 misc
 #weapon 636  -- Life Drain Tentacle
 #weapon 811  -- Steal Strength
@@ -29351,6 +29394,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #heal
 #corpseeater 1
 #deadhp 1
+#maxdeadhp 5000
 #neednoteat
 #blind
 #noleader
@@ -30871,6 +30915,9 @@ While in the form of an old man, all paths are increased and allows the use of N
 #slimer 1
 #poisonres 15
 #hpoverslow 20
+#corpseeater 1
+#deadhp 1
+#maxdeadhp 5000
 #diseaseres 100
 #heal
 #neednoteat
@@ -33365,6 +33412,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #neednoteat
 #bodyguard 4
 #monpresentrec -1078 -- TC Great Khans
+#mountmnr 9164
 #end
 
 #newmonster 7679
@@ -33488,7 +33536,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #att 10
 #ap 12
 #ambidextrous 2
-#icenatprot 2
+#icenatprot  2
+#iceprotinspector  2
 #cold 8
 #coldres 25
 #weapon 69  -- Icicle Fist
@@ -37345,6 +37394,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #regeneration 20
 #blind
 #bluntres
+#diseaseres 100
 #diseasecloud 8
 #fear 10
 #slimer 1
@@ -38749,7 +38799,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #magicskill 2 1
 #custommagic 8960 100  -- 100% AWN
 #custommagic 8960 10  -- 10% AWN
-#giftofwater 30
+#giftofwater 90
 #okleader
 #swampsurvival
 #amphibian
@@ -40307,7 +40357,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #nametype 143
 #darkvision 100
 #darkpower 1
-#icenatprot 1
+#icenatprot  1
+#iceprotinspector  1
 #incunrest 5
 #ironvul 1
 #okmagicleader
@@ -43023,7 +43074,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #stealthy 5
 #goodleader
 #startage 0
-#older -15
+#startage 33
 #end
 
 #newmonster 8124
@@ -43194,7 +43245,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #magicskill 2 3
 #magicskill 6 3
 #magicskill 9 1
-#older 50
+#startage 128
 #batstartsum5 2300  -- Regular machakan warrior
 #end
 
@@ -43953,7 +44004,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #shockres -5
 #magicskill 2 3
 #magicskill 6 2
-#icenatprot 2
+#icenatprot  2
+#iceprotinspector  2
 #cold 10
 #holy
 #coldpower 1
@@ -44415,7 +44467,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "worthy_heroes/adapa_2.tga"
 #fixedname "Adapa"
 #name "Seventh Sage"
-#descr "Adapa is the last of the seven sages, the fabled Apkallus that brought civilization to the enkidus. The seventh sage was tasked with teaching seamanship, and took a humble shape resembling a fish in order to better aid the Enkidu. For his humility he has been gifted with good health and longevity, and so he is likely to the last of the sages remaining in this realm. After passing the knowledge of fishing, Adapa went into hiding beneath the sea. He sometimes appears before Enkdu fishermen to offer advice and prophecies. The Seventh Sage knows the magic of the seas, winds, and nature and has now come to once again guide his people."
+#descr "Adapa is the last of the seven sages, the fabled Apkallus that brought civilization to the enkidus. The seventh sage was tasked with teaching seamanship, and took a humble shape resembling a fish in order to better aid the Enkidu. For his humility he has been gifted with good health and longevity, and so he is among the last of the sages remaining in this realm. After passing the knowledge of fishing, Adapa went into hiding beneath the sea. He sometimes appears before Enkdu fishermen to offer advice and prophecies. The Seventh Sage knows the magic of the seas, winds, and nature and has now come to once again guide his people."
 #ap 10
 #mapmove 2
 #hp 15
@@ -46558,7 +46610,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #noleader
 #ap 14
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -46966,7 +47019,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #armor 21
 #armor 2
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #mountmnr 8251
 #mountedinspector
@@ -48107,7 +48161,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #descr "Potamoi are gods of the rivers and streams of the earth, and sons of Okeanus. As the half-men lost their lands to Atlantian invasions, many of them were forced to retreat into the rivers and streams of the world, where they were taken in by the Potamoi that preside over them. They have the appearance of a bull-headed man with a serpent-like fish's tail, and are held sacred by the half-men of the river. As manifestations of the river, they control great power over water and the land their rivers lie on."
 #gcost 0
 #rpcost 4
-#hp 45
+#hp 62
 #str 18
 #att 10
 #def 9
@@ -48140,7 +48194,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr2 "blue_oceania/maichtytaurhierophantw2.png"
 #name "Ichtytaur Hierophant"
 #descr "As the half-men lost their lands to Atlantian invasions, many of them were forced to retreat into the rivers and streams of the world, where they were taken in by the Potamoi that preside over them. Among the half-men of the rivers, Ichtytaurs bear the likeness of the Potamoi and are trained as their disciples to control the power of the rivers. The Ichtytaur chosen by the Potamoi are held sacred and have great standing among the river-dwelling half-men, acting as their priests and leaders, and are expected to be able control the rage typical of Ichtytaurs. Ichtytaurs have strange abilities of transformation and can remove their tails to walk on dry land."
-#gcost 10040
+#gcost 10015
 #rpcost 2
 #hp 30
 #str 17
@@ -48177,12 +48231,12 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr2 "blue_oceania/maichtytaurhierophantl2.png"
 #name "Ichtytaur Hierophant"
 #descr "As the half-men lost their lands to Atlantian invasions, many of them were forced to retreat into the rivers and streams of the world, where they were taken in by the Potamoi that preside over them. Among the half-men of the rivers, Ichtytaurs bear the likeness of the Potamoi and are trained as their disciples to control the power of the rivers. The Ichtytaur chosen by the Potamoi are held sacred and have great standing among the river-dwelling half-men, acting as their priests and leaders, and are expected to be able control the rage typical of Ichtytaurs. Ichtytaurs have strange abilities of transformation and can remove their tails to walk on dry land."
-#gcost 10040
+#gcost 10015
 #rpcost 2
 #hp 30
 #str 17
 #att 9
-#def 8
+#def 9
 #mor 14
 #prec 9
 #prot 4
@@ -48335,7 +48389,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr2 "blue_oceania/maknightofbythosw2.png"
 #name "Knight of Bythos"
 #descr "In the Grove of Bythos, on the boundary between Oceania and the Underworld, and the last untouched kelp grove of Oceania, are ichtycentaur that have visited the rivers of the underworld and returned back to the sea of the living. Only those who are strong of body and mind can make this trek, and those who survive gain the blessing of the River Styx and fight as sacred warriors in the Knights of Bythos."
-#gcost 10065
+#gcost 10055
 #rpcost 46
 #hp 22 -- +2
 #str 14 -- +1
@@ -48349,10 +48403,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #enc 3
 #mapmove 20
 #ap 26
---#armor 710 -- Bronze Scale Barding
-#armor 142 -- Bronze Scale Cuirass
-#armor 135 -- Bronze cap
+#armor 571 -- Bronze Barding
+--#armor 142 -- Bronze Scale Cuirass
+--#armor 139 -- Ichtycentaur Barding
 --#armor 264 -- Light bronze barding
+#armor 135 -- Bronze cap
 --#weapon 581 -- Bident
 #weapon 1802 -- Bident
 #weapon 778 -- tail flipper
@@ -48364,7 +48419,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #heal
 #float
 #holy
-#older 15
+#startage 53
 #stealthy 0
 #landshape 8590
 #nametype 159 -- Oceania Male
@@ -48375,7 +48430,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr2 "blue_oceania/maknightofbythosl2.png"
 #name "Knight of Bythos"
 #descr "In the Grove of Bythos, on the boundary between Oceania and the Underworld, and the last untouched kelp grove of Oceania, are ichtycentaur that have visited the rivers of the underworld and returned back to the sea of the living. Only those who are strong of body and mind can make this trek, and those who survive gain the blessing of the River Styx and fight as sacred warriors in the Knights of Bythos."
-#gcost 10065
+#gcost 10055
 #rpcost 46
 #hp 22 -- +2
 #str 14 -- +1
@@ -48389,8 +48444,10 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #enc 3
 #mapmove 20
 #ap 28
---#armor 710 -- Bronze Scale Barding
-#armor 142 -- Bronze Scale Cuirass
+#armor 571 -- Bronze Barding
+--#armor 142 -- Bronze Scale Cuirass
+--#armor 139 -- Ichtycentaur Barding
+--#armor 264 -- Light bronze barding
 #armor 135 -- Bronze cap
 --#armor 264 -- Light bronze barding
 --#weapon 581 -- Bident
@@ -48403,7 +48460,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #mountedhumanoid
 #heal
 #holy
-#older 15
+#startage 53
 #stealthy 0
 #watershape 8589
 #nametype 159 -- Oceania Male
@@ -48414,7 +48471,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr2 "blue_oceania/mabythoslordw2.png"
 #name "Bythos Lord"
 #descr "In the Grove of Bythos, on the boundary between Oceania and the Underworld, and the last untouched kelp grove of Oceania, are ichtycentaur that have swum the rivers of the underworld and returned back to the sea of the living. Bythos Lords are exceptionally skilled and have led groups of ichtycentaurs through this journey multiple times to earn their title, and most have picked up the magic of the underworld along the way."
-#gcost 10065
+#gcost 10055
 #rpcost 2
 #hp 24 -- +4
 #str 14 -- +1
@@ -48429,13 +48486,15 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #mapmove 20
 #ap 26
 #ambidextrous 3
---#armor 710 -- Bronze Scale Barding
-#armor 142 -- Bronze Scale Cuirass
+#armor 571 -- Bronze Barding
+--#armor 142 -- Bronze Scale Cuirass
+--#armor 139 -- Ichtycentaur Barding
+--#armor 264 -- Light bronze barding
 #armor 135 -- Bronze cap
 --#weapon 581 -- Bident
 --#weapon 1803 -- Banefire Torch
 #weapon 1803 -- Short Bident
-#weapon 1804 -- Banefire Torch
+#weapon 729 -- Banefire Torch
 #weapon 778 -- tail flipper
 #invulnerable 15
 #spiritsight
@@ -48445,11 +48504,12 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #float
 #holy
 #goodleader
-#older 5
+#startage 71
 #stealthy 0
 #magicskill 9 1 -- Holy
 #custommagic 512 75 -- W
-#custommagic 4096 75 -- D
+#custommagic 4096 50 -- D
+#custommagic 4096 25 -- D
 #landshape 8592
 #nametype 159 -- Oceania Male
 #end
@@ -48459,7 +48519,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr2 "blue_oceania/mabythoslordl2.png"
 #name "Bythos Lord"
 #descr "In the Grove of Bythos, on the boundary between Oceania and the Underworld, and the last untouched kelp grove of Oceania, are ichtycentaur that have swum the rivers of the underworld and returned back to the sea of the living. Bythos Lords are exceptionally skilled and have led groups of ichtycentaurs through this journey multiple times to earn their title, and most have picked up the magic of the underworld along the way."
-#gcost 10065
+#gcost 10055
 #rpcost 2
 #hp 24 -- +4
 #str 14 -- +1
@@ -48474,13 +48534,15 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #mapmove 20
 #ap 28
 #ambidextrous 3
---#armor 710 -- Bronze Scale Barding
-#armor 142 -- Bronze Scale Cuirass
+#armor 571 -- Bronze Barding
+--#armor 142 -- Bronze Scale Cuirass
+--#armor 139 -- Ichtycentaur Barding
+--#armor 264 -- Light bronze barding
 #armor 135 -- Bronze cap
 --#weapon 581 -- Bident
 --#weapon 1803 -- Banefire Torch
 #weapon 1803 -- Short Bident
-#weapon 1804 -- Banefire Torch
+#weapon 729 -- Banefire Torch
 #weapon 55 -- hoof
 #invulnerable 15
 #spiritsight
@@ -48489,7 +48551,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #heal
 #holy
 #goodleader
-#older 5
+#startage 71
 #stealthy 0
 #magicskill 9 1 -- Holy
 #custommagic 512 75 -- W
@@ -48516,7 +48578,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #weapon 1808 -- Repelling Barbs
 #poisonarmor 3
 #float
-#older 49
+#startage 138
 #expertleader
 #clearmagic
 #magicskill 2 1 -- Water
@@ -48542,7 +48604,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #weapon 55 -- hoof
 #weapon 1808 -- Repelling Barbs
 #poisonarmor 3
-#older 49
+#startage 138
 #expertleader
 #clearmagic
 #magicskill 2 1 -- Water
@@ -48569,7 +48631,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #weapon 1808 -- Repelling Barbs
 #poisonarmor 3
 #float
-#older 49
+#startage 101
 #landshape 8601
 #nametype 159 -- Oceania Male
 #end
@@ -48590,7 +48652,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #weapon 55 -- hoof
 #weapon 1808 -- Repelling Barbs
 #poisonarmor 3
-#older 49
+#startage 101
 #watershape 8600
 #nametype 159 -- Oceania Male
 #end
@@ -48605,7 +48667,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #rpcost 26
 #def 10
 #att 10
-#str 18
+#str 17
 #mr 13
 #clearweapons
 #weapon 680 -- bronze trident
@@ -48691,7 +48753,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #rpcost 26
 #def 11
 #att 11
-#str 17
+#str 18
 #mr 13
 #clearweapons
 #weapon 641 -- full bronze trident
@@ -48725,8 +48787,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #humanoid
 #clearmagic
 #magicskill 2 3 -- Water
---#custommagic 29952 300 -- AEDNG
-#custommagic 29696 300 -- EDNG
+#custommagic 29952 300 -- AEDNG
+--#custommagic 29696 300 -- EDNG
 #nametype 160 -- Oceania Female
 #end
 
@@ -50177,7 +50239,7 @@ With Ragnarok active, Surtr's sword is empowered and he will be able to destroy 
 #descr "On the shores of the Eastern Sea are many temples and shrines to the Dragon Kings, founded where Dragons are reputed to have been sighted. These temples are home to warrior monks that revere the Dragon Kings and their descendants as Divinities. Dragon monks practice ritual tattoo magic, covering their bodies in sinuous draconic imagery imbued with power. Through fasting and ascetic training they achieve perfection of body and mind. These monks practice koppo, the bone breaking technique. They train to fight multiple enemies at once and can even deflect projectiles from the air.
 Dragon Monks can be recruited in any land fort."
 #rpcost 21
-#gcost 10018
+#gcost 10015
 #str 12
 #mr 11
 #def 14
@@ -50202,7 +50264,7 @@ Dragon Monks can be recruited in any land fort."
 Dragon Monks can be recruited in any land fort."
 #rpcost 21
 #rcost 2
-#gcost 10018
+#gcost 10015
 #str 12
 #mr 11
 #def 13
@@ -51900,7 +51962,8 @@ Requires an Ippondatara present to recruit."
 --#enchrebate25p 275 -- Ench75 -- Stoke the Smouldercone
 #descr "The first Abysians sprung from the Fires of Rhuax were large magmatic beings, barely resembling humans at all. Slowly these monstrosities developed into humanoids. With every generation, the Fires of Rhuax grew cooler in their bodies and the flaming Children of Rhuax became smoldering Abysians. The Burning One is an Abysian of prominent heritage, claiming succession from the Children of Rhuax. The Burning Ones are surrounded by flames and most of them are trained as priests or sacred warriors. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #cleararmor
 #armor 570 -- Half Plate
@@ -54278,7 +54341,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #poormagicleader
 #forestsurvival
 #eyes 2
-#older 23
+#startage 52
 #maxage 40
 #magicskill 6 1
 #magicskill 9 1
@@ -54297,7 +54360,8 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #descr "In the Smouldercone, young and promising Abysians are trained in Blood magic. The apprentices are much feared, as they often carry out the task of collecting young virgins for their masters' sacrifices. Even with the rise of humanbred and scarcity of pureblood Abysians, only the pureblood are allowed to be inducted into apprenticeship and so new members are becoming increasingly rare. Warlock apprentices are Abysians and radiate the hellish heat characteristic of their race as well as being held sacred among the humanbred. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #holy
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -54309,7 +54373,8 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #holy
 #rpcost 4
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -56361,6 +56426,39 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #end
 
 
+
+#newmonster 9163
+#copystats 938  -- Barbarian Horseman
+#clearweapons
+#cleararmor
+#name "Bey"
+#spr1 "goldenhorde/bey.tga"
+#spr2 "goldenhorde/bey2.tga"
+#unmountedspr1 "goldenhorde/un_bey.tga"
+#unmountedspr2 "goldenhorde/un_bey2.tga"
+#descr "A Bey is a tribal chieftain and capable leader in times of war. Several tribes practice head binding or scarification to mark out the noble families, and in most tribes these families are ritually tattooed. The number and prominence of tattoos represent standing in society and often relate to the deeds of their owner. These tattoos can be awoken by a Shaman to provide protection and speed."
+#gcost 45
+#rcost -3
+#mor 12
+#prec 10
+#horsetattoo 2
+#okleader
+#weapon 8  -- Broad Sword
+#weapon 264  -- Composite Bow
+#armor 518 -- Lamellar Armor
+#armor 119  -- Reinforced Leather Cap
+#armor 2  -- Shield
+#prophetshape 6657 -- Khan
+#nametype 177  -- Mongolian Male
+#drawsize 0
+#mountmnr 9075
+#end
+
+#newmonster 9164 -- Kheshig horse
+#copystats 3576
+#copyspr 3576
+#neednoteat
+#end
 
 
 -- END OF NEW MONSTERS (Skip 9600~9672)
@@ -59966,7 +60064,7 @@ Cost 50 recruitment points."
 #spr2 "blue_bantaytubig/pygmy2.png"
 #name "Dagatnong Pygmy"
 #descr "On the coasts around Bantay Tubig live the Dagatnong, a tribe of short men. The first beings to arrive to the islands of Bantay Tubig, they mostly keep to themselves in their settlements, and are allowed to fish in exchange for occasionally providing other services. They are physically weak, but are renowned for their skill with a bow. Dagatnong can be recruited in any coastal, farm, or mountain province."
-#rpcost 4
+#rpcost 6
 #rcost 1
 #hp 5
 #str 5
@@ -59980,7 +60078,7 @@ Cost 50 recruitment points."
 #enc 3
 #mapmove 14
 #ap 8
-#gcost 10007
+#gcost 10008
 #weapon 671 -- Stone Dagger
 #weapon 24 -- Longbow
 #maxage 50
@@ -63141,6 +63239,10 @@ Cannot be recruited until Break the Deadlock is cast."
 
 #selectmonster 7170 -- Ghazi Lancer
 #skilledrider 4 -- 2 -> 4
+#end
+
+#selectmonster 9163 -- Bey
+#skilledrider 4 -- 3 -> 4
 #end
 
 #selectmonster 6919 -- Ta Pa
@@ -66339,49 +66441,57 @@ Cannot be recruited until Break the Deadlock is cast."
 
 #selectmonster 3746
 #coldpower 1
-#icenatprot 1
+#icenatprot  1
+#iceprotinspector  1
 #slashres
 #end
 
 #selectmonster 3747
 #coldpower 1
-#icenatprot 1
+#icenatprot  1
+#iceprotinspector  1
 #slashres
 #end
 
 #selectmonster 3748
 #coldpower 1
-#icenatprot 1
+#icenatprot  1
+#iceprotinspector  1
 #slashres
 #end
 
 #selectmonster 3749
 #coldpower 1
-#icenatprot 1
+#icenatprot  1
+#iceprotinspector  1
 #slashres
 #end
 
 #selectmonster 3750
 #coldpower 1
-#icenatprot 1
+#icenatprot  1
+#iceprotinspector  1
 #slashres
 #end
 
 #selectmonster 3751
 #coldpower 1
-#icenatprot 1
+#icenatprot  1
+#iceprotinspector  1
 #slashres
 #end
 
 #selectmonster 3752
 #coldpower 1
-#icenatprot 1
+#icenatprot  1
+#iceprotinspector  1
 #slashres
 #end
 
 #selectmonster 3753
 #coldpower 1
-#icenatprot 1
+#icenatprot  1
+#iceprotinspector  1
 #slashres
 #end
 
@@ -66562,7 +66672,8 @@ Only three Queens of Elemental Water are known to exist."
 #mor 30
 #goodmagicleader
 #goodleader
-#icenatprot 3
+#icenatprot  3
+#iceprotinspector  3
 #coldpower 2
 #str 18
 #att 14
@@ -78047,7 +78158,8 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #def 9
 #mr 18
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #itemslots 991750
 #clearmagic
@@ -79546,7 +79658,8 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #mr 18
 #cleararmor
 #prot 5
-#icenatprot 1
+#icenatprot  1
+#iceprotinspector  1
 #armor 176  -- dire wolf pelt
 #armor 20  -- Iron Cap
 #itemslots 991750
@@ -80861,7 +80974,8 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #def 9
 #mr 18
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 4
 #itemslots 2040326
 #clearmagic
@@ -84111,7 +84225,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Abysians are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to the cold. Abysian infantry uses heavy iron armor and heavy weapons that will not burn away in their smoldering hands. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #cleararmor
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #armor 570 -- Half Plate
 #armor 20 -- Cap
@@ -84123,7 +84238,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Abysians are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to the cold. Abysian infantry uses heavy iron armor and heavy weapons that will not burn away in their smoldering hands. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #cleararmor
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #armor 570 -- Half Plate
 #armor 20 -- cap
@@ -84135,7 +84251,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Abysians are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to the cold. Abysian infantry uses heavy iron armor and heavy weapons that will not burn away in their smoldering hands. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #cleararmor
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #armor 570 -- Half Plate
 #armor 20 -- cap
 #armor 4 -- Tower Shield
@@ -84147,7 +84264,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/abysian84_2.png"
 #descr "The Abysians are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to the cold. Abysian infantry uses heavy iron armor and heavy weapons that will not burn away in their smoldering hands. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #cleararmor
 #armor 570 -- Half Plate
@@ -84159,7 +84277,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr1 "vanilla/salamander85_1.png"
 #spr2 "vanilla/salamander85_2.png"
 #descr "The authority of the Abysian Warlords is limited to acts of war. In all other matters, Abysia is ruled by the Anathemants. Anathemant Salamanders are the holy priests of the Abysian faith. They take part in the public ceremonies where flames are lit on the grand ziggurats and processions of anathemant mage-priests circumambulate the temple grounds. Anathemants excel in Fire magic and use fire not only to incinerate infidels, but also to feed the anger inherent in the hearts of all Abysian warriors. The Anathemants practice human sacrifice to empower their Master's Dominion by the magic inherent in human blood. Anathemant Salamanders are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #montag 1068 -- Anathement
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
@@ -84170,7 +84289,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr1 "vanilla/dragon86_1.png"
 #spr2 "vanilla/dragon86_2.png"
 #descr "The caste of Anathemants are led by exalted Fire mages known as Dragons. These sacral mages administer the ceremonies and sacrifices in the Temple of the All-Consuming Flame. They lead processions of anathemant mage-priests circumambulating the temple grounds and oversee the Grand Sabbaths. They are revered and feared by all Abysians except the Warlocks of Smouldercone. Anathemant Dragons are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 --#enchrebate50 41  -- Second Sun
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
@@ -84184,7 +84304,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "Deep in the Smouldercone, the Warlocks of Abysia experiment with their brethren to create superior beings. The Demonbreds are the most successful of these creatures. Part demon, part Abysian, they share the strengths and weaknesses of both. The Demonbreds are bound by their nature to serve their masters as slaves. Trained as Anathemants and mages, they can achieve great status and influence. They are fanatically loyal to their masters and are the most trusted and able of the Abysian mages. Demonbreds radiate the hellish heat characteristic of Abysians. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #montag 1055
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 5
 #rpcost 2
 #end
@@ -84193,7 +84314,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 89  -- Warlock
 #descr "The Warlocks of Smouldercone are Blood mages of great renown. They experiment with the summoning and binding of otherworldly beings and the creation of new species. Their most successful experimental achievements to date are the Demonbreds. The Warlocks are the true masters of Abysia, but rarely dabble in politics. Warlocks are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84202,7 +84324,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/lavawarrior90_2.png"
 #descr "With the weakening of the Flame, there are no more Burning Ones born and Lava Warriors have replaced them as sacred warriors. Lava Warriors are the elite of the Abysian war machine. They are driven by an anger that turns into blind, berserk rage when they are wounded. These elite warriors train in the lava pits of the Smouldercone and are able to draw strength from the heat. They are very powerful in warm provinces, but cold will break down their great strength. Lava Warriors are armed with twin morning stars and serve the Anathemants without fear. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #cleararmor
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #armor 570 -- Half Plate
 #armor 20 -- cap
@@ -84213,7 +84336,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr1 "vanilla/rago.png"
 #spr2 "vanilla/rago2.png"
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84222,7 +84346,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/warlord119_2.png"
 #descr "Warlords are the warrior chiefs of Abysian society and radiate the hellish heat characteristic of their race. They lead the Abysians in war and plunder. Warlords are chosen on the basis of superior strength and fighting prowess. They are large in size and strong enough to use twin axes in battle. Since the Warlords fight their way to prominence, they are respected and feared by their troops. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84234,7 +84359,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #neednoteat
 #size 3
 #beastmaster 5
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84244,7 +84370,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/anathemant327_2.png"
 #descr "The caste of Anathemants are led by exalted Fire mages known as Dragons. These sacral mages administer the ceremonies and sacrifices in the Temple of the All-Consuming Flame. They lead processions of anathemant mage-priests circumambulating the temple grounds and oversee the Grand Sabbaths. They are revered and feared by all Abysians except the Warlocks of Smouldercone. Anathemant Dragons are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84253,7 +84380,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/slayer429_2.png"
 #descr "The Slayer is an Abysian assassin. He can pass unseen through enemy territories and try to assassinate enemy leaders. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84274,7 +84402,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #batstartsum3 90  -- Lava Warrior
 #onebattlespell "Personal Luck"
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84286,7 +84415,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #maxage 50
 #startage 40
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84300,7 +84430,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #enc 2  -- - base 3
 #itemslots 2040326
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 5
 #end
 
@@ -84308,7 +84439,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "In the Smouldercone, young and promising Abysians are trained in Blood magic. The apprentices are much feared, as they often carry out the task of collecting young virgins for their masters' sacrifices. Warlock apprentices are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #monpresentrec 89  -- Warlock
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84319,7 +84451,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr1 "vanilla/pyre990_1.png"
 #spr2 "vanilla/pyre990_2.png"
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84329,7 +84462,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/sanguine1092_2.png"
 #gcost 10010
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84348,7 +84482,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 9 3
 #custommagic 7296 100 -- FESD
 #custommagic 7296 10 -- FESD
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 4
 #end
 
@@ -84358,7 +84493,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "Deep in the Smouldercone, the Warlocks of Abysia experiment with their brethren to create superior beings. The Demonbreds are the most successful of these creatures. Part demon, part Abysian, they share the strengths and weaknesses of both. The Demonbreds are bound by their nature to serve their masters as slaves. Trained as assassins, they deliver death to the enemies of their Warlock masters. Demonbreds radiate the hellish heat characteristic of Abysians. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #montag 1055
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 5
 #end
 
@@ -84368,7 +84504,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Warlocks of Smouldercone are mages of a newly formed order. They experiment with Blood magic, the summoning and binding of otherworldly beings and the creation of new species. Their most recent experiments are the Demonbreds. Warlocks are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #douse 1
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84378,7 +84515,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "In the Smouldercone, young and promising Abysians are trained in Blood magic. In recent times the apprentices have become feared, as they carry out the task of collecting young virgins for their masters' sacrifices. Warlock apprentices are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #douse 1
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84388,7 +84526,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The first Abysians sprung from the Fires of Rhuax were large magmatic beings, barely resembling humans at all. Slowly these monstrosities developed into humanoids. With every generation, the Fires of Rhuax grew cooler in their bodies and the flaming Children of Rhuax became smoldering Abysians. The Burning One is an Abysian of prominent heritage, claiming succession from the Children of Rhuax. The Burning Ones are surrounded by flames and most of them are trained as priests or sacred warriors. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 --#enchrebate25p 275 -- Ench75 -- Stoke the Smouldercone
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #cleararmor
 #armor 570 -- Half Plate
@@ -84401,7 +84540,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "Deep in the Smouldercone, the Warlocks of Abysia experiment with their brethren to create superior beings. The Misbreds are defective, malformed and sometimes prematurely aged Demonbreds. The Misbreds are bound by their nature to serve their masters as slaves. While the Demonbreds are trained as assassins, the Misbreds are given purpose in life by the axe they wield. Misbreds must be led by a mage or commander with undead leadership. Misbreds radiate the hellish heat characteristic of Abysians. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #montag 1055
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 5
 #end
 
@@ -84409,7 +84549,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr1 "vanilla/anathemant327_1.png"
 #spr2 "vanilla/anathemant327_2.png"
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84419,7 +84560,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #neednoteat
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #montag 1068 -- Anathement
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84428,7 +84570,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 --#enchrebate50 41  -- Second Sun
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #montag 1068 -- Anathement
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #neednoteat
 #end
@@ -84439,7 +84582,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/slayerworm1965_2.png"
 #descr "With the dilution of the True Blood, the pureblood Abysians feared that the old traditions might be lost to the Humanbred population. To preserve the old ways the slayers were incorporated in the sacred caste of the Anathemants and a Slayer Cult was formed. The Slayers were trained as priests and murder was declared a sacred act. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84448,7 +84592,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/slayeranathemant1966_2.png"
 #descr "With the dilution of the True Blood, the pureblood Abysians feared that the old traditions might be lost to the Humanbred population. To preserve the old ways the slayers were incorporated in the sacred caste of the Anathemants and a Slayer Cult was formed. The Slayers were trained as priests and murder was declared a sacred act. The Slayer Anathemant is a prominent priest-assassin trained in the Temple of the Everburning Pyre. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84457,7 +84602,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/slayersanguine1967_2.png"
 #descr "With the dilution of the True Blood, the pureblood Abysians feared that the old traditions might be lost to the Humanbred population. To preserve the old ways the slayers were incorporated in the sacred caste of the Anathemants and a Slayer Cult was formed. The Slayers were trained as priests and murder was declared a sacred act. The Slayer Sanguine is a prominent priest-assassin trained in the Temple Sanguine. They are taught the secret art of performing blood rituals without the help of blood slaves to sacrifice. Instead they cut themselves and offer their own sacred blood at the risk of their own lives. To increase their chance of staying alive, they are given sacred athames that drain the life force from living beings. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84465,7 +84611,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr1 "vanilla/slayerrachis1968_1.png"
 #spr2 "vanilla/slayerrachis1968_2.png"
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84475,7 +84622,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #montag 1068 -- Anathement
 #gcost 10010
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84491,7 +84639,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #custommagic 5248 100
 #gcost 10010
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84501,7 +84650,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/lavaborn2510_2.png"
 #descr "The Lava-borns are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to cold. Most Lava-born live in Abysia, but there are rumors of Lava-born kingdoms deep in the under-earth. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84512,7 +84662,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 0 1
 #custommagic 1024 20  -- 20% E
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -84522,7 +84673,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr1 "vanilla/sorcerer2601_1.png"
 #spr2 "vanilla/sorcerer2601_2.png"
 #neednoteat
-#icenatprot -1
+#icenatprot  -1
+#iceprotinspector  -1
 #prot 3
 #end
 
@@ -86577,6 +86729,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #selectmonster 930  -- Khan
 #descr "With the barbarian invasion came new leadership and the Imperial Family was replaced by Barbarian Kings. The Khans come from the steppes and are skilled horsemen and warriors. They often fight side by side with their soldiers and their bravery and skill can inspire the most cowardly barbarian into deeds of heroic bravery. The first Khan to take up the Tug banner will become the Great Khan of the entire empire, able to raise the Kheshig elite Imperial Guard."
 #userestricteditem 1
+#mor 14
 #end
 
 #selectmonster 932  -- Hama Dryad
@@ -86707,6 +86860,14 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 966  -- Formless Spawn
 #montag 1020
+#end
+
+#selectmonster 972 -- Hybrid Soldier
+#voidsanity 5
+#end
+
+#selectmonster 2470 -- Hybrid Commander
+#voidsanity 5
 #end
 
 #selectmonster 973  -- Ancient Kraken
@@ -88831,13 +88992,13 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 
 #selectmonster 2025  -- Shesai Anakite
 #twiceborn 7231 -- Wight Giant
-#rpcost 96
+#rpcost 91
 #holycost 1
 #end
 
 #selectmonster 2026  -- Ahiman Anakite
 #twiceborn 7231 -- Wight Giant
-#rpcost 86
+#rpcost 84
 #holycost 1
 #end
 
@@ -89358,10 +89519,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #gcost 10035
 #clearweapons
 #weapon 641 -- bronze trident
---#hp 30
---#str 17
---#def 9
---#def 9
+#hp 30
+#str 17
+#def 9
+#def 9
 #end
 
 #selectmonster 2387 -- Pearl Guard
@@ -89529,10 +89690,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #clearweapons
 --#weapon 643 -- bronze spear
 #weapon 641 -- bronze trident
---#hp 30
---#str 17
---#def 9
---#def 9
+#hp 30
+#str 17
+#def 9
+#def 9
 #end
 
 #selectmonster 2414 -- MA Ichtytaur Warrior water
@@ -89558,10 +89719,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #clearweapons
 --#weapon 643 -- bronze spear
 #weapon 641 -- bronze trident
---#hp 30
---#str 17
---#def 9
---#def 9
+#hp 30
+#str 17
+#def 9
+#def 9
 #end
 
 
@@ -89742,7 +89903,7 @@ Cost 28 RP."
 #end
 
 #selectmonster 2602 -- Athraven
-#descr "When the Airyas arrived Tur was a stratified society. Families of hereditary priest-mages known as Magi had much influence in the kingdom. The Airya Seraphs adopted the Turan traditions and made themselves Magi of the Airyas. Now there are Magi families of both peoples and the stratification permeates the kingdom. The Athravan, Flame Keeper, is an Airya magus tending the sacred flames of the temples. Since fire is sacred to both peoples of Ragha, they both have Magi tending the sacred fires. The Athravan of Airya follow a tradition where flames must be kept pure from pollution and death. They despise and avoid the Turan Karapans, but recognize their status as priests of the Reawakening God. Athraven can still be recruited in slightly cold provinces."
+#descr "When the Airyas arrived Tur was a stratified society. Families of hereditary priest-mages known as Magi had much influence in the kingdom. The Airya Seraphs adopted the Turan traditions and made themselves Magi of the Airyas. Now there are Magi families of both peoples and the stratification permeates the kingdom. The Athravan, Flame Keeper, is an Airya magus tending the sacred flames of the temples. Since fire is sacred to both peoples of Ragha, they both have Magi tending the sacred fires. The Athravan of Airya follow a tradition where flames must be kept pure from pollution and death. They despise and avoid the Turan Karapans, but recognize their status as priests of the Reawakening God. Athraven can still be recruited in slightly warm provinces."
 #coldrec -1
 #end
 
@@ -91011,6 +91172,11 @@ The number of Scar Souls equals the one half the dominion of the province, round
 #clearweapons
 #weapon 1892 -- blinding spit
 #weapon 796 -- gobble
+#end
+
+#selectmonster 3713 -- Ministry Guardsman Mancatcher
+#name "Ministry Mancatcher"
+#descr "The Imperial footmen are skilled and heavily armed, but quite slow. To stifle internal unrest and protect administrators in times of civil disorder, the Bureaucracy needed faster soldiers that were quickly deployable and skilled at crowd control. Ministry guardsmen are medium elite infantry that accompany eunuchs and Ministers on their less popular missions. Their training and loyalty is almost as good as that of the Imperial soldiers and they are good at patrolling."
 #end
 
 #selectmonster 3790 -- Crosswielder
@@ -108643,6 +108809,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #path 6
 #look 5
+#homemon 295 -- Sacred Serpent
 #homemon 628 -- lion
 #homemon 1358 -- toad
 #homemon 2186 -- sacred croc
@@ -111046,6 +111213,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #path 6
 #look 2
+#homemon 295 -- Sacred Serpent
 #homemon 628 -- lion
 #homemon 1358 -- toad
 #homemon 2186 -- sacred croc
@@ -111424,6 +111592,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 3
 #look 1
+#homemon 6814 -- Sacred snake
 #homemon 6832 -- sacred eagle
 #homemon 6826 -- Atahsaia
 #homemon 6835 -- kat warrior
@@ -111846,6 +112015,9 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 4
 #look 6
 #homemon 7890 -- lobster hybrid
+#homemon 7489 -- Shoggoth Bud
+#homemon 7488 -- Shoggoth
+#homecom 7568 -- monstrous shoggoth
 #homecom 1562 -- void spectre
 #homecom 7456 -- hound of tindalos
 #end
@@ -111982,12 +112154,15 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 1338 -- cel hound
 #homemon 903 -- cel servant
 #homemon 902 -- cel Soldier
+#homemon 6946 -- Du
+#homemon 6947 -- Di Warrior
+#homemon 6945 -- Tsen
+#homemon 1363 -- anc spirit
+#homemon 7531 -- anc rider
 #homemon 2134 -- terra sold
 #homemon 7728 -- terra horse
 #homemon 7729 -- terra chariot
 #homecom 7772 -- terra general
-#homemon 1363 -- anc spirit
-#homecom 7531 -- anc rider
 #homecom 6528 -- cart
 #end
 
@@ -112696,6 +112871,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #path 0
 #look 1
+#homemon 295 -- Sacred Serpent
 #homemon 628 -- lion
 #homemon 1358 -- toad
 #homemon 2186 -- sacred croc
@@ -113499,8 +113675,10 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 6673 -- ubir
 #homemon 6674 -- baro
 #homemon 7531 -- anc rider
+#homemon 6945 -- Tsen
 #homecom 6669 -- erbuke
 #homecom 7530 -- shard
+#homecom 6671 -- archura remote indie summon
 #end
 
 #newsite 2581
@@ -113953,6 +114131,16 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 0
 #look 4
 #goddomcold -1
+#end
+
+#newsite 2609 
+#name "Field of Barometz"
+#level 0
+#rarity 5
+#path 6
+#look 4
+#popgrowth 20
+#res 25
 #end
 
 -- END OF NEW SITES
@@ -117323,7 +117511,7 @@ Priests: Average, can Blood Sacrifice"
 #era 1
 #descr "Zion is a hot, dry land inhabited by twelve ancient tribes. The secret of iron has not yet been discovered and horses have only just begun to be used in war. Recently a great Prophet King has ascended the throne and unified the tribes under one monarchy for the first time. The Prophet King has devoted himself to a newly Awakening God, receiving gifts of wisdom and knowledge for his devotion.  First among these gifts are Seals of great power that can compel the Jinn of the desert and even demons into service.
 Now the armies of Zion march accompanied by powerful spirit beings marshaled by the Kohanim. The enemies of the faithful will surely fall before the might of the Prophet King and his hosts."
-#summary "Race: Humans.
+#summary "Race: Humans. Prefers Heat scale +1.
 Military: Human infantry, chariots & some cavalry. Many summoned spirit beings are available.
 Magic: Fire, Air, Astral and Nature.
 Priests: Average"
@@ -117484,14 +117672,15 @@ Priests: Moderately strong; most priests are also mages."
 #addgod 2202 -- Great Siddha
 
 #delgod 905  -- REMOVE Jade Emperor
-#delgod 216  -- REMOVE Dragon (Red)
-#delgod 266  -- REMOVE Dragon (Red)
+--#delgod 216  -- REMOVE Dragon (Red)
+--#delgod 266  -- REMOVE Dragon (Red)
 #delgod 246  -- REMOVE Freak Lord
 #addgod 8399 -- Lord of Knowledge
 #addgod 8487 -- Statue of Wisdom
 #addgod 8392 -- Monkey King
 #addgod 8422 -- Tridevi
 #addgod 8425 -- Trimurti
+#addgod 8289 -- Mother of Mountains
 
 #startsite "Kyunglung Caves"
 #startsite "Yarlung Valley"
@@ -117926,7 +118115,25 @@ Priests: Average"
 #delgod 8307 -- Stone Magus
 #addgod 8419 -- Sun Father
 #addgod 8428 -- Triglav
+
+#addgod 3072 -- Sun Kami
+#addgod 8396 -- Fertility Kami
+#addgod 3073 -- Moon Kami
+#addgod 7578 -- Founding Father
+#addgod 8495 -- Daibatsu
+
+#addgod 2457 -- Bodhisattva of Mercy
+#addgod 8433 -- Deives of Spring
+#addgod 8459 -- Idol of Winter
+
+
+
 #cheapgod20 8492 -- Idol of Thunder
+#cheapgod20 8474 -- Ancestral Barrow
+#cheapgod20 872 -- Ghost King
+#cheapgod20 2465 -- Statue of War
+#cheapgod20 7578 -- Founding Father
+#cheapgod20 1340 -- Tiwaz of War
 
 #moreluck 1
 
@@ -117935,6 +118142,7 @@ Priests: Average"
 
 #futuresite "MA Tartary Summons"
 #futuresite "MA Tartary Heroes"
+#futuresite "Field of Barometz"
 
 #fortera 0
 #homefort 2  -- Fortress
@@ -117946,12 +118154,14 @@ Priests: Average"
 #hatesterr 224  -- Waste/Swamp/Forest
 #cavenation 0
 #idealcold 0
+#addreccom 9163
 #addreccom 6661
 #addrecunit 6658
 #addrecunit 6659
 #addrecunit 6660
 
 #addforeigncom 6665
+#addforeigncom 9163
 #addforeigncom 6661
 #addforeigncom 6657
 #addforeigncom 6655
@@ -118205,6 +118415,10 @@ Priests: Weak. Most mages are priests and some are Heretics."
 #addgod 8349 -- Great Gull
 #cheapgod20 3651 -- God Spider
 #addgod 8359 -- Great Water Lizard
+#cheapgod20 8256 -- Great Ancestor
+#cheapgod20 8359 -- Great Water Lizard
+#cheapgod20 8257 -- Uluru
+#cheapgod20 10021 -- Lord of the Desert Sun
 
 #addgod 10002 -- endless sky
 #addgod 10003 -- mystic deep
@@ -118935,7 +119149,7 @@ Priests: Average. Every temple adds one to the sacred recruit limit."
 #brief "A nation of bronze and iron armed humans that ride gigantic beasts. Shamans use ritual chants to perform powerful magic."
 #summary "Race: Humans, Gigantic beasts. Prefers Heat scale +2.
 Military: Light and Medium infantry, Sacred Cavalry and Thunder Beasts.
-Magic: Fire, Air, Nature, Death. Spellsingers and Spirit Dancers, Shamans can perform more powerful rituals.
+Magic: Fire, Air, Nature, Death, and Glamour. Spellsingers and Spirit Dancers, Shamans can perform more powerful rituals.
 Priests: Average"
 #color 0.4 0.05 0.1
 #secondarycolor 0.85 0.75 0.2
@@ -119845,6 +120059,7 @@ Priests: Average"
 #futuresite "EA T'ien Ch'i Summons"
 #futuresite "EA T'ien Ch'i Summons Continued"
 #futuresite "EA T'ien Ch'i Heroes"
+#futuresite "Blessing of the Four Holy Beasts"
 #end
 
 #selectnation 28 -- Machaka
@@ -120261,6 +120476,7 @@ Oni will collect due tax from populations with unrest, partially recuperating lo
 #futuresite "EA Yomi Summons"
 #futuresite "EA Yomi Summons Continued"
 #futuresite "EA Yomi Heroes"
+#futuresite "Blessing of the Four Holy Beasts"
 #end
 
 #selectnation 17 -- EA Hinnom
@@ -121017,6 +121233,7 @@ Dominion: Laws may be enacted that ban blood and increase scales"
 #futuresite "MA T'ien Ch'i Summons"
 #futuresite "MA T'ien Ch'i Summons Continued"
 #futuresite "MA T'ien Ch'i Heroes"
+#futuresite "Blessing of the Four Holy Beasts"
 
 #end
 
@@ -121316,6 +121533,7 @@ Nation: Reduced income. Halved population growth from Growth scales."
 #futuresite "MA Shinuyama Summons Continued"
 #futuresite "MA Shinuyama Uniques"
 #futuresite "MA Shinuyama Heroes"
+#futuresite "Blessing of the Four Holy Beasts"
 #end
 
 #selectnation 64 -- MA Ashdod
@@ -122125,6 +122343,12 @@ Bless bonuses: Poison Resistance +10"
 #end
 
 #selectnation 111 -- LA Mictlan
+
+#summary "Race: Humans and Atlantians, prefers Heat scale +1
+Military: Light infantry with slings and javelins, tribal kings can levy slaves, sacred Jaguar Warriors. Sacred Atlantians that can enter the sea.
+Magic: Water, Blood, Fire, Astral, Nature
+Priests: Powerful, can perform blood sacrifices, Dominion does not spread unless blood is sacrificed"
+
 #hero1 933  -- Mictlipctli, King of Legends
 #hero2 936  -- Tepeyocatl
 #hero3 935  -- Quetzalcoatl, Priest King
@@ -122207,6 +122431,7 @@ Bless bonuses: Poison Resistance +10"
 #futuresite "LA T'ien Ch'i Summons"
 #futuresite "LA T'ien Ch'i Summons Continued"
 #futuresite "LA T'ien Ch'i Heroes"
+#futuresite "Blessing of the Four Holy Beasts"
 #end
 
 #selectnation 88
@@ -122237,6 +122462,7 @@ Bless bonuses: Poison Resistance +10"
 #futuresite "LA Jomon Kami"
 #futuresite "LA Jomon Uniques"
 #futuresite "LA Jomon Heroes"
+#futuresite "Blessing of the Four Holy Beasts"
 
 #end
 
@@ -123372,7 +123598,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #researchlevel 3
 #pathlevel 0 2
 #fatiguecost 300
-#nreff 502
+#nreff 2
 #damage 7365
 #end
 
@@ -125157,8 +125383,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 7
 #pathlevel 0 3
 #pathlevel 1 2
-#nreff 503
-#fatiguecost 600
+#nreff 505
+#fatiguecost 1000
 #end
 
 #selectspell 2231
@@ -130066,7 +130292,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #pathlevel 0 2
 #fatiguecost 800
 #damage 6988 -- Rockshell
-#nreff 503
+#nreff 3
 #restricted 202 -- Gondwana
 #end
 
@@ -130090,7 +130316,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #pathlevel 0 3
 #fatiguecost 500
 #damage 6987 -- Terror Bird
-#nreff 503
+#nreff 3
 #onlyatsite 2187 -- Gondwana Plains
 #restricted 202 -- Gondwana
 #end
@@ -130380,8 +130606,8 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #researchlevel 2
 #pathlevel 0 2
 #pathlevel 1 0
-#fatiguecost 800
-#nreff 2
+#fatiguecost 1200
+#nreff 3
 #restricted 63 -- MA Abysia
 #end
 
@@ -130791,7 +131017,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #researchlevel 5
 #pathlevel 0 3
 #fatiguecost 1200
-#nreff 503
+#nreff 3
 #restricted 63 -- MA Abysia
 #end
 
@@ -134512,7 +134738,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 9
 #pathlevel 1 1
 #effect 10001
-#nreff 503
+#nreff 3
 #damage 7287 -- Ghostly Rephaite
 #fatiguecost 700
 #restricted 64 -- Ashdod
@@ -135927,7 +136153,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #descr "The caster summons a pod of Orca and binds them to his service. Orca are also known as Killer Whales and are large and ferocious hunters. They cannot leave the sea."
 #researchlevel 3
 #pathlevel 0 3
-#nreff 503
+#nreff 3
 #fatiguecost 600
 #damage 7444
 #restricted 126 -- LA Atlantis
@@ -137280,7 +137506,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 6
 #pathlevel 1 2
 #fatiguecost 1000
-#nreff 503
+#nreff 3
 #nogeosrc 64  -- Waste
 #damage 7654 -- Indus Worm
 #restricted 41 -- EA Oceania
@@ -139025,13 +139251,13 @@ All effects scale with friendly Dominion."
 
 #selectspell 3270
 #copyspell 1391 -- Bind Spine Devil
-#name "Bind Chort"
-#descr "The caster sacrifices three blood slaves to contact and bind a Chort. Chorts are demonic beings of total evil feared throughout Bogarus. They are armed with vicious claws and a wicked barbed tail, whilst their gaze can hypnotize the weak willed."
+#name "Bind Chorts"
+#descr "The caster sacrifices a few blood slaves to contact and bind a trio of Chorts. Chorts are demonic beings of total evil feared throughout Bogarus. They are armed with vicious claws and a wicked barbed tail, whilst their gaze can hypnotize the weak willed."
 #pathlevel 0 1
 #path 1 5
 #pathlevel 1 1
-#fatiguecost 300
-#nreff 1
+#fatiguecost 900
+#nreff 3
 #damage 7831 -- Chort
 #restricted 116 -- Bogarus
 #end
@@ -139333,7 +139559,7 @@ All effects scale with friendly Dominion."
 #effect 10001
 #fatiguecost 700
 #damage 7635 -- Amaru
-#nreff 503
+#nreff 3
 #spellreqfly 1
 #onlygeosrc 8388624  -- Mountains & Border Mountains
 #restricted 72 -- Nazca
@@ -140410,7 +140636,7 @@ All effects scale with friendly Dominion."
 #path 1 6  -- Nature 1
 #pathlevel 1 1
 #effect 10001  -- Summon units
-#nreff 503
+#nreff 3
 #fatiguecost 500
 #damage 6901 -- Bdud Warrior
 #restricted 187
@@ -140506,7 +140732,7 @@ All effects scale with friendly Dominion."
 
 #selectspell 3370
 #name "Summon Dü"
-#descr "Dü are angry, violent demons who haunt the valleys and mountains near Shambhala. Despite their demonic nature, they are of this world and do not require blood sacrifice to be summoned. Ngagspa sorcerers sometimes summon them to wreak havoc on those who have offended them, or to destroy their enemies. This ritual must be performed in a mountain or cavern province."
+#descr "Dü are angry, violent demons who haunt the valleys and mountains near Shambhala. Despite their demonic nature, they are of this world and do not require blood sacrifice to be summoned. Sorcerers sometimes summon them to wreak havoc on those who have offended them, or to destroy their enemies. This ritual must be performed in a mountain or cavern province."
 #school 0  -- Conjuration
 #researchlevel 3
 #path 0 3  -- Earth 1
@@ -140517,13 +140743,14 @@ All effects scale with friendly Dominion."
 #nreff 8
 #fatiguecost 800
 #damage 6946 -- Bdud
-#restricted 188
 #onlygeosrc 8392720  -- only castable in mountain, border-mountain and cave provinces
+#restricted 188 -- Shambhala
+#restricted 109 -- LA TC
 #end
 
 #selectspell 3371
 #name "Summon Dü Warriors"
-#descr "Dü are angry, violent demons who haunt the valleys and mountains near Shambhala. Despite their demonic nature, they are of this world and do not require blood sacrifice to be summoned. Ngagspa sorcerers sometimes summon them to wreak havoc on those who have offended them, or to destroy their enemies. The better-equipped Dü warriors are known to use battle axes and crude armor. This ritual must be performed in a mountain or cavern province."
+#descr "Dü are angry, violent demons who haunt the valleys and mountains near Shambhala. Despite their demonic nature, they are of this world and do not require blood sacrifice to be summoned. Sorcerers sometimes summon them to wreak havoc on those who have offended them, or to destroy their enemies. The better-equipped Dü warriors are known to use battle axes and crude armor. This ritual must be performed in a mountain or cavern province."
 #school 0
 #researchlevel 5
 #path 0 3  -- Earth 1
@@ -140534,33 +140761,36 @@ All effects scale with friendly Dominion."
 #nreff 6
 #fatiguecost 800
 #damage 6947 -- Bdud Warrior
-#restricted 188
 #onlygeosrc 8392720  -- only castable in mountain, border-mountain and cave provinces
+#restricted 188 -- Shambhala
+#restricted 109 -- LA TC
 #end
 
 #selectspell 3372
 #name "Send Tsen"
 #descr "Through an offering of gems, a mage can induce a Tsen, a black-skinned demon archer, to hunt down and kill an enemy. Tsen are demons of hunting who, it is said, made the first bows. They hunt down humans who venture into the mountains, and spread diseases if angered. This ritual must be performed in the mountains."
 #school 0  -- Conj
-#researchlevel 5
+#researchlevel 6
 #path 0 5 -- D
 #pathlevel 0 4
 #path 1 1 -- A
 #pathlevel 1 1
 #effect 10050  -- Farsummon Assassination
 #nreff 1
-#fatiguecost 500
+#fatiguecost 1000
 #damage 6945 -- Btsan
-#restricted 188
 #onlygeosrc 8388624  -- only castable in mountain and border mountain provinces
 #provrange 3
+#restricted 188 -- Shambhala
+#restricted 191 -- Tartary
+#restricted 109 -- LA TC
 #end
 
 #selectspell 3373
 #name "Call Tsen"
 #descr "By an offering of gems, a mage can call forth some of the black-skinned demons called Tsen and bind them into service. Tsen are demons of hunting who, it is said, made the first bows. They hunt down humans who venture into the mountains, and spread diseases if angered. This ritual must be performed in the mountains."
-#school 6  -- Blood
-#researchlevel 3
+#school 0  -- Conj
+#researchlevel 5
 #path 0 5 -- D
 #pathlevel 0 2
 #path 1 1 -- A
@@ -140569,8 +140799,10 @@ All effects scale with friendly Dominion."
 #nreff 505
 #fatiguecost 1200
 #damage 6945 -- Btsan
-#restricted 188
 #onlygeosrc 8388624  -- only castable in mountain and border mountain provinces
+#restricted 188 -- Shambhala
+#restricted 191 -- Tartary
+#restricted 109 -- LA TC
 #end
 
 #selectspell 3374
@@ -141839,8 +142071,8 @@ All effects scale with friendly Dominion."
 #end
 
 #selectspell 3480
-#name "Summon Bunyip"
-#descr "The caster calls forth a Bunyip from the Dreamtime and magically yokes it to serve. The Bunyip is a pond and bog-dwelling creature that spends half its time in the Dreamtime and half in the material world. The roar of a Bunyip strikes fear into the hearts of men, and those unfortunate enough to be bitten by a Bunyip contract a terrible fever that few survive."
+#name "Summon Bunyips"
+#descr "The caster calls forth a group of Bunyips from the Dreamtime and magically yokes it to serve. The Bunyip is a pond and bog-dwelling creature that spends half its time in the Dreamtime and half in the material world. The roar of a Bunyip strikes fear into the hearts of men, and those unfortunate enough to be bitten by a Bunyip contract a terrible fever that few survive."
 #school 0
 #researchlevel 3
 #path 0 7
@@ -142662,7 +142894,7 @@ All effects scale with friendly Dominion."
 #pathlevel 0 1
 #pathlevel 1 1
 #effect 10001
-#nreff 503
+#nreff 3
 #damage 6827
 #fatiguecost 700
 #restricted 181 -- EA Chaco
@@ -143020,7 +143252,7 @@ All effects scale with friendly Dominion."
 #pathlevel 0 2  -- /
 #effect 10001
 #damage 6639
-#nreff 503 -- 3+1/2
+#nreff 3
 #fatiguecost 700
 #restricted 198 -- EA Nihuala
 #restricted 199 -- MA Nihuala
@@ -143385,13 +143617,13 @@ All effects scale with friendly Dominion."
 #name "Tattoo Chant"
 #descr "The caster chants loudly, calling the spirits to activate the dormant powers of enchanted tattoos for several soldiers. The tattoos of the tribes grant increased speed and limited invulnerability."
 #school 4
-#researchlevel 3
+#researchlevel 2
 #path 0 1
 #pathlevel 0 2
 #range 5010
 #effect 23
 #nreff 1
-#aoe 5
+#aoe 5005 -- 10+5
 #precision 100
 #flightspr 0
 #explspr 10207
@@ -143423,13 +143655,13 @@ All effects scale with friendly Dominion."
 
 #selectspell 3584
 #name "Vegetable Lambs"
-#descr "The caster causes several magical Barometz plants to grow in a nearby friendly province. The Barometz or Vegetable Lamb is a strange plant that grows full sized sheep as its fruit. These plantlike sheep are connected to the ground by a stalk and graze the area around the plant. The plant can be harvested and the sheep-fruit is delicious when cooked and eaten. Each Barometz plant will provide a fruit each month, feeding up to 10 soldiers, however they cannot leave the province."
+#descr "The caster causes several magical Barometz plants to grow in a nearby friendly province. The Barometz or Vegetable Lamb is a strange plant that grows full sized sheep as its fruit. These plantlike sheep are connected to the ground by a stalk and graze the area around the plant. The plant can be harvested and the sheep-fruit is delicious when cooked and eaten, and their wool can be spun into clothing and armor. As long as there are Barometz in a province, it experience growth and available resources will increase. Each Barometz plant will provide a fruit each month, feeding up to 10 soldiers, however they cannot leave the province."
 --#details "Each Barometz produces 10 supply and 2 resources."
 #school 4
 #researchlevel 3
 #path 0 6
 #pathlevel 0 1
-#fatiguecost 200
+#fatiguecost 500
 #effect 10037
 #damage 6674 -- Vegetable Lambs
 #nreff 1004 -- 5+
@@ -143537,7 +143769,7 @@ All effects scale with friendly Dominion."
 #path 0 5
 #pathlevel 0 3
 #effect 10001
-#nreff 503
+#nreff 3
 #damage 6673 -- Ubir
 #fatiguecost 700
 #restricted 116 -- Bogarus
@@ -145166,7 +145398,7 @@ All effects scale with friendly Dominion."
 #name "Waters of the River Styx"
 #descr "To to half-men in the Grove of Bythos, on the boundary of Oceania and the Underworld, the magic of the underworld comes easily. The caster channels the magic of the underworld rivers and imbues a group of soldiers with water from the River Styx. The stygian water transforms the skin of all living entities making them almost impervious to physical damage."
 #details "Grants Invulnerability 15"
-#aoe 20
+#aoe 25
 #damage 17179869184
 #path 0 5 -- Death
 #pathlevel 0 2
@@ -148760,7 +148992,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #path 0 8 -- B
 #effect 10082
 #damage 279 -- Ench79 -- Witches' Sabbath
-#fatiguecost 3000
+#fatiguecost 5000
 #nreff 1
 #end
 
@@ -148778,7 +149010,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #nreff 1
 #effect 10083
 #damage -1
-#fatiguecost 3000
+#fatiguecost 5000
 #nextspell 4075
 #restricted 62 -- MA Pyrene
 #end
@@ -148834,9 +149066,10 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 
 #selectspell 4080 -- Pact Devil
 #copyspell 1398 -- Bind Devil
-#name "Pact with a Devil"
+#name "Pact with Devils"
 #descr "Many devils and other demonic beings will make an appearance when an Akelarre, or Witches' Sabbath, is held. Sorginak that attend may use the gathering to cast powerful spells, or sometimes they may make bargains with demonic powers. Amongst the revelry and debauchery at an Akelarre, devils are often much more receptive to bargains and Sorginak frequently make pacts in which they offer up a few virgins for sacrifice to a devil in exchange for their service."
-#fatiguecost 200
+#fatiguecost 400
+#nreff 2
 #pathlevel 1 1
 #restricted 62 -- MA Pyrene
 #onlyatsite 2361
@@ -148844,9 +149077,10 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 
 #selectspell 4081 -- Pact Storm Demon
 #copyspell 1406 -- Storm Demon
-#name "Pact with a Storm Demon"
+#name "Pact with Storm Demons"
 #descr "Many devils and other demonic beings will make an appearance when an Akelarre, or Witches' Sabbath, is held. Sorginak that attend may use the gathering to cast powerful spells, or sometimes they may make bargains with demonic powers. Amongst the revelry and debauchery at an Akelarre, demons are often much more receptive to bargains and Sorginak frequently make pacts in which they offer up a handful of virgins for sacrifice to a storm demon in exchange for their service."
-#fatiguecost 600
+#fatiguecost 1200
+#nreff 2
 #restricted 62 -- MA Pyrene
 #onlyatsite 2361
 #end
@@ -149143,8 +149377,9 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #copyspell 1406 -- Storm Demon
 #name "Gathering of Storm Demons"
 #descr "Many devils and other demonic beings will make an appearance when an Akelarre, or Witches' Sabbath, is held. Sorginak that attend may use the gathering to cast powerful spells, or sometimes they may make bargains with demonic powers. Amongst the revelry and debauchery at an Akelarre, demons are often much more receptive to bargains and Sorginak frequently make pacts in which they offer up a handful of virgins for sacrifice to a storm demon in exchange for their service. With this pact the Sorginak may acquire the services of several storm demons."
-#fatiguecost 1200
-#nreff 3
+#fatiguecost 2000
+#pathlevel 0 3
+#nreff 5
 #researchlevel 7
 #restricted 62 -- MA Pyrene
 #onlyatsite 2361
@@ -151635,7 +151870,7 @@ This spell can only be cast in a deep water province."
 #pathlevel 0 2
 #pathlevel 1 1
 #fatiguecost 500
-#nreff 502
+#nreff 3
 #damage 9143 -- Yeti Crab
 #onlygeosrc 2048  -- Deep Sea
 #restricted 43 -- Atlantis
@@ -151897,6 +152132,258 @@ This spell can only be cast in a deep water province."
 #damage 1099511627776  -- Wolves gain Invuln 15
 #spec 281474989309952  -- Ignores Shields, Friendlies Animals Only, uwok
 #end
+
+
+
+-- Pointbuffs 100 precision
+#selectspell 783 -- Enlarge
+#precision 100
+#end
+
+#selectspell 789 -- Protective Winds
+#precision 100
+#end
+
+#selectspell 796 -- Body Ethereal
+#precision 100
+#end
+
+#selectspell 807 -- Quickness
+#precision 100
+#end
+
+#selectspell 812 -- Stoneskin
+#precision 100
+#end
+
+#selectspell 835 -- Group Stoneskin
+#precision 100
+#end
+
+#selectspell 838 -- Ironskin
+#precision 100
+#end
+
+#selectspell 855 -- Group Ironskin
+#precision 100
+#end
+
+#selectspell 896 -- Quickening
+#precision 100
+#end
+
+#selectspell 1086 -- Temper Armors
+#precision 100
+#end
+
+#selectspell 1105 -- Trueshot
+#precision 100
+#end
+
+#selectspell 1109 -- Strength of Giants
+#precision 100
+#end
+
+#selectspell 1118 -- Ignite Arrows
+#precision 100
+#end
+
+#selectspell 1127 -- Envenom Arrows
+#precision 100
+#end
+
+#selectspell 1128 -- Gift of the Serpent
+#precision 100
+#end
+
+#selectspell 1134 -- Gift of Flight
+#precision 100
+#end
+
+#selectspell 1139 -- Gift of Giant Strength
+#precision 100
+#end
+
+#selectspell 1144 -- Regeneration
+#precision 100
+#end
+
+#selectspell 1150 -- Levitate Soldiers
+#precision 100
+#end
+
+#selectspell 1153 -- Earth Shatter Hammers
+#precision 100
+#end
+
+#selectspell 1164 -- Serpent Fang Arrows
+#precision 100
+#end
+
+#selectspell 1177 -- Weapons of Sharpness
+#precision 100
+#end
+
+#selectspell 1185 -- Group Regeneration
+#precision 100
+#end
+
+#selectspell 1274 -- Battle Fury
+#precision 100
+#end
+
+#selectspell 1280 -- Beast Fury
+#precision 100
+#end
+
+#selectspell 1292 -- Luck
+#precision 100
+#end
+
+#selectspell 1296 -- Furious Warriors
+#precision 100
+#end
+
+#selectspell 1307 -- Touch of Madness
+#precision 100
+#end
+
+#selectspell 1329 -- Group Luck
+#precision 100
+#end
+
+#selectspell 1341 -- Mirror Mind
+#precision 100
+#end
+
+#selectspell 3876 -- Amberskin
+#precision 100
+#end
+
+#selectspell 3894 -- Gift of Fish-fins
+#precision 100
+#end
+
+#selectspell 3900 -- Deflect Arrows
+#precision 100
+#end
+
+#selectspell 4269 -- Levitation
+#precision 100
+#end
+
+#selectspell 785 -- Blur
+#precision 100
+#end
+
+#selectspell 797 -- Gift of Cat Eyes
+#precision 100
+#end
+
+#selectspell 801 -- Mossbody
+#precision 100
+#end
+
+#selectspell 803 -- Group Blur
+#precision 100
+#end
+
+#selectspell 811 -- Mistform
+#precision 100
+#end
+
+#selectspell 848 -- Shadow Warriors
+#precision 100
+#end
+
+#selectspell 869 -- Gift of Displacement
+#precision 100
+#end
+
+#selectspell 1146 -- Gift of True Sight
+#precision 100
+#end
+
+#selectspell 1166 -- Gift of Splendor
+#precision 100
+#end
+
+#selectspell 1182 -- Gift of Spirit Sight
+#precision 100
+#end
+
+#selectspell 2209 -- Leech the Living
+#precision 100
+#end
+
+#selectspell 2255 -- Cat's Ninth Life
+#precision 100
+#end
+
+#selectspell 4270 -- Fay Eyes
+#precision 100
+#end
+
+#selectspell 2486 -- Fate of the Druids
+#precision 100
+#end
+
+#selectspell 523 -- Gift of the First Soul
+#precision 100
+#end
+
+#selectspell 524 -- Gift of the Second Soul
+#precision 100
+#end
+
+#selectspell 526 -- Gift of the Fourth Soul
+#precision 100
+#end
+
+#selectspell 2454 -- Sharpen Steel
+#precision 100
+#end
+
+#selectspell 2523 -- Alchemical Preparation
+#precision 100
+#end
+
+#selectspell 2793 -- Blood Portent
+#precision 100
+#end
+
+#selectspell 2921 -- Teachings of Ezekiel
+#precision 100
+#end
+
+#selectspell 3318 -- Gift of the Airya
+#precision 100
+#end
+
+#selectspell 3815 -- Tidings of the Changing Shore
+#precision 100
+#end
+
+#selectspell 3917 -- Basalt Blessing
+#precision 100
+#end
+
+#selectspell 4074 -- Adur
+#precision 100
+#end
+
+#selectspell 4125 -- War Spirit's Favor
+#precision 100
+#end
+
+#selectspell 4127 -- Sky Spirit's Favor
+#precision 100
+#end
+
+#selectspell 2946 -- Shroud of Fear
+#precision 100
+#end
+
 
 #selectspell 3  -- Large Area Heat Shock
 #aoe 2002
@@ -152512,8 +152999,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 497 -- Jotun Draugar
-#fatiguecost 900
-#nreff 503
+#fatiguecost 800
+#nreff 3
 #end
 
 #selectspell 498 -- Summon Rimvaettir
@@ -153417,7 +153904,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 950 -- Cave Crab
 #fatiguecost 300
-#nreff 502
+#nreff 2
 #end
 
 
@@ -153942,6 +154429,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #aoe 1013 -- 15+
 #end
 
+#selectspell 1307 -- Touch of Madness
+#ainocast 1
+#end
+
 #selectspell 1325 -- Pack Ferocity
 #aoe 1033 -- 35+
 #end
@@ -154459,16 +154950,20 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1391 -- Bind Spine Devils
 #name "Bind Spine Devils"
-#fatiguecost 500
-#nreff 2
-#descr "The caster sacrifices several blood slaves to contact and bind several Spine Devils. Spine Devils are spine-covered, wingless demons that fight with two venomous claws and a barbed tail. The spines covering their bodies are poisonous and anyone attacking them with short weapons may get poisoned."
+#descr "The caster sacrifices several blood slaves to contact and bind a trio of Spine Devils. Spine Devils are spine-covered, wingless demons that fight with two venomous claws and a barbed tail. The spines covering their bodies are poisonous and anyone attacking them with short weapons may get poisoned."
+#fatiguecost 800
+#nreff 3
 #end
 
 #selectspell 1392 -- Bind Fiend
+#name "Bind Fiends"
+#descr "The caster sacrifices several blood slaves to contact and bind a pair of Fiends of Darkness. Fiends of Darkness are coal-black demons summoned from the Abyss. They fight with venomous claws and have bat-like wings. Fiends of Darkness are able to hide in the night and are stealthy."
 #path 0 8
 #pathlevel 0 1
 #path 1 5
 #pathlevel 1 1
+#nreff 2
+#fatiguecost 600
 #notfornation 185 -- Albion
 #end
 
@@ -154478,36 +154973,49 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1398 -- Bind Devil
+#name "Bind Devils"
+#descr "The caster sacrifices several blood slaves to contact and bind a pair of Devils. Devils are infernal beings of great strength. They are born in the fires of the Inferno and are impervious to heat and flame. Their glowing bodies radiate heat and bat-like wings grow from their shoulders. Devils are armed with a trident and their barbed tails can sting opponents in close combat."
 #fatiguecost 400
 #path 0 8
 #pathlevel 0 1
 #path 1 0
 #pathlevel 1 1
+#nreff 2
+#fatiguecost 800
 #end
 
 #selectspell 1399 -- Bind Frost Fiend
-#fatiguecost 500
+#name "Bind Frost Fiends"
+#descr "The caster sacrifices several blood slaves to contact and bind a pair of Frost Fiends. Frost Fiends are devils from Kokytos, the icy realms of the Inferno. In the constant wars of their native plane, the Frost Fiends are feared by all fiery devils. Frost Fiends wear robes of woven ice and are constantly surrounded by an icy wind. They wield ice rods and can unleash blasts of infernal cold upon their enemies."
 #path 0 8
 #pathlevel 0 1
 #path 1 2
 #pathlevel 1 1
+#nreff 2
+#fatiguecost 1000
 #end
 
 #selectspell 1406 -- Bind Storm Demon
+#name "Bind Storm Demons"
+#descr "The caster sacrifices several blood slaves to contact and bind a pair of Storm Demons. Storm Demons are devils of the tempest realm. The bodies of the Storm Demons consist partly of storm clouds. They are ethereal and can unleash blasts of infernal lightning upon their enemies."
 #path 0 8
 #pathlevel 0 1
 #path 1 1
 #pathlevel 1 2
-#fatiguecost 1000
+#nreff 2
+#fatiguecost 2000
 #end
 
 #selectspell 1414 -- Bind Demon Knight
+#name "Bind Fiends"
+#descr "The caster sacrifices several blood slaves to summon and bind a pair of Demon Knights to his service. The Demon Knight is an armored demon riding a demonic steed with glowing red eyes. Demon Knights are horrible to behold and their mere presence will cause panic among weaker troops."
 #researchlevel 4
 #path 0 8
 #pathlevel 0 1
 #path 1 3
 #pathlevel 1 2
-#fatiguecost 1100
+#nreff 2
+#fatiguecost 2200
 #end
 
 #selectspell 1400 -- Cross breeding
@@ -155303,9 +155811,10 @@ Can only be cast once per combat round."
 #secondarylevel 1
 #type 8
 #spell "Freezing Touch"
-#fireres 5
 #weapon 0
 #restricted 203 -- Dragon Kings
+#bestowtomount
+#fireres 5
 #end
 
 #selectitem 641
@@ -155400,12 +155909,13 @@ Can only be cast once per combat round."
 #noinanim
 #noundead
 #pen 2
-#mr 2
 #cursed
 #nofind
 #restricted 193 -- Alchera
 #itemcost1 -20
 #itemcost2 -33
+#bestowtomount
+#mr 2
 #end
 
 #selectitem 644
@@ -155419,9 +155929,10 @@ Can only be cast once per combat round."
 #name "Apotropaic Eye"
 #descr "The eye has long been seen as a protective symbol against evil magics. Some mages reasoned that the larger the eye the greater the protection, and so the largest eyes taken from the huge creatures that live in the deepest oceans are most highly prized. This eye was taken from a great Kraken and has had many protective enchantments laid upon it. The power of the the eye will ensure the entire army is protected from evil enchantments and sorcery of all kinds, however it takes two hands to carry and the bearer will be quite vulnerable."
 #type 2  -- two-handed weapon
-#mr 2
 #weapon 547  -- Buff
 #autospell "Antimagic"
+#bestowtomount
+#mr 2
 #end
 
 #selectitem 645
@@ -155433,10 +155944,11 @@ Can only be cast once per combat round."
 #constlevel 9
 #unique
 #siegebonus 200
-#mapspeed -4
-#swift -50
 #weapon 1681 -- Caladbolg
 #minsize 9
+#bestowtomount
+#mapspeed -4
+#swift -50
 #end
 
 #selectitem 646
@@ -155574,11 +156086,12 @@ Can only be cast once per combat round."
 #itemcost1 -20
 #itemcost2 -40
 #type 5  -- Body Armor
-#poisonres 5
 #armor 43  -- Hydra Skin Armor
 #weapon 1808 -- repelling barbs
-#poisonarmor 5
 #hp 4
+#poisonarmor 5
+#bestowtomount
+#poisonres 5
 #end
 
 #selectitem 654
@@ -155590,10 +156103,11 @@ Can only be cast once per combat round."
 #mainlevel 4
 #constlevel 9
 #fireres 0
-#mr 4
 #pen 4
-#haltheretic 5
 #unique
+#bestowtomount
+#haltheretic 5
+#mr 4
 #end
 
 #selectitem 655
@@ -155608,11 +156122,12 @@ Can only be cast once per combat round."
 #mainlevel 3
 #secondarylevel 3
 #constlevel 9
+#unique
+#bestowtomount
 #shockres 20
 #poisonres 20
 #coldres 20
 #fireres 20
-#unique
 #end
 
 #selectitem 656
@@ -155640,7 +156155,6 @@ Can only be cast once per combat round."
 #spr "magicenhanced/eeilapis.tga"
 #name "Token of the Deep"
 #descr "This unassuming Lapis Lazuli token was created by Thalassa, Queen of the Sea, and originally granted to an adventurer that had performed a great service for her people. The token allows the bearer and a great host beside to step into the ocean where they will be born along by the waves to their destination, wherever that may be. The largest creatures may be too heavy for the waves and will be unable to travel in this manner. The token will also grant passage below the waves, and when beneath the surface the bearer will be accompanied by elemental guardians."
-#waterbreathing
 #giftofwater 200
 #mainpath 2
 #secondarypath 1
@@ -155650,6 +156164,8 @@ Can only be cast once per combat round."
 #farsail 10
 #batstartsum1d6 360  -- Undines
 #unique
+#bestowtomount
+#waterbreathing
 #end
 
 #selectitem 658
@@ -155680,7 +156196,6 @@ Can only be cast once per combat round."
 #sneakunit 0
 #stealthboost -200
 #undcommand 100
-#ethereal
 #batstartsum5 1541  -- Ghost Champion
 #batstartsum1d6 442  -- Shade Beast
 #batstartsum3d6 674  -- Dispossessed Spirits
@@ -155688,6 +156203,8 @@ Can only be cast once per combat round."
 #batstartsum8d6 676  -- Shade
 #batstartsum9d6 675  -- Shadow Soldiers
 #unique
+#bestowtomount
+#ethereal
 #end
 
 #selectitem 660
@@ -155743,12 +156260,13 @@ Can only be cast once per combat round."
 #mainpath 0
 #mainlevel 4
 #constlevel 7
-#awe 1
-#fireres 10
 #magiccommand 1
 #autospell "Will o' the Wisp"
 #autospellrepeat 1
 #unique
+#bestowtomount
+#awe 1
+#fireres 10
 #end
 
 #selectitem 664
@@ -155808,12 +156326,13 @@ Can only be cast once per combat round."
 #copyspr 508 -- Dragon Pearl
 #name "Mother Pearl"
 #descr "The Mother Pearl is a great pearl that has existed since the dawn of time. Legends claim it was used in the creation of the world and still retains an echo from that distant time. Whatever the source it is imbued with powerful astral magic, and will both protect the bearer and enable them to exist both above and below the waves. When held deep underwater it will occasionally birth smaller pearls that can be collected and transported to the treasury. The pearl is highly prized and several wars have been fought in the undersea over who has the right to claim it."
-#waterbreathing
 #mr 4
 #mainpath 4
 #mainlevel 2
 #constlevel 5
 #unique
+#bestowtomount
+#waterbreathing
 #end
 
 #selectitem 669
@@ -155931,16 +156450,17 @@ Can only be cast once per combat round."
 #mainlevel 2
 #secondarypath 6
 #secondarylevel 2
-#mr 3
-#autobless
-#spiritsight
-#diseaseres 100
 #itemcost1 -50
 #itemcost2 -50
 #type 8  -- Misc
 #restricted 20 -- Kailasa
 #restricted 68 -- Bandar
 #restricted 108 -- Patala
+#bestowtomount
+#diseaseres 100
+#mr 3
+#autobless
+#spiritsight
 #end
 
 #selectitem 678
@@ -156058,12 +156578,13 @@ Can only be cast once per combat round."
 #mainlevel 2
 #secondarypath 2
 #secondarylevel 1
-#recuperation
 #noinanim
 #noundead
 #cursed
 #nofind
 #type 8  -- misc
+#bestowtomount
+#recuperation
 #end
 
 #selectitem 689
@@ -156094,10 +156615,11 @@ Can only be cast once per combat round."
 #voidsanity 5
 --#shatteredsoul 5
 #unteleportable
-#mr 2
 #nofind
 #armor 212  -- magic crown
 #type 9  -- Crown
+#bestowtomount
+#mr 2
 #end
 
 #selectitem 691
@@ -156109,10 +156631,11 @@ Can only be cast once per combat round."
 #mainlevel 1
 #secondarypath 7
 #secondarylevel 1
-#unsurr 5
-#spiritsight
 #armor 212  -- magic crown
 #type 9  -- Crown
+#bestowtomount
+#spiritsight
+#unsurr 5
 #end
 
 #selectitem 692
@@ -156127,6 +156650,7 @@ Can only be cast once per combat round."
 #type 9  -- Crown
 #armor 212  -- magic crown
 #nationrebate 13 -- EA Ulm
+#bestowtomount
 #awe 5
 #end
 
@@ -156141,6 +156665,7 @@ Can only be cast once per combat round."
 #secondarylevel 1
 #type 9  -- Crown
 #armor 212  -- magic crown
+#bestowtomount
 #hp 8
 #invulnerable 15
 #end
@@ -156154,6 +156679,7 @@ Can only be cast once per combat round."
 #mainlevel 1
 #type 8  -- Misc
 #itemcost1 -20
+#bestowtomount
 #att 2
 #def 2
 #hp 4
@@ -156230,11 +156756,12 @@ Can only be cast once per combat round."
 #itemcost2 -60
 #type 5  -- Body Armor
 #armor 10  -- Leather Hauberk
+#hp 10
+#bestowtomount
 #fireres 15
 #slashres
 #pierceres
 #bluntres
-#hp 10
 #end
 
 #selectitem 699
@@ -156501,9 +157028,10 @@ Can only be cast once per combat round."
 #unique
 #mainlevel 5
 #researchbonus 20
-#mr 4
 #restricted 80 -- Jotunheim
 #restricted 117 -- Utgard
+#bestowtomount
+#mr 4
 #end
 
 #selectitem 711
@@ -156562,12 +157090,13 @@ Can only be cast once per combat round."
 #type 8
 #mainpath 3
 #mainlevel 2
-#awe 2
 #noinanim
 #noundead
 #restricted 17 -- EA Hinnom
 #restricted 64 -- MA Ashdod
 #restricted 107 -- LA Gath
+#bestowtomount
+#awe 2
 #end
 
 #selectitem 713
@@ -156580,12 +157109,13 @@ Can only be cast once per combat round."
 #mainlevel 2
 #secondarypath 8
 #secondarylevel 2
-#awe 2
-#fear 5
 #noinanim
 #noundead
 #restricted 17 -- EA Hinnom
 #restricted 107 -- LA Gath
+#fear 5
+#bestowtomount
+#awe 2
 #end
 
 #selectitem 714
@@ -156640,10 +157170,11 @@ Can only be cast once per combat round."
 #mainlevel 1
 #secondarypath 0
 #secondarylevel 1
+#weapon 0
+#bestowtomount
 #diseaseres 100
 #reinvigoration 2
 #woundfend 1
-#weapon 0
 #end
 
 #selectitem 719
@@ -156656,13 +157187,14 @@ Can only be cast once per combat round."
 #mainlevel 3
 #secondarypath 7
 #secondarylevel 3
+#tainted 10
+#autospell "Enslave Mind"
+#autospellrepeat 1
+#bestowtomount
 #invisible
 #ethereal
 #cursed
 #spiritsight
-#tainted 10
-#autospell "Enslave Mind"
-#autospellrepeat 1
 #end
 
 #selectitem 720
@@ -156794,16 +157326,16 @@ Can only be cast once per combat round."
 #spr "magicenhanced/eeidemonrunea.tga"
 #descr "This rune can be carved into the flesh of a demonic creature. It will cause the creature's skin to erupt into iron hard plates. Once carved the rune cannot be undone, and it will have no effect on creatures not of demonic origin."
 #constlevel 5
-#type 5
+#type 8 -- Misc
 #mainpath 8
 #mainlevel 1
 #secondarypath 3
 #secondarylevel 1
-#itemcost2 -60
-#ironskin
+#itemcost1 100
 #onlydemon
 #cursed
 #nofind
+#ironskin
 #end
 
 #selectitem 728
@@ -156884,6 +157416,7 @@ Can only be cast once per combat round."
 #constlevel 12
 #nofind
 #cursed
+#bestowtomount
 #recuperation
 #diseaseres 100
 #end
@@ -157055,6 +157588,7 @@ Can only be cast once per combat round."
 #mainlevel 1
 #type 8
 #restricted 127 -- LA Rlyeh
+#bestowtomount
 #voidsanity 5
 #end
 
@@ -157209,11 +157743,12 @@ This will also prevent their skin from drying out."
 #mainlevel 2
 #secondarypath -1
 #cursed
-#luck
 #nofind
 #morale 2
 #inspirational 1
 #restricted 50 -- MA Arco
+#bestowtomount
+#luck
 #end
 
 #selectitem 754
@@ -157225,9 +157760,10 @@ This will also prevent their skin from drying out."
 #mainlevel 2
 #type 8
 #nobadevents 50
-#twistfate
 #restricteditem 10
 #restricted 50 -- MA Arco
+#bestowtomount
+#twistfate
 #end
 
 #selectitem 755
@@ -157289,10 +157825,11 @@ This will also prevent their skin from drying out."
 #name "Blade of Cold Iron"
 #descr "In Ulm special swords are forged from Cold Iron to protect against evil sorcery. When struck in anger the blade will release a burst of antimagic that will harm living beings and is deadly to magical creatures. These swords also have extraordinarily sharp edges that can cut through most armor and will protect the bearer from hostile magic."
 #constlevel 3
-#mr 2
 #weapon 1599 -- Blade of Cold Iron
 #restricted 60 -- MA Ulm
 #restricted 101 -- LA Ulm
+#bestowtomount
+#mr 2
 #end
 
 #selectitem 759
@@ -157318,9 +157855,10 @@ This will also prevent their skin from drying out."
 #mainpath 6
 #mainlevel 1
 #type 3
-#poisonres 15
 #weapon 1603 -- Bow of Venom
 #restricted 9  -- Sauromatia
+#bestowtomount
+#poisonres 15
 #end
 
 #selectitem 761
@@ -157500,9 +158038,10 @@ This will also prevent their skin from drying out."
 #inspirational 2
 #extralife
 #woundfend 2
-#regeneration 10
 #restricted 57
 #restricted 100
+#bestowtomount
+#regeneration 10
 #end
 
 #selectitem 771
@@ -157514,9 +158053,10 @@ This will also prevent their skin from drying out."
 #mainlevel 1
 #type 5
 #armor "Armor of Knights"
-#awe 1
 #skilledrider 3
 #restricted 61
+#bestowtomount
+#awe 1
 #end
 
 #selectitem 772
@@ -157532,9 +158072,10 @@ This will also prevent their skin from drying out."
 #secondarylevel 1
 #type 1
 #nobadevents 20
-#luck
 #weapon 1608 -- Tumi
 #restricted 72 -- Nazca
+#bestowtomount
+#luck
 #end
 
 #selectitem 773
@@ -157546,10 +158087,11 @@ This will also prevent their skin from drying out."
 #mainlevel 5
 #type 8
 #magicboost 9 1
-#bless
 #unique
 #autospell "Divine Blessing"
 #restricted 61 -- MA Marignon
+#bestowtomount
+#bless
 #end
 
 #selectitem 774
@@ -157691,6 +158233,7 @@ This will also prevent their skin from drying out."
 #secondarypath -1
 #secondarylevel 0
 #restricted 85 -- Ys
+#bestowtomount
 #waterbreathing
 #end
 
@@ -157707,13 +158250,14 @@ This will also prevent their skin from drying out."
 #secondarypath 8
 #secondarylevel 1
 #morale 4
-#bless
 #cursed
 #nofind
 #chestwound
 #noinanim
 #restricted 80 -- Jotunheim
 #restricted 117 -- Utgard
+#bestowtomount
+#bless
 #end
 
 #selectitem 783
@@ -157740,12 +158284,13 @@ This will also prevent their skin from drying out."
 #constlevel 3
 #mainpath 5
 #mainlevel 1
-#mr 4
 #onlydemon
 #type 6  -- Helmet
 #armor 187  -- Wooden Mask
 #restricted 21 -- Lanka
 #restricted 23 -- Yomi
+#bestowtomount
+#mr 4
 #end
 
 #selectitem 785
@@ -157777,13 +158322,14 @@ This will also prevent their skin from drying out."
 #secondarypath 3
 #secondarylevel 4
 #type 2
-#fly
-#invulnerable 20
 #spell "Volcanic Eruption"
 #weapon 1620 -- Heavenly Jewelled Spear
 #restricted 23 -- Yomi
 #restricted 70 -- Shinuyama
 #restricted 110 -- Jomon
+#bestowtomount
+#fly
+#invulnerable 20
 #end
 
 #selectitem 787
@@ -157811,6 +158357,7 @@ This will also prevent their skin from drying out."
 #mainlevel 2
 #type 4
 #armor "Amber Shield"
+#bestowtomount
 #slimer 1
 #end
 
@@ -157836,10 +158383,11 @@ This will also prevent their skin from drying out."
 #mainlevel 2
 #itemcost1 -20
 #type 5
-#waterbreathing
 #armor "Fish Scale"
 #autospell "Liquid Body"
 #hp 4
+#bestowtomount
+#waterbreathing
 #end
 
 #selectitem 791
@@ -157852,9 +158400,10 @@ This will also prevent their skin from drying out."
 #itemcost1 -20
 #type 5
 #armor "Cloud Cuirass"
-#stormpower 3
 #autospell "Personal Mistform"
 #hp 6
+#bestowtomount
+#stormpower 3
 #end
 
 #selectitem 792
@@ -157871,8 +158420,9 @@ This will also prevent their skin from drying out."
 #type 5
 #armor "Linen Cuirass"
 #poisoncloud 8
-#poisonres 15
 #hp 6
+#bestowtomount
+#poisonres 15
 #end
 
 #selectitem 793
@@ -157888,10 +158438,11 @@ This will also prevent their skin from drying out."
 #itemcost2 -40
 #type 6
 #armor "Blacksteel Helmet"
+#magiccommand 1
+#batstartsum1 -1072
+#bestowtomount
 #darkvision 100
 #darkpower 3
-#undcommand 1
-#batstartsum1 -1072
 #end
 
 #selectitem 794
@@ -157903,8 +158454,9 @@ This will also prevent their skin from drying out."
 #mainlevel 4
 #type 6
 #armor "Leather Hood"
-#raiseonkill 50
 #undcommand 10
+#bestowtomount
+#raiseonkill 50
 #end
 
 #selectitem 795
@@ -157989,9 +158541,10 @@ This will also prevent their skin from drying out."
 #mainpath 0
 #mainlevel 1
 #type 8
-#fireres 10
 #autospell "Ensnaring Flames"
 #autospellrepeat 1
+#bestowtomount
+#fireres 10
 #end
 
 #selectitem 801
@@ -158125,10 +158678,11 @@ This will also prevent their skin from drying out."
 #secondarylevel 1
 #type 5
 #armor "Obsidian Cuirass"
-#fireshield 8
-#fireres 5
 #autospell "Mirror Image"
 #hp 6
+#bestowtomount
+#fireshield 8
+#fireres 5
 #end
 
 #selectitem 810
@@ -158154,6 +158708,7 @@ This will also prevent their skin from drying out."
 #secondarypath 2
 #secondarylevel 1
 #type 8
+#bestowtomount
 #fireres 10
 #coldres 10
 #waterbreathing
@@ -158186,11 +158741,12 @@ This will also prevent their skin from drying out."
 #itemcost2 -40
 #type 5
 #armor "Ethereal Breastplate"
+#hp 8
+#bestowtomount
 #ethereal
 #fireres -5
 #coldres -5
 #shockres -5
-#hp 8
 #end
 
 #selectitem 815
@@ -158267,8 +158823,9 @@ This will also prevent their skin from drying out."
 #secondarypath 4
 #secondarylevel 1
 #type 8
-#coldres 5
 #autospell "Bound Wraith Mage"
+#bestowtomount
+#coldres 5
 #end
 
 #selectitem 820
@@ -158324,12 +158881,13 @@ This will also prevent their skin from drying out."
 #secondarypath 1
 #secondarylevel 2
 #type 8
-#fly
 #batstartsum1d6 855  -- Valkyries
 #restricted 30
 #restricted 31
 #restricted 78
 #restricted 115
+#bestowtomount
+#fly
 #end
 
 #selectitem 824
@@ -158405,10 +158963,11 @@ This will also prevent their skin from drying out."
 #constlevel 7
 #mainpath 3
 #mainlevel 2
+#itemcost1 -20
+#bestowtomount
+#nomovepen
 #reinvigoration 3
 #str 4
-#nomovepen
-#itemcost1 -20
 #end
 
 #selectitem 829
@@ -158423,9 +158982,9 @@ This will also prevent their skin from drying out."
 #mainpath 4
 #mainlevel 1
 #type 6
-#unsurr 2
 #autospell "Twist Fate"
 #armor "Champion's Helmet"
+#unsurr 2
 #end
 
 #selectitem 831
@@ -158439,9 +158998,9 @@ This will also prevent their skin from drying out."
 #secondarypath 4
 #secondarylevel 1
 #type 2
-#fireshield 8
 #armor 0
 #weapon 1639  -- Sceptre of Cleansing Flame
+#fireshield 8
 #end
 
 #selectitem 832
@@ -158504,6 +159063,7 @@ This will also prevent their skin from drying out."
 #itemcost1 -20
 #armor "Pearl Shield"
 #autospell "Astral Shield"
+#bestowtomount
 #mr 2
 #end
 
@@ -158535,8 +159095,9 @@ This will also prevent their skin from drying out."
 #armor "Helmet of Perfection"
 #autospell "Demon Rage"
 #autospellrepeat 1
-#morale 4
 #inspirational 2
+#bestowtomount
+#morale 4
 #end
 
 #selectitem 840
@@ -158547,9 +159108,10 @@ This will also prevent their skin from drying out."
 #mainpath 2
 #mainlevel 2
 #type 8
-#coldres 10
 #autospell "Cold Blast"
 #autospellrepeat 1
+#bestowtomount
+#coldres 10
 #end
 
 #selectitem 842
@@ -158633,6 +159195,7 @@ This will also prevent their skin from drying out."
 #itemcost1 -40
 #itemcost2 -40
 #restricted 188
+#bestowtomount
 #def 2
 #mr 1
 #woundfend 2
@@ -158653,11 +159216,12 @@ This will also prevent their skin from drying out."
 #itemcost1 -50
 #itemcost2 -50
 #restricted 188
+#autodishealer 1
+#bestowtomount
 #def 3
 #mr 2
 #woundfend 3
 #morale 2
-#autodishealer 1
 #luck
 #end
 
@@ -158674,11 +159238,12 @@ This will also prevent their skin from drying out."
 #weapon 1563
 #restricted 188
 #darkvision 100
-#pen 1
-#mr 1
+#autodishealer 2
 #nodemon
 #deathcurse
-#autodishealer 2
+#pen 1
+#bestowtomount
+#mr 1
 #end
 
 #selectitem 850
@@ -158696,13 +159261,14 @@ This will also prevent their skin from drying out."
 #restricted 188
 #darkvision 100
 #pen 1
-#awe 1
 #inspirational 1
-#voidsanity 20
-#mr 1
 #nodemon
 #deathcurse
 #tmpastralgems 1
+#bestowtomount
+#voidsanity 20
+#awe 1
+#mr 1
 #end
 
 #selectitem 851
@@ -158768,10 +159334,11 @@ This will also prevent their skin from drying out."
 #constlevel 7
 #mainpath 4
 #mainlevel 3
-#bless
 #spell "Bless"
 #type 8  -- Misc
 #restricted 201 -- Venedia
+#bestowtomount
+#bless
 #end
 
 
@@ -158866,7 +159433,8 @@ This will also prevent their skin from drying out."
 #giftofwater 300
 #autospell "Tritons Grace"
 #type 8
-#diseaseres 10
+#bestowtomount
+#diseaseres 20
 #poisonres 5
 #end
 
@@ -158899,10 +159467,11 @@ This will also prevent their skin from drying out."
 #mainlevel 3
 #itemcost1 -60
 #giftofwater 40
-#fireres 5
-#uwheat 3
 #type 8
+#uwheat 3
 #autospell "Eerie Flame"
+#bestowtomount
+#fireres 5
 #end
 
 #selectitem 864 -- Drowned Mask
@@ -158912,10 +159481,11 @@ This will also prevent their skin from drying out."
 #constlevel 3
 #mainpath 5
 #mainlevel 1
-#waterbreathing
-#coldres 10
 #type 6
 #armor "Wooden Mask"
+#bestowtomount
+#waterbreathing
+#coldres 10
 #end
 
 #selectitem 865 -- Lungweed, air and water breathing
@@ -158930,9 +159500,10 @@ This will also prevent their skin from drying out."
 #secondarylevel 0
 #itemcost1 -90
 #type 8
-#waterbreathing
 #noinanim
 #landdamage -10
+#bestowtomount
+#waterbreathing
 #end
 
 #selectitem 866 -- Great Horn Talisman
@@ -158980,12 +159551,13 @@ This will also prevent their skin from drying out."
 #mainpath 3
 #mainlevel 1
 #itemcost1 -40
-#shockres 15
 #type 1 -- 1h
 #weapon 1833 -- Aizkora
 #restricted 14 -- EA Pyrene
 #restricted 62 -- MA Pyrene
 #restricted 123 -- LA Pyrene
+#bestowtomount
+#shockres 15
 #end
 
 #selectitem 870 -- Feathered Crown
@@ -160980,15 +161552,14 @@ This will also prevent their skin from drying out."
 
 -- START OF INFORMATIVE SEARCH EVENTS
 
-
 #newevent
 #rarity 5
 #req_hiddensite 1
 #req_targorder 7
-#req_targpath1 1
-#msg "There are traces of a more powerful 1 site in ##landname##.
+#req_targpath1 5
+#msg "There are traces of a more powerful Death site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of 1 will be required to locate it. [Temple of the Toad God]"
+##targname## found them while searching for sites of power. A more powerful mage of Death will be required to locate it. [Cave of the Seithberandi]"
 #header 2
 #end
 
@@ -160997,49 +161568,12 @@ This will also prevent their skin from drying out."
 #rarity 5
 #req_hiddensite 1
 #req_targorder 7
-#req_targpath1 1
-#msg "There are traces of a more powerful 1 site in ##landname##.
+#req_targpath1 3
+#msg "There are traces of a more powerful Earth site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of 1 will be required to locate it. [Rune Stone]"
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Alamut]"
 #header 2
 #end
-
-
-#newevent
-#rarity 5
-#req_hiddensite 1
-#req_targorder 7
-#req_targpath1 2
-#msg "There are traces of a more powerful 2 site in ##landname##.
-
-##targname## found them while searching for sites of power. A more powerful mage of 2 will be required to locate it. [Cave of the Seithberandi]"
-#header 2
-#end
-
-
-#newevent
-#rarity 5
-#req_hiddensite 1
-#req_targorder 7
-#req_targpath1 1
-#msg "There are traces of a more powerful 1 site in ##landname##.
-
-##targname## found them while searching for sites of power. A more powerful mage of 1 will be required to locate it. [Shrimp Settlement]"
-#header 2
-#end
-
-
-#newevent
-#rarity 5
-#req_hiddensite 1
-#req_targorder 7
-#req_targpath1 2
-#msg "There are traces of a more powerful 2 site in ##landname##.
-
-##targname## found them while searching for sites of power. A more powerful mage of 2 will be required to locate it. [Alamut]"
-#header 2
-#end
-
 
 
 
@@ -178441,6 +178975,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #end
 
 
+
 #newevent -- Create Sabbath
 #rarity 5
 #req_nositenbr 2361 -- active
@@ -178451,7 +178986,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #addsite 2361 -- Witches' Sabbath
 #end
 
-#newevent -- Create Sabbath
+#newevent -- Remove Sabbath
 #rarity 5
 #req_noench 279 -- Ench79
 #req_site 1
@@ -178460,6 +178995,19 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #notext
 #nolog
 #removesite 2361 -- Witches' Sabbath
+#end
+
+#newevent -- Blood boost at Sabbath
+#rarity 5
+#req_ench 279 -- Ench79
+#req_fornation 62 -- MA Pyrene
+#req_rare 15
+#req_site 1
+#req_pop0ok
+#msg "A Sorgina attending the Witches' Sabbath has delved even deeper into the magic of Blood under the tutelage of the presiding Black Goat. [Witches' Sabbath]"
+#req_targmnr 3620
+#req_targnopath4 8 -- B
+#pathboost 8 -- B
 #end
 
 #newevent -- Storms
@@ -181232,7 +181780,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -5
+#taxboost -3
 #end
 
 #newevent
@@ -181244,7 +181792,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -10
+#taxboost -6
 #end
 
 #newevent
@@ -181256,7 +181804,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -14
+#taxboost -9
 #end
 
 #newevent
@@ -181268,7 +181816,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -18
+#taxboost -12
 #end
 
 #newevent
@@ -181280,7 +181828,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -22
+#taxboost -15
 #end
 
 #newevent
@@ -181292,7 +181840,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -26
+#taxboost -17
 #end
 
 #newevent
@@ -181304,7 +181852,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -29
+#taxboost -19
 #end
 
 #newevent
@@ -181316,7 +181864,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -32
+#taxboost -21
 #end
 
 #newevent
@@ -181328,7 +181876,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -35
+#taxboost -23
 #end
 
 #newevent
@@ -181340,7 +181888,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "Dominion taxloss."
 #notext
 #nolog
-#taxboost -38
+#taxboost -25
 #end
 
 
@@ -182760,7 +183308,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #header 2
 #nolog
 #req_month 8 -- Early winter
-#incscale 1 -- Cold
+#incscale 2 -- Cold
 #addsite 2607
 #end
 
@@ -182836,6 +183384,26 @@ It is now fully repaired and a new crew has been assigned to it."
 #nolog
 #end
 
+
+#newevent -- Place Barometz site
+#rarity 5
+#req_monster 6674 -- Barometz
+#req_nositenbr 2609 -- Barometz site
+#msg "Place Barometz site."
+#notext
+#nolog
+#addsite 2609 -- Barometz site
+#end
+
+#newevent -- Remove Barometz site
+#rarity 5
+#req_nomonster 6674 -- Barometz
+#req_site 1
+#msg "Remove Barometz site. [Field of Barometz]"
+#notext
+#nolog
+#removesite 2609 -- Barometz site
+#end
 
 
 
