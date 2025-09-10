@@ -33380,6 +33380,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #weapon 71  -- Sleep Vines
 #weapon 236  -- Claw
 #weapon 236  -- Claw
@@ -45404,7 +45405,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #clearspec
 #name "Satyr Mandragora"
 #descr "Ampelos was once an unusually thoughtful satyr that studied the stars. Eventually he had learned so much that he began to boast he knew more about the heavens than the moon herself. Unfortunately for Ampelos the Goddess of the Moon heard his boasts and looked down upon him with a jealous eye. One day she sent a gadfly to sting a great bull grazing nearby. The creature trampled poor Ampelos and he was gored to death for his hubris. Over time vines grew around and through his bones until he was granted new life by the awakening of the True God. Ampelos has great knowledge of the magic of the stars, however he has learned not to boast of such things and is reluctant to share his knowledge."
-#clearspec
 #fixedname "Ampelos"
 #mor 16
 #mr 16
@@ -47284,6 +47284,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #end
 
 
@@ -68988,6 +68989,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #goodleader
 #domsummon2 313  -- Manikin
 #startdom 1
@@ -79014,6 +79016,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #mor 30
 #goodleader
 #shapechange 1027
@@ -79052,6 +79055,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #mor 30
 #goodleader
 #shapechange 1026
@@ -84911,6 +84915,7 @@ Initiates of the Deep can be recruited in any land fort."
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #end
 
 #selectmonster 325  -- Master Smith
@@ -85963,6 +85968,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #end
 
 #selectmonster 713  -- Harpy Manikin
@@ -85984,6 +85990,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #end
 
 #selectmonster 714  -- Carrion Centaur
@@ -86029,6 +86036,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #itemslots 786432
 #end
 
@@ -86046,6 +86054,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #itemslots 786432
 #end
 
@@ -86061,6 +86070,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #itemslots 786432
 #montag 1061
 #end
@@ -86077,6 +86087,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #itemslots 786432
 #montag 1061
 #montagweight 2
@@ -86093,6 +86104,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #humanoid
 #end
 
@@ -86107,6 +86119,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #humanoid
 #end
 
@@ -86121,6 +86134,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #humanoid
 #end
 
@@ -86135,6 +86149,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #humanoid
 #end
 
@@ -86149,6 +86164,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #humanoid
 #end
 
@@ -86167,7 +86183,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #pierceres
 #magicbeing
 #neednoteat
-#mor 50
 #forestsurvival
 #spiritsight
 #poisonres 25
@@ -86919,6 +86934,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #end
 
 #selectmonster 1006
@@ -86939,6 +86955,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #spiritsight
 #poisonres 25
 #plant
+#heal
 #itemslots 786432
 #end
 
@@ -87105,6 +87122,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 --#enc 3
 #poisonres 25
 #plant
+#heal
 #end
 
 #selectmonster 3918 -- la ctis crossbow
@@ -127101,7 +127119,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #damage 1  -- Disease
 #spec 546099200  -- MR Negates, Ignores shields, Enemy sacreds only, mindless and undead immune.
 #nreff 1
-#aoe 665  -- 25%
+#aoe 1
 #end
 
 #selectspell 2366
@@ -127119,8 +127137,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2367
 #name "Divine Wrath"
 #descr "The priest unleashes divine wrath upon the battlefield. A number of warriors at the battle will be blasted with blindness, disease and perhaps death. Any troops that are not sacred in the eyes of the coming God may be affected, even friendly troops, however those sacred to a false Pretender are more likely to be affected more seriously. This spell affects the battlefield for a short while and cannot be prepared or cast again whilst it is in effect."
-#details "Around 10% of units and all enemy sacreds must check MR or become blinded, diseased or suffer damage. Friendly sacred units are immune to the effects.
-Can only be cast once per combat round."
+#details "Around 70% of units take MRN 2 AN damage with a 20% chance to become blinded or diseased if they fail. 25% of enemy sacreds take an additional MR check for Blind and Disease. Friendly sacred units are immune to the effects. Can only be cast once per combat round."
 #researchlevel 0
 #school 7
 #path 0 9
