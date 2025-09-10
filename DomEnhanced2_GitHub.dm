@@ -66714,8 +66714,11 @@ Only three Queens of Elemental Water are known to exist."
 
 
 
-
 -- FOLDUNITS
+
+
+
+
 
 
 #newmonster 6523 -- Marid Sultan
@@ -66725,7 +66728,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "Marid Sultan"
 #descr "The Marid Sultan is an ancient being of an earlier era when the Jinnun, and not men, dominated the world. He is among the first of the children of Iblis and led the Marids in their rebellion against the Ifrit. He was banished from the City of Brass along with his brethren and closest servants and fled into the depths of the ocean. Now the Ifrit of Ubar can no longer keep the Marid Sultan at bay, and he may usurp their throne as the divine decree sealing the City of Brass is weakening with the disappearance of the Pantokrator. From there he may use his vast power to ascend to the greater height of godhood and force all to bow before his might."
 #diseaseres 100
-#gcost 370
+#gcost 350
 #startdom 3
 #pathcost 40
 #moreheat 1 
@@ -66824,7 +66827,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "Founding Father"
 #descr "The Founding Father was a sagacious king in ancient times and one of the legendary founding fathers of the empire. He warred with the Jade Emperor and commanded 81 tribes before the unification of the empire and the coming of peace. The Founding Father is incredibly fierce in combat and will inspire his men to great deeds. His head is that of a brass bull, and his four arms always carry weapons of war. With the Pantokrator gone his advisors have convinced him to don the yoke of Godhood and seek the power to rule over all as the Pantokrator."
 #diseaseres 100
-#gcost 300
+#gcost 290
 #homerealm 4
 #startdom 3
 #pathcost 40
@@ -66867,7 +66870,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "Void Larva"
 #descr "The Void is a realm of strange sights and sounds half dreamed and half imagined. The most powerful Void beings are akin to Gods however most care little for the dealings of this world. This embryonic Void being of great power appeared through the Void Gate and is worshipped by the starspawn of R'lyeh. The Larva does not communicate in any comprehensible way, but its priests divine its will through arcane rituals. Incredibly powerful, the being will drain the life force of those it touches. Partially of the void, it will be difficult to hurt with mundane weaponry."
 #diseaseres 100
-#gcost 270
+#gcost 250
 #startdom 2
 #pathcost 60
 #moremagic 2
@@ -67297,7 +67300,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "Wuya of the Clouds and Land"
 #descr "The Wuya are magically powerful spirit beings and are the leaders of the Kátsinam. The Wuya of the Clouds and Land was given power over the movement of the clouds by a previous Pantokrator. So great was this power that mankind turned away from the Pantokrator and gave the Wuya their prayers instead. Furiously he imprisoned the Wuya for eternity. But now, with the Pantokrator gone, the prison is crumbling and the Wuya can return to lead his people. As spirits of nature the Kátsinam are protected against mundane weapons and will cause nearby plants to ensnare attackers."
 #diseaseres 100
-#gcost 290
+#gcost 270
 #homerealm 0
 #startdom 3
 #pathcost 40
@@ -67341,7 +67344,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "Wuya of the Winter"
 #descr "The Wuya are magically powerful spirit beings and are the leaders of the Kátsinam. The Wuya of the Winter was given power over the coming of winter by a previous Pantokrator. In fear mankind turned away from the Pantokrator and gave the Wuya their prayers instead. Furiously he imprisoned the Wuya for eternity. But now, with the Pantokrator gone, the prison is crumbling and the Wuya can return to lead his people. As spirits of nature the Kátsinam are protected against mundane weapons and will cause nearby plants to ensnare attackers."
 #diseaseres 100
-#gcost 250
+#gcost 240
 #homerealm 0
 #startdom 3
 #pathcost 40
@@ -67388,7 +67391,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "Wuya of the Sun"
 #descr "The Wuya are magically powerful spirit beings and are the leaders of the Kátsinam. The Wuya of the Sun was given power over the warmth and power of the sun by a previous Pantokrator. The Wuya was generous with his gifts and eventually mankind turned away from the Pantokrator and gave the Wuya their prayers instead. Furiously he imprisoned the Wuya for eternity. But now, with the Pantokrator gone, the prison is crumbling and the Wuya can return to lead his people. As spirits of nature the Kátsinam are protected against mundane weapons and will cause nearby plants to ensnare attackers. The Wuya is surrounded by the aura of the sun."
 #diseaseres 100
-#gcost 290
+#gcost 260
 #homerealm 0
 #startdom 3
 #pathcost 40
@@ -67433,7 +67436,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "Wuya of Nature"
 #descr "The Wuya are magically powerful spirit beings and are the leaders of the Kátsinam. The Wuya of Nature was given power over all growing things by a previous Pantokrator. The Wuya was generous with his gifts and eventually mankind turned away from the Pantokrator and gave the Wuya their prayers instead. Furiously he imprisoned the Wuya for eternity. But now, with the Pantokrator gone, the prison is crumbling and the Wuya can return to lead his people.  As spirits of nature the Kátsinam are protected against mundane weapons and will cause nearby plants to ensnare attackers."
 #diseaseres 100
-#gcost 260
+#gcost 250
 #homerealm 0
 #startdom 3
 #pathcost 40
@@ -68001,7 +68004,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "Diyin Dine'é of the Earth"
 #descr "The Diyin Dine'é are giants of divine heritage born in the First World. The Diyin Dine'é of Earth is a divine spirit of the land and the bride of the Diyin Dine'é of the Sun. When they are in harmony the land is fertile and calm, however when they are in dispute the weather is foul and the land in turmoil. One day their squabble was so great that they unleashed a storm that engulfed the entire world. In a fit of rage the Pantokrator imprisoned the Diyin Dine'é as punishment. Now the bonds are weakening and she can once more return to lead her people. The Diyin Dine'é will cause growing things to sprout and bloom, ensuring a good harvest and calming the populace of the province."
 #diseaseres 100
-#gcost 260
+#gcost 240
 #homerealm 0
 #startdom 3
 #pathcost 40
@@ -68706,7 +68709,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "Marid Sultan"
 #descr "The Marid Sultan is an ancient being of an earlier era when the Jinnun, and not men, dominated the world. He is among the first of the children of Iblis and led the Marids in their rebellion against the Ifrit. He was banished from the City of Brass along with his brethren and closest servants and fled into the depths of the ocean. Now with the Pantokrator gone the Marid Sultan can once more ascend the throne, however this time it will be the Throne of Heaven and all shall bow before his might."
 #diseaseres 100
-#gcost 290
+#gcost 270
 #startdom 3
 #pathcost 40
 #moreheat 1 
@@ -68976,6 +68979,8 @@ Each month he will collect a magical pearl and can create more using water gems.
 #att 9
 #def 9
 #mr 18
+#heal
+#woundfend 0
 #clearspec
 #humanoid
 #ap 8
@@ -68989,7 +68994,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #spiritsight
 #poisonres 25
 #plant
-#heal
 #goodleader
 #domsummon2 313  -- Manikin
 #startdom 1
@@ -69081,7 +69085,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #armor 148
 #domsummon2 1479 -- Konoha Tengu
 #domsummon20 1481 -- Tengu Warrior
-#battlesum2 1481 -- Tengu Warrior
+#batstartsum2 1481 -- Tengu Warrior
 #itemslots 991750
 #clearmagic
 #magicskill 1 2
@@ -69288,7 +69292,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Basalt Architect"
 #descr "The Basalt Architect was the first of the Basalt Kings and was the prime architect of the Basalt City. He has now attained such power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Basalt Architect is a master of magic and can be adept in several magic paths. He can enchant the stone of the city to make great quantities of artifacts, weapons and armor for the Deep Ones."
 #diseaseres 100
-#gcost 90
+#gcost 70
 #startdom 1
 #pathcost 20
 #mor 30
@@ -69396,7 +69400,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Norn"
 #descr "The Norns are three mysterious beings in the form of robed women that have existing since the dawn of time. They are weavers of fate and guide the lives of men and Gods through their actions and prophesies. The Norns have frail bodies but great magical power that they use to guide the fate of the world. Over time they have been given offerings and worship to try to influence their actions and to bring good luck, however their motives remain inscrutable. With the Pantokrator gone the Norns have now determined that they will take his place to more directly guide the world. All three are skilled in many paths of magic, however one weaves the patterns of the Air, one the strands of the Astral plane and the last knows of the Death of all things."
 #diseaseres 100
-#gcost 190
+#gcost 170
 #homerealm 1  -- North
 #startdom 1
 #pathcost 30
@@ -69426,7 +69430,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Maiden"
 #descr "In ages past a great Goddess was born in which the power of femininity was embodied in one being. She could bear new life, heal the sick and see future events using divination. Soon after her creation the Pantokrator grew fearful and decided to divide the Goddess into three parts, to more safely contain her power. Each aspect of the Goddess was imprisoned separately to prevent their combined strength from overcoming his bonds. Now, with the Pantokrator gone the shackles are weakening and the Triple Goddess will soon return to guide her daughters once more. The Goddess now resides in three bodies, the Maiden, the Mother and the Crone. The Maiden is the promise of new beginnings and will cause living things to bloom and ripen. She skilled in the primal magic of Fire and Air. The Mother is the power of life and can heal sickness and disease. She is skilled in the magic of Water and Glamour. The Crone is the wisdom of age and can predict future events with great accuracy. She is skilled in the arcane magic of Astral and Death."
 #diseaseres 100
-#gcost 140
+#gcost 100
 #homerealm 2  -- Celtic
 #startdom 1
 #pathcost 20
@@ -69463,7 +69467,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Mother"
 #descr "In ages past a great Goddess was born in which the power of femininity was embodied in one being. She could bear new life, heal the sick and see future events using divination. Soon after her creation the Pantokrator grew fearful and decided to divide the Goddess into three parts, to more safely contain her power. Each aspect of the Goddess was imprisoned separately to prevent their combined strength from overcoming his bonds. Now, with the Pantokrator gone the shackles are weakening and the Triple Goddess will soon return to guide her daughters once more. The Goddess now resides in three bodies, the Maiden, the Mother and the Crone. The Maiden is the promise of new beginnings and will cause living things to bloom and ripen. She skilled in the primal magic of Fire and Air. The Mother is the power of life and can heal sickness and disease. She is skilled in the magic of Water and Glamour. The Crone is the wisdom of age and can predict future events with great accuracy. She is skilled in the arcane magic of Astral and Death."
 #diseaseres 100
-#gcost 140
+#gcost 100
 #startdom 1
 #mor 30
 #mr 18
@@ -69497,7 +69501,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Crone"
 #descr "In ages past a great Goddess was born in which the power of femininity was embodied in one being. She could bear new life, heal the sick and see future events using divination. Soon after her creation the Pantokrator grew fearful and decided to divide the Goddess into three parts, to more safely contain her power. Each aspect of the Goddess was imprisoned separately to prevent their combined strength from overcoming his bonds. Now, with the Pantokrator gone the shackles are weakening and the Triple Goddess will soon return to guide her daughters once more. The Goddess now resides in three bodies, the Maiden, the Mother and the Crone. The Maiden is the promise of new beginnings and will cause living things to bloom and ripen. She skilled in the primal magic of Fire and Air. The Mother is the power of life and can heal sickness and disease. She is skilled in the magic of Water and Glamour. The Crone is the wisdom of age and can predict future events with great accuracy. She is skilled in the arcane magic of Astral and Death."
 #diseaseres 100
-#gcost 140
+#gcost 100
 #startdom 1
 #mor 30
 #str 7
@@ -69535,7 +69539,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Pure One"
 #descr "The Pure Ones are a pure manifestation of the Way and according to the Celestial Masters are the origin of all sentient beings. They appear as three elderly deities robed in the three basic colours from which all colours originated. The first Pure One embodies the ideals of the Way and is skilled in the path of Water, for the characteristics of Water, softness, flexibility and life-giving, are considered high ideals in the lore of the Way. The second Pure One embodies all the power of the Earthly plane and is skilled in the magic of Earth. The third Pure One embodies the power inherent in living creatures and is skilled in all other paths of magic. Each of them holds a divine object representing their power and authority. One holds the Pearl of Creation, one the Ruyi of Power and one the Fan of Knowledge. Since the disappearance of the Pantokrator the Pure Ones have taken on the mantle of Pretender Gods, to lead their followers to the Throne of Heaven and to reclaim what was once theirs."
 #diseaseres 100
-#gcost 190
+#gcost 170
 #homerealm 4
 #startdom 1
 #pathcost 30
@@ -69565,7 +69569,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Pure One"
 #descr "The Pure Ones are a pure manifestation of the Way and according to the Celestial Masters are the origin of all sentient beings. They appear as three elderly deities robed in the three basic colours from which all colours originated. The first Pure One embodies the ideals of the Way and is skilled in the path of Water, for the characteristics of Water, softness, flexibility and life-giving, are considered high ideals in the lore of the Way. The second Pure One embodies all the power of the Earthly plane and is skilled in the magic of Earth. The third Pure One embodies the power inherent in living creatures and is skilled in all other paths of magic. Each of them holds a divine object representing their power and authority. One holds the Pearl of Creation, one the Ruyi of Power and one the Fan of Knowledge. Since the disappearance of the Pantokrator the Pure Ones have taken on the mantle of Pretender Gods, to lead their followers to the Throne of Heaven and to reclaim what was once theirs."
 #diseaseres 100
-#gcost 190
+#gcost 170
 #startdom 1
 #mor 30
 #mr 18
@@ -69591,7 +69595,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Pure One"
 #descr "The Pure Ones are a pure manifestation of the Way and according to the Celestial Masters are the origin of all sentient beings. They appear as three elderly deities robed in the three basic colours from which all colours originated. The first Pure One embodies the ideals of the Way and is skilled in the path of Water, for the characteristics of Water, softness, flexibility and life-giving, are considered high ideals in the lore of the Way. The second Pure One embodies all the power of the Earthly plane and is skilled in the magic of Earth. The third Pure One embodies the power inherent in living creatures and is skilled in all other paths of magic. Each of them holds a divine object representing their power and authority. One holds the Pearl of Creation, one the Ruyi of Power and one the Fan of Knowledge. Since the disappearance of the Pantokrator the Pure Ones have taken on the mantle of Pretender Gods, to lead their followers to the Throne of Heaven and to reclaim what was once theirs."
 #diseaseres 100
-#gcost 190
+#gcost 170
 #startdom 1
 #mor 30
 #mr 18
@@ -69616,7 +69620,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Kirin"
 #descr "The Kirin is a wondrous being that has existed since the records of men first began. He has the shape of a flaming horse, a flowing mane, the scales of a dragon and great jewelled antlers. As the most holy and wise creature on the earth he brings good fortune wherever he appears and can judge the hearts of men. In ancient times he spoke to the first people in an auspicious voice sounding like the tinkling of bells and they began to worship him. However, the Kirin in his wisdom saw that this would anger the Pantokrator and forbade such worship, departing the world to appear only in the hour of greatest need. Now, with the Pantokrator gone, the Kirin has returned and his followers cry out for him to take up the mantle of Godhood. Seeing the designs of the other Pretenders he has agreed, and now vies for the Throne of Heaven to rule with wisdom and compassion."
 #diseaseres 100
-#gcost 160
+#gcost 180
 #homerealm 4  -- Far East
 #startdom 2
 #pathcost 60
@@ -69794,7 +69798,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Zmey Gorynych"
 #descr "The Zmey Gorynych is an ancient weather spirit of great power. Born as a simple snake, the creature began to grow and by 100 years of age was as large as a man. It then underwent a marvelous change, sprouting wings and gaining a roar like thunder. Over the years many would-be heroes have come to slay the beast, however it has bested them all. Now it has set its sights on the Throne of Heaven and has assumed the mantle of a Pretender God."
 #diseaseres 100
-#gcost 280
+#gcost 260
 #homerealm 0
 #startdom 2
 #pathcost 40
@@ -69845,7 +69849,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Zmey Gorynych"
 #descr "The Zmey Gorynych is an ancient weather spirit of great power. Born as a simple snake, the creature began to grow and by 100 years of age was as large as a man. It then underwent a marvelous change, sprouting wings and gaining a roar like thunder. It can take the form of a handsome young man astride a magnificent white horse which it uses to seduce and beguile the weak willed. Over the years many would-be heroes have come to slay the beast, however it has bested them all. The physical body of the creature is not well suited for spell casting and its skills will be reduced when casting spells from paths other than Air. Therefore, the Zmey will tend to adopt human form for spellcasting, but when wounded will revert to its true form."
 #diseaseres 100
-#gcost 280
+#gcost 260
 #startdom 2
 #pathcost 40
 #moreprod -1
@@ -69905,6 +69909,8 @@ Each month he will collect a magical pearl and can create more using water gems.
 #plant
 #goodleader
 #bonusspells 1
+#size 8
+#ap 2
 #mapmove 0
 #bluntres
 #pierceres
@@ -69916,6 +69922,9 @@ Each month he will collect a magical pearl and can create more using water gems.
 #ivylord 0
 #twiceborn 7480 -- Tree of Hate
 #batstartsum1 3870 -- Angel of the Host
+#maxage 5000
+#startage 1000
+#itemslots 786432
 #clearmagic
 #magicskill 0 1
 #magicskill 4 1
@@ -69929,7 +69938,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Lord of the Carrion Dead"
 #descr "The Lord of the Carrion Dead is a vulture-headed Titan who claims dominion over the corpses of all dead things. Death is his domain and bleached bones and rotten meat are his food and drink."
 #diseaseres 100
-#gcost 270
+#gcost 260
 #homerealm 7  -- Africa
 #startdom 3
 #pathcost 40
@@ -69940,6 +69949,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #clearweapons
 #corpseeater 5
 #deadhp 1
+#maxdeadhp 120
 #fireres 0
 #weapon 10  -- Falchion
 #weapon 671  -- Stone Dagger
@@ -70048,7 +70058,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Elohim"
 #descr "The Elohim is a divine spirit of Judgment that has existed since ancient times. It claims dominion over the Earth, the Skies and the Heavens and passes judgment on all the creatures of the world. When the Pantokrator arose it abandoned the world, however now it has returned to lead the faithful on the path of righteousness and salvation. The Elohim is surrounded by a powerful Aura of Splendor, and it has a terrible fury that strikes fear into the hearts of men."
 #diseaseres 100
-#gcost 380
+#gcost 350
 #homerealm 0
 #startdom 3
 #pathcost 60
@@ -70089,7 +70099,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Traveler"
 #descr "The Traveler is a giant of divine heritage that once served the Pantokrator as a divine messenger. His winged sandals and helmet allowed him to stride through the air with incredible speed carrying messages and warnings from his master. With the Pantokrator gone he has decided to ascend the Throne of Heaven and become the true God. The Traveler is tireless and has supernatural perceptive abilities. He is surrounded by an aura of splendour gifted to him by his former master and can fly through even the fiercest storms. He bears a Caduceus that can rob the will of those it strikes. In combat he moves with unearthly speed."
 #diseaseres 100
-#gcost 220
+#gcost 200
 #homerealm 3  -- Mediterranean
 #startdom 2
 #pathcost 40
@@ -70138,7 +70148,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Markata Freak"
 #descr "This is a horribly deformed markata of immense size created by vile magic. The Markata Freak is stupid and will lumber uncontrollably across the battlefield, its hoots and hollers striking fear into the enemy."
 #diseaseres 100
-#gcost 220
+#gcost 200
 #mor 30
 #prot 8
 #magicboost 53 -10
@@ -70241,7 +70251,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "First Valkyrie"
 #descr "The First Valkyrie is the daughter of a great Vanir Drott and was the first to be granted the ability to fly in ancient times. She pledged her service as a messenger of death in return for the powers of flight and magical longevity. Over the centuries the power of her patron waned and they are now long gone. However, the First Valkyrie remains and some say she has Aesir blood in her veins. She has since decided to lead her people and assume the mantle of a Pretender God to claim the Throne of Heaven. The First Valkyrie is protected by a Divine aura and few would dare to strike at her. She bears enchanted arms forged in Vanhalla and like all vanir can cloak her appearance in illusion. She has survived the fiercest storms and now lightning will not harm her."
 #diseaseres 100
-#gcost 210
+#gcost 190
 #homerealm 0
 #startdom 2
 #pathcost 60
@@ -70404,7 +70414,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Island Crab"
 #descr "The Island Crab is a monstrous crab born at the dawn of time, when monsters and giants roamed the world. In the great battle between Gods the crab nipped the Pantokrator on the toe to distract him. Enraged, the Pantokrator imprisoned and banished those that had defied him and the Island Crab was imprisoned for eternity. Now with the Pantokrator gone, the shackles are weakening and the waves of the stirring crab can once more be felt across the oceans of the world. The Island Crab is immensely well protected by the great shell it bears. The Crab is slow, however any lesser beings that stand against it will be crushed underfoot."
 #diseaseres 100
-#gcost 160
+#gcost 180
 #homerealm 9  -- Deeps
 #startdom 2
 #pathcost 60
@@ -70573,9 +70583,8 @@ Each month he will collect a magical pearl and can create more using water gems.
 #enc 1
 #mapmove 3
 #ap 20
-#weapon 461  -- Swallow
-#weapon 529  -- Ghost Rending Claw
-#weapon 532  -- Tail Sweep
+#weapon 461 -- Swallow
+#weapon 823 -- Claw
 --#itemslots 786432 -- 2 misc
 #fear 5
 #amphibian
@@ -70949,7 +70958,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Brazen Bull"
 #descr "The Brazen Bull is a terrible statue of a bull cast in bronze and animated by a bloodthirsty spirit. A hatch allows sacrifices to be placed inside, where they will be burnt to a crisp by the roaring furnace that burns in the belly of the bull. The screams of the sacrifices are channeled to create the bellowing of the demon bull and smoke pours from its mouth and nose. Over centuries the bull has demanded ever greater sacrifices to sate its hunger. Countless offerings later and now with the Pantokrator gone, the Brazen Bull has the chance of putting the world under its strong dominion and becoming the True God."
 #diseaseres 100
-#gcost 180
+#gcost 160
 #startdom 2
 #pathcost 60
 #moremagic -1
@@ -70997,7 +71006,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Megalodon"
 #descr "The Megalodon is a giant prehistoric shark that has swum the oceans since the dawn of time. It is aquatic and cannot leave the water. Over the centuries it has devoured thousands of victims and the concentration of blood has awakened great power in the creature. Now it hungers for the blood of Gods, and desires to rule so that it may feed on sacrifices brought from all the corners of the world. The Megalodon's hunger is insatiable and it will devour any that stand in its path. It is followed by sharks that feed from the scraps left by the beast."
 #diseaseres 100
-#gcost 180
+#gcost 170
 #homerealm 9  -- Deeps
 #startdom 2
 #pathcost 60
@@ -71044,7 +71053,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Ruk"
 #descr "The Ruk is a terrible bird of gigantic proportions from an earlier era, when monsters and giants roamed the world. It is sometimes mistaken for a flying mountain as it soars overhead. When the previous Pantokrator rose to power he imprisoned and banished all that threatened his power and the Ruk was forever imprisoned. Now, with the Pantokrator gone, the Ruk is breaking free to once again terrorise the world. It prefers to feed on elephants by catching them in its claws and dropping them from a great height. The skin of the Ruk is as hard as stone and its screeches bring fear to the hearts of men. In a siege the Ruk would be worth fifty normal men."
 #diseaseres 100
-#gcost 220
+#gcost 200
 #homerealm 5  -- Middle East
 #startdom 2
 #pathcost 60
@@ -71088,7 +71097,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Spirit Bear"
 #descr "Born at the dawn of time the Spirit Bear represents an earlier era, when monsters and giants roamed the world. The Spirit Bear is a huge bear with white fur that roams the frozen wastes. It has a legendary fury and over time the warriors of the cold north began to worship the beast. The Pantokrator saw this and imprisoned the beast for eternity. Now with the Pantokrator gone the Spirit Bear is free to roam the frozen lands once more."
 #diseaseres 100
-#gcost 180
+#gcost 160
 #homerealm 1
 #startdom 2
 #pathcost 60
@@ -71159,7 +71168,6 @@ Each month he will collect a magical pearl and can create more using water gems.
 #mapmove 14
 #ap 14
 #weapon 461  -- Swallow
-#weapon 529  -- Ghost Rending Claw
 #startage 1000
 #maxage 2000
 #fear 5
@@ -71376,7 +71384,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Wisdom King"
 #descr "The Wisdom King is a divine warrior that was assigned to protect the Tathagata. Now with the Pantokrator gone his full powers have begun to manifest and he has amassed worshippers of his own. In his Wisdom he has realised the aspirations of the other Pretender Gods and will attain the role of Pantokrator to protect his followers. The Wisdom King is the embodiment of the wheel of injunction and teaches through fear, shocking nonbelievers into faith. He is a wrathful manifestation of the divine, many-armed and wreathed in flames. The Wisdom King is highly resilient and will suffer permanent injuries less often than most creatures."
 #diseaseres 100
-#gcost 330
+#gcost 300
 #startdom 3
 #pathcost 40
 #moreorder 1
@@ -71412,7 +71420,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #descr "This is the spirit of a starspawn that was not content to lay dead but dreaming of the void. It has returned to the world and will use the wisdom of the void to claim the mantle of a God. The Void Essence is highly attuned to the minds of those who are asleep and can bring the wisdom of the stars to the dreams of entire nations.
 When the Void Essence is in an enemy territory, it will bring insanity to both enemy forces and the general population."
 #diseaseres 100
-#gcost 240
+#gcost 220
 #startdom 2
 #pathcost 60
 #moremagic 1
@@ -71436,7 +71444,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #name "Spectral Ba'al"
 #descr "This is the spirit of a Ba'al that has escaped from Sheol and returned to claim the world of the living. The Ba'als were Rephaite Lords of ages past. Living lives of luxury and splendor, they led their kin in the absence of the Nephilim. However, godlike puissance and absolute power over their subjects made them arrogant and depraved. The Ba'als called themselves gods and drank the blood of the Avvim to gain their strength. A Spectral Ba'al inherits the power of their father, and has gained knowledge of Death magic due to his time spent in Sheol. The sacred spirits of dead Rephaim can be summoned by the Ba'al from Sheol to serve him. Spectres are ethereal and able to enter the sea."
 #diseaseres 100
-#gcost 240
+#gcost 220
 #homerealm 0
 #startdom 2
 #pathcost 60
@@ -71537,7 +71545,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #name "Gallu Demon"
 #descr "The Gallu Demon is an extremely powerful spirit being created to enforce the laws of the underworld. Anyone unfortunate enough to commit serious transgressions against divine laws or who escape the underworld are hunted by the Gallu. Although not malign, the Gallu Demon is utterly ruthless and implacable in its duties. It is said the Annunaki of Growth and Rebirth was seized by the Gallu and brought to the underworld unwillingly, to begin his first rebirth cycle. Now the Gallu Demon wishes not only to enforce the divine laws but to decree them, and so has taken the mantle of a Pretender God seeking to become the Pantokrator."
 #diseaseres 100
-#gcost 200
+#gcost 180
 #startdom 2
 #pathcost 60
 #moreorder 2
@@ -71831,7 +71839,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #name "Kami of Fertility"
 #descr "The Kami is a giant of divine heritage. The previous Pantokrator created her to spread fertility across the world, however When he saw how she was worshipped he imprisoned her below the earth. With the Pantokrator gone, the prison is weakening and the Kami can return once more to the world she loves. In combat attackers will be ensnared in vines before they are able to harm her."
 #diseaseres 100
-#gcost 300
+#gcost 290
 #homerealm 4  -- Far East
 #startdom 3
 #pathcost 40
@@ -71871,7 +71879,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #name "Lord of Floods"
 #descr "The Lord of Floods is a great being of the seas that was born at the dawn of time, when the sea was untamed and filled with monstrous beings. He was given power over the water of the land and the deeps by a previous Pantokrator, however he misused his power to bring floods and devastation. The Pantokrator saw what his servant had wrought and set a great warrior to bind him. The battle that followed raged for many days and nights and ended with the sky being knocked off its axis and causing all rivers to flow to the southeast. After being imprisoned at the bottom of the ocean he has now begun to stir once more. The Lord of Floods can travel below the waves and is feared by all living beings. Now he seeks to become the True God and the world will tremble."
 #diseaseres 100
-#gcost 320
+#gcost 300
 #homerealm 4  -- Far East
 #startdom 3
 #pathcost 40
@@ -71914,7 +71922,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #name "Lord of Knowledge"
 #descr "The Lord of Knowledge is an elephantine giant of divine heritage. He is wise beyond imagining and will share his wisdom with his followers. Sacred White elephants will sometimes appear to serve him when called from the forest. He is worshipped by his followers as the Master of learning and writing and now he is out to become the True God."
 #diseaseres 100
-#gcost 300
+#gcost 290
 #homerealm 8  -- India
 #startdom 3
 #pathcost 40
@@ -71998,7 +72006,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #name "Prince of the Deeps"
 #descr "The Prince of the Deeps is an Elemental Prince of water that has taken the role of a Pretender God. Dissatisfied with ruling over the deepest waters he has decided to claim the Throne of Heaven and rule over all the waters of the world. The Prince of the Deeps is composed entirely of water and is very difficult to harm. He can regenerate wounds and will eventually heal any injury over time. The Prince of the Deeps is skilled in water magic and can bring warriors under the water."
 #diseaseres 100
-#gcost 260
+#gcost 250
 #homerealm 9  -- Deeps
 #startdom 3
 #pathcost 40
@@ -72119,8 +72127,8 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #maxage 5000
 #enc 0
 #mapmove 16
-#weapon "Shatterfist"
-#weapon "Shatterfist"
+#weapon 1899 -- Shatterfist w/o bonus
+#weapon 1899 -- Shatterfist w/o bonus
 #fixedname "Schwarzer Riese"
 #itemslots 991750
 #clearmagic
@@ -72134,7 +72142,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #name "Neter of the River"
 #descr "The Neter is a giant of divine heritage. Fearsome and more beastly than his brethren, he was made guardian of the warm rivers and marshes of the world by the Pantokrator, but when he joined the rebellion of the lesser gods he was banished. Now with the Pantokrator gone the Neter of the River has returned to claim the world as his own."
 #diseaseres 100
-#gcost 280
+#gcost 260
 #homerealm 7  -- Africa
 #startdom 3
 #pathcost 40
@@ -72173,9 +72181,9 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #spr1 "extrapretenders/titansun.tga"
 #spr2 "extrapretenders/titansun2.tga"
 #name "Titan of the Sun"
-#descr "The Titan of the Sun is a giant of divine heritage. The Pantokrator tasked him with driving the chariot of the Sun across the sky each day, but his splendor inspired mortals to worship and the Pantokrator eventually grew jealous and banished him. Now that the Pantokrator is gone the Titan of the Sun will shine again. His brilliance is so great that enemies will falter and any who attempt to strike him may be struck permanently blind."
+#descr "The Titan of the Sun is a giant of divine heritage. The Pantokrator tasked him with driving the chariot of the Sun across the sky each day, but his splendor inspired mortals to worship and the Pantokrator eventually grew jealous and banished him. Now that the Pantokrator is gone the Titan of the Sun will shine again. In combat he can call down the rays of the sun to burn his enemies, and he is joined by the Cattle of the Sun, magnificent curved-horned beasts that will trample his enemies."
 #diseaseres 100
-#gcost 280
+#gcost 250
 #homerealm 3  -- Mediterranean
 #startdom 3
 #pathcost 40
@@ -72303,7 +72311,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #name "Onyx Statue"
 #descr "When the Earth Made Flesh was imprisoned for eternity her children mourned her loss. The Pale Ones decided to create a great statue in her honour, crafted from onyx in memory of her sacrifice. The statue was adorned with gold and placed in the Chamber of the Seal to guard over the great evil contained within. Over centuries the Pale Ones came to worship the statue as if it was the Earth Made Flesh herself and eventually it began to move. Some Oracles claim the statue is inhabited by the spirit of the banished progenitor, others say it moves only by the will of the Pale Ones. All agree it speaks with the voice of God. The Onyx Statue is made of stone and would be difficult to destroy in combat."
 #diseaseres 100
-#gcost 300
+#gcost 270
 #startdom 3
 #pathcost 40
 #moreluck 1
@@ -72353,7 +72361,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #name "Antumbral"
 #descr "The Antumbral is a powerful shadow being that was once the soul of a great Agarthan mage. In ages past it sacrificed itself to seal the Chamber, however now it has returned to this realm as the seal weakens to lead its brethren. It seeks to attain the role of Pantokrator from beyond the grave to enact revenge on the surface races. The Antumbral is served by Umbrals that will appear when his Dominion grows strong. Umbrals are shadow beings resembling ancient Pale Ones with elongated faces and drooling mouths. They are ethereal, undead beings capable of draining life from the living."
 #diseaseres 100
-#gcost 280
+#gcost 250
 #startdom 3
 #pathcost 40
 #moregrowth -1
@@ -72464,7 +72472,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Angelic Lord"
 #descr "The Angelic Lord is a powerful being from the Celestial Sphere and was the first of the Heavenly Host. Once in the service of the Pantokrator, he was imprisoned after his master became fearful of his power and divine presence. Now the shackles are weakening, and he has chosen to claim this world as his and have heavenly hosts proclaim his glory. The Angelic Lord is surrounded by a divine splendor that must be shielded lest it strike the world with unbearable might. Anyone striking Him will in turn be struck by awe and heavenly fire. He bears a great flaming blade with which he has banished many demons and he will not part with it."
 #diseaseres 100
-#gcost 330
+#gcost 310
 #homerealm 0
 #startdom 3
 #pathcost 40
@@ -72515,7 +72523,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Grigori"
 #descr "At the dawn of time, on the sacred mount Hermon, descended six angels in full celestial splendor to the natives of the holy land to aid and instruct them in righteousness and wisdom. The Avvim were a people strong and beautiful of mind and body. They were adept students and their culture flourished under the tutelage of the Watchers. But before long the Grigori became enamored with the Avvim, shared their burdens and taught them things that should not be taught. Tempted by the beauty of the Avvim, they took their daughters as wives and sinned before the Celestial Powers. Their offspring were the Nephilim, giants of great power, abominable to the world. When the Celestial Powers lashed out in fury, the Grigori were banished to the infernal realms. Now, with the Pantokrator gone one of the Grigori can feel his shackles weakening and will return to the world to claim the mantle of Godhood."
 #diseaseres 100
-#gcost 310
+#gcost 290
 #homerealm 0
 #startdom 3
 #pathcost 40
@@ -72662,7 +72670,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Peacock Angel"
 #descr "At the beginning of time the Pantokrator created seven angelic beings from his own illumination. Foremost was the Peacock Angel, a being of light itself. Upon creating the first man from the dust of the earth the Pantokrator decreed all the angels must bow before it, however the Peacock Angel refused. He reasoned a being of light should not bow before a creature of the dust. At this the other angels cried out and called him a Devil and a Heretic. The Pantokrator however praised him for seeing the truth and bade him sit at the side of the Throne of Heaven. Now, with the Pantokrator gone the Peacock Angel will take his place and bestow blessings and misfortune as he sees fit. Anyone striking at his glory will in turn be struck by awe and blindness, however the Peacock Angel refuses to cover his splendor."
 #diseaseres 100
-#gcost 380
+#gcost 340
 #homerealm 0
 #startdom 3
 #pathcost 40
@@ -72712,7 +72720,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Sun Father"
 #descr "In ages past the Pantokrator begat a son, and he became the Lord of the Sun. Each morning he would ride his chariot across the sky, dragging the sun on its eternal journey. In time he had two daughters, the Morning Star and Evening Star, who would open and close the gates for his great chariot to aid him in his task. As the people of the world saw the life giving rays of the sun they began to worship it above the Pantokrator and he grew jealous of his child. He imprisoned the Sun Father along with his two offspring in a pit from which no light could escape and gave the task of driving the Sun Chariot to another. Now, with the Pantokrator departed, the Sun Father has returned along with his daughters to claim his birthright and ascend the Throne of Heaven. The Sun Father is skilled in all the magic of the skies, whilst his two daughters are skilled in the magic of the dawn and the night sky. His Daughters will lose some magical power whilst away from their Father, however he can call them to him in times of need with but a word."
 #diseaseres 100
-#gcost 370
+#gcost 350
 #homerealm 1
 #startdom 3
 #pathcost 40
@@ -72758,7 +72766,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Morning Star"
 #descr "In ages past the Pantokrator begat a son, and he became the Lord of the Sun. Each morning he would ride his chariot across the sky, dragging the sun on its eternal journey. In time he had two daughters, the Morning Star and Evening Star, who would open and close the gates for his great chariot to aid him in his task. As the people of the world saw the life giving rays of the sun they began to worship it above the Pantokrator and he grew jealous of his child. He imprisoned the Sun Father along with his two offspring in a pit from which no light could escape and gave the task of driving the Sun Chariot to another. Now, with the Pantokrator departed, the Sun Father has returned along with his daughters to claim his birthright and ascend the Throne of Heaven. The Sun Father is skilled in all the magic of the skies, whilst his two daughters are skilled in the magic of the dawn and the night sky. His Daughters will lose some magical power whilst away from their Father, however he can call them to him in times of need with but a word."
 #diseaseres 100
-#gcost 370
+#gcost 350
 #homerealm 0
 #startdom 3
 #mor 30
@@ -72813,7 +72821,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Evening Star"
 #descr "In ages past the Pantokrator begat a son, and he became the Lord of the Sun. Each morning he would ride his chariot across the sky, dragging the sun on its eternal journey. In time he had two daughters, the Morning Star and Evening Star, who would open and close the gates for his great chariot to aid him in his task. As the people of the world saw the life giving rays of the sun they began to worship it above the Pantokrator and he grew jealous of his child. He imprisoned the Sun Father along with his two offspring in a pit from which no light could escape and gave the task of driving the Sun Chariot to another. Now, with the Pantokrator departed, the Sun Father has returned along with his daughters to claim his birthright and ascend the Throne of Heaven. The Sun Father is skilled in all the magic of the skies, whilst his two daughters are skilled in the magic of the dawn and the night sky. His Daughters will lose some magical power whilst away from their Father, however he can call them to him in times of need with but a word."
 #diseaseres 100
-#gcost 370
+#gcost 350
 #homerealm 0
 #startdom 3
 #mor 30
@@ -73597,7 +73605,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Vargr"
 #descr "The Vargr is a gigantic wolflike creature born of Fenrer, the Great Adversary. It has the jaws and strength of a great wolf, walks upright and is covered in thick fur. The Vargr possesses tremendous strength and regenerative powers. It has lurked in the deepest parts of the frozen forests of the North since the world was young, watching and waiting. Now, with the Pantokrator gone it has emerged to claim the Throne of Heaven and rule over the entire world. The monstrous creature has inherited the foul temper of his father and is prone to go berserk if anyone opposes him."
 #diseaseres 100
-#gcost 310
+#gcost 290
 #homerealm 1
 #startdom 3
 #pathcost 40
@@ -73647,7 +73655,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Storm Raven"
 #descr "The Storm Raven is a divine being that takes the form of a great thunderbird cloaked in storms. When he flaps his wings thunder rolls across the land and when he opens his eyes comes the lightning. He is cloaked in mist and in battles will be almost impossible to harm except by magic."
 #diseaseres 100
-#gcost 280
+#gcost 250
 #homerealm 0
 #startdom 3
 #pathcost 60
@@ -76162,6 +76170,8 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #hp 15
 #str 14
 #mr 18
+#heal
+#woundfend 0
 #humanoid
 #okleader
 #okundeadleader
@@ -76188,6 +76198,8 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #hp 15
 #str 14
 #mr 18
+#heal
+#woundfend 0
 #humanoid
 #okleader
 #okundeadleader
@@ -76271,6 +76283,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #spiritsight
 #nobadevents 25
 #enc 0
+#size 9
 #itemslots 991750
 #clearmagic
 #magicskill 0 1
@@ -76307,7 +76320,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #name "Titan of the Underworld Rivers"
 #descr "The Titan of the Underworld Rivers is among the first and eldest of the Oceanides, daughters of Oceanus, and manifestation of the underworld river that separates the land of the living from the dead. In a previous war among the heavens she sided with the Pantokrator on the advice of Oceanus, and it was thusly decreed that all solemn oaths by the gods must be sworn by her water. However, the Pantokrator also feared her waters, and so kept her confined to the Underworld, in a cave propped up by silver pillars. Now with the Pantokrator gone, she is free to leave as she pleases."
 #diseaseres 100
-#gcost 290
+#gcost 270
 #homerealm 3 -- Mediterranean
 #startdom 3
 #pathcost 40
@@ -76349,7 +76362,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #name "Atua of the Endless Sky"
 #descr "The Endless Sky is one of the four uncreated beings of the Eternal Sea and have existed since the first sunrise. The Endless Sky represents the beginning of life, and the ever-present heavens. His rival has always been the Spirit of Ruin, due to her destructive and fiery tempers. While not a being that normally involves himself directly in mortal affairs, he is an ever-present and immortal force and has seen fit to claim the throne of the Pantokrator."
 #diseaseres 100
-#gcost 350
+#gcost 310
 #startdom 2
 #pathcost 40
 #moregrowth 1
@@ -76431,6 +76444,8 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #weapon 835
 #weapon 835
 #weapon 835
+#researchbonus 10
+#magicstudy 1
 #itemslots 786462
 #clearmagic
 #magicskill 2 3
@@ -76483,6 +76498,8 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #weapon 835
 #weapon 835
 #weapon 835
+#researchbonus 10
+#magicstudy 1
 #itemslots 786462
 #clearmagic
 #magicskill 2 3
@@ -76541,7 +76558,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #name "Atua of the Maggot-Mouthed Moon"
 #descr "The Maggot-Mouthed Moon is one of the four uncreated beings of the Eternal Sea and have existed since the first sunrise. The Maggot-Mouthed Moon represents war, with all the suffering and glory it brings. He breaths disease and spills blood, but also brings about luck and wealth. Now the greatest war of all is upon the world and he will conquer all."
 #diseaseres 100
-#gcost 300
+#gcost 270
 #startdom 3
 #pathcost 40
 #moregrowth -1 
@@ -76587,7 +76604,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #spr2 "extrapretenders/mothertuathas2.tga"
 #descr "The Mother of Tuathas is a demigoddess of immense size. She is the mother of the Tuatha De Danann who once ruled the lands of Man. Now she has returned from the Land of the Ever Young to claim the mantle of God and lead her people to victory."
 #diseaseres 100
-#gcost 260
+#gcost 250
 #pathcost 40
 #mor 30
 #hp 85
@@ -76741,7 +76758,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #name "Lord of Ferocity"
 #descr "The Lord of Ferocity is a divine being that takes the form of a muscled giant with the upper torso of a shark. Originally tasked by the Pantokrator with protecting the remote islands of the oceans, he became proud and greedy. In his hubris he began to accept the worship of men. The Pantokrator appeared in the form of a colossal octopus and humbled the Lord of Ferocity, trapping him underneath his island realm for all eternity as punishment. Now with the Pantokrator gone, the Lord of Ferocity is free to assert his will upon the world's oceans once again."
 #diseaseres 100
-#gcost 270
+#gcost 260
 #homerealm 9 -- Deeps
 #startdom 3
 #pathcost 40
@@ -76783,7 +76800,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #name "Titan of Maelstroms"
 #descr "The Titan of Maelstroms is a giant of divine heritage. She has tremendous power over the great storms and whirlpools of the shallow oceans and straits. Renowned for her voracious appetite, the Titan of Maelstroms once stole and feasted upon a herd of oxen sacred to the Pantokrator. Furious, the Pantokrator imprisoned her on the ocean floor for eternity, forcing her to drink sea water as her only sustenance. Now that the Pantokrator is gone, the Titan of Maelstroms is finally free to satiate her hunger and claim the world as her tempestuous dominion."
 #diseaseres 100
-#gcost 280
+#gcost 270
 #homerealm 9 -- Deeps
 #startdom 3
 #pathcost 40
@@ -76824,7 +76841,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #descr "The Great Thalassid is an ancient and cunning sea creature born at the dawn of time, when monsters and giants roamed the world. Over the millennia its kin were hunted to extinction, forcing it to hide in a cold corner of the world's oceans. With the Pantokrator gone, the creature has finally emerged to seek vengeance upon its ancient foes. The Great Thallasid has power over misdirection and can turn into a silver fish to pass undetected through hostile waters. It is surrounded by a shroud of glamour that will confuse attackers."
 #diseaseres 100
 #gcost 160
-#homerealm --9 -- Deeps
+#homerealm 9 -- Deeps
 #startdom 2
 #pathcost 60
 #moreluck 1
@@ -76845,6 +76862,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #enc 1
 #mapmove 22
 #ap 22
+#clearweapons
 #weapon 821  -- Golden Bite
 #weapon 532  -- Tail Sweep
 #fear 5
@@ -76985,7 +77003,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #spr1 "blue_bantaytubig/bacobaco1.png"
 #spr2 "blue_bantaytubig/bacobaco2.png"
 #name "Bacobaco"
-#descr "The Bacobaco is a monstrous, fire breathing turtle born at the dawn of time, when monsters and giants roamded the world. He was once chased to the ends of the earth by spirit hunters, and in his pursuit he fled to a mountain where he dug a great hole in its summit, showering the land with rock, mud, dust, and fire for three days, howling so loudly the earth shook. There he has remained, though with the Pantokrator's disappearance he has begun to stir again."
+#descr "The Bacobaco is a monstrous, fire breathing turtle born at the dawn of time, when monsters and giants roamded the world. He was once chased to the ends of the earth by spirit hunters, and in his pursuit he fled to a mountain where he dug a great hole in its summit. He showered the land with rock, mud, dust, and fire for three days, and howled so loudly the earth shook. There he has remained, though with the Pantokrator's disappearance he has begun to stir again."
 #diseaseres 100
 #gcost 220
 #homerealm 0 -- none
@@ -77020,7 +77038,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #name "Diwata of Darkness"
 #descr "The Diwata of Darkness is a giant of divine heritage and patron to many of the world's vampires, werewolves, witches, and ghouls alike. His brother, the Diwata of the Volcano, holds power over others through the flames he wields. The Diwata of Darkness, having no control over others, begged his brother for some of this flame, but his brother believed he only wanted the fire to gain the favor of the people and so the two argued for centuries. One day, the Diwata of Darkness stole the flame by turning invisible and hiding it within a coconut, but he could not control the flame and set fire to entire islands until his brother took his flame back and begged the Pantokrator to put out the fire out with rain. The Pantokrator was angered by his misdeeds and so the Diwata of Darkness was imprisoned for eternity. Now the shackles are weakening and he may once more seek the flames of control denied to him. He still holds onto a portion of the flame but it has become corrupt in his possession."
 #diseaseres 100
-#gcost 270
+#gcost 250
 #startdom 3
 #pathcost 40
 #moregrowth -1 
@@ -77102,7 +77120,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #name "Dreamtime Parrot"
 #descr "Born at the dawn of time, the Dreamtime Parrot represents an earlier era, when monsters and giants roamed the world and all life was connected to the Dreamtime. Gifted with brilliant white feathers and a powerful shriek, the monstrous bird became envious of the growing works of man and sought to destroy them. Furious, the Pantokrator imprisoned the Dreamtime Parrot for eternity. Now with the Pantokrator gone, the Dreamtime Parrot is breaking free from its prison and will soon release its destructive shriek and endless curiousity upon the world."
 #diseaseres 100
-#gcost 180
+#gcost 170
 #homerealm 0 -- none
 #startdom 2
 #pathcost 60
@@ -77135,7 +77153,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #name "Lord of the Red Desert"
 #descr "The Lord of the Red Desert is a dingo-headed Titan who claims dominion over the harsh Sun and unforgiving desert beyond the borders of civilization. Originally tasked by the Pantokrator with guardianship over the cycles of summer fires, in his hubris he began to accept the worship of men. Furious, the Pantokrator imprisoned him under the red sands for all eternity. Now with the Pantokrator gone, the Lord of the Red Desert is free to assert his will upon the world once again."
 #diseaseres 100
-#gcost 280
+#gcost 260
 #homerealm 0 -- none
 #startdom 3
 #pathcost 40
@@ -77273,7 +77291,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 138 -- Gorgon
 #descr "The Gorgons were three divine sisters born at the dawn of time. When the youngest of them was assaulted by a servant of the Pantokrator they were collectively punished for defending her. The sisters were transformed into beasts of horrific appearance. Their hair are masses of snakes and their eyes burn with amber fire. Great flapping bat wings grow from their shoulders. So horrible were their appearance that anyone who looked upon their faces turned to stone. But this was not enough for the servant. On his request the Pantokrator imprisoned the three gorgons for eternity and the youngest sister was bereft of her immortality, should she ever escape her prison. Now with the Pantokrator gone one of the sisters is stirring and her shackles are weakening."
 #diseaseres 100
-#gcost 220
+#gcost 200
 #pathcost 40
 #hp 30
 #prot 9
@@ -77413,7 +77431,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 215 -- Virtue
 #descr "The Virtue is an angelic being, a divine messenger or servant stranded in the physical world since the disappearance of the previous Pantokrator. Winged and radiant with divine light, she will don the yoke of godhood for the people of the world, leading them on the path of righteousness and salvation. The Virtue is surrounded by a powerful Aura of Splendor given her by her former master."
 #diseaseres 100
-#gcost 230
+#gcost 250
 #pathcost 40
 #moreorder 1
 
@@ -77424,7 +77442,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #att 13
 #def 13
 #mr 18
-#onebattlespell 1271 -- Personal Luck
+--#onebattlespell 1271 -- Personal Luck
 #spreaddom 1
 #itemslots 991750
 #clearmagic
@@ -77436,7 +77454,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 216 -- Fire Dragon
 #descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. Red Dragons have their skills reduced when casting spells from paths other than Fire. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
 #diseaseres 100
-#gcost 240
+#gcost 220
 #pathcost 40
 #hp 125
 #prot 20
@@ -77455,7 +77473,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 226 -- Fire Dragon Archmage
 #descr "The Arch Mage is a mage who has attained such power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Arch Mage is a master of magic and can be adept in several of the magic paths. The Arch Mage is a master of magic rituals and he can project his Elemental magic one province farther than normally possible."
 #diseaseres 100
-#gcost 240
+#gcost 220
 #pathcost 40
 #moreprod -1 
 #moreheat 1
@@ -77743,7 +77761,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 265 -- Water Dragon
 #descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. Blue Dragons have their skills reduced when casting spells from paths other than Water. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
 #diseaseres 100
-#gcost 240
+#gcost 220
 #pathcost 40
 #hp 125
 #prot 20
@@ -77762,7 +77780,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 267 -- Dragon Frost Father
 #descr "The Frost Father is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Frost Father is a master of magic and can be adept in several of the magic paths."
 #diseaseres 100
-#gcost 240
+#gcost 220
 #pathcost 40
 #moreprod -1 
 #moreheat -1
@@ -77781,7 +77799,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 266 -- Nature Dragon
 #descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. Green Dragons have their skills reduced when casting spells from paths other than Nature. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
 #diseaseres 100
-#gcost 240
+#gcost 220
 #pathcost 40
 #hp 125
 #prot 20
@@ -77800,7 +77818,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 268 -- Dragon Master Enchanter
 #descr "The Master Enchanter is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He is a master of magic and can be adept in several of the magic paths. The Master Enchanter is a master of magic rituals and he can project his Sorcerous magic one province farther than normally possible."
 #diseaseres 100
-#gcost 240
+#gcost 220
 #pathcost 40
 #moreprod -1
 #hp 10
@@ -77981,7 +77999,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #spr2 "vanilla/neteretofmanynames2.tga"
 #descr "The Neteret is a giant of divine heritage. She was once the wife of a previous Pantokrator, and was given knowledge of all names and the deeper arcana. When her husband was slain and dismembered in a rebellion of lesser gods, she gathered his body parts and returned him to life. However, his death meant that he was for eternity banished to the Underworld. The rebellious pretenders imprisoned her and a new Pantokrator came to rule. With the disappearance of the Pantokrator her prison weakens and She of Many Names is once more worshipped as Mistress of Magic and Lady of This World."
 #diseaseres 100
-#gcost 240
+#gcost 230
 #pathcost 30
 #hp 90
 #prot 3
@@ -77992,15 +78010,15 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 
 #itemslots 991750
 #clearmagic
-#magicskill 4 2
+#magicskill 4 1
 #magicskill 5 1
-#magicskill 7 1
+#magicskill 7 2
 #end
 
 #selectmonster 388 -- Neter of Chaos
 #descr "The Neter is a giant of divine heritage. He was once given power over the desert, storms, darkness and destruction by a previous Pantokrator. Endowed with unequaled destructive power and jealous ambition, he led the lesser gods in rebellion against his master and slew and dismembered him. However, the Pantokrator was reassembled by one of his servants and was able to return from the dead to banish the Neter for eternity. With the disappearance of the Pantokrator, the prison weakens and the Neter of Chaos can once more claim the world as his to destroy."
 #diseaseres 100
-#gcost 280
+#gcost 260
 #pathcost 40
 #hp 95
 #prot 3
@@ -78160,8 +78178,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #def 9
 #mr 18
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
 #prot 3
 #itemslots 991750
 #clearmagic
@@ -78210,7 +78227,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 501 -- Allfather
 #descr "The Allfather is the first and the last of the Aesir, ancient gods that died in the great war with the Rimtursar. When the war ended the Pantokrator banished the remaining aesir from the world. With the Pantokrator gone the Allfather has returned to the world to claim it as his. The Allfather was the foremost of the Aesir and is a master of magic, a great skald and an outstanding general. Like his subjects, he is a master of illusions and false appearances and is able to pass undetected through enemy lands. Like the Vanjarls of Vanheim, the Allfather is able to cross the oceans by ship. The Allfather is at all times accompanied by two great wolves and his great eight-legged horse who is able to ride the winds."
 #diseaseres 100
-#gcost 290
+#gcost 270
 #pathcost 40
 #moremagic 1
 
@@ -78233,7 +78250,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 3934 -- Divine Stallion
 #descr "The Divine Stallion is a huge eight-legged horse sired by a long since banished god when he transformed himself into a mare in order to lure a giant stallion away from the previous Pantokrator."
 #diseaseres 100
-#gcost 290
+#gcost 270
 #hp 96
 #prot 14
 #str 24
@@ -78308,7 +78325,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 600 -- Titan of War & Wisdom
 #descr "The Titan is a giant sprung from the forehead of a previous Pantokrator, when he had a thought he couldn't contain. Fully grown and armed, she burst forth and claimed divinity. She was eternally imprisoned for her impudence of giving the Pantokrator a headache. Her origin as a thought has made her wise and prudent. Her shield is painted with a Gorgoneion that strikes fear into the hearts of men. She is at all times followed by her owl companion."
 #diseaseres 100
-#gcost 350
+#gcost 340
 #pathcost 40
 #moreorder 1
 
@@ -78372,7 +78389,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 604 -- Teotl of the Night
 #descr "The Teotl is a giant of divine heritage. During the reign of a previous Pantokrator he was the Beast of the Night, released by his master to feed on the wicked and the weak. After having eaten thousands and thousands of hearts, he grew in malice and in power. His master became worried and imprisoned the Beast for eternity. Now with the Pantokrator gone, the Beast of the Night has returned and his hunger has grown during his millennial imprisonment."
 #diseaseres 100
-#gcost 280
+#gcost 260
 #pathcost 40
 #hp 90
 #prot 3
@@ -78392,7 +78409,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #spr2 "vanilla/sonofniefel2.tga"
 #descr "The Son of Niefel is a frost giant descended from the old Rimtursar. The giant is sprung from the glaciers of Niefelheim, the Land of Eternal Frost. His beard is made of icicles and his shield and sword are forged from the purest ice. "
 #diseaseres 100
-#gcost 280
+#gcost 260
 #pathcost 40
 #hp 120
 #prot 8
@@ -78477,7 +78494,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 643 -- Bog Mummy
 #descr "A Bog Mummy is the corpse of an ancient, evil Skratti, or giant mage, who was powerful enough to cheat death. To prevent this evil mage from returning after his death, a long forgotten hero staked him in a bog. But this only helped preserve the body until the bog dried up and some careless farmer pulled the stake loose. Now the mage has returned as an immortal Bog Mummy. Should the Bog Mummy be killed, it will eventually reform in the bog where it was once staked. Being immortal, there is nothing left to acquire but godhood."
 #diseaseres 100
-#gcost 230
+#gcost 250
 #pathcost 40
 #hp 65
 #prot 5
@@ -78645,7 +78662,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 661 -- Shedu
 #descr "The Shedu is a guardian spirit given divine powers by a previous Pantokrator. It has realized the aspirations of the other Pretenders and will protect its subjects by donning the mantle of God itself. It has the appearance of a great winged bull with a crowned human head. The Shedu is physically powerful and attuned to the protective powers of the stars and the Earth."
 #diseaseres 100
-#gcost 200
+#gcost 190
 #pathcost 60
 #hp 300
 #prot 15
@@ -78667,7 +78684,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 779 -- Rams Head Serpent
 #descr "The Rams-Headed Serpent is a great serpent born at the dawn of time, when monsters and giants roamed the world. As a being with great regenerative powers and a bringer of fertility it was worshiped by the first of men as a god of prosperity and healing. When the previous Pantokrator rose to power he imprisoned and banished all that threatened his power and the Rams-Headed Serpent was forever imprisoned in the forest of the Horned One where he found an ally with a temperament resembling his own. Now, with the Pantokrator gone, the Rams-Headed Serpent is breaking free to claim the world as his."
 #diseaseres 100
-#gcost 190
+#gcost 180
 #pathcost 60
 #hp 195
 #prot 15
@@ -78694,7 +78711,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 812 -- Lord of the Wild
 #descr "This being is the lord of an ancient forest and all its inhabitants. The Lord of the Wild practices the old arts and is a master of Nature and Blood magic. Human females in his vicinity will shed their civilized ways and serve the Lord of the Wild in a life of revelry. These females are called maenads and they will come in great numbers in a Dominion with great Turmoil."
 #diseaseres 100
-#gcost 290
+#gcost 270
 #pathcost 40
 #hp 90
 #prot 8
@@ -78766,9 +78783,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #end
 
 #selectmonster 872 -- Ghost King
-#descr "The Ghost King is the soul of an ancient mage king that has returned from the Underworld to claim the world of the living.
-
-Ghosts will come to his aid when his Dominion is strong, and if awake will muster a host of spirits to aid the army in the capital."
+#descr "The Ghost King is the soul of an ancient mage king that has returned from the Underworld to claim the world of the living. Ghosts will come to his aid when his Dominion is strong."
 #diseaseres 100
 #gcost 120
 #pathcost 30
@@ -78825,7 +78840,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #selectmonster 905 -- Jade Emperor
 #descr "The Jade Emperor is an ancient Celestial being who has descended from the Celestial Spheres to claim this world as his Empire. He appears as an old, bearded man of huge proportions, dressed in the robes of a bureaucrat. He has great powers of Water, Air and Astral magic and is able to change fate itself."
 #diseaseres 100
-#gcost 280
+#gcost 260
 #pathcost 40
 #hp 110
 #prot 3
@@ -78911,7 +78926,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #spr2 "vanilla/ancientkraken2.tga"
 #descr "Krakens never die from old age. They just grow larger, wiser and stronger. This Kraken is very old and, through the ages, he has seen many a Pretender God rise to godhood. This time, he shall be the new God. The Ancient Kraken has become adept at magic over the millennia and he is a versatile mage."
 #diseaseres 100
-#gcost 230
+#gcost 240
 #pathcost 60
 #hp 230
 #prot 12
@@ -78931,7 +78946,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #selectmonster 978 -- Great Black Bull
 #descr "The Great Black Bull is a divine bull that has ravaged the world since time immemorial. The Black Bull is a creature of unbridled fury and a manifestation of the blind rage of Nature, the inhuman wildness, the glory of the slayer and the slain. Unlike his brother, the Great White Bull, with whom he has fought for dominance on several legendary occasions, the fertility aspect of the Black Bull is secondary to that of his maddened rage. Now that Ascension draws close, he leads his people to once again wildly embrace the mindless abandon and bloodlust of Nature aroused."
 #diseaseres 100
-#gcost 210
+#gcost 200
 #pathcost 60
 #hp 233
 #prot 13
@@ -78954,7 +78969,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #selectmonster 979 -- Great White Bull
 #descr "The Great White Bull is a divine bull that has wandered the world since time immemorial. The bull has long been worshiped as a manifestation of the wildness and fertility of Nature and his fury and potency are unrivaled. Now that the Great One has fallen, the bull's ferocity drives him to lead his people to trample the thrones of the world beneath his cloven hooves. The potent fertility of the White Bull generates extra supplies."
 #diseaseres 100
-#gcost 220
+#gcost 210
 #pathcost 60
 #hp 231
 #prot 13
@@ -78997,7 +79012,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #selectmonster 1026 -- Carrion Dragon
 #descr "The Carrion Dragon is the living carcass of an ancient Dragon that was powerful enough not to remain dead after it was slain. Pure hatred and vengeful thoughts rejoined the soul of the dead Dragon with its moss-covered corpse. The Carrion Dragon is able to adopt the shape of a dead Pan. The body of the Carrion Dragon is less suited for spell casting than the shape of the Pan. In dragon shape most of its magic skills are reduced. The paths of Death and Nature are innate to the Carrion Dragon and his skills in those paths are less reduced. The presence of a Carrion Dragon will spread a sleeping sickness, and nearby enemies may fall into a dreamless slumber. In lands free of civilization it will grow stronger, but it will weaken where men toil."
 #diseaseres 100
-#gcost 230
+#gcost 220
 #pathcost 40
 #hp 200
 #prot 16
@@ -79005,6 +79020,8 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #att 16
 #def 10
 #mr 18
+#heal
+#woundfend 0
 #clearspec
 #slothpower 1
 #sleepaura 6
@@ -79016,7 +79033,6 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #spiritsight
 #poisonres 25
 #plant
-#heal
 #mor 30
 #goodleader
 #shapechange 1027
@@ -79027,6 +79043,8 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #pathcost 40
 #diseaseres 100
 #fear 10
+#heal
+#size 10
 #itemslots 18620416
 #clearmagic
 #magicskill 5 2
@@ -79036,7 +79054,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #selectmonster 1027 -- Carrion Lord
 #descr "A Carrion Lord is a dead Pan reanimated and given unholy powers by a Panic Apostate, who forces the soul of the dead Pan to rejoin its own moss-covered carcass. The carcass is entwined with vines and roots that have a life of their own. The Carrion Lord is a powerful wielder of Nature magic, but is also given unholy powers over the dead. The Carrion Lord can create manikins by animating vines, roots and the bones of dead beasts. The presence of a Carrion Lord will spread a sleeping sickness, and nearby enemies may fall into a dreamless slumber. In lands free of civilization it will grow stronger, but it will weaken where men toil."
 #diseaseres 100
-#gcost 230
+#gcost 220
 #pathcost 40
 #hp 53
 #prot 2
@@ -79044,6 +79062,8 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #att 8
 #def 8
 #mr 18
+#heal
+#woundfend 0
 #clearspec
 #slothpower 1
 #sleepaura 6
@@ -79055,7 +79075,6 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #spiritsight
 #poisonres 25
 #plant
-#heal
 #mor 30
 #goodleader
 #shapechange 1026
@@ -79065,6 +79084,8 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #startdom 2
 #pathcost 40
 #diseaseres 100
+#size 4
+#heal
 #itemslots 2040326
 #clearmagic
 #magicskill 5 2
@@ -79168,7 +79189,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #selectmonster 1230 -- Titan of the Forge
 #descr "The Titan of the Forge is a crippled God. Mutilated, imprisoned and given tools of smithing, he served the previous Pantokrator, but was forgotten and left for dead. During the aeons the Forge Lord learned his craft and became a true master when it comes to forging magic items and mundane tools. Now his skills will serve both the farmers and savants of his kingdom. When forging magic items, he requires fewer magic gems than an ordinary mage. The Forge Lord has had a deformed foot since his days in the service of the Pantokrator."
 #diseaseres 100
-#gcost 260
+#gcost 250
 #pathcost 30
 #hp 90
 #prot 3
@@ -79187,7 +79208,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #selectmonster 1231 -- Drakaina
 #descr "The Drakaina was once a Titaness, beautiful beyond belief. When she spurned the previous Pantokrator she was cursed with a hideous form and was imprisoned on an enchanted isle. She now appears as a woman with the lower part of a huge serpent. From the serpent grow six dogs that hunger for human flesh. For millennia the baying of the dogs have frightened sailors that mistakenly have come too close to her island prison. Now, with the Pantokrator gone, her shackles are weakening and the Drakaina will avenge her millennial imprisonment."
 #diseaseres 100
-#gcost 290
+#gcost 280
 #pathcost 40
 #hp 132
 #prot 10
@@ -79264,7 +79285,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #selectmonster 1340 -- Tiwaz of War
 #descr "The Tiwaz is a giant of divine heritage who once was the General of the West in the old Pantokrator's armies. Now that the Pantokrator has fallen, the general will conquer the world and make it his domain."
 #diseaseres 100
-#gcost 280
+#gcost 270
 #pathcost 40
 #moreorder 1 
 #moreprod 1
@@ -79289,7 +79310,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #selectmonster 1341 -- Devi of Darkness
 #descr "The Devi of Darkness is a huge four-armed divinity with a horrible appearance. She was once given power to battle demons by a previous Pantokrator, but her destructive fury made him banish her eternally to save the world from her rage. With the disappearance of the Pantokrator the raging devi has broken free and will subjugate and destroy all demons and likely the world as well. The Devi of Darkness is a slayer of demons and she holds a demon head in her hand and a bowl into which blood from the head constantly pours. Demon blood also pours from her open mouth. The Devi wields a sword which thirsts for demon blood and a trident that forces demons to halt."
 #diseaseres 100
-#gcost 290
+#gcost 280
 #pathcost 40
 #hp 84
 #prot 3
@@ -79499,7 +79520,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #selectmonster 1373 -- Annunaki of Sweet Water
 #descr "The Annunaki is a giant of divine heritage. During the reign of the previous Pantokrator he was guardian of the underwater ocean and its hidden secrets. With the disappearance of the Pantokrator, he will use these secrets to claim the entirety of this world. The currents move at the command of the Annunaki and will always be favourable to him in combat. This will hinder his enemies and help his allies in combat whilst below the waves."
 #diseaseres 100
-#gcost 300
+#gcost 280
 #pathcost 40
 #hp 90
 #prot 3
@@ -79662,8 +79683,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #mr 18
 #cleararmor
 #prot 5
-#icenatprot  1
-#iceprotinspector  1
+#icenatprot 1
 #armor 176  -- dire wolf pelt
 #armor 20  -- Iron Cap
 #itemslots 991750
@@ -79813,7 +79833,7 @@ Ghosts will come to his aid when his Dominion is strong, and if awake will muste
 #selectmonster 2082 -- Son of the Fallen
 #descr "The Son of the Fallen is the last of the Nephilim, ancient giants of godlike power. When the other Nephilim lost purpose, he began to hunt them down and devoured them all. Having consumed the flesh and powers of his brethren, the Son of the Fallen has nothing left to live for but achieving godhood."
 #diseaseres 100
-#gcost 300
+#gcost 290
 #pathcost 40
 #moreorder -1
 
@@ -79911,7 +79931,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2203 -- Oni Kunshu
 #descr "The Oni Kunshu is a king of kings in the Netherworld, powerful enough to claim this world as his. Like the other Onis, the Oni Kunshu thrives on turmoil and carnage and his dominion will be a war-ridden and broken land. He is highly resilient and will suffer permanent injuries less often than most creatures."
 #diseaseres 100
-#gcost 300
+#gcost 290
 #pathcost 40
 #hp 60
 #prot 8
@@ -79935,7 +79955,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2204 -- Oni Kunshu Spirit
 #descr "Oni are almost immortal. If their body is slain, their spirit will survive. If the spirit is not slain as well, it will reform a new body over time. Oni Spirits are ghosts and can be banished."
 #diseaseres 100
-#gcost 300
+#gcost 290
 #hp 25
 #prot 0
 #str 20
@@ -80072,7 +80092,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2315 -- Melqart
 #descr "The Melqart is a prodigal Rephaite king who has left Hinnom to become the God of Berytos. Once the Rephaim all lived in Hinnom, but when the Berytians founded colonies near the city of Ashdod, they were influenced by the Rephaites and began to worship them as gods. The Melqart is huge of stature and deathly pale. Horns grow from his forehead and his hands have six fingers. The Melqart is a descendant of Azazel and shares his gifts and appetites. With the Pantokrator gone, he is free to claim the world as his banquet."
 #diseaseres 100
-#gcost 290
+#gcost 280
 #pathcost 40
 #hp 69
 #prot 5
@@ -80236,7 +80256,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2434 -- Teteo Inan
 #descr "The Teteo Inan, Mother of Gods, aided a previous Pantokrator in the creation of the world. When she gave birth to a multitude of children, he became furious, despite the fact that they were his. Convinced that she gave birth to spite him and to lead his offspring against him, he slew her, or at least he tried. When she was decapitated blood spurted forth and formed two great serpents where her head used to be. Having failed to slay her, he punished her with eternal imprisonment instead. Now with the Pantokrator gone, She With the Snake Skirt has returned to creation to claim it as her own. The Teteo Inan wears a horrible necklace made of the skulls, hands and hearts of men, and a skirt of writhing snakes. Once beautiful, she is now a horror to behold."
 #diseaseres 100
-#gcost 330
+#gcost 310
 #pathcost 40
 #hp 88
 #prot 3
@@ -80255,7 +80275,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2435 -- Annunaki of Love and War
 #descr "The Annunaki is a giant of divine heritage. She was once the warrior and lover of the previous Pantokrator, but was imprisoned for her violent and promiscuous behavior. She has given birth to heroes, gods and monsters alike. Now with the Pantokrator gone, she is ready to claim a world inhabited by her children."
 #diseaseres 100
-#gcost 300
+#gcost 290
 #pathcost 40
 #moregrowth 1 
 #moreorder 1
@@ -80296,7 +80316,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2437 -- Annunaki of Growth and Rebirth
 #descr "The Annunaki is a giant of divine heritage. During the reign of the previous Pantokrator he was shepherd of all things living, tied to the cycle of death and rebirth. With each passing year he was killed and reborn as the seasons changed. With the Pantokrator gone, he has defeated the cycle of seasons and will no longer suffer annual death and imprisonment. Now he claims to be be the shepherd of the entire creation and he will bring life to the world. The Annunaki is a god of growth and rebirth and supplies are never sparse in a land where he dwells. He is still affected by the changing of the seasons and is more powerful during the spring. Should a mortal be impudent enough to strike at his exalted form, roots and vines from the earth itself will protect the Annunaki and trap the puny mortal."
 #diseaseres 100
-#gcost 300
+#gcost 290
 #pathcost 40
 #hp 90
 #prot 3
@@ -80372,7 +80392,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2442 -- Teotl of War
 #descr "The Teotl is a giant of divine heritage. With the deception of the Teteo Inan and her plot against the Pantokrator, the Pantokrator answered by impregnating the Mother of Gods with a ball of feathers. When she gave birth, the Teotl was born fully aware and armed with a serpent stolen from his mother's womb. He was given power and rage by the Pantokrator and promptly slew his older siblings. With the rebellion quelled, the Pantokrator placed him in charge of the Armies of the Western Sun. He became the Warrior Supreme who crushed and devoured the enemies of the world in the name of his master. When the Pantokrator claimed the world and rewrote the Tablets of Destiny, he no longer needed the Warrior Supreme. Imprisoned for eternity, the Teotl raged against his prison, but not until the Pantokrator disappeared and his divine decree ended could he break loose. Now the Teotl of War has come to claim a world rightfully his. The Teotl is war-painted and wears a black war-mask over his face. He is armed with the Serpent he was born with and uses it as an enchanted club that will poison his enemies with its venomous fangs. In combat he will move with incredible speed and ferocity."
 #diseaseres 100
-#gcost 290
+#gcost 280
 #pathcost 40
 #moreluck -1
 
@@ -80543,7 +80563,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2450 -- Horned One
 #descr "The Horned One is a giant of divine heritage once put in charge of the wild by a previous Pantokrator. As lord of beasts, berserkers and wild revelry he is also known as the Horny One. When he made an attempt on a mistress of the Pantokrator he was trapped in a magic forest for eternity, with beasts as only company. In the enchanted forest primordial beasts were also bound. The Golden Boar, the Ram-Headed Serpent and the Great White Stag pledged the Horned One their service. Now, with the Pantokrator gone, the Horned One has found a way out of his woodland prison to once more revel in the world with beasts and men. He is highly resilient and will suffer permanent injuries less often than most creatures."
 #diseaseres 100
-#gcost 230
+#gcost 220
 #pathcost 40
 #moregrowth 1
 
@@ -80658,7 +80678,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2464 -- Neter of the Moon
 #descr "The Neter is a giant of divine heritage. A previous Pantokrator gave him power knowledge the moon and the stars and the wisdom how to use it. As guardian of the celestial bodies he observed what was, what had been, and what would come to pass. During the rebellion of the lesser gods, he observed but did not interfere on either side. For this the Pantokrator imprisoned him for eternity. Now with the pantokrator gone his astral prison is weakening and he will return to guide the world as he wills."
 #diseaseres 100
-#gcost 280
+#gcost 260
 #pathcost 40
 #hp 95
 #prot 3
@@ -80696,7 +80716,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2466 -- Kamadhenu
 #descr "The Kamadhenu is a spirit of plenty drawn forth during the Churning of the Ocean of Milk. Given divine powers by a previous Pantokrator, she gave birth to all bovine lifeforms and brought plenty to the land. With the disappearance of the Pantokrator, the Kamadhenu has gained freedom and has donned the mantle of God itself. It has the appearance of a great winged cow with the head and breasts of a human female with milk-white skin. Her beauty and peacock tail strike onlookers with awe. The Kamadhenu is physically powerful and attuned to the protective powers of Nature and the Astral Spheres. The Kamadhenu produces milk enough to feed one hundred men."
 #diseaseres 100
-#gcost 200
+#gcost 180
 #pathcost 60
 #hp 230
 #prot 15
@@ -80817,7 +80837,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2552 -- Ahura of Wisdom
 #descr "The Ahuras were three celestial beings given might and splendor by a previous Pantokrator. Greatest of the three was the Lord of Wisdom, who in constant struggle with his wicked twin, the Destructive Spirit, would lead men to good deeds. Banished from this world, he has acted through his prophets and his divine messengers, the six Amesha Spentas. Now with the Pantokrator gone, he can return to the world and claim it as his own."
 #diseaseres 100
-#gcost 280
+#gcost 260
 #pathcost 40
 #hp 90
 #prot 3
@@ -80900,7 +80920,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2556 -- Celestial Carp
 #descr "The Celestial Carp once dwelled in a decorative pond in the gardens of the Pantokrator. For eternities he lurked under the surface of those still waters, occasionally surfacing to spy on the ruler of all, learning forbidden names and the secrets of the divine. When he realized the Pantokrator had disappeared he decided to usurp the place of his master using the secrets he had gleaned during his patient wait. Used to feed on the flesh of those that displeased his master he has developed a hunger for the flesh of men, especially the clergy of other would be gods."
 #diseaseres 100
-#gcost 270
+#gcost 260
 #pathcost 40
 #moreprod -1
 #hp 165
@@ -80944,7 +80964,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2608 -- Azi
 #descr "The Azi is the progeny of the Destructive Spirit. It is a three-headed dragon sprung from corrupted flames. When the previous Pantokrator banished the Daeva of Daevas, his offspring was imprisoned lest the world would be destroyed. Now with the Pantokrator gone, the shackles of the Daevic Dragon are weakening and the Marshal of Destruction shall once more lay the world waste in ashes."
 #diseaseres 100
-#gcost 330
+#gcost 300
 #pathcost 40
 #hp 125
 #prot 20
@@ -80955,7 +80975,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #woundfend 1
 #twiceborn 7223 -- Dracowight
 #enc 1
-#itemslots 18636800
+#itemslots 18669568
 #clearmagic
 #magicskill 0 2
 #magicskill 5 3
@@ -80966,7 +80986,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #spr2 "vanilla/greatwarlock486_2.png"
 #descr "The Great Warlock is a mage of such great power that he has taken the role of a Pretender God. Great Warlocks are masters of magic and known to be adept in several of the magic paths."
 #diseaseres 100
-#gcost 330
+#gcost 300
 #pathcost 40
 #moreorder -1 
 #moregrowth -1 
@@ -80978,8 +80998,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #def 9
 #mr 18
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
 #prot 4
 #itemslots 2040326
 #clearmagic
@@ -80990,7 +81009,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2610 -- Angra Mainyu
 #descr "The Angra Mainyu, Spirit of Destruction, was given half the world by a previous Pantokrator. While his wise twin was appointed as the guide of men and claimed as followers those who did good deeds, the Angra Mainyu became the lord of the wicked and the cruel, worshipped by sinners and deceitful men, and he would tempt and lead astray those who followed his benevolent twin. When the Pantokrator finally tired of the game of the opposing principles, he imprisoned them both for eternity. But now the Pantokrator is gone, and the Angra Mainyu feels his prison weaken. Now he will rule this world without an opposing principle to stop him."
 #diseaseres 100
-#gcost 290
+#gcost 270
 #pathcost 40
 #hp 90
 #prot 3
@@ -81009,7 +81028,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2611 -- Gannag Menog
 #descr "The Gannag Menog is the hypostasis of Angra Mainyu, a celestial being of great might. During the reign of a previous Pantokrator, the Angra Mainyu and his Ahura twin were banned from this world. Now with the Pantokrator gone and the old decrees weakening, the Angra Mainyu has found a way to manifest his spirit as a messenger of corruption and lies. Eventually he will reenter this world and claim it as his own. The Gannag Menog is a spiritual being, able to appear wherever it wants. It commands the Daevic Heptad, six demonic manifestations of the Angra Mainyu."
 #diseaseres 100
-#gcost 220
+#gcost 240
 #pathcost 60
 #hp 49
 #prot 1
@@ -81029,7 +81048,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2627 -- Daeva of Wrath
 #descr "The Daeva of the Bloody Mace is an angel of destruction emanated from the Angra Mainyu. During the reign of a previous Pantokrator, the Daevas rebelled and started a war against the Ahuras and the benevolent Mainyus. The Daeva of the Bloody Mace became the eternal enemy of the Ahura of the Oath. But when the Pantokrator tired of the war among gods, he imprisoned or banished Ahura and Daeva alike. Now with the Pantokrator gone and his prison crumbling, the Great Daeva is once more able to bring strife and destruction to this world."
 #diseaseres 100
-#gcost 230
+#gcost 220
 #pathcost 60
 #hp 49
 #prot 1
@@ -81048,7 +81067,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2685 -- Viracocha
 #descr "The Viracocha is a giant of divine heritage. He was the servant of a previous Pantokrator and aided him in the creation of the world. He was given the splendor of the sun, the rage of the storm and the life-bringing rain as tools and was commanded to bring civilization and order to creation. But the splendor of the sun gave the Viracocha hubris and he tried to create men to inhabit the world. He breathed air into stones and created a race of giants. But the stone giants were imbecilic and violent and they threatened other races created by the Pantokrator. The Pantokrator was displeased and took the rain from his servant and drowned the giants with a great flood. The Viracocha was imprisoned for eternity. Now, with the Pantokrator gone, the Viracocha can return and bring splendor to the world and claim it as his."
 #diseaseres 100
-#gcost 290
+#gcost 270
 #pathcost 40
 #hp 88
 #prot 3
@@ -81067,7 +81086,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2686 -- Apu Inti
 #descr "The Apu Inti, Lord Sun, is a giant of divine heritage. When his father sinned against the Pantokrator the Apu Inti inherited the splendor of the sun in his fathers stead. He was given dominion over the Sun and everything upon which it shone. But the Inti became enamored with the beings underneath the sun and the Huacas of the land. He sired the Ayar brothers, divine heroes unchecked by the Pantokrator. The Lord of the world, found the Inti's insolence even worse than his father's, and the Lord Sun and his siblings were imprisoned in caves with unbreakable doors of Garnet and Gold. But now, with the Pantokrator gone, the doors of Garnet and Gold are weakening and they shudder with each strike of the imprisoned Sun. When they finally shatter, the Apu Inti will reclaim a world once his."
 #diseaseres 100
-#gcost 280
+#gcost 270
 #pathcost 40
 #moreprod 1
 #hp 88
@@ -81087,7 +81106,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2693 -- Heavenly Condor
 #descr "Born at the dawn of time, the Heavenly Condor represents an earlier era, when monsters and giants roamed the world. When the previous Pantokrator rose to power he imprisoned and banished all that threatened his creation and the heavenly bird was bound to a cloud-covered mountain. When the Nazcan people found his lofty abode they began to worship the heavenly bird. With the Pantokrator gone their prayers have been answered and the Condor from the dawn of time will return in fury."
 #diseaseres 100
-#gcost 180
+#gcost 160
 #pathcost 60
 #hp 153
 #prot 18
@@ -81150,7 +81169,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2698 -- Apu Illapa
 #descr "The Apu Illapa, Lord Lightning, is a giant of divine heritage. When his father sinned against the previous Pantokrator the Apu Illapa inherited the rage of the storms in his fathers stead. He was given dominion over the Sky and the Winds and everything in the air. During the rebellion against the Pantokrator he allowed the Sun to remain in the sky and for this he was punished with eternal imprisonment. Now with the Pantokrator gone his shackles are weakening and vast thunder clouds are gathering. Soon he will be free to claim all beneath the sky once more."
 #diseaseres 100
-#gcost 280
+#gcost 260
 #pathcost 40
 #hp 88
 #prot 3
@@ -81214,7 +81233,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2755 -- Hun Came
 #descr "The Hun Came, One Death, is a giant of divine heritage once placed in charge of the beginning of the cycle of death by a previous Pantokrator. He would cause death and lamentation to the world. He saw that everything in the world would come under his reign sooner or later, but this was not entirely true. Dominion over the cycle of death was shared with his brother Vucub Came, Seven Death. He was given the end of the cycle by the Pantokrator. Hun Came came to realize that his brother represented the end of Hun Came authority and he became jealous. The One Death shared his powers with nine lieutenants, the Bolon-ti-ku, the Nine-Gods, and with their aid he slew his brother and ended the cycle of death and rebirth. With the breach of the natural order set up by the Pantokrator the world became depopulated, wild and inhospitable. The world was plunged into darkness and the dead threatened to replace the living. The Pantokrator became furious and punished his rebellious servant with eternal imprisonment. Now, with the Pantokrator gone, the prison of the Hun Came is weakening and the world might once more be plunged in Darkness."
 #diseaseres 100
-#gcost 320
+#gcost 290
 #pathcost 40
 #moregrowth -1
 
@@ -81321,7 +81340,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #woundfend 3
 #twiceborn 6644 -- Wight Beast
 #enc 1
-#itemslots 18636800
+#itemslots 18669568
 #clearmagic
 #magicskill 3 1
 #magicskill 6 2
@@ -81607,7 +81626,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #woundfend 2
 #twiceborn 6644 -- Wight Beast
 #enc 1
-#itemslots 18636800
+#itemslots 18669568
 #clearmagic
 #magicskill 3 1
 #magicskill 5 2
@@ -81741,7 +81760,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2802 -- Svartalf Mastersmith
 #descr "This ancient Svartalf is the younger brother of the Eldest Dwarf. Together the two of them learned and mastered their arts of smithing and artifice. But the younger brother did not have the temperament to become as skilled as his brother. As the centuries passed he observed as his brother forged increasingly beautiful artifacts. In jealous rage he stole his brother's most prized possession and fled into the wilderness. He became obsessed with greed and transformed himself into a horrible Linnormr in order to protect his treasures from his elder brother. But the elder brother didn't follow him. Instead he forged mighty weapons and gave them to the heroes of men to challenge and slay his brother, the dragon-dwarf. With the death of the last hero, the dragon-dwarf got tired of the hiding game. Now he has returned to the world of men to claim it as his and slay his brother so no one will try to take his precious treasures from him. When in Linnormr shape his physical might is unrivaled, but his magical powers are drastically reduced."
 #diseaseres 100
-#gcost 290
+#gcost 260
 #pathcost 30
 #hp 11
 #prot 3
@@ -81759,7 +81778,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2803 -- Svartalfr Linnorm
 #descr "This ancient Svartalf is the younger brother of the Eldest Dwarf. Together the two of them learned and mastered their arts of smithing and artifice. But the younger brother did not have the temperament to become as skilled as his brother. As the centuries passed he observed as his brother forged increasingly beautiful artifacts. In jealous rage he stole his brother's most prized possession and fled into the wilderness. He became obsessed with greed and transformed himself into a horrible Linnormr in order to protect his treasures from his elder brother. But the elder brother didn't follow him. Instead he forged mighty weapons and gave them to the heroes of men to challenge and slay his brother, the dragon-dwarf. With the death of the last hero, the dragon-dwarf got tired of the hiding game. Now he has returned to the world of men to claim it as his and slay his brother so no one will try to take his precious treasures from him. When in Linnormr shape his physical might is unrivaled, but his magical powers are drastically reduced."
 #diseaseres 100
-#gcost 290
+#gcost 260
 #pathcost 30
 #hp 175
 #prot 18
@@ -81895,7 +81914,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 
 He is accompanied by the souls of his subjects that have followed him into the world of the living."
 #diseaseres 100
-#gcost 250
+#gcost 240
 #pathcost 40
 #hp 65
 #prot 13
@@ -81938,7 +81957,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 2856 -- Son of the Sea
 #descr "The Son of the Sea is an ancient demigod sprung from the Sea. Once the servant of the previous Pantokrator he became the psychopomp of the watery dead. He would take the newly dead on his boat 'Wave Sweeper' to the Land of the Watery Dead, where they would live on in the gloomy halls underneath the stormy seas. When the Fomorians rebelled against the Pantokrator and ravaged the world, the Son of the Sea was punished for having given them the means to escape their prison land. The Son of the Sea was imprisoned for millennia, but with the Pantokrator gone, his shackles are weakening and he is ready to enter the world of the living as God and ruler of all. The Son of the Sea is strongly attuned to the sea and the storms, but his task of guiding the souls of the dead has given him great powers over the dead. He is a master of trickery and illusions and can hide his true appearance. With his ship, 'Wave Sweeper', he can bring his followers across the sea, or he can bless them with water-breathing."
 #diseaseres 100
-#gcost 290
+#gcost 280
 #pathcost 40
 #hp 88
 #prot 6
@@ -81958,7 +81977,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 2881 -- Telkhine God-King
 #descr "The Telkhine God-King was the ruler of the Telkhines, ancient spirits of the sea with powers to rival the titans. They were masterful sages and metal crafters. They forged artifacts for the servants of the previous Pantokrator and taught the elder cyclopes their arts. But the Telkhines succumbed to hubris and made themselves god-kings to be worshiped by their subjects. When they discovered the means to create malefic poison through the mixing of stygian water and sulfur their lands became poisonous to animals and plants alike. Their reign was put to an end by the Pantokrator and the entire kingdom was swallowed by the sea. The Telkhines themselves were imprisoned in Tartarus for eternity. Now with the Pantokrator gone the mightiest of the Telkhines is breaking free. Telkhines are able to change their shape. In their demonic form they appear with dog heads and flippers instead of hands and their powers over storms and the sea are increased. In human shape their skills in forging are increased. Telkhines are always surrounded by stygian fumes that kills men and beast alike. Even the population in the province where they dwell will slowly suffer and die. He is highly resilient and will suffer permanent injuries less often than most creatures."
 #diseaseres 100
-#gcost 280
+#gcost 270
 #pathcost 40
 #moregrowth -1
 
@@ -81982,7 +82001,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 2882 -- Telkhine God-King Demon
 #descr "The Telkhine God-King was the ruler of the Telkhines, ancient spirits of the sea with powers to rival the titans. They were masterful sages and metal crafters. They forged artifacts for the servants of the previous Pantokrator and taught the elder cyclopes their arts. But the Telkhines succumbed to hubris and made themselves god-kings to be worshiped by their subjects. When they discovered the means to create malefic poison through the mixing of stygian water and sulfur their lands became poisonous to animals and plants alike. Their reign was put to an end by the Pantokrator and the entire kingdom was swallowed by the sea. The Telkhines themselves were imprisoned in Tartarus for eternity. Now with the Pantokrator gone the mightiest of the Telkhines is breaking free. Telkhines are able to change their shape. In their demonic form they appear with dog heads and flippers instead of hands and their powers over storms and the sea are increased. In human shape their skills in forging are increased. Telkhines are always surrounded by stygian fumes that kills men and beast alike. Even the population in the province where they dwell will slowly suffer and die. He is highly resilient and will suffer permanent injuries less often than most creatures."
 #diseaseres 100
-#gcost 280
+#gcost 270
 #pathcost 40
 #moregrowth -1
 
@@ -82194,7 +82213,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 2980 -- Uttervast
 #descr "The Uttervast is a primordial being of godlike power. Its mere presence is a threat to the world, so it was banished to the void whence it came by a previous Pantokrator. The Uttervast is composed of spheres of stellar lights and shadows. It can project its otherworldly mind on lesser beings and destroy them from afar. Anyone attacking the primordial god-being will find themselves harmed by strange principles of primordial correspondence between the vast and the singular."
 #diseaseres 100
-#gcost 310
+#gcost 270
 #pathcost 40
 #moremagic 2
 #hp 107
@@ -82363,7 +82382,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3072 -- Kami of the Sun
 #descr "The Kami of the Sun is the daughter of the previous Pantokrator. Together with her two brothers she was brought into existence when the Pantokrator grieved after banishing his wife to the netherworld. When he wiped his left eye a divine spark was set free and hastened to the heavens. Watching the spark he called it daughter. She reminded him of his banished wife and he endowed her with the brilliance and beauty of the sun. But when the people of the world started to worship her instead of him he got jealous and imprisoned her in a cave for eternity. Now with the Pantokrator gone the Kami of the Sun is returning to the world to bring joy and prosperity to mankind."
 #diseaseres 100
-#gcost 320
+#gcost 300
 #pathcost 40
 #moreorder 1
 
@@ -82425,7 +82444,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3076 -- Morrigna
 #descr "The Morrigna is a tripartite entity of divine heritage. She is one with her sisters and her sisters are one with her. The trinity was given power and purpose by a previous Pantokrator. One sister was given mandate over battles, one sister was given mandate over life and death, and one sister was given mandate over the fates of men. She was the Battle Crow, witnessing the slaughter and the dying, pecking at the bodies of the fallen ones. Out of fear and desperation men begun to worship the sisters and they tried to placate her with sacrifice and prayer. The Morrigna accepted their worship and turned battles to their favor. Furious the Pantokrator imprisoned her in the Charnel House, a labyrinthine prison of human bones. Now with the Pantokrator gone the prison is crumbling and the sisters will once more decide the fates of men. The Morrigna is a trinity in one being and can separate her forms at will."
 #diseaseres 100
-#gcost 400
+#gcost 380
 #pathcost 40
 #hp 88
 #prot 3
@@ -82446,7 +82465,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3077 -- Morrigna
 #descr "The Morrigna is a tripartite entity of divine heritage. She is one with her sisters and her sisters are one with her. The trinity was given power and purpose by a previous Pantokrator. One sister was given mandate over battles, one sister was given mandate over life and death, and one sister was given mandate over the fates of men. She was the Battle Crow, witnessing the slaughter and the dying, pecking at the bodies of the fallen ones. Out of fear and desperation men begun to worship the sisters and they tried to placate her with sacrifice and prayer. The Morrigna accepted their worship and turned battles to their favor. Furious the Pantokrator imprisoned her in the Charnel House, a labyrinthine prison of human bones. Now with the Pantokrator gone the prison is crumbling and the sisters will once more decide the fates of men. The Morrigna is a trinity in one being and can separate her forms at will."
 #diseaseres 100
-#gcost 400
+#gcost 380
 #hp 88
 #prot 3
 #str 24
@@ -82466,7 +82485,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3078 -- Morrigna
 #descr "The Morrigna is a tripartite entity of divine heritage. She is one with her sisters and her sisters are one with her. The trinity was given power and purpose by a previous Pantokrator. One sister was given mandate over battles, one sister was given mandate over life and death, and one sister was given mandate over the fates of men. She was the Battle Crow, witnessing the slaughter and the dying, pecking at the bodies of the fallen ones. Out of fear and desperation men begun to worship the sisters and they tried to placate her with sacrifice and prayer. The Morrigna accepted their worship and turned battles to their favor. Furious the Pantokrator imprisoned her in the Charnel House, a labyrinthine prison of human bones. Now with the Pantokrator gone the prison is crumbling and the sisters will once more decide the fates of men. The Morrigna is a trinity in one being and can separate her forms at will."
 #diseaseres 100
-#gcost 400
+#gcost 380
 #hp 88
 #prot 3
 #str 24
@@ -82589,7 +82608,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3088 -- Dharmapala of the Underworld
 #descr "The Dharmapalas were giants of divine heritage tasked by a previous Pantokrator with upholding the celestial laws. The Dharmapala of the Underworld was given mandate over the laws of death and rebirth. He took the Throne of the Underworld and made himself judge and ruler of the dead. His demonic servants guided the dead to their next life. But with time his mind darkened, and he was seduced by jealousy and hunger for power. He demanded prayers from men in return for a good afterlife. His judgment lost righteousness and his servant demons wrongfully led the newly dead to the hellish realm of the Dharmapala. When the Pantokrator realized that his most trusted servant had broken the laws of death and rebirth to collect the prayers of men he was furious and imprisoned the Dharmapala in this world, disconnected from the Hell he had created. Now with the Pantokrator gone the Dharmapala is free to once more judge the dead as he sees fit."
 #diseaseres 100
-#gcost 300
+#gcost 280
 #pathcost 40
 #moregrowth -1
 
@@ -82650,7 +82669,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3124 -- Titan of Forethought
 #descr "The Titan of Forethought is a giant of divine heritage. Once beloved of a previous Pantokrator he was tasked with guiding mankind to prosperity and wisdom. But he began to love his protectees more than he loved his master and he stole the fire and gave it to mankind, and then civilization, medicine, astronomy and navigation. With rising ire the Pantokrator saw mankind worship the servant instead of his master. He demanded his servant to teach mankind how to sacrifice meat to their true master, but the Titan tricked his master and taught men to keep the best meat in the sacrifices and leave the bones smeared in fat for the Pantokrator. Furious, the Lord of All punished men with awareness of their inevitable downfall, but the Titan of Forethought robbed them of foresight and hope returned to mankind. Finally the Pantokrator shackled his servant to a rock and sent a great vulture to daily feed on the liver of his former servant. Now with the disappearance of the Pantokrator the Titan of Forethought have returned to thwart those who claim Dominion over this world."
 #diseaseres 100
-#gcost 270
+#gcost 250
 #pathcost 40
 #hp 90
 #prot 3
@@ -82724,7 +82743,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3203 -- Titan of the Hunt
 #descr "The Titan of the Hunt is a giant of divine heritage born at the dawn of time times. She became a huntress of primordial beasts and was entrusted by a previous Pantokrator to care for the wilderness. He gave her a golden bow and authority over the animals of the wild. But mankind began to make offerings to the Huntress and she let herself be worshipped and promised mankind that she would protect the huntsmen and the unmarried women of the world. The Pantokrator sent his servants to punish her for her breach of trust, but she transformed herself into a deer and escaped into the First Forest. Here she met another of the Pantokrator's servants and he gave her hounds to aid her in the Hunt. The Pantokrator was furious and trapped them both in the forest for eternity. Now with the Pantokrator gone the paths of the First Forest are once more open and the Titan of the Hunt can once more hear the prayers of young women and huntsmen. With primordial monsters emerging anew the Titan of the Hunt has taken it upon herself to rid the world of monsters and claim the world as hers."
 #diseaseres 100
-#gcost 280
+#gcost 260
 #pathcost 40
 #hp 87
 #prot 3
@@ -82743,7 +82762,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3204 -- Grey One
 #descr "The Grey Ones, Graeae, are three crone sisters spawned by Phorkys, Father of Monsters, at the dawn of time. When the Pantokrator reformed the world he slew or banished all monsters that threatened the world. The Graeae, while not nearly as powerful as their father, were imprisoned and chained in a stygian cavern as a precaution. For millennia the crones have waited, getting older and angrier for every year that passed. Now with the Pantokrator gone, their shackles are weakening and their malice can be felt by those who dream. The Grey Ones are incredibly old and their bodies are frail and weak. Two of the sisters have lost their eyesight and now the three of them share a single eye. All three sisters use death, water and glamour magic, but they have all mastered different magical paths. The first of the Sisters, 'the Terrible', uses blood and nature magic. The second sister, known as 'the Warlike' uses fire and earth magic and the third sister, 'the Destroyer' uses air and astral magic."
 #diseaseres 100
-#gcost 180
+#gcost 160
 #startdom 1
 #pathcost 20
 #hp 10
@@ -82764,7 +82783,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3205 -- Titan of Crossroads
 #descr "The Titan of Crossroads is a giant of divine heritage sprung from the three phases of the moon in primordial times. Being spawned thrice she would claim power over birth, life and death. When a previous Pantokrator rose to power she used the veil of the night to shroud herself in mystery and withdrew her powers to avoid his jealous gaze. Only when the great Adversary abducted the daughter of the Pantokrator and death came to the world, she revealed herself and used her torches to light up the Underworld so The Spring could be found and life returned to the world. The Pantokrator rewarded her by giving her authority over Birth, but the Titan reminded him that she was threefold and the Pantokrator grudgingly gave her authority over crossroads and threefold powers too. The Lampadephoros, light-bearer, with her spirit-revealing torches and guardian dogs was given the task of protecting mankind from the spirits of the night. The Kleidouchos, key-holder, was given authority over thresholds and gates in this world and others. The Kourotropos, nurse of children, was given power over birth and healing herbs. But the Titan of Crossroads was not satisfied. She accepted worship and gave to mankind what was not meant to be known. The three of them gave away the necromantic secrets of the Underworld, the knowledge of poisons and the mysteries of the threshold. Worshiped in secret by witches and midwives around the world her powers grew. When the Pantokrator finally found out he imprisoned her for eternity beyond the Gate of Only One Direction. Now with the Pantokrator gone the Titan of Crossroads has found a way to unseal the Gate and return to claim the world as hers. The light-bearer carries bane fire torches that reveal the spirits of the night and she is always accompanied by her sacred hounds and Lampade nymphs."
 #diseaseres 100
-#gcost 400
+#gcost 380
 #pathcost 40
 #hp 78
 #prot 3
@@ -82785,7 +82804,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3206 -- Titan of Crossroads
 #descr "The Titan of Crossroads is a giant of divine heritage sprung from the three phases of the moon in primordial times. Being spawned thrice she would claim power over birth, life and death. When a previous Pantokrator rose to power she used the veil of the night to shroud herself in mystery and withdrew her powers to avoid his jealous gaze. Only when the great Adversary abducted the daughter of the Pantokrator and death came to the world she revealed herself and would use her torches to light up the Underworld so that The Spring could be found and life returned to the world. The Pantokrator rewarded her by giving her authority over Birth, but the Titan reminded him that she was threefold and the Pantokrator grudgingly gave her authority over crossroads and threefold powers. The Lampadephoros, light-bearer, with her spirit-revealing torches and guardian dogs was given the task of protecting mankind from the spirits of the night. The Kleidouchos, key-holder, was given authority over thresholds and gates in this world and others. The Kourotropos, nurse of children, was given power over birth and healing herbs. But the Titan of Crossroads was not satisfied. She accepted worship and gave to mankind what was not meant to be known. The three of them gave away the necromantic secrets of the Underworld, the knowledge of poisons and the mysteries of the threshold. Worshiped in secret by witches and midwives around the world her powers grew. When the Pantokrator finally found out he imprisoned her for eternity beyond the Gate of Only One Direction. Now with the Pantokrator gone the Titan of Crossroads has found a way to unseal the Gate and return to claim the world as hers. The key-holder carries the Key to Every Entrance and can open gates to distant lands. She can also open a gate and bring her other two form to her location."
 #diseaseres 100
-#gcost 400
+#gcost 380
 #hp 78
 #prot 3
 #str 20
@@ -82805,7 +82824,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3207 -- Titan of Crossroads
 #descr "The Titan of Crossroads is a giant of divine heritage sprung from the three phases of the moon in primordial times. Being spawned thrice she would claim power over birth, life and death. When a previous Pantokrator rose to power she used the veil of the night to shroud herself in mystery and withdrew her powers to avoid his jealous gaze. Only when the great Adversary abducted the daughter of the Pantokrator and death came to the world she revealed herself and would use her torches to light up the Underworld so that The Spring could be found and life returned to the world. The Pantokrator rewarded her by giving her authority over Birth, but the Titan reminded him that she was threefold and the Pantokrator grudgingly gave her authority over crossroads and threefold powers. The Lampadephoros, light-bearer, with her spirit-revealing torches and guardian dogs was given the task of protecting mankind from the spirits of the night. The Kleidouchos, key-holder, was given authority over thresholds and gates in this world and others. The Kourotropos, nurse of children, was given power over birth and healing herbs. But the Titan of Crossroads was not satisfied. She accepted worship and gave to mankind what was not meant to be known. The three of them gave away the necromantic secrets of the Underworld, the knowledge of poisons and the mysteries of the threshold. Worshiped in secret by witches and midwives around the world her powers grew. When the Pantokrator finally found out he imprisoned her for eternity beyond the Gate of Only One Direction. Now with the Pantokrator gone the Titan of Crossroads has found a way to unseal the Gate and return to claim the world as hers. The nurse of children is skilled in the use of poisons and can heal diseases."
 #diseaseres 100
-#gcost 400
+#gcost 380
 #hp 78
 #prot 3
 #str 20
@@ -82936,7 +82955,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3344 -- Statue of Beginnings
 #descr "The Statue of Beginnings is a primordial spirit of order that once served a previous Pantokrator to bring life and civilization to the world. When the final decree was set, its services were no longer needed and the spirit was bound in a huge stone statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshiped as a Reawakening God. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 160
+#gcost 130
 #pathcost 40
 #moreprod 1
 
@@ -83037,7 +83056,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3370 -- Ilahat of Might
 #descr "The Ilahat is a giant of divine heritage. A previous Pantokrator took her as his wife and gave her mandate to rule the world. When mankind began to worship her as well, the Pantokrator he was furious, imprisoned her for eternity and punished mankind with labor and strife. Now with the Pantokrator gone the Ilahat is free to once more rule the world."
 #diseaseres 100
-#gcost 280
+#gcost 270
 #pathcost 40
 #moreorder 1 
 #moreprod 1
@@ -83101,7 +83120,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3387 -- Ilah of the Sacred Mountain
 #descr "The Ilah is a giant of divine heritage. A previous Pantokrator made him guardian of the mountain around which the sun revolves. When men encountered the Sacred Mountain they were led by a serpent to its summit. Here they were approached by the Ilah and they began to worship him as a God. The Pantokrator was furious and imprisoned the Ilah for eternity. Now with the Pantokrator gone, the Ilah will return to rule the world from the mountain at the center of All."
 #diseaseres 100
-#gcost 300
+#gcost 290
 #pathcost 40
 #moreprod 1
 
@@ -83209,7 +83228,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3416 -- Great Archon
 #descr "The Great Archon is a divine being sprung from the Eighth Sphere, beyond the Seven Heavens. Curious of mankind it manifested itself on the Earth, but Earth was under the dominion of a Demiurge who called himself Pantokrator. The Great Archon tried to guard mankind from ignorance with a Shield of Wisdom, and he taught men how to overcome the restrictions placed on matter and mind by the Demiurge. But the might of the Demiurge was great in his own domain and he discovered the manifestation of the Great Archon and trapped and bound it with shackles of ignorance. For ages the Great Archon wandered the earth as a monster bereft of purpose, suffering from the same condition from which it had tried to save mankind. Now with the Pantokrator gone, the shackles are weakening and the Great Archon can once more protect men from ignorance and lead them to insight."
 #diseaseres 100
-#gcost 300
+#gcost 290
 #pathcost 40
 #hp 97
 #prot 7
@@ -83250,7 +83269,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3632 -- Mother of Storms
 #descr "The Mother of Storms is a giant of divine heritage born in primordial times. She was once given power over all winds and weather by a previous Pantokrator. During her travels with the winds she met and was courted by a heavenly serpent of flames. The pair mated and the Mother of Storms gave birth to the first storm. Frightened and cowed, the first men began to worship the couple as gods, hoping to be spared from their wrath and receive their blessings. The Pantokrator was furious and imprisoned them under mountains for eternity. Now with the Pantokrator gone the fetters are crumbling and the Mother of Storms will once again engender storms in her cave abode."
 #diseaseres 100
-#gcost 300
+#gcost 280
 #pathcost 40
 #hp 77
 #prot 3
@@ -83310,7 +83329,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3641 -- Earth Dragon
 #descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. Black Dragons have their skills reduced when casting spells from paths other than Earth. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
 #diseaseres 100
-#gcost 260
+#gcost 240
 #pathcost 40
 #hp 125
 #prot 18
@@ -83329,7 +83348,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3642 -- Earth Dragon Great Sage
 #descr "The Great Sage is a scholar of such great power and knowledge that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Great Sage is a master of magical research and is often adept in several of the magic paths."
 #diseaseres 100
-#gcost 260
+#gcost 240
 #pathcost 40
 #moreprod -1
 #hp 10
@@ -83425,7 +83444,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3661 -- Elephant Idol
 #descr "The Elephant Idol is a huge golden elephant statue on wheels, that has come to life from being worshiped for many hundreds of years. It is mostly pushed around by worthy followers, but sometimes move around on its own accord, crushing heretics as well as the occasional adherent of the Faith. It is mindless and mostly does what its worshipers believe it would do."
 #diseaseres 100
-#gcost 310
+#gcost 280
 #pathcost 40
 #moreorder 1
 
@@ -83517,7 +83536,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3710 -- Air Dragon
 #descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. White Dragons have their skills reduced when casting spells from paths other than Air. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
 #diseaseres 100
-#gcost 240
+#gcost 220
 #pathcost 40
 #hp 125
 #prot 20
@@ -83536,7 +83555,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3711 -- Air Dragon Storm Father
 #descr "The Storm Father is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He is a master of air magic and can be adept in several of the magic paths."
 #diseaseres 100
-#gcost 240
+#gcost 220
 #pathcost 40
 #moreorder -1 
 #moreprod -1
@@ -83682,7 +83701,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3895 -- Ferryman
 #descr "When the primordial time ended and the Pantokrator established the order of the world he separated the underworld from the world of the living and placed his servants to guard the border between the dead and the living. The first of these servants was the Ferryman, tasked with bringing the newly dead across a black river on their way to the afterlife. Unable to abandon his task his curiosity and interest in the world from whence the souls of the dead come has grown over the millennia. Now with the Pantokrator gone the old decrees are weakening and the Ferryman is finally free to explore the land of bodied souls, and in his wake come the spirits of the dead."
 #diseaseres 100
-#gcost 210
+#gcost 190
 #pathcost 40
 #hp 55
 #prot 2
@@ -83701,7 +83720,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3926 -- Devi of Strength
 #descr "The Devi of Strength is a huge four-armed divinity brought into existence by a previous Pantokrator to battle a bull demon threatening his nascent world with destruction. The Devi was formed from the flames of the Pantokrator's mouth and was given the mandate and weapons to slay demons. The Devi caught and commanded a divine tiger to carry her in battle with the demon. When the bull demon was vanquished mankind celebrated and begun to worship the Devi as their savior, unaware that she was but a servant of the true Lord. The Pantokrator was furious and imprisoned the Devi for eternity. Now with the Pantokrator gone the Devi of Strength is breaking free and is once more worshiped as the Invincible Warrior who will guide and protect mankind."
 #diseaseres 100
-#gcost 320
+#gcost 300
 #pathcost 40
 #moreorder 1
 #hp 74
@@ -83721,7 +83740,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3927 -- Devi of Strength mount
 #descr "The Devi of Strength is served by a primordial beast born at the dawn of time. A Vahana, animal vehicle, the divine tiger carries the Invincible Warrior into battle against demons and false gods."
 #diseaseres 100
-#gcost 320
+#gcost 300
 #hp 144
 #prot 16
 #str 28
@@ -83924,6 +83943,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #att 14
 #def 9
 #mr 18
+#heal
+#woundfend 0
 #clearspec
 #slothpower 1
 #powerofdeath 3
@@ -83960,6 +83981,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #att 14
 #def 9
 #mr 18
+#heal
+#woundfend 0
 #clearspec
 #slothpower 1
 #powerofdeath 3
@@ -83997,6 +84020,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #att 11
 #def 11
 #mr 18
+#heal
+#woundfend 0
 
 #itemslots 991750
 #clearmagic
@@ -84015,6 +84040,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #att 11
 #def 11
 #mr 18
+#heal
+#woundfend 0
 
 #itemslots 991750
 #clearmagic
@@ -84070,8 +84097,10 @@ He is accompanied by the souls of his subjects that have followed him into the w
 
 
 
--- ENDUNITS
 
+
+
+-- ENDUNITS
 
 
 
