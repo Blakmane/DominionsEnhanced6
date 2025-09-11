@@ -3874,6 +3874,15 @@
 #secondaryeffectalways 328 -- Shatter
 #end
 
+#newweapon 1900 -- Javelin of Returning
+#copyweapon 409 -- Javelin
+#name "Javelin of Returning"
+#armorpiercing
+#magic
+#false
+#ammo 1001
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -4439,6 +4448,26 @@
 
 #selectweapon 749  -- Enchanted Scimitar
 #att 2
+#end
+
+#selectweapon 794 -- Imagined Wound
+#hardmrneg
+#end
+
+#selectweapon 789 -- Pixie Spear
+#false
+#end
+
+#selectweapon 816 -- Blade of Grass
+#false
+#end
+
+#selectweapon 791 -- Twilight Glaive
+#false
+#end
+
+#selectweapon 218 -- Star of Thraldom
+#false
 #end
 
 #selectweapon 45 -- Coral Club
@@ -120561,6 +120590,7 @@ Oni will collect due tax from populations with unrest, partially recuperating lo
 #addgod 8415 -- Grigori
 #addgod 8341 -- Demiurge
 #addgod 8342 -- Elohim
+#cheapgod20 8415 -- Grigori
 #cheapgod20 8338 -- Burning Bush
 #cheapgod20 8342 -- Elohim
 #cheapgod20 8341 -- Demiurge
@@ -125699,7 +125729,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 5
 #pathlevel 0 3
 #fatiguecost 1200
-#nreff 1005
+#nreff 1003 -- 6+
 #damage 8022
 #restricted 202 -- Gondwana
 #end
@@ -126268,7 +126298,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "The casters skin grows thick, leathery and covered with bristles, resembling that of a wild boar. The enchantment offers somewhat improved protection, and the leathery skin is resistant to cutting weapons. Lifeless units will gain no benefit from the spell."
 #details "Grants Natural Protection +5, Slash resistance"
 #school 4 -- ench
-#researchlevel 2
+#researchlevel 3
 #path 0 6
 #pathlevel 0 1
 #path 1 3
@@ -151768,7 +151798,7 @@ Underwater: AoE 10+2"
 #name "Levitation"
 #descr "A few soldiers are granted the ability to float a few inches above the ground."
 #details "Floating units cannot be targeted by some spells like earth grip or earthquakes."
-#aoe 1
+#aoe 1001 -- 2+
 #pathlevel 0 1
 #researchlevel 3
 #end
@@ -152517,6 +152547,10 @@ This spell can only be cast in a deep water province."
 
 #selectspell 636 -- Shocking Grasp
 #range 2
+#end
+
+#selectspell 637 -- Gust of Winds
+#aoe 1002 -- 3+
 #end
 
 #selectspell 253 -- Monster Boar
@@ -153649,7 +153683,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 785 -- Blur
-#aoe 1001 -- 2+
+#aoe 2001 -- 3++
 #end
 
 #selectspell 782 -- Weakness
@@ -153659,6 +153693,11 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 803 -- Group Blur
 #aoe 2004 -- 8+2
 #fatiguecost 20
+#end
+
+#selectspell 841 -- Enfeeble
+#aoe 2004 -- 8++
+#range 5030 -- 40+5
 #end
 
 #selectspell 848 -- Shadow Warriors
@@ -154510,7 +154549,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1274 -- Battle Fury
 #pathlevel 0 1
-#aoe 1001 -- 2+
+#aoe 1002 -- 3+
 #end
 
 #selectspell 1275 -- Steal Breath
@@ -154614,6 +154653,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1146 -- Gift of True Sight
 #spec 12582912 -- Friendlys only, UWok
+#aoe 1001 -- 2+
 #end
 
 #selectspell 871 -- Fay-eyed Warriors
@@ -154807,6 +154847,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1267 -- Decay
+#range 5025 -- 30+5
 #aoe 1
 #end
 
@@ -159735,6 +159776,19 @@ This will also prevent their skin from drying out."
 #spell "Shatter Fort"
 #end
 
+#selectitem 877 -- Javelin of Returning
+#name "Javelin of Returning"
+#descr "The Javelin of Returning is a javelin enchanted with the magic of dreams and will return to the wielder's hand every time it is thrown, as though it were never thrown at all. Wounds created from being thrown however will remain."
+#spr "magicenhanced/blue_javelinofreturning.png"
+#constlevel 3
+#mainpath 7 -- G
+#mainlevel 1
+#type 3
+#itemcost1 -20
+#weapon 1900
+#glamourmanip 1
+#end
+
 
 -- END OF NEW ITEMS (Skip items 881~882)
 
@@ -159821,7 +159875,9 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 148 -- Mirage Bola
+#constlevel 1
 #itemcost1 -40
+#glamourmanip 1
 #end
 
 #selectitem 4 -- Blacksteel Sword
@@ -159962,6 +160018,8 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 44 -- Pixie Spear
+#descr "While pixies do not actually use spears like this, they are an important ingredient when creating this magic spear. Anyone wounded by this spear will be affected by extreme fatigue, just as if they had been hit by an elf shot from a living pixie. As a weapon of the Dreamwild it is incapable of harming those without a mind, however wounds inflicted cannot be healed."
+#glamourmanip 1
 #itemcost1 -20
 #end
 
@@ -159970,6 +160028,8 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 47 -- Blade of Grass
+#descr "This sword is actually a blade of grass, large as any sword and enchanted by the magic of the dreamwild. It is as sharp as any blade crafted by man and those cut by its edge will start to bleed profusely. To the mindless it truly is just a blade of grass, but to anyone else, wounds inflicted will not close."
+#glamourmanip 1
 #itemcost1 -40
 #itemcost2 -40
 #end
@@ -159989,6 +160049,9 @@ This will also prevent their skin from drying out."
 
 #selectitem 91 -- Axe of Hate
 #itemcost1 -40
+#end
+
+#selectitem 93 -- Singing Sword
 #end
 
 #selectitem 15 -- Thunder Whip
@@ -160064,6 +160127,8 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 73 -- Twilight Glaive
+#descr "This glaive is enchanted with the powers of glamour magic. When day turns into night, twilight appears and emits fatigue into all living beings, making them get tired. This fatigue effects is unleashed a hundredfold wherever this glaive strikes. As a weapon of the Dreamwild it cannot harm mindless beings, but to anyone else the wounds inflicted will not heal."
+#glamourmanip 1
 #itemcost1 -40
 #end
 
@@ -160086,6 +160151,8 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 81 -- Star of Thraldom
+#descr "Those close to where this morningstar strikes may find themselves magically shackled. The shackles are illusions that can be resisted. All morningstars have an increased attack value against targets with shields. The Star is unreal and cannot harm mindless beings, but to anyone else the wounds inflicted will not heal."
+#glamourmanip 1
 #itemcost1 -20
 #constlevel 5
 #end
