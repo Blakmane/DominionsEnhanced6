@@ -21638,9 +21638,9 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #end
 
 #newmonster 7103
-#copystats 1992  -- Zebulinite Spearman
-#copyspr 1992  -- Zebulinite Spearman
-#name "Zebulinite Spearman"
+#copystats 1992  -- Zebulunite Spearman
+#copyspr 1992  -- Zebulunite Spearman
+#name "Zebulunite Spearman"
 #descr "Since the unification of the Kingdom the tribes of Zion supply soldiers for the armies of the Prophet King. The tribe of Zebulun is prosperous and has grown rich through trade with other empires opened by the Prophet King. Their wealth has enabled them to field many soldiers of outstanding skill. They fight with spear and shield and ever since a vast army from Arcoscephale passed through their homelands, they have adopted the dense formations of the hoplites. Their traditional color is silvery white."
 #prophetshape 7102 -- Shophet
 #end
@@ -53603,6 +53603,8 @@ Cost 56 RP."
 #mor 15
 #holy
 #slowrec
+#nothrowoff
+#nobarding
 #reclimit 1
 #twiceborn 6644 -- Wight Beast
 #weapon 8 -- sword
@@ -53651,12 +53653,16 @@ Cost 56 RP."
 #beastmaster 1
 #undisleader 1
 #spellsinger
+#nothrowoff
+#nobarding
 #holy
 #slowrec
 #weapon 451 -- obsidian club sword
 #armor 120 -- leather hauberk
 #armor 10 -- leather cap
-#twiceborn 6644 -- Wight Beast
+--#twiceborn 6644 -- Wight Beast
+#twiceborn 9165 -- Wight Beast
+#ressize 10
 #end
 
 #newmonster 9051 -- unit
@@ -53684,6 +53690,7 @@ Cost 56 RP."
 #weapon 397  -- Kick
 #twiceborn 6644 -- Wight Beast
 #nothrowoff
+#nobarding
 #bravemount 100
 #smartmount 100
 #end
@@ -53714,6 +53721,7 @@ Cost 56 RP."
 #weapon 397  -- Kick
 #twiceborn 6644 -- Wight Beast
 #nothrowoff
+#nobarding
 #bravemount 100
 #smartmount 100
 #end
@@ -56489,6 +56497,137 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #copyspr 3576
 #neednoteat
 #end
+
+
+#newmonster 9165
+#copystats 2307  -- Machaka Elephant Rider
+#clearweapons
+#name "Ogiso Wight"
+#spr1 "gondwana/ogisowight.tga"
+#spr2 "gondwana/ogisowight.tga"
+#xspr1 "gondwana/ogisowight_1.tga"
+#xspr2 "gondwana/ogisowight_1.tga"
+#xspr1 "gondwana/ogisowight_2.tga"
+#xspr2 "gondwana/ogisowight_2.tga"
+#xspr1 "gondwana/ogisowight_3.tga"
+#xspr2 "gondwana/ogisowight_3.tga"
+#unmountedspr1 "gondwana/un_ogisowight.tga"
+#unmountedspr2 "gondwana/un_ogisowight2.tga"
+#descr "The most powerful Obas are known as Ogiso. These mighty lords take to the battlefield atop a great Thunder Beast, accompanied by their most trusted advisors. From this vantage point they can assess the battle and command their forces with ease. The sight of a Thunder Beast will fill enemies with fear. Their sheer size allows them to trample through enemy lines with ease, however if panicked they may end up trampling friends and enemies alike. This Ogiso has returned from the dead and can bring back his entourage and mount to serve again."
+#mountmnr 9166
+#nofriders 4
+#coridermnr 9167
+#gcost 0
+#rpcost 6
+#prot 8 -- 'saddle'
+#hp 21
+#mr 16
+#mor 18
+#str 17
+#att 12
+#def 12
+#enc 2
+#magicskill 0 1
+#magicskill 1 1
+#magicskill 5 1
+#magicskill 6 1
+#magicskill 7 1
+#magicskill 9 3
+#bonusspells 1
+#combatcaster
+#expertleader
+#inspirational 1
+#beastmaster 1
+#undisleader 1
+#spellsinger
+#holy
+#slowrec
+#nothrowoff
+#nobarding
+#weapon 151 -- obsidian club sword
+#armor 120 -- leather hauberk
+#armor 10 -- leather cap
+#twiceborn 6644 -- Wight Beast
+#undead
+#poisonres 25
+#coldres 15
+#spiritsight
+#neednoteat
+#pooramphibian
+#cold 3
+#ressize 10
+#end
+
+#newmonster 9166 -- com
+#copystats 3939 -- Machaka Elephant
+#clearweapons
+#name "Thunder Wight"
+#spr1 "gondwana/thunderwight.tga"
+#spr2 "gondwana/thunderwight.tga"
+#descr "The Thunder Beasts are the largest creatures that stride the plains of Gondwana, named for the terrifying sound caused as their feet impact the earth. These creatures have little to fear from any predator, however a few are captured as newborns and raised in captivity by the Obas for use in times of war. These huge creatures are strong in N'um, the sacred force that manifests only in the largest and most holy of beings.  The sight of a Thunder Beast will fill enemies with fear. Their sheer size allows them to trample through enemy lines with ease, however if panicked they may end up trampling friends and enemies alike."
+#lizard -- Quadruped bugged
+#gcost 0
+#smartmount 100
+#size 10
+#rpcost 6
+#hp 160
+#prot 16
+#mr 15
+#mor 18
+#ap 14
+#str 30
+#def 6
+#fear 5
+#enc 1
+#holy
+#weapon 397  -- Kick
+#twiceborn 6644 -- Wight Beast
+#nothrowoff
+#nobarding
+#bravemount 100
+#smartmount 100
+#undead
+#poisonres 25
+#coldres 15
+#spiritsight
+#neednoteat
+#pooramphibian
+#cold 3
+#end
+
+#newmonster 9167 -- commander corider
+#copystats 3643  -- Elephant Spearman
+#clearweapons
+#cleararmor
+#name "Longdead Rider"
+#spr1 "gondwana/longdeadrider.tga"
+#spr2 "gondwana/longdeadrider2.tga"
+#descr "The most powerful Obas are known as Ogiso. These mighty lords take to the battlefield atop a great Thunder Beast, accompanied by their most trusted advisors. From this vantage point they can assess the battle and command their forces with ease. The sight of a Thunder Beast will fill enemies with fear. Their sheer size allows them to trample through enemy lines with ease, however if panicked they may end up trampling friends and enemies alike."
+#gcost 0
+#rpcost 10
+#prot 6 -- 'saddle'
+#hp 10
+#mr 12
+#def 12
+#att 12
+#mor 50
+#holy
+#twiceborn 6644 -- Wight Beast
+#weapon 8 -- sword
+#armor 20 -- iron cap
+#armor 14 -- plate hauberk
+#undead
+#poisonres 25
+#coldres 15
+#pierceres
+#noheal
+#spiritsight
+#neednoteat
+#inanimate
+#pooramphibian
+#end
+
+
 
 
 -- END OF NEW MONSTERS (Skip 9600~9672)
@@ -112768,7 +112907,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 7
 #look 1
 #homemon 628 -- lion
-#homecom 8022 -- dire tiger
+#homemon 8022 -- dire tiger
 #homemon 2398 -- ele
 #homemon 6987 -- terror bird
 #homemon 6988 -- rockshell
@@ -129310,7 +129449,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #restricted 69
 #restricted 109
 #damage -1002  -- TC National Longdead
-#fatiguecost 20
+#fatiguecost 10
 #spec 0
 #end
 
@@ -146100,6 +146239,7 @@ With this spell, the caster may find a roaming band of Aphroi and return them to
 #damage -5600 -- Fishbones montag
 #nreff 2
 #notfornation 206 -- Dirgen
+#fatiguecost 15
 #end
 
 #selectspell 3852 -- Raise Fishbones
@@ -147034,6 +147174,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #damage -5780 -- Fishbones montag
 #nreff 2
 #restricted 206
+#fatiguecost 15
 #end
 
 #selectspell 3915 -- Raise Fishbones
@@ -148218,6 +148359,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #restricted 10 -- Fomoria
 #restricted 58 -- Eriu
 #damage -1005
+#fatiguecost 10
 #end
 
 #selectspell 3987
@@ -148258,6 +148400,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #restricted 70 -- Shinu
 #restricted 110 -- Jomon
 #damage -1003
+#fatiguecost 10
 #end
 
 #selectspell 3991
@@ -153429,7 +153572,18 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 647 -- Bewitching Lights
+#aoe 2003 -- 5++
 #spec 25559168 -- AN, MRNE, mindless immune, enemies only, UWok
+#end
+
+#selectspell 1270 -- Fascination
+#aoe 1
+#range 25
+#spec 25559168 -- AN, MRNE, mindless immune, enemies only, UWok
+#end
+
+#selectspell 1273 -- Bonds of Fire
+#aoe 1
 #end
 
 #selectspell 648 -- Fire Blast
@@ -153660,6 +153814,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #fatiguecost 4000
 #end
 
+#selectspell 762 -- Earth Grip
+#aoe 1
+#end
+
 #selectspell 1117 -- False Fetters
 #details "MR +DRN vs 20 to get free"
 #end
@@ -153705,10 +153863,12 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 849 -- Blindness
+#range 30
 #researchlevel 5
 #end
 
 #selectspell 1212 -- Steal Sight
+#range 30
 #researchlevel 5
 #end
 
@@ -154487,7 +154647,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1111 -- Animate Skeleton
-#fatiguecost 20
+#fatiguecost 10
 #notfornation 22 -- EA Tien Chi
 #notfornation 69 -- MA Tien Chi
 #notfornation 109 -- LA Tien Chi
@@ -154500,7 +154660,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1112 -- Animate Dead
-#fatiguecost 15
+#fatiguecost 10
 #end
 
 #selectspell 1113 -- Reanimation
