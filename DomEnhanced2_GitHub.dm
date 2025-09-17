@@ -3883,6 +3883,15 @@
 #ammo 1001
 #end
 
+#newweapon 1901 -- Pincer no bonus
+#name "Pincer"
+#dmg 1
+#att 0
+#def 0
+#len 0
+#armorpiercing
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -9285,6 +9294,7 @@
 #def 12
 #fireshield 8
 #magicbeing
+#neednoteat
 #bringeroffortune 1
 #weapon 55  -- Hoof
 #nametype 177  -- Mongolian Male
@@ -9307,7 +9317,7 @@
 #size 3
 #hp 14
 #mr 14
-#mor 15
+#mor 16
 #str 12
 #prec 10
 #enc 0
@@ -9317,6 +9327,7 @@
 #flying
 #bringeroffortune 2
 #undead
+#neednoteat
 #holy
 #spiritsight
 #ethereal
@@ -17941,6 +17952,11 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spellsinger
 #weapon 151  -- Wand
 #armor 187  -- Mask
+#clearmagic
+#magicskill 0 1 -- F
+#magicskill 5 1 -- D
+#magicskill 7 1 -- G
+--#custommagic 8320 100 -- FN
 #end
 
 #newmonster 6978
@@ -29463,7 +29479,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #newmonster 7491
 #copystats 1012  -- Member of the Second Tier
 #clearweapons
-#clearmagic
 #spr1 "magicenhanced/eetanukia.tga"
 #spr2 "magicenhanced/eetanukia2.tga"
 #name "Bake-Danuki"
@@ -29488,6 +29503,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 7  -- Quarterstaff
 #armor 203  -- Reinforced Cloth Armor
 #shapechange 7492 -- Tanuki form
+#clearmagic
 #magicskill 2 1
 #magicskill 3 2
 #magicskill 6 3
@@ -29519,10 +29535,11 @@ While in the form of an old man, all paths are increased and allows the use of N
 #forestsurvival
 #mountainsurvival
 #shapechange 7491 -- Human form
-#magicskill 1 3
+#clearmagic
 #magicskill 2 1
 #magicskill 3 2
 #magicskill 6 3
+#magicskill 7 3
 #polyimmune
 #end
 
@@ -31983,7 +32000,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #enc 3
 #mapmove 2
 #ap 8
-#weapon 3  -- trident
+#weapon 641  -- bronze trident
 #holy
 #amphibian
 #startage 530
@@ -40835,7 +40852,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Crab General"
 #descr "In the courts of the Dragon Kings strange half-men dwell. Crab Generals have served the Dragon Kings since they claimed dominion over the seas. They command the legions of halfmen in the war against the tritons of Pelagia. Crab Generals are very strong and are covered in thick carapace, making them almost impervious to damage."
 #rpcost 1
-#weapon 273  -- Pincer
+#weapon 1901  -- Pincer no bonus
 #weapon 273  -- Pincer
 #nametype 134
 #end
@@ -41045,6 +41062,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #def 10
 #prec 12
 #ap 12
+#size 5
 #enc 2
 #startage 600
 #maxage 1000
@@ -41107,6 +41125,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #def 10
 #prec 12
 #ap 12
+#size 5
 #enc 2
 #startage 600
 #maxage 1000
@@ -41116,7 +41135,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #custommagic 9856 10  -- 10% FWEN
 #shapechange 8047
 #heatrec 1
-#weapon 147  -- Spray Poison
+--#weapon 147  -- Spray Poison
+#weapon 569  -- Drake Gas
 #weapon 65  -- Venomous Claw
 #weapon 29  -- Bite
 #weapon 532  -- Tail Sweep
@@ -41170,6 +41190,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #prec 12
 #ap 12
 #enc 2
+#size 5
 #startage 600
 #maxage 1000
 #magicskill 2 2
@@ -41177,7 +41198,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #custommagic 9344 200  -- 200% FEN
 #custommagic 9856 10  -- 10% FWEN
 #shapechange 8049
-#weapon 147  -- Spray Poison
+--#weapon 147  -- Spray Poison
+#weapon 569  -- Drake Gas
 #weapon 65  -- Venomous Claw
 #weapon 29  -- Bite
 #weapon 532  -- Tail Sweep
@@ -41228,6 +41250,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #def 10
 #prec 12
 #ap 12
+#size 5
 #enc 2
 #startage 600
 #maxage 1000
@@ -41236,7 +41259,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #custommagic 896 200  -- 200% FAW
 #custommagic 1920 10  -- 10% FAWE
 #shapechange 8051
-#weapon 147  -- Spray Poison
+--#weapon 147  -- Spray Poison
+#weapon 569  -- Drake Gas
 #weapon 65  -- Venomous Claw
 #weapon 29  -- Bite
 #weapon 532  -- Tail Sweep
@@ -54438,8 +54462,8 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #mr 5
 #mor 50
 #str 1
-#att 15
-#def 12
+#att 13
+#def 10
 #prec 10
 #airshield 75
 #diseaseres 100
@@ -54480,8 +54504,8 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #mr 5
 #mor 50
 #str 1
-#att 15
-#def 12
+#att 13
+#def 10
 #prec 10
 #airshield 75
 #diseaseres 100
@@ -54519,8 +54543,8 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #mr 5
 #mor 50
 #str 1
-#att 15
-#def 12
+#att 13
+#def 10
 #prec 10
 #airshield 75
 #diseaseres 100
@@ -54562,8 +54586,8 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #mr 5
 #mor 50
 #str 1
-#att 15
-#def 12
+#att 13
+#def 10
 #prec 10
 #airshield 75
 #diseaseres 100
@@ -54608,8 +54632,8 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #mr 5
 #mor 50
 #str 1
-#att 15
-#def 12
+#att 13
+#def 10
 #prec 10
 #airshield 75
 #diseaseres 100
@@ -78431,9 +78455,10 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #att 14
 #def 14
 #mr 18
-#researchbonus 10
+#startingaff 0
+#startitem 878 -- Eye of Wisdom
 
-#itemslots 991750
+#itemslots 2040326
 #clearmagic
 #magicskill 4 2
 #magicskill 5 1
@@ -82832,6 +82857,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #def 10
 #mr 20
 #userestricteditem 8
+#amphibian
 #itemslots 786432
 #clearmagic
 #magicskill 2 1
@@ -91451,6 +91477,10 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #selectmonster 3808 -- Lady at arms
 #bodyguard 4
+#end
+
+#selectmonster 3846 -- Calystri Man at Arms
+#appetite 3
 #end
 
 #selectmonster 3847 -- sennatorial guard
@@ -118788,7 +118818,7 @@ Priests: Powerful, easily recruitable, can perform blood sacrifices. Priests of 
 #descr "The people around the great Nabaean desert have long existed as nomadic tribes, warring against one another and trading with great caravans, serving the Jann and 'Adites of Na'Ba. With the Pythian conquest of Na'Ba the Jann and 'Adites were completely driven out, leaving the tribes with a power vacuum. A mighty leader emerged amongst the tribes that unified the nomads into one people, and they built a grand city gleaming with brass pillars and crystal gardens dedicated to the One True God, naming it Iram after the old city of the Jinn where magic and artifice flourish. Under the stewardship of the Divine Caliph who rules from his throne in the Brass City, the nation of Iram has become a bastion of learning and enlightenment, where erudite scholars have made many advances in mathematics, medicine, alchemy, astronomy and physics. Now with the Awakening God a religious zealotry has swept through the nation, proclaiming the sovereignty of their God over all others."
 #summary "Race: Tough desert humans, adept at waste survival. Prefers Heat scale +2
 Military: Heavy spearmen, cavalry and archers. Leogryph knights. Skilled assassins.
-Magic: Air, Fire, Astral, Earth, Water, some Glamour and Death, rare Blood.
+Magic: Air, Fire, Astral, Earth, Water, some Glamour, rare Blood underwater.
 Priests: Average"
 #brief "Iram is a city of grand artifice and learned scholars, aided by the nomadic tribes that inhabit the surrounding desert."
 
@@ -123656,6 +123686,8 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #path 0 1
 #pathlevel 0 2
 #aoe 1
+#effect 10
+#damage 4503599627370496 -- Levitation
 #end
 
 #selectspell 2043
@@ -124200,7 +124232,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 2090
 #copyspell 808 -- Slow
-#name "Torpor"
+#name "Time Dilution"
 #descr "This spell will slow down a group of enemies. The slowed units will require twice as long time to move, attack or cast spells. The effect will last for the entire battle, however the spell can be resisted."
 #details "Slow 50%, Att -2, Def -2."
 #researchlevel 5
@@ -124241,7 +124273,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #damage 549755813888  -- 50 percent Shield
 #nreff 1
 #range 2
-#aoe 1012 -- 15+
+#aoe 5005 -- 15+5
 #flightspr -1
 #explspr 10005
 #sound 31
@@ -125867,7 +125899,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "The caster summons an ambush of great Dire Tigers from the forest. These tigers are renowned for their great size, strength, and savage temperament."
 #researchlevel 5
 #pathlevel 0 3
-#fatiguecost 1200
+#fatiguecost 1400
 #nreff 1003 -- 6+
 #damage 8022
 #restricted 202 -- Gondwana
@@ -127358,7 +127390,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "The priest unleashes divine wrath upon the battlefield. A number of warriors at the battle will be blasted with blindness, disease and perhaps death. Any troops that are not sacred in the eyes of the coming God may be affected, even friendly troops, however those sacred to a false Pretender are more likely to be affected more seriously. This spell affects the battlefield for a short while and cannot be prepared or cast again whilst it is in effect."
 #details "Around 70% of units take MRN 2 AN damage with a 20% chance to become blinded or diseased if they fail. 25% of enemy sacreds take an additional MR check for Blind and Disease. Friendly sacred units are immune to the effects. Can only be cast once per combat round."
 #researchlevel 0
-#school 7
+#school -1 -- Temporarily disabled
+--#school 7
 #path 0 9
 #pathlevel 0 5
 #effect 133
@@ -129462,6 +129495,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #restricted 109
 #damage -1002  -- TC National Longdead
 #spec 0
+#fatiguecost 30
 #end
 
 #selectspell 2522
@@ -136519,10 +136553,10 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #fatiguecost 200
 #damage 7355 -- Enslaved Spy
 #onlymnr 1521  -- Mind Lord
-#onlymnr 12006  -- Mind Lord
-#onlymnr 8174 -- He who Breathes
+#onlymnr 12006  -- Mind Lord land
 #onlymnr 1691  -- Auluudh
-#onlymnr 12000  -- Auluudh
+#onlymnr 12000  -- Auluudh land
+#onlymnr 8174 -- He who Breathes
 #onlymnr 3098  -- First Spawn
 #restricted 44
 #end
@@ -136540,10 +136574,10 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #fatiguecost 1000
 #damage -1017  -- Enslaved Mage
 #onlymnr 1521  -- Mind Lord
-#onlymnr 12006  -- Mind Lord
-#onlymnr 8174 -- He who Breathes
+#onlymnr 12006  -- Mind Lord land
 #onlymnr 1691  -- Auluudh
-#onlymnr 12000  -- Auluudh
+#onlymnr 12000  -- Auluudh land
+#onlymnr 8174 -- He who Breathes
 #onlymnr 3098  -- First Spawn
 #restricted 44
 #end
@@ -136566,7 +136600,10 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #onlyowndst 1
 #spec 8388608
 #onlymnr 1521  -- Mind Lord
+#onlymnr 12006  -- Mind Lord land
 #onlymnr 1691  -- Auluudh
+#onlymnr 12000  -- Auluudh land
+#onlymnr 8174 -- He who Breathes
 #onlymnr 3098  -- First Spawn
 #restricted 44
 #end
@@ -136600,7 +136637,10 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 44
 #spec 8388608  -- Use UW
 #onlymnr 1521  -- Mind Lord
+#onlymnr 12006  -- Mind Lord land
 #onlymnr 1691  -- Auluudh
+#onlymnr 12000  -- Auluudh land
+#onlymnr 8174 -- He who Breathes
 #onlymnr 3098  -- First Spawn
 #nextspell 3020
 #end
@@ -138807,7 +138847,7 @@ All effects scale with friendly Dominion."
 #selectspell 3221
 #copyspell 935 -- Pack of Wolves
 #name "Hidden Under Shores"
-#descr "The caster travels to the shore where once the fabled city of Ys sank below the waves. There they enchant the bones of several Morgens, ancient sacred cousins of the Tuatha that perished long ago, lead by a deathly Princess. The Morgen will rise burning with cold fire astride their faithful Morvarc'h steeds. Even in death they are shrouded in glamour, and can ride below the waves as easily as on land. Once tied to the sunlit lands they will return from the Land of the Dead if slain in battle."
+#descr "The caster travels to the shore where once the fabled city of Ys sank below the waves. There they enchant the bones of several Morgens, ancient sacred cousins of the Tuatha that perished long ago, lead by a deathly Princess. The Morgen will rise burning with cold fire astride their faithful Morvarc'h steeds. Even in death they are shrouded in glamour, and can ride below the waves as easily as on land."
 #school 4
 #researchlevel 6
 #path 0 5
@@ -141502,6 +141542,7 @@ All effects scale with friendly Dominion."
 #restricted 65 -- Na'Ba
 #restricted 197
 #spec 0
+#fatiguecost 30
 #end
 
 #selectspell 3405
@@ -146250,6 +146291,7 @@ With this spell, the caster may find a roaming band of Aphroi and return them to
 #damage -5600 -- Fishbones montag
 #nreff 5
 #notfornation 206 -- Dirgen
+#fatiguecost 30
 #end
 
 #selectspell 3853 -- Horde of Fishbones
@@ -146666,20 +146708,6 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #fatiguecost 40
 #spec 549797756928 -- Blunt, UWOK, UWonly
 #nextspell 3880
-#end
-
-#selectspell 3882 -- Waters of Phlegethon
-#copyspell "Boil"
-#name "Waters of Phlegethon"
-#descr "The caster channels the river Phlegethon, the River of Fire that runs through the underworld, through the water around their enemies. Armor offers no protection from the burning water. This spell can only be cast underwater."
-#school 2 -- Evocation
-#researchlevel 6
-#pathlevel 0 2
-#pathlevel 1 2
-#fatiguecost 50
-#aoe 1001 -- 3+
-#damage 1004 -- 6+
-#precision 5
 #end
 
 #selectspell 3883 -- Boil nextspell
@@ -147185,6 +147213,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #damage -5780 -- Fishbones montag
 #nreff 5
 #restricted 206
+#fatiguecost 30
 #end
 
 #selectspell 3916 -- Horde of Fishbones
@@ -148369,6 +148398,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #restricted 10 -- Fomoria
 #restricted 58 -- Eriu
 #damage -1005
+#fatiguecost 30
 #end
 
 #selectspell 3988
@@ -148411,6 +148441,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #restricted 70 -- Shinu
 #restricted 110 -- Jomon
 #damage -1003
+#fatiguecost 30
 #end
 
 #selectspell 3992
@@ -150821,7 +150852,7 @@ Applies the effects of Holy Avenger to the caster"
 #name "A New Place"
 #school -1
 #aoe 0
-#spec 34368147456 -- UWOK, MRN, Ignore Shields, Bypass mirror image
+#spec 17626554187776 -- UWOK, MRNHard, Ignore Shields, Bypass mirror image
 #end
 
 #selectspell 4174 -- Confusion
@@ -150830,7 +150861,7 @@ Applies the effects of Holy Avenger to the caster"
 #effect 11
 #damage 17179869184 -- Confusion
 #aoe 0
-#spec 34368147456 -- UWOK, MRN, Ignore Shields, Bypass mirror image
+#spec 17626554187776 -- UWOK, MRNHard, Ignore Shields, Bypass mirror image
 #nextspell 4173
 #end
 
@@ -152336,6 +152367,30 @@ This spell can only be cast in a deep water province."
 #restricted 101 -- LA Ulm
 #end
 
+#selectspell 3882 -- Waters of Phlegethon
+#copyspell "Boil"
+#name "Waters of Phlegethon"
+#descr "The caster channels the river Phlegethon, the River of Fire that runs through the underworld, through the water around their enemies. Armor offers no protection from the burning water, and those the water touches may be overcome with rage. This spell can only be cast underwater."
+#details "Enraged units have a 50% chance every turn to act irrationally and attack anyone in a random direction."
+#school 2 -- Evocation
+#researchlevel 6
+#pathlevel 0 2
+#path 1 5
+#pathlevel 1 1
+#fatiguecost 60
+#aoe 1001 -- 3+
+#damage 1002 -- 4+
+#precision 5
+#nextspell 4295
+#end
+
+#selectspell 4295
+#copyspell 1282
+#name "Phlegethon's Blood"
+#school -1
+#aoe 1
+#end
+
 
 
 -- END OF NEW SPELLS
@@ -153801,7 +153856,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #details "The province becomes flooded, lowering income. 75% of the population emmigrates immediately.  The next turn it sinks into the depths, killing 90% of the remaining population, and any units that are not anphibious."
 #effect 10042
 #fatiguecost 8000
-#damage 25
+#damage 40
 #researchlevel 9
 #provrange 3
 #end
@@ -154160,6 +154215,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 942 -- Call of the Winds UWOK, still cannot target UW
 #spec 8388608 
+#nolandtrace 0
+#nowatertrace 0
 #end
 
 #selectspell 943 -- Summon Amphiptere
@@ -154190,6 +154247,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 959 -- Call of the Wild UWOK, still cannot target UW
 #spec 8388608
+#nolandtrace 0
+#nowatertrace 0
 #end
 
 
@@ -154519,7 +154578,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1164 -- Serpent Fang Arrows
-#aoe 1005 -- 8+
+#aoe 1005 -- 7+
 #fatiguecost 40
 #pathlevel 0 2
 #researchlevel 4
@@ -154802,6 +154861,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 --#notfornation 65 -- Na'Ba
 --#notfornation 197 -- Iram
 #spec 0 -- not UWOK
+#fatiguecost 30
 #end
 
 #selectspell 1143 -- Summon Revenant
@@ -159948,6 +160008,36 @@ This will also prevent their skin from drying out."
 #weapon 1900
 #glamourmanip 1
 #end
+
+#selectitem 878 -- Allfather Eye of Wisdom
+#name "Eye of Wisdom"
+#descr "The remaining eye of the Allfather, imbued with wisdom through the sacrifice of his other eye."
+#copyspr 418 -- Eye of the Oracle
+#itemdrawsize -12
+#constlevel 11 -- Unforgeable
+#mainpath 7 -- G
+#mainlevel 5
+#type 8 -- Misc
+#loseeye
+#magicstudy 2
+#researchbonus 10
+#cursed
+#nofind
+#end
+
+#selectitem 879 -- Robe of Stars
+#name "Robe of Stars"
+#descr "The Robe of Stars is an enchanted robe frequently used by wizards. Imbued under the stars over many nights, the bearer can draw energy from the collected starlight to reinvigorate themselves and power spells, though between uses the robe will need to again be imbued under the stars."
+#spr "magicenhanced/blue_robeofstars.png"
+#constlevel 3
+#mainpath 4 -- S
+#mainlevel 1
+#type 5
+#reinvigoration 4
+#mr 1
+#armor 230 -- Magic Robes
+#end
+
 
 
 -- END OF NEW ITEMS (Skip items 881~882)
@@ -179320,6 +179410,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_pop0k
 #req_owncapital 1
 #req_targgod 1
+#msg "Heal pretender"
 #notext
 #nolog
 #healaff 1
@@ -179332,6 +179423,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_owncapital 0
 #req_preach 10
 #req_targgod 1
+#msg "Heal pretender no cap"
 #notext
 #nolog
 #healaff 1
@@ -179343,9 +179435,9 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #rarity 5
 #req_pop0ok
 #req_targmnr 501 -- Allfather
-#req_targnoaff 524288 -- No Lost Eye
-#msg "Reafflict Allfather with a Lost Eye"
-#gainaff 524288 -- Lose an Eye
+#req_targnoitem 878 -- Eye of Wisdom
+#msg "Reafflict Allfather with a Lost Eye [Eye of Wisdom]"
+#addequip 9
 #notext
 #nolog
 #nation -2 -- Province Owner
@@ -182297,10 +182389,10 @@ It is now fully repaired and a new crew has been assigned to it."
 #end
 
 
-#newevent
+#newevent -- Lost Land
 #rarity 2
 #msg "The province is beginning to sink into the ocean!"
-#id 25
+#id 40
 #req_coast 1
 #req_unluck 5
 #emigration 75
@@ -182313,7 +182405,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #delay 1
 #end
 
-#newevent
+#newevent -- Lost Land
 #msg "The province has sunk completely into the ocean.  The population is drowned."
 #rarity 5
 #req_code -540
