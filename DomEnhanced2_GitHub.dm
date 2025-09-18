@@ -67113,8 +67113,8 @@ Only three Queens of Elemental Water are known to exist."
 
 
 
-
 -- FOLDUNITS
+
 
 
 
@@ -67451,7 +67451,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 32
 #att 13
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -67565,11 +67565,11 @@ Only three Queens of Elemental Water are known to exist."
 #pathcost 60
 #mor 30
 #hp 194
-#prot 12
+#prot 14
 #str 30
 #att 13
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -67585,7 +67585,7 @@ Only three Queens of Elemental Water are known to exist."
 #startage 1000
 #maxage 2000
 #fear 5
-#berserk 7
+#berserk 5
 #coldres 5
 
 #forestsurvival
@@ -67618,7 +67618,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 26
 #att 14
 #def 18
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -67665,7 +67665,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 30
 #att 13
 #def 11
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -68173,7 +68173,7 @@ Only three Queens of Elemental Water are known to exist."
 #hp 164
 #prot 18
 #str 32
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -68460,7 +68460,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 32
 #att 13
 #def 11
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -68795,7 +68795,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 28
 #att 13
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -68839,7 +68839,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 32
 #att 13
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -68883,7 +68883,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 28
 #att 13
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 3
@@ -68928,7 +68928,7 @@ Only three Queens of Elemental Water are known to exist."
 #str 29
 #att 13
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 3
@@ -70035,7 +70035,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 26
 #att 13
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -70716,7 +70716,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 26
 #att 13
 #def 14
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -70762,7 +70762,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #hp 145
 #prot 16
 #str 30
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -70797,7 +70797,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #prot 18
 #str 29
 #def 16
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -70833,7 +70833,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 30
 #att 14
 #def 8
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -70877,7 +70877,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 27
 #att 13
 #def 18
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -70929,7 +70929,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 27
 #att 13
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -70980,7 +70980,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 29
 #att 15
 #def 11
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -71026,7 +71026,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 29
 #att 14
 #def 14
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -71070,7 +71070,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 28
 #att 12
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -71113,7 +71113,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 28
 #att 12
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -71156,7 +71156,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 26
 #att 10
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -71331,7 +71331,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 29
 #att 15
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -71376,7 +71376,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 31
 #att 13
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -71425,7 +71425,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 32
 #att 12
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -71472,7 +71472,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 31
 #att 13
 #def 16
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -71511,11 +71511,11 @@ Each month he will collect a magical pearl and can create more using water gems.
 #pathcost 60
 #mor 30
 #hp 201
-#prot 15
+#prot 16
 #str 31
 #att 13
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -71532,7 +71532,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #startage 1000
 #maxage 2000
 #fear 5
-#berserk 7
+#berserk 5
 #coldres 15
 
 #snow
@@ -71563,7 +71563,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #str 28
 #att 13
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -72526,6 +72526,9 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #coldres 15
 #shockres 15
 #poisonres 25
+#slashres
+#bluntres
+#pierceres
 #siegebonus 50
 #ap 8
 #poorleader
@@ -72543,8 +72546,8 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #fixedname "Schwarzer Riese"
 #itemslots 991750
 #clearmagic
-#magicskill 0 2
-#magicskill 3 1
+#magicskill 0 1
+#magicskill 3 2
 #end
 
 #newmonster 8405 -- Neter of the River
@@ -77060,7 +77063,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 32
 #att 13
 #def 13
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -77266,7 +77269,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 28
 #att 13
 #def 15
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -77314,7 +77317,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 6
 #att 13
 #def 13
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -77435,7 +77438,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 32
 #att 12
 #def 7
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -77547,7 +77550,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 24
 #att 14
 #def 17
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -78269,7 +78272,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 29
 #att 15
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -78667,7 +78670,6 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #mr 18
 #startingaff 0
 #startitem 878 -- Eye of Wisdom
-
 #itemslots 2040326
 #clearmagic
 #magicskill 4 2
@@ -78684,7 +78686,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 24
 #att 12
 #def 15
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #fireres 5
@@ -78939,27 +78941,28 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #end
 
 #selectmonster 644 -- Dracolich
-#descr "The Dracolich is a Dragon that was once highly skilled in Death magic. When it died, its power over Death saved it from becoming permanently dead. Ever since, it has managed to stay alive in a state of undeath. The shape of the Dracolich is not suited for spell casting. They have their skills reduced when casting spells from paths other than Death. Therefore, it tends to adopt the shape of a Bog Mummy in battle."
+#descr "The Dracolich is a Dragon that was once highly skilled in Death magic. When it died, its power over Death saved it from becoming permanently dead. Ever since, it has managed to stay alive in a state of undeath. The shape of the Dracolich is not suited for spell casting. They have their skills reduced when casting spells from paths other than Death. Therefore, it tends to adopt the shape of a Bog Mummy in battle. The body of a Dracolich is gargantuan and will take many months to reform if destroyed."
 #diseaseres 100
-#gcost 280
+#gcost 260
 #pathcost 40
 #hp 180
-#prot 16
+#prot 12
 #str 27
 #att 16
 #def 10
 #mr 18
 #woundfend 2
 #immortal
+#reformtime 3
 #itemslots 18620416
 #clearmagic
 #magicskill 5 3
 #end
 
 #selectmonster 645 -- Dracolich Bog Mummy
-#descr "The Dracolich is a Dragon that was once highly skilled in Death magic. When it died, its power over Death saved it from becoming permanently dead. Ever since, it has managed to stay alive in a state of undeath. The shape of the Dracolich is not suited for spell casting. They have their skills reduced when casting spells from paths other than Death. Therefore, it tends to adopt the shape of a Bog Mummy in battle."
+#descr "The Dracolich is a Dragon that was once highly skilled in Death magic. When it died, its power over Death saved it from becoming permanently dead. Ever since, it has managed to stay alive in a state of undeath. The shape of the Dracolich is not suited for spell casting. They have their skills reduced when casting spells from paths other than Death. Therefore, it tends to adopt the shape of a Bog Mummy in battle. The body of a Dracolich is gargantuan and will take many months to reform if destroyed."
 #diseaseres 100
-#gcost 280
+#gcost 260
 #pathcost 40
 #hp 65
 #prot 5
@@ -78968,6 +78971,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #def 9
 #mr 18
 #immortal
+#reformtime 3
 #itemslots 2040326
 #clearmagic
 #magicskill 5 3
@@ -79119,7 +79123,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 28
 #att 13
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -79381,7 +79385,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 32
 #att 13
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -79404,7 +79408,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 32
 #att 13
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -79601,7 +79605,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 31
 #att 13
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -79874,7 +79878,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #str 32
 #att 16
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -80703,7 +80707,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2435 -- Annunaki of Love and War
 #descr "The Annunaki is a giant of divine heritage. She was once the warrior and lover of the previous Pantokrator, but was imprisoned for her violent and promiscuous behavior. She has given birth to heroes, gods and monsters alike. Now with the Pantokrator gone, she is ready to claim a world inhabited by her children."
 #diseaseres 100
-#gcost 290
+#gcost 280
 #pathcost 40
 #moregrowth 1 
 #moreorder 1
@@ -81541,7 +81545,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 27
 #att 15
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81712,7 +81716,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 31
 #att 14
 #def 13
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81734,7 +81738,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 24
 #att 14
 #def 18
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81762,7 +81766,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 26
 #att 15
 #def 15
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 3
@@ -81780,11 +81784,11 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #gcost 200
 #pathcost 60
 #hp 123
-#prot 14
+#prot 16
 #str 30
 #att 13
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -81807,7 +81811,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 27
 #att 15
 #def 18
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81835,7 +81839,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 29
 #att 15
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81857,7 +81861,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 30
 #att 15
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81880,7 +81884,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 31
 #att 14
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81902,7 +81906,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 27
 #att 13
 #def 18
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81922,11 +81926,11 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #gcost 200
 #pathcost 60
 #hp 151
-#prot 15
+#prot 16
 #str 26
 #att 14
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -81948,7 +81952,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 31
 #att 15
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -81971,7 +81975,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 29
 #att 15
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -82000,7 +82004,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 30
 #att 15
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -82023,7 +82027,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 30
 #att 13
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -82048,7 +82052,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 31
 #att 13
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -82070,7 +82074,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 29
 #att 15
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -82095,7 +82099,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 30
 #att 13
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -82121,7 +82125,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 29
 #att 15
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -82148,7 +82152,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 29
 #att 15
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -82171,7 +82175,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #str 30
 #att 15
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -82513,7 +82517,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #str 31
 #att 15
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -83608,7 +83612,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #str 28
 #att 14
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -83820,7 +83824,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #str 24
 #att 15
 #def 12
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -83920,7 +83924,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #str 26
 #att 12
 #def 14
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -83948,7 +83952,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #str 26
 #att 12
 #def 14
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -84060,32 +84064,33 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #end
 
 #selectmonster 3888 -- Dracolich
-#descr "The Dracolich is a Dragon that was once highly skilled in Death magic. When it died, its power over Death saved it from becoming permanently dead. Ever since, it has managed to stay alive in a state of undeath. The shape of the Dracolich is not suited for spell casting. They have their skills reduced when casting spells from paths other than Death. Therefore, it tends to adopt the shape of a human lich in battle."
+#descr "The Dracolich is a Dragon that was once highly skilled in Death magic. When it died, its power over Death saved it from becoming permanently dead. Ever since, it has managed to stay alive in a state of undeath. The shape of the Dracolich is not suited for spell casting. They have their skills reduced when casting spells from paths other than Death. Therefore, it tends to adopt the shape of a human lich in battle. The body of a Dracolich is gargantuan and will take many months to reform if destroyed."
 #diseaseres 100
-#gcost 280
+#gcost 260
 #pathcost 40
 #moregrowth -1
 
 #moreprod -1
 #hp 180
-#prot 16
+#prot 12
 #str 27
 #att 16
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
 #immortal
+#reformtime 3
 #itemslots 18620416
 #clearmagic
 #magicskill 5 3
 #end
 
 #selectmonster 3889 -- Dracolich Master Lich
-#descr "The Dracolich is a Dragon that was once highly skilled in Death magic. When it died, its power over Death saved it from becoming permanently dead. Ever since, it has managed to stay alive in a state of undeath. The shape of the Dracolich is not suited for spell casting. They have their skills reduced when casting spells from paths other than Death. Therefore, it tends to adopt the shape of a human lich in battle."
+#descr "The Dracolich is a Dragon that was once highly skilled in Death magic. When it died, its power over Death saved it from becoming permanently dead. Ever since, it has managed to stay alive in a state of undeath. The shape of the Dracolich is not suited for spell casting. They have their skills reduced when casting spells from paths other than Death. Therefore, it tends to adopt the shape of a human lich in battle. The body of a Dracolich is gargantuan and will take many months to reform if destroyed."
 #diseaseres 100
-#gcost 280
+#gcost 260
 #pathcost 40
 #moregrowth -1
 
@@ -84097,6 +84102,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #def 10
 #mr 18
 #immortal
+#reformtime 3
 #itemslots 2040326
 #clearmagic
 #magicskill 5 3
@@ -84112,7 +84118,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #str 28
 #att 15
 #def 18
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -84193,7 +84199,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #str 31
 #att 14
 #def 13
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -84258,7 +84264,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #str 24
 #att 14
 #def 18
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 2
@@ -84291,7 +84297,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #str 32
 #att 12
 #def 7
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #woundfend 4
@@ -84489,7 +84495,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #str 28
 #att 13
 #def 10
-#mr 16
+#mr 17
 #mastersmith -1
 #researchbonus -8
 #heal
@@ -84524,8 +84530,9 @@ He is accompanied by the souls of his subjects that have followed him into the w
 
 
 
--- ENDUNITS
 
+
+-- ENDUNITS
 
 
 
