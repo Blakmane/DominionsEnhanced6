@@ -3892,6 +3892,24 @@
 #armorpiercing
 #end
 
+#newweapon 1902
+#copyweapon 7  -- Quarterstaff
+#name "Magic Stick"
+#dmg 25
+#magic
+#dt_large
+#end
+
+#newweapon 1903 -- Juan Artz Staff
+#copyweapon 363  -- Iron Cudgel
+#name "Iron Staff"
+#dmg 10
+#att 2
+#def 2
+#magic
+#secondaryeffect 1512 -- Stun
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -7499,7 +7517,7 @@
 #size 3
 #mr 12
 #mor 13
-#enc 5
+#enc 3
 #mapmove 14
 #ap 13
 #eyes 2
@@ -16098,7 +16116,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #prot 0
 #size 3
 #str 11
-#enc 5
+#enc 3
 #att 12
 #def 12
 #prec 9
@@ -16415,7 +16433,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #prot 0
 #size 3
 #str 11
-#enc 5
+#enc 3
 #att 12
 #def 13
 #prec 9
@@ -17014,7 +17032,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #prot 0
 #size 3
 #str 10
-#enc 5
+#enc 3
 #att 11
 #def 10
 #prec 8
@@ -17053,7 +17071,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #prot 0
 #size 3
 #str 10
-#enc 5
+#enc 3
 #att 11
 #def 10
 #prec 8
@@ -17952,9 +17970,11 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spellsinger
 #weapon 151  -- Wand
 #armor 187  -- Mask
+#researchbonus -5
 #clearmagic
 #magicskill 0 1 -- F
 #magicskill 5 1 -- D
+#magicskill 6 1 -- N
 #magicskill 7 1 -- G
 --#custommagic 8320 100 -- FN
 #end
@@ -18954,6 +18974,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #ambidextrous 2
 #weapon 8  -- Broad Sword
 #weapon 6  -- Short Sword
+#armor 10
 #end
 
 #newmonster 7018
@@ -28711,7 +28732,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #custommagic 49024 100
 #custommagic 49024 100
 #gcost 210
-#monpresentrec 1521  -- Mind Lord
+#monpresentrec 12006  -- Mind Lord
 #slave
 #slowrec
 #end
@@ -43596,7 +43617,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #armor 124  -- Ice Helmet
 #armor 28  -- Ice Aegis
 #mapmove 16
-#enc 5
+#enc 3
 #prec 12
 #ap 12
 #prot 2
@@ -44731,6 +44752,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #end
 
 #newmonster 8174
+#copystats 1521 -- Mind Lord
 #name "He Who Breathes"
 #fixedname "Turkuul"
 #spr1 "worthy_heroes/manipulator_1.tga"
@@ -44774,7 +44796,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #end
 
 #newmonster 8175
-#copystats 1570  -- Human dreamer for insanity
+--#copystats 1570  -- Human dreamer for insanity
+#copystats 1521 -- Mind Lord
 #name "Doomed Aboleth"
 #fixedname "Tuzhas"
 #spr1 "worthy_heroes/doomed_apprentice_1.tga"
@@ -44786,6 +44809,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 11
 #ambidextrous 2
 #hp 60
+#insane 10
 #landshape 12002
 #amphibian -- Aboleth Land Damage
 #taskmaster 3
@@ -45058,7 +45082,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #prot 0
 #size 5
 #str 13
-#enc 5
+#enc 3
 #att 13
 #def 13
 #prec 12
@@ -45571,7 +45595,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #magicskill 3 2
 #magicskill 2 1
 #mapmove 2
-#enc 5
+#enc 3
 #prec 12
 #ap 22
 #prot 0
@@ -46490,7 +46514,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #batstartsum1d6 288
 #mapmove 14
 #ap 13
-#enc 5
+#enc 3
 #prec 10
 #prot 0
 #mr 15
@@ -54025,7 +54049,7 @@ Cost 56 RP."
 #domsummon20 1062  -- Sea lion
 #summon1 1064  -- Sea dog
 #mapmove 20
-#enc 5
+#enc 3
 #prec 11
 #ap 27
 #prot 4
@@ -54078,7 +54102,7 @@ Cost 56 RP."
 #heal
 #regeneration 20
 #mapmove 26
-#enc 5
+#enc 3
 #prec 11
 #ap 35
 #prot 2
@@ -56650,6 +56674,192 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #inanimate
 #pooramphibian
 #end
+
+#newmonster 9168 -- Alarabi
+#copystats 3605 -- Tartalo
+#name "Bloodthirsty Giant"
+#spr1 "worthy_heroes/selg_alarabi1.png"
+#spr2 "worthy_heroes/selg_alarabi2.png"
+#descr "Alarabi is a Tartalo of immense size who lives deep within the wild mountains of Pyrène. He is feared by shepherds and wanderers alike, for he developed a taste for the flesh of men and livestock, and it is said he can only be placated by offering an adult human every evening to cook and consume. Alarabi is never seen without his enchanted talking ring. It is rumoured that the ring whispers dark secrets to the Giant as he sleeps each night, encouraging him to commit even greater acts of evil and bloodshed. Following some inscrutable design, the ring has convinced Alarabi to descended from his mountain home and pledge his services to the awakening god."
+#fixedname "Alarabi"
+#gcost 0
+#rcost 2
+#rpcost 2
+#drawsize 0
+#startitem 880
+#fear 5
+#popkill 3
+#hp 73
+#size 8
+#str 27
+#att 12
+#mr 12
+#mor 14
+#startage 90
+#maxage 150
+#magicskill 3 1  -- Earth 1
+#magicskill 8 1  -- Blood 1
+#end
+
+#newmonster 9169 -- OTK Hero
+#copystats 3606 -- Bekryde Shepherd
+#name "Heroic Shepherd"
+#spr1 "worthy_heroes/laod_shepherd1.png"
+#spr2 "worthy_heroes/laod_shepherd2.png"
+#descr "The caverns and mountains of Pyrène are home to many dangerous creatures that prey upon Bekyrde Shepherds. Beñat was one such poor shepherd who had lost his flock of cave cows to the predations of a great seven-headed dragon. A powerful Sorgina noticed the young man and, overcome with pity, decided to visit him in the form of an old hag. Although starving and destitute, Beñat generously offered the last of his supplies to the disguised Sorgina. As a reward for his hospitality, she gifted him a powerful magic stick that could slay any creature with a single blow. Beñat courageously faced the dragon and defeated it with a solid strike to each head. Since that day, Beñat travels the caverns with his flock, seeking out dangerous beasts and slaying them with his magical stick. Hoping to repay his debt to the Sorgina, he has travelled to the heart of the Pyrène kingdom to pledge his service to the awakening god. Beñat is an inspiration to the people of Bekyrde and his shepherding skills allow him to patiently guide both unruly animals and men."
+#fixedname "Beñat"
+#gcost 0
+#rcost 2
+#rpcost 2
+#clearweapons
+#weapon 1902 -- Magical Stick
+#makemonsters5 2512 -- Cave Cow
+#batstartsum3d6 2512 -- Cave Cow
+#beastmaster 4
+#twistfate
+#goodleader
+#hp 23
+#str 13
+#att 12
+#def 14
+#mr 12
+#mor 18
+#inspirational 2
+#undisleader 1
+#end 
+
+#newmonster 9170 -- Juan Artz
+#copystats 3600 -- Basajun
+#name "Bear-Man"
+#spr1 "worthy_heroes/laod_juanartz1.png"
+#spr2 "worthy_heroes/laod_juanartz2.png"
+#descr "Juan Artz is a Bekryde man covered head to toe in fur. He was raised by a she-bear in the mountains of Pyrène, who suckled him after he was abandoned by his starving mother. He is known for his immense strength, matched only by his friendly demeanour. He became famous amongst the Bekryde people after he journeyed deep in the caverns of the underworld to rescue three princesses from the clutches of a powerful dragon. He has since performed many acts of great bravery and his adventures have attracted the eyes of the Jentilak, who guide and protect him. Juan Artz is as powerful as a bear and can recover from any wound. He carries a magical iron staff forged by the Jentilak that stuns those he strikes. He is strongly attuned to the magic of earth and nature and is considered sacred to the Bekryde people."
+#fixedname "Juan Artz"
+#gcost 0
+#rcost 2
+#rpcost 2
+#clearweapons
+#weapon 1903 -- Iron Staff
+#goodleader
+#hp 45
+#str 20
+#att 13
+#def 11
+#mr 12
+#mor 16
+#animal
+#prot 8
+#startage 50
+#maxage 200
+#regeneration 10
+#forgebonus 0
+#heal
+#clearmagic
+#magicskill 3 2
+#magicskill 6 3
+#end
+
+#newmonster 9171 -- Juan Artz old
+#copystats 3600 -- Basajun
+#name "Old Man-Bear"
+#spr1 "worthy_heroes/laod_juanartzold1.png"
+#spr2 "worthy_heroes/laod_juanartzold2.png"
+#descr "Juan Artz is an ancient Bekryde covered head to toe in fur. He was raised by a she-bear in the mountains of Pyrène, who suckled him after he was abandoned by his starving mother. He is known for his immense wisdom, matched only by his friendly demeanour. He became famous in ages past after he journeyed deep in the caverns of the underworld to rescue three princesses from the clutches of a powerful dragon. Juan Artz has lived for many hundreds of years and is now old and wise. He despairs at the state his once kind people have fallen into without the guidance of the Jentilak, but continues to aid them in the hope he can lead them towards a brighter path. Juan Artz can no longer recover from wounds as well as he did in his youth. He carries a magical iron staff forged by the Jentilak that he uses as a walking stick. He has become very powerful in the magic of earth and nature, and is considered a sacred relic by the people of Pyrène."
+#fixedname "Juan Artz"
+#gcost 0
+#rcost 2
+#rpcost 2
+#clearweapons
+#weapon 1903 -- Iron Staff
+#goodleader
+#hp 40
+#str 20
+#att 11
+#def 11
+#mr 15
+#mor 16
+#animal
+#prot 8
+#forgebonus 0
+#startage 650
+#maxage 200
+#heal
+#clearmagic
+#magicskill 3 3
+#magicskill 6 4
+#magicskill 9 1
+#end
+
+#newmonster 9172 -- Patxi
+#spr1 "worthy_heroes/blue_patxi1.tga"
+#spr2 "worthy_heroes/blue_patxi2.tga"
+#name "Damned Blacksmith"
+#fixedname "Patxi Errementaria"
+#descr "In all of Pyrene, there is no more skilled a blacksmith than the reclusive Patxi Errementari. In his youth, Patxi traded his soul to a devil for the secrets of the ancient Jentilak and the ability to forge with any metal. With these skills, Patxi became famed among the nobles and soldiers of Pyrene, both for his unnatural talent and foul temper. Many years later when the devil came to collect on the bargain, Patxi trapped the devil in enchanted iron and tortured it until it released him from his debt. Despite this, Patxi knew he was not yet free of inferno and his retribution was only delayed until his death. To avoid his impending fate, he has pledged his services to the awakening god."
+#gcost 0
+#hp 13
+#str 12
+#att 10
+#def 10
+#sizze 3
+#mr 14
+#mor 13
+#enc 3
+#mapmove 14
+#startage 50
+#maxage 80
+#fixforgebonus 2
+#mastersmith 1
+#resources 25
+#armor 10 -- Leather Hauberk
+#startitem 698 -- Magesmith Apron
+#weapon 14 -- Maul
+#magicskill 0 1
+#magicskill 2 1
+#magicskill 3 3
+#magicskill 8 1
+#end
+
+#newmonster 9173 -- Emerald Cardinal
+#copystats 3619 -- Pyrenian Bishop
+#spr1 "worthy_heroes/blue_emeraldcardinal1.tga"
+#spr2 "worthy_heroes/blue_emeraldcardinal2.tga"
+#name "Cardinal of the Emerald Flame"
+#fixedname "Gabirel"
+#descr "Despite the prestige of the title and the power the comes with leading the Church of Pyrene, wise men would not envy the Cardinal of the Emerald Flame. The knives of ambitious rivals glint in the dark and repeated exposure to the object of their faith drastically shortens their lifespans. Cardinal Gabiral has clung to his position for a decade, longer than any other. Few others can match his skill in navigating the cutthroat political landscape of the church and his skill in blood magic is only exceeded by the Akerbeltz. However, even he feels the weight of years and he has grown reluctant to perform the church's most holy rituals."
+#gcost 0
+#clearmagic
+#magicskill 0 3 -- F
+#magicskill 8 3 -- B
+#magicskill 9 3 -- H
+#maxage 22
+#older 10
+#end
+
+#newmonster 9174 -- Bahlul
+#copystats 2511 -- Lavaborn Commander
+#spr1 "worthy_heroes/blue_bahlul1.png"
+#spr2 "worthy_heroes/blue_bahlul2.png"
+#fixedname "Bahlul"
+#name "Lava-born Count"
+#descr "When Abysia attacked Pyrène, not all Lava-born joined the side of the Abysians. Some communities of Lava-born had coexisted peacefully in the caverns for many generations and were apalled by the strange practices of their Abysian bretheren. Bahlul is one such Lava-born. When his home was invaded by Abysian warlords, he organised a rebellion and retook his lands from the occupying force. For his services, Pyrène made him a count and allowed him the freedom to govern his community as he sees fit. Bahlul is a powerful warrior with some skill in earth and fire magic. He radiates a furnace-like heat and is impervious to all forms of fire, but is vulnerable to cold. In warm lands he is more difficult to harm, however the cold will make him brittle. Every month, Lava-born warriors will flock to Bahlul's banner."
+#gcost 0
+#prot 3
+#maxage 60
+#startage 30
+#holy
+#neednoteat
+#magicskill 0 2
+#magicskill 3 2
+#magicskill 9 1
+#icenatprot -1
+#iceprotinspector -1
+#summon2 2510 -- Lava-born
+#end
+
+
+
+
 
 
 
@@ -110240,7 +110450,9 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 9
 #look 0
-#homecom 
+#homecom 9171 -- Juan Artz old
+#homecom 9173 -- Emerald Cardinal
+#homecom 9174 -- Bahlul
 #end
 
 #newsite 2359 -- Harrespil
@@ -110628,6 +110840,9 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 9
 #look 0
 #homecom 8868
+#homecom 9168 -- Alarabi
+#homecom 9169 -- OTK hero
+#homecom 9170 -- Juan Artz
 #end
 
 
@@ -114360,6 +114575,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 0
 #homecom 4059
 #homecom 4060
+#homecom 9172 -- Patxi
 #end
 
 
@@ -120230,13 +120446,21 @@ Priests: Average"
 #addrecunit 3598 -- mairu throw
 
 -- #addreccom 8868 -- Olm Envoy
-#hero6 8868 -- Olm Envoy
+#hero1 8868 -- Olm Envoy
+#hero2 9168 -- Alarabi
+#hero3 9169 -- OTK hero
+#hero4 9170 -- Juan Artz
 
 #futuresite "EA Pyrène Summons"
 #futuresite "EA Pyrène Heroes"
 #end
 
 #selectnation 62 -- MA Pyrene
+
+#hero1 9171 -- Juan Artz old
+#hero2 9173 -- Emerald Cardinal
+#hero3 9174 -- Bahlul
+
 #uwbuild 1
 #addgod 3086 -- Deives of the Sun
 #addgod 8456 -- Bloodstained Edifice
@@ -120247,6 +120471,10 @@ Priests: Average"
 #end
 
 #selectnation 123 -- LA Pyrene
+#hero1 4059 -- Red Mistress
+#hero2 4060 -- Cambion King
+#hero3 9172 -- Patxi
+
 #uwbuild 1
 #addgod 3086 -- Deives of the Sun
 #addgod 8456 -- Bloodstained Edifice
@@ -123246,7 +123474,7 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #pathlevel 1 1
 #effect 1
 #damage 7612 -- Smoke Warriors
-#nreff 4
+#nreff 504 -- 4+1/2
 #range 2
 #flightspr -1
 #fatiguecost 100
@@ -123457,7 +123685,7 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #explspr 10015
 #range 10
 #precision 0
-#aoe 1007
+#aoe 2004 -- 10+2
 #nreff 1
 #fatiguecost 100
 #nextspell 2022
@@ -123634,7 +123862,7 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #pathlevel 1 1
 #effect 1
 #damage 7610 -- Mist Warriors
-#nreff 4
+#nreff 504 -- 4+1/2
 #range 2
 #flightspr -1
 #fatiguecost 100
@@ -123933,7 +124161,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #researchlevel 3
 #path 0 2
 #path 1 1
-#nreff 3
+#nreff 503 -- 3+1/2
 #damage 1015
 #flightspr 10068
 #sound 21
@@ -124273,7 +124501,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #damage 549755813888  -- 50 percent Shield
 #nreff 1
 #range 2
-#aoe 5005 -- 15+5
+#aoe 3009 -- 15+3
 #flightspr -1
 #explspr 10005
 #sound 31
@@ -124303,7 +124531,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #effect 23
 #damage 68719476736  -- Reinvigoration 2
 #fatiguecost 30
-#aoe 15
+#aoe 3009 -- 15+3
 #nreff 1
 #range 25
 #precision 3
@@ -124361,7 +124589,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #pathlevel 1 1
 #effect 1
 #damage 7611 -- Mud Warriors
-#nreff 4
+#nreff 504 -- 4+1/2
 #range 2
 #flightspr -1
 #fatiguecost 100
@@ -124745,7 +124973,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #explspr 10023
 #range 10
 #precision 0
-#aoe 1012 -- 15+
+#aoe 3006 -- 15+3
 #nreff 1
 #fatiguecost 100
 #end
@@ -124872,7 +125100,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #pathlevel 1 1
 #effect 1
 #damage 7609 -- Magma Warriors
-#nreff 4
+#nreff 504 -- 4+1/2
 #range 2
 #flightspr -1
 #fatiguecost 100
@@ -125055,7 +125283,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #researchlevel 7
 #pathlevel 0 3
 #range 10
-#aoe 5
+#aoe 1002 -- 5+1
 #fatiguecost 100
 #nextspell 2169
 #end
@@ -125196,6 +125424,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #damage 32896  -- Giant Strength & Courage
 #explspr 10002  -- White mist
 #spec 12582928  -- Friendly magic beings only, UW OK
+#aoe 4008 -- 20+4
 #end
 
 #selectspell 2185
@@ -125989,7 +126218,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 1
 #effect 23
 #damage 1  -- Twist Fate
-#aoe 2006 -- 8++
+#aoe 3002 -- 5+3
 #fatiguecost 30
 #spec 281474989441152  -- Ignore Shields, AN, Friendlies Only, Use UW, Affects Animals Only, Mindless immune
 #end
@@ -126649,7 +126878,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #effect 67
 #damage 3
 #range 30
-#aoe 1012 -- 15+
+#aoe 3006 -- 15+3
 #explspr 10059
 #sound 23  -- Doom
 #fatiguecost 30
@@ -130257,7 +130486,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #path 1 5
 #pathlevel 1 1
 #damage 2223
-#nreff 2002
+#nreff 4012 -- 20+4
 #spec 0
 #fatiguecost 40
 --#restricted 76 -- MA Machaka
@@ -130580,7 +130809,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 
 #selectspell 2597
 #copyspell 935 -- Pack of Wolves
-#name "Summon Terror Bird"
+#name "Summon Terror Birds"
 #descr "The caster summons a few Terror Birds from the plains of Gondwana. These gigantic predatory birds prey on anything they can kill with their powerful beaks and sharp claws. They are strong in N'um and are sacred to the people of Gondwana."
 #researchlevel 3
 #pathlevel 0 3
@@ -130593,8 +130822,8 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 
 #selectspell 2598
 #copyspell 935 -- Pack of Wolves
-#name "Summon Quaggaraffe"
-#descr "The caster summons a Quaggaraffe from the plains of Gondwana. Quaggaraffes feed from the tops of tall trees, using their long legs and neck to reach the highest branches. When threatened they lash out with a kick that can split a mans skull, and a headbutt backed by their powerful neck. They are strong in N'um and are sacred to the people of Gondwana."
+#name "Summon Quaggaraffes"
+#descr "The caster summons a pair of Quaggaraffes from the plains of Gondwana. Quaggaraffes feed from the tops of tall trees, using their long legs and neck to reach the highest branches. When threatened they lash out with a kick that can split a mans skull, and a headbutt backed by their powerful neck. They are strong in N'um and are sacred to the people of Gondwana."
 #researchlevel 4
 #path 0 1
 #pathlevel 0 2
@@ -145371,7 +145600,7 @@ All effects scale with friendly Dominion."
 #researchlevel 4
 #path 0 0
 #pathlevel 0 2
-#aoe 5
+#aoe 2001 -- 5+2
 #damage 35
 #fatiguecost 40
 #range 30
@@ -145470,7 +145699,7 @@ All effects scale with friendly Dominion."
 #sound 16
 #range 10
 #precision 100
-#aoe 20
+#aoe 4008 -- 20+4
 #nreff 1
 #fatiguecost 100
 #nextspell 3786
@@ -146804,7 +147033,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #path 0 5
 #pathlevel 0 2
 #nreff 1
-#aoe 3
+#aoe 1001 -- 3+1
 #range 25
 #effect 66
 #damage 12 -- ~4 turn paralysis
@@ -150906,7 +151135,7 @@ Applies the effects of Holy Avenger to the caster"
 #name "Cloak of Mirrors"
 #descr "The caster cloaks a large group of soldiers in glamour. The images will surround the targets and make it harder for enemies to figure out which one to strike. The images will surround them and make it harder for enemies to figure out which one to strike. A strike will have an equal chance of hitting each image and the original. If an image is hit it will disappear. Unlike some other glamour effects, mirror images are not negated by true sight."
 #details "Images created: 2"
-#aoe 1006 -- 10+
+#aoe 2002 -- 10+2
 #fatiguecost 100
 #researchlevel 8
 #path 0 7
@@ -151954,7 +152183,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #copyspell 831
 #details "Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed.
 Underwater: AoE 10+2"
-#aoe 1003 -- 5+
+#aoe 2001 -- 5+2
 #range 5
 #aispellmod -50
 #precision 100
@@ -151972,7 +152201,8 @@ Underwater: AoE 10+2"
 #name "Levitation"
 #descr "A few soldiers are granted the ability to float a few inches above the ground."
 #details "Floating units cannot be targeted by some spells like earth grip or earthquakes."
-#aoe 1001 -- 2+
+#aoe 3
+#fatiguecost 20
 #pathlevel 0 1
 #researchlevel 3
 #end
@@ -151982,7 +152212,7 @@ Underwater: AoE 10+2"
 #name "Fay Eyes"
 #descr "A group of soldiers are granted the ability to discern illusions and see the unseen."
 #details "True Sight enables a unit to attack invisible or glamoured targets without penalties."
-#aoe 1001 -- 3+
+#aoe 2000 -- 4+2
 #pathlevel 0 2
 #researchlevel 5
 #end
@@ -151992,7 +152222,7 @@ Underwater: AoE 10+2"
 #name "Third Sight"
 #descr "The caster opens the third eye of many troops, enabling them to observe the spirit world temporarily. The soldiers gain Spirit Sight for the remainder of the battle."
 #details "Units with Spirit Sight can see invisible and glamoured units for what they are. Spirit Sight also grants 100% darkvision."
-#aoe 1007 -- 10+
+#aoe 2003 -- 11+2
 #pathlevel 0 4
 #fatiguecost 100
 #researchlevel 7
@@ -152044,7 +152274,7 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #pathlevel 0 2
 #path 1 7 -- G
 #pathlevel 1 1
-#aoe 1002 -- 4+
+#aoe 2000 -- 4+2
 #end
 
 #selectspell 4275
@@ -152451,6 +152681,10 @@ This spell can only be cast in a deep water province."
 #precision 100
 #end
 
+#selectspell 833 -- Fire Resistant Warriors
+#aoe 4008 -- 20+4
+#end
+
 #selectspell 835 -- Group Stoneskin
 #precision 100
 #end
@@ -152732,7 +152966,7 @@ This spell can only be cast in a deep water province."
 #end
 
 #selectspell 247 -- Flying Shards
-#damage 1008 -- 9+
+#damage 2007 -- 9+2
 #end
 
 #selectspell 633 -- Burning Hands
@@ -153434,7 +153668,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 562 -- Summon Ghandarvas
 #nreff 507
-#fatiguecost 1500
+#end
+
+#selectspell 562 -- Summon Kimpurushas
+#nreff 507
 #end
 
 #selectspell 564 -- Nagaraja
@@ -153697,6 +153934,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 662 -- Freezing Mist
+#aoe 2004 -- 10+2
 #end
 
 #selectspell 663 -- Acid Bolt
@@ -153782,10 +154020,6 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #notfornation 5
 #end
 
-#selectspell 714 -- Blast of Unlife
-#precision 5
-#end
-
 #selectspell 715 -- Bane Fire
 --#nextspell 20
 #precision 4
@@ -153808,6 +154042,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 723 -- Ice Strike
 #precision 5
+#end
+
+#selectspell 729 -- N Nether Darts
+#nreff 2013 -- 15+1 -> 15+2
 #end
 
 #selectspell 726 -- "Acid Storm"
@@ -153888,7 +154126,25 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 819 -- Group Barkskin
-#aoe 1002 -- 4+
+#aoe 1003 -- 5+1
+#fatiguecost 50 -- 50
+#end
+
+#selectspell 822 -- Shrink
+#range 5010 -- 20+5
+#aoe 1000 -- 2+1
+#end
+
+#selectspell 800 -- Torpor
+#aoe 1000 -- 2+1
+#end
+
+#selectspell 1328 -- Confusion
+#aoe 1000 -- 2+1
+#end
+
+#selectspell 1293 -- Despair
+#aoe 2001 -- 5+2
 #end
 
 #selectspell 658 -- Phantasmal Warrior
@@ -153914,7 +154170,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 848 -- Shadow Warriors
-#aoe 3021 -- 30+3
+#aoe 4008 -- 20+4
 #end
 
 #selectspell 849 -- Blindness
@@ -153969,7 +154225,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 845 -- Cat-Eyed Warriors
-#aoe 1022 -- 25+
+#aoe 5010 -- 25+5
 #end
 
 #selectspell 807 -- Quickness
@@ -154011,13 +154267,14 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #pathlevel 0 2
 #path 1 7
 #pathlevel 1 1
-#aoe 1010 -- 12+
+#aoe 2008 -- 12+2
 #spec 2305843009759494272
 #end
 
 #selectspell 714 -- Blast of Unlife
+#precision 5
 #pathlevel 0 2
-#aoe 1006 -- 8+
+#aoe 2004 -- 8+2
 #fatiguecost 100
 #end
 
@@ -154099,7 +154356,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 878 -- Wave Warriors
---#aoe 2000
+#aoe 5005 -- 20+5
 #end
 
 #selectspell 879 -- Ice Walls
@@ -154107,7 +154364,51 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 1367 -- Battle Fortune
---#aoe 3001
+#aoe 4004 -- 20+4
+#end
+
+#selectspell 860 -- Rewrite Fate
+#aoe 4004 -- 20+4
+#end
+
+#selectspell 867 -- Giant Warriors
+#aoe 2004 -- 10+2
+#end
+
+#selectspell 865 -- Wooden Warriors
+#aoe 4008 -- 20+4
+#end
+
+#selectspell 1238 -- Warriors of the Dawn
+#aoe 4004 -- 20+4
+#end
+
+#selectspell 1367 -- Battle Fortune
+#aoe 4004 -- 20+4
+#end
+
+#selectspell 909 -- Displaced Warriors
+#aoe 4004 -- 20+4
+#end
+
+#selectspell 1220 -- Steel Slice Warriors
+#aoe 4004 -- 20+4
+#end
+
+#selectspell 1198 -- Earthquake Warriors
+#aoe 4004 -- 20+4
+#end
+
+#selectspell 899 -- Iron Warriors
+#aoe 4004 -- 20+4
+#end
+
+#selectspell 1217 -- Mass Flight
+#aoe 4004 -- 20+4
+#end
+
+#selectspell 875 -- Fog Warriors
+#aoe 4004 -- 20+4
 #end
 
 #selectspell 862 -- Skeletal Legion
@@ -154156,6 +154457,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 896 -- Quickening
 #details "Grants +2 Att, +2 Def and Combat speed is doubled"
 #researchlevel 7
+#aoe 2005 -- 9+2
 #end
 
 #selectspell 900 -- Marble Army
@@ -154348,6 +154650,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 1008 -- Spirit Master
 #notfornation 184 -- Sitecah
+#end
+
+#selectspell 1009 -- Ghost Grip
+#nreff 1004 -- 5 -> 5+1
 #end
 
 #selectspell 1012 -- Acashic Record
@@ -154655,6 +154961,42 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #fatiguecost 400
 #end
 
+#selectspell 1173 -- Winter Ward
+#aoe 4012 -- 20+4
+#end
+
+#selectspell 1156 -- Spell Ward
+#aoe 4012 -- 20+4
+#end
+
+#selectspell 1168 -- Flame Ward
+#aoe 4012 -- 20+4
+#end
+
+#selectspell 1170 -- Thunder Ward
+#aoe 4012 -- 20+4
+#end
+
+#selectspell 829 -- Arrow Ward
+#aoe 4008 -- 20+4
+#end
+
+#selectspell 789 -- Protective Winds
+#fatiguecost 30 -- 30
+#end
+
+#selectspell 826 -- Cold Resistant Warriors
+#aoe 4008 -- 20+4
+#end
+
+#selectspell 881 -- Marble Warriors
+#aoe 4008 -- 20+4
+#end
+
+#selectspell 836 -- Lightning Resistant Warriors
+#aoe 4008 -- 20+4
+#end
+
 #selectspell 1176 -- giant strength warriors
 #aoe 25
 #end
@@ -154667,7 +155009,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 
 #selectspell 1150 -- Levitate Soldiers
-#aoe 1002 -- 4+
+#aoe 2000 -- 4+2
 #end
 
 #selectspell 1151 -- Trueshot Warriors
@@ -154700,7 +155042,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 823 -- Eagle Eyed Warriors
-#aoe 1007 -- 10+
+#aoe 2004 -- 10+2
 #fatiguecost 40
 #ainocast 1
 #end
@@ -154751,7 +155093,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1306 -- Ferocity
-#aoe 1013 -- 15+
+#aoe 3004 -- 10+3
 #end
 
 #selectspell 1307 -- Touch of Madness
@@ -154759,7 +155101,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1325 -- Pack Ferocity
-#aoe 1033 -- 35+
+#aoe 5020 -- 30+5
 #end
 
 #selectspell 1353 -- Fury of the Wild
@@ -154776,12 +155118,12 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1296 -- Furious Warriors
-#aoe 1006 -- 8+
+#aoe 2004 -- 8+2
 #end
 
 #selectspell 1314 -- Gift of the Furies
 #pathlevel 0 2
-#aoe 1023 -- 25+
+#aoe 4012 -- 20+4
 #end
 
 #selectspell 1281 -- Sleep
@@ -154799,11 +155141,11 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #name "Proud Steeds"
 #descr "The caster enchants a group of animal mounts giving them increased intelligence and defensive prowess."
 #details "Defense skill +2, morale +2, MR +2. The spell only affects animal mounts."
-#aoe 1004 -- 5+
+#aoe 2003 -- 5+2
 #end
 
 #selectspell 1161 -- Immaculate Mounts
-#aoe 3019 -- 25+
+#aoe 5015 -- 25+5
 #end
 
 #selectspell 1463 -- Army of Immaculate Mounts
@@ -154818,7 +155160,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1162 -- Haste
 #fatiguecost 60
-#aoe 1012 -- 15+
+#aoe 3006 -- 15+3
 #ainocast 1
 #end
 
@@ -154877,7 +155219,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 871 -- Fay-eyed Warriors
---#aoe 1022 -- 25+
+#aoe 4008 -- 20+4
 #spec 12582912 -- Friendlys only, UWok
 #end
 
@@ -154909,6 +155251,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1163 -- Poison Ward
+#aoe 4012 -- 20+4
 #notfornation 42
 #end
 
@@ -155098,7 +155441,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #pathlevel 0 3
 #path 1 7 -- G
 #pathlevel 1 1
-#aoe 1012 -- 15+
+#aoe 3006 -- 15+3
 #end
 
 #selectspell 1283 -- Augury
@@ -155135,6 +155478,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectspell 1298 -- Curse of the Desert
 #pathlevel 0 2
 #spec 17592723439744  -- Hard MR Neg
+#aoe 2001 -- 5+2
 #end
 
 #selectspell 1308 -- Rage of the Cornered Rat
@@ -160038,6 +160382,18 @@ This will also prevent their skin from drying out."
 #armor 230 -- Magic Robes
 #end
 
+#selectitem 880
+#spr "magicenhanced/eeiandvari.tga"
+#name "Talking ring"
+#descr "Alarabi found this ring deep within the forgotten caverns underneath the mountains of Pyrene. Ever since he has become more intelligent but also even more cruel, and he is often seen lifting the ring up to his ear as if to listen to it. The ring grants him great magical power and protects him from hostile spells."
+#constlevel 13
+#mainpath 8
+#mainlevel 5
+#cursed
+#type 8  -- Misc
+#mr 4
+#magicboost 8 2 -- +2 blood
+#end
 
 
 -- END OF NEW ITEMS (Skip items 881~882)
