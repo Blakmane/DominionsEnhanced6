@@ -7,10 +7,10 @@
 
 
 -- Bless changes:
--- Wasteland Survival cost from 5 -> 1
+-- Wasteland Survival cost from 2 -> 1
 -- Death Explosion cost from 5 -> 6, no longer Incarnate
 -- Fire Shield cost from 6 -> 5
--- Flaming Weapons cost from 7 -> 6
+-- Flaming Weapons cost from 7 -> 5
 -- Awareness cost from 3 -> 2
 -- Swiftness cost from 4 -> 3
 -- Storm Flight cost from 4 -> 3
@@ -21,7 +21,7 @@
 -- Swamp Survival cost from 2 -> 1
 -- Swimming cost from 2 -> 1
 -- Slowing Weapons cost from 5 -> 6, no longer Incarnate
--- Vitriol Weapons cost from 8 -> 7
+-- Vitriol Weapons cost from 8 -> 6, no longer Incarnate
 -- Water Breathing cost from 6 -> 2, no longer Incarnate
 -- Frost Mist Weapons cost from 7 -> 5, no longer Incarnate
 -- Unbreakable cost from 4 -> 3
@@ -29,8 +29,9 @@
 -- Solar Weapons cost from 4 -> 3
 -- Twist Fate cost from 6 -> 5
 -- Fateweaving cost from 7 -> 6
+-- Withering Weapons cost from 4 -> 3
 -- Reanimators cost from 7 -> 6, no longer Incarnate
--- Death Weapons cost from 8 -> 6
+-- Death Weapons cost from 8 -> 5
 -- Fear cost from 9 -> 8
 -- Forest Survival cost from 2 -> 1
 -- Poison Weapons cost from 4 -> 3
@@ -69,8 +70,8 @@
 #end
 
 
-#selectbless "Wasteland Survival" -- 5 -> 1
-#cost1 0 -- 4 -> 0
+#selectbless "Wasteland Survival" -- 2 -> 1
+#cost1 0 -- 1 -> 0
 #end
 
 #selectbless "Death Explosion" -- 5 -> 6
@@ -82,8 +83,8 @@
 #cost0 5 -- 6 -> 5
 #end
 
-#selectbless "Flaming Weapons" -- 7 -> 6
-#cost0 6 -- 7 -> 6
+#selectbless "Flaming Weapons" -- 7 -> 5
+#cost0 5 -- 7 -> 5
 #end
 
 #selectbless "Awareness" -- 3 -> 2
@@ -127,8 +128,8 @@
 #cost1 2 --  -> 2
 #end
 
-#selectbless "Vitriol Weapons" -- 8 -> 7
-#cost0 5 -- 6 -> 5
+#selectbless "Vitriol Weapons" -- 8 -> 6
+#cost0 4 -- 6 -> 4
 #end
 
 #selectbless "Water Breathing" -- 6 -> 2
@@ -160,13 +161,17 @@
 #cost0 6 -- 7 -> 6
 #end
 
+#selectbless "Withering Weapons" -- 4 -> 3
+#cost0 3 -- 4 -> 3
+#end
+
 #selectbless "Reanimators" -- 7 -> 6
 #cost0 4 -- 7 -> 4
 #cost1 2 --  -> 2
 #end
 
-#selectbless "Death Weapons" -- 8 -> 6
-#cost0 6 -- 8 -> 6
+#selectbless "Death Weapons" -- 8 -> 5
+#cost0 5 -- 8 -> 5
 #end
 
 #selectbless "Fear" -- 9 -> 8
@@ -109408,6 +109413,10 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #path 6
 #look 3
+#homemon 3363 -- red
+#homemon 3364 -- black
+#homemon 3365 -- green
+#homemon 3366 -- blue
 #homemon 3307
 #homemon 3308
 #homemon 3319
@@ -110826,6 +110835,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 3
 #look 8
+#homemon 2512 -- Cave Cow
+#homemon 3142 -- Great Mouflon
 #homemon 8692 -- Gaueko
 #homemon 8698 -- Gizotso
 #homemon 8819 -- Intxisua
@@ -112446,6 +112457,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 7
 #look 4
+#homemon 2929 -- Swan
 #homemon 1807 -- s boar
 #homemon 7561 -- s swan
 #homemon 3980 -- morvarc'h
@@ -114189,6 +114201,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 0
 #look 5
+#homemon 3142 -- Great Mouflon
 #homemon 3119 -- spartae
 #homemon 3210 -- lampad
 #homemon 7700 -- lycaon
