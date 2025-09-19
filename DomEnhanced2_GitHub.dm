@@ -17973,7 +17973,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #name "Spirit Dancer"
 #spr1 "gondwana/dancer.tga"
 #spr2 "gondwana/dancer2.tga"
-#descr "The Shamans of Gondwana perform elaborate dances that allow them to enter a powerful trance state. These dances can last for many hours and are accompanied by specially trained Spirit Dancers. These women perform special rhythmic songs and dances to aid the Shaman in reaching the spirit world. Spirit Dancers will automatically enter chorus communions in combat, ready to lend their strength to the shamans and are otherwise inactive during the battle. They will dance until they collapse, exhausted and will then leave the communion."
+#descr "The Shamans of Gondwana perform elaborate dances that allow them to enter a powerful trance state. These dances can last for many hours and are accompanied by specially trained Spirit Dancers. These women perform special rhythmic songs and dances to aid the Shaman in reaching the spirit world. Spirit Dancers will automatically enter chorus communions in combat, ready to lend their strength to the shamans and are otherwise inactive during the battle. They will dance until they collapse, exhausted and will then leave the communion. Cost 32 RP."
 #gcost 50
 #reclimit 1
 #mr 12
@@ -22397,7 +22397,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr2 "juhera/ghul_cavalry2.tga"
 #unmountedspr1 "juhera/ghul_warrior1.tga"
 #unmountedspr2 "juhera/ghul_warrior2.tga"
-#descr "The gigantic Dust Scorpions are fierce beasts, quick and aggressive with a murderously lethal sting. Naturally, the Ghuls of the desert thought to tame them and ride them into battle. They quickly learned that it was wise to dock the tails of the scorpions, and instead adorn their lances with the severed stingers of their mounts. The Ghuls sometimes think twice when charging into the battle lines, but the scorpions are tough and more than capable of standing their ground."
+#descr "The gigantic Dust Scorpions are fierce beasts, quick and aggressive with a murderously lethal sting. Naturally, the Ghuls of the desert thought to tame them and ride them into battle. They quickly learned that it was wise to dock the tails of the scorpions, and instead adorn their lances with the severed stingers of their mounts. The Ghuls sometimes think twice when charging into the battle lines, but the scorpions are tough and more than capable of standing their ground. Cost 40 RP."
 #rcost 1
 #ressize 2
 #gcost 65
@@ -34245,7 +34245,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #clearweapons
 #cleararmor
 #name "Varangian Guard"
-#descr "The Varangian Guard are elite Vanir warriors from Vanarus that are employed by the Emperor of Pythium as his personal guard. They have pledged their lives to their new ruler and serve him with utmost loyalty. Like all Vanir they are gifted with supernatural abilities and can cloak their appearance. Most of the Varangian Guard are sequestered at the Imperial Palace, however occasionally the Emperor will release a few to carry out important tasks around the Empire."
+#descr "The Varangian Guard are elite Vanir warriors from Vanarus that are employed by the Emperor of Pythium as his personal guard. They have pledged their lives to their new ruler and serve him with utmost loyalty. Like all Vanir they are gifted with supernatural abilities and can cloak their appearance. Most of the Varangian Guard are sequestered at the Imperial Palace, however occasionally the Emperor will release a few to carry out important tasks around the Empire. Cost 29 RP."
 #gcost 10035
 #mor 13
 #att 13
@@ -36640,7 +36640,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copystats 1358  -- Monster Toad
 #copyspr 1358  -- Monster Toad
 #name "Sacred Temple Toad"
-#descr "Since the coming of the Atlantians Frogs and Toads have assumed new meaning in Mictlan. In the High Temple of Rain great sacred toads are kept and fed with slaves during important festivals. In times of war they are released and herded by the priests against the enemies of the faith. Monster toads are horrible creatures that spew forth noxious vapors and trample lesser beings."
+#descr "Since the coming of the Atlantians Frogs and Toads have assumed new meaning in Mictlan. In the High Temple of Rain great sacred toads are kept and fed with slaves during important festivals. In times of war they are released and herded by the priests against the enemies of the faith. Monster toads are horrible creatures that spew forth noxious vapors and trample lesser beings. Cost 22 RP."
 #gcost 60
 #rpcost 22
 #reclimit 3
@@ -42190,7 +42190,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "fennoscandia/fstroll.tga"
 #spr2 "fennoscandia/fstroll2.tga"
 #name "Troll"
-#descr "The land of Fennoscandia is home to many tribal groups. The Troldfolk tribes live in the forested regions and can be dangerous to lone travellers. Trolls are ugly and slow witted, however they are strong and can regenerate wounds. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly.  Trolls can survive on a diet of sticks and stones although they prefer to supplement their diet with fresh meat."
+#descr "The land of Fennoscandia is home to many tribal groups. The Troldfolk tribes live in the forested regions and can be dangerous to lone travellers. Trolls are ugly and slow witted, however they are strong and can regenerate wounds. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly.  Trolls can survive on a diet of sticks and stones although they prefer to supplement their diet with fresh meat. Cost 25 RP."
 #gcost 35
 #rpcost 25
 #coldres 5
@@ -42207,7 +42207,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "fennoscandia/fstusser.tga"
 #spr2 "fennoscandia/fstusser2.tga"
 #name "Tusser"
-#descr "The Tusser are the strongest and most powerful tribe of the Troldfolk and have taken up residence near the greatest settlements of the Finnaithae. They have managed to acquire armor of iron and now rule over the other Troldfolk tribes. In battle the Tusser field armored trolls to devastate the enemy. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly."
+#descr "The Tusser are the strongest and most powerful tribe of the Troldfolk and have taken up residence near the greatest settlements of the Finnaithae. They have managed to acquire armor of iron and now rule over the other Troldfolk tribes. In battle the Tusser field armored trolls to devastate the enemy. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly. Cost 35 RP."
 #gcost 45
 #att 11
 #def 10
@@ -51071,7 +51071,7 @@ Dragon Priests can be recruited in any land fort."
 #newmonster 6602
 #copystats 6599 -- Bow Turquoise
 #name "Bare Rider"
-#descr "After their initation ceremony, the most skilled fighters among the tribes are trained in horsemanship. They adorn their equipment with turquoise ornaments and feathers to draw attention to themselves in battle and increase their renown. The bravest of all ride into battle without any armor, trusting the spirits to protect them from harm. The sight of a Bare Rider fills other warriors with confidence and will boost their morale. Warriors that perform great acts of bravery may be awarded with rare alabaster shells, greatly increasing their renown and marking them as sacred among the tribe, and Bare Riders are much more likely than others to be awarded. Like all riders of Nihuala, Bare Riders earn experience faster than other troops."
+#descr "After their initation ceremony, the most skilled fighters among the tribes are trained in horsemanship. They adorn their equipment with turquoise ornaments and feathers to draw attention to themselves in battle and increase their renown. The bravest of all ride into battle without any armor, trusting the spirits to protect them from harm. The sight of a Bare Rider fills other warriors with confidence and will boost their morale. Warriors that perform great acts of bravery may be awarded with rare alabaster shells, greatly increasing their renown and marking them as sacred among the tribe, and Bare Riders are much more likely than others to be awarded. Like all riders of Nihuala, Bare Riders earn experience faster than other troops. Cost 36 RP."
 #spr1 "nihuala/barerider.tga"
 #spr2 "nihuala/barerider_2.tga"
 #unmountedspr1 "nihuala/un_axeturquoise.tga"
@@ -60528,8 +60528,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #spr1 "blue_bantaytubig/ibingan1.png"
 #spr2 "blue_bantaytubig/ibingan2.png"
 #name "Ibingan"
-#descr "A huge and venomous, many-horned red serpent with a prominent crest on its head and dorsal fin on its back. Ibingan guard the cave of the Kataw, stationed at the mouth of the cave and crushing intruders with their powerful tail. Ibingan are sacred in Bantay Tubig and are sometimes used in times of war. Ibingan can traverse on land akin to a snake, but it is not their home and they move much slower.
-Cost 50 recruitment points."
+#descr "A huge and venomous, many-horned red serpent with a prominent crest on its head and dorsal fin on its back. Ibingan guard the cave of the Kataw, stationed at the mouth of the cave and crushing intruders with their powerful tail. Ibingan are sacred in Bantay Tubig and are sometimes used in times of war. Ibingan can traverse on land akin to a snake, but it is not their home and they move much slower. Cost 50 RP."
 #gcost 10118
 #rpcost 50
 #rcost 1
@@ -61916,9 +61915,7 @@ Cost 50 recruitment points."
 --Colossi Arbalest
 #newmonster 9610
 #name "Colossi Arbalest"
-#descr "When the Colossi rediscovered the secrets of Bronze and Gold that were lost with the fall of Mekone, some smiths were content to recreate the arms and armour of the Gigantes, but many saw new potential in these ancient techniques. The Golden Arbalest emerged from this experimentation: a crossbow of both immense power and speed, and its creation was instrumental in establishing the dominance of Houssa over the Seven Kingdoms. When the Matriarchs consolidated their hold over Houssa, the creation of arbalests was banned. Even with the Awakening of the God, few are willing to break this prohibition. All military units in the employ of Houssa can draw their lineage back to the city's own local army. As the city sits precariously between two rivers, the ability to effectively cross a river, even while accompanied by supplies and horses, is a critical part of the training of any professional soldier.
-
-Costs 29 Recruitment points."
+#descr "When the Colossi rediscovered the secrets of Bronze and Gold that were lost with the fall of Mekone, some smiths were content to recreate the arms and armour of the Gigantes, but many saw new potential in these ancient techniques. The Golden Arbalest emerged from this experimentation: a crossbow of both immense power and speed, and its creation was instrumental in establishing the dominance of Houssa over the Seven Kingdoms. When the Matriarchs consolidated their hold over Houssa, the creation of arbalests was banned. Even with the Awakening of the God, few are willing to break this prohibition. All military units in the employ of Houssa can draw their lineage back to the city's own local army. As the city sits precariously between two rivers, the ability to effectively cross a river, even while accompanied by supplies and horses, is a critical part of the training of any professional soldier. Cost 29 RP."
 #spr1 "houssa/9610_1_colossi_arbalest.png"
 #spr2 "houssa/9610_2_colossi_arbalest.png"
 #gcost 10035
@@ -86064,6 +86061,10 @@ Initiates of the Deep can be recruited in any land fort."
 #montag 1052
 #end
 
+#selectmonster 538 -- Theurg Communicant
+#descr "The Theurgs of Pythium are masters of arcane communion. This communion allows them to cast more powerful spells in combat. Theurg Communicants are acolytes trained in the Theurgical arts. They lack the arcane skills of true Theurgs, but are able to strengthen the magic of senior Theurgs by acting as communion slaves. The Communicants automatically cast the Communion Slave spell before combat, ready to lend their strength to the senior Theurgs. Cost 31 RP."
+#end
+
 #selectmonster 540  -- Menopathos, White Minotaur
 #hp 40  -- base 30
 #prot 7  -- base 5
@@ -87101,6 +87102,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 845  -- Niefel Giant
+#descr "A Niefel Giant is a frost giant descended from the old Rimtursar, primordial giants sprung from the glaciers of Niefelheim, land of Eternal Frost. The Rimtursar were hunted and slain by a God of Thunder, but their descendants still linger. Niefel Giants are constantly surrounded by an icy wind and their bodies temper and strengthen in cold lands. Being descendants of the primordial Rimtursar, thunder and lightning still recognize their old quarry, and the Niefel Giants greatly fear the wielders of lightning bolts. Cost 39 RP."
 #mountainsurvival
 #clearweapons
 #weapon 1843 -- Rime Axe
@@ -89287,6 +89289,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #end
 
 #selectmonster 1831 -- Hydra
+#descr "In the misty swamps of Pythia dwell the huge, noxious fume breathing, many-headed serpents of legend, hydras. The regenerative powers of the hydra are truly formidable and should one of its heads be cut off, it will regrow within hours. The bite and breath of a hydra is poisonous. Hydras are commonly used in the pits and arenas of Pythium and are deeply feared by soldiers and gladiators alike. Cost 50 RP."
 #prot 13 -- +5
 #str 18 -- +2
 #twiceborn 7245 -- necrophidian
@@ -89317,6 +89320,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #end
 
 #selectmonster 1850 -- Hydra S
+#descr "In the misty swamps of Pythia dwell the huge, noxious fume breathing, many-headed serpents of legend, hydras. The regenerative powers of the hydra are truly formidable and should one of its heads be cut off, it will regrow within hours. The bite and breath of a hydra is poisonous. Hydras are commonly used in the pits and arenas of Pythium and are deeply feared by soldiers and gladiators alike. The Serpent Cult keeps them as guardians of their temples and they are considered sacred. Cost 50 RP."
 #prot 13 -- +5
 #str 18 -- +2
 #twiceborn 7245 -- necrophidian
@@ -89880,6 +89884,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectmonster 2237  -- Sobek Sacred Guard
+#descr "From the depths of the temple marsh a mythic race of giants have returned as promised in ancient murals. Called Sobeks, these giants never stop growing and the oldest and strongest of them have received sacred status and are given special attention and training at the great temple. Here the Sobek Sacred Guard perform the execution of criminals and feed on the remains in a gruesome spectacle witnessed by the rich and the faithful to remind them of the final judgment in the underworld. The Sobeks are greatly feared by the herbivore C'tissians, but the predator lizards view their arrival as a sign of a promised future. Cost 33 RP."
 #reclimit 3
 #end
 
@@ -90385,8 +90390,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #reclimit 3
 #rpcost 28
 #gcost 40
-#descr "Since time immemorial pale amphibians with external gills have lived in the watery caverns of the deeper earth. Some claim that the Olms are an earlier form of the Pale Ones. When Olms grow old they grow large and wise and whatever their origin the Pale Ones of Agartha revere them and consider them sacred. For ages the Olms have lived apart from the Pale Ones, curiously observing the emerging civilization from their underground streams and ponds. But this changed when one of their numbers befriended Emberstream, an Agarthan Oracle of Subterranean Waters. Deepthought, oldest and wisest among Olms had previously only been encountered on rare occasions. When Deepthought allied itself with the Pale Ones, so did its kin, and now the Olms of the deeper earth and their Sages aid the Oracles of Agartha. Olms communicate wordlessly and can project images and emotions to other sentient beings. This power can also be used to overwhelm and harm an enemy.
-Cost 28 RP."
+#descr "Since time immemorial pale amphibians with external gills have lived in the watery caverns of the deeper earth. Some claim that the Olms are an earlier form of the Pale Ones. When Olms grow old they grow large and wise and whatever their origin the Pale Ones of Agartha revere them and consider them sacred. For ages the Olms have lived apart from the Pale Ones, curiously observing the emerging civilization from their underground streams and ponds. But this changed when one of their numbers befriended Emberstream, an Agarthan Oracle of Subterranean Waters. Deepthought, oldest and wisest among Olms had previously only been encountered on rare occasions. When Deepthought allied itself with the Pale Ones, so did its kin, and now the Olms of the deeper earth and their Sages aid the Oracles of Agartha. Olms communicate wordlessly and can project images and emotions to other sentient beings. This power can also be used to overwhelm and harm an enemy. Cost 28 RP."
 #end
 
 #selectmonster 2494  -- Member of the Closed Council, Moss Agate
@@ -90594,6 +90598,10 @@ Cost 28 RP."
 #bodyguard 4
 #end
 
+#selectmonster 2689 -- Xibalban Scoprion
+#descr "The dark realm of Xibalba is home to many horrors. Among the more numerous are scorpions of all sizes. The Zotz can use their silent shrieks to master the simple minds of the Scorpions. The largest and most ancient of the creatures are considered sacred and are summoned forth by the Chilan cave priests. Cost 15 RP."
+#end
+
 
 #selectmonster 2659  -- Coya
 #enchrebate50 274 -- Ench74  -- Lunar Potency
@@ -90653,6 +90661,14 @@ Cost 28 RP."
 
 #selectmonster 2731
 #rpcost 24
+#end
+
+#selectmonster 2734 -- Zotz Warrior
+#descr "Zotz, the bat people of Xibalba, breed quickly and have lifespans far surpassing humans. When their cavernous realm was flooded the remaining Zotz settled in the dense forests of the surface world. They multiplied and rebuilt their colonies, but their numbers are limited compared to the swarming colonies of earlier ages. When the Muuch arrived it became evident that the toad people didn't pose any threat to the Zotz' life in the forest panoply. After a while the two species began to trade and eventually a symbiotic alliance developed. Now the surface colonies of Xibalba are composed of brown Muuch and their Zotz allies. Zotz are sensitive to cold and go into torpor if exposed to cold climates. Since they are almost blind and their perceptions are short-ranged they are not very efficient at patrolling. They use light obsidian tipped lances or two-handed obsidian club swords. Cost 6 RP."
+#end
+
+#selectmonster 2735 -- Zotz Warrior
+#descr "Zotz, the bat people of Xibalba, breed quickly and have lifespans far surpassing humans. When their cavernous realm was flooded the remaining Zotz settled in the dense forests of the surface world. They multiplied and rebuilt their colonies, but their numbers are limited compared to the swarming colonies of earlier ages. When the Muuch arrived it became evident that the toad people didn't pose any threat to the Zotz' life in the forest panoply. After a while the two species began to trade and eventually a symbiotic alliance developed. Now the surface colonies of Xibalba are composed of brown Muuch and their Zotz allies. Zotz are sensitive to cold and go into torpor if exposed to cold climates. Since they are almost blind and their perceptions are short-ranged they are not very efficient at patrolling. They use light obsidian tipped lances or two-handed obsidian club swords. Cost 6 RP."
 #end
 
 
@@ -91228,12 +91244,14 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 #selectmonster 2963 -- Uruk Mushussu Chariot Rider
+#descr "Since the founding of the Great Temple of the Moon old traditions have become less prominent. The old faith revering the forces of nature is all but forgotten. Not even the Mushussus are considered sacred anymore. But the dragon-kin have always been used in warfare, and regardless of the loss of their sacred status they are still formidable beasts of war. Now they are trained to pull chariots and obey their Enkidu charioteers. Each Mushussu is cared for by a retinue of trainers and caretakers and if the charioteer is killed in battle a new one will replace them after the battle. Cost 56 RP."
 #cleararmor
 #armor 101 -- bronze hauberk
 #armor 135 -- bronze cap
 #end
 
 #selectmonster 2962  -- Mushussu
+#descr "The Mushussu is a wingless dragon of the swamps of Ur. It is a guardian being of the kingdom and is sacred to the Enkidus. It has a scaled body, the paws of a lion, the hindlegs of an eagle and a serpent tail. Some claim it is the most ancient of all dragon-kin. Cost 50 RP."
 #reclimit 3
 #drake
 #twiceborn 6644 -- Wight Beast
@@ -91295,6 +91313,18 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #incunrest -50
 #end
 
+#selectmonster 3109 -- Gigante Ekdromos
+#descr "The Gigantes of Mekone consider themselves superior to all and have used their might to enslave lesser men. Mekone is a martial society, where combat prowess and strength are the primary virtues. Trade and lesser crafts are condemned as unworthy to the Gigantes and human slaves and servants make up most of the menial work force. The Gigantes are trained from a young age to become formidable warriors armed with gleaming weapons forged by the Elder Cyclopes. The Ekdromoi are lightly armed hoplites trained to move with speed and leave and enter formations when needed. They often serve as flank guards to the hoplite phalanx. Cost 25 RP."
+#end
+
+#selectmonster 3110 -- Gigante Hoplite
+#descr "The Gigantes of Mekone consider themselves superior to all. Their Hoplites are of incomparable might and they have challenged the gods themselves. Mekone is a martial society, where combat prowess and strength are the primary virtues. Trade and lesser crafts are condemned as unworthy to the Gigantes and human slaves and servants make up most of the menial work force. The Gigantes are trained from a young age to become formidable warriors armed with gleaming weapons forged by the Elder Cyclopes. The hoplites don heavy armors of gleaming bronze and fight in dense formations. Cost 25 RP."
+#end
+
+#selectmonster 3120 -- Discobolus
+#descr "Strength and athletic prowess are highly valued among the Gigantes of Mekone and sports are popular among men and women. While most Gigantes are trained from birth to become skilled soldiers, there are those who give up their martial training to become professional athletes, but now, when the war against gods has begun, many athletes join the armies once more. Discoboloi are athletes that are skilled at discus throwing. Like all athletes they are also trained in pankration, unarmed combat, but their main use is to bring ranged weapons into battle. Cost 19 RP."
+#end
+
 #selectmonster 3114  -- Geronte (Mekone mages)
 #startage 0
 #older 90
@@ -91331,6 +91361,7 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 #selectmonster 3140  -- Gigante
+#descr "The Phlegran Gigantes are the descendants of the Gigantes of Mekone, who once declared war upon the gods of men. Punished for their hubris the Gigantes were cursed by a celestial decree. They have grown larger than both the giants of Jotunheim and Ashdod, but they have lost much of the discipline and skills of earlier times and their bodies show signs of the curse. The curse has also made them violent and easy to anger. Gigantes are frightening to behold with long hair and serpentine scales covering their legs, and their bodies have become resistant to heat and poison. While their Tyrants still wear armaments crafted by the Elder Cyclopes, most Gigante Warriors wear simple armor of leather and metal scales. Gigante Warriors are arrogant and proud and never take command from human-sized generals. Cost 44 RP."
 #twiceborn 7231 -- Wight Giant
 #incunrest 5 -- 10 -> 5
 #end
@@ -91397,6 +91428,10 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #researchbonus -3
 #end
 
+#selectmonster 3224  -- Cyclope Soldier
+#descr "In earlier times the Younger Cyclopes lived pastoral lives herding mouflon sheep on the gentle slopes of the Phlegran hills, but even during these times they sometimes joined the armies of the Tyrants. They made themselves a name as skilled, albeit under-equipped warriors. When the Tyrants and Gigantes of Phlegra degenerated, became more monstrous, and finally disappeared, their control over the kingdom dwindled. In practice the human population slowly became masters of the kingdom and the Cyclopes were marginalized. With growing hubris mankind rebelled against their masters and tried to take control over the capital Telepylos. They were almost successful, but their attempt was thwarted by the Cyclopes. The Cyclope Smiths shackled under the fortress were released by the last Tyrant and the Cyclopes were rewarded with influence and power. The Younger Cyclopes were given arms of cyclopean manufacture and became a noble warrior-caste aloof from the human population. The cyclopean armors are not as splendid as the hoplite armors once used by the Gigantes of Mekone, but they are superior to most other armors. Cyclopes are known for their fondness for throwing things, large and small. In this age when they have been equipped with armaments forged by their greater kin, javelins have replaced the boulders carried by the warriors of earlier times. Cost 17 RP."
+#end
+
 #selectmonster 3225  -- Cyclope
 #twiceborn 7231 -- Wight Giant
 #gcost 10115
@@ -91451,6 +91486,15 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 
 #selectmonster 3342 -- Jann Guard
 #bodyguard 4
+#end
+
+#selectmonster 3280 -- Mirror Guard
+#descr "In front of the Sublime Palace and the Onyx Court there is a stairway of sardonyx and porphyry. At the top of the stairs there is a Great Mirror of seven precious stones. From the mirror the sages of the kingdom observe the surrounding lands and alert the marshals if military action is required. The mirror is at all times guarded by soldiers of a priestly order, The Mirror Guard. These are the elites of the soldier priests and they don heavy armor, as they are not expected to leave the capital for prolonged periods of time. Cost 21 RP."
+#bodyguard 3
+#end
+
+#selectmonster 3281 -- Baculite
+#descr "In Magnificent Ind every soldier is a priest. Some soldiers however are more than mere priests. The Baculites are soldier priests of a superior order wielding a sacred Baculus blessed by the Lord. A mere touch by the sacred staff will strike heretics with the righteous wrath of the Lord. Cost 31 RP."
 #end
 
 #selectmonster 3293 -- cannibal, anywhere, 9g
@@ -91620,6 +91664,7 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 #selectmonster 3463  -- Jinn Warrior
+#descr "Jinnun are spiritual beings born from Smokeless Flame in a distant past. They replaced the Hinn and Binn during the reign of a previous Pantokrator. They are naturally invisible and ethereal, but can take physical form when they interact with men. The Jinnun live in Ubar, a magic desert kingdom of marvelous riches. Once the City of Brass was the capital of the Jinnun, but the gates were sealed by a divine decree and the City was hidden from the eyes of men. All that was left was windswept pillars and a city covered in sand, known to man as Iram of a Thousand Pillars. Here the few remaining Jinnun and their human servants gather and wait for the seals to break. The City of Brass once fielded armies of Jinnun armed with enchanted weapons. These Jinn Warriors now follow the Jinn Emirs of Iram, waiting for the Gates of Brass to open and the war upon mankind restarted so that magic can be restored to the world. There are many Jinn races with different abilities and powers, but they are all born from Smokeless Flame and therefore strongly attuned to magic, ethereal and invisible unless they wish to be seen. Jinnun are vulnerable to iron and salt and the Jinn Warriors of Ubar use armaments of bronze. Cost 31 RP."
 #reclimit 5
 #gcost 10060
 #end
@@ -91654,6 +91699,7 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 #selectmonster 3467  -- Guardian of the Forbidden Chamber
+#descr "The Harem Guards, the Guardians of the Forbidden Chambers, are elite warriors guarding the inner chambers of the Ifrit Sultans' palaces. They are the personal bodyguards of the Sultans and their Houri concubines, and they rarely venture far from the blessed gardens of Jannah. Being entrusted with the personal safety of the Sultans and their concubines they are given enchanted armaments otherwise only used by the sacred Ifrit Warriors. Cost 37 RP."
 #reclimit 3
 #bodyguard 5
 #end
