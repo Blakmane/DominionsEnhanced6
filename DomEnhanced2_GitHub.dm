@@ -3000,53 +3000,73 @@
 #unrepel -- Can not be repelled
 #end
 
--- decay small
-#newweapon 1809
-#name "Touch of Decay"
+#newweapon 1810 -- decay MRNH
+#name "Decay"
 #dt_aff
-#dmg 256
-#att 5
-#len 5
-#melee50
-#undeadimmune
-#inanimateimmune
-#nostr
-#bonus
-#norepel
-#unrepel
-#mrnegateseasily
+#dmg 256 -- Decay
 #magic
-#explspr 10155
+#nostr
+--#hardmrneg
+#mrnegates
+#undeadimmune
 #end
 
+
+#newweapon 1809 -- decay bite
+#copyweapon 20 -- Bite
+#name "Bite"
+#secondaryeffect 1810 -- Decay MRNH
+#end
+
+
+
+-- decay small
+--#newweapon 1809
+--#name "Touch of Decay"
+--#dt_aff
+--#dmg 256
+--#att 5
+--#len 5
+--#melee50
+--#undeadimmune
+--#inanimateimmune
+--#nostr
+--#bonus
+--#norepel
+--#unrepel
+--#mrnegateseasily
+--#magic
+--#explspr 10155
+--#end
+
 -- decay aoe medium
-#newweapon 1810
+--#newweapon 1810
+--#name "Aura of Decay"
+--#dt_aff
+--#dmg 256
+--#att 5
+--#len 5
+--#aoe 1
+--#melee50
+--#undeadimmune
+--#inanimateimmune
+--#nostr
+--#bonus
+--#norepel
+--#unrepel
+--#mrnegateseasily
+--#magic
+--#explspr 10155
+--#end
+
+-- decay aoe large
+#newweapon 1811
 #name "Aura of Decay"
 #dt_aff
 #dmg 256
 #att 5
 #len 5
-#aoe 1
-#melee50
-#undeadimmune
-#inanimateimmune
-#nostr
-#bonus
-#norepel
-#unrepel
-#mrnegateseasily
-#magic
-#explspr 10155
-#end
-
--- decay aoe large
-#newweapon 1811
-#name "Large Aura of Decay"
-#dt_aff
-#dmg 256
-#att 5
-#len 5
-#aoe 5
+#aoe 4
 #melee50
 #undeadimmune
 #inanimateimmune
@@ -3847,6 +3867,7 @@
 #copyweapon 645 -- Bronze sword
 #name "Fossilized Bill"
 #bonus
+#secondaryeffect 1810 -- Decay MRNH
 #end
 
 #newweapon 1896 -- Magic Innate Tentacle
@@ -6535,6 +6556,7 @@
 #older 10
 #weapon 671  -- Stone Dagger
 #weapon 671  -- Stone Dagger
+#weapon 1875 -- Wolf Bite
 #armor 10  -- Leather Hauberk
 #armor 120  -- Leather Cap
 #maxage 50
@@ -22931,6 +22953,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #spr2 "juhera/camel2.tga"
 #mapmove 20
 #mr 7
+#armor 559 -- saddle armor
 #end
 
 #newmonster 7176
@@ -41098,7 +41121,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #custommagic 9088 10  -- 10% FAWN
 #shapechange 8045
 #coldrec 1
-#weapon 147  -- Spray Poison
+--#weapon 147  -- Spray Poison
+#weapon 569  -- Drake Gas
 #weapon 65  -- Venomous Claw
 #weapon 29  -- Bite
 #weapon 532  -- Tail Sweep
@@ -42381,6 +42405,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "fennoscandia/fsguopas2.tga"
 #name "Guopas"
 #descr "The Guopas is a lesser priest, shaman and speaker with the dead. Each carries a ceremonial rune drum crafted by the Guopas during his training. The rhythmic drumming is used to induce a trance state and free the soul from the body. In this state the soul can speak with the souls of the dead to gain insights into the world of the living. As with all priests of Fennoscandia, the Guopas will call to the spirits when a battle is joined and a spirit animal may answer the call."
+#gcost 130
 #rpcost 10
 #hp 12
 #mor 12
@@ -42483,6 +42508,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "fennoscandia/fsnaejttie2.tga"
 #name "Naejttie"
 #descr "A Naejttie is a priest-shaman of the Sea Sami tribes. Like the Noaidis they use traditional rhythmic singing to enter a trance state to free their soul to enter the spirit realm. They are attuned to the waters and the spirit realm and aid the tribe in fishing and navigating the treacherous sea. Naejttie are skilled navigators and can bring warriors across the ocean. It is said they cannot be burned as any fire near to them is smothered as if doused in water. As with all priests of Fennoscandia, a Naejttie will call to the spirits when a battle is joined and a spirit animal may answer the call."
+#gcost 330
 #rpcost 10
 #hp 12
 #mr 15
@@ -42516,7 +42542,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copyspr 1380  -- Great Hawk
 #name "Gonagas"
 #descr "A Gonagas is a priest-shaman of the Mountain Sami tribes. They possess spiritual knowledge enabling them to take the form of a bird to soar above the earth. Due to this they are accorded greater respect than other tribal shamen. They are attuned to the mountains and the skies and aid the tribe in ensuring good weather and safe passage. As with all priests of Fennoscandia, a Gonagas will call to the spirits when a battle is joined and a spirit animal may answer the call."
-#gcost 290
+#gcost 260
 #mr 15
 #mor 12
 #coldres 7
@@ -42538,7 +42564,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "fennoscandia/fsgonagas2.tga"
 #name "Gonagas"
 #descr "A Gonagas is a priest-shaman of the Mountain Sami tribes. They possess spiritual knowledge enabling them to take the form of a bird to soar above the earth. Due to this they are accorded greater respect than other tribal shamen. They are attuned to the mountains and the skies and aid the tribe in ensuring good weather and safe passage. As with all priests of Fennoscandia, a Gonagas will call to the spirits when a battle is joined and a spirit animal may answer the call."
-#gcost 290
+#gcost 260
 #rpcost 10
 #hp 12
 #mr 15
@@ -48121,7 +48147,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #mountedspr1 "vanilla/un_lizardchariotholy1.tga"
 #mountedspr2 "vanilla/un_lizardchariotholy2.tga"
 #name "Temple Charioteer"
-#descr "Ceremonies and parades are common in the sacred kingdom and gilded, lizard-drawn chariots can often be seen in the Temple City. The chariots are used in warfare as well as in parades. With scythed wheels, the chariot is mainly an offensive weapon. Its charge causes tremendous damage to lightly armored troops. Temple Charioteers are raised from hatching inside the Temple City as sacred warriors and subordinates to an heir, and reside in the Temple City until called to war."
+#descr "Ceremonies and parades are common in the sacred kingdom and gilded, lizard-drawn chariots can often be seen in the Temple City. The chariots are used in warfare as well as in parades. With scythed wheels, the chariot is mainly an offensive weapon. Its charge causes tremendous damage to lightly armored troops. Temple Charioteers are raised from hatching inside the Temple City as sacred warriors and subordinates to an heir, and reside in the Temple City until called to war. Cost 56 RP."
 #prot 6
 --#rpcost 49 -- 62
 #rpcost 41 -- 56
@@ -56863,6 +56889,184 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #end
 
 
+-- Thram'zu Bacht ascension form p1 base
+#newmonster 8719
+#spr1 "blue_dirgen/blue_thramzubachtf1.tga"
+#spr2 "blue_dirgen/blue_thramzubachtf1.tga"
+#name "Thram'zu Bacht"
+#descr "The Thram'zu are a cult of Deep Ones practicing necromancy on the abyssal plain. The Thram'zu Bacht is a middle member of the Thram'zu cult, well practiced in the cult's magic of death and decay. It is common for Kurvant or Sothul to hire them for their power when needed. Their cult is highly secretive, their goals known only to them, however their power is quite useful and as such the Kurvant are willing to overlook this.
+Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishbones every month while underwater."
+#rpcost 2
+#rcost 1
+#gcost 300
+#hp 1
+#str 14
+#att 9
+#def 8
+#mor 11
+#prec 8
+#prot 7
+#size 4
+#mr 14
+#coldres 5
+#fireres 5
+#enc 4
+#mapmove 14
+#ap 11
+#eyes 2
+#weapon 7 -- Quarterstaff
+#weapon 20 -- Bite
+#humanoid
+#amphibian
+#maxage 500
+#older -94
+#nametype 117
+#darkvision 100
+#poorleader
+#expertundeadleader
+#clearmagic
+#immortal
+#onebattlespell "Death" -- In the unlikely scenario someone decides to cast this spell the same turn their fort is stormed
+#reformtime 1
+--#firstshape -5768
+#end
+
+-- Thram'zu Bacht ascension form p2 base
+#newmonster 8720
+#copyspr 8719
+#copystats 8719
+#reformtime 1
+#amphibian
+--#firstshape -5769
+#end
+
+-- Thram'zu Bacht ascension form p1 4mo
+#newmonster 9175
+#copyspr 8719
+#copystats 8719
+#reformtime 1
+#amphibian
+#montag 5768
+#montagweight 1
+#end
+
+-- Thram'zu Bacht ascension form p2 4mo
+#newmonster 9176
+#copyspr 8719
+#copystats 8719
+#reformtime 1
+#amphibian
+#firstshape -5770
+#montag 5769
+#montagweight 1
+#end
+
+-- Thram'zu Bacht ascension form p1 5mo
+#newmonster 9177
+#copyspr 8719
+#copystats 8719
+#reformtime 2
+#amphibian
+#montag 5768
+#montagweight 1
+#end
+
+-- Thram'zu Bacht ascension form p2 5mo
+#newmonster 9178
+#copyspr 8719
+#copystats 8719
+#reformtime 2
+#amphibian
+#firstshape -5770
+#montag 5769
+#montagweight 1
+#end
+
+-- Thram'zu Bacht ascension form p1 6mo
+#newmonster 9179
+#copyspr 8719
+#copystats 8719
+#reformtime 3
+#amphibian
+#montag 5768
+#montagweight 2
+#end
+
+-- Thram'zu Bacht ascension form p2 6mo
+#newmonster 9180
+#copyspr 8719
+#copystats 8719
+#reformtime 3
+#amphibian
+#firstshape -5770
+#montag 5769
+#montagweight 2
+#end
+
+-- Thram'zu Bacht ascension form p1 7mo
+#newmonster 9181
+#copyspr 8719
+#copystats 8719
+#reformtime 4
+#amphibian
+#montag 5768
+#montagweight 2
+#end
+
+-- Thram'zu Bacht ascension form p2 7mo
+#newmonster 9182
+#copyspr 8719
+#copystats 8719
+#reformtime 4
+#amphibian
+#firstshape -5770
+#montag 5769
+#montagweight 2
+#end
+
+-- Thram'zu Bacht ascension form p1 8mo
+#newmonster 9183
+#copyspr 8719
+#copystats 8719
+#reformtime 5
+#amphibian
+#montag 5768
+#montagweight 1
+#end
+
+-- Thram'zu Bacht ascension form p2 8mo
+#newmonster 9184
+#copyspr 8719
+#copystats 8719
+#reformtime 5
+#amphibian
+#firstshape -5770
+#montag 5769
+#montagweight 1
+#end
+
+-- Thram'zu Bacht ascension form p1 9mo
+#newmonster 9185
+#copyspr 8719
+#copystats 8719
+#reformtime 6
+#amphibian
+#montag 5768
+#montagweight 1
+#end
+
+-- Thram'zu Bacht ascension form p2 9mo
+#newmonster 9186
+#copyspr 8719
+#copystats 8719
+#reformtime 6
+#amphibian
+#firstshape -5770
+#montag 5769
+#montagweight 1
+#end
+
+
 
 
 
@@ -56926,7 +57130,8 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #descr "A wight mage is the corpse of a necromancer strong enough to avoid death itself. Its dried and leathery body is stronger than it was in life. The wight mage is constantly surrounded by an icy wind."
 #clearweapons
 #weapon 7 -- Quarterstaff
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 20 -- Bite
 #weapon 1811 -- Large decay
 #magicboost 3 -1 -- Earth
 #magicboost 5 1 -- Death
@@ -56940,6 +57145,8 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #descr "A wight mage is the corpse of a necromancer strong enough to avoid death itself. Its dried and leathery body is stronger than it was in life. The wight mage is constantly surrounded by an icy wind."
 #clearweapons
 #weapon 7 -- Quarterstaff
+#weapon 1809 -- Decay Bite
+--#weapon 20 -- Bite
 #weapon 1811 -- Large decay
 #magicboost 5 1 -- Death
 #end
@@ -56952,7 +57159,8 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #descr "A wight mage is the corpse of a necromancer strong enough to avoid death itself. Its dried and leathery body is stronger than it was in life. The wight mage is constantly surrounded by an icy wind."
 #clearweapons
 #weapon 7 -- Quarterstaff
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 20 -- Bite
 #weapon 1811 -- Large decay
 #magicboost 5 1 -- Death
 #magicboost 2 1 -- Water
@@ -57008,7 +57216,8 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #descr "A wight mage is the corpse of a necromancer strong enough to avoid death itself. Its dried and leathery body is stronger than it was in life. The wight mage is constantly surrounded by an icy wind."
 #clearweapons
 #weapon 7 -- Quarterstaff
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 20 -- Bite
 #weapon 1811 -- Large decay
 #magicboost 3 -1 -- Earth
 #poorleader
@@ -57067,7 +57276,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #descr "The Kurval is an official servant to the Kurvant, carrying out tasks handed down to them. They are trained in magic and given much higher status and authority, and expected to govern and maintain order among the small kingdoms in the name of the Kurvant in return, but for the most part they act on their own until given a specific task. They do not rule any kingdoms themselves but they are well respected by the deep ones and the Sothul treat their advice as tantamount to the Kurvant themselves."
 #rpcost 2
 #rcost 1
-#gcost 300
+#gcost 260
 #hp 20
 #str 14
 #att 9
@@ -57333,7 +57542,7 @@ Mothers of the Abyss can be recruited in the capital and all Basalt Cities."
 Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishbones every month while underwater."
 #rpcost 2
 #rcost 1
-#gcost 310
+#gcost 300
 #hp 25
 #str 14
 #att 9
@@ -57380,7 +57589,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishbones every month while underwater."
 #rpcost 2
 #rcost 1
-#gcost 310
+#gcost 300
 #hp 20
 #str 14
 #att 9
@@ -57417,91 +57626,6 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #end
 
 
--- Thram'zu Bacht ascension form
-#newmonster 8719
-#spr1 "blue_dirgen/blue_thramzubachtf1.tga"
-#spr2 "blue_dirgen/blue_thramzubachtf1.tga"
-#name "Thram'zu Bacht"
-#descr "The Thram'zu are a cult of Deep Ones practicing necromancy on the abyssal plain. The Thram'zu Bacht is a middle member of the Thram'zu cult, well practiced in the cult's magic of death and decay. It is common for Kurvant or Sothul to hire them for their power when needed. Their cult is highly secretive, their goals known only to them, however their power is quite useful and as such the Kurvant are willing to overlook this.
-Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishbones every month while underwater."
-#rpcost 2
-#rcost 1
-#gcost 310
-#hp 1
-#str 14
-#att 9
-#def 8
-#mor 11
-#prec 8
-#prot 7
-#size 4
-#mr 14
-#coldres 5
-#fireres 5
-#enc 4
-#mapmove 14
-#ap 11
-#eyes 2
-#weapon 7 -- Quarterstaff
-#weapon 20 -- Bite
-#humanoid
-#amphibian
-#maxage 500
-#older -94
-#nametype 117
-#darkvision 100
-#poorleader
-#expertundeadleader
-#clearmagic
-#immortal
-#reformtime 0 -- Uses the reformtime from one of the firstshapes
-#onebattlespell "Death" -- In the unlikely scenario someone decides to cast this spell the same turn their fort is stormed
-
-#end
-
--- Thram'zu Bacht ascension form part 2
-#newmonster 8720
-#spr1 "blue_dirgen/blue_thramzubachtf1.tga"
-#spr2 "blue_dirgen/blue_thramzubachtf1.tga"
-#name "Thram'zu Bacht"
-#descr "The Thram'zu are a cult of Deep Ones practicing necromancy on the abyssal plain. The Thram'zu Bacht is a middle member of the Thram'zu cult, well practiced in the cult's magic of death and decay. It is common for Kurvant or Sothul to hire them for their power when needed. Their cult is highly secretive, their goals known only to them, however their power is quite useful and as such the Kurvant are willing to overlook this.
-Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishbones every month while underwater."
-#rpcost 2
-#rcost 1
-#gcost 310
-#hp 1
-#str 14
-#att 9
-#def 8
-#mor 11
-#prec 8
-#prot 7
-#size 4
-#mr 14
-#coldres 5
-#fireres 5
-#enc 4
-#mapmove 14
-#ap 11
-#eyes 2
-#weapon 7 -- Quarterstaff
-#weapon 20 -- Bite
-#humanoid
-#amphibian
-#maxage 500
-#older -94
-#nametype 117
-#darkvision 100
-#poorleader
-#expertundeadleader
-#clearmagic
-#immortal
-#reformtime 0 -- Uses the reformtime from one of the firstshapes
-#onebattlespell "Death" -- In the unlikely scenario someone decides to cast this spell the same turn their fort is stormed
-#firstshape -5770
-#end
-
-
 -- Guul Lich land
 #newmonster 8736
 #spr1 "blue_dirgen/blue_guullich1e.tga"
@@ -57530,7 +57654,8 @@ Guul Lich practice the magic of the Thram'zu and can reanimate 15 powerful deep 
 #ap 12
 #eyes 2
 #weapon 7 -- Quarterstaff
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 20 -- Bite
 #weapon 1811 -- Large Aura of Decay
 #humanoid
 #amphibian
@@ -57587,7 +57712,8 @@ Guul Lich practice the magic of the Thram'zu and can reanimate 15 powerful deep 
 #ap 12
 #eyes 2
 #weapon 7 -- Quarterstaff
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 20 -- Bite
 #weapon 1811 -- Large Aura of Decay
 #humanoid
 #amphibian
@@ -57727,6 +57853,7 @@ Thram'zu Guul practice the magic of the Thram'zu and can reanimate 12 powerful d
 
 
 
+
 -- Guul land form, earth
 #newmonster 8721
 #spr1 "blue_dirgen/blue_thramzuguul1.tga"
@@ -57828,8 +57955,21 @@ This Guul has recently returned from the Underworld and cannot become a Lich yet
 
 -- Guul ascension forms
 
--- Guul form 6 months, earth, weight 1
+-- Guul form 4 months, earth, weight 1
 #newmonster 8723
+#copystats 8722
+#copyspr 8722
+#name "Thram'zu Guul"
+#clearmagic
+#magicboost 5 1 -- Death
+#reformtime 1
+#montag 5770
+#growhp 5
+#montagweight 3
+#end
+
+-- Guul form 6 months, earth, weight 2
+#newmonster 8724
 #copystats 8722
 #copyspr 8722
 #name "Thram'zu Guul"
@@ -57838,43 +57978,17 @@ This Guul has recently returned from the Underworld and cannot become a Lich yet
 #reformtime 3
 #montag 5770
 #growhp 5
-#montagweight 1
+#montagweight 2
 #end
 
--- Guul form 8 months, earth, weight 3
-#newmonster 8724
-#copystats 8722
-#copyspr 8722
-#name "Thram'zu Guul"
-#clearmagic
-#magicboost 5 1 -- Death
-#reformtime 5
-#montag 5770
-#growhp 5
-#montagweight 3
-#end
-
--- Guul form 10 months, earth, weight 2
+-- Guul form 8 months, earth, weight 1
 #newmonster 8725
 #copystats 8722
 #copyspr 8722
 #name "Thram'zu Guul"
 #clearmagic
 #magicboost 5 1 -- Death
-#reformtime 7
-#montag 5770
-#growhp 5
-#montagweight 2
-#end
-
--- Guul form 12 months, earth, weight 1
-#newmonster 8726
-#copystats 8722
-#copyspr 8722
-#name "Thram'zu Guul"
-#clearmagic
-#magicboost 5 1 -- Death
-#reformtime 9
+#reformtime 5
 #montag 5770
 #growhp 5
 #montagweight 1
@@ -57983,7 +58097,7 @@ This Guul has recently returned from the Underworld and cannot become a Lich yet
 #lich 8735
 #end
 
--- Guul form 13 months, water, weight 1
+-- Guul form 5 months, water, weight 1
 #newmonster 8729
 #copystats 8728
 #copyspr 8728
@@ -57992,13 +58106,13 @@ This Guul has recently returned from the Underworld and cannot become a Lich yet
 #magicboost 5 1 -- Death
 #magicboost 2 1 -- Water
 #magicboost 3 -1 -- Earth
-#reformtime 10
+#reformtime 2
 #montag 5770
 #growhp 5
 #montagweight 1
 #end
 
--- Guul form 7 months, water, weight 1
+-- Guul form 7 months, water, weight 2
 #newmonster 8730
 #copystats 8728
 #copyspr 8728
@@ -58010,10 +58124,10 @@ This Guul has recently returned from the Underworld and cannot become a Lich yet
 #reformtime 4
 #montag 5770
 #growhp 5
-#montagweight 1
+#montagweight 2
 #end
 
--- Guul form 9 months, water, weight 3
+-- Guul form 9 months, water, weight 1
 #newmonster 8731
 #copystats 8728
 #copyspr 8728
@@ -58025,22 +58139,7 @@ This Guul has recently returned from the Underworld and cannot become a Lich yet
 #reformtime 6
 #montag 5770
 #growhp 5
-#montagweight 3
-#end
-
--- Guul form 11 months, water, weight 2
-#newmonster 8732
-#copystats 8728
-#copyspr 8728
-#name "Thram'zu Guul"
-#clearmagic
-#magicboost 5 1 -- Death
-#magicboost 2 1 -- Water
-#magicboost 3 -1 -- Earth
-#reformtime 8
-#montag 5770
-#growhp 5
-#montagweight 2
+#montagweight 1
 #end
 
 
@@ -58458,8 +58557,9 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #mapmove 20
 #ap 20
 #eyes 2
-#weapon 1809 -- Aura of Decay
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 1809 -- Aura of Decay
+--#weapon 20 -- Bite
 #miscshape
 #maxage 500
 #nametype 105
@@ -58494,8 +58594,9 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #mr 8
 #ap 20
 #clearweapons
-#weapon 1810 -- Aura of Decay
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 1810 -- Aura of Decay
+--#weapon 20 -- Bite
 #landshape 8809
 #montag 5780
 #montagweight 3
@@ -58528,8 +58629,9 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #mr 8
 #ap 20
 #clearweapons
-#weapon 1810 -- Aura of Decay
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 1810 -- Aura of Decay
+--#weapon 20 -- Bite
 #landshape 8811
 #montag 5780 -- Medium fish
 #montagweight 1
@@ -58563,8 +58665,9 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #ap 20
 #poisonarmor 5
 #clearweapons
-#weapon 1810 -- Aura of Decay
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 1810 -- Aura of Decay
+--#weapon 20 -- Bite
 #landshape 8813
 #montag 5780 -- Medium fish
 #montagweight 1
@@ -58597,8 +58700,9 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #mr 8
 #ap 20
 #clearweapons
-#weapon 1810 -- Aura of Decay
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 1810 -- Aura of Decay
+--#weapon 20 -- Bite
 #landshape 8815
 #montag 5780 -- Medium fish
 #montagweight 1
@@ -58647,8 +58751,9 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #mapmove 20
 #ap 20
 #eyes 2
-#weapon 1809 -- Aura of Decay
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 1809 -- Aura of Decay
+--#weapon 20 -- Bite
 #miscshape
 #maxage 500
 #nametype 105
@@ -58681,8 +58786,9 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #mr 8
 #ap 20
 #clearweapons
-#weapon 1810 -- Aura of Decay
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 1810 -- Aura of Decay
+--#weapon 20 -- Bite
 #landshape 8744
 #montag 5772 -- Medium fish
 #montagweight 12
@@ -58715,8 +58821,9 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #mr 8
 #ap 20
 #clearweapons
-#weapon 1810 -- Aura of Decay
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 1810 -- Aura of Decay
+--#weapon 20 -- Bite
 #landshape 8746
 #montag 5772 -- Medium fish
 #montagweight 4
@@ -58750,8 +58857,9 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #ap 20
 #poisonarmor 5
 #clearweapons
-#weapon 1810 -- Aura of Decay
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 1810 -- Aura of Decay
+--#weapon 20 -- Bite
 #landshape 8748
 #montag 5772 -- Medium fish
 #montagweight 4
@@ -58784,8 +58892,9 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #mr 8
 #ap 20
 #clearweapons
-#weapon 1810 -- Aura of Decay
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 1810 -- Aura of Decay
+--#weapon 20 -- Bite
 #landshape 8750
 #montag 5772 -- Medium fish
 #montagweight 4
@@ -58819,7 +58928,8 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #ap 20
 #clearweapons
 #weapon 1811 -- Aura of Decay
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 20 -- Bite
 #landshape 8752
 #montag 5773 -- Large fish
 #montagweight 12
@@ -58887,7 +58997,8 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #ap 20
 #clearweapons
 #weapon 1811 -- Aura of Decay
-#weapon 20 -- Bite
+#weapon 1809 -- Decay Bite
+--#weapon 20 -- Bite
 #landshape 8756
 #montag 5773 -- Large fish
 #montagweight 4
@@ -109909,6 +110020,22 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 8
 #end
 
+#newsite 2568 -- Capital City
+#name "Basalt City "
+#level 0
+#rarity 5
+#path 3 -- earth
+#res 25
+#homemon 8705 -- Spearman
+#homemon 8709 -- Abyssal Warrior
+#homemon 9086 -- Abyssal Pillar Capital
+#homecom 8714 -- Mother
+--#homemon 8705 -- Spearman
+--#homemon 8709 -- Abyssal Warrior
+--#homemon 8710 -- Abyssal Pillar
+--#homecom 8714 -- Mother
+#look 8
+#end
 
 #newsite 2317
 #name "Plain of Dead Leviathans"
@@ -113958,32 +114085,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8942 -- Bentohangin
 #end
 
-#newsite 2568 -- Bantay Tubig Heroes
-#clear
-#name "Bantay Tubig Heroes"
-#rarity 5
-#level 0
-#path 9
-#look 6
-#homecom 
-#end
-
-#newsite 2568 -- Capital City
-#name "Basalt City "
-#level 0
-#rarity 5
-#path 3 -- earth
-#res 25
-#mon 8705 -- Spearman
-#mon 8709 -- Abyssal Warrior
-#mon 9086 -- Abyssal Pillar Capital
-#com 8714 -- Mother
---#homemon 8705 -- Spearman
---#homemon 8709 -- Abyssal Warrior
---#homemon 8710 -- Abyssal Pillar
---#homecom 8714 -- Mother
-#look 8
-#end
+-- 2568 Used by Dirgen Basalt City Capital
 
 #newsite 2569
 #clear
@@ -114644,6 +114746,27 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #popgrowth 20
 #res 25
 #end
+
+#newsite 2610 -- Bantay Tubig Heroes
+#clear
+#name "Bantay Tubig Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 6
+#homecom 
+#end
+
+#newsite 2611 -- Shattered Crystal
+#name "Shattered Crystal"
+#level 0
+#rarity 5
+#path 2 -- Water
+#earthrange 1
+#look 6
+#end
+
+
 
 -- END OF NEW SITES
 
@@ -120112,6 +120235,7 @@ Mechanics: Can create new Basalt Cities in forts, enabling some capital recruits
 #startsite "Kingdom of Dirgen"
 #startsite "Plain of Dead Leviathans"
 #startsite "Basalt City "
+#startsite "Shattered Crystal"
 #futuresite "Guul Cave"
 #futuresite "Thram'zu Fishbones"
 #futuresite "Thram'zu Leviathan and Guul Lich"
@@ -147514,7 +147638,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #name "Return from Unlife"
 #descr "Kill caster"
 #effect 10130
-#damage 8720 -- Thram'zu Bacht ascension form
+#damage -5769 -- Thram'zu Bacht ascension form p2
 #spec 36028797027352704
 #end
 
@@ -147542,7 +147666,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #copyspell 1190 -- Vafur Flames - Must be cast in forted province
 #name "Guul Ascension"
 #descr "The Thram'zu Bacht begins a long expedition to the black waters of the Underworld, so they may gain knowledge of Death and be named a Thram'zu Guul. The journey is long and will take several months before their return. Time moves differently in the Underworld, and upon their return they will have aged greatly and become more powerful in other magic as well."
-#details "The caster will disappear, returning 6-13 months later as a Thram'zu Guul, much older, their Death and either Water or Earth magic increased by 1. This spell can only be cast in a fortress, and the caster will be unable to return if the province is captured."
+#details "The caster will disappear, returning 4-9 months later as a Thram'zu Guul, much older, their Death and either Water or Earth magic increased by 1. This spell can only be cast in a fortress, and the caster will be unable to return if the province is captured."
 #sethome
 #school 4
 #researchlevel 3
@@ -147550,7 +147674,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #pathlevel 0 2
 #effect 10130
 #fatiguecost 800
-#damage 8719 -- Thram'zu Bacht ascension form
+#damage -5768 -- Thram'zu Bacht ascension form
 #nreff 1
 #nextspell "Passage of Time"
 #spec 41943040
@@ -147642,7 +147766,7 @@ Basalt City will be in a ruined state while there is no fortification or if the 
 #provrange 2 -- Halved from EA Atlantis
 #onlyowndst 1
 #nolandtrace 1
-#onlyatsite 2315 -- Basalt City
+#onlyatsite 2611 -- Shattered Crystal
 #onlymnr 8739 -- Kurvant
 #restricted 206 -- Dirgen
 #end
@@ -147658,7 +147782,7 @@ Basalt City will be in a ruined state while there is no fortification or if the 
 #pathlevel 0 3
 #pathlevel 1 1
 #provrange 5 -- Halved from EA Atlantis
-#onlyatsite 2315 -- Basalt City
+#onlyatsite 2611 -- Shattered Crystal
 #onlymnr 8739 -- Kurvant
 #restricted 206 -- Dirgen
 #end
@@ -147675,7 +147799,7 @@ Basalt City will be in a ruined state while there is no fortification or if the 
 #fatiguecost 200
 #spec 8388608 -- cast UW
 #provrange 3 -- Halved rounded up from EA Atlantis
-#onlyatsite 2315 -- Basalt City
+#onlyatsite 2611 -- Shattered Crystal
 #onlymnr 8739 -- Kurvant
 #restricted 206 -- Dirgen
 #end
@@ -178202,6 +178326,35 @@ Tax collectors report that the population was extraordinarily unruly this month 
 --#notext
 --#nolog
 #end
+
+#newevent -- Place Crystal
+#rarity 5
+#nation -2
+#req_pop0ok
+#req_indepok
+#req_owncapital 0
+#req_site 1
+#msg "Place shattered crystal [Basalt City]"
+#notext
+#nolog
+#req_nositenbr 2611
+#addsite 2611 -- Shattered Crystal
+#end
+
+#newevent -- Remove Crystal
+#rarity 5
+#nation -2
+#req_pop0ok
+#req_indepok
+#req_owncapital 0
+#req_site 1
+#msg "Place shattered crystal [Shattered Crystal]"
+#notext
+#nolog
+#req_nositenbr 2315 -- City
+#removesite 2611 -- Shattered Crystal
+#end
+
 
 #newevent -- Guul Cave in capital
 #rarity 5
