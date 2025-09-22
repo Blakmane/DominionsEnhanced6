@@ -1,5 +1,5 @@
 #modname "Dominions Enhanced 2 (GitHub)"
-#description "Adds or revises many spells, sites, Pretenders, mercenaries, items and nations. Includes work by Red_Rob, Boing, Kate_Micucci, Amuys, Zonk, Nounours, Pyg, Llamabeast, Turin, Quantum_Mechani, Heartless, Sombre, Globu, Ohlmann, Sy and others."
+#description "Adds or revises many spells, sites, Pretenders, mercenaries, items and nations. Includes work by BlueFire, Red_Rob, Lightmane, Flintlock, Selgeron, laodie666, Boing, Kate_Micucci, Amuys, Zonk, Nounours, Pyg, Llamabeast, Turin, Quantum_Mechani, Heartless, Sombre, Globu, Ohlmann, Sy and others."
 #icon "domenhanced/banner.png"
 #version 2.x
 
@@ -2003,7 +2003,7 @@
 #nratt 4
 #magic
 #slash
-#bonus  -- so that he does not lose the weapon if he gets extra arms
+#bonus -- so that he does not lose the weapon if he gets extra arms
 #end
 
 #newweapon 1684
@@ -2015,7 +2015,7 @@
 #len 3
 #magic
 #blunt
-#bonus  -- so that he does not lose the weapon if he gets extra arms
+#bonus -- so that he does not lose the weapon if he gets extra arms
 #end
 
 #newweapon 1685
@@ -2110,7 +2110,7 @@
 #def 4
 #len 1
 #magic
-#bonus  -- so that he does not lose the weapon if he gets extra arms
+#bonus -- so that he does not lose the weapon if he gets extra arms
 #nratt 2
 #dt_large
 #slash
@@ -2245,7 +2245,7 @@
 #len 1
 #armorpiercing
 #slash
-#bonus  -- so that he does not lose the weapon if he gets extra arms
+#bonus -- so that he does not lose the weapon if he gets extra arms
 #magic
 #dt_magic
 #secondaryeffectalways 1704
@@ -2319,7 +2319,7 @@
 #explspr 10206  -- soul slay
 #soulslaying
 #secondaryeffect 401  -- devour soul
-#bonus  -- so that he does not lose the weapon if he gets extra arms
+#bonus -- so that he does not lose the weapon if he gets extra arms
 #magic
 #end
 
@@ -5117,6 +5117,19 @@
 --#rcost 7
 #end
 
+#newarmor 572 -- Pelts
+#copyarmor 5 -- Leather Cuirass
+#name "Pelts"
+#prot 2
+#rcost 1
+#end
+
+#newarmor 573 -- Garbs
+#copyarmor 5 -- Leather Cuirass
+#name "Garbs"
+#prot 2
+#rcost 1
+#end
 
 -- END OF NEW ARMORS
 
@@ -11161,7 +11174,7 @@ Stratiot captains do not come from the mercantile classes and lack the ability t
 #name "Venedian Priest"
 #descr "The people of Venedia are not especially devout, perhaps owing to their history of rebellion against the Inquisition.  For this reason the church is far less influential than in Marignon. However priests are still respected and called on when blessings or banishments are needed."
 #nametype 174
-#clearspec  -- to remove inquisitor
+#clearspec -- to remove inquisitor
 #holy
 #magicskill 9 1
 #nametype 174
@@ -13957,6 +13970,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #magicskill 5 2
 #magicskill 6 2
 #weapon 238  -- Magic Staff
+#armor 192 -- Magic Furs
+#armor 269 -- Fur Mask
 #nametype 178  -- Chaco
 #shapechange 6848
 #latehero 10
@@ -17187,8 +17202,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #coldres 25
 #coldpower 1
 #cold 4
-#icenatprot  1
-#iceprotinspector  1
+#icenatprot 1
+#iceprotinspector 1
 #fear 5
 #holy
 #end
@@ -18622,12 +18637,13 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "greatarrada/hunter.tga"
 #spr2 "greatarrada/hunter2.tga"
 #descr "Hunting is a common pastime in Arrada and most able bodied males have some skill. Hunters use spears, bows and assegai, short throwing spears, to kill their prey. In times of war these warriors will use their skills in battle. Hunters are light troops and can evade detection by the enemy."
-#gcost 10
-#rpcost 8
+#gcost 7
+#rpcost 5
 #stealthy 0
 #weapon 1  -- Spear
 #weapon 21  -- Javelin
 #skirmisher 1
+#armor 572 -- Pelts
 #end
 
 #newmonster 6999
@@ -18638,12 +18654,13 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "greatarrada/bowhunter.tga"
 #spr2 "greatarrada/bowhunter2.tga"
 #descr "Hunting is a common pastime in Arrada and most able bodied males have some skill. Hunters use spears, bows and assegai, short throwing spears, to kill their prey. In times of war these warriors will use their skills in battle. Hunters are light troops and can evade detection by the enemy."
-#gcost 10
-#rpcost 8
+#gcost 7
+#rpcost 5
 #stealthy 0
 #weapon 23  -- Short Bow
 #weapon 252  -- Club
 #skirmisher 1
+#armor 572 -- Pelts
 #end
 
 #newmonster 7000
@@ -18654,14 +18671,14 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr1 "greatarrada/shieldcarrier.tga"
 #spr2 "greatarrada/shieldcarrier2.tga"
 #descr "Shield Carriers are young warriors serving an apprenticeship to gain military experience. Some are recruited as young as seven or eight years old from poorer villages or are taken from the ranks of slaves captured from nearby towns. They carry spare shields for the warriors and act as servants to the other soldiers, however they are untrained and poor in battle. After serving on campaign they are granted a weapon and armor and allowed to join the army as regular soldiers."
-#gcost 8
+#gcost 6
 #rpcost 7
 #hp 9
 #str 9
 #att 9
 #def 9
 #mor 9
-#startage 16
+#startage 14
 #weapon 252  -- Club
 #armor 2  -- Shield
 #xpshape 15
@@ -22622,7 +22639,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #mr 20
 #enc 0
 #ap 24
-#djinn  -- bodytype for hit locations
+#djinn -- bodytype for hit locations
 #itemslots 860678
 #mapmove 4
 #magicskill 0 5
@@ -23370,8 +23387,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #mountainsurvival
 #stealthy 20
 #ambidextrous 2
-#assassin
-#patience 2
+--#assassin
+--#patience 2
 #end
 
 #newmonster 7201
@@ -23787,7 +23804,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #mor 16
 #enc 1
 #ap 2
-#djinn  -- bodytype for hit locations
+#djinn -- bodytype for hit locations
 #mapmove 0
 #immobile
 #expertleader
@@ -23852,29 +23869,11 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #magicskill 2 3
 #custommagic 4864 200  -- AWD 200%
 #winterpower 25
-#icenatprot  2
-#iceprotinspector  2
+#icenatprot 2
+#iceprotinspector 2
 #incscale 2
 #goodleader
 #gcost 0
-#end
-
-#newmonster 7222
-#copystats 226  -- Dragon Arch Mage(Red)
-#copyspr 226  -- Dragon Arch Mage(Red)
-#name "Arch Mage"
-#descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and most were imprisoned by the previous Pantokrator millenia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire upon enemies. Red Dragons are closely attuned to the magic that brought them to life and their skills are reduced when casting spells from paths other than fire. Due to this they tend to adopt a human form, but when wounded will revert to their greater Dragon form. Dragons have voracious appetites and will eat stray livestock and even villagers. This causes much consternation amongst the local populace. Dragons covet gold and will require regular tributes from the treasury."
-#homerealm 0
-#magicskill 0 3
-#custommagic 1408 100  -- FAE 200%
-#popkill 5
-#incunrest 80
-#supplybonus -20
-#gcost 1500
-#shapechange 7221
-#okleader
-#maxage 5000
-#mor 15
 #end
 
 #newmonster 7226
@@ -27893,6 +27892,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #firepower 2
 #magicskill 0 1
 #custommagic 128 50
+#diseaseres 100
+#uwdamage 100
 #end
 
 #newmonster 7420
@@ -27907,6 +27908,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #hp 10
 #prot 5
 #str 8
+#diseaseres 100
+#uwdamage 100
 #holy
 #ethereal
 #fireshield 10
@@ -27933,6 +27936,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #def 10
 #ap 12
 #prec 10
+#diseaseres 100
+#uwdamage 100
 #enc 0
 #gcost 0
 #rcost 1
@@ -28440,8 +28445,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #coldres 25
 #winterpower 20
 #coldpower 1
-#icenatprot  1
-#iceprotinspector  1
+#icenatprot 1
+#iceprotinspector 1
 #cold 5
 #magicskill 1 3
 #magicskill 2 3
@@ -28473,8 +28478,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #coldres 25
 #winterpower 20
 #coldpower 1
-#icenatprot  1
-#iceprotinspector  1
+#icenatprot 1
+#iceprotinspector 1
 #cold 5
 #startage 187
 #reclimit 0
@@ -30985,7 +30990,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 236
 #weapon 236  -- Claws
 #weapon 144  -- Stinger
-#noitem  -- 2 misc slots only
+#noitem -- 2 misc slots only
 #end
 
 #newmonster 7568
@@ -31041,6 +31046,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #size 4
 #mr 16
 #str 16
+#diseaseres 100
+#uwdamage 100
 #mapmove 2
 #banefireshield 6
 #fear 5
@@ -31970,6 +31977,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #float
 #weapon 37  -- Ice Mist Blade
 #weapon 1642 -- Mist Bow
+#armor 542 -- spectral leather
 #end
 
 #newmonster 7611
@@ -33632,8 +33640,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #att 10
 #ap 12
 #ambidextrous 2
-#icenatprot  2
-#iceprotinspector  2
+#icenatprot 2
+#iceprotinspector 2
 #cold 8
 #coldres 25
 #weapon 69  -- Icicle Fist
@@ -40453,8 +40461,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #nametype 143
 #darkvision 100
 #darkpower 1
-#icenatprot  1
-#iceprotinspector  1
+#icenatprot 1
+#iceprotinspector 1
 #incunrest 5
 #ironvul 1
 #okmagicleader
@@ -44110,8 +44118,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #shockres -5
 #magicskill 2 3
 #magicskill 6 2
-#icenatprot  2
-#iceprotinspector  2
+#icenatprot 2
+#iceprotinspector 2
 #cold 10
 #holy
 #coldpower 1
@@ -44882,7 +44890,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 
 #newmonster 8176
 #copystats 2397  -- Pearl king for pearl cultivator
-#clearmagic  -- to get rid of randoms
+#clearmagic -- to get rid of randoms
 #name "Pearlsmith"
 #fixedname "Xi Akloz"
 #spr1 "worthy_heroes/pearlsmith.tga"
@@ -46041,7 +46049,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr2 "worthy_heroes/chilambalam_attacking.tga"
 #gcost 0
 #descr "Tizimin is a Chilan who specializes in prophecies. When the flood came, the water stopped at the entrance of his house, and he welcomed the new rulers of Xibalba. He is well known for his magnum opus, the Chilan Balam. It is a collection of Xibalban histories, prophecies and the mystical knowledge of a lifetime, which he lends to those in need. He is very difficult for most of his peers to understand and has a hard time contributing to research without his book. The sacred rituals and arcane revelations in his book grant him an enhanced religious authority."
-#clearspec  -- Give him the abilities of an Onaqui, if not the size or appaerance
+#clearspec -- Give him the abilities of an Onaqui, if not the size or appaerance
 #neednoteat
 #holy
 #forestsurvival
@@ -46718,8 +46726,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #noleader
 #ap 14
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -47127,8 +47135,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #armor 21
 #armor 2
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #mountmnr 8251
 #mountedinspector
@@ -52071,8 +52079,8 @@ Requires an Ippondatara present to recruit."
 --#enchrebate25p 275 -- Ench75 -- Stoke the Smouldercone
 #descr "The first Abysians sprung from the Fires of Rhuax were large magmatic beings, barely resembling humans at all. Slowly these monstrosities developed into humanoids. With every generation, the Fires of Rhuax grew cooler in their bodies and the flaming Children of Rhuax became smoldering Abysians. The Burning One is an Abysian of prominent heritage, claiming succession from the Children of Rhuax. The Burning Ones are surrounded by flames and most of them are trained as priests or sacred warriors. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #cleararmor
 #armor 570 -- Half Plate
@@ -54477,8 +54485,8 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #descr "In the Smouldercone, young and promising Abysians are trained in Blood magic. The apprentices are much feared, as they often carry out the task of collecting young virgins for their masters' sacrifices. Even with the rise of humanbred and scarcity of pureblood Abysians, only the pureblood are allowed to be inducted into apprenticeship and so new members are becoming increasingly rare. Warlock apprentices are Abysians and radiate the hellish heat characteristic of their race as well as being held sacred among the humanbred. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #holy
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -54490,8 +54498,8 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #holy
 #rpcost 4
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -66957,57 +66965,57 @@ Cannot be recruited until Break the Deadlock is cast."
 
 #selectmonster 3746
 #coldpower 1
-#icenatprot  1
-#iceprotinspector  1
+#icenatprot 1
+#iceprotinspector 1
 #slashres
 #end
 
 #selectmonster 3747
 #coldpower 1
-#icenatprot  1
-#iceprotinspector  1
+#icenatprot 1
+#iceprotinspector 1
 #slashres
 #end
 
 #selectmonster 3748
 #coldpower 1
-#icenatprot  1
-#iceprotinspector  1
+#icenatprot 1
+#iceprotinspector 1
 #slashres
 #end
 
 #selectmonster 3749
 #coldpower 1
-#icenatprot  1
-#iceprotinspector  1
+#icenatprot 1
+#iceprotinspector 1
 #slashres
 #end
 
 #selectmonster 3750
 #coldpower 1
-#icenatprot  1
-#iceprotinspector  1
+#icenatprot 1
+#iceprotinspector 1
 #slashres
 #end
 
 #selectmonster 3751
 #coldpower 1
-#icenatprot  1
-#iceprotinspector  1
+#icenatprot 1
+#iceprotinspector 1
 #slashres
 #end
 
 #selectmonster 3752
 #coldpower 1
-#icenatprot  1
-#iceprotinspector  1
+#icenatprot 1
+#iceprotinspector 1
 #slashres
 #end
 
 #selectmonster 3753
 #coldpower 1
-#icenatprot  1
-#iceprotinspector  1
+#icenatprot 1
+#iceprotinspector 1
 #slashres
 #end
 
@@ -67188,8 +67196,8 @@ Only three Queens of Elemental Water are known to exist."
 #mor 30
 #goodmagicleader
 #goodleader
-#icenatprot  3
-#iceprotinspector  3
+#icenatprot 3
+#iceprotinspector 3
 #coldpower 2
 #str 18
 #att 14
@@ -67246,7 +67254,7 @@ Only three Queens of Elemental Water are known to exist."
 #mor 30
 #mr 18
 #nametype 170
-#djinn  -- bodytype for hit locations
+#djinn -- bodytype for hit locations
 #heat 0
 #uwheat 6
 #fireshield 0
@@ -68166,6 +68174,8 @@ Only three Queens of Elemental Water are known to exist."
 #spiritsight
 #mountainsurvival
 #weapon 238  -- Magic Staff
+#armor 192 -- Magic Furs
+#armor 269 -- Fur Mask
 #nametype 178  -- Chaco
 #startage 250
 #maxage 500
@@ -69233,7 +69243,7 @@ Only three Queens of Elemental Water are known to exist."
 #prot 0
 #mr 18
 #nametype 170
-#djinn  -- bodytype for hit locations
+#djinn -- bodytype for hit locations
 #firepower 0
 #expertmagicleader
 #goodleader
@@ -84803,8 +84813,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Abysians are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to the cold. Abysian infantry uses heavy iron armor and heavy weapons that will not burn away in their smoldering hands. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #cleararmor
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #armor 570 -- Half Plate
 #armor 20 -- Cap
@@ -84816,8 +84826,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Abysians are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to the cold. Abysian infantry uses heavy iron armor and heavy weapons that will not burn away in their smoldering hands. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #cleararmor
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #armor 570 -- Half Plate
 #armor 20 -- cap
@@ -84829,8 +84839,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Abysians are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to the cold. Abysian infantry uses heavy iron armor and heavy weapons that will not burn away in their smoldering hands. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #cleararmor
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #armor 570 -- Half Plate
 #armor 20 -- cap
 #armor 4 -- Tower Shield
@@ -84842,8 +84852,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/abysian84_2.png"
 #descr "The Abysians are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to the cold. Abysian infantry uses heavy iron armor and heavy weapons that will not burn away in their smoldering hands. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #cleararmor
 #armor 570 -- Half Plate
@@ -84855,8 +84865,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr1 "vanilla/salamander85_1.png"
 #spr2 "vanilla/salamander85_2.png"
 #descr "The authority of the Abysian Warlords is limited to acts of war. In all other matters, Abysia is ruled by the Anathemants. Anathemant Salamanders are the holy priests of the Abysian faith. They take part in the public ceremonies where flames are lit on the grand ziggurats and processions of anathemant mage-priests circumambulate the temple grounds. Anathemants excel in Fire magic and use fire not only to incinerate infidels, but also to feed the anger inherent in the hearts of all Abysian warriors. The Anathemants practice human sacrifice to empower their Master's Dominion by the magic inherent in human blood. Anathemant Salamanders are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #montag 1068 -- Anathement
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
@@ -84867,8 +84877,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr1 "vanilla/dragon86_1.png"
 #spr2 "vanilla/dragon86_2.png"
 #descr "The caste of Anathemants are led by exalted Fire mages known as Dragons. These sacral mages administer the ceremonies and sacrifices in the Temple of the All-Consuming Flame. They lead processions of anathemant mage-priests circumambulating the temple grounds and oversee the Grand Sabbaths. They are revered and feared by all Abysians except the Warlocks of Smouldercone. Anathemant Dragons are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 --#enchrebate50 41  -- Second Sun
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
@@ -84882,8 +84892,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "Deep in the Smouldercone, the Warlocks of Abysia experiment with their brethren to create superior beings. The Demonbreds are the most successful of these creatures. Part demon, part Abysian, they share the strengths and weaknesses of both. The Demonbreds are bound by their nature to serve their masters as slaves. Trained as Anathemants and mages, they can achieve great status and influence. They are fanatically loyal to their masters and are the most trusted and able of the Abysian mages. Demonbreds radiate the hellish heat characteristic of Abysians. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #montag 1055
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 5
 #rpcost 2
 #end
@@ -84892,8 +84902,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 89  -- Warlock
 #descr "The Warlocks of Smouldercone are Blood mages of great renown. They experiment with the summoning and binding of otherworldly beings and the creation of new species. Their most successful experimental achievements to date are the Demonbreds. The Warlocks are the true masters of Abysia, but rarely dabble in politics. Warlocks are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -84902,20 +84912,30 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/lavawarrior90_2.png"
 #descr "With the weakening of the Flame, there are no more Burning Ones born and Lava Warriors have replaced them as sacred warriors. Lava Warriors are the elite of the Abysian war machine. They are driven by an anger that turns into blind, berserk rage when they are wounded. These elite warriors train in the lava pits of the Smouldercone and are able to draw strength from the heat. They are very powerful in warm provinces, but cold will break down their great strength. Lava Warriors are armed with twin morning stars and serve the Anathemants without fear. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #cleararmor
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #armor 570 -- Half Plate
 #armor 20 -- cap
 #neednoteat
 #end
 
+#selectmonster 121  -- Demonbred
+#spr1 "vanilla/demonbred1537_1.png"
+#spr2 "vanilla/demonbred1537_2.png"
+#descr "Deep in the Smouldercone, the Warlocks of Abysia experiment with their brethren to create superior beings. The Demonbreds are the most successful of these creatures. Part demon, part Abysian, they share the strengths and weaknesses of both. The Demonbreds are bound by their nature to serve their masters as slaves. Trained as Anathemants and mages, they can achieve great status and influence. They are fanatically loyal to their masters and are the most trusted and able of the Abysian mages. Demonbreds radiate the hellish heat characteristic of Abysians. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#neednoteat
+#icenatprot -1
+#iceprotinspector -1
+#prot 5
+#end
+
 #selectmonster 118  -- War Master
 #spr1 "vanilla/rago.png"
 #spr2 "vanilla/rago2.png"
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -84924,8 +84944,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/warlord119_2.png"
 #descr "Warlords are the warrior chiefs of Abysian society and radiate the hellish heat characteristic of their race. They lead the Abysians in war and plunder. Warlords are chosen on the basis of superior strength and fighting prowess. They are large in size and strong enough to use twin axes in battle. Since the Warlords fight their way to prominence, they are respected and feared by their troops. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -84937,8 +84957,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #neednoteat
 #size 3
 #beastmaster 5
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -84948,8 +84968,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/anathemant327_2.png"
 #descr "The caste of Anathemants are led by exalted Fire mages known as Dragons. These sacral mages administer the ceremonies and sacrifices in the Temple of the All-Consuming Flame. They lead processions of anathemant mage-priests circumambulating the temple grounds and oversee the Grand Sabbaths. They are revered and feared by all Abysians except the Warlocks of Smouldercone. Anathemant Dragons are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -84958,8 +84978,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/slayer429_2.png"
 #descr "The Slayer is an Abysian assassin. He can pass unseen through enemy territories and try to assassinate enemy leaders. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -84980,8 +85000,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #batstartsum3 90  -- Lava Warrior
 #onebattlespell "Personal Luck"
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -84993,8 +85013,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #maxage 50
 #startage 40
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85008,8 +85028,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #enc 2  -- - base 3
 #itemslots 2040326
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 5
 #end
 
@@ -85017,8 +85037,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "In the Smouldercone, young and promising Abysians are trained in Blood magic. The apprentices are much feared, as they often carry out the task of collecting young virgins for their masters' sacrifices. Warlock apprentices are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #monpresentrec 89  -- Warlock
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85029,8 +85049,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr1 "vanilla/pyre990_1.png"
 #spr2 "vanilla/pyre990_2.png"
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85040,8 +85060,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/sanguine1092_2.png"
 #gcost 10010
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85060,8 +85080,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 9 3
 #custommagic 7296 100 -- FESD
 #custommagic 7296 10 -- FESD
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 4
 #end
 
@@ -85071,8 +85091,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "Deep in the Smouldercone, the Warlocks of Abysia experiment with their brethren to create superior beings. The Demonbreds are the most successful of these creatures. Part demon, part Abysian, they share the strengths and weaknesses of both. The Demonbreds are bound by their nature to serve their masters as slaves. Trained as assassins, they deliver death to the enemies of their Warlock masters. Demonbreds radiate the hellish heat characteristic of Abysians. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #montag 1055
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 5
 #end
 
@@ -85082,8 +85102,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Warlocks of Smouldercone are mages of a newly formed order. They experiment with Blood magic, the summoning and binding of otherworldly beings and the creation of new species. Their most recent experiments are the Demonbreds. Warlocks are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #douse 1
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85093,8 +85113,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "In the Smouldercone, young and promising Abysians are trained in Blood magic. In recent times the apprentices have become feared, as they carry out the task of collecting young virgins for their masters' sacrifices. Warlock apprentices are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #douse 1
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85104,8 +85124,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The first Abysians sprung from the Fires of Rhuax were large magmatic beings, barely resembling humans at all. Slowly these monstrosities developed into humanoids. With every generation, the Fires of Rhuax grew cooler in their bodies and the flaming Children of Rhuax became smoldering Abysians. The Burning One is an Abysian of prominent heritage, claiming succession from the Children of Rhuax. The Burning Ones are surrounded by flames and most of them are trained as priests or sacred warriors. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 --#enchrebate25p 275 -- Ench75 -- Stoke the Smouldercone
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #cleararmor
 #armor 570 -- Half Plate
@@ -85118,8 +85138,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "Deep in the Smouldercone, the Warlocks of Abysia experiment with their brethren to create superior beings. The Misbreds are defective, malformed and sometimes prematurely aged Demonbreds. The Misbreds are bound by their nature to serve their masters as slaves. While the Demonbreds are trained as assassins, the Misbreds are given purpose in life by the axe they wield. Misbreds must be led by a mage or commander with undead leadership. Misbreds radiate the hellish heat characteristic of Abysians. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #montag 1055
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 5
 #end
 
@@ -85127,8 +85147,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr1 "vanilla/anathemant327_1.png"
 #spr2 "vanilla/anathemant327_2.png"
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85138,8 +85158,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #neednoteat
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #montag 1068 -- Anathement
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85148,8 +85168,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 --#enchrebate50 41  -- Second Sun
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #montag 1068 -- Anathement
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #neednoteat
 #end
@@ -85160,8 +85180,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/slayerworm1965_2.png"
 #descr "With the dilution of the True Blood, the pureblood Abysians feared that the old traditions might be lost to the Humanbred population. To preserve the old ways the slayers were incorporated in the sacred caste of the Anathemants and a Slayer Cult was formed. The Slayers were trained as priests and murder was declared a sacred act. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85170,8 +85190,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/slayeranathemant1966_2.png"
 #descr "With the dilution of the True Blood, the pureblood Abysians feared that the old traditions might be lost to the Humanbred population. To preserve the old ways the slayers were incorporated in the sacred caste of the Anathemants and a Slayer Cult was formed. The Slayers were trained as priests and murder was declared a sacred act. The Slayer Anathemant is a prominent priest-assassin trained in the Temple of the Everburning Pyre. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85180,8 +85200,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/slayersanguine1967_2.png"
 #descr "With the dilution of the True Blood, the pureblood Abysians feared that the old traditions might be lost to the Humanbred population. To preserve the old ways the slayers were incorporated in the sacred caste of the Anathemants and a Slayer Cult was formed. The Slayers were trained as priests and murder was declared a sacred act. The Slayer Sanguine is a prominent priest-assassin trained in the Temple Sanguine. They are taught the secret art of performing blood rituals without the help of blood slaves to sacrifice. Instead they cut themselves and offer their own sacred blood at the risk of their own lives. To increase their chance of staying alive, they are given sacred athames that drain the life force from living beings. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85189,8 +85209,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr1 "vanilla/slayerrachis1968_1.png"
 #spr2 "vanilla/slayerrachis1968_2.png"
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85200,8 +85220,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #montag 1068 -- Anathement
 #gcost 10010
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85217,8 +85237,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #custommagic 5248 100
 #gcost 10010
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85228,8 +85248,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr2 "vanilla/lavaborn2510_2.png"
 #descr "The Lava-borns are a race of hellish humanoids with magma bodies. They radiate a furnace-like heat and are impervious to all forms of fire, but are vulnerable to cold. Most Lava-born live in Abysia, but there are rumors of Lava-born kingdoms deep in the under-earth. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85240,8 +85260,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #magicskill 0 1
 #custommagic 1024 20  -- 20% E
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -85251,8 +85271,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #spr1 "vanilla/sorcerer2601_1.png"
 #spr2 "vanilla/sorcerer2601_2.png"
 #neednoteat
-#icenatprot  -1
-#iceprotinspector  -1
+#icenatprot -1
+#iceprotinspector -1
 #prot 3
 #end
 
@@ -86354,6 +86374,7 @@ Initiates of the Deep can be recruited in any land fort."
 #montag 1053
 #magicskill 0 1
 #custommagic 1024 50
+#diseaseres 100
 #end
 
 #selectmonster 642  -- Great Lobster
@@ -88886,7 +88907,7 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #end
 
 #selectmonster 1671  -- Masatora
-#immortal  -- D2 mage is uninteresting for Yomi. Immortality fits his description
+#immortal -- D2 mage is uninteresting for Yomi. Immortality fits his description
 #end
 
 #selectmonster 1672  -- Kurofomi
@@ -89045,6 +89066,12 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 
 #selectmonster 1759  -- Sidhe Lord
 #okmagicleader
+#end
+
+#selectmonster 1764 -- Gana
+#cleararmor
+#armor 156 -- spectral shield
+#armor 544 -- Spectral Mail
 #end
 
 #selectmonster 1767  -- Danava
@@ -89410,7 +89437,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #end
 
 #selectmonster 1847
-#heal  -- to make him heal his old age afflictions so that he can keep his old age
+#heal -- to make him heal his old age afflictions so that he can keep his old age
 #end
 
 #selectmonster 1848
@@ -90673,7 +90700,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 
 #selectmonster 2757 -- EA Xib hero Demon of the Bone Staff
-#clearspec  -- Remove the bats
+#clearspec -- Remove the bats
 #demon
 #neednoteat
 #blind
@@ -90700,7 +90727,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectmonster 2758 -- EA Xib hero Demon of the Skull Staff
-#clearspec  -- Remove the bats
+#clearspec -- Remove the bats
 #demon
 #neednoteat
 #blind
@@ -90727,7 +90754,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectmonster 2759 -- EA Xib hero Demon of Pus
-#clearspec  -- Remove the bats
+#clearspec -- Remove the bats
 #demon
 #neednoteat
 #blind
@@ -90765,7 +90792,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectmonster 2761 -- EA Xib hero Sweeping Demon
 #spr1 "worthy_heroes/sweepingdemon.tga"
 #spr2 "worthy_heroes/sweepingdemon_attacking.tga"
-#clearspec  -- Remove the bat generation
+#clearspec -- Remove the bat generation
 #demon
 #neednoteat
 #blind
@@ -90800,7 +90827,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectmonster 2762  -- EA Xib hero Stabbing Demon
-#clearspec  -- Remove the bat generation
+#clearspec -- Remove the bat generation
 #demon
 #neednoteat
 #blind
@@ -91949,6 +91976,4348 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #selectmonster 4037 -- pyrenian man at arms
 #bodyguard 3
 #end
+
+-- END OF NORMAL MONSTER CHANGES
+
+
+-- START OF THE ARMORENINGING
+
+
+
+
+#selectmonster 41 -- Arch Theurg
+#armor 158 -- Robes
+#end
+
+#selectmonster 42 -- Theurg
+#armor 158 -- Robes
+#end
+
+#selectmonster 43 -- Theurg Acolyte
+#armor 158 -- Robes
+#end
+
+#selectmonster 60 -- Monk
+#armor 158 -- Robes
+#end
+
+#selectmonster 85 -- Anathemant Salamander
+#armor 158 -- Robes
+#end
+
+#selectmonster 86 -- Anathemant Dragon
+#armor 158 -- Robes
+#end
+
+#selectmonster 87 -- Demonbred
+#armor 158 -- Robes
+#end
+
+#selectmonster 89 -- Warlock
+#armor 158 -- Robes
+#end
+
+#selectmonster 92 -- Cloud Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 93 -- Wind Master
+#armor 158 -- Robes
+#end
+
+#selectmonster 94 -- Conjurer
+#armor 158 -- Robes
+#end
+
+#selectmonster 95 -- Circle Master
+#armor 158 -- Robes
+#end
+
+#selectmonster 96 -- Azure Initiate
+#armor 158 -- Robes
+#end
+
+#selectmonster 97 -- Azure Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 98 -- Pyromancer
+#armor 158 -- Robes
+#end
+
+#selectmonster 99 -- Adept of Pyriphlegeton
+#armor 158 -- Robes
+#end
+
+#selectmonster 100 -- Adept of the Silver Order
+#armor 158 -- Robes
+#end
+
+#selectmonster 101 -- Adept of the Golden Order
+#armor 158 -- Robes
+#end
+
+#selectmonster 102 -- Initiate of the Deep
+#armor 158 -- Robes
+#end
+
+#selectmonster 103 -- Hydromancer
+#armor 158 -- Robes
+#end
+
+#selectmonster 104 -- Deep Seer
+#armor 158 -- Robes
+#end
+
+#selectmonster 105 -- Woodhenge Druid
+#armor 158 -- Robes
+#end
+
+#selectmonster 106 -- Shadow Seer
+#armor 158 -- Robes
+#end
+
+#selectmonster 121 -- Demonbred
+#armor 158 -- Robes
+#end
+
+#selectmonster 122 -- Bloodhenge Druid
+#armor 158 -- Robes
+#end
+
+#selectmonster 138 -- Gorgon
+#armor 158 -- Robes
+#end
+
+#selectmonster 148 -- Friar
+#armor 158 -- Robes
+#end
+
+#selectmonster 149 -- Inquisitor
+#armor 158 -- Robes
+#end
+
+#selectmonster 151 -- Daughter of Avalon
+#armor 158 -- Robes
+#end
+
+#selectmonster 152 -- Mother of Avalon
+#armor 158 -- Robes
+#end
+
+#selectmonster 153 -- Crone of Avalon
+#armor 158 -- Robes
+#end
+
+#selectmonster 154 -- Witch
+#armor 158 -- Robes
+#end
+
+#selectmonster 160 -- High Priest of C'tis
+#armor 158 -- Robes
+#end
+
+#selectmonster 161 -- Sauromancer
+#armor 158 -- Robes
+#end
+
+#selectmonster 177 -- Lizard King
+#armor 158 -- Robes
+#end
+
+#selectmonster 179 -- Master Lich
+#armor 158 -- Robes
+#end
+
+#selectmonster 202 -- Caelian Seraph
+#armor 158 -- Robes
+#end
+
+#selectmonster 203 -- High Seraph
+#armor 158 -- Robes
+#end
+
+#selectmonster 204 -- Seraphine
+#armor 158 -- Robes
+#end
+
+#selectmonster 217 -- Flagellant
+#armor 573 -- Garbs
+#end
+
+#selectmonster 222 -- High Inquisitor
+#armor 158 -- Robes
+#end
+
+#selectmonster 223 -- Grand Master
+#armor 158 -- Robes
+#end
+
+#selectmonster 224 -- Witch Hunter
+#armor 158 -- Robes
+#end
+
+#selectmonster 225 -- Initiate
+#armor 158 -- Robes
+#end
+
+#selectmonster 226 -- Arch Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 240 -- Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 241 -- High Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 242 -- Hiereia
+#armor 158 -- Robes
+#end
+
+#selectmonster 244 -- Arch Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 245 -- Master Enchanter
+#armor 158 -- Robes
+#end
+
+#selectmonster 246 -- Freak Lord
+#armor 158 -- Robes
+#end
+
+#selectmonster 248 -- Arch Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 249 -- Crone
+#armor 158 -- Robes
+#end
+
+#selectmonster 250 -- Frost Father
+#armor 158 -- Robes
+#end
+
+#selectmonster 251 -- Great Sage
+#armor 158 -- Robes
+#end
+
+#selectmonster 252 -- Harab Seraph
+#armor 158 -- Robes
+#end
+
+#selectmonster 253 -- Dusk Elder
+#armor 158 -- Robes
+#end
+
+#selectmonster 254 -- Spectator
+#armor 158 -- Robes
+#end
+
+#selectmonster 255 -- Wailing Lady
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 256 -- Acolyte of Eldregate
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 257 -- Bishop of Eldregate
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 258 -- Arch Bishop of Eldregate
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 267 -- Frost Father
+#armor 158 -- Robes
+#end
+
+#selectmonster 268 -- Master Enchanter
+#armor 158 -- Robes
+#end
+
+#selectmonster 270 -- Arch Druid
+#armor 158 -- Robes
+#end
+
+#selectmonster 280 -- Seithkona
+#armor 158 -- Robes
+#end
+
+#selectmonster 281 -- Norna
+#armor 158 -- Robes
+#end
+
+#selectmonster 299 -- Wight Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 301 -- Astrologer
+#armor 158 -- Robes
+#end
+
+#selectmonster 302 -- Wizard of High Magics
+#armor 158 -- Robes
+#end
+
+#selectmonster 309 -- Ice Druid
+#armor 158 -- Robes
+#end
+
+#selectmonster 310 -- Necromancer
+#armor 158 -- Robes
+#end
+
+#selectmonster 311 -- Mystic
+#armor 158 -- Robes
+#end
+
+#selectmonster 312 -- Wizard of High Magics
+#armor 158 -- Robes
+#end
+
+#selectmonster 320 -- Grand Saurolich
+#armor 158 -- Robes
+#end
+
+#selectmonster 323 -- Dwarven Smith
+#armor 158 -- Robes
+#end
+
+#selectmonster 324 -- Dwarf Elder
+#armor 158 -- Robes
+#end
+
+#selectmonster 327 -- Anathemant
+#armor 158 -- Robes
+#end
+
+#selectmonster 328 -- Lizard King
+#armor 158 -- Robes
+#end
+
+#selectmonster 329 -- Spectral Mage
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 331 -- Illithid
+#armor 158 -- Robes
+#end
+
+#selectmonster 332 -- Starspawn
+#armor 158 -- Robes
+#end
+
+#selectmonster 333 -- Starspawn
+#armor 158 -- Robes
+#end
+
+#selectmonster 338 -- Dreamwood Enchanter
+#armor 158 -- Robes
+#end
+
+#selectmonster 339 -- Sorcerer
+#armor 158 -- Robes
+#end
+
+#selectmonster 340 -- Crystal Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 341 -- Illusionist
+#armor 158 -- Robes
+#end
+
+#selectmonster 342 -- Moon Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 343 -- Sorceress
+#armor 158 -- Robes
+#end
+
+#selectmonster 344 -- Black Sorceress
+#armor 158 -- Robes
+#end
+
+#selectmonster 345 -- Gnome
+#armor 158 -- Robes
+#end
+
+#selectmonster 346 -- Crystal Sorceress
+#armor 573 -- Garbs
+#end
+
+#selectmonster 349 -- Garnet Sorceress
+#armor 573 -- Garbs
+#end
+
+#selectmonster 352 -- Jade Sorceress
+#armor 573 -- Garbs
+#end
+
+#selectmonster 355 -- Onyx Sorceress
+#armor 573 -- Garbs
+#end
+
+#selectmonster 363 -- Whisperwood Enchantress
+#armor 158 -- Robes
+#end
+
+#selectmonster 364 -- Faydream Enchantress
+#armor 158 -- Robes
+#end
+
+#selectmonster 382 -- Mystic
+#armor 158 -- Robes
+#end
+
+#selectmonster 384 -- Neter of Crafts
+#armor 573 -- Garbs
+#end
+
+#selectmonster 385 -- Neteret of Joy
+#armor 158 -- Robes
+#end
+
+#selectmonster 386 -- Neter of the Sun
+#armor 573 -- Garbs
+#end
+
+#selectmonster 387 -- Neteret of Many Names
+#armor 158 -- Robes
+#end
+
+#selectmonster 388 -- Neter of Chaos
+#armor 573 -- Garbs
+#end
+
+#selectmonster 392 -- Ashen Angel
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 393 -- Lammashta
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 394 -- Lamia
+#armor 158 -- Robes
+#end
+
+#selectmonster 395 -- Lich Queen
+#armor 158 -- Robes
+#end
+
+#selectmonster 402 -- Crone
+#armor 158 -- Robes
+#end
+
+#selectmonster 404 -- Vampire Lord
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 405 -- Vampire
+#armor 158 -- Robes
+#end
+
+#selectmonster 411 -- Gnome
+#armor 158 -- Robes
+#end
+
+#selectmonster 412 -- Commoner
+#armor 573 -- Garbs
+#end
+
+#selectmonster 415 -- High Seraph
+#armor 158 -- Robes
+#end
+
+#selectmonster 416 -- Seraphine
+#armor 158 -- Robes
+#end
+
+#selectmonster 439 -- Mound Fiend
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 443 -- Star Child
+#armor 158 -- Robes
+#end
+
+#selectmonster 464 -- Harbinger
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 477 -- Adept of the Iron Order
+#armor 158 -- Robes
+#end
+
+#selectmonster 478 -- Sage
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 479 -- Lore Master
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 480 -- Magus
+#armor 158 -- Robes
+#end
+
+#selectmonster 481 -- High Magus
+#armor 158 -- Robes
+#end
+
+#selectmonster 485 -- Great Enchantress
+#armor 158 -- Robes
+#end
+
+#selectmonster 486 -- Great Warlock
+#armor 158 -- Robes
+#end
+
+#selectmonster 499 -- Nataraja
+#armor 572 -- Pelts
+#end
+
+#selectmonster 502 -- Empoisoner
+#armor 158 -- Robes
+#end
+
+#selectmonster 503 -- Poison Slinger
+#armor 158 -- Robes
+#end
+
+#selectmonster 510 -- Hierodule
+#armor 158 -- Robes
+#end
+
+#selectmonster 538 -- Theurg Communicant
+#armor 158 -- Robes
+#end
+
+#selectmonster 550 -- Master Alchemist
+#armor 158 -- Robes
+#end
+
+#selectmonster 551 -- Alchemist
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 552 -- Animist
+#armor 158 -- Robes
+#end
+
+#selectmonster 554 -- Ermorian Cultist
+#armor 158 -- Robes
+#end
+
+#selectmonster 557 -- Harab Seraphine
+#armor 158 -- Robes
+#end
+
+#selectmonster 560 -- Stargazer
+#armor 158 -- Robes
+#end
+
+#selectmonster 581 -- Anathemant Warlock
+#armor 158 -- Robes
+#end
+
+#selectmonster 582 -- Blind One
+#armor 158 -- Robes
+#end
+
+#selectmonster 583 -- Cardinal
+#armor 158 -- Robes
+#end
+
+#selectmonster 584 -- Patriarch
+#armor 158 -- Robes
+#end
+
+#selectmonster 585 -- Guild Master
+#armor 158 -- Robes
+#end
+
+#selectmonster 587 -- Hierophant
+#armor 158 -- Robes
+#end
+
+#selectmonster 601 -- Devi of Fortunes
+#armor 573 -- Garbs
+#end
+
+#selectmonster 602 -- Titan of Heaven
+#armor 158 -- Robes
+#end
+
+#selectmonster 603 -- Teotl of Rain
+#armor 573 -- Garbs
+#end
+
+#selectmonster 604 -- Teotl of the Night
+#armor 573 -- Garbs
+#end
+
+#selectmonster 609 -- Lamia Queen
+#armor 158 -- Robes
+#end
+
+#selectmonster 626 -- Fallen Angel
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 627 -- Faery Queen
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 630 -- Elludian Moon Mage
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 635 -- Ancient Shaman
+#armor 158 -- Robes
+#end
+
+#selectmonster 653 -- Serpent King
+#armor 158 -- Robes
+#end
+
+#selectmonster 669 -- Thaumaturg
+#armor 158 -- Robes
+#end
+
+#selectmonster 670 -- Grand Thaumaturg
+#armor 158 -- Robes
+#end
+
+#selectmonster 680 -- Lemur Senator
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 690 -- Grave Consort
+#armor 158 -- Robes
+#end
+
+#selectmonster 691 -- Tomb Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 692 -- Tomb King
+#armor 158 -- Robes
+#end
+
+#selectmonster 715 -- Carrion Wolf
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 721 -- Warrior
+#armor 572 -- Pelts
+#end
+
+#selectmonster 729 -- Scout
+#armor 572 -- Pelts
+#end
+
+#selectmonster 731 -- Mictlan Priest
+#armor 572 -- Pelts
+#end
+
+#selectmonster 732 -- Priest King
+#armor 572 -- Pelts
+#end
+
+#selectmonster 733 -- Rain Priest
+#armor 572 -- Pelts
+#end
+
+#selectmonster 734 -- Moon Priest
+#armor 572 -- Pelts
+#end
+
+#selectmonster 735 -- High Priest of the Sun
+#armor 572 -- Pelts
+#end
+
+#selectmonster 739 -- Black Acolyte
+#armor 158 -- Robes
+#end
+
+#selectmonster 740 -- Black Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 744 -- Diabolist
+#armor 158 -- Robes
+#end
+
+#selectmonster 745 -- Goetic Master
+#armor 158 -- Robes
+#end
+
+#selectmonster 748 -- Master Mason
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 761 -- Serpent Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 780 -- Lord of the Hunt
+#armor 572 -- Pelts
+#end
+
+#selectmonster 808 -- Master of the Way
+#armor 158 -- Robes
+#end
+
+#selectmonster 813 -- Imperial Consort
+#armor 158 -- Robes
+#end
+
+#selectmonster 830 -- Serpent Acolyte
+#armor 158 -- Robes
+#end
+
+#selectmonster 857 -- Smoking Mirror
+#armor 572 -- Pelts
+#end
+
+#selectmonster 862 -- Vampire Queen
+#armor 158 -- Robes
+#end
+
+#selectmonster 864 -- First King
+#armor 158 -- Robes
+#end
+
+#selectmonster 865 -- Pontifex Serpentus
+#armor 158 -- Robes
+#end
+
+#selectmonster 868 -- Scythe Wielder
+#armor 158 -- Robes
+#end
+
+#selectmonster 869 -- Navigator
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 872 -- Ghost King
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 873 -- Great Seer of the Deeps
+#armor 158 -- Robes
+#end
+
+#selectmonster 874 -- Divine Emperor
+#armor 158 -- Robes
+#end
+
+#selectmonster 878 -- Machaka Militia
+#armor 572 -- Pelts
+#end
+
+#selectmonster 879 -- Machaka Archer
+#armor 572 -- Pelts
+#end
+
+#selectmonster 880 -- Machaka Warrior
+#armor 572 -- Pelts
+#end
+
+#selectmonster 881 -- Machaka Chief
+#armor 572 -- Pelts
+#end
+
+#selectmonster 885 -- Spider Rider
+#armor 572 -- Pelts
+#end
+
+#selectmonster 891 -- Spider Sorceress
+#armor 573 -- Garbs
+#end
+
+#selectmonster 892 -- Witch Doctor
+#armor 572 -- Pelts
+#end
+
+#selectmonster 893 -- Sorcerer
+#armor 572 -- Pelts
+#end
+
+#selectmonster 894 -- Black Sorcerer
+#armor 572 -- Pelts
+#end
+
+#selectmonster 895 -- Ear of the Lord
+#armor 572 -- Pelts
+#end
+
+#selectmonster 896 -- Eye of the Lord
+#armor 572 -- Pelts
+#end
+
+#selectmonster 897 -- Voice of the Lord
+#armor 572 -- Pelts
+#end
+
+#selectmonster 903 -- Celestial Servant
+#armor 573 -- Garbs
+#end
+
+#selectmonster 923 -- Warlock Apprentice
+#armor 158 -- Robes
+#end
+
+#selectmonster 926 -- Demon of Heavenly Fires
+#armor 158 -- Robes
+#end
+
+#selectmonster 932 -- Woodland Spirit
+#armor 158 -- Robes
+#end
+
+#selectmonster 933 -- King of Legends
+#armor 572 -- Pelts
+#end
+
+#selectmonster 935 -- Priest King
+#armor 572 -- Pelts
+#end
+
+#selectmonster 937 -- Marshmaster
+#armor 158 -- Robes
+#end
+
+#selectmonster 940 -- Master of the Five Elements
+#armor 158 -- Robes
+#end
+
+#selectmonster 941 -- Celestial Master
+#armor 158 -- Robes
+#end
+
+#selectmonster 942 -- Immortal
+#armor 158 -- Robes
+#end
+
+#selectmonster 943 -- Immortal
+#armor 158 -- Robes
+#end
+
+#selectmonster 946 -- Lady of Spiders
+#armor 158 -- Robes
+#end
+
+#selectmonster 950 -- Völva
+#armor 158 -- Robes
+#end
+
+#selectmonster 951 -- Harab Seraph
+#armor 158 -- Robes
+#end
+
+#selectmonster 956 -- Mother of Tuathas
+#armor 158 -- Robes
+#end
+
+#selectmonster 957 -- Lord of The Desert Sun
+#armor 572 -- Pelts
+#end
+
+#selectmonster 962 -- Madman
+#armor 573 -- Garbs
+#end
+
+#selectmonster 964 -- Lord of Fertility
+#armor 158 -- Robes
+#end
+
+#selectmonster 965 -- Lord of Fertility
+#armor 158 -- Robes
+#end
+
+#selectmonster 977 -- Grand Thaumaturg
+#armor 158 -- Robes
+#end
+
+#selectmonster 991 -- Newt
+#armor 158 -- Robes
+#end
+
+#selectmonster 999 -- Wizard of the Crescent Moon
+#armor 158 -- Robes
+#end
+
+#selectmonster 1000 -- Demon Jester
+#armor 573 -- Garbs
+#end
+
+#selectmonster 1003 -- Harab Elder
+#armor 158 -- Robes
+#end
+
+#selectmonster 1004 -- Caelian Seraph
+#armor 158 -- Robes
+#end
+
+#selectmonster 1010 -- Svartalf
+#armor 158 -- Robes
+#end
+
+#selectmonster 1011 -- Fortune Teller
+#armor 158 -- Robes
+#end
+
+#selectmonster 1012 -- Member of the Second Tier
+#armor 158 -- Robes
+#end
+
+#selectmonster 1019 -- Vampire Count
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 1022 -- Thrall
+#armor 573 -- Garbs
+#end
+
+#selectmonster 1023 -- Illuminated One
+#armor 158 -- Robes
+#end
+
+#selectmonster 1024 -- Member of the Third Tier
+#armor 158 -- Robes
+#end
+
+#selectmonster 1033 -- Missionary
+#armor 158 -- Robes
+#end
+
+#selectmonster 1036 -- Sauromancer
+#armor 158 -- Robes
+#end
+
+#selectmonster 1070 -- Philosopher
+#armor 158 -- Robes
+#end
+
+#selectmonster 1071 -- Sceptic
+#armor 158 -- Robes
+#end
+
+#selectmonster 1072 -- Engineer
+#armor 158 -- Robes
+#end
+
+#selectmonster 1073 -- Maker of the Maze
+#armor 158 -- Robes
+#end
+
+#selectmonster 1091 -- Sanguine Acolyte
+#armor 158 -- Robes
+#end
+
+#selectmonster 1092 -- Sanguine Anathemant
+#armor 158 -- Robes
+#end
+
+#selectmonster 1095 -- Keeper of the Tombs
+#armor 158 -- Robes
+#end
+
+#selectmonster 1096 -- Destroyer of Worlds
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1097 -- Lord of The Summer Plague
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1109 -- Flamen
+#armor 158 -- Robes
+#end
+
+#selectmonster 1110 -- Pontifex
+#armor 158 -- Robes
+#end
+
+#selectmonster 1111 -- Arch Bishop of the Sacred Shroud
+#armor 158 -- Robes
+#end
+
+#selectmonster 1112 -- Bishop of the Sacred Shroud
+#armor 158 -- Robes
+#end
+
+#selectmonster 1113 -- Acolyte
+#armor 158 -- Robes
+#end
+
+#selectmonster 1114 -- Augur
+#armor 158 -- Robes
+#end
+
+#selectmonster 1115 -- Augur Elder
+#armor 158 -- Robes
+#end
+
+#selectmonster 1180 -- Spirit Guide
+#armor 158 -- Robes
+#end
+
+#selectmonster 1181 -- Enarie
+#armor 158 -- Robes
+#end
+
+#selectmonster 1189 -- Mictlan Priest
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1190 -- Priest King
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1191 -- Rain Priest
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1192 -- Moon Priest
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1193 -- Sun Priest
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1204 -- Elder Druid
+#armor 158 -- Robes
+#end
+
+#selectmonster 1205 -- Gutuater
+#armor 158 -- Robes
+#end
+
+#selectmonster 1206 -- Vergobret
+#armor 158 -- Robes
+#end
+
+#selectmonster 1225 -- Sequani Stargazer
+#armor 158 -- Robes
+#end
+
+#selectmonster 1226 -- Naiad
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 1228 -- Pharmakeia
+#armor 158 -- Robes
+#end
+
+#selectmonster 1230 -- Titan of the Forge
+#armor 573 -- Garbs
+#end
+
+#selectmonster 1232 -- Old Man of the Sea
+#armor 158 -- Robes
+#end
+
+#selectmonster 1254 -- Shugenja
+#armor 158 -- Robes
+#end
+
+#selectmonster 1255 -- Master Shugenja
+#armor 158 -- Robes
+#end
+
+#selectmonster 1258 -- Kannushi
+#armor 158 -- Robes
+#end
+
+#selectmonster 1259 -- Onmyo-ji
+#armor 158 -- Robes
+#end
+
+#selectmonster 1281 -- Iron Crafter
+#armor 158 -- Robes
+#end
+
+#selectmonster 1282 -- Caretaker
+#armor 158 -- Robes
+#end
+
+#selectmonster 1283 -- Ice Crafter
+#armor 158 -- Robes
+#end
+
+#selectmonster 1284 -- Spire Horn Seraph
+#armor 158 -- Robes
+#end
+
+#selectmonster 1315 -- Sorcerer
+#armor 158 -- Robes
+#end
+
+#selectmonster 1339 -- Nyorai
+#armor 158 -- Robes
+#end
+
+#selectmonster 1342 -- Titan of Rivers
+#armor 158 -- Robes
+#end
+
+#selectmonster 1344 -- Devi of Good Fortunes
+#armor 573 -- Garbs
+#end
+
+#selectmonster 1348 -- Titan of Serpents and Medicine
+#armor 158 -- Robes
+#end
+
+#selectmonster 1361 -- Nahualli
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1367 -- Angel of the Heavenly Choir
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 1369 -- Angel of Fury
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 1370 -- Volla of the Bountiful Forest
+#armor 158 -- Robes
+#end
+
+#selectmonster 1371 -- Titan of Death and Rebirth
+#armor 158 -- Robes
+#end
+
+#selectmonster 1372 -- Annunaki of the Sky
+#armor 158 -- Robes
+#end
+
+#selectmonster 1373 -- Annunaki of Sweet Waters
+#armor 158 -- Robes
+#end
+
+#selectmonster 1374 -- Annunaki of the Morning Star
+#armor 158 -- Robes
+#end
+
+#selectmonster 1375 -- Spenta of Sky and Metals
+#armor 158 -- Robes
+#end
+
+#selectmonster 1376 -- Spenta of Animals
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 1377 -- Spenta of Fire
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 1387 -- Reborn
+#armor 158 -- Robes
+#end
+
+#selectmonster 1415 -- Pelagian Mermage
+#armor 158 -- Robes
+#end
+
+#selectmonster 1416 -- Pelagian Mermage
+#armor 158 -- Robes
+#end
+
+#selectmonster 1422 -- Civateteo
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 1424 -- Sun Priest
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1429 -- Uba
+#armor 158 -- Robes
+#end
+
+#selectmonster 1431 -- Nushi
+#armor 158 -- Robes
+#end
+
+#selectmonster 1433 -- Kitsune
+#armor 158 -- Robes
+#end
+
+#selectmonster 1436 -- Noppera-bo
+#armor 158 -- Robes
+#end
+
+#selectmonster 1438 -- Ktonian Necromancer
+#armor 158 -- Robes
+#end
+
+#selectmonster 1442 -- Attendant of the Dead
+#armor 158 -- Robes
+#end
+
+#selectmonster 1443 -- Servant of the Oracles
+#armor 158 -- Robes
+#end
+
+#selectmonster 1473 -- Earth Reader
+#armor 158 -- Robes
+#end
+
+#selectmonster 1474 -- Golem Crafter
+#armor 158 -- Robes
+#end
+
+#selectmonster 1475 -- Attendant of the Oracles
+#armor 158 -- Robes
+#end
+
+#selectmonster 1477 -- Kokythiad
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 1483 -- Tzitzimitl
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1484 -- Tlaloque of the East
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1485 -- Tlaloque of the South
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1486 -- Tlaloque of the West
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1487 -- Tlaloque of the North
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1492 -- Spenta of Plants
+#armor 158 -- Robes
+#end
+
+#selectmonster 1493 -- Spenta of Waters
+#armor 158 -- Robes
+#end
+
+#selectmonster 1494 -- Spenta of the Earth
+#armor 158 -- Robes
+#end
+
+#selectmonster 1518 -- Slave Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 1519 -- Slave Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 1527 -- Slave Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 1528 -- Slave Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 1536 -- Anointed of Rhuax
+#armor 158 -- Robes
+#end
+
+#selectmonster 1538 -- Warlock
+#armor 158 -- Robes
+#end
+
+#selectmonster 1539 -- Ghost Mage
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 1540 -- Ghost Mage
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 1541 -- Ghost Champion
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 1542 -- Warlock Apprentice
+#armor 158 -- Robes
+#end
+
+#selectmonster 1549 -- Shuten-doji
+#armor 158 -- Robes
+#end
+
+#selectmonster 1557 -- Sibyl
+#armor 158 -- Robes
+#end
+
+#selectmonster 1558 -- Tlahuelpuchi
+#armor 158 -- Robes
+#end
+
+#selectmonster 1563 -- Void Cultist
+#armor 158 -- Robes
+#end
+
+#selectmonster 1564 -- Mad Cultist
+#armor 158 -- Robes
+#end
+
+#selectmonster 1565 -- Peasant
+#armor 573 -- Garbs
+#end
+
+#selectmonster 1566 -- Mad One
+#armor 158 -- Robes
+#end
+
+#selectmonster 1570 -- Human Dreamer
+#armor 573 -- Garbs
+#end
+
+#selectmonster 1575 -- Hybrid Cultist
+#armor 158 -- Robes
+#end
+
+#selectmonster 1586 -- Pontifex Maximus
+#armor 158 -- Robes
+#end
+
+#selectmonster 1587 -- Primate
+#armor 158 -- Robes
+#end
+
+#selectmonster 1588 -- Wanderer
+#armor 158 -- Robes
+#end
+
+#selectmonster 1599 -- Machaka Warrior
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1600 -- Lion Tribe Warrior
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1601 -- Lion Tribe Archer
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1602 -- Lion Tribe Witch Doctor
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1606 -- Mage Engineer
+#armor 158 -- Robes
+#end
+
+#selectmonster 1609 -- Demon Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 1610 -- Jaguar Tribe Slinger
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1612 -- Jaguar Tribe Priest
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1640 -- Cultist
+#armor 158 -- Robes
+#end
+
+#selectmonster 1643 -- Magister of Theology
+#armor 158 -- Robes
+#end
+
+#selectmonster 1644 -- Magister
+#armor 158 -- Robes
+#end
+
+#selectmonster 1645 -- Judge
+#armor 158 -- Robes
+#end
+
+#selectmonster 1646 -- Magister Arcane
+#armor 158 -- Robes
+#end
+
+#selectmonster 1647 -- Bishop
+#armor 158 -- Robes
+#end
+
+#selectmonster 1650 -- Oreiad
+#armor 158 -- Robes
+#end
+
+#selectmonster 1661 -- Misbred
+#armor 158 -- Robes
+#end
+
+#selectmonster 1663 -- Harab Seraph
+#armor 158 -- Robes
+#end
+
+#selectmonster 1667 -- Warlock
+#armor 158 -- Robes
+#end
+
+#selectmonster 1672 -- Master of the Shadow Blossom
+#armor 158 -- Robes
+#end
+
+#selectmonster 1696 -- Merman Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 1697 -- Merman Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 1698 -- Anathemant Salamander
+#armor 158 -- Robes
+#end
+
+#selectmonster 1699 -- Anathemant Dragon
+#armor 158 -- Robes
+#end
+
+#selectmonster 1708 -- Consort of the Dead
+#armor 158 -- Robes
+#end
+
+#selectmonster 1733 -- Raktapata
+#armor 158 -- Robes
+#end
+
+#selectmonster 1734 -- Yogini
+#armor 573 -- Garbs
+#end
+
+#selectmonster 1735 -- Kala-Mukha
+#armor 158 -- Robes
+#end
+
+#selectmonster 1739 -- Rakshasi
+#armor 573 -- Garbs
+#end
+
+#selectmonster 1773 -- Tuatha Sorceress
+#armor 158 -- Robes
+#end
+
+#selectmonster 1774 -- Bean Sidhe
+#armor 158 -- Robes
+#end
+
+#selectmonster 1775 -- Baobhan Sidhe
+#armor 158 -- Robes
+#end
+
+#selectmonster 1776 -- Bean Sidhe
+#armor 158 -- Robes
+#end
+
+#selectmonster 1784 -- Milesian Monk
+#armor 158 -- Robes
+#end
+
+#selectmonster 1792 -- Nemedian Sorceress
+#armor 158 -- Robes
+#end
+
+#selectmonster 1793 -- Nemedian Queen
+#armor 158 -- Robes
+#end
+
+#selectmonster 1794 -- Last Partholonian
+#armor 158 -- Robes
+#end
+
+#selectmonster 1795 -- Partholonian Sorceress
+#armor 158 -- Robes
+#end
+
+#selectmonster 1796 -- Fomorian Militia
+#armor 573 -- Garbs
+#end
+
+#selectmonster 1819 -- Fomorian Druid
+#armor 158 -- Robes
+#end
+
+#selectmonster 1848 -- Mason of the Underworld
+#armor 158 -- Robes
+#end
+
+#selectmonster 1849 -- Blinded
+#armor 158 -- Robes
+#end
+
+#selectmonster 1873 -- Heliodromus
+#armor 158 -- Robes
+#end
+
+#selectmonster 1874 -- Theurg
+#armor 158 -- Robes
+#end
+
+#selectmonster 1875 -- Epoptes
+#armor 158 -- Robes
+#end
+
+#selectmonster 1876 -- Mystes
+#armor 158 -- Robes
+#end
+
+#selectmonster 1877 -- Renata
+#armor 158 -- Robes
+#end
+
+#selectmonster 1878 -- Renatus
+#armor 158 -- Robes
+#end
+
+#selectmonster 1879 -- Serpent Assassin
+#armor 158 -- Robes
+#end
+
+#selectmonster 1880 -- Reveler
+#armor 158 -- Robes
+#end
+
+#selectmonster 1886 -- Priest King
+#armor 158 -- Robes
+#end
+
+#selectmonster 1888 -- Sky Priest
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1890 -- Apothecary
+#armor 158 -- Robes
+#end
+
+#selectmonster 1896 -- Lawgiver
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1898 -- Fomorian Sorcerer
+#armor 158 -- Robes
+#end
+
+#selectmonster 1905 -- Great Sorceress
+#armor 158 -- Robes
+#end
+
+#selectmonster 1907 -- High Priest of the Sky
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1908 -- Huli Jing
+#armor 158 -- Robes
+#end
+
+#selectmonster 1919 -- Fivefold Angel
+#armor 158 -- Robes
+#end
+
+#selectmonster 1920 -- Skopets
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1921 -- Khlyst
+#armor 572 -- Pelts
+#end
+
+#selectmonster 1952 -- Likho
+#armor 158 -- Robes
+#end
+
+#selectmonster 1969 -- Anathemant Salamander
+#armor 158 -- Robes
+#end
+
+#selectmonster 1970 -- Anathemant Dragon
+#armor 158 -- Robes
+#end
+
+#selectmonster 1973 -- Black Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 1974 -- Black Acolyte
+#armor 158 -- Robes
+#end
+
+#selectmonster 1995 -- Iassacharite Scout
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 2018 -- Horite
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2052 -- Chayot
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2053 -- Chayot
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2054 -- Chayot
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2055 -- Chayot
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2056 -- Malakh
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2058 -- Arel
+#armor 158 -- Robes
+#end
+
+#selectmonster 2063 -- Grigori
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2064 -- Grigori
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2065 -- Grigori
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2066 -- Grigori
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2068 -- Dusk Elder
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2089 -- Jigami
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 2093 -- Mori-no-kami
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 2094 -- Mori-no-kami
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 2098 -- Monk of the Fivefold Path
+#armor 158 -- Robes
+#end
+
+#selectmonster 2146 -- Seithberender
+#armor 158 -- Robes
+#end
+
+#selectmonster 2179 -- Sal-Me
+#armor 158 -- Robes
+#end
+
+#selectmonster 2182 -- Gala
+#armor 158 -- Robes
+#end
+
+#selectmonster 2198 -- Inquisitor
+#armor 158 -- Robes
+#end
+
+#selectmonster 2199 -- High Inquisitor
+#armor 158 -- Robes
+#end
+
+#selectmonster 2200 -- Goetic Adept
+#armor 158 -- Robes
+#end
+
+#selectmonster 2205 -- Great Sauromancer
+#armor 158 -- Robes
+#end
+
+#selectmonster 2206 -- Eldest Dwarf
+#armor 158 -- Robes
+#end
+
+#selectmonster 2207 -- Great Sorcerer
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2239 -- Asynja
+#armor 158 -- Robes
+#end
+
+#selectmonster 2241 -- Longdead Boatswain
+#armor 158 -- Robes
+#end
+
+#selectmonster 2244 -- Scelerian Cultist
+#armor 158 -- Robes
+#end
+
+#selectmonster 2248 -- Sister
+#armor 158 -- Robes
+#end
+
+#selectmonster 2249 -- Nun
+#armor 158 -- Robes
+#end
+
+#selectmonster 2250 -- Abbess
+#armor 158 -- Robes
+#end
+
+#selectmonster 2252 -- Berytian Scout
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 2266 -- Bride-in-Waiting
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2269 -- Entu
+#armor 158 -- Robes
+#end
+
+#selectmonster 2272 -- Sobek High Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 2275 -- False Prophet
+#armor 158 -- Robes
+#end
+
+#selectmonster 2276 -- Heretic
+#armor 158 -- Robes
+#end
+
+#selectmonster 2288 -- Machaka Scout
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2292 -- Hyena Clan Witch Doctor
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2293 -- Bouda
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2295 -- Spider Clan Sorcerer
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2297 -- Lion Queen
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2298 -- Machaka Militia
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2299 -- Bird Clan Archer
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2300 -- Machaka Warrior
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2301 -- Spider Clan Archer
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2307 -- Elephant Rider
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2308 -- Spider Rider
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2310 -- Voice of Spider
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2314 -- Reborn
+#armor 158 -- Robes
+#end
+
+#selectmonster 2327 -- Adventurer
+#armor 158 -- Robes
+#end
+
+#selectmonster 2328 -- Adventurer
+#armor 158 -- Robes
+#end
+
+#selectmonster 2329 -- Adventurer
+#armor 158 -- Robes
+#end
+
+#selectmonster 2331 -- Pilgrim
+#armor 158 -- Robes
+#end
+
+#selectmonster 2333 -- Lemur Acolyte
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2334 -- Lemur Thaumaturg
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2335 -- Grand Lemur
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2358 -- Wormwood Witch
+#armor 158 -- Robes
+#end
+
+#selectmonster 2361 -- Black Witch
+#armor 158 -- Robes
+#end
+
+#selectmonster 2362 -- Blackrose Sorceress
+#armor 158 -- Robes
+#end
+
+#selectmonster 2394 -- Sobek Sauromancer
+#armor 158 -- Robes
+#end
+
+#selectmonster 2403 -- Spider Clan Witch Doctor
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2417 -- Merman Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 2418 -- Merman Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 2419 -- Mermage
+#armor 158 -- Robes
+#end
+
+#selectmonster 2420 -- Mermage
+#armor 158 -- Robes
+#end
+
+#selectmonster 2426 -- Bouda Father
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2429 -- Bride of the Gods
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2431 -- Titan of the Underworld
+#armor 158 -- Robes
+#end
+
+#selectmonster 2436 -- Annunaki of the Moon
+#armor 158 -- Robes
+#end
+
+#selectmonster 2437 -- Annunaki of Growth and Rebirth
+#armor 158 -- Robes
+#end
+
+#selectmonster 2438 -- Annunaki of the Underworld
+#armor 158 -- Robes
+#end
+
+#selectmonster 2441 -- Great Seer of the Deeps
+#armor 158 -- Robes
+#end
+
+#selectmonster 2442 -- Teotl of War
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2443 -- Teotl of the Sky
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2444 -- Teotl of the Underworld
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2445 -- Neter of the Underworld
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2446 -- Neter of Kings
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2450 -- Horned One
+#armor 572 -- Pelts
+#end
+
+#selectmonster 2456 -- Ktonian Reanimator
+#armor 158 -- Robes
+#end
+
+#selectmonster 2457 -- Bodhisattva of Mercy
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2464 -- Neter of the Moon
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2468 -- Druid
+#armor 158 -- Robes
+#end
+
+#selectmonster 2471 -- Self Proclaimed Prince
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2521 -- Ktonian Alchemist
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 2530 -- Master of Alchemical Secrets
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 2535 -- Plague Cult Leader
+#armor 158 -- Robes
+#end
+
+#selectmonster 2536 -- Fellow
+#armor 158 -- Robes
+#end
+
+#selectmonster 2537 -- Monk
+#armor 158 -- Robes
+#end
+
+#selectmonster 2540 -- Blood Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 2543 -- Mage of Spring
+#armor 158 -- Robes
+#end
+
+#selectmonster 2544 -- Mage of Summer
+#armor 158 -- Robes
+#end
+
+#selectmonster 2545 -- Mage of Autumn
+#armor 158 -- Robes
+#end
+
+#selectmonster 2546 -- Mage of Winter
+#armor 158 -- Robes
+#end
+
+#selectmonster 2550 -- Raksharani
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2552 -- Ahura of Wisdom
+#armor 158 -- Robes
+#end
+
+#selectmonster 2553 -- Ahura of the Oath
+#armor 158 -- Robes
+#end
+
+#selectmonster 2554 -- Ahura of the Waters
+#armor 158 -- Robes
+#end
+
+#selectmonster 2555 -- Spenta Mainyu
+#armor 158 -- Robes
+#end
+
+#selectmonster 2556 -- Celestial Carp
+#armor 158 -- Robes
+#end
+
+#selectmonster 2557 -- Airya Seraphine
+#armor 158 -- Robes
+#end
+
+#selectmonster 2562 -- Fravashi
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2563 -- Ancestral Fravashi
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2569 -- Spire Horn Seraph
+#armor 158 -- Robes
+#end
+
+#selectmonster 2570 -- Airya Seraph
+#armor 158 -- Robes
+#end
+
+#selectmonster 2598 -- Turan Usij
+#armor 158 -- Robes
+#end
+
+#selectmonster 2599 -- Karapan
+#armor 158 -- Robes
+#end
+
+#selectmonster 2600 -- Dastur
+#armor 158 -- Robes
+#end
+
+#selectmonster 2601 -- Turan Sorcerer
+#armor 158 -- Robes
+#end
+
+#selectmonster 2602 -- Athravan
+#armor 158 -- Robes
+#end
+
+#selectmonster 2603 -- Zaotar
+#armor 158 -- Robes
+#end
+
+#selectmonster 2604 -- Airya Seraph
+#armor 158 -- Robes
+#end
+
+#selectmonster 2607 -- Turan Athravan
+#armor 158 -- Robes
+#end
+
+#selectmonster 2609 -- Great Warlock
+#armor 158 -- Robes
+#end
+
+#selectmonster 2610 -- Angra Mainyu
+#armor 158 -- Robes
+#end
+
+#selectmonster 2611 -- Gannag Menog
+#armor 158 -- Robes
+#end
+
+#selectmonster 2612 -- Daeva of Evil Intentions
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2613 -- Daeva of Frozen Minds
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2614 -- Daeva of Oppression
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2615 -- Daeva of Discontent
+#armor 158 -- Robes
+#end
+
+#selectmonster 2616 -- Daeva of Destruction
+#armor 158 -- Robes
+#end
+
+#selectmonster 2617 -- Daeva of Aging
+#armor 158 -- Robes
+#end
+
+#selectmonster 2618 -- Renegade Harab Seraph
+#armor 158 -- Robes
+#end
+
+#selectmonster 2619 -- Harab Seraph
+#armor 158 -- Robes
+#end
+
+#selectmonster 2620 -- Yazad of Fire
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2621 -- Yazad of Justice
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2622 -- Yazad of the Stars
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2623 -- Yazad of the Sky
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2624 -- Yazad of Water
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2625 -- Yazad of the Earth
+#armor 158 -- Robes
+#end
+
+#selectmonster 2627 -- Daeva of Wrath
+#armor 158 -- Robes
+#end
+
+#selectmonster 2632 -- Daeva of Shooting Stars
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2633 -- Yata
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2636 -- Pairika
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2637 -- Ahurani
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2656 -- Aclla
+#armor 158 -- Robes
+#end
+
+#selectmonster 2657 -- Hurin Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 2659 -- Coya
+#armor 158 -- Robes
+#end
+
+#selectmonster 2685 -- Viracocha
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2686 -- Apu Inti
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2698 -- Apu Illapa
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2712 -- Apostate Seraph
+#armor 158 -- Robes
+#end
+
+#selectmonster 2755 -- Hun Came
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2778 -- Chaac of the North
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2779 -- Chaac of the East
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2780 -- Chaac of the South
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2781 -- Chaac of the West
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2802 -- Svartalf Mastersmith
+#armor 158 -- Robes
+#end
+
+#selectmonster 2813 -- Pelagian Explorer
+#armor 158 -- Robes
+#end
+
+#selectmonster 2814 -- Pelagian Explorer
+#armor 158 -- Robes
+#end
+
+#selectmonster 2815 -- Mermage
+#armor 158 -- Robes
+#end
+
+#selectmonster 2816 -- Mermage
+#armor 158 -- Robes
+#end
+
+#selectmonster 2823 -- Pelagian Mystic
+#armor 158 -- Robes
+#end
+
+#selectmonster 2824 -- Pelagian Mystic
+#armor 158 -- Robes
+#end
+
+#selectmonster 2834 -- Hekateride
+#armor 158 -- Robes
+#end
+
+#selectmonster 2835 -- Kabeiros
+#armor 158 -- Robes
+#end
+
+#selectmonster 2836 -- Daktyl
+#armor 158 -- Robes
+#end
+
+#selectmonster 2845 -- Ephor
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2846 -- Spectral Philosopher
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2851 -- Titan of Winds and Waves
+#armor 158 -- Robes
+#end
+
+#selectmonster 2859 -- Witness of the Deep
+#armor 158 -- Robes
+#end
+
+#selectmonster 2867 -- Daduchos
+#armor 158 -- Robes
+#end
+
+#selectmonster 2868 -- Daduchos
+#armor 158 -- Robes
+#end
+
+#selectmonster 2873 -- Telkhine
+#armor 158 -- Robes
+#end
+
+#selectmonster 2874 -- Telkhine
+#armor 158 -- Robes
+#end
+
+#selectmonster 2875 -- Queen of the City
+#armor 158 -- Robes
+#end
+
+#selectmonster 2876 -- Queen of the City
+#armor 158 -- Robes
+#end
+
+#selectmonster 2877 -- Telkhine
+#armor 158 -- Robes
+#end
+
+#selectmonster 2878 -- Telkhine
+#armor 158 -- Robes
+#end
+
+#selectmonster 2879 -- Telkhine
+#armor 158 -- Robes
+#end
+
+#selectmonster 2880 -- Telkhine
+#armor 158 -- Robes
+#end
+
+#selectmonster 2881 -- Telkhine God-King
+#armor 158 -- Robes
+#end
+
+#selectmonster 2882 -- Telkhine God-King
+#armor 158 -- Robes
+#end
+
+#selectmonster 2885 -- Androdai
+#armor 158 -- Robes
+#end
+
+#selectmonster 2901 -- Kernou Druid
+#armor 158 -- Robes
+#end
+
+#selectmonster 2906 -- Merrow Druid
+#armor 573 -- Garbs
+#end
+
+#selectmonster 2921 -- Morgen Sorceress
+#armor 158 -- Robes
+#end
+
+#selectmonster 2922 -- Morgen High Queen
+#armor 158 -- Robes
+#end
+
+#selectmonster 2928 -- Swanherd
+#armor 158 -- Robes
+#end
+
+#selectmonster 2930 -- Hooded Spirit
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 2944 -- Nin
+#armor 158 -- Robes
+#end
+
+#selectmonster 2945 -- Gala
+#armor 158 -- Robes
+#end
+
+#selectmonster 2946 -- Naditu
+#armor 158 -- Robes
+#end
+
+#selectmonster 2947 -- Ereshdingir
+#armor 158 -- Robes
+#end
+
+#selectmonster 2948 -- Entu
+#armor 158 -- Robes
+#end
+
+#selectmonster 2951 -- Ashipu
+#armor 158 -- Robes
+#end
+
+#selectmonster 2952 -- Mashmashu
+#armor 158 -- Robes
+#end
+
+#selectmonster 2960 -- Apkallu
+#armor 158 -- Robes
+#end
+
+#selectmonster 2966 -- Umu-apkallu
+#armor 158 -- Robes
+#end
+
+#selectmonster 2978 -- Master Sorcerer
+#armor 158 -- Robes
+#end
+
+#selectmonster 2979 -- Onmyo Hakase
+#armor 158 -- Robes
+#end
+
+#selectmonster 3010 -- Architect
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 3011 -- Architect
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 3032 -- Daduchos
+#armor 158 -- Robes
+#end
+
+#selectmonster 3033 -- Daduchos
+#armor 158 -- Robes
+#end
+
+#selectmonster 3034 -- Mermage
+#armor 158 -- Robes
+#end
+
+#selectmonster 3035 -- Mermage
+#armor 158 -- Robes
+#end
+
+#selectmonster 3036 -- Erytheian Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 3037 -- Erytheian Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 3038 -- Pearl Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 3039 -- Mystic
+#armor 158 -- Robes
+#end
+
+#selectmonster 3040 -- Nomarch
+#armor 158 -- Robes
+#end
+
+#selectmonster 3041 -- Nomarch
+#armor 158 -- Robes
+#end
+
+#selectmonster 3042 -- Prince of the Setting Sun
+#armor 158 -- Robes
+#end
+
+#selectmonster 3043 -- Prince of the Setting Sun
+#armor 158 -- Robes
+#end
+
+#selectmonster 3044 -- Princess of the Setting Sun
+#armor 158 -- Robes
+#end
+
+#selectmonster 3045 -- Princess of the Setting Sun
+#armor 158 -- Robes
+#end
+
+#selectmonster 3046 -- King of Both Worlds
+#armor 158 -- Robes
+#end
+
+#selectmonster 3047 -- King of Both Worlds
+#armor 158 -- Robes
+#end
+
+#selectmonster 3048 -- Queen of Land and Water
+#armor 158 -- Robes
+#end
+
+#selectmonster 3049 -- Queen of Land and Water
+#armor 158 -- Robes
+#end
+
+#selectmonster 3053 -- Grand Hierophant
+#armor 158 -- Robes
+#end
+
+#selectmonster 3054 -- Firstborn of the Star
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 3055 -- Grand Hydromancer
+#armor 158 -- Robes
+#end
+
+#selectmonster 3059 -- Magister Supreme
+#armor 158 -- Robes
+#end
+
+#selectmonster 3060 -- Master
+#armor 158 -- Robes
+#end
+
+#selectmonster 3069 -- Namanari
+#armor 158 -- Robes
+#end
+
+#selectmonster 3074 -- Kami of Storms
+#armor 158 -- Robes
+#end
+
+#selectmonster 3076 -- Morrigna
+#armor 158 -- Robes
+#end
+
+#selectmonster 3077 -- Morrigna
+#armor 158 -- Robes
+#end
+
+#selectmonster 3078 -- Morrigna
+#armor 158 -- Robes
+#end
+
+#selectmonster 3079 -- Duiu of Thunder
+#armor 572 -- Pelts
+#end
+
+#selectmonster 3080 -- Duiu of Farming
+#armor 572 -- Pelts
+#end
+
+#selectmonster 3081 -- Duiu of War
+#armor 572 -- Pelts
+#end
+
+#selectmonster 3082 -- Matrona of the Healing Spring
+#armor 158 -- Robes
+#end
+
+#selectmonster 3086 -- Deives of the Sun
+#armor 158 -- Robes
+#end
+
+#selectmonster 3087 -- Lar
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 3095 -- Ugallu
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3097 -- Spider Archer
+#armor 572 -- Pelts
+#end
+
+#selectmonster 3113 -- Kryptes
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3114 -- Geronte
+#armor 158 -- Robes
+#end
+
+#selectmonster 3115 -- Ephor
+#armor 158 -- Robes
+#end
+
+#selectmonster 3116 -- Archon
+#armor 158 -- Robes
+#end
+
+#selectmonster 3117 -- Basileus
+#armor 158 -- Robes
+#end
+
+#selectmonster 3118 -- Elder Cyclops
+#armor 572 -- Pelts
+#end
+
+#selectmonster 3121 -- Eldest Cyclops
+#armor 572 -- Pelts
+#end
+
+#selectmonster 3124 -- Titan of Forethought
+#armor 158 -- Robes
+#end
+
+#selectmonster 3125 -- Member of the Third Tier
+#armor 158 -- Robes
+#end
+
+#selectmonster 3126 -- Member of the Third Tier
+#armor 158 -- Robes
+#end
+
+#selectmonster 3128 -- Orphic Mystic
+#armor 158 -- Robes
+#end
+
+#selectmonster 3130 -- Trophimos Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 3131 -- Trophimos Sage
+#armor 158 -- Robes
+#end
+
+#selectmonster 3138 -- Elder Cyclops
+#armor 572 -- Pelts
+#end
+
+#selectmonster 3155 -- Colossi Weaver
+#armor 158 -- Robes
+#end
+
+#selectmonster 3157 -- Colossi Queen
+#armor 158 -- Robes
+#end
+
+#selectmonster 3158 -- Prince Consort
+#armor 158 -- Robes
+#end
+
+#selectmonster 3160 -- Hesperide
+#armor 158 -- Robes
+#end
+
+#selectmonster 3161 -- Shackled Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 3162 -- Trophimos Oppressor
+#armor 158 -- Robes
+#end
+
+#selectmonster 3163 -- Theurg Tyrant
+#armor 158 -- Robes
+#end
+
+#selectmonster 3166 -- Phaeacian Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 3173 -- Aegaeide
+#armor 158 -- Robes
+#end
+
+#selectmonster 3174 -- Phaeacian Princess
+#armor 158 -- Robes
+#end
+
+#selectmonster 3180 -- Wight Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 3181 -- Wight Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 3191 -- Enkidu Great Sage
+#armor 158 -- Robes
+#end
+
+#selectmonster 3197 -- Melissa
+#armor 158 -- Robes
+#end
+
+#selectmonster 3198 -- Archousa
+#armor 158 -- Robes
+#end
+
+#selectmonster 3199 -- Neokoros
+#armor 158 -- Robes
+#end
+
+#selectmonster 3200 -- Panageis
+#armor 158 -- Robes
+#end
+
+#selectmonster 3201 -- Hydrophoros of the East
+#armor 158 -- Robes
+#end
+
+#selectmonster 3202 -- Hydrophoros of the West
+#armor 158 -- Robes
+#end
+
+#selectmonster 3203 -- Titan of the Hunt
+#armor 158 -- Robes
+#end
+
+#selectmonster 3204 -- Grey One
+#armor 158 -- Robes
+#end
+
+#selectmonster 3205 -- Titan of Crossroads
+#armor 158 -- Robes
+#end
+
+#selectmonster 3206 -- Titan of Crossroads
+#armor 158 -- Robes
+#end
+
+#selectmonster 3207 -- Titan of Crossroads
+#armor 158 -- Robes
+#end
+
+#selectmonster 3208 -- Titan of the Spring
+#armor 158 -- Robes
+#end
+
+#selectmonster 3209 -- Titan of Growth
+#armor 158 -- Robes
+#end
+
+#selectmonster 3210 -- Lampad
+#armor 158 -- Robes
+#end
+
+#selectmonster 3218 -- Phlegran Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 3220 -- Shackled Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 3221 -- Phlegran Oppressor
+#armor 158 -- Robes
+#end
+
+#selectmonster 3225 -- Cyclope Smith
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3228 -- Oppressor Archon
+#armor 158 -- Robes
+#end
+
+#selectmonster 3231 -- Elder Cyclops
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3236 -- Cambion
+#armor 158 -- Robes
+#end
+
+#selectmonster 3239 -- Fay
+#armor 158 -- Robes
+#end
+
+#selectmonster 3241 -- Daughter of the Thunder
+#armor 158 -- Robes
+#end
+
+#selectmonster 3243 -- Disciple of Myrddin
+#armor 158 -- Robes
+#end
+
+#selectmonster 3244 -- Blood Countess
+#armor 158 -- Robes
+#end
+
+#selectmonster 3245 -- Vampire Countess
+#armor 158 -- Robes
+#end
+
+#selectmonster 3246 -- Tengu King
+#armor 158 -- Robes
+#end
+
+#selectmonster 3247 -- Kitsune
+#armor 158 -- Robes
+#end
+
+#selectmonster 3251 -- Vampire Count
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 3252 -- Vivisectionist
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 3253 -- Vampire Count
+#armor 158 -- Robes
+#end
+
+#selectmonster 3254 -- Vampire Lord
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 3262 -- Jorogumo
+#armor 158 -- Robes
+#end
+
+#selectmonster 3265 -- Tanuki
+#armor 158 -- Robes
+#end
+
+#selectmonster 3272 -- Mujina
+#armor 158 -- Robes
+#end
+
+#selectmonster 3274 -- Vampire Count
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 3276 -- Cynocephalian Hunter
+#armor 572 -- Pelts
+#end
+
+#selectmonster 3290 -- Bishop Vicomte
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3291 -- Viceroy Primate
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3314 -- Feminie Sorceress
+#armor 158 -- Robes
+#end
+
+#selectmonster 3322 -- Piconye Scholar
+#armor 158 -- Robes
+#end
+
+#selectmonster 3341 -- Malikah
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3350 -- Damned Boatswain
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 3369 -- Ilahat of Fate
+#armor 158 -- Robes
+#end
+
+#selectmonster 3370 -- Ilahat of Might
+#armor 158 -- Robes
+#end
+
+#selectmonster 3375 -- Houri
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3379 -- Great Huntress
+#armor 572 -- Pelts
+#end
+
+#selectmonster 3384 -- Sahira
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3385 -- Queen of Na'Ba
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3425 -- Dwarf of the North
+#armor 158 -- Robes
+#end
+
+#selectmonster 3426 -- Dwarf of the South
+#armor 158 -- Robes
+#end
+
+#selectmonster 3427 -- Dwarf of the East
+#armor 158 -- Robes
+#end
+
+#selectmonster 3428 -- Dwarf of the West
+#armor 158 -- Robes
+#end
+
+#selectmonster 3439 -- Norna of the Past
+#armor 158 -- Robes
+#end
+
+#selectmonster 3440 -- Norna of the Present
+#armor 158 -- Robes
+#end
+
+#selectmonster 3441 -- Norna of the Future
+#armor 158 -- Robes
+#end
+
+#selectmonster 3448 -- Wight Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 3466 -- Houri
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3471 -- Qarin
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3477 -- Ghul
+#armor 572 -- Pelts
+#end
+
+#selectmonster 3478 -- Ghul
+#armor 572 -- Pelts
+#end
+
+#selectmonster 3479 -- Ghul
+#armor 572 -- Pelts
+#end
+
+#selectmonster 3480 -- Ghul
+#armor 572 -- Pelts
+#end
+
+#selectmonster 3481 -- Ghulah
+#armor 158 -- Robes
+#end
+
+#selectmonster 3482 -- Ghulah
+#armor 158 -- Robes
+#end
+
+#selectmonster 3483 -- Si'lat
+#armor 158 -- Robes
+#end
+
+#selectmonster 3484 -- Mother Ghul
+#armor 158 -- Robes
+#end
+
+#selectmonster 3485 -- Mother Ghul
+#armor 158 -- Robes
+#end
+
+#selectmonster 3486 -- Initiate of the Hidden Order
+#armor 158 -- Robes
+#end
+
+#selectmonster 3487 -- Adept of the Hidden Order
+#armor 158 -- Robes
+#end
+
+#selectmonster 3488 -- Master of the Hidden Order
+#armor 158 -- Robes
+#end
+
+#selectmonster 3489 -- Veiled Enchantress
+#armor 158 -- Robes
+#end
+
+#selectmonster 3490 -- Gray Enchantress
+#armor 158 -- Robes
+#end
+
+#selectmonster 3491 -- Tenebrous Enchantress
+#armor 158 -- Robes
+#end
+
+#selectmonster 3492 -- Wizard's Apprentice
+#armor 158 -- Robes
+#end
+
+#selectmonster 3493 -- Wizard of Fire and Flame
+#armor 158 -- Robes
+#end
+
+#selectmonster 3494 -- Wizard of the Earth
+#armor 158 -- Robes
+#end
+
+#selectmonster 3495 -- Wizard of Ice and Water
+#armor 158 -- Robes
+#end
+
+#selectmonster 3496 -- Wizard of Storms and Thunder
+#armor 158 -- Robes
+#end
+
+#selectmonster 3497 -- Wizard of the Stars
+#armor 158 -- Robes
+#end
+
+#selectmonster 3498 -- Wizard of Many Colors
+#armor 158 -- Robes
+#end
+
+#selectmonster 3499 -- Wizard of Dark Arts
+#armor 158 -- Robes
+#end
+
+#selectmonster 3502 -- Arch Wizard of the Hidden Flame
+#armor 158 -- Robes
+#end
+
+#selectmonster 3504 -- Arch Wizard of Waters Underneath
+#armor 158 -- Robes
+#end
+
+#selectmonster 3505 -- Arch Wizard of the Sky
+#armor 158 -- Robes
+#end
+
+#selectmonster 3506 -- Arch Wizard of the Spheres
+#armor 158 -- Robes
+#end
+
+#selectmonster 3507 -- Arch Wizard of Unseen Colors
+#armor 158 -- Robes
+#end
+
+#selectmonster 3508 -- Arch Wizard of Black Arcana
+#armor 158 -- Robes
+#end
+
+#selectmonster 3509 -- Wizard's Apprentice
+#armor 158 -- Robes
+#end
+
+#selectmonster 3585 -- Bearer
+#armor 158 -- Robes
+#end
+
+#selectmonster 3586 -- Bearer
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 3603 -- Sorgina
+#armor 158 -- Robes
+#end
+
+#selectmonster 3617 -- Pyrènian Monk
+#armor 158 -- Robes
+#end
+
+#selectmonster 3618 -- Pyrènian Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 3619 -- Pyrènian Bishop
+#armor 158 -- Robes
+#end
+
+#selectmonster 3620 -- Sorgina
+#armor 158 -- Robes
+#end
+
+#selectmonster 3632 -- Mother of Storms
+#armor 158 -- Robes
+#end
+
+#selectmonster 3638 -- Falconeer
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 3642 -- Great Sage
+#armor 158 -- Robes
+#end
+
+#selectmonster 3650 -- Immortal Gorgon
+#armor 158 -- Robes
+#end
+
+#selectmonster 3652 -- Anansi
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3654 -- Weaver of Tales
+#armor 572 -- Pelts
+#end
+
+#selectmonster 3683 -- Weaver of Nightmares
+#armor 158 -- Robes
+#end
+
+#selectmonster 3711 -- Storm Father
+#armor 158 -- Robes
+#end
+
+#selectmonster 3797 -- Piconye Sage
+#armor 158 -- Robes
+#end
+
+#selectmonster 3798 -- Piconye Sage-Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 3799 -- Piconye Bishop
+#armor 158 -- Robes
+#end
+
+#selectmonster 3800 -- Piconye Arch Bishop
+#armor 158 -- Robes
+#end
+
+#selectmonster 3801 -- Piconye Pope
+#armor 158 -- Robes
+#end
+
+#selectmonster 3813 -- Feminie Savant
+#armor 158 -- Robes
+#end
+
+#selectmonster 3814 -- Feminie Sorceress
+#armor 158 -- Robes
+#end
+
+#selectmonster 3815 -- Loremistress
+#armor 158 -- Robes
+#end
+
+#selectmonster 3816 -- Sage-Queen
+#armor 158 -- Robes
+#end
+
+#selectmonster 3817 -- Cloistered Lady
+#armor 158 -- Robes
+#end
+
+#selectmonster 3818 -- Feminie Abbess
+#armor 158 -- Robes
+#end
+
+#selectmonster 3821 -- Peasant
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3822 -- Commoner
+#armor 158 -- Robes
+#end
+
+#selectmonster 3823 -- Commoner
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3833 -- Divine Sibyl
+#armor 158 -- Robes
+#end
+
+#selectmonster 3834 -- Divine Daughter
+#armor 158 -- Robes
+#end
+
+#selectmonster 3857 -- Starspawn
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 3858 -- Starspawn
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 3859 -- Mirror Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 3860 -- Master of Mirrors
+#armor 158 -- Robes
+#end
+
+#selectmonster 3861 -- Royal Alchemist
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 3862 -- Imp Trainer
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 3887 -- Milesian Mage
+#armor 158 -- Robes
+#end
+
+#selectmonster 3889 -- Master Lich
+#armor 158 -- Robes
+#end
+
+#selectmonster 3893 -- Sky Metal Adept
+#armor 158 -- Robes
+#end
+
+#selectmonster 3911 -- Water Kobold
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 3919 -- Calystri Presbyter
+#armor 158 -- Robes
+#end
+
+#selectmonster 3922 -- Calystri Magistrate
+#armor 158 -- Robes
+#end
+
+#selectmonster 3926 -- Devi of Strength
+#armor 573 -- Garbs
+#end
+
+#selectmonster 3935 -- Master of the Way
+#armor 158 -- Robes
+#end
+
+#selectmonster 3936 -- Student of the Way
+#armor 158 -- Robes
+#end
+
+#selectmonster 3937 -- Student of the Five Elements
+#armor 158 -- Robes
+#end
+
+#selectmonster 3946 -- Saurolich
+#armor 158 -- Robes
+#end
+
+#selectmonster 3951 -- God Lich
+#armor 158 -- Robes
+#end
+
+#selectmonster 3952 -- God Lich
+#armor 158 -- Robes
+#end
+
+#selectmonster 3989 -- Small Animated Shrub
+#armor 158 -- Robes
+#end
+
+#selectmonster 3999 -- Moonvine Enchanter
+#armor 158 -- Robes
+#end
+
+#selectmonster 4001 -- Arch Emperor
+#armor 158 -- Robes
+#end
+
+#selectmonster 4002 -- First Queen
+#armor 158 -- Robes
+#end
+
+#selectmonster 4043 -- Pyrènian Monk
+#armor 158 -- Robes
+#end
+
+#selectmonster 4044 -- Pyrènian Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 4045 -- Blood Bishop
+#armor 158 -- Robes
+#end
+
+#selectmonster 4046 -- Sorgina
+#armor 158 -- Robes
+#end
+
+#selectmonster 4051 -- Cambion Queen
+#armor 158 -- Robes
+#end
+
+#selectmonster 4052 -- Cambion Countess
+#armor 158 -- Robes
+#end
+
+#selectmonster 4054 -- Cambion Progeny
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 4055 -- Cambion Progeny
+#armor 158 -- Robes
+#end
+
+#selectmonster 6568 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 6569 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 6571 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 6587 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 6589 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 6590 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 6609 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 6610 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 6679 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6680 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6681 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6682 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6683 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6684 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6689 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6690 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6691 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6692 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6693 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6694 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6695 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6703 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6726 -- Unknown
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 6735 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 6739 -- Unknown
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 6754 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6755 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6756 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6794 -- Kátsina Warrior
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6795 -- Kátsina Archer
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6797 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6799 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6800 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6801 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6802 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6803 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6804 -- Mongkátsina
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6806 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6807 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6808 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6809 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6810 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6811 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6813 -- Snake Priest
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6815 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6816 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6817 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6827 -- Kátsina Ogre
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6835 -- Kátsina Warrior
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6836 -- Mongkátsina
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6838 -- Skeleton Man
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6839 -- Warrior Twin
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6840 -- Warrior Twin
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6841 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6842 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6843 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6844 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6845 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6862 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6863 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6864 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6865 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6866 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6867 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6868 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6869 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6870 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 6871 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 6872 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 6873 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 6894 -- Wise One
+#armor 158 -- Robes
+#end
+
+#selectmonster 6934 -- Wise One
+#armor 158 -- Robes
+#end
+
+#selectmonster 6972 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6975 -- Priest
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6976 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 6977 -- Witch Doctor
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6981 -- Shaman
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6983 -- Babalawo
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6984 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 6994 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6996 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6997 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 6998 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 6999 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7009 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7010 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7012 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 7013 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7014 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7015 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7016 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7019 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7020 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7029 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7030 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7031 -- Ancestral Queen
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7032 -- Ancestral King
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7036 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7037 -- High Queen
+#armor 573 -- Garbs
+#end
+
+#selectmonster 7038 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7039 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7050 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7051 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7052 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7053 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7054 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7055 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7123 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7126 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7129 -- Ghul Warrior
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7131 -- Ghul Warrior
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7132 -- Ghul
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7133 -- Ghul
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7136 -- Ghul Cavalry
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7143 -- Ghul Sorcerer
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7144 -- Ghul Sorcerer
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7145 -- Ghul Slaver
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7147 -- Ghul Scout
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7148 -- Ghul Scout
+#armor 572 -- Pelts
+#end
+
+#selectmonster 7297 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7301 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7302 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7351 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7352 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7353 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7354 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7356 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 7369 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7371 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7372 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7373 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7374 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7380 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7384 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7404 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7405 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7407 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7435 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7450 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7452 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7490 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7520 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7562 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7573 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7575 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7612 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7624 -- Unknown
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 7642 -- Annunaki of the Heavens
+#armor 158 -- Robes
+#end
+
+#selectmonster 7647 -- Child of K'lullu
+#armor 158 -- Robes
+#end
+
+#selectmonster 7658 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7660 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7661 -- Unknown
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 7668 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7682 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7748 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7749 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7750 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7773 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7774 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7775 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7776 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7777 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7791 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7792 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7793 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7800 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7801 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7808 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7814 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7822 -- Unknown
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 7823 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7826 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7835 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7861 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7870 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7887 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7891 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7904 -- Starspawn
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7926 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7927 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7928 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 7968 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 7981 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8053 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8119 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 8124 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8126 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8127 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8128 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8130 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 8140 -- High Seraphine
+#armor 158 -- Robes
+#end
+
+#selectmonster 8153 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8168 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8183 -- Naiad Queen
+#armor 158 -- Robes
+#end
+
+#selectmonster 8187 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8194 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8197 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8203 -- Unknown
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 8225 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8228 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8230 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 8231 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 8235 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8239 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8240 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8244 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8254 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8271 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8274 -- Unknown
+#armor 573 -- Garbs
+#end
+
+#selectmonster 8285 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8286 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8295 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8296 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 8307 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8308 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8317 -- Mermaid Enchantress
+#armor 158 -- Robes
+#end
+
+#selectmonster 8318 -- Mermaid Enchantress
+#armor 158 -- Robes
+#end
+
+#selectmonster 8323 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8325 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8326 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8327 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8328 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8329 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8330 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8331 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8343 -- Traveler
+#armor 573 -- Garbs
+#end
+
+#selectmonster 8386 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8391 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8392 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8394 -- Returned King
+#armor 158 -- Robes
+#end
+
+#selectmonster 8414 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 8415 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 8418 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 8419 -- Sun Father
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 8420 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8421 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8422 -- Tridevi of Prosperity
+#armor 158 -- Robes
+#end
+
+#selectmonster 8424 -- Tridevi of Wisdom
+#armor 158 -- Robes
+#end
+
+#selectmonster 8426 -- Trimurti of Protection
+#armor 158 -- Robes
+#end
+
+#selectmonster 8427 -- Trimurti of Creation
+#armor 158 -- Robes
+#end
+
+#selectmonster 8430 -- Neter Father
+#armor 573 -- Garbs
+#end
+
+#selectmonster 8431 -- Neteret Mother
+#armor 158 -- Robes
+#end
+
+#selectmonster 8435 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8436 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8437 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8441 -- Lord of the Undersea
+#armor 572 -- Pelts
+#end
+
+#selectmonster 8509 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8510 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8511 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8512 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8513 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8514 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8515 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8516 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8517 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8518 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8557 -- Lector Priest
+#armor 158 -- Robes
+#end
+
+#selectmonster 8587 -- Ichtycentaur Sage
+#armor 158 -- Robes
+#end
+
+#selectmonster 8588 -- Ichtycentaur Sage
+#armor 158 -- Robes
+#end
+
+#selectmonster 8599 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8607 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 8608 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 8696 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8697 -- Unknown
+#armor 5 -- Leather Cuirass
+#end
+
+#selectmonster 8824 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8875 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8876 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8877 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 8941 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 9058 -- Hierodule
+#armor 158 -- Robes
+#end
+
+#selectmonster 9088 -- Warlock Apprentice
+#armor 158 -- Robes
+#end
+
+#selectmonster 9089 -- Warlock
+#armor 158 -- Robes
+#end
+
+#selectmonster 9104 -- Unknown
+#armor 230 -- Magic Robes
+#end
+
+#selectmonster 9173 -- Unknown
+#armor 158 -- Robes
+#end
+
+#selectmonster 9601 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 9602 -- Unknown
+#armor 572 -- Pelts
+#end
+
+#selectmonster 9611 -- Unknown
+#armor 572 -- Pelts
+#end
+
+
+
+
+
+
+
+
+-- END OF ARMORENINGING
+
 
 -- FOLDUNITS START OF ENKIDU SPRITE EDITS
 
@@ -108584,7 +112953,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 2
 #level 2
 #fort 3  -- Castle
-#temple  -- build Temple
+#temple -- build Temple
 #mon 7983 -- Light Inf
 #mon 7127 -- Heavy Inf
 #com 7984 -- Commander
@@ -114808,7 +119177,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #rarity 5
 #path 2 -- Water
-#earthrange 1
 #look 6
 #end
 
@@ -118924,7 +123292,7 @@ Priests: Average, cannot preach however can perform blood sacrifice. Blood sacri
 #futuresite "LA Great Arrada Heroes"
 
 #idealcold -2
-#fortera 2
+--#fortera 2
 #templepic 0
 #sacrificedom
 #nopreach
@@ -120246,6 +124614,7 @@ Priests: Weak. Can unlock strong priests in capital."
 #riverstart
 #likesterr 0
 #hatesterr 4348
+#uwbuild 1
 
 
 --Dominion
@@ -150271,6 +154640,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #path 1 0
 #pathlevel 1 
 #precision 100
+#effect 10
 #damage 549755813888
 #descr "The caster entreats several battle spirits, known as Tan Garki, to protect a few soldiers. The spirits will deflect and parry roughly half of all incoming attacks."
 #details "Protective Force 20"
@@ -150287,6 +154657,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #path 1 0
 #pathlevel 2 
 #precision 100
+#effect 10
 #damage 549755813888
 #descr "The caster entreats several battle spirits, known as Tan Garki, to protect several soldiers. The spirits will deflect and parry roughly half of all incoming attacks."
 #details "Protective Force 20"
@@ -150303,6 +154674,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #path 1 0
 #pathlevel 3 
 #spec 12599424 -- AN, ignore shields, UWOK, enemy immune
+#effect 10
 #damage 549755813888
 #aoe 666
 #descr "The caster entreats the local battle spirits, known as Tan Garki, to protect the entirety of a local army. The spirits will deflect and parry roughly half of all incoming attacks."
