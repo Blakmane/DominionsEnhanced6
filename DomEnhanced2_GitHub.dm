@@ -17,7 +17,7 @@
 -- Weightlessness cost from 6 -> 4, no longer Incarnate
 -- Air Shield cost from 6 -> 5
 -- Charged Bodies cost from 8 -> 7
--- Flight cost from 9 -> 8
+-- Flight cost from 9 -> 6
 -- Swamp Survival cost from 2 -> 1
 -- Swimming cost from 2 -> 1
 -- Slowing Weapons cost from 5 -> 6, no longer Incarnate
@@ -35,6 +35,7 @@
 -- Fear cost from 9 -> 8
 -- Forest Survival cost from 2 -> 1
 -- Poison Weapons cost from 4 -> 3
+-- Recuperation cost from 5 -> 4, no longer Incarnate
 -- Berserker cost from 5 -> 5, no longer Incarnate
 -- Barkskin cost from 6 -> 5
 -- Obfuscate cost from 6 -> 5
@@ -111,8 +112,8 @@
 #cost0 7 -- 8 -> 7
 #end
 
-#selectbless "Flight" -- 9 -> 8
-#cost0 8 -- 9 -> 8
+#selectbless "Flight" -- 9 -> 6
+#cost0 6 -- 9 -> 6
 #end
 
 #selectbless "Swamp Survival" -- 2 -> 1
@@ -186,6 +187,10 @@
 #cost0 3 -- 4 -> 3
 #end
 
+#selectbless "Recuperation" -- 5 -> 4
+#cost0 4 -- 5 -> 4
+#end
+
 #selectbless "Berserker" -- 5 -> 5
 #cost0 4 -- 5 -> 4
 #cost1 1 --  -> 1
@@ -216,7 +221,13 @@
 #end
 
 
+
 #gemlongevity 2
+
+#slothincome 4
+#turmoilincome 4
+#deathincome 2
+#luckevents 7
 
 
 #newweapon 1501
@@ -3936,6 +3947,16 @@
 #secondaryeffect 1512 -- Stun
 #end
 
+#newweapon 1904 -- Gaueko gaze
+#copyweapon 456 -- Gaze of Fear
+--#copyweapon 440 -- Lesser Fear
+#name "Gaze of Fear"
+#aoe 5
+#range 40
+#att 100
+#ammo 3
+#end
+
 
 -- END OF NEW WEAPONS
 
@@ -4436,6 +4457,10 @@
 
 #selectweapon 491  -- Hydraling Lesser Heads
 #len 1
+#end
+
+#selectweapon 510 -- Divine Grasp
+#bonus
 #end
 
 #selectweapon 513 -- Kopesh
@@ -7540,7 +7565,7 @@
 
 #newmonster 6605
 #name "Jet Warrior"
-#descr "Some Nihualans can trace their heritage directly to the First People, the colossal humanoids who were once the rulers of Nihuala. Though they lack the immense stature of their forebears, they maintain the sacred tradition of fighting with weapons and armor forged from obsidian. These mighty warriors venture forth to defeat any threats to the tribe, riding on powerful black steeds and carrying great hide shields that detail their ancestry. Their distinctive armament has earned them the name Jet Warriors. They are respected by tribsemen and spirits alike and are considered sacred to the Nihualan people. Like all riders of Nihuala, Jet Warriors gain experience faster than other troops."
+#descr "Some Nihualans can trace their heritage directly to the First People, the colossal humanoids who were once the rulers of Nihuala. Though they lack the immense stature of their forebears, they maintain the sacred tradition of fighting with weapons and armor forged from obsidian. These mighty warriors venture forth to defeat any threats to the tribe, riding on powerful black steeds and carrying great hide shields that detail their ancestry. Their distinctive armament has earned them the name Jet Warriors. They are respected by tribesmen and spirits alike and are considered sacred to the Nihualan people. Like all riders of Nihuala, Jet Warriors gain experience faster than other troops."
 #spr1 "nihuala/jetwarrior.tga"
 #spr2 "nihuala/jetwarrior_2.tga"
 #unmountedspr1 "nihuala/un_jetwarrior.tga"
@@ -9210,7 +9235,7 @@
 #armor 105 -- Hide Shield
 #nametype 181  -- Mongolian Female
 #drawsize 0
-#mountmnr 3573
+#mountmnr 3579
 #end
 
 #newmonster 6663
@@ -16467,7 +16492,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr2 "shambhala/rta_dmag_go_2.tga"
 #unmountedspr1 "shambhala/un_rta_dmag_go_1.tga"
 #unmountedspr2 "shambhala/un_rta_dmag_go_2.tga"
-#descr "Ta Mak Go are Shambhalan mounted commanders armed with lance and falchion. Like the Ta Pa cavalry from whom they arise, they wear Mirror Lamellar Armor and ride high-quality steppe horses clad in heavy armor. And similar to the their counterparts in the infantry, they are highly-competent and popular among their subordinates."
+#descr "Ta Mak Go are Shambhalan mounted commanders armed with lance and falchion. Like the Ta Pa cavalry from whom they arise, they wear Mirror Lamellar Armor and ride high-quality steppe horses clad in heavy armor. And similar to their counterparts in the infantry, they are highly-competent and popular among their subordinates."
 #rpcost 1
 #ap 21
 #mapmove 3
@@ -19839,7 +19864,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #expertleader
 #snaketattoo 3
 #boartattoo 5
-#gcost 380
+--#gcost 380
+#gcost 10010
 #rcost 5
 #magicskill 9 3
 #holy
@@ -19951,7 +19977,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #swimming
 #nobadevents 20
 #startage 40
-#gcost 10030
+#gcost 10020
 #magicskill 1 2
 #custommagic 256 10
 #weapon "Fist"
@@ -24639,6 +24665,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #heretic 3
 #incunrest 100
 #unique
+#reformtime 0
 #end
 
 #newmonster 7272
@@ -25459,7 +25486,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 202
 #armor 92
 #armor 545 -- Spectral Plate Cuirass
-#armor 543 -- Spectral Helmet
+#armor 549 -- Spectral Helmet
 #ethereal
 #enc 0
 #coldres 15
@@ -25913,6 +25940,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #descr "Nemedians are the descendants of the Sauromatian Partholonians. They are a highly magical race far superior to ordinary men, but they were few in number. The Nemedians once warred with the Fomorians and were defeated and subjugated. Most have now retreated to the fey realm and eschew the realm of men. The Nemedians have merged the old magical traditions of their Partholonian ancestors and the magic of their Fomorian masters. Sorceresses skilled in Death and Air magic summon whispering shades of mist and darkness."
 #magicskill 1 2
 #gcost 0
+#armor 158 -- robes
 #end
 
 #newmonster 7326
@@ -28135,6 +28163,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #prot 5
 #swampsurvival
 #nametype 113  -- C'tis Male
+#reformtime 0
 #end
 
 #newmonster 7431
@@ -30034,7 +30063,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mapmove 3
 #ap 12
 #noleader
-#maxage 300
+#startage 300
+#maxage 600
 #magicbeing
 #animal
 #flying
@@ -30068,7 +30098,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #descr "The Adze is a vampiric creature found in Machaka. They appear as a large disease ridden fly, however they can take a more human form with a hunchback and sharp talons. The creatures drink the blood of humans and eat their heart and liver, finding children a favorite to feed from. Any creature bitten by an Adze will become infected with a deadly disease. As evil spirits the creatures have some supernatural magical abilities and are particularly strong in Death magic. They must feed each month and the presence of an Adze will disturb the local populace."
 #gcost 0
 #noleader
-#maxage 300
+#startage 300
+#maxage 600
 #magicbeing
 #neednoteat
 #spiritsight
@@ -30699,7 +30730,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #incunrest 20
 #berserk 4
 #undisciplined
-#armor 100  -- Bronze Cuirass
+#armor 9  -- Plate Cuirass
 #supplybonus -5
 #end
 
@@ -35197,6 +35228,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #maxage 300
 #sailing 8 8
 #darkvision 50
+#humanoid
 #itemslots 860678 -- No feet
 #amphibian
 #holy
@@ -35238,6 +35270,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #darkvision 50
 #amphibian
 #holy
+#spellsinger
 #glamour
 #itemslots 860678 -- No feet
 #mountmnr 7781 -- Sacred Swan
@@ -35269,7 +35302,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #prec 12
 #enc 3
 #gcost 0
-#rpcost 78
+#rpcost 0
 #rcost 6
 #ressize 2
 #mapmove 24
@@ -35277,6 +35310,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #maxage 300
 #sailing 8 8
 #darkvision 50
+#lizard
 #itemslots 786432 -- 2 misc
 #glamour
 #flying
@@ -36131,6 +36165,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #magicskill 8 2
 #mr 16
 #mor 14
+#reformtime 0
 #end
 
 #newmonster 7823
@@ -36143,6 +36178,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #hp 14
 #mr 16
 #mor 14
+#reformtime 0
 #end
 
 #newmonster 7824
@@ -46093,8 +46129,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #spr1 "worthy_heroes/stchristopher.tga"
 #spr2 "worthy_heroes/stchristopher2.tga"
 #name "Cynocephalian Saint"
-#fixedname "St. Christopher"
-#descr "St. Christopher was once a feared Cynocephalian warrior of Gog, the flesh-eating tribe of Ind. He vowed to serve only the greatest Dog-Father, and set off to the chieftain who was reputed to be the strongest. One day he saw the chieftain bow to a visiting Viceroy of Ind. He soon departed to look for this King whom even the Dog-Fathers feared. However, on his journey he heard of one even greater than the Prester King himself. He met a hermit who spoke of the Awakening God, and was instructed in this new faith. Christopher began using his great size and strength to assist people in crossing a dangerous river, where they were perishing in the attempt. Soon word spread of this strangely devout warrior and people flocked to hear him speak. St. Christophers devotion is such that he will spread the Dominion of the Awakening God, and his kind acts will quell unrest in the province."
+#fixedname "Christopher"
+#descr "Christopher was once a feared Cynocephalian warrior of Gog, the flesh-eating tribe of Ind. He vowed to serve only the greatest Dog-Father, and set off to the chieftain who was reputed to be the strongest. One day he saw the chieftain bow to a visiting Viceroy of Ind. He soon departed to look for this King whom even the Dog-Fathers feared. However, on his journey he heard of one even greater than the Prester King himself. He met a hermit who spoke of the Awakening God, and was instructed in this new faith. Christopher began using his great size and strength to assist people in crossing a dangerous river, where they were perishing in the attempt. Soon word spread of this strangely devout warrior and people flocked to hear him speak. St. Christophers devotion is such that he will spread the Dominion of the Awakening God, and his kind acts will quell unrest in the province."
 #gcost 0
 #hp 30
 #att 13
@@ -46102,6 +46138,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #mor 16
 #str 15
 #size 4
+#prot 3
 #swimming
 #incunrest -100
 #stealthy 0
@@ -50662,7 +50699,7 @@ Dragon Priests can be recruited in any land fort."
 #darkpower 3
 #weapon 387 -- sleep touch
 #weapon 830 -- magic gore
-#weapon 456 -- Gaze of fear
+#weapon 1904 -- Gaze of fear
 #end
 
 
@@ -52151,7 +52188,7 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #siegebonus 25
 #stealthy 20
 #poorleader
-#mobilearcher 1
+--#mobilearcher 1
 #weapon 253 -- hatchet
 #weapon 1508 -- Airborne Repeating Crossbow
 #weapon 1844 -- Ship Ballistae
@@ -52197,7 +52234,7 @@ While the ship is docked at the Floating City, it can be repaired and receive a 
 #siegebonus 25
 #stealthy 20
 #poorleader
-#mobilearcher 1
+--#mobilearcher 1
 #weapon 253 -- hatchet
 #weapon 1508 -- Airborne Repeating Crossbow
 #weapon 1844 -- Ship Ballistae
@@ -52318,7 +52355,7 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #siegebonus 25
 #stealthy 20
 #poorleader
-#mobilearcher 1
+--#mobilearcher 1
 #weapon 253 -- hatchet
 #weapon 1508 -- Airborne Repeating Crossbow
 #weapon 1844 -- Ship Ballistae
@@ -53627,6 +53664,8 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #att 13
 #hp 16
 #mr 14
+#mor 30
+#gcost 0
 #holy
 #amphibian
 #fireres 15
@@ -55509,6 +55548,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #magicskill 4 1
 #custommagic 1920 100 -- FAWE
 #gcost 10005
+#landshape 9118
 #end
 
 #newmonster 9118 -- MA Pel Hierophant Land
@@ -55526,6 +55566,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #magicskill 4 1
 #custommagic 1920 100 -- FAWE
 #gcost 10005
+#watershape 9117
 #end
 
 #newmonster 9119 -- MA Pel Hierarch Water
@@ -55547,6 +55588,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #custommagic 3840 100 -- AWES
 #magicboost 9 1
 #gcost 10010
+#landshape 9120
 #end
 
 #newmonster 9120 -- MA Pel Hierarch Land
@@ -55566,6 +55608,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #magicskill 9 1 -- H
 #custommagic 3840 100 -- AWES
 #gcost 10010
+#watershape 9119
 #end
 
 #newmonster 9121 -- MA Pel Mystic Guide Water
@@ -55580,6 +55623,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #clearweapons
 #weapon 389
 #holy
+#landshape 9122
 #end
 
 #newmonster 9122 -- MA Pel Mystic Guide Land
@@ -55593,6 +55637,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #clearweapons
 #weapon 389
 #holy
+#watershape 9121
 #end
 
 #newmonster 9123
@@ -57075,7 +57120,563 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #end
 
 
+#newmonster 9187 -- Rashi Knight
+#copystats 3809 -- Lady Knight
+#spr1 "magicenhanced/blue_rashiknight1.png"
+#spr2 "magicenhanced/blue_rashiknight2.png"
+#unmountedspr1 "magicenhanced/un_blue_rashiknight1.png"
+#unmountedspr2 "magicenhanced/un_blue_rashiknight2.png"
+#name "Rashi Knight"
+#descr "The Rashi Knights are regarded as as the most fearsome and powerful force Feminie has to offer, bearing heavy amor and riding the back of a flying Rashi. The Rashi are intelligent pegasi, of which there are three types. This rider is mounted atop a land Rashi that can tell the future and protect their rider from harm. Rashi are difficult to tame, and will only accept riders they deem worthy, and as such only the most skilled knights in Feminie may ride one. The Rashi will grant their rider the effects of Twist Fate in battle."
+#gcost 0
+#twistfate
+#str 12
+#mr 11
+#mor 15
+#skilledrider 6
+#startage 30
+#maxage 70
+#mountmnr 9188
+#end
 
+
+#newmonster 9188 -- Rashi
+#copystats 3556 -- Pegasus
+#spr1 "magicenhanced/blue_rashi1.png"
+#spr2 "magicenhanced/blue_rashi2.png"
+#cleararmor
+#clearspec
+#name "Rashi"
+#descr "The Rashi is an intelligent pegasi, of which there are three types. Rashi of the land are the most common, capable of seeing the future. Heavenly Rashi burn with flaming wings and fiery breath, while Sea Rashi can grant the ability to breathe water and heal with their milk. Rashi are difficult to tame and will only accept riders they deem worthy."
+#gcost 0
+#str 17
+#prot 4
+#mor 12
+#mr 11
+#hp 28
+#nobadevents 5
+#twistfate
+#smartmount 100
+#animal
+#flying
+#armor 254 -- Plate Barding
+#end
+
+#newmonster 9189 -- Rashi Knight Commander
+#copystats 3809 -- Lady Knight
+--#cleararmor
+#clearweapons
+#spr1 "magicenhanced/blue_rashiknightcom1.png"
+#spr2 "magicenhanced/blue_rashiknightcom2.png"
+#unmountedspr1 "magicenhanced/un_blue_rashiknightcom1.png"
+#unmountedspr2 "magicenhanced/un_blue_rashiknightcom2.png"
+#name "Rashi Knight Commander"
+#descr "The Rashi Knights are regarded as as the most fearsome and powerful force Feminie has to offer, bearing heavy amor and riding the back of a flying Rashi. The Rashi are intelligent pegasi, of which there are three types. This rider is mounted atop a Heavenly Rashi, wreathed with flaming wings and bearing a fiery breath. Heavenly Rashi are exceedingly difficult to tame, and will only accept riders they deem worthy, and as such only the most skilled knights in Feminie may hope to ride one. Such a feat is required to become a commander of the Rashi Knights and will mark the rider as sacred to the people of Feminie."
+#gcost 0
+#str 12
+#mr 11
+#mor 15
+#fireres 10
+#fireshield 7
+#hp 14
+#skilledrider 7
+#startage 40
+#maxage 70
+#mountmnr 9190
+#holy
+#magicskill 9 1
+#weapon 4 -- Lance
+#weapon 76 -- Fire Sword
+#end
+
+
+#newmonster 9190 -- Rashi
+#copystats 3556 -- Pegasus
+#spr1 "magicenhanced/blue_firerashi1.png"
+#spr2 "magicenhanced/blue_firerashi2.png"
+#cleararmor
+#clearweapons
+#clearspec
+#name "Heavenly Rashi"
+#descr "The Rashi is an intelligent pegasi, of which there are three types. Rashi of the land are the most common, capable of seeing the future. Heavenly Rashi burn with flaming wings and fiery breath, while Sea Rashi can grant the ability to breathe water and heal with their milk. Heavenly Rashi are exceeingly difficult to tame but exceptionally loyal to their rider, who will be held sacred by the people of Feminie."
+#gcost 0
+#str 17
+#def 13
+#prot 4
+#mor 14
+#mr 13
+#hp 30
+#fireres 25
+#fireshield 7
+#smartmount 100
+#animal
+#flying
+#holy
+#armor 564 -- Fire Plate Barding
+#weapon 55 -- Hoof
+#weapon 676 -- Fiery Breath
+#end
+
+#newmonster 9191 -- Sea Rashi Sorceress
+#copystats 3809 -- Lady Knight
+#cleararmor
+#clearweapons
+#spr1 "magicenhanced/blue_searashisorc1.png"
+#spr2 "magicenhanced/blue_searashisorc2.png"
+#unmountedspr1 "magicenhanced/un_blue_searashisorc1.png"
+#unmountedspr2 "magicenhanced/un_blue_searashisorc2.png"
+#name "Sea Sorceress"
+#descr "The Sea Rashi is a rare Rashi found at the bottom of lakes, more hostile to humans than the other Rashi, but sometimes a skilled sorceress may be deemed worthy to ride one. The Rashi are intelligent pegasi, of which there are three types. The Sea Rashi will increase the sorceress's skill in the magic of Wind and Waves, allow them to grant the ability to breathe underwater, and can heal others with their milk."
+#gcost 0
+#str 10
+#att 9
+#def 9
+#mr 15
+#mor 14
+#giftofwater 150
+#autohealer 1
+#heal
+#magicskill 2 2
+#magicskill 4 2
+#magicskill 1 2
+#skilledrider 4
+#startage 40
+#maxage 70
+#coldres 5
+#mountmnr 9192
+#armor 158 -- Robes
+#weapon 7 -- staff
+#end
+
+#newmonster 9192 -- Sea Rashi
+#copystats 3556 -- Pegasus
+#spr1 "magicenhanced/blue_searashi1.png"
+#spr2 "magicenhanced/blue_searashi2.png"
+#cleararmor
+#clearweapons
+#clearspec
+#name "Sea Rashi"
+#descr "The Rashi is an intelligent pegasi, of which there are three types. Rashi of the land are the most common, capable of seeing the future. Heavenly Rashi burn with flaming wings and fiery breath, while Sea Rashi can grant the ability to breathe water and heal with their milk. Sea Rashi are difficult to tame, found only at the bottom of lakes and oceans, and will only accept riders they deem worthy."
+#gcost 0
+#str 17
+#def 13
+#prot 4
+#mor 14
+#mr 13
+#hp 30
+#coldres 5
+#amphibian
+#smartmount 100
+#animal
+#flying
+--#magicskill 1 2
+--#magicskill 2 2
+#armor 559 -- light leather
+#weapon 55 -- Hoof
+#end
+
+#newmonster 9194 -- Kaji
+#clearweapons
+#cleararmor
+#spr1 "magicenhanced/blue_kaji1.png"
+#spr2 "magicenhanced/blue_kaji2.png"
+#name "Kaji"
+#descr "The Kaji is a deformed and ugly demonic being with great skill in metalworking and magecraft that reside in castle keeps. Once they were known for kidnapping princesses and holding hostages, but in recent times their temper has subsided somewhat and they can be enticed into service with gems. As demons of the land, they may be summoned without blood sacrifice."
+#gcost 0
+#demon
+#startage 200
+#maxage 1000
+#str 13
+#att 11
+#def 11
+#mr 14
+#mor 14
+#prot 5
+#size 3
+#hp 16
+#enc 3
+#ap 8
+#mapmove 16
+#fireres 15
+#magicskill 0 2
+#magicskill 3 2
+--#custommagic 34176 100 -- FAEB
+#fixforgebonus 1
+#armor 10 -- leather hauberk
+#weapon 13 -- hammer
+#end
+
+#newmonster 9195 -- Devi
+#copystats 488 -- Ettin
+#spr1 "magicenhanced/blue_devi1.png"
+#spr2 "magicenhanced/blue_devi2.png"
+#name "Devi"
+#descr "The Devi is a multi-headed giant ogre of the lands of Feminie. They possess remarkable regenerative ability, even able to regenerate a lost head. They first emerged from caves below Feminie after the fall of Ind, and many speculate they originate from cross-breeding experiments of Abysia. Their first appearance was marked with attacks on villages, but they were driven back to their mountains and caves by heroes where they now keep to. They live in families of nine with a Bakbak-Devi at the head, the largest and strongest of the family. Rock throwing is a common way for them to demonstrate their strength and most will carry a few into battle."
+#fireres 5
+#gcost 0
+#def 9
+#hp 34
+#str 20
+#size 5
+#mr 9
+#prot 8
+#regeneration 10
+#heal
+#clearweapons
+#weapon 165 -- Great Club
+#weapon 605 -- Rocks
+#end
+
+#newmonster 9196 -- Devi
+#copystats 488 -- Ettin
+#spr1 "magicenhanced/blue_bakbak1.png"
+#spr2 "magicenhanced/blue_bakbak2.png"
+#name "Bakbak-Devi"
+#descr "The Devi is a multi-headed giant ogre of the lands of Feminie. They possess remarkable regenerative ability, even able to regenerate a lost head. They first emerged from caves below Feminie after the fall of Ind, and many speculate they originate from cross-breeding experiments of Abysia. Their first appearance was marked with attacks on villages, but they were driven back to their mountains and caves by heroes where they now keep to. They live in families of nine with a Bakbak-Devi at the head, the largest and strongest of the family. Rock throwing is a common way for them to demonstrate their strength and most will carry a few into battle. Bakbak-Devi are often skilled in magic."
+#drawsize -10
+#fireres 5
+#gcost 0
+#def 8
+#hp 66
+#size 8
+#mr 12
+#prot 8
+#okleader
+#command -30
+#regeneration 10
+#custommagic 42112 75 -- FENB
+#custommagic 42112 75 -- FENB
+#heal
+#clearweapons
+#weapon 165 -- Great Club
+#weapon 27 -- Boulder
+#end
+
+#newmonster 9193 -- Khvtis Shvilni
+#copystats 1790 -- Nemedian Warrior
+#clearweapons
+#cleararmor
+#spr1 "magicenhanced/blue_shvilni1.png"
+#spr2 "magicenhanced/blue_shvilni2.png"
+#name "Shvilni Warrior"
+#descr "The Shvilni is a band of heroes descended from Nemedians, a magical race far superior to humans, and are renowned for driving back the Devi and defeating the Kaji. The Nemedians once resided in Sauromatia, but left in ages past to war with the Fomorians and were defeated. Most have now retreated to the fey realm, but a few have returned to their homeland in Feminie, where their children are revered as demigod warriors against evil."
+#female
+#gcost 0
+#holy
+#hp 12
+#str 11
+#def 14
+#armor 196 -- golden scale cuirass
+#armor 213 -- golden shield
+#armor 155 -- Golden shield
+#weapon 474 -- Golden Sword
+#end
+
+#newmonster 9197 -- Khvtis Shvilni Champion
+#copystats 1791 -- Nemedian Warrior
+#clearweapons
+#cleararmor
+#clearmagic
+#spr1 "magicenhanced/blue_shvilnichamp1.png"
+#spr2 "magicenhanced/blue_shvilnichamp2.png"
+#name "Shvilni Champion"
+#descr "The Shvilni is a band of heroes descended from Nemedians, a magical race far superior to humans, and are renowned for driving back the Devi and defeating the Kaji. The Nemedians once resided in Sauromatia, but left in ages past to war with the Fomorians and were defeated. Most have now retreated to the fey realm, but a few have returned to their homeland in Feminie, where their children are revered as demigod warriors against evil. Champions among them are skilled in the magic of their ancestry."
+#female
+#gcost 0
+#holy
+#hp 14
+#str 12
+#def 15
+#magicskill 7 1
+#magicskill 9 1
+#custommagic 20736 100 -- ADG
+#armor 196 -- golden scale cuirass
+#armor 213 -- golden shield
+#armor 155 -- Golden shield
+#weapon 474 -- Golden Sword
+#end
+
+#newmonster 9198 -- Tamar
+#copystats 3816 -- Sage-Queen
+#spr1 "worthy_heroes/blue_tamar1.png"
+#spr2 "worthy_heroes/blue_tamar2.png"
+#name "Great Queen"
+#fixedname "Tamar"
+#descr "Tamar the Great is the current ruling Queen of Feminie. Under her guidance, Feminie has entered a golden age of growth and discovery that may surpass even the heights of the mighty Ind empire from which Feminie descends. Tamar is an exceptionally powerful sage who has surpassed all others in the arts of Fire, Glamour, and Astral. She is a holy icon to the people of Feminie, exalted as protector of the widowed and the thrice blessed, and her presence both quells dissent and strengthens the faith of the people. Tamar martials the armies of Feminie to march beyond the Veil and reconquer the lost empires of Ind, so that she may establish her name in the annals of history and seat her God upon the throne of the Pantokrator."
+#gcost 0
+#incunrest -50
+#clearmagic
+#cleararmor
+#armor 158
+#maxage 80
+#str 9
+#att 9
+#def 9
+#magicskill 0 3
+#magicskill 4 4
+#magicskill 7 4
+#magicskill 9 3
+#end
+
+#newmonster 9199 -- Avtandil
+#copystats 3325 -- Orionde Knight
+#spr1 "worthy_heroes/blue_avtandil1.png"
+#spr2 "worthy_heroes/blue_avtandil2.png"
+#unmountedspr1 "worthy_heroes/blue_avtandil1.png"
+#unmountedspr2 "worthy_heroes/blue_avtandil2.png"
+#name "Wandering Knight"
+#fixedname "Avtandil"
+#descr "Of all the virtuous knights in the realm of Feminie, Avtandil is the most shining example. Though hailing from another land, she has unwavering loyalty to her Queen and great skill at arms. Avtandil proved herself when she rescued the Queen when she was still a princess from a band of Kaji that held her hostage with the aid of a companion in lion's skin. She has since formed a close friendship with the Queen and King Consort, acting as their most trusted advisor, general, and diplomat. Avtandil is a warrior of great renown who fearlessly slays monsters with her magical sword. Having ranged as far as as the lands of Patala and Tien Chi in her youth, Avantadil has learned how to lead vast armies of both mundane and mystical beings."
+#gcost 0
+#def 13
+#att 13
+#hp 14
+#mr 15
+#mor 15
+#inspirational 1
+#superiorleader
+#goodmagicleader
+#magicskill 0 1 -- F
+#magicskill 3 1 -- E
+#magicskill 6 1 -- N
+#weapon 4 -- Lance
+#weapon 466 -- Apotropaic Sword
+#skilledrider 7
+#cleararmor
+#armor 19 -- full plate
+#armor 21 -- ful helm
+#armor 3 -- kite shield
+#end
+
+#newmonster 9200 -- Tariel
+#copystats 3324 -- Orionde Warrior
+#spr1 "worthy_heroes/blue_tariel1.png"
+#spr2 "worthy_heroes/blue_tariel2.png"
+#name "Man in Lion's Skin"
+#fixedname "Tariel"
+#descr "Tariel is the King Consort of Feminie, spouse to the current Queen of Feminie. He once rescued the Queen while she was still a princess from a band of Kaji that held her hostage with the aid of a wandering knight. While still not trusted with authority as a man, his position affords him greater freedom and he may fight alongside the Knights of Feminie. Some say he is too much of a wild spirit, still wearing the pelt of a lion he killed in his youth to this day, but he is a fierce warrior and has picked up some skill in magic through the years."
+#gcost 0
+#str 13
+#att 13
+#def 13
+#mor 18
+#mr 15
+#hp 16
+#stealthy 20
+#magicskill 1 1 -- A
+#magicskill 2 1 -- W
+#magicskill 4 2 -- S
+#magicskill 6 1 -- N
+#invulnerable 18
+#cleararmor
+#clearweapons
+#armor 184 -- Kith Lion Pelt
+#weapon 1695 -- Hero's Blade
+#end
+
+#newmonster 9201 -- Kopala
+#copystats 1791 -- Nemedian Warrior
+#spr1 "worthy_heroes/blue_kopala1.png"
+#spr2 "worthy_heroes/blue_kopala2.png"
+#name "Ghvtis Shvilni"
+#fixedname "Kopala"
+#descr "Kopala is one of the Shvilni, the descendents of the Nemedians now returned to their homeland. When the Dev emerged to the lands of Feminie, the Shvilni were the ones who drove them back, and Kopala is revered as the strongest among them. She gained her reputation for her incredible might after defeating a band of ogres in a boulder-throwing contest, and it is claimed she can throw immense rocks with each hand across the length of an entire valley. Now with the coming of the Awakening God, she has pledged her service to the Queen. She is skilled in the magic of her ancestry, and will always have the effects of Trueshot in combat."
+#gcost 0
+#female
+#gcost 0
+#holy
+#hp 16
+#att 15
+#str 16
+#def 15
+#prec 15
+#mor 15
+#onebattlespell 1105 -- Trueshot
+#magicskill 1 2 -- A
+#magicskill 5 1 -- D
+#magicskill 7 1 -- G
+#magicskill 9 1
+#armor 196 -- golden scale cuirass
+#armor 213 -- golden shield
+#armor 155 -- Golden shield
+#weapon 474 -- Golden Sword
+#weapon 27 -- Boulder
+#end
+
+#newmonster 9202 -- Natsiliani multihero
+#copystats 3820 -- Unseen One
+#spr1 "worthy_heroes/blue_natsiliani1.png"
+#spr2 "worthy_heroes/blue_natsiliani2.png"
+#name "Natsiliani"
+#descr "Throughout Feminie there lies scatted many abandoned abbeys and monasteries, whos catacombs are filled with the secrets of ancient Ind. It is customary for the common folk of Feminie to make pilgrimages to these often dangerous and crumbling sites, to reaffirm their faith in the Divine. On occasion, a lone pilgrim will return from the depths of a ruin marked by a mysterious power. From that point on they have become a Natsiliani, chosen by the Divine to fulfill a singular holy purpose, and gifted great magical and martial skill to achieve that end. A soft light radiates from the backs of the Natsiliani as if from a great magical sigil. No woman or man has ever seen the source of this light, as the Natsiliani never reveal their backs or willingly discuss it. If their back is ever exposed, those who view the source of the light are struck blind and the Natsiliani instantly stripped of their powers. No follower of the newly Awakening God would ever attempt such a foul act, as the Natsiliani are revered as divine warriors who inspire great deeds of faith in Feminie's common soldiers."
+#gcost 0
+#str 13
+#att 14
+#def 15
+#mor 14
+#spiritsight
+#magicbeing
+#clearmagic
+#magicskill 7 2 -- G
+#magicskill 9 2 -- H
+#custommagic 27264 100
+#custommagic 27264 100
+#custommagic 27264 100
+#end
+
+
+#newmonster 8912 -- Magindara Maharlika water shape
+#spr1 "blue_bantaytubig/magindaramaharlika1.png"
+#spr2 "blue_bantaytubig/magindaramaharlika2.png"
+#name "Magindara Maharlika"
+#descr "Magindara are amphibious beings with the appearance of a beautiful woman bearing a fish tail instead of legs that they can remove to walk on land. Blessed with supernatural beauty, few mortals would think of harming them and they are considered sacred in Bantay Tubig. The Maharlika is the warrior caste in Bantay Tubig, they are exempt from taxes and are expected to prepare and provide weapons at their own expense in times of war, as well as provide military service. Magindara warriors are rare and fight with no less ferocity than the Siyokoy."
+#rpcost 22
+#rcost -3 -- Slight caste discount
+#hp 13
+#str 11
+#att 12
+#def 13
+#mor 13
+#prec 10
+#prot 1
+#size 3
+#mr 13
+#enc 3
+#mapmove 16
+#ap 17
+#gcost 10020
+#weapon 1821 -- Sibat
+#weapon 1822 -- Salapáng
+#armor 25 -- Turtle shield
+#armor 140 -- Shell Armor
+#armor 24 -- Coral Cap
+#amphibian
+#holy
+#float
+#female
+#awe 2
+#maxage 300
+#startage 80
+#nametype 130 -- indian female
+#humanoid
+#itemslots 860678
+#landshape 8913
+#end
+
+#newmonster 8913 -- Magindara Maharlika land shape
+#spr1 "blue_bantaytubig/magindaramaharlikaland1.png"
+#spr2 "blue_bantaytubig/magindaramaharlikaland2.png"
+#name "Magindara Maharlika"
+#descr "Magindara are amphibious beings with the appearance of a beautiful woman bearing a fish tail instead of legs that they can remove to walk on land. Blessed with supernatural beauty, few mortals would think of harming them and they are considered sacred in Bantay Tubig. The Maharlika is the warrior caste in Bantay Tubig, they are exempt from taxes and are expected to prepare and provide weapons at their own expense in times of war, as well as provide military service. Magindara warriors are rare and fight with no less ferocity than the Siyokoy."
+#humanoid
+#ap 12
+#rpcost 22
+#rcost -3 -- Slight caste discount
+#hp 13
+#str 11
+#att 12
+#def 13
+#mor 13
+#prec 10
+#prot 1
+#size 3
+#mr 13
+#enc 3
+#mapmove 16
+#gcost 10020
+#weapon 1821 -- Sibat
+#weapon 1822 -- Salapáng
+#armor 25 -- Turtle shield
+#armor 140 -- Shell Armor
+#armor 24 -- Coral Cap
+#amphibian
+#holy
+#female
+#awe 2
+#maxage 300
+#startage 80
+#nametype 130 -- indian female
+#humanoid
+#itemslots 860678
+#watershape 8912
+#end
+
+
+#newmonster 9203 -- Magindara Maharlika water shape B
+#copystats 8912
+#spr1 "blue_bantaytubig/magindaramaharlika1b.png"
+#spr2 "blue_bantaytubig/magindaramaharlika2b.png"
+#name "Magindara Maharlika"
+#descr "Magindara are amphibious beings with the appearance of a beautiful woman bearing a fish tail instead of legs that they can remove to walk on land. Blessed with supernatural beauty, few mortals would think of harming them and they are considered sacred in Bantay Tubig. The Maharlika is the warrior caste in Bantay Tubig, they are exempt from taxes and are expected to prepare and provide weapons at their own expense in times of war, as well as provide military service. Magindara warriors are rare and fight with no less ferocity than the Siyokoy."
+#rpcost 22
+#rcost -3 -- Slight caste discount
+#gcost 10022
+#clearweapons
+#weapon 1821 -- Sibat
+#weapon 1821 -- Sibat
+#cleararmor
+#armor 140 -- Shell Armor
+#armor 24 -- Coral Cap
+#landshape 9204
+#ambidextrous 3
+#end
+
+#newmonster 9204 -- Magindara Maharlika land shape B
+#copystats 8913
+#spr1 "blue_bantaytubig/magindaramaharlikaland1b.png"
+#spr2 "blue_bantaytubig/magindaramaharlikaland2b.png"
+#name "Magindara Maharlika"
+#descr "Magindara are amphibious beings with the appearance of a beautiful woman bearing a fish tail instead of legs that they can remove to walk on land. Blessed with supernatural beauty, few mortals would think of harming them and they are considered sacred in Bantay Tubig. The Maharlika is the warrior caste in Bantay Tubig, they are exempt from taxes and are expected to prepare and provide weapons at their own expense in times of war, as well as provide military service. Magindara warriors are rare and fight with no less ferocity than the Siyokoy."
+#rpcost 22
+#rcost -3 -- Slight caste discount
+#gcost 10022
+#clearweapons
+#weapon 1821 -- Sibat
+#weapon 1821 -- Sibat
+#cleararmor
+#armor 140 -- Shell Armor
+#armor 24 -- Coral Cap
+#watershape 9203
+#ambidextrous 3
+#end
+
+#newmonster 9205 -- Magindara Maharlika water shape C
+#copystats 8912
+#spr1 "blue_bantaytubig/magindaramaharlika1c.png"
+#spr2 "blue_bantaytubig/magindaramaharlika2c.png"
+#name "Magindara Maharlika"
+#descr "Magindara are amphibious beings with the appearance of a beautiful woman bearing a fish tail instead of legs that they can remove to walk on land. Blessed with supernatural beauty, few mortals would think of harming them and they are considered sacred in Bantay Tubig. The Maharlika is the warrior caste in Bantay Tubig, they are exempt from taxes and are expected to prepare and provide weapons at their own expense in times of war, as well as provide military service. Magindara warriors are rare and fight with no less ferocity than the Siyokoy."
+#rpcost 22
+#rcost -3 -- Slight caste discount
+#gcost 10022
+#clearweapons
+#weapon 1824 -- Buntot Pagi
+#weapon 671 -- Dagger
+#cleararmor
+#armor 140 -- Shell Armor
+#armor 24 -- Coral Cap
+#landshape 9206
+#ambidextrous 3
+#end
+
+#newmonster 9206 -- Magindara Maharlika land shape C
+#copystats 8913
+#spr1 "blue_bantaytubig/magindaramaharlikaland1c.png"
+#spr2 "blue_bantaytubig/magindaramaharlikaland2c.png"
+#name "Magindara Maharlika"
+#descr "Magindara are amphibious beings with the appearance of a beautiful woman bearing a fish tail instead of legs that they can remove to walk on land. Blessed with supernatural beauty, few mortals would think of harming them and they are considered sacred in Bantay Tubig. The Maharlika is the warrior caste in Bantay Tubig, they are exempt from taxes and are expected to prepare and provide weapons at their own expense in times of war, as well as provide military service. Magindara warriors are rare and fight with no less ferocity than the Siyokoy."
+#rpcost 22
+#rcost -3 -- Slight caste discount
+#gcost 10022
+#clearweapons
+#weapon 1824 -- Buntot Pagi
+#weapon 671 -- Dagger
+#cleararmor
+#armor 140 -- Shell Armor
+#armor 24 -- Coral Cap
+#watershape 9205
+#ambidextrous 3
+#end
 
 
 
@@ -57673,7 +58274,8 @@ Guul Lich practice the magic of the Thram'zu and can reanimate 15 powerful deep 
 #neednoteat
 #spiritsight
 #immortal
-#reformtime -2
+--#reformtime -2
+#reformtime 0
 #incscale 3 -- Death
 #maxage 1500
 #older -134
@@ -57731,7 +58333,8 @@ Guul Lich practice the magic of the Thram'zu and can reanimate 15 powerful deep 
 #neednoteat
 #spiritsight
 #immortal
-#reformtime -2
+--#reformtime -2
+#reformtime 0
 #incscale 3 -- Death
 #maxage 1500
 #older -134
@@ -60434,56 +61037,6 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #mountedinspector
 #end
 
-#newmonster 8912 -- Magindara Maharlika water shape
-#spr1 "blue_bantaytubig/magindaramaharlika1.png"
-#spr2 "blue_bantaytubig/magindaramaharlika2.png"
-#name "Magindara Maharlika"
-#descr "Magindara are amphibious beings with the appearance of a beautiful woman bearing a fish tail instead of legs that they can remove to walk on land. Blessed with supernatural beauty, few mortals would think of harming them and they are considered sacred in Bantay Tubig. The Maharlika is the warrior caste in Bantay Tubig, they are exempt from taxes and are expected to prepare and provide weapons at their own expense in times of war, as well as provide military service. Magindara warriors are rare and fight with no less ferocity than the Siyokoy."
-#rpcost 22
-#rcost -3 -- Slight caste discount
-#hp 13
-#str 10
-#att 12
-#def 13
-#mor 13
-#prec 10
-#prot 1
-#size 3
-#mr 13
-#enc 3
-#mapmove 16
-#ap 17
-#gcost 10020
-#weapon 1821 -- Sibat
-#weapon 1822 -- Salapáng
-#armor 25 -- Turtle shield
-#armor 140 -- Shell Armor
-#armor 24 -- Coral Cap
-#amphibian
-#holy
-#float
-#female
-#awe 1
-#maxage 300
-#startage 80
-#nametype 130 -- indian female
-#humanoid
-#itemslots 860678
-#landshape 8913
-#end
-
-#newmonster 8913 -- Magindara Maharlika land shape
-#copystats 8912
-#spr1 "blue_bantaytubig/magindaramaharlikaland1.png"
-#spr2 "blue_bantaytubig/magindaramaharlikaland2.png"
-#name "Magindara Maharlika"
-#descr "Magindara are amphibious beings with the appearance of a beautiful woman bearing a fish tail instead of legs that they can remove to walk on land. Blessed with supernatural beauty, few mortals would think of harming them and they are considered sacred in Bantay Tubig. The Maharlika is the warrior caste in Bantay Tubig, they are exempt from taxes and are expected to prepare and provide weapons at their own expense in times of war, as well as provide military service. Magindara warriors are rare and fight with no less ferocity than the Siyokoy."
-#humanoid
-#watershape 8912
-#landshape -1
-#ap 12
-#end
-
 #newmonster 8914 -- Mambubuno 1
 #spr1 "blue_bantaytubig/mambubuno1.png"
 #spr2 "blue_bantaytubig/mambubuno2.png"
@@ -60705,12 +61258,13 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #enc 3
 #mapmove 16
 #ap 20
-#gcost 10013
+#gcost 160
 #weapon 92 -- Fist
 #aquatic
 #float
 #magicskill 7 2 -- Glamour
-#seduce 10
+--#seduce 10
+#stealthy 0
 #giftofwater 10
 #darkvision 50
 #maxage 100
@@ -60798,15 +61352,40 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #end
 
 #newmonster 8924 -- Magindara Katalonan land shape
-#copystats 8923
 #spr1 "blue_bantaytubig/magindarakatalonanland1.png"
 #spr2 "blue_bantaytubig/magindarakatalonanland2.png"
 #name "Magindara Katalonan"
 #descr "Magindara are amphibious beings with the appearance of a beautiful woman bearing a fish tail instead of legs that they can remove to walk on land. Blessed with supernatural beauty, few mortals would think of harming them and they are considered sacred in Bantay Tubig. Katalonan are mage-priests of Bantay Tubig, and Magindara katalonan are trained in potent magic using enchanted voice. Magindara do not have the same disdain for land dwellers as their Siyokoy counterparts, often regarded as guardian spirits by fishermen, and can be found in rivers and lakes as well as in the sea."
-#humanoid
-#watershape 8923
-#landshape -1
+#rpcost 2
+#hp 9
+#str 9
+#att 8
+#def 8
+#mor 11
+#prec 10
+#prot 1
+#size 3
+#mr 15
+#enc 3
+#mapmove 16
 #ap 12
+#gcost 10010
+#weapon 92 -- Fist
+#amphibian
+#magicskill 2 2 -- Water
+#magicskill 7 1 -- Glamour
+#magicskill 9 1 -- Holy
+#custommagic 25344 100 -- AWNG
+#spellsinger
+#holy
+#female
+#awe 1
+#maxage 300
+#startage 80
+#nametype 130 -- indian female
+#humanoid
+#itemslots 860678
+#watershape 8923
 #end
 
 #newmonster 8925 -- Kabalan Osuang
@@ -61020,9 +61599,41 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #spr2 "blue_bantaytubig/katawland2.png"
 #name "Kataw"
 #descr "Kataw are the reigning rulers of Bantay Tubig, beings that appear as beautiful women bearing a fish tail instead of legs that they can remove to walk on land. Blessed with supernatural beauty, few mortals would think of harming them and they are held sacred in Bantay Tubig. Kataw are powerful mages of Air and Water and control the waves and tides of the surrounding seas."
+#rpcost 4
+#hp 17
+#str 11
+#att 11
+#def 12
+#mor 13
+#prec 10
+#prot 1
+#size 4
+#mr 18
+#enc 3
+#mapmove 16
+#ap 17
+#gcost 10020
+#weapon 92 -- fist
+#amphibian
+#magicskill 1 3 -- Air
+#magicskill 2 3 -- Water
+#magicskill 7 1 -- Glamour
+#magicskill 9 2 -- Holy
+#custommagic 13056 10 -- AWDN
+#holy
+#female
+#awe 3
+#maxage 500
+#startage 220
+#nametype 130 -- indian female
 #humanoid
+#itemslots 860678
+#landshape 8931
+#okleader
+#inspirational 2
+#magicbeing
+#giftofwater 60
 #watershape 8930
-#landshape -1
 #ap 12
 #end
 
@@ -61094,7 +61705,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #enc 3
 #mapmove 14
 #ap 10
-#gcost 10035
+#gcost 230
 #weapon 1821 -- Sibat
 #armor 161 -- Jeweled Breastplate
 #armor 148 -- Crown
@@ -61337,7 +61948,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #prec 12
 #prot 6
 #size 6
-#mr 11
+#mr 16
 #enc 3
 #mapmove 20
 #ap 32
@@ -61577,7 +62188,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #mor 20
 #prec 5
 #prot 14
-#unsurr 14
+#unsurr 6
 #size 10
 #mr 15
 #enc 2
@@ -63114,6 +63725,141 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 -- END NEW UW UNITS
+
+
+-- Immortal Lich/Vampire reformtime changes
+
+
+#selectmonster 178 -- Lich
+#reformtime 0
+#end
+
+#selectmonster 179 -- Master Lich
+#reformtime 0
+#end
+
+#selectmonster 180 -- Demilich
+#reformtime 0
+#end
+
+#selectmonster 320 -- Grand Saurolich
+#reformtime 0
+#end
+
+#selectmonster 395 -- Lich Queen
+#reformtime 0
+#end
+
+#selectmonster 404 -- Vampire Lord
+#reformtime 0
+#end
+
+#selectmonster 405 -- Vampire
+#reformtime 0
+#end
+
+#selectmonster 862 -- Vampire Queen
+#reformtime 0
+#end
+
+#selectmonster 1019 -- Vampire Count
+#reformtime 0
+#end
+
+#selectmonster 1035 -- Blood Marshal
+#reformtime 0
+#end
+
+#selectmonster 2737 -- Immortal Coya
+#reformtime 0
+#end
+
+#selectmonster 3244 -- Blood Countess
+#reformtime 0
+#end
+
+#selectmonster 3245 -- Vampire Countess
+#reformtime 0
+#end
+
+#selectmonster 3251 -- Vampire Count
+#reformtime 0
+#end
+
+#selectmonster 3252 -- Vivisectionist
+#reformtime 0
+#end
+
+#selectmonster 3253 -- Vampire Count
+#reformtime 0
+#end
+
+#selectmonster 3254 -- Vampire Lord
+#reformtime 0
+#end
+
+#selectmonster 3255 -- Blood Graf
+#reformtime 0
+#end
+
+#selectmonster 3274 -- Vampire Count
+#reformtime 0
+#end
+
+#selectmonster 3941 -- Lich
+#reformtime 0
+#end
+
+#selectmonster 3942 -- Lich Hag
+#reformtime 0
+#end
+
+#selectmonster 3943 -- Lich
+#reformtime 0
+#end
+
+#selectmonster 3944 -- Lich Hag
+#reformtime 0
+#end
+
+#selectmonster 3945 -- Lich
+#reformtime 0
+#end
+
+#selectmonster 3946 -- Saurolich
+#reformtime 0
+#end
+
+#selectmonster 3947 -- Lich
+#reformtime 0
+#end
+
+#selectmonster 3948 -- Lich
+#reformtime 0
+#end
+
+#selectmonster 3949 -- Lich
+#reformtime 0
+#end
+
+#selectmonster 3950 -- Lich
+#reformtime 0
+#end
+
+#selectmonster 3951 -- God Lich
+#reformtime 0
+#end
+
+#selectmonster 3952 -- God Lich
+#reformtime 0
+#end
+
+#selectmonster 4021 -- Lich Oracle
+#reformtime 0
+#end
+
+
+
 
 -- Pale One reinvigoration and strength:
 
@@ -67233,9 +67979,7 @@ Only three Queens of Elemental Water are known to exist."
 
 
 
-
 -- FOLDUNITS
-
 
 
 
@@ -67254,7 +67998,7 @@ Only three Queens of Elemental Water are known to exist."
 #mor 30
 #mr 18
 #nametype 170
-#djinn -- bodytype for hit locations
+#djinn  -- bodytype for hit locations
 #heat 0
 #uwheat 6
 #fireshield 0
@@ -69243,7 +69987,7 @@ Only three Queens of Elemental Water are known to exist."
 #prot 0
 #mr 18
 #nametype 170
-#djinn -- bodytype for hit locations
+#djinn  -- bodytype for hit locations
 #firepower 0
 #expertmagicleader
 #goodleader
@@ -72059,6 +72803,10 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #pathcost 250
 #moreprod 1
 
+#moreorder 1
+
+#moreluck 1
+
 #moremagic -1
 #mor 30
 #hp 95
@@ -73990,7 +74738,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Spirit of Justice"
 #descr "The Spirit of Justice and her daughters the Spirit of Moral Virtue and the Spirit of Unanimity have existed since ancient times. Under the reign of the Pantokrator they acted as enforcers of law and agents of his vengeance, punishing wrongdoers and those that had angered the Mighty One. With the Pantokrator gone the people have begun to make offerings to the Spirits to bring them Justice and Virtue, and they have taken on the mantle of a Pretender God to claim the Throne of Heaven for themselves. The Spirits are surrounded with a powerful Aura of Splendor and will be almost impossible for mortals to strike at. Anyone injuring the Spirits will have their blow revisited upon them."
 #diseaseres 100
-#gcost 280
+#gcost 240
 #homerealm 3
 #startdom 2
 #pathcost 40
@@ -74043,7 +74791,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Spirit of Moral Virtue"
 #descr "The Spirit of Justice and her daughters the Spirit of Moral Virtue and the Spirit of Unanimity have existed since ancient times. Under the reign of the Pantokrator they acted as enforcers of law and agents of his vengeance, punishing wrongdoers and those that had angered the Mighty One. With the Pantokrator gone the people have begun to make offerings to the Spirits to bring them Justice and Virtue. Now they have taken on the mantle of a Pretender God to claim the Throne of Heaven for themselves. The Spirits are surrounded with a powerful Aura of Splendor and will be almost impossible for mortals to strike at. Anyone injuring the Spirits will have their blow revisited upon them."
 #diseaseres 100
-#gcost 280
+#gcost 240
 #startdom 2
 #mor 30
 #hp 25
@@ -74078,7 +74826,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #okmagicleader
 #female
 #triplegod 8
-#triplegodmag 1
+--#triplegodmag 1
 #triple3mon
 #itemslots 991750
 #clearmagic
@@ -74093,7 +74841,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Spirit of Unanimity"
 #descr "The Spirit of Justice and her daughters the Spirit of Moral Virtue and the Spirit of Unanimity have existed since ancient times. Under the reign of the Pantokrator they acted as enforcers of law and agents of his vengeance, punishing wrongdoers and those that had angered the Mighty One. With the Pantokrator gone the people have begun to make offerings to the Spirits to bring them Justice and Virtue. Now they have taken on the mantle of a Pretender God to claim the Throne of Heaven for themselves. The Spirits are surrounded with a powerful Aura of Splendor and will be almost impossible for mortals to strike at. Anyone injuring the Spirits will have their blow revisited upon them."
 #diseaseres 100
-#gcost 280
+#gcost 240
 #startdom 2
 #mor 30
 #hp 25
@@ -74127,7 +74875,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #okmagicleader
 #female
 #triplegod 8
-#triplegodmag 1
+--#triplegodmag 1
 #triple3mon
 #itemslots 991750
 #clearmagic
@@ -76987,6 +77735,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #weapon 835
 #researchbonus 10
 #magicstudy 1
+#poisonres 10
 #itemslots 786462
 #clearmagic
 #magicskill 2 3
@@ -77041,6 +77790,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #weapon 835
 #researchbonus 10
 #magicstudy 1
+#poisonres 10
 #itemslots 786462
 #clearmagic
 #magicskill 2 3
@@ -77061,7 +77811,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 
 #moregrowth 1
 #mor 30
-#hp 75
+#hp 90
 #prot 3
 #str 22
 #att 12
@@ -77286,6 +78036,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #ethereal
 #neednoteat
 #spiritsight
+#weapon 229 -- Flame Strike
 #itemslots 786432
 #clearmagic
 #magicskill 0 1
@@ -77460,6 +78211,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #float
 #mapmove 20
 #enc 1
+#stealthy 50
 #itemslots 3932160
 #clearmagic
 #magicskill 7 3
@@ -80057,7 +80809,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 1372 -- Annunaki of the Sky
 #descr "The Annunaki is a giant of divine heritage. He claims dominion over thunder, lightning and everything that flies. With the disappearance of the Pantokrator, there is no one to stop him from claiming the world beneath his aerial dominion."
 #diseaseres 100
-#gcost 260
+#gcost 250
 #pathcost 40
 #hp 90
 #prot 3
@@ -80075,7 +80827,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 1373 -- Annunaki of Sweet Water
 #descr "The Annunaki is a giant of divine heritage. During the reign of the previous Pantokrator he was guardian of the underwater ocean and its hidden secrets. With the disappearance of the Pantokrator, he will use these secrets to claim the entirety of this world. The currents move at the command of the Annunaki and will always be favourable to him in combat. This will hinder his enemies and help his allies in combat whilst below the waves."
 #diseaseres 100
-#gcost 280
+#gcost 270
 #pathcost 40
 #hp 90
 #prot 3
@@ -80851,7 +81603,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2436 -- Annunaki of the Moon
 #descr "The Annunaki is a giant of divine heritage. He was once the Guide of the Moon and the principle behind astrology, and as such, one of the most important servants of the Pantokrator. With the Pantokrator gone, he has foreseen that he will become the lord of this world."
 #diseaseres 100
-#gcost 260
+#gcost 250
 #pathcost 40
 #hp 90
 #prot 3
@@ -83592,7 +84344,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3369 -- Ilahat of Fate
 #descr "The Ilahat is a giant of divine heritage. A previous Pantokrator gave her mandate over the planets and Fate itself. Thus the fate of men was hers to decide. When mankind realized her influence over their lives, they began to worship her as a God. The Pantokrator was furious, imprisoned her for eternity and gave the Mandate of Fate to a better suited candidate. Now with the Pantokrator gone, the Ilahat is free to once more decide the Fate of the world."
 #diseaseres 100
-#gcost 250
+#gcost 240
 #pathcost 40
 #moreluck 1 
 #moremagic 1
@@ -83612,7 +84364,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3370 -- Ilahat of Might
 #descr "The Ilahat is a giant of divine heritage. A previous Pantokrator took her as his wife and gave her mandate to rule the world. When mankind began to worship her as well, the Pantokrator he was furious, imprisoned her for eternity and punished mankind with labor and strife. Now with the Pantokrator gone the Ilahat is free to once more rule the world."
 #diseaseres 100
-#gcost 270
+#gcost 260
 #pathcost 40
 #moreorder 1 
 #moreprod 1
@@ -83676,7 +84428,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3387 -- Ilah of the Sacred Mountain
 #descr "The Ilah is a giant of divine heritage. A previous Pantokrator made him guardian of the mountain around which the sun revolves. When men encountered the Sacred Mountain they were led by a serpent to its summit. Here they were approached by the Ilah and they began to worship him as a God. The Pantokrator was furious and imprisoned the Ilah for eternity. Now with the Pantokrator gone, the Ilah will return to rule the world from the mountain at the center of All."
 #diseaseres 100
-#gcost 290
+#gcost 280
 #pathcost 40
 #moreprod 1
 
@@ -84656,7 +85408,6 @@ He is accompanied by the souls of his subjects that have followed him into the w
 
 
 -- ENDUNITS
-
 
 
 
@@ -89575,7 +90326,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 
 #selectmonster 1975  -- Iron Angel
 #descr "A divine being summoned to this world to teach men to trust in themselves and the steel they wield. Armed with formidable gear, Iron Angels silently state the strength of superior skill and true craftsmanship. The Iron Angel teaches men not to trust in either magic or faith and demonstrates the weakness of blind faith by stopping sacred beings in their tracks. Fanatical adherents of other faiths will find themselves awed, belittled and unable to strike the angel. The Iron Angel never uses magic and his fist will strike magical beings with utmost judgment. Whilst at a fort the Angel will inspire great craftsmanship from the inhabitants."
-#montag 1041
 #end
 
 #selectmonster 1978  -- Dust Priest
@@ -91158,6 +91908,11 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #selectmonster 2896  -- Returned
 #descr "When the first Mictlan colony was founded beneath the sea, former Atlantians immigrated to the safety of the citadel in the deep. Rain Warriors and Rain Priests from the jungles of Mictlan were the first to settle in the deeps, but soon other Atlantians previously hiding in gorges and deep kelp forests flocked to the call of the colony's founders. These Atlantians have a darker complexion than the ones from Mictlan. While some of the returned ones have become priests and rulers, there are many old Atlantians who are satisfied with their status as mighty sacred warriors revered by the humans of Mictlan. They call themselves the Returned and have gained considerable status in the underwater parts of the kingdom."
 #holy
+#clearweapons
+#weapon 1545 -- Sharktooth Spear
+#end
+
+#selectmonster 2894  -- Lord of the Deep
 #clearweapons
 #weapon 1545 -- Sharktooth Spear
 #end
@@ -112251,12 +113006,13 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #newsite 2149
 #name "Samhain Gate"
-#path 4 
-#level 0
 #rarity 5
+#level 0
+#path 7
+#look 4
 #conjcost 20
 #enchcost 20
-#incscale 0
+--#incscale 0
 #end
 
 #newsite 2151
@@ -112702,9 +113458,9 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #gems 5 2
 #gems 6 1
 #homemon 6666 -- Darkhad
-#homemon 6656 -- Kheshig
-#homecom 6662 -- Udgan
-#homecom 6664 -- Abjiya
+--#homemon 6656 -- Kheshig
+--#homecom 6662 -- Udgan
+--#homecom 6664 -- Abjiya
 #end
 
 #newsite 2194
@@ -112714,11 +113470,11 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #gems 1 1
 #gems 3 1
-#homemon 6651 -- Novice Warrior
-#homemon 6652 -- Horseman Warrior
-#homemon 6653 -- Heavy Horseman
-#homecom 6665 -- Scout
-#homecom 6657 -- Khan
+--#homemon 6651 -- Novice Warrior
+--#homemon 6652 -- Horseman Warrior
+--#homemon 6653 -- Heavy Horseman
+--#homecom 6665 -- Scout
+--#homecom 6657 -- Khan
 #end
 
 #newsite 2195
@@ -114595,9 +115351,11 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #gems 2 2 -- water
 #gems 6 1 -- nature
 --#homecom 8929 -- Datu
-#homecom 8934 -- Datu w/ Eel
+--#homecom 8934 -- Datu w/ Eel
 #homecom 8930 -- Kataw
 #homemon 8912 -- Magindara Maharlika
+#homemon 9205 -- Magindara Maharlika Whip
+#homemon 9203 -- Magindara Maharlika Spears
 #homemon 8916 -- Ibingan
 #end
 
@@ -116557,11 +117315,20 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #path 7
 #look 7
-#homemon 628 -- lion
+--#homemon 628 -- lion
 #homemon 1140 -- tiger
 #homemon 2398 -- elephant
 #homemon 3009 -- buffalo
+#homemon 9195 -- devi
+#homemon 9193 -- Khvtis Shvilni
+#homemon 9187 -- Rashi Knight
 #homemon 3878 -- lost giant
+#homecom 9189 -- Fire Rashi Knight
+#homecom 9191 -- Sea Rashi Sorceress
+#homecom 9194 -- Kaji
+#homecom 9197 -- Shvilni Champion
+#homecom 9196 -- bakbak devi
+#homecom 7325 -- Nemedian Sorceress
 #homecom 3879 -- lost king
 #homecom 7667 -- lilith
 #homecom 3382 -- yllerion
@@ -116574,6 +117341,11 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 9
 #look 5
 #homecom 3877
+#homecom 9198
+#homecom 9199
+#homecom 9200
+#homecom 9201
+#homecom 9202
 #end
 
 #newsite 2452
@@ -116940,7 +117712,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 5
 #look 1
 #homemon 198 -- ghoul
-#homemon 317 -- soulless
+#homemon 197 -- soulless
 #homemon 914 -- soulless warrior
 #homemon 191 -- longdead
 #homemon 187 -- legionnaire
@@ -118011,7 +118783,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7289 -- Boread
 #homemon 7298 -- kerberos
 #homecom 7680 -- cerulean rishi
-#homecom 7642 -- anu
 #homecom 7252 -- hades
 #homecom 7250 -- athena
 #homecom 7251 -- pose
@@ -118382,7 +119153,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 3066 -- hamadryad
 #homecom 7289 -- Boread
 #homemon 7298 -- kerberos
-#homecom 7642 -- anu
 #homecom 7252 -- hades
 #homecom 7250 -- athena
 #homecom 7251 -- pose
@@ -119179,6 +119949,61 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 2 -- Water
 #look 6
 #end
+
+#newsite 2612
+#clear
+#name "LA Zemaitia Summons"
+#rarity 5
+#level 0
+#path 7
+#look 4
+#homemon 694 -- Bear
+#homemon 1084 -- moose
+#homemon 8020 -- dire bear
+#homemon 1940 -- Zmey
+#homemon 1946 -- firebird
+#homemon 1947 -- simargl
+--#homemon 6673 -- ubir
+--#homemon 7831 -- chort
+#end
+
+#newsite 2613
+#clear
+#name "LA Zemaitia Summons Continued"
+#rarity 5
+#level 0
+#path 7
+#look 4
+#homecom 1941 -- cloud
+#homecom 1942 -- mountain
+#homecom 1943 -- alk
+#homecom 1944 -- gama
+#homecom 1945 -- sirin
+#homecom 1948 -- bukav
+#homecom 1949 -- lesh
+#homecom 1952 -- likho
+#homecom 1953 -- vody
+#homecom 1954 -- rusalk
+#homecom 1955 -- bere
+#homecom 1956 -- midday
+
+#homecom 4092 -- Lauma
+--#homecom 7832 -- bies
+--#homecom 7834 -- domov
+--#homecom 7835 -- kiki
+#end
+
+#newsite 2614
+#clear
+#name "LA Zemaitia Heroes"
+#rarity 5
+#level 0
+#path 9
+#look 3
+#homecom 
+#end
+
+
 
 
 
@@ -123193,27 +124018,35 @@ Priests: Average"
 #hatesterr 224  -- Waste/Swamp/Forest
 #cavenation 0
 #idealcold 0
-#addreccom 9163
-#addreccom 6661
-#addrecunit 6658
-#addrecunit 6659
-#addrecunit 6660
+#addrecunit 6658 -- spearman
+#addrecunit 6659 -- archer
+#addrecunit 6660 -- cataphract
 
 #addforeigncom 6665
+#addreccom 6665
 #addforeigncom 9163
+#addreccom 9163
 #addforeigncom 6661
+#addreccom 6661
 #addforeigncom 6657
+#addreccom 6657
 #addforeigncom 6655
 #addforeigncom 6662
+#addreccom 6662
 #addforeigncom 6663
 #addforeigncom 6664
+#addreccom 6664
 
-#addforeignunit 6650
+#addforeignunit 6650 -- defender
 #addforeignunit 6651
+#addrecunit 6651
 #addforeignunit 6652
+#addrecunit 6652
 #addforeignunit 6653
-#addforeignunit 6654
+#addrecunit 6653
+#addforeignunit 6654 -- pazyryk
 #addforeignunit 6656
+#addrecunit 6656
 
 #startcom 6661
 #startunittype1 6651
@@ -123468,6 +124301,9 @@ Priests: Weak. Most mages are priests and some are Heretics."
 #addgod 10018 -- Asuang
 #addgod 10019 -- Gugurang
 
+#addgod 10011 -- shark god
+#addgod 10016 -- headless titan
+
 #blessbonus 3
 #multihero1 6700 -- Dreamhunter
 #hero1 6701
@@ -123496,7 +124332,7 @@ Priests: Weak. Most mages are priests and some are Heretics."
 #epithet "Eternal Sea"
 #descr "A nation of sailors and warriors, they traveled the eternal sea for ages. With only rudimentary technology, they were able to conquer and unite the islands into a formidable fighting force."
 #flag "sawaikii/flag.tga"
-#brief "The Eternal Sea was settled by the Four Uncreated Beings before the the first sunrise. As time passed, they taught humans the secrets of mana, spiritual energy that exists within the land."
+#brief "The Eternal Sea was settled by the Four Uncreated Beings before the first sunrise. As time passed, they taught humans the secrets of mana, spiritual energy that exists within the land."
 #descr "The society of Sawaiiki revolves around the following of the Kapu, the rules that govern society and the mana. All supernatural and mortal power flows from the Kapu, and the True God is the focus of Kapu and above all others. The Kapu dictates that those who fight are the highest in society, and thefore are considered sacred by those lesser in stature. Even the Kahuna, the sorcerers and healers of Sawaiiki are lesser than the Ali'i. The priests of Sawaiiki include the worshippers of those known as the Four and the Spirit of Ruin, and in battle they aid and harm respectively. With the coming of the Reawakening God, the Ali'i of Sawaiiki set their eyes beyond the isles of the Eternal Sea."
 #summary "Race: Strong and average humans, with shark shapeshifters. Prefer heat scale 1.
 Military: Very cheap levies, plentiful sacreds, and strong summons.
@@ -123541,6 +124377,17 @@ Priests: Powerful, easily recruitable, can perform blood sacrifices. Priests of 
 #hero2 7074
 #multihero1 7058
 #multihero2 7050
+
+#homerealm 10
+
+#addgod 2447 -- idol of men
+#addgod 2448 -- idol of beasts
+#addgod 2449 -- idol of sorcery
+#addgod 8445 -- idol of sustenance
+#addgod 8461 -- idol of seasons
+#addgod 8492 -- idol of thunder
+#addgod 8493 -- idol of war
+
 #addgod 1232 -- Old man of the Sea
 #addgod 1233 -- Lord of the Waves
 
@@ -123563,8 +124410,18 @@ Priests: Powerful, easily recruitable, can perform blood sacrifices. Priests of 
 #cheapgod20 10005 -- bountiful white
 #cheapgod20 10006 -- maggot moon
 
-#airblessbonus 0
-#natureblessbonus 0
+#addgod 8443 -- lord of violent deaths
+#addgod 8441 -- lord of the undersea
+#addgod 8440 -- copper maker
+
+#addgod 10011 -- shark god
+#addgod 10016 -- headless titan
+#addgod 10017 -- volcano turtle
+#addgod 10018 -- darkness diwata
+#addgod 10019 -- volcano diwata
+#cheapgod20 10011 -- shark god
+
+#blessbonus 1
 #color 0.6 0 0
 #secondarycolor 10 0.7 0.2
 #likespop 94  -- Lavaborn
@@ -123578,7 +124435,6 @@ Priests: Powerful, easily recruitable, can perform blood sacrifices. Priests of 
 #futuresite "Sawaiiki Heroes"
 #startsite "The Green Cliff"
 #startsite "Soul's Leap"
-#homerealm 10
 
 #moreheat 1
 #end
@@ -124804,6 +125660,7 @@ Priests: Average"
 #addreccom 8923 -- magindara katalonan
 #addreccom 8922 -- siyokoy katalonan
 --#addreccom 8929 -- datu
+#addreccom 8934 -- Datu w/ Eel
 
 #landcom 8923 -- magindara katalonan
 
@@ -125041,6 +125898,19 @@ Priests: Average"
 
 #futuresite "LA Pyrène Summons"
 #futuresite "LA Pyrène Heroes"
+
+#end
+
+#selectnation 124 -- LA Zemaitia
+
+#uwbuild 1
+--#addgod 3086 -- Deives of the Sun
+--#addgod 8456 -- Bloodstained Edifice
+--#addgod 8502 -- Worm Lord
+
+#futuresite "LA Zemaitia Summons"
+#futuresite "LA Zemaitia Summons Continued"
+#futuresite "LA Zemaitia Heroes"
 
 #end
 
@@ -126771,22 +127641,156 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 #end
 
 #selectnation 119 -- LA Feminie
+#cleargods
+#end
+
+
+#selectnation 119 -- LA Feminie
 #uwbuild 1
+#hero1 3877
+#hero2 9198
+#hero3 9199
+#hero4 9200
+#hero5 9201
+#multihero1 9202
+
+--#cleargods
+#homerealm 3 -- Mediterranean
+#homerealm 5 -- Middle East
+#homerealm 8 -- India
+#addgod 4002 -- First Queen
+
+-- Remove some Greek homerealm:
+#delgod 8495 -- dom4
+#delgod 602 -- dom3
+#delgod 961
+#delgod 1371
+#delgod 2431
+#delgod 8406
+#delgod 8407
+#delgod 383
+#delgod 3121
+#delgod 3395
+#delgod 3895
+#delgod 8343
+
+-- Remove some Middle East homerealm:
+#delgod 957 -- dom3
+#delgod 1097
+#delgod 1372
+--#delgod 1373
+--#delgod 1384
+#delgod 2436
+#delgod 2437
+--#delgod 3386
+--#delgod 3387
+--#delgod 3388
+#delgod 8339
+#delgod 655 -- dom2
+#delgod 661
+#delgod 2137
+#delgod 2788
+#delgod 8351
+
+-- Remove African homerealm:
+#delgod 8485 -- dom4
+#delgod 8460
+#delgod 159
+#delgod 384 -- dom3
+#delgod 385
+#delgod 386
+#delgod 387
+#delgod 388
+#delgod 1097
+#delgod 2445
+#delgod 2446
+#delgod 2464
+#delgod 8339
+#delgod 8405
+#delgod 8429
+#delgod 2790 -- dom2 (keep lich queen and Phoenix)
+#delgod 2792
+#delgod 2793
+#delgod 2797
+#delgod 2798
+#delgod 2799
+#delgod 2958
+#delgod 3651
+#delgod 653
+#delgod 654
+#delgod 8509 -- dom1
+#delgod 8510
+#delgod 8511
+#delgod 8512
+#delgod 8513
+#delgod 8514
+#delgod 8516
+#delgod 8517
+#delgod 8518
+
+-- Remove most Indian homerealm:
+#delgod 958 -- dom4
+#delgod 2447
+#delgod 2465
+#delgod 8486
+#delgod 8487
+#delgod 8488
+#delgod 8490
+#delgod 8495
+#delgod 499 -- dom3
+#delgod 905
+#delgod 1096
+#delgod 1339
+#delgod 1345
+#delgod 2556
+#delgod 3073
+#delgod 3074
+#delgod 3088
+#delgod 3662
+#delgod 7578
+#delgod 8380
+#delgod 8425
+#delgod 2202
+#delgod 3874 -- dom2
+#delgod 3875
+#delgod 8374
+#delgod 8376
+#delgod 8377
+#delgod 8378
+#delgod 8379
+#delgod 8393
+#delgod 2549 -- dom1
+
+
 #delgod 8347 -- Drake Breeder
 #delgod 8307 -- Stone Magus
 #delgod 8509 -- Great Sage
-#delgod 8510 -- Crone
+--#delgod 8510 -- Crone
 #delgod 8511 -- Master Enchanter
 #delgod 8512 -- Arch Mage
-#delgod 8513 -- Great Enchantress
+--#delgod 8513 -- Great Enchantress
 
-#addgod 8366 -- Icon
-#addgod 8342 -- Elohim
-#addgod 8338 -- Burning Bush
+
+#cheapgod20 8338 -- dom4
+#cheapgod20 8475
+#cheapgod20 3124 -- dom3
+#cheapgod20 3926
+#cheapgod20 3370
+#cheapgod20 3369
+#cheapgod20 1342
+#cheapgod20 3203
+#cheapgod20 2138 -- dom2
+#cheapgod20 8435
+
+
+
 
 #futuresite "LA Feminie Summons"
+#futuresite "Grigori"
 #futuresite "LA Feminie Heroes"
 #end
+
+
 
 #selectnation 120 -- LA Piconye
 #uwbuild 1
@@ -127605,11 +128609,12 @@ Priests: Powerful, can perform blood sacrifices"
 #delgod 244  -- Arch Mage
 #delgod 485  -- Great Enchantress
 #addgod 8450 -- Emissary of Antrax
-#startcom 163  -- Commander of C'tis
-#startscout 502  -- Empoisoner
-#startunittype1 166  -- 25 City Guard
+
+#startcom 9056  -- Commander of C'tis
+#startscout 9057  -- Empoisoner
+#startunittype1 9055  -- 25 City Guard
 #startunitnbrs1 25
-#startunittype2 165  -- Heavy Infantry
+#startunittype2 3856  -- Heavy Infantry
 #startunitnbrs2 20
 
 #clearrec
@@ -133551,7 +134556,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2469
 #name "Teachings of the Master Smiths"
 #descr "Master Smiths often instruct lesser smiths in the forges and enhance the armies of Ulm with their magical skills. With this spell the Master Smith spends a month in the Forges of Ulm imparting their knowledge to a willing trainee. The target of the spell will gain some skill in smithing and will be able to create magical items using less gems. Mindless beings will gain no benefit from the training."
-#details "Grants Forgebonus :1"
+#details "Grants the target +1 Forge Bonus, stacks with existing bonuses"
 #school 1
 #researchlevel 3
 #path 0 3
@@ -133637,7 +134642,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 992 -- Summon Fire Elemental
 #name "Saviour of Iron"
 #descr "The caster calls out to an Iron Angel to show them true strength. The Angel will descend to demonstrate the might of skill and craftsmanship. By its example it will show that faith in yourself and the weapon you wield will grant you victory. Once the battle is over the Angel will return to its own realm, content that the lessons it has taught will be long remembered."
-#researchlevel 6
+#researchlevel 5
 #path 0 3
 #pathlevel 0 4
 #path 1 4
@@ -134000,13 +135005,13 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2501
 #name "Samhain"
 #descr "The caster lights a bonfire of gorse plants and performs a series of special rituals designed to bring the world of the fey closer to the mortal realm. As long as the rituals are performed again each night the season of Samhain persists and magic will suffuse the world until the enchantment is dispelled. Spirits will more easily traverse the barrier between worlds, both friendly and malevolent, and may bring boon or mischief to all lands. Summoning spells and all manner of enchantments will be easier to cast. Samhain is celebrated differently across nations and will draw different benefits from the enchantments. The Druids of Marverni will collect sacrifices and construct Wicker Men. The Fomorians demand offerings and summon Morrigans. Nations friendly to the fay will enlist their aide."
-#details "Scales (Turmoil, Misfortune, Magic, Luck, Cold, and Death) fluctuate throughout the world and may create unrest. Worldwide Conjuration and Enchantment spells are discounted by 20%.
-Tir na n'Og, Eriu, Ys: 1d6 Glamour gems per month, Aes Sidhe spawn in friendly provinces (5% chance per candle / 10% per candle at a Dolmen).
-Fomoria: Up to 3 provinces (15%) affected by a plague and collect 1d6 Death gems. Morrigans spawn in friendly temples each month.
-Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples each month."
+#details "Scales (Turmoil, Misfortune, Magic, Luck, Cold, and Death) fluctuate throughout the world and may create unrest. Capital provinces gain 20% Conj and Ench bonus.
+Tir na n'Og, Eriu, Ys: Collect 1d6 Glamour gems per month, Aes Sidhe spawn in friendly provinces (5% chance per candle / 10% per candle at a Dolmen).
+Fomoria: Provinces are affected by a plague, collect up to 3d6 Death gems. Morrigans spawn in friendly temples each month.
+Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples each month."
 #portent "The season of Samhain has fallen upon the world! The people of ##disnat## celebrate it monthly and the Otherworld draws closer. Spirits are able to cross the boundary between worlds more to easily causing chaos! The unnatural season of Samhain must end before the Otherworld completely dominates this one."
 #school 0
-#researchlevel 7
+#researchlevel 0
 #path 0 7
 #pathlevel 0 5
 --#path 1 6
@@ -134017,9 +135022,10 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 #restricted 58 -- Eriu
 #restricted 85 -- Ys
 #effect 10081
-#damage 221  -- Samhain
+#damage 221 -- Ench21 -- Samhain
 #nreff 1
-#fatiguecost 7000
+#fatiguecost 700
+#spec 8388608
 #end
 
 #selectspell 2502
@@ -135326,7 +136332,7 @@ Marverni: 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples e
 
 #selectspell 2594
 #name "Trance Master"
-#descr "The caster begins a rythmic chant that will allow them to lead Spirit Dancers. The fatigue that comes from casting spells will be distributed among all Dancers and the trance master will also be able to cast more powerful spells than they could alone. While the effect remains all spells that only affect the caster will also affect all the dancers. A trance dance with two dancers will grant all masters one extra level in all their paths, four dancers will grant two levels, eight dancers will grant three levels, and so on. Only spell singers can cast this spell. Trance masters can also use regular communion slaves."
+#descr "The caster begins a rythmic chant that will allow them to lead Spirit Dancers. The fatigue that comes from casting spells will be distributed among all Dancers and the trance master will also be able to cast more powerful spells than they could alone. While the effect remains all spells that only affect the caster will also affect all the dancers. A trance dance with two dancers will grant all masters one extra level in all their paths, four dancers will grant two levels, eight dancers will grant three levels, and so on. Only spell singers can cast this spell."
 #researchlevel 1
 #restricted 202 -- Gondwana
 #reqspellsinger
@@ -137661,6 +138667,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #restricted 57 -- MA Man
 #restricted 58 -- Eriu
 #restricted 100 -- LA Man
+#restricted 119 -- LA Feminie
 #fatiguecost 3000
 #damage 7325 -- Nemedian Sorceress
 #end
@@ -148428,7 +149435,7 @@ All effects scale with friendly Dominion."
 #path 0 1  -- -----\ Air 7
 #pathlevel 0 7  -- /
 #effect 10081
-#damage235 -- Ench35
+#damage 235 -- Ench35
 #fatiguecost 8000  -- 80 gems
 #end
 
@@ -151801,7 +152808,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #selectspell 3903 -- Cursed Luck
 #copyspell 1272 -- curse
 #name "Cursed Luck"
-#descr "This spell will cause an enemy misfortune for a short time. Any magical luck affecting the them will be dispelled, and for the next 10 turns they will be more likely to be hit and to suffer high damage in combat. In some cases this bad luck may affect them for the rest of their natural lives and will be more likely to suffer permanent injuries."
+#descr "This spell will cause an enemy misfortune for a short time. Any magical luck affecting them will be dispelled, and for the next 10 turns they will be more likely to be hit and to suffer high damage in combat. In some cases this bad luck may affect them for the rest of their natural lives and will be more likely to suffer permanent injuries."
 #details "Bad Luck: Luck is negated, 50% chance to reduce a unit's protection and defense by 1d6 exploding"
 #researchlevel 3
 #school 5
@@ -156044,7 +157051,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 0 2
 #damage 8950 -- Tarabusaw
 #nreff 1
-#fatiguecost 400
+#fatiguecost 600
 #restricted 207 -- Bantay Tubig
 #spec 8388608 -- UWOK
 #end
@@ -156058,9 +157065,8 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 0 2
 #damage 8951 -- Gurayn Bird
 #nreff 1
-#fatiguecost 400
+#fatiguecost 700
 #restricted 207 -- Bantay Tubig
-#spec 8388608 -- UWOK
 #end
 
 
@@ -156236,7 +157242,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #copyspell 106  -- Record of Creation
 #name "Create Blacksteel Forge"
 #descr "The caster creates great forges in the fortress to allow the creation of magical blacksteel armaments in large quantities. The forge is specially designed to allow the creation of incredibly sharp blades that can cut through even the most protective armor. Each sword is made by a master craftsman and requires an immense amount of resources to forge."
-#details "Generates 50 resources and allows recruitment of Blacksteel Swordsmen and Blacksteel Zweihanders. Upgrades to an Angel Forge while an Iron Angel is present."
+#details "Generates 50 resources and allows recruitment of Blacksteel Swordsmen and Blacksteel Zweihanders. Upgrades to an Angel Forge when an Iron Angel is present."
 #school 3
 #researchlevel 4
 #path 0 0
@@ -157183,6 +158189,192 @@ This spell can only be cast in a deep water province."
 #aoe 1
 #end
 
+#selectspell 4296
+#copyspell 106  -- Record of Creation
+#name "Detect Glamour"
+#descr "This spell will detect all nearby sites of Glamour magic."
+#damage 7 -- Glamour
+#end
+
+#selectspell 4297 -- Caster invis
+#copyspell 870 -- invisibility
+#name "Don Divine Veil"
+#descr "When Ind fell, the Sage-Queens of Feminie were able to study the Divine Veil used to hide it. Those skilled in the use of its magic are able to use a part of its divinity to hide themselves completely from view, becoming invisible to those without spirit sight. All Unseen Ones are trained in its use."
+#details "The caster gains the ability Unseen."
+#researchlevel 0
+#path 0 7
+#pathlevel 0 1
+#path 1 9
+#pathlevel 1 1
+#restricted 119 -- Feminie
+#end
+
+#selectspell 4298 -- Sacred invis
+#copyspell 870 -- invisibility
+#name "Bestow Divine Veil"
+#descr "When Ind fell, the Sage-Queens of Feminie were able to study the Divine Veil used to hide it. Those skilled in the use of its magic are able to use a part of its divinity to hide sacred beings completely from view, becoming invisible to those without spirit sight."
+#details "Grants the ability Unseen."
+#researchlevel 0
+#path 0 7
+#pathlevel 0 1
+#path 1 9
+#pathlevel 1 1
+#aoe 2000 -- 2+2
+#range 20
+#spec 12632064 -- Ignore shields, sacred only, friendly only, UWOK
+#restricted 119 -- Feminie
+#end
+
+#selectspell 4299 -- Sacred invis
+#copyspell 870 -- invisibility
+#name "Veil of Invisibility"
+#descr "When Ind fell, the Sage-Queens of Feminie were able to study the Divine Veil used to hide it. With this spell, the veil may be used to its full potential by any being without the use of divine power."
+#details "Grants the ability Unseen."
+#researchlevel 6
+#path 0 7
+#pathlevel 0 4
+#aoe 1001 -- 5+
+#fatiguecost 100
+#range 20
+#spec 12632064 -- Ignore shields, sacred only, friendly only, UWOK
+#restricted 119 -- Feminie
+#end
+
+#selectspell 4300
+#name "Call the Shvilni"
+#descr "The Shvilni is a band of heroes descended from Nemedians, a magical race far superior to humans, and are renowned for driving back the Devi and defeating the Kaji. The Nemedians once resided in Sauromatia, but left in ages past to war with the Fomorians and were defeated. Most have now retreated to the fey realm, but a few have returned to their homeland in Feminie, where their children are revered as demigod warriors against evil. Champions among them are skilled in the magic of their ancestry. The caster calls the Shvilni and they will appear in a friendly province of the casters choosing. The Shvilni are sacred."
+#school 0
+#researchlevel 5
+#path 0 7
+#pathlevel 0 3
+#fatiguecost 2500
+#effect 10037
+#damage 9193 -- Shvilni
+#farsumcom 9197 -- Champion
+#nreff 11
+#provrange 2
+#onlyowndst 1
+#nogeodst 4
+#restricted 119 -- Feminie
+#end
+
+#selectspell 4301
+#name "Devi Brothers"
+#descr "."
+#school -1
+#researchlevel 0
+#effect 10001
+#nreff 8
+#damage 9195 -- Devi
+#end
+
+#selectspell 4302
+#name "Summon Family of Devi"
+#descr "The caster visits a family of Devi in the mountains of Feminie to bargain for their service. The Devi is a multi-headed giant ogre of the lands of Feminie. They possess remarkable regenerative ability, even able to regenerate a lost head. They first emerged from caves below Feminie after the fall of Ind, and many speculate they originate from cross-breeding experiments of Abysia. Their first appearance was marked with attacks on villages, but they were driven back to their mountains and caves by heroes where they now keep to. They live in families of nine with a Bakbak-Devi at the head, the largest and strongest of the family. Rock throwing is a common way for them to demonstrate their strength and most will carry a few into battle."
+#school 0
+#researchlevel 4
+#path 0 6  -- G
+#pathlevel 0 2
+#effect 10021
+#nreff 1
+#fatiguecost 2500
+#damage 9196 -- Bakbak-Devi
+#restricted 119 -- Feminie
+#onlygeosrc 8388624  -- only castable in mountain and border mountain provinces
+#nextspell 4301
+#end
+
+#selectspell 4303
+#name "Summon Kaji"
+#descr "The caster travels to a castle of Kaji to bargain with one for their their service. The Kaji is a deformed and ugly demonic being with great skill in metalworking and magecraft that reside in castle keeps. Once they were known for kidnapping princesses and holding hostages, but in recent times their temper has subsided somewhat and they can be enticed into service with gems. As demons of the land, they may be summoned without blood sacrifice."
+#school 0
+#researchlevel 4
+#path 0 0  -- F
+#pathlevel 0 2
+#path 1 7  -- G
+#pathlevel 1 1
+#effect 10021
+#nreff 1
+#fatiguecost 2000
+#damage 9194 -- Kaji
+#restricted 119 -- Feminie
+#end
+
+#selectspell 4304
+#name "Summon Rashi Knights"
+#descr "The caster summons a trio of Rashi Knights to serve the Queens of Feminie. The Rashi Knights are regarded as as the most fearsome and powerful force Feminie has to offer, bearing heavy amor and riding the back of a flying Rashi. The Rashi are intelligent pegasi, of which there are three types. Land Rashi can tell the future and protect their rider from harm. Rashi are difficult to tame, and will only accept riders they deem worthy, and as such only the most skilled knights in Feminie may ride one. The Rashi will grant their rider the effects of Twist Fate in battle."
+#school 0
+#researchlevel 3
+#path 0 4  -- S
+#pathlevel 0 2
+#effect 10001
+#nreff 3
+#fatiguecost 700
+#damage 9187 -- Rashi Knight
+#restricted 119 -- Feminie
+#end
+
+#selectspell 4305
+#name "Summon Rashi Knight Commander"
+#descr "The caster summons a commander of the Rashi Knights to serve the Queens of Feminie. The Rashi Knights are regarded as as the most fearsome and powerful force Feminie has to offer, bearing heavy amor and riding the back of a flying Rashi. The Rashi are intelligent pegasi, of which there are three types. Heavenly Rashi are wreathed with flaming wings and bear a fiery breath. Heavenly Rashi are exceedingly difficult to tame, and will only accept riders they deem worthy, and as such only the most skilled knights in Feminie may hope to ride one. Such a feat is required to become a commander of the Rashi Knights and will mark the rider as sacred to the people of Feminie."
+#school 0
+#researchlevel 5
+#path 0 0  -- F
+#pathlevel 0 2
+#path 1 4  -- S
+#pathlevel 1 2
+#effect 10021
+#nreff 1
+#fatiguecost 500
+#damage 9189 -- Fire Rashi Knight
+#restricted 119 -- Feminie
+#end
+
+#selectspell 4306
+#name "Rashi Knights"
+#descr "."
+#school -1
+#researchlevel 0
+#effect 10001
+#nreff 12
+#damage 9187 -- Rashi Knight
+#end
+
+#selectspell 4307
+#name "Summon Rashi Knight Battalion"
+#descr "The caster summons a battalion of 12 Rashi Knights and a commander to serve the Queens of Feminie. The Rashi Knights are regarded as as the most fearsome and powerful force Feminie has to offer, bearing heavy amor and riding the back of a flying Rashi. The Rashi are intelligent pegasi, of which there are three types. Land Rashi that can tell the future and protect their rider from harm, while Heavenly Rashi are wreathed with flaming wings and bear a fiery breath. Rashi are difficult to tame, and will only accept riders they deem worthy, and as such only the most skilled knights in Feminie may ride one."
+#school 0
+#researchlevel 7
+#path 0 4  -- S
+#pathlevel 0 3
+#path 1 0  -- F
+#pathlevel 1 2
+#effect 10021
+#nreff 1
+#fatiguecost 2500
+#damage 9189 -- Fire Rashi Knight
+#restricted 119 -- Feminie
+#nextspell 4306
+#end
+
+#selectspell 4308
+#name "Summon Rashi Sorceress"
+#descr "The caster seeks out and requests the service of a sorceress that has tamed a Sea Rashi and gained its power. The Sea Rashi is a rare Rashi found at the bottom of lakes, more hostile to humans than the other Rashi, but sometimes a skilled sorceress may be deemed worthy to ride one. The Rashi are intelligent pegasi, of which there are three types. The Sea Rashi will increase the sorceress's skill in the magic of Wind and Waves, allow them to grant the ability to breathe underwater, and can heal others with their milk."
+#school 0
+#researchlevel 6
+#path 0 2  -- W
+#pathlevel 0 2
+#path 1 4  -- S
+#pathlevel 1 2
+#effect 10021
+#nreff 1
+#fatiguecost 2500
+#damage 9191 -- Sea Rashi Sorceress
+#restricted 119 -- Feminie
+#end
+
+
+
 
 
 -- END OF NEW SPELLS
@@ -157971,8 +159163,9 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 455 -- Contact Iron Angel
 #descr "The caster contacts an Iron Angel to teach the weak to be strong. The Angel is a divine being professing the might of skill and craftsmanship. It teaches men not to trust in sorcery or religion. Only faith in yourself and the weapon you wield will grant you true strength. The Iron Angel is not sacred and will readily hunt down and slay fanatical adherents of other faiths. Whilst at a fort the Angel will inspire great craftsmanship from the inhabitants."
-#details "While the Angel is at a Blacksteel Forge, it will be empowered into an Angel Forge, allowing recruitment of Black Iron Infantry."
-#researchlevel 7
+#details "When the Angel is at a Blacksteel Forge, it will be permanently empowered into an Angel Forge, allowing recruitment of Black Iron Infantry."
+#researchlevel 6
+#fatiguecost 1500
 #pathlevel 0 4
 #end
 
@@ -160241,7 +161434,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1414 -- Bind Demon Knight
-#name "Bind Fiends"
+#name "Bind Demon Knights"
 #descr "The caster sacrifices several blood slaves to summon and bind a pair of Demon Knights to his service. The Demon Knight is an armored demon riding a demonic steed with glowing red eyes. Demon Knights are horrible to behold and their mere presence will cause panic among weaker troops."
 #researchlevel 4
 #path 0 8
@@ -161161,7 +162354,7 @@ Can only be cast once per combat round."
 #secondarypath 6 -- Nature
 #secondarylevel 1
 #name "Apotropaic Eye"
-#descr "The eye has long been seen as a protective symbol against evil magics. Some mages reasoned that the larger the eye the greater the protection, and so the largest eyes taken from the huge creatures that live in the deepest oceans are most highly prized. This eye was taken from a great Kraken and has had many protective enchantments laid upon it. The power of the the eye will ensure the entire army is protected from evil enchantments and sorcery of all kinds, however it takes two hands to carry and the bearer will be quite vulnerable."
+#descr "The eye has long been seen as a protective symbol against evil magics. Some mages reasoned that the larger the eye the greater the protection, and so the largest eyes taken from the huge creatures that live in the deepest oceans are most highly prized. This eye was taken from a great Kraken and has had many protective enchantments laid upon it. The power of the eye will ensure the entire army is protected from evil enchantments and sorcery of all kinds, however it takes two hands to carry and the bearer will be quite vulnerable."
 #type 2  -- two-handed weapon
 #weapon 547  -- Buff
 #autospell "Antimagic"
@@ -161792,7 +162985,7 @@ Can only be cast once per combat round."
 #copyitem 416 -- Pocket Ship
 #spr "magicenhanced/eeiseastaff.tga"
 #name "Staff of the Sea"
-#descr "This staff has the power to part the waves when held aloft, allowing the passage of a small force through a sea province. Up to 100 human sized warriors can pass through a single sea province to a connected land province before the magic fails."
+#descr "This staff has the power to part the waves when held aloft, allowing the passage of a small force through a sea province. Up to 200 human sized warriors can pass through a single sea province to a connected land province before the magic fails."
 #constlevel 5
 #mainpath 2
 #mainlevel 3
@@ -162231,6 +163424,7 @@ Can only be cast once per combat round."
 #reform 100
 #woundfend 5
 #deathfire 20
+#nofind
 #end
 
 #selectitem 709
@@ -163332,9 +164526,9 @@ This will also prevent their skin from drying out."
 #spr "magicenhanced/eeipyro.tga"
 #name "Pyromantic Box"
 #descr "The magisters of Man have become adept at identifying magical resources in the mana-starved land of Man. To this end they have created certain magical devices that can locate concentrations of magic in a province. This is a box of laurel leaves enchanted such that when set alight the smoke will drift towards nearby sites of Fire magic."
-#constlevel 3
+#constlevel 1
 #mainpath 0
-#mainlevel 2
+#mainlevel 1
 #type 8
 #spell "Detect Fire"
 #restricted 100 -- LA Man
@@ -163344,9 +164538,9 @@ This will also prevent their skin from drying out."
 #spr "magicenhanced/eeirod.tga"
 #name "Astrapomantic Rod"
 #descr "The magisters of Man have become adept at identifying magical resources in the mana-starved land of Man. To this end they have created certain magical devices that can locate concentrations of magic in a province. This is a lightning rod enchanted such that it will attract lightning from nearby sites of Air magic."
-#constlevel 3
+#constlevel 1
 #mainpath 1
-#mainlevel 2
+#mainlevel 1
 #type 8
 #spell "Detect Air"
 #restricted 100 -- LA Man
@@ -163356,9 +164550,9 @@ This will also prevent their skin from drying out."
 #spr "magicenhanced/eeicrystal.tga"
 #name "Geomantic Crystal"
 #descr "The magisters of Man have become adept at identifying magical resources in the mana-starved land of Man. To this end they have created certain magical devices that can locate concentrations of magic in a province. This is a crystal enchanted so that if suspended it will pull towards nearby sites of Earth magic."
-#constlevel 3
+#constlevel 1
 #mainpath 3
-#mainlevel 2
+#mainlevel 1
 #type 8
 #spell "Detect Earth"
 #restricted 100 -- LA Man
@@ -163368,9 +164562,9 @@ This will also prevent their skin from drying out."
 #spr "magicenhanced/eeitele.tga"
 #name "Astromantic Telescope"
 #descr "The magisters of Man have become adept at identifying magical resources in the mana-starved land of Man. To this end they have created certain magical devices that can locate concentrations of magic in a province. This is a telescope enchanted so that looking through it reveals ethereal beams of energy emanating from nearby sites of Astral magic."
-#constlevel 3
+#constlevel 1
 #mainpath 4
-#mainlevel 2
+#mainlevel 1
 #type 8
 #spell "Detect Astral"
 #restricted 100 -- LA Man
@@ -164120,7 +165314,7 @@ This will also prevent their skin from drying out."
 #restricted 31
 #restricted 78
 #restricted 115
-#bestowtomount
+--#bestowtomount
 #fly
 #end
 
@@ -164946,7 +166140,7 @@ This will also prevent their skin from drying out."
 
 #selectitem 880
 #spr "magicenhanced/eeiandvari.tga"
-#name "Talking ring"
+#name "Talking Ring"
 #descr "Alarabi found this ring deep within the forgotten caverns underneath the mountains of Pyrene. Ever since he has become more intelligent but also even more cruel, and he is often seen lifting the ring up to his ear as if to listen to it. The ring grants him great magical power and protects him from hostile spells."
 #constlevel 13
 #mainpath 8
@@ -164955,6 +166149,19 @@ This will also prevent their skin from drying out."
 #type 8  -- Misc
 #mr 4
 #magicboost 8 2 -- +2 blood
+#end
+
+#selectitem 883
+#spr "magicenhanced/blue_eeioneiro.png"
+#name "Oneiromantic Circlet"
+#descr "The magisters of Man have become adept at identifying magical resources in the mana-starved land of Man. To this end they have created certain magical devices that can locate concentrations of magic in a province. This is a circlet enchanted so that the bearer may see the dreams of others and follow them to sites of Glamour magic."
+#constlevel 1
+#mainpath 7
+#mainlevel 1
+#type 9
+#spell "Detect Glamour"
+#restricted 100 -- LA Man
+#armor 502 -- Circlet
 #end
 
 
@@ -165898,6 +167105,13 @@ This will also prevent their skin from drying out."
 #itemcost1 -60
 #itemcost1 -80
 #restricted 205 -- Houssa
+#end
+
+#selectitem 282 -- Salamander Silk garments
+#descr "In Magnificent Ind are worms called Salamanders. These worms can only live in fire, and they build cocoons like silk-worms. The cocoons are unwound by ladies of the Palace, and spun into cloth and dresses. These dresses protect its wearer from heat and flames and, in order to be cleaned and washed, are cast into flames that burn the stains away. These dresses are so finely woven that every observer is struck by their beauty and brilliance."
+#itemcost1 -40
+#constlevel 3
+#restricted 119 -- LA Feminie
 #end
 
 #selectitem 283 -- Silver Silk garments
@@ -175623,10 +176837,11 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #end
 
 #newevent
-#rarity 0
+#rarity 5
 #req_friendlyench 235 -- Ench35  -- Master of Seasons
 #req_temple 1
 #req_season 0  -- Spring
+#req_pop0ok
 #nationench 235 -- Ench35  -- Owner of Master of Seasons
 #msg "Spring Hawks arrive in spring"
 #notext
@@ -175635,10 +176850,11 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #end
 
 #newevent
-#rarity 0
+#rarity 5
 #req_friendlyench 235 -- Ench35  -- Master of Seasons
 #req_temple 1
 #req_season 1  -- Summer
+#req_pop0ok
 #nationench 235 -- Ench35  -- Owner of Master of Seasons
 #msg "Summer Lions arrive in summer"
 #notext
@@ -175647,10 +176863,11 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #end
 
 #newevent
-#rarity 0
+#rarity 5
 #req_friendlyench 235 -- Ench35  -- Master of Seasons
 #req_temple 1
 #req_season 2  -- Fall
+#req_pop0ok
 #nationench 235 -- Ench35  -- Owner of Master of Seasons
 #msg "Fall Bears arrive in fall"
 #notext
@@ -175659,10 +176876,11 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #end
 
 #newevent
-#rarity 0
+#rarity 5
 #req_friendlyench 235 -- Ench35  -- Master of Seasons
 #req_temple 1
 #req_season 3  -- Winter
+#req_pop0ok
 #nationench 235 -- Ench35  -- Owner of Master of Seasons
 #msg "Winter Wolves arrive in winter"
 #notext
@@ -184354,7 +185572,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 
 #newevent -- Heal Pretenders in capital
 #rarity 5
-#req_pop0k
+#req_pop0ok
 #req_owncapital 1
 #req_targgod 1
 #msg "Heal pretender"
@@ -184366,7 +185584,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 
 #newevent -- Heal Pretenders with preachers out of capital
 #rarity 5
-#req_pop0k
+#req_pop0ok
 #req_owncapital 0
 #req_preach 10
 #req_targgod 1
@@ -184677,15 +185895,31 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #end
 
 #newevent
-#rarity 13
+#rarity 5
+--#rarity 13
 --#req_land 1
+--#req_myench 221 -- Ench21 -- Samhain
 #req_ench 221 -- Ench21 -- Samhain
-#req_permonth 1
+--#req_permonth 1
 #req_capital 1
 #req_pop0ok
-#msg "Conjuration and Enchantment spells are cheaper to cast due to the season of Samhain."
-#worldritrebate 0 -- conj
-#worldritrebate 4 -- ench 
+--#msg "Conjuration and Enchantment spells are cheaper to cast due to the season of Samhain."
+#msg "The season of Samhain has opened a gate to the Otherworld in ##landname##, making Conjuration and Enchantment spells easier to cast."
+--#worldritrebate 0 -- conj
+--#worldritrebate 4 -- ench 
+#req_nositenbr 2149
+#addsite 2149
+#end
+
+#newevent
+#rarity 5
+#req_noench 221 -- Ench21 -- Samhain
+--#req_permonth 1
+#req_capital 1
+#req_pop0ok
+#msg "The season of Samhain has ended and the gate to the Otherworld has opened. [Samhain Gate]"
+#req_site 1
+#removesite 2149
 #end
 
 #newevent -- Fomoria gems
@@ -185750,7 +186984,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -185766,7 +187000,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -185782,7 +187016,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -185798,7 +187032,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -185814,7 +187048,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -185830,7 +187064,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -185846,7 +187080,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -185862,7 +187096,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -185878,7 +187112,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -185895,7 +187129,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -185912,7 +187146,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -185929,7 +187163,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -185946,7 +187180,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -185963,7 +187197,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -185980,7 +187214,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -185997,7 +187231,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186014,7 +187248,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186031,7 +187265,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186048,7 +187282,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186065,7 +187299,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186082,7 +187316,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186099,7 +187333,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186116,7 +187350,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186133,7 +187367,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186150,7 +187384,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186167,7 +187401,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186184,7 +187418,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186201,7 +187435,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186218,7 +187452,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186235,7 +187469,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186252,7 +187486,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186269,7 +187503,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186286,7 +187520,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186302,7 +187536,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186318,7 +187552,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186334,7 +187568,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186350,7 +187584,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186366,7 +187600,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186382,7 +187616,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -186398,7 +187632,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 #newevent
-#rarity 1
+#rarity 5
 #req_fornation 23
 #unrest 5
 #nolog
@@ -187255,9 +188489,31 @@ It is now fully repaired and a new crew has been assigned to it."
 #end
 
 
-#newevent -- check for an iron angel
+--#newevent -- check for an iron angel
+--#rarity 5
+--#req_monster 1975 -- iron angel
+--#req_site 1
+--#req_pop0ok
+--#msg "Forge test. [Angel Forge]"
+--#notext
+--#nolog
+--#incvar 6007
+--#end
+
+--#newevent -- check for a blacksteel angel
+--#rarity 5
+--#req_monster 8388 -- blacksteel angel
+--#req_site 1
+--#req_pop0ok
+--#msg "Forge test. [Angel Forge]"
+--#notext
+--#nolog
+--#incvar 6007
+--#end
+
+#newevent -- check for angel forge
 #rarity 5
-#req_monster 1975 -- iron angel
+#req_ench 251 -- Ench51  -- Empower Forge
 #req_site 1
 #req_pop0ok
 #msg "Forge test. [Angel Forge]"
@@ -187266,32 +188522,21 @@ It is now fully repaired and a new crew has been assigned to it."
 #incvar 6007
 #end
 
-#newevent -- check for a blacksteel angel
-#rarity 5
-#req_monster 8388 -- blacksteel angel
-#req_site 1
-#req_pop0ok
-#msg "Forge test. [Angel Forge]"
-#notext
-#nolog
-#incvar 6007
-#end
+--#newevent -- replace site if there is neither angels
+--#rarity 5
+--#req_varzero 6007
+--#req_site 1
+--#req_pop0ok
+--#msg "Forge removal. [Angel Forge]"
+--#notext
+--#nolog
+--#removesite 2220 -- Angel Forge
+--#addsite 2221 -- Blacksteel Forge
+--#end
 
-#newevent -- replace site if there is neither
+#newevent -- create forge if ench present
 #rarity 5
-#req_varzero 6007
-#req_site 1
-#req_pop0ok
-#msg "Forge removal. [Angel Forge]"
-#notext
-#nolog
-#removesite 2220 -- Angel Forge
-#addsite 2221 -- Blacksteel Forge
-#end
-
-#newevent
-#rarity 5
-#req_varzero 6007 -- Do not create site if there are angels at an angel forge
+#req_varzero 6007 -- Do not create site if there is an angel forge
 #req_ench 251 -- Ench51  -- Empower Forge
 #req_nositenbr 2221 -- Blacksteel Forge
 #req_pop0ok
@@ -187304,6 +188549,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #newevent -- Reset angel count back to 0
 #rarity 5
 #req_site 1
+#req_ench 251 -- Ench51  -- Empower Forge
 #req_pop0ok
 #msg "Forge reset. [Angel Forge]"
 #notext
@@ -187311,7 +188557,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #clearvar 6007
 #end
 
-#newevent
+#newevent -- upgrade forge if blacksteel angel present
 #rarity 5
 #req_monster 8388 -- blacksteel
 #req_site 1  -- Blacksteel Forge
@@ -187323,7 +188569,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #addsite 2220 -- Angel Forge
 #end
 
-#newevent
+#newevent -- upgrade forge if angel present
 #rarity 5
 #req_monster 1975 -- iron
 #req_site 1  -- Blacksteel Forge
@@ -188708,7 +189954,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 --Gives the Siege Golem his heart if he somehow loses it, or is wished for--
 #newevent
-#rarity 0
+#rarity 5
 #req_targmnr 760
 #req_targnoitem 876
 #addequip 9
