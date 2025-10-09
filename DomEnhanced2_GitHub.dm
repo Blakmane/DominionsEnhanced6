@@ -135011,7 +135011,7 @@ Fomoria: Provinces are affected by a plague, collect up to 3d6 Death gems. Morri
 Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples each month."
 #portent "The season of Samhain has fallen upon the world! The people of ##disnat## celebrate it monthly and the Otherworld draws closer. Spirits are able to cross the boundary between worlds more to easily causing chaos! The unnatural season of Samhain must end before the Otherworld completely dominates this one."
 #school 0
-#researchlevel 0
+#researchlevel 7
 #path 0 7
 #pathlevel 0 5
 --#path 1 6
@@ -135024,7 +135024,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #effect 10081
 #damage 221 -- Ench21 -- Samhain
 #nreff 1
-#fatiguecost 700
+#fatiguecost 7000
 #spec 8388608
 #end
 
