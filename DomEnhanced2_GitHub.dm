@@ -382,7 +382,7 @@
 #dmg 2
 #att 1
 #range -1
-#ammo 3
+#ammo 6
 #rcost 1
 #blunt
 #sound 15
@@ -2975,8 +2975,8 @@
 #range 50
 #ammo 30
 --#dmg 25
-#aoe 6
-#dmg 16
+#aoe 5
+#dmg 14
 #att 5
 #nratt -2
 #notdismounted
@@ -3157,7 +3157,7 @@
 
 
 #newweapon 1820 -- Kurita Fist
-#copyweapon 93 -- bonus fist
+#copyweapon 92 -- fist
 #name "Many Limbs"
 #def 1
 #end
@@ -3386,6 +3386,7 @@
 #magic
 #bonus
 #dmg 68719476736 -- slow affliction
+#dmginspector 9007199254740992 -- ??? affliction
 #secondaryeffectalways 1830 -- mind blast stun
 #range0
 #ammo 1003
@@ -3774,13 +3775,15 @@
 #end
 
 #newweapon 1883 -- Tachi
-#copyweapon 857 -- Katana
 #name "Tachi"
 #rcost 7
 #dmg 7
 #att 3
 #def 2
 #len 2
+#ironweapon
+#pierce
+#slash
 #end
 
 #newweapon 1884 -- Troop SS
@@ -3957,6 +3960,89 @@
 #ammo 3
 #end
 
+#newweapon 1905 -- Summon Elk
+#name "Release Elk Spirit"
+#dmg 0
+#norepel
+#unrepel
+#bonus
+#magic
+#ammo 1
+#range 15
+#nostr
+#range0
+--#flyspr -1
+#flyspr 137 4
+#sound 21
+#dmg 0
+#dt_aff
+#att 100
+#speedmult 3
+#len 6
+#natural
+#secondaryeffectalways 1906
+#end
+
+#newweapon 1906 -- Summon Elk
+#copyweapon 815 -- Shard Illusion
+#name "Elk Spirit"
+#dmg 9281 -- Elk Spirit
+#ammo 1
+#att 100
+#len 6
+#natural
+#end
+
+#newweapon 1907
+#copyweapon 421 -- Limp
+#name "Break Bones"
+#sizeresist
+#end
+
+#newweapon 1908
+#copyweapon 12 -- Mace
+#name "Cruel Mace"
+#secondaryeffect 1907 -- Broken Bones
+#end
+
+#newweapon 1909
+#copyweapon 357 -- Light Lance
+#name "Great Lance"
+#dmg 7
+#att 1
+#len 4
+#end
+
+#newweapon 1910 -- Trebuchet slime
+#copyweapon 329 -- Slime
+#name "Snail Slime"
+#aoe 3
+#end
+
+#newweapon 1911 -- Trebuchet
+#copyweapon 424 -- Boulder
+#name "Trebuchet"
+#ammo 30
+#att 8
+#dmg 40
+#nostr
+#range 70
+#nratt -2
+#aoe 1
+#notdismounted
+#bonus
+#secondaryeffectalways 1910
+#end
+
+#newweapon 1912 -- Golden Horn
+#copyweapon 456 -- Gaze of Fear
+#name "Golden Horn"
+#ammo 2
+#nratt -2
+#range 100
+#end
+
+
 
 -- END OF NEW WEAPONS
 
@@ -3995,6 +4081,7 @@
 #magic
 #bonus
 #dmg 68719476736 -- slow affliction
+#dmginspector 9007199254740992 -- ??? affliction
 #secondaryeffectalways 1830 -- mind blast stun
 #range050
 #ammo 1003
@@ -4007,6 +4094,7 @@
 #magic
 #bonus
 #dmg 68719476736 -- slow affliction
+#dmginspector 9007199254740992 -- ??? affliction
 #secondaryeffectalways 1830 -- mind blast stun
 #end
 
@@ -4018,6 +4106,7 @@
 #magic
 #bonus
 #dmg 68719476736 -- slow affliction
+#dmginspector 9007199254740992 -- ??? affliction
 #secondaryeffectalways 1830 -- mind blast stun
 #range0
 #ammo 1001
@@ -4027,6 +4116,7 @@
 #newweapon 1736
 #copyweapon 839  -- Tendie Mind Blast
 #name "Mental Mastery"
+#dmginspector 9007199254740992 -- ??? affliction
 #nreff 5
 #end
 
@@ -4074,6 +4164,7 @@
 #dmg 15 -- +3
 #att 40 -- +10
 #ammo 24
+#rcost 12
 #end
 
 #selectweapon 154 -- Bow of War
@@ -4620,11 +4711,11 @@
 #copyarmor 255 -- silver barding
 #name "Golden Barding"
 #rcost 0
-#type 9
+--#type 9
 #enc 1
 #protparts 12 14
 #def -1
-#magicarmor
+--#magicarmor
 #end
 
 #newarmor 509 -- 55
@@ -4821,7 +4912,7 @@
 #newarmor 533
 #copyarmor 196  -- Golden Scale
 #name "Starnake Scale"
-#protbody 18
+#prot 18
 #rcost 18
 #enc 3
 #end
@@ -5120,6 +5211,7 @@
 #copyarmor 101 -- bronze hauberk
 #name "Jeweled Hauberk"
 #enc 4
+#prot 17
 #end
 
 #newarmor 569 -- Pavise
@@ -5156,6 +5248,11 @@
 #rcost 1
 #end
 
+#newarmor 574 -- Oppressors Headband
+#copyarmor 278 -- Magic Crown
+#name "Oppressor's Headband"
+#end
+
 -- END OF NEW ARMORS
 
 #selectarmor 64  -- Aegis
@@ -5164,12 +5261,12 @@
 #end
 
 #selectarmor 179  -- Armour of the Dawn
-#protbody 21
+#prot 21
 #end
 
 #selectarmor 290
-#protbody 25
-#protbody 27
+#protparts 27 27
+#protinspector 27
 #end 
 
 -- END UNIQUE ARMOR CHANGES
@@ -5206,7 +5303,7 @@
 #end
 
 #selectarmor 192  -- Magic Furs
-#rcost 5
+#rcost 4
 #end
 
 #selectarmor 201 -- Armor of Knights
@@ -5511,16 +5608,18 @@
 --#assassin
 --#patience 1
 #taskmaster 2
-#magicskill 0 1
-#magicskill 2 1
+#magicskill 0 1 -- F
+#magicskill 2 1 -- W
+#magicskill 7 1 -- G
 --#custommagic 36864 100 -- 100% BD
---#custommagic 37760 100 -- 100% FAWDB
 --#custommagic 49152 100 -- 100% GB
 --#custommagic 53888 100 -- 100% FWDGB
---#custommagic 53248 100 -- 100% DGB
-#custommagic 49152 100 -- 100% GB
-#custommagic 50048 100 -- 100% FAWGB
-#custommagic 50048 10 -- 100% FAWGB
+--#custommagic 49152 100 -- 100% GB
+--#custommagic 50048 100 -- 100% FAWGB
+--#custommagic 50048 10 -- 100% FAWGB
+#custommagic 53248 100 -- 100% DGB
+#custommagic 37760 100 -- 100% FAWDB
+#custommagic 37760 10 -- 100% FAWDB
 #douse 1
 #stealthy 0
 #maxage 120
@@ -7323,6 +7422,7 @@
 #spiritsight
 #nobadevents 5
 #weapon 470  -- Spirit Club
+#armor 158 -- Robes
 #end
 
 #newmonster 6589
@@ -7449,8 +7549,8 @@
 #spr1 "nihuala/bowhunter.tga"
 #spr2 "nihuala/bowhunter_2.tga"
 #rcost 1
-#gcost 10009
-#rpcost 10000
+#gcost 7
+#rpcost 5
 #hp 10
 #str 10
 #att 10
@@ -7474,8 +7574,8 @@
 #spr1 "nihuala/atlatlhunter.tga"
 #spr2 "nihuala/atlatlhunter_2.tga"
 #clearweapons
-#gcost 10007
-#rpcost 10000
+#gcost 7
+#rpcost 3
 #weapon 1  -- Spear
 #weapon 1575 -- Atlatl
 #end
@@ -7487,8 +7587,8 @@
 #spr1 "nihuala/spearwarrior.tga"
 #spr2 "nihuala/spearwarrior_2.tga"
 #rcost 1
-#gcost 10007
-#rpcost 10000
+#gcost 7
+#rpcost 5
 #hp 10
 #str 10
 #att 10
@@ -7534,7 +7634,8 @@
 #descr "Warriors of Nihuala are initiated in a ritual where they pledge to protect the tribe from all danger, both mundane and spiritual. Each warrior crafts their own weapons and armor, adorning them with white and red feathers to appease the spirits of air and war. Nihualan warriors prefer armor made from bone and hide, and wield spears, clubs, and axes. They are adept at raiding enemy encampments for supplies."
 #spr1 "nihuala/tomahawkwarrior.tga"
 #spr2 "nihuala/tomahawkwarrior_2.tga"
-#gcost 10009
+#gcost 9
+#rpcost 8
 #clearweapons
 #cleararmor
 #weapon 17  -- Axe
@@ -7553,7 +7654,8 @@
 #spr2 "nihuala/lodgeguard_2.tga"
 #clearweapons
 #cleararmor
-#gcost 10011
+#gcost 10
+#rpcost 9
 #str 11
 #mor 13
 #pillagebonus 0
@@ -9230,7 +9332,7 @@
 #magicskill 5 2
 #magicskill 9 1
 #weapon 761  -- Throw Salt
-#weapon 7  -- Quarterstaff
+#weapon 252 -- Club
 #armor 10  -- Leather Hauberk
 #armor 105 -- Hide Shield
 #nametype 181  -- Mongolian Female
@@ -9733,9 +9835,9 @@
 #prec 11
 #mr 12
 #mor 8
-#gcost 10007
+#gcost 10006
 #rcost 1
-#rpcost 7
+#rpcost 5
 #maxage 60
 #weapon "Club"
 #stealthy 0
@@ -9761,10 +9863,10 @@
 #def 9
 #prec 11
 #mr 12
-#mor 8
-#gcost 10008
+#mor 9
+#gcost 10007
 #rcost 1
-#rpcost 9
+#rpcost 6
 #weapon "Stone Dagger"
 #weapon 1514
 #maxage 60
@@ -9793,7 +9895,7 @@
 #mr 12
 #mor 10
 #gcost 10008
-#rpcost 9
+#rpcost 7
 #rcost 2
 #weapon "Stone Spear"
 #weapon 1515
@@ -9821,11 +9923,11 @@
 #prec 11
 #mr 12
 #mor 10
-#gcost 10008
+#gcost 10007
+#rpcost 7
 #rcost 2
 #weapon 1525
 #wastesurvival
-#rpcost 9
 #maxage 60
 #stealthy 0
 #nametype 176
@@ -9849,13 +9951,13 @@
 #prec 11
 #mr 12
 #mor 10
-#gcost 10008
+#gcost 10007
+#rpcost 7
 #rcost 2
 #weapon "Stone Spear"
 #weapon 1527
 #armor "Hide Shield"
 #wastesurvival
-#rpcost 9
 #maxage 60
 #stealthy 0
 #nametype 176
@@ -9880,12 +9982,12 @@
 #mr 12
 #mor 10
 #gcost 10008
+#rpcost 8
 #rcost 2
 #weapon 451  -- Obsidian Club Sword
 #weapon 1524
 #weapon 1526
 #wastesurvival
-#rpcost 9
 #maxage 60
 #stealthy 0
 #nametype 176
@@ -9910,13 +10012,13 @@
 #prec 11
 #mr 14
 #mor 12
-#gcost 10013
+#gcost 10012
 #rcost 1
-#weapon "Stone Spear"
 #armor "Hide Shield"
 #armor "Magic Furs"
+#weapon "Stone Spear"
 #weapon 1527
-#rpcost 18
+#rpcost 15
 #maxage 60
 #stealthy 0
 #wastesurvival
@@ -9942,12 +10044,12 @@
 #mr 16
 #mor 13
 #gcost 10018
-#weapon "Shadow Spear"
+#weapon 433 -- Shadow Spear
 #armor "Spectral Shield"
 #armor "Magic Furs"
 #weapon 1527
 #rcost 1
-#rpcost 29
+#rpcost 24
 #magicpower 1
 #maxage 60
 #holy
@@ -10175,8 +10277,9 @@
 #magicpower 1
 #researchbonus -2
 #magicstudy 1
-#magicskill 7 1
-#magicskill 9 1
+#magicskill 4 1 -- S
+#magicskill 7 1 -- G
+--#magicskill 9 1 -- H
 #holy
 #poorleader
 #spiritsight
@@ -10211,7 +10314,8 @@
 #magicpower 1
 #researchbonus -2
 #magicstudy 1
-#magicskill 7 1
+#magicskill 4 1 -- S
+#magicskill 7 1 -- G
 --#custommagic 10624 100  -- 100% FASN
 --#custommagic 18816 100  -- 100% FASG
 #custommagic 26752 100  -- 100% FSNG
@@ -10292,9 +10396,10 @@
 #magicpower 1
 #researchbonus -2
 #magicstudy 1
-#magicskill 0 1
-#magicskill 6 1
-#magicskill 7 2
+#magicskill 0 1 -- F
+#magicskill 4 1 -- S
+#magicskill 6 1 -- N
+#magicskill 7 2 -- G
 #custommagic 26752 100  -- 100% FSNG
 #custommagic 26752 100  -- 100% FSNG
 #custommagic 10368 10  -- 10% FSN
@@ -10412,8 +10517,8 @@
 #armor "Crown"
 #rpcost 2
 #magicskill 2 1
-#custommagic 9088 100 -- FAWN
-#custommagic 9088 100 -- FAWN
+#custommagic 9088 200 -- FAWN
+--#custommagic 9088 100 -- FAWN
 --#custommagic 11008 100 -- AWSN
 --#custommagic 8832 200  -- +2 FWN
 #heretic 3
@@ -10461,9 +10566,10 @@
 #gcost 0
 #magicpower 1
 #magicstudy 1
-#magicskill 1 1
-#magicskill 7 1
-#magicskill 5 1
+--#magicskill 1 1 -- A
+#magicskill 4 1 -- S
+#magicskill 5 1 -- D
+#magicskill 7 1 -- G
 --#custommagic 24960 100  -- 100% FANG
 #custommagic 26752 100  -- 100% FSNG
 #magicskill 9 1
@@ -10581,9 +10687,10 @@
 #magicpower 1
 #researchbonus -2
 #magicstudy 1
-#magicskill 0 4
-#magicskill 6 2
-#magicskill 7 2
+#magicskill 0 4 -- F
+#magicskill 4 2 -- S
+--#magicskill 6 2 -- N
+#magicskill 7 2 -- G
 #magicskill 9 2
 #startage 60
 #latehero 10
@@ -10772,13 +10879,13 @@
 #magicpower 1
 #decscale 5  -- +Magic
 #magicskill 0 3
-#magicskill 4 3
-#magicskill 7 5
+#magicskill 4 4
+#magicskill 7 6
 #magicskill 6 3
-#tmpfiregems 1
-#tmpairgems 1
+#tmpfiregems 2
+#tmpglamourgems 3
 #tmpastralgems 2
-#tmpnaturegems 1
+#tmpnaturegems 2
 #researchbonus -20
 #itemslots 794624
 #nametype 176
@@ -13703,7 +13810,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #custommagic 1792 100 -- AWE
 #custommagic 9984 10  -- AWEN
 --#custommagic 9984 10 -- AWENG
-#magicskill 9 2
+#magicskill 9 3
 #nametype 179  -- Katsina
 #end
 
@@ -20011,7 +20118,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #swimming
 #autodishealer 1
 #magicskill 6 1
-#custommagic 32768 10
+#custommagic 32768 20
 #weapon "Dagger"
 #rcost 1
 #rpcost 2
@@ -22534,7 +22641,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #mapmove 14
 #hp 30  -- but not as tough
 #prot 14
-#att 111
+#att 11
 #mr 7
 #descr "The gigantic Dust Scorpions of the desert are fierce beasts, quick and aggressive with a murderously lethal sting."
 #clearweapons
@@ -22927,7 +23034,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #prot 15
 #mr 14
 #mor 50
-#str 12
+#str 15
 #att 10
 #def 14
 #prec 5
@@ -22986,6 +23093,34 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon "claw"
 #weapon "bite"
 #armor "rotten hides"
+#end
+
+#newmonster 7173
+#copystats 7161 -- Mubarizun
+#name "Mubarak Swordsman"
+#spr1 "juhera/mubarak_swordsman1.tga"
+#spr2 "juhera/mubarak_swordsman2.tga"
+#descr "Distinguished soldiers of Iram may be chosen to wield weapons forged of smokeless flame devised by the scholars and artificers of the Brass City. Such weapons require the magic of the Jinn to create and once completed can be wielded without getting burned."
+#clearweapons
+#weapon 1501 -- flame scimitar
+--#holy
+#mor 13
+#end
+
+#newmonster 7174
+#copystats 7160 -- Mamluk Archer
+#name "Mubarak Archer"
+#spr1 "juhera/mubarak_archer1.tga"
+#spr2 "juhera/mubarak_archer2.tga"
+#descr "Distinguished soldiers of Iram may be chosen to wield weapons forged of smokeless flame devised by the scholars and artificers of the Brass City. Such weapons require the magic of the Jinn to create and once completed can be wielded without danger to the wielder."
+#clearweapons
+#weapon 1502 -- flame bow
+#weapon 9 -- dagger
+#att 11
+#def 11
+#str 11
+#mor 12
+--#holy
 #end
 
 #newmonster 7169
@@ -23113,8 +23248,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #female
 #poorleader
 #magicskill 2 2  -- w2
---#custommagic 8320 50  -- 50% f/n
-#custommagic 1920 50  -- 50% FAWE
+#custommagic 8448 50  -- 50% a/n
+--#custommagic 1920 50  -- 50% FAWEN
 #supplybonus 20
 #researchbonus -3
 #end
@@ -23228,6 +23363,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #prec 10
 #enc 2
 #ap 12
+#size 3
 #weapon "scimitar"
 #weapon "javelin"
 #armor "shield"
@@ -23302,7 +23438,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #unmountedspr2 "juhera/un_faris2.tga"
 #descr "The noble knights of Iram follow a code of honour called Furusiyya. They are sworn to courage, honesty, and magnanimity. Those who exemplify these virtues are granted mighty steeds. The great leogryphs are a degenerate form of the Turan Gryphon, but strong and reliable mounts just the same. Over time the rider and the beast become bonded companions. Should the Faris be killed, the leogryph will become uncontrollable and refuse to take another rider. They are put down after the battle, to the resigned despair of the breeders."
 #rcost 1
-#gcost 10055
+#gcost 10035
 #rpcost 46
 #mapmove 14
 #ap 13
@@ -23310,11 +23446,11 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #enc 3
 #clearweapons
 #cleararmor
-#weapon "lance"
-#weapon "scimitar"
-#armor "shield"
-#armor "scale mail hauberk"
-#armor "half helmet"
+#weapon 4 -- Lance
+#weapon 746 -- Scimitar
+#armor 2 -- Shield
+#armor 17 -- Full Scale Mail
+#armor 118 -- Half Hlemet
 #mountmnr 7197
 #mountedinspector
 #skilledrider 2
@@ -23330,7 +23466,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #clearweapons
 #cleararmor
 #nametype 171
-#gcost 0
+#gcost 30
 #poisonres 0
 #darkvision 0
 #size 5
@@ -23623,8 +23759,9 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #ap 10
 #startage 44
 #magicskill 4 1  -- s
-#custommagic 3968 100  -- f/a/w/e/s
-#custommagic 3968 50  -- f/a/w/e/s
+--#custommagic 3968 100  -- f/a/w/e/s
+#custommagic 12160 100  -- f/a/w/e/s/n
+#custommagic 12160 50  -- f/a/w/e/s/n
 #siegebonus 10
 #weapon "fist"
 #armor "robes"
@@ -23690,7 +23827,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #ap 10
 #startage 32
 #clearmagic
-#magicskill 2 1  -- w1
+#magicskill 2 2  -- w2
 #magicskill 0 1  -- f1
 --#custommagic 640 100  -- w/f
 #custommagic 2688 100 -- FWS
@@ -24467,6 +24604,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #fixedname "Itzpapalotl"
 #gcost 0
 #mor 18
+#size 9
 #hp 82
 #prot 3
 #str 22
@@ -24664,6 +24802,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #mor 18
 #heretic 3
 #incunrest 100
+#armor 230 -- Magic Robes
+#armor 148  -- Crown
 #unique
 #reformtime 0
 #end
@@ -25153,6 +25293,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #fixedname "Ruamoko"
 #homerealm 0
 #gcost 0
+#mr 18
 #str 26
 #hp 130
 #prot 0
@@ -25203,6 +25344,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #lizard -- Quadruped bugged
 #homerealm 0
 #gcost 0
+#size 10
+#mr 18
 #str 25
 #hp 120
 #att 14
@@ -25253,6 +25396,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #fixedname "Ruamoko"
 #homerealm 0
 #gcost 0
+#size 9
+#mr 18
 #str 25
 #hp 110
 #att 14
@@ -25307,6 +25452,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #bird
 #homerealm 0
 #gcost 0
+#mr 18
 #str 18
 #hp 65
 #att 12
@@ -25886,6 +26032,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #custommagic 8704 100  -- 100% WN
 #weapon 29  -- Claw
 #armor 148  -- Crown
+#armor 158 -- Robes
 #poorleader
 #end
 
@@ -26601,6 +26748,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copystats 1335  -- Ghandarva
 #copyspr 1335  -- Ghandarva
 #descr "This is a dead hero returned from the astral plane. The heroes soul has transmigrated and it has now attained a new divine body. The divinely perfect form retains all of its magical powers and is blessed with an Aura of Splendor that strikes mortals with awe. "
+#airshield 50
 #firstshape -1016
 #end
 
@@ -28131,6 +28279,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #prot 5
 #swampsurvival
 #nametype 113  -- C'tis Male
+#armor 230 -- Magic Robes
 #end
 
 #newmonster 7428
@@ -28160,6 +28309,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #clearweapons
 #str 15
 #weapon 29  -- Claw
+#armor 158 -- Robes
+#armor 148  -- Crown
 #prot 5
 #swampsurvival
 #nametype 113  -- C'tis Male
@@ -28988,6 +29139,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #ironvul 1
 #darkvision 50
 #weapon 474  -- Golden Sword
+#weapon 1912 -- Golden Horn
 #armor 100  -- Bronze Cuirass
 #armor 135  -- Bronze cap
 #armor 2  -- Shield
@@ -29050,6 +29202,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #darkvision 50
 #att 13
 #def 13
+#okmagicleader
 #magicbeing
 #spiritsight
 #ironvul 1
@@ -29127,7 +29280,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #spr2 "magicenhanced/eemichael2.tga"
 #name "Commander of the Heavenly Hosts"
 #fixedname "Michael"
-#descr "Michael is first among the Arch Angels and was the one who cast the Infernal Lords down to the Inferno in ages past. He is the greatest warrior of Heaven and holds the title Supreme Commander of the Heavenly Hosts. Those under his command will be filled with zeal and all those that fight with him will find themselves blessed with great fortune in battle. Michael is the defender of the faith and the Angel of Death, taking the souls of the faithful to their eternal reward. Those that try to do him harm will find the injustice visited back upon them. As Angel of Sanctification he is constantly under the blessing of the Awakening God and as Angel of Glory he spreads Dominion wherever he goes. In battle he blazes like the sun and his fury is terrible to behold. Michael wields the Celestial blade with which he smote the treacherous ones and it retains the power to banish sinners to the Inferno. He has great priestly powers however he has no need for sorcery."
+#descr "Michael is first among the Arch Angels and was the one who cast the Infernal Lords down to the Inferno in ages past. He is the greatest warrior of Heaven and holds the title Supreme Commander of the Heavenly Hosts. Those under his command will be filled with zeal and all those that fight with him will find themselves blessed with great fortune in battle. Michael is the defender of the faith and the Angel of Death, taking the souls of the faithful to their eternal reward. Those that try to do him harm will find the injustice visited back upon them. As Angel of Sanctification he is constantly under the blessing of the Awakening God and as Angel of Glory he spreads Dominion wherever he goes. In battle he blazes like the sun and his fury is terrible to behold. Michael wields the Celestial Blade with which he smote the treacherous ones and it retains the power to banish sinners to the Inferno. He has great priestly powers however he has no need for sorcery."
 #hp 95
 #size 7
 #mor 30
@@ -31806,7 +31959,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #gcost 0
 #rcost 1
 #invulnerable 10
-#itemslots 860678
+#itemslots 860678 -- Hands, body, head, 2 misc
 #magicskill 0 1
 #magicskill 1 1
 #custommagic 5504 100  -- 100% FAED
@@ -31828,13 +31981,25 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #end
 
 #newmonster 7600
-#copystats 3717 -- Size 4 Fire Elemental
 #spr1 "magicenhanced/eeseitaadtwister.tga"
 #spr2 "magicenhanced/eeseitaadtwister2.tga"
-#clearweapons
 #name "Sandstorm"
 #descr "Seitaad are predatory spirits of the burning sand. They can fly and take the form of a scorching sandstorm to avoid harm. Seitaad often lurk in dunes and move with lightning speed to attack their prey. They are strong in the magic of Air and Fire and are almost impossible to harm with ordinary weapons."
 #miscshape
+#str 12
+#enc 0
+#maxage 1500
+#fireres 60
+#coldres -5
+#poisonres 25
+#firepower 1
+#unsurr 2
+#magicbeing
+#inanimate
+#ethereal
+#neednoteat
+#spiritsight
+#spiritform
 #mor 14
 #att 12
 #def 14
@@ -33556,6 +33721,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eecerulg2.tga"
 #name "Cerulean Gandharva"
 #descr "Gandharvas are divine warrior-musicians that left this world ages ago. They serve the Celestial Gods, but are sometimes summoned to this world by the monkey people they once ruled. Gandharvas are blessed with an Aura of Splendor that strikes mortals with awe. This Gandharva has been summoned to the Cerulean Tower and now aids the allies of the monkey folk."
+#airshield 50
 #end
 
 #newmonster 7680
@@ -34100,6 +34266,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Blemmyes"
 #descr "The Blemmyes, or Akephaloi, are a tribe of headless men that live in the rocky wilderness. They stand taller than a man even without a head on their shoulders and are strong and hardy warriors. Although primitive they trade for weapons and armor with civilized men and are sometimes summoned to serve as light infantry."
 #troglodyte
+#size 4
 #hp 24
 #prot 8
 #mr 11
@@ -35556,6 +35723,9 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #ethereal
 #magicbeing
 #holy
+#magicskill 4 1 -- S
+#custommagic 2048 50 -- S
+#custommagic 8192 50 -- N
 #magicpower 1
 #weapon 625  -- Magic Obsidian blade
 #armor 135  -- Bronze Cap
@@ -40330,6 +40500,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #ap 12
 #eyes 2
 #voidsanity 0
+#saltvul 1
 #weapon 1511
 #humanoid
 #itemslots 860678
@@ -41152,7 +41323,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #mr 18
 #mor 15
 #str 14
-#def 10
+#def 12
 #prec 12
 #ap 12
 #size 5
@@ -41216,7 +41387,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #mr 18
 #mor 15
 #str 14
-#def 10
+#def 12
 #prec 12
 #ap 12
 #size 5
@@ -41280,7 +41451,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #mr 18
 #mor 15
 #str 14
-#def 10
+#def 12
 #prec 12
 #ap 12
 #enc 2
@@ -41341,7 +41512,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #mr 18
 #mor 15
 #str 14
-#def 10
+#def 12
 #prec 12
 #ap 12
 #size 5
@@ -41779,7 +41950,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #mor 16
 #str 18
 #att 13
-#def 11
+#def 13
 #goodleader
 #goodmagicleader
 #fear 5
@@ -41909,12 +42080,13 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Finnaithae Noble"
 #descr "The land of Fennoscandia is home to many tribal groups. The Finnaithae tribes live in permanent settlements and farm such plants as will grow in the cold ground. Trade at these settlements has brought the Finnaithae much iron and gold, giving them leverage over the other tribes. The Nobles of the tribe bear fine weapons and shields emblazoned with their tribal insignia. They wear armor of Ulmish steel acquired from the tribes of Ulm."
 #gcost 12
-#rpcost 20
+#rpcost 17
 #hp 12
 #mor 12
 #str 12
 #att 12
 #def 12
+#startage 30
 #coldres 5
 #weapon 8  -- Broad Sword
 #armor 20  -- Iron Cap
@@ -41931,14 +42103,15 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "fennoscandia/fsgriomenn2.tga"
 #name "Finnaithae Griomenn"
 #descr "The land of Fennoscandia is home to many tribal groups. The Finnaithae tribes live in permanent palisades and farm such plants as will grow in the cold ground. Trade at these settlements has brought the Finnaithae much iron and gold, giving them leverage over the other tribes. Their warriors are well equipped with iron weapons and armor. The Griomenn are the most trusted warriors of the Nobles, and serve them as elite warriors. Outside the settlements of the Finnaithae iron is a sign of prestige and power."
-#gcost 13
-#rpcost 15
+#gcost 11
+#rpcost 14
 #coldres 5
 #hp 12
 #mor 13
 #str 12
 #att 12
 #def 12
+#startage 26
 #weapon 1  -- Spear
 #armor 20  -- Iron Cap
 #armor 2  -- Shield
@@ -41954,8 +42127,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "fennoscandia/fswarrior2.tga"
 #name "Finnaithae Warrior"
 #descr "The land of Fennoscandia is home to many tribal groups. The Finnaithae tribes live in permanent palisades and farm such plants as will grow in the cold ground. Trade at these settlements has brought the Finnaithae much iron and gold, giving them leverage over the other tribes. Their warriors are well equipped with iron weapons and armor. Outside the settlements of the Finnaithae iron is a sign of prestige and power."
-#gcost 10
-#rpcost 10
+#gcost 8
+#rpcost 8
 #coldres 5
 #hp 11
 #mor 11
@@ -41976,8 +42149,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "fennoscandia/fsjavelin2.tga"
 #name "Finnaithae Javelineer"
 #descr "The land of Fennoscandia is home to many tribal groups. The Finnaithae tribes live in permanent palisades and farm such plants as will grow in the cold ground. Trade at these settlements has brought the Finnaithae much iron and gold, giving them leverage over the other tribes. Their warriors are well equipped with iron weapons and armor. Outside the settlements of the Finnaithae iron is a sign of prestige and power."
-#gcost 10
-#rpcost 10
+#gcost 8
+#rpcost 8
 #coldres 5
 #hp 11
 #mor 11
@@ -41986,6 +42159,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #weapon 21  -- Javelin
 #armor 120  -- Leather Cap
 #armor 7  -- Scale Mail Cuirass
+#armor 2 -- Shield
 #nametype 185
 #end
 
@@ -41997,12 +42171,14 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "fennoscandia/fssoturi2.tga"
 #name "Finnaithae Soturi"
 #descr "The land of Fennoscandia is home to many tribal groups. The Finnaithae tribes live in permanent palisades and farm such plants as will grow in the cold ground. Trade at these settlements has brought the Finnaithae much iron and gold, giving them leverage over the other tribes. Their warriors are well equipped with iron weapons and armor. Outside the settlements of the Finnaithae iron is a sign of prestige and power. Soturi are semi-professional warriors that travel from settlement to settlement offering their services to the local Kuningas."
-#gcost 11
-#rpcost 12
+#gcost 10
+#rpcost 10
 #coldres 5
 #hp 11
 #mor 12
 #str 11
+#def 11
+#startage 24
 #weapon 17  -- Axe
 #armor 120  -- Leather Cap
 #armor 2  -- Shield
@@ -42018,8 +42194,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "fennoscandia/fsarcher2.tga"
 #name "Finnaithae Archer"
 #descr "The land of Fennoscandia is home to many tribal groups. The Finnaithae tribes live in permanent palisades and farm such plants as will grow in the cold ground. Trade at these settlements has brought the Finnaithae much iron and gold, giving them leverage over the other tribes. Their warriors are well equipped with iron weapons and armor. Outside the settlements of the Finnaithae iron is a sign of prestige and power."
-#gcost 10
-#rpcost 10
+#gcost 7
+#rpcost 8
 #coldres 5
 #hp 11
 #mor 11
@@ -42040,7 +42216,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Fenni Warrior"
 #descr "The land of Fennoscandia is home to many tribal groups. The Fenni tribes are nomadic wanderers that travel from place to place following their reindeer herds. They sleep below the stars eschewing even tents and seek no shelter from the harsh elements. They are expert hunters and the warriors of the Fenni are stealthy and cunning. In these tribes both men and women must hunt and fight to survive."
 #gcost 8
-#rpcost 10
+#rpcost 8
 #coldres 5
 #hp 12
 #mor 12
@@ -42068,8 +42244,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "fennoscandia/fsfennihunter2.tga"
 #name "Fenni Hunter"
 #descr "The land of Fennoscandia is home to many tribal groups. The Fenni tribes are nomadic wanderers that travel from place to place following their reindeer herds. They sleep below the stars eschewing even tents and seek no shelter from the harsh elements. They are expert hunters and the warriors of the Fenni are stealthy and cunning. In these tribes both men and women must hunt and fight to survive."
-#gcost 8
-#rpcost 10
+#gcost 7
+#rpcost 7
 #coldres 5
 #hp 11
 #mor 12
@@ -42162,7 +42338,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "fennoscandia/fssamiwar2.tga"
 #name "Sea Sami Warrior"
 #descr "The land of Fennoscandia is home to many tribal groups. The Sea Sami tribes travel the coasts hunting game and fishing in the icy waters. They are experts in navigating even the most dangerous seas in their small vessels. Their warriors are hardy and cunning in battle. In times of war the warriors of the Sea Sami will mount raids upon enemy coastal territories. Sea Sami warriors can sail under the command of a Sea Sami Chieftain."
-#gcost 11
+#gcost 10
 #rpcost 10
 #coldres 5
 #hp 12
@@ -42187,7 +42363,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "fennoscandia/fssamihunt2.tga"
 #name "Sea Sami Hunter"
 #descr "The land of Fennoscandia is home to many tribal groups. The Sea Sami tribes travel the coasts hunting game and fishing in the icy waters. They are experts in navigating even the most dangerous seas in their small vessels. Their warriors are hardy and cunning in battle. In times of war the warriors of the Sea Sami will mount raids upon enemy coastal territories. Sea Sami hunters can sail under the command of a Sea Sami Chieftain."
-#gcost 11
+#gcost 10
 #rpcost 10
 #coldres 5
 #hp 12
@@ -42216,7 +42392,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Bear Warrior"
 #descr "When the Chudes began to encroach on their lands the tribes of the Fenni found them to be fierce opponents. Soon some tribes had adopted the ways of the invaders, wearing bearskins and feasting on the hearts of bears to gain their strength. Now these Bear Warriors live deep in the forests away from civilization. Although they cannot take the form of the bear as the Chud do, they have absorbed strength and ferocity through communing with the spirits of these powerful beasts. In combat they become filled with rage, wielding great axes with incredible strength."
 #gcost 15
-#rpcost 18
+#rpcost 17
 #coldres 5
 #hp 13
 #mor 13
@@ -42224,8 +42400,10 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #att 11
 #def 11
 #berserk 2
+#startage 25
 #weapon 18  -- BattleAxe
 #armor 44  -- Furs
+#armor 269 -- Fur Mask
 #nametype 185
 #end
 
@@ -42234,9 +42412,9 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "fennoscandia/fstroll.tga"
 #spr2 "fennoscandia/fstroll2.tga"
 #name "Troll"
-#descr "The land of Fennoscandia is home to many tribal groups. The Troldfolk tribes live in the forested regions and can be dangerous to lone travellers. Trolls are ugly and slow witted, however they are strong and can regenerate wounds. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly.  Trolls can survive on a diet of sticks and stones although they prefer to supplement their diet with fresh meat. Cost 25 RP."
-#gcost 35
-#rpcost 25
+#descr "The land of Fennoscandia is home to many tribal groups. The Troldfolk tribes live in the forested regions and can be dangerous to lone travellers. Trolls are ugly and slow witted, however they are strong and can regenerate wounds. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly.  Trolls can survive on a diet of sticks and stones although they prefer to supplement their diet with fresh meat. Cost 21 RP."
+#gcost 25
+#rpcost 21
 #coldres 5
 #fireres 0
 #reclimit 5
@@ -42252,7 +42430,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "fennoscandia/fstusser2.tga"
 #name "Tusser"
 #descr "The Tusser are the strongest and most powerful tribe of the Troldfolk and have taken up residence near the greatest settlements of the Finnaithae. They have managed to acquire armor of iron and now rule over the other Troldfolk tribes. In battle the Tusser field armored trolls to devastate the enemy. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly. Cost 35 RP."
-#gcost 45
+#gcost 40
 #att 11
 #def 10
 #rpcost 35
@@ -42264,34 +42442,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #weapon 18  -- BattleAxe
 #armor 20  -- Iron Cap
 #armor 12  -- Scale mail hauberk
-#end
-
-#newmonster 8086
-#copystats 1928  -- Peshti Spearman
-#clearweapons
-#cleararmor
-#spr1 "fennoscandia/fssacred.tga"
-#spr2 "fennoscandia/fssacred2.tga"
-#name "Elk Warrior"
-#descr "All tribes of Fennoscandia revere the Elk as a bringer of life and prosperity. The herds provide meat, milk, clothing and tools to the tribesfolk and are given as gifts or tribute. The Noaidis choose promising warriors from each tribe to be trained in communicating with the spirits, donning armor fashioned from sacred Elk bones to imbue themselves with power. These sacred Elk Warriors are accorded respect by all the tribes and will be fed and sheltered wherever they should travel."
-#gcost 10019
-#rpcost 25
-#coldres 5
-#mr 13
-#hp 13
-#mor 14
-#str 13
-#att 13
-#def 12
-#forestsurvival
-#holy
-#spiritsight
-#ambidextrous 3
-#weapon 8  -- Broad Sword
-#weapon 6  -- Short Sword
-#armor 149  -- Bone Cuirass
-#armor 150  -- Bone Helmet
-#nametype 185
 #end
 
 #newmonster 8087
@@ -42328,6 +42478,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Finnaithae Chieftain"
 #descr "The land of Fennoscandia is home to many tribal groups. The Finnaithae tribes live in permanent settlements and farm such plants as will grow in the cold ground. Trade at these settlements has brought the Finnaithae much iron and gold, giving them leverage over the other tribes. The Nobles of the tribe bear fine weapons and shields emblazoned with their tribal insignia. They wear armor of Ulmish steel acquired from the tribes of Ulm. The chieftains of the Finnaithae are able commanders in times of war."
 #rpcost 10
+#gcost 70
 #hp 12
 #mor 12
 #str 12
@@ -42350,6 +42501,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Fenni Chieftain"
 #descr "The land of Fennoscandia is home to many tribal groups. The Fenni tribes are nomadic wanderers that travel from place to place following their reindeer herds. They sleep below the stars eschewing even tents and seek no shelter from the harsh elements. They are expert hunters and the warriors of the Fenni are stealthy and cunning. In these tribes both men and women must hunt and fight to survive. Fenni chieftains can lead bands of warriors to ambush and harass attackers, however they are unused to commanding large forces."
 #rpcost 10
+#gcost 55
 #hp 12
 #mor 12
 #str 12
@@ -42375,6 +42527,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Mountain Sami Chieftain"
 #descr "The land of Fennoscandia is home to many tribal groups. The Moutain Sami tribes live in highland regions where the biting wind will freeze an unprepared man to death in minutes. Here they build elaborate reindeer-hide tents as protection from the elements. Iron is more plentiful in these regions and the warriors of the Mountain Sami are well equipped. The chieftains of the Mountain Sami are at home in the highlands and forests of their homeland."
 #rpcost 10
+#gcost 55
 #hp 12
 #mor 12
 #str 12
@@ -42401,6 +42554,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Sea Sami Chieftain"
 #descr "The land of Fennoscandia is home to many tribal groups. The Sea Sami tribes travel the coasts hunting game and fishing in the icy waters. They are experts in navigating even the most dangerous seas in their small vessels. Their warriors are hardy and cunning in battle. In times of war the warriors of the Sea Sami will mount raids upon enemy coastal territories. The chieftains lead these raids in converted fishing vessels, striking and returning the seas before effective resistance can be mustered. A Sea Sami Chieftain can sail across the seas, however only Sea Sami warriors can accompany him."
 #rpcost 10
+#gcost 60
 #coldres 5
 #hp 12
 #mor 12
@@ -42426,7 +42580,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "fennoscandia/fskuningas2.tga"
 #name "Kuningas"
 #descr "The land of Fennoscandia is home to many tribal groups. The Kuningas is a tribal king claiming sovereignty over a large area. Whilst the Fenni come and go as they please regardless of tribal boundaries, few chieftains will openly defy a Kuningas within his territory. In times of war a Kuningas will lead his subjects into battle, armed and armored in the finest iron their smiths can fashion."
-#rpcost 10
+#rpcost 1
 #hp 12
 #mor 13
 #str 12
@@ -42509,7 +42663,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #unmountedspr2 "fennoscandia/un_fsnoayd2.tga"
 #name "Noayd"
 #descr "A Noayd is a lesser priest-shaman of the Fenni tribes. Like the Noaidis they use traditional rhythmic singing to enter a trance state to free their soul to enter the spirit realm. They are attuned to the souls of the land and the beasts that call it home. Each tribe has a Noayd to aid in navigating the wilderness and to ensure success in hunting. Often they ride a reindeer chosen from the herd for its strong soul. Many Fenni tribes have no concept of writing and as such Noayd are poorly suited to magical research. As with all priests of Fennoscandia they can call on the spirits when a battle is joined, and a spirit animal will always answer the call of a Noayd."
-#gcost 220
+#gcost 190
 #rpcost 1
 #hp 11
 #mor 12
@@ -42642,6 +42796,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Troldfolk Shaman"
 #descr "This is a shaman of the Troldfolk tribes. These reclusive tribes live in the forested regions and can be dangerous to lone travellers. Trolls are ugly and slow witted, however they are strong and can regenerate wounds. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly. Trolls can survive on a diet of sticks and stones although they prefer to supplement their diet with fresh meat."
 #rpcost 10
+#gcost 10030
 #mor 12
 #coldres 5
 #fireres 0
@@ -42738,6 +42893,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #holy
 #coldres 5
 #shapechange 8103
+#maxage 200
+#startage 500
 #weapon 238  -- Magic Staff
 #armor 158  -- Robes
 #batstartsum1 -1046  -- Spirit Animals
@@ -42756,6 +42913,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #coldres 5
 #maxage 125
 #shapechange 8102
+#maxage 200
+#startage 500
 #batstartsum1 -1046  -- Spirit Animals
 #end
 
@@ -42789,7 +42948,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 
 #newmonster 8105
 #copystats 694  -- Great Bear
-#copyspr 694  -- Great Bear
+#spr1 "fennoscandia/spiritbear1.png"
+#spr2 "fennoscandia/spiritbear2.png"
 #clearweapons
 #name "Spirit Bear"
 #descr "This is a spirit animal that has appeared to protect a priest of Fennoscandia. The spirit will attack the enemies of the priest until the battle is over, then return to the spirit realm. Spirit animals are ethereal and difficult to harm with mortal weapons."
@@ -42800,7 +42960,9 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #def 10
 #enc 0
 #poisonres 15
+#coldres 15
 #ethereal
+#spiritform
 #spiritsight
 #weapon 322  -- Bite
 #weapon 236  -- Claw
@@ -42810,7 +42972,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 
 #newmonster 8106
 #copystats 1380  -- Great Hawk
-#copyspr 1380  -- Great Hawk
+#spr1 "fennoscandia/spiritbird1.png"
+#spr2 "fennoscandia/spiritbird2.png"
 #name "Spirit Hawk"
 #descr "This is a spirit animal that has appeared to protect a priest of Fennoscandia. The spirit will attack the enemies of the priest until the battle is over, then return to the spirit realm. Spirit animals are ethereal and difficult to harm with mortal weapons."
 #hp 30
@@ -42820,7 +42983,9 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #def 10
 #enc 0
 #poisonres 15
+#coldres 15
 #ethereal
+#spiritform
 #spiritsight
 #transformation 0
 #montag 1046
@@ -42828,7 +42993,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 
 #newmonster 8107
 #copystats 1224  -- Dire Wolf
-#copyspr 1224  -- Dire Wolf
+#spr1 "fennoscandia/spiritwolf1.png"
+#spr2 "fennoscandia/spiritwolf2.png"
 #name "Spirit Wolf"
 #descr "This is a spirit animal that has appeared to protect a priest of Fennoscandia. The spirit will attack the enemies of the priest until the battle is over, then return to the spirit realm. Spirit animals are ethereal and difficult to harm with mortal weapons."
 #hp 35
@@ -42838,7 +43004,9 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #def 10
 #enc 0
 #poisonres 15
+#coldres 15
 #ethereal
+#spiritform
 #spiritsight
 #transformation 0
 #montag 1046
@@ -42846,7 +43014,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 
 #newmonster 8108
 #copystats 2136  -- Great Boar
-#copyspr 2136  -- Great Boar
+#spr1 "fennoscandia/spiritboar1.png"
+#spr2 "fennoscandia/spiritboar2.png"
 #name "Spirit Boar"
 #descr "This is a spirit animal that has appeared to protect a priest of Fennoscandia. The spirit will attack the enemies of the priest until the battle is over, then return to the spirit realm. Spirit animals are ethereal and difficult to harm with mortal weapons."
 #hp 40
@@ -42856,7 +43025,9 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #def 10
 #enc 0
 #poisonres 15
+#coldres 15
 #ethereal
+#spiritform
 #spiritsight
 #transformation 0
 #montag 1046
@@ -42864,7 +43035,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 
 #newmonster 8109
 #copystats 1084  -- Moose
-#copyspr 1084  -- Moose
+#spr1 "fennoscandia/spiritmoose1.png"
+#spr2 "fennoscandia/spiritmoose2.png"
 #name "Spirit Moose"
 #descr "This is a spirit animal that has appeared to protect a priest of Fennoscandia. The spirit will attack the enemies of the priest until the battle is over, then return to the spirit realm. Spirit animals are ethereal and difficult to harm with mortal weapons."
 #hp 45
@@ -42874,7 +43046,9 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #def 10
 #enc 0
 #poisonres 15
+#coldres 15
 #ethereal
+#spiritform
 #spiritsight
 #transformation 0
 #montag 1046
@@ -43006,10 +43180,11 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #cleararmor
 #spr1 "fennoscandia/vuorihiisi.tga"
 #spr2 "fennoscandia/vuorihiisi2.tga"
+#drawsize -5
 #name "Vuorihiisi"
 #descr "The Vuorihiisi is a foul tempered mountain troll of Fennoscandia. Larger and fiercer than common forest trolls, they live on remote peaks where they practice their dark magic in peace. They dislike visitors and are known to eat those that displease them, however they can be bargained with and will sometimes agree to aid a mage for a haul of magical gems. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly. Trolls can survive on a diet of sticks and stones although they prefer to supplement their diet with fresh meat."
 #gcost 0
-#hp 37
+#hp 45
 #str 21
 #mr 17
 #mor 15
@@ -43017,10 +43192,12 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #shockres -5
 #fireres 0
 #regeneration 15
-#magicskill 1 1
-#magicskill 3 2
-#magicskill 5 1
+#magicskill 1 1 -- A
+#magicskill 3 2 -- E
+#magicskill 5 1 -- D
+#magicskill 7 1 -- G
 #custommagic 21760 100  -- AEDG 100%
+#custommagic 29696 100  -- EDNG 100%
 #armor 192  -- Magic Furs
 #weapon 238  -- Magic Staff
 #end
@@ -45435,6 +45612,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #goodleader
 #maxage 500
 #startage 100
+#userestricteditem 15 -- Mictlan Priest
 #end
 
 #newmonster 8196
@@ -49683,13 +49861,13 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #prot 12
 #size 2
 #def 15
-#prec 15
+#prec 12
 #float
 #woundfend 99
 #cleanshape
 #clearweapons
 #weapon 547 -- buff
-#weapon 152 -- Trueshot Longbow
+#weapon 613 -- enchanted bow
 #regeneration 0
 #reconst 0
 #montag 1062 -- Animated weapons
@@ -51262,7 +51440,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1086
 #montag 1085
 #xpshape 50
-#montagweight 24 -- 15xp, 1/25
+#montagweight 14 -- 15xp, 1/15
 #end
 
 #newmonster 8828 -- 50xp non-sacred
@@ -51274,7 +51452,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1087
 #montag 1086
 #xpshape 100
-#montagweight 15 -- 50xp, 1/16
+#montagweight 9 -- 50xp, 1/10
 #skilledrider 5
 #end
 
@@ -51296,7 +51474,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1088
 #montag 1087
 #xpshape 200
-#montagweight 11 -- 100xp, 1/12
+#montagweight 5 -- 100xp, 1/6
 #skilledrider 6
 #end
 
@@ -51318,7 +51496,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1089
 #montag 1088
 #xpshape 400
-#montagweight 8 -- 200xp, 1/9
+#montagweight 2 -- 200xp, 1/3
 #skilledrider 6
 #end
 
@@ -51338,7 +51516,7 @@ Dragon Priests can be recruited in any land fort."
 #unmountedspr1 "nihuala/un_bowturquoise.tga"
 #unmountedspr1 "nihuala/un_bowturquoise2.tga"
 #montag 1089
-#montagweight 5 -- 400xp, 1/6
+#montagweight 1 -- 400xp, 1/2
 #skilledrider 6
 #end
 
@@ -51367,7 +51545,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1091
 #montag 1090
 #xpshape 50
-#montagweight 24 -- 15xp, 1/25
+#montagweight 14 -- 15xp, 1/15
 #end
 
 #newmonster 8838 -- 50xp non-sacred
@@ -51379,7 +51557,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1092
 #montag 1091
 #xpshape 100
-#montagweight 15 -- 50xp, 1/16
+#montagweight 9 -- 50xp, 1/10
 #skilledrider 5
 #end
 
@@ -51401,7 +51579,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1093
 #montag 1092
 #xpshape 200
-#montagweight 11 -- 100xp, 1/12
+#montagweight 5 -- 100xp, 1/6
 #skilledrider 6
 #end
 
@@ -51423,7 +51601,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1094
 #montag 1093
 #xpshape 400
-#montagweight 8 -- 200xp, 1/9
+#montagweight 2 -- 200xp, 1/3
 #skilledrider 6
 #end
 
@@ -51443,7 +51621,7 @@ Dragon Priests can be recruited in any land fort."
 #unmountedspr1 "nihuala/un_lanceturquoise.tga"
 #unmountedspr1 "nihuala/un_lanceturquoise2.tga"
 #montag 1094
-#montagweight 5 -- 400xp, 1/6
+#montagweight 1 -- 400xp, 1/2
 #skilledrider 6
 #end
 
@@ -51473,7 +51651,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1096
 #montag 1095
 #xpshape 50
-#montagweight 24 -- 15xp, 1/25
+#montagweight 14 -- 15xp, 1/15
 #end
 
 #newmonster 8848 -- 50xp non-sacred
@@ -51485,7 +51663,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1097
 #montag 1096
 #xpshape 100
-#montagweight 15 -- 50xp, 1/16
+#montagweight 9 -- 50xp, 1/10
 #skilledrider 5
 #end
 
@@ -51507,7 +51685,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1098
 #montag 1097
 #xpshape 200
-#montagweight 11 -- 100xp, 1/12
+#montagweight 5 -- 100xp, 1/6
 #skilledrider 6
 #end
 
@@ -51529,7 +51707,7 @@ Dragon Priests can be recruited in any land fort."
 #xpshapemon -1099
 #montag 1098
 #xpshape 400
-#montagweight 8 -- 200xp, 1/9
+#montagweight 2 -- 200xp, 1/3
 #skilledrider 6
 #end
 
@@ -51549,7 +51727,7 @@ Dragon Priests can be recruited in any land fort."
 #unmountedspr1 "nihuala/un_axeturquoise.tga"
 #unmountedspr1 "nihuala/un_axeturquoise2.tga"
 #montag 1099
-#montagweight 5 -- 400xp, 1/6
+#montagweight 1 -- 400xp, 1/2
 #skilledrider 6
 #end
 
@@ -53652,17 +53830,16 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #end
 
 #newmonster 9048 -- Morvarc'h Wraith Horse
-#copystats 3559 -- Skeletal War Horse
 #spr1 "magicenhanced/unit_movarch_horse1.tga"
 #spr2 "magicenhanced/unit_movarch_horse2.tga"
 #name "Morvarc'h Wraith"
-#descr "The skeleton of a Morvarc'h, reanimated to serve as steed to a Morgen Knight. They have lost their affinity with the sea and wind, and now burn with a cold fire. They are still shrouded in glamour, and can ride below the waves as easily as on land."
+#descr "The returned form of a Morvarc'h, reanimated to serve as steed to a Morgen Knight. They have lost their affinity with the sea and wind, and now burn with a cold fire. They are still shrouded in glamour, and can ride below the waves as easily as on land."
 #drawsize 0
 #glamour
 #ethereal
 #def 13
 #att 13
-#hp 16
+#hp 26
 #mr 14
 #mor 30
 #gcost 0
@@ -53670,6 +53847,13 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #amphibian
 #fireres 15
 #coldres 25
+#poisonres 25
+#undead
+#neednoteat
+#ap 30
+#size 5
+#str 18
+#spiritsight
 #cleararmor
 #armor 263
 #clearweapons
@@ -53919,6 +54103,8 @@ Cost 56 RP."
 #spr1 "vanilla/lactisempoisoner1.tga"
 #spr2 "vanilla/lactisempoisoner2.tga"
 #wastesurvival
+#armor 148 -- Crown
+#armor 158 -- Robes
 #end
 
 #newmonster 9058 -- la ctis hierodule
@@ -53933,6 +54119,8 @@ Cost 56 RP."
 #spr1 "vanilla/lactishighpriest1.tga"
 #spr2 "vanilla/lactishighpriest2.tga"
 #wastesurvival
+#armor 286
+#armor 158 -- Robes
 #end
 
 #newmonster 9060 -- la ctis king
@@ -53940,6 +54128,8 @@ Cost 56 RP."
 #spr1 "vanilla/lactisking1.tga"
 #spr2 "vanilla/lactisking2.tga"
 #wastesurvival
+#armor 148 -- Crown
+#armor 158 -- Robes
 #end
 
 #newmonster 9061 -- la ctis light
@@ -53975,6 +54165,7 @@ Cost 56 RP."
 #spr1 "vanilla/lactispslinger1.tga"
 #spr2 "vanilla/lactispslinger2.tga"
 #wastesurvival
+#armor 158 -- Robes
 #end
 
 
@@ -54000,6 +54191,7 @@ Cost 56 RP."
 #enc 0
 #mapmove 20
 #ap 20
+#saltvul 1
 #spiritsight
 #spiritform
 #weapon 41
@@ -54540,6 +54732,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#gcost 9980
 #end
 
 #newmonster 9090 -- "Rider" x5
@@ -55179,6 +55372,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #glamour
 #maxage 300
 #startage 200
+#autodishealer 1
 #magicskill 6 1
 #magicskill 7 1
 #custommagic 61696 100 -- ADNGB
@@ -57184,6 +57378,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #maxage 70
 #mountmnr 9190
 #holy
+#goodleader
 #magicskill 9 1
 #weapon 4 -- Lance
 #weapon 76 -- Fire Sword
@@ -57422,8 +57617,8 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #copystats 3325 -- Orionde Knight
 #spr1 "worthy_heroes/blue_avtandil1.png"
 #spr2 "worthy_heroes/blue_avtandil2.png"
-#unmountedspr1 "worthy_heroes/blue_avtandil1.png"
-#unmountedspr2 "worthy_heroes/blue_avtandil2.png"
+#unmountedspr1 "worthy_heroes/un_blue_avtandil1.png"
+#unmountedspr2 "worthy_heroes/un_blue_avtandil2.png"
 #name "Wandering Knight"
 #fixedname "Avtandil"
 #descr "Of all the virtuous knights in the realm of Feminie, Avtandil is the most shining example. Though hailing from another land, she has unwavering loyalty to her Queen and great skill at arms. Avtandil proved herself when she rescued the Queen when she was still a princess from a band of Kaji that held her hostage with the aid of a companion in lion's skin. She has since formed a close friendship with the Queen and King Consort, acting as their most trusted advisor, general, and diplomat. Avtandil is a warrior of great renown who fearlessly slays monsters with her magical sword. Having ranged as far as as the lands of Patala and Tien Chi in her youth, Avantadil has learned how to lead vast armies of both mundane and mystical beings."
@@ -57676,6 +57871,840 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #armor 24 -- Coral Cap
 #watershape 9205
 #ambidextrous 3
+#end
+
+
+#newmonster 9207
+#spr1 "vanilla/warbirdb1.png"
+#spr2 "vanilla/warbirdb2.png"
+#name "War Bird"
+#descr "In olden days the kingdom of Piconye was continuously harassed by strange birds and the Piconye King would personally lead his soldiers in defense of his kingdom. Finally, a brave and adventurous king led several expeditions into the wilderness to find the root of the problem. A hidden mountain full of bird-nests was found. The nests were destroyed, but the eggs were brought back to Piconye where they were hatched and reared. Since then the strange birds have been bred and trained as war mounts by the little people."
+#gcost 15
+#rcost -3
+#rpcost 7
+#armor 253 -- Cataphract Barding
+#def 13
+#mr 8
+#hp 9
+#size 3
+#mor 11
+#str 7
+#att 9
+#prec 9
+#ap 4
+#mapmove 32
+#startage 12
+#maxage 24
+#animal
+#flying
+#mountainsurvival
+#forestsurvival
+#weapon 753
+#weapon 408
+#end
+
+#newmonster 9208
+#spr1 "vanilla/warbirdk1.png"
+#spr2 "vanilla/warbirdk2.png"
+#name "War Bird"
+#descr "In olden days the kingdom of Piconye was continuously harassed by strange birds and the Piconye King would personally lead his soldiers in defense of his kingdom. Finally, a brave and adventurous king led several expeditions into the wilderness to find the root of the problem. A hidden mountain full of bird-nests was found. The nests were destroyed, but the eggs were brought back to Piconye where they were hatched and reared. Since then the strange birds have been bred and trained as war mounts by the little people."
+#gcost 15
+#rcost -3
+#rpcost 7
+#armor 254 -- Plate Barding
+#def 14
+#str 8 
+#mr 10
+#hp 9
+#size 3
+#mor 11
+#att 9
+#prec 9
+#ap 4
+#mapmove 32
+#startage 12
+#maxage 24
+#animal
+#flying
+#mountainsurvival
+#forestsurvival
+#weapon 753
+#weapon 408
+#end
+
+#newmonster 9209
+#copystats 3801 -- Piconye Pope
+#spr1 "vanilla/piconyeprotopope1.png"
+#spr2 "vanilla/piconyeprotopope2.png"
+#name "Protopope"
+#descr "The Protopope of Piconye is chosen only by the hand of God from amongst the Bishops and Popes, and acts as the divine voice to their Word."
+#armor 158 -- Robes
+#incunrest -30
+#spreaddom 1
+#end
+
+
+
+
+
+#newmonster 9280 -- Snail
+#copystats 2526 -- Cave Grub
+#spr1 "magicenhanced/blue_snail1.png"
+#spr2 "magicenhanced/blue_snail2.png"
+#name "Cametheternis"
+#descr "The Cametheternis is a giant snail native to the lands of Piconye. They are incredibly slow, but their shell is hard and they are covered in a thick slime. When they descend upon villages, Knights of Piconye may try to prove their mettle by facing them in combat and driving them away, though it is rare for them to slay one."
+#snake
+#gcost 0
+#size 6
+#hp 55
+#str 16
+#prot 23
+#mr 8
+#mor 16
+#att 9
+#def 6
+#prec 5
+#enc 2
+#startage 12
+#maxage 40
+#clearweapons
+#weapon 547  -- Buff
+#weapon 329 -- Slime
+#custommagic 26112 100 -- WENG
+#animal
+#slashres
+#saltvul 10
+#siegebonus 2
+#slimer 2
+#ap 3
+#end
+
+
+#newmonster 8086
+#copystats 1928  -- Peshti Spearman
+#clearweapons
+#cleararmor
+#drawsize 8
+#spr1 "fennoscandia/fssacred.tga"
+#spr2 "fennoscandia/fssacred2.tga"
+#name "Elk Warrior"
+#descr "All tribes of Fennoscandia revere the Elk as a bringer of life and prosperity. The herds provide meat, milk, clothing and tools to the tribesfolk and are given as gifts or tribute. The Noaidis choose promising warriors from each tribe to be trained in communicating with the spirits, donning armor fashioned from sacred Elk bones to imbue themselves with power. These sacred Elk Warriors are accorded respect by all the tribes and will be fed and sheltered wherever they should travel. The first time an Elk warrior should die, the spirit of the Elk within him will emerge, restoring his vitality and fighting alongside him for the remainder of the battle. This comes at the cost of permanently severing the spiritual bond between them."
+#gcost 10035
+#rpcost 25
+#coldres 5
+#hp 18 -- +5 from Elk
+#mr 13 -- +1 from Elk
+#mor 14 -- +1 from Elk
+#str 13 -- +1 from Elk
+#att 13 -- +1 from Elk
+#def 13 -- +1 from Elk
+#ap 15 -- +2 from Elk
+#spiritsight -- from Elk
+#forestsurvival
+#holy
+#ambidextrous 3
+#weapon 8  -- Broad Sword
+#weapon 6  -- Short Sword
+#armor 149  -- Bone Cuirass
+#armor 150  -- Bone Helmet
+#nametype 185
+#secondshape 9282
+
+#end
+
+#newmonster 9281
+#copystats 2228 -- deer
+#spr1 "fennoscandia/spiritelk1.png"
+#spr2 "fennoscandia/spiritelk2.png"
+#name "Spirit Elk"
+#descr "This is a spirit animal that has appeared to protect an Elk Warrior of Fennoscandia. The spirit will attack the enemies of the warrior until the battle is over, then return to the spirit realm. Spirit animals are ethereal and difficult to harm with mortal weapons."
+#prot 4
+#str 14 
+#size 4
+#hp 18
+#mr 10
+#mor 18
+#att 11
+#def 10
+#enc 0
+#poisonres 15
+#coldres 15
+#ethereal
+#spiritform
+#spiritsight
+--#undead
+--#almostliving
+#transformation 0
+--#montag 1046
+#holy
+#end
+
+
+#newmonster 9282 -- Elk Warrior release Elk
+#copystats 1928  -- Peshti Spearman
+#clearweapons
+#cleararmor
+#spr1 "fennoscandia/fssacred.tga"
+#spr2 "fennoscandia/fssacred2.tga"
+#name "Elk Warrior​" -- ZWSP at the end
+#descr "All tribes of Fennoscandia revere the Elk as a bringer of life and prosperity. The herds provide meat, milk, clothing and tools to the tribesfolk and are given as gifts or tribute. The Noaidis choose promising warriors from each tribe to be trained in communicating with the spirits, donning armor fashioned from sacred Elk bones to imbue themselves with power. These sacred Elk Warriors are accorded respect by all the tribes and will be fed and sheltered wherever they should travel. The first time an Elk warrior should die, the spirit of the Elk within him will emerge, restoring his vitality and fighting alongside him for the remainder of the battle. This comes at the cost of permanently severing the spiritual bond between them."
+#gcost 10030
+#rpcost 25
+#coldres 5
+#hp 13
+#mr 12
+#mor 13
+#str 12
+#att 12
+#def 12
+#forestsurvival
+#holy
+#ambidextrous 3
+#armor 149  -- Bone Cuirass
+#armor 150  -- Bone Helmet
+#nametype 185
+
+#weapon 1905 -- Release Elk Spirit
+--#batstartsum1 9281
+#weapon 8  -- Broad Sword
+#weapon 6  -- Short Sword
+#worldshape 9283
+#firstshape 9283
+#end
+
+
+#newmonster 9283 -- Elk Warrior no Elk
+#copystats 1928  -- Peshti Spearman
+#clearweapons
+#cleararmor
+#spr1 "fennoscandia/fssacred.tga"
+#spr2 "fennoscandia/fssacred2.tga"
+#name "Elk Warrior​" -- ZWSP at the end
+#descr "All tribes of Fennoscandia revere the Elk as a bringer of life and prosperity. The herds provide meat, milk, clothing and tools to the tribesfolk and are given as gifts or tribute. The Noaidis choose promising warriors from each tribe to be trained in communicating with the spirits, donning armor fashioned from sacred Elk bones to imbue themselves with power. These sacred Elk Warriors are accorded respect by all the tribes and will be fed and sheltered wherever they should travel. The first time an Elk warrior should die, the spirit of the Elk within him will emerge, restoring his vitality and fighting alongside him for the remainder of the battle. This comes at the cost of permanently severing the spiritual bond between them."
+#gcost 10030
+#rpcost 25
+#coldres 5
+#hp 13
+#mr 12
+#mor 13
+#str 12
+#att 12
+#def 12
+#forestsurvival
+#holy
+#ambidextrous 3
+#weapon 8  -- Broad Sword
+#weapon 6  -- Short Sword
+#armor 149  -- Bone Cuirass
+#armor 150  -- Bone Helmet
+#nametype 185
+#end
+
+#newmonster 9284 -- Fenno troll king
+#copystats 1037 -- War Troll
+#spr1 "fennoscandia/trollking1.png"
+#spr2 "fennoscandia/trollking2.png"
+#drawsize -10
+#name "King in the Mountain"
+#descr "Dovregubben is the King of the Bjergtroll tribe, and self-proclaimed King of all troll kind. He is a troll of immense stature with an incredibly tough hide and innately skilled in troll magic. He generally resides within his mountain home, but may be persuaded to fight alongside the people of Fennoscandia with enough gems and riches. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly."
+#fixedname "Dovregubben"
+#gcost 0
+#gold 900
+#size 9
+#bodyguard 0
+#fireres 0
+#shockres -10
+#str 28
+#att 11
+#def 10
+#hp 95
+#prot 13
+#fear 5
+#mr 18
+#expertleader
+#startage 250
+#maxage 200
+#forestsurvival
+#clearweapons
+#cleararmor
+#armor 44 -- furs
+--#armor 148 -- crown
+#weapon 165 -- great club
+#magicskill 3 4 -- E
+#magicskill 6 2 -- N
+#magicskill 7 1 -- G
+#unique
+#end
+
+#newmonster 9285 -- Fenno troll mother
+#copystats 1037 -- War Troll
+#spr1 "fennoscandia/trollmother1.png"
+#spr2 "fennoscandia/trollmother2.png"
+#name "Troll Mother"
+#descr "Mum is a troll sorceress of great power and mother to the King in the Mountain. She usually spends her time preparing large batches of stew for the troldfolk, and can be found proccuring ingredients from the forest or occasionally villages when she needs a farmer or two. She may be persuaded to aid the people of Fennoscandia with enough gems, but only if her son the King in the Mountain has joined the fight. She can produce a great quantity of stew, enough to keep a whole army fed. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly. Trolls can survive on a diet of sticks and stones although they prefer to supplement their diet with fresh meat, and all will be grateful to taste of Mum's cooking."
+#fixedname "Mum"
+#gcost 0
+#size 5
+#bodyguard 0
+#fireres 0
+#shockres -10
+#str 22
+#att 10
+#def 9
+#hp 28
+#prot 10
+#mr 18
+#startage 450
+#maxage 180
+#supplybonus 200
+#inspirational 2
+#okleader
+#forestsurvival
+#clearweapons
+#cleararmor
+#armor 44 -- furs
+--#armor 148 -- crown
+#weapon 153 -- stick
+#magicskill 5 3 -- D
+#magicskill 6 3 -- N
+#magicskill 7 3 -- G
+#unique
+#end
+
+#newmonster 9286 -- Fenno troll grandfather
+#copystats 1037 -- War Troll
+#spr1 "fennoscandia/trollgrandfather1.png"
+#spr2 "fennoscandia/trollgrandfather2.png"
+#drawsize -10
+#name "Troll Grandfather"
+#descr "Gramps is the oldest troll in Fennoscandia and has been asleep for the last few centuries. It is said his snoring deep underground is the cause of the earth rumbling and that his waking will bring great storms and earthquakes. He is immensely huge and innately powerful in the magic of trolls, and quite capable of taking on an army even at his advanced age. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly."
+#fixedname "Gramps"
+#gcost 900
+#size 9
+#bodyguard 0
+#fireres 0
+#shockres -10
+#str 28
+#att 11
+#def 10
+#hp 98
+#prot 12
+#fear 5
+#mr 18
+#startage 650
+#maxage 600
+#okleader
+#forestsurvival
+#clearweapons
+#cleararmor
+#armor 44 -- furs
+--#armor 148 -- crown
+#weapon 153 -- stick
+#magicskill 3 5 -- E
+#magicskill 5 3 -- D
+#magicskill 7 3 -- G
+#unique
+#end
+
+#newmonster 9287 -- Fenno mountain troll
+#copystats 1037 -- War Troll
+#spr1 "fennoscandia/bjergtroll1.png"
+#spr2 "fennoscandia/bjergtroll2.png"
+#drawsize -6
+#name "Bjergtroll"
+#descr "Fennoscandia is home to a great many trolls. The troldfolk of the surface have made an alliance with the people of Fennoscandia, but deep in the mountain caves live the Bjergtroll tribe, mountain trolls of great stature and strength. They generally stay within their caves but may be persuaded into service with gems and riches. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly."
+#gcost 45
+#bodyguard 0
+#fireres 0
+#shockres -10
+#str 22
+#hp 41
+#prot 12
+#clearweapons
+#cleararmor
+#armor 44 -- furs
+#weapon 165 -- Great Club
+#end
+
+#newmonster 9288 -- Hare Sword
+#copystats 1126 -- Vanara Swordsman
+#spr1 "magicenhanced/blue_rabbitsword1.png"
+#spr2 "magicenhanced/blue_rabbitsword2.png"
+#name "Hare Swordsman"
+#descr "There reside many strange and wondrous creatures in the lands of Piconye. The Hare is a large killer rabbit with a penchant for terrible cruelty. Piconye sages believe they were normal rabbits granted strength and intelligence by a powerful warlock or dark god long ago. Where they were once hunted, they now hunt with ruthless efficiency and several colonies reside in the lands of Piconye. They still retain their primal instincts and are difficult to surround, but will run if spooked."
+#hp 8
+#size 2
+#str 8
+#def 14
+#patrolbonus 1
+#unsurr 1
+#att 13
+#enc 2
+#mr 13
+#mor 9
+#prot 2
+#maxage 18
+#startage 12
+#magicbeing
+#invulnerable 15
+#cleararmor
+#clearweapons
+#weapon 6 -- Shortsword
+#armor 3 -- Kite Shield
+#montag 1079
+#montagweight 2
+#end
+
+#newmonster 9289 -- Hare Mace
+#copystats 1126 -- Vanara Swordsman
+#spr1 "magicenhanced/blue_rabbitmace1.png"
+#spr2 "magicenhanced/blue_rabbitmace2.png"
+#name "Hare Maceman"
+#descr "There reside many strange and wondrous creatures in the lands of Piconye. The Hare is a large killer rabbit with a penchant for terrible cruelty. Piconye sages believe they were normal rabbits granted strength and intelligence by a powerful warlock or dark god long ago. Where they were once hunted, they now hunt with ruthless efficiency and several colonies reside in the lands of Piconye. They still retain their primal instincts and are difficult to surround, but will run if spooked."
+#hp 8
+#size 2
+#str 8
+#def 14
+#patrolbonus 1
+#unsurr 1
+#att 13
+#enc 2
+#mr 13
+#mor 9
+#prot 2
+#maxage 18
+#startage 12
+#magicbeing
+#invulnerable 15
+#cleararmor
+#clearweapons
+#weapon 1908 -- Cruel Mace
+#armor 3 -- Kite Shield
+#montag 1079
+#montagweight 2
+#end
+
+#newmonster 9290 -- Hare Axe
+#copystats 1126 -- Vanara Swordsman
+#spr1 "magicenhanced/blue_rabbitaxe1.png"
+#spr2 "magicenhanced/blue_rabbitaxe2.png"
+#name "Hare Axeman"
+#descr "There reside many strange and wondrous creatures in the lands of Piconye. The Hare is a large killer rabbit with a penchant for terrible cruelty. Piconye sages believe they were normal rabbits granted strength and intelligence by a powerful warlock or dark god long ago. Where they were once hunted, they now hunt with ruthless efficiency and several colonies reside in the lands of Piconye. They still retain their primal instincts and are difficult to surround, but will run if spooked."
+#hp 8
+#size 2
+#str 8
+#def 14
+#patrolbonus 1
+#unsurr 1
+#att 13
+#enc 2
+#mr 13
+#mor 9
+#prot 2
+#maxage 18
+#startage 12
+#magicbeing
+#invulnerable 15
+#cleararmor
+#clearweapons
+#weapon 259 -- Executioner's Axe
+#montag 1079
+#montagweight 2
+#end
+
+#newmonster 9291 -- Hare Archer
+#copystats 1126 -- Vanara Swordsman
+#spr1 "magicenhanced/blue_rabbitarcher1.png"
+#spr2 "magicenhanced/blue_rabbitarcher2.png"
+#name "Hare Archer"
+#descr "There reside many strange and wondrous creatures in the lands of Piconye. The Hare is a large killer rabbit with a penchant for terrible cruelty. Piconye sages believe they were normal rabbits granted strength and intelligence by a powerful warlock or dark god long ago. Where they were once hunted, they now hunt with ruthless efficiency and several colonies reside in the lands of Piconye. They still retain their primal instincts and are difficult to surround, but will run if spooked."
+#hp 8
+#size 2
+#str 8
+#def 14
+#patrolbonus 1
+#size 2
+#unsurr 1
+#att 13
+#enc 2
+#mr 13
+#mor 9
+#prot 2
+#maxage 18
+#startage 12
+#magicbeing
+#invulnerable 15
+#cleararmor
+#clearweapons
+#weapon 9 -- Dagger
+#weapon 372 -- poison bow
+#montag 1079
+#montagweight 4
+#end
+
+#newmonster 9292 -- Hare Knight
+#copystats 1126 -- Vanara Swordsman
+#spr1 "magicenhanced/blue_rabbitknight1.png"
+#spr2 "magicenhanced/blue_rabbitknight2.png"
+#unmountedspr1 "magicenhanced/un_blue_rabbitknight1.png"
+#unmountedspr2 "magicenhanced/un_blue_rabbitknight2.png"
+#name "Hare Snail Knight"
+#descr "There reside many strange and wondrous creatures in the lands of Piconye. The Hare is a large killer rabbit with a penchant for terrible cruelty. Piconye sages believe they were normal rabbits granted strength and intelligence by a powerful warlock or dark god long ago. Where they were once hunted, they now hunt with ruthless efficiency and several colonies reside in the lands of Piconye. They still retain their primal instincts and are difficult to surround, but will run if spooked. Some have chosen to tame and ride giant snails into combat where they are able to leverage an oversized lance."
+#hp 8
+#size 2
+#str 9
+#def 14
+#patrolbonus 1
+#unsurr 1
+#att 14
+#enc 2
+#mr 13
+#mor 10
+#prot 2
+#maxage 18
+#startage 12
+#magicbeing
+#invulnerable 15
+#cleararmor
+#clearweapons
+#weapon 1909 -- Great Lance
+#armor 3 -- Kite Shield
+#mountmnr 9280 -- Cametheternis
+#skilledrider 4
+#montag 1079
+#montagweight 1
+#end
+
+#newmonster 9293 -- Fenno war troll
+#copystats 1037 -- War Troll
+#spr1 "fennoscandia/bjergtrollwar1.png"
+#spr2 "fennoscandia/bjergtrollwar2.png"
+#drawsize -6
+#name "Armored Bjergtroll"
+#descr "Fennoscandia is home to a great many trolls. The troldfolk of the surface have made an alliance with the people of Fennoscandia, but deep in the mountain caves live the Bjergtroll tribe, mountain trolls of great stature and strength. They generally stay within their caves but may be persuaded into service with gems and riches. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly. Some Bjergtroll have acquired armor and weapons of Tusser origin, making them even more fearsome in combat."
+#gcost 60
+#bodyguard 0
+#fireres 0
+#shockres -10
+#str 23
+#hp 44
+#prot 12
+#clearweapons
+#cleararmor
+#armor 20 -- iron cap
+#armor 12 -- scale mail hauberk
+#weapon 18 -- battleaxe
+#end
+
+#newmonster 9294 -- Fenno knight troll
+#copystats 1086 -- Moose Knight Troll
+#spr1 "fennoscandia/bjergtrollknight1.png"
+#spr2 "fennoscandia/bjergtrollknight2.png"
+#name "Bjergtroll Moose Knight"
+#descr "Fennoscandia is home to a great many trolls. The troldfolk of the surface have made an alliance with the people of Fennoscandia, but deep in the mountain caves live the Bjergtroll tribe, mountain trolls of great stature and strength. They generally stay within their caves but may be persuaded into service with gems and riches. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly. Some Bjergtroll have acquired armor and weapons of Tusser origin, making them even more fearsome in combat."
+#gcost 60
+#bodyguard 0
+#fireres 0
+#shockres -10
+#str 23
+#att 11
+#def 10
+#hp 46
+#prot 12
+#clearweapons
+#cleararmor
+#armor 20 -- iron cap
+#armor 12 -- scale mail hauberk
+#armor 2 -- shield
+#weapon 17 -- axe
+#end
+
+#newmonster 9295 -- snail trebuchet main rider
+#copystats 3785 -- Piconye Crossbowman
+#spr1 "magicenhanced/un_blue_snailtrebuchet1.png"
+#spr2 "magicenhanced/un_blue_snailtrebuchet2.png"
+#name "Snail Trebuchet Operator"
+#descr "Sometimes the giant snails of Piconye are used as carriers of great trebuchets. This is an operator of such a war machine. If any of the operators are killed but the trebuchet is not destroyed new operators will be appointed after the battle."
+#str 7
+#hp 7
+#mor 13
+#def 18
+#att 11
+#ap 3
+#nobarding
+#end
+
+#newmonster 9296 -- snail trebuchet corider
+#copystats 3785 -- Piconye Crossbowman
+#spr1 "magicenhanced/un_blue_snailtrebuchet1.png"
+#spr2 "magicenhanced/un_blue_snailtrebuchet2.png"
+#name "Snail Trebuchet Operator"
+#descr "Sometimes the giant snails of Piconye are used as carriers of great trebuchets. This is an operator of such a war machine. If any of the operators are killed but the trebuchet is not destroyed new operators will be appointed after the battle."
+#str 7
+#hp 7
+#mor 13
+#def 15
+#att 11
+#end
+
+
+#newmonster 9297 -- Snail trebuchet
+#copystats 2526 -- Cave Grub
+#spr1 "magicenhanced/blue_snailtrebuchet1.png"
+#spr2 "magicenhanced/blue_snailtrebuchet2.png"
+#xspr1 "magicenhanced/blue_snailtrebuchet1_1.png"
+#xspr2 "magicenhanced/blue_snailtrebuchet2_1.png"
+#xspr1 "magicenhanced/blue_snailtrebuchet1_2.png"
+#xspr2 "magicenhanced/blue_snailtrebuchet2_2.png"
+#unmountedspr1 "magicenhanced/blue_snailtrebuchetm1.png"
+#unmountedspr2 "magicenhanced/blue_snailtrebuchetm2.png"
+#name "Snail Trebuchet"
+#descr "The Cametheternis is a giant snail native to the lands of Piconye. They are incredibly slow, but their shell is hard and they are covered in a thick slime. Sometimes they are used by the Piconye as carriers of great trebuchets and their slime is used to coat the boulders thrown. If any of the operators are killed but the trebuchet is not destroyed new operators will be appointed after the battle. Trebuchets are extremely effective at besieging a fortress."
+#snake
+#gcost 0
+#size 10
+#fireres -5 -- -5 from wooden construct
+#hp 55
+#str 16
+#prot 25 -- +2 from wooden construct
+#mr 13
+#mor 20
+#att 9
+#def 4
+#prec 12
+#enc 2
+#woundfend 1
+#startage 12
+#maxage 40
+#clearweapons
+#weapon 547  -- Buff
+#weapon 329 -- Slime
+#weapon 1911 -- trebuchet
+#animal
+#slashres
+#saltvul 10
+#siegebonus 100
+#castledef 30
+#slimer 2
+#ap 2 -- -1 from wooden construct
+#mountiscom 1
+#nothrowoff
+#nofalldmg
+#regainmount 1
+#nobarding
+#mountmnr 9295 -- snail trebuchet main corider
+#coridermnr 9296 -- snail trebuchet corider
+#nofriders 3
+#mountedinspector
+#nametype 188 -- Vehicle
+#end
+
+
+#newmonster 9298 -- Thiniseretae
+#copystats 1126 -- Vanara Swordsman
+#spr1 "magicenhanced/blue_thiniseretae1.png"
+#spr2 "magicenhanced/blue_thiniseretae1.png"
+#name "Thiniseretae"
+#descr "There reside many strange and wondrous creatures in the lands of Piconye. Among them is the Thiniseretae, a bird with two heads, one appearing human where their torso should be. They are powerful mages of Astral and Air and may be summoned by the sages of Piconye."
+#gcost 0
+#hp 9
+#str 8
+#def 13
+#att 13
+#enc 2
+#mr 15
+#prot 0
+#itemslots 991232
+#magicskill 4 3
+#magicskill 1 2
+#startage 50
+#maxage 150
+#flying
+#magicbeing
+#cleararmor
+#clearweapons
+#weapon 583 -- taloned kick
+#end
+
+
+#newmonster 9299 -- Lobster Knight
+#copystats 2103 -- Shark Warrior
+#spr1 "magicenhanced/blue_lobsterknight1.png"
+#spr2 "magicenhanced/blue_lobsterknight2.png"
+#name "Lobster Knight"
+#descr "There reside many strange and wondrous creatures in the lands of Piconye. The Lobster Knight is a strange hybrid being that resides in the sea near Piconye where a river of sand and rock flows into it. They are always found wearing a knightly helm and wielding a shield in their right hand with which they may defend the wise from the wiles of the foolish. They are relentless defenders of the righteous and may be summoned into service by the sages of Piconye."
+#gcost 0
+#hp 45
+#str 18
+#def 10
+#att 13
+#enc 2
+#mr 12
+#prot 22
+#startage 40
+#maxage 200
+#humanoid
+#animal
+#itemslots 860678 -- no feet
+#cleararmor
+#clearweapons
+#magicbeing
+#cleararmor
+#armor 193 -- champ helm
+#armor 250 -- shield of wisdom
+#weapon 1535 -- metal short sword
+#weapon 600 -- crab claw
+#end
+
+#newmonster 9300
+#copystats 3801 -- Piconye Pope
+#spr1 "worthy_heroes/piconyearchpope1.png"
+#spr2 "worthy_heroes/piconyearchpope2.png"
+#name "Piconye Arch Pope"
+#descr "The Popes are the highest ranking priests of Piconye, just below the Prester King himself. In their infinite wisdom the Popes have made it so that the same Prester King never presides at the Council more than once a year. Reldresal is a cunning bishop who acts as 'first among equals' to guide the selection of Prester Kings. While physically weak, his knowledge of holy rites is unmatched even amongst his peers. His very presence on the battlefield fills lesser priests with divine inspiration and energy. At the turning of the new year, Reldresal will lead the Council of Popes in the selection of a new Prester King from the ranks of the Sage-Priests."
+#fixedname "Reldresal"
+#gcost 0
+#rpcost 0
+#magicskill 9 4
+#onebattlespell 243 -- Divine Channeling
+#mor 16  -- base 12
+#latehero 8
+#end
+
+#newmonster 9301
+#copystats 3795  -- Piconye Prester
+#spr1 "worthy_heroes/piconyeriverprester1.png"
+#spr2 "worthy_heroes/piconyeriverprester2.png"
+#name "Prester of the River"
+#descr "Quasideus is a Prester King with domain over an arid land. Near the desert between the uninhabited mountains, a certain rivulet flows beneath the earth, where the sand and gravel are nothing but precious gems. The rivulet flows into a river of great size, the depths of which the men of Piconye enter and carry from there the greatest abundance of magical stones. With his great power in water magic, Quasideus blesses the children of his realm so that, in order to find stones, they may live sometimes for three or four months entirely under water. In return, his people freely give to him a measure of the treasures they find. "
+#fixedname "Quasideus"
+#clearweapons
+#weapon "Baculus"
+#cleararmor
+#armor "Jeweled Breastplate"
+#armor "Crown"
+#gcost 0
+#rpcost 0
+#amphibian
+#giftofwater 200
+#maxage 90
+#clearmagic
+#magicskill 2 3 -- W
+#magicskill 3 1 -- E
+#magicskill 4 2 -- S
+#magicskill 6 1 -- N
+#magicskill 9 3 -- H
+#gemprod 2 1
+#latehero 8
+#end
+
+#newmonster 9302
+#copystats 3800
+#spr1 "vanilla/piconyeprotopope1.png"
+#spr2 "vanilla/piconyeprotopope2.png"
+#clearmagic
+#name "Antipope"
+#descr "Every now and then, a lesser priest of Piconye will find himself divinely inspired to take up the cause of the once great kingdom of Ind. Branding himself the new Arch Pope, he has pledged himself wholly to the cause of the awakening god. The Antipope is a skilled priest, but his very presence is liable to cause a schism within the faithful of a province."
+#nametype 148
+#gcost 0
+#rpcost 0
+#hp 9 
+#mor 14 
+#mr 16 
+#str 8 
+#att 12
+#def 15 
+#holy
+#heretic 5
+#humanoid
+#magicskill 0 1 -- F
+#magicskill 3 1 -- E
+#magicskill 4 1 -- S
+#magicskill 9 4
+#custommagic 11904 100 -- (100% FWESN)
+#latehero 15
+#end
+
+
+#newmonster 9303
+#spr1 "worthy_heroes/birdlord1.png"
+#spr2 "worthy_heroes/birdlord2.png"
+#unmountedspr1 "worthy_heroes/un_birdlord1.png"
+#unmountedspr2 "worthy_heroes/un_birdlord2.png"
+#name "King of Birds"
+#descr "In olden days Piconye was harassed by strange birds. After a successful expedition into the wilderness the bird's nests were destroyed and the eggs were collected and brought back to Piconye. Bolgolam is the daring King who organised this expedition. He was thusly appointed by the Council of Bishops to oversee the husbandry and training of the strange birds, so that they could become loyal and steadfast mounts for the Knights of Piconye. He is a skilled and very brave warrior who poses a threat to creatures many times his size, riding atop the largest of the Kingdom's birds. He leads his personal flock of strange birds into battle who descend from the skies to attack his enemies with the same relentless abandon they once used to terrorise the horned men of Piconye."
+#fixedname "Bolgolam"
+#gcost 0
+#rpcost 0
+#clearweapons
+#weapon 4  -- Lance
+#weapon 1695 -- Hero's Blade
+#armor 148 -- crown
+#armor 9 -- plate
+#armor 2 -- shield 
+#size 2
+#hp 10
+#mor 18
+#mr 17
+#str 9
+#att 15
+#def 17
+#holy
+#batstartsum3d6 3327 -- Strange Bird
+#battlesum1 3327 -- Strange Bird
+#startage 85
+#maxage 100
+#magicskill 3 1
+#magicskill 4 2
+#magicskill 1 1
+#magicskill 9 3
+#mountmnr 9305
+#skilledrider 8
+#latehero 8
+#end
+
+#newmonster 9304
+#copystats 1030  -- Admiral 
+#spr1 "worthy_heroes/gulliver1.png"
+#spr2 "worthy_heroes/gulliver2.png"
+#name "Giant Explorer"
+#descr "Gulliver is a scholar and explorer from a far off mundane land. After reading old legends about the fantastical realm of Ind, he decided to sail the oceans in the hope he might find and experience its wondrous sights. Instead he was captured by the Piconye and, impressed by their holy devotion, decided to become a diplomat and spy for the newly awakening God. Whilst not much taller than an average human, he towers over the Piconye and has thus recieved the moniker 'Gulliver the Giant' by the Prester Kings. Gulliver is a skilled navigator, polymath, doctor, and inventor. He learned how to perform magical research under a curse of mundanity and is unaffected by drain scales."     
+#fixedname "Gulliver"
+#clearweapons
+#weapon "Broad sword"
+#gcost 0
+#rpcost 0
+#sailing 999 6
+#spy
+#startage 40
+#maxage 60
+#stealthy 30
+#mason
+#drainimmune
+#researchbonus 5
+#autodishealer 1
+#magicskill 1 1
+#magicskill 4 1
+#magicskill 7 1
+#end
+
+#newmonster 9305 -- Bird Lord mount
+#copystats 1381 -- Great Eagle
+#spr1 "worthy_heroes/birdlordbird1.png"
+#spr2 "worthy_heroes/birdlordbird2.png"
+#name "Great War Bird"
+#descr "In the olden days the kingdom of Piconye was continuously harassed by strange birds, until a brave and adventurous king led several expeditions to find the root of the problem. A hidden mountain full of bird-nests was found and destroyed, but the eggs were brought back to Piconye. Among the eggs was one of exceptional size and upon hatching the bird that emerged was raised personally by the king of birds and has grown to be the largest in the kingdom's flock."
+#hp 40
+#size 7
+#forestsurvival
+#holy
+#str 16
+#def 13
+#clearweapons
+#weapon 753 -- Dive
+#weapon 408 -- Talons
+#weapon 404 -- Beak
+#armor 254 -- plate barding
 #end
 
 
@@ -60946,6 +61975,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #name "Áhas-Dagat"
 #descr "A sea serpent sometimes used by the Siyokoy as a mount. They can traverse on land akin to a snake, but it is not their home and they move much slower."
 #hp 45
+#gcost 35
 #str 17
 #att 11
 #def 10
@@ -60993,6 +62023,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #name "Siyokoy Maygintawo"
 #descr "The Siyokoy are amphibious humanoids with scaly, fish-like bodies, gill slits, fins, and webbed feet. They live in rivers, lakes, and the sea, and are known to be quite hostile and even drown people. The Maygintawo is in the noble caste in Bantay Tubig, but are amongst the lowest of the nobles and equivalent to a Knight in other lands. Maygintawos ride giant sea serpents and fight from their back, though while they can traverse land, they are unsuited to it."
 #rpcost 45
+#gcost 10040
 #rcost 1
 #hp 25
 #str 15
@@ -61006,7 +62037,6 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #enc 3
 #mapmove 14
 #ap 10
-#gcost 10035
 #weapon 1821 -- Sibat
 #armor 140 -- Shell Armor
 #armor 224 -- Shell Cap
@@ -61170,7 +62200,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #spr1 "blue_bantaytubig/kabalanfemale1.png"
 #spr2 "blue_bantaytubig/kabalanfemale2.png"
 #name "Kabalan"
-#descr "Kabalan are horse-like beings with the torso of a human that live in the wilds on the islands around Bantay Tubig, and are much stronger and faster than ordinary men. Kabalans are vengeful creatures and will seek vengeance for even small infractions against them or their home, and if killed they will curse their slayer. In combat, females typically wield a bow and make for skilled archers, while males use a spear and shield and will enter a battle frenzy if injured. Kabalan can be recruited in any coastal or forest province."
+#descr "Kabalan are horse-like beings with the torso of a human that live in the wilds on the islands around Bantay Tubig, and are much stronger and faster than ordinary men. Kabalans are vengeful creatures and will seek vengeance for even small infractions against them or their home. In combat, females typically wield a bow and make for skilled archers, while males use a spear and shield and will enter a battle frenzy if injured. Kabalan can be recruited in any coastal or forest province."
 #rpcost 17
 #rcost 1
 #hp 18
@@ -61192,7 +62222,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #maxage 130
 #startage 37
 #darkvision 50
-#deathcurse
+--#deathcurse
 #forestsurvival
 #heal
 #female
@@ -61204,7 +62234,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #spr1 "blue_bantaytubig/kabalan1.png"
 #spr2 "blue_bantaytubig/kabalan2.png"
 #name "Kabalan"
-#descr "Kabalan are horse-like beings with the torso of a human that live in the wilds on the islands around Bantay Tubig, and are much stronger and faster than ordinary men. Kabalans are vengeful creatures and will seek vengeance for even small infractions against them or their home, and if killed they will curse their slayer. In combat, females typically wield a bow and make for skilled archers, while males use a spear and shield and will enter a battle frenzy if injured. Kabalan can be recruited in any coastal or forest province."
+#descr "Kabalan are horse-like beings with the torso of a human that live in the wilds on the islands around Bantay Tubig, and are much stronger and faster than ordinary men. Kabalans are vengeful creatures and will seek vengeance for even small infractions against them or their home. In combat, females typically wield a bow and make for skilled archers, while males use a spear and shield and will enter a battle frenzy if injured. Kabalan can be recruited in any coastal or forest province."
 #rpcost 28
 #rcost 1
 #hp 22
@@ -61227,7 +62257,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #maxage 130
 #startage 40
 #darkvision 50
-#deathcurse
+--#deathcurse
 #berserk 3
 #forestsurvival
 #heal
@@ -61294,16 +62324,17 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #enc 3
 #mapmove 14
 #ap 11
-#gcost 10020
+#gcost 335
 #weapon 33 -- Claws
 #amphibian
-#magicskill 2 1 -- Water
+--#magicskill 2 1 -- Water
 #magicskill 5 1 -- Death
 #magicskill 6 1 -- Nature
+#magicskill 8 1 -- Blood
 #magicskill 9 1 -- Holy
 #custommagic 45568 100 -- WDNB
 --#custommagic 32768 20 -- B
-#douse 1
+--#douse 1
 #holy
 #maxage 500
 #startage 160
@@ -61331,10 +62362,12 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #enc 3
 #mapmove 16
 #ap 22
-#gcost 10010
+#gcost 315
 #weapon 92 -- Fist
 #amphibian
-#magicskill 2 2 -- Water
+--#magicskill 2 2 -- Water
+#magicskill 1 1 -- Air
+#magicskill 2 1 -- Water
 #magicskill 7 1 -- Glamour
 #magicskill 9 1 -- Holy
 #custommagic 25344 100 -- AWNG
@@ -61342,7 +62375,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #holy
 #float
 #female
-#awe 1
+#awe 2
 #maxage 300
 #startage 80
 #nametype 130 -- indian female
@@ -61372,14 +62405,16 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #gcost 10010
 #weapon 92 -- Fist
 #amphibian
-#magicskill 2 2 -- Water
+--#magicskill 2 2 -- Water
+#magicskill 1 1 -- Air
+#magicskill 2 1 -- Water
 #magicskill 7 1 -- Glamour
 #magicskill 9 1 -- Holy
 #custommagic 25344 100 -- AWNG
 #spellsinger
 #holy
 #female
-#awe 1
+#awe 2
 #maxage 300
 #startage 80
 #nametype 130 -- indian female
@@ -61407,12 +62442,16 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #enc 3
 #mapmove 20
 #ap 32
-#gcost 10030
+#gcost 10020
 #weapon 7 -- Quarterstaff
 #weapon 55 -- Hoof
-#magicskill 1 1 -- Air
-#magicskill 6 1 -- Nature
-#custommagic 45312 100 -- ADNB
+--#magicskill 1 1 -- Air
+--#magicskill 6 1 -- Nature
+#magicskill 1 2 -- Air
+--#custommagic 45312 100 -- ADNB
+--#custommagic 28928 100 -- ADNG
+#custommagic 61440 100 -- DNGB
+#holy
 #maxage 130
 #startage 40
 #darkvision 50
@@ -61573,10 +62612,11 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #weapon 92 -- fist
 #amphibian
 #magicskill 1 3 -- Air
-#magicskill 2 3 -- Water
+#magicskill 2 2 -- Water
+--#magicskill 6 1 -- Nature
 #magicskill 7 1 -- Glamour
 #magicskill 9 2 -- Holy
-#custommagic 13056 10 -- AWDN
+#custommagic 13056 100 -- AWNG
 #holy
 #float
 #female
@@ -61828,7 +62868,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #startage 500
 #nametype 140 -- demons
 #lizard
-#itemslots 786462
+#itemslots 786462 -- 4 hands, 2 misc
 #demon
 #popkill 5
 #incunrest 20
@@ -61924,6 +62964,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #gcost 0
 #hp 3
 #mapmove 28
+#fireres 15
 #clearweapons
 #weapon 320 -- flaming fist
 #invisible
@@ -61977,6 +63018,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #name "Maginaga Warrior"
 #descr "Maginagas are semi-divine serpent beings of the underground realm of Idalmunon, known for their protective nature. Unlike the Nagas of Patala, they are highly resistant to fire, but cannot entrance with their gaze. They are sacred, can see in the dark and breathe underwater. They are sprung from the Underworld and are skilled in metalworking and gemcrafting. Maginagas are only malevolent to humans when they have been mistreated. Maginaga warriors don gilded armor set with gleaming jewels that shine in the dark."
 #fireres 15
+#mr 14
 #gcost 0
 #enc 3
 #cleararmor
@@ -62066,9 +63108,9 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #weapon 7 -- quarterstaff
 #weapon 557 -- AP death poison sting
 #gcost 0
-#magicskill 3 1
-#magicskill 5 1
-#magicskill 6 1
+#magicskill 3 2 -- E
+#magicskill 5 1 -- D
+#magicskill 6 1 -- N
 #custommagic 29696 100 -- EDNG
 #end
 
@@ -62077,11 +63119,12 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #spr2 "blue_bantaytubig/berberoka2.png"
 #name "Berberoka"
 #descr "Berberoka are massive beasts of the swamp, capable of swallowing an entire pond so the fish in it fall. When an unlucky fisherman descends into the pond to pick up the fish, the Berberoka will release the water to drown them to be eaten. They are also quite capable of spraying the water they swallow like a weapon."
-#prot 10
+#prot 13
 #size 10
 #hp 108
 #mr 16
-#str 26
+#str 27
+#enc 3
 #att 8
 #def 8
 #mapmove 8
@@ -62130,8 +63173,8 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #startage 70
 #nametype 140 -- demons
 #humanoid
-#magicskill 5 1
-#magicskill 6 1
+#magicskill 5 2
+#magicskill 6 2
 #magicskill 8 1
 #custommagic 45184 100
 #end
@@ -63662,14 +64705,14 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #newmonster 9668 -- Merman Warrior
-#copystats 1065 -- Merman
+#copystats 1066 -- Merman Land
 #spr1 "wateroverhaul/eemermanwarriorland.png"
 #spr2 "wateroverhaul/eemermanwarriorland2.png"
 #name "Merman Warrior"
 #descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Merman Warriors fight with coral spears and shields."
 #armor 25 -- Turtle Shell Shield
 #armor 188 -- Sharkskin Cuirass
-#landshape 9667
+#watershape 9667
 #end
 
 #newmonster 9669 -- Shambler Warrior
@@ -64167,10 +65210,6 @@ Cannot be recruited until Break the Deadlock is cast."
 
 #selectmonster 3647 -- Kelpie
 #armor 264
-#end
-
-#selectmonster 3793 -- War Bird
-#armor 559
 #end
 
 #selectmonster 3933 -- Fay Horse
@@ -64968,11 +66007,11 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 3796 -- Bird Knight Commander
-#skilledrider 5 -- 3 -> 5
+#skilledrider 7 -- 3 -> 7
 #end
 
 #selectmonster 3792 -- Bird Knight
-#skilledrider 5 -- 2 -> 5
+#skilledrider 6 -- 2 -> 6
 #end
 
 #selectmonster 1059 -- Knight of the Deeps
@@ -66074,8 +67113,8 @@ Cannot be recruited until Break the Deadlock is cast."
 #giftofwater 150
 #end
 
-#selectmonster 2834 -- Hekateride Gift of Water 60
-#giftofwater 60
+#selectmonster 2834 -- Hekateride Gift of Water 100
+#giftofwater 100
 #end
 
 #selectmonster 373 -- Coral Prince Gift of Water 90
@@ -67977,9 +69016,8 @@ Only three Queens of Elemental Water are known to exist."
 -- Start of New Pretender Changes and Additions
 
 
-
-
 -- FOLDUNITS
+
 
 
 
@@ -68063,7 +69101,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "Tree of Hate"
 #descr "The Tree of Hate is a vengeful spirit of nature inhabiting a great dead tree. In ages past it lived in the center of a great woodland and brought life and growth to the forest, however with the coming of Man the forest was burned and the tree withered and died. For long years the spirit was trapped within the dead trunk as insects burrowed into its rotting form. Now, with disappearance of the Pantokrator it has emerged to take on the mantle of a Pretender God and exact vengeance upon the world of men. The spirit can animate the tree to defend against attackers or perform tasks such as forging items, but it cannot uproot and move around. It is powerful in its Dominion, however in a physical battle it would be possible to chop down the tree."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #homerealm 0
 #startdom 4
 #pathcost 40
@@ -68214,8 +69252,8 @@ Only three Queens of Elemental Water are known to exist."
 #itemslots 991750
 #clearmagic
 #magicskill 0 1
+#magicskill 4 1
 #magicskill 7 2
-#magicskill 6 1
 #end
 
 #newmonster 8256 -- Great Ancestor
@@ -68224,7 +69262,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "Great Ancestor"
 #descr "This being is the ancestor of the Alcheran people and has existed in the Dreamtime since the days when Monsters and Giants roamed the earth. Perhaps it was once human, or perhaps it is the being from which all humans were formed. Now it has returned from the Dreamtime to lead Alchera as a Pretender God, in order to extend its Dominion from the Dreamtime to the world of men. The Ancestor is ethereal and is almost impossible to destroy within its Dominion. Should its body be physically destroyed it will reform in the Dreamtime."
 #diseaseres 100
-#gcost 160
+#gcost 230
 #startdom 2
 #pathcost 30
 #moremagic 1
@@ -68253,6 +69291,7 @@ Only three Queens of Elemental Water are known to exist."
 #nametype 176
 #itemslots 991750
 #clearmagic
+#magicskill 4 2
 #magicskill 7 3
 #end
 
@@ -68262,7 +69301,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "Uluru"
 #descr "The Uluru is a great spirit that inhabits a stone sacred to the people of Alchera. It has stood for millenia and is strongly connected to the Dreamtime. The spirit cannot leave the stone, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the Uluru would probably be almost impossible to destroy.  The Uluru is completely immobile and cannot move even by magic."
 #diseaseres 100
-#gcost 150
+#gcost 170
 #startdom 4
 #pathcost 40
 #moremagic 1
@@ -68297,7 +69336,8 @@ Only three Queens of Elemental Water are known to exist."
 #nametype 176
 #itemslots 786432
 #clearmagic
-#magicskill 7 4
+#magicskill 4 2
+#magicskill 7 3
 #end
 
 #newmonster 8258 -- Great Burrower
@@ -68350,7 +69390,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "Lighthouse"
 #descr "The Lighthouse is a powerful spirit that inhabits a enormous stone building and acts as a guide to sailors. The spirit is tremendously strong in its Dominion and has power over starry skies and stormy seas. In a physical battle, the lighthouse would probably be impossible to destroy, even though it cannot strike back without using magic. The Lighthouse is completely immobile and cannot move even by magic."
 #diseaseres 100
-#gcost 140
+#gcost 130
 #homerealm 0
 #startdom 4
 #pathcost 40
@@ -68379,7 +69419,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "Totem"
 #descr "The Totem is a spirit inhabiting a carved pole decorated with many historical and mythological figures. Throughout history the pole has been carved to commemorate great events and the spirit within has grown strong. Now it commands power over the air, the earth and death itself to better serve those that offer it worship. The spirit cannot leave the Totem, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the Totem would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #startdom 4
 #pathcost 40
 #mor 30
@@ -69937,7 +70977,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "Heiau of the Uncreated"
 #descr "The Four are the Uncreated Beings of the Eternal Sea. They are the main guiding force of the mana inherent within the land, and now they seek dominion of all its flow within this world. The Heiau is a sacred place and only the Kahuna and certain sacred Ali’i are allowed to enter and receive the blessing of the Four."
 #diseaseres 100
-#gcost 170
+#gcost 160
 #startdom 4
 #pathcost 60
 #moremagic 1 
@@ -70111,7 +71151,7 @@ Only three Queens of Elemental Water are known to exist."
 #name "World Pillar"
 #descr "The World Pillar is a spirit inhabiting a great stone pillar created to be the connection between the skies and the earth. For eternity it has held the two realms apart, ensuring that the skies do not come crashing down onto the earth. The spirit has long been revered by the peoples of the earth. Now, with the Pantokrator gone the World Pillar seeks to gain Dominion over the two realms it has supported for so long. The spirit cannot leave the Pillar, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the stone pillar would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #homerealm 0
 #startdom 4
 #pathcost 40
@@ -70934,7 +71974,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Cromlech"
 #descr "The Cromlech is an ancient spirit inhabiting three great standing stones. For aeons the spirit has guided its followers, monitoring the seasons, the moon and the stars for auspicious events. The Cromlech ordains the best days for the planting of crops and the casting of rituals for their greatest effect. When all three stones are arranged together its power is greatest, however when removed from the sacred geometry a stone will lose some of its power. The stones would be difficult to destroy in battle even though they cannot strike back. Now, with the Pantokrator gone, the Cromlech has the chance to put the world under its strong Dominion and seize the Throne of Heaven."
 #diseaseres 100
-#gcost 190
+#gcost 180
 #homerealm 2  -- Celtic
 #startdom 4
 #pathcost 40
@@ -71022,7 +72062,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Sea Star"
 #descr "The Sea Star is an ancient being that fell from the heavens into the deep ocean long ago. There it has remained, unseen by the surface world and unnoticed through the passing of ages. Recently it has begun to stir, and has drawn followers from the creatures of the deep. Although slow and deliberate in its movements it has great magical power. The Sea Star is an old and powerful being that has traveled far in search of a world to call its own. Now, with the Pantokrator gone comes the chance to spread its Dominion across the world and rule from the deep waters it calls home."
 #diseaseres 100
-#gcost 210
+#gcost 200
 #homerealm 9
 #startdom 4
 #pathcost 40
@@ -71036,6 +72076,8 @@ Each month he will collect a magical pearl and can create more using water gems.
 #att 8
 #def 3
 #mr 18
+#heal
+#woundfend 0
 #miscshape
 #size 10
 #prec 10
@@ -71159,7 +72201,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Burning Bush"
 #descr "The Burning Bush is a spirit inhabiting a great bush that has burned for as long as anyone can remember. It occasionally speaks with a thunderous voice and angelic beings can be seen to manifest inside the flames. Occasionally one such being will emerge from the flames to serve the bush. Over the centuries the bush has been regarded with fear and curiosity, however with disappearance of the Pantokrator it now demands worship and has decided to take on the mantle of a Pretender God. The bush burns continually with a great heat that will sear any that get too close.  The spirit is powerful in its Dominion, however in a physical battle it would be possible to chop down the bush if you could withstand the flames."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 5  -- Middle East
 #startdom 4
 #pathcost 40
@@ -71238,7 +72280,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Nehushtan"
 #descr "The Nehushtan is a spirit of healing bound into a statue of a serpent made from copper. For as long as people can remember they have worshipped at the statue and left offerings to cure them of their ills. Now, with the Pantokrator gone the Nehushtan will put the world under its strong Dominion and become the True God. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion. In a physical battle, the idol would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 5  -- Middle East
 #startdom 4
 #pathcost 40
@@ -71468,7 +72510,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Skull Idol"
 #descr "The Skull Idol is a primordial spirit of blood and death that was bound into a stone edifice when the world was young. The Pantokrator decreed that the spirit could not emerge from the stone until the end times, when the world would die at the spirits hand and be renewed. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. As the spirit gains strength its powers manifest, causing living things to die and the dead to rise to serve it. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion. In a physical battle, the idol would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 6  -- Middle America
 #startdom 4
 #pathcost 40
@@ -72064,7 +73106,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Great Wise Whale"
 #descr "The Great Wise Whale was born at the dawn of time and was one of the first beings to swim in the primordial deeps. When the previous Pantokrator rose to power it sank to the bottom of the ocean in a deep slumber. Over time it has grown larger, wiser and stronger and now it has come to claim the mantle of Godhood. The Whale remembers everything that has occurred in the world and it is said its death will herald the end of time itself."
 #diseaseres 100
-#gcost 270
+#gcost 260
 #homerealm 9  -- Deeps
 #startdom 4
 #pathcost 60
@@ -72106,7 +73148,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Abyssal Carcass"
 #descr "The Abyssal Carcass is an ancient spirit from the lightless depths of the ocean inhabiting the long dead remains of a mighty whale. The spirit uses powerful death magic to keep the corpse animated and in a state of unnatural undeath as it roams the seas. The great bulk of the creature makes it difficult to destroy, however the bones are brittle."
 #diseaseres 100
-#gcost 230
+#gcost 220
 #homerealm 9  -- Deeps
 #startdom 4
 #pathcost 60
@@ -72152,7 +73194,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Icon"
 #descr "The Icon is a powerful spirit that inhabits a colossal sacred structure. The structure has been mounted with religious idols and covered by a layer of gold to reflect the glory of the spirit within. Originally immobile, with the awakening of the spirit it has been mounted on two pairs of enormous wheels to provide mobility to the Lord. The Icon is tremendously strong in its dominion and magically powerful. The conveyance can be destroyed, but not easily and its massive bulk will scatter those that stand against it."
 #diseaseres 100
-#gcost 190
+#gcost 170
 #startdom 5
 #pathcost 60
 #mor 30
@@ -72178,6 +73220,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #poisonres 15
 #maxage 2000
 #startage 1000
+#spreaddom 3
 #itemslots 786432
 #clearmagic
 #magicskill 4 3
@@ -73376,7 +74419,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #name "Blacksteel Colossus"
 #descr "The Blacksteel Colossus is the masterpiece of Ulm's mage-smiths, a gigantic nearly-invulnerable construct crafted using only the finest alloys. The people of Ulm worshipped it as a symbol of the power of human ingenuity and made it their own god and idol. In time it gained a semblance of will and began to move under its own power. The Colossus is mindless and mostly does what its worshipers believe it would do. It punishes harshly and rewards sparingly. The Colossus is extremely hard to destroy and, while slow, can tirelessly crush lesser foes with its great fists."
 #diseaseres 100
-#gcost 310
+#gcost 300
 #startdom 4
 #pathcost 60
 #moreprod 1
@@ -75161,7 +76204,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Statue of the Sun"
 #descr "The Statue of the Sun is a stone chiseled into shape of a figure that brings the sun each morning. In order to ensure the rising of the sun, bringing warmth and fertility to the people, it has a need for sacrificial blood. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #homerealm 6  -- Middle America
 #startdom 4
 #pathcost 40
@@ -75213,7 +76256,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Idol of Sustenance"
 #descr "The Idol of Sustenance is a spirit of agriculture and corn bound in a huge stone statue by a previous Pantokrator. With the Pantokrator gone, its will and a need to feed the people has reawakened the spirit. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 6  -- Middle America
 #startdom 4
 #pathcost 40
@@ -75264,7 +76307,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Pillar of Eternal Flame"
 #descr "The Pillar of Eternal Flame is a powerful spirit that manifests itself as a pillar of fire that has burned for eternity. The flames represent the life and souls of its followers, which are pure and cannot be polluted. The sacred fire can never be allowed to be extinguished and is tended day and night. The spirit can possess willing beings in order to perform physical tasks such as forging and enchanting items, but cannot leave its spiritual home. The Pillar is a powerful wielder of Fire magic and will create magical gems each month. The intense heat will burn any that attempt to strike at the spirit."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #homerealm 5  -- Middle East
 #startdom 4
 #pathcost 40
@@ -75314,7 +76357,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Idol of Watery Wisdom"
 #descr "The Idol of Watery Wisdom is a primordial spirit of knowledge and water that once served a previous Pantokrator and brought wisdom to the world. When the world had learned enough its services were no longer needed and the spirit was bound in a huge stone statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 10  -- Default
 #startdom 4
 #pathcost 40
@@ -75361,7 +76404,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Statue of the Sun and Rain"
 #descr "The Statue of the Sun and Rain is a primordial spirit that once served a previous Pantokrator and brought gifts of sunshine and rainfall to the world. Once the cycle of the seasons had been set its services were no longer needed and the spirit was bound in a huge stone statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. Around the statue the sun will shine and the rain will fall with increased vigour, bringing life and growth to the surrounding province. The spirit is tremendously strong in its dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 6  -- MesoAmerica
 #startdom 4
 #pathcost 40
@@ -75411,7 +76454,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Idol of the Sun"
 #descr "The Idol of the Sun is a primordial spirit of the sun that once served a previous Pantokrator and brought life to the world. When the sun had been placed in the sky its services were no longer needed and the spirit was bound in a huge golden statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The statue shines with intense light and enemies will stand dumbfounded or be struck blind if they attempt to strike it. The spirit is tremendously strong in its dominion and radiates power as well as light."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #homerealm 10  -- Default
 #startdom 4
 #pathcost 40
@@ -75460,7 +76503,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Emissary of Antrax"
 #descr "The Emissary of Antrax is a creature of living banefire birthed by the power of the corrupted fire king Antrax. Summoned to this world by its followers using a powerful summoning circle, it has now amassed enough power to claim the title of God itself. Should the summoning circle be disrupted the spirit would immediately return to the Underworld until summoned again. The Emissary will summon servants from the Underworld when its dominion grows strong. Its only weakness is the bond with the Underworld, which makes it possible for priests to banish the creature from this world. As a creature of Antrax the Emissary is surrounded by poisonous banefire and is strong in the magic of the Underworld."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #startdom 4
 #pathcost 40
 #moreheat 1 
@@ -75508,7 +76551,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Infernal Spirit"
 #descr "The Infernal Spirit is a powerful Demonic force that is attempting to claim the Throne of Heaven and subjugate the entire world. Summoned to this world by its followers using a powerful summoning circle, it has now amassed enough power to claim the title of God itself. Should the summoning circle be disrupted the spirit would immediately return to the Inferno until summoned again. The Spirit will summon devils from the Inferno when its dominion grows strong, however this bond with the Inferno makes it possible for magic to banish the creature from this world."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #homerealm 5  -- Middle East
 #startdom 4
 #pathcost 40
@@ -75554,7 +76597,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Plague Idol"
 #descr "This Idol has been around for a very long time and has been an important place of worship for the sick and dying. Through the ages those afflicted with plagues and illnesses of all kinds have left offerings here, and those dead of disease have been buried at the foot of the idol. There are whispers that in the dead of night occasionally Demons are seen taking the diseased offerings. Countless offerings later and now with the Pantokrator gone, the Plague Idol has the chance to put the world under its strong dominion and becoming the True God."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #homerealm 10  -- Default
 #startdom 4
 #pathcost 40
@@ -75607,7 +76650,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Divine Egg"
 #descr "The Divine Egg is a gigantic egg that has existed as long as any can remember. What laid the egg or why it has not hatched are a mystery known only to the Pantokrator himself. Its followers claim that the egg contains the next Universe, and it will crack open on Doomsday when the world falls into fire. The Divine Egg is infused with the magic of new life, and around it living things will grow and heal at an amazing rate. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. The Egg cannot move, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The Egg is tremendously strong in its dominion. In a physical battle, the Egg would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 10  -- Default
 #startdom 4
 #pathcost 40
@@ -75651,7 +76694,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Spirit of the Well"
 #descr "The Spirit of the Well is a powerful spirit that inhabits a deep well leading to the centre of the earth. Through the well the spirit can access the deep waters of the world to draw on their strength. The spirit appears at the well to perform tasks such as forging items for enchantment. The Spirit of the Well is immobile and cannot leave the well it inhabits. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as an awakening god. The Spirit is tremendously strong in its dominion and magically powerful. The spirit can be destroyed, but not easily."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 10  -- Default
 #startdom 4
 #pathcost 40
@@ -75696,7 +76739,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Sacred Grove"
 #descr "The Sacred Grove is a powerful spirit that inhabits a lush grove of great importance. The spirit cannot leave the grove, but it can animate plants and inhabit animals in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion and it is also magically powerful. In a physical battle the grove would be difficult to destroy, and is protected by animals it has called. The grove is completely immobile and cannot move even by magic."
 #diseaseres 100
-#gcost 100
+#gcost 90
 #homerealm 3  -- Mediterranean
 #startdom 4
 #pathcost 40
@@ -75746,7 +76789,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Blood Soaked Edifice"
 #descr "The Blood Soaked Edifice is a powerful spirit that inhabits a huge standing stone. Once a pure spirit of the Earth, it has been tainted by foul blood rituals. As the ground was soaked with sacrificial blood the spirit gained a craving for the blood of the innocent. The ground itself will sometime rise up in a corrupted form to serve the spirit as its dominion grows stronger. The spirit cannot leave the Edifice, but it can possess the weak willed in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion and it is also magically powerful. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 1  -- North
 #startdom 4
 #pathcost 40
@@ -75796,7 +76839,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Spirit of Bones"
 #descr "The Spirit of Bones is an ancient spirit of nature created to impose the cycle of life and death upon the world in ages past. Once the cycle was in place its services were no longer needed and the spirit was bound beneath the earth for eternity. Over the centuries many animals and men have travelled to the site of the spirits imprisonment to die, and now a great pile of bones and skulls marks the place where the spirit is bound. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. The spirit cannot leave its spiritual home, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. In a physical battle, the bone pile would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #homerealm 3  -- Mediterranean
 #startdom 4
 #pathcost 40
@@ -75846,7 +76889,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Statue of the Silent God"
 #descr "The Statue of the Silent God is a primordial spirit that once served a previous Pantokrator. Little is known about the spirit or its purpose and it never speaks about this to its followers. For reasons unknown the spirit was bound in a huge stone statue for eternity by the Pantokrator and its name was expunged from all written records. With the Pantokrator gone, its powers have begun to manifest themselves and it is now once more worshipped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 10  -- Default
 #startdom 4
 #pathcost 40
@@ -75896,7 +76939,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Idol of Winter"
 #descr "The Idol of Winter is a primordial spirit of the north that once served a previous Pantokrator and brought the season of winter to the world. When the winter was coldest its services were no longer needed and the spirit was bound in a rune-carved idol for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. The spirit cannot leave the idol, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion. The statue is surrounded by an icy wind that will freeze those nearby, and the entire province will be trapped in permament winter."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 1  -- North
 #startdom 4
 #pathcost 40
@@ -75948,7 +76991,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Foul Statue"
 #descr "This Statue has been around for a very long time and it has always been worshipped only in the dead of night. Rumours spread of foul offerings and unholy rituals performed at the statue in return for dark gifts and blessings. Through the ages its followers have grown in confidence and the spirit of the statue has continued to grow in power. Countless offerings later and now with the Pantokrator gone, the Foul Statue has the chance to put the world under its strong dominion and becoming the True God. The statue is tremendously strong in its dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 7  -- Africa
 #startdom 4
 #pathcost 40
@@ -75999,7 +77042,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Idol of the Seasons"
 #descr "This Idol has been around for a very long time and at the start of each season people have left their offerings. As the seasons change offerings have been left to ensure a bountiful spring and autumn, a long summer, or a temperate winter. Countless offerings later and now with the Pantokrator gone, the Idol of the Seasons has the chance to put the world under its strong dominion and become the True God. Seasonal animal spirits may appear to serve it as its dominion grows strong. The idol is tremendously strong in its dominion. In a physical battle, the idol would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 2
 #startdom 4
 #pathcost 40
@@ -76052,7 +77095,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Idol of the Seasons"
 #descr "This Idol has been around for a very long time and at the start of each season people have left their offerings. As the seasons change offerings were left to ensure a bountiful spring and autumn, a long summer, or a temperate winter. Countless offerings later and now with the Pantokrator gone, the Idol of the Seasons has the chance to put the world under its strong dominion and become the True God. Each season animal spirits will appear to serve it as its dominion grows strong. The idol is tremendously strong in its dominion. In a physical battle, the idol would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #startdom 4
 #mor 30
 #hp 120
@@ -76102,7 +77145,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Idol of the Seasons"
 #descr "This Idol has been around for a very long time and at the start of each season people have left their offerings. As the seasons change offerings were left to ensure a bountiful spring and autumn, a long summer, or a temperate winter. Countless offerings later and now with the Pantokrator gone, the Idol of Beasts has the chance to put the world under its strong dominion and become the True God. Each season animal spirits will appear to serve it as its dominion grows strong. The idol is tremendously strong in its dominion. In a physical battle, the idol would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #startdom 4
 #mor 30
 #hp 120
@@ -76152,7 +77195,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Idol of the Seasons"
 #descr "This Idol has been around for a very long time and at the start of each season people have left their offerings. As the seasons change offerings were left to ensure a bountiful spring and autumn, a long summer, or a temperate winter. Countless offerings later and now with the Pantokrator gone, the Idol of Beasts has the chance to put the world under its strong dominion and become the True God. Each season animal spirits will appear to serve it as its dominion grows strong. The idol is tremendously strong in its dominion. In a physical battle, the idol would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #startdom 4
 #mor 30
 #hp 120
@@ -76202,7 +77245,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Protean Abomination"
 #descr "The Protean Abomination is a horrid, grayish-green protean pool that has existed since the dawn of time. It was created to bring life to the world, however it became corrupted and was imprisoned for eternity in the deepest part of the world. With the Pantokrator gone, its powers have begun to manifest again and it is worshipped as a reawakening god. Misshapen creatures constantly form in the mass and crawl away from it, their forms ranging from amorphous blobs and singular body parts, to humanoids and monstrous mutants. It is said to be the ultimate source of all miscreation and abomination in the world. The pool has many tentacles and limbs that grab and devour nearby creatures. The creature has a twisted and cynical mind, and can communicate telepathically with those nearby."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #startdom 4
 #pathcost 40
 #moreluck 1
@@ -76252,7 +77295,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Idol of the Harvest"
 #descr "The Idol of the Harvest is a primordial spirit of nature that once served a previous Pantokrator. When he saw how the spirit was venerated by the common folk he had it bound in a huge golden statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 140
+#gcost 130
 #homerealm 10  -- Default
 #startdom 4
 #pathcost 40
@@ -76301,7 +77344,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Spirit of the Henge"
 #descr "The Spirit of the Henge is a powerful spirit that inhabits a series of huge standing stones. The spirit cannot leave the stones, but it can temporarily manifest a physical form in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion and it is also magically powerful. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 2  -- Celtic
 #startdom 4
 #pathcost 40
@@ -76349,7 +77392,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Statue of the Outer Gods"
 #descr "The Statue of the Outer Gods is the spirit of an alien God that inhabits an ancient statue of unknowable origin. Brought to this world by the starspawns, the statue is constructed of a strange greenish stone with unearthly flecks and striations. The spirit cannot leave the statue, but it can mentally control its followers in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion and it is also magically powerful. Mental emanations from the statue will attract strange creatures from the Void, as well as the weak willed as its dominion grows strong. The statue is deeply unsettling and although it cannot strike back in combat enemies may flee rather than face it."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #startdom 4
 #pathcost 40
 #moremagic 2
@@ -76398,7 +77441,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Ancient Anemone"
 #descr "The Ancient Anemone is a gigantic sea-dwelling being that possesses intelligence, magic and a very strong dominion. It has been worshipped since the dawn of time by the beings of the sea who provide offerings of fish. Countless offerings later and now with the Pantokrator gone, the Ancient Anemone has the chance to put the world under its strong dominion and becoming the True God. The Anemone cannot move around, but it is also tremendously difficult to kill in combat and can sting attackers with its poisonous tentacles."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 9  -- Deeps
 #startdom 4
 #pathcost 40
@@ -76448,7 +77491,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Living Reef"
 #descr "The Living Reef is a colony of tiny creatures that have grown over the millenia to become sentient and magically powerful. With the Pantokrator gone, the Living Reef can manifest its full power to become the True God. The reef is tremendously strong in its dominion although it cannot move. In a physical battle, the reef would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 150
+#gcost 140
 #homerealm 9  -- Deeps
 #startdom 4
 #pathcost 40
@@ -76495,7 +77538,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Reliquary"
 #descr "After the death of the Prophet his remains were kept in the temple of the Holy City of Eldregate and venerated as relics while the nation awaited the coming of the mysteryous New God he had promised. Replicas of the shrouds he wore were made and used by his most devoted followers to heal the sick and wounded, and faithful from all around the Empire made pilgrimages to to Eldregate to offer prayers and sacrifices to the Prophet's tomb. As the focus of such devotion the Reliquary gained great spiritual power. One day as many followers of the New Faith were praying it suddenly began to shine with celestial light. More and stronger miracles manifested, and it was clear a powerful spirit had bound itself to the remains. The Bishops were quick to declare the New God they had been waiting for had awakened, and it was the Prophet himself who had ascended to the Celestial sphere after his death to wait for the time when the faith of the people would be strong enough to call him back to the world, and make him into the God he had promised. Now Ermor follows the Second Coming of the Prophet, confident that he will lead the Empire to glory and dominion over the whole world."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #startdom 4
 #pathcost 40
 #moreorder 1 
@@ -76544,7 +77587,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Unholy Reliquary"
 #descr "In Eldregate, capital of the Empire, unholy rites were performed using dark magic learned from C'tis. The goal was resurrect the Prophet, for many had come to believe that he would bring an age of wealth and prosperity where Ermor held ultimate dominion over the world. However the ritual failed catastrophically: there was no resurrection but rather the spiritual barriers between the worlds of the dead and the living were shattered and Death was brought forth, killing tens of thousands. Now a powerful spirit of the Underworld is bound to the Prophet's tomb, turning the land to ash and desolation as its dominion spread. The Unholy Reliquary is surrounded by a terrifying life-draining aura and because of its close connection to the Underworld generates two Death gems every month."
 #diseaseres 100
-#gcost 170
+#gcost 160
 #startdom 4
 #pathcost 40
 #moregrowth -1
@@ -76595,7 +77638,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Ancestral Barrow"
 #descr "The Ancestral Barrow is a long-dead ancestor and ruler who has been buried in a sacred mound and worshipped for ages by his descendants and tribespeople. The mound is hard to destroy, surrounded by aura of supernatural fear that frightens those who would defile it and guarded by lesser ancestral guardians. As its dominion grows, more ancestors will arrive to help the nation in war. The mound is completely immobile and cannot move even by magic."
 #diseaseres 100
-#gcost 90
+#gcost 80
 #homerealm 2  -- Celtic
 #startdom 4
 #pathcost 40
@@ -76649,7 +77692,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Statue of Wisdom"
 #descr "The Statue of Wisdom is a celestial spirit of wisdom that once served a previous Pantokrator and brought knowledge and enlightenment to the people of the world. Eventually however the Pantokrator began to fear that in their enlightenment the people might turn away from him, and thus bound the spirit to a huge stone statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 150
+#gcost 140
 #homerealm 3  -- Mediterranean
 #startdom 4
 #pathcost 40
@@ -76698,7 +77741,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #name "Void Crystal"
 #descr "The Void Crystal is an alien intelligence with extraordinary mental powers that has been worshipped for thousands of years by the Starspawn. It was part of the shard that brought them to this world, and resonates with the energies of the Void, making the province it is in more magical. The Void Crystal will always act as a communion master and it can project astral magic further than most mages."
 #diseaseres 100
-#gcost 150
+#gcost 140
 #homerealm 0
 #startdom 4
 #pathcost 40
@@ -76757,7 +77800,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #descr "The Mother of Pearls is a powerful celestial spirit that inhabits a gigantic pearl clam. The tritons and mermen of the deeps have worshipped it for a long time as a guardian and provider of wealth, granting it a powerful dominion. The spirit cannot leave the clam, but it can possess willing targets in order to make its will heard and perform tasks such as forging items for enchantment.
 The Mother of Pearls can filter water and moonlight to produce great quantities of magical pearls."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 9  -- Deeps
 #startdom 4
 #pathcost 40
@@ -76810,7 +77853,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Sacred Grove"
 #descr "The Sacred Grove is a powerful spirit that inhabits a lush grove of great importance. The spirit cannot leave the grove, but it can animate plants and inhabit animals in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion and it is also magically powerful. In a physical battle the grove would be difficult to destroy, and is protected by animals it has called. The grove is completely immobile and cannot move even by magic."
 #diseaseres 100
-#gcost 100
+#gcost 90
 #homerealm 7  -- Africa
 #startdom 4
 #pathcost 40
@@ -76861,7 +77904,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Statue of War"
 #descr "The Statue of War is a primordial spirit of strife and turmoil once bound in a huge statue by a previous Pantokrator to save the world from its destructive influences. With the Pantokrator gone, its powers are unleashed and strife and war have once more come to the world. Barbarian warriors gather in the land of the statue to wreak havoc and plunder. More barbarians arrive if the turmoil of the province is high. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 120
+#gcost 110
 #homerealm 8  -- India
 #startdom 4
 #pathcost 40
@@ -76884,7 +77927,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Statue of Wisdom"
 #descr "The Statue of Wisdom is a celestial spirit of wisdom that once served a previous Pantokrator and brought knowledge and enlightenment to the people of the world. Eventually however the Pantokrator began to fear that in their enlightenment the people might turn away from him, and thus bound the spirit to a huge statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 150
+#gcost 140
 #homerealm 8  -- India
 #startdom 4
 #pathcost 40
@@ -76905,7 +77948,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Smiling Head"
 #descr "The Smiling Head is a powerful spirit that inhabits a massive stone that has been chiseled into the shape of a head. Its smile is beatific and inspires wonder in all that view the edifice. The spirit cannot leave the Head, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The presence of the spirit will bring magic and joy to the world. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the head would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 170
+#gcost 160
 #homerealm 8  -- India
 #startdom 4
 #pathcost 40
@@ -76930,7 +77973,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Statue of Creation"
 #descr "The Statue of Creation is a primordial spirit of creation that once served a previous Pantokrator to aid in the creation of the world. When the final piece was in place, its services were no longer needed and the spirit was bound in a huge statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 8  -- India
 #startdom 4
 #pathcost 40
@@ -76951,7 +77994,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Shanta Murti"
 #descr "The Shanta Murti is a representation of the divine crafted in ages past. Worshipping at the idol is said to bring wealth, health and good fortune and it has been around for a very long time. Through the ages farmers have offered it food when their animals got sick and people in general have made a yearly offering to ensure wealth and happiness. Countless offerings later and now with the Pantokrator gone, the Shanta Murti has the chance of putting the world under its strong dominion and becoming the True God."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 8  -- India
 #startdom 4
 #pathcost 40
@@ -76975,7 +78018,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Idol of the Ancient Warrior"
 #descr "Long ago a great warrior was charged by the Pantokrator with protecting the people of the world. He fought well and was rewarded with Dominion over the rain and knowledge of the future. When he eventually fell his spirit was allowed to remain in this world, bound to a great idol. Each month gifts are offered in remembrance of the deeds of the past and seven mystical arrows are cast before it to divine the future. Countless offerings later and now with the Pantokrator gone, the Idol of the Ancient Warrior has the chance of putting the world under its strong dominion and becoming the True God."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 5  -- Middle East
 #startdom 4
 #pathcost 40
@@ -77003,7 +78046,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Hanging Tree"
 #descr "The Hanging Tree is a powerful spirit that inhabits a great dead tree. For generations the tree has been used to hang the worst criminals, and it is surrounded by the stench of the dead and dying. The spirit cannot leave the tree, but it can animate the corpses of the hanged to defend it from attack, or in order to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the tree would be difficult to destroy, and it will animate Draugr to defend itself."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 1  -- North
 #startdom 4
 #pathcost 40
@@ -77056,7 +78099,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Idol of Thunder"
 #descr "This Idol has been around for a very long time and it is always surrounded by a great storm. It has been struck by lightning many times but has never been marked by the blasts. Through the ages priests and shamans have left offerings to the sky and the earth and the Idol of Thunder has continued to grow in power. Countless offerings later and now with the Pantokrator gone, the Idol of Thunder has the chance to put the world under its strong dominion and become the True God. The idol cannot move, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #homerealm 1  -- North
 #startdom 4
 #pathcost 40
@@ -77107,7 +78150,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Idol of War"
 #descr "This Idol has been around for a very long time and it has always been the most popular place to give your offerings. Through the ages warriors and generals have offered it valuables to receive courage and strength in battle and the Idol of War has continued to grow in power. Countless offerings later and now with the Pantokrator gone, the Idol of War has the chance of putting the world under its strong dominion and becoming the True God."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #homerealm 1  -- North
 #startdom 4
 #pathcost 40
@@ -77155,7 +78198,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Icon of Fertility"
 #descr "The Icon of Fertility is a primordial spirit of fertility that once served a previous Pantokrator and brought life to the world. When the creation was full of life, its services were no longer needed and the spirit was bound in a huge statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 1  -- North
 #startdom 4
 #pathcost 40
@@ -77178,7 +78221,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Daibutsu"
 #descr "The Daibutsu is a primordial spirit of order that once served a previous Pantokrator to bring civilization and order to the world. When the final decree was set, its services were no longer needed and the spirit was bound in a huge stone statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion. In a physical battle, the Daibutsu would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 4  -- Far East
 #startdom 4
 #pathcost 40
@@ -77201,7 +78244,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Statue of Mercy"
 #descr "The Statue of Mercy is a primordial spirit of compassion and forgiveness that once served a previous Pantokrator. When the Pantokrator banished a wayward servant the spirit petitioned for forgiveness, and for its impudence was bound in a huge statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion and although it cannot strike back it would be very hard to damage in a fight."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #homerealm 4  -- Far East
 #startdom 4
 #pathcost 40
@@ -77248,7 +78291,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Spirit Gate"
 #descr "The Spirit Gate has been the site of many strange occurences over the years and Sorcerers always make a sacrifice at the gate each full moon. During this time the gate is attuned to the underworld and glimpses of the spirit realm can be seen through it. Through the ages the Spirit Gate has accumulated a huge amount of offerings and it has grown in power so it can rival the mightiest of arch mages. Now with the Pantokrator gone, the Gate has the chance to put the world under its strong dominion and become the True God."
 #diseaseres 100
-#gcost 150
+#gcost 140
 #homerealm 0
 #startdom 4
 #pathcost 40
@@ -77270,7 +78313,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Spirit of Sargassum"
 #descr "The Spirit of Sargassum is a powerful nature spirit that inhabits a huge mass of kelp. It often ensnares passing ships in its strands and keeps them trapped for months on end. It has been worshipped since the dawn of time by the beings of the sea who provide offerings to the spirit. Countless offerings later and now with the Pantokrator gone, the Sargassum has the chance to put the world under its strong dominion and becoming the True God. The kelp cannot move around, but it is also tremendously difficult to kill in combat and can grasp attackers with many strands of kelp."
 #diseaseres 100
-#gcost 120
+#gcost 110
 #homerealm 9  -- Deeps
 #startdom 4
 #pathcost 40
@@ -77318,7 +78361,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Divine Anvil"
 #descr "The Divine Anvil is a primordial spirit of creation bound into a large anvil that once taught the people of the world the secret of ironworking. When the Pantokrator saw the smoke from the forges of men he flew into a rage and sealed the Divine Anvil away in the deepest reaches of the earth. Now with the Pantokrator gone, its powers have begun to manifest themselves once more. The spirit cannot leave the anvil, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion. In a physical battle the anvil would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #startdom 4
 #pathcost 40
 #moreprod 1
@@ -77366,7 +78409,7 @@ The Mother of Pearls can filter water and moonlight to produce great quantities 
 #name "Stone Tyrant"
 #descr "The Stone Tyrant is a massive stone that has been chiseled into a shape resembling a Phlegran Tyrant. The people of Phlegra have always left offerings to the edifice to ensure protection from the depredations of the Tyrants. Through the ages the Stone Tyrant has accumulated a huge amount of offerings and it has grown in power so it can rival the mightiest of arch mages. Now with the Pantokrator gone, the Stone Tyrant has the chance of putting the world under its strong dominion and becoming the True God. The spirit cannot leave the chiseled stone, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and will strike terror into the hearts of its enemies. In a physical battle, the head would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 180
+#gcost 170
 #startdom 4
 #pathcost 40
 #moreorder -1
@@ -78224,7 +79267,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #name "Deep Sea Fissure"
 #descr "The Deep Sea Fissure is a powerful spirit that inhabits a volcanic fissure on the ocean floor. The spirit cannot leave the fissure, but it occasionally lets its will be known by spewing forth boiling water. It can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the fissure would be almost impossible to destroy, even though it cannot strike back. The Deep Sea Fissure is completely immobile and cannot move even by magic."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #homerealm 9 -- Deeps
 #startdom 4
 #pathcost 40
@@ -78653,7 +79696,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 158 -- Oracle
 #descr "The Oracle is a powerful spirit that inhabits a sacred spring. The spirit possesses a girl to serve as its instrument. The chosen child is blinded and rendered unable to do anything but speak the will of the spirit. At the age of thirteen, she is sacrificed and replaced with a new girl, born the day the previous girl was made the voice of the spirit. The Oracle is immobile and cannot leave the spring it inhabits. It can possess willing targets to perform tasks such as forging items for enchantment. The Oracle is tremendously strong in its Dominion and magically powerful. The spring can be destroyed, but not easily."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #pathcost 40
 #moreluck 1
 #hp 30
@@ -78673,7 +79716,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 159 -- Monument
 #descr "The Monument is a powerful spirit that inhabits an enormous stone construction. The spirit cannot leave the monument, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the monument would probably be impossible to destroy, even though it cannot strike back without using magic. The monument is completely immobile and cannot move even by magic."
 #diseaseres 100
-#gcost 90
+#gcost 80
 #pathcost 40
 #hp 500
 #prot 30
@@ -78749,7 +79792,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 216 -- Fire Dragon
 #descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. Red Dragons have their skills reduced when casting spells from paths other than Fire. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
 #diseaseres 100
-#gcost 220
+#gcost 200
 #pathcost 40
 #hp 125
 #prot 20
@@ -78768,7 +79811,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 226 -- Fire Dragon Archmage
 #descr "The Arch Mage is a mage who has attained such power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Arch Mage is a master of magic and can be adept in several of the magic paths. The Arch Mage is a master of magic rituals and he can project his Elemental magic one province farther than normally possible."
 #diseaseres 100
-#gcost 220
+#gcost 200
 #pathcost 40
 #moreprod -1 
 #moreheat 1
@@ -79064,7 +80107,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 265 -- Water Dragon
 #descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. Blue Dragons have their skills reduced when casting spells from paths other than Water. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
 #diseaseres 100
-#gcost 220
+#gcost 200
 #pathcost 40
 #hp 125
 #prot 20
@@ -79083,7 +80126,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 267 -- Dragon Frost Father
 #descr "The Frost Father is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Frost Father is a master of magic and can be adept in several of the magic paths."
 #diseaseres 100
-#gcost 220
+#gcost 200
 #pathcost 40
 #moreprod -1 
 #moreheat -1
@@ -79102,7 +80145,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 266 -- Nature Dragon
 #descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. Green Dragons have their skills reduced when casting spells from paths other than Nature. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
 #diseaseres 100
-#gcost 220
+#gcost 200
 #pathcost 40
 #hp 125
 #prot 20
@@ -79121,7 +80164,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 268 -- Dragon Master Enchanter
 #descr "The Master Enchanter is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He is a master of magic and can be adept in several of the magic paths. The Master Enchanter is a master of magic rituals and he can project his Sorcerous magic one province farther than normally possible."
 #diseaseres 100
-#gcost 220
+#gcost 200
 #pathcost 40
 #moreprod -1
 #hp 10
@@ -79397,7 +80440,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 472 -- Statue of Order
 #descr "The Statue of Order is a primordial spirit of order that once served a previous Pantokrator to bring civilization and order to the world. When the final decree was set, its services were no longer needed and the spirit was bound in a huge stone statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshiped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion, and law and order will be reinforced wherever it is worshiped. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #pathcost 40
 #hp 100
 #prot 25
@@ -79591,7 +80634,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 546 -- Void Lurker
 #descr "In the physical world, this being is just a large underwater fungus, but in the world of magic, the Void Lurker is one of the most powerful and ancient beings. The Void Lurker can control the minds of willing targets to perform physical tasks such as forging and enchanting items. The Void Lurker is immobile."
 #diseaseres 100
-#gcost 160
+#gcost 150
 #homerealm 9 -- Deeps
 #pathcost 20
 #hp 130
@@ -79755,7 +80798,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 607 -- Baphomet
 #descr "The Baphomet is a powerful spirit that manifests itself as a massive, burning head. The spirit can possess willing humans in order to perform physical tasks such as forging and enchanting items, but cannot leave its spiritual home. The Baphomet is a powerful wielder of Astral, Fire and Blood magic."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #pathcost 40
 #hp 100
 #prot 0
@@ -79931,7 +80974,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 656 -- Fountain of Blood
 #descr "The Fountain of Blood is a horrible spirit that inhabits an unholy fountain that spews forth blood instead of water. The spirit possesses a girl to serve as its instrument. The chosen child is blinded and rendered unable to do anything but speak the will of the spirit. At the age of thirteen, she is sacrificed and replaced with a new girl, born the day the previous girl was made the voice of the spirit. The unholy spirit is immobile and cannot leave the fountain it inhabits. It can possess willing targets to perform tasks such as forging items for enchantment. The Fountain of Blood is tremendously strong in its Dominion and magically powerful. "
 #diseaseres 100
-#gcost 90
+#gcost 80
 #pathcost 40
 #hp 30
 #prot 22
@@ -79949,7 +80992,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 657 -- Monolith
 #descr "The Monolith is a powerful spirit that inhabits a huge standing stone. The spirit cannot leave the Monolith, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 170
+#gcost 160
 #pathcost 40
 #hp 200
 #prot 28
@@ -80187,7 +81230,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 958 -- Colossal Head
 #descr "The Colossal Head is a powerful spirit that inhabits a massive stone that has been chiseled into the shape of a head. The spirit cannot leave the Colossal Head, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the head would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 150
+#gcost 140
 #pathcost 40
 #hp 300
 #prot 25
@@ -80299,7 +81342,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 1025 -- Divine Glyph
 #descr "The Divine Glyph is a divine spirit that manifests itself as a burning glyph. The sacred word is unutterable and unbearable to behold. Its very essence is beyond comprehension. At times, the spirit inspires a devout human to forge items and artifacts. Anyone trying to strike the blazing glyph will be punished with blindness. It has a very powerful Dominion and whilst it is present in the world it will spread Dominion very strongly."
 #diseaseres 100
-#gcost 110
+#gcost 90
 #startdom 5
 #pathcost 40
 #hp 50
@@ -80309,7 +81352,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #def 5
 #mr 18
 #mastersmith 0
-#spreaddom 1
+#spreaddom 3
 #itemslots 786432
 #clearmagic
 #magicskill 0 1
@@ -80725,7 +81768,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 1346 -- Colossal Fetish
 #descr "The Colossal Fetish is a statue that has come to life from being worshipped for many hundreds of years. It is mindless and mostly does what its worshippers believe it would do. It punishes harshly and rewards sparingly. The Colossal Fetish is made of wood and would be difficult to destroy in combat."
 #diseaseres 100
-#gcost 270
+#gcost 260
 #pathcost 40
 #moremagic -1
 #hp 120
@@ -80942,7 +81985,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 1402 -- Polypal Queen
 #descr "The Polypal Queen is the first Polypal Mother from which the whole race of the Aboleths has sprung. She has grown for ages in size and power and she has spawned all Aboleth Mind Lords known to live. She is the Aboleth race, its reason and its fate. The Queen is immobile and does not communicate in any comprehensible way, but a constant mental wail surrounds her."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #pathcost 20
 #hp 180
 #prot 9
@@ -81356,7 +82399,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2234 -- Irminsul
 #descr "Irminsul is an ancient tree that possesses intelligence, magic and a very strong dominion. Being a tree means Irminsul cannot move around, but it also means it is tremendously difficult to kill in combat and assassins are nothing to fear. The Irminsul is always guarded by three large bears."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #pathcost 60
 #hp 250
 #prot 20
@@ -81810,7 +82853,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2447 -- Idol of Men
 #descr "This Idol has been around for a very long time and it has always been the most popular place to give your offerings. Through the ages warriors have offered it valuables to receive courage in battle, wives have offered food before giving birth and the Idol of Men has continued to grow in power. Countless offerings later and now with the Pantokrator gone, the Idol of Men has the chance of putting the world under its strong dominion and become the True God."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #pathcost 40
 #hp 120
 #prot 20
@@ -81830,7 +82873,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2448 -- Idol of Beasts
 #descr "This Idol has been around for a very long time and for farmers and hunters this is the most important place to give their offerings. Through the ages hunters have offered it animal hearts for good fortune, farmers have offered it food when their animals got sick and people in general have made a yearly offering to appease the wolves. During the night a wolf of extraordinary size would take the offerings and if you did not make your yearly sacrifice the wolf would take you as well. Countless offerings later and now with the Pantokrator gone, the Idol of Beasts has the chance of putting the world under its strong dominion and become the True God."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #pathcost 40
 #moreluck 1
 #hp 120
@@ -81850,7 +82893,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2449 -- Idol of Sorcery
 #descr "Shamans in training are always told to make a sacrifice to this sinister idol each full moon. Not doing so will make their magic backfire and they will be cursed instead of their intended target. Many shamans and witches have tried to skip the offering, but they always end up dead or cursed. Through the ages the Idol of Sorcery has accumulated a huge amount of offerings and it has grown in power so it can rival the mightiest of arch mages. Now with the Pantokrator gone, the Idol of Sorcery has the chance of putting the world under its strong dominion and become the True God. Anyone who dares to strike at the Idol in close combat will be permanently cursed."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #pathcost 40
 #hp 120
 #prot 20
@@ -81909,7 +82952,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2460 -- Statue of Fertility
 #descr "The Statue of Fertility is a primordial spirit of fertility that once served a previous Pantokrator and brought life to the world. When the creation was full of life, its services were no longer needed and the spirit was bound in a huge stone statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshiped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #pathcost 40
 #hp 100
 #prot 25
@@ -81928,7 +82971,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2461 -- Statue of the Bloody Mother
 #descr "The Statue of the Bloody Mother is the spirit of a goddess of birth and blood once slain and bound in a huge stone statue by a previous Pantokrator. With the Pantokrator gone, its will and its thirst for blood are reawakened. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 120
+#gcost 110
 #pathcost 40
 #hp 200
 #prot 25
@@ -81947,7 +82990,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2462 -- Golden Idol
 #descr "The Golden Idol is an ancient spirit bound to a statue of a golden calf. Millennia of worship and bloody sacrifices has made the Idol powerful and now with the Pantokrator gone, the spirit will claim dominion over the entire world and become the one True God."
 #diseaseres 100
-#gcost 90
+#gcost 80
 #pathcost 40
 #hp 50
 #prot 25
@@ -81966,7 +83009,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2463 -- Statue of War
 #descr "The Statue of War is a primordial spirit of strife and turmoil once bound in a huge stone statue by a previous Pantokrator to save the world from its destructive influences. With the Pantokrator gone, its powers are unleashed and strife and war have once more come to the world. Barbarian warriors gather in the land of the statue to wreak havoc and plunder. More barbarians arrive if the turmoil of the province is high. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 120
+#gcost 110
 #pathcost 40
 #hp 120
 #prot 25
@@ -82004,7 +83047,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2465 -- Statue of War
 #descr "The Statue of War is a primordial spirit of strife and turmoil once bound in a huge stone statue by a previous Pantokrator to save the world from its destructive influences. With the Pantokrator gone its powers are unleashed and strife and war have once more come to the world. Brigands gather in the land of the statue to wreak havoc and plunder. More brigands arrive if the turmoil of the province is high. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 140
+#gcost 130
 #pathcost 40
 #hp 135
 #prot 25
@@ -82066,7 +83109,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2503 -- Golden Pillar
 #descr "When the earth was formed the Pantokrator placed a huge pillar at the Roots of the Earth as foundation for the creation and endowed it with vast powers. In time the pillar was discovered by a cavern-dwelling people and they began to worship the pillar. Over the millennia they gave it their devotion and their trust and the pillar became sentient and wise. It foresaw the fate of the race that had given it consciousness and it was saddened with grief. When the Pantokrator disappeared the Pillar decided that it would change the fate of those born underneath and make them forge their own destiny."
 #diseaseres 100
-#gcost 120
+#gcost 110
 #pathcost 40
 #hp 75
 #prot 25
@@ -82456,7 +83499,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2696 -- Stone Huaca
 #descr "Huacas, 'sacred ones', were semi-divine beings of an earlier age and the ancestors of the Nazcans. Their power was broken by the previous Pantokrator and most fled to the Celestial Sphere ages ago. A few of them remained in this world but were gradually turned to stone. The Stone Huaca is one of these petrified Huacas that has become a shrine and a place of worship for the Nazcan people. Once among the most powerful of the Huacas the Petrified One is now breaking free from the Pantokrator's curse and ready to lead the Nazcan people to world domination. The Stone Huaca is completely immobile and cannot move even by magic."
 #diseaseres 100
-#gcost 90
+#gcost 80
 #pathcost 40
 #moreluck 1
 #hp 200
@@ -83105,7 +84148,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2847 -- Protogenos of the Sea
 #descr "The Protogenos of the Sea is a divine spirit given might and creative powers by a previous Pantokrator. When the sea and everything in it was created the Pantokrator no longer needed the spirit and imprisoned it, lest it might think it was a God of the sea with authority to rival the Pantokrator himself. Now, with the Pantokrator gone, the prison is crumbling and the Protogenos of the Sea is free to claim as his all seas and lands which on waters rest. The Protogenos of the Sea manifests itself as a huge bearded head rising up from the waves. It is crowned with crab claws on its brow as a sign of its divine nature. It is strongly connected to the sea and can never leave it, regardless of magical help."
 #diseaseres 100
-#gcost 180
+#gcost 170
 #pathcost 60
 #moreluck 1
 #hp 144
@@ -83123,7 +84166,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2848 -- Father of the Sea
 #descr "The Father of the Sea is a divine spirit given might and creative powers by a previous Pantokrator. When the sea and everything in it was created the Pantokrator no longer needed the spirit and imprisoned it, lest it might think it was a God of the sea with authority to rival the Pantokrator himself. Now, with the Pantokrator gone, the prison is crumbling and the Father of the Sea is free to claim as his all seas and lands which on waters rest. The Father of the Sea manifests itself as a huge bearded head rising up from the waves. It is strongly connected to the sea and can never leave it, regardless of magical help."
 #diseaseres 100
-#gcost 180
+#gcost 170
 #pathcost 60
 #hp 131
 #prot 10
@@ -83159,7 +84202,7 @@ It is protected from harm by a Divine aura that turns away mortal weapons."
 #selectmonster 2850 -- Statue of the Underworld
 #descr "The Statue of the Underworld is a primordial spirit of the underworld that was brought to this world by a previous Pantokrator to watch over the final phase of the cycle of life and death. When the cycle was set, its services were no longer needed and the spirit was bound in a huge stone statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshiped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #pathcost 40
 #moremagic -1
 
@@ -84188,7 +85231,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3328 -- God Block
 #descr "The God Block is a huge carved stone block inhabited since time immemorial by a spirit of vast powers. Once worshiped as a God by the Hinn in ancient times, the spirit attracted the attention of a previous Pantokrator and was bound to the stone block and bereft of powers. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshiped as a reawakening god, ready to claim the earth."
 #diseaseres 100
-#gcost 90
+#gcost 80
 #pathcost 40
 #hp 350
 #prot 25
@@ -84206,7 +85249,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3329 -- Betyl of The Sun
 #descr "The Betyl is a God Block, a large carved stone block inhabited since time immemorial by a spirit sprung from the sun itself. Once worshiped as a Solar Deity, the spirit attracted the attention of a previous Pantokrator and was bound to the stone block for its hubris. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshiped as a Reawakening God, ready to claim the earth."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #pathcost 40
 #hp 150
 #prot 25
@@ -84225,7 +85268,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3330 -- Betyl of Writing
 #descr "The Betyl is a God Block, a large carved stone block inhabited since time immemorial by a spirit of vast powers. Once worshiped as a God the spirit taught men how to read and write. When mankind became knowledgeable and wise, the spirit attracted the attention of a previous Pantokrator and was bound to the stone block for its hubris. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshiped as a Reawakening God, ready to claim the earth."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #pathcost 40
 #hp 150
 #prot 25
@@ -84244,7 +85287,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3331 -- Betyl of The Stars
 #descr "The Betyl is a God Block, a large carved stone block inhabited since time immemorial by a spirit sprung from an auspicious constellation of stars. Once worshiped as a God, the spirit attracted the attention of a previous Pantokrator and was bound to the stone block for its hubris. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshiped as a Reawakening God, ready to claim the earth."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #pathcost 40
 #hp 150
 #prot 25
@@ -84263,7 +85306,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3344 -- Statue of Beginnings
 #descr "The Statue of Beginnings is a primordial spirit of order that once served a previous Pantokrator to bring life and civilization to the world. When the final decree was set, its services were no longer needed and the spirit was bound in a huge stone statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshiped as a Reawakening God. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 130
+#gcost 120
 #pathcost 40
 #moreprod 1
 
@@ -84286,7 +85329,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3345 -- Wooden Colossus
 #descr "The Wooden Colossus is a huge statue that has come to life from being worshiped for millennia. When the Pantokrator disappeared its aging wooden body became animate and people found new hope. The aging wood of the idol is brittle and it once lost its arm. The broken arm was quickly replaced by an arm of gold and the powers of the idol increased dramatically, probably due to increased following. The Wooden Colossus is mindless and mostly does what its worshipers believe it would do. It punishes harshly and rewards sparingly."
 #diseaseres 100
-#gcost 250
+#gcost 240
 #pathcost 40
 #moremagic -1
 #hp 54
@@ -84306,7 +85349,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3346 -- Bronze Colossus
 #descr "The Bronze Colossus is a huge bronze statue that has come to life from being worshiped for centuries. When the Pantokrator disappeared its bronze body became animate and people found new hope. The Colossus is mindless and mostly does what its worshipers believe it would do. It punishes harshly and rewards sparingly."
 #diseaseres 100
-#gcost 330
+#gcost 320
 #pathcost 40
 #moremagic -1
 #hp 105
@@ -84325,7 +85368,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3368 -- Bronze Colossus
 #descr "The Bronze Colossus is a huge bronze statue that has come to life from being worshiped for centuries. When the Pantokrator disappeared its bronze body became animate and people found new hope. The Colossus is mindless and mostly does what its worshipers believe it would do. It punishes harshly and rewards sparingly."
 #diseaseres 100
-#gcost 330
+#gcost 320
 #pathcost 40
 #moremagic -1
 #hp 105
@@ -84596,7 +85639,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3639 -- Crystal Soul
 #descr "The Crystal Soul is a powerful spirit that inhabits an enormous subterranean crystal. The crystal was found by a subterranean race a long time ago and has been worshiped as the protector of their cavernous realm. The spirit cannot leave the crystal it inhabits, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the crystal would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 170
+#gcost 160
 #pathcost 40
 #hp 300
 #prot 28
@@ -84615,7 +85658,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3640 -- Dark Crystal
 #descr "At the center of the Basalt City there is a gorge at the bottom of which stands an enormous dark crystal in which moving shadows and sudden flashes of light can be seen. Here the Basalt Kings of Atlantis have gathered for millennia, observing in silence. Once every turning of the churning the Basalt Queens, High Priestesses of the Deep Ones, arrive and circumambulate the crystal in prayer, for this is the God of Atlantis, a spirit of tremendous power inhabiting the Dark Crystal. The spirit cannot leave the crystal it inhabits, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the crystal would be difficult to destroy, even though it cannot strike back."
 #diseaseres 100
-#gcost 150
+#gcost 140
 #pathcost 40
 #moremagic 1
 
@@ -84637,10 +85680,10 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3641 -- Earth Dragon
 #descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. Black Dragons have their skills reduced when casting spells from paths other than Earth. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
 #diseaseres 100
-#gcost 240
+#gcost 220
 #pathcost 40
 #hp 125
-#prot 18
+#prot 20
 #str 25
 #att 15
 #def 12
@@ -84656,7 +85699,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3642 -- Earth Dragon Great Sage
 #descr "The Great Sage is a scholar of such great power and knowledge that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Great Sage is a master of magical research and is often adept in several of the magic paths."
 #diseaseres 100
-#gcost 240
+#gcost 220
 #pathcost 40
 #moreprod -1
 #hp 10
@@ -84668,7 +85711,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #twiceborn 7223 -- Dracowight
 #itemslots 2040326
 #clearmagic
-#magicskill 3 2
+#magicskill 3 3
 #end
 
 #selectmonster 3650 -- Immortal Gorgon
@@ -84752,7 +85795,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3661 -- Elephant Idol
 #descr "The Elephant Idol is a huge golden elephant statue on wheels, that has come to life from being worshiped for many hundreds of years. It is mostly pushed around by worthy followers, but sometimes move around on its own accord, crushing heretics as well as the occasional adherent of the Faith. It is mindless and mostly does what its worshipers believe it would do."
 #diseaseres 100
-#gcost 280
+#gcost 270
 #pathcost 40
 #moreorder 1
 
@@ -84844,7 +85887,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3710 -- Air Dragon
 #descr "The Dragon is an ancient reptile of tremendous physical and magical power. Born before the history of time, the dragons were perceived as threats to the world and imprisoned by the previous Pantokrator millennia ago. Dragons are enormous, scaly, winged beasts capable of breathing fire, poisonous gas or supernatural frost or lightning upon enemies. Dragons are closely attuned to the magic that brought them into life and thus focus mainly on one magic path. The physical bodies of Dragons are not well suited for spell casting. White Dragons have their skills reduced when casting spells from paths other than Air. Therefore, Dragons tend to adopt human form, but when wounded, they revert to their greater Dragon form."
 #diseaseres 100
-#gcost 220
+#gcost 200
 #pathcost 40
 #hp 125
 #prot 20
@@ -84863,7 +85906,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3711 -- Air Dragon Storm Father
 #descr "The Storm Father is a mage of such great power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. He is a master of air magic and can be adept in several of the magic paths."
 #diseaseres 100
-#gcost 220
+#gcost 200
 #pathcost 40
 #moreorder -1 
 #moreprod -1
@@ -84922,7 +85965,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #selectmonster 3876 -- Sacred Geyser
 #descr "The Sacred Geyser is a powerful spirit that inhabits a hot spring. The spirit cannot leave the spring, but it occasionally lets its will be known by spewing forth hot water. It can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its Dominion and it is also magically powerful. In a physical battle, the spring would be almost impossible to destroy, even though it cannot strike back. The Sacred Geyser is completely immobile and cannot move even by magic."
 #diseaseres 100
-#gcost 110
+#gcost 100
 #pathcost 40
 #hp 200
 #prot 25
@@ -85406,8 +86449,15 @@ He is accompanied by the souls of his subjects that have followed him into the w
 
 
 
-
 -- ENDUNITS
+
+
+
+
+
+
+
+
 
 
 
@@ -85672,8 +86722,8 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #end
 
 #selectmonster 121  -- Demonbred
-#spr1 "vanilla/demonbred1537_1.png"
-#spr2 "vanilla/demonbred1537_2.png"
+#spr1 "vanilla/demonbred121_1.png"
+#spr2 "vanilla/demonbred121_2.png"
 #descr "Deep in the Smouldercone, the Warlocks of Abysia experiment with their brethren to create superior beings. The Demonbreds are the most successful of these creatures. Part demon, part Abysian, they share the strengths and weaknesses of both. The Demonbreds are bound by their nature to serve their masters as slaves. Trained as Anathemants and mages, they can achieve great status and influence. They are fanatically loyal to their masters and are the most trusted and able of the Abysian mages. Demonbreds radiate the hellish heat characteristic of Abysians. In warm lands they will be more difficult to harm, however the cold will make them brittle."
 #neednoteat
 #icenatprot -1
@@ -86502,6 +87552,7 @@ Initiates of the Deep can be recruited in any land fort."
 #str 13  -- base 12
 #enc 3  -- base 4
 #holy
+#female
 #clearweapons
 #weapon 1695 -- Hero's Blade
 #onebattlespell "Personal Luck"  -- Luck
@@ -88092,6 +89143,16 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #twiceborn 6644 -- Wight Beast
 #end
 
+#selectmonster 926  -- Demon of Heavenly Fires
+#magicskill 0 1 -- 1F
+#custommagic 128 50 -- 50%F
+#end
+
+#selectmonster 904  -- Demon of Heavenly Rivers
+#magicskill 2 1 -- 1W
+#custommagic 512 50 -- 50%W
+#end
+
 #selectmonster 930  -- Khan
 #descr "With the barbarian invasion came new leadership and the Imperial Family was replaced by Barbarian Kings. The Khans come from the steppes and are skilled horsemen and warriors. They often fight side by side with their soldiers and their bravery and skill can inspire the most cowardly barbarian into deeds of heroic bravery. The first Khan to take up the Tug banner will become the Great Khan of the entire empire, able to raise the Kheshig elite Imperial Guard."
 #userestricteditem 1
@@ -88104,6 +89165,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 933  -- King of Legends
+#userestricteditem 15 -- Mictlan Priest
 #end
 
 #selectmonster 935
@@ -89125,6 +90187,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #bodyguard 3
 #end
 
+#selectmonster 1356 -- Ozelotl
+#magicskill 7 1 -- 1B
+#custommagic 128 50 -- 50%F
+#end
+
 #selectmonster 1358 -- Monster Toad
 #clearweapons
 #weapon 300
@@ -89313,6 +90380,16 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 #gcost 10018
 #end
 
+#selectmonster 1478 -- Karasu Tengu
+#magicskill 1 1 -- 1A
+#custommagic 8192 50 -- 50%N
+#end
+
+#selectmonster 1479 -- Konoha Tengu
+#magicskill 1 1 -- 1A
+#custommagic 1024 50 -- 50%E
+#end
+
 #selectmonster 1458  -- Ogon, Earth-Blooded
 #end
 
@@ -89357,6 +90434,14 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 
 #selectmonster 1494  -- Amesha Spenta
 #polyimmune
+#end
+
+#selectmonster 1498 -- Granite Guardian
+#magicskill 3 1 -- E1
+#end
+
+#selectmonster 1499 -- Marble Oracle
+#magicskill 9 3 -- H2 -> H3
 #end
 
 #selectmonster 1500  -- Sepulchral
@@ -89636,11 +90721,15 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #selectmonster 1656  -- Smoulderghost
 #armor 547 -- spectral plate
 #armor 549 -- spectral helm
+#magicskill 0 1 -- 1F
+#custommagic 4096 50 -- 50%D
 #end
 
 #selectmonster 1971  -- Smoulderghost LA
 #armor 547 -- spectral plate
 #armor 549 -- spectral helm
+#magicskill 0 1 -- 1F
+#custommagic 4096 50 -- 50%D
 #end
 
 #selectmonster 1660  -- Udm'ukinna, Reassembled Prince
@@ -89786,6 +90875,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 
 #selectmonster 1741 -- Asrapa
 #airshield 50
+#end
+
+#selectmonster 1743 -- Sandhyabala
+#magicskill 5 1 -- 1D
+#custommagic 20480 100 -- 100%DB
 #end
 
 #selectmonster 1745 -- Asara
@@ -89999,6 +91093,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 
 #selectmonster 1810  -- Longdead Partholonian
 #spiritsight
+#end
+
+#selectmonster 1821 -- Morrigan
+#magicskill 1 1 -- 1A
+#custommagic 4352 100 -- 100%AD
 #end
 
 
@@ -90215,9 +91314,19 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #end
 
 #selectmonster 1884  -- Priest King Topiltzin
+#userestricteditem 15 -- Mictlan Priest
+#end
+
+#selectmonster 1885  -- Couatl Topiltzin
+#userestricteditem 15 -- Mictlan Priest
 #end
 
 #selectmonster 1886  -- Priest King Mixcouatl
+#userestricteditem 15 -- Mictlan Priest
+#end
+
+#selectmonster 1887  -- Couatl Mixcouatl
+#userestricteditem 15 -- Mictlan Priest
 #end
 
 #selectmonster 1888  -- Sky Priest
@@ -90230,6 +91339,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #end
 
 #selectmonster 1889  -- Jade Serpent
+#magicskill 2 1
 #twiceborn 7245 -- Necrophidian
 #end
 
@@ -90343,6 +91453,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 
 #selectmonster 1983  -- Green Lion
 #montag 1039
+#custommagic 640 100 -- 100%WF
+#custommagic 640 100 -- 100%WF
 #end
 
 #selectmonster 1985
@@ -90456,6 +91568,71 @@ Ditan may only be summoned in the rare event a Zamzummite sacrifices himself in 
 #itemslots 1835008 -- 3 misc
 #magicboost 53 -6 -- all magic
 #magicboost 9 6 -- priest
+#end
+
+
+#selectmonster 2052 -- Chayot 1
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 4 2 -- S
+#secondshape 9276
+#forcess
+#battleshape 9262
+#end
+
+#selectmonster 2053 -- Chayot 2
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 1 2 -- A
+#secondshape 9277
+#forcess
+#battleshape 9263
+#end
+
+#selectmonster 2054 -- Chayot 3
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 0 2 -- F
+#secondshape 9278
+#forcess
+#battleshape 9264
+#end
+
+#selectmonster 2055 -- Chayot 4
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 3 2 -- E
+#secondshape 9279
+#forcess
+#battleshape 9265
 #end
 
 #selectmonster 2056  -- Malakh
@@ -90771,6 +91948,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectmonster 2287  -- Shadow Imp
 #montag 1054
+#end
+
+#selectmonster 2291  -- Voice of Lion
+#magiccommand 20
 #end
 
 #selectmonster 2292  -- Hyena Clan Witch Doctor
@@ -91180,6 +92361,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectmonster 2497  -- Penumbral
+#magicskill 5 1 -- 1D
 #prot 5 -- matching shard wight
 #woundfend 3
 #darkpower 2
@@ -91405,6 +92587,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectmonster 2700
 #armor 545 -- spectral plate
+#armor 548 -- spectral cap
 #end
 
 #selectmonster 2712
@@ -91721,6 +92904,30 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #magicskill 5 1
 #end
 
+#selectmonster 2827 -- Therodian Archer
+#swimming
+#end
+
+#selectmonster 2828 -- Therodian Peltast
+#swimming
+#end
+
+#selectmonster 2829 -- Therodian Hoplite
+#swimming
+#end
+
+#selectmonster 2830 -- Therodian Scout
+#swimming
+#end
+
+#selectmonster 2831 -- Therodian Commander
+#swimming
+#end
+
+#selectmonster 2835 -- Kabeiros
+#swimming
+#end
+
 #selectmonster 2837 -- Korybant
 #swimming
 #end
@@ -91730,7 +92937,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectmonster 2833 -- Melia
-#giftofwater 20
+#giftofwater 30
 #swimming
 #end
 
@@ -92210,6 +93417,40 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #researchbonus -3
 #end
 
+#selectmonster 3221 -- Phlegran Oppressor
+#clearspec
+#taskmaster 2
+#cleararmor
+#armor 574 -- Oppressors Headband
+#armor 158 -- Robes
+#end
+
+#selectmonster 3222 -- Oppressor General
+#clearspec
+#taskmaster 2
+#cleararmor
+#armor 574 -- Oppressors Headband
+#armor 9 -- Plate Cuirass
+#armor 2 -- Shield
+#end
+
+#selectmonster 3228 -- Oppressor Archon
+#clearspec
+#holy
+#taskmaster 2
+#cleararmor
+#armor 574 -- Oppressors Headband
+#armor 158 -- Robes
+#end
+
+#selectmonster 3162 -- Trophimos Oppressor
+#clearspec
+#taskmaster 2
+#cleararmor
+#armor 574 -- Oppressors Headband
+#armor 158 -- Robes
+#end
+
 #selectmonster 3224  -- Cyclope Soldier
 #descr "In earlier times the Younger Cyclopes lived pastoral lives herding mouflon sheep on the gentle slopes of the Phlegran hills, but even during these times they sometimes joined the armies of the Tyrants. They made themselves a name as skilled, albeit under-equipped warriors. When the Tyrants and Gigantes of Phlegra degenerated, became more monstrous, and finally disappeared, their control over the kingdom dwindled. In practice the human population slowly became masters of the kingdom and the Cyclopes were marginalized. With growing hubris mankind rebelled against their masters and tried to take control over the capital Telepylos. They were almost successful, but their attempt was thwarted by the Cyclopes. The Cyclope Smiths shackled under the fortress were released by the last Tyrant and the Cyclopes were rewarded with influence and power. The Younger Cyclopes were given arms of cyclopean manufacture and became a noble warrior-caste aloof from the human population. The cyclopean armors are not as splendid as the hoplite armors once used by the Gigantes of Mekone, but they are superior to most other armors. Cyclopes are known for their fondness for throwing things, large and small. In this age when they have been equipped with armaments forged by their greater kin, javelins have replaced the boulders carried by the warriors of earlier times. Cost 17 RP."
 #end
@@ -92602,10 +93843,67 @@ The number of Scar Souls equals the one half the dominion of the province, round
 #descr "The Imperial footmen are skilled and heavily armed, but quite slow. To stifle internal unrest and protect administrators in times of civil disorder, the Bureaucracy needed faster soldiers that were quickly deployable and skilled at crowd control. Ministry guardsmen are medium elite infantry that accompany eunuchs and Ministers on their less popular missions. Their training and loyalty is almost as good as that of the Imperial soldiers and they are good at patrolling."
 #end
 
+#selectmonster 3783 -- Piconye Militia
+#rpcost 5
+#end
+
+#selectmonster 3784 -- Piconye Slinger
+#rpcost 5
+#end
+
+#selectmonster 3785 -- Piconye Crossbowman
+#rpcost 9
+#cleararmor
+#armor 8 -- Chain Mail
+#armor 20 -- Iron Cap
+#end
+
+#selectmonster 3786 -- Piconye Spearman
+#rpcost 9
+#end
+
+#selectmonster 3787 -- Piconye Soldier
+#rpcost 12
+#end
+
+#selectmonster 3788 -- Piconye Defender
+#rpcost 14
+#end
+
 #selectmonster 3790 -- Crosswielder
+#rpcost 12
 #clearweapons
 #weapon 9
 #weapon 1841 -- holy cross
+#end
+
+#selectmonster 3789 -- Soldier Priest
+#rpcost 14
+#end
+
+#selectmonster 3791 -- Baculite
+#rpcost 15
+#end
+
+#selectmonster 3792 -- Bird Knight
+#spr1 "vanilla/birdknight1.png"
+#spr2 "vanilla/birdknight2.png"
+#mountmnr 9207 -- armored
+#rpcost 14
+#end
+
+#selectmonster 3796 -- Bird Knight Commander
+#spr1 "vanilla/birdking1.png"
+#spr2 "vanilla/birdking2.png"
+#mountmnr 9208 -- armoredk
+#end
+
+#selectmonster 3802 -- Piconye Scout
+#gcost 15
+#end
+
+#selectmonster 3793 -- War Bird
+#armor 559
 #end
 
 #selectmonster 3794 -- Bishop General
@@ -92613,6 +93911,7 @@ The number of Scar Souls equals the one half the dominion of the province, round
 Bishop Generals are devoted wholly to their God and are forbidden from learning the arcane."
 #magicboost 53 -8
 #magicboost 9 8
+#prophetshape 9209 -- Protopope
 #end
 
 #selectmonster 3799 -- Bishop
@@ -92620,6 +93919,7 @@ Bishop Generals are devoted wholly to their God and are forbidden from learning 
 Bishops are devoted wholly to their God and are forbidden from learning the arcane."
 #magicboost 53 -8
 #magicboost 9 8
+#prophetshape 9209 -- Protopope
 #end
 
 #selectmonster 3800 -- Arch Bishop
@@ -92627,6 +93927,7 @@ Bishops are devoted wholly to their God and are forbidden from learning the arca
 Arch Bishops are devoted wholly to their God and are forbidden from learning the arcane."
 #magicboost 53 -8
 #magicboost 9 8
+#prophetshape 9209 -- Protopope
 #end
 
 #selectmonster 3801 -- Pope
@@ -92634,6 +93935,7 @@ Arch Bishops are devoted wholly to their God and are forbidden from learning the
 Popes are devoted wholly to their God and are forbidden from learning the arcane."
 #magicboost 53 -8
 #magicboost 9 8
+#prophetshape 9209 -- Protopope
 #end
 
 #selectmonster 3808 -- Lady at arms
@@ -95320,10 +96622,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #armor 158 -- Robes
 #end
 
-#selectmonster 3162 -- Trophimos Oppressor
-#armor 158 -- Robes
-#end
-
 #selectmonster 3163 -- Theurg Tyrant
 #armor 158 -- Robes
 #end
@@ -95416,16 +96714,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #armor 158 -- Robes
 #end
 
-#selectmonster 3221 -- Phlegran Oppressor
-#armor 158 -- Robes
-#end
-
 #selectmonster 3225 -- Cyclope Smith
 #armor 573 -- Garbs
-#end
-
-#selectmonster 3228 -- Oppressor Archon
-#armor 158 -- Robes
 #end
 
 #selectmonster 3231 -- Elder Cyclops
@@ -100971,3096 +102261,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 -- END OF NO INNATE SPEED
 
--- FOLDUNITS START OF UW JAVELINS -- 12500~12999
-
-
-
-#newmonster 12501 -- Standard water shape
-#copystats 2
-#copyspr 2
-#landshape 2
-#clearweapons
-#weapon 6
-#weapon 1893
-#end
-
-#selectmonster 2 -- Standard
-#watershape 12501
-#end
-
-#newmonster 12502 -- Light Cavalry water shape
-#copystats 24
-#copyspr 24
-#landshape 24
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 24 -- Light Cavalry
-#watershape 12502
-#end
-
-#newmonster 12503 -- Light Infantry water shape
-#copystats 29
-#copyspr 29
-#landshape 29
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 29 -- Light Infantry
-#watershape 12503
-#end
-
-#newmonster 12504 -- Logrian Warrior water shape
-#copystats 53
-#copyspr 53
-#landshape 53
-#clearweapons
-#weapon 17
-#weapon 1893
-#end
-
-#selectmonster 53 -- Logrian Warrior
-#watershape 12504
-#end
-
-#newmonster 12505 -- Huskarl water shape
-#copystats 142
-#copyspr 142
-#landshape 142
-#clearweapons
-#weapon 17
-#weapon 1893
-#end
-
-#selectmonster 142 -- Huskarl
-#watershape 12505
-#end
-
-#newmonster 12506 -- Huskarl water shape
-#copystats 143
-#copyspr 143
-#landshape 143
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 143 -- Huskarl
-#watershape 12506
-#end
-
-#newmonster 12507 -- Velite water shape
-#copystats 155
-#copyspr 155
-#landshape 155
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 155 -- Velite
-#watershape 12507
-#end
-
-#newmonster 12508 -- C'tissian Light Infantry water shape
-#copystats 167
-#copyspr 167
-#landshape 167
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 167 -- C'tissian Light Infantry
-#watershape 12508
-#end
-
-#newmonster 12509 -- Longdead Velite water shape
-#copystats 186
-#copyspr 186
-#landshape 186
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 186 -- Longdead Velite
-#watershape 12509
-#end
-
-#newmonster 12510 -- Longdead Legionnaire water shape
-#copystats 187
-#copyspr 187
-#landshape 187
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 187 -- Longdead Legionnaire
-#watershape 12510
-#end
-
-#newmonster 12511 -- Peltast water shape
-#copystats 201
-#copyspr 201
-#landshape 201
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 201 -- Peltast
-#watershape 12511
-#end
-
-#newmonster 12512 -- Satyr water shape
-#copystats 228
-#copyspr 228
-#landshape 228
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 228 -- Satyr
-#watershape 12512
-#end
-
-#newmonster 12513 -- Van water shape
-#copystats 262
-#copyspr 262
-#landshape 262
-#clearweapons
-#weapon 357
-#weapon 1893
-#end
-
-#selectmonster 262 -- Van
-#watershape 12513
-#end
-
-#newmonster 12514 -- Vanherse water shape
-#copystats 263
-#copyspr 263
-#landshape 263
-#clearweapons
-#weapon 357
-#weapon 1893
-#end
-
-#selectmonster 263 -- Vanherse
-#watershape 12514
-#end
-
-#newmonster 12515 -- Vanjarl water shape
-#copystats 264
-#copyspr 264
-#landshape 264
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 264 -- Vanjarl
-#watershape 12515
-#end
-
-#newmonster 12516 -- Jotun Javelinist water shape
-#copystats 276
-#copyspr 276
-#landshape 276
-#clearweapons
-#weapon 17
-#weapon 1893
-#end
-
-#selectmonster 276 -- Jotun Javelinist
-#watershape 12516
-#end
-
-#newmonster 12517 -- Herse water shape
-#copystats 422
-#copyspr 422
-#landshape 422
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 422 -- Herse
-#watershape 12517
-#end
-
-#newmonster 12518 -- Velite water shape
-#copystats 662
-#copyspr 662
-#landshape 662
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 662 -- Velite
-#watershape 12518
-#end
-
-#newmonster 12519 -- Alae Legionnaire water shape
-#copystats 663
-#copyspr 663
-#landshape 663
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 663 -- Alae Legionnaire
-#watershape 12519
-#end
-
-#newmonster 12520 -- Hastatus water shape
-#copystats 664
-#copyspr 664
-#landshape 664
-#clearweapons
-#weapon 6
-#weapon 1893
-#end
-
-#selectmonster 664 -- Hastatus
-#watershape 12520
-#end
-
-#newmonster 12521 -- Principe water shape
-#copystats 665
-#copyspr 665
-#landshape 665
-#clearweapons
-#weapon 6
-#weapon 1893
-#end
-
-#selectmonster 665 -- Principe
-#watershape 12521
-#end
-
-#newmonster 12522 -- Standard water shape
-#copystats 668
-#copyspr 668
-#landshape 668
-#clearweapons
-#weapon 6
-#weapon 1893
-#end
-
-#selectmonster 668 -- Standard
-#watershape 12522
-#end
-
-#newmonster 12523 -- Velite water shape
-#copystats 684
-#copyspr 684
-#landshape 684
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 684 -- Velite
-#watershape 12523
-#end
-
-#newmonster 12524 -- Alae Legionnaire water shape
-#copystats 685
-#copyspr 685
-#landshape 685
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 685 -- Alae Legionnaire
-#watershape 12524
-#end
-
-#newmonster 12525 -- Hastatus water shape
-#copystats 686
-#copyspr 686
-#landshape 686
-#clearweapons
-#weapon 6
-#weapon 1893
-#end
-
-#selectmonster 686 -- Hastatus
-#watershape 12525
-#end
-
-#newmonster 12526 -- Principe water shape
-#copystats 687
-#copyspr 687
-#landshape 687
-#clearweapons
-#weapon 6
-#weapon 1893
-#end
-
-#selectmonster 687 -- Principe
-#watershape 12526
-#end
-
-#newmonster 12527 -- Standard water shape
-#copystats 689
-#copyspr 689
-#landshape 689
-#clearweapons
-#weapon 6
-#weapon 1893
-#end
-
-#selectmonster 689 -- Standard
-#watershape 12527
-#end
-
-#newmonster 12528 -- Warrior water shape
-#copystats 723
-#copyspr 723
-#landshape 723
-#clearweapons
-#weapon 373
-#weapon 1893
-#end
-
-#selectmonster 723 -- Warrior
-#watershape 12528
-#end
-
-#newmonster 12529 -- Warrior water shape
-#copystats 724
-#copyspr 724
-#landshape 724
-#clearweapons
-#weapon 12
-#weapon 1893
-#end
-
-#selectmonster 724 -- Warrior
-#watershape 12529
-#end
-
-#newmonster 12530 -- Sun Warrior water shape
-#copystats 725
-#copyspr 725
-#landshape 725
-#clearweapons
-#weapon 646
-#weapon 1893
-#end
-
-#selectmonster 725 -- Sun Warrior
-#watershape 12530
-#end
-
-#newmonster 12531 -- Tribal King water shape
-#copystats 730
-#copyspr 730
-#landshape 730
-#clearweapons
-#weapon 288
-#weapon 1893
-#end
-
-#selectmonster 730 -- Tribal King
-#watershape 12531
-#end
-
-#newmonster 12532 -- White Centaur water shape
-#copystats 769
-#copyspr 769
-#landshape 769
-#clearweapons
-#weapon 651
-#weapon 55
-#weapon 1893
-#end
-
-#selectmonster 769 -- White Centaur
-#watershape 12532
-#end
-
-#newmonster 12533 -- Jotun Scout water shape
-#copystats 786
-#copyspr 786
-#landshape 786
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 786 -- Jotun Scout
-#watershape 12533
-#end
-
-#newmonster 12534 -- Black Centaur water shape
-#copystats 787
-#copyspr 787
-#landshape 787
-#clearweapons
-#weapon 357
-#weapon 55
-#weapon 1893
-#end
-
-#selectmonster 787 -- Black Centaur
-#watershape 12534
-#end
-
-#newmonster 12535 -- Huskarl water shape
-#copystats 837
-#copyspr 837
-#landshape 837
-#clearweapons
-#weapon 17
-#weapon 1893
-#end
-
-#selectmonster 837 -- Huskarl
-#watershape 12535
-#end
-
-#newmonster 12536 -- Huskarl water shape
-#copystats 838
-#copyspr 838
-#landshape 838
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 838 -- Huskarl
-#watershape 12536
-#end
-
-#newmonster 12537 -- Godihuskarl water shape
-#copystats 841
-#copyspr 841
-#landshape 841
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 841 -- Godihuskarl
-#watershape 12537
-#end
-
-#newmonster 12538 -- Hangadrott water shape
-#copystats 847
-#copyspr 847
-#landshape 847
-#clearweapons
-#weapon 357
-#weapon 1893
-#end
-
-#selectmonster 847 -- Hangadrott
-#watershape 12538
-#end
-
-#newmonster 12539 -- Sidhe Lord water shape
-#copystats 848
-#copyspr 848
-#landshape 848
-#clearweapons
-#weapon 475
-#weapon 1893
-#end
-
-#selectmonster 848 -- Sidhe Lord
-#watershape 12539
-#end
-
-#newmonster 12540 -- Daoine Sidhe water shape
-#copystats 849
-#copyspr 849
-#landshape 849
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 849 -- Daoine Sidhe
-#watershape 12540
-#end
-
-#newmonster 12541 -- Sidhe Champion water shape
-#copystats 850
-#copyspr 850
-#landshape 850
-#clearweapons
-#weapon 474
-#weapon 1893
-#end
-
-#selectmonster 850 -- Sidhe Champion
-#watershape 12541
-#end
-
-#newmonster 12542 -- Tuatha water shape
-#copystats 856
-#copyspr 856
-#landshape 856
-#clearweapons
-#weapon 475
-#weapon 1893
-#end
-
-#selectmonster 856 -- Tuatha
-#watershape 12542
-#end
-
-#newmonster 12543 -- Feathered Warrior water shape
-#copystats 860
-#copyspr 860
-#landshape 860
-#clearweapons
-#weapon 12
-#weapon 1893
-#end
-
-#selectmonster 860 -- Feathered Warrior
-#watershape 12543
-#end
-
-#newmonster 12544 -- Machaka Warrior water shape
-#copystats 880
-#copyspr 880
-#landshape 880
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 880 -- Machaka Warrior
-#watershape 12544
-#end
-
-#newmonster 12545 -- Vanadrott water shape
-#copystats 948
-#copyspr 948
-#landshape 948
-#clearweapons
-#weapon 357
-#weapon 1893
-#end
-
-#selectmonster 948 -- Vanadrott
-#watershape 12545
-#end
-
-#newmonster 12546 -- Desert Ranger water shape
-#copystats 1094
-#copyspr 1094
-#landshape 1094
-#clearweapons
-#weapon 10
-#weapon 1893
-#end
-
-#selectmonster 1094 -- Desert Ranger
-#watershape 12546
-#end
-
-#newmonster 12547 -- Leve water shape
-#copystats 1100
-#copyspr 1100
-#landshape 1100
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 1100 -- Leve
-#watershape 12547
-#end
-
-#newmonster 12548 -- Accensus water shape
-#copystats 1101
-#copyspr 1101
-#landshape 1101
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 1101 -- Accensus
-#watershape 12548
-#end
-
-#newmonster 12549 -- Rorarus water shape
-#copystats 1102
-#copyspr 1102
-#landshape 1102
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 1102 -- Rorarus
-#watershape 12549
-#end
-
-#newmonster 12550 -- Hastatus water shape
-#copystats 1103
-#copyspr 1103
-#landshape 1103
-#clearweapons
-#weapon 6
-#weapon 1893
-#end
-
-#selectmonster 1103 -- Hastatus
-#watershape 12550
-#end
-
-#newmonster 12551 -- Principe water shape
-#copystats 1104
-#copyspr 1104
-#landshape 1104
-#clearweapons
-#weapon 6
-#weapon 1893
-#end
-
-#selectmonster 1104 -- Principe
-#watershape 12551
-#end
-
-#newmonster 12552 -- Lizard Auxiliare water shape
-#copystats 1106
-#copyspr 1106
-#landshape 1106
-#clearweapons
-#weapon 6
-#weapon 1893
-#end
-
-#selectmonster 1106 -- Lizard Auxiliare
-#watershape 12552
-#end
-
-#newmonster 12553 -- Eponi Chieftain water shape
-#copystats 1207
-#copyspr 1207
-#landshape 1207
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 1207 -- Eponi Chieftain
-#watershape 12553
-#end
-
-#newmonster 12554 -- Eponi Knight water shape
-#copystats 1208
-#copyspr 1208
-#landshape 1208
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 1208 -- Eponi Knight
-#watershape 12554
-#end
-
-#newmonster 12555 -- Marverni Javelineer water shape
-#copystats 1212
-#copyspr 1212
-#landshape 1212
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 1212 -- Marverni Javelineer
-#watershape 12555
-#end
-
-#newmonster 12556 -- Marverni Bare Chested Warrior water shape
-#copystats 1213
-#copyspr 1213
-#landshape 1213
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 1213 -- Marverni Bare Chested Warrior
-#watershape 12556
-#end
-
-#newmonster 12557 -- Oni water shape
-#copystats 1272
-#copyspr 1272
-#landshape 1272
-#clearweapons
-#weapon 379
-#weapon 1893
-#end
-
-#selectmonster 1272 -- Oni
-#watershape 12557
-#end
-
-#newmonster 12558 -- Oni Shugo water shape
-#copystats 1276
-#copyspr 1276
-#landshape 1276
-#clearweapons
-#weapon 379
-#weapon 383
-#weapon 1893
-#end
-
-#selectmonster 1276 -- Oni Shugo
-#watershape 12558
-#end
-
-#newmonster 12559 -- Jotun Warrior water shape
-#copystats 1304
-#copyspr 1304
-#landshape 1304
-#clearweapons
-#weapon 17
-#weapon 1893
-#end
-
-#selectmonster 1304 -- Jotun Warrior
-#watershape 12559
-#end
-
-#newmonster 12560 -- Godihuskarl water shape
-#copystats 1307
-#copyspr 1307
-#landshape 1307
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 1307 -- Godihuskarl
-#watershape 12560
-#end
-
-#newmonster 12561 -- Dai Oni water shape
-#copystats 1316
-#copyspr 1316
-#landshape 1316
-#clearweapons
-#weapon 744
-#weapon 383
-#weapon 1893
-#end
-
-#selectmonster 1316 -- Dai Oni
-#watershape 12561
-#end
-
-#newmonster 12562 -- Helkarl water shape
-#copystats 1502
-#copyspr 1502
-#landshape 1502
-#clearweapons
-#weapon 357
-#weapon 1893
-#end
-
-#selectmonster 1502 -- Helkarl
-#watershape 12562
-#end
-
-#newmonster 12563 -- Helhirding water shape
-#copystats 1503
-#copyspr 1503
-#landshape 1503
-#clearweapons
-#weapon 357
-#weapon 1893
-#end
-
-#selectmonster 1503 -- Helhirding
-#watershape 12563
-#end
-
-#newmonster 12564 -- Mounted Hirdman water shape
-#copystats 1504
-#copyspr 1504
-#landshape 1504
-#clearweapons
-#weapon 357
-#weapon 1893
-#end
-
-#selectmonster 1504 -- Mounted Hirdman
-#watershape 12564
-#end
-
-#newmonster 12565 -- Vanherse water shape
-#copystats 1505
-#copyspr 1505
-#landshape 1505
-#clearweapons
-#weapon 357
-#weapon 1893
-#end
-
-#selectmonster 1505 -- Vanherse
-#watershape 12565
-#end
-
-#newmonster 12566 -- Vanjarl water shape
-#copystats 1506
-#copyspr 1506
-#landshape 1506
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 1506 -- Vanjarl
-#watershape 12566
-#end
-
-#newmonster 12567 -- Dis water shape
-#copystats 1507
-#copyspr 1507
-#landshape 1507
-#clearweapons
-#weapon 357
-#weapon 1893
-#end
-
-#selectmonster 1507 -- Dis
-#watershape 12567
-#end
-
-#newmonster 12568 -- Huskarl water shape
-#copystats 1508
-#copyspr 1508
-#landshape 1508
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 1508 -- Huskarl
-#watershape 12568
-#end
-
-#newmonster 12569 -- Huskarl water shape
-#copystats 1509
-#copyspr 1509
-#landshape 1509
-#clearweapons
-#weapon 17
-#weapon 1893
-#end
-
-#selectmonster 1509 -- Huskarl
-#watershape 12569
-#end
-
-#newmonster 12570 -- Warrior water shape
-#copystats 1546
-#copyspr 1546
-#landshape 1546
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 1546 -- Warrior
-#watershape 12570
-#end
-
-#newmonster 12571 -- Warrior water shape
-#copystats 1547
-#copyspr 1547
-#landshape 1547
-#clearweapons
-#weapon 12
-#weapon 1893
-#end
-
-#selectmonster 1547 -- Warrior
-#watershape 12571
-#end
-
-#newmonster 12572 -- Feathered Warrior water shape
-#copystats 1548
-#copyspr 1548
-#landshape 1548
-#clearweapons
-#weapon 12
-#weapon 1893
-#end
-
-#selectmonster 1548 -- Feathered Warrior
-#watershape 12572
-#end
-
-#newmonster 12573 -- Bear Tribe Warrior water shape
-#copystats 1592
-#copyspr 1592
-#landshape 1592
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 1592 -- Bear Tribe Warrior
-#watershape 12573
-#end
-
-#newmonster 12574 -- Deer Tribe Warrior water shape
-#copystats 1594
-#copyspr 1594
-#landshape 1594
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 1594 -- Deer Tribe Warrior
-#watershape 12574
-#end
-
-#newmonster 12575 -- Lion Tribe Warrior water shape
-#copystats 1600
-#copyspr 1600
-#landshape 1600
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 1600 -- Lion Tribe Warrior
-#watershape 12575
-#end
-
-#newmonster 12576 -- Human Huskarl water shape
-#copystats 1603
-#copyspr 1603
-#landshape 1603
-#clearweapons
-#weapon 17
-#weapon 1893
-#end
-
-#selectmonster 1603 -- Human Huskarl
-#watershape 12576
-#end
-
-#newmonster 12577 -- Human Huskarl water shape
-#copystats 1604
-#copyspr 1604
-#landshape 1604
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 1604 -- Human Huskarl
-#watershape 12577
-#end
-
-#newmonster 12578 -- Longdead Principe water shape
-#copystats 1658
-#copyspr 1658
-#landshape 1658
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 1658 -- Longdead Principe
-#watershape 12578
-#end
-
-#newmonster 12579 -- Asara water shape
-#copystats 1745
-#copyspr 1745
-#landshape 1745
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 1745 -- Asara
-#watershape 12579
-#end
-
-#newmonster 12580 -- Fir Bolg Champion water shape
-#copystats 1750
-#copyspr 1750
-#landshape 1750
-#clearweapons
-#weapon 645
-#weapon 1893
-#end
-
-#selectmonster 1750 -- Fir Bolg Champion
-#watershape 12580
-#end
-
-#newmonster 12581 -- Sidhe Warrior water shape
-#copystats 1751
-#copyspr 1751
-#landshape 1751
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 1751 -- Sidhe Warrior
-#watershape 12581
-#end
-
-#newmonster 12582 -- Sidhe Champion water shape
-#copystats 1752
-#copyspr 1752
-#landshape 1752
-#clearweapons
-#weapon 474
-#weapon 1893
-#end
-
-#selectmonster 1752 -- Sidhe Champion
-#watershape 12582
-#end
-
-#newmonster 12583 -- Tuatha Warrior water shape
-#copystats 1753
-#copyspr 1753
-#landshape 1753
-#clearweapons
-#weapon 473
-#weapon 1893
-#end
-
-#selectmonster 1753 -- Tuatha Warrior
-#watershape 12583
-#end
-
-#newmonster 12584 -- Ri water shape
-#copystats 1754
-#copyspr 1754
-#landshape 1754
-#clearweapons
-#weapon 475
-#weapon 1893
-#end
-
-#selectmonster 1754 -- Ri
-#watershape 12584
-#end
-
-#newmonster 12585 -- Fir Bolg Scout water shape
-#copystats 1755
-#copyspr 1755
-#landshape 1755
-#clearweapons
-#weapon 645
-#weapon 1893
-#end
-
-#selectmonster 1755 -- Fir Bolg Scout
-#watershape 12585
-#end
-
-#newmonster 12586 -- Fir Bolg Warrior water shape
-#copystats 1757
-#copyspr 1757
-#landshape 1757
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 1757 -- Fir Bolg Warrior
-#watershape 12586
-#end
-
-#newmonster 12587 -- Sidhe Lord water shape
-#copystats 1759
-#copyspr 1759
-#landshape 1759
-#clearweapons
-#weapon 473
-#weapon 1893
-#end
-
-#selectmonster 1759 -- Sidhe Lord
-#watershape 12587
-#end
-
-#newmonster 12588 -- Fir Bolg Clan Warrior water shape
-#copystats 1787
-#copyspr 1787
-#landshape 1787
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 1787 -- Fir Bolg Clan Warrior
-#watershape 12588
-#end
-
-#newmonster 12589 -- Fir Bolg Champion water shape
-#copystats 1788
-#copyspr 1788
-#landshape 1788
-#clearweapons
-#weapon 645
-#weapon 1893
-#end
-
-#selectmonster 1788 -- Fir Bolg Champion
-#watershape 12589
-#end
-
-#newmonster 12590 -- Nemedian Warrior water shape
-#copystats 1790
-#copyspr 1790
-#landshape 1790
-#clearweapons
-#weapon 473
-#weapon 1893
-#end
-
-#selectmonster 1790 -- Nemedian Warrior
-#watershape 12590
-#end
-
-#newmonster 12591 -- Nemedian Champion water shape
-#copystats 1791
-#copyspr 1791
-#landshape 1791
-#clearweapons
-#weapon 474
-#weapon 1893
-#end
-
-#selectmonster 1791 -- Nemedian Champion
-#watershape 12591
-#end
-
-#newmonster 12592 -- Fomorian Javelinist water shape
-#copystats 1797
-#copyspr 1797
-#landshape 1797
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 1797 -- Fomorian Javelinist
-#watershape 12592
-#end
-
-#newmonster 12593 -- Fomorian Champion water shape
-#copystats 1800
-#copyspr 1800
-#landshape 1800
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 1800 -- Fomorian Champion
-#watershape 12593
-#end
-
-#newmonster 12594 -- Fomorian Giant water shape
-#copystats 1801
-#copyspr 1801
-#landshape 1801
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 1801 -- Fomorian Giant
-#watershape 12594
-#end
-
-#newmonster 12595 -- Fomorian King water shape
-#copystats 1802
-#copyspr 1802
-#landshape 1802
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 1802 -- Fomorian King
-#watershape 12595
-#end
-
-#newmonster 12596 -- Fir Bolg Scout water shape
-#copystats 1811
-#copyspr 1811
-#landshape 1811
-#clearweapons
-#weapon 645
-#weapon 1893
-#end
-
-#selectmonster 1811 -- Fir Bolg Scout
-#watershape 12596
-#end
-
-#newmonster 12597 -- Fir Bolg Warrior water shape
-#copystats 1813
-#copyspr 1813
-#landshape 1813
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 1813 -- Fir Bolg Warrior
-#watershape 12597
-#end
-
-#newmonster 12598 -- Fir Bolg Champion water shape
-#copystats 1815
-#copyspr 1815
-#landshape 1815
-#clearweapons
-#weapon 645
-#weapon 1893
-#end
-
-#selectmonster 1815 -- Fir Bolg Champion
-#watershape 12598
-#end
-
-#newmonster 12599 -- Fomorian Scout water shape
-#copystats 1816
-#copyspr 1816
-#landshape 1816
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 1816 -- Fomorian Scout
-#watershape 12599
-#end
-
-#newmonster 12600 -- Unmarked Champion water shape
-#copystats 1818
-#copyspr 1818
-#landshape 1818
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 1818 -- Unmarked Champion
-#watershape 12600
-#end
-
-#newmonster 12601 -- Milite water shape
-#copystats 1862
-#copyspr 1862
-#landshape 1862
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 1862 -- Milite
-#watershape 12601
-#end
-
-#newmonster 12602 -- Limitane water shape
-#copystats 1863
-#copyspr 1863
-#landshape 1863
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 1863 -- Limitane
-#watershape 12602
-#end
-
-#newmonster 12603 -- Limitane Solaris water shape
-#copystats 1865
-#copyspr 1865
-#landshape 1865
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 1865 -- Limitane Solaris
-#watershape 12603
-#end
-
-#newmonster 12604 -- Comitatense water shape
-#copystats 1867
-#copyspr 1867
-#landshape 1867
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 1867 -- Comitatense
-#watershape 12604
-#end
-
-#newmonster 12605 -- Voi Spearman water shape
-#copystats 1929
-#copyspr 1929
-#landshape 1929
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 1929 -- Voi Spearman
-#watershape 12605
-#end
-
-#newmonster 12606 -- Gadite Swordsman water shape
-#copystats 1991
-#copyspr 1991
-#landshape 1991
-#clearweapons
-#weapon 645
-#weapon 1893
-#end
-
-#selectmonster 1991 -- Gadite Swordsman
-#watershape 12606
-#end
-
-#newmonster 12607 -- Naphtali Spearman water shape
-#copystats 1993
-#copyspr 1993
-#landshape 1993
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 1993 -- Naphtali Spearman
-#watershape 12607
-#end
-
-#newmonster 12608 -- Gittite Soldier water shape
-#copystats 1999
-#copyspr 1999
-#landshape 1999
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 1999 -- Gittite Soldier
-#watershape 12608
-#end
-
-#newmonster 12609 -- Gittite Commander water shape
-#copystats 2002
-#copyspr 2002
-#landshape 2002
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 2002 -- Gittite Commander
-#watershape 12609
-#end
-
-#newmonster 12610 -- Edomite water shape
-#copystats 2005
-#copyspr 2005
-#landshape 2005
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 2005 -- Edomite
-#watershape 12610
-#end
-
-#newmonster 12611 -- Edomite Scout water shape
-#copystats 2010
-#copyspr 2010
-#landshape 2010
-#clearweapons
-#weapon 6
-#weapon 1893
-#end
-
-#selectmonster 2010 -- Edomite Scout
-#watershape 12611
-#end
-
-#newmonster 12612 -- Avvite Spearman water shape
-#copystats 2015
-#copyspr 2015
-#landshape 2015
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 2015 -- Avvite Spearman
-#watershape 12612
-#end
-
-#newmonster 12613 -- Avvite Light Infantry water shape
-#copystats 2021
-#copyspr 2021
-#landshape 2021
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 2021 -- Avvite Light Infantry
-#watershape 12613
-#end
-
-#newmonster 12614 -- Avvite Scout water shape
-#copystats 2024
-#copyspr 2024
-#landshape 2024
-#clearweapons
-#weapon 6
-#weapon 1893
-#end
-
-#selectmonster 2024 -- Avvite Scout
-#watershape 12614
-#end
-
-#newmonster 12615 -- Avvite Charioteer water shape
-#copystats 2035
-#copyspr 2035
-#landshape 2035
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 2035 -- Avvite Charioteer
-#watershape 12615
-#end
-
-#newmonster 12616 -- Herse water shape
-#copystats 2150
-#copyspr 2150
-#landshape 2150
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 2150 -- Herse
-#watershape 12616
-#end
-
-#newmonster 12617 -- Limitane Standard water shape
-#copystats 2152
-#copyspr 2152
-#landshape 2152
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 2152 -- Limitane Standard
-#watershape 12617
-#end
-
-#newmonster 12618 -- Centauride Warrior water shape
-#copystats 2157
-#copyspr 2157
-#landshape 2157
-#clearweapons
-#weapon 643
-#weapon 55
-#weapon 1893
-#end
-
-#selectmonster 2157 -- Centauride Warrior
-#watershape 12618
-#end
-
-#newmonster 12619 -- Enkidu Hunter water shape
-#copystats 2168
-#copyspr 2168
-#landshape 2168
-#clearweapons
-#weapon 373
-#weapon 1893
-#end
-
-#selectmonster 2168 -- Enkidu Hunter
-#watershape 12619
-#end
-
-#newmonster 12620 -- Enkidu Hunter Chief water shape
-#copystats 2169
-#copyspr 2169
-#landshape 2169
-#clearweapons
-#weapon 373
-#weapon 1893
-#end
-
-#selectmonster 2169 -- Enkidu Hunter Chief
-#watershape 12620
-#end
-
-#newmonster 12621 -- Berytian Spearman water shape
-#copystats 2256
-#copyspr 2256
-#landshape 2256
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 2256 -- Berytian Spearman
-#watershape 12621
-#end
-
-#newmonster 12622 -- Hyena Clan Warrior water shape
-#copystats 2303
-#copyspr 2303
-#landshape 2303
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 2303 -- Hyena Clan Warrior
-#watershape 12622
-#end
-
-#newmonster 12623 -- Vanabog water shape
-#copystats 2342
-#copyspr 2342
-#landshape 2342
-#clearweapons
-#weapon 357
-#weapon 1893
-#end
-
-#selectmonster 2342 -- Vanabog
-#watershape 12623
-#end
-
-#newmonster 12624 -- Vanarusian Huskarl water shape
-#copystats 2344
-#copyspr 2344
-#landshape 2344
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 2344 -- Vanarusian Huskarl
-#watershape 12624
-#end
-
-#newmonster 12625 -- Vanarusian Huskarl water shape
-#copystats 2345
-#copyspr 2345
-#landshape 2345
-#clearweapons
-#weapon 17
-#weapon 1893
-#end
-
-#selectmonster 2345 -- Vanarusian Huskarl
-#watershape 12625
-#end
-
-#newmonster 12626 -- Vanarusian Hirdman water shape
-#copystats 2346
-#copyspr 2346
-#landshape 2346
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 2346 -- Vanarusian Hirdman
-#watershape 12626
-#end
-
-#newmonster 12627 -- Vanarusian Hirdman water shape
-#copystats 2347
-#copyspr 2347
-#landshape 2347
-#clearweapons
-#weapon 17
-#weapon 1893
-#end
-
-#selectmonster 2347 -- Vanarusian Hirdman
-#watershape 12627
-#end
-
-#newmonster 12628 -- Vanarusian Hirdman water shape
-#copystats 2348
-#copyspr 2348
-#landshape 2348
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 2348 -- Vanarusian Hirdman
-#watershape 12628
-#end
-
-#newmonster 12629 -- Vanarusian Herse water shape
-#copystats 2354
-#copyspr 2354
-#landshape 2354
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 2354 -- Vanarusian Herse
-#watershape 12629
-#end
-
-#newmonster 12630 -- Standard water shape
-#copystats 2475
-#copyspr 2475
-#landshape 2475
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 2475 -- Standard
-#watershape 12630
-#end
-
-#newmonster 12631 -- Huskarl water shape
-#copystats 2531
-#copyspr 2531
-#landshape 2531
-#clearweapons
-#weapon 17
-#weapon 1893
-#end
-
-#selectmonster 2531 -- Huskarl
-#watershape 12631
-#end
-
-#newmonster 12632 -- Herse water shape
-#copystats 2532
-#copyspr 2532
-#landshape 2532
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 2532 -- Herse
-#watershape 12632
-#end
-
-#newmonster 12633 -- Turan Infantry water shape
-#copystats 2580
-#copyspr 2580
-#landshape 2580
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 2580 -- Turan Infantry
-#watershape 12633
-#end
-
-#newmonster 12634 -- Human Warrior water shape
-#copystats 2646
-#copyspr 2646
-#landshape 2646
-#clearweapons
-#weapon 12
-#weapon 1893
-#end
-
-#selectmonster 2646 -- Human Warrior
-#watershape 12634
-#end
-
-#newmonster 12635 -- Kuraka water shape
-#copystats 2647
-#copyspr 2647
-#landshape 2647
-#clearweapons
-#weapon 12
-#weapon 1893
-#end
-
-#selectmonster 2647 -- Kuraka
-#watershape 12635
-#end
-
-#newmonster 12636 -- Bone Tribe Beast Hunter water shape
-#copystats 2818
-#copyspr 2818
-#landshape 2818
-#clearweapons
-#weapon 639
-#weapon 1893
-#end
-
-#selectmonster 2818 -- Bone Tribe Beast Hunter
-#watershape 12636
-#end
-
-#newmonster 12637 -- Therodian Peltast water shape
-#copystats 2828
-#copyspr 2828
-#landshape 2828
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 2828 -- Therodian Peltast
-#watershape 12637
-#end
-
-#newmonster 12638 -- Kernou Warrior water shape
-#copystats 2897
-#copyspr 2897
-#landshape 2897
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 2897 -- Kernou Warrior
-#watershape 12638
-#end
-
-#newmonster 12639 -- Centauride Cataphract water shape
-#copystats 2956
-#copyspr 2956
-#landshape 2956
-#clearweapons
-#weapon 651
-#weapon 55
-#weapon 1893
-#end
-
-#selectmonster 2956 -- Centauride Cataphract
-#watershape 12639
-#end
-
-#newmonster 12640 -- Chud Hunter water shape
-#copystats 2992
-#copyspr 2992
-#landshape 2992
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 2992 -- Chud Hunter
-#watershape 12640
-#end
-
-#newmonster 12641 -- Chud Chieftain water shape
-#copystats 3002
-#copyspr 3002
-#landshape 3002
-#clearweapons
-#weapon 45886
-#weapon 1893
-#end
-
-#selectmonster 3002 -- Chud Chieftain
-#watershape 12641
-#end
-
-#newmonster 12642 -- Humanbred water shape
-#copystats 3006
-#copyspr 3006
-#landshape 3006
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 3006 -- Humanbred
-#watershape 12642
-#end
-
-#newmonster 12643 -- Machimos water shape
-#copystats 3024
-#copyspr 3024
-#landshape 3024
-#clearweapons
-#weapon 6
-#weapon 1893
-#end
-
-#selectmonster 3024 -- Machimos
-#watershape 12643
-#end
-
-#newmonster 12644 -- Amanojaku water shape
-#copystats 3084
-#copyspr 3084
-#landshape 3084
-#clearweapons
-#weapon 379
-#weapon 383
-#weapon 1893
-#end
-
-#selectmonster 3084 -- Amanojaku
-#watershape 12644
-#end
-
-#newmonster 12645 -- Perioeci Peltast water shape
-#copystats 3100
-#copyspr 3100
-#landshape 3100
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 3100 -- Perioeci Peltast
-#watershape 12645
-#end
-
-#newmonster 12646 -- Helote Peltast water shape
-#copystats 3101
-#copyspr 3101
-#landshape 3101
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 3101 -- Helote Peltast
-#watershape 12646
-#end
-
-#newmonster 12647 -- Neodamode Peltast water shape
-#copystats 3102
-#copyspr 3102
-#landshape 3102
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 3102 -- Neodamode Peltast
-#watershape 12647
-#end
-
-#newmonster 12648 -- Helote Warrior water shape
-#copystats 3133
-#copyspr 3133
-#landshape 3133
-#clearweapons
-#weapon 17
-#weapon 1893
-#end
-
-#selectmonster 3133 -- Helote Warrior
-#watershape 12648
-#end
-
-#newmonster 12649 -- Phaeacian Light Infantry water shape
-#copystats 3145
-#copyspr 3145
-#landshape 3145
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 3145 -- Phaeacian Light Infantry
-#watershape 12649
-#end
-
-#newmonster 12650 -- Colossi Light Infantry water shape
-#copystats 3165
-#copyspr 3165
-#landshape 3165
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 3165 -- Colossi Light Infantry
-#watershape 12650
-#end
-
-#newmonster 12651 -- Cyclope Commander water shape
-#copystats 3223
-#copyspr 3223
-#landshape 3223
-#clearweapons
-#weapon 734
-#weapon 1893
-#end
-
-#selectmonster 3223 -- Cyclope Commander
-#watershape 12651
-#end
-
-#newmonster 12652 -- Cyclope Soldier water shape
-#copystats 3224
-#copyspr 3224
-#landshape 3224
-#clearweapons
-#weapon 733
-#weapon 1893
-#end
-
-#selectmonster 3224 -- Cyclope Soldier
-#watershape 12652
-#end
-
-#newmonster 12653 -- Cynocephalian Warrior water shape
-#copystats 3277
-#copyspr 3277
-#landshape 3277
-#clearweapons
-#weapon 373
-#weapon 20
-#weapon 1893
-#end
-
-#selectmonster 3277 -- Cynocephalian Warrior
-#watershape 12653
-#end
-
-#newmonster 12654 -- Cannibal Warrior water shape
-#copystats 3293
-#copyspr 3293
-#landshape 3293
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 3293 -- Cannibal Warrior
-#watershape 12654
-#end
-
-#newmonster 12655 -- Agrimandri Warrior water shape
-#copystats 3294
-#copyspr 3294
-#landshape 3294
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 3294 -- Agrimandri Warrior
-#watershape 12655
-#end
-
-#newmonster 12656 -- Fommepori Warrior water shape
-#copystats 3295
-#copyspr 3295
-#landshape 3295
-#clearweapons
-#weapon 6
-#weapon 253
-#weapon 1893
-#end
-
-#selectmonster 3295 -- Fommepori Warrior
-#watershape 12656
-#end
-
-#newmonster 12657 -- Cynocephalian Flesh-Eater water shape
-#copystats 3299
-#copyspr 3299
-#landshape 3299
-#clearweapons
-#weapon 45677
-#weapon 1893
-#end
-
-#selectmonster 3299 -- Cynocephalian Flesh-Eater
-#watershape 12657
-#end
-
-#newmonster 12658 -- Cannibal Warlord water shape
-#copystats 3313
-#copyspr 3313
-#landshape 3313
-#clearweapons
-#weapon 18
-#weapon 1893
-#end
-
-#selectmonster 3313 -- Cannibal Warlord
-#watershape 12658
-#end
-
-#newmonster 12659 -- Adite Light Infantry water shape
-#copystats 3355
-#copyspr 3355
-#landshape 3355
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 3355 -- Adite Light Infantry
-#watershape 12659
-#end
-
-#newmonster 12660 -- Nabaean Light Infantry water shape
-#copystats 3356
-#copyspr 3356
-#landshape 3356
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 3356 -- Nabaean Light Infantry
-#watershape 12660
-#end
-
-#newmonster 12661 -- Great Huntress water shape
-#copystats 3379
-#copyspr 3379
-#landshape 3379
-#clearweapons
-#weapon 263
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 3379 -- Great Huntress
-#watershape 12661
-#end
-
-#newmonster 12662 -- Ubaran Soldier water shape
-#copystats 3455
-#copyspr 3455
-#landshape 3455
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 3455 -- Ubaran Soldier
-#watershape 12662
-#end
-
-#newmonster 12663 -- Mairu Champion water shape
-#copystats 3599
-#copyspr 3599
-#landshape 3599
-#clearweapons
-#weapon 14
-#weapon 1893
-#end
-
-#selectmonster 3599 -- Mairu Champion
-#watershape 12663
-#end
-
-#newmonster 12664 -- Nidherse water shape
-#copystats 3671
-#copyspr 3671
-#landshape 3671
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 3671 -- Nidherse
-#watershape 12664
-#end
-
-#newmonster 12665 -- Wolf Clan Reaver water shape
-#copystats 3674
-#copyspr 3674
-#landshape 3674
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 3674 -- Wolf Clan Reaver
-#watershape 12665
-#end
-
-#newmonster 12666 -- Jotun Scout water shape
-#copystats 3953
-#copyspr 3953
-#landshape 3953
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 3953 -- Jotun Scout
-#watershape 12666
-#end
-
-#newmonster 12667 -- Jotun Warrior water shape
-#copystats 3964
-#copyspr 3964
-#landshape 3964
-#clearweapons
-#weapon 17
-#weapon 1893
-#end
-
-#selectmonster 3964 -- Jotun Warrior
-#watershape 12667
-#end
-
-#newmonster 12668 -- Godihuskarl water shape
-#copystats 3967
-#copyspr 3967
-#landshape 3967
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 3967 -- Godihuskarl
-#watershape 12668
-#end
-
-#newmonster 12669 -- Muspel Huskarl water shape
-#copystats 3969
-#copyspr 3969
-#landshape 3969
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 3969 -- Muspel Huskarl
-#watershape 12669
-#end
-
-#newmonster 12670 -- Longdead water shape
-#copystats 6559
-#copyspr 6559
-#landshape 6559
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 6559 -- Longdead
-#watershape 12670
-#end
-
-#newmonster 12671 -- Turquoise Lancer water shape
-#copystats 6600
-#copyspr 6600
-#landshape 6600
-#clearweapons
-#weapon 357
-#weapon 1893
-#end
-
-#selectmonster 6600 -- Turquoise Lancer
-#watershape 12671
-#end
-
-#newmonster 12672 -- Lance Outrider water shape
-#copystats 6627
-#copyspr 6627
-#landshape 6627
-#clearweapons
-#weapon 357
-#weapon 1893
-#end
-
-#selectmonster 6627 -- Lance Outrider
-#watershape 12672
-#end
-
-#newmonster 12673 -- Maohi Spear Warrior water shape
-#copystats 6688
-#copyspr 6688
-#landshape 6688
-#clearweapons
-#weapon 373
-#weapon 671
-#weapon 1893
-#end
-
-#selectmonster 6688 -- Maohi Spear Warrior
-#watershape 12673
-#end
-
-#newmonster 12674 -- Enslaved Javelin W... water shape
-#copystats 6759
-#copyspr 6759
-#landshape 6759
-#clearweapons
-#weapon 12
-#weapon 1893
-#end
-
-#selectmonster 6759 -- Enslaved Javelin W...
-#watershape 12674
-#end
-
-#newmonster 12675 -- Tribal Spearman water shape
-#copystats 6876
-#copyspr 6876
-#landshape 6876
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 6876 -- Tribal Spearman
-#watershape 12675
-#end
-
-#newmonster 12676 -- Tribal Swordsman water shape
-#copystats 6878
-#copyspr 6878
-#landshape 6878
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 6878 -- Tribal Swordsman
-#watershape 12676
-#end
-
-#newmonster 12677 -- Swordsman water shape
-#copystats 6883
-#copyspr 6883
-#landshape 6883
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 6883 -- Swordsman
-#watershape 12677
-#end
-
-#newmonster 12678 -- Mi Gō Ngön Pa water shape
-#copystats 6886
-#copyspr 6886
-#landshape 6886
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 6886 -- Mi Gō Ngön Pa
-#watershape 12678
-#end
-
-#newmonster 12679 -- Mi Gò Ngôn Pa water shape
-#copystats 6886
-#copyspr 6886
-#landshape 6886
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 6886 -- Mi Gò Ngôn Pa
-#watershape 12679
-#end
-
-#newmonster 12680 -- Mi Dred water shape
-#copystats 6887
-#copyspr 6887
-#landshape 6887
-#clearweapons
-#weapon 1558
-#weapon 1893
-#end
-
-#selectmonster 6887 -- Mi Dred
-#watershape 12680
-#end
-
-#newmonster 12681 -- Mi Go Guide water shape
-#copystats 6889
-#copyspr 6889
-#landshape 6889
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 6889 -- Mi Go Guide
-#watershape 12681
-#end
-
-#newmonster 12682 -- Mi Gō Guide water shape
-#copystats 6889
-#copyspr 6889
-#landshape 6889
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 6889 -- Mi Gō Guide
-#watershape 12682
-#end
-
-#newmonster 12683 -- Bhödpa Dé Pa water shape
-#copystats 6890
-#copyspr 6890
-#landshape 6890
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 6890 -- Bhödpa Dé Pa
-#watershape 12683
-#end
-
-#newmonster 12684 -- Bhödpa Spearman water shape
-#copystats 6908
-#copyspr 6908
-#landshape 6908
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 6908 -- Bhödpa Spearman
-#watershape 12684
-#end
-
-#newmonster 12685 -- Bhödpa Warrior water shape
-#copystats 6910
-#copyspr 6910
-#landshape 6910
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 6910 -- Bhödpa Warrior
-#watershape 12685
-#end
-
-#newmonster 12686 -- Mi Gō Rngon Pa water shape
-#copystats 6922
-#copyspr 6922
-#landshape 6922
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 6922 -- Mi Gō Rngon Pa
-#watershape 12686
-#end
-
-#newmonster 12687 -- Mi Dred water shape
-#copystats 6923
-#copyspr 6923
-#landshape 6923
-#clearweapons
-#weapon 1558
-#weapon 1893
-#end
-
-#selectmonster 6923 -- Mi Dred
-#watershape 12687
-#end
-
-#newmonster 12688 -- Bhödpa Scout water shape
-#copystats 6924
-#copyspr 6924
-#landshape 6924
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 6924 -- Bhödpa Scout
-#watershape 12688
-#end
-
-#newmonster 12689 -- Bhödpa Dé Pa water shape
-#copystats 6925
-#copyspr 6925
-#landshape 6925
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 6925 -- Bhödpa Dé Pa
-#watershape 12689
-#end
-
-#newmonster 12690 -- Mi Gō Guide water shape
-#copystats 6926
-#copyspr 6926
-#landshape 6926
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 6926 -- Mi Gō Guide
-#watershape 12690
-#end
-
-#newmonster 12691 -- Iyokuo Skirmisher water shape
-#copystats 6960
-#copyspr 6960
-#landshape 6960
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 6960 -- Iyokuo Skirmisher
-#watershape 12691
-#end
-
-#newmonster 12692 -- Iyokuo water shape
-#copystats 6961
-#copyspr 6961
-#landshape 6961
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 6961 -- Iyokuo
-#watershape 12692
-#end
-
-#newmonster 12693 -- Iyokuo Veteran water shape
-#copystats 6963
-#copyspr 6963
-#landshape 6963
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 6963 -- Iyokuo Veteran
-#watershape 12693
-#end
-
-#newmonster 12694 -- Hunter water shape
-#copystats 6998
-#copyspr 6998
-#landshape 6998
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 6998 -- Hunter
-#watershape 12694
-#end
-
-#newmonster 12695 -- Warrior water shape
-#copystats 7001
-#copyspr 7001
-#landshape 7001
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 7001 -- Warrior
-#watershape 12695
-#end
-
-#newmonster 12696 -- Warrior water shape
-#copystats 7002
-#copyspr 7002
-#landshape 7002
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 7002 -- Warrior
-#watershape 12696
-#end
-
-#newmonster 12697 -- Mino water shape
-#copystats 7008
-#copyspr 7008
-#landshape 7008
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 7008 -- Mino
-#watershape 12697
-#end
-
-#newmonster 12698 -- Ali'i water shape
-#copystats 7040
-#copyspr 7040
-#landshape 7040
-#clearweapons
-#weapon 1546
-#weapon 252
-#weapon 1893
-#end
-
-#selectmonster 7040 -- Ali'i
-#watershape 12698
-#end
-
-#newmonster 12699 -- Naphtali Spearman water shape
-#copystats 7101
-#copyspr 7101
-#landshape 7101
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 7101 -- Naphtali Spearman
-#watershape 12699
-#end
-
-#newmonster 12700 -- Heavy Infantry water shape
-#copystats 7127
-#copyspr 7127
-#landshape 7127
-#clearweapons
-#weapon 746
-#weapon 1893
-#end
-
-#selectmonster 7127 -- Heavy Infantry
-#watershape 12700
-#end
-
-#newmonster 12701 -- Mamluk Spearman water shape
-#copystats 7159
-#copyspr 7159
-#landshape 7159
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 7159 -- Mamluk Spearman
-#watershape 12701
-#end
-
-#newmonster 12702 -- Mubarizun water shape
-#copystats 7161
-#copyspr 7161
-#landshape 7161
-#clearweapons
-#weapon 746
-#weapon 1893
-#end
-
-#selectmonster 7161 -- Mubarizun
-#watershape 12702
-#end
-
-#newmonster 12703 -- Mamluk Commander water shape
-#copystats 7180
-#copyspr 7180
-#landshape 7180
-#clearweapons
-#weapon 746
-#weapon 1893
-#end
-
-#selectmonster 7180 -- Mamluk Commander
-#watershape 12703
-#end
-
-#newmonster 12704 -- Irami Spearman water shape
-#copystats 7191
-#copyspr 7191
-#landshape 7191
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 7191 -- Irami Spearman
-#watershape 12704
-#end
-
-#newmonster 12705 -- Mujahid water shape
-#copystats 7193
-#copyspr 7193
-#landshape 7193
-#clearweapons
-#weapon 746
-#weapon 1893
-#end
-
-#selectmonster 7193 -- Mujahid
-#watershape 12705
-#end
-
-#newmonster 12706 -- Irami Commander water shape
-#copystats 7205
-#copyspr 7205
-#landshape 7205
-#clearweapons
-#weapon 746
-#weapon 1893
-#end
-
-#selectmonster 7205 -- Irami Commander
-#watershape 12706
-#end
-
-#newmonster 12707 -- Dishirding water shape
-#copystats 7341
-#copyspr 7341
-#landshape 7341
-#clearweapons
-#weapon 357
-#weapon 1893
-#end
-
-#selectmonster 7341 -- Dishirding
-#watershape 12707
-#end
-
-#newmonster 12708 -- Tuatha Wraithlord water shape
-#copystats 7403
-#copyspr 7403
-#landshape 7403
-#clearweapons
-#weapon 475
-#weapon 1893
-#end
-
-#selectmonster 7403 -- Tuatha Wraithlord
-#watershape 12708
-#end
-
-#newmonster 12709 -- Chachapoya Kuraka water shape
-#copystats 7441
-#copyspr 7441
-#landshape 7441
-#clearweapons
-#weapon 12
-#weapon 1893
-#end
-
-#selectmonster 7441 -- Chachapoya Kuraka
-#watershape 12709
-#end
-
-#newmonster 12710 -- Slave Soldier water shape
-#copystats 7462
-#copyspr 7462
-#landshape 7462
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 7462 -- Slave Soldier
-#watershape 12710
-#end
-
-#newmonster 12711 -- Aes Sidhe Lord water shape
-#copystats 7469
-#copyspr 7469
-#landshape 7469
-#clearweapons
-#weapon 475
-#weapon 1893
-#end
-
-#selectmonster 7469 -- Aes Sidhe Lord
-#watershape 12711
-#end
-
-#newmonster 12712 -- Aes Sidhe Rider water shape
-#copystats 7470
-#copyspr 7470
-#landshape 7470
-#clearweapons
-#weapon 651
-#weapon 1893
-#end
-
-#selectmonster 7470 -- Aes Sidhe Rider
-#watershape 12712
-#end
-
-#newmonster 12713 -- Chachapoya Warrior water shape
-#copystats 7649
-#copyspr 7649
-#landshape 7649
-#clearweapons
-#weapon 7649
-#weapon 1893
-#end
-
-#selectmonster 7649 -- Chachapoya Warrior
-#watershape 12713
-#end
-
-#newmonster 12714 -- Fianna water shape
-#copystats 7673
-#copyspr 7673
-#landshape 7673
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 7673 -- Fianna
-#watershape 12714
-#end
-
-#newmonster 12715 -- Varangian Guard water shape
-#copystats 7711
-#copyspr 7711
-#landshape 7711
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 7711 -- Varangian Guard
-#watershape 12715
-#end
-
-#newmonster 12716 -- Shark Guardian water shape
-#copystats 7790
-#copyspr 7790
-#landshape 7790
-#clearweapons
-#weapon 669
-#weapon 20
-#weapon 1893
-#end
-
-#selectmonster 7790 -- Shark Guardian
-#watershape 12716
-#end
-
-#newmonster 12717 -- Light Infantry water shape
-#copystats 7983
-#copyspr 7983
-#landshape 7983
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 7983 -- Light Infantry
-#watershape 12717
-#end
-
-#newmonster 12718 -- Commander water shape
-#copystats 7984
-#copyspr 7984
-#landshape 7984
-#clearweapons
-#weapon 746
-#weapon 1893
-#end
-
-#selectmonster 7984 -- Commander
-#watershape 12718
-#end
-
-#newmonster 12719 -- Finnaithae Javelineer water shape
-#copystats 8074
-#copyspr 8074
-#landshape 8074
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 8074 -- Finnaithae Javelineer
-#watershape 12719
-#end
-
-#newmonster 12720 -- Fenni Warrior water shape
-#copystats 8077
-#copyspr 8077
-#landshape 8077
-#clearweapons
-#weapon 17
-#weapon 1893
-#end
-
-#selectmonster 8077 -- Fenni Warrior
-#watershape 12720
-#end
-
-#newmonster 12721 -- Alaudae Horseman water shape
-#copystats 8122
-#copyspr 8122
-#landshape 8122
-#clearweapons
-#weapon 8
-#weapon 1893
-#end
-
-#selectmonster 8122 -- Alaudae Horseman
-#watershape 12721
-#end
-
-#newmonster 12722 -- Huntress water shape
-#copystats 8154
-#copyspr 8154
-#landshape 8154
-#clearweapons
-#weapon 611
-#weapon 1893
-#end
-
-#selectmonster 8154 -- Huntress
-#watershape 12722
-#end
-
-#newmonster 12723 -- Kharahasara water shape
-#copystats 8161
-#copyspr 8161
-#landshape 8161
-#clearweapons
-#weapon 75
-#weapon 1893
-#end
-
-#selectmonster 8161 -- Kharahasara
-#watershape 12723
-#end
-
-#newmonster 12724 -- Friend of Farbaute water shape
-#copystats 8201
-#copyspr 8201
-#landshape 8201
-#clearweapons
-#weapon 234
-#weapon 1893
-#end
-
-#selectmonster 8201 -- Friend of Farbaute
-#watershape 12724
-#end
-
-#newmonster 12725 -- Sobek Palatine water shape
-#copystats 8561
-#copyspr 8561
-#landshape 8561
-#clearweapons
-#weapon 45889
-#weapon 1893
-#end
-
-#selectmonster 8561 -- Sobek Palatine
-#watershape 12725
-#end
-
-#newmonster 12726 -- C'tissian Light Infantry water shape
-#copystats 8565
-#copyspr 8565
-#landshape 8565
-#clearweapons
-#weapon 643
-#weapon 1893
-#end
-
-#selectmonster 8565 -- C'tissian Light Infantry
-#watershape 12726
-#end
-
-#newmonster 12727 -- Mairu Champion water shape
-#copystats 8821
-#copyspr 8821
-#landshape 8821
-#clearweapons
-#weapon 14
-#weapon 1893
-#end
-
-#selectmonster 8821 -- Mairu Champion
-#watershape 12727
-#end
-
-#newmonster 12728 -- Sidhe Warrior water shape
-#copystats 8882
-#copyspr 8882
-#landshape 8882
-#clearweapons
-#weapon 645
-#weapon 1893
-#end
-
-#selectmonster 8882 -- Sidhe Warrior
-#watershape 12728
-#end
-
-#newmonster 12729 -- Sidhe Rider water shape
-#copystats 8884
-#copyspr 8884
-#landshape 8884
-#clearweapons
-#weapon 651
-#weapon 1893
-#end
-
-#selectmonster 8884 -- Sidhe Rider
-#watershape 12729
-#end
-
-#newmonster 12730 -- C'tissian Light Infantry water shape
-#copystats 9061
-#copyspr 9061
-#landshape 9061
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 9061 -- C'tissian Light Infantry
-#watershape 12730
-#end
-
-#newmonster 12731 -- Hausa Militia water shape
-#copystats 9601
-#copyspr 9601
-#landshape 9601
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 9601 -- Hausa Militia
-#watershape 12731
-#end
-
-#newmonster 12732 -- Hausa Infantry water shape
-#copystats 9604
-#copyspr 9604
-#landshape 9604
-#clearweapons
-#weapon 1
-#weapon 1893
-#end
-
-#selectmonster 9604 -- Hausa Infantry
-#watershape 12732
-#end
-
-#newmonster 12733 -- Hausa Cavalry water shape
-#copystats 9606
-#copyspr 9606
-#landshape 9606
-#clearweapons
-#weapon 1836
-#weapon 1837
-#weapon 1893
-#end
-
-#selectmonster 9606 -- Hausa Cavalry
-#watershape 12733
-#end
-
-#newmonster 12734 -- Yan Lifida water shape
-#copystats 9608
-#copyspr 9608
-#landshape 9608
-#clearweapons
-#weapon 357
-#weapon 1893
-#end
-
-#selectmonster 9608 -- Yan Lifida
-#watershape 12734
-#end
-
-
-
-#selectmonster 3018 -- Thyreophorite (Water)
-#clearweapons
-#weapon 643
-#weapon 1893 -- UW Javelin
-#end
-
-#selectmonster 2808 -- Pelagian Shore Fighter (Water)
-#clearweapons
-#weapon 1
-#weapon 1893 -- UW Javelin
-#end
-
-#selectmonster 3028 -- Erytheian Scout (Water)
-#clearweapons
-#weapon 643
-#weapon 1893 -- UW Javelin
-#end
-
-#selectmonster 2869 -- Apostate of the Closed Realm (Water)
-#clearweapons
-#weapon 6
-#weapon 1893 -- UW Javelin
-#end
-
-
-
-
--- ENDUNITS END OF UW JAVELINS
 
 -- FOLDUNITS START OF SHAPE CHANGE MONSTERS 13000~13999
 
@@ -111780,7 +109980,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #addname "Mukki"
 #addname "Muraco"
 #addname "Naalnish"
-#addname "Naalyehe ya sidahi"
+#addname "Naalyehe ya Sidahi"
 #addname "Nahcomence"
 #addname "Nahiossi"
 #addname "Nakai"
@@ -111886,7 +110086,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #addname "Tapco"
 #addname "Tashunka"
 #addname "Tasunke"
-#addname "Tatanka ptecila"
+#addname "Tatanka Ptecila"
 #addname "Tatonga"
 #addname "Tawa"
 #addname "Teetonka"
@@ -112574,6 +110774,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #rarity 5
 #gems 7 3
+#gems 4 1
 #homemon 6686
 #homecom 6695
 #homecom 6696
@@ -112586,7 +110787,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #rarity 5
 #gems 4 1
-#gems 6 2
+#gems 6 1
 #end
 
 
@@ -112716,7 +110917,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 4
 #level 0
 #rarity 5
-#gems 6 1
+--#gems 6 1
+#gems 3 1
 #gems 5 1
 #homemon 8085 -- Tusser
 #end
@@ -114202,13 +112404,23 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 2
 #homemon 1363 -- ancestor
 #homemon 3747 -- ice ele
-#homemon 8110 -- stallo
 #homemon 8111 -- padnak
 #homemon 8115 -- tjaet
+#homemon 9287 -- bjergtroll
+#homemon 9293 -- war bjergtroll
+--#homemon 9294 -- knight bjergtroll
+#homemon 8110 -- stallo
 #homecom 8112 -- vuorwro
-#homecom 8113 -- gold deer
-#homecom 8114 -- rotaimo
 #homecom 8116 -- vuori
+#homecom 8678 -- lindwurm
+#homecom 9284 -- troll king
+#homecom 9285 -- troll mother
+#homecom 9286 -- troll gramps
+#homecom 8114 -- rotaimo
+#homecom 8113 -- gold deer
+--#homecom 8084
+--#homecom 518
+--#homecom 9288 -- war bjergtroll
 #end
 
 #newsite 2255
@@ -114378,17 +112590,31 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 1
 #homemon 628 -- lion
 #homemon 7142 -- dust scorp
+#homemon 7173 -- flame sword
+#homemon 7174 -- flame bow
 #homemon 3367 -- hinn
 #homemon 3476 -- binn
 #homemon 6511 -- shiqq
+#homemon 3479 -- ghul
 #homemon 7172 -- nasnas
 #homemon 7120 -- jinn warrior
 #homemon 7171 -- brass guard
-#homemon 7176 -- bras golem
+#homemon 7176 -- brass golem
 #homemon 6510 -- dandan
+#end
+
+#newsite 2917
+#name "LA Iram Summons Continued"
+#level 0
+#rarity 5
+#path 0
+#look 1
 #homecom 6512 -- ghawwas
-#homecom 7119 -- jinn
 #homecom 7601 -- ghaddar
+#homecom 3481 -- ghulah
+#homecom 7119 -- jinn
+#homecom 3483 -- silat
+#homecom 3373 -- shaytan
 #homecom 3376 -- marid
 #end
 
@@ -115673,7 +113899,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #newsite 2353 -- LA Lemuria Freespawn
 #clear
-#name "LA Lemuria Freespawn & Troop Summons"
+#name "LA Lemuria Freespawn & Summons"
 #rarity 5
 #level 0
 #path 5
@@ -116012,6 +114238,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 2398 -- elephant
 #homemon 7511 -- biloko
 #homemon 9623 -- Ninki Nanka
+#homemon 3726 -- air ele s5
 
 #homemon 3168 -- Hound of Twilight
 #homemon 3127 -- Ker
@@ -116337,9 +114564,27 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 3009 -- buffalo
 #homemon 2398 -- elephant
 #homemon 7654 -- indus worm
+#homemon 9280 -- Cametheternis snail
 #homemon 7704 -- blemmyes
 #homemon 3381 -- cyclops
+#homemon 9288 -- thinis sword
+#homemon 9289 -- thinis mace
+#homemon 9290 -- thinis axe
+#homemon 9291 -- thinis archer
+#homemon 9292 -- thinis knight
+#homemon 9299 -- lobster knight
+#end
+
+#newsite 2617
+#clear
+#name "LA Piconye Summons Continued"
+#rarity 5
+#level 0
+#path 9
+#look 5
 #homecom 8606 -- cyclops chief
+#homecom 9297 -- trebuchet
+#homecom 9298 -- thiniseretae
 #homecom 2056 -- malakh
 #homecom 2058 -- arel
 #homecom 2057 -- hashmal
@@ -116354,7 +114599,11 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 9
 #look 2
-#homecom 
+#homecom 9300
+#homecom 9301
+#homecom 9303
+#homecom 9304
+#homecom 9302
 #end
 
 
@@ -116917,7 +115166,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 2072 -- mazzik
 #homemon 2074 -- seir
 #homemon 2073 -- shed
-#homemon 3724 -- air ele s7
+#homemon 3726 -- air ele s5f
 #homecom 2071 -- lilot
 #homecom 8889 -- Brazen Bull
 #homecom 2267 -- melq
@@ -117101,6 +115350,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 3265 -- Tanuki
 #homecom 3267 -- Bakeneko
 #homecom 3272 -- Mujina
+#homecom 3262 -- Jorogumo
 #homecom 7227 -- Celestial Carp
 #homecom 7827 -- Bakemono Kizoku
 #end
@@ -117111,7 +115361,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #path 7
 #look 5
-#homecom 3262 -- Jorogumo
 #homecom 7491 -- Bake-danuki
 #homecom 7585 -- Raijin
 #homecom 7586 -- Raiju
@@ -117164,10 +115413,10 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 3168 -- khalk
 #homemon 3210 -- lampad
 #homemon 7704 -- blemm
+#homemon 3726 -- air ele s5
 #homecom 2846 -- philosopher
 #homecom 2845 -- ephor
 #homecom 7394 -- spectral melia
-#homecom 3724 -- air ele s7
 #homecom 7818 -- telkhine
 #homecom 7821 -- colossus
 #homecom 7276 -- cetus
@@ -117682,6 +115931,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 1
 #homemon 6744 -- Winged Lion
 #homemon 6747 -- thopter
+#homecom 3087 -- Lar
 #homecom 6749 -- flying ship
 #homecom 6745 -- glass angel
 #homecom 6746 -- gilded angel
@@ -118079,8 +116329,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 3169 -- kurn a
 #homemon 3170 -- kuon k
 #homemon 3171 -- khalk
+#homemon 3726 -- air ele s5
 #homecom 3160 -- hesp
-#homecom 3724 -- air ele s7
 #homecom 7289 -- boread
 #homecom 7373 -- elein
 #homecom 7374 -- nephel
@@ -119017,7 +117267,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #newsite 2554
-#name "MA Asphodel Freespawn and Reanimation"
+#name "MA Asphodel Reanimation"
 #level 0
 #rarity 5
 #path 6
@@ -120000,10 +118250,33 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 9
 #look 3
-#homecom 
+--#homecom 4110 -- Visvaldes
 #end
 
 
+
+#newsite 2615  -- Orichalcum Mine
+#copysite 201
+#name "Orichalcum Mine (Island Start)"
+#end
+
+#newsite 2616
+#clear
+#name "EA Fennoscandia Spirits"
+#rarity 5
+#level 0
+#path 6
+#look 6
+#homemon 9281 -- elk
+#homemon 8105
+#homemon 8106
+#homemon 8107
+#homemon 8108
+#homemon 8109
+
+#end
+
+-- 2917 used by iram summons
 
 
 
@@ -121319,7 +119592,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #selectsite 478 -- Cloud Pillars
-#summonlvl4 3722 -- Size 6 Air Elemental
+#summonlvl4 3724 -- Size 7 Air Elemental
 #end
 
 #selectsite 490 -- Blizzard Valley
@@ -122583,7 +120856,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #selectsite 1308 -- The Storm Underneath
-#summonlvl3 3722 -- Size 6 Air Elemental
+#summonlvl3 3724 -- Size 7 Air Elemental
 #end
 
 #selectsite 1309 -- Ancient Tomb
@@ -123701,6 +121974,7 @@ Priests: Average, Spirit animals may appear to defend them in battles"
 #startsite "Meandash River"
 #futuresite "EA Fennoscandia Summons"
 #futuresite "EA Fennoscandia Heroes"
+#futuresite "EA Fennoscandia Spirits"
 #templepic 11
 #likespop 62  -- deer tribe
 #likespop 78  -- wolf tribe
@@ -124315,14 +122589,16 @@ Priests: Weak. Most mages are priests and some are Heretics."
 #startsite "Forest of Tanematahuta"
 #fortera 1
 #buildfort 27  -- Fortified Village
-#startcom 6690
+#startcom 6691 -- Warleader
 #startscout 6689
-#startunittype1 6682
+#startunittype1 6683 -- spear warrior w/ shield
 #startunitnbrs1 30
-#startunittype2 6680
+#startunittype2 6680 -- hunter
 #startunitnbrs2 30
 #moremagic 1
 #moreheat 1
+#defdrain -1
+
 #end
 
 #selectnation 194
@@ -124458,6 +122734,7 @@ Priests: Average"
 #startsite "Royal Palace"
 --#startsite "Masjid al-Haram"
 #futuresite "LA Iram Summons"
+#futuresite "LA Iram Summons Continued"
 #futuresite "LA Iram Heroes"
 
 #likesterr 64  -- waste
@@ -124678,7 +122955,7 @@ Priests: Average"
 #era 2
 #descr "Nihuala is a nation of nomadic tribes. The Nihualan people were driven from their ancestral homelands by foreign invaders, and the First People wiped out. Now, communing with spirits is only possible for a select few known as Spirit Speakers. Chiefs of the tribes closely heed the words of these Spirit Speakers and direct their people accordingly. Horses have become symbols of status and strength, and light cavalry composes a large portion of Nihuala's armies. Metal weaponry has replaced the crude armaments of the past, but Nihualans still wear armor composed of bone and hide, believing it offers superior spiritual protection. Some Nihualans can trace their heritage back to the First People, and these elite warriors maintain the tradition of fighting with obsidian weapons and armor."
 #summary "Race: Humans, prefers Heat scale +1
-Military: Human infantry and cavalry, Turquoise Riders may become White Shell Riders with XP stars (4% chance, increases per star)
+Military: Human infantry and cavalry, Turquoise Riders may become White Shell Riders with XP stars (6.67% chance, increases per star)
 Magic: Fire, Air, Earth, Nature, some Water
 Priests: Average, can cure disease"
 #brief "Nihuala is a nation of nomadic tribes. Though the First People have been wiped out, Nihualans still commune with natural spirits for guidance."
@@ -126576,6 +124853,7 @@ Dominion: Dominion hides province ownership."
 #wastefortrec 7135
 #wastefortcom 7144
 #wastefortcom 7146
+#uwbuild 1
 #end
 
 #selectnation 43 -- EA Atlantis
@@ -127342,7 +125620,7 @@ Nation: Reduced income. Halved population growth from Growth scales."
 --#forestlabcost 450
 --#foresttemplecost 450
 
-#futuresite "MA Asphodel Freespawn and Reanimation"
+#futuresite "MA Asphodel Reanimation"
 #futuresite "Carrion Seed Reanimation"
 #futuresite "MA Asphodel Summons"
 #futuresite "MA Asphodel Heroes"
@@ -127589,7 +125867,7 @@ Dominion: Increases unrest"
 #futuresite "Cursed Tyrants"
 #end
 
-#selectnation 77
+#selectnation 77 -- Phaecia
 #summary "Race: Humans and Colossi. Starts on an extra rich island if possible. Ocean sailing, trace income across oceans, income bonus in coastal castles. Prefers Heat scale +1 Military: Human and Colossi infantry. Can recruit special mages in coastal castles. A few Gigantes arrive yearly.
 Magic: Air, Water, Astral, Glamour, some Earth and Fire.
 Priests: Few of medium power
@@ -127611,6 +125889,7 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 #futuresite "MA Phaecia Unique Summons"
 #futuresite "MA Phaecia Heroes"
 #futuresite "Gigantes of Black Korkyra"
+#futuresite "Orichalcum Mine (Island Start)"
 #end
 
 #selectnation 67 -- MA Ind
@@ -127806,7 +126085,10 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 #addgod 8342 -- Elohim
 #addgod 8338 -- Burning Bush
 
+#addforeigncom 3797 -- Piconye Sage
+
 #futuresite "LA Piconye Summons"
+#futuresite "LA Piconye Summons Continued"
 #futuresite "LA Piconye Heroes"
 #end
 
@@ -128327,9 +126609,9 @@ Bless bonuses: Poison Resistance +10"
 #nationinc -25
 #merccost 100
 
-#startsite "LA Lemuria Freespawn & Troop Summons"
+#startsite "LA Lemuria Freespawn & Summons"
 #startsite "LA Lemuria Commander Summons"
-#futuresite "LA Lemuria Freespawn & Troop Summons"
+#futuresite "LA Lemuria Freespawn & Summons"
 #futuresite "LA Lemuria Commander Summons"
 #futuresite "LA Lemuria Summons"
 #futuresite "LA Lemuria Heroes"
@@ -131300,7 +129582,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #selectspell 2212
 #name "Empty Graves"
 #descr "This enchantment forces the unquiet dead to walk the earth. Unburied corpses within friendly Dominion will arise as shambling soulless servants and can be commanded by a necromancer. Where the Dominion of the True God is strongest even the bones of long dead warriors will be reawakened. This enchantment lasts until someone dispels it or the caster dies."
-#details "Provinces with corpses have 10% chance x candles to turn 3-18 to soulless, 4+ Dominion may raise Longdead regardless of corpses, 5+ Dominion chance of Longdead Horsemen. 7+ Dominion has a 10% chance to raise a Mount King and a 5% chance to raise a Mound Fiend."
+#details "Provinces with corpses have 10% chance x candles to turn 3-18 to soulless, 4+ Dominion may raise Longdead regardless of corpses, 5+ Dominion chance of Longdead Horsemen. 7+ Dominion has a 10% chance to raise a Mound King and a 5% chance to raise a Mound Fiend."
 #portent "##fullgodname## has shown their disdain for the natural order of the world, raising the dead from their graves in droves and denying them their final rest! Untold numbers of unholy dead now march in ##godhis## name, their deathbeds desecrated even as their families mourn.
 Restore order to the world, return the dead to their rest, and end this terrible blight and those who would be accomplice to its evil."
 --#cure "Restore order to the world, return the dead to their rest, and end this terrible blight and those who would be accomplice to its evil." -- apparently this crashes?
@@ -132323,7 +130605,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 0 6
 #pathlevel 0 5
 #effect 10042
-#damage 17
+#damage 59
 #fatiguecost 1200
 #provrange 4
 #nreff 1
@@ -134665,7 +132947,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 4
 #pathlevel 1 3
 #effect 10042
-#damage 18
+#damage 53
 #nreff 1
 #fatiguecost 7500
 #nogeodst 4
@@ -134721,7 +133003,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #name "Summon Wolfpack"
 #descr "The caster enters a deep forest and summons a pack of Dire Wolves. These are larger and more ferocious than ordinary wolves and are common in the forests around Ulm."
 #researchlevel 3
-#pathlevel 0 2
+#pathlevel 0 1
 #fatiguecost 400
 #damage 1224  -- Dire Wolf
 #onlygeosrc 128  -- Forest
@@ -134762,9 +133044,9 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "In Ulm the curse that drives men to become ghouls is well known due to the Malediction. The caster curses a group of soldiers with unholy hunger, transforming them into ghouls that will serve his will. More powerful Necromancers can curse more beings with each casting."
 #researchlevel 2
 #school 1
-#pathlevel 0 2
+#pathlevel 0 1
 #damage -1077  -- Armored Ghoul
-#nreff 3009 -- 15+++
+#nreff 2013 -- 15++
 #fatiguecost 500
 #spec 0
 #restricted 101 -- LA Ulm
@@ -134808,6 +133090,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "In Marverni the druids are adept at predicting and altering the future. The caster changes the future fates of a few soldiers. The spell negates the first successful strike against the one protected by the Druids."
 #restricted 12 -- Marverni
 #researchlevel 0
+#aoe 1001 -- 2+
 #end
 
 #selectspell 2487
@@ -137160,6 +135443,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #damage 7459 -- Ember Lord
 #restricted 16 -- EA Abysia
 #restricted 63 -- MA Abysia
+#restricted 104 -- LA Abysia
 #end
 
 #selectspell 2653
@@ -138011,7 +136295,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #descr "Event effect for Music of the Wild"
 #school -1
 #researchlevel 0
-#damage 19  -- Music of the Wild EA
+#damage 54  -- Music of the Wild EA
 #end
 
 #selectspell 2712
@@ -138904,29 +137188,6 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #nowatertrace 1
 #fatiguecost 10
 #restricted 10 -- EA Fomoria
-#end
-
-#selectspell 2776
-#copyspell 991 -- Will o' Wisp
-#name "Drowned Ghosts"
-#school -1
-#researchlevel 0
-#effect 6043  -- 6 turns of border summoning
-#damage 8297 -- Drowned Ghosts
-#nreff 2
-#explspr -1
-#end
-
-#selectspell 2777
-#copyspell 991 -- Will o' Wisp
-#name "Bring the watery dead"
-#school -1
-#researchlevel 0
-#effect 6043  -- 6 turns of border summoning
-#damage 8296 -- Drowned Longdead
-#nreff 5
-#explspr -1
-#nextspell 2776
 #end
 
 #selectspell 2778
@@ -141414,8 +139675,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 0 1
 #pathlevel 0 3
 #nreff 505
-#damage 3724 -- Size 7 Air Elemental
-#fatiguecost 1000
+#damage 3726 -- Size 5 Air Elemental
+#fatiguecost 800
 #restricted 32 -- Rus
 #restricted 29 -- Berytos
 #restricted 77 -- Phaecia
@@ -141444,8 +139705,10 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 3
 #path 1 2
 #pathlevel 1 2
-#damage 3724
-#nreff 1004 -- 7+
+--#damage 3724
+#damage 3726 -- Size 5 Air Elemental
+--#nreff 1004 -- 7+
+#nreff 1006 -- 9+
 #fatiguecost 900
 #nogeodst 4100  -- Not caves or sea
 #farsumcom 3722
@@ -143155,7 +141418,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 0
 #effect 10042
 #nreff 1
-#damage 14
+#damage 56
 #nextspell 3066
 #end
 
@@ -145841,7 +144104,7 @@ All effects scale with friendly Dominion."
 #damage 2
 #nreff 1
 #sound 44  -- Swarm
-#damage 16777216
+#damage 2
 #spec 12599424  -- UW OK, Friendlies only, ignores armor & shield
 #restricted 85 -- Ys
 #end
@@ -146113,7 +144376,7 @@ All effects scale with friendly Dominion."
 #path 1 1
 #pathlevel 1 1
 #effect 10021
-#fatiguecost 2500
+#fatiguecost 3000
 #nreff 1
 #damage 8116
 #restricted 189
@@ -146124,7 +144387,7 @@ All effects scale with friendly Dominion."
 #name "The Golden Reindeer"
 #descr "The caster summons Meandash, the Golden Reindeer from his home in the spirit realm. Meandash is powerful in nature magic and is protected by a protective aura that keeps him from harm. He is greatly revered by the Sami tribes and is sacred to the people of Fennoscandia."
 #school 0
-#researchlevel 8
+#researchlevel 7
 #path 0 6
 #pathlevel 0 4
 #effect 10089
@@ -147534,7 +145797,7 @@ All effects scale with friendly Dominion."
 #pathlevel 0 4
 #pathlevel 1 1
 #effect 10001
-#nreff 1003 -- 7+
+#nreff 1005 -- 9+
 #damage 7120
 #fatiguecost 2100
 #restricted 197 -- Iram
@@ -148049,7 +146312,7 @@ All effects scale with friendly Dominion."
 #name "Spearwalking"
 #descr "The caster enhances the Alcherans natural talent for avoiding projectiles to supernatural levels. The affected troops will be almost impossible to hit with ranged weapons."
 #details "Grants Airshield 80"
-#researchlevel 2
+#researchlevel 0
 #path 0 7
 #damage 8  -- Airshield
 #aoe 5000
@@ -148166,7 +146429,7 @@ All effects scale with friendly Dominion."
 #effect 10001
 #nreff 506
 #damage 6712
-#fatiguecost 500
+#fatiguecost 600
 #restricted 193
 #end
 
@@ -149166,7 +147429,7 @@ All effects scale with friendly Dominion."
 #path 0 1  -- -----\ Air 5
 #pathlevel 0 5  -- /
 #effect 10050  -- Remote Assassination
-#damage 3722 -- Size 6 Air Elemental
+#damage 3725 -- Size 6 Air Elemental
 #provrange 5
 #nogeodst 4100  -- Not caves or sea
 #fatiguecost 600
@@ -150280,7 +148543,7 @@ All effects scale with friendly Dominion."
 #path 0 9
 #pathlevel 0 1
 #range 5
-#aoe 1001 -- 2+
+#aoe 1002 -- 3+
 #fatiguecost 0
 #casttime 150
 #restricted 181 -- EA Chaco
@@ -152330,7 +150593,8 @@ Underwater: Targets must resist the effects of the spell a second time with an e
 #end
 
 #selectspell 3873 -- Electrify Current, 2A
-#copyspell "Shimmering Fields"
+#copyspell 2045 -- Forked Lightning
+--#copyspell "Shimmering Fields"
 #name "Electrify Current"
 #descr "The caster unleashes a burst of electric energy at a target in water. The discharge will disseminate through the water, affecting those nearby."
 #path 0 1
@@ -152769,7 +151033,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #name "Deflect Arrows"
 #descr "Air will swirl around a small group of soldiers, turning arrows away from them."
 #details "Air Shield: 80"
-#aoe 1
+#aoe 2
 #pathlevel 0 1
 #researchlevel 2
 #fatiguecost 20
@@ -153021,7 +151285,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #restricted 206
 #end
 
-#selectspell 3917 -- Dominions Enhanced
+#selectspell 3917
 #copyspell 779 -- Stoneskin
 #name "Basalt Blessing​" -- ZWSP present at the end
 #descr "The high priests of Dirgen remember how to gift their warriors with skin as hard as basalt, like the priests of old Atlantis."
@@ -153037,9 +151301,9 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #restricted 206
 #end
 
-#selectspell 3918 -- Dominions Enhanced
+#selectspell 3918
 #copyspell 779 -- Stoneskin
-#name "Basalt Blessing​​" -- 2x ZWSP present at the end
+#name "Blessing of Old Atlantis" -- 2x ZWSP present at the end
 #descr "The high priests of Dirgen remember how to gift their warriors with skin as hard as basalt, like the priests of old Atlantis."
 #details "Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Also incurs susceptibility to Cold 5."
 #researchlevel 0
@@ -153975,6 +152239,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #damage 8678 -- Lindwurm
 #nreff 1
 #spec 0
+#restricted 189 -- Fennoscandia
 #restricted 34 -- Muspelheim
 #restricted 81 -- Nidavangr
 #end
@@ -154847,7 +153112,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #descr "Event effect for Music of the Wild"
 #school -1
 #researchlevel 0
-#damage 20  -- Music of the Wild MA
+#damage 55  -- Music of the Wild MA
 #end
 
 #selectspell 4059
@@ -155577,9 +153842,9 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #school 0 -- Conjuration
 #researchlevel 5
 #path 0 2 -- Water
-#pathlevel 0 4
+#pathlevel 0 3
 #path 1 6 -- Nature
-#pathlevel 0 1
+#pathlevel 1 1
 #fatiguecost 400
 #effect 10001
 #damage 9623
@@ -156952,13 +155217,13 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #descr "The caster summons a few Pating na Pakpakan, demonic flying sharks that live around the islands. They can be drawn with smell of fresh blood spilled into the sea and bound by blood mages."
 #researchlevel 3
 #school 6
-#path 0 8
-#path 1 2
+#path 0 8 -- B
+#path 1 2 -- W
 #pathlevel 0 1
 #pathlevel 1 1
 #damage 8938 -- Pating
 #nreff 503
-#fatiguecost 1600
+#fatiguecost 1800
 #restricted 207 -- Bantay Tubig
 #spec 41943040 -- UWonly
 #end
@@ -156969,13 +155234,13 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #descr "The caster summons a frenzy of Pating na Pakpakan, demonic flying sharks that live around the islands, with a great sacrifice of blood. The great quantities of blood will draw dozens of sharks and in the flurry of sharks flying overhead swimming under the sea many may be bound by a blood mage. More powerful blood mages will be able to bind many of them."
 #researchlevel 7
 #school 6
-#path 0 8
-#path 1 2
+#path 0 8 -- B
+#path 1 2 -- W
 #pathlevel 0 2
 #pathlevel 1 1
 #damage 8938 -- Pating
 #nreff 2004 -- 8++
-#fatiguecost 4400
+#fatiguecost 4800
 #restricted 207 -- Bantay Tubig
 #spec 41943040 -- UWonly
 #end
@@ -156985,13 +155250,13 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #name "Summon Buwaya"
 #descr "The caster summons Buwaya from a river stream or lake. Buwaya are monstrous beings with the appearance of a giant crocodile with a shell on their back, used to hold the souls of those it devours."
 #researchlevel 5
-#path 0 6
-#path 1 2
+#path 0 6 -- N
+#path 1 2 -- W
 #pathlevel 0 2
 #pathlevel 1 1
 #damage 8946 -- Buwaya
 #nreff 1
-#fatiguecost 300
+#fatiguecost 400
 #restricted 207 -- Bantay Tubig
 #spec 8388608 -- UWOK
 #end
@@ -157001,11 +155266,11 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #name "Summon Nanreben"
 #descr "The caster summons Nanreben from a river stream. The Nanreben is a giant serpent living in the seas of Bantay Tubig. Its eyes are like two torches, and on their head is a pair of white horns. Their scales are as hard as a dragon's and their fangs can deliver a fiery venom. They are related to the Ibingan that guard the Kataw and are sometimes summoned for war, but they are not held sacred."
 #researchlevel 3
-#path 0 0
+#path 0 0 -- F
 #pathlevel 0 2
 #damage 8939 -- Nanreben
 #nreff 1
-#fatiguecost 300
+#fatiguecost 500
 #restricted 207 -- Bantay Tubig
 #spec 41943040 -- UWonly
 #end
@@ -157015,13 +155280,13 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #name "Summon Berberoka"
 #descr "The caster summons Berberoka from a marshy lake. Berberoka are massive beasts of the swamp, capable of swallowing an entire pond so the fish in it fall. When an unlucky fisherman descends into the pond to pick up the fish, the Berberoka will release the water to drown them to be eaten. They are also quite capable of spraying the water they swallow like a weapon."
 #researchlevel 6
-#path 0 2
-#path 1 6
+#path 0 2 -- W
+#path 1 6 -- N
 #pathlevel 0 2
 #pathlevel 1 1
 #damage 8948 -- Berberoka
 #nreff 1
-#fatiguecost 500
+#fatiguecost 800
 #restricted 207 -- Bantay Tubig
 #end
 
@@ -157031,13 +155296,13 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #descr "The caster summons a Kurita with a sacrifice of blood, a terrible monster with many limbs that lives in the sea or mountains. It eats humans and any other animal life it can find as it travels, leaving a trail of destruction in their wake with entire villages and forests reduced to ruin as it passes. Kurita are difficult to control and will enter a rage at the slightest provocation."
 #researchlevel 4
 #school 6 -- Blood
-#path 0 8
-#path 1 2
+#path 0 8 -- B
+#path 1 2 -- W
 #pathlevel 0 1
 #pathlevel 1 1
 #damage 8900 -- Kurita
 #nreff 1
-#fatiguecost 1500
+#fatiguecost 2500
 #restricted 207 -- Bantay Tubig
 #spec 8388608 -- UWOK
 #end
@@ -157047,11 +155312,11 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #name "Summon Tarabusaw"
 #descr "The caster summons a Tarabusaw, a hill giant of the islands. An ugly creature in the form of a man, and one of great fury and devastation. While intelligent compared to most giants, their rage and hunger leads them to wanton destruction. Tarabusaw are massive and powerful four-armed beings that few can face up against."
 #researchlevel 4
-#path 0 6
+#path 0 6 -- N
 #pathlevel 0 2
 #damage 8950 -- Tarabusaw
 #nreff 1
-#fatiguecost 600
+#fatiguecost 800
 #restricted 207 -- Bantay Tubig
 #spec 8388608 -- UWOK
 #end
@@ -157061,11 +155326,11 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #name "Summon Dread Bird"
 #descr "The caster summons a Gurayn Bird, a massive, 7-headed bird residing at the top of mountain peaks. Believed to be all-seeing, they are nearly impossible to surprise or surround as their many heads view all around them. Their skin is tough and difficult to cut, their talons and beaks as sharp as any blade. Gurayn Birds have strong destructive urges and each season they must travel further and further to sate them."
 #researchlevel 5
-#path 0 1
+#path 0 1 -- A
 #pathlevel 0 2
 #damage 8951 -- Gurayn Bird
 #nreff 1
-#fatiguecost 700
+#fatiguecost 1000
 #restricted 207 -- Bantay Tubig
 #end
 
@@ -157089,7 +155354,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 1 2
 #nreff 1013 -- 15+
 #damage 8943  -- Maginaga Warrior
-#fatiguecost 2500
+#fatiguecost 3500
 #onlygeosrc 4096  -- Cave
 #nextspell 4201
 #restricted 207 -- Bantay Tubig
@@ -157117,7 +155382,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #path 0 7
 #pathlevel 0 2
 #damage 8947 -- Nuno sa Punso
-#fatiguecost 1200
+#fatiguecost 1800
 #restricted 207 -- Bantay Tubig
 #end
 
@@ -157128,10 +155393,10 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #researchlevel 5
 #path 0 6
 #pathlevel 0 2
-#path 0 5
-#pathlevel 0 1
+#path 1 5
+#pathlevel 1 1
 #damage 8949 -- Alan
-#fatiguecost 1400
+#fatiguecost 2800
 #restricted 207 -- Bantay Tubig
 #end
 
@@ -157151,14 +155416,15 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 
 #selectspell 2244
 #copyspell 1024 -- Awaken Sleeper
-#name "Summon Tikbalang"
-#descr "The caster travels to a dark, sparsely populated forest to summon a Tikbalang. This demonic creature of the wild has the body of a large muscular man, however the head and hind quarters of a monstrous horse. When angered they will attack with their sharp claws and use their hooves to trample or stamp their prey to death. Since they are of this world, they can be summoned without a sacrifice of blood, even if demonic by nature."
+#name "Summon Tikbalangs"
+#descr "The caster travels to a dark, sparsely populated forest to summon a few Tikbalangs. This demonic creature of the wild has the body of a large muscular man, however the head and hind quarters of a monstrous horse. When angered they will attack with their sharp claws and use their hooves to trample or stamp their prey to death. Since they are of this world, they can be summoned without a sacrifice of blood, even if demonic by nature."
 #school 0
 #researchlevel 2
 #effect 10001
 #path 0 6 -- N
 #pathlevel 0 1
-#fatiguecost 200
+#nreff 3
+#fatiguecost 600
 --#onlygeosrc 128  -- Forest
 #damage 7889 -- Tikbalang
 #restricted 207 -- Bantay Tubig
@@ -157166,7 +155432,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 
 #selectspell 4207
 #copyspell 1024 -- Awaken Sleeper
-#name "Summon Band of Tikbalang"
+#name "Summon Band of Tikbalangs"
 #descr "The caster travels to a dark, sparsely populated forest to summon a group of Tikbalang. This demonic creature of the wild has the body of a large muscular man, however the head and hind quarters of a monstrous horse. When angered they will attack with their sharp claws and use their hooves to trample or stamp their prey to death. Since they are of this world, they can be summoned without a sacrifice of blood, even if demonic by nature."
 #school 0
 #researchlevel 6
@@ -157175,8 +155441,8 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 0 2
 #path 1 7 -- G
 #pathlevel 1 1
-#nreff 1004 -- 6+
-#fatiguecost 1000
+#nreff 1008 -- 10+
+#fatiguecost 1800
 --#onlygeosrc 128  -- Forest
 #damage 7889 -- Tikbalang
 #restricted 207 -- Bantay Tubig
@@ -157191,7 +155457,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 0 2
 #damage 8916 -- Ibingan
 #nreff 1
-#fatiguecost 300
+#fatiguecost 500
 #restricted 207 -- Bantay Tubig
 #spec 41943040 -- UWonly
 #onlyatsite 2327 -- Cave of Kataw
@@ -157590,8 +155856,8 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #researchlevel 6
 #path 0 7
 #pathlevel 0 3
-#nreff 1007 -- 10+
-#fatiguecost 1600
+#nreff 506 -- 6+
+#fatiguecost 1500
 #damage 9098 -- Twilit Beast
 #end
 
@@ -157680,7 +155946,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 1 1
 #nreff 1
 #effect 10021
-#fatiguecost 2500
+#fatiguecost 3000
 #damage 9104 -- Hag
 #end
 
@@ -157781,6 +156047,7 @@ Underwater: AoE 10+2"
 #descr "A group of soldiers are granted the ability to discern illusions and see the unseen."
 #details "True Sight enables a unit to attack invisible or glamoured targets without penalties."
 #aoe 2000 -- 4+2
+#aoeinspector 1002 -- 4+
 #pathlevel 0 2
 #researchlevel 5
 #end
@@ -157790,7 +156057,7 @@ Underwater: AoE 10+2"
 #name "Third Sight"
 #descr "The caster opens the third eye of many troops, enabling them to observe the spirit world temporarily. The soldiers gain Spirit Sight for the remainder of the battle."
 #details "Units with Spirit Sight can see invisible and glamoured units for what they are. Spirit Sight also grants 100% darkvision."
-#aoe 2003 -- 11+2
+#aoe 2013 -- 21+2
 #pathlevel 0 4
 #fatiguecost 100
 #researchlevel 7
@@ -158236,7 +156503,7 @@ This spell can only be cast in a deep water province."
 #aoe 1001 -- 5+
 #fatiguecost 100
 #range 20
-#spec 12632064 -- Ignore shields, sacred only, friendly only, UWOK
+#spec 12599296 -- Ignore shields, friendly only, UWOK
 #restricted 119 -- Feminie
 #end
 
@@ -158325,7 +156592,7 @@ This spell can only be cast in a deep water province."
 #pathlevel 1 2
 #effect 10021
 #nreff 1
-#fatiguecost 500
+#fatiguecost 700
 #damage 9189 -- Fire Rashi Knight
 #restricted 119 -- Feminie
 #end
@@ -158351,7 +156618,7 @@ This spell can only be cast in a deep water province."
 #pathlevel 1 2
 #effect 10021
 #nreff 1
-#fatiguecost 2500
+#fatiguecost 2800
 #damage 9189 -- Fire Rashi Knight
 #restricted 119 -- Feminie
 #nextspell 4306
@@ -158372,6 +156639,251 @@ This spell can only be cast in a deep water province."
 #damage 9191 -- Sea Rashi Sorceress
 #restricted 119 -- Feminie
 #end
+
+#selectspell 4309 -- Summon Bjergtrolls
+#name "Summon Bjergtrolls"
+#descr "The mage travels to the Bjergtroll tribe deep in mountain caves and petitions their King to allow a group of trolls to join the armies of Fennoscandia. The Bjergtroll are a tribe mountain trolls of great stature and strength that reside within the mountains of Fennoscandia. Unlike the Troldfolk and Tusser tribes they have not made an alliance with the people of Fennoscandia, but may still be persuaded into service with gems and gold. This spell can only be cast in a Mountain or Cave."
+#school 0
+#researchlevel 3
+#path 0 3  -- E
+#pathlevel 0 2
+#effect 10001
+#nreff 505
+#fatiguecost 1000
+#damage 9287 -- Bjergtroll
+#restricted 189 -- Fennoscandia
+#onlygeosrc 8392720 -- Mountains, Border Mountains, Caves
+#end
+
+#selectspell 4310 -- Summon Bjergtrolls nextspell
+#name "Armored Bjergtrolls"
+#descr "."
+#school -1
+#pathlevel 0 2
+#effect 10001
+#nreff 10
+#damage 9293 -- War Bjergtroll
+#end
+
+#selectspell 4311 -- Summon Bjergtrolls
+#name "Summon Bjergtroll War Band"
+#descr "The mage travels to the Bjergtroll tribe deep in mountain caves and petitions their King to provide a contingent of war trolls from his halls to the armies of Fennoscandia. The Bjergtroll are a tribe mountain trolls of great stature and strength that reside within the mountains of Fennoscandia. Some of the Bjergtroll are clad in armor of Tusser origin and are normally stationed as guards within the Mountain King's halls, but may still be persuaded into service with sufficient gems and gold. This spell can only be cast in a Mountain or Cave."
+#school 0
+#researchlevel 5
+#path 0 3  -- E
+#pathlevel 0 3
+#effect 10001
+#nreff 1007 -- 10+
+#fatiguecost 3000
+#damage 9287 -- Bjergtroll
+#restricted 189 -- Fennoscandia
+#onlygeosrc 8392720 -- Mountains, Border Mountains, Caves
+#nextspell 4310
+#end
+
+#selectspell 4312 -- Summon Dovregubben
+#name "Petition King of the Mountain"
+#descr "The mage travels to the Bjergtroll tribe deep in mountain caves with a grand gift of gems, gold, and other riches to petition King Dovregubben to personally come to the aid of Fennoscandia. Dovregubben is the King of the Bjergtroll tribe, and self-proclaimed King of all troll kind. He is a troll of immense stature with an incredibly tough hide and innately skilled in troll magic. This spell can only be cast in a Mountain or Cave."
+#school 0
+#researchlevel 6
+#path 0 3  -- E
+#pathlevel 0 4
+#effect 10089
+#nreff 1
+#fatiguecost 6500
+#damage 9284 -- dovregubben
+#restricted 189 -- Fennoscandia
+#onlygeosrc 8392720 -- Mountains, Border Mountains, Caves
+#nextspell 4311
+#end
+
+#selectspell 4313 -- Summon Mum
+#name "Summon Mum"
+#descr "The caster seeks out and finds Mum, a troll sorceress of great power and mother to the King in the Mountain, and attempts to persuade her to aid the people of Fennoscandia. Mum will agree for as long as she believes her son Dovregubben is taking part in the fight."
+#details "Mum will leave if Dovregubben is not present in the world."
+#school 0
+#researchlevel 7
+#path 0 6 -- N
+#pathlevel 0 3
+#effect 10089
+#nreff 1
+#fatiguecost 2500
+#damage 9285 -- mother
+#restricted 189 -- Fennoscandia
+#end
+
+#selectspell 4314 -- Gramps nextspell
+#copyspell 91 -- Kill Caster
+#name "Gramps Wrath"
+#descr "."
+#school -1
+#damage 40
+#spec 549756862464 -- Defence negates, Blunt
+#end
+
+#selectspell 4315 -- Summon Gramps
+#name "Summon Gramps"
+#descr "Deep within the mountain halls of the Bjergtroll sleeps the oldest and largest troll of all, Gramps. No troll would dare wake him from his slumber for fear of his wrath and the earthquakes that would follow, but with careful preparation along with much food and gems he may be awoken without destroying the caverns and persuaded to aid the people of Fennoscandia. This spell can only be cast in a Mountain or Cave."
+#details "The caster will take 40 blunt damage with a defense negates check. Causes an earthquake in the casting province."
+#school 0
+#researchlevel 8
+#path 0 3 -- E
+#pathlevel 0 3
+#effect 10089
+#nreff 1
+#fatiguecost 5000
+#damage 9286 -- gramps
+#restricted 189 -- Fennoscandia
+#onlygeosrc 8392720 -- Mountains, Border Mountains, Caves
+#nextspell 4314
+#end
+
+#selectspell 4316 -- Activate Oppressor's Headband
+#copyspell 1263 -- Communion Master
+#name "Activate Oppressor's Headband"
+#descr "The Oppressor activates their headband allowing use of communion slaves like shackled mages by channeling earth magic into it. The activation is quick and only takes a moment to tap into the full power of the communion."
+#details "This spell can only be cast by Oppressors."
+#path 0 3
+#casttime 10
+#restricted 51 -- MA Phlegra
+#restricted 96 -- LA Phlegra
+#fatiguecost 0
+#fatiguecostinspector 1
+#researchlevel 0
+#onlymnr 3221 -- Phlegran Oppressor
+#onlymnr 3222
+#onlymnr 3228
+#onlymnr 3162
+--#onlymnr -1079
+#end
+
+#selectspell 4317
+#name "Fire Blades"
+#descr "The caster uses the magic of the Jinn to forge weapons of smokeless flame and distributes them to distinguished soldiers of Iram. Devised by the scholars and artificers of the Brass City as a way to harness the power of the Jinn across the entire empire, and they have proven incredibly effective in battle. Once properly forged the weapons may be wielded without danger to the wielder."
+#school 3
+#researchlevel 4
+#path 0 0
+#path 1 1
+#pathlevel 0 2
+#pathlevel 1 1
+#restricted 197 -- LA Iram
+#effect 10001
+#nreff 6
+#damage 7173
+#fatiguecost 200
+#end
+
+#selectspell 4318
+#name "Fire Bows"
+#descr "The caster uses the magic of the Jinn to forge weapons of smokeless flame and distributes them to distinguished soldiers of Iram. Devised by the scholars and artificers of the Brass City as a way to harness the power of the Jinn across the entire empire, and they have proven incredibly effective in battle. Once properly forged the weapons may be wielded without danger to the wielder."
+#school 3
+#researchlevel 4
+#path 0 1
+#path 1 0
+#pathlevel 0 2
+#pathlevel 1 1
+#restricted 197 -- LA Iram
+#effect 10001
+#nreff 6
+#damage 7174
+#fatiguecost 200
+#end
+
+
+#selectspell 4319 -- Holy Twist Fate
+#copyspell 781 -- Gift of Cheated Fate
+#name "Protection of the Lord"
+#descr "The priest of Piconye whispers a prayer most holy and asks their Lord the Awakening God to protect a group of soldiers as they head into battle. They will be granted protection from a single attack through divine intervention."
+#details "Grants the effects of Twist Fate."
+#researchlevel 0
+#school 7 -- Divine
+#path 0 9 -- H
+#pathlevel 0 2
+#aoe 1000 -- 2+
+#fatiguecost 0
+#range 10
+#spec 12599296 -- Ignore shields, friendly only, UWOK
+#restricted 120 -- Piconye
+#end
+
+#selectspell 4320
+#name "Summon Giant Snail"
+#descr "The caster summons a Cametheternis and binds them to their will. The Cametheternis is a giant snail native to the lands of Piconye. They are incredibly slow, but their shell is hard and they are covered in a thick slime. When they descend upon villages, Knights of Piconye may try to prove their mettle by facing them in combat and driving them away, though it is rare for them to slay one."
+#school 0
+#researchlevel 3
+#path 0 2 -- W
+#path 1 3 -- E
+#pathlevel 0 1
+#pathlevel 1 1
+#effect 10001
+#nreff 1
+#damage 9280 -- Snail
+#fatiguecost 100
+#restricted 120 -- LA Piconye
+#end
+
+#selectspell 4321
+#name "Contact Hare Warren"
+#descr "The caster summons a group of killer rabbits with gems and a promise of fresh meat from the spoils of war. The Hare is a large killer rabbit with a penchant for terrible cruelty. Piconye sages believe they were normal rabbits granted strength and intelligence by a powerful warlock or dark god long ago."
+#school 0
+#researchlevel 4
+#path 0 6 -- N
+#path 1 4 -- S
+#pathlevel 0 1
+#pathlevel 1 1
+#effect 10001
+#nreff 2013
+#damage -1079 -- Hare montag
+#fatiguecost 600
+#restricted 120 -- LA Piconye
+#end
+
+#selectspell 4322
+#name "Summon Thiniseretae"
+#descr "There reside many strange and wondrous creatures in the lands of Piconye. Among them is the Thiniseretae, a bird with two heads, one appearing human where their torso should be. They are powerful mages of Astral and Air and with this spell one such bird may be summoned into service."
+#school 0
+#researchlevel 5
+#path 0 4 -- S
+#pathlevel 0 3
+#effect 10021
+#nreff 1
+#damage 9298 -- Thiniseretae
+#fatiguecost 3000
+#restricted 120 -- LA Piconye
+#end
+
+#selectspell 4323
+#name "Summon Lobster Knight"
+#descr "There reside many strange and wondrous creatures in the lands of Piconye. The Lobster Knight is a strange hybrid being that resides in the sea near Piconye where a river of sand and rock flows into it. They are always found wearing a knightly helm and wielding a shield in their right hand with which they may defend the wise from the wiles of the foolish. They are relentless defenders of the righteous and with this spell one such knight may be summoned into service."
+#school 0
+#researchlevel 5
+#path 0 2 -- W
+#path 1 4 -- S
+#pathlevel 0 1
+#pathlevel 1 1
+#effect 10001
+#nreff 1
+#damage 9299 -- Lobster Knight
+#fatiguecost 300
+#restricted 120 -- LA Piconye
+#end
+
+#selectspell 4324
+#name "Create Snail Trebuchet"
+#descr "The caster constructs a great trebuchet and uses a Cametheternis snail as its mode of transportation. The Cametheternis is incredibly slow, but strong enough to move the construct without issue and its slime can be used to coat the projectiles thrown. If any of the operators are killed but the trebuchet is not destroyed new operators will be appointed after the battle."
+#school 3
+#researchlevel 4
+#path 0 3 -- E
+#path 1 2 -- W
+#pathlevel 0 1
+#pathlevel 1 1
+#effect 10021
+#nreff 1
+#damage 9297 -- Snail trebuchet
+#fatiguecost 1000
+#restricted 120 -- LA Piconye
+#end
+
 
 
 
@@ -158414,9 +156926,11 @@ This spell can only be cast in a deep water province."
 
 
 
+
 -- Pointbuffs 100 precision
 #selectspell 783 -- Enlarge
 #precision 100
+#aoe 1000 -- 2+
 #end
 
 #selectspell 789 -- Protective Winds
@@ -158441,6 +156955,7 @@ This spell can only be cast in a deep water province."
 
 #selectspell 835 -- Group Stoneskin
 #precision 100
+#aoe 1001 -- 4+
 #end
 
 #selectspell 838 -- Ironskin
@@ -158565,6 +157080,7 @@ This spell can only be cast in a deep water province."
 
 #selectspell 801 -- Mossbody
 #precision 100
+#aoe 2
 #end
 
 #selectspell 803 -- Group Blur
@@ -158573,6 +157089,7 @@ This spell can only be cast in a deep water province."
 
 #selectspell 811 -- Mistform
 #precision 100
+#aoe 2
 #end
 
 #selectspell 848 -- Shadow Warriors
@@ -158589,6 +157106,7 @@ This spell can only be cast in a deep water province."
 
 #selectspell 1166 -- Gift of Splendor
 #precision 100
+#aoe 2
 #end
 
 #selectspell 1182 -- Gift of Spirit Sight
@@ -158900,8 +157418,8 @@ This spell can only be cast in a deep water province."
 #end
 
 
-#selectspell 321 -- Summon Bears -- 20% efficiency reduction
-#nreff 512 -- 15 -> 12
+#selectspell 321 -- Summon Bears
+#nreff 510 -- 10 -> 10+1/2
 #end
 
 #selectspell 326 -- Send Vodyanoy
@@ -158981,6 +157499,7 @@ This spell can only be cast in a deep water province."
 #end
 
 #selectspell 352 -- Call Malakh
+#fatiguecost 700
 #restricted 186 -- Zion
 #end
 
@@ -159012,7 +157531,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 356 -- Merkhava
 #pathlevel 0 5
-#fatiguecost 12000
+--#fatiguecost 12000
 #restricted 186 -- Zion
 #end
 
@@ -159059,7 +157578,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 371 -- Send Tupilak
-#pathlevel 0 5
+#pathlevel 0 4
 #fatiguecost 600
 #end
 
@@ -159170,6 +157689,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 457 -- Gift of the Moon
+#aoe 5005 -- 10+5
+#range 20
 #researchlevel 2
 #end
 
@@ -159398,16 +157919,30 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #descr "There are in Ind many strange men. Large men, small men, and men with eyes in the back. There are also Cyclopses living in Magnificent Ind. Groups of these giants can be contacted and convinced to serve the Prester King."
 #end
 
+#selectspell 538 -- Deceive the Decree of the Lost
+#fatiguecost 4000
+#end
+
 #selectspell 551 -- Feast for Ghuls
 #nreff 1005
+#restricted 197 -- Iram
 #end
 
 #selectspell 552 -- Summon Ghulah
 #fatiguecost 4300
+#restricted 197 -- Iram
 #end
 
 
 #selectspell 553 -- Binn
+#restricted 197 -- Iram
+#end
+
+#selectspell 554 -- Si'lat
+#restricted 197 -- Iram
+#end
+
+#selectspell 544 -- Shaytan
 #restricted 197 -- Iram
 #end
 
@@ -159881,8 +158416,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 819 -- Group Barkskin
-#aoe 1003 -- 5+1
-#fatiguecost 50 -- 50
+#aoe 1004 -- 6+1
+--#fatiguecost 50 -- 50
 #end
 
 #selectspell 822 -- Shrink
@@ -159898,6 +158433,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #aoe 1000 -- 2+1
 #end
 
+#selectspell 1292 -- Luck
+#aoe 2
+#end
+
 #selectspell 1293 -- Despair
 #aoe 2001 -- 5+2
 #end
@@ -159907,7 +158446,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 785 -- Blur
-#aoe 2001 -- 3++
+#aoe 1003 -- 4+
 #end
 
 #selectspell 782 -- Weakness
@@ -159915,7 +158454,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 803 -- Group Blur
-#aoe 2004 -- 8+2
+#aoe 2002 -- 6+2
 #fatiguecost 20
 #end
 
@@ -159951,7 +158490,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 781 -- Cheat Fate
-#aoe 1000 -- 1+
+#aoe 1001 -- 2+
 #notfornation 12 -- Marverni
 #end
 
@@ -159975,6 +158514,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #aoe 1000
 #end
 
+#selectspell 798 -- Barkskin
+#aoe 2
+#end
+
 #selectspell 797 -- Gift of Cat Eyes
 #aoe 2001 -- 3+2
 #end
@@ -159987,7 +158530,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #details "Grants +2 Att, +2 Def and Combat speed is doubled"
 #pathlevel 0 1
 --#aoe 1000 -- 1+
-#aoe 1
+#aoe 2
 #fatiguecost 40
 #end
 
@@ -160614,7 +159157,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1118 -- Ignite Arrows
-#aoe 1001 -- 2+
+#aoe 1002 -- 3+
 #pathlevel 0 1
 #school 3 -- const
 #end
@@ -160634,12 +159177,12 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1127 -- Envenom Arrows
-#aoe 1001 -- 2+
+#aoe 1002 -- 3+
 #pathlevel 0 1
 #end
 
 #selectspell 1164 -- Serpent Fang Arrows
-#aoe 1005 -- 7+
+#aoe 1007 -- 9+
 #fatiguecost 40
 #pathlevel 0 2
 #researchlevel 4
@@ -160654,6 +159197,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #descr "The caster enchants a small group of soldiers, making them accurate and their arrows fly swift and far. Precision is increased as is range for all missile weapons."
 #details "Grants prec +4, missile range +50%"
 #damage 562949953421316 -- farflight + precision
+#aoe 1004 -- 5+
+#ainocast 1
 #end
 
 #selectspell 1086 -- Temper Armors
@@ -160671,23 +159216,23 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1109 -- strength of giants
-#aoe 1001 -- 2+
+#aoe 1002 -- 3+
 #pathlevel 0 1
 #end
 
 #selectspell 1130 -- lesser flame ward
 #pathlevel 0 1
-#aoe 1000 -- 1+
+#aoe 1001 -- 2+
 #end
 
 #selectspell 1135 -- lesser thunder ward
 #pathlevel 0 1
-#aoe 1000 -- 1+
+#aoe 1001 -- 2+
 #end
 
 #selectspell 1137 -- lesser winter ward
 #pathlevel 0 1
-#aoe 1000 -- 1+
+#aoe 1001 -- 2+
 #end
 
 #selectspell 1128 -- gift of the serpent
@@ -160695,15 +159240,15 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 791 -- cold resistance
-#aoe 1000 -- 2+
+#aoe 1001 -- 3+
 #end
 
 #selectspell 786 -- fire resistance
-#aoe 1000 -- 2+
+#aoe 1001 -- 3+
 #end
 
 #selectspell 793 -- lightning resistance
-#aoe 1000 -- 2+
+#aoe 1001 -- 3+
 #end
 
 #selectspell 1139 -- gift of giant strength
@@ -160737,7 +159282,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 789 -- Protective Winds
-#fatiguecost 30 -- 30
+#fatiguecost 20
 #end
 
 #selectspell 826 -- Cold Resistant Warriors
@@ -160853,6 +159398,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1307 -- Touch of Madness
 #ainocast 1
+#fatiguecost 20
 #end
 
 #selectspell 1325 -- Pack Ferocity
@@ -160865,7 +159411,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1274 -- Battle Fury
 #pathlevel 0 1
-#aoe 1002 -- 3+
+#aoe 1003 -- 4+
 #end
 
 #selectspell 1275 -- Steal Breath
@@ -160873,7 +159419,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1296 -- Furious Warriors
-#aoe 2004 -- 8+2
+#aoe 2002 -- 6+2
 #end
 
 #selectspell 1314 -- Gift of the Furies
@@ -160970,7 +159516,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1146 -- Gift of True Sight
 #spec 12582912 -- Friendlys only, UWok
-#aoe 1001 -- 2+
+#aoe 1002 -- 3+
 #end
 
 #selectspell 871 -- Fay-eyed Warriors
@@ -160980,7 +159526,21 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1182 -- Gift of Spirit Sight
 #pathlevel 0 2
-#aoe 1001 -- 3+
+#aoe 1003 -- 5+
+#end
+
+#selectspell 1144 -- Regeneration
+#aoe 2
+#fatiguecost 20
+#end
+
+#selectspell 1185 -- Group Regeneration
+#aoe 1001 -- 4+
+--#fatiguecost 50
+#end
+
+#selectspell 1231 -- Mass Regeneration
+#aoe 4004 -- 20+4
 #end
 
 #selectspell 1149 -- Terracotta Army
@@ -161515,7 +160075,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1444 -- Curse of Blood
-#notfornation 101 -- LA Ulm
+--#notfornation 101 -- LA Ulm
 #end
 
 #selectspell 1445 -- Improved Cross Breeding
@@ -162771,6 +161331,7 @@ Can only be cast once per combat round."
 #mainlevel 6
 #constlevel 7
 #cursed
+#unique
 #tainted 5
 #itemcost1 -50
 #makemonsters5 513  -- Spring Hawk
@@ -162972,13 +161533,14 @@ Can only be cast once per combat round."
 #constlevel 5
 #mainpath 4
 #mainlevel 3
-#secondarypath 6
-#secondarylevel 1
+--#secondarypath 6
+--#secondarylevel 1
 #type 8
 #autospell "Power of the Crescent Moon"
 #autospellrepeat 1
 #restricted 101 -- LA Ulm
 #restricted 118 -- Vaettiheim
+#restricted 124 -- Zemaitia
 #end
 
 #selectitem 687
@@ -166856,7 +165418,11 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 224 -- Oppressors Headband
+#descr "With the aid of Phlegyas the Theurg Tyrant and his superior arcane understanding, the Elder Cyclopes have crafted the means to dominate mages joined in communion. All oppressors are equipped with iron headbands and are trained to join the communion. Untrained mages, such as the Gigante Tyrants, are given headbands with stronger enchantments that take magical resources to craft.
+This headband does not require activation in combat."
 #itemcost1 -66
+#armor 574 -- Oppressors Headband
+#commaster
 #end
 
 #selectitem 227 -- Headdress of the Bull
@@ -168067,6 +166633,18 @@ This will also prevent their skin from drying out."
 
 
 -- START OF INFORMATIVE SEARCH EVENTS
+
+#newevent
+#rarity 5
+#req_hiddensite 1
+#req_targorder 7
+#req_targpath1 1
+#msg "There are traces of a more powerful Air site in ##landname##.
+
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Elusive Lights]"
+#header 2
+#end
+
 
 #newevent
 #rarity 5
@@ -173781,7 +172359,7 @@ This will also prevent their skin from drying out."
 #req_rare 0
 #req_pop0ok
 #msg "Sorcerers and mystics across the world report a great surge of malign energy, emanating from the watery realm of ##landname##. Something terrible has occurred and the barriers between this world and the Void are weakening."
-#id 14
+#id 56
 #nolog
 #worlddecscale3 5  -- +3 Magic Scales worldwide
 #worldmark 5
@@ -176008,7 +174586,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_indepok 1
 #req_pop0ok
 #msg "A comet can be seen clearly in the sky, heading straight for Earth. Panic is spreading worldwide."
-#id 15
+#id 57
 #worldunrest 15
 #delay 1
 #end
@@ -176041,7 +174619,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_rare 0
 #req_indepok 1
 #msg "Wildfires spread across the province, killing many. Panic ensued amongst the populace."
-#id 16
+#id 58
 #kill 10
 #unrest 10
 #delay 1
@@ -176067,7 +174645,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_indepok 1
 #nation 2
 #msg "The forces of nature are trying to reclaim this land!"
-#id 17
+#id 59
 #kill 5
 #unrest 35
 #tempunits 1
@@ -176085,8 +174663,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_rare 0
 #req_indepok 1
 #msg "A dark hunger has fallen across the province. The populace has devolved into cannibalism and worse. A local lord has succumbed to the hunger and now leads a band of ravenous creatures against your forces!"
-#nolog
-#id 18
+--#nolog
+#id 53
 #kill 5
 #unrest 10
 #nation 101 -- LA Ulm
@@ -176111,7 +174689,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #incscale2 0  -- +2 Turmoil
 #2com 435  -- Maenad
 #5d6units 435  -- Maenad
-#id 19
+#id 54
 #end
 
 #newevent
@@ -176125,7 +174703,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #incscale2 0  -- +2 Turmoil
 #2com 435  -- Maenad
 #5d6units 435  -- Maenad
-#id 20
+#id 55
 #end
 
 #newevent
@@ -180865,7 +179443,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #msg "Dreamers have entered the Void Gate, and beings from the void have emerged to serve the True God."
 #nolog
 #nation -2
-#1unit 3518  -- Dummy Dreamer
+#1unit 6537  -- Dummy Dreamer
 #end
 
 #newevent
@@ -180891,7 +179469,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #msg "Dreamers have entered the Void Gate, and beings from the void have emerged to serve the True God."
 #nolog
 #nation -2
-#1unit 3518  -- Dummy Dreamer
+#1unit 6537  -- Dummy Dreamer
 #end
 
 #newevent
@@ -180917,7 +179495,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #msg "Dreamers have entered the Void Gate, and beings from the void have emerged to serve the True God."
 #nolog
 #nation -2
-#1unit 3518  -- Dummy Dreamer
+#1unit 6537  -- Dummy Dreamer
 #end
 
 #newevent
@@ -180943,7 +179521,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #msg "Dreamers have entered the Void Gate, and beings from the void have emerged to serve the True God."
 #nolog
 #nation -2
-#1unit 3518  -- Dummy Dreamer
+#1unit 6537  -- Dummy Dreamer
 #end
 
 #newevent
@@ -185955,7 +184533,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #rarity 5
 --#req_land 1
 #req_ench 221 -- Ench21 -- Samhain
-#req_capital 1
+#req_owncapital 1
 #req_fornation 12 -- Marverni
 #msg "During the season of Samhain the Druids have collected Blood slaves for sacrifice."
 #force3d6vis 8 -- blood
@@ -185979,7 +184557,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #rarity 5
 --#req_land 1
 #req_ench 221 -- Ench21 -- Samhain
-#req_capital 1
+#req_owncapital 1
 #req_fornation 11 -- Tir
 #req_fornation 58 -- Eriu
 #req_fornation 85 -- Ys
@@ -186358,7 +184936,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #newevent -- RoL growth + pop
 #req_friendlyench 222 -- Ench22  -- Rivers of Lava
 #rarity 5
-#req_rare 25
+#req_rare 15
 --#req_land 1
 #req_site 1
 #req_pop0ok
@@ -186366,7 +184944,37 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #nolog
 #notext
 #decscale2 3 -- death
-#incpop 15
+#incpop 20
+#end
+
+#newevent -- RoL growth + pop heat 4
+#req_friendlyench 222 -- Ench22  -- Rivers of Lava
+#rarity 5
+#req_rare 10
+#req_heat 4
+--#req_land 1
+#req_site 1
+#req_pop0ok
+#msg "growth+pop [River of Lava]"
+#nolog
+#notext
+#decscale2 3 -- death
+#incpop 40 -- counter heat 4 popkill
+#end
+
+#newevent -- RoL growth + pop heat 5
+#req_friendlyench 222 -- Ench22  -- Rivers of Lava
+#rarity 5
+#req_rare 10
+#req_heat 5
+--#req_land 1
+#req_site 1
+#req_pop0ok
+#msg "growth+pop [River of Lava]"
+#nolog
+#notext
+#decscale2 3 -- death
+#incpop 80 -- counter heat 5 popkill
 #end
 
 #newevent -- RoL Fire Gems 20% 2/month
@@ -188707,6 +187315,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 #selectsite 39 --LA Abysia--
 #popgrowth 40
+#end
 
 
 #newevent 
@@ -189984,6 +188593,237 @@ It is now fully repaired and a new crew has been assigned to it."
 #removesite 2609 -- Barometz site
 #end
 
+#newevent
+#rarity 5
+#req_targmnr 9209 -- Piconye Protopope
+#req_targnopath4 9 -- Priest
+#msg "Increase Protopope magic"
+#notext
+#nolog
+#pathboost 9 -- Priest
+#end
+
+#newevent
+#rarity 5
+#req_unique 1 -- once per game
+#req_monster 9286 -- Gramps
+#req_pop0ok
+#msg "The ground trembles as Gramps awakens from his centuries long slumber, causing earthquakes throughout the province."
+#nation -2
+#unrest 15
+#kill 15
+#end
+
+#newevent
+#rarity 5
+#req_targmnr 9285 -- Mum
+#req_rare 10
+#req_nomnr 9284 -- Dovregubben
+#req_pop0ok
+#msg "Mum has lost interest in the war, for Dovregubben is not present in it."
+#nation -2
+#killtarg
+#end
+
+
+#newevent
+#rarity 5
+#req_targmnr 2052 -- Chayot
+#req_pop0ok
+#req_thronesite 1
+#msg "Claim throne"
+#notext
+#nolog
+#req_mindef 1
+#nation -2
+#claimthrone
+#end
+
+#newevent
+#rarity 5
+#req_targmnr 9210 -- Chayot
+#req_pop0ok
+#req_thronesite 1
+#msg "Claim throne"
+#notext
+#nolog
+#req_mindef 1
+#nation -2
+#claimthrone
+#end
+
+#newevent
+#rarity 5
+#req_targmnr 9213 -- Chayot
+#req_pop0ok
+#req_thronesite 1
+#msg "Claim throne"
+#notext
+#nolog
+#req_mindef 1
+#nation -2
+#claimthrone
+#end
+
+#newevent
+#rarity 5
+#req_targmnr 9216 -- Chayot
+#req_pop0ok
+#req_thronesite 1
+#msg "Claim throne"
+#notext
+#nolog
+#req_mindef 1
+#nation -2
+#claimthrone
+#end
+
+#newevent
+#rarity 5
+#req_targmnr 9219 -- Chayot
+#req_pop0ok
+#req_thronesite 1
+#msg "Claim throne"
+#notext
+#nolog
+#req_mindef 1
+#nation -2
+#claimthrone
+#end
+
+#newevent
+#rarity 5
+#req_targmnr 9222 -- Chayot
+#req_pop0ok
+#req_thronesite 1
+#msg "Claim throne"
+#notext
+#nolog
+#req_mindef 1
+#nation -2
+#claimthrone
+#end
+
+#newevent
+#rarity 5
+#req_targmnr 9224 -- Chayot
+#req_pop0ok
+#req_thronesite 1
+#msg "Claim throne"
+#notext
+#nolog
+#req_mindef 1
+#nation -2
+#claimthrone
+#end
+
+#newevent
+#rarity 5
+#req_targmnr 9226 -- Chayot
+#req_pop0ok
+#req_thronesite 1
+#msg "Claim throne"
+#notext
+#nolog
+#req_mindef 1
+#nation -2
+#claimthrone
+#end
+
+#newevent
+#rarity 5
+#req_targmnr 9228 -- Chayot
+#req_pop0ok
+#req_thronesite 1
+#msg "Claim throne"
+#notext
+#nolog
+#req_mindef 1
+#nation -2
+#claimthrone
+#end
+
+#newevent
+#rarity 5
+#req_targmnr 9230 -- Chayot
+#req_pop0ok
+#req_thronesite 1
+#msg "Claim throne"
+#notext
+#nolog
+#req_mindef 1
+#nation -2
+#claimthrone
+#end
+
+#newevent
+#rarity 5
+#req_targmnr 9232 -- Chayot
+#req_pop0ok
+#req_thronesite 1
+#msg "Claim throne"
+#notext
+#nolog
+#req_mindef 1
+#nation -2
+#claimthrone
+#end
+
+#newevent
+#rarity 5
+#req_targmnr 9234 -- Chayot
+#req_pop0ok
+#req_thronesite 1
+#msg "Claim throne"
+#notext
+#nolog
+#req_mindef 1
+#nation -2
+#claimthrone
+#end
+
+#newevent
+#rarity 5
+#req_targmnr 9235 -- Chayot
+#req_pop0ok
+#req_thronesite 1
+#msg "Claim throne"
+#notext
+#nolog
+#req_mindef 1
+#nation -2
+#claimthrone
+#end
+
+#newevent
+#rarity 5
+#req_targmnr 9236 -- Chayot
+#req_pop0ok
+#req_thronesite 1
+#msg "Claim throne"
+#notext
+#nolog
+#req_mindef 1
+#nation -2
+#claimthrone
+#end
+
+#newevent
+#rarity 5
+#req_targmnr 9237 -- Chayot
+#req_pop0ok
+#req_thronesite 1
+#msg "Claim throne"
+#notext
+#nolog
+#req_mindef 1
+#nation -2
+#claimthrone
+#end
+
+
+
+
 
 
 -- END OF NEW EVENTS
@@ -189999,7 +188839,6 @@ It is now fully repaired and a new crew has been assigned to it."
 #end
 
 #selectevent 1438
-#req_monster 8900 -- hunter chief copy
 #end
 
 
