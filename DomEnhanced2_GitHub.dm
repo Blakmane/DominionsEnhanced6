@@ -57944,6 +57944,1119 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #end
 
 
+-- START OF CHAYOT
+
+
+#newmonster 9210
+#copystats 2053
+#copyspr 2053
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 1 2 -- A
+
+#magicboost 4 -4 -- S
+#secondshape 9266
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9211
+#battleshape 9238
+#end
+
+#newmonster 9211
+#copystats 2054
+#copyspr 2054
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 0 2 -- F
+
+#magicboost 4 -4 -- S
+#secondshape 9267
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9212
+#battleshape 9239
+#end
+
+#newmonster 9212
+#copystats 2055
+#copyspr 2055
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 3 2 -- E
+
+#magicboost 4 -4 -- S
+#secondshape 9268
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9210
+#battleshape 9240
+#end
+
+
+
+#newmonster 9213
+#copystats 2052
+#copyspr 2052
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 4 2 -- S
+
+#magicboost 1 -4 -- A
+#secondshape 9266
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9214
+#battleshape 9241
+#end
+
+#newmonster 9214
+#copystats 2054
+#copyspr 2054
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 0 2 -- F
+
+#magicboost 1 -4 -- A
+#secondshape 9269
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9215
+#battleshape 9242
+#end
+
+#newmonster 9215
+#copystats 2055
+#copyspr 2055
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 3 2 -- E
+
+#magicboost 1 -4 -- A
+#secondshape 9270
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9213
+#battleshape 9243
+#end
+
+
+
+#newmonster 9216
+#copystats 2052
+#copyspr 2052
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 4 2 -- S
+
+#magicboost 0 -4 -- F
+#secondshape 9267
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9217
+#battleshape 9244
+#end
+
+#newmonster 9217
+#copystats 2053
+#copyspr 2053
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 1 2 -- A
+
+#magicboost 0 -4 -- F
+#secondshape 9269
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9218
+#battleshape 9245
+#end
+
+#newmonster 9218
+#copystats 2055
+#copyspr 2055
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 3 2 -- E
+
+#magicboost 0 -4 -- F
+#secondshape 9271
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9216
+#battleshape 9246
+#end
+
+
+
+#newmonster 9219
+#copystats 2052
+#copyspr 2052
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 4 2 -- S
+
+#magicboost 3 -4 -- E
+#secondshape 9268
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9220
+#battleshape 9247
+#end
+
+#newmonster 9220
+#copystats 2053
+#copyspr 2053
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 1 2 -- A
+
+#magicboost 3 -4 -- E
+#secondshape 9270
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9221
+#battleshape 9248
+#end
+
+#newmonster 9221
+#copystats 2054
+#copyspr 2054
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 0 2 -- F
+
+#magicboost 3 -4 -- E
+#secondshape 9271
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9219
+#battleshape 9249
+#end
+
+
+
+
+
+
+
+
+
+
+
+#newmonster 9222
+#copystats 2054
+#copyspr 2054
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 0 2 -- F
+
+#magicboost 1 -4 -- A
+#magicboost 4 -4 -- S
+#secondshape 9275
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9223
+#battleshape 9250
+#end
+
+#newmonster 9223
+#copystats 2055
+#copyspr 2055
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 3 2 -- E
+
+#magicboost 1 -4 -- A
+#magicboost 4 -4 -- S
+#secondshape 9274
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9222
+#battleshape 9251
+#end
+
+
+
+#newmonster 9224
+#copystats 2053
+#copyspr 2053
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 1 2 -- A
+
+#magicboost 0 -4 -- F
+#magicboost 4 -4 -- S
+#secondshape 9275
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9225
+#battleshape 9252
+#end
+
+#newmonster 9225
+#copystats 2055
+#copyspr 2055
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 3 2 -- E
+
+#magicboost 0 -4 -- F
+#magicboost 4 -4 -- S
+#secondshape 9273
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9224
+#battleshape 9253
+#end
+
+
+
+#newmonster 9226
+#copystats 2053
+#copyspr 2053
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 1 2 -- A
+
+#magicboost 3 -4 -- E
+#magicboost 4 -4 -- S
+#secondshape 9274
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9227
+#battleshape 9254
+#end
+
+#newmonster 9227
+#copystats 2054
+#copyspr 2054
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 0 2 -- F
+
+#magicboost 3 -4 -- E
+#magicboost 4 -4 -- S
+#secondshape 9273
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9226
+#battleshape 9255
+#end
+
+
+
+#newmonster 9228
+#copystats 2052
+#copyspr 2052
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 4 2 -- S
+
+#magicboost 0 -4 -- F
+#magicboost 1 -4 -- A
+#secondshape 9275
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9229
+#battleshape 9256
+#end
+
+#newmonster 9229
+#copystats 2055
+#copyspr 2055
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 3 2 -- E
+
+#magicboost 3 -4 -- E
+#magicboost 4 -4 -- S
+#secondshape 9272
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9228
+#battleshape 9257
+#end
+
+
+
+#newmonster 9230
+#copystats 2052
+#copyspr 2052
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 4 2 -- S
+
+#magicboost 3 -4 -- E
+#magicboost 1 -4 -- A
+#secondshape 9274
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9231
+#battleshape 9258
+#end
+
+#newmonster 9231
+#copystats 2054
+#copyspr 2054
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 0 2 -- F
+
+#magicboost 3 -4 -- E
+#magicboost 1 -4 -- A
+#secondshape 9272
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9230
+#battleshape 9259
+#end
+
+
+
+#newmonster 9232
+#copystats 2052
+#copyspr 2052
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 4 2 -- S
+
+#magicboost 0 -4 -- F
+#magicboost 3 -4 -- E
+#secondshape 9273
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9233
+#battleshape 9260
+#end
+
+#newmonster 9233
+#copystats 2053
+#copyspr 2053
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 1 2 -- A
+
+#magicboost 0 -4 -- F
+#magicboost 3 -4 -- E
+#secondshape 9272
+#forcess
+#armor 230 -- Magic Robes
+#shapechange 9232
+#battleshape 9261
+#end
+
+
+
+
+#newmonster 9234
+#copystats 2052
+#copyspr 2052
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+--#immortal -- Chayot Immortality
+--#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 4 2 -- S
+
+#magicboost 1 -4 -- A
+#magicboost 0 -4 -- F
+#magicboost 3 -4 -- E
+
+#shapechange -1
+#armor 230 -- Magic Robes
+#end
+
+#newmonster 9235
+#copystats 2053
+#copyspr 2053
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+--#immortal -- Chayot Immortality
+--#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 1 2 -- A
+
+#magicboost 4 -4 -- S
+#magicboost 0 -4 -- F
+#magicboost 3 -4 -- E
+
+#shapechange -1
+#armor 230 -- Magic Robes
+#end
+
+#newmonster 9236
+#copystats 2054
+#copyspr 2054
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+--#immortal -- Chayot Immortality
+--#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 0 2 -- F
+
+#magicboost 4 -4 -- S
+#magicboost 1 -4 -- A
+#magicboost 3 -4 -- E
+
+#shapechange -1
+#armor 230 -- Magic Robes
+#end
+
+#newmonster 9237
+#copystats 2055
+#copyspr 2055
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+--#immortal -- Chayot Immortality
+--#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 3 2 -- E
+
+#magicboost 4 -4 -- S
+#magicboost 1 -4 -- A
+#magicboost 0 -4 -- F
+
+#shapechange -1
+#armor 230 -- Magic Robes
+#end
+
+
+
+
+
+#selectmonster 9238
+#copystats 9210
+#copyspr 9210
+#worldshape 9210
+#shapechange -1
+#end
+
+#selectmonster 9239
+#copystats 9211
+#copyspr 9211
+#worldshape 9211
+#shapechange -1
+#end
+
+#selectmonster 9240
+#copystats 9212
+#copyspr 9212
+#worldshape 9212
+#shapechange -1
+#end
+
+#selectmonster 9241
+#copystats 9213
+#copyspr 9213
+#worldshape 9213
+#shapechange -1
+#end
+
+#selectmonster 9242
+#copystats 9214
+#copyspr 9214
+#worldshape 9214
+#shapechange -1
+#end
+
+#selectmonster 9243
+#copystats 9215
+#copyspr 9215
+#worldshape 9215
+#shapechange -1
+#end
+
+#selectmonster 9244
+#copystats 9216
+#copyspr 9216
+#worldshape 9216
+#shapechange -1
+#end
+
+#selectmonster 9245
+#copystats 9217
+#copyspr 9217
+#worldshape 9217
+#shapechange -1
+#end
+
+#selectmonster 9246
+#copystats 9218
+#copyspr 9218
+#worldshape 9218
+#shapechange -1
+#end
+
+#selectmonster 9247
+#copystats 9219
+#copyspr 9219
+#worldshape 9219
+#shapechange -1
+#end
+
+#selectmonster 9248
+#copystats 9220
+#copyspr 9220
+#worldshape 9220
+#shapechange -1
+#end
+
+#selectmonster 9249
+#copystats 9221
+#copyspr 9221
+#worldshape 9221
+#shapechange -1
+#end
+
+#selectmonster 9250
+#copystats 9222
+#copyspr 9222
+#worldshape 9222
+#shapechange -1
+#end
+
+#selectmonster 9251
+#copystats 9223
+#copyspr 9223
+#worldshape 9223
+#shapechange -1
+#end
+
+#selectmonster 9252
+#copystats 9224
+#copyspr 9224
+#worldshape 9224
+#shapechange -1
+#end
+
+#selectmonster 9253
+#copystats 9225
+#copyspr 9225
+#worldshape 9225
+#shapechange -1
+#end
+
+#selectmonster 9254
+#copystats 9226
+#copyspr 9226
+#worldshape 9226
+#shapechange -1
+#end
+
+#selectmonster 9255
+#copystats 9227
+#copyspr 9227
+#worldshape 9227
+#shapechange -1
+#end
+
+#selectmonster 9256
+#copystats 9228
+#copyspr 9228
+#worldshape 9228
+#shapechange -1
+#end
+
+#selectmonster 9257
+#copystats 9229
+#copyspr 9229
+#worldshape 9229
+#shapechange -1
+#end
+
+#selectmonster 9258
+#copystats 9230
+#copyspr 9230
+#worldshape 9230
+#shapechange -1
+#end
+
+#selectmonster 9259
+#copystats 9231
+#copyspr 9231
+#worldshape 9231
+#shapechange -1
+#end
+
+#selectmonster 9260
+#copystats 9232
+#copyspr 9232
+#worldshape 9232
+#shapechange -1
+#end
+
+#selectmonster 9261
+#copystats 9233
+#copyspr 9233
+#worldshape 9233
+#shapechange -1
+#end
+
+
+
+#selectmonster 9262 -- Chayot 1
+#copystats 2052
+#copyspr 2052
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 4 2 -- S
+#secondshape 9276
+#forcess
+#armor 230 -- Magic Robes
+
+#shapechange -1
+#worldshape 2052
+#end
+
+#selectmonster 9263 -- Chayot 2
+#copystats 2053
+#copyspr 2053
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 1 2 -- A
+#secondshape 9277
+#forcess
+#armor 230 -- Magic Robes
+#worldshape 2053
+#end
+
+#selectmonster 9264 -- Chayot 3
+#copystats 2054
+#copyspr 2054
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 0 2 -- F
+#secondshape 9278
+#forcess
+#armor 230 -- Magic Robes
+#worldshape 2054
+#end
+
+#selectmonster 9265 -- Chayot 4
+#copystats 2055
+#copyspr 2055
+#name "Chayot"
+#descr "The Chayot, living beings, are high servants of the Celestial Sphere. They will only manifest as part of the Merkavah, the Divine Chariot. They serve the Reawakening God as he chose to claim this world as his and proclaim His Glory. The Chayot are surrounded by a blaze of unbearable splendor. At the center of the brilliance stands an angelic being with four wings, four faces and four colors. The Tetramorph have powers over the four cardinal directions and each face beholds all that passes under its domain. The divine might of the Chayot is so vast that it cannot be contained in a singular physical body and only one form of the Tetramorph is manifest at any time. The human faced form of the Chayot has power over the stars and constellations, the eagle-faced form has the power of the skies, the lion-faced the power of the sun, and finally the ox-faced form with powers over the earth and mountains. If a form of the Chayot is destroyed, the remaining forms of the Chayot will manifest again where it was summoned and the powers of the destroyed form will be lost. Only after all four manifestations of the Chayot have been destroyed will the Chayot truly die. Once a Chayot has entered battle they cannot change which form of the Tetramorph they manifest. Chayot will automatically claim thrones in their presence."
+#hp 88
+#mr 20
+#immortal -- Chayot Immortality
+#reformtime -2
+
+#magicboost 53 -1
+#magicboost 9 -5
+#magicboost 3 2 -- E
+#secondshape 9279
+#forcess
+#armor 230 -- Magic Robes
+#worldshape 2055
+#end
+
+
+#newmonster 9266
+#copystats 9222
+#copyspr 9222
+#hp 1
+#shapechange -1
+#secondshape 0
+#immortal
+#reformtime -2
+#onebattlespell "Death"
+#woundfend 99
+#startingaff 1099511627776
+#homeshape 9222
+#end
+
+#newmonster 9267
+#copystats 9224
+#copyspr 9224
+#hp 1
+#shapechange -1
+#secondshape 0
+#immortal
+#reformtime -2
+#onebattlespell "Death"
+#woundfend 99
+#startingaff 1099511627776
+#homeshape 9224
+#end
+
+#newmonster 9268
+#copystats 9226
+#copyspr 9226
+#hp 1
+#shapechange -1
+#secondshape 0
+#immortal
+#reformtime -2
+#onebattlespell "Death"
+#woundfend 99
+#startingaff 1099511627776
+#homeshape 9226
+#end
+
+#newmonster 9269
+#copystats 9228
+#copyspr 9228
+#hp 1
+#shapechange -1
+#secondshape 0
+#immortal
+#reformtime -2
+#onebattlespell "Death"
+#woundfend 99
+#startingaff 1099511627776
+#homeshape 9228
+#end
+
+#newmonster 9270
+#copystats 9230
+#copyspr 9230
+#hp 1
+#shapechange -1
+#secondshape 0
+#immortal
+#reformtime -2
+#onebattlespell "Death"
+#woundfend 99
+#startingaff 1099511627776
+#homeshape 9230
+#end
+
+#newmonster 9271
+#copystats 9232
+#copyspr 9232
+#hp 1
+#shapechange -1
+#secondshape 0
+#immortal
+#reformtime -2
+#onebattlespell "Death"
+#woundfend 99
+#startingaff 1099511627776
+#homeshape 9232
+#end
+
+#newmonster 9272
+#copystats 9234
+#copyspr 9234
+#hp 1
+#shapechange -1
+#secondshape 0
+#immortal
+#reformtime -2
+#onebattlespell "Death"
+#woundfend 99
+#startingaff 1099511627776
+#homeshape 9234
+#end
+
+#newmonster 9273
+#copystats 9235
+#copyspr 9235
+#hp 1
+#shapechange -1
+#secondshape 0
+#immortal
+#reformtime -2
+#onebattlespell "Death"
+#woundfend 99
+#startingaff 1099511627776
+#homeshape 9235
+#end
+
+#newmonster 9274
+#copystats 9236
+#copyspr 9236
+#hp 1
+#shapechange -1
+#secondshape 0
+#immortal
+#reformtime -2
+#onebattlespell "Death"
+#woundfend 99
+#startingaff 1099511627776
+#homeshape 9236
+#end
+
+#newmonster 9275
+#copystats 9237
+#copyspr 9237
+#hp 1
+#shapechange -1
+#secondshape 0
+#immortal
+#reformtime -2
+#onebattlespell "Death"
+#woundfend 99
+#startingaff 1099511627776
+#homeshape 9237
+#end
+
+#newmonster 9276
+#copystats 9210
+#copyspr 9210
+#hp 1
+#shapechange -1
+#secondshape 0
+#immortal
+#reformtime -2
+#onebattlespell "Death"
+#woundfend 99
+#startingaff 1099511627776
+#homeshape 9210
+#end
+
+#newmonster 9277
+#copystats 9213
+#copyspr 9213
+#hp 1
+#shapechange -1
+#secondshape 0
+#immortal
+#reformtime -2
+#onebattlespell "Death"
+#woundfend 99
+#startingaff 1099511627776
+#homeshape 9213
+#end
+
+#newmonster 9278
+#copystats 9216
+#copyspr 9216
+#hp 1
+#shapechange -1
+#secondshape 0
+#immortal
+#reformtime -2
+#onebattlespell "Death"
+#woundfend 99
+#startingaff 1099511627776
+#homeshape 9216
+#end
+
+#newmonster 9279
+#copystats 9219
+#copyspr 9219
+#hp 1
+#shapechange -1
+#secondshape 0
+#immortal
+#reformtime -2
+#onebattlespell "Death"
+#woundfend 99
+#startingaff 1099511627776
+#homeshape 9219
+#end
+
+
+
+
+-- END OF CHAYOT
 
 
 
