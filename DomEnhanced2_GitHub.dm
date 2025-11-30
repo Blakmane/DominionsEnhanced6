@@ -132043,6 +132043,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #nreff 1
 #damage 7826
 #fatiguecost 7700
+#effect 10089
 #end
 
 #selectspell 2333
@@ -146600,7 +146601,7 @@ All effects scale with friendly Dominion."
 #pathlevel 1 5
 #restricted 18 -- Ubar
 #restricted 65 -- Na'Ba
-#effect 10021
+#effect 10089
 #nreff 1
 #damage 7157
 #fatiguecost 15000
@@ -147540,7 +147541,7 @@ All effects scale with friendly Dominion."
 #path 0 6
 #pathlevel 0 2
 #effect 10001
-#nreff 506
+#nreff 505
 #damage 6712
 #fatiguecost 600
 #restricted 193
@@ -157043,7 +157044,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #path 1 5
 #pathlevel 1 3
 #nreff 1
-#effect 10021
+#effect 10089
 #fatiguecost 4500
 #damage 9103 -- Bogeyman
 #end
@@ -157090,7 +157091,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #path 1 7
 #pathlevel 1 2
 #nreff 1
-#effect 10021
+#effect 10089
 #fatiguecost 9900
 #damage 9108 -- Harvester
 #end
@@ -157433,7 +157434,7 @@ This spell can only be cast in a deep water province."
 #path 1 4 -- S3
 #pathlevel 1 3
 #fatiguecost 5000
-#effect 10021
+#effect 10089
 #nreff 1
 #spec 0
 #damage 9150
