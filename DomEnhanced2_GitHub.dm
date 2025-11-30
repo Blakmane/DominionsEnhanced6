@@ -129878,7 +129878,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #pathlevel 0 3
 #path 1 6
 #pathlevel 1 2
-#aoe 25
+#aoe 15
 #range 10
 #ainocast 1
 #damage 483183893504  -- Stoneskin + Enlarge + Fire, Cold, Lightning & Physical resist
@@ -158203,7 +158203,6 @@ This spell can only be cast in a deep water province."
 
 #selectspell 811 -- Mistform
 #precision 100
-#aoe 2
 #end
 
 #selectspell 848 -- Shadow Warriors
@@ -159568,8 +159567,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 803 -- Group Blur
-#aoe 2002 -- 6+2
-#fatiguecost 20
+#aoe 2004 -- 8+2
+#fatiguecost 30 -- 40 -> 30
 #end
 
 #selectspell 841 -- Enfeeble
@@ -159643,8 +159642,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 807 -- Quickness
 #details "Grants +2 Att, +2 Def and Combat speed is doubled"
 #pathlevel 0 1
---#aoe 1000 -- 1+
-#aoe 2
+#aoe 1000 -- 1+
+--#aoe 2
 #fatiguecost 40
 #end
 
@@ -160322,7 +160321,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1287 -- Iron Will
-#aoe 1001 -- 2+
+#aoe 1002 -- 3+
 #end
 
 #selectspell 1090 -- Soldiers of Steel
@@ -160533,7 +160532,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1296 -- Furious Warriors
-#aoe 2002 -- 6+2
+#aoe 2004 -- 8+2
+#fatiguecost 30 -- 40 -> 30
 #end
 
 #selectspell 1314 -- Gift of the Furies
