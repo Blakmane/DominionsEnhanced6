@@ -37485,6 +37485,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #prot 16
 #startage 5
 #maxage 20
+#uwregen 5
+#regeneration 5
 #weapon 373  -- Stone Spear
 #weapon 600  -- Crab Claw
 #end
@@ -38013,26 +38015,24 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #end
 
 #newmonster 7904
-#copystats 3054  -- Starspawn Priest
-#copyspr 332  -- Starspawn
+#copystats 3857  -- Starspawn
+#copyspr 3857  -- Starspawn
 #clearmagic
-#name "Starspawn"
-#descr "Starspawns are ancient Illithids of tremendous power. Most remember the day when the Star fell and the City of R'lyeh was built. With the coming of the Sleeping God those Starspawns that received the dreams most strongly have risen to positions of power within the City of Unfulfilled Dreams. These Starspawns are High Priests of the Sleeping God, masters of Astral magic and the void. Whilst at a temple they can call beings from the void. All Illithids are amphibious and able to use a mind blast attack in battle."
-#homerealm 0
+#name "Starspawn Dreamer"
+#descr "Starspawn Dreamers are ancient Illithids of tremendous power. Most remember the day when the Star fell and the City of R'lyeh was built. With the coming of the Sleeping God those Starspawns that received the Dreams most strongly have risen to positions of power within the City of Unfulfilled Dreams. These Starspawns are High Priests of the Sleeping God, masters of Astral and Glamour Magic. All Illithids are amphibious and able to use a mind blast attack in battle. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
 #rpcost 4
 #slowrec
-#chaosrec 10
-#magicskill 4 3
-#magicskill 2 1
+#chaosrec 20
+#magicpower 1
+#magicskill 4 2
+#magicskill 7 2
 #magicskill 9 3
-#custommagic 7680 100  -- 100% WESD
-#custommagic 7680 10  -- 10% WESD
+#custommagic 24064 200  -- 200% WESDG
+#custommagic 24064 10  -- 10% WESDG
 #insane 10
 #voidsanity 10
 #holy
-#mr 18
-#mor 10
-#templetrainer -1020
+#mor 18
 #end
 
 #newmonster 7905
@@ -40177,7 +40177,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #weapon 86  -- Mind Blast
 #homerealm 0
 #magicskill 4 4
-#magicskill 8 4
+#magicskill 7 3
+#magicskill 8 3
 #montag 1042  -- Void Lords
 #end
 
@@ -40320,7 +40321,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Shapeless Void"
 #spr1 "magicenhanced/shapeless.tga"
 #spr2 "magicenhanced/shapeless2.tga"
-#descr "Vil-Shash-Kha is a being from the void that takes the form of an enormous writhing mass of boiling, formless matter. Over many aeons it has grown to enormous proportions and is now worshipped as a Lord of the Void. The form of the creature ripples and flows in strange patterns and will adhere to those that stray too close. Vil-Shash-Kha can regenerate wounds and will use twisting strands of void matter to crush, strangle and corrode those that oppose it in battle. As a Lord of the Void it is sacred to the starspawn, and will spread the influence of the Dreaming God wherever it goes."
+#descr "Vil-Shash-Kha is a being from the void that takes the form of an enormous writhing mass of boiling, formless matter. Over many aeons it has grown to enormous proportions and is now worshipped as a Lord of the Void. The form of the creature ripples and flows in impossible patterns that drive men insane, and it will adhere to those that stray too close. Vil-Shash-Kha can regenerate wounds and will use twisting strands of void matter to crush, strangle and corrode those that oppose it in battle. As a Lord of the Void it is sacred to the starspawn, and will spread the influence of the Dreaming God wherever it goes."
 #fixedname "Vil-Shash-Kha"
 #unique
 #miscshape
@@ -40341,7 +40342,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #drawsize -25
 #spreaddom 1
 #magicskill 3 4
-#magicskill 4 5
+#magicskill 7 4
 #weapon 329  -- Slime
 #weapon 90  -- Crush
 #weapon 636  -- Life Drain Tentacle
@@ -40355,6 +40356,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #shockres 15
 #poisonres 15
 #slimer 5
+#onebattlespell "Shroud of Bewilderment"
 #blind
 #amphibian
 #neednoteat
@@ -40384,7 +40386,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #holy
 #magicbeing
 #spreaddom 1
-#magicskill 4 5
+#magicskill 4 6
 #onebattlespell 745 -- Astral Tempest
 #homerealm 0
 #montag 1042  -- Void Lords
@@ -40414,7 +40416,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #ap 16
 #holy
 #spreaddom 1
-#magicskill 4 4
+#magicskill 4 5
 #magicskill 5 5
 #weapon 271  -- Life Drain Tentacle
 #weapon 271  -- Life Drain Tentacle
@@ -40439,6 +40441,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #popkill 20
 #incunrest 100
 #defector 5
+#bonusspells 1
 #indepmove 50
 #woundfend 99
 #itemslots 3932160 -- 4 misc
@@ -40467,7 +40470,9 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #teleport
 #heal
 #stealthy 0
-#magicskill 4 5
+#magicskill 4 3
+#magicskill 5 3
+#magicskill 7 5
 #diseaseres 100
 #insanify 25
 #mapmove 102
@@ -59821,8 +59826,138 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #end
 
 
+-- New LA R'lyeh Monsters
+
+#newmonster 9306 -- Illithid Cultist
+#copystats 331 -- Illithid
+#copyspr 331
+--#spr1 "worthy_heroes/birdlordbird1.png"
+-- #spr2 "worthy_heroes/birdlordbird2.png"
+#name "Illithid Cultist"
+#descr "With the coming of the Dreaming God, even the Illithid are influenced by the call of the Void and subsequent horrors of the Dreamlands. Illithid who have succumbed to madness become holy figures within the Dream Cult as a sure sign of the Void's favour. They are cheaper to recruit in lands touched by the bizarre dreams of R'lyeh."
+#gcost 160
+#magicskill 9 2 -- Priest
+#custommagic 2048 30
+#custommagic 16384 30
+#userestricteditem 14
+#stealthy 0
+#chaosrec 10
+#insane 10
+#mor 14
+#okleader
+#end
+
+#newmonster 9307 -- Dreaming Mage
+#copystats 1518 -- Slave Mage
+#copyspr 1518
+--#spr1 "worthy_heroes/birdlordbird1.png"
+-- #spr2 "worthy_heroes/birdlordbird2.png"
+#name "Dreaming Mage"
+#descr "The coming of the Dreamlands shattered the great slave empire of R'lyeh and freed many of its slaves. Unfortunately, not all were lucky enough to escape before the madness overwhelmed them. Dreaming mages are slave mages trapped in Dreams of strange and mind-defying places. Half asleep and half awake, they continue to perform their arcane duties for the surviving Illithids. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the Void. They are cheaper to recruit in lands touched by the bizarre dreams of R'lyeh."
+#gcost 220
+#clearmagic
+#magicskill 7 1 -- Glamour
+#magicskill 4 1 -- Astral
+#magicskill 2 1 -- Water
+#custommagic 27136 100 - 100% WSNG
+#morale 18
+#mr 17
+#insane 10
+#landshape 9308
+#magicpower 1
+#voidsanity 1
+#chaosrec 5
+#end
+
+#newmonster 9308 -- Dreaming Mage land shape
+#copystats 1519 -- Slave Mage
+#copyspr 1519
+--#spr1 "worthy_heroes/birdlordbird1.png"
+-- #spr2 "worthy_heroes/birdlordbird2.png"
+#name "Dreaming Mage"
+#descr "The coming of the Dreamlands shattered the great slave empire of R'lyeh and freed many of its slaves. Unfortunately, not all were lucky enough to escape before the madness overwhelmed them. Dreaming mages are slave mages trapped in Dreams of strange and mind-defying places. Half asleep and half awake, they continue to perform their arcane duties for the surviving Illithids. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the Void. They are cheaper to recruit in lands touched by the bizarre dreams of R'lyeh."
+#gcost 200
+#clearmagic
+#magicskill 7 1 -- Glamour
+#magicskill 4 1 -- Astral
+#magicskill 2 1 -- Water
+#custommagic 27136 100 - 100% WSNG
+#morale 18
+#mr 17
+#insane 10
+#magicpower 1
+#watershape 9307
+#voidsanity 5
+#chaosrec 5
+#end
+
+#newmonster 9309 -- Triton Hybrid
+#copyspr 306
+--#spr1 "worthy_heroes/birdlordbird1.png"
+--#spr2 "worthy_heroes/birdlordbird2.png"
+#name "Triton Hybrid"
+#descr "As their grand empire collapsed around them, the Illithid of R'yleh turned to more horrific and twisted experiments in an attempt to maintain the loyalty of their slave races. Triton Hybrids are an abomination, mutated en-masse within great flesh vats by fusing Tritons and Mermen. Each head controls one half of the hybrid as it jerks forward upon a writhing mass of fins, in  mockery of their once graceful movements. Triton Hybrids can only hope for a quick death on the battlefield and are surprisingly difficult to rout."
+#naga
+#itemslots 1925662
+
+#rcost 1
+#gcost 16
+#rpcost 18
+#hp 22
+#str 12
+#att 11
+#def 10
+#prec 8
+#prot 1
+#size 4
+#mr 12
+#mor 13
+#enc 3
+#mapmove 12
+#ap 10
+#weapon 670 -- Bone Trident
+#weapon 671 -- Stone Dagger
+#weapon 671 -- Stone Dagger
+#armor 140 -- Shell Armour
+#ambidextrous 3
+#unsurr 1
+#amphibian
+#maxage 50
+#slave
+#end
+
+#newmonster 9310 -- Lobster Hybrid recruitable
+#descr "The Lobster hybrid is a larger, more ferocious version of a Crab Hybrid created from captured sea trolls rather than Atlantians. Lobster hybrids are semi-intelligent and used in battle as heavy shock troops. Their thick armor plates and large pincers mixed with the Sea Trolls natural strength and regenerative ability make them highly effective warriors. Lobster hybrids are amphibious and can leave the sea. Costs 46 RP"
+#copystats 7890
+#copyspr 7890
+#gcost 65
+#rpcost 46
+#reclimit 5
+#rcost 1
+#slave
+#end
+
+#newmonster 9311 -- Nightmare Guard
+#copystats 407 -- Illithid Soldier
+#copyspr 407
+--#spr1 "worthy_heroes/birdlordbird1.png"
+--#spr2 "worthy_heroes/birdlordbird2.png"
+#name "Nightmare Guard"
+#descr "Illithids are members of a once great race from a distant star. Following their descent from the heavens, raw meteoric metal was so common in R'lyeh that even their slaves could be outfitted with meteorite iron armour and weapons. After the collapse of R'lyeh and rise of the Dreamlands these precious metals have become rare, hoarded only by the most powerful Illithid lords. In the ruins of the Capital, remnants of the once mighty Illithid armies gather what little meteorite iron remains and use it to outfit those touched by the power of the Void Rift. These Sacred Illithid are caught between wakefulness and sleep, forever dreaming of their distant home across the Void. Tainted psychic energy leaks from their shattered minds, causing enemies around them to experience waking nightmares. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Nightmare Guard will grow stronger in provinces closer to the Void. Costs 51 RP."
+#gcost 85
+#rpcost 51
+#mor 18
+#insane 25
+#magicpower 1
+#reclimit 3
+#mr 17
+#holy
+#holycost 2
+#nightmareaura 5
+#end
 
 
+-- End LA Ryleh Monsters
 
 -- END OF NEW MONSTERS (Skip 9600~9672)
 
@@ -70126,6 +70261,41 @@ Only three Queens of Elemental Water are known to exist."
 #makemonsters1 3755 -- "Illearth"
 #end
 
+-- R'LYEH UNIT TWEAKS
+
+#selectmonster 243 -- Crab Hybrid
+#descr "The crab hybrid is a strange cross between an Atlantian and a giant crab. It is unknown how this being is born, but it is probably mutated into existence by the Lord of R'lyeh. Crab hybrids are semi-intelligent and entrusted with the care of other slaves. In battle, they use their pincers and sheer size to overcome enemies."
+#amphibian
+#slave
+#prot 16
+#att 10
+#end
+
+#selectmonster 970 -- Hybrid
+#slave
+#weapon 85 -- tentacle
+#rpcost 12
+#end
+
+#selectmonster 971 -- Hybrid Trooper
+#slave
+#rpcost 16
+#weapon 85 -- tentacle
+#end
+
+#selectmonster 972 -- Hybrid Soldier
+#weapon 311  -- Mind Blast
+#descr "Hybrid are usually strange crossbreeds between humans and Deep Ones. This one seems to have been more successful than the usual one however, perhaps an Illithid was involved or perhaps the influences from R'lyeh were extra potent. Costs 32 RP."
+#gcost 40
+#reclimit 3
+#rpcost 32
+#end
+
+#selectmonster 759 -- Dweller in the Deep
+#descr "The Dweller-in-the-Deep is an otherworldly being summoned from the Void by the Starspawns of R'lyeh. It can paralyze sentient beings with its otherworldly mind and drain their life essence."
+#amphibian
+#end
+
 -- Start of New Pretender Changes and Additions
 
 
@@ -77258,6 +77428,8 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #neednoteat
 #berserk 5
 #poisonres 15
+#voidsanity 20
+#prot 10
 #startage 1000
 #maxage 2000
 #goodmagicleader
@@ -91616,84 +91788,118 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 
 #selectmonster 1563  -- Void Cultist
 #userestricteditem 14
-#descr "A worshipper of the Void and a leader of a Dream Cult. Most Void Cultists have heard the Dreams of R'lyeh and are on the verge of madness. Void Cultists have expanded minds and can lead small numbers of madmen and magical beings. Whilst at a temple of R'lyeh they can perform mind-warping rites that will summon forth beings from the void. They are cheaper to recruit in lands touched by the bizarre dreams of R'lyeh."
-#magicpower 1
-#patrolbonus -1
+#descr "A worshipper of the Void and a leader of a Dream Cult. Most Void Cultists have heard the Dreams of R'lyeh and are on the verge of madness. Void Cultists have expanded minds and can lead small numbers of madmen and magical beings. They are cheaper to recruit in lands touched by the bizarre dreams of R'lyeh."
 #chaosrec 5
-#templetrainer -1020
+#clearmagic
+#magicskill 9 1 -- Priest
+#custommagic 2048 30
+#custommagic 16384 30
 #end
 
 #selectmonster 1564  -- Mad Cultist
 #userestricteditem 14
+#morale 15
+#gcost 0
+#clearmagic
+#magicskill 9 1 -- Priest
+#custommagic 18432 50
 #end
 
 #selectmonster 1566  -- Mad One
 #patrolbonus -1
+#morale 15
+#gcost 0
 #end
 
 #selectmonster 1567  -- Mad Merman
 #patrolbonus -1
+#morale 15
+#gcost 0
 #end
 
 #selectmonster 1568  -- Mad Merman
 #patrolbonus -1
+#morale 15
+#gcost 0
 #end
 
 #selectmonster 1569  -- Mad Triton
 #patrolbonus -1
-#end
-
-#selectmonster 1570  -- Human Dreamer
-#descr "Under the influence of the Void, people dream of strange and mind-defying places. The otherworldly Dreams are so clear, yet strange, that the Dreamers are unaware that they are dreaming. Trapped in these strange Dreamlands, the sleeping refuse to wake up. Half asleep and half awake, they try to do what their Dreams tell them. As everything seems unreal to the Dreamers, they are rarely frightened or routed. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
-#att 5
-#def 5
-#str 9
-#magicpower 1
-#patrolbonus -1
-#end
-
-#selectmonster 1571  -- Deep One Dreamer
-#descr "Under the influence of the Void, people dream of strange and mind-defying places. The otherworldly Dreams are so clear, yet strange, that the Dreamers are unaware that they are dreaming. Trapped in these strange Dreamlands, the sleeping refuse to wake up. Half asleep and half awake, they try to do what their Dreams tell them. As everything seems unreal to the Dreamers, they are rarely frightened or routed. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
-#att 5
-#def 5
-#str 9
-#magicpower 1
-#patrolbonus -1
-#end
-
-#selectmonster 1572  -- Merman Dreamer
-#descr "Under the influence of the Void, people dream of strange and mind-defying places. The otherworldly Dreams are so clear, yet strange, that the Dreamers are unaware that they are dreaming. Trapped in these strange Dreamlands, the sleeping refuse to wake up. Half asleep and half awake, they try to do what their Dreams tell them. As everything seems unreal to the Dreamers, they are rarely frightened or routed. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
-#att 5
-#def 5
-#str 9
-#magicpower 1
-#patrolbonus -1
-#end
-
-#selectmonster 1573  -- Merman Dreamer
-#descr "Under the influence of the Void, people dream of strange and mind-defying places. The otherworldly Dreams are so clear, yet strange, that the Dreamers are unaware that they are dreaming. Trapped in these strange Dreamlands, the sleeping refuse to wake up. Half asleep and half awake, they try to do what their Dreams tell them. As everything seems unreal to the Dreamers, they are rarely frightened or routed. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
-#att 5
-#def 5
-#str 9
-#magicpower 1
-#patrolbonus -1
-#end
-
-#selectmonster 1574  -- Triton Dreamer
-#descr "Under the influence of the Void, people dream of strange and mind-defying places. The otherworldly Dreams are so clear, yet strange, that the Dreamers are unaware that they are dreaming. Trapped in these strange Dreamlands, the sleeping refuse to wake up. Half asleep and half awake, they try to do what their Dreams tell them. As everything seems unreal to the Dreamers, they are rarely frightened or routed. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
-#att 5
-#def 5
-#str 10
-#magicpower 1
-#patrolbonus -1
-#end
-
-#selectmonster 1575  -- Hybrid Cultist
-#userestricteditem 14
+#morale 15
+#gcost 0
+#clearweapons
+#weapon 671
 #end
 
 #selectmonster 1576  -- Mad Hybrid
 #patrolbonus -1
+#morale 15
+#end
+
+#selectmonster 1570  -- Human Dreamer
+#descr "Under the influence of the Void, people dream of strange and mind-defying places. The otherworldly Dreams are so clear, yet strange, that the Dreamers are unaware that they are dreaming. Trapped in these strange Dreamlands, the sleeping refuse to wake up. Half asleep and half awake, they try to do what their Dreams tell them. As everything seems unreal to the Dreamers, they are rarely frightened or routed. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
+#magicpower 1
+#patrolbonus -1
+#morale 18
+#gcost 0
+#end
+
+#selectmonster 1571  -- Deep One Dreamer
+#descr "Under the influence of the Void, people dream of strange and mind-defying places. The otherworldly Dreams are so clear, yet strange, that the Dreamers are unaware that they are dreaming. Trapped in these strange Dreamlands, the sleeping refuse to wake up. Half asleep and half awake, they try to do what their Dreams tell them. As everything seems unreal to the Dreamers, they are rarely frightened or routed. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
+#magicpower 1
+#patrolbonus -1
+#morale 18
+#gcost 0
+#clearweapons
+#weapon 671
+#end
+
+#selectmonster 1572  -- Merman Dreamer
+#descr "Under the influence of the Void, people dream of strange and mind-defying places. The otherworldly Dreams are so clear, yet strange, that the Dreamers are unaware that they are dreaming. Trapped in these strange Dreamlands, the sleeping refuse to wake up. Half asleep and half awake, they try to do what their Dreams tell them. As everything seems unreal to the Dreamers, they are rarely frightened or routed. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
+#magicpower 1
+#patrolbonus -1
+#morale 18
+#gcost 0
+#clearweapons
+#weapon 671
+#end
+
+#selectmonster 1573  -- Merman Dreamer
+#descr "Under the influence of the Void, people dream of strange and mind-defying places. The otherworldly Dreams are so clear, yet strange, that the Dreamers are unaware that they are dreaming. Trapped in these strange Dreamlands, the sleeping refuse to wake up. Half asleep and half awake, they try to do what their Dreams tell them. As everything seems unreal to the Dreamers, they are rarely frightened or routed. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
+#magicpower 1
+#patrolbonus -1
+#morale 18
+#gcost 0
+#clearweapons
+#weapon 671
+#end
+
+#selectmonster 1574  -- Triton Dreamer
+#descr "Under the influence of the Void, people dream of strange and mind-defying places. The otherworldly Dreams are so clear, yet strange, that the Dreamers are unaware that they are dreaming. Trapped in these strange Dreamlands, the sleeping refuse to wake up. Half asleep and half awake, they try to do what their Dreams tell them. As everything seems unreal to the Dreamers, they are rarely frightened or routed. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
+#magicpower 1
+#patrolbonus -1
+#morale 18
+#gcost 0
+#clearweapons
+#weapon 671
+#end
+
+#selectmonster 1575  -- Hybrid Cultist
+#userestricteditem 14
+#clearmagic
+#magicskill 9 1 -- Priest
+#custommagic 18432 40
+#end
+
+#selectmonster 3852  -- Void Dreamer
+#holy
+#magicpower 1
+#end
+
+#selectmonster 3853  -- Void Herald
+#magicskill 9 1 -- Priest
+#holy
+#magicpower 1
 #end
 
 #selectmonster 1579  -- -Hashi Saburo, Red devil
@@ -91792,11 +91998,19 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #weapon 236  -- claw nostr damage 16
 #end
 
-#selectmonster 1639  -- Mad Cultist
+#selectmonster 1639  -- Cultist
+#gcost 0
+#clearmagic
+#magicskill 9 1 -- Priest
+#custommagic 18432 30
 #userestricteditem 14
 #end
 
-#selectmonster 1640  -- Mad Cultist
+#selectmonster 1640  -- Cultist
+#gcost 0
+#clearmagic
+#magicskill 9 1 -- Priest
+#custommagic 18432 20
 #userestricteditem 14
 #end
 
@@ -112572,6 +112786,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #newsite 2175
 #name "Gate to Beyond"
 #path 4 
+#look 1
 #level 0
 #rarity 5
 #voidgate 20
@@ -116618,7 +116833,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 966 -- Formless Spawn
 #homemon 3852 -- Void Dreamer
 #homecom 3853 -- Void Herald
-#homecom 7387 -- K'llulu
 #end
 
 #newsite 2447
@@ -116637,12 +116851,11 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 1572 -- Merman Dreamer
 #homemon 1574 -- Triton Dreamer
 #homemon 1570 -- Human Dreamer
-
 #homecom 963 -- Mad Priest
 #homecom 1564 -- Mad Cultist
 #homecom 1575 -- Hybrid Cultist
 #homecom 1639 -- Cultist
-#homecom 1639 -- Cultist
+#homecom 1640 -- Cultist
 #end
 
 #newsite 2448
@@ -116654,6 +116867,14 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 7890 -- lobster hybrid
 #homecom 1562 -- void spectre
 #homecom 7456 -- hound of tindalos
+#homecom 7807 -- Colour from the Spheres
+#homecom 7997 -- Void Lord set
+#homecom 7998
+#homecom 8000
+#homecom 8001
+#homecom 8002
+#homecom 8003
+#homecom 7387 -- K'llulu
 #end
 
 #newsite 2449
@@ -119386,7 +119607,27 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 8107
 #homemon 8108
 #homemon 8109
+#end
 
+#newsite 2618
+#name "Tear in Reality"
+#clear
+#path 7
+#look 0
+#level 0
+#rarity 5
+#voidgate 20
+#incscale 0
+#end
+
+#newsite 2619
+#name "Portal to Beyond"
+#clear
+#path 4
+#look 4 
+#level 0
+#rarity 5
+#voidgate 20
 #end
 
 -- 2917 used by iram summons
@@ -120522,8 +120763,10 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 2169 -- Hunter Chief
 #end
 
-#selectsite 164
-#homecom 7904 -- Starspawn
+#selectsite 164 -- The City of Unfullfilled dreams
+#homecom 7904 -- Starspawn Dreamer
+#homemon 9310  -- Lobster Hybrid
+#homemon 9311 -- Nightmare Guard
 #end
 
 #selectsite 211  -- Vault of incense and Marvels
@@ -128299,28 +128542,131 @@ Cold dominions are affected more by Summer and Warm dominions are affected more 
 #cheapgod20 8384 -- Void Essence
 #cheapgod20 8468 -- Statue of the Outer Gods
 #cheapgod20 8476 -- Void Crystal
-#startcom 445  -- Illithid Lord
-#startscout 432  -- Scout
-#startunittype1 336  -- Slave Guardian
-#startunitnbrs1 25
-#startunittype2 1524  -- Slave Guardian
-#startunitnbrs2 20
+
+#clearrec
+#addreccom 432 -- scout
+#addreccom 445 -- Illithid Lord
+#addreccom 9306 -- Illithid Cultist
+#addreccom 443 -- Star Child
+#addreccom 9307 -- Dreaming Mage
+#addreccom 3858 -- Starspawn
+#addreccom 7904 -- Starspawn Dreamer
+
+#landcom 443 -- Star Child
+
+#plainfortcom 1563 -- Void Cultist
+#forestfortcom 1563
+#mountainfortcom 1563
+#swampfortcom 1563
+#wastefortcom 1563
+#farmfortcom 1563
+
+#plainfortcom 9308 -- Dreaming Mage land shape
+#forestfortcom 9308
+#mountainfortcom 9308
+#swampfortcom 9308
+#wastefortcom 9308
+#farmfortcom 9308
+
+#plainfortcom 2470 -- Hybrid Commander
+#forestfortcom 2470
+#mountainfortcom 2470
+#swampfortcom 2470
+#wastefortcom 2470
+#farmfortcom 2470
+
+#addrecunit 337 -- Lobo Guard
+#addrecunit 335 -- Slave Trooper
+#addrecunit 1515 -- Slave Trooper
+#addrecunit 1517 -- Slave Trooper
+#addrecunit 425 -- Shambler Thrall
+#addrecunit 243 -- Crab Hybrid
+#addrecunit 9309 -- Triton Hybrid
+#addrecunit 331 -- Illithid
+
+#plainfortrec 970 -- Hybrid
+#forestfortrec 970
+#mountainfortrec 970
+#swampfortrec 970
+#wastefortrec 970
+#farmfortrec 970
+
+#plainfortrec 971 -- Hybrid Trooper
+#forestfortrec 971
+#mountainfortrec 971
+#swampfortrec 971
+#wastefortrec 971
+#farmfortrec 971
+
+#plainfortrec 972 -- Hybrid Soldier
+#forestfortrec 972
+#mountainfortrec 972
+#swampfortrec 972
+#wastefortrec 972
+#farmfortrec 972
+
+#startcom 445 -- Illithid Lord
+#startscout 432 -- Scout
+#startunittype1 335 -- Slave Trooper
+#startunitnbrs1 35
+#startunittype2 243 -- Crab Hybrid
+#startunitnbrs2 10
+
+--PD and fort fmults
+
+-- #wallcom 2470 -- Hybrid Commander NEED TO CLEAR FORT GUARDS FIRST BUT UNSURE HOW TO
+-- #wallunit 972 -- Hybrid Soldier
+-- #wallmult 4
+
+-- #uwwallcom 445 -- Illithid Lord
+-- #uwwallunit 331 -- Illithid
+-- #uwwallmult 10
+
+-- #guardcom 2470 -- Hybrid Commander
+-- #guardunit 971 -- Hybrid Trooper
+-- #guardmult 10
+
+-- #uwguardcom 445 -- Illithid Lord
+-- #uwguardunit 335 -- Slave Trooper
+-- #uwguardmult 15
+
+#uwdefunit1 337 -- Lobo Guard 
+#uwdefmult1 20
+
+#uwdefunit1b 335 -- Slave Trooper
+#uwdefmult1b 10
+
+#uwdefunit2 335 -- Slave Trooper
+#uwdefmult2 15
+
+#uwdefunit2b 425 -- Shambler Thrall
+#uwdefmult2b 5
+
+#defunit1 337 -- Lobo Guard 
+#defmult1 20
+
+#defunit1b 335 -- Slave Trooper
+#defmult1b 10
+
+#defunit2 335 -- Slave Trooper
+#defmult2 15
+
+#defunit2b 425 -- Shambler Thrall
+#defmult2b 5
+
 #descr "In the halls of R'lyeh the Starspawns, the Great Ones who survived the Fall opened a gate into the Void and unleashed its horrors upon the world. But the Void was not to be controlled even by the Starspawns. The very fabric of the Veil was weakened and madness struck the inhabitants of mighty R'lyeh. Only the most powerful of the Starspawns were able to keep their minds intact. The Empire crumbled as insanity took the leaders and the former slaves and servants of the Empire were able to lift the yoke of R'lyeh.
 But now a God is awakening, and it is a God Dreaming of the Void. Mind-defying Dreams of the Sleeping God are plaguing the inhabitants of coastal and underwater cities and with the Dreams come the horrors. Strange, cannibalistic cults worshipping the Void call them from Beyond and no longer is the Void Gate required to bridge between worlds. The Dreamlands of R'lyeh threaten to destroy the world.
 All coastal forts of R'lyeh have a special well where women can submerge themselves in the hope of being impregnated by a Great One. However, most will be taken by Deep Ones instead and the women's offspring will be strange, fishlike humanoids instead of the noble Starchildren they wanted. These half-human hybrids are usually devoted to the cause of putting mankind below the sea and often join the army of R'lyeh free of charge."
 #summary "Race: Illithids, Underwater slave races, Void Beings
-Military: Atlantian and Oceanian Slaves, hybrids, Illithids, Star Children at Coastal forts.
-Magic: Astral, Water, some Earth, Death and Nature
-Priests: Average, can summon Void Beings, might get additional insane prophets
-Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void Beings. Magic & Turmoil scales, Temples and higher Dominion increase chance of better summons. Makes all non void beings insane."
-#landcom 7647 -- Star Child
+Military: Atlantian and Pelagian Slaves, Monstrous Hybrids, Illithids, Cultists in land forts.
+Magic: Astral, Glamour, some Water, Earth, Death and Nature
+Priests: Strong, can summon Void Beings, might get additional insane prophets
+Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void Beings. Magic, Temples and higher Dominion increase chance of better summons. Makes all non void beings insane."
 #domunrest 15
 #fortunrest 5
 #domkill 0
-#defchaos 3
-#defdrain -3
+#moreorder -1
 #spreadchaos 1
-#templecost 750
 #clearsites
 #startsite "The City of Unfullfilled Dreams"
 #startsite "Void Rift"
@@ -130534,12 +130880,14 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 
 #selectspell 2197
 #name "Wisdom of the Void"
-#descr "The caster opens their mind to the Void, an otherworldy realm of magic filled with strange sights and sounds. The caster gains strange insights that will greatly aid their magical research, however they will also be touched by the Void. This will damage the mind of most creatures unless they are used to such contact."
+#descr "The caster opens their mind to the Void, an otherworldy realm of magic filled with strange sights and sounds. The caster's dreams will reveal strange insights that greatly aid their magical research, however they will also be touched by the Void. This will damage the mind of most creatures unless they are used to such contact."
 #details "Grants +18 research bonus, incurs 20% insanity unless caster has Void Sanity."
 #school 5
 #researchlevel 4
-#path 0 4
-#pathlevel 0 3
+#path 0 7
+#pathlevel 0 2
+#path 1 4
+#pathlevel 0 1
 #effect 10517  -- +18
 #nreff 1
 #damage 121  -- Researchbonus
@@ -142013,7 +142361,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 1 1
 #nreff 1
 #effect 108
-#range 25
+#range 30
 #precision 100
 #sound 28
 #flightspr -1
@@ -142043,7 +142391,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 0 7
 #pathlevel 0 2
 #path 1 4
-#pathlevel 1 2
+#pathlevel 1 1
 #fatiguecost 20
 #restricted 89
 #restricted 127
@@ -142065,9 +142413,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #details "Enemies failing to resist with MR are afflicted with Confusion, and may gain +10 Insanity."
 #school 5
 #researchlevel 8
-#path 0 4
+#path 0 7
 #pathlevel 0 5
-#path 1 7
+#path 1 4
 #pathlevel 1 2
 #nreff 1
 #effect 11
@@ -142100,14 +142448,14 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #end
 
 #selectspell 3039
-#name "Call Colour from the Spheres"
-#descr "The caster causes a small comet to fall onto a targeted province, however the comet is infected with a magical entity that drains the life from plants and animals. Each month unrest and death scales will increase in the province until the entity is rooted out and destroyed, or it has absorbed enough life force to return to the Spheres."
+#name "Colour from the Spheres"
+#descr "The caster causes a small comet to fall onto a targeted province, however the comet is infected with a magical entity that drains the colour from plants and animals, causing them to mutate and fall ill. Each month unrest and death scales will increase in the province until the entity is rooted out and destroyed, or it has absorbed enough life force to return to the Spheres."
 #school 0
 #researchlevel 5
-#path 0 4
-#pathlevel 0 4
-#path 1 7
-#pathlevel 1 2
+#path 0 7
+#pathlevel 0 3 -- 3G 3S retains access for both nations with a booster, making it much harder to mass-spam but still accessible.
+#path 1 4
+#pathlevel 1 3
 #effect 10042
 #nreff 1
 #provrange 4
@@ -142121,7 +142469,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #selectspell 3040
 #copyspell 1067 -- Earth Attack
 #name "Send Hound of Tindalos"
-#descr "The caster calls one of the Hounds of Tindalos and looses it in a target province. The beast will manifest, lean and athirst to snatch a target back to the void. Hounds of Tindalos are horrible ethereal creatures and once they have taken their prey they will return to the void themselves."
+#descr "The caster calls one of the Hounds of Tindalos and looses it in a target province. The beast will manifest from a place between the angles of the world, lean and athirst to snatch a target back to the void. Once they have taken their prey they will return to whence they came."
 #path 0 4
 #fatiguecost 800
 #damage 7456 -- Hound of Tindalos
@@ -142158,20 +142506,20 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 3043
 #copyspell 91  -- Kill Caster
-#name "Void Portal Kill Caster"
+#name "Dream Portal Kill Caster"
 #spec 36046389205008512  -- AN, Internal damage, MR Hard Negates
 #nextspell 3707
 #end
 
 #selectspell 3044
 #copyspell 945 -- Call Kraken
-#name "Void Portal"
-#descr "The Cultists of R'lyeh know rituals of void summoning imparted to them in dreams. By drawing strange geometric symbols in their own blood the caster can open a portal directly to the void. This method of void summoning is highly dangerous and the caster is often killed in the process. The caster will draw through a creature from beyond, however they have no control over the creature available when the gate is opened."
-#path 0 4
+#name "Dream Portal"
+#descr "The Dreaming Lands have weakened the barriers separating the Void from the waking world. The Cultists of R'lyeh can exploit this weakness using special rituals taught to them in their dreams. By drawing strange geometric symbols in their own blood the caster can tear open a momentary portal directly to the void. The caster will attract creatures from beyond, however they have no control over what type of creatures will emerge from the portal. This method of void summoning is highly dangerous and the caster is usually killed in the process. "
+#path 0 7
 #pathlevel 0 1
 #path 1 9
 #pathlevel 1 1
-#nreff 1
+#nreff 2
 #damage -1020  -- Random Void Creature
 #restricted 127 -- LA R'lyeh
 #fatiguecost 100
@@ -142183,6 +142531,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 945 -- Call Kraken
 #name "Call From Beyond"
 #descr "The caster uses the Void Rift to summon a few creatures from Beyond. The caster has no control over the creatures that appear once the gate is opened, however only lesser void beings can be summoned by this ritual."
+#details "Can only be cast at the Void Rift." 
 #researchlevel 3
 #path 0 4
 #pathlevel 0 1
@@ -142190,6 +142539,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 1 1
 #nreff 1002
 #fatiguecost 500
+#spec 8388608  -- May use UW
 #damage -1040  -- Random Lesser Void Creature
 #onlyatsite 2222 -- Void Rift
 #restricted 127 -- LA R'lyeh
@@ -142198,7 +142548,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #selectspell 3046
 #copyspell 945 -- Call Kraken
 #name "Call Host From Beyond"
-#descr "The caster draws through the Void Rift a host of creatures from Beyond. The caster has no control over the creatures available when the gate is opened, however only lesser void beings can be summoned by this ritual."
+#descr "The caster draws a host of creatures from Beyond through the Void Rift. The caster has no control over the creatures available when the gate is opened, however only lesser void beings can be summoned by this ritual."
+#details "Can only be cast at the Void Rift." 
 #researchlevel 5
 #path 0 4
 #pathlevel 0 2
@@ -142206,6 +142557,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 1 2
 #nreff 2004
 #fatiguecost 1000
+#spec 8388608  -- May use UW
 #damage -1040  -- Random Lesser Void Creature
 #onlyatsite 2222 -- Void Rift
 #restricted 127 -- LA R'lyeh
@@ -142214,22 +142566,23 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #selectspell 3047
 #copyspell 945 -- Call Kraken
 #name "Void Summoning"
-#descr "With the coming of the Dreaming God the walls separating the worlds have grown thinner. The caster opens a gate to the Void, summoning a few creatures from Beyond. This ritual can be performed in any underwater province and the Void Rift is no longer required. The caster has no control over the creatures that appear once the gate is opened, however only lesser void beings can be summoned by this ritual."
+#descr "With the coming of the Dreaming God the walls separating the worlds have grown thinner. The caster opens a portal to the Void, summoning a few creatures from Beyond. This ritual can be performed in any province and the Void Rift is no longer required. The caster has no control over the creatures available when the gate is opened, and even powerful void beings may be summoned by this ritual."
 #researchlevel 6
 #path 0 4
-#pathlevel 0 1
+#pathlevel 0 2
 #path 1 9
-#pathlevel 1 1
+#pathlevel 1 2
 #nreff 1002
 #fatiguecost 500
-#damage -1040  -- Random Lesser Void Creature
+#spec 8388608  -- May use UW
+#damage -1020  -- Random Void Creature
 #restricted 127 -- LA R'lyeh
 #end
 
 #selectspell 3048
 #copyspell 945 -- Call Kraken
 #name "Void Incursion"
-#descr "The caster draws a host of creatures from Beyond into this world. This ritual can be performed in any underwater province and the Void Rift is no longer required. The caster has no control over the creatures available when the gate is opened, and even powerful void beings may be summoned by this ritual."
+#descr "With the coming of the Dreaming God the walls separating the worlds have grown thinner. The caster draws a host of creatures from Beyond into this world. This ritual can be performed in any province and the Void Rift is no longer required. The caster has no control over the creatures available when the gate is opened, and even powerful void beings may be summoned by this ritual."
 #researchlevel 7
 #path 0 4
 #pathlevel 0 3
@@ -142237,6 +142590,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 1 3
 #nreff 2004
 #fatiguecost 1000
+#spec 8388608  -- May use UW
 #damage -1020  -- Random Void Creature
 #restricted 127 -- LA R'lyeh
 #end
@@ -142292,11 +142646,11 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 4
 #path 0 2
 #path 1 4
-#pathlevel 0 2
+#pathlevel 0 1
 #pathlevel 1 1
 #nreff 1
 #damage 7890 -- Lobster Hybrid
-#fatiguecost 300
+#fatiguecost 200
 #spec 8388608
 #restricted 89 -- MA R'lyeh
 #restricted 127 -- LA R'lyeh
@@ -142326,11 +142680,11 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 6
 #path 0 2
 #path 1 4
-#pathlevel 0 3
+#pathlevel 0 2
 #pathlevel 1 2
 #nreff 505
 #damage 7890 -- Lobster Hybrid
-#fatiguecost 1500
+#fatiguecost 1000
 #spec 8388608
 #restricted 127 -- LA R'lyeh
 #restricted 89 -- MA R'lyeh
@@ -142405,7 +142759,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #school 5
 #researchlevel 7
 #path 0 2
-#path 1 4
+#path 1 7
 #pathlevel 0 4
 #pathlevel 1 3
 #effect 10081
@@ -142432,55 +142786,58 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 3061
 #copyspell 1204 -- Dome of Arcane Warding
-#name "One with the Void"
-#descr "The Dreamers of R'lyeh are drawn to the Void by the strange visions they experience through their dreams. With this spell the caster opens the Void Rift further to allow Dreamers to enter the Void. When enough Dreamers enter they will attract beings from the void which will emerge to serve the Illithids, and occasionally astral energies can be captured as dreamers enter the gate. The Void Rift will remain open, however if the province is lost or the mage dies, the gate closes instantly."
-#details "Void being summoning is random however summons roughly one being per two Dreamers entering. Maximum of 3D3 void beings summoned per month if fifteen or more Dreamers present. May also generate 1-3 astral pearls."
+#name "Tear in Reality"
+#descr "With the awakening of the Dreaming God the void has come closer to this world, blurring the boundaries between the realms. This spell uses the corrupting power of the Dreamlands to strengthen the Void Rift, expanding its influence on reality and further destabilising the minds of those remaining in the Capital. This will greatly increase turmoil in the capital but will also attract additional Void creatures and permanently expand the number of Void Summoners able to access the Rift. If the province is lost or the mage dies, the spell maintaining the expanded rift will fail and it will shrink back to its initial size."
+#details "A glamour mage may enter the expanded rift to summon Void creatures. 1-6 additional Void creatures may appear and Turmoil scales will increase in the Capital each month."
 #researchlevel 5
 #school 5
-#path 1 9
+#path 0 7
+#path 1 4
 #pathlevel 0 4
 #pathlevel 1 2
 #fatiguecost 3500
 #effect 10084  -- Permanent Enchantment
 #friendlyench 1
-#damage 256 -- Ench56  -- One with Void
+#damage 256 -- Ench56  -- Expand Void Rift
 #onlyatsite 2222 -- Void Rift
-#spec 41943040  -- Use UW Only
+#spec 8388608  -- May use UW
 #restricted 127 -- LA R'lyeh
 #end
 
 #selectspell 3062
 #copyspell 1204 -- Dome of Arcane Warding
 #name "Open Gate to the Beyond"
-#descr "With the awakening of the Dreaming God the void has come closer to this world, blurring the boundaries between the realms. Now the opening of gates to the other side is easier than ever. The caster tears opens a gate to the void in the province, allowing horrors from beyond to enter this world. As a side effect the province will experience terrible dreams that will infect the populace and drive them insane. This spell can only be cast in an underwater province that does not already contain a Void Gate. The Void Gate will remain open, however if the province is lost or the mage dies, the gate disappears instantly."
+#descr "With the awakening of the Dreaming God the void has come closer to this world, blurring the boundaries between the realms. Now the opening of gates to the other side is easier than ever. The caster tears opens a gate to the void in the province, allowing horrors from beyond to enter this world. As a side effect the province will experience terrible dreams that will infect the populace and drive them insane. This spell can only be cast in a province that does not already contain a Void Gate. The Void Gate will remain open indefinitely, however if the province is lost or the mage dies, the gate disappears instantly."
 #details "Province gains Gate to the Beyond site allowing Void Summoning whilst spell remains. Each month Population -2%, Unrest +5 and Turmoil scales will increase."
 #researchlevel 6
 #school 5
-#path 1 9
+#path 0 4
+#path 1 7
 #pathlevel 0 2
 #pathlevel 1 2
 #fatiguecost 1500
 #effect 10084  -- Permanent Enchantment
 #friendlyench 1
 #damage 257 -- Ench57  -- Open Void Gate
-#spec 41943040  -- Use UW Only
+#spec 8388608  -- May use UW
 #restricted 127 -- LA R'lyeh
 #end
 
 #selectspell 3063
 #copyspell 1204 -- Dome of Arcane Warding
-#name "Prepare Gate to the Beyond"
-#descr "The Dreamers of R'lyeh are drawn to the Void by the strange visions they experience through their dreams. With this spell the caster prepares a Gate to the Beyond that has been created through Open Gate to the Beyond to allow Dreamers to enter the Void. When enough Dreamers enter they will attract beings from the void which will emerge to serve the Illithids, and occasionally astral energies can be captured as dreamers enter the gate. The Void Rift will remain open, however if the province is lost or the mage dies, the gate closes instantly."
-#details "Void being summoning is random however summons roughly one being per two Dreamers entering. Maximum of 3D3 void beings summoned per month if fifteen or more Dreamers present. May also generate 1-3 astral pearls."
+#name "Expand Gate to the Beyond"
+#descr "With this spell the caster prepares a Gate to the Beyond that has been created through Open Gate to the Beyond to allow a greater number of Summoners to enter the Void. This effect is permanent, however if the province is lost or the mage dies, the gate closes instantly."
+#details "One additional Void Summoner may enter the expanded gate each month."
 #researchlevel 7
 #school 5
-#path 1 9
+#path 0 4
+#path 1 7
 #pathlevel 0 3
 #pathlevel 1 2
-#fatiguecost 2500
+#fatiguecost 500
 #effect 10084  -- Permanent Enchantment
 #friendlyench 1
-#damage 256 -- Ench56  -- One with Void
+#damage 256 -- Ench60  -- Expand Void Gate
 #onlyatsite 2175 -- Gate to the Beyond
 #restricted 127 -- LA R'lyeh
 #end
@@ -155844,7 +156201,7 @@ Applies the effects of Holy Avenger to the caster"
 
 #selectspell 4162
 #name "The Stars are Right "
-#descr "Deep in the city of R'lyeh lies the High Priest of the Starspawn, an eldritch monstrosity that has lain Dead yet Dreaming for millenia. When the stars are right once more it will awaken and the world shall tremble. The caster uses Astral magic to cause a great conjunction which will rouse the slumbering behemoth. This is a terrible omen and great unrest will sweep the world. The awakening will cause dreams of the void to afflict the sensitive in every corner of the world and human-illithid hybrids will be born across the land. Reality itself will falter and creatures from Outside will appear to serve the High Priest of the Dreaming God. If the enchantment is ended, however, the creature will return to a long death-slumber in R'lyeh. This enchantment lasts until someone dispels it or the caster dies."
+#descr "Deep in the city of R'lyeh lies the High Priest of the Starspawn, an eldritch monstrosity that has lain Dead yet Dreaming for millenia. When the stars are right once more it will awaken and the world shall tremble. The caster uses Astral magic to cause a great conjunction which will rouse the slumbering behemoth from beneath the waves. This is a terrible omen and great unrest will sweep the world. The awakening will cause dreams of the void to afflict the sensitive in every corner of the world and human-illithid hybrids will be born across the land. Reality itself will falter and creatures from Outside will appear to serve the High Priest of the Dreaming God. If the enchantment is ended, however, the creature will return to a long death-slumber in R'lyeh. This enchantment lasts until someone dispels it or the caster dies."
 #details "Unrest +30 worldwide when cast. 10% chance of Baleful Star in every hostile province each month. Summons K'lullu Unique Commander in capital who is immortal as long as spell remains. If dispelled K'lullu immediately returns to his slumber."
 #school 4
 #researchlevel 8
@@ -159238,9 +159595,9 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #provrange 10
 #effect 10110
 #damage 2052
-#path 0 4
+#path 0 7
 #fatiguecost 400
-#pathlevel 0 4
+#pathlevel 0 5
 #spec 8392704
 #nogeodst 0
 #restricted 127 -- LA Rlyeh
@@ -163225,12 +163582,12 @@ Can only be cast once per combat round."
 #selectitem 714
 #name "Necklace from Beyond"
 #spr "magicenhanced/eeinecklace.tga"
-#descr "The insane Cultists that worship the Dreaming God wear strange jewelery whilst performing their nameless rites. When worn this strangely hued necklace will incite the wearer to perform rituals contacting beings from the void. Magic scales are required for the summoning. High Dominion of the Dreaming God along with a large groups cultist makes the ritual more likely to be successful. Many cultists will be killed during the revelry. This item can only be used by the Cultists of R'lyeh, and only one necklace can be in use in each province."
+#descr "The insane Cultists that worship the Dreaming God wear strange jewelery whilst performing their nameless rites. When worn this strangely hued necklace will incite the wearer to perform rituals contacting beings from the void. Magic scales are required for the summoning. High Dominion of the Dreaming God along with a large group of cultists makes the ritual more likely to be successful. Many cultists will be killed during the revelry. This item can only be used by the Cultists of R'lyeh, and only one necklace can be in use in each province."
 #constlevel 5
 #type 8
 #mainpath 4
 #mainlevel 1
-#secondarypath 2
+#secondarypath 7
 #secondarylevel 1
 #tainted 25
 #restricted 127 -- LA Rlyeh
@@ -173481,212 +173838,6 @@ This headband does not require activation in combat."
 
 #newevent
 #rarity 5
-#req_fornation 127 -- Rlyeh
-#req_owncapital 1
-#req_magic 1
-#req_chaos 1
-#req_dominion 1
-#nation -2
-#msg "Dominion Void summons."
-#notext
-#nolog
-#1unit -1040  -- Lesser Void Being
-#end
-
-#newevent
-#rarity 5
-#req_fornation 127 -- Rlyeh
-#req_owncapital 1
-#req_magic 1
-#req_chaos 1
-#req_dominion 2
-#req_rare 25
-#nation -2
-#msg "Dominion Void summons."
-#notext
-#nolog
-#1unit -1040  -- Lesser Void Being
-#end
-
-#newevent
-#rarity 5
-#req_fornation 127 -- Rlyeh
-#req_owncapital 1
-#req_dominion 3
-#req_rare 25
-#nation -2
-#msg "Dominion Void summons."
-#notext
-#nolog
-#1unit -1040  -- Lesser Void Being
-#end
-
-#newevent
-#rarity 5
-#req_fornation 127 -- Rlyeh
-#req_owncapital 1
-#req_magic 1
-#req_chaos 1
-#req_dominion 4
-#req_rare 25
-#nation -2
-#msg "Dominion Void summons."
-#notext
-#nolog
-#1unit -1040  -- Lesser Void Being
-#end
-
-#newevent
-#rarity 5
-#req_fornation 127 -- Rlyeh
-#req_owncapital 1
-#req_dominion 5
-#req_rare 35
-#nation -2
-#msg "Dominion Void summons."
-#notext
-#nolog
-#1unit -1040  -- Lesser Void Being
-#end
-
-#newevent
-#rarity 5
-#req_fornation 127 -- Rlyeh
-#req_owncapital 1
-#req_magic 1
-#req_chaos 1
-#req_dominion 6
-#req_rare 35
-#nation -2
-#msg "Dominion Void summons."
-#notext
-#nolog
-#1unit -1040  -- Lesser Void Being
-#end
-
-#newevent
-#rarity 5
-#req_fornation 127 -- Rlyeh
-#req_owncapital 1
-#req_magic 2
-#req_chaos 2
-#req_dominion 7
-#req_rare 40
-#nation -2
-#msg "Dominion Void summons."
-#notext
-#nolog
-#1unit -1020  -- Void Being
-#end
-
-#newevent
-#rarity 5
-#req_fornation 127 -- Rlyeh
-#req_owncapital 1
-#req_magic 2
-#req_chaos 2
-#req_dominion 8
-#req_rare 40
-#nation -2
-#msg "Dominion Void summons."
-#notext
-#nolog
-#1unit -1020  -- Void Being
-#end
-
-#newevent
-#rarity 5
-#req_fornation 127 -- Rlyeh
-#req_owncapital 1
-#req_dominion 9
-#req_magic 3
-#req_chaos 3
-#req_rare 50
-#nation -2
-#msg "Dominion Void summons."
-#notext
-#nolog
-#1unit -1020  -- Void Being
-#end
-
-#newevent
-#rarity 5
-#req_fornation 127 -- Rlyeh
-#req_owncapital 1
-#req_dominion 10
-#req_magic 3
-#req_chaos 3
-#req_rare 50
-#nation -2
-#msg "Dominion Void summons."
-#notext
-#nolog
-#1unit -1020  -- Void Being
-#end
-
-#newevent
-#rarity 5
-#req_fornation 127 -- Rlyeh
-#req_owncapital 0
-#req_magic 1
-#req_chaos 1
-#req_temple 1
-#req_dominion 8
-#req_domchance 5
-#nation -2
-#msg "Dominion Void summons."
-#notext
-#nolog
-#1unit -1040  -- Lesser Void Being
-#end
-
-#newevent
-#rarity 5
-#req_fornation 127 -- Rlyeh
-#req_owncapital 0
-#req_magic 2
-#req_chaos 2
-#req_dominion 7
-#req_domchance 2
-#nation -2
-#msg "Dominion Void summons."
-#notext
-#nolog
-#1unit -1040  -- Lesser Void Being
-#end
-
-#newevent
-#rarity 5
-#req_fornation 127 -- Rlyeh
-#req_owncapital 0
-#req_magic 3
-#req_chaos 3
-#req_dominion 6
-#req_domchance 3
-#nation -2
-#msg "Dominion Void summons."
-#notext
-#nolog
-#1unit -1040  -- Lesser Void Being
-#end
-
-#newevent
-#rarity 5
-#req_domowner 127 -- Rlyeh
-#req_magic 3
-#req_chaos 3
-#req_dominion 8
-#req_domchance 1
-#nation -2
-#req_temple 1
-#msg "Dominion Void summons."
-#notext
-#nolog
-#1unit -1020  -- Void Being
-#end
-
-#newevent
-#rarity 5
 #req_fornation 192 -- Great Arrada
 #req_owncapital 1
 #req_site 1
@@ -176447,7 +176598,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #newevent
 #rarity 5
 #req_rare 0
-#msg "A strange glowing comet was reported in the sky on a starry night! It landed somewhere in the province, however since that night plants and animals have suffered a wasting plague. The locals report odd coloured lights at night and there is talk of witchcraft. You must send a group of hunters to find the source of the disturbance, or unrest will continue to rise."
+#msg "A strange glowing comet was reported in the sky on a starry night! It landed somewhere in the province, and since that night plants and animals have suffered a wasting plague. The locals report odd coloured lights at night and there is talk of an invisible presence. Hunters who can see into the spirit realm are necessary to find the source of the disturbance, or unrest will continue to rise."
 #stealthcom 7807 -- Colour from the Spheres
 #incscale 3  -- Death
 #unrest 15
@@ -180536,148 +180687,71 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 
 #newevent
 #rarity 5
-#req_ench 256 -- Ench56  -- Enter the Void
-#req_fornation 127 -- LA Rlyeh
-#req_5monsters 1570  -- Human Dreamer
-#msg "Dreamers have entered the Void Gate, and astral pearls were harvested from the energies produced."
+#req_ench 256 -- Ench56 -- Expand Void Rift
+#req_owncapital 1
+#req_nositenbr 2618 -- Expanded Void Rift
+#req_pop0ok
+#msg "The Void Rift has expanded into a great tear through reality!"
+#nolog
+#addsite 2618
+#end
+
+#newevent
+#rarity 5
+#req_noench 256 -- Ench56 Expand Void Rift
+#req_site 1  -- Tear in Reality
+#req_pop0ok
+#msg "The Void Rift has stabilised once again! [Tear in Reality]"
+#nolog
+#removesite 2618
+#end
+
+#newevent
+#rarity 5
+#req_ench 257 -- Ench58 -- Expand Void Gate
+#req_owncapital 0
+#req_nositenbr 2619 -- Expanded Void Gate
+#req_pop0ok
+#msg "The Gate to Beyond has been expanded into a great Portal!"
+#nolog
+#addsite 2619
+#end
+
+#newevent
+#rarity 5
+#req_noench 257 -- Ench58
+#req_site 1  -- Portal to Beyond
+#req_pop0ok
+#msg "The Void Gate has closed! [Portal to Beyond]"
+#notext
+#nolog
+#removesite 2619
+#end
+
+#newevent
+#rarity 5
+#req_site 1  -- Tear in Reality
+#req_rare 80
+#req_owncapital 1
+#req_pop0ok
+#msg "Additional Void creatures [Tear in Reality]"
 #nolog
 #notext
 #nation -2
-#1d3units -1040  -- Lesser Void Summon
-#kill2d6mon 1570  -- Human Dreamer
-#inccorpses -10
-#delay 0
+#1d3units -1020 -- lesser void being
 #end
 
 #newevent
 #rarity 5
-#req_ench 256 -- Ench56  -- Enter the Void
-#req_fornation 127 -- LA Rlyeh
-#req_nomonster 6537
-#msg "Dreamers have entered the Void Gate, and beings from the void have emerged to serve the True God."
-#nolog
-#nation -2
-#1unit 6537  -- Dummy Dreamer
-#end
-
-#newevent
-#rarity 5
-#req_ench 256 -- Ench56  -- Enter the Void
-#req_fornation 127 -- LA Rlyeh
-#req_5monsters 1571  -- Deep One Dreamer
-#msg "Dreamers have entered the Void Gate, and astral pearls were harvested from the energies produced."
-#nolog
-#notext
-#nation -2
-#1d3units -1040  -- Lesser Void Summon
-#kill2d6mon 1571  -- Deep One Dreamer
-#inccorpses -10
-#delay 0
-#end
-
-#newevent
-#rarity 5
-#req_ench 256 -- Ench56  -- Enter the Void
-#req_fornation 127 -- LA Rlyeh
-#req_nomonster 6537
-#msg "Dreamers have entered the Void Gate, and beings from the void have emerged to serve the True God."
-#nolog
-#nation -2
-#1unit 6537  -- Dummy Dreamer
-#end
-
-#newevent
-#rarity 5
-#req_ench 256 -- Ench56  -- Enter the Void
-#req_fornation 127 -- LA Rlyeh
-#req_5monsters 1572  -- Merman Dreamer
-#msg "Dreamers have entered the Void Gate, and astral pearls were harvested from the energies produced."
-#nolog
-#notext
-#nation -2
-#1d3units -1040  -- Lesser Void Summon
-#kill2d6mon 1572  -- Merman Dreamer
-#inccorpses -10
-#delay 0
-#end
-
-#newevent
-#rarity 5
-#req_ench 256 -- Ench56  -- Enter the Void
-#req_fornation 127 -- LA Rlyeh
-#req_nomonster 6537
-#msg "Dreamers have entered the Void Gate, and beings from the void have emerged to serve the True God."
-#nolog
-#nation -2
-#1unit 6537  -- Dummy Dreamer
-#end
-
-#newevent
-#rarity 5
-#req_ench 256 -- Ench56  -- Enter the Void
-#req_fornation 127 -- LA Rlyeh
-#req_5monsters 1574  -- Triton Dreamer
-#msg "Dreamers have entered the Void Gate, and astral pearls were harvested from the energies produced."
-#nolog
-#notext
-#nation -2
-#1d3units -1040  -- Lesser Void Summon
-#kill2d6mon 1574  -- Triton Dreamer
-#inccorpses -10
-#delay 0
-#end
-
-#newevent
-#rarity 5
-#req_ench 256 -- Ench56  -- Enter the Void
-#req_fornation 127 -- LA Rlyeh
-#req_nomonster 6537
-#msg "Dreamers have entered the Void Gate, and beings from the void have emerged to serve the True God."
-#nolog
-#nation -2
-#1unit 6537  -- Dummy Dreamer
-#end
-
-#newevent
-#rarity 5
-#req_ench 256 -- Ench56  -- Enter the Void
-#req_fornation 127 -- LA Rlyeh
-#msg "Dreamers have entered the Void Gate, and beings from the void have emerged to serve the True God."
-#nolog
-#notext
-#delay 0
-#end
-
-#newevent
-#rarity 5
-#req_monster 6537
+#req_site 1  -- Tear in Reality
 #req_rare 50
-#msg "Spawn pearls."
+#req_owncapital 1
+#req_pop0ok
+#nation -2
+#msg "Additional good Void creatures [Tear in Reality]"
 #nolog
 #notext
-#force1d3vis 4
-#nation -2
-#end
-
-#newevent
-#rarity 5
-#req_monster 6537
-#req_rare 50
-#msg "Spawn pearls."
-#nolog
-#notext
-#1unit -1020  -- Void Being
-#nation -2
-#end
-
-#newevent
-#rarity 5
-#req_monster 6537
-#msg "Kill Dreamer Dummy."
-#nolog
-#notext
-#nation -2
-#killmon 6537 -- Dummy Dreamer
+#1d3units -1040 -- void being
 #end
 
 #newevent
