@@ -59860,7 +59860,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #magicskill 4 1 -- Astral
 #magicskill 2 1 -- Water
 #custommagic 27136 100 - 100% WSNG
-#morale 18
+#mor 18
 #mr 17
 #insane 10
 #landshape 9308
@@ -59882,7 +59882,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #magicskill 4 1 -- Astral
 #magicskill 2 1 -- Water
 #custommagic 27136 100 - 100% WSNG
-#morale 18
+#mor 18
 #mr 17
 #insane 10
 #magicpower 1
@@ -59957,7 +59957,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #end
 
 
--- End LA Ryleh Monsters
+-- End LA R'lyeh Monsters
 
 -- END OF NEW MONSTERS (Skip 9600~9672)
 
@@ -65642,7 +65642,7 @@ Boost all paths except blood by +1. Becomes a Yar Bori upon death or after two s
 #armor "Cataphract Barding"
 #swimming
 #mr 8
-#morale 10
+#mor 10
 #gcost 10025
 #end
 
@@ -65689,7 +65689,7 @@ Boost all paths except blood by +1. Becomes a Yar Bori upon death or after two s
 #armor "Cataphract Barding"
 #holy
 #mr 11
-#morale 10
+#mor 10
 #swimming
 #mapmove 24
 #end
@@ -65801,7 +65801,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #str 14
 #holy
 #float
-#morale 9
+#mor 9
 #researchbonus -2
 #poorleader
 #poormagicleader
@@ -65877,7 +65877,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #def 10
 #mr 13
 #str 11
-#morale 9
+#mor 9
 #clearmagic
 #clearweapons
 #poorleader
@@ -65903,7 +65903,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #def 8
 #mr 13
 #str 9
-#morale 9
+#mor 9
 #clearmagic
 #clearweapons
 #poorleader
@@ -77429,7 +77429,7 @@ The presence of the God-Emperor will calm the populace and reduce unrest in the 
 #berserk 5
 #poisonres 15
 #voidsanity 20
-#prot 10
+#prot 7
 #startage 1000
 #maxage 2000
 #goodmagicleader
@@ -91798,7 +91798,7 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 
 #selectmonster 1564  -- Mad Cultist
 #userestricteditem 14
-#morale 15
+#mor 15
 #gcost 0
 #clearmagic
 #magicskill 9 1 -- Priest
@@ -91807,40 +91807,50 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 
 #selectmonster 1566  -- Mad One
 #patrolbonus -1
-#morale 15
+#mor 15
+#slave
 #gcost 0
 #end
 
 #selectmonster 1567  -- Mad Merman
 #patrolbonus -1
-#morale 15
+#mor 15
+#slave
 #gcost 0
+#clearweapons
+#weapon 373
 #end
 
 #selectmonster 1568  -- Mad Merman
 #patrolbonus -1
-#morale 15
+#mor 15
+#slave
 #gcost 0
+#clearweapons
+#weapon 373
 #end
 
 #selectmonster 1569  -- Mad Triton
 #patrolbonus -1
-#morale 15
+#mor 15
+#slave
 #gcost 0
 #clearweapons
+#weapon 671
 #weapon 671
 #end
 
 #selectmonster 1576  -- Mad Hybrid
 #patrolbonus -1
-#morale 15
+#mor 15
+#weapon 12
 #end
 
 #selectmonster 1570  -- Human Dreamer
 #descr "Under the influence of the Void, people dream of strange and mind-defying places. The otherworldly Dreams are so clear, yet strange, that the Dreamers are unaware that they are dreaming. Trapped in these strange Dreamlands, the sleeping refuse to wake up. Half asleep and half awake, they try to do what their Dreams tell them. As everything seems unreal to the Dreamers, they are rarely frightened or routed. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
 #magicpower 1
 #patrolbonus -1
-#morale 18
+#mor 18
 #gcost 0
 #end
 
@@ -91848,7 +91858,8 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #descr "Under the influence of the Void, people dream of strange and mind-defying places. The otherworldly Dreams are so clear, yet strange, that the Dreamers are unaware that they are dreaming. Trapped in these strange Dreamlands, the sleeping refuse to wake up. Half asleep and half awake, they try to do what their Dreams tell them. As everything seems unreal to the Dreamers, they are rarely frightened or routed. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
 #magicpower 1
 #patrolbonus -1
-#morale 18
+#mor 18
+#slave
 #gcost 0
 #clearweapons
 #weapon 671
@@ -91858,7 +91869,8 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #descr "Under the influence of the Void, people dream of strange and mind-defying places. The otherworldly Dreams are so clear, yet strange, that the Dreamers are unaware that they are dreaming. Trapped in these strange Dreamlands, the sleeping refuse to wake up. Half asleep and half awake, they try to do what their Dreams tell them. As everything seems unreal to the Dreamers, they are rarely frightened or routed. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
 #magicpower 1
 #patrolbonus -1
-#morale 18
+#mor 18
+#slave
 #gcost 0
 #clearweapons
 #weapon 671
@@ -91868,7 +91880,8 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #descr "Under the influence of the Void, people dream of strange and mind-defying places. The otherworldly Dreams are so clear, yet strange, that the Dreamers are unaware that they are dreaming. Trapped in these strange Dreamlands, the sleeping refuse to wake up. Half asleep and half awake, they try to do what their Dreams tell them. As everything seems unreal to the Dreamers, they are rarely frightened or routed. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
 #magicpower 1
 #patrolbonus -1
-#morale 18
+#mor 18
+#slave
 #gcost 0
 #clearweapons
 #weapon 671
@@ -91878,7 +91891,8 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #descr "Under the influence of the Void, people dream of strange and mind-defying places. The otherworldly Dreams are so clear, yet strange, that the Dreamers are unaware that they are dreaming. Trapped in these strange Dreamlands, the sleeping refuse to wake up. Half asleep and half awake, they try to do what their Dreams tell them. As everything seems unreal to the Dreamers, they are rarely frightened or routed. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
 #magicpower 1
 #patrolbonus -1
-#morale 18
+#mor 18
+#slave
 #gcost 0
 #clearweapons
 #weapon 671
@@ -128662,7 +128676,7 @@ Military: Atlantian and Pelagian Slaves, Monstrous Hybrids, Illithids, Cultists 
 Magic: Astral, Glamour, some Water, Earth, Death and Nature
 Priests: Strong, can summon Void Beings, might get additional insane prophets
 Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void Beings. Magic, Temples and higher Dominion increase chance of better summons. Makes all non void beings insane."
-#domunrest 15
+#domunrest 10
 #fortunrest 5
 #domkill 0
 #moreorder -1
@@ -142807,8 +142821,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #selectspell 3062
 #copyspell 1204 -- Dome of Arcane Warding
 #name "Open Gate to the Beyond"
-#descr "With the awakening of the Dreaming God the void has come closer to this world, blurring the boundaries between the realms. Now the opening of gates to the other side is easier than ever. The caster tears opens a gate to the void in the province, allowing horrors from beyond to enter this world. As a side effect the province will experience terrible dreams that will infect the populace and drive them insane. This spell can only be cast in a province that does not already contain a Void Gate. The Void Gate will remain open indefinitely, however if the province is lost or the mage dies, the gate disappears instantly."
-#details "Province gains Gate to the Beyond site allowing Void Summoning whilst spell remains. Each month Population -2%, Unrest +5 and Turmoil scales will increase."
+#descr "With the awakening of the Dreaming God the void has come closer to this world, blurring the boundaries between the realms. Now the opening of gates to the other side is easier than ever. The caster tears opens a gate to the void in the province, allowing horrors from beyond to enter this world. As a side effect the province will experience terrible dreams that will infect the populace and drive them insane. This spell can only be cast in a province that does not already contain a Void Gate, and care should be made not to open gates too close to each other or to the Void Rift, lest their energies interact and destabilise the gate. The Void Gate will remain open indefinitely, however if the province is lost or the mage dies, the gate disappears instantly."
+#details "Province gains Gate to the Beyond site allowing Void Summoning whilst spell remains. Each month Population -2%, Unrest +5 and Turmoil scales will increase. Opening gates in adjacent provinces or near the Void Rift will cause them to become unstable."
 #researchlevel 6
 #school 5
 #path 0 4
@@ -181277,7 +181291,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #rarity 13
 #req_capital 1
 #req_unique 1
-#req_fornation 89 -- MA Ryleh
+#req_fornation 89 -- MA R'lyeh
 #nation -2
 #req_site 1
 #req_pop0ok
@@ -181291,7 +181305,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #rarity 13
 #req_capital 1
 #req_unique 1
-#req_fornation 127 -- LA Ryleh
+#req_fornation 127 -- LA R'lyeh
 #nation -2
 #req_site 1
 #req_pop0ok
