@@ -3918,6 +3918,7 @@
 #copyweapon 409 -- Javelin
 #name "Javelin of Returning"
 #armorpiercing
+#uwok
 #magic
 #false
 #ammo 1001
@@ -9570,6 +9571,7 @@
 #batstartsum2d6 303  -- Imp
 #weapon 141  -- Poison Spit
 #weapon 239  -- Venomous Fangs
+#weapon 3 -- Trident
 #end
 
 #newmonster 6672
@@ -20723,7 +20725,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #armor "Crested Helmet"
 #weapon "Fist"
 #weapon "Fist"
-#weapon 1561
+#weapon 1562 -- Gore
 #magicskill 6 2
 #summon1 549
 #end
@@ -29129,6 +29131,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #descr "The Aes Sidhe are a supernatural race related to the Sidhe but prone to evil and mischief. During the season of Samhain the Aes Sidhe can more easily come into our world. They may pass by a townstead if offerings of food and drink are left for them, however if the whim takes them they will descend to carry off people and livestock. They are of fay descent and are far superior to humans in physical and magical strength. Like all the Sidhe they are masters of illusions and ride into battle astride magnificent Cu Sidhe, ferocious fay hounds that will fight on if their rider is killed."
 #mountedhumanoid
 #incunrest 2
+#gcost 0
 #ap 22
 #standard 1
 #magicbeing
@@ -34409,7 +34412,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #raiseshape 7709
 #undregen 10
 #spiritsight
-#pooramphibianf
+#pooramphibian
 #weapon 636  -- Life Draining Tentacle
 #weapon 85  -- Tentacle
 #end
@@ -41839,7 +41842,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "dragonkings/dkwestkings2.tga"
 #name "King of the Western Sea"
 #fixedname "Ao Run"
-#descr "The Dragon Kings are primordial dragons put in charge of the Four Seas by the previous Pantokrator. For millennia they have ruled the ocean and brought storms and tidal waves to the coasts of men. In true shape the Dragon Kings are serpentine monsters with tigers claws and shimmering scales of a carp. They are able to run in the air and swim in the water, and take the shape of a dragon headed celestial being more suited for spellcasting. Ao Run, the White Dragon, is the Dragon of the East and the essence of Autumn. He is skilled in the magics of Earth and Water and has some skill in other paths. The Dragon Kings and their descendants are revered as divine beings by the halfmen of the Dragon Courts."
+#descr "The Dragon Kings are primordial dragons put in charge of the Four Seas by the previous Pantokrator. For millennia they have ruled the ocean and brought storms and tidal waves to the coasts of men. In true shape the Dragon Kings are serpentine monsters with tigers claws and shimmering scales of a carp. They are able to run in the air and swim in the water, and take the shape of a dragon headed celestial being more suited for spellcasting. Ao Run, the White Dragon, is the Dragon of the West and the essence of Autumn. He is skilled in the magics of Earth and Water and has some skill in other paths. The Dragon Kings and their descendants are revered as divine beings by the halfmen of the Dragon Courts."
 #unique
 #gcost 0
 #hp 50
@@ -44740,7 +44743,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #supplybonus -5
 #weapon "No-Dachi"
 #weapon "Throw Flames"
-#weapon 1561
+#weapon 1562 -- Gore
 #armor "Heavy Samurai Armor"
 #enc 1
 #ap 14
@@ -49980,7 +49983,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #descr "You shouldn't be able to see this monster."
 #end
 
-#newmonster 8647 -- Nature Prayer Indicator
+#newmonster 8646 -- Nature Prayer Indicator
 #copystats 8649
 #copyspr 465  -- Archangel
 #name "Nature Prayer"
@@ -50077,7 +50080,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #descr "You shouldn't be able to see this monster."
 #end
 
-#newmonster 8657 -- Nature Great Prayer Indicator
+#newmonster 8656 -- Nature Great Prayer Indicator
 #copystats 8659
 #copyspr 465  -- Archangel
 #name "Nature Great Prayer"
@@ -50174,7 +50177,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #descr "You shouldn't be able to see this monster."
 #end
 
-#newmonster 8667 -- Nature Grand Prayer Indicator
+#newmonster 8666 -- Nature Grand Prayer Indicator
 #copystats 8669
 #copyspr 465  -- Archangel
 #name "Nature Grand Prayer"
@@ -54190,7 +54193,7 @@ Cost 56 RP."
 #def 14
 #prec 15
 #prot 0
-#size 5
+#size 3
 #mr 18
 #mor 18
 #enc 0
@@ -57084,7 +57087,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #str 12
 #att 10
 #def 10
-#sizze 3
+#size 3
 #mr 14
 #mor 13
 #enc 3
@@ -59830,9 +59833,8 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 
 #newmonster 9306 -- Illithid Cultist
 #copystats 331 -- Illithid
-#copyspr 331
---#spr1 "worthy_heroes/birdlordbird1.png"
--- #spr2 "worthy_heroes/birdlordbird2.png"
+#spr1 "wateroverhaul/selgillithidcultist1.png"
+#spr2 "wateroverhaul/selgillithidcultist2.png"
 #name "Illithid Cultist"
 #descr "With the coming of the Dreaming God, even the Illithid are influenced by the call of the Void and subsequent horrors of the Dreamlands. Illithid who have succumbed to madness become holy figures within the Dream Cult as a sure sign of the Void's favour. They are cheaper to recruit in lands touched by the bizarre dreams of R'lyeh."
 #gcost 160
@@ -59849,9 +59851,8 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 
 #newmonster 9307 -- Dreaming Mage
 #copystats 1518 -- Slave Mage
-#copyspr 1518
---#spr1 "worthy_heroes/birdlordbird1.png"
--- #spr2 "worthy_heroes/birdlordbird2.png"
+#spr1 "wateroverhaul/selgdreamermage1.png"
+#spr2 "wateroverhaul/selgdreamermage2.png"
 #name "Dreaming Mage"
 #descr "The coming of the Dreamlands shattered the great slave empire of R'lyeh and freed many of its slaves. Unfortunately, not all were lucky enough to escape before the madness overwhelmed them. Dreaming mages are slave mages trapped in Dreams of strange and mind-defying places. Half asleep and half awake, they continue to perform their arcane duties for the surviving Illithids. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the Void. They are cheaper to recruit in lands touched by the bizarre dreams of R'lyeh."
 #gcost 220
@@ -59871,9 +59872,8 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 
 #newmonster 9308 -- Dreaming Mage land shape
 #copystats 1519 -- Slave Mage
-#copyspr 1519
---#spr1 "worthy_heroes/birdlordbird1.png"
--- #spr2 "worthy_heroes/birdlordbird2.png"
+#spr1 "wateroverhaul/selgdreamermageland1.png"
+#spr2 "wateroverhaul/selgdreamermageland2.png"
 #name "Dreaming Mage"
 #descr "The coming of the Dreamlands shattered the great slave empire of R'lyeh and freed many of its slaves. Unfortunately, not all were lucky enough to escape before the madness overwhelmed them. Dreaming mages are slave mages trapped in Dreams of strange and mind-defying places. Half asleep and half awake, they continue to perform their arcane duties for the surviving Illithids. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the Void. They are cheaper to recruit in lands touched by the bizarre dreams of R'lyeh."
 #gcost 200
@@ -59891,39 +59891,38 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #chaosrec 5
 #end
 
-#newmonster 9309 -- Triton Hybrid
-#copyspr 306
+#newmonster 9309 -- Merman Hybrid
+#copystats 1046
+#copyspr 1046
 --#spr1 "worthy_heroes/birdlordbird1.png"
 --#spr2 "worthy_heroes/birdlordbird2.png"
-#name "Triton Hybrid"
-#descr "As their grand empire collapsed around them, the Illithid of R'yleh turned to more horrific and twisted experiments in an attempt to maintain the loyalty of their slave races. Triton Hybrids are an abomination, mutated en-masse within great flesh vats by fusing Tritons and Mermen. Each head controls one half of the hybrid as it jerks forward upon a writhing mass of fins, in  mockery of their once graceful movements. Triton Hybrids can only hope for a quick death on the battlefield and are surprisingly difficult to rout."
-#naga
-#itemslots 1925662
-
+#name "Merman Hybrid"
+#descr "As their slave empire collapsed around them, the Illithid of R'yleh turned to increasingly horrific crossbreeding experiments in an attempt to maintain order. Merman Hybrids are one such strange crossbreed of unknown origin, probably mutated into existence by the Lords of R'lyeh. Ideal slaves, they docile to their masters but merciless and cruel to their enemies. Mermen can remove their tails to shamble upon dry land."
 #rcost 1
 #gcost 16
 #rpcost 18
-#hp 22
-#str 12
+#hp 18
+#str 13
 #att 11
 #def 10
 #prec 8
-#prot 1
+#prot 5
 #size 4
 #mr 12
-#mor 13
+#mor 12
 #enc 3
-#mapmove 12
-#ap 10
+#mapmove 16
+#ap 22
+#clearweapons
 #weapon 670 -- Bone Trident
-#weapon 671 -- Stone Dagger
-#weapon 671 -- Stone Dagger
-#armor 140 -- Shell Armour
-#ambidextrous 3
-#unsurr 1
+#weapon 85 -- Tentacle
+#weapon 85 -- Tentacle
+#armor 188 -- Sharkskin Cuirass
 #amphibian
+#float
 #maxage 50
 #slave
+#landshape 9312
 #end
 
 #newmonster 9310 -- Lobster Hybrid recruitable
@@ -59949,13 +59948,44 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #mor 18
 #insane 25
 #magicpower 1
-#reclimit 3
 #mr 17
 #holy
 #holycost 2
 #nightmareaura 5
 #end
 
+#newmonster 9312 -- Merman Hybrid Land Shape
+#copystats 1047
+#copyspr 1047
+--#spr1 "worthy_heroes/birdlordbird1.png"
+--#spr2 "worthy_heroes/birdlordbird2.png"
+#name "Merman Hybrid"
+#descr "As their slave empire collapsed around them, the Illithid of R'yleh turned to increasingly horrific crossbreeding experiments in an attempt to maintain order. Merman Hybrids are one such strange crossbreed of unknown origin, probably mutated into existence by the Lords of R'lyeh. Ideal slaves, they docile to their masters but merciless and cruel to their enemies. Mermen Hybrids can remove their tails to walk upon dry land."
+#rcost 1
+#gcost 16
+#rpcost 18
+#hp 18
+#str 13
+#att 11
+#def 10
+#prec 8
+#prot 5
+#size 4
+#mr 12
+#mor 12
+#enc 3
+#mapmove 16
+#ap 10
+#clearweapons
+#weapon 670 -- Bone Trident
+#weapon 85 -- Tentacle
+#weapon 85 -- Tentacle
+#armor 188 -- Sharkskin Cuirass
+#amphibian
+#maxage 50
+#slave
+#watershape 9309
+#end
 
 -- End LA R'lyeh Monsters
 
@@ -69913,7 +69943,7 @@ Cannot be recruited until Break the Deadlock is cast."
 
 #selectmonster 3729
 #clearweapons
-#weapon1887
+#weapon 1887
 #airshield 80
 #end
 
@@ -80559,7 +80589,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #moreprod 1
 #mor 30
 #hp 200
-#prot 3
+#prot 30
 #str 15
 #att 5
 #def 0
@@ -91813,6 +91843,8 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #end
 
 #selectmonster 1567  -- Mad Merman
+#spr1 "wateroverhaul/selgmadmerman1.png"
+#spr2 "wateroverhaul/selgmadmerman2.png"
 #patrolbonus -1
 #mor 15
 #slave
@@ -91822,6 +91854,8 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #end
 
 #selectmonster 1568  -- Mad Merman
+#spr1 "wateroverhaul/selgmadmermanland1.png"
+#spr2 "wateroverhaul/selgmadmermanland2.png"
 #patrolbonus -1
 #mor 15
 #slave
@@ -91831,6 +91865,8 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #end
 
 #selectmonster 1569  -- Mad Triton
+#spr1 "wateroverhaul/selgmadtriton1.png"
+#spr2 "wateroverhaul/selgmadtriton2.png"
 #patrolbonus -1
 #mor 15
 #slave
@@ -119483,25 +119519,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 9172 -- Patxi
 #end
 
-
-#newsite 2603
-#name "Turan Reign"
-#level 9
-#rarity 5
-#path 0
-#look 4
-#decscale 2 -- Heat
-#end
-
-#newsite 2604
-#name "Airya Reign"
-#level 9
-#rarity 5
-#path 2
-#look 4
-#incscale 2 -- Cold
-#end
-
 #newsite 2607 -- 
 #name "Airyas Rule"
 #level 0
@@ -119642,6 +119659,11 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #rarity 5
 #voidgate 20
+#end
+
+#newsite 2620
+#copysite 722 --Enchanted Gate--
+#name "Opening Gate"
 #end
 
 -- 2917 used by iram summons
@@ -128564,7 +128586,6 @@ Cold dominions are affected more by Summer and Warm dominions are affected more 
 #addreccom 443 -- Star Child
 #addreccom 9307 -- Dreaming Mage
 #addreccom 3858 -- Starspawn
-#addreccom 7904 -- Starspawn Dreamer
 
 #landcom 443 -- Star Child
 
@@ -128628,21 +128649,22 @@ Cold dominions are affected more by Summer and Warm dominions are affected more 
 
 --PD and fort fmults
 
--- #wallcom 2470 -- Hybrid Commander NEED TO CLEAR FORT GUARDS FIRST BUT UNSURE HOW TO
--- #wallunit 972 -- Hybrid Soldier
--- #wallmult 4
 
--- #uwwallcom 445 -- Illithid Lord
--- #uwwallunit 331 -- Illithid
--- #uwwallmult 10
+#wallcom 2470 -- Hybrid Commander
+#wallunit 972 -- Hybrid Soldier
+#wallmult 4
 
--- #guardcom 2470 -- Hybrid Commander
--- #guardunit 971 -- Hybrid Trooper
--- #guardmult 10
+--#uwwallcom 445 -- Illithid Lord
+--#uwwallunit 331 -- Illithid
+--#uwwallmult 4
 
--- #uwguardcom 445 -- Illithid Lord
--- #uwguardunit 335 -- Slave Trooper
--- #uwguardmult 15
+#guardcom 2470 -- Hybrid Commander
+#guardunit 971 -- Hybrid Trooper
+#guardmult 10
+
+--#uwguardcom 445 -- Illithid Lord
+--#uwguardunit 335 -- Slave Trooper
+--#uwguardmult 15
 
 #uwdefunit1 337 -- Lobo Guard 
 #uwdefmult1 20
@@ -136546,7 +136568,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #fatiguecost 50
 #precision 100
 #spec 4210688  -- Friendlies only, ignore shields
-#damage 2147500032  -- Enlarge + Heat Aura
+#damage 2147501056  -- Enlarge + Heat Aura + FR
 #nextspell 2627
 #restricted 16 -- EA Abysia
 #restricted 63 -- MA Abysia
@@ -136589,7 +136611,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #range 5
 #fatiguecost 100
 #spec 4210688  -- Friendlies only, ignore shields
-#damage 2147500032  -- Enlarge + Heat Aura
+#damage 2147501056  -- Enlarge + Heat Aura + FR
 #nextspell 2627
 #restricted 16 -- EA Abysia
 #restricted 63 -- MA Abysia
@@ -142822,7 +142844,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 1204 -- Dome of Arcane Warding
 #name "Open Gate to the Beyond"
 #descr "With the awakening of the Dreaming God the void has come closer to this world, blurring the boundaries between the realms. Now the opening of gates to the other side is easier than ever. The caster tears opens a gate to the void in the province, allowing horrors from beyond to enter this world. As a side effect the province will experience terrible dreams that will infect the populace and drive them insane. This spell can only be cast in a province that does not already contain a Void Gate, and care should be made not to open gates too close to each other or to the Void Rift, lest their energies interact and destabilise the gate. The Void Gate will remain open indefinitely, however if the province is lost or the mage dies, the gate disappears instantly."
-#details "Province gains Gate to the Beyond site allowing Void Summoning whilst spell remains. Each month Population -2%, Unrest +5 and Turmoil scales will increase. Opening gates in adjacent provinces or near the Void Rift will cause them to become unstable."
+#details "Province gains Gate to the Beyond site allowing Void Summoning whilst spell remains. Each month Population -2%, Unrest +5 and Turmoil scales will increase. Opening gates in adjacent provinces or near the Void Rift will cause them to become unstable and collapse."
 #researchlevel 6
 #school 5
 #path 0 4
@@ -142851,7 +142873,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #fatiguecost 500
 #effect 10084  -- Permanent Enchantment
 #friendlyench 1
-#damage 256 -- Ench60  -- Expand Void Gate
+#damage 260 -- Ench60  -- Expand Void Gate
 #onlyatsite 2175 -- Gate to the Beyond
 #restricted 127 -- LA R'lyeh
 #end
@@ -160278,7 +160300,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 927 -- Summon Hawk -- Experimental change
 #name "Summon Hawks"
 #descr "The caster shrieks and soon a group of Black Hawk will appear on the battlefield. Black Hawks are not very powerful, but they might distract advancing enemies."
---#aispellmod -95
+#aispellmod -95
 #nreff 2004 -- 6++
 #fatiguecost 100
 #researchlevel 3
@@ -163085,7 +163107,7 @@ Can only be cast once per combat round."
 #descr "This crown made of a strange black metal seems to contain cosmic vistas and images of distant stars and causes the wearer to dream strange otherworldy dreams. It is attuned to the void and will protect the wearer from its influence, aswell as some hostile magic. As a side effect the bearer will be unable to move via teleportation, including using a Gateway or Astral Travel."
 #constlevel 3
 #mainpath 4
-#mainlevel 2
+#mainlevel 1
 #voidsanity 5
 --#shatteredsoul 5
 #unteleportable
@@ -163109,7 +163131,9 @@ Can only be cast once per combat round."
 #type 9  -- Crown
 #bestowtomount
 #spiritsight
-#unsurr 5
+#unsurr 4
+#itemcost1 -40
+#itemcost2 -40
 #end
 
 #selectitem 692
@@ -164065,6 +164089,7 @@ Can only be cast once per combat round."
 #restricted 127 -- LA Rlyeh
 #bestowtomount
 #voidsanity 5
+#itemcost1 -40
 #end
 
 #selectitem 743
@@ -180722,7 +180747,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 
 #newevent
 #rarity 5
-#req_ench 257 -- Ench58 -- Expand Void Gate
+#req_ench 260 -- Ench60 -- Expand Void Gate
 #req_owncapital 0
 #req_nositenbr 2619 -- Expanded Void Gate
 #req_pop0ok
@@ -180733,7 +180758,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 
 #newevent
 #rarity 5
-#req_noench 257 -- Ench58
+#req_noench 260 -- Ench60
 #req_site 1  -- Portal to Beyond
 #req_pop0ok
 #msg "The Void Gate has closed! [Portal to Beyond]"
@@ -180767,6 +180792,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #notext
 #1d3units -1040 -- void being
 #end
+
+
 
 #newevent
 #rarity 5
@@ -182300,12 +182327,39 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #rarity 5
 #req_ench 257 -- Ench57
 #req_owncapital 0
-#req_nositenbr 2175 -- Gate to the Void
 #req_pop0ok
-#msg "Void Gate appears"
+#req_site 0
+#msg "Void Gate appears [Gate to Beyond]"
 #notext
 #nolog
-#addsite 2175
+#maybeaddsite 2620 --Adds site 2620 R'lyeh Gate if it doesnt already exist in the province when spell is Cast, cannot be cast if adjacent gate site is there--
+#end
+
+#newevent
+#rarity 5
+#req_nearbysite 1
+#req_ench 257 -- Ench57
+#req_pop0ok
+#msg "Your gate was too close to the Void Rift, and failed to open. [Void Rift]"
+#removesite 2620 --Opening Gate
+#end
+
+#newevent
+#rarity 5
+#req_nearbysite 1
+#req_ench 257 -- Ench57
+#req_pop0ok
+#msg "Your gate was too close to another voidgate, and failed to open. [Gate to Beyond]"
+#removesite 2620 --Opening Gate
+#end
+
+#newevent
+#rarity 5
+#req_site 1
+#req_pop0ok
+#msg "[Opening Gate]"
+#removesite 2620 --Opening Gate--
+#addsite 2175 --Gate to Beyond
 #end
 
 #newevent
@@ -185697,7 +185751,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 --#req_permonth 1
 #req_capital 1
 #req_pop0ok
-#msg "The season of Samhain has ended and the gate to the Otherworld has opened. [Samhain Gate]"
+#msg "The season of Samhain has ended and the gate to the Otherworld has closed. [Samhain Gate]"
 #req_site 1
 #removesite 2149
 #end
@@ -190022,6 +190076,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #nation -2
 #claimthrone
 #end
+
 
 
 
