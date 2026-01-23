@@ -48372,8 +48372,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #copystats 1366 -- lizard heir
 #spr1 "vanilla/lizardchariotholy1.tga"
 #spr2 "vanilla/lizardchariotholy2.tga"
-#mountedspr1 "vanilla/un_lizardchariotholy1.tga"
-#mountedspr2 "vanilla/un_lizardchariotholy2.tga"
+#unmountedspr1 "vanilla/un_lizardchariotholy1.tga"
+#unmountedspr2 "vanilla/un_lizardchariotholy2.tga"
 #name "Temple Charioteer"
 #descr "Ceremonies and parades are common in the sacred kingdom and gilded, lizard-drawn chariots can often be seen in the Temple City. The chariots are used in warfare as well as in parades. With scythed wheels, the chariot is mainly an offensive weapon. Its charge causes tremendous damage to lightly armored troops. Temple Charioteers are raised from hatching inside the Temple City as sacred warriors and subordinates to an heir, and reside in the Temple City until called to war. Cost 56 RP."
 #prot 6
