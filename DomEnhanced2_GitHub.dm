@@ -45811,7 +45811,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #stealthy 50
 #invulnerable 25
 #weapon 1712 -- Gram
-#armor 8  -- chain mail cuirass"
+#armor 8  -- chain mail cuirass
 #armor 505 -- enchanted helmet
 #armor 92  -- enchanted shield
 #mapmove 3
@@ -125059,7 +125059,7 @@ Priests: Weak. Can unlock strong priests in capital."
 
 --starting army
 #startcom 9613 --"Madawaki"
-#startunittype1 9604 --"Hausa Infantry
+#startunittype1 9604 --"Hausa Infantry"
 #startunitnbrs1 20
 #startunittype2 9609 --"Colossi Soldier"
 #startunitnbrs2 10
@@ -135937,7 +135937,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #copyspell 250 -- Poison Touch
 #name "Spider Bites"
 #descr "The caster points at a target who immediately feels tiny bites all over their body. The target will be poisoned by the phantasmal spiders. Armour provides no defence from the bites."
--#school 2
+--#school 2
 #school -1
 #researchlevel 5
 #precision 100
