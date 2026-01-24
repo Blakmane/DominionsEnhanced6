@@ -123976,7 +123976,6 @@ Priests: Weak. Most mages are priests and some are Heretics."
 #era 2
 #name "Sawaiiki"
 #epithet "Eternal Sea"
-#descr "A nation of sailors and warriors, they traveled the eternal sea for ages. With only rudimentary technology, they were able to conquer and unite the islands into a formidable fighting force."
 #flag "sawaikii/flag.tga"
 #brief "The Eternal Sea was settled by the Four Uncreated Beings before the first sunrise. As time passed, they taught humans the secrets of mana, spiritual energy that exists within the land."
 #descr "The society of Sawaiiki revolves around the following of the Kapu, the rules that govern society and the mana. All supernatural and mortal power flows from the Kapu, and the True God is the focus of Kapu and above all others. The Kapu dictates that those who fight are the highest in society, and thefore are considered sacred by those lesser in stature. Even the Kahuna, the sorcerers and healers of Sawaiiki are lesser than the Ali'i. The priests of Sawaiiki include the worshippers of those known as the Four and the Spirit of Ruin, and in battle they aid and harm respectively. With the coming of the Reawakening God, the Ali'i of Sawaiiki set their eyes beyond the isles of the Eternal Sea."
