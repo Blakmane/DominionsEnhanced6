@@ -45814,7 +45814,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #stealthy 50
 #invulnerable 25
 #weapon 1712 -- Gram
-#armor 8  -- chain mail cuirass"
+#armor 8  -- chain mail cuirass
 #armor 505 -- enchanted helmet
 #armor 92  -- enchanted shield
 #mapmove 3
@@ -48375,8 +48375,8 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #copystats 1366 -- lizard heir
 #spr1 "vanilla/lizardchariotholy1.tga"
 #spr2 "vanilla/lizardchariotholy2.tga"
-#mountedspr1 "vanilla/un_lizardchariotholy1.tga"
-#mountedspr2 "vanilla/un_lizardchariotholy2.tga"
+#unmountedspr1 "vanilla/un_lizardchariotholy1.tga"
+#unmountedspr2 "vanilla/un_lizardchariotholy2.tga"
 #name "Temple Charioteer"
 #descr "Ceremonies and parades are common in the sacred kingdom and gilded, lizard-drawn chariots can often be seen in the Temple City. The chariots are used in warfare as well as in parades. With scythed wheels, the chariot is mainly an offensive weapon. Its charge causes tremendous damage to lightly armored troops. Temple Charioteers are raised from hatching inside the Temple City as sacred warriors and subordinates to an heir, and reside in the Temple City until called to war. Cost 56 RP."
 #prot 6
@@ -123998,7 +123998,6 @@ Priests: Weak. Most mages are priests and some are Heretics."
 #era 2
 #name "Sawaiiki"
 #epithet "Eternal Sea"
-#descr "A nation of sailors and warriors, they traveled the eternal sea for ages. With only rudimentary technology, they were able to conquer and unite the islands into a formidable fighting force."
 #flag "sawaikii/flag.tga"
 #brief "The Eternal Sea was settled by the Four Uncreated Beings before the first sunrise. As time passed, they taught humans the secrets of mana, spiritual energy that exists within the land."
 #descr "The society of Sawaiiki revolves around the following of the Kapu, the rules that govern society and the mana. All supernatural and mortal power flows from the Kapu, and the True God is the focus of Kapu and above all others. The Kapu dictates that those who fight are the highest in society, and thefore are considered sacred by those lesser in stature. Even the Kahuna, the sorcerers and healers of Sawaiiki are lesser than the Ali'i. The priests of Sawaiiki include the worshippers of those known as the Four and the Spirit of Ruin, and in battle they aid and harm respectively. With the coming of the Reawakening God, the Ali'i of Sawaiiki set their eyes beyond the isles of the Eternal Sea."
@@ -125081,7 +125080,7 @@ Priests: Weak. Can unlock strong priests in capital."
 
 --starting army
 #startcom 9613 --"Madawaki"
-#startunittype1 9604 --"Hausa Infantry
+#startunittype1 9604 --"Hausa Infantry"
 #startunitnbrs1 20
 #startunittype2 9609 --"Colossi Soldier"
 #startunitnbrs2 10
@@ -135959,7 +135958,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #copyspell 250 -- Poison Touch
 #name "Spider Bites"
 #descr "The caster points at a target who immediately feels tiny bites all over their body. The target will be poisoned by the phantasmal spiders. Armour provides no defence from the bites."
--#school 2
+--#school 2
 #school -1
 #researchlevel 5
 #precision 100
