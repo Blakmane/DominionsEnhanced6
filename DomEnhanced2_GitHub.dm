@@ -64809,7 +64809,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #armor 118 --"Half Helmet"
 #armor 112 --"Great Hide Shield"
 #weapon 357 --"Light Lance"
-#weapon 21 –”Javelin”
+#weapon 21 --"Javelin"
 #skilledrider 2
 #addupkeep 55
 #holy
@@ -155330,7 +155330,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #school 2 -- Evocation
 #researchlevel 6
 #path 0 1 --magic path
-#pathlevel 0 3e
+#pathlevel 0 3
 #path 1 4
 #pathlevel 1 3
 #fatiguecost 4500
@@ -167703,7 +167703,7 @@ This headband does not require activation in combat."
 #autodisgrinder 5
 #end
 
-#selectitem 456 - The Green Eye
+#selectitem 456 -- The Green Eye
 #constlevel 7
 #unique
 #end
@@ -189107,7 +189107,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 71 --MA Caelum
 #req_owncapital 1 --only in capitals
 #req_unique 1
-#addgeo 16 Highland
+#addgeo 16 --Highland
 #end
 
 #selectsite 172 --MA Nazca Palace of the Sun Kings
@@ -189192,7 +189192,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 106 --LA Caelum
 #req_owncapital 1 --only in capitals
 #req_unique 1
-#addgeo 16 Highland
+#addgeo 16 --Highland
 #end
 
 
@@ -189269,7 +189269,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 40 --EA Palagia
 #req_owncapital 1 --only in capitals
 #req_unique 1
-#addgeo 4 Shallow Sea
+#addgeo 4 --Shallow Sea
 #end
 
 #selectsite 101 --EA Oceania The Grove of Aphros
@@ -189354,7 +189354,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fornation 86 --MA Palagia
 #req_owncapital 1 --only in capitals
 #req_unique 1
-#addgeo 4 Shallow Sea
+#addgeo 4 --Shallow Sea
 #end
 
 #selectsite 2206 --MA Ryugo-Jotunheim
