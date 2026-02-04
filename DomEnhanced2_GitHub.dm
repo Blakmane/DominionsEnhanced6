@@ -154160,40 +154160,6 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #restricted 109 -- LA Tien Chi
 #end
 
-
-#selectspell 3998
-#copyspell 106 -- Record of Creation
-#name "Release Throne Power"
-#descr "The caster performs a ritual to gather some of the remnants of the Pantokrators power and bestow it upon the Pretender God. The spell must be cast at the site of a Throne of Ascension and the Pretender God must be present in the province. The power gained will vary depending on the Throne used for the ritual. The ritual requires long and careful preparations and will not be successful if cast whilst the province is under siege. If cast at a province other than the site of a Throne, or if the Pretender God is not present the spell will fail and the gems will be wasted. The power can only be gathered once at each possible site."
-#details "Pretender gain benefits dependent on Throne used for Ritual."
-#school -1
-#researchlevel 6
-#path 0 3
-#pathlevel 0 4
-#nreff 1
-#effect 10083
-#damage -1
-#fatiguecost 2000
-#nextspell "Call Divine Spirit"
-#end
-
-#selectspell 3999
-#copyspell 106 -- Record of Creation
-#name "Release Throne Power"
-#descr "The caster performs a ritual to gather some of the remnants of the Pantokrators power and bestow it upon the Pretender God. The spell must be cast at the site of a Throne of Ascension and the Pretender God must be present in the province. The power gained will vary depending on the Throne used for the ritual. The ritual requires long and careful preparations and will not be successful if cast whilst the province is under siege. If cast at a province other than the site of a Throne, or if the Pretender God is not present the spell will fail and the gems will be wasted. The power can only be gathered once at each possible site."
-#details "Pretender gain benefits dependent on Throne used for Ritual."
-#school -1
-#researchlevel 6
-#path 0 4
-#pathlevel 0 4
-#nreff 1
-#effect 10083
-#damage -1
-#fatiguecost 2000
-#nextspell "Call Divine Spirit"
-#end
-
-
 #selectspell 4028
 #copyspell 935 -- Pack of Wolves
 #name "Summon the Night-gaunts"
@@ -188809,7 +188775,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_site 1
 #req_pop0ok
 #msg "A Void Rift has been successfully opened. [Opening Gate]"
-#nolog
+--#nolog
 #header 2
 #removesite 2620 -- Opening Gate
 #addsite 2222 -- Void Rift
@@ -188820,10 +188786,25 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_site 1  -- Void Rift
 --#req_capital 0
 #req_domchance 10
-#req_mydominion 0
+#req_mydominion 1
+#req_notforally 127 -- LA R'lyeh
 #req_pop0ok
 #msg "A Void Rift has been closed without the influence of R'lyeh. [Void Rift]"
-#nolog
+--#nolog
+#header 2
+#removesite 2222 -- Void Rift
+#end
+
+#newevent
+#rarity 5
+#req_site 1  -- Void Rift
+--#req_capital 0
+#req_domchance 10
+#req_mydominion 0
+#req_fornation 127 -- LA R'lyeh
+#req_pop0ok
+#msg "A Void Rift has been closed without the influence of R'lyeh. [Void Rift]"
+--#nolog
 #header 2
 #removesite 2222 -- Void Rift
 #end
