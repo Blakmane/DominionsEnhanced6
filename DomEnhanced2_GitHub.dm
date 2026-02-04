@@ -221,6 +221,13 @@
 #end
 
 
+#selectbless "Barkskin"
+#cost0 4
+#path1 6
+#cost1 2
+#growthscale 1
+#end
+
 
 #gemlongevity 2
 
@@ -4043,6 +4050,28 @@
 #range 100
 #end
 
+#newweapon 1913 -- Weak Mind Blast
+#copyweapon 86 -- Mind Blast
+#name "Weak Mind Blast"
+#ammo 1
+#range 20
+--#mrnegateseasily
+#dmg 4
+#range0
+#end
+
+#newweapon 1914 -- Nightmare
+#copyweapon 86 -- Mind Blast
+#name "Nightmare Projection"
+#range 100
+#ammo 1002
+#att 100
+#nratt -2
+#range0
+#dt_aff
+#dmg 17179870208 -- Sleep, Confusion
+#secondaryeffect 293
+#end
 
 
 -- END OF NEW WEAPONS
@@ -4084,7 +4113,7 @@
 #dmg 68719476736 -- slow affliction
 #dmginspector 9007199254740992 -- ??? affliction
 #secondaryeffectalways 1830 -- mind blast stun
-#range050
+#range0
 #ammo 1003
 #end
 
@@ -20951,9 +20980,9 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #flying
 #stormimmune
 #ambidextrous 3
-#weapon "Life Drain"
-#weapon "Steal Strength"
-#weapon "Steal Strength"
+#weapon 719 -- Life Drain
+#weapon 811 -- stealth strength
+#weapon 811 -- stealth strength
 #end
 
 #newmonster 7074
@@ -27422,6 +27451,35 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #nametype 107  -- Arco Male
 #end
 
+#newmonster 7393
+#spr1 "magicenhanced/eeyithian.tga"
+#spr2 "magicenhanced/eeyithian2.tga"
+#name "Yithian"
+#descr "Yithians are strange creatures that can project their minds through time. From their base in the earliest prehistory of the world they monitor time itself and shape it to their will. Yithians are tough cone shaped creatures with several odd limbs that can manipulate objects."
+#miscshape
+#hp 42
+#size 6
+#prot 12
+#mr 15
+#mor 15
+#str 14
+#att 12
+#def 12
+#prec 10
+#enc 3
+#mapmove 2
+#ap 12
+#eyes 3
+#weapon 29  -- Claw
+#weapon 29  -- Claw
+#magicbeing
+#magicskill 4 2 -- S
+#researchbonus 6
+#voidsanity 10
+#itemslots 860166
+#nametype 117  -- Deep Ones
+#end
+
 #newmonster 7394
 #copystats 2841  -- Spectral Peltast
 #name "Spectral Melia"
@@ -31626,7 +31684,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #custommagic 1152 100  -- 100% EF
 #itemslots 794630 -- no body slot
 #weapon 13  -- Hammer
-#makemonsters3 -1032  -- Clockwork beings
+--#makemonsters2 -1032  -- Clockwork beings
+#makemonsters2 2321 -- Clockwork Soldier
 #end
 
 #newmonster 7589
@@ -35592,6 +35651,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #magicskill 9 4
 #autohealer 2
 #holy
+#unique
 #elegist 20
 #spreaddom 1
 #immortal
@@ -35716,7 +35776,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #descr "The Centzonhuitznahua are the innumerable manifestations of the southern stars. Long ago they conspired with the Moon to kill their mother after learning she had been impregnated by a ball of feathers, but when they attempted to approach her their brother emerged ready for battle and scattered them into the skies. There they remain, however they can be coaxed back to the earthly realm. They are ethereal beings difficult to harm with mortal weapons, and stronger in areas rich in magic and weaker in areas where magic is scarce."
 #gcost 0
 #hp 17
-#prot 4
+#prot 2
 #mr 15
 #mor 16
 #str 14
@@ -35755,6 +35815,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #poisonres 15
 #shockres 15
 #magicbeing
+#darkvision 50
 #magicskill 1 1
 #magicskill 4 1
 #stormimmune
@@ -38024,15 +38085,19 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Starspawn Dreamer"
 #descr "Starspawn Dreamers are ancient Illithids of tremendous power. Most remember the day when the Star fell and the City of R'lyeh was built. With the coming of the Sleeping God those Starspawns that received the Dreams most strongly have risen to positions of power within the City of Unfulfilled Dreams. These Starspawns are High Priests of the Sleeping God, masters of Astral and Glamour Magic. All Illithids are amphibious and able to use a mind blast attack in battle. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
 #rpcost 4
+#armor 230 -- Magic Robes
 #slowrec
 #chaosrec 20
 #magicpower 1
 #magicskill 4 2
-#magicskill 7 2
+#magicskill 7 3
 #magicskill 9 3
-#custommagic 24064 200  -- 200% WESDG
-#custommagic 24064 10  -- 10% WESDG
-#insane 10
+--#custommagic 24064 200  -- 200% WESDG
+--#custommagic 24064 10  -- 10% WESDG
+#custommagic 23040 100  -- 100% WSDG
+#custommagic 23040 100  -- 100% WSDG
+#custommagic 23040 10  -- 10% WSDG
+#insane 5
 #voidsanity 10
 #holy
 #mor 18
@@ -42802,13 +42867,14 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "fennoscandia/fstrollshaman.tga"
 #spr2 "fennoscandia/fstrollshaman2.tga"
 #name "Troldfolk Shaman"
-#descr "This is a shaman of the Troldfolk tribes. These reclusive tribes live in the forested regions and can be dangerous to lone travellers. Trolls are ugly and slow witted, however they are strong and can regenerate wounds. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly. Trolls can survive on a diet of sticks and stones although they prefer to supplement their diet with fresh meat."
+#descr "This is a shaman of the Troldfolk tribes and even they are held sacred for their connection to the spirit realm. These reclusive tribes live in the forested regions and can be dangerous to lone travellers, . Trolls are ugly and slow witted, however they are strong and can regenerate wounds. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly. Trolls can survive on a diet of sticks and stones although they prefer to supplement their diet with fresh meat."
 #rpcost 10
 #gcost 10030
 #mor 12
 #coldres 5
 #fireres 0
 #shockres -5
+#holy
 #forestsurvival
 #end
 
@@ -43193,7 +43259,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #descr "The Vuorihiisi is a foul tempered mountain troll of Fennoscandia. Larger and fiercer than common forest trolls, they live on remote peaks where they practice their dark magic in peace. They dislike visitors and are known to eat those that displease them, however they can be bargained with and will sometimes agree to aid a mage for a haul of magical gems. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly. Trolls can survive on a diet of sticks and stones although they prefer to supplement their diet with fresh meat."
 #gcost 0
 #hp 45
-#str 21
+#str 23
 #mr 17
 #mor 15
 #coldres 10
@@ -59229,8 +59295,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #name "King in the Mountain"
 #descr "Dovregubben is the King of the Bjergtroll tribe, and self-proclaimed King of all troll kind. He is a troll of immense stature with an incredibly tough hide and innately skilled in troll magic. He generally resides within his mountain home, but may be persuaded to fight alongside the people of Fennoscandia with enough gems and riches. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly."
 #fixedname "Dovregubben"
-#gcost 0
-#gold 900
+#gcost 900
 #size 9
 #bodyguard 0
 #fireres 0
@@ -59242,6 +59307,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #prot 13
 #fear 5
 #mr 18
+#regeneration 15
 #expertleader
 #startage 250
 #maxage 200
@@ -59338,7 +59404,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #bodyguard 0
 #fireres 0
 #shockres -10
-#str 22
+#str 23
 #hp 41
 #prot 12
 #clearweapons
@@ -59507,7 +59573,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #bodyguard 0
 #fireres 0
 #shockres -10
-#str 23
+#str 24
 #hp 44
 #prot 12
 #clearweapons
@@ -59844,9 +59910,10 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #userestricteditem 14
 #stealthy 0
 #chaosrec 10
-#insane 10
+#insane 5
 #mor 14
 #okleader
+#holy
 #end
 
 #newmonster 9307 -- Dreaming Mage
@@ -59860,13 +59927,13 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #magicskill 7 1 -- Glamour
 #magicskill 4 1 -- Astral
 #magicskill 2 1 -- Water
-#custommagic 27136 100 - 100% WSNG
+#custommagic 27136 100 -- 100% WSNG
 #mor 18
 #mr 17
-#insane 10
+#insane 5
 #landshape 9308
 #magicpower 1
-#voidsanity 1
+#voidsanity 5
 #chaosrec 5
 #end
 
@@ -59876,48 +59943,84 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #spr2 "wateroverhaul/selgdreamermageland2.png"
 #name "Dreaming Mage"
 #descr "The coming of the Dreamlands shattered the great slave empire of R'lyeh and freed many of its slaves. Unfortunately, not all were lucky enough to escape before the madness overwhelmed them. Dreaming mages are slave mages trapped in Dreams of strange and mind-defying places. Half asleep and half awake, they continue to perform their arcane duties for the surviving Illithids. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the Void. They are cheaper to recruit in lands touched by the bizarre dreams of R'lyeh."
-#gcost 200
+#gcost 220
 #clearmagic
 #magicskill 7 1 -- Glamour
 #magicskill 4 1 -- Astral
 #magicskill 2 1 -- Water
-#custommagic 27136 100 - 100% WSNG
+#custommagic 27136 100 -- 100% WSNG
 #mor 18
 #mr 17
-#insane 10
+#insane 5
 #magicpower 1
 #watershape 9307
 #voidsanity 5
 #chaosrec 5
 #end
 
-#newmonster 9309 -- Merman Hybrid
+#newmonster 9309 -- Lobster Hybrid recruitable
+#descr "The Lobster hybrid is a larger, more ferocious version of a Crab Hybrid created from captured sea trolls rather than Atlantians. Lobster hybrids are semi-intelligent and used in battle as heavy shock troops. Their thick armor plates and large pincers mixed with the Sea Trolls natural strength and regenerative ability make them highly effective warriors. Lobster hybrids are amphibious and can leave the sea. Costs 46 RP."
+#copystats 7890
+#copyspr 7890
+#gcost 95
+#rpcost 46
+#reclimit 3
+#rcost 1
+#slave
+#end
+
+#newmonster 9310 -- Nightmare Guard
+#copystats 407 -- Illithid Soldier
+#spr1 "vanilla/nightmareguard1.png"
+#spr2 "vanilla/nightmareguard2.png"
+#name "Nightmare Guard"
+#descr "Illithids are members of a once great race from a distant star. Following their descent from the heavens, raw meteoric metal was so common in R'lyeh that even their slaves could be outfitted with meteorite iron armour and weapons. After the collapse of R'lyeh and rise of the Dreamlands these precious metals have become rare, hoarded only by the most powerful Illithid lords. In the ruins of the Capital, remnants of the once mighty Illithid armies gather what little meteorite iron remains and use it to outfit those touched by the power of the Void Rift. These Sacred Illithid are caught between wakefulness and sleep, forever dreaming of their distant home across the Void. Tainted psychic energy leaks from their shattered minds, causing enemies around them to experience waking nightmares. They can project vivid nightmares directly into the minds of others such that should they awaken they will be unable to tell friend from foe. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Nightmare Guard will grow stronger in provinces closer to the Void."
+#gcost 95
+#chaosrec 5
+#rpcost 42
+#mor 18
+#insane 25
+#magicpower 1
+#mr 17
+#holy
+#holycost 2
+#nightmareaura 3
+#glamourmanip 1
+#clearweapons
+#weapon 642 -- Meteorite Trident
+#weapon 1914 -- Nightmare Blast
+#end
+
+#newmonster 9311 -- Merman Hybrid
 #copystats 1046
-#copyspr 1046
---#spr1 "worthy_heroes/birdlordbird1.png"
---#spr2 "worthy_heroes/birdlordbird2.png"
-#name "Merman Hybrid"
-#descr "As their slave empire collapsed around them, the Illithid of R'yleh turned to increasingly horrific crossbreeding experiments in an attempt to maintain order. Merman Hybrids are one such strange crossbreed of unknown origin, probably mutated into existence by the Lords of R'lyeh. Ideal slaves, they docile to their masters but merciless and cruel to their enemies. Mermen can remove their tails to shamble upon dry land."
+#spr1 "magicenhanced/blue_mindslave1.png"
+#spr2 "magicenhanced/blue_mindslave2.png"
+#name "Mind Slave"
+#descr "."
 #rcost 1
 #gcost 16
-#rpcost 18
+#rpcost 12
 #hp 18
-#str 13
+#str 12
 #att 11
 #def 10
 #prec 8
-#prot 5
-#size 4
-#mr 12
-#mor 12
+#prot 6
+#size 3
+#mr 15
+#mor 30
 #enc 3
 #mapmove 16
+#berserk 2
+#mapmove 16
+#blind
+#magicbeing
 #ap 22
 #clearweapons
 #weapon 670 -- Bone Trident
 #weapon 85 -- Tentacle
-#weapon 85 -- Tentacle
-#armor 188 -- Sharkskin Cuirass
+#weapon 1913 -- Weak Mind Blast
+--#armor 188 -- Sharkskin Cuirass
 #amphibian
 #float
 #maxage 50
@@ -59925,66 +60028,38 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #landshape 9312
 #end
 
-#newmonster 9310 -- Lobster Hybrid recruitable
-#descr "The Lobster hybrid is a larger, more ferocious version of a Crab Hybrid created from captured sea trolls rather than Atlantians. Lobster hybrids are semi-intelligent and used in battle as heavy shock troops. Their thick armor plates and large pincers mixed with the Sea Trolls natural strength and regenerative ability make them highly effective warriors. Lobster hybrids are amphibious and can leave the sea. Costs 46 RP"
-#copystats 7890
-#copyspr 7890
-#gcost 65
-#rpcost 46
-#reclimit 5
-#rcost 1
-#slave
-#end
-
-#newmonster 9311 -- Nightmare Guard
-#copystats 407 -- Illithid Soldier
-#copyspr 407
---#spr1 "worthy_heroes/birdlordbird1.png"
---#spr2 "worthy_heroes/birdlordbird2.png"
-#name "Nightmare Guard"
-#descr "Illithids are members of a once great race from a distant star. Following their descent from the heavens, raw meteoric metal was so common in R'lyeh that even their slaves could be outfitted with meteorite iron armour and weapons. After the collapse of R'lyeh and rise of the Dreamlands these precious metals have become rare, hoarded only by the most powerful Illithid lords. In the ruins of the Capital, remnants of the once mighty Illithid armies gather what little meteorite iron remains and use it to outfit those touched by the power of the Void Rift. These Sacred Illithid are caught between wakefulness and sleep, forever dreaming of their distant home across the Void. Tainted psychic energy leaks from their shattered minds, causing enemies around them to experience waking nightmares. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Nightmare Guard will grow stronger in provinces closer to the Void. Costs 51 RP."
-#gcost 85
-#rpcost 51
-#mor 18
-#insane 25
-#magicpower 1
-#mr 17
-#holy
-#holycost 2
-#nightmareaura 5
-#end
-
 #newmonster 9312 -- Merman Hybrid Land Shape
 #copystats 1047
-#copyspr 1047
---#spr1 "worthy_heroes/birdlordbird1.png"
---#spr2 "worthy_heroes/birdlordbird2.png"
-#name "Merman Hybrid"
-#descr "As their slave empire collapsed around them, the Illithid of R'yleh turned to increasingly horrific crossbreeding experiments in an attempt to maintain order. Merman Hybrids are one such strange crossbreed of unknown origin, probably mutated into existence by the Lords of R'lyeh. Ideal slaves, they docile to their masters but merciless and cruel to their enemies. Mermen Hybrids can remove their tails to walk upon dry land."
+#spr1 "magicenhanced/blue_mindslave1l.png"
+#spr2 "magicenhanced/blue_mindslave2l.png"
+#name "Mind Slave"
+#descr "."
 #rcost 1
 #gcost 16
-#rpcost 18
+#rpcost 12
 #hp 18
-#str 13
+#str 12
 #att 11
 #def 10
 #prec 8
-#prot 5
-#size 4
-#mr 12
-#mor 12
+#prot 6
+#size 3
+#mr 15
+#mor 30
 #enc 3
 #mapmove 16
+#berserk 2
+#blind
+#magicbeing
 #ap 10
 #clearweapons
 #weapon 670 -- Bone Trident
 #weapon 85 -- Tentacle
-#weapon 85 -- Tentacle
-#armor 188 -- Sharkskin Cuirass
+#weapon 1913 -- Weak Mind Blast
 #amphibian
 #maxage 50
 #slave
-#watershape 9309
+#watershape 9311
 #end
 
 -- End LA R'lyeh Monsters
@@ -70297,17 +70372,57 @@ Only three Queens of Elemental Water are known to exist."
 #descr "The crab hybrid is a strange cross between an Atlantian and a giant crab. It is unknown how this being is born, but it is probably mutated into existence by the Lord of R'lyeh. Crab hybrids are semi-intelligent and entrusted with the care of other slaves. In battle, they use their pincers and sheer size to overcome enemies."
 #amphibian
 #slave
-#prot 16
-#att 10
+#prot 16 -- 14 -> 16
+#att 9 -- 8 -> 9
+#end
+
+#selectmonster 967 -- Hybrid 1 Tentacle
+#spr1 "vanilla/blue_hybrid1b.png"
+#spr2 "vanilla/blue_hybrid2b.png"
+#slave
+#weapon 85 -- tentacle
+#addupkeep -10
+#rpcost 12
+#def 9
+#str 12
+#hp 12
+#end
+
+#selectmonster 968 -- Hybrid 2 Tentacle
+#spr1 "vanilla/blue_hybrid1b.png"
+#spr2 "vanilla/blue_hybrid2b.png"
+#slave
+--#weapon 85 -- tentacle
+#addupkeep -10
+#rpcost 12
+#def 9
+#str 12
+#hp 12
+#end
+
+#selectmonster 969 -- Hybrid 1 Tentacle / Club
+#spr1 "vanilla/blue_madhybrid1.png"
+#spr2 "vanilla/blue_madhybrid2.png"
+#slave
+#weapon 85 -- tentacle
+#addupkeep -10
+#rpcost 12
+#def 9
+#str 12
+#hp 12
 #end
 
 #selectmonster 970 -- Hybrid
+#spr1 "vanilla/blue_hybrid1.png"
+#spr2 "vanilla/blue_hybrid2.png"
 #slave
 #weapon 85 -- tentacle
 #rpcost 12
 #end
 
 #selectmonster 971 -- Hybrid Trooper
+#spr1 "vanilla/blue_hybridtrooper1.png"
+#spr2 "vanilla/blue_hybridtrooper2.png"
 #slave
 #rpcost 16
 #weapon 85 -- tentacle
@@ -88943,6 +89058,18 @@ Initiates of the Deep can be recruited in any land fort."
 #custommagic 33280 100 -- 100% WB
 #end
 
+#selectmonster 450  -- Horse Brother
+#clearweapons
+#weapon 357 -- Light Lance
+#weapon 23 -- Short Bow
+#end
+
+#selectmonster 451  -- Horse Brother
+#clearweapons
+#weapon 357 -- Light Lance
+#weapon 23 -- Short Bow
+#end
+
 #selectmonster 453  -- Foul Spawn
 #montag 1055
 #end
@@ -89875,7 +90002,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #pierceres
 #magicbeing
 #neednoteat
-#mor 50
+#slothpower 1
 #forestsurvival
 #spiritsight
 #poisonres 25
@@ -89954,10 +90081,12 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 750  -- Thing from Beyond
 #montag 1020
+#montagweight 3
 #end
 
 #selectmonster 751  -- Thing that Should not Be
 #montag 1020
+#montagweight 2
 #neednoteat
 #clearweapons
 #weapon 236  -- Claw
@@ -89969,30 +90098,38 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 
 #selectmonster 752  -- Elder Thing
 #montag 1020
-#montagweight 2
+#montagweight 8
 #end
 
 #selectmonster 753  -- Thing from the Void
 #montag 1020
-#montagweight 2
+#montagweight 8
 #end
 
 #selectmonster 754  -- Greater Otherness
 #montag 1020
+#montagweight 4
 #end
 
 #selectmonster 755  -- Otherness
 #montag 1020
-#montagweight 2
+#montagweight 7
 #end
 
 #selectmonster 756  -- Lesser Otherness
 #montag 1020
+#montagweight 8
 #end
 
 #selectmonster 757  -- Vile Thing
 #neednoteat
 #montag 1020
+#montagweight 8
+#end
+
+#selectmonster 966  -- Formless Spawn
+#montag 1020
+#montagweight 5
 #end
 
 #selectmonster 758  -- Thing of Many Eyes
@@ -90601,10 +90738,6 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #patrolbonus -1
 #end
 
-#selectmonster 966  -- Formless Spawn
-#montag 1020
-#end
-
 #selectmonster 972 -- Hybrid Soldier
 #voidsanity 5
 #end
@@ -90910,7 +91043,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 1107  -- Equite
-#rpcost 36
+#rpcost 21
 #end
 
 #selectmonster 1104 -- Principe
@@ -91877,9 +92010,15 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #end
 
 #selectmonster 1576  -- Mad Hybrid
+#spr1 "vanilla/blue_madhybrid1.png"
+#spr2 "vanilla/blue_madhybrid2.png"
 #patrolbonus -1
+#def 9
+#str 12
+#hp 12
 #mor 15
 #weapon 12
+#armor 5 -- leather
 #end
 
 #selectmonster 1570  -- Human Dreamer
@@ -95325,6 +95464,51 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #selectmonster 3847 -- sennatorial guard
 #bodyguard 4
+#end
+
+#selectmonster 3857 -- LA Cap Starspawn Dreamer
+#copystats 3858 -- LA Starspawn for Void Summoning
+--#copystats 3054 -- Pretender Starspawn for Void Summoning
+#clearmagic
+#name "Starspawn Dreamer"
+#descr "Starspawn Dreamers are ancient Illithids of tremendous power. Most remember the day when the Star fell and the City of R'lyeh was built. With the coming of the Sleeping God those Starspawns that received the Dreams most strongly have risen to positions of power within the City of Unfulfilled Dreams. These Starspawns are High Priests of the Sleeping God, masters of Astral and Glamour Magic. All Illithids are amphibious and able to use a mind blast attack in battle. The supernatural Dreams of R'lyeh protect their hosts from hostile magic and the Dreamers will grow stronger in provinces closer to the void."
+#rpcost 4
+#slowrec
+#chaosrec 20
+#magicpower 1
+#magicskill 4 2 -- S
+#magicskill 7 3 -- g
+#magicskill 9 3
+--#custommagic 24064 200  -- 200% WESDG
+--#custommagic 24064 10  -- 10% WESDG
+#custommagic 23040 100  -- 100% WSDG
+#custommagic 23040 100  -- 100% WSDG
+#custommagic 23040 10  -- 10% WSDG
+#insane 5
+#voidsanity 10
+#holy
+#mor 18
+#nightmareaura 5
+
+#hp 26
+#mr 20
+#str 15
+#att 9
+#def 6
+#clearweapons
+#weapon 63 -- Life Drain
+#weapon 1914 -- Nightmare Blast
+
+#gcost 10050
+--#diseaseres 0
+--#startdom 0
+--#newpathcost 0
+--#darkvision 0
+#end
+
+#selectmonster 3858 -- LA Anyfort Starspawn
+#rpcost 4
+#magicskill 4 3 -- S
 #end
 
 #selectmonster 3864 -- fire amalgam
@@ -99328,10 +99512,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #selectmonster 7891 -- Unknown
-#armor 230 -- Magic Robes
-#end
-
-#selectmonster 7904 -- Starspawn
 #armor 230 -- Magic Robes
 #end
 
@@ -112294,9 +112474,9 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 4
 #level 0
 #rarity 5
---#gems 6 1
+#gems 6 1
 #gems 3 1
-#gems 5 1
+--#gems 5 1
 #homemon 8085 -- Tusser
 #end
 
@@ -112574,13 +112754,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #gems 0 1
 #gems 3 1
-#end
-
-#newsite 2148
-#name "Angles of Tindalos"
-#path 4 
-#level 4
-#rarity 5
 #end
 
 #newsite 2149
@@ -113337,7 +113510,9 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #path 4 
 #level 0
 #rarity 5
+#look 4
 #voidgate 20
+--#voidgate 30
 #end
 
 #newsite 2223
@@ -117466,7 +117641,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 7489 -- Shoggoth Bud
 #homemon 7488 -- Shoggoth
 #homecom 7568 -- monstrous shoggoth
-#homecom 1562 -- void spectre
+--#homecom 1562 -- void spectre
 #homecom 7456 -- hound of tindalos
 #end
 
@@ -119648,6 +119823,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #rarity 5
 #voidgate 20
+--#voidgate 30
 #incscale 0
 #end
 
@@ -119659,11 +119835,16 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #rarity 5
 #voidgate 20
+--#voidgate 30
 #end
 
 #newsite 2620
-#copysite 722 --Enchanted Gate--
+#clear
 #name "Opening Gate"
+#rarity 5
+#path 4
+#look 4 
+#level 0
 #end
 
 -- 2917 used by iram summons
@@ -120800,9 +120981,16 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #selectsite 164 -- The City of Unfullfilled dreams
-#homecom 7904 -- Starspawn Dreamer
-#homemon 9310  -- Lobster Hybrid
-#homemon 9311 -- Nightmare Guard
+--#homecom 7904 -- Starspawn Dreamer
+#homecom 3857 -- Starspawn Dreamer
+#homemon 9310 -- Nightmare Guard
+#homemon 9309  -- Lobster Hybrid
+#gems 4 2
+#gems 7 2
+#end
+
+#selectsite 231 -- LA R'lyeh Void Gate unused
+#clear
 #end
 
 #selectsite 211  -- Vault of incense and Marvels
@@ -127463,6 +127651,11 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 
 
 #selectnation 120 -- LA Piconye
+#hero1 9300
+#hero2 9301
+#hero3 9303
+#hero4 9304
+#multihero1 9302
 #uwbuild 1
 #delgod 8347 -- Drake Breeder
 #delgod 8307 -- Stone Magus
@@ -128615,7 +128808,7 @@ Cold dominions are affected more by Summer and Warm dominions are affected more 
 #addrecunit 1517 -- Slave Trooper
 #addrecunit 425 -- Shambler Thrall
 #addrecunit 243 -- Crab Hybrid
-#addrecunit 9309 -- Triton Hybrid
+#addrecunit 9311 -- Triton Hybrid
 #addrecunit 331 -- Illithid
 
 #plainfortrec 970 -- Hybrid
@@ -128710,6 +128903,7 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #futuresite "LA R'lyeh Freespawn"
 #futuresite "LA R'lyeh Summons"
 #futuresite "LA R'lyeh Heroes"
+#futuresite "Tear in Reality"
 #end
 
 #selectnation 125 -- Erytheia
@@ -129296,33 +129490,6 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #nextspell 2044
 #spec 18560  -- AN, Shock, Ignore shields
 #nogeosrc 4096  -- Cannot cast in Caves
-#end
-
-#selectspell 2046
-#name "Call Divine Spirit"
-#descr "The caster performs a ritual to gather some of the remnants of the Pantokrators power and bestow it upon the Pretender God. The spell must be cast at the site of a Throne of Ascension and the Pretender God must be present in the province. The power gained will vary depending on the Throne used for the ritual. The ritual requires long and careful preparations and will not be successful if cast whilst the province is under siege. If cast at a province other than the site of a Throne, or if the Pretender God is not present the spell will fail and the gems will be wasted. The power can only be gathered once at each possible site."
-#school -1
-#researchlevel 0
-#effect 10082
-#damage 258 -- Ench58
-#fatiguecost 2000
-#nreff 1
-#end
-
-#selectspell 2047
-#copyspell 106  -- Record of Creation
-#name "Release Throne Power"
-#descr "The caster performs a ritual to gather some of the remnants of the Pantokrators power and bestow it upon the Pretender God. The spell must be cast at the site of a Throne of Ascension and the Pretender God must be present in the province. The power gained will vary depending on the Throne used for the ritual. The ritual requires long and careful preparations and will not be successful if cast whilst the province is under siege. If cast at a province other than the site of a Throne, or if the Pretender God is not present the spell will fail and the gems will be wasted. The power can only be gathered once at each possible site."
-#details "Pretender gain benefits dependent on Throne used for Ritual."
-#school -1
-#researchlevel 6
-#path 0 1
-#pathlevel 0 4
-#nreff 1
-#effect 10083
-#damage -1
-#fatiguecost 2000
-#nextspell 2046
 #end
 
 #selectspell 2048
@@ -130629,14 +130796,15 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #end
 
 #selectspell 2171
-#copyspell 1191 -- Wind Guide
-#name "Immaterial Army"
-#descr "The caster draws all magical beings in the army partially into the astral plane. This will make them almost impossible to harm with mundane weapons for the duration of the battle."
+#copyspell 796 -- Body Ethereal
+#name "Immaterial Warriors"
+#descr "The caster draws a large group of magical beings partially into the astral plane. This will make them almost impossible to harm with mundane weapons for the duration of the battle."
 #researchlevel 8
 #school 5
+#aoe 4004 -- 20+4
 #path 0 4
-#pathlevel 0 6
-#fatiguecost 300
+#pathlevel 0 4
+#fatiguecost 200
 #effect 10
 #damage 134217728  -- Ethereal
 #spec 12599312  -- Friendly magic beings only, UW OK, Ignore shields
@@ -131560,7 +131728,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 1
 #effect 23
 #damage 1  -- Twist Fate
-#aoe 3002 -- 5+3
+#aoe 2002 -- 4+2
 #fatiguecost 30
 #spec 281474989441152  -- Ignore Shields, AN, Friendlies Only, Use UW, Affects Animals Only, Mindless immune
 #end
@@ -132076,7 +132244,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2296
 #name "Gaia's Warding"
 #descr "The caster reaches out and connects the minds of all friendly animals on the battlefield to Gaia. Their hides will become thick and barklike and their wounds will close and heal quickly. As a side effect they will become more vulnerable to fire. This spell will have no effect on mindless animals."
-#details "Grants regeneration 10%, natural protection 10, or +1 if already 10 or higher. Also incurs susceptibility to Fire 5. Affects animals only."
+#details "Grants regeneration 10%, natural protection +7 (max up to 10), or +1 if already 9 or higher. Also incurs susceptibility to Fire 5. Affects animals only."
 #school 1
 #researchlevel 7
 #path 0 6
@@ -133831,6 +133999,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 4
 #path 1 9
 #pathlevel 1 2
+#effect 10089 -- Ritual Summon Unique
 #damage 7792 -- Saul the Apostle
 #fatiguecost 2500
 #onlyatsite 77  -- Temple of the Shroud
@@ -134786,7 +134955,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #name "Samhain"
 #descr "The caster lights a bonfire of gorse plants and performs a series of special rituals designed to bring the world of the fey closer to the mortal realm. As long as the rituals are performed again each night the season of Samhain persists and magic will suffuse the world until the enchantment is dispelled. Spirits will more easily traverse the barrier between worlds, both friendly and malevolent, and may bring boon or mischief to all lands. Summoning spells and all manner of enchantments will be easier to cast. Samhain is celebrated differently across nations and will draw different benefits from the enchantments. The Druids of Marverni will collect sacrifices and construct Wicker Men. The Fomorians demand offerings and summon Morrigans. Nations friendly to the fay will enlist their aide."
 #details "Scales (Turmoil, Misfortune, Magic, Luck, Cold, and Death) fluctuate throughout the world and may create unrest. Capital provinces gain 20% Conj and Ench bonus.
-Tir na n'Og, Eriu, Ys: Collect 1d6 Glamour gems per month, Aes Sidhe spawn in friendly provinces (5% chance per candle / 10% per candle at a Dolmen).
+Tir na n'Og, Eriu, Ys: Collect 1d6 Glamour gems per month, Aes Sidhe spawn in friendly provinces (1% chance per candle / 10% per candle at a Dolmen).
 Fomoria: Provinces are affected by a plague, collect up to 3d6 Death gems. Morrigans spawn in friendly temples each month.
 Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly temples each month."
 #portent "The season of Samhain has fallen upon the world! The people of ##disnat## celebrate it monthly and the Otherworld draws closer. Spirits are able to cross the boundary between worlds more to easily causing chaos! The unnatural season of Samhain must end before the Otherworld completely dominates this one."
@@ -139037,7 +139206,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 996 -- Wind Ride
 #name "Rescue from the Skies"
 #descr "The caster calls on a Valkyrie to rescue a commander beleagured in a distant land. The Valkyrie will find a friendly commander in a targeted province and bear them to the caster. Large beings are difficult or impossible for the Valkyrie to lift, as are powerful Earth mages. This spell can only be cast on friendly provinces."
-#details "Size 6 targets, Earth mages with skill 4 or more, and Ethereal beings are impossible to lift. Skilled Air mages will take less falling damage if the spell drops them on the way."
+#details "Size 8+ targets, Earth mages with skill 4 or more, and Ethereal beings are impossible to lift. Skilled Air mages will take less falling damage if the spell drops them on the way."
 #researchlevel 3
 #pathlevel 0 3
 #path 1 5
@@ -142408,31 +142577,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 127
 #end
 
-#selectspell 3034
-#name "Area Insanity"
-#nreff 1
-#effect 609  -- +10 stacking
-#damage 309  -- Insanity
-#aoe 1
-#spec 4503599635910784  -- Mindless or Void Sanity immune, AN, ignore shields, UWOK, MR Negates
-#end
-
-#selectspell 3035
-#copyspell 1305 -- Terror
-#name "Visions of the Void"
-#descr "Visions of the void affect the enemy, filling their minds with strange vistas and impossible sights. Affected troops will flee in terror and their minds may be permanently damaged by the experience."
-#details "Fear attack: 5, targets may gain +10 Insanity."
-#researchlevel 5
-#path 0 7
-#pathlevel 0 2
-#path 1 4
-#pathlevel 1 1
-#fatiguecost 20
-#restricted 89
-#restricted 127
-#nextspell 3034
-#end
-
 #selectspell 3036
 #name "Major Insanity"
 #nreff 1
@@ -142463,23 +142607,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 89
 #restricted 127
 #nextspell 3036
-#end
-
-#selectspell 3038
-#copyspell 1302 -- Astral Window
-#name "Angles of Tindalos"
-#descr "The geometry of a distant province is twisted to create a connection to the Void. Casting further spells into the province becomes very dangerous and may drive unfortunate mages insane. Those living in the province will find angles and dimensions shift and change when not observed. Lines run off into eternity at the corner of vision and those staring at the angles for too long will feel a sensation of being watched. Each month some of the population will disappear or become insane from the spacial distortions. Units in the province may become marked by strange creatures or simply vanish into the void and this is more likely for mages. The spell will last longer for each additional gem used in the casting, however it will end immediately if the caster is killed."
-#details "Magic Scale +2. 75% chance any ritual targeted at province Feebleminds caster, Magic Resistance can negate this. Each month province incurs Unrest +10 and Population -3%. Commanders may be Horror marked, Banished to the void or be attacked by a Hound of Tindalos. Horror attacks increased 20% in province whilst enchantment remains."
-#researchlevel 6
-#path 0 4
-#pathlevel 0 5
-#fatiguecost 2000
-#damage 67  -- Dome of Corruption
-#effect 10085
-#provrange 4
-#spec 8388608  -- UW ok
-#restricted 89 -- MA R'lyeh
-#restricted 127 -- LA R'lyeh
 #end
 
 #selectspell 3039
@@ -142566,14 +142693,14 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 945 -- Call Kraken
 #name "Call From Beyond"
 #descr "The caster uses the Void Rift to summon a few creatures from Beyond. The caster has no control over the creatures that appear once the gate is opened, however only lesser void beings can be summoned by this ritual."
-#details "Can only be cast at the Void Rift." 
+#details "Can only be cast at a Void Rift." 
 #researchlevel 3
 #path 0 4
 #pathlevel 0 1
 #path 1 9
 #pathlevel 1 1
-#nreff 1002
-#fatiguecost 500
+#nreff 1002 -- 3+
+#fatiguecost 400
 #spec 8388608  -- May use UW
 #damage -1040  -- Random Lesser Void Creature
 #onlyatsite 2222 -- Void Rift
@@ -142584,13 +142711,13 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 945 -- Call Kraken
 #name "Call Host From Beyond"
 #descr "The caster draws a host of creatures from Beyond through the Void Rift. The caster has no control over the creatures available when the gate is opened, however only lesser void beings can be summoned by this ritual."
-#details "Can only be cast at the Void Rift." 
+#details "Can only be cast at a Void Rift." 
 #researchlevel 5
 #path 0 4
 #pathlevel 0 2
 #path 1 9
 #pathlevel 1 2
-#nreff 2004
+#nreff 2004 -- 8++
 #fatiguecost 1000
 #spec 8388608  -- May use UW
 #damage -1040  -- Random Lesser Void Creature
@@ -142601,32 +142728,36 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #selectspell 3047
 #copyspell 945 -- Call Kraken
 #name "Void Summoning"
-#descr "With the coming of the Dreaming God the walls separating the worlds have grown thinner. The caster opens a portal to the Void, summoning a few creatures from Beyond. This ritual can be performed in any province and the Void Rift is no longer required. The caster has no control over the creatures available when the gate is opened, and even powerful void beings may be summoned by this ritual."
+#descr "With the coming of the Dreaming God the walls separating the worlds have grown thinner. The caster opens a portal to the Void, summoning a few creatures from Beyond. The caster has no control over the creatures available when the gate is opened, and even powerful void beings may be summoned by this ritual."
+#details "Can only be cast at a Void Rift."
 #researchlevel 6
 #path 0 4
 #pathlevel 0 2
 #path 1 9
 #pathlevel 1 2
-#nreff 1002
-#fatiguecost 500
+#nreff 503 -- 3+1/2
+#fatiguecost 600
 #spec 8388608  -- May use UW
 #damage -1020  -- Random Void Creature
+#onlyatsite 2222 -- Void Rift
 #restricted 127 -- LA R'lyeh
 #end
 
 #selectspell 3048
 #copyspell 945 -- Call Kraken
 #name "Void Incursion"
-#descr "With the coming of the Dreaming God the walls separating the worlds have grown thinner. The caster draws a host of creatures from Beyond into this world. This ritual can be performed in any province and the Void Rift is no longer required. The caster has no control over the creatures available when the gate is opened, and even powerful void beings may be summoned by this ritual."
-#researchlevel 7
+#descr "With the coming of the Dreaming God the walls separating the worlds have grown thinner. The caster draws a host of creatures from Beyond into this world. The caster has no control over the creatures available when the gate is opened, and even powerful void beings may be summoned by this ritual."
+#details "Can only be cast at a Void Rift."
+#researchlevel 8
 #path 0 4
 #pathlevel 0 3
 #path 1 9
 #pathlevel 1 3
-#nreff 2004
-#fatiguecost 1000
+#nreff 2004 -- 10++
+#fatiguecost 1600
 #spec 8388608  -- May use UW
 #damage -1020  -- Random Void Creature
+#onlyatsite 2222 -- Void Rift
 #restricted 127 -- LA R'lyeh
 #end
 
@@ -142786,26 +142917,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #spec 8388608  -- UWOK
 #end
 
-#selectspell 3059
-#name "Whispers of R'lyeh"
-#descr "This spell causes the Mind-defying Dreams of the Sleeping God to seep up from the ocean across the world. Strange, cannibalistic cults will appear in coastal provinces, swelling the armies of R'lyeh and bringing insanity and horror to the enemies of the faith. As long as this spell is active greater numbers of hybrids will appear in friendly coastal provinces and enemy coasts will suffer reduced Dominion and cult activities. These effects are stronger in the Dominion of the Dreaming God. This spell can only be cast in the halls of R'lyeh. This enchantment lasts until someone dispels it or the caster dies."
-#details "Enemy coastal provinces worldwide gain Turmoil and Magic scales, have a chance to suffer Dominion -1, Unrest +5, temple destroyed or a Void Cult may appear. Friendly coast spawn extra Mad hybrids."
-#portent "The Mind-defying Dreams of ##fullgodname## grow ever stonger! Strange, cannibalistic cults are appearing in coastal villages and the dreams of R'lyeh bring insanity and horror across the world. Unless the spell is ended all will soon succumb to the Dreamlands."
-#school 5
-#researchlevel 7
-#path 0 2
-#path 1 7
-#pathlevel 0 4
-#pathlevel 1 3
-#effect 10081
-#damage 229  -- Whispers of R'lyeh
-#nreff 1
-#fatiguecost 4000
-#onlyatsite 2222 -- Void Rift
-#restricted 127 -- LA R'lyeh
-#spec 8388608
-#end
-
 #selectspell 3060
 #copyspell 796 -- Body Ethereal
 #name "Enter the Void"
@@ -142816,64 +142927,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #aoe 15
 #fatiguecost 100
 #spec 12599296  -- Use UW, Ignore Shields, Friendly units only
-#restricted 127 -- LA R'lyeh
-#end
-
-#selectspell 3061
-#copyspell 1204 -- Dome of Arcane Warding
-#name "Tear in Reality"
-#descr "With the awakening of the Dreaming God the void has come closer to this world, blurring the boundaries between the realms. This spell uses the corrupting power of the Dreamlands to strengthen the Void Rift, expanding its influence on reality and further destabilising the minds of those remaining in the Capital. This will greatly increase turmoil in the capital but will also attract additional Void creatures and permanently expand the number of Void Summoners able to access the Rift. If the province is lost or the mage dies, the spell maintaining the expanded rift will fail and it will shrink back to its initial size."
-#details "A glamour mage may enter the expanded rift to summon Void creatures. 1-6 additional Void creatures may appear and Turmoil scales will increase in the Capital each month."
-#researchlevel 5
-#school 5
-#path 0 7
-#path 1 4
-#pathlevel 0 4
-#pathlevel 1 2
-#fatiguecost 3500
-#effect 10084  -- Permanent Enchantment
-#friendlyench 1
-#damage 256 -- Ench56  -- Expand Void Rift
-#onlyatsite 2222 -- Void Rift
-#spec 8388608  -- May use UW
-#restricted 127 -- LA R'lyeh
-#end
-
-#selectspell 3062
-#copyspell 1204 -- Dome of Arcane Warding
-#name "Open Gate to the Beyond"
-#descr "With the awakening of the Dreaming God the void has come closer to this world, blurring the boundaries between the realms. Now the opening of gates to the other side is easier than ever. The caster tears opens a gate to the void in the province, allowing horrors from beyond to enter this world. As a side effect the province will experience terrible dreams that will infect the populace and drive them insane. This spell can only be cast in a province that does not already contain a Void Gate, and care should be made not to open gates too close to each other or to the Void Rift, lest their energies interact and destabilise the gate. The Void Gate will remain open indefinitely, however if the province is lost or the mage dies, the gate disappears instantly."
-#details "Province gains Gate to the Beyond site allowing Void Summoning whilst spell remains. Each month Population -2%, Unrest +5 and Turmoil scales will increase. Opening gates in adjacent provinces or near the Void Rift will cause them to become unstable and collapse."
-#researchlevel 6
-#school 5
-#path 0 4
-#path 1 7
-#pathlevel 0 2
-#pathlevel 1 2
-#fatiguecost 1500
-#effect 10084  -- Permanent Enchantment
-#friendlyench 1
-#damage 257 -- Ench57  -- Open Void Gate
-#spec 8388608  -- May use UW
-#restricted 127 -- LA R'lyeh
-#end
-
-#selectspell 3063
-#copyspell 1204 -- Dome of Arcane Warding
-#name "Expand Gate to the Beyond"
-#descr "With this spell the caster prepares a Gate to the Beyond that has been created through Open Gate to the Beyond to allow a greater number of Summoners to enter the Void. This effect is permanent, however if the province is lost or the mage dies, the gate closes instantly."
-#details "One additional Void Summoner may enter the expanded gate each month."
-#researchlevel 7
-#school 5
-#path 0 4
-#path 1 7
-#pathlevel 0 3
-#pathlevel 1 2
-#fatiguecost 500
-#effect 10084  -- Permanent Enchantment
-#friendlyench 1
-#damage 260 -- Ench60  -- Expand Void Gate
-#onlyatsite 2175 -- Gate to the Beyond
 #restricted 127 -- LA R'lyeh
 #end
 
@@ -142901,8 +142954,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #fatiguecost 400
 #restricted 127 -- LA R'lyeh
 #restricted 89 -- MA R'lyeh
-#onlymnr 333  -- Starspawn Priest
-#onlymnr 7904 -- Starspawn H3
+#onlymnr 3858  -- Starspawn Priest
+#onlymnr 3857 -- Starspawn H3
 #nextspell 3064
 #spec 4503599635890176  -- UW OK, Mindless or Void Sanity Immune
 #end
@@ -143554,7 +143607,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 773 -- Quicken Self
 #name "Martial Dance"
 #descr "The war-dancers of Therodos can whip themselves into a battle frenzy, their fluid movements increasing their martial prowess. Through Divine power the dancer will feel the blessing of the Lord and the dance will increase their ability in combat."
-#details "Caster is blessed and gains +4 Att & +4 AP."
+#details "Caster is blessed and gains +4 Att & +4 Combat Speed."
 #researchlevel 0
 #school 7
 #path 0 9
@@ -143646,7 +143699,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 773 -- Quicken Self
 #name "Battle Rhythm"
 #descr "With this intricate battle dance the dancer will affect not only themselves but a few sacred warriors nearby. Through Divine power the dancers will feel the blessing of the Lord, and the power of the dance will increase their ability in combat."
-#details "Targets are blessed and gain +4 Att & +4 AP."
+#details "Targets are blessed and gain +4 Att & +4 Combat Speed."
 #researchlevel 0
 #school 7
 #path 0 9
@@ -155845,7 +155898,7 @@ Applies the effects of Holy Avenger to the caster"
 #effect 10001
 #nreff 505
 #damage 7579
-#fatiguecost 800
+#fatiguecost 900
 #restricted 25 -- EA Mictlan
 #restricted 73 -- MA Mictlan
 #restricted 111 -- LA Mictlan
@@ -155863,7 +155916,7 @@ Applies the effects of Holy Avenger to the caster"
 #effect 10001
 #nreff 1012 -- 15+
 #damage 7579
-#fatiguecost 1800
+#fatiguecost 2000
 #restricted 73 -- MA Mictlan
 #end
 
@@ -158155,7 +158208,7 @@ This spell can only be cast in a deep water province."
 #pathlevel 0 2
 #effect 10001
 #nreff 505
-#fatiguecost 1000
+#fatiguecost 900
 #damage 9287 -- Bjergtroll
 #restricted 189 -- Fennoscandia
 #onlygeosrc 8392720 -- Mountains, Border Mountains, Caves
@@ -158372,6 +158425,7 @@ This spell can only be cast in a deep water province."
 #damage 9299 -- Lobster Knight
 #fatiguecost 300
 #restricted 120 -- LA Piconye
+#spec 41943040 -- UWonly
 #end
 
 #selectspell 4324
@@ -158390,6 +158444,60 @@ This spell can only be cast in a deep water province."
 #restricted 120 -- LA Piconye
 #end
 
+#selectspell 4325 -- Open Void Rift
+#name "Gate to the Beyond"
+#descr "With the awakening of the Dreaming God the void has come closer to this world, blurring the boundaries between the realms. Now the opening of gates to the other side is easier than ever. The caster tears opens a gate to the void in the province, allowing horrors from beyond to enter this world. As a side effect the province will experience terrible dreams that will infect the populace and drive them insane. This spell can only be cast in a province that does not already contain a Void Gate, and care should be made not to open gates too close to each other or to the Void Rift, lest their energies interact and destabilise the gate. The Void Gate can remain open indefinitely within the influence of R'lyehs dominion, however it may close with out it."
+#details "Province gains Void Rift site allowing Void Summoning whilst spell remains. Each month Population -2%, Unrest +5 and Turmoil scales will increase. Opening gates in provinces adjacent to existing Void Rifts will cause them to become unstable and collapse. Has a 10% chance per candle to close each month in hostile dominion."
+#school -1
+#researchlevel 0
+#path 0 4 -- S
+#effect 10082
+#damage 257 -- Ench57  -- Open Void Gate
+#fatiguecost 2000
+#nreff 1
+#end
+
+#selectspell 4326 -- Open Void Rift
+#copyspell 106  -- Record of Creation
+#name "Open Void Rift"
+#descr "With the awakening of the Dreaming God the void has come closer to this world, blurring the boundaries between the realms. Now the opening of gates to the other side is easier than ever. The caster tears opens a gate to the void in the province, allowing horrors from beyond to enter this world. As a side effect the province will experience terrible dreams that will infect the populace and drive them insane. This spell can only be cast in a province that does not already contain a Void Gate, and care should be made not to open gates too close to each other or to the Void Rift, lest their energies interact and destabilise the gate. The Void Gate can remain open indefinitely within the influence of R'lyehs dominion, however it may close with out it."
+#details "Province gains Void Rift site allowing Void Summoning whilst spell remains. Void Rifts outside of the capital increase unrest and kill pops. Opening gates in provinces adjacent to existing Void Rifts will cause them to become unstable and collapse. Has a 10% chance per candle to close each month in hostile dominion."
+#school 5
+#researchlevel 5
+#path 0 4
+#path 1 7
+#pathlevel 0 2
+#pathlevel 1 2
+#nreff 1
+#effect 10083
+#damage -1
+#fatiguecost 2000
+#nextspell 4325
+#friendlyench 1
+#hiddenench 1
+#spec 8388608  -- May use UW
+#restricted 127 -- LA R'lyeh
+#end
+
+#selectspell 3061
+#copyspell 1204 -- Dome of Arcane Warding
+#name "Tear in Reality"
+#descr "With the awakening of the Dreaming God the void has come closer to this world, blurring the boundaries between the realms. This spell uses the corrupting power of the Dreamlands to strengthen the Void Rift, expanding its influence on reality and further destabilising the minds of those remaining in the Capital. This will greatly increase turmoil in the capital but will also attract additional Void creatures and permanently expand the number of Void Summoners able to access the Rift. If the province is lost or the mage dies, the spell maintaining the expanded rift will fail and it will shrink back to its initial size."
+#details "A glamour mage may enter the expanded rift to summon Void creatures. 1-6 additional Void creatures may appear and Turmoil scales will increase in the Capital each month."
+#researchlevel 4
+#school 5
+#path 0 7
+#path 1 4
+#pathlevel 0 4
+#pathlevel 1 2
+#fatiguecost 3500
+#effect 10084  -- Permanent Enchantment
+#friendlyench 1
+#damage 256 -- Ench56  -- Tear in Reality
+#onlyatsite 164 -- City of Unfulfilled Dreams
+#spec 8388608  -- May use UW
+#restricted 127 -- LA R'lyeh
+#end
 
 
 
@@ -160391,7 +160499,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #nreff 2008
 #end
 
-#selectspell 975 -- School of Sharks
+#selectspell 970 -- School of Sharks
 #nreff 2002 -- 6++
 #end
 
@@ -163616,21 +163724,6 @@ Can only be cast once per combat round."
 #awe 2
 #end
 
-#selectitem 714
-#name "Necklace from Beyond"
-#spr "magicenhanced/eeinecklace.tga"
-#descr "The insane Cultists that worship the Dreaming God wear strange jewelery whilst performing their nameless rites. When worn this strangely hued necklace will incite the wearer to perform rituals contacting beings from the void. Magic scales are required for the summoning. High Dominion of the Dreaming God along with a large group of cultists makes the ritual more likely to be successful. Many cultists will be killed during the revelry. This item can only be used by the Cultists of R'lyeh, and only one necklace can be in use in each province."
-#constlevel 5
-#type 8
-#mainpath 4
-#mainlevel 1
-#secondarypath 7
-#secondarylevel 1
-#tainted 25
-#restricted 127 -- LA Rlyeh
-#restricteditem 14
-#end
-
 #selectitem 715
 #name "Instant Laboratory"
 #spr "magicenhanced/eeiinstantlab.tga"
@@ -163849,6 +163942,7 @@ Can only be cast once per combat round."
 #itemcost2 -40
 #weapon 514  -- Vitriol Breath
 #acidshield 12
+#acidres 25
 #onlydemon
 #cursed
 #nofind
@@ -164947,15 +165041,16 @@ This will also prevent their skin from drying out."
 #selectitem 794
 #spr "magicenhanced/eeicowl.tga"
 #name "Cowl of the Necromancer"
-#descr "A potent magical cowl highly prized by Necromancers. Any creatures killed by the wearer have a chance to rise again as soulless slaves."
+#descr "A potent magical cowl highly prized by Necromancers. Any creatures killed by the wearer will rise again as soulless slaves."
 #constlevel 7
 #mainpath 5
 #mainlevel 4
 #type 6
+#itemcost1 -40
 #armor "Leather Hood"
 #undcommand 10
 #bestowtomount
-#raiseonkill 50
+#raiseonkill 100
 #end
 
 #selectitem 795
@@ -165506,7 +165601,7 @@ This will also prevent their skin from drying out."
 #copyitem 367 -- Crystal Matrix
 #spr "magicenhanced/eeigaiacom.tga"
 #name "Berries of Gaia"
-#descr "This branch bearing a handful of berries is enchanted with powerful magic. By eating one before a battle the bearer is able to open their mind to other creatures and can use communion slaves as if they had cast the Communion or Sabbath Master spell."
+#descr "This branch bearing a handful of berries is enchanted with powerful magic. By eating one before a battle the bearer is able to open their mind to other creatures and can use communion slaves as if they had cast the Communion Master spell."
 #constlevel 7
 #mainpath 6
 #mainlevel 3
@@ -165518,8 +165613,9 @@ This will also prevent their skin from drying out."
 #spr "magicenhanced/eeigaiastaff.tga"
 #name "Staff of Gaia"
 #descr "This staff is made from a huge flower grown in a sacred grove and is strongly connected to Gaia. Energy will course up through the staff and into animals friendly to the caster. All friendly animals will be filled with strength."
-#constlevel 5
+#constlevel 7
 #mainlevel 3
+#itemcost1 67 -- 25 gems
 #autospell "Primal Power"
 #end
 
@@ -165531,6 +165627,7 @@ This will also prevent their skin from drying out."
 #mainpath 3
 #mainlevel 3
 #type 7  -- Boots
+#itemcost1 -33 -- 10 gems
 #trample
 #autospell "Enlarge Self"
 #fear 5
@@ -166235,6 +166332,174 @@ This will also prevent their skin from drying out."
 #armor 502 -- Circlet
 #end
 
+#selectitem 884
+#name "Magmaskin Armor"
+#descr "This leather armor looks as though it is made of molten metal, and quickly shapes to the form of it's wearer, almost like a second skin. This skin makes the wearer resistant to fire and surrounds them with a fiery aura that burns would be attackers. The armor is more powerful in hot provinces, but in cold provinces it becomes weak and brittle. 
+
+Increases Natural Protection by 2 for each level of heat in the province."
+#spr "magicenhanced/magmaskin.png"
+#armor 206 --Obsidian Cuirass
+#constlevel 11 -- 7
+#hp 8
+#fireres 10
+#icenatprot -2
+#heat 6
+#mainpath 0
+#mainlevel 1
+#secondarypath 3
+#secondarylevel 1
+#type 5
+#itemcost1 -40
+#itemcost2 -40
+#end
+
+#selectitem 885
+#name "Enchanted Grass"
+#descr "The world is filled with magic, illusions and other un-realities. By clutching this tuft of grass in their fist, the holder can be reminded of what in the world is real, and what is unreal, granting defense gainst false damage."
+#spr "magicenhanced/enchantedgrass.png"
+#falseregen 2
+#constlevel 11 -- 5
+#mainpath 6
+#mainlevel 1
+#type 8
+#constlevel 11 -- 3
+#end
+
+#selectitem 886
+#name "Iron Fist of Authority"
+#descr "The one who wears this bloody gauntlet has the terrifying authority to force even the most disorganized rabble into organized troops. So great is the power of this item that even animals or unthinking undead will follow the wearer's command. However, the tighter the grasp, the more slip through the fingers- the morale of any troops this commander leads will be lower, and they will be more likely to route.
+
+Adds Undisciplined Leader"
+#spr "magicenhanced/ironfist.png"
+#constlevel 11 -- 7
+#type 1
+#weapon 881 --Magic Fist--
+#undisleader 1
+#inspirational -3
+#command 25
+#undcommand 25
+#taskmaster 2
+#mainpath 8
+#mainlevel 3
+#secondarypath 0
+#secondarylevel 1
+#end
+
+#selectitem 887
+#name "Whip of Beast-Command"
+#descr "This enchanted whip gives the wielder the ability to command and communicate with animals as though they were soldiers allowing for advanced commands for even the most undisciplined rabble. As a side effect, they can also lead undisciplined non animals as well, though their ability to command them will be lowered as the user will only be able to speak in the most basic barks and grunts.
+
+Adds Undisciplined Leader
+Adds Beastmaster 5"
+#spr "magicenhanced/beastcommand.png"
+#constlevel 11 -- 5
+#weapon 140
+#mainpath 6
+#mainlevel 3
+#type 1
+#undiscleader 1
+#noundead
+#nodemon
+#inspirational -5
+#beastmaster 5
+#end
+
+#selectitem 888
+#name "Pendant of the Peaceful Mind"
+#descr "This pendant has a soothing aura and when worn can greatly lessen the effects of insanity and even a shattered mind.
+
+-25 Insane
+-25 Shattered Mind"
+#spr "magicenhanced/peacefulmind.png"
+#type 8
+#mainpath 4
+#mainlevel 2
+#secondarypath 2
+#secondarylevel 2
+#itemcost2 -50
+#insane -25
+#shatteredsoul -25
+#constlevel 11 -- 5
+#end
+
+#selectitem 889
+#name "Amulet of Unification"
+#descr "This amulet empowers the wearer's ability to open their mind allowing it's wearer to join or lead a Grand Communion.
+
+Adds Grand Communicant"
+#spr "magicenhanced/unification.png"
+#mainpath 4
+#mainlevel 3
+#grandcom 1
+#type 8
+#constlevel 11 -- 7
+#end
+
+#selectitem 890
+#name "Gauntlet of Spell Channeling"
+#spr "magicenhanced/spellfocus.png"
+#descr "This enchanted glove allow for quick movements and are magically enchanted to help channel magic, allowing wearers to occasionally cast spells while in melee combat, and helps avoid having their spells be interrupted.
+
+Adds Combat Caster"
+#type 1
+#weapon 881 --Magic Fist--
+#mainpath 0
+#mainlevel 2
+#secondarypath 7
+#secondarypath 1
+#itemcost1 -50
+#combatcaster 1
+#constlevel 11 -- 5
+#end
+
+#selectitem 891
+#name "Shard of Elemental Fire"
+#spr "magicenhanced/elementalfire.png"
+#descr "This is a tiny mote of true flame, stolen from the Elemental Plane of Fire itself. Carrying this flame allows the caster to empower any fire elementals that they summon."
+#type 8
+#mainpath 0
+#mainlevel 3
+#itemcost1 -33
+#fireelementals 1
+#constlevel 11 -- 5
+#end
+
+#selectitem 892
+#name "Shard of Elemental Air"
+#spr "magicenhanced/elementalair.png"
+#descr "This is a tiny mote of true air, stolen from the Elemental Plane of air itself. Carrying this flame allows the caster to empower any air elementals that they summon."
+#type 8
+#mainpath 1
+#mainlevel 3
+#itemcost1 -33
+#airelementals 1
+#constlevel 11 -- 5
+#end
+
+#selectitem 893
+#name "Shard of Elemental Water"
+#spr "magicenhanced/elementalwater.png"
+#descr "This is a tiny mote of true water, stolen from the Elemental Plane of air itself. Carrying this flame allows the caster to empower any air elementals that they summon."
+#type 8
+#mainpath 2
+#mainlevel 3
+#itemcost1 -33
+#waterelementals 1
+#constlevel 11 -- 5
+#end
+
+#selectitem 894
+#name "Shard of Elemental Earth"
+#spr "magicenhanced/elementalearth.png"
+#descr "This is a tiny mote of true earth, stolen from the Elemental Plane of air itself. Carrying this flame allows the caster to empower any air elementals that they summon."
+#type 8
+#mainpath 3
+#mainlevel 3
+#itemcost1 -33
+#earthelementals 1
+#constlevel 11 -- 5
+#end
+
 
 -- END OF NEW ITEMS (Skip items 881~882)
 
@@ -166505,7 +166770,7 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 16 -- Ice Pebble Staff
-#itemcost1 -33
+#itemcost1 -50
 #end
 
 #selectitem 146 -- Piercer
@@ -166519,7 +166784,7 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 48 -- Wand of Wild Fire
-#itemcost1 -33
+#itemcost1 -50
 #end
 
 #selectitem 50 -- lightning Spear
@@ -166583,7 +166848,7 @@ This will also prevent their skin from drying out."
 #end
 
 #selectitem 75 -- Rod of the Phoenix
-#itemcost1 -40
+#itemcost1 -60
 #end
 
 #selectitem 77 -- Carmine Cleaver
@@ -167220,9 +167485,9 @@ This headband does not require activation in combat."
 #constlevel 3
 #end
 
-#selectitem 293 -- Pixie Shoes
+#selectitem 298 -- Pixie Shoes
 #itemcost1 -20
-#itemcost2 -20
+#itemcost2 -40
 #end
 
 #selectitem 296 -- Boots of Stone
@@ -167932,6 +168197,7 @@ This headband does not require activation in combat."
 #selectitem 219 -- Crown of the Fire King
 #itemcost1 -40
 #nofind
+#fireelementals 1
 #tmpfiregems 3
 #constlevel 7
 #unique
@@ -167940,6 +168206,7 @@ This headband does not require activation in combat."
 #selectitem 220 -- Crown of the Frost King
 #itemcost1 -40
 #nofind
+#frostelementals 1
 #tmpwatergems 3
 #constlevel 7
 #unique
@@ -167956,6 +168223,13 @@ This headband does not require activation in combat."
 #itemcost2 -50
 #magicboost 8 1
 #magicboost 5 1
+#end
+
+#selectitem 223 -- Crown of the Elements
+#fireelementals 1
+#airelementals 1
+#earthelementals 1
+#waterelementals 1
 #end
 
 #selectitem 200 -- Crown of Bones
@@ -173001,6 +173275,7 @@ This headband does not require activation in combat."
 #msg "The Mehu has overseen affairs in the capital, increasing the portion of taxes available for the treasury."
 --#nolog
 --#notext
+#header 1
 #taxboost 20
 #end
 
@@ -173920,6 +174195,7 @@ This headband does not require activation in combat."
 #taxboost -20
 #unrest -5
 #delay 2
+#header 1
 #nolog
 #removesite 2196 -- Palace Grounds
 #addsite 2199 -- Preparation Grounds
@@ -173933,6 +174209,7 @@ This headband does not require activation in combat."
 #msg "Preparations for the Celebrations are complete! People flock from miles around to join the festivities. The palace grounds have been opened for use and parades are held daily. Gifts and tribute are brought for the King from the surrounding towns and villages, swelling the coffers of the treasury."
 #taxboost 30
 #unrest -25
+#header 1
 #nolog
 #removesite 2199 -- Preparation Grounds
 #addsite 2198 -- Celebration Grounds
@@ -174036,8 +174313,11 @@ This headband does not require activation in combat."
 #req_land 1
 #req_mountain 1
 #req_targitem 666 -- Obscuro's Ring
-#msg "Moonbeams have been captured using Obscuro's Ring and the resulting gems transported to the treasury."
+#msg "Moonbeams have been captured using Obscuro's Ring.
+
+The resulting gems transported to the treasury."
 #nolog
+#header 2
 #force1d3vis 7  -- 1D3 Glamour Gems
 #end
 
@@ -174046,8 +174326,11 @@ This headband does not require activation in combat."
 #req_land 1
 #req_forest 1
 #req_targitem 667 -- Simbeline
-#msg "The Simbeline has blossomed! The magical blooms were quickly transported to the laboratory and refined into nature gems."
+#msg "The Simbeline has blossomed!
+
+The magical blooms were quickly transported to the laboratory and refined into nature gems."
 #nolog
+#header 2
 #force1d3vis 6  -- 1D3 Nature Gems
 #end
 
@@ -174055,8 +174338,11 @@ This headband does not require activation in combat."
 #rarity 5
 #req_land 0
 #req_targitem 668 -- Mother Pearl
-#msg "The Mother Pearl has birthed magical pearls, which were quickly transported to the treasury."
+#msg "The Mother Pearl has birthed magical pearls.
+
+They were quickly transported to the treasury."
 #nolog
+#header 2
 #force1d3vis 4  -- 1D4 Pearls
 #end
 
@@ -174159,17 +174445,6 @@ This headband does not require activation in combat."
 #req_rare 50
 #msg "Tales of debauchery and unnatural goings on are spreading amongst the common folk. Soldiers should be sent to hunt down those responsible."
 #nolog
-#end
-
-#newevent
-#rarity 5
-#nation -2
-#req_targmnr 7572 -- Jotun Crab
-#req_fort 0
-#req_rare 15
-#req_pop0ok
-#msg "Your Jotun Crab has constructed a great citadel in the province."
-#fort 23
 #end
 
 #newevent
@@ -174495,6 +174770,7 @@ This headband does not require activation in combat."
 #req_nomnr 7593 -- Substitute King
 #nation -2
 #msg "The inauguration ritual was completed successfully! The Substitute King sits upon the throne and calamity has been averted. Good fortune spreads throughout the kingdom."
+#header 1
 #nolog
 #forcetransform 7593 -- Substitute King
 #end
@@ -175042,6 +175318,7 @@ This headband does not require activation in combat."
 #req_owncapital 1
 #req_season 3  -- Winter
 #req_code -300
+#header 1
 #msg "Preparations for the celebration of the yearly ritual of the sacred marriage are underway. Come spring the Entu and his Ensi are supposed to be joined in the sacred marriage that will provide fertility for the coming year."
 #taxboost -10
 #unrest -50
@@ -175222,623 +175499,6 @@ This headband does not require activation in combat."
 #addsite 2122 -- Palace with Jinn
 #end
 
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_pop0ok
-#req_owncapital 1
-#req_code -300
-#msg "Set Code - Code empty."
-#nation -2
-#nolog
-#notext
-#code -303
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7747 -- Serpent Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7748 -- Epoptes Aspirant
-#req_nomonster 7750 -- Theurg Aspirant
-#req_nomonster 7749 -- Heliodromus Aspirant
-#req_owncapital 1
-#req_maxturn 12
-#msg "##targname## the Serpent Aspirant has successfully converted the populace of the Imperial Capital to the worship of the Serpent Cult! A great ceremony was held for his coronation and he has now taken the role of Serpent Bishop. It has now become the official state church and temples of the Serpent Priests are given preeminence in the cities of the Empire."
-#nation -2
-#transform 7731 -- Serpent Bishop
-#pathboost 2
-#nolog
-#code -304  -- Serpent Cult
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7747 -- Serpent Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7748 -- Epoptes Aspirant
-#req_nomonster 7750 -- Theurg Aspirant
-#req_nomonster 7749 -- Heliodromus Aspirant
-#req_owncapital 1
-#req_turn 13
-#req_nositenbr 2223
-#delay 1
-#msg "##targname## the Serpent Aspirant has begun to convert the populace of the Imperial Capital to the worship of the Serpent Cult. The process will take 2 more months to complete."
-#nation -2
-#hiddensite 2223
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7747 -- Serpent Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7748 -- Epoptes Aspirant
-#req_nomonster 7750 -- Theurg Aspirant
-#req_nomonster 7749 -- Heliodromus Aspirant
-#req_owncapital 1
-#req_turn 13
-#req_nositenbr 2224
-#delay 1
-#msg "##targname## the Serpent Aspirant continues to convert the populace of the Imperial Capital to the worship of the Serpent Cult. The process will take 1 more month to complete."
-#nation -2
-#hiddensite 2224
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7747 -- Serpent Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7748 -- Epoptes Aspirant
-#req_nomonster 7750 -- Theurg Aspirant
-#req_nomonster 7749 -- Heliodromus Aspirant
-#req_owncapital 1
-#msg "##targname## the Serpent Aspirant has successfully converted the populace of the Imperial Capital to the worship of the Serpent Cult! A great ceremony was held for his coronation and he has now taken the role of Serpent Bishop. It has now become the official state church. Temples of the Serpent Priests are given preeminence in the cities of the Empire."
-#nation -2
-#transform 7731 -- Serpent Bishop
-#pathboost 2
-#nolog
-#code -304  -- Serpent Cult
-#removesite 2223
-#delay 0
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_pop0ok
-#req_owncapital 1
-#msg "Remove cult temple 2."
-#nation -2
-#notext
-#nolog
-#removesite 2224
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7748 -- Epoptes Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7747 -- Serpent Aspirant
-#req_nomonster 7750 -- Theurg Aspirant
-#req_nomonster 7749 -- Heliodromus Aspirant
-#req_owncapital 1
-#req_maxturn 12
-#msg "##targname## the Epoptes Aspirant has successfully converted the populace of the Imperial Capital to the worship of the Fertility Cult! A great ceremony was held for her coronation and she has now taken the role of Archigallus. It has now become the official state church and temples of the Great Mother are given preeminence in the cities of the Empire."
-#nation -2
-#transform 7516 -- Archigallus
-#pathboost 3
-#pathboost 9
-#nolog
-#code -305  -- Fertility Cult
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7748 -- Epoptes Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7747 -- Serpent Aspirant
-#req_nomonster 7750 -- Theurg Aspirant
-#req_nomonster 7749 -- Heliodromus Aspirant
-#req_owncapital 1
-#req_nositenbr 2223
-#delay 1
-#msg "##targname## the Epoptes Aspirant has begun to convert the populace of the Imperial Capital to the worship of the Fertility Cult. The process will take 2 more months."
-#nation -2
-#hiddensite 2223
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7748 -- Epoptes Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7747 -- Serpent Aspirant
-#req_nomonster 7750 -- Theurg Aspirant
-#req_nomonster 7749 -- Heliodromus Aspirant
-#req_owncapital 1
-#req_nositenbr 2224
-#delay 1
-#msg "##targname## the Epoptes Aspirant continues to convert the populace of the Imperial Capital to the worship of the Fertility Cult. The process will take 1 more month."
-#nation -2
-#hiddensite 2224
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7748 -- Epoptes Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7747 -- Serpent Aspirant
-#req_nomonster 7750 -- Theurg Aspirant
-#req_nomonster 7749 -- Heliodromus Aspirant
-#req_owncapital 1
-#msg "##targname## the Epoptes Aspirant has successfully converted the populace of the Imperial Capital to the worship of the Fertility Cult! A great ceremony was held for her coronation and she has now taken the role of Archigallus. It has now become the official state church and temples of the Great Mother are given preeminence in the cities of the Empire."
-#nation -2
-#transform 7516 -- Archigallus
-#pathboost 3
-#pathboost 9
-#nolog
-#removesite 2223
-#code -305  -- Fertility Cult
-#delay 0
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_pop0ok
-#req_owncapital 1
-#msg "Remove cult temple 2."
-#nation -2
-#notext
-#nolog
-#removesite 2224
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7749 -- Heliodromus Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7748 -- Epoptes Aspirant
-#req_nomonster 7747 -- Serpent Aspirant
-#req_nomonster 7750 -- Theurg Aspirant
-#req_owncapital 1
-#req_maxturn 12
-#msg "##targname## the Heliodromus Aspirant has successfully converted the populace of the Imperial Capital to the worship of the Cult of the Solar Bull! A great ceremony was held for his coronation and he has now taken the role of Heliopater. It has now become the official state church and temples of the Solar Bull are given preeminence in the cities of the Empire."
-#nation -2
-#transform 7734 -- Heliopater
-#pathboost 9
-#nolog
-#code -306  -- Solar Bull Cult
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7749 -- Heliodromus Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7748 -- Epoptes Aspirant
-#req_nomonster 7747 -- Serpent Aspirant
-#req_nomonster 7750 -- Theurg Aspirant
-#req_owncapital 1
-#req_nositenbr 2223
-#delay 1
-#msg "##targname## the Heliodromus Aspirant has begun to convert the populace of the Imperial Capital to the worship of the Cult of the Solar Bull. The process will take 2 more months."
-#nation -2
-#hiddensite 2223
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7749 -- Heliodromus Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7748 -- Epoptes Aspirant
-#req_nomonster 7747 -- Serpent Aspirant
-#req_nomonster 7750 -- Theurg Aspirant
-#req_owncapital 1
-#req_nositenbr 2224
-#delay 1
-#msg "##targname## the Heliodromus Aspirant continues to attempt to convert the populace of the Imperial Capital to the worship of the Cult of the Solar Bull. The process will take 1 more month."
-#nation -2
-#hiddensite 2224
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7749 -- Heliodromus Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7748 -- Epoptes Aspirant
-#req_nomonster 7747 -- Serpent Aspirant
-#req_nomonster 7750 -- Theurg Aspirant
-#req_owncapital 1
-#msg "##targname## the Heliodromus Aspirant has successfully converted the populace of the Imperial Capital to the worship of the Cult of the Solar Bull! A great ceremony was held for his coronation and he has now taken the role of Heliopater. It has now become the official state church and temples of the Solar Bull are given preeminence in the cities of the Empire."
-#nation -2
-#transform 7734 -- Heliopater
-#pathboost 9
-#nolog
-#code -306  -- Solar Bull Cult
-#removesite 2223
-#delay 0
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_pop0ok
-#req_owncapital 1
-#msg "Remove cult temple 2."
-#nation -2
-#notext
-#nolog
-#removesite 2224
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7750 -- Theurg Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7748 -- Epoptes Aspirant
-#req_nomonster 7747 -- Serpent Aspirant
-#req_nomonster 7749 -- Heliodromus Aspirant
-#req_owncapital 1
-#req_maxturn 12
-#msg "##targname## the Theurg Aspirant has successfully converted the populace of the Imperial Capital to the Church of the Theurgy! A great ceremony was held for his coronation and he has now taken the role of Patriarch. It has now become the official state church. Temples of the Spheres are given preeminence in the cities of the Empire."
-#nation -2
-#transform 7736 -- Patriarch
-#pathboost 1
-#nolog
-#code -307  -- Theurgy
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7750 -- Theurg Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7748 -- Epoptes Aspirant
-#req_nomonster 7747 -- Serpent Aspirant
-#req_nomonster 7749 -- Heliodromus Aspirant
-#req_owncapital 1
-#req_nositenbr 2223
-#delay 1
-#msg "##targname## the Theurg Aspirant has begun to convert the populace of the Imperial Capital to the Church of the Theurgy. The process will take 2 more months."
-#nation -2
-#hiddensite 2223
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7750 -- Theurg Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7748 -- Epoptes Aspirant
-#req_nomonster 7747 -- Serpent Aspirant
-#req_nomonster 7749 -- Heliodromus Aspirant
-#req_owncapital 1
-#delay 1
-#req_nositenbr 2224
-#nation -2
-#msg "##targname## the Theurg Aspirant continues to attempt to convert the populace of the Imperial Capital to the worship of the Spheres. The process will take 1 more month."
-#nation -2
-#hiddensite 2224
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7750 -- Theurg Aspirant
-#req_pop0ok
-#req_nomnr 7731 -- Serpent Bishop
-#req_nomnr 7516 -- Archigallus
-#req_nomnr 7734 -- Heliopater
-#req_nomnr 7736 -- Patriarch
-#req_nomonster 7748 -- Epoptes Aspirant
-#req_nomonster 7747 -- Serpent Aspirant
-#req_nomonster 7749 -- Heliodromus Aspirant
-#req_owncapital 1
-#msg "##targname## the Theurg Aspirant has successfully converted the populace of the Imperial Capital to the Church of the Theurgy! A great ceremony was held for his coronation and he has now taken the role of Patriarch. It has now become the official state church. Temples of the Spheres are given preeminence in the cities of the Empire."
-#nation -2
-#transform 7736 -- Patriarch
-#pathboost 1
-#nolog
-#code -307  -- Theurgy
-#removesite 2223
-#delay 0
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_pop0ok
-#req_owncapital 1
-#msg "Remove cult temple."
-#nation -2
-#notext
-#nolog
-#removesite 2224
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_owncapital 1
-#req_pop0ok
-#req_site 1
-#nation -2
-#msg "Clear temples. [Cultic Temple Phase 1]"
-#delay 3
-#notext
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_owncapital 1
-#req_pop0ok
-#req_site 1
-#nation -2
-#msg "Clear temples. [Cultic Temple Phase 1]"
-#removesite 2223
-#notext
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_owncapital 1
-#req_pop0ok
-#req_site 1
-#nation -2
-#msg "Clear temples. [Cultic Temple Phase 2]"
-#delay 3
-#notext
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_owncapital 1
-#req_pop0ok
-#req_site 1
-#nation -2
-#msg "Clear temples. [Cultic Temple Phase 2]"
-#removesite 2224
-#notext
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 1880  -- Reveler
-#req_pop0ok
-#req_temple 1
-#req_gold 15
-#req_anycode -305  -- Fertility Cult
-#msg "A Reveler has been anointed at the temple."
-#nation -2
-#transform 7730 -- Holy Reveler
-#exactgold -15
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7730 -- Holy Reveler
-#req_pop0ok
-#req_anycode -303
-#req_anycode -304
-#req_anycode -306
-#req_anycode -307
-#msg "Transform Holy Reveler."
-#nation -2
-#transform 1880  -- Reveler
-#nolog
-#notext
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 1876  -- Mystes
-#req_pop0ok
-#req_temple 1
-#req_gold 15
-#req_anycode -305
-#msg "A Mystes has been anointed at the temple."
-#nation -2
-#transform 7743 -- Mystes Priest
-#exactgold -15
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7743 -- Mystes Priest
-#req_pop0ok
-#req_anycode -303
-#req_anycode -304
-#req_anycode -306
-#req_anycode -307
-#msg "Transform Mystes Priest."
-#nation -2
-#transform 1876  -- Mystes
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 1875  -- Epoptes
-#req_pop0ok
-#req_temple 1
-#req_gold 15
-#req_anycode -305
-#msg "An Epoptes has been anointed at the temple."
-#exactgold -15
-#nation -2
-#transform 7742 -- Epoptes monpresentrec
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7742 -- Epoptes monpresentrec
-#req_pop0ok
-#req_anycode -303
-#req_anycode -304
-#req_anycode -306
-#req_anycode -307
-#msg "Transform Epoptes Priest."
-#nation -2
-#transform 1875  -- Epoptes
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 1872  -- Leo
-#req_pop0ok
-#req_anycode -306
-#req_temple 1
-#req_gold 15
-#msg "A Leo has been anointed at the temple."
-#nation -2
-#transform 7740 -- Leo monpresentrec
-#exactgold -15
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7740 -- Leo monpresentrec
-#req_pop0ok
-#req_anycode -303
-#req_anycode -304
-#req_anycode -305
-#req_anycode -307
-#msg "Transform Leo Priest."
-#nation -2
-#transform 1872  -- Leo
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 1873  -- Heliodromus
-#req_pop0ok
-#req_anycode -306
-#req_temple 1
-#req_gold 15
-#msg "A Heliodromus has been anointed at the temple."
-#nation -2
-#transform 7741 -- Helio monpresentrec
-#exactgold -15
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_fornation 98 -- LA Pythium
-#req_targmnr 7741 -- Helio monpresentrec
-#req_pop0ok
-#req_anycode -303
-#req_anycode -304
-#req_anycode -305
-#req_anycode -307
-#msg "Transform Heliodromus Priest."
-#nation -2
-#transform 1873  -- Heliodromus
-#nolog
-#end
-
 
 #newevent
 #rarity 13
@@ -175863,14 +175523,14 @@ Magical researchers across the world proclaim that ##fullgodname## has opened a 
 #nation 0
 #end
 
-#newevent
-#rarity 13
-#req_myench 232 -- Ench32  -- Face of the Lord
-#req_owncapital 1
-#req_unique 1
-#req_pop0ok
-#nation 0
-#end
+--#newevent
+--#rarity 13
+--#req_myench 232 -- Ench32  -- Face of the Lord
+--#req_owncapital 1
+--#req_unique 1
+--#req_pop0ok
+--#nation 0
+--#end
 
 #newevent
 #rarity 13
@@ -176123,6 +175783,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #newdom 1
 #incdom 2
 #nolog
+#header 1
 #id 29
 #end
 
@@ -176132,6 +175793,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #msg "The populace has been cowed by the chastisement of their sacred idols."
 #unrest -25
 #nolog
+#header 1
 #id 30
 #delay50 2
 #end
@@ -176398,29 +176060,6 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 
 #newevent
 #rarity 5
-#req_indepok 1
-#req_pop0ok
-#req_hostileench 67
-#msg "Angles of Tindalos appears"
-#notext
-#nolog
-#hiddensite 2148 -- Angles of Tindalos
-#end
-
-#newevent
-#rarity 5
-#req_indepok 1
-#req_pop0ok
-#req_site 1
-#req_noench 67  -- Dome of Corruption
-#msg "Angles of Tindalos disappears. [Angles of Tindalos]"
-#notext
-#nolog
-#removesite 2148 -- Angles of Tindalos
-#end
-
-#newevent
-#rarity 5
 #req_rare 0
 #req_land 1
 #req_indepok 1
@@ -176486,17 +176125,6 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #msg "Luckily the Arcane Laboratory was unharmed by the Falling Stars. A few of the smaller stars were gathered and refined at the laboratory."
 #force1d6vis 4
 #nation -2
-#end
-
-#newevent
-#rarity 5
-#req_rare 0
-#req_indepok 1
-#req_pop0ok
-#id 41
-#msg "Bluecaps have appeared and revealed seams of minerals to your miners! Additional shafts have been dug to take advantage of the find."
-#nation -2
-#landprod 50
 #end
 
 #newevent
@@ -176656,6 +176284,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #rarity 5
 #req_rare 0
 #msg "A temple has miraculously been built overnight in the province, jeweled and wondrous. The people rejoice at this manifestation of the power of ##godname##."
+#header 1
 #temple 1
 #unrest -15
 #incdom 1
@@ -176670,6 +176299,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #nation -2
 #msg "The Infernal powers have sent emissaries to serve ##godname## as Lord of the Looming Hell."
 #nolog
+#header 1
 #1unit -1054  -- Random Devil
 #1d3units -1054  -- Random Devil
 #1d6units -1054  -- Random Devil
@@ -177254,6 +176884,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_permonth 2
 #msg "A great diamond was discovered by a local peasant. After rewarding them with a tenth of its worth it was taken to the treasury."
 #gold 150
+#header 1
 #end
 
 #newevent
@@ -177278,6 +176909,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #force1d3vis 0
 #force2d6vis 1
 #force1d6vis 2
+#header 1
 #end
 
 #newevent
@@ -177291,402 +176923,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #force2d6vis 4
 #force1d3vis 5
 #force1d6vis 6
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_site 1
-#req_pop0ok
-#msg "The Power of the Pantokrator has already been gathered from this location and the ritual has failed. [Power Remnant]"
-#nolog
-#nation 0
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_site 1
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Shattered Throne. ##godname## has gained power and is now hidden from the eyes of the world! A trace remnant of the ritual remains in the land. [The Shattered Throne]"
-#nolog
-#assassin 7715 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#pathboost 4
-#pathboost 8
-#xp 100
-#nation -2
-#delay 1
-#end
-
-#newevent
-#rarity 5
-#req_pop0ok
-#msg "After the Ritual of Empowerment a strange shattered sphere was found at the site. It has been transported to the treasury. [Shattered Sphere]"
-#magicitem 9
-#nation -2
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_land 1
-#req_site 1
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of Abundance and a host of Vine Men have been awoken from their slumber. ##godname## has gained the power of Abundance and their flesh regrows at an incredible rate! A trace remnant of the ritual remains in the land. [The Throne of Abundance]"
-#nolog
-#assassin 7716 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#pathboost 6
-#xp 100
-#nation -2
-#10d6units 361  -- Vine Man
-#5d6units 362  -- Vine Ogre
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_land 0
-#req_owncapital 0
-#req_site 1
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of Abundance and a host of Kelp and Algae Men have been awoken from their slumber. ##godname## has gained the power of Abundance and their flesh regrows at an incredible rate! A trace remnant of the ritual remains in the land. [The Throne of Abundance]"
-#nolog
-#assassin 7716 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#pathboost 6
-#xp 100
-#nation -2
-#10d6units 4547  -- Kelp Man
-#5d6units 2976  -- Algae Men
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_site 1
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of Creation and a mechanical army has been created. ##godname## has gained the power of Creation and can forge great wonders more easily than before! A trace remnant of the ritual remains in the land. [The Throne of Creation]"
-#nolog
-#assassin 7717 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#pathboost 3
-#xp 100
-#nation -2
-#5d6units 532  -- Mechanical Men
-#3d6units 7566  -- Mechanical Giants
-#1d6units 7567  -- Mechanical Monsters
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_site 1
-#req_land 1
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of Destiny and three powerful mages have appeared to aid the True God. ##godname## has gained power over Destiny and will bring good fortune wherever they dwell! A trace remnant of the ritual remains in the land. [The Throne of Destiny]"
-#nolog
-#assassin 7718 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#nation -2
-#pathboost 4
-#xp 100
-#2com 106  -- Shadow Seers
-#com 106  -- Shadow Seer
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_site 1
-#req_land 0
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of Destiny and two powerful Ether Lords have appeared to aid the True God. ##godname## has gained power over Destiny and will bring good fortune wherever they dwell! A trace remnant of the ritual remains in the land. [The Throne of Destiny]"
-#nolog
-#assassin 7718 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#nation -2
-#pathboost 4
-#xp 100
-#2com 737  -- Ether Lord
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_site 1
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of Elements. ##godname## draws power from the elements and is reinvigorated at an incredible rate! A trace remnant of the ritual remains in the land. [The Throne of Elements]"
-#nolog
-#assassin 7719 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#pathboost 0
-#pathboost 1
-#pathboost 2
-#pathboost 3
-#xp 100
-#nation -2
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_site 1
-#req_land 1
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of Eternal Suffering and a demonic host has been summoned and bound. ##godname## has learned the causes of suffering and can cure afflictions of all kinds! A trace remnant of the ritual remains in the land. [The Throne of Eternal Suffering]"
-#nolog
-#assassin 7720 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#nation -2
-#pathboost 8
-#xp 100
-#5d6units 88  -- Fiend of Darkness
-#com 88  -- Fiend of Darkness
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_site 1
-#req_land 0
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of Eternal Suffering and a host of creatures from the Void has been summoned and bound. ##godname## has learned the causes of suffering and can cure afflictions of all kinds! A trace remnant of the ritual remains in the land. [The Throne of Eternal Suffering]"
-#nolog
-#assassin 7720 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#nation -2
-#pathboost 8
-#xp 100
-#5d6units 752  -- Elder Things
-#com 752  -- Elder Thing
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_site 1
-#req_land 1
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of Sorcery and has attracted followers skilled in the dark arts. ##godname## has learned the secrets of magic and can now perform more powerful rituals. A trace remnant of the ritual remains in the land. [The Throne of Sorcery]"
-#nolog
-#assassin 7721 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#nation -2
-#xp 100
-#2com 339  -- Sorcerer
-#com 2362  -- Blackrose Sorceress
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_site 1
-#req_land 0
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of Sorcery and has attracted followers skilled in the dark arts. ##godname## has learned the secrets of magic and can now perform more powerful rituals. A trace remnant of the ritual remains in the land. [The Throne of Sorcery]"
-#nolog
-#assassin 7721 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#nation -2
-#xp 100
-#2com 1477  -- Kokythiad
-#com 1477  -- Kokythiad
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_site 1
-#req_land 1
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of Splendour and worshippers have been drawn from miles around. ##godname## has gained the Splendour of the Divine and enemies will barely strike them in battle! A trace remnant of the ritual remains in the land. [The Throne of Splendour]"
-#nolog
-#assassin 7722 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#nation -2
-#xp 100
-#10d6units 217  -- Flagellants
-#com 241  -- High Priest
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_site 1
-#req_land 0
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of Splendour and worshippers have been drawn from miles around. ##godname## has gained the Splendour of the Divine and enemies will barely strike them in battle! A trace remnant of the ritual remains in the land. [The Throne of Splendour]"
-#nolog
-#assassin 7722 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#nation -2
-#xp 100
-#10d6units 1008  -- Fanatic Deep One
-#com 1040  -- Bishop Fish
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_site 1
-#req_land 1
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of the Pantokrator and a great edifice has been created that radiates power. ##godname## has gained the majesty of the Pantokrator and those under their command will fight to the last breath to defend their God. A trace remnant of the ritual remains in the land. [The Throne of the Pantokrator]"
-#nolog
-#assassin 7723 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#nation -2
-#xp 100
-#com 781  -- Juggernaut
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_site 1
-#req_land 0
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of the Pantokrator and three holy creatures have appeared to serve. ##godname## has gained the majesty of the Pantokrator and those under their command will fight to the last breath to defend their God. A trace remnant of the ritual remains in the land. [The Throne of the Pantokrator]"
-#nolog
-#assassin 7723 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#nation -2
-#xp 100
-#2com 1040  -- Bishop Fish
-#com 1040  -- Bishop Fish
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_site 1
-#req_land 1
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of the Sun and a host of Summer Lions has been summoned. ##godname## now radiates flames that will burn attackers to a cinder! A trace remnant of the ritual remains in the land. [The Throne of the Sun]"
-#nolog
-#assassin 7724 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#pathboost 0
-#pathboost 4
-#xp 100
-#nation -2
-#5d6units 515  -- Summer Lion
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_site 1
-#req_land 0
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne of the Sun and a host of Flaming Jellies has been summoned. ##godname## now radiates flames that will burn attackers to a cinder! A trace remnant of the ritual remains in the land. [The Throne of the Sun]"
-#nolog
-#assassin 7724 -- Divine Spirit
-#addsite 2135 -- Power Remnant
-#pathboost 0
-#pathboost 4
-#xp 100
-#nation -2
-#5d6units 2854  -- Flame Jellies
-#end
-
-#newevent
-#rarity 5
-#req_rare 50
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_thronesite 1
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne and a great pile of gemstones has been created. Some were found to contain magical energies and were transported to the lab. ##godname## has become stronger! A trace remnant of the ritual remains in the land."
-#nolog
-#addsite 2135 -- Power Remnant
-#xp 100
-#nation -2
-#gold 1000
-#force2d6vis 51  -- 2d6 Elemental gems
-#incdom 3
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135 -- Power Remnant
-#req_targgod 1
-#req_owncapital 0
-#req_thronesite 1
-#req_pop0ok
-#msg "The Ritual of Empowerment has drawn power from the Throne and a great pile of gemstones has been created. Some were found to contain magical energies and were transported to the lab. ##godname## has become stronger! A trace remnant of the ritual remains in the land."
-#nolog
-#addsite 2135 -- Power Remnant
-#xp 100
-#nation -2
-#gold 1000
-#force2d6vis 52  -- 2d6 Sorcery Gems
-#incdom 3
-#end
-
-#newevent
-#rarity 5
-#req_myench 258 -- Ench58  -- Bestow Throne Power
-#req_nositenbr 2135
-#req_pop0ok
-#msg "The ritual was not completed successfully and the spell has failed."
-#nolog
-#nation 0
+#header 1
 #end
 
 #newevent
@@ -177970,7 +177207,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targmagicbeing 0
 #req_targgod 0
 #req_targhumanoid 1
-#req_targmaxsize 3
+#req_targmaxsize 4
 #req_pop0ok
 #msg "During the unnaturally full moon your commander was struck with a strange sensation! They have become a werewolf and are now ruled by the moon itself."
 #transform 633  -- Werewolf
@@ -177992,8 +177229,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targmagicbeing 0
 #req_targgod 0
 #req_targhumanoid 1
-#req_targminsize 4
-#req_targmaxsize 5
+#req_targminsize 5
+#req_targmaxsize 7
 #req_pop0ok
 #msg "During the unnaturally full moon your commander was struck with a strange sensation! They have become a werewolf and are now ruled by the moon itself."
 #transform 7332 -- Jotun Werewolf
@@ -178024,6 +177261,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #force2d4vis 4
 #gold 200
 #nolog
+#header 1
 #end
 
 #newevent
@@ -178037,6 +177275,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #force2d4vis 4
 #gold 200
 #nolog
+#header 1
 #end
 
 #newevent
@@ -178050,6 +177289,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #force2d4vis 4
 #gold 200
 #nolog
+#header 1
 #end
 
 #newevent
@@ -179029,6 +178269,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_pop0ok
 #msg "Your priest has found magical gems amongst the manna!"
 #nolog
+#header 2
 #force1d6vis 6
 #force1d3vis 4
 #end
@@ -179744,62 +178985,6 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #1unit 255  -- Wailing Lady
 #end
 
-#newevent
-#req_friendlyench 220 -- Ench20  -- Read the Stars
-#req_enchdom 220 -- Ench20  -- Read the Stars
-#req_domchance 10
-#rarity 5
-#req_pop0ok
-#msg "Luck increase"
-#notext
-#nolog
-#decscale 4  -- +Luck
-#end
-
-#newevent
-#req_friendlyench 220 -- Ench20  -- Read the Stars
-#req_enchdom 220 -- Ench20  -- Read the Stars
-#rarity 5
-#req_rare 10
-#req_permonth 1
-#req_pop0ok
-#req_monster 1204  -- Elder Druid
-#req_freesites 1
-#req_nositenbr 2208
-#msg "Your Druid has overseen the erection of a stone circle that channels Astral power!"
-#addsite 2208 -- Druid Circle
-#end
-
-#newevent
-#req_friendlyench 220 -- Ench20  -- Read the Stars
-#req_enchdom 220 -- Ench20  -- Read the Stars
-#rarity 5
-#req_rare 5
-#req_permonth 1
-#req_pop0ok
-#req_targmnr 2468  -- Druid
-#req_targmnr 7089 -- Drw
-#req_targmnr 7090 -- Thyrs Druid
-#req_freesites 1
-#req_nositenbr 2208
-#msg "Your Druid has overseen the erection of a stone circle that channels Astral power!"
-#addsite 2208 -- Druid Circle
-#end
-
-#newevent
-#req_friendlyench 220 -- Ench20  -- Read the Stars
-#req_enchdom 220 -- Ench20  -- Read the Stars
-#rarity 5
-#req_rare 5
-#req_permonth 1
-#req_pop0ok
-#req_targmnr 1204  -- Elder Druid
-#req_targmnr 7090 -- Thyrs Druid
-#req_freesites 1
-#req_nositenbr 643
-#msg "Your druid has overseen the erection of powerful Standing Stones to track the movement of the stars! Great rituals can be performed here."
-#addsite 643 -- Standing Stones
-#end
 
 #newevent
 #req_ench 234 -- Ench34  -- Dreamtime
@@ -179884,6 +179069,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #nation -2
 #req_pop0ok
 #msg "A Dreamhunter has appeared from the Dreamtime to aid the Dreaming God!"
+#header 1
 #nolog
 #com 6700 -- Dreamhunter
 #end
@@ -179896,6 +179082,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_pop0ok
 #msg "The Smouldercone burns with the heat of a new sun! Truly this is a glorious sight to behold!"
 #addsite 2161
+#header 1
 #end
 
 #newevent
@@ -179904,7 +179091,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_capital 1
 #req_site 1
 #req_pop0ok
-#msg "The Smouldercone wanes! Truly this is a terrible omen.[The Smouldercone Aflame]"
+#msg "The Smouldercone wanes! Truly this is a terrible omen. [The Smouldercone Aflame]"
 #removesite 2161
 #end
 
@@ -179914,7 +179101,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_site 1
 #req_temple 0
 #req_pop0ok
-#msg "Remove Smouldercone if captured.[The Smouldercone Aflame]"
+#msg "Remove Smouldercone if captured. [The Smouldercone Aflame]"
 #notext
 #nolog
 #removesite 2161
@@ -180234,7 +179421,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targimmobile 0
 #req_land 1
 #req_targaff  -- Flesh Eater
-#req_targmaxsize 2
+#req_targmaxsize 3
 #msg "##targname## now suffers the curse of vampirism!"
 #transform 7823 -- Vampire Countess
 #nation -2
@@ -180255,7 +179442,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targinanimate 0
 #req_targimmobile 0
 #req_targaff  -- Flesh Eater
-#req_targmaxsize 2
+#req_targmaxsize 3
 #req_land 1
 #msg "##targname## now suffers the curse of vampirism!"
 #nation -2
@@ -180276,7 +179463,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targmagicbeing 0
 #req_targinanimate 0
 #req_targimmobile 0
-#req_targmaxsize 2
+#req_targmaxsize 3
 #req_land 1
 #req_targnoaff  -- Flesh Eater
 #msg "##targname## has fallen victim to the Malediction and now suffers an unnatural urge to feast on human flesh."
@@ -180682,6 +179869,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #msg "The inhabitants of the province have been dominated and unruly elements have been cowed."
 #nolog
 #unrest -25
+#header 1
 #end
 
 #newevent
@@ -180721,226 +179909,6 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #9d6units 7357  -- mad triton
 #2d6units 1007  -- Mad deep one
 #kill 3
-#end
-
-#newevent
-#rarity 5
-#req_ench 256 -- Ench56 -- Expand Void Rift
-#req_owncapital 1
-#req_nositenbr 2618 -- Expanded Void Rift
-#req_pop0ok
-#msg "The Void Rift has expanded into a great tear through reality!"
-#nolog
-#addsite 2618
-#end
-
-#newevent
-#rarity 5
-#req_noench 256 -- Ench56 Expand Void Rift
-#req_site 1  -- Tear in Reality
-#req_pop0ok
-#msg "The Void Rift has stabilised once again! [Tear in Reality]"
-#nolog
-#removesite 2618
-#end
-
-#newevent
-#rarity 5
-#req_ench 260 -- Ench60 -- Expand Void Gate
-#req_owncapital 0
-#req_nositenbr 2619 -- Expanded Void Gate
-#req_pop0ok
-#msg "The Gate to Beyond has been expanded into a great Portal!"
-#nolog
-#addsite 2619
-#end
-
-#newevent
-#rarity 5
-#req_noench 260 -- Ench60
-#req_site 1  -- Portal to Beyond
-#req_pop0ok
-#msg "The Void Gate has closed! [Portal to Beyond]"
-#notext
-#nolog
-#removesite 2619
-#end
-
-#newevent
-#rarity 5
-#req_site 1  -- Tear in Reality
-#req_rare 80
-#req_owncapital 1
-#req_pop0ok
-#msg "Additional Void creatures [Tear in Reality]"
-#nolog
-#notext
-#nation -2
-#1d3units -1020 -- lesser void being
-#end
-
-#newevent
-#rarity 5
-#req_site 1  -- Tear in Reality
-#req_rare 50
-#req_owncapital 1
-#req_pop0ok
-#nation -2
-#msg "Additional good Void creatures [Tear in Reality]"
-#nolog
-#notext
-#1d3units -1040 -- void being
-#end
-
-
-
-#newevent
-#rarity 5
-#req_targitem 714 -- Necklace from Beyond
-#req_fornation 127 -- LA Rlyeh
-#req_5monsters 962  -- Madman
-#req_dominion 1
-#req_domchance 10
-#req_magic 1
-#msg "The ritual has succeeded in summoning something from the void! Several worshipers were slain in the revelry."
-#nolog
-#notext
-#nation -2
-#1unit -1020
-#kill2d6mon 962  -- Madman
-#com 6536 -- Mad Dummy
-#end
-
-#newevent
-#rarity 5
-#req_targitem 714 -- Necklace from Beyond
-#req_fornation 127 -- LA Rlyeh
-#req_5monsters 1566  -- Mad One
-#req_dominion 1
-#req_domchance 10
-#req_magic 1
-#msg "The ritual has succeeded in summoning something from the void! Several worshipers were slain in the revelry."
-#nolog
-#notext
-#nation -2
-#1unit -1020
-#kill2d6mon 1566  -- Mad One
-#com 6536 -- Mad Dummy
-#end
-
-#newevent
-#rarity 5
-#req_targitem 714 -- Necklace from Beyond
-#req_fornation 127 -- LA Rlyeh
-#req_5monsters 1567  -- Mad Merman
-#req_dominion 1
-#req_domchance 10
-#req_magic 1
-#msg "The ritual has succeeded in summoning something from the void! Several worshipers were slain in the revelry."
-#nolog
-#notext
-#nation -2
-#1unit -1020
-#kill2d6mon 1567  -- Mad Merman
-#com 6536 -- Mad Dummy
-#end
-
-#newevent
-#rarity 5
-#req_targitem 714 -- Necklace from Beyond
-#req_fornation 127 -- LA Rlyeh
-#req_5monsters 1568  -- Mad Merman
-#req_dominion 1
-#req_domchance 10
-#req_magic 1
-#msg "The ritual has succeeded in summoning something from the void! Several worshipers were slain in the revelry."
-#nolog
-#notext
-#nation -2
-#1unit -1020
-#kill2d6mon 1568  -- Mad Merman
-#com 6536 -- Mad Dummy
-#end
-
-#newevent
-#rarity 5
-#req_targitem 714 -- Necklace from Beyond
-#req_fornation 127 -- LA Rlyeh
-#req_5monsters 1576  -- Mad Hybrid
-#req_dominion 1
-#req_domchance 10
-#req_magic 1
-#msg "The ritual has succeeded in summoning something from the void! Several worshipers were slain in the revelry."
-#nolog
-#notext
-#nation -2
-#1unit -1020
-#kill2d6mon 1576  -- Mad Hybrid
-#com 6536 -- Mad Dummy
-#end
-
-#newevent
-#rarity 5
-#req_targitem 714 -- Necklace from Beyond
-#req_monster 6536
-#req_fornation 127 -- LA Rlyeh
-#msg "The ritual has succeeded in summoning something from the void! Several worshipers were slain in the revelry."
-#nolog
-#delay 0
-#end
-
-#newevent
-#rarity 5
-#req_monster 6536
-#msg "Kill Mad Dummy."
-#nolog
-#notext
-#nation -2
-#killcom 6536 -- Mad Dummy
-#delay 0
-#end
-
-#newevent
-#rarity 5
-#req_monster 6536
-#msg "Kill Mad Dummy."
-#nolog
-#notext
-#nation -2
-#killcom 6536 -- Mad Dummy
-#delay 0
-#end
-
-#newevent
-#rarity 5
-#req_monster 6536
-#msg "Kill Mad Dummy."
-#nolog
-#notext
-#nation -2
-#killcom 6536 -- Mad Dummy
-#delay 0
-#end
-
-#newevent
-#rarity 5
-#req_monster 6536
-#msg "Kill Mad Dummy."
-#nolog
-#notext
-#nation -2
-#killcom 6536 -- Mad Dummy
-#delay 0
-#end
-
-#newevent
-#rarity 5
-#req_monster 6536
-#msg "Kill Mad Dummy."
-#nolog
-#notext
-#nation -2
-#killcom 6536 -- Mad Dummy
 #end
 
 #newevent
@@ -181256,37 +180224,6 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 
 #newevent
 #rarity 5
-#req_site 1
-#req_pop0ok
-#msg "Strange magic has afflicted the province! Angles and dimensions shift and change, driving men mad and causing them to vanish into the Void. [Angles of Tindalos]"
-#kill 3
-#unrest 20
-#end
-
-#newevent
-#rarity 5
-#req_site 1
-#req_targgod 0
-#req_rare 10
-#req_pop0ok
-#msg "One of your commanders has disappeared as an angle seemed to swallow them up! [Angles of Tindalos]"
-#banished -11
-#end
-
-#newevent
-#rarity 5
-#req_site 1
-#req_targgod 0
-#req_commander 1
-#req_rare 50
-#req_pop0ok
-#msg "A strange creature has appeared and attacked your commander! [Angles of Tindalos]"
-#assowner 127 -- LA Rlyeh
-#assassin 7456 -- Hound of Tindalos
-#end
-
-#newevent
-#rarity 5
 #req_land 0
 #req_ench 255 -- Ench55  -- Growth Chamber
 --#req_freesites 1
@@ -181335,7 +180272,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #nation -2
 #req_site 1
 #req_pop0ok
-#msg "The stars are right once more and K'llulu arises in R'lyeh! Across the world seers have gone insane and the wise foretell a time of madness and death. The dreams of R'lyeh grow stronger and the Void has begun to seep into the world. [The Void Gate]"
+#msg "The stars are right once more and K'llulu arises in R'lyeh! Across the world seers have gone insane and the wise foretell a time of madness and death. The dreams of R'lyeh grow stronger and the Void has begun to seep into the world. [Void Rift]"
 #worldunrest 30
 #revealprov
 #end
@@ -181346,9 +180283,8 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_owncapital 1
 #req_unique 1
 #nation -2
-#req_site 1
 #req_pop0ok
-#msg "Chamber appears [The Void Gate]"
+#msg "Chamber appears"
 #notext
 #nolog
 #addsite 2140 -- Chamber of the Old Ones
@@ -182061,183 +180997,6 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 
 #newevent
 #rarity 5
-#req_hostileench 229 -- Ench29
-#req_coast 1
-#req_rare 40
-#msg "Whispers Turmoil Increase."
-#incscale 0  -- +Turmoil
-#unrest 5
-#end
-
-#newevent
-#rarity 5
-#req_hostileench 229 -- Ench29
-#req_coast 1
-#req_rare 40
-#msg "Whispers Magic Increase."
-#decscale 5  -- +Magic
-#end
-
-#newevent
-#rarity 5
-#req_hostileench 229 -- Ench29
-#req_coast 1
-#req_code -300
-#req_capital 0
-#req_freesites 2
-#req_rare 4
-#req_nositenbr 1084
-#nation 127
-#msg "A small fishing village has turned to worship of blasphemous beings! A basalt statue of hideous visage was found in a cove, with signs of ritual worship nearby. Someone may be able to observe the activities secretly. You could also send priests to bring the lost flock into the fold or armed men to deal with this heresy by force."
-#flagland 1
-#addsite 1084
-#order 33
-#unrest 10
-#newdom 3
-#code -314
-#incscale 0  -- +Turmoil
-#decscale 5  -- +Magic
-#end
-
-#newevent
-#rarity 5
-#req_hostileench 229 -- Ench29
-#req_enchdom 229 -- Ench29
-#req_coast 1
-#req_code -300
-#req_capital 0
-#req_freesites 2
-#req_domchance 4
-#req_nositenbr 1084
-#msg "A small fishing village has turned to worship of blasphemous beings! A basalt statue of hideous visage was found in a cove, with signs of ritual worship nearby. Someone may be able to observe the activities secretly. You could also send priests to bring the lost flock into the fold or armed men to deal with this heresy by force."
-#flagland 1
-#addsite 1084
-#order 33
-#unrest 10
-#incdom 2
-#code -314
-#incscale 0  -- +Turmoil
-#decscale 5  -- +Magic
-#end
-
-#newevent
-#rarity 5
-#req_hostileench 229 -- Ench29
-#req_rare 50
-#req_coast 1
-#req_mydominion 1
-#msg "Dominion decrease"
-#notext
-#nolog
-#unrest 5
-#incdom -1
-#end
-
-#newevent
-#rarity 5
-#req_hostileench 229 -- Ench29
-#req_enchdom 229 -- Ench29
-#req_coast 1
-#req_temple 1
-#req_domchance 2
-#req_capital 0
-#msg "Your temple was destroyed by a baying mob of deformed villagers! Guttural cries were heard as they defaced the holy place."
-#unrest 15
-#temple 0
-#end
-
-#newevent
-#rarity 5
-#req_hostileench 229 -- Ench29
-#req_coast 1
-#req_temple 1
-#req_rare 2
-#req_capital 0
-#msg "Your temple was destroyed by a baying mob of deformed villagers! Guttural cries were heard as they defaced the holy place."
-#unrest 15
-#temple 0
-#end
-
-#newevent
-#rarity 5
-#req_friendlyench 229 -- Ench29
-#req_coast 1
-#req_rare 50
-#nation -2
-#req_pop0ok
-#msg "Mad Hybrids"
-#notext
-#nolog
-#2d6units 1576
-#end
-
-#newevent
-#rarity 5
-#req_friendlyench 229 -- Ench29
-#req_coast 1
-#req_rare 5
-#nation -2
-#req_pop0ok
-#msg "Mad Hybrid Cultist"
-#notext
-#nolog
-#com 1575
-#end
-
-#newevent
-#rarity 5
-#req_fornation 127
-#req_code -314
-#nation -2
-#msg "A local void cult loyal to the Dreaming God has joined your cause!"
-#code -300
-#2com 1575  -- Hybrid Cultist
-#1d6units 970  -- Hybrid
-#2d6units 1576  -- Mad Hybrid
-#3d6units 972  -- Hybrid Soldier
-#end
-
-#newevent
-#rarity 5
-#req_fornation 127
-#req_code -315
-#nation -2
-#msg "A local void cult loyal to the Dreaming God has joined your cause!"
-#code -300
-#2com 1575  -- Hybrid Cultist
-#1d6units 970  -- Hybrid
-#2d6units 1576  -- Mad Hybrid
-#3d6units 972  -- Hybrid Soldier
-#end
-
-#newevent
-#rarity 5
-#req_friendlyench 229 -- Ench29
-#req_code -314
-#nation -2
-#msg "A local void cult loyal to the Dreaming God has joined your cause!"
-#code -300
-#2com 1575  -- Hybrid Cultist
-#1d6units 970  -- Hybrid
-#2d6units 1576  -- Mad Hybrid
-#3d6units 972  -- Hybrid Soldier
-#end
-
-#newevent
-#rarity 5
-#req_friendlyench 229 -- Ench29
-#req_code -315
-#nation -2
-#msg "A local void cult loyal to the Dreaming God has joined your cause!"
-#code -300
-#2com 1575  -- Hybrid Cultist
-#1d6units 970  -- Hybrid
-#2d6units 1576  -- Mad Hybrid
-#3d6units 972  -- Hybrid Soldier
-#end
-
-#newevent
-#rarity 5
 #req_ench 189
 #req_pop0ok
 #msg "The Alfablot was celebrated! The magic of the fay infuses the land."
@@ -182320,64 +181079,6 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #1unit 7654  -- Indus Worm
 #1d3units 7653  -- Odontotyrannos
 #2d6units 7365  -- Giant Crab
-#end
-
-#newevent
-#rarity 5
-#req_ench 257 -- Ench57
-#req_owncapital 0
-#req_pop0ok
-#req_site 0
-#msg "Void Gate appears [Gate to Beyond]"
-#notext
-#nolog
-#maybeaddsite 2620 --Adds site 2620 R'lyeh Gate if it doesnt already exist in the province when spell is Cast, cannot be cast if adjacent gate site is there--
-#end
-
-#newevent
-#rarity 5
-#req_nearbysite 1
-#req_ench 257 -- Ench57
-#req_pop0ok
-#msg "Your gate was too close to the Void Rift, and failed to open. [Void Rift]"
-#removesite 2620 --Opening Gate
-#end
-
-#newevent
-#rarity 5
-#req_nearbysite 1
-#req_ench 257 -- Ench57
-#req_pop0ok
-#msg "Your gate was too close to another voidgate, and failed to open. [Gate to Beyond]"
-#removesite 2620 --Opening Gate
-#end
-
-#newevent
-#rarity 5
-#req_site 1
-#req_pop0ok
-#msg "[Opening Gate]"
-#removesite 2620 --Opening Gate--
-#addsite 2175 --Gate to Beyond
-#end
-
-#newevent
-#rarity 5
-#req_site 1
-#msg "Void insanity [Gate to Beyond]"
-#notext
-#nolog
-#kill 2
-#end
-
-#newevent
-#rarity 5
-#req_noench 257 -- Ench57
-#req_site 1  -- Gate to the Void
-#req_pop0ok
-#msg "The Void Gate has closed! [Gate to Beyond]"
-#nolog
-#removesite 2175
 #end
 
 --#newevent
@@ -182471,7 +181172,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #nation -2
 #req_pop0ok
 #req_targmnr 86  -- Anathemant Dragon
-#msg "An Anathemant Dragon has entered the fiery pits and undergone a transformation![Fiery Pits of Rebirth]"
+#msg "An Anathemant Dragon has entered the fiery pits and undergone a transformation! [Fiery Pits of Rebirth]"
 #nolog
 #transform 1536
 #pathboost 0
@@ -182486,7 +181187,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #nation -2
 #req_pop0ok
 #req_monster 90  -- Lava Warrior
-#msg "Lava Warriors have entered the fiery pits and undergone a transformation![Fiery Pits of Rebirth]"
+#msg "Lava Warriors have entered the fiery pits and undergone a transformation! [Fiery Pits of Rebirth]"
 #nolog
 #killmon 90  -- Lava Warrior
 #1unit 1543  -- Burning One
@@ -182783,7 +181484,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182801,7 +181502,7 @@ Tax collectors report that the population was unruly this month and collected le
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182819,7 +181520,7 @@ Tax collectors report that the population was very unruly this month and were on
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182835,7 +181536,7 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182866,7 +181567,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182884,7 +181585,7 @@ Tax collectors report that the population was unruly this month and collected le
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182902,7 +181603,7 @@ Tax collectors report that the population was very unruly this month and were on
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182918,7 +181619,7 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182949,7 +181650,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182967,7 +181668,7 @@ Tax collectors report that the population was unruly this month and collected le
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -182985,7 +181686,7 @@ Tax collectors report that the population was very unruly this month and were on
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -183001,7 +181702,7 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -183032,7 +181733,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -183050,7 +181751,7 @@ Tax collectors report that the population was unruly this month and collected le
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -183068,7 +181769,7 @@ Tax collectors report that the population was very unruly this month and were on
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -183084,7 +181785,7 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -183115,7 +181816,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -183133,7 +181834,7 @@ Tax collectors report that the population was unruly this month and collected le
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -183151,7 +181852,7 @@ Tax collectors report that the population was very unruly this month and were on
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -183167,7 +181868,7 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -183198,7 +181899,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -183216,7 +181917,7 @@ Tax collectors report that the population was unruly this month and collected le
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -183234,7 +181935,7 @@ Tax collectors report that the population was very unruly this month and were on
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -183250,7 +181951,7 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area. [Tax Collection Report]"
 #header 2
 #nolog
 #end
@@ -183282,7 +181983,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183299,7 +182000,7 @@ Tax collectors report that the population was unruly this month and collected le
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183316,7 +182017,7 @@ Tax collectors report that the population was very unruly this month and were on
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183332,7 +182033,7 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183350,7 +182051,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183367,7 +182068,7 @@ Tax collectors report that the population was unruly this month and collected le
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183384,7 +182085,7 @@ Tax collectors report that the population was very unruly this month and were on
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183400,7 +182101,7 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183418,7 +182119,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183435,7 +182136,7 @@ Tax collectors report that the population was unruly this month and collected le
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183452,7 +182153,7 @@ Tax collectors report that the population was very unruly this month and were on
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183468,7 +182169,7 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183486,7 +182187,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183503,7 +182204,7 @@ Tax collectors report that the population was unruly this month and collected le
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183520,7 +182221,7 @@ Tax collectors report that the population was very unruly this month and were on
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183536,7 +182237,7 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183554,7 +182255,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183571,7 +182272,7 @@ Tax collectors report that the population was unruly this month and collected le
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183588,7 +182289,7 @@ Tax collectors report that the population was very unruly this month and were on
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183604,7 +182305,7 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183622,7 +182323,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was unruly this month and collected less than the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was unruly this month and collected less than the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183639,7 +182340,7 @@ Tax collectors report that the population was unruly this month and collected le
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was very unruly this month and were only able to collect half the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was very unruly this month and were only able to collect half the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183656,7 +182357,7 @@ Tax collectors report that the population was very unruly this month and were on
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extremely unruly this month and were only able to collect one third the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -183672,7 +182373,7 @@ Tax collectors report that the population was extremely unruly this month and we
 #req_targorder 8
 #msg "Tax collectors in ##landname## have a report.
 
-Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income. They lay blame upon the ongoing blood hunting efforts of mages in the area."
+Tax collectors report that the population was extraordinarily unruly this month and were only able to collect a pittance of the expected income due to unrest. They lay blame upon the ongoing blood hunting efforts of mages in the area."
 #header 2
 #nolog
 #end
@@ -185826,7 +184527,8 @@ Tax collectors report that the population was extraordinarily unruly this month 
 --#req_land 1
 #req_ench 221 -- Ench21 -- Samhain
 #req_nomonster 7662 -- Dolmen
-#req_domchance 5
+#req_domchance 1
+#req_dominion 1
 #req_fornation 11 -- Tir
 #req_fornation 58 -- Eriu
 #req_fornation 85 -- Ys
@@ -185842,7 +184544,8 @@ Tax collectors report that the population was extraordinarily unruly this month 
 --#req_land 1
 #req_ench 221 -- Ench21 -- Samhain
 #req_monster 7662 -- Dolmen
-#req_domchance 10
+#req_domchance 8
+#req_dominion 1
 #req_fornation 11 -- Tir
 #req_fornation 58 -- Eriu
 #req_fornation 85 -- Ys
@@ -185859,6 +184562,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_ench 221 -- Ench21 -- Samhain
 #req_monster 7662 -- Dolmen
 #req_domchance 2
+#req_dominion 1
 #req_fornation 11 -- Tir
 #req_fornation 58 -- Eriu
 #req_fornation 85 -- Ys
@@ -186518,7 +185222,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 #newevent -- centzy assassinates bhunter temples 1
 #rarity 5
-#req_fornation 73 -- MA Mictlan
+#req_targally 73 -- MA Mictlan
 #req_varpos 6001 -- 1st law
 #req_pop0ok
 #msg "A blood hunter breaking the First Law has been attacked by Centzonmimixcoas."
@@ -186534,7 +185238,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 #newevent -- centzy assassinates bhunter temples 2
 #rarity 5
-#req_fornation 73 -- MA Mictlan
+#req_targally 73 -- MA Mictlan
 #req_varpos 6002 -- 2nd law
 #req_pop0ok
 #msg "A blood courier breaking the Second Law has been attacked by Centzonmimixcoas."
@@ -186550,7 +185254,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 #newevent -- centzy assassinates bhunter labs 3
 #rarity 5
-#req_fornation 73 -- MA Mictlan
+#req_targally 73 -- MA Mictlan
 #req_varpos 6003 -- 3rd law
 #req_pop0ok
 #msg "A blood hunter breaking the Third Law has been attacked by Centzonmimixcoas."
@@ -186566,7 +185270,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 #newevent -- centzy assassinates bhunter labs 4
 #rarity 5
-#req_fornation 73 -- MA Mictlan
+#req_targally 73 -- MA Mictlan
 #req_varpos 6004 -- 4th law
 #req_pop0ok
 #msg "A blood courier breaking the Fourth Law has been attacked by Centzonmimixcoas."
@@ -186582,7 +185286,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 #newevent -- centzy assassinates bhunter dom 5
 #rarity 5
-#req_fornation 73 -- MA Mictlan
+#req_targally 73 -- MA Mictlan
 #req_varpos 6005 -- 5th law
 #req_pop0ok
 #msg "A blood courier breaking the Fifth Law has been attacked by Centzonmimixcoas."
@@ -186599,7 +185303,7 @@ It is now fully repaired and a new crew has been assigned to it."
 
 #newevent -- centzy assassinates bhunter dom 5
 #rarity 5
-#req_fornation 73 -- MA Mictlan
+#req_targally 73 -- MA Mictlan
 #req_varpos 6005 -- 5th law
 #req_pop0ok
 #msg "A blood hunter breaking the Fifth Law has been attacked by Centzonmimixcoas."
@@ -190077,7 +188781,145 @@ It is now fully repaired and a new crew has been assigned to it."
 #end
 
 
+#newevent
+#rarity 5
+#req_ench 257 -- Ench57
+#req_owncapital 0
+#req_pop0ok
+#req_nositenbr 2222 -- Void Rift
+#msg "Void Rift Opening appears"
+#notext
+#nolog
+#addsite 2620 -- Opening Gate
+#end
 
+#newevent
+#rarity 5
+#req_nearbysite 1
+#req_ench 257 -- Ench57
+#req_pop0ok
+#msg "Interference from another gate has prevented a Void Rift from opening. [Void Rift]"
+#nolog
+#header 2
+#removesite 2620 -- Opening Gate
+#end
+
+#newevent
+#rarity 5
+#req_site 1
+#req_pop0ok
+#msg "A Void Rift has been successfully opened. [Opening Gate]"
+#nolog
+#header 2
+#removesite 2620 -- Opening Gate
+#addsite 2222 -- Void Rift
+#end
+
+#newevent
+#rarity 5
+#req_site 1  -- Void Rift
+--#req_capital 0
+#req_domchance 10
+#req_mydominion 0
+#req_pop0ok
+#msg "A Void Rift has been closed without the influence of R'lyeh. [Void Rift]"
+#nolog
+#header 2
+#removesite 2222 -- Void Rift
+#end
+
+#newevent
+#rarity 5
+#req_site 1
+--#req_rare 50
+#req_owncapital 0
+#req_pop0ok
+#nation -2
+#msg "Void rift unrest and popkill [Void Rift]"
+#nolog
+#notext
+#unrest 5
+#kill 2
+#end
+
+
+#newevent
+#rarity 5
+#req_ench 256 -- Ench56 -- Expand Void Rift
+#req_owncapital 1
+#req_nositenbr 2618 -- Expanded Void Rift
+#req_pop0ok
+#msg "The Void Rift has expanded into a great tear through reality!"
+#nolog
+#addsite 2618
+#end
+
+#newevent
+#rarity 5
+#req_noench 256 -- Ench56 Expand Void Rift
+#req_site 1  -- Tear in Reality
+#req_pop0ok
+#msg "The Void Rift has returned to its original size. [Tear in Reality]"
+#nolog
+#removesite 2618
+#end
+
+#newevent
+#rarity 5
+#req_site 1  -- Tear in Reality
+#req_rare 80
+#req_owncapital 1
+#req_pop0ok
+#msg "Additional Void creatures [Tear in Reality]"
+#nolog
+#notext
+#nation -2
+#1d3units -1020 -- lesser void being
+#end
+
+#newevent
+#rarity 5
+#req_site 1  -- Tear in Reality
+#req_rare 50
+#req_owncapital 1
+#req_pop0ok
+#nation -2
+#msg "Additional good Void creatures [Tear in Reality]"
+#nolog
+#notext
+#1d3units -1040 -- void being
+#end
+
+
+#newevent
+#rarity 5
+#req_targorder 52 -- Void Summon
+#req_rare 3
+#req_turn 12
+#req_pop0ok
+#nation -2
+#msg "A strange creature has emerged from the Void Gate while your summoner was attempting to open it."
+#nolog
+#header 2
+#com 7393
+#req_varone 6010
+#end
+
+#newevent
+#rarity 5
+#req_targorder 52 -- Void Summon
+#req_fornation 127 -- LA R'lyeh
+#req_rare 10
+#req_turn 12
+#req_unique 1
+#req_pop0ok
+#nation -2
+#msg "A strange creature has emerged from the Void Gate while your summoner was attempting to open it."
+#nolog
+#header 2
+#com 7393
+#incvar 6010
+#end
 
 
 
