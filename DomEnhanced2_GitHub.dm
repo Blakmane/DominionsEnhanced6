@@ -509,6 +509,7 @@
 #name "Stone Longspear"
 #len 4
 #att -1
+#damage 3
 #end
 
 #newweapon 1526
@@ -652,6 +653,7 @@
 #newweapon 1538
 #copyweapon 644  -- Bronze Long Spear
 #name "Chitin Longspear"
+#damage 4
 #end
 
 #newweapon 1539
@@ -1124,7 +1126,7 @@
 
 #newweapon 1578
 #name "Shark-Tooth Spear"
-#dmg 3
+#dmg 4
 #att 0
 #def 0
 #len 4
@@ -4349,6 +4351,18 @@
 #dmg 4
 #end
 
+#selectweapon 28
+#dmg 4
+#end
+
+#selectweapon 572
+#dmg 4
+#end
+
+#selectweapon 644
+#dmg 4
+#end
+
 -- 4 -> 5
 #selectweapon 733
 #dmg 5
@@ -4368,6 +4382,10 @@
 #end
 
 #selectweapon 577
+#dmg 3
+#end
+
+#selectweapon 580
 #dmg 3
 #end
 
