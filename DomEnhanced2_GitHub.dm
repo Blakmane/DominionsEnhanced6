@@ -231,10 +231,11 @@
 
 #gemlongevity 2
 
-#slothincome 4
-#turmoilincome 4
-#deathincome 2
-#luckevents 7
+#slothincome 4 -- 3 -> 4
+#turmoilincome 4 -- 3 -> 4
+#deathincome 2 -- 1 -> 2
+#deathdeath 25 -- 20 -> 25
+#luckevents 7 -- 5 -> 7
 
 
 #newweapon 1501
@@ -270,7 +271,7 @@
 
 #newweapon 1503
 #name "Venom Lance"
-#dmg 2
+#dmg 3
 #att 1
 #len 3
 #rcost 5
@@ -582,7 +583,7 @@
 #newweapon 1532
 #copyweapon 373  -- Stone Spear
 #name "Kátsina War Spear"
-#dmg 4
+#dmg 5
 #rcost 5
 #len 3
 #def 1
@@ -639,7 +640,7 @@
 
 #newweapon 1537
 #name "Metal Spear"
-#dmg 3
+#dmg 4
 #len 3
 #att 0
 #def 0
@@ -2112,7 +2113,7 @@
 
 #newweapon 1693
 #name "Hero's Spear"
-#dmg 3
+#dmg 4
 #att 0
 #def 0
 #len 3
@@ -2159,7 +2160,7 @@
 
 #newweapon 1697
 #name "Angelique's Light Lance"
-#dmg 3
+#dmg 4
 #att 0
 #def 0
 #len 3
@@ -2208,7 +2209,7 @@
 
 #newweapon 1702
 #name "Hierogallus' Light Lance"
-#dmg 4
+#dmg 5
 #att 2
 #def 0
 #len 3
@@ -2723,6 +2724,7 @@
 #copyweapon 373  -- Stone Spear
 #name "Poison Spear"
 #rcost 5
+#dmg 3
 #secondaryeffect 51  -- Strong Poison
 #end
 
@@ -2838,6 +2840,7 @@
 #copyweapon 373  -- Stone Spear
 #name "Vine-Wreathed Spear"
 #secondaryeffectalways 50  -- Weak Poison
+#damage 3
 #end
 
 #newweapon 1773
@@ -3274,8 +3277,8 @@
 
 #newweapon 1833 -- Aizkora
 #name "Aizkora"
-#dmg 12
-#att 3
+#dmg 16
+#att 4
 #def 0
 #len 1
 #magic
@@ -3287,7 +3290,7 @@
 #newweapon 1834 -- Wooden Lance
 #copyweapon 651
 #name "Stone Lance"
-#dmg 2
+#dmg 3
 #end
 
 
@@ -3548,7 +3551,7 @@
 #newweapon 1860 -- Shadow Spear
 #copyweapon 280 -- Spectral Spear
 #name "Shadow Spear"
-#dmg 3
+#dmg 4
 #att 0
 #def 0
 #len 3
@@ -4283,6 +4286,104 @@
 
 -- End missile changes
 
+-- Spear damage increase
+
+--3 -> 4
+#selectweapon 741
+#dmg 4
+#end
+
+#selectweapon 693
+#dmg 4
+#end
+
+#selectweapon 651
+#dmg 4
+#end
+
+#selectweapon 643
+#dmg 4
+#end
+
+#selectweapon 611
+#dmg 4
+#end
+
+#selectweapon 596
+#dmg 4
+#end
+
+#selectweapon 519
+#dmg 4
+#end
+
+#selectweapon 485
+#dmg 4
+#end
+
+#selectweapon 478
+#dmg 4
+#end
+
+#selectweapon 388
+#dmg 4
+#end
+
+#selectweapon 280
+#dmg 4
+#end
+
+#selectweapon 234
+#dmg 4
+#end
+
+#selectweapon 357
+#dmg 4
+#end
+
+#selectweapon 36
+#dmg 4
+#end
+
+#selectweapon 1
+#dmg 4
+#end
+
+-- 4 -> 5
+#selectweapon 733
+#dmg 5
+#end
+
+#selectweapon 464
+#dmg 5
+#end
+
+-- 2 -> 3
+#selectweapon 373
+#dmg 3
+#end
+
+#selectweapon 31
+#dmg 3
+#end
+
+#selectweapon 577
+#dmg 3
+#end
+
+-- 5 -> 6
+#selectweapon 278
+#dmg 6
+#end
+
+-- 6 -> 7
+#selectweapon 109
+#dmg 7
+#end
+
+
+
+-- End Spear damage increase
 
 
 #selectweapon 21 -- Javelin
@@ -4655,6 +4756,7 @@
 
 #selectweapon 789 -- Pixie Spear
 #false
+#dmg 6 -- 5 -> 6
 #end
 
 #selectweapon 816 -- Blade of Grass
@@ -30068,6 +30170,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 92  -- Fist
 #montag 1030
 #polyimmune
+#gcost 0
 #end
 
 #newmonster 7503
@@ -30104,6 +30207,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 404  -- Beak
 #montag 1030
 #polyimmune
+#gcost 0
 #end
 
 #newmonster 7504
@@ -30139,6 +30243,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 404  -- Beak
 #montag 1030
 #polyimmune
+#gcost 0
 #end
 
 #newmonster 7505
@@ -31212,6 +31317,7 @@ While in the form of an old man, all paths are increased and allows the use of N
 #att 12
 #prec 6
 #noleader
+#itemslots 926214 -- No body slot
 #ap 10
 #end
 
@@ -31230,11 +31336,11 @@ While in the form of an old man, all paths are increased and allows the use of N
 #str 20
 #att 12
 #def 12
-#siegebonus 20
+#siegebonus 40
 #startage 320
 #weapon 236
 #weapon 236  -- Claws
-#weapon 144  -- Stinger
+#weapon 832  -- Magic Stinger
 #noitem -- 2 misc slots only
 #end
 
@@ -37214,7 +37320,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #rcost 1
 #weapon 20
 #weapon "Net"
-#weapon "Shark Tooth Spear"
+#weapon 1578
 #maxage 400
 #startage 200
 #magicskill 2 2
@@ -41138,7 +41244,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "dragonkings/dkdragson2.tga"
 #name "Nu Kua"
 #descr "Occasionally the Dragon Kings and their descendants take human form and dally with mortals. The children of these unions are known as the Nu Kua, Dragonblooded, and are at home both above and below the waves. Stronger and faster than most mortals, they often journey to the Dragon Courts upon learning of their divine heritage. There they are trained as elite warriors in the service of the Dragon Kings. When in mortal danger they can temporarily take draconic form. The descendants of the Dragon Kings are sacred to the halfmen of the Dragon Courts."
-#rpcost 52
+#rpcost 46
 #gcost 10050
 #hp 12
 #mr 13
@@ -41162,7 +41268,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "dragonkings/dkdragsond2.tga"
 #name "Nu Kua"
 #descr "Occasionally the Dragon Kings and their descendants take human form and dally with mortals. The children of these unions are known as the Nu Kua, Dragonblooded, and are at home both above and below the waves. Stronger and faster than most mortals, they often journey to the Dragon Courts upon learning of their divine heritage. There they are trained as elite warriors in the service of the Dragon Kings. When in mortal danger they can temporarily take draconic form. The descendants of the Dragon Kings are sacred to the halfmen of the Dragon Courts."
-#rpcost 48
+#rpcost 46
 #gcost 50
 #prot 6
 #hp 18
@@ -43160,6 +43266,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #str 14
 #coldres 5
 #mr 12
+#mor 12
 #weapon 5  -- Halberd
 #weapon 20  -- Bite
 #armor 10  -- Leather Hauberk
@@ -46573,6 +46680,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #size 3
 #poorleader
 #holy
+#swimming
 #maxage 75
 #startage 60
 #end
@@ -51150,6 +51258,7 @@ Dragon Priests can be recruited in any land fort."
 #animal
 #humanoid
 #heal
+#clearweapons
 #weapon 20
 #weapon 29
 #weapon 1685 -- Cursed Chain
@@ -51198,7 +51307,7 @@ Dragon Priests can be recruited in any land fort."
 #spr1 "magicenhanced/blue_intxisua1.tga"
 #spr2 "magicenhanced/blue_intxisua2.tga"
 #name "Intxisua"
-#descr "The Intxisua are goblins of the pyrenian mountains. They live deep in caves surrounded by great wealth, emerging for only one week a year where they will descend and take over a town until it is time to return. They are incredibly hairy beings and very strong for their size, building cromlechs and other structures on occasion. Intxisua are highly magical beings, always led by a warlock and drawing their strength from the dark of night."
+#descr "The Intxisua are goblins of the pyrenian mountains. They live deep in caves surrounded by great wealth, emerging for only one week a year where they will descend and take over a town until it is time to return. They are incredibly hairy beings with stoney skin and very strong for their size, building cromlechs and other structures on occasion. Intxisua are highly magical beings, always led by a warlock and drawing their strength from the dark of night."
 #hp 10
 #gcost 0
 #str 12 -- 15
@@ -51206,7 +51315,7 @@ Dragon Priests can be recruited in any land fort."
 #def 12 -- 15
 #ap 10 -- 13
 #size 2
-#prot 2
+#prot 7
 #mr 13
 #mor 14
 #prec 10
@@ -51228,7 +51337,7 @@ Dragon Priests can be recruited in any land fort."
 #spr1 "magicenhanced/blue_intxisuawarlock1.tga"
 #spr2 "magicenhanced/blue_intxisuawarlock2.tga"
 #name "Intxisua Warlock"
-#descr "The Intxisua are goblins of the pyrenian mountains. They live deep in caves surrounded by great wealth, emerging for only one week a year where they will descend and take over a town until it is time to return. They are incredibly hairy beings and very strong for their size, building dolmens and other structures on occasion. Intxisua are highly magical beings, always led by a warlock and drawing their strength from the dark of night."
+#descr "The Intxisua are goblins of the pyrenian mountains. They live deep in caves surrounded by great wealth, emerging for only one week a year where they will descend and take over a town until it is time to return. They are incredibly hairy beings with stoney skin and very strong for their size, building dolmens and other structures on occasion. Intxisua are highly magical beings, always led by a warlock and drawing their strength from the dark of night."
 #hp 10
 #gcost 0
 #str 12 -- 15
@@ -51236,7 +51345,7 @@ Dragon Priests can be recruited in any land fort."
 #def 12 -- 15
 #ap 10 -- 13
 #size 2
-#prot 2
+#prot 7
 #mr 13
 #mor 14
 #prec 10
@@ -51262,6 +51371,8 @@ Dragon Priests can be recruited in any land fort."
 #copystats 3599
 #copyspr 3599
 #gcost 0
+#prot 8
+#darkvision 50
 #descr "The mountains of Pyrène were once home to many giant races. The Mairuak were the most common among them, and aided the Jentilak since times immemorial. Now both the Jentilak and Basajuanak have been lost and the Mairuak are significantly less numerous than they once were, but some still linger in the mountains. The Mairu are closely connected to the earth and the mountains and many of them can draw upon the powers of the earth. While not nearly as powerful as the Jentilak were, these champions can still be almost invincible when they bring their magic to battle."
 #end
 
@@ -51269,6 +51380,8 @@ Dragon Priests can be recruited in any land fort."
 #copystats 3597
 #copyspr 3597
 #gcost 0
+#prot 8
+#darkvision 50
 #descr "The mountains of Pyrène were once home to many giant races. The Mairuak were the most common among them, and aided the Jentilak since times immemorial. Now both the Jentilak and Basajuanak have been lost and the Mairuak are significantly less numerous than they once were, but some still linger in the mountains. The Mairuak along with the Jentilak were responsible for the many dolmens and menhirs littering the landscape of the pyrenian mountains. Mairuak are tremendously strong and can lift and throw huge boulders upon their enemies."
 #end
 
@@ -51276,6 +51389,8 @@ Dragon Priests can be recruited in any land fort."
 #copystats 3598
 #copyspr 3598
 #gcost 0
+#prot 8
+#darkvision 50
 #descr "The mountains of Pyrène were once home to many giant races. The Mairuak were the most common among them, and aided the Jentilak since times immemorial. Now both the Jentilak and Basajuanak have been lost and the Mairuak are significantly less numerous than they once were, but some still linger in the mountains. The Mairuak along with the Jentilak were responsible for the many dolmens and menhirs littering the landscape of the pyrenian mountains. Mairuak are tremendously strong and can lift and throw huge boulders upon their enemies."
 #end
 
@@ -51981,9 +52096,10 @@ Dragon Priests can be recruited in any land fort."
 #def 13
 #mor 16
 #prot 8
-#weapon 643
-#weapon 21
-#weapon 1838
+#clearweapons
+#weapon 473 -- Golden Spear
+#weapon 1838 -- Eye Curse
+#weapon 21 -- Javelin
 #clearmagic
 #magicskill 1 3 -- A
 #magicskill 2 2 -- W
@@ -56668,6 +56784,7 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #gcost 0
 #mr 15
 #mor 16
+#prot 8
 #pooramphibian
 #clearweapons
 #clearmagic
@@ -59576,6 +59693,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #str 24
 #hp 44
 #prot 12
+#att 11
 #clearweapons
 #cleararmor
 #armor 20 -- iron cap
@@ -61245,7 +61363,7 @@ This Guul has recently returned from the Underworld and cannot become a Lich yet
 #spr2 "blue_dirgen/blue_abyssalonewark2.tga"
 #name "Abyssal Wark"
 #descr "Abyssal Wark are deep ones wearing armor designed and enchanted by the Thram'zu, wielding a dreadful weapon of bone and teeth designed to grapple targets and make them bleed.
-Abyssal Wark can only be recruited while Thram'zu are present."
+Abyssal Wark can only be recruited while Thram'zu Bacht or Guul are present."
 #rpcost 17
 #rcost 1
 #hp 12
@@ -62235,7 +62353,6 @@ Abyssal Pillars can only be recruited at Basalt Cities."
 #drawsize -10
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale is only recently dead and teeming with many smaller sea creatures as they devour the massive rotting carcass. During combat many of the small sea creatures will be expelled and fight for the whale. The whale will steadily decay into its next state."
 #rpcost 2
 #rcost 1
@@ -62320,7 +62437,6 @@ The whale is only recently dead and teeming with many smaller sea creatures as t
 #magicboost 53 -2
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale is only recently dead and teeming with many smaller sea creatures as they devour the massive rotting carcass. During combat many of the small sea creatures will be expelled and fight for the whale. The whale will decay into its next state come Autumn."
 #wintershape -1
 #springshape -1
@@ -62337,7 +62453,6 @@ The whale is only recently dead and teeming with many smaller sea creatures as t
 #magicboost 53 -2
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale is only recently dead and teeming with many smaller sea creatures as they devour the massive rotting carcass. During combat many of the small sea creatures will be expelled and fight for the whale. The whale will decay into its next state come Winter."
 #wintershape 8788
 #springshape -1
@@ -62354,7 +62469,6 @@ The whale is only recently dead and teeming with many smaller sea creatures as t
 #magicboost 53 -2
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale is only recently dead and teeming with many smaller sea creatures as they devour the massive rotting carcass. During combat many of the small sea creatures will be expelled and fight for the whale. The whale will decay into its next state come Spring."
 #wintershape -1
 #springshape 8790
@@ -62371,7 +62485,6 @@ The whale is only recently dead and teeming with many smaller sea creatures as t
 #magicboost 53 -2
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale is only recently dead and teeming with many smaller sea creatures as they devour the massive rotting carcass. During combat many of the small sea creatures will be expelled and fight for the whale. The whale will decay into its next state come Summer."
 #wintershape -1
 #springshape -1
@@ -62388,7 +62501,6 @@ The whale is only recently dead and teeming with many smaller sea creatures as t
 #magicboost 53 -2
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale is only recently dead and teeming with many smaller sea creatures as they devour the massive rotting carcass. During combat many of the small sea creatures will be expelled and fight for the whale. The whale will decay into its next state come Autumn."
 #wintershape -1
 #springshape -1
@@ -62404,7 +62516,6 @@ The whale is only recently dead and teeming with many smaller sea creatures as t
 #magicboost 53 -2
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale is only recently dead and teeming with many smaller sea creatures as they devour the massive rotting carcass. During combat many of the small sea creatures will be expelled and fight for the whale. The whale will decay into its next state come Winter."
 #wintershape 8789
 #springshape -1
@@ -62420,7 +62531,6 @@ The whale is only recently dead and teeming with many smaller sea creatures as t
 #magicboost 53 -2
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale is only recently dead and teeming with many smaller sea creatures as they devour the massive rotting carcass. During combat many of the small sea creatures will be expelled and fight for the whale. The whale will decay into its next state come Spring."
 #wintershape -1
 #springshape 8793
@@ -62436,7 +62546,6 @@ The whale is only recently dead and teeming with many smaller sea creatures as t
 #magicboost 53 -2
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale is only recently dead and teeming with many smaller sea creatures as they devour the massive rotting carcass. During combat many of the small sea creatures will be expelled and fight for the whale. The whale will decay into its next state come Summer."
 #wintershape -1
 #springshape -1
@@ -62453,7 +62562,6 @@ The whale is only recently dead and teeming with many smaller sea creatures as t
 #drawsize -10
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's flesh is being consumed and the carcass been colonized by a host of sea creatures. During combat a host of small sea creatures will be expelled and fight for the whale. The whale has gained some skill in the magic of Death. The whale will decay into its next state come Autumn."
 #rpcost 2
 #rcost 1
@@ -62507,7 +62615,6 @@ The whale's flesh is being consumed and the carcass been colonized by a host of 
 #copyspr 8788
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's flesh is being consumed and the carcass been colonized by a host of sea creatures. During combat a host of small sea creatures will be expelled and fight for the whale. The whale has gained some skill in the magic of Death. The whale will decay into its next state come Autumn."
 #def 4 -- -2
 #att 8 -- -2
@@ -62527,7 +62634,6 @@ The whale's flesh is being consumed and the carcass been colonized by a host of 
 #copyspr 8788
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's flesh is being consumed and the carcass been colonized by a host of sea creatures. During combat a host of small sea creatures will be expelled and fight for the whale. The whale has gained some skill in the magic of Death. The whale will decay into its next state come Winter."
 #wintershape 8796
 #autumnshape -1
@@ -62539,7 +62645,6 @@ The whale's flesh is being consumed and the carcass been colonized by a host of 
 #copyspr 8788
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's flesh is being consumed and the carcass been colonized by a host of sea creatures. During combat a host of small sea creatures will be expelled and fight for the whale. The whale has gained some skill in the magic of Death. The whale will decay into its next state come Spring."
 #springshape 8798
 #autumnshape -1
@@ -62551,7 +62656,6 @@ The whale's flesh is being consumed and the carcass been colonized by a host of 
 #copyspr 8788
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's flesh is being consumed and the carcass been colonized by a host of sea creatures. During combat a host of small sea creatures will be expelled and fight for the whale. The whale has gained some skill in the magic of Death. The whale will decay into its next state come Summer."
 #summershape 8799
 #autumnshape -1
@@ -62563,7 +62667,6 @@ The whale's flesh is being consumed and the carcass been colonized by a host of 
 #copyspr 8789
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's flesh is being consumed and the carcass been colonized by a host of sea creatures. During combat a host of small sea creatures will be expelled and fight for the whale. The whale has gained some skill in the magic of Death. The whale will decay into its next state come Winter."
 #wintershape 8797
 #autumnshape -1
@@ -62575,7 +62678,6 @@ The whale's flesh is being consumed and the carcass been colonized by a host of 
 #copyspr 8789
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's flesh is being consumed and the carcass been colonized by a host of sea creatures. During combat a host of small sea creatures will be expelled and fight for the whale. The whale has gained some skill in the magic of Death. The whale will decay into its next state come Spring."
 #springshape 8801
 #autumnshape -1
@@ -62587,7 +62689,6 @@ The whale's flesh is being consumed and the carcass been colonized by a host of 
 #copyspr 8789
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's flesh is being consumed and the carcass been colonized by a host of sea creatures. During combat a host of small sea creatures will be expelled and fight for the whale. The whale has gained some skill in the magic of Death. The whale will decay into its next state come Summer."
 #summershape 8802
 #autumnshape -1
@@ -62602,7 +62703,6 @@ The whale's flesh is being consumed and the carcass been colonized by a host of 
 #drawsize -10
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's bones have been covered in a green coat as the last of the whale is consumed. During combat the whale will be noxious to the living and a few sea creatures will emerge to fight. The whale has gained skill in the magic of Death, as well as Water and Nature. The whale will decay into its next state come Autumn."
 #rpcost 2
 #rcost 1
@@ -62654,7 +62754,6 @@ The whale's bones have been covered in a green coat as the last of the whale is 
 #copyspr 8796
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's bones have been covered in a green coat as the last of the whale is consumed. During combat the whale will be noxious to the living and a few sea creatures will emerge to fight. The whale has gained skill in the magic of Death, as well as Water and Nature. The whale will decay into its next state come Autumn."
 #def 4 -- -2
 #att 8 -- -2
@@ -62672,7 +62771,6 @@ The whale's bones have been covered in a green coat as the last of the whale is 
 #copyspr 8796
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's bones have been covered in a green coat as the last of the whale is consumed. During combat the whale will be noxious to the living and a few sea creatures will emerge to fight. The whale has gained skill in the magic of Death, as well as Water and Nature. The whale will decay into its next state come Winter."
 #wintershape 8804
 #autumnshape -1
@@ -62684,7 +62782,6 @@ The whale's bones have been covered in a green coat as the last of the whale is 
 #copyspr 8796
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's bones have been covered in a green coat as the last of the whale is consumed. During combat the whale will be noxious to the living and a few sea creatures will emerge to fight. The whale has gained skill in the magic of Death, as well as Water and Nature. The whale will decay into its next state come Spring."
 #springshape 8804
 #autumnshape -1
@@ -62696,7 +62793,6 @@ The whale's bones have been covered in a green coat as the last of the whale is 
 #copyspr 8796
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's bones have been covered in a green coat as the last of the whale is consumed. During combat the whale will be noxious to the living and a few sea creatures will emerge to fight. The whale has gained skill in the magic of Death, as well as Water and Nature. The whale will decay into its next state come Summer."
 #summershape 8804
 #autumnshape -1
@@ -62708,7 +62804,6 @@ The whale's bones have been covered in a green coat as the last of the whale is 
 #copyspr 8797
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's bones have been covered in a green coat as the last of the whale is consumed. During combat the whale will be noxious to the living and a few sea creatures will emerge to fight. The whale has gained skill in the magic of Death, as well as Water and Nature. The whale will decay into its next state come Winter."
 #wintershape 8805
 #autumnshape -1
@@ -62720,7 +62815,6 @@ The whale's bones have been covered in a green coat as the last of the whale is 
 #copyspr 8797
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's bones have been covered in a green coat as the last of the whale is consumed. During combat the whale will be noxious to the living and a few sea creatures will emerge to fight. The whale has gained skill in the magic of Death, as well as Water and Nature. The whale will decay into its next state come Spring."
 #springshape 8805
 #autumnshape -1
@@ -62732,7 +62826,6 @@ The whale's bones have been covered in a green coat as the last of the whale is 
 #copyspr 8797
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's bones have been covered in a green coat as the last of the whale is consumed. During combat the whale will be noxious to the living and a few sea creatures will emerge to fight. The whale has gained skill in the magic of Death, as well as Water and Nature. The whale will decay into its next state come Summer."
 #summershape 8805
 #autumnshape -1
@@ -62748,7 +62841,6 @@ The whale's bones have been covered in a green coat as the last of the whale is 
 #drawsize -10
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's carcass has been entirely consumed, and the whale has gained more skill in the magic of Death."
 #rpcost 2
 #rcost 1
@@ -62799,7 +62891,6 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #copyspr 8804
 #name "Whalefall Leviathan"
 #descr "Leviathan are dead, rotting sea monsters given false life by a necromancer. This leviathan of a whale has been reanimated with the magic of the Thram'zu, empowering it and giving it a deadly aura of decay that will affect anyone unfortunate enough to be next to it.
-
 The whale's carcass has been entirely consumed, and the whale has gained more skill in the magic of Death."
 #def 4 -- -2
 #att 8 -- -2
@@ -64611,6 +64702,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #incunrest 20
 #appetite 7
 #magicskill 1 2
+#eyes 14
 #end
 
 
@@ -86433,7 +86525,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #gcost 210
 #pathcost 40
 #hp 95
-#prot 7
+#prot 9
 #str 28
 #att 11
 #def 11
@@ -90011,6 +90103,11 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #humanoid
 #end
 
+#selectmonster 4023 -- Master of the Sword
+#airshield 50
+#gcost 10020
+#end
+
 #selectmonster 4026 -- Black Minotaur
 --#descr "In Asphodel every aspect of life, and death, is permeated by the dark rage of the Vengeful God. In Pangaea, white centaurs are rare and white minotaurs even more so, but in Asphodel the influence of the Vengeful God has brought about an increasing number of minotaurs blessed with black hides and a matching temper. Trained as sacred warriors they mete out the vengeance of the Awakening God. In lands free of civilization they will grow stronger, but they will weaken where men toil."
 --#slothpower 1
@@ -91578,6 +91675,21 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #enc 3
 #end
 
+#selectmonster 3320 -- MA Giant of the Lost Tribe
+#homesick 20
+#end
+
+#selectmonster 3321 -- MA King of the Lost Tribe
+#clearmagic
+#custommagic 11392 200
+#homesick 20
+#end
+
+#selectmonster 3879 -- LA King of the Lost Tribe
+#clearmagic
+#custommagic 11392 200
+#end
+
 #selectmonster 4010 -- nagasiddha hero
 #okmagicleader
 #enc 3
@@ -92556,18 +92668,27 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #selectmonster 1801  -- Fomorian Giant
 #gcost 10080
 #def 11
-#weapon 1838 -- Eye Curse
 #prot 8
+#clearweapons
+#weapon 473 -- Golden Spear
+#weapon 1838 -- Eye Curse
+#weapon 21 -- Javelin
 #end
 
 #selectmonster 1802  -- Fomorian King
+#clearweapons
+#weapon 473 -- Golden Spear
 #weapon 1838 -- Eye Curse
+#weapon 21 -- Javelin
 #def 12
 #prot 8
 #end
 
 #selectmonster 1803  -- Uncursed
+#clearweapons
+#weapon 473 -- Golden Spear
 #weapon 1838 -- Eye Curse
+#weapon 21 -- Javelin
 #prot 8
 #end
 
@@ -92575,6 +92696,10 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #def 13
 #magicskill 7 3 -- Glamour (so he can actually cast his eponymous spell)
 #prot 9
+#clearweapons
+#weapon 473 -- Golden Spear
+#weapon 197 -- Gaze of Death
+#weapon 21 -- Javelin
 #end
 
 #selectmonster 1805
@@ -92996,13 +93121,13 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 
 #selectmonster 2025  -- Shesai Anakite
 #twiceborn 7231 -- Wight Giant
-#rpcost 91
+#rpcost 73
 #holycost 1
 #end
 
 #selectmonster 2026  -- Ahiman Anakite
 #twiceborn 7231 -- Wight Giant
-#rpcost 84
+#rpcost 66
 #holycost 1
 #end
 
@@ -93018,7 +93143,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #twiceborn 7231 -- Wight Giant
 #popkill 1
 #incunrest 5
-#rpcost 62
+#rpcost 48
 #end
 
 #selectmonster 2031  -- Melqart
@@ -94844,6 +94969,7 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #selectmonster 3118  -- Mekone Elder Cyclopes
 #userestricteditem 4
 #twiceborn 7231 -- Wight Giant
+#prot 9
 #end
 
 
@@ -94855,9 +94981,25 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #reinvigoration 2
 #end
 
+#selectmonster 3135 -- Cyclops Chieftain
+#prot 8
+#gcost 10035
+#end
+
+#selectmonster 3137 -- Cyclope Hurler
+#prot 8
+#gcost 10030
+#end
+
+#selectmonster 3136 -- Cyclops Warrior
+#prot 8
+#gcost 10030
+#end
+
 #selectmonster 3138  -- Phlegra Elder Cyclopes
 #userestricteditem 4
 #twiceborn 7231 -- Wight Giant
+#prot 9
 #end
 
 #selectmonster 3139  -- Phlegran Tyrant
@@ -94869,6 +95011,10 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #descr "The Phlegran Gigantes are the descendants of the Gigantes of Mekone, who once declared war upon the gods of men. Punished for their hubris the Gigantes were cursed by a celestial decree. They have grown larger than both the giants of Jotunheim and Ashdod, but they have lost much of the discipline and skills of earlier times and their bodies show signs of the curse. The curse has also made them violent and easy to anger. Gigantes are frightening to behold with long hair and serpentine scales covering their legs, and their bodies have become resistant to heat and poison. While their Tyrants still wear armaments crafted by the Elder Cyclopes, most Gigante Warriors wear simple armor of leather and metal scales. Gigante Warriors are arrogant and proud and never take command from human-sized generals. Cost 44 RP."
 #twiceborn 7231 -- Wight Giant
 #incunrest 5 -- 10 -> 5
+#end
+
+#selectmonster 3141 -- Cyclops Shepherd
+#prot 8
 #end
 
 #selectmonster 3155 -- Colossi Weaver
@@ -94906,6 +95052,10 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #selectmonster 3167  -- Drakon Hesperidos
 #twiceborn 7245 -- Necrophidian
 #polyimmune
+#end
+
+#selectmonster 3176  -- Eurytion Herdsman
+#prot 8
 #end
 
 #selectmonster 3169  -- Kuon Argyreos
@@ -94969,11 +95119,13 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 
 #selectmonster 3224  -- Cyclope Soldier
 #descr "In earlier times the Younger Cyclopes lived pastoral lives herding mouflon sheep on the gentle slopes of the Phlegran hills, but even during these times they sometimes joined the armies of the Tyrants. They made themselves a name as skilled, albeit under-equipped warriors. When the Tyrants and Gigantes of Phlegra degenerated, became more monstrous, and finally disappeared, their control over the kingdom dwindled. In practice the human population slowly became masters of the kingdom and the Cyclopes were marginalized. With growing hubris mankind rebelled against their masters and tried to take control over the capital Telepylos. They were almost successful, but their attempt was thwarted by the Cyclopes. The Cyclope Smiths shackled under the fortress were released by the last Tyrant and the Cyclopes were rewarded with influence and power. The Younger Cyclopes were given arms of cyclopean manufacture and became a noble warrior-caste aloof from the human population. The cyclopean armors are not as splendid as the hoplite armors once used by the Gigantes of Mekone, but they are superior to most other armors. Cyclopes are known for their fondness for throwing things, large and small. In this age when they have been equipped with armaments forged by their greater kin, javelins have replaced the boulders carried by the warriors of earlier times. Cost 17 RP."
+#prot 8
 #end
 
 #selectmonster 3225  -- Cyclope
 #twiceborn 7231 -- Wight Giant
 #gcost 10115
+#prot 9
 #end
 
 #selectmonster 3226  -- Laestrygonian
@@ -94994,6 +95146,7 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 
 #selectmonster 3231  -- Elder Cyclops
 #twiceborn 7231 -- Wight Giant
+#prot 9
 #end
 
 #selectmonster 3232  -- Iron Fly
@@ -95210,7 +95363,7 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 
 #selectmonster 3464  -- Ifrit Warrior
 #holycost 2
-#rpcost 102
+#rpcost 68
 #gcost 10110
 #armor 223
 #minsizeleader 4
@@ -95301,6 +95454,41 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 
 #selectmonster 3593 -- bebryx guard
 #bodyguard 4
+#att 12
+#def 12
+#mor 13
+#gcost 10020
+#end
+
+#selectmonster 3598 -- Mairu Hurler
+#prot 8
+#gcost 10030
+#darkvision 50
+#end
+
+#selectmonster 3597 -- Mairu Warrior
+#prot 8
+#gcost 10030
+#darkvision 50
+#end
+
+#selectmonster 3599 -- Mairu Champion
+#prot 8
+#darkvision 50
+#end
+
+#selectmonster 3600 -- Basajaun
+#magicskill 9 1
+#descr "In the wild forests of Pyrène, far from any human settlements, live wild men of great stature. Older than mankind, these giants taught the first men how to toil the land and work metal. While not as skilled smiths as the Jentilak the Basajaunak are still superior to most human craftsmen. Basajaunak are solitary beings who live their lives in solitude or in married pairs. They mostly avoid contact with mankind, but they are allied with the Bekrydes and would not hesitate to help their little friends should they be attacked. Male Basajaunak are primarily skilled in earth magic. They rarely wear any clothes but their bodies are covered by dense fur. The Basajaunak are sacred to the Bekrydes."
+#end
+
+#selectmonster 3601 -- Basandere
+#magicskill 9 1
+#descr "In the wild forests of Pyrène, far from any human settlements, live wild men of great stature. Older than mankind, these giants taught the first men how to toil the land and work metal. The wild men are solitary beings who live their lives in solitude or in married pairs. The females are known as Basanderak and they share most of the traits of their husbands, but they are more skilled in fertility magic and agriculture, and less skilled craftsmen. They rarely wear any clothes and mostly cover themselves with their long tresses of hair. The Basanderak are sacred to the Bekrydes."
+#end
+
+#selectmonster 3602 -- Jentilak
+#prot 9
 #end
 
 #selectmonster 3610 -- pyrenian man at arms
@@ -95595,7 +95783,451 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #bodyguard 3
 #end
 
--- END OF NORMAL MONSTER CHANGES
+-- END OF VANILLA MONSTER CHANGES
+
+-- START OF LOW MR BUFFS
+
+
+#selectmonster 2273 -- Large Lobster
+#mr 6 -- 4 -> 6
+#end
+
+#selectmonster 2857 -- Fish
+#mr 6 -- 4 -> 6
+#end
+
+#selectmonster 2858 -- Large Fish
+#mr 6 -- 4 -> 6
+#end
+
+#selectmonster 3657 -- Asp
+#mr 6 -- 4 -> 6
+#end
+
+#selectmonster 8010 -- Small Fish
+#mr 6 -- 4 -> 6
+#end
+
+#selectmonster 361 -- Vine Man
+#mr 6 -- 5 -> 6
+#end
+
+#selectmonster 362 -- Vine Ogre
+#mr 6 -- 5 -> 6
+#end
+
+#selectmonster 410 -- Giant Rat
+#mr 6 -- 5 -> 6
+#end
+
+#selectmonster 425 -- Shambler Thrall
+#mr 6 -- 5 -> 6
+#end
+
+#selectmonster 517 -- Black Hawk
+#mr 6 -- 5 -> 6
+#end
+
+#selectmonster 549 -- Boar
+#mr 6 -- 5 -> 6
+#end
+
+#selectmonster 815 -- Small Shark
+#mr 6 -- 5 -> 6
+#end
+
+#selectmonster 1007 -- Mad Deep One
+#mr 6 -- 5 -> 6
+#end
+
+#selectmonster 1566 -- Mad One
+#mr 6 -- 5 -> 6
+#end
+
+#selectmonster 2153 -- War Dog
+#mr 6 -- 5 -> 6
+#end
+
+#selectmonster 2227 -- Goat
+#mr 6 -- 5 -> 6
+#end
+
+#selectmonster 2228 -- Deer
+#mr 6 -- 5 -> 6
+#end
+
+#selectmonster 2976 -- Algae Man
+#mr 6 -- 5 -> 6
+#end
+
+#selectmonster 3371 -- Falcon
+#mr 6 -- 5 -> 6
+#end
+
+#selectmonster 7580 -- Kelp Man
+#mr 6 -- 5 -> 6
+#end
+
+#selectmonster 4 -- Serpent
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 284 -- Wolf
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 628 -- Great Lion
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 642 -- Giant Lobster
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 694 -- Great Bear
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 782 -- Giant Spider
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 884 -- Great Spider
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 924 -- Iron Pig
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 962 -- Madman
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 1084 -- Moose
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 1140 -- Tiger
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 1179 -- Serpent
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 1359 -- Jaguar Toad
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 1364 -- Jade Lizard
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 1380 -- Great Hawk
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 1560 -- Dog
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 1569 -- Mad Triton
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 1910 -- Monster Boar
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 2133 -- Lioness
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 2136 -- Great Boar
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 2185 -- Crocodile
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 2225 -- Fire Ant
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 2226 -- Killer Mantis
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 2306 -- War Lion
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 2513 -- Cave Spider
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 3009 -- Buffalo
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 3142 -- Great Mouflon
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 3530 -- Great Mouflon
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 3538 -- Camel
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 3547 -- Tiger
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 3548 -- Armored Tiger
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 3552 -- Armored Moose
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 4105 -- Ram
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 6674 -- Barometz
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 6831 -- Bison
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 6903 -- Mammoth
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7021 -- Vulture
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7121 -- Bird Scout
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7342 -- Lesser Hunter Spider
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7436 -- Lioness
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7442 -- Polar Bear
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7512 -- Carnivorous Plant
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7529 -- Howler Monkey
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7546 -- Winged Ant
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7581 -- Kelp Hulk
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7621 -- Fire Ant
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7622 -- Killer Mantis
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7623 -- Winged Ant
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7760 -- Sacred Lion
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7761 -- Sacred Boar
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7762 -- Sacred Wolf
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7763 -- Sacred Tiger
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7828 -- Cat
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7829 -- Rabbit
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7830 -- Rat
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7839 -- Raven
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7840 -- Frog
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 7975 -- Mosquito Cloud
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 8015 -- Ostrich
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 8505 -- Divine Cattle
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 9046 -- War Horse
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 9090 -- Mosquito Cloud
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 9091 -- Mosquito
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 9092 -- Mosquito
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 9093 -- Mosquito Cloud
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 9094 -- Mosquito Cloud
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 9164 -- Cataphracted Steppe Horse
+#mr 7 -- 5 -> 7
+#end
+
+#selectmonster 1062 -- Sea Stag
+#mr 7 -- 6 -> 7
+#end
+
+#selectmonster 1063 -- Leocampus
+#mr 7 -- 6 -> 7
+#end
+
+#selectmonster 1064 -- Sea Dog
+#mr 7 -- 6 -> 7
+#end
+
+#selectmonster 1567 -- Mad Merman
+#mr 7 -- 6 -> 7
+#end
+
+#selectmonster 1568 -- Mad Merman
+#mr 7 -- 6 -> 7
+#end
+
+#selectmonster 2398 -- Elephant
+#mr 7 -- 6 -> 7
+#end
+
+#selectmonster 3549 -- Sacred Tiger
+#mr 7 -- 6 -> 7
+#end
+
+#selectmonster 6713 -- Irukandji
+#mr 7 -- 6 -> 7
+#end
+
+#selectmonster 7444 -- Orca
+#mr 7 -- 6 -> 7
+#end
+
+#selectmonster 8030 -- Fighting Fish
+#mr 7 -- 6 -> 7
+#end
+
+#selectmonster 3577 -- Steppe Horse
+#mr 8 -- 6 -> 8
+#end
+
+#selectmonster 3578 -- Armored Steppe Horse
+#mr 8 -- 6 -> 8
+#end
+
+#selectmonster 3579 -- Armored Steppe Horse
+#mr 8 -- 6 -> 8
+#end
+
+#selectmonster 578 -- Bog Beast
+#mr 8 -- 7 -> 8
+#end
+
+#selectmonster 1022 -- Thrall
+#mr 8 -- 7 -> 8
+#end
+
+#selectmonster 1358 -- Monster Toad
+#mr 8 -- 7 -> 8
+#end
+
+#selectmonster 2512 -- Cave Cow
+#mr 8 -- 7 -> 8
+#end
+
+#selectmonster 2526 -- Cave Grub
+#mr 8 -- 7 -> 8
+#end
+
+#selectmonster 3327 -- Strange Bird
+#mr 8 -- 7 -> 8
+#end
+
+#selectmonster 7558 -- Mud Man
+#mr 8 -- 7 -> 8
+#end
+
+#selectmonster 7852 -- Sacred Temple Toad
+#mr 8 -- 7 -> 8
+#end
+
+#selectmonster 9649 -- Jerboa
+#mr 8 -- 7 -> 8
+#end
+
+
+
+
+-- END OF LOW MR BUFFS
 
 
 -- START OF THE ARMORENINGING
@@ -115154,7 +115786,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #newsite 2336 -- Sawaiiki Summons
 #clear
-#name "Sawaiiki Summons"
+#name "MA Sawaiiki Summons"
 #rarity 5
 #level 0
 #path 2 -- water
@@ -115175,7 +115807,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #newsite 2337 -- Sawaiiki Heroes
 #clear
-#name "Sawaiiki Heroes"
+#name "MA Sawaiiki Heroes"
 #rarity 5
 #level 0
 #path 9
@@ -115188,7 +115820,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #newsite 2338 -- Alchera Summons
 #clear
-#name "Alchera Summons"
+#name "EA Alchera Summons"
 #rarity 5
 #level 0
 #path 7 -- glamour
@@ -115209,7 +115841,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #newsite 2339 -- Alchera Heroes
 #clear
-#name "Alchera Heroes"
+#name "EA Alchera Heroes"
 #rarity 5
 #level 0
 #path 9
@@ -115222,7 +115854,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #newsite 2340 -- Muspelheim Summons
 #clear
-#name "Muspelheim Summons"
+#name "EA Muspelheim Summons"
 #rarity 5
 #level 0
 #path 0 -- glamour
@@ -115239,7 +115871,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #newsite 2341 -- Muspelheim Heroes
 #clear
-#name "Muspelheim Heroes"
+#name "EA Muspelheim Heroes"
 #rarity 5
 #level 0
 #path 9
@@ -122489,7 +123121,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #selectsite 756 -- Dragon Rune
-#summonlvl3 579  -- Ice Drake
+#gems 0 1
 #end
 
 #selectsite 945 -- Ivy Grove
@@ -124163,8 +124795,8 @@ Priests: Weak. Most mages are priests and some are Heretics."
 #hero1 6701
 #hero2 6702
 #hero3 6703
-#futuresite "Alchera Summons"
-#futuresite "Alchera Heroes"
+#futuresite "EA Alchera Summons"
+#futuresite "EA Alchera Heroes"
 #startsite "Kata Tjuta"
 #startsite "Forest of Tanematahuta"
 #fortera 1
@@ -124286,8 +124918,8 @@ Priests: Powerful, easily recruitable, can perform blood sacrifices. Priests of 
 #idealcold -1
 #coastnation
 #clearsites
-#futuresite "Sawaiiki Summons"
-#futuresite "Sawaiiki Heroes"
+#futuresite "MA Sawaiiki Summons"
+#futuresite "MA Sawaiiki Heroes"
 #startsite "The Green Cliff"
 #startsite "Soul's Leap"
 
@@ -125930,6 +126562,7 @@ Priests: Powerful, can perform blood sacrifices"
 #uwbuild 1
 #cheapgod20 8446 -- Pillar of Flame
 #addgod 8418 -- Peacock Angel
+#addgod 509 -- Arch Seraph
 #futuresite "EA Caelum Summons"
 #futuresite "Yazatas"
 #futuresite "Daevas"
@@ -126159,8 +126792,8 @@ Priests: Powerful, can perform blood sacrifices"
 #hero2 8671 -- Surtr
 #uwbuild 1
 #futuresite "Rift of Muspel"
-#futuresite "Muspelheim Summons"
-#futuresite "Muspelheim Heroes"
+#futuresite "EA Muspelheim Summons"
+#futuresite "EA Muspelheim Heroes"
 #end
 
 #selectnation 32
@@ -128213,7 +128846,7 @@ Bless bonuses: Poison Resistance +10"
 #startscout 56  -- Royal Forester
 #startunittype1 62  -- Longspear
 #startunitnbrs1 20
-#startunittype2 59  -- Longbowman
+#startunittype2 2455  -- Longbowman
 #startunitnbrs2 30
 
 #futuresite "LA Man Summons"
@@ -128975,8 +129608,8 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #path 1 -1
 #pathlevel 0 3
 #pathlevel 1 0
-#damage 1004 -- 7+
-#aoe 1000 -- 3+
+#damage 1006 -- 9+
+#aoe 1001 -- 4+
 #fatiguecost 30
 #precision 5
 #nextspell 3883 -- Heated Water cloud
@@ -129038,10 +129671,11 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #researchlevel 5
 #path 0 0
 #pathlevel 0 4
-#nreff 503
+#nreff 1001 -- 5+
 #precision 2
-#fatiguecost 50
-#nextspell "Large Area Heat Shock"
+#fatiguecost 40
+#casttime 100
+--#nextspell "Large Area Heat Shock"
 #end
 
 #selectspell 2010
@@ -129233,9 +129867,9 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #researchlevel 4
 #pathlevel 0 2
 #range 30
-#aoe 1002
+#aoe 1003
 #damage 35
-#fatiguecost 30
+#fatiguecost 20
 #spec 537415808
 #nextingeo 16  -- Highlands
 #end
@@ -129350,9 +129984,9 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #path 0 1
 #pathlevel 0 2
 #aoe 1
-#damage 1007
-#fatiguecost 30
-#range 25
+#damage 1009
+#fatiguecost 20
+#range 35
 #sound 23
 #explspr 10041
 #spec 1152921505186205824  -- Ignore Shields, Use UW Only, AN, MR Neg, No effect on lifeless or undead, Extra effect on Damage
@@ -129486,6 +130120,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #name "Forked Lightning"
 #descr "The caster calls a bolt of lightning from the heavens. Where the bolt lands lightning will strike a nearby unit and continue to travel to other nearby units until it eventually dissipates."
 #researchlevel 7
+#damage 1015 -- 17+
 #fatiguecost 20
 #nextspell 2044
 #spec 18560  -- AN, Shock, Ignore shields
@@ -129583,7 +130218,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 2055
 #name "Direct the Waves"
-#descr "This spell allows the caster to create a magical water current that transports them across the sea at great speed. This powerful stream of water will take the caster to a distant sea province, however it does not allow travel across land. Up to three provinces can be traversed in this manner, and it can deliver the caster into enemy held lands. This spell can only be cast underwater and must target an underwater province."
+--#descr "This spell allows the caster to create a magical water current that transports them across the sea at great speed. This powerful stream of water will take the caster to a distant sea province, however it does not allow travel across land. Up to three provinces can be traversed in this manner, and it can deliver the caster into enemy held lands. This spell can only be cast underwater and must target an underwater province."
+#descr "This spell allows the caster to create a magical water current that transports them across the sea at great speed. This powerful stream of water will take the caster to a distant sea province. Up to three provinces can be traversed in this manner, and it can deliver the caster into enemy held lands. This spell can only be cast underwater and must target an underwater province."
 #path 0 2
 #school 5
 #researchlevel 4
@@ -129591,7 +130227,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #effect 10095
 #fatiguecost 300
 #spec 41943040  -- UW Only
-#nolandtrace 1
+--#nolandtrace 1
 #provrange 3
 #end
 
@@ -129668,7 +130304,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #researchlevel 3
 #path 0 2
 #path 1 1
-#nreff 503 -- 3+1/2
+#nreff 505 -- 5+1/2
 #damage 1015
 #flightspr 10068
 #sound 21
@@ -129763,7 +130399,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #name "Water of Lethe"
 #descr "The caster releases a torrent of water drawn from the frigid waters of Lethe, the River of Oblivion. The water will cause those it strikes to lose their sense and stand dazed for a short while. Some may lose their minds forever when struck by the dark waters. Armor will somewhat protect from the effects of the water, whilst the effects can be resisted by those of strong mind."
 #path 1 5
+#pathlevel 0 1
 #pathlevel 1 1
+#damage 1006 -- 7+
+#aoe 1003 -- 4+
 #researchlevel 4
 #spec 576  -- AP, Cold
 #nextspell 2071
@@ -129941,7 +130580,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #nreff 1
 #damage 1048576  -- Astral Weapons
 #aoe 662  -- 5% of battlefield
-#spec 4210688  -- Friendlies only, ignores shields
+#spec 12599296  -- Friendlies only, ignores shields, uwok
 #end
 
 #selectspell 2089
@@ -129958,7 +130597,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #effect 10
 #aoe 666
 #range 0
-#spec 4210688  -- Friendlies only, ignores shields
+#spec 12599296  -- Friendlies only, ignores shields, uwok
 #damage 524288  -- Weapons of Sharpness
 #explspr 10226
 #sound 39
@@ -129975,7 +130614,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #path 1 7
 #pathlevel 1 1
 #fatiguecost 30
-#aoe 2001 -- 5+2
+#aoe 2004 -- 8+2
 #end
 
 
@@ -130063,7 +130702,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #researchlevel 4
 #casttime 100
 #school 1
-#aoe 2001 -- 3+2
+#aoe 3003 -- 6+3
 #nreff 1
 #range 5015 -- 20+5
 #flightspr -1
@@ -130156,7 +130795,8 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #school 2
 #path 0 2
 #aoe 2001 -- 5+2
-#fatiguecost 50
+#damage 2
+#fatiguecost 20
 #explspr 10119  -- Water Strike
 #onlygeosrc 4096  -- Cave
 #end
@@ -130257,7 +130897,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #researchlevel 6
 #path 0 3
 #pathlevel 0 4
-#fatiguecost 1200
+#fatiguecost 1000
 #effect 10021
 #damage 7566
 #nreff 1
@@ -130270,7 +130910,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #school 3  -- Construction
 #researchlevel 6
 #path 0 3
-#pathlevel 0 3
+#pathlevel 0 2
 #fatiguecost 600
 #effect 10001
 #damage 7567
@@ -130637,7 +131277,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #name "Falling Rocks"
 #descr "The caster causes several large chunks of stone from the ceiling to collapse onto a group of enemies. The rocks will be deadly to those they strike, however a nimble foe may be able to escape harm. This spell can only be cast in a cave."
 #path 0 3
-#aoe 1002
+#aoe 1003 -- 6+
 #damage 20
 #spec 3145792  -- Def Negates
 #sound 17  -- Earth spell
@@ -131257,7 +131897,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 3
 #pathlevel 1 1
 #effect 10081
-#damage 208  -- Grave Curse
+#damage 208 -- Ench8 -- Empty Graves
 #spec 0
 #nreff 1
 #fatiguecost 9000
@@ -138518,7 +139158,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #pathlevel 0 2
 #path 1 7
 #pathlevel 1 2
-#fatiguecost 2000
+#fatiguecost 2500
 #effect 10021
 #nreff 1
 #damage 7662
@@ -150807,7 +151447,8 @@ All effects scale with friendly Dominion."
 #pathlevel 0 4
 #fatiguecost 40
 #damage 999
-#spec 1188950301625831584  -- Fire, MR Negates, AN, Ignore Shields, Internal Damage, Next Effect on Damage
+--#spec 1188950301625831584 -- MRN, Fire, MR Negates, AN, Ignore Shields, Internal Damage, Next Effect on Damage
+#spec 1188967893811871904 --MRNH, Fire, MR Negates, AN, Ignore Shields, Internal Damage, Next Effect on Damage
 #end
 
 #selectspell 3763
@@ -150867,7 +151508,8 @@ All effects scale with friendly Dominion."
 #nreff 1
 #damage 50
 #fatiguecost 40
-#nextspell "Large Area Heat Shock"
+#casttime 100
+#nextspell 107 -- Area Fire
 #nogeosrc 4096  -- Cannot cast in Caves
 #end
 
@@ -150990,7 +151632,7 @@ All effects scale with friendly Dominion."
 #pathlevel 0 2
 #aoe 2001 -- 5+2
 #damage 35
-#fatiguecost 40
+#fatiguecost 20
 #range 30
 #explspr 10165
 #spec 537399424
@@ -152088,7 +152730,8 @@ Underwater: Targets must resist the effects of the spell a second time with an e
 #effect 2 -- Damage
 #damage 5
 #flightspr -1
-#spec 17221816448 -- UWOK, UWonly, AN, MRN, false damage
+#casttime 75
+#spec 17222078592 -- UWOK, UWonly, AN, MRN, false damage, enemy only
 #nextspell 3866
 #end
 
@@ -152149,6 +152792,7 @@ Underwater: Targets must resist the effects of the spell a second time with an e
 #copyspell "Minor Area Shock"
 #name "Electric Shock"
 #aoe 3
+#damage 2
 #end
 
 #selectspell 3873 -- Electrify Current, 2A
@@ -152190,7 +152834,7 @@ Underwater: Targets must resist the effects of the spell a second time with an e
 #path 1 0 -- Fire
 #pathlevel 1 1
 #aoe 1001 -- 4+1
-#damage 1000 -- 3+1
+#damage 1003 -- 6+1
 #fatiguecost 20
 #range 30
 #sound 23
@@ -152640,7 +153284,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #pathlevel 1 0
 #effect 11
 #damage 2
-#aoe 1
+#aoe 1002
 #precision 100
 #range 100
 #fatiguecost 10
@@ -152675,7 +153319,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #pathlevel 1 1
 #aoe 2004 -- 8+2
 #precision 10
-#damage 13
+#damage 15
 #flightspr 10026 -- impacts instantly for some reason? may investigate if it is an issue
 #explspr 10106
 --#spec 1152921521786982496 -- fire, mrn, ap, extra effect on damage, enemy only
@@ -154754,7 +155398,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #path 0 3 -- E
 #effect 10082
 #damage 278 -- Ench78 -- Harrespil
-#fatiguecost 2500
+#fatiguecost 1000
 #nreff 1
 #end
 
@@ -154770,7 +155414,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #nreff 1
 #effect 10083
 #damage -1
-#fatiguecost 2500
+#fatiguecost 1000
 #nextspell 4069
 #restricted 14 -- EA Pyrene
 #end
@@ -155107,7 +155751,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #selectspell 4093 -- Intxisua
 #copyspell 1406 -- Storm Demon
 #name "Call the Intxisua"
-#descr "The caster calls into the home of the Intxisua to request their service in exchange for gems. The Intxisua are goblins of the pyrenian mountains. They live deep in caves surrounded by great wealth, emerging for only one week a year where they will descend and take over a town until it is time to return. They are incredibly hairy beings and very strong for their size, building cromlechs and other structures on occasion. Intxisua are highly magical beings, always led by a warlock and drawing their strength from the dark of night."
+#descr "The caster calls into the home of the Intxisua to request their service in exchange for gems. The Intxisua are goblins of the pyrenian mountains. They live deep in caves surrounded by great wealth, emerging for only one week a year where they will descend and take over a town until it is time to return. They are incredibly hairy beings with stoney skin and very strong for their size, building cromlechs and other structures on occasion. Intxisua are highly magical beings, always led by a warlock and drawing their strength from the dark of night."
 #school 0
 #researchlevel 4
 #fatiguecost 2200
@@ -156422,7 +157066,7 @@ Applies the effects of Holy Avenger to the caster"
 #nreff 1
 #range 10005 -- 25+10
 --#aoe 1004
-#aoe 1001 -- 3+
+#aoe 2002 -- 6+2
 --#aoe 2002
 #effect 2
 #damage 1
@@ -156461,7 +157105,7 @@ Applies the effects of Holy Avenger to the caster"
 #school 5 -- thaum
 #researchlevel 5
 #path 0 7
-#pathlevel 0 3
+#pathlevel 0 2
 #path 1 1
 #pathlevel 1 1
 #precision 100
@@ -157634,7 +158278,7 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #pathlevel 0 2
 #path 1 7 -- G
 #pathlevel 1 1
-#aoe 2000 -- 4+2
+#aoe 2004 -- 8+2
 #end
 
 #selectspell 4275
@@ -157967,9 +158611,9 @@ This spell can only be cast in a deep water province."
 #pathlevel 0 2
 #path 1 5
 #pathlevel 1 1
-#fatiguecost 60
-#aoe 1001 -- 3+
-#damage 1002 -- 4+
+#fatiguecost 40
+#aoe 1003 -- 5+
+#damage 1005 -- 7+
 #precision 5
 #nextspell 4295
 #end
@@ -158465,7 +159109,89 @@ This spell can only be cast in a deep water province."
 #restricted 127 -- LA R'lyeh
 #end
 
+#selectspell 4327 -- Rise of Mountain Giants
+#copyspell 779 -- Personal Stoneskin
+#name "Rise of Mountain Giants"
+#descr "The caster draws upon the powers of the mountains and earth, taking on a stoney skin and increasing in size, making them durable like rock."
+#details "Size +1, HP +30%, Str +3, Def -1.
+Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Also incurs susceptibility to Cold 5."
+#researchlevel 0
+#damage 2147549184 -- Stoneskin + Enlarge
+#restricted 14 -- EA Pyrene
+#end
 
+#selectspell 4328 -- Steal Breath
+#copyspell 1275 -- Steal Breath
+#name "Steal Breath"
+#descr "The victims of this spell will have their breath stolen from him and their chest crushed as the air leaves their body. Recovering the breath will require quite an effort and the leave the victim exhausted."
+--#details ""
+#aoe 1
+#spec 1152921505144262784 -- AN, MRN, Ignore Shields, No undead, No inanim, Next effect on damage
+#fatiguecost 10
+#end
+
+#selectspell 4329 -- Stealth Breath nextspell
+#copyspell 241 -- Chestwound
+#name "Chest Wound"
+#descr "."
+#spec 17592186060928
+#end
+
+#selectspell 4330 -- Poison Darts
+#copyspell 733 -- Storm of Thorns
+#name "Poison Darts"
+#descr "The caster shoots a handful of enchanted darts against his enemies. The darts will not cause serious damage, but are coated in serpent venom that can hurt and possibly kill a human."
+#spec 1152921779484753984 -- AP, Piercing, Next effect on damage
+#fatiguecost 20
+#flyspr 403 1
+#effect 109 -- Blow dart
+#damage 9
+#range 5025 -- 30+5
+#casttime 75
+#nreff 1004 -- 5+
+#path 0 6
+#pathlevel 0 1
+#school 2
+#aoe 0
+#researchlevel 3
+#nextspell 0
+#end
+
+#selectspell 4331 -- Stealth Breath nextspell
+#copyspell 8 -- Area Weak Poison
+#name "Poison Damage"
+#descr "."
+#aoe 0
+#damage 10
+#end
+
+#selectspell 4332 -- Poison Arrows
+#copyspell 733 -- Storm of Thorns
+#name "Poison Arrows"
+#descr "The caster shoots a few enchanted arrows against his enemies. The arrows are coated in serpent venom and anyone surviving the initial shot will become poisoned."
+#spec 1152921779484753920 -- Piercing, Next effect on damage
+#fatiguecost 20
+#flyspr 419 1 -- Vine Arrow
+#effect 2
+#damage 1014 -- 16+
+#range 5025 -- 30+5
+#casttime 75
+#nreff 1008 -- 10+
+#path 0 6
+#pathlevel 0 2
+#school 2
+#aoe 0
+#researchlevel 5
+#nextspell 0
+#end
+
+#selectspell 4333 -- Stealth Breath nextspell
+#copyspell 8 -- Area Weak Poison
+#name "Poison Damage"
+#descr "."
+#aoe 0
+#damage 10
+#end
 
 
 
@@ -158814,10 +159540,29 @@ This spell can only be cast in a deep water province."
 #selectspell 246 -- Freezing touch
 #range 2
 #spec 8389248 -- +UWOK
+#damage 1011 -- 12+
 #end
 
 #selectspell 247 -- Flying Shards
-#damage 2007 -- 9+2
+#damage 1010 -- 11+1
+#nreff 
+#end
+
+#selectspell 249 -- Hand of Dust
+#range 2
+#end
+
+#selectspell 250 -- Poison Touch
+#range 2
+#damage 5010 -- 15+5
+#end
+
+#selectspell 251 -- Sleep Ray
+#range 2
+#end
+
+#selectspell 1395 -- Leeching Touch
+#range 2
 #end
 
 #selectspell 633 -- Burning Hands
@@ -158832,8 +159577,42 @@ This spell can only be cast in a deep water province."
 #range 2
 #end
 
+#selectspell 635 -- Flame Bolt
+#pathlevel 0 1
+#casttime 100
+#damage 3012 -- 15+++
+#end
+
+#selectspell 664 -- Magma Bolts
+#nreff 1004 -- 5+
+#end
+
+#selectspell 763 -- Hand of Death
+#range 2
+#end
+
+#selectspell 761 -- Fists of Iron
+#range 2
+#end
+
+#selectspell 775 -- Gooey Water
+#aoe 1004 -- 6+
+#end
+
 #selectspell 637 -- Gust of Winds
-#aoe 1002 -- 3+
+#aoe 1004 -- 5+
+#aispellmod -90
+#end
+
+#selectspell 660 -- Storm Wind
+#aoe 2006 -- 10++
+#aispellmod -90
+#end
+
+#selectspell 1276 -- Calm Emotions
+#aoe 1003 -- 3+
+#range 25
+#spec 8802304 -- MRN, ignores shields, no mindless, only enemy
 #end
 
 #selectspell 253 -- Monster Boar
@@ -159271,6 +160050,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #aoe 5005 -- 10+5
 #range 20
 #researchlevel 2
+#ainocast 1
 #end
 
 #selectspell 461 -- Parting of the Soul
@@ -159718,10 +160498,28 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 638 -- Slime UWOK
 #spec 8409088 -- UWOK, Ignore shields, MRN
+#nreff 1002 -- 3+
+#range 5035 -- 40+5
+#fatiguecost 10
+#end
+
+#selectspell 1260 -- Dessication
+#fatiguecost 10
+#pathlevel 0 1
 #end
 
 #selectspell 639 -- Water Strike damage increase
-#damage 2013 -- 15++
+#damage 2014 -- 16++
+#precision 6
+#end
+
+#selectspell 640 -- Cold Bolt
+#damage 1014 -- 16+
+#end
+
+#selectspell 1275 -- Steal Breath
+#researchlevel -1
+#school -1
 #end
 
 #selectspell 643 -- Astral Projection
@@ -159745,6 +160543,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 1273 -- Bonds of Fire
 #aoe 1
+#precision 8
+#range 25
 #end
 
 #selectspell 648 -- Fire Blast
@@ -159762,12 +160562,53 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #precision 5
 #end
 
+#selectspell 655 -- Solar Rays
+#damage 1012
+#end
+
+#selectspell 656 -- Web
+#fatiguecost 10
+#end
+
 #selectspell 657 -- Ephemeral Bolt
-#damage 1008 -- 10+ from 4+
+#damage 1011 -- 13+ from 4+
+#end
+
+#selectspell 5 -- Thunder Shock
+#aoe 8
+#damage 3
+#end
+
+#selectspell 677 -- Thunder Strike
+#clear -- Remove Inaccurate
+#name "Thunder Strike"
+#descr "A thunderbolt strikes the battlefield. The mage can make the thunderbolt strike very far away. Even if it misses, the shock wave is powerful enough to severely stun and damage anyone nearby."
+#effect 2
+#damage 2020
+#spec 2176
+#range 100
+#casttime 75
+#aoe 1
+#precision -4
+#fatiguecost 40
+#researchlevel 4
+#school 2
+#path 0 1
+#pathlevel 0 3
+#explspr 10241 -- Thick Lightning
+#flightspr -1
+#strikesound 27
+#nextspell 5
+#end
+
+#selectspell 1 -- lightning bolt shock
+#effect 2 -- damage
+#damage 2
 #end
 
 #selectspell 652 -- lightning bolt
 #spec 8589953152 -- Ignore Shield, Shock, AN, Affects both Rider and Mount (not UWOK)
+#damage 1015 -- 17+
 #end
 
 #selectspell 661 -- Rain
@@ -159792,6 +160633,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 685 -- Ephemeral Blast
 #damage 2003 -- 9++ from 7++
 --#aoe 1002 -- 5+
+#spec 17188524160 -- Enemy only
 #end
 
 #selectspell 686 -- Ghost Wolves
@@ -159809,6 +160651,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 663 -- Acid Bolt
 #precision 5
 #damage 2016
+#fatiguecost 20
 #end
 
 #selectspell 670 -- false Fire - replaced by new spell
@@ -159817,6 +160660,17 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 671 -- Elf Shot
 #fatiguecost 5
+#spec 266368 -- MRN, AN, enemy only
+#end
+
+#selectspell 669 -- Poison Darts
+#school -1
+#researchlevel -1
+#end
+
+#selectspell 702 -- Poison Arrows
+#school -1
+#researchlevel -1
 #end
 
 #selectspell 676 -- Breath of the Desert
@@ -159837,10 +160691,13 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 681 -- Nether Bolt
 #precision 5
+#fatiguecost 10
+#damage 2018 -- 20++
 #end
 
 #selectspell 682 -- Bolt of Unlife
 #precision 5
+#spec 17592195104896 -- MRN -> MRNH
 #end
 
 #selectspell 683 -- Bane Fire Dart
@@ -159849,6 +160706,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 --#precision 5
 #nreff 2001 -- 3+2
 #damage 2018 -- 20++
+#fatiguecost 10
 #end
 
 #selectspell 684 -- Breath of the Dragon
@@ -159856,13 +160714,16 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 687 -- Falling Fires
---#aoe 1002 -- 5+
---#damage 2014 -- 20++
+#damage 20
 #end
 
 #selectspell 694 -- Falling Frost
---#aoe 2002 -- 8+2
---#damage 1010 -- 11+
+#damage 1009 -- 12+
+#end
+
+#selectspell 692 -- Hidden Flame
+#pathlevel 1 2
+#damage 3019 -- 25+++
 #end
 
 #selectspell 696 -- Earthquake
@@ -159876,10 +160737,30 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 699 -- Stellar Cascades
 #nogeosrc 4096  -- Cannot cast in Caves
+#aoe 1006 -- 8+
 #end
 
+
+
+#selectspell 700 -- Astral Geyser
+#aoe 10
+#damage 3
+#effect 2
+#spec 8392832 -- AN, MRN, UWOK
+#end
+
+#selectspell 83 -- Astral Geyser Blast
+#effect 601
+#damage 261
+#aoe 1
+#spec 8523904 -- AN, MRN, no mindless, UWOK
+#end
+
+
+
+
 #selectspell 712 -- Astral Fires -- single spell with full AoE to reduce friendly fire from AI spellcasting, and path reduction
-#aoe 1003 -- 6+
+#aoe 1005 -- 8+
 #spec 8392832 -- AN, MRN, UWOK
 #pathlevel 0 3
 #nextspell 0
@@ -159910,7 +160791,21 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 723 -- Ice Strike
-#precision 5
+#copyspell 694 -- Falling Frost
+#name "Ice Strike"
+#descr "The caster conjures ice spikes above their enemies to fall upon and impale them. Cold resistance offers no protection against this spell, but heavy armor does."
+#aoe 0
+#path 0 2
+#pathlevel 0 2
+#pathlevel 1 0
+#researchlevel 7
+#nreff 3004 -- 10+3
+#damage 18
+#nogeosrc -1
+#spec 564324342972480 -- Piercing, Slashing, AP, Ignore shields, More likely to hit head
+#flightspr 10068
+#explspr 10088
+#nextspell 0
 #end
 
 #selectspell 729 -- N Nether Darts
@@ -159928,6 +160823,16 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 741 -- Second Sun
 #descr "The caster creates a huge ball of fire in the sky. This Second Sun will always shine, day and night, resulting in severe effects across the entire world. Provinces will become hotter and drier every turn until the Second Sun is destroyed. Abysian forts will produce extra income whilst the spell remains active. This enchantment lasts until someone dispels it or the caster dies."
 #details "Each turn increases heat scales throughout the world. Death scales are also increased, but at a slower rate. Abysian forts produce 50% more income per month."
+#end
+
+#selectspell 740 -- Pillar of Fire
+#fatiguecost 10
+#precision 6
+#end
+
+#selectspell 746 -- Vortex of Unlife
+#pathlevel 0 4
+#damage 1016 -- 20+
 #end
 
 #selectspell 748 -- Flames from the Sky
@@ -159982,6 +160887,9 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 1117 -- False Fetters
 #details "MR +DRN vs 20 to get free"
+#range 25
+#precision 5
+#spec 8671232 -- MRN, Ignore shields, UWOK, enemy only
 #end
 
 #selectspell 804 -- Combustion
@@ -159990,8 +160898,13 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 805 -- Lacerating Winds
 #spec 1099514773504 -- Non-magical, defense negates, slashing - Unarmored spiritform beings don't need this in their life
-#damage 1007 -- 9+ -- Damage buffed to compensate
-#aoe 2002 -- 6++ -- AOE buffed to compensate
+#damage 1007 -- 12+ -- Damage buffed to compensate
+#aoe 2008 -- 12++ -- AOE buffed to compensate
+#end
+
+#selectspell 814 -- Destruction
+#fatiguecost 20
+#aoe 2004 -- 10++
 #end
 
 #selectspell 819 -- Group Barkskin
@@ -160000,16 +160913,21 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 822 -- Shrink
-#range 5010 -- 20+5
-#aoe 1000 -- 2+1
+#range 5015 -- 25+5
+#aoe 1002 -- 4+1
+#end
+
+#selectspell 1309 -- Wildness
+#pathlevel 0 2
+#aoe 1001 -- 3+
 #end
 
 #selectspell 800 -- Torpor
-#aoe 1000 -- 2+1
+#aoe 1002 -- 4+1
 #end
 
 #selectspell 1328 -- Confusion
-#aoe 1000 -- 2+1
+#aoe 1001 -- 3+1
 #end
 
 #selectspell 1292 -- Luck
@@ -160028,8 +160946,16 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #aoe 1003 -- 4+
 #end
 
+#selectspell 780 -- Armor of Achilles
+#aoe 1002 -- 3+
+#range 25
+#fatiguecost 20
+#end
+
 #selectspell 782 -- Weakness
-#aoe 1
+#aoe 1002 -- 3+
+#range 30
+#fatiguecost 10
 #end
 
 #selectspell 803 -- Group Blur
@@ -160037,8 +160963,12 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #fatiguecost 30 -- 40 -> 30
 #end
 
+#selectspell 827 -- Incinerate
+#fatiguecost 10
+#end
+
 #selectspell 841 -- Enfeeble
-#aoe 2004 -- 8++
+#aoe 4012 -- 20++++
 #range 5030 -- 40+5
 #end
 
@@ -160090,7 +161020,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 792 -- Numbness
-#aoe 1000
+#aoe 1001 -- 3+
+#range 35
 #end
 
 #selectspell 798 -- Barkskin
@@ -160116,6 +161047,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 808 -- Slow
 #researchlevel 3
 #pathlevel 0 1
+#aoe 1002 -- 3+
 #end
 
 #selectspell 877 -- Crawl
@@ -160148,11 +161080,16 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spec 2305843009759494272
 #end
 
+#selectspell 710 -- Magma Eruption
+#fatiguecost 40
+#end
+
 #selectspell 714 -- Blast of Unlife
 #precision 5
 #pathlevel 0 2
 #aoe 2004 -- 8+2
 #fatiguecost 100
+#range 5030 -- 40+5
 #end
 
 #selectspell 1322 -- Leeching Darkness
@@ -160168,7 +161105,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 709 -- Cleansing Water
---#spec 8388744 -- DemonUndead, AN, UWOK
+#spec 8388744 -- DemonUndead, AN, UWOK
 #end
 
 #selectspell 809 -- old Encase in Ice disable
@@ -160181,7 +161118,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 832  -- Winter's Chill
-#aoe 2002 -- 8+2
+#aoe 2004 -- 8+2
+#pathlevel 0 2
 #end
 
 #selectspell 837 -- Maws of the Earth
@@ -160209,13 +161147,17 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #path 1 -1
 #pathlevel 0 2
 #pathlevel 1 0
-#damage 1002 -- 4+
+#damage 1006 -- 8+
 #precision 5
 #nextspell 3883 -- heated water cloud
 #end
 
 #selectspell 850 -- Hellscape
 #fatiguecost 500
+#end
+
+#selectspell 861 -- Control
+#spec 17592194449552 -- MRN -> MRNH
 #end
 
 #selectspell 852 -- Blizzard, re-evaluate later
@@ -160530,7 +161472,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 1009 -- Ghost Grip
-#nreff 1004 -- 5 -> 5+1
+#nreff 1003 -- 4+
+#aoe 1
 #end
 
 #selectspell 1012 -- Acashic Record
@@ -160646,6 +161589,11 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #researchlevel 6
 #fatiguecost 1000
 #end
+
+#selectspell 1074 -- Wild Growth
+#fatiguecost 20
+#end
+
 
 #selectspell 1079 -- Legion of Wights
 #spec 8388608 -- UWOK
@@ -160784,6 +161732,14 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #aoe 2001 -- 3+2
 #fatiguecost 30
 #pathlevel 0 1
+#end
+
+#selectspell 1286 -- Sailor's Death
+#aoe 1000 -- 3+
+#end
+
+#selectspell 1300 -- Paralyze
+#casttime 75
 #end
 
 #selectspell 1287 -- Iron Will
@@ -161007,8 +161963,48 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #aoe 4012 -- 20+4
 #end
 
+#selectspell 1354 -- Charm
+#researchlevel 6
+#end
+
+#selectspell 1355 -- Mass Confusion
+#aoe 1005 -- 8+
+#range 5020 -- 35+5
+#end
+
+#selectspell 733 -- Storm of Thorns
+#damage 1014
+#fatiguecost 10
+#nreff 2012 -- 16+2
+#end
+
+#selectspell 1460 -- Soul Transaction
+#descr "The caster tries to buy the soul and servitude of the target with the promise to protect him from his former masters. If the persuasion is successful the target is granted invisibility by infernal forces as he tries to leave the battle. If he successfully leaves the battle he will join his new master. The spell is impossible to resist magically, but those of strong morals are rarely affected."
+#spec 1152930300700016768 -- No MRNH
+#end
+
+#selectspell 1419 -- Harm
+#aoe 2004 -- 8+2
+#end
+
+#selectspell 1318 -- Serenity
+#aoe 2002 -- 8+2
+#range 25
+#spec 8802304 -- only enemies
+#end
+
+#selectspell 1313 -- Visions of Death
+#fatiguecost 10
+#end
+
+#selectspell 1457 -- Tangle Thicket
+#fatiguecost 20
+#end
+
 #selectspell 1281 -- Sleep
 #pathlevel 0 1
+#casttime 75
+#fatiguecost 10
 #end
 
 #selectspell 1311 -- Slumber
@@ -161053,6 +162049,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #descr "With a few swift words the caster enchants a trio of arrows with the power of the Western Wind, the strongest of the four winds, and sends them towards an enemy. They strike with great force and precision."
 #casttime 75
 #nreff 3
+#damage 1020 -- 22+
+#fatiguecost 10
 #end
 
 #selectspell 1134 -- Gift of Flight
@@ -161367,13 +162365,14 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1295 -- Prison of Fire
 #aoe 1002
-#precision 5
+#precision 8
 #end
 
 #selectspell 1298 -- Curse of the Desert
 #pathlevel 0 2
 #spec 17592723439744  -- Hard MR Neg
 #aoe 2001 -- 5+2
+#fatiguecost 20
 #end
 
 #selectspell 1308 -- Rage of the Cornered Rat
@@ -161389,6 +162388,12 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1324 -- Charm Animal
 #notfornation 28
+#aoe 1
+#casttime 75
+#range 25
+#fatiguecost 10
+#name "Charm Animals"
+#descr "A small group of animals are charmed by the mage."
 #end
 
 #selectspell 1326 -- The Ravenous Swarm
@@ -161503,7 +162508,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1387 -- Blood boil
-#fatiguecost 30
+#fatiguecost 20
 #range 5025
 #end
 
@@ -161512,7 +162517,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1390 -- Banish Demon
-#range 40
+#range 100
 #end
 
 #selectspell 1391 -- Bind Spine Devils
@@ -161608,7 +162613,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1405 -- Hellfire
 #range 5035
-#damage 11
+#damage 9
+#nreff 3
 #spec 160
 #end
 
@@ -161638,6 +162644,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1417 -- Summon Illearth
 #fatiguecost 100
+#end
+
+#selectspell 1427 -- Leech
+#range 50
 #end
 
 #selectspell 1422 -- Infernal Disease
@@ -163042,6 +164052,7 @@ Can only be cast once per combat round."
 #secondarylevel 1
 #nationrebate 23
 #onisummon 200
+#undcommand 50
 #type 6  -- Helmet
 #armor 187  -- Mask
 #restricted 23 -- Yomi
@@ -163343,13 +164354,13 @@ Can only be cast once per combat round."
 #mainpath 0
 #mainlevel 1
 #itemcost1 -40
-#type 8
+#type 3
 #chestwound
 #weapon 1673 -- Vial of Chemicals
 #restricted 69 -- MA Tien Chi
 #restricted 102 -- LA Agartha
 #restricted 116 -- Bogarus
---#restricted 197 -- Iram
+#restricted 197 -- Iram
 #restricted 201 -- Venedia
 #end
 
@@ -164712,12 +165723,12 @@ This will also prevent their skin from drying out."
 #secondarylevel 1
 #itemcost1 -60
 #itemcost2 -60
-#type 8
+#type 3
 #chestwound
 #weapon 1610 -- Vial of Acid
 #restricted 69 -- MA Tien Chi
 #restricted 102 -- LA Agartha
---#restricted 197 -- Iram
+#restricted 197 -- Iram
 #end
 
 #selectitem 605
@@ -166603,7 +167614,8 @@ Adds Combat Caster"
 #end
 
 #selectitem 29 -- Dwarven Hammer -- These might be some controversial changes, but ones I am making anyways
-#itemcost1 -33 -- 10 gems
+--#itemcost1 -33 -- 10 gems
+#itemcost1 -46 -- 8 gems
 #fixforgebonus 1 -- 1 forge bonus
 #end
 
@@ -180372,13 +181384,14 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_enchdom 232 -- Ench32
 #req_land 1
 #req_dominion 7
-#req_domchance 2
+#req_domchance 1
 #nation -2
 #req_pop0ok
-#msg "Angel of the Host"
-#notext
+#msg "An Angel of the Host has descended from the heavens."
+#header 2
+--#notext
 #nolog
-#1unit 543  -- Angel of the Host
+#1unit 3870  -- Angel of the Host
 #end
 
 #newevent
@@ -180390,8 +181403,9 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_domchance 1
 #nation -2
 #req_pop0ok
-#msg "Angel of the Choir"
-#notext
+#msg "An Angel of the Choir has descended from the heavens."
+#header 2
+--#notext
 #nolog
 #com 1367  -- Angel of the Choir
 #end
@@ -180406,6 +181420,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #nation 61 -- MA Marignon
 #req_pop0ok
 #msg "Praise be the Lord! An Arch Angel has descended from the Heavens to aid the faithful in the fight for Ascension."
+#header 2
 #nolog
 #com 465  -- ArchAngel
 #end
@@ -182477,6 +183492,20 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #addsite 2611 -- Shattered Crystal
 #end
 
+#newevent -- Place Crystal in Capital
+#rarity 5
+#nation -2
+#req_pop0ok
+#req_indepok
+#req_owncapital 1
+#req_fornation 206 -- Dirgen
+#msg "Place shattered crystal"
+#notext
+#nolog
+#req_nositenbr 2611
+#addsite 2611 -- Shattered Crystal
+#end
+
 #newevent -- Remove Crystal
 #rarity 5
 #nation -2
@@ -182484,7 +183513,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_indepok
 #req_owncapital 0
 #req_site 1
-#msg "Place shattered crystal [Shattered Crystal]"
+#msg "Remove shattered crystal [Shattered Crystal]"
 #notext
 #nolog
 #req_nositenbr 2315 -- City
@@ -182689,15 +183718,15 @@ Tax collectors report that the population was extraordinarily unruly this month 
 --#end
 
 
-#newevent -- Spawn Great Prayer site if pretender has one
-#rarity 5
-#req_pregame 1
-#req_capital 1
-#nolog
-#notext
-#addsite 2325 -- Altar of Great Prayer
-#req_godismnr 8411 -- Antumbral
-#end
+--#newevent -- Spawn Great Prayer site if pretender has one
+--#rarity 5
+--#req_pregame 1
+--#req_capital 1
+--#nolog
+--#notext
+--#addsite 2325 -- Altar of Great Prayer
+--#req_godismnr 8411 -- Antumbral
+--#end
 
 
 -- Grand Prayer
@@ -184510,7 +185539,8 @@ Tax collectors report that the population was extraordinarily unruly this month 
 --#req_land 1
 #req_ench 221 -- Ench21 -- Samhain
 #req_monster 7662 -- Dolmen
-#req_domchance 8
+#req_domchance 20
+#req_rare 35
 #req_dominion 1
 #req_fornation 11 -- Tir
 #req_fornation 58 -- Eriu
@@ -184527,7 +185557,8 @@ Tax collectors report that the population was extraordinarily unruly this month 
 --#req_land 1
 #req_ench 221 -- Ench21 -- Samhain
 #req_monster 7662 -- Dolmen
-#req_domchance 2
+#req_domchance 20
+#req_rare 8
 #req_dominion 1
 #req_fornation 11 -- Tir
 #req_fornation 58 -- Eriu
@@ -184541,7 +185572,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #end
 
 
-#newevent -- Elf elves dolmen 2
+#newevent -- Remove dolmen if 2 are present
 #rarity 5
 --#req_land 1
 #req_2monsters 7662 -- Dolmen
@@ -184549,6 +185580,18 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #req_rare 30
 #msg "Interference from other Dolmen has caused one to close."
 #nation -2
+#killtarg
+#end
+
+#newevent -- Remove dolmen if 5 are present
+#rarity 5
+--#req_land 1
+#req_5monsters 7662 -- Dolmen
+#req_targmnr 7662 -- Dolmen
+#req_rare 60
+#msg "Interference from other Dolmen has caused one to close."
+#nation -2
+#killtarg
 #end
 
 #newevent -- Remove Fort
@@ -184812,7 +185855,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 
 #newevent -- RoL capital + heat
 #req_friendlyench 222 -- Ench22  -- Rivers of Lava
-#req_capital 1
+#req_owncapital 1
 #rarity 5
 --#req_rare 5
 --#req_freesites 1
@@ -184844,7 +185887,7 @@ Tax collectors report that the population was extraordinarily unruly this month 
 #end
 
 #newevent -- RoL preaching + heat
-#req_myench 222 -- Ench22  -- Rivers of Lava
+#req_friendlyench 222 -- Ench22  -- Rivers of Lava
 #rarity 5
 #req_preach 10
 --#req_freesites 1
