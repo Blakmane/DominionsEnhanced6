@@ -60430,8 +60430,8 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 
 #newmonster 9312 -- Merman Hybrid Land Shape
 #copystats 1047
-#spr1 "magicenhanced/blue_Mind Slave1l.png"
-#spr2 "magicenhanced/blue_Mind Slave2l.png"
+#spr1 "magicenhanced/blue_mindslave1l.png"
+#spr2 "magicenhanced/blue_mindslave2l.png"
 #name "Mind Slave"
 #descr "The Mind Slave is a mutated Merman, enslaved and corrupted by the masters of R'lyeh. The strange powers of transformation that Mermen possess resist the body and mind-altering experiments of the Illithids. To overcome this, a fungus harvested from the Void is implanted into the brains of merman slaves. Through some unknown power the Merman is then warped into a broken and unfeeling monster, completely subservient to the will of their masters. These creatures develop mental abilties which they can use to stun the minds of weak-willed beings. However, they are also unstable, and can be easily driven into a frenzy. This serves the purpose of the Illithids, who use Mind Slaves as shock troops and enforcers."
 #rcost 1
@@ -170624,7 +170624,7 @@ This headband does not require activation in combat."
 #end
 
 #selectitem 348 -- Soul Contract
-#itemcost1 266
+#itemcost1 234
 #descr "The Blood mage sacrifices a great number of slaves to get the attention of Infernal powers. When contact is made, an Infernal Lord offers a contract, to be signed in blood. Whoever signs the contract promises his soul, to be collected at the time of his death, to the Infernal Lord. In exchange for this fair and valuable consideration, the signatory will, for as long as he lives, receive one bound devil each month from the Infernal Lord."
 #noinanim
 #nodemon
