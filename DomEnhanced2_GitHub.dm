@@ -130015,6 +130015,13 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 #wastefortrec 971
 #farmfortrec 971
 
+#plainfortcom 1519 -- Slave Mage land shape
+#forestfortcom 1519
+#mountainfortcom 1519
+#swampfortcom 1519
+#wastefortcom 1519
+#farmfortcom 1519
+
 #plainfortcom 443 -- Star Child
 #forestfortcom 443
 #mountainfortcom 443
@@ -134667,7 +134674,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1184 -- Horde of Skeletons
 #name "Animate Kelp Lord"
 #descr "The caster enchants a large bundle of kelp, animating it into a form known as a Kelp Lord. This being will then continue to animate more kelp creatures throughout the battle. The animating magic will sustain the Kelp Lord for the duration of the battle and it can lead other kelp beings even if no other mages remain on the field."
-#researchlevel 0
+#researchlevel 7
 #path 0 6
 #pathlevel 0 3
 #effect 21
@@ -160752,7 +160759,7 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #fatiguecost 10
 #end
 
-#selectspell 4329 -- Stealth Breath nextspell
+#selectspell 4329 -- Steal Breath nextspell
 #copyspell 241 -- Chestwound
 #name "Chest Wound"
 #descr "."
@@ -160969,6 +160976,8 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #copyspell 939 -- Summon Lesser Fele
 #name "Fire Elementals"
 #damage 3721 -- Size 2 fele
+#school -1
+#researchlevel -1
 #end
 
 #selectspell 4345 -- Elemental Barrage
@@ -169406,8 +169415,9 @@ Increases Natural Protection by 2 for each level of heat in the province."
 #mainlevel 1
 #type 2 -- 2H
 #weapon 1923 -- Earthen Pillar
-#reinvigoration 2
+#reinvigoration 3
 #swift -50
+#mapmove -4
 #heavyitem 1
 #earthelementals 1
 #end
