@@ -162158,7 +162158,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #nreff 507
 #end
 
-#selectspell 562 -- Summon Kimpurushas
+#selectspell 563 -- Summon Kimpurushas
 #nreff 507
 #end
 
