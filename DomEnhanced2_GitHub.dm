@@ -4139,33 +4139,14 @@
 #copyweapon 86 -- Mind Blast
 #name "Nightmare Projection"
 #range 100
-#ammo 1002
+--#ammo 1006
+#ammo 12
 #att 100
 #nratt -2
 #range0
 #dt_aff
 #dmg 17179870208 -- Sleep, Confusion
 #secondaryeffect 293
-#end
-
-#newweapon 1915 -- Area Weakness
-#name "Divine Pacification"
-#dt_weakness
-#damage 2
-#aoe 6
-#len 5
-#norepel
-#unrepel
-#magic
-#nostr
-#armornegating
-#friendlyimmune
-#morroll
-#hardmrneg
-#bonus
-#mind
-#sound 16 -- Flame Strike
---#explspr 10075 -- Few white lights
 #end
 
 #newweapon 1916 -- Holy Fire no aoe
@@ -4178,8 +4159,8 @@
 #name "Heavenly Sword"
 #dmg 9
 #att 2
-#def 2
-#len 1
+#def 3
+#len 2
 #slash
 #magic
 #twohanded
@@ -4231,6 +4212,50 @@
 #secondaryeffectalways 1920
 #sound 16 -- flames
 #flyspr 362 4 -- Fire boulder
+#end
+
+#newweapon 1922 -- Area Calmness
+#name "Weaken Resolve"
+#dt_aff
+#dmg 36028797018963968 -- Calm Emotions
+#aoe 1
+#magic
+#nostr
+#armornegating
+#friendlyimmune
+#mrnegateseasily
+#bonus
+#mind
+#end
+
+#newweapon 1915 -- Area Weakness
+#name "Divine Pacification"
+#dt_weakness
+#dmg 2
+#aoe 6
+#len 5
+#norepel
+#unrepel
+#magic
+#nostr
+#armornegating
+#friendlyimmune
+#morroll
+#hardmrneg
+#bonus
+#mind
+#sound 16 -- Flame Strike
+--#explspr 10075 -- Few white lights
+#secondaryeffectalways 1922
+#end
+
+#newweapon 1923 -- Earthen Pillar
+#copyweapon 119 -- Hammer of the Cyclops
+#name "Earthen Pillar"
+#dmg 25
+#def -2
+#att -1
+#secondaryeffect 1512 -- Stun
 #end
 
 
@@ -4411,6 +4436,7 @@
 #dmg 2 -- +1
 #att 3 -- +3
 #ammo 24
+#friendlyimmune
 #end
 
 #selectweapon 303 -- Vine Bow
@@ -4441,6 +4467,7 @@
 #dmg 7 -- +1
 #att 2 -- +2
 #ammo 24
+#friendlyimmune
 #end
 
 -- End missile changes
@@ -5662,6 +5689,10 @@
 
 #selectarmor 206  -- Obsidian Cuirass
 #rcost 16
+#end
+
+#selectarmor 236  -- Gleaming Cuirass
+#prot 14 -- +2
 #end
 
 #selectarmor 114 -- Turtle Shell Hauberk
@@ -18895,6 +18926,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #spr2 "gondwana/quaggaraffe2.tga"
 #descr "Quaggaraffes feed from the tops of tall trees, using their long legs and neck to reach the highest branches. When threatened they lash out with a kick that can split a mans skull, and a headbutt backed by their powerful neck. These huge creatures are strong in N'um, the sacred force that manifests only in the largest and most holy of beings."
 #mountedhumanoid -- Quadruped bugged
+#itemslots 17571840 -- 2 misc, crown
 #gcost 0
 #size 8
 #hp 44
@@ -29790,6 +29822,24 @@ While in the form of an old man, all paths are increased and allows the use of N
 #chorusmaster
 #end
 
+#newmonster 7479
+#copystats 7478 -- Awakened Tree
+#copyspr 7478 -- Awakened Tree
+#name "Ancient Tree"
+#descr "This is a mage that has permanently transferred their spirit into a tree using powerful nature magic. Trees are very robust and can sweep away enemies with their branches. They can hide themselves by appearing as a normal tree to evade detection. In the summer and in lands of Growth their sap runs high, however in the winter or lands strong in Death they will wither and their powers are reduced."
+#miscshape
+#spiritsight
+#immobile
+#bonusspells 1
+#ap 2
+#mr 16
+#mapmove 0
+#stealthy 0
+#montag 1021
+#nametype 145  -- Wooden Creatures
+#twiceborn 7480 -- Tree of Hate
+#end
+
 #newmonster 7478
 #copystats 330  -- Dark Vine
 #clearweapons
@@ -29815,24 +29865,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 240  -- Branch
 #weapon 240  -- Branch
 #nametype 145  -- Wooden Creatures
-#end
-
-#newmonster 7479
-#copystats 7478 -- Awakened Tree
-#copyspr 7478 -- Awakened Tree
-#name "Ancient Tree"
-#descr "This is a mage that has permanently transferred their spirit into a tree using powerful nature magic. Trees are very robust and can sweep away enemies with their branches. They can hide themselves by appearing as a normal tree to evade detection. In the summer and in lands of Growth their sap runs high, however in the winter or lands strong in Death they will wither and their powers are reduced."
-#miscshape
-#spiritsight
-#immobile
-#bonusspells 1
-#ap 2
-#mr 16
-#mapmove 0
-#stealthy 0
-#montag 1021
-#nametype 145  -- Wooden Creatures
-#twiceborn 7480 -- Tree of Hate
 #end
 
 #newmonster 7481
@@ -29862,22 +29894,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #nametype 145  -- Wooden Creatures
 #end
 
-#newmonster 7482
-#copystats 187  -- Longdead Legionnaire
-#clearweapons
-#cleararmor
-#spr1 "magicenhanced/eeldcent.tga"
-#spr2 "magicenhanced/eeldcent2.tga"
-#name "Longdead Centurion"
-#descr "Skeletal legionnaires risen from the ashen fields of Ermor, armed with rusty weaponry and wearing armor of dried leather and rusty iron. Fearless and skilled in combat, they march upon the living to reclaim their dead empire. Centurions command the legions and retain a glimmer of their previous life."
-#mor 16
-#goodundeadleader
-#undcommand 20
-#weapon 6  -- Short Sword
-#armor 30  -- Rusty Plate
-#armor 126  -- Legionary Helmet
-#end
-
 #newmonster 7483
 #copystats 330  -- Dark Vine
 #clearweapons
@@ -29903,6 +29919,22 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 240  -- Branch
 #weapon 240  -- Branch
 #nametype 145  -- Wooden Creatures
+#end
+
+#newmonster 7482
+#copystats 187  -- Longdead Legionnaire
+#clearweapons
+#cleararmor
+#spr1 "magicenhanced/eeldcent.tga"
+#spr2 "magicenhanced/eeldcent2.tga"
+#name "Longdead Centurion"
+#descr "Skeletal legionnaires risen from the ashen fields of Ermor, armed with rusty weaponry and wearing armor of dried leather and rusty iron. Fearless and skilled in combat, they march upon the living to reclaim their dead empire. Centurions command the legions and retain a glimmer of their previous life."
+#mor 16
+#goodundeadleader
+#undcommand 20
+#weapon 6  -- Short Sword
+#armor 30  -- Rusty Plate
+#armor 126  -- Legionary Helmet
 #end
 
 #newmonster 7484
@@ -32162,7 +32194,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #neednoteat
 #aquatic
 #plant
-#noitem
 #hp 25
 #mor 30
 #mr 12
@@ -32177,7 +32208,11 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #poorleader
 #poorundeadleader
 #okmagicleader
-#battlesum2 7580 -- Kelp Man
+--#battlesum2 7580 -- Kelp Man
+#miscshape
+#itemslots 262144 -- 1 misc
+#startitem 898 -- Kelp Lord's Crown
+--#reinvigoration -5
 #mapmove 2
 #nametype 144
 #startage 1000
@@ -36318,6 +36353,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #str 15
 #att 13
 #def 13
+#pooramphibian
 #neednoteat
 #blind
 #magicbeing
@@ -44470,6 +44506,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #gcost 0
 #size 5
 #goodleader
+#spellsinger
 #maxage 300
 #startage 60
 #end
@@ -44508,6 +44545,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #gcost 0
 #size 5
 #goodleader
+#spellsinger
 #maxage 300
 #startage 60
 #end
@@ -60358,7 +60396,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #spr1 "magicenhanced/blue_mindslave1.png"
 #spr2 "magicenhanced/blue_mindslave2.png"
 #name "Mind Slave"
-#descr "."
+#descr "The Mind Slave is a mutated Merman, enslaved and corrupted by the masters of R'lyeh. The strange powers of transformation that Mermen possess resist the body and mind-altering experiments of the Illithids. To overcome this, a fungus harvested from the Void is implanted into the brains of merman slaves. Through some unknown power the Merman is then warped into a broken and unfeeling monster, completely subservient to the will of their masters. These creatures develop mental abilties which they can use to stun the minds of weak-willed beings. However, they are also unstable, and can be easily driven into a frenzy. This serves the purpose of the Illithids, who use Mind Slaves as shock troops and enforcers."
 #rcost 1
 #gcost 16
 #rpcost 12
@@ -60392,10 +60430,10 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 
 #newmonster 9312 -- Merman Hybrid Land Shape
 #copystats 1047
-#spr1 "magicenhanced/blue_mindslave1l.png"
-#spr2 "magicenhanced/blue_mindslave2l.png"
+#spr1 "magicenhanced/blue_Mind Slave1l.png"
+#spr2 "magicenhanced/blue_Mind Slave2l.png"
 #name "Mind Slave"
-#descr "."
+#descr "The Mind Slave is a mutated Merman, enslaved and corrupted by the masters of R'lyeh. The strange powers of transformation that Mermen possess resist the body and mind-altering experiments of the Illithids. To overcome this, a fungus harvested from the Void is implanted into the brains of merman slaves. Through some unknown power the Merman is then warped into a broken and unfeeling monster, completely subservient to the will of their masters. These creatures develop mental abilties which they can use to stun the minds of weak-willed beings. However, they are also unstable, and can be easily driven into a frenzy. This serves the purpose of the Illithids, who use Mind Slaves as shock troops and enforcers."
 #rcost 1
 #gcost 16
 #rpcost 12
@@ -60445,7 +60483,6 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #att 13
 #prec 15
 #ap 12
-#mapmove 20
 #enc 1
 #maxage 1000
 #startage 100
@@ -60487,7 +60524,6 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #att 13
 #prec 15
 #ap 12
-#mapmove 20
 #enc 1
 #maxage 1000
 #startage 100
@@ -60767,6 +60803,246 @@ Companions are recruited in pairs and two must be recruited at once."
 #clearmagic
 #magicskill 5 2
 #end
+
+
+#newmonster 9328 -- altar
+#spr1 "magicenhanced/blue_altar.png"
+#spr2 "magicenhanced/blue_altar.png"
+#name "Altar"
+#descr "."
+#hp 40
+#str 15
+#att 5
+#def 0
+#prec 5
+#ap 0
+#mapmove 0
+#immobile
+#mor 50
+#prot 20
+#mr 12
+#size 5
+#noleader
+#miscshape
+#itemslots 1
+#coldres 10
+#poisonres 25
+#shockres 10
+#fireres 10
+#pierceres
+#slashres
+#neednoteat
+#stonebeing
+#blind
+#diseaseres 100
+#inanimate
+#amphibian
+#enc 0
+#weapon 0
+#gcost 0
+#end
+
+#newmonster 9329 -- Feaster from the Stars
+#copyspr 1
+--#spr1 "xxxx"
+--#spr2 "xxxx"
+#name "Feaster from the Stars"
+#fixedname "Zvilpogghua"
+#descr "The Feaster from the Stars is an ancient Void Being. It takes the form of a squat, armless bipedal monster covered in wings and tentacles. The Feaster masquerades as a mindless and hungry entity, but behind this facade is a vast alien intelligence with malevolent designs on the world. The Feaster is a powerful sorcerer versed in many forms of magic, and can travel into the firmament to cross great distances each month. The Feaster's skin exudes a foul toxin that poisons any who come in contact and it can devour creatures that stray too close. Attracted to the growing influence of the Void in R'lyeh, the Feaster from the Stars obeys the commands of the Illithids with apparent loyalty, but its true ambitions are opaque."
+#gcost 0
+#size 6
+#mr 20
+#mor 30
+#str 21
+#hp 46
+#att 10
+#def 9
+#prot 8
+#prec 8
+#ap 14
+#enc 1
+#flying
+#mapmove 50
+#noleader
+#nomagicleader
+#magicbeing
+#magicskill 4 3
+#magicskill 5 2
+#magicskill 6 2
+#magicskill 7 2
+#spiritsight
+#blind
+#fear 5
+#amphibian
+#poisoncloud 6
+#poisonskin 50
+#weapon 85  -- Tentacle
+#weapon 677  -- Wing Buff
+#weapon 461 -- Swallow
+#startage 1000
+#maxage 2000
+#holy
+#unique
+#polyimmune
+#itemslots 18751488 -- feet, 3 misc, crown
+#voidsanity 20
+#voidret 100
+#end
+
+#newmonster 9330 -- Faceless One
+#copystats 7804  -- Night-gaunt
+#copyspr 1
+--#spr1 "xxxx"
+--#spr2 "xxxx"
+#name "Faceless One"
+#fixedname "Yegg-Ha"
+#descr "The Faceless One is a strange entity from a realm of nightmares. It resembles a smooth humanoid with leather bat-like wings and a blank expanse of flesh where one would expect a face to be. The Faceless One is the master of the Night-gaunts and they are drawn to it within the dominion of the Dreaming God. It has great strength in the magic of death and dreams and is constantly surrounded by auras of sleep and nightmares. It is said that the Faceless One can never be defeated, for if killed its essence will return to the world of dreams where it will slowly reform. The motivations of the Faceless One are mercurial, but for now it has decided to side with the forces of R'lyeh and the Dreaming God."
+#mr 18
+#mor 22
+#pooramphibian
+#mor 30
+#size 5
+#hp 38
+#str 18
+#att 14
+#def 14
+#mapmove 26
+#sleepaura 4
+#nightmareaura 4
+#magicskill 5 3
+#magicskill 7 3
+#okleader
+#superiormagicleader
+#fear 5
+#holy
+#unique
+#polyimmune
+#domsummon2 7804
+#immortal
+#reformtime 3 -- 6 months
+#voidsanity 20
+#voidret 100
+#end
+
+#newmonster 9331 -- Pale Beast
+#copyspr 1
+--#spr1 "xxxx"
+--#spr2 "xxxx"
+#name "The Pale Beast"
+#fixedname "Eihort"
+#descr "The Pale Beast is a monstrosity born deep within the Void. It resembles a huge gelatinous mass covered in a myriad of eyes and supported by a mass of undulating legs. The Pale Beast is obsessed with spreading its brood and is surrounded at all times by its swarming progeny. Enemies killed by the Beast or its offspring will soon burst open with fresh broodlings, growing and multiplying at a supernatural rate. The Pale Beast is a corrupting presence with power in tainted astral magic. It is not known what foul bargain the Illithid of R'lyeh performed to entice this entity, but it now serves the Dreaming God alongside the forces of R'lyeh."
+#miscshape
+#gcost 0
+#size 7
+#mr 18
+#mor 30
+#str 25
+#hp 82
+#att 14
+#def 11
+#prot 6
+#prec 10
+#ap 20
+#enc 1
+#mapmove 16
+#poorleader
+#goodmagicleader
+#magicbeing
+#magicskill 4 3
+#magicskill 8 3
+#spiritsight
+#bluntres
+#unsurr 8
+#poisonres 15
+#fear 10
+#amphibian
+#slimer 2
+#patrolbonus 50
+#weapon 456 -- Gaze of Fear
+#weapon 329  -- Slime
+#weapon 90  -- Crush
+#raiseonkill 100
+#raiseshape 9332 -- "Pale Broodling"
+#itemslots 3932160 -- 4 misc
+#startage 1000
+#maxage 2000
+#batstartsum4d6 9332 -- Pale Broodling
+#holy
+#unique
+#polyimmune
+#voidsanity 20
+#voidret 100
+#end 
+
+#newmonster 9332 -- Pale Broodling
+#copystats 2223  -- Large Spider
+#copyspr 1
+--#spr1 "xxxx"
+--#spr2 "xxxx"
+#name "Pale Broodling"
+#descr "This is a squirming broodling birthed from the body of a hapless victim infected with the spawn of the Pale Beast. It superficially resembles a white gelatinous spider covered in eyes. While small and weak individually, broodlings multiply at a supernatural rate and enemies can find themselves rapidly overwhelmed if they cannot efficiently deal with the growing mass."
+#clearspec
+#clearweapons
+#undisciplined
+#magicbeing
+#spiritsight
+#unsurr 1
+#mindless
+#poisonres 15
+#amphibian
+#weapon 450  -- Tiny Bite
+#startage 1
+#maxage 2000
+#raiseonkill 100
+#raiseshape 9332 -- "Pale Broodling"
+#voidsanity 20
+#end
+
+#newmonster 9333 -- The Thing in the Pit
+#copyspr 1
+--#spr1 "xxxx"
+--#spr2 "xxxx"
+#name "The Thing in the Pit"
+#fixedname "Ythogtha"
+#descr "The Thing in the Pit is a gargantuan monstrosity from a dimension beyond the Void. It resembles a colossal aquatic humanoid with single, huge eye in the center of its forehead and a dense mane of writhing tentacles. The Thing in the Pit was summoned many aeons ago by a race of Ancient wormlike creatures that live deep below the earths surface, but it was imprisoned by their enemies in a deep Abyss at the bottom of the ocean where they could not reach it. The Thing in the Pit is impossibly strong and tough, and has power in the magic of the earth and the deep ocean. When on land, every month a Chthonian will emerge to pay its respects to the creature. The growing influence of the Void and the Dreaming God has freed this entity, and in return it serves alongside the forces of R'lyeh."
+#gcost 0
+#size 10
+#mr 18
+#mor 30
+#str 30
+#hp 162
+#att 11
+#def 8
+#prot 16
+#prec 10
+#ap 10
+#enc 2
+#mapmove 22
+#okleader
+#goodmagicleader
+#magicbeing
+#magicskill 3 3
+#magicskill 2 2
+#spiritsight
+#fear 5
+#eyes 1
+#amphibian
+#woundfend 1
+#weapon 823  -- Claw
+#weapon 823  -- Claw
+#weapon 85  -- Tentacle
+#weapon 609 -- Grab and Swallow
+#startage 1000
+#maxage 2000
+#holy
+#unique
+#polyimmune
+#summon1 7389 -- Chthonian
+#itemslots 17768966 -- crowns only
+#voidsanity 20
+#voidret 100
+#end
+
 
 
 
@@ -65275,6 +65551,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #ap 8
 #gcost 0
 #coldres 5
+#shockres 10
 #patrolbonus 50
 #siegebonus 20
 #slashres
@@ -88567,7 +88844,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Draugadrott was once a Vanadrott of great malice and might. He wielded such foul powers that he threatened the very order of the world. When he was slain by his subjects he vowed to return and avenge his death. His killers cursed his bones, his mind and his heart to prevent him from ever returning, but with the death of his last killer the fetters have crumbled and the Draugadrott has returned in his horrible might, poised to wreak vengeance on the world thet took his life.
 The malice and hateful nature of the Draugadrott is unmatched and he has claimed the ability to change shape into a horrible apparition."
 #diseaseres 100
-#gcost 190
+#gcost 220
 #pathcost 40
 #hp 45
 #prot 5
@@ -88589,7 +88866,7 @@ The malice and hateful nature of the Draugadrott is unmatched and he has claimed
 #descr "Hate and malice made manifest in the form of a horrible Flayed Bull. The apparition is almost impervious to mundane weapons, even though its flesh and muscles are laid bare.
 In Bull form the Draugadrott loses some of his magic powers."
 #diseaseres 100
-#gcost 190
+#gcost 220
 #pathcost 40
 #hp 140
 #prot 10
@@ -88849,6 +89126,8 @@ In Bull form the Draugadrott loses some of his magic powers."
 #prot 3
 #armor 570 -- Half Plate
 #armor 20 -- Cap
+#gcost 10016
+#coldres -3
 #end
 
 #selectmonster 82  -- Aby Infantry
@@ -88862,6 +89141,8 @@ In Bull form the Draugadrott loses some of his magic powers."
 #prot 3
 #armor 570 -- Half Plate
 #armor 20 -- cap
+#gcost 10016
+#coldres -3
 #end
 
 #selectmonster 83  -- Aby Infantry
@@ -88876,6 +89157,8 @@ In Bull form the Draugadrott loses some of his magic powers."
 #armor 20 -- cap
 #armor 4 -- Tower Shield
 #prot 3
+#gcost 10016
+#coldres -3
 #end
 
 #selectmonster 84  -- Aby Infantry
@@ -88890,6 +89173,8 @@ In Bull form the Draugadrott loses some of his magic powers."
 #armor 570 -- Half Plate
 #armor 20 -- cap
 #armor 4 -- Tower Shield
+#gcost 10016
+#coldres -3
 #end
 
 #selectmonster 85  -- A Salamander
@@ -88902,6 +89187,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #montag 1068 -- Anathement
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #neednoteat
+#coldres -3
 #end
 
 #selectmonster 86  -- EA Abysia Anathemant Dragon
@@ -88915,6 +89201,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #enchrebate50 222 -- Ench22 -- Rivers of Lava
 #montag 1068 -- Anathement
 #neednoteat
+#coldres -3
 #end
 
 #selectmonster 87  -- Demonbred
@@ -88927,6 +89214,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #iceprotinspector -1
 #prot 5
 #rpcost 2
+#coldres -3
 #end
 
 
@@ -88936,6 +89224,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 90  -- Lava Warrior
@@ -88949,6 +89238,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #armor 570 -- Half Plate
 #armor 20 -- cap
 #neednoteat
+#coldres -3
 #end
 
 #selectmonster 121  -- Demonbred
@@ -88959,6 +89249,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 5
+#coldres -3
 #end
 
 #selectmonster 118  -- War Master
@@ -88968,6 +89259,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 119  -- Warlord
@@ -88978,6 +89270,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 214  -- Beast Trainer
@@ -88991,6 +89284,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 
@@ -89002,6 +89296,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 429  -- Slayer
@@ -89012,6 +89307,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 
@@ -89034,6 +89330,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 
@@ -89062,6 +89359,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 5
+#coldres -3
 #end
 
 #selectmonster 923  -- Warlock Apprentice
@@ -89071,6 +89369,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 
@@ -89083,6 +89382,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1092  -- Sang Anathemant
@@ -89094,6 +89394,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1536  -- Anointed of Rhuax
@@ -89114,6 +89415,8 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 4
+#size 5
+#coldres -3
 #end
 
 #selectmonster 1537  -- Demonbred
@@ -89125,6 +89428,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 5
+#coldres -3
 #end
 
 #selectmonster 1538  -- Warlock
@@ -89136,6 +89440,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1542  -- W Apprentice
@@ -89147,6 +89452,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1543  -- Burning One
@@ -89158,9 +89464,13 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#size 5
+#formationfighter -1
 #cleararmor
-#armor 570 -- Half Plate
+--#armor 570 -- Half Plate
+#armor 14 -- Plate Hauberk
 #armor 20 -- cap
+#coldres -3
 #end
 
 #selectmonster 1661  -- Misbred
@@ -89172,6 +89482,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 5
+#coldres -3
 #end
 
 #selectmonster 1667  -- Malphas the Warlock
@@ -89181,6 +89492,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 
@@ -89192,6 +89504,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1699  -- EA Anathemant Dragon
@@ -89203,6 +89516,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #iceprotinspector -1
 #prot 3
 #neednoteat
+#coldres -3
 #end
 
 
@@ -89214,6 +89528,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1966  -- Slayer Anathemant
@@ -89224,6 +89539,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1967  -- S Sanguine
@@ -89234,6 +89550,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1968  -- Slayer Dragon
@@ -89243,6 +89560,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1969  -- A Salamander LA
@@ -89254,6 +89572,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 #selectmonster 1970  -- LA Abysia Anathemant Dragon
@@ -89271,6 +89590,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 
@@ -89282,6 +89602,8 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
+#gcost 10020
 #end
 
 #selectmonster 2511  -- Lavaborn Comm
@@ -89294,6 +89616,8 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
+#gcost 10025
 #end
 
 
@@ -89305,6 +89629,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#coldres -3
 #end
 
 
@@ -89313,7 +89638,9 @@ In Bull form the Draugadrott loses some of his magic powers."
 
 #selectmonster 88  -- Fiend of Darkness
 #montag 1054
-#custommagic 36864 100 -- 100% DB
+#custommagic 4096 75 -- D
+#custommagic 32768 75 -- B
+--#custommagic 36864 100 -- 100% DB
 #end
 
 
@@ -89430,7 +89757,9 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 304  -- Devil
-#custommagic 32896 100 -- 100% FB
+#custommagic 128 75 -- F
+#custommagic 32768 75 -- B
+--#custommagic 32896 100 -- 100% FB
 #montag 1054
 #montagweight 2
 #end
@@ -89862,7 +90191,9 @@ Initiates of the Deep can be recruited in any land fort."
 #spr2 "vanilla/frostfiend2.tga"
 #armor 231 -- heavy magic robes
 #mapmove 22 -- compensating for robes
-#custommagic 33280 100 -- 100% WB
+#custommagic 512 75 -- W
+#custommagic 32768 75 -- B
+--#custommagic 33280 100 -- 100% WB
 #end
 
 #selectmonster 450  -- Horse Brother
@@ -89935,7 +90266,12 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 489  -- Demon Knight
-#custommagic 33792 100 -- 100% EB
+#custommagic 1024 75 -- E
+#custommagic 32768 75 -- B
+--#custommagic 33792 100 -- 100% EB
+#clearweapons
+#weapon 4 -- Broad Sword
+#weapon 477 -- Unholy Sword
 #end
 
 #selectmonster 490  -- Al-Khazim
@@ -90417,7 +90753,9 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 632  -- Storm Demon
-#custommagic 33024 100 -- 100% AB
+#custommagic 256 75 -- A
+#custommagic 32768 75 -- B
+--#custommagic 33024 100 -- 100% AB
 #end
 
 #selectmonster 633  -- Werewolf
@@ -90539,6 +90877,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #armor 546 -- spectral plate
 #armor 549 -- spectral helmet
 #mr 11
+#formationfighter 2
 #end
 
 #selectmonster 3063  -- Hellbred Horite
@@ -92491,7 +92830,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 1356 -- Ozelotl
-#magicskill 7 1 -- 1B
+#magicskill 8 1 -- 1B
 #custommagic 128 50 -- 50%F
 #end
 
@@ -92699,7 +93038,7 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 #selectmonster 1483  -- Tzitzimitl
 #magicskill 4 1  -- S1
 #magicskill 9 1 -- H1
-#custommagic 32768 50 -- 50%SB
+#custommagic 32768 50 -- 50%B
 #end
 
 #selectmonster 1484  -- Tlaloque
@@ -93094,6 +93433,10 @@ Gibodai can travel on land, but doing so will dry out their skin and eventually 
 #armor 549 -- spectral helm
 #magicskill 0 1 -- 1F
 #custommagic 4096 50 -- 50%D
+#end
+
+#selectmonster 1657 -- Longdead Triarius
+#formationfighter 2
 #end
 
 #selectmonster 1971  -- Smoulderghost LA
@@ -94124,6 +94467,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectmonster 2136  -- Great Boar
 #twiceborn 7343 -- Size 2 Wight Beast
+#end
+
+#selectmonster 2129 -- Logrian Cavalry
+#gcost 5
 #end
 
 
@@ -124983,11 +125330,16 @@ Priests: Average"
 #addrecunit 7108 -- Hornblower
 #addrecunit 7109 -- Horseman
 #addrecunit 7110 -- Chariot
+
 #homerealm 10
 #homerealm 5  -- Middle East
 #addgod 1025 -- Divine Glyph
 
-#addgod 8341 -- Demiurge
+#addgod 3416 -- Great Archon
+#addgod 3395 -- Demiurge
+#addgod 215 -- Virtue
+
+#addgod 8341 -- Great Creator
 #addgod 8342 -- Elohim
 #cheapgod20 8338 -- Burning Bush
 #cheapgod20 8342 -- Elohim
@@ -125349,6 +125701,7 @@ Priests: Average, Spirit animals may appear to defend them in battles"
 #addgod 2800
 #addgod 2801
 #addgod 3086
+#addgod 2194 -- Draugadrott
 #addgod 8493 -- Idol of War
 #addgod 8459 -- Idol of Winter
 #addgod 8447 -- Idol of Watery Wisdom
@@ -125361,10 +125714,18 @@ Priests: Average, Spirit animals may appear to defend them in battles"
 #addgod 8474 -- Ancestral Barrow
 #addgod 8419 -- Sun Father
 #addgod 8492
-#addgod 8304
+--#addgod 8304
 #addgod 3692
 #addgod 3693
 #addgod 8349 -- Great Gull
+
+#addgod 8456 -- Blood Soaked Edifice
+#addgod 8491 -- Hanging Tree
+#addgod 4107 -- Great Moose
+#addgod 4108 -- Ghost moose
+#addgod 1229 -- Son of Fenrir
+#addgod 8494 -- Icon of Fertility
+
 #cheapgod20 3692 -- Stag
 #cheapgod20 3693 -- Stag
 #cheapgod20 8492 -- Idol of Thunder
@@ -131768,7 +132129,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #path 0 2
 #pathlevel 0 5
 #path 1 7
-#pathlevel 1 4
+#pathlevel 1 2
 #fatiguecost 300
 #effect 11
 #aoe 666
@@ -132561,7 +132922,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #pathlevel 1 2
 #damage 68719476736  -- Slow
 #fatiguecost 200
-#spec 25165840  -- UW Ok, MR Neg, Magic Beings Only
+#spec 8392720  -- UWOK, MRN, Magic Beings Only
 --#spec 17592194433040  -- UW Ok, MR Hard Neg, Magic Beings Only
 #nextspell 2162
 #end
@@ -132612,23 +132973,6 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #damage 274 -- Ench74  -- Lunar Potency
 #nreff 1
 #fatiguecost 6000
-#end
-
-#selectspell 2167
-#name "Solomon's Demise"
-#descr "Through careful application of arcane formulae the caster weakens the magic used in spells of binding across the world. This is highly dangerous to those that use binding magic to control powerful and vengeful beings such as the denizens of the lower planes. Whilst this spell is in effect any creature summoned with a spell of binding may break free and attempt to attack a commander in their province. Larger concentrations of such beings increase the likelihood of an attack. Unique creatures that break their bindings will instead quickly escape back to their own realm. This spell was first used to overthrow the ancient King Solomon who controlled many Demons through the use of a magic ring."
-#details "Any province containing creatures summoned via Binding spells may have one break free (5% chance per month, additional 5% if 5 or more are in the province). Units will attack a random commander in the province, whilst Unique commanders will escape."
-#portent "By the might of ##godname## the shackles binding demonic creatures have been weakened! All those that consort with demons and other foul denizens of the underworld shudder as those they master now seek to master them. Wise men mutter that the natural order has been upset and dire consequences may result. Who knows what other elements of magic may be weakening even now?"
---#cure ""
-#school 5
-#researchlevel 8
-#path 0 4
-#pathlevel 0 5
-#effect 10081
-#damage 211  -- Weaken Bindings
-#nreff 1
-#fatiguecost 9000
-#spec 8388608
 #end
 
 #selectspell 2168
@@ -132840,7 +133184,8 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #copyspell 106  -- Record of Creation
 #name "Mysteries of the Astral Plane"
 #descr "Learned Sages tell of a mysterious spirit that inhabits the Astral Plane and knows many ancient secrets of magic. With this spell the caster prepares a subject to travel to the astral plane to find and seek knowledge from this spirit. The chosen individual will gain great insights, becoming able to perform more powerful rituals. The target must be in the same province as the caster and must carry a Ring of Returning to enable them to return from the Astral plane. The ritual requires long and careful preparations and will not be successful if cast whilst the province is under siege. Once the spirit has imparted its knowledge it will leave the Astral for even higher planes, and any further attempts to cast the spell will fail and the gems will be wasted."
-#details "Grants Master Ritualist 1, further casts will fail."
+#details "Grants Master Ritualist 1, further casts will fail.
+Requires a Ring of Returning equipped to the recipient."
 #school 5
 #researchlevel 7
 #path 0 4
@@ -134322,7 +134667,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1184 -- Horde of Skeletons
 #name "Animate Kelp Lord"
 #descr "The caster enchants a large bundle of kelp, animating it into a form known as a Kelp Lord. This being will then continue to animate more kelp creatures throughout the battle. The animating magic will sustain the Kelp Lord for the duration of the battle and it can lead other kelp beings even if no other mages remain on the field."
-#researchlevel 7
+#researchlevel 0
 #path 0 6
 #pathlevel 0 3
 #effect 21
@@ -143228,8 +143573,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 0 1
 #pathlevel 0 3
 #nreff 505
-#damage 3726 -- Size 5 Air Elemental
-#fatiguecost 800
+#damage 3727 -- Size 4 Air Elemental
+#fatiguecost 700
 #restricted 32 -- Rus
 #restricted 29 -- Berytos
 #restricted 77 -- Phaecia
@@ -146318,11 +146663,13 @@ All effects scale with friendly Dominion."
 #end
 
 #selectspell 3213
-#copyspell 1180 -- Dispel
+#copyspell 1226 -- Disenchantment
 #name "Greater Dispel"
 #descr "With further research the Magisters have uncovered yet easier ways to negate Global Enchantments. As the number of gems required to cast the dispel has been reduced, more will be available for matching the enemies strength."
+#details "Destroys a global enchantment if cast with enough power. Lowers the overcast level of a global enchantment by half the overcast level of Disenchantment."
+#pathlevel 0 4
 #researchlevel 7
-#fatiguecost 1000
+#fatiguecost 2500
 #restricted 100 -- LA Man
 #end
 
@@ -152068,6 +152415,7 @@ All effects scale with friendly Dominion."
 --#damage 33554432  -- Unholy Power
 #damage 68719476740 -- reinvig + swiftness
 #spec 46219264  -- UW Only, Affects friendly airbreathers only, ignores shields
+#nextspell 4283 -- Permanent Water Breathing
 #end
 
 #selectspell 3706
@@ -153613,6 +153961,7 @@ With this spell, the caster may find a roaming band of Aphroi and return them to
 #school -1
 #aoe 10
 #range 0
+#nextspell 4283 -- Permanent Water Breathing
 #end
 
 #selectspell 3836 -- Water Breathing, 1 -> 60 gow
@@ -158386,6 +158735,7 @@ Applies the effects of Holy Avenger to the caster"
 #descr "The caster cloaks a small group of soldiers in glamour. The images will surround the targets and make it harder for enemies to figure out which one to strike. The images will surround them and make it harder for enemies to figure out which one to strike. A strike will have an equal chance of hitting each image and the original. If an image is hit it will disappear. Unlike some other glamour effects, mirror images are not negated by true sight."
 #details "Images created: 2"
 #aoe 3
+#range 5
 #fatiguecost 40
 #researchlevel 4
 #path 0 7
@@ -158401,6 +158751,7 @@ Applies the effects of Holy Avenger to the caster"
 #descr "The caster cloaks a large group of soldiers in glamour. The images will surround the targets and make it harder for enemies to figure out which one to strike. The images will surround them and make it harder for enemies to figure out which one to strike. A strike will have an equal chance of hitting each image and the original. If an image is hit it will disappear. Unlike some other glamour effects, mirror images are not negated by true sight."
 #details "Images created: 2"
 #aoe 2002 -- 10+2
+#range 5
 #fatiguecost 100
 #researchlevel 8
 #path 0 7
@@ -160466,7 +160817,7 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #researchlevel 5
 #path 0 4
 #pathlevel 0 2
-#fatiguecost 400
+#fatiguecost 500
 #damage 9314 -- Ishim
 #nreff 3
 #restricted 186 -- Zion
@@ -160481,6 +160832,8 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates)."
 #aoe 0
 #range 0
+#school -1
+#researchlevel -1
 #spec 8536064 -- Ignore shields, no mindless, UWOK
 #end
 
@@ -160605,6 +160958,48 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #nextspell 4343
 #end
 
+#selectspell 4346 -- Mini Fire Elemental
+#copyspell 939 -- Summon Lesser Fele
+#name "Fire Elementals"
+#damage 3721 -- Size 2 fele
+#end
+
+#selectspell 4345 -- Elemental Barrage
+#copyspell 687 -- Falling Fires
+#name "Elemental Barrage"
+#descr "Flaming elemental orbs are created above the battlefield to fall upon the caster's enemies."
+#aoe 0
+#path 0 0
+#pathlevel 0 3
+#researchlevel 8
+#nreff 3006 -- 15+3
+--#nreff 2002 -- 8+2
+#damage 1021 -- 24+
+#precision 8
+#nogeosrc -1
+#spec 16480 -- Fire, AP, Ignore shields
+--#spec 576460752303439968 -- Fire, AP, Ignore shields, Next Spell
+#flightspr 10071
+#explspr 10091
+#fatiguecost 20
+#casttime 125
+--#nextspell 4345
+#end
+
+#selectspell 4346
+#copyspell 635 -- Flame Bolt
+#name "Wild Fire"
+#descr "Three bolts of flame are thrown toward the caster's target."
+#damage 15
+#school -1
+#researchlevel -1
+--#researchlevel 3
+#pathlevel 0 2
+#fatiguecost 5
+#casttime 125
+#nreff 3
+#precision -2
+#end
 
 
 
@@ -161983,8 +162378,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 1270 -- Fascination
 #aoe 1
-#range 25
-#spec 25559168 -- AN, MRNE, mindless immune, enemies only, UWok
+#range 30
+#spec 8786048 -- AN, MRN, mindless immune, enemies only, UWok
 #end
 
 #selectspell 1273 -- Bonds of Fire
@@ -162251,14 +162646,14 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 723 -- Ice Strike
 #copyspell 694 -- Falling Frost
 #name "Ice Strike"
-#descr "The caster conjures ice spikes above their enemies to fall upon and impale them. Cold resistance offers no protection against this spell, but heavy armor does."
+#descr "The caster conjures ice spikes above their enemies to fall upon and impale them. Cold resistance offers no protection against this spell, but heavy armor does. More powerful casters can create more spikes."
 #aoe 0
 #path 0 2
 #pathlevel 0 2
 #pathlevel 1 0
 #researchlevel 7
-#nreff 3004 -- 10+3
-#damage 18
+#nreff 4002 -- 10+4
+#damage 20
 #nogeosrc -1
 #spec 564324342972480 -- Piercing, Slashing, AP, Ignore shields, More likely to hit head
 #flightspr 10068
@@ -162285,7 +162680,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 740 -- Pillar of Fire
 #fatiguecost 10
-#precision 6
+#precision 8
 #end
 
 #selectspell 746 -- Vortex of Unlife
@@ -162358,6 +162753,12 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spec 1099514773504 -- Non-magical, defense negates, slashing - Unarmored spiritform beings don't need this in their life
 #damage 1007 -- 12+ -- Damage buffed to compensate
 #aoe 2008 -- 12++ -- AOE buffed to compensate
+#end
+
+#selectspell 815 -- Curse of Stones
+#spec 8654848 -- MRNE -> MRN
+#pathlevel 0 4
+#casttime 225
 #end
 
 #selectspell 814 -- Destruction
@@ -162955,6 +163356,11 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #researchlevel 4
 #end
 
+#selectspell 1023 -- Summon Fay Knights
+#nreff 505
+#fatiguecost 2000
+#end
+
 #selectspell 1027 -- Great Eagles
 #nreff 508
 #end
@@ -163262,6 +163668,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectspell 1171 -- Watcher
 #pathlevel 0 2
 #fatiguecost 400
+#end
+
+#selectspell 1174 -- Friendly Currents
+#nextspell 4283 -- Permanent Water Breathing
 #end
 
 #selectspell 1173 -- Winter Ward
@@ -164056,7 +164466,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #path 1 3
 #pathlevel 1 2
 #nreff 2
-#fatiguecost 2200
+#fatiguecost 2000
 #end
 
 #selectspell 1400 -- Cross breeding
@@ -165217,6 +165627,7 @@ Can only be cast once per combat round."
 #unique
 #bestowtomount
 #waterbreathing
+#autospell "Permanent Water Breathing"
 #end
 
 #selectitem 658
@@ -168452,6 +168863,7 @@ This will also prevent their skin from drying out."
 #itemcost1 -40
 #giftofwater 75
 #type 8
+#autospell "Permanent Water Breathing"
 #end
 
 #selectitem 860 -- Triton's Conch, 1 -> 30 gow
@@ -168464,12 +168876,13 @@ This will also prevent their skin from drying out."
 #itemcost1 -70
 #giftofwater 90
 #type 8
+#autospell "Permanent Water Breathing"
 #end
 
 #selectitem 861 -- Swamp Talisman, 1 -> 60 gow
 #spr "wateroverhaul/swamptalisman.tga"
 #name "Swamp Talisman"
-#descr "The bearer of this Talisman and all those under their command will find their skin to turn a bit green and swamp grass to grow in place of hair, but more importantly their lungs will adapt to aquatic environments, allowing them to traverse the sea and move underwater with greater ease."
+#descr "The bearer of this Talisman and all those under their command will find their skin to turn a bit green and swamp grass to grow in place of hair, but more importantly their lungs will adapt to aquatic environments, allowing them to traverse the sea."
 #constlevel 5
 #mainpath 6
 #mainlevel 2
@@ -168478,7 +168891,8 @@ This will also prevent their skin from drying out."
 #itemcost1 -70
 #itemcost2 -60
 #giftofwater 300
-#autospell "Tritons Grace"
+--#autospell "Tritons Grace"
+#autospell "Permanent Water Breathing"
 #type 8
 #bestowtomount
 #diseaseres 20
@@ -168487,7 +168901,7 @@ This will also prevent their skin from drying out."
 
 #selectitem 862 -- Crown of the Watery Dead, 1 -> 70 gow
 #name "Crown of the Watery Dead"
-#descr "A crown once belonging to the exiled rulers of the realm of the watery dead. Though much of its authority has long been stripped, the waves and dead alike will still recognize the wearer as lord. Water will part around soldiers who follow the wearer, allowing them to breathe and fight underwater with greater ease"
+#descr "A crown once belonging to the exiled rulers of the realm of the watery dead. Though much of its authority has long been stripped, the waves and dead alike will still recognize the wearer as lord. Water will part around soldiers who follow the wearer, allowing them to traverse underwater."
 #spr "wateroverhaul/fomoriancrown.tga"
 #itemdrawsize -33
 #constlevel 5
@@ -168498,7 +168912,8 @@ This will also prevent their skin from drying out."
 #itemcost1 -60
 #itemcost2 -70
 #giftofwater 500
-#autospell "Tritons Grace"
+--#autospell "Tritons Grace"
+#autospell "Permanent Water Breathing"
 #undcommand 50
 #type 9
 #nationrebate 10 -- Fomoria
@@ -168870,16 +169285,14 @@ Increases Natural Protection by 2 for each level of heat in the province."
 #end
 
 #selectitem 889
-#name "Amulet of Unification"
-#descr "This amulet empowers the wearer's ability to open their mind allowing it's wearer to join or lead a Grand Communion.
-
-Adds Grand Communicant"
-#spr "magicenhanced/unification.png"
+#name "Amulet of Grand Communion"
+#descr "This amulet allows the bearer to join or lead a Grand Communion. If joining a Grand Communion, his magic skill in the path of the ritual cast by another Grand Communicant will be added to the power of the ritual. Only global spells or dispels are affected."
+#spr "magicenhanced/grandcommunion.png"
 #mainpath 4
 #mainlevel 3
 #grandcom 1
 #type 8
-#constlevel 11 -- 7
+#constlevel 7
 #end
 
 #selectitem 890
@@ -168894,7 +169307,7 @@ Adds Grand Communicant"
 #secondarypath 7
 #secondarypath 1
 #itemcost1 -40
-#itemcost1 -40
+#itemcost2 -40
 #combatcaster 1
 #constlevel 5 -- 5
 #end
@@ -168977,6 +169390,36 @@ Adds Grand Communicant"
 #end
 
 
+#selectitem 897 -- Earthen Pillar
+#spr "magicenhanced/blue_earthrod.png"
+#name "Earthen Pillar"
+#descr "This magical staff is hewn from a great stalactite in a cavern deep within the earth. Its connection to the earth allows one to receive the power of the earth, increasing their stamina and allowing them to empower summoned Earth elementals, increasing their size. The rod is very heavy and will slow the bearer down, and is too heavy for most transportation magic."
+#constlevel 5
+#mainpath 3
+#mainlevel 1
+#type 2 -- 2H
+#weapon 1923 -- Earthen Pillar
+#reinvigoration 2
+#swift -50
+#heavyitem 1
+#earthelementals 1
+#end
+
+#selectitem 898 -- Kelp Lord's Crown
+#name "Kelp Lord's Crown"
+#descr "Allows the Kelp Lord to animate kelp."
+#spr "wateroverhaul/lungweed.tga"
+#constlevel 11
+#mainpath 6
+#mainlevel 1
+#type 8
+#cursed
+#nofind
+#battlesum1d2 7580 -- Kelp Man
+--#spell "Kelp Man Animation"
+#end
+
+
 -- END OF NEW ITEMS (Skip items 881~882)
 
 
@@ -169043,6 +169486,7 @@ Adds Grand Communicant"
 #selectitem 89 -- Standard of the Damned gow 0 -> 250 (1 -> 6 gow)
 #giftofwater 150
 #descr "This standard drains life energy from enemies and adds it to the owner of the standard. The standard also causes fear in all nearby enemies. The holder and those under their command will be able to travel under the sea, as if undead."
+#autospell "Permanent Water Breathing"
 #end
 
 #selectitem 140 -- Vajra
@@ -169261,7 +169705,11 @@ Adds Grand Communicant"
 #end
 
 #selectitem 48 -- Wand of Wild Fire
-#itemcost1 -50
+#descr "The wielder of this wand can shoot Flame Bolts at the enemy, or a mage of Fire can utilize it to empower summoned Fire Elementals, increasing their size."
+#mainlevel 3
+#itemcost1 -67
+#fireelementals 1
+#spell "Wild Fire"
 #end
 
 #selectitem 50 -- lightning Spear
@@ -169811,6 +170259,11 @@ This headband does not require activation in combat."
 #awe 7
 #end
 
+#selectitem 251 -- Robe of the Sea
+#descr "A Water mage who wears this robe will find that it helps him in the use of Water magic. This robe makes it possible for anyone wearing it to breathe underwater and on land. The robe can also be used to empower Water Elementals, increasing their size."
+#waterelementals 1
+#end
+
 #selectitem 256 -- Chainmail of Displacement
 #itemcost1 -50
 #end
@@ -170167,6 +170620,12 @@ This headband does not require activation in combat."
 #constlevel 3
 #itemcost1 -50
 #giftofwater 150
+#autospell "Permanent Water Breathing"
+#end
+
+#selectitem 353 -- Storm Spool
+#descr "An arcane device used to trap and store lightning. This device will increase the effectiveness of the Corpse Man Construction spell. When carried in combat anyone striking its wielder might get stunned by the energy of the storm spool. The caster can also empower summoned Air Elementals with the stored lightning, increasing their size when summoned."
+#airelementals 1
 #end
 
 #selectitem 355 -- Wall Shaker
@@ -170192,7 +170651,7 @@ This headband does not require activation in combat."
 #end
 
 #selectitem 364 -- Manual of Water Breathing
-#descr "The owner of this magic book can grant up to 100 human-sized soldiers the ability to breathe water. At the start of battle, the book's owner will cast a spell that makes fighting underwater more bearable for airbreathing soldiers."
+#descr "The owner of this magic book can grant up to 100 human-sized soldiers the ability to breathe water."
 #itemcost1 -60 -- 4 gems
 #itemcost2 -40 -- 3 gems
 #mainpath 2
@@ -170200,7 +170659,8 @@ This headband does not require activation in combat."
 #mainlevel 2
 #constlevel 3
 #giftofwater 300
-#autospell "Tritons Grace"
+--#autospell "Tritons Grace"
+#autospell "Permanent Water Breathing"
 #end
 
 #selectitem 367 -- Crystal Matrix
@@ -170271,6 +170731,7 @@ This headband does not require activation in combat."
 #itemcost1 -33
 #mainlevel 3
 #giftofwater 750
+--#autospell "Tritons Grace"
 #autospell "Permanent Water Breathing"
 #tmpairgems 1
 #end
@@ -170283,7 +170744,7 @@ This headband does not require activation in combat."
 #descr "This magic item will enable a commander to travel underwater with an army consisting of up to 250 human-sized troops or 100 giants. On the eve of battle, each soldier within the army sips enchanted seawater from the goblet and is blessed by Thetis, granting them the ability to breathe water in perpetuity."
 #itemcost1 -33
 #giftofwater 750
-#autospell "Permanent Water Breathing"
+#autospell "Tritons Grace"
 #tmpwatergems 1
 #end
 
@@ -179989,701 +180450,6 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #addsite 186  -- Great Temple of the Moon
 #end
 
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 3127  -- Keres
-#req_pop0ok
-#msg "One of your Keres broke free and attacked!"
-#killmon 3127
-#assassin 3127
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 3127  -- Keres
-#req_pop0ok
-#msg "One of your Keres broke free and attacked!"
-#killmon 3127
-#assassin 3127
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 1357  -- Beast Bat
-#req_pop0ok
-#msg "One of your Beast Bats broke free and attacked!"
-#killmon 1357
-#assassin 1357
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 1357  -- Beast Bat
-#req_pop0ok
-#msg "One of your Beast Bats broke free and attacked!"
-#killmon 1357
-#assassin 1357
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 1356  -- Ozelotl
-#req_pop0ok
-#msg "One of your Jaguar Fiends broke free and attacked!"
-#killmon 1356  -- Ozelotl
-#assassin 1356  -- Ozelotl
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 1356  -- Ozelotl
-#req_pop0ok
-#msg "One of your Jaguar Fiends broke free and attacked!"
-#killmon 1356  -- Ozelotl
-#assassin 1356  -- Ozelotl
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 1483  -- Tzitzimitl
-#req_pop0ok
-#msg "One of your Tzitzimitl broke free and attacked!"
-#killmon 1483  -- Tzitzimitl
-#assassin 1483  -- Tzitzimitl
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 1483  -- Tzitzimitl
-#req_pop0ok
-#msg "One of your Tzitzimitl broke free and attacked!"
-#killmon 1483  -- Tzitzimitl
-#assassin 1483  -- Tzitzimitl
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_targmnr 7119 -- Bound Jinn
-#req_pop0ok
-#msg "One of your Jinn has broken free and escaped!"
-#killcom 7119 -- Bound Jinn
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 7120 -- Bound Jinn Warrior
-#req_pop0ok
-#msg "One of your Jinn Warriors broke free and attacked!"
-#killmon 7120 -- Bound Jinn Warrior
-#assassin 7120 -- Bound Jinn Warrior
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 7120 -- Bound Jinn Warrior
-#req_pop0ok
-#msg "One of your Jinn Warriors broke free and attacked!"
-#killmon 7120 -- Bound Jinn Warrior
-#assassin 7120 -- Bound Jinn Warrior
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 2497  -- Penumbral
-#req_pop0ok
-#msg "One of your Penumbrals broke free and attacked!"
-#killmon 2497  -- Penumbral
-#assassin 2497  -- Penumbral
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 2497  -- Penumbral
-#req_pop0ok
-#msg "One of your Penumbrals broke free and attacked!"
-#killmon 2497  -- Penumbral
-#assassin 2497  -- Penumbral
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 1490  -- Umbral
-#req_pop0ok
-#msg "One of your Umbrals broke free and attacked!"
-#killmon 1490  -- Umbral
-#assassin 1490  -- Umbral
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 1490  -- Umbral
-#req_pop0ok
-#msg "One of your Umbrals broke free and attacked!"
-#killmon 1490  -- Umbral
-#assassin 1490  -- Umbral
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 6773 -- Demon Owl
-#req_pop0ok
-#msg "One of your Demon Owls broke free and attacked!"
-#killmon 6773 -- Demon Owl
-#assassin 6773 -- Demon Owl
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 6773 -- Demon Owl
-#req_pop0ok
-#msg "One of your Demon Owls broke free and attacked!"
-#killmon 6773 -- Demon Owl
-#assassin 6773 -- Demon Owl
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 6774 -- Soul Eater
-#req_pop0ok
-#msg "One of your Soul Eaters broke free and attacked!"
-#killmon 6774 -- Soul Eater
-#assassin 6774 -- Soul Eater
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 6774 -- Soul Eater
-#req_pop0ok
-#msg "One of your Soul Eaters broke free and attacked!"
-#killmon 6774 -- Soul Eater
-#assassin 6774 -- Soul Eater
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_targmnr 6775 -- Black One
-#req_pop0ok
-#msg "One of your Black Ones has broken free and escaped!"
-#killcom 6775 -- Black One
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 303  -- Imp
-#req_pop0ok
-#msg "One of your Imps broke free and attacked!"
-#killmon 303  -- Imp
-#assassin 303  -- Imp
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 303  -- Imp
-#req_pop0ok
-#msg "One of your Imps broke free and attacked!"
-#killmon 303  -- Imp
-#assassin 303  -- Imp
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 2286  -- Fiery Imp
-#req_pop0ok
-#msg "One of your Imps broke free and attacked!"
-#killmon 2286  -- Fiery Imp
-#assassin 2286  -- Fiery Imp
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 2286  -- Fiery Imp
-#req_pop0ok
-#msg "One of your Imps broke free and attacked!"
-#killmon 2286  -- Fiery Imp
-#assassin 2286  -- Fiery Imp
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 638  -- Spine Devil
-#req_pop0ok
-#msg "One of your Spine Devils broke free and attacked!"
-#killmon 638  -- Spine Devil
-#assassin 638  -- Spine Devil
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 638  -- Spine Devil
-#req_pop0ok
-#msg "One of your Spine Devils broke free and attacked!"
-#killmon 638  -- Spine Devil
-#assassin 638  -- Spine Devil
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 88  -- Fiend of Darkness
-#req_pop0ok
-#msg "One of your Fiends of Darkness broke free and attacked!"
-#killmon 88  -- Fiend of Darkness
-#assassin 88  -- Fiend of Darkness
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 88  -- Fiend of Darkness
-#req_pop0ok
-#msg "One of your Fiends of Darkness broke free and attacked!"
-#killmon 88  -- Fiend of Darkness
-#assassin 88  -- Fiend of Darkness
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 304  -- Devil
-#req_pop0ok
-#msg "One of your Devils broke free and attacked!"
-#killmon 304  -- Devil
-#assassin 304  -- Devil
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 304  -- Devil
-#req_pop0ok
-#msg "One of your Devils broke free and attacked!"
-#killmon 304  -- Devil
-#assassin 304  -- Devil
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 449  -- Frost Fiend
-#req_pop0ok
-#msg "One of your Frost Fiends broke free and attacked!"
-#killmon 449  -- Frost Fiend
-#assassin 449  -- Frost Fiend
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 449  -- Frost Fiend
-#req_pop0ok
-#msg "One of your Frost Fiends broke free and attacked!"
-#killmon 449  -- Frost Fiend
-#assassin 449  -- Frost Fiend
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 526  -- Serpent Fiend
-#req_pop0ok
-#msg "One of your Serpent Fiends broke free and attacked!"
-#killmon 526  -- Serpent Fiend
-#assassin 526  -- Serpent Fiend
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 526  -- Serpent Fiend
-#req_pop0ok
-#msg "One of your Serpent Fiends broke free and attacked!"
-#killmon 526  -- Serpent Fiend
-#assassin 526  -- Serpent Fiend
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 632  -- Storm Demon
-#req_pop0ok
-#msg "One of your Storm Demons broke free and attacked!"
-#killmon 632  -- Storm Demon
-#assassin 632  -- Storm Demon
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 632  -- Storm Demon
-#req_pop0ok
-#msg "One of your Storm Demons broke free and attacked!"
-#killmon 632  -- Storm Demon
-#assassin 632  -- Storm Demon
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 489  -- Demon Knight
-#req_pop0ok
-#msg "One of your Demon Knights broke free and attacked!"
-#killmon 489  -- Demon Knight
-#assassin 489  -- Demon Knight
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_5monsters 489  -- Demon Knight
-#req_pop0ok
-#msg "One of your Demon Knights broke free and attacked!"
-#killmon 489  -- Demon Knight
-#assassin 489  -- Demon Knight
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 306
-#req_pop0ok
-#msg "Nycafor broke free from their binding and has escaped!"
-#killcom 306
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 821
-#req_pop0ok
-#msg "Oriax broke free from their binding and has escaped!"
-#killcom 821
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 822
-#req_pop0ok
-#msg "Gaap broke free from their binding and has escaped!"
-#killcom 822
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 823
-#req_pop0ok
-#msg "Bifrons broke free from their binding and has escaped!"
-#killcom 823
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 824
-#req_pop0ok
-#msg "Cimejes broke free from their binding and has escaped!"
-#killcom 824
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 825
-#req_pop0ok
-#msg "Bune broke free from their binding and has escaped!"
-#killcom 825
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 305
-#req_pop0ok
-#msg "Buriol broke free from their binding and has escaped!"
-#killcom 305
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 826
-#req_pop0ok
-#msg "Ethanim broke free from their binding and has escaped!"
-#killcom 826
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 827
-#req_pop0ok
-#msg "Furcas broke free from their binding and has escaped!"
-#killcom 827
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 828
-#req_pop0ok
-#msg "Magoth broke free from their binding and has escaped!"
-#killcom 828
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 829
-#req_pop0ok
-#msg "Igarak broke free from their binding and has escaped!"
-#killcom 829
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 492
-#req_pop0ok
-#msg "Mastema broke free from their binding and has escaped!"
-#killcom 492
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 818
-#req_pop0ok
-#msg "Amaimon broke free from their binding and has escaped!"
-#killcom 818
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 819
-#req_pop0ok
-#msg "Gorilon broke free from their binding and has escaped!"
-#killcom 819
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 820
-#req_pop0ok
-#msg "Mabakiel broke free from their binding and has escaped!"
-#killcom 820
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 446
-#req_pop0ok
-#msg "Pazuzu has broken free from their binding and has escaped, swearing revenge on ##godname##!"
-#killcom 446
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 810
-#req_pop0ok
-#msg "Belphegor has broken free from their binding and has escaped, swearing revenge on ##godname##!"
-#killcom 810
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 900
-#req_pop0ok
-#msg "Belial has broken free from their binding and has escaped, swearing revenge on ##godname##!"
-#killcom 900
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 1405
-#req_pop0ok
-#msg "Buer has broken free from their binding and has escaped, swearing revenge on ##godname##!"
-#killcom 1405
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 2277
-#req_pop0ok
-#msg "Geryon has broken free from their binding and has escaped, swearing revenge on ##godname##!"
-#killcom 2277
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 2278
-#req_pop0ok
-#msg "Ashmedai broke free from their binding and has escaped!"
-#killcom 2278
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_rare 5
-#req_ench 211 -- Ench11  -- Solomon's Demise
-#req_monster 7667
-#req_pop0ok
-#msg "Lilith broke free from her binding and has escaped!"
-#killcom 7667
-#nolog
-#end
 
 #newevent
 #rarity 5
