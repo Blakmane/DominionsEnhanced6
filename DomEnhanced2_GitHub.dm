@@ -136497,6 +136497,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 1 1
 #restricted 13 -- EA Ulm
 #restricted 60 -- MA Ulm
+#restricted 124 -- LA Zemaitia
 #end
 
 #selectspell 2453
@@ -136515,6 +136516,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #spec 8536192  -- Ignores armor & shields, UW OK, no effect on mindless.
 #restricted 13 -- EA Ulm
 #restricted 60 -- MA Ulm
+#restricted 124 -- LA Zemaitia
 #end
 
 #selectspell 2454
@@ -136532,6 +136534,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #restricted 13 -- EA Ulm
 #restricted 60 -- MA Ulm
 #restricted 101 -- LA Ulm
+#restricted 124 -- LA Zemaitia
 #end
 
 #selectspell 2455
@@ -136549,6 +136552,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #restricted 13 -- EA Ulm
 #restricted 60 -- MA Ulm
 #restricted 101 -- LA Ulm
+#restricted 124 -- LA Zemaitia
 #end
 
 #selectspell 2456
@@ -136598,6 +136602,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #restricted 13 -- EA Ulm
 #restricted 60 -- MA Ulm
 #restricted 101 -- LA Ulm
+#restricted 124 -- LA Zemaitia
 #end
 
 #selectspell 2460
@@ -136773,6 +136778,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #spec 8667264  -- AN, ignores shields, enemies only, UW OK
 #restricted 13 -- EA Ulm
 #restricted 60 -- MA Ulm
+#restricted 124 -- LA Zemaitia
 #end
 
 #selectspell 2472
@@ -138942,6 +138948,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #restricted 16 -- EA Abysia
 #restricted 63 -- MA Abysia
 #restricted 104 -- LA Abysia
+#restricted 124 -- LA Zemaitia
 #end
 
 #selectspell 2627
