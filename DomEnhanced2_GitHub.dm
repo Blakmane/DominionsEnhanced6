@@ -4038,6 +4038,7 @@
 --#copyweapon 440 -- Lesser Fear
 #name "Gaze of Fear"
 #aoe 5
+#natural
 #range 40
 #att 100
 #ammo 3
@@ -4112,6 +4113,7 @@
 #range 70
 #nratt -2
 #aoe 1
+#natural
 #notdismounted
 #bonus
 #secondaryeffectalways 1910
@@ -4131,8 +4133,8 @@
 #ammo 1
 #range 20
 --#mrnegateseasily
-#dmg 4
-#range0
+#dmg 3
+--#range0
 #end
 
 #newweapon 1914 -- Nightmare
@@ -4209,6 +4211,7 @@
 #precision 2
 #blunt
 #magic
+#natural
 #secondaryeffectalways 1920
 #sound 16 -- flames
 #flyspr 362 4 -- Fire boulder
@@ -4226,6 +4229,7 @@
 #mrnegateseasily
 #bonus
 #mind
+#natural
 #end
 
 #newweapon 1915 -- Area Weakness
@@ -4244,6 +4248,7 @@
 #hardmrneg
 #bonus
 #mind
+#natural
 #sound 16 -- Flame Strike
 --#explspr 10075 -- Few white lights
 #secondaryeffectalways 1922
@@ -29822,24 +29827,6 @@ While in the form of an old man, all paths are increased and allows the use of N
 #chorusmaster
 #end
 
-#newmonster 7479
-#copystats 7478 -- Awakened Tree
-#copyspr 7478 -- Awakened Tree
-#name "Ancient Tree"
-#descr "This is a mage that has permanently transferred their spirit into a tree using powerful nature magic. Trees are very robust and can sweep away enemies with their branches. They can hide themselves by appearing as a normal tree to evade detection. In the summer and in lands of Growth their sap runs high, however in the winter or lands strong in Death they will wither and their powers are reduced."
-#miscshape
-#spiritsight
-#immobile
-#bonusspells 1
-#ap 2
-#mr 16
-#mapmove 0
-#stealthy 0
-#montag 1021
-#nametype 145  -- Wooden Creatures
-#twiceborn 7480 -- Tree of Hate
-#end
-
 #newmonster 7478
 #copystats 330  -- Dark Vine
 #clearweapons
@@ -29919,6 +29906,24 @@ While in the form of an old man, all paths are increased and allows the use of N
 #weapon 240  -- Branch
 #weapon 240  -- Branch
 #nametype 145  -- Wooden Creatures
+#end
+
+#newmonster 7479
+#copystats 7478 -- Awakened Tree
+#copyspr 7478 -- Awakened Tree
+#name "Ancient Tree"
+#descr "This is a mage that has permanently transferred their spirit into a tree using powerful nature magic. Trees are very robust and can sweep away enemies with their branches. They can hide themselves by appearing as a normal tree to evade detection. In the summer and in lands of Growth their sap runs high, however in the winter or lands strong in Death they will wither and their powers are reduced."
+#miscshape
+#spiritsight
+#immobile
+#bonusspells 1
+#ap 2
+#mr 16
+#mapmove 0
+#stealthy 0
+#montag 1021
+#nametype 145  -- Wooden Creatures
+#twiceborn 7480 -- Tree of Hate
 #end
 
 #newmonster 7482
@@ -65646,7 +65651,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #spr2 "houssa/9603_2_hausa_crossbowman.png"
 #gcost 10010
 #rcost 1
-#rpcost 14000
+#rpcost 7
 #hp 10
 #str 10
 #att 8
@@ -89127,6 +89132,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #armor 570 -- Half Plate
 #armor 20 -- Cap
 #gcost 10016
+#rpcost 8
 #coldres -3
 #end
 
@@ -89142,6 +89148,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #armor 570 -- Half Plate
 #armor 20 -- cap
 #gcost 10016
+#rpcost 8
 #coldres -3
 #end
 
@@ -89158,6 +89165,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #armor 4 -- Tower Shield
 #prot 3
 #gcost 10016
+#rpcost 8
 #coldres -3
 #end
 
@@ -89174,6 +89182,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #armor 20 -- cap
 #armor 4 -- Tower Shield
 #gcost 10016
+#rpcost 8
 #coldres -3
 #end
 
@@ -97187,6 +97196,109 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #magicpower 1
 #end
 
+#selectmonster 4068 -- Zemaite Archer
+#nametype 189
+#end
+
+#selectmonster 4069 -- Zemaite Warrior
+#nametype 189
+#end
+
+#selectmonster 4070 -- Zemaite Warrior
+#nametype 189
+#end
+
+#selectmonster 4071 -- Zemaite Infantry
+#nametype 189
+#end
+
+#selectmonster 4072 -- Zemaite Heavy Infantry
+#nametype 189
+#end
+
+#selectmonster 4073 -- Zemaite Chud Warrior
+#nametype 189
+#end
+
+#selectmonster 4074 -- Zemaite Crossbowman
+#nametype 189
+#end
+
+#selectmonster 4073 -- Zemaite Chud Warrior
+#nametype 189
+#end
+
+#selectmonster 4077 -- Zemaite Skinshifter
+#nametype 189
+#end
+
+#selectmonster 4079 -- Zemaite Chud Skins...
+#nametype 189
+#end
+
+#selectmonster 4090 -- Sylvan Knight
+#nametype 189
+#end
+
+#selectmonster 4081 -- Scout
+#nametype 189
+#end
+
+#selectmonster 4082 -- Zemaite Chieftain
+#nametype 189
+#end
+
+#selectmonster 4083 -- Seniunas
+#nametype 189
+#end
+
+#selectmonster 4085 -- Vedun
+#nametype 189
+#end
+
+#selectmonster 4081 -- Scout
+#nametype 189
+#end
+
+#selectmonster 4082 -- Zemaite Chieftain
+#nametype 189
+#end
+
+#selectmonster 4084 -- Chud Seniunas
+#nametype 189
+#end
+
+#selectmonster 4085 -- Vedun
+#nametype 189
+#end
+
+#selectmonster 4086 -- Chud Vedun
+#nametype 189
+#end
+
+#selectmonster 4084 -- Chud Seniunas
+#nametype 189
+#end
+
+#selectmonster 4086 -- Chud Vedun
+#nametype 189
+#end
+
+#selectmonster 4087 -- Antlered Vedun
+#nametype 189
+#end
+
+#selectmonster 4089 -- Antlered Hochmeister
+#nametype 189
+#end
+
+#selectmonster 4092 -- Lauma
+#nametype 190
+#end
+
+
+
+
 -- END OF VANILLA MONSTER CHANGES
 
 -- START OF LOW MR BUFFS
@@ -100791,7 +100903,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #armor 158 -- Robes
 #end
 
-#selectmonster 3989 -- Small Animated Shrub
+#selectmonster 3982 -- Gnome
 #armor 158 -- Robes
 #end
 
@@ -112258,6 +112370,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 -- ENDUNITS END OF SHAPE CHANGE MONSTERS
 
 
+
+
 #selectnametype 170
 #addname "Fuqtus"
 #addname "Mrd"
@@ -114355,6 +114469,810 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #addname "The Young King"
 #addname "The Zealous"
 #end
+
+
+
+#selectnametype 189 -- LA Zemaitia Male fixing "No Name" bug
+#addname "Anakletas"
+#addname "Kanapinskas"
+#addname "Vytautas"
+#addname "Dulinskas"
+#addname "Kipras"
+#addname "Jozelenas"
+#addname "Emilijus"
+#addname "Atkociunas"
+#addname "Zenonas"
+#addname "Nececkas"
+#addname "Deividas"
+#addname "Lesevicius"
+#addname "Balys"
+#addname "Gircys"
+#addname "Martynas"
+#addname "Chaleckas"
+#addname "Evaldas"
+#addname "Langas"
+#addname "Dionizas"
+#addname "Grigelis"
+#addname "Pijus"
+#addname "Kviecinskas"
+#addname "Mantas"
+#addname "Kanapkis"
+#addname "Gražvydas"
+#addname "Saldaitis"
+#addname "Leonas"
+#addname "Sipaila"
+#addname "Kestutis"
+#addname "Petryla"
+#addname "Liudvikas"
+#addname "Levanauskas"
+#addname "Napalys"
+#addname "Drusutis"
+#addname "Kulbys"
+#addname "Vieraitis"
+#addname "Mamertas"
+#addname "Miliauskas"
+#addname "Jonas"
+#addname "Vileika"
+#addname "Eduardas"
+#addname "Gintaras"
+#addname "Noreikavicius"
+#addname "Skaistis"
+#addname "Bzezinskas"
+#addname "Eimantas"
+#addname "Krizanauskas"
+#addname "Ulijonas"
+#addname "Ezerskis"
+#addname "Stanislovas"
+#addname "Rabacauskas"
+#addname "Teodoras"
+#addname "Zvalauskas"
+#addname "Modestas"
+#addname "Vienazindis"
+#addname "Zigmas"
+#addname "Jasaitis"
+#addname "Alfonsas"
+#addname "Dukynas"
+#addname "Mykolas"
+#addname "Gintautas"
+#addname "Vladislovas"
+#addname "Sakurskis"
+#addname "Jaseliunas"
+#addname "Pranas"
+#addname "Legas"
+#addname "Emilis"
+#addname "Janickas"
+#addname "Aurimas"
+#addname "Kantautas"
+#addname "Oskaras"
+#addname "Kamorunas"
+#addname "Žygimantas"
+#addname "Nikstele"
+#addname "Kristupas"
+#addname "Judeikis"
+#addname "Mindaugas"
+#addname "Buzius"
+#addname "Gustavas"
+#addname "Petruitis"
+#addname "Girenas"
+#addname "Kiskiunas"
+#addname "Valdemaras"
+#addname "Biriukas"
+#addname "Vytis"
+#addname "Veitas"
+#addname "Aivaras"
+#addname "Lianzbergas"
+#addname "Dainius"
+#addname "Lanekeris"
+#addname "Edvinas"
+#addname "Sirka"
+#addname "Marijus"
+#addname "Opcikas"
+#addname "Lauras"
+#addname "Josiukas"
+#addname "Aurelijus"
+#addname "Krauleidys"
+#addname "Venckevicius"
+#addname "Orestas"
+#addname "Leskys"
+#addname "Saulenis"
+#addname "Repecka"
+#addname "Kajetonas"
+#addname "Belozaras"
+#addname "Albertas"
+#addname "Vegelis"
+#addname "Romualdas"
+#addname "Vilbutas"
+#addname "Celestinas"
+#addname "Kiskionis"
+#addname "Kisielius"
+#addname "Elvinas"
+#addname "Girstautas"
+#addname "Žydrunas"
+#addname "Sakalinskas"
+#addname "Bajoraitis"
+#addname "Feliksas"
+#addname "Gecevicius"
+#addname "Jokubas"
+#addname "Dicbanis"
+#addname "Kestas"
+#addname "Grikala"
+#addname "Vainius"
+#addname "Suliokas"
+#addname "Apolinaras"
+#addname "Ceckevicius"
+#addname "Karolis"
+#addname "Bedulskis"
+#addname "Raimondas"
+#addname "Puzinauskas"
+#addname "Renatas"
+#addname "Ulcinas"
+#addname "Skomantas"
+#addname "Nevirauskas"
+#addname "Romas"
+#addname "Gudelis"
+#addname "Benediktas"
+#addname "Mikas"
+#addname "Gedgaudas"
+#addname "Juras"
+#addname "Gira"
+#addname "Bernardas"
+#addname "Martinka"
+#addname "Jogaila"
+#addname "Glemza"
+#addname "Jaselis"
+#addname "Andrius"
+#addname "Brazas"
+#addname "Adomas"
+#addname "Banys"
+#addname "Liucijus"
+#addname "Lionginas"
+#addname "Oniunas"
+#addname "Aistis"
+#addname "Grinciunas"
+#addname "Kuzma"
+#addname "Vainikevicius"
+#addname "Gabrielius"
+#addname "Norgilas"
+#addname "Juozapas"
+#addname "Vigontas"
+#addname "Vilhelmas"
+#addname "Meskela"
+#addname "Šarunas"
+#addname "Ancevicius"
+#addname "Ažuolas"
+#addname "Zuoza"
+#addname "Kastytis"
+#addname "Rumsa"
+#addname "Vakaris"
+#addname "Svidrauskas"
+#addname "Virgilijus"
+#addname "Buika"
+#addname "Vaidas"
+#addname "Kastecka"
+#addname "Spokas"
+#addname "Vilmanas"
+#addname "Julius"
+#addname "Bakas"
+#addname "Jankauskas"
+#addname "Depolskis"
+#addname "Nerijus"
+#addname "Neifaltas"
+#addname "Krogertas"
+#addname "Adolfas"
+#addname "Chodakauskas"
+#addname "Justas"
+#addname "Maceika"
+#addname "Giedrius"
+#addname "Kostas"
+#addname "Suliauskas"
+#addname "Valerijonas"
+#addname "Jurkunas"
+#addname "Vincas"
+#addname "Krapavickas"
+#addname "Nekvedavicius"
+#addname "Pakulnis"
+#addname "Dominykas"
+#addname "Brazaitis"
+#addname "Navikauskas"
+#addname "Henrikas"
+#addname "Jonyla"
+#addname "Ricardas"
+#addname "Vaira"
+#addname "Radvilas"
+#addname "Legeckas"
+#addname "Vincentas"
+#addname "Rumbutis"
+#addname "Nolis"
+#addname "Baltrus"
+#addname "Kuslys"
+#addname "Bandzevicius"
+#addname "Vytenis"
+#addname "Palaitis"
+#addname "Stragis"
+#addname "Svikstys"
+#addname "Krutulis"
+#addname "Straigis"
+#addname "Jeronimas"
+#addname "Stravinskas"
+#addname "Paksys"
+#addname "Umantas"
+#addname "Stepas"
+#addname "Valentas"
+#addname "Birzys"
+#addname "Salemonas"
+#addname "Glasas"
+#addname "Mikalojus"
+#addname "Danisevicius"
+#addname "Titas"
+#addname "Krasnadamskis"
+#addname "Vygintas"
+#addname "Lankas"
+#addname "Arminas"
+#addname "Talocka"
+#addname "Eligijus"
+#addname "Petrulis"
+#addname "Giniunas"
+#addname "Rabacius"
+#addname "Vidmantas"
+#addname "Ulozas"
+#addname "Kunstas"
+#addname "Žilvinas"
+#addname "Rezas"
+#addname "Vaisnora"
+#addname "Tomas"
+#addname "Sulaitis"
+#addname "Morkus"
+#addname "Suksta"
+#addname "Kelmelis"
+#addname "Pavlavicius"
+#addname "Ipolitas"
+#addname "Navikas"
+#addname "Sviderskis"
+#addname "Sperauskas"
+#addname "Gvidonas"
+#addname "Spirkavicius"
+#addname "Tadas"
+#addname "Vingrys"
+#addname "Marius"
+#addname "Speicys"
+#addname "Kanapickas"
+#addname "Jeckus"
+#addname "Vinkauskas"
+#addname "Asutaitis"
+#addname "Hubertas"
+#addname "Žymantas"
+#addname "Izidorius"
+#addname "Gintas"
+#addname "Julijonas"
+#addname "Sukadolskis"
+#addname "Naglis"
+#addname "Brazevicius"
+#addname "Jurgis"
+#addname "Pakstaitis"
+#addname "Kraveckis"
+#addname "Bagdonas"
+#addname "Kulbis"
+#addname "Macinskas"
+#addname "Vincevicius"
+#addname "Laimis"
+#addname "Levickas"
+#addname "Musteikis"
+#addname "Ugnius"
+#addname "Ulba"
+#addname "Kusleika"
+#addname "Petrulionis"
+#addname "Baltramiejus"
+#addname "Palavinskas"
+#addname "Mantvydas"
+#addname "Veiksas"
+#addname "Algimantas"
+#addname "Krusinskas"
+#addname "Gytis"
+#addname "Sviackis"
+#addname "Inocentas"
+#addname "Ulcickas"
+#addname "Ramunas"
+#addname "Radavicius"
+#addname "Onaitis"
+#addname "Švitrigaila"
+#addname "Muzikevicius"
+#addname "Albinas"
+#addname "Jukna"
+#addname "Bronius"
+#addname "Bagurskis"
+#addname "Anupras"
+#addname "Danenas"
+#addname "Boleslovas"
+#addname "Brazionis"
+#addname "Vinickis"
+#addname "Joakimas"
+#addname "Pauliukaitis"
+#addname "Ernestas"
+#addname "Gudeliunas"
+#addname "Lydekaitis"
+#addname "Zuzevicius"
+#addname "Jasenas"
+#addname "Vitalijus"
+#addname "Bukauskas"
+#addname "Cikas"
+#addname "Kizlaitis"
+#addname "Leipus"
+#addname "Jucevicius"
+#addname "Kanys"
+#addname "Rulys"
+#addname "Buksaitis"
+#addname "Gudzevicius"
+#addname "Audrius"
+#addname "Pyragius"
+#addname "Herkus"
+#addname "Drutys"
+#addname "Leonardas"
+#addname "Orintas"
+#addname "Žygis"
+#addname "Macaitis"
+#addname "Sinkavicius"
+#addname "Didzgalvis"
+#addname "Sostakauskas"
+#addname "Gulbinas"
+#addname "Vaclovas"
+#addname "Runta"
+#addname "Laurynas"
+#addname "Sakavicius"
+#addname "Liudas"
+#addname "Zurauskas"
+#addname "Gataveckas"
+#addname "Augustinas"
+#addname "Andrasunas"
+#addname "Leikauskas"
+#addname "Klepeckas"
+#addname "Ivanauskas"
+#addname "Bajorunas"
+#addname "Lapenas"
+#addname "Virginijus"
+#addname "Vekerotas"
+#addname "Teofilis"
+#addname "Kulbe"
+#addname "Kantaravicius"
+#addname "Jarosekas"
+#addname "Griliauskas"
+#addname "Kasparas"
+#addname "Martisauskas"
+#addname "Gausas"
+#addname "Vainikonis"
+#addname "Cinsas"
+#addname "Velykis"
+#addname "Runkauskas"
+#addname "Norkus"
+#addname "Kleopas"
+#addname "Milkeraitis"
+#addname "Severinas"
+#addname "Remezas"
+#addname "Ruseckas"
+#addname "Rusas"
+#addname "Lazaunikas"
+#addname "Valdas"
+#addname "Stramaitis"
+#addname "Udrys"
+#addname "Vileisis"
+#addname "Mecys"
+#addname "Zutelis"
+#addname "Skirgaila"
+#addname "Vaiksnoras"
+#addname "Osvaldas"
+#addname "Paulikas"
+#addname "Zurinskas"
+#addname "Omelis"
+#addname "Vladas"
+#addname "Svilainis"
+
+#selectnametype 190 -- LA Zemaitia female fixing "No Name" bug
+#addname "Agniete"
+#addname "Dereskaite"
+#addname "Katre"
+#addname "Srajeryte"
+#addname "Dagne"
+#addname "Kantautaite"
+#addname "Audra"
+#addname "Viliusyte"
+#addname "Doroteja"
+#addname "Stramaityte"
+#addname "Diana"
+#addname "Kaniusiene"
+#addname "Rozalija"
+#addname "Cikiene"
+#addname "Eugenija"
+#addname "Kuodiene"
+#addname "Venckuviene"
+#addname "Cecilija"
+#addname "Semetulskiene"
+#addname "Ciapaite"
+#addname "Šarune"
+#addname "Marmakevicius"
+#addname "Frida"
+#addname "Girutyte"
+#addname "Aura"
+#addname "Petruityte"
+#addname "Gerda"
+#addname "Jasikaite"
+#addname "Svaja"
+#addname "Žvingeliene"
+#addname "Brone"
+#addname "Kantaraviciene"
+#addname "Domante"
+#addname "Didziuliene"
+#addname "Valerija"
+#addname "Krizinauskiene"
+#addname "Jomante"
+#addname "Gudeniene"
+#addname "Elze"
+#addname "Kemezyte"
+#addname "Dange"
+#addname "Pajaujyte"
+#addname "Migle"
+#addname "Uleviciute"
+#addname "Marijona"
+#addname "Kristonaityte"
+#addname "Vida"
+#addname "Bironaite"
+#addname "Vidugiriene"
+#addname "Skaidrina"
+#addname "Kleinickiene"
+#addname "Rita"
+#addname "Novikiene"
+#addname "Bernadeta"
+#addname "Cilciene"
+#addname "Juta"
+#addname "Krupaviciene"
+#addname "Žydre"
+#addname "Brazdziute"
+#addname "Živile"
+#addname "Vilniskaityte"
+#addname "Magde"
+#addname "Sudziute"
+#addname "Gina"
+#addname "Zuselyte"
+#addname "Jurate"
+#addname "Spakauskaite"
+#addname "Teofile"
+#addname "Pranskuniene"
+#addname "Stefanija"
+#addname "Leskeviciene"
+#addname "Alma"
+#addname "Bedulskiene"
+#addname "Inge"
+#addname "Juskeliuniene"
+#addname "Ruta"
+#addname "Uginciene"
+#addname "Grinceviciute"
+#addname "Magdalena"
+#addname "Juskaite"
+#addname "Kunigunda"
+#addname "Bradunaite"
+#addname "Indre"
+#addname "Bikinaite"
+#addname "Sabina"
+#addname "Brazenaite"
+#addname "Daiva"
+#addname "Naidiciene"
+#addname "Palmira"
+#addname "Žvirbliene"
+#addname "Vaiva"
+#addname "Pajediene"
+#addname "Sukiene"
+#addname "Egle"
+#addname "Lapauskiene"
+#addname "Siraviciute"
+#addname "Venclovaite"
+#addname "Evelina"
+#addname "Diciute"
+#addname "Benedikta"
+#addname "Girniute"
+#addname "Ledaite"
+#addname "Nijole"
+#addname "Jaruseviciene"
+#addname "Lolita"
+#addname "Paleviciene"
+#addname "Liucina"
+#addname "Leseckiene"
+#addname "Meskeliene"
+#addname "Sigita"
+#addname "Ceckeviciene"
+#addname "Kazimiera"
+#addname "Jarosekaite"
+#addname "Skaiste"
+#addname "Banionyte"
+#addname "Jura"
+#addname "Naciunaite"
+#addname "Auksuole"
+#addname "Banyte"
+#addname "Laisve"
+#addname "Petrosiute"
+#addname "Mante"
+#addname "Umantiene"
+#addname "Vileikiene"
+#addname "Andželika"
+#addname "Venceviciene"
+#addname "Uršule"
+#addname "Grigeniene"
+#addname "Muskietaite"
+#addname "Rumcikaite"
+#addname "Norgelaite"
+#addname "Janina"
+#addname "Vatneryte"
+#addname "Karolina"
+#addname "Cimolonskyte"
+#addname "Paula"
+#addname "Birgiliene"
+#addname "Petre"
+#addname "Strazdiene"
+#addname "Sriubiene"
+#addname "Dana"
+#addname "Lazareviciene"
+#addname "Fida"
+#addname "Ulevskiene"
+#addname "Norgailaite"
+#addname "Opcikaite"
+#addname "Alge"
+#addname "Norkeliunaite"
+#addname "Jurgita"
+#addname "Kasperaviciute"
+#addname "Marcele"
+#addname "Meskelyte"
+#addname "Ernesta"
+#addname "Zutoniene"
+#addname "Ilma"
+#addname "Vekerotiene"
+#addname "Danieliene"
+#addname "Ogilviene"
+#addname "Aukse"
+#addname "Vilcinskiene"
+#addname "Laima"
+#addname "Lusyte"
+#addname "Goda"
+#addname "Lanekeryte"
+#addname "Bite"
+#addname "Kuosaite"
+#addname "Dorota"
+#addname "Cicenaite"
+#addname "Adelina"
+#addname "Palcauskaite"
+#addname "Mingaile"
+#addname "Krusnauskiene"
+#addname "Natalija"
+#addname "Grinceliene"
+#addname "Aušra"
+#addname "Ginkuviene"
+#addname "Elinga"
+#addname "Svilponiene"
+#addname "Krumskiene"
+#addname "Neringa"
+#addname "Velyvyte"
+#addname "Gyte"
+#addname "Omelyte"
+#addname "Straigyte"
+#addname "Rusinaite"
+#addname "Agota"
+#addname "Gauliaite"
+#addname "Almante"
+#addname "Pranskeviciene"
+#addname "Brigita"
+#addname "Janciuviene"
+#addname "Akvile"
+#addname "Lanekeriene"
+#addname "Žvinakeviciene"
+#addname "Dumasiuviene"
+#addname "Džiuginta"
+#addname "Sruogaite"
+#addname "Rimante"
+#addname "Spudikaite"
+#addname "Rože"
+#addname "Jovarauskaite"
+#addname "Bujanauskaite"
+#addname "Daniele"
+#addname "Muzikeviciute"
+#addname "Petrusauskiene"
+#addname "Jaseliuniene"
+#addname "Aldona"
+#addname "Girciene"
+#addname "Danileviciene"
+#addname "Ale"
+#addname "Vidzickiene"
+#addname "Gaiva"
+#addname "Kiviliute"
+#addname "Eglija"
+#addname "Vaiciulionyte"
+#addname "Milda"
+#addname "Mikolajunaite"
+#addname "Sulcaite"
+#addname "Vika"
+#addname "Deveikyte"
+#addname "Marta"
+#addname "Reziene"
+#addname "Amelija"
+#addname "Nezabitauskiene"
+#addname "Giedra"
+#addname "Bavarskiene"
+#addname "Kristina"
+#addname "Maceniene"
+#addname "Caplikiene"
+#addname "Juceviciute"
+#addname "Adele"
+#addname "Puzinaite"
+#addname "Inga"
+#addname "Seperyte"
+#addname "Aide"
+#addname "Žiede"
+#addname "Bauzyte"
+#addname "Paksiene"
+#addname "Silvija"
+#addname "Vailenkiene"
+#addname "Lina"
+#addname "Arstikaitiene"
+#addname "Dalia"
+#addname "Straziene"
+#addname "Kanisauskiene"
+#addname "Saulene"
+#addname "Birulinaite"
+#addname "Spirikeviciute"
+#addname "Alsauskaite"
+#addname "Ilona"
+#addname "Arlauskaite"
+#addname "Elzbieta"
+#addname "Zuralyte"
+#addname "Roberta"
+#addname "Martinoniene"
+#addname "Jasikiene"
+#addname "Semplinskiene"
+#addname "Liberiene"
+#addname "Vebriene"
+#addname "Valentina"
+#addname "Udaviciute"
+#addname "Jone"
+#addname "Chaleckaite"
+#addname "Aine"
+#addname "Kriukelyte"
+#addname "Ambrazeviciute"
+#addname "Emilija"
+#addname "Palciene"
+#addname "Polina"
+#addname "Birgioliene"
+#addname "Virginija"
+#addname "Rasuole"
+#addname "Necioniene"
+#addname "Iveta"
+#addname "Salciuviene"
+#addname "Julija"
+#addname "Jadvyga"
+#addname "Ulinskaite"
+#addname "Irma"
+#addname "Sineviciute"
+#addname "Žvingilaite"
+#addname "Katryna"
+#addname "Bukaitiene"
+#addname "Kanapickiene"
+#addname "Beatrice"
+#addname "Senvaitiene"
+#addname "Jarutiene"
+#addname "Kuneviciene"
+#addname "Baikstyte"
+#addname "Baikauskaite"
+#addname "Otilija"
+#addname "Velikaite"
+#addname "Lankutyte"
+#addname "Terese"
+#addname "Stralkute"
+#addname "Beata"
+#addname "Paliakiene"
+#addname "Liuka"
+#addname "Jurkstiene"
+#addname "Mikalina"
+#addname "Dementaviciene"
+#addname "Alvyda"
+#addname "Meldeikiene"
+#addname "Ramute"
+#addname "Gumbaragiene"
+#addname "Martyna"
+#addname "Orzekauskaite"
+#addname "Jolita"
+#addname "Svitryte"
+#addname "Maciokaite"
+#addname "Pranciška"
+#addname "Gausaite"
+#addname "Elena"
+#addname "Žutautiene"
+#addname "Banguole"
+#addname "Pakeriene"
+#addname "Liaukuviene"
+#addname "Straksiene"
+#addname "Pridotkiene"
+#addname "Merkeviciute"
+#addname "Aiste"
+#addname "Baniulyte"
+#addname "Vinickyte"
+#addname "Jancyte"
+#addname "Cibulskaite"
+#addname "Liveta"
+#addname "Tekle"
+#addname "Janeliuniene"
+#addname "Ema"
+#addname "Deleckiene"
+#addname "Armoniene"
+#addname "Pratusiene"
+#addname "Greta"
+#addname "Ciplijauskaite"
+#addname "Juste"
+#addname "Vingyte"
+#addname "Geciauskaite"
+#addname "Spangeleviciute"
+#addname "Edita"
+#addname "Salkauskaite"
+#addname "Jarockiene"
+#addname "Guoste"
+#addname "Kasubiene"
+#addname "Audrone"
+#addname "Lavinskiene"
+#addname "Zita"
+#addname "Paldauskiene"
+#addname "Bujauskiene"
+#addname "Meksriunaite"
+#addname "Leikauskaite"
+#addname "Olimpija"
+#addname "Palietyte"
+#addname "Jucaityte"
+#addname "Regina"
+#addname "Vaisnoraite"
+#addname "Liepa"
+#addname "Kukuraitiene"
+#addname "Irena"
+#addname "Klevinskiene"
+#addname "Ginte"
+#addname "Vencloviene"
+#addname "Genovaite"
+#addname "Petukauskiene"
+#addname "Giedre"
+#addname "Kvalkauskiene"
+#addname "Palaimaite"
+#addname "Vilte"
+#addname "Vekerotaiye"
+#addname "Vitalija"
+#addname "Svirskaite"
+#addname "Judita"
+#addname "Raceviciute"
+#addname "Liudvika"
+#addname "Bekeriene"
+#addname "Nele"
+#addname "Didvaliene"
+#addname "Žemyna"
+#addname "Beksiene"
+#addname "Bauziene"
+#addname "Rutiene"
+#addname "Gabija"
+#addname "Gecaite"
+#addname "Rezaite"
+#addname "Dukaityte"
+#addname "Kemezaite"
+#addname "Barbora"
+#addname "Repeckaite"
+#addname "Vilhelmina"
+#addname "Giniuniene"
+#addname "Gintare"
+#addname "Banioniene"
+#addname "Kliciuviene"
+#addname "Milkeraitiene"
+#addname "Daina"
+#addname "Brazeviciene"
+#addname "Jolanta"
+#addname "Bekeraite"
+#addname "Paulina"
+#addname "Gedaraviciute"
+#addname "Veronika"
+#addname "Buividaite"
+#addname "Leikiene"
+#addname "Margarita"
+#addname "Naciuniene"
+#addname "Žvikiene"
+#addname "Ermolaitiene"
+
 
 #newsite 2101
 #name "Kata Tjuta"
@@ -144135,7 +145053,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #effect 10021
 #fatiguecost 4500
 #spec 41943040  -- Useable Underwater only
-#onlygeosrc 2048  -- Deep Sea
+--#onlygeosrc 2048  -- Deep Sea
 #damage 7226 -- Dagon
 #nreff 1
 #restricted 43 -- EA Atlantis
@@ -144365,7 +145283,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #fatiguecost 6000
 #damage 7345
 #nreff 2004 -- 10++
-#onlygeosrc 2048
+--#onlygeosrc 2048
 #restricted 88 -- MA Atlantis
 #restricted 126 -- LA Atlantis
 #restricted 206 -- Dirgen
@@ -153288,38 +154206,6 @@ All effects scale with friendly Dominion."
 #nreff 1
 #end
 
-#selectspell 3784
-#copyspell 737
-#name "Fire Elemental Attack"
-#descr "Elemental farsummon for Elemental Barrage."
-#school -1
-#researchlevel 0
-#path 0 0
-#pathlevel 0 0
-#damage 7386
-#nreff 1
-#fatiguecost 0
-#nextspell 0
-#end
-
-#selectspell 3785
-#name "Elemental Barrage"
-#descr "The caster summons several Fire Elementals and launches them towards an enemy army camp located in a province far away. The elementals will cause damage as they land in the camp and will then animate to attack whatever they find. The more units present in the camp, the greater the chance of hitting a target. The spell can also be used to harass a besieging force of enemies."
-#details "Deals 15AP damage to up to 15 targets, creates 1 size 6, 2 size 4 and 1D6 size 3 Fire Elementals to attack province defenders."
-#school -1
-#researchlevel 7
-#path 0 0
-#pathlevel 0 4
-#effect 10091
-#damage 15
-#spec 96  -- Fire damage, Armour Piercing
-#nreff 1012
-#fatiguecost 1500
-#nogeodst 4100  -- Not to Caves or Sea
-#provrange 3
-#nextspell 3784
-#end
-
 #selectspell 3786
 #name "Coldresist"
 #descr "Cold resist for Inferno Warriors."
@@ -159996,8 +160882,8 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #selectspell 4280 -- Yeti Crab
 #copyspell 945 -- Call Kraken
 #name "Bind Abyssal Crabs"
-#descr "With this ritual the mage travels to a deep volcanic vent and binds several Yeti Crabs, ready to be released upon an enemy army. Yeti Crabs are gigantic white-bristled crabs from the deep abyss who use the living mucus coating their hair to purify the dangerous volcanic toxins and other poisons in their environment. Atlantians consider this mucus a nutritious delicacy, and each crab can feed as many as 25 soldiers per month. In a crisis, the normally docile crabs can be prodded into battle, where their gigantic claws make them a formidable threat.
-This spell can only be cast in a deep water province."
+#descr "With this ritual the mage travels to a deep volcanic vent and binds several Yeti Crabs, ready to be released upon an enemy army. Yeti Crabs are gigantic white-bristled crabs from the deep abyss who use the living mucus coating their hair to purify the dangerous volcanic toxins and other poisons in their environment. Atlantians consider this mucus a nutritious delicacy, and each crab can feed as many as 25 soldiers per month. In a crisis, the normally docile crabs can be prodded into battle, where their gigantic claws make them a formidable threat."
+#details "This spell can only be cast in a deep water province."
 #researchlevel 3
 #path 0 2
 #path 1 3 
@@ -160014,8 +160900,8 @@ This spell can only be cast in a deep water province."
 #selectspell 4281 -- Vampire Squid
 #copyspell 945 -- Call Kraken
 #name "Call Vampire Squid"
-#descr "The Vampire Squid is a gargantuan abyssal monster that dwells in the darkest parts of the ocean depths. Neither strong nor particularly durable for its size, the Vampire Squid instead hunts by stealth, camoflaguing itself as smaller and more vulnerable prey. Once a predator attacks, the squid it reveals its hideous secret: it possesses powerful life-draining spikes along its tentacles that can spell doom for even the largest sea monsters within seconds. Although their motivations are utterly alien to shorter-lived creatures, Vampire Squids are remarkably intelligent and can be coaxed into serving powerful Atlantian mages when suitably incentivised.
-This spell can only be cast in a deep water province."
+#descr "The Vampire Squid is a gargantuan abyssal monster that dwells in the darkest parts of the ocean depths. Neither strong nor particularly durable for its size, the Vampire Squid instead hunts by stealth, camoflaguing itself as smaller and more vulnerable prey. Once a predator attacks, the squid it reveals its hideous secret: it possesses powerful life-draining spikes along its tentacles that can spell doom for even the largest sea monsters within seconds. Although their motivations are utterly alien to shorter-lived creatures, Vampire Squids are remarkably intelligent and can be coaxed into serving powerful Atlantian mages when suitably incentivised."
+#details "This spell can only be cast in a deep water province."
 #researchlevel 7
 #path 0 5
 #path 1 2 
@@ -160972,14 +161858,6 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #nextspell 4343
 #end
 
-#selectspell 4346 -- Mini Fire Elemental
-#copyspell 939 -- Summon Lesser Fele
-#name "Fire Elementals"
-#damage 3721 -- Size 2 fele
-#school -1
-#researchlevel -1
-#end
-
 #selectspell 4345 -- Elemental Barrage
 #copyspell 687 -- Falling Fires
 #name "Elemental Barrage"
@@ -160999,7 +161877,6 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #explspr 10091
 #fatiguecost 20
 #casttime 125
---#nextspell 4345
 #end
 
 #selectspell 4346
@@ -163875,6 +164752,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectspell 1460 -- Soul Transaction
 #descr "The caster tries to buy the soul and servitude of the target with the promise to protect him from his former masters. If the persuasion is successful the target is granted invisibility by infernal forces as he tries to leave the battle. If he successfully leaves the battle he will join his new master. The spell is impossible to resist magically, but those of strong morals are rarely affected."
 #spec 1152930300700016768 -- No MRNH
+#end
+
+#selectspell 1464 -- Lauma
+#fatiguecost 3000
 #end
 
 #selectspell 1419 -- Harm
@@ -170736,11 +171617,12 @@ This headband does not require activation in combat."
 #end
 
 #selectitem 396 -- Lifelong Protection
-#noinanim
-#nodemon
-#noundead
 #sneakunit 0
 #stealthboost -500
+--#battlesum1d3 303 -- Imp
+#mainpath 8
+#mainlevel 2
+#itemcost1 200
 #end
 
 #selectitem 401 -- Barrel of Air
