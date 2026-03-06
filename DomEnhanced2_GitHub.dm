@@ -5619,6 +5619,7 @@
 #enc 0
 #def 0
 #rcost 6
+#magic
 #end
 
 #newarmor 577 -- Turquoise Barding
@@ -7699,7 +7700,7 @@
 #weapon 264  -- Composite Bow
 #armor 149  -- Bone Cuirass
 #armor 119  -- Reinforced Leather Cap
-#mountmnr 3580 -- cata steppe horse
+#mountmnr 9326 -- cata steppe horse
 #mountedinspector
 #skilledrider 4
 #ressize 2
@@ -48051,6 +48052,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #coldres 10
 #okundeadleader
 #magicskill 9 1
+#pooramphibian
 #cleararmor
 #clearweapons
 #weapon 120  -- Enchanted Spear
@@ -60778,6 +60780,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #def 11
 #hp 24
 #xpgain 35
+#holy
 #end
 
 #newmonster 9326 -- Alabaster Steppe Horse
@@ -163343,7 +163346,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 652 -- lightning bolt
 #spec 8589953152 -- Ignore Shield, Shock, AN, Affects both Rider and Mount (not UWOK)
-#damage 1015 -- 17+
+#damage 1013 -- 15+
 #end
 
 #selectspell 661 -- Rain
