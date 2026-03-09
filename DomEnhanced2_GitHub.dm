@@ -4943,6 +4943,14 @@
 #ammo 24
 #end
 
+#selectweapon 646 -- Bronze Hatchet
+#dmg 6
+#end
+
+#selectweapon 253 -- Hatchet
+#dmg 6
+#end
+
 #selectweapon 677  -- Wing Buff
 #bonus
 #end
@@ -5631,6 +5639,15 @@
 #enc 0
 #def 0
 #rcost 2
+#end
+
+#newarmor 578 -- Wolf Barding
+#copyarmor 252
+#protparts 16 13
+#protinspector 13
+#rcost 5
+#enc 1
+#name "Wolf Barding"
 #end
 
 
@@ -61052,6 +61069,67 @@ Companions are recruited in pairs and two must be recruited at once."
 #end
 
 
+#newmonster 9334
+#copystats 3532 
+#name "War Wolf"
+#descr "The wolf is a common predator in cold climates. Wolves are used in battle by some druids and the small goblins of Jotunheim."
+#spr1 "vanilla/vs_warwolf1.png"
+#spr2 "vanilla/vs_warwolf2.png"
+#armor 578 -- Wolf Barding
+#hp 10
+#mr 7
+#def 12
+#end
+
+#newmonster 9335
+#copystats 3532 
+#name "Riding Wolf"
+#descr "The wolf is a common predator in cold climates. Wolves are used in battle by some druids and the small goblins of Jotunheim."
+#spr1 "vanilla/vs_ridewolf1.png"
+#spr2 "vanilla/vs_ridewolf2.png"
+#armor 251 -- Leather Barding
+#hp 9
+#mr 7
+#end
+
+#newmonster 9336
+#copystats 3532 
+#name "Riding Wolf"
+#descr "The wolf is a common predator in cold climates. Wolves are used in battle by some druids and the small goblins of Jotunheim."
+#spr1 "vanilla/vs_ridewolf1.png"
+#spr2 "vanilla/vs_ridewolf2.png"
+#armor 251 -- Leather Barding
+#hp 9
+#mr 7
+#def 12
+#holy
+#end
+
+
+#newmonster 9337
+#copystats 1309 -- Jotun Wolf
+#name "Landvaettir"
+#descr "Landvaettir are spirits of nature, each connected to a land they protect and preserve. Farmers, hunters, and woodsmen in their territory who care for their fields, treat the land well, and leave offerings for them will find their crops bountiful, hunts successful, and lumber sustainable. They take the appearance of a giant wolf and are revered by the Wolf Kin, who may occasionally request their aid."
+#spr1 "magicenhanced/blue_whitewolf1.png"
+#spr2 "magicenhanced/blue_whitewolf2.png"
+#drawsize -15
+#yearturn 1
+#hp 55
+#mr 15
+#def 12
+#att 13
+#str 24
+#size 7
+#prot 12
+#fear 0
+#berserk 0
+#mountainsurvival
+#holy
+#clearmagic
+#magicskill 2 1
+#magicskill 6 3
+#end
+
 
 
 -- END OF NEW MONSTERS (Skip 9600~9672)
@@ -68505,11 +68583,11 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 3413 -- Wolf Brother
-#skilledrider 4 -- 2 -> 4
+#skilledrider 5 -- 2 -> 5
 #end
 
 #selectmonster 3435 -- Vaetti Herse
-#skilledrider 4 -- 3 -> 4
+#skilledrider 5 -- 3 -> 5
 #end
 
 #selectmonster 1176 -- Androphag
@@ -68821,15 +68899,15 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 3418 -- Wolf Rider
-#skilledrider 3 -- 1 -> 3
+#skilledrider 4 -- 1 -> 4
 #end
 
 #selectmonster 282 -- Wolf Rider
-#skilledrider 3 -- 1 -> 3
+#skilledrider 4 -- 1 -> 4
 #end
 
 #selectmonster 283 -- Chief
-#skilledrider 3 --  -> 3
+#skilledrider 4 --  -> 4
 #end
 
 #selectmonster 1250 -- Mounted Gokenin
@@ -96554,12 +96632,76 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #gcost 10070
 #end
 
+#selectmonster 3401 -- Vaetti Archer
+#rpcost 6
+#end
+
+#selectmonster 3402 -- Light Vaetti Infantry w/ hatchet
+#rpcost 8
+#end
+
+#selectmonster 3403 -- Vaetti Spearman
+#rpcost 8
+#end
+
+#selectmonster 3412 -- Vaetti Crossbowman
+#end
+
+#selectmonster 3417 -- Light Vaetti Infantry w/ spear
+#rpcost 8
+#end
+
 #selectmonster 3405  -- Hirdvaetti
 #bodyguard 3
+#rpcost 15
+#end
+
+#selectmonster 3404  -- Vaetti Berserker
+#rpcost 20
 #end
 
 #selectmonster 3406  -- Rimvaetti
 #mountainsurvival
+#rpcost 23
+#end
+
+#selectmonster 3411 -- Vaetti Gode
+#spr1 "vanilla/vs_vaettigode1.png"
+#spr2 "vanilla/vs_vaettigode2.png"
+#mountmnr 9336 -- sacred riding wolf
+#end
+
+#selectmonster 3435 -- Vaetti Herse
+#spr1 "vanilla/vs_vaettiherse1.png"
+#spr2 "vanilla/vs_vaettiherse2.png"
+#mountmnr 9335 -- riding wolf
+#end
+
+#selectmonster 3418 -- Vaetti Wolf Rider
+#spr1 "vanilla/vs_wolfrider1.png"
+#spr2 "vanilla/vs_wolfrider2.png"
+#mountmnr 9335 -- riding wolf
+#clearweapons
+#weapon 357 -- Light Lance
+#end
+
+#selectmonster 3413 -- Vaetti Wolf Brother
+#spr1 "vanilla/vs_wolfbrother1.png"
+#spr2 "vanilla/vs_wolfbrother2.png"
+#mountmnr 9334 -- armored wolf
+#clearweapons
+#weapon 357 -- Light Lance
+#end
+
+#selectmonster 3408 -- Vaetti Gygja
+#clearmagic
+#magicskill 9 1 -- H
+#magicskill 5 1 -- D
+#magicskill 6 1 -- N
+#custommagic 29184 100 -- WDNG
+#custommagic 51712 100 -- SWGB
+#custommagic 29184 10 -- WDNG
+#gcost 265
 #end
 
 #selectmonster 3420  -- Rimvaetti summon
@@ -117211,6 +117353,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 2363 -- gloso
 #homemon 3747 -- ice ele
 #homecom 7332 -- jotun werewolf
+#homecom 9337 -- Landvaettir
 #homecom 844 -- Niefel Jarl
 #homecom 3425 -- dwarf
 #homecom 3426 -- dwarf
@@ -150386,7 +150529,7 @@ All effects scale with friendly Dominion."
 #pathlevel 1 1
 #damage 6512 -- Ghawwas
 #fatiguecost 500
-#nreff 1002 -- 3+
+#nreff 503 -- 3+1/2
 #restricted 18 -- Ubar
 #restricted 65 -- Na'Ba
 #restricted 197 -- Iram
@@ -161897,6 +162040,39 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #precision -2
 #end
 
+
+#selectspell 4347
+#name "Call Landvaettir"
+#descr "The Vaetti know how to call to the Landvaettir, spirits of nature connected to a specific land, and request their aid with an offering of gems. Farmers, hunters, and woodsmen in their territory who care for their fields, treat the land well, and leave offerings for them will find their crops bountiful, hunts successful, and lumber sustainable. They take the appearance of a giant wolf and are revered by the Wolf Kin."
+#school 0
+#researchlevel 4
+#path 0 6 -- N
+#path 1 9 -- H
+#pathlevel 0 1
+#pathlevel 1 1
+#effect 10021
+#nreff 1
+#damage 9337 -- Landvaettir
+#fatiguecost 2000
+#restricted 118 -- LA Vaettiheim
+#end
+
+--#selectspell 4348 -- Incite Temper
+--#copyspell 1307
+--#name "Incite Temper"
+--#descr "The caster incites the temper of a small group of soldiers, forcing them to go berserk. This spell is only effective on small beings like Vaetti."
+--#details "Can be negated by large beings"
+--#school 6
+--#path 0 8 -- B
+--#researchlevel 2
+--#precision 100
+--#ainocast 1
+--#fatiguecost 20
+--#casttime 75
+--#range 5
+--#spec 145136084451456 -- AN, no mindless, friendly only, uwok, inanimate immune, size negates, no user
+--#restricted 118 -- LA Vaettiheim
+--#end
 
 
 
