@@ -5860,20 +5860,13 @@
 
 
 
-
-
-
-
-
-#newmonster 6510
-#copystats 1664  -- Monster Fish
-#name "Dandan"
-#spr1 "domdaniel/dandan.tga"
-#spr2 "domdaniel/dandan2.tga"
-#descr "Dandans are said to be the largest fish in the ocean. Protected by great bony plates, they are almost impervious to damage and can swallow a ship whole. They also have sharp teeth to use against the few really large opponents that can be found in the oceans."
-#prot 18
-#poisonres 5
+#newmonster 6510 -- Howler dupe bugfix, do not remove or Howler's attack sprite will copy whatever the next #spr1 is
+--#copystats 3880
+#spr1 "vanilla/howler2.png"
+#spr2 "vanilla/howler2.png"
 #end
+
+
 
 #newmonster 6511
 #copystats 3367  -- Hinn
@@ -5983,6 +5976,16 @@
 #heat 3
 #poisonarmor 5
 #watershape 6512
+#end
+
+#newmonster 6514
+#copystats 1664  -- Monster Fish
+#name "Dandan"
+#spr1 "domdaniel/dandan.tga"
+#spr2 "domdaniel/dandan2.tga"
+#descr "Dandans are said to be the largest fish in the ocean. Protected by great bony plates, they are almost impervious to damage and can swallow a ship whole. They also have sharp teeth to use against the few really large opponents that can be found in the oceans."
+#prot 18
+#poisonres 5
 #end
 
 #newmonster 6518
@@ -10852,6 +10855,7 @@
 #magicstudy 1
 #magicskill 7 2
 #magicskill 9 2
+#startage 54
 #maxage 60
 #holy
 #expertleader
@@ -23047,6 +23051,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon 236  -- dmg16 claw
 #weapon 236
 #transformation 0
+#tolerateund
 #end
 
 #newmonster 7142
@@ -38167,7 +38172,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #att 14
 #def 14
 #ap 12
-#regeneration 20
+#reconst 20
 #blind
 #bluntres
 #diseaseres 100
@@ -40557,7 +40562,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eeblackiron2.tga"
 #name "Black Iron Infantry"
 #descr "The black iron infantry of Ulm are warriors inspired by an Iron Angel. Clad in full plate armor made from the Blacksteel of Ulm they are armed with incredibly sharp weapons and tower shields. They are trained to move and fight in heavy armor without tiring. The Blacksteel armor of Ulm is made by the master smiths and their superior craftsmanship is obvious to anyone wearing an Ulmish armor. Both stronger and lighter than ordinary plate armor, they make the soldiers of Ulm superior to any other human infantry. Inspired by the presence of an Iron Angel to create almost supernaturally sharp weaponry, the black iron infantry have higher morale than even the black plate infantry of Ulm. The inhabitants of Ulm are large and can endure much physical punishment before collapsing. The influence of the Iron Angel has imbued their armor with some resistance to magic."
-#gcost 10030
+#gcost 10023
 #rcost 120
 #rpcost 46
 #mr 11
@@ -40584,7 +40589,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eeblacksword2.tga"
 #name "Blacksteel Swordsman"
 #descr "The Blacksteel Swordsmen of Ulm are warriors clad in full plate armor and bearing incredibly sharp swords made from the Blacksteel of Ulm. They are trained to move and fight in heavy armor without tiring. The Blacksteel armor of Ulm is made by the master smiths and their superior craftsmanship is obvious to anyone wearing an Ulmish armor. Both stronger and lighter than ordinary plate armor, they make the soldiers of Ulm superior to any other human infantry. The inhabitants of Ulm are large and can endure much physical punishment before collapsing."
-#gcost 10018
+#gcost 10016
 #rcost 35
 #rpcost 26
 #mor 13
@@ -40602,7 +40607,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr2 "magicenhanced/eeblackzwei2.tga"
 #name "Blacksteel Zweihander"
 #descr "The Blacksteel Zweihander is a warrior clad in full plate armor made from Blacksteel and armed with an incredibly sharp Great Sword. Forged from Blacksteel, their weapons can cut through the toughest armor and these Zweihanders are feared by even the great cold giants of the North. The swords are each made by a Master Craftsmen of Ulm and only a few can be created each month. The inhabitants of Ulm are large and can endure much physical punishment before collapsing. They are trained to move and fight in heavy armor without tiring."
-#gcost 10022
+#gcost 10018
 #rcost 45
 #rpcost 31
 #mor 13
@@ -54343,6 +54348,8 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #ap 30
 #size 5
 #str 18
+#mapmove 26
+#enc 0
 #spiritsight
 #cleararmor
 #armor 263
@@ -56618,8 +56625,8 @@ Abyssal Pillars can be recruited at all Basalt Cities."
 #end
 
 #newmonster 9138
-#copystats 6510
-#copyspr 6510
+#copystats 6514
+#copyspr 6514
 #name "Dandan"
 #descr "Dandans are said to be the largest fish in the ocean. Protected by great bony plates, they are almost impervious to damage and can swallow a ship whole. They also have sharp teeth to use against the few really large opponents that can be found in the oceans. This mage has taken the form of such a beast and will retain any magic skills learned before the transformation took place."
 #berserk 0
@@ -70184,7 +70191,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #float
 #end
 
-#selectmonster 6510 -- Dandan
+#selectmonster 6514 -- Dandan
 #float
 #end
 
@@ -81654,7 +81661,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 
 #newmonster 10013 -- Ceiran
 #copystats 2440
-#copyspr 6510 -- Dandan
+#copyspr 6514 -- Dandan
 #name "Great Thalassid"
 #descr "The Great Thalassid is an ancient and cunning sea creature born at the dawn of time, when monsters and giants roamed the world. Over the millennia its kin were hunted to extinction, forcing it to hide in a cold corner of the world's oceans. With the Pantokrator gone, the creature has finally emerged to seek vengeance upon its ancient foes. The Great Thallasid has power over misdirection and can turn into a silver fish to pass undetected through hostile waters. It is surrounded by a shroud of glamour that will confuse attackers."
 #diseaseres 100
@@ -94732,6 +94739,18 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectmonster 2267  -- Melqart
 #twiceborn 7231 -- Wight Giant
+#popkill 3
+#incunrest 20
+#poormagicleader
+#magiccommand 10
+#end
+
+#selectmonster 2430  -- King of the City
+#twiceborn 7231 -- Wight Giant
+#popkill 4
+#incunrest 30
+#poormagicleader
+#magiccommand 10
 #end
 
 #selectmonster 2270  -- Tathagada
@@ -116988,7 +117007,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 6511 -- shiqq
 #homemon 3476 -- binn
 #homemon 3367 -- hinn
-#homemon 6510 -- dandan
+#homemon 6514 -- dandan
 #homecom 7172 -- nasnas
 #homecom 3481 -- ghulah
 #homecom 7601 -- ghaddar
@@ -117251,7 +117270,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 7120 -- jinn warrior
 #homemon 7171 -- brass guard
 #homemon 7176 -- brass golem
-#homemon 6510 -- dandan
+#homemon 6514 -- dandan
 #end
 
 #newsite 2917
@@ -117689,7 +117708,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 3476 -- binn
 #homemon 3367 -- hinn
 #homemon 3354 -- jinn
-#homemon 6510 -- dandan
+#homemon 6514 -- dandan
 #end
 
 #newsite 2295
@@ -140612,6 +140631,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #selectspell 2665
 #name "Release Anu"
 #descr "The caster shatters the celestial prison of Anu, the first Annunaki. Anu was the first of the Annunaki, giants of divine heritage that appeared in ancient times. He was granted dominion over the Heavens by the Pantokrator and was supreme amongst the Annunaki. In time he came to think himself the equal of the Pantokrator and was imprisoned for his impudence. Anu is powerful in the magics of the Sky and the Heavens and as first of the Annunaki has additional powers."
+#details "Anu is a divinely powerful being and may rebel if allowed to roam outside your Dominion."
 #school 0
 #researchlevel 8
 #path 0 4
@@ -142158,8 +142178,8 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #descr "The Cauldron of Rebirth will allow up to 200 corpses in the same province to be reanimated as soulless to serve the bearer of the cauldron."
 #researchlevel 0
 #school -1
-#nolandtrace 1
-#nowatertrace 1
+--#nolandtrace 1
+--#nowatertrace 1
 #fatiguecost 10
 #restricted 10 -- EA Fomoria
 #end
@@ -144215,6 +144235,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 17 -- Hinnom
 #restricted 184 -- Sitecah
 #restricted 119 -- Feminie
+#ainocast 1
 #end
 
 #selectspell 2923
@@ -150563,7 +150584,7 @@ All effects scale with friendly Dominion."
 #pathlevel 0 3
 #fatiguecost 100
 #effect 43  -- Single border summoning
-#damage 6510 -- Dandan
+#damage 6514 -- Dandan
 #nreff 1
 #explspr -1
 #spec 41943040  -- UW Only
@@ -191604,7 +191625,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #rarity 5
 #req_pregame 1
 #req_site 1
-#msg "[Mountain of the Mystics"
+#msg "[Mountain of the Mystics]"
 #addgeo 16 --Highland
 #end
 
