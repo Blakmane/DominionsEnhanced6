@@ -4263,6 +4263,27 @@
 #secondaryeffect 1512 -- Stun
 #end
 
+#newweapon 1924 -- Ghostly Sword
+#copyweapon 63 -- Life Drain
+#name "Ghostly Blade"
+--#dt_weapondrain
+#len 2
+#dmg 3
+#slash
+#def 1
+#att 1
+#end
+
+#newweapon 1925 -- Peck Eyes
+#name "Peck Eyes"
+#dmg 3
+#att 0
+#len 0
+#bonus
+#pierce
+#secondaryeffect 333 -- Eyeloss
+#ammo 1
+#end
 
 
 
@@ -22864,6 +22885,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #ethereal
 #poormagicleader
 #okundeadleader
+#regeneration 50
 #fireres 5
 #poisonres 15
 #startage 20
@@ -22949,6 +22971,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #ethereal
 #poormagicleader
 #okundeadleader
+#regeneration 50
 #fireres 5
 #poisonres 15
 #startage 20
@@ -23019,6 +23042,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #ethereal
 #poormagicleader
 #okundeadleader
+#regeneration 50
 #fireres 5
 #poisonres 15
 #startage 20
@@ -26551,11 +26575,10 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #end
 
 #newmonster 7329
-#copystats 2194
 #copyspr 2194
 #name "Draugadrott"
 #descr "The Draugadrott is an ancient Vanir king returned from Hel to walk the earth once more as a corporeal undead van. They are incredibly strong and retain all of their magical powers. Draugar stink of decay and rotting flesh and are surrounded by the ice cold winds of Hel. They do not like to lead the living and prefer the company of their dead fellows. They can command more Draug to leave their barrows each month."
-#hp 45
+#clearmagic
 #magicskill 1 1 -- A
 #magicskill 5 2 -- D
 #magicskill 7 2 -- G
@@ -26566,23 +26589,74 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #holy
 #makemonsters2 2190
 #maxage 1000
+#hp 45
+#size 3
+#prot 5
+#mr 16
+#mor 20
+#str 20
+#att 13
+#def 13
+#prec 10
+#ap 10
+#mapmove 20
+#enc 0
+#startage 400
+#weapon 8
+#armor 13
+#coldres 25
+#poisonres 25
+#cold 3
+#fear 5
+#undead
+#amphibian
+#neednoteat
+#spiritsight
+#okleader
+#expertundeadleader
+#glamour
 #end
 
 #newmonster 7330
-#copystats 2192
 #copyspr 2192
 #name "Draugherse"
 #descr "The Draugherse is an ancient Vanir returned from Hel to walk the earth once more as a corporeal undead van. They are incredibly strong and retain limited magical powers. Draugar stink of decay and rotting flesh and are surrounded by the ice cold winds of Hel. They do not like to command the living and prefer the company of their dead fellows."
+#startitem 266 -- Rime Hauberk
 #magicskill 1 1
 #magicskill 5 1
 #magicskill 7 1
 #custommagic 20736 100  -- 100% ADG
-#shrinkhp 0
-#startitem 266 -- Rime Hauberk
 #poorleader
 #holy
 #montag 1014
 #maxage 1000
+#holy
+#hp 40
+#size 3
+#prot 5
+#mr 14
+#mor 17
+#str 18
+#att 13
+#def 13
+#prec 10
+#ap 10
+#mapmove 18
+#enc 0
+#startage 400
+#weapon 8
+#armor 13
+#armor 2
+#coldres 25
+#poisonres 25
+#cold 3
+#fear 5
+#undead
+#amphibian
+#neednoteat
+#spiritsight
+#okundeadleader
+#glamour
 #end
 
 #newmonster 7331
@@ -26590,16 +26664,42 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copyspr 2192
 #name "Draugherse"
 #descr "The Draugherse is an ancient Vanir returned from Hel to walk the earth once more as a corporeal undead van. They are incredibly strong and retain limited magical powers. Draugar stink of decay and rotting flesh and are surrounded by the ice cold winds of Hel. They do not like to command the living and prefer the company of their dead fellows."
+#startitem 54 -- Frost Brand
 #magicskill 1 1
 #magicskill 5 1
 #magicskill 7 1
 #custommagic 20736 100  -- 100% ADG
-#shrinkhp 0
-#startitem 54 -- Frost Brand
 #poorleader
 #holy
 #montag 1014
 #maxage 1000
+#holy
+#hp 40
+#size 3
+#prot 5
+#mr 14
+#mor 17
+#str 18
+#att 13
+#def 13
+#prec 10
+#ap 10
+#mapmove 18
+#enc 0
+#startage 400
+#weapon 8
+#armor 13
+#armor 2
+#coldres 25
+#poisonres 25
+#cold 3
+#fear 5
+#undead
+#amphibian
+#neednoteat
+#spiritsight
+#okundeadleader
+#glamour
 #end
 
 #newmonster 7319
@@ -26607,15 +26707,42 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #copyspr 2192
 #name "Draugherse"
 #descr "The Draugherse is an ancient Vanir returned from Hel to walk the earth once more as a corporeal undead van. They are incredibly strong and retain limited magical powers. Draugar stink of decay and rotting flesh and are surrounded by the ice cold winds of Hel. They do not like to command the living and prefer the company of their dead fellows."
+#startitem 602 -- Bane Fire Blade
 #magicskill 1 1
 #magicskill 5 1
 #magicskill 7 1
 #custommagic 20736 100  -- 100% ADG
-#shrinkhp 0
-#startitem 602 -- Bane Fire Blade
 #poorleader
 #holy
 #montag 1014
+#maxage 1000
+#holy
+#hp 40
+#size 3
+#prot 5
+#mr 14
+#mor 17
+#str 18
+#att 13
+#def 13
+#prec 10
+#ap 10
+#mapmove 18
+#enc 0
+#startage 400
+#weapon 8
+#armor 13
+#armor 2
+#coldres 25
+#poisonres 25
+#cold 3
+#fear 5
+#undead
+#amphibian
+#neednoteat
+#spiritsight
+#okundeadleader
+#glamour
 #end
 
 #newmonster 7332
@@ -28167,6 +28294,9 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #name "Ghostly Champion"
 #descr "This Ghostly Champion is the soul of an ancient warrior that has returned from the Underworld at the behest of a powerful necromancer."
 #goodleader
+#clearweapons
+--#weapon 63 -- Life Drain
+#weapon 1924 -- Ghostly Sword
 #end
 
 #newmonster 7405
@@ -31287,6 +31417,9 @@ While in the form of an old man, all paths are increased and allows the use of N
 #armor 549 -- Spectral helmet
 #armor 156  -- Spectral Shield
 #bodyguard 2
+#clearweapons
+--#weapon 63 -- Life Drain
+#weapon 1924 -- Ghostly Sword
 #end
 
 
@@ -34940,7 +35073,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Varangian Draugr"
 #descr "The Varangian Guard were a force of elite Vanir warriors that were employed by the Emperor of Pythium in ages past. Now the Vanir have all passed, however many remain entombed in the Imperial City. So strong were the oaths of loyalty they swore that they transcend even death. Through dark magic they can be called back to the world of the living as draugr, corporeal undead vanir. They are incredibly strong and are surrounded by ice cold winds."
 #hp 25
-#str 14
+#str 15
+#def 13
 #fear 5
 #weapon 8  -- Broad Sword
 #armor 18  -- Chain Mail
@@ -61138,6 +61272,491 @@ Companions are recruited in pairs and two must be recruited at once."
 #end
 
 
+#newmonster 9338 -- Menhir
+#copystats 473 -- Telestic Animate
+#name "Menhir"
+#descr "."
+#spr1 "magicenhanced/menhir.png"
+#spr2 "magicenhanced/menhir2.png"
+#hp 160
+#size 10
+#str 15
+#prot 25
+#masterrit 1
+#holy
+#clearmagic
+#itemslots 262144 -- 1 misc
+#end
+
+#newmonster 9339 -- Henge
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/hengespirit.tga"
+#spr2 "extrapretenders/hengespirit.tga"
+#name "Henge"
+#descr "."
+#hp 160
+#size 10
+#str 22
+#prot 25
+#masterrit 1
+#holy
+#clearmagic
+#itemslots 262144 -- 1 misc
+#end
+
+#newmonster 9340 -- Preserver
+#copystats 475 -- Crusher
+#name "Preserver"
+#descr "."
+#spr1 "magicenhanced/blue_rock1.png"
+#spr2 "magicenhanced/blue_rock2.png"
+#hp 140
+#size 10
+#str 25
+#prot 24
+#mor 50
+#holy
+#clearmagic
+#end
+
+#newmonster 9341 -- Blood Soaked Edifice
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/bloodmonolith.tga"
+#spr2 "extrapretenders/bloodmonolith2.tga"
+#name "Blood Soaked Edifice"
+#descr "."
+#hp 180
+#size 10
+#str 22
+#prot 25
+#masterrit 1
+#holy
+#clearmagic
+#itemslots 262144 -- 1 misc
+#end
+
+#newmonster 9342 -- Henge (blood)
+#copystats 9339
+#copyspr 9339
+#name "Henge"
+#descr "."
+#end
+
+#newmonster 9343 -- Tree 1
+#copystats 330 -- Dark Vine
+#spr1 "magicenhanced/tree1.png"
+#spr2 "magicenhanced/tree2.png"
+#name "Ancient Tree"
+#descr "."
+#hp 180
+#size 10
+#str 18
+#prot 18
+#mr 12
+#mor 18
+#enc 0
+#startage 500
+#maxage 1000
+#holy
+#miscshape
+#plant
+#spiritsight
+#growthpower 1
+#masterrit 1
+#ivylord 4
+#clearweapons
+#weapon 240 -- Branch
+#weapon 240 -- Branch
+#nametype 145 -- Wooden Creatures
+#immobile
+#bonusspells 1
+#ap 2
+#mapmove 0
+#twiceborn 7480 -- Tree of Hate
+#end
+
+#newmonster 9344 -- Forest Lord
+#copystats 931 -- Ivy king
+#name "Forest Lord"
+#descr "."
+#spr1 "magicenhanced/treant1.png"
+#spr2 "magicenhanced/treant2.png"
+#hp 85
+#size 8
+#mr 17
+#def 8
+#att 9
+#str 22
+#prot 12
+#ivylord 4
+#holy
+#clearmagic
+#clearweapons
+#weapon 92 -- Fist
+#weapon 92 -- Fist
+#weapon 240 -- Branch
+#end
+
+#newmonster 9345 -- Blood tree
+#copystats 330 -- Dark Vine
+#spr1 "magicenhanced/bloodtree1.png"
+#spr2 "magicenhanced/bloodtree2.png"
+#name "Thirsting Tree"
+#descr "."
+#hp 180
+#size 10
+#str 18
+#prot 18
+#mr 12
+#mor 18
+#enc 0
+#startage 500
+#maxage 1000
+#holy
+#miscshape
+#plant
+#spiritsight
+#growthpower 1
+#masterrit 1
+#ivylord 4
+#clearweapons
+#weapon 240 -- Branch
+#weapon 240 -- Branch
+#nametype 145 -- Wooden Creatures
+#immobile
+#bonusspells 1
+#ap 2
+#mapmove 0
+#twiceborn 7480 -- Tree of Hate
+#end
+
+#newmonster 9346 -- Vine monster
+#copystats 330 -- Dark Vine
+#name "Grasping Maw"
+#descr "."
+#spr1 "magicenhanced/blue_vinemonster1.png"
+#spr2 "magicenhanced/blue_vinemonster2.png"
+#hp 160
+#size 10
+#mr 17
+#def 6
+#att 11
+#str 22
+#prot 14
+#ivylord 4
+#holy
+#entangle
+#clearmagic
+#clearweapons
+#weapon 1672 -- Thirsting vine
+#weapon 1672 -- Thirsting vine
+#weapon 609 -- Grab and Swallow
+#end
+
+#newmonster 9347 -- Ghostly Warrior
+#copystats 1256 -- Shura
+#copyspr 1541 -- Ghost Champion
+#name "Ghostly Warrior"
+#descr "The ghost of a warrior, returned from the underworld to make war on the living. Ghosts are frightening ethereal beings that can drain the life force from living beings."
+#hp 25
+#str 14
+#att 12
+#mountainsurvival
+#forestsurvival
+#float
+#poorleader
+#okundeadleader
+#clearweapons
+#cleararmor
+--#weapon 63 -- Life Drain
+#weapon 1924 -- Ghostly Sword
+#armor 543 -- Spectral Mail 6prot
+#armor 548 -- Spectral Cap
+#saltvul 2
+#nametype 131 -- EA Ulm Male
+#end
+
+#newmonster 9348 -- Undrjarl
+#copystats 1256 -- Shura
+#spr1 "magicenhanced/blue_undrjarl1.png"
+#spr2 "magicenhanced/blue_undrjarl2.png"
+#name "Undrjarl"
+#descr "The Undrjarl is an ancestor chief of an ancient clan, returned from the underworld to make war on the living. The Undrjarl's connection to those who served him in life is strong, and may be used to return some of their number to his side each month to raid and conquer once again. The Undrjarl's time in the underworld has given him insight into the magic of Death. Once bound to the mortal world their ancestral ties will allow them to return if slain, however this is much slower than other forms of immortality."
+#hp 35
+#str 16
+#att 14
+#mr 16
+#def 18
+#fear 10
+#mountainsurvival
+#forestsurvival
+#float
+#poorleader
+#okundeadleader
+#inspirational 1
+#cleararmor
+#clearweapons
+--#weapon 63 -- Life Drain
+#weapon 1924 -- Ghostly Sword
+#armor 544 -- Spectral Mail 7prot
+#armor 125 -- Skullface
+#saltvul 2
+#magicskill 5 3 -- D
+#makemonsters2 9347 -- Ghostly Warrior
+#nametype 131 -- EA Ulm Male
+#immortal
+#reformtime 3
+#end
+
+#newmonster 9349 -- Valravn biggest
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravn1.png"
+#spr2 "magicenhanced/blue_valravn2.png"
+#name "Valravn"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#hp 16
+#str 15 -- +3
+#att 12
+#def 14
+#prot 6
+#mr 12
+#enc 2
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 12
+#custommagic 39168 100 -- ASDB
+#custommagic 39168 50 -- ASDB
+#shrinkhp 23
+#drawsize 18
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 408 -- Talons
+#weapon 404 -- Beak
+#spiritsight
+#end
+
+#newmonster 9350 -- Valravn big
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravn1.png"
+#spr2 "magicenhanced/blue_valravn2.png"
+#name "Valravn"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#hp 16
+#str 14 -- +2
+#att 12
+#def 14
+#prot 6
+#mr 12
+#enc 2
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 12
+#custommagic 39168 100 -- ASDB
+#custommagic 39168 50 -- ASDB
+#shrinkhp 20
+#growhp 24
+#drawsize 12
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 408 -- Talons
+#weapon 404 -- Beak
+#spiritsight
+#end
+
+#newmonster 9351 -- Valravn middle
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravn1.png"
+#spr2 "magicenhanced/blue_valravn2.png"
+#name "Valravn"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#hp 16
+#str 13 -- +1
+#att 12
+#def 14
+#prot 6
+#mr 12
+#enc 2
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 12
+#custommagic 39168 100 -- ASDB
+#custommagic 39168 50 -- ASDB
+#shrinkhp 17
+#growhp 21
+#drawsize 6
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 408 -- Talons
+#weapon 404 -- Beak
+#spiritsight
+#end
+
+#newmonster 9352 -- Valravn normal
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravn1.png"
+#spr2 "magicenhanced/blue_valravn2.png"
+#name "Valravn"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#hp 16
+#str 12
+#att 12
+#def 14
+#prot 6
+#mr 12
+#enc 2
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 12
+#custommagic 39168 100 -- ASDB
+#growhp 18
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 408 -- Talons
+#weapon 404 -- Beak
+#spiritsight
+#end
+
+#newmonster 9353 -- Valravn biggest
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravnlord1.png"
+#spr2 "magicenhanced/blue_valravnlord2.png"
+#name "Valravn Lord"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#humanoid
+#itemslots 860678
+#hp 22
+#str 18 -- +3
+#att 14
+#def 14
+#prot 6
+#mr 14
+#enc 2
+#invulnerable 15
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 16
+#custommagic 39168 100 -- ASDB
+#custommagic 39168 50 -- ASDB
+#shrinkhp 29
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 11 -- Great Sword
+#weapon 404 -- Beak
+#spiritsight
+#size 4
+#drawsize 18
+#end
+
+#newmonster 9354 -- Valravn big
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravnlord1.png"
+#spr2 "magicenhanced/blue_valravnlord2.png"
+#name "Valravn Lord"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#humanoid
+#itemslots 860678
+#hp 22
+#str 17 -- +2
+#att 14
+#def 14
+#prot 6
+#mr 14
+#enc 2
+#invulnerable 15
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 16
+#custommagic 39168 100 -- ASDB
+#custommagic 39168 50 -- ASDB
+#shrinkhp 26
+#growhp 30
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 11 -- Great Sword
+#weapon 404 -- Beak
+#spiritsight
+#size 4
+#drawsize 12
+#end
+
+#newmonster 9355 -- Valravn middle
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravnlord1.png"
+#spr2 "magicenhanced/blue_valravnlord2.png"
+#name "Valravn Lord"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#humanoid
+#itemslots 860678
+#hp 22
+#str 16 -- +1
+#att 14
+#def 14
+#prot 6
+#mr 14
+#enc 2
+#invulnerable 15
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 16
+#custommagic 39168 100 -- ASDB
+#custommagic 39168 50 -- ASDB
+#shrinkhp 23
+#growhp 27
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 11 -- Great Sword
+#weapon 404 -- Beak
+#spiritsight
+#size 4
+#drawsize 6
+#end
+
+#newmonster 9356 -- Valravn normal
+#copystats 1380 -- Great Hawk
+#spr1 "magicenhanced/blue_valravnlord1.png"
+#spr2 "magicenhanced/blue_valravnlord2.png"
+#name "Valravn Lord"
+#descr "The Valravne are ravens that have devoured the heart of a powerful warrior that was slain in battle and gained higher intelligence and supernatural abilities. They appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#humanoid
+#itemslots 860678
+#hp 22
+#str 15
+#att 14
+#def 14
+#prot 6
+#mr 14
+#enc 2
+#invulnerable 15
+#demon
+#stealthy 0
+#corpseeater 1
+#deadhp 2
+#maxdeadhp 16
+#custommagic 39168 100 -- ASDB
+#custommagic 39168 50 -- ASDB
+#growhp 24
+#clearweapons
+#weapon 1925 -- Peck Eyes
+#weapon 11 -- Great Sword
+#weapon 404 -- Beak
+#spiritsight
+#size 4
+#end
+
 
 -- END OF NEW MONSTERS (Skip 9600~9672)
 
@@ -66947,7 +67566,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/eekulullushaman2.png"
 #name "Kulullu Shaman"
 #descr "The Kulullus are an ancient race of strange beings whose bodies resemble a combination of Enkidu and fish. The Kulullus have lived in the seas near Ur since before the First City was founded and they claim to have founded the first kingdom underneath the waves. Sages believe that when U'an the Apkallu emerged from the sea to bring civilization to Ur he had already brought his gifts to the Kulullus. But war and strife brought by less peaceful beings almost destroyed the Kulullu kingdom. Kulullu myths claim that an apostle of U'an will one day arrive from dry land to rebuild the old Kulullu kingdom. Kulullu shamans maintain these oral traditions. They have skill in water magic, and occasionally in astral magic as well."
-#gcost 85
+#gcost 140
 #clearweapons
 #hp 25
 #att 9
@@ -66971,7 +67590,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/eetritonshaman2.png"
 #name "Turtle Tribe Shaman"
 #descr "Life underneath the waves corresponds in many ways to that on dry land. Both humans and animals have underwater counterparts. Tritons are the most common of the aquatic humanoids. They appear as humans with legs ending in fins. Triton tribes, like humans, often follow a totemic spirit. The Turtle Tribe Tritons mimic their totem and don armor made from turtle shells. Most tribal Tritons live separate from the Triton kingdom of Pelagia, but some have joined forces with the Triton Kings. Turtle Tribe Shamans have skill in water magic, and occasionally in nature magic as well."
-#gcost 70
+#gcost 120
 #clearmagic
 #clearweapons
 #poorleader
@@ -66989,7 +67608,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/eemermanshaman2.png"
 #name "Merman Shaman"
 #descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Merman Shamans have skill in water magic, and occasionally in air magic as well."
-#gcost 75
+#gcost 130
 #clearmagic
 #clearweapons
 #poorleader
@@ -67008,7 +67627,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/eemermanshamanland2.png"
 #name "Merman Shaman"
 #descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Merman Shamans have skill in water magic, and occasionally in air magic as well."
-#gcost 75
+#gcost 130
 #clearmagic
 #clearweapons
 #poorleader
@@ -67026,7 +67645,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/eesahuaginshaman2.png"
 #name "Sahuagin Shaman"
 #descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they are weakened by the harsh sunlight and dry air. Sahuagin Shamans have skill in water magic, and occasionally in the blood magic of sharks as well."
-#gcost 80
+#gcost 120
 #hp 13
 #att 10
 #def 10
@@ -67052,7 +67671,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/eesahuaginshaman2.png"
 #name "Sahuagin Shaman"
 #descr "Sahuagin are a vicious, highly intelligent race of fish-men. Sometimes referred to as 'Sea-Devils', Sahuagin are predatory in the extreme. Their natural strength makes their claws and jaws into powerful weapons and their scales are as tough as mail armor. Sahuagin can leave the sea, however they are weakened by the harsh sunlight and dry air. Sahuagin Shamans have skill in water magic, and occasionally in blood or death magic as well."
-#gcost 80
+#gcost 120
 #hp 13
 #att 8
 #def 8
@@ -67078,7 +67697,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/eeshamblershaman2.png"
 #name "Shambler Shaman"
 #descr "Shamblers are Atlantians grown to huge proportions. They use claws or clubs made from Atlantian coral in combat and do not normally don armor since it tends to be cumbersome. Shambler Shamans are the religious leaders of isolated Atlantian tribes. They have skill in water magic, and occasionally in earth magic as well."
-#gcost 85
+#gcost 140
 #mr 13
 #clearmagic
 #clearweapons
@@ -93189,6 +93808,12 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 #magicskill 9 1 -- 1H
 #end
 
+
+#selectmonster 1541  -- Ghost Champion
+#clearweapons
+#weapon 1924 -- Ghostly Sword
+#end
+
 #selectmonster 1511  -- vanadis
 #end
 
@@ -94643,6 +95268,20 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectmonster 2190  -- Draug
 #armor 20 -- iron cap
+#str 16
+#prot 5
+#def 13
+--#fear 0
+--#glamour
+#end
+
+#selectmonster 2191  -- Draug big
+#armor 20 -- iron cap
+#str 19
+#prot 6
+#def 13
+--#fear 0
+--#glamour
 #end
 
 #selectmonster 2196  -- Swamp Drake
@@ -120554,6 +121193,12 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 8020 -- dire bear
 #homemon 2190 -- draug
 #homemon 3747 -- ice ele s8
+#homemon 9347 -- Ghostly Warrior
+#homemon 9352 -- Valravn
+#homecom 9356 -- Valravn Lord
+#homecom 9348 -- Undrjarl
+#homecom 7329 -- drauga
+#homecom 7330 -- draugherse
 #homecom 8673 -- fire dragon
 #homecom 8678 -- lindwurm
 #homecom 7253 -- aesir
@@ -120568,6 +121213,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 1
 #homecom 3881
 #homecom 3883
+#homecom 3885
 #end
 
 #newsite 2469
@@ -121076,6 +121722,23 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7659 -- puck
 #homecom 7660 -- korrig
 #homecom 7237 -- horned one
+#end
+
+#newsite 2621
+#name "EA Marverni Deities"
+#level 0
+#rarity 5
+#path 6
+#look 4
+#homecom 9328 -- Altar
+#homecom 9338
+#homecom 9339
+#homecom 9340
+#homecom 9341
+#homecom 9343
+#homecom 9344
+#homecom 9345
+#homecom 9346
 #end
 
 #newsite 2500
@@ -122970,6 +123633,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 4 
 #level 0
 #end
+
+-- 2621 used by Marverni forest lords
 
 -- 2917 used by iram summons
 
@@ -128960,6 +129625,7 @@ Priests: Average"
 #startscout 426  -- Scout
 
 #futuresite "EA Marverni Summons"
+#futuresite "EA Marverni Deities"
 #futuresite "EA Marverni Heroes"
 #end
 
@@ -129375,6 +130041,7 @@ Priests: Powerful, can perform blood sacrifices"
 #startunittype2 1121  -- Atavi Archer
 #startunitnbrs2 40
 
+#futuresite "Celestial Garden"
 #futuresite "EA Kailasa Summons"
 #futuresite "EA Kailasa Summons Continued"
 #futuresite "EA Kailasa Heroes"
@@ -130559,6 +131226,8 @@ Nation: Reduced income. Halved population growth from Growth scales."
 #startunitnbrs1 30
 #startunittype2 1121  -- Atavi Archer
 #startunitnbrs2 40
+
+#futuresite "Celestial Garden"
 #futuresite "MA Bandar Log Summons"
 #futuresite "MA Bandar Log Summons Continued"
 #futuresite "MA Bandar Log Blood & Death Summons"
@@ -134901,6 +135570,10 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #fatiguecost 1000
 #nreff 1002 -- 5+
 #damage 8020
+#restricted 12 -- Marverni
+#restricted 81 -- Nidavangr
+#restricted 79 -- vanarus
+#restricted 124 -- zemaitia
 #notfornation 32 -- Rus
 #end
 
@@ -142720,6 +143393,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 31 -- EA Helheim
 #restricted 78 -- MA Vanheim
 #restricted 79 -- Vanarus
+#restricted 81 -- Nidavangr
 #restricted 115 -- LA Midgard
 #nextspell 2813
 #end
@@ -162096,6 +162770,164 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 --#end
 
 
+#selectspell 4349 -- Darkness battle enchantment
+#name "Dark Clouds"
+#descr "The skies are darkened by ominous clouds."
+#researchlevel 1
+#school -1
+#path 0 1
+#pathlevel 0 1
+#nreff 1
+#fatiguecost 400
+#effect 10083
+#damage 97
+#end
+
+#selectspell 4350
+#name "Gloom"
+#descr "The spell will cause the province to become covered in gloomy clouds and unnaturally dark for an entire month. Any battles fought there will have partial darkness."
+#details "Battlefield darkness -3, blind beings and beings with spirit sight or perfect darkvision are unaffected by this spell."
+#school 1
+#researchlevel 3
+#path 0 1 -- A
+#pathlevel 0 1
+#path 1 5 -- D
+#pathlevel 1 2
+#nreff 1
+#fatiguecost 400
+#effect 10042
+#damage 4300
+#provrange 1
+#restricted 81 -- Nidavangr
+#nextspell "Dark Clouds"
+#end
+
+#selectspell 4351 -- Polar Night battle enchantment
+#name "Sunless Sky"
+#descr "The skies are unnaturally dark."
+#researchlevel 1
+#school -1
+#path 0 1
+#pathlevel 0 1
+#nreff 1
+#fatiguecost 500
+#effect 10082
+#damage 97
+#end
+
+#selectspell 4352
+#name "Polar Night"
+#descr "The caster causes an unnatural darkness to take hold over a province for three months. Any battles fought there will have partial darkness."
+#details "Battlefield darkness -3, blind beings and beings with spirit sight or perfect darkvision are unaffected by this spell."
+#school 1
+#researchlevel 5
+#path 0 1 -- A
+#pathlevel 0 2
+#path 1 5 -- D
+#pathlevel 1 3
+#nreff 1
+#fatiguecost 600
+#effect 10042
+#damage 4301
+#provrange 1
+#restricted 81 -- Nidavangr
+#nextspell "Sunless Sky"
+#end
+
+#selectspell 4353 -- Sonarblot
+#copyspell 1277 -- Scrying Pool
+#name "Sónarblót"
+#descr "By making a sacrifice to the Awakening God, their ability to scry may be extended to a distant province outside of their dominion."
+#school 6
+#path 0 8
+#path 1 -1
+#fatiguecost 200
+#restricted 81 -- Nidavangr
+#end
+
+#selectspell 4354 -- Sonarblot
+#copyspell 1314 -- Gift of the Furies
+#name "Sigrblót"
+#descr "The caster sacrifices a few slaves at the eve of battle to grant their companions and allies power in the name of victory. They will strike with greater precision and and their morale will be bolstered."
+#details "Attack skill +2, morale +2."
+#school 6
+#researchlevel 6
+#path 0 8
+#path 1 -1
+#fatiguecost 400
+#aoe 666
+#path 0 8 -- B
+#pathlevel 0 4
+#path 1 9 -- H
+#pathlevel 1 1
+#restricted 81 -- Nidavangr
+#end
+
+#selectspell 4355
+#copyspell 939 -- Summon Lesser Fire Elemental
+#name "Raise Ghostly Warriors"
+#descr "In the lands of Nidavangr, the dead are treated with little reverence. Spirits of dead ancestors are often returned from the underworld by the seithberenders of the Crow Clan. This spell will call to the spirits of a few such warriors, and a band of ghostly beings will quickly manifest to aid the caster where they will fight until the battle ends. More powerful casters will summon larger bands of warriors."
+#researchlevel 5
+#path 0 5 -- D
+#pathlevel 0 2
+#fatiguecost 100
+#damage 9347 -- Warrior Spirit
+#nreff 1001 -- 3+
+#spec 8388608
+#restricted 81 -- Nidavangr
+#end
+
+#selectspell 4356
+#name "Undrjarl's Host"
+#descr "Summon 15 ghosts."
+#school -1
+#researchlevel 0
+#path 0 5
+#pathlevel 0 1
+#effect 10001
+#damage 9347  -- Ghost
+#nreff 15
+#end
+
+#selectspell 4357
+#name "Call Undrjarl"
+#descr "In the lands of Nidavangr, the dead are treated with little reverence. Spirits of dead ancestors are often returned from the underworld by the seithberenders of the Crow Clan. This spell will call a great Undrjarl and a few of his retainers to lead the undead hosts of Nidavangr. The Undrjarl's connection to those who served him in life is strong, and may be used to return some of their number to his side each month to raid and conquer once again. The Undrjarl's time in the underworld will have given him insight into the magic of Death. Once bound to the mortal world their ancestral ties will allow them to return if slain, however this is much slower than other forms of immortality."
+#school 0
+#researchlevel 6
+#path 0 5
+#pathlevel 0 3
+#effect 10021
+#fatiguecost 8000
+#damage 9348 -- Ghost King
+#nreff 1
+#restricted 81 -- Nidavangr
+#nextspell 4356
+#end
+
+#selectspell 4358
+#copyspell 942
+#name "Call of the Valravne"
+#descr "The caster calls an unkindness of ravens and sends them to where a battle took place so they may feast upon the fallen and be transformed into Valravne with blood and sacrifice. The Valravne appear as a raven with the body of a wolf, and as they continue to devour the dead they will gain in power and strength. A Valravn that has eaten the heart of a young child will undergo a further transformation, taking on a more humanlike form and intelligence."
+#details "Summons 20 Valravn led by a Valravn Lord. Valravn will grow in strength as they eat corpses.
+This spell may only target friendly provinces."
+#school 6
+#researchlevel 4
+#path 0 8
+#pathlevel 0 1
+#path 1 1
+#pathlevel 1 2
+#fatiguecost 3500
+#effect 10037
+#damage 9352 -- Valravn
+#farsumcom 9356 -- Valravn Lord
+#nreff 21
+#provrange 5
+#onlyowndst 1
+#nogeodst 4 -- Sea
+#restricted 81 -- Nidavangr
+#end
+
+
 
 -- END OF NEW SPELLS
 
@@ -170515,6 +171347,28 @@ Increases Natural Protection by 2 for each level of heat in the province."
 #nofind
 #battlesum1d2 7580 -- Kelp Man
 --#spell "Kelp Man Animation"
+#end
+
+#selectitem 899 -- Blodhjart
+#copyitem 395 -- Heart of Life
+#name "Blodhjart"
+#descr "This heart, made with the life force of many slaves and infused with the magic of Death, may bring the bearer back from the dead as an undead wight should they fall. The heart's magic will require a month to attune to, and the crude surgery required to replace the heart will most likely eprmanently damage its owner. One being can have multiple magic hearts at once. Inanimate beings cannot use magic hearts."
+#spr "magicenhanced/blue_blodhjart.png"
+#constlevel 5
+#mainpath 5 -- D
+#mainlevel 1
+#secondarypath 8 -- B
+#secondarylevel 1
+#itemcost1 -40 -- 3D
+#itemcost2 100 -- 10B
+#type 8
+#spell "Twiceborn"
+#reinvigoration 2
+#coldres 5
+#poisonres 5
+#restricted 81
+#nodemon
+#noundead
 #end
 
 
@@ -192892,6 +193746,22 @@ It is now fully repaired and a new crew has been assigned to it."
 #1unit 747
 #nolog
 #notext
+#end
+
+#newevent -- Gloom event
+#rarity 5
+#req_rare 0
+#id 4300
+#msg "The province was covered in dark and gloomy clouds for an entire month."
+--#nation -2
+#end
+
+#newevent -- Polar Night event
+#rarity 5
+#req_rare 0
+#id 4301
+#msg "The province has been covered by an unnatural darkness for the entire month, and it does not appear to be lifting yet."
+--#nation -2
 #end
 
 
