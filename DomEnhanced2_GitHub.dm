@@ -136714,7 +136714,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #precision 8
 #casttime 100
 #fatiguecost 25
-#spec 17592194744320  -- Ignore shields, Enemy Sacreds only, AN, Undead & lifeless immune, MR-Hard Neg
+#flightspr -1
+#spec 17592194744320  -- Ignore shields, Enemy Sacreds only, AN, MR-Hard Neg
 #godpathspell 2
 #end
 
@@ -136745,7 +136746,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #school 7
 #path 0 9
 #aoe 1001
-#damage 2
+#damage 5
 #range 35
 #pathlevel 0 2
 #precision 8
@@ -136952,6 +136953,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #fatiguecost 10
 #casttime 100
 #godpathspell 0
+#precision 4
 #end
 
 #selectspell 2357
@@ -136980,7 +136982,9 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 2
 #pathlevel 1 1
 #aoe 1
-#damage 1010
+#damage 2016
+#range 30
+#precision 4
 #spec 1099520016448 -- Armour Piercing, Slashing Damage, UWOK
 #fatiguecost 10
 #casttime 100
@@ -136997,7 +137001,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 1
 #path 1 3
 #pathlevel 1 1
-#nreff 12
+#nreff 18
+#damage 2012 -- 14
 #fatiguecost 10
 #casttime 100
 #godpathspell 3
@@ -137014,12 +137019,11 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 4
 #pathlevel 1 1
 #nreff 2
-#damage 8
-#precision 4
+#damage 1007
+#precision 6
 #fatiguecost 10
 #casttime 100
 #godpathspell 4
-#nogeosrc 4096  -- Cave
 #end
 
 #selectspell 2361
@@ -137033,9 +137037,11 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 5
 #pathlevel 1 1
 #aoe 1
-#damage 1008
+#damage 1013 -- 14+
 #fatiguecost 10
 #casttime 100
+#range 1029
+#precision 4
 #godpathspell 5
 #end
 
@@ -137051,7 +137057,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 1 1
 #fatiguecost 10
 #range 5025
-#aoe 1001
+#aoe 1002
 #precision 4
 #casttime 100
 #godpathspell 6
@@ -137060,7 +137066,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2363
 #copyspell 1419 -- Harm
 #name "Channel Divine Harm"
-#descr "The priest calls upon the power of the true God to empower their own skills in Blood magic. The Gods power flows through them and erupts as a torrent of pure agony. Channelling the power of a God in this way is somewhat tiring to the priest."
+#descr "The priest calls upon the power of the true God to empower their own skills in Blood magic. The Gods power flows through them and erupts as a torrent of pure torment. Channelling the power of a God in this way is somewhat tiring to the priest."
 #researchlevel 0
 #school 7
 #path 0 9
@@ -137068,7 +137074,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 8
 #pathlevel 1 1
 #range 30
-#aoe 1
+#aoe 1001 -- 1+
+#damage 1001 -- 2+
 #fatiguecost 10
 #casttime 100
 #godpathspell 8
@@ -137253,7 +137260,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 0
 #effect 2
 #nreff 1
-#damage 10
+#damage 15
 #spec 17592194965640  -- Poison Damage, Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
 #end
 
@@ -137274,6 +137281,12 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #nextspell "Banish Demon"
 #spec 17592194973832  -- Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
 #end
+
+#selectspell 205 -- Cleansing
+#damage 3002
+#end
+
+
 
 #selectspell 2383
 #copyspell 1085 -- Clockwork Soldiers
@@ -161175,11 +161188,13 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 0 1
 #path 1 7
 #pathlevel 1 1
-#range 30
+#range 5030
 #aoe 1
-#damage 1009 -- 10+
+#damage 1011 -- 12+
 #fatiguecost 10
 #casttime 100
+#precision 6
+#spec 17188524160 -- Enemy only
 #godpathspell 7
 #end
 
@@ -164339,6 +164354,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 657 -- Ephemeral Bolt
 #damage 1011 -- 13+ from 4+
 #precision 8
+#spec 17188524160 -- Enemy only
 #end
 
 #selectspell 5 -- Thunder Shock
