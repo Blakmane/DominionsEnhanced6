@@ -5491,18 +5491,18 @@
 #end
 
 #newarmor 558 -- Lifidi Barding
+#copyarmor 251
 #name "Lifidi Barding"
 #rcost 12
-#type 9
 #protparts 14 9
 #woodenarmor
 #magicarmor
 #end
 
 #newarmor 559 -- Saddle Barding
+#copyarmor 251
 #name "Light Leather Barding"
 #rcost 1
-#type 9
 #protparts 5 5
 #end
 
@@ -5525,7 +5525,6 @@
 #newarmor 562 -- Pearl Barding
 #copyarmor 255 -- silver barding
 #name "Pearl Barding"
-#type 9
 #protparts 13 13
 #enc 1
 #magicarmor
@@ -5534,7 +5533,6 @@
 #newarmor 563 -- Spectral Barding
 #copyarmor 251 -- leather barding
 #name "Spectral Barding"
-#type 9
 #protparts 9 9
 #enc 0
 #magicarmor
@@ -5543,7 +5541,6 @@
 #newarmor 564 -- Fire Plate Barding
 #copyarmor 251 -- leather barding
 #name "Fire Plate Barding"
-#type 9
 #protparts 18 18
 #enc 1
 #def -1
@@ -5553,7 +5550,6 @@
 #newarmor 565 -- Hexplate Barding
 #copyarmor 251 -- leather barding
 #name "Hexplate Barding"
-#type 9
 #protparts 17 21
 #protinspector 17
 #enc 1
@@ -5564,7 +5560,6 @@
 #newarmor 566 -- Death Knight Barding
 #copyarmor 251 -- leather barding
 #name "Death Knight Barding"
-#type 9
 #protparts 18 21
 #protinspector 18
 #enc 1
@@ -5575,7 +5570,6 @@
 #newarmor 567 -- Icicle Barding
 #copyarmor 251 -- leather barding
 #name "Icicle Barding"
-#type 9
 #protparts 16 16
 #enc 0
 #def 0
@@ -5631,7 +5625,6 @@
 #newarmor 575 -- Turquoise Barding
 #copyarmor 251 -- leather barding
 #name "Turquoise Barding"
-#type 9
 #protparts 11 11
 #protinspector 11
 #enc 0
@@ -5642,7 +5635,6 @@
 #newarmor 576 -- Jet Barding
 #copyarmor 251 -- leather barding
 #name "Obsidian Barding"
-#type 9
 #protparts 14 14
 #protinspector 14
 #enc 0
@@ -5654,7 +5646,6 @@
 #newarmor 577 -- Turquoise Barding
 #copyarmor 251 -- leather barding
 #name "Alabaster Barding"
-#type 9
 #protparts 12 12
 #protinspector 12
 #enc 0
@@ -17775,7 +17766,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #name "Tsen"
 #spr1 "shambhala/btsan_1.tga"
 #spr2 "shambhala/btsan_2.tga"
-#descr "Tsen are Mu spirits of the sky from the high mountains of Shambhala. They were once noble allies of the Bhödpa, but are now degraded abd malevolent beings, angry at being harassed and driven off by the demon hunters of Shambhala. They appear as black-skinned demons with hideous bone necklaces. They are master archers, and when in one of their vengeful rages they range through the forests, killing anything that moves with their plague-ridden arrows. Sometimes, a sorcerer may summon a vengeful Tsen and send them against an enemy. Tsen bring death, and one struck by an arrow from their foul bow will almost surely die of disease."
+#descr "Tsen are Mu spirits of the sky from the high mountains of Shambhala. They were once noble allies of the Bhödpa, but are now degraded and malevolent beings, angry at being harassed and driven off by the demon hunters of Shambhala. They appear as black-skinned demons with hideous bone necklaces. They are master archers, and when in one of their vengeful rages they range through the forests, killing anything that moves with their plague-ridden arrows. Sometimes, a sorcerer may summon a vengeful Tsen and send them against an enemy. Tsen bring death, and one struck by an arrow from their foul bow will almost surely die of disease."
 #ap 13
 #mapmove 2
 #hp 25
@@ -52541,6 +52532,7 @@ Dragon Priests can be recruited in any land fort."
 #magicskill 1 3 -- A
 #magicskill 2 2 -- W
 #magicskill 5 3 -- D
+#magicskill 9 3 -- H
 #end
 
 #newmonster 8870 -- Drowned Mage
@@ -61653,6 +61645,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #weapon 11 -- Great Sword
 #weapon 404 -- Beak
 #spiritsight
+#okundeadleader
 #size 4
 #drawsize 18
 #end
@@ -61687,6 +61680,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #weapon 11 -- Great Sword
 #weapon 404 -- Beak
 #spiritsight
+#okundeadleader
 #size 4
 #drawsize 12
 #end
@@ -61721,6 +61715,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #weapon 11 -- Great Sword
 #weapon 404 -- Beak
 #spiritsight
+#okundeadleader
 #size 4
 #drawsize 6
 #end
@@ -61754,6 +61749,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #weapon 11 -- Great Sword
 #weapon 404 -- Beak
 #spiritsight
+#okundeadleader
 #size 4
 #end
 
@@ -66094,6 +66090,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #str 21
 #att 11
 #mor 16
+#transformation 0
 #magicbeing
 #amphibian
 #clearweapons
@@ -72004,7 +72001,7 @@ Only three Queens of Elemental Water are known to exist."
 #fixedname "Limne"
 #spr1 "./magicenhanced/icequeen1.tga"
 #spr2 "./magicenhanced/icequeen2.tga"
-#hp 65
+#hp 140
 #weapon "Icicle Fist"
 #trample
 #amphibian
@@ -72015,8 +72012,8 @@ Only three Queens of Elemental Water are known to exist."
 #mor 30
 #goodmagicleader
 #goodleader
-#icenatprot 3
-#iceprotinspector 3
+#icenatprot 2
+#iceprotinspector 2
 #coldpower 2
 #str 18
 #att 14
@@ -72025,18 +72022,27 @@ Only three Queens of Elemental Water are known to exist."
 #waterelementals 1
 #makemonsters1 3747 -- "Ice Elemental"
 #coldres 40
-#poisonres 15
+#poisonres 25
 #fireres -10
 #size 8
 #startage 600
 #maxage 1000
-#mapmove 18
 #female
 #unique
 #magicbeing
 #magicskill 2 5
 #magicskill 1 2
 #itemslots 860678
+#mr 18
+#mapmove 14
+#neednoteat
+#recuperation
+#spiritsight
+#enc 0
+#prot 13
+#woundfend 4
+#inanimate
+#snow
 #end
 
 -- # ILLEARTH
@@ -97583,7 +97589,8 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 --The success of the Nidalögning is dependent on the might of the God and the number of Scar Souls equals one half the dominion score of the province, rounded up."
 #descr "The Nidbathed, Nidlögade, are ghastly warriors who are not even stopped by death. In a horrible ritual administered by the Seithberenders a clan champion is bathed in the black water of the Nidakettil. During the ritual his fellow warriors cut deep wounds in his flesh before taking their own lives. Scarred by both the loss of his friends and the cuts in his flesh, the Nidbathed undergoes a gruesome transformation. His flesh turns white while his scars and eyes turns black as the night. Each scar on his body represents the strength and the death of a friend. If the Nidbathed is killed, one of his scars turns red and he rises again, unkillable as long as his friends’ deaths hold him alive. Being unkillable, the Nidbathed don’t care much for shields. Instead they fight with heavy greatswords able to cut down even the mightiest of Jotuns.
 The success of the Nidalögning is dependent on the might of the God and the number of Scar Souls equals one third the dominion score of the province, rounded up."
-#gcost 10050
+--#gcost 10050
+#startingaff 2 -- Cursed
 #extralives 33
 --#coldres 10
 #rpcost 46
@@ -117414,6 +117421,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 489 -- knight
 #homemon 632 -- storm
 #homemon 449 -- frost
+#homemon 2073 -- shedim
 #homecom 305
 #homecom 826
 #homecom 827
@@ -159729,8 +159737,8 @@ Animals only: Protective Force 20"
 #selectspell 4135 -- Revisit Tech Duinn teleport
 #copyspell 1303 -- teleport
 #name "Revisit Tech Duinn"
-#descr "The God-Kings of Fomoria once guarded the dark and stormy ocean realm of the drowned dead. With the ascendancy of the Pantokrator they were punished for their sins and banished from their dark home. Now with the Pantokrator gone, the Fomorians can again claim mastery over the drowned dead. The Fomorian King revisits Tech Duinn, the realm of the watery dead, and reinstates his place as one of its lords. He will gain power over both Water and Death and he will be able to command the watery dead. The Fomorian King may return to the world into any friendly sea province, and he will open a gateway by which the dead may follow to serve. A host of Drowned Ones will accompany him and a few Drowned will come through the gateway each month after."
-#details "Can only be cast by Fomorian Kings or God-Kings. Fomorian Kings will become God-Kings, gaining W2 and D3 magic if lower.
+#descr "The God-Kings of Fomoria once guarded the dark and stormy ocean realm of the drowned dead. With the ascendancy of the Pantokrator they were punished for their sins and banished from their dark home. Now with the Pantokrator gone, the Fomorians can again claim mastery over the drowned dead. The Fomorian King revisits Tech Duinn, the realm of the watery dead, and reinstates his place as one of its lords. He will gain power over both Water and Death, his divine power will increase, and he will be able to command the watery dead. The Fomorian King may return to the world into any friendly sea province, and he will open a gateway by which the dead may follow to serve. A host of Drowned Ones will accompany him and a few Drowned will come through the gateway each month after."
+#details "Can only be cast by Fomorian Kings or God-Kings. Fomorian Kings will become God-Kings, gaining W2 and D3 magic if lower, and gaining H3.
 Gateway to Tech Duinn will open where cast, where 1d6 Drowned Soulless, Longdead or Ghosts may appear each month. This spell can only target friendly underwater provinces. The gateway lasts the province is lost."
 #path 0 5 -- D
 #path 1 1 -- A
@@ -162812,7 +162820,7 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #fatiguecost 400
 #effect 10042
 #damage 4300
-#provrange 1
+#provrange 2
 #restricted 81 -- Nidavangr
 #nextspell "Dark Clouds"
 #end
@@ -162844,7 +162852,7 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #fatiguecost 600
 #effect 10042
 #damage 4301
-#provrange 1
+#provrange 2
 #restricted 81 -- Nidavangr
 #nextspell "Sunless Sky"
 #end
@@ -162941,6 +162949,24 @@ This spell may only target friendly provinces."
 #nogeodst 4 -- Sea
 #restricted 81 -- Nidavangr
 #end
+
+#selectspell 4359
+#copyspell 935 -- Pack of Wolves
+#name "Bind Demons of the Desert"
+#descr "Through the seals of the Prophet King the Shedim that roam deserts and wastelands can be bound to service. A trio of Shedim will appear when the spell is cast and is bound by a powerful seal, forced to aid the tribes of Zion in performing wondrous tasks. The Shedim are winged, ox-headed storm demons and possibly servants of Pazuzu. This spell can only be cast in the wastelands."
+#school 0
+#researchlevel 4
+#path 0 1
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 1
+#fatiguecost 1200
+#damage 2073 -- Shedim
+#nreff 3
+#restricted 186 -- Zion
+#onlygeosrc 64 -- waste
+#end
+
 
 
 
@@ -171346,7 +171372,7 @@ Increases Natural Protection by 2 for each level of heat in the province."
 #weapon 1923 -- Earthen Pillar
 #reinvigoration 3
 #swift -50
-#mapmove -4
+#mapspeed -4
 #heavyitem 1
 #earthelementals 1
 #end
@@ -171368,7 +171394,7 @@ Increases Natural Protection by 2 for each level of heat in the province."
 #selectitem 899 -- Blodhjart
 #copyitem 395 -- Heart of Life
 #name "Blodhjart"
-#descr "This heart, made with the life force of many slaves and infused with the magic of Death, may bring the bearer back from the dead as an undead wight should they fall. The heart's magic will require a month to attune to, and the crude surgery required to replace the heart will most likely eprmanently damage its owner. One being can have multiple magic hearts at once. Inanimate beings cannot use magic hearts."
+#descr "This heart, made with the life force of many slaves and infused with the magic of Death, may bring the bearer back from the dead as an undead wight should they fall. The heart's magic will require a month to attune to, and the crude surgery required to replace the heart will most likely permanently damage its owner. One being can have multiple magic hearts at once. Inanimate beings cannot use magic hearts."
 #spr "magicenhanced/blue_blodhjart.png"
 #constlevel 5
 #mainpath 5 -- D
