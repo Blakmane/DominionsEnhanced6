@@ -26072,6 +26072,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #armor 545 -- Spectral Plate Cuirass
 #armor 549 -- Spectral Helmet
 #ethereal
+#spiritform
 #enc 0
 #coldres 15
 #poisonres 20
@@ -31378,22 +31379,34 @@ While in the form of an old man, all paths are increased and allows the use of N
 #end
 
 #newmonster 7538
-#copystats 547  -- Dead One
-#clearweapons
-#clearmagic
 #spr1 "magicenhanced/eepreta.tga"
 #spr2 "magicenhanced/eepreta2.tga"
 #name "Preta"
 #descr "Pretas are the spirits of those that were jealous or greedy in life reborn as eternally hungry supernatural beings. As a result of their karma they are afflicted with an insatiable hunger for repugnant substances, such as cadavers or feces. They are human-like, but with sunken, mummified skin, narrow limbs, enormously distended bellies and long, thin necks with shrunken mouths. As a result, they are always hungry. Pretas are pitied rather than feared or hated amongst the monkey people. They dwell in wastes and deserts far away from people. The hunger of a Preta is so intense it manifests as a smouldering aura around the beings."
+#hp 15
+#size 3
+#str 12
+#prec 5
+#ap 6
+#enc 0
+#mapmove 20
 #mr 14
 #mor 14
 #att 10
 #def 12
 #prot 7
+#coldres 15
+#poisonres 25
 #fireres 15
 #appetite 3
 #wastesurvival
 #heat 3
+#amphibian
+#neednoteat
+#undead
+#wastesurvival
+#spiritsight
+#ethereal
 #weapon 29  -- Claw
 #weapon 63  -- Life Drain
 #end
@@ -33447,6 +33460,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copyspr 1335  -- Gandharva
 #gcost 10035
 #descr "Gandharvas are divine warrior-musicians that left this world ages ago. They serve the Celestial Gods, but are sometimes summoned to this world by the monkey people living on the sacred mountain where the worlds lie closer. Gandharvas are blessed with an Aura of Splendor that strikes mortals with awe."
+#airshield 50
 #end
 
 #newmonster 7641
@@ -33454,6 +33468,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copyspr 1331  -- Kinnara
 #gcost 10050
 #descr "The Kinnara is a divine being and a musician of the Spheres. It has the appearance of a winged horse-headed man robed in splendor that strikes mortals with awe."
+#def 12 -- 11 -> 12
+#airshield 50
 #end
 
 #newmonster 7642
@@ -46819,6 +46835,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #coldres 5
 #reinvigoration 3
 #female
+#size 3
 #autohealer 2
 #nobadevents 15
 #armor 158
@@ -136207,7 +136224,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 1 1
 #fatiguecost 20
 #damage 70437463654400  -- Slashing Res & 5 Prot
-#spec 549470208  -- UWOK, lifeless immune, Friendlies only
+#spec 549470212  -- UWOK, lifeless immune, Friendlies only, no spiritform
 #end
 
 #selectspell 2295
@@ -136230,7 +136247,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #explspr 10181  -- Falling Rain
 #sound 31
 #spec 8404992
-#spec 549470208  -- UWOK, lifeless immune, Friendlies only
+#spec 549470212  -- UWOK, lifeless immune, Friendlies only, no spiritform
 #end
 
 #selectspell 2296
@@ -142871,6 +142888,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #name "Bring Forth the Cauldron Born"
 #descr "The Cauldron of Rebirth will allow up to 200 corpses in the same province to be reanimated as soulless to serve the bearer of the cauldron."
 #researchlevel 0
+#provrange 0
 #school -1
 --#nolandtrace 1
 --#nowatertrace 1
@@ -163461,6 +163479,7 @@ This spell may only target friendly provinces."
 #end
 
 #selectspell 286 -- Celestial Chastisement
+#descr "The mage invokes the laws of the Celestial Bureaucracy and chastises a magical being for serving a false god. The target is wounded, regardless of armor, and is compelled to switch sides. Powerful beings often disregard the compulsion."
 #pathlevel 0 2
 #range 25
 #spec 17592194449552 -- +MRNH
@@ -170404,7 +170423,7 @@ This will also prevent their skin from drying out."
 #copyitem 320 -- Ring of warning
 #spr "magicenhanced/eeihelmprem.tga"
 #name "Helmet of Premonition"
-#descr "The wearer of this helmet receives flashes of insight from the near future, alerting them to danger. The wearer will anticipate and avoid the first blow that would strike them in each battle, and will be able to fight multiple enemies more effectively. This also allows the wearer to be protected by twice as many bodyguards as usual during assassination attempts."
+#descr "The wearer of this helmet receives flashes of insight from the near future, alerting them to danger. The wearer will anticipate and avoid the first blow that would strike them in each battle, and will be able to fight multiple enemies more effectively."
 #constlevel 3
 #mainpath 4
 #mainlevel 1
