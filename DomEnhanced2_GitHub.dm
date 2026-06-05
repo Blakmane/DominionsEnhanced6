@@ -130489,18 +130489,23 @@ Dominion: Dominion hides province ownership."
 
 -- ---- Pelagian Soldier (EA = 2385): turtle hauberk + turtle cap ----
 #selectmonster 2385
+#cleararmor
 #armor 114  -- Turtle Shell Hauberk (body)
 #armor 134  -- Turtle Cap (head)
+#armor 25   -- Turtle Shell Shield (kept)
 #end
 
 -- ---- Clones of indie-shared units (recruited in place of vanilla 2382 / 2383) ----
 
--- Turtle Clan: clone of Turtle Tribe Triton 2382 + a turtle cap (body 114 + shield 25 carried from 2382)
+-- Turtle Clan: clone of Turtle Tribe Triton 2382, in full turtle armour
 #newmonster 13572
 #copystats 2382
 #copyspr 2382
 #name "Turtle Clan"
+#cleararmor
+#armor 114  -- Turtle Shell Hauberk (body)
 #armor 134  -- Turtle Cap (head)
+#armor 25   -- Turtle Shell Shield
 #end
 
 -- Shark Tribe Berserker: clone of Shark Tribe Triton 2383
@@ -130518,8 +130523,10 @@ Dominion: Dominion hides province ownership."
 
 -- ---- Pearl Guard (2387, capital-only via Palace of Pearls site): pearl gear, +2 hp / +1 str / +1 mor, gold 25 ----
 #selectmonster 2387
+#cleararmor
 #armor 523  -- Pearl Hauberk (body)
 #armor 522  -- Pearl Cap (head)
+#armor 189  -- Pearl Shield (kept)
 #hp 18
 #str 13
 #mor 14
@@ -130538,6 +130545,7 @@ Dominion: Dominion hides province ownership."
 #clearweapons
 #weapon 263   -- Net
 #weapon 1545  -- Sharktooth Spear
+#cleararmor
 #armor 188    -- Sharkskin Cuirass (body)
 #armor 152    -- Sharkskin Cap (head)
 #end
@@ -130547,6 +130555,7 @@ Dominion: Dominion hides province ownership."
 #clearweapons
 #weapon 263   -- Net
 #weapon 1545  -- Sharktooth Spear
+#cleararmor
 #armor 188
 #armor 152
 #end
@@ -130578,6 +130587,7 @@ Dominion: Dominion hides province ownership."
 #size 6
 #clearweapons
 #weapon 389  -- Pearl Trident
+#cleararmor
 #armor 523  -- Pearl Hauberk
 #armor 522  -- Pearl Cap
 #armor 189  -- Pearl Shield
@@ -130600,8 +130610,10 @@ Dominion: Dominion hides province ownership."
 #formationfighter 2
 #clearweapons
 #weapon 580  -- Coral Long Spear
-#armor 23    -- Coral Hauberk (body; shield 25 carried from 2382)
+#cleararmor
+#armor 23    -- Coral Hauberk (body)
 #armor 24    -- Coral Cap (head)
+#armor 25    -- Turtle Shell Shield
 #gcost 13
 #end
 
@@ -130626,6 +130638,7 @@ Dominion: Dominion hides province ownership."
 #amphibian
 #clearweapons
 #weapon 645  -- Bronze Sword
+#cleararmor
 #armor 101   -- Bronze Hauberk (body)
 #armor 123   -- Hoplite Helmet (head)
 #armor 3     -- Kite Shield
@@ -130640,6 +130653,7 @@ Dominion: Dominion hides province ownership."
 #amphibian
 #clearweapons
 #weapon 645  -- Bronze Sword
+#cleararmor
 #armor 101   -- Bronze Hauberk (body)
 #armor 123   -- Hoplite Helmet (head)
 #armor 3     -- Kite Shield
