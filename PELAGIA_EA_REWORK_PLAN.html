@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EA Pelagia Rework — Implementation Plan</title>
+<title>EA Pelagia Rework — As-Built Summary</title>
 <style>
   body { font-family: -apple-system, system-ui, sans-serif; max-width: 980px; margin: 1.5rem auto; padding: 0 1rem; line-height: 1.45; color: #1a1a1a; }
   h1 { border-bottom: 3px solid #1d6fb8; padding-bottom: .3rem; }
@@ -12,122 +12,103 @@
   table { border-collapse: collapse; width: 100%; margin: .6rem 0; font-size: .92em; }
   th, td { border: 1px solid #ccc; padding: .35rem .5rem; text-align: left; vertical-align: top; }
   th { background: #eef3f7; }
-  .ready  { color: #137333; font-weight: 600; }
-  .new    { color: #8430ce; font-weight: 600; }
-  .decide { color: #c5221f; font-weight: 600; }
   .note { background: #fff8e1; border-left: 4px solid #f9a825; padding: .5rem .8rem; margin: .6rem 0; }
   .q { background: #fdeceb; border-left: 4px solid #c5221f; padding: .5rem .8rem; margin: .6rem 0; }
+  .art { background: #efe7fb; border-left: 4px solid #8430ce; padding: .5rem .8rem; margin: .6rem 0; }
 </style>
 </head>
 <body>
-<h1>EA Pelagia (Pearl Kings) — Rework Implementation Plan</h1>
-<p><strong>Target:</strong> <code>#selectnation 40</code> — EA Pelagia, in <code>DomEnhanced2_GitHub.dm</code>.
-Branch <code>pelagia-rework</code>. Source: brain-dump from the Pelagia author. This document maps every
-brain-dump line to a concrete edit, marks status, and lists the open decisions that need the author's call
-before the mass edit is applied.</p>
+<h1>EA Pelagia (Pearl Kings) — As-Built Summary</h1>
+<p><strong>Target:</strong> <code>#selectnation 40</code> in <code>DomEnhanced2_GitHub.dm</code>, branch <code>pelagia-rework</code>.
+This documents what the rework actually does, after the review feedback. Every unit/armour/weapon ID was
+verified against game data (dom6inspector CSVs + the per-nation recruit tables) and the mod's own definitions.</p>
 
-<div class="note"><strong>Status legend:</strong>
-<span class="ready">READY</span> = unambiguous, can implement now &nbsp;|&nbsp;
-<span class="new">NEW</span> = new unit/item/commander to author (defaults proposed) &nbsp;|&nbsp;
-<span class="decide">DECIDE</span> = needs the author's input.</div>
+<div class="note"><strong>Architecture.</strong> Edits target EA's IDs only. The two indie-shared units
+(Turtle Tribe Triton <code>2382</code>, Shark Tribe Triton <code>2383</code>) are cloned to new IDs
+(<code>13572</code>, <code>13573</code>) so wild independents keep vanilla stats; the clones are recruited via a
+<code>#clearrec</code> rebuild. Two-form mermen are edited in both forms. <code>#copystats</code> overwrites
+everything (incl. weapons/armour), so it is placed first and weapons are re-set with <code>#clearweapons</code>.</p></div>
 
-<div class="note"><strong>Mod mechanics established:</strong> DE keeps EA Pelagia's vanilla roster and modifies
-units in place via <code>#selectmonster &lt;id&gt;</code>. Each Pelagia unit exists as two IDs — an underwater
-base and a <code>swimming/floating</code> twin (DE adds <code>#float</code> so the whole roster can fight on
-land, which is Pelagia's "Closed Realm" gimmick). Stat/cost/gear edits must be applied to <em>both</em> forms.
-Armour/weapons are referenced by numeric ID. There is <strong>no per-unit recruit-removal command</strong> in
-Dom6 — removing a unit and adding new recruits both require <code>#clearrec</code> + an explicit rebuilt roster
-in the nation block (see Decision&nbsp;1).</p></div>
-
-<h2>Open decisions (need the author)</h2>
-<div class="q"><strong>1. Spear-militia removal &amp; new-unit recruitment.</strong> EA Pelagia's base roster is
-vanilla and not re-declared in the nation block, so the only way to (a) drop Spear Militia and (b) add the new
-recruitable units (Vanguard Warrior, Closed Realm Soldier, Vanguard Captain, Closed Realm Captain) is to
-<code>#clearrec</code> and rewrite the full recruit list explicitly. I need the author to confirm the
-<strong>complete intended EA Pelagia recruit list</strong> (troops + commanders), or sign off on the
-reconstructed list in the table below so nothing vanilla gets dropped. Also: which of the two
-"Pelagian Militia" IDs (<code>1056</code> vs <code>2384</code>) is the <em>spear</em> one to remove?</div>
-
-<div class="q"><strong>2. Masters of the Sea (spell 3069).</strong> Brain dump says "Completely rework — TBD what."
-Needs a concrete spec or it stays as-is for now.</div>
-
-<div class="q"><strong>3. Pearl King (2397).</strong> "Consider making W4S2" and "national discount on the
-astral suppressor down to 1 gem so the unit is usable." Confirm: apply W4S2? And confirm the suppressor item
-to discount (which forgeable item / current cost).</div>
-
-<div class="q"><strong>4. Pelagian Mermage (1415/1416).</strong> "50% A random, cost → 145?" — confirm the 145
-gold target.</div>
-
-<h2>Troops</h2>
+<h2>Units changed (EA only)</h2>
 <table>
-<tr><th>Item</th><th>ID(s)</th><th>Change</th><th>Status</th></tr>
-<tr><td>Spear Militia — remove</td><td>1056 or 2384</td><td>Drop from recruitment (via clearrec rebuild)</td><td class="decide">DECIDE (1)</td></tr>
-<tr><td>Knife Militia — keep</td><td>the other of 1056/2384</td><td>No change</td><td class="ready">READY</td></tr>
-<tr><td>Turtle Clan</td><td>2382</td><td>Set to Pelagian-triton stats; add Turtle Breastplate + Turtle Helm; ↑ resource cost</td><td class="new">NEW items</td></tr>
-<tr><td>Shark Tribe Berserker</td><td>2383</td><td>Pelagian-triton stats + extra natprot; Shark-Tooth Knives (1577) + proper bite; add <code>#berserk</code>; ↑ gold + rp</td><td class="ready">READY</td></tr>
-<tr><td>Pelagian Soldier</td><td>1057 / 2385</td><td>Turtle Hauberk (114) + Turtle Cap</td><td class="new">NEW item (cap)</td></tr>
-<tr><td>Coral Clan</td><td>2386 / 2416</td><td>No changes</td><td class="ready">READY</td></tr>
-<tr><td>Turtle Warrior → <em>Coastal Warrior</em></td><td>1291 / 1292</td><td>Rename; gold cost → 10</td><td class="ready">READY</td></tr>
-<tr><td>Merman Net Thrower → <em>Merman Hunter</em></td><td>2388 / 2389</td><td>Redefine: Turtle-Warrior stats; Net + Sharktooth Spear (1545) + Sharkskin Armour (188) + Sharkskin Cap</td><td class="new">NEW item (cap)</td></tr>
-<tr><td><em>Vanguard Warrior</em> (NEW)</td><td>13580 (new)</td><td>Coral-armoured Merman; Wave Warrior (1048) base stats; formation fighter; recruited by Coral Clan; coastal/land foothold unit</td><td class="new">NEW unit</td></tr>
-<tr><td>Triton Rider</td><td>2391</td><td>Reduce recruit-point (rp) cost</td><td class="ready">READY</td></tr>
-<tr><td>Pearl Guard</td><td>2387</td><td>Pearl Hauberk (523) + Pearl Cap (522); +1 Str, +2 HP, +1 Mor; gold → 25</td><td class="ready">READY</td></tr>
-<tr><td>Pelagian Shore Fighter</td><td>2807 / 2808</td><td>Morale → 11</td><td class="ready">READY</td></tr>
-<tr><td>Pelagian Sideraspist</td><td>2809 / 2810</td><td>Formation fighter 2; morale → 12</td><td class="ready">READY</td></tr>
-<tr><td><em>Closed Realm Soldier</em> (NEW)</td><td>13581 (new)</td><td>Inland-recruit only; elite-merman (Wave Warrior 1048) stats; Bronze Hauberk + Hoplite Helm; shield + bronze sword</td><td class="new">NEW unit</td></tr>
+<tr><th>Unit</th><th>ID(s)</th><th>Change</th></tr>
+<tr><td>Turtle Warrior → Coastal Warrior</td><td>1291 / 1292</td><td>Rename; gold 10</td></tr>
+<tr><td>Turtle Chief → Merman Chief</td><td>1293 / 1294</td><td>Rename</td></tr>
+<tr><td>Pelagian Shore Fighter</td><td>2807 / 2808</td><td>Morale 11</td></tr>
+<tr><td>Pelagian Sideraspist</td><td>2809 / 2810</td><td>Formation fighter; morale 12</td></tr>
+<tr><td>Pelagian Soldier</td><td>2385</td><td>Turtle Shell Hauberk (114) + Turtle Cap (134)</td></tr>
+<tr><td>Merman Net Thrower → Merman Hunter</td><td>2388 / 2389</td><td>Coastal Warrior stats; Net (263) + Sharktooth Spear (1545); Sharkskin Cuirass (188) + Sharkskin Cap (152)</td></tr>
+<tr><td>Pearl Mage</td><td>2396</td><td>+10% W/A/S/N random (<code>custommagic 11008</code>)</td></tr>
+<tr><td>Pelagian Explorer</td><td>2813 / 2814</td><td>Research bonus 5; +10% Fire random</td></tr>
+<tr><td>Pelagian Mermage</td><td>1415 / 1416</td><td>+50% Air random; gold 135</td></tr>
+<tr><td>Pearl Guard (cap-only, site)</td><td>2387</td><td>Pearl Hauberk (523) + Pearl Cap (522); +2 hp / +1 str / +1 mor; gold 25</td></tr>
+<tr><td>Pearl King (cap-only, site)</td><td>2397</td><td>Astral 2 (W4 S2)</td></tr>
+<tr><td>Laistrygone Hurler / Spearman</td><td>7614 / 7615</td><td>+5 prot, +2 att, +2 def; Hurler gets proper Boulder (424); incunrest 10→1; popkill 2</td></tr>
+<tr><td>Pearl Warriors → Pearl Prince</td><td>7468</td><td>Size 6, MA Triton King stats; Pearl gear + Pearl Trident (389); rewritten lore. <strong>Needs new sprite.</strong></td></tr>
 </table>
 
-<h2>Commanders</h2>
+<h2>Clones &amp; new units</h2>
 <table>
-<tr><th>Item</th><th>ID(s)</th><th>Change</th><th>Status</th></tr>
-<tr><td>Scout</td><td>1050 / 1051</td><td>No change</td><td class="ready">READY</td></tr>
-<tr><td>Turtle Chief → <em>Merman Chief</em></td><td>1293 / 1294</td><td>Rename only</td><td class="ready">READY</td></tr>
-<tr><td>Pelagian Captain</td><td>2390 / 1069</td><td>No change</td><td class="ready">READY</td></tr>
-<tr><td><em>Vanguard Captain</em> (NEW)</td><td>13582 (new)</td><td>Merman equivalent of Pelagian Captain; 100 leadership</td><td class="new">NEW cmdr</td></tr>
-<tr><td>Merman Priest</td><td>1696 / 1697</td><td>No change</td><td class="ready">READY</td></tr>
-<tr><td>Pearl Clan Priest</td><td>2395 / 2422</td><td>No change</td><td class="ready">READY</td></tr>
-<tr><td>Pelagian Mermage</td><td>1415 / 1416</td><td>50% Astral random; cost → 145 (confirm)</td><td class="decide">DECIDE (4)</td></tr>
-<tr><td>Pearl Mage</td><td>2396 / 2423 / 3038</td><td>Additional 10% W/A/S/N random</td><td class="ready">READY</td></tr>
-<tr><td>Ichthyid Pearl Mage</td><td>2805</td><td>Capital-only + coastal recruit</td><td class="ready">READY</td></tr>
-<tr><td>Pearl King</td><td>2397</td><td>Consider W4S2; astral-suppressor national discount → 1 gem</td><td class="decide">DECIDE (3)</td></tr>
-<tr><td>Pelagian Shore Commander</td><td>2811 / 2812</td><td>No change</td><td class="ready">READY</td></tr>
-<tr><td>Pelagian Explorer</td><td>2813 / 2814</td><td>Adept researcher +3; 10% Fire random</td><td class="ready">READY</td></tr>
-<tr><td><em>Closed Realm Captain</em> (NEW)</td><td>13583 (new)</td><td>Inland-recruit only; 100-leadership version</td><td class="new">NEW cmdr</td></tr>
+<tr><th>Unit</th><th>New ID</th><th>Build</th></tr>
+<tr><td>Turtle Clan (clone of 2382)</td><td>13572</td><td>copystats 2382 + Turtle Cap (134)</td></tr>
+<tr><td>Shark Tribe Berserker (clone of 2383)</td><td>13573</td><td>copystats 2383; Shark-Tooth Dagger (1577) + Bite; berserk; gold 13</td></tr>
+<tr><td>Vanguard Warrior (coast/land)</td><td>13580</td><td>copystats 2382; Coral Long Spear (580); Coral Hauberk (23) + Coral Cap (24); formation fighter; amphibian</td></tr>
+<tr><td>Vanguard Captain (coast/land)</td><td>13582</td><td>copystats 2390; keeps coral gear; command 100; amphibian</td></tr>
+<tr><td>Closed Realm Soldier (inland only)</td><td>13581</td><td>copystats 2382; Bronze Sword (645); Bronze Hauberk (101) + Hoplite Helm (123) + Kite Shield (3); amphibian</td></tr>
+<tr><td>Closed Realm Captain (inland only)</td><td>13583</td><td>copystats 2390; bronze gear; command 100; amphibian</td></tr>
+</table>
+<p class="art"><strong>ART needed.</strong> The four new units use placeholder sprites (<code>#copyspr</code> from
+thematic mermen); the Pearl Prince keeps the Pearl Warrior sprite. Final sprites still need to be drawn.</p>
+
+<h2>Items &amp; armour — existing reused, nothing minted</h2>
+<p>No new armour or item is created. Existing pieces are reused: Turtle Shell Hauberk <code>114</code>,
+Turtle Cap <code>134</code>, Coral Hauberk <code>23</code>, Coral Cap <code>24</code>, Turtle Shell Shield
+<code>25</code>, Sharkskin Cuirass <code>188</code>, Sharkskin Cap <code>152</code>, Pearl Hauberk <code>523</code>,
+Pearl Cap <code>522</code>, Pearl Shield <code>189</code>, Sharktooth Spear <code>1545</code>, Shark-Tooth Dagger
+<code>1577</code>, Pearl Trident <code>389</code>, Bronze gear <code>101/123/645/3</code>.</p>
+<p>The <strong>Astral Suppressor national discount</strong> reuses the existing item: <code>#nationrebate 40</code>
+on item <code>895</code> (rather than a duplicate item).</p>
+
+<h2>Spells</h2>
+<table>
+<tr><th>Spell</th><th>ID</th><th>Change</th></tr>
+<tr><td>Word of Drowning</td><td>3071</td><td>Range 30 + 5/level</td></tr>
+<tr><td>Curse of Choking Brine</td><td>3072</td><td>Range 30 + 5/level; precision 10</td></tr>
+<tr><td>Call Ichtyid Tribe</td><td>3085</td><td>One shaman → two</td></tr>
+<tr><td>Summon Hippocampoi</td><td>3086</td><td>Gem cost 12 → 10</td></tr>
 </table>
 
-<h2>Summons &amp; Spells</h2>
-<table>
-<tr><th>Item</th><th>ID(s)</th><th>Change</th><th>Status</th></tr>
-<tr><td>Summon Laistrygones</td><td>7614 / 7615</td><td>incunrest → 0.1; popkill → 2; +4–5 natprot; +2 att, +2 def; proper boulder attack</td><td class="ready">READY</td></tr>
-<tr><td>Summon Hippocampoi</td><td>1058; spell 3086</td><td>Make disciplined; gem cost 12 → 10</td><td class="ready">READY</td></tr>
-<tr><td>Ichthyid Tribe (Call Ichtyid Tribe, spell 3085)</td><td>2804 line</td><td>One shaman → two shamans</td><td class="ready">READY</td></tr>
-<tr><td>Pearl Warriors → <em>Pearl Prince</em></td><td>7468; spell 3088</td><td>Resprite + restat: size 6, MA Triton King stats; Pearl Armour + Pearl Trident (389); rewrite lore (heirs/future MA Pel kings)</td><td class="new">NEW art/lore</td></tr>
-<tr><td>Masters of the Sea</td><td>spell 3069</td><td>Complete rework — spec TBD</td><td class="decide">DECIDE (2)</td></tr>
-<tr><td>Word of Drowning</td><td>spell 3071</td><td>Range → 30 + 5/level</td><td class="ready">READY</td></tr>
-<tr><td>Curse of Choking Brine</td><td>spell 3072</td><td>Range → 30 + 5/level; precision 1 → 10</td><td class="ready">READY</td></tr>
-</table>
+<h2>Recruitment rebuild</h2>
+<p>After <code>#clearrec</code>, the roster is rebuilt to mirror the vanilla fort/coast split plus the land theme,
+grouped by family (troops weak→strong; commanders command→priest→mage):</p>
+<ul>
+<li><strong>Underwater home fort</strong> (<code>#uwrec</code>/<code>#uwcom</code>): Knife Militia, Turtle Clan, Pelagian
+Soldier, Coastal Warrior, Merman Hunter, Coral Clan Soldier, Shark Tribe Berserker, Triton Rider; Scout, Captain,
+Merman Chief, Merman Priest, Pearl Clan Priest, Mermage, Pearl Mage.</li>
+<li><strong>Coastal forts</strong> (<code>#coastfortrec</code>/<code>#coastfortcom</code>): Coastal Warrior, Shore
+Fighter, Sideraspist, Vanguard Warrior; Merman Chief, Merman Priest, Shore Commander, Explorer, Vanguard Captain,
+Ichtyid Pearl Mage.</li>
+<li><strong>Land forts — Closed Realm</strong> (<code>#landrec</code>/<code>#landcom</code>): Coastal Warrior, Shore
+Fighter, Sideraspist, Vanguard Warrior, Closed Realm Soldier; Merman Chief, Merman Priest, Shore Commander,
+Explorer, Vanguard Captain, Closed Realm Captain.</li>
+</ul>
+<p>Spear Militia (1056) is dropped. Capital-only units (Pearl King 2397, Pearl Guard 2387, Ichtyid Pearl Mage 2805)
+come from the Palace of Pearls site, not the recruit list, so they are not re-added — Ichtyid Pearl Mage additionally
+gets coastal recruitment per the brain dump.</p>
 
-<h2>New items to author</h2>
-<table>
-<tr><th>Item</th><th>New ID</th><th>Proposed basis</th></tr>
-<tr><td>Turtle Breastplate</td><td>armor 579</td><td>Turtle-shell body armour; mid prot, modest enc (basis: Turtle Shell Hauberk 114, lighter)</td></tr>
-<tr><td>Turtle Helm</td><td>armor 580</td><td>Turtle-shell full helm</td></tr>
-<tr><td>Turtle Cap</td><td>armor 581</td><td>Turtle-shell cap (light; copy Coral Cap 24 pattern, like Pearl Cap 522)</td></tr>
-<tr><td>Sharkskin Cap</td><td>armor 582</td><td>If no existing equivalent; light cap to match Sharkskin Cuirass 188</td></tr>
-</table>
-<p>Existing items reused: Turtle Shell Hauberk <code>114</code>, Pearl Hauberk <code>523</code>,
-Pearl Cap <code>522</code>, Sharkskin Cuirass <code>188</code>, Sharktooth Spear <code>1545</code>,
-Shark-Tooth Dagger <code>1577</code>, Pearl Trident <code>389</code>.</p>
-
-<h2>Reconstructed EA Pelagia recruit list (for Decision 1 sign-off)</h2>
-<p><strong>Troops:</strong> Knife Militia, Pelagian Soldier (1057), Turtle Tribe Triton (2382),
-Shark Tribe Berserker (2383), Coral Clan Soldier (2386), Coral Clan Hoplite (2416), Pearl Guard (2387),
-Coastal Warrior (1291), Triton Rider (2391), Shore Fighter (2807), Sideraspist (2809),
-Merman Hunter (2388), <em>Vanguard Warrior (new)</em>, <em>Closed Realm Soldier (new, inland)</em>.</p>
-<p><strong>Commanders:</strong> Pelagian Captain (2390), Merman Chief (1293), Merman Priest (1696),
-Pearl Clan Priest (2395), Pearl Mage (2396), Pearl King (2397), Pelagian Mermage (1415),
-Shore Commander (2811), Explorer (2813), Merman Scout (1050),
-<em>Vanguard Captain (new)</em>, <em>Closed Realm Captain (new, inland)</em>.</p>
-<p class="q">Please confirm this list is complete (no vanilla EA-Pel unit accidentally dropped) before clearrec rebuild.</p>
+<h2>Open questions for the author</h2>
+<div class="q"><strong>1. Mermage random — Air or Astral?</strong> "A random" is implemented as Air (256), matching the
+Pearl Mage's W/<strong>A</strong>/S/N. Change to Astral (2048) if that was meant.</div>
+<div class="q"><strong>2. Shark Tribe Berserker rp cost.</strong> Brain dump said "increase rp cost"; gold is 13 but no
+rp target was given, so <code>#rpcost</code> is left at the copystats default. Provide a value and it's a one-liner.</div>
+<div class="q"><strong>3. Triton Rider "reduce rp cost."</strong> Not actionable — its resource cost is already 1.
+Did you mean gold, or a per-turn recruit limit? Left unchanged.</div>
+<div class="q"><strong>4. Astral Suppressor target cost.</strong> <code>#nationrebate 40</code> applies the standard
+national rebate to item 895 (currently 3 astral gems in DE). Confirm the resulting cost is low enough for the Pearl King.</div>
+<div class="q"><strong>5. Laistrygones popkill.</strong> Set to 2 per the brain dump; note the base was already 1, so
+this is a slight increase. Confirm direction.</div>
+<div class="q"><strong>6. Word of Drowning / Choking Brine</strong> are <code>#restricted</code> to ~12 underwater
+nations, so the range/precision buffs apply to all of them. Confirm that's intended (else they need EA-only clones).</div>
+<div class="q"><strong>7. Masters of the Sea (3069)</strong> — left as-is, awaiting a concrete spec.</div>
 </body>
 </html>

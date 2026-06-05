@@ -130415,50 +130415,18 @@ Dominion: Dominion hides province ownership."
 #end
 
 -- =====================================================================
--- EA PELAGIA REWORK  (branch: pelagia-rework)
--- Source: Pelagia author brain dump. Overrides placed AFTER all original
--- DE Pelagia blocks so these win. TODO(decision N) = needs author input
--- (see PELAGIA_EA_REWORK_PLAN.html). custommagic bits: F128 A256 W512
--- E1024 S(Astral)2048 D4096 N8192 B16384.
+-- EA PELAGIA (40) REWORK -- branch: pelagia-rework
+-- Overrides are placed after the original DE Pelagia blocks so they win.
+-- Indie-shared units (Turtle Tribe 2382, Shark Tribe 2383) are cloned to new
+-- IDs and recruited via the #clearrec rebuild below, so wild independents keep
+-- vanilla stats. Two-form mermen are edited in both forms. custommagic mask:
+-- F128 A256 W512 E1024 S2048 D4096 N8192 B16384.
+-- Existing turtle/coral/sharkskin armour is reused (114 Turtle Shell Hauberk,
+-- 134 Turtle Cap, 23 Coral Hauberk, 24 Coral Cap, 188 Sharkskin Cuirass,
+-- 152 Sharkskin Cap) -- no new armour items are minted.
 -- =====================================================================
 
--- ---- New turtle/shark armor items ----
-#newarmor 579  -- Turtle Breastplate
-#copyarmor 114  -- Turtle Shell Hauberk (scale-type body)
-#name "Turtle Breastplate"
-#type 5
-#prot 12
-#def -1
-#enc 1
-#rcost 6
-#end
-
-#newarmor 580  -- Turtle Helm
-#copyarmor 24  -- Coral Cap (head slot)
-#name "Turtle Helm"
-#prot 18
-#enc 1
-#end
-
-#newarmor 581  -- Turtle Cap
-#copyarmor 24  -- Coral Cap (head slot)
-#name "Turtle Cap"
-#prot 14
-#end
-
--- (Sharkskin Cap already exists as vanilla armor 152 — no new armor minted; first-pass 582 dropped.)
-
-#newarmor 583  -- Coral Cuirass (for Vanguard Warrior)
-#copyarmor 114
-#name "Coral Cuirass"
-#type 5
-#prot 13
-#def -1
-#enc 1
-#rcost 7
-#end
-
--- ---- Turtle Warrior -> Coastal Warrior, gold 10 (ids 1291 float / 1292 amphib) ----
+-- ---- Turtle Warrior -> Coastal Warrior: gold 10 (1291 / 1292) ----
 #selectmonster 1291
 #name "Coastal Warrior"
 #gcost 10
@@ -130468,7 +130436,7 @@ Dominion: Dominion hides province ownership."
 #gcost 10
 #end
 
--- ---- Turtle Chief -> Merman Chief (rename only; ids 1293 / 1294) ----
+-- ---- Turtle Chief -> Merman Chief (1293 / 1294) ----
 #selectmonster 1293
 #name "Merman Chief"
 #end
@@ -130476,7 +130444,7 @@ Dominion: Dominion hides province ownership."
 #name "Merman Chief"
 #end
 
--- ---- Pelagian Shore Fighter morale 11 (2807 / 2808) ----
+-- ---- Pelagian Shore Fighter: morale 11 (2807 / 2808) ----
 #selectmonster 2807
 #mor 11
 #end
@@ -130484,7 +130452,7 @@ Dominion: Dominion hides province ownership."
 #mor 11
 #end
 
--- ---- Pelagian Sideraspist: formation fighter 2, morale 12 (2809 / 2810) ----
+-- ---- Pelagian Sideraspist: formation fighter, morale 12 (2809 / 2810) ----
 #selectmonster 2809
 #formationfighter 2
 #mor 12
@@ -130494,25 +130462,24 @@ Dominion: Dominion hides province ownership."
 #mor 12
 #end
 
--- ---- Pearl Mage +10% W/A/S/N random. EA Pearl Mage = 2396 ONLY (2423=MA, 3038=non-EA → NOT touched) ----
+-- ---- Pearl Mage (EA = 2396): +10% W/A/S/N random ----
 #selectmonster 2396
-#custommagic 10752 10  -- WASN (W512+A256+S2048+N8192)
+#custommagic 11008 10  -- W512 + A256 + S2048 + N8192
 #end
 
--- ---- Pelagian Explorer (2813/2814, two-form merman): 10% Fire random + adept researcher (resbonus 2->5) ----
+-- ---- Pelagian Explorer (2813 / 2814): adept researcher, +10% Fire random ----
 #selectmonster 2813
 #custommagic 128 10  -- F
-#researchbonus 5  -- vanilla base 2, +3 ("adept researcher")
+#researchbonus 5
 #end
 #selectmonster 2814
 #custommagic 128 10
 #researchbonus 5
 #end
 
--- ---- Pelagian Mermage (1415/1416, two-form merman): 50% random; gold 135 (resolved) ----
--- NOTE(author): "A random" read as AIR (256). Switch mask to 2048 if ASTRAL was intended (minor, to confirm).
+-- ---- Pelagian Mermage (1415 / 1416): +50% Air random, gold 135 ----
 #selectmonster 1415
-#custommagic 256 50  -- A (Air) 50%
+#custommagic 256 50  -- A
 #gcost 135
 #end
 #selectmonster 1416
@@ -130520,28 +130487,23 @@ Dominion: Dominion hides province ownership."
 #gcost 135
 #end
 
--- ---- Pelagian Soldier: turtle hauberk + turtle cap. EA Soldier = 2385 ONLY (1057=MA → NOT touched) ----
+-- ---- Pelagian Soldier (EA = 2385): turtle hauberk + turtle cap ----
 #selectmonster 2385
 #armor 114  -- Turtle Shell Hauberk (body)
-#armor 581  -- Turtle Cap (head)
+#armor 134  -- Turtle Cap (head)
 #end
 
--- ---- CLONES of indie-shared units ----
--- 2382 (Turtle Tribe Triton) and 2383 (Shark Tribe Triton) also spawn as INDEPENDENTS, so we must
--- NOT edit them in place. Clone to new IDs, apply the rework to the clones, and recruit the clones
--- (see the #clearrec rebuild in the #selectnation 40 block). Vanilla 2382/2383 are left untouched.
+-- ---- Clones of indie-shared units (recruited in place of vanilla 2382 / 2383) ----
 
--- Turtle Clan: clone of EA Turtle Tribe Triton 2382
+-- Turtle Clan: clone of Turtle Tribe Triton 2382 + a turtle cap (body 114 + shield 25 carried from 2382)
 #newmonster 13572
 #copystats 2382
 #copyspr 2382
 #name "Turtle Clan"
-#armor 579  -- Turtle Breastplate (body)
-#armor 580  -- Turtle Helm (head)
--- (turtle armour raises resource cost automatically via the armour's own rcost)
+#armor 134  -- Turtle Cap (head)
 #end
 
--- Shark Tribe Berserker: clone of EA Shark Tribe Triton 2383
+-- Shark Tribe Berserker: clone of Shark Tribe Triton 2383
 #newmonster 13573
 #copystats 2383
 #copyspr 2383
@@ -130550,143 +130512,143 @@ Dominion: Dominion hides province ownership."
 #weapon 1577  -- Shark-Tooth Dagger
 #weapon 20    -- Bite
 #berserk 3
-#prot 6       -- extra natural protection (TODO author: tune absolute value)
-#gcost 13     -- gold 10 -> 13
--- TODO(author): "increase rp cost" — base rpcost unknown; left at copystats default. Set #rpcost when confirmed.
+#prot 6
+#gcost 13
 #end
 
--- ---- Pearl Guard (2387, capital-only via Palace of Pearls site): pearl gear, gold 25, +2hp/+1str/+1mor ----
+-- ---- Pearl Guard (2387, capital-only via Palace of Pearls site): pearl gear, +2 hp / +1 str / +1 mor, gold 25 ----
 #selectmonster 2387
-#armor 523  -- Pearl Hauberk (Pearl Armour, body)
+#armor 523  -- Pearl Hauberk (body)
 #armor 522  -- Pearl Cap (head)
+#hp 18
+#str 13
+#mor 14
 #gcost 25
-#hp 18   -- vanilla 16 +2
-#str 13  -- vanilla 12 +1
-#mor 14  -- vanilla 13 +1
 #end
 
--- ---- Pearl King (2397, capital-only via Palace of Pearls site): make W4S2 ----
--- Vanilla magic = W4 S1 N1 H3 + 2 randoms. This bumps Astral 1->2 so the Pearl King can wield the
--- nationally-discounted Astral Suppressor (see the restricted item clone in the magic-items section).
--- TODO(verify): confirm #magicskill sets Astral to 2 (not +1 onto the vanilla S1).
+-- ---- Pearl King (2397, capital-only via Palace of Pearls site): Astral 2 (was 1), giving W4 S2 ----
 #selectmonster 2397
-#magicskill 4 2  -- Astral 2
+#magicskill 4 2  -- set Astral to 2
 #end
 
--- ---- Merman Net Thrower -> Merman Hunter (2388 / 2389): turtle-warrior stats; keep Net, add Sharktooth Spear; sharkskin armour + cap ----
+-- ---- Merman Net Thrower -> Merman Hunter (2388 / 2389): Coastal Warrior stats; Net + Sharktooth Spear; sharkskin armour ----
 #selectmonster 2388
+#copystats 1291  -- Coastal Warrior stats (overwrites first)
 #name "Merman Hunter"
-#copystats 1291  -- Turtle/Coastal Warrior stats
-#weapon 1545  -- Sharktooth Spear (Net retained from base)
-#armor 188  -- Sharkskin Cuirass (body)
-#armor 152  -- Sharkskin Cap (vanilla, head)
+#clearweapons
+#weapon 263   -- Net
+#weapon 1545  -- Sharktooth Spear
+#armor 188    -- Sharkskin Cuirass (body)
+#armor 152    -- Sharkskin Cap (head)
 #end
 #selectmonster 2389
-#name "Merman Hunter"
 #copystats 1292
-#weapon 1545
+#name "Merman Hunter"
+#clearweapons
+#weapon 263   -- Net
+#weapon 1545  -- Sharktooth Spear
 #armor 188
-#armor 152  -- Sharkskin Cap (vanilla, head)
+#armor 152
 #end
 
--- ---- Laistrygones buff (Hurler 7614 / Spearman 7615): +5 prot, +2 att, +2 def, proper boulder; unrest down ----
+-- ---- Laistrygones (Hurler 7614 / Spearman 7615): +5 prot, +2 att, +2 def; proper Boulder on the Hurler; far less unrest ----
 #selectmonster 7614
 #prot 9
 #att 12
 #def 11
 #clearweapons
-#weapon 424  -- Boulder (proper boulder attack)
-#incunrest 1  -- TODO(decision): author said "0.1"; #incunrest is integer (min 1)
--- TODO(decision): author said "reduce popkill to 2" but current popkill is 1 (would be an increase) -- confirm intent
+#weapon 424  -- Boulder
+#incunrest 1   -- was 10
+#popkill 2
 #end
 #selectmonster 7615
 #prot 9
 #att 12
 #def 11
-#incunrest 1
+#incunrest 1   -- was 10
+#popkill 2
 #end
 
--- ---- Pearl Warriors -> Pearl Prince (7468): size 6 MA Triton King stats, pearl armour + trident ----
+-- ---- Pearl Warriors -> Pearl Prince (7468): size 6 MA Triton King stats, pearl gear + Pearl Trident ----
+-- ART: needs a new Pearl Prince sprite (keeps the Pearl Warrior sprite for now).
 #selectmonster 7468
+#copystats 1088  -- MA Triton King (overwrites first)
 #name "Pearl Prince"
 #descr "The Pearl Princes are the children of the Pearl Kings, heirs who will one day rule the Triton kingdoms. Raised amid the splendour of the pearl citadels and gifted weapons and armour of forged pearl, they carry the blood of the first tritons. Their skin is hard as pearl and their bearing strikes lowly beings with awe. In time, the greatest of them ascend to become Kings of a future age."
-#copystats 1088  -- MA Triton King
 #size 6
 #clearweapons
 #weapon 389  -- Pearl Trident
-#armor 523  -- Pearl Hauberk (Pearl Armour)
+#armor 523  -- Pearl Hauberk
 #armor 522  -- Pearl Cap
 #armor 189  -- Pearl Shield
--- TODO(art): author wants a resprite; needs new sprite art (keeping existing for now)
 #end
 
--- ---- NEW recruitable units (added to recruitment by the #clearrec rebuild in #selectnation 40) ----
--- copystats sources are SINGLE-FORM units (2382/2385/2390) on purpose: copying a two-form merman
--- (e.g. Wave Warrior 1048) would inherit its land/water shape link and make these transform.
--- #amphibian is set so the land-recruited units can actually operate inland.
--- Sprites are placeholders (copyspr from thematic vanilla units) — final art is an author TODO.
+-- ---- New units (recruited via the #clearrec rebuild below) ----
+-- ART: the four units below use placeholder sprites (#copyspr from thematic mermen); final sprites
+-- still need to be drawn. copystats sources are single-form (2382 / 2390), so the clones do not inherit
+-- a land/water transform; #amphibian lets the land-recruited units operate on land.
 
--- Vanguard Warrior: coral-armoured merman skirmisher; coastal/land foothold troop. ("Wave Warrior" stats.)
+-- Vanguard Warrior: coral-armoured shore phalanx; coast/land foothold troop
 #newmonster 13580
-#copystats 2382  -- single-form light triton base (hp10 str10 def10) ...
-#copyspr 1048    -- ... merman look (Wave Warrior) -- TODO(art): resprite
+#copystats 2382
+#copyspr 1048  -- Wave Warrior (placeholder)
 #name "Vanguard Warrior"
 #descr "The Vanguard Warriors are mermen of the coral clans who have learned to hold a foothold on the shore. Clad in cultivated coral, they form the front line wherever Pelagia projects its power onto dry land."
-#att 11  -- match Wave Warrior 1048
-#def 11  -- match Wave Warrior 1048
+#att 11
+#def 11
 #amphibian
-#armor 583  -- Coral Cuirass (body)
 #formationfighter 2
+#clearweapons
+#weapon 580  -- Coral Long Spear
+#armor 23    -- Coral Hauberk (body; shield 25 carried from 2382)
+#armor 24    -- Coral Cap (head)
 #gcost 13
 #end
 
--- Vanguard Captain: merman commander equivalent of the Pelagian Captain; 100 leadership.
+-- Vanguard Captain: amphibious shore commander (Pelagian Captain equivalent; keeps coral gear)
 #newmonster 13582
-#copystats 2390  -- Pelagian Captain (commander stats/leadership)
-#copyspr 1293    -- Merman Chief look (merman commander) -- TODO(art): resprite
+#copystats 2390  -- Pelagian Captain
+#copyspr 1293    -- Merman Chief (placeholder)
 #name "Vanguard Captain"
 #descr "Vanguard Captains lead the coral-clad mermen who fight on the shores and shallows, marshalling Pelagia's foothold forces on land."
 #amphibian
-#armor 583  -- Coral Cuirass (body)
 #command 100
 #end
 
--- Closed Realm Soldier: inland-recruit only; bronze-equipped merman hoplite (recruited only at land forts).
+-- Closed Realm Soldier: inland-recruit only; bronze-equipped merman hoplite
 #newmonster 13581
-#copystats 2382  -- single-form light base ("Wave Warrior" stats: hp10 str10)
-#copyspr 2385    -- Pelagian Soldier look (placeholder) -- TODO(art): resprite
+#copystats 2382
+#copyspr 2385  -- Pelagian Soldier (placeholder)
 #name "Closed Realm Soldier"
 #descr "Far from the sea, in the Closed Realm of Pelagia's inland holdings, soldiers are raised in the bronze panoply of land-dwellers. Drilled to fight in close ranks, they hold ground no triton could."
-#att 11  -- match Wave Warrior 1048
-#def 11  -- match Wave Warrior 1048
+#att 11
+#def 11
 #amphibian
 #clearweapons
 #weapon 645  -- Bronze Sword
-#armor 101  -- Bronze Hauberk (body)
-#armor 123  -- Hoplite Helmet (head)
-#armor 3    -- Kite Shield
+#armor 101   -- Bronze Hauberk (body)
+#armor 123   -- Hoplite Helmet (head)
+#armor 3     -- Kite Shield
 #end
 
--- Closed Realm Captain: inland-recruit only; 100-leadership land commander.
+-- Closed Realm Captain: inland-recruit only; 100-leadership land commander
 #newmonster 13583
-#copystats 2390  -- Pelagian Captain (commander stats/leadership)
-#copyspr 2390    -- Pelagian Captain look (placeholder) -- TODO(art): resprite
+#copystats 2390  -- Pelagian Captain
+#copyspr 2390    -- Pelagian Captain (placeholder)
 #name "Closed Realm Captain"
 #descr "The Closed Realm Captains command Pelagia's inland soldiery, leading the bronze-clad ranks that defend the nation's holdings far from the waves."
 #amphibian
 #clearweapons
 #weapon 645  -- Bronze Sword
-#armor 101  -- Bronze Hauberk (body)
-#armor 123  -- Hoplite Helmet (head)
-#armor 3    -- Kite Shield
+#armor 101   -- Bronze Hauberk (body)
+#armor 123   -- Hoplite Helmet (head)
+#armor 3     -- Kite Shield
 #command 100
 #end
 
 -- =====================================================================
--- END EA PELAGIA REWORK (non-recruitment portion).
--- Parked / TODO: Masters of the Sea (spell 3069) rework — author still deciding.
--- The #clearrec recruitment rebuild is in the #selectnation 40 block below;
--- the Astral Suppressor national discount is in the magic-items section.
+-- END EA PELAGIA REWORK (units). The recruitment rebuild is in #selectnation 40
+-- below; the Astral Suppressor national discount is in the magic-items section.
 -- =====================================================================
 
 #selectnation 40 -- EA Pelagia
@@ -130714,65 +130676,64 @@ Dominion: Dominion hides province ownership."
 #startunitnbrs2 20
 
 -- =====================================================================
--- EA PELAGIA RECRUITMENT REBUILD (rework)
--- #clearrec wipes the nation's recruit LIST so we can drop Spear Militia (1056),
--- swap the indie-shared units for their clones (2382->13572, 2383->13573), and add
--- the new units. The capital-only royals (Pearl King 2397, Pearl Guard 2387, Ichtyid
--- Pearl Mage 2805) come from the "Palace of Pearls" capital SITE, NOT this list, so
--- #clearrec does not remove them — they are intentionally not re-added here.
--- Province defense (defcom/defunit) is also untouched by #clearrec.
---
--- Terrain scoping mirrors current DE behaviour: the underwater base roster is #uwrec/
--- #uwcom (UW only); the land-capable mermen DE already gave land forts (Coastal Warrior,
--- Shore Fighter, Sideraspist, Merman Chief/Priest, Shore Cmdr, Explorer) stay broadly
--- recruitable via #addrec*; the new Closed Realm units are inland-only.
+-- EA PELAGIA RECRUITMENT REBUILD
+-- #clearrec wipes the recruit list, so the full roster is rebuilt below: drop Spear
+-- Militia (1056), recruit the clones (13572 / 13573) in place of the indie-shared
+-- 2382 / 2383, and add the new units. Capital-only units (Pearl King 2397, Pearl Guard
+-- 2387, Ichtyid Pearl Mage 2805) come from the Palace of Pearls site, not the recruit
+-- list, so they are not re-added; Ichtyid Pearl Mage also gains coastal recruitment.
+-- Structure follows EA Atlantis: #uwrec/#uwcom home roster, then coastal forts, then
+-- the land-fort "Closed Realm" theme.
 -- =====================================================================
 #clearrec
 
--- Underwater base roster (UW forts only)
-#uwrec 2384    -- Knife Militia  (Spear Militia 1056 dropped)
-#uwrec 13572   -- Turtle Clan (clone of indie-shared 2382)
-#uwrec 13573   -- Shark Tribe Berserker (clone of indie-shared 2383)
+-- Underwater home fort -- troops (weak -> strong)
+#uwrec 2384    -- Knife Militia
+#uwrec 13572   -- Turtle Clan
 #uwrec 2385    -- Pelagian Soldier
+#uwrec 1291    -- Coastal Warrior
+#uwrec 2388    -- Merman Hunter
 #uwrec 2386    -- Coral Clan Soldier
-#uwrec 2388    -- Merman Hunter (was Net Thrower)
+#uwrec 13573   -- Shark Tribe Berserker
 #uwrec 2391    -- Triton Rider
+
+-- Underwater home fort -- commanders (command -> priest -> mage)
 #uwcom 1050    -- Merman Scout
 #uwcom 2390    -- Pelagian Captain
+#uwcom 1293    -- Merman Chief
+#uwcom 1696    -- Merman Priest
 #uwcom 2395    -- Pearl Clan Priest
 #uwcom 1415    -- Pelagian Mermage
 #uwcom 2396    -- Pearl Mage
 
--- Land-capable mermen: recruitable underwater, on the coast, and at land forts (DE land theme)
-#addrecunit 1291   -- Coastal Warrior (two-form)
-#addrecunit 2807   -- Pelagian Shore Fighter (two-form)
-#addrecunit 2809   -- Pelagian Sideraspist (two-form)
-#addreccom 1293    -- Merman Chief (two-form)
-#addreccom 1696    -- Merman Priest (two-form)
-#addreccom 2811    -- Pelagian Shore Commander (two-form)
-#addreccom 2813    -- Pelagian Explorer (two-form)
+-- Coastal forts -- troops
+#coastfortrec 1291   -- Coastal Warrior
+#coastfortrec 2807   -- Pelagian Shore Fighter
+#coastfortrec 2809   -- Pelagian Sideraspist
+#coastfortrec 13580  -- Vanguard Warrior
 
--- New foothold units (coastal/land)
-#addrecunit 13580  -- Vanguard Warrior
-#addreccom 13582   -- Vanguard Captain
+-- Coastal forts -- commanders
+#coastfortcom 1293   -- Merman Chief
+#coastfortcom 1696   -- Merman Priest
+#coastfortcom 2811   -- Pelagian Shore Commander
+#coastfortcom 2813   -- Pelagian Explorer
+#coastfortcom 13582  -- Vanguard Captain
+#coastfortcom 2805   -- Ichtyid Pearl Mage
 
--- Ichtyid Pearl Mage (2805): capital-only via Palace of Pearls; brain dump adds COASTAL recruitment
-#coastfortcom 2805 -- Ichtyid Pearl Mage
+-- Land forts (Closed Realm) -- troops
+#landrec 1291   -- Coastal Warrior
+#landrec 2807   -- Pelagian Shore Fighter
+#landrec 2809   -- Pelagian Sideraspist
+#landrec 13580  -- Vanguard Warrior
+#landrec 13581  -- Closed Realm Soldier
 
--- Closed Realm units: INLAND-recruit only (land forts, all land terrains)
-#plainfortrec 13581 -- Closed Realm Soldier
-#forestfortrec 13581
-#mountainfortrec 13581
-#swampfortrec 13581
-#wastefortrec 13581
-#farmfortrec 13581
-
-#plainfortcom 13583 -- Closed Realm Captain
-#forestfortcom 13583
-#mountainfortcom 13583
-#swampfortcom 13583
-#wastefortcom 13583
-#farmfortcom 13583
+-- Land forts (Closed Realm) -- commanders
+#landcom 1293   -- Merman Chief
+#landcom 1696   -- Merman Priest
+#landcom 2811   -- Pelagian Shore Commander
+#landcom 2813   -- Pelagian Explorer
+#landcom 13582  -- Vanguard Captain
+#landcom 13583  -- Closed Realm Captain
 
 
 #futuresite "Pearl Armory"
@@ -147360,10 +147321,6 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 190 -- Rotterland
 #end
 
--- NOTE(author decision): Word of Drowning (3071) and Curse of Choking Brine (3072) are #restricted
--- to ~12 underwater nations (40 41 43 85 86 87 88 125 126 190 203 207), so the first-pass range
--- (20 -> 30+5/lvl) and precision (-> 10) buffs apply to ALL of them, not just EA Pelagia. Confirm
--- this is intended; if EA-Pelagia-only was wanted, these need EA-restricted clones instead.
 #selectspell 3071
 #copyspell "Sailors' Death"
 #name "Word of Drowning"
@@ -147402,7 +147359,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #fatiguecost 20
 #aoe 1003 -- 6+
 #range 5030  -- 30 + 5 per level (was 20)
-#precision 10  -- match Word of Drowning (was default/1)
+#precision 10
 #restricted 43
 #restricted 40
 #restricted 41
@@ -171652,17 +171609,7 @@ Increases Natural Protection by 2 for each level of heat in the province."
 #magicboost 4 -9
 #constlevel 3
 #autospell "Mind Blank"
-#end
-
--- ---- EA Pelagia national discount: Astral Suppressor at 1 astral gem (Pearl King usability) ----
--- Restricted clone of item 895 for EA Pelagia (40) only, at 1S (base 5, #itemcost1 -80 = -4 gems).
--- Per the resolved decision. Cleaner alternative if the author prefers a single item: add
--- "#nationrebate 40" to item 895 above instead (then EA Pelagia doesn't see two suppressors).
-#newitem 1500
-#copyitem 895
-#name "Astral Suppressor"
-#restricted 40    -- EA Pelagia only
-#itemcost1 -80    -- 1 astral gem (base 5)
+#nationrebate 40  -- EA Pelagia national discount (Pearl King usability)
 #end
 
 #selectitem 896
