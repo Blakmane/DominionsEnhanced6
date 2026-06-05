@@ -26072,6 +26072,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #armor 545 -- Spectral Plate Cuirass
 #armor 549 -- Spectral Helmet
 #ethereal
+#spiritform
 #enc 0
 #coldres 15
 #poisonres 20
@@ -31378,22 +31379,34 @@ While in the form of an old man, all paths are increased and allows the use of N
 #end
 
 #newmonster 7538
-#copystats 547  -- Dead One
-#clearweapons
-#clearmagic
 #spr1 "magicenhanced/eepreta.tga"
 #spr2 "magicenhanced/eepreta2.tga"
 #name "Preta"
 #descr "Pretas are the spirits of those that were jealous or greedy in life reborn as eternally hungry supernatural beings. As a result of their karma they are afflicted with an insatiable hunger for repugnant substances, such as cadavers or feces. They are human-like, but with sunken, mummified skin, narrow limbs, enormously distended bellies and long, thin necks with shrunken mouths. As a result, they are always hungry. Pretas are pitied rather than feared or hated amongst the monkey people. They dwell in wastes and deserts far away from people. The hunger of a Preta is so intense it manifests as a smouldering aura around the beings."
+#hp 15
+#size 3
+#str 12
+#prec 5
+#ap 6
+#enc 0
+#mapmove 20
 #mr 14
 #mor 14
 #att 10
 #def 12
 #prot 7
+#coldres 15
+#poisonres 25
 #fireres 15
 #appetite 3
 #wastesurvival
 #heat 3
+#amphibian
+#neednoteat
+#undead
+#wastesurvival
+#spiritsight
+#ethereal
 #weapon 29  -- Claw
 #weapon 63  -- Life Drain
 #end
@@ -33447,6 +33460,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copyspr 1335  -- Gandharva
 #gcost 10035
 #descr "Gandharvas are divine warrior-musicians that left this world ages ago. They serve the Celestial Gods, but are sometimes summoned to this world by the monkey people living on the sacred mountain where the worlds lie closer. Gandharvas are blessed with an Aura of Splendor that strikes mortals with awe."
+#airshield 50
 #end
 
 #newmonster 7641
@@ -33454,6 +33468,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copyspr 1331  -- Kinnara
 #gcost 10050
 #descr "The Kinnara is a divine being and a musician of the Spheres. It has the appearance of a winged horse-headed man robed in splendor that strikes mortals with awe."
+#def 12 -- 11 -> 12
+#airshield 50
 #end
 
 #newmonster 7642
@@ -46819,6 +46835,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #coldres 5
 #reinvigoration 3
 #female
+#size 3
 #autohealer 2
 #nobadevents 15
 #armor 158
@@ -136207,7 +136224,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 1 1
 #fatiguecost 20
 #damage 70437463654400  -- Slashing Res & 5 Prot
-#spec 549470208  -- UWOK, lifeless immune, Friendlies only
+#spec 549470212  -- UWOK, lifeless immune, Friendlies only, no spiritform
 #end
 
 #selectspell 2295
@@ -136230,7 +136247,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #explspr 10181  -- Falling Rain
 #sound 31
 #spec 8404992
-#spec 549470208  -- UWOK, lifeless immune, Friendlies only
+#spec 549470212  -- UWOK, lifeless immune, Friendlies only, no spiritform
 #end
 
 #selectspell 2296
@@ -136722,7 +136739,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #precision 8
 #casttime 100
 #fatiguecost 25
-#spec 17592194744320  -- Ignore shields, Enemy Sacreds only, AN, Undead & lifeless immune, MR-Hard Neg
+#flightspr -1
+#spec 17592194744320  -- Ignore shields, Enemy Sacreds only, AN, MR-Hard Neg
 #godpathspell 2
 #end
 
@@ -136753,7 +136771,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #school 7
 #path 0 9
 #aoe 1001
-#damage 2
+#damage 5
 #range 35
 #pathlevel 0 2
 #precision 8
@@ -136960,6 +136978,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #fatiguecost 10
 #casttime 100
 #godpathspell 0
+#precision 4
 #end
 
 #selectspell 2357
@@ -136988,7 +137007,9 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 2
 #pathlevel 1 1
 #aoe 1
-#damage 1010
+#damage 2016
+#range 30
+#precision 4
 #spec 1099520016448 -- Armour Piercing, Slashing Damage, UWOK
 #fatiguecost 10
 #casttime 100
@@ -137005,7 +137026,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 1
 #path 1 3
 #pathlevel 1 1
-#nreff 12
+#nreff 18
+#damage 2012 -- 14
 #fatiguecost 10
 #casttime 100
 #godpathspell 3
@@ -137022,12 +137044,11 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 4
 #pathlevel 1 1
 #nreff 2
-#damage 8
-#precision 4
+#damage 1007
+#precision 6
 #fatiguecost 10
 #casttime 100
 #godpathspell 4
-#nogeosrc 4096  -- Cave
 #end
 
 #selectspell 2361
@@ -137041,9 +137062,11 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 5
 #pathlevel 1 1
 #aoe 1
-#damage 1008
+#damage 1013 -- 14+
 #fatiguecost 10
 #casttime 100
+#range 1029
+#precision 4
 #godpathspell 5
 #end
 
@@ -137059,7 +137082,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 1 1
 #fatiguecost 10
 #range 5025
-#aoe 1001
+#aoe 1002
 #precision 4
 #casttime 100
 #godpathspell 6
@@ -137068,7 +137091,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2363
 #copyspell 1419 -- Harm
 #name "Channel Divine Harm"
-#descr "The priest calls upon the power of the true God to empower their own skills in Blood magic. The Gods power flows through them and erupts as a torrent of pure agony. Channelling the power of a God in this way is somewhat tiring to the priest."
+#descr "The priest calls upon the power of the true God to empower their own skills in Blood magic. The Gods power flows through them and erupts as a torrent of pure torment. Channelling the power of a God in this way is somewhat tiring to the priest."
 #researchlevel 0
 #school 7
 #path 0 9
@@ -137076,7 +137099,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 8
 #pathlevel 1 1
 #range 30
-#aoe 1
+#aoe 1001 -- 1+
+#damage 1001 -- 2+
 #fatiguecost 10
 #casttime 100
 #godpathspell 8
@@ -137261,7 +137285,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #researchlevel 0
 #effect 2
 #nreff 1
-#damage 10
+#damage 15
 #spec 17592194965640  -- Poison Damage, Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
 #end
 
@@ -137282,6 +137306,12 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #nextspell "Banish Demon"
 #spec 17592194973832  -- Demons Only, AN, MR-Hard Neg, Ignores Shields, UWOK
 #end
+
+#selectspell 205 -- Cleansing
+#damage 3002
+#end
+
+
 
 #selectspell 2383
 #copyspell 1085 -- Clockwork Soldiers
@@ -142858,6 +142888,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #name "Bring Forth the Cauldron Born"
 #descr "The Cauldron of Rebirth will allow up to 200 corpses in the same province to be reanimated as soulless to serve the bearer of the cauldron."
 #researchlevel 0
+#provrange 0
 #school -1
 --#nolandtrace 1
 --#nowatertrace 1
@@ -161183,11 +161214,13 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 0 1
 #path 1 7
 #pathlevel 1 1
-#range 30
+#range 5030
 #aoe 1
-#damage 1009 -- 10+
+#damage 1011 -- 12+
 #fatiguecost 10
 #casttime 100
+#precision 6
+#spec 17188524160 -- Enemy only
 #godpathspell 7
 #end
 
@@ -163446,6 +163479,7 @@ This spell may only target friendly provinces."
 #end
 
 #selectspell 286 -- Celestial Chastisement
+#descr "The mage invokes the laws of the Celestial Bureaucracy and chastises a magical being for serving a false god. The target is wounded, regardless of armor, and is compelled to switch sides. Powerful beings often disregard the compulsion."
 #pathlevel 0 2
 #range 25
 #spec 17592194449552 -- +MRNH
@@ -164365,6 +164399,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 657 -- Ephemeral Bolt
 #damage 1011 -- 13+ from 4+
 #precision 8
+#spec 17188524160 -- Enemy only
 #end
 
 #selectspell 5 -- Thunder Shock
@@ -170388,7 +170423,7 @@ This will also prevent their skin from drying out."
 #copyitem 320 -- Ring of warning
 #spr "magicenhanced/eeihelmprem.tga"
 #name "Helmet of Premonition"
-#descr "The wearer of this helmet receives flashes of insight from the near future, alerting them to danger. The wearer will anticipate and avoid the first blow that would strike them in each battle, and will be able to fight multiple enemies more effectively. This also allows the wearer to be protected by twice as many bodyguards as usual during assassination attempts."
+#descr "The wearer of this helmet receives flashes of insight from the near future, alerting them to danger. The wearer will anticipate and avoid the first blow that would strike them in each battle, and will be able to fight multiple enemies more effectively."
 #constlevel 3
 #mainpath 4
 #mainlevel 1
