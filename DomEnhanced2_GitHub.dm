@@ -130414,6 +130414,214 @@ Dominion: Dominion hides province ownership."
 #futuresite "EA R'lyeh Heroes"
 #end
 
+-- =====================================================================
+-- EA PELAGIA REWORK  (branch: pelagia-rework)
+-- Source: Pelagia author brain dump. Overrides placed AFTER all original
+-- DE Pelagia blocks so these win. TODO(decision N) = needs author input
+-- (see PELAGIA_EA_REWORK_PLAN.html). custommagic bits: F128 A256 W512
+-- E1024 S(Astral)2048 D4096 N8192 B16384.
+-- =====================================================================
+
+-- ---- New turtle/shark armor items ----
+#newarmor 579  -- Turtle Breastplate
+#copyarmor 114  -- Turtle Shell Hauberk (scale-type body)
+#name "Turtle Breastplate"
+#type 5
+#prot 12
+#def -1
+#enc 1
+#rcost 6
+#end
+
+#newarmor 580  -- Turtle Helm
+#copyarmor 24  -- Coral Cap (head slot)
+#name "Turtle Helm"
+#prot 18
+#enc 1
+#end
+
+#newarmor 581  -- Turtle Cap
+#copyarmor 24  -- Coral Cap (head slot)
+#name "Turtle Cap"
+#prot 14
+#end
+
+#newarmor 582  -- Sharkskin Cap
+#copyarmor 24  -- Coral Cap (head slot)
+#name "Sharkskin Cap"
+#prot 8
+#end
+
+#newarmor 583  -- Coral Cuirass (for Vanguard Warrior, unit authored with recruitment rebuild)
+#copyarmor 114
+#name "Coral Cuirass"
+#type 5
+#prot 13
+#def -1
+#enc 1
+#rcost 7
+#end
+
+-- ---- Turtle Warrior -> Coastal Warrior, gold 10 (ids 1291 float / 1292 amphib) ----
+#selectmonster 1291
+#name "Coastal Warrior"
+#gcost 10
+#end
+#selectmonster 1292
+#name "Coastal Warrior"
+#gcost 10
+#end
+
+-- ---- Turtle Chief -> Merman Chief (rename only; ids 1293 / 1294) ----
+#selectmonster 1293
+#name "Merman Chief"
+#end
+#selectmonster 1294
+#name "Merman Chief"
+#end
+
+-- ---- Pelagian Shore Fighter morale 11 (2807 / 2808) ----
+#selectmonster 2807
+#mor 11
+#end
+#selectmonster 2808
+#mor 11
+#end
+
+-- ---- Pelagian Sideraspist: formation fighter 2, morale 12 (2809 / 2810) ----
+#selectmonster 2809
+#formationfighter 2
+#mor 12
+#end
+#selectmonster 2810
+#formationfighter 2
+#mor 12
+#end
+
+-- ---- Pearl Mage: +10% W/A/S/N random (2396 / 2423 / 3038) ----
+#selectmonster 2396
+#custommagic 10752 10  -- WASN
+#end
+#selectmonster 2423
+#custommagic 10752 10
+#end
+#selectmonster 3038
+#custommagic 10752 10
+#end
+
+-- ---- Pelagian Explorer: 10% Fire random (2813 / 2814). Adept researcher +3 -> see TODO ----
+#selectmonster 2813
+#custommagic 128 10  -- F
+-- TODO(base): adept researcher +3 -> set #researchbonus to (vanilla base + 3); need vanilla value
+#end
+#selectmonster 2814
+#custommagic 128 10
+#end
+
+-- ---- Pelagian Mermage: 50% random; cost 145 (1415 / 1416) ----
+-- TODO(decision 4): confirm gold 145. NOTE: author wrote "A" random; read as AIR (256) to
+-- match their A/S split in Pearl Mage "WASN". Switch mask to 2048 if ASTRAL was intended.
+#selectmonster 1415
+#custommagic 256 50  -- A (Air?) 50%
+#gcost 145
+#end
+#selectmonster 1416
+#custommagic 256 50
+#gcost 145
+#end
+
+-- ---- Pelagian Soldier: turtle hauberk + turtle cap (1057 / 2385). #armor replaces by slot, shield kept ----
+#selectmonster 1057
+#armor 114  -- Turtle Shell Hauberk (body)
+#armor 581  -- Turtle Cap (head)
+#end
+#selectmonster 2385
+#armor 114
+#armor 581
+#end
+
+-- ---- Turtle Clan (Turtle Tribe Triton 2382): pelagian triton + turtle breastplate/helm; heavier armor raises resource cost ----
+#selectmonster 2382
+#armor 579  -- Turtle Breastplate (body)
+#armor 580  -- Turtle Helm (head)
+#end
+
+-- ---- Shark Tribe Berserker (Shark Tribe Triton 2383): pelagian-triton body + shark gear + berserk + natprot ----
+#selectmonster 2383
+#name "Shark Tribe Berserker"
+#copystats 2382  -- share the pelagian-triton body w/ Turtle Clan
+#clearweapons
+#weapon 1577  -- Shark-Tooth Dagger
+#weapon 20    -- Bite
+#berserk 3
+#prot 6       -- TODO(tune): "extra natprot" absolute value (no vanilla base available)
+#gcost 13     -- TODO(tune): "increase gold cost"
+#rpcost 1     -- TODO(tune): "increase rp cost"
+#end
+
+-- ---- Pearl Guard: pearl hauberk + pearl cap, gold 25 (2387). +1 Str/+2 HP/+1 Mor -> TODO needs vanilla base ----
+#selectmonster 2387
+#armor 523  -- Pearl Hauberk (Pearl Armour, body)
+#armor 522  -- Pearl Cap (head)
+#gcost 25
+-- TODO(base): +1 str, +2 hp, +1 mor over vanilla base; need vanilla stat values
+#end
+
+-- ---- Merman Net Thrower -> Merman Hunter (2388 / 2389): turtle-warrior stats; keep Net, add Sharktooth Spear; sharkskin armour + cap ----
+#selectmonster 2388
+#name "Merman Hunter"
+#copystats 1291  -- Turtle/Coastal Warrior stats
+#weapon 1545  -- Sharktooth Spear (Net retained from base)
+#armor 188  -- Sharkskin Cuirass (body)
+#armor 582  -- Sharkskin Cap (head)
+#end
+#selectmonster 2389
+#name "Merman Hunter"
+#copystats 1292
+#weapon 1545
+#armor 188
+#armor 582
+#end
+
+-- ---- Laistrygones buff (Hurler 7614 / Spearman 7615): +5 prot, +2 att, +2 def, proper boulder; unrest down ----
+#selectmonster 7614
+#prot 9
+#att 12
+#def 11
+#clearweapons
+#weapon 424  -- Boulder (proper boulder attack)
+#incunrest 1  -- TODO(decision): author said "0.1"; #incunrest is integer (min 1)
+-- TODO(decision): author said "reduce popkill to 2" but current popkill is 1 (would be an increase) -- confirm intent
+#end
+#selectmonster 7615
+#prot 9
+#att 12
+#def 11
+#incunrest 1
+#end
+
+-- ---- Pearl Warriors -> Pearl Prince (7468): size 6 MA Triton King stats, pearl armour + trident ----
+#selectmonster 7468
+#name "Pearl Prince"
+#descr "The Pearl Princes are the children of the Pearl Kings, heirs who will one day rule the Triton kingdoms. Raised amid the splendour of the pearl citadels and gifted weapons and armour of forged pearl, they carry the blood of the first tritons. Their skin is hard as pearl and their bearing strikes lowly beings with awe. In time, the greatest of them ascend to become Kings of a future age."
+#copystats 1088  -- MA Triton King
+#size 6
+#clearweapons
+#weapon 389  -- Pearl Trident
+#armor 523  -- Pearl Hauberk (Pearl Armour)
+#armor 522  -- Pearl Cap
+#armor 189  -- Pearl Shield
+-- TODO(art): author wants a resprite; needs new sprite art (keeping existing for now)
+#end
+
+-- =====================================================================
+-- END EA PELAGIA REWORK (non-recruitment portion).
+-- Still TODO: new recruitable units (Vanguard Warrior/Captain, Closed
+-- Realm Soldier/Captain), spear-militia removal, Ichthyid Pearl Mage
+-- cap+coastal, Pearl King W4S2 + suppressor discount, Masters of the Sea
+-- rework -- all require the #clearrec recruitment rebuild + author input.
+-- =====================================================================
+
 #selectnation 40 -- EA Pelagia
 #hero1 2806  -- Thaumas, Wondrous
 #hero2 8176 -- Xi Akloz, Lord of Pearls
@@ -147086,7 +147294,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #casttime 75
 #aoe 1
 #damage 2008
-#range 20
+#range 5030  -- 30 + 5 per level (was 20)
 #precision 10
 #restricted 43
 #restricted 40
@@ -147111,7 +147319,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 1 1
 #fatiguecost 20
 #aoe 1003 -- 6+
-#range 20
+#range 5030  -- 30 + 5 per level (was 20)
+#precision 10  -- match Word of Drowning (was default/1)
 #restricted 43
 #restricted 40
 #restricted 41
@@ -147238,7 +147447,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 0
 #effect 10021
 #damage 2804  -- Ichtyid Shaman
-#nreff 1
+#nreff 2  -- two shamans (was 1)
 #spec 8388608
 #nextspell 3081
 #end
@@ -147281,7 +147490,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Summon Hippocampoi"
 #descr "The Pearl Kings long ago learned how to tame the Hippocampoi, magical steeds of the deeps. These magical creatures are able to strike enemies or heal themselves with their horns."
 #pathlevel 0 1
-#fatiguecost 1200
+#fatiguecost 1000  -- 10 gems (was 12)
 #damage 1058
 #restricted 40
 #end
