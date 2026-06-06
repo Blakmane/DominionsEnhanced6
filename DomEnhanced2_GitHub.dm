@@ -22566,16 +22566,17 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #enc 3
 #fireres 25
 #heat 0
+#saltvul 2 
 #fireshield 0
 #firepower 0
 #fear 0
 #glamour
-#incunrest 50
+#incunrest 30
 #speciallook 0
 #stealthy 0
 #magicskill 0 2
 #magicskill 1 2
-#magicskill 7 2
+#magicskill 7 1
 #weapon 92  -- Fist
 #end
 
@@ -22605,6 +22606,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #firepower 0
 #fear 0
 #glamour
+#saltvul 2 
 #incunrest 10
 #speciallook 0
 #stealthy 0
@@ -43708,6 +43710,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #coldres 5
 #mr 12
 #mor 12
+#animal
 #weapon 5  -- Halberd
 #weapon 20  -- Bite
 #armor 10  -- Leather Hauberk
@@ -60488,6 +60491,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #mor 14
 #okleader
 #holy
+#glamourmanip 1
 #end
 
 #newmonster 9307 -- Dreaming Mage
@@ -60559,7 +60563,6 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #holy
 #holycost 2
 #nightmareaura 3
-#glamourmanip 1
 #clearweapons
 #weapon 642 -- Meteorite Trident
 #weapon 1914 -- Nightmare Blast
@@ -76831,7 +76834,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #spr1 "extrapretenders/wisdomking.tga"
 #spr2 "extrapretenders/wisdomking2.tga"
 #name "Wisdom King"
-#descr "The Wisdom King is a divine warrior that was assigned to protect the Tathagata. Now with the Pantokrator gone his full powers have begun to manifest and he has amassed worshippers of his own. In his Wisdom he has realised the aspirations of the other Pretender Gods and will attain the role of Pantokrator to protect his followers. The Wisdom King is the embodiment of the wheel of injunction and teaches through fear, shocking nonbelievers into faith. He is a wrathful manifestation of the divine, many-armed and wreathed in flames. The Wisdom King is highly resilient and will suffer permanent injuries less often than most creatures."
+#descr "The Wisdom King is a divine warrior that was assigned to protect the Tathagata. Now with the Pantokrator gone his full powers have begun to manifest and he has amassed worshippers of his own. In his Wisdom he has realised the aspirations of the other Pretender Gods and will attain the role of Pantokrator to protect his followers. The Wisdom King is the embodiment of the wheel of injunction and teaches through fear, shocking nonbelievers into faith. He is a wrathful manifestation of the divine, many-armed and wreathed in flames."
 #diseaseres 100
 #gcost 300
 #startdom 3
@@ -124508,6 +124511,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #selectsite 1145 -- Troll Pit
+#name "Sea Troll Pit"
 #rarity 1
 #end
 
@@ -126347,6 +126351,29 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #com 9663 -- Merman Shaman
 #end
 
+#selectsite 425 -- Academy of High Magics
+#name "Academy of the Hidden Flame"
+#end
+
+#selectsite 486 -- Academy of High Magics
+#name "Academy of Storms and Thunder"
+#end
+
+#selectsite 543 -- Academy of High Magics
+#name "Academy of Deep Waters"
+#end
+
+#selectsite 621 -- Academy of High Magics
+#name "Academy of the Deeper Earth"
+#end
+
+#selectsite 708 -- Academy of High Magics
+#name "Academy of the Spheres"
+#end
+
+#selectsite 983 -- Academy of High Magics
+#name "Academy of Unseen Colors"
+#end
 
 
 #selectnation 181
@@ -136819,10 +136846,16 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #godpathspell 6
 #end
 
+#selectspell 4360
+#copyspell 21 -- "major fear"
+#name "Visions of Despair"
+#spec 8831104  -- AN, Ignore shields, Enemy Sacreds only, Mindless immune, UWOK
+#end
+
 #selectspell 2346
 #copyspell 1389 -- Agony
 #name "Fear of God"
-#descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. The targets are overwhelmed by visions of pain and despair."
+#descr "This prayer calls down the wrath of the Lord on a group of enemies sacred to another faith. The targets are overwhelmed by pain and despair."
 #researchlevel 0
 #school 7
 #path 0 9
@@ -136833,7 +136866,9 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #precision 8
 #casttime 100
 #fatiguecost 25
+#effect 109
 #spec 17592194875520  -- AN, Ignore shields, Enemy Sacreds only, Mindless immune, UWOK, MR-Hard Neg
+#nextspell 4360
 #godpathspell 8
 #end
 
@@ -144578,7 +144613,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #selectspell 2898
 #name "Call the Tesso"
 #descr "When someone of strong faith dies in the service of their God their soul is sometimes reborn in Yomi. They appear as Tesso, ratlike creatures with great iron teeth and a zealous hatred of those that deny the true God. These creatures can be called by Sorcery to descend on the temples of false faiths. The rat-demons will appear with a horde of vermin and quickly devour every sacred text, holy book and icon they find, even grinding precious statues to dust in their iron teeth. If they cannot locate a temple in the province they will simply run amok, causing unrest amongst the populace. When they have completed their rampage they will return to their abode in Yomi."
-#details "Unrest +35, Gold -50, temple destroyed if present and -2 Dominion."
+#details "Unrest +35, Gold -50, temple destroyed if present and -2 Dominion. Does not destroy temple if province is under siege."
 #school 0
 #researchlevel 6
 #path 0 0
@@ -146565,8 +146600,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 
 #selectspell 3031
 #name "Power of the Void"
-#descr "The Illithid can open their minds directly to the void to enhance their magical abilities. This is very dangerous as the conduit will act as a beacon for horrors and other void creatures to enter the world. The casters magical abilities are all increased by 2 and they will be protected by astral energies, however for every minute the battle lasts, there is a chance that a Horror will materialize in the vicinity of the caster. This spell cannot be cast by a mindless unit."
-#details "Grants magic boost +2, Att +4, Def +4, Str +4, Prec +4, Morale +4, MR +2, Protection +4. Paralysis vs attackers at strength 12 + astral mage level (reduced by weapon length, magic resistance negates)."
+#descr "The Illithid can open their minds directly to the void to enhance their magical abilities. This is very dangerous as the conduit will act as a beacon for horrors to enter the world. The casters magical abilities are all increased by 2 and they will be empowered by the astral energies, however for every minute the battle lasts, there is a chance that a Horror will materialize in the vicinity of the caster. This spell cannot be cast by a mindless unit."
+#details "Grants magic boost +2, Att +4, Def +4, Str +4, Prec +4, Morale +4, MR +2, Protection +4."
 #school 5
 #researchlevel 3
 #path 0 4
@@ -146581,7 +146616,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #spec 8404992  -- Ignores shields, UW OK
 #restricted 89 -- MA R'lyeh
 #restricted 127 -- LA R'lyeh
-#nextspell 1140 -- Astral shield
+#nextspell 4 -- Horror Mark
 #end
 
 #selectspell 3032
@@ -150327,7 +150362,7 @@ All effects scale with friendly Dominion."
 #path 1 9
 #pathlevel 1 1
 #nreff 1
-#fatiguecost 1800
+#fatiguecost 1600
 #damage 7119 -- Jinn
 #restricted 186 -- Zion
 #end
@@ -151401,7 +151436,7 @@ All effects scale with friendly Dominion."
 #effect 10021
 #nreff 1
 #damage 7119
-#fatiguecost 1800
+#fatiguecost 1600
 #restricted 197 -- Iram
 #end
 
@@ -154133,7 +154168,7 @@ All effects scale with friendly Dominion."
 #selectspell 3623
 #copyspell 1251
 #descr "Under the fata morgana life seems much easier and everyone is happy. Phantasmal Warriors will assist the local defence in defending the province against invaders and enemy scouts will be fooled by illusionary armies. All provinces in friendly dominion will be affected by the fata morgana. The enchantment lasts until it is dispelled or the caster dies."
-#details "Province Defense 1+: +2 Phantasmal Warriors, +1 Phantasmal Archers. Province Defense 20+: +1 Phantasmal Knight. Unrest -10 per turn. False scout reports."
+#details "Province Defense 1+: +2 Warrior Illusions, +1 Archer Illusion. Province Defense 20+: +1 Knight Illusion. Unrest -10 per turn. False scout reports."
 #researchlevel 7
 #pathlevel 0 5
 #fatiguecost 5000
@@ -162985,7 +163020,7 @@ This spell may only target friendly provinces."
 #onlygeosrc 64 -- waste
 #end
 
-
+--- spell 4360 taken by fear of god nextspell, continue at 4361)
 
 
 -- END OF NEW SPELLS
@@ -164143,6 +164178,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #nreff 507
 #end
 
+
 #selectspell 563 -- Summon Kimpurushas
 #nreff 507
 #end
@@ -164739,6 +164775,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spec 1099514773504 -- Non-magical, defense negates, slashing - Unarmored spiritform beings don't need this in their life
 #damage 1007 -- 12+ -- Damage buffed to compensate
 #aoe 2008 -- 12++ -- AOE buffed to compensate
+#ainocast
 #end
 
 #selectspell 815 -- Curse of Stones
@@ -166597,6 +166634,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectspell 270 -- Brass Bull
 #restricted 205
 #fatiguecost 1200
+#end
+
+#selectspell 540 -- Bind Warriors of the Jinn
+#fatiguecost 1100
 #end
 
 #selectspell 541 -- Contact Houri
@@ -170304,8 +170345,8 @@ This will also prevent their skin from drying out."
 
 #selectitem 822
 #spr "magicenhanced/eeicrystalhelm.tga"
-#name "Crystal Mask"
-#descr "This mask is constructed from a magic crystal that will empower the user in battle. The mage wearing this mask will have their paths increased by 1 in combat."
+#name "Mask of the Spheres"
+#descr "This mask is constructed from magic starmetal that will empower the user in battle. The mage wearing this mask will have their paths increased by 1 in combat."
 #constlevel 7
 #mainpath 4
 #mainlevel 2
@@ -173653,10 +173694,9 @@ This headband does not require activation in combat."
 #req_targpath1 0
 #msg "There are traces of a more powerful Fire site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Academy of High Magics]"
+##targname## found them while searching for sites of power. A more powerful mage of Fire will be required to locate it. [Academy of the Hidden Flame]"
 #header 2
 #end
-
 
 #newevent
 #rarity 5
@@ -174001,10 +174041,9 @@ This headband does not require activation in combat."
 #req_targpath1 1
 #msg "There are traces of a more powerful Air site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Academy of High Magics]"
+##targname## found them while searching for sites of power. A more powerful mage of Air will be required to locate it. [Academy of Storms and Thunder]"
 #header 2
 #end
-
 
 #newevent
 #rarity 5
@@ -174265,7 +174304,7 @@ This headband does not require activation in combat."
 #req_targpath1 2
 #msg "There are traces of a more powerful Water site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Academy of High Magics]"
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Academy of Deep Waters]"
 #header 2
 #end
 
@@ -174601,7 +174640,7 @@ This headband does not require activation in combat."
 #req_targpath1 3
 #msg "There are traces of a more powerful Earth site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Academy of High Magics]"
+##targname## found them while searching for sites of power. A more powerful mage of Earth will be required to locate it. [Academy of the Deeper Earth]"
 #header 2
 #end
 
@@ -175081,7 +175120,7 @@ This headband does not require activation in combat."
 #req_targpath1 4
 #msg "There are traces of a more powerful Astral site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Academy of High Magics]"
+##targname## found them while searching for sites of power. A more powerful mage of Astral will be required to locate it. [Academy of the Spheres]"
 #header 2
 #end
 
@@ -176785,7 +176824,7 @@ This headband does not require activation in combat."
 #req_targpath1 7
 #msg "There are traces of a more powerful Glamour site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Academy of High Magics]"
+##targname## found them while searching for sites of power. A more powerful mage of Glamour will be required to locate it. [Academy of Unseen Colors]"
 #header 2
 #end
 
@@ -177649,7 +177688,7 @@ This headband does not require activation in combat."
 #req_targpath1 2
 #msg "There are traces of a more powerful Water site in ##landname##.
 
-##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Troll Pit]"
+##targname## found them while searching for sites of power. A more powerful mage of Water will be required to locate it. [Sea Troll Pit]"
 #header 2
 #end
 
