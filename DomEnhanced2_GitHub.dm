@@ -115694,6 +115694,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #addname "Omelis"
 #addname "Vladas"
 #addname "Svilainis"
+#end
 
 #selectnametype 190 -- LA Zemaitia female fixing "No Name" bug
 #addname "Agniete"
@@ -116102,6 +116103,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #addname "Naciuniene"
 #addname "Žvikiene"
 #addname "Ermolaitiene"
+#end
 
 
 #newsite 2101
