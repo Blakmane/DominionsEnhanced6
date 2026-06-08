@@ -5662,6 +5662,23 @@
 #name "Wolf Barding"
 #end
 
+#newarmor 579 -- Turtle Shell Breastplate
+#copyarmor 100
+#rcost 12
+#name "Turtle Shell Breastplate"
+#end
+
+#newarmor 580 -- Turtle Helm
+#copyarmor 135
+#name "Turtle Helm"
+#end
+
+#newarmor 581 -- Turtle Greatshield
+#copyarmor 555
+#prot 18
+#name "Turtle Greatshield"
+#end
+
 
 -- END OF NEW ARMORS
 
@@ -32875,25 +32892,25 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 
 #newmonster 7614
 #name "Laistrygone Hurler"
-#descr "The Laistrygones are a tribe of cannibalistic giants. Primitive yet brutal dwellers of islands and coasts around Pelagia, they prefer to settle in caves near the sea. They are fiercely isolationist and spend most of their time on the shores pelting passing ships with boulders and spearing escaping sailors like fish. The Laistrygones claim descendance from the same ancient storm god as the Tritons, however this is vehemently denied by the Pearl Kings. Due to this rumoured mutual ancestry the Laistrygones have formed an uneasy pact with the Tritons. Each Laistrygone will capture and eat up to ten people per month, increasing unrest among the local population."
+#descr "The Laistrygones are a tribe of cannibalistic giants. Primitive yet brutal dwellers of islands and coasts around Pelagia, they prefer to settle in caves near the sea. They are fiercely isolationist and spend most of their time on the shores pelting passing ships with boulders and spearing escaping sailors like fish. The Laistrygones claim descendance from the same ancient storm god as the Tritons, however this is vehemently denied by the Pearl Kings. Due to this rumoured mutual ancestry the Laistrygones have formed an uneasy pact with the Tritons. Laistrygones are dangerous and unruly creatures who will increase unrest among the local population."
 #spr1 "magicenhanced/eelaistryhurler.tga"
 #spr2 "magicenhanced/eelaistryhurler2.tga"
 #rcost 1
 #gcost 0
 #hp 24
 #size 5
-#prot 4
+#prot 9
 #mr 8
 #mor 14
 #str 18
-#att 10
-#def 9
+#att 12
+#def 10
 #prec 10
 #enc 2
 #mapmove 2
 #ap 14
 #neednoteat
-#weapon 605  -- Throw rocks
+#weapon 424  -- Throw rocks
 #weapon 553  -- Rock
 #armor 44  -- Furs
 #startage 22
@@ -32901,27 +32918,26 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #coldres 5
 #fireres 5
 #darkvision 50
-#incunrest 10
-#popkill 1
+#incunrest 2
 #nametype 149
 #poorleader
 #end
 
 #newmonster 7615
 #name "Laistrygone Spearman"
-#descr "The Laistrygones are a tribe of cannibalistic giants. Primitive yet brutal dwellers of islands and coasts around Pelagia, they prefer to settle in caves near the sea. They are fiercely isolationist and spend most of their time on the shores pelting passing ships with boulders and spearing escaping sailors like fish. The Laistrygones claim descendance from the same ancient storm god as the Tritons, however this is vehemently denied by the Pearl Kings. Due to this rumoured mutual ancestry the Laistrygones have formed an uneasy pact with the Tritons. Each Laistrygone will capture and eat up to ten people per month, increasing unrest among the local population."
+#descr "The Laistrygones are a tribe of cannibalistic giants. Primitive yet brutal dwellers of islands and coasts around Pelagia, they prefer to settle in caves near the sea. They are fiercely isolationist and spend most of their time on the shores pelting passing ships with boulders and spearing escaping sailors like fish. The Laistrygones claim descendance from the same ancient storm god as the Tritons, however this is vehemently denied by the Pearl Kings. Due to this rumoured mutual ancestry the Laistrygones have formed an uneasy pact with the Tritons. Laistrygones are dangerous and unruly creatures who will increase unrest among the local population."
 #spr1 "magicenhanced/eelaistryspear.tga"
 #spr2 "magicenhanced/eelaistryspear2.tga"
 #rcost 1
 #gcost 0
 #hp 24
 #size 5
-#prot 4
+#prot 9
 #mr 8
 #mor 14
 #str 18
-#att 10
-#def 9
+#att 12
+#def 10
 #prec 10
 #enc 2
 #mapmove 2
@@ -32934,8 +32950,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #coldres 5
 #fireres 5
 #darkvision 50
-#incunrest 10
-#popkill 1
+#incunrest 2
 #nametype 149
 #poorleader
 #end
@@ -54909,7 +54924,7 @@ Cost 56 RP."
 #att 11
 #def 11
 #mr 12
-#mor 11
+#mor 13
 #holy
 #weapon 388  -- Pearl Spear
 #armor 523  -- Pearl Hauberk
@@ -54931,7 +54946,7 @@ Cost 56 RP."
 #att 11
 #def 11
 #mr 12
-#mor 11
+#mor 13
 #holy
 #weapon 388  -- Pearl Spear
 #armor 523  -- Pearl Hauberk
@@ -55024,7 +55039,7 @@ Cost 56 RP."
 #gcost 1
 #size 3
 #holy
-#expertleader
+#superiorleader
 #maxage 70
 #startage 40
 #end
@@ -67808,6 +67823,303 @@ Cannot be recruited until Break the Deadlock is cast."
 
 -- END NEW UW UNITS
 
+-- EA PELAGIA REWORK
+
+#selectsite 72 -- Palace of Pearls
+#gems 2 3
+#gems 4 2 
+#gems 6 1
+#end
+
+#newmonster 9670 -- Merman Hunter
+#copystats 1291 -- Turtle Tribe
+#spr1 "wateroverhaul/light_mermanhunter.png"
+#spr2 "wateroverhaul/light_mermanhunter2.png"
+#name "Merman Hunter"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. When a merman village is threatened their strongest hunters are called to battle, armed with long hunting spears, nets, and the tough hide of the sea creatures they have personally slain." 
+#gcost 10
+#clearweapons
+#cleararmor
+#weapon 1578 -- Shark-Tooth Spear
+#weapon 263 -- Net
+#armor 152 -- Sharkskin Cap
+#armor 188 -- Sharkskin Cuirass
+#landshape 9671
+#float
+#end
+
+#newmonster 9671 -- Merman Hunter (Land)
+#copystats 1292 -- Turtle Tribe (Land)
+#spr1 "wateroverhaul/light_mermanhunterland.png"
+#spr2 "wateroverhaul/light_mermanhunterland2.png"
+#name "Merman Hunter"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. When a merman village is threatened their strongest hunters are called to battle, armed with long hunting spears, nets, and the tough hide of the sea creatures they have personally slain."
+#gcost 10
+#clearweapons
+#cleararmor
+#weapon 1578 -- Shark-Tooth Spear
+#weapon 263 -- Net
+#armor 152 -- Sharkskin Cap
+#armor 188 -- Sharkskin Cuirass
+#watershape 9670
+#amphibian
+#end
+
+#newmonster 9672 -- Coastal Warrior
+#copystats 1291 -- Turtle Tribe
+#copyspr 1291
+#name "Coastal Warrior"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. The kingdom of Pelagia often recruits Mermen to patrol and defend their coastal territories, as these warriors are experienced fighting on dry land."
+#gcost 10
+#landshape 9673
+#float
+#end
+
+#newmonster 9673 -- Coastal Warrior (Land)
+#copystats 1292 -- Turtle Tribe (Land)
+#copyspr 1292
+#name "Coastal Warrior"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. The kingdom of Pelagia often recruits Mermen to patrol and defend their coastal territories, as these warriors are experienced fighting on dry land."
+#gcost 10
+#watershape 9672
+#amphibian
+#end
+
+#newmonster 9674 -- Shark Clan Warrior
+#copystats 2385 -- Pelagian Soldier
+#spr1 "wateroverhaul/light_sharkclan.png"
+#spr2 "wateroverhaul/light_sharkclan2.png"
+#name "Shark Clan Warrior"
+#descr "Life underneath the waves corresponds in many ways to that on dry land. Both humans and animals have underwater counterparts. Tritons are the most common of the aquatic humanoids. They appear as humans with legs ending in fins. Triton tribes, like humans, often follow a totemic spirit. Most tribal Tritons live separate from the Triton kingdom of Pelagia, but some have joined forces with the Triton Kings and formed their own clans within the kingdom. Warriors from the Shark Clan sharpen their teeth and mimic the feeding frenzy of their totem. They don armor made from shark skins. They are stronger and more ferocious than their independent kin." 
+#gcost 12
+#clearweapons
+#cleararmor
+#weapon 1577 -- Shark-Tooth Dagger
+#weapon 1577 -- Shark-Tooth Dagger
+#weapon 576 -- Weak Bite
+#armor 188 -- Sharkskin Cuirass
+#mor 11
+#float
+#berserk 3
+#end
+
+#newmonster 9675 -- Turtle Clan Soldier
+#copystats 2385 -- Pelagian Soldier
+#spr1 "wateroverhaul/light_turtleclan.png"
+#spr2 "wateroverhaul/light_turtleclan2.png"
+#name "Turtle Clan Soldier"
+#descr "Life underneath the waves corresponds in many ways to that on dry land. Both humans and animals have underwater counterparts. Tritons are the most common of the aquatic humanoids. They appear as humans with legs ending in fins. Triton tribes, like humans, often follow a totemic spirit. Most tribal Tritons live separate from the Triton kingdom of Pelagia, but some have joined forces with the Triton Kings and formed their own clans within the kingdom. Warriors from the Turtle clan mimic the defensive nature of their totem, donning the shells of giant turtles to protect them. They are stronger, better trained, and better equipped than their independent kin." 
+#gcost 10
+#clearweapons
+#cleararmor
+#weapon 31 -- Coral Spear
+#armor 581 -- Turtle Greatshield
+#armor 579 -- Turtle Shell Breastplate
+#armor 580 -- Turtle Helm
+#float
+#end
+
+#newmonster 9676 -- Merman Vanguard
+#copystats 1048 -- Wave Warrior
+#spr1 "wateroverhaul/light_mermanvanguard.png"
+#spr2 "wateroverhaul/light_mermanvanguard2.png"
+#name "Merman Vanguard"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Recently, the kings of Pelagia have rekindled their interest in the Closed Realm. To begin their invasion of the shorelines they have instructed the Coral Clan to train an elite force of Mermen and arm them with their finest coral arms and armor. While not as hardy as their Triton counterparts, Merman Vanguards are nonetheless well disciplined and capable warriors."
+#clearweapons
+#cleararmor
+#weapon 31 -- Coral Spear
+#weapon 1808 -- Repelling Barbed Armor
+#weapon 640 -- Coral Tipped Javelin
+#armor 23 -- Coral Hauberk
+#armor 24 -- Coral Cap
+#armor 25 -- Turtle Shell Shield
+#gcost 12
+#formationfighter 2
+#poisonarmor 5
+#landshape 9677
+#float
+#end
+
+#newmonster 9677 -- Merman Vanguard (land)
+#copystats 1049 -- Wave Warrior
+#spr1 "wateroverhaul/light_mermanvanguardland.png"
+#spr2 "wateroverhaul/light_mermanvanguardland2.png"
+#name "Merman Vanguard"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Recently, the kings of Pelagia have rekindled their interest in the Closed Realm. To begin their invasion of the shorelines they have instructed the Coral Clan to train an elite force of Mermen and arm them with their finest coral arms and armor. While not as hardy as their Triton counterparts, Merman Vanguards are nonetheless well disciplined and capable warriors."
+#clearweapons
+#cleararmor
+#weapon 31 -- Coral Spear
+#weapon 1808 -- Repelling Barbed Armor
+#weapon 640 -- Coral Tipped Javelin
+#armor 23 -- Coral Hauberk
+#armor 24 -- Coral Cap
+#armor 25 -- Turtle Shell Shield
+#gcost 12
+#formationfighter 2
+#poisonarmor 5
+#watershape 9676
+#amphibian
+#end
+
+#newmonster 9678-- Merman Chieftan
+#copystats 1293 -- Turtle Tribe
+#copyspr 1293
+#name "Merman Chieftan"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. The kingdom of Pelagia often recruits Mermen to patrol and defend their coastal territories, as these warriors are experienced fighting on dry land."
+#landshape 9679
+#float
+#end
+
+#newmonster 9679 -- #newmonster 9678 -- Merman Chieftan (land)
+#copystats 1294 -- Turtle Tribe (Land)
+#copyspr 1294
+#name "Merman Chieftan"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. The kingdom of Pelagia often recruits Mermen to patrol and defend their coastal territories, as these warriors are experienced fighting on dry land."
+#watershape 9678
+#amphibian
+#end
+
+#newmonster 9680 -- Vanguard Captain
+#copystats 1052 -- Wave Lord
+#spr1 "wateroverhaul/light_vanguardcaptain.png"
+#spr2 "wateroverhaul/light_vanguardcaptain2.png"
+#name "Vanguard Captain"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Recently, the kings of Pelagia have rekindled their interest in the Closed Realm. To begin their invasion of the shorelines they have instructed the Coral Clan to train an elite force of Mermen and arm them with their finest coral arms and armor. While not as hardy as their Triton counterparts, Merman Vanguards are nonetheless well disciplined and capable warriors."
+#clearweapons
+#cleararmor
+#weapon 388 -- Pearl Spear
+#weapon 1808 -- Repelling Barbed Armor
+#armor 23 -- Coral Hauberk
+#armor 24 -- Coral Cap
+#armor 25 -- Turtle Shell Shield
+#gcost 105
+#goodleader
+#formationfighter 2
+#poisonarmor 5
+#landshape 9681
+#float
+#end
+
+#newmonster 9681 -- Vanguard Captain (land)
+#copystats 1053 -- Wave Lord
+#spr1 "wateroverhaul/light_vanguardcaptainland.png"
+#spr2 "wateroverhaul/light_vanguardcaptainland2.png"
+#name "Vanguard Captain"
+#descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. Recently, the kings of Pelagia have rekindled their interest in the Closed Realm. To begin their invasion of the shorelines they have instructed the Coral Clan to train an elite force of Mermen and arm them with their finest coral arms and armor. While not as hardy as their Triton counterparts, Merman Vanguards are nonetheless well disciplined and capable warriors."
+#clearweapons
+#cleararmor
+#weapon 388 -- Pearl Spear
+#weapon 1808 -- Repelling Barbed Armor
+#armor 23 -- Coral Hauberk
+#armor 24 -- Coral Cap
+#armor 25 -- Turtle Shell Shield
+#gcost 105
+#goodleader
+#formationfighter 2
+#poisonarmor 5
+#watershape 9680
+#amphibian
+#end
+
+#selectmonster 2385 -- Pelagian Soldier
+#spr1 "wateroverhaul/light_pelagiansoldier.png"
+#spr2 "wateroverhaul/light_pelagiansoldier2.png"
+#armor 114 -- Turtle Hauberk
+#armor 134 -- Turtle Cap
+#end
+
+#selectmonster 2386 -- Coral Clan
+#spr1 "wateroverhaul/light_coralclan.png"
+#spr2 "wateroverhaul/light_coralclan2.png"
+#end
+
+#selectmonster 2391 -- Triton Rider
+#att 12
+#def 11
+#end
+
+#selectmonster 2387 -- Pearl Guard
+#spr1 "wateroverhaul/light_pearlguard.png"
+#spr2 "wateroverhaul/light_pearlguard2.png"
+#cleararmor
+#poisonarmor 0
+#armor 523  -- Pearl Hauberk
+#armor 522  -- Pearl Cap
+#armor 189  -- Pearl Shield
+#hp 18
+#str 13
+#mor 14
+#mr 13
+#gcost 26
+#bodyguard 4
+#end
+
+#selectmonster 2809 -- Sideraspides
+#descr "The Sideraspides, iron shields, are heavily armed mermen soldiers. Tritons are unable to leave the sea, but mermen can shed their tails and walk on dry land to trade or wage war. The extensive trade with Berytos has given Pelagia a much needed ally. In the few coastal cities Pelagia has built, Berytian infantry have helped in the defence. Over time the mermen have adopted Berytian and Therodian culture and tactics. Now there are few Berytian soldiers left in the cities and Pelagia fields its own mermen infantry. The Sideraspides are heavy mermen soldiers clad in Berytian iron armor. They are able to enter the sea, but as their armors corrode and fall apart with prolonged underwater campaigns, they mostly remain on land, defending or expanding the borders of the coastal colonies of the kingdom. The Sideraspides have slightly better morale than their turtle-shelled kin, and are skilled formation fighters like their Berytian models."
+#mor 12
+#formationfighter 2
+#end
+
+#selectmonster 2807 -- Shore Fighter
+#descr "Tritons are unable to leave the sea, but mermen can shed their tails and walk on dry land to trade or wage war. The extensive trade with Berytos has given Pelagia a much needed ally. In the few coastal cities Pelagia has built, Berytian infantry have helped in the defense. Over time the mermen have adopted Berytian and Therodian culture and tactics. Now there are few Berytian soldiers left in the cities and Pelagia fields its own mermen infantry. The Shore Fighters are light mermen infantry armed in Berytian fashion."
+#mor 11
+#end
+
+#selectmonster 2396 -- Pearl Mage
+#custommagic 11008 10
+#makepearls 4
+#end
+
+#selectmonster 2813 -- Pelagian Explorer
+#clearmagic
+#magicskill 2 1
+#custommagic 3456 100  -- F
+#researchbonus 3
+#end
+
+#selectmonster 2814 -- Pelagian Explorer (land)
+#clearmagic
+#magicskill 2 1
+#custommagic 3456 100  -- FASE
+#researchbonus 3
+#end
+
+#selectmonster 1415 -- Pelagian Mermage
+#custommagic 256 50  -- A
+#gcost 140
+#end
+#selectmonster 1416 -- Pelagian Mermage (land)
+#custommagic 256 50
+#gcost 140
+#end
+
+#selectmonster 2390 -- Pelagian Captain
+#spr1 "wateroverhaul/light_coralcommander.png"
+#spr2 "wateroverhaul/light_coralcommander2.png"
+#gcost 85
+#mor 13
+#formationfighter 2
+#end
+
+#selectmonster 2397 -- Pearl King
+#clearmagic
+#magicskill 2 4
+#magicskill 4 2  -- W4S2
+#custommagic 10496 100
+#custommagic 11008 10
+#makepearls 8
+#end
+
+#selectmonster 1058 -- Hippocampus
+#clearspec
+#animal
+#aquatic
+#float
+#heal
+#end
+
+-- END EA PELAGIA REWORK
+
 
 -- Immortal Lich/Vampire reformtime changes
 
@@ -69966,10 +70278,6 @@ Cannot be recruited until Break the Deadlock is cast."
 #weapon 1808
 #end
 
-#selectmonster 2387 -- Pearl Guard poison barbs weapon
-#weapon 1808
-#end
-
 #selectmonster 2390 -- Pelagian Captain poison barbs weapon
 #weapon 1808
 #end
@@ -71605,10 +71913,6 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 #selectmonster 2386 -- Coral Clan Soldier poison armor to 3
-#poisonarmor 3
-#end
-
-#selectmonster 2387 -- Pearl Guard poison armor to 3
 #poisonarmor 3
 #end
 
@@ -95588,9 +95892,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #def 9
 #end
 
-#selectmonster 2387 -- Pearl Guard
-#bodyguard 4
-#end
+
 
 #selectmonster 2391 -- Triton Rider
 #spr1 "vanilla/tritonrider1.tga"
@@ -130462,18 +130764,39 @@ Dominion: Dominion hides province ownership."
 #cheapgod40 8477 -- Mother of Pearls
 #startcom 2390  -- Pelagian Captain
 #startscout 1050  -- Merman Scout
-#startunittype1 2383  -- Turtle Tribe Triton
-#startunitnbrs1 30
+
+#startunittype1 2385  -- Pelagian Soldier
+#startunitnbrs1 20
 #startunittype2 2386  -- Coral Clan Soldier
 #startunitnbrs2 20
 
+#clearrec
 
-#plainfortrec 1291 -- Turtle Warrior
-#forestfortrec 1291
-#mountainfortrec 1291
-#swampfortrec 1291
-#wastefortrec 1291
-#farmfortrec 1291
+#addrecunit 2384    -- Knife Militia
+#addrecunit 9670    -- Merman Hunter
+#addrecunit 9672    -- Coastal Warrior
+#addrecunit 2385    -- Pelagian Soldier
+#addrecunit 9675    -- Turtle Clan Soldier
+#addrecunit 9674    -- Shark Clan Warrior
+#addrecunit 9676    -- Vanguard Soldier
+#addrecunit 2386    -- Coral Clan Soldier
+#addrecunit 2391    -- Triton Rider
+
+#addreccom 1050    -- Merman Scout
+#addreccom 9678    -- Merman Chief
+#addreccom 2390    -- Pelagian Captain
+#addreccom 9680    -- Vanguard Captain
+#addreccom 1696    -- Merman Priest
+#addreccom 2395    -- Pearl Clan Priest
+#addreccom 1415    -- Pelagian Mermage
+#addreccom 2396    -- Pearl Mage
+
+-- Coastal forts -- troops
+#coastfortrec 9672   -- Coastal Warrior
+
+-- Coastal forts -- commanders
+#coastfortcom 9678   -- Merman Chief
+#coastfortcom 2805   -- Ichtyid Pearl Mage
 
 #plainfortrec 2807 -- Shore fighter
 #forestfortrec 2807
@@ -130489,13 +130812,6 @@ Dominion: Dominion hides province ownership."
 #wastefortrec 2809
 #farmfortrec 2809
 
-#plainfortcom 1293 -- Turtle chief
-#forestfortcom 1293
-#mountainfortcom 1293
-#swampfortcom 1293
-#wastefortcom 1293
-#farmfortcom 1293
-
 #plainfortcom 1696 -- Priest
 #forestfortcom 1696
 #mountainfortcom 1696
@@ -130510,13 +130826,12 @@ Dominion: Dominion hides province ownership."
 #wastefortcom 2811
 #farmfortcom 2811
 
-#plainfortcom 2813 -- Explorer
-#forestfortcom 2813
-#mountainfortcom 2813
-#swampfortcom 2813
-#wastefortcom 2813
-#farmfortcom 2813
-
+#plainfortcom 2814 -- Explorer
+#forestfortcom 2814
+#mountainfortcom 2814
+#swampfortcom 2814
+#wastefortcom 2814
+#farmfortcom 2814
 
 #futuresite "Pearl Armory"
 #futuresite "EA Pelagia Summons"
@@ -147123,7 +147438,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #casttime 75
 #aoe 1
 #damage 2008
-#range 20
+#range 5030
 #precision 10
 #restricted 43
 #restricted 40
@@ -147148,7 +147463,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 1 1
 #fatiguecost 20
 #aoe 1003 -- 6+
-#range 20
+#range 5020
+#precision 10
 #restricted 43
 #restricted 40
 #restricted 41
@@ -147270,12 +147586,12 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #end
 
 #selectspell 3082
-#name "Ichtyid Shaman"
+#name "Ichtyid Shamans"
 #school -1
 #researchlevel 0
 #effect 10021
 #damage 2804  -- Ichtyid Shaman
-#nreff 1
+#nreff 2
 #spec 8388608
 #nextspell 3081
 #end
@@ -147318,7 +147634,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Summon Hippocampoi"
 #descr "The Pearl Kings long ago learned how to tame the Hippocampoi, magical steeds of the deeps. These magical creatures are able to strike enemies or heal themselves with their horns."
 #pathlevel 0 1
-#fatiguecost 1200
+#fatiguecost 1000
 #damage 1058
 #restricted 40
 #end
@@ -171404,6 +171720,7 @@ Increases Natural Protection by 2 for each level of heat in the province."
 #magicboost 4 -9
 #constlevel 3
 #autospell "Mind Blank"
+#nationrebate 40 -- EA Pelagia
 #end
 
 #selectitem 896
