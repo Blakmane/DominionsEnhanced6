@@ -32909,7 +32909,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #enc 2
 #mapmove 2
 #ap 14
-#neednoteat
+#appetite 3
 #weapon 424  -- Throw rocks
 #weapon 553  -- Rock
 #armor 44  -- Furs
@@ -32918,7 +32918,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #coldres 5
 #fireres 5
 #darkvision 50
-#incunrest 2
+#incunrest 3
 #nametype 149
 #poorleader
 #end
@@ -32942,7 +32942,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #enc 2
 #mapmove 2
 #ap 14
-#neednoteat
+#appetite 3
 #weapon 580  -- Coral Long Spear
 #armor 44  -- Furs
 #startage 22
@@ -32950,7 +32950,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #coldres 5
 #fireres 5
 #darkvision 50
-#incunrest 2
+#incunrest 3
 #nametype 149
 #poorleader
 #end
@@ -67909,7 +67909,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/light_turtleclan2.png"
 #name "Turtle Clan Soldier"
 #descr "Life underneath the waves corresponds in many ways to that on dry land. Both humans and animals have underwater counterparts. Tritons are the most common of the aquatic humanoids. They appear as humans with legs ending in fins. Triton tribes, like humans, often follow a totemic spirit. Most tribal Tritons live separate from the Triton kingdom of Pelagia, but some have joined forces with the Triton Kings and formed their own clans within the kingdom. Warriors from the Turtle clan mimic the defensive nature of their totem, donning the shells of giant turtles to protect them. They are stronger, better trained, and better equipped than their independent kin." 
-#gcost 10
+#gcost 11
 #clearweapons
 #cleararmor
 #weapon 31 -- Coral Spear
@@ -68026,6 +68026,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/light_pelagiansoldier2.png"
 #armor 114 -- Turtle Hauberk
 #armor 134 -- Turtle Cap
+#gcost 11
 #end
 
 #selectmonster 2386 -- Coral Clan
@@ -68103,8 +68104,10 @@ Cannot be recruited until Break the Deadlock is cast."
 
 #selectmonster 2397 -- Pearl King
 #clearmagic
+#gcost 695
 #magicskill 2 4
-#magicskill 4 2  -- W4S2
+#magicskill 4 2
+#magicskill 9 3 -- W4S2H3
 #custommagic 10496 100
 #custommagic 11008 10
 #makepearls 8
@@ -130768,7 +130771,7 @@ Dominion: Dominion hides province ownership."
 #startunittype1 2385  -- Pelagian Soldier
 #startunitnbrs1 20
 #startunittype2 2386  -- Coral Clan Soldier
-#startunitnbrs2 20
+#startunitnbrs2 10
 
 #clearrec
 
@@ -147517,7 +147520,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #effect 10001
 #damage 7615 -- Laistrygones Spearman
 #nreff 1003
-#fatiguecost 400
+#fatiguecost 500
 #onlycoastsrc 1
 #nextspell 3075
 #restricted 40 -- EA Pelagia
