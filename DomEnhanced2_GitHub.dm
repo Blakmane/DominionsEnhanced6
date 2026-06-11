@@ -5208,12 +5208,14 @@
 #newarmor 522
 #copyarmor 24  -- Coral Cap
 #name "Pearl Cap"
+#magicarmor
 #prot 16
 #end
 
 #newarmor 523
 #name "Pearl Hauberk"
 #type 5
+#magicarmor
 #prot 16
 #def -2
 #enc 2
@@ -54920,12 +54922,14 @@ Cost 56 RP."
 #cleararmor
 #name "Pearl Sideraspist"
 #descr "To aid in the conquest of the Closed Realm the Pearl Mages have learned to raise great castles of gleaming pearl, and from these mighty citadels march sacred warriors armed with pearl weapons and armor. Tritons are unable to leave the sea, but mermen can shed their tails and walk on dry land, and so they are chosen to take up the pearl armaments."
-#gcost 13
+#gcost 17
 #att 11
 #def 11
+#str 11
 #mr 12
 #mor 13
 #holy
+#formationfighter 2
 #weapon 388  -- Pearl Spear
 #armor 523  -- Pearl Hauberk
 #armor 123  -- Hoplite Helm
@@ -54942,12 +54946,14 @@ Cost 56 RP."
 #cleararmor
 #name "Pearl Sideraspist"
 #descr "To aid in the conquest of the Closed Realm the Pearl Mages have learned to raise great castles of gleaming pearl, and from these mighty citadels march sacred warriors armed with pearl weapons and armor. Tritons are unable to leave the sea, but mermen can shed their tails and walk on dry land, and so they are chosen to take up the pearl armaments."
-#gcost 13
+#gcost 17
 #att 11
 #def 11
+#str 11
 #mr 12
 #mor 13
 #holy
+#formationfighter 2
 #weapon 388  -- Pearl Spear
 #armor 523  -- Pearl Hauberk
 #armor 123  -- Hoplite Helm
@@ -61508,7 +61514,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #spr1 "magicenhanced/blue_undrjarl1.png"
 #spr2 "magicenhanced/blue_undrjarl2.png"
 #name "Undrjarl"
-#descr "The Undrjarl is an ancestor chief of an ancient clan, returned from the underworld to make war on the living. The Undrjarl's connection to those who served him in life is strong, and may be used to return some of their number to his side each month to raid and conquer once again. The Undrjarl's time in the underworld has given him insight into the magic of Death. Once bound to the mortal world their ancestral ties will allow them to return if slain, however this is much slower than other forms of immortality."
+#descr "The Undrjarl is an ancestor chief of an ancient clan, returned from the underworld to make war on the living. The Undrjarl's connection to those who served him in life is strong, and several of his warriors will rise from the dead to rejoin him on the eve of battle. The Undrjarl's time in the underworld has given him insight into the magic of Death. Once bound to the mortal world their ancestral ties will allow them to return if slain, however this is much slower than other forms of immortality."
 #hp 35
 #str 16
 #att 14
@@ -61529,7 +61535,8 @@ Companions are recruited in pairs and two must be recruited at once."
 #armor 125 -- Skullface
 #saltvul 2
 #magicskill 5 3 -- D
-#makemonsters2 9347 -- Ghostly Warrior
+-- #makemonsters2 9347 -- Ghostly Warrior
+#batstartsum2 9347 -- Ghostly
 #nametype 131 -- EA Ulm Male
 #immortal
 #reformtime 3
@@ -97913,10 +97920,10 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 --Nidbathed are unnatural in this world and are affected by spells that would banish or act on undead, but do not require undead leadership.
 --The success of the Nidalögning is dependent on the might of the God and the number of Scar Souls equals one half the dominion score of the province, rounded up."
 #descr "The Nidbathed, Nidlögade, are ghastly warriors who are not even stopped by death. In a horrible ritual administered by the Seithberenders a clan champion is bathed in the black water of the Nidakettil. During the ritual his fellow warriors cut deep wounds in his flesh before taking their own lives. Scarred by both the loss of his friends and the cuts in his flesh, the Nidbathed undergoes a gruesome transformation. His flesh turns white while his scars and eyes turns black as the night. Each scar on his body represents the strength and the death of a friend. If the Nidbathed is killed, one of his scars turns red and he rises again, unkillable as long as his friends’ deaths hold him alive. Being unkillable, the Nidbathed don’t care much for shields. Instead they fight with heavy greatswords able to cut down even the mightiest of Jotuns.
-The success of the Nidalögning is dependent on the might of the God and the number of Scar Souls equals one third the dominion score of the province, rounded up."
+The success of the Nidalögning is dependent on the might of the God and the number of Scar Souls equals one half the dominion score of the province, rounded up."
 --#gcost 10050
 #startingaff 2 -- Cursed
-#extralives 33
+#extralives 50
 --#coldres 10
 #rpcost 46
 --#enc 2
@@ -163185,7 +163192,7 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #descr "The spell will cause the province to become covered in gloomy clouds and unnaturally dark for an entire month. Any battles fought there will have partial darkness."
 #details "Battlefield darkness -3, blind beings and beings with spirit sight or perfect darkvision are unaffected by this spell."
 #school 1
-#researchlevel 3
+#researchlevel 4
 #path 0 1 -- A
 #pathlevel 0 1
 #path 1 5 -- D
@@ -163214,10 +163221,10 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 
 #selectspell 4352
 #name "Polar Night"
-#descr "The caster causes an unnatural darkness to take hold over a province for three months. Any battles fought there will have partial darkness."
+#descr "The caster causes an unnatural darkness to take hold over a distant province for three months. Any battles fought there will have partial darkness."
 #details "Battlefield darkness -3, blind beings and beings with spirit sight or perfect darkvision are unaffected by this spell."
 #school 1
-#researchlevel 5
+#researchlevel 6
 #path 0 1 -- A
 #pathlevel 0 2
 #path 1 5 -- D
@@ -163226,7 +163233,7 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #fatiguecost 600
 #effect 10042
 #damage 4301
-#provrange 2
+#provrange 6
 #restricted 81 -- Nidavangr
 #nextspell "Sunless Sky"
 #end
@@ -163263,14 +163270,15 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #selectspell 4355
 #copyspell 939 -- Summon Lesser Fire Elemental
 #name "Raise Ghostly Warriors"
-#descr "In the lands of Nidavangr, the dead are treated with little reverence. Spirits of dead ancestors are often returned from the underworld by the seithberenders of the Crow Clan. This spell will call to the spirits of a few such warriors, and a band of ghostly beings will quickly manifest to aid the caster where they will fight until the battle ends. More powerful casters will summon larger bands of warriors."
+#descr "In the lands of Nidavangr, the dead are treated with little reverence. Spirits of dead ancestors are often returned from the underworld by the seithberenders of the Crow Clan. This spell will call to the spirits of a few such warriors, and a band of ghostly beings will quickly manifest to aid the caster where they will fight until the battle ends."
 #researchlevel 5
 #path 0 5 -- D
 #pathlevel 0 2
 #fatiguecost 100
 #damage 9347 -- Warrior Spirit
-#nreff 1001 -- 3+
+#nreff 2 -- 2
 #spec 8388608
+#sound 31
 #restricted 81 -- Nidavangr
 #end
 
@@ -163342,6 +163350,22 @@ This spell may only target friendly provinces."
 #end
 
 --- spell 4360 taken by fear of god nextspell, continue at 4361)
+
+#selectspell 4361
+#copyspell 939 -- Summon Lesser Fire Elemental
+#name "Raise Ghostly Army"
+#descr "In the lands of Nidavangr, the dead are treated with little reverence. Spirits of dead ancestors are often returned from the underworld by the seithberenders of the Crow Clan. This spell will call to the spirits of many such warriors, and a great number of ghostly beings will quickly manifest to aid the caster where they will fight until the battle ends. More powerful casters will summon larger bands of warriors."
+#researchlevel 7
+#path 0 5 -- D
+#pathlevel 0 3
+#fatiguecost 200
+#damage 9347 -- Warrior Spirit
+#nreff 1002 -- 5+
+#spec 8388608
+#sound 31
+#restricted 81 -- Nidavangr
+#end
+
 
 
 -- END OF NEW SPELLS
