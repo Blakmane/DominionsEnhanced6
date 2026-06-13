@@ -25299,11 +25299,17 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #poisoncloud 10
 #regeneration 10
 #heal
+#magicskill 5 3
+#magicskill 6 3
+#magicskill 2 1
 #swampsurvival
+#swimming
 #twiceborn 7245 -- Necrophidian
 #incscale 3  -- +Death
+#clearweapons
+#weapon 827  -- Venomous Fangs
 #weapon 535  -- Dragon Gas
-#weapon 29  -- Claw
+#weapon 824  -- Claw
 #weapon 532  -- Tail Sweep
 #end
 
@@ -121545,6 +121551,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 8678 -- lindwurm
 #homecom 7253 -- aesir
 #homecom 7254 -- aesir
+#homecom 7273 -- nidhogg
 #end
 
 #newsite 2468
@@ -163366,7 +163373,22 @@ This spell may only target friendly provinces."
 #restricted 81 -- Nidavangr
 #end
 
-
+#selectspell 4362
+#name "Release the Corpse Gnawer"
+#descr "Using half-forgotten malefic rites powered by the suffering of those who have died within the depths of the Nidakettil, the caster opens a great rift to Hel and calls forth Nidhogg, the Corpse Gnawer. Nidhogg is a dragon who chews the corpses of the inhabitants of Náströnd, in Hel. It is surrounded by noxious fumes that slay plant and beast alike."
+#school 0
+#researchlevel 8
+#path 0 5
+#path 1 8
+#pathlevel 0 5
+#pathlevel 1 1
+#effect 10089 -- Ritual Unique Commander
+#fatiguecost 3500
+#damage 7273 -- Nidhogg
+#nreff 1
+#onlyatsite 226  -- Nidakettil
+#restricted 81 -- Nid
+#end
 
 -- END OF NEW SPELLS
 
