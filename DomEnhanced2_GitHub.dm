@@ -39421,7 +39421,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copyspr 760  -- Siege Golem
 #clearweapons
 #name "Siege Golem"
-#descr "A siege golem is a metal giant with fists enchanted to shatter steel and stone. It is tremendously strong and can crush stone walls to powder. The main purpose of the siege golem is to besiege castles and it is rather poor at melee combat, although it is very durable and will not easily be destroyed. The siege golem is instilled with instructions from its creator and can act independently, although it has no mind. A single siege golem counts as one hundred normal soldiers when besieging a castle, and if given a full month can deploy pulverising shockwaves that will utterly destroy any fort in the province, however once this process begins the golem will slowly tear itself apart. The Siege Golem is a huge construction and cannot be teleported via magic."
+#descr "A siege golem is a metal giant with fists enchanted to shatter steel and stone. It is tremendously strong and can crush stone walls to powder. The main purpose of the siege golem is to besiege castles and it is rather poor at melee combat, although it is very durable and will not easily be destroyed. The siege golem is instilled with instructions from its creator and can act independently, although it has no mind. A single siege golem counts as one hundred normal soldiers when besieging a castle, and if given a full month can deploy pulverising shockwaves that will utterly destroy any fort in the province. The Siege Golem is a huge construction and cannot be teleported via magic."
 #fortkill 100
 #str 40
 #noleader
@@ -39432,9 +39432,11 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #mapmove 0
 #weapon 714  -- Tremor
 #ap 2
-#itemslots 1  -- No slots
+#itemslots 262144 -- 1misc
 #landdamage 33
 #uwdamage 33
+#userestricteditem 760
+#startitem 876
 #end
 
 #newmonster 7939
@@ -40727,10 +40729,10 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "magicenhanced/eeblackiron.tga"
 #spr2 "magicenhanced/eeblackiron2.tga"
 #name "Black Iron Infantry"
-#descr "The black iron infantry of Ulm are warriors inspired by an Iron Angel. Clad in full plate armor made from the Blacksteel of Ulm they are armed with incredibly sharp weapons and tower shields. They are trained to move and fight in heavy armor without tiring. The Blacksteel armor of Ulm is made by the master smiths and their superior craftsmanship is obvious to anyone wearing an Ulmish armor. Both stronger and lighter than ordinary plate armor, they make the soldiers of Ulm superior to any other human infantry. Inspired by the presence of an Iron Angel to create almost supernaturally sharp weaponry, the black iron infantry have higher morale than even the black plate infantry of Ulm. The inhabitants of Ulm are large and can endure much physical punishment before collapsing. The influence of the Iron Angel has imbued their armor with some resistance to magic."
+#descr "The black iron infantry of Ulm are warriors inspired by an Iron Angel. Clad in full plate armor made from the Blacksteel of Ulm they are armed with incredibly sharp weapons and tower shields. They are trained to move and fight in heavy armor without tiring. The Blacksteel armor of Ulm is made by the master smiths and their superior craftsmanship is obvious to anyone wearing an Ulmish armor. Both stronger and lighter than ordinary plate armor, they make the soldiers of Ulm superior to any other human infantry. Inspired by the presence of an Iron Angel to create almost supernaturally sharp weaponry, the black iron infantry have higher morale than even the black plate infantry of Ulm. The inhabitants of Ulm are large and can endure much physical punishment before collapsing. The influence of the Iron Angel has imbued their armor with some resistance to magic and minor resistance to the elements."
 #gcost 10023
-#rcost 120
-#rpcost 46
+#rcost 100
+#rpcost 31
 #mr 11
 #mor 15
 --#reclimit 3
@@ -40740,6 +40742,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #str 13
 #att 12
 #def 12
+#fireres 3
+#shockres 3
 #clearweapons
 #weapon 74  -- Full SS
 #cleararmor
@@ -40756,8 +40760,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Blacksteel Swordsman"
 #descr "The Blacksteel Swordsmen of Ulm are warriors clad in full plate armor and bearing incredibly sharp swords made from the Blacksteel of Ulm. They are trained to move and fight in heavy armor without tiring. The Blacksteel armor of Ulm is made by the master smiths and their superior craftsmanship is obvious to anyone wearing an Ulmish armor. Both stronger and lighter than ordinary plate armor, they make the soldiers of Ulm superior to any other human infantry. The inhabitants of Ulm are large and can endure much physical punishment before collapsing."
 #gcost 10016
-#rcost 35
-#rpcost 26
+#rcost 30
+#rpcost 18
 #mor 13
 #str 12
 #att 11
@@ -40774,8 +40778,8 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #name "Blacksteel Zweihander"
 #descr "The Blacksteel Zweihander is a warrior clad in full plate armor made from Blacksteel and armed with an incredibly sharp Great Sword. Forged from Blacksteel, their weapons can cut through the toughest armor and these Zweihanders are feared by even the great cold giants of the North. The swords are each made by a Master Craftsmen of Ulm and only a few can be created each month. The inhabitants of Ulm are large and can endure much physical punishment before collapsing. They are trained to move and fight in heavy armor without tiring."
 #gcost 10018
-#rcost 45
-#rpcost 31
+#rcost 40
+#rpcost 21
 #mor 13
 #str 12
 #att 11
@@ -52959,9 +52963,12 @@ Requires an Ippondatara present to recruit."
 #icenatprot -1
 #iceprotinspector -1
 #prot 3
+#size 5
+#formationfighter -1
 #cleararmor
-#armor 570 -- Half Plate
+#armor 14 -- Plate Hauberk
 #armor 20 -- cap
+#coldres -3
 #end
 
 #newmonster 8893 -- Nonsacred Daeva
@@ -60294,7 +60301,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #newmonster 9298 -- Thiniseretae
 #copystats 1126 -- Vanara Swordsman
 #spr1 "magicenhanced/blue_thiniseretae1.png"
-#spr2 "magicenhanced/blue_thiniseretae1.png"
+#spr2 "magicenhanced/blue_thiniseretae2.png"
 #name "Thiniseretae"
 #descr "There reside many strange and wondrous creatures in the lands of Piconye. Among them is the Thiniseretae, a bird with two heads, one appearing human where their torso should be. They are powerful mages of Astral and Air and may be summoned by the sages of Piconye."
 #gcost 0
@@ -60492,6 +60499,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #str 16
 #def 13
 #clearweapons
+#transformation 0
 #weapon 753 -- Dive
 #weapon 408 -- Talons
 #weapon 404 -- Beak
@@ -61520,7 +61528,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #spr1 "magicenhanced/blue_undrjarl1.png"
 #spr2 "magicenhanced/blue_undrjarl2.png"
 #name "Undrjarl"
-#descr "The Undrjarl is an ancestor chief of an ancient clan, returned from the underworld to make war on the living. The Undrjarl's connection to those who served him in life is strong, and several of his warriors will rise from the dead to rejoin him on the eve of battle. The Undrjarl's time in the underworld has given him insight into the magic of Death. Once bound to the mortal world their ancestral ties will allow them to return if slain, however this is much slower than other forms of immortality."
+#descr "The Undrjarl is an ancestor chief of an ancient clan, returned from the underworld to make war on the living. The Undrjarl's connection to those who served him in life is strong, and more will return to serve him every month. The Undrjarl's time in the underworld has given him insight into the magic of Death."
 #hp 35
 #str 16
 #att 14
@@ -61542,10 +61550,11 @@ Companions are recruited in pairs and two must be recruited at once."
 #saltvul 2
 #magicskill 5 3 -- D
 -- #makemonsters2 9347 -- Ghostly Warrior
-#batstartsum2 9347 -- Ghostly
+#batstartsum1d3 9347 -- Ghostly
+#summon1 9347 -- Ghostly Warrior
 #nametype 131 -- EA Ulm Male
-#immortal
-#reformtime 3
+--#immortal
+--#reformtime 3
 #end
 
 #newmonster 9349 -- Valravn biggest
@@ -68055,15 +68064,16 @@ Cannot be recruited until Break the Deadlock is cast."
 #selectmonster 2387 -- Pearl Guard
 #spr1 "wateroverhaul/light_pearlguard.png"
 #spr2 "wateroverhaul/light_pearlguard2.png"
+#drawsize -5
 #cleararmor
 #poisonarmor 0
 #armor 523  -- Pearl Hauberk
 #armor 522  -- Pearl Cap
 #armor 189  -- Pearl Shield
-#hp 18
-#str 13
-#mor 14
-#mr 13
+#hp 18 -- +2
+#str 14 -- +2
+#mor 14 -- +1
+#mr 13 -- +1
 #gcost 26
 #bodyguard 4
 #end
@@ -72910,6 +72920,7 @@ Only three Queens of Elemental Water are known to exist."
 #magicskill 1 1
 #magicskill 3 1
 #magicskill 5 1
+#bonusspells 1
 #end
 
 #newmonster 8261 -- Great Bear
@@ -77851,6 +77862,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #mapmove 2
 #fireres 25
 #heat 7
+#icenatprot -1
 #fireshield 8
 #darkvision 100
 #firepower 1
@@ -78154,6 +78166,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #att 13
 #def 13
 #mr 18
+#woundfend 3
 #humanoid
 #size 9
 #prot 6
@@ -82965,6 +82978,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #darkvision 50
 #weapon 373 -- Stone Spear
 #weapon 821 -- Magic Bite
+#size 9
 #itemslots 991750
 #clearmagic
 #magicskill 0 3
@@ -83978,6 +83992,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #neednoteat
 #icenatprot -1
 #prot 3
+#size 3
 #itemslots 991750
 #clearmagic
 #magicskill 0 1
@@ -97386,8 +97401,8 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #reinvigoration 100 -- untiring automatons
 #end
 
-#selectmonster 3166 -- Phaecian Priest
-#descr "The priests of Phaeacia are trained sailors and travel to newly founded colonies to spread the faith and prepare for the arrival of the Dark Vessels. The trade connections of Phaecia allow their priests to travel the world with relative safety."
+#selectmonster 3166 -- Phaeacian Priest
+#descr "The priests of Phaeacia are trained sailors and travel to newly founded colonies to spread the faith and prepare for the arrival of the Dark Vessels. The trade connections of Phaeacia allow their priests to travel the world with relative safety."
 #stealthy 0
 #end
 
@@ -99049,10 +99064,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 #selectmonster 204 -- Seraphine
 #armor 158 -- Robes
-#end
-
-#selectmonster 217 -- Flagellant
-#armor 573 -- Garbs
 #end
 
 #selectmonster 222 -- High Inquisitor
@@ -107097,6 +107108,30 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #battleshape 12364
 #end
 
+#newmonster 12366 -- Totem battle no innate
+#copystats 8260
+#copystats 8260
+#copyspr 8260
+#bonusspells 0
+#homerealm 0
+#startdom 0
+#clearmagic
+#shrinkhp 999
+#end
+
+#newmonster 12367 -- Totem battle innate
+#copystats 8260
+#copyspr 8260
+#bonusspells 1
+#homerealm 0
+#startdom 0
+#worldshape 8260 --Totem-- 
+#clearmagic
+#end 
+
+#selectmonster 8260 -- Totem no innate speed
+#battleshape 12364
+#end
 
 
 -- ENDUNITS
@@ -117585,7 +117620,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #name "Angel Forge"
 #level 0
 #rarity 5
-#res 50
+#res 100
 #path 9 
 #look 4
 #nat 60
@@ -117598,7 +117633,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #name "Blacksteel Forge"
 #level 0
 #rarity 5
-#res 50
+#res 100
 #path 0 
 #look 5
 #nat 60
@@ -121991,7 +122026,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #newsite 2495
-#name "MA Phaecia Summons"
+#name "MA Phaeacia Summons"
 #level 0
 #rarity 5
 #path 3
@@ -122001,6 +122036,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 3127 -- ker
 #homemon 3164 -- keledone
 #homemon 3168 -- twi dog
+#homemon 7751 -- gegeines
 #homemon 3169 -- kurn a
 #homemon 3170 -- kuon k
 #homemon 3171 -- khalk
@@ -122013,7 +122049,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #newsite 2496
-#name "MA Phaecia Unique Summons"
+#name "MA Phaeacia Unique Summons"
 #level 0
 #rarity 5
 #path 3
@@ -122029,7 +122065,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #newsite 2497
-#name "MA Phaecia Heroes"
+#name "MA Phaeacia Heroes"
 #level 0
 #rarity 5
 #path 9
@@ -126826,6 +126862,11 @@ Priests: Strong"
 #addgod 8282 -- Diyin of Earth
 #addgod 8283 -- Solar Bison
 
+#addgod 8260 -- Totem 
+#addgod 8261 -- Great Bear
+#addgod 8262 -- Storm Eagle
+#addgod 8263 -- Mountain Lion
+
 #fortera 1
 #buildfort 27  -- Fortified Villages
 #startcom 6798 -- Kikmongwi
@@ -126980,6 +127021,12 @@ Priests: Strong"
 #addgod 8281 -- Titan of the Dawn
 #addgod 8282 -- Diyin of Earth
 
+#addgod 8284 -- Diyin Dine'é of War
+#addgod 8261 -- Great Bear
+#addgod 8262 -- Storm Eagle
+#addgod 8263 -- Mountain Lion
+#addgod 8260 -- Totem
+
 #blessbonus 1
 #fortera 2
 #halfdeathinc
@@ -127133,6 +127180,11 @@ Priests: Strong"
 #addgod 8281 -- Titan of the Dawn
 #addgod 8282 -- Diyin of Earth
 
+#addgod 8261 --Great bear--
+#addgod 8262 --Storm Eagle--
+#addgod 8263 --Mountain Lion--
+#addgod 8284 -- "Diyin Dine'é of War"
+
 #fortera 2
 #startcom 6861 -- Kikmongwi
 #startunittype1 6855 -- Spear Warrior
@@ -127275,7 +127327,11 @@ Priests: Strong, can Blood Sacrifice"
 #addgod 8281 -- Titan of the Dawn
 #addgod 8282 -- Diyin of Earth
 #addgod 8283 -- Solar Bison
-#addgod 8284 -- Titan of War
+#addgod 8284 -- "Diyin Dine'é of War"
+#addgod 8261 --Great bear--
+#addgod 8262 --Storm Eagle--
+#addgod 8263 --Mountain Lion--
+#addgod 8260 --Totem--
 #cheapgod20 120  -- Moloch
 #cheapgod20 2788  -- Man Eater
 #cheapgod20 8284 -- Titan of War
@@ -128718,6 +128774,10 @@ Priests: Average"
 #cheapgod20 8282 -- "Diyin Dine'é of the Earth"
 #cheapgod20 8285 -- "First Man"
 #cheapgod20 8286 -- "First Woman"
+#addgod 8260 --Totem--
+#addgod 8261 --Great bear--
+#addgod 8262 --Storm Eagle--
+#addgod 8263 --Mountain Lion--
 
 #noundeadgods
 
@@ -129998,7 +130058,7 @@ Priests: Average"
 #startscout 426  -- Scout
 
 #futuresite "EA Marverni Summons"
-#futuresite "EA Marverni Deities"
+--#futuresite "EA Marverni Deities"
 #futuresite "EA Marverni Heroes"
 #end
 
@@ -130289,7 +130349,6 @@ Priests: Powerful, can perform blood sacrifices"
 
 #futuresite "EA Agartha Summons"
 #futuresite "EA Agartha Heroes"
-
 #end
 
 #selectnation 11 -- EA Tir'na'Og
@@ -131777,7 +131836,7 @@ Dominion: Increases unrest"
 #futuresite "Cursed Tyrants"
 #end
 
-#selectnation 77 -- Phaecia
+#selectnation 77 -- Phaeacia
 #summary "Race: Humans and Colossi. Starts on an extra rich island if possible. Ocean sailing, trace income across oceans, income bonus in coastal castles. Prefers Heat scale +1 Military: Human and Colossi infantry. Can recruit special mages in coastal castles. A few Gigantes arrive yearly.
 Magic: Air, Water, Astral, Glamour, some Earth and Fire.
 Priests: Few of medium power
@@ -131795,9 +131854,9 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 #startunittype2 3144  -- Phaeacian Archer
 #startunitnbrs2 30
 
-#futuresite "MA Phaecia Summons"
-#futuresite "MA Phaecia Unique Summons"
-#futuresite "MA Phaecia Heroes"
+#futuresite "MA Phaeacia Summons"
+#futuresite "MA Phaeacia Unique Summons"
+#futuresite "MA Phaeacia Heroes"
 #futuresite "Gigantes of Black Korkyra"
 #futuresite "Orichalcum Mine (Island Start)"
 #end
@@ -133883,7 +133942,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #restricted 5 -- EA Arco
 #restricted 29 -- EA Berytos
 #restricted 50 -- MA Arco
-#restricted 77 -- MA Phaecia
+#restricted 77 -- MA Phaeacia
 #restricted 95 -- LA Arco
 #restricted 205 -- LA Houssa
 #end
@@ -135623,7 +135682,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 3
 #pathlevel 1 1
 #effect 10081
-#damage 208 -- Ench8 -- Empty Graves
+#damage 208 -- Ench08 -- Empty Graves
 #spec 0
 #nreff 1
 #fatiguecost 9000
@@ -137806,7 +137865,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #restricted 50
 #restricted 55
 #restricted 56
-#restricted 77 -- Phaecia
+#restricted 77 -- Phaeacia
 #restricted 95
 #restricted 98
 #restricted 125
@@ -137832,7 +137891,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #restricted 50
 #restricted 55
 #restricted 56
-#restricted 77 -- Phaecia
+#restricted 77 -- Phaeacia
 #restricted 95
 #restricted 98
 #restricted 40
@@ -137920,7 +137979,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #damage 8599
 #restricted 5
 #restricted 50
-#restricted 77 -- Phaecia
+#restricted 77 -- Phaeacia
 #restricted 95
 #restricted 125
 #end
@@ -137969,7 +138028,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #damage 7373
 #restricted 5
 #restricted 50
-#restricted 77 -- Phaecia
+#restricted 77 -- Phaeacia
 #restricted 95
 #spec 0
 #end
@@ -142019,7 +142078,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #nreff 1
 #restricted 27
 #restricted 75
-#restricted 77 -- Phaecia
+#restricted 77 -- Phaeacia
 #restricted 113
 #restricted 98
 #restricted 125
@@ -142033,7 +142092,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #researchlevel 8
 #restricted 27
 #restricted 75
-#restricted 77 -- Phaecia
+#restricted 77 -- Phaeacia
 #restricted 113
 #restricted 98
 #restricted 125
@@ -142055,7 +142114,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #researchlevel 8
 #restricted 27
 #restricted 75
-#restricted 77 -- Phaecia
+#restricted 77 -- Phaeacia
 #restricted 113
 #restricted 98
 #restricted 125
@@ -145743,7 +145802,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 2
 #pathlevel 1 2
 #restricted 29 -- Berytos
-#restricted 77 -- Phaecia
+#restricted 77 -- Phaeacia
 #end
 
 #selectspell 2952
@@ -145758,7 +145817,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #fatiguecost 700
 #restricted 32 -- Rus
 #restricted 29 -- Berytos
-#restricted 77 -- Phaecia
+#restricted 77 -- Phaeacia
 #restricted 205 -- Houssa
 #end
 
@@ -145794,7 +145853,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #restricted 32 -- Rus
 #restricted 29 -- Berytos
 #restricted 42 -- Therodos
-#restricted 77 -- Phaecia
+#restricted 77 -- Phaeacia
 #restricted 203 -- Ryugo-jo
 #restricted 205 -- Houssa
 #nextspell 678 -- Hurricane
@@ -145827,7 +145886,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #spec 8388608 -- UWOK (cannot target UW)
 #nextspell 2955
 #restricted 29 -- Berytos
-#restricted 77 -- Phaecia
+#restricted 77 -- Phaeacia
 #restricted 32 -- Rus
 #restricted 205 -- Houssa
 #end
@@ -146013,6 +146072,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #onlycoastsrc 1
 #restricted 6 -- Mekone
 #restricted 51 -- Phlegra
+#restricted 77 -- Phaeacia
 #end
 
 #selectspell 2967
@@ -159019,7 +159079,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #aoe 1007
 #fatiguecost 40
 #spec 12599296  -- Ignore shields, friendlies only, use UW
-#restricted 77 -- Phaecia
+#restricted 77 -- Phaeacia
 #end
 
 #selectspell 4058
@@ -159032,7 +159092,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #aoe 666
 #fatiguecost 100
 #spec 12599296  -- Ignore shields, friendlies only, use UW
-#restricted 77 -- Phaecia
+#restricted 77 -- Phaeacia
 #end
 
 #selectspell 4042
@@ -159158,7 +159218,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #path 0 3 -- E
 #effect 10082
 #damage 278 -- Ench78 -- Harrespil
-#fatiguecost 1000
+#fatiguecost 1500
 #nreff 1
 #end
 
@@ -159174,7 +159234,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #nreff 1
 #effect 10083
 #damage -1
-#fatiguecost 1000
+#fatiguecost 1500
 #nextspell 4069
 #restricted 14 -- EA Pyrene
 #end
@@ -159191,7 +159251,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #nreff 1
 #effect 10083
 #damage -1
-#fatiguecost 5000
+#fatiguecost 6000
 #nextspell 4069
 #restricted 62 -- MA Pyrene
 #end
@@ -159205,7 +159265,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #researchlevel 4
 #path 0 3
 #pathlevel 0 1
-#fatiguecost 100
+#fatiguecost 0
 #effect 10095 -- cloud trapeze
 #provrange 10
 #onlyowndst 1
@@ -159223,7 +159283,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #researchlevel 6
 #path 0 8
 #pathlevel 0 1
-#fatiguecost 300
+#fatiguecost 100
 #effect 10095 -- cloud trapeze
 #provrange 10
 #onlyowndst 1
@@ -160506,6 +160566,7 @@ Applies the effects of Holy Avenger to the caster"
 #damage 8870 -- Drowned Mage
 #fatiguecost 1500
 #restricted 10 -- Fomoria
+#spec 41943040  -- UWOnly
 #onlyatsite 2387
 #end
 
@@ -162997,6 +163058,7 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #aoe 666
 #researchlevel -1
 #school -1
+#effect 23
 #damage 4096
 #path 0 4
 #pathlevel 0 1
@@ -163118,10 +163180,10 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #path 0 0
 #pathlevel 0 3
 #researchlevel 8
-#nreff 3006 -- 15+3
+#nreff 15
 --#nreff 2002 -- 8+2
-#damage 1021 -- 24+
-#precision 8
+#damage 2018 -- 24++
+#precision 25
 #nogeosrc -1
 #spec 16480 -- Fire, AP, Ignore shields
 --#spec 576460752303439968 -- Fire, AP, Ignore shields, Next Spell
@@ -163303,7 +163365,7 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 
 #selectspell 4357
 #name "Call Undrjarl"
-#descr "In the lands of Nidavangr, the dead are treated with little reverence. Spirits of dead ancestors are often returned from the underworld by the seithberenders of the Crow Clan. This spell will call a great Undrjarl and a few of his retainers to lead the undead hosts of Nidavangr. The Undrjarl's connection to those who served him in life is strong, and may be used to return some of their number to his side each month to raid and conquer once again. The Undrjarl's time in the underworld will have given him insight into the magic of Death. Once bound to the mortal world their ancestral ties will allow them to return if slain, however this is much slower than other forms of immortality."
+#descr "In the lands of Nidavangr, the dead are treated with little reverence. Spirits of dead ancestors are often returned from the underworld by the seithberenders of the Crow Clan. This spell will call a great Undrjarl and a few of his retainers to lead the undead hosts of Nidavangr. The Undrjarl's connection to those who served him in life is strong, and will rise from the dead each month to raid and conquer once again. The Undrjarl's time in the underworld will have given him insight into the magic of Death."
 #school 0
 #researchlevel 6
 #path 0 5
@@ -163389,6 +163451,48 @@ This spell may only target friendly provinces."
 #onlyatsite 226  -- Nidakettil
 #restricted 81 -- Nid
 #end
+
+#selectspell 4363 -- Crumble nextspell
+#copyspell 902 -- Crumble
+#name "Wall Destruction"
+#descr "."
+#school -1
+#damage -500
+#end
+
+#selectspell 4364
+#name "Gain Forge Mastery"
+#school -1
+#researchlevel 0
+#effect 10500  -- +1
+#nreff 1
+--#damage 453  -- Fix Forge Bonus
+#damage 363  -- Master Smith
+#spec 131072  -- Mindless Immune
+#end
+
+#selectspell 4365
+#name "Secrets of the Master Smiths"
+#descr "Master Smiths often instruct others in the creation of magical items. With this spell the Master Smith spends a month in the Forges of Ulm to impart their knowledge upon another and increase their skill in forging, allowing the creation of more powerful items. Mindless beings will gain no benefit from the training."
+#details "Grants the target +1 Master Smith, stacks with existing bonuses"
+#school 1
+#researchlevel 5
+#path 0 3
+#pathlevel 0 3
+#path 1 1
+#pathlevel 1 1
+#effect 10131
+#nreff 1
+#damage 0
+#fatiguecost 1500
+#onlymnr 325  -- Master Smith
+#restricted 60 -- MA Ulm
+#onlyatsite 8  -- Forges of Ulm
+#nextspell 4364
+#spec 131072  -- Mindless Immune
+#end
+
+
 
 -- END OF NEW SPELLS
 
@@ -164264,7 +164368,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #details "When the Angel is at a Blacksteel Forge, it will be permanently empowered into an Angel Forge, allowing recruitment of Black Iron Infantry."
 #researchlevel 6
 #fatiguecost 1500
-#pathlevel 0 4
+#pathlevel 0 3
 #end
 
 #selectspell 457 -- Gift of the Moon
@@ -165047,6 +165151,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spec 564324342972480 -- Piercing, Slashing, AP, Ignore shields, More likely to hit head
 #flightspr 10068
 #explspr 10088
+#precision 18
 #nextspell 0
 #end
 
@@ -165260,11 +165365,13 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 902 -- Crumble
-#details "Wall Damage: 750 +75 points for each additional Earth skill level.
-50% of the defenders must roll for defence or get 3 AP blunt damage."
-#damage -75450 -- -750-75
+#details "Wall Damage: 800 +75 points for each additional Earth skill level.
+50% of the defenders must roll for defence or get 3 AP blunt damage, twice."
+--#damage -75450 -- -750-75
+#damage -75000 -- -300-75
 #pathlevel 0 4
 --#fatiguecost 1500
+#nextspell 4363 -- Crumble nextspell
 #end
 
 #selectspell 907 -- Army of Giants
@@ -189310,9 +189417,9 @@ This event did not directly reduce income, and is only reporting on the income a
 --#req_land 1
 #req_ench 221 -- Ench21 -- Samhain
 #incscale3 0
-#req_rare 2
+#req_rare 1
 #msg "A band of fay have terrorized the population. They disappeared as quickly as they appeared."
-#unrest 10
+#unrest 20
 #end
 
 #newevent
@@ -189320,9 +189427,9 @@ This event did not directly reduce income, and is only reporting on the income a
 --#req_land 1
 #req_ench 221 -- Ench21 -- Samhain
 #incscale3 4
-#req_rare 2
+#req_rare 1
 #msg "Sinister voices have been heard in the wilds."
-#unrest 5
+#unrest 10
 #end
 
 #newevent
@@ -189330,7 +189437,7 @@ This event did not directly reduce income, and is only reporting on the income a
 --#req_land 1
 #req_ench 221 -- Ench21 -- Samhain
 #decscale3 5
-#req_rare 2
+#req_rare 1
 #msg "The magic of Samhain can be felt throughout the province."
 #end
 
@@ -189339,7 +189446,7 @@ This event did not directly reduce income, and is only reporting on the income a
 --#req_land 1
 #req_ench 221 -- Ench21 -- Samhain
 #decscale3 4
-#req_rare 2
+#req_rare 1
 #msg "A faerie procession was seen at the edge of civilization."
 #end
 
@@ -189351,7 +189458,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #incscale3 3
 #req_rare 1
 #msg "A dark fog hangs heavy on the province as the people become distrustful of one another. Some have vanished into the night."
-#unrest 5
+#unrest 10
 #kill 1
 #end
 
@@ -189361,7 +189468,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #req_ench 221 -- Ench21 -- Samhain
 #incscale3 0
 #decscale3 4
-#req_rare 2
+#req_rare 1
 #msg "Fay beings have been seen throughout the province. Their intentions seem friendly."
 #end
 
@@ -189371,9 +189478,9 @@ This event did not directly reduce income, and is only reporting on the income a
 #req_ench 221 -- Ench21 -- Samhain
 #incscale3 0
 #incscale3 4
-#req_rare 2
+#req_rare 1
 #msg "Fay beings have been causing mischief throughout the province."
-#unrest 10
+#unrest 20
 #end
 
 #newevent
@@ -189382,9 +189489,9 @@ This event did not directly reduce income, and is only reporting on the income a
 #req_ench 221 -- Ench21 -- Samhain
 #incscale3 0
 #decscale3 5
-#req_rare 2
+#req_rare 1
 #msg "Magic of the fay has been prevalent throughout the province. People are having a hard time telling truth from unreality."
-#unrest 5
+#unrest 10
 #end
 
 #newevent
@@ -189395,7 +189502,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #incscale3 4
 #req_rare 1
 #msg "Grain and crops have vanished from storehouses."
-#unrest 5
+#unrest 10
 #end
 
 #newevent
@@ -189406,7 +189513,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #decscale3 5
 #req_rare 1
 #msg "Ghostly processions have traversed through the province."
-#unrest 5
+#unrest 10
 #end
 
 #newevent
@@ -189416,7 +189523,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #incscale3 3
 #incscale3 2
 #req_rare 1
-#msg "The chill of death has been felt through the province and crops are beginning to fail."
+#msg "A chill of death has been felt through the province and crops are beginning to fail."
 #end
 
 #newevent
@@ -189425,7 +189532,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #req_ench 221 -- Ench21 -- Samhain
 #decscale3 4
 #decscale3 5
-#req_rare 2
+#req_rare 1
 #msg "Celebrations of Samhain were held here as the fay world drifts closer."
 #end
 
@@ -189435,9 +189542,9 @@ This event did not directly reduce income, and is only reporting on the income a
 #req_ench 221 -- Ench21 -- Samhain
 #incscale3 4
 #decscale3 5
-#req_rare 2
+#req_rare 1
 #msg "Fay creatures have been seen skulking the wilderness."
-#unrest 5
+#unrest 10
 #end
 
 #newevent
@@ -189448,7 +189555,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #incscale3 2
 #req_rare 1
 #msg "There was a fel winter in the province for a day and a night."
-#unrest 10
+#unrest 20
 #end
 
 #newevent
@@ -193545,16 +193652,30 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 
+#newevent -- Revert Golem --
+#rarity 5
+--#revealprov
+--#req_ench 284 -- Ench84 -- Shatter Fort
+#req_monster 7937 --siege golem-- 
+#req_targmnr 7937 --siege golem--
+#msg "The Siege Golem has been returned to its mobile form."
+#req_pop0ok
+#req_indepok
+#nolog
+#forcetransform 760 -- Siege Golem w/o Fort Destruction
+#end
+
 #newevent -- Fort Destroy --
 #rarity 13
 #revealprov
 #req_ench 284 -- Ench84 -- Shatter Fort
 #req_monster 760 --siege golem-- 
+#req_targmnr 760 --siege golem--
 #req_fort 1
 #msg "A great explosion from ##landname## echoes across the world! A Siege Golem has shattered the entire fortification there into dust!"
 #req_pop0ok
 #req_indepok
-#fort 0 --destroy fort--
+#forcetransform 7937 -- Siege Golem w/ Fort Destruction
 #end
 
 --Gives the Siege Golem his heart if he somehow loses it, or is wished for--
