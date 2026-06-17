@@ -4994,6 +4994,12 @@
 #end
 
 #selectweapon 794 -- Imagined Wound
+#clear
+#name "Imagined Wound"
+#dmg 1
+#magic
+#armornegating
+#false
 #hardmrneg
 #end
 
@@ -77251,6 +77257,7 @@ When the Void Essence is in an enemy territory, it will bring insanity to both e
 #nametype 149  -- Hinnom
 #wastesurvival
 #spreaddom 1
+#domsummon20 7287 -- Ghostly Rephaite
 #itemslots 991750
 #clearmagic
 #magicskill 5 3
