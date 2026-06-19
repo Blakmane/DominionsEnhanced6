@@ -4268,10 +4268,10 @@
 #name "Ghostly Blade"
 --#dt_weapondrain
 #len 2
-#dmg 3
+#dmg 2
 #slash
 #def 1
-#att 1
+#att 0
 #end
 
 #newweapon 1925 -- Peck Eyes
@@ -194363,6 +194363,558 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 
+-- Academy of Dark Magics events
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A Wizard has been traveling the province in search of a hidden Academy of Magics. [Academy of Dark Magics]"
+#req_hiddensite 1
+#nation -2
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A mighty wizard from the local academy has come to serve. [Academy of Dark Magics]"
+#req_site 1
+#nation -2
+#com 3499 -- Wizard
+#1d6units 528 -- Corpse Candle
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Magical beings have escaped from the Academy! [Academy of Dark Magics]"
+#req_foundsite 1
+#com 566 -- Ghost
+#1d6units 566 -- Ghost
+#end
+
+#newevent
+#rarity 2 -- Uncommon bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of Dark Magics]"
+#req_site 1
+#com 393 -- Lammashta
+#1d6units 393 -- Lammashta
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of Dark Magics]"
+#req_site 1
+#com 452 -- Behemoth
+#1d6units 442 -- Shade Beast
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of Dark Magics]"
+#req_site 1
+#com 189 -- Mound King
+#2d6units 189 -- Longdead horseman
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A wizard has appeared. He claims to be returning to his fellows at the Academy of High Magics. Unfortunately he seems to have suffered from some kind of mind-addling magic and he cannot remember where it is located. Probably in this or adjoining provinces. In the meantime, he has agreed to serve. [Academy of Dark Magics]"
+#req_nearbysite 1
+#nation -2
+#com 3499 -- Wizard
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#req_unluck 1
+#msg "A wizard has appeared. He claims to be returning to his fellows at the Academy of High Magics. Unfortunately he seems to have suffered from some kind of mind-addling magic and he cannot remember where it is located. Probably in this or adjoining provinces. In the meantime, he has agreed to serve."
+#nation -2
+#com 3499 -- Wizard
+#end
+
+
+
+
+-- Academy of Deep Waters events
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A Wizard has been traveling the province in search of a hidden Academy of Magics. [Academy of Deep Waters]"
+#req_hiddensite 1
+#nation -2
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A mighty wizard from the local academy has come to serve. [Academy of Deep Waters]"
+#req_site 1
+#nation -2
+#com 3495 -- Wizard
+#1d6units 1138 -- Claymen
+#end
+
+#newevent
+#rarity 2 -- Uncommon bad
+#req_pop0ok
+#msg "Magical beings have escaped from the Academy! [Academy of Deep Waters]"
+#req_foundsite 1
+#com 466 -- Cockatrice
+#com 466 -- Cockatrice
+#1d6units 2159 -- Gelatinous Cube
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of Deep Waters]"
+#req_site 1
+#com 1983 -- Green Lion
+#1d6units 1983 -- Green Lion
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of Deep Waters]"
+#req_site 1
+#com 1002 -- Winter Wolf
+#1d6units 1002 -- Winter Wolf
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of Deep Waters]"
+#req_site 1
+#com 7365 -- Giant Crab
+#1d6units 7365 -- Giant Crab
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A wizard has appeared. He claims to be returning to his fellows at the Academy of High Magics. Unfortunately he seems to have suffered from some kind of mind-addling magic and he cannot remember where it is located. Probably in this or adjoining provinces. In the meantime, he has agreed to serve. [Academy of Deep Waters]"
+#req_nearbysite 1
+#nation -2
+#com 3495 -- Wizard
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#req_unluck 1
+#msg "A wizard has appeared. He claims to be returning to his fellows at the Academy of High Magics. Unfortunately he seems to have suffered from some kind of mind-addling magic and he cannot remember where it is located. Probably in this or adjoining provinces. In the meantime, he has agreed to serve."
+#nation -2
+#com 3495 -- Wizard
+#end
+
+
+
+
+
+-- Academy of Storms and Thunder events
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A Wizard has been traveling the province in search of a hidden Academy of Magics. [Academy of Storms and Thunder]"
+#req_hiddensite 1
+#nation -2
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A mighty wizard from the local academy has come to serve. [Academy of Storms and Thunder]"
+#req_site 1
+#nation -2
+#com 3496 -- Wizard
+#1d6units 513 -- Spring Hawk
+#end
+
+#newevent
+#rarity 2 -- Uncommon bad
+#req_pop0ok
+#msg "Magical beings have escaped from the Academy! [Academy of Storms and Thunder]"
+#req_foundsite 1
+#com 520 -- Wyvern
+#com 520 -- Wyvern
+#1d6units 520 -- Wyvern
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of Storms and Thunder]"
+#req_site 1
+#com 7610 -- Mist Warrior
+#1d6units 7610 -- Mist Warrior
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of Storms and Thunder]"
+#req_site 1
+#com 3991 -- Storm Drake
+#1d6units 513 -- Spring Hawk
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of Storms and Thunder]"
+#req_site 1
+#com 3232 -- Iron Fly
+#1d6units 3232 -- Iron Fly
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A wizard has appeared. He claims to be returning to his fellows at the Academy of High Magics. Unfortunately he seems to have suffered from some kind of mind-addling magic and he cannot remember where it is located. Probably in this or adjoining provinces. In the meantime, he has agreed to serve. [Academy of Storms and Thunder]"
+#req_nearbysite 1
+#nation -2
+#com 3496 -- Wizard
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#req_unluck 1
+#msg "A wizard has appeared. He claims to be returning to his fellows at the Academy of High Magics. Unfortunately he seems to have suffered from some kind of mind-addling magic and he cannot remember where it is located. Probably in this or adjoining provinces. In the meantime, he has agreed to serve."
+#nation -2
+#com 3496 -- Wizard
+#end
+
+
+
+
+
+
+-- Academy of Unseen Colors events
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A Wizard has been traveling the province in search of a hidden Academy of Magics. [Academy of Unseen Colors]"
+#req_hiddensite 1
+#nation -2
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A mighty wizard from the local academy has come to serve. [Academy of Unseen Colors]"
+#req_site 1
+#nation -2
+#com 3498 -- Wizard
+#1d3units 7813 -- Displacer
+#end
+
+#newevent
+#rarity 2 -- Uncommon bad
+#req_pop0ok
+#msg "Magical beings have escaped from the Academy! [Academy of Unseen Colors]"
+#req_foundsite 1
+#tempunits 1
+#com 3627 -- Phantasmal Knight
+#com 3627 -- Phantasmal Knight
+#2d6units 3627 -- Phantasmal Knight
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of Unseen Colors]"
+#req_site 1
+#com 3890 -- Cave Kobold
+#1d6units 8634 -- Animated Armor
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of Unseen Colors]"
+#req_site 1
+#com 9097 -- Bugbear
+#1d6units 9097 -- Bugbear
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of Unseen Colors]"
+#req_site 1
+#com 8633 -- Faerie Dragon
+#1d6units 9100 -- Firestarters
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A wizard has appeared. He claims to be returning to his fellows at the Academy of High Magics. Unfortunately he seems to have suffered from some kind of mind-addling magic and he cannot remember where it is located. Probably in this or adjoining provinces. In the meantime, he has agreed to serve. [Academy of Unseen Colors]"
+#req_nearbysite 1
+#nation -2
+#com 3498 -- Wizard
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#req_unluck 1
+#msg "A wizard has appeared. He claims to be returning to his fellows at the Academy of High Magics. Unfortunately he seems to have suffered from some kind of mind-addling magic and he cannot remember where it is located. Probably in this or adjoining provinces. In the meantime, he has agreed to serve."
+#nation -2
+#com 3498 -- Wizard
+#end
+
+
+
+
+
+-- Academy of the Deeper Earth events
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A Wizard has been traveling the province in search of a hidden Academy of Magics. [Academy of the Deeper Earth]"
+#req_hiddensite 1
+#nation -2
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A mighty wizard from the local academy has come to serve. [Academy of the Deeper Earth]"
+#req_site 1
+#nation -2
+#com 3494 -- Wizard
+#1d6units 982 -- Clockwork Horror
+#end
+
+#newevent
+#rarity 2 -- Uncommon bad
+#req_pop0ok
+#msg "Magical beings have escaped from the Academy! [Academy of the Deeper Earth]"
+#req_foundsite 1
+#com 561 -- Earth Gnome
+#1d6units 3741 -- S6 Earth Ele
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of the Deeper Earth]"
+#req_site 1
+#com 2230 -- Hill Giant
+#2d6units 924 -- Iron Pigs
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of the Deeper Earth]"
+#req_site 1
+#com 522 -- Cave Drake
+#1d6units 522 -- Cave Drake
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of the Deeper Earth]"
+#req_site 1
+#com 595 -- Mechanical Man
+#1d6units 595 -- Mechanical Man
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A wizard has appeared. He claims to be returning to his fellows at the Academy of High Magics. Unfortunately he seems to have suffered from some kind of mind-addling magic and he cannot remember where it is located. Probably in this or adjoining provinces. In the meantime, he has agreed to serve. [Academy of the Deeper Earth]"
+#req_nearbysite 1
+#nation -2
+#com 3494 -- Wizard
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#req_unluck 1
+#msg "A wizard has appeared. He claims to be returning to his fellows at the Academy of High Magics. Unfortunately he seems to have suffered from some kind of mind-addling magic and he cannot remember where it is located. Probably in this or adjoining provinces. In the meantime, he has agreed to serve."
+#nation -2
+#com 3494 -- Wizard
+#end
+
+
+
+
+
+
+-- Academy of the Hidden Flame events
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A Wizard has been traveling the province in search of a hidden Academy of Magics. [Academy of the Hidden Flame]"
+#req_hiddensite 1
+#nation -2
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A mighty wizard from the local academy has come to serve. [Academy of the Hidden Flame]"
+#req_site 1
+#nation -2
+#com 3493 -- Wizard
+#1d6units 527 -- Will o the Wisp
+#end
+
+#newevent
+#rarity 2 -- Uncommon bad
+#req_pop0ok
+#msg "Magical beings have escaped from the Academy! [Academy of the Hidden Flame]"
+#req_foundsite 1
+#com 2626 -- Flame Spirit
+#com 2626 -- Flame Spirit
+#1d6units 527 -- Will o the Wisp
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of the Hidden Flame]"
+#req_site 1
+#com 7599 -- Seitaad
+#1d6units 814 -- Fire Snake
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of the Hidden Flame]"
+#req_site 1
+#com 515 -- Summer lion
+#1d6units 515 -- Summer lion
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of the Hidden Flame]"
+#req_site 1
+#com 2134 -- Terracotta
+#2d6units 2134 -- Terracotta
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A wizard has appeared. He claims to be returning to his fellows at the Academy of High Magics. Unfortunately he seems to have suffered from some kind of mind-addling magic and he cannot remember where it is located. Probably in this or adjoining provinces. In the meantime, he has agreed to serve. [Academy of the Hidden Flame]"
+#req_nearbysite 1
+#nation -2
+#com 3493 -- Wizard
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#req_unluck 1
+#msg "A wizard has appeared. He claims to be returning to his fellows at the Academy of High Magics. Unfortunately he seems to have suffered from some kind of mind-addling magic and he cannot remember where it is located. Probably in this or adjoining provinces. In the meantime, he has agreed to serve."
+#nation -2
+#com 3493 -- Wizard
+#end
+
+
+
+
+
+
+-- Academy of the Spheres events
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A Wizard has been traveling the province in search of a hidden Academy of Magics. [Academy of the Spheres]"
+#req_hiddensite 1
+#nation -2
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A mighty wizard from the local academy has come to serve. [Academy of the Spheres]"
+#req_site 1
+#nation -2
+#com 3497 -- Wizard
+#1d6units 527 -- Will o the Wisp
+#end
+
+#newevent
+#rarity 2 -- Uncommon bad
+#req_pop0ok
+#msg "Magical beings have escaped from the Academy! [Academy of the Spheres]"
+#req_foundsite 1
+#com 466 -- Cockatrice
+#com 466 -- Cockatrice
+#1d6units 2159 -- Gelatinous Cube
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of the Spheres]"
+#req_site 1
+#com 466 -- Cockatrice
+#1d6units 466 -- Cockatrice
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of the Spheres]"
+#req_site 1
+#com 514 -- Kith Lion
+#1d6units 514 -- Kith Lion
+#end
+
+#newevent
+#rarity 1 -- Common bad
+#req_pop0ok
+#msg "Some magical beings have escaped from the Academy! [Academy of the Spheres]"
+#req_site 1
+#com 595 -- Mechanical Man
+#1d6units 595 -- Mechanical Man
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#msg "A wizard has appeared. He claims to be returning to his fellows at the Academy of High Magics. Unfortunately he seems to have suffered from some kind of mind-addling magic and he cannot remember where it is located. Probably in this or adjoining provinces. In the meantime, he has agreed to serve. [Academy of the Spheres]"
+#req_nearbysite 1
+#nation -2
+#com 3497 -- Wizard
+#end
+
+#newevent
+#rarity -2 -- Uncommon good
+#req_pop0ok
+#req_unluck 1
+#msg "A wizard has appeared. He claims to be returning to his fellows at the Academy of High Magics. Unfortunately he seems to have suffered from some kind of mind-addling magic and he cannot remember where it is located. Probably in this or adjoining provinces. In the meantime, he has agreed to serve."
+#nation -2
+#com 3497 -- Wizard
+#end
+
+
+
+
+
+
+
+
+
+
 -- END OF NEW EVENTS
 
 
@@ -194378,6 +194930,38 @@ It is now fully repaired and a new crew has been assigned to it."
 #selectevent 1438
 #end
 
+ -- Academy of High Magic events
+#selectevent 590
+#clear
+#end
+
+#selectevent 591
+#clear
+#end
+
+#selectevent 592
+#clear
+#end
+
+#selectevent 593
+#clear
+#end
+
+#selectevent 594
+#clear
+#end
+
+#selectevent 595
+#clear
+#end
+
+#selectevent 942
+#clear
+#end
+
+#selectevent 943
+#clear
+#end
 
 
 
