@@ -15,40 +15,52 @@ Pretenders & Building:
 - Pretenders heal in the capital, or a 10% chance per Holy level actively preaching outside of the capital.
 - Lots more pretenders. More in the Underwater and Polynesian regions compared to DE5.
 - Bless changes -
-  - Wasteland Survival cost from 5 -> 1
+  - Bless changes:
+  - Wasteland Survival cost from 2 -> 1
   - Death Explosion cost from 5 -> 6, no longer Incarnate
   - Fire Shield cost from 6 -> 5
-  - Flaming Weapons cost from 7 -> 6
+  - Flaming Weapons cost from 7 -> 4, no longer Incarnate
+  - Farshot cost from 2 -> 1
   - Awareness cost from 3 -> 2
   - Swiftness cost from 4 -> 3
   - Storm Flight cost from 4 -> 3
+  - Wind Walker cost from 5 -> 6, no longer Incarnate
   - Weightlessness cost from 6 -> 4, no longer Incarnate
   - Air Shield cost from 6 -> 5
   - Charged Bodies cost from 8 -> 7
-  - Flight cost from 9 -> 8
+  - Flight cost from 9 -> 6
   - Swamp Survival cost from 2 -> 1
   - Swimming cost from 2 -> 1
   - Slowing Weapons cost from 5 -> 6, no longer Incarnate
-  - Vitriol Weapons cost from 8 -> 7
-  - Water Breathing cost from 6 -> 3, no longer Incarnate
+  - Vitriol Weapons cost from 8 -> 6, no longer Incarnate
+  - Water Breathing cost from 6 -> 2, no longer Incarnate
   - Frost Mist Weapons cost from 7 -> 5, no longer Incarnate
   - Unbreakable cost from 4 -> 3
   - Resilience of the Earth cost from 6 -> 5
   - Solar Weapons cost from 4 -> 3
   - Twist Fate cost from 6 -> 5
   - Fateweaving cost from 7 -> 6
+  - Withering Weapons cost from 4 -> 3
   - Reanimators cost from 7 -> 6, no longer Incarnate
-  - Death Weapons cost from 8 -> 6
+  - Death Weapons cost from 8 -> 5
   - Fear cost from 9 -> 8
   - Forest Survival cost from 2 -> 1
   - Poison Weapons cost from 4 -> 3
+  - Recuperation cost from 5 -> 4, no longer Incarnate
   - Berserker cost from 5 -> 5, no longer Incarnate
-  - Barkskin cost from 6 -> 5
+  - Barkskin cost from 6 -> 6, no longer Incarnate
   - Obfuscate cost from 6 -> 5
   - Awe cost from 8 -> 7
   - Displacement cost from 7 -> 6
   - Dread cost from 8 -> 7
-  - Vampiric Weapons cost from 12 -> 10
+  - Vampiric Weapons cost from 12 -> 9
+
+  - Death Explosion - F/D
+  - Berserker - N/B
+  - Reanimators - D/E
+  - Frost Mist Weapons - W/A
+  - Slowing Weapons - W/G
+  - Barkskin - N/N, + Growth requirement
 
 Miscellaneous:
 - All nations got Future Sites in their national overview displaying summons and heroes.
@@ -112,25 +124,25 @@ Nations:
   - Berytos - Mages gained more magic.
   - Vanheim - Vanadrott A2 -> A3, Vanherse and Vanjarl reduced in price by 10%
   - Helheim - Updated
-  - Rus - Bears reduced in quantity by 20%.
+  - Rus - Updated
   - Niefelheim - Niefel Giants and Rimvaettir gained magic axes
   - Muspelheim - DEified.
   - Pelagia - Pearl Citadels available earlier. Cheaper merfolk troops.
   - Oceania - Capricorn can transform into Capricornus and gain air breathing. Better UW animal summons and new spells with huge AoEs to buff animals. New sea monster summon.
   - Therodos - Growth Thero only requires Growth 1. Spectres have armor but reduced MR. Daktyl gained D1. Gained undead only AP weapons combat spell.
-  - Atlantis - Unfinished; Pending content.
+  - Atlantis - New Adept of the Deep land-rec mage. New summons.
   - R'lyeh - Aboleths are amphibious, but take damage on land and become petrified and immobile if their health gets too low. Laboratories will rehydrate petrified Aboleths. Slaves cheaper.
-  - Zion - Mild overhaul. Summon research levels lowered and efficiency buffed. Gained two new mages - a 1F 100% FAS mage and a 1N mage. Cap sacred probably needs changed still. Cap site produces resources.
+  - Zion - Mild overhaul. Summon research levels lowered and efficiency buffed. Gained two new mages - a 1F 100% FAS mage and a 1N mage. New reclimit 1 angel sacred on cap. Cap site produces resources.
   - Chaco - Mild overhaul. Increased invuln and attack on Katsinas. Gained a national Priest spell for AoE2 barkskin.
   - Albion - Indefinitely removed. May or may not return later.
   - Bhod - Gained a small amount of Glamour.
-  - Fennoscandia - Updated
-  - Alchera - Astral swapped for Glamour.
+  - Fennoscandia - Gained a plethora of new summons.
+  - Alchera - Now a S/G nation.
   - Nihuala - Mild overhaul. New Mage-priest. First Son Champion gained H1. Troops gained the Animal tag. New combat spells.
   - Nahullo -> Sitecah - Renamed to Sitecah. Gained some summons from Nihuala.
   - Bantay Tubig - New nation. Underwater Philippine nation, featuring many monstrous summons, flying sharks, and a touch of blood magic.
 - MA:
-  - Arcoscephale - Updated
+  - Arcoscephale - Mild overhaul. Troop roster rebuilt, sacred recruits in pairs.
   - Phlegra - Shackled mages made 1CP.
   - Pangaea - Updated
   - Asphodel - Income reworked; 1% domkill -> 25% income reduction, 5% dominion taxloss, 0.2% domkill. Much of the Sloth theme of DE5 Asphodel cut; Still present on Centaurs and high level summons.
@@ -161,7 +173,7 @@ Nations:
   - Vanheim - Vanadrott A2 -> A3, Vanherse and Vanjarl reduced in price by 10%
   - Vanarus - Vanabog made 2CP.
   - Jotunheim - Updated
-  - Nidavangr - Nidbathed nerfed. Unfinished; Needs DEified.
+  - Nidavangr - Nidbathed now start cursed. DEified.
   - Ys - Updated
   - Pelagia - Conquerors and Pelagian Mystics can bring aquatics on land via a spell. Daduchos improved.
   - Oceania - Overhauled from the ground up as a true successor to EA.
@@ -175,7 +187,7 @@ Nations:
   - Nihuala - Mild overhaul. White Shell Rider anyfort sacred removed; Recruitable cavalry has a chance to promote into a White Shell Rider at each XP Pip. New combat spells.
   - Dirgen - New nation. Necromantic offshoot of EA Atlantis featuring Deep Ones.
 - LA:
-  - Arcoscephale - Updated
+  - Arcoscephale - Mild overhaul. Troop roster rebuilt, sacred recruits in pairs.
   - Phlegra - Shackled mages made 1CP
   - Pangaea - Updated
   - Pythium - Overhaul pending.
@@ -185,7 +197,7 @@ Nations:
   - Agartha - Updated
   - Marignon - Amalgams much cheaper.
   - Abysia - Rivers of Lava reworked entirely. Gained nonsacred Daeva summons. Pending content.
-  - Ragha - Overhaul pending.
+  - Ragha - Temperature mechanics overhauled allowing limited recruitment from their pretender's opposing temperature.
   - Caelum - Iron Hail Archers got buffed
   - Gath - Updated
   - Patala - Updated
@@ -198,13 +210,13 @@ Nations:
   - Bogarus - Updated
   - Utgard - Updated
   - Vaettiheim - Updated
-  - Feminie - Unfinished; Needs DEified.
-  - Piconye - Unfinished; Needs DEified.
+  - Feminie - DEified.
+  - Piconye - DEified.
   - Andramania - Unfinished; Needs DEified.
   - Pyrene - Unfinished; Needs DEified.
   - Erytheia - Updated
   - Atlantis - Updated
-  - R'lyeh - Overhaul pending.
+  - R'lyeh - Overhaul; Can no longer recruit Meteorite Guards, but gained new recruitables and mechanics.
   - Iram - Overhauled.
   - Ongtupqa - Gained Glamour on Povosqa. Gained Air Shield on dancers.
   - Great Arrada - Blood summons much earlier and more efficient. Gained undead only AP weapons combat spell.
