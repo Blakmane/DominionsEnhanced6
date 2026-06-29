@@ -4285,7 +4285,17 @@
 #ammo 1
 #end
 
+#newweapon 1926 -- Infernal Trident
+#copyweapon 642 -- Magic Trident
+#name "Infernal Trident"
+#secondaryeffect 216 -- Weak Fire
+#end
 
+#newweapon 1927 -- Infernal Halberd
+#copyweapon 5 -- Halberd
+#name "Infernal Halberd"
+#magic
+#end
 
 -- END OF NEW WEAPONS
 
@@ -38354,6 +38364,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #unsurr 2
 #uwdamage 10
 #woundfend 99
+#spiritform
 #weapon 90  -- Crush
 #weapon 90  -- Crush
 #weapon 90  -- Crush
@@ -45730,7 +45741,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #magicbeing
 #voidsanity 10
 #darkvision 100
-#tainted 15
+#tainted 5
 #eyes 1
 #clearweapons
 #weapon 271  -- Life Drain Tentacle
@@ -61816,6 +61827,35 @@ Companions are recruited in pairs and two must be recruited at once."
 #size 4
 #end
 
+#newmonster 9357 -- Iron Devil
+#name "Iron Devil"
+#spr1 "magicenhanced/selg_irondevil.tga"
+#spr2 "magicenhanced/selg_irondevil2.tga"
+#descr "Iron Devils are the demonic footsoldiers of the ashen wastes of Hell, clad in full armour and wielding hell-forged halberds. Iron Devils do not command the same aura of terror as their Demon Knight superiors, but are nonetheless highly skilled combatants."
+#gcost 0
+#hp 20
+#size 3
+#prot 8
+#mr 15
+#mor 30
+#okleader
+#str 15
+#att 13
+#def 13
+#prec 10
+#ap 14
+#mapmove 14
+#enc 1
+#startage 370
+#maxage 1000
+#humanoid
+#demon
+#neednoteat
+#fireres 15
+#weapon 1927 -- Infernal Halberd
+#armor 14 -- Plate Hauberk
+#armor 21 -- Full Helmet
+#end
 
 -- END OF NEW MONSTERS (Skip 9600~9672)
 
@@ -70312,6 +70352,11 @@ Cannot be recruited until Break the Deadlock is cast."
 
 #selectmonster 2390 -- Pelagian Captain poison barbs weapon
 #weapon 1808
+#end
+
+#selectmonster 208 -- War Shambler poison barbs
+#weapon 1808
+#descr "War shamblers are shamblers equipped with turtle-shell shields, coral glaives and coral armor. They are trained in combat and are fierce warriors"
 #end
 
 
@@ -90846,15 +90891,23 @@ Initiates of the Deep can be recruited in any land fort."
 --#custommagic 32896 100 -- 100% FB
 #montag 1054
 #montagweight 2
+#prot 10
+#clearweapons
+#weapon 1926 -- Infernal Trident
+#weapon 68 -- Barbed Tail
 #end
-
 
 #selectmonster 305 -- Arch Devil
 #polyimmune
+#magicskill 8 2
+#domsummon20 304 -- Devils
+#batstartsum1d6 304 -- Devils
 #end
 
 #selectmonster 306 -- Ice Devil
 #polyimmune
+#magicskill 2 4
+#magicskill 8 1
 #end
 
 #selectmonster 492 -- Heliophagus
@@ -90887,17 +90940,24 @@ Initiates of the Deep can be recruited in any land fort."
 
 #selectmonster 821 -- Ice Devil
 #polyimmune
+#magicskill 8 2
+#inspirational 1
 #end
 
 #selectmonster 822 -- Ice Devil
+#magicskill 8 3
 #polyimmune
 #end
 
 #selectmonster 823 -- Ice Devil
+#magicskill 8 2
 #polyimmune
 #end
 
 #selectmonster 824 -- Ice Devil
+#magicskill 8 2
+#domsummon20 449 -- Frost Fiends
+#batstartsum1d3 449 -- Frost Fiends
 #polyimmune
 #end
 
@@ -90906,18 +90966,24 @@ Initiates of the Deep can be recruited in any land fort."
 #end
 
 #selectmonster 826 -- Arch Devil
+#magicskill 8 2
+#inspirational 1
 #polyimmune
 #end
 
 #selectmonster 827 -- Arch Devil
+#magicskill 8 2
 #polyimmune
 #end
 
 #selectmonster 828 -- Arch Devil
+#magicskill 8 1
 #polyimmune
 #end
 
 #selectmonster 829 -- Arch Devil
+#magicskill 0 3
+#magicskill 8 3
 #polyimmune
 #end
 
@@ -91242,6 +91308,10 @@ Initiates of the Deep can be recruited in any land fort."
 #iceprot 1
 #end
 
+#selectmonster 433 -- Bone Fiend
+#demon
+#end
+
 #selectmonster 438  -- Kraken
 #name "Juvenile Kraken"
 #descr "A huge octopoid beast, the mighty Kraken is aquatic and cannot leave the sea. Krakens never die of old age, they instead grow larger and stronger. Some say there are Kraken that have lived for thousands of years hiding at the bottom of the sea. This is not one of those."
@@ -91557,6 +91627,7 @@ Initiates of the Deep can be recruited in any land fort."
 #spr1 "vanilla/serpentfiend1.tga"
 #spr2 "vanilla/serpentfiend2.tga"
 #montag 1054
+#mor 30
 #end
 
 #selectmonster 527  -- Will o Wisp
@@ -91864,6 +91935,8 @@ Initiates of the Deep can be recruited in any land fort."
 
 #selectmonster 638  -- Spine devil
 #weapon 68
+#weapon 1808
+#poisonres 5
 #end
 
 #selectmonster 639  -- Kraken King
@@ -95656,8 +95729,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #magicskill 6 1  -- 1N
 #custommagic 512 50  -- 50% W
 #twiceborn 7443 -- Size 4 Wight Beast
+#weapon 1808 -- repelling barbs
 #end
-
 
 #selectmonster 2225  -- Fire Ant
 #montag 1057
@@ -136942,8 +137015,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2324
 #copyspell "Gift of Reason"
 #name "Infernal Promotion"
-#descr "The caster offers thirty pure souls to a lesser demon under his control. A demon so gifted will rise in the demonic hierarchy, and will be able to command other demons on the field of battle. Mindless demonic servants can never be promoted in this way."
-#fatiguecost 3000
+#descr "The caster offers twenty five pure souls to a lesser demon under his control. A demon so gifted will rise in the demonic hierarchy, and will be able to command other demons on the field of battle. Mindless demonic servants can never be promoted in this way."
+#fatiguecost 2500
 #school 6
 #researchlevel 4
 #path 0 8
@@ -136953,12 +137026,13 @@ Restore order to the world, return the dead to their rest, and end this terrible
 
 #selectspell 2325
 #copyspell 1391 -- Spine Devil
-#name "Create Sanguine Horror"
-#descr "The caster sacrifices a host of blood slaves and collects their blood in a large stone receptacle. An unclean spirit is then bound into the pool to animate the blood as a terrible Sanguine Horror. The being will be difficult to harm with physical weapons, and can recover injuries at a frightening rate. It can crush and drown enemies by overwhelming them with a tide of gore and filth."
+#name "Create Sanguine Horrors"
+#descr "The caster sacrifices a host of blood slaves and collects their blood in a large stone receptacle. Unclean spirits are then bound into the pool to animate the blood as terrible Sanguine Horrors. The beings are difficult to harm with physical weapons, and can recover injuries at a frightening rate. They can crush and drown enemies by overwhelming them with a tide of gore and filth."
 #researchlevel 6
 #pathlevel 0 3
+#nreff 2
 #damage 7892
-#fatiguecost 900
+#fatiguecost 1800
 #end
 
 #selectspell 2327
@@ -137012,9 +137086,9 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 1391 -- Spine Devil
 #name "Infernal Vipers"
 #descr "The caster summons and binds several Serpent Fiends. Serpent Fiends are bat-winged, serpent-like demons summoned from the Abyss. Their bite is highly venomous."
-#researchlevel 7
-#pathlevel 0 5
-#nreff 1015
+#researchlevel 6
+#pathlevel 0 4
+#nreff 1016
 #damage 526  -- Serpent Fiend
 #fatiguecost 2200
 #end
@@ -137095,6 +137169,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #name "Body Warping of Gorgoroth"
 #descr "This horrible spell warps the flesh and minds of a group of enemies, causing them to sprout strange and misshapen new limbs. The spell can be resisted, however those affected will never be the same again."
 #details "Transforms targets into Foul Spawn."
+#range 5015
 #school 6
 #path 0 8
 #path 1 6
@@ -141091,8 +141166,8 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #researchlevel 2
 #pathlevel 0 2
 #pathlevel 1 0
-#fatiguecost 1200
-#nreff 3
+#fatiguecost 1500
+#nreff 4
 #restricted 63 -- MA Abysia
 #end
 
@@ -142281,7 +142356,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #pathlevel 1 1
 #nreff 15
 #damage 435  -- Maenads
-#fatiguecost 1500
+#fatiguecost 1000
 #restricted 7 -- EA Pangaea
 #restricted 52 -- MA Pangaea
 #restricted 97 -- LA Pangaea
@@ -145136,7 +145211,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #damage 129  -- Rage & Disease
 #fatiguecost 100
 #aoe 5
-#range 25
+#range 1025
 #aoe 2001
 #restricted 17 -- Hinnom
 #restricted 67 -- Ind
@@ -149022,7 +149097,7 @@ All effects scale with friendly Dominion."
 #name "Bind House Imps"
 #descr "When the Grand Masters of the House of Fiery Justice struck a bargain with infernal forces Marignon became dependent on devils to survive. The Infernal Lords demanded continued sacrifice and devil-worship became part of the faith. Now Imps are bound as jesters and servants and most noble families have their own imp familiar. With this spell the caster barters a few blood slaves for the use of fiery house imps from a local noble. Imps are small and weak devils, but this kind is surrounded by hot flames and can throw darts of fire."
 #researchlevel 0
-#nreff 1008
+#nreff 2007
 #restricted 103 -- LA Marignon
 #end
 
@@ -149662,7 +149737,7 @@ All effects scale with friendly Dominion."
 #copyspell 1391 -- Bind Spine Devil
 #name "Infernal Legion"
 #descr "The caster summons and binds a great many Chorts. Chorts are demonic beings of total evil feared throughout Bogarus. They are armed with vicious claws and a wicked barbed tail, whilst their gaze can hypnotize the weak willed."
-#researchlevel 9
+#researchlevel 8
 #pathlevel 0 5
 #path 1 5
 #pathlevel 1 2
@@ -151897,7 +151972,7 @@ All effects scale with friendly Dominion."
 #researchlevel 2
 #path 0 8
 #pathlevel 0 1
-#fatiguecost 99
+#fatiguecost 80
 #restricted 194
 #precision 10
 #end
@@ -153925,15 +154000,15 @@ All effects scale with friendly Dominion."
 #selectspell 3577
 #copyspell 935 -- Pack of Wolves
 #name "Bind Soul Eater"
-#descr "The caster performs a blood sacrifice to summon one of the Nalusa Chito, the Soul Eaters. Nalusa Chito are shadow demons that appear as hulking black demonic creatures with gaping mouths and yellow claws. The bite of a Soul Eater can tear the soul away from its victim and slay them forever."
+#descr "The caster performs a blood sacrifice to summon Nalusa Chito, the Soul Eaters. Nalusa Chito are shadow demons that appear as hulking black demonic creatures with gaping mouths and yellow claws. The bite of a Soul Eater can tear the soul away from its victim and slay them forever."
 #school 6  -- Blood
 #researchlevel 2
 #path 0 8
 #path 1 5
 #pathlevel 1 1
-#fatiguecost 400
+#fatiguecost 800
 #damage 6774
-#nreff 1
+#nreff 2
 #restricted 184 -- Sitecah
 #end
 
@@ -159395,8 +159470,8 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #copyspell 1398 -- Bind Devil
 #name "Pact with Devils"
 #descr "Many devils and other demonic beings will make an appearance when an Akelarre, or Witches' Sabbath, is held. Sorginak that attend may use the gathering to cast powerful spells, or sometimes they may make bargains with demonic powers. Amongst the revelry and debauchery at an Akelarre, devils are often much more receptive to bargains and Sorginak frequently make pacts in which they offer up a few virgins for sacrifice to a devil in exchange for their service."
-#fatiguecost 400
-#nreff 2
+#fatiguecost 600
+#nreff 3
 #pathlevel 1 1
 #restricted 62 -- MA Pyrene
 #onlyatsite 2361
@@ -159705,9 +159780,9 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #copyspell 1406 -- Storm Demon
 #name "Gathering of Storm Demons"
 #descr "Many devils and other demonic beings will make an appearance when an Akelarre, or Witches' Sabbath, is held. Sorginak that attend may use the gathering to cast powerful spells, or sometimes they may make bargains with demonic powers. Amongst the revelry and debauchery at an Akelarre, demons are often much more receptive to bargains and Sorginak frequently make pacts in which they offer up a handful of virgins for sacrifice to a storm demon in exchange for their service. With this pact the Sorginak may acquire the services of several storm demons."
-#fatiguecost 2000
+#fatiguecost 2400
 #pathlevel 0 3
-#nreff 5
+#nreff 6
 #researchlevel 7
 #restricted 62 -- MA Pyrene
 #onlyatsite 2361
@@ -163499,7 +163574,96 @@ This spell may only target friendly provinces."
 #spec 131072  -- Mindless Immune
 #end
 
+#selectspell 4366
+#copyspell 252 -- Bleed
+#name "Profuse Bleeding"
+#descr "This spell causes blood to pour out of the victims' nose, ears and mouth. The effect is a prolonged and painful death. Magic resistance can negate the effect, but the spell is difficult to resist."
+#pathlevel 0 2
+#prec 10
+#aoe 1002
+#researchlevel 5
+#spec 17592723456128 -- Armor Negating, MRNH, Ignores Shields, No Effect on Undead, No effect on Inanimate
+#end
 
+#selectspell 4367
+#copyspell 252 -- Bleed
+#name "Torrent of Blood"
+#descr "The caster sacrifices several slaves and unleashes a foul curse upon a vast area of the battlefield. An unending torrent of blood will pour out of the nose, ears and mouth of the hapless victims, resulting in a prolonged and painful death. Magic resistance can negate the effect, but the spell is difficult to resist. This spell does not distinguish between friend and foe and must be used with care."
+#pathlevel 0 4
+#fatiguecost 400
+#aoe 5010
+#researchlevel 9
+#range 5010
+#spec 17592723456128  -- Armor Negating, MRNH, Ignores Shields, No Effect on Undead, No effect on Inanimate
+#end
+
+#selectspell 4368 -- devil commander
+#copyspell 18 -- summon devil
+#name "Devil"
+#effect 10021
+#school -1
+#damage 304
+#nextspell 26 -- imps
+#end
+
+#selectspell 4369 -- shadow fiend commander
+#copyspell 18 -- summon devil
+#name "Fiend of Darkness"
+#effect 10021
+#school -1
+#damage 88
+#end
+
+#selectspell 4370 -- frost fiend commander
+#copyspell 18 -- summon devil
+name "Frost Fiend"
+#effect 10021
+#school -1
+#damage 449
+#end
+
+#selectspell 4371 -- demon knight commander
+#copyspell 18 -- summon devil
+#name "Demon Knight"
+#effect 10021
+#school -1
+#damage 489
+#end
+
+#selectspell 4372 -- storm demon commander
+#copyspell 18 -- summon devil
+#name "Storm Demon"
+#effect 10021
+#school -1
+#damage 632
+#end
+
+#selectspell 4373 -- Bunch o' bone fiends
+#copyspell 18 -- summon devil
+#name "Legion of Bone"
+#school -1
+#damage 433
+#nreff 33
+#nextspell 4369
+#end
+
+#selectspell 4374 -- Plague Demons
+#copyspell 18 -- summon devil
+#name "Disease Demons"
+#school -1
+#damage 1662
+#nreff 8
+#nextspell 4372
+#end
+
+#selectspell 4375 -- Iron Devils
+#copyspell 18 -- summon devil
+#name "Iron Devils"
+#school -1
+#damage 9357
+#nreff 18
+#nextspell 4371
+#end
 
 -- END OF NEW SPELLS
 
@@ -163761,6 +163925,7 @@ This spell may only target friendly provinces."
 #end
 
 #selectspell 2793 -- Blood Portent
+#researchlevel 7
 #precision 100
 #end
 
@@ -164620,7 +164785,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 551 -- Feast for Ghuls
-#nreff 1005
+#nreff 1009
 #restricted 197 -- Iram
 #end
 
@@ -166369,10 +166534,6 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #fatiguecost 3000
 #end
 
-#selectspell 1419 -- Harm
-#aoe 2004 -- 8+2
-#end
-
 #selectspell 1318 -- Serenity
 #aoe 2002 -- 8+2
 #range 25
@@ -166875,6 +167036,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 252 -- Bleed
 #aoe 1
+#prec 10
 #end
 
 #selectspell 1379 -- Blood Burst
@@ -166885,13 +167047,21 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #casttime 75
 #end
 
+#selectspell 1381 -- Sabbath Master
+#casttime 100
+#end
+
+#selectspell 1382 -- Sabbath Slave
+#casttime 100
+#end
+
 #selectspell 1384 -- Bind Shadow Imp
 #fatiguecost 300
 #end
 
 #selectspell 1386 -- Bind Fiery Imps
 #notfornation 103
-#nreff 1007
+#nreff 2006
 #end
 
 #selectspell 1387 -- Blood boil
@@ -166901,6 +167071,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1389 -- Agony
 #notfornation 116
+#aoe 2004
 #end
 
 #selectspell 1390 -- Banish Demon
@@ -166910,8 +167081,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectspell 1391 -- Bind Spine Devils
 #name "Bind Spine Devils"
 #descr "The caster sacrifices several blood slaves to contact and bind a trio of Spine Devils. Spine Devils are spine-covered, wingless demons that fight with two venomous claws and a barbed tail. The spines covering their bodies are poisonous and anyone attacking them with short weapons may get poisoned."
-#fatiguecost 800
-#nreff 3
+#fatiguecost 1100
+#nreff 4
 #end
 
 #selectspell 1392 -- Bind Fiend
@@ -166922,59 +167093,68 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #path 1 5
 #pathlevel 1 1
 #nreff 2
-#fatiguecost 600
+#fatiguecost 700
 #notfornation 185 -- Albion
 #end
 
 #selectspell 1393 -- Bind Bone Fiends
-#nreff 1008
+#nreff 1010
 #researchlevel 1
+#end
+
+#selectspell 1396 -- Pain Transfer
+#casttime 75
+#pathlevel 0 1
 #end
 
 #selectspell 1398 -- Bind Devil
 #name "Bind Devils"
-#descr "The caster sacrifices several blood slaves to contact and bind a pair of Devils. Devils are infernal beings of great strength. They are born in the fires of the Inferno and are impervious to heat and flame. Their glowing bodies radiate heat and bat-like wings grow from their shoulders. Devils are armed with a trident and their barbed tails can sting opponents in close combat."
-#fatiguecost 400
+#descr "The caster sacrifices several blood slaves to contact and bind several Devils. Devils are infernal beings of great strength. They are born in the fires of the Inferno and are impervious to heat and flame. Their glowing bodies radiate heat and bat-like wings grow from their shoulders. Devils are armed with a trident and their barbed tails can sting opponents in close combat."
 #path 0 8
 #pathlevel 0 1
 #path 1 0
 #pathlevel 1 1
-#nreff 2
-#fatiguecost 800
+#nreff 3
+#fatiguecost 1200
 #end
 
 #selectspell 1399 -- Bind Frost Fiend
 #name "Bind Frost Fiends"
-#descr "The caster sacrifices several blood slaves to contact and bind a pair of Frost Fiends. Frost Fiends are devils from Kokytos, the icy realms of the Inferno. In the constant wars of their native plane, the Frost Fiends are feared by all fiery devils. Frost Fiends wear robes of woven ice and are constantly surrounded by an icy wind. They wield ice rods and can unleash blasts of infernal cold upon their enemies."
+#descr "The caster sacrifices several blood slaves to contact and several Frost Fiends. Frost Fiends are devils from Kokytos, the icy realms of the Inferno. In the constant wars of their native plane, the Frost Fiends are feared by all fiery devils. Frost Fiends wear robes of woven ice and are constantly surrounded by an icy wind. They wield ice rods and can unleash blasts of infernal cold upon their enemies."
 #path 0 8
 #pathlevel 0 1
 #path 1 2
 #pathlevel 1 1
-#nreff 2
-#fatiguecost 1000
+#nreff 3
+#fatiguecost 1500
+#end
+
+#selectspell 1402 -- Bind Serpent Fiends
+#nreff 4
+#fatiguecost 500
 #end
 
 #selectspell 1406 -- Bind Storm Demon
 #name "Bind Storm Demons"
-#descr "The caster sacrifices several blood slaves to contact and bind a pair of Storm Demons. Storm Demons are devils of the tempest realm. The bodies of the Storm Demons consist partly of storm clouds. They are ethereal and can unleash blasts of infernal lightning upon their enemies."
+#descr "The caster sacrifices several blood slaves to contact and bind several Storm Demons. Storm Demons are devils of the tempest realm. The bodies of the Storm Demons consist partly of storm clouds. They are ethereal and can unleash blasts of infernal lightning upon their enemies."
 #path 0 8
-#pathlevel 0 1
+#pathlevel 0 2
 #path 1 1
-#pathlevel 1 2
-#nreff 2
-#fatiguecost 2000
+#pathlevel 1 1
+#nreff 3
+#fatiguecost 3000
 #end
 
 #selectspell 1414 -- Bind Demon Knight
 #name "Bind Demon Knights"
-#descr "The caster sacrifices several blood slaves to summon and bind a pair of Demon Knights to his service. The Demon Knight is an armored demon riding a demonic steed with glowing red eyes. Demon Knights are horrible to behold and their mere presence will cause panic among weaker troops."
+#descr "The caster sacrifices several blood slaves to summon and bind several Demon Knights to his service. The Demon Knight is an armored demon riding a demonic steed with glowing red eyes. Demon Knights are horrible to behold and their mere presence will cause panic among weaker troops."
 #researchlevel 4
 #path 0 8
-#pathlevel 0 1
+#pathlevel 0 2
 #path 1 3
-#pathlevel 1 2
-#nreff 2
-#fatiguecost 2000
+#pathlevel 1 1
+#nreff 3
+#fatiguecost 2800
 #end
 
 #selectspell 1400 -- Cross breeding
@@ -166995,9 +167175,6 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #notfornation 107 -- Gath
 #end
 
-#selectspell 1402 -- Serpent Fiend
-#end
-
 #selectspell 1405 -- Hellfire
 #range 5035
 #damage 9
@@ -167006,8 +167183,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #precision 5
 #end
 
-#selectspell 1418 -- Rain of Toads
-#hiddenench 1
+#selectspell 1409 -- Hellbind Heart
+#range 35
 #end
 
 #selectspell 1408 -- Blood Fecundity
@@ -167016,6 +167193,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1412 -- Bind Succubus
 #descr "The caster sacrifices several blood slaves to contact and bind a Succubus, a demonic lover with the ability to shapeshift. They can transform from a beautiful naked woman to a hansome nude man, both with leathery bat wings. They are able to enter the dreams of men and women to corrupt their souls.They can seduce an enemy commander and fly them back to their master where the seduced will serve until they die. Seducing mortals may result in a Cambion Progeny."
+#end
+
+#selectspell 1418 -- Rain of Toads
+#hiddenench 1
 #end
 
 #selectspell 1459-- Bind Incubus
@@ -167034,6 +167215,12 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #fatiguecost 100
 #end
 
+#selectspell 1419 -- Harm
+#pathlevel 0 1
+#aoe 2004 -- 6++
+#damage 1001 -- 2+
+#end
+
 #selectspell 1427 -- Leech
 #range 50
 #end
@@ -167048,9 +167235,33 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1423 -- Ritual of Five Gates
-#fatiguecost 2500
+#fatiguecost 7500
+#nreff 3
 #pathlevel 0 4
-#details "Summons a Fiend of Darkness, Devil, Frost Fiend, Storm Demon, and Demon Knight."
+#end
+
+#selectspell 73 -- Ritual of Five Gates
+#nreff 3
+#end
+
+#selectspell 74 -- Ritual of Five Gates
+#nreff 3
+#end
+
+#selectspell 75 -- Ritual of Five Gates
+#nreff 3
+#end
+
+#selectspell 76 -- Ritual of Five Gates
+#nreff 3
+#end
+
+#selectspell 1441 -- Infernal Prison
+#range 40
+#end
+
+#selectspell 1442 -- Claws of Kokytos
+#range 40
 #end
 
 #selectspell 1444 -- Curse of Blood
@@ -167071,24 +167282,45 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1448 -- Forces of Darkness
-#fatiguecost 3500
+#descr "The caster summons a great host of Fiends from the Abyss. Fiends of Darkness are coal-black demons summoned from the Abyss with human sacrifices. They fight with venomous claws and have bat-like wings. Bone Fiends are strange skeletal demons believed to be the remains of dead Devils bound by the Laws of Death."
+#researchlevel 7
+#pathlevel 0 5
+#path 1 5
+#pathlevel 1 2
+#nreff 1005
+#fatiguecost 6200
+#nextspell 4373
 #end
 
 #selectspell 1451 -- Infernal Forces
-#descr "The caster summons and binds many Devils and Imps. Devils are infernal beings of great strength. They are born in the fires of the Inferno and are impervious to heat and flame. Their glowing bodies radiate heat and bat-like wings grow from their shoulders. They are armed with a trident and their barbed tail can sting opponents in close combat."
-#fatiguecost 3500
+#descr "The caster summons and binds any army of Devils and Imps. Devils are infernal beings of great strength. They are born in the fires of the Inferno and are impervious to heat and flame. Their glowing bodies radiate heat and bat-like wings grow from their shoulders. They are armed with an infernal trident and their barbed tail can sting opponents in close combat."
+#researchlevel 7
+#nreff 1008
+#fatiguecost 8000
+#nextspell 4368
 #end
 
 #selectspell 1452 -- Infernal Tempest
-#fatiguecost 3500
+#descr "The caster calls upon the Lord of the Plague Wind to unleash an infernal tempest. From within the foul gale come several Storm and Disease Demons bent on wreaking havoc. The caster binds them to his service before they can destroy his laboratory. Storm Demons are devils of the tempest realm. They are ethereal and can unleash blasts of infernal lightning upon their enemies. The disease demon is a bringer of disease and illness. It feeds on the prayers and promises given by the despairing victims of its fevers."
+#researchlevel 8
+#nreff 1003
+#fatiguecost 12400
+#nextspell 4374
 #end
 
 #selectspell 1453 -- Forces of Ice
-#fatiguecost 3500
+#researchlevel 7
+#nreff 1009
+#fatiguecost 7400
+#nextspell 4370 
 #end
 
 #selectspell 1454 -- Infernal Crusade
-#fatiguecost 3500
+#descr "The caster summons and binds a demonic force of demon knights leading spine devils clad in armour forged within the depths of hell. Demon Knights are armored demons riding demonic steeds with glowing red eyes. Demon Knights are horrible to behold and their mere presence will cause panic among weaker troops. Spine Devils are spine-covered, wingless demons summoned from the Abyss with human sacrifice. The infernal knights have equipped these devils with armor and cruel weaponry to better inflict suffering upon their enemies."
+#researchlevel 8
+#nreff 1004
+#fatiguecost 13300
+#nextspell 4375
 #end
 
 #selectspell 1455 -- Send horror
@@ -167098,6 +167330,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 
+
+-- END OF BLOOD REWORK
 
 #selectspell 255 -- Sow Dragon Teeth
 #spec 8388608 -- uwok
@@ -172413,7 +172647,7 @@ Increases Natural Protection by 2 for each level of heat in the province."
 
 #selectitem 107 -- Mage Bane
 #itemcost1 -50
-#tainted 2
+#tainted 0
 #end
 
 #selectitem 108 -- Hammer of the Forge Lord
@@ -172500,7 +172734,7 @@ Increases Natural Protection by 2 for each level of heat in the province."
 #itemcost1 -60
 #autospell "Bane Fire"
 #autospellrepeat 1
-#taint 5 
+#tainted 5 
 #end
 
 #selectitem 125 -- Procas Axe
@@ -173143,7 +173377,8 @@ This headband does not require activation in combat."
 #end
 
 #selectitem 348 -- Soul Contract
-#itemcost1 234
+#itemcost1 300
+#itemcost2 100
 #descr "The Blood mage sacrifices a great number of slaves to get the attention of Infernal powers. When contact is made, an Infernal Lord offers a contract, to be signed in blood. Whoever signs the contract promises his soul, to be collected at the time of his death, to the Infernal Lord. In exchange for this fair and valuable consideration, the signatory will, for as long as he lives, receive one bound devil each month from the Infernal Lord."
 #noinanim
 #nodemon
@@ -173338,7 +173573,7 @@ This headband does not require activation in combat."
 #end
 
 #selectitem 432 -- Tome of High Power
-#taint 0
+#tainted 0
 #end
 
 #selectitem 433 -- Magic Lamp
@@ -173381,7 +173616,7 @@ This headband does not require activation in combat."
 #selectitem 441 -- Atlas of Creation
 #itemcost1 -50
 #itemcost2 -50
-#taint 2
+#tainted 0
 #end
 
 #selectitem 442 -- Bell of Cleansing
@@ -173485,7 +173720,7 @@ This headband does not require activation in combat."
 #selectitem 464 -- Manual of Crossbreeding
 #itemcost1 -33
 #itemcost2 -33
-#taint 0
+#tainted 0
 #constlevel 5
 #unique
 #end
@@ -173736,6 +173971,26 @@ This headband does not require activation in combat."
 
 #selectitem 365 -- Enchanted Salt
 #constlevel 3
+#end
+
+#selectitem 398 -- Slave's Heart
+#constlevel 3
+#mainlevel 1
+#secondarypath -1
+#end
+
+#selectitem 96 -- Master's Athame
+#constlevel 5
+#mainlevel 1
+#end
+
+#selectweapon 686 -- Master's Athame
+#dt_normal
+#secondaryeffect 690 -- Draw Blood
+#end
+
+#selectitem 301 -- Boots of Youth
+#reinvigoration 4
 #end
 
 -- Land poptype changes
