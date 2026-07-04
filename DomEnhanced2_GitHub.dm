@@ -150776,7 +150776,7 @@ All effects scale with friendly Dominion."
 #pathlevel 1 1
 #fatiguecost 600
 #damage 526  -- Serpent Fiend
-#nreff 12
+#nreff 15
 #restricted 186 -- Zion
 #end
 
@@ -150914,12 +150914,13 @@ All effects scale with friendly Dominion."
 #descr "Under the direct guidance of the Prophet King his seals can be used for even greater feats. With great care the caster manipulates a great Prince of Demons to provide servants from each of the Infernal realms. Five demonic beings will be extorted and forced to serve the caster. This spell can only be cast at the Palace of the Prophet King."
 #details "Summons a Fiend of Darkness, Devil, Frost Fiend, Storm Demon, and Demon Knight."
 #school 0
-#researchlevel 5
+#researchlevel 6
 #path 0 4
+#nreff 3
 #pathlevel 0 3
 #path 1 9
 #pathlevel 1 1
-#fatiguecost 800
+#fatiguecost 2500
 #restricted 186 -- Zion
 #onlyatsite 2122 -- Palace of the Prophet King
 #end
@@ -150975,14 +150976,14 @@ All effects scale with friendly Dominion."
 #copyspell 935 -- Pack of Wolves
 #name "Bind Host of Infernal Vipers"
 #descr "Through the seals of the Prophet King the demons of the abyss can be bound to service. A host of Serpent-fiends, foul demonic beings of the abyss, will appear when the spell is cast and are bound by a powerful seal under the guidance of the Prophet King. The demons so bound will be forced to obey the caster, and will be unable to escape their bondage unless banished or the seal is destroyed."
-#researchlevel 8
+#researchlevel 7
 #path 0 4
 #pathlevel 0 3
 #path 1 9
 #pathlevel 1 3
 #fatiguecost 1000
 #damage 526  -- Serpent Fiend
-#nreff 2014 -- 20++
+#nreff 2014 -- 25++
 #onlyatsite 2122 -- Palace of the Prophet King
 #restricted 186 -- Zion
 #end
@@ -163114,7 +163115,7 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #pathlevel 0 2
 #fatiguecost 500
 #damage 9314 -- Ishim
-#nreff 3
+#nreff 1
 #restricted 186 -- Zion
 #restricted 67 -- Ind
 #restricted 120 -- Piconye
