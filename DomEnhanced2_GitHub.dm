@@ -29402,6 +29402,13 @@ While in the form of an old man, all paths are increased and allows the use of N
 #name "Illusory Cu Sidhe"
 #descr "The phantasmal Cu Sidhe is an illusion of a Cu Sidhe. The phantasm is cloaked in glamour and difficult to hit, but once hit, it will be destroyed. The weapons of a phantasm are unreal and will only harm those who believe them to be real."
 #glamour
+#size 4
+#str 15
+#att 13
+#def 10
+#ap 28
+#mr 14
+#prec 5
 #end
 
 #newmonster 7455
@@ -32760,7 +32767,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #end
 
 #newmonster 7609
-#copystats 83  -- Abyssian Infantry
+#copystats 83  -- Abysian Infantry
 #spr1 "magicenhanced/eeparamagma.tga"
 #spr2 "magicenhanced/eeparamagma2.tga"
 #name "Magma Warrior"
@@ -67889,7 +67896,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #defmult1b 3
 #end
 
--- END NEW UW UNITS
+-- END OF NEW UW UNITS
 
 -- EA PELAGIA REWORK
 
@@ -68190,7 +68197,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #heal
 #end
 
--- END EA PELAGIA REWORK
+-- END OF EA PELAGIA REWORK
 
 
 -- Immortal Lich/Vampire reformtime changes
@@ -91340,6 +91347,10 @@ Initiates of the Deep can be recruited in any land fort."
 #polyimmune
 #end
 
+#selectmonster 448 --False Horror-- gains hp like other phantasms, seems to have been left 1hp from when it was a dom 5 air illusion.
+#hp 10
+#end
+
 #selectmonster 449  -- Frost Fiend
 #spr1 "vanilla/frostfiend1.tga"
 #spr2 "vanilla/frostfiend2.tga"
@@ -98539,6 +98550,27 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #nametype 190
 #end
 
+--Giant Fungus now resist poison so they don't cause chain reactions blowing themselves up
+
+#selectmonster 3702 --Giant fungus
+#poisonres 10
+#end 
+
+#selectmonster 3703 --Giant fungus
+#poisonres 10
+#end 
+
+#selectmonster 3704 --Giant fungus
+#poisonres 10
+#end 
+
+#selectmonster 3705 --Giant fungus
+#poisonres 10
+#end 
+
+#selectmonster 3706 --Giant fungus
+#poisonres 10
+#end 
 
 
 
@@ -133549,11 +133581,12 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #researchlevel 5
 #path 0 0
 #pathlevel 0 4
+#damage 2017
 #nreff 1001 -- 5+
-#precision 2
+#precision 5
 #fatiguecost 40
 #casttime 100
---#nextspell "Large Area Heat Shock"
+#nextspell 4386 --Medium Area Heat Shock
 #end
 
 #selectspell 2010
@@ -133988,8 +134021,9 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #researchlevel 0
 #effect 134
 #nreff 1
-#damage 5
+#damage 7
 #aoe 1
+#maxbounces 3
 #spec 8390784
 #end
 
@@ -134000,6 +134034,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #researchlevel 7
 #precision 6
 #damage 1015 -- 17+
+#nreff 1001
+#casttime 100
+#range 100
+#aoe 0
 #fatiguecost 20
 #nextspell 2044
 #spec 18560  -- AN, Shock, Ignore shields
@@ -135107,11 +135145,12 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #selectspell 2157
 #copyspell 680 -- Blade Wind
 #name "Blade Storm"
-#descr "The caster throws a huge swarm of magically sharpened whirling blades towards his enemies. The blades will slice through armor with ease and can lop off arms and legs."
+#descr "The caster throws a huge swarm of magically sharpened whirling blades towards his enemies. The blades will slice through armor with ease and can lop off arms and legs. The blades are launched in a concentrated burst and many of them will hit the same target."
 #researchlevel 7
-#range 30
+#range 5030
 #nreff 99
-#precision 1
+#precision 20
+#damage 1010
 #pathlevel 0 5
 #fatiguecost 100
 #spec 1099511627840  -- AP, Slashing damage
@@ -135151,21 +135190,6 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #flightspr -1
 #fatiguecost 200
 #spec 8388608 -- UWOK
-#end
-
-#selectspell 2160
-#copyspell 687 -- Falling Fires
-#name "Falling Rocks"
-#descr "The caster causes several large chunks of stone from the ceiling to collapse onto a group of enemies. The rocks will be deadly to those they strike, however a nimble foe may be able to escape harm. This spell can only be cast in a cave."
-#path 0 3
-#aoe 1003 -- 6+
-#damage 20
-#spec 3145792  -- Def Negates
-#sound 17  -- Earth spell
---#explspr 102  -- Rocks falling
-#explspr 10282  -- gifts impact
-#flightspr 100 -- boulder
-#onlygeosrc 4096  -- Cave only
 #end
 
 --#selectspell 2161
@@ -140564,7 +140588,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 
 #selectspell 2578
 #copyspell 656 -- Web
-#name "Hunters Web"
+#name "Hunter's Web"
 #descr "The caster flings a few bundles of sticky strands at the enemy. Creatures trapped in the webs will be unable to attack or defend themselves until they struggle free. Powerful casters can throw more of the web bundles with each casting."
 #details "Str +DRN vs 21 to get free."
 #researchlevel 3
@@ -140572,9 +140596,10 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #pathlevel 0 1
 #path 1 5
 #pathlevel 1 1
-#nreff 1000
+#nreff 1001
 #fatiguecost 10
 #precision 5
+#range 5030
 #restricted 28 -- EA Machaka
 #restricted 76 -- MA Machaka
 #end
@@ -141157,6 +141182,8 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #descr "In Abysia fire magic is commonplace. This spell creates a powerful blast of fiery energies which strikes a small area close to the caster."
 #researchlevel 0
 #restricted 16 -- EA Abysia
+#restricted 63 -- MA Abysia
+#restricted 104 -- LA Abysia
 #end
 
 #selectspell 2620
@@ -141169,14 +141196,6 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #fatiguecost 1500
 #nreff 4
 #restricted 63 -- MA Abysia
-#end
-
-#selectspell 2621
-#copyspell 649 -- Flare
-#name "Teachings of the Flame Cult"
-#descr "In Abysia fire magic is commonplace. With this spell, a mage can send a ball of flame towards his enemies. The flare can hit several targets."
-#researchlevel 0
-#restricted 104 -- LA Abysia
 #end
 
 #selectspell 2622
@@ -145211,7 +145230,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #damage 129  -- Rage & Disease
 #fatiguecost 100
 #aoe 5
-#range 1025
+#range 5025
 #aoe 2001
 #restricted 17 -- Hinnom
 #restricted 67 -- Ind
@@ -146284,6 +146303,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #fatiguecost 20
 #effect 128
 #damage 100
+#range 5030
 #spec 17592194482176  -- Sacreds only, ignore shields, UWOK, MRNH
 --#spec 8437760  -- Sacreds only, ignore shields, UWOK
 #restricted 6 -- Mekone
@@ -146300,7 +146320,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 1
 #path 1 9
 #pathlevel 1 1
-#range 20
+#range 5025
 #aoe 5
 #fatiguecost 20
 #spec 184320  -- Sacreds only, MR-Neg, ignore shields, mindless immune
@@ -154001,7 +154021,7 @@ All effects scale with friendly Dominion."
 #selectspell 3577
 #copyspell 935 -- Pack of Wolves
 #name "Bind Soul Eater"
-#descr "The caster performs a blood sacrifice to summon Nalusa Chito, the Soul Eaters. Nalusa Chito are shadow demons that appear as hulking black demonic creatures with gaping mouths and yellow claws. The bite of a Soul Eater can tear the soul away from its victim and slay them forever."
+#descr "The caster performs a blood sacrifice to summon the Nalusa Chito, the Soul Eaters. Nalusa Chito are shadow demons that appear as hulking black demonic creatures with gaping mouths and yellow claws. The bite of a Soul Eater can tear the soul away from its victim and slay them forever."
 #school 6  -- Blood
 #researchlevel 2
 #path 0 8
@@ -156667,9 +156687,9 @@ Underwater: Targets must resist the effects of the spell a second time with an e
 --#spec 17592228134912 -- Ignore shields, UWOK, UWonly, MRNegates Hard, Mindless immune
 #end
 
-#selectspell 3870 -- Polar Sea nextspell
+#selectspell 3870 -- Polar Sea nextspell --Renamed to be generic for use in other cold evos as an aoe 1 freeze nextspell 
 #copyspell "Freeze"
-#name "Cold Waters"
+#name "Freezing Cold"
 #school -1
 #aoe 1
 #end
@@ -156699,7 +156719,7 @@ Underwater: Targets must resist the effects of the spell a second time with an e
 #end
 
 #selectspell 3873 -- Electrify Current, 2A
-#copyspell 2045 -- Forked Lightning
+#copyspell 652 -- lightning bolt
 --#copyspell "Shimmering Fields"
 #name "Electrify Current"
 #descr "The caster unleashes a burst of electric energy at a target in water. The discharge will disseminate through the water, affecting those nearby."
@@ -156889,13 +156909,15 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #end
 
 #selectspell 3884 -- Sea of Fire
-#copyspell "Heat from Hell"
+#copyspell 718
 #name "Sea of Fire"
-#descr "The water of the battlefield is rapdily brought to a boil. This heat soon renders all units on the battlefield unconscious, after which death is certain. This spell is more effective in warm seas."
+#descr "The water of the battlefield is rapdily brought to a boil. This heat will quickly render them unconscious and cook unprotected creatures alive, after which death is certain."
 #researchlevel 8
 #school 2 -- Evocation
 #fatiguecost 400
+#pathlevel 0 4
 #spec 41943040 -- UWonly
+#nextspell 1189 --Heat from Hell--
 #end
 
 #selectspell 3885 -- Rebreathing Bubble, reinvigoration, may make it also give attack/morale maybe
@@ -156940,7 +156962,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #path 1 5 -- Death
 #pathlevel 1 2
 #aoe 1003 -- 5+
-#range 25
+#range 5025 -- 35+5
 #effect 3 -- Fatigue
 #damage 5015 -- 25+5
 #spec 1152921505186209856 -- UWOK, UWonly, AP, poison, ignores shields, no lifeless, no undead, extra effect on damage
@@ -157222,7 +157244,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #pathlevel 1 1
 #aoe 2004 -- 8+2
 #precision 10
-#damage 15
+#damage 1012
 #flightspr 10026 -- impacts instantly for some reason? may investigate if it is an issue
 #explspr 10106
 --#spec 1152921521786982496 -- fire, mrn, ap, extra effect on damage, enemy only
@@ -160622,12 +160644,15 @@ Applies the effects of Holy Avenger to the caster"
 #copyspell 250 -- Poison Touch
 #name "Snakebite"
 #descr "The caster points to a target who feels a sharp bite. The target will be poisoned, and armor will offer reduced protection from the bite."
+#spec 8396864 --Armor Piercing, UW OK, Poison Damage.
 #researchlevel 0
 #school 2
 #path 0 6
-#path 1 2
+#damage 5010 (damage increased by +5 because its now AP instead of AN)
+#path 1 -1 --N1 so serpent acoltytes can cast
 #pathlevel 0 1
 #pathlevel 1 1
+#prec 10 --increased accuracy
 #range 25
 #fatiguecost 0
 #restricted 98 -- LA Pythium
@@ -163076,25 +163101,22 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #damage 10
 #end
 
-#selectspell 4332 -- Poison Arrows
-#copyspell 733 -- Storm of Thorns
-#name "Poison Arrows"
-#descr "The caster shoots a few enchanted arrows against his enemies. The arrows are coated in serpent venom and anyone surviving the initial shot will become poisoned."
-#spec 1152921779484753920 -- Piercing, Next effect on damage
+#selectspell 4332 -- Venom Bolt
+#copyspell 684 -- Breath of the Dragon
+#name "Venom Bolt"
+#descr "The caster gathers a bolt of pure venom and launches it at his enemies. The poison is so virulent that even those normally immune to poison will wither and decay."
+#spec 4294975616 -- Poison, AN
 #fatiguecost 20
-#flyspr 419 1 -- Vine Arrow
-#effect 2
-#damage 1014 -- 16+
-#range 5025 -- 30+5
+#damage 5015 -- 25+5/level
+#range 5035 -- 40+5
 #casttime 75
-#nreff 1008 -- 10+
+#nreff 1
 #path 0 6
 #pathlevel 0 2
 #school 2
-#aoe 0
+#aoe 1
 #researchlevel 5
-#precision 4
-#nextspell 0
+#precision 6
 #end
 
 #selectspell 4333 -- Stealth Breath nextspell
@@ -163666,6 +163688,118 @@ name "Frost Fiend"
 #nextspell 4371
 #end
 
+#selectspell 4376 --New Astral Conflag-- 
+#copyspell 107
+#name "Astral Conflagration"
+#school -1
+#damage 1
+#aoe 9
+#nreff 1
+#spec 4224
+#end
+
+#selectspell 4377 --Small cloud of death-- 
+#copyspell 730
+#school -1
+#name "Small Cloud of Death"
+#aoe 1
+#end
+
+#selectspell 4378 --Scaling Area Flames--
+#copyspell 107 --Area Fire--
+#damage 2010
+#end
+
+
+#selectspell 4379 -- New Storm of Thorns
+#copyspell 669
+#name "Storm of Thorns"
+#details " "
+#descr "The caster shoots a storm of poisonous thorns into their enemies. The thorns are magical and will burrow through armor and shields, and cause bleeding and poison to those damaged by them."
+#researchlevel 7
+#damage 1
+#effect 2
+#school 2
+#pathlevel 0 2
+#nreff 1013
+#spec 1152921505143718020
+#end 
+
+#selectspell 4380 --Bleed after thorns--
+#copyspell 252 --Bleed and Poison--
+#name "Bleeding"
+#spec 536871044
+#school -1
+#end
+
+#selectspell 4381 -- New Falling Fires
+#copyspell 687 --Falling Fires Old-- 
+#name "Falling Fires"
+#researchlevel 5
+#path 2 --Evo--
+#range 50
+#aoe 1003
+#damage 20
+#precision 5
+#spec 1152921504606847072 --Fire, AP, nextspell on damage--
+#end
+
+#selectspell 4382 --Falling Fires Burn--
+#copyspell 770
+#name "Burn"
+#school -1
+#researchlevel -1
+#end 
+
+#selectspell 4383 -- New Falling frost
+#copyspell 694
+#damage 15
+#spec 1152921504606847552 cold, ap, nextspell on Damage
+#precision 5
+#end 
+
+#selectspell 4384 Falling Frost Freeze
+#copyspell 792 --Freeze 
+#name "Freeze"
+#researchlevel -1
+#school -1
+#end 
+
+#selectspell 2160
+#copyspell 687 --Falling Fires--
+#name "Falling Rocks"
+#descr "The caster causes several large chunks of stone from the ceiling to collapse onto a group of enemies. The rocks will be deadly to those they strike, however a nimble foe may be able to escape harm. This spell can only be cast in a cave."
+#path 0 3
+#path 1 -1
+#school 2
+#nreff 1
+#researchlevel 5
+#aoe 1003 -- 6+
+#damage 25
+#spec 1153485004319227904  -- Def Negates, Non Magical, Blunt Damge, More Likely to Hit Head, nextspell on damage
+#sound 17  -- Earth spell
+#explspr 102  -- Rocks falling
+#flightspr 100 -- boulder
+#onlygeosrc 4096  -- Cave only
+#precision 5
+#nextspell 0
+#end
+
+#selectspell 4385
+#copyspell 762
+#name "Earth Grip "
+#aoe 1
+#school -1
+#spec 4398046511104 --Size or Strength Negates
+#end
+
+#selectspell 4386
+#copyspell 3 --Large Area Heat Shock--
+#name "Medium Area Heat Shock"
+#damage 2006
+#aoe 4 
+#end
+
 -- END OF NEW SPELLS
 
 
@@ -163964,7 +164098,7 @@ name "Frost Fiend"
 
 
 #selectspell 3  -- Large Area Heat Shock
-#aoe 2002
+#aoe 8
 #end
 
 #selectspell 99  -- 15 Forest Trolls
@@ -164322,12 +164456,22 @@ name "Frost Fiend"
 #restricted 95 -- LA Arco
 #damage 1010 -- 12+
 #precision 10
+#effect 24 --reduced from 3x to 2x
+#path 1 -1 --loses fire crosspath-- this spell is identical to holy pyre but does 2 less damage and no combustion.
+#end
+
+#selectspell 454 --Iron Blizzard
+#damage 13
 #end
 
 #selectspell 448 -- Holy Pyre
+#descr "The Holy Pyre ignites it's targets with a holy flame. This flame is made of pure holy energy and cannot be resisted by normal fire resistance, and does increased damage to undead and demons."
 #damage 1008 -- 10+
+#effect 24
+#spec 64
 #precision 10
 #fatiguecost 10
+#nextspell 804 --Combustion
 #end
 
 
@@ -165065,6 +165209,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 651 -- Cold Blast
 #notfornation 71 -- MA Caelum
+#range 1009
 #precision 5
 #end
 
@@ -165109,12 +165254,19 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #nextspell 5
 #end
 
+#selectspell 680 -- Blade Wind
+#fatiguecost 50
+#damage 15
+#precision 8
+#end 
+
 #selectspell 1 -- lightning bolt shock
 #effect 2 -- damage
 #damage 2
 #end
 
 #selectspell 652 -- lightning bolt
+#descr "The mage calls down a bolt of lightning onto an enemy. The lightning bolt is very useful for eliminating heavily armored targets."
 #spec 8589953152 -- Ignore Shield, Shock, AN, Affects both Rider and Mount (not UWOK)
 #damage 1013 -- 15+
 #end
@@ -165195,7 +165347,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 679 -- Acid Rain
 #damage 2010 -- 16++, higher damage
-#aoe 1002 -- 5+, lower aoe
+#precision 5
 #end
 
 #selectspell 681 -- Nether Bolt
@@ -165223,26 +165375,47 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 687 -- Falling Fires
-#damage 20
+#researchlevel -1
+#school -1
 #end
 
 #selectspell 694 -- Falling Frost
-#damage 1009 -- 12+
+#researchlevel -1
+#school -1
 #end
 
 #selectspell 692 -- Hidden Flame
+#descr "The caster unleashes the Hidden Flame upon the enemies of this world. Initially created by the Arch Wizards of the Hidden Flame to combat the Horrors of the Void, it is equally effective against oherworldy and magic beings. The Hidden Flame burns with an intense blueish flame that consumes magic essence itself, and destroys magical beings, and even magical beings immune to fire will be consumed, as their very essence burns away. Anyone standing close to the Flame will risk getting soul burns."
 #pathlevel 1 2
 #damage 3019 -- 25+++
 #precision 5
+#spec 3458764513820541072 Magic Beings Only, Armor Negating, Extra Effect on Damage, MR check for Half Damage
+#end
+
+#selectspell 693 --Original Astral Conflag--
+#name "Essence Burn"
+#effect 11 
+#aoe 1
+#damage 256 --decay 
+#spec 16 --Magic Beings Only-- 
+#nextspell 4376 --astral conflagration--
+#end 
+
+#selectspell 695 -- Orb Lightning 
+#range 5015
 #end
 
 #selectspell 690 -- Liquid Flames of Rhuax
-#casttime 100
+#casttime 75
+#descr "This deadly spell hurls a ball of molten metal at the caster's enemies. The spell is tied to the physical strength of the caster, and stronger mages will hurl more damaging molten balls. The molten metal will splash out and anyone nearby will be hit by the hot liquid, and the area will remain extremely hot for a long while."
+#damage 2012 --lowered to account for strength--
+#spec 864691128455135328 --Heat, AP, Half Strength Added Extra Effect--
 #end
 
 #selectspell 691 -- Splash of Molten Metal
 #aoe 5
-#damage 18
+#damage 12 --lowered to account for strength--
+#spec 288230376151711840
 #end
 
 #selectspell 696 -- Earthquake
@@ -165252,10 +165425,12 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 698 -- Gifts from Heaven
 #nogeosrc 4096  -- Cannot be cast in caves
+#nextspell 3 -- Large Area Heat Shock
 #end
 
 #selectspell 699 -- Stellar Cascades
 #nogeosrc 4096  -- Cannot cast in Caves
+#spec 17592186044480 AP, MR Hard Negates
 #aoe 1006 -- 8+
 #end
 
@@ -165272,11 +165447,24 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #effect 601
 #damage 261
 #aoe 1
-#spec 8523904 -- AN, MRN, no mindless, UWOK
+#spec 8796093022336 -- AN, no mindless, UWOK, MRH
 #end
 
+#selectspell 706 --Flame Eruption--
+#damage 2014
+#aoe 1005
+#range 1008
+#precision 3
+#end
 
+#selectspell 707 --Wrathful Skies--
+#researchlevel 7
+#fatiguecost 300
+#end 
 
+#selectspell 710 --Magma Eruption--
+#damage 2021
+#end
 
 #selectspell 712 -- Astral Fires -- single spell with full AoE to reduce friendly fire from AI spellcasting, and path reduction
 #aoe 1005 -- 8+
@@ -165292,6 +165480,11 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 715 -- Bane Fire
 --#nextspell 20
 #precision 4
+#end
+
+#selectspell 716
+#details "Death chance: 50% +5% per additional caster level."
+#damage 5035
 #end
 
 #selectspell 731 -- Wind of Death
@@ -165330,6 +165523,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 729 -- N Nether Darts
 #nreff 2013 -- 15+1 -> 15+2
+#range 5030
 #end
 
 #selectspell 726 -- "Acid Storm"
@@ -165340,32 +165534,35 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #nogeosrc 4096  -- Cannot be cast in caves
 #end
 
+#selectspell 738 -- Shimmering Fields
+#range 5010
+#end
+
+#selectspell 740 -- Pillar of Fire
+#fatiguecost 10
+#precision 15
+#end
+
 #selectspell 741 -- Second Sun
 #descr "The caster creates a huge ball of fire in the sky. This Second Sun will always shine, day and night, resulting in severe effects across the entire world. Provinces will become hotter and drier every turn until the Second Sun is destroyed. Abysian forts will produce extra income whilst the spell remains active. This enchantment lasts until someone dispels it or the caster dies."
 #details "Each turn increases heat scales throughout the world. Death scales are also increased, but at a slower rate. Abysian forts produce 50% more income per month."
 #end
 
-#selectspell 740 -- Pillar of Fire
-#fatiguecost 10
-#precision 8
+#selectspell 743 -- Chain Lightning
+#damage 1005
+#range 5020
 #end
 
 #selectspell 746 -- Vortex of Unlife
-#pathlevel 0 4
+#pathlevel 0 3
+#range 40
 #damage 1016 -- 20+
 #end
 
-#selectspell 748 -- Flames from the Sky
-#copyspell 724 -- Murdering Winter
-#name "Flames from the Sky"
-#descr "With this spell, the mage hurls a maelstrom of flaming spheres towards an enemy province. The flame storm will strike an enemy army camp within the province with enormous force. Most likely, the majority of the units present in the camp will die from this powerful attack, but since the entire army is rarely gathered in one camp at a given time, only half of the target province's army can be expected to be struck by the flames."
-#path 0 0
-#fatiguecost 5000
-#researchlevel 9
-#spec 16480 -- Fire, AP, Ignore shields
-#damage 1007 -- 12+
-#nogeodst 4100  -- Cannot cast to Caves or Sea
-#end
+#selectspell 747 -- Aurora Borealis
+#researchlevel 7
+#end 
+
 
 #selectspell 724 -- Murdering Winter
 #notfornation 33 -- Niefelheim
@@ -165624,7 +165821,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #aoe 2004 -- 8+2
 #fatiguecost 100
 #range 5030 -- 40+5
+#nextspell 4377 --Small cloud of death--
 #end
+
+
 
 #selectspell 1322 -- Leeching Darkness
 --#path 0 7
@@ -165640,6 +165840,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 709 -- Cleansing Water
 #spec 8388744 -- DemonUndead, AN, UWOK
+#damage 1005
 #end
 
 #selectspell 809 -- old Encase in Ice disable
@@ -166520,10 +166721,11 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #range 5020 -- 35+5
 #end
 
-#selectspell 733 -- Storm of Thorns
+#selectspell 733 -- Storm of Thorns --removed for nextspell verison--
 #damage 1014
 #fatiguecost 10
 #nreff 2012 -- 16+2
+#school -1 -- Unresearchable 
 #end
 
 #selectspell 1460 -- Soul Transaction
@@ -167121,7 +167323,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1399 -- Bind Frost Fiend
 #name "Bind Frost Fiends"
-#descr "The caster sacrifices several blood slaves to contact and several Frost Fiends. Frost Fiends are devils from Kokytos, the icy realms of the Inferno. In the constant wars of their native plane, the Frost Fiends are feared by all fiery devils. Frost Fiends wear robes of woven ice and are constantly surrounded by an icy wind. They wield ice rods and can unleash blasts of infernal cold upon their enemies."
+#descr "The caster sacrifices many blood slaves to contact and several Frost Fiends. Frost Fiends are devils from Kokytos, the icy realms of the Inferno. In the constant wars of their native plane, the Frost Fiends are feared by all fiery devils. Frost Fiends wear robes of woven ice and are constantly surrounded by an icy wind. They wield ice rods and can unleash blasts of infernal cold upon their enemies."
 #path 0 8
 #pathlevel 0 1
 #path 1 2
@@ -167375,6 +167577,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #descr "The Scorching Wind is the primordial wind from which the Hinn and the Binn were spawned. It is unbearably dry and hot and will dehydrate living beings within minutes. The spell has no effect on living beings resistant to heat or with wasteland survival abilities."
 #restricted 197 -- Iram
 #fatiguecost 20
+#precision 15
+#spec 537395360 -- Heat, No effect on Undead, No effect on inanimate, removed MRN since they get a save every round anyway, and 2d8 fatigue isn't that strong.
 #end
 
 -- START OF BATTLEFIELD WIDE CHANGES
@@ -167391,6 +167595,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #ainocast 1
 #nextingeo -1
 #nextspell 696 -- Earthquake
+#fatiguecost 200 --Reduced to 2 Gems-- 
 #end
 
 #selectspell 696 -- Earthquake
@@ -195161,11 +195366,6 @@ It is now fully repaired and a new crew has been assigned to it."
 #nation -2
 #com 3497 -- Wizard
 #end
-
-
-
-
-
 
 
 
