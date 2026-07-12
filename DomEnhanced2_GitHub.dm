@@ -90919,6 +90919,8 @@ Initiates of the Deep can be recruited in any land fort."
 
 #selectmonster 492 -- Heliophagus
 #polyimmune
+#magicskill 5 2
+#makemonsters3 88
 #end
 
 #selectmonster 646 -- Troll Raider
@@ -92692,14 +92694,19 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 818  -- Heliophagus
+#inspirational 1
 #polyimmune
 #end
 
 #selectmonster 819  -- Heliophagus
+#makemonsters5 433
+#batstartsum2d6 433
 #polyimmune
 #end
 
 #selectmonster 820  -- Heliophagus
+#fear 10
+#diseasecloud 10
 #polyimmune
 #end
 
@@ -156935,7 +156942,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #damage 68719476736 -- Reinvigoration
 #explspr 10218
 #aoe 5000 -- 10+5
-#prec 1
+#precision 3
 #spec 583548928 --UWOK, UWonly, friendlies only, inanimate/undead immune, ignores shields
 --#nextspell "Reinvigorating Air"
 #end
@@ -160652,7 +160659,7 @@ Applies the effects of Holy Avenger to the caster"
 #path 1 -1 --N1 so serpent acoltytes can cast
 #pathlevel 0 1
 #pathlevel 1 1
-#prec 10 --increased accuracy
+#precision 10 --increased accuracy
 #range 25
 #fatiguecost 0
 #restricted 98 -- LA Pythium
@@ -163602,7 +163609,7 @@ This spell may only target friendly provinces."
 #name "Profuse Bleeding"
 #descr "This spell causes blood to pour out of the victims' nose, ears and mouth. The effect is a prolonged and painful death. Magic resistance can negate the effect, but the spell is difficult to resist."
 #pathlevel 0 2
-#prec 10
+#precision 10
 #aoe 1002
 #researchlevel 5
 #spec 17592723456128 -- Armor Negating, MRNH, Ignores Shields, No Effect on Undead, No effect on Inanimate
@@ -164848,6 +164855,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 519 -- Break the First Soul -- Bleed / Disease
+#range 5025
 #precision 10
 #end
 
@@ -167239,7 +167247,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 252 -- Bleed
 #aoe 1
-#prec 10
+#precision 10
 #end
 
 #selectspell 1379 -- Blood Burst
