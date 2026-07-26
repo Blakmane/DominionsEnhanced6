@@ -134361,7 +134361,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #fatiguecost 30
 #flightspr 10065
 #explspr 10119
-#prec 3
+#precision 3
 #sound 21
 #spec 1152921504607912000  -- AP, Def Negates, Ignore shields, Extra effect on damage
 #end
@@ -139886,7 +139886,8 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #name "Control Unruly Spirits"
 #descr "With the coming of the Barbarian Kings and the return of ancestor worship spells for controlling unruly spirits have become commonplace in T'ien Ch'i. The caster takes control over some undead beings. Powerful undead will be able to resist the necromancer."
 #researchlevel 0
-#precision 12
+#range 5015
+#precision 100
 #restricted 109 -- LA Tien Chi
 #end
 
@@ -140357,7 +140358,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #restricted 28
 #aoe 1
 #casttime 75
-#range 25
+#range 5025
 #fatiguecost 10
 #end
 
@@ -141888,7 +141889,8 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #pathlevel 1 1
 #aoe 1
 #fatiguecost 30
-#range 25
+#precision 10
+#range 30
 #nextspell 2663
 #restricted 106 -- LA Caelum
 #end
@@ -142496,7 +142498,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #end
 
 #selectspell 2707
-#copyspell 239 -- Confusion
+#copyspell 1328 -- Confusion
 #name "Madness of the Wild"
 #descr "The spell will imbue a group of enemy soldiers with the revelry of the Pan. Unless they can resist the effects the targeted units will enter a state of wild abandon and will discard their clothes and armor. In their madness they can easily attack friends instead of enemies."
 #researchlevel 5
@@ -142505,6 +142507,8 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #path 1 8
 #pathlevel 0 3
 #pathlevel 1 1
+#range 5015
+#precision 20
 #aoe 1005 -- 8+
 #damage 17592186044544  -- Enrage & destroy armor
 #fatiguecost 30
@@ -142630,11 +142634,12 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #path 1 8
 #pathlevel 0 3
 #pathlevel 1 1
-#aoe 10
+#aoe 2014 --20++
 #fatiguecost 40
 #range 15
+#precision 100
 #damage 384  -- Berserker Rage + Strength
-#spec 549589120  -- AN, MR Negates, No effect on lifeless or mindless, Friendlies only
+#spec 549585024  -- AN, No effect on lifeless or mindless, Friendlies only
 #restricted 97 -- LA Pangaea
 #end
 
@@ -144642,6 +144647,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Serpent Gaze"
 #descr "The Naga have taught the monkey folk many secrets, including the power to hold enemies in place with only a look, as snakes are reputed to do to their prey. The targets will be unable to act for a short period unless they are of strong will."
 #researchlevel 0
+#casttime 50
 #range 10
 #aoe 1
 #fatiguecost 10
@@ -144653,7 +144659,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Serpent Dance"
 #descr "The caster fascinates enemies with an intricate weaving dance, as snakes are reputed to do to their prey. Several enemy soldiers viewing the dance will be unable to act for a short period unless they are of strong will."
 #researchlevel 2
-#range 20
+#range 5025
 #pathlevel 0 2
 #aoe 1003
 #fatiguecost 20
@@ -145476,7 +145482,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 4
 #fatiguecost 20
 #range 10
-#aoe 1001 -- 3+
+#aoe 2001 -- 5++
 #effect 10
 #damage 131072 -- flight
 #precision 3
@@ -145494,9 +145500,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #range 10
 #path 0 0
 #pathlevel 0 2
-#aoe 1000
+#aoe 1001
 #fatiguecost 30
-#precision 3
+#precision 100
 #damage 17408  -- Heat Aura and Fireres
 #spec 4210688  -- Ignore shields, friendlies only
 #restricted 17 -- Hinnom
@@ -146547,7 +146553,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 0
 #pathlevel 0 3
 #pathlevel 1 1
-#fatiguecost 200
+#fatiguecost 100
 #spec 8388608  -- cast UW
 #onlyatsite 129  -- The Dark Crystal
 #onlymnr 1702  -- Basalt King
@@ -147552,7 +147558,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #effect 10131
 #nreff 1
 #damage 0
-#fatiguecost 400
+#fatiguecost 300
 #restricted 127 -- LA R'lyeh
 #restricted 89 -- MA R'lyeh
 #onlymnr 3858  -- Starspawn Priest
@@ -149819,6 +149825,7 @@ All effects scale with friendly Dominion."
 #range 10
 #path 0 0
 #aoe 1003
+#spec 12582912 -- UWOK, friendly only
 #damage 17408  -- Heat Aura and Fireres
 #restricted 72 -- Nazca
 #end
@@ -150892,6 +150899,7 @@ All effects scale with friendly Dominion."
 #path 1 9
 #pathlevel 1 1
 #effect 28
+#range 5025
 #damage 999
 #fatiguecost 20
 #restricted 186 -- Zion
@@ -150921,7 +150929,7 @@ All effects scale with friendly Dominion."
 #pathlevel 1 1
 #damage 262400  -- Quicken & Rage
 #fatiguecost 20
-#aoe 1003
+#aoe 2003
 #ainocast 1
 #explspr 10003
 #nextspell 3351
@@ -151486,7 +151494,7 @@ All effects scale with friendly Dominion."
 #effect 29  -- Charm
 #damage 999
 #aoe 1
-#range 25
+#range 40
 #nreff 1
 #precision 100
 #fatiguecost 60
@@ -151615,7 +151623,7 @@ All effects scale with friendly Dominion."
 #aoe 1
 #effect 11
 #fatiguecost 20
-#range 30
+#range 5025
 #nreff 1
 #damage 2
 #precision 100
@@ -152006,6 +152014,7 @@ All effects scale with friendly Dominion."
 #school 5
 #researchlevel 5
 #path 0 5
+#range 100
 #pathlevel 0 2
 #fatiguecost 40
 #restricted 194
@@ -156317,7 +156326,7 @@ With this spell, the caster may find a roaming band of Aphroi and return them to
 #school 1 -- Alteration
 #researchlevel 6
 #path 0 2 -- Water
-#pathlevel 0 3
+#pathlevel 0 2
 #effect 10599 -- +100
 #nreff 1
 #damage 111 -- Gift of Water Breathing
@@ -156325,18 +156334,18 @@ With this spell, the caster may find a roaming band of Aphroi and return them to
 #spec 8388608
 #end
 
-#selectspell 3838 -- Deep Breath, 1 -> 40 gow
+#selectspell 3838 -- Deep Breath, 1 -> 80 gow
 #name "Deep Breath"
 #descr "The caster learns how to store a great amount of air in the depths of the ocean, enabling them to take a large number of soldiers into the deep."
 #details "Grants Gift of Waterbreathing: 80"
 #school 5 -- Thaumaturgy
 #researchlevel 3
 #path 0 1 -- Air
-#pathlevel 0 2
+#pathlevel 0 1
 #effect 10579 -- +80
 #nreff 1
 #damage 111 -- Gift of Water Breathing
-#fatiguecost 200
+#fatiguecost 100
 #spec 8388608
 #end
 
@@ -156670,7 +156679,7 @@ Underwater: Targets must resist the effects of the spell a second time with an e
 #nreff 1
 #range 50
 #effect 2 -- Damage
-#prec 20
+#precision 20
 #damage 5
 #flightspr -1
 #casttime 75
@@ -159426,6 +159435,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #descr "Adur is, to those of the pyrenian mountains, the energy that holds everything together. It is found in all manner of beings and is used by witches and wizards to cast their spells. It is also the magic of luck and fate, and by channeling it carefully a mage may temporarily grant good luck and foresight to a small group of soldiers."
 #details "A lucky unit has a 75% chance of escaping an otherwise deadly blow or spell. Luck does not affect undead or inanimate creatures."
 #path 0 6
+#aoe 2
 #restricted 14 -- EA Pyrene
 #restricted 62 -- MA Pyrene
 #restricted 123 -- LA Pyrene
@@ -160166,7 +160176,8 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #details "+10 Fire Resistance
 Animals only: Blunt and slash melee attacks will stun on hit (size or str can negate)."
 #fatiguecost 40
-#aoe 1002 -- 4+
+#aoe 2002 -- 6++
+#precision 100
 #school 4 -- ench
 #path 0 0
 #pathlevel 0 2
@@ -160195,7 +160206,8 @@ Animals only: Blunt and slash melee attacks will stun on hit (size or str can ne
 #details "+10 Shock Resistance
 Animals only: Protective Force 20"
 #fatiguecost 40
-#aoe 1002 -- 4+
+#aoe 2002 -- 6++
+#precision 100
 #school 4 -- ench
 #path 0 1
 #pathlevel 0 2
@@ -160214,7 +160226,7 @@ Animals only: Protective Force 20"
 #details "+10 Fire Resistance
 Animals only: +4 Strength, blunt and slash melee attacks will stun on hit (size or str can negate)."
 #fatiguecost 100
-#aoe 4004 -- 20+4
+#aoe 5010 -- 30+5
 #school 4 -- ench
 #path 0 0
 #pathlevel 0 4
@@ -160233,7 +160245,7 @@ Animals only: +4 Strength, blunt and slash melee attacks will stun on hit (size 
 #details "+10 Shock Resistance
 Animals only: Protective Force 20"
 #fatiguecost 100
-#aoe 4004 -- 20+4
+#aoe 5010 -- 30+5
 #school 4 -- ench
 #path 0 1
 #pathlevel 0 4
@@ -163893,7 +163905,7 @@ name "Frost Fiend"
 #aoe 1001 -- 3+
 #fatiguecost 30
 #range 5025 -- 35+
-#prec 20
+#precision 20
 #end
 
 #selectspell 4392 -- bigger decay
@@ -163905,7 +163917,7 @@ name "Frost Fiend"
 #aoe 3001 -- 10+++
 #fatiguecost 30
 #range 5025 -- 35+
-#prec 20
+#precision 20
 #end
 
 #selectspell 4393 -- Big Prison
@@ -163917,7 +163929,7 @@ name "Frost Fiend"
 #aoe 3003 -- 15+++
 #fatiguecost 100
 #range 5025 -- 35+
-#prec 20
+#precision 20
 #end
 
 
@@ -164185,6 +164197,7 @@ name "Frost Fiend"
 
 #selectspell 526 -- Gift of the Fourth Soul
 #precision 100
+#aoe 2
 #end
 
 #selectspell 2454 -- Sharpen Steel
@@ -164378,6 +164391,18 @@ name "Frost Fiend"
 #selectspell 256 -- Keres
 #fatiguecost 800
 #restricted 205
+#end
+
+#selectspell 257 -- Rhapsody of Life
+#descr "The Rhapsodies are mystical spellsongs and elegies associated with the cycles of life and death. The Rhapsody of Life reinvigorates and heals a small group of living beings."
+#precision 100
+#aoe 1
+#end
+
+#selectspell 259 -- Rhapsody of the Dead
+#range 5015
+#aoe 2006 -- 8++
+#damage 2002 -- 4++
 #end
 
 #selectspell 265 -- Contact Hesperides
@@ -164840,7 +164865,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #nogeosrc 4096  -- Cannot cast in Caves
 #researchlevel 4
 #fatiguecost 20
-#range 35
+#range 5035
 #end
 
 #selectspell 465 -- Summon Amesha Spenta
@@ -164994,16 +165019,18 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 520 -- Break the Second Soul -- Limp
-#precision 10
+#precision 20
+#range 5025
 #end
 
 #selectspell 521 -- Break the Third Soul -- fatigue
-#precision 10
+#precision 20
 #spec 545800320
 #end
 
 #selectspell 522 -- Break the Fourth Soul -- Curse
-#precision 10
+#range 5025
+#precision 100
 #end
 
 #selectspell 523 -- Gift of the First Soul -- Regen
@@ -165011,7 +165038,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 524 -- Gift of the Second Soul -- Blunt res
-#aoe 3
+#aoe 1002
 #end
 
 #selectspell 525 -- Gift of the Third Soul -- Reinvig2 buff
@@ -165020,7 +165047,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 526 -- Gift of the Fourth Soul -- Luck
-#aoe 1
+#aoe 2
 #end
 
 #selectspell 507 -- Monster Toad
@@ -165819,6 +165846,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 1293 -- Despair
 #aoe 2001 -- 7+2
 #precision 100
+#end
+
+#selectspell 1294 -- Geas
+#range 5020
 #end
 
 #selectspell 658 -- Phantasmal Warrior
