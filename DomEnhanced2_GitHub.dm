@@ -135249,8 +135249,6 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #researchlevel 8
 #path 0 3
 #pathlevel 0 5
-#path 1 4
-#pathlevel 1 2
 #damage 68719476736  -- Slow
 #fatiguecost 200
 #spec 8392720  -- UWOK, MRN, Magic Beings Only
@@ -137247,7 +137245,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #fatiguecost 0
 #range 35
 #aoe 1001
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #nextspell 2338
@@ -137267,7 +137265,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #spec 17592194744320  -- Ignore shields, Enemy Sacreds only, UW OK, MR-Hard Neg
@@ -137286,7 +137284,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #flightspr -1
@@ -137306,7 +137304,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #spec 87960938921984  -- Ignore shields, Enemy Sacreds only, No effect on fliers, UWOK, MR-Hard Neg
@@ -137324,7 +137322,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #damage 5
 #range 35
 #pathlevel 0 2
-#precision 8
+#precision 20
 #fatiguecost 0
 #casttime 100
 #fatiguecost 25
@@ -137343,7 +137341,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #spec 17592194744448  -- Ignore shields, AN, Enemy Sacreds only, UWOK, MR-Hard Neg
@@ -137362,7 +137360,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #spec 17592194744320  -- Ignore shields, Enemy Sacreds only, UWOK, MR-Hard Neg
@@ -137386,7 +137384,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #effect 109
@@ -147640,7 +147638,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell "Sailors' Death"
 #name "Word of Drowning"
 #descr "A few nearby air-breathers will feel their lungs immediately begin to fill with salt-water. Any creature that cannot breathe underwater will choke and may drown. This spell ignores the target's armor, however the strong willed can resist it."
-#researchlevel 3
+#researchlevel 4
 #pathlevel 0 1
 #path 1 1
 #pathlevel 1 1
@@ -147649,20 +147647,20 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #aoe 1
 #damage 2008
 #range 5030
-#precision 20
+#precision 100
 #end
 
 #selectspell 3072
 #copyspell "Sailors' Death"
 #name "Curse of Choking Brine"
 #descr "The caster motions towards a group of air-breathers and their lungs immediately begin to fill with salt-water. Any creature that cannot breathe underwater will choke and may drown. This spell ignores the target's armor, however the strong willed can resist it."
-#researchlevel 5
+#researchlevel 6
 #path 1 1
 #pathlevel 1 1
 #fatiguecost 20
 #aoe 1003 -- 6+
 #range 5020
-#precision 20
+#precision 100
 #end
 
 #selectspell 3074
@@ -161752,7 +161750,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #spec 17592731746432  -- AN, Ignore shields, Enemy Sacreds only, Mindless immune, Inanimate immune, UWOK, MR-Hard Neg
@@ -162246,9 +162244,8 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #descr "The spell fills the heart of a few men with furious anger. The raging units will attack anything nearby, even friends."
 #researchlevel 6
 #path 0 0 -- F
-#pathlevel 0 2
-#path 1 7 -- G
-#pathlevel 1 1
+#pathlevel 0 3
+#range 5015
 #aoe 2004 -- 8+2
 #end
 
@@ -163094,7 +163091,7 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #selectspell 4328 -- Steal Breath
 #copyspell 1275 -- Steal Breath
 #name "Steal Breath"
-#descr "The victims of this spell will have their breath stolen from him and their chest crushed as the air leaves their body. Recovering the breath will require quite an effort and the leave the victim exhausted."
+#descr "The victims of this spell will have their breath stolen from them and their chest crushed as the air leaves their body. Recovering the breath will require quite an effort and the leave the victim exhausted."
 --#details ""
 #aoe 1
 #range 5030 -- 35+
@@ -163824,7 +163821,7 @@ name "Frost Fiend"
 
 #selectspell 4385
 #copyspell 762
-#name "Earth Grip "
+#name "Earth Grip"
 #aoe 1
 #school -1
 #spec 4398046511104 --Size or Strength Negates
@@ -163851,8 +163848,8 @@ name "Frost Fiend"
 #end
 
 #selectspell 4388
-#copyspell 1314 --Gift of the Furies
-#name "Army of Fury"
+#copyspell 1314 -- Gift of the Furies
+#name "Furious Army"
 #descr "The caster fills the hearts of men with righteous fury. All friendly soldiers on the battlefield get increased morale and attack skill."
 #researchlevel 8 
 #pathlevel 0 4
@@ -163884,10 +163881,11 @@ name "Frost Fiend"
 
 #selectspell 4390 -- Personal Berserk
 #copyspell 1308 -- Rage of the Cornered Rat
-#name "Inner Fury"
+#name "Frenzy"
 #descr "The caster is provoked into a berserker rage."
 #details "Grants Berserk"
 #researchlevel 3
+#pathlevel 0 1
 #range 0
 #aoe 0
 #ainocast
@@ -163898,7 +163896,7 @@ name "Frost Fiend"
 
 #selectspell 4391 -- big decay
 #copyspell 1267 -- Decay
-#name "Fleshrot"
+#name "Flesh Rot"
 #descr "This spell makes a group of victims age, wither and die at an incredibly fast rate. Victims with high magic resistance and many years left to live might be able to survive the effects of this spell."
 #researchlevel 4
 #pathlevel 0 2
@@ -163920,7 +163918,7 @@ name "Frost Fiend"
 #precision 20
 #end
 
-#selectspell 4393 -- Big Prison
+#selectspell 4393 -- Big Prison of Fire
 #copyspell 1295 -- Prison of Fire
 #name "Chains of Pyriphlogos"
 #descr "Shackles of fire will rise from the ground and bind a great number of enemies. If the victims tries to escape, the shackles become exceedingly hot. Otherwise, the heat stays bearable. A high morale is required to fight the heat and escape. Trying to escape may very well kill a weaker man."
@@ -163928,9 +163926,192 @@ name "Frost Fiend"
 #pathlevel 0 4
 #aoe 3003 -- 15+++
 #fatiguecost 100
-#range 5025 -- 35+
+#range 5025 -- 45+
 #precision 20
 #end
+
+#selectspell 4394 -- Living Whirlpool
+#copyspell 3868 -- Whirlpool
+#name "Living Maelstrom"
+#descr "The caster releases the power of a storm into the surrounding water, creating several large vortices that will dislocate and damage enemies before rapidly dissipating."
+#researchlevel 7
+#pathlevel 0 4
+#fatiguecost 200
+#nreff 503
+#end
+
+#selectspell 4395
+#name "Inner Sun"
+#school -1
+#researchlevel 0
+#effect 23
+#descr "."
+#damage 67108864  -- Inner Sun
+#spec 281690240 
+#aoe 1
+#path 0 0
+#pathlevel 0 1
+#end
+
+#selectspell 4396
+#name "Inner Light"
+#descr "The caster fills the souls of a small group of nearby soldiers with the incandescent light of the sun. When a soldier so affected is slain, a shower of sunlight will shoot forth from the body and burn all undead beings and demons in the vicinity."
+#details "Explosion: 15 AN MR dmg (undeads and demons only), 35 AoE"
+#school 5
+#researchlevel 6
+#path 0 0
+#pathlevel 0 2
+#path 1 4
+#pathlevel 1 1
+#effect 17
+#damage 1
+#nreff 1
+#range 10
+#precision 100
+#aoe 2004
+#flightspr -1
+#explspr 10034
+#sound 16  -- Fire
+#fatiguecost 100
+#ainocast
+#spec 281690240  -- Ignore shields & armor, friendlies only, mindless, demons, and undead immune, UWOK
+#nextspell 4395
+#end
+
+#selectspell 4397
+#copyspell 1261 -- Farstrike
+#name "Greater Farstrike"
+#descr "The caster opens multiple rifts in space and strikes through them with a fist as hard as steel. The strength of the caster adds to the damage of the spell."
+#nreff 1001
+#precision 20
+#range 100
+#researchlevel 5
+#pathlevel 0 2
+#aispellmod -20
+#fatiguecost 20
+#end
+
+#selectspell 4398
+#copyspell 1278 -- Returning
+#name "Homeward"
+#descr "The caster creates a rift in space in an attempt to shift the target's spatial reference, sweeping them back to their home province. If the soldier is unlucky he might get lost in time and might return later, not at all or completely insane."
+#range 30
+#precision 100
+#nreff 1
+#fatiguecost 20
+#aoe 1
+#spec 17592194711680
+#researchlevel 7
+#pathlevel 0 2
+#path 1 7
+#pathlevel 1 1
+#end
+
+#selectspell 4399
+#copyspell 1270 -- Fascination
+#name "Astral Wind"
+#descr "The caster summons an arcane wind from the Astral Plane that blows across a group of soldiers, magically transporting them across the battlefield and leaving them momentarily stunned and disorientated."
+#range 5030
+#precision 100
+#nreff 1
+#fatiguecost 20
+#aoe 2002
+#spec 17592194711680
+#researchlevel 6
+#path 0 1
+#pathlevel 0 2
+#path 1 4
+#pathlevel 1 1
+#strikesound 108
+#explspr 10056
+#nextspell 4173 -- A new place
+#end
+
+#selectspell 4400
+#copyspell 1270 -- Fascination
+#name "Astral Gale"
+#descr "The caster summons a tremendous gale from the Astral Plane that blows across the caster's enemies, magically transporting them across the battlefield and leaving them momentarily stunned and disorientated."
+#range 5025
+#precision 100
+#nreff 1
+#fatiguecost 100
+#aoe 2014
+#spec 17592194711680
+#researchlevel 8
+#path 0 1
+#pathlevel 0 3
+#path 1 4
+#pathlevel 1 2
+#strikesound 108
+#explspr 10056
+#nextspell 4173 -- A new place
+#end
+
+#selectspell 4401
+#copyspell 674 -- Fire Cloud
+#name "Shimmering Fog"
+#descr "The caster creates a dense fog that settles over a portion of the battlefield. From within the fog, strange shimmering lights can be seen and a cruel laughter can be heard. The fog remains on the battlefield for some time and is very dangerous for those without a strong resistance to magic."
+#school 5
+#researchlevel 5
+#path 0 1
+#pathlevel 0 3
+#path 1 7
+#pathlevel 1 1
+#damage 16777216
+#strikesound 108
+#explspr 10061
+#spec 17180004480
+#end
+
+#selectspell 4402
+#copyspell 4328 -- Steal Breath
+#name "Asphyxiation"
+#descr "With a gesture, the caster creates an airless void which suffocates those caught within it. The victims of this spell will have their breath stolen from them and their chest crushed as the air leaves their body. Recovering the breath will require quite an effort and the leave the victim exhausted."
+#researchlevel 7
+#pathlevel 0 4
+#fatiguecost 30
+#range 5015
+#damage 5020
+#aoe 2017 -- 25++
+#end
+
+#selectspell 4403
+#copyspell 1287 -- Iron Will
+#name "Unyielding Will"
+#descr "The caster strengthens the minds of a large group of soldiers. Their ability to resist magic is increased for the duration of the battle. This spell cannot be cast on mindless beings."
+#researchlevel 6
+#pathlevel 0 3
+#fatiguecost 100
+#aoe 4008 -- 25+++++
+#end
+
+#selectspell 4404
+#copyspell 849 -- Blindness
+#name "Dull the Mind"
+#descr "The caster curses his opponents with a deep melancholia. Soldiers will become depressed, cynical and listless. Thinking becomes hard for them and affected mages will not be able to cast spells. This change is permanent unless the soldier is treated by an experienced healer."
+#details "Afflicts enemies with feeblemind, lowering their attack and defence by 1 and their magic resistance by 5."
+#damage 33554432 -- feeblemind
+#researchlevel 4
+#pathlevel 0 2
+#aoe 1001 -- 3+
+#range 5020 --30+
+#spec 8540288 -- AN, MRN, UWOK, mindless immune.
+#end
+
+#selectspell 4405
+#copyspell 849 -- Blindness
+#name "Petrify Thought"
+#descr "The caster curses the enemy army with a deep melancholia. Soldiers will become depressed, cynical and listless. Thinking becomes hard for them and affected mages will not be able to cast spells. This change is permanent unless the soldier is treated by an experienced healer."
+#details "Afflicts enemies with feeblemind, lowering their attack and defence by 1 and their magic resistance by 5."
+#damage 33554432 -- feeblemind
+#researchlevel 7
+#pathlevel 0 4
+#fatiguecost 30
+#range 5010 --30+
+#aoe 4012 -- 20++++
+#spec 8540288 -- AN, MRN, UWOK, mindless immune.
+#end
+
 
 
 -- END OF NEW SPELLS
@@ -164108,9 +164289,17 @@ name "Frost Fiend"
 #range 5020 -- 45
 #end
 
+#selectspell 1347 -- Gale Gate
+#researchlevel 8
+#end
+
 #selectspell 1351 -- Plague
 #precision 20
 #range 5020 -- 40
+#end
+
+#selectspell 1359 -- Gale Gate
+#researchlevel 7
 #end
 
 #selectspell 3876 -- Amberskin
@@ -165366,7 +165555,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 1273 -- Bonds of Fire
 #aoe 1
 #precision 20
-#range 5030 -- 35+
+#range 5020 -- 25+
 #end
 
 #selectspell 648 -- Fire Blast
@@ -166688,9 +166877,13 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1286 -- Sailor's Death
+#path 1 1
+#pathlevel 0 2
+#pathlevel 1 1
+#researchlevel 5
 #aoe 1000 -- 3+
-#range 5020 -- 35+
-#precision 20
+#range 5025 -- 35+
+#precision 100
 #end
 
 #selectspell 1300 -- Paralyze
@@ -166773,6 +166966,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 829 -- Arrow Ward
 #aoe 4008 -- 20+4
+#end
+
+#selectspell 788 -- Inner Sun
+#school 5
 #end
 
 #selectspell 789 -- Protective Winds
@@ -167265,6 +167462,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1261 -- Far Strike
+#pathlevel 0 1
+#range 100
 #precision 20
 #end
 
@@ -167311,11 +167510,9 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1282 -- Rage
 #descr "The spell fills the heart of a few men with furious anger. The raging units will attack anything nearby, even friends."
-#pathlevel 0 1
-#path 1 7 -- G
-#pathlevel 1 1
+#pathlevel 0 2
 #aoe 1
-#range 5025
+#range 5020
 #aispellmod -20
 #end
 
@@ -167350,13 +167547,22 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #pathlevel 0 3
 #end
 
-#selectspell 1319 -- Earth Sense
+#selectspell 1319 --Earth Sense--
+#copyspell 1330 --Choleria Copy to remove 'spell is broken if the caster leaves prov, and keep 3/turns per gem--
+#name "Earth Sense"
+#descr "The caster attunes himself with the earth itself to sense who treads upon it. Enemies trying to sneak around in the province will be detected and traced, even if invisible."
+#details "Patrol strength +100 vs enemy units. Able to detect invisible units as well. Duration: 1 month + 3 months per extra gem."
+#damage 121
+#researchlevel 5
+#path 0 3
 #pathlevel 0 3
-#fatiguecost 400
+#fatiguecost 500
+#friendlyench 1
+#hiddenench 1
 #end
 
 #selectspell 1295 -- Prison of Fire
-#range 5015
+#range 5020
 #aoe 1002
 #precision 20
 #end
