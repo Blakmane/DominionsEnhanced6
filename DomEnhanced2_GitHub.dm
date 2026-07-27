@@ -163177,20 +163177,6 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #restricted 120 -- Piconye
 #end
 
-#selectspell 4335 -- Calm Self
-#copyspell 1276 -- Calm Emotions
-#name "Tranquility"
-#descr "The caster is filled with calming emotions."
-#details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates)."
-#aoe 0
-#range 0
-#school -1
-#researchlevel -1
-#spec 8536064 -- Ignore shields, no mindless, UWOK
-#end
-
-
-
 #selectspell 4336 -- Taurus EPower
 #name "Taurus Sign"
 #descr "."
@@ -164101,7 +164087,7 @@ name "Frost Fiend"
 #selectspell 4405
 #copyspell 849 -- Blindness
 #name "Petrify Thought"
-#descr "The caster curses the enemy army with a deep melancholia. Soldiers will become depressed, cynical and listless. Thinking becomes hard for them and affected mages will not be able to cast spells. This change is permanent unless the soldier is treated by an experienced healer."
+#descr "The caster curses many of his foes with a deep melancholia. Soldiers will become depressed, cynical and listless. Thinking becomes hard for them and affected mages will not be able to cast spells. This change is permanent unless the soldier is treated by an experienced healer."
 #details "Afflicts enemies with feeblemind, lowering their attack and defence by 1 and their magic resistance by 5."
 #damage 33554432 -- feeblemind
 #researchlevel 7
@@ -164112,7 +164098,55 @@ name "Frost Fiend"
 #spec 8540288 -- AN, MRN, UWOK, mindless immune.
 #end
 
+#selectspell 4406
+#copyspell 1318 -- Serenity
+#name "Tranquility"
+#descr "The caster bathes the battlefield in a powerful phlegmatic aura of calm and passivity, quenching the emotions of both friend and foe. Berserkers will calm down and eventually lose their berserker rage. Less aggressive units will simply become a bit less inclined to continue fighting."
+#details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates). Can only be cast once per combat round."
+#school -1
+#pathlevel 0 4
+#fatiguecost 200
+#explspr 10005
+#range 0
+#aoe 666 -- Battlefield
+#end
 
+#selectspell 4407 -- Tranquility Clone
+#copyspell 4406
+#school 5
+#researchlevel 8
+#effect 133
+#damage 378 -- Ench180 -- Tranquility
+#ainocast 1
+#nextingeo -1
+#nextspell 4406 -- Tranquility
+#end
+
+#selectspell 4408 -- Calm Self
+#copyspell 1276 -- Calm Emotions
+#name "Calm Self"
+#aoe 0
+#range 0
+#school -1
+#researchlevel 0
+#spec 8536064 -- Ignore shields, no mindless, UWOK
+#end
+
+#selectspell 4409 -- Calm Self
+#copyspell 1121 -- Breath of Winter
+#name "Inner Peace"
+#descr "The caster focuses inwards on their phlegmatic humors to quench their emotions. They will find themselves less prone to enter and maintain a berserker rage, but will fight in melee with reduced vigor as a consequence."
+#details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates)."
+#effect 17
+#damage 1
+#school 5
+#researchlevel 0
+#casttime 50
+#fatiguecost 5
+#explspr 10061
+#spec 8536064 -- Ignore shields, no mindless, UWOK
+#nextspell 4408 -- Calm Self
+#end
 
 -- END OF NEW SPELLS
 
@@ -164562,6 +164596,7 @@ name "Frost Fiend"
 #selectspell 1276 -- Calm Emotions
 #aoe 1003 -- 3+
 #range 5030 -- 35+
+#explspr 10061
 #spec 8802304 -- MRN, ignores shields, no mindless, only enemy
 #end
 
@@ -167156,6 +167191,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #aoe 2006 -- 12+2
 #range 5020 -- 35+
 #spec 8802304 -- only enemies
+#explspr 10061
 #end
 
 #selectspell 1313 -- Visions of Death
@@ -172799,7 +172835,7 @@ Increases Natural Protection by 2 for each level of heat in the province."
 --#itemcost2 -60 -- 2N
 #constlevel 3
 #berserk -9
-#autospell "Tranquility"
+#autospell "Inner Peace"
 #end
 
 
