@@ -162241,7 +162241,7 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #selectspell 4274
 #copyspell 1282 -- rage
 #name "Hate"
-#descr "The spell fills the heart of a few men with furious anger. The raging units will attack anything nearby, even friends."
+#descr "The spell fills the hearts of a many men with choleria, igniting a violent and uncontrollable anger within them. The raging units will attack anything nearby, even friends."
 #researchlevel 6
 #path 0 0 -- F
 #pathlevel 0 3
@@ -164074,10 +164074,11 @@ name "Frost Fiend"
 #selectspell 4404
 #copyspell 849 -- Blindness
 #name "Dull the Mind"
-#descr "The caster curses his opponents with a deep melancholia. Soldiers will become depressed, cynical and listless. Thinking becomes hard for them and affected mages will not be able to cast spells. This change is permanent unless the soldier is treated by an experienced healer."
+#descr "The caster curses his opponents with a deep and unshakeable melancholia. Soldiers will become depressed, cynical and listless. Thinking becomes hard for them and affected mages will not be able to cast spells. This change is permanent unless the soldier is treated by an experienced healer."
 #details "Afflicts enemies with feeblemind, lowering their attack and defence by 1 and their magic resistance by 5."
 #damage 33554432 -- feeblemind
 #researchlevel 4
+#path 0 3
 #pathlevel 0 2
 #aoe 1001 -- 3+
 #range 5020 --30+
@@ -164087,10 +164088,11 @@ name "Frost Fiend"
 #selectspell 4405
 #copyspell 849 -- Blindness
 #name "Petrify Thought"
-#descr "The caster curses many of his foes with a deep melancholia. Soldiers will become depressed, cynical and listless. Thinking becomes hard for them and affected mages will not be able to cast spells. This change is permanent unless the soldier is treated by an experienced healer."
+#descr "The caster curses the minds of his foes with a deep and unshakeable melancholia. Soldiers will become depressed, cynical and listless. Thinking becomes hard for them and affected mages will not be able to cast spells. This change is permanent unless the soldier is treated by an experienced healer."
 #details "Afflicts enemies with feeblemind, lowering their attack and defence by 1 and their magic resistance by 5."
 #damage 33554432 -- feeblemind
 #researchlevel 7
+#path 0 3
 #pathlevel 0 4
 #fatiguecost 30
 #range 5010 --30+
@@ -164147,6 +164149,21 @@ name "Frost Fiend"
 #spec 8536064 -- Ignore shields, no mindless, UWOK
 #nextspell 4408 -- Calm Self
 #end
+
+#selectspell 4410 -- exsiccation
+#copyspell 1298 -- curse of the desert
+#name "Exsiccation"
+#descr "This spell will affect a large number of targets with severe dehydration. The dehydrated targets will become more and more exhausted and may eventually lose consciousness. The duration of the dehydration depends on the magic resistance of the targets. Undead beings and constructs are not affected by this spell."
+#researchlevel 7
+#pathlevel 0 3
+#range 40
+#spec 17592723439744  -- Hard MR Neg
+#aoe 5010 -- 30+5
+#fatiguecost 100
+#end
+
+
+
 
 -- END OF NEW SPELLS
 
@@ -167545,7 +167562,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1282 -- Rage
-#descr "The spell fills the heart of a few men with furious anger. The raging units will attack anything nearby, even friends."
+#descr "The spell fills the hearts of a few men with choleria, igniting a violent and uncontrollable anger within them. The raging units will attack anything nearby, even friends."
 #pathlevel 0 2
 #aoe 1
 #range 5020
