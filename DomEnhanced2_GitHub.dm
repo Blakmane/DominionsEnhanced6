@@ -164200,6 +164200,17 @@ name "Frost Fiend"
 #fatiguecost 100
 #end
 
+#selectspell 4411
+#copyspell "Stygian Paths"
+#name "Umbral Stair"
+#descr "Through their connection to the underworld, the death mage opens a dark stairwell into the realm of death, temporarily connecting his current location to an especially prepared distant laboratory. The realm of death is not a friendly one, and using the Umbral Stair risks injury or death."
+#details "Spirit attacks: 1 AN dmg + death MR attack. Stealthy units have only 20% chance of being attacked. Caster can not take advantage of stealth."
+#effect 10077
+#provrange 6
+#pathlevel 0 4
+#researchlevel 6
+#fatiguecost 1200
+#end
 
 -- END OF NEW SPELLS
 
