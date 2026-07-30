@@ -91419,11 +91419,15 @@ Initiates of the Deep can be recruited in any land fort."
 #montagweight 2
 #end
 
+#selectmonster 473  -- Telestic inanimate
+#magicskill 9 3  -- 3H
+#end
 
 #selectmonster 476  -- Lumber Construct
 #magicskill 6 1  -- 1N
 #custommagic 8192 50  -- 50%N
 #end
+
 
 
 #selectmonster 487  -- Chimaera
@@ -124138,6 +124142,39 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #end
 
+#newsite 2622 --Choleria Site 1--
+#name "Choleric Production" -- +1 prod +1 Turmoil--
+#path 0
+#level 9
+#rarity 5
+#incscale 0 --Turmoil
+#decscale 1 --Productivity--
+#end 
+
+#newsite 2623 --Choleria Site 2-- 
+#name "Choleric Production " --adds the second instance of productivity--
+#path 0
+#level 9
+#rarity 5
+#decscale 1 --productivity--
+#end 
+
+#newsite 2624 --Tranquil Site--
+#name "Sanguine Tranquility" -- +1 Magic, +1 Sloth
+#path 0
+#level 9
+#rarity 5
+#decscale 5 --Magic
+#incscale 1 --sloth
+#end
+
+#newsite 2625 --Phlegmatic Site
+#name "Phlegmatic Passivity"
+#path 2
+#level 9
+#rarity 5
+#end 
+
 -- 2621 used by Marverni forest lords
 
 -- 2917 used by iram summons
@@ -135033,7 +135070,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #school 5
 #researchlevel 7
 #path 0 7 -- G
-#pathlevel 0 4
+#pathlevel 0 3
 #path 1 4 -- S
 #pathlevel 1 2
 #effect 10131
@@ -135363,11 +135400,11 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #name "Ether Drain"
 #descr "The caster creates a disturbance in the ether that drains away magic from the targeted province. Magical energy will fall in the province, mages will find their spells more difficult to cast and magical research will be slowed. The mage can target any province of his choice and those affected will not know who has cast this spell upon them."
 #school 5
-#researchlevel 7
+#researchlevel 5
 #path 0 4
 #path 1 3
 #pathlevel 0 3
-#pathlevel 1 3
+#pathlevel 1 2
 #effect 10042
 #damage 24
 #spec 8388608  -- May use UW
@@ -135491,10 +135528,10 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #descr "This ritual heals the mind of another, restoring their faculties. The target unit must be in the same province as the caster, and the spell will not cure the target of any insanity. The healing magic will not affect Lifeless or undead units or those without a mind."
 #details "Heals any Mute, Feeblemind or Dementia affliction from target."
 #path 0 4
-#pathlevel 0 3
+#pathlevel 0 2
 #path 1 6
 #pathlevel 1 1
-#fatiguecost 1000
+#fatiguecost 500
 #damage 137476702208  -- Mute, Feeblemind & Dementia
 #spec 545914880  -- No effect on lifeless, mindless or undead, UW OK
 #end
@@ -135534,11 +135571,12 @@ Requires a Ring of Returning equipped to the recipient."
 #name "Reform Magic Being"
 #descr "The caster uses astral magic to reform the body and mind of a magical creature, curing them of all bodily and mental ills. The target unit must be in the same province as the caster, and the healing magic will not affect Lifeless or Undead units."
 #school 5
-#researchlevel 6
+#researchlevel 5
 #path 0 4
 #path 1 6
-#pathlevel 1 2
-#fatiguecost 1500
+#pathlevel 0 3
+#pathlevel 1 1
+#fatiguecost 800
 #damage 138646654979  -- All Afflictions
 #spec 545783824  -- Magic Beings Only, No effect on lifeless or undead
 #end
@@ -135669,12 +135707,12 @@ Requires a Ring of Returning equipped to the recipient."
 #descr "The caster calls on a great quantity of Astral energy to expand their mental powers. Using this they will dominate and crush the will of the local populace to remove any trace of dissent. This ritual is so powerful that the energies released will emanate widely, and rulers across the world will find their subjects becoming more docile and compliant."
 #details "Province unrest reduced by 100, worldwide unrest reduced by 10"
 #school 5
-#researchlevel 7
+#researchlevel 6
 #path 0 4
 #pathlevel 0 5
 #damage -1
 #effect 10083
-#fatiguecost 1800
+#fatiguecost 1500
 #nreff 1
 #nextspell 2198
 #end
@@ -136958,10 +136996,10 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "Witches and Witch Doctors are often called upon to remove hexes and curses. With this ritual the Curse affecting an unfortunate target is lifted. The target unit must be in the same province as the caster, and the healing magic will not affect Lifeless or Undead units."
 #researchlevel 5
 #path 0 6 -- N
-#pathlevel 0 3
+#pathlevel 0 2
 #path 1 7 -- G
 #pathlevel 1 1
-#fatiguecost 800
+#fatiguecost 500
 #damage 2  -- Curse
 #spec 545783808  -- No effect on lifeless or undead, UW OK
 #end
@@ -136971,8 +137009,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #name "Brew Panacea"
 #descr "The Panacea is a remedy first stolen from the Pantokrator themselves, brewed only from the rarest herbs and ingredients. The caster spends a full month brewing a single dose which may be given to a target to cure them of all bodily and mental ills. The target unit must be in the same province as the caster, and the healing magic will not affect Lifeless or Undead units."
 #researchlevel 8
-#pathlevel 0 5
-#fatiguecost 2000
+#pathlevel 0 4
+#fatiguecost 800
 #damage 138646654979  -- All Afflictions
 #spec 545783808  -- No effect on lifeless or undead, UW OK
 #end
@@ -164163,8 +164201,6 @@ name "Frost Fiend"
 #end
 
 
-
-
 -- END OF NEW SPELLS
 
 
@@ -167135,6 +167171,13 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #aoe 1003 -- 4+
 #end
 
+#selectspell 1301 -- Telestic Animate
+#researchlevel 6
+#fatiguecost 1200
+#pathlevel 0 3 
+#end
+
+
 #selectspell 1305 -- Terror
 #damage 5
 #precision 100
@@ -167167,6 +167210,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #spec 537415808
 #end
 
+#selectspell 1291 -- Whispers of the Wild
+#fatiguecost 200
+#end
+
 #selectspell 1296 -- Furious Warriors
 #aoe 2004 -- 8+2
 #fatiguecost 30 -- 40 -> 30
@@ -167175,6 +167222,11 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectspell 1314 -- Gift of the Furies
 #pathlevel 0 2
 #aoe 5020 -- 30+5
+#end
+
+#selectspell 1315 -- Pyre of Catharsis
+#pathlevel 0 2
+#fatiguecost 300
 #end
 
 #selectspell 1354 -- Charm
@@ -167591,13 +167643,12 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1302
 #notfornation 95
---#pathlevel 0 3
---#fatiguecost 400
---#provrange 4
+#fatiguecost 200
 #end
 
-#selectspell 1310 -- Curse Disease
-#pathlevel 0 3
+#selectspell 1310 -- Cure Disease
+#pathlevel 0 2
+#fatiguecost 300 
 #end
 
 #selectspell 1319 --Earth Sense--
@@ -167665,18 +167716,103 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #fatiguecost 1500
 #end
 
-#selectspell 1333 -- Melancholia
-#hiddenench 1
-#notfornation 102 -- LA Agartha
+
+---Choleria-- 
+
+#selectspell 1330 --Choleria--
+#descr "The caster affects a friendly province with the humor of fire, choleria. The populace becomes energetic and productive, but this manic production also results in chaos and disorder. Productivity and income is increased, but quarrels and disorganization lead to turmoil."
+#details "Production +2 and Turmoil +1 per turn, to a maximum of +2 over the province's natural scales. The enchantment lasts longer if more gems are used in the casting. Provinces with high dominion or opposite scales will take longer to change."
+#researchlevel 6
+#pathlevel 0 3
+#damage 700
+#fatiguecost 1000
+#onlyfriendlydst 1 --Allied and Owned Provinces Only 
+#nextspell 4387 --Choleric Production--
+#end 
+
+#selectspell 4387 --Choleric Production Jumpstart scale change on province where it is cast and places hidden sites--
+#name "Choleric Production" --first instance of productivity and 
+#effect 10042
+#damage 60 --event identifier--
+#pathlevel 0 0
+#path 0
+#school -1
+#researchlevel -1
+#end
+
+--Sanguina-- 
+
+#selectspell 1331 --Sanguina--
+#descr "The caster affects a friendly province with the humor of air, sanguinia. Sanguine people are relaxed, social and whimsical. The province's misfortunes will end and it will become a more magical place. However, it's people will at times be too relaxed and complacent."
+#details "Misfortune scales are removed or greatly reduced, though no luck scales are added. Magic +1 and Sloth +1 per turn, capped at +2 over the province's natural scales. The enchantment lasts longer if more gems are used in the casting. Provinces with high dominion or other scales will take longer to change." 
+#researchlevel 6
+#pathlevel 0 3
+#damage 701
+#fatiguecost 10000
+#onlyfriendlydst 1 --Allied and Owned Provinces Only 
+#nextspell 4388
+#end 
+
+#selectspell 4388 --Sanguina jumpstart scales and add hidden sites--
+#name "Sanguine Tranquility"
+#effect 10042
+#damage 61 --event identifier--
+#pathlevel 0 0
+#path 1
+#school -1
+#researchlevel -1
+#end
+
+--Phlegmatia--
+
+#selectspell 1332 --Phlegmatia
+#copyspell 1331 --Sanguina-- (to get the 3 turns per gem effect)
+#name "Phlegmatia"
+#descr "The caster affects a friendly province with the humor of water, Phlegmatia. The population becomes passive and peaceful, and unrest is lowered. The calming effect is so great that it flows into neighboring provinces as well."
+#details "Unrest is reduced by 5 each month in the affected province and all adjacent provinces."
+#path 0 2
+#researchlevel 6
+#pathlevel 0 3
+#damage 702
+#fatiguecost 10000
+#onlyfriendlydst 1 --Allied and Owned Provinces Only 
+#nextspell 4389 --Phlegmatic Passivity 
+#end
+
+#selectspell 4389 --add hidden site-- 
+#name "Phlegmatic Passivity"
+#effect 10042
+#damage 62 --event identifier--
+#pathlevel 0 0
+#path 1
+#school -1
+#researchlevel -1
+#end
+
+--Melancholia-- 
+
+#selectspell 1333 --Melancholia
+#descr "The caster curses a province with the humor of earth, melancholia. The populance becomes depressed, cynical and listless. Peasants don't care about harvesting and let their livestock wander. Craftsmen only work when they feel like, and even the temples are left untended. The Dominion of the local god will decrease."
+#details "Scale of Sloth is increased by 3 and Dominion is reduced by 5."
+#researchlevel 6
+#effect 10042 --effect--
+#pathlevel 0 3
+#damage 63 --event identifier
+#fatiguecost 10000
+#end 
+
+#selectspell 1338 -- Leprosy
+#researchlevel 7
 #end
 
 #selectspell 133 -- Wither Bones
-#precision 1
+#precision 10
 #end
 
 #selectspell 1345 -- Forgotten Palace
 #fatiguecost 600
 #researchlevel 4
+#pathlevel 0 3
 #spec 8388608
 #end
 
@@ -195880,9 +196016,154 @@ It is now fully repaired and a new crew has been assigned to it."
 #com 3497 -- Wizard
 #end
 
+-- New humours rituals events
 
+#newevent
+#rarity 2 --uncommon bad--
+#req_rare 0 --can't happen outside of event triggers--
+#incscale 0 --turmoil 
+#decscale2 1 --prod
+#id 60 --linked to newspell 4387
+#msg "The province has been gripped with a feeling of manic production! Everyone works in a chaotic frenzy."
+#maybehiddensite 2622 --adds choleric productiion site 1--
+#maybehiddensite 2623 --adds choleric production site 2--
+#end
 
+#newevent --removes sites when the spell ends-- 
+#rarity 5
+#req_noench 700 --choleria
+#removesite 2622 --choleric production-- 
+#removesite 2623 --choleric production 2--
+#req_indepok
+#req_pop0ok
+#nolog
+#notext
+#req_site 1
+#msg "[Choleric Production]"
+#end 
 
+#newevent
+#rarity 2 --uncommon bad--
+#req_rare 0 --can't happen outside of event triggers--
+#decscale 5 --Magic
+#incscale 1 --sloth
+#id 61 --linked to newspell 4388
+#msg "Everyone in the province feels relaxed and whimsical, like their misfortunes are behind them."
+#maybehiddensite 2624 --adds Sanguine Tranquility
+#end
+
+#newevent --Removes Site if Enchantment Ends-- 
+#rarity 5
+#req_noench 701
+#removesite 2624
+#notext
+#nolog
+#req_site 1
+#msg "[Sanguine Tranquility]"
+#end 
+
+#newevent -- removes misfortune if there is misfortune in the province for misf 5
+#rarity 5
+#req_pop0ok
+#req_ench 701
+#req_unluck 5
+#req_luck -5
+#decscale3 4 --+3 luck--
+#msg "misf5 +3 luck"
+#notext
+#nolog
+#req_pop0ok
+#end 
+
+#newevent -- removes misfortune if there is misfortune in the province for misf 4
+#rarity 5
+#req_pop0ok
+#req_ench 701
+#req_unluck 4
+#req_luck -4
+#decscale3 4 --luck +3 luck 
+#msg "Misf4 +3 luck"
+#notext
+#nolog
+#req_pop0ok
+#end 
+
+#newevent -- removes misfortune if there is misfortune in the province for misf 3
+#rarity 5
+#req_pop0ok
+#req_ench 701
+#req_unluck 3
+#req_luck -3
+#decscale3 4 --luck +3 luck 
+#msg "Misf3 +3 luck"
+#notext
+#nolog
+#req_pop0ok
+#end 
+
+#newevent -- removes misfortune if there is misfortune in the province for misf 2
+#rarity 5
+#req_pop0ok
+#req_ench 701
+#req_unluck 2
+#req_luck -2
+#decscale2 4 --luck +2 luck 
+#msg "Misf2 +2 luck"
+#notext
+#nolog
+#req_pop0ok
+#end 
+
+#newevent -- removes misfortune if there is misfortune in the province for misf 1
+#rarity 5
+#req_pop0ok
+#req_ench 701
+#req_unluck 1
+#req_luck -1
+#decscale 4 --luck +1 luck 
+#msg "Misf2 +1 luck"
+#notext
+#nolog
+#req_pop0ok
+#end 
+
+#newevent
+#rarity 5
+#req_noench 702
+#removesite 2625 --Phlegmatic Site--
+#req_site 1
+#msg "remove thing [Phlegmatic Passivity]"
+#notext
+#nolog
+#end 
+
+#newevent
+#rarity 2 --uncommon bad--
+#req_rare 0 --can't happen outside of event triggers--
+#id 62 --linked to newspell 4389
+#msg "Everyone in the province feels relaxed and whimsical, like their misfortunes are behind them."
+#maybehiddensite 2625 --adds Phlegmatic Passivity
+#end
+
+#newevent --unrest reduction in site and nearby
+#rarity 5
+#req_nearbysite 1 --Phlegmatic Site-- 
+#unrest -5
+#req_pop0ok
+#req_indepok
+#msg "unrest reduce?[Phlegmatic Passivity]" --adds site--
+#notext
+#nolog
+#end 
+
+#newevent 
+#rarity 2 --uncommon bad--
+#req_rare 0 --can't happen outside of event triggers--
+#id 63 --linked to Melancholia
+#msg "Everyone in the province is filled with lethargy, and production has ground to a halt. Even the priests at the temples feel no passion for their work, and faith here plummets."
+#incdom -5
+#incscale3 1 --sloth
+#end
 
 -- END OF NEW EVENTS
 
