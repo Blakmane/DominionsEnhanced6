@@ -164212,6 +164212,168 @@ name "Frost Fiend"
 #fatiguecost 1200
 #end
 
+#selectspell 4412
+#copyspell 221 -- Smite
+#name "Exaltation of Fire"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 0
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2339 -- Bonds of Apostasy
+#godpathspell 0
+#end
+
+#selectspell 4413
+#copyspell 221 -- Smite
+#name "Heavenly Exaltation"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 1
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2340 -- Fetter the Faithless
+#godpathspell 1
+#end
+
+#selectspell 4414
+#copyspell 221 -- Smite
+#name "Exaltation of Water"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 2
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2341 -- Mire the Heathens
+#godpathspell 2
+#end
+
+#selectspell 4415
+#copyspell 221 -- Smite
+#name "Exaltation of Stone"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 3
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2342 -- Bury Unbelievers
+#godpathspell 3
+#end
+
+#selectspell 4416
+#copyspell 221 -- Smite
+#name "Exaltation of Power"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 4
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2343 -- Punish Idolatry
+#godpathspell 4
+#end
+
+#selectspell 4417
+#copyspell 221 -- Smite
+#name "Exaltation of Death"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 5
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2344 -- Memento Mori
+#godpathspell 5
+#end
+
+#selectspell 4418
+#copyspell 221 -- Smite
+#name "Exaltation of Thorns"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 6
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2345 -- Entangle Heretics
+#godpathspell 6
+#end
+
+#selectspell 4419
+#copyspell 221 -- Smite
+#name "Exaltation of Bewilderment"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 7
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 4247 -- Dream of Heresy
+#godpathspell 7
+#end
+
+#selectspell 4420
+#copyspell 221 -- Smite
+#name "Sanguine Exaltation"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 8
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2346 -- Fear of God
+#godpathspell 8
+#end
+
 -- END OF NEW SPELLS
 
 
@@ -164372,6 +164534,7 @@ name "Frost Fiend"
 #selectspell 1329 -- Group Luck
 #precision 100
 #aoe 1002
+#fatiguecost 30
 #end
 
 #selectspell 1341 -- Mirror Mind
@@ -164569,8 +164732,38 @@ name "Frost Fiend"
 #details "Each time caster receives damage from an attack a Smite triggers against a random enemy. Maximum 1 Smite per round, extras will continue to trigger in subsequent rounds or if caster dies."
 #end
 
-#selectspell 220 -- - Divine Blessing
-#notfornation 42 -- Therodos
+-- SMITE CYCLE RANGE INCREASES
+
+#selectspell 221
+#range 35
+#end
+
+#selectspell 222 
+#range 35
+#end
+
+#selectspell 224
+#range 30
+#end
+
+#selectspell 226
+#range 30
+#end
+
+#selectspell 232
+#range 30
+#end
+
+#selectspell 235
+#range 35
+#end
+
+#selectspell 238
+#range 35
+#end
+
+#selectspell 240
+#range 35
 #end
 
 #selectspell 244 -- Fire Flies
