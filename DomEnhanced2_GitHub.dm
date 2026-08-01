@@ -532,7 +532,7 @@
 #name "Stone Longspear"
 #len 4
 #att -1
-#damage 3
+#dmg 3
 #end
 
 #newweapon 1526
@@ -676,7 +676,7 @@
 #newweapon 1538
 #copyweapon 644  -- Bronze Long Spear
 #name "Chitin Longspear"
-#damage 4
+#dmg 4
 #end
 
 #newweapon 1539
@@ -746,6 +746,7 @@
 #sound 8
 #rcost 2
 #slash
+#blunt
 #end
 
 #newweapon 1547
@@ -1137,7 +1138,7 @@
 #end
 
 #newweapon 1577
-#name "Shark-Tooth Dagger"
+#name "Sharktooth Dagger"
 #dmg 2
 #att 1
 #def 0
@@ -1148,10 +1149,10 @@
 #end
 
 #newweapon 1578
-#name "Shark-Tooth Spear"
+#name "Sharktooth Longspear"
 #dmg 4
 #att 0
-#def 0
+#def -1
 #len 4
 #rcost 3
 #sound 10
@@ -2899,7 +2900,7 @@
 #copyweapon 373  -- Stone Spear
 #name "Vine-Wreathed Spear"
 #secondaryeffectalways 50  -- Weak Poison
-#damage 3
+#dmg 3
 #end
 
 #newweapon 1773
@@ -4870,7 +4871,7 @@
 #end
 
 #selectweapon 375  -- Dogs
-#damage 0
+#dmg 2
 #halfstr
 #end
 
@@ -20102,9 +20103,9 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #nametype 186
 #gcost 7
 #rcost 1
-#rpcost 6
+#rpcost 5
 #swimming
-#weapon "Spear"
+#weapon "Stone Spear"
 #end
 
 #newmonster 7039
@@ -20195,7 +20196,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #snaketattoo 1
 #rpcost 12
 #swimming
-#weapon "Long Spear"
+#weapon 1578 -- Sharktooth Longspear
 #armor "Crested Helmet"
 #armor "Leather Cuirass"
 #armor "Hide Shield"
@@ -20904,7 +20905,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #undead
 #spiritform
 #pooramphibian
-#weapon "Life Drain"
+#weapon 1924 -- Ghostly Blade
 #end
 
 #newmonster 7062
@@ -67722,6 +67723,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #poormagicleader
 #float
 #weapon 7 -- quarterstaff
+#armor 158
 #researchbonus -4
 #magicskill 2 1
 #custommagic 256 20
@@ -67740,6 +67742,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #poorleader
 #poormagicleader
 #weapon 7 -- quarterstaff
+#armor 158
 #researchbonus -4
 #magicskill 2 1
 #custommagic 256 20
@@ -67912,7 +67915,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/light_mermanhunter2.png"
 #name "Merman Hunter"
 #descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. When a merman village is threatened their strongest hunters are called to battle, armed with long hunting spears, nets, and the tough hide of the sea creatures they have personally slain." 
-#gcost 10
+#gcost 9
 #clearweapons
 #cleararmor
 #weapon 1578 -- Shark-Tooth Spear
@@ -67929,7 +67932,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/light_mermanhunterland2.png"
 #name "Merman Hunter"
 #descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. When a merman village is threatened their strongest hunters are called to battle, armed with long hunting spears, nets, and the tough hide of the sea creatures they have personally slain."
-#gcost 10
+#gcost 9
 #clearweapons
 #cleararmor
 #weapon 1578 -- Shark-Tooth Spear
@@ -100262,6 +100265,10 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #selectmonster 1494 -- Spenta of the Earth
+#armor 158 -- Robes
+#end
+
+#selectmonster 1514 -- Lizard Shaman (Prophet)
 #armor 158 -- Robes
 #end
 
