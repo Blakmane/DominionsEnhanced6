@@ -167345,6 +167345,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #school 5
 #researchlevel 5
 #aoe 4012 -- 20+4
+#fatiguecost 100
 #end
 
 #selectspell 1151 -- Trueshot Warriors
