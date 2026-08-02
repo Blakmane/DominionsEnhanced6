@@ -134231,7 +134231,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #researchlevel 4
 #path 0 2
 #pathlevel 0 3
-#range 25
+#range 5020
 #aoe 5005
 #damage 2199023255552  -- Rusted equipment
 #fatiguecost 40
@@ -138544,6 +138544,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 0 9
 #pathlevel 0 1
 #fatiguecost 0
+#precision 100
 #restricted 8 -- EA Ermor
 #end
 
@@ -145512,6 +145513,8 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #descr "The caster uses the teachings of Semyaza, master of herbalism, to heal a few nearby troops."
 #pathlevel 0 2
 #aoe 1000
+#precision 100
+#damage 5020
 #restricted 17 -- Hinnom
 #restricted 184 -- Sitecah
 #restricted 119 -- Feminie
@@ -146156,7 +146159,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 2
 #pathlevel 1 1
 #effect 11
-#precision 4
+#precision 10
 #fatiguecost 30
 #aoe 1002
 #nreff 1
@@ -147035,7 +147038,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #flightspr -1
 #sound 21
 #fatiguecost 20
-#precision 5
+#precision 10
 #spec 41959424  -- UW Only, Ignores shields
 #restricted 44
 #nextspell "Area Weak Poison"
@@ -149159,6 +149162,7 @@ All effects scale with friendly Dominion."
 #name "Ignite Unbeliever"
 #descr "In Marignon the inquisitors are adept at the use of fire magic to exact the truth from sinners. With this spell one targeted enemy is set ablaze. The spell ignores enemy armor, but it is not always strong enough to kill the victim. Also, rain or snow will put the flames out very quickly."
 #researchlevel 0
+#range 35
 #restricted 61 -- MA Marignon
 #end
 
@@ -149755,6 +149759,8 @@ All effects scale with friendly Dominion."
 #path 1 9
 #pathlevel 1 1
 #fatiguecost 80
+#aoe 2004
+#precision 10
 #restricted 116 -- Bogarus
 #end
 
@@ -157038,6 +157044,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #range 5025 -- 35+5
 #effect 3 -- Fatigue
 #damage 5015 -- 25+5
+#precision 20
 #spec 1152921505186209856 -- UWOK, UWonly, AP, poison, ignores shields, no lifeless, no undead, extra effect on damage
 #explspr 10059
 #flightspr -1
@@ -161374,6 +161381,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 0 2
 #fatiguecost 30
 #aoe 2004 -- 8+2
+#range 5025
 #restricted 207 -- Bantay Tubig
 #end
 
@@ -162217,7 +162225,8 @@ Underwater: AoE 10+2"
 #name "Levitation"
 #descr "A few soldiers are granted the ability to float a few inches above the ground."
 #details "Floating units cannot be targeted by some spells like earth grip or earthquakes."
-#aoe 3
+#school 5
+#aoe 1003
 #fatiguecost 20
 #pathlevel 0 1
 #researchlevel 3
@@ -164122,6 +164131,7 @@ name "Frost Fiend"
 #descr "The caster curses his opponents with a deep and unshakeable melancholia. Soldiers will become depressed, cynical and listless. Thinking becomes hard for them and affected mages will not be able to cast spells. This change is permanent unless the soldier is treated by an experienced healer."
 #details "Afflicts enemies with feeblemind, lowering their attack and defence by 1 and their magic resistance by 5."
 #damage 33554432 -- feeblemind
+#school 5
 #researchlevel 4
 #path 0 3
 #pathlevel 0 2
@@ -164136,6 +164146,7 @@ name "Frost Fiend"
 #descr "The caster curses the minds of his foes with a deep and unshakeable melancholia. Soldiers will become depressed, cynical and listless. Thinking becomes hard for them and affected mages will not be able to cast spells. This change is permanent unless the soldier is treated by an experienced healer."
 #details "Afflicts enemies with feeblemind, lowering their attack and defence by 1 and their magic resistance by 5."
 #damage 33554432 -- feeblemind
+#school 5
 #researchlevel 7
 #path 0 3
 #pathlevel 0 4
@@ -164381,6 +164392,20 @@ name "Frost Fiend"
 #godpathspell 8
 #end
 
+#selectspell 4421
+#copyspell 1145 -- Heal
+#name "Mass Heal"
+#descr "This spell can heal up a group of targets within close range. The spell doesn't affect inanimate beings."
+#school 5
+#range 15
+#pathlevel 0 2
+#researchlevel 5
+#fatiguecost 20
+#precision 100
+#nreff 1001 -- 3+
+#damage 5020
+#end
+
 -- END OF NEW SPELLS
 
 
@@ -164474,6 +164499,12 @@ name "Frost Fiend"
 #precision 100
 #end
 
+#selectspell 1115 -- Healing Touch
+#school 5
+#precision 100
+#damage 5025
+#end
+
 #selectspell 1118 -- Ignite Arrows
 #precision 100
 #end
@@ -164496,6 +164527,12 @@ name "Frost Fiend"
 
 #selectspell 1144 -- Regeneration
 #precision 100
+#end
+
+#selectspell 1145 -- Heal
+#school 5
+#precision 100
+#damage 5025
 #end
 
 #selectspell 1150 -- Levitate Soldiers
@@ -164845,6 +164882,7 @@ name "Frost Fiend"
 
 #selectspell 775 -- Gooey Water
 #aoe 1004 -- 6+
+#precision 10
 #end
 
 #selectspell 637 -- Gust of Winds
@@ -165319,6 +165357,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 440
 #restricted 58 -- Eriu
+#end
+
+#selectspell 440 -- Curse of Balor
+#range 5015
 #end
 
 #selectspell 441 -- Bean Sidhe
@@ -165842,6 +165884,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 647 -- Bewitching Lights
 #aoe 2003 -- 5++
+#precision 100
 #spec 25559168 -- AN, MRNE, mindless immune, enemies only, UWok
 #end
 
@@ -166537,7 +166580,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 832  -- Winter's Chill
 #aoe 2004 -- 8+2
-#range 5025 --35+
+#range 5025 -- 35+
 #pathlevel 0 2
 #end
 
@@ -167299,7 +167342,9 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 
 #selectspell 1150 -- Levitate Soldiers
-#aoe 2000 -- 4+2
+#school 5
+#researchlevel 5
+#aoe 4012 -- 20+4
 #end
 
 #selectspell 1151 -- Trueshot Warriors
@@ -167461,6 +167506,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectspell 1460 -- Soul Transaction
 #descr "The caster tries to buy the soul and servitude of the target with the promise to protect him from his former masters. If the persuasion is successful the target is granted invisibility by infernal forces as he tries to leave the battle. If he successfully leaves the battle he will join his new master. The spell is impossible to resist magically, but those of strong morals are rarely affected."
 #spec 1152930300700016768 -- No MRNH
+#end
+
+#selectspell 1462 -- Featherweight Army
+#school 5
 #end
 
 #selectspell 1464 -- Lauma
@@ -168099,7 +168148,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 252 -- Bleed
 #aoe 1
-#precision 10
+#precision 20
 #end
 
 #selectspell 1379 -- Blood Burst
@@ -168135,6 +168184,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectspell 1389 -- Agony
 #notfornation 116
 #aoe 2004
+#precision 10
 #end
 
 #selectspell 1390 -- Banish Demon
