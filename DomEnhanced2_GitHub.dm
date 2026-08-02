@@ -164406,6 +164406,8 @@ name "Frost Fiend"
 #damage 5020
 #end
 
+--- SPELLIDs 4422 and 4423 USED FOR RITUAL EFFECTS, SKIP
+
 -- END OF NEW SPELLS
 
 
@@ -167473,6 +167475,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1296 -- Furious Warriors
 #aoe 2004 -- 8+2
+#researchlevel 6
 #fatiguecost 30 -- 40 -> 30
 #end
 
@@ -168011,10 +168014,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #damage 701
 #fatiguecost 10000
 #onlyfriendlydst 1 --Allied and Owned Provinces Only 
-#nextspell 4388
+#nextspell 4422
 #end 
 
-#selectspell 4388 --Sanguina jumpstart scales and add hidden sites--
+#selectspell 4422 --Sanguina jumpstart scales and add hidden sites--
 #name "Sanguine Tranquility"
 #effect 10042
 #damage 61 --event identifier--
@@ -168037,10 +168040,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #damage 702
 #fatiguecost 10000
 #onlyfriendlydst 1 --Allied and Owned Provinces Only 
-#nextspell 4389 --Phlegmatic Passivity 
+#nextspell 4423 --Phlegmatic Passivity 
 #end
 
-#selectspell 4389 --add hidden site-- 
+#selectspell 4423 --add hidden site-- 
 #name "Phlegmatic Passivity"
 #effect 10042
 #damage 62 --event identifier--
