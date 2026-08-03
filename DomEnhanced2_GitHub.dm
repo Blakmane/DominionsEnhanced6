@@ -135520,7 +135520,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #name "Empower Magic Beings"
 #descr "The caster draws power from the astral plane to empower a group of magical beings. The affected creatures will gain strength and courage from the infusion of energy."
 #details "Grants Str +4, Morale +1"
-#school 5
+#school 4
 #path 0 4
 #precision 100
 #damage 32896  -- Giant Strength & Courage
@@ -136124,7 +136124,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #aoe 1
 #nreff 1
 #damage 3
-#spec 545915008  -- AN, No effect on Mindless/Undead/Lifeless, UW OK
+#spec 550109312 -- AN, no effect on mindless/inanimate/undead, friendlies only, use UW
 #end
 
 #selectspell 2240
@@ -136144,7 +136144,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #fatiguecost 40
 #casttime 100
 #reqspellsinger
-#spec 545915008  -- AN, No effect on Mindless/Undead/Lifeless, UW OK
+#spec 550109312 -- AN, no effect on mindless/inanimate/undead, friendlies only, use UW
 #nextspell 2239
 #end
 
@@ -138544,7 +138544,9 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 0 9
 #pathlevel 0 1
 #fatiguecost 0
+#damage 10
 #precision 100
+#spec 549453952 -- AN, friendles only, no effect on inanimate, UWOK
 #restricted 8 -- EA Ermor
 #end
 
@@ -138557,9 +138559,10 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 0 9
 #pathlevel 0 2
 #range 5015
-#damage 5005
+#damage 10
 #precision 100
 #fatiguecost 0
+#spec 549453952 -- AN, friendles only, no effect on inanimate, UWOK
 #restricted 8 -- EA Ermor
 #end
 
@@ -145511,10 +145514,13 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 1145 -- Heal
 #name "Teachings of Semyaza"
 #descr "The caster uses the teachings of Semyaza, master of herbalism, to heal a few nearby troops."
+#school 5
 #pathlevel 0 2
 #aoe 1000
 #precision 100
-#damage 5020
+#range 25
+#damage 10
+#spec 549453952 -- AN, friendles only, no effect on inanimate, UWOK
 #restricted 17 -- Hinnom
 #restricted 184 -- Sitecah
 #restricted 119 -- Feminie
@@ -164395,15 +164401,29 @@ name "Frost Fiend"
 #selectspell 4421
 #copyspell 1145 -- Heal
 #name "Mass Heal"
-#descr "This spell can heal up a group of targets within close range. The spell doesn't affect inanimate beings."
+#descr "This spell can heal many targets within close range. The spell doesn't affect inanimate beings."
 #school 5
-#range 15
+#range 25
 #pathlevel 0 2
 #researchlevel 5
 #fatiguecost 20
 #precision 100
-#nreff 1001 -- 3+
-#damage 5020
+#aoe 1002 -- 4+
+#damage 5
+#spec 549453952 -- AN, friendles only, no effect on inanimate, UWOK
+#end
+
+#selectspell 4421
+#copyspell 667 -- Healing light
+#name "Healing Radiance"
+#descr "A radiant aura of warm and wonderful light envelops the target area, closing wounds and easing the pain of friendly soldiers. The spell doesn't affect undead or inanimate beings."
+#pathlevel 0 3
+#researchlevel 6
+#fatiguecost 30
+#range 100
+#aoe 1002 -- 5++
+#damage 2
+#spec 550109312 -- AN, no effect on mindless/inanimate/undead, friendlies only, use UW
 #end
 
 --- SPELLIDs 4422 and 4423 USED FOR RITUAL EFFECTS, SKIP
@@ -164504,7 +164524,8 @@ name "Frost Fiend"
 #selectspell 1115 -- Healing Touch
 #school 5
 #precision 100
-#damage 5025
+#damage 5
+#spec 549453952 -- AN, friendles only, no effect on inanimate, UWOK
 #end
 
 #selectspell 1118 -- Ignite Arrows
@@ -164534,7 +164555,9 @@ name "Frost Fiend"
 #selectspell 1145 -- Heal
 #school 5
 #precision 100
-#damage 5025
+#damage 5
+#range 25
+#spec 549453952 -- AN, friendles only, no effect on inanimate, UWOK
 #end
 
 #selectspell 1150 -- Levitate Soldiers
@@ -165982,7 +166005,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 667 -- Healing Light
-#spec 545915008 -- +UWOK
+#damage 2
+#aoe 1
+#range 100
+#spec 550109312 -- +UWOK
 #end
 
 #selectspell 653 -- Shockwave
