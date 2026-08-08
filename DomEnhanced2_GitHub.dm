@@ -164428,6 +164428,44 @@ name "Frost Fiend"
 
 --- SPELLIDs 4422 and 4423 USED FOR RITUAL EFFECTS, SKIP
 
+#selectspell 4424 -- Infernal Prison 
+#copyspell 1282 --Rage--
+#name "Infernal Prison" -- Fixing cast bug with banish spells
+#descr "A gate is opened and the target is instantly thrown into the Inferno, the realm of Devils. This effect cannot be resisted by any means and being sent to the Inferno means certain death for most mortals."
+#researchlevel 8
+#school 6
+#path 0 8 -- Blood 
+#path 1 0 -- Fire 
+#pathlevel 0 3 -- B3
+#pathlevel 1 1 -- F1
+#precision 100
+#spec 16512 -- AN, ignores shields
+#range 40
+#fatiguecost 200
+#explspr 10252
+#strikesound 106
+#nextspell 1441 --Infernal Prison 
+#end
+
+#selectspell 4425 -- Claws of Kokytos 
+#copyspell 1282 --Rage--
+#name "Claws of Kokytos" -- Fixing cast bug with banish spells
+#descr "A gate is opened and the target is instantly thrown into Kokytos, the icy realm of Devils. This effect cannot be resisted by any means and being sent to Kokytos means certain death for most mortals."
+#researchlevel 8
+#school 6
+#path 0 8 -- Blood 
+#path 1 2 -- Water 
+#pathlevel 0 3 -- B3
+#pathlevel 1 1 -- W1
+#precision 100
+#spec 16512 -- AN, ignores shields
+#range 40
+#fatiguecost 200
+#explspr 10253
+#strikesound 106
+#nextspell 1442 -- Claws of Kokytos 
+#end
+
 -- END OF NEW SPELLS
 
 
@@ -168400,11 +168438,11 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1441 -- Infernal Prison
-#range 40
+#school -1 -- replaced with identical spells to remove casting bug
 #end
 
 #selectspell 1442 -- Claws of Kokytos
-#range 40
+#school -1 -- replaced with identical spells to remove casting bug
 #end
 
 #selectspell 1444 -- Curse of Blood
