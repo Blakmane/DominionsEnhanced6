@@ -532,7 +532,7 @@
 #name "Stone Longspear"
 #len 4
 #att -1
-#damage 3
+#dmg 3
 #end
 
 #newweapon 1526
@@ -676,7 +676,7 @@
 #newweapon 1538
 #copyweapon 644  -- Bronze Long Spear
 #name "Chitin Longspear"
-#damage 4
+#dmg 4
 #end
 
 #newweapon 1539
@@ -746,6 +746,7 @@
 #sound 8
 #rcost 2
 #slash
+#blunt
 #end
 
 #newweapon 1547
@@ -1137,7 +1138,7 @@
 #end
 
 #newweapon 1577
-#name "Shark-Tooth Dagger"
+#name "Sharktooth Dagger"
 #dmg 2
 #att 1
 #def 0
@@ -1148,10 +1149,10 @@
 #end
 
 #newweapon 1578
-#name "Shark-Tooth Spear"
+#name "Sharktooth Longspear"
 #dmg 4
 #att 0
-#def 0
+#def -1
 #len 4
 #rcost 3
 #sound 10
@@ -2899,7 +2900,7 @@
 #copyweapon 373  -- Stone Spear
 #name "Vine-Wreathed Spear"
 #secondaryeffectalways 50  -- Weak Poison
-#damage 3
+#dmg 3
 #end
 
 #newweapon 1773
@@ -4870,7 +4871,7 @@
 #end
 
 #selectweapon 375  -- Dogs
-#damage 0
+#dmg 2
 #halfstr
 #end
 
@@ -20102,9 +20103,9 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #nametype 186
 #gcost 7
 #rcost 1
-#rpcost 6
+#rpcost 5
 #swimming
-#weapon "Spear"
+#weapon "Stone Spear"
 #end
 
 #newmonster 7039
@@ -20195,7 +20196,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #snaketattoo 1
 #rpcost 12
 #swimming
-#weapon "Long Spear"
+#weapon 1578 -- Sharktooth Longspear
 #armor "Crested Helmet"
 #armor "Leather Cuirass"
 #armor "Hide Shield"
@@ -20904,7 +20905,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #undead
 #spiritform
 #pooramphibian
-#weapon "Life Drain"
+#weapon 1924 -- Ghostly Blade
 #end
 
 #newmonster 7062
@@ -67722,6 +67723,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #poormagicleader
 #float
 #weapon 7 -- quarterstaff
+#armor 158
 #researchbonus -4
 #magicskill 2 1
 #custommagic 256 20
@@ -67740,6 +67742,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #poorleader
 #poormagicleader
 #weapon 7 -- quarterstaff
+#armor 158
 #researchbonus -4
 #magicskill 2 1
 #custommagic 256 20
@@ -67912,7 +67915,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/light_mermanhunter2.png"
 #name "Merman Hunter"
 #descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. When a merman village is threatened their strongest hunters are called to battle, armed with long hunting spears, nets, and the tough hide of the sea creatures they have personally slain." 
-#gcost 10
+#gcost 9
 #clearweapons
 #cleararmor
 #weapon 1578 -- Shark-Tooth Spear
@@ -67929,7 +67932,7 @@ Cannot be recruited until Break the Deadlock is cast."
 #spr2 "wateroverhaul/light_mermanhunterland2.png"
 #name "Merman Hunter"
 #descr "Mermen are amphibious beings related to Tritons, but have fish tails instead of legs. Mermen have strange powers of transformation and can remove their tails to walk on dry land. They live in shallow waters along the coastlines and sometimes build villages on land. When a merman village is threatened their strongest hunters are called to battle, armed with long hunting spears, nets, and the tough hide of the sea creatures they have personally slain."
-#gcost 10
+#gcost 9
 #clearweapons
 #cleararmor
 #weapon 1578 -- Shark-Tooth Spear
@@ -90919,6 +90922,8 @@ Initiates of the Deep can be recruited in any land fort."
 
 #selectmonster 492 -- Heliophagus
 #polyimmune
+#magicskill 5 2
+#makemonsters3 88
 #end
 
 #selectmonster 646 -- Troll Raider
@@ -91417,11 +91422,15 @@ Initiates of the Deep can be recruited in any land fort."
 #montagweight 2
 #end
 
+#selectmonster 473  -- Telestic inanimate
+#magicskill 9 3  -- 3H
+#end
 
 #selectmonster 476  -- Lumber Construct
 #magicskill 6 1  -- 1N
 #custommagic 8192 50  -- 50%N
 #end
+
 
 
 #selectmonster 487  -- Chimaera
@@ -92692,14 +92701,19 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #end
 
 #selectmonster 818  -- Heliophagus
+#inspirational 1
 #polyimmune
 #end
 
 #selectmonster 819  -- Heliophagus
+#makemonsters5 433
+#batstartsum2d6 433
 #polyimmune
 #end
 
 #selectmonster 820  -- Heliophagus
+#fear 10
+#diseasecloud 10
 #polyimmune
 #end
 
@@ -100251,6 +100265,10 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #selectmonster 1494 -- Spenta of the Earth
+#armor 158 -- Robes
+#end
+
+#selectmonster 1514 -- Lizard Shaman (Prophet)
 #armor 158 -- Robes
 #end
 
@@ -124131,6 +124149,39 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #end
 
+#newsite 2622 --Choleria Site 1--
+#name "Choleric Production" -- +1 prod +1 Turmoil--
+#path 0
+#level 9
+#rarity 5
+#incscale 0 --Turmoil
+#decscale 1 --Productivity--
+#end 
+
+#newsite 2623 --Choleria Site 2-- 
+#name "Choleric Production " --adds the second instance of productivity--
+#path 0
+#level 9
+#rarity 5
+#decscale 1 --productivity--
+#end 
+
+#newsite 2624 --Tranquil Site--
+#name "Sanguine Tranquility" -- +1 Magic, +1 Sloth
+#path 0
+#level 9
+#rarity 5
+#decscale 5 --Magic
+#incscale 1 --sloth
+#end
+
+#newsite 2625 --Phlegmatic Site
+#name "Phlegmatic Passivity"
+#path 2
+#level 9
+#rarity 5
+#end 
+
 -- 2621 used by Marverni forest lords
 
 -- 2917 used by iram summons
@@ -133771,21 +133822,6 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #end
 
 #selectspell 2024
-#copyspell 1275 -- Steal Breath
-#name "Call the Peaks"
-#descr "The caster thins the air to that of the mountain peaks where the air is at its thinnest. A group of enemies will find themselves struggling to breathe and will gasp for breath, becoming fatigued. If cast in a Highland province the lack of air may cause troops to act erratically for the rest of the battle."
-#details "Mountain effect: Confusion check 50% every turn. Confused targets move randomly and might attack friend or foe."
-#researchlevel 4
-#pathlevel 0 2
-#range 30
-#aoe 1003
-#damage 35
-#fatiguecost 20
-#spec 537415808
-#nextingeo 16  -- Highlands
-#end
-
-#selectspell 2025
 #name "Hypoxia"
 #school -1
 #researchlevel 0
@@ -133793,7 +133829,35 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #nreff 1
 #damage 17179869184  -- Confusion
 #aoe 1
-#spec 537415808  -- AN, MR Neg, Ignore Shields, Lifeless/Undead Immune
+#spec 554188928  -- AN, MR Neg Easy, Ignore Shields, Lifeless/Undead Immune
+#nextingeo 16  -- Highlands
+#end
+
+#selectspell 2025
+#name "Mountain Hypoxia"
+#school -1
+#researchlevel 0
+#effect 11
+#nreff 1
+#damage 17179869184  -- Confusion
+#aoe 1
+#spec 554188928  -- AN, MR Neg Easy, Ignore Shields, Lifeless/Undead Immune
+#end
+
+#selectspell 2028
+#copyspell 1275 -- Steal Breath
+#name "Call the Peaks"
+#descr "The caster thins the air to that of the mountain peaks where the air is at its thinnest. A group of enemies will find themselves struggling to breathe and will gasp for breath, becoming fatigued. The lack of air may cause troops to act erratically for the rest of the battle. If cast in a Highland province the effect is much harder to resist."
+#details "Mountain effect: Confusion check 50% every turn. Confused targets move randomly and might attack friend or foe."
+#researchlevel 4
+#pathlevel 0 2
+#range 5025
+#aoe 1003
+#precision 20
+#damage 35
+#fatiguecost 20
+#spec 537415808
+#nextspell 2024
 #end
 
 #selectspell 2027
@@ -133811,8 +133875,8 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #selectspell 2030
 #copyspell 830 -- Storm
 #name "Magic of the Fey"
-#descr "The caster draws the Fey realm closer to this world, increasing the magic level in the province for the duration of the battle. In addition enemies will be more easily affected by magic and have their magic resistance reduced."
-#details "Magic scale +2, MR for enemies -2"
+#descr "The caster draws the Fey realm closer to this world. Enemies will be more easily affected by magic and have their magic resistance reduced."
+#details "MR for enemies -2"
 #researchlevel 8
 #school 5
 #path 0 7 -- G
@@ -134167,7 +134231,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #researchlevel 4
 #path 0 2
 #pathlevel 0 3
-#range 25
+#range 5020
 #aoe 5005
 #damage 2199023255552  -- Rusted equipment
 #fatiguecost 40
@@ -134333,14 +134397,15 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #researchlevel 5
 #path 0 2
 #pathlevel 0 2
-#effect 3
+#effect 128 -- stun
 #nreff 1
-#aoe 1001
-#damage 12
-#range 5020
+#aoe 2001
+#damage 100
+#range 5030
 #fatiguecost 30
 #flightspr 10065
 #explspr 10119
+#precision 3
 #sound 21
 #spec 1152921504607912000  -- AP, Def Negates, Ignore shields, Extra effect on damage
 #end
@@ -134533,6 +134598,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #pathlevel 1 1
 #fatiguecost 30
 #aoe 2004 -- 8+2
+#range 5025
 #end
 
 
@@ -134622,7 +134688,8 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #school 1
 #aoe 3003 -- 6+3
 #nreff 1
-#range 5015 -- 20+5
+#range 5020 -- 25+5
+#precision 10
 #flightspr -1
 #fatiguecost 30
 #spec 8409088 -- UWOK, Ignore shields, MRN
@@ -135010,7 +135077,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #school 5
 #researchlevel 7
 #path 0 7 -- G
-#pathlevel 0 4
+#pathlevel 0 3
 #path 1 4 -- S
 #pathlevel 1 2
 #effect 10131
@@ -135226,8 +135293,6 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #researchlevel 8
 #path 0 3
 #pathlevel 0 5
-#path 1 4
-#pathlevel 1 2
 #damage 68719476736  -- Slow
 #fatiguecost 200
 #spec 8392720  -- UWOK, MRN, Magic Beings Only
@@ -135342,11 +135407,11 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #name "Ether Drain"
 #descr "The caster creates a disturbance in the ether that drains away magic from the targeted province. Magical energy will fall in the province, mages will find their spells more difficult to cast and magical research will be slowed. The mage can target any province of his choice and those affected will not know who has cast this spell upon them."
 #school 5
-#researchlevel 7
+#researchlevel 5
 #path 0 4
 #path 1 3
 #pathlevel 0 3
-#pathlevel 1 3
+#pathlevel 1 2
 #effect 10042
 #damage 24
 #spec 8388608  -- May use UW
@@ -135455,12 +135520,13 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #name "Empower Magic Beings"
 #descr "The caster draws power from the astral plane to empower a group of magical beings. The affected creatures will gain strength and courage from the infusion of energy."
 #details "Grants Str +4, Morale +1"
-#school 5
+#school 4
 #path 0 4
+#precision 100
 #damage 32896  -- Giant Strength & Courage
 #explspr 10002  -- White mist
 #spec 12582928  -- Friendly magic beings only, UW OK
-#aoe 4008 -- 20+4
+#aoe 5015 -- 30+5
 #end
 
 #selectspell 2185
@@ -135469,10 +135535,10 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #descr "This ritual heals the mind of another, restoring their faculties. The target unit must be in the same province as the caster, and the spell will not cure the target of any insanity. The healing magic will not affect Lifeless or undead units or those without a mind."
 #details "Heals any Mute, Feeblemind or Dementia affliction from target."
 #path 0 4
-#pathlevel 0 3
+#pathlevel 0 2
 #path 1 6
 #pathlevel 1 1
-#fatiguecost 1000
+#fatiguecost 500
 #damage 137476702208  -- Mute, Feeblemind & Dementia
 #spec 545914880  -- No effect on lifeless, mindless or undead, UW OK
 #end
@@ -135512,11 +135578,12 @@ Requires a Ring of Returning equipped to the recipient."
 #name "Reform Magic Being"
 #descr "The caster uses astral magic to reform the body and mind of a magical creature, curing them of all bodily and mental ills. The target unit must be in the same province as the caster, and the healing magic will not affect Lifeless or Undead units."
 #school 5
-#researchlevel 6
+#researchlevel 5
 #path 0 4
 #path 1 6
-#pathlevel 1 2
-#fatiguecost 1500
+#pathlevel 0 3
+#pathlevel 1 1
+#fatiguecost 800
 #damage 138646654979  -- All Afflictions
 #spec 545783824  -- Magic Beings Only, No effect on lifeless or undead
 #end
@@ -135647,12 +135714,12 @@ Requires a Ring of Returning equipped to the recipient."
 #descr "The caster calls on a great quantity of Astral energy to expand their mental powers. Using this they will dominate and crush the will of the local populace to remove any trace of dissent. This ritual is so powerful that the energies released will emanate widely, and rulers across the world will find their subjects becoming more docile and compliant."
 #details "Province unrest reduced by 100, worldwide unrest reduced by 10"
 #school 5
-#researchlevel 7
+#researchlevel 6
 #path 0 4
 #pathlevel 0 5
 #damage -1
 #effect 10083
-#fatiguecost 1800
+#fatiguecost 1500
 #nreff 1
 #nextspell 2198
 #end
@@ -136057,7 +136124,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #aoe 1
 #nreff 1
 #damage 3
-#spec 545915008  -- AN, No effect on Mindless/Undead/Lifeless, UW OK
+#spec 550109312 -- AN, no effect on mindless/inanimate/undead, friendlies only, use UW
 #end
 
 #selectspell 2240
@@ -136077,7 +136144,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #fatiguecost 40
 #casttime 100
 #reqspellsinger
-#spec 545915008  -- AN, No effect on Mindless/Undead/Lifeless, UW OK
+#spec 550109312 -- AN, no effect on mindless/inanimate/undead, friendlies only, use UW
 #nextspell 2239
 #end
 
@@ -136652,7 +136719,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 0
 #pathlevel 1 1
 #effect 109  -- Capped Damage
-#range 5010
+#range 100
 #fatiguecost 30
 #spec 1188950301902655624  -- AN, Undead Only, MR-Neg, Ignores Shields , UWOK, Internal Damage, Extra effect on Damage
 #end
@@ -136936,10 +137003,10 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "Witches and Witch Doctors are often called upon to remove hexes and curses. With this ritual the Curse affecting an unfortunate target is lifted. The target unit must be in the same province as the caster, and the healing magic will not affect Lifeless or Undead units."
 #researchlevel 5
 #path 0 6 -- N
-#pathlevel 0 3
+#pathlevel 0 2
 #path 1 7 -- G
 #pathlevel 1 1
-#fatiguecost 800
+#fatiguecost 500
 #damage 2  -- Curse
 #spec 545783808  -- No effect on lifeless or undead, UW OK
 #end
@@ -136949,8 +137016,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #name "Brew Panacea"
 #descr "The Panacea is a remedy first stolen from the Pantokrator themselves, brewed only from the rarest herbs and ingredients. The caster spends a full month brewing a single dose which may be given to a target to cure them of all bodily and mental ills. The target unit must be in the same province as the caster, and the healing magic will not affect Lifeless or Undead units."
 #researchlevel 8
-#pathlevel 0 5
-#fatiguecost 2000
+#pathlevel 0 4
+#fatiguecost 800
 #damage 138646654979  -- All Afflictions
 #spec 545783808  -- No effect on lifeless or undead, UW OK
 #end
@@ -137223,7 +137290,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #fatiguecost 0
 #range 35
 #aoe 1001
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #nextspell 2338
@@ -137243,7 +137310,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #spec 17592194744320  -- Ignore shields, Enemy Sacreds only, UW OK, MR-Hard Neg
@@ -137262,7 +137329,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #flightspr -1
@@ -137282,7 +137349,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #spec 87960938921984  -- Ignore shields, Enemy Sacreds only, No effect on fliers, UWOK, MR-Hard Neg
@@ -137300,7 +137367,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #damage 5
 #range 35
 #pathlevel 0 2
-#precision 8
+#precision 20
 #fatiguecost 0
 #casttime 100
 #fatiguecost 25
@@ -137319,7 +137386,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #spec 17592194744448  -- Ignore shields, AN, Enemy Sacreds only, UWOK, MR-Hard Neg
@@ -137338,7 +137405,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #spec 17592194744320  -- Ignore shields, Enemy Sacreds only, UWOK, MR-Hard Neg
@@ -137362,7 +137429,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #effect 109
@@ -137561,6 +137628,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 1 3
 #pathlevel 1 1
 #nreff 18
+#precision 5
 #damage 2012 -- 14
 #fatiguecost 10
 #casttime 100
@@ -138476,6 +138544,9 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 0 9
 #pathlevel 0 1
 #fatiguecost 0
+#damage 10
+#precision 100
+#spec 549453952 -- AN, friendles only, no effect on inanimate, UWOK
 #restricted 8 -- EA Ermor
 #end
 
@@ -138488,9 +138559,10 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #path 0 9
 #pathlevel 0 2
 #range 5015
-#damage 5005
+#damage 10
 #precision 100
 #fatiguecost 0
+#spec 549453952 -- AN, friendles only, no effect on inanimate, UWOK
 #restricted 8 -- EA Ermor
 #end
 
@@ -139861,7 +139933,8 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #name "Control Unruly Spirits"
 #descr "With the coming of the Barbarian Kings and the return of ancestor worship spells for controlling unruly spirits have become commonplace in T'ien Ch'i. The caster takes control over some undead beings. Powerful undead will be able to resist the necromancer."
 #researchlevel 0
-#precision 12
+#range 5015
+#precision 100
 #restricted 109 -- LA Tien Chi
 #end
 
@@ -140332,7 +140405,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #restricted 28
 #aoe 1
 #casttime 75
-#range 25
+#range 5025
 #fatiguecost 10
 #end
 
@@ -141863,7 +141936,8 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #pathlevel 1 1
 #aoe 1
 #fatiguecost 30
-#range 25
+#precision 10
+#range 30
 #nextspell 2663
 #restricted 106 -- LA Caelum
 #end
@@ -142471,7 +142545,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #end
 
 #selectspell 2707
-#copyspell 239 -- Confusion
+#copyspell 1328 -- Confusion
 #name "Madness of the Wild"
 #descr "The spell will imbue a group of enemy soldiers with the revelry of the Pan. Unless they can resist the effects the targeted units will enter a state of wild abandon and will discard their clothes and armor. In their madness they can easily attack friends instead of enemies."
 #researchlevel 5
@@ -142480,6 +142554,8 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #path 1 8
 #pathlevel 0 3
 #pathlevel 1 1
+#range 5015
+#precision 20
 #aoe 1005 -- 8+
 #damage 17592186044544  -- Enrage & destroy armor
 #fatiguecost 30
@@ -142605,11 +142681,12 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #path 1 8
 #pathlevel 0 3
 #pathlevel 1 1
-#aoe 10
+#aoe 2014 --20++
 #fatiguecost 40
 #range 15
+#precision 100
 #damage 384  -- Berserker Rage + Strength
-#spec 549589120  -- AN, MR Negates, No effect on lifeless or mindless, Friendlies only
+#spec 549585024  -- AN, No effect on lifeless or mindless, Friendlies only
 #restricted 97 -- LA Pangaea
 #end
 
@@ -143164,7 +143241,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #school 4
 #researchlevel 5
 #pathlevel 0 3
-#range 20
+#range 5025
 #aoe 2004
 #fatiguecost 40
 #spec 8671232  -- Enemies only, ignores shields, use UW, MRN
@@ -144617,6 +144694,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Serpent Gaze"
 #descr "The Naga have taught the monkey folk many secrets, including the power to hold enemies in place with only a look, as snakes are reputed to do to their prey. The targets will be unable to act for a short period unless they are of strong will."
 #researchlevel 0
+#casttime 50
 #range 10
 #aoe 1
 #fatiguecost 10
@@ -144628,7 +144706,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Serpent Dance"
 #descr "The caster fascinates enemies with an intricate weaving dance, as snakes are reputed to do to their prey. Several enemy soldiers viewing the dance will be unable to act for a short period unless they are of strong will."
 #researchlevel 2
-#range 20
+#range 5025
 #pathlevel 0 2
 #aoe 1003
 #fatiguecost 20
@@ -145436,8 +145514,13 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell 1145 -- Heal
 #name "Teachings of Semyaza"
 #descr "The caster uses the teachings of Semyaza, master of herbalism, to heal a few nearby troops."
+#school 5
 #pathlevel 0 2
 #aoe 1000
+#precision 100
+#range 25
+#damage 10
+#spec 549453952 -- AN, friendles only, no effect on inanimate, UWOK
 #restricted 17 -- Hinnom
 #restricted 184 -- Sitecah
 #restricted 119 -- Feminie
@@ -145451,7 +145534,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 4
 #fatiguecost 20
 #range 10
-#aoe 1001 -- 3+
+#aoe 2001 -- 5++
 #effect 10
 #damage 131072 -- flight
 #precision 3
@@ -145469,9 +145552,9 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #range 10
 #path 0 0
 #pathlevel 0 2
-#aoe 1000
+#aoe 1001
 #fatiguecost 30
-#precision 3
+#precision 100
 #damage 17408  -- Heat Aura and Fireres
 #spec 4210688  -- Ignore shields, friendlies only
 #restricted 17 -- Hinnom
@@ -146082,7 +146165,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #pathlevel 0 2
 #pathlevel 1 1
 #effect 11
-#precision 4
+#precision 10
 #fatiguecost 30
 #aoe 1002
 #nreff 1
@@ -146522,7 +146605,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #path 1 0
 #pathlevel 0 3
 #pathlevel 1 1
-#fatiguecost 200
+#fatiguecost 100
 #spec 8388608  -- cast UW
 #onlyatsite 129  -- The Dark Crystal
 #onlymnr 1702  -- Basalt King
@@ -146961,7 +147044,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #flightspr -1
 #sound 21
 #fatiguecost 20
-#precision 5
+#precision 10
 #spec 41959424  -- UW Only, Ignores shields
 #restricted 44
 #nextspell "Area Weak Poison"
@@ -147527,7 +147610,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #effect 10131
 #nreff 1
 #damage 0
-#fatiguecost 400
+#fatiguecost 300
 #restricted 127 -- LA R'lyeh
 #restricted 89 -- MA R'lyeh
 #onlymnr 3858  -- Starspawn Priest
@@ -147609,7 +147692,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #copyspell "Sailors' Death"
 #name "Word of Drowning"
 #descr "A few nearby air-breathers will feel their lungs immediately begin to fill with salt-water. Any creature that cannot breathe underwater will choke and may drown. This spell ignores the target's armor, however the strong willed can resist it."
-#researchlevel 3
+#researchlevel 4
 #pathlevel 0 1
 #path 1 1
 #pathlevel 1 1
@@ -147618,44 +147701,20 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #aoe 1
 #damage 2008
 #range 5030
-#precision 10
-#restricted 43
-#restricted 40
-#restricted 41
-#restricted 88
-#restricted 86
-#restricted 87
-#restricted 126
-#restricted 125
-#restricted 85 -- Ys
-#restricted 203 -- Ryu
-#restricted 190 -- Rotterland
-#restricted 207 -- Bantay Tubig
+#precision 100
 #end
 
 #selectspell 3072
 #copyspell "Sailors' Death"
 #name "Curse of Choking Brine"
 #descr "The caster motions towards a group of air-breathers and their lungs immediately begin to fill with salt-water. Any creature that cannot breathe underwater will choke and may drown. This spell ignores the target's armor, however the strong willed can resist it."
-#researchlevel 5
+#researchlevel 6
 #path 1 1
 #pathlevel 1 1
 #fatiguecost 20
 #aoe 1003 -- 6+
 #range 5020
-#precision 10
-#restricted 43
-#restricted 40
-#restricted 41
-#restricted 88
-#restricted 86
-#restricted 87
-#restricted 126
-#restricted 125
-#restricted 85 -- Ys
-#restricted 203 -- Ryu
-#restricted 190 -- Rotterland
-#restricted 207 -- Bantay Tubig
+#precision 100
 #end
 
 #selectspell 3074
@@ -149109,6 +149168,7 @@ All effects scale with friendly Dominion."
 #name "Ignite Unbeliever"
 #descr "In Marignon the inquisitors are adept at the use of fire magic to exact the truth from sinners. With this spell one targeted enemy is set ablaze. The spell ignores enemy armor, but it is not always strong enough to kill the victim. Also, rain or snow will put the flames out very quickly."
 #researchlevel 0
+#range 35
 #restricted 61 -- MA Marignon
 #end
 
@@ -149705,6 +149765,8 @@ All effects scale with friendly Dominion."
 #path 1 9
 #pathlevel 1 1
 #fatiguecost 80
+#aoe 2004
+#precision 10
 #restricted 116 -- Bogarus
 #end
 
@@ -149818,6 +149880,7 @@ All effects scale with friendly Dominion."
 #range 10
 #path 0 0
 #aoe 1003
+#spec 12582912 -- UWOK, friendly only
 #damage 17408  -- Heat Aura and Fireres
 #restricted 72 -- Nazca
 #end
@@ -150891,6 +150954,7 @@ All effects scale with friendly Dominion."
 #path 1 9
 #pathlevel 1 1
 #effect 28
+#range 5025
 #damage 999
 #fatiguecost 20
 #restricted 186 -- Zion
@@ -150920,7 +150984,7 @@ All effects scale with friendly Dominion."
 #pathlevel 1 1
 #damage 262400  -- Quicken & Rage
 #fatiguecost 20
-#aoe 1003
+#aoe 2003
 #ainocast 1
 #explspr 10003
 #nextspell 3351
@@ -151485,7 +151549,7 @@ All effects scale with friendly Dominion."
 #effect 29  -- Charm
 #damage 999
 #aoe 1
-#range 25
+#range 40
 #nreff 1
 #precision 100
 #fatiguecost 60
@@ -151614,7 +151678,7 @@ All effects scale with friendly Dominion."
 #aoe 1
 #effect 11
 #fatiguecost 20
-#range 30
+#range 5025
 #nreff 1
 #damage 2
 #precision 100
@@ -152005,6 +152069,7 @@ All effects scale with friendly Dominion."
 #school 5
 #researchlevel 5
 #path 0 5
+#range 100
 #pathlevel 0 2
 #fatiguecost 40
 #restricted 194
@@ -155472,12 +155537,13 @@ All effects scale with friendly Dominion."
 #name "Blinding Flash"
 #descr "A very bright light flashes across a large area. Anyone in the area will be permanently blinded unless the spell is resisted."
 #researchlevel 6
-#path 0 7 -- G
+#path 0 0 -- F
 #pathlevel 0 2
-#path 1 0 -- F
-#pathlevel 1 1
+#path 1 7 -- G
+#pathlevel 1 0
 #fatiguecost 30
-#aoe 1000 -- 2+
+#range 5020 -- 30+
+#aoe 1003 -- 4+
 #end
 
 #selectspell 3773
@@ -155575,21 +155641,16 @@ All effects scale with friendly Dominion."
 #nextspell 3756
 #end
 
+
 #selectspell 3780
-#copyspell 1275 -- Steal Breath
-#name "Call the Wastes"
-#descr "The caster calls on the power of the dry wastes to magically dehydrate and fatigue a large group of enemy soldiers. If the spell is cast in a wasteland the effects will continue to affect the troops and they will grow weaker as the battle continues. Undead and lifeless creatures will not be affected by the spell."
-#details "Wasteland effect: Targets gain 2d8 extra fatigue each turn. MR +DRN vs 22 each turn to end the effect."
-#school 5
-#researchlevel 4
-#path 0 0
-#pathlevel 0 2
-#aoe 2001 -- 5+2
-#damage 35
-#fatiguecost 20
-#range 30
-#explspr 10165
-#spec 537399424
+#name "Desiccation"
+#school -1
+#researchlevel 0
+#effect 11
+#nreff 1
+#damage 32
+#aoe 1
+#spec 4096  -- MR Neg
 #nextingeo 64  -- Wasteland
 #end
 
@@ -155601,10 +155662,29 @@ All effects scale with friendly Dominion."
 #nreff 1
 #damage 32
 #aoe 1
-#spec 4096  -- MR Neg
+#spec 17592186044416  -- MR Neg Hard
 #end
 
 #selectspell 3782
+#copyspell 1275 -- Steal Breath
+#name "Call the Wastes"
+#descr "The caster calls on the power of the dry wastes to magically dehydrate and fatigue a large group of enemy soldiers. The effects will continue to affect the troops and they will grow weaker as the battle continues. This effect is very hard to resist when cast in a wasteland. Undead and lifeless creatures will not be affected by the spell."
+#details "Targets gain 2d8 extra fatigue each turn. MR +DRN vs 22 each turn to end the effect."
+#school 5
+#researchlevel 4
+#path 0 0
+#pathlevel 0 2
+#aoe 2001 -- 5+2
+#damage 35
+#precision 20
+#fatiguecost 20
+#range 5035
+#explspr 10165
+#spec 537399424
+#nextspell 3780
+#end
+
+#selectspell 3783
 #name "Erect Graven Idol"
 #descr "The mage first fashions a large wooden idol and builds into it likenesses of dead heroes from ages past. A great ritual is then performed which snares powerful Elemental and Nature spirits and binds them to the structure in service to the descendants of those inscribed upon it. The idol is magically powerful and resistant to weapons. It cannot move, however the spirits can manifest for short periods to perform tasks or to defend against attack. The local populace may take to worshipping the idol, diverting faith away from the true God."
 #researchlevel 6
@@ -155618,6 +155698,8 @@ All effects scale with friendly Dominion."
 #damage 7224
 #nreff 1
 #end
+
+
 
 #selectspell 3786
 #name "Coldresist"
@@ -156299,7 +156381,7 @@ With this spell, the caster may find a roaming band of Aphroi and return them to
 #school 1 -- Alteration
 #researchlevel 6
 #path 0 2 -- Water
-#pathlevel 0 3
+#pathlevel 0 2
 #effect 10599 -- +100
 #nreff 1
 #damage 111 -- Gift of Water Breathing
@@ -156307,18 +156389,18 @@ With this spell, the caster may find a roaming band of Aphroi and return them to
 #spec 8388608
 #end
 
-#selectspell 3838 -- Deep Breath, 1 -> 40 gow
+#selectspell 3838 -- Deep Breath, 1 -> 80 gow
 #name "Deep Breath"
 #descr "The caster learns how to store a great amount of air in the depths of the ocean, enabling them to take a large number of soldiers into the deep."
 #details "Grants Gift of Waterbreathing: 80"
 #school 5 -- Thaumaturgy
 #researchlevel 3
 #path 0 1 -- Air
-#pathlevel 0 3
+#pathlevel 0 1
 #effect 10579 -- +80
 #nreff 1
 #damage 111 -- Gift of Water Breathing
-#fatiguecost 200
+#fatiguecost 100
 #spec 8388608
 #end
 
@@ -156548,7 +156630,8 @@ Underwater: Targets must resist the effects of the spell a second time with an e
 #path 1 7 -- Glamour
 #pathlevel 1 1
 #aoe 2001 -- 3+2
-#range 30
+#range 5025
+#precision 20
 #damage 256
 #spec 8409216 -- UWOK, MRN, Ignores Shields, AN
 #explspr 10018
@@ -156651,6 +156734,7 @@ Underwater: Targets must resist the effects of the spell a second time with an e
 #nreff 1
 #range 50
 #effect 2 -- Damage
+#precision 20
 #damage 5
 #flightspr -1
 #casttime 75
@@ -156680,7 +156764,7 @@ Underwater: Targets must resist the effects of the spell a second time with an e
 #researchlevel 4
 #path 0 7 -- Glamour
 #pathlevel 0 2
-#range 5020 -- 35+5
+#range 5030 -- 40+5
 #aoe 2004 -- 8+2
 #damage 32 -- Rapidly Fatigue
 #spec 42356736 -- Ignore shields, UWOK, UWonly, MRNegates, Mindless immune, friendly immune
@@ -156931,11 +157015,12 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #pathlevel 0 2
 #path 1 -1 -- none
 #pathlevel 1 0
+#range 25
 #effect 23
 #damage 68719476736 -- Reinvigoration
 #explspr 10218
 #aoe 5000 -- 10+5
-#prec 1
+#precision 100
 #spec 583548928 --UWOK, UWonly, friendlies only, inanimate/undead immune, ignores shields
 --#nextspell "Reinvigorating Air"
 #end
@@ -156965,6 +157050,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #range 5025 -- 35+5
 #effect 3 -- Fatigue
 #damage 5015 -- 25+5
+#precision 20
 #spec 1152921505186209856 -- UWOK, UWonly, AP, poison, ignores shields, no lifeless, no undead, extra effect on damage
 #explspr 10059
 #flightspr -1
@@ -156992,7 +157078,8 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #pathlevel 0 2
 #nreff 1
 #aoe 1001 -- 3+1
-#range 25
+#range 5025
+#precision 10
 #effect 66
 #damage 12 -- ~4 turn paralysis
 #fatiguecost 20
@@ -157009,8 +157096,9 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #details "+12 Paralyze"
 #researchlevel 7
 #pathlevel 0 3
-#aoe 2001
-#range 25
+#aoe 2003
+#range 5025
+#precision 10
 #effect 66
 #fatiguecost 30
 #spec 579358848 -- Ignore Shields, Use UW Only, AN, MR Neg, No effect on lifeless or undead
@@ -159403,6 +159491,7 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #descr "Adur is, to those of the pyrenian mountains, the energy that holds everything together. It is found in all manner of beings and is used by witches and wizards to cast their spells. It is also the magic of luck and fate, and by channeling it carefully a mage may temporarily grant good luck and foresight to a small group of soldiers."
 #details "A lucky unit has a 75% chance of escaping an otherwise deadly blow or spell. Luck does not affect undead or inanimate creatures."
 #path 0 6
+#aoe 2
 #restricted 14 -- EA Pyrene
 #restricted 62 -- MA Pyrene
 #restricted 123 -- LA Pyrene
@@ -160143,7 +160232,8 @@ This Great Prayer is in the path of Blood, and may be extra potent depending on 
 #details "+10 Fire Resistance
 Animals only: Blunt and slash melee attacks will stun on hit (size or str can negate)."
 #fatiguecost 40
-#aoe 1002 -- 4+
+#aoe 2002 -- 6++
+#precision 100
 #school 4 -- ench
 #path 0 0
 #pathlevel 0 2
@@ -160172,7 +160262,8 @@ Animals only: Blunt and slash melee attacks will stun on hit (size or str can ne
 #details "+10 Shock Resistance
 Animals only: Protective Force 20"
 #fatiguecost 40
-#aoe 1002 -- 4+
+#aoe 2002 -- 6++
+#precision 100
 #school 4 -- ench
 #path 0 1
 #pathlevel 0 2
@@ -160191,7 +160282,7 @@ Animals only: Protective Force 20"
 #details "+10 Fire Resistance
 Animals only: +4 Strength, blunt and slash melee attacks will stun on hit (size or str can negate)."
 #fatiguecost 100
-#aoe 4004 -- 20+4
+#aoe 5010 -- 30+5
 #school 4 -- ench
 #path 0 0
 #pathlevel 0 4
@@ -160210,7 +160301,7 @@ Animals only: +4 Strength, blunt and slash melee attacks will stun on hit (size 
 #details "+10 Shock Resistance
 Animals only: Protective Force 20"
 #fatiguecost 100
-#aoe 4004 -- 20+4
+#aoe 5010 -- 30+5
 #school 4 -- ench
 #path 0 1
 #pathlevel 0 4
@@ -160652,7 +160743,7 @@ Applies the effects of Holy Avenger to the caster"
 #path 1 -1 --N1 so serpent acoltytes can cast
 #pathlevel 0 1
 #pathlevel 1 1
-#prec 10 --increased accuracy
+#precision 10 --increased accuracy
 #range 25
 #fatiguecost 0
 #restricted 98 -- LA Pythium
@@ -161296,6 +161387,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 0 2
 #fatiguecost 30
 #aoe 2004 -- 8+2
+#range 5025
 #restricted 207 -- Bantay Tubig
 #end
 
@@ -161717,7 +161809,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 #pathlevel 0 2
 #fatiguecost 0
 #range 35
-#precision 8
+#precision 20
 #casttime 100
 #fatiguecost 25
 #spec 17592731746432  -- AN, Ignore shields, Enemy Sacreds only, Mindless immune, Inanimate immune, UWOK, MR-Hard Neg
@@ -162139,7 +162231,8 @@ Underwater: AoE 10+2"
 #name "Levitation"
 #descr "A few soldiers are granted the ability to float a few inches above the ground."
 #details "Floating units cannot be targeted by some spells like earth grip or earthquakes."
-#aoe 3
+#school 5
+#aoe 1003
 #fatiguecost 20
 #pathlevel 0 1
 #researchlevel 3
@@ -162173,13 +162266,13 @@ Underwater: AoE 10+2"
 #descr "The caster attempts to steal the sight of a group of soldiers. Anyone in the area will be permanently blinded unless the spell is resisted."
 #researchlevel 7
 #school 4
-#range 25
+#range 5015 -- 30+
 #path 0 7 -- G
 #pathlevel 0 3
 #path 1 0 -- F
 #pathlevel 1 1
 #fatiguecost 20
-#aoe 1003 -- 6+
+#aoe 2004 -- 10+
 #end
 
 #selectspell 4273 -- Erode, 3E decay and damage armor
@@ -162195,9 +162288,9 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #path 1 7 -- Glamour
 #pathlevel 1 1
 #aoe 3003 -- 12+3
-#precision 10
+#precision 20
 #fatiguecost 30
-#range 30
+#range 5020 -- 35+
 #damage 256
 #spec 8409216 -- UWOK, MRN, Ignores Shields, AN
 #explspr 10018
@@ -162208,12 +162301,11 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #selectspell 4274
 #copyspell 1282 -- rage
 #name "Hate"
-#descr "The spell fills the heart of a few men with furious anger. The raging units will attack anything nearby, even friends."
+#descr "The spell fills the hearts of a many men with choleria, igniting a violent and uncontrollable anger within them. The raging units will attack anything nearby, even friends."
 #researchlevel 6
 #path 0 0 -- F
-#pathlevel 0 2
-#path 1 7 -- G
-#pathlevel 1 1
+#pathlevel 0 3
+#range 5015
 #aoe 2004 -- 8+2
 #end
 
@@ -163059,9 +163151,11 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #selectspell 4328 -- Steal Breath
 #copyspell 1275 -- Steal Breath
 #name "Steal Breath"
-#descr "The victims of this spell will have their breath stolen from him and their chest crushed as the air leaves their body. Recovering the breath will require quite an effort and the leave the victim exhausted."
+#descr "The victims of this spell will have their breath stolen from them and their chest crushed as the air leaves their body. Recovering the breath will require quite an effort and the leave the victim exhausted."
 --#details ""
 #aoe 1
+#range 5030 -- 35+
+#precision 20
 #spec 1152921505144262784 -- AN, MRN, Ignore Shields, No undead, No inanim, Next effect on damage
 #fatiguecost 10
 #end
@@ -163142,20 +163236,6 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #restricted 67 -- Ind
 #restricted 120 -- Piconye
 #end
-
-#selectspell 4335 -- Calm Self
-#copyspell 1276 -- Calm Emotions
-#name "Tranquility"
-#descr "The caster is filled with calming emotions."
-#details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates)."
-#aoe 0
-#range 0
-#school -1
-#researchlevel -1
-#spec 8536064 -- Ignore shields, no mindless, UWOK
-#end
-
-
 
 #selectspell 4336 -- Taurus EPower
 #name "Taurus Sign"
@@ -163602,7 +163682,7 @@ This spell may only target friendly provinces."
 #name "Profuse Bleeding"
 #descr "This spell causes blood to pour out of the victims' nose, ears and mouth. The effect is a prolonged and painful death. Magic resistance can negate the effect, but the spell is difficult to resist."
 #pathlevel 0 2
-#prec 10
+#precision 10
 #aoe 1002
 #researchlevel 5
 #spec 17592723456128 -- Armor Negating, MRNH, Ignores Shields, No Effect on Undead, No effect on Inanimate
@@ -163787,7 +163867,7 @@ name "Frost Fiend"
 
 #selectspell 4385
 #copyspell 762
-#name "Earth Grip "
+#name "Earth Grip"
 #aoe 1
 #school -1
 #spec 4398046511104 --Size or Strength Negates
@@ -163798,6 +163878,592 @@ name "Frost Fiend"
 #name "Medium Area Heat Shock"
 #damage 2006
 #aoe 4 
+#end
+
+#selectspell 4387
+#copyspell 1341 --Mirror Mind
+#name "Mass Mind Blank"
+#descr "The caster of this spell will shroud the minds of a great number of soldiers with arcane energies. The next mind affecting spell against a shrouded one is almost certain to fail."
+#researchlevel 8 
+#pathlevel 0 4
+#pathlevel 1 2
+#aoe 5020 -- 40+
+#range 15
+#precision 100
+#fatiguecost 100 
+#end
+
+#selectspell 4388
+#copyspell 1314 -- Gift of the Furies
+#name "Furious Army"
+#descr "The caster fills the hearts of men with righteous fury. All friendly soldiers on the battlefield get increased morale and attack skill."
+#researchlevel 8 
+#pathlevel 0 4
+#aoe 666 -- battlefield
+#fatiguecost 200
+#end
+
+#selectspell 4389 -- AOE Cursed Luck
+#copyspell 1272 -- curse
+#name "Hex of Misfortune"
+#descr "This spell curses a large group of enemy soldiers with misfortune for a short time. Any magical luck affecting them will be dispelled, and for the next 10 turns they will be more likely to be hit and to suffer high damage in combat. This bad luck may affect them for the rest of their natural lives and will be more likely to suffer permanent injuries."
+#details "Bad Luck: Luck is negated, 50% chance to reduce a unit's protection and defense by 1d6 exploding"
+#researchlevel 7
+#school 5
+#path 0 7
+#pathlevel 0 3
+#pathlevel 1 0
+#effect 11
+#damage 2
+#aoe 4008 -- 20+
+#precision 100
+#range 100
+#fatiguecost 100
+#aispellmod 20
+#casttime 125
+#spec 546066432  -- Use UW, enemies only, ignores shields, MRN, no undead, no inanimate
+#nextspell 3902
+#end
+
+#selectspell 4390 -- Personal Berserk
+#copyspell 1308 -- Rage of the Cornered Rat
+#name "Frenzy"
+#descr "The caster is provoked into a berserker rage."
+#details "Grants Berserk"
+#researchlevel 3
+#pathlevel 0 1
+#range 0
+#aoe 0
+#ainocast
+#casttime 75
+#fatiguecost 5
+#spec 545390592  -- Use UW, no mindless, no inanimate
+#end
+
+#selectspell 4391 -- big decay
+#copyspell 1267 -- Decay
+#name "Flesh Rot"
+#descr "This spell makes a group of victims age, wither and die at an incredibly fast rate. Victims with high magic resistance and many years left to live might be able to survive the effects of this spell."
+#researchlevel 4
+#pathlevel 0 2
+#aoe 1001 -- 3+
+#fatiguecost 30
+#range 5025 -- 35+
+#precision 20
+#end
+
+#selectspell 4392 -- bigger decay
+#copyspell 1267 -- Decay
+#name "Death and Decay"
+#descr "This spell makes a great number of victims age, wither and die at an incredibly fast rate. Victims with high magic resistance and many years left to live might be able to survive the effects of this spell."
+#researchlevel 6
+#pathlevel 0 3
+#aoe 3001 -- 10+++
+#fatiguecost 30
+#range 5025 -- 35+
+#precision 20
+#end
+
+#selectspell 4393 -- Big Prison of Fire
+#copyspell 1295 -- Prison of Fire
+#name "Chains of Pyriphlogos"
+#descr "Shackles of fire will rise from the ground and bind a great number of enemies. If the victims tries to escape, the shackles become exceedingly hot. Otherwise, the heat stays bearable. A high morale is required to fight the heat and escape. Trying to escape may very well kill a weaker man."
+#researchlevel 7
+#pathlevel 0 4
+#aoe 3003 -- 15+++
+#fatiguecost 100
+#range 5025 -- 45+
+#precision 20
+#end
+
+#selectspell 4394 -- Living Whirlpool
+#copyspell 3868 -- Whirlpool
+#name "Living Maelstrom"
+#descr "The caster releases the power of a storm into the surrounding water, creating several large vortices that will dislocate and damage enemies before rapidly dissipating."
+#researchlevel 7
+#pathlevel 0 4
+#fatiguecost 200
+#nreff 503
+#end
+
+#selectspell 4395
+#name "Inner Sun"
+#school -1
+#researchlevel 0
+#effect 23
+#descr "."
+#damage 67108864  -- Inner Sun
+#spec 281690240 
+#aoe 1
+#path 0 0
+#pathlevel 0 1
+#end
+
+#selectspell 4396
+#name "Inner Light"
+#descr "The caster fills the souls of a small group of nearby soldiers with the incandescent light of the sun. When a soldier so affected is slain, a shower of sunlight will shoot forth from the body and burn all undead beings and demons in the vicinity."
+#details "Explosion: 15 AN MR dmg (undeads and demons only), 35 AoE"
+#school 5
+#researchlevel 6
+#path 0 0
+#pathlevel 0 2
+#path 1 4
+#pathlevel 1 1
+#effect 17
+#damage 1
+#nreff 1
+#range 10
+#precision 100
+#aoe 2004
+#flightspr -1
+#explspr 10034
+#sound 16  -- Fire
+#fatiguecost 100
+#ainocast
+#spec 281690240  -- Ignore shields & armor, friendlies only, mindless, demons, and undead immune, UWOK
+#nextspell 4395
+#end
+
+#selectspell 4397
+#copyspell 1261 -- Farstrike
+#name "Greater Farstrike"
+#descr "The caster opens multiple rifts in space and strikes through them with a fist as hard as steel. The strength of the caster adds to the damage of the spell."
+#nreff 1001
+#precision 20
+#range 100
+#researchlevel 5
+#pathlevel 0 2
+#aispellmod -20
+#fatiguecost 20
+#end
+
+#selectspell 4398
+#copyspell 1278 -- Returning
+#name "Homeward"
+#descr "The caster creates a rift in space in an attempt to shift the target's spatial reference, sweeping them back to their home province. If the soldier is unlucky he might get lost in time and might return later, not at all or completely insane."
+#range 30
+#precision 100
+#nreff 1
+#fatiguecost 20
+#aoe 1
+#spec 17592194711680
+#researchlevel 7
+#pathlevel 0 2
+#path 1 7
+#pathlevel 1 1
+#end
+
+#selectspell 4399
+#copyspell 1270 -- Fascination
+#name "Astral Wind"
+#descr "The caster summons an arcane wind from the Astral Plane that blows across a group of soldiers, magically transporting them across the battlefield and leaving them momentarily stunned and disorientated."
+#range 5030
+#precision 100
+#nreff 1
+#fatiguecost 20
+#aoe 2002
+#spec 17592194711680
+#researchlevel 6
+#path 0 1
+#pathlevel 0 2
+#path 1 4
+#pathlevel 1 1
+#strikesound 108
+#explspr 10056
+#nextspell 4173 -- A new place
+#end
+
+#selectspell 4400
+#copyspell 1270 -- Fascination
+#name "Astral Gale"
+#descr "The caster summons a tremendous gale from the Astral Plane that blows across the caster's enemies, magically transporting them across the battlefield and leaving them momentarily stunned and disorientated."
+#range 5025
+#precision 100
+#nreff 1
+#fatiguecost 100
+#aoe 2014
+#spec 17592194711680
+#researchlevel 8
+#path 0 1
+#pathlevel 0 3
+#path 1 4
+#pathlevel 1 2
+#strikesound 108
+#explspr 10056
+#nextspell 4173 -- A new place
+#end
+
+#selectspell 4401
+#copyspell 674 -- Fire Cloud
+#name "Shimmering Fog"
+#descr "The caster creates a dense fog that settles over a portion of the battlefield. From within the fog, strange shimmering lights can be seen and a cruel laughter can be heard. The fog remains on the battlefield for some time and is very dangerous for those without a strong resistance to magic."
+#school 5
+#researchlevel 5
+#path 0 1
+#pathlevel 0 3
+#path 1 7
+#pathlevel 1 1
+#damage 16777216
+#strikesound 108
+#explspr 10061
+#spec 17180004480
+#end
+
+#selectspell 4402
+#copyspell 4328 -- Steal Breath
+#name "Asphyxiation"
+#descr "With a gesture, the caster creates an airless void which suffocates those caught within it. The victims of this spell will have their breath stolen from them and their chest crushed as the air leaves their body. Recovering the breath will require quite an effort and the leave the victim exhausted."
+#researchlevel 7
+#pathlevel 0 4
+#fatiguecost 30
+#range 5015
+#damage 5020
+#aoe 2017 -- 25++
+#end
+
+#selectspell 4403
+#copyspell 1287 -- Iron Will
+#name "Unyielding Will"
+#descr "The caster strengthens the minds of a large group of soldiers. Their ability to resist magic is increased for the duration of the battle. This spell cannot be cast on mindless beings."
+#researchlevel 6
+#pathlevel 0 3
+#fatiguecost 100
+#aoe 4008 -- 25+++++
+#end
+
+#selectspell 4404
+#copyspell 849 -- Blindness
+#name "Dull the Mind"
+#descr "The caster curses his opponents with a deep and unshakeable melancholia. Soldiers will become depressed, cynical and listless. Thinking becomes hard for them and affected mages will not be able to cast spells. This change is permanent unless the soldier is treated by an experienced healer."
+#details "Afflicts enemies with feeblemind, lowering their attack and defence by 1 and their magic resistance by 5."
+#damage 33554432 -- feeblemind
+#school 5
+#researchlevel 4
+#path 0 3
+#pathlevel 0 2
+#aoe 1001 -- 3+
+#range 5020 --30+
+#spec 8540288 -- AN, MRN, UWOK, mindless immune.
+#end
+
+#selectspell 4405
+#copyspell 849 -- Blindness
+#name "Petrify Thought"
+#descr "The caster curses the minds of his foes with a deep and unshakeable melancholia. Soldiers will become depressed, cynical and listless. Thinking becomes hard for them and affected mages will not be able to cast spells. This change is permanent unless the soldier is treated by an experienced healer."
+#details "Afflicts enemies with feeblemind, lowering their attack and defence by 1 and their magic resistance by 5."
+#damage 33554432 -- feeblemind
+#school 5
+#researchlevel 7
+#path 0 3
+#pathlevel 0 4
+#fatiguecost 30
+#range 5010 --30+
+#aoe 4012 -- 20++++
+#spec 8540288 -- AN, MRN, UWOK, mindless immune.
+#end
+
+#selectspell 4406
+#copyspell 1318 -- Serenity
+#name "Tranquility"
+#descr "The caster bathes the battlefield in a powerful phlegmatic aura of calm and passivity, quenching the emotions of both friend and foe. Berserkers will calm down and eventually lose their berserker rage. Less aggressive units will simply become a bit less inclined to continue fighting."
+#details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates). Can only be cast once per combat round."
+#school -1
+#pathlevel 0 4
+#fatiguecost 200
+#explspr 10005
+#range 0
+#aoe 666 -- Battlefield
+#end
+
+#selectspell 4407 -- Tranquility Clone
+#copyspell 4406
+#school 5
+#researchlevel 8
+#effect 133
+#damage 378 -- Ench180 -- Tranquility
+#ainocast 1
+#nextingeo -1
+#nextspell 4406 -- Tranquility
+#end
+
+#selectspell 4408 -- Calm Self
+#copyspell 1276 -- Calm Emotions
+#name "Calm Self"
+#aoe 0
+#range 0
+#school -1
+#researchlevel 0
+#spec 8536064 -- Ignore shields, no mindless, UWOK
+#end
+
+#selectspell 4409 -- Calm Self
+#copyspell 1121 -- Breath of Winter
+#name "Inner Peace"
+#descr "The caster focuses inwards on their phlegmatic humors to quench their emotions. They will find themselves less prone to enter and maintain a berserker rage, but will fight in melee with reduced vigor as a consequence."
+#details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates)."
+#effect 17
+#damage 1
+#school 5
+#researchlevel 0
+#casttime 50
+#fatiguecost 5
+#explspr 10061
+#spec 8536064 -- Ignore shields, no mindless, UWOK
+#nextspell 4408 -- Calm Self
+#end
+
+#selectspell 4410 -- exsiccation
+#copyspell 1298 -- curse of the desert
+#name "Exsiccation"
+#descr "This spell will affect a large number of targets with severe dehydration. The dehydrated targets will become more and more exhausted and may eventually lose consciousness. The duration of the dehydration depends on the magic resistance of the targets. Undead beings and constructs are not affected by this spell."
+#researchlevel 7
+#pathlevel 0 3
+#range 40
+#spec 17592723439744  -- Hard MR Neg
+#aoe 5010 -- 30+5
+#fatiguecost 100
+#end
+
+#selectspell 4411
+#copyspell "Stygian Paths"
+#name "Umbral Stair"
+#descr "Through their connection to the underworld, the death mage opens a dark stairwell into the realm of death, temporarily connecting his current location to an especially prepared distant laboratory. The realm of death is not a friendly one, and using the Umbral Stair risks injury or death."
+#details "Spirit attacks: 1 AN dmg + death MR attack. Stealthy units have only 20% chance of being attacked. Caster can not take advantage of stealth."
+#effect 10077
+#provrange 6
+#pathlevel 0 4
+#researchlevel 6
+#fatiguecost 1200
+#end
+
+#selectspell 4412
+#copyspell 221 -- Smite
+#name "Exaltation of Fire"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 0
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2339 -- Bonds of Apostasy
+#godpathspell 0
+#end
+
+#selectspell 4413
+#copyspell 221 -- Smite
+#name "Heavenly Exaltation"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 1
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2340 -- Fetter the Faithless
+#godpathspell 1
+#end
+
+#selectspell 4414
+#copyspell 221 -- Smite
+#name "Exaltation of Water"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 2
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2341 -- Mire the Heathens
+#godpathspell 2
+#end
+
+#selectspell 4415
+#copyspell 221 -- Smite
+#name "Exaltation of Stone"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 3
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2342 -- Bury Unbelievers
+#godpathspell 3
+#end
+
+#selectspell 4416
+#copyspell 221 -- Smite
+#name "Exaltation of Power"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 4
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2343 -- Punish Idolatry
+#godpathspell 4
+#end
+
+#selectspell 4417
+#copyspell 221 -- Smite
+#name "Exaltation of Death"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 5
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2344 -- Memento Mori
+#godpathspell 5
+#end
+
+#selectspell 4418
+#copyspell 221 -- Smite
+#name "Exaltation of Thorns"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 6
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2345 -- Entangle Heretics
+#godpathspell 6
+#end
+
+#selectspell 4419
+#copyspell 221 -- Smite
+#name "Exaltation of Bewilderment"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 7
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 4247 -- Dream of Heresy
+#godpathspell 7
+#end
+
+#selectspell 4420
+#copyspell 221 -- Smite
+#name "Sanguine Exaltation"
+#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
+#school 5
+#range 40
+#path 0 8
+#pathlevel 0 2
+#path 1 9
+#pathlevel 1 2
+#researchlevel 8
+#fatiguecost 10
+#nreff 1001 -- 3+
+#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
+#nextspell 2346 -- Fear of God
+#godpathspell 8
+#end
+
+#selectspell 4421
+#copyspell 1145 -- Heal
+#name "Mass Heal"
+#descr "This spell can heal many targets within close range. The spell doesn't affect inanimate beings."
+#school 5
+#range 25
+#pathlevel 0 2
+#researchlevel 5
+#fatiguecost 20
+#precision 100
+#aoe 1002 -- 4+
+#damage 5
+#spec 549453952 -- AN, friendles only, no effect on inanimate, UWOK
+#end
+
+#selectspell 4421
+#copyspell 667 -- Healing light
+#name "Healing Radiance"
+#descr "A radiant aura of warm and wonderful light envelops the target area, closing wounds and easing the pain of friendly soldiers. The spell doesn't affect undead or inanimate beings."
+#pathlevel 0 3
+#researchlevel 6
+#fatiguecost 30
+#range 100
+#aoe 1002 -- 5++
+#damage 2
+#spec 550109312 -- AN, no effect on mindless/inanimate/undead, friendlies only, use UW
+#end
+
+--- SPELLIDs 4422 and 4423 USED FOR RITUAL EFFECTS, SKIP
+
+#selectspell 4424 -- Infernal Prison 
+#copyspell 1282 --Rage--
+#name "Infernal Prison" -- Fixing cast bug with banish spells
+#descr "A gate is opened and the target is instantly thrown into the Inferno, the realm of Devils. This effect cannot be resisted by any means and being sent to the Inferno means certain death for most mortals."
+#researchlevel 8
+#school 6
+#path 0 8 -- Blood 
+#path 1 0 -- Fire 
+#pathlevel 0 3 -- B3
+#pathlevel 1 1 -- F1
+#precision 100
+#spec 16512 -- AN, ignores shields
+#range 40
+#fatiguecost 200
+#explspr 10252
+#strikesound 106
+#nextspell 1441 --Infernal Prison 
+#end
+
+#selectspell 4425 -- Claws of Kokytos 
+#copyspell 1282 --Rage--
+#name "Claws of Kokytos" -- Fixing cast bug with banish spells
+#descr "A gate is opened and the target is instantly thrown into Kokytos, the icy realm of Devils. This effect cannot be resisted by any means and being sent to Kokytos means certain death for most mortals."
+#researchlevel 8
+#school 6
+#path 0 8 -- Blood 
+#path 1 2 -- Water 
+#pathlevel 0 3 -- B3
+#pathlevel 1 1 -- W1
+#precision 100
+#spec 16512 -- AN, ignores shields
+#range 40
+#fatiguecost 200
+#explspr 10253
+#strikesound 106
+#nextspell 1442 -- Claws of Kokytos 
 #end
 
 -- END OF NEW SPELLS
@@ -163893,6 +164559,13 @@ name "Frost Fiend"
 #precision 100
 #end
 
+#selectspell 1115 -- Healing Touch
+#school 5
+#precision 100
+#damage 5
+#spec 549453952 -- AN, friendles only, no effect on inanimate, UWOK
+#end
+
 #selectspell 1118 -- Ignite Arrows
 #precision 100
 #end
@@ -163915,6 +164588,14 @@ name "Frost Fiend"
 
 #selectspell 1144 -- Regeneration
 #precision 100
+#end
+
+#selectspell 1145 -- Heal
+#school 5
+#precision 100
+#damage 5
+#range 25
+#spec 549453952 -- AN, friendles only, no effect on inanimate, UWOK
 #end
 
 #selectspell 1150 -- Levitate Soldiers
@@ -163959,10 +164640,34 @@ name "Frost Fiend"
 
 #selectspell 1329 -- Group Luck
 #precision 100
+#aoe 1002
+#fatiguecost 30
 #end
 
 #selectspell 1341 -- Mirror Mind
+#aoe 1006 -- 8+
 #precision 100
+#end
+
+#selectspell 1342 -- Unending Nightmare
+#range 5020
+#end
+
+#selectspell 1344 -- Sandman's Blessing
+#range 5020 -- 45
+#end
+
+#selectspell 1347 -- Gale Gate
+#researchlevel 8
+#end
+
+#selectspell 1351 -- Plague
+#precision 20
+#range 5020 -- 40
+#end
+
+#selectspell 1359 -- Gale Gate
+#researchlevel 7
 #end
 
 #selectspell 3876 -- Amberskin
@@ -164049,6 +164754,7 @@ name "Frost Fiend"
 
 #selectspell 526 -- Gift of the Fourth Soul
 #precision 100
+#aoe 2
 #end
 
 #selectspell 2454 -- Sharpen Steel
@@ -164133,8 +164839,38 @@ name "Frost Fiend"
 #details "Each time caster receives damage from an attack a Smite triggers against a random enemy. Maximum 1 Smite per round, extras will continue to trigger in subsequent rounds or if caster dies."
 #end
 
-#selectspell 220 -- - Divine Blessing
-#notfornation 42 -- Therodos
+-- SMITE CYCLE RANGE INCREASES
+
+#selectspell 221
+#range 35
+#end
+
+#selectspell 222 
+#range 35
+#end
+
+#selectspell 224
+#range 30
+#end
+
+#selectspell 226
+#range 30
+#end
+
+#selectspell 232
+#range 30
+#end
+
+#selectspell 235
+#range 35
+#end
+
+#selectspell 238
+#range 35
+#end
+
+#selectspell 240
+#range 35
 #end
 
 #selectspell 244 -- Fire Flies
@@ -164164,7 +164900,8 @@ name "Frost Fiend"
 #end
 
 #selectspell 251 -- Sleep Ray
-#range 2
+#fatiguecost 10
+#range 5
 #end
 
 #selectspell 1395 -- Leeching Touch
@@ -164202,8 +164939,13 @@ name "Frost Fiend"
 #range 2
 #end
 
+#selectspell 770 -- Burn
+#range 35
+#end
+
 #selectspell 775 -- Gooey Water
 #aoe 1004 -- 6+
+#precision 10
 #end
 
 #selectspell 637 -- Gust of Winds
@@ -164218,7 +164960,8 @@ name "Frost Fiend"
 
 #selectspell 1276 -- Calm Emotions
 #aoe 1003 -- 3+
-#range 25
+#range 5030 -- 35+
+#explspr 10061
 #spec 8802304 -- MRN, ignores shields, no mindless, only enemy
 #end
 
@@ -164237,6 +164980,18 @@ name "Frost Fiend"
 #selectspell 256 -- Keres
 #fatiguecost 800
 #restricted 205
+#end
+
+#selectspell 257 -- Rhapsody of Life
+#descr "The Rhapsodies are mystical spellsongs and elegies associated with the cycles of life and death. The Rhapsody of Life reinvigorates and heals a small group of living beings."
+#precision 100
+#aoe 1
+#end
+
+#selectspell 259 -- Rhapsody of the Dead
+#range 5015
+#aoe 2006 -- 8++
+#damage 2002 -- 4++
 #end
 
 #selectspell 265 -- Contact Hesperides
@@ -164667,6 +165422,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #restricted 58 -- Eriu
 #end
 
+#selectspell 440 -- Curse of Balor
+#range 5015
+#end
+
 #selectspell 441 -- Bean Sidhe
 #fatiguecost 2000
 #end
@@ -164699,7 +165458,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #nogeosrc 4096  -- Cannot cast in Caves
 #researchlevel 4
 #fatiguecost 20
-#range 35
+#range 5035
 #end
 
 #selectspell 465 -- Summon Amesha Spenta
@@ -164848,20 +165607,23 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 519 -- Break the First Soul -- Bleed / Disease
+#range 5025
 #precision 10
 #end
 
 #selectspell 520 -- Break the Second Soul -- Limp
-#precision 10
+#precision 20
+#range 5025
 #end
 
 #selectspell 521 -- Break the Third Soul -- fatigue
-#precision 10
+#precision 20
 #spec 545800320
 #end
 
 #selectspell 522 -- Break the Fourth Soul -- Curse
-#precision 10
+#range 5025
+#precision 100
 #end
 
 #selectspell 523 -- Gift of the First Soul -- Regen
@@ -164869,7 +165631,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 524 -- Gift of the Second Soul -- Blunt res
-#aoe 3
+#aoe 1002
 #end
 
 #selectspell 525 -- Gift of the Third Soul -- Reinvig2 buff
@@ -164878,7 +165640,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 526 -- Gift of the Fourth Soul -- Luck
-#aoe 1
+#aoe 2
 #end
 
 #selectspell 507 -- Monster Toad
@@ -165153,7 +165915,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 1260 -- Dessication
 #fatiguecost 10
+#range 5030 -- 35+
 #pathlevel 0 1
+#aoe 1001 -- 2+
+#spec 17592723439744 -- MRNH
 #end
 
 #selectspell 639 -- Water Strike damage increase
@@ -165182,19 +165947,20 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 647 -- Bewitching Lights
 #aoe 2003 -- 5++
+#precision 100
 #spec 25559168 -- AN, MRNE, mindless immune, enemies only, UWok
 #end
 
 #selectspell 1270 -- Fascination
-#aoe 1
-#range 30
+#aoe 1001 -- 2+
+#range 5030 -- 35+
 #spec 8786048 -- AN, MRN, mindless immune, enemies only, UWok
 #end
 
 #selectspell 1273 -- Bonds of Fire
 #aoe 1
-#precision 8
-#range 25
+#precision 20
+#range 5020 -- 25+
 #end
 
 #selectspell 648 -- Fire Blast
@@ -165277,7 +166043,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 667 -- Healing Light
-#spec 545915008 -- +UWOK
+#damage 2
+#aoe 1
+#range 100
+#spec 550109312 -- +UWOK
 #end
 
 #selectspell 653 -- Shockwave
@@ -165604,12 +166373,13 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 1117 -- False Fetters
 #details "MR +DRN vs 20 to get free"
-#range 25
-#precision 5
+#range 5030
+#precision 20
 #spec 8671232 -- MRN, Ignore shields, UWOK, enemy only
 #end
 
 #selectspell 804 -- Combustion
+#range 35
 #notfornation 61
 #end
 
@@ -165638,22 +166408,32 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 822 -- Shrink
-#range 5015 -- 25+5
+#range 5020 -- 30+5
 #aoe 1002 -- 4+1
-#precision 6
+#precision 100
 #end
 
 #selectspell 1309 -- Wildness
+#range 5020
 #pathlevel 0 2
 #aoe 1001 -- 3+
+#precision 100
 #end
 
 #selectspell 800 -- Torpor
+#range 5025
 #aoe 1002 -- 4+1
 #end
 
 #selectspell 1328 -- Confusion
+#range 5025
 #aoe 1001 -- 3+1
+#precision 20
+#end
+
+#selectspell 1290 -- Panic
+#aoe 2001 -- 5+2
+#precision 100
 #end
 
 #selectspell 1292 -- Luck
@@ -165661,7 +166441,12 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 1293 -- Despair
-#aoe 2001 -- 5+2
+#aoe 2001 -- 7+2
+#precision 100
+#end
+
+#selectspell 1294 -- Geas
+#range 5020
 #end
 
 #selectspell 658 -- Phantasmal Warrior
@@ -165680,8 +166465,9 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 782 -- Weakness
 #aoe 1002 -- 3+
-#range 30
+#range 35
 #fatiguecost 10
+#precision 20
 #end
 
 #selectspell 803 -- Group Blur
@@ -165704,12 +166490,13 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 849 -- Blindness
-#range 30
-#researchlevel 5
+#range 5025 -- 30+
+#aoe 1
+#researchlevel 4
 #end
 
 #selectspell 1212 -- Steal Sight
-#range 30
+#range 5030 -- 35+
 #researchlevel 5
 #end
 
@@ -165750,7 +166537,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 792 -- Numbness
 #aoe 1001 -- 3+
-#range 35
+#range 5030
 #end
 
 #selectspell 798 -- Barkskin
@@ -165775,6 +166562,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 808 -- Slow
 #researchlevel 3
+#range 5030
 #pathlevel 0 1
 #aoe 1002 -- 3+
 #end
@@ -165831,7 +166619,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 --#pathlevel 0 3
 --#path 1 5
 --#pathlevel 1 1
---#aoe 1002 -- 5+
+#aoe 1002 -- 5+
 #end
 
 #selectspell 704 -- Phantasmal Army
@@ -165858,6 +166646,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 832  -- Winter's Chill
 #aoe 2004 -- 8+2
+#range 5025 -- 35+
 #pathlevel 0 2
 #end
 
@@ -165921,10 +166710,6 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spec 8388608
 #end
 
-#selectspell 1367 -- Battle Fortune
-#aoe 4004 -- 20+4
-#end
-
 #selectspell 860 -- Rewrite Fate
 #aoe 4004 -- 20+4
 #end
@@ -165942,7 +166727,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 1367 -- Battle Fortune
-#aoe 4004 -- 20+4
+#aoe 5010 -- 30+5
 #end
 
 #selectspell 909 -- Displaced Warriors
@@ -165997,6 +166782,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #school 4 -- Ench
 #end
 
+#selectspell 887 -- Curse of the Frog Prince
+#range 40
+#end
+
 #selectspell 888 -- Creeping Doom
 #spec 8388608
 #end
@@ -166006,6 +166795,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #researchlevel 7
 #pathlevel 0 5
 #fatiguecost 7500
+#end
+
+#selectspell 892 -- Conflagration
+#range 35
 #end
 
 #selectspell 895 -- Army of Mist
@@ -166022,11 +166815,22 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #pathlevel 0 5 -- +1
 #end
 
+#selectspell 906 -- Polymorph
+#range 5020 -- 35+
+#precision 20
+#end
+
+
 #selectspell 911 -- Army of Gold
 #end
 
 #selectspell 919 -- Summon Cave Grubs
 #nreff 1004
+#end
+
+#selectspell 920 -- Tangle Vines
+#range 5025 -- 30+
+#precision 20
 #end
 
 #selectspell 921 -- Summon Animals
@@ -166335,9 +167139,11 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 1074 -- Wild Growth
-#fatiguecost 20
+#range 5020 -- 40+
+#precision 20
+#aoe 4008 -- 20+
+#fatiguecost 40
 #end
-
 
 #selectspell 1079 -- Legion of Wights
 #spec 8388608 -- UWOK
@@ -166479,8 +167285,13 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1286 -- Sailor's Death
+#path 1 1
+#pathlevel 0 2
+#pathlevel 1 1
+#researchlevel 5
 #aoe 1000 -- 3+
-#precision 5
+#range 5025 -- 35+
+#precision 100
 #end
 
 #selectspell 1300 -- Paralyze
@@ -166565,6 +167376,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #aoe 4008 -- 20+4
 #end
 
+#selectspell 788 -- Inner Sun
+#school 5
+#end
+
 #selectspell 789 -- Protective Winds
 #fatiguecost 20
 #end
@@ -166593,7 +167408,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 
 #selectspell 1150 -- Levitate Soldiers
-#aoe 2000 -- 4+2
+#school 5
+#researchlevel 5
+#aoe 4012 -- 20+4
+#fatiguecost 100
 #end
 
 #selectspell 1151 -- Trueshot Warriors
@@ -166676,6 +167494,19 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #aoe 1003 -- 4+
 #end
 
+#selectspell 1301 -- Telestic Animate
+#researchlevel 6
+#fatiguecost 1200
+#pathlevel 0 3 
+#end
+
+
+#selectspell 1305 -- Terror
+#damage 5
+#precision 100
+#spec 545800192
+#end
+
 #selectspell 1306 -- Ferocity
 #aoe 3004 -- 10+3
 #end
@@ -166702,23 +167533,35 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #spec 537415808
 #end
 
+#selectspell 1291 -- Whispers of the Wild
+#fatiguecost 200
+#end
+
 #selectspell 1296 -- Furious Warriors
 #aoe 2004 -- 8+2
+#researchlevel 6
 #fatiguecost 30 -- 40 -> 30
 #end
 
 #selectspell 1314 -- Gift of the Furies
 #pathlevel 0 2
-#aoe 4012 -- 20+4
+#aoe 5020 -- 30+5
+#end
+
+#selectspell 1315 -- Pyre of Catharsis
+#pathlevel 0 2
+#fatiguecost 300
 #end
 
 #selectspell 1354 -- Charm
+#range 5020 -- 35+
 #researchlevel 6
 #end
 
 #selectspell 1355 -- Mass Confusion
 #aoe 1005 -- 8+
 #range 5020 -- 35+5
+#precision 20
 #end
 
 #selectspell 733 -- Storm of Thorns --removed for nextspell verison--
@@ -166733,31 +167576,42 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #spec 1152930300700016768 -- No MRNH
 #end
 
+#selectspell 1462 -- Featherweight Army
+#school 5
+#end
+
 #selectspell 1464 -- Lauma
 #fatiguecost 3000
 #end
 
 #selectspell 1318 -- Serenity
-#aoe 2002 -- 8+2
-#range 25
+#aoe 2006 -- 12+2
+#range 5020 -- 35+
 #spec 8802304 -- only enemies
+#explspr 10061
 #end
 
 #selectspell 1313 -- Visions of Death
+#range 5025
 #fatiguecost 10
 #end
 
 #selectspell 1457 -- Tangle Thicket
+#range 5025 -- 30+
+#precision 20
 #fatiguecost 20
+#aoe 1003 -- 5+
 #end
 
 #selectspell 1281 -- Sleep
+#range 5035
 #pathlevel 0 1
 #casttime 75
 #fatiguecost 10
 #end
 
 #selectspell 1311 -- Slumber
+#range 5030
 #aoe 1002 -- 4+
 #end
 
@@ -167040,8 +167894,15 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 --#pathlevel 0 6
 #end
 
+#selectspell 1261 -- Far Strike
+#pathlevel 0 1
+#range 100
+#precision 20
+#end
+
 #selectspell 1262 -- Blink
 #ainocast 1
+#fatiguecost 5
 #end
 
 #selectspell 1263 -- Communion Slave
@@ -167053,8 +167914,19 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1267 -- Decay
-#range 5025 -- 30+5
+#range 5030 -- 35+5
 #aoe 1
+#precision 20
+#end
+
+#selectspell 1268 -- Frighten
+#precision 100
+#end
+
+#selectspell 1269 -- Seven Year Fever
+#range 5025 -- 30+5
+#precision 100
+#nextspell 2307 -- starvation pangs
 #end
 
 #selectspell 1277 -- Scrying Pool
@@ -167070,21 +167942,21 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1282 -- Rage
-#descr "The spell fills the heart of a few men with furious anger. The raging units will attack anything nearby, even friends."
-#pathlevel 0 1
-#path 1 7 -- G
-#pathlevel 1 1
+#descr "The spell fills the hearts of a few men with choleria, igniting a violent and uncontrollable anger within them. The raging units will attack anything nearby, even friends."
+#pathlevel 0 2
 #aoe 1
-#range 20
+#range 5020
 #aispellmod -20
 #end
 
 #selectspell 1357 -- Hydrophobia
+#range 5025
 #path 0 0 -- F
 #pathlevel 0 3
-#path 1 7 -- G
+#path 1 6 -- N
 #pathlevel 1 1
 #aoe 3006 -- 15+3
+#nextspell 101 - Disease
 #end
 
 #selectspell 1283 -- Augury
@@ -167099,30 +167971,45 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1302
 #notfornation 95
---#pathlevel 0 3
---#fatiguecost 400
---#provrange 4
+#fatiguecost 200
 #end
 
-#selectspell 1310 -- Curse Disease
-#pathlevel 0 3
+#selectspell 1310 -- Cure Disease
+#pathlevel 0 2
+#fatiguecost 300 
 #end
 
-#selectspell 1319 -- Earth Sense
+#selectspell 1319 --Earth Sense--
+#copyspell 1330 --Choleria Copy to remove 'spell is broken if the caster leaves prov, and keep 3/turns per gem--
+#name "Earth Sense"
+#descr "The caster attunes himself with the earth itself to sense who treads upon it. Enemies trying to sneak around in the province will be detected and traced, even if invisible."
+#details "Patrol strength +100 vs enemy units. Able to detect invisible units as well. Duration: 1 month + 3 months per extra gem."
+#damage 121
+#researchlevel 5
+#path 0 3
 #pathlevel 0 3
-#fatiguecost 400
+#fatiguecost 500
+#friendlyench 1
+#hiddenench 1
 #end
 
 #selectspell 1295 -- Prison of Fire
+#range 5020
 #aoe 1002
-#precision 8
+#precision 20
 #end
 
 #selectspell 1298 -- Curse of the Desert
 #pathlevel 0 2
+#range 40
 #spec 17592723439744  -- Hard MR Neg
-#aoe 2001 -- 5+2
+#aoe 2006 -- 10+2
 #fatiguecost 20
+#end
+
+#selectspell 1312 -- Mind Blank
+#casttime 50
+#pathlevel 1 0
 #end
 
 #selectspell 1308 -- Rage of the Cornered Rat
@@ -167134,14 +168021,15 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1323 -- Control the Dead
 #notfornation 109 -- LA Tien Chi
-#precision 10
+#precision 100
+#range 5015
 #end
 
 #selectspell 1324 -- Charm Animal
 #notfornation 28
 #aoe 1
 #casttime 75
-#range 25
+#range 5025
 #fatiguecost 10
 #name "Charm Animals"
 #descr "A small group of animals are charmed by the mage."
@@ -167156,14 +168044,103 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #fatiguecost 1500
 #end
 
-#selectspell 1333 -- Melancholia
-#hiddenench 1
-#notfornation 102 -- LA Agartha
+
+---Choleria-- 
+
+#selectspell 1330 --Choleria--
+#descr "The caster affects a friendly province with the humor of fire, choleria. The populace becomes energetic and productive, but this manic production also results in chaos and disorder. Productivity and income is increased, but quarrels and disorganization lead to turmoil."
+#details "Production +2 and Turmoil +1 per turn, to a maximum of +2 over the province's natural scales. The enchantment lasts longer if more gems are used in the casting. Provinces with high dominion or opposite scales will take longer to change."
+#researchlevel 6
+#pathlevel 0 3
+#damage 700
+#fatiguecost 1000
+#onlyfriendlydst 1 --Allied and Owned Provinces Only 
+#nextspell 4387 --Choleric Production--
+#end 
+
+#selectspell 4387 --Choleric Production Jumpstart scale change on province where it is cast and places hidden sites--
+#name "Choleric Production" --first instance of productivity and 
+#effect 10042
+#damage 60 --event identifier--
+#pathlevel 0 0
+#path 0
+#school -1
+#researchlevel -1
+#end
+
+--Sanguina-- 
+
+#selectspell 1331 --Sanguina--
+#descr "The caster affects a friendly province with the humor of air, sanguinia. Sanguine people are relaxed, social and whimsical. The province's misfortunes will end and it will become a more magical place. However, it's people will at times be too relaxed and complacent."
+#details "Misfortune scales are removed or greatly reduced, though no luck scales are added. Magic +1 and Sloth +1 per turn, capped at +2 over the province's natural scales. The enchantment lasts longer if more gems are used in the casting. Provinces with high dominion or other scales will take longer to change." 
+#researchlevel 6
+#pathlevel 0 3
+#damage 701
+#fatiguecost 10000
+#onlyfriendlydst 1 --Allied and Owned Provinces Only 
+#nextspell 4422
+#end 
+
+#selectspell 4422 --Sanguina jumpstart scales and add hidden sites--
+#name "Sanguine Tranquility"
+#effect 10042
+#damage 61 --event identifier--
+#pathlevel 0 0
+#path 1
+#school -1
+#researchlevel -1
+#end
+
+--Phlegmatia--
+
+#selectspell 1332 --Phlegmatia
+#copyspell 1331 --Sanguina-- (to get the 3 turns per gem effect)
+#name "Phlegmatia"
+#descr "The caster affects a friendly province with the humor of water, Phlegmatia. The population becomes passive and peaceful, and unrest is lowered. The calming effect is so great that it flows into neighboring provinces as well."
+#details "Unrest is reduced by 5 each month in the affected province and all adjacent provinces."
+#path 0 2
+#researchlevel 6
+#pathlevel 0 3
+#damage 702
+#fatiguecost 10000
+#onlyfriendlydst 1 --Allied and Owned Provinces Only 
+#nextspell 4423 --Phlegmatic Passivity 
+#end
+
+#selectspell 4423 --add hidden site-- 
+#name "Phlegmatic Passivity"
+#effect 10042
+#damage 62 --event identifier--
+#pathlevel 0 0
+#path 1
+#school -1
+#researchlevel -1
+#end
+
+--Melancholia-- 
+
+#selectspell 1333 --Melancholia
+#descr "The caster curses a province with the humor of earth, melancholia. The populance becomes depressed, cynical and listless. Peasants don't care about harvesting and let their livestock wander. Craftsmen only work when they feel like, and even the temples are left untended. The Dominion of the local god will decrease."
+#details "Scale of Sloth is increased by 3 and Dominion is reduced by 5."
+#researchlevel 6
+#effect 10042 --effect--
+#pathlevel 0 3
+#damage 63 --event identifier
+#fatiguecost 10000
+#end 
+
+#selectspell 1338 -- Leprosy
+#researchlevel 7
+#end
+
+#selectspell 133 -- Wither Bones
+#precision 10
 #end
 
 #selectspell 1345 -- Forgotten Palace
 #fatiguecost 600
 #researchlevel 4
+#pathlevel 0 3
 #spec 8388608
 #end
 
@@ -167239,7 +168216,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 252 -- Bleed
 #aoe 1
-#prec 10
+#precision 20
 #end
 
 #selectspell 1379 -- Blood Burst
@@ -167275,6 +168252,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectspell 1389 -- Agony
 #notfornation 116
 #aoe 2004
+#precision 10
 #end
 
 #selectspell 1390 -- Banish Demon
@@ -167460,11 +168438,11 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1441 -- Infernal Prison
-#range 40
+#school -1 -- replaced with identical spells to remove casting bug
 #end
 
 #selectspell 1442 -- Claws of Kokytos
-#range 40
+#school -1 -- replaced with identical spells to remove casting bug
 #end
 
 #selectspell 1444 -- Curse of Blood
@@ -172339,7 +173317,7 @@ Increases Natural Protection by 2 for each level of heat in the province."
 --#itemcost2 -60 -- 2N
 #constlevel 3
 #berserk -9
-#autospell "Tranquility"
+#autospell "Inner Peace"
 #end
 
 
@@ -195367,9 +196345,154 @@ It is now fully repaired and a new crew has been assigned to it."
 #com 3497 -- Wizard
 #end
 
+-- New humours rituals events
 
+#newevent
+#rarity 2 --uncommon bad--
+#req_rare 0 --can't happen outside of event triggers--
+#incscale 0 --turmoil 
+#decscale2 1 --prod
+#id 60 --linked to newspell 4387
+#msg "The province has been gripped with a feeling of manic production! Everyone works in a chaotic frenzy."
+#maybehiddensite 2622 --adds choleric productiion site 1--
+#maybehiddensite 2623 --adds choleric production site 2--
+#end
 
+#newevent --removes sites when the spell ends-- 
+#rarity 5
+#req_noench 700 --choleria
+#removesite 2622 --choleric production-- 
+#removesite 2623 --choleric production 2--
+#req_indepok
+#req_pop0ok
+#nolog
+#notext
+#req_site 1
+#msg "[Choleric Production]"
+#end 
 
+#newevent
+#rarity 2 --uncommon bad--
+#req_rare 0 --can't happen outside of event triggers--
+#decscale 5 --Magic
+#incscale 1 --sloth
+#id 61 --linked to newspell 4388
+#msg "Everyone in the province feels relaxed and whimsical, like their misfortunes are behind them."
+#maybehiddensite 2624 --adds Sanguine Tranquility
+#end
+
+#newevent --Removes Site if Enchantment Ends-- 
+#rarity 5
+#req_noench 701
+#removesite 2624
+#notext
+#nolog
+#req_site 1
+#msg "[Sanguine Tranquility]"
+#end 
+
+#newevent -- removes misfortune if there is misfortune in the province for misf 5
+#rarity 5
+#req_pop0ok
+#req_ench 701
+#req_unluck 5
+#req_luck -5
+#decscale3 4 --+3 luck--
+#msg "misf5 +3 luck"
+#notext
+#nolog
+#req_pop0ok
+#end 
+
+#newevent -- removes misfortune if there is misfortune in the province for misf 4
+#rarity 5
+#req_pop0ok
+#req_ench 701
+#req_unluck 4
+#req_luck -4
+#decscale3 4 --luck +3 luck 
+#msg "Misf4 +3 luck"
+#notext
+#nolog
+#req_pop0ok
+#end 
+
+#newevent -- removes misfortune if there is misfortune in the province for misf 3
+#rarity 5
+#req_pop0ok
+#req_ench 701
+#req_unluck 3
+#req_luck -3
+#decscale3 4 --luck +3 luck 
+#msg "Misf3 +3 luck"
+#notext
+#nolog
+#req_pop0ok
+#end 
+
+#newevent -- removes misfortune if there is misfortune in the province for misf 2
+#rarity 5
+#req_pop0ok
+#req_ench 701
+#req_unluck 2
+#req_luck -2
+#decscale2 4 --luck +2 luck 
+#msg "Misf2 +2 luck"
+#notext
+#nolog
+#req_pop0ok
+#end 
+
+#newevent -- removes misfortune if there is misfortune in the province for misf 1
+#rarity 5
+#req_pop0ok
+#req_ench 701
+#req_unluck 1
+#req_luck -1
+#decscale 4 --luck +1 luck 
+#msg "Misf2 +1 luck"
+#notext
+#nolog
+#req_pop0ok
+#end 
+
+#newevent
+#rarity 5
+#req_noench 702
+#removesite 2625 --Phlegmatic Site--
+#req_site 1
+#msg "remove thing [Phlegmatic Passivity]"
+#notext
+#nolog
+#end 
+
+#newevent
+#rarity 2 --uncommon bad--
+#req_rare 0 --can't happen outside of event triggers--
+#id 62 --linked to newspell 4389
+#msg "Everyone in the province feels relaxed and whimsical, like their misfortunes are behind them."
+#maybehiddensite 2625 --adds Phlegmatic Passivity
+#end
+
+#newevent --unrest reduction in site and nearby
+#rarity 5
+#req_nearbysite 1 --Phlegmatic Site-- 
+#unrest -5
+#req_pop0ok
+#req_indepok
+#msg "unrest reduce?[Phlegmatic Passivity]" --adds site--
+#notext
+#nolog
+#end 
+
+#newevent 
+#rarity 2 --uncommon bad--
+#req_rare 0 --can't happen outside of event triggers--
+#id 63 --linked to Melancholia
+#msg "Everyone in the province is filled with lethargy, and production has ground to a halt. Even the priests at the temples feel no passion for their work, and faith here plummets."
+#incdom -5
+#incscale3 1 --sloth
+#end
 
 -- END OF NEW EVENTS
 
