@@ -4286,12 +4286,6 @@
 #ammo 1
 #end
 
-#newweapon 1926 -- Infernal Trident
-#copyweapon 642 -- Magic Trident
-#name "Infernal Trident"
-#secondaryeffect 216 -- Weak Fire
-#end
-
 #newweapon 1927 -- Infernal Halberd
 #copyweapon 5 -- Halberd
 #name "Infernal Halberd"
@@ -5033,6 +5027,15 @@
 
 #selectweapon 45 -- Coral Club
 #pierce
+#end
+
+#selectweapon 686 -- Master's Athame
+#dt_normal
+#secondaryeffect 690 -- Draw Blood
+#end
+
+#selectweapon 68 -- Barbed Tail
+#dmg 0
 #end
 
 #newarmor 501
@@ -16779,6 +16782,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #armor "Shield"
 #armor "Half Helmet"
 #coldres 3
+#snow
 #mountmnr 8871 -- cataphract steppe horse
 #mountedinspector
 #skilledrider 1
@@ -18793,6 +18797,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #name "Ekaiwe"
 #spr1 "gondwana/terrorbirdrider.tga"
 #spr2 "gondwana/terrorbirdrider2.tga"
+#unmountedspr1 "gondwana/un_terrorbirdrider.tga"
+#unmountedspr2 "gondwana/un_terrorbirdrider2.tga"
 #descr "In the capital exists a special regiment of Isienmwenro known as the Ekaiwe. These are the cream of the warriors specially trained to ride gigantic predatory birds known as Terror Birds. Terror Birds roam the plains of Gondwana preying on anything they can kill with their powerful beaks and sharp claws. They are strong in N'um and are sacred to the people of Gondwana. Should the rider be slain the bird will continue to peck and claw at enemies."
 #mountedhumanoid
 #gcost 85
@@ -18828,6 +18834,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #name "Ekaiwe Commander"
 #spr1 "gondwana/terrorbirdcaptain.tga"
 #spr2 "gondwana/terrorbirdcaptain2.tga"
+#unmountedspr1 "gondwana/un_terrorbirdrider.tga"
+#unmountedspr2 "gondwana/un_terrorbirdrider2.tga"
 #descr "In the capital exists a special regiment of Isienmwenro known as the Ekaiwe. These are the cream of the warriors specially trained to ride gigantic predatory birds known as Terror Birds. Terror Birds roam the plains of Gondwana preying on anything they can kill with their powerful beaks and sharp claws. They are strong in N'um and are sacred to the people of Gondwana. The commanders of the Ekaiwe are hand picked for their loyalty to the Oba and have some priestly powers. Should the rider be slain the bird will continue to peck and claw at enemies."
 #mountedhumanoid
 #gcost 10020
@@ -20677,7 +20685,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #prec 10
 #ap 12
 #noleader
-#weapon "Spear"
+#weapon "Stone Spear"
 #weapon "Net"
 #sailing 4 3
 #swimming
@@ -39379,7 +39387,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #skilledrider 7
 #spellsinger
 #female
-#size 7
+#size 3
 #hp 20
 #mor 16
 #mr 18
@@ -60813,8 +60821,12 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #newmonster 9315 -- Devil no blood
 #copystats 304 -- Devil
 #copyspr 304 -- Devil
+#descr "Devils are infernal beings of great strength. Only with human sacrifice is it possible to summon and bind these evil beings. Devils are born in the fires of the Inferno and are impervious to heat and flame. Their glowing bodies radiate heat and bat-like wings grow from their shoulders. Devils are armed with tridents and their barbed tails can sting opponents in close combat."
 #clearmagic
 #magicskill 0 1
+#prot 10
+#def 13
+#str 16
 #end
 
 #newmonster 9316 -- MA Arco Phalangite
@@ -91142,9 +91154,8 @@ Initiates of the Deep can be recruited in any land fort."
 #montag 1054
 #montagweight 2
 #prot 10
-#clearweapons
-#weapon 1926 -- Infernal Trident
-#weapon 68 -- Barbed Tail
+#def 13
+#str 16
 #end
 
 #selectmonster 305 -- Arch Devil
@@ -97882,6 +97893,10 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #cleararmor
 #armor 574 -- Oppressors Headband
 #armor 158 -- Robes
+#end
+
+#selectmonster 3223  -- Cyclope Commander
+#prot 8
 #end
 
 #selectmonster 3224  -- Cyclope Soldier
@@ -138742,7 +138757,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 
 #selectspell 2419
 #copyspell 795 -- Earth Meld
-#name "Abysian Emprisonment"
+#name "Abysian Imprisonment"
 #descr "During the reign of the Conqueror Arcoscephale was exposed to many new ideas and cultures. From their campaigns against the Abysians the Mystics learned the secrets of magmatic magic. This spell causes the ground beneath a group of soldiers to turn to molten rock, causing them to sink into the ground. Affected troops must struggle to free themselves from the burning ground. During the struggle, they are unable to move or attack and the heat will set them ablaze."
 #details "Str +DRN vs 23 to get free"
 #researchlevel 3
@@ -141688,6 +141703,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 #pathlevel 0 3
 #fatiguecost 50
 #precision 100
+#aoe 2
 #spec 4210688  -- Friendlies only, ignore shields
 #damage 2147501056  -- Enlarge + Heat Aura + FR
 #nextspell 2627
@@ -152387,6 +152403,7 @@ All effects scale with friendly Dominion."
 #range 100
 #pathlevel 0 2
 #fatiguecost 40
+#spec 36028797564244096
 #restricted 194
 #end
 
@@ -155779,7 +155796,7 @@ All effects scale with friendly Dominion."
 #researchlevel 8
 #effect 109  -- Capped Damage
 #pathlevel 0 4
-#fatiguecost 40
+#fatiguecost 20
 #damage 999
 --#spec 1188950301625831584 -- MRN, Fire, MR Negates, AN, Ignore Shields, Internal Damage, Next Effect on Damage
 #spec 1188967893811871904 --MRNH, Fire, MR Negates, AN, Ignore Shields, Internal Damage, Next Effect on Damage
@@ -162620,7 +162637,7 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #path 0 0 -- F
 #pathlevel 0 3
 #range 5015
-#aoe 2004 -- 8+2
+#aoe 1003 -- 6+1
 #end
 
 #selectspell 4275
@@ -163689,7 +163706,7 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #flightspr 10071
 #explspr 10091
 #strikesound 16
-#fatiguecost 20
+#fatiguecost 30
 #casttime 125
 #end
 
@@ -164554,10 +164571,10 @@ name "Frost Fiend"
 #descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
 #school 5
 #range 40
-#path 0 0
+#path 1 0
 #pathlevel 0 2
-#path 1 9
-#pathlevel 1 2
+#path 0 9
+#pathlevel 1 1
 #researchlevel 8
 #fatiguecost 10
 #nreff 1001 -- 3+
@@ -164572,10 +164589,10 @@ name "Frost Fiend"
 #descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
 #school 5
 #range 40
-#path 0 1
+#path 1 1
 #pathlevel 0 2
-#path 1 9
-#pathlevel 1 2
+#path 0 9
+#pathlevel 1 1
 #researchlevel 8
 #fatiguecost 10
 #nreff 1001 -- 3+
@@ -164590,10 +164607,10 @@ name "Frost Fiend"
 #descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
 #school 5
 #range 40
-#path 0 2
+#path 1 2
 #pathlevel 0 2
-#path 1 9
-#pathlevel 1 2
+#path 0 9
+#pathlevel 1 1
 #researchlevel 8
 #fatiguecost 10
 #nreff 1001 -- 3+
@@ -164608,10 +164625,10 @@ name "Frost Fiend"
 #descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
 #school 5
 #range 40
-#path 0 3
+#path 1 3
 #pathlevel 0 2
-#path 1 9
-#pathlevel 1 2
+#path 0 9
+#pathlevel 1 1
 #researchlevel 8
 #fatiguecost 10
 #nreff 1001 -- 3+
@@ -164626,10 +164643,10 @@ name "Frost Fiend"
 #descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
 #school 5
 #range 40
-#path 0 4
+#path 1 4
 #pathlevel 0 2
-#path 1 9
-#pathlevel 1 2
+#path 0 9
+#pathlevel 1 1
 #researchlevel 8
 #fatiguecost 10
 #nreff 1001 -- 3+
@@ -164644,10 +164661,10 @@ name "Frost Fiend"
 #descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
 #school 5
 #range 40
-#path 0 5
+#path 1 5
 #pathlevel 0 2
-#path 1 9
-#pathlevel 1 2
+#path 0 9
+#pathlevel 1 1
 #researchlevel 8
 #fatiguecost 10
 #nreff 1001 -- 3+
@@ -164662,10 +164679,10 @@ name "Frost Fiend"
 #descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
 #school 5
 #range 40
-#path 0 6
+#path 1 6
 #pathlevel 0 2
-#path 1 9
-#pathlevel 1 2
+#path 0 9
+#pathlevel 1 1
 #researchlevel 8
 #fatiguecost 10
 #nreff 1001 -- 3+
@@ -164680,10 +164697,10 @@ name "Frost Fiend"
 #descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
 #school 5
 #range 40
-#path 0 7
+#path 1 7
 #pathlevel 0 2
-#path 1 9
-#pathlevel 1 2
+#path 0 9
+#pathlevel 1 1
 #researchlevel 8
 #fatiguecost 10
 #nreff 1001 -- 3+
@@ -164698,10 +164715,10 @@ name "Frost Fiend"
 #descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
 #school 5
 #range 40
-#path 0 8
+#path 1 8
 #pathlevel 0 2
-#path 1 9
-#pathlevel 1 2
+#path 0 9
+#pathlevel 1 1
 #researchlevel 8
 #fatiguecost 10
 #nreff 1001 -- 3+
@@ -166738,6 +166755,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #path 0 2
 #pathlevel 0 2
 #pathlevel 1 0
+#school 2
 #researchlevel 7
 #nreff 4002 -- 10+4
 #damage 20
@@ -166747,6 +166765,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #explspr 10088
 #precision 18
 #nextspell 0
+#fatiguecost 30
 #end
 
 #selectspell 729 -- N Nether Darts
@@ -168046,6 +168065,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1318 -- Serenity
+#pathlevel 0 2
 #aoe 2006 -- 12+2
 #range 5020 -- 35+
 #spec 8802304 -- only enemies
@@ -175630,11 +175650,6 @@ This headband does not require activation in combat."
 #selectitem 96 -- Master's Athame
 #constlevel 5
 #mainlevel 1
-#end
-
-#selectweapon 686 -- Master's Athame
-#dt_normal
-#secondaryeffect 690 -- Draw Blood
 #end
 
 #selectitem 301 -- Boots of Youth
