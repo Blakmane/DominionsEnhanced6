@@ -14,12 +14,12 @@
 -- Farshot cost from 2 -> 1
 -- Awareness cost from 3 -> 2
 -- Swiftness cost from 4 -> 3
--- Storm Flight cost from 4 -> 3
--- Wind Walker cost from 5 -> 6, no longer Incarnate
+-- Storm Flight cost from 4 -> 2
+-- Wind Walker cost from 5 -> 5, no longer Incarnate
 -- Weightlessness cost from 6 -> 4, no longer Incarnate
 -- Air Shield cost from 6 -> 5
 -- Charged Bodies cost from 8 -> 7
--- Flight cost from 9 -> 6
+-- Flight cost from 9 -> 5
 -- Swamp Survival cost from 2 -> 1
 -- Swimming cost from 2 -> 1
 -- Slowing Weapons cost from 5 -> 6, no longer Incarnate
@@ -44,7 +44,7 @@
 -- Awe cost from 8 -> 7
 -- Displacement cost from 7 -> 6
 -- Dread cost from 8 -> 7
--- Vampiric Weapons cost from 12 -> 9
+-- Vampiric Weapons cost from 12 -> 8
 
 -- Death Explosion - F/D
 -- Berserker - N/B
@@ -118,13 +118,13 @@
 #cost0 3 -- 4 -> 3
 #end
 
-#selectbless "Storm Flight" -- 4 -> 3
-#cost0 3 -- 4 -> 3
+#selectbless "Storm Flight" -- 4 -> 2
+#cost0 2 -- 4 -> 2
 #end
 
-#selectbless "Wind Walker" -- 5 -> 6
+#selectbless "Wind Walker" -- 5 -> 5
 #cost0 4 -- 5 -> 4
-#cost1 2 --  -> 2
+#cost1 1 --  -> 1
 #end
 
 #selectbless "Weightlessness" -- 6 -> 4
@@ -139,8 +139,8 @@
 #cost0 7 -- 8 -> 7
 #end
 
-#selectbless "Flight" -- 9 -> 6
-#cost0 6 -- 9 -> 6
+#selectbless "Flight" -- 9 -> 5
+#cost0 5 -- 9 -> 5
 #end
 
 #selectbless "Swamp Survival" -- 2 -> 1
@@ -244,9 +244,9 @@
 #cost0 7 -- 8 -> 7
 #end
 
-#selectbless "Vampiric Weapons" -- 12 -> 9
+#selectbless "Vampiric Weapons" -- 12 -> 8
 #cost0 6 -- 8 -> 6
-#cost1 3 -- 4 -> 3
+#cost1 2 -- 4 -> 2
 #end
 
 
@@ -2991,7 +2991,7 @@
 #dmg 15
 #att 4
 #def 2
-#len 2
+#len 3 -- +1 from size
 #armorpiercing
 #slash
 #magic
@@ -5760,6 +5760,19 @@
 
 #selectarmor 206  -- Obsidian Cuirass
 #rcost 16
+#end
+
+#selectarmor 230
+#copyarmor 158 -- Robes
+#name "Magic Robes"
+#magic
+#end
+
+#selectarmor 231
+#copyarmor 158 -- Robes
+#name "Magic Heavy Robes"
+#magic
+#prot 5
 #end
 
 #selectarmor 236  -- Gleaming Cuirass
@@ -23253,6 +23266,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #magicskill 0 5
 #magicskill 1 5
 #magicskill 3 4
+#magicskill 7 4
 #magicskill 9 4
 #startage 2400
 #maxage 4000
@@ -31706,6 +31720,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #mr 14
 #cold 3
 #fireres 5
+#mor 30
+#gcost 0
 #undead
 #coldres 25
 #poisonres 25
@@ -31753,6 +31769,8 @@ While in the form of an old man, all paths are increased and allows the use of N
 #cold 3
 #ap 30
 #fireres 5
+#mor 30
+#gcost 0
 #undead
 #coldres 25
 #poisonres 25
@@ -32999,6 +33017,12 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #copyspr 512  -- Fall Bear
 #descr "The Fall Bear is one of the four seasonal spirits. This large, ethereal bear is most powerful during fall and weakest during spring. It is a magical being and has some innate skill in Earth magic."
 #mor 15
+#clearweapons
+#weapon 823  -- Golden Claw
+#weapon 821  -- Golden Bite
+#magicskill 3 1  -- 1E
+#custommagic 1024 50  -- 50% E
+#prot 8
 #end
 
 #newmonster 7618
@@ -35403,6 +35427,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #inspirational 0
 #ambidextrous 2
 #boartattoo 8
+#startage 20
 #holy
 #weapon 17  -- Axe
 #weapon 17  -- Axe
@@ -35431,9 +35456,10 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #beartattoo 4
 #ambidextrous 2
 #holy
+#startage 26
 #forestsurvival
-#weapon 17  -- Axe
-#weapon 17  -- Axe
+#weapon 851  -- Magic Axe
+#weapon 851  -- Magic Axe
 #end
 
 #newmonster 7746
@@ -43467,7 +43493,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "fennoscandia/fstrollshaman.tga"
 #spr2 "fennoscandia/fstrollshaman2.tga"
 #name "Troldfolk Shaman"
-#descr "This is a shaman of the Troldfolk tribes and even they are held sacred for their connection to the spirit realm. These reclusive tribes live in the forested regions and can be dangerous to lone travellers, . Trolls are ugly and slow witted, however they are strong and can regenerate wounds. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly. Trolls can survive on a diet of sticks and stones although they prefer to supplement their diet with fresh meat."
+#descr "This is a shaman of the Troldfolk tribes and even they are held sacred for their connection to the spirit realm. These reclusive tribes live in the forested regions and can be dangerous to lone travellers. Trolls are ugly and slow witted, however they are strong and can regenerate wounds. Unlike most trolls, those of Fennoscandia do not fear fire however lightning and thunder harm them greatly. Trolls can survive on a diet of sticks and stones although they prefer to supplement their diet with fresh meat."
 #rpcost 10
 #gcost 10030
 #mor 12
@@ -60786,6 +60812,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 
 #newmonster 9315 -- Devil no blood
 #copystats 304 -- Devil
+#copyspr 304 -- Devil
 #clearmagic
 #magicskill 0 1
 #end
@@ -61040,44 +61067,6 @@ Companions are recruited in pairs and two must be recruited at once."
 #acidres -10
 #clearmagic
 #magicskill 5 2
-#end
-
-
-#newmonster 9328 -- altar
-#spr1 "magicenhanced/blue_altar.png"
-#spr2 "magicenhanced/blue_altar.png"
-#name "Altar"
-#descr "."
-#hp 40
-#str 15
-#att 5
-#def 0
-#prec 5
-#ap 0
-#mapmove 0
-#immobile
-#mor 50
-#prot 20
-#mr 12
-#size 5
-#noleader
-#miscshape
-#itemslots 1
-#coldres 10
-#poisonres 25
-#shockres 10
-#fireres 10
-#pierceres
-#slashres
-#neednoteat
-#stonebeing
-#blind
-#diseaseres 100
-#inanimate
-#amphibian
-#enc 0
-#weapon 0
-#gcost 0
 #end
 
 #newmonster 9329 -- Feaster from the Stars
@@ -61341,188 +61330,6 @@ Companions are recruited in pairs and two must be recruited at once."
 #clearmagic
 #magicskill 2 1
 #magicskill 6 3
-#end
-
-
-#newmonster 9338 -- Menhir
-#copystats 473 -- Telestic Animate
-#name "Menhir"
-#descr "."
-#spr1 "magicenhanced/menhir.png"
-#spr2 "magicenhanced/menhir2.png"
-#hp 160
-#size 10
-#str 15
-#prot 25
-#masterrit 1
-#holy
-#clearmagic
-#itemslots 262144 -- 1 misc
-#end
-
-#newmonster 9339 -- Henge
-#copystats 473 -- Telestic Animate
-#spr1 "extrapretenders/hengespirit.tga"
-#spr2 "extrapretenders/hengespirit.tga"
-#name "Henge"
-#descr "."
-#hp 160
-#size 10
-#str 22
-#prot 25
-#masterrit 1
-#holy
-#clearmagic
-#itemslots 262144 -- 1 misc
-#end
-
-#newmonster 9340 -- Preserver
-#copystats 475 -- Crusher
-#name "Preserver"
-#descr "."
-#spr1 "magicenhanced/blue_rock1.png"
-#spr2 "magicenhanced/blue_rock2.png"
-#hp 140
-#size 10
-#str 25
-#prot 24
-#mor 50
-#holy
-#clearmagic
-#end
-
-#newmonster 9341 -- Blood Soaked Edifice
-#copystats 473 -- Telestic Animate
-#spr1 "extrapretenders/bloodmonolith.tga"
-#spr2 "extrapretenders/bloodmonolith2.tga"
-#name "Blood Soaked Edifice"
-#descr "."
-#hp 180
-#size 10
-#str 22
-#prot 25
-#masterrit 1
-#holy
-#clearmagic
-#itemslots 262144 -- 1 misc
-#end
-
-#newmonster 9342 -- Henge (blood)
-#copystats 9339
-#copyspr 9339
-#name "Henge"
-#descr "."
-#end
-
-#newmonster 9343 -- Tree 1
-#copystats 330 -- Dark Vine
-#spr1 "magicenhanced/tree1.png"
-#spr2 "magicenhanced/tree2.png"
-#name "Ancient Tree"
-#descr "."
-#hp 180
-#size 10
-#str 18
-#prot 18
-#mr 12
-#mor 18
-#enc 0
-#startage 500
-#maxage 1000
-#holy
-#miscshape
-#plant
-#spiritsight
-#growthpower 1
-#masterrit 1
-#ivylord 4
-#clearweapons
-#weapon 240 -- Branch
-#weapon 240 -- Branch
-#nametype 145 -- Wooden Creatures
-#immobile
-#bonusspells 1
-#ap 2
-#mapmove 0
-#twiceborn 7480 -- Tree of Hate
-#end
-
-#newmonster 9344 -- Forest Lord
-#copystats 931 -- Ivy king
-#name "Forest Lord"
-#descr "."
-#spr1 "magicenhanced/treant1.png"
-#spr2 "magicenhanced/treant2.png"
-#hp 85
-#size 8
-#mr 17
-#def 8
-#att 9
-#str 22
-#prot 12
-#ivylord 4
-#holy
-#clearmagic
-#clearweapons
-#weapon 92 -- Fist
-#weapon 92 -- Fist
-#weapon 240 -- Branch
-#end
-
-#newmonster 9345 -- Blood tree
-#copystats 330 -- Dark Vine
-#spr1 "magicenhanced/bloodtree1.png"
-#spr2 "magicenhanced/bloodtree2.png"
-#name "Thirsting Tree"
-#descr "."
-#hp 180
-#size 10
-#str 18
-#prot 18
-#mr 12
-#mor 18
-#enc 0
-#startage 500
-#maxage 1000
-#holy
-#miscshape
-#plant
-#spiritsight
-#growthpower 1
-#masterrit 1
-#ivylord 4
-#clearweapons
-#weapon 240 -- Branch
-#weapon 240 -- Branch
-#nametype 145 -- Wooden Creatures
-#immobile
-#bonusspells 1
-#ap 2
-#mapmove 0
-#twiceborn 7480 -- Tree of Hate
-#end
-
-#newmonster 9346 -- Vine monster
-#copystats 330 -- Dark Vine
-#name "Grasping Maw"
-#descr "."
-#spr1 "magicenhanced/blue_vinemonster1.png"
-#spr2 "magicenhanced/blue_vinemonster2.png"
-#hp 160
-#size 10
-#mr 17
-#def 6
-#att 11
-#str 22
-#prot 14
-#ivylord 4
-#holy
-#entangle
-#clearmagic
-#clearweapons
-#weapon 1672 -- Thirsting vine
-#weapon 1672 -- Thirsting vine
-#weapon 609 -- Grab and Swallow
 #end
 
 #newmonster 9347 -- Ghostly Warrior
@@ -61864,6 +61671,441 @@ Companions are recruited in pairs and two must be recruited at once."
 #armor 14 -- Plate Hauberk
 #armor 21 -- Full Helmet
 #end
+
+#newmonster 9328 -- altar
+#spr1 "magicenhanced/blue_altar.png"
+#spr2 "magicenhanced/blue_altar.png"
+#name "Altar"
+#descr "An altar, created by druids or gutuaters for the worship of a local deity. In a physical battle, the altar would be easy to topple over and cannot fight back."
+#hp 30
+#str 15
+#att 5
+#def 0
+#prec 5
+#ap 0
+#mapmove 0
+#ap 0
+#immobile
+#polyimmune
+#mor 50
+#prot 15
+#mr 12
+#size 5
+#noleader
+#miscshape
+#itemslots 1
+#coldres 10
+#poisonres 25
+#shockres 10
+#fireres 10
+#pierceres
+#slashres
+#neednoteat
+#stonebeing
+#blind
+#diseaseres 100
+#inanimate
+#amphibian
+#enc 0
+#weapon 0
+#gcost 0
+#end
+
+#newmonster 9338 -- Menhir
+#copystats 473 -- Telestic Animate
+#name "Menhir"
+#descr "The Menhir is an ancient spirit inhabiting a massive standing stone. The spirit may protect the local population in exchange for offerings, and is often regarded as a guardian spirit, though it is unable to leave the Menhir. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Menhir is treated as a holy site, and may attract worship away from the true God."
+#spr1 "magicenhanced/menhir.png"
+#spr2 "magicenhanced/menhir2.png"
+#heretic 1
+#hp 160
+#size 10
+#str 15
+#prot 25
+#masterrit 2
+#holy
+#clearmagic
+#magicskill 3 1
+#magicskill 4 1
+#itemslots 262144 -- 1 misc
+#end
+
+#newmonster 9340 -- Preserver
+#copystats 475 -- Crusher
+#name "Preserver"
+#descr "."
+#spr1 "magicenhanced/blue_rock1.png"
+#spr2 "magicenhanced/blue_rock2.png"
+#hp 140
+#size 10
+#str 25
+#prot 24
+#mor 50
+#holy
+#clearmagic
+#end
+
+#newmonster 9341 -- Blood Soaked Edifice
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/bloodmonolith.tga"
+#spr2 "extrapretenders/bloodmonolith2.tga"
+#name "Bleeding Edifice"
+#descr "The Bleeding Edifice is an ancient spirit inhabiting a massive standing stone. Once a pure spirit of the Earth, it has been tainted by blood sacrifice. As the ground was soaked with sacrificial blood the spirit gained a craving for the blood of the innocent. The ground itself will sometimes rise up in a corrupted form to serve the spirit. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The local populace may take to worshipping the edifice to the exclusion of the true God."
+#heretic 1
+#drawsize -10
+#hp 180
+#size 10
+#str 22
+#prot 25
+#masterrit 1
+#clearmagic
+#magicskill 8 1
+#itemslots 262144 -- 1 misc
+#end
+
+#newmonster 9343 -- Tree 1
+#copystats 330 -- Dark Vine
+#spr1 "magicenhanced/tree1.png"
+#spr2 "magicenhanced/tree2.png"
+#name "Ancient Oak"
+#descr "The Ancient Oak is the spirit of a very old great oak, overgrown with mistletoe, possessing intelligence and magical power. Offerings are made to the tree, and in return the tree provides fertility, growth, and healing to the land. As a tree it cannot move, but it is difficult to kill in combat. The Ancient Oak is treated as a holy site, and may attract worship away from the true God."
+#heretic 1
+#hp 180
+#size 10
+#str 14
+#prot 15
+#mr 12
+#mor 30
+#enc 0
+#att 8
+#def 0
+#startage 500
+#maxage 1000
+#holy
+#miscshape
+#plant
+#spiritsight
+#growthpower 1
+#masterrit 1
+#ivylord 4
+#clearweapons
+#magicskill 6 1
+#weapon 240 -- Branch
+#weapon 240 -- Branch
+#weapon 240 -- Branch
+#nametype 145 -- Wooden Creatures
+#immobile
+#bonusspells 1
+#ap 2
+#mapmove 0
+#end
+
+#newmonster 9344 -- Forest Lord
+#copystats 931 -- Ivy king
+#name "Forest Lord"
+#descr "The Forest Lord is an ancient spirit of nature appearing as a large figure made of oak and ivy. The Forest Lord once ruled an Ivy Kingdom, and now tends to the forest as they sleep. The Forest Lord can reawaken vine men from their slumber and more will come to his aid when summoned."
+#spr1 "magicenhanced/treant1.png"
+#spr2 "magicenhanced/treant2.png"
+#hp 85
+#size 8
+#mr 17
+#def 8
+#att 9
+#str 22
+#prot 12
+#ivylord 4
+#holy
+#clearmagic
+#magicskill 6 1
+#clearweapons
+#weapon 92 -- Fist
+#weapon 92 -- Fist
+#weapon 240 -- Branch
+#end
+
+#newmonster 9345 -- Blood tree
+#copystats 330 -- Dark Vine
+#spr1 "magicenhanced/bloodtree1.png"
+#spr2 "magicenhanced/bloodtree2.png"
+#name "Thirsting Tree"
+#descr "The Thirsting Tree is the spirit of a very old great oak possessing intelligence and magical power. Once a pure being of Nature, it has been tainted by blood sacrifice. As its roots were soaked with sacrificial blood the spirit gained a craving for the blood of the innocent. Each month the tree demands blood from the local populace, who may come to worship the tree as a God in its own right. As a tree it cannot move, but it is difficult to kill in combat."
+#heretic 1
+#hp 180
+#size 10
+#str 14
+#prot 18
+#mr 12
+#mor 18
+#enc 0
+#startage 500
+#maxage 1000
+#popkill 1
+#douse 2
+#miscshape
+#plant
+#spiritsight
+#holy
+#growthpower 1
+#masterrit 1
+#ivylord 2
+#clearweapons
+#magicskill 8 1
+#weapon 240 -- Branch
+#weapon 240 -- Branch
+#weapon 240 -- Branch
+#nametype 145 -- Wooden Creatures
+#immobile
+#bonusspells 1
+#ap 2
+#mapmove 0
+#end
+
+#newmonster 9346 -- Vine monster
+#copystats 330 -- Dark Vine
+#name "Grasping Maw"
+#descr "The Grasping Maw is a mass of vines with a great maw in the middle of it. Once a pure being of Nature, it has been tainted by blood sacrifice. As its vines were soaked with sacrificial blood the spirit gained a craving for the blood of the innocent, and has now uprooted itself so it may scour the land for its feast."
+#spr1 "magicenhanced/blue_vinemonster1.png"
+#spr2 "magicenhanced/blue_vinemonster2.png"
+#hp 160
+#size 10
+#mr 17
+#def 6
+#att 11
+#str 22
+#prot 14
+#ivylord 4
+#mor 30
+#popkill 3
+#entangle
+#clearmagic
+#magicskill 8 1
+#clearweapons
+#weapon 1672 -- Thirsting vine
+#weapon 1672 -- Thirsting vine
+#weapon 609 -- Grab and Swallow
+#end
+
+#newmonster 9358 -- Black Bull
+#copystats 978 -- Great Black Bull
+#copyspr 978 -- Great Black Bull
+#name "Black Bull"
+#descr "The Black Bull is the progeny of one of the Great Bulls, divine entities worshiped as manifestations of Nature, wildness, and the glory of the slayer and the slain. They are a creature of unbridled fury, and unlike a White Bull, the fertility aspect is secondary to that of their maddened rage."
+#drawsize -10
+#hp 140
+#prot 11
+#berserk 6
+#str 28
+#mr 16
+#beastmaster 3
+#poisonres 10
+#holy
+#clearmagic
+#magicskill 8 1
+#clearweapons
+#weapon 830
+#weapon 831
+#homerealm 0
+#gcost 0
+#startdom 0
+#end
+
+#newmonster 9359 -- White Bull
+#copystats 979 -- Great White Bull
+#copyspr 979 -- Great White Bull
+#name "White Bull"
+#descr "The White Bull is the progeny of one of the Great Bulls, divine entities worshiped as manifestations of Nature, wildness, and fury. The White Bull brings fertility to the land and he is accompanied by a multitude of beasts attracted by his aura."
+#drawsize -10
+#hp 138
+#prot 11
+#berserk 4
+#str 28
+#mr 16
+#beastmaster 3
+#poisonres 10
+#holy
+#clearmagic
+#magicskill 6 1
+#clearweapons
+#weapon 830
+#weapon 831
+#homerealm 0
+#gcost 0
+#startdom 0
+#end
+
+#newmonster 9360 -- Great Stag
+#copystats 3692 -- Great Stag
+#copyspr 3692 -- Great Stag
+#name "Divine Hart"
+#descr "The Great Stag is a being that has wandered the forests since the time before men, worshiped by the first men as a god of the hunt. Deer follow the Great Stag and a great number will flock to his herd."
+#heretic 1
+#drawsize -10
+#hp 88
+#prot 12
+#berserk 6
+#str 28
+#mr 16
+#beastmaster 5
+#inspirational -3
+#command 100
+#undisleader 1
+#poisonres 10
+#holy
+#clearmagic
+#magicskill 6 1
+#clearweapons
+#weapon 830
+#weapon 831
+#homerealm 0
+#gcost 0
+#startdom 0
+#end
+
+#newmonster 9342 -- Cromlech +1 masterrit
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/cromlech.tga"
+#spr2 "extrapretenders/cromlech2.tga"
+#name "Menec Cromlech"
+#descr "The Menec Cromlech is an ancient spirit inhabiting an alignment of standing stones. The Menec Cromlech may guide the local population in exchange for offerings, monitoring the seasons, the moon and the stars for auspicious events. The Cromlech ordains the best days for the planting of crops and the casting of rituals for their greatest effect. When all stones are arranged together its power is greatest, however when removed from the sacred geometry it will lose some of its power. As long as two Menec Stones are present, the Menec Cromlech will be able to cast rituals an extra level higher. The Henge is treated as a holy site, and may attract worship away from the true God."
+#heretic 1
+#drawsize -10
+#hp 100
+#size 8
+#str 15
+#prot 20
+#masterrit 1
+#holy
+#clearmagic
+#magicskill 4 1
+#chorusmaster 1
+#itemslots 262144 -- 1 misc
+#end
+
+#newmonster 9361 -- Cromlech +2 masterrit
+#copystats 9342 -- Cromlech
+#copyspr 9342 -- Cromlech
+#name "Menec Cromlech"
+#descr "The Menec Cromlech is an ancient spirit inhabiting an alignment of standing stones. The Menec Cromlech may guide the local population in exchange for offerings, monitoring the seasons, the moon and the stars for auspicious events. The Cromlech ordains the best days for the planting of crops and the casting of rituals for their greatest effect. When all stones are arranged together its power is greatest, however when removed from the sacred geometry it will lose some of its power. As long as two Menec Stones are present, the Menec Cromlech will be able to cast rituals an extra level higher. The Henge is treated as a holy site, and may attract worship away from the true God."
+#heretic 1
+#drawsize -10
+#masterrit 2
+#holy
+#clearmagic
+#magicskill 4 1
+#chorusmaster 1
+#itemslots 262144 -- 1 misc
+#end
+
+#newmonster 9362 -- Cromlech stone
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/cromlech.tga"
+#spr2 "extrapretenders/cromlech2.tga"
+#name "Menec Stone"
+#descr "Menec Stones are a smaller stone of a Menec Cromlech alignment used as a source of power. When all stones are arranged together the Cromlech's power is greatest, however when removed from the sacred geometry it will lose some of its power."
+#drawsize -50
+#hp 50
+#size 6
+#str 15
+#prot 15
+#spellsinger
+#reinvigoration 3
+#masterrit 2
+#bonusspells 0
+#holy
+#clearmagic
+#magicskill 4 1
+#itemslots 262144 -- 1 misc
+#chorusslave
+#end
+
+#newmonster 9339 -- Henge summer
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/hengespirit.tga"
+#spr2 "extrapretenders/hengespirit.tga"
+#name "Henge"
+#descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is treated as a holy site, and may attract worship away from the true God."
+#summon1 3741 -- s6 earth ele
+#heretic 1
+#hp 150
+#size 10
+#str 22
+#prot 22
+#masterrit 2
+#holy
+#clearmagic
+#magicskill 3 1
+#itemslots 262144 -- 1 misc
+#autumnshape 9363
+#wintershape 9364
+#springshape 9365
+#end
+
+#newmonster 9363 -- Henge fall
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/hengespirit.tga"
+#spr2 "extrapretenders/hengespirit.tga"
+#name "Henge"
+#descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is treated as a holy site, and may attract worship away from the true God."
+#summon1 3741 -- s6 earth ele
+#heretic 1
+#hp 150
+#size 10
+#str 22
+#prot 22
+#masterrit 1
+#holy
+#clearmagic
+#magicskill 3 1
+#itemslots 262144 -- 1 misc
+#summershape 9339
+#wintershape 9364
+#springshape 9365
+#end
+
+#newmonster 9364 -- Henge winter
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/hengespirit.tga"
+#spr2 "extrapretenders/hengespirit.tga"
+#name "Henge"
+#descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is treated as a holy site, and may attract worship away from the true God."
+#summon1 3741 -- s6 earth ele
+#heretic 1
+#hp 150
+#size 10
+#str 22
+#prot 22
+#masterrit 2
+#holy
+#clearmagic
+#magicskill 3 1
+#itemslots 262144 -- 1 misc
+#summershape 9339
+#autumnshape 9363
+#springshape 9365
+#end
+
+#newmonster 9365 -- Henge spring
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/hengespirit.tga"
+#spr2 "extrapretenders/hengespirit.tga"
+#name "Henge"
+#descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is treated as a holy site, and may attract worship away from the true God."
+#summon1 3741 -- s6 earth ele
+#heretic 1
+#hp 150
+#size 10
+#str 22
+#prot 22
+#masterrit 1
+#holy
+#clearmagic
+#magicskill 3 1
+#itemslots 262144 -- 1 misc
+#summershape 9339
+#autumnshape 9363
+#wintershape 9364
+#end
+
 
 -- END OF NEW MONSTERS (Skip 9600~9672)
 
@@ -85464,7 +85706,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #selectmonster 1378 -- Lord of the Forest
 #descr "Usually the Lord of the Forest would be satisfied with the yearly sacrifice of some moose and in return, he would keep the forest safe for the hunters, but with the disappearance of the Pantokrator, the Lord of the Forest has returned to claim godhood. Any that strike at him will be attacked by the forest itself which will ensnare and entangle attackers."
 #diseaseres 100
-#gcost 320
+#gcost 300
 #pathcost 40
 #hp 80
 #prot 3
@@ -88112,7 +88354,7 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #descr "The Uttervast is a primordial being of godlike power. Its mere presence is a threat to the world, so it was banished to the void whence it came by a previous Pantokrator. The Uttervast is composed of spheres of stellar lights and shadows. It can project its otherworldly mind on lesser beings and destroy them from afar. Anyone attacking the primordial god-being will find themselves harmed by strange principles of primordial correspondence between the vast and the singular."
 #diseaseres 100
 #gcost 270
-#pathcost 40
+#pathcost 80
 #moremagic 2
 #hp 107
 #prot 0
@@ -88120,12 +88362,10 @@ He is accompanied by the souls of his subjects that have followed him into the w
 #att 15
 #def 15
 #mr 20
-#weapon 269 -- Soul Leech
-#magicpower 2
+#magicpower 1
 #fireres 5
 #shockres 5
-#fear 5
-#itemslots 0
+#itemslots 262144
 #clearmagic
 #magicskill 4 4
 #end
@@ -93689,6 +93929,66 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #darkpower 2
 #darkvision 100
 #end
+
+#selectmonster 1205 -- Gutuater
+#okleader
+#command -20
+#gcost 190
+#end
+
+#selectmonster 1222 -- Boar Warrior
+#end
+
+#selectmonster 1220 -- Carnute Noble
+#rpcost 18
+#end
+
+#selectmonster 1219 -- Carnute Bare Chested
+#descr "The Carnutes live in the great Wood of Carnutes. Here the druids gather annually. The Carnute warriors are well known for their wild and aggressive demeanor. All Carnute warriors are able to go berserk if wounded in battle. Like the Marverni, the Carnutes rarely use expensive armor. They fight bare-chested with axes and shields. Carnute warriors decorate themselves in tattoos. The Gutuaters of the tribe instill the tattoos with wild magic and can awaken the powers of the enchanted tattoos in battle, made more potent when uncovered by armor. The Carnute tribe are known for their boar tattoos."
+#boartattoo 6
+#rpcost 10
+#end
+
+#selectmonster 1217 -- Ambibate Noble
+#rpcost 17
+#end
+
+#selectmonster 1216 -- Ambibate Bare Chested
+#descr "The Warriors of the Ambibates tribe are well known for their martial skills. Like the Marverni, the Ambibates rarely use expensive armor. They fight bare-chested with broad swords and shields. They take great pride in their battle prowess and consider ranged weapons cowardly. Ambibate warriors decorate themselves in tattoos. The Gutuaters of the tribe instill the tattoos with wild magic and can awaken the powers of the enchanted tattoos in battle, made more potent when uncovered by armor. The Ambibate tribe are known for their wolf tattoos."
+#boartattoo 3
+#wolftattoo 2
+#end
+
+#selectmonster 1214 -- Marverni Noble
+#rpcost 11
+#end
+
+#selectmonster 1213 -- Marverni Bare Chested
+#descr "Most of the Marverni tribesmen are trained for battle and are ready to take up arms and defend their villages. The warriors of the Marverni tribe rarely use expensive armor. They fight bare-chested armed with javelins, broad swords and shields. Marverni warriors decorate themselves in tattoos. The Gutuaters of the tribe instill the tattoos with wild magic and can awaken the powers of the enchanted tattoos in battle, made more potent when uncovered by armor. The Marverni tribesmen are known for their bear tattoos."
+#boartattoo 3
+#beartattoo 2
+#end
+
+#selectmonster 1212 -- Marverni Javelineer
+#boartattoo 3
+#beartattoo 2
+#end
+
+#selectmonster 1211 -- Marverni Slinger
+#boartattoo 3
+#beartattoo 2
+#end
+
+#selectmonster 1210 -- Marverni Horn Blower
+#boartattoo 3
+#beartattoo 2
+#rpcost 17
+#end
+
+#selectmonster 1218 -- Eponi Knight
+#end
+
+
 
 #selectmonster 1251 -- Hatamoto
 #spr1 "vanilla/hatamoto1.tga"
@@ -122248,12 +122548,19 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 9328 -- Altar
 #homecom 9338
 #homecom 9339
-#homecom 9340
 #homecom 9341
+
+#homecom 9361 -- Cromlech
+#homecom 9362 -- Menec Stone
+
 #homecom 9343
 #homecom 9344
 #homecom 9345
 #homecom 9346
+
+#homecom 9358 -- Black Bull
+#homecom 9359 -- White Bull
+#homecom 9360 -- Stag
 #end
 
 #newsite 2500
@@ -125279,6 +125586,11 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 7364 -- new praefectus
 #gems 0 3
 #gems 4 3
+#end
+
+#selectsite 91  -- Carnutes
+#gems 4 2
+#gems 6 2
 #end
 
 #selectsite 92  -- Temple of War
@@ -130221,7 +130533,7 @@ Priests: Average"
 #startscout 426  -- Scout
 
 #futuresite "EA Marverni Summons"
---#futuresite "EA Marverni Deities"
+#futuresite "EA Marverni Deities"
 #futuresite "EA Marverni Heroes"
 #end
 
@@ -134209,6 +134521,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #fatiguecost 300
 #spec 41943040  -- UW Only
 --#nolandtrace 1
+#nogeodst 4 -- Water
 #provrange 3
 #end
 
@@ -139391,7 +139704,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "In Marverni the druids are adept at predicting and altering the future. The caster changes the future fates of a few soldiers. The spell negates the first successful strike against the one protected by the Druids."
 #restricted 12 -- Marverni
 #researchlevel 0
-#aoe 1001 -- 2+
+#aoe 1002 -- 3+
 #end
 
 #selectspell 2487
@@ -139462,7 +139775,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #descr "The caster activates the dormant powers of enchanted tattoos amongst a group of warriors. The unit gains limited invulnerability and increased stats depending on tattoo type. Horse tattoos grant increased defence skill and speed, bear tattoos grant increased strength, boar tattoos grant increased invulnerability, wolf tattoos grant increased attack skill and snake tattoos grant magic resistance."
 #researchlevel 5
 #pathlevel 0 2
-#aoe 5005 -- 15+5
+#aoe 5010 -- 20+5
 #fatiguecost 40
 #end
 
@@ -139538,7 +139851,7 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #copyspell 935 -- Pack of Wolves
 #name "Summon Picts"
 #descr "The caster travels to a tribe of Picts to request they serve the Awakening God. The Picts are an isolated tribe that lives in the frigid corner of an ancient island. Long ago they retreated to their isle and became creatures of myth and legend. The Picts adorn themselves with tattoos daubed in blue woad, a special paint made from sacred herbs that grow only on their island, and which they believe will grant them fortune in battle. Pictish warriors are revered for the sacred Woad they wear."
-#researchlevel 3
+#researchlevel 2
 #path 1 9
 #pathlevel 1 1
 #nreff 510
@@ -139560,11 +139873,11 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #end
 
 #selectspell 2498
-#name "Fifteen Woad Warriors"
+#name "Ten Woad Warriors"
 #researchlevel 0
 #school -1
 #effect 10001
-#nreff 15
+#nreff 10
 #damage 7745 -- Woad Warrior
 #nextspell 2497
 #end
@@ -139572,8 +139885,8 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #selectspell 2499
 #copyspell 935 -- Pack of Wolves
 #name "Summon Pict Tribe"
-#descr "The caster enters a deep forest and calls a tribe of Picts to emerge and serve the Awakening God. The tribe will include twenty four Pictish warriors in addition to ten Woad Warriors, daubed from head to toe in sacred Woad. The tribe will be lead by a chieftain skilled in stealth. Pictish warriors are revered by the Marverni tribes for the sacred Woad they wear."
-#researchlevel 5
+#descr "The caster enters a deep forest and calls a tribe of Picts to emerge and serve the Awakening God. The tribe will include twenty five Pictish warriors in addition to ten Woad Warriors, daubed from head to toe in sacred Woad. The tribe will be lead by a chieftain skilled in stealth. Pictish warriors are revered by the Marverni tribes for the sacred Woad they wear."
+#researchlevel 4
 #pathlevel 0 3
 #path 1 9
 #pathlevel 1 1
@@ -143601,9 +143914,9 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #name "Flight of the Valkyries"
 #descr "In ancient times female Vanir were gifted with the power of flight. To this day magical flight comes easily to the Vanir, learned from the Valkyries. With this spell the caster grants the ability to fly to a squad of nearby warriors."
 #researchlevel 5
-#pathlevel 0 3
+#pathlevel 0 2
 #range 10
-#aoe 1007
+#aoe 3004 -- 10+3
 #fatiguecost 100
 #restricted 30 -- EA Vanheim
 #restricted 31 -- EA Helheim
@@ -150479,6 +150792,9 @@ All effects scale with friendly Dominion."
 #descr "The Airya are creatures of the air and the magic of flight comes easily to them. This spell grants a few units the ability to fly."
 #researchlevel 0
 #restricted 105 -- Ragha
+#pathlevel 0 1
+#aoe 2001 -- 3+2
+#range 5
 #end
 
 #selectspell 3319
@@ -150495,8 +150811,7 @@ All effects scale with friendly Dominion."
 #name "Wings of the Airyas"
 #descr "When fighting with their Turan brethren the Airya have learnt the use of air magic to allow them to join an airborne assault. A group of nearby warriors will be granted the ability to fly."
 #researchlevel 5
-#aoe 5
-#fatiguecost 50
+#aoe 3004 -- 10+3
 #restricted 105 -- Ragha
 #end
 
@@ -154760,7 +155075,7 @@ All effects scale with friendly Dominion."
 #path 0 9
 #pathlevel 0 1
 #range 5
-#aoe 1002 -- 3+
+#aoe 3002 -- 5+3
 #fatiguecost 0
 #casttime 150
 #restricted 181 -- EA Chaco
@@ -156856,7 +157171,7 @@ Underwater: Targets must resist the effects of the spell a second time with an e
 #name "Amberskin"
 #descr "The caster turns the skin of a group of soldiers into a magical Amber, improving their protection and making them more tolerant to blunt attacks as well as heat. This spell is more effective when cast underwater."
 #details "Grants natural protection +7 (max up to 10), or +1 if already 9 or higher, Blunt Resistance, and 5 Fire Resistance.
-Underwater: AoE 3"
+Underwater: AoE 6"
 #school 1
 #researchlevel 4
 #path 0 6 -- Nature 1
@@ -156873,7 +157188,7 @@ Underwater: AoE 3"
 #explspr 10023
 #range 10
 #precision 0
-#aoe 1
+#aoe 3
 #nreff 1
 #fatiguecost 20
 #nextingeo 4 -- sea
@@ -157166,7 +157481,7 @@ Underwater: AoE 25" -- at least, a number close to 25, but probably bigger
 #pathlevel 0 2
 #school 1 -- Alt
 #researchlevel 5
-#aoe 5010 -- 25+5
+#aoe 8024 -- 40+8
 #range 10
 #fatiguecost 100
 #effect 10
@@ -161160,12 +161475,12 @@ Applies the effects of Holy Avenger to the caster"
 #name "Cloak of Mirrors"
 #descr "The caster cloaks a large group of soldiers in glamour. The images will surround the targets and make it harder for enemies to figure out which one to strike. The images will surround them and make it harder for enemies to figure out which one to strike. A strike will have an equal chance of hitting each image and the original. If an image is hit it will disappear. Unlike some other glamour effects, mirror images are not negated by true sight."
 #details "Images created: 2"
-#aoe 2002 -- 10+2
+#aoe 3006 -- 15+3
 #range 5
 #fatiguecost 100
 #researchlevel 8
 #path 0 7
-#pathlevel 0 4
+#pathlevel 0 3
 #path 1 1
 #pathlevel 1 1
 #damage 2
@@ -161198,7 +161513,7 @@ Applies the effects of Holy Avenger to the caster"
 #path 1 9
 #pathlevel 1 1
 #damage 549755813888
-#aoe 5000 -- 5+5
+#aoe 5005 -- 10+5
 #range 2018 -- 20+2
 #precision 100
 #restricted 12 -- Marverni
@@ -162232,7 +162547,7 @@ Underwater: AoE 10+2"
 #descr "A few soldiers are granted the ability to float a few inches above the ground."
 #details "Floating units cannot be targeted by some spells like earth grip or earthquakes."
 #school 5
-#aoe 1003
+#aoe 5
 #fatiguecost 20
 #pathlevel 0 1
 #researchlevel 3
@@ -162243,8 +162558,7 @@ Underwater: AoE 10+2"
 #name "Fay Eyes"
 #descr "A group of soldiers are granted the ability to discern illusions and see the unseen."
 #details "True Sight enables a unit to attack invisible or glamoured targets without penalties."
-#aoe 2000 -- 4+2
-#aoeinspector 1002 -- 4+
+#aoe 3004 -- 10+3
 #pathlevel 0 2
 #researchlevel 5
 #end
@@ -162254,7 +162568,7 @@ Underwater: AoE 10+2"
 #name "Third Sight"
 #descr "The caster opens the third eye of many troops, enabling them to observe the spirit world temporarily. The soldiers gain Spirit Sight for the remainder of the battle."
 #details "Units with Spirit Sight can see invisible and glamoured units for what they are. Spirit Sight also grants 100% darkvision."
-#aoe 2013 -- 21+2
+#aoe 7000 -- 28+7
 #pathlevel 0 4
 #fatiguecost 100
 #researchlevel 7
@@ -162846,7 +163160,7 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #pathlevel 0 2
 #effect 10001
 #nreff 505
-#fatiguecost 900
+#fatiguecost 700
 #damage 9287 -- Bjergtroll
 #restricted 189 -- Fennoscandia
 #onlygeosrc 8392720 -- Mountains, Border Mountains, Caves
@@ -162871,7 +163185,7 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #pathlevel 0 3
 #effect 10001
 #nreff 1007 -- 10+
-#fatiguecost 3000
+#fatiguecost 2500
 #damage 9287 -- Bjergtroll
 #restricted 189 -- Fennoscandia
 #onlygeosrc 8392720 -- Mountains, Border Mountains, Caves
@@ -162887,7 +163201,7 @@ Underwater: Targets must resist both effects of the spell a second time with an 
 #pathlevel 0 4
 #effect 10089
 #nreff 1
-#fatiguecost 6500
+#fatiguecost 5500
 #damage 9284 -- dovregubben
 #restricted 189 -- Fennoscandia
 #onlygeosrc 8392720 -- Mountains, Border Mountains, Caves
@@ -163359,21 +163673,22 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 
 #selectspell 4345 -- Elemental Barrage
 #copyspell 687 -- Falling Fires
-#name "Elemental Barrage"
+#name "Flaming Barrage"
 #descr "Flaming elemental orbs are created above the battlefield to fall upon the caster's enemies."
 #aoe 0
 #path 0 0
 #pathlevel 0 3
 #researchlevel 8
-#nreff 15
+#nreff 18
 --#nreff 2002 -- 8+2
 #damage 2018 -- 24++
-#precision 25
+#precision 20
 #nogeosrc -1
 #spec 16480 -- Fire, AP, Ignore shields
 --#spec 576460752303439968 -- Fire, AP, Ignore shields, Next Spell
 #flightspr 10071
 #explspr 10091
+#strikesound 16
 #fatiguecost 20
 #casttime 125
 #end
@@ -163391,6 +163706,7 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #casttime 125
 #nreff 3
 #precision -2
+#damage 14
 #end
 
 
@@ -164122,13 +164438,9 @@ name "Frost Fiend"
 #end
 
 #selectspell 4403
-#copyspell 1287 -- Iron Will
-#name "Unyielding Will"
-#descr "The caster strengthens the minds of a large group of soldiers. Their ability to resist magic is increased for the duration of the battle. This spell cannot be cast on mindless beings."
-#researchlevel 6
-#pathlevel 0 3
-#fatiguecost 100
-#aoe 4008 -- 25+++++
+#copyspell 4329 -- Chest Wound
+#name "Chest Wound"
+#descr "."
 #end
 
 #selectspell 4404
@@ -164466,6 +164778,153 @@ name "Frost Fiend"
 #nextspell 1442 -- Claws of Kokytos 
 #end
 
+#selectspell 4426
+#copyspell 1134 -- Gift of Flight
+#name "Flying Warriors"
+#descr "."
+#researchlevel 5
+#aoe 3002 -- 8+3
+#pathlevel 0 2
+
+#notfornation 30 -- EA Vanheim
+#notfornation 31 -- EA Helheim
+#notfornation 78 -- MA Vanheim
+#notfornation 105 -- Ragha
+#end
+
+#selectspell 4427
+#copyspell 1287 -- Iron Will
+#name "Unyielding Will"
+#descr "The caster strengthens the minds of a large group of soldiers. Their ability to resist magic is increased for the duration of the battle. This spell cannot be cast on mindless beings."
+#researchlevel 6
+#pathlevel 0 3
+#fatiguecost 100
+#aoe 4008 -- 25+++++
+#end
+
+
+#selectspell 4428 -- indicator
+#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
+#name "Earth Offering"
+#descr "."
+#school -1
+#path 0 0
+#pathlevel 0 1
+#damage 70
+#end
+
+#selectspell 4429 -- Earth
+#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
+#name "Offering of Two Bulls"
+#descr "The caster sacrifices two bulls to a local deity, bidding they awaken and serve the God of Marverni. Local deities are the many ancient and powerful beings that have existed since before the coming of man and have been variously worshiped by the tribes of Marverni since time immemorial. By making great offerings over the course of months, the Druids believe they can be persuaded to give their aide once more."
+#details "Only one Offering may be cast per month in a province. Creates an Altar if not already present. After enough casts, a random local deity will awaken. Paths and chassis are determined by the offerings given before awakening. Each offering gives 2 paths on average. Only one Local Deity may be awakened per province. Earth deities are more likely to be a standing stone."
+#school 5
+#researchlevel 0
+#path 0 3
+#pathlevel 0 1
+#fatiguecost 1000
+#effect 10083
+#damage -1
+#nreff 1
+#provrange 0
+#spec 8388608 -- UWOK
+#nextspell 4428
+#restricted 12 -- Marverni
+#end
+
+
+#selectspell 4430 -- indicator
+#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
+#name "Nature Offering"
+#descr "."
+#school -1
+#path 0 0
+#pathlevel 0 1
+#damage 71
+#end
+
+#selectspell 4431 -- Nature
+#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
+#name "Offering of Mistletoe"
+#descr "The caster gives an offering of oak and mistletoe to a local deity, bidding they awaken and serve the God of Marverni. Local deities are the many ancient and powerful beings that have existed since before the coming of man and have been variously worshiped by the tribes of Marverni since time immemorial. By making great offerings over the course of months, the Druids believe they can be persuaded to give their aide once more."
+#details "Only one Offering may be cast per month in a province. Creates an Altar if not already present. After enough casts, a random local deity will awaken. Paths and chassis are determined by the offerings given before awakening. Each offering gives 2 paths on average. Only one Local Deity may be awakened per province. Nature deities are more likely to be a tree or animal."
+#school 5
+#researchlevel 0
+#path 0 6
+#pathlevel 0 1
+#fatiguecost 1000
+#effect 10083
+#damage -1
+#nreff 1
+#provrange 0
+#spec 8388608 -- UWOK
+#nextspell 4430
+#restricted 12 -- Marverni
+#end
+
+
+#selectspell 4432 -- indicator
+#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
+#name "Astral Offering"
+#descr "."
+#school -1
+#path 0 0
+#pathlevel 0 1
+#damage 72
+#end
+
+#selectspell 4433 -- Astral
+#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
+#name "Offering of Hazelnut"
+#descr "The caster gives an offering of hazelnut to a local deity, bidding they awaken and serve the God of Marverni. Local deities are the many ancient and powerful beings that have existed since before the coming of man and have been variously worshiped by the tribes of Marverni since time immemorial. By making great offerings over the course of months, the Druids believe they can be persuaded to give their aide once more."
+#details "Only one Offering may be cast per month in a province. Creates an Altar if not already present. After enough casts, a random local deity will awaken. Paths and chassis are determined by the offerings given before awakening. Each offering gives 2 paths on average. Only one Local Deity may be awakened per province. Astral deities are more likely to be a standing stone."
+#school 5
+#researchlevel 0
+#path 0 4
+#pathlevel 0 1
+#fatiguecost 1000
+#effect 10083
+#damage -1
+#nreff 1
+#provrange 0
+#spec 8388608 -- UWOK
+#nextspell 4432
+#restricted 12 -- Marverni
+#end
+
+
+#selectspell 4434 -- indicator
+#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
+#name "Blood Sacrifice"
+#descr "."
+#school -1
+#path 0 0
+#pathlevel 0 1
+#damage 73
+#end
+
+#selectspell 4435 -- Blood
+#copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
+#name "Blood Offering"
+#descr "The caster sacrifices blood slaves to a local deity, bidding they awaken and serve the God of Marverni. Local deities are the many ancient and powerful beings that have existed since before the coming of man and have been variously worshiped by the tribes of Marverni since time immemorial. By making great offerings over the course of months, the Druids believe they can be persuaded to give their aide once more."
+#details "Only one Offering may be cast per month in a province. Creates an Altar if not already present. After enough casts, a random local deity will awaken. Paths and chassis are determined by the offerings given before awakening. Each offering gives 2 paths on average. Only one Local Deity may be awakened per province. Deities awakened with blood may be corrupted."
+#school 6
+#researchlevel 0
+#path 0 8
+#pathlevel 0 1
+#fatiguecost 1500
+#effect 10083
+#damage -1
+#nreff 1
+#provrange 0
+#spec 8388608 -- UWOK
+#nextspell 4434
+#restricted 12 -- Marverni
+#end
+
+
+
+
 -- END OF NEW SPELLS
 
 
@@ -164527,7 +164986,7 @@ name "Frost Fiend"
 #end
 
 #selectspell 833 -- Fire Resistant Warriors
-#aoe 4008 -- 20+4
+#aoe 6012 -- 30+6
 #end
 
 #selectspell 835 -- Group Stoneskin
@@ -166222,7 +166681,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 706 --Flame Eruption--
 #damage 2014
 #aoe 1005
-#range 1008
+#range 10
 #precision 3
 #end
 
@@ -166486,7 +166945,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 848 -- Shadow Warriors
-#aoe 4008 -- 20+4
+#aoe 8016 -- 40+8
 #end
 
 #selectspell 849 -- Blindness
@@ -166541,7 +167000,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 798 -- Barkskin
-#aoe 2
+#aoe 3
 #end
 
 #selectspell 797 -- Gift of Cat Eyes
@@ -166549,7 +167008,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 845 -- Cat-Eyed Warriors
-#aoe 5010 -- 25+5
+#aoe 6012 -- 30+6
 #end
 
 #selectspell 807 -- Quickness
@@ -166710,6 +167169,11 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spec 8388608
 #end
 
+#selectspell 1367 -- Battle Fortune
+#aoe 4004 -- 20+4
+#fatiguecost 100
+#end
+
 #selectspell 860 -- Rewrite Fate
 #aoe 4004 -- 20+4
 #end
@@ -166719,15 +167183,11 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 865 -- Wooden Warriors
-#aoe 4008 -- 20+4
+#aoe 6012 -- 30+6
 #end
 
 #selectspell 1238 -- Warriors of the Dawn
 #aoe 4004 -- 20+4
-#end
-
-#selectspell 1367 -- Battle Fortune
-#aoe 5010 -- 30+5
 #end
 
 #selectspell 909 -- Displaced Warriors
@@ -166744,10 +167204,11 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 899 -- Iron Warriors
 #aoe 4004 -- 20+4
+#fatiguecost 100
 #end
 
 #selectspell 1217 -- Mass Flight
-#aoe 4004 -- 20+4
+#aoe 8008 -- 40+8
 #end
 
 #selectspell 875 -- Fog Warriors
@@ -167093,6 +167554,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 1057 -- Calydonian Boar
 #fatiguecost 800
+#notfornation 12 -- EA Marverni
 #end
 
 #selectspell 1050 -- Catoblepas
@@ -167313,37 +167775,37 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1130 -- lesser flame ward
 #pathlevel 0 1
-#aoe 1001 -- 2+
+#aoe 2001 -- 3+2
 #end
 
 #selectspell 1135 -- lesser thunder ward
 #pathlevel 0 1
-#aoe 1001 -- 2+
+#aoe 2001 -- 3+2
 #end
 
 #selectspell 1137 -- lesser winter ward
 #pathlevel 0 1
-#aoe 1001 -- 2+
+#aoe 2001 -- 3+2
 #end
 
 #selectspell 1128 -- gift of the serpent
-#aoe 1001 -- 2+
+#aoe 2002 -- 4+2
 #end
 
 #selectspell 791 -- cold resistance
-#aoe 1001 -- 3+
+#aoe 2001 -- 5+2
 #end
 
 #selectspell 786 -- fire resistance
-#aoe 1001 -- 3+
+#aoe 2001 -- 5+2
 #end
 
 #selectspell 793 -- lightning resistance
-#aoe 1001 -- 3+
+#aoe 2001 -- 5+2
 #end
 
 #selectspell 1139 -- gift of giant strength
-#aoe 2002 -- 6+2
+#aoe 3000 -- 6+3
 #fatiguecost 20
 #end
 
@@ -167357,19 +167819,19 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1173 -- Winter Ward
-#aoe 4012 -- 20+4
+#aoe 6018 -- 30+6
 #end
 
 #selectspell 1156 -- Spell Ward
-#aoe 4012 -- 20+4
+#aoe 6018 -- 30+6
 #end
 
 #selectspell 1168 -- Flame Ward
-#aoe 4012 -- 20+4
+#aoe 6018 -- 30+6
 #end
 
 #selectspell 1170 -- Thunder Ward
-#aoe 4012 -- 20+4
+#aoe 6018 -- 30+6
 #end
 
 #selectspell 829 -- Arrow Ward
@@ -167385,7 +167847,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 826 -- Cold Resistant Warriors
-#aoe 4008 -- 20+4
+#aoe 6012 -- 30+6
 #end
 
 #selectspell 881 -- Marble Warriors
@@ -167393,11 +167855,11 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 836 -- Lightning Resistant Warriors
-#aoe 4008 -- 20+4
+#aoe 6012 -- 30+6
 #end
 
 #selectspell 1176 -- giant strength warriors
-#aoe 25
+#aoe 30
 #end
 
 #selectspell 1177 -- Weapons of Sharpness
@@ -167406,11 +167868,10 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #selectspell 1220 -- Steel Slice Warriors
 #end
 
-
 #selectspell 1150 -- Levitate Soldiers
 #school 5
 #researchlevel 5
-#aoe 4012 -- 20+4
+#aoe 8024 -- 40+8
 #fatiguecost 100
 #end
 
@@ -167517,7 +167978,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1325 -- Pack Ferocity
-#aoe 5020 -- 30+5
+#aoe 8024 -- 40+8
 #end
 
 #selectspell 1353 -- Fury of the Wild
@@ -167544,8 +168005,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1314 -- Gift of the Furies
-#pathlevel 0 2
-#aoe 5020 -- 30+5
+#pathlevel 0 3
+#aoe 8016 -- 40+8
 #end
 
 #selectspell 1315 -- Pyre of Catharsis
@@ -167659,6 +168120,9 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1134 -- Gift of Flight
 #notfornation 105
+#aoe 2001 -- 3+2
+#pathlevel 0 1
+#range 5
 #end
 
 #selectspell 1136 -- Seeking Arrow
@@ -167702,7 +168166,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 871 -- Fay-eyed Warriors
-#aoe 4008 -- 20+4
+#aoe 4016 -- 40+8
 #spec 12582912 -- Friendlys only, UWok
 #end
 
@@ -167713,16 +168177,16 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 
 #selectspell 1144 -- Regeneration
 #aoe 2
-#fatiguecost 20
+#fatiguecost 10
 #end
 
 #selectspell 1185 -- Group Regeneration
-#aoe 1001 -- 4+
---#fatiguecost 50
+#aoe 2000 -- 6+2
+#fatiguecost 50
 #end
 
 #selectspell 1231 -- Mass Regeneration
-#aoe 4004 -- 20+4
+#aoe 6006 -- 30+6
 #end
 
 #selectspell 1149 -- Terracotta Army
@@ -167748,7 +168212,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1163 -- Poison Ward
-#aoe 4012 -- 20+4
+#aoe 6018 -- 30+6
 #notfornation 42
 #end
 
@@ -194143,6 +194607,20 @@ It is now fully repaired and a new crew has been assigned to it."
 #addgeo 128 --Forest
 #end
 
+#selectsite 91 -- EA Marverni Carnutes
+#popgrowth 20
+#end
+
+#newevent 
+#nolog 
+#notext 
+#rarity 5
+#req_pregame 1
+#req_site 1
+#msg "[Carnutes]"
+#addgeo 128 --Forest
+#end
+
 #selectsite 133 --EA Tir Na n'og
 #popgrowth 20
 #end
@@ -196381,6 +196859,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #maybehiddensite 2624 --adds Sanguine Tranquility
 #end
 
+
 #newevent --Removes Site if Enchantment Ends-- 
 #rarity 5
 #req_noench 701
@@ -196493,6 +196972,39 @@ It is now fully repaired and a new crew has been assigned to it."
 #incdom -5
 #incscale3 1 --sloth
 #end
+
+
+
+#newevent -- 2x stones present in cromlech
+#rarity 5
+#req_2monsters 9362 -- cromlech stone
+#nolog
+#notext
+#nation -2
+#clearvar 6012
+#incvar 6012
+#end
+
+#newevent -- poly down cromlech
+#rarity 5
+#req_targmnr 9361 -- cromlech +2
+#req_varzero 6012
+#nolog
+#notext
+#forcetransform 9342 -- cromlech +1
+#end
+
+#newevent -- poly up cromlech
+#rarity 5
+#req_targmnr 9342 -- cromlech +1
+#req_varone 6012
+#clearvar 6012
+#nolog
+#notext
+#forcetransform 9361 -- cromlech +2
+#end
+
+
 
 -- END OF NEW EVENTS
 
