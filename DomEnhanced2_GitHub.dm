@@ -1446,44 +1446,11 @@
 #secondaryeffectalways 171
 #end
 
-#newweapon 1612
-#copyweapon 567  -- Drake Fire
-#name "Flamethrower"
-#end
-
-#newweapon 1613
-#copyweapon 601  -- Cave Fire Bottle
-#name "Launcher"
-#range 30
-#att 5
-#dmg 16
-#ammo 5
-#aoe 5
-#end
-
-#newweapon 1614
-#copyweapon 231  -- Thunder Fist
-#name "Disruptor Gauntlets"
-#nratt 2
-#end
-
-#newweapon 1615
-#copyweapon 673  -- Bronze Glaive
-#name "Stainless Halberd"
-#dmg 10
-#end
-
 #newweapon 1616
 #copyweapon 197  -- Gaze of Death
 #name "Nether Gaze"
 #aoe 3
 #ammo 5
-#end
-
-#newweapon 1617
-#copyweapon 129  -- Dusk Dagger
-#name "Blade of the Killer"
-#secondaryeffectalways 401  -- Soul Death
 #end
 
 #newweapon 1618
@@ -32759,23 +32726,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #startage 1000
 #maxage 3000
 #polyimmune
-#end
-
-#newmonster 7606
-#copystats 1926  -- Peshtsi City Guard
-#cleararmor
-#spr1 "magicenhanced/eeironcommissar.tga"
-#spr2 "magicenhanced/eeironcommissar2.tga"
-#name "Commissar"
-#descr "Josef the Iron Patriarch is aided by his loyal commissars, experts in rooting out dissent. In United Soviet Bogarus they gather those of pure blood to convince them to sacrifice themselves for the good of the nation. Most are also minor blood mages and enforce the iron will of the Patriarch upon the populace."
-#gcost 0
-#mor 16
-#magicskill 8 1
-#douse 2
-#heretic 1
-#popkill 3
-#patrolbonus 10
-#mapmove 2
 #end
 
 #newmonster 7608
@@ -75441,7 +75391,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #spiritsight
 #noslowrec
 #mountmnr 3521
-#skilledrider 1
+#skilledrider 3
 #regainmount 1
 #itemslots 860678
 #clearmagic
@@ -76276,6 +76226,7 @@ Each month he will collect a magical pearl and can create more using water gems.
 #domsummon2 1120  -- Markata Archer
 #domsummon20 8344 -- Markata Freak
 #itemslots 860678
+#skilledrider 1 -- 0 -> 1
 #clearmagic
 #magicskill 6 1
 #magicskill 8 1
@@ -117428,25 +117379,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #end
 
---#newsite 2158 DEPRECATED SITES FOR REACH BEYOND DIMENSIONS
---#name "Newt Colony"
---#path 2 
---#level 0
---#rarity 5
---#res 30
---#mon 7549 -- Newt Soldier
---#end
-
---#newsite 2159 DEPRECATED SITES FOR REACH BEYOND DIMENSIONS
---#name "Robot Factory"
---#path 3 
---#level 0
---#rarity 5
---#res 50
---#mon 7540 -- Robot
---#decscale 1  -- +Prod
---#end
-
 #newsite 2160
 #name "Portal to Hell"
 #path 8 
@@ -128527,9 +128459,6 @@ Sailing: All commanders can sail. Only Schippers can transport troops."
 #uwwallcom 1067  -- Merman Captain
 #uwwallunit 7971
 #uwwallmult 20
-#uwguardcom 1067  -- Merman Captain
-#uwguardunit 7973 -- Merman Hoplite
-#uwguardmult 15
 #moreprod 1
 #end
 
@@ -129014,7 +128943,7 @@ Priests: Powerful, easily recruitable, can perform blood sacrifices. Priests of 
 
 #blessbonus 1
 #color 0.6 0 0
-#secondarycolor 10 0.7 0.2
+#secondarycolor 1.0 0.7 0.2
 #likespop 94  -- Lavaborn
 #fortera 1
 #templepic 10
@@ -129880,9 +129809,6 @@ Priests: Average, temples more expensive."
 #uwwallcom 8036 -- Crab General
 #uwwallunit 8023 -- Shrimp Soldier
 #uwwallmult 20
-#uwguardcom 8036
-#uwguardunit 8028 -- Crab Soldier
-#uwguardmult 6
 #defmult1 20
 #defmult1b 10
 #defmult2 20
@@ -130174,9 +130100,6 @@ Mechanics: Can create new Basalt Cities in forts, enabling some capital recruits
 #uwwallcom 8712 -- Sothul
 #uwwallunit 8702 -- Abyssal One Guard
 #uwwallmult 20
-#uwguardcom 8712
-#uwguardunit 8707
-#uwguardmult 6
 
 #startcom 8712 -- Sothul
 #startscout 8711 -- Sothul Dun
@@ -130339,9 +130262,6 @@ Priests: Average"
 #uwwallunit 8902
 #uwwallmult 20
 
-#uwguardcom 8928
-#uwguardunit 8905
-#uwguardmult 8
 
 #startcom 8927 -- Siyokoy Pamagat
 #startscout 8937 -- Ugkoy Scout
@@ -132907,9 +132827,6 @@ Priests: Weak, magical"
 #guardunit 1045 -- Mermidon
 #guardmult 10
 
-#uwguardcom 2410
-#uwguardunit 1045
-#uwguardmult 10
 
 #defcom1 2372 -- ichtysatyr
 #defcom2 2410 -- ichtycentaur
@@ -133767,9 +133684,6 @@ Cold dominions are affected more by Summer and Warm dominions are affected more 
 #guardunit 971 -- Hybrid Trooper
 #guardmult 10
 
---#uwguardcom 445 -- Illithid Lord
---#uwguardunit 335 -- Slave Trooper
---#uwguardmult 15
 
 #uwdefunit1 337 -- Lobo Guard 
 #uwdefmult1 20
@@ -172043,33 +171957,6 @@ This will also prevent their skin from drying out."
 #spell "Cloud Trapeze"
 #end
 
-#selectitem 606
-#copyitem 37
-#copyspr 42
-#name "Blade of the Immortal Killer"
-#descr "This black blade is used by the Immortal Killer in his dark work. It will kill any being it strikes by slaying their soul. None except the Killer know its true origin, however it can send shadowy apparitions of the Killer to disant provinces to slay important targets."
-#weapon 1617
-#spell "Send Killer"
-#constlevel 12
-#att 3
-#cursed
-#nofind
-#end
-
-#selectitem 607
-#copyspr 103  -- Trident from Beyond
-#name "Trident of Dulness"
-#descr "This trident is owned by Dulness and only she can weild the power it contains. Forged in the depths of hell it can blight a province with listlessness."
-#constlevel 12
-#mainpath 8
-#mainlevel 6
-#type 1
-#weapon 641  -- Bronze Trident
-#spell "Melancholia"
-#cursed
-#nofind
-#end
-
 #selectitem 779
 #copyitem 391 -- Stone Sphere
 #copyspr 391  -- Stone Sphere
@@ -181989,18 +181876,6 @@ They were quickly transported to the treasury."
 
 #newevent
 #rarity 5
-#req_targmnr 7556 -- Dulness
-#req_rare 15
-#nation -2
-#req_land 1
-#msg "Create Debauched Libertine."
-#notext
-#nolog
-#com 7624 -- Debauched Libertine
-#end
-
-#newevent
-#rarity 5
 #req_targmnr 7624 -- Debauched Libertine
 #req_rare 5
 #nation -2
@@ -186300,7 +186175,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targinanimate 0
 #req_targimmobile 0
 #req_land 1
-#req_targaff  -- Flesh Eater
+#req_targaff 8589934592 -- Flesh Eater
 #req_targmaxsize 3
 #msg "##targname## now suffers the curse of vampirism!"
 #transform 7823 -- Vampire Countess
@@ -186321,7 +186196,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targmagicbeing 0
 #req_targinanimate 0
 #req_targimmobile 0
-#req_targaff  -- Flesh Eater
+#req_targaff 8589934592 -- Flesh Eater
 #req_targmaxsize 3
 #req_land 1
 #msg "##targname## now suffers the curse of vampirism!"
@@ -186345,7 +186220,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targimmobile 0
 #req_targmaxsize 3
 #req_land 1
-#req_targnoaff  -- Flesh Eater
+#req_targnoaff 8589934592 -- Flesh Eater
 #msg "##targname## has fallen victim to the Malediction and now suffers an unnatural urge to feast on human flesh."
 #nation -2
 #gainaff 8589934592  -- Flesh Eater
@@ -186398,7 +186273,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_targmagicbeing 0
 #req_targinanimate 0
 #req_targimmobile 0
-#req_targnoaff  -- Flesh Eater
+#req_targnoaff 8589934592 -- Flesh Eater
 #msg "Your commander has fallen victim to a terrible hunger and now suffers an unnatural urge to feast on human flesh."
 #nation -2
 #gainaff 8589934592  -- Flesh Eater
@@ -186989,7 +186864,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
+#req_targnoaff 8589934592
 #msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #gainaff 8589934592
 #end
@@ -186999,19 +186874,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
-#msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
-#notext
-#nolog
-#gainaff 8589934592
-#end
-
-#newevent
-#rarity 5
-#req_commander 1
-#req_targgod 0
-#req_ench 264 -- Ench64
-#req_targnoaff
+#req_targnoaff 8589934592
 #msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
@@ -187023,7 +186886,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
+#req_targnoaff 8589934592
 #msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
@@ -187035,7 +186898,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
+#req_targnoaff 8589934592
 #msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
@@ -187047,7 +186910,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
+#req_targnoaff 8589934592
 #msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
@@ -187059,7 +186922,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
+#req_targnoaff 8589934592
 #msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
@@ -187071,7 +186934,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
+#req_targnoaff 8589934592
 #msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
@@ -187083,7 +186946,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
+#req_targnoaff 8589934592
 #msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
@@ -187095,7 +186958,19 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_commander 1
 #req_targgod 0
 #req_ench 264 -- Ench64
-#req_targnoaff
+#req_targnoaff 8589934592
+#msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
+#notext
+#nolog
+#gainaff 8589934592
+#end
+
+#newevent
+#rarity 5
+#req_commander 1
+#req_targgod 0
+#req_ench 264 -- Ench64
+#req_targnoaff 8589934592
 #msg "The curse afflicting the province has infected some of your commanders. They now hunger for human flesh and will consume the populace each turn, or else gain further afflictions."
 #notext
 #nolog
@@ -189417,7 +189292,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #nation -2
 #req_pop0ok
 #req_owncapital 0
-#req_indepok
+#req_indepok 1
 #req_ench 303 -- Ench103 -- Reclaim Basalt City
 #msg "A Basalt City has been successfully found and reclaimed!"
 --#nolog
@@ -189434,7 +189309,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #nation -2
 #req_pop0ok
 #req_owncapital 0
-#req_indepok
+#req_indepok 1
 #req_ench 303 -- Ench103 -- Reclaim Basalt City
 #msg "A Basalt City has been successfully found and will be reclaimed when a fort is built and has adequate province defense."
 --#nolog
@@ -189450,7 +189325,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #nation -2
 #req_pop0ok
 #req_owncapital 0
-#req_indepok
+#req_indepok 1
 #req_ench 303 -- Ench103 -- Reclaim Basalt City
 #msg "A Basalt City has been successfully found and will be reclaimed when a fort is built and has adequate province defense."
 --#nolog
@@ -189500,7 +189375,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #nation -2
 #req_pop0ok
 #req_owncapital 0
-#req_indepok
+#req_indepok 1
 #req_land 0
 #req_notfornation 206 -- Dirgen
 #msg "Swatch to no rec [Basalt City]"
@@ -189534,7 +189409,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #rarity 5
 #nation -2
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #req_owncapital 0
 #req_site 1
 #msg "Place shattered crystal [Basalt City]"
@@ -189548,7 +189423,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #rarity 5
 #nation -2
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #req_owncapital 1
 #req_fornation 206 -- Dirgen
 #msg "Place shattered crystal"
@@ -189562,7 +189437,7 @@ This event did not directly reduce income, and is only reporting on the income a
 #rarity 5
 #nation -2
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #req_owncapital 0
 #req_site 1
 #msg "Remove shattered crystal [Shattered Crystal]"
@@ -194221,7 +194096,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #addgeo 274877906944
 #code -540
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #setpoptype 72
 #delay 1
 #end
@@ -194233,7 +194108,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #addgeo 1152921504606846980
 #remgeo 8389104
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #code 0
 #kill 90
 #end
@@ -195589,7 +195464,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 7937 --siege golem--
 #msg "The Siege Golem has been returned to its mobile form."
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #nolog
 #forcetransform 760 -- Siege Golem w/o Fort Destruction
 #end
@@ -195603,7 +195478,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_fort 1
 #msg "A great explosion from ##landname## echoes across the world! A Siege Golem has shattered the entire fortification there into dust!"
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #forcetransform 7937 -- Siege Golem w/ Fort Destruction
 #end
 
@@ -196846,7 +196721,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_noench 700 --choleria
 #removesite 2622 --choleric production-- 
 #removesite 2623 --choleric production 2--
-#req_indepok
+#req_indepok 1
 #req_pop0ok
 #nolog
 #notext
@@ -196963,7 +196838,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_nearbysite 1 --Phlegmatic Site-- 
 #unrest -5
 #req_pop0ok
-#req_indepok
+#req_indepok 1
 #msg "unrest reduce?[Phlegmatic Passivity]" --adds site--
 #notext
 #nolog
