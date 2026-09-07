@@ -4176,13 +4176,13 @@
 #halfstr
 #nratt 5
 #range 30
-#precision 2
+#att 2
 #blunt
 #magic
 #natural
 #secondaryeffectalways 1920
 #sound 16 -- flames
-#flightspr 362 4 -- Fire boulder
+#flyspr 362 4 -- Fire boulder
 #end
 
 #newweapon 1922 -- Area Calmness
@@ -5735,13 +5735,13 @@
 #selectarmor 230
 #copyarmor 158 -- Robes
 #name "Magic Robes"
-#magic
+#magicarmor
 #end
 
 #selectarmor 231
 #copyarmor 158 -- Robes
 #name "Magic Heavy Robes"
-#magic
+#magicarmor
 #prot 5
 #end
 
@@ -44237,12 +44237,12 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #end
 
 #newmonster 8131
+#copystats 2309
 #fixedname "Omaro"
 #name "Lion Hero"
 #descr "Omaro is from the royal family of the colossi, but he is a simple man. He doesn't like leading troops and prefers to deal with problems personally. When there are not enough problems, he stirs up trouble to have something to squash. He prefers to fight monsters and large animals rather than puny humans. He has had numerous affairs with human women and hopes one of his descendants will be like him and apply his simple and universal solution to problems."
 #spr1 "worthy_heroes/lionhero.tga"
 #spr2 "worthy_heroes/lionhero.tga"
-#copystats 2309
 #gcost 0
 #hp 27
 #mr 17
@@ -67251,7 +67251,7 @@ The whale's carcass has been entirely consumed, and the whale has gained more sk
 #mapmove 18
 #ap 13
 #eyes 2
-#weapon 92 "Fist"
+#weapon 92 -- Fist
 #armor 278 -- Magic Crown
 #armor "Magic Silk Garments"
 #humanoid
@@ -67709,18 +67709,18 @@ Boost all paths except blood by +1. Becomes a Yar Bori upon death or after two s
 
 --War Horse (Hausa Cavalry)
 #newmonster 9645
-#name "War Horse"
 #copystats 3514 -- War Horse
 #copyspr 3514
+#name "War Horse"
 #mr 8
 #swimming
 #end
 
 --War Horse (Jarumi)
 #newmonster 9646
-#name "Cataphracted War Horse"
 #copystats 3516 -- Cataphracted War Horse
 #copyspr 3516
+#name "Cataphracted War Horse"
 #cleararmor
 #armor "Cataphract Barding"
 #swimming
@@ -67764,10 +67764,10 @@ Boost all paths except blood by +1. Becomes a Yar Bori upon death or after two s
 #end
 
 --War Horse (Magayaki)
-#newmonster 9648
-#name "Cataphracted War Horse"
 #copystats 3516 -- Cataphracted War Horse
 #copyspr 3516
+#newmonster 9648
+#name "Cataphracted War Horse"
 #cleararmor
 #armor "Cataphract Barding"
 #holy
@@ -129432,7 +129432,7 @@ Priests: Average"
 #addgod 8460 -- Foul Statue
 #addgod 8474 -- Ancestral Barrow
 #addgod 8457 -- Spirit of Bones
-#addgod 8354 -- Great White Stag
+#addgod 3693 -- Great White Stag
 #delgod 251  -- Great Sage
 #delgod 245  -- Master Enchanter
 #delgod 244  -- Arch Mage
@@ -130004,7 +130004,7 @@ Priests: Weak. Can unlock strong priests in capital."
 #end
 
 #selectnation 206 -- Dirgen, Abyssal Kingdoms
-#clear
+#clearnation
 #era 2
 #name "Dirgen"
 #epithet "Abyssal Kingdoms"
@@ -130147,7 +130147,7 @@ Mechanics: Can create new Basalt Cities in forts, enabling some capital recruits
 
 
 #selectnation 207
-#clear
+#clearnation
 #era 1
 #name "Bantay Tubig"
 #epithet "Guardians of the Water"
@@ -131975,7 +131975,7 @@ Nation: Reduced income. Halved population growth from Growth scales."
 #domkill 2
 #halfdeathpop
 --#templegems 6
-#spreadlazy 3
+--#spreadlazy 3 COMMAND DOESN'T WORK
 #defdeath -3
 #defsloth 3
 #moreprod -1
@@ -133721,7 +133721,7 @@ Dominion: Increases unrest, spreads turmoil, creates Dreamers, Madmen and Void B
 #fortunrest 5
 #domkill 0
 #moreorder -1
-#spreadchaos 1
+-- #spreadchaos 1 COMMAND DOESN'T WORK
 #clearsites
 #startsite "The City of Unfullfilled Dreams"
 #startsite "Void Rift"
@@ -160977,7 +160977,7 @@ Applies the effects of Holy Avenger to the caster"
 #researchlevel 0
 #school 2
 #path 0 6
-#damage 5010 (damage increased by +5 because its now AP instead of AN)
+#damage 5010 --(damage increased by +5 because its now AP instead of AN)
 #path 1 -1 --N1 so serpent acoltytes can cast
 #pathlevel 0 1
 #pathlevel 1 1
@@ -163958,7 +163958,7 @@ This spell may only target friendly provinces."
 
 #selectspell 4370 -- frost fiend commander
 #copyspell 18 -- summon devil
-name "Frost Fiend"
+#name "Frost Fiend"
 #effect 10021
 #school -1
 #damage 449
@@ -164055,7 +164055,7 @@ name "Frost Fiend"
 #copyspell 687 --Falling Fires Old-- 
 #name "Falling Fires"
 #researchlevel 5
-#path 2 --Evo--
+#school 2 --Evo--
 #range 50
 #aoe 1003
 #damage 20
@@ -164073,7 +164073,7 @@ name "Frost Fiend"
 #selectspell 4383 -- New Falling frost
 #copyspell 694
 #damage 15
-#spec 1152921504606847552 cold, ap, nextspell on Damage
+#spec 1152921504606847552 --cold, ap, nextspell on Damage
 #precision 5
 #end 
 
@@ -164173,7 +164173,7 @@ name "Frost Fiend"
 #pathlevel 0 1
 #range 0
 #aoe 0
-#ainocast
+#ainocast 1
 #casttime 75
 #fatiguecost 5
 #spec 545390592  -- Use UW, no mindless, no inanimate
@@ -164258,7 +164258,7 @@ name "Frost Fiend"
 #explspr 10034
 #sound 16  -- Fire
 #fatiguecost 100
-#ainocast
+#ainocast 1
 #spec 281690240  -- Ignore shields & armor, friendlies only, mindless, demons, and undead immune, UWOK
 #nextspell 4395
 #end
@@ -168346,7 +168346,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #path 1 6 -- N
 #pathlevel 1 1
 #aoe 3006 -- 15+3
-#nextspell 101 - Disease
+#nextspell 101 -- Disease
 #end
 
 #selectspell 1283 -- Augury
@@ -168453,7 +168453,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #effect 10042
 #damage 60 --event identifier--
 #pathlevel 0 0
-#path 0
+#path 0 0
 #school -1
 #researchlevel -1
 #end
@@ -168476,7 +168476,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #effect 10042
 #damage 61 --event identifier--
 #pathlevel 0 0
-#path 1
+#path 1 0
 #school -1
 #researchlevel -1
 #end
@@ -168502,7 +168502,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #effect 10042
 #damage 62 --event identifier--
 #pathlevel 0 0
-#path 1
+#path 1 0
 #school -1
 #researchlevel -1
 #end
@@ -196252,7 +196252,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_site 1
 #nation -2
 #com 3495 -- Wizard
-#1d6units 1138 -- Claymen
+#1d6units 817 -- Claymen
 #end
 
 #newevent
@@ -196523,8 +196523,8 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #msg "Some magical beings have escaped from the Academy! [Academy of the Deeper Earth]"
 #req_site 1
-#com 595 -- Mechanical Man
-#1d6units 595 -- Mechanical Man
+#com 532 -- Mechanical Man
+#1d6units 532 -- Mechanical Man
 #end
 
 #newevent
