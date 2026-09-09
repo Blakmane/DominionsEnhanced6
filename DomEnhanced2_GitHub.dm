@@ -1,7 +1,7 @@
 #modname "Dominions Enhanced 2 (GitHub)"
 #description "Adds or revises many spells, sites, Pretenders, mercenaries, items and nations. Includes work by BlueFire, Red_Rob, Lightmane, Flintlock, Selgeron, laodie666, Boing, Kate_Micucci, Amuys, Zonk, Nounours, Pyg, Llamabeast, Turin, Quantum_Mechani, Heartless, Sombre, Globu, Ohlmann, Sy and others."
 #icon "domenhanced/banner.png"
-#version 2.x
+#version 2.20
 
 
 
@@ -67764,9 +67764,9 @@ Boost all paths except blood by +1. Becomes a Yar Bori upon death or after two s
 #end
 
 --War Horse (Magayaki)
+#newmonster 9648
 #copystats 3516 -- Cataphracted War Horse
 #copyspr 3516
-#newmonster 9648
 #name "Cataphracted War Horse"
 #cleararmor
 #armor "Cataphract Barding"
@@ -69236,10 +69236,6 @@ Cannot be recruited until Break the Deadlock is cast."
 #skilledrider 3 -- 1 -> 3
 #end
 
-#selectmonster 8323 -- High Diviner
-#skilledrider 3 -- 1 -> 3
-#end
-
 #selectmonster 7526 -- Praefectus
 #skilledrider 3 -- 1 -> 3
 #end
@@ -69263,10 +69259,6 @@ Cannot be recruited until Break the Deadlock is cast."
 #end
 
 
-
-#selectmonster 8345 -- Markata Master
-#skilledrider 1 -- 0 -> 1
-#end
 
 #selectmonster 7341 -- Dishirding
 #skilledrider 7 -- 4 -> 7
@@ -75399,6 +75391,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #magicskill 4 1
 #end
 
+#selectmonster 8323 -- High Diviner
+#skilledrider 3 -- 1 -> 3
+#end
+
 #newmonster 8324 -- Sage of the Sea
 #copystats 174
 #spr1 "extrapretenders/mergod.tga"
@@ -76230,6 +76226,10 @@ Each month he will collect a magical pearl and can create more using water gems.
 #clearmagic
 #magicskill 6 1
 #magicskill 8 1
+#end
+
+#selectmonster 8345 -- Markata Master
+#skilledrider 1 -- 0 -> 1
 #end
 
 #newmonster 8346 -- Skull Idol
