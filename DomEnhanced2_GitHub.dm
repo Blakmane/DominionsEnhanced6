@@ -122285,7 +122285,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 9
 #look 0
---#homecom -- DISABLED: empty argument
+#homecom 
 #end
 
 #newsite 2489
@@ -124278,7 +124278,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #level 0
 #path 9
 #look 6
---#homecom -- DISABLED: empty argument
+#homecom 
 #end
 
 #newsite 2611 -- Shattered Crystal
@@ -181994,19 +181994,6 @@ They were quickly transported to the treasury."
 #nolog
 #temple 1
 #end
-
--- DISABLED: Yithian troop 7333 is not defined in this mod
---#newevent
---#rarity 5
---#nation -2
---#req_monster 7333 -- Yithian
---#req_fort 0
---#msg "Replace Yithian troop with commander"
---#notext
---#nolog
---#killmon 7333 -- Yithian
---#com 7393 -- Yithian
---#end
 
 #newevent
 #rarity 5
