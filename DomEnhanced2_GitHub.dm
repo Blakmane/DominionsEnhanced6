@@ -67764,9 +67764,9 @@ Boost all paths except blood by +1. Becomes a Yar Bori upon death or after two s
 #end
 
 --War Horse (Magayaki)
+#newmonster 9648
 #copystats 3516 -- Cataphracted War Horse
 #copyspr 3516
-#newmonster 9648
 #name "Cataphracted War Horse"
 #cleararmor
 #armor "Cataphract Barding"
