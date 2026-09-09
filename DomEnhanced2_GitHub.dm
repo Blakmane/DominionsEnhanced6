@@ -118092,26 +118092,28 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homemon 6628
 #end
 
-#newsite 2231
-#name "Cult of the Solar Bull Recruits"
-#level 0
-#rarity 5
-#path 0 
-#homemon 7739
-#homecom 7740
-#homecom 7741
-#homecom 7733
-#end
+-- DISABLED: LA Pythium removed, these recruits no longer exist
+--#newsite 2231
+--#name "Cult of the Solar Bull Recruits"
+--#level 0
+--#rarity 5
+--#path 0 
+--#homemon 7739
+--#homecom 7740
+--#homecom 7741
+--#homecom 7733
+--#end
 
-#newsite 2232
-#name "Theurgy Recruits"
-#level 0
-#rarity 5
-#path 4 
-#homemon 7738
-#homecom 7735
-#homecom 7737
-#end
+-- DISABLED: LA Pythium removed, these recruits no longer exist
+--#newsite 2232
+--#name "Theurgy Recruits"
+--#level 0
+--#rarity 5
+--#path 4 
+--#homemon 7738
+--#homecom 7735
+--#homecom 7737
+--#end
 
 #newsite 2233
 #name "Serpent Cult Recruits"
@@ -118125,17 +118127,18 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 761
 #end
 
-#newsite 2234
-#name "Cult of Fertility Recruits"
-#level 0
-#rarity 5
-#path 6 
-#homemon 7515
-#homecom 7743
-#homecom 7730
-#homecom 7742
-#homecom 7732
-#end
+-- DISABLED: LA Pythium removed, these recruits no longer exist
+--#newsite 2234
+--#name "Cult of Fertility Recruits"
+--#level 0
+--#rarity 5
+--#path 6 
+--#homemon 7515
+--#homecom 7743
+--#homecom 7730
+--#homecom 7742
+--#homecom 7732
+--#end
 
 #newsite 2235
 #name "EA Zion Summons"
@@ -132412,7 +132415,6 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 #delgod 2549 -- dom1
 
 
-#delgod 8347 -- Drake Breeder
 #delgod 8307 -- Stone Magus
 #delgod 8509 -- Great Sage
 --#delgod 8510 -- Crone
@@ -132449,7 +132451,6 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 #hero4 9304
 #multihero1 9302
 #uwbuild 1
-#delgod 8347 -- Drake Breeder
 #delgod 8307 -- Stone Magus
 #delgod 8509 -- Great Sage
 #delgod 8510 -- Crone
@@ -132470,7 +132471,6 @@ Dominion: All commanders can use the dark vessels to cross oceans between two pr
 
 #selectnation 121 -- LA Andramania
 #uwbuild 1
-#delgod 8347 -- Drake Breeder
 #delgod 8307 -- Stone Magus
 #delgod 8509 -- Great Sage
 #delgod 8510 -- Crone
@@ -181808,47 +181808,50 @@ They were quickly transported to the treasury."
 #force1d3vis 4  -- 1D4 Pearls
 #end
 
-#newevent
-#rarity 5
-#req_rare 10
-#req_fornation 89 -- MA Rlyeh
-#req_fornation 127 -- LA Rlyeh
-#nation -2
-#req_pop0ok
-#req_owncapital 0
-#req_targmnr 8483 -- Nuclear Chaos
-#msg "The Nuclear Chaos has grown more powerful, but also more unpredictable."
-#forcetransform 8484
-#nolog
-#end
+-- DISABLED: Nuclear Chaos monsters 8481-8484 are not defined in this mod
+--#newevent
+--#rarity 5
+--#req_rare 10
+--#req_fornation 89 -- MA Rlyeh
+--#req_fornation 127 -- LA Rlyeh
+--#nation -2
+--#req_pop0ok
+--#req_owncapital 0
+--#req_targmnr 8483 -- Nuclear Chaos
+--#msg "The Nuclear Chaos has grown more powerful, but also more unpredictable."
+--#forcetransform 8484
+--#nolog
+--#end
 
-#newevent
-#rarity 5
-#req_rare 10
-#req_fornation 89 -- MA Rlyeh
-#req_fornation 127 -- LA Rlyeh
-#nation -2
-#req_pop0ok
-#req_owncapital 0
-#req_targmnr 8482 -- Nuclear Chaos
-#msg "The Nuclear Chaos has grown more powerful, but also more unpredictable."
-#forcetransform 8483
-#nolog
-#end
+-- DISABLED: Nuclear Chaos monsters 8481-8484 are not defined in this mod
+--#newevent
+--#rarity 5
+--#req_rare 10
+--#req_fornation 89 -- MA Rlyeh
+--#req_fornation 127 -- LA Rlyeh
+--#nation -2
+--#req_pop0ok
+--#req_owncapital 0
+--#req_targmnr 8482 -- Nuclear Chaos
+--#msg "The Nuclear Chaos has grown more powerful, but also more unpredictable."
+--#forcetransform 8483
+--#nolog
+--#end
 
-#newevent
-#rarity 5
-#req_rare 15
-#req_fornation 89 -- MA Rlyeh
-#req_fornation 127 -- LA Rlyeh
-#nation -2
-#req_pop0ok
-#req_owncapital 0
-#req_targmnr 8481 -- Nuclear Chaos
-#msg "The Nuclear Chaos has grown more powerful, but also more unpredictable."
-#forcetransform 8482
-#nolog
-#end
+-- DISABLED: Nuclear Chaos monsters 8481-8484 are not defined in this mod
+--#newevent
+--#rarity 5
+--#req_rare 15
+--#req_fornation 89 -- MA Rlyeh
+--#req_fornation 127 -- LA Rlyeh
+--#nation -2
+--#req_pop0ok
+--#req_owncapital 0
+--#req_targmnr 8481 -- Nuclear Chaos
+--#msg "The Nuclear Chaos has grown more powerful, but also more unpredictable."
+--#forcetransform 8482
+--#nolog
+--#end
 
 #newevent
 #rarity 5
@@ -181990,18 +181993,6 @@ They were quickly transported to the treasury."
 #notext
 #nolog
 #temple 1
-#end
-
-#newevent
-#rarity 5
-#nation -2
-#req_monster 7333 -- Yithian
-#req_fort 0
-#msg "Replace Yithian troop with commander"
-#notext
-#nolog
-#killmon 7333 -- Yithian
-#com 7393 -- Yithian
 #end
 
 #newevent
@@ -196681,8 +196672,8 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #msg "Some magical beings have escaped from the Academy! [Academy of the Spheres]"
 #req_site 1
-#com 595 -- Mechanical Man
-#1d6units 595 -- Mechanical Man
+#com 532 -- Mechanical Man
+#1d6units 532 -- Mechanical Man
 #end
 
 #newevent
