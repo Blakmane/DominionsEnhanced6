@@ -175758,7 +175758,7 @@ This headband does not require activation in combat."
 #req_pregame 1
 #req_capital 0
 #req_crystal 0
-#req_forestcave 0
+#req_caveforest 0
 #req_drip 0
 #incpop 230
 #nolog
@@ -175773,7 +175773,7 @@ This headband does not require activation in combat."
 #req_pregame 1
 #req_capital 0
 #req_crystal 0
-#req_forestcave 0
+#req_caveforest 0
 #req_drip 0
 #incpop 330
 #nolog
@@ -175788,7 +175788,7 @@ This headband does not require activation in combat."
 #req_pregame 1
 #req_capital 0
 #req_crystal 0
-#req_forestcave 0
+#req_caveforest 0
 #req_drip 0
 #incpop 430
 #nolog
@@ -175843,7 +175843,7 @@ This headband does not require activation in combat."
 #req_indepok 1
 #req_pregame 1
 #req_capital 0
-#req_forestcave 1
+#req_caveforest 1
 #killpop 150
 #req_minpop 1100
 #nolog
@@ -175856,7 +175856,7 @@ This headband does not require activation in combat."
 #req_indepok 1
 #req_pregame 1
 #req_capital 0
-#req_forestcave 1
+#req_caveforest 1
 #killpop 200
 #req_minpop 1250
 #nolog
@@ -175869,7 +175869,7 @@ This headband does not require activation in combat."
 #req_indepok 1
 #req_pregame 1
 #req_capital 0
-#req_forestcave 1
+#req_caveforest 1
 #killpop 250
 #req_minpop 1400
 #nolog
