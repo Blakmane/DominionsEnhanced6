@@ -24999,6 +24999,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #gemprod 5 2
 #gemprod 6 1
 #onebattlespell 1228 -- Life After Death
+#nowish
 #end
 
 #newmonster 7263
@@ -25405,6 +25406,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #weapon 532  -- Tail Sweep
 #weapon 456  -- Gaze of Fear
 #polyimmune
+#nowish
 #end
 
 #newmonster 7277
@@ -25583,6 +25585,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #bringeroffortune 15
 #polyimmune
 #moreprod 0
+#nowish
 #end
 
 #newmonster 7283
@@ -25616,6 +25619,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #bringeroffortune 15
 #polyimmune
 #moregrowth 0
+#nowish
 #end
 
 #newmonster 7284
@@ -25640,6 +25644,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #bringeroffortune 15
 #polyimmune
 #moreluck 0
+#nowish
 #end
 
 #newmonster 7285
@@ -25662,6 +25667,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #bringeroffortune 15
 #polyimmune
 #moreorder 0
+#nowish
 #end
 
 #newmonster 7286
@@ -34783,11 +34789,11 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #magicskill 5 1
 #heretic 5
 #thronekill 10
-#polyimmune
 #onebattlespell 773 -- Quicken Self
 #holy
 #montag 1033
 #polyimmune
+#nowish
 #end
 
 #newmonster 7702
@@ -34835,10 +34841,10 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #magicskill 5 2
 #heretic 5
 #thronekill 10
-#polyimmune
 #holy
 #montag 1033
 #polyimmune
+#nowish
 #end
 
 #newmonster 7703
@@ -34886,10 +34892,10 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #heretic 5
 #thronekill 10
 #fortkill 10
-#polyimmune
 #holy
 #montag 1033
 #polyimmune
+#nowish
 #end
 
 #newmonster 7704
@@ -43762,20 +43768,29 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #end
 
 #newmonster 8113
-#copystats 3551 -- moose
-#clearweapons
 #spr1 "fennoscandia/fsmeandash.tga"
 #spr2 "fennoscandia/fsmeandash2.tga"
 #name "Golden Reindeer"
 #fixedname "Meandash"
 #descr "Meandash is a great golden-antlered reindeer spirit with burning eyes that is revered by the Sami tribes. Born of a Reindeer and a human woman, he lives in both the human realm and the realm of beast spirits. The elders tell of a river of blood that ran with clear water after Meandash had crossed it. Now this Meandash River is a gateway to the spirit realm and is revered as a site of great spiritual power. Meandash himself is powerful in nature magic and is protected by a protective aura that keeps him from harm."
+#quadruped
+#itemslots 786432 -- 2 misc slots
+#hp 38
+#prot 6
 #mr 18
 #mor 30
 #str 18
 #att 12
 #def 13
+#prec 5
 #enc 2
+#size 6
+#ressize 6
+#mapmove 22
+#ap 24
 #gcost 0
+#rcost 1
+#rpcost 15
 #superiorleader
 #spiritsight
 #magicskill 6 5
@@ -43786,7 +43801,11 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #unique
 #ethereal
 #holy
-#secondshape 0
+#animal
+#forestsurvival
+#snow
+#coldres 5
+#stealthy 0
 #weapon 1576 -- Golden Antlers
 #weapon 55  -- Hoof
 #polyimmune
@@ -90701,7 +90720,7 @@ In Bull form the Draugadrott loses some of his magic powers."
 #end
 
 #selectmonster 923  -- Warlock Apprentice
-#descr "In the Smouldercone, young and promising Abysians are trained in Blood magic. The apprentices are much feared, as they often carry out the task of collecting young virgins for their masters' sacrifices. Warlock apprentices are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle."
+#descr "In the Smouldercone, young and promising Abysians are trained in Blood magic. The apprentices are much feared, as they often carry out the task of collecting young virgins for their masters' sacrifices. Warlock apprentices are Abysians and radiate the hellish heat characteristic of their race. In warm lands they will be more difficult to harm, however the cold will make them brittle. Apprentices can only be recruited in provinces containing a Warlock."
 #monpresentrec 89  -- Warlock
 #neednoteat
 #icenatprot -1
@@ -142018,7 +142037,7 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 #selectspell 2655
 #name "Shield of Aella"
 #descr "The Caelians of the Airya clan have long been on friendly terms with Aella, Queen of storms. The caster invokes her name and a protective wind encircles a few nearby soldiers. Violent gusts will bat away enemy projectiles, whilst the winds will guide their arrows straight and true."
-#details "Precision +5, Air Shield: 80"
+#details "Precision +4, Air Shield: 80"
 #school 1
 #researchlevel 0
 #path 0 1
@@ -163474,6 +163493,8 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #restricted 120 -- Piconye
 #end
 
+-- ID 4335 taken by healing radiance
+
 #selectspell 4336 -- Taurus EPower
 #name "Taurus Sign"
 #descr "."
@@ -163649,7 +163670,7 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #restricted 118 -- LA Vaettiheim
 #end
 
---#selectspell 4348 -- Incite Temper
+--#selectspell 4348 -- Incite Temper ID 4348 NOW TAKEN BY CHOLERIA, CHANGE ID IF THIS SPELL UNDEPRECATED
 --#copyspell 1307
 --#name "Incite Temper"
 --#descr "The caster incites the temper of a small group of soldiers, forcing them to go berserk. This spell is only effective on small beings like Vaetti."
@@ -164104,7 +164125,7 @@ This spell may only target friendly provinces."
 #nextspell 0
 #end
 
-#selectspell 4385
+#selectspell 2161
 #copyspell 762
 #name "Earth Grip"
 #aoe 1
@@ -164648,7 +164669,7 @@ This spell may only target friendly provinces."
 #spec 549453952 -- AN, friendles only, no effect on inanimate, UWOK
 #end
 
-#selectspell 4421
+#selectspell 4335
 #copyspell 667 -- Healing light
 #name "Healing Radiance"
 #descr "A radiant aura of warm and wonderful light envelops the target area, closing wounds and easing the pain of friendly soldiers. The spell doesn't affect undead or inanimate beings."
@@ -164704,7 +164725,7 @@ This spell may only target friendly provinces."
 #selectspell 4426
 #copyspell 1134 -- Gift of Flight
 #name "Flying Warriors"
-#descr "."
+#descr "Grants a large group of soldiers the ability to fly."
 #researchlevel 5
 #aoe 3002 -- 8+3
 #pathlevel 0 2
@@ -168448,7 +168469,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #nextspell 4387 --Choleric Production--
 #end 
 
-#selectspell 4387 --Choleric Production Jumpstart scale change on province where it is cast and places hidden sites--
+#selectspell 4348 --Choleric Production Jumpstart scale change on province where it is cast and places hidden sites--
 #name "Choleric Production" --first instance of productivity and 
 #effect 10042
 #damage 60 --event identifier--
