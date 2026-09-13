@@ -49135,6 +49135,21 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 #descr "The Scarab is a gigantic beetle that lives in the desert wastes. As a sacred symbol of the sun and the cycle of death and rebirth they are treated with great reverence. The Scarabs can emit the burning heat of the sun and are protected from fire and flames of all kinds. They are sometimes summoned to accompany the army as gigantic shock troops, living weapons that will burn and terrify enemy troops."
 #end
 
+#newmonster 8579 -- Sauromancer for the rite of three gates
+#copystats 161 -- Sauromancer
+#copyspr 161 -- Sauromancer
+#name "Sauromancer Neophytus"
+#descr "The Order of the Sauromancers is a secretive one and only after passing three rites of initiation is one considered a full member of the Order. In the last initiation, the Rite of Three Gates, a Reborn enters the Underworld and immerses himself in the black waters of that dark Realm. If he returns, he is given a crown and full authority as a Sauromancer. A Sauromancer Neophytus has only recently undergone the rite and has not yet developed to the full extent of their magical power. The immersion in the black waters of the Underworld gives them great resistance to poisons and almost impervious hides."
+#gcost 205
+#hp 11
+#mr 16
+#att 9
+#def 9
+#clearmagic
+#magicskill 5 3 -- Death
+#magicskill 6 1 -- Nature
+#end
+
 #newmonster 8580 -- Capricorn but worseish
 #copystats 1038 -- Capricorn
 #copyspr 1038 -- Capricorn
@@ -142383,14 +142398,14 @@ If Rivers of Lava is dispelled, the Rivers will begin to cool and disappear, and
 
 #selectspell 2678
 #name "Rite of Three Gates"
-#descr "The Order of the Sauromancers is a secretive one and only after passing three rites of initiation is one considered a full member of the Order. In the last initiation, the Rite of Three Gates, a Reborn enters the Underworld and immerses himself in the black waters of that dark Realm. If he returns, he is given a crown and full authority as a Sauromancer. The ritual is risky as less nimble Reborn may be caught by a spirit of the underworld and forced to remain there forever."
+#descr "The Order of the Sauromancers is a secretive one and only after passing three rites of initiation is one considered a full member of the Order. In the last initiation, the Rite of Three Gates, a Reborn enters the Underworld and immerses himself in the black waters of that dark Realm. If he returns, he is given a crown and full authority as a Sauromancer, although it will still take many years of study to completely develop his magical power. The ritual is risky as less nimble Reborn may be caught by a spirit of the underworld and forced to remain there forever."
 #school 5
 #researchlevel 0
 #path 0 5
 #pathlevel 0 2
 #effect 10130  -- Transform
 #nreff 1
-#damage 161  -- Sauromancer
+#damage 8579  -- Sauromancer Neophyte
 #fatiguecost 600
 #polygetmagic 1
 #nextspell 3707
