@@ -5668,6 +5668,14 @@
 #name "Turtle Greatshield"
 #end
 
+#newarmor 582 -- Heavenly Veil
+#copyarmor 135
+#name "Heavenly Veil"
+#prot 15
+#magicarmor
+#end
+
+
 
 -- END OF NEW ARMORS
 
@@ -5743,6 +5751,22 @@
 #name "Magic Heavy Robes"
 #magicarmor
 #prot 5
+#end
+
+#selectarmor 209 -- Hoplon
+#def 4 -- 3 -> 4
+#end
+
+#selectarmor 238 -- Gleaming Hoplon
+#def 5 -- 4 -> 5
+#end
+
+#selectarmor 242 -- Orichalcum Hoplon
+#def 5 -- 4 -> 5
+#end
+
+#selectarmor 247 -- Cyclope Hoplon
+#def 5 -- 4 -> 5
 #end
 
 #selectarmor 236  -- Gleaming Cuirass
@@ -20940,6 +20964,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #ambidextrous 3
 #twiceborn 7063 -- Wight Giant (Jotun)
 #polyimmune
+#nowish
 #end
 
 #newmonster 7064
@@ -20986,6 +21011,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon "Quarterstaff"
 #armor 187 -- Mask
 #polyimmune
+#nowish
 #end
 
 #newmonster 7065
@@ -21041,6 +21067,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon 835
 #weapon 835
 #polyimmune
+#nowish
 #end
 
 #newmonster 7066
@@ -21095,6 +21122,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #weapon 835
 #weapon 835
 #polyimmune
+#nowish
 #end
 
 #newmonster 7067
@@ -21138,6 +21166,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #immortal
 #polyimmune
 #weapon "Quarterstaff"
+#nowish
 #end
 
 #newmonster 7068
@@ -21192,6 +21221,8 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #prec 10
 #mr 14
 #mor 50
+#coldres 10
+#poisonres 25
 #noheal
 #homesick 3
 #gold 2
@@ -21223,12 +21254,12 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #hp 20
 #prot 20
 #size 4
-#str 15
+#str 13
 #enc 0
-#att 10
-#def 10
+#att 9
+#def 9
 #prec 10
-#mr 13
+#mr 12
 #mor 50
 #noheal
 #homesick 3
@@ -21245,7 +21276,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #ambidextrous 2
 #resources 2
 #weapon 1551
---#weapon 1551
+#weapon 1551
 #homeshape 7069
 #end
 
@@ -25378,7 +25409,7 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #naga
 #homerealm 0
 #gcost 0
-#mor 18
+#mor 30
 #hp 165
 #prot 20
 #noleader
@@ -43081,6 +43112,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #reclimit 5
 #shockres -5
 #nametype 185
+#twiceborn 9327 -- Troll Wight
 #end
 
 #newmonster 8085
@@ -43103,6 +43135,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #weapon 18  -- BattleAxe
 #armor 20  -- Iron Cap
 #armor 12  -- Scale mail hauberk
+#twiceborn 9327 -- Troll Wight
 #end
 
 #newmonster 8087
@@ -43879,6 +43912,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #custommagic 29696 100  -- EDNG 100%
 #armor 192  -- Magic Furs
 #weapon 238  -- Magic Staff
+#twiceborn 9327 -- Troll Wight
 #end
 
 #newmonster 8117
@@ -58076,6 +58110,8 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #animal
 #flying
 #armor 254 -- Plate Barding
+#clearweapons
+#weapon 831 -- magic hoof
 #end
 
 #newmonster 9189 -- Rashi Knight Commander
@@ -58130,7 +58166,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #flying
 #holy
 #armor 564 -- Fire Plate Barding
-#weapon 55 -- Hoof
+#weapon 831 -- Magic Hoof
 #weapon 676 -- Fiery Breath
 #end
 
@@ -58189,7 +58225,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 --#magicskill 1 2
 --#magicskill 2 2
 #armor 559 -- light leather
-#weapon 55 -- Hoof
+#weapon 831 -- magic hoof
 #end
 
 #newmonster 9194 -- Kaji
@@ -59969,6 +60005,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #magicskill 6 2 -- N
 #magicskill 7 1 -- G
 #unique
+#twiceborn 3445 -- Wight Titan
 #end
 
 #newmonster 9285 -- Fenno troll mother
@@ -60004,6 +60041,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #magicskill 6 3 -- N
 #magicskill 7 3 -- G
 #unique
+#twiceborn 9327 -- Troll Wight
 #end
 
 #newmonster 9286 -- Fenno troll grandfather
@@ -60039,6 +60077,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #magicskill 5 3 -- D
 #magicskill 7 3 -- G
 #unique
+#twiceborn 3445 -- Wight Titan
 #end
 
 #newmonster 9287 -- Fenno mountain troll
@@ -60755,7 +60794,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #wastesurvival
 #magicskill 0 1 -- F
 #magicskill 2 1 -- W
-#magicskill 4 1 -- S
+--#magicskill 4 1 -- S
 #magicskill 9 1 -- H
 #firstshape 9314
 #end
@@ -60796,7 +60835,7 @@ Thram'zu Bacht practice the magic of the Thram'zu and can reanimate 8 deep fishb
 #wastesurvival
 #magicskill 0 1 -- F
 #magicskill 2 1 -- W
-#magicskill 4 1 -- S
+--#magicskill 4 1 -- S
 #magicskill 9 1 -- H
 #end
 
@@ -61665,11 +61704,524 @@ Companions are recruited in pairs and two must be recruited at once."
 #armor 21 -- Full Helmet
 #end
 
-#newmonster 9328 -- altar
+#newmonster 9338 -- Menhir
+#copystats 473 -- Telestic Animate
+#name "Menhir"
+#descr "The Menhir is an ancient spirit inhabiting a massive standing stone. The spirit may protect the local population in exchange for offerings, and is often regarded as a guardian spirit, though it is unable to leave the Menhir. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Menhir is a holy site, and may attract worship away from the true God."
+#spr1 "magicenhanced/menhir.png"
+#spr2 "magicenhanced/menhir2.png"
+#heretic 1
+#hp 160
+#size 10
+#str 15
+#prot 25
+#masterrit 2
+#holy
+#clearmagic
+#magicskill 3 1
+#magicskill 4 1
+#itemslots 262144 -- 1 misc
+#montag 1110 -- rock
+#montagweight 40
+#maxage 2000
+#startage 1000
+#end
+
+#newmonster 9340 -- Preserver
+#copystats 475 -- Crusher
+#name "Preserver"
+#descr "."
+#spr1 "magicenhanced/blue_rock1.png"
+#spr2 "magicenhanced/blue_rock2.png"
+#hp 140
+#size 10
+#str 25
+#prot 24
+#mor 50
+#holy
+#clearmagic
+#end
+
+#newmonster 9341 -- Blood Soaked Edifice
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/bloodmonolith.tga"
+#spr2 "extrapretenders/bloodmonolith2.tga"
+#name "Sanguine Edifice"
+#descr "The Sanguine Edifice is an ancient spirit inhabiting a massive standing stone. Once a pure spirit of the Earth, it has been tainted by blood sacrifice. As the ground was soaked with sacrificial blood the spirit gained a craving for the blood of the innocent. The ground itself will sometimes rise up in a corrupted form to serve the spirit. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The local populace may take to worshipping the edifice to the exclusion of the true God."
+#summon1 3757 -- s6 illearth
+#heretic 1
+#drawsize -10
+#hp 180
+#size 10
+#str 22
+#prot 25
+#masterrit 1
+#clearmagic
+#magicskill 8 1
+#itemslots 262144 -- 1 misc
+#montag 1111 -- blood rock
+#montagweight 60
+#maxage 2000
+#startage 1000
+#end
+
+#newmonster 9343 -- Tree 1
+#copystats 330 -- Dark Vine
+#spr1 "magicenhanced/tree1.png"
+#spr2 "magicenhanced/tree2.png"
+#name "Ancient Oak"
+#descr "The Ancient Oak is the spirit of a very old great oak, overgrown with mistletoe, possessing intelligence and magical power. Offerings are made to the tree, and in return the tree provides fertility, growth, and healing to the land. As a tree it cannot move, but it is difficult to kill in combat. The Ancient Oak is a holy site, and may attract worship away from the true God."
+#heretic 1
+#hp 180
+#size 10
+#str 14
+#prot 15
+#mr 12
+#mor 30
+#enc 0
+#att 8
+#def 0
+#startage 500
+#maxage 1000
+#holy
+#miscshape
+#plant
+#spiritsight
+#growthpower 1
+--#masterrit 1
+#ivylord 4
+#clearweapons
+#magicskill 6 1
+#weapon 240 -- Branch
+#weapon 240 -- Branch
+#weapon 240 -- Branch
+#nametype 145 -- Wooden Creatures
+#immobile
+#bonusspells 1
+#ap 2
+#mapmove 0
+#montag 1112 -- tree
+#montagweight 45
+#end
+
+#newmonster 9344 -- Forest Lord
+#copystats 931 -- Ivy king
+#name "Forest Lord"
+#descr "The Forest Lord is an ancient spirit of nature appearing as a large figure made of oak and ivy. The Forest Lord once ruled an Ivy Kingdom, and now tends to the forest as they sleep. The Forest Lord can reawaken vine men from their slumber and more will come to his aid when summoned."
+#spr1 "magicenhanced/treant1.png"
+#spr2 "magicenhanced/treant2.png"
+#summon3 361 -- vine man
+#raredomsummon 362 -- vine ogre
+#hp 85
+#size 8
+#mr 18
+#def 9
+#att 13
+#str 22
+#prot 12
+#ivylord 4
+#holy
+#clearmagic
+#magicskill 6 1
+#clearweapons
+#weapon 92 -- Fist
+#weapon 92 -- Fist
+#weapon 240 -- Branch
+#montag 1112 -- tree
+#montagweight 25
+#maxage 1000
+#startage 500
+#end
+
+#newmonster 9345 -- Blood tree
+#copystats 330 -- Dark Vine
+#spr1 "magicenhanced/bloodtree1.png"
+#spr2 "magicenhanced/bloodtree2.png"
+#name "Thirsting Tree"
+#descr "The Thirsting Tree is the spirit of a very old great oak possessing intelligence and magical power. Once a pure being of Nature, it has been tainted by blood sacrifice. As its roots were soaked with sacrificial blood the spirit gained a craving for the blood of the innocent. Each month the tree demands blood from the local populace, who may come to worship the tree as a God in its own right. As a tree it cannot move, but it is difficult to kill in combat."
+#heretic 1
+#hp 180
+#size 10
+#str 14
+#prot 18
+#mr 12
+#mor 18
+#enc 0
+#startage 500
+#maxage 1000
+#popkill 1
+#douse 2
+#miscshape
+#plant
+#spiritsight
+#holy
+#growthpower 1
+--#masterrit 1
+#ivylord 2
+#clearweapons
+#magicskill 8 1
+#weapon 240 -- Branch
+#weapon 240 -- Branch
+#weapon 240 -- Branch
+#nametype 145 -- Wooden Creatures
+#immobile
+#bonusspells 1
+#ap 2
+#mapmove 0
+#montag 1113 -- blood tree
+#montagweight 50
+#maxage 1000
+#startage 500
+#end
+
+#newmonster 9346 -- Vine monster
+#copystats 330 -- Dark Vine
+#name "Grasping Maw"
+#descr "The Grasping Maw is a mass of vines with a great maw in the middle of it. Once a pure being of Nature, it has been tainted by blood sacrifice. As its vines were soaked with sacrificial blood the spirit gained a craving for the blood of the innocent, and has now uprooted itself so it may scour the land for its feast."
+#spr1 "magicenhanced/blue_vinemonster1.png"
+#spr2 "magicenhanced/blue_vinemonster2.png"
+#hp 150
+#size 10
+#mr 16
+#def 6
+#att 11
+#str 21
+#prot 10
+#ivylord 4
+#mor 30
+#popkill 3
+#entangle
+#clearmagic
+#magicskill 8 1
+#clearweapons
+#weapon 1672 -- Thirsting vine
+#weapon 85 -- Tentacle
+#weapon 85 -- Tentacle
+#weapon 609 -- Grab and Swallow
+#montag 1113 -- blood tree
+#montagweight 30
+#maxage 1000
+#startage 500
+#researchbonus -10
+#end
+
+#newmonster 9358 -- Black Bull
+#copystats 978 -- Great Black Bull
+#copyspr 978 -- Great Black Bull
+#name "Black Bull"
+#descr "The Black Bull is the progeny of one of the Great Bulls, divine entities worshiped as manifestations of Nature, wildness, and the glory of the slayer and the slain. They are a creature of unbridled fury, and unlike a White Bull, the fertility aspect is secondary to that of their maddened rage."
+#drawsize -10
+#hp 140
+#prot 11
+#berserk 6
+#str 28
+#mr 16
+#beastmaster 3
+#poisonres 10
+#holy
+#clearmagic
+#magicskill 8 1
+#clearweapons
+#weapon 830
+#weapon 831
+#homerealm 0
+#gcost 0
+#startdom 0
+#batstartsum1d6 9384 -- black bull wolf
+#batstartsum1d6 9387 -- black bull hawk
+#batstartsum1d3 9385 -- black bull dire wolf
+#batstartsum1d3 9388 -- black bull great hawk
+#batstartsum1 9386 -- black bull bear
+#montag 1113 -- blood tree
+#montagweight 20
+#maxage 1500
+#startage 600
+#end
+
+#newmonster 9359 -- White Bull
+#copystats 979 -- Great White Bull
+#copyspr 979 -- Great White Bull
+#name "White Bull"
+#descr "The White Bull is the progeny of one of the Great Bulls, divine entities worshiped as manifestations of Nature, wildness, and fury. The White Bull brings fertility to the land and he is accompanied by a multitude of beasts attracted by his aura."
+#drawsize -10
+#hp 138
+#prot 11
+#berserk 4
+#str 28
+#mr 16
+#beastmaster 3
+#poisonres 10
+#holy
+#clearmagic
+#magicskill 6 1
+#clearweapons
+#weapon 830
+#weapon 831
+#homerealm 0
+#gcost 0
+#startdom 0
+#batstartsum2d6 9380 -- white bull boar
+#batstartsum1d3 9382 -- white bull moose
+#batstartsum1d6 9383 -- white bull goat
+#batstartsum1 9381 -- white bull dire boar
+#montag 1112 -- tree
+#montagweight 15
+#maxage 1500
+#startage 600
+#end
+
+#newmonster 9360 -- Great Stag
+#copystats 3692 -- Great Stag
+#copyspr 3692 -- Great Stag
+#name "Divine Hart"
+#descr "The Great Stag is a being that has wandered the forests since the time before men, worshiped by the first men as a god of the hunt. Deer follow the Great Stag and a great number will flock to his herd."
+#heretic 1
+#drawsize -10
+#hp 88
+#prot 12
+#berserk 6
+#str 28
+#mr 16
+#beastmaster 5
+#inspirational -3
+#command 100
+#undisleader 1
+#poisonres 10
+#holy
+#clearmagic
+#magicskill 6 1
+#clearweapons
+#weapon 830
+#weapon 831
+#homerealm 0
+#gcost 0
+#startdom 0
+#montag 1112 -- tree
+#montagweight 15
+#maxage 1500
+#startage 600
+#end
+
+#newmonster 9342 -- Cromlech +1 masterrit
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/cromlech.tga"
+#spr2 "extrapretenders/cromlech2.tga"
+#name "Menec Cromlech"
+#descr "The Menec Cromlech is an ancient spirit inhabiting an alignment of standing stones. The Menec Cromlech may guide the local population in exchange for offerings, monitoring the seasons, the moon and the stars for auspicious events. The Cromlech ordains the best days for the planting of crops and the casting of rituals for their greatest effect. When all stones are arranged together its power is greatest, however when removed from the sacred geometry it will lose some of its power. As long as two Menec Stones are present, the Menec Cromlech will be able to cast rituals an extra level higher. The Menec Cromlech is a holy site, and may attract worship away from the true God."
+#heretic 1
+#drawsize -10
+#hp 100
+#size 8
+#str 15
+#prot 20
+#masterrit 1
+#holy
+#clearmagic
+#magicskill 4 1
+#chorusmaster 1
+#itemslots 262144 -- 1 misc
+#maxage 2000
+#startage 1000
+#end
+
+#newmonster 9361 -- Cromlech +2 masterrit
+#copystats 9342 -- Cromlech
+#copyspr 9342 -- Cromlech
+#name "Menec Cromlech"
+#descr "The Menec Cromlech is an ancient spirit inhabiting an alignment of standing stones. The Menec Cromlech may guide the local population in exchange for offerings, monitoring the seasons, the moon and the stars for auspicious events. The Cromlech ordains the best days for the planting of crops and the casting of rituals for their greatest effect. When all stones are arranged together its power is greatest, however when removed from the sacred geometry it will lose some of its power. As long as two Menec Stones are present, the Menec Cromlech will be able to cast rituals an extra level higher. The Menec Cromlech is a holy site, and may attract worship away from the true God."
+#heretic 1
+#drawsize -10
+#masterrit 2
+#holy
+#clearmagic
+#magicskill 4 1
+#chorusmaster 1
+#itemslots 262144 -- 1 misc
+#montag 1110 -- rock
+#montagweight 40
+#maxage 2000
+#startage 1000
+#end
+
+#newmonster 9362 -- Cromlech stone
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/cromlech.tga"
+#spr2 "extrapretenders/cromlech2.tga"
+#name "Menec Stone"
+#drawsize -50
+#descr "Menec Stones are a smaller stone of a Menec Cromlech alignment used as a source of power. When all stones are arranged together the Cromlech's power is greatest, however when removed from the sacred geometry it will lose some of its power."
+#hp 50
+#size 6
+#str 15
+#prot 15
+#spellsinger
+#reinvigoration 5
+#masterrit 2
+#bonusspells 0
+#holy
+#clearmagic
+#magicskill 4 1
+#itemslots 262144 -- 1 misc
+#maxage 2000
+#startage 1000
+#chorusslave
+#end
+
+#newmonster 9339 -- Henge summer
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/hengespirit.tga"
+#spr2 "extrapretenders/hengespirit.tga"
+#name "Henge"
+#descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God."
+--#summon1 3741 -- s6 earth ele
+#heretic 1
+#hp 150
+#size 10
+#str 22
+#prot 22
+#masterrit 2
+#holy
+#clearmagic
+#magicskill 3 1
+#itemslots 262144 -- 1 misc
+#autumnshape 9363
+#wintershape 9364
+#springshape 9365
+#maxage 2000
+#startage 1000
+#end
+
+#newmonster 9363 -- Henge fall
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/hengespirit.tga"
+#spr2 "extrapretenders/hengespirit.tga"
+#name "Henge"
+#descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God."
+#summon1 3741 -- s6 earth ele
+#heretic 1
+#hp 150
+#size 10
+#str 22
+#prot 22
+#masterrit 1
+#holy
+#clearmagic
+#magicskill 3 1
+#itemslots 262144 -- 1 misc
+#summershape 9339
+#wintershape 9364
+#springshape 9365
+#maxage 2000
+#startage 1000
+#end
+
+#newmonster 9364 -- Henge winter
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/hengespirit.tga"
+#spr2 "extrapretenders/hengespirit.tga"
+#name "Henge"
+#descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God."
+#summon1 3741 -- s6 earth ele
+#heretic 1
+#hp 150
+#size 10
+#str 22
+#prot 22
+#masterrit 2
+#holy
+#clearmagic
+#magicskill 3 1
+#itemslots 262144 -- 1 misc
+#summershape 9339
+#autumnshape 9363
+#springshape 9365
+#montag 1110 -- rock
+#montagweight 20
+#maxage 2000
+#startage 1000
+#end
+
+#newmonster 9365 -- Henge spring
+#copystats 473 -- Telestic Animate
+#spr1 "extrapretenders/hengespirit.tga"
+#spr2 "extrapretenders/hengespirit.tga"
+#name "Henge"
+#descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God."
+#summon1 3741 -- s6 earth ele
+#heretic 1
+#hp 150
+#size 10
+#str 22
+#prot 22
+#masterrit 1
+#holy
+#clearmagic
+#magicskill 3 1
+#itemslots 262144 -- 1 misc
+#summershape 9339
+#autumnshape 9363
+#wintershape 9364
+#montag 1111 -- blood rock
+#montagweight 40
+#maxage 2000
+#startage 1000
+#end
+
+#newmonster 9366 -- E Dummy
+#copystats 8519 -- Spirit of Hope
+#copyspr 473 -- Telestic Animate
+#name "Offering of Two Bulls"
+#fixedname "Offering"
+#descr "You shouldn't be able to see this monster."
+#shapechange 9367
+#nowish
+#end
+
+#newmonster 9367 -- N Dummy
+#copystats 8519 -- Spirit of Hope
+#copyspr 473 -- Telestic Animate
+#name "Offering of Mistletoe"
+#fixedname "Offering"
+#descr "You shouldn't be able to see this monster."
+#shapechange 9368
+#nowish
+#end
+
+#newmonster 9368 -- S Dummy
+#copystats 8519 -- Spirit of Hope
+#copyspr 473 -- Telestic Animate
+#name "Offering of Hazelnut"
+#fixedname "Offering"
+#descr "You shouldn't be able to see this monster."
+#shapechange 9369
+#nowish
+#end
+
+#newmonster 9369 -- B Dummy
+#copystats 8519 -- Spirit of Hope
+#copyspr 473 -- Telestic Animate
+#name "Blood Offering"
+#fixedname "Offering"
+#descr "You shouldn't be able to see this monster."
+#shapechange 9366
+#nowish
+#end
+
+#newmonster 9370 -- Generic Dummy
+#copystats 8519 -- Spirit of Hope
+#copyspr 473 -- Telestic Animate
+#name "Offering to a Local Deity"
+#fixedname "Offering"
+#descr "You shouldn't be able to see this monster."
+#nowish
+#end
+
+#newmonster 9371 -- altar 1
 #spr1 "magicenhanced/blue_altar.png"
 #spr2 "magicenhanced/blue_altar.png"
-#name "Altar"
-#descr "An altar, created by druids or gutuaters for the worship of a local deity. In a physical battle, the altar would be easy to topple over and cannot fight back."
+#fixedname "Altar of"
+#name "Druids"
+#descr "An altar, created by druids or gutuaters for the worship of a local deity. In a physical battle, the altar would be easy to topple over and cannot fight back. It cannot cast spells or use magic."
 #hp 30
 #str 15
 #att 5
@@ -61702,401 +62254,257 @@ Companions are recruited in pairs and two must be recruited at once."
 #enc 0
 #weapon 0
 #gcost 0
+#masterrit -6
+#mastersmith -6
+#researchbonus -20
+#maxage 2000
+#startage 0
+#nowish
 #end
 
-#newmonster 9338 -- Menhir
-#copystats 473 -- Telestic Animate
-#name "Menhir"
-#descr "The Menhir is an ancient spirit inhabiting a massive standing stone. The spirit may protect the local population in exchange for offerings, and is often regarded as a guardian spirit, though it is unable to leave the Menhir. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Menhir is treated as a holy site, and may attract worship away from the true God."
-#spr1 "magicenhanced/menhir.png"
-#spr2 "magicenhanced/menhir2.png"
-#heretic 1
-#hp 160
-#size 10
-#str 15
-#prot 25
-#masterrit 2
-#holy
-#clearmagic
-#magicskill 3 1
-#magicskill 4 1
-#itemslots 262144 -- 1 misc
+#newmonster 9372 -- altar 2
+#copyspr 9371
+#copystats 9371
 #end
 
-#newmonster 9340 -- Preserver
-#copystats 475 -- Crusher
-#name "Preserver"
+#newmonster 9373 -- altar 3
+#copyspr 9371
+#copystats 9371
+#end
+
+#newmonster 9374 -- altar 1 combat
+#copyspr 9371
+#copystats 9371
+#worldshape 9371
+#magicboost 53 -5
+#end
+
+#newmonster 9375 -- altar 2 combat
+#copyspr 9371
+#copystats 9371
+#worldshape 9372
+#magicboost 53 -5
+#end
+
+#newmonster 9376 -- altar 3 combat
+#copyspr 9371
+#copystats 9371
+#worldshape 9373
+#magicboost 53 -5
+#end
+
+#selectmonster 9371 -- altar 1
+#battleshape 9374
+#end
+
+#selectmonster 9372 -- altar 2
+#battleshape 9375
+#end
+
+#selectmonster 9373 -- altar 3
+#battleshape 9376
+#end
+
+#newmonster 9377 -- random awakened tree
+#copystats 7481 -- Awakened Tree
+#copyspr 7481
+#firstshape -1028
+#name "random Awakened Aree"
+#nowish
+#end
+
+#newmonster 9378 -- random marverni white bull animal
+#copystats 1807 -- Great boar
+#copyspr 1807 -- Great boar
+#name "random animal"
 #descr "."
-#spr1 "magicenhanced/blue_rock1.png"
-#spr2 "magicenhanced/blue_rock2.png"
-#hp 140
-#size 10
-#str 25
-#prot 24
-#mor 50
-#holy
-#clearmagic
+#nowish
+#firstshape -1080
 #end
 
-#newmonster 9341 -- Blood Soaked Edifice
-#copystats 473 -- Telestic Animate
-#spr1 "extrapretenders/bloodmonolith.tga"
-#spr2 "extrapretenders/bloodmonolith2.tga"
-#name "Bleeding Edifice"
-#descr "The Bleeding Edifice is an ancient spirit inhabiting a massive standing stone. Once a pure spirit of the Earth, it has been tainted by blood sacrifice. As the ground was soaked with sacrificial blood the spirit gained a craving for the blood of the innocent. The ground itself will sometimes rise up in a corrupted form to serve the spirit. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The local populace may take to worshipping the edifice to the exclusion of the true God."
-#heretic 1
-#drawsize -10
-#hp 180
-#size 10
-#str 22
-#prot 25
-#masterrit 1
-#clearmagic
-#magicskill 8 1
-#itemslots 262144 -- 1 misc
+#newmonster 9379 -- random marverni black bull animal
+#copystats 1224 -- dire wolf
+#copyspr 1224 -- dire wolf
+#name "random animal"
+#descr "."
+#nowish
+#firstshape -1081
 #end
 
-#newmonster 9343 -- Tree 1
-#copystats 330 -- Dark Vine
-#spr1 "magicenhanced/tree1.png"
-#spr2 "magicenhanced/tree2.png"
-#name "Ancient Oak"
-#descr "The Ancient Oak is the spirit of a very old great oak, overgrown with mistletoe, possessing intelligence and magical power. Offerings are made to the tree, and in return the tree provides fertility, growth, and healing to the land. As a tree it cannot move, but it is difficult to kill in combat. The Ancient Oak is treated as a holy site, and may attract worship away from the true God."
-#heretic 1
-#hp 180
-#size 10
-#str 14
-#prot 15
-#mr 12
-#mor 30
-#enc 0
-#att 8
+#newmonster 9380 -- white bull boar
+#copystats 1807
+#copyspr 1807
+#montag 1080
+#montagweight 10
+#transformation 0
+#firstshape 1807
+#end
+
+#newmonster 9381 -- white bull dire boar
+#copystats 8019
+#copyspr 8019
+#montag 1080
+#montagweight 1
+#transformation 0
+#firstshape 8019
+#end
+
+#newmonster 9382 -- white bull moose
+#copystats 1084
+#copyspr 1084
+#montag 1080
+#montagweight 2
+#transformation 0
+#firstshape 1084
+#end
+
+#newmonster 9383 -- white bull goat
+#copystats 2227
+#copyspr 2227
+#montag 1080
+#montagweight 10
+#transformation 0
+#firstshape 2227
+#end
+
+#newmonster 9384 -- black bull wolf
+#copystats 284
+#copyspr 284
+#montag 1081
+#montagweight 10
+#transformation 0
+#firstshape 284
+#end
+
+#newmonster 9385 -- black bull dire wolf
+#copystats 1224
+#copyspr 1224
+#montag 1081
+#montagweight 3
+#transformation 0
+#firstshape 1224
+#end
+
+#newmonster 9386 -- black bull bear
+#copystats 694
+#copyspr 694
+#montag 1081
+#montagweight 2
+#transformation 0
+#firstshape 694
+#end
+
+#newmonster 9387 -- black bull hawk
+#copystats 517
+#copyspr 517
+#montag 1081
+#montagweight 10
+#transformation 0
+#firstshape 517
+#end
+
+#newmonster 9388 -- black bull great hawk
+#copystats 1380
+#copyspr 1380
+#montag 1081
+#montagweight 3
+#transformation 0
+#firstshape 1380
+#end
+
+#newmonster 9389 -- Grove tender
+#copystats 1205 -- Gutuater
+#spr1 "magicenhanced/blue_grovetender1.png"
+#spr2 "magicenhanced/blue_grovetender2.png"
+#name "Grove Tender"
+#descr "Grove Tenders are Gutuaters that have dedicated themselves to the caring of a sacred grove in service to an ancient oak tree. They hold greater power over nature and greater reluctance joining armies, but may do so if their local deity has pledged to give aid."
+#magicskill 6 2
+#hp 11
+#ivylord 1
+#stealthy 0
+#gcost 10010
+#end
+
+#newmonster 9390 -- rock dummy
+#spr1 "magicenhanced/blue_altar.png"
+#spr2 "magicenhanced/blue_altar.png"
+#name "Rock"
+#descr "An altar, created by druids or gutuaters for the worship of a local deity. In a physical battle, the altar would be easy to topple over and cannot fight back. It cannot cast spells or use magic."
+#nametype 137 -- Marverni
+#hp 30
+#str 15
+#att 5
 #def 0
-#startage 500
-#maxage 1000
-#holy
-#miscshape
-#plant
-#spiritsight
-#growthpower 1
-#masterrit 1
-#ivylord 4
-#clearweapons
-#magicskill 6 1
-#weapon 240 -- Branch
-#weapon 240 -- Branch
-#weapon 240 -- Branch
-#nametype 145 -- Wooden Creatures
-#immobile
-#bonusspells 1
-#ap 2
+#prec 5
+#ap 0
 #mapmove 0
-#end
-
-#newmonster 9344 -- Forest Lord
-#copystats 931 -- Ivy king
-#name "Forest Lord"
-#descr "The Forest Lord is an ancient spirit of nature appearing as a large figure made of oak and ivy. The Forest Lord once ruled an Ivy Kingdom, and now tends to the forest as they sleep. The Forest Lord can reawaken vine men from their slumber and more will come to his aid when summoned."
-#spr1 "magicenhanced/treant1.png"
-#spr2 "magicenhanced/treant2.png"
-#hp 85
-#size 8
-#mr 17
-#def 8
-#att 9
-#str 22
-#prot 12
-#ivylord 4
-#holy
-#clearmagic
-#magicskill 6 1
-#clearweapons
-#weapon 92 -- Fist
-#weapon 92 -- Fist
-#weapon 240 -- Branch
-#end
-
-#newmonster 9345 -- Blood tree
-#copystats 330 -- Dark Vine
-#spr1 "magicenhanced/bloodtree1.png"
-#spr2 "magicenhanced/bloodtree2.png"
-#name "Thirsting Tree"
-#descr "The Thirsting Tree is the spirit of a very old great oak possessing intelligence and magical power. Once a pure being of Nature, it has been tainted by blood sacrifice. As its roots were soaked with sacrificial blood the spirit gained a craving for the blood of the innocent. Each month the tree demands blood from the local populace, who may come to worship the tree as a God in its own right. As a tree it cannot move, but it is difficult to kill in combat."
-#heretic 1
-#hp 180
-#size 10
-#str 14
-#prot 18
-#mr 12
-#mor 18
-#enc 0
-#startage 500
-#maxage 1000
-#popkill 1
-#douse 2
-#miscshape
-#plant
-#spiritsight
-#holy
-#growthpower 1
-#masterrit 1
-#ivylord 2
-#clearweapons
-#magicskill 8 1
-#weapon 240 -- Branch
-#weapon 240 -- Branch
-#weapon 240 -- Branch
-#nametype 145 -- Wooden Creatures
+#ap 0
 #immobile
-#bonusspells 1
-#ap 2
-#mapmove 0
-#end
-
-#newmonster 9346 -- Vine monster
-#copystats 330 -- Dark Vine
-#name "Grasping Maw"
-#descr "The Grasping Maw is a mass of vines with a great maw in the middle of it. Once a pure being of Nature, it has been tainted by blood sacrifice. As its vines were soaked with sacrificial blood the spirit gained a craving for the blood of the innocent, and has now uprooted itself so it may scour the land for its feast."
-#spr1 "magicenhanced/blue_vinemonster1.png"
-#spr2 "magicenhanced/blue_vinemonster2.png"
-#hp 160
-#size 10
-#mr 17
-#def 6
-#att 11
-#str 22
-#prot 14
-#ivylord 4
-#mor 30
-#popkill 3
-#entangle
-#clearmagic
-#magicskill 8 1
-#clearweapons
-#weapon 1672 -- Thirsting vine
-#weapon 1672 -- Thirsting vine
-#weapon 609 -- Grab and Swallow
-#end
-
-#newmonster 9358 -- Black Bull
-#copystats 978 -- Great Black Bull
-#copyspr 978 -- Great Black Bull
-#name "Black Bull"
-#descr "The Black Bull is the progeny of one of the Great Bulls, divine entities worshiped as manifestations of Nature, wildness, and the glory of the slayer and the slain. They are a creature of unbridled fury, and unlike a White Bull, the fertility aspect is secondary to that of their maddened rage."
-#drawsize -10
-#hp 140
-#prot 11
-#berserk 6
-#str 28
-#mr 16
-#beastmaster 3
-#poisonres 10
-#holy
-#clearmagic
-#magicskill 8 1
-#clearweapons
-#weapon 830
-#weapon 831
-#homerealm 0
-#gcost 0
-#startdom 0
-#end
-
-#newmonster 9359 -- White Bull
-#copystats 979 -- Great White Bull
-#copyspr 979 -- Great White Bull
-#name "White Bull"
-#descr "The White Bull is the progeny of one of the Great Bulls, divine entities worshiped as manifestations of Nature, wildness, and fury. The White Bull brings fertility to the land and he is accompanied by a multitude of beasts attracted by his aura."
-#drawsize -10
-#hp 138
-#prot 11
-#berserk 4
-#str 28
-#mr 16
-#beastmaster 3
-#poisonres 10
-#holy
-#clearmagic
-#magicskill 6 1
-#clearweapons
-#weapon 830
-#weapon 831
-#homerealm 0
-#gcost 0
-#startdom 0
-#end
-
-#newmonster 9360 -- Great Stag
-#copystats 3692 -- Great Stag
-#copyspr 3692 -- Great Stag
-#name "Divine Hart"
-#descr "The Great Stag is a being that has wandered the forests since the time before men, worshiped by the first men as a god of the hunt. Deer follow the Great Stag and a great number will flock to his herd."
-#heretic 1
-#drawsize -10
-#hp 88
-#prot 12
-#berserk 6
-#str 28
-#mr 16
-#beastmaster 5
-#inspirational -3
-#command 100
-#undisleader 1
-#poisonres 10
-#holy
-#clearmagic
-#magicskill 6 1
-#clearweapons
-#weapon 830
-#weapon 831
-#homerealm 0
-#gcost 0
-#startdom 0
-#end
-
-#newmonster 9342 -- Cromlech +1 masterrit
-#copystats 473 -- Telestic Animate
-#spr1 "extrapretenders/cromlech.tga"
-#spr2 "extrapretenders/cromlech2.tga"
-#name "Menec Cromlech"
-#descr "The Menec Cromlech is an ancient spirit inhabiting an alignment of standing stones. The Menec Cromlech may guide the local population in exchange for offerings, monitoring the seasons, the moon and the stars for auspicious events. The Cromlech ordains the best days for the planting of crops and the casting of rituals for their greatest effect. When all stones are arranged together its power is greatest, however when removed from the sacred geometry it will lose some of its power. As long as two Menec Stones are present, the Menec Cromlech will be able to cast rituals an extra level higher. The Henge is treated as a holy site, and may attract worship away from the true God."
-#heretic 1
-#drawsize -10
-#hp 100
-#size 8
-#str 15
-#prot 20
-#masterrit 1
-#holy
-#clearmagic
-#magicskill 4 1
-#chorusmaster 1
-#itemslots 262144 -- 1 misc
-#end
-
-#newmonster 9361 -- Cromlech +2 masterrit
-#copystats 9342 -- Cromlech
-#copyspr 9342 -- Cromlech
-#name "Menec Cromlech"
-#descr "The Menec Cromlech is an ancient spirit inhabiting an alignment of standing stones. The Menec Cromlech may guide the local population in exchange for offerings, monitoring the seasons, the moon and the stars for auspicious events. The Cromlech ordains the best days for the planting of crops and the casting of rituals for their greatest effect. When all stones are arranged together its power is greatest, however when removed from the sacred geometry it will lose some of its power. As long as two Menec Stones are present, the Menec Cromlech will be able to cast rituals an extra level higher. The Henge is treated as a holy site, and may attract worship away from the true God."
-#heretic 1
-#drawsize -10
-#masterrit 2
-#holy
-#clearmagic
-#magicskill 4 1
-#chorusmaster 1
-#itemslots 262144 -- 1 misc
-#end
-
-#newmonster 9362 -- Cromlech stone
-#copystats 473 -- Telestic Animate
-#spr1 "extrapretenders/cromlech.tga"
-#spr2 "extrapretenders/cromlech2.tga"
-#name "Menec Stone"
-#descr "Menec Stones are a smaller stone of a Menec Cromlech alignment used as a source of power. When all stones are arranged together the Cromlech's power is greatest, however when removed from the sacred geometry it will lose some of its power."
-#drawsize -50
-#hp 50
-#size 6
-#str 15
+#polyimmune
+#mor 50
 #prot 15
-#spellsinger
-#reinvigoration 3
-#masterrit 2
-#bonusspells 0
-#holy
-#clearmagic
-#magicskill 4 1
-#itemslots 262144 -- 1 misc
-#chorusslave
+#mr 12
+#size 5
+#noleader
+#miscshape
+#itemslots 1
+#coldres 10
+#poisonres 25
+#shockres 10
+#fireres 10
+#pierceres
+#slashres
+#neednoteat
+#stonebeing
+#blind
+#diseaseres 100
+#inanimate
+#amphibian
+#enc 0
+#weapon 0
+#gcost 0
+#masterrit -6
+#mastersmith -6
+#shapechange 9391
+#nowish
 #end
 
-#newmonster 9339 -- Henge summer
-#copystats 473 -- Telestic Animate
-#spr1 "extrapretenders/hengespirit.tga"
-#spr2 "extrapretenders/hengespirit.tga"
-#name "Henge"
-#descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is treated as a holy site, and may attract worship away from the true God."
-#summon1 3741 -- s6 earth ele
-#heretic 1
-#hp 150
-#size 10
-#str 22
-#prot 22
-#masterrit 2
-#holy
-#clearmagic
-#magicskill 3 1
-#itemslots 262144 -- 1 misc
-#autumnshape 9363
-#wintershape 9364
-#springshape 9365
+#newmonster 9391 -- blood rock dummy
+#copystats 9390
+#copyspr 9390
+#name "Blood Rock"
+#descr "An altar, created by druids or gutuaters for the worship of a local deity. In a physical battle, the altar would be easy to topple over and cannot fight back. It cannot cast spells or use magic."
+#shapechange 9392
+#nowish
 #end
 
-#newmonster 9363 -- Henge fall
-#copystats 473 -- Telestic Animate
-#spr1 "extrapretenders/hengespirit.tga"
-#spr2 "extrapretenders/hengespirit.tga"
-#name "Henge"
-#descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is treated as a holy site, and may attract worship away from the true God."
-#summon1 3741 -- s6 earth ele
-#heretic 1
-#hp 150
-#size 10
-#str 22
-#prot 22
-#masterrit 1
-#holy
-#clearmagic
-#magicskill 3 1
-#itemslots 262144 -- 1 misc
-#summershape 9339
-#wintershape 9364
-#springshape 9365
+#newmonster 9392 -- tree dummy
+#copystats 9390
+#copyspr 9390
+#name "Tree"
+#descr "An altar, created by druids or gutuaters for the worship of a local deity. In a physical battle, the altar would be easy to topple over and cannot fight back. It cannot cast spells or use magic."
+#shapechange 9393
+#nowish
 #end
 
-#newmonster 9364 -- Henge winter
-#copystats 473 -- Telestic Animate
-#spr1 "extrapretenders/hengespirit.tga"
-#spr2 "extrapretenders/hengespirit.tga"
-#name "Henge"
-#descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is treated as a holy site, and may attract worship away from the true God."
-#summon1 3741 -- s6 earth ele
-#heretic 1
-#hp 150
-#size 10
-#str 22
-#prot 22
-#masterrit 2
-#holy
-#clearmagic
-#magicskill 3 1
-#itemslots 262144 -- 1 misc
-#summershape 9339
-#autumnshape 9363
-#springshape 9365
+#newmonster 9393 -- blood tree dummy
+#copystats 9390
+#copyspr 9390
+#name "Blood Tree"
+#descr "An altar, created by druids or gutuaters for the worship of a local deity. In a physical battle, the altar would be easy to topple over and cannot fight back. It cannot cast spells or use magic."
+#shapechange 9390
+#nowish
 #end
 
-#newmonster 9365 -- Henge spring
-#copystats 473 -- Telestic Animate
-#spr1 "extrapretenders/hengespirit.tga"
-#spr2 "extrapretenders/hengespirit.tga"
-#name "Henge"
-#descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is treated as a holy site, and may attract worship away from the true God."
-#summon1 3741 -- s6 earth ele
-#heretic 1
-#hp 150
-#size 10
-#str 22
-#prot 22
-#masterrit 1
-#holy
-#clearmagic
-#magicskill 3 1
-#itemslots 262144 -- 1 misc
-#summershape 9339
-#autumnshape 9363
-#wintershape 9364
+#newmonster 9394 -- Moksha Siddha
+#copystats 1337 -- Siddha
+#spr1 "magicenhanced/blue_mokshasiddha1.png"
+#spr2 "magicenhanced/blue_mokshasiddha2.png"
+#name "Moksha Sidda"
+#descr "The Moksha Siddha is a White One that has achieved physical and mental perfection and is freed from the cycle of Transmigration. They can manifest a Divine Body to act upon the earth at will, and if their body is destroyed they will simply go to the Celestial Sphere until they can manifest again. The Siddha has four arms and is surrounded by an Aura of Splendor that strikes mortals with awe. Siddhas are able to appear instantly wherever they want. They travel by Will and the Laws of Simultaneity."
+#immortal
+#def 11
+#airshield 50
 #end
 
 
@@ -72535,6 +72943,32 @@ Cannot be recruited until Break the Deadlock is cast."
 #att 11
 #end
 
+-- Living Mercury
+
+#selectmonster 3762 -- Living Mercury s7
+#hp 140
+#end
+
+#selectmonster 3762 -- Living Mercury s6
+#hp 105
+#end
+
+#selectmonster 3762 -- Living Mercury s5
+#hp 75
+#end
+
+#selectmonster 3762 -- Living Mercury s4
+#hp 50
+#end
+
+#selectmonster 3762 -- Living Mercury s3
+#hp 30
+#end
+
+#selectmonster 3762 -- Living Mercury s2
+#hp 15
+#end
+
 -- ELEMENTAL ROYALTY
 
 -- AIR QUEENS
@@ -76173,16 +76607,16 @@ Each month he will collect a magical pearl and can create more using water gems.
 #name "Traveler"
 #descr "The Traveler is a giant of divine heritage that once served the Pantokrator as a divine messenger. His winged sandals and helmet allowed him to stride through the air with incredible speed carrying messages and warnings from his master. With the Pantokrator gone he has decided to ascend the Throne of Heaven and become the true God. The Traveler is tireless and has supernatural perceptive abilities. He is surrounded by an aura of splendour gifted to him by his former master and can fly through even the fiercest storms. He bears a Caduceus that can rob the will of those it strikes. In combat he moves with unearthly speed."
 #diseaseres 100
-#gcost 200
+#gcost 230
 #homerealm 3  -- Mediterranean
 #startdom 2
-#pathcost 40
+#pathcost 60
 #mor 30
 #hp 45
 #prot 0
 #str 16
 #att 13
-#def 20
+#def 16
 #mr 18
 #fixedname "Hermes"
 #humanoid
@@ -76191,14 +76625,13 @@ Each month he will collect a magical pearl and can create more using water gems.
 #enc 1
 #mapmove 36
 #ap 28
-#invulnerable 20
 #expertleader
 #flying
 #stormimmune
 #spiritsight
 #awe 3
-#reinvigoration 2
-#unsurr 4
+#reinvigoration 1
+#unsurr 1
 #patrolbonus 20
 --#itemslots 860678 -- No feet slot due to winged boots
 #onebattlespell 773 -- Quicken Self
@@ -83060,7 +83493,7 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #spr1 "extrapretenders/laod_ulupoka.tga"
 #spr2 "extrapretenders/laod_ulupoka.tga"
 #name "Lord of Stagnant Waters"
-#descr "The Lord of Stagnant Waters is a a powerful and malevolent being who brings disease, death, mischief, and misfortune. During the great battle of the gods, he was beheaded by the Pantokrator and imprisoned at the bottom of the ocean for all eternity. Now that the Pantokrator is gone, the Lord of Stagnant Waters has emerged once again in search of his head, spreading disease and death in his wake."
+#descr "The Lord of Stagnant Waters is a powerful and malevolent being who brings disease, death, mischief, and misfortune. During the great battle of the gods, he was beheaded by the Pantokrator and imprisoned at the bottom of the ocean for all eternity. Now that the Pantokrator is gone, the Lord of Stagnant Waters has emerged once again in search of his head, spreading disease and death in his wake."
 #diseaseres 100
 #gcost 250
 #homerealm 9 -- Deeps
@@ -83069,9 +83502,9 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #moregrowth -1 
 #moreluck -1
 #mor 30
-#hp 115
+#hp 130
 #prot 5
-#str 26
+#str 28
 #att 15
 #def 10
 #mr 18
@@ -83080,11 +83513,11 @@ The Worm Lord has learnt all of magic that it can and now there is nothing left 
 #prec 8
 #troglodyte
 #mapmove 22
-#fear 5
+#fear 10
 #ap 16
 #diseasecloud 4
 #autodisgrinder 2
-#leper 5
+#bringeroffortune -5
 #maxage 2000
 #startage 1000
 #neednoteat
@@ -92001,6 +92434,30 @@ Initiates of the Deep can be recruited in any land fort."
 #selectmonster 560  -- Stargazer Cthugul
 #end
 
+#selectmonster 564  -- Sea Troll
+#twiceborn 9327 -- Troll Wight
+#end
+
+#selectmonster 646 -- Troll Raider
+#twiceborn 9327 -- Troll Wight
+#end
+
+#selectmonster 648 -- Troll Archer
+#twiceborn 9327 -- Troll Wight
+#end
+
+#selectmonster 649 -- Troll Mage
+#twiceborn 9327 -- Troll Wight
+#end
+
+#selectmonster 1425 -- Troll Guard
+#twiceborn 9327 -- Troll Wight
+#end
+
+#selectmonster 1529 -- Troll Slave
+#twiceborn 9327 -- Troll Wight
+#end
+
 #selectmonster 561  -- Earth Gnome
 #magicskill 3 2  -- 1E
 --#custommagic 1024 50  -- 50% E
@@ -93938,7 +94395,7 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin, 
 #selectmonster 1219 -- Carnute Bare Chested
 #descr "The Carnutes live in the great Wood of Carnutes. Here the druids gather annually. The Carnute warriors are well known for their wild and aggressive demeanor. All Carnute warriors are able to go berserk if wounded in battle. Like the Marverni, the Carnutes rarely use expensive armor. They fight bare-chested with axes and shields. Carnute warriors decorate themselves in tattoos. The Gutuaters of the tribe instill the tattoos with wild magic and can awaken the powers of the enchanted tattoos in battle, made more potent when uncovered by armor. The Carnute tribe are known for their boar tattoos."
 #boartattoo 6
-#rpcost 10
+--#rpcost 10
 #end
 
 #selectmonster 1217 -- Ambibate Noble
@@ -95296,6 +95753,13 @@ Like all Aboleths, he can travel on land, but doing so will dry out their skin a
 
 #selectmonster 1808 -- Marverni Iron Boar
 #mr 7
+#end
+
+#selectmonster 1809 -- Marverni Great Boar of Carnutes
+#undisleader 1
+#beastmaster 2
+#inspirational -1
+#command 25
 #end
 
 #selectmonster 1810  -- Longdead Partholonian
@@ -98709,6 +99173,10 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #magicskill 4 1  -- 1S
 #magicskill 0 1  -- 1S
 #magicskill 9 1 -- H1
+#cleararmor
+#armor 268 -- Heavenly Plate
+#armor 582 -- Heavenly Veil
+#armor 267 -- Heavenly Shield
 #end
 
 #selectmonster 3890 -- Cave Kobold
@@ -107559,6 +108027,266 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #battleshape 12364
 #end
 
+#newmonster 12368 -- Menhir battle no innate
+#copystats 9338
+#copyspr 9338
+#worldshape 9338
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#newmonster 12369 -- Menhir battle innate
+#copystats 9338
+#copyspr 9338
+#worldshape 9338
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#selectmonster 9338 -- Menhir no innate speed
+#battleshape 12368
+#end
+
+#newmonster 12370 -- Blood Soaked Edifice battle no innate
+#copystats 9341
+#copyspr 9341
+#worldshape 9341
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#newmonster 12371 -- Blood Soaked Edifice battle innate
+#copystats 9341
+#copyspr 9341
+#worldshape 9341
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#selectmonster 9341 -- Blood Soaked Edifice no innate speed
+#battleshape 12370
+#end
+
+#newmonster 12372 -- Tree 1 battle no innate
+#copystats 9343
+#copyspr 9343
+#worldshape 9343
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#newmonster 12373 -- Tree 1 battle innate
+#copystats 9343
+#copyspr 9343
+#worldshape 9343
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#selectmonster 9343 -- Tree 1 no innate speed
+#battleshape 12372
+#end
+
+#newmonster 12374 -- Blood tree battle no innate
+#copystats 9345
+#copyspr 9345
+#worldshape 9345
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#newmonster 12375 -- Blood tree battle innate
+#copystats 9345
+#copyspr 9345
+#worldshape 9345
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#selectmonster 9345 -- Blood tree no innate speed
+#battleshape 12374
+#end
+
+#newmonster 12376 -- Cromlech +1 masterrit battle no innate
+#copystats 9342
+#copyspr 9342
+#worldshape 9342
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#newmonster 12377 -- Cromlech +1 masterrit battle innate
+#copystats 9342
+#copyspr 9342
+#worldshape 9342
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#selectmonster 9342 -- Cromlech +1 masterrit no innate speed
+#battleshape 12376
+#end
+
+#newmonster 12378 -- Cromlech +2 masterrit battle no innate
+#copystats 9361
+#copyspr 9361
+#worldshape 9361
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#newmonster 12379 -- Cromlech +2 masterrit battle innate
+#copystats 9361
+#copyspr 9361
+#worldshape 9361
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#selectmonster 9361 -- Cromlech +2 masterrit no innate speed
+#battleshape 12378
+#end
+
+#newmonster 12380 -- Henge summer battle no innate
+#copystats 9339
+#copyspr 9339
+#worldshape 9339
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#newmonster 12381 -- Henge summer battle innate
+#copystats 9339
+#copyspr 9339
+#worldshape 9339
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#selectmonster 9339 -- Henge summer no innate speed
+#battleshape 12380
+#end
+
+#newmonster 12382 -- Henge fall battle no innate
+#copystats 9363
+#copyspr 9363
+#worldshape 9363
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#newmonster 12383 -- Henge fall battle innate
+#copystats 9363
+#copyspr 9363
+#worldshape 9363
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#selectmonster 9363 -- Henge fall no innate speed
+#battleshape 12382
+#end
+
+#newmonster 12384 -- Henge winter battle no innate
+#copystats 9364
+#copyspr 9364
+#worldshape 9364
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#newmonster 12385 -- Henge winter battle innate
+#copystats 9364
+#copyspr 9364
+#worldshape 9364
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#selectmonster 9364 -- Henge winter no innate speed
+#battleshape 12384
+#end
+
+#newmonster 12386 -- Henge spring battle no innate
+#copystats 9365
+#copyspr 9365
+#worldshape 9365
+#bonusspells 0
+#shrinkhp 999
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#newmonster 12387 -- Henge spring battle innate
+#copystats 9365
+#copyspr 9365
+#worldshape 9365
+#homerealm 0
+#startdom 0
+#montag 0
+#clearmagic
+#end
+
+#selectmonster 9365 -- Henge spring no innate speed
+#battleshape 12386
+#end
+
 
 -- ENDUNITS
 
@@ -108813,8 +109541,8 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #end
 
 #newmonster 13112
-#copystats 385
-#copyspr 385
+#copystats 267
+#copyspr 267
 #shapechange 13111
 #worldshape 265
 #homerealm 0
@@ -108829,21 +109557,21 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #copystats 265
 #copyspr 265
 #shapechange 13114
-#worldshape 385
+#worldshape 267
 #homerealm 0
 #clearmagic
 #end
 
 #newmonster 13114
-#copystats 385
-#copyspr 385
+#copystats 267
+#copyspr 267
 #shapechange 13113
-#worldshape 385
+#worldshape 267
 #homerealm 0
 #clearmagic
 #end
 
-#selectmonster 385
+#selectmonster 267
 #battleshape 13114
 #end
 
@@ -119246,6 +119974,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #homecom 1336 -- devata 8
 #homecom 7337 -- primordial naga 9
 #homecom 1906 -- rudra 9
+#homecom 9394 -- Moksha Siddha poly
 --#homecom 7362 -- gandharva ench5
 #end
 
@@ -122522,21 +123251,21 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #path 6
 #look 4
-#homecom 9328 -- Altar
-#homecom 9338
-#homecom 9339
-#homecom 9341
+#homecom 9371 -- Altar
+#homecom 9338 -- menhir
 
 #homecom 9361 -- Cromlech
 #homecom 9362 -- Menec Stone
+#homecom 9339 -- henge
+#homecom 9341 -- edifice
 
-#homecom 9343
-#homecom 9344
-#homecom 9345
-#homecom 9346
+#homecom 9343 -- oak
+#homecom 9344 -- lord
+#homecom 9345 -- thirst
+#homecom 9346 -- maw
 
-#homecom 9358 -- Black Bull
 #homecom 9359 -- White Bull
+#homecom 9358 -- Black Bull
 #homecom 9360 -- Stag
 #end
 
@@ -124470,6 +125199,132 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 
 -- 2917 used by iram summons
 
+#newsite 2626
+#name "Carnac Sanctuary"
+#path 3
+#look 2
+#level 0
+#rarity 5
+#earthrange 2
+#astralrange 2
+#scry 1
+#end
+
+#newsite 2628
+#name "Stone Sanctuary"
+#path 3
+#look 2
+#level 0
+#rarity 5
+#summon 3741 -- Earth ele s6
+#summonlvl2 3741 -- Earth ele s6
+#end
+
+#newsite 2629
+#name "Sanguine Sanctuary"
+#path 8
+#look 1
+#level 0
+#rarity 5
+#nat 12 -- Marverni
+#natcom 122 -- Bloodhenge Druid
+#summon 3757 -- Illearth s6
+#summonlvl3 3757 -- Illearth s6
+#end
+
+#newsite 2630
+#name "Oak Sanctuary"
+#path 6
+#look 4
+#level 0
+#rarity 5
+#nat 12 -- Marverni
+#natcom 9389 -- Grove Tender
+#heal 10
+#supply 30
+#popgrowth 60
+#summonlvl2 9377 -- random Awakened Tree
+#end
+
+#newsite 2631
+#copysite 945 -- For Ivy bonus
+#name "Ivy Sanctuary"
+#path 6
+#look 4
+#level 0
+#rarity 5
+#gems 6 0 -- N to 0
+#supply 30
+#popgrowth 60
+#summon 361 -- Vine Man
+#summon 361 -- Vine Man
+#summon 361 -- Vine Man
+#summon 361 -- Vine Man
+#summon 361 -- Vine Man
+#summonlvl2 362 -- Vine Ogre
+#summonlvl2 362 -- Vine Ogre
+#summonlvl2 362 -- Vine Ogre
+#end
+
+#newsite 2632 -- white bull
+#name "Wild Sanctuary"
+#path 6
+#look 4
+#level 0
+#rarity 5
+#popgrowth 60
+#blesshp 1
+#supply 50
+#summon 9378 -- random animal
+#summon 9378 -- random animal
+#summon 9378 -- random animal
+#summon 9378 -- random animal
+#summon 9378 -- random animal
+#summon 9378 -- random animal
+#end
+
+#newsite 2634
+#name "Defiled Sanctuary"
+#path 8
+#look 2
+#level 0
+#rarity 5
+#summon 330 -- Dark Vines
+#summonlvl3 330 -- Dark Vines
+#end
+
+#newsite 2635 -- black bull
+#name "Wild Sanctuary "
+#path 6
+#look 4
+#level 0
+#rarity 5
+#popgrowth 60
+#blesshp 1
+#supply 50
+#summon 9379 -- random animal
+#summon 9379 -- random animal
+#summon 9379 -- random animal
+#summon 9379 -- random animal
+#summon 9379 -- random animal
+#summon 9379 -- random animal
+#summon 9379 -- random animal
+#summon 9379 -- random animal
+#end
+
+#newsite 2636 -- stag
+#name "Wild Sanctuary  "
+#path 6
+#look 4
+#level 0
+#rarity 5
+#popgrowth 60
+#blesshp 1
+#supply 50
+#summon 3940 -- sacred stag
+#summon 3940 -- sacred stag
+#summon 3940 -- sacred stag
+#end
 
 
 -- END OF NEW SITES
@@ -130500,6 +131355,17 @@ Priests: Average"
 #futuresite "EA Marverni Summons"
 #futuresite "EA Marverni Deities"
 #futuresite "EA Marverni Heroes"
+
+#futuresite "Carnac Sanctuary" -- earth+astral range
+--#futuresite "Menec Sanctuary" -- astral range, scry
+#futuresite "Stone Sanctuary" -- summon eeles, --str+1
+#futuresite "Oak Sanctuary" -- heal%, +growth, recruit animists
+#futuresite "Ivy Sanctuary" -- summon ivy men/ogres, +growth
+#futuresite "Wild Sanctuary" -- +growth, hp+1
+#futuresite "Sanguine Sanctuary" -- summon blood eeles, recruit bloodhenge druids
+--#futuresite "Defiled Sanctuary" -- summon Sanguine Horrors, recruit bloodhenge druids
+#futuresite "Defiled Sanctuary" -- summon Dark Vines
+
 #end
 
 #selectnation 9  -- Sauromatia
@@ -135817,7 +136683,7 @@ Swamp Effect: Defense negates or Earth Grip Str +DRN vs 23 to get free for non-f
 #school -1
 #researchlevel 0
 #effect 10082
-#damage 259 -- Ench59
+#damage 258 -- Ench58 -- Call Divine Spirit
 #fatiguecost 3500
 #nreff 1
 #end
@@ -141745,7 +142611,7 @@ Marverni: Collect 3d6 Blood Slaves per month. 1d6 Wicker Men spawn in friendly t
 
 #selectspell 2635
 #name "Spirit of Catharsis"
-#descr "The caster awakens a Child of Catharsis in a sanctified flame and empowers it with intelligence. Catharsis was once the King of the Cleansing Flame before he was corrupted and became Antrax. In memory of Catharsis his children are sacred to the Abysians. Powerful mages can create more of the creatures with each casting."
+#descr "The caster awakens a Child of Catharsis in a sanctified flame and empowers it with intelligence. Catharsis was once the King of the Cleansing Flame before he was corrupted and became Antrax. In memory of Catharsis his children are sacred to the Abysians."
 #school 0
 #researchlevel 3
 #path 0 0
@@ -144902,10 +145768,10 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 8
 #path 0 4
 #pathlevel 0 4
-#effect 10590  -- +91
+#effect 130 -- Polymorph caster
 #nreff 1
-#damage 511  -- Mummify
-#fatiguecost 5000
+#damage 9394 -- Moksha Siddha
+#fatiguecost 4000
 #restricted 68 -- MA Bandar
 #onlymnr 1144  -- Rishi
 #end
@@ -146405,7 +147271,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #descr "When the great upheaval flooded the lower caverns strange golden statues were unearthed. Legends known only by the oldest Camazotz tell of a race of Golden men created by the Gods in ancient times. These men were hard and cold to the touch and were eventually discarded by their masters. These statues can be brought back to a semblance of life through ritual magic and are sacred to the Zotz population. The Golden men created will be difficult to destroy but will revert to an inanimate state if there are no mages left on the battlefield."
 #researchlevel 4
 #fatiguecost 800
-#nreff 1002 -- 5+
+#nreff 505 -- 5+1/2
 #damage 7574 -- Gold Warrior
 #restricted 74 -- MA Xibalba
 #onlyatsite 178  -- The Flooded City
@@ -162052,7 +162918,7 @@ This spell can only be cast in the capital after the Fourth Law of the Dreaming 
 
 #selectspell 4246
 #name "Light Telesterion Flame"
-#descr "The Daduchos ventures into the ruins of a Telesterion and performs an ancient ritual. By imbibing various draughts and contemplating the great and terrible power of a roaring flame, the Daduchos gains insight into the secrets of Fire and anoints himself as Hierophant. This ritual is forbidden by the Triton rulers of Pelagia and anyone who calls himself a Hierophant is a heretic."
+#descr "The Daduchos ventures into the ruins of a Telesterion and performs an ancient ritual. By imbibing various draughts and contemplating the great and terrible power of a roaring flame, the Daduchos gains insight into the secrets of Fire and anoints himself as Hierophant. This ritual is forbidden by the Triton rulers of Pelagia and anyone who calls himself a Hierophant is considered a heretic."
 #details "Caster gains +1 Fire magic while on land and also gains Heretic 3."
 #school 4
 #researchlevel 4
@@ -163500,9 +164366,9 @@ Grants natural protection +10 (max up to 15), or +3 if already 12 or higher. Als
 #researchlevel 5
 #path 0 4
 #pathlevel 0 2
-#fatiguecost 500
+#fatiguecost 1300
 #damage 9314 -- Ishim
-#nreff 1
+#nreff 3
 #restricted 186 -- Zion
 #restricted 67 -- Ind
 #restricted 120 -- Piconye
@@ -163638,7 +164504,7 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #path 0 0
 #pathlevel 0 3
 #researchlevel 8
-#nreff 18
+#nreff 20
 --#nreff 2002 -- 8+2
 #damage 2018 -- 24++
 #precision 20
@@ -163649,7 +164515,7 @@ Incompatible with other Constellations, and Light of the Northern Star when cast
 #explspr 10091
 #strikesound 16
 #fatiguecost 30
-#casttime 125
+#casttime 100
 #end
 
 #selectspell 4346
@@ -164180,7 +165046,7 @@ This spell may only target friendly provinces."
 
 #selectspell 4389 -- AOE Cursed Luck
 #copyspell 1272 -- curse
-#name "Hex of Misfortune"
+#name "Hex"
 #descr "This spell curses a large group of enemy soldiers with misfortune for a short time. Any magical luck affecting them will be dispelled, and for the next 10 turns they will be more likely to be hit and to suffer high damage in combat. This bad luck may affect them for the rest of their natural lives and will be more likely to suffer permanent injuries."
 #details "Bad Luck: Luck is negated, 50% chance to reduce a unit's protection and defense by 1d6 exploding"
 #researchlevel 7
@@ -164315,7 +165181,8 @@ This spell may only target friendly provinces."
 #selectspell 4398
 #copyspell 1278 -- Returning
 #name "Homeward"
-#descr "The caster creates a rift in space in an attempt to shift the target's spatial reference, sweeping them back to their home province. If the soldier is unlucky he might get lost in time and might return later, not at all or completely insane."
+#descr "The caster creates a rift in space in an attempt to shift the target's spatial reference, sweeping them back to their home. If the soldier is unlucky he might get lost in time and might return later, not at all or completely insane."
+#details "MRN Hard: Forced Returning"
 #range 30
 #precision 100
 #nreff 1
@@ -164326,6 +165193,7 @@ This spell may only target friendly provinces."
 #pathlevel 0 2
 #path 1 7
 #pathlevel 1 1
+#school -1 -- Disabled
 #end
 
 #selectspell 4399
@@ -164427,9 +165295,9 @@ This spell may only target friendly provinces."
 #researchlevel 7
 #path 0 3
 #pathlevel 0 4
-#fatiguecost 30
+#fatiguecost 40
 #range 5010 --30+
-#aoe 4012 -- 20++++
+#aoe 4004 -- 20++++
 #spec 8540288 -- AN, MRN, UWOK, mindless immune.
 #end
 
@@ -164488,7 +165356,7 @@ This spell may only target friendly provinces."
 #name "Exsiccation"
 #descr "This spell will affect a large number of targets with severe dehydration. The dehydrated targets will become more and more exhausted and may eventually lose consciousness. The duration of the dehydration depends on the magic resistance of the targets. Undead beings and constructs are not affected by this spell."
 #researchlevel 7
-#pathlevel 0 3
+#pathlevel 0 4
 #range 40
 #spec 17592723439744  -- Hard MR Neg
 #aoe 5010 -- 30+5
@@ -164507,167 +165375,6 @@ This spell may only target friendly provinces."
 #fatiguecost 1200
 #end
 
-#selectspell 4412
-#copyspell 221 -- Smite
-#name "Exaltation of Fire"
-#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
-#school 5
-#range 40
-#path 1 0
-#pathlevel 0 2
-#path 0 9
-#pathlevel 1 1
-#researchlevel 8
-#fatiguecost 10
-#nreff 1001 -- 3+
-#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
-#nextspell 2339 -- Bonds of Apostasy
-#godpathspell 0
-#end
-
-#selectspell 4413
-#copyspell 221 -- Smite
-#name "Heavenly Exaltation"
-#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
-#school 5
-#range 40
-#path 1 1
-#pathlevel 0 2
-#path 0 9
-#pathlevel 1 1
-#researchlevel 8
-#fatiguecost 10
-#nreff 1001 -- 3+
-#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
-#nextspell 2340 -- Fetter the Faithless
-#godpathspell 1
-#end
-
-#selectspell 4414
-#copyspell 221 -- Smite
-#name "Exaltation of Water"
-#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
-#school 5
-#range 40
-#path 1 2
-#pathlevel 0 2
-#path 0 9
-#pathlevel 1 1
-#researchlevel 8
-#fatiguecost 10
-#nreff 1001 -- 3+
-#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
-#nextspell 2341 -- Mire the Heathens
-#godpathspell 2
-#end
-
-#selectspell 4415
-#copyspell 221 -- Smite
-#name "Exaltation of Stone"
-#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
-#school 5
-#range 40
-#path 1 3
-#pathlevel 0 2
-#path 0 9
-#pathlevel 1 1
-#researchlevel 8
-#fatiguecost 10
-#nreff 1001 -- 3+
-#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
-#nextspell 2342 -- Bury Unbelievers
-#godpathspell 3
-#end
-
-#selectspell 4416
-#copyspell 221 -- Smite
-#name "Exaltation of Power"
-#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
-#school 5
-#range 40
-#path 1 4
-#pathlevel 0 2
-#path 0 9
-#pathlevel 1 1
-#researchlevel 8
-#fatiguecost 10
-#nreff 1001 -- 3+
-#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
-#nextspell 2343 -- Punish Idolatry
-#godpathspell 4
-#end
-
-#selectspell 4417
-#copyspell 221 -- Smite
-#name "Exaltation of Death"
-#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
-#school 5
-#range 40
-#path 1 5
-#pathlevel 0 2
-#path 0 9
-#pathlevel 1 1
-#researchlevel 8
-#fatiguecost 10
-#nreff 1001 -- 3+
-#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
-#nextspell 2344 -- Memento Mori
-#godpathspell 5
-#end
-
-#selectspell 4418
-#copyspell 221 -- Smite
-#name "Exaltation of Thorns"
-#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
-#school 5
-#range 40
-#path 1 6
-#pathlevel 0 2
-#path 0 9
-#pathlevel 1 1
-#researchlevel 8
-#fatiguecost 10
-#nreff 1001 -- 3+
-#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
-#nextspell 2345 -- Entangle Heretics
-#godpathspell 6
-#end
-
-#selectspell 4419
-#copyspell 221 -- Smite
-#name "Exaltation of Bewilderment"
-#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
-#school 5
-#range 40
-#path 1 7
-#pathlevel 0 2
-#path 0 9
-#pathlevel 1 1
-#researchlevel 8
-#fatiguecost 10
-#nreff 1001 -- 3+
-#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
-#nextspell 4247 -- Dream of Heresy
-#godpathspell 7
-#end
-
-#selectspell 4420
-#copyspell 221 -- Smite
-#name "Sanguine Exaltation"
-#descr "Through mastery of Thaumaturgy, mage-priests of the Awakening God can learn to deliver their prayers as pure expressions of holy power, capable of directly assaulting those enemies sacred to other gods. The heathens are struck by divine bolts of energy and afflicted with powerful scourges related to the caster's own magical skills."
-#school 5
-#range 40
-#path 1 8
-#pathlevel 0 2
-#path 0 9
-#pathlevel 1 1
-#researchlevel 8
-#fatiguecost 10
-#nreff 1001 -- 3+
-#spec 17592194744448 -- MRNH, sacreds only, enemies only, AN, UWOK, ignores shields
-#nextspell 2346 -- Fear of God
-#godpathspell 8
-#end
 
 #selectspell 4421
 #copyspell 1145 -- Heal
@@ -164765,7 +165472,8 @@ This spell may only target friendly provinces."
 #selectspell 4428 -- indicator
 #copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
 #name "Earth Offering"
-#descr "."
+#descr "The caster sacrifices two bulls to a local deity, bidding they awaken and serve the God of Marverni. Local deities are the many ancient and powerful beings that have existed since before the coming of man and have been variously worshiped by the tribes of Marverni since time immemorial. By making great offerings over the course of months, the Druids believe they can be persuaded to give their aide once more."
+#details "Only one Offering may be given per month. After 3 casts, a local deity will awaken. Types of offerings made will determine what deity is awakened and their paths. Creates an Altar if not already present that will reveal the deity's paths. Only one Local Deity may be awakened per province. Earth deities are more likely to be a standing stone."
 #school -1
 #path 0 0
 #pathlevel 0 1
@@ -164776,12 +165484,12 @@ This spell may only target friendly provinces."
 #copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
 #name "Offering of Two Bulls"
 #descr "The caster sacrifices two bulls to a local deity, bidding they awaken and serve the God of Marverni. Local deities are the many ancient and powerful beings that have existed since before the coming of man and have been variously worshiped by the tribes of Marverni since time immemorial. By making great offerings over the course of months, the Druids believe they can be persuaded to give their aide once more."
-#details "Only one Offering may be cast per month in a province. Creates an Altar if not already present. After enough casts, a random local deity will awaken. Paths and chassis are determined by the offerings given before awakening. Each offering gives 2 paths on average. Only one Local Deity may be awakened per province. Earth deities are more likely to be a standing stone."
+#details "Only one Offering may be given per month. After 3 casts, a local deity will awaken. Types of offerings made will determine what deity is awakened and their paths. Creates an Altar if not already present that will reveal the deity's paths. Only one Local Deity may be awakened per province. Earth deities are more likely to be a standing stone."
 #school 5
 #researchlevel 0
 #path 0 3
 #pathlevel 0 1
-#fatiguecost 1000
+#fatiguecost 1500
 #effect 10083
 #damage -1
 #nreff 1
@@ -164795,23 +165503,24 @@ This spell may only target friendly provinces."
 #selectspell 4430 -- indicator
 #copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
 #name "Nature Offering"
-#descr "."
+#descr "The caster gives an offering of oak and mistletoe to a local deity, bidding they awaken and serve the God of Marverni. Local deities are the many ancient and powerful beings that have existed since before the coming of man and have been variously worshiped by the tribes of Marverni since time immemorial. By making great offerings over the course of months, the Druids believe they can be persuaded to give their aide once more."
+#details "Only one Offering may be given per month. After 3 casts, a local deity will awaken. Types of offerings made will determine what deity is awakened and their paths. Creates an Altar if not already present that will reveal the deity's paths. Only one Local Deity may be awakened per province. Nature deities are more likely to be a tree or animal."
 #school -1
 #path 0 0
 #pathlevel 0 1
-#damage 71
+#damage 72
 #end
 
 #selectspell 4431 -- Nature
 #copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
 #name "Offering of Mistletoe"
 #descr "The caster gives an offering of oak and mistletoe to a local deity, bidding they awaken and serve the God of Marverni. Local deities are the many ancient and powerful beings that have existed since before the coming of man and have been variously worshiped by the tribes of Marverni since time immemorial. By making great offerings over the course of months, the Druids believe they can be persuaded to give their aide once more."
-#details "Only one Offering may be cast per month in a province. Creates an Altar if not already present. After enough casts, a random local deity will awaken. Paths and chassis are determined by the offerings given before awakening. Each offering gives 2 paths on average. Only one Local Deity may be awakened per province. Nature deities are more likely to be a tree or animal."
+#details "Only one Offering may be given per month. After 3 casts, a local deity will awaken. Types of offerings made will determine what deity is awakened and their paths. Creates an Altar if not already present that will reveal the deity's paths. Only one Local Deity may be awakened per province. Nature deities are more likely to be a tree or animal."
 #school 5
 #researchlevel 0
 #path 0 6
 #pathlevel 0 1
-#fatiguecost 1000
+#fatiguecost 1500
 #effect 10083
 #damage -1
 #nreff 1
@@ -164824,24 +165533,25 @@ This spell may only target friendly provinces."
 
 #selectspell 4432 -- indicator
 #copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
-#name "Astral Offering"
-#descr "."
+#name "Pearl Offering"
+#descr "The caster gives an offering of hazelnut to a local deity, bidding they awaken and serve the God of Marverni. Local deities are the many ancient and powerful beings that have existed since before the coming of man and have been variously worshiped by the tribes of Marverni since time immemorial. By making great offerings over the course of months, the Druids believe they can be persuaded to give their aide once more."
+#details "Only one Offering may be given per month. After 3 casts, a local deity will awaken. Types of offerings made will determine what deity is awakened and their paths. Creates an Altar if not already present that will reveal the deity's paths. Only one Local Deity may be awakened per province. Astral deities are more likely to be a standing stone."
 #school -1
 #path 0 0
 #pathlevel 0 1
-#damage 72
+#damage 71
 #end
 
 #selectspell 4433 -- Astral
 #copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
 #name "Offering of Hazelnut"
 #descr "The caster gives an offering of hazelnut to a local deity, bidding they awaken and serve the God of Marverni. Local deities are the many ancient and powerful beings that have existed since before the coming of man and have been variously worshiped by the tribes of Marverni since time immemorial. By making great offerings over the course of months, the Druids believe they can be persuaded to give their aide once more."
-#details "Only one Offering may be cast per month in a province. Creates an Altar if not already present. After enough casts, a random local deity will awaken. Paths and chassis are determined by the offerings given before awakening. Each offering gives 2 paths on average. Only one Local Deity may be awakened per province. Astral deities are more likely to be a standing stone."
+#details "Only one Offering may be given per month. After 3 casts, a local deity will awaken. Types of offerings made will determine what deity is awakened and their paths. Creates an Altar if not already present that will reveal the deity's paths. Only one Local Deity may be awakened per province. Astral deities are more likely to be a standing stone."
 #school 5
 #researchlevel 0
 #path 0 4
 #pathlevel 0 1
-#fatiguecost 1000
+#fatiguecost 1500
 #effect 10083
 #damage -1
 #nreff 1
@@ -164855,7 +165565,8 @@ This spell may only target friendly provinces."
 #selectspell 4434 -- indicator
 #copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
 #name "Blood Sacrifice"
-#descr "."
+#descr "The caster sacrifices blood slaves to a local deity, bidding they awaken and serve the God of Marverni. Local deities are the many ancient and powerful beings that have existed since before the coming of man and have been variously worshiped by the tribes of Marverni since time immemorial. By making great offerings over the course of months, the Druids believe they can be persuaded to give their aide once more."
+#details "Only one Offering may be given per month. After 3 casts, a local deity will awaken. Types of offerings made will determine what deity is awakened and their paths. Creates an Altar if not already present that will reveal the deity's paths. Only one Local Deity may be awakened per province. Deities awakened with blood are likely to be corrupted."
 #school -1
 #path 0 0
 #pathlevel 0 1
@@ -164866,12 +165577,12 @@ This spell may only target friendly provinces."
 #copyspell 810 -- Wolven Winter anonymous event w/ once per turn limit
 #name "Blood Offering"
 #descr "The caster sacrifices blood slaves to a local deity, bidding they awaken and serve the God of Marverni. Local deities are the many ancient and powerful beings that have existed since before the coming of man and have been variously worshiped by the tribes of Marverni since time immemorial. By making great offerings over the course of months, the Druids believe they can be persuaded to give their aide once more."
-#details "Only one Offering may be cast per month in a province. Creates an Altar if not already present. After enough casts, a random local deity will awaken. Paths and chassis are determined by the offerings given before awakening. Each offering gives 2 paths on average. Only one Local Deity may be awakened per province. Deities awakened with blood may be corrupted."
+#details "Only one Offering may be given per month. After 3 casts, a local deity will awaken. Types of offerings made will determine what deity is awakened and their paths. Creates an Altar if not already present that will reveal the deity's paths. Only one Local Deity may be awakened per province. Deities awakened with blood are likely to be corrupted."
 #school 6
 #researchlevel 0
 #path 0 8
 #pathlevel 0 1
-#fatiguecost 1500
+#fatiguecost 2500
 #effect 10083
 #damage -1
 #nreff 1
@@ -164879,6 +165590,22 @@ This spell may only target friendly provinces."
 #spec 8388608 -- UWOK
 #nextspell 4434
 #restricted 12 -- Marverni
+#end
+
+#selectspell 4436
+#copyspell 935 -- Pack of Wolves
+#name "Children of the Neters"
+#descr "This ritual will summon a few neter children, animal headed beings spawned by the Neters in their image, to fight for the Awakening God. As emissaries of the Neters they are held sacred and will inspire troops to great deeds of bravery."
+#researchlevel 3
+#path 0 6
+#pathlevel 0 1
+#damage -1025
+#nreff 3
+#fatiguecost 600
+#restricted 27 -- EA C'tis
+#restricted 75 -- MA Ctis
+#restricted 113 -- LA Ctis
+#restricted 125 -- Erytheia
 #end
 
 
@@ -165460,6 +166187,10 @@ This spell may only target friendly provinces."
 #researchlevel 2
 #end
 
+#selectspell 282 -- Contact Boar of Carnutes
+#fatiguecost 1100
+#end
+
 #selectspell 287 -- Huli Jing
 #fatiguecost 2500
 #end
@@ -165467,7 +166198,8 @@ This spell may only target friendly provinces."
 #selectspell 286 -- Celestial Chastisement
 #descr "The mage invokes the laws of the Celestial Bureaucracy and chastises a magical being for serving a false god. The target is wounded, regardless of armor, and is compelled to switch sides. Powerful beings often disregard the compulsion."
 #pathlevel 0 2
-#range 25
+#range 5020 -- 30+5
+#aoe 1
 #spec 17592194449552 -- +MRNH
 #end
 
@@ -165667,7 +166399,7 @@ This spell may only target friendly provinces."
 #end
 
 #selectspell 352 -- Call Malakh
-#fatiguecost 700
+#fatiguecost 500
 #restricted 186 -- Zion
 #end
 
@@ -165923,6 +166655,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #restricted 190 -- LA Rotterland
 #restricted 201 -- LA Venedia
 #pathlevel 0 2
+#fatiguecost 2100
+#nreff 3
 #end
 
 #selectspell 478 -- Contact Harbinger
@@ -166256,6 +166990,11 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 601 -- Penumbrals
 #fatiguecost 500 -- 1 gem redux
+#end
+
+#selectspell 612 -- Enliven Sentinel
+#fatiguecost 400
+#nreff 2
 #end
 
 #selectspell 613 -- Granite Guard
@@ -166798,14 +167537,25 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #spec 8671232 -- MRN, Ignore shields, UWOK, enemy only
 #end
 
+
+#selectspell 787 --Immolation 
+#copyspell 804 --Combustion 
+#name "Immolation"
+#descr "With this spell, the caster is able to set a small battalion ablaze. While the spell ignores enemy armor, it is not always strong enough to kill the victim, and rain or snow will put the flames out quickly."
+#researchlevel 4 
+#aoe 1003
+#range 35
+#end 
+
 #selectspell 804 -- Combustion
 #range 35
 #notfornation 61
+#researchlevel 2
 #end
 
 #selectspell 805 -- Lacerating Winds
-#spec 1099514773504 -- Non-magical, defense negates, slashing - Unarmored spiritform beings don't need this in their life
-#damage 1007 -- 12+ -- Damage buffed to compensate
+#spec 1099514773504 -- Non-magical, defense negates, slashing
+#damage 1012 -- 14+ -- Damage buffed to compensate
 #aoe 2008 -- 12++ -- AOE buffed to compensate
 #ainocast 1
 #end
@@ -166958,6 +167708,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #selectspell 792 -- Numbness
 #aoe 1001 -- 3+
 #range 5030
+#researchlevel 2
 #end
 
 #selectspell 798 -- Barkskin
@@ -167065,7 +167816,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #end
 
 #selectspell 832  -- Winter's Chill
-#aoe 2004 -- 8+2
+#aoe 2008 -- 12+2
 #range 5025 -- 35+
 #pathlevel 0 2
 #end
@@ -167221,6 +167972,8 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 892 -- Conflagration
 #range 35
+#aoe 10013 --aoe 15
+#researchlevel 6
 #end
 
 #selectspell 895 -- Army of Mist
@@ -167242,8 +167995,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #precision 20
 #end
 
-
-#selectspell 911 -- Army of Gold
+#selectspell 915 -- Wish
+--#researchlevel 0
+--#fatiguecost 100
+--#pathlevel 0 3
 #end
 
 #selectspell 919 -- Summon Cave Grubs
@@ -167566,6 +168321,10 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 #precision 20
 #aoe 4008 -- 20+
 #fatiguecost 40
+#end
+
+#selectspell 1076 -- Ancient Presence
+#fatiguecost 3000
 #end
 
 #selectspell 1079 -- Legion of Wights
@@ -175616,6 +176375,43 @@ This headband does not require activation in combat."
 #notext
 #end
 
+-- capital growth pop
+
+#newevent 
+#rarity 5
+#req_pregame 1
+#req_capital 1
+#req_growth 1
+#req_death -1
+#incpop 200
+#msg "growth pop boost growth 1"
+#nolog
+--#notext
+#end
+
+#newevent 
+#rarity 5
+#req_pregame 1
+#req_capital 1
+#req_growth 2
+#req_death -2
+#incpop 400
+#msg "growth pop boost growth 2"
+#nolog
+--#notext
+#end
+
+#newevent 
+#rarity 5
+#req_pregame 1
+#req_capital 1
+#req_growth 3
+#incpop 600
+#msg "growth pop boost growth 3"
+#nolog
+--#notext
+#end
+
 
 
 
@@ -182724,7 +183520,7 @@ They were quickly transported to the treasury."
 #req_mnr 7710 -- Kur the Underworld Dragon
 #req_mnr 7296 -- Hamartabal the Soul Taker
 #req_mnr 7298 -- Kerberos the Guardian of Hades
-#req_code -300
+#req_code 0
 #req_notanycode -301
 #msg "The three Guardians of the Underworld have been summoned from their post and there is no-one to keep the spirits of the dead contained! Death walks the earth and unquiet spirits will disturb the living until a Guardian returns to the gates of the Underworld."
 #nolog
@@ -182794,7 +183590,7 @@ They were quickly transported to the treasury."
 #req_fornation 19 -- Ur
 #req_owncapital 1
 #req_season 3  -- Winter
-#req_code -300
+#req_code 0
 #header 1
 #msg "Preparations for the celebration of the yearly ritual of the sacred marriage are underway. Come spring the Entu and his Ensi are supposed to be joined in the sacred marriage that will provide fertility for the coming year."
 #taxboost -10
@@ -184926,7 +185722,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 
 #newevent
 #rarity 5
-#req_myench 259 -- Ench59  -- Mysteries
+#req_myench 258 -- Ench58 -- Call Divine Spirit
 #req_anycode -308
 #req_pop0ok
 #msg "The Astral Spirit has already been found and the ritual has failed."
@@ -184936,7 +185732,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 
 #newevent
 #rarity 5
-#req_myench 259 -- Ench59  -- Mysteries
+#req_myench 258 -- Ench58 -- Call Divine Spirit
 #req_unique 1
 #req_targitem 412 -- Ring of Returning
 #req_pop0ok
@@ -184948,11 +185744,11 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 
 #newevent
 #rarity 5
-#req_myench 259 -- Ench59  -- Mysteries
+#req_myench 258 -- Ench58 -- Call Divine Spirit
 #req_unique 1
-#req_code -300
+#req_code 0
 #req_pop0ok
-#msg "The Astral Spirit has appeared and your commander has learned undreamt-of Arcane secrets."
+#msg "Set code for astral spirit"
 #notext
 #nolog
 #code -308
@@ -185162,30 +185958,6 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #notext
 #nolog
 #com 931  -- Ivy King
-#end
-
-#newevent
-#rarity 5
-#req_land 1
-#req_code -310
-#req_pop0ok
-#req_nomonster 7534
-#msg "The queen has been destroyed and the nest of giant ants dispersed."
-#code -300
-#end
-
-
-#newevent
-#rarity 5
-#req_rare 10
-#req_code -312
-#req_code -311
-#req_death 1
-#req_pop0ok
-#msg "Reduce code in Death provinces"
-#nolog
-#notext
-#code -300
 #end
 
 #newevent
@@ -186370,7 +187142,7 @@ A great celestial light has been sighted over ##landname## bathing the land in i
 #req_hostileench 223 -- Ench23
 #rarity 5
 #req_land 1
-#req_code -300
+#req_code 0
 #req_noseason 3
 #req_rare 10
 #req_swamp 1
@@ -196882,9 +197654,20 @@ It is now fully repaired and a new crew has been assigned to it."
 
 
 
+#newevent -- 2x stones present in cromlech poly up
+#rarity 5
+#req_2monsters 9362 -- cromlech stone
+#req_targmnr 9342 -- cromlech +1
+#nolog
+#notext
+#nation -2
+#forcetransform 9361 -- cromlech +2
+#end
+
 #newevent -- 2x stones present in cromlech
 #rarity 5
 #req_2monsters 9362 -- cromlech stone
+#req_targmnr 9361 -- cromlech +2
 #nolog
 #notext
 #nation -2
@@ -196901,15 +197684,2383 @@ It is now fully repaired and a new crew has been assigned to it."
 #forcetransform 9342 -- cromlech +1
 #end
 
-#newevent -- poly up cromlech
+#newevent -- reset cromlech var
 #rarity 5
-#req_targmnr 9342 -- cromlech +1
+#req_targmnr 9361 -- cromlech +2
 #req_varone 6012
-#clearvar 6012
 #nolog
 #notext
-#forcetransform 9361 -- cromlech +2
+#clearvar 6012
 #end
+
+
+-- generic 9370, var 6013
+-- E, eff 70, Offering of Two Bulls, 9366, var 6014
+-- S, eff 71, Offering of Mistletoe, 9367, var 6015
+-- N, eff 72, Offering of Hazelnut, 9368, var 6016
+-- B, eff 73, Blood Offering, 9369, var 6017
+-- altar 1; 9371
+-- altar 2; 9372
+-- altar 3; 9373
+-- rock 9390
+-- blood rock 9391
+-- tree 9392
+-- blood tree 9393
+
+-- event creates stealthy dummy for path (x4)
+-- FOLDEVENTS
+#newevent
+#rarity 5
+#req_rare 0
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "create stealthy dummy E"
+#nolog
+#notext
+#id 70
+#stealthcom 9366 -- E
+#end
+
+#newevent
+#rarity 5
+#req_rare 0
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "create stealthy dummy S"
+#nolog
+#notext
+#id 71
+#stealthcom 9367 -- S
+#end
+
+#newevent
+#rarity 5
+#req_rare 0
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "create stealthy dummy N"
+#nolog
+#notext
+#id 72
+#stealthcom 9368 -- N
+#end
+
+#newevent
+#rarity 5
+#req_rare 0
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "create stealthy dummy B"
+#nolog
+#notext
+#id 73
+#stealthcom 9369 -- B
+#end
+-- ENDEVENTS
+
+-- check for local deity sites, inc var 6018 if found (x7)
+-- FOLDEVENTS
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9366 -- dummy E
+#req_targmnr 9367
+#req_targmnr 9368
+#req_targmnr 9369
+#nation 12 -- EA Marverni
+#msg "check for site [Carnac Sanctuary]"
+#req_site 1
+#nolog
+#notext
+#incvar 6018
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9366 -- dummy E
+#req_targmnr 9367
+#req_targmnr 9368
+#req_targmnr 9369
+#nation 12 -- EA Marverni
+#msg "check for site [Stone Sanctuary]"
+#req_site 1
+#nolog
+#notext
+#incvar 6018
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9366 -- dummy E
+#req_targmnr 9367
+#req_targmnr 9368
+#req_targmnr 9369
+#nation 12 -- EA Marverni
+#msg "check for site [Sanguine Sanctuary]"
+#req_site 1
+#nolog
+#notext
+#incvar 6018
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9366 -- dummy E
+#req_targmnr 9367
+#req_targmnr 9368
+#req_targmnr 9369
+#nation 12 -- EA Marverni
+#msg "check for site [Oak Sanctuary]"
+#req_site 1
+#nolog
+#notext
+#incvar 6018
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9366 -- dummy E
+#req_targmnr 9367
+#req_targmnr 9368
+#req_targmnr 9369
+#nation 12 -- EA Marverni
+#msg "check for site [Ivy Sanctuary]"
+#req_site 1
+#nolog
+#notext
+#incvar 6018
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9366 -- dummy E
+#req_targmnr 9367
+#req_targmnr 9368
+#req_targmnr 9369
+#nation 12 -- EA Marverni
+#msg "check for site [Wild Sanctuary]"
+#req_site 1
+#nolog
+#notext
+#incvar 6018
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9366 -- dummy E
+#req_targmnr 9367
+#req_targmnr 9368
+#req_targmnr 9369
+#nation 12 -- EA Marverni
+#msg "check for site [Defiled Sanctuary]"
+#req_site 1
+#nolog
+#notext
+#incvar 6018
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9366 -- dummy E
+#req_targmnr 9367
+#req_targmnr 9368
+#req_targmnr 9369
+#nation 12 -- EA Marverni
+#msg "check for site [Wild Sanctuary ]"
+#req_site 1
+#nolog
+#notext
+#incvar 6018
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9366 -- dummy E
+#req_targmnr 9367
+#req_targmnr 9368
+#req_targmnr 9369
+#nation 12 -- EA Marverni
+#msg "check for site [Wild Sanctuary  ]"
+#req_site 1
+#nolog
+#notext
+#incvar 6018
+#end
+-- ENDEVENTS
+
+-- set of events for (x4); if var 6018 is set, kill dummy and refund
+-- FOLDEVENTS
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9366 -- E
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has graciously accepted the offering and returned some of the gems to the treasury."
+#header 2
+#nolog
+#req_varpos 6018
+#force2d4vis 3 -- E
+#killtarg
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9367 -- S
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has graciously accepted the offering and returned some of the gems to the treasury."
+#header 2
+#nolog
+#req_varpos 6018
+#force2d4vis 4 -- S
+#killtarg
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9368 -- N
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has graciously accepted the offering and returned some of the gems to the treasury."
+#header 2
+#nolog
+#req_varpos 6018
+#force2d4vis 6 -- N
+#killtarg
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9369 -- B
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has graciously accepted the offering and returned some of the gems to the treasury."
+#header 2
+#nolog
+#req_varpos 6018
+#force2d6vis 8 -- B
+#killtarg
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "reset var"
+#nolog
+#notext
+#req_varpos 6018
+#clearvar 6018
+#end
+-- ENDEVENTS
+
+-- if stealthy dummy present, and generic var is 0; kill dummy and inc pathvar and toggle generic var
+-- FOLDEVENTS
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9366 -- E
+#nation 12 -- EA Marverni
+#msg "set pathvar and kill dummy"
+#nolog
+#notext
+#killtarg
+#req_varzero 6013 -- generic
+#togglevar 6013 -- generic
+#incvar 6014 -- E
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9367 -- S
+#nation 12 -- EA Marverni
+#msg "set pathvar and kill dummy"
+#nolog
+#notext
+#killtarg
+#req_varzero 6013 -- generic
+#togglevar 6013 -- generic
+#incvar 6015 -- S
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9368 -- N
+#nation 12 -- EA Marverni
+#msg "set pathvar and kill dummy"
+#nolog
+#notext
+#killtarg
+#req_varzero 6013 -- generic
+#togglevar 6013 -- generic
+#incvar 6016 -- N
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9369 -- B
+#nation 12 -- EA Marverni
+#msg "set pathvar and kill dummy"
+#nolog
+#notext
+#killtarg
+#req_varzero 6013 -- generic
+#togglevar 6013 -- generic
+#incvar 6017 -- B
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9366 -- E
+#nation 12 -- EA Marverni
+#msg "kill extra dummy"
+#nolog
+#notext
+#killtarg
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9367 -- S
+#nation 12 -- EA Marverni
+#msg "kill extra dummy"
+#nolog
+#notext
+#killtarg
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9368 -- N
+#nation 12 -- EA Marverni
+#msg "kill extra dummy"
+#nolog
+#notext
+#killtarg
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9369 -- B
+#nation 12 -- EA Marverni
+#msg "kill extra dummy"
+#nolog
+#notext
+#killtarg
+#end
+
+-- ENDEVENTS
+
+-- kill extra dummys if still present, reset generic var
+-- FOLDEVENTS
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9366 -- Any
+#nation 12 -- EA Marverni
+#msg "kill extra dummy"
+#nolog
+#notext
+#killtarg
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9366 -- Any
+#nation 12 -- EA Marverni
+#msg "kill extra dummy"
+#nolog
+#notext
+#killtarg
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9366 -- Any
+#nation 12 -- EA Marverni
+#msg "kill extra dummy"
+#nolog
+#notext
+#killtarg
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "reset generic var"
+#nolog
+#notext
+#req_varone 6018
+#clearvar 6018
+#end
+-- ENDEVENTS
+
+-- altar 2 to altar 3, togglevar 6021
+-- altar 1 to altar 2 (message here about growing in power), togglevar 6021
+-- if var 6021 is 0 and generic is 1, create altar (message here about altar creation)
+-- reset var 6021
+-- FOLDEVENTS
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9372 -- altar 2
+#nation 12 -- EA Marverni
+#msg "poly altar 2 to 3"
+#nolog
+#notext
+#req_varone 6013
+#togglevar 6021
+#forcetransform 9373 -- altar 3
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9371 -- altar 1
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has grown in power and is nearly awake." -- MESSAGE HERE
+#header 2
+#req_varone 6013
+#togglevar 6021
+#forcetransform 9372 -- altar 2
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "An Altar to a Local Deity has been created in ##landname##." -- MESSAGE HERE
+#header 2
+#req_varzero 6021
+#req_varone 6013
+#com 9371 -- altar 1
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "clear 6021"
+#nolog
+#notext
+#req_varone 6021
+#clearvar 6021
+#end
+-- ENDEVENTS
+
+-- add path to altar
+-- chance to add path to altar, reset pathvar
+-- reset pathvar if not 0
+-- FOLDEVENTS
+
+#newevent -- E
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost E 50%"
+#nolog
+#notext
+#req_varone 6014
+#req_rare 50
+#req_targnopath1 3
+#pathboost 3
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost E 25%"
+#nolog
+#notext
+#req_varone 6014
+#req_rare 25
+#req_targpath1 3
+#req_targnopath2 3
+#pathboost 3
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost E 10%"
+#nolog
+#notext
+#req_varone 6014
+#req_rare 10
+#req_targpath2 3
+#req_targnopath3 3
+#pathboost 3
+#clearvar 6014
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost E"
+#req_targnopath4 3
+#nolog
+#notext
+#req_varone 6014
+#clearvar 6014
+#pathboost 3
+#end
+
+#newevent -- S
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost S 50%"
+#nolog
+#notext
+#req_varone 6015
+#req_rare 50
+#req_targnopath1 4
+#pathboost 4
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost S 25%"
+#nolog
+#notext
+#req_varone 6015
+#req_rare 25
+#req_targpath1 4
+#req_targnopath2 4
+#pathboost 4
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost S 10%"
+#nolog
+#notext
+#req_varone 6015
+#req_rare 10
+#req_targpath2 4
+#req_targnopath3 4
+#pathboost 4
+#clearvar 6015
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost S"
+#req_targnopath4 4
+#nolog
+#notext
+#req_varone 6015
+#clearvar 6015
+#pathboost 4
+#end
+
+#newevent -- N
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost N 50%"
+#nolog
+#notext
+#req_varone 6016
+#req_rare 50
+#req_targnopath1 6
+#pathboost 6
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost N 25%"
+#nolog
+#notext
+#req_varone 6016
+#req_rare 25
+#req_targpath1 6
+#req_targnopath2 6
+#pathboost 6
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost N 10%"
+#nolog
+#notext
+#req_varone 6016
+#req_rare 10
+#req_targpath2 6
+#req_targnopath3 6
+#pathboost 6
+#clearvar 6016
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost N"
+#req_targnopath4 6
+#nolog
+#notext
+#req_varone 6016
+#clearvar 6016
+#pathboost 6
+#end
+
+#newevent -- B
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost B 50%"
+#nolog
+#notext
+#req_varone 6017
+#req_rare 50
+#req_targnopath1 8
+#pathboost 8
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost B 25%"
+#nolog
+#notext
+#req_varone 6017
+#req_rare 25
+#req_targpath1 8
+#req_targnopath2 8
+#pathboost 8
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost B 10%"
+#nolog
+#notext
+#req_varone 6017
+#req_rare 10
+#req_targpath2 8
+#req_targnopath3 8
+#pathboost 8
+#clearvar 6017
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "pathboost B"
+#req_targnopath4 8
+#nolog
+#notext
+#req_varone 6017
+#clearvar 6017
+#pathboost 8
+#end
+
+
+
+-- ENDEVENTS
+
+-- if generic var 6013 is 1, 50% chance to inc var 6019 for extra path boost, reset generic var
+-- reset generic var 6013 if not 0
+-- FOLDEVENTS
+#newevent
+#rarity 5
+#req_pop0ok
+#nation 12 -- EA Marverni
+#req_rare 50
+#msg "extra pathboost 50%"
+#nolog
+#notext
+#req_varone 6013
+#incvar 6019
+#clearvar 6013
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "no pathboost"
+#nolog
+#notext
+#req_varone 6013
+#clearvar 6013
+#end
+-- ENDEVENTS
+
+-- Extra path boost events
+-- FOLDEVENTS
+--E=1 > 30% +E
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12A Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 30
+#req_targpath1 3
+#req_targnopath2 3
+#pathboost 3
+#req_varone 6019
+#clearvar 6019
+#end
+
+--N=1 > 40% +N
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12A Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 40
+#req_targpath1 6
+#req_targnopath2 6
+#pathboost 6
+#req_varone 6019
+#clearvar 6019
+#end
+
+--S=1 > 35% +S
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12A Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 35
+#req_targpath1 4
+#req_targnopath2 4
+#pathboost 4
+#req_varone 6019
+#clearvar 6019
+#end
+
+--B=1 > 25% +B
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12A Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 25
+#req_targpath1 8
+#req_targnopath2 8
+#pathboost 8
+#req_varone 6019
+#clearvar 6019
+#end
+
+--W=1 > 25% +W
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 25
+#req_targpath1 2
+#req_targnopath2 2
+#pathboost 2
+#req_varone 6019
+#clearvar 6019
+#end
+
+--E=2 > 18% +E
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 18
+#req_targpath2 3
+#req_targnopath3 3
+#pathboost 3
+#req_varone 6019
+#clearvar 6019
+#end
+
+--N=2 > 22% +N
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 22
+#req_targpath2 6
+#req_targnopath3 6
+#pathboost 6
+#req_varone 6019
+#clearvar 6019
+#end
+
+--S=2 > 20% +S
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 20
+#req_targpath2 4
+#req_targnopath3 4
+#pathboost 4
+#req_varone 6019
+#clearvar 6019
+#end
+
+--B=2 > 10% +B
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 20
+#req_targpath2 8
+#req_targnopath3 8
+#pathboost 8
+#req_varone 6019
+#clearvar 6019
+#end
+
+--W=2 > 15% +W
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 15
+#req_targpath2 2
+#req_targnopath3 2
+#pathboost 2
+#req_varone 6019
+#clearvar 6019
+#end
+
+--E=0 > 30% +E
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 30
+#req_targnopath1 3
+#pathboost 3
+#req_varone 6019
+#clearvar 6019
+#end
+
+--N=0 > 40% +N
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 40
+#req_targnopath1 6
+#pathboost 6
+#req_varone 6019
+#clearvar 6019
+#end
+
+--S=0 > 35% +S
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 35
+#req_targnopath1 4
+#pathboost 4
+#req_varone 6019
+#clearvar 6019
+#end
+
+--B=0 > 1% +B
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 1
+#req_targnopath1 8
+#pathboost 8
+#req_varone 6019
+#clearvar 6019
+#end
+
+--W=0&N>1 > 30% +W
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 30
+#req_targnopath1 2
+#pathboost 2
+#req_varone 6019
+#clearvar 6019
+#end
+
+--E<3 > 20% +E
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 20
+#req_targnopath4 3
+#pathboost 3
+#req_varone 6019
+#clearvar 6019
+#end
+
+--N<3 > 25% +N
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 25
+#req_targnopath4 6
+#pathboost 6
+#req_varone 6019
+#clearvar 6019
+#end
+
+--S<3 > 25% +S
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 25
+#req_targnopath4 4
+#pathboost 4
+#req_varone 6019
+#clearvar 6019
+#end
+
+--W<3 > 20% +W
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9371 -- altar 1
+#req_targrealmnr 9372 -- altar 2
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "extra pathboost"
+#nolog
+#notext
+#req_rare 20
+#req_targnopath4 2
+#pathboost 2
+#req_varone 6019
+#clearvar 6019
+#end
+
+--If nothing happens, reset var 6019
+#newevent
+#rarity 5
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "extra pathboost failed"
+#nolog
+#notext
+#req_varone 6019
+#clearvar 6019
+#end
+
+-- ENDEVENTS
+
+-- if altar 3 is present, inc var 6020, run through chassis selection, all events reset 6020;
+-- FOLDEVENTS
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "begin selection"
+#nolog
+#notext
+#incvar 6020
+#end
+
+-- B1N2E<1 -> Blood tree
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "selection made"
+#req_rare 70
+#nolog
+#notext
+#req_targpath1 8
+#req_targpath2 6
+#req_targnopath1 3
+#req_varone 6020
+#clearvar 6020
+#com 9393
+#end
+
+-- B1E2 -> Blood rock
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "selection made"
+#req_rare 70
+#nolog
+#notext
+#req_targpath1 8
+#req_targpath2 3
+#req_varone 6020
+#clearvar 6020
+#com 9391
+#end
+
+-- E3 -> Rock
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "selection made"
+#req_rare 70
+#nolog
+#notext
+#req_targpath3 3
+#req_varone 6020
+#clearvar 6020
+#com 9390
+#end
+
+-- N3 -> Tree
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "selection made"
+#req_rare 70
+#nolog
+#notext
+#req_targpath3 6
+#req_varone 6020
+#clearvar 6020
+#com 9392
+#end
+
+-- B3 no N -> Blood rock
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "selection made"
+#req_rare 70
+#nolog
+#notext
+#req_targpath3 8
+#req_targnopath1 6
+#req_varone 6020
+#clearvar 6020
+#com 9391
+#end
+
+-- B3N1 -> Blood tree
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "selection made"
+#req_rare 70
+#nolog
+#notext
+#req_targpath3 8
+#req_targpath1 6
+#req_varone 6020
+#clearvar 6020
+#com 9393
+#end
+
+-- S3 -> Rock
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "selection made"
+#req_rare 70
+#nolog
+#notext
+#req_targpath3 4
+#req_varone 6020
+#clearvar 6020
+#com 9390
+#end
+
+-- E2S1 -> Rock
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "selection made"
+#req_rare 70
+#nolog
+#notext
+#req_targpath2 3
+#req_targpath1 4
+#req_varone 6020
+#clearvar 6020
+#com 9390
+#end
+
+-- N2 -> Tree
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "selection made"
+#nolog
+#notext
+#req_targpath2 6
+#req_varone 6020
+#clearvar 6020
+#com 9392
+#end
+
+-- B2 no N -> Blood rock
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "selection made"
+#nolog
+#notext
+#req_targpath2 8
+#req_targnopath1 6
+#req_varone 6020
+#clearvar 6020
+#com 9391
+#end
+
+-- B2N1 -> Blood tree
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "selection made"
+#nolog
+#notext
+#req_targpath2 8
+#req_targpath1 6
+#req_varone 6020
+#clearvar 6020
+#com 9393
+#end
+
+-- Else -> Rock
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "selection fallback"
+#nolog
+#notext
+#req_varone 6020
+#clearvar 6020
+#com 9390
+#end
+	
+-- ENDEVENTS
+
+-- transfer path from altar to dummy events;
+-- set of events to set pathvars (x5), use var 6013 for water;
+-- if targ altar3 has 1 in path, inc pathvar
+-- if targ altar3 has 2 in path, inc pathvar
+-- if targ altar3 has 3 in path, inc pathvar
+-- if targ altar3 has 4 in path, inc pathvar
+-- if targ altar3 has 5 in path, inc pathvar
+-- FOLDEVENTS
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more W"
+#nolog
+#notext
+#req_targpath1 2
+#incvar 6013
+#end
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more W"
+#nolog
+#notext
+#req_targpath2 2
+#incvar 6013
+#end
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more W"
+#nolog
+#notext
+#req_targpath3 2
+#incvar 6013
+#end
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more W"
+#nolog
+#notext
+#req_targpath4 2
+#incvar 6013
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more E"
+#nolog
+#notext
+#req_targpath1 3
+#incvar 6014
+#end
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more E"
+#nolog
+#notext
+#req_targpath2 3
+#incvar 6014
+#end
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more E"
+#nolog
+#notext
+#req_targpath3 3
+#incvar 6014
+#end
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more E"
+#nolog
+#notext
+#req_targpath4 3
+#incvar 6014
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more S"
+#nolog
+#notext
+#req_targpath1 4
+#incvar 6015
+#end
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more S"
+#nolog
+#notext
+#req_targpath2 4
+#incvar 6015
+#end
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more S"
+#nolog
+#notext
+#req_targpath3 4
+#incvar 6015
+#end
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more S"
+#nolog
+#notext
+#req_targpath4 4
+#incvar 6015
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more N"
+#nolog
+#notext
+#req_targpath1 6
+#incvar 6016
+#end
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more N"
+#nolog
+#notext
+#req_targpath2 6
+#incvar 6016
+#end
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more N"
+#nolog
+#notext
+#req_targpath3 6
+#incvar 6016
+#end
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more N"
+#nolog
+#notext
+#req_targpath4 6
+#incvar 6016
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more B"
+#nolog
+#notext
+#req_targpath1 8
+#incvar 6017
+#end
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more B"
+#nolog
+#notext
+#req_targpath2 8
+#incvar 6017
+#end
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more B"
+#nolog
+#notext
+#req_targpath3 8
+#incvar 6017
+#end
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- altar 3
+#nation 12 -- EA Marverni
+#msg "more B"
+#nolog
+#notext
+#req_targpath4 8
+#incvar 6017
+#end
+-- ENDEVENTS
+
+-- if varpos pathvar, inc path on targ dummy, decvar pathvar (x5)
+-- FOLDEVENTS
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc W"
+#nolog
+#notext
+#req_varpos 6013
+#decvar 6013
+#pathboost 2
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc E"
+#nolog
+#notext
+#req_varpos 6014
+#decvar 6014
+#pathboost 3
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc S"
+#nolog
+#notext
+#req_varpos 6015
+#decvar 6015
+#pathboost 4
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc N"
+#nolog
+#notext
+#req_varpos 6016
+#decvar 6016
+#pathboost 6
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc B"
+#nolog
+#notext
+#req_varpos 6017
+#decvar 6017
+#pathboost 8
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc W"
+#nolog
+#notext
+#req_varpos 6013
+#decvar 6013
+#pathboost 2
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc E"
+#nolog
+#notext
+#req_varpos 6014
+#decvar 6014
+#pathboost 3
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc S"
+#nolog
+#notext
+#req_varpos 6015
+#decvar 6015
+#pathboost 4
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc N"
+#nolog
+#notext
+#req_varpos 6016
+#decvar 6016
+#pathboost 6
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc B"
+#nolog
+#notext
+#req_varpos 6017
+#decvar 6017
+#pathboost 8
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc W"
+#nolog
+#notext
+#req_varpos 6013
+#decvar 6013
+#pathboost 2
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc E"
+#nolog
+#notext
+#req_varpos 6014
+#decvar 6014
+#pathboost 3
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc S"
+#nolog
+#notext
+#req_varpos 6015
+#decvar 6015
+#pathboost 4
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc N"
+#nolog
+#notext
+#req_varpos 6016
+#decvar 6016
+#pathboost 6
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc B"
+#nolog
+#notext
+#req_varpos 6017
+#decvar 6017
+#pathboost 8
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc W"
+#nolog
+#notext
+#req_varpos 6013
+#decvar 6013
+#pathboost 2
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc E"
+#nolog
+#notext
+#req_varpos 6014
+#decvar 6014
+#pathboost 3
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc S"
+#nolog
+#notext
+#req_varpos 6015
+#decvar 6015
+#pathboost 4
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc N"
+#nolog
+#notext
+#req_varpos 6016
+#decvar 6016
+#pathboost 6
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9390
+#req_targmnr 9391
+#req_targmnr 9392
+#req_targmnr 9393
+#nation 12 -- EA Marverni
+#msg "inc B"
+#nolog
+#notext
+#req_varpos 6017
+#decvar 6017
+#pathboost 8
+#end
+
+-- reset pathvar if not 0 (should never happen)
+#newevent
+#rarity 5
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "reset W"
+#nolog
+#notext
+#req_varpos 6013
+#decvar 6013
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "reset E"
+#nolog
+#notext
+#req_varpos 6014
+#decvar 6014
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "reset S"
+#nolog
+#notext
+#req_varpos 6015
+#decvar 6015
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "reset N"
+#nolog
+#notext
+#req_varpos 6016
+#decvar 6016
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "reset B"
+#nolog
+#notext
+#req_varpos 6017
+#decvar 6017
+#end
+
+-- ENDEVENTS
+
+-- poly dummy if present, incvar 6021
+-- FOLDEVENTS
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9390 -- rock
+#nation 12 -- EA Marverni
+#msg "rock god"
+#nolog
+#notext
+#req_varzero 6021
+#incvar 6021
+#forcetransform -1110 -- rock montag
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9391 -- blood rock
+#nation 12 -- EA Marverni
+#msg "blood rock god"
+#nolog
+#notext
+#req_varzero 6021
+#incvar 6021
+#forcetransform -1111 -- rock montag
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9392 -- tree
+#nation 12 -- EA Marverni
+#msg "tree god"
+#nolog
+#notext
+#req_varzero 6021
+#incvar 6021
+#forcetransform -1112 -- rock montag
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9393 -- blood tree
+#nation 12 -- EA Marverni
+#msg "blood tree god"
+#nolog
+#notext
+#req_varzero 6021
+#incvar 6021
+#forcetransform -1113 -- rock montag
+#end
+
+-- ENDEVENTS
+
+-- create site for chosen god (message here about deity awakening), reset var 6021 (x11)
+-- FOLDEVENTS
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9338 -- Menhir
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has awakened and agreed to serve.
+
+The Menhir is an ancient spirit inhabiting a massive standing stone. The spirit may protect the local population in exchange for offerings, and is often regarded as a guardian spirit, though it is unable to leave the Menhir. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Menhir is a holy site, and may attract worship away from the true God." -- MESSAGE HERE
+#header 2
+#nolog
+#req_varone 6021
+#clearvar 6021
+#addsite 2626 -- carnac
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9338 -- Menhir
+#nation 12 -- EA Marverni
+#msg "menhir guaranteed E"
+#nolog
+#notext
+#req_targnopath1 3 -- E
+#pathboost 3 -- E
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9338 -- Menhir
+#nation 12 -- EA Marverni
+#msg "menhir guaranteed S"
+#nolog
+#notext
+#req_targnopath1 4 -- S
+#pathboost 4 -- S
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9341 -- Sanguine Edifice
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has awakened and agreed to serve.
+
+The Sanguine Edifice is an ancient spirit inhabiting a massive standing stone. Once a pure spirit of the Earth, it has been tainted by blood sacrifice. As the ground was soaked with sacrificial blood the spirit gained a craving for the blood of the innocent. The ground itself will sometimes rise up in a corrupted form to serve the spirit. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The local populace may take to worshipping the edifice to the exclusion of the true God." -- MESSAGE HERE
+#header 2
+#nolog
+#req_varone 6021
+#clearvar 6021
+#addsite 2629 -- sanguine
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9341 -- Sanguine Edifice
+#nation 12 -- EA Marverni
+#msg "Edifice guaranteed E"
+#nolog
+#notext
+#req_targnopath1 3 -- E
+#pathboost 3 -- E
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9343 -- Ancient Oak
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has awakened and agreed to serve.
+
+The Ancient Oak is the spirit of a very old great oak, overgrown with mistletoe, possessing intelligence and magical power. Offerings are made to the tree, and in return the tree provides fertility, growth, and healing to the land. As a tree it cannot move, but it is difficult to kill in combat. The Ancient Oak is a holy site, and may attract worship away from the true God." -- MESSAGE HERE
+#header 2
+#nolog
+#req_varone 6021
+#clearvar 6021
+#addsite 2630 -- oak
+#pathboost 6 -- N
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9345 -- Thirsting Tree
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has awakened and agreed to serve.
+
+The Thirsting Tree is the spirit of a very old great oak possessing intelligence and magical power. Once a pure being of Nature, it has been tainted by blood sacrifice. As its roots were soaked with sacrificial blood the spirit gained a craving for the blood of the innocent. Each month the tree demands blood from the local populace, who may come to worship the tree as a God in its own right. As a tree it cannot move, but it is difficult to kill in combat." -- MESSAGE HERE
+#header 2
+#nolog
+#req_varone 6021
+#clearvar 6021
+#addsite 2629 -- sanguine
+#pathboost 6 -- N
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9361 -- Menec Cromlech +2
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has awakened and agreed to serve.
+
+The Menec Cromlech is an ancient spirit inhabiting an alignment of standing stones. The Menec Cromlech may guide the local population in exchange for offerings, monitoring the seasons, the moon and the stars for auspicious events. The Cromlech ordains the best days for the planting of crops and the casting of rituals for their greatest effect. When all stones are arranged together its power is greatest, however when removed from the sacred geometry it will lose some of its power. As long as two Menec Stones are present, the Menec Cromlech will be able to cast rituals an extra level higher. The Menec Cromlech is a holy site, and may attract worship away from the true God." -- MESSAGE HERE
+#header 2
+#nolog
+#req_varone 6021
+#clearvar 6021
+#addsite 2626 -- carnac
+#2com 9362 -- menec stones
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9361 -- Menec Cromlech +2
+#nation 12 -- EA Marverni
+#msg "cromlech guaranteed S"
+#nolog
+#notext
+#req_targnopath1 4 -- S
+#pathboost 4 -- S
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9339 -- henge summer
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has awakened and agreed to serve.
+
+The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God." -- MESSAGE HERE
+#header 2
+#nolog
+#req_varone 6021
+#clearvar 6021
+#addsite 2628 -- stone
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9339 -- henge summer
+#nation 12 -- EA Marverni
+#msg "henge guaranteed E"
+#nolog
+#notext
+#req_targnopath1 3 -- E
+#pathboost 3 -- E
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9363 -- henge fall
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has awakened and agreed to serve.
+
+The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God." -- MESSAGE 
+#header 2
+#nolog
+#req_varone 6021
+#clearvar 6021
+#addsite 2628 -- stone
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9363 -- henge fall
+#nation 12 -- EA Marverni
+#msg "henge guaranteed E"
+#nolog
+#notext
+#req_targnopath1 3 -- E
+#pathboost 3 -- E
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9364 -- henge winter
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has awakened and agreed to serve.
+
+The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God." -- MESSAGE 
+#header 2
+#nolog
+#req_varone 6021
+#clearvar 6021
+#addsite 2628 -- stone
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9364 -- henge winter
+#nation 12 -- EA Marverni
+#msg "henge guaranteed E"
+#nolog
+#notext
+#req_targnopath1 3 -- E
+#pathboost 3 -- E
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9365 -- henge spring
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has awakened and agreed to serve.
+
+The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God." -- MESSAGE 
+#header 2
+#nolog
+#req_varone 6021
+#clearvar 6021
+#addsite 2628 -- stone
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9365 -- henge spring
+#nation 12 -- EA Marverni
+#msg "henge guaranteed E"
+#nolog
+#notext
+#req_targnopath1 3 -- E
+#pathboost 3 -- E
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9344 -- forest lord
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has awakened and agreed to serve.
+
+The Forest Lord is an ancient spirit of nature appearing as a large figure made of oak and ivy. The Forest Lord once ruled an Ivy Kingdom, and now tends to the forest as they sleep. The Forest Lord can reawaken vine men from their slumber and more will come to his aid when summoned." -- MESSAGE HERE
+#header 2
+#nolog
+#req_varone 6021
+#clearvar 6021
+#addsite 2631 -- ivy
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9359 -- white bull
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has awakened and agreed to serve.
+
+The White Bull is the progeny of one of the Great Bulls, divine entities worshiped as manifestations of Nature, wildness, and fury. The White Bull brings fertility to the land and he is accompanied by a multitude of beasts attracted by his aura." -- MESSAGE HERE
+#header 2
+#nolog
+#req_varone 6021
+#clearvar 6021
+#addsite 2632 -- white untamed
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9358 -- black bull
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has awakened and agreed to serve.
+
+The Black Bull is the progeny of one of the Great Bulls, divine entities worshiped as manifestations of Nature, wildness, and the glory of the slayer and the slain. They are a creature of unbridled fury, and unlike a White Bull, the fertility aspect is secondary to that of their maddened rage." -- MESSAGE HERE
+#header 2
+#nolog
+#req_varone 6021
+#clearvar 6021
+#addsite 2635 -- black untamed
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9360 -- stag
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has awakened and agreed to serve.
+
+The Great Stag is a being that has wandered the forests since the time before men, worshiped by the first men as a god of the hunt. Deer follow the Great Stag and a great number will flock to his herd." -- MESSAGE HERE
+#header 2
+#nolog
+#req_varone 6021
+#clearvar 6021
+#addsite 2636 -- stag untamed
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targmnr 9346 -- maw
+#nation 12 -- EA Marverni
+#msg "The Local Deity in ##landname## has awakened and agreed to serve.
+
+The Grasping Maw is a mass of vines with a great maw in the middle of it. Once a pure being of Nature, it has been tainted by blood sacrifice. As its vines were soaked with sacrificial blood the spirit gained a craving for the blood of the innocent, and has now uprooted itself so it may scour the land for its feast." -- MESSAGE HERE
+#header 2
+#nolog
+#req_varone 6021
+#clearvar 6021
+#addsite 2634 -- defiled
+#end
+
+-- reset 6021 if not 0
+#newevent
+#rarity 5
+#req_pop0ok
+#nation 12 -- EA Marverni
+#msg "no deity chosen?"
+#nolog
+#notext
+#req_varone 6021
+#clearvar 6021
+#end
+
+
+-- ENDEVENTS
+
+-- altar 3 killed, events concluded
+-- FOLDEVENTS
+#newevent
+#rarity 5
+#req_pop0ok
+#req_targrealmnr 9373 -- Altar 3
+#nation 12 -- EA Marverni
+#msg "kill altar 3"
+#nolog
+#notext
+#killtarg
+#end
+-- ENDEVENTS
+
 
 
 
@@ -196959,6 +200110,14 @@ It is now fully repaired and a new crew has been assigned to it."
 
 #selectevent 943
 #clear
+#end
+
+#selectevent 3268 -- Blood hunt peasant assassination 1
+#req_minunrest 25
+#end
+
+#selectevent 3269 -- Blood hunt peasant assassination 2
+#req_minunrest 25
 #end
 
 

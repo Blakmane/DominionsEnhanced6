@@ -1,0 +1,5 @@
+increment version in latest
+copy latest and rename
+zip all but spritexcfs and git stuff
+copy to steam release folder
+publish on steam and github
