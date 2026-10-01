@@ -36451,7 +36451,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #popkill 3
 #incunrest 50
 #weapon 29  -- Claw
-#gcost 0
+#gcost 90
 #end
 
 #newmonster 7801
@@ -36478,7 +36478,7 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #magicskill 0 3
 #magicskill 5 1
 #magicskill 6 1
-#gcost 0
+#gcost 90
 #end
 
 
@@ -61711,10 +61711,10 @@ Companions are recruited in pairs and two must be recruited at once."
 #spr1 "magicenhanced/menhir.png"
 #spr2 "magicenhanced/menhir2.png"
 #heretic 1
-#hp 160
+#hp 120
 #size 10
 #str 15
-#prot 25
+#prot 20
 #masterrit 2
 #holy
 #clearmagic
@@ -61748,13 +61748,13 @@ Companions are recruited in pairs and two must be recruited at once."
 #spr2 "extrapretenders/bloodmonolith2.tga"
 #name "Sanguine Edifice"
 #descr "The Sanguine Edifice is an ancient spirit inhabiting a massive standing stone. Once a pure spirit of the Earth, it has been tainted by blood sacrifice. As the ground was soaked with sacrificial blood the spirit gained a craving for the blood of the innocent. The ground itself will sometimes rise up in a corrupted form to serve the spirit. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The local populace may take to worshipping the edifice to the exclusion of the true God."
-#summon1 3757 -- s6 illearth
-#heretic 1
+--#summon1 3757 -- s6 illearth
+#heretic 3
 #drawsize -10
-#hp 180
+#hp 100
 #size 10
 #str 22
-#prot 25
+#prot 20
 #masterrit 1
 #clearmagic
 #magicskill 8 1
@@ -61772,10 +61772,10 @@ Companions are recruited in pairs and two must be recruited at once."
 #name "Ancient Oak"
 #descr "The Ancient Oak is the spirit of a very old great oak, overgrown with mistletoe, possessing intelligence and magical power. Offerings are made to the tree, and in return the tree provides fertility, growth, and healing to the land. As a tree it cannot move, but it is difficult to kill in combat. The Ancient Oak is a holy site, and may attract worship away from the true God."
 #heretic 1
-#hp 180
+#hp 130
 #size 10
 #str 14
-#prot 15
+#prot 12
 #mr 12
 #mor 30
 #enc 0
@@ -61818,7 +61818,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #def 9
 #att 13
 #str 22
-#prot 12
+#prot 11
 #ivylord 4
 #holy
 #clearmagic
@@ -61840,10 +61840,10 @@ Companions are recruited in pairs and two must be recruited at once."
 #name "Thirsting Tree"
 #descr "The Thirsting Tree is the spirit of a very old great oak possessing intelligence and magical power. Once a pure being of Nature, it has been tainted by blood sacrifice. As its roots were soaked with sacrificial blood the spirit gained a craving for the blood of the innocent. Each month the tree demands blood from the local populace, who may come to worship the tree as a God in its own right. As a tree it cannot move, but it is difficult to kill in combat."
 #heretic 1
-#hp 180
+#hp 100
 #size 10
 #str 14
-#prot 18
+#prot 10
 #mr 12
 #mor 18
 #enc 0
@@ -61889,8 +61889,9 @@ Companions are recruited in pairs and two must be recruited at once."
 #prot 10
 #ivylord 4
 #mor 30
-#popkill 3
-#entangle
+#popkill 5
+#incunrest 30
+--#entangle
 #clearmagic
 #magicskill 8 1
 #clearweapons
@@ -61911,7 +61912,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #name "Black Bull"
 #descr "The Black Bull is the progeny of one of the Great Bulls, divine entities worshiped as manifestations of Nature, wildness, and the glory of the slayer and the slain. They are a creature of unbridled fury, and unlike a White Bull, the fertility aspect is secondary to that of their maddened rage."
 #drawsize -10
-#hp 140
+#hp 120
 #prot 11
 #berserk 6
 #str 28
@@ -61944,7 +61945,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #name "White Bull"
 #descr "The White Bull is the progeny of one of the Great Bulls, divine entities worshiped as manifestations of Nature, wildness, and fury. The White Bull brings fertility to the land and he is accompanied by a multitude of beasts attracted by his aura."
 #drawsize -10
-#hp 138
+#hp 118
 #prot 11
 #berserk 4
 #str 28
@@ -61977,7 +61978,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #descr "The Great Stag is a being that has wandered the forests since the time before men, worshiped by the first men as a god of the hunt. Deer follow the Great Stag and a great number will flock to his herd."
 #heretic 1
 #drawsize -10
-#hp 88
+#hp 82
 #prot 12
 #berserk 6
 #str 28
@@ -62009,11 +62010,11 @@ Companions are recruited in pairs and two must be recruited at once."
 #name "Menec Cromlech"
 #descr "The Menec Cromlech is an ancient spirit inhabiting an alignment of standing stones. The Menec Cromlech may guide the local population in exchange for offerings, monitoring the seasons, the moon and the stars for auspicious events. The Cromlech ordains the best days for the planting of crops and the casting of rituals for their greatest effect. When all stones are arranged together its power is greatest, however when removed from the sacred geometry it will lose some of its power. As long as two Menec Stones are present, the Menec Cromlech will be able to cast rituals an extra level higher. The Menec Cromlech is a holy site, and may attract worship away from the true God."
 #heretic 1
-#drawsize -10
-#hp 100
+#drawsize -15
+#hp 90
 #size 8
 #str 15
-#prot 20
+#prot 18
 #masterrit 1
 #holy
 #clearmagic
@@ -62030,7 +62031,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #name "Menec Cromlech"
 #descr "The Menec Cromlech is an ancient spirit inhabiting an alignment of standing stones. The Menec Cromlech may guide the local population in exchange for offerings, monitoring the seasons, the moon and the stars for auspicious events. The Cromlech ordains the best days for the planting of crops and the casting of rituals for their greatest effect. When all stones are arranged together its power is greatest, however when removed from the sacred geometry it will lose some of its power. As long as two Menec Stones are present, the Menec Cromlech will be able to cast rituals an extra level higher. The Menec Cromlech is a holy site, and may attract worship away from the true God."
 #heretic 1
-#drawsize -10
+#drawsize -15
 #masterrit 2
 #holy
 #clearmagic
@@ -62074,11 +62075,11 @@ Companions are recruited in pairs and two must be recruited at once."
 #name "Henge"
 #descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God."
 --#summon1 3741 -- s6 earth ele
-#heretic 1
-#hp 150
+#heretic 3
+#hp 100
 #size 10
 #str 22
-#prot 22
+#prot 19
 #masterrit 2
 #holy
 #clearmagic
@@ -62097,12 +62098,12 @@ Companions are recruited in pairs and two must be recruited at once."
 #spr2 "extrapretenders/hengespirit.tga"
 #name "Henge"
 #descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God."
-#summon1 3741 -- s6 earth ele
-#heretic 1
-#hp 150
+--#summon1 3741 -- s6 earth ele
+#heretic 2
+#hp 100
 #size 10
 #str 22
-#prot 22
+#prot 19
 #masterrit 1
 #holy
 #clearmagic
@@ -62121,12 +62122,12 @@ Companions are recruited in pairs and two must be recruited at once."
 #spr2 "extrapretenders/hengespirit.tga"
 #name "Henge"
 #descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God."
-#summon1 3741 -- s6 earth ele
-#heretic 1
-#hp 150
+--#summon1 3741 -- s6 earth ele
+#heretic 3
+#hp 100
 #size 10
 #str 22
-#prot 22
+#prot 19
 #masterrit 2
 #holy
 #clearmagic
@@ -62147,12 +62148,12 @@ Companions are recruited in pairs and two must be recruited at once."
 #spr2 "extrapretenders/hengespirit.tga"
 #name "Henge"
 #descr "The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God."
-#summon1 3741 -- s6 earth ele
-#heretic 1
-#hp 150
+--#summon1 3741 -- s6 earth ele
+#heretic 2
+#hp 100
 #size 10
 #str 22
-#prot 22
+#prot 19
 #masterrit 1
 #holy
 #clearmagic
@@ -62309,14 +62310,14 @@ Companions are recruited in pairs and two must be recruited at once."
 #copystats 7481 -- Awakened Tree
 #copyspr 7481
 #firstshape -1028
-#name "random Awakened Aree"
+#name "random Awakened Tree"
 #nowish
 #end
 
 #newmonster 9378 -- random marverni white bull animal
 #copystats 1807 -- Great boar
 #copyspr 1807 -- Great boar
-#name "random animal"
+#name "random animals"
 #descr "."
 #nowish
 #firstshape -1080
@@ -62503,6 +62504,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #name "Moksha Sidda"
 #descr "The Moksha Siddha is a White One that has achieved physical and mental perfection and is freed from the cycle of Transmigration. They can manifest a Divine Body to act upon the earth at will, and if their body is destroyed they will simply go to the Celestial Sphere until they can manifest again. The Siddha has four arms and is surrounded by an Aura of Splendor that strikes mortals with awe. Siddhas are able to appear instantly wherever they want. They travel by Will and the Laws of Simultaneity."
 #immortal
+#reformtime -2
 #def 11
 #airshield 50
 #end
@@ -91526,6 +91528,10 @@ Initiates of the Deep can be recruited in any land fort."
 #gcost 180 -- 235 -> 210
 #end
 
+#selectmonster 1505  -- Helheim Vanherse
+#gcost 180
+#end
+
 #selectmonster 264  -- Vanjarl
 #gcost 370 -- 440 -> 400
 #end
@@ -94931,7 +94937,7 @@ Giboleths can travel on land, but doing so will dry out their skin and eventuall
 
 
 #selectmonster 1432  -- Hannya upkeep
-#gcost 0
+#gcost 90
 #end
 
 #selectmonster 1439  -- Iron Corpse
@@ -98124,7 +98130,7 @@ Abodai can travel on land, but doing so will dry out their skin and eventually b
 #end
 
 #selectmonster 3070  -- Chunari upkeep
-#gcost 0
+#gcost 90
 #end
 
 #selectmonster 3062  -- Hellbred Giant
@@ -125208,16 +125214,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #earthrange 2
 #astralrange 2
 #scry 1
-#end
-
-#newsite 2628
-#name "Stone Sanctuary"
-#path 3
-#look 2
-#level 0
-#rarity 5
-#summon 3741 -- Earth ele s6
-#summonlvl2 3741 -- Earth ele s6
+#summonlvl3 3742 -- eele s5
 #end
 
 #newsite 2629
@@ -125228,8 +125225,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #nat 12 -- Marverni
 #natcom 122 -- Bloodhenge Druid
-#summon 3757 -- Illearth s6
-#summonlvl3 3757 -- Illearth s6
+#summonlvl3 3758 -- Illearth s5
 #end
 
 #newsite 2630
@@ -125280,7 +125276,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #summon 9378 -- random animal
 #summon 9378 -- random animal
 #summon 9378 -- random animal
-#summon 9378 -- random animal
+--#summon 9378 -- random animal
 #end
 
 #newsite 2634
@@ -125289,7 +125285,6 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #look 2
 #level 0
 #rarity 5
-#summon 330 -- Dark Vines
 #summonlvl3 330 -- Dark Vines
 #end
 
@@ -125309,7 +125304,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #summon 9379 -- random animal
 #summon 9379 -- random animal
 #summon 9379 -- random animal
-#summon 9379 -- random animal
+--#summon 9379 -- random animal
 #end
 
 #newsite 2636 -- stag
@@ -131358,7 +131353,7 @@ Priests: Average"
 
 #futuresite "Carnac Sanctuary" -- earth+astral range
 --#futuresite "Menec Sanctuary" -- astral range, scry
-#futuresite "Stone Sanctuary" -- summon eeles, --str+1
+--#futuresite "Stone Sanctuary" -- summon eeles, --str+1
 #futuresite "Oak Sanctuary" -- heal%, +growth, recruit animists
 #futuresite "Ivy Sanctuary" -- summon ivy men/ogres, +growth
 #futuresite "Wild Sanctuary" -- +growth, hp+1
@@ -146018,7 +146013,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #name "Ubagabi Pact"
 #descr "The Namanari seals a pact with the Oni Kings, giving up her humanity to become an Ubagabi. The Umagabi gains great powers in the magic of fire and a demonic nature."
 #damage 7801
-#fatiguecost 600
+#fatiguecost 700
 #end
 
 #selectspell 2875
@@ -165489,12 +165484,12 @@ This spell may only target friendly provinces."
 #researchlevel 0
 #path 0 3
 #pathlevel 0 1
-#fatiguecost 1500
+#fatiguecost 2000
 #effect 10083
 #damage -1
 #nreff 1
 #provrange 0
-#spec 8388608 -- UWOK
+#spec 0
 #nextspell 4428
 #restricted 12 -- Marverni
 #end
@@ -165525,7 +165520,7 @@ This spell may only target friendly provinces."
 #damage -1
 #nreff 1
 #provrange 0
-#spec 8388608 -- UWOK
+#spec 0
 #nextspell 4430
 #restricted 12 -- Marverni
 #end
@@ -165551,12 +165546,12 @@ This spell may only target friendly provinces."
 #researchlevel 0
 #path 0 4
 #pathlevel 0 1
-#fatiguecost 1500
+#fatiguecost 2500
 #effect 10083
 #damage -1
 #nreff 1
 #provrange 0
-#spec 8388608 -- UWOK
+#spec 0
 #nextspell 4432
 #restricted 12 -- Marverni
 #end
@@ -165582,12 +165577,12 @@ This spell may only target friendly provinces."
 #researchlevel 0
 #path 0 8
 #pathlevel 0 1
-#fatiguecost 2500
+#fatiguecost 4000
 #effect 10083
 #damage -1
 #nreff 1
 #provrange 0
-#spec 8388608 -- UWOK
+#spec 0
 #nextspell 4434
 #restricted 12 -- Marverni
 #end
@@ -165608,7 +165603,14 @@ This spell may only target friendly provinces."
 #restricted 125 -- Erytheia
 #end
 
-
+#selectspell 4437 -- Earthquake nextspell
+#copyspell 104 -- Earthquake knockdown stun
+#name "Earthquake Fatigue"
+#descr "."
+#effect 3
+#damage 15
+#spec 74766801174592 -- AP, nonmagic, UWOK, sizeneg, no fliers
+#end
 
 
 -- END OF NEW SPELLS
@@ -167346,6 +167348,7 @@ The Hashmalim can proselytize the faithless, teaching them of the true God, and 
 
 #selectspell 696 -- Earthquake
 #spec 70368755712064 -- UWOK, I hope I don't regret this
+#nextspell 4437
 #end
 
 
@@ -169758,7 +169761,8 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #ainocast 1
 #nextingeo -1
 #nextspell 696 -- Earthquake
-#fatiguecost 200 --Reduced to 2 Gems-- 
+#fatiguecost 200 
+#casttime 250
 #end
 
 #selectspell 696 -- Earthquake
@@ -197658,6 +197662,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #rarity 5
 #req_2monsters 9362 -- cromlech stone
 #req_targmnr 9342 -- cromlech +1
+#req_targforeignok
 #nolog
 #notext
 #nation -2
@@ -197668,6 +197673,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #rarity 5
 #req_2monsters 9362 -- cromlech stone
 #req_targmnr 9361 -- cromlech +2
+#req_targforeignok
 #nolog
 #notext
 #nation -2
@@ -197679,6 +197685,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #rarity 5
 #req_targmnr 9361 -- cromlech +2
 #req_varzero 6012
+#req_targforeignok
 #nolog
 #notext
 #forcetransform 9342 -- cromlech +1
@@ -197688,6 +197695,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #rarity 5
 #req_targmnr 9361 -- cromlech +2
 #req_varone 6012
+#req_targforeignok
 #nolog
 #notext
 #clearvar 6012
@@ -197715,6 +197723,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "create stealthy dummy E"
+#req_targforeignok
 #nolog
 #notext
 #id 70
@@ -197727,6 +197736,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "create stealthy dummy S"
+#req_targforeignok
 #nolog
 #notext
 #id 71
@@ -197739,6 +197749,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "create stealthy dummy N"
+#req_targforeignok
 #nolog
 #notext
 #id 72
@@ -197751,6 +197762,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "create stealthy dummy B"
+#req_targforeignok
 #nolog
 #notext
 #id 73
@@ -197769,6 +197781,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9369
 #nation 12 -- EA Marverni
 #msg "check for site [Carnac Sanctuary]"
+#req_targforeignok
 #req_site 1
 #nolog
 #notext
@@ -197783,7 +197796,8 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9368
 #req_targmnr 9369
 #nation 12 -- EA Marverni
-#msg "check for site [Stone Sanctuary]"
+#msg "check for site [Carnac Sanctuary]"
+#req_targforeignok
 #req_site 1
 #nolog
 #notext
@@ -197799,6 +197813,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9369
 #nation 12 -- EA Marverni
 #msg "check for site [Sanguine Sanctuary]"
+#req_targforeignok
 #req_site 1
 #nolog
 #notext
@@ -197814,6 +197829,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9369
 #nation 12 -- EA Marverni
 #msg "check for site [Oak Sanctuary]"
+#req_targforeignok
 #req_site 1
 #nolog
 #notext
@@ -197829,6 +197845,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9369
 #nation 12 -- EA Marverni
 #msg "check for site [Ivy Sanctuary]"
+#req_targforeignok
 #req_site 1
 #nolog
 #notext
@@ -197844,6 +197861,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9369
 #nation 12 -- EA Marverni
 #msg "check for site [Wild Sanctuary]"
+#req_targforeignok
 #req_site 1
 #nolog
 #notext
@@ -197859,6 +197877,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9369
 #nation 12 -- EA Marverni
 #msg "check for site [Defiled Sanctuary]"
+#req_targforeignok
 #req_site 1
 #nolog
 #notext
@@ -197874,6 +197893,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9369
 #nation 12 -- EA Marverni
 #msg "check for site [Wild Sanctuary ]"
+#req_targforeignok
 #req_site 1
 #nolog
 #notext
@@ -197889,6 +197909,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9369
 #nation 12 -- EA Marverni
 #msg "check for site [Wild Sanctuary  ]"
+#req_targforeignok
 #req_site 1
 #nolog
 #notext
@@ -197904,6 +197925,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9366 -- E
 #nation 12 -- EA Marverni
 #msg "The Local Deity in ##landname## has graciously accepted the offering and returned some of the gems to the treasury."
+#req_targforeignok
 #header 2
 #nolog
 #req_varpos 6018
@@ -197917,6 +197939,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9367 -- S
 #nation 12 -- EA Marverni
 #msg "The Local Deity in ##landname## has graciously accepted the offering and returned some of the gems to the treasury."
+#req_targforeignok
 #header 2
 #nolog
 #req_varpos 6018
@@ -197930,6 +197953,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9368 -- N
 #nation 12 -- EA Marverni
 #msg "The Local Deity in ##landname## has graciously accepted the offering and returned some of the gems to the treasury."
+#req_targforeignok
 #header 2
 #nolog
 #req_varpos 6018
@@ -197943,6 +197967,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9369 -- B
 #nation 12 -- EA Marverni
 #msg "The Local Deity in ##landname## has graciously accepted the offering and returned some of the gems to the treasury."
+#req_targforeignok
 #header 2
 #nolog
 #req_varpos 6018
@@ -197955,6 +197980,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "reset var"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6018
@@ -197970,6 +197996,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9366 -- E
 #nation 12 -- EA Marverni
 #msg "set pathvar and kill dummy"
+#req_targforeignok
 #nolog
 #notext
 #killtarg
@@ -197984,6 +198011,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9367 -- S
 #nation 12 -- EA Marverni
 #msg "set pathvar and kill dummy"
+#req_targforeignok
 #nolog
 #notext
 #killtarg
@@ -197998,6 +198026,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9368 -- N
 #nation 12 -- EA Marverni
 #msg "set pathvar and kill dummy"
+#req_targforeignok
 #nolog
 #notext
 #killtarg
@@ -198012,6 +198041,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9369 -- B
 #nation 12 -- EA Marverni
 #msg "set pathvar and kill dummy"
+#req_targforeignok
 #nolog
 #notext
 #killtarg
@@ -198026,6 +198056,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9366 -- E
 #nation 12 -- EA Marverni
 #msg "kill extra dummy"
+#req_targforeignok
 #nolog
 #notext
 #killtarg
@@ -198037,6 +198068,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9367 -- S
 #nation 12 -- EA Marverni
 #msg "kill extra dummy"
+#req_targforeignok
 #nolog
 #notext
 #killtarg
@@ -198048,6 +198080,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9368 -- N
 #nation 12 -- EA Marverni
 #msg "kill extra dummy"
+#req_targforeignok
 #nolog
 #notext
 #killtarg
@@ -198059,6 +198092,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9369 -- B
 #nation 12 -- EA Marverni
 #msg "kill extra dummy"
+#req_targforeignok
 #nolog
 #notext
 #killtarg
@@ -198074,6 +198108,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9366 -- Any
 #nation 12 -- EA Marverni
 #msg "kill extra dummy"
+#req_targforeignok
 #nolog
 #notext
 #killtarg
@@ -198085,6 +198120,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9366 -- Any
 #nation 12 -- EA Marverni
 #msg "kill extra dummy"
+#req_targforeignok
 #nolog
 #notext
 #killtarg
@@ -198096,6 +198132,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9366 -- Any
 #nation 12 -- EA Marverni
 #msg "kill extra dummy"
+#req_targforeignok
 #nolog
 #notext
 #killtarg
@@ -198106,6 +198143,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "reset generic var"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6018
@@ -198124,6 +198162,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9372 -- altar 2
 #nation 12 -- EA Marverni
 #msg "poly altar 2 to 3"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6013
@@ -198137,6 +198176,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9371 -- altar 1
 #nation 12 -- EA Marverni
 #msg "The Local Deity in ##landname## has grown in power and is nearly awake." -- MESSAGE HERE
+#req_targforeignok
 #header 2
 #req_varone 6013
 #togglevar 6021
@@ -198148,6 +198188,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "An Altar to a Local Deity has been created in ##landname##." -- MESSAGE HERE
+#req_targforeignok
 #header 2
 #req_varzero 6021
 #req_varone 6013
@@ -198159,6 +198200,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "clear 6021"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6021
@@ -198179,6 +198221,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost E 50%"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6014
@@ -198195,6 +198238,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost E 25%"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6014
@@ -198212,6 +198256,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost E 10%"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6014
@@ -198230,6 +198275,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost E"
+#req_targforeignok
 #req_targnopath4 3
 #nolog
 #notext
@@ -198246,6 +198292,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost S 50%"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6015
@@ -198262,6 +198309,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost S 25%"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6015
@@ -198279,6 +198327,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost S 10%"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6015
@@ -198297,6 +198346,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost S"
+#req_targforeignok
 #req_targnopath4 4
 #nolog
 #notext
@@ -198313,6 +198363,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost N 50%"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6016
@@ -198329,6 +198380,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost N 25%"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6016
@@ -198346,6 +198398,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost N 10%"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6016
@@ -198364,6 +198417,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost N"
+#req_targforeignok
 #req_targnopath4 6
 #nolog
 #notext
@@ -198380,6 +198434,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost B 50%"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6017
@@ -198396,6 +198451,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost B 25%"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6017
@@ -198413,6 +198469,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost B 10%"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6017
@@ -198431,6 +198488,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "pathboost B"
+#req_targforeignok
 #req_targnopath4 8
 #nolog
 #notext
@@ -198452,6 +198510,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #nation 12 -- EA Marverni
 #req_rare 50
 #msg "extra pathboost 50%"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6013
@@ -198464,6 +198523,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "no pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6013
@@ -198482,6 +198542,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12A Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 30
@@ -198501,6 +198562,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12A Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 40
@@ -198520,6 +198582,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12A Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 35
@@ -198539,6 +198602,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12A Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 25
@@ -198558,6 +198622,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 25
@@ -198577,6 +198642,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 18
@@ -198596,6 +198662,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 22
@@ -198615,6 +198682,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 20
@@ -198634,6 +198702,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 20
@@ -198653,6 +198722,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 15
@@ -198672,6 +198742,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 30
@@ -198690,6 +198761,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 40
@@ -198708,6 +198780,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 35
@@ -198726,6 +198799,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 1
@@ -198744,6 +198818,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 30
@@ -198762,6 +198837,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 20
@@ -198780,6 +198856,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 25
@@ -198798,6 +198875,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 25
@@ -198816,6 +198894,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "extra pathboost"
+#req_targforeignok
 #nolog
 #notext
 #req_rare 20
@@ -198831,6 +198910,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "extra pathboost failed"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6019
@@ -198847,6 +198927,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "begin selection"
+#req_targforeignok
 #nolog
 #notext
 #incvar 6020
@@ -198859,6 +198940,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "selection made"
+#req_targforeignok
 #req_rare 70
 #nolog
 #notext
@@ -198877,6 +198959,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "selection made"
+#req_targforeignok
 #req_rare 70
 #nolog
 #notext
@@ -198894,6 +198977,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "selection made"
+#req_targforeignok
 #req_rare 70
 #nolog
 #notext
@@ -198910,6 +198994,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "selection made"
+#req_targforeignok
 #req_rare 70
 #nolog
 #notext
@@ -198926,6 +199011,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "selection made"
+#req_targforeignok
 #req_rare 70
 #nolog
 #notext
@@ -198943,6 +199029,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "selection made"
+#req_targforeignok
 #req_rare 70
 #nolog
 #notext
@@ -198960,6 +199047,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "selection made"
+#req_targforeignok
 #req_rare 70
 #nolog
 #notext
@@ -198976,6 +199064,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "selection made"
+#req_targforeignok
 #req_rare 70
 #nolog
 #notext
@@ -198993,6 +199082,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "selection made"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath2 6
@@ -199008,6 +199098,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "selection made"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath2 8
@@ -199024,6 +199115,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "selection made"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath2 8
@@ -199040,6 +199132,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "selection fallback"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6020
@@ -199063,6 +199156,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more W"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath1 2
@@ -199074,6 +199168,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more W"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath2 2
@@ -199085,6 +199180,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more W"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath3 2
@@ -199096,6 +199192,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more W"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath4 2
@@ -199108,6 +199205,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more E"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath1 3
@@ -199119,6 +199217,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more E"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath2 3
@@ -199130,6 +199229,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more E"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath3 3
@@ -199141,6 +199241,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more E"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath4 3
@@ -199153,6 +199254,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more S"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath1 4
@@ -199164,6 +199266,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more S"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath2 4
@@ -199175,6 +199278,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more S"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath3 4
@@ -199186,6 +199290,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more S"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath4 4
@@ -199198,6 +199303,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more N"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath1 6
@@ -199209,6 +199315,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more N"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath2 6
@@ -199220,6 +199327,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more N"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath3 6
@@ -199231,6 +199339,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more N"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath4 6
@@ -199243,6 +199352,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more B"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath1 8
@@ -199254,6 +199364,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more B"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath2 8
@@ -199265,6 +199376,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more B"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath3 8
@@ -199276,6 +199388,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9373 -- altar 3
 #nation 12 -- EA Marverni
 #msg "more B"
+#req_targforeignok
 #nolog
 #notext
 #req_targpath4 8
@@ -199294,6 +199407,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc W"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6013
@@ -199310,6 +199424,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc E"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6014
@@ -199326,6 +199441,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc S"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6015
@@ -199342,6 +199458,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc N"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6016
@@ -199358,6 +199475,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc B"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6017
@@ -199374,6 +199492,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc W"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6013
@@ -199390,6 +199509,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc E"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6014
@@ -199406,6 +199526,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc S"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6015
@@ -199422,6 +199543,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc N"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6016
@@ -199438,6 +199560,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc B"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6017
@@ -199454,6 +199577,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc W"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6013
@@ -199470,6 +199594,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc E"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6014
@@ -199486,6 +199611,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc S"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6015
@@ -199502,6 +199628,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc N"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6016
@@ -199518,6 +199645,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc B"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6017
@@ -199534,6 +199662,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc W"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6013
@@ -199550,6 +199679,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc E"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6014
@@ -199566,6 +199696,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc S"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6015
@@ -199582,6 +199713,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc N"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6016
@@ -199598,6 +199730,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targmnr 9393
 #nation 12 -- EA Marverni
 #msg "inc B"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6017
@@ -199611,6 +199744,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "reset W"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6013
@@ -199622,6 +199756,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "reset E"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6014
@@ -199633,6 +199768,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "reset S"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6015
@@ -199644,6 +199780,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "reset N"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6016
@@ -199655,6 +199792,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "reset B"
+#req_targforeignok
 #nolog
 #notext
 #req_varpos 6017
@@ -199672,6 +199810,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9390 -- rock
 #nation 12 -- EA Marverni
 #msg "rock god"
+#req_targforeignok
 #nolog
 #notext
 #req_varzero 6021
@@ -199685,6 +199824,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9391 -- blood rock
 #nation 12 -- EA Marverni
 #msg "blood rock god"
+#req_targforeignok
 #nolog
 #notext
 #req_varzero 6021
@@ -199698,6 +199838,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9392 -- tree
 #nation 12 -- EA Marverni
 #msg "tree god"
+#req_targforeignok
 #nolog
 #notext
 #req_varzero 6021
@@ -199711,6 +199852,7 @@ It is now fully repaired and a new crew has been assigned to it."
 #req_targrealmnr 9393 -- blood tree
 #nation 12 -- EA Marverni
 #msg "blood tree god"
+#req_targforeignok
 #nolog
 #notext
 #req_varzero 6021
@@ -199731,8 +199873,8 @@ It is now fully repaired and a new crew has been assigned to it."
 #msg "The Local Deity in ##landname## has awakened and agreed to serve.
 
 The Menhir is an ancient spirit inhabiting a massive standing stone. The spirit may protect the local population in exchange for offerings, and is often regarded as a guardian spirit, though it is unable to leave the Menhir. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Menhir is a holy site, and may attract worship away from the true God." -- MESSAGE HERE
+#req_targforeignok
 #header 2
-#nolog
 #req_varone 6021
 #clearvar 6021
 #addsite 2626 -- carnac
@@ -199744,6 +199886,7 @@ The Menhir is an ancient spirit inhabiting a massive standing stone. The spirit 
 #req_targmnr 9338 -- Menhir
 #nation 12 -- EA Marverni
 #msg "menhir guaranteed E"
+#req_targforeignok
 #nolog
 #notext
 #req_targnopath1 3 -- E
@@ -199756,6 +199899,7 @@ The Menhir is an ancient spirit inhabiting a massive standing stone. The spirit 
 #req_targmnr 9338 -- Menhir
 #nation 12 -- EA Marverni
 #msg "menhir guaranteed S"
+#req_targforeignok
 #nolog
 #notext
 #req_targnopath1 4 -- S
@@ -199770,8 +199914,8 @@ The Menhir is an ancient spirit inhabiting a massive standing stone. The spirit 
 #msg "The Local Deity in ##landname## has awakened and agreed to serve.
 
 The Sanguine Edifice is an ancient spirit inhabiting a massive standing stone. Once a pure spirit of the Earth, it has been tainted by blood sacrifice. As the ground was soaked with sacrificial blood the spirit gained a craving for the blood of the innocent. The ground itself will sometimes rise up in a corrupted form to serve the spirit. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The local populace may take to worshipping the edifice to the exclusion of the true God." -- MESSAGE HERE
+#req_targforeignok
 #header 2
-#nolog
 #req_varone 6021
 #clearvar 6021
 #addsite 2629 -- sanguine
@@ -199783,6 +199927,7 @@ The Sanguine Edifice is an ancient spirit inhabiting a massive standing stone. O
 #req_targmnr 9341 -- Sanguine Edifice
 #nation 12 -- EA Marverni
 #msg "Edifice guaranteed E"
+#req_targforeignok
 #nolog
 #notext
 #req_targnopath1 3 -- E
@@ -199797,8 +199942,8 @@ The Sanguine Edifice is an ancient spirit inhabiting a massive standing stone. O
 #msg "The Local Deity in ##landname## has awakened and agreed to serve.
 
 The Ancient Oak is the spirit of a very old great oak, overgrown with mistletoe, possessing intelligence and magical power. Offerings are made to the tree, and in return the tree provides fertility, growth, and healing to the land. As a tree it cannot move, but it is difficult to kill in combat. The Ancient Oak is a holy site, and may attract worship away from the true God." -- MESSAGE HERE
+#req_targforeignok
 #header 2
-#nolog
 #req_varone 6021
 #clearvar 6021
 #addsite 2630 -- oak
@@ -199813,8 +199958,8 @@ The Ancient Oak is the spirit of a very old great oak, overgrown with mistletoe,
 #msg "The Local Deity in ##landname## has awakened and agreed to serve.
 
 The Thirsting Tree is the spirit of a very old great oak possessing intelligence and magical power. Once a pure being of Nature, it has been tainted by blood sacrifice. As its roots were soaked with sacrificial blood the spirit gained a craving for the blood of the innocent. Each month the tree demands blood from the local populace, who may come to worship the tree as a God in its own right. As a tree it cannot move, but it is difficult to kill in combat." -- MESSAGE HERE
+#req_targforeignok
 #header 2
-#nolog
 #req_varone 6021
 #clearvar 6021
 #addsite 2629 -- sanguine
@@ -199829,8 +199974,8 @@ The Thirsting Tree is the spirit of a very old great oak possessing intelligence
 #msg "The Local Deity in ##landname## has awakened and agreed to serve.
 
 The Menec Cromlech is an ancient spirit inhabiting an alignment of standing stones. The Menec Cromlech may guide the local population in exchange for offerings, monitoring the seasons, the moon and the stars for auspicious events. The Cromlech ordains the best days for the planting of crops and the casting of rituals for their greatest effect. When all stones are arranged together its power is greatest, however when removed from the sacred geometry it will lose some of its power. As long as two Menec Stones are present, the Menec Cromlech will be able to cast rituals an extra level higher. The Menec Cromlech is a holy site, and may attract worship away from the true God." -- MESSAGE HERE
+#req_targforeignok
 #header 2
-#nolog
 #req_varone 6021
 #clearvar 6021
 #addsite 2626 -- carnac
@@ -199843,6 +199988,7 @@ The Menec Cromlech is an ancient spirit inhabiting an alignment of standing ston
 #req_targmnr 9361 -- Menec Cromlech +2
 #nation 12 -- EA Marverni
 #msg "cromlech guaranteed S"
+#req_targforeignok
 #nolog
 #notext
 #req_targnopath1 4 -- S
@@ -199857,11 +200003,11 @@ The Menec Cromlech is an ancient spirit inhabiting an alignment of standing ston
 #msg "The Local Deity in ##landname## has awakened and agreed to serve.
 
 The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God." -- MESSAGE HERE
+#req_targforeignok
 #header 2
-#nolog
 #req_varone 6021
 #clearvar 6021
-#addsite 2628 -- stone
+#addsite 2626 -- carnac
 #end
 
 #newevent
@@ -199870,6 +200016,7 @@ The Henge is an ancient spirit inhabiting a series of standing stones. The Henge
 #req_targmnr 9339 -- henge summer
 #nation 12 -- EA Marverni
 #msg "henge guaranteed E"
+#req_targforeignok
 #nolog
 #notext
 #req_targnopath1 3 -- E
@@ -199884,11 +200031,11 @@ The Henge is an ancient spirit inhabiting a series of standing stones. The Henge
 #msg "The Local Deity in ##landname## has awakened and agreed to serve.
 
 The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God." -- MESSAGE 
+#req_targforeignok
 #header 2
-#nolog
 #req_varone 6021
 #clearvar 6021
-#addsite 2628 -- stone
+#addsite 2626 -- carnac
 #end
 
 #newevent
@@ -199897,6 +200044,7 @@ The Henge is an ancient spirit inhabiting a series of standing stones. The Henge
 #req_targmnr 9363 -- henge fall
 #nation 12 -- EA Marverni
 #msg "henge guaranteed E"
+#req_targforeignok
 #nolog
 #notext
 #req_targnopath1 3 -- E
@@ -199911,11 +200059,11 @@ The Henge is an ancient spirit inhabiting a series of standing stones. The Henge
 #msg "The Local Deity in ##landname## has awakened and agreed to serve.
 
 The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God." -- MESSAGE 
+#req_targforeignok
 #header 2
-#nolog
 #req_varone 6021
 #clearvar 6021
-#addsite 2628 -- stone
+#addsite 2626 -- carnac
 #end
 
 #newevent
@@ -199924,6 +200072,7 @@ The Henge is an ancient spirit inhabiting a series of standing stones. The Henge
 #req_targmnr 9364 -- henge winter
 #nation 12 -- EA Marverni
 #msg "henge guaranteed E"
+#req_targforeignok
 #nolog
 #notext
 #req_targnopath1 3 -- E
@@ -199938,11 +200087,11 @@ The Henge is an ancient spirit inhabiting a series of standing stones. The Henge
 #msg "The Local Deity in ##landname## has awakened and agreed to serve.
 
 The Henge is an ancient spirit inhabiting a series of standing stones. The Henge is aligned with the solstices and gains power during the Winter and Summer seasons. While the spirit is unable to leave its stone alignment, it is magically powerful and may summon elementals of Earth to serve it. In a physical battle, the stone would be difficult to destroy, even though it cannot strike back. The Henge is a holy site, and may attract worship away from the true God." -- MESSAGE 
+#req_targforeignok
 #header 2
-#nolog
 #req_varone 6021
 #clearvar 6021
-#addsite 2628 -- stone
+#addsite 2626 -- carnac
 #end
 
 #newevent
@@ -199951,6 +200100,7 @@ The Henge is an ancient spirit inhabiting a series of standing stones. The Henge
 #req_targmnr 9365 -- henge spring
 #nation 12 -- EA Marverni
 #msg "henge guaranteed E"
+#req_targforeignok
 #nolog
 #notext
 #req_targnopath1 3 -- E
@@ -199965,8 +200115,8 @@ The Henge is an ancient spirit inhabiting a series of standing stones. The Henge
 #msg "The Local Deity in ##landname## has awakened and agreed to serve.
 
 The Forest Lord is an ancient spirit of nature appearing as a large figure made of oak and ivy. The Forest Lord once ruled an Ivy Kingdom, and now tends to the forest as they sleep. The Forest Lord can reawaken vine men from their slumber and more will come to his aid when summoned." -- MESSAGE HERE
+#req_targforeignok
 #header 2
-#nolog
 #req_varone 6021
 #clearvar 6021
 #addsite 2631 -- ivy
@@ -199978,10 +200128,10 @@ The Forest Lord is an ancient spirit of nature appearing as a large figure made 
 #req_targmnr 9359 -- white bull
 #nation 12 -- EA Marverni
 #msg "The Local Deity in ##landname## has awakened and agreed to serve.
+#req_targforeignok
 
 The White Bull is the progeny of one of the Great Bulls, divine entities worshiped as manifestations of Nature, wildness, and fury. The White Bull brings fertility to the land and he is accompanied by a multitude of beasts attracted by his aura." -- MESSAGE HERE
 #header 2
-#nolog
 #req_varone 6021
 #clearvar 6021
 #addsite 2632 -- white untamed
@@ -199995,8 +200145,8 @@ The White Bull is the progeny of one of the Great Bulls, divine entities worship
 #msg "The Local Deity in ##landname## has awakened and agreed to serve.
 
 The Black Bull is the progeny of one of the Great Bulls, divine entities worshiped as manifestations of Nature, wildness, and the glory of the slayer and the slain. They are a creature of unbridled fury, and unlike a White Bull, the fertility aspect is secondary to that of their maddened rage." -- MESSAGE HERE
+#req_targforeignok
 #header 2
-#nolog
 #req_varone 6021
 #clearvar 6021
 #addsite 2635 -- black untamed
@@ -200010,8 +200160,8 @@ The Black Bull is the progeny of one of the Great Bulls, divine entities worship
 #msg "The Local Deity in ##landname## has awakened and agreed to serve.
 
 The Great Stag is a being that has wandered the forests since the time before men, worshiped by the first men as a god of the hunt. Deer follow the Great Stag and a great number will flock to his herd." -- MESSAGE HERE
+#req_targforeignok
 #header 2
-#nolog
 #req_varone 6021
 #clearvar 6021
 #addsite 2636 -- stag untamed
@@ -200025,8 +200175,8 @@ The Great Stag is a being that has wandered the forests since the time before me
 #msg "The Local Deity in ##landname## has awakened and agreed to serve.
 
 The Grasping Maw is a mass of vines with a great maw in the middle of it. Once a pure being of Nature, it has been tainted by blood sacrifice. As its vines were soaked with sacrificial blood the spirit gained a craving for the blood of the innocent, and has now uprooted itself so it may scour the land for its feast." -- MESSAGE HERE
+#req_targforeignok
 #header 2
-#nolog
 #req_varone 6021
 #clearvar 6021
 #addsite 2634 -- defiled
@@ -200038,6 +200188,7 @@ The Grasping Maw is a mass of vines with a great maw in the middle of it. Once a
 #req_pop0ok
 #nation 12 -- EA Marverni
 #msg "no deity chosen?"
+#req_targforeignok
 #nolog
 #notext
 #req_varone 6021
@@ -200055,6 +200206,7 @@ The Grasping Maw is a mass of vines with a great maw in the middle of it. Once a
 #req_targrealmnr 9373 -- Altar 3
 #nation 12 -- EA Marverni
 #msg "kill altar 3"
+#req_targforeignok
 #nolog
 #notext
 #killtarg
