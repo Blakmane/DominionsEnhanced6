@@ -254,10 +254,10 @@
 
 #gemlongevity 2
 
-#slothincome 4 -- 3 -> 4
-#turmoilincome 4 -- 3 -> 4
-#deathincome 2 -- 1 -> 2
-#deathdeath 25 -- 20 -> 25
+#slothincome 3 -- 3 -> 3
+#turmoilincome 3 -- 3 -> 3
+#deathincome 5 -- 1 -> 5
+#deathdeath 20 -- 20 -> 20
 #luckevents 7 -- 5 -> 7
 
 
@@ -3861,7 +3861,7 @@
 
 #newweapon 1887 -- Weak Lightning Swarm
 #copyweapon 185 -- Lightning Swarm
-#dmg 2
+#dmg 1
 #bowstr
 #end
 
@@ -26163,6 +26163,15 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #holy
 #magicbeing
 #spiritsight
+#hp 25
+#str 14
+#att 12
+#def 16
+#ap 13
+#saltvul 1
+#amphibian
+#neednoteat
+#floating
 #mr 15
 #mor 18
 #weapon 202
@@ -26172,8 +26181,8 @@ The Pantokrator beheld this slight, and called Iblis sinner, and banished him to
 #ethereal
 #spiritform
 #enc 0
-#coldres 15
-#poisonres 20
+#coldres 25
+#poisonres 25
 #end
 
 #newmonster 7301
@@ -36160,8 +36169,6 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #spr1 "magicenhanced/eeysswan.tga"
 #spr2 "magicenhanced/eeysswan2.tga"
 #descr "Now returned to the lands above the waves the Morgen have taken to riding gigantic Fey swans summoned from the Land of the Ever Young. These noble steeds will fight on if their rider is killed before returning to the Land of the Ever Young after the battle. They can fly incredible distances and can even cross the oceans to carry the Morgen to other lands. Morgen are descendants of the Tuatha and can use glamour to confuse enemies. The Swan Knights are revered and sacred to the people of Ys."
-#bird
-#gcost 10030
 #str 16
 #prot 10
 #size 7
@@ -36182,13 +36189,28 @@ Eventually Tiamat was cut asunder and her children scattered to the four corners
 #maxage 300
 #sailing 8 8
 #darkvision 50
-#lizard
-#itemslots 786432 -- 2 misc
+--#lizard
+#bird
+#itemslots 794624 -- 2 misc, head
 #glamour
 #flying
 #holy
 #weapon "Wing Buff"
 #weapon 404  -- Beak
+#end
+
+#newmonster 8897
+#copystats 7781
+#copyspr 7781
+#name "Sacred Swan"
+#descr "Now returned to the lands above the waves the Morgen have taken to riding gigantic Fey swans summoned from the Land of the Ever Young. These noble steeds will fight on if their rider is killed before returning to the Land of the Ever Young after the battle. They can fly incredible distances and can even cross the oceans to carry the Morgen to other lands. Morgen are descendants of the Tuatha and can use glamour to confuse enemies."
+#prot 12
+#hp 48
+#mor 16
+#att 13
+#def 14
+#rpcost 78
+#amphibian
 #end
 
 
@@ -53503,41 +53525,6 @@ This ship is undergoing maintenance and will be fully repaired and recrewed at t
 #cleanshape
 #end
 
-#newmonster 8897
-#name "Sacred Swan"
-#spr1 "magicenhanced/eeysswan.tga"
-#spr2 "magicenhanced/eeysswan2.tga"
-#descr "Now returned to the lands above the waves the Morgen have taken to riding gigantic Fey swans summoned from the Land of the Ever Young. These noble steeds will fight on if their rider is killed before returning to the Land of the Ever Young after the battle. They can fly incredible distances and can even cross the oceans to carry the Morgen to other lands. Morgen are descendants of the Tuatha and can use glamour to confuse enemies."
-#bird
-#gcost 10030
-#str 16
-#prot 12
-#size 7
-#hp 48
-#mor 16
-#mr 14
-#att 13
-#def 14
-#ap 14
-#prec 12
-#enc 3
-#gcost 0
-#rpcost 78
-#rcost 6
-#mapmove 24
-#startage 60
-#maxage 300
-#sailing 8 8
-#darkvision 50
-#itemslots 786432 -- 2 misc
-#amphibian
-#glamour
-#flying
-#holy
-#weapon "Wing Buff"
-#weapon 404  -- Beak
-#end
-
 
 
 
@@ -61917,7 +61904,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #att 11
 #str 21
 #prot 10
-#ivylord 4
+#ivylord 2
 #mor 30
 #popkill 5
 #incunrest 30
@@ -62005,7 +61992,7 @@ Companions are recruited in pairs and two must be recruited at once."
 #copystats 3692 -- Great Stag
 #copyspr 3692 -- Great Stag
 #name "Divine Hart"
-#descr "The Divine Hart is a being that has wandered the forests since the time before men, worshiped by the first men as a god of the hunt. Stag follow the Divine Hart and a great number will flock to his herd."
+#descr "The Divine Hart is a being that has wandered the forests since the time before men, worshiped by the first men as a god of the hunt. Deer follow the Divine Hart and a great number will flock to his herd."
 --#heretic 1
 #domsummon 2228 -- Deer
 #drawsize -10
@@ -62538,6 +62525,13 @@ Companions are recruited in pairs and two must be recruited at once."
 #reformtime -2
 #def 11
 #airshield 50
+#end
+
+#newmonster 9395 -- altar futuresite dummy
+#copyspr 9371
+#copystats 9371
+#name "Altar"
+#descr "An altar, created by druids or gutuaters for the worship of a local deity. In a physical battle, the altar would be easy to topple over and cannot fight back. It cannot cast spells or use magic."
 #end
 
 
@@ -123309,7 +123303,7 @@ Popes are devoted wholly to their God and are forbidden from learning the arcane
 #rarity 5
 #path 6
 #look 4
-#homecom 9371 -- Altar
+#homecom 9395 -- Altar dummy
 #homecom 9338 -- menhir
 
 #homecom 9361 -- Cromlech
@@ -139286,38 +139280,6 @@ Restore order to the world, return the dead to their rest, and end this terrible
 #fatiguecost 4000
 #damage 7252 -- Titan of the Underworld
 #nreff 1
-#end
-
-#selectspell 2396
-#name "Daimones Luck"
-#school -1
-#researchlevel 0
-#effect 10
-#nreff 1
-#damage 2  -- Luck
-#aoe 665  -- 25 percent of Battle
-#spec 549994496  -- UW OK, Ignore shields, Mindless & Undead Immune, Friendlies Only
-#end
-
-#selectspell 2397
-#copyspell 991 -- Will O Wisps
-#name "Summon Daimones"
-#descr "Centuries ago the people of Arcoscephale lived in a golden age of peace and harmony. Humans did not have to work to feed themselves, for the earth provided food in abundance. They lived to a very old age with a youthful appearance and when they died their spirits remained on the astral plane. These Daimones can be summoned in battle to aid their ancestors. They appear as sacred ethereal warriors, and their presence will bestow luck on many soldiers."
-#details "25% of friendly soldiers gain Luck."
-#school 0
-#researchlevel 7
-#restricted 5  -- EA Arco
-#restricted 50 -- MA Arco
-#restricted 95 -- LA Arco
-#path 0 4
-#pathlevel 0 4
-#effect 43  -- Border summoning
-#nreff 12
-#damage 7300
-#explspr 10002
-#sound 29
-#fatiguecost 300
-#nextspell 2396
 #end
 
 #selectspell 2398
@@ -156887,7 +156849,7 @@ All effects scale with friendly Dominion."
 
 
 #selectspell 3786
-#name "Coldresist"
+#name "Cold Resistance"
 #descr "Cold resist for Inferno Warriors."
 #school -1
 #researchlevel 1
@@ -156906,7 +156868,7 @@ All effects scale with friendly Dominion."
 #selectspell 3787
 #name "Inferno Warriors"
 #descr "The caster extends their hand and a torrent of fire erupts over a group of friendly soldiers. This causes them to burst into flames, however they miraculously remain unharmed. The flames surrounding them will burn enemies that get too close, and the heat will protect them from ice and cold used against them."
-#details "Fire dmg: 9 AP fire dmg (reduced by weapon length)"
+#details "Fire dmg: 9 AP fire dmg (reduced by weapon length), Cold Resistance +5"
 #school 4
 #researchlevel 7
 #path 0 0
@@ -157005,6 +156967,7 @@ All effects scale with friendly Dominion."
 #sound 16  -- Fire
 #fatiguecost 200
 #spec 12730496  -- Ignore shields & armor, friendlies only, mindless immune, UWOK
+#nextspell 3786 -- cold res
 #end
 
 #selectspell 3800 -- Summon Incubus
@@ -162134,6 +162097,38 @@ Applies the effects of Holy Avenger to the caster"
 #explspr -1
 #end
 
+#selectspell 2396
+#name "Daimones Luck"
+#school -1
+#researchlevel 0
+#effect 10
+#nreff 1
+#damage 2  -- Luck
+#aoe 662  -- 5 percent of Battle
+#spec 549994496  -- UW OK, Ignore shields, Mindless & Undead Immune, Friendlies Only
+#nextspell 4163 -- Spirit Blessing
+#end
+
+#selectspell 2397
+#copyspell 991 -- Will O Wisps
+#name "Summon Daimones"
+#descr "Centuries ago the people of Arcoscephale lived in a golden age of peace and harmony. Humans did not have to work to feed themselves, for the earth provided food in abundance. They lived to a very old age with a youthful appearance and when they died their spirits remained on the astral plane. These Daimones can be summoned in battle to aid their ancestors. They appear as sacred ethereal warriors, and their presence will bestow luck on many soldiers."
+#details "33% of friendly soldiers gain Luck."
+#school 0
+#researchlevel 7
+#restricted 5  -- EA Arco
+#restricted 50 -- MA Arco
+#restricted 95 -- LA Arco
+#path 0 4
+#pathlevel 0 4
+#effect 43  -- Border summoning
+#nreff 8
+#damage 7300
+#explspr 10002
+#sound 29
+#fatiguecost 300
+#nextspell 2396
+#end
 
 -- Shadow Animals
 #selectspell 4164
@@ -169585,9 +169580,17 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #end
 
 #selectspell 1404 -- Hell Ride
-#effect 10019 -- Teleport
-#walkable 1
+--#effect 10019 -- Teleport
 --#nowatertrace 1
+#copyspell 1303 -- Teleport
+#name "Hell Ride"
+#descr "The caster summons a swarm of imps and commands them to carry him to a distant province with haste. Although supernaturally fast the imps are not very strong and can't lift anything heavier than a human. While the imps are faster than normal fliers they cannot teleport and can have the path blocked by impassable mountains, cave walls or the Sea of Ice global enchantment. Larger beings will require more imps and therefore more payment."
+#walkable 1
+#provrange 3
+#fatiguecost 1900
+#sizecost 7
+#path 0 8 -- B
+#school 6 -- Blood
 #end
 
 #selectspell 1401 -- Blood Feast
@@ -176441,7 +176444,7 @@ This headband does not require activation in combat."
 #req_capital 1
 #req_growth 1
 #req_death -1
-#incpop 200
+#incpop 160
 #msg "growth pop boost growth 1"
 #nolog
 --#notext
@@ -176453,7 +176456,7 @@ This headband does not require activation in combat."
 #req_capital 1
 #req_growth 2
 #req_death -2
-#incpop 400
+#incpop 320
 #msg "growth pop boost growth 2"
 #nolog
 --#notext
@@ -176464,7 +176467,7 @@ This headband does not require activation in combat."
 #req_pregame 1
 #req_capital 1
 #req_growth 3
-#incpop 600
+#incpop 480
 #msg "growth pop boost growth 3"
 #nolog
 --#notext
