@@ -11691,6 +11691,7 @@
 #clearweapons
 #weapon "Dagger"
 #sailing 999 6
+#mr 12
 #poorleader
 #cleararmor
 #magicskill 4 1
@@ -12496,7 +12497,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #def 10
 #prec 10
 #size 3
-#mr 10
+#mr 13
 #mor 9
 #enc 3
 #mapmove 18
@@ -12527,7 +12528,7 @@ Leonardo is not a greedy man and cares little for material wealth, being only in
 #def 10
 #prec 10
 #size 3
-#mr 10
+#mr 14
 #mor 9
 #enc 3
 #mapmove 18
