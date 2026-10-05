@@ -72998,23 +72998,23 @@ Cannot be recruited until Break the Deadlock is cast."
 #hp 140
 #end
 
-#selectmonster 3762 -- Living Mercury s6
+#selectmonster 3763 -- Living Mercury s6
 #hp 105
 #end
 
-#selectmonster 3762 -- Living Mercury s5
+#selectmonster 3764 -- Living Mercury s5
 #hp 75
 #end
 
-#selectmonster 3762 -- Living Mercury s4
+#selectmonster 3765 -- Living Mercury s4
 #hp 50
 #end
 
-#selectmonster 3762 -- Living Mercury s3
+#selectmonster 3766 -- Living Mercury s3
 #hp 30
 #end
 
-#selectmonster 3762 -- Living Mercury s2
+#selectmonster 3767 -- Living Mercury s2
 #hp 15
 #end
 
@@ -137006,6 +137006,7 @@ Requires a Ring of Returning equipped to the recipient."
 #copyspell 863 -- Soul Vortex
 #name "Leech the Living"
 #descr "The necromancer reaches out and inscribes a dread rune on a few nearby undead. The power of the rune drains the life force from all living creatures nearby and restores and heals the dead creatures so marked."
+#school 5
 #researchlevel 7
 #pathlevel 0 4
 #range 1
@@ -145778,7 +145779,7 @@ Defeat Surtr and put a halt to the end times, before the world is reduced to a s
 #researchlevel 8
 #path 0 4
 #pathlevel 0 4
-#effect 130 -- Polymorph caster
+#effect 10130 -- Polymorph caster
 #nreff 1
 #damage 9394 -- Moksha Siddha
 #fatiguecost 4000
@@ -169307,7 +169308,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #researchlevel 6
 #pathlevel 0 3
 #damage 701
-#fatiguecost 10000
+#fatiguecost 1000
 #onlyfriendlydst 1 --Allied and Owned Provinces Only 
 #nextspell 4422
 #end 
@@ -169333,7 +169334,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #researchlevel 6
 #pathlevel 0 3
 #damage 702
-#fatiguecost 10000
+#fatiguecost 1000
 #onlyfriendlydst 1 --Allied and Owned Provinces Only 
 #nextspell 4423 --Phlegmatic Passivity 
 #end
@@ -169357,7 +169358,7 @@ Floating units cannot be targeted by some spells like earth grip or earthquakes.
 #effect 10042 --effect--
 #pathlevel 0 3
 #damage 63 --event identifier
-#fatiguecost 10000
+#fatiguecost 1000
 #end 
 
 #selectspell 1338 -- Leprosy
@@ -176445,7 +176446,8 @@ This headband does not require activation in combat."
 #req_growth 1
 #req_death -1
 #incpop 150
-#msg "The Growth dominion of ##godname## has brought prosperity and growth to ##landname##."
+#msg "Growth has brought prosperity to ##landname##."
+#header 2
 #nolog
 --#notext
 #end
@@ -176457,7 +176459,8 @@ This headband does not require activation in combat."
 #req_growth 2
 #req_death -2
 #incpop 300
-#msg "The Growth dominion of ##godname## has brought prosperity and growth to ##landname##."
+#msg "Growth has brought prosperity to ##landname##."
+#header 2
 #nolog
 --#notext
 #end
@@ -176468,7 +176471,8 @@ This headband does not require activation in combat."
 #req_capital 1
 #req_growth 3
 #incpop 450
-#msg "The Growth dominion of ##godname## has brought prosperity and growth to ##landname##."
+#msg "Growth has brought prosperity to ##landname##."
+#header 2
 #nolog
 --#notext
 #end
